@@ -1,0 +1,81 @@
+﻿<Type Name="PenDashCap" FullName="System.Windows.Media.PenDashCap">
+  <TypeSignature Language="C#" Value="public enum PenDashCap" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PenDashCap extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.PenDashCap" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PenDashCap" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PenDashCap" />
+  <TypeSignature Language="F#" Value="type PenDashCap = " />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Flat">
+      <MemberSignature Language="C#" Value="Flat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenDashCap Flat = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenDashCap.Flat" />
+      <MemberSignature Language="VB.NET" Value="Flat" />
+      <MemberSignature Language="C++ CLI" Value="Flat" />
+      <MemberSignature Language="F#" Value="Flat = 0" Usage="System.Windows.Media.PenDashCap.Flat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PenDashCap</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="Round" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenDashCap Round = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenDashCap.Round" />
+      <MemberSignature Language="VB.NET" Value="Round" />
+      <MemberSignature Language="C++ CLI" Value="Round" />
+      <MemberSignature Language="F#" Value="Round = 2" Usage="System.Windows.Media.PenDashCap.Round" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PenDashCap</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Triangle">
+      <MemberSignature Language="C#" Value="Triangle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenDashCap Triangle = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenDashCap.Triangle" />
+      <MemberSignature Language="VB.NET" Value="Triangle" />
+      <MemberSignature Language="C++ CLI" Value="Triangle" />
+      <MemberSignature Language="F#" Value="Triangle = 3" Usage="System.Windows.Media.PenDashCap.Triangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PenDashCap</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

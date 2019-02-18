@@ -1,0 +1,110 @@
+﻿<Type Name="PbeParameters" FullName="System.Security.Cryptography.PbeParameters">
+  <TypeSignature Language="C#" Value="public sealed class PbeParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PbeParameters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.PbeParameters" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PbeParameters" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PbeParameters sealed" />
+  <TypeSignature Language="F#" Value="type PbeParameters = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PbeParameters (System.Security.Cryptography.PbeEncryptionAlgorithm encryptionAlgorithm, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, int iterationCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.PbeEncryptionAlgorithm encryptionAlgorithm, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, int32 iterationCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.PbeParameters.#ctor(System.Security.Cryptography.PbeEncryptionAlgorithm,System.Security.Cryptography.HashAlgorithmName,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encryptionAlgorithm As PbeEncryptionAlgorithm, hashAlgorithm As HashAlgorithmName, iterationCount As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PbeParameters(System::Security::Cryptography::PbeEncryptionAlgorithm encryptionAlgorithm, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, int iterationCount);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.PbeParameters : System.Security.Cryptography.PbeEncryptionAlgorithm * System.Security.Cryptography.HashAlgorithmName * int -&gt; System.Security.Cryptography.PbeParameters" Usage="new System.Security.Cryptography.PbeParameters (encryptionAlgorithm, hashAlgorithm, iterationCount)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="encryptionAlgorithm" Type="System.Security.Cryptography.PbeEncryptionAlgorithm" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="iterationCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="encryptionAlgorithm">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <param name="iterationCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionAlgorithm">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.PbeEncryptionAlgorithm EncryptionAlgorithm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.PbeEncryptionAlgorithm EncryptionAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.PbeParameters.EncryptionAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncryptionAlgorithm As PbeEncryptionAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::PbeEncryptionAlgorithm EncryptionAlgorithm { System::Security::Cryptography::PbeEncryptionAlgorithm get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptionAlgorithm : System.Security.Cryptography.PbeEncryptionAlgorithm" Usage="System.Security.Cryptography.PbeParameters.EncryptionAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PbeEncryptionAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashAlgorithm">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.HashAlgorithmName HashAlgorithm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.HashAlgorithmName HashAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.PbeParameters.HashAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashAlgorithm As HashAlgorithmName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::HashAlgorithmName HashAlgorithm { System::Security::Cryptography::HashAlgorithmName get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithm : System.Security.Cryptography.HashAlgorithmName" Usage="System.Security.Cryptography.PbeParameters.HashAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.HashAlgorithmName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IterationCount">
+      <MemberSignature Language="C#" Value="public int IterationCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IterationCount" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.PbeParameters.IterationCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IterationCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IterationCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.IterationCount : int" Usage="System.Security.Cryptography.PbeParameters.IterationCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

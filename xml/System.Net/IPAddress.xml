@@ -319,6 +319,9 @@
         <Attribute FrameworkAlternate="netframework-1.1">
           <AttributeName>System.Obsolete("IPAddress.Address is address family dependant, use Equals method for comparison.")</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Obsolete("This property has been deprecated. It is address family dependent. Please use IPAddress.Equals method to perform comparisons. https://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>

@@ -52,7 +52,7 @@ A `MemoryHandle` instance represents a handle to a pinned block of memory. It is
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -111,7 +111,7 @@ A `MemoryHandle` instance represents a handle to a pinned block of memory. It is
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>

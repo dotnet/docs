@@ -401,8 +401,8 @@
       </Parameters>
       <Docs>
         <param name="PathName">Optional. A string expression that specifies a file name, directory or folder name, or drive volume label. A zero-length string (<see langword="&quot;&quot;" />) is returned if <paramref name="PathName" /> is not found.</param>
-        <param name="Pathname">Optional. A string expression that specifies a file name, directory or folder name, or drive volume label. A zero-length string (<see langword="&quot;&quot;" />) is returned if <paramref name="PathName" /> is not found.</param>
-        <param name="Attributes">Optional. Enumeration or numeric expression whose value specifies file attributes. If omitted, <see langword="Dir" /> returns files that match <paramref name="PathName" /> but have no attributes.</param>
+        <param name="Pathname">Optional. A string expression that specifies a file name, directory or folder name, or drive volume label. A zero-length string (<see langword="&quot;&quot;" />) is returned if <paramref name="Pathname" /> is not found.</param>
+        <param name="Attributes">Optional. Enumeration or numeric expression whose value specifies file attributes. If omitted, <see langword="Dir" /> returns files that match <paramref name="Pathname" /> but have no attributes.</param>
         <summary>Returns a string representing the name of a file, directory, or folder that matches a specified pattern or file attribute, or the volume label of a drive. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than the <see langword="Dir" /> function. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectoryInfo(System.String)" /> for more information.</summary>
         <returns>A string representing the name of a file, directory, or folder that matches a specified pattern or file attribute, or the volume label of a drive.</returns>
         <remarks>

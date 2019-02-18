@@ -1,0 +1,258 @@
+﻿<Type Name="AesGcm" FullName="System.Security.Cryptography.AesGcm">
+  <TypeSignature Language="C#" Value="public sealed class AesGcm : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AesGcm extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AesGcm" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AesGcm&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AesGcm sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type AesGcm = class&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+    <AssemblyVersion>4.3.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AesGcm (byte[] key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesGcm.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AesGcm(cli::array &lt;System::Byte&gt; ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.AesGcm : byte[] -&gt; System.Security.Cryptography.AesGcm" Usage="new System.Security.Cryptography.AesGcm key" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="key" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AesGcm (ReadOnlySpan&lt;byte&gt; key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesGcm.#ctor(System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As ReadOnlySpan(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AesGcm(ReadOnlySpan&lt;System::Byte&gt; key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.AesGcm : ReadOnlySpan&lt;byte&gt; -&gt; System.Security.Cryptography.AesGcm" Usage="new System.Security.Cryptography.AesGcm key" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="key" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public void Decrypt (byte[] nonce, byte[] ciphertext, byte[] tag, byte[] plaintext, byte[] associatedData = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt(unsigned int8[] nonce, unsigned int8[] ciphertext, unsigned int8[] tag, unsigned int8[] plaintext, unsigned int8[] associatedData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesGcm.Decrypt(System.Byte[],System.Byte[],System.Byte[],System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Decrypt (nonce As Byte(), ciphertext As Byte(), tag As Byte(), plaintext As Byte(), Optional associatedData As Byte() = null)" />
+      <MemberSignature Language="F#" Value="member this.Decrypt : byte[] * byte[] * byte[] * byte[] * byte[] -&gt; unit" Usage="aesGcm.Decrypt (nonce, ciphertext, tag, plaintext, associatedData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nonce" Type="System.Byte[]" />
+        <Parameter Name="ciphertext" Type="System.Byte[]" />
+        <Parameter Name="tag" Type="System.Byte[]" />
+        <Parameter Name="plaintext" Type="System.Byte[]" />
+        <Parameter Name="associatedData" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="nonce">To be added.</param>
+        <param name="ciphertext">To be added.</param>
+        <param name="tag">To be added.</param>
+        <param name="plaintext">To be added.</param>
+        <param name="associatedData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public void Decrypt (ReadOnlySpan&lt;byte&gt; nonce, ReadOnlySpan&lt;byte&gt; ciphertext, ReadOnlySpan&lt;byte&gt; tag, Span&lt;byte&gt; plaintext, ReadOnlySpan&lt;byte&gt; associatedData = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; nonce, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; ciphertext, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; tag, valuetype System.Span`1&lt;unsigned int8&gt; plaintext, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; associatedData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesGcm.Decrypt(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Decrypt (nonce As ReadOnlySpan(Of Byte), ciphertext As ReadOnlySpan(Of Byte), tag As ReadOnlySpan(Of Byte), plaintext As Span(Of Byte), Optional associatedData As ReadOnlySpan(Of Byte) = null)" />
+      <MemberSignature Language="F#" Value="member this.Decrypt : ReadOnlySpan&lt;byte&gt; * ReadOnlySpan&lt;byte&gt; * ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; * ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="aesGcm.Decrypt (nonce, ciphertext, tag, plaintext, associatedData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nonce" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="ciphertext" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="tag" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="plaintext" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="associatedData" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="nonce">To be added.</param>
+        <param name="ciphertext">To be added.</param>
+        <param name="tag">To be added.</param>
+        <param name="plaintext">To be added.</param>
+        <param name="associatedData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesGcm.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="aesGcm.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public void Encrypt (byte[] nonce, byte[] plaintext, byte[] ciphertext, byte[] tag, byte[] associatedData = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Encrypt(unsigned int8[] nonce, unsigned int8[] plaintext, unsigned int8[] ciphertext, unsigned int8[] tag, unsigned int8[] associatedData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesGcm.Encrypt(System.Byte[],System.Byte[],System.Byte[],System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Encrypt (nonce As Byte(), plaintext As Byte(), ciphertext As Byte(), tag As Byte(), Optional associatedData As Byte() = null)" />
+      <MemberSignature Language="F#" Value="member this.Encrypt : byte[] * byte[] * byte[] * byte[] * byte[] -&gt; unit" Usage="aesGcm.Encrypt (nonce, plaintext, ciphertext, tag, associatedData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nonce" Type="System.Byte[]" />
+        <Parameter Name="plaintext" Type="System.Byte[]" />
+        <Parameter Name="ciphertext" Type="System.Byte[]" />
+        <Parameter Name="tag" Type="System.Byte[]" />
+        <Parameter Name="associatedData" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="nonce">To be added.</param>
+        <param name="plaintext">To be added.</param>
+        <param name="ciphertext">To be added.</param>
+        <param name="tag">To be added.</param>
+        <param name="associatedData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public void Encrypt (ReadOnlySpan&lt;byte&gt; nonce, ReadOnlySpan&lt;byte&gt; plaintext, Span&lt;byte&gt; ciphertext, Span&lt;byte&gt; tag, ReadOnlySpan&lt;byte&gt; associatedData = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Encrypt(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; nonce, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; plaintext, valuetype System.Span`1&lt;unsigned int8&gt; ciphertext, valuetype System.Span`1&lt;unsigned int8&gt; tag, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; associatedData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesGcm.Encrypt(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Span{System.Byte},System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Encrypt (nonce As ReadOnlySpan(Of Byte), plaintext As ReadOnlySpan(Of Byte), ciphertext As Span(Of Byte), tag As Span(Of Byte), Optional associatedData As ReadOnlySpan(Of Byte) = null)" />
+      <MemberSignature Language="F#" Value="member this.Encrypt : ReadOnlySpan&lt;byte&gt; * ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; * Span&lt;byte&gt; * ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="aesGcm.Encrypt (nonce, plaintext, ciphertext, tag, associatedData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nonce" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="plaintext" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="ciphertext" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="tag" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="associatedData" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="nonce">To be added.</param>
+        <param name="plaintext">To be added.</param>
+        <param name="ciphertext">To be added.</param>
+        <param name="tag">To be added.</param>
+        <param name="associatedData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NonceByteSizes">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.KeySizes NonceByteSizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Security.Cryptography.KeySizes NonceByteSizes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AesGcm.NonceByteSizes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NonceByteSizes As KeySizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::KeySizes ^ NonceByteSizes { System::Security::Cryptography::KeySizes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NonceByteSizes : System.Security.Cryptography.KeySizes" Usage="System.Security.Cryptography.AesGcm.NonceByteSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagByteSizes">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.KeySizes TagByteSizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Security.Cryptography.KeySizes TagByteSizes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AesGcm.TagByteSizes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TagByteSizes As KeySizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::KeySizes ^ TagByteSizes { System::Security::Cryptography::KeySizes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TagByteSizes : System.Security.Cryptography.KeySizes" Usage="System.Security.Cryptography.AesGcm.TagByteSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

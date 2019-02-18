@@ -1,0 +1,2075 @@
+﻿<Type Name="Utf8JsonWriter" FullName="System.Text.Json.Utf8JsonWriter">
+  <TypeSignature Language="C#" Value="public struct Utf8JsonWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Utf8JsonWriter extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.Utf8JsonWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Utf8JsonWriter" />
+  <TypeSignature Language="C++ CLI" Value="public value class Utf8JsonWriter" />
+  <TypeSignature Language="F#" Value="type Utf8JsonWriter = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Utf8JsonWriter (System.Buffers.IBufferWriter&lt;byte&gt; bufferWriter, System.Text.Json.JsonWriterState state = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.IBufferWriter`1&lt;unsigned int8&gt; bufferWriter, valuetype System.Text.Json.JsonWriterState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.#ctor(System.Buffers.IBufferWriter{System.Byte},System.Text.Json.JsonWriterState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bufferWriter As IBufferWriter(Of Byte), Optional state As JsonWriterState = null)" />
+      <MemberSignature Language="F#" Value="new System.Text.Json.Utf8JsonWriter : System.Buffers.IBufferWriter&lt;byte&gt; * System.Text.Json.JsonWriterState -&gt; System.Text.Json.Utf8JsonWriter" Usage="new System.Text.Json.Utf8JsonWriter (bufferWriter, state)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bufferWriter" Type="System.Buffers.IBufferWriter&lt;System.Byte&gt;" />
+        <Parameter Name="state" Type="System.Text.Json.JsonWriterState" />
+      </Parameters>
+      <Docs>
+        <param name="bufferWriter">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BytesCommitted">
+      <MemberSignature Language="C#" Value="public long BytesCommitted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BytesCommitted" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Utf8JsonWriter.BytesCommitted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesCommitted As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long BytesCommitted { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesCommitted : int64" Usage="System.Text.Json.Utf8JsonWriter.BytesCommitted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BytesWritten">
+      <MemberSignature Language="C#" Value="public long BytesWritten { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BytesWritten" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Utf8JsonWriter.BytesWritten" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesWritten As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long BytesWritten { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesWritten : int64" Usage="System.Text.Json.Utf8JsonWriter.BytesWritten" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentDepth">
+      <MemberSignature Language="C#" Value="public int CurrentDepth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentDepth" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Utf8JsonWriter.CurrentDepth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentDepth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentDepth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentDepth : int" Usage="System.Text.Json.Utf8JsonWriter.CurrentDepth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public void Flush (bool isFinalBlock = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Flush(bool isFinalBlock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.Flush(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Flush (Optional isFinalBlock As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.Flush : bool -&gt; unit" Usage="utf8JsonWriter.Flush isFinalBlock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isFinalBlock" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isFinalBlock">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentState">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonWriterState GetCurrentState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Text.Json.JsonWriterState GetCurrentState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.GetCurrentState" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentState () As JsonWriterState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::Json::JsonWriterState GetCurrentState();" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentState : unit -&gt; System.Text.Json.JsonWriterState" Usage="utf8JsonWriter.GetCurrentState " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonWriterState</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBoolean">
+      <MemberSignature Language="C#" Value="public void WriteBoolean (ReadOnlySpan&lt;byte&gt; utf8PropertyName, bool value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBoolean(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, bool value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteBoolean(System.ReadOnlySpan{System.Byte},System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBoolean (utf8PropertyName As ReadOnlySpan(Of Byte), value As Boolean, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteBoolean : ReadOnlySpan&lt;byte&gt; * bool * bool -&gt; unit" Usage="utf8JsonWriter.WriteBoolean (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Boolean" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBoolean">
+      <MemberSignature Language="C#" Value="public void WriteBoolean (ReadOnlySpan&lt;char&gt; propertyName, bool value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBoolean(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, bool value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteBoolean(System.ReadOnlySpan{System.Char},System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBoolean (propertyName As ReadOnlySpan(Of Char), value As Boolean, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteBoolean : ReadOnlySpan&lt;char&gt; * bool * bool -&gt; unit" Usage="utf8JsonWriter.WriteBoolean (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.Boolean" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBoolean">
+      <MemberSignature Language="C#" Value="public void WriteBoolean (string propertyName, bool value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBoolean(string propertyName, bool value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteBoolean(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBoolean (propertyName As String, value As Boolean, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteBoolean : string * bool * bool -&gt; unit" Usage="utf8JsonWriter.WriteBoolean (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Boolean" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBooleanValue">
+      <MemberSignature Language="C#" Value="public void WriteBooleanValue (bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBooleanValue(bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteBooleanValue(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBooleanValue (value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBooleanValue(bool value);" />
+      <MemberSignature Language="F#" Value="member this.WriteBooleanValue : bool -&gt; unit" Usage="utf8JsonWriter.WriteBooleanValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteCommentValue">
+      <MemberSignature Language="C#" Value="public void WriteCommentValue (ReadOnlySpan&lt;byte&gt; utf8Value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteCommentValue(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8Value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteCommentValue(System.ReadOnlySpan{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteCommentValue (utf8Value As ReadOnlySpan(Of Byte), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteCommentValue : ReadOnlySpan&lt;byte&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteCommentValue (utf8Value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8Value" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8Value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteCommentValue">
+      <MemberSignature Language="C#" Value="public void WriteCommentValue (ReadOnlySpan&lt;char&gt; value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteCommentValue(valuetype System.ReadOnlySpan`1&lt;char&gt; value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteCommentValue(System.ReadOnlySpan{System.Char},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteCommentValue (value As ReadOnlySpan(Of Char), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteCommentValue : ReadOnlySpan&lt;char&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteCommentValue (value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteCommentValue">
+      <MemberSignature Language="C#" Value="public void WriteCommentValue (string value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteCommentValue(string value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteCommentValue(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteCommentValue (value As String, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteCommentValue : string * bool -&gt; unit" Usage="utf8JsonWriter.WriteCommentValue (value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndArray">
+      <MemberSignature Language="C#" Value="public void WriteEndArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteEndArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteEndArray" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteEndArray ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEndArray();" />
+      <MemberSignature Language="F#" Value="member this.WriteEndArray : unit -&gt; unit" Usage="utf8JsonWriter.WriteEndArray " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndObject">
+      <MemberSignature Language="C#" Value="public void WriteEndObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteEndObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteEndObject" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteEndObject ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEndObject();" />
+      <MemberSignature Language="F#" Value="member this.WriteEndObject : unit -&gt; unit" Usage="utf8JsonWriter.WriteEndObject " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNull">
+      <MemberSignature Language="C#" Value="public void WriteNull (ReadOnlySpan&lt;byte&gt; utf8PropertyName, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNull(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNull(System.ReadOnlySpan{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNull (utf8PropertyName As ReadOnlySpan(Of Byte), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNull : ReadOnlySpan&lt;byte&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteNull (utf8PropertyName, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNull">
+      <MemberSignature Language="C#" Value="public void WriteNull (ReadOnlySpan&lt;char&gt; propertyName, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNull(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNull(System.ReadOnlySpan{System.Char},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNull (propertyName As ReadOnlySpan(Of Char), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNull : ReadOnlySpan&lt;char&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteNull (propertyName, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNull">
+      <MemberSignature Language="C#" Value="public void WriteNull (string propertyName, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNull(string propertyName, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNull(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNull (propertyName As String, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNull : string * bool -&gt; unit" Usage="utf8JsonWriter.WriteNull (propertyName, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullValue">
+      <MemberSignature Language="C#" Value="public void WriteNullValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNullValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNullValue" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNullValue ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNullValue();" />
+      <MemberSignature Language="F#" Value="member this.WriteNullValue : unit -&gt; unit" Usage="utf8JsonWriter.WriteNullValue " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;byte&gt; utf8PropertyName, decimal value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, valuetype System.Decimal value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.Decimal,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (utf8PropertyName As ReadOnlySpan(Of Byte), value As Decimal, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;byte&gt; * decimal * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Decimal" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;byte&gt; utf8PropertyName, double value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, float64 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.Double,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (utf8PropertyName As ReadOnlySpan(Of Byte), value As Double, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;byte&gt; * double * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;byte&gt; utf8PropertyName, int value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, int32 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (utf8PropertyName As ReadOnlySpan(Of Byte), value As Integer, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;byte&gt; * int * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;byte&gt; utf8PropertyName, long value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, int64 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.Int64,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (utf8PropertyName As ReadOnlySpan(Of Byte), value As Long, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;byte&gt; * int64 * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;byte&gt; utf8PropertyName, float value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, float32 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.Single,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (utf8PropertyName As ReadOnlySpan(Of Byte), value As Single, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;byte&gt; * single * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;byte&gt; utf8PropertyName, uint value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, unsigned int32 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.UInt32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (utf8PropertyName As ReadOnlySpan(Of Byte), value As UInteger, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;byte&gt; * uint32 * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;byte&gt; utf8PropertyName, ulong value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, unsigned int64 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.UInt64,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (utf8PropertyName As ReadOnlySpan(Of Byte), value As ULong, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;byte&gt; * uint64 * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;char&gt; propertyName, decimal value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, valuetype System.Decimal value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.Decimal,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As ReadOnlySpan(Of Char), value As Decimal, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;char&gt; * decimal * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.Decimal" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;char&gt; propertyName, double value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, float64 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.Double,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As ReadOnlySpan(Of Char), value As Double, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;char&gt; * double * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;char&gt; propertyName, int value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, int32 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As ReadOnlySpan(Of Char), value As Integer, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;char&gt; * int * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;char&gt; propertyName, long value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, int64 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.Int64,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As ReadOnlySpan(Of Char), value As Long, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;char&gt; * int64 * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;char&gt; propertyName, float value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, float32 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.Single,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As ReadOnlySpan(Of Char), value As Single, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;char&gt; * single * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;char&gt; propertyName, uint value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, unsigned int32 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.UInt32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As ReadOnlySpan(Of Char), value As UInteger, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;char&gt; * uint32 * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (ReadOnlySpan&lt;char&gt; propertyName, ulong value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, unsigned int64 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.UInt64,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As ReadOnlySpan(Of Char), value As ULong, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : ReadOnlySpan&lt;char&gt; * uint64 * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (string propertyName, decimal value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(string propertyName, valuetype System.Decimal value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.Decimal,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As String, value As Decimal, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : string * decimal * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Decimal" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (string propertyName, double value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(string propertyName, float64 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.Double,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As String, value As Double, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : string * double * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (string propertyName, int value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(string propertyName, int32 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As String, value As Integer, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : string * int * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (string propertyName, long value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(string propertyName, int64 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.Int64,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As String, value As Long, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : string * int64 * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (string propertyName, float value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(string propertyName, float32 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.Single,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As String, value As Single, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : string * single * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (string propertyName, uint value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(string propertyName, unsigned int32 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.UInt32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As String, value As UInteger, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : string * uint32 * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (string propertyName, ulong value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(string propertyName, unsigned int64 value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.UInt64,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As String, value As ULong, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : string * uint64 * bool -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumberValue">
+      <MemberSignature Language="C#" Value="public void WriteNumberValue (decimal value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumberValue(valuetype System.Decimal value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumberValue (value As Decimal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumberValue(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumberValue : decimal -&gt; unit" Usage="utf8JsonWriter.WriteNumberValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumberValue">
+      <MemberSignature Language="C#" Value="public void WriteNumberValue (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumberValue(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumberValue (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumberValue(double value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumberValue : double -&gt; unit" Usage="utf8JsonWriter.WriteNumberValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumberValue">
+      <MemberSignature Language="C#" Value="public void WriteNumberValue (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumberValue(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumberValue (value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumberValue(int value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumberValue : int -&gt; unit" Usage="utf8JsonWriter.WriteNumberValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumberValue">
+      <MemberSignature Language="C#" Value="public void WriteNumberValue (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumberValue(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumberValue (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumberValue(long value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumberValue : int64 -&gt; unit" Usage="utf8JsonWriter.WriteNumberValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumberValue">
+      <MemberSignature Language="C#" Value="public void WriteNumberValue (float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumberValue(float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumberValue (value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumberValue(float value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumberValue : single -&gt; unit" Usage="utf8JsonWriter.WriteNumberValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumberValue">
+      <MemberSignature Language="C#" Value="public void WriteNumberValue (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumberValue(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumberValue (value As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumberValue(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumberValue : uint32 -&gt; unit" Usage="utf8JsonWriter.WriteNumberValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumberValue">
+      <MemberSignature Language="C#" Value="public void WriteNumberValue (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumberValue(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumberValue (value As ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumberValue(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumberValue : uint64 -&gt; unit" Usage="utf8JsonWriter.WriteNumberValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartArray">
+      <MemberSignature Language="C#" Value="public void WriteStartArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStartArray" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartArray ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartArray();" />
+      <MemberSignature Language="F#" Value="member this.WriteStartArray : unit -&gt; unit" Usage="utf8JsonWriter.WriteStartArray " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartArray">
+      <MemberSignature Language="C#" Value="public void WriteStartArray (ReadOnlySpan&lt;byte&gt; utf8PropertyName, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartArray(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStartArray(System.ReadOnlySpan{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartArray (utf8PropertyName As ReadOnlySpan(Of Byte), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartArray : ReadOnlySpan&lt;byte&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteStartArray (utf8PropertyName, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartArray">
+      <MemberSignature Language="C#" Value="public void WriteStartArray (ReadOnlySpan&lt;char&gt; propertyName, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartArray(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStartArray(System.ReadOnlySpan{System.Char},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartArray (propertyName As ReadOnlySpan(Of Char), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartArray : ReadOnlySpan&lt;char&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteStartArray (propertyName, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartArray">
+      <MemberSignature Language="C#" Value="public void WriteStartArray (string propertyName, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartArray(string propertyName, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStartArray(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartArray (propertyName As String, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartArray : string * bool -&gt; unit" Usage="utf8JsonWriter.WriteStartArray (propertyName, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public void WriteStartObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStartObject" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartObject ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartObject();" />
+      <MemberSignature Language="F#" Value="member this.WriteStartObject : unit -&gt; unit" Usage="utf8JsonWriter.WriteStartObject " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public void WriteStartObject (ReadOnlySpan&lt;byte&gt; utf8PropertyName, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartObject(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStartObject(System.ReadOnlySpan{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartObject (utf8PropertyName As ReadOnlySpan(Of Byte), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartObject : ReadOnlySpan&lt;byte&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteStartObject (utf8PropertyName, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public void WriteStartObject (ReadOnlySpan&lt;char&gt; propertyName, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartObject(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStartObject(System.ReadOnlySpan{System.Char},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartObject (propertyName As ReadOnlySpan(Of Char), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartObject : ReadOnlySpan&lt;char&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteStartObject (propertyName, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public void WriteStartObject (string propertyName, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartObject(string propertyName, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStartObject(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartObject (propertyName As String, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteStartObject : string * bool -&gt; unit" Usage="utf8JsonWriter.WriteStartObject (propertyName, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;byte&gt; utf8PropertyName, DateTime value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, valuetype System.DateTime value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.DateTime,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (utf8PropertyName As ReadOnlySpan(Of Byte), value As DateTime, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;byte&gt; * DateTime * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.DateTime" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;byte&gt; utf8PropertyName, DateTimeOffset value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, valuetype System.DateTimeOffset value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.DateTimeOffset,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (utf8PropertyName As ReadOnlySpan(Of Byte), value As DateTimeOffset, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;byte&gt; * DateTimeOffset * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.DateTimeOffset" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;byte&gt; utf8PropertyName, Guid value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, valuetype System.Guid value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.Guid,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (utf8PropertyName As ReadOnlySpan(Of Byte), value As Guid, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;byte&gt; * Guid * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Guid" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;byte&gt; utf8PropertyName, ReadOnlySpan&lt;byte&gt; utf8Value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8Value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (utf8PropertyName As ReadOnlySpan(Of Byte), utf8Value As ReadOnlySpan(Of Byte), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;byte&gt; * ReadOnlySpan&lt;byte&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (utf8PropertyName, utf8Value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="utf8Value" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="utf8Value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;byte&gt; utf8PropertyName, ReadOnlySpan&lt;char&gt; value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, valuetype System.ReadOnlySpan`1&lt;char&gt; value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Char},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (utf8PropertyName As ReadOnlySpan(Of Byte), value As ReadOnlySpan(Of Char), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;byte&gt; * ReadOnlySpan&lt;char&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;byte&gt; utf8PropertyName, string value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, string value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (utf8PropertyName As ReadOnlySpan(Of Byte), value As String, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;byte&gt; * string * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (utf8PropertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;char&gt; propertyName, DateTime value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, valuetype System.DateTime value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.DateTime,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As ReadOnlySpan(Of Char), value As DateTime, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;char&gt; * DateTime * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.DateTime" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;char&gt; propertyName, DateTimeOffset value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, valuetype System.DateTimeOffset value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.DateTimeOffset,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As ReadOnlySpan(Of Char), value As DateTimeOffset, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;char&gt; * DateTimeOffset * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.DateTimeOffset" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;char&gt; propertyName, Guid value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, valuetype System.Guid value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.Guid,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As ReadOnlySpan(Of Char), value As Guid, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;char&gt; * Guid * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.Guid" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;char&gt; propertyName, ReadOnlySpan&lt;byte&gt; utf8Value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8Value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As ReadOnlySpan(Of Char), utf8Value As ReadOnlySpan(Of Byte), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;byte&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, utf8Value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="utf8Value" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="utf8Value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;char&gt; propertyName, ReadOnlySpan&lt;char&gt; value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, valuetype System.ReadOnlySpan`1&lt;char&gt; value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As ReadOnlySpan(Of Char), value As ReadOnlySpan(Of Char), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;char&gt; propertyName, string value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, string value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As ReadOnlySpan(Of Char), value As String, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;char&gt; * string * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (string propertyName, DateTime value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(string propertyName, valuetype System.DateTime value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.DateTime,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As String, value As DateTime, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : string * DateTime * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.DateTime" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (string propertyName, DateTimeOffset value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(string propertyName, valuetype System.DateTimeOffset value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.DateTimeOffset,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As String, value As DateTimeOffset, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : string * DateTimeOffset * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.DateTimeOffset" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (string propertyName, Guid value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(string propertyName, valuetype System.Guid value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.Guid,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As String, value As Guid, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : string * Guid * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Guid" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (string propertyName, ReadOnlySpan&lt;byte&gt; utf8Value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(string propertyName, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8Value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.ReadOnlySpan{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As String, utf8Value As ReadOnlySpan(Of Byte), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : string * ReadOnlySpan&lt;byte&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, utf8Value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="utf8Value" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="utf8Value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (string propertyName, ReadOnlySpan&lt;char&gt; value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(string propertyName, valuetype System.ReadOnlySpan`1&lt;char&gt; value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.ReadOnlySpan{System.Char},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As String, value As ReadOnlySpan(Of Char), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : string * ReadOnlySpan&lt;char&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (string propertyName, string value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(string propertyName, string value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As String, value As String, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteString : string * string * bool -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStringValue">
+      <MemberSignature Language="C#" Value="public void WriteStringValue (DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStringValue(valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStringValue (value As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStringValue(DateTime value);" />
+      <MemberSignature Language="F#" Value="member this.WriteStringValue : DateTime -&gt; unit" Usage="utf8JsonWriter.WriteStringValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStringValue">
+      <MemberSignature Language="C#" Value="public void WriteStringValue (DateTimeOffset value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStringValue(valuetype System.DateTimeOffset value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStringValue (value As DateTimeOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStringValue(DateTimeOffset value);" />
+      <MemberSignature Language="F#" Value="member this.WriteStringValue : DateTimeOffset -&gt; unit" Usage="utf8JsonWriter.WriteStringValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStringValue">
+      <MemberSignature Language="C#" Value="public void WriteStringValue (Guid value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStringValue(valuetype System.Guid value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStringValue (value As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStringValue(Guid value);" />
+      <MemberSignature Language="F#" Value="member this.WriteStringValue : Guid -&gt; unit" Usage="utf8JsonWriter.WriteStringValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStringValue">
+      <MemberSignature Language="C#" Value="public void WriteStringValue (ReadOnlySpan&lt;byte&gt; utf8Value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStringValue(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8Value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.ReadOnlySpan{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStringValue (utf8Value As ReadOnlySpan(Of Byte), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteStringValue : ReadOnlySpan&lt;byte&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteStringValue (utf8Value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8Value" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="utf8Value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStringValue">
+      <MemberSignature Language="C#" Value="public void WriteStringValue (ReadOnlySpan&lt;char&gt; value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStringValue(valuetype System.ReadOnlySpan`1&lt;char&gt; value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.ReadOnlySpan{System.Char},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStringValue (value As ReadOnlySpan(Of Char), Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteStringValue : ReadOnlySpan&lt;char&gt; * bool -&gt; unit" Usage="utf8JsonWriter.WriteStringValue (value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStringValue">
+      <MemberSignature Language="C#" Value="public void WriteStringValue (string value, bool escape = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStringValue(string value, bool escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStringValue (value As String, Optional escape As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.WriteStringValue : string * bool -&gt; unit" Usage="utf8JsonWriter.WriteStringValue (value, escape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="escape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="escape">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,269 @@
+﻿<Type Name="Range" FullName="System.Range">
+  <TypeSignature Language="C#" Value="public struct Range : IEquatable&lt;Range&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Range extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Range&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Range" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Range&#xA;Implements IEquatable(Of Range)" />
+  <TypeSignature Language="C++ CLI" Value="public value class Range : IEquatable&lt;Range&gt;" />
+  <TypeSignature Language="F#" Value="type Range = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Range&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="public static Range All ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Range All() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.All" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function All () As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Range All();" />
+      <MemberSignature Language="F#" Value="static member All : unit -&gt; Range" Usage="System.Range.All " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Range</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Range Create (Index start, Index end);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Range Create(valuetype System.Index start, valuetype System.Index end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.Create(System.Index,System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (start As Index, end As Index) As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Range Create(Index start, Index end);" />
+      <MemberSignature Language="F#" Value="static member Create : Index * Index -&gt; Range" Usage="System.Range.Create (start, end)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Range</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Index" />
+        <Parameter Name="end" Type="System.Index" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public Index End { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Index End" />
+      <MemberSignature Language="DocId" Value="P:System.Range.End" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End As Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Index End { Index get(); };" />
+      <MemberSignature Language="F#" Value="member this.End : Index" Usage="System.Range.End" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Index</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="range.Equals value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Range other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Range other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.Equals(System.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Range) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(Range other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Range -&gt; bool" Usage="range.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Range" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromStart">
+      <MemberSignature Language="C#" Value="public static Range FromStart (Index start);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Range FromStart(valuetype System.Index start) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.FromStart(System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromStart (start As Index) As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Range FromStart(Index start);" />
+      <MemberSignature Language="F#" Value="static member FromStart : Index -&gt; Range" Usage="System.Range.FromStart start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Range</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Index" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="range.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public Index Start { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Index Start" />
+      <MemberSignature Language="DocId" Value="P:System.Range.Start" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Start As Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Index Start { Index get(); };" />
+      <MemberSignature Language="F#" Value="member this.Start : Index" Usage="System.Range.Start" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Index</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToEnd">
+      <MemberSignature Language="C#" Value="public static Range ToEnd (Index end);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Range ToEnd(valuetype System.Index end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.ToEnd(System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToEnd (end As Index) As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Range ToEnd(Index end);" />
+      <MemberSignature Language="F#" Value="static member ToEnd : Index -&gt; Range" Usage="System.Range.ToEnd end" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Range</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="end" Type="System.Index" />
+      </Parameters>
+      <Docs>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="range.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

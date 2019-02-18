@@ -1,0 +1,50 @@
+﻿<Type Name="IAsyncEnumerable&lt;T&gt;" FullName="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IAsyncEnumerable&lt;out T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAsyncEnumerable`1&lt;+ T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Generic.IAsyncEnumerable`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAsyncEnumerable(Of Out T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IAsyncEnumerable" />
+  <TypeSignature Language="F#" Value="type IAsyncEnumerable&lt;'T&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAsyncEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IAsyncEnumerator&lt;out T&gt; GetAsyncEnumerator (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IAsyncEnumerator`1&lt;!T&gt; GetAsyncEnumerator(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetAsyncEnumerator : System.Threading.CancellationToken -&gt; System.Collections.Generic.IAsyncEnumerator&lt;'T&gt;" Usage="iAsyncEnumerable.GetAsyncEnumerator cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IAsyncEnumerator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,228 @@
+﻿<Type Name="JsonDocument" FullName="System.Text.Json.JsonDocument">
+  <TypeSignature Language="C#" Value="public sealed class JsonDocument : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JsonDocument extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.JsonDocument" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JsonDocument&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JsonDocument sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type JsonDocument = class&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonDocument.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="jsonDocument.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Text.Json.JsonDocument Parse (System.Buffers.ReadOnlySequence&lt;byte&gt; utf8Json, System.Text.Json.JsonReaderOptions readerOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Json.JsonDocument Parse(valuetype System.Buffers.ReadOnlySequence`1&lt;unsigned int8&gt; utf8Json, valuetype System.Text.Json.JsonReaderOptions readerOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonDocument.Parse(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonReaderOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (utf8Json As ReadOnlySequence(Of Byte), Optional readerOptions As JsonReaderOptions = null) As JsonDocument" />
+      <MemberSignature Language="F#" Value="static member Parse : System.Buffers.ReadOnlySequence&lt;byte&gt; * System.Text.Json.JsonReaderOptions -&gt; System.Text.Json.JsonDocument" Usage="System.Text.Json.JsonDocument.Parse (utf8Json, readerOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8Json" Type="System.Buffers.ReadOnlySequence&lt;System.Byte&gt;" />
+        <Parameter Name="readerOptions" Type="System.Text.Json.JsonReaderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="utf8Json">To be added.</param>
+        <param name="readerOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Text.Json.JsonDocument Parse (System.IO.Stream utf8Json, System.Text.Json.JsonReaderOptions readerOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Json.JsonDocument Parse(class System.IO.Stream utf8Json, valuetype System.Text.Json.JsonReaderOptions readerOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonDocument.Parse(System.IO.Stream,System.Text.Json.JsonReaderOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (utf8Json As Stream, Optional readerOptions As JsonReaderOptions = null) As JsonDocument" />
+      <MemberSignature Language="F#" Value="static member Parse : System.IO.Stream * System.Text.Json.JsonReaderOptions -&gt; System.Text.Json.JsonDocument" Usage="System.Text.Json.JsonDocument.Parse (utf8Json, readerOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8Json" Type="System.IO.Stream" />
+        <Parameter Name="readerOptions" Type="System.Text.Json.JsonReaderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="utf8Json">To be added.</param>
+        <param name="readerOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Text.Json.JsonDocument Parse (ReadOnlyMemory&lt;byte&gt; utf8Json, System.Text.Json.JsonReaderOptions readerOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Json.JsonDocument Parse(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; utf8Json, valuetype System.Text.Json.JsonReaderOptions readerOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory{System.Byte},System.Text.Json.JsonReaderOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (utf8Json As ReadOnlyMemory(Of Byte), Optional readerOptions As JsonReaderOptions = null) As JsonDocument" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlyMemory&lt;byte&gt; * System.Text.Json.JsonReaderOptions -&gt; System.Text.Json.JsonDocument" Usage="System.Text.Json.JsonDocument.Parse (utf8Json, readerOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8Json" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+        <Parameter Name="readerOptions" Type="System.Text.Json.JsonReaderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="utf8Json">To be added.</param>
+        <param name="readerOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Text.Json.JsonDocument Parse (ReadOnlyMemory&lt;char&gt; json, System.Text.Json.JsonReaderOptions readerOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Json.JsonDocument Parse(valuetype System.ReadOnlyMemory`1&lt;char&gt; json, valuetype System.Text.Json.JsonReaderOptions readerOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory{System.Char},System.Text.Json.JsonReaderOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (json As ReadOnlyMemory(Of Char), Optional readerOptions As JsonReaderOptions = null) As JsonDocument" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlyMemory&lt;char&gt; * System.Text.Json.JsonReaderOptions -&gt; System.Text.Json.JsonDocument" Usage="System.Text.Json.JsonDocument.Parse (json, readerOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="json" Type="System.ReadOnlyMemory&lt;System.Char&gt;" />
+        <Parameter Name="readerOptions" Type="System.Text.Json.JsonReaderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="json">To be added.</param>
+        <param name="readerOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Text.Json.JsonDocument Parse (string json, System.Text.Json.JsonReaderOptions readerOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Json.JsonDocument Parse(string json, valuetype System.Text.Json.JsonReaderOptions readerOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonDocument.Parse(System.String,System.Text.Json.JsonReaderOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (json As String, Optional readerOptions As JsonReaderOptions = null) As JsonDocument" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Text.Json.JsonReaderOptions -&gt; System.Text.Json.JsonDocument" Usage="System.Text.Json.JsonDocument.Parse (json, readerOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="json" Type="System.String" />
+        <Parameter Name="readerOptions" Type="System.Text.Json.JsonReaderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="json">To be added.</param>
+        <param name="readerOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Text.Json.JsonDocument&gt; ParseAsync (System.IO.Stream utf8Json, System.Text.Json.JsonReaderOptions readerOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Text.Json.JsonDocument&gt; ParseAsync(class System.IO.Stream utf8Json, valuetype System.Text.Json.JsonReaderOptions readerOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonDocument.ParseAsync(System.IO.Stream,System.Text.Json.JsonReaderOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ParseAsync : System.IO.Stream * System.Text.Json.JsonReaderOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Text.Json.JsonDocument&gt;" Usage="System.Text.Json.JsonDocument.ParseAsync (utf8Json, readerOptions, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Text.Json.JsonDocument&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8Json" Type="System.IO.Stream" />
+        <Parameter Name="readerOptions" Type="System.Text.Json.JsonReaderOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="utf8Json">To be added.</param>
+        <param name="readerOptions">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootElement">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonElement RootElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonElement RootElement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonDocument.RootElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootElement As JsonElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::JsonElement RootElement { System::Text::Json::JsonElement get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootElement : System.Text.Json.JsonElement" Usage="System.Text.Json.JsonDocument.RootElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

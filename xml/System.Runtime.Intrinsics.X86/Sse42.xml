@@ -1,16 +1,21 @@
 ﻿<Type Name="Sse42" FullName="System.Runtime.Intrinsics.X86.Sse42">
-  <TypeSignature Language="C#" Value="public static class Sse42" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Sse42 extends System.Object" />
+  <TypeSignature Language="C#" Value="public abstract class Sse42 : System.Runtime.Intrinsics.X86.Sse41" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Sse42 extends System.Runtime.Intrinsics.X86.Sse41" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.Sse42" />
-  <TypeSignature Language="VB.NET" Value="Public Class Sse42" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Sse42 abstract sealed" />
-  <TypeSignature Language="F#" Value="type Sse42 = class" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Sse42&#xA;Inherits Sse41" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Sse42 abstract : System::Runtime::Intrinsics::X86::Sse41" />
+  <TypeSignature Language="F#" Value="type Sse42 = class&#xA;    inherit Sse41" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netcore-3.0">System.Runtime.Intrinsics.X86.Sse41</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -28,6 +33,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,6 +66,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
@@ -84,6 +97,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
@@ -109,6 +126,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,8 +163,8 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="crc" Type="System.UInt64" />
-        <Parameter Name="data" Type="System.UInt64" />
+        <Parameter Name="crc" Type="System.UInt64" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="data" Type="System.UInt64" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="crc">To be added.</param>
@@ -163,6 +184,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

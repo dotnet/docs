@@ -1,0 +1,92 @@
+﻿<Type Name="AssemblyDependencyResolver" FullName="System.Runtime.Loader.AssemblyDependencyResolver">
+  <TypeSignature Language="C#" Value="public sealed class AssemblyDependencyResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyDependencyResolver extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Loader.AssemblyDependencyResolver" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyDependencyResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyDependencyResolver sealed" />
+  <TypeSignature Language="F#" Value="type AssemblyDependencyResolver = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Loader</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AssemblyDependencyResolver (string componentAssemblyPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string componentAssemblyPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Loader.AssemblyDependencyResolver.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (componentAssemblyPath As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyDependencyResolver(System::String ^ componentAssemblyPath);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Loader.AssemblyDependencyResolver : string -&gt; System.Runtime.Loader.AssemblyDependencyResolver" Usage="new System.Runtime.Loader.AssemblyDependencyResolver componentAssemblyPath" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="componentAssemblyPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="componentAssemblyPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveAssemblyToPath">
+      <MemberSignature Language="C#" Value="public string ResolveAssemblyToPath (System.Reflection.AssemblyName assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ResolveAssemblyToPath(class System.Reflection.AssemblyName assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Loader.AssemblyDependencyResolver.ResolveAssemblyToPath(System.Reflection.AssemblyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveAssemblyToPath(System::Reflection::AssemblyName ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="member this.ResolveAssemblyToPath : System.Reflection.AssemblyName -&gt; string" Usage="assemblyDependencyResolver.ResolveAssemblyToPath assemblyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveUnmanagedDllToPath">
+      <MemberSignature Language="C#" Value="public string ResolveUnmanagedDllToPath (string unmanagedDllName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ResolveUnmanagedDllToPath(string unmanagedDllName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Loader.AssemblyDependencyResolver.ResolveUnmanagedDllToPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveUnmanagedDllToPath (unmanagedDllName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveUnmanagedDllToPath(System::String ^ unmanagedDllName);" />
+      <MemberSignature Language="F#" Value="member this.ResolveUnmanagedDllToPath : string -&gt; string" Usage="assemblyDependencyResolver.ResolveUnmanagedDllToPath unmanagedDllName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unmanagedDllName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="unmanagedDllName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -9,6 +9,7 @@
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -40,6 +41,7 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
@@ -47,12 +49,12 @@
       <Docs>
         <param name="memory">To be added.</param>
         <summary>Creates an instance of <see cref="T:System.Buffers.ReadOnlySequence`1" /> from a <see cref="T:System.ReadOnlyMemory`1" />. </summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 The consumer is expected to manage the lifetime of memory until <see cref="T:System.Buffers.ReadOnlySequence`1" /> is not used anymore.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -67,6 +69,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="T[]" />
@@ -89,6 +92,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="T[]" />
@@ -115,6 +119,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" />
@@ -143,6 +148,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -164,6 +170,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
@@ -186,6 +193,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
@@ -208,6 +216,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;+Enumerator</ReturnType>
@@ -231,6 +240,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
@@ -257,6 +267,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
@@ -285,6 +296,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -307,13 +319,15 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Buffers.ReadOnlySequence`1" /> contains a single <see cref="T:System.ReadOnlyMemory`1" /> segment.</summary>
-        <value><see langword="true" /> if the read-only sequence is empty; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the read-only sequence is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,6 +343,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -351,6 +366,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -377,6 +393,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -403,6 +420,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -431,6 +449,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -459,6 +478,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -487,6 +507,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -515,6 +536,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -543,6 +565,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -571,6 +594,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -599,6 +623,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
@@ -621,6 +646,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -644,6 +670,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -655,8 +682,9 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </Parameters>
       <Docs>
         <param name="position">The current sequence position.</param>
-        <param name="memory">A read-only memory span that contains the next segment after <paramref  name="position" />.</param>
-        <param name="advance"><see langword="true" /> if <paramref name="position" /> should to the beginning of next segment; otherwise, <see langword="false" />.</param>
+        <param name="memory">A read-only memory span that contains the next segment after <paramref name="position" />.</param>
+        <param name="advance">
+          <see langword="true" /> if <paramref name="position" /> should to the beginning of next segment; otherwise, <see langword="false" />.</param>
         <summary>Tries to retrieve the next segment after <paramref name="position" /> and returns a value that indicates whether the operation succeeded.</summary>
         <returns>Returns <see langword="true" /> if the method returned the next segment, or <see langword="false" /> if the end of the read-only sequence was reached. </returns>
         <remarks>To be added.</remarks>

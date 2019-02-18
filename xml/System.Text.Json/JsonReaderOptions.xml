@@ -1,0 +1,43 @@
+﻿<Type Name="JsonReaderOptions" FullName="System.Text.Json.JsonReaderOptions">
+  <TypeSignature Language="C#" Value="public struct JsonReaderOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit JsonReaderOptions extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.JsonReaderOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Structure JsonReaderOptions" />
+  <TypeSignature Language="C++ CLI" Value="public value class JsonReaderOptions" />
+  <TypeSignature Language="F#" Value="type JsonReaderOptions = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CommentHandling">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonCommentHandling CommentHandling { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonCommentHandling CommentHandling" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonReaderOptions.CommentHandling" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommentHandling As JsonCommentHandling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::JsonCommentHandling CommentHandling { System::Text::Json::JsonCommentHandling get(); void set(System::Text::Json::JsonCommentHandling value); };" />
+      <MemberSignature Language="F#" Value="member this.CommentHandling : System.Text.Json.JsonCommentHandling with get, set" Usage="System.Text.Json.JsonReaderOptions.CommentHandling" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonCommentHandling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

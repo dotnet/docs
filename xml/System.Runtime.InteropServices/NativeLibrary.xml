@@ -1,0 +1,212 @@
+﻿<Type Name="NativeLibrary" FullName="System.Runtime.InteropServices.NativeLibrary">
+  <TypeSignature Language="C#" Value="public static class NativeLibrary" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit NativeLibrary extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.NativeLibrary" />
+  <TypeSignature Language="VB.NET" Value="Public Class NativeLibrary" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NativeLibrary abstract sealed" />
+  <TypeSignature Language="F#" Value="type NativeLibrary = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Free">
+      <MemberSignature Language="C#" Value="public static void Free (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Free(native int handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NativeLibrary.Free(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Free (handle As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Free(IntPtr handle);" />
+      <MemberSignature Language="F#" Value="static member Free : nativeint -&gt; unit" Usage="System.Runtime.InteropServices.NativeLibrary.Free handle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport">
+      <MemberSignature Language="C#" Value="public static IntPtr GetExport (IntPtr handle, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetExport(native int handle, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NativeLibrary.GetExport(System.IntPtr,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetExport (handle As IntPtr, name As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetExport(IntPtr handle, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetExport : nativeint * string -&gt; nativeint" Usage="System.Runtime.InteropServices.NativeLibrary.GetExport (handle, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static IntPtr Load (string libraryPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int Load(string libraryPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NativeLibrary.Load(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Load (libraryPath As String) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr Load(System::String ^ libraryPath);" />
+      <MemberSignature Language="F#" Value="static member Load : string -&gt; nativeint" Usage="System.Runtime.InteropServices.NativeLibrary.Load libraryPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="libraryPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="libraryPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static IntPtr Load (string libraryName, System.Reflection.Assembly assembly, Nullable&lt;System.Runtime.InteropServices.DllImportSearchPath&gt; searchPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int Load(string libraryName, class System.Reflection.Assembly assembly, valuetype System.Nullable`1&lt;valuetype System.Runtime.InteropServices.DllImportSearchPath&gt; searchPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NativeLibrary.Load(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr Load(System::String ^ libraryName, System::Reflection::Assembly ^ assembly, Nullable&lt;System::Runtime::InteropServices::DllImportSearchPath&gt; searchPath);" />
+      <MemberSignature Language="F#" Value="static member Load : string * System.Reflection.Assembly * Nullable&lt;System.Runtime.InteropServices.DllImportSearchPath&gt; -&gt; nativeint" Usage="System.Runtime.InteropServices.NativeLibrary.Load (libraryName, assembly, searchPath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="libraryName" Type="System.String" />
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="searchPath" Type="System.Nullable&lt;System.Runtime.InteropServices.DllImportSearchPath&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="libraryName">To be added.</param>
+        <param name="assembly">To be added.</param>
+        <param name="searchPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport">
+      <MemberSignature Language="C#" Value="public static bool TryGetExport (IntPtr handle, string name, out IntPtr address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetExport(native int handle, string name, [out] native int&amp; address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NativeLibrary.TryGetExport(System.IntPtr,System.String,System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetExport (handle As IntPtr, name As String, ByRef address As IntPtr) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetExport(IntPtr handle, System::String ^ name, [Runtime::InteropServices::Out] IntPtr % address);" />
+      <MemberSignature Language="F#" Value="static member TryGetExport : nativeint * string *  -&gt; bool" Usage="System.Runtime.InteropServices.NativeLibrary.TryGetExport (handle, name, address)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="address" Type="System.IntPtr" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryLoad">
+      <MemberSignature Language="C#" Value="public static bool TryLoad (string libraryPath, out IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryLoad(string libraryPath, [out] native int&amp; handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NativeLibrary.TryLoad(System.String,System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryLoad (libraryPath As String, ByRef handle As IntPtr) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryLoad(System::String ^ libraryPath, [Runtime::InteropServices::Out] IntPtr % handle);" />
+      <MemberSignature Language="F#" Value="static member TryLoad : string *  -&gt; bool" Usage="System.Runtime.InteropServices.NativeLibrary.TryLoad (libraryPath, handle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="libraryPath" Type="System.String" />
+        <Parameter Name="handle" Type="System.IntPtr" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="libraryPath">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryLoad">
+      <MemberSignature Language="C#" Value="public static bool TryLoad (string libraryName, System.Reflection.Assembly assembly, Nullable&lt;System.Runtime.InteropServices.DllImportSearchPath&gt; searchPath, out IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryLoad(string libraryName, class System.Reflection.Assembly assembly, valuetype System.Nullable`1&lt;valuetype System.Runtime.InteropServices.DllImportSearchPath&gt; searchPath, [out] native int&amp; handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NativeLibrary.TryLoad(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath},System.IntPtr@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryLoad(System::String ^ libraryName, System::Reflection::Assembly ^ assembly, Nullable&lt;System::Runtime::InteropServices::DllImportSearchPath&gt; searchPath, [Runtime::InteropServices::Out] IntPtr % handle);" />
+      <MemberSignature Language="F#" Value="static member TryLoad : string * System.Reflection.Assembly * Nullable&lt;System.Runtime.InteropServices.DllImportSearchPath&gt; *  -&gt; bool" Usage="System.Runtime.InteropServices.NativeLibrary.TryLoad (libraryName, assembly, searchPath, handle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="libraryName" Type="System.String" />
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="searchPath" Type="System.Nullable&lt;System.Runtime.InteropServices.DllImportSearchPath&gt;" />
+        <Parameter Name="handle" Type="System.IntPtr" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="libraryName">To be added.</param>
+        <param name="assembly">To be added.</param>
+        <param name="searchPath">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

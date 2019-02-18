@@ -23,6 +23,77 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="DefaultImplementationsOfInterfaces">
+      <MemberSignature Language="C#" Value="public const string DefaultImplementationsOfInterfaces;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultImplementationsOfInterfaces" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.RuntimeFeature.DefaultImplementationsOfInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultImplementationsOfInterfaces As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultImplementationsOfInterfaces;" />
+      <MemberSignature Language="F#" Value="val mutable DefaultImplementationsOfInterfaces : string" Usage="System.Runtime.CompilerServices.RuntimeFeature.DefaultImplementationsOfInterfaces" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDynamicCodeCompiled">
+      <MemberSignature Language="C#" Value="public static bool IsDynamicCodeCompiled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsDynamicCodeCompiled" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeCompiled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsDynamicCodeCompiled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsDynamicCodeCompiled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDynamicCodeCompiled : bool" Usage="System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeCompiled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDynamicCodeSupported">
+      <MemberSignature Language="C#" Value="public static bool IsDynamicCodeSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsDynamicCodeSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsDynamicCodeSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsDynamicCodeSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDynamicCodeSupported : bool" Usage="System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsSupported">
       <MemberSignature Language="C#" Value="public static bool IsSupported (string feature);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSupported(string feature) cil managed" />

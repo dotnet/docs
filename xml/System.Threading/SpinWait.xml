@@ -354,6 +354,36 @@
         <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
+    <Member MemberName="SpinOnce">
+      <MemberSignature Language="C#" Value="public void SpinOnce (int sleep1Threshold);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SpinOnce(int32 sleep1Threshold) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.SpinOnce(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SpinOnce (sleep1Threshold As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SpinOnce(int sleep1Threshold);" />
+      <MemberSignature Language="F#" Value="member this.SpinOnce : int -&gt; unit" Usage="spinWait.SpinOnce sleep1Threshold" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sleep1Threshold" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="sleep1Threshold">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="SpinUntil">
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

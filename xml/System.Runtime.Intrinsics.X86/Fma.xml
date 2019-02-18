@@ -1,0 +1,971 @@
+﻿<Type Name="Fma" FullName="System.Runtime.Intrinsics.X86.Fma">
+  <TypeSignature Language="C#" Value="public abstract class Fma : System.Runtime.Intrinsics.X86.Avx" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Fma extends System.Runtime.Intrinsics.X86.Avx" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.Fma" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Fma&#xA;Inherits Avx" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Fma abstract : System::Runtime::Intrinsics::X86::Avx" />
+  <TypeSignature Language="F#" Value="type Fma = class&#xA;    inherit Avx" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Intrinsics.X86.Avx</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.X86.Fma.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Runtime.Intrinsics.X86.Fma.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAdd">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;double&gt; MultiplyAdd (System.Runtime.Intrinsics.Vector128&lt;double&gt; a, System.Runtime.Intrinsics.Vector128&lt;double&gt; b, System.Runtime.Intrinsics.Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; MultiplyAdd(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAdd(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAdd (a As Vector128(Of Double), b As Vector128(Of Double), c As Vector128(Of Double)) As Vector128(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;double&gt; MultiplyAdd(System::Runtime::Intrinsics::Vector128&lt;double&gt; a, System::Runtime::Intrinsics::Vector128&lt;double&gt; b, System::Runtime::Intrinsics::Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAdd : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAdd (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAdd">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; MultiplyAdd (System.Runtime.Intrinsics.Vector128&lt;float&gt; a, System.Runtime.Intrinsics.Vector128&lt;float&gt; b, System.Runtime.Intrinsics.Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; MultiplyAdd(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAdd(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAdd (a As Vector128(Of Single), b As Vector128(Of Single), c As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; MultiplyAdd(System::Runtime::Intrinsics::Vector128&lt;float&gt; a, System::Runtime::Intrinsics::Vector128&lt;float&gt; b, System::Runtime::Intrinsics::Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAdd : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAdd (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAdd">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; MultiplyAdd (System.Runtime.Intrinsics.Vector256&lt;double&gt; a, System.Runtime.Intrinsics.Vector256&lt;double&gt; b, System.Runtime.Intrinsics.Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; MultiplyAdd(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAdd(System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAdd (a As Vector256(Of Double), b As Vector256(Of Double), c As Vector256(Of Double)) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; MultiplyAdd(System::Runtime::Intrinsics::Vector256&lt;double&gt; a, System::Runtime::Intrinsics::Vector256&lt;double&gt; b, System::Runtime::Intrinsics::Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAdd : System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAdd (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAdd">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; MultiplyAdd (System.Runtime.Intrinsics.Vector256&lt;float&gt; a, System.Runtime.Intrinsics.Vector256&lt;float&gt; b, System.Runtime.Intrinsics.Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; MultiplyAdd(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAdd(System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAdd (a As Vector256(Of Single), b As Vector256(Of Single), c As Vector256(Of Single)) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; MultiplyAdd(System::Runtime::Intrinsics::Vector256&lt;float&gt; a, System::Runtime::Intrinsics::Vector256&lt;float&gt; b, System::Runtime::Intrinsics::Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAdd : System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAdd (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddNegated">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;double&gt; MultiplyAddNegated (System.Runtime.Intrinsics.Vector128&lt;double&gt; a, System.Runtime.Intrinsics.Vector128&lt;double&gt; b, System.Runtime.Intrinsics.Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; MultiplyAddNegated(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegated(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddNegated (a As Vector128(Of Double), b As Vector128(Of Double), c As Vector128(Of Double)) As Vector128(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;double&gt; MultiplyAddNegated(System::Runtime::Intrinsics::Vector128&lt;double&gt; a, System::Runtime::Intrinsics::Vector128&lt;double&gt; b, System::Runtime::Intrinsics::Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddNegated : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegated (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddNegated">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; MultiplyAddNegated (System.Runtime.Intrinsics.Vector128&lt;float&gt; a, System.Runtime.Intrinsics.Vector128&lt;float&gt; b, System.Runtime.Intrinsics.Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; MultiplyAddNegated(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegated(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddNegated (a As Vector128(Of Single), b As Vector128(Of Single), c As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; MultiplyAddNegated(System::Runtime::Intrinsics::Vector128&lt;float&gt; a, System::Runtime::Intrinsics::Vector128&lt;float&gt; b, System::Runtime::Intrinsics::Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddNegated : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegated (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddNegated">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; MultiplyAddNegated (System.Runtime.Intrinsics.Vector256&lt;double&gt; a, System.Runtime.Intrinsics.Vector256&lt;double&gt; b, System.Runtime.Intrinsics.Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; MultiplyAddNegated(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegated(System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddNegated (a As Vector256(Of Double), b As Vector256(Of Double), c As Vector256(Of Double)) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; MultiplyAddNegated(System::Runtime::Intrinsics::Vector256&lt;double&gt; a, System::Runtime::Intrinsics::Vector256&lt;double&gt; b, System::Runtime::Intrinsics::Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddNegated : System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegated (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddNegated">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; MultiplyAddNegated (System.Runtime.Intrinsics.Vector256&lt;float&gt; a, System.Runtime.Intrinsics.Vector256&lt;float&gt; b, System.Runtime.Intrinsics.Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; MultiplyAddNegated(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegated(System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddNegated (a As Vector256(Of Single), b As Vector256(Of Single), c As Vector256(Of Single)) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; MultiplyAddNegated(System::Runtime::Intrinsics::Vector256&lt;float&gt; a, System::Runtime::Intrinsics::Vector256&lt;float&gt; b, System::Runtime::Intrinsics::Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddNegated : System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegated (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddNegatedScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;double&gt; MultiplyAddNegatedScalar (System.Runtime.Intrinsics.Vector128&lt;double&gt; a, System.Runtime.Intrinsics.Vector128&lt;double&gt; b, System.Runtime.Intrinsics.Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; MultiplyAddNegatedScalar(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegatedScalar(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddNegatedScalar (a As Vector128(Of Double), b As Vector128(Of Double), c As Vector128(Of Double)) As Vector128(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;double&gt; MultiplyAddNegatedScalar(System::Runtime::Intrinsics::Vector128&lt;double&gt; a, System::Runtime::Intrinsics::Vector128&lt;double&gt; b, System::Runtime::Intrinsics::Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddNegatedScalar : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegatedScalar (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddNegatedScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; MultiplyAddNegatedScalar (System.Runtime.Intrinsics.Vector128&lt;float&gt; a, System.Runtime.Intrinsics.Vector128&lt;float&gt; b, System.Runtime.Intrinsics.Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; MultiplyAddNegatedScalar(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegatedScalar(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddNegatedScalar (a As Vector128(Of Single), b As Vector128(Of Single), c As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; MultiplyAddNegatedScalar(System::Runtime::Intrinsics::Vector128&lt;float&gt; a, System::Runtime::Intrinsics::Vector128&lt;float&gt; b, System::Runtime::Intrinsics::Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddNegatedScalar : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddNegatedScalar (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;double&gt; MultiplyAddScalar (System.Runtime.Intrinsics.Vector128&lt;double&gt; a, System.Runtime.Intrinsics.Vector128&lt;double&gt; b, System.Runtime.Intrinsics.Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; MultiplyAddScalar(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddScalar(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddScalar (a As Vector128(Of Double), b As Vector128(Of Double), c As Vector128(Of Double)) As Vector128(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;double&gt; MultiplyAddScalar(System::Runtime::Intrinsics::Vector128&lt;double&gt; a, System::Runtime::Intrinsics::Vector128&lt;double&gt; b, System::Runtime::Intrinsics::Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddScalar : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddScalar (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; MultiplyAddScalar (System.Runtime.Intrinsics.Vector128&lt;float&gt; a, System.Runtime.Intrinsics.Vector128&lt;float&gt; b, System.Runtime.Intrinsics.Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; MultiplyAddScalar(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddScalar(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddScalar (a As Vector128(Of Single), b As Vector128(Of Single), c As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; MultiplyAddScalar(System::Runtime::Intrinsics::Vector128&lt;float&gt; a, System::Runtime::Intrinsics::Vector128&lt;float&gt; b, System::Runtime::Intrinsics::Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddScalar : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddScalar (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddSubtract">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;double&gt; MultiplyAddSubtract (System.Runtime.Intrinsics.Vector128&lt;double&gt; a, System.Runtime.Intrinsics.Vector128&lt;double&gt; b, System.Runtime.Intrinsics.Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; MultiplyAddSubtract(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddSubtract(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddSubtract (a As Vector128(Of Double), b As Vector128(Of Double), c As Vector128(Of Double)) As Vector128(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;double&gt; MultiplyAddSubtract(System::Runtime::Intrinsics::Vector128&lt;double&gt; a, System::Runtime::Intrinsics::Vector128&lt;double&gt; b, System::Runtime::Intrinsics::Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddSubtract : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddSubtract (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddSubtract">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; MultiplyAddSubtract (System.Runtime.Intrinsics.Vector128&lt;float&gt; a, System.Runtime.Intrinsics.Vector128&lt;float&gt; b, System.Runtime.Intrinsics.Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; MultiplyAddSubtract(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddSubtract(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddSubtract (a As Vector128(Of Single), b As Vector128(Of Single), c As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; MultiplyAddSubtract(System::Runtime::Intrinsics::Vector128&lt;float&gt; a, System::Runtime::Intrinsics::Vector128&lt;float&gt; b, System::Runtime::Intrinsics::Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddSubtract : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddSubtract (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddSubtract">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; MultiplyAddSubtract (System.Runtime.Intrinsics.Vector256&lt;double&gt; a, System.Runtime.Intrinsics.Vector256&lt;double&gt; b, System.Runtime.Intrinsics.Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; MultiplyAddSubtract(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddSubtract(System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddSubtract (a As Vector256(Of Double), b As Vector256(Of Double), c As Vector256(Of Double)) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; MultiplyAddSubtract(System::Runtime::Intrinsics::Vector256&lt;double&gt; a, System::Runtime::Intrinsics::Vector256&lt;double&gt; b, System::Runtime::Intrinsics::Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddSubtract : System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddSubtract (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAddSubtract">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; MultiplyAddSubtract (System.Runtime.Intrinsics.Vector256&lt;float&gt; a, System.Runtime.Intrinsics.Vector256&lt;float&gt; b, System.Runtime.Intrinsics.Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; MultiplyAddSubtract(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplyAddSubtract(System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyAddSubtract (a As Vector256(Of Single), b As Vector256(Of Single), c As Vector256(Of Single)) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; MultiplyAddSubtract(System::Runtime::Intrinsics::Vector256&lt;float&gt; a, System::Runtime::Intrinsics::Vector256&lt;float&gt; b, System::Runtime::Intrinsics::Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplyAddSubtract : System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplyAddSubtract (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtract">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;double&gt; MultiplySubtract (System.Runtime.Intrinsics.Vector128&lt;double&gt; a, System.Runtime.Intrinsics.Vector128&lt;double&gt; b, System.Runtime.Intrinsics.Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; MultiplySubtract(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtract(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtract (a As Vector128(Of Double), b As Vector128(Of Double), c As Vector128(Of Double)) As Vector128(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;double&gt; MultiplySubtract(System::Runtime::Intrinsics::Vector128&lt;double&gt; a, System::Runtime::Intrinsics::Vector128&lt;double&gt; b, System::Runtime::Intrinsics::Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtract : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtract (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtract">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; MultiplySubtract (System.Runtime.Intrinsics.Vector128&lt;float&gt; a, System.Runtime.Intrinsics.Vector128&lt;float&gt; b, System.Runtime.Intrinsics.Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; MultiplySubtract(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtract(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtract (a As Vector128(Of Single), b As Vector128(Of Single), c As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; MultiplySubtract(System::Runtime::Intrinsics::Vector128&lt;float&gt; a, System::Runtime::Intrinsics::Vector128&lt;float&gt; b, System::Runtime::Intrinsics::Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtract : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtract (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtract">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; MultiplySubtract (System.Runtime.Intrinsics.Vector256&lt;double&gt; a, System.Runtime.Intrinsics.Vector256&lt;double&gt; b, System.Runtime.Intrinsics.Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; MultiplySubtract(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtract(System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtract (a As Vector256(Of Double), b As Vector256(Of Double), c As Vector256(Of Double)) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; MultiplySubtract(System::Runtime::Intrinsics::Vector256&lt;double&gt; a, System::Runtime::Intrinsics::Vector256&lt;double&gt; b, System::Runtime::Intrinsics::Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtract : System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtract (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtract">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; MultiplySubtract (System.Runtime.Intrinsics.Vector256&lt;float&gt; a, System.Runtime.Intrinsics.Vector256&lt;float&gt; b, System.Runtime.Intrinsics.Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; MultiplySubtract(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtract(System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtract (a As Vector256(Of Single), b As Vector256(Of Single), c As Vector256(Of Single)) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; MultiplySubtract(System::Runtime::Intrinsics::Vector256&lt;float&gt; a, System::Runtime::Intrinsics::Vector256&lt;float&gt; b, System::Runtime::Intrinsics::Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtract : System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtract (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractAdd">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;double&gt; MultiplySubtractAdd (System.Runtime.Intrinsics.Vector128&lt;double&gt; a, System.Runtime.Intrinsics.Vector128&lt;double&gt; b, System.Runtime.Intrinsics.Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; MultiplySubtractAdd(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractAdd(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractAdd (a As Vector128(Of Double), b As Vector128(Of Double), c As Vector128(Of Double)) As Vector128(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;double&gt; MultiplySubtractAdd(System::Runtime::Intrinsics::Vector128&lt;double&gt; a, System::Runtime::Intrinsics::Vector128&lt;double&gt; b, System::Runtime::Intrinsics::Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractAdd : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractAdd (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractAdd">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; MultiplySubtractAdd (System.Runtime.Intrinsics.Vector128&lt;float&gt; a, System.Runtime.Intrinsics.Vector128&lt;float&gt; b, System.Runtime.Intrinsics.Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; MultiplySubtractAdd(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractAdd(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractAdd (a As Vector128(Of Single), b As Vector128(Of Single), c As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; MultiplySubtractAdd(System::Runtime::Intrinsics::Vector128&lt;float&gt; a, System::Runtime::Intrinsics::Vector128&lt;float&gt; b, System::Runtime::Intrinsics::Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractAdd : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractAdd (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractAdd">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; MultiplySubtractAdd (System.Runtime.Intrinsics.Vector256&lt;double&gt; a, System.Runtime.Intrinsics.Vector256&lt;double&gt; b, System.Runtime.Intrinsics.Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; MultiplySubtractAdd(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractAdd(System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractAdd (a As Vector256(Of Double), b As Vector256(Of Double), c As Vector256(Of Double)) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; MultiplySubtractAdd(System::Runtime::Intrinsics::Vector256&lt;double&gt; a, System::Runtime::Intrinsics::Vector256&lt;double&gt; b, System::Runtime::Intrinsics::Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractAdd : System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractAdd (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractAdd">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; MultiplySubtractAdd (System.Runtime.Intrinsics.Vector256&lt;float&gt; a, System.Runtime.Intrinsics.Vector256&lt;float&gt; b, System.Runtime.Intrinsics.Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; MultiplySubtractAdd(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractAdd(System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractAdd (a As Vector256(Of Single), b As Vector256(Of Single), c As Vector256(Of Single)) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; MultiplySubtractAdd(System::Runtime::Intrinsics::Vector256&lt;float&gt; a, System::Runtime::Intrinsics::Vector256&lt;float&gt; b, System::Runtime::Intrinsics::Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractAdd : System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractAdd (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractNegated">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;double&gt; MultiplySubtractNegated (System.Runtime.Intrinsics.Vector128&lt;double&gt; a, System.Runtime.Intrinsics.Vector128&lt;double&gt; b, System.Runtime.Intrinsics.Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; MultiplySubtractNegated(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegated(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractNegated (a As Vector128(Of Double), b As Vector128(Of Double), c As Vector128(Of Double)) As Vector128(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;double&gt; MultiplySubtractNegated(System::Runtime::Intrinsics::Vector128&lt;double&gt; a, System::Runtime::Intrinsics::Vector128&lt;double&gt; b, System::Runtime::Intrinsics::Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractNegated : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegated (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractNegated">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; MultiplySubtractNegated (System.Runtime.Intrinsics.Vector128&lt;float&gt; a, System.Runtime.Intrinsics.Vector128&lt;float&gt; b, System.Runtime.Intrinsics.Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; MultiplySubtractNegated(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegated(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractNegated (a As Vector128(Of Single), b As Vector128(Of Single), c As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; MultiplySubtractNegated(System::Runtime::Intrinsics::Vector128&lt;float&gt; a, System::Runtime::Intrinsics::Vector128&lt;float&gt; b, System::Runtime::Intrinsics::Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractNegated : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegated (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractNegated">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; MultiplySubtractNegated (System.Runtime.Intrinsics.Vector256&lt;double&gt; a, System.Runtime.Intrinsics.Vector256&lt;double&gt; b, System.Runtime.Intrinsics.Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; MultiplySubtractNegated(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegated(System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double},System.Runtime.Intrinsics.Vector256{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractNegated (a As Vector256(Of Double), b As Vector256(Of Double), c As Vector256(Of Double)) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; MultiplySubtractNegated(System::Runtime::Intrinsics::Vector256&lt;double&gt; a, System::Runtime::Intrinsics::Vector256&lt;double&gt; b, System::Runtime::Intrinsics::Vector256&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractNegated : System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; * System.Runtime.Intrinsics.Vector256&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegated (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractNegated">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; MultiplySubtractNegated (System.Runtime.Intrinsics.Vector256&lt;float&gt; a, System.Runtime.Intrinsics.Vector256&lt;float&gt; b, System.Runtime.Intrinsics.Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; MultiplySubtractNegated(valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegated(System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single},System.Runtime.Intrinsics.Vector256{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractNegated (a As Vector256(Of Single), b As Vector256(Of Single), c As Vector256(Of Single)) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; MultiplySubtractNegated(System::Runtime::Intrinsics::Vector256&lt;float&gt; a, System::Runtime::Intrinsics::Vector256&lt;float&gt; b, System::Runtime::Intrinsics::Vector256&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractNegated : System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; * System.Runtime.Intrinsics.Vector256&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegated (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractNegatedScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;double&gt; MultiplySubtractNegatedScalar (System.Runtime.Intrinsics.Vector128&lt;double&gt; a, System.Runtime.Intrinsics.Vector128&lt;double&gt; b, System.Runtime.Intrinsics.Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; MultiplySubtractNegatedScalar(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegatedScalar(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractNegatedScalar (a As Vector128(Of Double), b As Vector128(Of Double), c As Vector128(Of Double)) As Vector128(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;double&gt; MultiplySubtractNegatedScalar(System::Runtime::Intrinsics::Vector128&lt;double&gt; a, System::Runtime::Intrinsics::Vector128&lt;double&gt; b, System::Runtime::Intrinsics::Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractNegatedScalar : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegatedScalar (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractNegatedScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; MultiplySubtractNegatedScalar (System.Runtime.Intrinsics.Vector128&lt;float&gt; a, System.Runtime.Intrinsics.Vector128&lt;float&gt; b, System.Runtime.Intrinsics.Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; MultiplySubtractNegatedScalar(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegatedScalar(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractNegatedScalar (a As Vector128(Of Single), b As Vector128(Of Single), c As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; MultiplySubtractNegatedScalar(System::Runtime::Intrinsics::Vector128&lt;float&gt; a, System::Runtime::Intrinsics::Vector128&lt;float&gt; b, System::Runtime::Intrinsics::Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractNegatedScalar : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractNegatedScalar (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;double&gt; MultiplySubtractScalar (System.Runtime.Intrinsics.Vector128&lt;double&gt; a, System.Runtime.Intrinsics.Vector128&lt;double&gt; b, System.Runtime.Intrinsics.Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; MultiplySubtractScalar(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractScalar(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractScalar (a As Vector128(Of Double), b As Vector128(Of Double), c As Vector128(Of Double)) As Vector128(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;double&gt; MultiplySubtractScalar(System::Runtime::Intrinsics::Vector128&lt;double&gt; a, System::Runtime::Intrinsics::Vector128&lt;double&gt; b, System::Runtime::Intrinsics::Vector128&lt;double&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractScalar : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractScalar (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplySubtractScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; MultiplySubtractScalar (System.Runtime.Intrinsics.Vector128&lt;float&gt; a, System.Runtime.Intrinsics.Vector128&lt;float&gt; b, System.Runtime.Intrinsics.Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; MultiplySubtractScalar(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; a, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; b, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Fma.MultiplySubtractScalar(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplySubtractScalar (a As Vector128(Of Single), b As Vector128(Of Single), c As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; MultiplySubtractScalar(System::Runtime::Intrinsics::Vector128&lt;float&gt; a, System::Runtime::Intrinsics::Vector128&lt;float&gt; b, System::Runtime::Intrinsics::Vector128&lt;float&gt; c);" />
+      <MemberSignature Language="F#" Value="static member MultiplySubtractScalar : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Fma.MultiplySubtractScalar (a, b, c)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="b" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="c" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <param name="c">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

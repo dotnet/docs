@@ -1,0 +1,64 @@
+﻿<Type Name="JsonWriterOptions" FullName="System.Text.Json.JsonWriterOptions">
+  <TypeSignature Language="C#" Value="public struct JsonWriterOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit JsonWriterOptions extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.JsonWriterOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Structure JsonWriterOptions" />
+  <TypeSignature Language="C++ CLI" Value="public value class JsonWriterOptions" />
+  <TypeSignature Language="F#" Value="type JsonWriterOptions = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Indented">
+      <MemberSignature Language="C#" Value="public bool Indented { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Indented" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonWriterOptions.Indented" />
+      <MemberSignature Language="VB.NET" Value="Public Property Indented As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Indented { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Indented : bool with get, set" Usage="System.Text.Json.JsonWriterOptions.Indented" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipValidation">
+      <MemberSignature Language="C#" Value="public bool SkipValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SkipValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonWriterOptions.SkipValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipValidation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SkipValidation : bool with get, set" Usage="System.Text.Json.JsonWriterOptions.SkipValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

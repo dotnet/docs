@@ -1361,6 +1361,84 @@
         <summary>Send a time-out. This option applies only to synchronous methods; it has no effect on asynchronous methods such as the <see cref="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</summary>
       </Docs>
     </Member>
+    <Member MemberName="TcpKeepAliveInterval">
+      <MemberSignature Language="C#" Value="TcpKeepAliveInterval" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketOptionName TcpKeepAliveInterval = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketOptionName.TcpKeepAliveInterval" />
+      <MemberSignature Language="VB.NET" Value="TcpKeepAliveInterval" />
+      <MemberSignature Language="C++ CLI" Value="TcpKeepAliveInterval" />
+      <MemberSignature Language="F#" Value="TcpKeepAliveInterval = 17" Usage="System.Net.Sockets.SocketOptionName.TcpKeepAliveInterval" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.SocketOptionName</ReturnType>
+      </ReturnValue>
+      <MemberValue>17</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TcpKeepAliveRetryCount">
+      <MemberSignature Language="C#" Value="TcpKeepAliveRetryCount" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketOptionName TcpKeepAliveRetryCount = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketOptionName.TcpKeepAliveRetryCount" />
+      <MemberSignature Language="VB.NET" Value="TcpKeepAliveRetryCount" />
+      <MemberSignature Language="C++ CLI" Value="TcpKeepAliveRetryCount" />
+      <MemberSignature Language="F#" Value="TcpKeepAliveRetryCount = 16" Usage="System.Net.Sockets.SocketOptionName.TcpKeepAliveRetryCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.SocketOptionName</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TcpKeepAliveTime">
+      <MemberSignature Language="C#" Value="TcpKeepAliveTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketOptionName TcpKeepAliveTime = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketOptionName.TcpKeepAliveTime" />
+      <MemberSignature Language="VB.NET" Value="TcpKeepAliveTime" />
+      <MemberSignature Language="C++ CLI" Value="TcpKeepAliveTime" />
+      <MemberSignature Language="F#" Value="TcpKeepAliveTime = 3" Usage="System.Net.Sockets.SocketOptionName.TcpKeepAliveTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.SocketOptionName</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="Type">
       <MemberSignature Language="C#" Value="Type" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketOptionName Type = int32(4104)" />

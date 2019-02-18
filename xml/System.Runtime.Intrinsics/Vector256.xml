@@ -1,0 +1,1536 @@
+﻿<Type Name="Vector256" FullName="System.Runtime.Intrinsics.Vector256">
+  <TypeSignature Language="C#" Value="public static class Vector256" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Vector256 extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.Vector256" />
+  <TypeSignature Language="VB.NET" Value="Public Class Vector256" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Vector256 abstract sealed" />
+  <TypeSignature Language="F#" Value="type Vector256 = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;byte&gt; Create (byte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int8&gt; Create(unsigned int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (value As Byte) As Vector256(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::Byte&gt; Create(System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member Create : byte -&gt; System.Runtime.Intrinsics.Vector256&lt;byte&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; Create (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; Create(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (value As Double) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; Create(double value);" />
+      <MemberSignature Language="F#" Value="static member Create : double -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;short&gt; Create (short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int16&gt; Create(int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (value As Short) As Vector256(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;short&gt; Create(short value);" />
+      <MemberSignature Language="F#" Value="static member Create : int16 -&gt; System.Runtime.Intrinsics.Vector256&lt;int16&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; Create (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; Create(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (value As Integer) As Vector256(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; Create(int value);" />
+      <MemberSignature Language="F#" Value="static member Create : int -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; Create (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; Create(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (value As Long) As Vector256(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; Create(long value);" />
+      <MemberSignature Language="F#" Value="static member Create : int64 -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;sbyte&gt; Create (sbyte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int8&gt; Create(int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (value As SByte) As Vector256(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::SByte&gt; Create(System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member Create : sbyte -&gt; System.Runtime.Intrinsics.Vector256&lt;sbyte&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; Create (float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; Create(float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (value As Single) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; Create(float value);" />
+      <MemberSignature Language="F#" Value="static member Create : single -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ushort&gt; Create (ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int16&gt; Create(unsigned int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (value As UShort) As Vector256(Of UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt16&gt; Create(System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member Create : uint16 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint16&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;uint&gt; Create (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int32&gt; Create(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (value As UInteger) As Vector256(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt32&gt; Create(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member Create : uint32 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ulong&gt; Create (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int64&gt; Create(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (value As ULong) As Vector256(Of ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt64&gt; Create(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member Create : uint64 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint64&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;byte&gt; Create (System.Runtime.Intrinsics.Vector128&lt;byte&gt; lower, System.Runtime.Intrinsics.Vector128&lt;byte&gt; upper);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int8&gt; Create(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; lower, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; upper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (lower As Vector128(Of Byte), upper As Vector128(Of Byte)) As Vector256(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::Byte&gt; Create(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; lower, System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; upper);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.Intrinsics.Vector128&lt;byte&gt; * System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;byte&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (lower, upper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lower" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; Create (System.Runtime.Intrinsics.Vector128&lt;double&gt; lower, System.Runtime.Intrinsics.Vector128&lt;double&gt; upper);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; Create(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; lower, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float64&gt; upper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (lower As Vector128(Of Double), upper As Vector128(Of Double)) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; Create(System::Runtime::Intrinsics::Vector128&lt;double&gt; lower, System::Runtime::Intrinsics::Vector128&lt;double&gt; upper);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.Intrinsics.Vector128&lt;double&gt; * System.Runtime.Intrinsics.Vector128&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (lower, upper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lower" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;short&gt; Create (System.Runtime.Intrinsics.Vector128&lt;short&gt; lower, System.Runtime.Intrinsics.Vector128&lt;short&gt; upper);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int16&gt; Create(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; lower, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int16&gt; upper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (lower As Vector128(Of Short), upper As Vector128(Of Short)) As Vector256(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;short&gt; Create(System::Runtime::Intrinsics::Vector128&lt;short&gt; lower, System::Runtime::Intrinsics::Vector128&lt;short&gt; upper);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.Intrinsics.Vector128&lt;int16&gt; * System.Runtime.Intrinsics.Vector128&lt;int16&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int16&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (lower, upper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lower" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; Create (System.Runtime.Intrinsics.Vector128&lt;int&gt; lower, System.Runtime.Intrinsics.Vector128&lt;int&gt; upper);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; Create(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; lower, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int32&gt; upper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (lower As Vector128(Of Integer), upper As Vector128(Of Integer)) As Vector256(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; Create(System::Runtime::Intrinsics::Vector128&lt;int&gt; lower, System::Runtime::Intrinsics::Vector128&lt;int&gt; upper);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.Intrinsics.Vector128&lt;int&gt; * System.Runtime.Intrinsics.Vector128&lt;int&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (lower, upper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lower" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; Create (System.Runtime.Intrinsics.Vector128&lt;long&gt; lower, System.Runtime.Intrinsics.Vector128&lt;long&gt; upper);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; Create(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int64&gt; lower, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int64&gt; upper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Runtime.Intrinsics.Vector128{System.Int64},System.Runtime.Intrinsics.Vector128{System.Int64})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (lower As Vector128(Of Long), upper As Vector128(Of Long)) As Vector256(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; Create(System::Runtime::Intrinsics::Vector128&lt;long&gt; lower, System::Runtime::Intrinsics::Vector128&lt;long&gt; upper);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.Intrinsics.Vector128&lt;int64&gt; * System.Runtime.Intrinsics.Vector128&lt;int64&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (lower, upper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lower" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;sbyte&gt; Create (System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; lower, System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; upper);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int8&gt; Create(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; lower, valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; upper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (lower As Vector128(Of SByte), upper As Vector128(Of SByte)) As Vector256(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::SByte&gt; Create(System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; lower, System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; upper);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; * System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;sbyte&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (lower, upper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lower" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; Create (System.Runtime.Intrinsics.Vector128&lt;float&gt; lower, System.Runtime.Intrinsics.Vector128&lt;float&gt; upper);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; Create(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; lower, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; upper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (lower As Vector128(Of Single), upper As Vector128(Of Single)) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; Create(System::Runtime::Intrinsics::Vector128&lt;float&gt; lower, System::Runtime::Intrinsics::Vector128&lt;float&gt; upper);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (lower, upper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lower" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ushort&gt; Create (System.Runtime.Intrinsics.Vector128&lt;ushort&gt; lower, System.Runtime.Intrinsics.Vector128&lt;ushort&gt; upper);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int16&gt; Create(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int16&gt; lower, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int16&gt; upper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Runtime.Intrinsics.Vector128{System.UInt16},System.Runtime.Intrinsics.Vector128{System.UInt16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (lower As Vector128(Of UShort), upper As Vector128(Of UShort)) As Vector256(Of UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt16&gt; Create(System::Runtime::Intrinsics::Vector128&lt;System::UInt16&gt; lower, System::Runtime::Intrinsics::Vector128&lt;System::UInt16&gt; upper);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.Intrinsics.Vector128&lt;uint16&gt; * System.Runtime.Intrinsics.Vector128&lt;uint16&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;uint16&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (lower, upper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lower" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;uint&gt; Create (System.Runtime.Intrinsics.Vector128&lt;uint&gt; lower, System.Runtime.Intrinsics.Vector128&lt;uint&gt; upper);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int32&gt; Create(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; lower, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; upper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (lower As Vector128(Of UInteger), upper As Vector128(Of UInteger)) As Vector256(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt32&gt; Create(System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; lower, System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; upper);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.Intrinsics.Vector128&lt;uint32&gt; * System.Runtime.Intrinsics.Vector128&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (lower, upper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lower" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ulong&gt; Create (System.Runtime.Intrinsics.Vector128&lt;ulong&gt; lower, System.Runtime.Intrinsics.Vector128&lt;ulong&gt; upper);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int64&gt; Create(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int64&gt; lower, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int64&gt; upper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Runtime.Intrinsics.Vector128{System.UInt64},System.Runtime.Intrinsics.Vector128{System.UInt64})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (lower As Vector128(Of ULong), upper As Vector128(Of ULong)) As Vector256(Of ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt64&gt; Create(System::Runtime::Intrinsics::Vector128&lt;System::UInt64&gt; lower, System::Runtime::Intrinsics::Vector128&lt;System::UInt64&gt; upper);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.Intrinsics.Vector128&lt;uint64&gt; * System.Runtime.Intrinsics.Vector128&lt;uint64&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;uint64&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (lower, upper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lower" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lower">To be added.</param>
+        <param name="upper">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; Create (double e0, double e1, double e2, double e3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; Create(float64 e0, float64 e1, float64 e2, float64 e3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (e0 As Double, e1 As Double, e2 As Double, e3 As Double) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; Create(double e0, double e1, double e2, double e3);" />
+      <MemberSignature Language="F#" Value="static member Create : double * double * double * double -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (e0, e1, e2, e3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e0" Type="System.Double" />
+        <Parameter Name="e1" Type="System.Double" />
+        <Parameter Name="e2" Type="System.Double" />
+        <Parameter Name="e3" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="e0">To be added.</param>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <param name="e3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; Create (long e0, long e1, long e2, long e3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; Create(int64 e0, int64 e1, int64 e2, int64 e3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Int64,System.Int64,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (e0 As Long, e1 As Long, e2 As Long, e3 As Long) As Vector256(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; Create(long e0, long e1, long e2, long e3);" />
+      <MemberSignature Language="F#" Value="static member Create : int64 * int64 * int64 * int64 -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (e0, e1, e2, e3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e0" Type="System.Int64" />
+        <Parameter Name="e1" Type="System.Int64" />
+        <Parameter Name="e2" Type="System.Int64" />
+        <Parameter Name="e3" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="e0">To be added.</param>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <param name="e3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ulong&gt; Create (ulong e0, ulong e1, ulong e2, ulong e3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int64&gt; Create(unsigned int64 e0, unsigned int64 e1, unsigned int64 e2, unsigned int64 e3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.UInt64,System.UInt64,System.UInt64,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (e0 As ULong, e1 As ULong, e2 As ULong, e3 As ULong) As Vector256(Of ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt64&gt; Create(System::UInt64 e0, System::UInt64 e1, System::UInt64 e2, System::UInt64 e3);" />
+      <MemberSignature Language="F#" Value="static member Create : uint64 * uint64 * uint64 * uint64 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint64&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (e0, e1, e2, e3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e0" Type="System.UInt64" />
+        <Parameter Name="e1" Type="System.UInt64" />
+        <Parameter Name="e2" Type="System.UInt64" />
+        <Parameter Name="e3" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="e0">To be added.</param>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <param name="e3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; Create (int e0, int e1, int e2, int e3, int e4, int e5, int e6, int e7);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; Create(int32 e0, int32 e1, int32 e2, int32 e3, int32 e4, int32 e5, int32 e6, int32 e7) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (e0 As Integer, e1 As Integer, e2 As Integer, e3 As Integer, e4 As Integer, e5 As Integer, e6 As Integer, e7 As Integer) As Vector256(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; Create(int e0, int e1, int e2, int e3, int e4, int e5, int e6, int e7);" />
+      <MemberSignature Language="F#" Value="static member Create : int * int * int * int * int * int * int * int -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (e0, e1, e2, e3, e4, e5, e6, e7)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e0" Type="System.Int32" />
+        <Parameter Name="e1" Type="System.Int32" />
+        <Parameter Name="e2" Type="System.Int32" />
+        <Parameter Name="e3" Type="System.Int32" />
+        <Parameter Name="e4" Type="System.Int32" />
+        <Parameter Name="e5" Type="System.Int32" />
+        <Parameter Name="e6" Type="System.Int32" />
+        <Parameter Name="e7" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="e0">To be added.</param>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <param name="e3">To be added.</param>
+        <param name="e4">To be added.</param>
+        <param name="e5">To be added.</param>
+        <param name="e6">To be added.</param>
+        <param name="e7">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; Create (float e0, float e1, float e2, float e3, float e4, float e5, float e6, float e7);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; Create(float32 e0, float32 e1, float32 e2, float32 e3, float32 e4, float32 e5, float32 e6, float32 e7) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (e0 As Single, e1 As Single, e2 As Single, e3 As Single, e4 As Single, e5 As Single, e6 As Single, e7 As Single) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; Create(float e0, float e1, float e2, float e3, float e4, float e5, float e6, float e7);" />
+      <MemberSignature Language="F#" Value="static member Create : single * single * single * single * single * single * single * single -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (e0, e1, e2, e3, e4, e5, e6, e7)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e0" Type="System.Single" />
+        <Parameter Name="e1" Type="System.Single" />
+        <Parameter Name="e2" Type="System.Single" />
+        <Parameter Name="e3" Type="System.Single" />
+        <Parameter Name="e4" Type="System.Single" />
+        <Parameter Name="e5" Type="System.Single" />
+        <Parameter Name="e6" Type="System.Single" />
+        <Parameter Name="e7" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="e0">To be added.</param>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <param name="e3">To be added.</param>
+        <param name="e4">To be added.</param>
+        <param name="e5">To be added.</param>
+        <param name="e6">To be added.</param>
+        <param name="e7">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;uint&gt; Create (uint e0, uint e1, uint e2, uint e3, uint e4, uint e5, uint e6, uint e7);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int32&gt; Create(unsigned int32 e0, unsigned int32 e1, unsigned int32 e2, unsigned int32 e3, unsigned int32 e4, unsigned int32 e5, unsigned int32 e6, unsigned int32 e7) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (e0 As UInteger, e1 As UInteger, e2 As UInteger, e3 As UInteger, e4 As UInteger, e5 As UInteger, e6 As UInteger, e7 As UInteger) As Vector256(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt32&gt; Create(System::UInt32 e0, System::UInt32 e1, System::UInt32 e2, System::UInt32 e3, System::UInt32 e4, System::UInt32 e5, System::UInt32 e6, System::UInt32 e7);" />
+      <MemberSignature Language="F#" Value="static member Create : uint32 * uint32 * uint32 * uint32 * uint32 * uint32 * uint32 * uint32 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (e0, e1, e2, e3, e4, e5, e6, e7)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e0" Type="System.UInt32" />
+        <Parameter Name="e1" Type="System.UInt32" />
+        <Parameter Name="e2" Type="System.UInt32" />
+        <Parameter Name="e3" Type="System.UInt32" />
+        <Parameter Name="e4" Type="System.UInt32" />
+        <Parameter Name="e5" Type="System.UInt32" />
+        <Parameter Name="e6" Type="System.UInt32" />
+        <Parameter Name="e7" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="e0">To be added.</param>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <param name="e3">To be added.</param>
+        <param name="e4">To be added.</param>
+        <param name="e5">To be added.</param>
+        <param name="e6">To be added.</param>
+        <param name="e7">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;short&gt; Create (short e0, short e1, short e2, short e3, short e4, short e5, short e6, short e7, short e8, short e9, short e10, short e11, short e12, short e13, short e14, short e15);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int16&gt; Create(int16 e0, int16 e1, int16 e2, int16 e3, int16 e4, int16 e5, int16 e6, int16 e7, int16 e8, int16 e9, int16 e10, int16 e11, int16 e12, int16 e13, int16 e14, int16 e15) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (e0 As Short, e1 As Short, e2 As Short, e3 As Short, e4 As Short, e5 As Short, e6 As Short, e7 As Short, e8 As Short, e9 As Short, e10 As Short, e11 As Short, e12 As Short, e13 As Short, e14 As Short, e15 As Short) As Vector256(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;short&gt; Create(short e0, short e1, short e2, short e3, short e4, short e5, short e6, short e7, short e8, short e9, short e10, short e11, short e12, short e13, short e14, short e15);" />
+      <MemberSignature Language="F#" Value="static member Create : int16 * int16 * int16 * int16 * int16 * int16 * int16 * int16 * int16 * int16 * int16 * int16 * int16 * int16 * int16 * int16 -&gt; System.Runtime.Intrinsics.Vector256&lt;int16&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (e0, e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e14, e15)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e0" Type="System.Int16" />
+        <Parameter Name="e1" Type="System.Int16" />
+        <Parameter Name="e2" Type="System.Int16" />
+        <Parameter Name="e3" Type="System.Int16" />
+        <Parameter Name="e4" Type="System.Int16" />
+        <Parameter Name="e5" Type="System.Int16" />
+        <Parameter Name="e6" Type="System.Int16" />
+        <Parameter Name="e7" Type="System.Int16" />
+        <Parameter Name="e8" Type="System.Int16" />
+        <Parameter Name="e9" Type="System.Int16" />
+        <Parameter Name="e10" Type="System.Int16" />
+        <Parameter Name="e11" Type="System.Int16" />
+        <Parameter Name="e12" Type="System.Int16" />
+        <Parameter Name="e13" Type="System.Int16" />
+        <Parameter Name="e14" Type="System.Int16" />
+        <Parameter Name="e15" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="e0">To be added.</param>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <param name="e3">To be added.</param>
+        <param name="e4">To be added.</param>
+        <param name="e5">To be added.</param>
+        <param name="e6">To be added.</param>
+        <param name="e7">To be added.</param>
+        <param name="e8">To be added.</param>
+        <param name="e9">To be added.</param>
+        <param name="e10">To be added.</param>
+        <param name="e11">To be added.</param>
+        <param name="e12">To be added.</param>
+        <param name="e13">To be added.</param>
+        <param name="e14">To be added.</param>
+        <param name="e15">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ushort&gt; Create (ushort e0, ushort e1, ushort e2, ushort e3, ushort e4, ushort e5, ushort e6, ushort e7, ushort e8, ushort e9, ushort e10, ushort e11, ushort e12, ushort e13, ushort e14, ushort e15);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int16&gt; Create(unsigned int16 e0, unsigned int16 e1, unsigned int16 e2, unsigned int16 e3, unsigned int16 e4, unsigned int16 e5, unsigned int16 e6, unsigned int16 e7, unsigned int16 e8, unsigned int16 e9, unsigned int16 e10, unsigned int16 e11, unsigned int16 e12, unsigned int16 e13, unsigned int16 e14, unsigned int16 e15) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (e0 As UShort, e1 As UShort, e2 As UShort, e3 As UShort, e4 As UShort, e5 As UShort, e6 As UShort, e7 As UShort, e8 As UShort, e9 As UShort, e10 As UShort, e11 As UShort, e12 As UShort, e13 As UShort, e14 As UShort, e15 As UShort) As Vector256(Of UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt16&gt; Create(System::UInt16 e0, System::UInt16 e1, System::UInt16 e2, System::UInt16 e3, System::UInt16 e4, System::UInt16 e5, System::UInt16 e6, System::UInt16 e7, System::UInt16 e8, System::UInt16 e9, System::UInt16 e10, System::UInt16 e11, System::UInt16 e12, System::UInt16 e13, System::UInt16 e14, System::UInt16 e15);" />
+      <MemberSignature Language="F#" Value="static member Create : uint16 * uint16 * uint16 * uint16 * uint16 * uint16 * uint16 * uint16 * uint16 * uint16 * uint16 * uint16 * uint16 * uint16 * uint16 * uint16 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint16&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (e0, e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e14, e15)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e0" Type="System.UInt16" />
+        <Parameter Name="e1" Type="System.UInt16" />
+        <Parameter Name="e2" Type="System.UInt16" />
+        <Parameter Name="e3" Type="System.UInt16" />
+        <Parameter Name="e4" Type="System.UInt16" />
+        <Parameter Name="e5" Type="System.UInt16" />
+        <Parameter Name="e6" Type="System.UInt16" />
+        <Parameter Name="e7" Type="System.UInt16" />
+        <Parameter Name="e8" Type="System.UInt16" />
+        <Parameter Name="e9" Type="System.UInt16" />
+        <Parameter Name="e10" Type="System.UInt16" />
+        <Parameter Name="e11" Type="System.UInt16" />
+        <Parameter Name="e12" Type="System.UInt16" />
+        <Parameter Name="e13" Type="System.UInt16" />
+        <Parameter Name="e14" Type="System.UInt16" />
+        <Parameter Name="e15" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="e0">To be added.</param>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <param name="e3">To be added.</param>
+        <param name="e4">To be added.</param>
+        <param name="e5">To be added.</param>
+        <param name="e6">To be added.</param>
+        <param name="e7">To be added.</param>
+        <param name="e8">To be added.</param>
+        <param name="e9">To be added.</param>
+        <param name="e10">To be added.</param>
+        <param name="e11">To be added.</param>
+        <param name="e12">To be added.</param>
+        <param name="e13">To be added.</param>
+        <param name="e14">To be added.</param>
+        <param name="e15">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;byte&gt; Create (byte e0, byte e1, byte e2, byte e3, byte e4, byte e5, byte e6, byte e7, byte e8, byte e9, byte e10, byte e11, byte e12, byte e13, byte e14, byte e15, byte e16, byte e17, byte e18, byte e19, byte e20, byte e21, byte e22, byte e23, byte e24, byte e25, byte e26, byte e27, byte e28, byte e29, byte e30, byte e31);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int8&gt; Create(unsigned int8 e0, unsigned int8 e1, unsigned int8 e2, unsigned int8 e3, unsigned int8 e4, unsigned int8 e5, unsigned int8 e6, unsigned int8 e7, unsigned int8 e8, unsigned int8 e9, unsigned int8 e10, unsigned int8 e11, unsigned int8 e12, unsigned int8 e13, unsigned int8 e14, unsigned int8 e15, unsigned int8 e16, unsigned int8 e17, unsigned int8 e18, unsigned int8 e19, unsigned int8 e20, unsigned int8 e21, unsigned int8 e22, unsigned int8 e23, unsigned int8 e24, unsigned int8 e25, unsigned int8 e26, unsigned int8 e27, unsigned int8 e28, unsigned int8 e29, unsigned int8 e30, unsigned int8 e31) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (e0 As Byte, e1 As Byte, e2 As Byte, e3 As Byte, e4 As Byte, e5 As Byte, e6 As Byte, e7 As Byte, e8 As Byte, e9 As Byte, e10 As Byte, e11 As Byte, e12 As Byte, e13 As Byte, e14 As Byte, e15 As Byte, e16 As Byte, e17 As Byte, e18 As Byte, e19 As Byte, e20 As Byte, e21 As Byte, e22 As Byte, e23 As Byte, e24 As Byte, e25 As Byte, e26 As Byte, e27 As Byte, e28 As Byte, e29 As Byte, e30 As Byte, e31 As Byte) As Vector256(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::Byte&gt; Create(System::Byte e0, System::Byte e1, System::Byte e2, System::Byte e3, System::Byte e4, System::Byte e5, System::Byte e6, System::Byte e7, System::Byte e8, System::Byte e9, System::Byte e10, System::Byte e11, System::Byte e12, System::Byte e13, System::Byte e14, System::Byte e15, System::Byte e16, System::Byte e17, System::Byte e18, System::Byte e19, System::Byte e20, System::Byte e21, System::Byte e22, System::Byte e23, System::Byte e24, System::Byte e25, System::Byte e26, System::Byte e27, System::Byte e28, System::Byte e29, System::Byte e30, System::Byte e31);" />
+      <MemberSignature Language="F#" Value="static member Create : byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte * byte -&gt; System.Runtime.Intrinsics.Vector256&lt;byte&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (e0, e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e20, e21, e22, e23, e24, e25, e26, e27, e28, e29, e30, e31)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e0" Type="System.Byte" />
+        <Parameter Name="e1" Type="System.Byte" />
+        <Parameter Name="e2" Type="System.Byte" />
+        <Parameter Name="e3" Type="System.Byte" />
+        <Parameter Name="e4" Type="System.Byte" />
+        <Parameter Name="e5" Type="System.Byte" />
+        <Parameter Name="e6" Type="System.Byte" />
+        <Parameter Name="e7" Type="System.Byte" />
+        <Parameter Name="e8" Type="System.Byte" />
+        <Parameter Name="e9" Type="System.Byte" />
+        <Parameter Name="e10" Type="System.Byte" />
+        <Parameter Name="e11" Type="System.Byte" />
+        <Parameter Name="e12" Type="System.Byte" />
+        <Parameter Name="e13" Type="System.Byte" />
+        <Parameter Name="e14" Type="System.Byte" />
+        <Parameter Name="e15" Type="System.Byte" />
+        <Parameter Name="e16" Type="System.Byte" />
+        <Parameter Name="e17" Type="System.Byte" />
+        <Parameter Name="e18" Type="System.Byte" />
+        <Parameter Name="e19" Type="System.Byte" />
+        <Parameter Name="e20" Type="System.Byte" />
+        <Parameter Name="e21" Type="System.Byte" />
+        <Parameter Name="e22" Type="System.Byte" />
+        <Parameter Name="e23" Type="System.Byte" />
+        <Parameter Name="e24" Type="System.Byte" />
+        <Parameter Name="e25" Type="System.Byte" />
+        <Parameter Name="e26" Type="System.Byte" />
+        <Parameter Name="e27" Type="System.Byte" />
+        <Parameter Name="e28" Type="System.Byte" />
+        <Parameter Name="e29" Type="System.Byte" />
+        <Parameter Name="e30" Type="System.Byte" />
+        <Parameter Name="e31" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="e0">To be added.</param>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <param name="e3">To be added.</param>
+        <param name="e4">To be added.</param>
+        <param name="e5">To be added.</param>
+        <param name="e6">To be added.</param>
+        <param name="e7">To be added.</param>
+        <param name="e8">To be added.</param>
+        <param name="e9">To be added.</param>
+        <param name="e10">To be added.</param>
+        <param name="e11">To be added.</param>
+        <param name="e12">To be added.</param>
+        <param name="e13">To be added.</param>
+        <param name="e14">To be added.</param>
+        <param name="e15">To be added.</param>
+        <param name="e16">To be added.</param>
+        <param name="e17">To be added.</param>
+        <param name="e18">To be added.</param>
+        <param name="e19">To be added.</param>
+        <param name="e20">To be added.</param>
+        <param name="e21">To be added.</param>
+        <param name="e22">To be added.</param>
+        <param name="e23">To be added.</param>
+        <param name="e24">To be added.</param>
+        <param name="e25">To be added.</param>
+        <param name="e26">To be added.</param>
+        <param name="e27">To be added.</param>
+        <param name="e28">To be added.</param>
+        <param name="e29">To be added.</param>
+        <param name="e30">To be added.</param>
+        <param name="e31">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;sbyte&gt; Create (sbyte e0, sbyte e1, sbyte e2, sbyte e3, sbyte e4, sbyte e5, sbyte e6, sbyte e7, sbyte e8, sbyte e9, sbyte e10, sbyte e11, sbyte e12, sbyte e13, sbyte e14, sbyte e15, sbyte e16, sbyte e17, sbyte e18, sbyte e19, sbyte e20, sbyte e21, sbyte e22, sbyte e23, sbyte e24, sbyte e25, sbyte e26, sbyte e27, sbyte e28, sbyte e29, sbyte e30, sbyte e31);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int8&gt; Create(int8 e0, int8 e1, int8 e2, int8 e3, int8 e4, int8 e5, int8 e6, int8 e7, int8 e8, int8 e9, int8 e10, int8 e11, int8 e12, int8 e13, int8 e14, int8 e15, int8 e16, int8 e17, int8 e18, int8 e19, int8 e20, int8 e21, int8 e22, int8 e23, int8 e24, int8 e25, int8 e26, int8 e27, int8 e28, int8 e29, int8 e30, int8 e31) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.Create(System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte,System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (e0 As SByte, e1 As SByte, e2 As SByte, e3 As SByte, e4 As SByte, e5 As SByte, e6 As SByte, e7 As SByte, e8 As SByte, e9 As SByte, e10 As SByte, e11 As SByte, e12 As SByte, e13 As SByte, e14 As SByte, e15 As SByte, e16 As SByte, e17 As SByte, e18 As SByte, e19 As SByte, e20 As SByte, e21 As SByte, e22 As SByte, e23 As SByte, e24 As SByte, e25 As SByte, e26 As SByte, e27 As SByte, e28 As SByte, e29 As SByte, e30 As SByte, e31 As SByte) As Vector256(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::SByte&gt; Create(System::SByte e0, System::SByte e1, System::SByte e2, System::SByte e3, System::SByte e4, System::SByte e5, System::SByte e6, System::SByte e7, System::SByte e8, System::SByte e9, System::SByte e10, System::SByte e11, System::SByte e12, System::SByte e13, System::SByte e14, System::SByte e15, System::SByte e16, System::SByte e17, System::SByte e18, System::SByte e19, System::SByte e20, System::SByte e21, System::SByte e22, System::SByte e23, System::SByte e24, System::SByte e25, System::SByte e26, System::SByte e27, System::SByte e28, System::SByte e29, System::SByte e30, System::SByte e31);" />
+      <MemberSignature Language="F#" Value="static member Create : sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte * sbyte -&gt; System.Runtime.Intrinsics.Vector256&lt;sbyte&gt;" Usage="System.Runtime.Intrinsics.Vector256.Create (e0, e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e20, e21, e22, e23, e24, e25, e26, e27, e28, e29, e30, e31)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e0" Type="System.SByte" />
+        <Parameter Name="e1" Type="System.SByte" />
+        <Parameter Name="e2" Type="System.SByte" />
+        <Parameter Name="e3" Type="System.SByte" />
+        <Parameter Name="e4" Type="System.SByte" />
+        <Parameter Name="e5" Type="System.SByte" />
+        <Parameter Name="e6" Type="System.SByte" />
+        <Parameter Name="e7" Type="System.SByte" />
+        <Parameter Name="e8" Type="System.SByte" />
+        <Parameter Name="e9" Type="System.SByte" />
+        <Parameter Name="e10" Type="System.SByte" />
+        <Parameter Name="e11" Type="System.SByte" />
+        <Parameter Name="e12" Type="System.SByte" />
+        <Parameter Name="e13" Type="System.SByte" />
+        <Parameter Name="e14" Type="System.SByte" />
+        <Parameter Name="e15" Type="System.SByte" />
+        <Parameter Name="e16" Type="System.SByte" />
+        <Parameter Name="e17" Type="System.SByte" />
+        <Parameter Name="e18" Type="System.SByte" />
+        <Parameter Name="e19" Type="System.SByte" />
+        <Parameter Name="e20" Type="System.SByte" />
+        <Parameter Name="e21" Type="System.SByte" />
+        <Parameter Name="e22" Type="System.SByte" />
+        <Parameter Name="e23" Type="System.SByte" />
+        <Parameter Name="e24" Type="System.SByte" />
+        <Parameter Name="e25" Type="System.SByte" />
+        <Parameter Name="e26" Type="System.SByte" />
+        <Parameter Name="e27" Type="System.SByte" />
+        <Parameter Name="e28" Type="System.SByte" />
+        <Parameter Name="e29" Type="System.SByte" />
+        <Parameter Name="e30" Type="System.SByte" />
+        <Parameter Name="e31" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="e0">To be added.</param>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <param name="e3">To be added.</param>
+        <param name="e4">To be added.</param>
+        <param name="e5">To be added.</param>
+        <param name="e6">To be added.</param>
+        <param name="e7">To be added.</param>
+        <param name="e8">To be added.</param>
+        <param name="e9">To be added.</param>
+        <param name="e10">To be added.</param>
+        <param name="e11">To be added.</param>
+        <param name="e12">To be added.</param>
+        <param name="e13">To be added.</param>
+        <param name="e14">To be added.</param>
+        <param name="e15">To be added.</param>
+        <param name="e16">To be added.</param>
+        <param name="e17">To be added.</param>
+        <param name="e18">To be added.</param>
+        <param name="e19">To be added.</param>
+        <param name="e20">To be added.</param>
+        <param name="e21">To be added.</param>
+        <param name="e22">To be added.</param>
+        <param name="e23">To be added.</param>
+        <param name="e24">To be added.</param>
+        <param name="e25">To be added.</param>
+        <param name="e26">To be added.</param>
+        <param name="e27">To be added.</param>
+        <param name="e28">To be added.</param>
+        <param name="e29">To be added.</param>
+        <param name="e30">To be added.</param>
+        <param name="e31">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;byte&gt; CreateScalar (byte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int8&gt; CreateScalar(unsigned int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalar(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalar (value As Byte) As Vector256(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::Byte&gt; CreateScalar(System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalar : byte -&gt; System.Runtime.Intrinsics.Vector256&lt;byte&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalar value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; CreateScalar (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; CreateScalar(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalar(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalar (value As Double) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; CreateScalar(double value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalar : double -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalar value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;short&gt; CreateScalar (short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int16&gt; CreateScalar(int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalar(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalar (value As Short) As Vector256(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;short&gt; CreateScalar(short value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalar : int16 -&gt; System.Runtime.Intrinsics.Vector256&lt;int16&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalar value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; CreateScalar (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; CreateScalar(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalar(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalar (value As Integer) As Vector256(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; CreateScalar(int value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalar : int -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalar value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; CreateScalar (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; CreateScalar(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalar(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalar (value As Long) As Vector256(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; CreateScalar(long value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalar : int64 -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalar value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;sbyte&gt; CreateScalar (sbyte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int8&gt; CreateScalar(int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalar(System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalar (value As SByte) As Vector256(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::SByte&gt; CreateScalar(System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalar : sbyte -&gt; System.Runtime.Intrinsics.Vector256&lt;sbyte&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalar value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; CreateScalar (float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; CreateScalar(float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalar(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalar (value As Single) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; CreateScalar(float value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalar : single -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalar value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ushort&gt; CreateScalar (ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int16&gt; CreateScalar(unsigned int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalar(System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalar (value As UShort) As Vector256(Of UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt16&gt; CreateScalar(System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalar : uint16 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint16&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalar value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;uint&gt; CreateScalar (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int32&gt; CreateScalar(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalar(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalar (value As UInteger) As Vector256(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt32&gt; CreateScalar(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalar : uint32 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalar value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalar">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ulong&gt; CreateScalar (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int64&gt; CreateScalar(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalar(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalar (value As ULong) As Vector256(Of ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt64&gt; CreateScalar(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalar : uint64 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint64&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalar value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarUnsafe">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;byte&gt; CreateScalarUnsafe (byte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int8&gt; CreateScalarUnsafe(unsigned int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalarUnsafe (value As Byte) As Vector256(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::Byte&gt; CreateScalarUnsafe(System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalarUnsafe : byte -&gt; System.Runtime.Intrinsics.Vector256&lt;byte&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarUnsafe">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;double&gt; CreateScalarUnsafe (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float64&gt; CreateScalarUnsafe(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalarUnsafe (value As Double) As Vector256(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;double&gt; CreateScalarUnsafe(double value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalarUnsafe : double -&gt; System.Runtime.Intrinsics.Vector256&lt;double&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarUnsafe">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;short&gt; CreateScalarUnsafe (short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int16&gt; CreateScalarUnsafe(int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalarUnsafe (value As Short) As Vector256(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;short&gt; CreateScalarUnsafe(short value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalarUnsafe : int16 -&gt; System.Runtime.Intrinsics.Vector256&lt;int16&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarUnsafe">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; CreateScalarUnsafe (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; CreateScalarUnsafe(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalarUnsafe (value As Integer) As Vector256(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; CreateScalarUnsafe(int value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalarUnsafe : int -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarUnsafe">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; CreateScalarUnsafe (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; CreateScalarUnsafe(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalarUnsafe (value As Long) As Vector256(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; CreateScalarUnsafe(long value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalarUnsafe : int64 -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarUnsafe">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;sbyte&gt; CreateScalarUnsafe (sbyte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int8&gt; CreateScalarUnsafe(int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe(System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalarUnsafe (value As SByte) As Vector256(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::SByte&gt; CreateScalarUnsafe(System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalarUnsafe : sbyte -&gt; System.Runtime.Intrinsics.Vector256&lt;sbyte&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarUnsafe">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;float&gt; CreateScalarUnsafe (float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;float32&gt; CreateScalarUnsafe(float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalarUnsafe (value As Single) As Vector256(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;float&gt; CreateScalarUnsafe(float value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalarUnsafe : single -&gt; System.Runtime.Intrinsics.Vector256&lt;single&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarUnsafe">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ushort&gt; CreateScalarUnsafe (ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int16&gt; CreateScalarUnsafe(unsigned int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe(System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalarUnsafe (value As UShort) As Vector256(Of UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt16&gt; CreateScalarUnsafe(System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalarUnsafe : uint16 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint16&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarUnsafe">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;uint&gt; CreateScalarUnsafe (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int32&gt; CreateScalarUnsafe(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalarUnsafe (value As UInteger) As Vector256(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt32&gt; CreateScalarUnsafe(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalarUnsafe : uint32 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarUnsafe">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ulong&gt; CreateScalarUnsafe (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int64&gt; CreateScalarUnsafe(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScalarUnsafe (value As ULong) As Vector256(Of ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;System::UInt64&gt; CreateScalarUnsafe(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member CreateScalarUnsafe : uint64 -&gt; System.Runtime.Intrinsics.Vector256&lt;uint64&gt;" Usage="System.Runtime.Intrinsics.Vector256.CreateScalarUnsafe value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

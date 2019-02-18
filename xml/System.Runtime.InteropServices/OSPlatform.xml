@@ -29,7 +29,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -191,6 +191,33 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FreeBSD">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.OSPlatform FreeBSD { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Runtime.InteropServices.OSPlatform FreeBSD" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.OSPlatform.FreeBSD" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FreeBSD As OSPlatform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::InteropServices::OSPlatform FreeBSD { System::Runtime::InteropServices::OSPlatform get(); };" />
+      <MemberSignature Language="F#" Value="member this.FreeBSD : System.Runtime.InteropServices.OSPlatform" Usage="System.Runtime.InteropServices.OSPlatform.FreeBSD" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.OSPlatform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">

@@ -1,0 +1,102 @@
+﻿<Type Name="ConfiguredCancelableAsyncEnumerable&lt;T&gt;" FullName="System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct ConfiguredCancelableAsyncEnumerable&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ConfiguredCancelableAsyncEnumerable`1&lt;T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ConfiguredCancelableAsyncEnumerable(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ConfiguredCancelableAsyncEnumerable" />
+  <TypeSignature Language="F#" Value="type ConfiguredCancelableAsyncEnumerable&lt;'T&gt; = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConfigureAwait">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt; ConfigureAwait (bool continueOnCapturedContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1&lt;!T&gt; ConfigureAwait(bool continueOnCapturedContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.ConfigureAwait(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConfigureAwait (continueOnCapturedContext As Boolean) As ConfiguredCancelableAsyncEnumerable(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredCancelableAsyncEnumerable&lt;T&gt; ConfigureAwait(bool continueOnCapturedContext);" />
+      <MemberSignature Language="F#" Value="member this.ConfigureAwait : bool -&gt; System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;'T&gt;" Usage="configuredCancelableAsyncEnumerable.ConfigureAwait continueOnCapturedContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="continueOnCapturedContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsyncEnumerator">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;.Enumerator GetAsyncEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1/Enumerator&lt;!T&gt; GetAsyncEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAsyncEnumerator () As ConfiguredCancelableAsyncEnumerable(Of T).Enumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredCancelableAsyncEnumerable&lt;T&gt;::Enumerator GetAsyncEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetAsyncEnumerator : unit -&gt; System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;'T&gt;.Enumerator" Usage="configuredCancelableAsyncEnumerable.GetAsyncEnumerator " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;+Enumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithCancellation">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt; WithCancellation (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1&lt;!T&gt; WithCancellation(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.WithCancellation(System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredCancelableAsyncEnumerable&lt;T&gt; WithCancellation(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.WithCancellation : System.Threading.CancellationToken -&gt; System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;'T&gt;" Usage="configuredCancelableAsyncEnumerable.WithCancellation cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

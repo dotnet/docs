@@ -1,0 +1,732 @@
+﻿<Type Name="JsonElement" FullName="System.Text.Json.JsonElement">
+  <TypeSignature Language="C#" Value="public struct JsonElement" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit JsonElement extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.JsonElement" />
+  <TypeSignature Language="VB.NET" Value="Public Structure JsonElement" />
+  <TypeSignature Language="C++ CLI" Value="public value class JsonElement" />
+  <TypeSignature Language="F#" Value="type JsonElement = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnumerateArray">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonElement.ArrayEnumerator EnumerateArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Text.Json.JsonElement/ArrayEnumerator EnumerateArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.EnumerateArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnumerateArray () As JsonElement.ArrayEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::Json::JsonElement::ArrayEnumerator EnumerateArray();" />
+      <MemberSignature Language="F#" Value="member this.EnumerateArray : unit -&gt; System.Text.Json.JsonElement.ArrayEnumerator" Usage="jsonElement.EnumerateArray " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonElement+ArrayEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateObject">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonElement.ObjectEnumerator EnumerateObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Text.Json.JsonElement/ObjectEnumerator EnumerateObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.EnumerateObject" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnumerateObject () As JsonElement.ObjectEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::Json::JsonElement::ObjectEnumerator EnumerateObject();" />
+      <MemberSignature Language="F#" Value="member this.EnumerateObject : unit -&gt; System.Text.Json.JsonElement.ObjectEnumerator" Usage="jsonElement.EnumerateObject " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonElement+ObjectEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArrayLength">
+      <MemberSignature Language="C#" Value="public int GetArrayLength ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetArrayLength() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetArrayLength" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetArrayLength () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetArrayLength();" />
+      <MemberSignature Language="F#" Value="member this.GetArrayLength : unit -&gt; int" Usage="jsonElement.GetArrayLength " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoolean">
+      <MemberSignature Language="C#" Value="public bool GetBoolean ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetBoolean() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetBoolean" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBoolean () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetBoolean();" />
+      <MemberSignature Language="F#" Value="member this.GetBoolean : unit -&gt; bool" Usage="jsonElement.GetBoolean " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDecimal">
+      <MemberSignature Language="C#" Value="public decimal GetDecimal ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Decimal GetDecimal() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetDecimal" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDecimal () As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Decimal GetDecimal();" />
+      <MemberSignature Language="F#" Value="member this.GetDecimal : unit -&gt; decimal" Usage="jsonElement.GetDecimal " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDouble">
+      <MemberSignature Language="C#" Value="public double GetDouble ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetDouble() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetDouble" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDouble () As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetDouble();" />
+      <MemberSignature Language="F#" Value="member this.GetDouble : unit -&gt; double" Usage="jsonElement.GetDouble " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt32">
+      <MemberSignature Language="C#" Value="public int GetInt32 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetInt32() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetInt32" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInt32 () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetInt32();" />
+      <MemberSignature Language="F#" Value="member this.GetInt32 : unit -&gt; int" Usage="jsonElement.GetInt32 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt64">
+      <MemberSignature Language="C#" Value="public long GetInt64 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 GetInt64() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInt64 () As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long GetInt64();" />
+      <MemberSignature Language="F#" Value="member this.GetInt64 : unit -&gt; int64" Usage="jsonElement.GetInt64 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonElement GetProperty (ReadOnlySpan&lt;byte&gt; utf8PropertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Text.Json.JsonElement GetProperty(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (utf8PropertyName As ReadOnlySpan(Of Byte)) As JsonElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::Json::JsonElement GetProperty(ReadOnlySpan&lt;System::Byte&gt; utf8PropertyName);" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : ReadOnlySpan&lt;byte&gt; -&gt; System.Text.Json.JsonElement" Usage="jsonElement.GetProperty utf8PropertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonElement GetProperty (ReadOnlySpan&lt;char&gt; propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Text.Json.JsonElement GetProperty(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (propertyName As ReadOnlySpan(Of Char)) As JsonElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::Json::JsonElement GetProperty(ReadOnlySpan&lt;char&gt; propertyName);" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : ReadOnlySpan&lt;char&gt; -&gt; System.Text.Json.JsonElement" Usage="jsonElement.GetProperty propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonElement GetProperty (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Text.Json.JsonElement GetProperty(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (propertyName As String) As JsonElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::Json::JsonElement GetProperty(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : string -&gt; System.Text.Json.JsonElement" Usage="jsonElement.GetProperty propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRawText">
+      <MemberSignature Language="C#" Value="public string GetRawText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRawText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetRawText" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRawText () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetRawText();" />
+      <MemberSignature Language="F#" Value="member this.GetRawText : unit -&gt; string" Usage="jsonElement.GetRawText " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSingle">
+      <MemberSignature Language="C#" Value="public float GetSingle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetSingle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetSingle" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSingle () As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float GetSingle();" />
+      <MemberSignature Language="F#" Value="member this.GetSingle : unit -&gt; single" Usage="jsonElement.GetSingle " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetString">
+      <MemberSignature Language="C#" Value="public string GetString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetString" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetString();" />
+      <MemberSignature Language="F#" Value="member this.GetString : unit -&gt; string" Usage="jsonElement.GetString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUInt32">
+      <MemberSignature Language="C#" Value="public uint GetUInt32 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int32 GetUInt32() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetUInt32" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUInt32 () As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt32 GetUInt32();" />
+      <MemberSignature Language="F#" Value="member this.GetUInt32 : unit -&gt; uint32" Usage="jsonElement.GetUInt32 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUInt64">
+      <MemberSignature Language="C#" Value="public ulong GetUInt64 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int64 GetUInt64() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetUInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUInt64 () As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt64 GetUInt64();" />
+      <MemberSignature Language="F#" Value="member this.GetUInt64 : unit -&gt; uint64" Usage="jsonElement.GetUInt64 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonElement this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonElement Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonElement.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As JsonElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::JsonElement default[int] { System::Text::Json::JsonElement get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Text.Json.JsonElement" Usage="System.Text.Json.JsonElement.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="jsonElement.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetDecimal">
+      <MemberSignature Language="C#" Value="public bool TryGetDecimal (out decimal value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetDecimal([out] valuetype System.Decimal&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetDecimal(System.Decimal@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetDecimal (ByRef value As Decimal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetDecimal([Runtime::InteropServices::Out] System::Decimal % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetDecimal :  -&gt; bool" Usage="jsonElement.TryGetDecimal value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Decimal" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetDouble">
+      <MemberSignature Language="C#" Value="public bool TryGetDouble (out double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetDouble([out] float64&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetDouble(System.Double@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetDouble (ByRef value As Double) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetDouble([Runtime::InteropServices::Out] double % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetDouble :  -&gt; bool" Usage="jsonElement.TryGetDouble value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetInt32">
+      <MemberSignature Language="C#" Value="public bool TryGetInt32 (out int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetInt32([out] int32&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetInt32(System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetInt32 (ByRef value As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetInt32([Runtime::InteropServices::Out] int % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetInt32 :  -&gt; bool" Usage="jsonElement.TryGetInt32 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetInt64">
+      <MemberSignature Language="C#" Value="public bool TryGetInt64 (out long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetInt64([out] int64&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetInt64(System.Int64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetInt64 (ByRef value As Long) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetInt64([Runtime::InteropServices::Out] long % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetInt64 :  -&gt; bool" Usage="jsonElement.TryGetInt64 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProperty">
+      <MemberSignature Language="C#" Value="public bool TryGetProperty (ReadOnlySpan&lt;byte&gt; utf8PropertyName, out System.Text.Json.JsonElement value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetProperty(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, [out] valuetype System.Text.Json.JsonElement&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonElement@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetProperty (utf8PropertyName As ReadOnlySpan(Of Byte), ByRef value As JsonElement) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetProperty(ReadOnlySpan&lt;System::Byte&gt; utf8PropertyName, [Runtime::InteropServices::Out] System::Text::Json::JsonElement % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetProperty : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="jsonElement.TryGetProperty (utf8PropertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Text.Json.JsonElement" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProperty">
+      <MemberSignature Language="C#" Value="public bool TryGetProperty (ReadOnlySpan&lt;char&gt; propertyName, out System.Text.Json.JsonElement value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetProperty(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, [out] valuetype System.Text.Json.JsonElement&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan{System.Char},System.Text.Json.JsonElement@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetProperty (propertyName As ReadOnlySpan(Of Char), ByRef value As JsonElement) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetProperty(ReadOnlySpan&lt;char&gt; propertyName, [Runtime::InteropServices::Out] System::Text::Json::JsonElement % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetProperty : ReadOnlySpan&lt;char&gt; *  -&gt; bool" Usage="jsonElement.TryGetProperty (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.Text.Json.JsonElement" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProperty">
+      <MemberSignature Language="C#" Value="public bool TryGetProperty (string propertyName, out System.Text.Json.JsonElement value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetProperty(string propertyName, [out] valuetype System.Text.Json.JsonElement&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetProperty(System.String,System.Text.Json.JsonElement@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetProperty (propertyName As String, ByRef value As JsonElement) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetProperty(System::String ^ propertyName, [Runtime::InteropServices::Out] System::Text::Json::JsonElement % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetProperty : string *  -&gt; bool" Usage="jsonElement.TryGetProperty (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Text.Json.JsonElement" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetSingle">
+      <MemberSignature Language="C#" Value="public bool TryGetSingle (out float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetSingle([out] float32&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetSingle(System.Single@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetSingle (ByRef value As Single) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetSingle([Runtime::InteropServices::Out] float % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetSingle :  -&gt; bool" Usage="jsonElement.TryGetSingle value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetUInt32">
+      <MemberSignature Language="C#" Value="public bool TryGetUInt32 (out uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetUInt32([out] unsigned int32&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetUInt32(System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetUInt32 (ByRef value As UInteger) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetUInt32([Runtime::InteropServices::Out] System::UInt32 % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetUInt32 :  -&gt; bool" Usage="jsonElement.TryGetUInt32 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetUInt64">
+      <MemberSignature Language="C#" Value="public bool TryGetUInt64 (out ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetUInt64([out] unsigned int64&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetUInt64(System.UInt64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetUInt64 (ByRef value As ULong) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetUInt64([Runtime::InteropServices::Out] System::UInt64 % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetUInt64 :  -&gt; bool" Usage="jsonElement.TryGetUInt64 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonValueType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonValueType Type" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonElement.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As JsonValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::JsonValueType Type { System::Text::Json::JsonValueType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Text.Json.JsonValueType" Usage="System.Text.Json.JsonElement.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

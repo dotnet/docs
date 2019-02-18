@@ -1,0 +1,95 @@
+﻿<Type Name="ConfiguredCancelableAsyncEnumerable&lt;T&gt;+Enumerator" FullName="System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;+Enumerator">
+  <TypeSignature Language="C#" Value="public struct ConfiguredCancelableAsyncEnumerable&lt;T&gt;.Enumerator" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit ConfiguredCancelableAsyncEnumerable`1/Enumerator&lt;T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ConfiguredCancelableAsyncEnumerable(Of T).Enumerator" />
+  <TypeSignature Language="C++ CLI" Value="public: value class ConfiguredCancelableAsyncEnumerable&lt;T&gt;::Enumerator" />
+  <TypeSignature Language="F#" Value="type ConfiguredCancelableAsyncEnumerable&lt;'T&gt;.Enumerator = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public T Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Current" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Current { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : 'T" Usage="System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;'T&gt;.Enumerator.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisposeAsync">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable DisposeAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable DisposeAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.DisposeAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisposeAsync () As ConfiguredValueTaskAwaitable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable DisposeAsync();" />
+      <MemberSignature Language="F#" Value="member this.DisposeAsync : unit -&gt; System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable" Usage="enumerator.DisposeAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNextAsync">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable&lt;bool&gt; MoveNextAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1&lt;bool&gt; MoveNextAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNextAsync () As ConfiguredValueTaskAwaitable(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable&lt;bool&gt; MoveNextAsync();" />
+      <MemberSignature Language="F#" Value="member this.MoveNextAsync : unit -&gt; System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable&lt;bool&gt;" Usage="enumerator.MoveNextAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

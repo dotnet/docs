@@ -1,0 +1,70 @@
+﻿<Type Name="Sse42+X64" FullName="System.Runtime.Intrinsics.X86.Sse42+X64">
+  <TypeSignature Language="C#" Value="public abstract class Sse42.X64 : System.Runtime.Intrinsics.X86.Sse41.X64" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract beforefieldinit Sse42/X64 extends System.Runtime.Intrinsics.X86.Sse41/X64" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.Sse42.X64" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Sse42.X64&#xA;Inherits Sse41.X64" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class Sse42::X64 abstract : System::Runtime::Intrinsics::X86::Sse41::X64" />
+  <TypeSignature Language="F#" Value="type Sse42.X64 = class&#xA;    inherit Sse41.X64" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Intrinsics.X86.Sse41+X64</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Crc32">
+      <MemberSignature Language="C#" Value="public static ulong Crc32 (ulong crc, ulong data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Crc32(unsigned int64 crc, unsigned int64 data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse42.X64.Crc32(System.UInt64,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Crc32 (crc As ULong, data As ULong) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Crc32(System::UInt64 crc, System::UInt64 data);" />
+      <MemberSignature Language="F#" Value="static member Crc32 : uint64 * uint64 -&gt; uint64" Usage="System.Runtime.Intrinsics.X86.Sse42.X64.Crc32 (crc, data)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="crc" Type="System.UInt64" />
+        <Parameter Name="data" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="crc">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.X86.Sse42.X64.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Runtime.Intrinsics.X86.Sse42.X64.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

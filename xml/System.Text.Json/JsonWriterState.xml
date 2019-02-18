@@ -1,0 +1,105 @@
+﻿<Type Name="JsonWriterState" FullName="System.Text.Json.JsonWriterState">
+  <TypeSignature Language="C#" Value="public struct JsonWriterState" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit JsonWriterState extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.JsonWriterState" />
+  <TypeSignature Language="VB.NET" Value="Public Structure JsonWriterState" />
+  <TypeSignature Language="C++ CLI" Value="public value class JsonWriterState" />
+  <TypeSignature Language="F#" Value="type JsonWriterState = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JsonWriterState (System.Text.Json.JsonWriterOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Text.Json.JsonWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonWriterState.#ctor(System.Text.Json.JsonWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional options As JsonWriterOptions = null)" />
+      <MemberSignature Language="F#" Value="new System.Text.Json.JsonWriterState : System.Text.Json.JsonWriterOptions -&gt; System.Text.Json.JsonWriterState" Usage="new System.Text.Json.JsonWriterState options" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="System.Text.Json.JsonWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BytesCommitted">
+      <MemberSignature Language="C#" Value="public long BytesCommitted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BytesCommitted" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonWriterState.BytesCommitted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesCommitted As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long BytesCommitted { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesCommitted : int64" Usage="System.Text.Json.JsonWriterState.BytesCommitted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BytesWritten">
+      <MemberSignature Language="C#" Value="public long BytesWritten { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BytesWritten" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonWriterState.BytesWritten" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesWritten As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long BytesWritten { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesWritten : int64" Usage="System.Text.Json.JsonWriterState.BytesWritten" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonWriterOptions Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonWriterOptions Options" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonWriterState.Options" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As JsonWriterOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::JsonWriterOptions Options { System::Text::Json::JsonWriterOptions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Text.Json.JsonWriterOptions" Usage="System.Text.Json.JsonWriterState.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonWriterOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

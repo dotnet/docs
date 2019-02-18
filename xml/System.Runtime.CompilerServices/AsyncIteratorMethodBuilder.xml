@@ -1,0 +1,177 @@
+﻿<Type Name="AsyncIteratorMethodBuilder" FullName="System.Runtime.CompilerServices.AsyncIteratorMethodBuilder">
+  <TypeSignature Language="C#" Value="public struct AsyncIteratorMethodBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AsyncIteratorMethodBuilder extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.AsyncIteratorMethodBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Structure AsyncIteratorMethodBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public value class AsyncIteratorMethodBuilder" />
+  <TypeSignature Language="F#" Value="type AsyncIteratorMethodBuilder = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AwaitOnCompleted&lt;TAwaiter,TStateMachine&gt;">
+      <MemberSignature Language="C#" Value="public void AwaitOnCompleted&lt;TAwaiter,TStateMachine&gt; (ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : System.Runtime.CompilerServices.INotifyCompletion where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AwaitOnCompleted&lt;(class System.Runtime.CompilerServices.INotifyCompletion) TAwaiter, (class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TAwaiter&amp; awaiter, !!TStateMachine&amp; stateMachine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncIteratorMethodBuilder.AwaitOnCompleted``2(``0@,``1@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AwaitOnCompleted(Of TAwaiter As INotifyCompletion, TStateMachine As INotifyCompletion) (ByRef awaiter As TAwaiter, ByRef stateMachine As TStateMachine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAwaiter, typename TStateMachine&gt;&#xA; where TAwaiter : System::Runtime::CompilerServices::INotifyCompletion where TStateMachine : System::Runtime::CompilerServices::IAsyncStateMachine void AwaitOnCompleted(TAwaiter % awaiter, TStateMachine % stateMachine);" />
+      <MemberSignature Language="F#" Value="member this.AwaitOnCompleted :  *  -&gt; unit (requires 'Awaiter :&gt; System.Runtime.CompilerServices.INotifyCompletion and 'StateMachine :&gt; System.Runtime.CompilerServices.IAsyncStateMachine)" Usage="asyncIteratorMethodBuilder.AwaitOnCompleted (awaiter, stateMachine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TAwaiter">
+          <Constraints>
+            <InterfaceName>System.Runtime.CompilerServices.INotifyCompletion</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TStateMachine">
+          <Constraints>
+            <InterfaceName>System.Runtime.CompilerServices.IAsyncStateMachine</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TAwaiter">To be added.</typeparam>
+        <typeparam name="TStateMachine">To be added.</typeparam>
+        <param name="awaiter">To be added.</param>
+        <param name="stateMachine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AwaitUnsafeOnCompleted&lt;TAwaiter,TStateMachine&gt;">
+      <MemberSignature Language="C#" Value="public void AwaitUnsafeOnCompleted&lt;TAwaiter,TStateMachine&gt; (ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : System.Runtime.CompilerServices.ICriticalNotifyCompletion where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AwaitUnsafeOnCompleted&lt;(class System.Runtime.CompilerServices.ICriticalNotifyCompletion) TAwaiter, (class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TAwaiter&amp; awaiter, !!TStateMachine&amp; stateMachine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncIteratorMethodBuilder.AwaitUnsafeOnCompleted``2(``0@,``1@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AwaitUnsafeOnCompleted(Of TAwaiter As ICriticalNotifyCompletion, TStateMachine As ICriticalNotifyCompletion) (ByRef awaiter As TAwaiter, ByRef stateMachine As TStateMachine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAwaiter, typename TStateMachine&gt;&#xA; where TAwaiter : System::Runtime::CompilerServices::ICriticalNotifyCompletion where TStateMachine : System::Runtime::CompilerServices::IAsyncStateMachine void AwaitUnsafeOnCompleted(TAwaiter % awaiter, TStateMachine % stateMachine);" />
+      <MemberSignature Language="F#" Value="member this.AwaitUnsafeOnCompleted :  *  -&gt; unit (requires 'Awaiter :&gt; System.Runtime.CompilerServices.ICriticalNotifyCompletion and 'StateMachine :&gt; System.Runtime.CompilerServices.IAsyncStateMachine)" Usage="asyncIteratorMethodBuilder.AwaitUnsafeOnCompleted (awaiter, stateMachine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TAwaiter">
+          <Constraints>
+            <InterfaceName>System.Runtime.CompilerServices.ICriticalNotifyCompletion</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TStateMachine">
+          <Constraints>
+            <InterfaceName>System.Runtime.CompilerServices.IAsyncStateMachine</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TAwaiter">To be added.</typeparam>
+        <typeparam name="TStateMachine">To be added.</typeparam>
+        <param name="awaiter">To be added.</param>
+        <param name="stateMachine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Complete">
+      <MemberSignature Language="C#" Value="public void Complete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncIteratorMethodBuilder.Complete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete();" />
+      <MemberSignature Language="F#" Value="member this.Complete : unit -&gt; unit" Usage="asyncIteratorMethodBuilder.Complete " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.AsyncIteratorMethodBuilder Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.CompilerServices.AsyncIteratorMethodBuilder Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncIteratorMethodBuilder.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As AsyncIteratorMethodBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::AsyncIteratorMethodBuilder Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Runtime.CompilerServices.AsyncIteratorMethodBuilder" Usage="System.Runtime.CompilerServices.AsyncIteratorMethodBuilder.Create " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.AsyncIteratorMethodBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNext&lt;TStateMachine&gt;">
+      <MemberSignature Language="C#" Value="public void MoveNext&lt;TStateMachine&gt; (ref TStateMachine stateMachine) where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveNext&lt;(class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TStateMachine&amp; stateMachine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncIteratorMethodBuilder.MoveNext``1(``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveNext(Of TStateMachine As IAsyncStateMachine) (ByRef stateMachine As TStateMachine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TStateMachine&gt;&#xA; where TStateMachine : System::Runtime::CompilerServices::IAsyncStateMachine void MoveNext(TStateMachine % stateMachine);" />
+      <MemberSignature Language="F#" Value="member this.MoveNext :  -&gt; unit (requires 'StateMachine :&gt; System.Runtime.CompilerServices.IAsyncStateMachine)" Usage="asyncIteratorMethodBuilder.MoveNext stateMachine" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TStateMachine">
+          <Constraints>
+            <InterfaceName>System.Runtime.CompilerServices.IAsyncStateMachine</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TStateMachine">To be added.</typeparam>
+        <param name="stateMachine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

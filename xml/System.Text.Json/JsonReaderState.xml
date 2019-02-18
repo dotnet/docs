@@ -1,0 +1,128 @@
+﻿<Type Name="JsonReaderState" FullName="System.Text.Json.JsonReaderState">
+  <TypeSignature Language="C#" Value="public struct JsonReaderState" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit JsonReaderState extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.JsonReaderState" />
+  <TypeSignature Language="VB.NET" Value="Public Structure JsonReaderState" />
+  <TypeSignature Language="C++ CLI" Value="public value class JsonReaderState" />
+  <TypeSignature Language="F#" Value="type JsonReaderState = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JsonReaderState (int maxDepth = 64, System.Text.Json.JsonReaderOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 maxDepth, valuetype System.Text.Json.JsonReaderOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonReaderState.#ctor(System.Int32,System.Text.Json.JsonReaderOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional maxDepth As Integer = 64, Optional options As JsonReaderOptions = null)" />
+      <MemberSignature Language="F#" Value="new System.Text.Json.JsonReaderState : int * System.Text.Json.JsonReaderOptions -&gt; System.Text.Json.JsonReaderState" Usage="new System.Text.Json.JsonReaderState (maxDepth, options)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="maxDepth" Type="System.Int32" />
+        <Parameter Name="options" Type="System.Text.Json.JsonReaderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="maxDepth">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BytesConsumed">
+      <MemberSignature Language="C#" Value="public long BytesConsumed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BytesConsumed" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonReaderState.BytesConsumed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesConsumed As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long BytesConsumed { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesConsumed : int64" Usage="System.Text.Json.JsonReaderState.BytesConsumed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxDepth">
+      <MemberSignature Language="C#" Value="public int MaxDepth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDepth" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonReaderState.MaxDepth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxDepth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDepth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxDepth : int" Usage="System.Text.Json.JsonReaderState.MaxDepth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonReaderOptions Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonReaderOptions Options" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonReaderState.Options" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As JsonReaderOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::JsonReaderOptions Options { System::Text::Json::JsonReaderOptions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Text.Json.JsonReaderOptions" Usage="System.Text.Json.JsonReaderState.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonReaderOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public SequencePosition Position { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.SequencePosition Position" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonReaderState.Position" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As SequencePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property SequencePosition Position { SequencePosition get(); };" />
+      <MemberSignature Language="F#" Value="member this.Position : SequencePosition" Usage="System.Text.Json.JsonReaderState.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.SequencePosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

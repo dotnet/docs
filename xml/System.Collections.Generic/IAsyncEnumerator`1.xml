@@ -1,0 +1,73 @@
+﻿<Type Name="IAsyncEnumerator&lt;T&gt;" FullName="System.Collections.Generic.IAsyncEnumerator&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IAsyncEnumerator&lt;out T&gt; : IAsyncDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAsyncEnumerator`1&lt;+ T&gt; implements class System.IAsyncDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Generic.IAsyncEnumerator`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAsyncEnumerator(Of Out T)&#xA;Implements IAsyncDisposable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IAsyncEnumerator : IAsyncDisposable" />
+  <TypeSignature Language="F#" Value="type IAsyncEnumerator&lt;'T&gt; = interface&#xA;    interface IAsyncDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IAsyncDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public T Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Current" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.IAsyncEnumerator`1.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As T" />
+      <MemberSignature Language="F#" Value="member this.Current : 'T" Usage="System.Collections.Generic.IAsyncEnumerator&lt;'T&gt;.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNextAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask&lt;bool&gt; MoveNextAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;bool&gt; MoveNextAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IAsyncEnumerator`1.MoveNextAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNextAsync () As ValueTask(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::ValueTask&lt;bool&gt; MoveNextAsync();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNextAsync : unit -&gt; System.Threading.Tasks.ValueTask&lt;bool&gt;" Usage="iAsyncEnumerator.MoveNextAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

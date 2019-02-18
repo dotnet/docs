@@ -476,6 +476,70 @@ To create a random number generator, call the @System.Security.Cryptography.Rand
           <paramref name="offset" /> plus <paramref name="count" /> exceeds the length of <paramref name="data" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="GetInt32">
+      <MemberSignature Language="C#" Value="public static int GetInt32 (int toExclusive);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetInt32(int32 toExclusive) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.GetInt32(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInt32 (toExclusive As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetInt32(int toExclusive);" />
+      <MemberSignature Language="F#" Value="static member GetInt32 : int -&gt; int" Usage="System.Security.Cryptography.RandomNumberGenerator.GetInt32 toExclusive" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toExclusive" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="toExclusive">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt32">
+      <MemberSignature Language="C#" Value="public static int GetInt32 (int fromInclusive, int toExclusive);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetInt32(int32 fromInclusive, int32 toExclusive) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.GetInt32(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInt32 (fromInclusive As Integer, toExclusive As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetInt32(int fromInclusive, int toExclusive);" />
+      <MemberSignature Language="F#" Value="static member GetInt32 : int * int -&gt; int" Usage="System.Security.Cryptography.RandomNumberGenerator.GetInt32 (fromInclusive, toExclusive)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fromInclusive" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="toExclusive" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="fromInclusive">To be added.</param>
+        <param name="toExclusive">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetNonZeroBytes">
       <MemberSignature Language="C#" Value="public virtual void GetNonZeroBytes (byte[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetNonZeroBytes(unsigned int8[] data) cil managed" />

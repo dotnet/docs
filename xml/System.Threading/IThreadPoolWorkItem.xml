@@ -1,0 +1,40 @@
+﻿<Type Name="IThreadPoolWorkItem" FullName="System.Threading.IThreadPoolWorkItem">
+  <TypeSignature Language="C#" Value="public interface IThreadPoolWorkItem" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IThreadPoolWorkItem" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.IThreadPoolWorkItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IThreadPoolWorkItem" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IThreadPoolWorkItem" />
+  <TypeSignature Language="F#" Value="type IThreadPoolWorkItem = interface" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.IThreadPoolWorkItem.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Execute ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute();" />
+      <MemberSignature Language="F#" Value="abstract member Execute : unit -&gt; unit" Usage="iThreadPoolWorkItem.Execute " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

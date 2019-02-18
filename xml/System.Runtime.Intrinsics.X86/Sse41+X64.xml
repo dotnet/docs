@@ -1,0 +1,155 @@
+﻿<Type Name="Sse41+X64" FullName="System.Runtime.Intrinsics.X86.Sse41+X64">
+  <TypeSignature Language="C#" Value="public abstract class Sse41.X64 : System.Runtime.Intrinsics.X86.Sse2.X64" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract beforefieldinit Sse41/X64 extends System.Runtime.Intrinsics.X86.Sse2/X64" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.Sse41.X64" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Sse41.X64&#xA;Inherits Sse2.X64" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class Sse41::X64 abstract : System::Runtime::Intrinsics::X86::Sse2::X64" />
+  <TypeSignature Language="F#" Value="type Sse41.X64 = class&#xA;    inherit Sse2.X64" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Intrinsics.X86.Sse2+X64</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Extract">
+      <MemberSignature Language="C#" Value="public static long Extract (System.Runtime.Intrinsics.Vector128&lt;long&gt; value, byte index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Extract(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int64&gt; value, unsigned int8 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse41.X64.Extract(System.Runtime.Intrinsics.Vector128{System.Int64},System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Extract (value As Vector128(Of Long), index As Byte) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Extract(System::Runtime::Intrinsics::Vector128&lt;long&gt; value, System::Byte index);" />
+      <MemberSignature Language="F#" Value="static member Extract : System.Runtime.Intrinsics.Vector128&lt;int64&gt; * byte -&gt; int64" Usage="System.Runtime.Intrinsics.X86.Sse41.X64.Extract (value, index)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
+        <Parameter Name="index" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extract">
+      <MemberSignature Language="C#" Value="public static ulong Extract (System.Runtime.Intrinsics.Vector128&lt;ulong&gt; value, byte index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Extract(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int64&gt; value, unsigned int8 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse41.X64.Extract(System.Runtime.Intrinsics.Vector128{System.UInt64},System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Extract (value As Vector128(Of ULong), index As Byte) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Extract(System::Runtime::Intrinsics::Vector128&lt;System::UInt64&gt; value, System::Byte index);" />
+      <MemberSignature Language="F#" Value="static member Extract : System.Runtime.Intrinsics.Vector128&lt;uint64&gt; * byte -&gt; uint64" Usage="System.Runtime.Intrinsics.X86.Sse41.X64.Extract (value, index)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" />
+        <Parameter Name="index" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;long&gt; Insert (System.Runtime.Intrinsics.Vector128&lt;long&gt; value, long data, byte index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int64&gt; Insert(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int64&gt; value, int64 data, unsigned int8 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse41.X64.Insert(System.Runtime.Intrinsics.Vector128{System.Int64},System.Int64,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Insert (value As Vector128(Of Long), data As Long, index As Byte) As Vector128(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;long&gt; Insert(System::Runtime::Intrinsics::Vector128&lt;long&gt; value, long data, System::Byte index);" />
+      <MemberSignature Language="F#" Value="static member Insert : System.Runtime.Intrinsics.Vector128&lt;int64&gt; * int64 * byte -&gt; System.Runtime.Intrinsics.Vector128&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Sse41.X64.Insert (value, data, index)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
+        <Parameter Name="data" Type="System.Int64" />
+        <Parameter Name="index" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;ulong&gt; Insert (System.Runtime.Intrinsics.Vector128&lt;ulong&gt; value, ulong data, byte index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int64&gt; Insert(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int64&gt; value, unsigned int64 data, unsigned int8 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse41.X64.Insert(System.Runtime.Intrinsics.Vector128{System.UInt64},System.UInt64,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Insert (value As Vector128(Of ULong), data As ULong, index As Byte) As Vector128(Of ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::UInt64&gt; Insert(System::Runtime::Intrinsics::Vector128&lt;System::UInt64&gt; value, System::UInt64 data, System::Byte index);" />
+      <MemberSignature Language="F#" Value="static member Insert : System.Runtime.Intrinsics.Vector128&lt;uint64&gt; * uint64 * byte -&gt; System.Runtime.Intrinsics.Vector128&lt;uint64&gt;" Usage="System.Runtime.Intrinsics.X86.Sse41.X64.Insert (value, data, index)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" />
+        <Parameter Name="data" Type="System.UInt64" />
+        <Parameter Name="index" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.X86.Sse41.X64.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Runtime.Intrinsics.X86.Sse41.X64.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

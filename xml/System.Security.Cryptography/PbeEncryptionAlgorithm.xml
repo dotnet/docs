@@ -1,0 +1,121 @@
+﻿<Type Name="PbeEncryptionAlgorithm" FullName="System.Security.Cryptography.PbeEncryptionAlgorithm">
+  <TypeSignature Language="C#" Value="public enum PbeEncryptionAlgorithm" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PbeEncryptionAlgorithm extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.PbeEncryptionAlgorithm" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PbeEncryptionAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PbeEncryptionAlgorithm" />
+  <TypeSignature Language="F#" Value="type PbeEncryptionAlgorithm = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aes128Cbc">
+      <MemberSignature Language="C#" Value="Aes128Cbc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.PbeEncryptionAlgorithm Aes128Cbc = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PbeEncryptionAlgorithm.Aes128Cbc" />
+      <MemberSignature Language="VB.NET" Value="Aes128Cbc" />
+      <MemberSignature Language="C++ CLI" Value="Aes128Cbc" />
+      <MemberSignature Language="F#" Value="Aes128Cbc = 1" Usage="System.Security.Cryptography.PbeEncryptionAlgorithm.Aes128Cbc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PbeEncryptionAlgorithm</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes192Cbc">
+      <MemberSignature Language="C#" Value="Aes192Cbc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.PbeEncryptionAlgorithm Aes192Cbc = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PbeEncryptionAlgorithm.Aes192Cbc" />
+      <MemberSignature Language="VB.NET" Value="Aes192Cbc" />
+      <MemberSignature Language="C++ CLI" Value="Aes192Cbc" />
+      <MemberSignature Language="F#" Value="Aes192Cbc = 2" Usage="System.Security.Cryptography.PbeEncryptionAlgorithm.Aes192Cbc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PbeEncryptionAlgorithm</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes256Cbc">
+      <MemberSignature Language="C#" Value="Aes256Cbc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.PbeEncryptionAlgorithm Aes256Cbc = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PbeEncryptionAlgorithm.Aes256Cbc" />
+      <MemberSignature Language="VB.NET" Value="Aes256Cbc" />
+      <MemberSignature Language="C++ CLI" Value="Aes256Cbc" />
+      <MemberSignature Language="F#" Value="Aes256Cbc = 3" Usage="System.Security.Cryptography.PbeEncryptionAlgorithm.Aes256Cbc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PbeEncryptionAlgorithm</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TripleDes3KeyPkcs12">
+      <MemberSignature Language="C#" Value="TripleDes3KeyPkcs12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.PbeEncryptionAlgorithm TripleDes3KeyPkcs12 = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PbeEncryptionAlgorithm.TripleDes3KeyPkcs12" />
+      <MemberSignature Language="VB.NET" Value="TripleDes3KeyPkcs12" />
+      <MemberSignature Language="C++ CLI" Value="TripleDes3KeyPkcs12" />
+      <MemberSignature Language="F#" Value="TripleDes3KeyPkcs12 = 4" Usage="System.Security.Cryptography.PbeEncryptionAlgorithm.TripleDes3KeyPkcs12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PbeEncryptionAlgorithm</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.PbeEncryptionAlgorithm Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PbeEncryptionAlgorithm.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Security.Cryptography.PbeEncryptionAlgorithm.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PbeEncryptionAlgorithm</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

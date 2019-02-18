@@ -262,6 +262,34 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="algorithm" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="ExportECPrivateKey">
+      <MemberSignature Language="C#" Value="public virtual byte[] ExportECPrivateKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] ExportECPrivateKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.ExportECPrivateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExportECPrivateKey () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ ExportECPrivateKey();" />
+      <MemberSignature Language="F#" Value="abstract member ExportECPrivateKey : unit -&gt; byte[]&#xA;override this.ExportECPrivateKey : unit -&gt; byte[]" Usage="eCDsa.ExportECPrivateKey " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ExportExplicitParameters">
       <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.ECParameters ExportExplicitParameters (bool includePrivateParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Security.Cryptography.ECParameters ExportExplicitParameters(bool includePrivateParameters) cil managed" />
@@ -518,6 +546,38 @@
         <returns>The hashed data.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">A derived class must override this method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportECPrivateKey">
+      <MemberSignature Language="C#" Value="public virtual void ImportECPrivateKey (ReadOnlySpan&lt;byte&gt; source, out int bytesRead);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ImportECPrivateKey(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] int32&amp; bytesRead) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.ImportECPrivateKey(System.ReadOnlySpan{System.Byte},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ImportECPrivateKey (source As ReadOnlySpan(Of Byte), ByRef bytesRead As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ImportECPrivateKey(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] int % bytesRead);" />
+      <MemberSignature Language="F#" Value="abstract member ImportECPrivateKey : ReadOnlySpan&lt;byte&gt; *  -&gt; unit&#xA;override this.ImportECPrivateKey : ReadOnlySpan&lt;byte&gt; *  -&gt; unit" Usage="eCDsa.ImportECPrivateKey (source, bytesRead)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesRead" Type="System.Int32" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="bytesRead">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportParameters">
@@ -854,6 +914,39 @@
       </Parameters>
       <Docs>
         <param name="includePrivateParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryExportECPrivateKey">
+      <MemberSignature Language="C#" Value="public virtual bool TryExportECPrivateKey (Span&lt;byte&gt; destination, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryExportECPrivateKey(valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.TryExportECPrivateKey(System.Span{System.Byte},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryExportECPrivateKey (destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryExportECPrivateKey(Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="abstract member TryExportECPrivateKey : Span&lt;byte&gt; *  -&gt; bool&#xA;override this.TryExportECPrivateKey : Span&lt;byte&gt; *  -&gt; bool" Usage="eCDsa.TryExportECPrivateKey (destination, bytesWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

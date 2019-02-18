@@ -9,6 +9,7 @@
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -38,6 +39,7 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -60,6 +62,7 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -82,6 +85,7 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -90,7 +94,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing"><see langword="true" /> to release both managed and unmanaged resources; <see paramname="false" /> to release only unmanaged resources. </param>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see paramname="false" /> to release only unmanaged resources. </param>
         <summary>Frees the unmanaged resources used by the memory pool and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,6 +112,7 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -128,6 +134,7 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.IMemoryOwner&lt;T&gt;</ReturnType>
@@ -138,7 +145,7 @@
       <Docs>
         <param name="minBufferSize">The minimum number of elements of <typeparamref name="T" /> that the memory pool can hold. A value of -1 returns a memory pool set to the default size for the pool.</param>
         <summary>Returns a memory block capable of holding at least <paramref name="minBufferSize" /> elements of T.</summary>
-         <returns>A memory block capable of holding at least <paramref name="minBufferSize" /> elements of T.</returns>
+        <returns>A memory block capable of holding at least <paramref name="minBufferSize" /> elements of T.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,6 +161,7 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.MemoryPool&lt;T&gt;</ReturnType>

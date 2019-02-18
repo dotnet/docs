@@ -1,0 +1,48 @@
+﻿<Type Name="AsyncIteratorStateMachineAttribute" FullName="System.Runtime.CompilerServices.AsyncIteratorStateMachineAttribute">
+  <TypeSignature Language="C#" Value="public sealed class AsyncIteratorStateMachineAttribute : System.Runtime.CompilerServices.StateMachineAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AsyncIteratorStateMachineAttribute extends System.Runtime.CompilerServices.StateMachineAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.AsyncIteratorStateMachineAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AsyncIteratorStateMachineAttribute&#xA;Inherits StateMachineAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsyncIteratorStateMachineAttribute sealed : System::Runtime::CompilerServices::StateMachineAttribute" />
+  <TypeSignature Language="F#" Value="type AsyncIteratorStateMachineAttribute = class&#xA;    inherit StateMachineAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.CompilerServices.StateMachineAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsyncIteratorStateMachineAttribute (Type stateMachineType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type stateMachineType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncIteratorStateMachineAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stateMachineType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsyncIteratorStateMachineAttribute(Type ^ stateMachineType);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.AsyncIteratorStateMachineAttribute : Type -&gt; System.Runtime.CompilerServices.AsyncIteratorStateMachineAttribute" Usage="new System.Runtime.CompilerServices.AsyncIteratorStateMachineAttribute stateMachineType" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stateMachineType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="stateMachineType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

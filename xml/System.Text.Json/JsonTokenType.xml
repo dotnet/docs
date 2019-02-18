@@ -1,0 +1,261 @@
+﻿<Type Name="JsonTokenType" FullName="System.Text.Json.JsonTokenType">
+  <TypeSignature Language="C#" Value="public enum JsonTokenType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JsonTokenType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.JsonTokenType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum JsonTokenType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class JsonTokenType" />
+  <TypeSignature Language="F#" Value="type JsonTokenType = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="Comment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType Comment = unsigned int8(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.Comment" />
+      <MemberSignature Language="VB.NET" Value="Comment" />
+      <MemberSignature Language="C++ CLI" Value="Comment" />
+      <MemberSignature Language="F#" Value="Comment = 11" Usage="System.Text.Json.JsonTokenType.Comment" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndArray">
+      <MemberSignature Language="C#" Value="EndArray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType EndArray = unsigned int8(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.EndArray" />
+      <MemberSignature Language="VB.NET" Value="EndArray" />
+      <MemberSignature Language="C++ CLI" Value="EndArray" />
+      <MemberSignature Language="F#" Value="EndArray = 4" Usage="System.Text.Json.JsonTokenType.EndArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndObject">
+      <MemberSignature Language="C#" Value="EndObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType EndObject = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.EndObject" />
+      <MemberSignature Language="VB.NET" Value="EndObject" />
+      <MemberSignature Language="C++ CLI" Value="EndObject" />
+      <MemberSignature Language="F#" Value="EndObject = 2" Usage="System.Text.Json.JsonTokenType.EndObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="False">
+      <MemberSignature Language="C#" Value="False" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType False = unsigned int8(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.False" />
+      <MemberSignature Language="VB.NET" Value="False" />
+      <MemberSignature Language="C++ CLI" Value="False" />
+      <MemberSignature Language="F#" Value="False = 9" Usage="System.Text.Json.JsonTokenType.False" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType None = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Text.Json.JsonTokenType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="Null" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType Null = unsigned int8(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.Null" />
+      <MemberSignature Language="VB.NET" Value="Null" />
+      <MemberSignature Language="C++ CLI" Value="Null" />
+      <MemberSignature Language="F#" Value="Null = 10" Usage="System.Text.Json.JsonTokenType.Null" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Number">
+      <MemberSignature Language="C#" Value="Number" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType Number = unsigned int8(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.Number" />
+      <MemberSignature Language="VB.NET" Value="Number" />
+      <MemberSignature Language="C++ CLI" Value="Number" />
+      <MemberSignature Language="F#" Value="Number = 7" Usage="System.Text.Json.JsonTokenType.Number" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyName">
+      <MemberSignature Language="C#" Value="PropertyName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType PropertyName = unsigned int8(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="PropertyName" />
+      <MemberSignature Language="C++ CLI" Value="PropertyName" />
+      <MemberSignature Language="F#" Value="PropertyName = 5" Usage="System.Text.Json.JsonTokenType.PropertyName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StartArray">
+      <MemberSignature Language="C#" Value="StartArray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType StartArray = unsigned int8(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.StartArray" />
+      <MemberSignature Language="VB.NET" Value="StartArray" />
+      <MemberSignature Language="C++ CLI" Value="StartArray" />
+      <MemberSignature Language="F#" Value="StartArray = 3" Usage="System.Text.Json.JsonTokenType.StartArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StartObject">
+      <MemberSignature Language="C#" Value="StartObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType StartObject = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.StartObject" />
+      <MemberSignature Language="VB.NET" Value="StartObject" />
+      <MemberSignature Language="C++ CLI" Value="StartObject" />
+      <MemberSignature Language="F#" Value="StartObject = 1" Usage="System.Text.Json.JsonTokenType.StartObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="String" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType String = unsigned int8(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 6" Usage="System.Text.Json.JsonTokenType.String" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="True">
+      <MemberSignature Language="C#" Value="True" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonTokenType True = unsigned int8(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonTokenType.True" />
+      <MemberSignature Language="VB.NET" Value="True" />
+      <MemberSignature Language="C++ CLI" Value="True" />
+      <MemberSignature Language="F#" Value="True = 8" Usage="System.Text.Json.JsonTokenType.True" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonTokenType</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

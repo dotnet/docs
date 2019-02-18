@@ -1,0 +1,1269 @@
+﻿<Type Name="Rune" FullName="System.Text.Rune">
+  <TypeSignature Language="C#" Value="public struct Rune : IComparable&lt;System.Text.Rune&gt;, IEquatable&lt;System.Text.Rune&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Rune extends System.ValueType implements class System.IComparable`1&lt;valuetype System.Text.Rune&gt;, class System.IEquatable`1&lt;valuetype System.Text.Rune&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Rune" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Rune&#xA;Implements IComparable(Of Rune), IEquatable(Of Rune)" />
+  <TypeSignature Language="C++ CLI" Value="public value class Rune : IComparable&lt;System::Text::Rune&gt;, IEquatable&lt;System::Text::Rune&gt;" />
+  <TypeSignature Language="F#" Value="type Rune = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IComparable&lt;System.Text.Rune&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Text.Rune&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Rune (char ch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char ch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.#ctor(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ch As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rune(char ch);" />
+      <MemberSignature Language="F#" Value="new System.Text.Rune : char -&gt; System.Text.Rune" Usage="new System.Text.Rune ch" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ch" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="ch">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Rune (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rune(int value);" />
+      <MemberSignature Language="F#" Value="new System.Text.Rune : int -&gt; System.Text.Rune" Usage="new System.Text.Rune value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Rune (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.#ctor(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rune(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="new System.Text.Rune : uint32 -&gt; System.Text.Rune" Usage="new System.Text.Rune value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (System.Text.Rune other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(valuetype System.Text.Rune other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.CompareTo(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As Rune) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Text::Rune other);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : System.Text.Rune -&gt; int&#xA;override this.CompareTo : System.Text.Rune -&gt; int" Usage="rune.CompareTo other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rune.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Text.Rune other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Text.Rune other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.Equals(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Text::Rune other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Text.Rune -&gt; bool" Usage="rune.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rune.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNumericValue">
+      <MemberSignature Language="C#" Value="public static double GetNumericValue (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetNumericValue(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.GetNumericValue(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumericValue (value As Rune) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetNumericValue(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member GetNumericValue : System.Text.Rune -&gt; double" Usage="System.Text.Rune.GetNumericValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRuneAt">
+      <MemberSignature Language="C#" Value="public static System.Text.Rune GetRuneAt (string input, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Text.Rune GetRuneAt(string input, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.GetRuneAt(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRuneAt (input As String, index As Integer) As Rune" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Rune GetRuneAt(System::String ^ input, int index);" />
+      <MemberSignature Language="F#" Value="static member GetRuneAt : string * int -&gt; System.Text.Rune" Usage="System.Text.Rune.GetRuneAt (input, index)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Rune</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnicodeCategory">
+      <MemberSignature Language="C#" Value="public static System.Globalization.UnicodeCategory GetUnicodeCategory (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Globalization.UnicodeCategory GetUnicodeCategory(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.GetUnicodeCategory(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnicodeCategory (value As Rune) As UnicodeCategory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::UnicodeCategory GetUnicodeCategory(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member GetUnicodeCategory : System.Text.Rune -&gt; System.Globalization.UnicodeCategory" Usage="System.Text.Rune.GetUnicodeCategory value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAscii">
+      <MemberSignature Language="C#" Value="public bool IsAscii { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAscii" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Rune.IsAscii" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAscii As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAscii { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAscii : bool" Usage="System.Text.Rune.IsAscii" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBmp">
+      <MemberSignature Language="C#" Value="public bool IsBmp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBmp" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Rune.IsBmp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBmp As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBmp { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBmp : bool" Usage="System.Text.Rune.IsBmp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsControl">
+      <MemberSignature Language="C#" Value="public static bool IsControl (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsControl(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsControl(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsControl (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsControl(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsControl : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsControl value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDigit">
+      <MemberSignature Language="C#" Value="public static bool IsDigit (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDigit(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsDigit(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsDigit (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDigit(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsDigit : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsDigit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLetter">
+      <MemberSignature Language="C#" Value="public static bool IsLetter (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLetter(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsLetter(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsLetter (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLetter(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsLetter : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsLetter value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLetterOrDigit">
+      <MemberSignature Language="C#" Value="public static bool IsLetterOrDigit (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLetterOrDigit(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsLetterOrDigit(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsLetterOrDigit (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLetterOrDigit(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsLetterOrDigit : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsLetterOrDigit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLower">
+      <MemberSignature Language="C#" Value="public static bool IsLower (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLower(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsLower(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsLower (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLower(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsLower : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsLower value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNumber">
+      <MemberSignature Language="C#" Value="public static bool IsNumber (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNumber(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsNumber(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsNumber (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNumber(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsNumber : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsNumber value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPunctuation">
+      <MemberSignature Language="C#" Value="public static bool IsPunctuation (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPunctuation(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsPunctuation(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsPunctuation (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPunctuation(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsPunctuation : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsPunctuation value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSeparator">
+      <MemberSignature Language="C#" Value="public static bool IsSeparator (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSeparator(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsSeparator(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSeparator (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSeparator(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsSeparator : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsSeparator value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSymbol">
+      <MemberSignature Language="C#" Value="public static bool IsSymbol (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSymbol(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsSymbol(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSymbol (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSymbol(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsSymbol : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsSymbol value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUpper">
+      <MemberSignature Language="C#" Value="public static bool IsUpper (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsUpper(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsUpper(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsUpper (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsUpper(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsUpper : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsUpper value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public static bool IsValid (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValid(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsValid(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsValid (value As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValid(int value);" />
+      <MemberSignature Language="F#" Value="static member IsValid : int -&gt; bool" Usage="System.Text.Rune.IsValid value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public static bool IsValid (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValid(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsValid(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsValid (value As UInteger) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValid(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member IsValid : uint32 -&gt; bool" Usage="System.Text.Rune.IsValid value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsWhiteSpace">
+      <MemberSignature Language="C#" Value="public static bool IsWhiteSpace (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsWhiteSpace(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.IsWhiteSpace(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsWhiteSpace (value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsWhiteSpace(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member IsWhiteSpace : System.Text.Rune -&gt; bool" Usage="System.Text.Rune.IsWhiteSpace value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Text.Rune left, System.Text.Rune right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Text.Rune left, valuetype System.Text.Rune right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.op_Equality(System.Text.Rune,System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Rune, right As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Text::Rune left, System::Text::Rune right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Text.Rune * System.Text.Rune -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Text.Rune" />
+        <Parameter Name="right" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static explicit operator System.Text.Rune (char ch);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Text.Rune op_Explicit(char ch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.op_Explicit(System.Char)~System.Text.Rune" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (ch As Char) As Rune" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Text::Rune(char ch);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : char -&gt; System.Text.Rune" Usage="System.Text.Rune.op_Explicit ch" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Rune</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ch" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="ch">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static explicit operator System.Text.Rune (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Text.Rune op_Explicit(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.op_Explicit(System.Int32)~System.Text.Rune" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Integer) As Rune" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Text::Rune(int value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : int -&gt; System.Text.Rune" Usage="System.Text.Rune.op_Explicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Rune</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static explicit operator System.Text.Rune (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Text.Rune op_Explicit(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.op_Explicit(System.UInt32)~System.Text.Rune" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As UInteger) As Rune" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Text::Rune(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : uint32 -&gt; System.Text.Rune" Usage="System.Text.Rune.op_Explicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Text.Rune</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThan">
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Text.Rune left, System.Text.Rune right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Text.Rune left, valuetype System.Text.Rune right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.op_GreaterThan(System.Text.Rune,System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (left As Rune, right As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::Text::Rune left, System::Text::Rune right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Text.Rune * System.Text.Rune -&gt; bool" Usage="left &gt; right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Text.Rune" />
+        <Parameter Name="right" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.Text.Rune left, System.Text.Rune right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Text.Rune left, valuetype System.Text.Rune right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.op_GreaterThanOrEqual(System.Text.Rune,System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (left As Rune, right As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(System::Text::Rune left, System::Text::Rune right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Text.Rune * System.Text.Rune -&gt; bool" Usage="left &gt;= right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Text.Rune" />
+        <Parameter Name="right" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Text.Rune left, System.Text.Rune right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Text.Rune left, valuetype System.Text.Rune right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.op_Inequality(System.Text.Rune,System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Rune, right As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Text::Rune left, System::Text::Rune right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Text.Rune * System.Text.Rune -&gt; bool" Usage="System.Text.Rune.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Text.Rune" />
+        <Parameter Name="right" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThan">
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Text.Rune left, System.Text.Rune right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Text.Rune left, valuetype System.Text.Rune right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.op_LessThan(System.Text.Rune,System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (left As Rune, right As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::Text::Rune left, System::Text::Rune right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Text.Rune * System.Text.Rune -&gt; bool" Usage="left &lt; right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Text.Rune" />
+        <Parameter Name="right" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.Text.Rune left, System.Text.Rune right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Text.Rune left, valuetype System.Text.Rune right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.op_LessThanOrEqual(System.Text.Rune,System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (left As Rune, right As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(System::Text::Rune left, System::Text::Rune right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Text.Rune * System.Text.Rune -&gt; bool" Usage="left &lt;= right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Text.Rune" />
+        <Parameter Name="right" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Plane">
+      <MemberSignature Language="C#" Value="public int Plane { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Plane" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Rune.Plane" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Plane As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Plane { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Plane : int" Usage="System.Text.Rune.Plane" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplacementChar">
+      <MemberSignature Language="C#" Value="public static System.Text.Rune ReplacementChar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Text.Rune ReplacementChar" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Rune.ReplacementChar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ReplacementChar As Rune" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Rune ReplacementChar { System::Text::Rune get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReplacementChar : System.Text.Rune" Usage="System.Text.Rune.ReplacementChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Rune</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToLower">
+      <MemberSignature Language="C#" Value="public static System.Text.Rune ToLower (System.Text.Rune value, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Text.Rune ToLower(valuetype System.Text.Rune value, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.ToLower(System.Text.Rune,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToLower (value As Rune, culture As CultureInfo) As Rune" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Rune ToLower(System::Text::Rune value, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="static member ToLower : System.Text.Rune * System.Globalization.CultureInfo -&gt; System.Text.Rune" Usage="System.Text.Rune.ToLower (value, culture)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Rune</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToLowerInvariant">
+      <MemberSignature Language="C#" Value="public static System.Text.Rune ToLowerInvariant (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Text.Rune ToLowerInvariant(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.ToLowerInvariant(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToLowerInvariant (value As Rune) As Rune" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Rune ToLowerInvariant(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member ToLowerInvariant : System.Text.Rune -&gt; System.Text.Rune" Usage="System.Text.Rune.ToLowerInvariant value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Rune</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rune.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToUpper">
+      <MemberSignature Language="C#" Value="public static System.Text.Rune ToUpper (System.Text.Rune value, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Text.Rune ToUpper(valuetype System.Text.Rune value, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.ToUpper(System.Text.Rune,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUpper (value As Rune, culture As CultureInfo) As Rune" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Rune ToUpper(System::Text::Rune value, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="static member ToUpper : System.Text.Rune * System.Globalization.CultureInfo -&gt; System.Text.Rune" Usage="System.Text.Rune.ToUpper (value, culture)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Rune</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToUpperInvariant">
+      <MemberSignature Language="C#" Value="public static System.Text.Rune ToUpperInvariant (System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Text.Rune ToUpperInvariant(valuetype System.Text.Rune value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.ToUpperInvariant(System.Text.Rune)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUpperInvariant (value As Rune) As Rune" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Rune ToUpperInvariant(System::Text::Rune value);" />
+      <MemberSignature Language="F#" Value="static member ToUpperInvariant : System.Text.Rune -&gt; System.Text.Rune" Usage="System.Text.Rune.ToUpperInvariant value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Rune</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Rune" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCreate">
+      <MemberSignature Language="C#" Value="public static bool TryCreate (char ch, out System.Text.Rune result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(char ch, [out] valuetype System.Text.Rune&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.TryCreate(System.Char,System.Text.Rune@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryCreate (ch As Char, ByRef result As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryCreate(char ch, [Runtime::InteropServices::Out] System::Text::Rune % result);" />
+      <MemberSignature Language="F#" Value="static member TryCreate : char *  -&gt; bool" Usage="System.Text.Rune.TryCreate (ch, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ch" Type="System.Char" />
+        <Parameter Name="result" Type="System.Text.Rune" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ch">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCreate">
+      <MemberSignature Language="C#" Value="public static bool TryCreate (int value, out System.Text.Rune result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(int32 value, [out] valuetype System.Text.Rune&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.TryCreate(System.Int32,System.Text.Rune@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryCreate (value As Integer, ByRef result As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryCreate(int value, [Runtime::InteropServices::Out] System::Text::Rune % result);" />
+      <MemberSignature Language="F#" Value="static member TryCreate : int *  -&gt; bool" Usage="System.Text.Rune.TryCreate (value, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="result" Type="System.Text.Rune" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCreate">
+      <MemberSignature Language="C#" Value="public static bool TryCreate (uint value, out System.Text.Rune result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(unsigned int32 value, [out] valuetype System.Text.Rune&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.TryCreate(System.UInt32,System.Text.Rune@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryCreate (value As UInteger, ByRef result As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryCreate(System::UInt32 value, [Runtime::InteropServices::Out] System::Text::Rune % result);" />
+      <MemberSignature Language="F#" Value="static member TryCreate : uint32 *  -&gt; bool" Usage="System.Text.Rune.TryCreate (value, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="result" Type="System.Text.Rune" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEncode">
+      <MemberSignature Language="C#" Value="public bool TryEncode (Span&lt;char&gt; destination, out int charsWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEncode(valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.TryEncode(System.Span{System.Char},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEncode (destination As Span(Of Char), ByRef charsWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEncode(Span&lt;char&gt; destination, [Runtime::InteropServices::Out] int % charsWritten);" />
+      <MemberSignature Language="F#" Value="member this.TryEncode : Span&lt;char&gt; *  -&gt; bool" Usage="rune.TryEncode (destination, charsWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
+        <Parameter Name="charsWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <param name="charsWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetRuneAt">
+      <MemberSignature Language="C#" Value="public static bool TryGetRuneAt (string input, int index, out System.Text.Rune value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetRuneAt(string input, int32 index, [out] valuetype System.Text.Rune&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.TryGetRuneAt(System.String,System.Int32,System.Text.Rune@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetRuneAt (input As String, index As Integer, ByRef value As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetRuneAt(System::String ^ input, int index, [Runtime::InteropServices::Out] System::Text::Rune % value);" />
+      <MemberSignature Language="F#" Value="static member TryGetRuneAt : string * int *  -&gt; bool" Usage="System.Text.Rune.TryGetRuneAt (input, index, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Text.Rune" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Utf16SequenceLength">
+      <MemberSignature Language="C#" Value="public int Utf16SequenceLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Utf16SequenceLength" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Rune.Utf16SequenceLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Utf16SequenceLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Utf16SequenceLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Utf16SequenceLength : int" Usage="System.Text.Rune.Utf16SequenceLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Utf8SequenceLength">
+      <MemberSignature Language="C#" Value="public int Utf8SequenceLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Utf8SequenceLength" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Rune.Utf8SequenceLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Utf8SequenceLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Utf8SequenceLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Utf8SequenceLength : int" Usage="System.Text.Rune.Utf8SequenceLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public int Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Value" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Rune.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int" Usage="System.Text.Rune.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

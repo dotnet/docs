@@ -9,6 +9,7 @@
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.OperationStatus</ReturnType>
@@ -46,11 +48,12 @@
         <param name="bytes">The output span that contains the result of the operation, that is, the decoded binary data.</param>
         <param name="bytesConsumed">The number of input bytes consumed during the operation. This can be used to slice the input for subsequent calls, if necessary.</param>
         <param name="bytesWritten">The number of bytes written into the output span. This can be used to slice the output for subsequent calls, if necessary.</param>
-        <param name="isFinalBlock"><see langword="true" /> (default) if the input span contains the entire data to decode. <see langword="false" /> if the input span contains partial data with more data to follow.</param>
+        <param name="isFinalBlock">
+          <see langword="true" /> (default) if the input span contains the entire data to decode. <see langword="false" /> if the input span contains partial data with more data to follow.</param>
         <summary>Decodes the span of UTF-8 encoded text represented as base 64 into binary data. If the input is not a multiple of 4, it will decode as much as it can, to the closest multiple of 4.</summary>
         <returns>One of the enumeration values that indicates the status of the decoding operation.</returns>
         <remarks>
-      <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 
@@ -77,6 +80,7 @@ The return value can be as follows:
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.OperationStatus</ReturnType>
@@ -91,7 +95,7 @@ The return value can be as follows:
         <summary>Decodes the span of UTF-8 encoded text in base 64 (in-place) into binary data. The decoded binary output is smaller than the text data contained in the input (the operation deflates the data). If the input is not a multiple of 4, the method will not decode any data.</summary>
         <returns>One of the enumeration values that indicates the status of the decoding operation.</returns>
         <remarks>
-      <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 
@@ -117,6 +121,7 @@ This method cannot return the <xref:System.Buffers.OperationStatus.DestinationTo
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.OperationStatus</ReturnType>
@@ -133,11 +138,12 @@ This method cannot return the <xref:System.Buffers.OperationStatus.DestinationTo
         <param name="utf8">The output span that contains the result of the operation, that is, the UTF-8 encoded text in base 64.</param>
         <param name="bytesConsumed">The number of input bytes consumed during the operation. This can be used to slice the input for subsequent calls, if necessary.</param>
         <param name="bytesWritten">The number of bytes written into the output span. This can be used to slice the output for subsequent calls, if necessary.</param>
-        <param name="isFinalBlock"><see langword="true" /> (the default) if the input span contains the entire data to encode. <see langword="false" /> if the input span contains partial data with more data to follow.</param>
+        <param name="isFinalBlock">
+          <see langword="true" /> (the default) if the input span contains the entire data to encode. <see langword="false" /> if the input span contains partial data with more data to follow.</param>
         <summary>Encodes the span of binary data into UTF-8 encoded text represented as base 64.</summary>
         <returns>One of the enumeration values that indicates the status of the encoding operation.</returns>
         <remarks>
-      <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 
@@ -151,7 +157,6 @@ This method cannot return <xref:System.Buffers.OperationStatus.InvalidData?displ
 
  ]]></format>
         </remarks>
-
       </Docs>
     </Member>
     <Member MemberName="EncodeToUtf8InPlace">
@@ -166,6 +171,7 @@ This method cannot return <xref:System.Buffers.OperationStatus.InvalidData?displ
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.OperationStatus</ReturnType>
@@ -182,7 +188,7 @@ This method cannot return <xref:System.Buffers.OperationStatus.InvalidData?displ
         <summary>Encodes the span of binary data (in-place) into UTF-8 encoded text represented as base 64. The encoded text output is larger than the binary data contained in the input (the operation inflates the data).</summary>
         <returns>One of the enumeration values that indicates the status of the encoding operation.</returns>
         <remarks>
-      <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 
@@ -209,6 +215,7 @@ This method cannot return <xref:System.Buffers.OperationStatus.NeedMoreData?disp
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -237,6 +244,7 @@ This method cannot return <xref:System.Buffers.OperationStatus.NeedMoreData?disp
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

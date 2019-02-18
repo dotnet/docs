@@ -311,6 +311,72 @@
       </Docs>
     </Member>
     <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex Add (double left, System.Numerics.Complex right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Complex Add(float64 left, valuetype System.Numerics.Complex right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.Add(System.Double,System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (left As Double, right As Complex) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex Add(double left, System::Numerics::Complex right);" />
+      <MemberSignature Language="F#" Value="static member Add : double * System.Numerics.Complex -&gt; System.Numerics.Complex" Usage="System.Numerics.Complex.Add (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Numerics.Complex" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex Add (System.Numerics.Complex left, double right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Complex Add(valuetype System.Numerics.Complex left, float64 right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.Add(System.Numerics.Complex,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (left As Complex, right As Double) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex Add(System::Numerics::Complex left, double right);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Numerics.Complex * double -&gt; System.Numerics.Complex" Usage="System.Numerics.Complex.Add (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public static System.Numerics.Complex Add (System.Numerics.Complex left, System.Numerics.Complex right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Complex Add(valuetype System.Numerics.Complex left, valuetype System.Numerics.Complex right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.Add(System.Numerics.Complex,System.Numerics.Complex)" />
@@ -643,6 +709,72 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Math.Cosh(System.Double)" />
+      </Docs>
+    </Member>
+    <Member MemberName="Divide">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex Divide (double dividend, System.Numerics.Complex divisor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Complex Divide(float64 dividend, valuetype System.Numerics.Complex divisor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.Divide(System.Double,System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (dividend As Double, divisor As Complex) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex Divide(double dividend, System::Numerics::Complex divisor);" />
+      <MemberSignature Language="F#" Value="static member Divide : double * System.Numerics.Complex -&gt; System.Numerics.Complex" Usage="System.Numerics.Complex.Divide (dividend, divisor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dividend" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="divisor" Type="System.Numerics.Complex" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="dividend">To be added.</param>
+        <param name="divisor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Divide">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex Divide (System.Numerics.Complex dividend, double divisor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Complex Divide(valuetype System.Numerics.Complex dividend, float64 divisor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.Divide(System.Numerics.Complex,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (dividend As Complex, divisor As Double) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex Divide(System::Numerics::Complex dividend, double divisor);" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Numerics.Complex * double -&gt; System.Numerics.Complex" Usage="System.Numerics.Complex.Divide (dividend, divisor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dividend" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="divisor" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="dividend">To be added.</param>
+        <param name="divisor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -1089,6 +1221,125 @@
         <altmember cref="F:System.Numerics.Complex.Zero" />
       </Docs>
     </Member>
+    <Member MemberName="Infinity">
+      <MemberSignature Language="C#" Value="public static readonly System.Numerics.Complex Infinity;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Numerics.Complex Infinity" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Complex.Infinity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Infinity As Complex " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Numerics::Complex Infinity;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Infinity : System.Numerics.Complex" Usage="System.Numerics.Complex.Infinity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFinite">
+      <MemberSignature Language="C#" Value="public static bool IsFinite (System.Numerics.Complex value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsFinite(valuetype System.Numerics.Complex value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.IsFinite(System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsFinite (value As Complex) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsFinite(System::Numerics::Complex value);" />
+      <MemberSignature Language="F#" Value="static member IsFinite : System.Numerics.Complex -&gt; bool" Usage="System.Numerics.Complex.IsFinite value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInfinity">
+      <MemberSignature Language="C#" Value="public static bool IsInfinity (System.Numerics.Complex value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsInfinity(valuetype System.Numerics.Complex value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.IsInfinity(System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsInfinity (value As Complex) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsInfinity(System::Numerics::Complex value);" />
+      <MemberSignature Language="F#" Value="static member IsInfinity : System.Numerics.Complex -&gt; bool" Usage="System.Numerics.Complex.IsInfinity value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNaN">
+      <MemberSignature Language="C#" Value="public static bool IsNaN (System.Numerics.Complex value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNaN(valuetype System.Numerics.Complex value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.IsNaN(System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsNaN (value As Complex) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNaN(System::Numerics::Complex value);" />
+      <MemberSignature Language="F#" Value="static member IsNaN : System.Numerics.Complex -&gt; bool" Usage="System.Numerics.Complex.IsNaN value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="Log">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1298,6 +1549,72 @@
       </Docs>
     </Member>
     <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex Multiply (double left, System.Numerics.Complex right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Complex Multiply(float64 left, valuetype System.Numerics.Complex right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.Multiply(System.Double,System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (left As Double, right As Complex) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex Multiply(double left, System::Numerics::Complex right);" />
+      <MemberSignature Language="F#" Value="static member Multiply : double * System.Numerics.Complex -&gt; System.Numerics.Complex" Usage="System.Numerics.Complex.Multiply (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Numerics.Complex" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex Multiply (System.Numerics.Complex left, double right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Complex Multiply(valuetype System.Numerics.Complex left, float64 right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.Multiply(System.Numerics.Complex,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (left As Complex, right As Double) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex Multiply(System::Numerics::Complex left, double right);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Numerics.Complex * double -&gt; System.Numerics.Complex" Usage="System.Numerics.Complex.Multiply (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
       <MemberSignature Language="C#" Value="public static System.Numerics.Complex Multiply (System.Numerics.Complex left, System.Numerics.Complex right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Complex Multiply(valuetype System.Numerics.Complex left, valuetype System.Numerics.Complex right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.Multiply(System.Numerics.Complex,System.Numerics.Complex)" />
@@ -1360,6 +1677,32 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Numerics.Complex.op_Multiply(System.Numerics.Complex,System.Numerics.Complex)" />
+      </Docs>
+    </Member>
+    <Member MemberName="NaN">
+      <MemberSignature Language="C#" Value="public static readonly System.Numerics.Complex NaN;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Numerics.Complex NaN" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Complex.NaN" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NaN As Complex " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Numerics::Complex NaN;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NaN : System.Numerics.Complex" Usage="System.Numerics.Complex.NaN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Negate">
@@ -1465,6 +1808,72 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator + (double left, System.Numerics.Complex right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Addition(float64 left, valuetype System.Numerics.Complex right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Addition(System.Double,System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (left As Double, right As Complex) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex operator +(double left, System::Numerics::Complex right);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : double * System.Numerics.Complex -&gt; System.Numerics.Complex" Usage="left + right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Numerics.Complex" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator + (System.Numerics.Complex left, double right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Addition(valuetype System.Numerics.Complex left, float64 right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Addition(System.Numerics.Complex,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (left As Complex, right As Double) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex operator +(System::Numerics::Complex left, double right);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Numerics.Complex * double -&gt; System.Numerics.Complex" Usage="left + right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
       <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator + (System.Numerics.Complex left, System.Numerics.Complex right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Addition(valuetype System.Numerics.Complex left, valuetype System.Numerics.Complex right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Addition(System.Numerics.Complex,System.Numerics.Complex)" />
@@ -1527,6 +1936,72 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Numerics.Complex.Add(System.Numerics.Complex,System.Numerics.Complex)" />
+      </Docs>
+    </Member>
+    <Member MemberName="op_Division">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator / (double left, System.Numerics.Complex right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Division(float64 left, valuetype System.Numerics.Complex right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Division(System.Double,System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator / (left As Double, right As Complex) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex operator /(double left, System::Numerics::Complex right);" />
+      <MemberSignature Language="F#" Value="static member ( / ) : double * System.Numerics.Complex -&gt; System.Numerics.Complex" Usage="left / right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Numerics.Complex" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Division">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator / (System.Numerics.Complex left, double right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Division(valuetype System.Numerics.Complex left, float64 right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Division(System.Numerics.Complex,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator / (left As Complex, right As Double) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex operator /(System::Numerics::Complex left, double right);" />
+      <MemberSignature Language="F#" Value="static member ( / ) : System.Numerics.Complex * double -&gt; System.Numerics.Complex" Usage="left / right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -2037,7 +2512,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2140,7 +2615,7 @@ This API is not CLS-compliant.</summary>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2195,7 +2670,7 @@ This API is not CLS-compliant.</summary>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2250,7 +2725,7 @@ This API is not CLS-compliant.</summary>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2336,6 +2811,72 @@ This API is not CLS-compliant.</summary>
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator * (double left, System.Numerics.Complex right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Multiply(float64 left, valuetype System.Numerics.Complex right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Multiply(System.Double,System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (left As Double, right As Complex) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex operator *(double left, System::Numerics::Complex right);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : double * System.Numerics.Complex -&gt; System.Numerics.Complex" Usage="left * right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Numerics.Complex" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator * (System.Numerics.Complex left, double right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Multiply(valuetype System.Numerics.Complex left, float64 right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Multiply(System.Numerics.Complex,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (left As Complex, right As Double) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex operator *(System::Numerics::Complex left, double right);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Numerics.Complex * double -&gt; System.Numerics.Complex" Usage="left * right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
       <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator * (System.Numerics.Complex left, System.Numerics.Complex right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Multiply(valuetype System.Numerics.Complex left, valuetype System.Numerics.Complex right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Multiply(System.Numerics.Complex,System.Numerics.Complex)" />
@@ -2390,6 +2931,72 @@ This API is not CLS-compliant.</summary>
  The equivalent method for this operator is <xref:System.Numerics.Complex.Multiply%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <altmember cref="M:System.Numerics.Complex.Multiply(System.Numerics.Complex,System.Numerics.Complex)" />
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator - (double left, System.Numerics.Complex right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Subtraction(float64 left, valuetype System.Numerics.Complex right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Subtraction(System.Double,System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (left As Double, right As Complex) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex operator -(double left, System::Numerics::Complex right);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : double * System.Numerics.Complex -&gt; System.Numerics.Complex" Usage="left - right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Numerics.Complex" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator - (System.Numerics.Complex left, double right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Subtraction(valuetype System.Numerics.Complex left, float64 right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Subtraction(System.Numerics.Complex,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (left As Complex, right As Double) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex operator -(System::Numerics::Complex left, double right);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Numerics.Complex * double -&gt; System.Numerics.Complex" Usage="left - right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -2911,6 +3518,72 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex Subtract (double left, System.Numerics.Complex right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Complex Subtract(float64 left, valuetype System.Numerics.Complex right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.Subtract(System.Double,System.Numerics.Complex)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (left As Double, right As Complex) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex Subtract(double left, System::Numerics::Complex right);" />
+      <MemberSignature Language="F#" Value="static member Subtract : double * System.Numerics.Complex -&gt; System.Numerics.Complex" Usage="System.Numerics.Complex.Subtract (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Numerics.Complex" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex Subtract (System.Numerics.Complex left, double right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Complex Subtract(valuetype System.Numerics.Complex left, float64 right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.Subtract(System.Numerics.Complex,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (left As Complex, right As Double) As Complex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Complex Subtract(System::Numerics::Complex left, double right);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Numerics.Complex * double -&gt; System.Numerics.Complex" Usage="System.Numerics.Complex.Subtract (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Complex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Numerics.Complex" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Subtract">

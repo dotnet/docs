@@ -1,0 +1,812 @@
+﻿<Type Name="SequenceReader&lt;T&gt;" FullName="System.Buffers.SequenceReader&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct SequenceReader&lt;T&gt; where T : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SequenceReader`1&lt;struct .ctor (class System.ValueType, class System.IEquatable`1&lt;!T&gt;) T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Buffers.SequenceReader`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SequenceReader(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : value classpublic value class SequenceReader" />
+  <TypeSignature Language="F#" Value="type SequenceReader&lt;'T (requires 'T : struct)&gt; = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Memory</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+        <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SequenceReader (System.Buffers.ReadOnlySequence&lt;T&gt; sequence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; sequence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.#ctor(System.Buffers.ReadOnlySequence{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sequence As ReadOnlySequence(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequenceReader(System::Buffers::ReadOnlySequence&lt;T&gt; sequence);" />
+      <MemberSignature Language="F#" Value="new System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt; : System.Buffers.ReadOnlySequence&lt;'T (requires 'T : struct)&gt; -&gt; System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt;" Usage="new System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt; sequence" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="sequence">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Advance">
+      <MemberSignature Language="C#" Value="public void Advance (long count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Advance(int64 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.Advance(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Advance (count As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Advance(long count);" />
+      <MemberSignature Language="F#" Value="member this.Advance : int64 -&gt; unit" Usage="sequenceReader.Advance count" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvancePast">
+      <MemberSignature Language="C#" Value="public long AdvancePast (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 AdvancePast(!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.AdvancePast(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AdvancePast (value As T) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long AdvancePast(T value);" />
+      <MemberSignature Language="F#" Value="member this.AdvancePast : 'T -&gt; int64" Usage="sequenceReader.AdvancePast value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvancePastAny">
+      <MemberSignature Language="C#" Value="public long AdvancePastAny (ReadOnlySpan&lt;T&gt; values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 AdvancePastAny(valuetype System.ReadOnlySpan`1&lt;!T&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.AdvancePastAny(System.ReadOnlySpan{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AdvancePastAny (values As ReadOnlySpan(Of T)) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long AdvancePastAny(ReadOnlySpan&lt;T&gt; values);" />
+      <MemberSignature Language="F#" Value="member this.AdvancePastAny : ReadOnlySpan&lt;'T (requires 'T : struct)&gt; -&gt; int64" Usage="sequenceReader.AdvancePastAny values" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvancePastAny">
+      <MemberSignature Language="C#" Value="public long AdvancePastAny (T value0, T value1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 AdvancePastAny(!T value0, !T value1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.AdvancePastAny(`0,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AdvancePastAny (value0 As T, value1 As T) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long AdvancePastAny(T value0, T value1);" />
+      <MemberSignature Language="F#" Value="member this.AdvancePastAny : 'T * 'T -&gt; int64" Usage="sequenceReader.AdvancePastAny (value0, value1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value0">To be added.</param>
+        <param name="value1">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvancePastAny">
+      <MemberSignature Language="C#" Value="public long AdvancePastAny (T value0, T value1, T value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 AdvancePastAny(!T value0, !T value1, !T value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.AdvancePastAny(`0,`0,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AdvancePastAny (value0 As T, value1 As T, value2 As T) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long AdvancePastAny(T value0, T value1, T value2);" />
+      <MemberSignature Language="F#" Value="member this.AdvancePastAny : 'T * 'T * 'T -&gt; int64" Usage="sequenceReader.AdvancePastAny (value0, value1, value2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
+        <Parameter Name="value2" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value0">To be added.</param>
+        <param name="value1">To be added.</param>
+        <param name="value2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvancePastAny">
+      <MemberSignature Language="C#" Value="public long AdvancePastAny (T value0, T value1, T value2, T value3);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 AdvancePastAny(!T value0, !T value1, !T value2, !T value3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.AdvancePastAny(`0,`0,`0,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AdvancePastAny (value0 As T, value1 As T, value2 As T, value3 As T) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long AdvancePastAny(T value0, T value1, T value2, T value3);" />
+      <MemberSignature Language="F#" Value="member this.AdvancePastAny : 'T * 'T * 'T * 'T -&gt; int64" Usage="sequenceReader.AdvancePastAny (value0, value1, value2, value3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
+        <Parameter Name="value2" Type="T" />
+        <Parameter Name="value3" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value0">To be added.</param>
+        <param name="value1">To be added.</param>
+        <param name="value2">To be added.</param>
+        <param name="value3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Consumed">
+      <MemberSignature Language="C#" Value="public long Consumed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Consumed" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.SequenceReader`1.Consumed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Consumed As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Consumed { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Consumed : int64" Usage="System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt;.Consumed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentSpan">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;T&gt; CurrentSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlySpan`1&lt;!T&gt; CurrentSpan" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.SequenceReader`1.CurrentSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentSpan As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlySpan&lt;T&gt; CurrentSpan { ReadOnlySpan&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentSpan : ReadOnlySpan&lt;'T (requires 'T : struct)&gt;" Usage="System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt;.CurrentSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentSpanIndex">
+      <MemberSignature Language="C#" Value="public int CurrentSpanIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentSpanIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.SequenceReader`1.CurrentSpanIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentSpanIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentSpanIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentSpanIndex : int" Usage="System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt;.CurrentSpanIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public bool End { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool End" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.SequenceReader`1.End" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool End { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.End : bool" Usage="System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt;.End" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNext">
+      <MemberSignature Language="C#" Value="public bool IsNext (ReadOnlySpan&lt;T&gt; next, bool advancePast = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNext(valuetype System.ReadOnlySpan`1&lt;!T&gt; next, bool advancePast) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.IsNext(System.ReadOnlySpan{`0},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsNext (next As ReadOnlySpan(Of T), Optional advancePast As Boolean = false) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNext : ReadOnlySpan&lt;'T (requires 'T : struct)&gt; * bool -&gt; bool" Usage="sequenceReader.IsNext (next, advancePast)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="next" Type="System.ReadOnlySpan&lt;T&gt;" />
+        <Parameter Name="advancePast" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="next">To be added.</param>
+        <param name="advancePast">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNext">
+      <MemberSignature Language="C#" Value="public bool IsNext (T next, bool advancePast = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNext(!T next, bool advancePast) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.IsNext(`0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsNext (next As T, Optional advancePast As Boolean = false) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNext : 'T * bool -&gt; bool" Usage="sequenceReader.IsNext (next, advancePast)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="next" Type="T" />
+        <Parameter Name="advancePast" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="next">To be added.</param>
+        <param name="advancePast">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public long Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.SequenceReader`1.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt;.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public SequencePosition Position { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.SequencePosition Position" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.SequenceReader`1.Position" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As SequencePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property SequencePosition Position { SequencePosition get(); };" />
+      <MemberSignature Language="F#" Value="member this.Position : SequencePosition" Usage="System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt;.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.SequencePosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remaining">
+      <MemberSignature Language="C#" Value="public long Remaining { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Remaining" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.SequenceReader`1.Remaining" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Remaining As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Remaining { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Remaining : int64" Usage="System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt;.Remaining" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rewind">
+      <MemberSignature Language="C#" Value="public void Rewind (long count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Rewind(int64 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.Rewind(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Rewind (count As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rewind(long count);" />
+      <MemberSignature Language="F#" Value="member this.Rewind : int64 -&gt; unit" Usage="sequenceReader.Rewind count" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sequence">
+      <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt; Sequence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Sequence" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.SequenceReader`1.Sequence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sequence As ReadOnlySequence(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Buffers::ReadOnlySequence&lt;T&gt; Sequence { System::Buffers::ReadOnlySequence&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sequence : System.Buffers.ReadOnlySequence&lt;'T (requires 'T : struct)&gt;" Usage="System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt;.Sequence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAdvanceTo">
+      <MemberSignature Language="C#" Value="public bool TryAdvanceTo (T delimiter, bool advancePastDelimiter = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryAdvanceTo(!T delimiter, bool advancePastDelimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryAdvanceTo(`0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryAdvanceTo (delimiter As T, Optional advancePastDelimiter As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryAdvanceTo : 'T * bool -&gt; bool" Usage="sequenceReader.TryAdvanceTo (delimiter, advancePastDelimiter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delimiter" Type="T" />
+        <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="delimiter">To be added.</param>
+        <param name="advancePastDelimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAdvanceToAny">
+      <MemberSignature Language="C#" Value="public bool TryAdvanceToAny (ReadOnlySpan&lt;T&gt; delimiters, bool advancePastDelimiter = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryAdvanceToAny(valuetype System.ReadOnlySpan`1&lt;!T&gt; delimiters, bool advancePastDelimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryAdvanceToAny(System.ReadOnlySpan{`0},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryAdvanceToAny (delimiters As ReadOnlySpan(Of T), Optional advancePastDelimiter As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryAdvanceToAny : ReadOnlySpan&lt;'T (requires 'T : struct)&gt; * bool -&gt; bool" Usage="sequenceReader.TryAdvanceToAny (delimiters, advancePastDelimiter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delimiters" Type="System.ReadOnlySpan&lt;T&gt;" />
+        <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="delimiters">To be added.</param>
+        <param name="advancePastDelimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCopyTo">
+      <MemberSignature Language="C#" Value="public bool TryCopyTo (Span&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryCopyTo(valuetype System.Span`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryCopyTo(System.Span{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryCopyTo (destination As Span(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryCopyTo(Span&lt;T&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.TryCopyTo : Span&lt;'T (requires 'T : struct)&gt; -&gt; bool" Usage="sequenceReader.TryCopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryPeek">
+      <MemberSignature Language="C#" Value="public bool TryPeek (out T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPeek([out] !T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryPeek(`0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryPeek (ByRef value As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryPeek([Runtime::InteropServices::Out] T % value);" />
+      <MemberSignature Language="F#" Value="member this.TryPeek :  -&gt; bool" Usage="sequenceReader.TryPeek value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryRead">
+      <MemberSignature Language="C#" Value="public bool TryRead (out T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryRead([out] !T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryRead(`0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryRead (ByRef value As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryRead([Runtime::InteropServices::Out] T % value);" />
+      <MemberSignature Language="F#" Value="member this.TryRead :  -&gt; bool" Usage="sequenceReader.TryRead value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReadTo">
+      <MemberSignature Language="C#" Value="public bool TryReadTo (out System.Buffers.ReadOnlySequence&lt;T&gt; sequence, ReadOnlySpan&lt;T&gt; delimiter, bool advancePastDelimiter = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadTo([out] valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt;&amp; sequence, valuetype System.ReadOnlySpan`1&lt;!T&gt; delimiter, bool advancePastDelimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryReadTo(System.Buffers.ReadOnlySequence{`0}@,System.ReadOnlySpan{`0},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReadTo (ByRef sequence As ReadOnlySequence(Of T), delimiter As ReadOnlySpan(Of T), Optional advancePastDelimiter As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryReadTo :  * ReadOnlySpan&lt;'T (requires 'T : struct)&gt; * bool -&gt; bool" Usage="sequenceReader.TryReadTo (sequence, delimiter, advancePastDelimiter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="out" />
+        <Parameter Name="delimiter" Type="System.ReadOnlySpan&lt;T&gt;" />
+        <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sequence">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <param name="advancePastDelimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReadTo">
+      <MemberSignature Language="C#" Value="public bool TryReadTo (out System.Buffers.ReadOnlySequence&lt;T&gt; sequence, T delimiter, bool advancePastDelimiter = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadTo([out] valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt;&amp; sequence, !T delimiter, bool advancePastDelimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryReadTo(System.Buffers.ReadOnlySequence{`0}@,`0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReadTo (ByRef sequence As ReadOnlySequence(Of T), delimiter As T, Optional advancePastDelimiter As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryReadTo :  * 'T * bool -&gt; bool" Usage="sequenceReader.TryReadTo (sequence, delimiter, advancePastDelimiter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="out" />
+        <Parameter Name="delimiter" Type="T" />
+        <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sequence">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <param name="advancePastDelimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReadTo">
+      <MemberSignature Language="C#" Value="public bool TryReadTo (out ReadOnlySpan&lt;T&gt; span, T delimiter, bool advancePastDelimiter = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadTo([out] valuetype System.ReadOnlySpan`1&lt;!T&gt;&amp; span, !T delimiter, bool advancePastDelimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryReadTo(System.ReadOnlySpan{`0}@,`0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReadTo (ByRef span As ReadOnlySpan(Of T), delimiter As T, Optional advancePastDelimiter As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryReadTo :  * 'T * bool -&gt; bool" Usage="sequenceReader.TryReadTo (span, delimiter, advancePastDelimiter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="out" />
+        <Parameter Name="delimiter" Type="T" />
+        <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="span">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <param name="advancePastDelimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReadTo">
+      <MemberSignature Language="C#" Value="public bool TryReadTo (out System.Buffers.ReadOnlySequence&lt;T&gt; sequence, T delimiter, T delimiterEscape, bool advancePastDelimiter = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadTo([out] valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt;&amp; sequence, !T delimiter, !T delimiterEscape, bool advancePastDelimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryReadTo(System.Buffers.ReadOnlySequence{`0}@,`0,`0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReadTo (ByRef sequence As ReadOnlySequence(Of T), delimiter As T, delimiterEscape As T, Optional advancePastDelimiter As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryReadTo :  * 'T * 'T * bool -&gt; bool" Usage="sequenceReader.TryReadTo (sequence, delimiter, delimiterEscape, advancePastDelimiter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="out" />
+        <Parameter Name="delimiter" Type="T" />
+        <Parameter Name="delimiterEscape" Type="T" />
+        <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sequence">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <param name="delimiterEscape">To be added.</param>
+        <param name="advancePastDelimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReadTo">
+      <MemberSignature Language="C#" Value="public bool TryReadTo (out ReadOnlySpan&lt;T&gt; span, T delimiter, T delimiterEscape, bool advancePastDelimiter = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadTo([out] valuetype System.ReadOnlySpan`1&lt;!T&gt;&amp; span, !T delimiter, !T delimiterEscape, bool advancePastDelimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryReadTo(System.ReadOnlySpan{`0}@,`0,`0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReadTo (ByRef span As ReadOnlySpan(Of T), delimiter As T, delimiterEscape As T, Optional advancePastDelimiter As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryReadTo :  * 'T * 'T * bool -&gt; bool" Usage="sequenceReader.TryReadTo (span, delimiter, delimiterEscape, advancePastDelimiter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="out" />
+        <Parameter Name="delimiter" Type="T" />
+        <Parameter Name="delimiterEscape" Type="T" />
+        <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="span">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <param name="delimiterEscape">To be added.</param>
+        <param name="advancePastDelimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReadToAny">
+      <MemberSignature Language="C#" Value="public bool TryReadToAny (out System.Buffers.ReadOnlySequence&lt;T&gt; sequence, ReadOnlySpan&lt;T&gt; delimiters, bool advancePastDelimiter = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadToAny([out] valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt;&amp; sequence, valuetype System.ReadOnlySpan`1&lt;!T&gt; delimiters, bool advancePastDelimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryReadToAny(System.Buffers.ReadOnlySequence{`0}@,System.ReadOnlySpan{`0},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReadToAny (ByRef sequence As ReadOnlySequence(Of T), delimiters As ReadOnlySpan(Of T), Optional advancePastDelimiter As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryReadToAny :  * ReadOnlySpan&lt;'T (requires 'T : struct)&gt; * bool -&gt; bool" Usage="sequenceReader.TryReadToAny (sequence, delimiters, advancePastDelimiter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="out" />
+        <Parameter Name="delimiters" Type="System.ReadOnlySpan&lt;T&gt;" />
+        <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sequence">To be added.</param>
+        <param name="delimiters">To be added.</param>
+        <param name="advancePastDelimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReadToAny">
+      <MemberSignature Language="C#" Value="public bool TryReadToAny (out ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; delimiters, bool advancePastDelimiter = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadToAny([out] valuetype System.ReadOnlySpan`1&lt;!T&gt;&amp; span, valuetype System.ReadOnlySpan`1&lt;!T&gt; delimiters, bool advancePastDelimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReader`1.TryReadToAny(System.ReadOnlySpan{`0}@,System.ReadOnlySpan{`0},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReadToAny (ByRef span As ReadOnlySpan(Of T), delimiters As ReadOnlySpan(Of T), Optional advancePastDelimiter As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryReadToAny :  * ReadOnlySpan&lt;'T (requires 'T : struct)&gt; * bool -&gt; bool" Usage="sequenceReader.TryReadToAny (span, delimiters, advancePastDelimiter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="out" />
+        <Parameter Name="delimiters" Type="System.ReadOnlySpan&lt;T&gt;" />
+        <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="span">To be added.</param>
+        <param name="delimiters">To be added.</param>
+        <param name="advancePastDelimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnreadSpan">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;T&gt; UnreadSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlySpan`1&lt;!T&gt; UnreadSpan" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.SequenceReader`1.UnreadSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnreadSpan As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlySpan&lt;T&gt; UnreadSpan { ReadOnlySpan&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnreadSpan : ReadOnlySpan&lt;'T (requires 'T : struct)&gt;" Usage="System.Buffers.SequenceReader&lt;'T (requires 'T : struct)&gt;.UnreadSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -132,6 +132,35 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <Member MemberName="AggressiveOptimization">
+      <MemberSignature Language="C#" Value="AggressiveOptimization" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes AggressiveOptimization = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.AggressiveOptimization" />
+      <MemberSignature Language="VB.NET" Value="AggressiveOptimization" />
+      <MemberSignature Language="C++ CLI" Value="AggressiveOptimization" />
+      <MemberSignature Language="F#" Value="AggressiveOptimization = 512" Usage="System.Reflection.MethodImplAttributes.AggressiveOptimization" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <MemberValue>512</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="CodeTypeMask">
       <MemberSignature Language="C#" Value="CodeTypeMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes CodeTypeMask = int32(3)" />

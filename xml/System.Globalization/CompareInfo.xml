@@ -1113,6 +1113,42 @@
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public int GetHashCode (ReadOnlySpan&lt;char&gt; source, System.Globalization.CompareOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetHashCode(valuetype System.ReadOnlySpan`1&lt;char&gt; source, valuetype System.Globalization.CompareOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetHashCode(System.ReadOnlySpan{System.Char},System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (source As ReadOnlySpan(Of Char), options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode(ReadOnlySpan&lt;char&gt; source, System::Globalization::CompareOptions options);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : ReadOnlySpan&lt;char&gt; * System.Globalization.CompareOptions -&gt; int" Usage="compareInfo.GetHashCode (source, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="options" Type="System.Globalization.CompareOptions" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public virtual int GetHashCode (string source, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(string source, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetHashCode(System.String,System.Globalization.CompareOptions)" />

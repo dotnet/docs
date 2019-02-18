@@ -161,7 +161,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -405,7 +405,8 @@
       <Docs>
         <param name="other">To be added.</param>
         <summary>Specifies whether the current collection object and the specified object are equal.</summary>
-        <returns><see langword="true" /> if this instance and <paramref name="other" /> are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if this instance and <paramref name="other" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -673,7 +674,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether this collection object is read-only.</summary>
-        <value><see langref="true" /> if the current instance is read-only; otherwise, <see langref="false" />.</value>
+        <value>
+          <see langref="true" /> if the current instance is read-only; otherwise, <see langref="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

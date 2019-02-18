@@ -1,0 +1,81 @@
+﻿<Type Name="JsonCommentHandling" FullName="System.Text.Json.JsonCommentHandling">
+  <TypeSignature Language="C#" Value="public enum JsonCommentHandling" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JsonCommentHandling extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.JsonCommentHandling" />
+  <TypeSignature Language="VB.NET" Value="Public Enum JsonCommentHandling" />
+  <TypeSignature Language="C++ CLI" Value="public enum class JsonCommentHandling" />
+  <TypeSignature Language="F#" Value="type JsonCommentHandling = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Allow">
+      <MemberSignature Language="C#" Value="Allow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonCommentHandling Allow = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonCommentHandling.Allow" />
+      <MemberSignature Language="VB.NET" Value="Allow" />
+      <MemberSignature Language="C++ CLI" Value="Allow" />
+      <MemberSignature Language="F#" Value="Allow = 1" Usage="System.Text.Json.JsonCommentHandling.Allow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonCommentHandling</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disallow">
+      <MemberSignature Language="C#" Value="Disallow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonCommentHandling Disallow = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonCommentHandling.Disallow" />
+      <MemberSignature Language="VB.NET" Value="Disallow" />
+      <MemberSignature Language="C++ CLI" Value="Disallow" />
+      <MemberSignature Language="F#" Value="Disallow = 0" Usage="System.Text.Json.JsonCommentHandling.Disallow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonCommentHandling</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Skip">
+      <MemberSignature Language="C#" Value="Skip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.Json.JsonCommentHandling Skip = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Text.Json.JsonCommentHandling.Skip" />
+      <MemberSignature Language="VB.NET" Value="Skip" />
+      <MemberSignature Language="C++ CLI" Value="Skip" />
+      <MemberSignature Language="F#" Value="Skip = 2" Usage="System.Text.Json.JsonCommentHandling.Skip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonCommentHandling</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -114,6 +114,37 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="CurrentCulture">
+      <MemberSignature Language="C#" Value="public static string CurrentCulture (FormattableString formattable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CurrentCulture(class System.FormattableString formattable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.FormattableString.CurrentCulture(System.FormattableString)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CurrentCulture (formattable As FormattableString) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CurrentCulture(FormattableString ^ formattable);" />
+      <MemberSignature Language="F#" Value="static member CurrentCulture : FormattableString -&gt; string" Usage="System.FormattableString.CurrentCulture formattable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formattable" Type="System.FormattableString" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="formattable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Format">
       <MemberSignature Language="C#" Value="public abstract string Format { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />

@@ -1,12 +1,16 @@
 ﻿<Type Name="Vector64&lt;T&gt;" FullName="System.Runtime.Intrinsics.Vector64&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public struct Vector64&lt;T&gt; where T : struct" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Vector64`1&lt;struct .ctor (class System.ValueType) T&gt; extends System.ValueType" />
+  <TypeSignature Language="C#" Value="public struct Vector64&lt;T&gt; : IEquatable&lt;System.Runtime.Intrinsics.Vector64&lt;T&gt;&gt;, IFormattable where T : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Vector64`1&lt;struct .ctor (class System.ValueType) T&gt; extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Runtime.Intrinsics.Vector64`1&lt;!T&gt;&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.Vector64`1" />
-  <TypeSignature Language="VB.NET" Value="Public Structure Vector64(Of T)" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : value classpublic value class Vector64" />
-  <TypeSignature Language="F#" Value="type Vector64&lt;'T (requires 'T : struct)&gt; = struct" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Vector64(Of T)&#xA;Implements IEquatable(Of Vector64(Of T)), IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : value classpublic value class Vector64 : IEquatable&lt;System::Runtime::Intrinsics::Vector64&lt;T&gt;&gt;, IFormattable" />
+  <TypeSignature Language="F#" Value="type Vector64&lt;'T (requires 'T : struct)&gt; = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -21,11 +25,588 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Runtime.Intrinsics.Vector64&lt;T&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-3.0">
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">To be added.</typeparam>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
-  <Members />
+  <Members>
+    <Member MemberName="As&lt;U&gt;">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;U&gt; As&lt;U&gt; () where U : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;!!U&gt; As&lt;struct .ctor (class System.ValueType) U&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.As``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function As(Of U As Structure) () As Vector64(Of U)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename U&gt;&#xA; where U : value class System::Runtime::Intrinsics::Vector64&lt;U&gt; As();" />
+      <MemberSignature Language="F#" Value="member this.As : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;'U (requires 'U : struct)&gt; (requires 'U : struct)" Usage="vector64.As " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;U&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="U">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="U">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsByte">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;byte&gt; AsByte ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;unsigned int8&gt; AsByte() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.AsByte" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsByte () As Vector64(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;System::Byte&gt; AsByte();" />
+      <MemberSignature Language="F#" Value="member this.AsByte : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;byte&gt;" Usage="vector64.AsByte " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsDouble">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;double&gt; AsDouble ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;float64&gt; AsDouble() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.AsDouble" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsDouble () As Vector64(Of Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;double&gt; AsDouble();" />
+      <MemberSignature Language="F#" Value="member this.AsDouble : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;double&gt;" Usage="vector64.AsDouble " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsInt16">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;short&gt; AsInt16 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;int16&gt; AsInt16() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.AsInt16" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsInt16 () As Vector64(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;short&gt; AsInt16();" />
+      <MemberSignature Language="F#" Value="member this.AsInt16 : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;int16&gt;" Usage="vector64.AsInt16 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsInt32">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;int&gt; AsInt32 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;int32&gt; AsInt32() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.AsInt32" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsInt32 () As Vector64(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;int&gt; AsInt32();" />
+      <MemberSignature Language="F#" Value="member this.AsInt32 : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;int&gt;" Usage="vector64.AsInt32 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsInt64">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;long&gt; AsInt64 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;int64&gt; AsInt64() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.AsInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsInt64 () As Vector64(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;long&gt; AsInt64();" />
+      <MemberSignature Language="F#" Value="member this.AsInt64 : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;int64&gt;" Usage="vector64.AsInt64 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsSByte">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;sbyte&gt; AsSByte ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;int8&gt; AsSByte() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.AsSByte" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsSByte () As Vector64(Of SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;System::SByte&gt; AsSByte();" />
+      <MemberSignature Language="F#" Value="member this.AsSByte : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;sbyte&gt;" Usage="vector64.AsSByte " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsSingle">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;float&gt; AsSingle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;float32&gt; AsSingle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.AsSingle" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsSingle () As Vector64(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;float&gt; AsSingle();" />
+      <MemberSignature Language="F#" Value="member this.AsSingle : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;single&gt;" Usage="vector64.AsSingle " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsUInt16">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;ushort&gt; AsUInt16 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;unsigned int16&gt; AsUInt16() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.AsUInt16" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsUInt16 () As Vector64(Of UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;System::UInt16&gt; AsUInt16();" />
+      <MemberSignature Language="F#" Value="member this.AsUInt16 : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;uint16&gt;" Usage="vector64.AsUInt16 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsUInt32">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;uint&gt; AsUInt32 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;unsigned int32&gt; AsUInt32() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.AsUInt32" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsUInt32 () As Vector64(Of UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;System::UInt32&gt; AsUInt32();" />
+      <MemberSignature Language="F#" Value="member this.AsUInt32 : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;uint32&gt;" Usage="vector64.AsUInt32 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsUInt64">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;ulong&gt; AsUInt64 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;unsigned int64&gt; AsUInt64() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.AsUInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsUInt64 () As Vector64(Of ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;System::UInt64&gt; AsUInt64();" />
+      <MemberSignature Language="F#" Value="member this.AsUInt64 : unit -&gt; System.Runtime.Intrinsics.Vector64&lt;uint64&gt;" Usage="vector64.AsUInt64 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public static int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.Vector64`1.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Runtime.Intrinsics.Vector64&lt;'T (requires 'T : struct)&gt;.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="vector64.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Runtime.Intrinsics.Vector64&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Runtime.Intrinsics.Vector64`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.Equals(System.Runtime.Intrinsics.Vector64{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Vector64(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Runtime::Intrinsics::Vector64&lt;T&gt; other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Runtime.Intrinsics.Vector64&lt;'T (requires 'T : struct)&gt; -&gt; bool" Usage="vector64.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Runtime.Intrinsics.Vector64&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElement">
+      <MemberSignature Language="C#" Value="public T GetElement (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T GetElement(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.GetElement(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetElement (index As Integer) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T GetElement(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetElement : int -&gt; 'T" Usage="vector64.GetElement index" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="vector64.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToScalar">
+      <MemberSignature Language="C#" Value="public T ToScalar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T ToScalar() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.ToScalar" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToScalar () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T ToScalar();" />
+      <MemberSignature Language="F#" Value="member this.ToScalar : unit -&gt; 'T" Usage="vector64.ToScalar " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="vector64.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.ToString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="vector64.ToString format" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (string format, IFormatProvider formatProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(string format, class System.IFormatProvider formatProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, formatProvider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ formatProvider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="vector64.ToString (format, formatProvider)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="formatProvider" Type="System.IFormatProvider" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="formatProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVector128">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector128&lt;T&gt; ToVector128 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector128`1&lt;!T&gt; ToVector128() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.ToVector128" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToVector128 () As Vector128(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector128&lt;T&gt; ToVector128();" />
+      <MemberSignature Language="F#" Value="member this.ToVector128 : unit -&gt; System.Runtime.Intrinsics.Vector128&lt;'T (requires 'T : struct)&gt;" Usage="vector64.ToVector128 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVector128Unsafe">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector128&lt;T&gt; ToVector128Unsafe ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector128`1&lt;!T&gt; ToVector128Unsafe() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.ToVector128Unsafe" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToVector128Unsafe () As Vector128(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector128&lt;T&gt; ToVector128Unsafe();" />
+      <MemberSignature Language="F#" Value="member this.ToVector128Unsafe : unit -&gt; System.Runtime.Intrinsics.Vector128&lt;'T (requires 'T : struct)&gt;" Usage="vector64.ToVector128Unsafe " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithElement">
+      <MemberSignature Language="C#" Value="public System.Runtime.Intrinsics.Vector64&lt;T&gt; WithElement (int index, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Intrinsics.Vector64`1&lt;!T&gt; WithElement(int32 index, !T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64`1.WithElement(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithElement (index As Integer, value As T) As Vector64(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Intrinsics::Vector64&lt;T&gt; WithElement(int index, T value);" />
+      <MemberSignature Language="F#" Value="member this.WithElement : int * 'T -&gt; System.Runtime.Intrinsics.Vector64&lt;'T (requires 'T : struct)&gt;" Usage="vector64.WithElement (index, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zero">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector64&lt;T&gt; Zero { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Runtime.Intrinsics.Vector64`1&lt;!T&gt; Zero" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.Vector64`1.Zero" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Zero As Vector64(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::Intrinsics::Vector64&lt;T&gt; Zero { System::Runtime::Intrinsics::Vector64&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Zero : System.Runtime.Intrinsics.Vector64&lt;'T (requires 'T : struct)&gt;" Usage="System.Runtime.Intrinsics.Vector64&lt;'T (requires 'T : struct)&gt;.Zero" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector64&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
 </Type>

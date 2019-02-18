@@ -1,0 +1,120 @@
+﻿<Type Name="Sse+X64" FullName="System.Runtime.Intrinsics.X86.Sse+X64">
+  <TypeSignature Language="C#" Value="public abstract class Sse.X64" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract beforefieldinit Sse/X64 extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.Sse.X64" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Sse.X64" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class Sse::X64 abstract" />
+  <TypeSignature Language="F#" Value="type Sse.X64 = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConvertScalarToVector128Single">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; ConvertScalarToVector128Single (System.Runtime.Intrinsics.Vector128&lt;float&gt; upper, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; ConvertScalarToVector128Single(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; upper, int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.X64.ConvertScalarToVector128Single(System.Runtime.Intrinsics.Vector128{System.Single},System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertScalarToVector128Single (upper As Vector128(Of Single), value As Long) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; ConvertScalarToVector128Single(System::Runtime::Intrinsics::Vector128&lt;float&gt; upper, long value);" />
+      <MemberSignature Language="F#" Value="static member ConvertScalarToVector128Single : System.Runtime.Intrinsics.Vector128&lt;single&gt; * int64 -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.X64.ConvertScalarToVector128Single (upper, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="upper">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToInt64">
+      <MemberSignature Language="C#" Value="public static long ConvertToInt64 (System.Runtime.Intrinsics.Vector128&lt;float&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ConvertToInt64(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.X64.ConvertToInt64(System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToInt64 (value As Vector128(Of Single)) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ConvertToInt64(System::Runtime::Intrinsics::Vector128&lt;float&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToInt64 : System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; int64" Usage="System.Runtime.Intrinsics.X86.Sse.X64.ConvertToInt64 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToInt64WithTruncation">
+      <MemberSignature Language="C#" Value="public static long ConvertToInt64WithTruncation (System.Runtime.Intrinsics.Vector128&lt;float&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ConvertToInt64WithTruncation(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.X64.ConvertToInt64WithTruncation(System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToInt64WithTruncation (value As Vector128(Of Single)) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ConvertToInt64WithTruncation(System::Runtime::Intrinsics::Vector128&lt;float&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToInt64WithTruncation : System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; int64" Usage="System.Runtime.Intrinsics.X86.Sse.X64.ConvertToInt64WithTruncation value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Intrinsics.X86.Sse.X64.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Runtime.Intrinsics.X86.Sse.X64.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

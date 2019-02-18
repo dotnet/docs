@@ -242,8 +242,6 @@ public void ConfigureServices(IServiceCollection services)
 
     // Add Authentication services
 
-    var identityUrl = configuration.GetValue<string>("IdentityUrl");
-
     services.AddAuthentication(options =>
     {
         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

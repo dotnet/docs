@@ -1163,7 +1163,7 @@ SqlClient now automatically provides faster connections to an AlwaysOn Availabil
 
 **Samples**
 
- There are a number of WPF samples on our [Open Source GitHub repository](https://github.com/Microsoft/WPF-Samples). Help us improve our samples by sending us a pull-request or opening a [GitHub issue](https://github.com/Microsoft/WPF-Samples/issues).
+ There are a number of WPF samples on the [Microsoft/WPF-Samples](https://github.com/Microsoft/WPF-Samples) GitHub repository. Help us improve our samples by sending us a pull-request or opening a [GitHub issue](https://github.com/Microsoft/WPF-Samples/issues).
 
  **DirectX extensions**
 

@@ -1040,7 +1040,7 @@
 ## Remarks  
  The <xref:System.Net.Dns.GetHostEntry%2A> method queries a DNS server for the IP addresses and aliases associated with an IP address.  
   
- IPv6 addresses are filtered from the results of the <xref:System.Net.Dns.GetHostEntry%2A> method if the local computer does not have IPv6 installed. As a result, it is possible to get back an empty <xref:System.Net.IPHostEntry> instance if only IPv6 results where available for the `address` parameter.  
+ IPv6 addresses are filtered from the results of the <xref:System.Net.Dns.GetHostEntry%2A> method if the local computer does not have IPv6 installed. As a result, it is possible to get back an empty <xref:System.Net.IPHostEntry> instance if only IPv6 results were available for the `address` parameter.  
   
  The <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   

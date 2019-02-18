@@ -1,9 +1,9 @@
 ---
 title: What is Docker?
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Get a little deeper in your understanding of Docker, a simple analogy here might help you.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/21/2017
+ms.date: 11/23/2018
 ---
 # What is Docker?
 

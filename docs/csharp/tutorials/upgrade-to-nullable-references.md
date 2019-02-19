@@ -22,7 +22,7 @@ You'll need to set up your machine to run .NET Core, including the C# 8.0 beta c
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
-The sample application that you'll migrate is an RSS feed reader web app. It reads from a single RSS feed and displays summaries for the most recent articles. You can click on any of the articles to visit the site. The application is relatively new, but was written before nullable reference types were available. The design decisions for the application represented sound principles, but don't take advantage of this important language feature.
+The sample application that you'll migrate is an RSS feed reader web app. It reads from a single RSS feed and displays summaries for the most recent articles. You can click on any of the articles to visit the site. The application is relatively new but was written before nullable reference types were available. The design decisions for the application represented sound principles, but don't take advantage of this important language feature.
 
 The sample application includes a unit test library that validates the major functionality of the app. That project will make it easier to upgrade safely, if you change any of the implementation based on the warnings generated. You can download the starter code from the [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/nullable-reference-migration/start) GitHub repository.
 

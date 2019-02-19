@@ -1,7 +1,7 @@
 ---
 title: Nullable reference types
 description: This article provides an overview of nullable reference types, added in C# 8. You'll learn how the feature provides safety against null reference exceptions, for new and existing projects.
-ms.date: 12/03/2018
+ms.date: 02/19/2019
 ---
 # Nullable reference types
 

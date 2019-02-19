@@ -25,7 +25,11 @@
     <summary>Provides a basic implementation of the <see cref="T:System.Windows.IDataObject" /> interface, which defines a format-independent mechanism for transferring data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+
+## Remarks
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
 ## Examples  
  The following example shows how to use this class.  
   

@@ -28,6 +28,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ 
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  The <xref:System.Messaging.BinaryMessageFormatter> is very efficient and can be used to serialize most objects. The result is very compact and fast to parse, but does not allow for loosely coupled messaging as the <xref:System.Messaging.XmlMessageFormatter> does. Loosely coupled means that the client and the server can independently version the type that is sent and received.  
   
  When the application sends a message to the queue using an instance of the <xref:System.Messaging.MessageQueue> class, the formatter serializes the object into a stream and inserts it into the message body. When reading from a queue using a <xref:System.Messaging.MessageQueue>, the formatter deserializes the message data into the <xref:System.Messaging.Message.Body%2A> property of a <xref:System.Messaging.Message>.  
@@ -56,6 +59,15 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.BinaryMessageFormatter" /> class.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
+         ]]></format>
+         </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -140,6 +152,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  <xref:System.Messaging.BinaryMessageFormatter.CanRead%2A> returns `false` if the message body is not a binary object.  
   
  On the receiving computer, <xref:System.Messaging.BinaryMessageFormatter.CanRead%2A> returns `true` if the assembly for the class to be deserialized exists locally. The assembly must be found in the global assembly cache, or be linked to the application (for example, if the object represents a custom class).  
@@ -177,7 +192,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method creates a copy of the formatter and initializes all its properties to the values of this <xref:System.Messaging.BinaryMessageFormatter>. It is used for scalability, but does not guarantee read or write thread safety.  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+ 
+This method creates a copy of the formatter and initializes all its properties to the values of this <xref:System.Messaging.BinaryMessageFormatter>. It is used for scalability, but does not guarantee read or write thread safety.  
   
  ]]></format>
         </remarks>
@@ -258,12 +276,15 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that defines how the top (root) object of a graph is deserialized with regards to finding and loading its assembly.</summary>
-        <value>One of the <see cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" /> values that defines the deserialization behavior.</value>
+        <value>One of the enumeration values that defines the deserialization behavior.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Currently, you should accept the default value, `AssemblyStyle`.  
+ 
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
+Currently, you should accept the default value, `AssemblyStyle`.  
   
  ]]></format>
         </remarks>
@@ -300,11 +321,14 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that defines how type descriptions are laid out in the serialized stream.</summary>
-        <value>A <see cref="T:System.Runtime.Serialization.Formatters.FormatterTypeStyle" /> that defines the type description format.</value>
+        <value>One of the enumeration values that defines the type description format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  Currently, you should accept the default value, `TypesWhenNeeded`.  
   
  ]]></format>
@@ -343,6 +367,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  The top object format and type format need not be specified to write to the queue as they must be when reading. The <xref:System.Messaging.BinaryMessageFormatter.TopObjectFormat%2A> and <xref:System.Messaging.BinaryMessageFormatter.TypeFormat%2A> properties are used by the formatter only when deserializing a message.  
   
  The <xref:System.Messaging.BinaryMessageFormatter> can serialize most objects, but the result is not loosely coupled. However, it is compact, so the formatter is efficient for large objects.  

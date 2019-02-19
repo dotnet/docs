@@ -27,7 +27,10 @@ The following language features first appeared in C# 8.0 preview 1:
 
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided.
 
-## More pattern matching
+## More patterns in more places
+
+C# 7.0 introduced syntax for **pattern matching** to C#. The first tentative steps 
+
 
 << Nice intro, work with data based on its shape>>
 

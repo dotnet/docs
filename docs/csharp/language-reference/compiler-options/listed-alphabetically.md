@@ -30,6 +30,8 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-delaysign](delaysign-compiler-option.md)|Delay-signs the assembly by using only the public part of the strong name key.|
 |[-deterministic](deterministic-compiler-option.md)|Causes the compiler to output an assembly whose binary content is identical across compilations if inputs are identical.|
 |[-doc](doc-compiler-option.md)|Specifies an XML Documentation file to generate.|
+|-embed|Embed all source files in the PDB.|
+|-embed:\<file list>|Embed specific files in the PDB.|
 |[-errorreport](errorreport-compiler-option.md)|Specifies how to handle internal compiler errors: prompt, send, or none. The default is none.|
 |[-filealign](filealign-compiler-option.md)|Specifies the alignment used for output file sections.|
 |[-fullpaths](fullpaths-compiler-option.md)|Causes the compiler to generate fully qualified paths.|

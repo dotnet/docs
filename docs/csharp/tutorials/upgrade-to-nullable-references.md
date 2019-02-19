@@ -124,7 +124,7 @@ That change won't ripple through other code, because any access to the `ErrorTex
 
 [!code-csharp[InitializeNewsItems](~/samples/csharp/tutorials/nullable-reference-migration/finished/SimpleFeedReader/Pages/Index.cshtml.cs#InitializeNewsItems)]
 
-That fixed the warning, but introduced an error. The `NewsItems` list is now **correct by construction**, but the code that sets the list in `OnGet` must change to match the new API. Instead of an assignment, call `AddRange` to add the news items to the existing list:
+That fixed the warning but introduced an error. The `NewsItems` list is now **correct by construction**, but the code that sets the list in `OnGet` must change to match the new API. Instead of an assignment, call `AddRange` to add the news items to the existing list:
 
 [!code-csharp[AddRange](~/samples/csharp/tutorials/nullable-reference-migration/finished/SimpleFeedReader/Pages/Index.cshtml.cs#AddRange)]
 

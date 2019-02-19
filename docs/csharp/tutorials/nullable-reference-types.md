@@ -215,6 +215,6 @@ Experiment by changing the type declarations between nullable and non-nullable r
 
 ## Next steps
 
-Learn more by migrating an existing application to use nullable reference types..
+Learn more by migrating an existing application to use nullable reference types:
 > [!div class="nextstepaction"]
 > [Upgrade an application to use nullable reference types](upgrade-to-nullable-references.md)

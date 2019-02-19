@@ -88,7 +88,7 @@ The assignment of `Title` and `Uri` to `default` which is `null` for the `string
 
 [!code-csharp[FinishedViewModel](~/samples/csharp/tutorials/nullable-reference-migration/finished/SimpleFeedReader/ViewModels/NewsStoryViewModel.cs#FinishedViewModel)]
 
-Once that's done, you need to update the code that configures the automapper so that it uses the constructor rather than setting properties. Open `NewsService.cs` and look for the following code at the bottom of the file:
+Once that's done, you need to update the code that configures the AutoMapper so that it uses the constructor rather than setting properties. Open `NewsService.cs` and look for the following code at the bottom of the file:
 
 [!code-csharp[StarterAutoMapper](~/samples/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader/Services/NewsService.cs#ConfigureAutoMapper)]
 

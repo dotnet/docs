@@ -29,7 +29,9 @@ The remainder of this article briefly describes these features. Where in-depth a
 
 ## More patterns in more places
 
-C# 7.0 introduced syntax for **pattern matching** to C#. The first tentative steps 
+**Pattern matching** gives tools to provide shape-dependent functionality across related-but-different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns, using the `is` expression and the `switch` statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud based architectures, other language tools are needed.
+
+C# 8.0 expands this vocabulary so you can use more pattern expressions in more places in your code. Consider these features when your data and functionality are separate. Consider pattern matching when your algorithms depend on a fact other the runtime type of an object.
 
 
 << Nice intro, work with data based on its shape>>

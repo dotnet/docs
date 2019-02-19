@@ -130,13 +130,13 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 ```
 
-8. Run the application using the [`dotnet run`](../tools/dotnet-run.md) command as follows:
+5. Run the application using the [`dotnet run`](../tools/dotnet-run.md) command as follows:
 
 ```console
 dotnet run
 ```
 
-9. Navigate to the URL listed in the console (e.g. http://localhost:5000) in your web browser.
+6. Navigate to the URL listed in the console (e.g. http://localhost:5000) in your web browser.
 
 You should see the following output:
 "Hello dotnet-svcutil!"

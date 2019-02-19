@@ -100,7 +100,7 @@ Notice that because this class is small, and you've examined carefully, you shou
 
 The first set of changes showed you how to discover when the original design indicated that variables shouldn't be set to `null`. The technique is referred to as **correct by construction**. You declare that an object and its properties cannot be `null` when it's constructed. The compiler's flow analysis provides assurance that those properties aren't set to `null` after construction. Note that this constructor is called by external code, and that code is **nullable oblivious**. The new syntax doesn't provide runtime checking. External code might circumvent the compiler's flow analysis. 
 
-Other times, the structure of a class provides different clues to the intent. Open the `Error.cshtml.cs` file in the `Pages` folder. The `ErrorViewModel` contains the following code:
+Other times, the structure of a class provides different clues to the intent. Open the *Error.cshtml.cs* file in the *Pages* folder. The `ErrorViewModel` contains the following code:
 
 [!code-csharp[StarterErrorModel](~/samples/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader/Pages/Error.cshtml.cs#StartErrorModel)]
 

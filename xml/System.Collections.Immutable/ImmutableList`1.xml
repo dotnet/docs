@@ -99,7 +99,7 @@
       <Docs>
         <param name="value">The object to add.</param>
         <summary>Adds the specified object to the end of the immutable list.</summary>
-        <returns>A new immutable list with the object added, or the current list if it already contains the specified object.</returns>
+        <returns>A new immutable list with the object added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +129,7 @@
       <Docs>
         <param name="items">The collection whose elements will be added to the end of the list.</param>
         <summary>Adds the elements of the specified collection to the end of the immutable list.</summary>
-        <returns>A new immutable list with the elements added, or the current list if it already contains the specified elements.</returns>
+        <returns>A new immutable list with the elements added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2500,7 +2500,7 @@
       <Docs>
         <param name="value">The value to add.</param>
         <summary>Adds the specified value to this immutable list.</summary>
-        <returns>A new list with the element added, or this list if the element is already in the list.</returns>
+        <returns>A new list with the element added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2539,7 +2539,7 @@
       <Docs>
         <param name="items">The values to add.</param>
         <summary>Adds the specified values to this immutable list.</summary>
-        <returns>A new list with the elements added, or this list if the elements are already in the list.</returns>
+        <returns>A new list with the elements added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

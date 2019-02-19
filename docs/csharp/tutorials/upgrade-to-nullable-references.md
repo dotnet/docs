@@ -112,7 +112,7 @@ Check for the uses of the property, and you see that in the associated page, the
 
 ## Fixing nulls causes change
 
-Frequently, the fix for one set of warnings creates new warnings in related code. Let's see the warnings in action by fixing the `index.cshtml.cs` class Open the `index.cshtml.cs` file and examine the code. This file contains the code behind for the index page:
+Frequently, the fix for one set of warnings creates new warnings in related code. Let's see the warnings in action by fixing the `index.cshtml.cs` class. Open the `index.cshtml.cs` file and examine the code. This file contains the code behind for the index page:
 
 [!code-csharp[StarterIndexModel](~/samples/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader/Pages/Index.cshtml.cs#IndexModelStart)]
 

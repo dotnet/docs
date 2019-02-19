@@ -122,7 +122,7 @@ Add the following code to the `Main` method to setup the way to load data:
 
 [!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#SetupTextLoader)]
 
-Use the [generic `CreateTextLoader`](/dotnet/api/microsoft.ml.textloadersavercatalog.createtextloader?view=ml-dotnet#Microsoft_ML_TextLoaderSaverCatalog_CreateTextLoader__1_Microsoft_ML_DataOperationsCatalog_System_Boolean_System_Char_System_Boolean_System_Boolean_System_Boolean_) method to infer the dataset schema from the `IrisData` class definition.
+Use the [generic `CreateTextLoader`](xref:Microsoft.ML.TextLoaderSaverCatalog.CreateTextLoader%60%601(Microsoft.ML.DataOperationsCatalog,System.Boolean,System.Char,System.Boolean,System.Boolean,System.Boolean) method to infer the dataset schema from the `IrisData` class definition.
 
 Use instantiated <xref:Microsoft.ML.Data.TextLoader> instance to create an <xref:Microsoft.Data.DataView.IDataView> instance, which represents the data source for the training data set:
 

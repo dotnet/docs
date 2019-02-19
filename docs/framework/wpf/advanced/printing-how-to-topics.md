@@ -46,4 +46,4 @@ The topics in this section demonstrate how to use the printing and print system 
 - <xref:System.Printing.Interop>
 - [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
 - [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [XPS](https://www.microsoft.com/xps)
+- [XPS Documents](/windows/desktop/printdocs/documents)

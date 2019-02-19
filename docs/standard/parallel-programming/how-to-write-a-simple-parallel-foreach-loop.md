@@ -21,7 +21,7 @@ This example shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach%2A
 
 ## Example
 
-This example assumes you have several .jpg files in a *C:\Users\Public\Pictures\Sample Pictures* folder and creates a new subfolder named *Modified*. When you run the example, it rotates each .jpg image in *Sample Pictures* and saves it to *Modified*. You can modify the two paths as necessary.
+This example assumes you have several .jpg files in a *C:\Users\Public\Pictures\Sample Pictures* folder and creates a new sub-folder named *Modified*. When you run the example, it rotates each .jpg image in *Sample Pictures* and saves it to *Modified*. You can modify the two paths as necessary.
 
 [!code-csharp[TPL_Parallel#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/simpleforeach.cs#03)]
 [!code-vb[TPL_Parallel#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/simpleforeach.vb#03)]
@@ -39,11 +39,23 @@ You can also use Parallel LINQ (PLINQ) to parallelize processing of <xref:System
 
 ## Compile and run the code
 
-1. Copy and paste this code into a Visual Studio **Console App** project.
+You can compile the code as a console application for .NET Framework or as a console application for .NET Core.
 
-2. Add a reference to *System.Drawing.dll*.
+In Visual Studio, there are Visual Basic and C# console application templates for Windows Desktop and .NET Core.
 
-3. Press **F5**.
+From the command line, you can use either .NET Core and its CLI tools (for example, `dotnet new console` or `dotnet new console -lang vb`), or you can create the file and use the command-line compiler for a .NET Framework application.
+
+For a .NET Core project, you must reference the **System.Drawing.Common** NuGet package. In Visual Studio, use the NuGet Package Manager to install the package. Alternatively, you can add a reference to the package in your *.*csproj* or *.*vbproj* file:
+ 
+```xml
+<ItemGroup>
+     <PackageReference Include="System.Drawing.Common" Version="4.5.1" />
+</ItemGroup>
+```
+
+To run a .NET Core console application from the command line, use `dotnet run` from the folder that contains your application.
+
+To run your console application from Visual Studio, press **F5**.
 
 ## See also
 

@@ -38,7 +38,7 @@ A good first step is to determine the scope of the migration task. Start by upgr
 
 Upgrading the language version selects C# 8.0, but does not enable the nullable annotation context or the nullable warning context. Rebuild the project to ensure that it builds without warnings.
 
-A good next step is to turn on the nullable annotation context and see how many warnings are generated.  Add the following element to both csproj files in the solution, directly under the `LangVersion` element:
+A good next step is to turn on the nullable annotation context and see how many warnings are generated. Add the following element to both csproj files in the solution, directly under the `LangVersion` element:
 
 ```xml
 <NullableContextOptions>enable</NullableContextOptions>

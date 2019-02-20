@@ -66,9 +66,9 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-reference](reference-compiler-option.md)|References metadata from the specified assembly files.|
 |[-refout](refout-compiler-option.md)|Generate a reference assembly in addition to the primary assembly.|
 |[-refonly](refonly-compiler-option.md)|Generate a reference assembly instead of a primary assembly.|
-|-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|
 |-reportanalyzer|Report additional analyzer information, such as execution time.|
 |[-resource](resource-compiler-option.md)|Embeds the specified resource.|
+|-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
 |[-target](target-compiler-option.md)|Specifies the format of the output file by using one of four options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md),  [-target:winmdobj](target-winmdobj-compiler-option.md).|
 |[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../../../csharp/language-reference/keywords/unsafe.md) code.|

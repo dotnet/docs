@@ -96,7 +96,7 @@ CancelButton=Cancel
 
  The following example uses a resource file in text format named GreetingResources.txt for a simple "Hello World" console application. The text file defines two strings, `prompt` and `greeting`, that prompt the user to enter his or her name and display a greeting.
 
-```
+```text
 # GreetingResources.txt
 # A resource file in text format for a "Hello World" application.
 #

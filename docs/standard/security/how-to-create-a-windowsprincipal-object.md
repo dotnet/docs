@@ -36,12 +36,12 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
 2.  With the policy set, use the static <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to retrieve the principal that encapsulates the current Windows user. Because the property return type is <xref:System.Security.Principal.IPrincipal>, you must cast the result to a <xref:System.Security.Principal.WindowsPrincipal> type. The following code initializes a new <xref:System.Security.Principal.WindowsPrincipal> object to the value of the principal associated with the current thread.  
   
     ```csharp  
-    WindowsPrincipal MyPrincipal =   
+    WindowsPrincipal myPrincipal =   
         (WindowsPrincipal) Thread.CurrentPrincipal;  
     ```  
   
     ```vb  
-    Dim MyPrincipal As WindowsPrincipal = _  
+    Dim myPrincipal As WindowsPrincipal = _  
         CType(Thread.CurrentPrincipal, WindowsPrincipal)   
     ```  
   
@@ -52,21 +52,21 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
 1.  Initialize a new <xref:System.Security.Principal.WindowsIdentity> object by calling the static <xref:System.Security.Principal.WindowsIdentity.GetCurrent%2A?displayProperty=nameWithType> method, which queries the current Windows account and places information about that account into the newly created identity object. The following code creates a new <xref:System.Security.Principal.WindowsIdentity> object and initializes it to the current authenticated user.  
   
     ```csharp  
-    WindowsIdentity MyIdentity = WindowsIdentity.GetCurrent();  
+    WindowsIdentity myIdentity = WindowsIdentity.GetCurrent();  
     ```  
   
     ```vb  
-    Dim MyIdentity As WindowsIdentity = WindowsIdentity.GetCurrent()  
+    Dim myIdentity As WindowsIdentity = WindowsIdentity.GetCurrent()  
     ```  
   
 2.  Create a new <xref:System.Security.Principal.WindowsPrincipal> object and pass it the value of the <xref:System.Security.Principal.WindowsIdentity> object created in the preceding step.  
   
     ```csharp  
-    WindowsPrincipal MyPrincipal = new WindowsPrincipal(MyIdentity);  
+    WindowsPrincipal myPrincipal = new WindowsPrincipal(myIdentity);  
     ```  
   
     ```vb  
-    Dim MyPrincipal As New WindowsPrincipal(MyIdentity)  
+    Dim myPrincipal As New WindowsPrincipal(myIdentity)  
     ```  
   
 3.  When the principal object has been created, you can use one of several methods to validate it.  

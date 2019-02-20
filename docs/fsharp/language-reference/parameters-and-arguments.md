@@ -134,7 +134,7 @@ type C =
         printfn "%s" message
 ```
 
-You can also specify new objects as a default parameter value. For example, the `Foo` member could have an optional `CanceallationToken` as input instead:
+You can also specify a new object as a default parameter value. For example, the `Foo` member could have an optional `CanceallationToken` as input instead:
 
 ```fsharp
 open System.Threading

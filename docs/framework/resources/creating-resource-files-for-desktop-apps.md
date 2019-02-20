@@ -32,7 +32,7 @@ You can include resources, such as strings, images, or object data, in resources
 
 You can use text (.txt or .restext) files to store string resources only. For non-string resources, use .resx files or create them programmatically. Text files that contain string resources have the following format:
 
-```
+```text
 # This is an optional comment.
 name = value
 

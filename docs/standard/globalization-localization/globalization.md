@@ -73,7 +73,7 @@ However, searches are not always culture-sensitive. If the purpose of the search
 
 ### Test strings for equality
 
-If you want to test two strings for equality rather than determining how they compare in the sort order, use the <xref:System.String.Equals%2A?displayProperty=nameWithType> method instead of a string comparison method such as <xref:System.String.Compare%2A?displayProperty=nameWithType> or <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=nameWithType>.
+If you want to test two strings for equality rather than determine how they compare in the sort order, use the <xref:System.String.Equals%2A?displayProperty=nameWithType> method instead of a string comparison method such as <xref:System.String.Compare%2A?displayProperty=nameWithType> or <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=nameWithType>.
 
 Comparisons for equality are typically performed to access some resource conditionally. For example, you might perform a comparison for equality to verify a password or to confirm that a file exists. Such non-linguistic comparisons should always be ordinal rather than culture-sensitive. In general, you should call the instance <xref:System.String.Equals%28System.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method or the static <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method with a value of <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> for strings such as passwords, and a value of <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for strings such as file names or URIs.
 

@@ -134,6 +134,16 @@ type C =
         printfn "%s" message
 ```
 
+You can also specify new objects as a default parameter value. For example, the `Foo` member could have an optional `CanceallationToken` as input instead:
+
+```fsharp
+open System.Threading
+open System.Runtime.InteropServices
+type C = 
+    static member Foo([<Optional; DefaultParameterValue(CancellationToken())>] ct: CancellationToken) =
+        printfn "%A" ct
+```
+
 The value given as argument to `DefaultParameterValue` must match the type of the parameter, i.e. the following is not allowed:
 
 ```fsharp

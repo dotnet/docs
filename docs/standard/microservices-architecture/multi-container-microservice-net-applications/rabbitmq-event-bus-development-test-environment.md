@@ -31,7 +31,7 @@ The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. 
 
 ## Implementing a simple publish method with RabbitMQ
 
-The following code is part of a ***simplified*** event bus implementation for RabbitMQ, [**improved in the actual code**](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) of eShopOnContainers. You usually do not need to code it unless you are making improvements. The code gets a connection and channel to RabbitMQ, creates a message, and then publishes the message into the queue.
+The following code is a ***simplified*** version of an event bus implementation for RabbitMQ. You don't usually need to code it unless you're making improvements. The code gets a connection and a channel to RabbitMQ, creates a message, and then publishes the message into the queue. To see the full implementation, access the actual code in the [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) repository. 
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable

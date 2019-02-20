@@ -106,7 +106,7 @@ The .NET Framework uses tables to perform culture-sensitive sorts on string data
 |.NET Framework 3.0|All operating systems|Unicode 4.1|
 |.NET Framework 3.5|All operating systems|Unicode 4.1|
 |.NET Framework 4|All operating systems|Unicode 5.0|
-|.NET Framework 4.5|[!INCLUDE[win7](../../../includes/win7-md.md)]|Unicode 5.0|
+|.NET Framework 4.5 and later on Windows 7|Unicode 5.0|
 |.NET Framework 4.5 and later on Windows 8 and later operating systems|Unicode 6.3.0|
 |.NET Core (all versions)|Depends on the version of the Unicode Standard supported by the underlying operating system.|
 

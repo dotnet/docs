@@ -314,7 +314,7 @@ Instead, you should serialize the numeric value along with some cultural informa
 
 ## Work with culture-specific settings
 
-In the .NET Framework, the <xref:System.Globalization.CultureInfo> class represents a particular culture or region. Some of its properties return objects that provide specific information about some aspect of a culture:
+In .NET, the <xref:System.Globalization.CultureInfo> class represents a particular culture or region. Some of its properties return objects that provide specific information about some aspect of a culture:
 
 - The <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=nameWithType> property returns a <xref:System.Globalization.CompareInfo> object that contains information about how the culture compares and orders strings.
 

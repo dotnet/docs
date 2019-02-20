@@ -45,13 +45,13 @@ Windows Forms controls are reusable components that encapsulate user interface f
  Describes this class and has links to all of its members.  
   
 ## Related Sections  
- [Design-Time Attributes for Components](https://msdn.microsoft.com/library/12050fe3-9327-4509-9e21-4ee2494b95c3)  
+ [Design-Time Attributes for Components](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/tk67c2t8(v=vs.120))  
  Lists metadata attributes to apply to components and controls so that they are displayed correctly at design time in visual designers.  
   
- [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
+ [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))  
  Describes how to implement classes such as editors and designers that provide design-time support.  
   
- [How to: License Components and Controls](https://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57)  
+ [How to: License Components and Controls](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/fe8b1eh9(v=vs.120))  
  Describes how to implement licensing in your control or component.  
   
- Also see [Developing Windows Forms Controls at Design Time](https://msdn.microsoft.com/library/w29y3h59\(v=vs.110\)).
+ Also see [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md).

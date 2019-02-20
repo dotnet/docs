@@ -41,8 +41,8 @@
  ]]></format>
     </remarks>
     <related type="Article" href="https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2">Standard Query Operators Overview</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51">Extension Methods (C# Programming Guide)</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/b8020aae-374d-46a9-bcb7-8cc2390b93b6">Extension Methods (Visual Basic)</related>
+    <related type="Article" href="~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md">Extension Methods (C# Programming Guide)</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md">Extension Methods (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="Aggregate&lt;TSource&gt;">
@@ -321,7 +321,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Any&lt;TSource&gt;">
@@ -405,7 +405,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Linq.Enumerable.Any``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Any&lt;TSource&gt;">
@@ -474,7 +474,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Append&lt;TSource&gt;">
@@ -668,7 +668,7 @@
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average">
@@ -730,7 +730,7 @@
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average">
@@ -788,7 +788,7 @@
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average">
@@ -848,7 +848,7 @@
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average">
@@ -907,7 +907,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum of the elements in the sequence is larger than <see cref="F:System.Decimal.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average">
@@ -967,7 +967,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average">
@@ -1026,7 +1026,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum of the elements in the sequence is larger than <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average">
@@ -1083,7 +1083,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum of the elements in the sequence is larger than <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average">
@@ -1141,7 +1141,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average">
@@ -1201,7 +1201,7 @@
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average&lt;TSource&gt;">
@@ -1268,7 +1268,7 @@
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
         <exception cref="T:System.OverflowException">The sum of the elements in the sequence is larger than <see cref="F:System.Decimal.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average&lt;TSource&gt;">
@@ -1334,7 +1334,7 @@
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average&lt;TSource&gt;">
@@ -1399,7 +1399,7 @@
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
         <exception cref="T:System.OverflowException">The sum of the elements in the sequence is larger than <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average&lt;TSource&gt;">
@@ -1464,7 +1464,7 @@
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
         <exception cref="T:System.OverflowException">The sum of the elements in the sequence is larger than <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average&lt;TSource&gt;">
@@ -1529,7 +1529,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum of the elements in the sequence is larger than <see cref="F:System.Decimal.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average&lt;TSource&gt;">
@@ -1593,7 +1593,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average&lt;TSource&gt;">
@@ -1658,7 +1658,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum of the elements in the sequence is larger than <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average&lt;TSource&gt;">
@@ -1720,7 +1720,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average&lt;TSource&gt;">
@@ -1784,7 +1784,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Average&lt;TSource&gt;">
@@ -1850,7 +1850,7 @@
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Cast&lt;TResult&gt;">
@@ -1941,8 +1941,8 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidCastException">An element in the sequence cannot be cast to type <paramref name="TResult" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1aefd18c-1314-47f8-99ec-9bcefb09e699">from clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/83e3665e-68a0-4540-a3a3-3d777a0f95d5">From Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/from-clause.md">from clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/from-clause.md">From Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Concat&lt;TSource&gt;">
@@ -2150,7 +2150,7 @@ Dim doubles = From item As Integer In sequence
  [!code-csharp[CSLINQCustomComparer#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#1)]
  [!code-vb[CSLINQCustomComparer#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#1)]  
   
- After you implement this comparer, you can use a sequence of `Product` objects in the <xref:System.Linq.Enumerable.Contains%2A> method, as shown in the following example.  
+ After you implement this comparer, you can use a sequence of `Product` objects in the <xref:System.Linq.Enumerable.Contains%2A> method, as shown in the following example:  
   
  [!code-csharp[CSLINQCustomComparer#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#6)]
  [!code-vb[CSLINQCustomComparer#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#6)]  
@@ -2234,7 +2234,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The number of elements in <paramref name="source" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Count&lt;TSource&gt;">
@@ -2301,7 +2301,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The number of elements in <paramref name="source" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DefaultIfEmpty&lt;TSource&gt;">
@@ -2533,7 +2533,7 @@ Dim doubles = From item As Integer In sequence
  [!code-csharp[CSLINQEncapsulatedComparer#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#1)]
  [!code-vb[CSLINQEncapsulatedComparer#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#1)]  
   
- After you implement this interface, you can use a sequence of `Product` objects in the <xref:System.Linq.Enumerable.Distinct%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> method, as shown in the following example.  
+ After you implement this interface, you can use a sequence of `Product` objects in the <xref:System.Linq.Enumerable.Distinct%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> method, as shown in the following example:  
   
  [!code-csharp[CSLINQEncapsulatedComparer#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#5)]
  [!code-vb[CSLINQEncapsulatedComparer#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#5)]  
@@ -2542,7 +2542,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/86f42614-0d8f-4ffc-b888-ce8a37a8d36a">Distinct Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/distinct-clause.md">Distinct Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Distinct&lt;TSource&gt;">
@@ -2602,7 +2602,7 @@ Dim doubles = From item As Integer In sequence
  [!code-csharp[CSLINQCustomComparer#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#1)]
  [!code-vb[CSLINQCustomComparer#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#1)]  
   
- After you implement this comparer, you can use a sequence of `Product` objects in the <xref:System.Linq.Enumerable.Distinct%2A> method, as shown in the following example.  
+ After you implement this comparer, you can use a sequence of `Product` objects in the <xref:System.Linq.Enumerable.Distinct%2A> method, as shown in the following example:  
   
  [!code-csharp[CSLINQCustomComparer#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#5)]
  [!code-vb[CSLINQCustomComparer#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#5)]  
@@ -2812,6 +2812,19 @@ Dim doubles = From item As Integer In sequence
       </AssemblyInfo>
       <Docs>
         <summary>Produces the set difference of two sequences.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+The set difference of two sets is defined as the members of the first set that don't appear in the second set.  
+  
+This method returns those elements in `first` that don't appear in `second`. It doesn't return those elements in `second` that don't appear in `first`.
+Only unique elements are returned.
+
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note-some.md)]
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.linq.enumerable.intersect">Enumerable.Intersect Method</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Except&lt;TSource&gt;">
@@ -2860,31 +2873,25 @@ Dim doubles = From item As Integer In sequence
   
 ## Remarks  
  This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
-  
- The set difference of two sets is defined as the members of the first set that do not appear in the second set.  
-  
-> [!NOTE]
->  This method returns those elements in `first` that do not appear in `second`. It does not also return those elements in `second` that do not appear in `first`.  
-  
- The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values of the types that implement the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface. To compare a custom data type, you need to implement this interface and provide your own <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods for the type.  
-  
-   
+    
+ The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values of the types. 
+ To compare a custom data type, you need to override the <xref:System.Object.Equals%2A> and the <xref:System.Object.GetHashCode%2A> methods, and optionally implement the <xref:System.IEquatable%601> generic interface in the custom type. For more information, see the <xref:System.Collections.Generic.EqualityComparer%601.Default%2A> property.
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Linq.Enumerable.Except%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> method to compare two sequences of numbers and return elements that appear only in the first sequence.  
+ The following code example demonstrates how to use the `Except<TSource>(IEnumerable<TSource>, IEnumerable<TSource>)` method to compare two sequences of numbers and return elements that appear only in the first sequence.  
   
- [!code-csharp[System.Linq.Enumerable#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#34)]
+ [!code-csharp-interactive[System.Linq.Enumerable#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#34)]
  [!code-vb[System.Linq.Enumerable#34](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#34)]  
   
- If you want to compare sequences of objects of some custom data type, you have to implement the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface in a helperclass. The following code example shows how to implement this interface in a custom data type and provide <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods.  
+  If you want to compare sequences of objects of some custom data type, you have to implement the <xref:System.IEquatable%601> generic interface in a helper class. The following code example shows how to implement this interface in a custom data type and override <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods.
   
- [!code-csharp[CSLINQEncapsulatedComparer#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#9)]  
+ [!code-csharp[CSLINQEncapsulatedComparer#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#9)]
+ [!code-vb[CSLINQEncapsulatedComparer#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#9)]  
   
- After you implement this interface, you can use sequences of `ProductA` objects in the <xref:System.Linq.Enumerable.Except%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> method, as shown in the following example.  
+ After you implement this interface, you can use sequences of `ProductA` objects in the `Except<TSource>(IEnumerable<TSource>, IEnumerable<TSource>)` method, as shown in the following example:
   
  [!code-csharp[CSLINQEncapsulatedComparer#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#7)]
  [!code-vb[CSLINQEncapsulatedComparer#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#7)]  
-  
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2938,17 +2945,16 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.  
-  
-   
+ If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.
   
 ## Examples  
+ If you want to compare sequences of objects of some custom data type, you have to implement the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface in a helper class. The following code example shows how to implement this interface in a custom data type and provide <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods. 
  The following example shows how to implement an equality comparer that can be used in the <xref:System.Linq.Enumerable.Except%2A> method.  
   
  [!code-csharp[CSLINQCustomComparer#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#1)]
  [!code-vb[CSLINQCustomComparer#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#1)]  
   
- After you implement this comparer, you can use sequences of `Product` objects in the <xref:System.Linq.Enumerable.Except%2A> method, as shown in the following example.  
+ After you implement this comparer, you can use sequences of `Product` objects in the <xref:System.Linq.Enumerable.Except%2A> method, as shown in the following example:  
   
  [!code-csharp[CSLINQCustomComparer#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#7)]
  [!code-vb[CSLINQCustomComparer#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#7)]  
@@ -3315,8 +3321,8 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="keySelector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/c817242e-b12c-4baa-a57e-73ee138f34d1">group clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7">Group By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/group-clause.md">group clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/group-by-clause.md">Group By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GroupBy&lt;TSource,TKey&gt;">
@@ -3391,8 +3397,8 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="keySelector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/c817242e-b12c-4baa-a57e-73ee138f34d1">group clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7">Group By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/group-clause.md">group clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/group-by-clause.md">Group By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GroupBy&lt;TSource,TKey,TElement&gt;">
@@ -3474,8 +3480,8 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="keySelector" /> or <paramref name="elementSelector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/c817242e-b12c-4baa-a57e-73ee138f34d1">group clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7">Group By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/group-clause.md">group clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/group-by-clause.md">Group By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GroupBy&lt;TSource,TKey,TElement&gt;">
@@ -3554,8 +3560,8 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="keySelector" /> or <paramref name="elementSelector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/c817242e-b12c-4baa-a57e-73ee138f34d1">group clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7">Group By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/group-clause.md">group clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/group-by-clause.md">Group By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GroupBy&lt;TSource,TKey,TResult&gt;">
@@ -3621,8 +3627,8 @@ Dim doubles = From item As Integer In sequence
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/c817242e-b12c-4baa-a57e-73ee138f34d1">group clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7">Group By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/group-clause.md">group clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/group-by-clause.md">Group By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GroupBy&lt;TSource,TKey,TResult&gt;">
@@ -3675,8 +3681,8 @@ Dim doubles = From item As Integer In sequence
         <summary>Groups the elements of a sequence according to a specified key selector function and creates a result value from each group and its key. The keys are compared by using a specified comparer.</summary>
         <returns>A collection of elements of type <paramref name="TResult" /> where each element represents a projection over a group and its key.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/c817242e-b12c-4baa-a57e-73ee138f34d1">group clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7">Group By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/group-clause.md">group clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/group-by-clause.md">Group By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GroupBy&lt;TSource,TKey,TElement,TResult&gt;">
@@ -3746,8 +3752,8 @@ Dim doubles = From item As Integer In sequence
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/c817242e-b12c-4baa-a57e-73ee138f34d1">group clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7">Group By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/group-clause.md">group clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/group-by-clause.md">Group By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GroupBy&lt;TSource,TKey,TElement,TResult&gt;">
@@ -3804,8 +3810,8 @@ Dim doubles = From item As Integer In sequence
         <summary>Groups the elements of a sequence according to a specified key selector function and creates a result value from each group and its key. Key values are compared by using a specified comparer, and the elements of each group are projected by using a specified function.</summary>
         <returns>A collection of elements of type <paramref name="TResult" /> where each element represents a projection over a group and its key.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/c817242e-b12c-4baa-a57e-73ee138f34d1">group clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7">Group By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/group-clause.md">group clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/group-by-clause.md">Group By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GroupJoin&lt;TOuter,TInner,TKey,TResult&gt;">
@@ -3906,8 +3912,8 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="outer" /> or <paramref name="inner" /> or <paramref name="outerKeySelector" /> or <paramref name="innerKeySelector" /> or <paramref name="resultSelector" /> is <see langword="null" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107">Join Operations</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/76e9df84-092c-41a6-9537-c3f1cbd7f0fb">join clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c">Group Join Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/join-clause.md">join clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/group-join-clause.md">Group Join Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GroupJoin&lt;TOuter,TInner,TKey,TResult&gt;">
@@ -4000,6 +4006,14 @@ Dim doubles = From item As Integer In sequence
       </AssemblyInfo>
       <Docs>
         <summary>Produces the set intersection of two sequences.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note-some.md)]
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.linq.enumerable.except">Enumerable.Except Method</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Intersect&lt;TSource&gt;">
@@ -4051,25 +4065,29 @@ Dim doubles = From item As Integer In sequence
   
  The intersection of two sets A and B is defined as the set that contains all the elements of A that also appear in B, but no other elements.  
   
- When the object returned by this method is enumerated, <xref:System.Linq.Enumerable.Intersect%2A> yields distinct elements occurring in both sequences in the order in which they appear in `first`.  
+ When the object returned by this method is enumerated, `Intersect` yields distinct elements occurring in both sequences in the order in which they appear in `first`.  
   
- The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values of the types that implement the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface. To compare a custom data type, you need to implement this interface and provide your own <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods for the type.  
+ The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values of the types. 
+ To compare a custom data type, you need to override the <xref:System.Object.Equals%2A> and the <xref:System.Object.GetHashCode%2A> methods, and optionally implement the <xref:System.IEquatable%601> generic interface in the custom type. For more information, see the <xref:System.Collections.Generic.EqualityComparer%601.Default%2A> property.
   
    
   
 ## Examples  
- The following code example demonstrates how to use <xref:System.Linq.Enumerable.Intersect%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> to return the elements that appear in each of two sequences of integers.  
+ The following code example demonstrates how to use `Intersect<TSource>(IEnumerable<TSource>, IEnumerable<TSource>)` to return the elements that appear in each of two sequences of integers.  
   
- [!code-csharp[System.Linq.Enumerable#41](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#41)]
+ [!code-csharp-interactive[System.Linq.Enumerable#41](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#41)]
  [!code-vb[System.Linq.Enumerable#41](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#41)]  
   
- If you want to compare sequences of objects of a custom data type, you have to implement the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface in a helper class. The following code example shows how to implement this interface in a custom data type and provide <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods.  
+ If you want to compare sequences of objects of some custom data type, you have to implement the <xref:System.IEquatable%601> generic interface in a helper class. The following code example shows how to implement this interface in a custom data type and override <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods.
   
  [!code-csharp[CSLINQEncapsulatedComparer#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#9)]  
+ [!code-vb[CSLINQEncapsulatedComparer#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#9)]  
+
+ After you implement this interface, you can use sequences of `ProductA` objects in the `Intersect` method, as shown in the following example:
   
- After you implement this interface, you can use sequences of `ProductA` objects in the <xref:System.Linq.Enumerable.Intersect%2A> method, as shown in the following example.  
-  
- [!code-csharp[CSLINQEncapsulatedComparer#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#10)]  
+[!code-csharp[CSLINQEncapsulatedComparer#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#10)]  
+[!code-vb[CSLINQEncapsulatedComparer#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#10)]  
+
 [!code-csharp[CSLINQEncapsulatedComparer#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#3)]
 [!code-vb[CSLINQEncapsulatedComparer#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#3)]  
   
@@ -4130,19 +4148,17 @@ Dim doubles = From item As Integer In sequence
   
  The intersection of two sets A and B is defined as the set that contains all the elements of A that also appear in B, but no other elements.  
   
- When the object returned by this method is enumerated, <xref:System.Linq.Enumerable.Intersect%2A> yields distinct elements occurring in both sequences in the order in which they appear in `first`.  
+ When the object returned by this method is enumerated, `Intersect` yields distinct elements occurring in both sequences in the order in which they appear in `first`.  
   
  If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values.  
   
-   
-  
 ## Examples  
- The following example shows how to implement an equality comparer that can be used in the <xref:System.Linq.Enumerable.Intersect%2A> method.  
+ The following example shows how to implement an equality comparer that can be used in the `Intersect` method.  
   
  [!code-csharp[CSLINQCustomComparer#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#1)]
  [!code-vb[CSLINQCustomComparer#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#1)]  
   
- After you implement this comparer, you can use sequences of `Product` objects in the <xref:System.Linq.Enumerable.Intersect%2A> method, as shown in the following example.  
+ After you implement this comparer, you can use sequences of `Product` objects in the `Intersect` method, as shown in the following example:  
   
  [!code-csharp[CSLINQCustomComparer#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#2)]
  [!code-vb[CSLINQCustomComparer#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#2)]  
@@ -4248,8 +4264,8 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="outer" /> or <paramref name="inner" /> or <paramref name="outerKeySelector" /> or <paramref name="innerKeySelector" /> or <paramref name="resultSelector" /> is <see langword="null" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107">Joining</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/76e9df84-092c-41a6-9537-c3f1cbd7f0fb">join clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6dd37936-b27c-4e00-98ad-154b23f4de64">Join Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/join-clause.md">join clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/join-clause.md">Join Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Join&lt;TOuter,TInner,TKey,TResult&gt;">
@@ -4676,7 +4692,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The number of elements exceeds <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="LongCount&lt;TSource&gt;">
@@ -4741,7 +4757,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The number of matching elements exceeds <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Max">
@@ -4814,7 +4830,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -4876,7 +4892,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -4938,7 +4954,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -4998,7 +5014,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -5060,7 +5076,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -5120,7 +5136,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -5182,7 +5198,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -5244,7 +5260,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -5306,7 +5322,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -5368,7 +5384,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -5432,7 +5448,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -5502,7 +5518,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -5572,7 +5588,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -5640,7 +5656,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -5710,7 +5726,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -5778,7 +5794,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -5846,7 +5862,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -5914,7 +5930,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -5982,7 +5998,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -6050,7 +6066,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource&gt;">
@@ -6120,7 +6136,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Max&lt;TSource,TResult&gt;">
@@ -6188,7 +6204,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Min">
@@ -6261,7 +6277,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -6321,7 +6337,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -6383,7 +6399,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -6445,7 +6461,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -6507,7 +6523,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -6569,7 +6585,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -6629,7 +6645,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -6691,7 +6707,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -6753,7 +6769,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -6815,7 +6831,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -6879,7 +6895,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -6949,7 +6965,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -7019,7 +7035,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -7087,7 +7103,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -7157,7 +7173,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -7225,7 +7241,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -7293,7 +7309,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -7361,7 +7377,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -7429,7 +7445,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -7497,7 +7513,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource&gt;">
@@ -7567,7 +7583,7 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="source" /> contains no elements.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Min&lt;TSource,TResult&gt;">
@@ -7635,7 +7651,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OfType&lt;TResult&gt;">
@@ -7790,8 +7806,8 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="keySelector" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Linq.Enumerable.OrderByDescending``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
         <altmember cref="M:System.Linq.Enumerable.OrderByDescending``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
-        <related type="Article" href="https://msdn.microsoft.com/library/21f87f48-d69d-4e95-9a52-6fec47b37e1f">orderby clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/fa911282-6b81-44c7-acfa-46b5bb93df75">Order By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/orderby-clause.md">orderby clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/order-by-clause.md">Order By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OrderBy&lt;TSource,TKey&gt;">
@@ -7945,8 +7961,8 @@ Dim doubles = From item As Integer In sequence
           <paramref name="source" /> or <paramref name="keySelector" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Linq.Enumerable.OrderBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
         <altmember cref="M:System.Linq.Enumerable.OrderBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
-        <related type="Article" href="https://msdn.microsoft.com/library/21f87f48-d69d-4e95-9a52-6fec47b37e1f">orderby clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/fa911282-6b81-44c7-acfa-46b5bb93df75">Order By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/orderby-clause.md">orderby clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/order-by-clause.md">Order By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OrderByDescending&lt;TSource,TKey&gt;">
@@ -8417,8 +8433,8 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/df01e266-5781-4aaa-80c4-67cf28ea093f">select clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/27a3f61c-5960-4692-9b91-4d0c4b6178fe">Select Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/select-clause.md">select clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/select-clause.md">Select Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SelectMany&lt;TSource,TResult&gt;">
@@ -8497,8 +8513,8 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1aefd18c-1314-47f8-99ec-9bcefb09e699">from clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/83e3665e-68a0-4540-a3a3-3d777a0f95d5">From Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/from-clause.md">from clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/from-clause.md">From Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="SelectMany&lt;TSource,TResult&gt;">
@@ -8637,8 +8653,8 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="collectionSelector" /> or <paramref name="resultSelector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1aefd18c-1314-47f8-99ec-9bcefb09e699">from clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/83e3665e-68a0-4540-a3a3-3d777a0f95d5">From Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/from-clause.md">from clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/from-clause.md">From Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="SelectMany&lt;TSource,TCollection,TResult&gt;">
@@ -8764,12 +8780,13 @@ Dim doubles = From item As Integer In sequence
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Linq.Enumerable.SequenceEqual%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> method enumerates the two source sequences in parallel and compares corresponding elements by using the default equality comparer for `TSource`, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>. The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values of the types that implement the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface. To compare a custom data type, you need to implement this interface and provide your own <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods for the type.  
-  
-   
+ The `SequenceEqual<TSource>(IEnumerable<TSource>, IEnumerable<TSource>)` method enumerates the two source sequences in parallel and compares corresponding elements by using the default equality comparer for `TSource`, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>. 
+
+ The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values of the types. 
+ To compare a custom data type, you need to override the <xref:System.Object.Equals%2A> and the <xref:System.Object.GetHashCode%2A> methods, and optionally implement the <xref:System.IEquatable%601> generic interface in the custom type. For more information, see the <xref:System.Collections.Generic.EqualityComparer%601.Default%2A> property.
   
 ## Examples  
- The following code examples demonstrate how to use <xref:System.Linq.Enumerable.SequenceEqual%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> to determine whether two sequences are equal. In the first two examples, the method determines whether the compared sequences contain references to the same objects. In the third and fourth examples, the method compares the actual data of the objects within the sequences.  
+ The following code examples demonstrate how to use `SequenceEqual<TSource>(IEnumerable<TSource>, IEnumerable<TSource>)` to determine whether two sequences are equal. In the first two examples, the method determines whether the compared sequences contain references to the same objects. In the third and fourth examples, the method compares the actual data of the objects within the sequences.  
   
  In this example the sequences are equal.  
   
@@ -8784,8 +8801,9 @@ Dim doubles = From item As Integer In sequence
  If you want to compare the actual data of the objects in the sequences instead of just comparing their references, you have to implement the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface in your class. The following code example shows how to implement this interface in a helper class and provide <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods.  
   
  [!code-csharp[CSLINQEncapsulatedComparer#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#9)]  
-  
- After you implement this interface, you can use sequences of `ProductA` objects in the <xref:System.Linq.Enumerable.SequenceEqual%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> method, as shown in the following example.  
+ [!code-vb[CSLINQEncapsulatedComparer#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#9)]  
+
+ After you implement this interface, you can use sequences of `ProductA` objects in the `SequenceEqual<TSource>(IEnumerable<TSource>, IEnumerable<TSource>)` method, as shown in the following example:
   
  [!code-csharp[CSLINQEncapsulatedComparer#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#8)]
  [!code-vb[CSLINQEncapsulatedComparer#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#8)]  
@@ -8854,7 +8872,7 @@ Dim doubles = From item As Integer In sequence
  [!code-csharp[CSLINQCustomComparer#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#1)]
  [!code-vb[CSLINQCustomComparer#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#1)]  
   
- After you implement this comparer, you can use sequences of `Product` objects in the <xref:System.Linq.Enumerable.SequenceEqual%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29> method, as shown in the following example.  
+ After you implement this comparer, you can use sequences of `Product` objects in the <xref:System.Linq.Enumerable.SequenceEqual%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29> method, as shown in the following example:  
   
  [!code-csharp[CSLINQCustomComparer#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#8)]
  [!code-vb[CSLINQCustomComparer#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#8)]  
@@ -9236,7 +9254,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/f00eb172-3907-4c43-9745-d8546ab86234">Skip Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/skip-clause.md">Skip Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="SkipLast&lt;TSource&gt;">
@@ -9355,7 +9373,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/5dee8350-7520-4f1a-b00d-590cacd572d6">Skip While Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/skip-while-clause.md">Skip While Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="SkipWhile&lt;TSource&gt;">
@@ -9427,7 +9445,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/5dee8350-7520-4f1a-b00d-590cacd572d6">Skip While Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/skip-while-clause.md">Skip While Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Sum">
@@ -9499,7 +9517,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Decimal.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -9559,7 +9577,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -9620,7 +9638,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -9681,7 +9699,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -9744,7 +9762,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Decimal.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -9806,7 +9824,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -9869,7 +9887,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -9932,7 +9950,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -9992,7 +10010,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -10050,7 +10068,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;TSource&gt;">
@@ -10119,7 +10137,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Decimal.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;TSource&gt;">
@@ -10185,7 +10203,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;TSource&gt;">
@@ -10254,7 +10272,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;TSource&gt;">
@@ -10323,7 +10341,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;TSource&gt;">
@@ -10394,7 +10412,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Decimal.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;TSource&gt;">
@@ -10464,7 +10482,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;TSource&gt;">
@@ -10535,7 +10553,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;TSource&gt;">
@@ -10606,7 +10624,7 @@ Dim doubles = From item As Integer In sequence
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The sum is larger than <see cref="F:System.Int64.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;TSource&gt;">
@@ -10676,7 +10694,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;TSource&gt;">
@@ -10744,7 +10762,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="selector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb">Aggregate Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Take&lt;TSource&gt;">
@@ -10814,7 +10832,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/77bf87b2-1476-4456-957f-fee922fbad8c">Take Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/take-clause.md">Take Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="TakeLast&lt;TSource&gt;">
@@ -10931,7 +10949,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/db8f9f2f-fc9f-4a6c-b0b8-1bf048147e11">Take While Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/take-while-clause.md">Take While Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="TakeWhile&lt;TSource&gt;">
@@ -11001,7 +11019,7 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/db8f9f2f-fc9f-4a6c-b0b8-1bf048147e11">Take While Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/take-while-clause.md">Take While Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ThenBy&lt;TSource,TKey&gt;">
@@ -11089,8 +11107,8 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="keySelector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/21f87f48-d69d-4e95-9a52-6fec47b37e1f">orderby clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/fa911282-6b81-44c7-acfa-46b5bb93df75">Order By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/orderby-clause.md">orderby clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/order-by-clause.md">Order By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ThenBy&lt;TSource,TKey&gt;">
@@ -11240,8 +11258,8 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="keySelector" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/21f87f48-d69d-4e95-9a52-6fec47b37e1f">orderby clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/fa911282-6b81-44c7-acfa-46b5bb93df75">Order By Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/orderby-clause.md">orderby clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/order-by-clause.md">Order By Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ThenByDescending&lt;TSource,TKey&gt;">
@@ -12066,6 +12084,13 @@ Dim doubles = From item As Integer In sequence
       </AssemblyInfo>
       <Docs>
         <summary>Produces the set union of two sequences.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note-some.md)]
+
+]]></format>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="Union&lt;TSource&gt;">
@@ -12119,23 +12144,26 @@ Dim doubles = From item As Integer In sequence
   
  The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values of the types that implement the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface. To compare a custom data type, you need to implement this interface and provide your own <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods for the type.  
   
- When the object returned by this method is enumerated, <xref:System.Linq.Enumerable.Union%2A> enumerates `first` and `second` in that order and yields each element that has not already been yielded.  
+ When the object returned by this method is enumerated, `Union` enumerates `first` and `second` in that order and yields each element that has not already been yielded.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use <xref:System.Linq.Enumerable.Union%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> to obtain the union of two sequences of integers.  
+ The following code example demonstrates how to use `Union<TSource>(IEnumerable<TSource>, IEnumerable<TSource>)` to obtain the union of two sequences of integers.  
   
- [!code-csharp[System.Linq.Enumerable#109](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#109)]
+ [!code-csharp-interactive[System.Linq.Enumerable#109](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#109)]
  [!code-vb[System.Linq.Enumerable#109](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#109)]  
   
- If you want to compare sequences of objects of a custom data type, you have to implement the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface in a helperclass. The following code example shows how to implement this interface in a custom data type and provide <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods.  
+ If you want to compare sequences of objects of some custom data type, you have to implement the <xref:System.IEquatable%601> generic interface in a helper class. The following code example shows how to implement this interface in a custom data type and override <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods.
   
  [!code-csharp[CSLINQEncapsulatedComparer#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#9)]  
+ [!code-vb[CSLINQEncapsulatedComparer#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#9)]  
+
+ After you implement this interface, you can use sequences of `ProductA` objects in the `Union<TSource>(IEnumerable<TSource>, IEnumerable<TSource>)` method, as shown in the following example:  
   
- After you implement this interface, you can use sequences of `ProductA` objects in the <xref:System.Linq.Enumerable.Union%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%29> method, as shown in the following example.  
-  
- [!code-csharp[CSLINQEncapsulatedComparer#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#10)]  
+ [!code-csharp[CSLINQEncapsulatedComparer#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#10)]
+ [!code-vb[CSLINQEncapsulatedComparer#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#10)]
+
 [!code-csharp[CSLINQEncapsulatedComparer#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/CS/EncapsulatedComparer.cs#4)]
 [!code-vb[CSLINQEncapsulatedComparer#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQEncapsulatedComparer/VB/EncapsulatedComparer.vb#4)]  
   
@@ -12208,7 +12236,7 @@ Dim doubles = From item As Integer In sequence
  [!code-csharp[CSLINQCustomComparer#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#1)]
  [!code-vb[CSLINQCustomComparer#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#1)]  
   
- After you implement this comparer, you can use sequences of `Product` objects in the <xref:System.Linq.Enumerable.Union%2A> method, as shown in the following example.  
+ After you implement this comparer, you can use sequences of `Product` objects in the <xref:System.Linq.Enumerable.Union%2A> method, as shown in the following example:  
   
  [!code-csharp[CSLINQCustomComparer#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQCustomComparer/CS/CustomComparer.cs#2)]
  [!code-vb[CSLINQCustomComparer#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQCustomComparer/VB/CustomComparer.vb#2)]  
@@ -12293,8 +12321,8 @@ Dim doubles = From item As Integer In sequence
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/7f9bf952-7744-4f91-b676-cddb55d107c3">where clause (C# Reference)</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/48b5c2c5-3181-429c-8545-894296798c89">Where Clause (Visual Basic)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/keywords/where-clause.md">where clause (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/queries/where-clause.md">Where Clause (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Where&lt;TSource&gt;">

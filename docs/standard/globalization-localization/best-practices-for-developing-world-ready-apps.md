@@ -71,7 +71,7 @@ This section describes the best practices to follow when developing world-ready 
 
 11. For a complete description of creating and localizing resources, see [Resources in Applications](../../../docs/framework/resources/index.md).
 
-## Globalization Best Practices for ASP.NET Applications
+## Globalization best practices for ASP.NET applications
 
 1. Explicitly set the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> and <xref:System.Globalization.CultureInfo.CurrentCulture%2A> properties in your application. Do not rely on defaults.
 

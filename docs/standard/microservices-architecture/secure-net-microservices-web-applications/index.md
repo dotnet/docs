@@ -285,7 +285,7 @@ The JWT bearer authentication middleware can also support more advanced scenario
 - **Michell Anicas. An Introduction to OAuth 2** \
   [*https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2*](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
 
-- **AspNet.Security.OAuth.Providers** (GitHub repo for ASP.NET OAuth providers. \
+- **AspNet.Security.OAuth.Providers** (GitHub repo for ASP.NET OAuth providers) \
   [*https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src*](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src)
 
 - **Danny Strockis. Integrating Azure AD into an ASP.NET Core web app** \

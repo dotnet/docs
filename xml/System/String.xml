@@ -5512,7 +5512,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  [!code-csharp-interactive[System.String.Format#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format5.cs#5)]
  [!code-vb[System.String.Format#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format5.vb#5)]  
   
- You can also pass the objects to be formatted as an array rather than a an argument list.  
+ You can also pass the objects to be formatted as an array rather than as an argument list.  
   
  [!code-cpp[System.String.Format#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format_paramarray1.cpp#10)]
  [!code-csharp-interactive[System.String.Format#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format_paramarray1.cs#10)]

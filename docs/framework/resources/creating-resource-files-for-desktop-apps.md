@@ -1,5 +1,5 @@
 ---
-title: "Creating Resource Files for Desktop Apps"
+title: Create resource files for .NET apps
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -13,7 +13,7 @@ ms.assetid: 6c5ad891-66a0-4e7a-adcf-f41863ba6d8d
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Create Resource Files for Desktop Apps
+# Create resource files for .NET apps
 
 You can include resources, such as strings, images, or object data, in resources files to make them easily available to your application. The .NET Framework offers five ways to create resources files:
 
@@ -106,9 +106,11 @@ prompt=Enter your name:
 greeting=Hello, {0}!
 ```
 
- The text file is converted to a .resources file by using the following command:
+The text file is converted to a .resources file by using the following command:
 
- **resgen GreetingResources.txt**
+```console
+resgen GreetingResources.txt
+```
 
  The following example shows the source code for a console application that uses the .resources file to display messages to the user.
 

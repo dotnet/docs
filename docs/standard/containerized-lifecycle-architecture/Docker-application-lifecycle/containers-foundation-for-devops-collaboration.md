@@ -77,15 +77,15 @@ DevOps should be considered a journey, not a destination. It should be implement
 
 Here are some of the most important benefits provided by a solid DevOps workflow:
 
-- Deliver better-quality software, faster and with better compliance
+- Deliver better-quality software, faster and with better compliance.
 
-- Drive continuous improvement and adjustments earlier and more economically
+- Drive continuous improvement and adjustments earlier and more economically.
 
-- Increase transparency and collaboration among stakeholders involved in delivering and operating software
+- Increase transparency and collaboration among stakeholders involved in delivering and operating software.
 
-- Control costs and utilize provisioned resources more effectively while minimizing security risks
+- Control costs and utilize provisioned resources more effectively while minimizing security risks.
 
-- Plug and play well with many of your existing DevOps investments, including investments in open-source
+- Plug and play well with many of your existing DevOps investments, including investments in open-source.
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

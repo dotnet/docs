@@ -52,10 +52,10 @@ Sub Main()
       'Use "localhost" to specify the current computer or  
       'replace "localhost" with the IP address of the   
       'listening process.   
-      Dim TCP As New TcpClient("localhost", 11000)  
+      Dim tcp As New TcpClient("localhost", 11000)  
   
       'Create a network stream from the TCP connection.   
-      Dim NetStream As NetworkStream = TCP.GetStream()  
+      Dim NetStream As NetworkStream = tcp.GetStream()  
   
       'Create a new instance of the RijndaelManaged class  
       'and encrypt the stream.  
@@ -83,7 +83,7 @@ Sub Main()
       SWriter.Close()  
       CryptStream.Close()  
       NetStream.Close()  
-      TCP.Close()  
+      tcp.Close()  
    Catch  
       'Inform the user that an exception was raised.  
       Console.WriteLine("The connection failed.")  
@@ -108,10 +108,10 @@ public class main
          //Use "localhost" to specify the current computer or  
          //replace "localhost" with the IP address of the   
          //listening process.    
-         TcpClient TCP = new TcpClient("localhost",11000);  
+         TcpClient tcp = new TcpClient("localhost",11000);  
   
          //Create a network stream from the TCP connection.   
-         NetworkStream NetStream = TCP.GetStream();  
+         NetworkStream NetStream = tcp.GetStream();  
   
          //Create a new instance of the RijndaelManaged class  
          // and encrypt the stream.  
@@ -141,7 +141,7 @@ public class main
          SWriter.Close();  
          CryptStream.Close();  
          NetStream.Close();  
-         TCP.Close();  
+         tcp.Close();  
       }  
       catch  
       {  
@@ -186,7 +186,7 @@ Module Module1
         Dim EncryptedSymmetricIV() As Byte  
   
         'Create a new instance of the RSACryptoServiceProvider class.  
-        Dim RSA As New RSACryptoServiceProvider()  
+        Dim rsa As New RSACryptoServiceProvider()  
   
         'Create a new instance of the RSAParameters structure.  
         Dim RSAKeyInfo As New RSAParameters()  
@@ -196,14 +196,14 @@ Module Module1
         RSAKeyInfo.Exponent = Exponent  
   
         'Import key parameters into RSA.  
-        RSA.ImportParameters(RSAKeyInfo)  
+        rsa.ImportParameters(RSAKeyInfo)  
   
         'Create a new instance of the RijndaelManaged class.  
         Dim RM As New RijndaelManaged()  
   
         'Encrypt the symmetric key and IV.  
-        EncryptedSymmetricKey = RSA.Encrypt(RM.Key, False)  
-        EncryptedSymmetricIV = RSA.Encrypt(RM.IV, False)  
+        EncryptedSymmetricKey = rsa.Encrypt(RM.Key, False)  
+        EncryptedSymmetricIV = rsa.Encrypt(RM.IV, False)  
     End Sub  
   
 End Module  
@@ -234,7 +234,7 @@ class Class1
       byte[] EncryptedSymmetricIV;  
   
       //Create a new instance of the RSACryptoServiceProvider class.  
-      RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();  
+      RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();  
   
       //Create a new instance of the RSAParameters structure.  
       RSAParameters RSAKeyInfo = new RSAParameters();  
@@ -244,14 +244,14 @@ class Class1
       RSAKeyInfo.Exponent = Exponent;  
   
       //Import key parameters into RSA.  
-      RSA.ImportParameters(RSAKeyInfo);  
+      rsa.ImportParameters(RSAKeyInfo);  
   
       //Create a new instance of the RijndaelManaged class.  
       RijndaelManaged RM = new RijndaelManaged();  
   
       //Encrypt the symmetric key and IV.  
-      EncryptedSymmetricKey = RSA.Encrypt(RM.Key, false);  
-      EncryptedSymmetricIV = RSA.Encrypt(RM.IV, false);  
+      EncryptedSymmetricKey = rsa.Encrypt(RM.Key, false);  
+      EncryptedSymmetricIV = rsa.Encrypt(RM.IV, false);  
    }  
 }  
 ```  

@@ -328,7 +328,7 @@ In general, do not make any assumptions about the values of specific <xref:Syste
 
 - Individual property values are subject to change and revision over time, as data is corrected, better data becomes available, or culture-specific conventions change.
 
-- Individual property values may vary across versions of the .NET Framework or operating system versions.
+- Individual property values may vary across versions of .NET or operating system versions.
 
 - .NET supports replacement cultures. This makes it possible to define a new custom culture that either supplements existing standard cultures or completely replaces an existing standard culture.
 

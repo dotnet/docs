@@ -331,7 +331,7 @@ In general, do not make any assumptions about the values of specific <xref:Syste
 
 - .NET supports replacement cultures. This makes it possible to define a new custom culture that either supplements existing standard cultures or completely replaces an existing standard culture.
 
-- The user can customize culture-specific settings by using the **Region and Language** app in Control Panel. When you instantiate a <xref:System.Globalization.CultureInfo> object, you can determine whether it reflects these user customizations by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor. Typically, for end-user apps, you should respect user preferences so that the user is presented with data in a format that he or she expects.
+- On Windows systems, the user can customize culture-specific settings by using the **Region and Language** app in Control Panel. When you instantiate a <xref:System.Globalization.CultureInfo> object, you can determine whether it reflects these user customizations by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor. Typically, for end-user apps, you should respect user preferences so that the user is presented with data in a format that he or she expects.
 
 ## See also
 

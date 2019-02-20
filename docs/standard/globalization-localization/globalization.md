@@ -30,7 +30,7 @@ The handling of characters and strings is a central focus of globalization, beca
 
 ### Use Unicode internally
 
-By default, the .NET Framework uses Unicode strings. A Unicode string consists of zero, one, or more <xref:System.Char> objects, each of which represents a UTF-16 code unit. There is a Unicode representation for almost every character in every character set in use throughout the world.
+By default, .NET uses Unicode strings. A Unicode string consists of zero, one, or more <xref:System.Char> objects, each of which represents a UTF-16 code unit. There is a Unicode representation for almost every character in every character set in use throughout the world.
 
 Many applications and operating systems, including the Windows operating system, can use also use code pages to represent character sets. Code pages typically contain the standard ASCII values from 0x00 through 0x7F and map other characters to the remaining values from 0x80 through 0xFF. The interpretation of values from 0x80 through 0xFF depends on the specific code page. Because of this, you should avoid using code pages in a globalized app if possible.
 

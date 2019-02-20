@@ -56,7 +56,7 @@ name2=value2
 
  String resources appear as *name/value* pairs, where *name* is a string that identifies the resource, and *value* is the resource string that is returned when you pass *name* to a resource retrieval method such as <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType>. *name* and *value* must be separated by an equal sign (=). For example:
 
-```
+```text
 FileMenuName=File
 EditMenuName=Edit
 ViewMenuName=View

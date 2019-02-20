@@ -19,7 +19,7 @@ In microservice scenarios, authentication is typically handled centrally. If you
 
 **Figure 9-1**. Centralized authentication with an API Gateway
 
-If services can be accessed directly, an authentication service like Azure Active Directory or a dedicated authentication microservice acting as a security token service (STS) can be used to authenticate users. Trust decisions are shared between services with security tokens or cookies. (These tokens can be shared between applications, if needed, in ASP.NET Core with [data protection services](/aspnet/core/security/cookie-sharing).) This pattern is illustrated in Figure 9-2.
+If services can be accessed directly, an authentication service like Azure Active Directory or a dedicated authentication microservice acting as a security token service (STS) can be used to authenticate users. Trust decisions are shared between services with security tokens or cookies. (These tokens can be shared between ASP.NET Core applications, if needed, by implementing [cookie sharing](/aspnet/core/security/cookie-sharing).) This pattern is illustrated in Figure 9-2.
 
 ![When microservices are accessed directly, trust, that includes authentication and authorization, is handled by a security token issued by a dedicated microservice, shared between microservices.](./media/image2.png)
 
@@ -271,7 +271,7 @@ The JWT bearer authentication middleware can also support more advanced scenario
 ## Additional resources
 
 - **Sharing cookies between applications** \
-  [*https://docs.microsoft.com/aspnet/core/security/cookie-sharing\*](/aspnet/core/security/cookie-sharing)
+  [*https://docs.microsoft.com/aspnet/core/security/cookie-sharing*](/aspnet/core/security/cookie-sharing)
 
 - **Introduction to Identity** \
   [*https://docs.microsoft.com/aspnet/core/security/authentication/identity*](/aspnet/core/security/authentication/identity)

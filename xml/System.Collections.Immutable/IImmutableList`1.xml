@@ -40,11 +40,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you add or remove items from an <xref:System.Collections.Immutable.IImmutableList%601>, a copy of the original list is created, with the changes applied.. Incremental changes to a list share as much memory as possible with earlier versions of a list and enable garbage collection to clean up any unique list data that is no longer being referenced.  
+
+When you add or remove items from an <xref:System.Collections.Immutable.IImmutableList%601>, a copy of the original list is created, with the changes applied. Incremental changes to a list share as much memory as possible with earlier versions of a list and enable garbage collection to clean up any unique list data that is no longer being referenced.  
   
- To create a new list, use the Create method.  
-  
- The <xref:System.Collections.Immutable.IImmutableList%601> has no public constructor, as this would create an empty immutable list. You should create a new list using the Create method. You can add new items to a copy of the original list using the <xref:System.Collections.Immutable.ImmutableList%601.Add%2A>, and <xref:System.Collections.Immutable.ImmutableList%601.AddRange%2A> methods.  
+For information on creating an `IImmutableList<T>` implementation, see <xref:System.Collections.Immutable.ImmutableList%601?displayProperty=nameWithType>. 
   
  ]]></format>
     </remarks>

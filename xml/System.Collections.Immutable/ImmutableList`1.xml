@@ -65,8 +65,9 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- When you add or remove items from an immutable list, a copy of the original list is made with the items added or removed, and the original list is unchanged.  
+## Remarks
+
+`ImmutableList<T>` has no public constructor; you begin by retrieving an empty `ImmutableList<T>` by using the <xref:System.Collections.Immutable.ImmutableList%601.Empty?displayProperty=nameWithType>. You can then call methods, such as <xref:System.Collections.Immutable.ImmutableList%601.Add%2A> and <xref:System.Collections.Immutable.ImmutableList%601.AddRange%2A>, to populate the collection. Note that these methods return a new object. When you add or remove items from an immutable list, a copy of the original list is made with the items added or removed, and the original list is unchanged.  
   
  ]]></format>
     </remarks>

@@ -32,6 +32,8 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-doc](doc-compiler-option.md)|Specifies an XML Documentation file to generate.|
 |-embed|Embed all source files in the PDB.|
 |-embed:\<file list>|Embed specific files in the PDB.|
+|-errorendlocation|Output line and column of the end location of each error.|
+|-errorlog:\<file>|Specify a file to log all compiler and analyzer diagnostics.|
 |[-errorreport](errorreport-compiler-option.md)|Specifies how to handle internal compiler errors: prompt, send, or none. The default is none.|
 |[-filealign](filealign-compiler-option.md)|Specifies the alignment used for output file sections.|
 |[-fullpaths](fullpaths-compiler-option.md)|Causes the compiler to generate fully qualified paths.|
@@ -64,12 +66,14 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-reference](reference-compiler-option.md)|References metadata from the specified assembly files.|
 |[-refout](refout-compiler-option.md)|Generate a reference assembly in addition to the primary assembly.|
 |[-refonly](refonly-compiler-option.md)|Generate a reference assembly instead of a primary assembly.|
+|-reportanalyzer|Report additional analyzer information, such as execution time.|
 |[-resource](resource-compiler-option.md)|Embeds the specified resource.|
 |-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
 |[-target](target-compiler-option.md)|Specifies the format of the output file by using one of four options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md),  [-target:winmdobj](target-winmdobj-compiler-option.md).|
 |[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../../../csharp/language-reference/keywords/unsafe.md) code.|
 |[-utf8output](utf8output-compiler-option.md)|Outputs compiler messages in UTF-8 encoding.|
+|-version|Display the compiler version number and exit.|
 |[-warn](warn-compiler-option.md)|Sets the warning level (0-4).|
 |[-warnaserror](warnaserror-compiler-option.md)|Reports specific warnings as errors.|
 |[-win32icon](win32icon-compiler-option.md)|Uses this icon for the output.|

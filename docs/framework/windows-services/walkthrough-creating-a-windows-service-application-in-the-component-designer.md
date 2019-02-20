@@ -481,4 +481,4 @@ You can use an installer to create an event log when the application is installe
 - [Windows service applications](../../../docs/framework/windows-services/index.md)
 - [Introduction to Windows service applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
 - [How to: Debug Windows service applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)
-- [Services (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms685141.aspx)
+- [Services (Windows)](/windows/desktop/Services/services)

@@ -39,7 +39,7 @@ If you have designed and developed your application with localization in mind, a
 <a name="culture"></a>
 ## Handle culture-sensitive features
 
-The .NET Framework does not provide programmatic support in a number of areas that vary widely by culture. In most cases, you have to write custom code to handle feature areas like the following:
+.NET does not provide programmatic support in a number of areas that vary widely by culture. In most cases, you have to write custom code to handle feature areas like the following:
 
 - Addresses
 

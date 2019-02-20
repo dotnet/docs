@@ -69,12 +69,10 @@ For more information on file path formats on Windows, see [File path formats on 
   
  Because all these operations are performed on strings, it is impossible to verify that the results are valid in all scenarios. For example, the <xref:System.IO.Path.GetExtension%2A> method parses a string that you pass to it and returns the extension from that string. However, this does not mean that a file with that extension exists on the disk.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).   
   
 ## Examples  
- The following code example demonstrates some of the main members of the `Path` class.  
+ The following example demonstrates some of the main members of the `Path` class.  
   
  [!code-cpp[path class#1](~/samples/snippets/cpp/VS_Snippets_CLR/Path Class/CPP/path class.cpp#1)]
  [!code-csharp[path class#1](~/samples/snippets/csharp/VS_Snippets_CLR/Path Class/CS/path class.cs#1)]
@@ -86,6 +84,7 @@ For more information on file path formats on Windows, see [File path formats on 
     <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
     <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
     <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
+    <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
   </Docs>
   <Members>
     <Member MemberName="AltDirectorySeparatorChar">
@@ -123,18 +122,17 @@ For more information on file path formats on Windows, see [File path formats on 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The character stored in this field cannot be in <xref:System.IO.Path.InvalidPathChars>. This field can be set to the same value as <xref:System.IO.Path.DirectorySeparatorChar>. `AltDirectorySeparatorChar` and <xref:System.IO.Path.DirectorySeparatorChar> are both valid for separating directory levels in a path string.  
+ 
+This field can have the same value as <xref:System.IO.Path.DirectorySeparatorChar>. `AltDirectorySeparatorChar` and <xref:System.IO.Path.DirectorySeparatorChar> are both valid for separating directory levels in a path string.  
   
- The value of this field is a slash ('/') on Windows, UNIX and Macintosh operating systems.  
-  
-   
+The value of this field is a slash ('/') on both Windows and Unix-based operating systems.  
   
 ## Examples  
- The following code example demonstrates a use of the `AltDirectorySeparatorChar` field.  
-  
- [!code-cpp[System.IO.Path Members#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#13)]
- [!code-csharp[System.IO.Path Members#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#13)]
- [!code-vb[System.IO.Path Members#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Path Members/VB/pathmembers.vb#13)]  
+
+The following example displays <xref:System.IO.Path> field values on Windows and on Unix-based systems. Note that Windows supports either the forward slash (which is returned by the <xref:System.IO.Path.AltDirectorySeparatorChar> field) or the backslash (which is returned by the <xref:System.IO.Path.DirectorySeparatorChar> field) as path separator characters, while Unix-based systems support only the forward slash.
+
+[!code-csharp[DirectorySeparatorChar](~/samples/snippets/csharp/api/system.io/path/directoryseparatorchar/program.cs)]
+[!code-vb[DirectorySeparatorChar](~/samples/snippets/visualbasic/api/system.io/path/directoryseparatorchar/program.vb)]
   
  ]]></format>
         </remarks>
@@ -207,7 +205,7 @@ For more information on file path formats on Windows, see [File path formats on 
    
   
 ## Examples  
- The following code example demonstrates a use of the `ChangeExtension` method.  
+ The following example demonstrates a use of the `ChangeExtension` method.  
   
  [!code-cpp[System.IO.Path Members#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#1)]
  [!code-csharp[System.IO.Path Members#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#1)]
@@ -217,6 +215,7 @@ For more information on file path formats on Windows, see [File path formats on 
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -232,6 +231,18 @@ For more information on file path formats on Windows, see [File path formats on 
       </AssemblyInfo>
       <Docs>
         <summary>Combines strings into a path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+ 
+## Remarks  
+
+This method is intended to concatenate individual strings into a single string that represents a file path. However, if an argument other than the first contains a rooted path, any previous path components are ignored, and the returned string begins with that rooted path component. As an alternative to the `Combine` method, consider using the <xref:System.IO.Path.Join%2A> or <xref:System.IO.Path.TryJoin%2A> methods.
+
+> [!IMPORTANT]
+> This method assumes that the first argument is an absolute path and that the following argument or arguments are relative paths. If this is not the case, and particularly if any subsequent arguments are strings input by the user, call the <xref:System.IO.Path.Join%2A> or <xref:System.IO.Path.TryJoin%2A> method instead.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="Combine">
@@ -278,16 +289,20 @@ For more information on file path formats on Windows, see [File path formats on 
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- `paths` should be an array of the parts of the path to combine. If the one of the subsequent paths is an absolute path, then the combine operation resets starting with that absolute path, discarding all previous combined paths.  
-  
+## Remarks
+
+`paths` should be an array of the parts of the path to combine. If the one of the subsequent paths is an absolute path, then the combine operation resets starting with that absolute path, discarding all previous combined paths.  
+
+If any element in `paths` but the last one is not a drive and does not end with either the <xref:System.IO.Path.DirectorySeparatorChar> or the <xref:System.IO.Path.AltDirectorySeparatorChar> character, the `Combine` method adds a <xref:System.IO.Path.DirectorySeparatorChar> character between that element and the next one. Note that, if the element ends in a path separator character that is not appropriate for the target platform, the `Combine` method preserves the original path separator character and appends a supported one. The following example compares the result on Windows and Unix-based systems when the backslash is used as a path separator character.
+
+[!code-csharp[Combine and path separator characters](~/samples/snippets/csharp/api/system.io/path/combine/program.cs#1)]
+[!code-vb[Combine and path separator characters](~/samples/snippets/visualbasic/api/system.io/path/combine/program.vb#1)]  
+
  Zero-length strings are omitted from the combined path.  
   
  The parameters are not parsed if they have white space.  
   
  Not all invalid characters for directory and file names are interpreted as unacceptable by the `Combine` method, because you can use these characters for search wildcard characters. For example, while `Path.Combine("c:\\", "*.txt")` might be invalid if you were to create a file from it, it is valid as a search string. It is therefore successfully interpreted by the `Combine` method.  
-  
-   
   
 ## Examples  
  The following example combines an array of strings into a path.  
@@ -299,6 +314,7 @@ For more information on file path formats on Windows, see [File path formats on 
         </remarks>
         <exception cref="T:System.ArgumentException">One of the strings in the array contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">One of the strings in the array is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="Combine">
@@ -343,8 +359,11 @@ For more information on file path formats on Windows, see [File path formats on 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `path1` is not a drive reference (that is, "C:" or "D:") and does not end with a valid separator character as defined in <xref:System.IO.Path.DirectorySeparatorChar>, <xref:System.IO.Path.AltDirectorySeparatorChar>, or <xref:System.IO.Path.VolumeSeparatorChar>, <xref:System.IO.Path.DirectorySeparatorChar> is appended to `path1` before concatenation.  
+ If `path1` is not a drive reference (that is, "C:" or "D:") and does not end with a valid separator character as defined in <xref:System.IO.Path.DirectorySeparatorChar>, <xref:System.IO.Path.AltDirectorySeparatorChar>, or <xref:System.IO.Path.VolumeSeparatorChar>, <xref:System.IO.Path.DirectorySeparatorChar> is appended to `path1` before concatenation. Note that if `path1` ends in a path separator character that is not appropriate for the target platform, the `Combine` method preserves the original path separator character and appends a supported one. The following example compares the result on Windows and Unix-based systems when the backslash is used as a path separator character.  
   
+[!code-csharp[Combine and path separator characters](~/samples/snippets/csharp/api/system.io/path/combine/program.cs#2)]
+[!code-vb[Combine and path separator characters](~/samples/snippets/visualbasic/api/system.io/path/combine/program.vb#2)]  
+
  If `path2` does not include a root (for example, if `path2` does not start with a separator character or a drive specification), the result is a concatenation of the two paths, with an intervening separator character. If `path2` includes a root, `path2` is returned.  
   
  The parameters are not parsed if they have white space. Therefore, if `path2` includes white space (for example, " \file.txt "), the <xref:System.IO.Path.Combine%2A> method appends `path2` to `path1` instead of returning only `path2`.  
@@ -356,7 +375,7 @@ For more information on file path formats on Windows, see [File path formats on 
    
   
 ## Examples  
- The following code example demonstrates using the `Combine` method on a Windows-based desktop platform.  
+ The following example demonstrates using the `Combine` method on a Windows-based desktop platform.  
   
  [!code-cpp[pathcombine#1](~/samples/snippets/cpp/VS_Snippets_CLR/pathcombine/CPP/pathcombine.cpp#1)]
  [!code-csharp[pathcombine#1](~/samples/snippets/csharp/VS_Snippets_CLR/pathcombine/CS/pathcombine.cs#1)]
@@ -368,6 +387,7 @@ For more information on file path formats on Windows, see [File path formats on 
           <paramref name="path1" /> or <paramref name="path2" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path1" /> or <paramref name="path2" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -419,8 +439,11 @@ For more information on file path formats on Windows, see [File path formats on 
   
  Zero-length strings are omitted from the combined path.  
   
- If `path1` is not a drive reference (that is, "C:" or "D:") and does not end with a valid separator character as defined in <xref:System.IO.Path.DirectorySeparatorChar>, <xref:System.IO.Path.AltDirectorySeparatorChar>, or <xref:System.IO.Path.VolumeSeparatorChar>, <xref:System.IO.Path.DirectorySeparatorChar> is appended to `path1` before concatenation.  
-  
+ If `path1` or `path2` is not a drive reference (that is, "C:" or "D:") and does not end with a valid separator character as defined in <xref:System.IO.Path.DirectorySeparatorChar>, <xref:System.IO.Path.AltDirectorySeparatorChar>, or <xref:System.IO.Path.VolumeSeparatorChar>, <xref:System.IO.Path.DirectorySeparatorChar> is appended to `path1` or `path2` before concatenation. Note that if `path1` or `path2` ends in a path separator character that is not appropriate for the target platform, the `Combine` method preserves the original path separator character and appends a supported one. The following example compares the result on Windows and Unix-based systems when the backslash is used as a path separator character. 
+
+[!code-csharp[Combine and path separator characters](~/samples/snippets/csharp/api/system.io/path/combine/program.cs#3)]
+[!code-vb[Combine and path separator characters](~/samples/snippets/visualbasic/api/system.io/path/combine/program.vb#3)]  
+
  If `path2` does not include a root (for example, if `path2` does not start with a separator character or a drive specification), the result is a concatenation of the two paths, with an intervening separator character. If `path2` includes a root, `path2` is returned.  
   
  The parameters are not parsed if they have white space. Therefore, if `path2` includes white space (for example, " \file.txt "), the <xref:System.IO.Path.Combine%2A> method appends `path2` to `path1`.  
@@ -441,6 +464,7 @@ For more information on file path formats on Windows, see [File path formats on 
           <paramref name="path1" />, <paramref name="path2" />, or <paramref name="path3" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path1" />, <paramref name="path2" />, or <paramref name="path3" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="Combine">
@@ -489,7 +513,10 @@ For more information on file path formats on Windows, see [File path formats on 
   
  Zero-length strings are omitted from the combined path.  
   
- If `path1` is not a drive reference (that is, "C:" or "D:") and does not end with a valid separator character as defined in <xref:System.IO.Path.DirectorySeparatorChar>, <xref:System.IO.Path.AltDirectorySeparatorChar>, or <xref:System.IO.Path.VolumeSeparatorChar>, <xref:System.IO.Path.DirectorySeparatorChar> is appended to `path1` before concatenation.  
+ If `path1`, `path2`, or `path3` is not a drive reference (that is, "C:" or "D:") and does not end with a valid separator character as defined in <xref:System.IO.Path.DirectorySeparatorChar>, <xref:System.IO.Path.AltDirectorySeparatorChar>, or <xref:System.IO.Path.VolumeSeparatorChar>, <xref:System.IO.Path.DirectorySeparatorChar> is appended to it before concatenation. Note that if `path1`, `path2`, or `path3` ends in a path separator character that is not appropriate for the target platform, the `Combine` method preserves the original path separator character and appends a supported one. The following example compares the result on Windows and Unix-based systems when the backslash is used as a path separator character. 
+
+[!code-csharp[Combine and path separator characters](~/samples/snippets/csharp/api/system.io/path/combine/program.cs#4)]
+[!code-vb[Combine and path separator characters](~/samples/snippets/visualbasic/api/system.io/path/combine/program.vb#4)]   
   
  If `path2` does not include a root (for example, if `path2` does not start with a separator character or a drive specification), the result is a concatenation of the two paths, with an intervening separator character. If `path2` includes a root, `path2` is returned.  
   
@@ -511,6 +538,7 @@ For more information on file path formats on Windows, see [File path formats on 
           <paramref name="path1" />, <paramref name="path2" />, <paramref name="path3" />, or <paramref name="path4" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path1" />, <paramref name="path2" />, <paramref name="path3" />, or <paramref name="path4" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="DirectorySeparatorChar">
@@ -547,21 +575,41 @@ For more information on file path formats on Windows, see [File path formats on 
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The character stored in this field cannot be in <xref:System.IO.Path.InvalidPathChars>. <xref:System.IO.Path.AltDirectorySeparatorChar> and `DirectorySeparatorChar` are both valid for separating directory levels in a path string.  
+## Remarks
+
+<xref:System.IO.Path.AltDirectorySeparatorChar> and `DirectorySeparatorChar` are both valid for separating directory levels in a path string.  
   
-   
-  
+When you are using .NET Core to develop applications that run on multiple platforms:
+
+- If you prefer to hard-code the directory separator character, you should use the forward slash (`/`) character. It is the only recognized directory separator character on Unix systems, as the output from the example shows, and is the <xref:System.IO.Path.AltDirectorySeparatorChar> on Windows.
+
+- Use string concatenation to dynamically retrieve the path separator character at runtime and incorporate it into file system paths. For example, 
+
+   ```csharp
+   separator = Path.DirectorySeparatorChar;
+   path = $"{separator}users{separator}user1{separator}";
+   ```
+   ```vb
+   separator = Path.DirectorySeparatorChar;
+   path = $"{separator}users{separator}user1{separator}";
+   ``` 
+   You can also retrieve the value from the <xref:System.IO.Path.AltDirectorySeparatorChar> property, since it is the same on both Windows and Unx-based systems.
+
+- Retrieve the <xref:System.IO.Path.AltDirectorySeparatorChar> property
+
+If your application is not cross-platform, you can use the separator appropriate for your system.
+
 ## Examples  
- The following code example demonstrates the use of the `DirectorySeparatorChar` field.  
-  
- [!code-cpp[System.IO.Path Members#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#13)]
- [!code-csharp[System.IO.Path Members#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#13)]
- [!code-vb[System.IO.Path Members#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Path Members/VB/pathmembers.vb#13)]  
+
+The following example displays <xref:System.IO.Path> field values on Windows and on Unix-based systems. Note that Windows supports either the forward slash (which is returned by the <xref:System.IO.Path.AltDirectorySeparatorChar> field) or the backslash (which is returned by the <xref:System.IO.Path.DirectorySeparatorChar> field) as path separator characters, while Unix-based systems support only the forward slash.  
+
+[!code-csharp[DirectorySeparatorChar](~/samples/snippets/csharp/api/system.io/path/directoryseparatorchar/program.cs)]
+[!code-vb[DirectorySeparatorChar](~/samples/snippets/visualbasic/api/system.io/path/directoryseparatorchar/program.vb)]
   
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
@@ -592,9 +640,10 @@ For more information on file path formats on Windows, see [File path formats on 
       </Parameters>
       <Docs>
         <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the directory information for the specified path represented by a character span.</summary>
+        <returns>Directory information for <paramref name="path" />, or an empty span if <paramref name="path" /> is <see langword="null" />, an empty span, or a root (such as \, C:, or \\server\share).</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryName">
@@ -650,7 +699,7 @@ For more information on file path formats on Windows, see [File path formats on 
    
   
 ## Examples  
- The following code example demonstrates using the `GetDirectoryName` method on a Windows-based desktop platform.  
+ The following example demonstrates using the `GetDirectoryName` method on a Windows-based desktop platform.  
   
  [!code-cpp[System.IO.Path Members#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#3)]
  [!code-csharp[System.IO.Path Members#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#3)]
@@ -668,6 +717,7 @@ For more information on file path formats on Windows, see [File path formats on 
           </block>  
   
  The <paramref name="path" /> parameter is longer than the system-defined maximum length.</exception>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -698,10 +748,17 @@ For more information on file path formats on Windows, see [File path formats on 
         <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">The file path from which to get the extension.</param>
+        <summary>Returns the extension of a file path that is represented by a read-only character span.</summary>
+        <returns>The extension of the specified path (including the period, "."), or <see cref="P:System.ReadOnlySpan`1.Empty" /> if <paramref name="path" /> does not have extension information.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+This method obtains the extension of `path` by searching `path` for a period ("."), starting from the last character in the read-only span and continuing toward its first character. If a period is found before a <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar> character, the returned read-only span contains the period and the characters after it; otherwise, <xref:System.ReadOnlySpan%601.Empty?displayProperty=nameWithType> is returned.  
+
+         ]]></format>
+         </remarks>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="GetExtension">
@@ -745,14 +802,13 @@ For more information on file path formats on Windows, see [File path formats on 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The extension of `path` is obtained by searching `path` for a period (.), starting with the last character in path and continuing toward the start of path. If a period is found before a <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar> character, the returned string contains the period and the characters after it; otherwise, <xref:System.String.Empty> is returned.  
+
+This method obtains the extension of `path` by searching `path` for a period (.), starting with the last character in `path` and continuing toward the first character. If a period is found before a <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar> character, the returned string contains the period and the characters after it; otherwise, <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).
+ 
 ## Examples  
- The following code example demonstrates using the `GetExtension` method on a Windows-based desktop platform.  
+ The following example demonstrates using the `GetExtension` method on a Windows-based desktop platform.  
   
  [!code-cpp[System.IO.Path Members#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#4)]
  [!code-csharp[System.IO.Path Members#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#4)]
@@ -762,6 +818,7 @@ For more information on file path formats on Windows, see [File path formats on 
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -792,10 +849,17 @@ For more information on file path formats on Windows, see [File path formats on 
         <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">A read-only span that contains the path from which to obtain the file name and extension.</param>
+        <summary>Returns the file name and extension of a file path that is represented by a read-only character span.</summary>
+        <returns>The characters after the last directory separator character in <paramref name="path" />.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The returned read-only span contains the characters of the path that follow the last separator in `path`. If the last character in `path` is a volume or directory separator character, the method returns <xref:System.ReadOnlySpan%601.Empty?displayProperty=nameWithtype>. If `path` contains no separator character, the method returns `path`.
+
+         ]]></format>
+         </remarks>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileName">
@@ -834,23 +898,24 @@ For more information on file path formats on Windows, see [File path formats on 
       <Docs>
         <param name="path">The path string from which to obtain the file name and extension.</param>
         <summary>Returns the file name and extension of the specified path string.</summary>
-        <returns>The characters after the last directory character in <paramref name="path" />. If the last character of <paramref name="path" /> is a directory or volume separator character, this method returns <see cref="F:System.String.Empty" />. If <paramref name="path" /> is <see langword="null" />, this method returns <see langword="null" />.</returns>
+        <returns>The characters after the last directory separator character in <paramref name="path" />. If the last character of <paramref name="path" /> is a directory or volume separator character, this method returns <see cref="F:System.String.Empty" />. If <paramref name="path" /> is <see langword="null" />, this method returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned value is `null` if the file path is `null`.  
+
+The returned value is `null` if the file path is `null`.  
   
- The separator characters used to determine the start of the file name are <xref:System.IO.Path.DirectorySeparatorChar> and <xref:System.IO.Path.AltDirectorySeparatorChar>.  
- 
- Because `'\\'` is a legal file name on Unix, `GetFileName` running under Unix-based platforms cannot correctly return the file name from a Windows-based path like `C:\mydir\myfile.ext` but `GetFileName` running under Windows-based platforms can correctly return the file name from a Unix-based path like `/tmp/myfile.ext`, so the behavior `GetFileName` will not be strictly the same on Unix-based and Windows-based platforms.
- 
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+The separator characters used to determine the start of the file name are <xref:System.IO.Path.DirectorySeparatorChar> and <xref:System.IO.Path.AltDirectorySeparatorChar>.  
+
+Because *\\* is a legal file name on Unix, `GetFileName` running under Unix-based platforms cannot correctly return the file name from a Windows=based path like *C:\\mydir\\myfile.ext*, but `GetFileName` running under Windows-based platforms can correctly return the file name from a Unix-based path like */tmp/myfile.ext*, so the behavior of the `GetFileName` method is not strictly the same on Unix-based and Windows-based platforms.
+
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
 ## Examples  
- The following code example demonstrates the behavior of the `GetFileName` method on a Windows-based desktop platform.  
+ The following example demonstrates the behavior of the `GetFileName` method on a Windows-based desktop platform.  
   
  [!code-cpp[System.IO.Path Members#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#5)]
  [!code-csharp[System.IO.Path Members#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#5)]
@@ -860,6 +925,7 @@ For more information on file path formats on Windows, see [File path formats on 
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -890,10 +956,11 @@ For more information on file path formats on Windows, see [File path formats on 
         <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="path">A read-only span that contains the path from which to obtain the file name without the extension.</param>
+        <summary>Returns the file name without the extension of a file path that is represented by a read-only character span.</summary>
+        <returns>The characters in the read-only span returned by <see cref="M:System.IO.Path.GetFileName(System.ReadOnlySpan{System.Char})" />, minus the last period (.) and all characters following it.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileNameWithoutExtension">
@@ -932,7 +999,7 @@ For more information on file path formats on Windows, see [File path formats on 
       <Docs>
         <param name="path">The path of the file.</param>
         <summary>Returns the file name of the specified path string without the extension.</summary>
-        <returns>The string returned by <see cref="M:System.IO.Path.GetFileName(System.String)" />, minus the last period (.) and all characters following it.</returns>
+        <returns>The string returned by <see cref="M:System.IO.Path.GetFileName(System.ReadOnlySpan{System.Char})" />, minus the last period (.) and all characters following it.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -944,7 +1011,7 @@ For more information on file path formats on Windows, see [File path formats on 
    
   
 ## Examples  
- The following code example demonstrates a use of the `GetFileNameWithoutExtension` method.  
+ The following example demonstrates a use of the `GetFileNameWithoutExtension` method.  
   
  [!code-cpp[System.IO.Path Members#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#6)]
  [!code-csharp[System.IO.Path Members#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#6)]
@@ -954,6 +1021,7 @@ For more information on file path formats on Windows, see [File path formats on 
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -1007,17 +1075,20 @@ For more information on file path formats on Windows, see [File path formats on 
   
  The absolute path includes all information required to locate a file or directory on a system.  
   
- The file or directory specified by `path` is not required to exist. For example, if c:\temp\newdir is the current directory, calling `GetFullPath` on a file name such as test.txt returns c:\temp\newdir\test.txt. The file need not exist.  
-  
+ The file or directory specified by `path` is not required to exist. For example, if *c:\temp\newdir* is the current directory, calling `GetFullPath` on a file name such as *test.txt* returns *c:\temp\newdir\test.txt*. The file need not exist.  
+
+> [!IMPORTANT]
+> If `path` is a relative path, this overload returns a fully qualified path that can be based on the current drive and current directory. The current drive and current directory can change at any time as an application executes. As a result, the path returned by this overload cannot be determined in advance. To return a deterministic path, call the <xref:System.IO.Path.GetFullPath(System.String,System.String)> overload. You can also call the <xref:System.IO.Path.IsPathFullyQualified%2A> method to determine whether a path is fully qualified or relative and therefore whether a call to `GetFullPath` is necessary.
+
  However, if `path` does exist, the caller must have permission to obtain path information for `path`. Note that unlike most members of the <xref:System.IO.Path> class, this method accesses the file system.  
   
- This method uses current directory and current volume information to fully qualify `path`. If you specify a file name only in `path`, `GetFullPath` returns the fully qualified path of the current directory.  
+ This method uses the current directory and current volume information to fully qualify `path`. If you specify a file name only in `path`, `GetFullPath` returns the fully qualified path of the current directory.  
   
  If you pass in a short file name, it is expanded to a long file name.  
   
- If a path contains no significant characters it is invalid unless it contains one or more "." characters followed by any number of spaces, then it will be parsed as either "." or "..".  
+ If a path contains no significant characters, it is invalid unless it contains one or more "." characters followed by any number of spaces; then it will be parsed as either "." or "..".  
 
-  .NET Core 1.1 and later versions and .NET Framework 4.6.2 and later versions also support paths that include device names, such as "\\?\C:\".
+.NET Core 1.1 and later versions and .NET Framework 4.6.2 and later versions also support paths that include device names, such as "\\?\C:\".
 
 For more information on file path formats on Windows, see [File path formats on Windows systems](~/docs/standard/io/file-path-formats.md). For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).
   
@@ -1043,6 +1114,7 @@ For more information on file path formats on Windows, see [File path formats on 
           <paramref name="path" /> contains a colon (":") that is not part of a volume identifier (for example, "c:\\").</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path.</permission>
+        <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -1074,11 +1146,36 @@ For more information on file path formats on Windows, see [File path formats on 
         <Parameter Name="basePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="basePath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">A relative path to concatenate to <see paramref="basePath" />.</param>
+        <param name="basePath">The beginning of a fully qualified path.</param>
+        <summary>Returns an absolute path from a fully qualified base path and a relative path.</summary>
+        <returns>The absolute path.</returns>
+        <remarks>
+
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+If `path` is an empty path, the method returns `basePath`. If `path` is a fully qualified path, the method passes `path` to the <xref:System.IO.Path.GetFullPath(System.String)> method and returns the result.
+
+Use this method to return a deterministic path based on a specified volume and rooted directory when you're using relative paths. Using a predefined `basePath` rather than one based on the current drive directory guards against unwanted file paths caused by unexpected changes in the current drive and directory. 
+
+## Example
+
+The following example defines a variable, `basePath`, to represent an application's current directory. It then passes it to the `GetFullPath` method to get a fully qualified path to the application's data directory.
+
+[!code-csharp[Path.GetFullPath(String,String)](~/samples/snippets/csharp/api/system.io/path/getfullpath/program.cs)] 
+[!code-csharp[Path.GetFullPath(String,String)](~/samples/snippets/visualbasic/api/system.io/path/getfullpath/program.vb)] 
+
+ ]]></format>
+
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> or <paramref name="basePath" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="basePath" /> is not a fully qualified path.
+          -or-
+          <paramref name="path" /> or <paramref name="basePath" /> contains invalid path characters, such as U+0000.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetInvalidFileNameChars">
@@ -1123,7 +1220,7 @@ For more information on file path formats on Windows, see [File path formats on 
    
   
 ## Examples  
- The following code example demonstrates the <xref:System.IO.Path.GetInvalidFileNameChars%2A> method and the <xref:System.IO.Path.GetInvalidPathChars%2A> method to retrieve invalid characters.  
+ The following example demonstrates the <xref:System.IO.Path.GetInvalidFileNameChars%2A> method and the <xref:System.IO.Path.GetInvalidPathChars%2A> method to retrieve invalid characters.  
   
  [!code-cpp[IO.Path.GetInvalidFile-PathChars#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.Path.GetInvalidFile-PathChars/cpp/example.cpp#1)]
  [!code-csharp[IO.Path.GetInvalidFile-PathChars#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.Path.GetInvalidFile-PathChars/CS/example.cs#1)]
@@ -1175,7 +1272,7 @@ For more information on file path formats on Windows, see [File path formats on 
    
   
 ## Examples  
- The following code example demonstrates the <xref:System.IO.Path.GetInvalidFileNameChars%2A> method and the <xref:System.IO.Path.GetInvalidPathChars%2A> method to retrieve invalid characters.  
+ The following example demonstrates the <xref:System.IO.Path.GetInvalidFileNameChars%2A> method and the <xref:System.IO.Path.GetInvalidPathChars%2A> method to retrieve invalid characters.  
   
  [!code-cpp[IO.Path.GetInvalidFile-PathChars#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.Path.GetInvalidFile-PathChars/cpp/example.cpp#1)]
  [!code-csharp[IO.Path.GetInvalidFile-PathChars#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.Path.GetInvalidFile-PathChars/CS/example.cs#1)]
@@ -1282,7 +1379,7 @@ For more information on file path formats on Windows, see [File path formats on 
  For more information on file paths on Windows, see [File path formats on Windows systems](~/docs/standard/io/file-path-formats.md). For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
 ## Examples  
- The following code example demonstrates a use of the `GetPathRoot` method.  
+ The following example demonstrates a use of the `GetPathRoot` method.  
   
  [!code-cpp[System.IO.Path Members#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#8)]
  [!code-csharp[System.IO.Path Members#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#8)]
@@ -1380,11 +1477,20 @@ For more information on file path formats on Windows, see [File path formats on 
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="relativeTo">The source path the result should be relative to. This path is always considered to be a directory.</param>
+        <param name="path">The destination path.</param>
+        <summary>Returns a relative path from one path to another.</summary>
+        <returns>The relative path, or <paramref name="path"/> if the paths don't share the same root.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Paths are resolved by calling the <xref:System.IO.Path.GetFullPath%2A> method before calculating the difference. The method uses the default file path comparison for the current platform (<xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for Windows and MacOs, <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> for Linux. 
+
+         ]]></format>
+         </remarks>
+
+        <exception cref="T:System.ArgumentNullException"><paramref name="relativeTo" /> or <paramref name="path" /> is <see langword="null" />.</exception>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="GetTempFileName">
@@ -1557,10 +1663,17 @@ C:\Users\UserName\AppData\Local\Temp\
         <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">The path to search for an extension.</param>
+        <summary>Determines whether the path represented by the specified character span includes a file name extension.</summary>
+        <returns><see langword="true" /> if the characters that follow the last directory separator character or volume separator in the path include a period (".") followed by one or more characters; otherwise, <see langword="false" />.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+A trailing period in `path` is not considered an extension.
+
+         ]]></format>
+         </remarks>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="HasExtension">
@@ -1612,7 +1725,7 @@ C:\Users\UserName\AppData\Local\Temp\
    
   
 ## Examples  
- The following code example demonstrates the use of the `HasExtension` method.  
+ The following example demonstrates the use of the `HasExtension` method.  
   
  [!code-cpp[System.IO.Path Members#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#11)]
  [!code-csharp[System.IO.Path Members#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#11)]
@@ -1622,6 +1735,7 @@ C:\Users\UserName\AppData\Local\Temp\
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -1676,7 +1790,7 @@ C:\Users\UserName\AppData\Local\Temp\
    
   
 ## Examples  
- The following code example demonstrates the use of the `InvalidPathChars` property.  
+ The following example demonstrates the use of the `InvalidPathChars` property.  
   
  [!code-cpp[System.IO.Path Members#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#13)]
  [!code-csharp[System.IO.Path Members#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#13)]
@@ -1689,6 +1803,25 @@ C:\Users\UserName\AppData\Local\Temp\
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsPathFullyQualified"> 
+      <Docs>
+        <summary>Returns a value that indicates whether a file path is fully qualified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+ 
+## Remarks  
+
+The overloads of the `IsPathFullyQualified` method handle paths that use both the <xref:System.IO.Path.DirectorySeparatorChar> and the <xref:System.IO.Path.AltDirectorySeparatorChar> characters. It does not perform any validation on the path that is passed to it as an argument. As a result, URIs are interpreted as relative paths and return `false`. 
+
+There is a difference between a fully qualified path (as indicated by the `IsPathFullyQualified` method) and a rooted path (as indicated by the <xref:System.IO.Path.IsPathRooted%2A> method). A *fully qualified path* or *absolute path* always defines an exact path from a particular drive or device to a target file or directory, and does not depend on the current drive or current directory. For example, on Windows systems, *C:/users/user1/documents/reports/2019/january/highlights.pdf* defines an absolute path from the root of the C: drive to the target file, *highlights.pdf*. A *rooted path* specifies either a starting drive or root directory, but depends on either the current directory (if it is rooted by a specified drive) or the current drive (if it is rooted by the root directory). The following example illustrates the difference between fully qualified paths and rooted paths.
+
+[!code-csharp[IsPathRooted](~/samples/snippets/csharp/api/system.IO/Path/IsPathRooted/program.cs)]
+[!code-vb[IsPathRooted](~/samples/snippets/visualbasic/api/system.IO/Path/IsPathRooted/program.vb)]
+
+         ]]></format>
+         </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsPathFullyQualified">
       <MemberSignature Language="C#" Value="public static bool IsPathFullyQualified (ReadOnlySpan&lt;char&gt; path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPathFullyQualified(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
@@ -1714,10 +1847,16 @@ C:\Users\UserName\AppData\Local\Temp\
         <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">A file path.</param>
+        <summary>Returns a value that indicates whether the file path represented by the specified character span is fixed to a specific drive or UNC path.</summary>
+        <returns><see langword="true" /> if the path is fixed to a specific drive or UNC path; <see langword="false" /> if the path is relative to the current drive or working directory.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+
+         ]]></format>
+         </remarks>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="IsPathFullyQualified">
@@ -1745,12 +1884,34 @@ C:\Users\UserName\AppData\Local\Temp\
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="path">A file path.</param>
+        <summary>Returns a value that indicates whether the specified file path is fixed to a specific drive or UNC path.</summary>
+        <returns><see langword="true" /> if the path is fixed to a specific drive or UNC path; <see langword="false" /> if the path is relative to the current drive or working directory.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="path" /> is <see langword="null" />.</exception>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
+    
+    <MemberGroup MemberName="IsPathRooted">
+      <Docs>
+        <summary>Returns a value that indicates whether a file path contains a root.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+ 
+## Remarks  
+
+A **rooted path** is file path that is fixed to a specific drive or UNIC path; it contrasts with a path that is relative to the current drive or working directory. For example, on Windows systems, a rooted path begins with a backslash (for example, "\Documents") or a drive letter and colon (for example, "C:Documents"). 
+
+Note that rooted paths can be either absolute (that is, fully qualified) or relative. An absolute rooted path is a fully qualified path from the root of a drive to a specific directory. A relative rooted path specifies a drive, but its fully qualified path is resolved against the current directory. The following example illustrates the difference.
+
+[!code-csharp[IsPathRooted](~/samples/snippets/csharp/api/system.IO/Path/IsPathRooted/program.cs)]
+[!code-vb[IsPathRooted](~/samples/snippets/visualbasic/api/system.IO/Path/IsPathRooted/program.vb)]
+
+         ]]></format>
+         </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsPathRooted">
       <MemberSignature Language="C#" Value="public static bool IsPathRooted (ReadOnlySpan&lt;char&gt; path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPathRooted(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
@@ -1776,10 +1937,11 @@ C:\Users\UserName\AppData\Local\Temp\
         <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="path">The path to test.</param>
+        <summary>Returns a value that indicates whether the specified character span that represents a file path contains a root.</summary>
+        <returns><see langword="true" /> if <paramref name="path" /> contains a root; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="IsPathRooted">
@@ -1817,7 +1979,7 @@ C:\Users\UserName\AppData\Local\Temp\
       </Parameters>
       <Docs>
         <param name="path">The path to test.</param>
-        <summary>Gets a value indicating whether the specified path string contains a root.</summary>
+        <summary>Returns a value indicating whether the specified path string contains a root.</summary>
         <returns>
           <see langword="true" /> if <paramref name="path" /> contains a root; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -1829,11 +1991,9 @@ C:\Users\UserName\AppData\Local\Temp\
  This method does not verify that the path or file name exists.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+
 ## Examples  
- The following code example demonstrates how the `IsPathRooted` method can be used to test three strings.  
+ The following example demonstrates how the `IsPathRooted` method can be used to test three strings.  
   
  [!code-cpp[System.IO.Path Members#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#12)]
  [!code-csharp[System.IO.Path Members#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#12)]
@@ -1843,6 +2003,7 @@ C:\Users\UserName\AppData\Local\Temp\
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -1874,11 +2035,38 @@ C:\Users\UserName\AppData\Local\Temp\
         <Parameter Name="path2" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="path1">To be added.</param>
-        <param name="path2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path1">A character span that contains the first path to join.</param>
+        <param name="path2">A character span that contains the second path to join.</param>
+        <summary>Concatenates two path components into a single path.</summary>
+        <returns>The combined paths. </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ 
+This method simply concatenates `path` and `path2` and adds a directory separator character between the two path components if one is not already present at the end of `path1` or the beginning of `path2`. If the <xref:System.ReadOnlySpan%601.Length> of either `path1` or `path2` is zero, the method returns the other path. If the <xref:System.ReadOnlySpan%601.Length> of both `path1` and `path2` is zero, the method returns <xref:System.String.Empty?displayProperty=nameWithType>. 
+
+If `path1` ends in a path separator character that is not appropriate for the target platform, the `Join` method preserves the original path separator character and appends the supported one. This issue arises in hard-coded paths that use the Windows backslash ("\") character, which is not recognized as a path separator on Unix-based systems. To work around this issue, you can:
+
+- Retrieve the value of the <xref:System.IO.Path.DirectorySeparatorChar?displayProperty=nameWithType> property rather than hard-coding a directory separator character.
+
+- Use a forward slash ("/") as the directory separator character. This character is returned by the <xref:System.IO.Path.DirectorySeparatorChar?displayProperty=nameWithType> property on Unix-based systems and by the <xref:System.IO.Path.AltDirectorySeparatorChar?displayProperty=nameWithType> property on Windows systems. 
+
+Unlike the <xref:System.IO.Path.Combine%2A> method, the <xref:System.IO.Path.Join%2A> methhod does not attempt to root the returned path. (That is, if `path2` is an absolute path, the `Join` method does not discard `path1` and return `path2` as the <xref:System.IO.Path.Combine%2A> method does.) The following example illustrates the difference in the paths returned by the two methods. If the source of `path2` is user input, the <xref:System.IO.Path.Combine%2A> method makes it possible for a user to access a file system resource (such as *C:/Users/User1/Documents/Financial/* in the case of hte example) that the application did not intend to make accessible.  
+
+Not all invalid characters for directory and file names are interpreted as unacceptable by the `Join` method, because you can use these characters for search wildcard characters. For example, while `Path.Join("c:\\", "*.txt")` might be invalid when creating a file, it is valid as a search string. The `Join` method therefore successfully interprets it. 
+
+## Example
+
+The following example illustrates the difference in the paths returned by the <xref:System.IO.Path.Join(System.ReadOnlySpan%7BSystem.Char%7D,System.ReadOnlySpan%7BSystem.Char%7D)?displayProperty=nameWithType> and <xref:System.IO.Path.Combine(System.String,System.String)?displayProperty=nameWithType> methods. When the first string is an fully qualified path that includes a drive and root directory and the second is a relative path from the first path, the two methods produce identical results. In the second and third calls to the `ShowPathInformation` method, the strings returned by the two methods diverge. In the second method call, the first string argument is a drive, while the second is a rooted directory. The `Join` method concatenates the two strings and preserves duplicate path separators. The `Combine` method abandons the drive and returns a rooted directory on the current drive. If the application's current drive is C:\ and the string is used to access a file or files in the directory, it would access C: instead of D:. Finally, becasue both arguments in the third call to `ShowPathInformation` are rooted, the `Join` method simply appends them to create a nonsensical file path, while the `Combine` method discards the first string anmd returns the second. Using this string for file access could give the application unintended access to sensitive files.  
+
+[!code-csharp[Path.Join(String,String)](~/samples/snippets/csharp/api/system.io/path/combine2/program.cs)]
+[!code-csharp[Path.Join(String,String)](~/samples/snippets/visualbasic/api/system.io/path/combine2/program.vb)]
+
+
+       ]]></format>
+        </remarks>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -1941,12 +2129,39 @@ C:\Users\UserName\AppData\Local\Temp\
         <Parameter Name="path3" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="path1">To be added.</param>
-        <param name="path2">To be added.</param>
-        <param name="path3">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path1">A character span that contains the first path to join.</param>
+        <param name="path2">A character span that contains the second path to join.</param>
+        <param name="path3">A character span that contains the third path to join.</param>
+        <summary>Concatenates three path components into a single path.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ 
+This method simply concatenates `path`, `path2`, and `path3` and adds a directory separator character between any of the path components if one is not already present. If the <xref:System.ReadOnlySpan%601.Length> of any of `path1`, `path2`, or `path3` argument is zero, the method contatenates the remaining arguments. If the <xref:System.ReadOnlySpan%601.Length?displayProperty=nameWithType> of all components is zero, the method returns <xref:System.String.Empty?displayProperty=nameWithType>.    
+
+If `path1` or `path2` ends in a path separator character that is not appropriate for the target platform, the `Join` method preserves the original path separator character and appends the supported one. This issue arises in hard-coded paths that use the Windows backslash ("\") character, which is not recognized as a path separator on Unix-based systems. To work around this issue, you can:
+
+- Retrieve the value of the <xref:System.IO.Path.DirectorySeparatorChar?displayProperty=nameWithType> property rather than hard-coding a directory separator character.
+
+- Use a forward slash ("/") as the directory separator character. This character is returned by the <xref:System.IO.Path.DirectorySeparatorChar?displayProperty=nameWithType> property on Unix-based systems and by the <xref:System.IO.Path.AltDirectorySeparatorChar?displayProperty=nameWithType> property on Windows systems. 
+
+Unlike the <xref:System.IO.Path.Combine%2A> method, the <xref:System.IO.Path.Join%2A> methhod does not attempt to root the returned path. (That is, if `path2` or `path2` is an absolute path, the `Join` method does not discard the previous paths as the <xref:System.IO.Path.Combine%2A> method does.  
+  
+Not all invalid characters for directory and file names are interpreted as unacceptable by the `Join` method, because you can use these characters for search wildcard characters. For example, while `Path.Join("c:\\", "temp", "*.txt")` might be invalid when creating a file, it is valid as a search string. The `Join` method therefore successfully interprets it. 
+
+## Example
+
+The following example illustrates the difference in the paths returned by the <xref:System.IO.Path.Join(System.ReadOnlySpan%7BSystem.Char%7D,System.ReadOnlySpan%7BSystem.Char%7D,System.ReadOnlySpan%7BSystem.Char%7D)?displayProperty=nameWithType> and <xref:System.IO.Path.Combine(System.String,System.String,System.String)?displayProperty=nameWithType> methods. When the first string is an fully qualified path that includes a drive and root directory and the second is a relative path from the first path, the two methods produce identical results. In the second and third calls to the `ShowPathInformation` method, the strings returned by the two methods diverge. In the second method call, the first string argument is a drive, while the second is a rooted directory. The `Join` method concatenates the two strings and preserves duplicate path separators. A call to the <xref:System.IO.Path.GetFullPath%2A> method would eliminate the duplication. The `Combine` method abandons the drive and returns a rooted directory on the current drive. If the application's current drive is C:\ and the string is used to access a file or files in the directory, it would access C: instead of D:. Finally, becasue the final argument in the third call to `ShowPathInformation` are rooted, the `Join` method simply appends it to the first two arguments to create a nonsensical file path, while the `Combine` method discards the first two strings anmd returns the third. Using this string for file access could give the application unintended access to sensitive files.  
+
+[!code-csharp[Path.Join(String,String,String)](~/samples/snippets/csharp/api/system.io/path/combine3/program.cs)] 
+[!code-csharp[Path.Join(String,String,String)](~/samples/snippets/visualbasic/api/system.io/path/combine3/program.vb)] 
+
+       ]]></format>
+        
+        </remarks>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -2024,7 +2239,7 @@ C:\Users\UserName\AppData\Local\Temp\
    
   
 ## Examples  
- The following code example demonstrates the use of the `PathSeparator` field.  
+ The following example demonstrates the use of the `PathSeparator` field.  
   
  [!code-cpp[System.IO.Path Members#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#13)]
  [!code-csharp[System.IO.Path Members#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#13)]
@@ -2037,6 +2252,22 @@ C:\Users\UserName\AppData\Local\Temp\
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryJoin">
+      <Docs>
+        <summary>Attempts to concatenate individual path components to a preallocated character span, and returns a value that indicates whether the operation succeeded.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+ 
+## Remarks  
+
+The destination character span must be large enough to hold the concatentated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the following example illustrates.
+
+[!code-csharp[IsPathRooted](~/samples/snippets/csharp/api/system.IO/Path/TryJoin/program.cs)]
+
+         ]]></format>
+         </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryJoin">
       <MemberSignature Language="C#" Value="public static bool TryJoin (ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2, Span&lt;char&gt; destination, out int charsWritten);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryJoin(valuetype System.ReadOnlySpan`1&lt;char&gt; path1, valuetype System.ReadOnlySpan`1&lt;char&gt; path2, valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten) cil managed" />
@@ -2065,13 +2296,22 @@ C:\Users\UserName\AppData\Local\Temp\
         <Parameter Name="charsWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="path1">To be added.</param>
-        <param name="path2">To be added.</param>
-        <param name="destination">To be added.</param>
-        <param name="charsWritten">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path1">A character span that contains the first path to join.</param>
+        <param name="path2">A character span that contains the second path to join.</param>
+        <param name="destination">A character span to hold the concatenated path.</param>
+        <param name="charsWritten">When the method returns, a value that indicates the number of characters written to the <paramref name="destination" />.</param>
+        <summary>Attempts to concatenate two path components to a single preallocated character span, and returns a value that indicates whether the operation succeeded.</summary>
+        <returns><see langword="true" /> if the concatentation operaton is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+`destination` must be large enough to hold the concatentated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the example illustrates.
+
+         ]]></format>
+         </remarks>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="TryJoin">
@@ -2103,14 +2343,23 @@ C:\Users\UserName\AppData\Local\Temp\
         <Parameter Name="charsWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="path1">To be added.</param>
-        <param name="path2">To be added.</param>
-        <param name="path3">To be added.</param>
-        <param name="destination">To be added.</param>
-        <param name="charsWritten">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path1">A character span that contains the first path to join.</param>
+        <param name="path2">A character span that contains the second path to join.</param>
+        <param name="path3">A character span that contains the third path to join.</param>
+        <param name="destination">A character span to hold the concatenated path.</param>
+        <param name="charsWritten">When the method returns, a value that indicates the number of characters written to the <paramref name="destination" />.</param>
+        <summary>Attempts to concatenate two path components to a single preallocated character span, and returns a value that indicates whether the operation succeeded.</summary>
+        <returns><see langword="true" /> if the concatentation operaton is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+`destination` must be large enough to hold the concatentated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the example illustrates.
+
+         ]]></format>
+         </remarks>
+        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="VolumeSeparatorChar">
@@ -2153,7 +2402,7 @@ C:\Users\UserName\AppData\Local\Temp\
    
   
 ## Examples  
- The following code example demonstrates the use of the `VolumeSeparatorChar` field.  
+ The following example demonstrates the use of the `VolumeSeparatorChar` field.  
   
  [!code-cpp[System.IO.Path Members#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Path Members/CPP/pathmembers.cpp#13)]
  [!code-csharp[System.IO.Path Members#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Path Members/CS/pathmembers.cs#13)]

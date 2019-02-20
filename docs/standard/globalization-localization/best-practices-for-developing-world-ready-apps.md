@@ -11,7 +11,7 @@ ms.assetid: f08169c7-aad8-4ec3-9a21-9ebd3b89986c
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Best Practices for Developing World-Ready Applications
+# Best practices for developing world-ready applications
 
 This section describes the best practices to follow when developing world-ready applications.
 

@@ -27,7 +27,7 @@ The two teams are collaborating through a foundational platform (Docker containe
 
 There are many reasons that will increase the number of containerized applications in the upcoming years, and one of these reasons is the creation of applications based on microservices.
 
-During the last 15 years, the use of web services have been the base of thousands of applications, and probably, after a few years, we will find the same situation with microservice-based applications running on Docker containers.
+During the last 15 years, the use of web services has been the base of thousands of applications, and probably, after a few years, we will find the same situation with microservice-based applications running on Docker containers.
 
 It is also worth to mention that you can also use Docker containers for monolithic applications and you still get most of the benefits of Docker. Containers are not targeting only microservices.
 
@@ -47,7 +47,7 @@ These challenges create new demands when using DevOps tools, so you'll have to d
 
 - How can we use Open Source tools/platforms for containers in Microsoft Azure?
 
-If you are able to answer all those questions, you will be better prepared to move your applications (existing or new apps) to Docker containers. 
+If you can answer all those questions, you will be better prepared to move your applications (existing or new apps) to Docker containers. 
 
 ## Introduction to a generic end-to-end Docker application life cycle workflow
 

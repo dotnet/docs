@@ -107,7 +107,8 @@ The .NET Framework uses tables to perform culture-sensitive sorts on string data
 |.NET Framework 3.5|All operating systems|Unicode 4.1|
 |.NET Framework 4|All operating systems|Unicode 5.0|
 |.NET Framework 4.5|[!INCLUDE[win7](../../../includes/win7-md.md)]|Unicode 5.0|
-|.NET Framework 4.5|[!INCLUDE[win8](../../../includes/win8-md.md)]|Unicode 6.0|
+|.NET Framework 4.5 and later on Windows 8 and later operating systems|Unicode 6.3.0|
+|.NET Core (all versions)|Depends on the version of the Unicode Standard supported by the underlying operating system.|
 
 Starting with .NET Framework 4.5 and in all versions of .NET Core, string comparison and sorting depends on the operating system. The .NET Framework 4.5 and later running on Windows 7 retrieves data from its own tables that implement Unicode 5.0. The .NET Framework 4.5 and later running on Windows 8 and later retrieves data from operating system tables that implement Unicode 6.3. On .NET Core, the supported version of Unicode depends on the underlying operating system. If you serialize culture-sensitive sorted data, you can use the <xref:System.Globalization.SortVersion> class to determine when your serialized data needs to be sorted so that it is consistent with .NET and the operating system's sort order. For an example, see the <xref:System.Globalization.SortVersion> class topic.
 

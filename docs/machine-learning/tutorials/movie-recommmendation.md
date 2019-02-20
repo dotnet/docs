@@ -183,8 +183,8 @@ use <MapValueToKey()> to transform each userId and each movieId into a feature n
 
 
 ```csharp
-IEstimator<ITransformer> estimator = mlcontext.Transforms.Conversion.MapValueToKey(outputColumnName: "userIdEncoded", inputColumnName: "userId")
-.Append(mlcontext.Transforms.Conversion.MapValueToKey(outputColumnName: "movieIdEncoded", inputColumnName: "movieId"));
+IEstimator<ITransformer> estimator = mlContext.Transforms.Conversion.MapValueToKey(outputColumnName: "userIdEncoded", inputColumnName: "userId")
+.Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName: "movieIdEncoded", inputColumnName: "movieId"));
 ```
 
 Then, once you have defined the right data format, add the machine learning training algorithm <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer> and train the model.
@@ -234,7 +234,7 @@ The `Transform()` method makes predictions for multiple provided input rows of a
 
 When you print out the evaluation metrics, it will look something like this:
 
-![evaluation metrics](../../../samples/machine-learning/tutorials/MovieRecommendation/media/evalmetrics.png)
+![evaluation metrics](./media/evalmetrics.png)
 
 In this output, there are 20 iterations. In each iteration, the measure of error decreases and converges closer and closer to 0.
 

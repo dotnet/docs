@@ -33,5 +33,5 @@ As you design and modify the user interface of your Windows Forms applications, 
  [Client Applications](../../../../docs/framework/develop-client-apps.md)  
  Provides an overview of developing Windows-based applications.  
   
- [Windows Forms Walkthroughs](https://msdn.microsoft.com/library/fd44d13d-4733-416f-aefc-32592e59e5d9)  
+ [Windows Forms Walkthroughs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zftbwa2b(v=vs.100))  
  Lists walkthrough topics about Windows Forms and controls.

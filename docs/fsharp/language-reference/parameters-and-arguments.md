@@ -144,7 +144,7 @@ type C =
         printfn "%A" ct
 ```
 
-The value given as argument to `DefaultParameterValue` must match the type of the parameter, i.e. the following is not allowed:
+The value given as argument to `DefaultParameterValue` must match the type of the parameter. For example, the following is not allowed:
 
 ```fsharp
 type C =

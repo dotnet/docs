@@ -25,12 +25,12 @@ In this tutorial, you learn how to:
 
 You will do this by following these steps:
 
-1. Load Data
-1. Build & Train Model
-1. Evaluate Model
-1. Deploy/Consume Model
+1. Load data
+1. Build and train the model
+1. Evaluate model
+1. Deploy and consume model
   
-You can download the full code with comments here.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/MovieRecommendation) repository.
 
 ## Prerequisites
 
@@ -187,8 +187,9 @@ IEstimator<ITransformer> estimator = mlContext.Transforms.Conversion.MapValueToK
 .Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName: "movieIdEncoded", inputColumnName: "movieId"));
 ```
 
-Then, once you have defined the right data format, add the machine learning training algorithm <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer> and train the model.
-For the `MatrixFactorizationTrainer`, specify several options: the input columns (`userIdEncoded` and `movieIdEncoded`) and the output column (`Label`). `NumIterations` and `K` are [hyperparameters](../resources/glossary.md#hyperparameter) for improving the model quality(see Improve your model below for more information).
+To add the learning algorithm, call the `mlContext.MulticlassClassification.Trainers.StochasticDualCoordinateAscent` wrapper method which returns a <xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer> object.  The `SdcaMultiClassTrainer` is appended to the `estimator` and accepts the featurized `Title` and `Description` (`Features`) and the `Label` input parameters to learn from the historic data. You also need to map the label to the value to return to its original readable state. Do both of those actions with the following code:
+
+ and accepts several options: the input columns (`userIdEncoded` and `movieIdEncoded`) and the output column (`Label`). `NumIterations` and `K` are [hyperparameters](../resources/glossary.md#hyperparameter) for improving the model quality(see Improve your model below for more information).
 
 ```csharp
 var options = new MatrixFactorizationTrainer.Options
@@ -199,24 +200,28 @@ LabelColumnName = "Label",
 NumIterations = 20,
 K = 100
 };
+```
 
+To add the learning algorithm, append a <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer> to the `estimator` with the following line of code:
+
+```csharp
 estimator = estimator.Append(mlContext.Recommendation().Trainers.MatrixFactorization(options));
 ```
 
-Finally, the <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%2A> method trains your model with the provided training dataset.  It executes the `Estimator` definitions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
+### Train the model
+
+You train the model, <xref:Microsoft.ML.Data.TransformerChain%601>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, you train your model using the <xref:Microsoft.ML.Data.EstimatorChain%601.Fit%2A> while providing the already loaded training data. This  method returns a model to use for predictions. `estimator.Fit()` trains the model and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until the `.Fit()` method runs.
 
 ```csharp
 Console.WriteLine("=============== Training the model ===============");
 ITransformer model = estimator.Fit(trainingDataView);
 ```
 
-To learn more in detail about these Transformers and Estimators please refer to ML.NET high-level concepts. 
-
 ## Evaluate the model
 
 Once you have trained your model, use your test data to evaluate how your model is performing.
 
-After training your model, add the following code:
+The `Transform()` method makes predictions for multiple provided input rows of a test dataset (e.g. IDataView). Once you have the prediction set, you call the `Evaluate()` method to assess the model, comparing the predicted values with the actual labels in the test dataset. That will return metrics on how the model is performing.
 
 ```CSharp
 Console.WriteLine("======= Evaluating the model =======");
@@ -225,22 +230,30 @@ var prediction = model.Transform(testDataView);
 
 var metrics = mlContext.Recommendation().Evaluate(prediction, 
 label: "Label", score: "Score");
-
-Console.WriteLine("Rms: " + metrics.Rms);
-Console.WriteLine("RSquared: " + metrics.RSquared);
 ```
 
-The `Transform()` method makes predictions for multiple provided input rows of a test dataset (e.g. IDataView). Once you have the prediction set, you call the `Evaluate()` method to assess the model, comparing the predicted values with the actual labels in the test dataset. That will return metrics on how the model is performing.
+The following metrics are evaluated for recommendation:
 
-When you print out the evaluation metrics, it will look something like this:
 
-![evaluation metrics](./media/evalmetrics.png)
-
-In this output, there are 20 iterations. In each iteration, the measure of error decreases and converges closer and closer to 0.
 
 The `root of mean squared error` (RMS or RMSE) is frequently used to measure the differences between values predicted by a model and the values actually observed in a test dataset. Technically it is the square root of the average of the squares of the errors. You want your RMSE score to be as close to 0 as possible.
 
 `R Squared` is the variation percentage in the predicted values explained by your model. It's a value between 0 and 1, and the closer the value is to 1, the better the model is.
+
+### Displaying the metrics for model validation
+
+Use the following code to display the metrics, share the results, and then act on them:
+
+```csharp
+Console.WriteLine("Rms: " + metrics.Rms);
+Console.WriteLine("RSquared: " + metrics.RSquared);
+```
+
+In this output, there are 20 iterations. In each iteration, the measure of error decreases and converges closer and closer to 0.
+
+Your evaluation metrics should look similar to this:
+
+![evaluation metrics](./media/evalmetrics.png)
 
 Next, Save your trained and evaluated model for use in end-user applications. Add the following code in your model training console app:
 
@@ -254,7 +267,7 @@ mlContext.Model.Save(model, fs);
 
 This is how you save the model to a .zip file, which can then be loaded into and used in your other .NET applications.
 
-## 4. Deploy/consume model
+## Deploy and consume model
 
 To use the model in another .NET application (or in a different method just for trying the model), you would follow these steps:
 
@@ -264,7 +277,7 @@ To use the model in another .NET application (or in a different method just for 
 4. Load the model from the stream
 5. Make predictions using the prediction engine
 
-The `prediction engine` is a convenience API, which allows you to pass a single instance of data and then perform a prediction on this single instance of data.
+### Add a prediction operations result class
 
 To load your trained model into another app, add this class:
 
@@ -276,7 +289,9 @@ public float Score;
 }
 ```
 
-And then add this code (e.g. to Main()):
+### Load the model from the stream
+
+Next, load the model that you saved previously with the following code:
 
 ```csharp
 MLContext mlContext = new MLContext();
@@ -292,16 +307,26 @@ trainedModel = mlContext.Model.Load(stream);
 }
 ```
 
-The `Predict()` function makes a prediction on a single column of data. To test a single prediction with your model, add the following code:
+### Make predictions using the prediction engine
+
+The <xref:Microsoft.ML.PredictionEngine%602> is a convenience API, which allows you to pass a single instance of data and then perform a prediction on this single instance of data.
 
 ```csharp
 Console.WriteLine("======= Making a prediction =======");
 
 var predictionengine = 
 trainedModel.CreatePredictionEngine<MovieRating, MovieRatingPrediction>(mlContext);
+```
 
+Add a Movie rating to test the trained model's prediction in the `Predict` method by creating an instance of `MovieRating`:
+
+```csharp
 var testInput = new MovieRating { userId = 6, movieId = 10 };
+```
 
+Now that you have a model, you can use that to predict the movie rating of a single instance of the data. To get a prediction, use <xref:Microsoft.ML.PredictionEngine%602.Predict%2A> on the data. The input data is a string and the model includes the featurization. Add the following line code for the predictions:
+
+```csharp
 var movieRatingPrediction = predictionengine.Predict(testInput);
 ```
 
@@ -316,6 +341,15 @@ else
 {
 Console.WriteLine("Movie " + testInput.movieId + " is not recommended for user " + testInput.userId);
 }
+```
+
+## Results
+
+Your results should be similar to the following. As the pipeline processes, it displays messages. You may see warnings, or processing messages. These messages have been removed from the following results for clarity.
+
+```console
+Movie 6 is recommended for user 10
+Movie 8 is not recommended for user 6
 ```
 
 Congratulations! You've now successfully built a machine learning model for recommending movies. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/MovieRecommendation) repository.

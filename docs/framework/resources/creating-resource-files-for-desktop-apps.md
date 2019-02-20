@@ -80,7 +80,7 @@ EmptyString=
 
  The following example defines two string resources named `OKButton` and `CancelButton`.
 
-```
+```text
 #Define resources for buttons in the user interface.
 OKButton=OK
 CancelButton=Cancel

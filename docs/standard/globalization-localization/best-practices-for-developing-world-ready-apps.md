@@ -35,7 +35,7 @@ This section describes the best practices to follow when developing world-ready 
 
 4. Enable your application to read and write data to and from a variety of encodings by using the encoding classes in the <xref:System.Text> namespace. Do not assume ASCII data. Assume that international characters will be supplied anywhere a user can enter text. For example, the application should accept international characters in server names, directories, file names, user names, and URLs.
 
-5. When using the <xref:System.Text.UTF8Encoding> class, for security reasons, use the error detection feature offered by this class. To turn on the error detection feature, the application creates an instance of the class using the constructor that takes a `throwOnInvalidBytes` parameter and sets the value of this parameter to `true`.
+5. When using the <xref:System.Text.UTF8Encoding> class, for security reasons, use the error detection feature offered by this class. To turn on the error detection feature, create an instance of the class using the constructor that takes a `throwOnInvalidBytes` parameter and set the value of this parameter to `true`.
 
 6. Whenever possible, handle strings as entire strings instead of as a series of individual characters. This is especially important when sorting or searching for substrings. This will prevent problems associated with parsing combined characters.
 

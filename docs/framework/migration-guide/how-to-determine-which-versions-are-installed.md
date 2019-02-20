@@ -1,6 +1,6 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed"
-ms.date: "01/11/2019"
+ms.date: "02/20/2019"
 dev_langs: 
   - "csharp"
   - "vb"

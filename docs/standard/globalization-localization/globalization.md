@@ -265,7 +265,7 @@ By using [custom date and time format strings](../../../docs/standard/base-types
 The handling of numbers depends on whether they are displayed in the user interface or persisted. This section examines both usages.
 
 > [!NOTE]
-> In parsing and formatting operations, the .NET Framework recognizes only the Basic Latin characters 0 through 9 (U+0030 through U+0039) as numeric digits.
+> In parsing and formatting operations, .NET recognizes only the Basic Latin characters 0 through 9 (U+0030 through U+0039) as numeric digits.
 
 ### Display numeric values
 

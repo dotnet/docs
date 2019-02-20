@@ -70,17 +70,17 @@ Sub Main()
   
       'Create a StreamWriter for easy writing to the   
       'network stream.  
-      Dim swriter As New StreamWriter(cryptStream)  
+      Dim sWriter As New StreamWriter(cryptStream)  
   
       'Write to the stream.  
-      swriter.WriteLine("Hello World!")  
+      sWriter.WriteLine("Hello World!")  
   
       'Inform the user that the message was written  
       'to the stream.  
       Console.WriteLine("The message was sent.")  
   
       'Close all the connections.  
-      swriter.Close()  
+      sWriter.Close()  
       cryptStream.Close()  
       netStream.Close()  
       tcp.Close()  
@@ -128,17 +128,17 @@ public class main
   
          //Create a StreamWriter for easy writing to the   
          //network stream.  
-         StreamWriter swriter = new StreamWriter(cryptStream);  
+         StreamWriter sWriter = new StreamWriter(cryptStream);  
   
          //Write to the stream.  
-         swriter.WriteLine("Hello World!");  
+         sWriter.WriteLine("Hello World!");  
   
          //Inform the user that the message was written  
          //to the stream.  
          Console.WriteLine("The message was sent.");  
   
          //Close all the connections.  
-         swriter.Close();  
+         sWriter.Close();  
          cryptStream.Close();  
          netStream.Close();  
          tcp.Close();  

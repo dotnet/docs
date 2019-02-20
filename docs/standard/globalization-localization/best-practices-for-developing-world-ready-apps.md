@@ -37,7 +37,7 @@ This section describes the best practices to follow when developing world-ready 
 
 5. When using the <xref:System.Text.UTF8Encoding> class, for security reasons, use the error detection feature offered by this class. To turn on the error detection feature, create an instance of the class using the constructor that takes a `throwOnInvalidBytes` parameter and set the value of this parameter to `true`.
 
-6. Whenever possible, handle strings as entire strings instead of as a series of individual characters. This is especially important when sorting or searching for substrings. This will prevent problems associated with parsing combined characters.
+6. Whenever possible, handle strings as entire strings instead of as a series of individual characters. This is especially important when sorting or searching for substrings. This will prevent problems associated with parsing combined characters. You can also work with units of text rather than single characters by using the <xref:System.Globalization.StringInfo?displayProperty=nameWithType> class.
 
 7. Display text using the classes provided by the <xref:System.Drawing> namespace.
 

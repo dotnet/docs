@@ -47,7 +47,7 @@ This section describes the best practices to follow when developing world-ready 
 
 10. If a security decision is based on the result of a string comparison or case change operation, have the application perform a culture-insensitive operation. This practice ensures that the result is not affected by the value of `CultureInfo.CurrentCulture`. See the "String Comparisons that Use the Current Culture" section of [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md) for an example that demonstrates how culture-sensitive string comparisons can produce inconsistent results.
 
-## Localization Best Practices
+## Localization best practices
 
 1. Move all localizable resources to separate resource-only DLLs. Localizable resources include user interface elements, such as strings, error messages, dialog boxes, menus, and embedded object resources.
 

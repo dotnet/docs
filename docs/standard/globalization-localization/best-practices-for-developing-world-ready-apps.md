@@ -15,7 +15,7 @@ ms.author: "ronpet"
 
 This section describes the best practices to follow when developing world-ready applications.
 
-## Globalization Best Practices
+## Globalization best practices
 
 1. Make your application Unicode internally.
 

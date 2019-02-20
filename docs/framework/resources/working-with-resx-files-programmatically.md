@@ -19,7 +19,7 @@ Because XML resource (.resx) files must consist of well-defined XML, including a
 > [!WARNING]
 > There are also ways to work with .resx files other than programmatically. When you add a resource file to a [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) project, Visual Studio provides an interface for creating and maintaining a .resx file, and automatically converts the .resx file to a .resources file at compile time. You can also use a text editor to manipulate a .resx file directly. However, to avoid corrupting the file, be careful not to modify any binary information that is stored in the file.
 
-## Create a .resx File
+## Create a .resx file
 
 You can use the <xref:System.Resources.ResXResourceWriter?displayProperty=nameWithType> class to create a .resx file programmatically, by following these steps:
 

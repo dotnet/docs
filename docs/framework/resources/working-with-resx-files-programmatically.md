@@ -52,7 +52,7 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
  [!code-csharp[Conceptual.Resources.ResX#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resx/cs/enumerate1.cs#2)]
  [!code-vb[Conceptual.Resources.ResX#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resx/vb/enumerate1.vb#2)]
 
-## Retrieving a Specific Resource
+## Retrieve a specific resource
  In addition to enumerating the items in a .resx file, you can retrieve a specific resource by name by using the <xref:System.Resources.ResXResourceSet?displayProperty=nameWithType> class. The <xref:System.Resources.ResourceSet.GetString%28System.String%29?displayProperty=nameWithType> method retrieves the value of a named string resource. The <xref:System.Resources.ResourceSet.GetObject%28System.String%29?displayProperty=nameWithType> method retrieves the value of a named object or binary data. The method returns an object that must then be cast (in C#) or converted (in Visual Basic) to an object of the appropriate type.
 
  The following example retrieves a form's caption string and icon by their resource names. It also retrieves the application-defined `Automobile` objects used in the previous example and displays them in a <xref:System.Windows.Forms.DataGridView> control.

@@ -20,16 +20,16 @@ Symmetric encryption and asymmetric encryption are performed using different pro
 ## Symmetric Encryption  
  The managed symmetric cryptography classes are used with a special stream class called a <xref:System.Security.Cryptography.CryptoStream> that encrypts data read into the stream. The **CryptoStream** class is initialized with a managed stream class, a class implements the <xref:System.Security.Cryptography.ICryptoTransform> interface (created from a class that implements a cryptographic algorithm), and a <xref:System.Security.Cryptography.CryptoStreamMode> enumeration that describes the type of access permitted to the **CryptoStream**. The **CryptoStream** class can be initialized using any class that derives from the <xref:System.IO.Stream> class, including <xref:System.IO.FileStream>, <xref:System.IO.MemoryStream>, and <xref:System.Net.Sockets.NetworkStream>. Using these classes, you can perform symmetric encryption on a variety of stream objects.  
   
- The following example illustrates how to create a new instance of the <xref:System.Security.Cryptography.RijndaelManaged> class, which implements the Rijndael encryption algorithm, and use it to perform encryption on a **CryptoStream** class. In this example, the **CryptoStream** is initialized with a stream object called `MyStream` that can be any type of managed stream. The **CreateEncryptor** method from the **RijndaelManaged** class is passed the key and IV that are used for encryption. In this case, the default key and IV generated from `RMCrypto` are used. Finally, the **CryptoStreamMode.Write** is passed, specifying write access to the stream.  
+ The following example illustrates how to create a new instance of the <xref:System.Security.Cryptography.RijndaelManaged> class, which implements the Rijndael encryption algorithm, and use it to perform encryption on a **CryptoStream** class. In this example, the **CryptoStream** is initialized with a stream object called `myStream` that can be any type of managed stream. The **CreateEncryptor** method from the **RijndaelManaged** class is passed the key and IV that are used for encryption. In this case, the default key and IV generated from `rmCrypto` are used. Finally, the **CryptoStreamMode.Write** is passed, specifying write access to the stream.  
   
 ```vb  
-Dim RMCrypto As New RijndaelManaged()  
-Dim CryptStream As New CryptoStream(MyStream, RMCrypto.CreateEncryptor(RMCrypto.Key, RMCrypto.IV), CryptoStreamMode.Write)  
+Dim rmCrypto As New RijndaelManaged()  
+Dim cryptStream As New CryptoStream(myStream, rmCrypto.CreateEncryptor(rmCrypto.Key, rmCrypto.IV), CryptoStreamMode.Write)  
 ```  
   
 ```csharp  
-RijndaelManaged RMCrypto = new RijndaelManaged();  
-CryptoStream CryptStream = new CryptoStream(MyStream, RMCrypto.CreateEncryptor(), CryptoStreamMode.Write);  
+RijndaelManaged rmCrypto = new RijndaelManaged();  
+CryptoStream cryptStream = new CryptoStream(myStream, rmCrypto.CreateEncryptor(), CryptoStreamMode.Write);  
 ```  
   
  After this code is executed, any data written to the **CryptoStream** object is encrypted using the Rijndael algorithm.  
@@ -55,34 +55,34 @@ Sub Main()
       Dim tcp As New TcpClient("localhost", 11000)  
   
       'Create a network stream from the TCP connection.   
-      Dim NetStream As NetworkStream = tcp.GetStream()  
+      Dim netStream As NetworkStream = tcp.GetStream()  
   
       'Create a new instance of the RijndaelManaged class  
       'and encrypt the stream.  
-      Dim RMCrypto As New RijndaelManaged()  
+      Dim rmCrypto As New RijndaelManaged()  
   
-            Dim Key As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}  
-            Dim IV As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}  
+            Dim key As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}  
+            Dim iv As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}  
   
       'Create a CryptoStream, pass it the NetworkStream, and encrypt   
       'it with the Rijndael class.  
-      Dim CryptStream As New CryptoStream(NetStream, RMCrypto.CreateEncryptor(Key, IV), CryptoStreamMode.Write)  
+      Dim cryptStream As New CryptoStream(netStream, rmCrypto.CreateEncryptor(key, iv), CryptoStreamMode.Write)  
   
       'Create a StreamWriter for easy writing to the   
       'network stream.  
-      Dim SWriter As New StreamWriter(CryptStream)  
+      Dim swriter As New StreamWriter(cryptStream)  
   
       'Write to the stream.  
-      SWriter.WriteLine("Hello World!")  
+      swriter.WriteLine("Hello World!")  
   
       'Inform the user that the message was written  
       'to the stream.  
       Console.WriteLine("The message was sent.")  
   
       'Close all the connections.  
-      SWriter.Close()  
-      CryptStream.Close()  
-      NetStream.Close()  
+      swriter.Close()  
+      cryptStream.Close()  
+      netStream.Close()  
       tcp.Close()  
    Catch  
       'Inform the user that an exception was raised.  
@@ -111,36 +111,36 @@ public class main
          TcpClient tcp = new TcpClient("localhost",11000);  
   
          //Create a network stream from the TCP connection.   
-         NetworkStream NetStream = tcp.GetStream();  
+         NetworkStream netStream = tcp.GetStream();  
   
          //Create a new instance of the RijndaelManaged class  
          // and encrypt the stream.  
-         RijndaelManaged RMCrypto = new RijndaelManaged();  
+         RijndaelManaged rmCrypto = new RijndaelManaged();  
   
-         byte[] Key = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16};  
-         byte[] IV = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16};  
+         byte[] key = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16};  
+         byte[] iv = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16};  
   
          //Create a CryptoStream, pass it the NetworkStream, and encrypt   
          //it with the Rijndael class.  
-         CryptoStream CryptStream = new CryptoStream(NetStream,   
-         RMCrypto.CreateEncryptor(Key, IV),     
+         CryptoStream cryptStream = new CryptoStream(netStream,   
+         rmCrypto.CreateEncryptor(key, iv),     
          CryptoStreamMode.Write);  
   
          //Create a StreamWriter for easy writing to the   
          //network stream.  
-         StreamWriter SWriter = new StreamWriter(CryptStream);  
+         StreamWriter swriter = new StreamWriter(cryptStream);  
   
          //Write to the stream.  
-         SWriter.WriteLine("Hello World!");  
+         swriter.WriteLine("Hello World!");  
   
          //Inform the user that the message was written  
          //to the stream.  
          Console.WriteLine("The message was sent.");  
   
          //Close all the connections.  
-         SWriter.Close();  
-         CryptStream.Close();  
-         NetStream.Close();  
+         swriter.Close();  
+         cryptStream.Close();  
+         netStream.Close();  
          tcp.Close();  
       }  
       catch  
@@ -177,33 +177,33 @@ Module Module1
   
     Sub Main()  
         'Initialize the byte arrays to the public key information.  
-      Dim PublicKey As Byte() =  {214, 46, 220, 83, 160, 73, 40, 39, 201, 155, 19,202, 3, 11, 191, 178, 56, 74, 90, 36, 248, 103, 18, 144, 170, 163, 145, 87, 54, 61, 34, 220, 222, 207, 137, 149, 173, 14, 92, 120, 206, 222, 158, 28, 40, 24, 30, 16, 175, 108, 128, 35, 230, 118, 40, 121, 113, 125, 216, 130, 11, 24, 90, 48, 194, 240, 105, 44, 76, 34, 57, 249, 228, 125, 80, 38, 9, 136, 29, 117, 207, 139, 168, 181, 85, 137, 126, 10, 126, 242, 120, 247, 121, 8, 100, 12, 201, 171, 38, 226, 193, 180, 190, 117, 177, 87, 143, 242, 213, 11, 44, 180, 113, 93, 106, 99, 179, 68, 175, 211, 164, 116, 64, 148, 226, 254, 172, 147}  
+      Dim publicKey As Byte() =  {214, 46, 220, 83, 160, 73, 40, 39, 201, 155, 19,202, 3, 11, 191, 178, 56, 74, 90, 36, 248, 103, 18, 144, 170, 163, 145, 87, 54, 61, 34, 220, 222, 207, 137, 149, 173, 14, 92, 120, 206, 222, 158, 28, 40, 24, 30, 16, 175, 108, 128, 35, 230, 118, 40, 121, 113, 125, 216, 130, 11, 24, 90, 48, 194, 240, 105, 44, 76, 34, 57, 249, 228, 125, 80, 38, 9, 136, 29, 117, 207, 139, 168, 181, 85, 137, 126, 10, 126, 242, 120, 247, 121, 8, 100, 12, 201, 171, 38, 226, 193, 180, 190, 117, 177, 87, 143, 242, 213, 11, 44, 180, 113, 93, 106, 99, 179, 68, 175, 211, 164, 116, 64, 148, 226, 254, 172, 147}  
   
-        Dim Exponent As Byte() = {1, 0, 1}  
+        Dim exponent As Byte() = {1, 0, 1}  
   
         'Create values to store encrypted symmetric keys.  
-        Dim EncryptedSymmetricKey() As Byte  
-        Dim EncryptedSymmetricIV() As Byte  
+        Dim encryptedSymmetricKey() As Byte  
+        Dim encryptedSymmetricIV() As Byte  
   
         'Create a new instance of the RSACryptoServiceProvider class.  
         Dim rsa As New RSACryptoServiceProvider()  
   
         'Create a new instance of the RSAParameters structure.  
-        Dim RSAKeyInfo As New RSAParameters()  
+        Dim rsaKeyInfo As New RSAParameters()  
   
-        'Set RSAKeyInfo to the public key values.   
-        RSAKeyInfo.Modulus = PublicKey  
-        RSAKeyInfo.Exponent = Exponent  
+        'Set rsaKeyInfo to the public key values.   
+        rsaKeyInfo.Modulus = publicKey  
+        rsaKeyInfo.Exponent = exponent  
   
-        'Import key parameters into RSA.  
-        rsa.ImportParameters(RSAKeyInfo)  
+        'Import key parameters into rsa.  
+        rsa.ImportParameters(rsaKeyInfo)  
   
         'Create a new instance of the RijndaelManaged class.  
         Dim RM As New RijndaelManaged()  
   
         'Encrypt the symmetric key and IV.  
-        EncryptedSymmetricKey = rsa.Encrypt(RM.Key, False)  
-        EncryptedSymmetricIV = rsa.Encrypt(RM.IV, False)  
+        encryptedSymmetricKey = rsa.Encrypt(RM.Key, False)  
+        encryptedSymmetricIV = rsa.Encrypt(RM.IV, False)  
     End Sub  
   
 End Module  
@@ -218,7 +218,7 @@ class Class1
    static void Main()  
    {  
       //Initialize the byte arrays to the public key information.  
-      byte[] PublicKey = {214,46,220,83,160,73,40,39,201,155,19,202,3,11,191,178,56,  
+      byte[] publicKey = {214,46,220,83,160,73,40,39,201,155,19,202,3,11,191,178,56,  
             74,90,36,248,103,18,144,170,163,145,87,54,61,34,220,222,  
             207,137,149,173,14,92,120,206,222,158,28,40,24,30,16,175,  
             108,128,35,230,118,40,121,113,125,216,130,11,24,90,48,194,  
@@ -227,31 +227,31 @@ class Class1
             38,226,193,180,190,117,177,87,143,242,213,11,44,180,113,93,  
             106,99,179,68,175,211,164,116,64,148,226,254,172,147};  
   
-      byte[] Exponent = {1,0,1};  
+      byte[] exponent = {1,0,1};  
   
       //Create values to store encrypted symmetric keys.  
-      byte[] EncryptedSymmetricKey;  
-      byte[] EncryptedSymmetricIV;  
+      byte[] encryptedSymmetricKey;  
+      byte[] encryptedSymmetricIV;  
   
       //Create a new instance of the RSACryptoServiceProvider class.  
       RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();  
   
       //Create a new instance of the RSAParameters structure.  
-      RSAParameters RSAKeyInfo = new RSAParameters();  
+      RSAParameters rsaKeyInfo = new RSAParameters();  
   
-      //Set RSAKeyInfo to the public key values.   
-      RSAKeyInfo.Modulus = PublicKey;  
-      RSAKeyInfo.Exponent = Exponent;  
+      //Set rsaKeyInfo to the public key values.   
+      rsaKeyInfo.Modulus = PublicKey;  
+      rsaKeyInfo.Exponent = Exponent;  
   
       //Import key parameters into RSA.  
-      rsa.ImportParameters(RSAKeyInfo);  
+      rsa.ImportParameters(rsaKeyInfo);  
   
       //Create a new instance of the RijndaelManaged class.  
-      RijndaelManaged RM = new RijndaelManaged();  
+      RijndaelManaged rm = new RijndaelManaged();  
   
       //Encrypt the symmetric key and IV.  
-      EncryptedSymmetricKey = rsa.Encrypt(RM.Key, false);  
-      EncryptedSymmetricIV = rsa.Encrypt(RM.IV, false);  
+      encryptedSymmetricKey = rsa.Encrypt(rm.Key, false);  
+      encryptedSymmetricIV = rsa.Encrypt(rm.IV, false);  
    }  
 }  
 ```  

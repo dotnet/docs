@@ -91,7 +91,7 @@ You can avoid this problem by performing an ordinal comparison that ignores case
 
 ### Order and sort strings
 
-Typically, ordered strings that are to be displayed in the user interface should be sorted based on culture. For the most part, such string comparisons are handled implicitly by the .NET Framework when you call a method that sorts strings, such as <xref:System.Array.Sort%2A?displayProperty=nameWithType> or <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType>. By default, strings are sorted by using the sorting conventions of the current culture. The following example illustrates the difference when an array of strings is sorted by using the conventions of the English (United States) culture and the Swedish (Sweden) culture.
+Typically, ordered strings that are to be displayed in the user interface should be sorted based on culture. For the most part, such string comparisons are handled implicitly by .NET when you call a method that sorts strings, such as <xref:System.Array.Sort%2A?displayProperty=nameWithType> or <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType>. By default, strings are sorted by using the sorting conventions of the current culture. The following example illustrates the difference when an array of strings is sorted by using the conventions of the English (United States) culture and the Swedish (Sweden) culture.
 
 [!code-csharp[Conceptual.Globalization#14](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/sort1.cs#14)]
 [!code-vb[Conceptual.Globalization#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/sort1.vb#14)]

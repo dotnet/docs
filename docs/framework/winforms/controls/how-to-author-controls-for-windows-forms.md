@@ -43,7 +43,7 @@ A control represents a graphical link between the user and the program. A contro
   
 9. Repeat, refining the design.  
   
-10. Package and deploy your control. For details, see [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components?view=vs-2015).  
+10. Package and deploy your control. For details, see [First look at deployment in Visual Studio](/visualstudio/deployment/deploying-applications-services-and-components).  
   
 ## See also
 - [Walkthrough: Authoring a Composite Control with Visual Basic](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-basic.md)

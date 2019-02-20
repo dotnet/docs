@@ -16,7 +16,7 @@ ms.author: ronpet
 
 The <xref:System.Windows.Forms.DataGridView> control supports the standard Windows Forms data binding model, so it can bind to a variety of data sources. Usually, you bind to a <xref:System.Windows.Forms.BindingSource> that manages the interaction with the data source. The <xref:System.Windows.Forms.BindingSource> can be any Windows Forms data source, which gives you great flexibility when choosing or modifying your data's location. For more information about data sources the <xref:System.Windows.Forms.DataGridView> control supports, see the [DataGridView control overview](../../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md).  
 
-Visual Studio has extensive support for data binding to the DataGridView control. For more information, see [How to: Bind data to the Windows Forms DataGridView control using the Designer](./bind-data-to-the-datagrid-using-the-designer.md).  
+Visual Studio has extensive support for data binding to the DataGridView control. For more information, see [How to: Bind data to the Windows Forms DataGridView control using the Designer](bind-data-to-the-datagrid-using-the-designer.md).  
 
 To connect a DataGridView control to data:
 

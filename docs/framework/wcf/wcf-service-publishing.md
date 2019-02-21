@@ -15,7 +15,7 @@ WCF Service Publishing supports publishing WCF services created from the set of 
 
 -   Syndication Service Library.
 
-You can find these service templates by choosing **File** > **New Project** > [**Visual Basic** or **Visual C#**] > **WCF**. For other WCF templates in this location (including WCF Workflow Service Application and WCF Service Application), you can publish using [One-Click publishing for web applications](https://msdn.microsoft.com/library/dd465337\(v=vs.110\).aspx).
+You can find these service templates by choosing **File** > **New Project** > [**Visual Basic** or **Visual C#**] > **WCF**. For other WCF templates in this location (including WCF Workflow Service Application and WCF Service Application), you can publish using [One-Click publishing for web applications](https://docs.microsoft.com/previous-versions/aspnet/dd465337(v=vs.110)).
 
 The service can be published to the following target locations.
 

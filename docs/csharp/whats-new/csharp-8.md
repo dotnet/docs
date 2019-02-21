@@ -264,10 +264,10 @@ You can learn more about the feature in the overview of [nullable reference type
 Starting with C# 8.0, you can create and consume streams asynchronously. A method that returns an asynchronous stream has three properties:
 
 1. It was declared with the `async` modifier.
-1. It returns an <xref:System.Collections.Generic,IAsyncEnumerable%601>.
+1. It returns an <xref:System.Collections.Generic.IAsyncEnumerable%601>.
 1. The method contains `yield return` statements to return successive elements in the asynchronous stream.
 
-Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream to be declared with the `async` modifier and to return a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an <xref:System.Collections.Generic,IAsyncEnumerable%601>. The following code generates a sequence from 1 to 20, waiting 100 ms between generating each number:
+Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream to be declared with the `async` modifier and to return a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an <xref:System.Collections.Generic.IAsyncEnumerable%601>. The following code generates a sequence from 1 to 20, waiting 100 ms between generating each number:
 
 ```csharp
 public static async System.Collections.Generic.IAsyncEnumerable<int> GenerateSequence()

@@ -23,13 +23,13 @@ The following language features first appeared in C# 8.0 preview 1:
 
 - [Nullable reference types](#nullable-reference-types)
 - [Asynchronous streams](#asynchronous-streams)
-- [Ranges and indices](#ranges-and-indices)
+- [Indices and ranges](#indices-and-ranges)
 
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided.
 
 ## More patterns in more places
 
-**Pattern matching** gives tools to provide shape-dependent functionality across related but different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns by using the `is` expression and the `switch` statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud-based architectures, other language tools are needed.
+**Pattern matching** gives tools to provide shape-dependent functionality across related but different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns by using the [`is`](../language-reference/keywords/is.md) expression and the [`switch`](../language-reference/keywords/switch.md) statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud-based architectures, other language tools are needed.
 
 C# 8.0 expands this vocabulary so you can use more pattern expressions in more places in your code. Consider these features when your data and functionality are separate. Consider pattern matching when your algorithms depend on a fact other than the runtime type of an object. These techniques provide another way to express designs.
 
@@ -69,7 +69,7 @@ public static RGBColor fromRainbow(Rainbow colorBand) =>
 
 There are several syntax improvements here:
 
-- The variable comes before the `switch` keyword. That enables switch expression to compose using recursive patterns. The different order makes it visually easy to distinguish the switch expression from the switch statement.
+- The variable comes before the `switch` keyword. The different order makes it visually easy to distinguish the switch expression from the switch statement.
 - The `case` and `:` elements are replaced with `=>`. It's more concise.
 - The `default` case is replaced with a `_` discard.
 - The bodies are expressions, not statements.
@@ -190,6 +190,8 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 }
 ```
 
+In the preceding example, the file is disposed when the closing brace associated with the `using` statement is reached.
+
 A few braces are removed by replacing the `using` statement with a `using` declaration:
 
 ```csharp
@@ -207,6 +209,8 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 // file is disposed here
 }
 ```
+
+In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared.
 
 Using declarations provide the same behavior as [using statements](../language-reference/keywords/using-statement.md) when exceptions are thrown: the `Dispose` call is in a `finally` block.
 
@@ -227,6 +231,19 @@ int M()
 }
 ```
 
+The following code contains a static local function. It can be static because it doesn't access any variables in the enclosing scope:
+
+```csharp
+int M()
+{
+    int y = 5;
+    int x = 7;
+    return Add(x, y);
+
+    int Add(int left, int right) => left + right;
+}
+```
+
 ## Disposable ref structs
 
 A `struct` declared with the `ref` modifier may not implement any interfaces and so cannot implement <xref:System.IDisposable>. Therefore, to enable a `ref struct` to be disposed, it must have an accessible `void Dispose()` method.
@@ -235,7 +252,7 @@ A `struct` declared with the `ref` modifier may not implement any interfaces and
 
 Inside a nullable annotation context, any variable of a reference type is considered to be a **nonnullable reference type**. If you want to indicate that a variable may be null, you must append the type name with the `?` to declare the variable as a **nullable reference type**.
 
-For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized to a non-null value using either an initializer or all constructors. Furthermore, nonnullable reference types can't be assigned a value that could be null.
+For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized during construction. The compiler generates a warning if the variable is not set in a constructor, or an initializer. Furthermore, nonnullable reference types can't be assigned a value that could be null.
 
 Nullable reference types aren't checked to ensure they aren't assigned or initialized to null. However, the compiler uses flow analysis to ensure that any variable of a nullable reference type is checked against null before it's accessed or assigned to a nonnullable reference type.
 
@@ -249,13 +266,39 @@ Starting with C# 8.0, you can create and consume streams asynchronously. A metho
 1. It returns an <xref:System.Collections.Generic,IAsyncEnumerable%601>.
 1. The method contains `yield return` statements to return successive elements in the asynchronous stream.
 
-Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream to be declared with the `async` modifier and to return a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an <xref:System.Collections.Generic,IAsyncEnumerable%601>.
+Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream to be declared with the `async` modifier and to return a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an <xref:System.Collections.Generic,IAsyncEnumerable%601>. The following code generates a sequence from 1 to 20, waiting 100 ms between generating each number:
+
+```csharp
+public static async System.Collections.Generic.IAsyncEnumerable<int> GenerateSequence()
+{
+    for (int i = 0; i < 20; i++)
+    {
+        await Task.Delay(100);
+        yield return i;
+    }
+}
+```
+
+You would enumerate the sequence using the `await foreach` statement:
+
+```csharp
+await foreach (var number in GenerateSequence())
+{
+    Console.WriteLine(number);
+}
+```
 
 You can try asynchronous streams yourself in our tutorial on [creating and consuming async streams](../tutorials/generate-consume-asynchronous-stream.md).
 
-## Ranges and indices
+## Indices and ranges
 
-Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. Consider the following array:
+Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
+
+You can specify an index **from the end**. You specify **from the end** using the `^` operator. You are familiar with `array[2]` meaning the element "2 from the start". Now, `array[^2]` means the element "2 from the end". The index `^0` means "the end", or one past that last element.
+
+You can specify a **range** with the **range operator**: `..`. For example, `0..^0` specifies the entire range of the array: 0 from the start up to, but not including 0 from the end. Either operand may use "from the start" or "from the end". Furthermore, either operand may be omitted. The defaults are `0` for the start index, and `^0` for the end index.
+
+Let's look at a few examples. Consider the following array:
 
 ```csharp
 var words = new string[]
@@ -272,27 +315,26 @@ var words = new string[]
 };
 ```
 
-You can retrieve the last word by prefixing the index `1` with `^`:
+You can retrieve the last word with the `^1` index:
 
 ```csharp
 Console.WriteLine($"The last word is {words[^1]}");
+// writes "dog"
 ```
 
-When you take only a single element and specify from the end, indexing starts at 1.
-
-You can also specify ranges of elements. The following code creates a subrange with the words "quick", "brown", and "fox":
+The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` is not in the range.
 
 ```csharp
 var brownFox = words[1..4];
 ```
 
-Ranges can be specified from the end as well as the beginning. The following code creates a subrange with "lazy" and "dog":
+The following code creates a subrange with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` is not included:
 
 ```csharp
 var lazyDog = words[^2..^0];
 ```
 
-You can also create ranges that are open ended for the start, end, or both, as in the following code:
+The following examples create ranges that are open ended for the start, end, or both:
 
 ```csharp
 var allWords = words[..]; // contains "The" through "dog".
@@ -311,4 +353,3 @@ The range can then be used inside the `[` and `]` characters:
 ```csharp
 var text = words[phrase];
 ```
-

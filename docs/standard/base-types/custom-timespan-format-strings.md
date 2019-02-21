@@ -62,7 +62,7 @@ Custom <xref:System.TimeSpan> format strings are also used by the <xref:System.T
 |"FFFFFF"|The millionths of a second in a time interval. Any fractional trailing zeros are not displayed.<br /><br /> More information: [The "FFFFFF" Custom Format Specifier](#F6_Specifier).|`TimeSpan.Parse("00:00:06.3291791")`:<br /><br /> `FFFFFF`: 329179<br /><br /> `TimeSpan.Parse("0:0:3.1000009")`:<br /><br /> `ss\.FFFFFF`: 03.1|
 |"FFFFFFF"|The ten-millions of a second in a time interval. Any fractional trailing zeros or seven zeros are not displayed.<br /><br /> More information: [The "FFFFFFF" Custom Format Specifier](#F7_Specifier).|`TimeSpan.Parse("00:00:06.3291791")`:<br /><br /> `FFFFFF`: 3291791<br /><br /> `TimeSpan.Parse("0:0:3.1900000")`:<br /><br /> `ss\.FFFFFF`: 03.19|
 |'*string*'|Literal string delimiter.<br /><br /> More information: [Other Characters](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh':'mm':'ss` --> "14:32:17"|
-|\\|The escape character.<br /><br /> More information:[Other Characters](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
+|&#92;|The escape character.<br /><br /> More information:[Other Characters](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
 |Any other character|Any other unescaped character is interpreted as a custom format specifier.<br /><br /> More Information: [Other Characters](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
 
 <a name="dSpecifier"></a> 

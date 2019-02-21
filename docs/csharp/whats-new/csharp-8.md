@@ -1,6 +1,6 @@
 ---
 title: What's New in C# 8.0 - C# Guide
-description: Get an overview of the new features available in C# 8.0. This article is up to date with preview 2.
+description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 2.
 ms.date: 02/12/2019
 ---
 # What's new in C# 8.0
@@ -8,13 +8,13 @@ ms.date: 02/12/2019
 > [!NOTE]
 > This article was last updated for C# 8.0 preview 2.
 
-There are numerous enhancements to the C# language that you can try out already with preview 2. The new features added in preview 2 are:
+There are many enhancements to the C# language that you can try out already with preview 2. The new features added in preview 2 are:
 
-- Pattern matching enhancements:
-  * Switch expressions
-  * Property patterns
-  * positional patterns
-  * Tuple patterns
+- [Pattern matching enhancements](#more-patterns-in-more-places):
+  * [Switch expressions](#switch-expressions)
+  * [Property patterns](#property-patterns)
+  * [Tuple patterns](#tuple-patterns)
+  * [Positional patterns](#positional-patterns)
 - [Using declarations](#using-declarations)
 - [Static local functions](#static-local-functions)
 - [Disposable ref structs](#disposable-ref-structs)
@@ -29,38 +29,145 @@ The remainder of this article briefly describes these features. Where in-depth a
 
 ## More patterns in more places
 
-**Pattern matching** gives tools to provide shape-dependent functionality across related-but-different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns, using the `is` expression and the `switch` statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud based architectures, other language tools are needed.
+**Pattern matching** gives tools to provide shape-dependent functionality across related-but-different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns, using the `is` expression and the `switch` statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud-based architectures, other language tools are needed.
 
-C# 8.0 expands this vocabulary so you can use more pattern expressions in more places in your code. Consider these features when your data and functionality are separate. Consider pattern matching when your algorithms depend on a fact other the runtime type of an object.
+C# 8.0 expands this vocabulary so you can use more pattern expressions in more places in your code. Consider these features when your data and functionality are separate. Consider pattern matching when your algorithms depend on ay fact other than the runtime type of an object. These techniques provide another way to express designs.
 
+In addition to new patterns in new places, C# 8.0 adds **recursive patterns**. The result of any pattern expression is an expression. A recursive pattern is simply a pattern expression applied to the output of another pattern expression.
 
-<< Nice intro, work with data based on its shape>>
-
-<< describe recursive patterns here, because it spans all of them>>
-- Recursive patterns are simply patterns applied to the output of a pattern.
- 
 ### switch expressions
 
-<< just use an enum. The syntax is simple and clean. >>
-- colors of the rainbow
+Often, a switch statement produces a value in each of its `case` blocks. **Switch expressions** enable you to use more concise expression syntax. There are fewer repetitive `case`, and `break` keywords, and fewer curly braces.  As an example, consider the following enum that lists the colors of the rainbow:
 
-### property patterns
+```csharp
+public enum Rainbow
+{
+    Red,
+    Orange,
+    Yellow,
+    Blue,
+    Indigo,
+    Violet
+}
+```
 
-<< Type pattern followed by deconstruction >>
-- All folks with the same last name.? points in a quadrant?
-- missing properties on a type. 
+You could convert a `Rainbow` value to its RGB values using the following method containing a switch expression:
 
-### positional patterns
+```csharp
+public static RGBColor fromRainbow(Rainbow colorBand) =>
+    colorBand switch
+    {
+        Rainbow.Red    => new RGBColor(0xFF, 0x00, 0x00),
+        Rainbow.Orange => new RGBColor(0xFF, 0x7F, 0x00),
+        Rainbow.Yellow => new RGBColor(0xFF, 0xFF, 0x00),
+        Rainbow.Blue   => new RGBColor(0x00, 0x00, 0xFF),
+        Rainbow.Indigo => new RGBColor(0x4B, 0x00, 0x82),
+        Rainbow.Violet => new RGBColor(0x94, 0x00, 0xD3),
+        _              => throw new ArgumentException(message: "invalid enum value", paramName: nameof(colorBand)),
+    };
+```
 
-<< Just for deconstruction>>
-- Key / Value pair in dictionary
+There are several syntax improvements here.
 
-### tuple patterns
+- The variable comes before the `switch` keyword. That enables switch expression to compose using recursive patterns. The different order makes it visually easy to distinguish from the switch statement.
+- The `case` and `:` are replaced with `=>`. It's more concise.
+- The `default` case is replaced with a `_` discard.
+- The bodies are expressions, not statements.
 
-<< Tuples and multiple inputs. Think state machine.>>
-- traffic light
-- indicator
+Contrast that with the equivalent code using the classic `switch` statement:
 
+```csharp
+public static RGBColor fromRainbowClassic(Rainbow colorBand)
+{
+    switch (colorBand)
+    {
+        case Rainbow.Red:
+            return new RGBColor(0xFF, 0x00, 0x00);
+        case Rainbow.Orange:
+            return new RGBColor(0xFF, 0x7F, 0x00);
+        case Rainbow.Yellow:
+            return new RGBColor(0xFF, 0xFF, 0x00);
+        case Rainbow.Blue:
+            return new RGBColor(0x00, 0x00, 0xFF);
+        case Rainbow.Indigo:
+            return new RGBColor(0x4B, 0x00, 0x82);
+        case Rainbow.Violet:
+            return new RGBColor(0x94, 0x00, 0xD3);
+        default:
+            throw new ArgumentException(message: "invalid enum value", paramName: nameof(colorBand));
+    };
+}
+```
+
+### Property patterns
+
+The **property pattern** enables you to match on properties of the object examined. Consider an eCommerce site that must compute sales tax based on the buyer's address. That computation is not a core responsibility of an `Address` class. It will change over time, likely more often than address format changes. The amount of sales tax depends on the `State` property of the address. The following method uses the property pattern to compute the sales tax from the address and the price:
+
+```csharp
+public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
+    location switch
+{
+    { State: "WA" } => salePrice * 0.06M,
+    { State: "MN" } => salePrice * 0.75M,
+    { State: "MI" } => salePrice * 0.05M,
+    // other cases removed for brevity...
+    _ => 0M
+};
+```
+
+Pattern matching creates a concise syntax for expressing this algorithm.
+
+### Tuple patterns
+
+Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values.  The following code shows a switch expression for the game *rock, paper, scissors*:
+
+```csharp
+public static string RockPaperScissors(string first, string second)
+    => (first, second) switch
+{
+    ("rock", "paper") => "rock is covered by paper. Paper wins.",
+    ("rock", "scissors") => "rock breaks scissors. Rock wins.",
+    ("paper", "rock") => "paper covers rock. Paper wins.",
+    ("paper", "scissors") => "paper is cut by scissors. Scissors wins.",
+    ("scissors", "rock") => "scissors is broken by rock. Rock wins.",
+    ("scissors", "paper") => "scissors cuts paper. Scissors wins.",
+    (_, _) => "tie"
+};
+```
+
+The messages indicate the winner. The discard case represents the three combinations for ties, or other text inputs.
+
+### Positional patterns
+
+Some types include a `Deconstruct` method that deconstructs its properties into discrete variables. When a `Deconstruct` method is accessible, you can use **positional patterns** to inspect properties of the object and use those properties for a pattern.  Consider the following `Point` class that includes a `Deconstruct` method to create discrete variables for `X` and `Y`:
+
+```csharp
+public class Point
+{
+    public int X { get; }
+    public int Y { get; }
+
+    public Point(int x, int y) => (X, Y) = (x, y);
+
+    public void Deconstruct(out int x, out int y) =>
+        (x, y) = (X, Y);
+}
+```
+
+The following method uses the **positional pattern** to extract the values of `x` and `y`. Then, it uses a `when` clause to determine the quadrant of the point:
+
+```csharp
+static string Quadrant(Point p) => p switch
+{
+    (0, 0) => "origin",
+    (var x, var y) when x > 0 && y > 0 => "Quadrant 1",
+    (var x, var y) when x < 0 && y > 0 => "Quadrant 2",
+    (var x, var y) when x < 0 && y < 0 => "Quadrant 3",
+    (var x, var y) when x > 0 && y < 0 => "Quadrant 4",
+    (var x, var y) => "on a border",
+    _ => "unknown"
+};
+```
 
 ## using declarations
 
@@ -105,9 +212,9 @@ Using declarations provide the same behavior when exceptions are thrown: the `Di
 
 ## Static local functions
 
-You can now add the `static` modifier to local functions to ensure that local function does not capture (reference) any variables from the enclosing scope. Doing so generates `CS8421`, "A static local function cannot contain a reference to <variable>." 
+You can now add the `static` modifier to local functions to ensure that local function doesn't capture (reference) any variables from the enclosing scope. Doing so generates `CS8421`, "A static local function can't contain a reference to <variable>." 
 
-Consider the following code. The local function `LocalFunction` accesses the variable `y`, declared in the enclosing scope (the method `M`). Therefore, `LocalFunction` cannot be declared with the `static` modifier:
+Consider the following code. The local function `LocalFunction` accesses the variable `y`, declared in the enclosing scope (the method `M`). Therefore, `LocalFunction` can't be declared with the `static` modifier:
 
 ```csharp
 int M()
@@ -128,11 +235,11 @@ A `struct` declared with the `ref` modifier may not implement any interfaces. Th
 
 Inside a nullable annotation context, any variable of a reference type is considered to be a **nonnullable reference type**. If you want to indicate that a variable may be null, you must append the type name with the `?` to declare the variable as a **nullable reference type**.
 
-For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized to a non-null value either with an initializer or in all constructors. Furthermore, nonnullable reference types cannot be assigned a value that could be null.
+For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized to a non-null value using either an initializer or all constructors. Furthermore, nonnullable reference types can't be assigned a value that could be null.
 
-Nullable reference types are not checked to ensure that they are not assigned or initialized to null. However, the compiler uses flow analysis to ensure that any variable of a nullable reference type is checked against null before it is accessed, or assigned to a nonnullable reference type.
+Nullable reference types aren't checked to ensure they aren't assigned or initialized to null. However, the compiler uses flow analysis to ensure that any variable of a nullable reference type is checked against null before it's accessed, or assigned to a nonnullable reference type.
 
-You can learn more about the feature in the overview of [nullable reference types](../nullable-references.md). You can try it your self in a new application in this [nullable reference types tutorial](../tutorials/nullable-reference-types.md). You can learn about the steps to migrate an existing codebase to make use of nullable reference types in this tutorial for [migrating an application to use nullable reference types]../tutorials/upgrade-to-nullable-references.md).
+You can learn more about the feature in the overview of [nullable reference types](../nullable-references.md). Try it yourself in a new application in this [nullable reference types tutorial](../tutorials/nullable-reference-types.md). Learn about the steps to migrate an existing codebase to make use of nullable reference types in this tutorial for [migrating an application to use nullable reference types]../tutorials/upgrade-to-nullable-references.md).
 
 ## Asynchronous streams
 
@@ -142,13 +249,13 @@ Starting with C# 8.0, you can create and consume streams asynchronously. A metho
 1. It returns an `IAsyncEnumerable<T>`.
 1. The method contains `yield return` statements to return successive elements in the asynchronous stream.
 
-Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream was declared with the `async` modifier and returns a type allowed for an `async` method. Typically this is a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an `IAsyncEnumerable<T>`.
+Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream was declared with the `async` modifier and returns a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an `IAsyncEnumerable<T>`.
 
 You can try asynchronous streams yourself in our tutorial on [creating and consuming async streams](../tutorials/generate-consume-asynchronous-stream.md).
 
 ## Ranges and indices
 
-Ranges and indices provide a succinct syntax for specifying sub-ranges in an array, <xref:System.Span%601>, or <xref:System.ReadonlySpan%601>. Consider the following array:
+Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadonlySpan%601>. Consider the following array:
 
 ```csharp
 var words = new string[]
@@ -171,21 +278,21 @@ You can retrieve the last word by prefixing the index `1` with `^`:
 Console.WriteLine($"The last word is {words[^1]}");
 ```
 
-Note that when you take only a single element and specify from the end, indexing starts at 1.
+When you take only a single element and specify from the end, indexing starts at 1.
 
-You can also specify ranges of a array. The following code creates a sub-range with the words "quick", "brown", and "fox":
+You can also specify ranges of an array. The following code creates a subrange with the words "quick", "brown", and "fox":
 
 ```csharp
 var brownFox = words[1..4];
 ```
 
-Ranges can be specified from the end as well as the beginning. The following code creates a sub-range with "lazy" and "dog":
+Ranges can be specified from the end as well as the beginning. The following code creates a subrange with "lazy" and "dog":
 
 ```csharp
 var lazyDog = words[^2..^0];
 ```
 
-You can also also create ranges that are open ended for the start, end, or both, as in the following code:
+You can also create ranges that are open ended for the start, end, or both, as in the following code:
 
 ```csharp
 var allWords = words[..]; // contains "The" through "dog".

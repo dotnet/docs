@@ -246,7 +246,7 @@ mlContext.Model.Save(model, fs);
 
 This is how you save the model to a .zip file, which can then be loaded into and used in your other .NET applications.
 
-## Deploy and consume model
+## 4. Deploy and consume model
 
 To use the model in another .NET application (or in a different method just for trying the model), follow these steps:
 

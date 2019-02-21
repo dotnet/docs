@@ -1,6 +1,6 @@
 ---
 title: What's New in C# 7.0 - C# Guide
-description: Get an overview of the new features coming in version 7.0 of the C# language.
+description: Get an overview of the new features in version 7.0 of the C# language.
 ms.date: 12/21/2016
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 ---

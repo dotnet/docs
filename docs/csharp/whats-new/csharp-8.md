@@ -29,9 +29,9 @@ The remainder of this article briefly describes these features. Where in-depth a
 
 ## More patterns in more places
 
-**Pattern matching** gives tools to provide shape-dependent functionality across related-but-different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns, using the `is` expression and the `switch` statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud-based architectures, other language tools are needed.
+**Pattern matching** gives tools to provide shape-dependent functionality across related but different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns by using the `is` expression and the `switch` statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud-based architectures, other language tools are needed.
 
-C# 8.0 expands this vocabulary so you can use more pattern expressions in more places in your code. Consider these features when your data and functionality are separate. Consider pattern matching when your algorithms depend on ay fact other than the runtime type of an object. These techniques provide another way to express designs.
+C# 8.0 expands this vocabulary so you can use more pattern expressions in more places in your code. Consider these features when your data and functionality are separate. Consider pattern matching when your algorithms depend on a fact other than the runtime type of an object. These techniques provide another way to express designs.
 
 In addition to new patterns in new places, C# 8.0 adds **recursive patterns**. The result of any pattern expression is an expression. A recursive pattern is simply a pattern expression applied to the output of another pattern expression.
 
@@ -67,10 +67,10 @@ public static RGBColor fromRainbow(Rainbow colorBand) =>
     };
 ```
 
-There are several syntax improvements here.
+There are several syntax improvements here:
 
-- The variable comes before the `switch` keyword. That enables switch expression to compose using recursive patterns. The different order makes it visually easy to distinguish from the switch statement.
-- The `case` and `:` are replaced with `=>`. It's more concise.
+- The variable comes before the `switch` keyword. That enables switch expression to compose using recursive patterns. The different order makes it visually easy to distinguish the switch expression from the switch statement.
+- The `case` and `:` elements are replaced with `=>`. It's more concise.
 - The `default` case is replaced with a `_` discard.
 - The bodies are expressions, not statements.
 
@@ -119,7 +119,7 @@ Pattern matching creates a concise syntax for expressing this algorithm.
 
 ### Tuple patterns
 
-Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values.  The following code shows a switch expression for the game *rock, paper, scissors*:
+Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values expressed as a [tuple](../tuples.md).  The following code shows a switch expression for the game *rock, paper, scissors*:
 
 ```csharp
 public static string RockPaperScissors(string first, string second)
@@ -208,7 +208,7 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 }
 ```
 
-Using declarations provide the same behavior when exceptions are thrown: the `Dispose()` call is in a `finally` block.s
+Using declarations provide the same behavior as [using statements](../language-reference/keywords/using-statement.md) when exceptions are thrown: the `Dispose` call is in a `finally` block.
 
 ## Static local functions
 
@@ -229,7 +229,7 @@ int M()
 
 ## Disposable ref structs
 
-A `struct` declared with the `ref` modifier may not implement any interfaces. Therefore, to enable a `ref struct` to be disposed, it need not implement <xref:System.IDisposable>, but it must have an accessible `void Dispose()` method.
+A `struct` declared with the `ref` modifier may not implement any interfaces and so cannot implement <xref:System.IDisposable>. Therefore, to enable a `ref struct` to be disposed, it must have an accessible `void Dispose()` method.
 
 ## Nullable reference types
 
@@ -237,25 +237,25 @@ Inside a nullable annotation context, any variable of a reference type is consid
 
 For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized to a non-null value using either an initializer or all constructors. Furthermore, nonnullable reference types can't be assigned a value that could be null.
 
-Nullable reference types aren't checked to ensure they aren't assigned or initialized to null. However, the compiler uses flow analysis to ensure that any variable of a nullable reference type is checked against null before it's accessed, or assigned to a nonnullable reference type.
+Nullable reference types aren't checked to ensure they aren't assigned or initialized to null. However, the compiler uses flow analysis to ensure that any variable of a nullable reference type is checked against null before it's accessed or assigned to a nonnullable reference type.
 
-You can learn more about the feature in the overview of [nullable reference types](../nullable-references.md). Try it yourself in a new application in this [nullable reference types tutorial](../tutorials/nullable-reference-types.md). Learn about the steps to migrate an existing codebase to make use of nullable reference types in this tutorial for [migrating an application to use nullable reference types]../tutorials/upgrade-to-nullable-references.md).
+You can learn more about the feature in the overview of [nullable reference types](../nullable-references.md). Try it yourself in a new application in this [nullable reference types tutorial](../tutorials/nullable-reference-types.md). Learn about the steps to migrate an existing codebase to make use of nullable reference types in the [migrating an application to use nullable reference types tutorial]../tutorials/upgrade-to-nullable-references.md).
 
 ## Asynchronous streams
 
 Starting with C# 8.0, you can create and consume streams asynchronously. A method that returns an asynchronous stream has three properties:
 
 1. It was declared with the `async` modifier.
-1. It returns an `IAsyncEnumerable<T>`.
+1. It returns an <xref:System.Collections.Generic,IAsyncEnumerable%601>.
 1. The method contains `yield return` statements to return successive elements in the asynchronous stream.
 
-Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream was declared with the `async` modifier and returns a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an `IAsyncEnumerable<T>`.
+Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream to be declared with the `async` modifier and to return a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an <xref:System.Collections.Generic,IAsyncEnumerable%601>.
 
 You can try asynchronous streams yourself in our tutorial on [creating and consuming async streams](../tutorials/generate-consume-asynchronous-stream.md).
 
 ## Ranges and indices
 
-Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadonlySpan%601>. Consider the following array:
+Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. Consider the following array:
 
 ```csharp
 var words = new string[]
@@ -280,7 +280,7 @@ Console.WriteLine($"The last word is {words[^1]}");
 
 When you take only a single element and specify from the end, indexing starts at 1.
 
-You can also specify ranges of an array. The following code creates a subrange with the words "quick", "brown", and "fox":
+You can also specify ranges of elements. The following code creates a subrange with the words "quick", "brown", and "fox":
 
 ```csharp
 var brownFox = words[1..4];

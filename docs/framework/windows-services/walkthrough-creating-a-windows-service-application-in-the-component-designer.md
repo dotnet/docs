@@ -470,7 +470,7 @@ For more information, see [How to: Install and Uninstall Services](../../../docs
 
 ## Next steps
 
-Now that you've created the service, you might want to create a standalone setup program that others can use to install your Windows service. ClickOnce doesn't support Windows services, but you can use the [WiX Toolset](http://wixtoolset.org/) to create an installer for a Windows service. For other ideas, see [Create an installer package](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-client).
+Now that you've created the service, you might want to create a standalone setup program that others can use to install your Windows service. ClickOnce doesn't support Windows services, but you can use the [WiX Toolset](http://wixtoolset.org/) to create an installer for a Windows service. For other ideas, see [Create an installer package](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
 
 You might explore the use of a <xref:System.ServiceProcess.ServiceController> component, which enables you to send commands to the service you've installed.
 
@@ -481,4 +481,4 @@ You can use an installer to create an event log when the application is installe
 - [Windows service applications](../../../docs/framework/windows-services/index.md)
 - [Introduction to Windows service applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
 - [How to: Debug Windows service applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)
-- [Services (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms685141.aspx)
+- [Services (Windows)](/windows/desktop/Services/services)

@@ -57,7 +57,7 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
 - <xref:System.Printing.PrintQueue.AddJob%2A>
 - <xref:System.Threading.ApartmentState>
 - <xref:System.STAThreadAttribute>
-- [XPS](https://www.microsoft.com/xps)
+- [XPS Documents](/windows/desktop/printdocs/documents)
 - [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90))
 - [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))
 - [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))

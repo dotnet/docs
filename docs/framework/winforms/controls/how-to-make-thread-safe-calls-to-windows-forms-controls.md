@@ -133,8 +133,6 @@ When you debug the app and select the **Unsafe call** button, the Visual Studio 
 
 When you select the **Safe call** button, **This text was set safely** appears in the text box, which indicates that the <xref:System.Windows.Forms.Control.Invoke%2A> method was called. When you select the **Safe BW call** button, **This text was set safely by BackgroundWorker** appears in the text box, indicating that the handler for the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event of <xref:System.ComponentModel.BackgroundWorker> was called.
 
-For instructions on how to build and run the example, see [How to: Compile and run a complete Windows Forms code example using Visual Studio](https://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416). This example requires references to the System.Drawing and System.Windows.Forms assemblies.
-
 ```csharp
 using System;
 using System.ComponentModel;

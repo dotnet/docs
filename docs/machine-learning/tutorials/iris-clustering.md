@@ -3,7 +3,7 @@ title: Cluster iris flowers using a clustering learner - ML.NET
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
 ms.author: johalex
-ms.date: 01/11/2019
+ms.date: 02/19/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET so that I can build a model to cluster iris flowers based on its parameters.
@@ -79,7 +79,7 @@ Remove the existing class definition and add the following code, which defines t
 
 [!code-csharp[Define data classes](~/samples/machine-learning/tutorials/IrisFlowerClustering/IrisData.cs#ClassDefinitions)]
 
-`IrisData` is the input data class and has definitions for each feature from the data set. Use the [Column](xref:Microsoft.ML.Data.ColumnAttribute) attribute to specify the indices of the source columns in the data set file.
+`IrisData` is the input data class and has definitions for each feature from the data set. Use the [LoadColumn](xref:Microsoft.ML.Data.LoadColumnAttribute) attribute to specify the indices of the source columns in the data set file.
 
 The `ClusterPrediction` class represents the output of the clustering model applied to an `IrisData` instance. Use the [ColumnName](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute to bind the `PredictedClusterId` and `Distances` fields to the **PredictedLabel** and **Score** columns respectively. In case of the clustering task those columns have the following meaning:
 
@@ -122,7 +122,7 @@ Add the following code to the `Main` method to setup the way to load data:
 
 [!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#SetupTextLoader)]
 
-Note that the column names and indices match the schema defined by the `IrisData` class. The <xref:Microsoft.ML.Data.DataKind.R4?displayProperty=nameWithType> value specifies the `float` type.
+Use the [generic `CreateTextLoader`](xref:Microsoft.ML.TextLoaderSaverCatalog.CreateTextLoader%60%601(Microsoft.ML.DataOperationsCatalog,System.Boolean,System.Char,System.Boolean,System.Boolean,System.Boolean)) method to infer the dataset schema from the `IrisData` class definition.
 
 Use instantiated <xref:Microsoft.ML.Data.TextLoader> instance to create an <xref:Microsoft.Data.DataView.IDataView> instance, which represents the data source for the training data set:
 

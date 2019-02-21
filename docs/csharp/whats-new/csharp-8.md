@@ -37,7 +37,7 @@ In addition to new patterns in new places, C# 8.0 adds **recursive patterns**. T
 
 ### switch expressions
 
-Often, a [`switch`](../language-reference/keywords/switch.md) statement produces a value in each of its `case` blocks. **Switch expressions** enable you to use more concise expression syntax. There are fewer repetitive `case`, and `break` keywords, and fewer curly braces.  As an example, consider the following enum that lists the colors of the rainbow:
+Often, a [`switch`](../language-reference/keywords/switch.md) statement produces a value in each of its `case` blocks. **Switch expressions** enable you to use more concise expression syntax. There are fewer repetitive `case` and `break` keywords, and fewer curly braces.  As an example, consider the following enum that lists the colors of the rainbow:
 
 ```csharp
 public enum Rainbow
@@ -70,7 +70,7 @@ public static RGBColor FromRainbow(Rainbow colorBand) =>
 There are several syntax improvements here:
 
 - The variable comes before the `switch` keyword. The different order makes it visually easy to distinguish the switch expression from the switch statement.
-- The `case` and `:` elements are replaced with `=>`. It's more concise.
+- The `case` and `:` elements are replaced with `=>`. It's more concise and intuitive.
 - The `default` case is replaced with a `_` discard.
 - The bodies are expressions, not statements.
 

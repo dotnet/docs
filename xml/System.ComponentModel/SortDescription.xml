@@ -41,8 +41,6 @@
         <param name="direction">The sort order.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.SortDescription" /> structure.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="propertyName" /> parameter cannot be null.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="propertyName" /> parameter cannot be empty</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="direction" /> parameter does not specify a valid value.</exception>
       </Docs>
     </Member>

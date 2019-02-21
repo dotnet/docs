@@ -71,7 +71,7 @@ Target .NET Framework version used for test execution. Examples of valid values 
 
 `--Parallel|/Parallel`
 
-Execute tests in parallel. By default, all available cores on the machine are available for use. Specify explicit number of cores by setting MaxCpuCount property under the RunConfiguration node in the runsettings file.
+Execute tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the MaxCpuCount property under the RunConfiguration node in the runsettings file.
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
@@ -160,7 +160,7 @@ Target .NET Framework version used for test execution. Examples of valid values 
 
 `--Parallel|/Parallel`
 
-Execute tests in parallel. By default, all available cores on the machine are available for use. Specify explicit number of cores by setting MaxCpuCount property under the RunConfiguration node in the runsettings file.
+Execute tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the MaxCpuCount property under the RunConfiguration node in the runsettings file.
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
@@ -236,7 +236,7 @@ Target .NET Framework version used for test execution. Examples of valid values 
 
 `--Parallel|/Parallel`
 
-Execute tests in parallel. By default, all available cores on the machine are available for use. Specify explicit number of cores by setting MaxCpuCount property under the RunConfiguration node in the runsettings file.
+Execute tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the MaxCpuCount property under the RunConfiguration node in the runsettings file.
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 

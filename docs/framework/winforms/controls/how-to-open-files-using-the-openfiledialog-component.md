@@ -12,70 +12,82 @@ ms.assetid: 9d88367a-cc21-4ffd-be74-89fd63767d35
 ---
 # How to: Open files with the OpenFileDialog 
 
-The <xref:System.Windows.Forms.OpenFileDialog?displayProperty=nameWithType> component opens the Windows dialog box for browsing and selecting files. To open and read the selected files, you can use the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method, or create an instance of the <xref:System.IO.StreamReader?displayProperty=nameWithType> class. The following examples show both approaches. 
+The <xref:System.Windows.Forms.OpenFileDialog?displayProperty=nameWithType> component opens the Windows dialog box for browsing and selecting files. To open and read the selected files, you can use the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A?displayProperty=nameWithType> method, or create an instance of the <xref:System.IO.StreamReader?displayProperty=nameWithType> class. The following examples show both approaches. 
 
-To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. The examples run a <xref:System.Security.Permissions.FileIOPermission> permission check, and can throw an exception due to insufficient privileges if run in a partial-trust context. For more information, see [Code access security basics](../../../../docs/framework/misc/code-access-security-basics.md).
+In .NET Framework, to get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. The examples run a <xref:System.Security.Permissions.FileIOPermission> permission check, and can throw an exception due to insufficient privileges if run in a partial-trust context. For more information, see [Code access security basics](../../../../docs/framework/misc/code-access-security-basics.md).
 
-You can build and run these examples standalone from the C# or Visual Basic command line. For more information, see [Command-line building with csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Build from the command line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md). 
+You can build and run these examples as .NET apps from the C# or Visual Basic command line. For more information, see [Command-line building with csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Build from the command line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md). 
 
-For .NET Core 3.0, you can build and run the examples from a folder that has a Windows Forms *\<folder name>.csproj* file with the following contents: 
-```csharp
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
-    <RootNamespace>folder name</RootNamespace>
-    <UseWindowsForms>true</UseWindowsForms>
-  </PropertyGroup>
-</Project>
-```
+Starting with .NET Core 3.0, you can also build and run the examples from a folder that has a .NET Core Windows Forms *\<folder name>.csproj* project file. 
 
 ## Example: Read a file as a stream with StreamReader  
   
-The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method. After the user chooses a file and selects **OK**, an instance of the <xref:System.IO.StreamReader> class reads the file and displays its contents in a message box. For more information about reading from file streams, see <xref:System.IO.FileStream.BeginRead%2A?displayProperty=nameWithType> and <xref:System.IO.FileStream.Read%2A?displayProperty=nameWithType>.  
+The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method. After the user chooses a file and selects **OK**, an instance of the <xref:System.IO.StreamReader> class reads the file and displays its contents in the text box. For more information about reading from file streams, see <xref:System.IO.FileStream.BeginRead%2A?displayProperty=nameWithType> and <xref:System.IO.FileStream.Read%2A?displayProperty=nameWithType>.  
  
 
 ```csharp  
 using System;
+using System.Drawing;
 using System.IO;
 using System.Security;
 using System.Windows.Forms;
 
 public class OpenFileDialogForm : Form
 {
-    public Button selectButton;
-    public OpenFileDialog openFileDialog1;
-
-    public OpenFileDialogForm()
-    {
-        selectButton = new Button();
-        openFileDialog1 = new OpenFileDialog();
-
-        selectButton.Text = "Select file";
-        Controls.Add(selectButton);
-        selectButton.Click += new EventHandler(selectButton_Click);
-    }
-
     [STAThread]
     public static void Main()
     {
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.EnableVisualStyles();
         Application.Run(new OpenFileDialogForm());
     }
 
-    private void selectButton_Click(object sender, EventArgs e)
+    private Button selectButton;
+    private OpenFileDialog openFileDialog1;
+    private TextBox textBox1;
+
+    public OpenFileDialogForm()
+    {
+        InitializeComponent();
+    }
+    private void InitializeComponent()
+    {
+        openFileDialog1 = new OpenFileDialog();
+        selectButton = new Button
+        {
+            Size = new Size(100, 20),
+            Location = new Point(15, 15),
+            Text = "Select file"
+        };
+        selectButton.Click += new EventHandler(SelectButton_Click);
+        textBox1 = new TextBox
+        {
+            Size = new Size(300, 300),
+            Location = new Point(15, 40),
+            Multiline = true,
+            ScrollBars = ScrollBars.Vertical
+        };
+        ClientSize = new Size(400, 400);
+        Controls.Add(selectButton);
+        Controls.Add(textBox1);
+    }
+    private void SetText(string text)
+    {
+        textBox1.Text = text;
+    }
+    private void SelectButton_Click(object sender, EventArgs e)
     {
         if (openFileDialog1.ShowDialog() == DialogResult.OK)
         {
             try
             {
-                StreamReader sr = new StreamReader(openFileDialog1.FileName);
-                MessageBox.Show(sr.ReadToEnd(), "File contents:", MessageBoxButtons.OK);
+                var sr = new StreamReader(openFileDialog1.FileName);
+                SetText(sr.ReadToEnd());
             }
             catch (SecurityException ex)
             {
-                MessageBox.Show("Security error.\n\n" +
-                    "Error message: " + ex.Message + "\n\n" +
-                    "Details:\n\n" + ex.StackTrace);
+                MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
+                $"Details:\n\n{ex.StackTrace}");
             }
         }
     }
@@ -83,41 +95,57 @@ public class OpenFileDialogForm : Form
 ```
 
 ```vb  
-Imports System.ComponentModel
+Imports System.Drawing
 Imports System.IO
 Imports System.Security
 Imports System.Windows.Forms
 
-Public Class OpenFileDialogForm : Inherits Form 
-   Dim WithEvents selectButton As Button
-   Dim openFileDialog1 As OpenFileDialog
-   
-   Public Sub New()
-      openFileDialog1 = New OpenFileDialog()
-      selectButton = New Button()
-      With selectButton
-         .Text = "Select file"
-      End With
-      Controls.Add(selectButton)
-   End Sub
-   
-   Public Sub selectButton_Click(sender As Object, e As EventArgs) _ 
-              Handles selectButton.Click
-        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+Public Class OpenFileDialogForm : Inherits Form
+    Dim WithEvents SelectButton As Button
+    Dim openFileDialog1 As OpenFileDialog
+    Dim WithEvents TextBox1 As TextBox
+
+    Public Shared Sub Main()
+        Application.SetCompatibleTextRenderingDefault(False)
+        Application.EnableVisualStyles()
+        Dim frm As New OpenFileDialogForm()
+        Application.Run(frm)
+    End Sub
+    Private Sub New()
+        ClientSize = New Size(400, 400)
+        openFileDialog1 = New OpenFileDialog()
+        SelectButton = New Button()
+        With SelectButton
+            .Text = "Select file"
+            .Location = New Point(15, 15)
+            .Size = New Size(100, 25)
+        End With
+        TextBox1 = New TextBox()
+        With TextBox1
+            .Size = New Size(300, 300)
+            .Location = New Point(15, 50)
+            .Multiline = True
+            .ScrollBars = ScrollBars.Vertical
+        End With
+        Controls.Add(SelectButton)
+        Controls.Add(TextBox1)
+    End Sub
+
+    Private Sub SetText(text)
+        TextBox1.Text = text
+    End Sub
+    Public Sub SelectButton_Click(sender As Object, e As EventArgs) _
+              Handles SelectButton.Click
+        If openFileDialog1.ShowDialog() = DialogResult.OK Then
             Try
-                Dim sr As New StreamReader(OpenFileDialog1.FileName)
-                MessageBox.Show(sr.ReadToEnd(), "File contents:", MessageBoxButtons.OK)
+                Dim sr As New StreamReader(openFileDialog1.FileName)
+                SetText(sr.ReadToEnd())
             Catch SecEx As SecurityException
-                MessageBox.Show("Security error.\n\n" &
-                    "Error message: " & SecEx.Message & "\n\n" &
-                    "Details (send to Support):\n\n" & SecEx.StackTrace)
+                MessageBox.Show($"Security error:{vbCrLf}{vbCrLf}{SecEx.Message}{vbCrLf}{vbCrLf}" &
+                $"Details:{vbCrLf}{vbCrLf}{SecEx.StackTrace}")
             End Try
         End If
     End Sub
-
-   Public Shared Sub Main()
-      Application.Run(New OpenFileDialogForm())
-   End Sub
 End Class
 ```  
 
@@ -135,9 +163,17 @@ using System.Windows.Forms;
 
 public class OpenFileDialogForm : Form
 {
-    public Button selectButton;
-    public OpenFileDialog openFileDialog1;
-    public BackgroundWorker backgroundWorker1;
+    [STAThread]
+    public static void Main()
+    {
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.EnableVisualStyles();
+        Application.Run(new OpenFileDialogForm());
+    }
+
+    private Button selectButton;
+    private OpenFileDialog openFileDialog1;
+    private BackgroundWorker backgroundWorker1;
 
     public OpenFileDialogForm()
     {
@@ -154,12 +190,6 @@ public class OpenFileDialogForm : Form
         selectButton.Click += new EventHandler(selectButton_Click);
     }
 
-    [STAThread]
-    public static void Main()
-    {
-        Application.Run(new OpenFileDialogForm());
-    }
-
     private void selectButton_Click(object sender, EventArgs e)
     {
         if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -174,9 +204,8 @@ public class OpenFileDialogForm : Form
             }
             catch (SecurityException ex)
             {
-                MessageBox.Show("Security error.\n\n" +
-                    "Error message: " + ex.Message + "\n\n" +
-                    "Details:\n\n" + ex.StackTrace);
+                MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
+                $"Details:\n\n{ex.StackTrace}");
             }
         }
     }
@@ -191,44 +220,45 @@ Imports System.Security
 Imports System.Windows.Forms
 
 Public Class OpenFileDialogForm : Inherits Form 
-   Dim WithEvents selectButton As Button
-   Dim openFileDialog1 As OpenFileDialog
-   Dim backgroundWorker1 As BackgroundWorker
+    Dim WithEvents selectButton As Button
+    Dim openFileDialog1 As OpenFileDialog
+    Dim backgroundWorker1 As BackgroundWorker
 
-   Public Sub New()
-      backgroundWorker1 = New BackgroundWorker()
-      openFileDialog1 = New OpenFileDialog()
-      With openFileDialog1
-         .FileName = "Select a text file"
-         .Filter = "Text files (*.txt)|*.txt"
-         .Title = "Open text file"
-      End With
-      selectButton = New Button()
-      With selectButton
-         .Text = "Select file"
-      End With
-      Controls.Add(selectButton)
-   End Sub
-   
-   Public Sub selectButton_Click(sender As Object, e As EventArgs) _ 
-              Handles selectButton.Click
+    Public Shared Sub Main()
+      Application.SetCompatibleTextRenderingDefault(false)
+      Application.EnableVisualStyles()
+      Dim frm As New OpenFileDialogForm()
+      Application.Run(frm)
+    End Sub
+
+    Private Sub New()
+        backgroundWorker1 = New BackgroundWorker()
+        openFileDialog1 = New OpenFileDialog()
+        With openFileDialog1
+           .FileName = "Select a text file"
+           .Filter = "Text files (*.txt)|*.txt"
+           .Title = "Open text file"
+        End With
+        selectButton = New Button()
+        With selectButton
+           .Text = "Select file"
+        End With
+        Controls.Add(selectButton)
+    End Sub
+    
+    Public Sub selectButton_Click(sender As Object, e As EventArgs) _ 
+            Handles selectButton.Click
         If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
             Try
                 Dim filePath = OpenFileDialog1.FileName
                 Dim fs As FileStream = New FileStream(filePath, FileMode.Open)
                 Process.Start("notepad.exe", filePath)
             Catch SecEx As SecurityException
-                MessageBox.Show("Security error. Please contact your administrator.\n\n" &
-                    "Error message: " & SecEx.Message & "\n\n" &
-                    "Details (send to Support):\n\n" & SecEx.StackTrace)
+                MessageBox.Show($"Security error:{vbCrLf}{vbCrLf}{SecEx.Message}{vbCrLf}{vbCrLf}" &
+                $"Details:{vbCrLf}{vbCrLf}{SecEx.StackTrace}")
             End Try
         End If
     End Sub
-
-Public Shared Sub Main()
-      Dim frm As New OpenFileDialogForm()
-      Application.Run(frm)
-   End Sub
 End Class
 ```
 

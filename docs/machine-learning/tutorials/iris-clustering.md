@@ -3,7 +3,7 @@ title: Cluster iris flowers using a clustering learner - ML.NET
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
 ms.author: johalex
-ms.date: 01/11/2019
+ms.date: 02/19/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET so that I can build a model to cluster iris flowers based on its parameters.

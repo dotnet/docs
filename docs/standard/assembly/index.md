@@ -19,7 +19,7 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
   
 -   You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](../../csharp/programming-guide/concepts/reflection.md) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).   
   
--   You can load an assembly only to inspect it by calling a method <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom?displayProperty=nameWithType%2A>.  
+-   You can load an assembly only to inspect it by calling a method <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A?displayProperty=nameWithType>.  
   
 ## Assembly manifest  
  Within every assembly is an *assembly manifest*. Similar to a table of contents, the assembly manifest contains the following:  

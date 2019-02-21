@@ -18,7 +18,7 @@ In .NET Framework, to get or set the <xref:System.Windows.Forms.FileDialog.FileN
 
 You can build and run these examples as .NET Framework apps from the C# or Visual Basic command line. For more information, see [Command-line building with csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Build from the command line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md). 
 
-Starting with .NET Core 3.0, you can also build and run the examples from a folder that has a .NET Core Windows Forms *\<folder name>.csproj* project file. 
+Starting with .NET Core 3.0, you can also build and run the examples as Windows .NET Core apps from a folder that has a .NET Core Windows Forms *\<folder name>.csproj* project file. 
 
 ## Example: Read a file as a stream with StreamReader  
   

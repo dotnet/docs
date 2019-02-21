@@ -3,21 +3,21 @@ title: Key takeaways
 description: Review the key takeaways for the guide.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/23/2018
+ms.date: 02/15/2019
 ---
 # Key takeaways
 
--   Container-based solutions provide important benefits of cost savings because containers are a solution to deployment problems caused by the lack of dependencies in production environments, therefore, improving DevOps and production operations significantly.
+- Container-based solutions provide important cost saving benefits because containers solve deployment problems caused by dependency failures in production environments, therefore, improving DevOps and production operations significantly.
 
--   Docker is becoming the de facto standard in the container industry, supported by the most significant vendors in the Linux and Windows ecosystems, including Microsoft. In the future, Docker will be ubiquitous in any datacenter in the cloud or on-premises.
+- Docker is becoming the de facto standard in the container industry, supported by the most significant vendors in the Linux and Windows ecosystems, including Microsoft. In the future, Docker will be ubiquitous in any datacenter in the cloud or on-premises.
 
--   A Docker container is becoming the standard unit of deployment for any server-based application or service.
+- A Docker container is becoming the standard unit of deployment for any server-based application or service.
 
--   Docker orchestrators like the ones provided in Azure Container Service (Mesosphere Datacenter Operating System (DC/OS), Docker Swarm, Kubernetes) and Azure Service Fabric are fundamental and indispensable for any microservices-based or multicontainer application with significant complexity and scalability needs.
+- Docker orchestrators like the ones provided in Azure Kubernetes Service (AKS) and Azure Service Fabric are fundamental and indispensable for any microservices-based or multi-container applications that have significant complexity and scalability needs.
 
--   An end-to-end DevOps environment supporting Continuous Integration/Continuous Deployment connecting to the production Docker environments provides agility and ultimately improves the time to market of your applications.
+- Container-based solutions provide important cost saving benefits because containers solve deployment problems caused by dependency failures in production environments, therefore, improving DevOps and production operations significantly.
 
-Azure DevOps Services greatly simplifies your DevOps environment designated to Docker environments from your Continuous Deployment pipelines, including simple Docker environments or more advanced microservice and container orchestrators based on Azure.
+- Azure DevOps Services greatly simplifies your DevOps environment by deploying to Docker environments from your CI/CD pipelines. This statement is valid from simple Docker environments to advanced microservice and container orchestrators based on Azure.
 
 >[!div class="step-by-step"]
 >[Previous](../run-manage-monitor-docker-environments/monitor-containerized-application-services.md)

@@ -26,7 +26,7 @@ In this tutorial, you learn how to:
 You will do this by following these steps:
 
 1. Load data
-1. Build and train the model
+1. Build and train model
 1. Evaluate model
 1. Deploy and consume model
   
@@ -83,12 +83,11 @@ using Microsoft.Data.DataView;
 using Microsoft.ML.Core.Data;
 ```
 
-## Load data
+## 1. Load data
 
 The first step in the ML.NET process is to prepare and load your model training and testing data :
 
-1. Download [*recommendation-ratings-train.csv*](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-train.csv) and [*recommendation-ratings-test.csv*](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-test.csv) datasets and save them to the *Data* folder previously created. The first dataset trains the machine learning model and the second can be used to evaluate how accurate your model is.
-
+1. Download [*recommendation-ratings-train.csv*](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-train.csv) and [*recommendation-ratings-test.csv*](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-test.csv) datasets and save them to the *Data* folder previously created.
 > [!NOTE]
 > The original data comes from [MovieLens Dataset](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip).
 
@@ -96,7 +95,7 @@ The first step in the ML.NET process is to prepare and load your model training 
 
 ![copy if newer in VS](./media/movie-recommendation/copyifnewer.gif)
 
-The recommendation ratings data is split into `Train` and `Test` datasets. You will use your `Train` data to fit your model, and then you will use your `Test` data to make predictions with your trained model and evaluate how your model is performing. It is common to have an 80/20 split with `Train` and `Test` data, but there are other more advanced methods that don’t involve extracting test data from the dataset (e.g. cross validation).
+The recommendation ratings data is split into `Train` and `Test` datasets. You will use your `Train` data to fit your model, and then you will use your `Test` data to make predictions with your trained model and evaluate how your model is performing. It is common to have an 80/20 split with `Train` and `Test` data, but there are other more advanced methods that don’t involve extracting test data from the dataset (e.g. [cross validation](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/train-cross-validation-ml-net)).
 
 In *recommendation-ratings-train.csv*, there are four columns:
 
@@ -107,11 +106,11 @@ In *recommendation-ratings-train.csv*, there are four columns:
 
 In machine learning, the columns that are used to make a prediction are called [Features](../resources/glossary.md#feature), and the column with the returned prediction is called the [Label](../resources/glossary.md#label).
 
-You want to predict movie ratings, so the rating column is the `Label`. The other three columns, userId, movieId, and timestamp are all `Features` used to predict the `Label`.
+You want to predict movie ratings, so the rating column is the `Label`. The other three columns, `userId`, `movieId`, and `timestamp` are all `Features` used to predict the `Label`.
 
 ![preview of data](./media/movie-recommendation/datatable.png)
 
-It is up to you to decide which Features you think can best be used to predict the Label (you can read more about feature selection here). In this case, you should eliminate the timestamp column as a Feature because the timestamp does not really affect how a user rates a given movie and thus would not contribute to making a more accurate prediction.
+It is up to you to decide which Features you think can best be used to predict the Label (you can read more about feature selection *here*). In this case, you should eliminate the `timestamp` column as a `Feature` because the timestamp does not really affect how a user rates a given movie and thus would not contribute to making a more accurate prediction.
 
 Create a new class, `MovieRating`, which specifies an input data class. LoadColumn specifies which columns (by column index) in the dataset should be loaded. The userId and movieId columns are your Features (the inputs you will give the model to predict the Label), and the rating column is the Label that you will predict (the output of the model).
 
@@ -120,12 +119,12 @@ Define your data structures by adding the following code before the Program clas
 ```CSharp
 public class MovieRating
 {
-[LoadColumn(0)]
-public float userId;
-[LoadColumn(1)]
-public float movieId;
-[LoadColumn(2)]
-public float Label;
+  [LoadColumn(0)]
+  public float userId;
+  [LoadColumn(1)]
+  public float movieId;
+  [LoadColumn(2)]
+  public float Label;
 }
 ```
 
@@ -148,7 +147,7 @@ Data in ML.NET is represented as an <xref:Microsoft.Data.DataView.IDataView>. `I
 
 The `MLContext.Data.ReadFromTextFile()` is a wrapper for the <xref:Microsoft.ML.TextLoaderSaverCatalog.ReadFromTextFile%2A> method, you define the data schema, which is loaded later when training the model due to its lazy loading approach.
 
-In this case, you provide the path for your files (`Test` and `Train`), and indicate the text files header (so it can use the column names properly) and a comma character data separator comma (the default separator is a tab).
+In this case, you provide the path for your files (`Test` and `Train`), and indicate the text file header (so it can use the column names properly) and a comma character data separator (the default separator is a tab).
 
 ```csharp
 IDataView trainingDataView = mlContext.Data.ReadFromTextFile<MovieRating>(trainingDataPath, hasHeader: true, separatorChar: ',');
@@ -194,11 +193,11 @@ To add the learning algorithm, call the `mlContext.MulticlassClassification.Trai
 ```csharp
 var options = new MatrixFactorizationTrainer.Options
 {
-MatrixColumnIndexColumnName = "userIdEncoded",
-MatrixRowIndexColumnName = "movieIdEncoded",
-LabelColumnName = "Label",
-NumIterations = 20,
-K = 100
+  MatrixColumnIndexColumnName = "userIdEncoded",
+  MatrixRowIndexColumnName = "movieIdEncoded",
+  LabelColumnName = "Label",
+  NumIterations = 20,
+  K = 100
 };
 ```
 
@@ -301,9 +300,7 @@ ITransformer trainedModel;
 using (FileStream stream = new FileStream(_movieService.GetModelPath(),
 FileMode.Open, FileAccess.Read, FileShare.Read))
 {
-
-trainedModel = mlContext.Model.Load(stream);
-
+  trainedModel = mlContext.Model.Load(stream);
 }
 ```
 
@@ -335,11 +332,11 @@ You can then use the Score, or predicted rating, to determine whether you want t
 ```csharp
 if (Math.Round(movieRatingPrediction.Score, 1) > 3.5)
 {
-Console.WriteLine("Movie " + testInput.movieId + " is recommended for user " + testInput.userId);
+  Console.WriteLine("Movie " + testInput.movieId + " is recommended for user " + testInput.userId);
 }
 else
 {
-Console.WriteLine("Movie " + testInput.movieId + " is not recommended for user " + testInput.userId);
+  Console.WriteLine("Movie " + testInput.movieId + " is not recommended for user " + testInput.userId);
 }
 ```
 
@@ -366,10 +363,6 @@ In this tutorial, you learned how to:
 > * Evaluate the model
 > * Deploy and consume the model
 
-Advance to the next tutorial to learn more
-> [!div class="nextstepaction"]
-> [Taxi Fare Predictor](taxi-fare.md)
-
 ### Improve your model
 
 There are several ways that you can improve the performance of your model so that you can get more accurate predictions.
@@ -382,31 +375,31 @@ Cross validation is a technique for evaluating models that randomly splits up da
 
 #### Features
 
-In this tutorial, you only use the three Features (user id, movie id, and rating) that are provided by the dataset. 
+In this tutorial, you only use the three `Features` (`user id`, `movie id`, and `rating`) that are provided by the dataset. 
 
-While this is a good start, in reality you might want to add other attributes or Features (e.g. age, gender, geo-location, etc.) if they are included in the dataset. Adding more relevant Features can help improve the performance of your recommendation model. 
+While this is a good start, in reality you might want to add other attributes or `Features` (e.g. age, gender, geo-location, etc.) if they are included in the dataset. Adding more relevant `Features` can help improve the performance of your recommendation model. 
 
-If you are unsure about which features might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC), which ML.NET provides to discover the most influential features.
+If you are unsure about which `Features` might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC), which ML.NET provides to discover the most influential `Features`.
 
 #### Algorithm
 
 While ML.NET provides good default training algorithms, you can further fine-tune performance by changing parameters on these individual algorithms.
 
-For Matrix Factorization, you can experiment with learning rate, K, and NumIterations to see if that gives you better results. You can learn more about these parameters and fine-tuning Matrix Factorization here.
+For `Matrix Factorization`, you can experiment with learning rate, K, and NumIterations to see if that gives you better results. You can learn more about these parameters and fine-tuning `Matrix Factorization` here.
 
-Here is an example of how to fine-tune the Matrix Factorization Trainer options:
+Here is an example of how to fine-tune the `Matrix Factorization Trainer` options:
 
 ```CSharp
 var options = new MatrixFactorizationTrainer.Options
 {
-MatrixColumnIndexColumnName = "userIdEncoded",
-MatrixRowIndexColumnName = "movieIdEncoded",
-LabelColumnName = "Label",
-NumIterations = 20,
-K = 100,
-NumberOfThreads = 1,
-ApproximationRank = 32,
-LearningRate = 0.3
+  MatrixColumnIndexColumnName = "userIdEncoded",
+  MatrixRowIndexColumnName = "movieIdEncoded",
+  LabelColumnName = "Label",
+  NumIterations = 20,
+  K = 100,
+  NumberOfThreads = 1,
+  ApproximationRank = 32,
+  LearningRate = 0.3
 };
 ```
 
@@ -421,6 +414,7 @@ This is only one approach for performing movie recommendations. In many cases, y
 | One Class Matrix Factorization | Use this when you only have userId and movieId. This style of recommendation is based upon the co-purchase scenario, or products frequently bought together, which means it will recommend to customers a set of products based upon their own purchase order history. | >Try it out |
 | Field Aware Factorization Machines | Use this to make recommendations when you have more Features beyond userId, productId, and rating (such as product description or product price). This also uses a collaborative filtering approach. | >Try it out |
 
+### Other ML.NET Scenarios
 Advance to the next tutorial to learn more
 > [!div class="nextstepaction"]
 > [Taxi Fare Predictor](taxi-fare.md)

@@ -392,6 +392,13 @@ This is only one approach for performing movie recommendations. In many cases, y
 | Field Aware Factorization Machines | Use this to make recommendations when you have more Features beyond userId, productId, and rating (such as product description or product price). This also uses a collaborative filtering approach. | >Try it out |
 
 ### Other ML.NET Scenarios
+Try out another tutorial to use ML.NET for other Machine Learning scenarios:
+
+| [Taxi fare prediction (regression)](https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/taxi-fare) | [Sentiment analysis (binary classification)](https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/sentiment-analysis) | [Issue classification (multi-class classification)](https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/github-issue-classification) |
+| ------------- |:-------------:| -----:|
+
+OR 
+
 Advance to the next tutorial to learn more
 > [!div class="nextstepaction"]
 > [Taxi Fare Predictor](taxi-fare.md)

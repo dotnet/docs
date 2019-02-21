@@ -3,7 +3,7 @@ title: Orchestrating microservices and multi-container applications for high sca
 description: Learn how to deploy an app using Azure Kubernetes Service.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/23/2018
+ms.date: 02/15/2019
 ---
 # Deploy to Azure Kubernetes Service (AKS)
 
@@ -20,9 +20,9 @@ Prerequisites to have before using AKS are:
 > [!NOTE]
 > To find complete information about:
 >
-> Azure-CLI: [https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest](https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest)
+> Azure-CLI: <https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest>
 >
-> Windows Subsystem for Linux: [https://docs.microsoft.com/windows/wsl/about](https://docs.microsoft.com/windows/wsl/about)
+> Windows Subsystem for Linux: <https://docs.microsoft.com/windows/wsl/about>
 
 ## Create the AKS environment in Azure
 

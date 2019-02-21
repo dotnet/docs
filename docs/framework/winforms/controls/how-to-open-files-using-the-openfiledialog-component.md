@@ -22,7 +22,7 @@ Starting with .NET Core 3.0, you can also build and run the examples from a fold
 
 ## Example: Read a file as a stream with StreamReader  
   
-The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method. After the user chooses a file and selects **OK**, an instance of the <xref:System.IO.StreamReader> class reads the file and displays its contents in the text box. For more information about reading from file streams, see <xref:System.IO.FileStream.BeginRead%2A?displayProperty=nameWithType> and <xref:System.IO.FileStream.Read%2A?displayProperty=nameWithType>.  
+The following example uses the Windows Forms <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method. After the user chooses a file and selects **OK**, an instance of the <xref:System.IO.StreamReader> class reads the file and displays its contents in the form's text box. For more information about reading from file streams, see <xref:System.IO.FileStream.BeginRead%2A?displayProperty=nameWithType> and <xref:System.IO.FileStream.Read%2A?displayProperty=nameWithType>.  
  
 
 ```csharp  
@@ -48,10 +48,6 @@ public class OpenFileDialogForm : Form
 
     public OpenFileDialogForm()
     {
-        InitializeComponent();
-    }
-    private void InitializeComponent()
-    {
         openFileDialog1 = new OpenFileDialog();
         selectButton = new Button
         {
@@ -67,7 +63,7 @@ public class OpenFileDialogForm : Form
             Multiline = true,
             ScrollBars = ScrollBars.Vertical
         };
-        ClientSize = new Size(400, 400);
+        ClientSize = new Size(330, 360);
         Controls.Add(selectButton);
         Controls.Add(textBox1);
     }
@@ -101,9 +97,6 @@ Imports System.Security
 Imports System.Windows.Forms
 
 Public Class OpenFileDialogForm : Inherits Form
-    Dim WithEvents SelectButton As Button
-    Dim openFileDialog1 As OpenFileDialog
-    Dim WithEvents TextBox1 As TextBox
 
     Public Shared Sub Main()
         Application.SetCompatibleTextRenderingDefault(False)
@@ -111,6 +104,11 @@ Public Class OpenFileDialogForm : Inherits Form
         Dim frm As New OpenFileDialogForm()
         Application.Run(frm)
     End Sub
+
+    Dim WithEvents SelectButton As Button
+    Dim openFileDialog1 As OpenFileDialog
+    Dim TextBox1 As TextBox
+
     Private Sub New()
         ClientSize = New Size(400, 400)
         openFileDialog1 = New OpenFileDialog()
@@ -134,6 +132,7 @@ Public Class OpenFileDialogForm : Inherits Form
     Private Sub SetText(text)
         TextBox1.Text = text
     End Sub
+
     Public Sub SelectButton_Click(sender As Object, e As EventArgs) _
               Handles SelectButton.Click
         If openFileDialog1.ShowDialog() = DialogResult.OK Then
@@ -151,7 +150,7 @@ End Class
 
 ## Example: Open a file from a filtered selection with OpenFile 
 
-The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with a filter that shows only text files. After the user chooses a text file and selects **OK**, the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method is used to open the file in Notepad.
+The following example uses the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with a filter that shows only text files. After the user chooses a text file and selects **OK**, the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method is used to open the file in Notepad.
 
 ```csharp
 using System;
@@ -177,17 +176,21 @@ public class OpenFileDialogForm : Form
 
     public OpenFileDialogForm()
     {
-        selectButton = new Button();
         openFileDialog1 = new OpenFileDialog();
-        backgroundWorker1 = new BackgroundWorker();
+        {
+            Filename = "Select a text file",
+            Filter = "Text files (*.txt)|*.txt",
+            Title = "Open text file"
+        };
 
-        selectButton.Text = "Select file";
-        openFileDialog1.FileName = "Select a text file";
-        openFileDialog1.Filter = "Text files (*.txt)|*.txt";
-        openFileDialog1.Title = "Open text file";
-
-        Controls.Add(selectButton);
+        selectButton = new Button
+        {
+            Size = new Size(100, 20),
+            Location = new Point(15, 15),
+            Text = "Select file"
+        };
         selectButton.Click += new EventHandler(selectButton_Click);
+        Controls.Add(selectButton);
     }
 
     private void selectButton_Click(object sender, EventArgs e)

@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: e9c8c099-2271-4737-882f-50f336c7a55e
 ---
 # Troubleshooting Control and Component Authoring
-This topic lists the following common problems that arise when developing components and controls.  
+This topic lists the following common problems that arise when developing components and controls. For more information, see [Programming with Components](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0ffkdtkf(v=vs.120)).  
   
 -   Cannot Add Control to Toolbox  
   

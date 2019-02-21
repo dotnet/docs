@@ -5,9 +5,6 @@ ms.date: 02/12/2019
 ---
 # What's new in C# 8.0
 
-> [!NOTE]
-> This article was last updated for C# 8.0 preview 2.
-
 There are many enhancements to the C# language that you can try out already with preview 2. The new features added in preview 2 are:
 
 - [Pattern matching enhancements](#more-patterns-in-more-places):
@@ -24,6 +21,9 @@ The following language features first appeared in C# 8.0 preview 1:
 - [Nullable reference types](#nullable-reference-types)
 - [Asynchronous streams](#asynchronous-streams)
 - [Indices and ranges](#indices-and-ranges)
+
+> [!NOTE]
+> This article was last updated for C# 8.0 preview 2.
 
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided.
 
@@ -54,7 +54,7 @@ public enum Rainbow
 You could convert a `Rainbow` value to its RGB values using the following method containing a switch expression:
 
 ```csharp
-public static RGBColor fromRainbow(Rainbow colorBand) =>
+public static RGBColor FromRainbow(Rainbow colorBand) =>
     colorBand switch
     {
         Rainbow.Red    => new RGBColor(0xFF, 0x00, 0x00),
@@ -106,14 +106,14 @@ The **property pattern** enables you to match on properties of the object examin
 ```csharp
 public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
     location switch
-{
-    { State: "WA" } => salePrice * 0.06M,
-    { State: "MN" } => salePrice * 0.75M,
-    { State: "MI" } => salePrice * 0.05M,
-    // other cases removed for brevity...
-    _ => 0M
-};
-```
+    {
+        { State: "WA" } => salePrice * 0.06M,
+        { State: "MN" } => salePrice * 0.75M,
+        { State: "MI" } => salePrice * 0.05M,
+        // other cases removed for brevity...
+        _ => 0M
+    };
+    ```
 
 Pattern matching creates a concise syntax for expressing this algorithm.
 
@@ -124,16 +124,16 @@ Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switc
 ```csharp
 public static string RockPaperScissors(string first, string second)
     => (first, second) switch
-{
-    ("rock", "paper") => "rock is covered by paper. Paper wins.",
-    ("rock", "scissors") => "rock breaks scissors. Rock wins.",
-    ("paper", "rock") => "paper covers rock. Paper wins.",
-    ("paper", "scissors") => "paper is cut by scissors. Scissors wins.",
-    ("scissors", "rock") => "scissors is broken by rock. Rock wins.",
-    ("scissors", "paper") => "scissors cuts paper. Scissors wins.",
-    (_, _) => "tie"
-};
-```
+    {
+        ("rock", "paper") => "rock is covered by paper. Paper wins.",
+        ("rock", "scissors") => "rock breaks scissors. Rock wins.",
+        ("paper", "rock") => "paper covers rock. Paper wins.",
+        ("paper", "scissors") => "paper is cut by scissors. Scissors wins.",
+        ("scissors", "rock") => "scissors is broken by rock. Rock wins.",
+        ("scissors", "paper") => "scissors cuts paper. Scissors wins.",
+        (_, _) => "tie"
+    };
+    ```
 
 The messages indicate the winner. The discard case represents the three combinations for ties, or other text inputs.
 
@@ -169,9 +169,30 @@ static string Quadrant(Point p) => p switch
 };
 ```
 
+The discard pattern in the preceding switch matches when either `x` or `y`, but not both, is 0. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you do not cover all possible cases in your switch expression.
+
 ## using declarations
 
 A **using declaration** is a variable declaration preceded by the `using` keyword. It tells the compiler that the variable being declared should be disposed at the end of the enclosing scope. For example, consider the following code that writes a text file:
+
+```csharp
+static void WriteLinesToFile(IEnumerable<string> lines)
+{
+    using var file = new System.IO.StreamWriter("WriteLines2.txt");
+    foreach (string line in lines)
+    {
+        // If the line doesn't contain the word 'Second', write the line to the file.
+        if (!line.Contains("Second"))
+        {
+            file.WriteLine(line);
+        }
+    }
+// file is disposed here
+}
+```
+
+In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code using the classic [using statements](../language-reference/keywords/using-statement.md) statement:
+
 
 ```csharp
 static void WriteLinesToFile(IEnumerable<string> lines)
@@ -192,27 +213,7 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 
 In the preceding example, the file is disposed when the closing brace associated with the `using` statement is reached.
 
-A few braces are removed by replacing the `using` statement with a `using` declaration:
-
-```csharp
-static void WriteLinesToFile(IEnumerable<string> lines)
-{
-    using var file = new System.IO.StreamWriter("WriteLines2.txt");
-    foreach (string line in lines)
-    {
-        // If the line doesn't contain the word 'Second', write the line to the file.
-        if (!line.Contains("Second"))
-        {
-            file.WriteLine(line);
-        }
-    }
-// file is disposed here
-}
-```
-
-In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared.
-
-Using declarations provide the same behavior as [using statements](../language-reference/keywords/using-statement.md) when exceptions are thrown: the `Dispose` call is in a `finally` block.
+In both cases, the compiler generates the call to `Dispose()`. The compiler generates an error if the expression in the using statement is not disposable.
 
 ## Static local functions
 
@@ -252,7 +253,7 @@ A `struct` declared with the `ref` modifier may not implement any interfaces and
 
 Inside a nullable annotation context, any variable of a reference type is considered to be a **nonnullable reference type**. If you want to indicate that a variable may be null, you must append the type name with the `?` to declare the variable as a **nullable reference type**.
 
-For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized during construction. The compiler generates a warning if the variable is not set in a constructor, or an initializer. Furthermore, nonnullable reference types can't be assigned a value that could be null.
+For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized during construction. The compiler generates a warning if the variable is not set in all constructors, or an initializer. Furthermore, nonnullable reference types can't be assigned a value that could be null.
 
 Nullable reference types aren't checked to ensure they aren't assigned or initialized to null. However, the compiler uses flow analysis to ensure that any variable of a nullable reference type is checked against null before it's accessed or assigned to a nonnullable reference type.
 

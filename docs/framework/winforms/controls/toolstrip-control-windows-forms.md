@@ -75,10 +75,6 @@ ms.assetid: e5ef455a-e049-429c-8005-30c93132fb79
   
 -   [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls.md)  
   
--   [ToolStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233648(v=vs.100))  
-  
--   [ToolStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233643(v=vs.100))  
-  
 ## Reference  
  <xref:System.Windows.Forms.ToolStrip> class  
  Describes this class and has links to all its members.  

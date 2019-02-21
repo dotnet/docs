@@ -30,6 +30,3 @@ The Windows Forms <xref:System.Windows.Forms.Timer> is a component that raises a
 ## Related Sections  
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
-  
- [Timer Control for Visual Basic 6.0 Users](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/zffx82xt(v=vs.90))  
- Describes how timer functionality has changed in Visual Basic as compared to previous versions.

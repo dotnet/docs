@@ -37,7 +37,7 @@ In addition to new patterns in new places, C# 8.0 adds **recursive patterns**. T
 
 ### switch expressions
 
-Often, a switch statement produces a value in each of its `case` blocks. **Switch expressions** enable you to use more concise expression syntax. There are fewer repetitive `case`, and `break` keywords, and fewer curly braces.  As an example, consider the following enum that lists the colors of the rainbow:
+Often, a [`switch`](../language-reference/keywords/switch.md) statement produces a value in each of its `case` blocks. **Switch expressions** enable you to use more concise expression syntax. There are fewer repetitive `case`, and `break` keywords, and fewer curly braces.  As an example, consider the following enum that lists the colors of the rainbow:
 
 ```csharp
 public enum Rainbow
@@ -299,22 +299,25 @@ You can specify an index **from the end**. You specify **from the end** using th
 
 You can specify a **range** with the **range operator**: `..`. For example, `0..^0` specifies the entire range of the array: 0 from the start up to, but not including 0 from the end. Either operand may use "from the start" or "from the end". Furthermore, either operand may be omitted. The defaults are `0` for the start index, and `^0` for the end index.
 
-Let's look at a few examples. Consider the following array:
+Let's look at a few examples. Consider the following array, annotated with its index from the start and from the end:
 
 ```csharp
 var words = new string[]
 {
-    "The",
-    "quick",
-    "brown",
-    "fox",
-    "jumped",
-    "over",
-    "the",
-    "lazy",
-    "dog"
+                // index from start    index from end
+    "The",      // 0                   ^9
+    "quick",    // 1                   ^8
+    "brown",    // 2                   ^7
+    "fox",      // 3                   ^6
+    "jumped",   // 4                   ^5
+    "over",     // 5                   ^4
+    "the",      // 6                   ^3
+    "lazy",     // 7                   ^2
+    "dog"       // 8                   ^1
 };
 ```
+
+The index of each element reinforces the concept of "from the start", and "from the end", and that ranges are exclusive of the end of the range. The "start" of the entire array is the first element. The "end" of the entire array is *past* the last element.
 
 You can retrieve the last word with the `^1` index:
 

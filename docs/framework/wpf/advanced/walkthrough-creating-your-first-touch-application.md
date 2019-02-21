@@ -27,7 +27,7 @@ ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
   
 #### To create the application  
   
-1.  Create a new WPF Application project in Visual Basic or Visual C# named `BasicManipulation`. For more information, see [How to: Create a New WPF Application Project](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
+1.  Create a new WPF Application project in Visual Basic or Visual C# named `BasicManipulation`. For more information, see [How to: Create a New WPF Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546958(v=vs.100)).  
   
 2.  Replace the contents of MainWindow.xaml with the following XAML.  
   

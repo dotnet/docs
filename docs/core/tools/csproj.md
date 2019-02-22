@@ -205,8 +205,48 @@ Copyright details for the package.
 ### PackageRequireLicenseAcceptance
 A Boolean value that specifies whether the client must prompt the consumer to accept the package license before installing the package. The default is `false`.
 
+### PackageLicenseExpression
+
+An SPDX license expression or path to a license file within the package, often shown in UI displays as well as nuget.org.
+
+Here is the complete list of [SPDX license identifiers](https://spdx.org/licenses/). NuGet.org accepts only OSI or FSF approved licenses when using license type expression.
+
+The exact syntax of the license expressions is described below in [ABNF](https://tools.ietf.org/html/rfc5234).
+```cli
+license-id            = <short form license identifier from https://spdx.org/spdx-specification-21-web-version#h.luq9dgcle9mo>
+
+license-exception-id  = <short form license exception identifier from https://spdx.org/spdx-specification-21-web-version#h.ruv3yl8g6czd>
+
+simple-expression = license-id / license-id”+”
+
+compound-expression =  1*1(simple-expression /
+                simple-expression "WITH" license-exception-id /
+                compound-expression "AND" compound-expression /
+                compound-expression "OR" compound-expression ) /                
+                "(" compound-expression ")" )
+
+license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
+```
+
+> [!NOTE]
+> Only one of `PackageLicenseExpression`, `PackageLicenseFile` and `PackageLicenseUrl` can be specified at a time.
+
+### PackageLicenseFile
+
+Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is prefered)
+
+> [!NOTE]
+> Only one of `PackageLicenseExpression`, `PackageLicenseFile` and `PackageLicenseUrl` can be specified at a time.
+
 ### PackageLicenseUrl
+
+> [!Important]
+> PackageLicenseUrl is being deprecated. Use `PackageLicenseFile` or `PackageLicenseExpression` instead.
+
 An URL to the license that is applicable to the package.
+
+> [!NOTE]
+> Only one of `PackageLicenseExpression`, `PackageLicenseFile` and `PackageLicenseUrl` can be specified at a time.
 
 ### PackageProjectUrl
 A URL for the package's home page, often shown in UI displays as well as nuget.org.

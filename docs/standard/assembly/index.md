@@ -13,7 +13,7 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
   
 -   Assemblies are implemented as .exe or .dll files.  
   
--   For libraries that target the .NET Framework, you can share an assembly between applications by putting it in the global assembly cache. Assemblies must be strong-named before they can be included in the global assembly cache. For more information, see [Strong-Named Assemblies](../../framework/app-domains/strong-named-assemblies.md).  
+-   For libraries that target the .NET Framework, you can share an assembly between applications by putting it in the [global assembly cache](../../framework/app-domains/gac.md). Assemblies must be strong-named before they can be included in the global assembly cache. For more information, see [Strong-Named Assemblies](../../framework/app-domains/strong-named-assemblies.md).  
   
 -   Assemblies are only loaded into memory if they are required. If they are not used, they are not loaded. This means that assemblies can be an efficient way to manage resources in larger projects.  
   

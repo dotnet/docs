@@ -300,9 +300,9 @@
  The <xref:System.AppContext.SetSwitch%2A> method is called by an application (or a library) to declare the value of a switch (which is always a <xref:System.Boolean> value) that a dependent library defines. The switch is always implicitly `false`, which provides the new behavior. Setting the switch to `true` enables it, which provides the legacy behavior. Explicitly setting the switch to `false` also provides the new behavior. The dependent library can then check the value of the switch by calling the <xref:System.AppContext.TryGetSwitch%2A> method.  
   
 > [!NOTE]
->  It's beneficial to use a consistent format for switch names, since they are a formal contract exposed by a library. The following are two obvious formats.  
+> It's beneficial to use a consistent format for switch names, since they are a formal contract exposed by a library. The following are two obvious formats.  
 >   
->  -   *Switch*.*namespace*.*switchname*  
+> -   *Switch*.*namespace*.*switchname*  
 > -   *Switch*.*library*.*switchname*  
   
  For applications running on the .NET Framework, in addition to setting the value of a switch programmatically, it can also be set:  

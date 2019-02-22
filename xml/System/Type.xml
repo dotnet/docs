@@ -7311,8 +7311,8 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
 |A generic type with one type argument|``Type.GetType("MyGenericType`1[MyType]")``|  
 |A generic type with two type arguments|``Type.GetType("MyGenericType`2[MyType,AnotherType]")``|  
 |A generic type with two assembly-qualified type arguments|``Type.GetType("MyGenericType`2[[MyType,MyAssembly],[AnotherType,AnotherAssembly]]")``|  
-|An assembly-qualified generic type with an assembly-qualified type argument|``Type.GetType("MyGenericType`1[[MyType,MyAssembly]],MyGenericTypeAssembly")`|  
-|A generic type whose type argument is a generic type with two type arguments|``Type.GetType("MyGenericType`1[AnotherGenericType`2[MyType,AnotherType]]")`|  
+|An assembly-qualified generic type with an assembly-qualified type argument|``Type.GetType("MyGenericType`1[[MyType,MyAssembly]],MyGenericTypeAssembly")``|  
+|A generic type whose type argument is a generic type with two type arguments|``Type.GetType("MyGenericType`1[AnotherGenericType`2[MyType,AnotherType]]")``|  
   
    
   

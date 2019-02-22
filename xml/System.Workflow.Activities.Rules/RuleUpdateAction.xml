@@ -85,7 +85,7 @@
 ## Remarks  
  To indicate that the property `this.SomeProperty` was modified, the `path` parameter would be `this/SomeProperty`. You can specify the value changed as specifically as you prefer (for example, if you only modified `this.SomeProperty/SomeOtherProperty`, you can specify `this/SomeProperty/SomeOtherProperty`). In the latter case, other rules that used `this.SomeProperty/AnyOtherProperty` would not be reevaluated.  
   
- To specify that all fields and properties are modified, append "*" to the end of the path. For example, `this/SomeProperty/*` indicates that all fields and properties on `this.SomeProperty` were modified. Therefore, all rules that use any field or property on `this.SomeProperty` would be reevaluated.  
+ To specify that all fields and properties are modified, append "\*" to the end of the path. For example, `this/SomeProperty/*` indicates that all fields and properties on `this.SomeProperty` were modified. Therefore, all rules that use any field or property on `this.SomeProperty` would be reevaluated.  
   
 > [!NOTE]
 >  If the rule set is run with <xref:System.Workflow.Activities.Rules.RuleSet.ChainingBehavior%2A> set to <xref:System.Workflow.Activities.Rules.RuleChainingBehavior.None>, this action is ignored.  
@@ -243,7 +243,7 @@
 ## Remarks  
  <xref:System.Workflow.Activities.Rules.RuleUpdateAction.Path%2A> is a string that represents the name of the field or property that is changed. "/" is used as a separator. To indicate that the property `this.SomeProperty` has been modified, the property would be "`this/SomeProperty`". You can specify the changed value as specifically as you prefer (for example, if you only modified `this.SomeProperty/SomeOtherProperty`, you can specify "`this/SomeProperty/SomeOtherProperty`"). In the latter case, other rules that used `this.SomeProperty/AnyOtherProperty` would not be reevaluated.  
   
- To specify that all fields and properties are modified, append "*" to the end of the path. For example, "`this/SomeProperty/*`" indicates that all fields and properties on `this.SomeProperty` have been modified. Therefore, all rules that use any field or property on `this.SomeProperty` would be reevaluated.  
+ To specify that all fields and properties are modified, append "\*" to the end of the path. For example, "`this/SomeProperty/*`" indicates that all fields and properties on `this.SomeProperty` have been modified. Therefore, all rules that use any field or property on `this.SomeProperty` would be reevaluated.  
   
 > [!NOTE]
 >  If the rule set is run with <xref:System.Workflow.Activities.Rules.RuleSet.ChainingBehavior%2A> set to <xref:System.Workflow.Activities.Rules.RuleChainingBehavior.None>, this action is ignored.  

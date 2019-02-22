@@ -11054,7 +11054,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
   
  If the `options` parameter is <xref:System.StringSplitOptions.RemoveEmptyEntries> and the length of this instance is zero, the method returns an empty array.  
   
- Each element of `separator` defines a separate delimiter that consists of one or more characters. If the `options` argument is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String.Empty?displayProperty=nameWithType>. For example, if `separator` includes  two elements, "-" and "_", the value of the string instance is "-_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions.None>, the method returns a sting array with the following five elements:  
+ Each element of `separator` defines a separate delimiter that consists of one or more characters. If the `options` argument is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String.Empty?displayProperty=nameWithType>. For example, if `separator` includes  two elements, "-" and "\_", the value of the string instance is "-\_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions.None>, the method returns a sting array with the following five elements:  
   
 1.  <xref:System.String.Empty?displayProperty=nameWithType>, which represents the empty string that precedes the "-" substring at index 0.  
   

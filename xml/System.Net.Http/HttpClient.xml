@@ -88,6 +88,7 @@ On each platform, <xref:System.Net.Http.HttpClient> tries to use the best availa
 | Linux/Mono                  | <xref:System.Net.HttpWebRequest>                                                          |
 | Linux/.NET Core 1.0-2.0     | `libcurl`-based HTTP transport (HTTP 2.0 capable)                                         |
 | .NET Core 2.1 and later     | <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType>                    |
+
 Users can also configure a specific transport for <xref:System.Net.Http.HttpClient> by invoking the <xref:System.Net.Http.HttpClient.%23ctor*> constructor that takes an <xref:System.Net.Http.HttpMessageHandler>.
 
 ### HttpClient and .NET Core

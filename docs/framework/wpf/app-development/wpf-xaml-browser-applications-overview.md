@@ -29,7 +29,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
   
 <a name="creating_a_new_xaml_browser_application_xbap"></a>   
 ## Creating a New XAML Browser Application (XBAP)  
- The simplest way to create a new XBAP project is with Microsoft Visual Studio. When creating a new project, select **WPF Browser Application** from the list of templates. For more information, see [How to: Create a New WPF Browser Application Project](https://msdn.microsoft.com/library/72ef4d90-e163-42a1-8df0-ea7ccfd1901f).  
+ The simplest way to create a new XBAP project is with Microsoft Visual Studio. When creating a new project, select **WPF Browser Application** from the list of templates. For more information, see [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)).  
   
  When you run the XBAP project, it opens in a browser window instead of a stand-alone window. When you debug the XBAP from Visual Studio, the application runs with Internet zone permission and will therefore throw security exceptions if those permissions are exceeded. For more information, see [Security](../../../../docs/framework/wpf/security-wpf.md) and [WPF Partial Trust Security](../../../../docs/framework/wpf/wpf-partial-trust-security.md).  
   

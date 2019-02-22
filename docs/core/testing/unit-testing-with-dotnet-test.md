@@ -23,7 +23,7 @@ Inside the solution directory, create a *PrimeService* directory. The directory 
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you first create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. You first create a failing implementation of the `PrimeService` class:
 
 ```csharp
 using System;
@@ -100,7 +100,7 @@ dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs*. Add the following code:
+You write one failing test, make it pass, then repeat the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs*. Add the following code:
 
 ```csharp
 using Xunit;

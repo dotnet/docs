@@ -2,7 +2,7 @@
 title: WCF svcutil tool overview
 description: An overview of the Microsoft WCF dotnet-svcutil tool that adds functionality for .NET Core and ASP.NET Core projects, similar to the WCF svcutil tool for .NET Framework projects.
 author: mlacouture
-ms.date: 08/20/2018
+ms.date: 02/22/2019
 ms.custom: "seodec18"
 ---
 # WCF dotnet-svcutil tool for .NET Core
@@ -41,7 +41,7 @@ public interface ISayHello
 }
 ```
 
-For this example, the web service will be assumed to be hosted at the following address: `http://contoso.com/SayHello.svc`
+For this example, let's assume the web service will be hosted at the following address: `http://contoso.com/SayHello.svc`
 
 From a Windows, macOS, or Linux command window perform the following steps:
 

@@ -202,7 +202,7 @@ Next, call `mlContext.Transforms.Text.FeaturizeText` which featurizes the text c
 [!code-csharp[TextFeaturizingEstimator](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#7 "Add a TextFeaturizingEstimator")]
 
 >[!WARNING]
-> ML.NET Version 0.10 has changed the order of the Transform parameters. This will not error out until you build. Use the parameter names for Transforms as illustrated in the previous code snippet.
+> ML.NET Version 0.10 has changed the order of the Transform parameters. This will not error out until you run the application and build the model. Use the parameter names for Transforms as illustrated in the previous code snippet.
 
 This is the preprocessing/featurization step. Using additional components available in ML.NET can enable better results with your model.
 

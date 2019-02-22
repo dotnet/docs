@@ -16,8 +16,5 @@ The <xref:System.Windows.Controls.ComboBox> control presents users with a list o
  ![Combo boxes in default and pressed states](../../../../docs/framework/wpf/controls/media/ss-ctl-combobox.gif "SS_CTL_combobox")  
 Collapsed and expanded  
   
-## In This Section  
- [How to: Get a ComboBoxItem](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms750552(v=vs.90))  
-  
 ## Reference  
  <xref:System.Windows.Controls.ComboBox>

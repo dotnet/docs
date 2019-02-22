@@ -38,7 +38,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] simplifies the installation and uninstallation of applications, but it does not provide facilities for ensuring that installed applications are kept up-to-date from a versioning standpoint.  
   
- For more information about [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)], see [Windows Installer Deployment](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/2kt85ked(v=vs.110)).  
+ For more information about Windows Installer, see [Windows Installer Deployment](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
   
 <a name="ClickOnce_Deployment"></a>   
 ### ClickOnce Deployment  

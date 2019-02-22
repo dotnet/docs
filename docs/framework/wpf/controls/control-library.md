@@ -44,7 +44,6 @@ The Windows Presentation Foundation (WPF) control library contains information o
  [PrintDialog](../../../../docs/framework/wpf/controls/printdialog.md)  
  [RadioButton](../../../../docs/framework/wpf/controls/radiobutton.md)  
  [RepeatButton](../../../../docs/framework/wpf/controls/repeatbutton.md)  
- [Ribbon (WPF)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ff799534(v=vs.100))  
  [RichTextBox](../../../../docs/framework/wpf/controls/richtextbox.md)  
  [ScrollBar](../../../../docs/framework/wpf/controls/scrollbar.md)  
  [ScrollViewer](../../../../docs/framework/wpf/controls/scrollviewer.md)  

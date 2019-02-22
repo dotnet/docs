@@ -19,18 +19,18 @@ The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service R
 ## Prerequisites
 
 # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
-* [.NET Core SDK](https://dotnet.microsoft.com/download) v2.1 or later versions
+* [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions
 * Your favorite code editor
 
 # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
-* [.NET Core SDK](https://dotnet.microsoft.com/download) v1.0.4 or later versions
+* [.NET Core 1.0.4 SDK](https://dotnet.microsoft.com/download) or later versions
 * Your favorite code editor
 
 ---
 
 ## Getting started
 
-The following example walks you through the steps required to add a web service reference to a .NET Core web project and invoke the service. You will create a .NET Core web application named _HelloSvcutil_ and will add a reference to a web service that implements the following contract:
+The following example walks you through the steps required to add a web service reference to a .NET Core web project and invoke the service. You'll create a .NET Core web application named _HelloSvcutil_ and add a reference to a web service that implements the following contract:
 
 ```csharp
 [ServiceContract]
@@ -103,9 +103,10 @@ The generated file is saved as _HelloSvcutil/ServiceReference/Reference.cs_. The
 dotnet restore
 ```
 
-2. Find the name of the client class and operation you want to use. `Reference.cs` will contain a class that inherits from `System.ServiceModel.ClientBase`, with methods that can be used to call operations on the service. In this example we want to call the _SayHello_ service's _Hello_ operation. `ServiceReference.SayHelloClient` is the name of the client class, and has a method called `HelloAsync` that can be used to call the operation.
+2. Find the name of the client class and operation you want to use. `Reference.cs` will contain a class that inherits from `System.ServiceModel.ClientBase`, with methods that can be used to call operations on the service. In this example, you want to call the _SayHello_ service's _Hello_ operation. `ServiceReference.SayHelloClient` is the name of the client class, and has a method called `HelloAsync` that can be used to call the operation.
 
 3. Open the `Startup.cs` file in your editor, and add a using statement for the service reference namespace at the top:
+
 ```csharp
 using ServiceReference;
 ```
@@ -136,7 +137,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 dotnet run
 ```
 
-6. Navigate to the URL listed in the console (e.g. http://localhost:5000) in your web browser.
+6. Navigate to the URL listed in the console (for example, `http://localhost:5000`) in your web browser.
 
 You should see the following output:
 "Hello dotnet-svcutil!"

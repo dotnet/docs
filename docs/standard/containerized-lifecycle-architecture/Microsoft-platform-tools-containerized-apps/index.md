@@ -35,9 +35,7 @@ The Microsoft platform and tools for containerized Docker apps, as defined in Ta
 
   With Azure DevOps Services, developers can create container-focused DevOps for a fast, iterative process that covers source-code control from anywhere (Azure DevOps Services-Git, GitHub, any remote Git repository, or Subversion), Continuous Integration (CI), internal unit tests, inter-container/service integration tests, Continuous Delivery (CD), and release management (RM). Developers also can automate their Docker application releases into Azure Container Service, from development to staging and production environments.
 
-- IT production management and monitoring.
-
-  **Management** IT can manage production applications and services in several ways:
+- **Management and Monitoring** IT can manage and monitor production applications and services in several ways, integrating both perspectives in a consolidated experience.
 
   - **Azure portal** If you're using open-source orchestrators, Azure Kubernetes Service (AKS), Service Fabric and other orchestrators help you to set up and maintain your Docker environments. If you're using Azure Service Fabric, the Service Fabric Explorer tool makes it possible for you to visualize and configure your cluster.
 
@@ -47,9 +45,7 @@ The Microsoft platform and tools for containerized Docker apps, as defined in Ta
 
   - **Open-source tools** Because AKS exposes the standard API endpoints for the orchestration engine, the most popular tools are compatible with AKS and, in most cases, will work out of the box—including visualizers, monitoring, command-line tools, and even future tools as they become available.
 
-  **Monitoring** While running production environments, you can monitor every angle by using:
-
-  - **Application Insights** You can monitor production Docker applications by just setting up its SDK into your services so that you can get system-generated log data from the applications.
+  - **Application Insights** Is Azure's soution to monitor every angle of your production evironment. You can monitor production Docker applications by just setting up its SDK into your services so that you can get system-generated log data from the applications.
 
 Thus, Microsoft offers a complete foundation for an end-to-end containerized Docker application life cycle. However, it is *a collection of products and technologies that allow you to optionally select and integrate with existing tools and processes*. The flexibility in a broad approach along with the strength in the depth of capabilities place Microsoft in a strong position for containerized Docker application development.
 

@@ -1,0 +1,295 @@
+﻿<Type Name="DenseTensor&lt;T&gt;" FullName="System.Numerics.Tensors.DenseTensor&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class DenseTensor&lt;T&gt; : System.Numerics.Tensors.Tensor&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DenseTensor`1&lt;T&gt; extends System.Numerics.Tensors.Tensor`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Numerics.Tensors.DenseTensor`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class DenseTensor(Of T)&#xA;Inherits Tensor(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class DenseTensor : System::Numerics::Tensors::Tensor&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type DenseTensor&lt;'T&gt; = class&#xA;    inherit Tensor&lt;'T&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.Numerics.Tensors</AssemblyName>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Numerics.Tensors.Tensor&lt;T&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">T</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DenseTensor (int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.DenseTensor`1.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DenseTensor(int length);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Tensors.DenseTensor&lt;'T&gt; : int -&gt; System.Numerics.Tensors.DenseTensor&lt;'T&gt;" Usage="new System.Numerics.Tensors.DenseTensor&lt;'T&gt; length" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DenseTensor (ReadOnlySpan&lt;int&gt; dimensions, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.DenseTensor`1.#ctor(System.ReadOnlySpan{System.Int32},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dimensions As ReadOnlySpan(Of Integer), Optional reverseStride As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Tensors.DenseTensor&lt;'T&gt; : ReadOnlySpan&lt;int&gt; * bool -&gt; System.Numerics.Tensors.DenseTensor&lt;'T&gt;" Usage="new System.Numerics.Tensors.DenseTensor&lt;'T&gt; (dimensions, reverseStride)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dimensions">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DenseTensor (Memory&lt;T&gt; memory, ReadOnlySpan&lt;int&gt; dimensions, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Memory`1&lt;!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.DenseTensor`1.#ctor(System.Memory{`0},System.ReadOnlySpan{System.Int32},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memory As Memory(Of T), dimensions As ReadOnlySpan(Of Integer), Optional reverseStride As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Tensors.DenseTensor&lt;'T&gt; : Memory&lt;'T&gt; * ReadOnlySpan&lt;int&gt; * bool -&gt; System.Numerics.Tensors.DenseTensor&lt;'T&gt;" Usage="new System.Numerics.Tensors.DenseTensor&lt;'T&gt; (memory, dimensions, reverseStride)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <param name="dimensions">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buffer">
+      <MemberSignature Language="C#" Value="public Memory&lt;T&gt; Buffer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Memory`1&lt;!T&gt; Buffer" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.DenseTensor`1.Buffer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Buffer As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Memory&lt;T&gt; Buffer { Memory&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Buffer : Memory&lt;'T&gt;" Usage="System.Numerics.Tensors.DenseTensor&lt;'T&gt;.Buffer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override System.Numerics.Tensors.Tensor&lt;T&gt; Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.DenseTensor`1.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Numerics::Tensors::Tensor&lt;T&gt; ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="denseTensor.Clone " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneEmpty&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public override System.Numerics.Tensors.Tensor&lt;TResult&gt; CloneEmpty&lt;TResult&gt; (ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Numerics.Tensors.Tensor`1&lt;!!TResult&gt; CloneEmpty&lt;TResult&gt;(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.DenseTensor`1.CloneEmpty``1(System.ReadOnlySpan{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneEmpty(Of TResult) (dimensions As ReadOnlySpan(Of Integer)) As Tensor(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; override System::Numerics::Tensors::Tensor&lt;TResult&gt; ^ CloneEmpty(ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="F#" Value="override this.CloneEmpty : ReadOnlySpan&lt;int&gt; -&gt; System.Numerics.Tensors.Tensor&lt;'Result&gt;" Usage="denseTensor.CloneEmpty dimensions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="dimensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="protected override void CopyTo (T[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyTo(!T[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.DenseTensor`1.CopyTo(`0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CopyTo (array As T(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : 'T[] * int -&gt; unit" Usage="denseTensor.CopyTo (array, arrayIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <param name="arrayIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override T GetValue (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !T GetValue(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.DenseTensor`1.GetValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (index As Integer) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override T GetValue(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; 'T" Usage="denseTensor.GetValue index" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="protected override int IndexOf (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 IndexOf(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.DenseTensor`1.IndexOf(`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IndexOf (item As T) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int IndexOf(T item);" />
+      <MemberSignature Language="F#" Value="override this.IndexOf : 'T -&gt; int" Usage="denseTensor.IndexOf item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reshape">
+      <MemberSignature Language="C#" Value="public override System.Numerics.Tensors.Tensor&lt;T&gt; Reshape (ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; Reshape(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.DenseTensor`1.Reshape(System.ReadOnlySpan{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Reshape (dimensions As ReadOnlySpan(Of Integer)) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Numerics::Tensors::Tensor&lt;T&gt; ^ Reshape(ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="F#" Value="override this.Reshape : ReadOnlySpan&lt;int&gt; -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="denseTensor.Reshape dimensions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dimensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public override void SetValue (int index, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(int32 index, !T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.DenseTensor`1.SetValue(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValue (index As Integer, value As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValue(int index, T value);" />
+      <MemberSignature Language="F#" Value="override this.SetValue : int * 'T -&gt; unit" Usage="denseTensor.SetValue (index, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -156,46 +156,6 @@ This method must be used with extreme caution. <xref:System.ReadOnlyMemory%601> 
       </Docs>
     </Member>
     <Member MemberName="AsRef&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static ref readonly T&amp; AsRef&lt;T&gt; (ReadOnlySpan&lt;byte&gt; span) where T : struct;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig T&amp; modreq(System.Runtime.InteropServices.InAttribute) AsRef&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; span) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsRef``1(System.ReadOnlySpan{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AsRef(Of T As Structure) (span As ReadOnlySpan(Of Byte)) As T&amp;" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static T&amp; ^ AsRef(ReadOnlySpan&lt;System::Byte&gt; span);" />
-      <MemberSignature Language="F#" Value="static member AsRef : ReadOnlySpan&lt;byte&gt; -&gt; T&amp; (requires 'T : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.AsRef span" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue RefType="Readonly">
-        <ReturnType>T</ReturnType>
-        <Attributes>
-          <Attribute FrameworkAlternate="netcore-3.0">
-            <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
-          </Attribute>
-        </Attributes>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="T">
-          <Constraints>
-            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
-            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
-            <BaseTypeName>System.ValueType</BaseTypeName>
-          </Constraints>
-        </TypeParameter>
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-      </Parameters>
-      <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AsRef&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static ref T AsRef&lt;T&gt; (Span&lt;byte&gt; span) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AsRef&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Span`1&lt;unsigned int8&gt; span) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsRef``1(System.Span{System.Byte})" />

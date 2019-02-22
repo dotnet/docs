@@ -8,6 +8,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Threading.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -32,6 +33,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,6 +52,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -58,6 +61,28 @@
         <summary>Gets a <see cref="T:System.Threading.Tasks.Task" /> that completes when no more data will ever
             be available to be read from this channel.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAllAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IAsyncEnumerable&lt;T&gt; ReadAllAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IAsyncEnumerable`1&lt;!T&gt; ReadAllAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelReader`1.ReadAllAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadAllAsync () As IAsyncEnumerable(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IAsyncEnumerable&lt;T&gt; ^ ReadAllAsync();" />
+      <MemberSignature Language="F#" Value="abstract member ReadAllAsync : unit -&gt; System.Collections.Generic.IAsyncEnumerable&lt;'T&gt;&#xA;override this.ReadAllAsync : unit -&gt; System.Collections.Generic.IAsyncEnumerable&lt;'T&gt;" Usage="channelReader.ReadAllAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IAsyncEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,6 +95,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;T&gt;</ReturnType>
@@ -95,6 +121,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -119,6 +146,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Boolean&gt;</ReturnType>

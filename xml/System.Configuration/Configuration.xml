@@ -14,6 +14,7 @@
     <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -107,6 +108,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.AppSettingsSection</ReturnType>
@@ -148,6 +150,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.String,System.String&gt;</ReturnType>
@@ -183,6 +186,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConnectionStringsSection</ReturnType>
@@ -225,6 +229,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ContextInformation</ReturnType>
@@ -268,6 +273,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -294,18 +300,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetSection">
-      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection GetSection (string sectionName);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSection GetSection(string sectionName) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSection (sectionName As String) As ConfigurationSection" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSection ^ GetSection(System::String ^ sectionName);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection GetSection (string sectionName);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSection GetSection(string sectionName) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSection (sectionName As String) As ConfigurationSection" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSection ^ GetSection(System::String ^ sectionName);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection GetSection (string path);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSection GetSection(string path) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSection (path As String) As ConfigurationSection" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSection ^ GetSection(System::String ^ path);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.GetSection(System.String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.GetSection : string -&gt; System.Configuration.ConfigurationSection" Usage="configuration.GetSection path" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.GetSection(System.String)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.GetSection : string -&gt; System.Configuration.ConfigurationSection" Usage="configuration.GetSection path" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.GetSection(System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.GetSection : string -&gt; System.Configuration.ConfigurationSection" Usage="configuration.GetSection path" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -316,12 +322,13 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationSection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sectionName" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sectionName" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -348,18 +355,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetSectionGroup">
-      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroup GetSectionGroup (string sectionGroupName);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSectionGroup GetSectionGroup(string sectionGroupName) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSectionGroup (sectionGroupName As String) As ConfigurationSectionGroup" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSectionGroup ^ GetSectionGroup(System::String ^ sectionGroupName);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroup GetSectionGroup (string sectionGroupName);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSectionGroup GetSectionGroup(string sectionGroupName) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSectionGroup (sectionGroupName As String) As ConfigurationSectionGroup" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSectionGroup ^ GetSectionGroup(System::String ^ sectionGroupName);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSectionGroup GetSectionGroup (string path);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSectionGroup GetSectionGroup(string path) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSectionGroup (path As String) As ConfigurationSectionGroup" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSectionGroup ^ GetSectionGroup(System::String ^ path);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.GetSectionGroup(System.String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.GetSectionGroup : string -&gt; System.Configuration.ConfigurationSectionGroup" Usage="configuration.GetSectionGroup path" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.GetSectionGroup(System.String)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.GetSectionGroup : string -&gt; System.Configuration.ConfigurationSectionGroup" Usage="configuration.GetSectionGroup path" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.GetSectionGroup(System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.GetSectionGroup : string -&gt; System.Configuration.ConfigurationSectionGroup" Usage="configuration.GetSectionGroup path" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -370,12 +377,13 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationSectionGroup</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sectionGroupName" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sectionGroupName" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -410,6 +418,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -455,6 +464,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationLocationCollection</ReturnType>
@@ -489,6 +499,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -524,6 +535,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationSectionGroup</ReturnType>
@@ -560,6 +572,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -588,18 +601,18 @@
       </Docs>
     </Member>
     <Member MemberName="Save">
-      <MemberSignature Language="C#" Value="public void Save (System.Configuration.ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Save (saveMode As ConfigurationSaveMode)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Configuration::ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public void Save (System.Configuration.ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (saveMode As ConfigurationSaveMode)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Configuration::ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public void Save (System.Configuration.ConfigurationSaveMode mode);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(valuetype System.Configuration.ConfigurationSaveMode mode) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (mode As ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Configuration::ConfigurationSaveMode mode);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.Save : System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configuration.Save mode" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.Save : System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configuration.Save mode" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Save : System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configuration.Save mode" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -610,12 +623,13 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="mode" Type="System.Configuration.ConfigurationSaveMode" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -653,18 +667,18 @@
       </Docs>
     </Member>
     <Member MemberName="Save">
-      <MemberSignature Language="C#" Value="public void Save (System.Configuration.ConfigurationSaveMode saveMode, bool forceSaveAll);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(valuetype System.Configuration.ConfigurationSaveMode saveMode, bool forceSaveAll) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Save (saveMode As ConfigurationSaveMode, forceSaveAll As Boolean)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Configuration::ConfigurationSaveMode saveMode, bool forceSaveAll);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public void Save (System.Configuration.ConfigurationSaveMode saveMode, bool forceSaveAll);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(valuetype System.Configuration.ConfigurationSaveMode saveMode, bool forceSaveAll) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (saveMode As ConfigurationSaveMode, forceSaveAll As Boolean)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Configuration::ConfigurationSaveMode saveMode, bool forceSaveAll);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public void Save (System.Configuration.ConfigurationSaveMode mode, bool forceUpdateAll);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(valuetype System.Configuration.ConfigurationSaveMode mode, bool forceUpdateAll) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (mode As ConfigurationSaveMode, forceUpdateAll As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Configuration::ConfigurationSaveMode mode, bool forceUpdateAll);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.Save : System.Configuration.ConfigurationSaveMode * bool -&gt; unit" Usage="configuration.Save (mode, forceUpdateAll)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.Save : System.Configuration.ConfigurationSaveMode * bool -&gt; unit" Usage="configuration.Save (mode, forceUpdateAll)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Save : System.Configuration.ConfigurationSaveMode * bool -&gt; unit" Usage="configuration.Save (mode, forceUpdateAll)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -675,14 +689,15 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="mode" Type="System.Configuration.ConfigurationSaveMode" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="forceSaveAll" Type="System.Boolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="forceSaveAll" Type="System.Boolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="forceUpdateAll" Type="System.Boolean" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -740,6 +755,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -772,18 +788,18 @@
       </Docs>
     </Member>
     <Member MemberName="SaveAs">
-      <MemberSignature Language="C#" Value="public void SaveAs (string filename, System.Configuration.ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string filename, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String, saveMode As ConfigurationSaveMode)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ filename, System::Configuration::ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public void SaveAs (string filename, System.Configuration.ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string filename, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String, saveMode As ConfigurationSaveMode)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ filename, System::Configuration::ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public void SaveAs (string filename, System.Configuration.ConfigurationSaveMode mode);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string filename, valuetype System.Configuration.ConfigurationSaveMode mode) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String, mode As ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ filename, System::Configuration::ConfigurationSaveMode mode);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.SaveAs : string * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configuration.SaveAs (filename, mode)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.SaveAs : string * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configuration.SaveAs (filename, mode)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configuration.SaveAs (filename, mode)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -794,13 +810,14 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="filename" Type="System.String" Index="0" />
-        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="mode" Type="System.Configuration.ConfigurationSaveMode" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -828,18 +845,18 @@
       </Docs>
     </Member>
     <Member MemberName="SaveAs">
-      <MemberSignature Language="C#" Value="public void SaveAs (string filename, System.Configuration.ConfigurationSaveMode saveMode, bool forceSaveAll);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string filename, valuetype System.Configuration.ConfigurationSaveMode saveMode, bool forceSaveAll) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String, saveMode As ConfigurationSaveMode, forceSaveAll As Boolean)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ filename, System::Configuration::ConfigurationSaveMode saveMode, bool forceSaveAll);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public void SaveAs (string filename, System.Configuration.ConfigurationSaveMode saveMode, bool forceSaveAll);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string filename, valuetype System.Configuration.ConfigurationSaveMode saveMode, bool forceSaveAll) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String, saveMode As ConfigurationSaveMode, forceSaveAll As Boolean)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ filename, System::Configuration::ConfigurationSaveMode saveMode, bool forceSaveAll);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public void SaveAs (string filename, System.Configuration.ConfigurationSaveMode mode, bool forceUpdateAll);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string filename, valuetype System.Configuration.ConfigurationSaveMode mode, bool forceUpdateAll) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String, mode As ConfigurationSaveMode, forceUpdateAll As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ filename, System::Configuration::ConfigurationSaveMode mode, bool forceUpdateAll);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.SaveAs : string * System.Configuration.ConfigurationSaveMode * bool -&gt; unit" Usage="configuration.SaveAs (filename, mode, forceUpdateAll)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.SaveAs : string * System.Configuration.ConfigurationSaveMode * bool -&gt; unit" Usage="configuration.SaveAs (filename, mode, forceUpdateAll)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string * System.Configuration.ConfigurationSaveMode * bool -&gt; unit" Usage="configuration.SaveAs (filename, mode, forceUpdateAll)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -850,15 +867,16 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="filename" Type="System.String" Index="0" />
-        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="mode" Type="System.Configuration.ConfigurationSaveMode" Index="1" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="forceSaveAll" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="forceSaveAll" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="forceUpdateAll" Type="System.Boolean" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -910,6 +928,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationSectionGroupCollection</ReturnType>
@@ -952,6 +971,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationSectionCollection</ReturnType>
@@ -993,6 +1013,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.FrameworkName</ReturnType>
@@ -1029,6 +1050,7 @@
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.String,System.String&gt;</ReturnType>

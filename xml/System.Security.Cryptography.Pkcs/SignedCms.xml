@@ -14,6 +14,7 @@
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.1</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -61,6 +62,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -102,6 +104,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="signerIdentifierType" Type="System.Security.Cryptography.Pkcs.SubjectIdentifierType" />
@@ -123,18 +126,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.ContentInfo contentInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo contentInfo) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.ContentInfo contentInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo contentInfo) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.ContentInfo content);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo content) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As ContentInfo)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::ContentInfo ^ content);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As ContentInfo)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms content" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms content" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms content" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -145,9 +148,10 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="contentInfo" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentInfo" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="content" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -168,18 +172,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.ContentInfo contentInfo, bool detached);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo contentInfo, bool detached) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo, bool detached);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.ContentInfo contentInfo, bool detached);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo contentInfo, bool detached) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo, bool detached);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.ContentInfo content, bool detached);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo content, bool detached) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As ContentInfo, detached As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::ContentInfo ^ content, bool detached);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As ContentInfo, detached As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.ContentInfo * bool -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (content, detached)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.ContentInfo * bool -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (content, detached)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.ContentInfo * bool -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (content, detached)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -190,9 +194,10 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="contentInfo" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentInfo" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="content" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="0" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="detached" Type="System.Boolean" Index="1" />
       </Parameters>
@@ -215,18 +220,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo contentInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo contentInfo) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType, System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo contentInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo contentInfo) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType, System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo content);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo content) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType, content As ContentInfo)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType, System::Security::Cryptography::Pkcs::ContentInfo ^ content);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType, content As ContentInfo)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (signerIdentifierType, content)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (signerIdentifierType, content)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (signerIdentifierType, content)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -237,10 +242,11 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="signerIdentifierType" Type="System.Security.Cryptography.Pkcs.SubjectIdentifierType" Index="0" />
-        <Parameter Name="contentInfo" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentInfo" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="content" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -262,18 +268,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo contentInfo, bool detached);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo contentInfo, bool detached) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType, System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo, bool detached);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo contentInfo, bool detached);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo contentInfo, bool detached) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType, System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo, bool detached);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public SignedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo content, bool detached);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo content, bool detached) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType, content As ContentInfo, detached As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType, System::Security::Cryptography::Pkcs::ContentInfo ^ content, bool detached);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType, content As ContentInfo, detached As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo * bool -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (signerIdentifierType, content, detached)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo * bool -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (signerIdentifierType, content, detached)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo * bool -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (signerIdentifierType, content, detached)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -284,6 +290,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -292,7 +299,7 @@
       </Attributes>
       <Parameters>
         <Parameter Name="signerIdentifierType" Type="System.Security.Cryptography.Pkcs.SubjectIdentifierType" Index="0" />
-        <Parameter Name="contentInfo" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentInfo" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="content" Type="System.Security.Cryptography.Pkcs.ContentInfo" Index="1" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="detached" Type="System.Boolean" Index="2" />
       </Parameters>
@@ -313,6 +320,33 @@
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
       </Docs>
     </Member>
+    <Member MemberName="AddCertificate">
+      <MemberSignature Language="C#" Value="public void AddCertificate (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCertificate(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.AddCertificate(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCertificate (certificate As X509Certificate2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCertificate(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="member this.AddCertificate : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; unit" Usage="signedCms.AddCertificate certificate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="certificate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Certificates">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates" />
@@ -330,6 +364,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -366,6 +401,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -418,6 +454,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -475,6 +512,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -548,9 +586,10 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2">
+        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -598,6 +637,7 @@ The following permissions are required to access the signature key:
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -654,6 +694,7 @@ The following permissions are required to access the signature key:
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -713,6 +754,7 @@ The following permissions are required to access the signature key:
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.ContentInfo</ReturnType>
@@ -744,6 +786,7 @@ The following permissions are required to access the signature key:
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -802,6 +845,7 @@ The following permissions are required to access the signature key:
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -833,6 +877,7 @@ The following permissions are required to access the signature key:
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -850,6 +895,33 @@ The following permissions are required to access the signature key:
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
         <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
         <altmember cref="M:System.Security.Cryptography.Pkcs.SignedCms.Decode(System.Byte[])" />
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCertificate">
+      <MemberSignature Language="C#" Value="public void RemoveCertificate (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveCertificate(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.RemoveCertificate(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveCertificate (certificate As X509Certificate2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveCertificate(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="member this.RemoveCertificate : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; unit" Usage="signedCms.RemoveCertificate certificate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="certificate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="RemoveSignature">
@@ -878,6 +950,7 @@ The following permissions are required to access the signature key:
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -924,6 +997,7 @@ The following permissions are required to access the signature key:
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -962,6 +1036,7 @@ The following permissions are required to access the signature key:
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -998,6 +1073,7 @@ The following permissions are required to access the signature key:
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">

@@ -14,6 +14,7 @@
     <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -135,6 +136,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -193,6 +195,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="document" Type="System.Xml.XmlDocument" />
@@ -240,6 +243,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="document" Type="System.Xml.XmlDocument" />
@@ -276,6 +280,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -332,6 +337,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -350,16 +356,16 @@
       </Docs>
     </Member>
     <Member MemberName="DecryptData">
-      <MemberSignature Language="C#" Value="public byte[] DecryptData (System.Security.Cryptography.Xml.EncryptedData encryptedData, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] DecryptData(class System.Security.Cryptography.Xml.EncryptedData encryptedData, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ DecryptData(System::Security::Cryptography::Xml::EncryptedData ^ encryptedData, System::Security::Cryptography::SymmetricAlgorithm ^ symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public byte[] DecryptData (System.Security.Cryptography.Xml.EncryptedData encryptedData, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] DecryptData(class System.Security.Cryptography.Xml.EncryptedData encryptedData, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ DecryptData(System::Security::Cryptography::Xml::EncryptedData ^ encryptedData, System::Security::Cryptography::SymmetricAlgorithm ^ symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public byte[] DecryptData (System.Security.Cryptography.Xml.EncryptedData encryptedData, System.Security.Cryptography.SymmetricAlgorithm symAlg);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] DecryptData(class System.Security.Cryptography.Xml.EncryptedData encryptedData, class System.Security.Cryptography.SymmetricAlgorithm symAlg) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ DecryptData(System::Security::Cryptography::Xml::EncryptedData ^ encryptedData, System::Security::Cryptography::SymmetricAlgorithm ^ symAlg);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptData(System.Security.Cryptography.Xml.EncryptedData,System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.DecryptData : System.Security.Cryptography.Xml.EncryptedData * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="encryptedXml.DecryptData (encryptedData, symAlg)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptData(System.Security.Cryptography.Xml.EncryptedData,System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.DecryptData : System.Security.Cryptography.Xml.EncryptedData * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="encryptedXml.DecryptData (encryptedData, symAlg)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptData(System.Security.Cryptography.Xml.EncryptedData,System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.DecryptData : System.Security.Cryptography.Xml.EncryptedData * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="encryptedXml.DecryptData (encryptedData, symAlg)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -370,13 +376,14 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="encryptedData" Type="System.Security.Cryptography.Xml.EncryptedData" Index="0" />
-        <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="symAlg" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -428,6 +435,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -489,6 +497,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -532,9 +541,9 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="DecryptKey">
-      <MemberSignature Language="C#" Value="public static byte[] DecryptKey (byte[] keyData, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecryptKey(unsigned int8[] keyData, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ DecryptKey(cli::array &lt;System::Byte&gt; ^ keyData, System::Security::Cryptography::SymmetricAlgorithm ^ symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public static byte[] DecryptKey (byte[] keyData, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecryptKey(unsigned int8[] keyData, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ DecryptKey(cli::array &lt;System::Byte&gt; ^ keyData, System::Security::Cryptography::SymmetricAlgorithm ^ symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public static byte[] DecryptKey (byte[] keyData, System.Security.Cryptography.SymmetricAlgorithm symAlg);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecryptKey(unsigned int8[] keyData, class System.Security.Cryptography.SymmetricAlgorithm symAlg) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DecryptKey (keyData As Byte(), symAlg As SymmetricAlgorithm) As Byte()" FrameworkAlternate="xamarinmac-3.0" />
@@ -542,8 +551,8 @@
       <MemberSignature Language="VB.NET" Value="Public Shared Function DecryptKey (keyData As Byte(), symAlg As SymmetricAlgorithm) As Byte()" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="static member DecryptKey : byte[] * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.DecryptKey (keyData, symAlg)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="static member DecryptKey : byte[] * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.DecryptKey (keyData, symAlg)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member DecryptKey : byte[] * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.DecryptKey (keyData, symAlg)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -554,13 +563,14 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="keyData" Type="System.Byte[]" Index="0" />
-        <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="symAlg" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -586,16 +596,16 @@
       </Docs>
     </Member>
     <Member MemberName="DecryptKey">
-      <MemberSignature Language="C#" Value="public static byte[] DecryptKey (byte[] keyData, System.Security.Cryptography.RSA rsa, bool useOAEP);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecryptKey(unsigned int8[] keyData, class System.Security.Cryptography.RSA rsa, bool useOAEP) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ DecryptKey(cli::array &lt;System::Byte&gt; ^ keyData, System::Security::Cryptography::RSA ^ rsa, bool useOAEP);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public static byte[] DecryptKey (byte[] keyData, System.Security.Cryptography.RSA rsa, bool useOAEP);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecryptKey(unsigned int8[] keyData, class System.Security.Cryptography.RSA rsa, bool useOAEP) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ DecryptKey(cli::array &lt;System::Byte&gt; ^ keyData, System::Security::Cryptography::RSA ^ rsa, bool useOAEP);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public static byte[] DecryptKey (byte[] keyData, System.Security.Cryptography.RSA rsa, bool fOAEP);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] DecryptKey(unsigned int8[] keyData, class System.Security.Cryptography.RSA rsa, bool fOAEP) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ DecryptKey(cli::array &lt;System::Byte&gt; ^ keyData, System::Security::Cryptography::RSA ^ rsa, bool fOAEP);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey(System.Byte[],System.Security.Cryptography.RSA,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="static member DecryptKey : byte[] * System.Security.Cryptography.RSA * bool -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.DecryptKey (keyData, rsa, fOAEP)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey(System.Byte[],System.Security.Cryptography.RSA,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="static member DecryptKey : byte[] * System.Security.Cryptography.RSA * bool -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.DecryptKey (keyData, rsa, fOAEP)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.DecryptKey(System.Byte[],System.Security.Cryptography.RSA,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member DecryptKey : byte[] * System.Security.Cryptography.RSA * bool -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.DecryptKey (keyData, rsa, fOAEP)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -606,6 +616,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -613,7 +624,7 @@
       <Parameters>
         <Parameter Name="keyData" Type="System.Byte[]" Index="0" />
         <Parameter Name="rsa" Type="System.Security.Cryptography.RSA" Index="1" />
-        <Parameter Name="useOAEP" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="useOAEP" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="fOAEP" Type="System.Boolean" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -654,6 +665,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Policy.Evidence</ReturnType>
@@ -688,6 +700,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
@@ -749,6 +762,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Xml.EncryptedData</ReturnType>
@@ -808,6 +822,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Xml.EncryptedData</ReturnType>
@@ -886,9 +901,9 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="EncryptData">
-      <MemberSignature Language="C#" Value="public byte[] EncryptData (byte[] plaintext, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EncryptData(unsigned int8[] plaintext, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ EncryptData(cli::array &lt;System::Byte&gt; ^ plaintext, System::Security::Cryptography::SymmetricAlgorithm ^ symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public byte[] EncryptData (byte[] plaintext, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EncryptData(unsigned int8[] plaintext, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ EncryptData(cli::array &lt;System::Byte&gt; ^ plaintext, System::Security::Cryptography::SymmetricAlgorithm ^ symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public byte[] EncryptData (byte[] plainText, System.Security.Cryptography.SymmetricAlgorithm symAlg);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EncryptData(unsigned int8[] plainText, class System.Security.Cryptography.SymmetricAlgorithm symAlg) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Function EncryptData (plainText As Byte(), symAlg As SymmetricAlgorithm) As Byte()" FrameworkAlternate="xamarinmac-3.0" />
@@ -896,8 +911,8 @@
       <MemberSignature Language="VB.NET" Value="Public Function EncryptData (plainText As Byte(), symAlg As SymmetricAlgorithm) As Byte()" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptData(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.EncryptData : byte[] * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="encryptedXml.EncryptData (plainText, symAlg)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptData(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.EncryptData : byte[] * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="encryptedXml.EncryptData (plainText, symAlg)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptData(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.EncryptData : byte[] * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="encryptedXml.EncryptData (plainText, symAlg)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -908,14 +923,15 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="plaintext" Type="System.Byte[]" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="plaintext" Type="System.Byte[]" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="plainText" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="symAlg" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -963,9 +979,9 @@
       </Docs>
     </Member>
     <Member MemberName="EncryptData">
-      <MemberSignature Language="C#" Value="public byte[] EncryptData (System.Xml.XmlElement inputElement, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm, bool content);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EncryptData(class System.Xml.XmlElement inputElement, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm, bool content) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ EncryptData(System::Xml::XmlElement ^ inputElement, System::Security::Cryptography::SymmetricAlgorithm ^ symmetricAlgorithm, bool content);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public byte[] EncryptData (System.Xml.XmlElement inputElement, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm, bool content);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EncryptData(class System.Xml.XmlElement inputElement, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm, bool content) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ EncryptData(System::Xml::XmlElement ^ inputElement, System::Security::Cryptography::SymmetricAlgorithm ^ symmetricAlgorithm, bool content);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public byte[] EncryptData (System.Xml.XmlElement inputElement, System.Security.Cryptography.SymmetricAlgorithm symAlg, bool content);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EncryptData(class System.Xml.XmlElement inputElement, class System.Security.Cryptography.SymmetricAlgorithm symAlg, bool content) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Function EncryptData (inputElement As XmlElement, symAlg As SymmetricAlgorithm, content As Boolean) As Byte()" FrameworkAlternate="xamarinmac-3.0" />
@@ -973,8 +989,8 @@
       <MemberSignature Language="VB.NET" Value="Public Function EncryptData (inputElement As XmlElement, symAlg As SymmetricAlgorithm, content As Boolean) As Byte()" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptData(System.Xml.XmlElement,System.Security.Cryptography.SymmetricAlgorithm,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.EncryptData : System.Xml.XmlElement * System.Security.Cryptography.SymmetricAlgorithm * bool -&gt; byte[]" Usage="encryptedXml.EncryptData (inputElement, symAlg, content)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptData(System.Xml.XmlElement,System.Security.Cryptography.SymmetricAlgorithm,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.EncryptData : System.Xml.XmlElement * System.Security.Cryptography.SymmetricAlgorithm * bool -&gt; byte[]" Usage="encryptedXml.EncryptData (inputElement, symAlg, content)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptData(System.Xml.XmlElement,System.Security.Cryptography.SymmetricAlgorithm,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.EncryptData : System.Xml.XmlElement * System.Security.Cryptography.SymmetricAlgorithm * bool -&gt; byte[]" Usage="encryptedXml.EncryptData (inputElement, symAlg, content)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -985,13 +1001,14 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="inputElement" Type="System.Xml.XmlElement" Index="0" />
-        <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="symAlg" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="content" Type="System.Boolean" Index="2" />
       </Parameters>
@@ -1054,9 +1071,9 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="EncryptKey">
-      <MemberSignature Language="C#" Value="public static byte[] EncryptKey (byte[] keyData, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] EncryptKey(unsigned int8[] keyData, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ EncryptKey(cli::array &lt;System::Byte&gt; ^ keyData, System::Security::Cryptography::SymmetricAlgorithm ^ symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public static byte[] EncryptKey (byte[] keyData, System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] EncryptKey(unsigned int8[] keyData, class System.Security.Cryptography.SymmetricAlgorithm symmetricAlgorithm) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ EncryptKey(cli::array &lt;System::Byte&gt; ^ keyData, System::Security::Cryptography::SymmetricAlgorithm ^ symmetricAlgorithm);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public static byte[] EncryptKey (byte[] keyData, System.Security.Cryptography.SymmetricAlgorithm symAlg);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] EncryptKey(unsigned int8[] keyData, class System.Security.Cryptography.SymmetricAlgorithm symAlg) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EncryptKey (keyData As Byte(), symAlg As SymmetricAlgorithm) As Byte()" FrameworkAlternate="xamarinmac-3.0" />
@@ -1064,8 +1081,8 @@
       <MemberSignature Language="VB.NET" Value="Public Shared Function EncryptKey (keyData As Byte(), symAlg As SymmetricAlgorithm) As Byte()" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="static member EncryptKey : byte[] * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.EncryptKey (keyData, symAlg)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="static member EncryptKey : byte[] * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.EncryptKey (keyData, symAlg)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member EncryptKey : byte[] * System.Security.Cryptography.SymmetricAlgorithm -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.EncryptKey (keyData, symAlg)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1076,13 +1093,14 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="keyData" Type="System.Byte[]" Index="0" />
-        <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="symmetricAlgorithm" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="symAlg" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -1110,16 +1128,16 @@
       </Docs>
     </Member>
     <Member MemberName="EncryptKey">
-      <MemberSignature Language="C#" Value="public static byte[] EncryptKey (byte[] keyData, System.Security.Cryptography.RSA rsa, bool useOAEP);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] EncryptKey(unsigned int8[] keyData, class System.Security.Cryptography.RSA rsa, bool useOAEP) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ EncryptKey(cli::array &lt;System::Byte&gt; ^ keyData, System::Security::Cryptography::RSA ^ rsa, bool useOAEP);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public static byte[] EncryptKey (byte[] keyData, System.Security.Cryptography.RSA rsa, bool useOAEP);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] EncryptKey(unsigned int8[] keyData, class System.Security.Cryptography.RSA rsa, bool useOAEP) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ EncryptKey(cli::array &lt;System::Byte&gt; ^ keyData, System::Security::Cryptography::RSA ^ rsa, bool useOAEP);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public static byte[] EncryptKey (byte[] keyData, System.Security.Cryptography.RSA rsa, bool fOAEP);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] EncryptKey(unsigned int8[] keyData, class System.Security.Cryptography.RSA rsa, bool fOAEP) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ EncryptKey(cli::array &lt;System::Byte&gt; ^ keyData, System::Security::Cryptography::RSA ^ rsa, bool fOAEP);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey(System.Byte[],System.Security.Cryptography.RSA,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="static member EncryptKey : byte[] * System.Security.Cryptography.RSA * bool -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.EncryptKey (keyData, rsa, fOAEP)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey(System.Byte[],System.Security.Cryptography.RSA,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="static member EncryptKey : byte[] * System.Security.Cryptography.RSA * bool -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.EncryptKey (keyData, rsa, fOAEP)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey(System.Byte[],System.Security.Cryptography.RSA,System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member EncryptKey : byte[] * System.Security.Cryptography.RSA * bool -&gt; byte[]" Usage="System.Security.Cryptography.Xml.EncryptedXml.EncryptKey (keyData, rsa, fOAEP)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1130,6 +1148,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -1137,7 +1156,7 @@
       <Parameters>
         <Parameter Name="keyData" Type="System.Byte[]" Index="0" />
         <Parameter Name="rsa" Type="System.Security.Cryptography.RSA" Index="1" />
-        <Parameter Name="useOAEP" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="useOAEP" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="fOAEP" Type="System.Boolean" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -1174,16 +1193,16 @@
       </Docs>
     </Member>
     <Member MemberName="GetDecryptionIV">
-      <MemberSignature Language="C#" Value="public virtual byte[] GetDecryptionIV (System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetDecryptionIV(class System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetDecryptionIV(System::Security::Cryptography::Xml::EncryptedData ^ encryptedData, System::String ^ symmetricAlgorithmUri);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public virtual byte[] GetDecryptionIV (System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetDecryptionIV(class System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetDecryptionIV(System::Security::Cryptography::Xml::EncryptedData ^ encryptedData, System::String ^ symmetricAlgorithmUri);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public virtual byte[] GetDecryptionIV (System.Security.Cryptography.Xml.EncryptedData encryptedData, string symAlgUri);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetDecryptionIV(class System.Security.Cryptography.Xml.EncryptedData encryptedData, string symAlgUri) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetDecryptionIV(System::Security::Cryptography::Xml::EncryptedData ^ encryptedData, System::String ^ symAlgUri);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.GetDecryptionIV(System.Security.Cryptography.Xml.EncryptedData,System.String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="abstract member GetDecryptionIV : System.Security.Cryptography.Xml.EncryptedData * string -&gt; byte[]&#xA;override this.GetDecryptionIV : System.Security.Cryptography.Xml.EncryptedData * string -&gt; byte[]" Usage="encryptedXml.GetDecryptionIV (encryptedData, symAlgUri)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.GetDecryptionIV(System.Security.Cryptography.Xml.EncryptedData,System.String)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="abstract member GetDecryptionIV : System.Security.Cryptography.Xml.EncryptedData * string -&gt; byte[]&#xA;override this.GetDecryptionIV : System.Security.Cryptography.Xml.EncryptedData * string -&gt; byte[]" Usage="encryptedXml.GetDecryptionIV (encryptedData, symAlgUri)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.GetDecryptionIV(System.Security.Cryptography.Xml.EncryptedData,System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member GetDecryptionIV : System.Security.Cryptography.Xml.EncryptedData * string -&gt; byte[]&#xA;override this.GetDecryptionIV : System.Security.Cryptography.Xml.EncryptedData * string -&gt; byte[]" Usage="encryptedXml.GetDecryptionIV (encryptedData, symAlgUri)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1194,13 +1213,14 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="encryptedData" Type="System.Security.Cryptography.Xml.EncryptedData" Index="0" />
-        <Parameter Name="symmetricAlgorithmUri" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="symmetricAlgorithmUri" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="symAlgUri" Type="System.String" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -1228,16 +1248,16 @@
       </Docs>
     </Member>
     <Member MemberName="GetDecryptionKey">
-      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.SymmetricAlgorithm GetDecryptionKey (System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.SymmetricAlgorithm GetDecryptionKey(class System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::SymmetricAlgorithm ^ GetDecryptionKey(System::Security::Cryptography::Xml::EncryptedData ^ encryptedData, System::String ^ symmetricAlgorithmUri);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.SymmetricAlgorithm GetDecryptionKey (System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.SymmetricAlgorithm GetDecryptionKey(class System.Security.Cryptography.Xml.EncryptedData encryptedData, string symmetricAlgorithmUri) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::SymmetricAlgorithm ^ GetDecryptionKey(System::Security::Cryptography::Xml::EncryptedData ^ encryptedData, System::String ^ symmetricAlgorithmUri);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.SymmetricAlgorithm GetDecryptionKey (System.Security.Cryptography.Xml.EncryptedData encryptedData, string symAlgUri);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.SymmetricAlgorithm GetDecryptionKey(class System.Security.Cryptography.Xml.EncryptedData encryptedData, string symAlgUri) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::SymmetricAlgorithm ^ GetDecryptionKey(System::Security::Cryptography::Xml::EncryptedData ^ encryptedData, System::String ^ symAlgUri);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.GetDecryptionKey(System.Security.Cryptography.Xml.EncryptedData,System.String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="abstract member GetDecryptionKey : System.Security.Cryptography.Xml.EncryptedData * string -&gt; System.Security.Cryptography.SymmetricAlgorithm&#xA;override this.GetDecryptionKey : System.Security.Cryptography.Xml.EncryptedData * string -&gt; System.Security.Cryptography.SymmetricAlgorithm" Usage="encryptedXml.GetDecryptionKey (encryptedData, symAlgUri)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.GetDecryptionKey(System.Security.Cryptography.Xml.EncryptedData,System.String)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="abstract member GetDecryptionKey : System.Security.Cryptography.Xml.EncryptedData * string -&gt; System.Security.Cryptography.SymmetricAlgorithm&#xA;override this.GetDecryptionKey : System.Security.Cryptography.Xml.EncryptedData * string -&gt; System.Security.Cryptography.SymmetricAlgorithm" Usage="encryptedXml.GetDecryptionKey (encryptedData, symAlgUri)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedXml.GetDecryptionKey(System.Security.Cryptography.Xml.EncryptedData,System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member GetDecryptionKey : System.Security.Cryptography.Xml.EncryptedData * string -&gt; System.Security.Cryptography.SymmetricAlgorithm&#xA;override this.GetDecryptionKey : System.Security.Cryptography.Xml.EncryptedData * string -&gt; System.Security.Cryptography.SymmetricAlgorithm" Usage="encryptedXml.GetDecryptionKey (encryptedData, symAlgUri)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -1248,13 +1268,14 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.SymmetricAlgorithm</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="encryptedData" Type="System.Security.Cryptography.Xml.EncryptedData" Index="0" />
-        <Parameter Name="symmetricAlgorithmUri" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="symmetricAlgorithmUri" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="symAlgUri" Type="System.String" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -1296,6 +1317,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
@@ -1336,6 +1358,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CipherMode</ReturnType>
@@ -1370,6 +1393,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.PaddingMode</ReturnType>
@@ -1404,6 +1428,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1440,6 +1465,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1492,6 +1518,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1548,6 +1575,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlResolver</ReturnType>
@@ -1581,6 +1609,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1608,6 +1637,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1641,6 +1671,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1683,6 +1714,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1716,6 +1748,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1758,6 +1791,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1791,6 +1825,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1833,6 +1868,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1875,6 +1911,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1908,6 +1945,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1950,6 +1988,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1983,6 +2022,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2016,6 +2056,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2058,6 +2099,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2091,6 +2133,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2124,6 +2167,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2157,6 +2201,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2190,6 +2235,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

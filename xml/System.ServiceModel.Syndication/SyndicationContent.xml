@@ -17,6 +17,7 @@
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -73,6 +74,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -105,6 +107,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="System.ServiceModel.Syndication.SyndicationContent" />
@@ -135,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,System.String&gt;</ReturnType>
@@ -181,6 +185,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationContent</ReturnType>
@@ -212,6 +217,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
@@ -253,6 +259,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
@@ -287,6 +294,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.UrlSyndicationContent</ReturnType>
@@ -330,6 +338,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
@@ -373,6 +382,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.XmlSyndicationContent</ReturnType>
@@ -407,6 +417,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.XmlSyndicationContent</ReturnType>
@@ -443,6 +454,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.XmlSyndicationContent</ReturnType>
@@ -460,18 +472,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateXmlContent">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent (System.Xml.XmlReader xmlReader);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent(class System.Xml.XmlReader xmlReader) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Syndication::XmlSyndicationContent ^ CreateXmlContent(System::Xml::XmlReader ^ xmlReader);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent (System.Xml.XmlReader xmlReader);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent(class System.Xml.XmlReader xmlReader) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Syndication::XmlSyndicationContent ^ CreateXmlContent(System::Xml::XmlReader ^ xmlReader);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent (System.Xml.XmlReader reader);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.XmlSyndicationContent CreateXmlContent(class System.Xml.XmlReader reader) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent(System.Xml.XmlReader)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateXmlContent (reader As XmlReader) As XmlSyndicationContent" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Syndication::XmlSyndicationContent ^ CreateXmlContent(System::Xml::XmlReader ^ reader);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member CreateXmlContent : System.Xml.XmlReader -&gt; System.ServiceModel.Syndication.XmlSyndicationContent" Usage="System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent xmlReader" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0;netframework-4.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="static member CreateXmlContent : System.Xml.XmlReader -&gt; System.ServiceModel.Syndication.XmlSyndicationContent" Usage="System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent xmlReader" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateXmlContent (reader As XmlReader) As XmlSyndicationContent" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="static member CreateXmlContent : System.Xml.XmlReader -&gt; System.ServiceModel.Syndication.XmlSyndicationContent" Usage="System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent reader" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent(System.Xml.XmlReader)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent(System.Xml.XmlReader)" FrameworkAlternate="xamarinmac-3.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netframework-4.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -485,12 +497,13 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.XmlSyndicationContent</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netcore-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -521,6 +534,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -580,6 +594,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -620,6 +635,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -8,13 +8,14 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -33,6 +34,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
@@ -53,6 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
@@ -78,6 +81,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
@@ -99,6 +103,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -126,9 +131,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -155,6 +161,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -180,6 +187,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -207,6 +215,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
@@ -228,9 +237,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -255,6 +265,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -276,6 +287,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
@@ -303,6 +315,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -330,6 +343,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -357,6 +371,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -383,6 +398,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
@@ -408,6 +424,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -435,6 +452,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -462,6 +480,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -489,6 +508,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
@@ -515,6 +535,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
@@ -539,6 +560,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
@@ -564,6 +586,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -585,9 +608,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>

@@ -329,13 +329,13 @@
       <Docs>
         <summary>Gets the minimum date and time supported by the <see cref="T:System.Globalization.KoreanLunisolarCalendar" /> class.</summary>
         <value>The earliest date and time supported by the <see cref="T:System.Globalization.KoreanLunisolarCalendar" /> class.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 In .NET Framework, the earliest supported date and time supported is equivalent to the first moment of February 14, 918 C.E. in the Gregorian calendar. In .NET Core, it is equivalent to the first moment of February 19, 918 C.E.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

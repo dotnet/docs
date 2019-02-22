@@ -10,6 +10,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
@@ -35,18 +36,18 @@
   </Docs>
   <Members>
     <Member MemberName="GetStreamCore">
-      <MemberSignature Language="C#" Value="protected override System.IO.Stream GetStreamCore (System.IO.FileMode streamFileMode, System.IO.FileAccess streamFileAccess);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IO.Stream GetStreamCore(valuetype System.IO.FileMode streamFileMode, valuetype System.IO.FileAccess streamFileAccess) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetStreamCore (streamFileMode As FileMode, streamFileAccess As FileAccess) As Stream" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IO::Stream ^ GetStreamCore(System::IO::FileMode streamFileMode, System::IO::FileAccess streamFileAccess);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="protected override System.IO.Stream GetStreamCore (System.IO.FileMode streamFileMode, System.IO.FileAccess streamFileAccess);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IO.Stream GetStreamCore(valuetype System.IO.FileMode streamFileMode, valuetype System.IO.FileAccess streamFileAccess) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetStreamCore (streamFileMode As FileMode, streamFileAccess As FileAccess) As Stream" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IO::Stream ^ GetStreamCore(System::IO::FileMode streamFileMode, System::IO::FileAccess streamFileAccess);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       <MemberSignature Language="C#" Value="protected override System.IO.Stream GetStreamCore (System.IO.FileMode mode, System.IO.FileAccess access);" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IO.Stream GetStreamCore(valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access) cil managed" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetStreamCore (mode As FileMode, access As FileAccess) As Stream" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IO::Stream ^ GetStreamCore(System::IO::FileMode mode, System::IO::FileAccess access);" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="override this.GetStreamCore : System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Stream" Usage="zipPackagePart.GetStreamCore (streamFileMode, streamFileAccess)" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="F#" Value="override this.GetStreamCore : System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Stream" Usage="zipPackagePart.GetStreamCore (streamFileMode, streamFileAccess)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" FrameworkAlternate="netframework-3.0" />
-      <MemberSignature Language="F#" Value="override this.GetStreamCore : System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Stream" Usage="zipPackagePart.GetStreamCore (mode, access)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="override this.GetStreamCore : System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Stream" Usage="zipPackagePart.GetStreamCore (mode, access)" FrameworkAlternate="netframework-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -58,14 +59,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="streamFileMode" Type="System.IO.FileMode" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="streamFileMode" Type="System.IO.FileMode" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
         <Parameter Name="mode" Type="System.IO.FileMode" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="streamFileAccess" Type="System.IO.FileAccess" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="streamFileAccess" Type="System.IO.FileAccess" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
         <Parameter Name="access" Type="System.IO.FileAccess" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>

@@ -8,6 +8,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.14.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +18,7 @@
     <Attribute>
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -37,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
@@ -62,6 +64,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Foundation.IAsyncOperation&lt;TResult&gt;</ReturnType>
@@ -91,6 +94,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -115,6 +119,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -142,6 +147,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -171,6 +177,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -201,6 +208,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -231,6 +239,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -264,6 +273,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -292,6 +302,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -323,6 +334,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -354,6 +366,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -386,6 +399,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -418,6 +432,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -453,6 +468,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -483,6 +499,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -517,6 +534,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -551,6 +569,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

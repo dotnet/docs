@@ -1,0 +1,376 @@
+﻿<Type Name="ArrayTensorExtensions" FullName="System.Numerics.Tensors.ArrayTensorExtensions">
+  <TypeSignature Language="C#" Value="public static class ArrayTensorExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ArrayTensorExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Numerics.Tensors.ArrayTensorExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ArrayTensorExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArrayTensorExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type ArrayTensorExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Numerics.Tensors</AssemblyName>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToCompressedSparseTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt; ToCompressedSparseTensor&lt;T&gt; (this T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.CompressedSparseTensor`1&lt;!!T&gt; ToCompressedSparseTensor&lt;T&gt;(!!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToCompressedSparseTensor``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToCompressedSparseTensor(Of T) (array As T()) As CompressedSparseTensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Numerics::Tensors::CompressedSparseTensor&lt;T&gt; ^ ToCompressedSparseTensor(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="static member ToCompressedSparseTensor : 'T[] -&gt; System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToCompressedSparseTensor array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToCompressedSparseTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt; ToCompressedSparseTensor&lt;T&gt; (this Array array, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.CompressedSparseTensor`1&lt;!!T&gt; ToCompressedSparseTensor&lt;T&gt;(class System.Array array, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToCompressedSparseTensor``1(System.Array,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member ToCompressedSparseTensor : Array * bool -&gt; System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToCompressedSparseTensor (array, reverseStride)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" RefType="this" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToCompressedSparseTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt; ToCompressedSparseTensor&lt;T&gt; (this T[,,] array, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.CompressedSparseTensor`1&lt;!!T&gt; ToCompressedSparseTensor&lt;T&gt;(!!T[,,] array, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToCompressedSparseTensor``1(``0[0:,0:,0:],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToCompressedSparseTensor(Of T) (array As T(,,), Optional reverseStride As Boolean = false) As CompressedSparseTensor(Of T)" />
+      <MemberSignature Language="F#" Value="static member ToCompressedSparseTensor : 'T[,,] * bool -&gt; System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToCompressedSparseTensor (array, reverseStride)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,]" RefType="this" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToCompressedSparseTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt; ToCompressedSparseTensor&lt;T&gt; (this T[,] array, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.CompressedSparseTensor`1&lt;!!T&gt; ToCompressedSparseTensor&lt;T&gt;(!!T[,] array, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToCompressedSparseTensor``1(``0[0:,0:],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToCompressedSparseTensor(Of T) (array As T(,), Optional reverseStride As Boolean = false) As CompressedSparseTensor(Of T)" />
+      <MemberSignature Language="F#" Value="static member ToCompressedSparseTensor : 'T[,] * bool -&gt; System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToCompressedSparseTensor (array, reverseStride)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" RefType="this" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSparseTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.SparseTensor&lt;T&gt; ToSparseTensor&lt;T&gt; (this T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.SparseTensor`1&lt;!!T&gt; ToSparseTensor&lt;T&gt;(!!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToSparseTensor``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSparseTensor(Of T) (array As T()) As SparseTensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Numerics::Tensors::SparseTensor&lt;T&gt; ^ ToSparseTensor(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="static member ToSparseTensor : 'T[] -&gt; System.Numerics.Tensors.SparseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToSparseTensor array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.SparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSparseTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.SparseTensor&lt;T&gt; ToSparseTensor&lt;T&gt; (this Array array, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.SparseTensor`1&lt;!!T&gt; ToSparseTensor&lt;T&gt;(class System.Array array, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToSparseTensor``1(System.Array,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member ToSparseTensor : Array * bool -&gt; System.Numerics.Tensors.SparseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToSparseTensor (array, reverseStride)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.SparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" RefType="this" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSparseTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.SparseTensor&lt;T&gt; ToSparseTensor&lt;T&gt; (this T[,,] array, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.SparseTensor`1&lt;!!T&gt; ToSparseTensor&lt;T&gt;(!!T[,,] array, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToSparseTensor``1(``0[0:,0:,0:],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSparseTensor(Of T) (array As T(,,), Optional reverseStride As Boolean = false) As SparseTensor(Of T)" />
+      <MemberSignature Language="F#" Value="static member ToSparseTensor : 'T[,,] * bool -&gt; System.Numerics.Tensors.SparseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToSparseTensor (array, reverseStride)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.SparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,]" RefType="this" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSparseTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.SparseTensor&lt;T&gt; ToSparseTensor&lt;T&gt; (this T[,] array, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.SparseTensor`1&lt;!!T&gt; ToSparseTensor&lt;T&gt;(!!T[,] array, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToSparseTensor``1(``0[0:,0:],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSparseTensor(Of T) (array As T(,), Optional reverseStride As Boolean = false) As SparseTensor(Of T)" />
+      <MemberSignature Language="F#" Value="static member ToSparseTensor : 'T[,] * bool -&gt; System.Numerics.Tensors.SparseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToSparseTensor (array, reverseStride)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.SparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" RefType="this" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.DenseTensor&lt;T&gt; ToTensor&lt;T&gt; (this T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.DenseTensor`1&lt;!!T&gt; ToTensor&lt;T&gt;(!!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToTensor``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToTensor(Of T) (array As T()) As DenseTensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Numerics::Tensors::DenseTensor&lt;T&gt; ^ ToTensor(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="static member ToTensor : 'T[] -&gt; System.Numerics.Tensors.DenseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToTensor array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.DenseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.DenseTensor&lt;T&gt; ToTensor&lt;T&gt; (this Array array, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.DenseTensor`1&lt;!!T&gt; ToTensor&lt;T&gt;(class System.Array array, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToTensor``1(System.Array,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member ToTensor : Array * bool -&gt; System.Numerics.Tensors.DenseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToTensor (array, reverseStride)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.DenseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" RefType="this" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.DenseTensor&lt;T&gt; ToTensor&lt;T&gt; (this T[,,] array, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.DenseTensor`1&lt;!!T&gt; ToTensor&lt;T&gt;(!!T[,,] array, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToTensor``1(``0[0:,0:,0:],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToTensor(Of T) (array As T(,,), Optional reverseStride As Boolean = false) As DenseTensor(Of T)" />
+      <MemberSignature Language="F#" Value="static member ToTensor : 'T[,,] * bool -&gt; System.Numerics.Tensors.DenseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToTensor (array, reverseStride)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.DenseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,]" RefType="this" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToTensor&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.DenseTensor&lt;T&gt; ToTensor&lt;T&gt; (this T[,] array, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.DenseTensor`1&lt;!!T&gt; ToTensor&lt;T&gt;(!!T[,] array, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.ArrayTensorExtensions.ToTensor``1(``0[0:,0:],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToTensor(Of T) (array As T(,), Optional reverseStride As Boolean = false) As DenseTensor(Of T)" />
+      <MemberSignature Language="F#" Value="static member ToTensor : 'T[,] * bool -&gt; System.Numerics.Tensors.DenseTensor&lt;'T&gt;" Usage="System.Numerics.Tensors.ArrayTensorExtensions.ToTensor (array, reverseStride)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.DenseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" RefType="this" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

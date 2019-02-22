@@ -19,11 +19,11 @@
   </Docs>
   <Members>
     <Member MemberName="TryReadBigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadBigEndian (this ref System.Buffers.SequenceReader&lt;byte&gt; reader, out short value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadBigEndian(valuetype System.Buffers.SequenceReader`1&lt;unsigned int8&gt;&amp; reader, [out] int16&amp; value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int16@)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryReadBigEndian (ByRef reader As SequenceReader(Of Byte), ByRef value As Short) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool TryReadBigEndian(System::Buffers::SequenceReader&lt;System::Byte&gt; % reader, [Runtime::InteropServices::Out] short % value);" />
+      <MemberSignature Language="C#" Value="public static bool TryReadBigEndian (this ref System.Buffers.SequenceReader&lt;byte&gt; reader, out long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadBigEndian(valuetype System.Buffers.SequenceReader`1&lt;unsigned int8&gt;&amp; reader, [out] int64&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int64@)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryReadBigEndian (ByRef reader As SequenceReader(Of Byte), ByRef value As Long) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool TryReadBigEndian(System::Buffers::SequenceReader&lt;System::Byte&gt; % reader, [Runtime::InteropServices::Out] long % value);" />
       <MemberSignature Language="F#" Value="static member TryReadBigEndian :  *  -&gt; bool" Usage="System.Buffers.SequenceReaderExtensions.TryReadBigEndian (reader, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -35,34 +35,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="reader" Type="System.Buffers.SequenceReader&lt;System.Byte&gt;" RefType="this" />
-        <Parameter Name="value" Type="System.Int16" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="reader">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TryReadBigEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadBigEndian (this ref System.Buffers.SequenceReader&lt;byte&gt; reader, out int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadBigEndian(valuetype System.Buffers.SequenceReader`1&lt;unsigned int8&gt;&amp; reader, [out] int32&amp; value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReaderExtensions.TryReadBigEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int32@)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryReadBigEndian (ByRef reader As SequenceReader(Of Byte), ByRef value As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool TryReadBigEndian(System::Buffers::SequenceReader&lt;System::Byte&gt; % reader, [Runtime::InteropServices::Out] int % value);" />
-      <MemberSignature Language="F#" Value="static member TryReadBigEndian :  *  -&gt; bool" Usage="System.Buffers.SequenceReaderExtensions.TryReadBigEndian (reader, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="reader" Type="System.Buffers.SequenceReader&lt;System.Byte&gt;" RefType="this" />
-        <Parameter Name="value" Type="System.Int32" RefType="out" />
+        <Parameter Name="value" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="reader">To be added.</param>
@@ -100,11 +73,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReadLittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadLittleEndian (this ref System.Buffers.SequenceReader&lt;byte&gt; reader, out short value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadLittleEndian(valuetype System.Buffers.SequenceReader`1&lt;unsigned int8&gt;&amp; reader, [out] int16&amp; value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int16@)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryReadLittleEndian (ByRef reader As SequenceReader(Of Byte), ByRef value As Short) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool TryReadLittleEndian(System::Buffers::SequenceReader&lt;System::Byte&gt; % reader, [Runtime::InteropServices::Out] short % value);" />
+      <MemberSignature Language="C#" Value="public static bool TryReadLittleEndian (this ref System.Buffers.SequenceReader&lt;byte&gt; reader, out long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadLittleEndian(valuetype System.Buffers.SequenceReader`1&lt;unsigned int8&gt;&amp; reader, [out] int64&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int64@)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryReadLittleEndian (ByRef reader As SequenceReader(Of Byte), ByRef value As Long) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool TryReadLittleEndian(System::Buffers::SequenceReader&lt;System::Byte&gt; % reader, [Runtime::InteropServices::Out] long % value);" />
       <MemberSignature Language="F#" Value="static member TryReadLittleEndian :  *  -&gt; bool" Usage="System.Buffers.SequenceReaderExtensions.TryReadLittleEndian (reader, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -116,34 +89,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="reader" Type="System.Buffers.SequenceReader&lt;System.Byte&gt;" RefType="this" />
-        <Parameter Name="value" Type="System.Int16" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="reader">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TryReadLittleEndian">
-      <MemberSignature Language="C#" Value="public static bool TryReadLittleEndian (this ref System.Buffers.SequenceReader&lt;byte&gt; reader, out int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReadLittleEndian(valuetype System.Buffers.SequenceReader`1&lt;unsigned int8&gt;&amp; reader, [out] int32&amp; value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Buffers.SequenceReaderExtensions.TryReadLittleEndian(System.Buffers.SequenceReader{System.Byte}@,System.Int32@)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryReadLittleEndian (ByRef reader As SequenceReader(Of Byte), ByRef value As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool TryReadLittleEndian(System::Buffers::SequenceReader&lt;System::Byte&gt; % reader, [Runtime::InteropServices::Out] int % value);" />
-      <MemberSignature Language="F#" Value="static member TryReadLittleEndian :  *  -&gt; bool" Usage="System.Buffers.SequenceReaderExtensions.TryReadLittleEndian (reader, value)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="reader" Type="System.Buffers.SequenceReader&lt;System.Byte&gt;" RefType="this" />
-        <Parameter Name="value" Type="System.Int32" RefType="out" />
+        <Parameter Name="value" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="reader">To be added.</param>

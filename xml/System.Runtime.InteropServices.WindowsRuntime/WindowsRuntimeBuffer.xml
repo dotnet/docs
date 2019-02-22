@@ -8,13 +8,14 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.14.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -34,6 +35,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -64,6 +66,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

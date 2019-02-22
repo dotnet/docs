@@ -1,0 +1,131 @@
+﻿<Type Name="Pkcs12CertBag" FullName="System.Security.Cryptography.Pkcs.Pkcs12CertBag">
+  <TypeSignature Language="C#" Value="public sealed class Pkcs12CertBag : System.Security.Cryptography.Pkcs.Pkcs12SafeBag" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Pkcs12CertBag extends System.Security.Cryptography.Pkcs.Pkcs12SafeBag" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.Pkcs12CertBag" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pkcs12CertBag&#xA;Inherits Pkcs12SafeBag" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Pkcs12CertBag sealed : System::Security::Cryptography::Pkcs::Pkcs12SafeBag" />
+  <TypeSignature Language="F#" Value="type Pkcs12CertBag = class&#xA;    inherit Pkcs12SafeBag" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.Pkcs.Pkcs12SafeBag</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Pkcs12CertBag (System.Security.Cryptography.Oid certificateType, ReadOnlyMemory&lt;byte&gt; encodedCertificate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid certificateType, valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; encodedCertificate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs12CertBag.#ctor(System.Security.Cryptography.Oid,System.ReadOnlyMemory{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (certificateType As Oid, encodedCertificate As ReadOnlyMemory(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Pkcs12CertBag(System::Security::Cryptography::Oid ^ certificateType, ReadOnlyMemory&lt;System::Byte&gt; encodedCertificate);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.Pkcs12CertBag : System.Security.Cryptography.Oid * ReadOnlyMemory&lt;byte&gt; -&gt; System.Security.Cryptography.Pkcs.Pkcs12CertBag" Usage="new System.Security.Cryptography.Pkcs.Pkcs12CertBag (certificateType, encodedCertificate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="certificateType" Type="System.Security.Cryptography.Oid" />
+        <Parameter Name="encodedCertificate" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="certificateType">To be added.</param>
+        <param name="encodedCertificate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodedCertificate">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory&lt;byte&gt; EncodedCertificate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; EncodedCertificate" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Pkcs12CertBag.EncodedCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncodedCertificate As ReadOnlyMemory(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlyMemory&lt;System::Byte&gt; EncodedCertificate { ReadOnlyMemory&lt;System::Byte&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncodedCertificate : ReadOnlyMemory&lt;byte&gt;" Usage="System.Security.Cryptography.Pkcs.Pkcs12CertBag.EncodedCertificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCertificate">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2 GetCertificate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.X509Certificates.X509Certificate2 GetCertificate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs12CertBag.GetCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCertificate () As X509Certificate2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::X509Certificates::X509Certificate2 ^ GetCertificate();" />
+      <MemberSignature Language="F#" Value="member this.GetCertificate : unit -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="pkcs12CertBag.GetCertificate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCertificateType">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Oid GetCertificateType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.Oid GetCertificateType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs12CertBag.GetCertificateType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCertificateType () As Oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::Oid ^ GetCertificateType();" />
+      <MemberSignature Language="F#" Value="member this.GetCertificateType : unit -&gt; System.Security.Cryptography.Oid" Usage="pkcs12CertBag.GetCertificateType " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Oid</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsX509Certificate">
+      <MemberSignature Language="C#" Value="public bool IsX509Certificate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsX509Certificate" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Pkcs12CertBag.IsX509Certificate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsX509Certificate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsX509Certificate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsX509Certificate : bool" Usage="System.Security.Cryptography.Pkcs.Pkcs12CertBag.IsX509Certificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -8,6 +8,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -18,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -38,6 +39,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="m11" Type="System.Double" />
@@ -69,9 +71,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -99,6 +102,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -124,9 +128,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -151,6 +156,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Media.Matrix</ReturnType>
@@ -172,6 +178,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -193,6 +200,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -214,6 +222,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -235,6 +244,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -256,6 +266,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -277,6 +288,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -298,6 +310,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -319,6 +332,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -346,6 +360,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -375,9 +390,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -407,9 +423,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -434,6 +451,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -458,6 +476,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Foundation.Point</ReturnType>

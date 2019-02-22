@@ -1,0 +1,1688 @@
+﻿<Type Name="Tensor&lt;T&gt;" FullName="System.Numerics.Tensors.Tensor&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class Tensor&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;, System.Collections.IList, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Tensor`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable" />
+  <TypeSignature Language="DocId" Value="T:System.Numerics.Tensors.Tensor`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Tensor(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T), IList, IList(Of T), IReadOnlyCollection(Of T), IReadOnlyList(Of T), IStructuralComparable, IStructuralEquatable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Tensor abstract : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IList&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::IReadOnlyList&lt;T&gt;, System::Collections::IList, System::Collections::IStructuralComparable, System::Collections::IStructuralEquatable" />
+  <TypeSignature Language="F#" Value="type Tensor&lt;'T&gt; = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IReadOnlyList&lt;'T&gt;&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface IStructuralComparable&#xA;    interface IStructuralEquatable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Numerics.Tensors</AssemblyName>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IList&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IStructuralComparable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IStructuralEquatable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Tensor (int length);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Tensor(int length);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Tensors.Tensor&lt;'T&gt; : int -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="new System.Numerics.Tensors.Tensor&lt;'T&gt; length" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Tensor (Array fromArray, bool reverseStride);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Array fromArray, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.#ctor(System.Array,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (fromArray As Array, reverseStride As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Tensor(Array ^ fromArray, bool reverseStride);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Tensors.Tensor&lt;'T&gt; : Array * bool -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="new System.Numerics.Tensors.Tensor&lt;'T&gt; (fromArray, reverseStride)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fromArray" Type="System.Array" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="fromArray">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Tensor (ReadOnlySpan&lt;int&gt; dimensions, bool reverseStride);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.#ctor(System.ReadOnlySpan{System.Int32},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (dimensions As ReadOnlySpan(Of Integer), reverseStride As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Tensor(ReadOnlySpan&lt;int&gt; dimensions, bool reverseStride);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Tensors.Tensor&lt;'T&gt; : ReadOnlySpan&lt;int&gt; * bool -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="new System.Numerics.Tensors.Tensor&lt;'T&gt; (dimensions, reverseStride)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dimensions">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public abstract System.Numerics.Tensors.Tensor&lt;T&gt; Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Clone () As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Numerics::Tensors::Tensor&lt;T&gt; ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="tensor.Clone " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneEmpty">
+      <MemberSignature Language="C#" Value="public virtual System.Numerics.Tensors.Tensor&lt;T&gt; CloneEmpty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; CloneEmpty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.CloneEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CloneEmpty () As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Numerics::Tensors::Tensor&lt;T&gt; ^ CloneEmpty();" />
+      <MemberSignature Language="F#" Value="abstract member CloneEmpty : unit -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;&#xA;override this.CloneEmpty : unit -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="tensor.CloneEmpty " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneEmpty">
+      <MemberSignature Language="C#" Value="public virtual System.Numerics.Tensors.Tensor&lt;T&gt; CloneEmpty (ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; CloneEmpty(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.CloneEmpty(System.ReadOnlySpan{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CloneEmpty (dimensions As ReadOnlySpan(Of Integer)) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Numerics::Tensors::Tensor&lt;T&gt; ^ CloneEmpty(ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="F#" Value="abstract member CloneEmpty : ReadOnlySpan&lt;int&gt; -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;&#xA;override this.CloneEmpty : ReadOnlySpan&lt;int&gt; -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="tensor.CloneEmpty dimensions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dimensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneEmpty&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.Numerics.Tensors.Tensor&lt;TResult&gt; CloneEmpty&lt;TResult&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Numerics.Tensors.Tensor`1&lt;!!TResult&gt; CloneEmpty&lt;TResult&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.CloneEmpty``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CloneEmpty(Of TResult) () As Tensor(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; virtual System::Numerics::Tensors::Tensor&lt;TResult&gt; ^ CloneEmpty();" />
+      <MemberSignature Language="F#" Value="abstract member CloneEmpty : unit -&gt; System.Numerics.Tensors.Tensor&lt;'Result&gt;&#xA;override this.CloneEmpty : unit -&gt; System.Numerics.Tensors.Tensor&lt;'Result&gt;" Usage="tensor.CloneEmpty " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneEmpty&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public abstract System.Numerics.Tensors.Tensor&lt;TResult&gt; CloneEmpty&lt;TResult&gt; (ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Numerics.Tensors.Tensor`1&lt;!!TResult&gt; CloneEmpty&lt;TResult&gt;(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.CloneEmpty``1(System.ReadOnlySpan{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CloneEmpty(Of TResult) (dimensions As ReadOnlySpan(Of Integer)) As Tensor(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; abstract System::Numerics::Tensors::Tensor&lt;TResult&gt; ^ CloneEmpty(ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="F#" Value="abstract member CloneEmpty : ReadOnlySpan&lt;int&gt; -&gt; System.Numerics.Tensors.Tensor&lt;'Result&gt;" Usage="tensor.CloneEmpty dimensions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="dimensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static int Compare (System.Numerics.Tensors.Tensor&lt;T&gt; left, System.Numerics.Tensors.Tensor&lt;T&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(class System.Numerics.Tensors.Tensor`1&lt;!T&gt; left, class System.Numerics.Tensors.Tensor`1&lt;!T&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.Compare(System.Numerics.Tensors.Tensor{`0},System.Numerics.Tensors.Tensor{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (left As Tensor(Of T), right As Tensor(Of T)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::Numerics::Tensors::Tensor&lt;T&gt; ^ left, System::Numerics::Tensors::Tensor&lt;T&gt; ^ right);" />
+      <MemberSignature Language="F#" Value="static member Compare : System.Numerics.Tensors.Tensor&lt;'T&gt; * System.Numerics.Tensors.Tensor&lt;'T&gt; -&gt; int" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.Compare (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Numerics.Tensors.Tensor&lt;T&gt;" />
+        <Parameter Name="right" Type="System.Numerics.Tensors.Tensor&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="protected virtual bool Contains (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool Contains(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function Contains (item As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool Contains(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="tensor.Contains item" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="protected virtual void CopyTo (T[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CopyTo(!T[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.CopyTo(`0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CopyTo (array As T(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="tensor.CopyTo (array, arrayIndex)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <param name="arrayIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dimensions">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;int&gt; Dimensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlySpan`1&lt;int32&gt; Dimensions" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.Dimensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dimensions As ReadOnlySpan(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlySpan&lt;int&gt; Dimensions { ReadOnlySpan&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Dimensions : ReadOnlySpan&lt;int&gt;" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.Dimensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (System.Numerics.Tensors.Tensor&lt;T&gt; left, System.Numerics.Tensors.Tensor&lt;T&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(class System.Numerics.Tensors.Tensor`1&lt;!T&gt; left, class System.Numerics.Tensors.Tensor`1&lt;!T&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.Equals(System.Numerics.Tensors.Tensor{`0},System.Numerics.Tensors.Tensor{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (left As Tensor(Of T), right As Tensor(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Numerics::Tensors::Tensor&lt;T&gt; ^ left, System::Numerics::Tensors::Tensor&lt;T&gt; ^ right);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Numerics.Tensors.Tensor&lt;'T&gt; * System.Numerics.Tensors.Tensor&lt;'T&gt; -&gt; bool" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.Equals (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Numerics.Tensors.Tensor&lt;T&gt;" />
+        <Parameter Name="right" Type="System.Numerics.Tensors.Tensor&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fill">
+      <MemberSignature Language="C#" Value="public virtual void Fill (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Fill(!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.Fill(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Fill (value As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Fill(T value);" />
+      <MemberSignature Language="F#" Value="abstract member Fill : 'T -&gt; unit&#xA;override this.Fill : 'T -&gt; unit" Usage="tensor.Fill value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArrayString">
+      <MemberSignature Language="C#" Value="public string GetArrayString (bool includeWhitespace = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetArrayString(bool includeWhitespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.GetArrayString(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetArrayString (Optional includeWhitespace As Boolean = true) As String" />
+      <MemberSignature Language="F#" Value="member this.GetArrayString : bool -&gt; string" Usage="tensor.GetArrayString includeWhitespace" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeWhitespace" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="includeWhitespace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiagonal">
+      <MemberSignature Language="C#" Value="public System.Numerics.Tensors.Tensor&lt;T&gt; GetDiagonal ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; GetDiagonal() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.GetDiagonal" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDiagonal () As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Numerics::Tensors::Tensor&lt;T&gt; ^ GetDiagonal();" />
+      <MemberSignature Language="F#" Value="member this.GetDiagonal : unit -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="tensor.GetDiagonal " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiagonal">
+      <MemberSignature Language="C#" Value="public System.Numerics.Tensors.Tensor&lt;T&gt; GetDiagonal (int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; GetDiagonal(int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.GetDiagonal(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDiagonal (offset As Integer) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Numerics::Tensors::Tensor&lt;T&gt; ^ GetDiagonal(int offset);" />
+      <MemberSignature Language="F#" Value="member this.GetDiagonal : int -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="tensor.GetDiagonal offset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTriangle">
+      <MemberSignature Language="C#" Value="public System.Numerics.Tensors.Tensor&lt;T&gt; GetTriangle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; GetTriangle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.GetTriangle" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTriangle () As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Numerics::Tensors::Tensor&lt;T&gt; ^ GetTriangle();" />
+      <MemberSignature Language="F#" Value="member this.GetTriangle : unit -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="tensor.GetTriangle " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTriangle">
+      <MemberSignature Language="C#" Value="public System.Numerics.Tensors.Tensor&lt;T&gt; GetTriangle (int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; GetTriangle(int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.GetTriangle(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTriangle (offset As Integer) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Numerics::Tensors::Tensor&lt;T&gt; ^ GetTriangle(int offset);" />
+      <MemberSignature Language="F#" Value="member this.GetTriangle : int -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="tensor.GetTriangle offset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUpperTriangle">
+      <MemberSignature Language="C#" Value="public System.Numerics.Tensors.Tensor&lt;T&gt; GetUpperTriangle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; GetUpperTriangle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.GetUpperTriangle" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUpperTriangle () As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Numerics::Tensors::Tensor&lt;T&gt; ^ GetUpperTriangle();" />
+      <MemberSignature Language="F#" Value="member this.GetUpperTriangle : unit -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="tensor.GetUpperTriangle " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUpperTriangle">
+      <MemberSignature Language="C#" Value="public System.Numerics.Tensors.Tensor&lt;T&gt; GetUpperTriangle (int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; GetUpperTriangle(int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.GetUpperTriangle(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUpperTriangle (offset As Integer) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Numerics::Tensors::Tensor&lt;T&gt; ^ GetUpperTriangle(int offset);" />
+      <MemberSignature Language="F#" Value="member this.GetUpperTriangle : int -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="tensor.GetUpperTriangle offset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public abstract T GetValue (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T GetValue(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.GetValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (index As Integer) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract T GetValue(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : int -&gt; 'T" Usage="tensor.GetValue index" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="protected virtual int IndexOf (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 IndexOf(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.IndexOf(`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function IndexOf (item As T) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int IndexOf(T item);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : 'T -&gt; int&#xA;override this.IndexOf : 'T -&gt; int" Usage="tensor.IndexOf item" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixedSize">
+      <MemberSignature Language="C#" Value="public bool IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReversedStride">
+      <MemberSignature Language="C#" Value="public bool IsReversedStride { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReversedStride" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.IsReversedStride" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReversedStride As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReversedStride { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReversedStride : bool" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.IsReversedStride" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual T this[params int[] indices] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Item(int32[])" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.Item(System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(ParamArray indices As Integer()) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property T default[cli::array &lt;int&gt; ^] { T get(... cli::array &lt;int&gt; ^ indices); void set(... cli::array &lt;int&gt; ^ indices, T value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int[]) : 'T with get, set" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="indices" Type="System.Int32[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="indices">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual T this[ReadOnlySpan&lt;int&gt; indices] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Item(valuetype System.ReadOnlySpan`1&lt;int32&gt;)" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.Item(System.ReadOnlySpan{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(indices As ReadOnlySpan(Of Integer)) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property T default[ReadOnlySpan&lt;int&gt;] { T get(ReadOnlySpan&lt;int&gt; indices); void set(ReadOnlySpan&lt;int&gt; indices, T value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(ReadOnlySpan&lt;int&gt;) : 'T with get, set" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="indices" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="indices">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public long Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rank">
+      <MemberSignature Language="C#" Value="public int Rank { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Rank" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.Rank" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rank As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Rank { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rank : int" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.Rank" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reshape">
+      <MemberSignature Language="C#" Value="public abstract System.Numerics.Tensors.Tensor&lt;T&gt; Reshape (ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; Reshape(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.Reshape(System.ReadOnlySpan{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Reshape (dimensions As ReadOnlySpan(Of Integer)) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Numerics::Tensors::Tensor&lt;T&gt; ^ Reshape(ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="F#" Value="abstract member Reshape : ReadOnlySpan&lt;int&gt; -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="tensor.Reshape dimensions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dimensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public abstract void SetValue (int index, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(int32 index, !T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.SetValue(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetValue (index As Integer, value As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetValue(int index, T value);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : int * 'T -&gt; unit" Usage="tensor.SetValue (index, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Strides">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;int&gt; Strides { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlySpan`1&lt;int32&gt; Strides" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.Strides" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Strides As ReadOnlySpan(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlySpan&lt;int&gt; Strides { ReadOnlySpan&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Strides : ReadOnlySpan&lt;int&gt;" Usage="System.Numerics.Tensors.Tensor&lt;'T&gt;.Strides" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Add">
+      <MemberSignature Language="C#" Value="void ICollection&lt;T&gt;.Add (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.Add(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (item As T) Implements ICollection(Of T).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.Add(T item) = System::Collections::Generic::ICollection&lt;T&gt;::Add;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Clear">
+      <MemberSignature Language="C#" Value="void ICollection&lt;T&gt;.Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#ICollection&lt;T&gt;#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements ICollection(Of T).Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.Clear() = System::Collections::Generic::ICollection&lt;T&gt;::Clear;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Contains">
+      <MemberSignature Language="C#" Value="bool ICollection&lt;T&gt;.Contains (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;T&gt;.Contains(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#ICollection&lt;T&gt;#Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (item As T) As Boolean Implements ICollection(Of T).Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;T&gt;.Contains(T item) = System::Collections::Generic::ICollection&lt;T&gt;::Contains;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection&lt;T&gt;.CopyTo (T[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.CopyTo(!T[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#ICollection&lt;T&gt;#CopyTo(`0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As T(), arrayIndex As Integer) Implements ICollection(Of T).CopyTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex) = System::Collections::Generic::ICollection&lt;T&gt;::CopyTo;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <param name="arrayIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Count">
+      <MemberSignature Language="C#" Value="int System.Collections.Generic.ICollection&lt;T&gt;.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.Generic.ICollection&lt;T&gt;.Count" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#ICollection&lt;T&gt;#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection(Of T).Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Collections::Generic::ICollection&lt;T&gt;::Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;T&gt;.Count" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Remove">
+      <MemberSignature Language="C#" Value="bool ICollection&lt;T&gt;.Remove (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;T&gt;.Remove(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#ICollection&lt;T&gt;#Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Function Remove (item As T) As Boolean Implements ICollection(Of T).Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;T&gt;.Remove(T item) = System::Collections::Generic::ICollection&lt;T&gt;::Remove;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;T&gt;::GetEnumerator;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.IndexOf">
+      <MemberSignature Language="C#" Value="int IList&lt;T&gt;.IndexOf (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IList&lt;T&gt;.IndexOf(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#IList&lt;T&gt;#IndexOf(`0)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (item As T) As Integer Implements IList(Of T).IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.Generic.IList&lt;T&gt;.IndexOf(T item) = System::Collections::Generic::IList&lt;T&gt;::IndexOf;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.Insert">
+      <MemberSignature Language="C#" Value="void IList&lt;T&gt;.Insert (int index, T item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IList&lt;T&gt;.Insert(int32 index, !T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#IList&lt;T&gt;#Insert(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, item As T) Implements IList(Of T).Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IList&lt;T&gt;.Insert(int index, T item) = System::Collections::Generic::IList&lt;T&gt;::Insert;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.Item">
+      <MemberSignature Language="C#" Value="T System.Collections.Generic.IList&lt;T&gt;.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T System.Collections.Generic.IList&lt;T&gt;.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As T Implements IList(Of T).Item" />
+      <MemberSignature Language="C++ CLI" Value="property T System::Collections::Generic::IList&lt;T&gt;::Item[int] { T get(int index); void set(int index, T value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IList&lt;T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.RemoveAt">
+      <MemberSignature Language="C#" Value="void IList&lt;T&gt;.RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IList&lt;T&gt;.RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#IList&lt;T&gt;#RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList(Of T).RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IList&lt;T&gt;.RemoveAt(int index) = System::Collections::Generic::IList&lt;T&gt;::RemoveAt;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IReadOnlyCollection&lt;T&gt;.Count">
+      <MemberSignature Language="C#" Value="int System.Collections.Generic.IReadOnlyCollection&lt;T&gt;.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.Generic.IReadOnlyCollection&lt;T&gt;.Count" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#IReadOnlyCollection&lt;T&gt;#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements IReadOnlyCollection(Of T).Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Collections::Generic::IReadOnlyCollection&lt;T&gt;::Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IReadOnlyCollection&lt;T&gt;.Count" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item">
+      <MemberSignature Language="C#" Value="T System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.System#Collections#Generic#IReadOnlyList&lt;T&gt;#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As T Implements IReadOnlyList(Of T).Item" />
+      <MemberSignature Language="C++ CLI" Value="property T System::Collections::Generic::IReadOnlyList&lt;T&gt;::Item[int] { T get(int index); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.Count">
+      <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.System#Collections#ICollection#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Collections::ICollection::Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.Count" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Add">
+      <MemberSignature Language="C#" Value="int IList.Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Clear">
+      <MemberSignature Language="C#" Value="void IList.Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IList#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IList.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Clear() = System::Collections::IList::Clear;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Contains">
+      <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IndexOf">
+      <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Insert">
+      <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.Tensor`1.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IList::Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove">
+      <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.RemoveAt">
+      <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList.RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.RemoveAt(int index) = System::Collections::IList::RemoveAt;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IStructuralComparable.CompareTo">
+      <MemberSignature Language="C#" Value="int IStructuralComparable.CompareTo (object other, System.Collections.IComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralComparable.CompareTo(object other, class System.Collections.IComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Function CompareTo (other As Object, comparer As IComparer) As Integer Implements IStructuralComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IStructuralComparable.CompareTo(System::Object ^ other, System::Collections::IComparer ^ comparer) = System::Collections::IStructuralComparable::CompareTo;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralComparable.CompareTo(System.Object,System.Collections.IComparer)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IStructuralEquatable.Equals">
+      <MemberSignature Language="C#" Value="bool IStructuralEquatable.Equals (object other, System.Collections.IEqualityComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IStructuralEquatable.Equals(object other, class System.Collections.IEqualityComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Function Equals (other As Object, comparer As IEqualityComparer) As Boolean Implements IStructuralEquatable.Equals" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IStructuralEquatable.Equals(System::Object ^ other, System::Collections::IEqualityComparer ^ comparer) = System::Collections::IStructuralEquatable::Equals;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IStructuralEquatable.GetHashCode">
+      <MemberSignature Language="C#" Value="int IStructuralEquatable.GetHashCode (System.Collections.IEqualityComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralEquatable.GetHashCode(class System.Collections.IEqualityComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Function GetHashCode (comparer As IEqualityComparer) As Integer Implements IStructuralEquatable.GetHashCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IStructuralEquatable.GetHashCode(System::Collections::IEqualityComparer ^ comparer) = System::Collections::IStructuralEquatable::GetHashCode;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToCompressedSparseTensor">
+      <MemberSignature Language="C#" Value="public virtual System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt; ToCompressedSparseTensor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Numerics.Tensors.CompressedSparseTensor`1&lt;!T&gt; ToCompressedSparseTensor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.ToCompressedSparseTensor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ToCompressedSparseTensor () As CompressedSparseTensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Numerics::Tensors::CompressedSparseTensor&lt;T&gt; ^ ToCompressedSparseTensor();" />
+      <MemberSignature Language="F#" Value="abstract member ToCompressedSparseTensor : unit -&gt; System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;&#xA;override this.ToCompressedSparseTensor : unit -&gt; System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;" Usage="tensor.ToCompressedSparseTensor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDenseTensor">
+      <MemberSignature Language="C#" Value="public virtual System.Numerics.Tensors.DenseTensor&lt;T&gt; ToDenseTensor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Numerics.Tensors.DenseTensor`1&lt;!T&gt; ToDenseTensor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.ToDenseTensor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ToDenseTensor () As DenseTensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Numerics::Tensors::DenseTensor&lt;T&gt; ^ ToDenseTensor();" />
+      <MemberSignature Language="F#" Value="abstract member ToDenseTensor : unit -&gt; System.Numerics.Tensors.DenseTensor&lt;'T&gt;&#xA;override this.ToDenseTensor : unit -&gt; System.Numerics.Tensors.DenseTensor&lt;'T&gt;" Usage="tensor.ToDenseTensor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.DenseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSparseTensor">
+      <MemberSignature Language="C#" Value="public virtual System.Numerics.Tensors.SparseTensor&lt;T&gt; ToSparseTensor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Numerics.Tensors.SparseTensor`1&lt;!T&gt; ToSparseTensor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor`1.ToSparseTensor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ToSparseTensor () As SparseTensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Numerics::Tensors::SparseTensor&lt;T&gt; ^ ToSparseTensor();" />
+      <MemberSignature Language="F#" Value="abstract member ToSparseTensor : unit -&gt; System.Numerics.Tensors.SparseTensor&lt;'T&gt;&#xA;override this.ToSparseTensor : unit -&gt; System.Numerics.Tensors.SparseTensor&lt;'T&gt;" Usage="tensor.ToSparseTensor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.SparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

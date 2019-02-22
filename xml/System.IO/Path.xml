@@ -751,13 +751,13 @@ The following example displays <xref:System.IO.Path> field values on Windows and
         <param name="path">The file path from which to get the extension.</param>
         <summary>Returns the extension of a file path that is represented by a read-only character span.</summary>
         <returns>The extension of the specified path (including the period, "."), or <see cref="P:System.ReadOnlySpan`1.Empty" /> if <paramref name="path" /> does not have extension information.</returns>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 This method obtains the extension of `path` by searching `path` for a period ("."), starting from the last character in the read-only span and continuing toward its first character. If a period is found before a <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar> character, the returned read-only span contains the period and the characters after it; otherwise, <xref:System.ReadOnlySpan%601.Empty?displayProperty=nameWithType> is returned.  
 
          ]]></format>
-         </remarks>
+        </remarks>
         <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
@@ -852,13 +852,13 @@ This method obtains the extension of `path` by searching `path` for a period (.)
         <param name="path">A read-only span that contains the path from which to obtain the file name and extension.</param>
         <summary>Returns the file name and extension of a file path that is represented by a read-only character span.</summary>
         <returns>The characters after the last directory separator character in <paramref name="path" />.</returns>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The returned read-only span contains the characters of the path that follow the last separator in `path`. If the last character in `path` is a volume or directory separator character, the method returns <xref:System.ReadOnlySpan%601.Empty?displayProperty=nameWithtype>. If `path` contains no separator character, the method returns `path`.
 
          ]]></format>
-         </remarks>
+        </remarks>
         <related type="Article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
@@ -1151,7 +1151,6 @@ For more information on file path formats on Windows, see [File path formats on 
         <summary>Returns an absolute path from a fully qualified base path and a relative path.</summary>
         <returns>The absolute path.</returns>
         <remarks>
-
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
@@ -1168,7 +1167,6 @@ The following example defines a variable, `basePath`, to represent an applicatio
 [!code-csharp[Path.GetFullPath(String,String)](~/samples/snippets/visualbasic/api/system.io/path/getfullpath/program.vb)] 
 
  ]]></format>
-
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> or <paramref name="basePath" /> is <see langword="null" />.</exception>
@@ -1480,17 +1478,17 @@ The following example defines a variable, `basePath`, to represent an applicatio
         <param name="relativeTo">The source path the result should be relative to. This path is always considered to be a directory.</param>
         <param name="path">The destination path.</param>
         <summary>Returns a relative path from one path to another.</summary>
-        <returns>The relative path, or <paramref name="path"/> if the paths don't share the same root.</returns>
-        <remarks>  
+        <returns>The relative path, or <paramref name="path" /> if the paths don't share the same root.</returns>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 Paths are resolved by calling the <xref:System.IO.Path.GetFullPath%2A> method before calculating the difference. The method uses the default file path comparison for the current platform (<xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for Windows and MacOs, <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> for Linux. 
 
          ]]></format>
-         </remarks>
-
-        <exception cref="T:System.ArgumentNullException"><paramref name="relativeTo" /> or <paramref name="path" /> is <see langword="null" />.</exception>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="relativeTo" /> or <paramref name="path" /> is <see langword="null" />.</exception>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="GetTempFileName">
@@ -1665,15 +1663,16 @@ C:\Users\UserName\AppData\Local\Temp\
       <Docs>
         <param name="path">The path to search for an extension.</param>
         <summary>Determines whether the path represented by the specified character span includes a file name extension.</summary>
-        <returns><see langword="true" /> if the characters that follow the last directory separator character or volume separator in the path include a period (".") followed by one or more characters; otherwise, <see langword="false" />.</returns>
-        <remarks>  
+        <returns>
+          <see langword="true" /> if the characters that follow the last directory separator character or volume separator in the path include a period (".") followed by one or more characters; otherwise, <see langword="false" />.</returns>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 A trailing period in `path` is not considered an extension.
 
          ]]></format>
-         </remarks>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        </remarks>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="HasExtension">
@@ -1735,7 +1734,7 @@ A trailing period in `path` is not considered an extension.
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -1803,7 +1802,7 @@ A trailing period in `path` is not considered an extension.
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
-    <MemberGroup MemberName="IsPathFullyQualified"> 
+    <MemberGroup MemberName="IsPathFullyQualified">
       <Docs>
         <summary>Returns a value that indicates whether a file path is fully qualified.</summary>
         <remarks>
@@ -1819,7 +1818,7 @@ There is a difference between a fully qualified path (as indicated by the `IsPat
 [!code-vb[IsPathRooted](~/samples/snippets/visualbasic/api/system.IO/Path/IsPathRooted/program.vb)]
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="IsPathFullyQualified">
@@ -1849,14 +1848,15 @@ There is a difference between a fully qualified path (as indicated by the `IsPat
       <Docs>
         <param name="path">A file path.</param>
         <summary>Returns a value that indicates whether the file path represented by the specified character span is fixed to a specific drive or UNC path.</summary>
-        <returns><see langword="true" /> if the path is fixed to a specific drive or UNC path; <see langword="false" /> if the path is relative to the current drive or working directory.</returns>
-        <remarks>  
+        <returns>
+          <see langword="true" /> if the path is fixed to a specific drive or UNC path; <see langword="false" /> if the path is relative to the current drive or working directory.</returns>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 
          ]]></format>
-         </remarks>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        </remarks>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="IsPathFullyQualified">
@@ -1886,13 +1886,14 @@ There is a difference between a fully qualified path (as indicated by the `IsPat
       <Docs>
         <param name="path">A file path.</param>
         <summary>Returns a value that indicates whether the specified file path is fixed to a specific drive or UNC path.</summary>
-        <returns><see langword="true" /> if the path is fixed to a specific drive or UNC path; <see langword="false" /> if the path is relative to the current drive or working directory.</returns>
+        <returns>
+          <see langword="true" /> if the path is fixed to a specific drive or UNC path; <see langword="false" /> if the path is relative to the current drive or working directory.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="path" /> is <see langword="null" />.</exception>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
-    
     <MemberGroup MemberName="IsPathRooted">
       <Docs>
         <summary>Returns a value that indicates whether a file path contains a root.</summary>
@@ -1909,7 +1910,7 @@ Note that rooted paths can be either absolute (that is, fully qualified) or rela
 [!code-vb[IsPathRooted](~/samples/snippets/visualbasic/api/system.IO/Path/IsPathRooted/program.vb)]
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="IsPathRooted">
@@ -1939,9 +1940,10 @@ Note that rooted paths can be either absolute (that is, fully qualified) or rela
       <Docs>
         <param name="path">The path to test.</param>
         <summary>Returns a value that indicates whether the specified character span that represents a file path contains a root.</summary>
-        <returns><see langword="true" /> if <paramref name="path" /> contains a root; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="path" /> contains a root; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="IsPathRooted">
@@ -2003,7 +2005,7 @@ Note that rooted paths can be either absolute (that is, fully qualified) or rela
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
@@ -2066,7 +2068,7 @@ The following example illustrates the difference in the paths returned by the <x
 
        ]]></format>
         </remarks>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -2159,9 +2161,8 @@ The following example illustrates the difference in the paths returned by the <x
 [!code-csharp[Path.Join(String,String,String)](~/samples/snippets/visualbasic/api/system.io/path/combine3/program.vb)] 
 
        ]]></format>
-        
         </remarks>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -2265,7 +2266,7 @@ The destination character span must be large enough to hold the concatentated pa
 [!code-csharp[IsPathRooted](~/samples/snippets/csharp/api/system.IO/Path/TryJoin/program.cs)]
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="TryJoin">
@@ -2301,8 +2302,9 @@ The destination character span must be large enough to hold the concatentated pa
         <param name="destination">A character span to hold the concatenated path.</param>
         <param name="charsWritten">When the method returns, a value that indicates the number of characters written to the <paramref name="destination" />.</param>
         <summary>Attempts to concatenate two path components to a single preallocated character span, and returns a value that indicates whether the operation succeeded.</summary>
-        <returns><see langword="true" /> if the concatentation operaton is successful; otherwise, <see langword="false" />.</returns>
-        <remarks>  
+        <returns>
+          <see langword="true" /> if the concatentation operaton is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -2310,8 +2312,8 @@ The destination character span must be large enough to hold the concatentated pa
 `destination` must be large enough to hold the concatentated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the example illustrates.
 
          ]]></format>
-         </remarks>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        </remarks>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="TryJoin">
@@ -2349,8 +2351,9 @@ The destination character span must be large enough to hold the concatentated pa
         <param name="destination">A character span to hold the concatenated path.</param>
         <param name="charsWritten">When the method returns, a value that indicates the number of characters written to the <paramref name="destination" />.</param>
         <summary>Attempts to concatenate two path components to a single preallocated character span, and returns a value that indicates whether the operation succeeded.</summary>
-        <returns><see langword="true" /> if the concatentation operaton is successful; otherwise, <see langword="false" />.</returns>
-        <remarks>  
+        <returns>
+          <see langword="true" /> if the concatentation operaton is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -2358,8 +2361,8 @@ The destination character span must be large enough to hold the concatentated pa
 `destination` must be large enough to hold the concatentated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the example illustrates.
 
          ]]></format>
-         </remarks>
-        <related type="article"  href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
+        </remarks>
+        <related type="article" href="~/docs/standard/io/file-path-formats.md">File path formats on Windows systems</related>
       </Docs>
     </Member>
     <Member MemberName="VolumeSeparatorChar">

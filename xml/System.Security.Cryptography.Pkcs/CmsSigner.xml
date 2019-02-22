@@ -14,6 +14,7 @@
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.1</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -49,6 +50,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -86,12 +88,13 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2">
+        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -128,6 +131,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="signerIdentifierType" Type="System.Security.Cryptography.Pkcs.SubjectIdentifierType" />
@@ -155,6 +159,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
@@ -191,6 +196,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="signerIdentifierType" Type="System.Security.Cryptography.Pkcs.SubjectIdentifierType" />
@@ -210,6 +216,34 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CmsSigner (System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, System.Security.Cryptography.AsymmetricAlgorithm privateKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType signerIdentifierType, class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, class System.Security.Cryptography.AsymmetricAlgorithm privateKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.CmsSigner.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType, certificate As X509Certificate2, privateKey As AsymmetricAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CmsSigner(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType, System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate, System::Security::Cryptography::AsymmetricAlgorithm ^ privateKey);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.CmsSigner : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.X509Certificates.X509Certificate2 * System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.Pkcs.CmsSigner" Usage="new System.Security.Cryptography.Pkcs.CmsSigner (signerIdentifierType, certificate, privateKey)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="signerIdentifierType" Type="System.Security.Cryptography.Pkcs.SubjectIdentifierType" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="privateKey" Type="System.Security.Cryptography.AsymmetricAlgorithm" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="signerIdentifierType">To be added.</param>
+        <param name="certificate">To be added.</param>
+        <param name="privateKey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Certificate">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2 Certificate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2 Certificate" />
@@ -227,6 +261,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
@@ -260,6 +295,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2Collection</ReturnType>
@@ -300,6 +336,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
@@ -340,6 +377,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509IncludeOption</ReturnType>
@@ -381,6 +419,30 @@
         <altmember cref="P:System.Security.Cryptography.Pkcs.CmsSigner.UnsignedAttributes" />
       </Docs>
     </Member>
+    <Member MemberName="PrivateKey">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.AsymmetricAlgorithm PrivateKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.AsymmetricAlgorithm PrivateKey" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsSigner.PrivateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateKey As AsymmetricAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::AsymmetricAlgorithm ^ PrivateKey { System::Security::Cryptography::AsymmetricAlgorithm ^ get(); void set(System::Security::Cryptography::AsymmetricAlgorithm ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrivateKey : System.Security.Cryptography.AsymmetricAlgorithm with get, set" Usage="System.Security.Cryptography.Pkcs.CmsSigner.PrivateKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.AsymmetricAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SignedAttributes">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CryptographicAttributeObjectCollection SignedAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CryptographicAttributeObjectCollection SignedAttributes" />
@@ -398,6 +460,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CryptographicAttributeObjectCollection</ReturnType>
@@ -441,6 +504,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierType</ReturnType>
@@ -475,6 +539,7 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CryptographicAttributeObjectCollection</ReturnType>

@@ -1,0 +1,65 @@
+﻿<Type Name="MetadataAssemblyResolver" FullName="System.Reflection.MetadataAssemblyResolver">
+  <TypeSignature Language="C#" Value="public abstract class MetadataAssemblyResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MetadataAssemblyResolver extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.MetadataAssemblyResolver" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetadataAssemblyResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetadataAssemblyResolver abstract" />
+  <TypeSignature Language="F#" Value="type MetadataAssemblyResolver = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MetadataAssemblyResolver ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.MetadataAssemblyResolver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MetadataAssemblyResolver();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public abstract System.Reflection.Assembly Resolve (System.Reflection.MetadataLoadContext context, System.Reflection.AssemblyName assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly Resolve(class System.Reflection.MetadataLoadContext context, class System.Reflection.AssemblyName assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.MetadataAssemblyResolver.Resolve(System.Reflection.MetadataLoadContext,System.Reflection.AssemblyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::Assembly ^ Resolve(System::Reflection::MetadataLoadContext ^ context, System::Reflection::AssemblyName ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : System.Reflection.MetadataLoadContext * System.Reflection.AssemblyName -&gt; System.Reflection.Assembly" Usage="metadataAssemblyResolver.Resolve (context, assemblyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Reflection.MetadataLoadContext" />
+        <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="assemblyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

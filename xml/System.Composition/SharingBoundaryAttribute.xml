@@ -10,19 +10,20 @@
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
     <AssemblyVersion>1.0.32.0</AssemblyVersion>
     <AssemblyVersion>1.0.33.0</AssemblyVersion>
+    <AssemblyVersion>1.0.34.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
+    <Attribute FrameworkAlternate="netcore-2.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Parameter | System.AttributeTargets.Property, Inherited=false)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
       <AttributeName>System.Composition.MetadataAttribute</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netcore-1.1">
@@ -47,6 +48,7 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sharingBoundaryNames" Type="System.String[]">
@@ -76,6 +78,7 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>

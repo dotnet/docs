@@ -1,0 +1,428 @@
+﻿<Type Name="CompressedSparseTensor&lt;T&gt;" FullName="System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class CompressedSparseTensor&lt;T&gt; : System.Numerics.Tensors.Tensor&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompressedSparseTensor`1&lt;T&gt; extends System.Numerics.Tensors.Tensor`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Numerics.Tensors.CompressedSparseTensor`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompressedSparseTensor(Of T)&#xA;Inherits Tensor(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class CompressedSparseTensor : System::Numerics::Tensors::Tensor&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type CompressedSparseTensor&lt;'T&gt; = class&#xA;    inherit Tensor&lt;'T&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.Numerics.Tensors</AssemblyName>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Numerics.Tensors.Tensor&lt;T&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">T</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompressedSparseTensor (ReadOnlySpan&lt;int&gt; dimensions, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.#ctor(System.ReadOnlySpan{System.Int32},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dimensions As ReadOnlySpan(Of Integer), Optional reverseStride As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt; : ReadOnlySpan&lt;int&gt; * bool -&gt; System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;" Usage="new System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt; (dimensions, reverseStride)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dimensions">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompressedSparseTensor (ReadOnlySpan&lt;int&gt; dimensions, int capacity, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions, int32 capacity, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.#ctor(System.ReadOnlySpan{System.Int32},System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dimensions As ReadOnlySpan(Of Integer), capacity As Integer, Optional reverseStride As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt; : ReadOnlySpan&lt;int&gt; * int * bool -&gt; System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;" Usage="new System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt; (dimensions, capacity, reverseStride)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+        <Parameter Name="capacity" Type="System.Int32" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dimensions">To be added.</param>
+        <param name="capacity">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompressedSparseTensor (Memory&lt;T&gt; values, Memory&lt;int&gt; compressedCounts, Memory&lt;int&gt; indices, int nonZeroCount, ReadOnlySpan&lt;int&gt; dimensions, bool reverseStride = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Memory`1&lt;!T&gt; values, valuetype System.Memory`1&lt;int32&gt; compressedCounts, valuetype System.Memory`1&lt;int32&gt; indices, int32 nonZeroCount, valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions, bool reverseStride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.#ctor(System.Memory{`0},System.Memory{System.Int32},System.Memory{System.Int32},System.Int32,System.ReadOnlySpan{System.Int32},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (values As Memory(Of T), compressedCounts As Memory(Of Integer), indices As Memory(Of Integer), nonZeroCount As Integer, dimensions As ReadOnlySpan(Of Integer), Optional reverseStride As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt; : Memory&lt;'T&gt; * Memory&lt;int&gt; * Memory&lt;int&gt; * int * ReadOnlySpan&lt;int&gt; * bool -&gt; System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;" Usage="new System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt; (values, compressedCounts, indices, nonZeroCount, dimensions, reverseStride)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="values" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="compressedCounts" Type="System.Memory&lt;System.Int32&gt;" />
+        <Parameter Name="indices" Type="System.Memory&lt;System.Int32&gt;" />
+        <Parameter Name="nonZeroCount" Type="System.Int32" />
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+        <Parameter Name="reverseStride" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="values">To be added.</param>
+        <param name="compressedCounts">To be added.</param>
+        <param name="indices">To be added.</param>
+        <param name="nonZeroCount">To be added.</param>
+        <param name="dimensions">To be added.</param>
+        <param name="reverseStride">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capacity">
+      <MemberSignature Language="C#" Value="public int Capacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Capacity" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.CompressedSparseTensor`1.Capacity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Capacity As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int" Usage="System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;.Capacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override System.Numerics.Tensors.Tensor&lt;T&gt; Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Numerics::Tensors::Tensor&lt;T&gt; ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="compressedSparseTensor.Clone " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneEmpty&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public override System.Numerics.Tensors.Tensor&lt;TResult&gt; CloneEmpty&lt;TResult&gt; (ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Numerics.Tensors.Tensor`1&lt;!!TResult&gt; CloneEmpty&lt;TResult&gt;(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.CloneEmpty``1(System.ReadOnlySpan{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneEmpty(Of TResult) (dimensions As ReadOnlySpan(Of Integer)) As Tensor(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; override System::Numerics::Tensors::Tensor&lt;TResult&gt; ^ CloneEmpty(ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="F#" Value="override this.CloneEmpty : ReadOnlySpan&lt;int&gt; -&gt; System.Numerics.Tensors.Tensor&lt;'Result&gt;" Usage="compressedSparseTensor.CloneEmpty dimensions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="dimensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompressedCounts">
+      <MemberSignature Language="C#" Value="public Memory&lt;int&gt; CompressedCounts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Memory`1&lt;int32&gt; CompressedCounts" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.CompressedSparseTensor`1.CompressedCounts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompressedCounts As Memory(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Memory&lt;int&gt; CompressedCounts { Memory&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompressedCounts : Memory&lt;int&gt;" Usage="System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;.CompressedCounts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override T GetValue (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !T GetValue(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.GetValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (index As Integer) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override T GetValue(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; 'T" Usage="compressedSparseTensor.GetValue index" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indices">
+      <MemberSignature Language="C#" Value="public Memory&lt;int&gt; Indices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Memory`1&lt;int32&gt; Indices" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.CompressedSparseTensor`1.Indices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Indices As Memory(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Memory&lt;int&gt; Indices { Memory&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Indices : Memory&lt;int&gt;" Usage="System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;.Indices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override T this[ReadOnlySpan&lt;int&gt; indices] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Item(valuetype System.ReadOnlySpan`1&lt;int32&gt;)" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.CompressedSparseTensor`1.Item(System.ReadOnlySpan{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(indices As ReadOnlySpan(Of Integer)) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property T default[ReadOnlySpan&lt;int&gt;] { T get(ReadOnlySpan&lt;int&gt; indices); void set(ReadOnlySpan&lt;int&gt; indices, T value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(ReadOnlySpan&lt;int&gt;) : 'T with get, set" Usage="System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="indices" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="indices">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NonZeroCount">
+      <MemberSignature Language="C#" Value="public int NonZeroCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NonZeroCount" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.CompressedSparseTensor`1.NonZeroCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NonZeroCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NonZeroCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NonZeroCount : int" Usage="System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;.NonZeroCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reshape">
+      <MemberSignature Language="C#" Value="public override System.Numerics.Tensors.Tensor&lt;T&gt; Reshape (ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Numerics.Tensors.Tensor`1&lt;!T&gt; Reshape(valuetype System.ReadOnlySpan`1&lt;int32&gt; dimensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.Reshape(System.ReadOnlySpan{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Reshape (dimensions As ReadOnlySpan(Of Integer)) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Numerics::Tensors::Tensor&lt;T&gt; ^ Reshape(ReadOnlySpan&lt;int&gt; dimensions);" />
+      <MemberSignature Language="F#" Value="override this.Reshape : ReadOnlySpan&lt;int&gt; -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="compressedSparseTensor.Reshape dimensions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dimensions" Type="System.ReadOnlySpan&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dimensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public override void SetValue (int index, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(int32 index, !T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.SetValue(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValue (index As Integer, value As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValue(int index, T value);" />
+      <MemberSignature Language="F#" Value="override this.SetValue : int * 'T -&gt; unit" Usage="compressedSparseTensor.SetValue (index, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToCompressedSparseTensor">
+      <MemberSignature Language="C#" Value="public override System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt; ToCompressedSparseTensor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Numerics.Tensors.CompressedSparseTensor`1&lt;!T&gt; ToCompressedSparseTensor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.ToCompressedSparseTensor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToCompressedSparseTensor () As CompressedSparseTensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Numerics::Tensors::CompressedSparseTensor&lt;T&gt; ^ ToCompressedSparseTensor();" />
+      <MemberSignature Language="F#" Value="override this.ToCompressedSparseTensor : unit -&gt; System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;" Usage="compressedSparseTensor.ToCompressedSparseTensor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.CompressedSparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDenseTensor">
+      <MemberSignature Language="C#" Value="public override System.Numerics.Tensors.DenseTensor&lt;T&gt; ToDenseTensor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Numerics.Tensors.DenseTensor`1&lt;!T&gt; ToDenseTensor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.ToDenseTensor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToDenseTensor () As DenseTensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Numerics::Tensors::DenseTensor&lt;T&gt; ^ ToDenseTensor();" />
+      <MemberSignature Language="F#" Value="override this.ToDenseTensor : unit -&gt; System.Numerics.Tensors.DenseTensor&lt;'T&gt;" Usage="compressedSparseTensor.ToDenseTensor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.DenseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSparseTensor">
+      <MemberSignature Language="C#" Value="public override System.Numerics.Tensors.SparseTensor&lt;T&gt; ToSparseTensor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Numerics.Tensors.SparseTensor`1&lt;!T&gt; ToSparseTensor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.CompressedSparseTensor`1.ToSparseTensor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToSparseTensor () As SparseTensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Numerics::Tensors::SparseTensor&lt;T&gt; ^ ToSparseTensor();" />
+      <MemberSignature Language="F#" Value="override this.ToSparseTensor : unit -&gt; System.Numerics.Tensors.SparseTensor&lt;'T&gt;" Usage="compressedSparseTensor.ToSparseTensor " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.SparseTensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public Memory&lt;T&gt; Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Memory`1&lt;!T&gt; Values" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Tensors.CompressedSparseTensor`1.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Memory&lt;T&gt; Values { Memory&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : Memory&lt;'T&gt;" Usage="System.Numerics.Tensors.CompressedSparseTensor&lt;'T&gt;.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

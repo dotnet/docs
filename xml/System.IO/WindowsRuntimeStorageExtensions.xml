@@ -8,13 +8,14 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.14.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -23,6 +24,114 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="CreateSafeFileHandle">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.SafeHandles.SafeFileHandle CreateSafeFileHandle (this Windows.Storage.IStorageFolder rootDirectory, string relativePath, System.IO.FileMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Win32.SafeHandles.SafeFileHandle CreateSafeFileHandle(class Windows.Storage.IStorageFolder rootDirectory, string relativePath, valuetype System.IO.FileMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStorageExtensions.CreateSafeFileHandle(Windows.Storage.IStorageFolder,System.String,System.IO.FileMode)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateSafeFileHandle (rootDirectory As IStorageFolder, relativePath As String, mode As FileMode) As SafeFileHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Win32::SafeHandles::SafeFileHandle ^ CreateSafeFileHandle(Windows::Storage::IStorageFolder ^ rootDirectory, System::String ^ relativePath, System::IO::FileMode mode);" />
+      <MemberSignature Language="F#" Value="static member CreateSafeFileHandle : Windows.Storage.IStorageFolder * string * System.IO.FileMode -&gt; Microsoft.Win32.SafeHandles.SafeFileHandle" Usage="System.IO.WindowsRuntimeStorageExtensions.CreateSafeFileHandle (rootDirectory, relativePath, mode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.SafeHandles.SafeFileHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootDirectory" Type="Windows.Storage.IStorageFolder" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" RefType="this" />
+        <Parameter Name="relativePath" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="mode" Type="System.IO.FileMode" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="rootDirectory">To be added.</param>
+        <param name="relativePath">To be added.</param>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSafeFileHandle">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.SafeHandles.SafeFileHandle CreateSafeFileHandle (this Windows.Storage.IStorageFile windowsRuntimeFile, System.IO.FileAccess access = System.IO.FileAccess.ReadWrite, System.IO.FileShare share = System.IO.FileShare.Read, System.IO.FileOptions options = System.IO.FileOptions.None);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Win32.SafeHandles.SafeFileHandle CreateSafeFileHandle(class Windows.Storage.IStorageFile windowsRuntimeFile, valuetype System.IO.FileAccess access, valuetype System.IO.FileShare share, valuetype System.IO.FileOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStorageExtensions.CreateSafeFileHandle(Windows.Storage.IStorageFile,System.IO.FileAccess,System.IO.FileShare,System.IO.FileOptions)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateSafeFileHandle (windowsRuntimeFile As IStorageFile, Optional access As FileAccess = System.IO.FileAccess.ReadWrite, Optional share As FileShare = System.IO.FileShare.Read, Optional options As FileOptions = System.IO.FileOptions.None) As SafeFileHandle" />
+      <MemberSignature Language="F#" Value="static member CreateSafeFileHandle : Windows.Storage.IStorageFile * System.IO.FileAccess * System.IO.FileShare * System.IO.FileOptions -&gt; Microsoft.Win32.SafeHandles.SafeFileHandle" Usage="System.IO.WindowsRuntimeStorageExtensions.CreateSafeFileHandle (windowsRuntimeFile, access, share, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.SafeHandles.SafeFileHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="windowsRuntimeFile" Type="Windows.Storage.IStorageFile" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" RefType="this" />
+        <Parameter Name="access" Type="System.IO.FileAccess" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="share" Type="System.IO.FileShare" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="options" Type="System.IO.FileOptions" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="windowsRuntimeFile">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="share">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSafeFileHandle">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.SafeHandles.SafeFileHandle CreateSafeFileHandle (this Windows.Storage.IStorageFolder rootDirectory, string relativePath, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share = System.IO.FileShare.Read, System.IO.FileOptions options = System.IO.FileOptions.None);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Win32.SafeHandles.SafeFileHandle CreateSafeFileHandle(class Windows.Storage.IStorageFolder rootDirectory, string relativePath, valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access, valuetype System.IO.FileShare share, valuetype System.IO.FileOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStorageExtensions.CreateSafeFileHandle(Windows.Storage.IStorageFolder,System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.IO.FileOptions)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateSafeFileHandle (rootDirectory As IStorageFolder, relativePath As String, mode As FileMode, access As FileAccess, Optional share As FileShare = System.IO.FileShare.Read, Optional options As FileOptions = System.IO.FileOptions.None) As SafeFileHandle" />
+      <MemberSignature Language="F#" Value="static member CreateSafeFileHandle : Windows.Storage.IStorageFolder * string * System.IO.FileMode * System.IO.FileAccess * System.IO.FileShare * System.IO.FileOptions -&gt; Microsoft.Win32.SafeHandles.SafeFileHandle" Usage="System.IO.WindowsRuntimeStorageExtensions.CreateSafeFileHandle (rootDirectory, relativePath, mode, access, share, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.SafeHandles.SafeFileHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootDirectory" Type="Windows.Storage.IStorageFolder" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" RefType="this" />
+        <Parameter Name="relativePath" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="mode" Type="System.IO.FileMode" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="access" Type="System.IO.FileAccess" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="share" Type="System.IO.FileShare" Index="4" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="options" Type="System.IO.FileOptions" Index="5" FrameworkAlternate="dotnet-plat-ext-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="rootDirectory">To be added.</param>
+        <param name="relativePath">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="share">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OpenStreamForReadAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.IO.Stream&gt; OpenStreamForReadAsync (this Windows.Storage.IStorageFile windowsRuntimeFile);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; OpenStreamForReadAsync(class Windows.Storage.IStorageFile windowsRuntimeFile) cil managed" />
@@ -34,6 +143,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -64,6 +174,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -96,6 +207,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -125,6 +237,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

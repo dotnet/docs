@@ -1,0 +1,159 @@
+﻿<Type Name="Pkcs12SafeBag" FullName="System.Security.Cryptography.Pkcs.Pkcs12SafeBag">
+  <TypeSignature Language="C#" Value="public abstract class Pkcs12SafeBag" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Pkcs12SafeBag extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.Pkcs12SafeBag" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Pkcs12SafeBag" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Pkcs12SafeBag abstract" />
+  <TypeSignature Language="F#" Value="type Pkcs12SafeBag = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Pkcs12SafeBag (string bagIdValue, ReadOnlyMemory&lt;byte&gt; encodedBagValue, bool skipCopy = false);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string bagIdValue, valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; encodedBagValue, bool skipCopy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs12SafeBag.#ctor(System.String,System.ReadOnlyMemory{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (bagIdValue As String, encodedBagValue As ReadOnlyMemory(Of Byte), Optional skipCopy As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.Pkcs12SafeBag : string * ReadOnlyMemory&lt;byte&gt; * bool -&gt; System.Security.Cryptography.Pkcs.Pkcs12SafeBag" Usage="new System.Security.Cryptography.Pkcs.Pkcs12SafeBag (bagIdValue, encodedBagValue, skipCopy)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bagIdValue" Type="System.String" />
+        <Parameter Name="encodedBagValue" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+        <Parameter Name="skipCopy" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bagIdValue">To be added.</param>
+        <param name="encodedBagValue">To be added.</param>
+        <param name="skipCopy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.CryptographicAttributeObjectCollection Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CryptographicAttributeObjectCollection Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Pkcs12SafeBag.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As CryptographicAttributeObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CryptographicAttributeObjectCollection ^ Attributes { System::Security::Cryptography::CryptographicAttributeObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Security.Cryptography.CryptographicAttributeObjectCollection" Usage="System.Security.Cryptography.Pkcs.Pkcs12SafeBag.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CryptographicAttributeObjectCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encode">
+      <MemberSignature Language="C#" Value="public byte[] Encode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Encode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs12SafeBag.Encode" />
+      <MemberSignature Language="VB.NET" Value="Public Function Encode () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Encode();" />
+      <MemberSignature Language="F#" Value="member this.Encode : unit -&gt; byte[]" Usage="pkcs12SafeBag.Encode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodedBagValue">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory&lt;byte&gt; EncodedBagValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; EncodedBagValue" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Pkcs12SafeBag.EncodedBagValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncodedBagValue As ReadOnlyMemory(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlyMemory&lt;System::Byte&gt; EncodedBagValue { ReadOnlyMemory&lt;System::Byte&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncodedBagValue : ReadOnlyMemory&lt;byte&gt;" Usage="System.Security.Cryptography.Pkcs.Pkcs12SafeBag.EncodedBagValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBagId">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Oid GetBagId ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.Oid GetBagId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs12SafeBag.GetBagId" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBagId () As Oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::Oid ^ GetBagId();" />
+      <MemberSignature Language="F#" Value="member this.GetBagId : unit -&gt; System.Security.Cryptography.Oid" Usage="pkcs12SafeBag.GetBagId " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Oid</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEncode">
+      <MemberSignature Language="C#" Value="public bool TryEncode (Span&lt;byte&gt; destination, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEncode(valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs12SafeBag.TryEncode(System.Span{System.Byte},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEncode (destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEncode(Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="member this.TryEncode : Span&lt;byte&gt; *  -&gt; bool" Usage="pkcs12SafeBag.TryEncode (destination, bytesWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

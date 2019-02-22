@@ -1,0 +1,175 @@
+﻿<Type Name="Tensor" FullName="System.Numerics.Tensors.Tensor">
+  <TypeSignature Language="C#" Value="public static class Tensor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Tensor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Numerics.Tensors.Tensor" />
+  <TypeSignature Language="VB.NET" Value="Public Class Tensor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Tensor abstract sealed" />
+  <TypeSignature Language="F#" Value="type Tensor = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Numerics.Tensors</AssemblyName>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFromDiagonal&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.Tensor&lt;T&gt; CreateFromDiagonal&lt;T&gt; (System.Numerics.Tensors.Tensor&lt;T&gt; diagonal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.Tensor`1&lt;!!T&gt; CreateFromDiagonal&lt;T&gt;(class System.Numerics.Tensors.Tensor`1&lt;!!T&gt; diagonal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor.CreateFromDiagonal``1(System.Numerics.Tensors.Tensor{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromDiagonal(Of T) (diagonal As Tensor(Of T)) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Numerics::Tensors::Tensor&lt;T&gt; ^ CreateFromDiagonal(System::Numerics::Tensors::Tensor&lt;T&gt; ^ diagonal);" />
+      <MemberSignature Language="F#" Value="static member CreateFromDiagonal : System.Numerics.Tensors.Tensor&lt;'T&gt; -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="System.Numerics.Tensors.Tensor.CreateFromDiagonal diagonal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="diagonal" Type="System.Numerics.Tensors.Tensor&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="diagonal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromDiagonal&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.Tensor&lt;T&gt; CreateFromDiagonal&lt;T&gt; (System.Numerics.Tensors.Tensor&lt;T&gt; diagonal, int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.Tensor`1&lt;!!T&gt; CreateFromDiagonal&lt;T&gt;(class System.Numerics.Tensors.Tensor`1&lt;!!T&gt; diagonal, int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor.CreateFromDiagonal``1(System.Numerics.Tensors.Tensor{``0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromDiagonal(Of T) (diagonal As Tensor(Of T), offset As Integer) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Numerics::Tensors::Tensor&lt;T&gt; ^ CreateFromDiagonal(System::Numerics::Tensors::Tensor&lt;T&gt; ^ diagonal, int offset);" />
+      <MemberSignature Language="F#" Value="static member CreateFromDiagonal : System.Numerics.Tensors.Tensor&lt;'T&gt; * int -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="System.Numerics.Tensors.Tensor.CreateFromDiagonal (diagonal, offset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="diagonal" Type="System.Numerics.Tensors.Tensor&lt;T&gt;" />
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="diagonal">To be added.</param>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentity&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.Tensor&lt;T&gt; CreateIdentity&lt;T&gt; (int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.Tensor`1&lt;!!T&gt; CreateIdentity&lt;T&gt;(int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor.CreateIdentity``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateIdentity(Of T) (size As Integer) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Numerics::Tensors::Tensor&lt;T&gt; ^ CreateIdentity(int size);" />
+      <MemberSignature Language="F#" Value="static member CreateIdentity : int -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="System.Numerics.Tensors.Tensor.CreateIdentity size" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentity&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.Tensor&lt;T&gt; CreateIdentity&lt;T&gt; (int size, bool columMajor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.Tensor`1&lt;!!T&gt; CreateIdentity&lt;T&gt;(int32 size, bool columMajor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor.CreateIdentity``1(System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateIdentity(Of T) (size As Integer, columMajor As Boolean) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Numerics::Tensors::Tensor&lt;T&gt; ^ CreateIdentity(int size, bool columMajor);" />
+      <MemberSignature Language="F#" Value="static member CreateIdentity : int * bool -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="System.Numerics.Tensors.Tensor.CreateIdentity (size, columMajor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="columMajor" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="size">To be added.</param>
+        <param name="columMajor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentity&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Tensors.Tensor&lt;T&gt; CreateIdentity&lt;T&gt; (int size, bool columMajor, T oneValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Numerics.Tensors.Tensor`1&lt;!!T&gt; CreateIdentity&lt;T&gt;(int32 size, bool columMajor, !!T oneValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Tensors.Tensor.CreateIdentity``1(System.Int32,System.Boolean,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateIdentity(Of T) (size As Integer, columMajor As Boolean, oneValue As T) As Tensor(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Numerics::Tensors::Tensor&lt;T&gt; ^ CreateIdentity(int size, bool columMajor, T oneValue);" />
+      <MemberSignature Language="F#" Value="static member CreateIdentity : int * bool * 'T -&gt; System.Numerics.Tensors.Tensor&lt;'T&gt;" Usage="System.Numerics.Tensors.Tensor.CreateIdentity (size, columMajor, oneValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Tensors</AssemblyName>
+        <AssemblyVersion>0.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Tensors.Tensor&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="columMajor" Type="System.Boolean" />
+        <Parameter Name="oneValue" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="size">To be added.</param>
+        <param name="columMajor">To be added.</param>
+        <param name="oneValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

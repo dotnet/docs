@@ -1,0 +1,142 @@
+﻿<Type Name="Pkcs12Info" FullName="System.Security.Cryptography.Pkcs.Pkcs12Info">
+  <TypeSignature Language="C#" Value="public sealed class Pkcs12Info" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Pkcs12Info extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.Pkcs12Info" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pkcs12Info" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Pkcs12Info sealed" />
+  <TypeSignature Language="F#" Value="type Pkcs12Info = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AuthenticatedSafe">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Cryptography.Pkcs.Pkcs12SafeContents&gt; AuthenticatedSafe { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Cryptography.Pkcs.Pkcs12SafeContents&gt; AuthenticatedSafe" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Pkcs12Info.AuthenticatedSafe" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticatedSafe As ReadOnlyCollection(Of Pkcs12SafeContents)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Cryptography::Pkcs::Pkcs12SafeContents ^&gt; ^ AuthenticatedSafe { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Cryptography::Pkcs::Pkcs12SafeContents ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticatedSafe : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Cryptography.Pkcs.Pkcs12SafeContents&gt;" Usage="System.Security.Cryptography.Pkcs.Pkcs12Info.AuthenticatedSafe" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Cryptography.Pkcs.Pkcs12SafeContents&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decode">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.Pkcs.Pkcs12Info Decode (ReadOnlyMemory&lt;byte&gt; encodedBytes, out int bytesConsumed, bool skipCopy = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Pkcs.Pkcs12Info Decode(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; encodedBytes, [out] int32&amp; bytesConsumed, bool skipCopy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs12Info.Decode(System.ReadOnlyMemory{System.Byte},System.Int32@,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Decode (encodedBytes As ReadOnlyMemory(Of Byte), ByRef bytesConsumed As Integer, Optional skipCopy As Boolean = false) As Pkcs12Info" />
+      <MemberSignature Language="F#" Value="static member Decode : ReadOnlyMemory&lt;byte&gt; *  * bool -&gt; System.Security.Cryptography.Pkcs.Pkcs12Info" Usage="System.Security.Cryptography.Pkcs.Pkcs12Info.Decode (encodedBytes, bytesConsumed, skipCopy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.Pkcs12Info</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="encodedBytes" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
+        <Parameter Name="skipCopy" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="encodedBytes">To be added.</param>
+        <param name="bytesConsumed">To be added.</param>
+        <param name="skipCopy">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntegrityMode">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode IntegrityMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode IntegrityMode" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Pkcs12Info.IntegrityMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IntegrityMode As Pkcs12IntegrityMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::Pkcs12IntegrityMode IntegrityMode { System::Security::Cryptography::Pkcs::Pkcs12IntegrityMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.IntegrityMode : System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode" Usage="System.Security.Cryptography.Pkcs.Pkcs12Info.IntegrityMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyMac">
+      <MemberSignature Language="C#" Value="public bool VerifyMac (ReadOnlySpan&lt;char&gt; password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyMac(valuetype System.ReadOnlySpan`1&lt;char&gt; password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs12Info.VerifyMac(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifyMac (password As ReadOnlySpan(Of Char)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyMac(ReadOnlySpan&lt;char&gt; password);" />
+      <MemberSignature Language="F#" Value="member this.VerifyMac : ReadOnlySpan&lt;char&gt; -&gt; bool" Usage="pkcs12Info.VerifyMac password" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="password" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="password">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyMac">
+      <MemberSignature Language="C#" Value="public bool VerifyMac (string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyMac(string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs12Info.VerifyMac(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifyMac (password As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyMac(System::String ^ password);" />
+      <MemberSignature Language="F#" Value="member this.VerifyMac : string -&gt; bool" Usage="pkcs12Info.VerifyMac password" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="password">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

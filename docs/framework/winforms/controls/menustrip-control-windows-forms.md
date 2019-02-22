@@ -49,7 +49,7 @@ This control groups application commands and makes them easily accessible.
  [How to: Set Up Automatic Menu Merging for MDI Applications](../../../../docs/framework/winforms/controls/how-to-set-up-automatic-menu-merging-for-mdi-applications.md)  
  Describes how to merge menu items automatically at run time.  
   
--   [MenuStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
+-   [MenuStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233625(v=vs.100))  
   
 -   [How to: Copy ToolStripMenuItems](how-to-copy-toolstripmenuitems.md)  
   
@@ -61,7 +61,7 @@ This control groups application commands and makes them easily accessible.
   
 -   [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md)  
   
--   [MenuStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
+-   [MenuStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233645(v=vs.100))  
   
 ## Reference  
  <xref:System.Windows.Forms.MenuStrip>  

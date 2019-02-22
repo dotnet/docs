@@ -31,7 +31,7 @@ From an infrastructure perspective, each server can run many applications within
 
 **Figure 4-2.** A host running multiple apps/containers
 
-Finally, from availability perspective, monolithic applications must be deployed as a whole, that means that in case you must *stop and start*, all functionality and users will be affected during the deployment window. In certain situations, the use of Azure and containers can minimize these situations and reduce the probability of downtime of your application, as you can depict viewing Figure 4-3.
+Finally, from an availability perspective, monolithic applications must be deployed as a whole; that means that in case you must *stop and start*, all functionality and all users will be affected during the deployment window. In certain situations, the use of Azure and containers can minimize these situations and reduce the probability of downtime of your application, as you can see in Figure 4-3.
 
 You can deploy monolithic applications in Azure by using dedicated VMs for each instance. Using [Azure VM Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), you can scale the VMs easily.
 
@@ -43,9 +43,9 @@ You can deploy multiple VMs as Docker hosts and run any number of containers per
 
 **Figure 4-3**. Multiple hosts scaling-out a single Docker application apps/containers
 
-You can manage the deployment of the hosts themselves, via traditional deployment techniques.
+You can manage the deployment of the hosts themselves via traditional deployment techniques.
 
-You can manage Docker containers from the command line, by using commands like `docker run` and `docker-compose up`, and you can also automate it in Continuous Delivery (CD) pipelines and deploy to Docker hosts from Azure DevOps Services, for instance.
+You can manage Docker containers from the command line by using commands like `docker run` and `docker-compose up`, and you can also automate it in Continuous Delivery (CD) pipelines and deploy to Docker hosts from Azure DevOps Services, for instance.
 
 ## Monolithic application deployed as a container
 
@@ -57,7 +57,7 @@ Because containers are inherently immutable, by design, you never need to worry 
 
 Although monolithic apps can benefit from Docker, we're touching on only the tips of the benefits. The larger benefits of managing containers come from deploying with container orchestrators that manage the various instances and life cycle of each container instance. Breaking up the monolithic application into subsystems that can be scaled, developed, and deployed individually is your entry point into the realm of microservices.
 
-To learn about how to “lift and shift” monolithic applications with containers and how you can modernize your applications, you can read this additional Microsoft guide [Modernize existing .NET applications with Azure cloud and Windows Containers](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/) that you can also download as PDF here <https://aka.ms/LiftAndShiftWithContainersEbook>.
+To learn about how to “lift and shift” monolithic applications with containers and how you can modernize your applications, you can read this additional Microsoft guide, [Modernize existing .NET applications with Azure cloud and Windows Containers](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/), that you can also download as PDF from <https://aka.ms/LiftAndShiftWithContainersEbook>.
 
 ## Publish a single Docker container app to Azure App Service
 

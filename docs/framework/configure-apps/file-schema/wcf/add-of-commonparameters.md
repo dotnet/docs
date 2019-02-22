@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;commonParameters&gt;"
+title: "<add> of <commonParameters>"
 ms.date: "03/30/2017"
 ms.assetid: 3713bf25-20c8-455f-bb85-de46b6487932
 ---
-# &lt;add&gt; of &lt;commonParameters&gt;
+# \<add> of \<commonParameters>
 Specifies a name-value pair of parameters that are used globally across multiple services. Typically this parameter includes the database connection string that might be shared by durable services.  
   
  \<system.ServiceModel>  
@@ -17,11 +17,11 @@ Specifies a name-value pair of parameters that are used globally across multiple
 ## Syntax  
   
 ```xml  
-<workflowRuntime>  
-   <commonParameters>  
-      <add name="String" value="String" />  
-   </commonParameters>  
-</workflowRuntime>  
+<workflowRuntime>
+  <commonParameters>
+    <add name="String" value="String" />
+  </commonParameters>
+</workflowRuntime>
 ```  
   
 ## Attributes and Elements  
@@ -41,7 +41,7 @@ Specifies a name-value pair of parameters that are used globally across multiple
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<commonParameters>](https://msdn.microsoft.com/library/d0e1e6fc-985a-4713-b7da-194e30dfab4c)|A collection of common parameters used by services. This collection will typically include the database connection string that might be shared by durable services.|  
+|[\<commonParameters>](commonparameters.md)|A collection of common parameters used by services. This collection will typically include the database connection string that might be shared by durable services.|  
   
 ## Remarks  
  The `<commonParameters>` element defines any parameters that are used globally across multiple services, for example `ConnectionString` when using the <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>.  
@@ -49,15 +49,19 @@ Specifies a name-value pair of parameters that are used globally across multiple
  For services that commit work batches to persistence stores, such as <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> and <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>, you can enable them to retry their transaction by using the `EnableRetries` parameter as shown in the following example:  
   
 ```xml  
-<WorkflowRuntime Name="SampleApplication" UnloadOnIdle="false">  
-    <commonParameters>  
-        <add name="ConnectionString" value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;" />  
-        <add name="EnableRetries" value="True" />  
-    </commonParameters>  
-    <Services>  
-        <add type="System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService, System.Workflow.Runtime, Version=3.0.00000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" EnableRetries="False" />   
-     </Services>  
-</WorkflowRuntime>  
+<workflowRuntime name="SampleApplication"
+                 unloadOnIdle="false">
+  <commonParameters>
+    <add name="ConnectionString"
+         value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;" />
+    <add name="EnableRetries"
+         value="True" />
+  </commonParameters>
+  <services>
+    <add type="System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService, System.Workflow.Runtime, Version=3.0.00000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+         enableRetries="False" />
+  </services>
+</workflowRuntime>
 ```  
   
  Notice that the `EnableRetries` parameter can be set at either a global level (as shown in the *CommonParameters* section) or for individual services that support `EnableRetries` (as shown in the *Services* section).  
@@ -67,17 +71,19 @@ Specifies a name-value pair of parameters that are used globally across multiple
 ## Example  
   
 ```xml  
-<commonParameters>  
-   <add name="ConnectionString" value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;"/>  
-   <add name="EnableRetries" value="true"/>  
-</commonParameters>  
+<commonParameters>
+  <add name="ConnectionString"
+       value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;" />
+  <add name="EnableRetries"
+       value="true" />
+</commonParameters>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>  
- <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>  
- <xref:System.Workflow.Runtime.WorkflowRuntime>  
- <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService>  
- <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>  
- [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))  
- [\<commonParameters>](https://msdn.microsoft.com/library/d0e1e6fc-985a-4713-b7da-194e30dfab4c)
+## See also
+- <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>
+- <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>
+- <xref:System.Workflow.Runtime.WorkflowRuntime>
+- <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService>
+- <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>
+- [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
+- [\<commonParameters>](commonparameters.md)

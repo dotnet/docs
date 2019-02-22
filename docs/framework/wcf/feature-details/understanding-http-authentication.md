@@ -29,7 +29,7 @@ Authentication is the process of identifying whether a client is eligible to acc
   
 -   A server should not present (in the WWW-Authentication headers) any scheme that it is not prepared to accept or that does not adequately secure the protected resource. Clients are free to choose between any of the authentication schemes the server presents. Some clients default to a weak authentication scheme or the first authentication scheme in the server's list.  
   
-## See Also  
- [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  
- [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)  
- [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
+## See also
+- [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)
+- [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)
+- [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)

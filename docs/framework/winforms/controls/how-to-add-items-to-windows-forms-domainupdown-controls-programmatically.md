@@ -48,9 +48,9 @@ You can add items to the Windows Forms <xref:System.Windows.Forms.DomainUpDown> 
     domainUpDown1->Items->Insert(2, "rice");  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.DomainUpDown>  
- <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A?displayProperty=nameWithType>  
- <xref:System.Collections.ArrayList.Insert%2A?displayProperty=nameWithType>  
- [DomainUpDown Control](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)  
- [DomainUpDown Control Overview](../../../../docs/framework/winforms/controls/domainupdown-control-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.DomainUpDown>
+- <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A?displayProperty=nameWithType>
+- <xref:System.Collections.ArrayList.Insert%2A?displayProperty=nameWithType>
+- [DomainUpDown Control](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)
+- [DomainUpDown Control Overview](../../../../docs/framework/winforms/controls/domainupdown-control-overview-windows-forms.md)

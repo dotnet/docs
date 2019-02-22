@@ -23,14 +23,14 @@ You can apply the following operators to compare pointers of any type:
   
  `False`  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
-- [C# Operators](../../../csharp/language-reference/operators/index.md)  
-- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
-- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
-- [Types](../../../csharp/language-reference/keywords/types.md)  
-- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
-- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
+- [C# Operators](../../../csharp/language-reference/operators/index.md)
+- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Types](../../../csharp/language-reference/keywords/types.md)
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
+- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)
 - [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

@@ -1,12 +1,12 @@
 ---
-title: "&lt;summary&gt; (Visual Basic)"
+title: "<summary> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<summary> XML tag"
   - "summary XML tag"
 ms.assetid: 861c847d-dd94-478a-aa23-bf4899cdc848
 ---
-# &lt;summary&gt; (Visual Basic)
+# \<summary> (Visual Basic)
 Specifies the summary of the member.  
   
 ## Syntax  
@@ -31,5 +31,5 @@ Specifies the summary of the member.
   
  [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/summary_1.vb)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

@@ -65,14 +65,14 @@ Holds data in a format you define. The `Structure` statement defines the format.
 End Structure  
 ```  
   
-## See Also  
- <xref:System.ValueType>  
- <xref:System.Runtime.InteropServices.StructLayoutAttribute>  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
- [Widening](../../../visual-basic/language-reference/modifiers/widening.md)  
- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)  
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+## See also
+- <xref:System.ValueType>
+- <xref:System.Runtime.InteropServices.StructLayoutAttribute>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Widening](../../../visual-basic/language-reference/modifiers/widening.md)
+- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)
+- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

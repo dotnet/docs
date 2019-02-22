@@ -50,13 +50,13 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can customize the
   
 -   References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Drawing?displayProperty=nameWithType> assemblies.  
   
-## See Also  
- <xref:System.Windows.Forms.BorderStyle>  
- <xref:System.Windows.Forms.DataGridView.BorderStyle%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridView.GridColor%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.DataGridViewCellBorderStyle>  
- <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle>  
- [Basic Formatting and Styling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)
+## See also
+- <xref:System.Windows.Forms.BorderStyle>
+- <xref:System.Windows.Forms.DataGridView.BorderStyle%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridView.GridColor%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGridViewCellBorderStyle>
+- <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle>
+- [Basic Formatting and Styling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)

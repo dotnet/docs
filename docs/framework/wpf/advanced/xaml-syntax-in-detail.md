@@ -282,7 +282,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
 <a name="optional_and_nonrecommended_xaml_usages"></a>   
 ## Optional and Nonrecommended XAML Usages  
- The following sections describe XAML usages that are technically supported by XAML processors, but that produce verbosity or other aesthetic issues that interfere with XAML files remaining human-readable when your develop applications that contain XAML sources.  
+ The following sections describe XAML usages that are technically supported by XAML processors, but that produce verbosity or other aesthetic issues that interfere with XAML files remaining human-readable when you develop applications that contain XAML sources.  
   
 ### Optional Property Element Usages  
  Optional property element usages include explicitly writing out element content properties that the XAML processor considers implicit. For example, when you declare the contents of a <xref:System.Windows.Controls.Menu>, you could choose to explicitly declare the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection of the <xref:System.Windows.Controls.Menu> as a `<Menu.Items>` property element tag, and place each <xref:System.Windows.Controls.MenuItem> within `<Menu.Items>`, rather than using the implicit XAML processor behavior that all child elements of a <xref:System.Windows.Controls.Menu> must be a <xref:System.Windows.Controls.MenuItem> and are placed in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection. Sometimes the optional usages can help to visually clarify the object structure as represented in the markup. Or sometimes an explicit property element usage can avoid markup that is technically functional but visually confusing, such as nested markup extensions within an attribute value.  
@@ -309,10 +309,10 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  But just like *typeName*.*memberName* form for attributes, *baseTypeName*.*memberName* is poor style in markup, and you should avoid it.  
   
-## See Also  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)  
- [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [TypeConverters and XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md)  
- [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+## See also
+- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)
+- [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)
+- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [TypeConverters and XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md)
+- [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)

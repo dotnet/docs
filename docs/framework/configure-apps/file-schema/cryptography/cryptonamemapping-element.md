@@ -1,5 +1,5 @@
 ---
-title: "&lt;cryptoNameMapping&gt; Element"
+title: "<cryptoNameMapping> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#cryptoNameMapping"
@@ -8,10 +8,8 @@ helpviewer_keywords:
   - "<cryptoNameMapping> element"
   - "cryptoNameMapping element"
 ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;cryptoNameMapping&gt; Element
+# \<cryptoNameMapping> Element
 Contains mappings of classes to friendly names.  
   
  \<configuration>  
@@ -70,8 +68,8 @@ Contains mappings of classes to friendly names.
 </configuration>  
 ```  
   
-## See Also  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
+## See also
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
 - [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

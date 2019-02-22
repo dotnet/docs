@@ -1,10 +1,10 @@
 ---
-title: "&lt;channelSettings&gt;"
+title: "<channelSettings>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 94a4457f-f43f-458d-a47e-2d11103ee75e
 ---
-# &lt;channelSettings&gt;
+# \<channelSettings>
 Specifies the settings of the channel cache.  
   
 \<system.ServiceModel>  
@@ -82,9 +82,9 @@ Specifies the settings of the channel cache.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Activities.SendMessageChannelCache>  
- <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>  
- <xref:System.ServiceModel.Activities.Send>  
- <xref:System.ServiceModel.Activities.ChannelCacheSettings>  
- [Changing the Cache Sharing Levels for Send Activities](../../../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md)
+## See also
+- <xref:System.ServiceModel.Activities.SendMessageChannelCache>
+- <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>
+- <xref:System.ServiceModel.Activities.Send>
+- <xref:System.ServiceModel.Activities.ChannelCacheSettings>
+- [Changing the Cache Sharing Levels for Send Activities](../../../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md)

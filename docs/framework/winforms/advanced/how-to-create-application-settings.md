@@ -14,7 +14,7 @@ Using managed code, you can create new application settings and bind them to pro
   
  In the following procedure, you manually create a wrapper class that derives from <xref:System.Configuration.ApplicationSettingsBase>. To this class you add a publicly accessible property for each application setting that you want to expose.  
   
- You can also perform this procedure using minimal code in the Visual Studio designer.  Also see [How to: Create Application Settings Using the Designer](https://msdn.microsoft.com/library/wabtadw6\(v=vs.110\)).  
+ You can also perform this procedure using minimal code in the Visual Studio designer.  Also see [How to: Create Application Settings Using the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/wabtadw6(v=vs.100)).  
   
 ### To create new Application Settings programmatically  
   
@@ -40,8 +40,8 @@ Using managed code, you can create new application settings and bind them to pro
 ## .NET Framework Security  
  The default settings provider, <xref:System.Configuration.LocalFileSettingsProvider>, persists information to configuration files as plain text. This limits security to the file access security provided by the operating system for the current user. Because of this, care must be taken with the information stored in configuration files. For example, one common use for application settings is to store connection strings that point to the application's data store. However, because of security concerns, such strings should not include passwords. For more information about connection strings, see <xref:System.Configuration.SpecialSetting>.  
   
-## See Also  
- <xref:System.Configuration.SpecialSettingAttribute>  
- <xref:System.Configuration.LocalFileSettingsProvider>  
- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)  
- [How to: Validate Application Settings](../../../../docs/framework/winforms/advanced/how-to-validate-application-settings.md)
+## See also
+- <xref:System.Configuration.SpecialSettingAttribute>
+- <xref:System.Configuration.LocalFileSettingsProvider>
+- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)
+- [How to: Validate Application Settings](../../../../docs/framework/winforms/advanced/how-to-validate-application-settings.md)

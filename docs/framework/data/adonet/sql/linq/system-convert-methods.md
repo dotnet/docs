@@ -42,5 +42,5 @@ ms.assetid: 3ca6c5b6-ea5d-4ab0-b675-f082135b342c
   
     -   <xref:System.Convert.ChangeType%2A>  
   
-## See Also  
- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)
+## See also
+- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)

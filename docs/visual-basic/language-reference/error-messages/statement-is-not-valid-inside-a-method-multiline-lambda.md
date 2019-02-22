@@ -17,8 +17,8 @@ The statement is not valid within a `Sub`, `Function`, property `Get`, or proper
   
 -   Remove the statement from the procedure.  
   
-## See Also  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  
- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
+## See also
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
+- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)

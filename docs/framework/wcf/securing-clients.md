@@ -35,7 +35,7 @@ In Windows Communication Foundation (WCF), the service dictates the security req
  If you have the configuration file the Svcutil.exe tool generated, examine the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) section to determine what client credential type is required. Within the section are binding elements that specify the security requirements. Specifically, examine the \<security> Element of each binding. That element includes the `mode` attribute, which you can set to one of three possible values (`Message`, `Transport`, or `TransportWithMessageCredential`). The value of the attribute determines the mode, and the mode determines which of the child elements is significant.  
   
  The `<security>` element can contain either a `<transport>` or `<message>` element, or both. The significant element is the one that matches the security mode. For example, the following code specifies that the security mode is `"Message"`, and the client credential type for the `<message>` element is `"Certificate"`. In this case, the `<transport>` element can be ignored. However, the `<message>` element specifies that an X.509 certificate must be supplied.  
-  
+
 ```xml  
 <wsHttpBinding>  
     <binding name="WSHttpBinding_ICalculator">  
@@ -50,7 +50,7 @@ In Windows Communication Foundation (WCF), the service dictates the security req
     </binding>  
 </wsHttpBinding>  
 ```  
-  
+
  Note that if the `clientCredentialType` attribute is set to `"Windows"`, as shown in the following example, you do not need to supply an actual credential value. This is because the Windows integrated security provides the actual credential (a Kerberos token) of the person who is running the client.  
   
 ```xml  
@@ -101,29 +101,21 @@ In Windows Communication Foundation (WCF), the service dictates the security req
 </configuration>  
 ```  
   
- To set the client credential in configuration, add an [\<endpointBehaviors>](../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) element to the configuration file. Additionally, the added behavior element must be linked to the service's endpoint using the `behaviorConfiguration` attribute of the [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element as shown in the following example. The value of the `behaviorConfiguration` attribute must match the value of the behavior `name` attribute.  
-  
- `<configuration>`  
-  
- `<system.serviceModel>`  
-  
- `<client>`  
-  
- `<endpoint address="http://localhost/servicemodelsamples/service.svc"`  
-  
- `binding="wsHttpBinding"`  
-  
- `bindingConfiguration="Binding1"`  
-  
- `behaviorConfiguration="myEndpointBehavior"`  
-  
- `contract="Microsoft.ServiceModel.Samples.ICalculator" />`  
-  
- `</client>`  
-  
- `</system.serviceModel>`  
-  
- `</configuration>`  
+ To set the client credential in configuration, add an [\<endpointBehaviors>](../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) element to the configuration file. Additionally, the added behavior element must be linked to the service's endpoint using the `behaviorConfiguration` attribute of the [\<endpoint> of \<client>](../configure-apps/file-schema/wcf/endpoint-of-client.md) element as shown in the following example. The value of the `behaviorConfiguration` attribute must match the value of the behavior `name` attribute.  
+
+```xml
+<configuration>
+  <system.serviceModel>
+    <client>
+      <endpoint address="http://localhost/servicemodelsamples/service.svc"
+                binding="wsHttpBinding"
+                bindingConfiguration="Binding1"
+                behaviorConfiguration="myEndpointBehavior"
+                contract="Microsoft.ServiceModel.Samples.ICalculator" />
+    </client>
+  </system.serviceModel>
+</configuration>
+```
   
 > [!NOTE]
 >  Some of the client credential values cannot be set using application configuration files, for example, user name and password, or Windows user and password values. Such credential values can be specified only in code.  
@@ -146,16 +138,16 @@ In Windows Communication Foundation (WCF), the service dictates the security req
 </wsHttpBinding>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>  
- <xref:System.ServiceModel.ClientBase%601>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>  
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>  
- [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)  
- [Configuration Editor Tool (SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)  
- [Securing Services](../../../docs/framework/wcf/securing-services.md)  
- [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
- [How to: Specify Client Credential Values](../../../docs/framework/wcf/how-to-specify-client-credential-values.md)  
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
- [How to: Specify the Client Credential Type](../../../docs/framework/wcf/how-to-specify-the-client-credential-type.md)
+## See also
+- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>
+- <xref:System.ServiceModel.ClientBase%601>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>
+- [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)
+- [Configuration Editor Tool (SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)
+- [Securing Services](../../../docs/framework/wcf/securing-services.md)
+- [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)
+- [How to: Specify Client Credential Values](../../../docs/framework/wcf/how-to-specify-client-credential-values.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [How to: Specify the Client Credential Type](../../../docs/framework/wcf/how-to-specify-the-client-credential-type.md)

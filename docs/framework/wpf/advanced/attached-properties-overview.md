@@ -135,7 +135,7 @@ WPF defines several [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../includ
 
 -   You can also register a property as an attached property, and as a dependency property, but then still expose "wrapper" implementations. In this case, the property can be set either on that element, or on any element through the XAML attached property syntax. An example of a property with an appropriate scenario for both standard and attached usages is <xref:System.Windows.FrameworkElement.FlowDirection%2A?displayProperty=nameWithType>.
 
-## See Also
+## See also
 
 - <xref:System.Windows.DependencyProperty>
 - [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)

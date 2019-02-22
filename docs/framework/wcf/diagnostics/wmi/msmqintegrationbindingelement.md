@@ -34,5 +34,5 @@ class MsmqIntegrationBindingElement : MsmqBindingElementBase
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBindingElement>
+## See also
+- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBindingElement>

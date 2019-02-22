@@ -36,7 +36,7 @@ The .NET Framework is a managed execution environment for Windows that provides 
 
 - Side-by-side execution. The .NET Framework helps resolve version conflicts by allowing multiple versions of the common language runtime to exist on the same computer. This means that multiple versions of apps can coexist and that an app can run on the version of the .NET Framework with which it was built. Side-by-side execution applies to the .NET Framework version groups 1.0/1.1, 2.0/3.0/3.5, and 4/4.5.x/4.6.x/4.7.x.
 
-- Multitargeting. By targeting [.NET Standard](~/docs/standard/net-standard.md), developers create class libraries that work on multiple .NET Framework platforms supported by that version of the standard. For example, libraries that target the .NET Standard 2.0 can be used by apps that target the .NET Framework 4.6.1, .NET Core 2.0, and UWP 10.0.16299. 
+- Multitargeting. By targeting [.NET Standard](../../standard/net-standard.md), developers create class libraries that work on multiple .NET Framework platforms supported by that version of the standard. For example, libraries that target the .NET Standard 2.0 can be used by apps that target the .NET Framework 4.6.1, .NET Core 2.0, and UWP 10.0.16299. 
 
 <a name="ForUsers"></a>
 ## The .NET Framework for users
@@ -49,7 +49,7 @@ In general, you shouldn't uninstall versions of the .NET Framework that are inst
 
 - If an app that you use depends on a specific version of the .NET Framework, that app may break if that version is removed.
 
-- Some versions of the .NET Framework are in-place updates to earlier versions. For example, the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] is an in-place update to version 2.0, and the .NET Framework 4.7.2 is an in-place update to versions 4 through 4.7.1. For more information, see [.NET Framework Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md).
+- Some versions of the .NET Framework are in-place updates to earlier versions. For example, the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] is an in-place update to version 2.0, and the .NET Framework 4.7.2 is an in-place update to versions 4 through 4.7.1. For more information, see [.NET Framework Versions and Dependencies](../migration-guide/versions-and-dependencies.md).
 
 On Windows versions before Windows 8, if you do choose to remove the .NET Framework, always use **Programs and Features** from Control Panel to uninstall it. Never remove a version of the .NET Framework manually. On Windows 8 and above, the .NET Framework is an operating system component and cannot be independently uninstalled.
 
@@ -62,29 +62,29 @@ If you're a developer, choose any programming language that supports the .NET Fr
 
 To develop .NET Framework apps or components, do the following:
 
-1. If it's not preinstalled on your operating system, install the version of the .NET Framework that your app will target. The most recent production version is the .NET Framework 4.7.2. It is preinstalled on Windows 10 April 2018 Update and Windows 10 October 2018 Update, and it is available for download on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md). For information on installing other versions of the .NET Framework, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md). Additional .NET Framework packages are released out of band, which means that they're released on a rolling basis outside of any regular or scheduled release cycle. For information about these packages, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md).
+1. If it's not preinstalled on your operating system, install the version of the .NET Framework that your app will target. The most recent production version is the .NET Framework 4.7.2. It is preinstalled on Windows 10 April 2018 Update and Windows 10 October 2018 Update, and it is available for download on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](system-requirements.md). For information on installing other versions of the .NET Framework, see [Installation Guide](../install/guide-for-developers.md). Additional .NET Framework packages are released out of band, which means that they're released on a rolling basis outside of any regular or scheduled release cycle. For information about these packages, see [The .NET Framework and Out-of-Band Releases](the-net-framework-and-out-of-band-releases.md).
 
-2. Select the language or languages supported by the .NET Framework that you intend to use to develop your apps. A number of languages are available, including [Visual Basic](../../visual-basic/index.md), [C#](../../csharp/index.md), [F#](../../fsharp/index.md), and C++/CLI from Microsoft. (A programming language that allows you to develop apps for the .NET Framework adheres to the [Common Language Infrastructure (CLI) specification](https://go.microsoft.com/fwlink/?LinkId=199862).)
+2. Select the language or languages supported by the .NET Framework that you intend to use to develop your apps. A number of languages are available, including [Visual Basic](../../visual-basic/index.md), [C#](../../csharp/index.md), [F#](../../fsharp/index.md), and [C++/CLI](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) from Microsoft. (A programming language that allows you to develop apps for the .NET Framework adheres to the [Common Language Infrastructure (CLI) specification](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/).)
 
 3. Select and install the development environment to use to create your apps and that supports your selected programming language or languages. The Microsoft integrated development environment (IDE) for .NET Framework apps is [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). It's available in a number of editions.
 
-For more information on developing apps that target the .NET Framework, see the [Development Guide](../../../docs/framework/development-guide.md).
+For more information on developing apps that target the .NET Framework, see the [Development Guide](../development-guide.md).
 
 ## Related topics
 
 | Title | Description |
 | ----- |------------ |
-| [Overview](../../../docs/framework/get-started/overview.md) | Provides detailed information for developers who build apps that target the .NET Framework. |
-| [Installation guide](../../../docs/framework/install/index.md) | Provides information about installing the .NET Framework. |  
-| [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md) | Describes the .NET Framework out of band releases and how to use them in your app. |
-| [System Requirements](../../../docs/framework/get-started/system-requirements.md) | Lists the hardware and software requirements for running the .NET Framework. |
-| [.NET Core and Open-Source](../../../docs/framework/get-started/net-core-and-open-source.md) | Describes .NET Core in relation to the .NET Framework and how to access the open-source .NET Core projects. |
-| [.NET Core documentation](https://docs.microsoft.com/dotnet/) | Provides the conceptual and API reference documentation for .NET Core. |
-| [.NET Standard](~/docs/standard/net-standard.md) | Discusses .NET Standard, a versioned specification that individual .NET implementations support to guarantee that a consistent set of APIs are available on multiple platforms.
+| [Overview](overview.md) | Provides detailed information for developers who build apps that target the .NET Framework. |
+| [Installation guide](../install/index.md) | Provides information about installing the .NET Framework. |  
+| [The .NET Framework and Out-of-Band Releases](the-net-framework-and-out-of-band-releases.md) | Describes the .NET Framework out of band releases and how to use them in your app. |
+| [System Requirements](system-requirements.md) | Lists the hardware and software requirements for running the .NET Framework. |
+| [.NET Core and Open-Source](net-core-and-open-source.md) | Describes .NET Core in relation to the .NET Framework and how to access the open-source .NET Core projects. |
+| [.NET Core documentation](../../core/index.md) | Provides the conceptual and API reference documentation for .NET Core. |
+| [.NET Standard](../../standard/net-standard.md) | Discusses .NET Standard, a versioned specification that individual .NET implementations support to guarantee that a consistent set of APIs are available on multiple platforms.
 
 ## See also
 
-- [.NET Framework Guide](../../../docs/framework/index.md)   
-- [What's New](../../../docs/framework/whats-new/index.md)   
-- [.NET API Browser](/dotnet/api/)   
-- [Development Guide](../../../docs/framework/development-guide.md)
+- [.NET Framework Guide](../index.md)
+- [What's New](../whats-new/index.md)
+- [.NET API Browser](../../../api/index.md)
+- [Development Guide](../development-guide.md)

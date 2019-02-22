@@ -105,7 +105,7 @@ It is possible to split the definition of a [class](../../../csharp/language-ref
 ## Example 1  
   
 ### Description  
- In the following example, the fields and the constructor of the class, `CoOrds`, are declared in one partial class definition, and the member, `PrintCoOrds`, is declared in another partial class definition.  
+ In the following example, the fields and the constructor of the class, `Coords`, are declared in one partial class definition, and the member, `PrintCoords`, is declared in another partial class definition.  
   
 ### Code  
  [!code-csharp[csProgGuideObjects#17](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_9.cs)]  
@@ -156,10 +156,10 @@ partial void onNameChanged()
 
 For more information, see [Partial types](~/_csharplang/spec/classes.md#partial-types) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
-- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
-- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)
+- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
 - [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)

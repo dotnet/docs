@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;knownCertificates&gt;"
+title: "<add> of <knownCertificates>"
 ms.date: "03/30/2017"
 ms.assetid: 128aaabe-3f1a-4c3b-b59f-898d0f02910f
 ---
-# &lt;add&gt; of &lt;knownCertificates&gt;
+# \<add> of \<knownCertificates>
 Adds an X.509 certificate to the collection of known certificates.  
   
  \<system.ServiceModel>  
@@ -18,12 +18,12 @@ Adds an X.509 certificate to the collection of known certificates.
 ## Syntax  
   
 ```xml  
-<knownCertificates>   
-   <add findValue="String"  
-      storeLocation="CurrentUser/LocalMachine"  
-      storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
-      x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"/>  
-</knownCertificates>  
+<knownCertificates>
+   <add findValue="String"
+      storeLocation="CurrentUser/LocalMachine"
+      storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"
+      x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"/>
+</knownCertificates>
 ```  
   
 ## Attributes and Elements  
@@ -77,13 +77,14 @@ Adds an X.509 certificate to the collection of known certificates.
  The [\<issuedTokenAuthentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowncertificates.md). Insert an [\<add> element \<knownCertificates> Element](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-knowncertificates.md) for each certificate, as shown in the following example.  
   
 ```xml  
-<issuedTokenAuthentication>  
-   <knownCertificates>  
-      <add findValue="www.contoso.com"   
-           storeLocation="LocalMachine" storeName="My"   
-           X509FindType="FindBySubjectName" />  
-    </knownCertificates>  
-</issuedTokenAuthentication>  
+<issuedTokenAuthentication>
+  <knownCertificates>
+    <add findValue="www.contoso.com"
+         storeLocation="LocalMachine"
+         storeName="My"
+         X509FindType="FindBySubjectName" />
+  </knownCertificates>
+</issuedTokenAuthentication>
 ```  
   
  By default, the certificates must be obtained from a secure token service. These "known" certificates ensure that only legitimate clients can access a service.  
@@ -94,31 +95,32 @@ Adds an X.509 certificate to the collection of known certificates.
  The following example adds certificate to the repository for any STS certificates.  
   
 ```xml  
-<serviceBehaviors>  
- <behavior name="myServiceBehavior">  
-  <serviceCredentials>  
-   <issuedTokenAuthentication>  
-    <knownCertificates>  
-     <add findValue="www.contoso.com" storeLocation="LocalMachine"   
-           storeName="CertificateAuthority"  
-           x509FindType="FindByIssuerName" />  
-     </knownCertificates>  
-    </issuedTokenAuthentication>  
-   </serviceCredentials>  
-  </behavior>  
- </serviceBehaviors>  
+<serviceBehaviors>
+  <behavior name="myServiceBehavior">
+    <serviceCredentials>
+      <issuedTokenAuthentication>
+        <knownCertificates>
+          <add findValue="www.contoso.com"
+               storeLocation="LocalMachine"
+               storeName="CertificateAuthority"
+               x509FindType="FindByIssuerName" />
+        </knownCertificates>
+      </issuedTokenAuthentication>
+    </serviceCredentials>
+  </behavior>
+</serviceBehaviors>
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>  
- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>  
- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>  
- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement.KnownCertificates%2A>  
- <xref:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElementCollection>  
- <xref:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement>  
- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A>  
- [\<knownCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowncertificates.md)  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
- [How to: Configure Credentials on a Federation Service](../../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## See also
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>
+- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement.KnownCertificates%2A>
+- <xref:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElementCollection>
+- <xref:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement>
+- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A>
+- [\<knownCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowncertificates.md)
+- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
+- [How to: Configure Credentials on a Federation Service](../../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

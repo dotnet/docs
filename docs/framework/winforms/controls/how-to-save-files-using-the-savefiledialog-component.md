@@ -171,6 +171,6 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
     > [!NOTE]
     >  Certain controls, such as the <xref:System.Windows.Forms.RichTextBox> control, have the ability to save files. For more information, see the "SaveFileDialog Component" section of the MSDN Online Library technical article, [Essential Code for Windows Forms Dialog Boxes](https://go.microsoft.com/fwlink/?LinkID=102575).  
   
-## See Also  
- <xref:System.Windows.Forms.SaveFileDialog>  
- [SaveFileDialog Component](../../../../docs/framework/winforms/controls/savefiledialog-component-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.SaveFileDialog>
+- [SaveFileDialog Component](../../../../docs/framework/winforms/controls/savefiledialog-component-windows-forms.md)

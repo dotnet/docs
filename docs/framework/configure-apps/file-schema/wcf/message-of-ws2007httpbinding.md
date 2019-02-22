@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; of &lt;ws2007HttpBinding&gt;"
+title: "<message> of <ws2007HttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 9ffd8db6-84a8-4b38-a9fe-2cb1a87a1c97
 ---
-# &lt;message&gt; of &lt;ws2007HttpBinding&gt;
+# \<message> of \<ws2007HttpBinding>
 Defines settings for message-level security of the [\<ws2007HttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) element.  
   
  \<system.ServiceModel>  
@@ -16,18 +16,17 @@ Defines settings for message-level security of the [\<ws2007HttpBinding>](../../
 ## Syntax  
   
 ```xml  
-<ws2007HttpBinding>  
- <binding >  
-  <security>  
-   <message clientCredentialType =  
-    "None/Windows/UserName/Certificate/IssuedToken"  
-    establishSecurityContext="Boolean"  
-    negotiateServiceCredential="Boolean"  
-    algorithmSuite= Enumeration. See algorithmSuite Attribute below.  
-    defaultProtectionLevel="None/Sign/EncryptionAndSign" />  
-  </security>  
- </binding>  
-</ws2007HttpBinding>  
+<ws2007HttpBinding>
+  <binding>
+    <security>
+      <message clientCredentialType="None/Windows/UserName/Certificate/IssuedToken"
+               establishSecurityContext="Boolean"
+               negotiateServiceCredential="Boolean"
+               algorithmSuite="Enumeration. See algorithmSuite Attribute below."
+               defaultProtectionLevel="None/Sign/EncryptionAndSign" />
+    </security>
+  </binding>
+</ws2007HttpBinding>
 ```  
   
 ## Type  
@@ -85,13 +84,13 @@ Defines settings for message-level security of the [\<ws2007HttpBinding>](../../
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-ws2007httpbinding.md)|Defines the security settings for a [\<ws2007HttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md).|  
   
-## See Also  
- <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>  
- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>  
- <xref:System.ServiceModel.WSHttpSecurity.Message%2A>  
- <xref:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>
+- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>
+- <xref:System.ServiceModel.WSHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

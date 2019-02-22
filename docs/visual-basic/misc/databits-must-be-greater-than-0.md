@@ -10,5 +10,5 @@ The `DataBits` argument specified for the `My.Computer.Ports.OpenSerialPort` met
   
 -   Change the value of the `DataBits` argument to a positive number.  
   
-## See Also  
- [My.Computer.Ports.OpenSerialPort](xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A)
+## See also
+- [My.Computer.Ports.OpenSerialPort](xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A)

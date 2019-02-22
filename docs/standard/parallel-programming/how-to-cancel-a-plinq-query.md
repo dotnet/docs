@@ -46,6 +46,6 @@ The following examples show two ways to cancel a PLINQ query. The first example 
   
 ## See also
 
-- <xref:System.Linq.ParallelEnumerable>  
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)  
+- <xref:System.Linq.ParallelEnumerable>
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
 - [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)

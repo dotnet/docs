@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceSecurityAudit&gt;"
+title: "<serviceSecurityAudit>"
 ms.date: "03/30/2017"
 ms.assetid: ba517369-a034-4f8e-a2c4-66517716062b
 ---
-# &lt;serviceSecurityAudit&gt;
+# \<serviceSecurityAudit>
 Specifies settings that enable auditing of security events during service operations.  
   
  \<system.ServiceModel>  
@@ -15,11 +15,10 @@ Specifies settings that enable auditing of security events during service operat
 ## Syntax  
   
 ```xml  
-<serviceSecurityAudit   
-   auditLogLocation="Default/Application/Security"  
-   messageAuthenticationAuditLevel= None/Success/Failure/SuccessOrFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessOrFailure"  
-   suppressAuditFailure="Boolean"  
-/>  
+<serviceSecurityAudit auditLogLocation="Default/Application/Security"
+                      messageAuthenticationAuditLevel="None/Success/Failure/SuccessOrFailure"
+                      serviceAuthorizationAuditLevel="None/Success/Failure/SuccessOrFailure"
+                      suppressAuditFailure="Boolean" />
 ```  
   
 ## Attributes and Elements  
@@ -59,22 +58,24 @@ Specifies settings that enable auditing of security events during service operat
 ## Example  
   
 ```xml  
-<system.serviceModel>  
-   <serviceBehaviors>  
-      <behavior name="NewBehavior">  
-         <serviceSecurityAudit auditLogLocation="Application"   
-             suppressAuditFailure="true"  
-             serviceAuthorizationAuditLevel="Success"   
-             messageAuthenticationAuditLevel="Success" />  
-      </behavior>  
-   </serviceBehaviors>  
-</behaviors>  
+<system.serviceModel>
+  <behaviors>
+    <serviceBehaviors>
+      <behavior name="NewBehavior">
+        <serviceSecurityAudit auditLogLocation="Application"
+                              suppressAuditFailure="true"
+                              serviceAuthorizationAuditLevel="Success"
+                              messageAuthenticationAuditLevel="Success" />
+      </behavior>
+    </serviceBehaviors>
+  </behaviors>
+</system.serviceModel>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceSecurityAuditElement>  
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Auditing](../../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [How to: Audit Security Events](../../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)  
- [Service Auditing Behavior](../../../../../docs/framework/wcf/samples/service-auditing-behavior.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceSecurityAuditElement>
+- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Auditing](../../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
+- [How to: Audit Security Events](../../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)
+- [Service Auditing Behavior](../../../../../docs/framework/wcf/samples/service-auditing-behavior.md)

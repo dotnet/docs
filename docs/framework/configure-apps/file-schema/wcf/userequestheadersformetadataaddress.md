@@ -1,9 +1,9 @@
 ---
-title: "&lt;useRequestHeadersForMetadataAddress&gt;"
+title: "<useRequestHeadersForMetadataAddress>"
 ms.date: "03/30/2017"
 ms.assetid: 679f0eae-f353-44d1-b42d-a9e247509774
 ---
-# &lt;useRequestHeadersForMetadataAddress&gt;
+# \<useRequestHeadersForMetadataAddress>
 Enables the retrieval of metadata address information from the request message headers.  
   
 \<system.ServiceModel>  
@@ -17,9 +17,10 @@ Enables the retrieval of metadata address information from the request message h
 ```xml  
 <useRequestHeadersForMetadataAddress>
   <defaultPorts>
-    <add scheme="http" port="integer" />
+    <add scheme="http"
+         port="integer" />
   </defaultPorts>
-</useRequestHeadersForMetadataAddress>  
+</useRequestHeadersForMetadataAddress>
 ```  
   
 ## Attributes and Elements  
@@ -40,5 +41,5 @@ Enables the retrieval of metadata address information from the request message h
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.UseRequestHeadersForMetadataAddressElement>
+## See also
+- <xref:System.ServiceModel.Configuration.UseRequestHeadersForMetadataAddressElement>

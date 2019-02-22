@@ -1,9 +1,9 @@
 ---
-title: "&lt;udpAnnoucementEndpoint&gt;"
+title: "<udpAnnoucementEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: 5b3fa9c5-f372-4df9-a9d6-1e426063b721
 ---
-# &lt;udpAnnoucementEndpoint&gt;
+# \<udpAnnoucementEndpoint>
 This configuration element defines a standard endpoint that is used by services to send announcement messages over a UDP binding. It has a fixed contract and supports two discovery versions. In addition it has a fixed UDP binding and a default address value as specified in the WS-Discovery specifications (WS-Discovery April 2005 or WS-Discovery version 1.1). You can specify the multicast address to use for sending and receiving the announcement messages.  
   
 \<system.ServiceModel>  
@@ -12,16 +12,16 @@ This configuration element defines a standard endpoint that is used by services 
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <announcementEndpoint>
-      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005" 
+      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"
                         maxAnnouncementDelay="Timespan"
                         multicastAddress="Uri"
                         name="String" />
     </announcementEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -52,26 +52,26 @@ This configuration element defines a standard endpoint that is used by services 
  The following example demonstrates a client listening for announcement over a UDP multicast transport with default multicast address, and UDP multicast transport with specified multicast address.  
   
 ```xml  
-<services>  
-  <service name="ServiceAnnouncementListener">  
-      <endpoint name="udpAnnouncementEndpointStandard"  
-                kind="udpAnnouncementEndpoint"  
-                bindingConfiguration="..." />  
-      <endpoint name="udpAnnouncementEndpoint2"  
-                kind="udpAnnouncementEndpoint"  
-                endpointConfiguration="AnnouncementConfiguration3702"  
-                bindingConfiguration="..." />  
-...  
-  </service>  
-</services>  
-<standardEndpoints>  
-  <udpAnnouncementEndpoint>  
-     <standardEndpoint name="AnnouncementConfiguration2"   
-          version="WSDiscoveryApril2005"   
-          multicastAddress="soap.udp://239.255.255.250:3703"/>          
-  </udpAnnouncementEndpoint>  
-</standardEndpoints>  
+<services>
+  <service name="ServiceAnnouncementListener">
+    <endpoint name="udpAnnouncementEndpointStandard"
+              kind="udpAnnouncementEndpoint"
+              bindingConfiguration="..." />
+    <endpoint name="udpAnnouncementEndpoint2"
+              kind="udpAnnouncementEndpoint"
+              endpointConfiguration="AnnouncementConfiguration3702"
+              bindingConfiguration="..." />
+    ...
+  </service>
+</services>
+<standardEndpoints>
+  <udpAnnouncementEndpoint>
+    <standardEndpoint name="AnnouncementConfiguration2"
+                      version="WSDiscoveryApril2005"
+                      multicastAddress="soap.udp://239.255.255.250:3703"/>
+  </udpAnnouncementEndpoint>
+</standardEndpoints>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>
+## See also
+- <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>

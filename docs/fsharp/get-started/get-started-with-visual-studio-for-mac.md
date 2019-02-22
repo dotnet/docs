@@ -109,8 +109,8 @@ If you haven't already, check out the [Tour of F#](../tour.md), which covers som
 
 ## See also
 
-- [Visual F#](../index.md)  
-- [Tour of F#](../tour.md)  
-- [F# language reference](../language-reference/index.md)  
-- [Type inference](../language-reference/type-inference.md)  
-- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)  
+- [Visual F#](../index.md)
+- [Tour of F#](../tour.md)
+- [F# language reference](../language-reference/index.md)
+- [Type inference](../language-reference/type-inference.md)
+- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)

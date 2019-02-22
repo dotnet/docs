@@ -112,7 +112,7 @@ You can map your localizable content to resource assemblies by using resource id
 
 ### To assign resource identifiers
 
-1.  From the Start Menu, open the Visual Studio Command Prompt.
+1.  From the Start Menu, open the Developer Command Prompt for Visual Studio.
 
 2.  Use the following command to assign resource identifiers to your localizable content.
 
@@ -166,7 +166,7 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
      The application shows the localized strings instead of the English strings.
 
-## See Also
+## See also
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>

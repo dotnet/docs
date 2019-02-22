@@ -1,11 +1,11 @@
 ---
-title: "&lt;GenericParameter&gt; Element (.NET Native)"
+title: "<GenericParameter> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;GenericParameter&gt; Element (.NET Native)
+# \<GenericParameter> Element (.NET Native)
 Applies policy to the parameter type of a generic type or method.  
   
 ## Syntax  
@@ -15,7 +15,7 @@ Applies policy to the parameter type of a generic type or method.
                   Activate="policy_type"  
                   Browse="policy_type"  
                   Dynamic="policy_type"  
-                  Serialize="policy_type" />  
+                  Serialize="policy_type"  
                   DataContractSerializer="policy_type"  
                   DataContractJsonSerializer="policy_type"  
                   XmlSerializer="policy_type"  
@@ -80,9 +80,9 @@ Applies policy to the parameter type of a generic type or method.
 </Directives>  
 ```  
   
-## See Also  
- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)  
- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+## See also
+- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)
+- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

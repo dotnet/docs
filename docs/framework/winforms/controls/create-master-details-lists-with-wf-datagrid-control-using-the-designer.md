@@ -21,10 +21,10 @@ ms.assetid: 19438ba2-f687-4417-a2fb-ab1cd69d4ded
   
 ### To create a master-details list in the designer  
   
-1.  Add two <xref:System.Windows.Forms.DataGrid> controls to the form. For more information, see [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md). In Visual Studio 2005, the <xref:System.Windows.Forms.DataGrid> control is not in the **Toolbox** by default. For more information, see [How to: Add Items to the Toolbox](https://msdn.microsoft.com/library/458e119e-17fe-450b-b889-e31c128bd7e0).  
+1.  Add two <xref:System.Windows.Forms.DataGrid> controls to the form. For more information, see [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md). In Visual Studio 2005, the <xref:System.Windows.Forms.DataGrid> control is not in the **Toolbox** by default. For more information, see [How to: Add Items to the Toolbox](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165355(v=vs.100)).  
   
     > [!NOTE]
-    >  The following steps are not applicable to Visual Studio 2005, which uses the **Data Sources** window for design-time data binding. For more information, see [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) and [How to: Display Related Data in a Windows Forms Application](https://msdn.microsoft.com/library/60b1f1ec-6257-42ab-83f0-06d54ed364fd).  
+    >  The following steps are not applicable to Visual Studio 2005, which uses the **Data Sources** window for design-time data binding. For more information, see [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) and [How to: Display Related Data in a Windows Forms Application](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/57tx3hhe(v=vs.120)).  
   
 2.  Drag two or more tables from **Server Explorer** to the form.  
   
@@ -46,8 +46,8 @@ ms.assetid: 19438ba2-f687-4417-a2fb-ab1cd69d4ded
   
     2.  Select the relationship (for example, "Customers.CustOrd") between the master and detail tables from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property. In order to see the relationship, expand the node by clicking on the plus (**+**) sign next to the master table in the drop-down list.  
   
-## See Also  
- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)  
- [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)  
- [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)
+## See also
+- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)
+- [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)
+- [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)

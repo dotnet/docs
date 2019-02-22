@@ -76,16 +76,16 @@ EF Core 2.0 includes the [Owned Entities](https://blogs.msdn.microsoft.com/dotne
 
 #### Additional resources
 
-- **Martin Fowler. Value Object pattern**
+- **Martin Fowler. Value Object pattern** \
   [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
 
-- **Value Object**
+- **Value Object** \
   [*https://deviq.com/value-object/*](https://deviq.com/value-object/)
 
-- **Value Objects in Test-Driven Development**
+- **Value Objects in Test-Driven Development** \
   [*https://leanpub.com/tdd-ebook/read\#leanpub-auto-value-objects*](https://leanpub.com/tdd-ebook/read#leanpub-auto-value-objects)
 
-- **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects)
+- **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects) \
   [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
 ### The Aggregate pattern
@@ -129,14 +129,14 @@ Identifying and working with aggregates requires research and experience. For mo
 
 #### Additional resources
 
-- **Vaughn Vernon. Effective Aggregate Design - Part I: Modeling a Single Aggregate** \
-  [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD\_COMMUNITY\_ESSAY\_AGGREGATES\_PART\_1.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_1.pdf)
+- **Vaughn Vernon. Effective Aggregate Design - Part I: Modeling a Single Aggregate** (from <http://dddcommunity.org/>) \
+  <http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf>
 
-- **Vaughn Vernon. Effective Aggregate Design - Part II: Making Aggregates Work Together** \
-  [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf)
+- **Vaughn Vernon. Effective Aggregate Design - Part II: Making Aggregates Work Together** (from <http://dddcommunity.org/>) \
+  <http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf>
 
-- **Vaughn Vernon. Effective Aggregate Design - Part III: Gaining Insight Through Discovery** \
-  [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf)
+- **Vaughn Vernon. Effective Aggregate Design - Part III: Gaining Insight Through Discovery** (from <http://dddcommunity.org/>) \
+  <http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3.pdf>
 
 - **Sergey Grybniak. DDD Tactical Design Patterns** \
   [*https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part*](https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part)

@@ -14,7 +14,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |Keyword|Link|Description|
 |-------|----|-----------|
 |`abstract`|[Members](members/index.md)<br /><br />[Abstract Classes](abstract-classes.md)|Indicates a method that either has no implementation in the type in which it is declared or that is virtual and has a default implementation.|
-|`and`|[`let` Bindings](functions/let-bindings.md)<br /><br />[Members](members/index.md)<br /><br />[Constraints](generics/constraints.md)|Used in mutually recursive bindings, in property declarations, and with multiple constraints on generic parameters.|
+|`and`|[`let` Bindings](functions/let-bindings.md)<br /><br />[Records](records.md)<br /><br />[Members](members/index.md)<br /><br />[Constraints](generics/constraints.md)|Used in mutually recursive bindings and records, in property declarations, and with multiple constraints on generic parameters.|
 |`as`|[Classes](classes.md)<br /><br />[Pattern Matching](Pattern-Matching.md)|Used to give the current class object an object name. Also used to give a name to a whole pattern within a pattern match.|
 |`assert`|[Assertions](assertions.md)|Used to verify code during debugging.|
 |`base`|[Classes](classes.md)<br /><br />[Inheritance](inheritance.md)|Used as the name of the base class object.|
@@ -67,7 +67,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`return!`|[Computation Expressions](computation-expressions.md)<br /><br />[Asynchronous Workflows](asynchronous-workflows.md)|Used to indicate a computation expression that, when evaluated, provides the result of the containing computation expression.|
 |`select`|[Query Expressions](query-expressions.md)|Used in query expressions to specify what fields or columns to extract. Note that this is a contextual keyword, which means that it is not actually a reserved word and it only acts like a keyword in appropriate context.|
 |`static`|[Members](members/index.md)|Used to indicate a method or property that can be called without an instance of a type, or a value member that is shared among all instances of a type.|
-|`struct`|[Structures](structures.md)<br /><br />[Constraints](generics/constraints.md)|Used to declare a structure type.<br /><br />Also used in generic parameter constraints.<br /><br />Used for OCaml compatibility in module definitions.|
+|`struct`|[Structures](structures.md)<br /><br /> [Tuples](tuples.md)<br/><br/>[Constraints](generics/constraints.md)|Used to declare a structure type.<br /><br/>Used to specify a struct tuple.<br/><br />Also used in generic parameter constraints.<br /><br />Used for OCaml compatibility in module definitions.|
 |`then`|[Conditional Expressions: `if...then...else`](conditional-expressions-if-then-else.md)<br /><br />[Constructors](members/constructors.md)|Used in conditional expressions.<br /><br />Also used to perform side effects after object construction.|
 |`to`|[Loops: `for...to` Expression](loops-for-to-expression.md)|Used in `for` loops to indicate a range.|
 |`true`|[Primitive Types](primitive-types.md)|Used as a Boolean literal.|

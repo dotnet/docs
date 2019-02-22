@@ -25,5 +25,5 @@ ms.author: "ronpet"
   
 ## See also
 
-- <xref:System.Threading.Thread.SpinWait%2A>  
+- <xref:System.Threading.Thread.SpinWait%2A>
 - [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

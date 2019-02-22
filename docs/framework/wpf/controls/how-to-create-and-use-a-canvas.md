@@ -22,12 +22,12 @@ This example shows how to create and use an instance of <xref:System.Windows.Con
  [!code-csharp[CanvasCode#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CanvasCode/CSharp/Canvas_Code.cs#1)]
  [!code-vb[CanvasCode#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CanvasCode/VisualBasic/canvas_vb.vb#1)]  
   
-## See Also  
- <xref:System.Windows.Controls.Canvas>  
- <xref:System.Windows.Controls.TextBlock>  
- <xref:System.Windows.Controls.Canvas.SetTop%2A>  
- <xref:System.Windows.Controls.Canvas.SetLeft%2A>  
- <xref:System.Windows.Controls.Canvas.Top%2A>  
- <xref:System.Windows.Controls.Canvas.Left%2A>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/canvas-how-to-topics.md)
+## See also
+- <xref:System.Windows.Controls.Canvas>
+- <xref:System.Windows.Controls.TextBlock>
+- <xref:System.Windows.Controls.Canvas.SetTop%2A>
+- <xref:System.Windows.Controls.Canvas.SetLeft%2A>
+- <xref:System.Windows.Controls.Canvas.Top%2A>
+- <xref:System.Windows.Controls.Canvas.Left%2A>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/canvas-how-to-topics.md)

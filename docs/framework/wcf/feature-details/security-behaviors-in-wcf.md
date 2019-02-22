@@ -211,6 +211,6 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 </behaviors>  
 ```  
   
-## See Also  
- [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

@@ -1,9 +1,9 @@
 ---
-title: "&lt;bookmarkResumptionQuery&gt; of WCF"
+title: "<bookmarkResumptionQuery> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: 755a34f0-87c9-4a1e-ae4d-0fb8a6fbdc0e
 ---
-# &lt;bookmarkResumptionQuery&gt; of WCF
+# \<bookmarkResumptionQuery> of WCF
 
 Represents a query that is used to track resumption of a bookmark within a workflow instance. The query is necessary for a tracking participant to subscribe to bookmark resumption records.  
   
@@ -19,7 +19,7 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
   
 ## Syntax  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -30,9 +30,9 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
-```
-
+</tracking>
+```  
+  
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.  

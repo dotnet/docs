@@ -25,17 +25,17 @@ Classes and structs have members that represent their data and behavior. A class
 |[Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)|Finalizers are used very rarely in C#. They are methods that are called by the runtime execution engine when the object is about to be removed from memory. They are generally used to make sure that any resources which must be released are handled appropriately.|  
 |[Nested Types](../../../csharp/programming-guide/classes-and-structs/nested-types.md)|Nested types are types declared within another type. Nested types are often used to describe objects that are used only by the types that contain them.|  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
-- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
-- [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)  
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
-- [Events](../../../csharp/programming-guide/events/index.md)  
-- [Nested Types](../../../csharp/programming-guide/classes-and-structs/nested-types.md)  
-- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)
+- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)
+- [Events](../../../csharp/programming-guide/events/index.md)
+- [Nested Types](../../../csharp/programming-guide/classes-and-structs/nested-types.md)
+- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)
 - [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)

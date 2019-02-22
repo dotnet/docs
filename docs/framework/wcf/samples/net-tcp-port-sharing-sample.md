@@ -133,4 +133,4 @@ Press <ENTER> to terminate client.
   
 5.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md). Specific details for running this sample are included previously in the Running the Sample section.  
   
-## See Also
+## See also

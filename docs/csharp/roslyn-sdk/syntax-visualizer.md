@@ -74,7 +74,7 @@ Here is the docking layout to use with the visualizer tool window and the syntax
 
 Another option is to put the syntax graph window on a second monitor, in a dual monitor setup.
 
-# Inspecting semantics
+## Inspecting semantics
 
 The Syntax Visualizer enables rudimentary inspection of symbols and semantic information. Type `double x = 1 + 1;` inside Main() in the C# example. Then, select the expression `1 + 1` in the code editor window. The visualizer highlights the **AddExpression** node in the visualizer. Right click on this **AddExpression** and click on **View Symbol (if any)**. Notice that most of the menu items have the "if any" qualifier. The Syntax Visualizer inspects properties of a Node, including properties that may not be present for all nodes. 
 

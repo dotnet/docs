@@ -1,8 +1,6 @@
 ---
 title: Introduction to Docker
 description: This article provides an introduction and overview to Docker in the context of a .NET Core application.
-author: jralexander
-ms.author: johalex
 ms.date: 11/06/2017
 ms.custom: "mvc, seodec18"
 ---

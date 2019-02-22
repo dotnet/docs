@@ -15,4 +15,4 @@ The following section describes how to extend Windows Workflow Foundation (WF) w
  Indicates how the scenarios for designing custom activities and for rehosting the [!INCLUDE[wfd1](../../../includes/wfd1-md.md)] have been greatly simplified in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)]. Development and deployment are now both easier and more flexible because the new activity designer programming model is built upon Windows Presentation Foundation (WPF).
 
 ## See also
- [Windows Workflow Foundation](../../../docs/framework/windows-workflow-foundation/index.md)
+- [Windows Workflow Foundation](../../../docs/framework/windows-workflow-foundation/index.md)

@@ -94,8 +94,8 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
   
 -   NGEN images tend to be fragile. For example, a patch or change to a dependency typically requires that the assemblies that use it also be re-NGENed. This is particularly true of system assemblies in the .NET Framework Class Library. In contrast, .NET Native allows applications to be served independently of one another.  
   
-## See Also  
- [Metadata and Self-Describing Components](../../../docs/standard/metadata-and-self-describing-components.md)  
- [Inside .NET Native (Channel 9 Video)](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)  
- [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)  
- [.NET Native General Troubleshooting](../../../docs/framework/net-native/net-native-general-troubleshooting.md)
+## See also
+- [Metadata and Self-Describing Components](../../../docs/standard/metadata-and-self-describing-components.md)
+- [Inside .NET Native (Channel 9 Video)](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)
+- [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)
+- [.NET Native General Troubleshooting](../../../docs/framework/net-native/net-native-general-troubleshooting.md)

@@ -62,9 +62,9 @@ The Clipboard can be used to store data, such as text and images. Because the Cl
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
   
-## See also  
- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>  
- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>  
- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject%2A>  
- [How to: Read Object Data from an XML File](../../../programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)  
- [How to: Write Object Data to an XML File](../../../programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)
+## See also
+- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>
+- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>
+- <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject%2A>
+- [How to: Read Object Data from an XML File](../../../programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)
+- [How to: Write Object Data to an XML File](../../../programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)

@@ -34,15 +34,15 @@ By default, applications use the set of .NET Framework assemblies that shipped w
   
 ```xml  
 <assemblyBinding xmlns="..." appliesTo="v1.0.3705">   
-<! — .NET Framework version 1.0 redirects here. -->   
+  <!-- .NET Framework version 1.0 redirects here. -->   
 </assemblyBinding>   
   
 <assemblyBinding xmlns="..." appliesTo="v1.1.4322">   
-    <! — .NET Framework version 1.1 redirects here. -->   
+  <!-- .NET Framework version 1.1 redirects here. -->   
 </assemblyBinding>   
   
 <assemblyBinding xmlns="...">   
-<!-- Redirects meant for all versions of the .NET Framework. -->   
+  <!-- Redirects meant for all versions of the .NET Framework. -->   
 </assemblyBinding>  
 ```  
   
@@ -51,5 +51,5 @@ By default, applications use the set of .NET Framework assemblies that shipped w
   
  You can determine whether a configuration file is being used by determining whether assembly binding redirects are occurring. Use the [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md) to see which assemblies are being loaded. To see all assembly binds, you must set an entry for **ForceLog** in the registry.  
   
-## See Also  
+## See also
 - [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)

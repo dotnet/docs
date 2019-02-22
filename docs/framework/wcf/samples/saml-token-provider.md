@@ -365,7 +365,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
   
 3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+4.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across computers  
   
@@ -373,7 +373,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
   
 2.  Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run in a Visual Studio command prompt window opened with administrator privileges. You must set the `%SERVER_NAME%` variable to the fully-qualified host name of the computer that is used to host the service.  
+3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run in a Developer Command Prompt for Visual Studio window opened with administrator privileges. You must set the `%SERVER_NAME%` variable to the fully-qualified host name of the computer that is used to host the service.  
   
 4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. This step is not necessary when the server certificate is issued by a client trusted issuer.  
   
@@ -387,10 +387,10 @@ This sample demonstrates how to implement a custom client SAML token provider. A
   
 9. On the client computer, launch `Client.exe` from a command prompt window.  
   
-10. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+10. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To clean up after the sample  
   
 1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
-## See Also
+## See also

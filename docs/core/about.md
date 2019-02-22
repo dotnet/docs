@@ -89,7 +89,7 @@ It is perhaps easiest to understand the size and shape of .NET Core by comparing
 
 The major differences between .NET Core and the .NET Framework:
 
-- **App-models** -- .NET Core does not support all the .NET Framework app-models. In particular, it doesn't support ASP.NET Web Forms and MVC. It was announced that [.NET Core 3 will support WPF and Windows Forms](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/net-core-3-and-support-for-windows-desktop-applications/).
+- **App-models** -- .NET Core does not support all the .NET Framework app-models. In particular, it doesn't support ASP.NET Web Forms and ASP.NET MVC, but it supports ASP.NET Core MVC. It was announced that [.NET Core 3 will support WPF and Windows Forms](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/net-core-3-and-support-for-windows-desktop-applications/).
 - **APIs** -- .NET Core contains a large subset of .NET Framework Base Class Library, with a different factoring (assembly names are different; members exposed on types differ in key cases). These differences require changes to port source to .NET Core in some cases (see [microsoft/dotnet-apiport](https://github.com/microsoft/dotnet-apiport)). .NET Core implements the [.NET Standard](../standard/net-standard.md) API specification.
 - **Subsystems** -- .NET Core implements a subset of the subsystems in the .NET Framework, with the goal of a simpler implementation and programming model. For example, Code Access Security (CAS) is not supported, while reflection is supported.
 - **Platforms** -- The .NET Framework supports Windows and Windows Server while .NET Core also supports macOS and Linux.

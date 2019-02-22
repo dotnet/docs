@@ -58,6 +58,6 @@ In the Windows operating systems, a user can change the system-wide font setting
   
  The constructer in this code example contains a call to `InitializeComponent`, which is defined when you create a new Windows Forms project in Visual Studio. Remove this line of code if you are building your application on the command line.  
   
-## See Also  
- <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A>  
- [Automatic Scaling in Windows Forms](../../../docs/framework/winforms/automatic-scaling-in-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A>
+- [Automatic Scaling in Windows Forms](../../../docs/framework/winforms/automatic-scaling-in-windows-forms.md)

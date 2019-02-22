@@ -1,9 +1,9 @@
 ---
-title: "&lt;namedPipeTransport&gt;"
+title: "<namedPipeTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 9fc3f42f-43e2-4ab1-8bc7-3c95a9220df1
 ---
-# &lt;namedPipeTransport&gt;
+# \<namedPipeTransport>
 Defines a transport that causes a channel to transfer messages using named pipes when it is included in a custom binding.  
   
 \<system.serviceModel>  
@@ -14,22 +14,22 @@ Defines a transport that causes a channel to transfer messages using named pipes
   
 ## Syntax  
   
-```xml
-<namedPipeTransport channelInitializationTimeout="TimeSpan"   
-                    connectionBufferSize="Integer"   
-                    hostNameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
-                    manualAddressing="Boolean"   
-                    maxBufferPoolSize="Integer"  
-                    maxBufferSize="Integer"  
-                    maxOutputDelay="TimeSpan"  
-                    maxPendingAccepts="Integer"   
-                    maxPendingConnections="Integer"  
-                    maxReceivedMessageSize="Integer"   
-                    transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">  
-  <connectionPoolSettings groupName="String" 
-                          idleTimeout"TimeSpan"  
-                          maxOutboundConnectionsPerEndpopint="Integer" />  
-</namedPipeTransport>  
+```xml  
+<namedPipeTransport channelInitializationTimeout="TimeSpan"
+                    connectionBufferSize="Integer"
+                    hostNameComparisonMode="StrongWildcard/Exact/WeakWildcard"
+                    manualAddressing="Boolean"
+                    maxBufferPoolSize="Integer"
+                    maxBufferSize="Integer"
+                    maxOutputDelay="TimeSpan"
+                    maxPendingAccepts="Integer"
+                    maxPendingConnections="Integer"
+                    maxReceivedMessageSize="Integer"
+                    transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
+  <connectionPoolSettings groupName="String"
+                          idleTimeout="TimeSpan"
+                          maxOutboundConnectionsPerEndpopint="Integer" />
+</namedPipeTransport>
 ```  
   
 ## Attributes and Elements  
@@ -66,14 +66,14 @@ This transport uses URIs of the form "net.pipe://hostname/path". Other URI compo
   
 The `namedPipeTransport` element is the starting point for creating a custom binding that implements the named pipes transport protocol. This transport is used for on-machine Windows Communication Foundation (WCF)-to-WCF communication.  
   
-## See Also  
-<xref:System.ServiceModel.Configuration.NamedPipeTransportElement>   
-<xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>   
-<xref:System.ServiceModel.Channels.TransportBindingElement>   
-<xref:System.ServiceModel.Channels.CustomBinding>   
-[Transports](../../../../../docs/framework/wcf/feature-details/transports.md)   
-[Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)   
-[Bindings](../../../../../docs/framework/wcf/bindings.md)   
-[Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
-[Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
-[\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.NamedPipeTransportElement>
+- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

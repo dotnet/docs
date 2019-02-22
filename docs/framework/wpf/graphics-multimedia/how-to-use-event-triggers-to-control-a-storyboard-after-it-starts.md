@@ -33,13 +33,13 @@ This example shows how to control a <xref:System.Windows.Media.Animation.Storybo
   
  For additional examples, see the [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).  
   
-## See Also  
- <xref:System.Windows.Media.Animation.ResumeStoryboard>  
- <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>  
- <xref:System.Windows.Media.Animation.SkipStoryboardToFill>  
- <xref:System.Windows.Media.Animation.PauseStoryboard>  
- <xref:System.Windows.Media.Animation.StopStoryboard>  
- <xref:System.Windows.Media.Animation.SeekStoryboard>  
- [Control a Storyboard After It Starts Using Its Interactive Methods](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
+## See also
+- <xref:System.Windows.Media.Animation.ResumeStoryboard>
+- <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>
+- <xref:System.Windows.Media.Animation.SkipStoryboardToFill>
+- <xref:System.Windows.Media.Animation.PauseStoryboard>
+- <xref:System.Windows.Media.Animation.StopStoryboard>
+- <xref:System.Windows.Media.Animation.SeekStoryboard>
+- [Control a Storyboard After It Starts Using Its Interactive Methods](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)

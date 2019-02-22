@@ -34,5 +34,5 @@ class SslStreamSecurityBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>
+## See also
+- <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>

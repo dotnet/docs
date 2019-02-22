@@ -38,5 +38,5 @@ These ETW events log information about the runtime, including the SKU, version n
 |ComObjectGUID|win:GUID|Non-null only if StartupMode=0x08.|  
 |RuntimeDLLPath|win:UnicodeString|Path to the CLR .dll file that was loaded into the process.|  
   
-## See Also  
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+## See also
+- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

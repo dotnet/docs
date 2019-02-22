@@ -1,12 +1,12 @@
 ---
-title: Publish your Hello World application with Visual Studio 2017
-description: Publishing creates the set of files that are needed to run your application.
+title: Publish your .NET Core Hello World application with Visual Studio 2017
+description: Publishing creates the set of files that are needed to run your .NET Core application.
 author: BillWagner
 ms.author: wiwagn
 ms.date: 10/05/2017
 ms.custom: "vs-dotnet, seodec18"
 ---
-# Publish your Hello World application with Visual Studio 2017
+# Publish your .NET Core Hello World application with Visual Studio 2017
 
 In [Build a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio.md) or [Build a Visual Basic Hello World application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md), you built a Hello World console application. In [Debug your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application, and you can deploy the files by copying them to a target machine.
 

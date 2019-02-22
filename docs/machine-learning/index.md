@@ -1,7 +1,7 @@
 ---
 title: ML.NET Content Guide
 description: Learn how to build custom AI solutions and integrate them into your .NET applications using ML.NET.
-ms.date: 11/06/2018
+ms.date: 01/18/2019
 ms.custom: seodec18
 ---
 # ML.NET Content Guide
@@ -23,7 +23,9 @@ To understand basics, see [Basic concepts for model training in ML.NET](basic-co
 
 [Analyze sentiment using a binary classification model](tutorials/sentiment-analysis.md) shows you how to build an app that determines whether sentiment is positive or negative.
 
-[Predict taxi fare using a regression model](tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.
+[Classify GitHub issues using a multiclass classification model](tutorials/github-issue-classification.md) shows you how to build an app that determines the Area label for a GitHub issue.
+
+[Predict prices using a regression model](tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.
 
 [Classify iris flowers by features](tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set. 
 

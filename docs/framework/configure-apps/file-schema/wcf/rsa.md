@@ -1,9 +1,9 @@
 ---
-title: "&lt;rsa&gt;"
+title: "<rsa>"
 ms.date: "03/30/2017"
 ms.assetid: ae1f2267-e40d-42ff-8abf-06ab7067bdb9
 ---
-# &lt;rsa&gt;
+# \<rsa>
 A secure WCF client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
   
  \<identity>  
@@ -12,7 +12,7 @@ A secure WCF client that connects to an endpoint with this identity verifies tha
 ## Syntax  
   
 ```xml  
-<rsa value = "String" />  
+<rsa value="String" />
 ```  
   
 ## Attributes and Elements  
@@ -42,15 +42,15 @@ A secure WCF client that connects to an endpoint with this identity verifies tha
  The following configuration code specifies the public key value of an X.509 certificate that is used to authenticate a server.  
   
 ```xml  
-<identity>  
-  <rsa value = "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>  
-</identity>  
+<identity>
+  <rsa value="0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+</identity>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.IdentityElement>  
- <xref:System.ServiceModel.EndpointAddress>  
- <xref:System.ServiceModel.EndpointAddress.Identity%2A>  
- <xref:System.ServiceModel.RsaEndpointIdentity>  
- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)
+## See also
+- <xref:System.ServiceModel.Configuration.IdentityElement>
+- <xref:System.ServiceModel.EndpointAddress>
+- <xref:System.ServiceModel.EndpointAddress.Identity%2A>
+- <xref:System.ServiceModel.RsaEndpointIdentity>
+- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)

@@ -1,5 +1,5 @@
 ---
-title: Testing a class library with .NET Core in Visual Studio 2017
+title: Test a .NET Standard class library with .NET Core in Visual Studio 2017
 description: Create a unit test project for your .NET Core class library. Verify that your .NET Core class library works correctly with unit tests.
 author: BillWagner
 ms.author: wiwagn
@@ -9,9 +9,9 @@ dev_langs:
   - "vb"
 ms.custom: "vs-dotnet, seodoc18"
 ---
-# Testing a class library with .NET Core in Visual Studio 2017
+# Test a .NET Standard library with .NET Core in Visual Studio 2017
 
-In [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio.md) or [Building a class library with Visual Basic and .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md), you created a simple class library that adds an extension method to the <xref:System.String> class. Now, you'll create a unit test to make sure that it works as expected. You'll add your unit test project to the solution you created in the previous topic.
+In [Build a .NET Standard library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio.md) or [Build a .NET Standard library with Visual Basic and .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md), you created a simple class library that adds an extension method to the <xref:System.String> class. Now, you'll create a unit test to make sure that it works as expected. You'll add your unit test project to the solution you created in the previous article.
 
 ## Creating a unit test project
 

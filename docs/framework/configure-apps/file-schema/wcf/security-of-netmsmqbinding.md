@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;netMsmqBinding&gt;"
+title: "<security> of <netMsmqBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 001d11a9-7439-498c-b09d-fca20eaf8cd3
 ---
-# &lt;security&gt; of &lt;netMsmqBinding&gt;
+# \<security> of \<netMsmqBinding>
 Defines the security settings for a MSMQ binding. It specifies whether transport or SOAP security is enabled and, if so, what authentication mode and protection levels are in use.  
   
  \<system.ServiceModel>  
@@ -15,15 +15,14 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
 ## Syntax  
   
 ```xml  
-<security mode="None/Transport/Message/Both">  
-   <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
-      msmqEncryptionAlgorithm="RC4Stream/AES"  
-      msmqProtectionLevel="None/Sign/EncryptAndSign"  
-      msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-      <message  
-      algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-      clientCredentialType="None/Windows/UserName/Certificate/CardSpace"/>  
-</security>  
+<security mode="None/Transport/Message/Both">
+  <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"
+             msmqEncryptionAlgorithm="RC4Stream/AES"
+             msmqProtectionLevel="None/Sign/EncryptAndSign"
+             msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />
+    <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+             clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />
+</security>
 ```  
   
 ## Attributes and Elements  
@@ -48,14 +47,14 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
 |-------------|-----------------|  
 |binding|The binding element of the [\<netMsmqBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md)|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>  
- <xref:System.ServiceModel.NetMsmqBinding.Security%2A>  
- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.Security%2A>  
- <xref:System.ServiceModel.NetMsmqSecurity>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+## See also
+- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>
+- <xref:System.ServiceModel.NetMsmqBinding.Security%2A>
+- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.Security%2A>
+- <xref:System.ServiceModel.NetMsmqSecurity>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

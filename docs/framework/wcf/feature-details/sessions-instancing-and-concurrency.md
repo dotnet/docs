@@ -101,10 +101,10 @@ public class CalculatorService : ICalculatorConcurrency
 |PerSession|-   Behavior with sessionful channel: A session and <xref:System.ServiceModel.InstanceContext> for each channel.<br />-   Behavior with sessionless channel: An exception is thrown.|-   Behavior with sessionful channel: A session and <xref:System.ServiceModel.InstanceContext> for each channel.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext> for each call.|-   Behavior with sessionful channel: An exception is thrown.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext> for each call.|  
 |Single|-   Behavior with sessionful channel: A session and one <xref:System.ServiceModel.InstanceContext> for all calls.<br />-   Behavior with sessionless channel: An exception is thrown.|-   Behavior with sessionful channel: A session and <xref:System.ServiceModel.InstanceContext> for the created or user-specified singleton.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext> for the created or user-specified singleton.|-   Behavior with sessionful channel: An exception is thrown.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext> for each created singleton or for the user-specified singleton.|  
   
-## See Also  
- [Using Sessions](../../../../docs/framework/wcf/using-sessions.md)  
- [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)  
- [How to: Control Service Instancing](../../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)  
- [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md)  
- [Instancing](../../../../docs/framework/wcf/samples/instancing.md)  
- [Session](../../../../docs/framework/wcf/samples/session.md)
+## See also
+- [Using Sessions](../../../../docs/framework/wcf/using-sessions.md)
+- [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)
+- [How to: Control Service Instancing](../../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)
+- [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md)
+- [Instancing](../../../../docs/framework/wcf/samples/instancing.md)
+- [Session](../../../../docs/framework/wcf/samples/session.md)

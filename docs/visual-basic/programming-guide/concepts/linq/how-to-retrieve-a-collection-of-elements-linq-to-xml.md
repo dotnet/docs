@@ -31,5 +31,5 @@ Name: DeliveryNotes
 Name: Items  
 ```  
   
-## See Also  
- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+## See also
+- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)

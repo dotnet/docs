@@ -92,10 +92,10 @@ id = 3
 id = 6  
 ```  
   
-## See Also
+## See also
 
-- <xref:System.Xml.Linq.XElement.Parse%2A>  
-- <xref:System.Xml.Linq.XContainer.Descendants%2A>  
-- <xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A>  
-- <xref:System.Linq.Enumerable.FirstOrDefault%2A>  
+- <xref:System.Xml.Linq.XElement.Parse%2A>
+- <xref:System.Xml.Linq.XContainer.Descendants%2A>
+- <xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A>
+- <xref:System.Linq.Enumerable.FirstOrDefault%2A>
 - [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

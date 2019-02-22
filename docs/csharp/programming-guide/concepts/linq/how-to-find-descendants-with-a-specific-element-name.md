@@ -85,7 +85,7 @@ Console.WriteLine(str);
 Some text that is broken up into multiple segments.  
 ```  
   
-## See Also
+## See also
 
-- <xref:System.Xml.Linq.XContainer.Descendants%2A>  
+- <xref:System.Xml.Linq.XContainer.Descendants%2A>
 - [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

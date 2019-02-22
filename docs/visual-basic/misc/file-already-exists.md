@@ -12,5 +12,5 @@ This error occurs as a result of either naming a new file with the name of an ex
   
 -   Check the name and either change it to one that does not conflict, or delete the pre-existing file or project if it is no longer needed.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

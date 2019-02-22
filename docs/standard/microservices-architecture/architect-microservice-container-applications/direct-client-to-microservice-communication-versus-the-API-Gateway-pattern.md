@@ -3,7 +3,7 @@ title: The API gateway pattern versus the direct client-to-microservice communic
 description: Understand the differences and the uses of the API gateway pattern and the direct client-to-microservice communication.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/20/2018
+ms.date: 01/07/2019
 ---
 # The API gateway pattern versus the Direct client-to-microservice communication
 
@@ -19,7 +19,7 @@ A possible approach is to use a direct client-to-microservice communication arch
 
 In this approach, each microservice has a public endpoint, sometimes with a different TCP port for each microservice. An example of a URL for a particular service could be the following URL in Azure:
 
-<http://eshoponcontainers.westus.cloudapp.azure.com:88/>
+`http://eshoponcontainers.westus.cloudapp.azure.com:88/`
 
 In a production environment based on a cluster, that URL would map to the load balancer used in the cluster, which in turn distributes the requests across the microservices. In production environments, you could have an Application Delivery Controller (ADC) like [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction) between your microservices and the Internet. This acts as a transparent tier that not only performs load balancing, but secures your services by offering SSL termination. This improves the load of your hosts by offloading CPU-intensive SSL termination and other routing duties to the Azure Application Gateway. In any case, a load balancer and ADC are transparent from a logical application architecture point of view.
 
@@ -35,7 +35,7 @@ Interacting with multiple microservices to build a single UI screen increases th
 
 Implementing security and cross-cutting concerns like security and authorization on every microservice can require significant development effort. A possible approach is to have those services within the Docker host or internal cluster to restrict direct access to them from the outside, and to implement those cross-cutting concerns in a centralized place, like an API Gateway.
 
-- How can client apps communicate with services that use non-Internet-friendly protocols?*
+- *How can client apps communicate with services that use non-Internet-friendly protocols?*
 
 Protocols used on the server side (like AMQP or binary protocols) are usually not supported in client apps. Therefore, requests must be performed through protocols like HTTP/HTTPS and translated to the other protocols afterwards. A *man-in-the-middle* approach can help in this situation.
 
@@ -128,7 +128,7 @@ There can be many more cross-cutting concerns offered by the API Gateways produc
 
 **Figure 4-14**. Using Azure API Management for your API Gateway
 
-In this case, when using a product like Azure API Management, the fact that you might have a single API Gateway is not so risky because these kinds of API Gateways are "thinner", meaning that you don't implement custom C# code that could evolve towards a monolithic component. These products act like a reverse proxy for ingress communication, where you can also filter the APIs from the internal microservices and apply authorization to the published APIs in this single tier.
+In this case, when using a product like Azure API Management, the fact that you might have a single API Gateway is not so risky because these kinds of API Gateways are "thinner", meaning that you don't implement custom C# code that could evolve towards a monolithic component. 
 
 The API Gateway products usually act like a reverse proxy for ingress communication, where you can also filter the APIs from the internal microservices plus apply authorization to the published APIs in this single tier.
 

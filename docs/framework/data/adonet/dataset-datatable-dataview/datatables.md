@@ -49,5 +49,5 @@ A <xref:System.Data.DataSet> is made up of a collection of tables, relationships
  [Class Library Overview](../../../../../docs/standard/class-library-overview.md)  
  Provides an overview of the .NET Framework class library, including the **System** namespace as well as its second-level namespace, **System.Data**.  
   
-## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

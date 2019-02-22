@@ -72,13 +72,13 @@ ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
   
 ## See also
 
-- [Collections](../../../../visual-basic/programming-guide/concepts/collections.md)  
-- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
-- [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
-- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
-- [Auto-Implemented Properties](../../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
-- [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)  
-- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
-- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+- [Collections](../../../../visual-basic/programming-guide/concepts/collections.md)
+- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)
+- [Auto-Implemented Properties](../../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
+- [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [How to: Create a List of Items](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)

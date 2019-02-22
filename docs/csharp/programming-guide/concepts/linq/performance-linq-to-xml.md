@@ -19,6 +19,6 @@ This section provides information about performance in [!INCLUDE[sqltecxlinq](~/
  [Statically Compiled Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/statically-compiled-queries-linq-to-xml.md)  
  Provides performance information about statically compiled queries, in contrast to the parsing and processing that must be done by an XPath expression evaluator.  
   
-## See Also
+## See also
 
 - [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

@@ -67,17 +67,17 @@ At any given time at medium and large companies there may be multiple printers t
  [!code-csharp[PrinterStatusSurvey#UsingStartAndUntilTimes](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PrinterStatusSurvey/CSharp/Program.cs#usingstartanduntiltimes)]
  [!code-vb[PrinterStatusSurvey#UsingStartAndUntilTimes](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PrinterStatusSurvey/visualbasic/program.vb#usingstartanduntiltimes)]  
   
-## See Also  
- <xref:System.Printing.PrintQueue.StartTimeOfDay%2A>  
- <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A>  
- <xref:System.DateTime>  
- <xref:System.Printing.PrintQueueStatus>  
- <xref:System.FlagsAttribute>  
- <xref:System.Printing.PrintServer.GetPrintQueues%2A>  
- <xref:System.Printing.PrintServer>  
- <xref:System.Printing.LocalPrintServer>  
- <xref:System.Printing.EnumeratedPrintQueueTypes>  
- <xref:System.Printing.PrintQueue>  
- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+## See also
+- <xref:System.Printing.PrintQueue.StartTimeOfDay%2A>
+- <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A>
+- <xref:System.DateTime>
+- <xref:System.Printing.PrintQueueStatus>
+- <xref:System.FlagsAttribute>
+- <xref:System.Printing.PrintServer.GetPrintQueues%2A>
+- <xref:System.Printing.PrintServer>
+- <xref:System.Printing.LocalPrintServer>
+- <xref:System.Printing.EnumeratedPrintQueueTypes>
+- <xref:System.Printing.PrintQueue>
+- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

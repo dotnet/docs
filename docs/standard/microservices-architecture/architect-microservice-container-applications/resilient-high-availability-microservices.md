@@ -23,7 +23,7 @@ It may seem obvious, and it's often overlooked, but a microservice must report i
 
 Health is different from diagnostics. Health is about the microservice reporting its current state to take appropriate actions. A good example is working with upgrade and deployment mechanisms to maintain availability. Although a service might currently be unhealthy due to a process crash or machine reboot, the service might still be operational. The last thing you need is to make this worse by performing an upgrade. The best approach is to do an investigation first or allow time for the microservice to recover. Health events from a microservice help us make informed decisions and, in effect, help create self-healing services.
 
-In the [Implementing health checks in ASP.NET Core services](../implement-resilient-applications/monitor-app-health.md#implementing-health-checks-in-aspnet-core-services) section of this guide, we explain how to use a new ASP.NET HealthChecks library in your microservices so they can report their state to a monitoring service to take appropriate actions.
+In the [Implementing health checks in ASP.NET Core services](../implement-resilient-applications/monitor-app-health.md#implement-health-checks-in-aspnet-core-services) section of this guide, we explain how to use a new ASP.NET HealthChecks library in your microservices so they can report their state to a monitoring service to take appropriate actions.
 
 You also have the option of using an excellent open-source library called Beat Pulse, available on [GitHub](https://github.com/Xabaril/BeatPulse) and as a [NuGet package](https://www.nuget.org/packages/BeatPulse/). This library also does health checks, with a twist, it handles two types of checks:
 

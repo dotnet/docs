@@ -40,7 +40,7 @@ You have several options when grouping code modules and resources into assemblie
 
 Special considerations must be made when making common language runtime assemblies available to unmanaged COM applications. For more information about working with unmanaged code, see [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md).
 
-## See Also
+## See also
 
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md)

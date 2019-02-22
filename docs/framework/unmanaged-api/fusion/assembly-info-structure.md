@@ -49,6 +49,6 @@ typedef struct _ASSEMBLY_INFO {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)  
- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)
+## See also
+- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
+- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)

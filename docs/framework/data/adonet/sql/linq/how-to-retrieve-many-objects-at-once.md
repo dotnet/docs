@@ -15,5 +15,5 @@ You can retrieve many objects in one query by using <xref:System.Data.Linq.DataL
  [!code-csharp[DLinqQueryConcepts#9](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#9)]
  [!code-vb[DLinqQueryConcepts#9](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#9)]  
   
-## See Also  
- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+## See also
+- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

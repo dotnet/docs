@@ -63,10 +63,10 @@ foreach (XElement el in address)
 </aw:Address>  
 ```  
   
-## See Also
+## See also
 
-- <xref:System.Xml.Linq.XElement.Attribute%2A>  
-- <xref:System.Xml.Linq.XContainer.Elements%2A>  
-- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+- <xref:System.Xml.Linq.XElement.Attribute%2A>
+- <xref:System.Xml.Linq.XContainer.Elements%2A>
+- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)

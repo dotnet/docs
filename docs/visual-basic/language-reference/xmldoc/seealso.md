@@ -1,12 +1,12 @@
 ---
-title: "&lt;seealso&gt; (Visual Basic)"
+title: "<seealso> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<seealso> XML tag"
   - "seealso XML tag"
 ms.assetid: 36050c95-1af2-4284-b9b6-1a70691ed978
 ---
-# &lt;seealso&gt; (Visual Basic)
+# \<seealso> (Visual Basic)
 Specifies a link that appears in the See Also section.  
   
 ## Syntax  
@@ -29,5 +29,5 @@ Specifies a link that appears in the See Also section.
   
  [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/seealso_1.vb)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

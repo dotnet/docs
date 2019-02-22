@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;expression&gt;&#39; cannot be used as a type constraint"
+title: "'<expression>' cannot be used as a type constraint"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc32061"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC32061"
 ms.assetid: b17821b7-fa14-4397-a211-6e2a14079f09
 ---
-# &#39;&lt;expression&gt;&#39; cannot be used as a type constraint
+# '\<expression>' cannot be used as a type constraint
 A constraint list includes an expression that does not represent a valid constraint on a type parameter.  
   
  A constraint list imposes requirements on the type argument passed to the type parameter. You can specify the following requirements in any combination:  
@@ -37,8 +37,8 @@ A constraint list includes an expression that does not represent a valid constra
   
 -   If the expression refers to an interface or class, verify that the compiler has access to that interface or class. You might need to qualify its name, and you might need to add a reference to your project. For more information, see "References to Projects" in [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md).  
   
-## See Also  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Value Types and Reference Types](../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
- 
+## See also
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Value Types and Reference Types](../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+

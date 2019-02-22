@@ -46,5 +46,5 @@ To serialize an object, first create the object that is to be serialized and set
   
 ## See also
 
-- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
 - [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

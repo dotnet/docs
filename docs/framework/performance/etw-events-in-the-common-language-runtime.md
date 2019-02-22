@@ -29,5 +29,5 @@ The common language runtime (CLR) provides useful event tracing for Windows (ETW
  [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)  
  Provides detailed information about CLR ETW events, their keywords, levels, and event data.  
   
-## See Also  
- [ETW Events in the .NET Framework](../../../docs/framework/performance/etw-events.md)
+## See also
+- [ETW Events in the .NET Framework](../../../docs/framework/performance/etw-events.md)

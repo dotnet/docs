@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;netTcpBinding&gt;"
+title: "<security> of <netTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
 ---
-# &lt;security&gt; of &lt;netTcpBinding&gt;
+# \<security> of \<netTcpBinding>
 Defines the security settings for a binding.  
   
  \<system.ServiceModel>  
@@ -15,14 +15,12 @@ Defines the security settings for a binding.
 ## Syntax  
   
 ```xml  
-<security mode="Message/None/Transport/TransportWithCredential">  
-   <transport  
-      clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-           protectionLevel="None/Sign/EncryptAndSign" />  
-   <message  
-      algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-      clientCredentialType="Certificate/IssuedToken/None/UserName/Windows" />  
-</security>  
+<security mode="Message/None/Transport/TransportWithCredential">
+  <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+             protectionLevel="None/Sign/EncryptAndSign" />
+  <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+           clientCredentialType="Certificate/IssuedToken/None/UserName/Windows" />
+</security>
 ```  
   
 ## Attributes and Elements  
@@ -63,13 +61,13 @@ Defines the security settings for a binding.
   
  This configuration element provides the security specifications for `netTcpBinding`. This is a secure, reliable, optimized binding suitable for cross-machine communication. By default it generates a runtime communication stack supporting TCP for message delivery and Windows Security for message security and authentication, WS-ReliableMessaging for reliability, and binary message encoding.  
   
-## See Also  
- <xref:System.ServiceModel.NetTcpSecurity>  
- <xref:System.ServiceModel.NetTcpBinding.Security%2A>  
- <xref:System.ServiceModel.Configuration.NetTcpBindingElement.Security%2A>  
- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.NetTcpSecurity>
+- <xref:System.ServiceModel.NetTcpBinding.Security%2A>
+- <xref:System.ServiceModel.Configuration.NetTcpBindingElement.Security%2A>
+- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

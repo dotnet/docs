@@ -34,5 +34,5 @@ class MustUnderstandBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.MustUnderstandBehavior>
+## See also
+- <xref:System.ServiceModel.Description.MustUnderstandBehavior>

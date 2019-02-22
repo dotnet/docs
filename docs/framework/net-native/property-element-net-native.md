@@ -1,11 +1,11 @@
 ---
-title: "&lt;Property&gt; Element (.NET Native)"
+title: "<Property> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: ad4ba56d-3bcb-4c10-ba90-1cc66e2175a1
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;Property&gt; Element (.NET Native)
+# \<Property> Element (.NET Native)
 Applies runtime reflection policy to a property.  
   
 ## Syntax  
@@ -93,7 +93,7 @@ Applies runtime reflection policy to a property.
     </Directives>  
     ```  
   
-## See Also  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## See also
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

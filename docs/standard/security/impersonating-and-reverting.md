@@ -23,31 +23,31 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
 2.  Create a new instance of the **WindowsIdentity** class, passing the token. The following code demonstrates this call, where `hToken` represents a Windows token.  
   
     ```csharp  
-    WindowsIdentity ImpersonatedIdentity = new WindowsIdentity(hToken);  
+    WindowsIdentity impersonatedIdentity = new WindowsIdentity(hToken);  
     ```  
   
     ```vb  
-    Dim ImpersonatedIdentity As New WindowsIdentity(hToken)  
+    Dim impersonatedIdentity As New WindowsIdentity(hToken)  
     ```  
   
 3.  Begin impersonation by creating a new instance of the <xref:System.Security.Principal.WindowsImpersonationContext> class and initializing it with the <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A?displayProperty=nameWithType> method of the initialized class, as shown in the following code.  
   
     ```csharp  
-    WindowsImpersonationContext MyImpersonation = ImpersonatedIdentity.Impersonate();  
+    WindowsImpersonationContext myImpersonation = impersonatedIdentity.Impersonate();  
     ```  
   
     ```vb  
-    WindowsImpersonationContext MyImpersonation = ImpersonatedIdentity.Impersonate()  
+    WindowsImpersonationContext myImpersonation = impersonatedIdentity.Impersonate()  
     ```  
   
 4.  When you no longer need to impersonate, call the <xref:System.Security.Principal.WindowsImpersonationContext.Undo%2A?displayProperty=nameWithType> method to revert the impersonation, as shown in the following code.  
   
     ```csharp  
-    MyImpersonation.Undo();  
+    myImpersonation.Undo();  
     ```  
   
     ```vb  
-    MyImpersonation.Undo()  
+    myImpersonation.Undo()  
     ```  
   
  If trusted code has already attached a <xref:System.Security.Principal.WindowsPrincipal> object to the thread, you can call the instance method **Impersonate**, which does not take an account token. Note that this is only useful when the **WindowsPrincipal** object on the thread represents a user other than the one under which the process is currently executing. For example, you might encounter this situation using ASP.NET with Windows authentication turned on and impersonation turned off. In this case, the process is running under an account configured in Internet Information Services (IIS) while the current principal represents the Windows user that is accessing the page.  
@@ -56,7 +56,7 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
   
 ## See also
 
-- <xref:System.Security.Principal.WindowsIdentity>  
-- <xref:System.Security.Principal.WindowsImpersonationContext>  
-- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)  
+- <xref:System.Security.Principal.WindowsIdentity>
+- <xref:System.Security.Principal.WindowsImpersonationContext>
+- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)
 - [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)

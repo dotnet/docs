@@ -43,6 +43,6 @@ wsatConfig [Options]
 |-show|Displays the current WS-AtomicTransaction protocol settings.|  
 |-virtualServer:\<virtualServer>|Specifies the DTC resource cluster name.|  
   
-## See Also  
- [Using WS-AtomicTransaction](../../../docs/framework/wcf/feature-details/using-ws-atomictransaction.md)  
- [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)
+## See also
+- [Using WS-AtomicTransaction](../../../docs/framework/wcf/feature-details/using-ws-atomictransaction.md)
+- [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)

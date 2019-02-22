@@ -137,8 +137,8 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 </configuration>  
 ```  
   
-## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

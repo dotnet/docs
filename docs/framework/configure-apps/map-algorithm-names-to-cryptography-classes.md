@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "cryptographic algorithms"
   - "names [.NET Framework], algorithm mapping"
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Mapping Algorithm Names to Cryptography Classes
 There are four ways a developer can create a cryptography object using the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]:  
@@ -63,6 +61,6 @@ There are four ways a developer can create a cryptography object using the [!INC
   
  For a list of default names and the classes they map to, see <xref:System.Security.Cryptography.CryptoConfig>.  
   
-## See Also  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
- [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+## See also
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)

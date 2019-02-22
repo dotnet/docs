@@ -3,7 +3,7 @@ title: Choose between traditional web apps and single page apps
 description: Learn how to choose between traditional web apps and single page applications (SPAs) when building web applications.
 author: ardalis
 ms.author: wiwagn
-ms.date: 6/28/2018
+ms.date: 01/30/2019
 ---
 
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)
@@ -33,9 +33,13 @@ Additionally, SPA frameworks require greater architectural and security expertis
 
 Improvements in user experience made possible by SPA model must be weighed against these considerations.
 
+## Razor Components
+
+ASP.NET Core 3.0 introduces a new model for building rich, interactive, and composable UI called Razor Components. Razor Components allow developers to build UI with Razor on the server and for this code to be delivered to the browser and executed client-side using a JavaScript library called WebAssembly. ASP.NET Core 3.0 is still under development, but you should expect to see more on this technology in the 3.0 update to this e-book. For more information about Razor Components (code named Blazor), see [Get started with Blazor](https://blazor.net/docs/get-started.html).
+
 ## When to choose traditional web apps
 
-The following is a more detailed explanation of the previously-stated reasons for picking traditional web applications.
+The following is a more detailed explanation of the previously stated reasons for picking traditional web applications.
 
 **Your application has simple, possibly read-only, client-side requirements**
 

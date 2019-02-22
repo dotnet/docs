@@ -83,11 +83,11 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
     }  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.NumericUpDown>  
- <xref:System.Windows.Forms.NumericUpDown.Value%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.NumericUpDown.Increment%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.NumericUpDown.UpButton%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.NumericUpDown.DownButton%2A?displayProperty=nameWithType>  
- [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md)  
- [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.NumericUpDown>
+- <xref:System.Windows.Forms.NumericUpDown.Value%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.NumericUpDown.Increment%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.NumericUpDown.UpButton%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.NumericUpDown.DownButton%2A?displayProperty=nameWithType>
+- [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md)
+- [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md)

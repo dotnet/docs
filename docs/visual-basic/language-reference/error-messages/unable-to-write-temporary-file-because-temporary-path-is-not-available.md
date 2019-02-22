@@ -19,5 +19,5 @@ Visual Basic could not determine the path where temporary files are stored.
   
 2.  If the problem persists, reinstall Visual Studio.  
   
-## See Also  
- [Talk to Us](/visualstudio/ide/talk-to-us)
+## See also
+- [Talk to Us](/visualstudio/ide/talk-to-us)

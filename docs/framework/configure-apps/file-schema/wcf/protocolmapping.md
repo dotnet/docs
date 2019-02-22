@@ -1,9 +1,9 @@
 ---
-title: "&lt;protocolMapping&gt;"
+title: "<protocolMapping>"
 ms.date: "03/30/2017"
 ms.assetid: 5076644b-1f33-4f26-9488-87de9fcda04c
 ---
-# &lt;protocolMapping&gt;
+# \<protocolMapping>
 Represents a configuration section for defining a set of default protocol mapping between transport protocol schemes (e.g., http, net.tcp, net.pipe, etc.) and WCF bindings. When creating default endpoints at runtime, Windows Communication Foundation (WCF) looks at the configured mappings and decides on which binding to use for a particular based address.  
   
 [**\<system.serviceModel>**](system-servicemodel.md)  
@@ -11,12 +11,14 @@ Represents a configuration section for defining a set of default protocol mappin
   
 ## Syntax  
   
-```xml
+```xml  
 <protocolMapping>
-   <add binding="String" bindingConfiguration="String" scheme="http/net.msmq/net.pipe/net.tcp"/>
-</protocolMapping>  
-```
-
+  <add binding="String"
+       bindingConfiguration="String"
+       scheme="http/net.msmq/net.pipe/net.tcp" />
+</protocolMapping>
+```  
+  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -39,14 +41,18 @@ Represents a configuration section for defining a set of default protocol mappin
  The following configuration example shows the default protocol mapping in the machine.config file. You can override this default mapping at the machine level by modifying the machine.config file. Or if you would only like to override it within the scope of an application, you can override this section within your application configuration file and change the mapping for individual protocol schemes.  
   
 ```xml  
-<protocolMapping>  
-        <add scheme="http" binding="basicHttpBinding"/>  
-        <add scheme="net.tcp" binding="netTcpBinding"/>  
-        <add scheme="net.pipe" binding="netNamedPipeBinding"/>  
-        <add scheme="net.msmq" binding="netMsmqBinding"/>  
-</protocolMapping>  
+<protocolMapping>
+  <add scheme="http"
+       binding="basicHttpBinding" />
+  <add scheme="net.tcp"
+       binding="netTcpBinding" />
+  <add scheme="net.pipe"
+       binding="netNamedPipeBinding" />
+  <add scheme="net.msmq"
+       binding="netMsmqBinding" />
+</protocolMapping>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=nameWithType>       
- <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=nameWithType>    
+## See also
+- <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=nameWithType>

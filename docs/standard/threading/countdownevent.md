@@ -43,4 +43,4 @@ ms.author: "ronpet"
   
 ## See also
 
-- [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)
+- <xref:System.Threading.Semaphore?displayProperty=nameWithType>

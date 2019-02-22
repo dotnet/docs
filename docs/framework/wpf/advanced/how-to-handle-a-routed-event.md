@@ -28,9 +28,9 @@ This example shows how bubbling events work and how to write a handler that can 
  [!code-csharp[RoutedEventHandle#Handler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventHandle/CSharp/default.xaml.cs#handler)]
  [!code-vb[RoutedEventHandle#Handler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventHandle/VisualBasic/MainWindow.xaml.vb#handler)]  
   
-## See Also  
- <xref:System.Windows.RoutedEvent>  
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)  
- [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)
+## See also
+- <xref:System.Windows.RoutedEvent>
+- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)
+- [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)

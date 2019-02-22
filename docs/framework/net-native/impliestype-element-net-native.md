@@ -1,11 +1,11 @@
 ---
-title: "&lt;ImpliesType&gt; Element (.NET Native)"
+title: "<ImpliesType> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 3abd2071-0f28-40ba-b9a0-d52bd94cd2f6
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;ImpliesType&gt; Element (.NET Native)
+# \<ImpliesType> Element (.NET Native)
 Applies policy to a type, if that policy has been applied to the containing type or method.  
   
 ## Syntax  
@@ -93,7 +93,7 @@ Applies policy to a type, if that policy has been applied to the containing type
 </Type>  
 ```  
   
- The `<ImpliesType>` element can also appear within a `<Method>` element, because in some cases instantiating a generic method implies reflecting on a type instantiation. For example, imagine a generic method `IEnumerable<T> MakeEnumerable<T>(string` `spelling``, T` `defaultValue``)` that a given library will access dynamically along with the associated <xref:System.Collections.Generic.List%601> and <xref:System.Array> types. This can be expressed as:  
+ The `<ImpliesType>` element can also appear within a `<Method>` element, because in some cases instantiating a generic method implies reflecting on a type instantiation. For example, imagine a generic method `IEnumerable<T> MakeEnumerable<T>(string spelling, T defaultValue)` that a given library will access dynamically along with the associated <xref:System.Collections.Generic.List%601> and <xref:System.Array> types. This can be expressed as:  
   
 ```xml  
 <Type Name="MyType">  
@@ -104,7 +104,7 @@ Applies policy to a type, if that policy has been applied to the containing type
 </Type>  
 ```  
   
-## See Also  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## See also
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

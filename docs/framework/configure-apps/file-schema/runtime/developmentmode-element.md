@@ -1,5 +1,5 @@
 ---
-title: "&lt;developmentMode&gt; Element"
+title: "<developmentMode> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/developmentMode"
@@ -12,7 +12,7 @@ ms.assetid: 60e79a8c-415a-497d-be29-b9d0fd9bdee3
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;developmentMode&gt; Element
+# \<developmentMode> Element
 Specifies whether the runtime searches for assemblies in directories specified by the DEVPATH environment variable.  
   
  \<configuration>  
@@ -65,7 +65,7 @@ Specifies whether the runtime searches for assemblies in directories specified b
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [How to: Locate Assemblies by Using DEVPATH](../../../../../docs/framework/configure-apps/how-to-locate-assemblies-by-using-devpath.md)

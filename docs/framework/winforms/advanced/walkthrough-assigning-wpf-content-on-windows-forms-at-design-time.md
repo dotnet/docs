@@ -45,7 +45,7 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
   
 1.  Add a new WPF <xref:System.Windows.Controls.UserControl> project to the solution. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
   
-2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://msdn.microsoft.com/library/54cb70b6-b35b-46e4-a0cc-65189399c474).  
+2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100)).  
   
 3.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
@@ -90,9 +90,9 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
   
 9. The `elementHost2` control now hosts an instance of the `UserControl1` type.  
   
-## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+## See also
+- <xref:System.Windows.Forms.Integration.ElementHost>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
+- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
+- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

@@ -40,5 +40,5 @@ WHERE h.ShipDate IS Null
 ## Passing Null Collections to Aggregate Functions  
  In [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)], when you pass a collection that supports `IQueryable` to an aggregate function, aggregate operations are performed at the database. There might be differences in the results of a query that was performed in-memory and a query that was performed at the database. With an in-memory query, if there are no matches, the query returns zero. At the database, the same query returns `null`. If a `null` value is passed to a LINQ aggregate function, an exception will be thrown. To accept possible `null` values, cast the types and the properties of the types that receive query results to nullable types.  
   
-## See Also  
- [Expressions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)
+## See also
+- [Expressions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)

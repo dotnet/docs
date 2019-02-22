@@ -1,7 +1,7 @@
 ---
 title: Get Started with F# in Visual Studio Code
 description: Learn how to use F# with Visual Studio Code and the Ionide plugin suite.
-ms.date: 05/28/2018
+ms.date: 12/23/2018
 ---
 # Get Started with F# in Visual Studio Code
 
@@ -144,8 +144,7 @@ Next, open the `Script.fsx` file again, and delete the entire `toPigLatin` funct
 #load "ClassLibraryDemo.fs"
 open ClassLibraryDemo
 ```
-
-The first line is needed for FSI scripting to load `ClassLibraryDemo.fs`. The second line is a convenience: omitting it is optional, but you will need to type `open ClassLibraryDemo` in an FSI window if you wish to bring the `ToPigLatin` module into scope.
+Select both lines of text and press Alt+Enter to execute these lines in FSI. These will load the contents of the Pig Latin library into the FSI process and `open` the `ClassLibraryDemo` namespace so that you have access to the functionality.
 
 Next, in the FSI window, call the function with the `PigLatin` module that you defined earlier:
 

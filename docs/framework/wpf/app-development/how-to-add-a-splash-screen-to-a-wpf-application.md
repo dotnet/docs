@@ -38,7 +38,7 @@ This topic shows how to add a startup window, or *splash screen*, to a Windows P
 
 In **Solution Explorer**, delete the splash screen image.
 
-## See Also
+## See also
 
 - <xref:System.Windows.SplashScreen>
 - [How to: Add Existing Items to a Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/9f4t9t92(v=vs.100))

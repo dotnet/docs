@@ -80,7 +80,7 @@ pCLRGCManager->GetStats(&GCStats);
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)  
- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)  
- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)
+## See also
+- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
+- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)
+- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)

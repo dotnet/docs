@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceThrottling&gt;"
+title: "<serviceThrottling>"
 ms.date: "03/30/2017"
 ms.assetid: a337d064-1e64-4209-b4a9-db7fdb7e3eaf
 ---
-# &lt;serviceThrottling&gt;
+# \<serviceThrottling>
 Specifies the throttling mechanism of a Windows Communication Foundation (WCF) service.  
   
  \<system.ServiceModel>  
@@ -15,9 +15,9 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
 ## Syntax  
   
 ```xml  
-<serviceThrottling maxConcurrentCalls="Integer"  
-    maxConcurrentInstances="Integer"  
-    maxConcurrentSessions="Integer" />  
+<serviceThrottling maxConcurrentCalls="Integer"
+                   maxConcurrentInstances="Integer"
+                   maxConcurrentSessions="Integer" />
 ```  
   
 ## Attributes and Elements  
@@ -49,20 +49,20 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
  The following configuration example specifies that the service limits the maximum concurrent calls to 2, and the maximum number of concurrent instances to 10. For a detailed example of running this example, see [Throttling](../../../../../docs/framework/wcf/samples/throttling.md).  
   
 ```xml  
-<behaviors>   
-  <serviceBehaviors>   
-    <behavior name="CalculatorServiceBehavior">   
-      <serviceDebug includeExceptionDetailInFaults="False" />   
-      <serviceMetadata httpGetEnabled="True"/>   
-      <!-- Specify throttling behavior -->  
-      <serviceThrottling maxConcurrentCalls="2"   
-           maxConcurrentInstances="10"/>   
-    </behavior>  
-  </serviceBehaviors>  
-</behaviors>  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="CalculatorServiceBehavior">
+      <serviceDebug includeExceptionDetailInFaults="False" />
+      <serviceMetadata httpGetEnabled="True" />
+      <!-- Specify throttling behavior -->
+      <serviceThrottling maxConcurrentCalls="2"
+                         maxConcurrentInstances="10" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>  
- <xref:System.ServiceModel.Configuration.ServiceThrottlingElement>  
- [Using ServiceThrottlingBehavior to Control WCF Service Performance](../../../../../docs/framework/wcf/feature-details/using-servicethrottlingbehavior-to-control-wcf-service-performance.md)
+## See also
+- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>
+- <xref:System.ServiceModel.Configuration.ServiceThrottlingElement>
+- [Using ServiceThrottlingBehavior to Control WCF Service Performance](../../../../../docs/framework/wcf/feature-details/using-servicethrottlingbehavior-to-control-wcf-service-performance.md)

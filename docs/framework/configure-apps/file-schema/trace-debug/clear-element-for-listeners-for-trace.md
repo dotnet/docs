@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for &lt;listeners&gt; for &lt;trace&gt;"
+title: "<clear> Element for <listeners> for <trace>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/clear"
@@ -7,10 +7,8 @@ helpviewer_keywords:
   - "clear element for <listeners> for <trace>"
   - "<clear> element for <listeners> for <trace>"
 ms.assetid: b44732a8-271f-4a06-ba9e-fe3298d6f192
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;clear&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
+# \<clear> Element for \<listeners> for \<trace>
 Clears the `Listeners` collection for trace.  
   
  \<configuration>  
@@ -73,11 +71,11 @@ Clears the `Listeners` collection for trace.
 </configuration>   
 ```  
   
-## See Also  
- <xref:System.Diagnostics.Trace.Listeners%2A>  
- <xref:System.Diagnostics.Trace>  
- <xref:System.Diagnostics.Debug>  
- <xref:System.Diagnostics.TraceSource>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [\<remove>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md)  
- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+## See also
+- <xref:System.Diagnostics.Trace.Listeners%2A>
+- <xref:System.Diagnostics.Trace>
+- <xref:System.Diagnostics.Debug>
+- <xref:System.Diagnostics.TraceSource>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [\<remove>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md)
+- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

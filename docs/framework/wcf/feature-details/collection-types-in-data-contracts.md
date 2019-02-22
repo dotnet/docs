@@ -389,5 +389,5 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
 ## Collections and Object Reference Preservation  
  When a serializer functions in a mode where it preserves object references, object reference preservation also applies to collections. Specifically, object identity is preserved for both entire collections and individual items contained in collections. For dictionaries, object identity is preserved both for the key/value pair objects and the individual key and value objects.  
   
-## See Also  
- <xref:System.Runtime.Serialization.CollectionDataContractAttribute>
+## See also
+- <xref:System.Runtime.Serialization.CollectionDataContractAttribute>

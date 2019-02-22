@@ -76,5 +76,5 @@ Securing a service with an X.509 certificate is a basic technique that most bind
   
 -   <xref:System.Runtime.Serialization>  
   
-## See Also  
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+## See also
+- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

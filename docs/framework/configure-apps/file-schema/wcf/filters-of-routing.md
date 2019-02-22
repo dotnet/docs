@@ -1,32 +1,32 @@
 ---
-title: "&lt;filters&gt; of &lt;routing&gt;"
+title: "<filters> of <routing>"
 ms.date: "03/30/2017"
 ms.assetid: 7993cf90-9afd-4c3c-9608-184d5da1105c
 ---
 
-# &lt;filters&gt; of &lt;routing&gt;
+# \<filters> of \<routing>
 
 Represents a configuration section for defining a set of routing filters, which determine the type of Windows Communication Foundation (WCF) <xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages.
 
 [**\<system.serviceModel>**](system-servicemodel.md)   
 &nbsp;&nbsp;[**\<routing>**](routing.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<filters>**
-
-## Syntax
-
-```xml
+  
+## Syntax  
+  
+```xml  
 <system.serviceModel>
   <routing>
     <filters>
-      <filter customType="String" 
-              filterData="String" 
-              filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath" 
+      <filter customType="String"
+              filterData="String"
+              filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"
               name="String" />
     </filters>
   </routing>
 </system.serviceModel>
-```
-
+```  
+  
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.
@@ -49,4 +49,4 @@ None
 
 ## See also
 
-<xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=nameWithType>

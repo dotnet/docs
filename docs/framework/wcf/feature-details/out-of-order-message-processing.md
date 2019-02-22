@@ -24,11 +24,11 @@ WorkflowService service = new WorkflowService
 ```xaml  
 // Xaml: Opt-in to Buffered Receive processing...  
 <WorkflowService AllowBufferedReceive="True">  
-   <!—the actual children activities -->  
+   <!--the actual children activities -->  
 </Sequence>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Channels.ReceiveContext>  
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
- [Queues and Reliable Sessions](../../../../docs/framework/wcf/feature-details/queues-and-reliable-sessions.md)
+## See also
+- <xref:System.ServiceModel.Channels.ReceiveContext>
+- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
+- [Queues and Reliable Sessions](../../../../docs/framework/wcf/feature-details/queues-and-reliable-sessions.md)

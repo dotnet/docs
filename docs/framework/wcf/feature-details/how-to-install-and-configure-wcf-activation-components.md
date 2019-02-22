@@ -94,8 +94,8 @@ This topic describes the steps required to set up Windows Process Activation Ser
     > [!NOTE]
     >  This command is a single line of text.  
   
-## See Also  
- [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)  
- [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md)  
- [NamedPipe Activation](../../../../docs/framework/wcf/samples/namedpipe-activation.md)  
- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)
+## See also
+- [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)
+- [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md)
+- [NamedPipe Activation](../../../../docs/framework/wcf/samples/namedpipe-activation.md)
+- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

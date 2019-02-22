@@ -12,5 +12,5 @@ ms.assetid: 729bd47b-8e41-494c-a9a9-dcabf8b74312
 |--------------|-----------------|  
 |`NewGuid()`|Returns a new GUID.<br /><br /> **Example**<br /><br /> `NewGuid()`|  
   
-## See Also  
- [Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)
+## See also
+- [Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)

@@ -51,5 +51,5 @@ The `DataGridView` control makes it easy to define the basic appearance of cells
  [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-column-row-and-cell-features-wf-datagridview-control.md)  
  Provides topics that describe commonly used cell, row, and column properties.  
   
-## See Also  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+## See also
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)

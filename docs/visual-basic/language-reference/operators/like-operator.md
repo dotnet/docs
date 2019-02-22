@@ -25,7 +25,10 @@ ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
 ---
 # Like Operator (Visual Basic)
 Compares a string against a pattern.  
-  
+
+> [!IMPORTANT]
+> The `Like` operator is not supported in .NET Core (Microsoft.NET.Sdk) projects.
+
 ## Syntax  
   
 ```  

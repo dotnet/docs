@@ -91,29 +91,31 @@ The root `<Project>` element of the *.csproj* file has a new attribute called `S
 You need to have the `Sdk` attribute set to one of those IDs on the `<Project>` element in order to use the .NET Core tools and build your code. 
 
 ### PackageReference
-A `<PackageReference>` item element specifies a NuGet dependency in the project. The `Include` attribute specifies the package ID. 
+A `<PackageReference>` item element specifies a [NuGet dependency in the project](/nuget/consume-packages/package-references-in-project-files). The `Include` attribute specifies the package ID. 
 
 ```xml
 <PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
 ```
 
 #### Version
-`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
+The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 #### IncludeAssets, ExcludeAssets and PrivateAssets
 `IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be 
-consumed. 
+consumed. By default, all package assets are included.
 
 `ExcludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
 `PrivateAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be 
-consumed but not flow to the next project. 
+consumed but not flow to the next project. The `Analyzers`, `Build` and `ContentFiles` assets are private by default
+when this attribute is not present.
 
 > [!NOTE]
 > `PrivateAssets` is equivalent to the *project.json*/*xproj* `SuppressParent` element.
 
-These attributes can contain one or more of the following items:
+These attributes can contain one or more of the following items, separated by the semicolon `;` character if more than
+one is listed:
 
 * `Compile` – the contents of the lib folder are available to compile against.
 * `Runtime` – the contents of the runtime folder are distributed.

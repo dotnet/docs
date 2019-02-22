@@ -33,7 +33,7 @@ The Microsoft platform and tools for containerized Docker apps, as defined in Ta
 
 - **DevOps for Docker Apps** Developers creating Docker applications can use [Azure DevOps Services](https://azure.microsoft.com/services/devops/) or any other third-party product, like Jenkins, to build out a comprehensive automated application life-cycle management (ALM).
 
-  With Azure DevOps Services, developers can create container-focused DevOps for a fast, iterative process that covers source-code control from anywhere (Azure DevOps Services-Git, GitHub, any remote Git repository, or Subversion), Continuous Integration (CI), internal unit tests, inter container/service integration tests, Continuous Delivery (CD), and release management (RM). Developers also can automate their Docker application releases into Azure Container Service, from development to staging and production environments.
+  With Azure DevOps Services, developers can create container-focused DevOps for a fast, iterative process that covers source-code control from anywhere (Azure DevOps Services-Git, GitHub, any remote Git repository, or Subversion), Continuous Integration (CI), internal unit tests, inter-container/service integration tests, Continuous Delivery (CD), and release management (RM). Developers also can automate their Docker application releases into Azure Container Service, from development to staging and production environments.
 
 - IT production management and monitoring.
 
@@ -43,7 +43,7 @@ The Microsoft platform and tools for containerized Docker apps, as defined in Ta
 
   - **Docker tools** You can manage your container applications using familiar tools. There's no need to change your existing Docker management practices to move container workloads to the cloud. Use the application management tools you're already familiar with and connect via the standard API endpoints for the orchestrator of your choice. You also can use other third-party tools to manage your Docker applications, such as Docker Datacenter or even CLI Docker tools. 
 
-    Even if you are familiarized with Linux commands you can manage your container applications using Microsoft Windows and PowerShell with a Linux Subsystem command line and the products (Docker, Kubernetes…) clients running on this Linux Subsystem capability. You will learn more about using these tools under Linux Subsystem using your favorite Microsoft Windows OS later in this book.
+    Even if you're familiar with Linux commands, you can manage your container applications using Microsoft Windows and PowerShell with a Linux Subsystem command line and the products (Docker, Kubernetes…) clients running on this Linux Subsystem capability. You will learn more about using these tools under Linux Subsystem using your favorite Microsoft Windows OS later in this book.
 
   - **Open-source tools** Because AKS exposes the standard API endpoints for the orchestration engine, the most popular tools are compatible with AKS and, in most cases, will work out of the box—including visualizers, monitoring, command-line tools, and even future tools as they become available.
 

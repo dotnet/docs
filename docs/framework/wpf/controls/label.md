@@ -18,7 +18,7 @@ ms.assetid: 241c1ce2-60f8-4613-a0ec-9b9bb25fb6af
  ![Display properties shows labeled by usage](../../../../docs/framework/wpf/controls/media/labeledby.JPG "LabeledBy")  
   
 ## In This Section  
- [How to: Set the Target Property of a Label](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752101(v=vs.90))  
+ [How to: Create a Control That Has an Access Key and Text Wrapping](how-to-create-a-control-that-has-an-access-key-and-text-wrapping.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Label>

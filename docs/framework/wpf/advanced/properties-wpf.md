@@ -14,20 +14,20 @@ ms.assetid: d6e0197f-f2c4-48ed-b45b-b9cdb64aab1c
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a set of services that can be used to extend the functionality of a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] property. Collectively, these services are typically referred to as the WPF property system. A property that is backed by the [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-titlewinclient-md.md)] property system is known as a dependency property.  
   
 ## In This Section  
-* [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
-* [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)
-* [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
-* [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)
-* [Dependency Property Callbacks and Validation](../../../../docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md)
-* [Framework Property Metadata](../../../../docs/framework/wpf/advanced/framework-property-metadata.md)
-* [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md)
-* [Read-Only Dependency Properties](../../../../docs/framework/wpf/advanced/read-only-dependency-properties.md)
-* [Property Value Inheritance](../../../../docs/framework/wpf/advanced/property-value-inheritance.md)
-* [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md)
-* [Safe Constructor Patterns for DependencyObjects](../../../../docs/framework/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md)
-* [Collection-Type Dependency Properties](../../../../docs/framework/wpf/advanced/collection-type-dependency-properties.md)
-* [XAML Loading and Dependency Properties](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md)
-* [How-to Topics](../../../../docs/framework/wpf/advanced/properties-how-to-topics.md)
+- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)
+- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
+- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)
+- [Dependency Property Callbacks and Validation](../../../../docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md)
+- [Framework Property Metadata](../../../../docs/framework/wpf/advanced/framework-property-metadata.md)
+- [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md)
+- [Read-Only Dependency Properties](../../../../docs/framework/wpf/advanced/read-only-dependency-properties.md)
+- [Property Value Inheritance](../../../../docs/framework/wpf/advanced/property-value-inheritance.md)
+- [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md)
+- [Safe Constructor Patterns for DependencyObjects](../../../../docs/framework/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md)
+- [Collection-Type Dependency Properties](../../../../docs/framework/wpf/advanced/collection-type-dependency-properties.md)
+- [XAML Loading and Dependency Properties](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md)
+- [How-to Topics](../../../../docs/framework/wpf/advanced/properties-how-to-topics.md)
   
 ## Reference  
  <xref:System.Windows.DependencyProperty>  

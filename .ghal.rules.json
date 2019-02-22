@@ -10,7 +10,8 @@
       "(?i)dotnet-fsharp$": ":books: Area - F# Guide",
       "(?i)dotnet-ml$": ":books: Area - ML.NET Guide",
       "(?i)dotnet$": ":books: Area - .NET Guide",
-      "(?i)dotnet-ml-api$": ":books: Area - API Reference,:file_folder: Repo - ml-api-docs"
+      "(?i)dotnet-ml-api$": ":books: Area - API Reference,:file_folder: Repo - ml-api-docs",
+      "(?i)dotnet-roslyn-api$": ":books: Area - Roslyn API Reference,:file_folder: Repo - roslyn-api-docs",
     },
     "contentsource": {
       "(?i).*master\/docs\/core\/tools.*": ":card_file_box: Technology - CLI",
@@ -21,6 +22,7 @@
       "(?i).*master\/docs\/framework\/install.*": ":card_file_box: Technology - Installers",
       "(?i).*master\/docs\/framework\/migration-guide.*": ":card_file_box: Technology - AppCompat",
       "(?i).*master\/docs\/framework\/network-programming.*": ":card_file_box: Technology - NCL",
+      "(?i).*master\/docs\/framework\/windows-workflow-foundation.*": ":card_file_box: Technology - WF",
       "(?i).*master\/docs\/framework\/wpf.*": ":card_file_box: Technology - WPF",
       "(?i).*master\/docs\/framework\/wcf.*": ":card_file_box: Technology - WCF",
       "(?i).*master\/docs\/framework\/winforms.*": ":card_file_box: Technology - WinForms",

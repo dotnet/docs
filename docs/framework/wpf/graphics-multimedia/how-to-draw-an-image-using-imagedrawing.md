@@ -21,9 +21,9 @@ Four ImageDrawing objects
   
  For an example showing a simple way to display an image without using <xref:System.Windows.Media.ImageDrawing>, see [Use the Image Element](../../../../docs/framework/wpf/controls/how-to-use-the-image-element.md).  
   
-## See Also  
- <xref:System.Windows.Freezable.Freeze%2A>  
- <xref:System.Windows.Controls.Image>  
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
- [PresentationOptions:Freeze Attribute](../../../../docs/framework/wpf/advanced/presentationoptions-freeze-attribute.md)
+## See also
+- <xref:System.Windows.Freezable.Freeze%2A>
+- <xref:System.Windows.Controls.Image>
+- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
+- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
+- [PresentationOptions:Freeze Attribute](../../../../docs/framework/wpf/advanced/presentationoptions-freeze-attribute.md)

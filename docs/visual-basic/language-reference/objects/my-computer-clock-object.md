@@ -18,5 +18,5 @@ Provides properties for accessing the current local time and Universal Coordinat
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+## See also
+- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

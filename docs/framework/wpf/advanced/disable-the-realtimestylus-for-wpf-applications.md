@@ -46,5 +46,5 @@ public static void DisableWPFTabletSupport()
 }  
 ```  
   
-## See Also  
- [Intercepting Input from the Stylus](../../../../docs/framework/wpf/advanced/intercepting-input-from-the-stylus.md)
+## See also
+- [Intercepting Input from the Stylus](../../../../docs/framework/wpf/advanced/intercepting-input-from-the-stylus.md)

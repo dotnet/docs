@@ -12,5 +12,5 @@ An application-defined or user-defined error occurred. Check the error.
   
 -   Consult the error to see where it is defined and how to address it.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

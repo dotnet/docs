@@ -24,5 +24,5 @@ The following example creates a <xref:System.Windows.Controls.TreeView> that set
  [!code-csharp[RecycleItemContainerShippets#TreeViewData](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml.cs#treeviewdata)]
  [!code-vb[RecycleItemContainerShippets#TreeViewData](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RecycleItemContainerShippets/visualbasic/window1.xaml.vb#treeviewdata)]  
   
-## See Also  
- [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)
+## See also
+- [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)

@@ -103,6 +103,6 @@ This topic describes how you can protect sensitive data from being exposed in me
   
  These events can be viewed in the Event Viewer tool that comes with Windows. For more information on this, see [Event Logging](../../../../docs/framework/wcf/diagnostics/event-logging/index.md).  
   
-## See Also  
- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)  
- [Security Concerns and Useful Tips for Tracing](../../../../docs/framework/wcf/diagnostics/tracing/security-concerns-and-useful-tips-for-tracing.md)
+## See also
+- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)
+- [Security Concerns and Useful Tips for Tracing](../../../../docs/framework/wcf/diagnostics/tracing/security-concerns-and-useful-tips-for-tracing.md)

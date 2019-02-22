@@ -47,11 +47,11 @@ Specifies that a property or procedure can be overridden by an identically named
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
- [Modifiers](../../../visual-basic/language-reference/modifiers/index.md)  
- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)  
- [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)  
- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)  
- [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
+## See also
+- [Modifiers](../../../visual-basic/language-reference/modifiers/index.md)
+- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)
+- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)
+- [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)

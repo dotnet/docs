@@ -44,10 +44,10 @@ Represents the default value of any data type. For reference types, the default 
   
  `Nothing` differs from the <xref:System.DBNull> object, which represents an uninitialized variant or a nonexistent database column.  
   
-## See Also  
- [Dim Statement](../../visual-basic/language-reference/statements/dim-statement.md)  
- [Object Lifetime: How Objects Are Created and Destroyed](../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)  
- [Lifetime in Visual Basic](../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [Is Operator](../../visual-basic/language-reference/operators/is-operator.md)  
- [IsNot Operator](../../visual-basic/language-reference/operators/isnot-operator.md)  
- [Nullable Value Types](../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
+## See also
+- [Dim Statement](../../visual-basic/language-reference/statements/dim-statement.md)
+- [Object Lifetime: How Objects Are Created and Destroyed](../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)
+- [Lifetime in Visual Basic](../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
+- [Is Operator](../../visual-basic/language-reference/operators/is-operator.md)
+- [IsNot Operator](../../visual-basic/language-reference/operators/isnot-operator.md)
+- [Nullable Value Types](../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)

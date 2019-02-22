@@ -92,5 +92,5 @@ Enums are a special kind of value type. There are two kinds of enums: simple enu
   
 ## See also
 
-- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
+- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
 - [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

@@ -1,11 +1,11 @@
 ---
-title: "&lt;Type&gt; Element (.NET Native)"
+title: "<Type> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 1e88d368-a886-4f1e-8eb6-6127979a9fce
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;Type&gt; Element (.NET Native)
+# \<Type> Element (.NET Native)
 Applies runtime policy to a particular type, such as a class or structure.  
   
 ## Syntax  
@@ -125,7 +125,7 @@ Applies runtime policy to a particular type, such as a class or structure.
 </Directives>  
 ```  
   
-## See Also  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## See also
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

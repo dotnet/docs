@@ -49,7 +49,7 @@ This topic explains how to export metadata from service endpoints.
 ## Compiling the Code  
  When compiling Program.cs reference System.ServiceModel.dll.  
   
-## See Also  
- [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)  
- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)  
- [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+## See also
+- [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)
+- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)
+- [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)

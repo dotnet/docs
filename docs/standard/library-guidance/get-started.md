@@ -23,9 +23,9 @@ The best way to create NuGet packages for open-source .NET libraries, including 
 
 NuGet makes it easy to use existing packages when building a .NET library. Learn about NuGet dependencies' common sources of friction and how to avoid them.
 
-### [SourceLink](./sourcelink.md)
+### [Source Link](./sourcelink.md)
 
-SourceLink is a great tool that allows users of your .NET library to step into its source code while debugging. This article is an overview of what SourceLink is and why you should use it.
+Source Link is a great tool that allows users of your .NET library to step into its source code while debugging. This article is an overview of what Source Link is and why you should use it.
 
 ### [Publishing](./publish-nuget-package.md)
 

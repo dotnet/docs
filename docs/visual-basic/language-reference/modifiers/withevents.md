@@ -26,7 +26,7 @@ Specifies that one or more declared member variables refer to an instance of a c
   
  The `WithEvents` modifier can be used in this context: [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
   
-## See Also  
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+## See also
+- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

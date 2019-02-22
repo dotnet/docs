@@ -116,9 +116,9 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
 -   <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> - Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent decelerating. For an example, see [How to: Accelerate or Decelerate an Animation](../../../../docs/framework/wpf/graphics-multimedia/how-to-accelerate-or-decelerate-an-animation.md).  
   
-## See Also  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)  
- [Timing Events Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-events-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)  
- [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970)
+## See also
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)
+- [Timing Events Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-events-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+- [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970)

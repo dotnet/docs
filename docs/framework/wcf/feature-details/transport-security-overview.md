@@ -114,5 +114,5 @@ Transport security mechanisms in Windows Communication Foundation (WCF) depend o
 ## MsmqIntegrationBinding and NetMsmqBinding  
  For a complete discussion of transport security with Message Queuing (previously called MSMQ), see [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md).  
   
-## See Also  
- [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)
+## See also
+- [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)

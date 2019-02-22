@@ -99,13 +99,13 @@ long y = (long)3.0;   // OK: explicit conversion
 
 For more information, see [Integral types](~/_csharplang/spec/types.md#integral-types) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also
+## See also
 
-- <xref:System.Int64>  
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
-- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- <xref:System.Int64>
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)
+- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)
 - [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)

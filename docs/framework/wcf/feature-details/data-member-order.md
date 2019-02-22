@@ -56,7 +56,7 @@ In some applications, it is useful to know the order in which data from the vari
 </DerivedType>  
 ```  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)
+- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)

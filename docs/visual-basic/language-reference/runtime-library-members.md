@@ -187,6 +187,6 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic Constants and Enumerations  
  The `Microsoft.VisualBasic` namespace provides constants and enumerations as part of the Visual Basic run-time library. You can use these constant values in your code. Each enumeration represents a particular category of functionality. For more information, see [Constants and Enumerations](../../visual-basic/language-reference/constants-and-enumerations.md).  
   
-## See Also  
- [Constants and Enumerations](../../visual-basic/language-reference/constants-and-enumerations.md)  
- [Keywords](../../visual-basic/language-reference/keywords/index.md)
+## See also
+- [Constants and Enumerations](../../visual-basic/language-reference/constants-and-enumerations.md)
+- [Keywords](../../visual-basic/language-reference/keywords/index.md)

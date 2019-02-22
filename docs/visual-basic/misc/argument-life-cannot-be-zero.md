@@ -1,11 +1,11 @@
 ---
-title: "Argument &#39;Life&#39; cannot be zero"
+title: "Argument 'Life' cannot be zero"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFinancial_LifeNEZero"
 ms.assetid: c402da97-a2b2-4219-a83a-0cebbfdffef2
 ---
-# Argument &#39;Life&#39; cannot be zero
+# Argument 'Life' cannot be zero
 An argument for `Life`, which must be a `Double` that specifies the length of useful life of the asset, is not valid.  
   
 ## To correct this error  
@@ -14,5 +14,5 @@ An argument for `Life`, which must be a `Double` that specifies the length of us
   
 -   Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
   
-## See Also  
-  [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+## See also
+- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

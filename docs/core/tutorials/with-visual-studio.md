@@ -1,5 +1,5 @@
 ---
-title: Build a C# Hello World application .NET Core in Visual Studio 2017
+title: Build a C# Hello World application with .NET Core in Visual Studio 2017
 description: Learn how to build a simple .NET Core console application with C# using Visual Studio 2017.
 author: BillWagner
 ms.author: wiwagn
@@ -70,9 +70,9 @@ Enhance your application to prompt the user for their name and display it along 
 
 You've created and run your application. To develop a professional application, take some additional steps to make your application ready for release:
 
-- For information on debugging your application, see [Debugging your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio.md).
+- For information on debugging your application, see [Debug your .NET Core Hello World application using Visual Studio 2017](debugging-with-visual-studio.md).
 
-- For information on developing and publishing a distributable version of your application, see [Publishing your C# Hello World application with Visual Studio 2017](publishing-with-visual-studio.md).
+- For information on developing and publishing a distributable version of your application, see [Publish your .NET Core Hello World application with Visual Studio 2017](publishing-with-visual-studio.md).
 
 ## Related topics
 

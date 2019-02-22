@@ -1,11 +1,11 @@
 ---
-title: "&lt;TypeParameter&gt; Element (.NET Native)"
+title: "<TypeParameter> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: d37bb1b7-1ddc-4c6d-8ecf-583f804a2479
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;TypeParameter&gt; Element (.NET Native)
+# \<TypeParameter> Element (.NET Native)
 Applies policy to the type represented by a Type argument passed to a method.  
   
 ## Syntax  
@@ -88,8 +88,8 @@ Object obj = JsonConvert.DeserializeObject(data, t);
   
  the reflection directives make metadata for the `StockQuote` type available for the NewtonSoft JSON serializer at run time.  
   
-## See Also  
- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+## See also
+- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

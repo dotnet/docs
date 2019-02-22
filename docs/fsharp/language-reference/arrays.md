@@ -1,5 +1,5 @@
 ---
-title: Arrays (F#)
+title: Arrays
 description: Learn how to create and use arrays in the F# programming language.
 ms.date: 05/16/2016
 ---
@@ -412,4 +412,4 @@ The module [`Array.Parallel`](https://msdn.microsoft.com/library/60f30b77-5af4-4
 ## See also
 
 - [F# Language Reference](index.md)
-- [F#; Types](fsharp-types.md)
+- [F# Types](fsharp-types.md)

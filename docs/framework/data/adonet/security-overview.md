@@ -83,7 +83,7 @@ Securing an application is an ongoing process. There will never be a point where
 |Resource|Description|  
 |--------------|-----------------|  
 |[SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)|Provides an overview of SQL Server security with application scenarios that provide guidance for creating secure ADO.NET applications that target SQL Server.|  
-|[Recommendations for Data Access Strategies](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)|Provides recommendations for accessing data and performing database operations.|  
+|[Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))|Provides recommendations for accessing data and performing database operations.|  
   
 ## Security Policy and Administration  
  Improperly administering code access security (CAS) policy can potentially create security weaknesses. Once an application is deployed, techniques for monitoring security should be used and risks evaluated as new threats emerge.  
@@ -92,11 +92,11 @@ Securing an application is an ongoing process. There will never be a point where
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[NIB: Security Policy Management](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)|Provides information on creating and administering security policy.|  
-|[NIB: Security Policy Best Practices](https://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05)|Provides links describing how to administer security policy.|  
+|[Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))|Provides information on creating and administering security policy.|  
+|[Security Policy Best Practices](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sa4se9bc(v=vs.100))|Provides links describing how to administer security policy.|  
   
-## See Also  
- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [PAVE Security in Native and .NET Framework Code](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [Security in .NET](../../../standard/security/index.md)
+- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

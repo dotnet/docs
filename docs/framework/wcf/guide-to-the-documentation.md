@@ -55,8 +55,8 @@ Provided here is guidance about the Windows Communication Foundation (WCF) docum
 ## WS-* Protocols Supported in Windows Communication Foundation  
  To see a list of protocols supported in the system-provided bindings, see [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md). To see the list of system-provided bindings, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md).  
   
-## See Also  
- [Windows Communication Foundation Samples](../../../docs/framework/wcf/samples/index.md)  
- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)  
- [Building Clients](../../../docs/framework/wcf/building-clients.md)
+## See also
+- [Windows Communication Foundation Samples](../../../docs/framework/wcf/samples/index.md)
+- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)
+- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)
+- [Building Clients](../../../docs/framework/wcf/building-clients.md)

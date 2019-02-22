@@ -17,9 +17,9 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
   
 2.  Open the Message Security project.  
   
-3.  Add `[ServiceBehavior(Namespace=``http://Microsoft.ServiceModel.Samples``)]` to the `ICalculator` interface definition.  
+3.  Add `[ServiceBehavior(Namespace="http://Microsoft.ServiceModel.Samples")]` to the `ICalculator` interface definition.  
   
-4.  Add `bindingNamespace=``http://Microsoft.ServiceModel.Samples` to the endpoint tag in the App.config for the service.  
+4.  Add `bindingNamespace="http://Microsoft.ServiceModel.Samples"` to the endpoint tag in the App.config for the service.  
   
 5.  Build the Message Security Sample and run Service.exe. Use Internet Explorer and browse to the service's URI (http://localhost:8000/ServiceModelSamples/Service) to ensure that the service is working.  
   
@@ -131,9 +131,9 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
   
      For more information about the parameters for this method, see <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetIssuedToken%28System.String%2CSystem.String%2CSystem.String%29>.  
   
-## See Also  
- [Federation](../../../../docs/framework/wcf/feature-details/federation.md)  
- [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)  
- [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
- [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)  
- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)
+## See also
+- [Federation](../../../../docs/framework/wcf/feature-details/federation.md)
+- [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
+- [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
+- [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)
+- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)

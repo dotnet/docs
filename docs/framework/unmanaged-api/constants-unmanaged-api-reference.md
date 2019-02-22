@@ -44,5 +44,5 @@ This topic describes the language type, language vendor, and document type const
 |CorSym_DocumentType_Text|Indicates a text document.|  
 |CorSym_DocumentType_MC|Indicates a non-text document.|  
   
-## See Also  
- [Unmanaged API Reference](../../../docs/framework/unmanaged-api/index.md)
+## See also
+- [Unmanaged API Reference](../../../docs/framework/unmanaged-api/index.md)

@@ -18,7 +18,7 @@ A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider 
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for ODBC|For data sources exposed by using ODBC. Uses the <xref:System.Data.Odbc> namespace.|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle|For Oracle data sources. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle supports Oracle client software version 8.1.7 and later, and uses the <xref:System.Data.OracleClient> namespace.|  
 |EntityClient Provider|Provides data access for Entity Data Model (EDM) applications. Uses the <xref:System.Data.EntityClient> namespace.|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server Compact 4.0.|Provides data access for Microsoft SQL Server Compact 4.0. Uses the [System.Data.SqlServerCe](https://msdn.microsoft.com/library/system.data.sqlserverce.aspx) namespace.|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server Compact 4.0.|Provides data access for Microsoft SQL Server Compact 4.0. Uses the [System.Data.SqlServerCe](https://docs.microsoft.com/previous-versions/sql/compact/sql-server-compact-4.0/ec4st0e3(v=vs.100)) namespace.|  
   
 ## Core Objects of .NET Framework Data Providers  
  The following table outlines the four core objects that make up a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider.  
@@ -145,13 +145,13 @@ using System.Data.OracleClient;
 |--------------|-----------|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server|Recommended for middle-tier applications that use Microsoft SQL Server.<br /><br /> Recommended for single-tier applications that use Microsoft Database Engine (MSDE) or SQL Server.<br /><br /> Recommended over use of the OLE DB provider for SQL Server (SQLOLEDB) with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB.|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB|For SQL Server, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server is recommended instead of this provider.<br /><br /> Recommended for single-tier applications that use Microsoft Access databases. Use of an Access database for a middle-tier application is not recommended.|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] ``Data Provider for ODBC|Recommended for middle and single-tier applications that use ODBC data sources.|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] ``Data Provider for Oracle|Recommended for middle and single-tier applications that use Oracle data sources.|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for ODBC|Recommended for middle and single-tier applications that use ODBC data sources.|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle|Recommended for middle and single-tier applications that use Oracle data sources.|  
   
 ## EntityClient Provider  
- The EntityClient provider is used for accessing data based on an Entity Data Model (EDM). Unlike the other .NET Framework data providers, it does not interact directly with a data source. Instead, it uses Entity SQL to communicate with the underlying data provider. For more information, see [EntityClient and Entity SQL](https://msdn.microsoft.com/library/49202ab9-ac98-4b4b-a05c-140e422bf527).  
+ The EntityClient provider is used for accessing data based on an Entity Data Model (EDM). Unlike the other .NET Framework data providers, it does not interact directly with a data source. Instead, it uses Entity SQL to communicate with the underlying data provider. For more information, see [EntityClient Provider for the Entity Framework](./ef/entityclient-provider-for-the-entity-framework.md).  
   
-## See Also  
- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)
+- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -31,6 +31,6 @@ You can set tab stops for text by calling the <xref:System.Drawing.StringFormat.
   
 -   The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
-## See Also  
- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)  
- [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)
+## See also
+- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)
+- [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)

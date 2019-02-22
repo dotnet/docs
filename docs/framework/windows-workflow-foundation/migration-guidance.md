@@ -29,7 +29,7 @@ In the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], Microso
  [WF Guidance: State Machine](https://go.microsoft.com/fwlink/?LinkId=153855)  
  Discusses WF4 control flow modeling in the absence of a State-Machine activity.  
   
- Note that this guidance only applies to workflow projects that target .NET Framework 4. State Machine workflows were added in .NET 4.0.1 with the release of Platform Update 1, and were included as part of .NET Framework 4.5. For more information about state machine workflows in .NET 4.0.1 - 4.0.3 and .NET Framework 4.5, see [Update 4.0.1 for Microsoft .NET Framework 4 Features](https://msdn.microsoft.com/library/de3297bd-c3e1-4126-95be-2ed7fe2a98fc) and [State Machine Workflows](../../../docs/framework/windows-workflow-foundation/state-machine-workflows.md).  
+ Note that this guidance only applies to workflow projects that target .NET Framework 4. State Machine workflows were added in .NET 4.0.1 with the release of Platform Update 1, and were included as part of .NET Framework 4.5. For more information about state machine workflows in .NET 4.0.1 - 4.0.3 and .NET Framework 4.5, see [Update 4.0.1 for Microsoft .NET Framework 4 Features](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hh290669(v=vs.100)) and [State Machine Workflows](../../../docs/framework/windows-workflow-foundation/state-machine-workflows.md).  
   
  [WF Migration Cookbook: Custom Activities](https://go.microsoft.com/fwlink/?LinkId=153856)  
  Provides examples and instructions for redesigning WF3 custom activities on WF4.  
@@ -49,5 +49,5 @@ In the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], Microso
  [WF Guidance: Workflow Services](https://go.microsoft.com/fwlink/?LinkId=275564)  
  Provides example-oriented step-by-step instructions for redesigning workflows that implement Windows Communication Foundation (WCF) web services (commonly referred to as workflow services) created in WF3 to use WF4, for common scenarios for out-of-box activities.  
   
-## See Also  
- <xref:System.Activities.Statements.Interop>
+## See also
+- <xref:System.Activities.Statements.Interop>

@@ -41,5 +41,5 @@ class PeerCustomResolverBindingElement : PeerResolverBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.PeerCustomResolverBindingElement>
+## See also
+- <xref:System.ServiceModel.Channels.PeerCustomResolverBindingElement>

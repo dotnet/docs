@@ -39,7 +39,7 @@ When you use Windows Identity Foundation (WIF) to secure the resources of a rely
     ```xml  
     <caches>  
       <sessionSecurityTokenCache type="MyCacheLibrary.MySharedSessionSecurityTokenCache, MyCacheLibrary">  
-        <!—optional child configuration elements, if implemented by the derived class -->  
+        <!--optional child configuration elements, if implemented by the derived class -->  
       </sessionSecurityTokenCache>  
     </caches>  
     ```  
@@ -244,8 +244,8 @@ namespace CacheLibrary
 }  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>  
- <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>  
- <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler>  
- [WIF Session Management](../../../docs/framework/security/wif-session-management.md)
+## See also
+- <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>
+- <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>
+- <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler>
+- [WIF Session Management](../../../docs/framework/security/wif-session-management.md)

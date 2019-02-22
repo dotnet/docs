@@ -1,8 +1,6 @@
 ---
 title: Docker images overview
 description: Learn how to use the published .NET Core Docker images from the Docker Registry. You will also learn how to pull images and build your own images.
-author: jralexander
-ms.author: johalex
 ms.date: 11/06/2017
 ms.topic: tutorial
 ms.custom: "mvc, seodec18"

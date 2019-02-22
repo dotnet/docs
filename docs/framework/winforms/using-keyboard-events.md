@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: d3f3e14b-a459-4ee6-9875-8957e34f8ee9
 ---
 # Using Keyboard Events
-Most Windows Forms programs process keyboard input by handling the keyboard events. This topic provides an overview of the keyboard events, including details on when to use each event and the data that is supplied for each event.  Also see [Event Handlers Overview (Windows Forms)](https://msdn.microsoft.com/library/be6fx1bb\(v=vs.110\)), [Events Overview (Windows Forms)](https://msdn.microsoft.com/library/1h12f09z\(v=vs.110\)).  
+Most Windows Forms programs process keyboard input by handling the keyboard events. This topic provides an overview of the keyboard events, including details on when to use each event and the data that is supplied for each event.  Also see [Event Handlers Overview (Windows Forms)](event-handlers-overview-windows-forms.md) and [Events Overview (Windows Forms)](events-overview-windows-forms.md).  
   
 ## Keyboard Events  
  Windows Forms provides two events that occur when a user presses a keyboard key and one event when a user releases a keyboard key:  
@@ -32,7 +32,7 @@ Most Windows Forms programs process keyboard input by handling the keyboard even
 |<xref:System.Windows.Forms.Control.KeyPress>|This event is raised when the key or keys pressed result in a character. For example, a user presses SHIFT and the lowercase "a" keys, which result in a capital letter "A" character.|<xref:System.Windows.Forms.Control.KeyPress> is raised after <xref:System.Windows.Forms.Control.KeyDown>.<br /><br /> <ul><li>The handler for <xref:System.Windows.Forms.Control.KeyPress> receives:</li><li>A <xref:System.Windows.Forms.KeyPressEventArgs> parameter, which contains the character code of the key that was pressed. This character code is unique for every combination of a character key and a modifier key.<br /><br />     For example, the "A" key will generate:<br /><br /> <ul><li>The character code 65, if it is pressed with the SHIFT key</li><li>Or the CAPS LOCK key, 97 if it is pressed by itself,</li><li>And 1, if it is pressed with the CTRL key.</li></ul></li></ul>|  
 |<xref:System.Windows.Forms.Control.KeyUp>|This event is raised when a user releases a physical key.|The handler for <xref:System.Windows.Forms.Control.KeyUp> receives:<br /><br /> <ul><li>A <xref:System.Windows.Forms.KeyEventArgs> parameter:<br /><br /> <ul><li>Which provides the <xref:System.Windows.Forms.KeyEventArgs.KeyCode%2A> property (which specifies a physical keyboard button).</li><li>The <xref:System.Windows.Forms.KeyEventArgs.Modifiers%2A> property (SHIFT, CTRL, or ALT).</li><li>The <xref:System.Globalization.SortKey.KeyData%2A> property (which combines the key code and modifier).</li></ul></li></ul>|  
   
-## See Also  
- [Keyboard Input in a Windows Forms Application](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)  
- [How Keyboard Input Works](../../../docs/framework/winforms/how-keyboard-input-works.md)  
- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)
+## See also
+- [Keyboard Input in a Windows Forms Application](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)
+- [How Keyboard Input Works](../../../docs/framework/winforms/how-keyboard-input-works.md)
+- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)

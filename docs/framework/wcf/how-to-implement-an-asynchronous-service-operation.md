@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 4e5d2ea5-d8f8-4712-bd18-ea3c5461702c
 ---
 # How to: Implement an Asynchronous Service Operation
-In Windows Communication Foundation (WCF) applications, a service operation can be implemented asynchronously or synchronously without dictating to the client how to call it. For example, asynchronous service operations can be calling synchronously, and synchronous service operations can be called asynchronously. For an example that shows how to call an operation asynchronously in a client application, see [How to: Call Service Operations Asynchronously](../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md). For more information about synchronous and asynchronous operations, see [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md) and [Synchronous and Asynchronous Operations](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md). This topic describes the basic structure of an asynchronous service operation, the code is not complete. For a complete example of both the service and client sides see [Asynchronous](https://msdn.microsoft.com/library/833db946-f511-4f64-a26f-2759a11217c7).  
+In Windows Communication Foundation (WCF) applications, a service operation can be implemented asynchronously or synchronously without dictating to the client how to call it. For example, asynchronous service operations can be calling synchronously, and synchronous service operations can be called asynchronously. For an example that shows how to call an operation asynchronously in a client application, see [How to: Call Service Operations Asynchronously](../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md). For more information about synchronous and asynchronous operations, see [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md) and [Synchronous and Asynchronous Operations](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md). This topic describes the basic structure of an asynchronous service operation, the code is not complete. For a complete example of both the service and client sides, see [Asynchronous](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms751505(v=vs.100)).  
   
 ### Implement a service operation asynchronously  
   
@@ -39,6 +39,6 @@ In Windows Communication Foundation (WCF) applications, a service operation can 
  [!code-csharp[C_SyncAsyncClient#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_syncasyncclient/cs/services.cs#1)]
  [!code-vb[C_SyncAsyncClient#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_syncasyncclient/vb/services.vb#1)]  
   
-## See Also  
- [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)  
- [Synchronous and Asynchronous Operations](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)
+## See also
+- [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)
+- [Synchronous and Asynchronous Operations](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)

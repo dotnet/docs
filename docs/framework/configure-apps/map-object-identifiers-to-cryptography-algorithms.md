@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "mapping object identifiers"
   - "cryptography, mapping object identifiers"
 ms.assetid: c9673f81-bf9e-47fd-bc6f-6bc1c1c4c15e
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Mapping Object Identifiers to Cryptography Algorithms
 Digital signatures ensure that data is not tampered with when it is sent from one program to another. Typically the digital signature is computed by applying a mathematical function to the hash of the data to be signed. When formatting a hash value to be signed, some digital signature algorithms append an ASN.1 Object Identifier (OID) as part of the formatting operation. The OID identifies the algorithm that was used to compute the hash. You can map algorithms to object identifiers to extend the cryptography mechanism to use custom algorithms. The following example shows how to map an object identifier to a new hash algorithm.  
@@ -36,6 +34,6 @@ Digital signatures ensure that data is not tampered with when it is sent from on
   
  The [\<oidEntry> element](../../../docs/framework/configure-apps/file-schema/cryptography/oidentry-element.md) contains two attributes. The **OID** attribute is the object identifier number. The **name** attribute is the value of the **name** attribute from the [\<nameEntry> element](../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md). There must be a mapping from an algorithm name to a class before an object identifier can be mapped to a simple name.  
   
-## See Also  
- [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+## See also
+- [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

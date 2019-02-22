@@ -22,7 +22,7 @@ When you call <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithT
   
 ## See also
 
-- <xref:System.Threading.Thread>  
-- <xref:System.GC>  
-- [Threading](../../../docs/standard/threading/index.md)  
+- <xref:System.Threading.Thread>
+- <xref:System.GC>
+- [Threading](../../../docs/standard/threading/index.md)
 - [Automatic Memory Management](../../../docs/standard/automatic-memory-management.md)

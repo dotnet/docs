@@ -191,5 +191,5 @@ End Module
 http://www.adventure-works.com  
 ```  
   
-## See Also  
- [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+## See also
+- [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)

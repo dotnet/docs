@@ -338,7 +338,7 @@ Standalone applications typically have a main window that both displays the main
 [!code-csharp[DialogBoxSample#FindDialogCloseCODEBEHIND2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxSample/CSharp/FindDialogBox.xaml.cs#finddialogclosecodebehind2)]
 [!code-vb[DialogBoxSample#FindDialogCloseCODEBEHIND2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxSample/VisualBasic/FindDialogBox.xaml.vb#finddialogclosecodebehind2)]  
   
-## See Also  
- [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)  
- [Dialog Box Sample](https://go.microsoft.com/fwlink/?LinkID=159984)  
- [ColorPicker Custom Control Sample](https://go.microsoft.com/fwlink/?LinkID=159977)
+## See also
+- [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)
+- [Dialog Box Sample](https://go.microsoft.com/fwlink/?LinkID=159984)
+- [ColorPicker Custom Control Sample](https://go.microsoft.com/fwlink/?LinkID=159977)

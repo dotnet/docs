@@ -44,5 +44,5 @@ The first example in this topic shows how to handle the <xref:System.AggregateEx
   
 ## See also
 
-- <xref:System.Linq.ParallelEnumerable>  
+- <xref:System.Linq.ParallelEnumerable>
 - [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

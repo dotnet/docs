@@ -1,5 +1,5 @@
 ---
-title: Records (F#)
+title: Records
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
 ms.date: 05/16/2016
 ---
@@ -83,6 +83,29 @@ let defaultRecord2 = { Field1 = 1; Field2 = 25 }
 // and leave the rest with default values.
 let rr3 = { defaultRecord1 with Field2 = 42 }
 ```
+
+## Creating Mutually Recursive Records
+
+Sometime when creating a record, you may want to have it depend on another type that you would like to define afterwards. This is a compile error unless you define the record types to be mutually recursive.
+
+Defining mutually recursive records is done with the `and` keyword. This lets you link 2 or more record types together.
+
+For example, the following code defines a `Person` and `Address` type as mutually recursive:
+
+```fsharp
+// Create a Person type and use the Address type that is not defined
+type Person =
+  { Name: string
+    Age: int
+    Address: Address }
+// Define the Address type which is used in the Person record
+and Address =
+  { Line1: string
+    Line2: string
+    PostCode: string }
+```
+
+If you were to define the previous example without the `and` keyword, then it would not compile. The `and` keyword is required for mutually recursive definitions.
 
 ## Pattern Matching with Records
 

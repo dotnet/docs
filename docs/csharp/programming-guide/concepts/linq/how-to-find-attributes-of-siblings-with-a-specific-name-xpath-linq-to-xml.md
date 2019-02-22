@@ -49,6 +49,6 @@ id="bk101"
 id="bk102"  
 ```  
   
-## See Also
+## See also
 
 - [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

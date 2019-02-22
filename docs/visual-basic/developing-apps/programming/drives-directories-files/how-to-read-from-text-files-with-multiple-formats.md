@@ -62,13 +62,13 @@ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to
   
 -   The user does not have sufficient permissions to access the file (<xref:System.UnauthorizedAccessException>).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>  
- <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A>  
- [How to: Read From Comma-Delimited Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)  
- [How to: Read From Fixed-width Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)  
- [Parsing Text Files with the TextFieldParser Object](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)
+## See also
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>
+- <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A>
+- [How to: Read From Comma-Delimited Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)
+- [How to: Read From Fixed-width Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)
+- [Parsing Text Files with the TextFieldParser Object](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)

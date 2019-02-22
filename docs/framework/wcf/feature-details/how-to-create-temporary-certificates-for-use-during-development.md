@@ -64,7 +64,7 @@ Once a self-signed certificate is created, you can install it in the Trusted Roo
 
 4. Right-click the **Certificates** folder and click **All Tasks**, then click **Import**.
 
-5. Follow the on-screen wizard instructions to import the TempCa.cer into the store.
+5. Follow the on-screen wizard instructions to import the RootCA.pfx into the store.
 
 ## Using certificates With WCF
 

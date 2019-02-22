@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ec8a9515-3708-4cde-a688-4d8e6975f150
 ---
 # Modeling and Mapping
-In the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], you can define the conceptual model, storage model, and the mapping between the two in the way that best suits your application. The Entity Data Model Tools in Visual Studio allow you to create an .[edmx file](https://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4) from a database or a graphical model and then update that file when either the database or model changes.  
+In the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], you can define the conceptual model, storage model, and the mapping between the two in the way that best suits your application. The Entity Data Model Tools in Visual Studio allow you to create an .[edmx file](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100)) from a database or a graphical model and then update that file when either the database or model changes.  
   
  Starting with the Entity Framework 4.1 you can also create a model programmatically using Code First development. There are two different scenarios for Code First development. In both cases, the developer defines a model by coding .NET Framework class definitions, and then optionally specifies additional mapping or configuration by using Data Annotations or the fluent API.  
   

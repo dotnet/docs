@@ -19,7 +19,7 @@ The following table shows the precision and approximate ranges for the floating-
 |[float](float.md)|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|  
 |[double](double.md)|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|  
 |[decimal](decimal.md)|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|  
-  
+
 ## See also
 
 - [C# Reference](../index.md)
@@ -30,3 +30,5 @@ The following table shows the precision and approximate ranges for the floating-
 - [Default values table](default-values-table.md)
 - [Formatting numeric results table](formatting-numeric-results-table.md)
 - [Built-in types table](built-in-types-table.md)
+- [Numerics in .NET](../../../standard/numerics.md)
+- <xref:System.Numerics.Complex?displayProperty=nameWithType>

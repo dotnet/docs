@@ -37,6 +37,6 @@ An event is an action which you can respond to, or "handle," in code. Events can
   
  The binding mechanism used with delegates is dynamic: a delegate can be bound at run time to any method whose signature matches that of the event handler. With this feature, you can set up or change the bound method depending on a condition and to dynamically attach an event handler to a control.  
   
-## See Also  
- [Creating Event Handlers in Windows Forms](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
- [Event Handlers Overview](../../../docs/framework/winforms/event-handlers-overview-windows-forms.md)
+## See also
+- [Creating Event Handlers in Windows Forms](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)
+- [Event Handlers Overview](../../../docs/framework/winforms/event-handlers-overview-windows-forms.md)

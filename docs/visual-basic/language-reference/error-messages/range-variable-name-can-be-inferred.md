@@ -22,6 +22,6 @@ Dim query = From var1 In collection1
             Select VariableAlias= SampleFunction(var1), var1  
 ```  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+## See also
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)

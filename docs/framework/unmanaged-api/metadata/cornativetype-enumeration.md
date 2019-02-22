@@ -140,6 +140,6 @@ typedef enum CorNativeType {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- <xref:System.Runtime.InteropServices.UnmanagedType>  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+- <xref:System.Runtime.InteropServices.UnmanagedType>
+- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

@@ -107,5 +107,5 @@ ms.author: "mhopkins"
 ## Security  
  For security information, see [UI Automation Security Overview](../../../docs/framework/ui-automation/ui-automation-security-overview.md).  
   
-## See Also  
- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)
+## See also
+- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)

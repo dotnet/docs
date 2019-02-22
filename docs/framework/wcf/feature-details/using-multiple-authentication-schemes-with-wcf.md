@@ -113,11 +113,11 @@ else
     </binding>  
 ```  
   
-## See Also  
- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)  
- [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)  
- [Configuring System-Provided Bindings](../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)  
- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)  
- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)  
- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)
+## See also
+- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)
+- [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+- [Configuring System-Provided Bindings](../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)
+- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)
+- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)
+- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)

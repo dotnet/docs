@@ -26,8 +26,8 @@ Your Windows Forms applications can take advantage of the power management featu
  [!code-csharp[PowerMode#2](../../../../samples/snippets/csharp/VS_Snippets_Winforms/powermode/cs/form1.cs#2)]
  [!code-vb[PowerMode#2](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/powermode/vb/form1.vb#2)]  
   
-## See Also  
- <xref:Microsoft.Win32.SystemEvents.PowerModeChanged>  
- <xref:System.Windows.Forms.SystemInformation.PowerStatus%2A>  
- <xref:System.Windows.Forms.Application.SetSuspendState%2A>  
- <xref:Microsoft.Win32.SystemEvents.SessionSwitch>
+## See also
+- <xref:Microsoft.Win32.SystemEvents.PowerModeChanged>
+- <xref:System.Windows.Forms.SystemInformation.PowerStatus%2A>
+- <xref:System.Windows.Forms.Application.SetSuspendState%2A>
+- <xref:Microsoft.Win32.SystemEvents.SessionSwitch>

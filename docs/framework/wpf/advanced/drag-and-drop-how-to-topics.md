@@ -18,5 +18,5 @@ The following examples demonstrate how to accomplish common tasks using the [!IN
  [Retrieve Data in a Particular Data Format](../../../../docs/framework/wpf/advanced/how-to-retrieve-data-in-a-particular-data-format.md)  
  [Store Multiple Data Formats in a Data Object](../../../../docs/framework/wpf/advanced/how-to-store-multiple-data-formats-in-a-data-object.md)  
   
-## See Also  
- [Drag and Drop Overview](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)
+## See also
+- [Drag and Drop Overview](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)

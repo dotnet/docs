@@ -236,8 +236,8 @@ Exit:
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)  
- [IEnumIDENTITY_ATTRIBUTE Interface](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)  
- [IDENTITY_ATTRIBUTE Structure](../../../../docs/framework/unmanaged-api/fusion/identity-attribute-structure.md)  
- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
+## See also
+- [IReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)
+- [IEnumIDENTITY_ATTRIBUTE Interface](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)
+- [IDENTITY_ATTRIBUTE Structure](../../../../docs/framework/unmanaged-api/fusion/identity-attribute-structure.md)
+- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)

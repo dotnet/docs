@@ -107,6 +107,6 @@ class Program
 }  
 ```  
   
-## See Also
+## See also
 
 - [Variance in Generic Interfaces (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)

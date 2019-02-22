@@ -23,7 +23,7 @@ The [get](../../../csharp/language-reference/keywords/get.md) and [set](../../..
   
 -   You cannot use accessor modifiers on an interface or an explicit [interface](../../../csharp/language-reference/keywords/interface.md) member implementation.  
   
--   You can use accessor modifiers only if the property or indexer has both `set` and `get` accessors. In this case, the modifier is permitted on one only of the two accessors.  
+-   You can use accessor modifiers only if the property or indexer has both `set` and `get` accessors. In this case, the modifier is permitted on only one of the two accessors.  
   
 -   If the property or indexer has an [override](../../../csharp/language-reference/keywords/override.md) modifier, the accessor modifier must match the accessor of the overridden accessor, if any.  
   
@@ -58,9 +58,9 @@ The [get](../../../csharp/language-reference/keywords/get.md) and [set](../../..
   
  `Name and ID in the derived class: John, John123`  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)
 - [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)

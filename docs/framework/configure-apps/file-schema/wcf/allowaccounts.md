@@ -1,9 +1,9 @@
 ---
-title: "&lt;allowAccounts&gt;"
+title: "<allowAccounts>"
 ms.date: "03/30/2017"
 ms.assetid: 166923a9-a8ac-478f-92f9-529d9667f3a6
 ---
-# &lt;allowAccounts&gt;
+# \<allowAccounts>
 Contains a collection of configuration elements that specify user accounts for processes that host Windows Communication Foundation (WCF) services, and are granted connection access to the sharing service.  
   
  \<system.serviceModel.activation>  
@@ -11,9 +11,9 @@ Contains a collection of configuration elements that specify user accounts for p
 ## Syntax  
   
 ```xml  
-<allowAccounts>  
-   <add securityIdentifier="String"/>  
-</allowAccounts>  
+<allowAccounts>
+  <add securityIdentifier="String" />
+</allowAccounts>
 ```  
   
 ## Attributes and Elements  
@@ -34,8 +34,8 @@ Contains a collection of configuration elements that specify user accounts for p
 |-------------|-----------------|  
 |[\<net.pipe>](../../../../../docs/framework/configure-apps/file-schema/wcf/net-pipe.md) or [\<net.tcp>](../../../../../docs/framework/configure-apps/file-schema/wcf/net-tcp.md)|Specifies configuration settings for the Net Pipe or TCP sharing services.|  
   
-## See Also  
- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>  
- <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>  
- <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>  
- <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElement>
+## See also
+- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>
+- <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>
+- <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>
+- <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElement>

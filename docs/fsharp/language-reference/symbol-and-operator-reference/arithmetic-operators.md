@@ -1,5 +1,5 @@
 ---
-title: Arithmetic Operators (F#)
+title: Arithmetic Operators
 description: Learn about the arithmetic operators that are available in the F# programming language.
 ms.date: 04/04/2018
 ---

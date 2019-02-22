@@ -1,9 +1,9 @@
 ---
-title: "&lt;states&gt; of WCF, &lt;workflowInstanceQuery&gt;"
+title: "<states> of WCF, <workflowInstanceQuery>"
 ms.date: "03/30/2017"
 ms.assetid: d17f7525-8035-4e9e-85a0-4cddae59f85d
 ---
-# &lt;states&gt; of WCF, &lt;workflowInstanceQuery&gt;
+# \<states> of WCF, \<workflowInstanceQuery>
 
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.  
   
@@ -20,7 +20,7 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
   
 ## Syntax  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -28,7 +28,7 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
         <workflowInstanceQueries>
           <workflowInstanceQuery>
             <states>
-              <state name="Name"/>
+              <state name="Name" />
             </states>
           </workflowInstanceQuery>
         </workflowInstanceQueries>
@@ -36,7 +36,7 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
     </trackingProfile>
   </profiles>
 </tracking>
-```
+```  
   
 ## Attributes and elements
 
@@ -85,19 +85,19 @@ Possible state values are described in the following table.
 The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
   
 ```xml  
-<workflowInstanceQueries>  
-    <workflowInstanceQuery>  
-      <states>  
-        <state name="Started"/>  
-      </states>  
-    </workflowInstanceQuery>  
-</workflowInstanceQueries>  
+<workflowInstanceQueries>
+  <workflowInstanceQuery>
+    <states>
+      <state name="Started" />
+    </states>
+  </workflowInstanceQuery>
+</workflowInstanceQueries>
 ```  
   
-## See also  
+## See also
 
-- <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>       
-- <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection?displayProperty=nameWithType>       
-- <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>       
-- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection?displayProperty=nameWithType>
+- <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
 - [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

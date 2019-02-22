@@ -289,7 +289,7 @@ namespace Client
 ```  
   
 ```xml  
-<!—App.config -->  
+<!--App.config -->  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
     <startup>   
@@ -312,6 +312,6 @@ namespace Client
 </configuration>  
 ```  
   
-## See Also  
- [Synchronous and Asynchronous Operations](../../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)  
- [Using the NetHttpBinding](../../../../docs/framework/wcf/feature-details/using-the-nethttpbinding.md)
+## See also
+- [Synchronous and Asynchronous Operations](../../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)
+- [Using the NetHttpBinding](../../../../docs/framework/wcf/feature-details/using-the-nethttpbinding.md)

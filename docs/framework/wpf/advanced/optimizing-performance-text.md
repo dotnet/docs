@@ -154,13 +154,13 @@ Hyperlink appearing on MouseEnter
 ### Optimal Paragraph  
  The optimal paragraph feature of the <xref:System.Windows.Documents.FlowDocument> object lays out paragraphs so that white space is distributed as evenly as possible. By default, the optimal paragraph feature is disabled. You can enable this feature by setting the object's <xref:System.Windows.Documents.FlowDocument.IsOptimalParagraphEnabled%2A> property to `true`. However, enabling this feature impacts application performance. It is recommended that you do not use the optimal paragraph feature unless you need it.  
   
-## See Also  
- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)  
- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)  
- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)  
- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)  
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)  
- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)
+## See also
+- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
+- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)
+- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)
+- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)
+- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)
+- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)
+- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)
+- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)

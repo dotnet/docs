@@ -189,5 +189,5 @@ return lines;
   }  
 ```  
   
-## See Also  
- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
+## See also
+- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)

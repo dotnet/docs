@@ -12,7 +12,7 @@ ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
 ---
 # Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)
 
-Dynamic objects expose members such as properties and methods at run time, instead of in at compile time. This enables you to create objects to work with structures that do not match a static type or format. For example, you can use a dynamic object to reference the HTML Document Object Model (DOM), which can contain any combination of valid HTML markup elements and attributes. Because each HTML document is unique, the members for a particular HTML document are determined at run time. A common method to reference an attribute of an HTML element is to pass the name of the attribute to the `GetProperty` method of the element. To reference the `id` attribute of the HTML element `<div id="Div1">`, you first obtain a reference to the `<div>` element, and then use `divElement.GetProperty("id")`. If you use a dynamic object, you can reference the `id` attribute as `divElement.id`.  
+Dynamic objects expose members such as properties and methods at run time, instead of at compile time. This enables you to create objects to work with structures that do not match a static type or format. For example, you can use a dynamic object to reference the HTML Document Object Model (DOM), which can contain any combination of valid HTML markup elements and attributes. Because each HTML document is unique, the members for a particular HTML document are determined at run time. A common method to reference an attribute of an HTML element is to pass the name of the attribute to the `GetProperty` method of the element. To reference the `id` attribute of the HTML element `<div id="Div1">`, you first obtain a reference to the `<div>` element, and then use `divElement.GetProperty("id")`. If you use a dynamic object, you can reference the `id` attribute as `divElement.id`.  
   
  Dynamic objects also provide convenient access to dynamic languages such as IronPython and IronRuby. You can use a dynamic object to refer to a dynamic script that is interpreted at run time.  
   
@@ -27,7 +27,8 @@ Dynamic objects expose members such as properties and methods at run time, inste
 -   Create a project that uses an `IronPython` library.  
   
 ## Prerequisites  
-You need [IronPython](http://ironpython.net/) for .NET to complete this walkthrough. Go to their [Download page](http://ironpython.net/download/) to obtain the latest version.
+
+You need [IronPython](https://ironpython.net/) for .NET to complete this walkthrough. Go to their [Download page](https://ironpython.net/download/) to obtain the latest version.
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -151,11 +152,11 @@ The next project that you create in this walkthrough accesses a library that is 
   
 9. Save the file and press CTRL+F5 to build and run the application.  
   
-## See Also
+## See also
 
-- <xref:System.Dynamic?displayProperty=nameWithType>  
-- <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>  
-- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
-- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
-- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
+- <xref:System.Dynamic?displayProperty=nameWithType>
+- <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>
+- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)
+- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
+- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)
 - [Implementing Dynamic Interfaces (downloadable PDF from Microsoft TechNet)](https://download.microsoft.com/download/5/4/B/54B83DFE-D7AA-4155-9687-B0CF58FF65D7/implementing-dynamic-interfaces.pdf)

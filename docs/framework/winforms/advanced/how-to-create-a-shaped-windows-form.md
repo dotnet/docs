@@ -34,10 +34,10 @@ This example gives a form an elliptical shape that resizes with the form.
   
  This example overrides the <xref:System.Windows.Forms.Control.OnPaint%2A> method to change the shape of the form. To use this code, copy the method declaration as well as the drawing code inside the method.  
   
-## See Also  
- <xref:System.Windows.Forms.Control.OnPaint%2A>  
- <xref:System.Drawing.Region>  
- <xref:System.Drawing>  
- <xref:System.Drawing.Drawing2D.GraphicsPath.AddEllipse%2A>  
- <xref:System.Windows.Forms.Control.Region%2A>  
- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)
+## See also
+- <xref:System.Windows.Forms.Control.OnPaint%2A>
+- <xref:System.Drawing.Region>
+- <xref:System.Drawing>
+- <xref:System.Drawing.Drawing2D.GraphicsPath.AddEllipse%2A>
+- <xref:System.Windows.Forms.Control.Region%2A>
+- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)

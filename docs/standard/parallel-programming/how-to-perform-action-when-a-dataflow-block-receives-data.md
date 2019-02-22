@@ -28,7 +28,7 @@ ms.author: "ronpet"
  The section Summary of Delegate Types in the [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) document summarizes the delegate types that you can provide to <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>, <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>, and <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> objects. The table also specifies whether the delegate type operates synchronously or asynchronously.  
   
 ## Compiling the Code  
- Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `DataflowExecutionBlocks.cs` (`DataflowExecutionBlocks.vb` for Visual Basic), and then run the following command in a Visual Studio Command Prompt window.  
+ Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `DataflowExecutionBlocks.cs` (`DataflowExecutionBlocks.vb` for Visual Basic), and then run the following command in a Developer Command Prompt for Visual Studio window.  
   
  Visual C#  
   

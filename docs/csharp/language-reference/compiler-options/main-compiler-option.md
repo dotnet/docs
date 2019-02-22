@@ -45,7 +45,7 @@ This option specifies the class that contains the entry point to the program, if
 csc t2.cs t3.cs -main:Test2  
 ```  
   
-## See Also
+## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

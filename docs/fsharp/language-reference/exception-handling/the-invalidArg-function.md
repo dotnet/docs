@@ -1,5 +1,5 @@
 ---
-title: "Exceptions: The invalidArg Function (F#)"
+title: "Exceptions: The invalidArg Function"
 description: Learn how the F# 'invalidArg' function generates an argument exception.
 ms.date: 05/16/2016
 ---

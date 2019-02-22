@@ -1,5 +1,5 @@
 ---
-title: "Lambda Expressions - C# Programming Guide"
+title: "Lambda expressions - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 03/03/2017
 helpviewer_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "expressions [C#], lambda"
 ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
 ---
-# Lambda Expressions (C# Programming Guide)
+# Lambda expressions (C# Programming Guide)
 
 A lambda expression is an [anonymous function](anonymous-methods.md) that you can use to create [delegates](../delegates/using-delegates.md) or [expression tree](../concepts/expression-trees/index.md) types. By using lambda expressions, you can write local functions that can be passed as arguments or returned as the value of function calls. Lambda expressions are particularly helpful for writing LINQ query expressions.
   
@@ -54,7 +54,7 @@ namespace ConsoleApplication1
   
  All restrictions that apply to anonymous methods also apply to lambda expressions. For more information, see [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md).  
   
-## Expression Lambdas
+## Expression lambdas
 
  A lambda expression with an expression on the right side of the => operator is called an *expression lambda*. Expression lambdas are used extensively in the construction of [Expression Trees](../concepts/expression-trees/index.md). An expression lambda returns the result of the expression and takes the following basic form:
   
@@ -83,7 +83,8 @@ namespace ConsoleApplication1
 
  Note in the previous example that the body of an expression lambda can consist of a method call. However, if you are creating expression trees that are evaluated outside of the .NET Framework, such as in SQL Server, you should not use method calls in lambda expressions. The methods will have no meaning outside the context of the .NET common language runtime.  
   
-## Statement Lambdas  
+## Statement lambdas
+
  A statement lambda resembles an expression lambda except that the statement(s) is enclosed in braces:  
   
 (input-parameters) => { statement; }
@@ -96,7 +97,8 @@ namespace ConsoleApplication1
 
  Statement lambdas, like anonymous methods, cannot be used to create expression trees.  
   
-## Async Lambdas  
+## Async lambdas
+
  You can easily create lambda expressions and statements that incorporate asynchronous processing by using the [async](../../../csharp/language-reference/keywords/async.md) and [await](../../../csharp/language-reference/keywords/await.md) keywords. For example, the following Windows Forms example contains an event handler that calls and awaits an async method, `ExampleMethodAsync`.  
   
 ```csharp
@@ -148,8 +150,9 @@ public partial class Form1 : Form
 
  For more information about how to create and use async methods, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md).  
   
-## Lambdas with the Standard Query Operators  
- Many Standard query operators have an input parameter whose type is one of the <xref:System.Func%602> family of generic delegates. These delegates use type parameters to define the number and types of input parameters, and the return type of the delegate. `Func` delegates are very useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the following delegate type:  
+## Lambdas with the standard query operators
+
+ Many standard query operators have an input parameter whose type is one of the <xref:System.Func%602> family of generic delegates. These delegates use type parameters to define the number and types of input parameters, and the return type of the delegate. `Func` delegates are very useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the following delegate type:  
   
 ```csharp  
 public delegate TResult Func<TArg0, TResult>(TArg0 arg0)  
@@ -185,7 +188,8 @@ var firstNumbersLessThan6 = numbers.TakeWhile(n => n < 6);
 var firstSmallNumbers = numbers.TakeWhile((n, index) => n >= index);  
 ```  
   
-## Type Inference in Lambdas  
+## Type inference in lambdas
+
  When writing lambdas, you often do not have to specify a type for the input parameters because the compiler can infer the type based on the lambda body, the parameter’s delegate type, and other factors as described in the C# Language Specification. For most of the standard query operators, the first input is the type of the elements in the source sequence. So if you are querying an `IEnumerable<Customer>`, then the input variable is inferred to be a `Customer` object, which means you have access to its methods and properties:  
   
 ```csharp  
@@ -202,7 +206,8 @@ customers.Where(c => c.City == "London");
   
  Note that lambda expressions in themselves do not have a type because the common type system has no intrinsic concept of "lambda expression." However, it is sometimes convenient to speak informally of the "type" of a lambda expression. In these cases the type refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.  
   
-## Variable Scope in Lambda Expressions  
+## Variable scope in lambda expressions
+
  Lambdas can refer to *outer variables* (see [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)) that are in scope in the method that defines the lambda function, or in scope in the type that contains the lambda expression. Variables that are captured in this manner are stored for use in the lambda expression even if the variables would otherwise go out of scope and be garbage collected. An outer variable must be definitely assigned before it can be consumed in a lambda expression. The following example demonstrates these rules:  
   
 ```csharp  
@@ -263,18 +268,20 @@ class Test
   
 -   A lambda expression cannot contain a `goto` statement, `break` statement, or `continue` statement that is inside the lambda function if the jump statement’s target is outside the block. It is also an error to have a jump statement outside the lambda function block if the target is inside the block.  
   
-## C# Language Specification  
+## C# language specification
+
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## Featured Book Chapter  
+## Featured book chapter
+
  [Delegates, Events, and Lambda Expressions](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518994%28v=orm.10%29) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518995%28v=orm.10%29)  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [LINQ (Language-Integrated Query)](../../../csharp/programming-guide/concepts/linq/index.md)  
-- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
-- [is](../../../csharp/language-reference/keywords/is.md)  
-- [Expression Trees](../../../csharp/programming-guide/concepts/expression-trees/index.md)  
-- [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [LINQ (Language-Integrated Query)](../../../csharp/programming-guide/concepts/linq/index.md)
+- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)
+- [is](../../../csharp/language-reference/keywords/is.md)
+- [Expression Trees](../../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
 - [Recursive lambda expressions](https://blogs.msdn.microsoft.com/madst/2007/05/11/recursive-lambda-expressions/)

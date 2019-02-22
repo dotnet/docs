@@ -32,9 +32,9 @@ The <xref:System.Net.WebResponse> class is an abstract base class that provides 
   
  The stream instance returned by the **GetResponseStream** method is owned by the application and can be closed without closing the **WebResponse**. By convention, calling the **WebResponse.Close** method also closes the stream returned by **GetResponse**.  
   
-## See Also  
- <xref:System.Net.WebResponse>  
- <xref:System.Net.HttpWebResponse>  
- <xref:System.Net.FileWebResponse>  
- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)  
- [Deriving from WebRequest](../../../docs/framework/network-programming/deriving-from-webrequest.md)
+## See also
+- <xref:System.Net.WebResponse>
+- <xref:System.Net.HttpWebResponse>
+- <xref:System.Net.FileWebResponse>
+- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)
+- [Deriving from WebRequest](../../../docs/framework/network-programming/deriving-from-webrequest.md)

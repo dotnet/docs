@@ -15,5 +15,5 @@ This section briefly explains the concepts that make up the Windows Communicatio
   
  [Peer Resolvers](../../../../docs/framework/wcf/feature-details/peer-resolvers.md):  Discusses the use of Peer Name Resolution Protocol (PRNP) and other custom resolvers.  
   
-## See Also  
- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+## See also
+- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

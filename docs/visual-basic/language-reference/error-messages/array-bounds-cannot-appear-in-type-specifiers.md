@@ -27,5 +27,5 @@ Array sizes cannot be declared as part of a data type specifier.
     Dim Array2() As Integer = New Integer(8) {}  
     ```  
   
-## See Also  
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+## See also
+- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

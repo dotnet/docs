@@ -41,7 +41,7 @@ public interface ICalculator
   
 -   Applying the <xref:System.ServiceModel.ServiceContractAttribute> and <xref:System.ServiceModel.OperationContractAttribute> attributes causes the automatic generation of service contract definitions in a Web Services Description Language (WSDL) document once the service is deployed. The document is downloaded by appending `?wsdl` to the HTTP base address for the service. For example, `http://microsoft/CalculatorService?wsdl`  
   
-## See Also  
- <xref:System.ServiceModel.OperationContractAttribute>  
- [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)  
- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
+## See also
+- <xref:System.ServiceModel.OperationContractAttribute>
+- [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)
+- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)

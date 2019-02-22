@@ -28,7 +28,7 @@ For your custom event to support event routing, you need to register a <xref:Sys
   
  To see an example of how bubbling events work, see [Handle a Routed Event](../../../../docs/framework/wpf/advanced/how-to-handle-a-routed-event.md).  
   
-## See Also  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)
+## See also
+- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)

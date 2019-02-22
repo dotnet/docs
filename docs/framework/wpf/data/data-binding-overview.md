@@ -423,11 +423,11 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
 ## Debugging Mechanism  
  You can set the attached property <xref:System.Diagnostics.PresentationTraceSources.TraceLevel%2A?displayProperty=nameWithType> on a binding-related object to receive information about the status of a specific binding.  
   
-## See Also  
- <xref:System.Windows.Controls.DataErrorValidationRule>  
- [What's New in WPF Version 4.5](../../../../docs/framework/wpf/getting-started/whats-new.md)  
- [Bind to the Results of a LINQ Query](../../../../docs/framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)  
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
- [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)  
- [Bind to an ADO.NET Data Source](../../../../docs/framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md)
+## See also
+- <xref:System.Windows.Controls.DataErrorValidationRule>
+- [What's New in WPF Version 4.5](../../../../docs/framework/wpf/getting-started/whats-new.md)
+- [Bind to the Results of a LINQ Query](../../../../docs/framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)
+- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)
+- [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Bind to an ADO.NET Data Source](../../../../docs/framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md)

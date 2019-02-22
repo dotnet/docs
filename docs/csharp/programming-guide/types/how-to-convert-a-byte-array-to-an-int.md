@@ -39,8 +39,8 @@ This example shows you how to use the <xref:System.BitConverter> class to conver
   
  [!code-csharp[csProgGuideTypes#23](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-a-byte-array-to-an-int_2.cs)]  
   
-## See Also
+## See also
 
-- <xref:System.BitConverter>  
-- <xref:System.BitConverter.IsLittleEndian>  
+- <xref:System.BitConverter>
+- <xref:System.BitConverter.IsLittleEndian>
 - [Types](../../../csharp/programming-guide/types/index.md)

@@ -13,5 +13,5 @@ Windows Communication Foundation (WCF) services publish metadata by publishing o
  [How to: Publish Metadata for a Service Using Code](../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md)  
  Demonstrates how to enable metadata publishing for a WCF service in code so that clients can retrieve the metadata using a WS-MetadataExchange or an HTTP/GET request using the `?wsdl` query string.  
   
-## See Also  
- [Publishing Metadata](../../../docs/framework/wcf/feature-details/publishing-metadata.md)
+## See also
+- [Publishing Metadata](../../../docs/framework/wcf/feature-details/publishing-metadata.md)

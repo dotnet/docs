@@ -1,5 +1,5 @@
 ---
-title: Parameters and Arguments (F#)
+title: Parameters and Arguments
 description: Learn about F# language support for defining parameters and passing arguments to functions, methods, and properties.
 ms.date: 05/16/2016
 ---
@@ -134,7 +134,17 @@ type C =
         printfn "%s" message
 ```
 
-The value given as argument to `DefaultParameterValue` must match the type of the parameter, i.e. the following is not allowed:
+You can also specify a new object as a default parameter value. For example, the `Foo` member could have an optional `CanceallationToken` as input instead:
+
+```fsharp
+open System.Threading
+open System.Runtime.InteropServices
+type C = 
+    static member Foo([<Optional; DefaultParameterValue(CancellationToken())>] ct: CancellationToken) =
+        printfn "%A" ct
+```
+
+The value given as argument to `DefaultParameterValue` must match the type of the parameter. For example, the following is not allowed:
 
 ```fsharp
 type C =

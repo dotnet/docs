@@ -91,6 +91,6 @@ An important part of Visual Basic is the ability to create Windows Forms applica
   
 ## See also
 
-- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
-- [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)  
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>
+- [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)
 - [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)

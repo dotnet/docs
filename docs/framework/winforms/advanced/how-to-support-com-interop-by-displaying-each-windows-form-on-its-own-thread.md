@@ -22,7 +22,7 @@ You can resolve COM interoperability problems by displaying your form on a [!INC
   
  There is extensive support for this feature in Visual Studio.  
   
- Also see [Walkthrough: Supporting COM Interop by Displaying Each Windows Form on Its Own Thread](https://msdn.microsoft.com/library/ms233639\(v=vs.110\)).  
+ Also see [Walkthrough: Supporting COM Interop by Displaying Each Windows Form on Its Own Thread](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233639(v=vs.100)).  
   
 ## Example  
  The following code example demonstrates how to display the form on a separate thread and call the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method to start a Windows Forms message pump on that thread. To use this approach, you must marshal any calls to the form from the unmanaged application by using the <xref:System.Windows.Forms.Control.Invoke%2A> method.  
@@ -39,9 +39,9 @@ You can resolve COM interoperability problems by displaying your form on a [!INC
   
 -   Compile the `COMForm`, `Form1`, and `FormManager` types into an assembly called `COMWinform.dll`. Register the assembly for COM interop by using one of the methods described in [Packaging an Assembly for COM](../../../../docs/framework/interop/packaging-an-assembly-for-com.md). You can now use the assembly and its corresponding type library (.tlb) file in unmanaged applications. For example, you can use the type library as a reference in a Visual Basic 6.0 executable project.  
   
-## See Also  
- [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
- [Packaging an Assembly for COM](../../../../docs/framework/interop/packaging-an-assembly-for-com.md)  
- [Registering Assemblies with COM](../../../../docs/framework/interop/registering-assemblies-with-com.md)  
- [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](../../../../docs/framework/winforms/advanced/com-interop-by-displaying-a-windows-form-shadow.md)  
- [Windows Forms and Unmanaged Applications Overview](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications-overview.md)
+## See also
+- [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md)
+- [Packaging an Assembly for COM](../../../../docs/framework/interop/packaging-an-assembly-for-com.md)
+- [Registering Assemblies with COM](../../../../docs/framework/interop/registering-assemblies-with-com.md)
+- [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](../../../../docs/framework/winforms/advanced/com-interop-by-displaying-a-windows-form-shadow.md)
+- [Windows Forms and Unmanaged Applications Overview](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications-overview.md)

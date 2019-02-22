@@ -33,6 +33,6 @@ WHEN when_expression THEN then_expression
   
  [!code-csharp[DP EntityServices Concepts 2#CASE_WHEN_THEN_ELSE](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#case_when_then_else)]  
   
-## See Also  
- [CASE](../../../../../../docs/framework/data/adonet/ef/language-reference/case-entity-sql.md)  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+## See also
+- [CASE](../../../../../../docs/framework/data/adonet/ef/language-reference/case-entity-sql.md)
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

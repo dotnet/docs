@@ -1,10 +1,10 @@
 ---
-title: "&lt;system.serviceModel&gt; of workflow"
+title: "<system.serviceModel> of workflow"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 6a8eb2bf-f925-40e1-ba5c-a49b1d3a3ac6
 ---
-# &lt;system.serviceModel&gt; of workflow
+# \<system.serviceModel> of workflow
 This configuration section contains all the workflow configuration elements.  
   
 ## Syntax  

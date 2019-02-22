@@ -1,9 +1,9 @@
 ---
-title: "&lt;service&gt;"
+title: "<service>"
 ms.date: "03/30/2017"
 ms.assetid: 13123dd6-c4a9-4a04-a984-df184b851788
 ---
-# &lt;service&gt;
+# \<service>
 The `service` element contains the settings for a Windows Communication Foundation (WCF) service. It also contains endpoints that expose the service.  
   
  \<system.ServiceModel>  
@@ -13,9 +13,9 @@ The `service` element contains the settings for a Windows Communication Foundati
 ## Syntax  
   
 ```xml  
-<service behaviorConfiguration=String"  
-        name="String">  
-</service>  
+<service behaviorConfiguration="String"
+         name="String">
+</service>
 ```  
   
 ## Attributes and Elements  
@@ -52,17 +52,16 @@ The `service` element contains the settings for a Windows Communication Foundati
  This is an example of a service configuration.  
   
 ```xml  
-<service behaviorConfiguration="testChannelBehavior"   
-     name="HelloWorld">  
-     <endpoint   
-        address="/HelloWorld2/"  
-        name="test"  
-        bindingNamespace="http://www.cohowinery.com/"  
-        binding="basicHttpBinding"  
-        contract="IHelloWorld" />  
-</service>  
+<service behaviorConfiguration="testChannelBehavior"
+         name="HelloWorld">
+  <endpoint address="/HelloWorld2/"
+            name="test"
+            bindingNamespace="http://www.cohowinery.com/"
+            binding="basicHttpBinding"
+            contract="IHelloWorld" />
+</service>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceElement>  
- [Configuring Services](../../../../../docs/framework/wcf/configuring-services.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceElement>
+- [Configuring Services](../../../../../docs/framework/wcf/configuring-services.md)

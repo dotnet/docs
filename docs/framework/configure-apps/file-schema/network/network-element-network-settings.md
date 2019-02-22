@@ -1,5 +1,5 @@
 ---
-title: "&lt;network&gt; Element (Network Settings)"
+title: "<network> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#network"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "network element"
 ms.assetid: 2c2c6ad4-ed11-48ab-b28e-2bc0ba9b42c7
 ---
-# &lt;network&gt; Element (Network Settings)
+# \<network> Element (Network Settings)
 Configures the network options for an external Simple Mail Transport Protocol (SMTP) server.  
   
  \<configuration>  
@@ -103,8 +103,8 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>  
-- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
-- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
+## See also
+- <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

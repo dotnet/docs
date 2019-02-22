@@ -1,5 +1,5 @@
 ---
-title: "&lt;mailSettings&gt; Element (Network Settings)"
+title: "<mailSettings> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#mailSettings"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<mailSettings> element"
 ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
 ---
-# &lt;mailSettings&gt; Element (Network Settings)
+# \<mailSettings> Element (Network Settings)
 Configures mail sending options.  
 
 \<configuration>  
@@ -20,7 +20,7 @@ Configures mail sending options.
   
 ```xml  
 <mailSettings>
-  <smtp> … </smtp>  
+  <smtp>...</smtp>  
 </mailSettings>
 ```  
   
@@ -61,6 +61,6 @@ Configures mail sending options.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.Mail.SmtpClient>  
+## See also
+- <xref:System.Net.Mail.SmtpClient>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

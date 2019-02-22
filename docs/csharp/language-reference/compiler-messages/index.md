@@ -23,10 +23,10 @@ Some C# compiler errors have corresponding topics that explain why the error is 
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-## See Also
+## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
-- [Sorry, we don't have specifics on this C# error](../../../csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md)  
-- [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)  
-- [/warn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/warn-compiler-option.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Sorry, we don't have specifics on this C# error](../../../csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md)
+- [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)
+- [/warn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/warn-compiler-option.md)
 - [/nowarn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md)

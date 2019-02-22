@@ -52,11 +52,11 @@ The topic describes methods to enable interoperability between C# managed code a
   
  For more information, see [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md) and [Example COM Class](../../../csharp/programming-guide/interop/example-com-class.md).  
   
-## See Also
+## See also
 
-- [Improving Interop Performance](https://docs.microsoft.com/previous-versions/msp-n-p/ff647812%28v=pandp.10%29)  
-- [Introduction to Interoperability between COM and .NET](/office/client-developer/outlook/pia/introduction-to-interoperability-between-com-and-net)  
-- [Introduction to COM Interop in Visual Basic](../../../../docs/visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)  
-- [Marshaling between Managed and Unmanaged Code](../../../../docs/framework/interop/interop-marshaling.md)  
-- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
+- [Improving Interop Performance](https://docs.microsoft.com/previous-versions/msp-n-p/ff647812%28v=pandp.10%29)
+- [Introduction to Interoperability between COM and .NET](/office/client-developer/outlook/pia/introduction-to-interoperability-between-com-and-net)
+- [Introduction to COM Interop in Visual Basic](../../../../docs/visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)
+- [Marshaling between Managed and Unmanaged Code](../../../../docs/framework/interop/interop-marshaling.md)
+- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)

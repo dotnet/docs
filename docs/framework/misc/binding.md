@@ -1,10 +1,10 @@
 ---
-title: "&lt;binding&gt;"
+title: "<binding>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 666183d6-4d1f-45c7-ac64-bdf93ee8f36f
 ---
-# &lt;binding&gt;
+# \<binding>
 You can use the `binding` element to configure different types of predefined bindings provided by Windows Communication Foundation (WCF).  
   
 ## System-Provided Binding  
@@ -31,10 +31,10 @@ You can use the `binding` element to configure different types of predefined bin
   
  Custom bindings are identified by their `name` attribute.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.BindingsSection>  
- <xref:System.ServiceModel.Channels.Binding>  
- <xref:System.ServiceModel.Channels.BindingElement>  
- [Bindings](../../../docs/framework/wcf/bindings.md)  
- [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.BindingsSection>
+- <xref:System.ServiceModel.Channels.Binding>
+- <xref:System.ServiceModel.Channels.BindingElement>
+- [Bindings](../../../docs/framework/wcf/bindings.md)
+- [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

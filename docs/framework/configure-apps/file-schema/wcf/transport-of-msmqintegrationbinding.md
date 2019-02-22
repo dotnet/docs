@@ -1,9 +1,9 @@
 ---
-title: "&lt;transport&gt; of &lt;msmqIntegrationBinding&gt;"
+title: "<transport> of <msmqIntegrationBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 054579e3-7fdd-47df-99ca-952706ba5c8e
 ---
-# &lt;transport&gt; of &lt;msmqIntegrationBinding&gt;
+# \<transport> of \<msmqIntegrationBinding>
 Defines the security settings for the Message Queuing integration transport.  
   
  \<system.ServiceModel>  
@@ -16,12 +16,12 @@ msmqIntegrationBinding
 ## Syntax  
   
 ```xml  
-<security>  
-    <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
-        msmqEncryptionAlgorithm="RC4Stream/AES"  
-        msmqProtectionLevel="None/Sign/EncryptAndSign"  
-        msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-</security>  
+<security>
+  <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"
+             msmqEncryptionAlgorithm="RC4Stream/AES"
+             msmqProtectionLevel="None/Sign/EncryptAndSign"
+             msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />
+</security>
 ```  
   
 ## Attributes and Elements  
@@ -48,14 +48,14 @@ msmqIntegrationBinding
 ## Remarks  
  This element encapsulates the security settings for the Message Queuing integration transport. The settings are the same for both the Message Queuing integration and queued transports. It enables you to set the Authentication Mode, Encryption Algorithm, Secure Hash Algorithm, and Protection Level.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>  
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Transport%2A>  
- <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement.Transport%2A>  
- <xref:System.ServiceModel.MsmqTransportSecurity>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>
+- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Transport%2A>
+- <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement.Transport%2A>
+- <xref:System.ServiceModel.MsmqTransportSecurity>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

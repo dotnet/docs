@@ -103,9 +103,9 @@ The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <x
     > [!NOTE]
     >  The <xref:System.Windows.Forms.BindingSource.CancelEdit%2A> method is scoped to the row of data. Save any changes you make while viewing that individual record before navigating to the next record.  
   
-## See Also  
- <xref:System.Windows.Forms.BindingNavigator>  
- <xref:System.Windows.Forms.BindingSource>  
- <xref:System.Windows.Forms.ToolStrip>  
- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)  
- [BindingSource Component Overview](../../../../docs/framework/winforms/controls/bindingsource-component-overview.md)
+## See also
+- <xref:System.Windows.Forms.BindingNavigator>
+- <xref:System.Windows.Forms.BindingSource>
+- <xref:System.Windows.Forms.ToolStrip>
+- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)
+- [BindingSource Component Overview](../../../../docs/framework/winforms/controls/bindingsource-component-overview.md)

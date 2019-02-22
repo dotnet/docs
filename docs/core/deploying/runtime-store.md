@@ -141,5 +141,5 @@ When the deployment is *trimmed* on publish, only the specific versions of the m
 
 ## See also
 
-* [dotnet-publish](../tools/dotnet-publish.md)  
-* [dotnet-store](../tools/dotnet-store.md)  
+- [dotnet-publish](../tools/dotnet-publish.md)
+- [dotnet-store](../tools/dotnet-store.md)

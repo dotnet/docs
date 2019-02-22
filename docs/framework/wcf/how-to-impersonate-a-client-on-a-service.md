@@ -39,8 +39,8 @@ Impersonating a client on a Windows Communication Foundation (WCF) service enabl
      [!code-csharp[c_SimpleImpersonation#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_simpleimpersonation/cs/source.cs#1)]
      [!code-vb[c_SimpleImpersonation#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_simpleimpersonation/vb/source.vb#1)]  
   
-## See Also  
- <xref:System.ServiceModel.OperationBehaviorAttribute>  
- <xref:System.Security.Principal.TokenImpersonationLevel>  
- [Impersonating the Client](../../../docs/framework/wcf/samples/impersonating-the-client.md)  
- [Delegation and Impersonation](../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
+## See also
+- <xref:System.ServiceModel.OperationBehaviorAttribute>
+- <xref:System.Security.Principal.TokenImpersonationLevel>
+- [Impersonating the Client](../../../docs/framework/wcf/samples/impersonating-the-client.md)
+- [Delegation and Impersonation](../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)

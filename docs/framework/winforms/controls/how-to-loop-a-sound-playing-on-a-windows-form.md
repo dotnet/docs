@@ -25,7 +25,7 @@ The following code example plays a sound repeatedly. When the code in the `stopP
   
 -   That you replace the file name `"c:\Windows\Media\chimes.wav"` with a valid file name.  
   
- For information about building this example from the command line for visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
+ For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
 ## Robust Programming  
  File operations should be enclosed within appropriate exception-handling blocks.  
@@ -47,7 +47,7 @@ The following code example plays a sound repeatedly. When the code in the `stopP
 ## .NET Framework Security  
  Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a Visual Basic source file. Verify all inputs before using the data in your application.  
   
-## See Also  
- <xref:System.Media.SoundPlayer.PlayLooping%2A>  
- [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)  
- [SoundPlayer Class Overview](../../../../docs/framework/winforms/controls/soundplayer-class-overview.md)
+## See also
+- <xref:System.Media.SoundPlayer.PlayLooping%2A>
+- [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)
+- [SoundPlayer Class Overview](../../../../docs/framework/winforms/controls/soundplayer-class-overview.md)

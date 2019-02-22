@@ -63,7 +63,7 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create
 |`/Customers?$select=Orders/*&$expand=Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -and-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Not supported|Not supported|`Customers`: <xref:System.Data.Services.EntitySetRights.WriteAppend>|Not supported|  
 |`/Customers('ALFKI')?$select=Orders/*&$expand=Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -and-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Not supported|Not supported|Not supported|Not supported|  
   
- <sup>1</sup> In this example, `Address` represents a complex type property of the `Customers` entity that has a property named `StreetAddress`. The model used by the Northwind data services does not explicitly define this complex type. When the data model is defined by using the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider, you can use the [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] tools to define such a complex type. For more information, see [How to: Create and Modify Complex Types](https://msdn.microsoft.com/library/afb8e206-0ffe-4597-b6d4-6ab566897e1d).  
+ <sup>1</sup> In this example, `Address` represents a complex type property of the `Customers` entity that has a property named `StreetAddress`. The model used by the Northwind data services does not explicitly define this complex type. When the data model is defined by using the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider, you can use the [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] tools to define such a complex type. For more information, see [How to: Create and Modify Complex Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456820(v=vs.100)).  
   
  <sup>2</sup> This URI is supported when a property that returns a binary large object (BLOB) is defined as the media resource that belongs to an entity that is a media link entry, which in this case, is `Customers`. For more information, see [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md).  
   
@@ -77,6 +77,6 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create
   
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
-## See Also  
- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
- [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)
+## See also
+- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)

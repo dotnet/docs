@@ -19,7 +19,7 @@ ms.author: "ronpet"
 -   The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/method.html) for methods.  
   
 > [!NOTE]
->  This reference documents three exception types that are unique to [!INCLUDE[net_native](../../../includes/net-native-md.md)]. For reference documentation for the .NET Framework core reflection API, see [System.Reflection Namespaces](https://msdn.microsoft.com/library/gg145033.aspx). For reference documentation for the .NET Framework core interop API, see <xref:System.Runtime.InteropServices>.  
+>  This reference documents three exception types that are unique to [!INCLUDE[net_native](../../../includes/net-native-md.md)]. For reference documentation for the .NET Framework core reflection API, see the <xref:System.Reflection>, <xref:System.Reflection.Context> and <xref:System.Reflection.Emit> namespaces. For reference documentation for the .NET Framework core interop API, see <xref:System.Runtime.InteropServices>.  
   
 ## System.Reflection namespace  
  The <xref:System.Reflection> namespace contains the core types used for reflection in the .NET Framework. For [!INCLUDE[net_native](../../../includes/net-native-md.md)], it also includes two new exception types:  
@@ -40,8 +40,8 @@ ms.author: "ronpet"
   
  For documentation about the other types in this namespace, see the <xref:System.Runtime.CompilerServices> reference pages in the .NET Framework documentation set.  
   
-## See Also  
- [MissingInteropDataException Class](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)  
- [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)  
- [MissingRuntimeArtifactException Class](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)  
- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)
+## See also
+- [MissingInteropDataException Class](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)
+- [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)
+- [MissingRuntimeArtifactException Class](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)
+- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)

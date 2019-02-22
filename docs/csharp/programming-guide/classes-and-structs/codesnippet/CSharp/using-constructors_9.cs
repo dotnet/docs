@@ -1,4 +1,4 @@
             public Employee(int annualSalary)
             {
-                salary = annualSalary;
+                Salary = annualSalary;
             }

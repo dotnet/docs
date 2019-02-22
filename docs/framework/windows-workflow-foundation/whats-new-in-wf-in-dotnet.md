@@ -1,9 +1,9 @@
----
-title: "What&#39;s New in Windows Workflow Foundation in .NET 4.5"
+﻿---
+title: "What's New in Windows Workflow Foundation in .NET 4.5"
 ms.date: "03/30/2017"
 ms.assetid: 195c43a8-e0a8-43d9-aead-d65a9e6751ec
 ---
-# What&#39;s New in Windows Workflow Foundation in .NET 4.5
+# What's New in Windows Workflow Foundation in .NET 4.5
 Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] introduces many new features, such as new activities, designer capabilities, and workflow development models. Many, but not all, of the new workflow features introduced in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] are supported in the re-hosted workflow designer. For more information about the new features that are supported, see [Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer](../../../docs/framework/windows-workflow-foundation/wf-features-in-the-rehosted-workflow-designer.md). For more information about migrating .NET 3.0 and .NET 3.5 workflow applications to use the latest version, see [Migration Guidance](../../../docs/framework/windows-workflow-foundation/migration-guidance.md). This topic provides an overview of the new workflow features introduced in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)].  
   
 > [!WARNING]

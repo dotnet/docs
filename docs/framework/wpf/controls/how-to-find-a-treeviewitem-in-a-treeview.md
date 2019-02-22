@@ -35,5 +35,5 @@ The <xref:System.Windows.Controls.TreeView> control provides a convenient way to
   
  [!code-xaml[TreeViewFindTVI#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewFindTVI/CSharp/MainWindow.xaml#3)]  
   
-## See Also  
- [Improve the Performance of a TreeView](../../../../docs/framework/wpf/controls/how-to-improve-the-performance-of-a-treeview.md)
+## See also
+- [Improve the Performance of a TreeView](../../../../docs/framework/wpf/controls/how-to-improve-the-performance-of-a-treeview.md)

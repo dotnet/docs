@@ -1,9 +1,9 @@
 ---
-title: "&lt;bindings&gt;"
+title: "<bindings>"
 ms.date: "03/30/2017"
 ms.assetid: b62cd369-5409-4030-8490-9759a462dd3a
 ---
-# &lt;bindings&gt;
+# \<bindings>
 This section holds a collection of standard and custom bindings. Each entry is a `binding` element that can be identified by its unique `name`. Services use bindings by linking them using the `name`. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 ## System-Provided Binding  
@@ -32,11 +32,11 @@ This section holds a collection of standard and custom bindings. Each entry is a
   
  Custom bindings are identified by their `name` attribute. For more information on custom bindings, see [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md).  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.BindingsSection>  
- <xref:System.ServiceModel.Channels.Binding>  
- <xref:System.ServiceModel.Channels.BindingElement>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.BindingsSection>
+- <xref:System.ServiceModel.Channels.Binding>
+- <xref:System.ServiceModel.Channels.BindingElement>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

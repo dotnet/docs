@@ -1,5 +1,5 @@
 ---
-title: "Can&#39;t open &#39;&lt;filename&gt;&#39; for writing"
+title: "Can't open '<filename>' for writing"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc2012"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC2012"
 ms.assetid: 73270fe4-a638-42c7-be21-5e156e2b18f6
 ---
-# Can&#39;t open &#39;&lt;filename&gt;&#39; for writing
+# Can't open '\<filename>' for writing
 The specified file cannot be opened for writing, perhaps because it has already been opened.  
   
  **Error ID:** BC2012  
@@ -19,7 +19,7 @@ The specified file cannot be opened for writing, perhaps because it has already 
   
 2.  Check the file's permissions.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>  
- [Writing to Files](../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)
+## See also
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>
+- [Writing to Files](../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

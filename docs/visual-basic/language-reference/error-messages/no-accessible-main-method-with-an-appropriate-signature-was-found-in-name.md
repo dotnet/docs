@@ -1,5 +1,5 @@
 ---
-title: "No accessible &#39;Main&#39; method with an appropriate signature was found in &#39;&lt;name&gt;&#39;"
+title: "No accessible 'Main' method with an appropriate signature was found in '<name>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30737"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30737"
 ms.assetid: 3f40bacd-3fac-4741-b204-852f693d4340
 ---
-# No accessible &#39;Main&#39; method with an appropriate signature was found in &#39;&lt;name&gt;&#39;
+# No accessible 'Main' method with an appropriate signature was found in '\<name>'
 Command-line applications must have a `Sub Main` defined. `Main` must be declared as `Public Shared` if it is defined in a class, or as `Public` if defined in a module.  
   
  **Error ID:** BC30737  
@@ -17,6 +17,6 @@ Command-line applications must have a `Sub Main` defined. `Main` must be declare
   
 -   Define a `Public Sub Main` procedure for your project. Declare it as `Shared` if and only if you define it inside a class.  
   
-## See Also  
- [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)  
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
+## See also
+- [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)
+- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)

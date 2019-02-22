@@ -39,8 +39,8 @@ Specifies the name of the cryptographic key container.
   
  You can programmatically access this compiler option with <xref:VSLangProj.ProjectProperties.AssemblyKeyContainerName%2A>.  
   
-## See Also
+## See also
 
 - [C# Compiler -keyfile option](keyfile-compiler-option.md)
-- [C# Compiler Options](index.md)  
+- [C# Compiler Options](index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

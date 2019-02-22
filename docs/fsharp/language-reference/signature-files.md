@@ -1,5 +1,5 @@
 ---
-title: Signature files (F#)
+title: Signature files
 description: Learn how to use F# signature files to hold information about the public signatures of a set of F# program elements, such as types, namespaces, and modules.
 ms.date: 06/15/2018
 ---
@@ -23,6 +23,7 @@ If there is not enough information in the type signature to indicate whether a t
 |---------|-----------|
 |`[<Sealed>]`|For a type that has no abstract members, or that should not be extended.|
 |`[<Interface>]`|For a type that is an interface.|
+
 The compiler produces an error if the attributes are not consistent between the signature and the declaration in the implementation file.
 
 Use the keyword `val` to create a signature for a value or function value. The keyword `type` introduces a type signature.

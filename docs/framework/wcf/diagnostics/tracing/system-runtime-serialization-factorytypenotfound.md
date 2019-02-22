@@ -9,7 +9,7 @@ System.Runtime.Serialization.FactoryTypeNotFound
 ## Description  
  The deserializer has no knowledge of the type to use during deserialization. Consider adding the type specified as factory type in the XML to the list of known types - for example by using the KnownTypeAttribute attribute.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+## See also
+- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

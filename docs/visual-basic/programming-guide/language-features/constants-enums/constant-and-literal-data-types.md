@@ -55,14 +55,14 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
 |`Single`|(none)|F or !|  
 |`String`|"|(none)|  
   
-## See Also  
- [User-Defined Constants](../../../../visual-basic/programming-guide/language-features/constants-enums/user-defined-constants.md)  
- [How to: Declare A Constant](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md)  
- [Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)  
- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Option Explicit Statement](../../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
- [Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)  
- [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)  
- [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
- [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)
+## See also
+- [User-Defined Constants](../../../../visual-basic/programming-guide/language-features/constants-enums/user-defined-constants.md)
+- [How to: Declare A Constant](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md)
+- [Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)
+- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Option Explicit Statement](../../../../visual-basic/language-reference/statements/option-explicit-statement.md)
+- [Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)
+- [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)
+- [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)
+- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
+- [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)

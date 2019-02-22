@@ -52,8 +52,8 @@ An isolated store exposes a virtual file system within a data compartment. The <
   
 ## See also
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
-- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>  
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)  
-- [Types of Isolation](../../../docs/standard/io/types-of-isolation.md)  
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
+- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>
+- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- [Types of Isolation](../../../docs/standard/io/types-of-isolation.md)
 - [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)

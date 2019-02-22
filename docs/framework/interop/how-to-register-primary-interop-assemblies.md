@@ -43,8 +43,8 @@ Use the [Assembly Registration Tool (Regasm.exe)](../../../docs/framework/tools/
 regasm CompanyA.UtilLib.dll
 ```
 
-## See Also
+## See also
 
-- [Programming with Primary Interop Assemblies](https://msdn.microsoft.com/library/306fa1d6-0703-4004-9e93-d0a57f1be81e(v=vs.100))
-- [Locating Primary Interop Assemblies](https://msdn.microsoft.com/library/d6768e4b-cd80-414d-a4f8-05d979eb393b(v=vs.100))
-- [Redistributing Primary Interop Assemblies](https://msdn.microsoft.com/library/e76384f0-d631-474c-bdbd-13884cba0265(v=vs.100))
+- [Programming with Primary Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/baxfadst(v=vs.100))
+- [Locating Primary Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y06sxw56(v=vs.100))
+- [Redistributing Primary Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w0dt2w20(v=vs.100))

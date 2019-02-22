@@ -1,8 +1,7 @@
 ---
 title: "in parameter modifier - C# Reference"
 ms.custom: seodec18
-
-ms.date: 03/06/2018
+ms.date: 02/12/2019
 helpviewer_keywords: 
   - "parameters [C#], in"
   - "in parameters [C#]"
@@ -16,11 +15,14 @@ The `in` keyword causes arguments to be passed by reference. It is like the [ref
 
 The preceding example demonstrates that the `in` modifier is usually unnecessary at the call site. It is only required in the method declaration.
 
+
 > [!NOTE] 
 > The `in` keyword can also be used with a generic type parameter to specify that the type parameter is contravariant, as part of a `foreach` statement, or as part of a `join` clause in a LINQ query. For more information on the use of the `in` keyword in these contexts, see [in](in.md), which provides links to all those uses.
   
  Variables passed as `in` arguments must be initialized before being passed in a method call. However, the called method may not assign a value or modify the argument.  
-  
+
+The `in` parameter modifier is available in C# 7.2 and later. Previous versions generate compiler error `CS8107` ("Feature 'readonly references' is not available in C# 7.0. Please use language version 7.2 or greater.") To configure the compiler language version, see [Select the C# language version](../configure-language-version.md).
+
  Although the `in`, `ref`, and `out` keywords cause different run-time behavior, they are not considered part of the method signature at compile time. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument. The following code, for example, will not compile:  
   
 ```csharp
@@ -115,10 +117,10 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
-- [Method Parameters](method-parameters.md)  
-- [Write safe efficient code](../../write-safe-efficient-code.md)  
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [Method Parameters](method-parameters.md)
+- [Write safe efficient code](../../write-safe-efficient-code.md)

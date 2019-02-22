@@ -31,7 +31,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 <system.ServiceModel>  
   
    <services>  
-   <!—- Define the service endpoints. This section is optional in the new  
+   <!-- Define the service endpoints. This section is optional in the new  
     default configuration model in .NET Framework 4. -->  
       <service>  
          <endpoint/>  
@@ -85,7 +85,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
 -   `contract`. Specifies the interface that defines the contract. This is the interface implemented in the common language runtime (CLR) type specified by the `name` attribute of the `service` element.  
   
--   [\<endpoint> element reference](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017)  
+-   [\<endpoint>](../configure-apps/file-schema/wcf/endpoint-element.md)  
   
 ### The \<bindings> Element  
  The `bindings` element contains the specifications for all bindings that can be used by any endpoint defined in any service.  
@@ -95,7 +95,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ### The \<binding> Element  
  The `binding` elements contained in the `bindings` element can be either one of the system-provided bindings (see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)) or a custom binding (see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)). The `binding` element has a `name` attribute that correlates the binding with the endpoint specified in the `bindingConfiguration` attribute of the `endpoint` element. If no name is specified then that binding corresponds to the default of that binding type.  
   
- For more information about configuring services and clients, see [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a).  
+For more information about configuring services and clients, see [Configuring WCF services](configuring-services.md).
   
  [\<binding>](../../../docs/framework/misc/binding.md)  
   
@@ -120,7 +120,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
     <basicHttpBinding>  
      <binding name="myBindingConfiguration1" closeTimeout="00:01:00" />  
      <binding name="myBindingConfiguration2" closeTimeout="00:02:00" />  
-     <binding closeTimeout="00:03:00" />  <!—- Default binding for basicHttpBinding -->  
+     <binding closeTimeout="00:03:00" />  <!-- Default binding for basicHttpBinding -->  
     </basicHttpBinding>  
      </bindings>  
      <services>  
@@ -256,8 +256,8 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
  If a child behavior collection contains a behavior that’s already present in the parent behavior collection, the child behavior overrides the parent. So if a parent behavior collection had `<serviceMetadata httpGetEnabled="False" />` and a child behavior collection had `<serviceMetadata httpGetEnabled="True" />`, the child behavior would override the parent behavior in the behavior collection and httpGetEnabled would be "true".  
   
-## See Also  
- [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)  
- [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)  
- [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)  
- [\<binding>](../../../docs/framework/misc/binding.md)
+## See also
+- [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
+- [Configuring WCF services](configuring-services.md)
+- [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)
+- [\<binding>](../../../docs/framework/misc/binding.md)

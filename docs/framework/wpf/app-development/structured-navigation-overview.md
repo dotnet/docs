@@ -163,7 +163,7 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
  In other cases, applications may have complex navigation topologies that depend on structured navigation to operate effectively. For more information, see [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md).  
   
-## See Also  
- <xref:System.Windows.Navigation.PageFunction%601>  
- <xref:System.Windows.Navigation.NavigationService>  
- [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)
+## See also
+- <xref:System.Windows.Navigation.PageFunction%601>
+- <xref:System.Windows.Navigation.NavigationService>
+- [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)

@@ -31,7 +31,7 @@ This section contains topics that cover how to log information from your applica
 |Create a custom log listener for `My.Application.Log`.|[Walkthrough: Creating Custom Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)|  
 |Filter the output of the `My.Application.Log` logs.|[Walkthrough: Filtering My.Application.Log Output](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-filtering-my-application-log-output.md)|  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
- [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)  
- [Troubleshooting: Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/troubleshooting-log-listeners.md)
+## See also
+- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
+- [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)
+- [Troubleshooting: Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/troubleshooting-log-listeners.md)

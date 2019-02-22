@@ -18,6 +18,6 @@ One important goal for IPv6 is to support node Plug and Play. That is, it should
 ## IPv6 Mobility  
  The proliferation of mobile devices has introduced a new requirement: A device must be able to arbitrarily change locations on the IPv6 Internet and still maintain existing connections. To provide this functionality, a mobile node is assigned a home address at which it can always be reached. When the mobile node is at home, it connects to the home link and uses its home address. When the mobile node is away from home, a home agent, which is usually a router, relays messages between the mobile node and nodes with which it is communicating.  
   
-## See Also  
- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)  
- [Sockets](../../../docs/framework/network-programming/sockets.md)
+## See also
+- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)
+- [Sockets](../../../docs/framework/network-programming/sockets.md)

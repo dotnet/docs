@@ -43,7 +43,7 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
   
 2.  In **Solution Explorer**, delete the project's default control by deleting the source file named "UserControl1.cs" or "UserControl1.vb", depending on your language of choice.  
   
-     For more information, see [NIB:How to: Remove, Delete, and Exclude Items](https://msdn.microsoft.com/library/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73).  
+     For more information, see [How to: Remove, Delete, and Exclude Items](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/0ebzhwsk(v=vs.100)).  
   
 3.  Add a new <xref:System.Windows.Forms.UserControl> item to the **StackViewLibrary** project. Give the new source file a base name of `StackView`.  
   
@@ -115,7 +115,7 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
   
 8.  Rename the `mailStackButton_Click` event handler to `stackButton_Click`.  
   
-     For more information, see [How to: Rename an Identifier (Visual Basic)](https://msdn.microsoft.com/library/e5a5edf8-3dba-4119-81f4-fc2aba180e0c).  
+     For more information, see [Rename a code symbol refactoring](/visualstudio/ide/reference/rename).  
   
 9. Insert the following code into the `stackButton_Click` event handler.  
   
@@ -129,7 +129,7 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
 12. Repeat steps 10 and 11 for the `contactsStackButton` and `tasksStackButton` controls.  
   
 ## Defining Icons  
- Each `StackView` button has an associated icon. For convenience, each icon is represented as a Base64-encoded string, which is deserialized before a <xref:System.Drawing.Bitmap> is created from it. In a production environment, you store bitmap data as a resource, and your icons appear in the Windows Forms Designer. For more information, see [How to: Add Background Images to Windows Forms](https://msdn.microsoft.com/library/7a509ba2-055c-4ae6-b88a-54625c6d9aff).  
+ Each `StackView` button has an associated icon. For convenience, each icon is represented as a Base64-encoded string, which is deserialized before a <xref:System.Drawing.Bitmap> is created from it. In a production environment, you store bitmap data as a resource, and your icons appear in the Windows Forms Designer. For more information, see [How to: Add Background Images to Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dff9f95f(v=vs.100)).  
   
 #### To define icons  
   
@@ -178,9 +178,9 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
   
 -   Create a multiple document interface (MDI) form with docking <xref:System.Windows.Forms.ToolStrip> controls. For more information, see [How to: Create an MDI Form with Menu Merging and ToolStrip Controls](../../../../docs/framework/winforms/controls/how-to-create-an-mdi-form-with-menu-merging-and-toolstrip-controls.md).  
   
-## See Also  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.StatusStrip>  
- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)  
- [How to: Provide Standard Menu Items to a Form](../../../../docs/framework/winforms/controls/how-to-provide-standard-menu-items-to-a-form.md)
+## See also
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.StatusStrip>
+- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+- [How to: Provide Standard Menu Items to a Form](../../../../docs/framework/winforms/controls/how-to-provide-standard-menu-items-to-a-form.md)

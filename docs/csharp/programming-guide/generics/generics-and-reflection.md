@@ -39,9 +39,9 @@ Because the Common Language Runtime (CLR) has access to generic type information
 |<xref:System.Reflection.MethodBase.IsGenericMethodDefinition%2A>|Returns true if the current <xref:System.Reflection.MethodInfo> represents the definition of a generic method.|  
 |<xref:System.Reflection.MethodInfo.MakeGenericMethod%2A>|Substitutes the elements of an array of types for the type parameters of the current generic method definition, and returns a <xref:System.Reflection.MethodInfo> object representing the resulting constructed method.|  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Generics](../../../csharp/programming-guide/generics/index.md)  
-- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Generics](../../../csharp/programming-guide/generics/index.md)
+- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)
 - [Generics](~/docs/standard/generics/index.md)

@@ -84,10 +84,10 @@ When creating new applications or components, it is best to create .NET Framewor
     > [!NOTE]
     >  The COM objects you generate with Visual Basic cannot be used by other Visual Basic applications because they are not true COM objects. Attempts to add references to such COM objects will raise an error. For details, see [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.ComClassAttribute>  
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)  
- [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)  
- [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)
+## See also
+- <xref:Microsoft.VisualBasic.ComClassAttribute>
+- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
+- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
+- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)
+- [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)
+- [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)

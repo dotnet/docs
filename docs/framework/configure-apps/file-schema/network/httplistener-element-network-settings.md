@@ -1,9 +1,9 @@
 ---
-title: "&lt;httpListener&gt; Element (Network Settings)"
+title: "<httpListener> Element (Network Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
 ---
-# &lt;httpListener&gt; Element (Network Settings)
+# \<httpListener> Element (Network Settings)
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  
   
  \<configuration>  
@@ -131,8 +131,8 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 |Validation File||  
 |Can be Empty||  
   
-## See Also  
-- <xref:System.Net.Configuration.HttpListenerElement>  
-- <xref:System.Net.HttpListener>  
-- <xref:System.Net.HttpListenerRequest.Url%2A>  
+## See also
+- <xref:System.Net.Configuration.HttpListenerElement>
+- <xref:System.Net.HttpListener>
+- <xref:System.Net.HttpListenerRequest.Url%2A>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

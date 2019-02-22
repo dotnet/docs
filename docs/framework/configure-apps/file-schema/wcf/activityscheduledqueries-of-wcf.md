@@ -1,9 +1,9 @@
 ---
-title: "&lt;activityScheduledQueries&gt; of WCF"
+title: "<activityScheduledQueries> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: e351329f-9676-4f11-9b19-f4bac82f36fc
 ---
-# &lt;activityScheduledQueries&gt; of WCF
+# \<activityScheduledQueries> of WCF
 Represents a collection of queries that are used to track an activity scheduled for execution by a parent activity. The query is necessary for a tracking participant to subscribe to activity scheduled records.  
   
 For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
@@ -23,8 +23,8 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
     <trackingProfile name="Name">
       <workflow>
         <activityScheduledQueries>
-          <activityScheduledQuery activityName="String"   
-                                  childActivityName="String"/>
+          <activityScheduledQuery activityName="String"
+                                  childActivityName="String" />
         </activityScheduledQueries>
       </workflow>
     </trackingProfile>
@@ -52,7 +52,7 @@ None.
 |-------------|-----------------|  
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|A configuration element that contains all queries for a specific workflow identified by the `activityDefinitionId` property.|  
   
-## See also  
+## See also
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElementCollection>
 - <xref:System.Activities.Tracking.ActivityScheduledQuery>

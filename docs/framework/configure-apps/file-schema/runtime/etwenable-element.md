@@ -1,5 +1,5 @@
 ---
-title: "&lt;etwEnable&gt; Element"
+title: "<etwEnable> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "etwEnable element"
@@ -8,7 +8,7 @@ ms.assetid: 29dde982-6d8b-4099-8867-ad0d7733f6dc
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;etwEnable&gt; Element
+# \<etwEnable> Element
 Specifies whether to enable event tracing for Windows (ETW) for common language runtime events.  
   
  \<configuration> Element  
@@ -64,7 +64,7 @@ Specifies whether to enable event tracing for Windows (ETW) for common language 
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [Controlling .NET Framework Logging](../../../../../docs/framework/performance/controlling-logging.md)

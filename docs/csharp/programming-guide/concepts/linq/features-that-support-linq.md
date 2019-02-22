@@ -82,6 +82,6 @@ select new {name = cust.Name, phone = cust.Phone};
   
 -   [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)  
    
-## See Also
+## See also
 
 - [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)

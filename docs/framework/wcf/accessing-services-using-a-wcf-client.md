@@ -180,7 +180,7 @@ Many exceptions thrown by a WCF client are caused by an exception on the service
 
 When these types of exceptions occur, the best way to solve the problem is to turn on tracing on the service side and determine what exception occurred there. For more information about tracing, see [Tracing](../../../docs/framework/wcf/diagnostics/tracing/index.md) and [Using Tracing to Troubleshoot Your Application](../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).
 
-## See Also
+## See also
 
 - [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
 - [How to: Access Services with a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)

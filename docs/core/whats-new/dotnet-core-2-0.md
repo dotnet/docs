@@ -157,4 +157,4 @@ You can now install the .NET Core SDK independently of Visual Studio. This makes
 
 ## See also
 
-* [What's new in ASP.NET Core 2.0](/aspnet/core/aspnetcore-2.0)
+- [What's new in ASP.NET Core 2.0](/aspnet/core/aspnetcore-2.0)

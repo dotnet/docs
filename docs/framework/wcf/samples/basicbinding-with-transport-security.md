@@ -36,8 +36,8 @@ This sample demonstrates the use of SSL transport security with the basic bindin
    </services>  
   <bindings>  
     <basicHttpBinding>  
-      <!-- Configure basicHttpBinding with Transport security -- >  
-      <!-- mode and clientCredentialType set to None.-->  
+      <!-- Configure basicHttpBinding with Transport security -->  
+      <!-- mode and clientCredentialType set to None. -->  
       <binding name="Binding1">  
         <security mode="Transport">  
           <transport clientCredentialType="None"/>  
@@ -83,4 +83,4 @@ Press <ENTER> to terminate client.
   
 5.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-## See Also
+## See also

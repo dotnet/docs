@@ -14,8 +14,8 @@ This example shows how to use the <xref:System.Windows.Controls.GridViewRowPrese
   
  [!code-xaml[GridViewRowPresenterSample#GridViewRowPresenter](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridViewRowPresenterSample/CS/Window1.xaml#gridviewrowpresenter)]  
   
-## See Also  
- <xref:System.Windows.Controls.GridViewHeaderRowPresenter>  
- <xref:System.Windows.Controls.GridViewRowPresenter>  
- <xref:System.Windows.Controls.GridViewColumnCollection>  
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
+## See also
+- <xref:System.Windows.Controls.GridViewHeaderRowPresenter>
+- <xref:System.Windows.Controls.GridViewRowPresenter>
+- <xref:System.Windows.Controls.GridViewColumnCollection>
+- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)

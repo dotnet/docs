@@ -1,9 +1,9 @@
 ---
-title: "&lt;authentication&gt; of &lt;clientCertificate&gt; Element"
+title: "<authentication> of <clientCertificate> Element"
 ms.date: "03/30/2017"
 ms.assetid: 4a55eea2-1826-4026-b911-b7cc9e9c8bfe
 ---
-# &lt;authentication&gt; of &lt;clientCertificate&gt; Element
+# \<authentication> of \<clientCertificate> Element
 Specifies authentication behaviors for client certificates used by a service.  
   
  \<system.ServiceModel>  
@@ -17,14 +17,12 @@ Specifies authentication behaviors for client certificates used by a service.
 ## Syntax  
   
 ```xml  
-<authentication  
-customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
-certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
-includeWindowsGroups="Boolean"  
-mapClientCertificateToWindowsAccount="Boolean"  
-revocationMode="NoCheck/Online/Offline"  
-trustedStoreLocation="CurrentUser/LocalMachine"   
-/>  
+<authentication customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
+                certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
+                includeWindowsGroups="Boolean"
+                mapClientCertificateToWindowsAccount="Boolean"
+                revocationMode="NoCheck/Online/Offline"
+                trustedStoreLocation="CurrentUser/LocalMachine" />
 ```  
   
 ## Attributes and Elements  
@@ -83,30 +81,29 @@ trustedStoreLocation="CurrentUser/LocalMachine"
  The following code specifies an X.509 certificate and a custom validation type in the `<authentication>` element.  
   
 ```xml  
-<serviceBehaviors>  
- <behavior name="myServiceBehavior">  
-  <clientCertificate>  
-   <certificate   
-         findValue="www.cohowinery.com"   
-         storeLocation="CurrentUser"   
-         storeName="TrustedPeople"  
-         x509FindType="FindByIssuerName" />  
-   <authentication customCertificateValidatorType="MyTypes.Coho"  
-    certificateValidationMode="Custom"   
-    revocationMode="Offline"  
-    includeWindowsGroups="false"   
-    mapClientCertificateToWindowsAccount="true" />  
-  </clientCertificate>  
- </behavior>  
-</serviceBehaviors>  
+<serviceBehaviors>
+  <behavior name="myServiceBehavior">
+    <clientCertificate>
+      <certificate findValue="www.cohowinery.com"
+                   storeLocation="CurrentUser"
+                   storeName="TrustedPeople"
+                   x509FindType="FindByIssuerName" />
+      <authentication customCertificateValidatorType="MyTypes.Coho"
+                      certificateValidationMode="Custom"
+                      revocationMode="Offline"
+                      includeWindowsGroups="false"
+                      mapClientCertificateToWindowsAccount="true" />
+    </clientCertificate>
+  </behavior>
+</serviceBehaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>  
- <xref:System.ServiceModel.Security.X509CertificateValidationMode>  
- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Authentication%2A>  
- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Authentication%2A>  
- <xref:System.ServiceModel.Configuration.X509ClientCertificateAuthenticationElement>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [How to: Create a Service that Employs a Custom Certificate Validator](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+## See also
+- <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>
+- <xref:System.ServiceModel.Security.X509CertificateValidationMode>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Authentication%2A>
+- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Authentication%2A>
+- <xref:System.ServiceModel.Configuration.X509ClientCertificateAuthenticationElement>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [How to: Create a Service that Employs a Custom Certificate Validator](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
+- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

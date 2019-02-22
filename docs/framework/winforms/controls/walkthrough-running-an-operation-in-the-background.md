@@ -94,9 +94,9 @@ If you have an operation that will take a long time to complete, and you do not 
   
 -   Implement a class that supports the Asynchronous Pattern for Components. For more information, see [Implementing the Event-based Asynchronous Pattern](../../../../docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).  
   
-## See Also  
- <xref:System.ComponentModel.BackgroundWorker>  
- <xref:System.ComponentModel.DoWorkEventArgs>  
- [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)  
- [How to: Run an Operation in the Background](../../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
- [BackgroundWorker Component](../../../../docs/framework/winforms/controls/backgroundworker-component.md)
+## See also
+- <xref:System.ComponentModel.BackgroundWorker>
+- <xref:System.ComponentModel.DoWorkEventArgs>
+- [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
+- [How to: Run an Operation in the Background](../../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [BackgroundWorker Component](../../../../docs/framework/winforms/controls/backgroundworker-component.md)

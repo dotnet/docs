@@ -6,9 +6,9 @@ ms.author: mairaw
 ms.date: 04/10/2018
 ms.custom: "updateeachrelease"
 ---
-# Install the .NET Framework on Windows 10 and Windows Server 2016
+# Install the .NET Framework on Windows 10 and Windows Server 2016 and later
 
-The .NET Framework is required to run many applications on Windows. The instructions in this article should help you install the .NET Framework versions that you need. The [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) is the latest available version.
+The .NET Framework is required to run many applications on Windows. The instructions in this article should help you install the .NET Framework versions that you need. The [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472) is the latest available version.
 
 You may have arrived on this page after trying to run an application and seeing a dialog on your machine similar to the following one:
 
@@ -22,12 +22,18 @@ The .NET Framework 4.7.2 is included with:
 
 * [Windows 10 April 2018 Update](https://www.microsoft.com/software-download/windows10)
 
+* Windows Server 2019
+
+* Windows Server, version 1809
+
+* Windows Server, version 1803
+
 > [!div class="button"]
-> [Download .NET Framework 4.7.2](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
+> [Download .NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472)
 
-The [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) can be used to run applications built for the .NET Framework 4.0 through 4.7.1.
+The [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472) can be used to run applications built for the .NET Framework 4.0 through 4.7.1.
 
-You can install the [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) on:
+You can install the [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472) on:
 
 * Windows 10 Fall Creators Update (version 1709)
 * Windows 10 Creators Update (version 1703)
@@ -72,6 +78,6 @@ If you cannot get the correct version of the .NET Framework installed, you can [
 
 ## See also
 
-[.NET Downloads](https://www.microsoft.com/net/download?utm_source=ms-docs&utm_medium=referral)   
-[Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)   
-[Install the .NET Framework for developers](guide-for-developers.md)
+- [.NET Downloads](https://www.microsoft.com/net/download?utm_source=ms-docs&utm_medium=referral)
+- [Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)
+- [Install the .NET Framework for developers](guide-for-developers.md)

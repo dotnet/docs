@@ -20,7 +20,7 @@ This example creates the string "abcd" from individual characters.
 ## Robust Programming  
  Null characters (equivalent to `Chr(0)`) in the string lead to unexpected results when using the string. The null character will be included with the string, but characters following the null character will not be displayed in some situations.  
   
-## See Also  
- <xref:System.String>  
- [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+## See also
+- <xref:System.String>
+- [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)

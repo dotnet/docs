@@ -1,5 +1,5 @@
 ---
-title: "Limitations of the Windows Forms Timer Component&#39;s Interval Property"
+title: "Limitations of the Windows Forms Timer Component's Interval Property"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "timers [Windows Forms], event intervals"
@@ -8,10 +8,10 @@ helpviewer_keywords:
   - "Timer component [Windows Forms], limitations of Interval property"
 ms.assetid: 7e5fb513-77e7-4046-a8e8-aab94e61ca0f
 ---
-# Limitations of the Windows Forms Timer Component&#39;s Interval Property
+# Limitations of the Windows Forms Timer Component's Interval Property
 The Windows Forms <xref:System.Windows.Forms.Timer> component has an <xref:System.Windows.Forms.Timer.Interval%2A> property that specifies the number of milliseconds that pass between one timer event and the next. Unless the component is disabled, a timer continues to receive the <xref:System.Windows.Forms.Timer.Tick> event at roughly equal intervals of time.  
   
- This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://msdn.microsoft.com/library/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).  
+ This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).  
   
 ## The Interval Property  
  The <xref:System.Windows.Forms.Timer.Interval%2A> property has a few limitations to consider when you are programming a <xref:System.Windows.Forms.Timer> component:  
@@ -22,7 +22,7 @@ The Windows Forms <xref:System.Windows.Forms.Timer> component has an <xref:Syste
   
 -   The precision of the <xref:System.Windows.Forms.Timer.Interval%2A> property is in milliseconds. Some computers provide a high-resolution counter that has a resolution higher than milliseconds. The availability of such a counter depends on the processor hardware of your computer.
   
-## See Also  
- <xref:System.Windows.Forms.Timer>  
- [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)  
- [Timer Component Overview](../../../../docs/framework/winforms/controls/timer-component-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.Timer>
+- [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)
+- [Timer Component Overview](../../../../docs/framework/winforms/controls/timer-component-overview-windows-forms.md)

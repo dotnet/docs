@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;transportConfigurationType&gt;"
+title: "<add> of <transportConfigurationType>"
 ms.date: "03/30/2017"
 ms.assetid: 03d79db9-571d-4534-acef-d05e5467b257
 ---
-# &lt;add&gt; of &lt;transportConfigurationType&gt;
+# \<add> of \<transportConfigurationType>
 This element is a key/value pair, which identifies the type of a particular transport.  
   
  \<system.ServiceModel>  
@@ -14,12 +14,12 @@ This element is a key/value pair, which identifies the type of a particular tran
 ## Syntax  
   
 ```xml  
-<serviceHostingEnvironment>   
-   <transportConfigurationTypes>  
-      <add name="String"  
-               transportConfigurationType="String"/>   
-   </transportConfigurationTypes>  
-</serviceHostingEnvironment>  
+<serviceHostingEnvironment>
+  <transportConfigurationTypes>
+    <add name="String"
+         transportConfigurationType="String" />
+  </transportConfigurationTypes>
+</serviceHostingEnvironment>
 ```  
   
 ## Attributes and Elements  
@@ -44,16 +44,16 @@ This element is a key/value pair, which identifies the type of a particular tran
 ## Example  
   
 ```xml  
-<serviceHostingEnvironment>   
-   <transportConfigurationTypes>  
-      <add name="net.udp"  
-      transportConfigurationType="Microsoft.ServiceModel.Samples.Hosting.HostedUdpTransportConfiguration, UdpActivation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6fa904d2da1848d6" />   
-   </transportConfigurationTypes>  
-</serviceHostingEnvironment>  
+<serviceHostingEnvironment>
+  <transportConfigurationTypes>
+    <add name="net.udp"
+         transportConfigurationType="Microsoft.ServiceModel.Samples.Hosting.HostedUdpTransportConfiguration, UdpActivation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6fa904d2da1848d6" />
+  </transportConfigurationTypes>
+</serviceHostingEnvironment>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>  
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
- <xref:System.ServiceModel.ServiceHostingEnvironment>  
- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+## See also
+- <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
+- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
+- <xref:System.ServiceModel.ServiceHostingEnvironment>
+- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

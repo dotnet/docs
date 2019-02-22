@@ -1,9 +1,9 @@
 ---
-title: "&lt;compositeDuplex&gt;"
+title: "<compositeDuplex>"
 ms.date: "03/30/2017"
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f
 ---
-# &lt;compositeDuplex&gt;
+# \<compositeDuplex>
 Defines the binding element that is used when the client must expose an endpoint for the service to send messages back to the client.  
   
  \<system.serviceModel>  
@@ -15,7 +15,7 @@ Defines the binding element that is used when the client must expose an endpoint
 ## Syntax  
   
 ```xml  
-<compositeDuplex clientBaseAddress="URI" />  
+<compositeDuplex clientBaseAddress="URI" />
 ```  
   
 ## Attributes and Elements  
@@ -44,14 +44,14 @@ Defines the binding element that is used when the client must expose an endpoint
 ## Example  
   
 ```xml  
-<compositeDuplex clientBaseAddress="http://www.contoso.com" />  
+<compositeDuplex clientBaseAddress="http://www.contoso.com" />
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.CompositeDuplexElement>  
- <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.CompositeDuplexElement>
+- <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

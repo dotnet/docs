@@ -1,33 +1,39 @@
 ---
-title: "Inside a C# Program"
+title: "Inside a C# program"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, about C# program"
   - "Visual C#, program structure"
 ms.assetid: 9551354b-33f0-4e11-bbf0-1a35e3702b22
 ---
-# Inside a C# Program
-The section discusses the general structure of a C# program, and includes the standard "Hello, World!" example.  
-  
-## In This Section  
-  
--   [Hello World -- Your First Program](../../../csharp/programming-guide/inside-a-program/hello-world-your-first-program.md)  
-  
--   [General Structure of a C# Program](../../../csharp/programming-guide/inside-a-program/general-structure-of-a-csharp-program.md)  
-  
-## Related Sections  
-  
--   [Getting Started with C#](../../../csharp/getting-started/index.md)  
-  
--   [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-  
--   [C# Reference](../../../csharp/language-reference/index.md)  
-  
--   [\<paveover>C# Sample Applications](https://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
-  
-## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
-## See Also
+# Inside a C# program
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+The section discusses the general structure of a C# program, and includes the standard "Hello, World!" example.
+
+## In this section
+
+- [Hello World -- Your First Program](hello-world-your-first-program.md)
+
+- [General Structure of a C# Program](general-structure-of-a-csharp-program.md)
+
+- [Identifier names](identifier-names.md)
+
+- [C# Coding Conventions](coding-conventions.md)
+
+## Related sections
+
+- [Getting Started with C#](../../getting-started/index.md)
+
+- [C# Programming Guide](../../programming-guide/index.md)
+
+- [C# Reference](../../language-reference/index.md)
+
+- [Samples and tutorials](../../../samples-and-tutorials/index.md)
+
+## C# language specification
+
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+
+## See also
+
+- [C# Programming Guide](../../programming-guide/index.md)

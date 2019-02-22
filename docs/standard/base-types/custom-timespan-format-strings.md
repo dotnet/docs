@@ -48,7 +48,7 @@ Custom <xref:System.TimeSpan> format strings are also used by the <xref:System.T
 |"s", "%s"|The number of whole seconds in the time interval that are not included as part of hours, days, or minutes. Single-digit seconds do not have a leading zero.<br /><br /> More information: [The "s" Custom Format Specifier](#sSpecifier).|`TimeSpan.FromSeconds(12.965)`:<br /><br /> `%s` --> 12<br /><br /> `s\.fff` --> 12.965|
 |"ss"|The number of whole seconds in the time interval that are not included as part of hours, days, or minutes.  Single-digit seconds have a leading zero.<br /><br /> More information: [The "ss" Custom Format Specifier](#ssSpecifier).|`TimeSpan.FromSeconds(6.965)`:<br /><br /> `ss` --> 06<br /><br /> `ss\.fff` --> 06.965|
 |"f", "%f"|The tenths of a second in a time interval.<br /><br /> More information: [The "f" Custom Format Specifier](#fSpecifier).|`TimeSpan.FromSeconds(6.895)`:<br /><br /> `f` --> 8<br /><br /> `ss\.f` --> 06.8|
-|"ff"|The hundredths of a second in a time interval.<br /><br /> More information:[The "ff" Custom Format Specifier](#ffSpecifier).|`TimeSpan.FromSeconds(6.895)`:<br /><br /> `ff` --> 89<br /><br /> `ss\.ff` --> 06.89|
+|"ff"|The hundredths of a second in a time interval.<br /><br /> More information: [The "ff" Custom Format Specifier](#ffSpecifier).|`TimeSpan.FromSeconds(6.895)`:<br /><br /> `ff` --> 89<br /><br /> `ss\.ff` --> 06.89|
 |"fff"|The milliseconds in a time interval.<br /><br /> More information: [The "fff" Custom Format Specifier](#f3Specifier).|`TimeSpan.FromSeconds(6.895)`:<br /><br /> `fff` --> 895<br /><br /> `ss\.fff` --> 06.895|
 |"ffff"|The ten-thousandths of a second in a time interval.<br /><br /> More information: [The "ffff" Custom Format Specifier](#f4Specifier).|`TimeSpan.Parse("0:0:6.8954321")`:<br /><br /> `ffff` --> 8954<br /><br /> `ss\.ffff` --> 06.8954|
 |"fffff"|The hundred-thousandths of a second in a time interval.<br /><br /> More information: [The "fffff" Custom Format Specifier](#f5Specifier).|`TimeSpan.Parse("0:0:6.8954321")`:<br /><br /> `fffff` --> 89543<br /><br /> `ss\.fffff` --> 06.89543|
@@ -62,7 +62,7 @@ Custom <xref:System.TimeSpan> format strings are also used by the <xref:System.T
 |"FFFFFF"|The millionths of a second in a time interval. Any fractional trailing zeros are not displayed.<br /><br /> More information: [The "FFFFFF" Custom Format Specifier](#F6_Specifier).|`TimeSpan.Parse("00:00:06.3291791")`:<br /><br /> `FFFFFF`: 329179<br /><br /> `TimeSpan.Parse("0:0:3.1000009")`:<br /><br /> `ss\.FFFFFF`: 03.1|
 |"FFFFFFF"|The ten-millions of a second in a time interval. Any fractional trailing zeros or seven zeros are not displayed.<br /><br /> More information: [The "FFFFFFF" Custom Format Specifier](#F7_Specifier).|`TimeSpan.Parse("00:00:06.3291791")`:<br /><br /> `FFFFFF`: 3291791<br /><br /> `TimeSpan.Parse("0:0:3.1900000")`:<br /><br /> `ss\.FFFFFF`: 03.19|
 |'*string*'|Literal string delimiter.<br /><br /> More information: [Other Characters](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh':'mm':'ss` --> "14:32:17"|
-|\\|The escape character.<br /><br /> More information:[Other Characters](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
+|&#92;|The escape character.<br /><br /> More information: [Other Characters](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
 |Any other character|Any other unescaped character is interpreted as a custom format specifier.<br /><br /> More Information: [Other Characters](#Other).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
 
 <a name="dSpecifier"></a> 
@@ -414,5 +414,5 @@ The following example uses both the escape character and the single quote to def
 
 ## See also
 
-- [Formatting Types](formatting-types.md)  
-- [Standard TimeSpan Format Strings](standard-timespan-format-strings.md)  
+- [Formatting Types](formatting-types.md)
+- [Standard TimeSpan Format Strings](standard-timespan-format-strings.md)

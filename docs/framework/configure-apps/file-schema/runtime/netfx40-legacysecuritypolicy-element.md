@@ -1,5 +1,5 @@
 ---
-title: "&lt;NetFx40_LegacySecurityPolicy&gt; Element"
+title: "<NetFx40_LegacySecurityPolicy> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<NetFx40_LegacySecurityPolicy> element"
@@ -8,7 +8,7 @@ ms.assetid: 07132b9c-4a72-4710-99d7-e702405e02d4
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;NetFx40_LegacySecurityPolicy&gt; Element
+# \<NetFx40_LegacySecurityPolicy> Element
 Specifies whether the runtime uses legacy code access security (CAS) policy.  
   
  \<configuration>  
@@ -78,6 +78,6 @@ Specifies whether the runtime uses legacy code access security (CAS) policy.
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

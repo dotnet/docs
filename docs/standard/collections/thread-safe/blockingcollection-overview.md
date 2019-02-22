@@ -76,6 +76,6 @@ BlockingCollection<string> bc = new BlockingCollection<string>(new ConcurrentBag
   
 ## See also
 
-- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
-- [Collections and Data Structures](../../../../docs/standard/collections/index.md)  
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
+- [Collections and Data Structures](../../../../docs/standard/collections/index.md)
 - [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)

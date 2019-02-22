@@ -10,6 +10,6 @@ An attempt has been made to delete a registry hive. Hives are top-level registry
   
 -   Check the registry key you are attempting to delete, and make sure you are supplying the correct path.  
   
-## See Also  
- [My.Computer.Registry](xref:Microsoft.VisualBasic.MyServices.RegistryProxy)  
- [How to: Delete a Registry Key](../../visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)
+## See also
+- [My.Computer.Registry](xref:Microsoft.VisualBasic.MyServices.RegistryProxy)
+- [How to: Delete a Registry Key](../../visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)

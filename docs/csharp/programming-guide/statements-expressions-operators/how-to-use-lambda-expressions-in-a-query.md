@@ -24,7 +24,7 @@ You do not use lambda expressions directly in query syntax, but you do use them 
 ## Compiling the Code  
  To run this code, copy and paste the method into the `StudentClass` that is provided in [How to: Query a Collection of Objects](../../../csharp/programming-guide/linq-query-expressions/how-to-query-a-collection-of-objects.md) and call it from the `Main` method.  
   
-## See Also
+## See also
 
-- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
-- [Expression Trees (C#)](../concepts/expression-trees/index.md)  
+- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
+- [Expression Trees (C#)](../concepts/expression-trees/index.md)

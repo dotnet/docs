@@ -51,5 +51,5 @@ binding=WSHttpBinding_IAffiliate, bindingNamespace=http://tempuri.org/
 > [!NOTE]
 >  If the moniker is malformed or if the service is unavailable, the call to `GetObject` returns an error saying "Invalid Syntax". If you receive this error, make sure the moniker you are using is correct and the service is available.  
   
-## See Also  
- [How to: Register and Configure a Service Moniker](../../../../docs/framework/wcf/feature-details/how-to-register-and-configure-a-service-moniker.md)
+## See also
+- [How to: Register and Configure a Service Moniker](../../../../docs/framework/wcf/feature-details/how-to-register-and-configure-a-service-moniker.md)

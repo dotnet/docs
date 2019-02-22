@@ -61,7 +61,7 @@ typedef struct {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)  
- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)  
- [OSINFO Structure](../../../../docs/framework/unmanaged-api/metadata/osinfo-structure.md)
+## See also
+- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)
+- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [OSINFO Structure](../../../../docs/framework/unmanaged-api/metadata/osinfo-structure.md)

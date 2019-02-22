@@ -1,9 +1,9 @@
 ---
-title: "&lt;clientCertificate&gt; of &lt;serviceCredentials&gt;"
+title: "<clientCertificate> of <serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: 90ad03aa-2317-43dd-8a72-6d24cdcad15c
 ---
-# &lt;clientCertificate&gt; of &lt;serviceCredentials&gt;
+# \<clientCertificate> of \<serviceCredentials>
 Defines an X.509 certificate used to sign and encrypt messages to a client form a service in a duplex communication pattern.  
   
  \<system.ServiceModel>  
@@ -17,10 +17,10 @@ Defines an X.509 certificate used to sign and encrypt messages to a client form 
 ## Syntax  
   
 ```xml  
-<clientCertificate>  
- <certificate/>  
- <authentication/>  
-</clientCertificate>  
+<clientCertificate>
+  <certificate />
+  <authentication />
+</clientCertificate>
 ```  
   
 ## Attributes and Elements  
@@ -47,12 +47,12 @@ Defines an X.509 certificate used to sign and encrypt messages to a client form 
   
  The certificate set in this element is used to encrypt messages to the client only for bindings that are configured with `MutualCertificateDuplex` message security authentication mode.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>  
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ClientCertificate%2A>  
- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>  
- <xref:System.ServiceModel.Description.ServiceCredentials.ClientCertificate%2A>  
- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential>  
- [How to: Create a Duplex Contract](../../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+## See also
+- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ClientCertificate%2A>
+- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>
+- <xref:System.ServiceModel.Description.ServiceCredentials.ClientCertificate%2A>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential>
+- [How to: Create a Duplex Contract](../../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

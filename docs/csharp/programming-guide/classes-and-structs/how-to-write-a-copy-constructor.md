@@ -15,10 +15,10 @@ C# doesn't provide a copy constructor for objects, but you can write one yoursel
   
  [!code-csharp[csProgGuideObjects#16](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-write-a-copy-constructor_1.cs)]  
   
-## See Also
+## See also
 
-- <xref:System.ICloneable>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
+- <xref:System.ICloneable>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)
 - [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)

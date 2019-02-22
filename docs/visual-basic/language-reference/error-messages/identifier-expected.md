@@ -19,7 +19,7 @@ A programming element that is not a recognizable declared element name occurs wh
   
 -   Verify that all element names in the statement are spelled correctly.  
   
-## See Also  
- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
- 
+## See also
+- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+

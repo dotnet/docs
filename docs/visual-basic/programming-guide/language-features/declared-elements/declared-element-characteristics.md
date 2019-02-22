@@ -47,12 +47,12 @@ A *characteristic* of a declared element is an aspect of that element that affec
   
  <sup>1</sup> Scope is sometimes referred to as *visibility*.  
   
-## See Also  
- [Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)  
- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
- [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)  
- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+## See also
+- [Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)
+- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+- [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
+- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
+- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)

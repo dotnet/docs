@@ -48,7 +48,8 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-reference](reference-compiler-option.md)|Imports metadata from a file that contains an assembly.|
 |-analyzer|Run the analyzers from this assembly (Short form: /a)|
 |-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|
-
+|-embed|Embed all source files in the PDB.|
+|-embed:\<file list>|Embed specific files in the PDB.|
 ## Debugging/Error Checking
 
 |Option|Purpose|
@@ -106,8 +107,8 @@ The following compiler options are sorted by category. For an alphabetical list,
 |---|---|
 |-incremental|Enables incremental compilation.|
 
-## See Also
+## See also
 
-- [C# Compiler Options](index.md)  
-- [C# Compiler Options Listed Alphabetically](listed-alphabetically.md)  
+- [C# Compiler Options](index.md)
+- [C# Compiler Options Listed Alphabetically](listed-alphabetically.md)
 - [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)

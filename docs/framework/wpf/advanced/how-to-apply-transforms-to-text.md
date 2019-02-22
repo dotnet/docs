@@ -62,5 +62,5 @@ Example of translated text
 > [!NOTE]
 >  The <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> provides a rich set of features for providing shadow effects. For more information, see [Create Text with a Shadow](../../../../docs/framework/wpf/advanced/how-to-create-text-with-a-shadow.md).  
   
-## See Also  
- [Apply Animations to Text](../../../../docs/framework/wpf/advanced/how-to-apply-animations-to-text.md)
+## See also
+- [Apply Animations to Text](../../../../docs/framework/wpf/advanced/how-to-apply-animations-to-text.md)

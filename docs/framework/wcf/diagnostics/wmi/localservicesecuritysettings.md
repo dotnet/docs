@@ -138,5 +138,5 @@ class LocalServiceSecuritySettings
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
+## See also
+- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>

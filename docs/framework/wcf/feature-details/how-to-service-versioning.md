@@ -318,5 +318,5 @@ namespace Microsoft.Samples.AdvancedFilters
 }  
 ```  
   
-## See Also  
- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)
+## See also
+- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)

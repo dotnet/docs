@@ -93,15 +93,15 @@ In addition to the official roadmap, there are other frameworks to be ported to 
 
 ### A need to use a platform that doesn’t support .NET Core
 
-Some Microsoft or third-party platforms don’t support .NET Core. For example, some Azure services such as Service Fabric Stateful Reliable Services and Service Fabric Reliable Actors require .NET Framework. Some other services provide an SDK not yet available for consumption on .NET Core. This is a transitional circumstance, as all of Azure services use .NET Core. In the meantime, you can always use the equivalent REST API instead of the client SDK.
+Some Microsoft or third-party platforms don’t support .NET Core. Some Azure services provide an SDK not yet available for consumption on .NET Core. This is a transitional circumstance, as all of Azure services use .NET Core. In the meantime, you can always use the equivalent REST API instead of the client SDK.
 
 ## See also
 
-* [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)
-* [ASP.NET Core targeting .NET Framework](/aspnet/core#aspnet-core-targeting-net-framework)
-* [Target frameworks](frameworks.md)
-* [.NET Core Guide](../core/index.md)  
-* [Porting from .NET Framework to .NET Core](../core/porting/index.md)  
-* [.NET Framework on Docker Guide](../framework/docker/index.md)  
-* [.NET Components Overview](components.md)  
-* [.NET Microservices. Architecture for Containerized .NET Applications](microservices-architecture/index.md)
+- [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)
+- [ASP.NET Core targeting .NET Framework](/aspnet/core#aspnet-core-targeting-net-framework)
+- [Target frameworks](frameworks.md)
+- [.NET Core Guide](../core/index.md)
+- [Porting from .NET Framework to .NET Core](../core/porting/index.md)
+- [.NET Framework on Docker Guide](../framework/docker/index.md)
+- [.NET Components Overview](components.md)
+- [.NET Microservices. Architecture for Containerized .NET Applications](microservices-architecture/index.md)

@@ -26,6 +26,6 @@ GlobalProxySelection.Select = proxyObject
   
 -   A [`using` directive](../../csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.  
   
-## See Also  
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  
- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)
+## See also
+- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)
+- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)

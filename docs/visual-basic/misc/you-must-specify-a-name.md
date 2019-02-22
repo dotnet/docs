@@ -10,6 +10,6 @@ When performing file operations such as renaming a file, you must specify the na
   
 -   Specify the name.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
+## See also
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

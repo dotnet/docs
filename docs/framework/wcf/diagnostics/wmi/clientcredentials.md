@@ -90,5 +90,5 @@ class ClientCredentials : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ClientCredentials>
+## See also
+- <xref:System.ServiceModel.Description.ClientCredentials>

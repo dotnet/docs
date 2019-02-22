@@ -40,10 +40,10 @@ The ability to access a member in the global [namespace](../../../csharp/languag
 **B 2**
 **C 3**
 
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
-- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)  
-- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)
+- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)
+- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)
 - [extern](../../../csharp/language-reference/keywords/extern.md)

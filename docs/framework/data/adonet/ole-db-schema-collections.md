@@ -405,5 +405,5 @@ This section discusses schema collection support for the OLE DB providers for Mi
 |FILTER_CONDITION|String|  
 |INTEGRATED|Boolean|  
   
-## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

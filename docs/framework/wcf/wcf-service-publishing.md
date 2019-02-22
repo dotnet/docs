@@ -15,7 +15,7 @@ WCF Service Publishing supports publishing WCF services created from the set of 
 
 -   Syndication Service Library.
 
-You can find these service templates by choosing **File** > **New Project** > [**Visual Basic** or **Visual C#**] > **WCF**. For other WCF templates in this location (including WCF Workflow Service Application and WCF Service Application), you can publish using [One-Click publishing for web applications](https://msdn.microsoft.com/library/dd465337\(v=vs.110\).aspx).
+You can find these service templates by choosing **File** > **New Project** > [**Visual Basic** or **Visual C#**] > **WCF**. For other WCF templates in this location (including WCF Workflow Service Application and WCF Service Application), you can publish using [One-Click publishing for web applications](https://docs.microsoft.com/previous-versions/aspnet/dd465337(v=vs.110)).
 
 The service can be published to the following target locations.
 
@@ -67,7 +67,7 @@ If you choose to deploy your application to local IIS, you may encounter errors 
 ## Security
  Publishing to local IIS requires administrator privilege, because IIS requires running in Administrator account. If a user without administrator privilege opens WCF Service Publishing, IIS is not available as a target location. Publishing to File System, or FTP Site works without administrator privilege.
 
-## See Also
+## See also
 
 - [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)
 - [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)

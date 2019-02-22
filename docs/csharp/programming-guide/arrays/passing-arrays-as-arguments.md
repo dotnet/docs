@@ -52,8 +52,8 @@ In the following example, a two-dimensional array of integers is initialized and
 
 ## See also
 
-- [C# Programming Guide](../index.md)  
-- [Arrays](index.md)  
-- [Single-Dimensional Arrays](single-dimensional-arrays.md)  
-- [Multidimensional Arrays](multidimensional-arrays.md)  
-- [Jagged Arrays](jagged-arrays.md)  
+- [C# Programming Guide](../index.md)
+- [Arrays](index.md)
+- [Single-Dimensional Arrays](single-dimensional-arrays.md)
+- [Multidimensional Arrays](multidimensional-arrays.md)
+- [Jagged Arrays](jagged-arrays.md)

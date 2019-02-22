@@ -18,7 +18,7 @@ Interop marshaling operates on rules that dictate how data associated with metho
  This section identifies the default behavioral characteristics of the interop marshaling service. It presents detailed information on marshaling arrays, Boolean types, char types, delegates, classes, objects, strings, and structures.  
   
 > [!NOTE]
->  Marshaling of generic types is not supported. For more information see, [Interoperating Using Generic Types](https://msdn.microsoft.com/library/26b88e03-085b-4b53-94ba-a5a9c709ce58(v=vs.100)).  
+>  Marshaling of generic types is not supported. For more information see, [Interoperating Using Generic Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100)).  
   
 ## Memory management with the interop marshaler  
  The interop marshaler always attempts to free memory allocated by unmanaged code. This behavior complies with COM memory management rules, but differs from the rules that govern native C++.  
@@ -35,7 +35,7 @@ BSTR MethodOne (BSTR b) {
   
  However, if you define the method as a platform invoke prototype, replace each **BSTR** type with a <xref:System.String> type, and call `MethodOne`, the common language runtime attempts to free `b` twice. You can change the marshaling behavior by using <xref:System.IntPtr> types rather than **String** types.  
   
- The runtime always uses the **CoTaskMemFree** method to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](https://msdn.microsoft.com/library/e30d36e8-d7c4-4936-916a-8fdbe4d9ffd5(v=vs.100)).  
+ The runtime always uses the **CoTaskMemFree** method to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x3txb6xc(v=vs.100)).  
   
 ## Default marshaling for classes  
  Classes can be marshaled only by COM interop and are always marshaled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface).  
@@ -434,9 +434,9 @@ interface IValueTypes : IDispatch {
 };  
 ```  
   
-## See Also  
- [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)  
- [Copying and Pinning](copying-and-pinning.md)  
- [Default Marshaling for Arrays](default-marshaling-for-arrays.md)  
- [Default Marshaling for Objects](default-marshaling-for-objects.md)  
- [Default Marshaling for Strings](default-marshaling-for-strings.md)
+## See also
+- [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
+- [Copying and Pinning](copying-and-pinning.md)
+- [Default Marshaling for Arrays](default-marshaling-for-arrays.md)
+- [Default Marshaling for Objects](default-marshaling-for-objects.md)
+- [Default Marshaling for Strings](default-marshaling-for-strings.md)

@@ -33,7 +33,7 @@ There are times when you might want to create a user control that is invisible a
     myControl1.Visible = false;  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.Control.Visible%2A>  
- [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)  
- [How to: Give Your Control a Transparent Background](../../../../docs/framework/winforms/controls/how-to-give-your-control-a-transparent-background.md)
+## See also
+- <xref:System.Windows.Forms.Control.Visible%2A>
+- [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)
+- [How to: Give Your Control a Transparent Background](../../../../docs/framework/winforms/controls/how-to-give-your-control-a-transparent-background.md)

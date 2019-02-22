@@ -62,7 +62,7 @@ HRESULT SetAppDomainManager (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- <xref:System.AppDomain>  
- <xref:System.AppDomainManager>  
- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+## See also
+- <xref:System.AppDomain>
+- <xref:System.AppDomainManager>
+- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

@@ -44,7 +44,7 @@ The <xref:System.Collections.SortedList?displayProperty=nameWithType> class, the
   
 ## See also
 
-- <xref:System.Collections.IDictionary?displayProperty=nameWithType>  
-- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>  
-- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>  
+- <xref:System.Collections.IDictionary?displayProperty=nameWithType>
+- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>
+- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>
 - [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)

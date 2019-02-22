@@ -1,9 +1,9 @@
 ---
-title: "&lt;windowsAuthentication&gt; of &lt;serviceCredentials&gt;"
+title: "<windowsAuthentication> of <serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: e0709473-0997-4de3-8f49-783527309a48
 ---
-# &lt;windowsAuthentication&gt; of &lt;serviceCredentials&gt;
+# \<windowsAuthentication> of \<serviceCredentials>
 Specifies the settings of a Windows service credential.  
   
  \<system.ServiceModel>  
@@ -16,9 +16,8 @@ Specifies the settings of a Windows service credential.
 ## Syntax  
   
 ```xml  
-<windowsAuthentication  
-      allowAnonymousLogons="Boolean"  
-      includeWindowsGroups="Boolean" />  
+<windowsAuthentication allowAnonymousLogons="Boolean"
+                       includeWindowsGroups="Boolean" />
 ```  
   
 ## Attributes and Elements  
@@ -43,8 +42,8 @@ Specifies the settings of a Windows service credential.
 ## Remarks  
  Use this element to specify whether to allow anonymous Windows users access by setting the `allowAnonymousLogons` attribute. You can also specify whether to include group information to which users belong in the AuthorizationContext by setting the `includeWindowsGroups` attribute. If it is set to `true` (the default setting), the service can determine the Windows groups to which the client belongs.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.WindowsServiceElement>  
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.WindowsAuthentication%2A>  
- <xref:System.ServiceModel.Description.ServiceCredentials.WindowsAuthentication%2A>  
- <xref:System.ServiceModel.Security.WindowsServiceCredential>
+## See also
+- <xref:System.ServiceModel.Configuration.WindowsServiceElement>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.WindowsAuthentication%2A>
+- <xref:System.ServiceModel.Description.ServiceCredentials.WindowsAuthentication%2A>
+- <xref:System.ServiceModel.Security.WindowsServiceCredential>

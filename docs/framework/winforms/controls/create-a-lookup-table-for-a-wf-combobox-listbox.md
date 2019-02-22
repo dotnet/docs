@@ -44,7 +44,7 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
   
 2.  Connect to your data source.  
   
-3.  Establish a data relation between the two tables. See [Introduction to DataRelation Objects](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+3.  Establish a data relation between the two tables. See [Introduction to DataRelation Objects](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0k21zcyx(v=vs.120)).  
   
 4.  Set the following properties. They can be set in code or in the designer.  
   
@@ -64,9 +64,9 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
     listBox1.DataBindings.Add("SelectedValue", OrderDetailsTable, "ItemID");  
     ```  
   
-## See Also  
- [Data Binding and Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md)  
- [ListBox Control Overview](../../../../docs/framework/winforms/controls/listbox-control-overview-windows-forms.md)  
- [ComboBox Control Overview](../../../../docs/framework/winforms/controls/combobox-control-overview-windows-forms.md)  
- [CheckedListBox Control Overview](../../../../docs/framework/winforms/controls/checkedlistbox-control-overview-windows-forms.md)  
- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+## See also
+- [Data Binding and Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md)
+- [ListBox Control Overview](../../../../docs/framework/winforms/controls/listbox-control-overview-windows-forms.md)
+- [ComboBox Control Overview](../../../../docs/framework/winforms/controls/combobox-control-overview-windows-forms.md)
+- [CheckedListBox Control Overview](../../../../docs/framework/winforms/controls/checkedlistbox-control-overview-windows-forms.md)
+- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)

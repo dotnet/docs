@@ -27,10 +27,10 @@ C# allows user-defined types to overload operators by defining static member fun
 
 For information about how to overload an operator, see the [operator](../../language-reference/keywords/operator.md) keyword article.
 
-## See Also
+## See also
 
 - [C# Programming Guide](../index.md)
 - [Statements, Expressions, and Operators](index.md)
 - [Operators](operators.md)
-- [C# Operators](../../language-reference/operators/index.md)  
+- [C# Operators](../../language-reference/operators/index.md)
 - [Why are overloaded operators always static in C#?](https://blogs.msdn.microsoft.com/ericlippert/2007/05/14/why-are-overloaded-operators-always-static-in-c/)

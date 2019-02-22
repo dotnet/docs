@@ -39,7 +39,7 @@ This topic provides a brief overview  of what .NET Core is and shows how you can
   
 -   [ASP.NET Core](https://github.com/aspnet/home)  
   
-## See Also  
-- [.NET Core homepage](https://www.microsoft.com/net/core)  
-- [.NET Core Guide](../../core/index.md)  
+## See also
+- [.NET Core homepage](https://www.microsoft.com/net/core)
+- [.NET Core Guide](../../core/index.md)
 - [ASP.NET Core Documentation](/aspnet/core/)

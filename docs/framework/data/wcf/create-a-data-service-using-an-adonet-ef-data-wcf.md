@@ -39,7 +39,7 @@ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a 
 
 9. Click **Finish** to complete the wizard.
 
-     This creates a default data model based on the specific database. The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] enables to customize the data model. For more information, see [Tasks](https://msdn.microsoft.com/library/7166f1f1-4de8-4bd4-86b5-5e20a2ebaccb).
+     This creates a default data model based on the specific database. The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] enables to customize the data model. For more information, see [Entity Data Model Tools Tasks](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738480(v=vs.100)).
 
 ## To create the data service by using the new data model
 
@@ -66,7 +66,7 @@ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a 
 
 8. To test the Northwind.svc data service by using a Web browser, follow the instructions in the topic [Accessing the Service from a Web Browser](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).
 
-## See Also
+## See also
 
 - [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
 - [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)

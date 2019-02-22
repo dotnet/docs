@@ -92,6 +92,6 @@ You can create a custom control that dynamically and statically renders ink. Tha
 ## Conclusion  
  You can create a control that collects and renders ink by overriding the stylus event methods. By creating your own control, deriving your own <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> classes, and inserting them the into <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>, you can implement virtually any behavior imaginable with digital ink. You have access to the <xref:System.Windows.Input.StylusPoint> data as it is generated, giving you the opportunity to  customize <xref:System.Windows.Input.Stylus> input and render it on the screen as appropriate for your application. Because you have such low-level access to the <xref:System.Windows.Input.StylusPoint> data, you can implement ink collection and render it with optimal performance for your application.  
   
-## See Also  
- [Advanced Ink Handling](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)  
- [Accessing and Manipulating Pen Input](https://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)
+## See also
+- [Advanced Ink Handling](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)
+- [Accessing and Manipulating Pen Input](https://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)

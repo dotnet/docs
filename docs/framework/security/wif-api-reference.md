@@ -40,6 +40,6 @@ Windows Identity Foundation (WIF) classes are split across the following assembl
  <xref:System.ServiceModel.Security?displayProperty=nameWithType>  
  Contains classes that represent WCF contracts, channels, service hosts and other artifacts that are used in active (WS-Trust) scenarios. This namespace also contains classes that are specific to Windows Communication Foundation (WCF) and that are not used by WIF.  
   
-## See Also  
- [WIF Configuration Reference](../../../docs/framework/security/wif-configuration-reference.md)  
- [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)
+## See also
+- [WIF Configuration Reference](../../../docs/framework/security/wif-configuration-reference.md)
+- [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)

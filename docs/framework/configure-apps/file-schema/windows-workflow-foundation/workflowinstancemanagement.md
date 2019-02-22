@@ -1,10 +1,10 @@
 ---
-title: "&lt;workflowInstanceManagement&gt;"
+title: "<workflowInstanceManagement>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 63ac89ba-c844-4ae2-96ae-cd752a90a109
 ---
-# &lt;workflowInstanceManagement&gt;
+# \<workflowInstanceManagement>
 A service behavior that enables you to specify settings that control how workflow instances are run, including persistence, unhandled Exception behavior and idle behavior.  
   
 \<system.ServiceModel>  
@@ -43,6 +43,6 @@ A service behavior that enables you to specify settings that control how workflo
 |-------------|-----------------|  
 |[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
-## See Also  
- <xref:System.ServiceModel.Activities.Description.WorkflowInstanceManagementBehavior>  
- <xref:System.ServiceModel.Activities.Configuration.WorkflowInstanceManagementElement>
+## See also
+- <xref:System.ServiceModel.Activities.Description.WorkflowInstanceManagementBehavior>
+- <xref:System.ServiceModel.Activities.Configuration.WorkflowInstanceManagementElement>

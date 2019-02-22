@@ -122,14 +122,14 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
   
 -   <xref:System.Windows.Controls.GridViewColumnHeaderRole>  
   
-## See Also  
- <xref:System.Windows.Controls.ListView>  
- <xref:System.Windows.Controls.ListViewItem>  
- <xref:System.Windows.Controls.GridViewColumn>  
- <xref:System.Windows.Controls.GridViewColumnHeader>  
- <xref:System.Windows.Controls.GridViewRowPresenter>  
- <xref:System.Windows.Controls.GridViewHeaderRowPresenter>  
- <xref:System.Windows.Controls.ViewBase>  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
- [Sort a GridView Column When a Header Is Clicked](../../../../docs/framework/wpf/controls/how-to-sort-a-gridview-column-when-a-header-is-clicked.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+## See also
+- <xref:System.Windows.Controls.ListView>
+- <xref:System.Windows.Controls.ListViewItem>
+- <xref:System.Windows.Controls.GridViewColumn>
+- <xref:System.Windows.Controls.GridViewColumnHeader>
+- <xref:System.Windows.Controls.GridViewRowPresenter>
+- <xref:System.Windows.Controls.GridViewHeaderRowPresenter>
+- <xref:System.Windows.Controls.ViewBase>
+- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
+- [Sort a GridView Column When a Header Is Clicked](../../../../docs/framework/wpf/controls/how-to-sort-a-gridview-column-when-a-header-is-clicked.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)

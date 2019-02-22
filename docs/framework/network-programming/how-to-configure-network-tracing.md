@@ -91,8 +91,8 @@ The application or computer configuration file holds the settings that determine
 |`maxdatasize`|Optional <xref:System.Int32> attribute. Sets the maximum number of bytes of network data included in each line trace. The default value is 1024.<br /><br /> This attribute must be set on the \<source> element as shown in the example. An exception is thrown if this attribute is set on an element under the \<switches> element.|  
 |`Tracemode`|Optional <xref:System.String> attribute. Set to `includehex` to show protocol traces in hexadecimal and text format. Set to `protocolonly` to show only text. The default value is `includehex`.<br /><br /> This attribute must be set on the \<switches> element as shown in the example. An exception is thrown if this attribute is set on an element under the \<source> element.|  
   
-## See Also  
- [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)  
- [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)  
- [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)  
- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+## See also
+- [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)
+- [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)
+- [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)
+- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)

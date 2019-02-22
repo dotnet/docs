@@ -116,8 +116,8 @@ The benefits of migrating WSE 3.0 Web services to Windows Communication Foundati
 ### Custom Transport  
  The equivalent of a WSE 3.0 custom transport in WCF is a channel extension. For details about creating a channel extension, see [Extending the Channel Layer](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  
   
-## See Also  
- [Basic Programming Lifecycle](../../../../docs/framework/wcf/basic-programming-lifecycle.md)  
- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
- [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)
+## See also
+- [Basic Programming Lifecycle](../../../../docs/framework/wcf/basic-programming-lifecycle.md)
+- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)

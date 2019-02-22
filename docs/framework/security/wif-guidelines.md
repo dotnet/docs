@@ -9,5 +9,5 @@ author: "BrucePerlerMS"
   
 -   [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)  
   
-## See Also  
- [Windows Identity Foundation](../../../docs/framework/security/index.md)
+## See also
+- [Windows Identity Foundation](../../../docs/framework/security/index.md)

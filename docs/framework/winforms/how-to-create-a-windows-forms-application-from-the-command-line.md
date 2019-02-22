@@ -13,7 +13,7 @@ author: rpetrusha
 ms.author: ronpet
 ---
 # How to: Create a Windows Forms application from the command line
-The following procedures describe the basic steps that you must complete to create and run a Windows Forms application from the command line. There is extensive support for these procedures in Visual Studio.  Also see [Walkthrough: Creating a Simple Windows Form](https://msdn.microsoft.com/library/z9w2f38k\(v=vs.100\)).  
+The following procedures describe the basic steps that you must complete to create and run a Windows Forms application from the command line. There is extensive support for these procedures in Visual Studio.  Also see [Walkthrough: Hosting a Windows Forms Control in WPF](../wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md).  
   
 ## Procedure  
   
@@ -107,9 +107,9 @@ The following procedures describe the basic steps that you must complete to crea
   
 -   To compile the code, follow the instructions in the proceeding procedure that describe how to compile and run the application.  
   
-## See Also  
- <xref:System.Windows.Forms.Form>  
- <xref:System.Windows.Forms.Control>  
- [Changing the Appearance of Windows Forms](../../../docs/framework/winforms/changing-the-appearance-of-windows-forms.md)  
- [Enhancing Windows Forms Applications](../../../docs/framework/winforms/advanced/index.md)  
- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.Form>
+- <xref:System.Windows.Forms.Control>
+- [Changing the Appearance of Windows Forms](../../../docs/framework/winforms/changing-the-appearance-of-windows-forms.md)
+- [Enhancing Windows Forms Applications](../../../docs/framework/winforms/advanced/index.md)
+- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)

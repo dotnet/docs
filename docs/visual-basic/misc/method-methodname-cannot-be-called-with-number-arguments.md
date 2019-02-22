@@ -1,11 +1,11 @@
 ---
-title: "Method &#39;&lt;methodname&gt;&#39; cannot be called with &lt;number&gt; arguments"
+title: "Method '<methodname>' cannot be called with <number> arguments"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrNoMethodTakingXArguments2"
 ms.assetid: 23260199-b6a4-469f-b75f-4a3d8d25e2cc
 ---
-# Method &#39;&lt;methodname&gt;&#39; cannot be called with &lt;number&gt; arguments
+# Method '\<methodname>' cannot be called with \<number> arguments
 A method call contains the wrong number of arguments.  
   
 ## To correct this error  
@@ -16,5 +16,5 @@ A method call contains the wrong number of arguments.
   
 3.  Adjust the number of arguments if the two numbers do not agree.  
   
-## See Also  
- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+## See also
+- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

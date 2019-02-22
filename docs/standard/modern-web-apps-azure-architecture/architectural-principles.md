@@ -3,7 +3,7 @@ title: Architectural principles
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Architectural principles
 author: ardalis
 ms.author: wiwagn
-ms.date: 6/28/2018
+ms.date: 02/16/2019
 ---
 # Architectural principles
 
@@ -93,21 +93,10 @@ The requirement that classes have any of the above features or behaviors adds co
 
 At a minimum, individual web applications should strive to be their own bounded context, with their own persistence store for their business model, rather than sharing a database with other applications. Communication between bounded contexts occurs through programmatic interfaces, rather than through a shared database, which allows for business logic and events to take place in response to changes that take place. Bounded contexts map closely to microservices, which also are ideally implemented as their own individual bounded contexts.
 
-> ### References – Modern Web Applications
-> - **Separation of Concerns**  
-> <https://deviq.com/separation-of-concerns/>
-> - **Encapsulation**  
-> <https://deviq.com/encapsulation/>
-> - **Dependency Inversion Principle**  
-> <https://deviq.com/dependency-inversion-principle/>
-> - **Explicit Dependencies Principle**  
-> <https://deviq.com/explicit-dependencies-principle/>
-> - **Don't Repeat Yourself**  
-> <https://deviq.com/don-t-repeat-yourself/>
-> - **Persistence Ignorance**  
-> <https://deviq.com/persistence-ignorance/>
-> - **Bounded Context**  
-> <https://martinfowler.com/bliki/BoundedContext.html>
+## Additional resources
+
+* [JAVA Design Patterns: Principles](https://java-design-patterns.com/principles/)
+* [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html)
 
 >[!div class="step-by-step"]
 >[Previous](choose-between-traditional-web-and-single-page-apps.md)

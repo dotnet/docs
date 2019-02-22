@@ -1,5 +1,5 @@
 ---
-title: "Underlying type &lt;typename&gt; of Enum is not CLS-compliant"
+title: "Underlying type <typename> of Enum is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc40032"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC40032"
 ms.assetid: 32bf1949-fd73-456c-a323-bf1ffe1320ed
 ---
-# Underlying type &lt;typename&gt; of Enum is not CLS-compliant
+# Underlying type \<typename> of Enum is not CLS-compliant
 The data type specified for this enumeration is not part of the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS). This is not an error within your component, because the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] and Visual Basic support this data type. However, another component written in strictly CLS-compliant code might not support this data type. Such a component might not be able to interact successfully with your component.  
   
  The following Visual Basic data types are not CLS-compliant:  
@@ -35,7 +35,7 @@ The data type specified for this enumeration is not part of the [Language Indepe
   
 -   If you are interfacing with Automation or COM objects, keep in mind that some types have different data widths than in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For example, `uint` is often 16 bits in other environments. If you are passing a 16-bit argument to such a component, declare it as `UShort` instead of `UInteger` in your managed Visual Basic code.  
   
-## See Also  
- [Reflection (Visual Basic)](../../programming-guide/concepts/reflection.md)  
- [Reflection](../../../framework/reflection-and-codedom/reflection.md)  
- 
+## See also
+- [Reflection (Visual Basic)](../../programming-guide/concepts/reflection.md)
+- [Reflection](../../../framework/reflection-and-codedom/reflection.md)
+

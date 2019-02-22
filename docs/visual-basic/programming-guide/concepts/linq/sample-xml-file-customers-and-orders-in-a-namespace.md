@@ -424,5 +424,5 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
 </Root>  
 ```  
   
-## See Also  
- [Sample XML Documents (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+## See also
+- [Sample XML Documents (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)

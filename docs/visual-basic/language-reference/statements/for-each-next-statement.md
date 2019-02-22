@@ -166,13 +166,13 @@ End Sub
   
  [!code-vb[VbVbalrStatements#125](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_7.vb)]  
   
-## See Also  
- [Collections](../../../standard/collections/index.md)  
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  
- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+## See also
+- [Collections](../../../standard/collections/index.md)
+- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
+- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
+- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
+- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
+- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

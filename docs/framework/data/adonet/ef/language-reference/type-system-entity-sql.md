@@ -12,7 +12,7 @@ ms.assetid: 818a505b-a196-41dd-aaac-2ccd5f7a2f1a
   
 -   Anonymous types that are not defined in the schema explicitly: <xref:System.Data.Metadata.Edm.CollectionType>, <xref:System.Data.Metadata.Edm.RowType>, and <xref:System.Data.Metadata.Edm.RefType>.  
   
- This section discusses the anonymous types that are not defined in the schema explicitly but are supported by [!INCLUDE[esql](../../../../../../includes/esql-md.md)]. For information on primitive and nominal types, see [Conceptual Model Types (CSDL)](https://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4).  
+ This section discusses the anonymous types that are not defined in the schema explicitly but are supported by Entity SQL. For information on primitive and nominal types, see [Conceptual Model Types (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl).  
   
 ## Rows  
  The structure of a row depends on the sequence of typed and named members that the row consists of. A row type has no identity and cannot be inherited from. Instances of the same row type are equivalent if the members are respectively equivalent. Rows have no behavior beyond their structural equivalence and have no equivalent in the common language runtime. Queries can result in structures that contain rows or collections of rows. The API binding between the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries and the host language defines how rows are realized in the query that produced the result. For information on how to construct a row instance, see [Constructing Types](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md).  
@@ -42,8 +42,8 @@ from (select ref(o) as r from LOB.Orders as o) as o2
   
  If the reference value is null, or if the target of the reference does not exist, the result is null.  
   
-## See Also  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [CAST](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md)  
- [CSDL, SSDL, and MSL Specifications](../../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)
+## See also
+- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [CAST](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md)
+- [CSDL, SSDL, and MSL Specifications](../../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)

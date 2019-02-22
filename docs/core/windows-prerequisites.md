@@ -1,8 +1,9 @@
 ---
 title: Prerequisites for .NET Core on Windows
 description: Learn what dependencies you need on your Windows machine to develop and run .NET Core applications.
-ms.date: 12/10/2018
+ms.date: 12/14/2018
 ---
+
 # Prerequisites for .NET Core on Windows
 
 This article shows the supported OS versions in order to run .NET Core applications on Windows. The supported OS versions and dependencies that follow apply to the three ways of developing .NET Core apps on Windows:
@@ -29,11 +30,12 @@ Also, if you're developing on Windows using Visual Studio 2017, the [Prerequisit
 
 The following articles have a complete list of .NET Core supported operating systems per version:
 
+* [.NET Core 3.0 (Preview)](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md)
 * [.NET Core 2.2](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md)
 * [.NET Core 2.1](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md)
 * [.NET Core 1.0](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md)
 
-For download links and more information, see [.NET downloads](https://www.microsoft.com/net/download) to download the latest version or [.NET downloads archive](https://dotnet.microsoft.com/download/archives#dotnet-core) for older versions.
+For download links and more information, see [.NET downloads](https://dotnet.microsoft.com/download) to download the latest version or [.NET downloads archive](https://dotnet.microsoft.com/download/archives#dotnet-core) for older versions.
 
 ## .NET Core dependencies
 
@@ -55,8 +57,12 @@ For download links and more information, see [.NET downloads](https://www.micros
 >
 > In addition to KB2999226, make sure you also have [KB2533623](https://support.microsoft.com/en-us/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot) installed. If you don't have this update installed, you'll see an error similar to the following when you launch a .NET Core application: `The library hostfxr.dll was found, but loading it from C:\<path_to_app>\hostfxr.dll failed`.
 
-## Prerequisites with Visual Studio 2017
+## Prerequisites for .NET Core 3.0 Preview 1
 
+.NET Core 3.0 Preview 1 has the same prerequisites as other versions of .NET Core. However, if you want to use Visual Studio to create .NET Core 3.0 projects, you must use the [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/). Visual Studio 2019 Preview can be installed side-by-side with other versions of Visual Studio without conflict.
+
+## Prerequisites with Visual Studio 2017
+    
 You can use any editor to develop .NET Core applications using the .NET Core SDK. Visual Studio 2017 provides an integrated development environment for .NET Core apps on Windows.
 
 You can read more about the changes in Visual Studio 2017 in the [release notes](/visualstudio/releasenotes/vs2017-relnotes).

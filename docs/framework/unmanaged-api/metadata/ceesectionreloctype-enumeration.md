@@ -73,7 +73,7 @@ typedef enum  {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)  
- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)  
- [AddSectionReloc Method](../../../../docs/framework/unmanaged-api/metadata/iceegen-addsectionreloc-method.md)
+## See also
+- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+- [AddSectionReloc Method](../../../../docs/framework/unmanaged-api/metadata/iceegen-addsectionreloc-method.md)

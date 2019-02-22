@@ -83,6 +83,6 @@ Class AddressBook
 End Class  
 ```  
   
-## See Also  
- [Covariance and Contravariance (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)  
- [Generics](~/docs/standard/generics/index.md)
+## See also
+- [Covariance and Contravariance (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)
+- [Generics](~/docs/standard/generics/index.md)

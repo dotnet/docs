@@ -82,8 +82,8 @@ Value types and reference types in the CTS
  The built-in numeric types are structs, and they have properties and methods that you can access:  
   
 ```csharp  
-// Static method on type Byte.  
-byte b = Byte.MaxValue;  
+// Static method on type byte.  
+byte b = byte.MaxValue;
 ```  
   
  But you declare and assign values to them as if they were simple non-aggregate types:  
@@ -178,9 +178,9 @@ stringList.Add(4);
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)
 - [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)

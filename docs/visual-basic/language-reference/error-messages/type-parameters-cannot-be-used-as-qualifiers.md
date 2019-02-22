@@ -32,7 +32,7 @@ End Function
   
 2.  If you need to use a constructed type to locate the programming element being qualified, you must use additional program logic.  
   
-## See Also  
- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Type List](../../../visual-basic/language-reference/statements/type-list.md)
+## See also
+- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Type List](../../../visual-basic/language-reference/statements/type-list.md)

@@ -173,5 +173,5 @@ Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> pr
   
 ## See also
 
-- [Threading](../../../docs/standard/threading/index.md)  
+- [Threading](../../../docs/standard/threading/index.md)
 - [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)

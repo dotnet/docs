@@ -134,8 +134,8 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
 -   When the wizard is complete (accepted or canceled), the pages that the wizard comprises are removed from the journal. This keeps each instance of the wizard isolated, thereby avoiding potential data or state anomalies.  
   
-## See Also  
- <xref:System.Windows.Controls.Page>  
- <xref:System.Windows.Navigation.PageFunction%601>  
- <xref:System.Windows.Navigation.NavigationService>  
- [Structured Navigation Overview](../../../../docs/framework/wpf/app-development/structured-navigation-overview.md)
+## See also
+- <xref:System.Windows.Controls.Page>
+- <xref:System.Windows.Navigation.PageFunction%601>
+- <xref:System.Windows.Navigation.NavigationService>
+- [Structured Navigation Overview](../../../../docs/framework/wpf/app-development/structured-navigation-overview.md)

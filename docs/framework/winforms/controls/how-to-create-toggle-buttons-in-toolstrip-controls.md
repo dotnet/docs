@@ -29,6 +29,6 @@ When a user clicks a toggle button, it appears sunken and retains the sunken app
     EventHandler(toolStripButton1_CheckedChanged);  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStripButton>  
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.ToolStripButton>
+- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)

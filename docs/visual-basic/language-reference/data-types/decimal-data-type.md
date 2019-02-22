@@ -72,13 +72,13 @@ Dim bigDec3 As Decimal = 9223372036854775808D  ' No overflow.
   
  For `bigDec3`, the literal type character `D` solves the problem by forcing the compiler to interpret the literal as a `Decimal` instead of as a `Long`.  
   
-## See Also  
- <xref:System.Decimal?displayProperty=nameWithType>  
- <xref:System.Decimal.%23ctor%2A?displayProperty=nameWithType>  
- <xref:System.Math.Round%2A?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)  
- [Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+## See also
+- <xref:System.Decimal?displayProperty=nameWithType>
+- <xref:System.Decimal.%23ctor%2A?displayProperty=nameWithType>
+- <xref:System.Math.Round%2A?displayProperty=nameWithType>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)
+- [Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

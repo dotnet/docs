@@ -37,8 +37,8 @@ The <xref:System.Uri?displayProperty=nameWithType> class has been extended with 
   
  The configuration setting for the <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType> and <xref:System.Configuration.IdnElement?displayProperty=nameWithType> configuration classes will be read once when the first <xref:System.Uri?displayProperty=nameWithType> class is constructed. Changes to configuration settings after that time are ignored.  
   
-## See Also  
- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>  
- <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>  
- <xref:System.Uri?displayProperty=nameWithType>  
- <xref:System.Uri.DnsSafeHost%2A?displayProperty=nameWithType>
+## See also
+- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>
+- <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>
+- <xref:System.Uri?displayProperty=nameWithType>
+- <xref:System.Uri.DnsSafeHost%2A?displayProperty=nameWithType>

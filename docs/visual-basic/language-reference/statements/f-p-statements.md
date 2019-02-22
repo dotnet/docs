@@ -15,7 +15,7 @@ The following table contains a listing of Visual Basic language statements.
 |[Option \<keyword>](../../../visual-basic/language-reference/statements/option-keyword-statement.md)|[Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md)|[Option Explicit](../../../visual-basic/language-reference/statements/option-explicit-statement.md)|[Option Infer](../../../visual-basic/language-reference/statements/option-infer-statement.md)|  
 |[Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md)|[Property](../../../visual-basic/language-reference/statements/property-statement.md)|||  
   
-## See Also  
- [A-E Statements](../../../visual-basic/language-reference/statements/a-e-statements.md)  
- [Q-Z Statements](../../../visual-basic/language-reference/statements/q-z-statements.md)  
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)
+## See also
+- [A-E Statements](../../../visual-basic/language-reference/statements/a-e-statements.md)
+- [Q-Z Statements](../../../visual-basic/language-reference/statements/q-z-statements.md)
+- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)

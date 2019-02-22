@@ -60,11 +60,11 @@ Provides properties for accessing an instance of each Windows form declared in t
 |Windows Service|No|  
 |Web Site|No|  
   
-## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>  
- <xref:System.Windows.Forms.Form>  
- <xref:System.Windows.Forms.Form.Close%2A>  
- [Objects](../../../visual-basic/language-reference/objects/index.md)  
- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)  
- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)  
- [Accessing Application Forms](../../../visual-basic/developing-apps/programming/accessing-application-forms.md)
+## See also
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>
+- <xref:System.Windows.Forms.Form>
+- <xref:System.Windows.Forms.Form.Close%2A>
+- [Objects](../../../visual-basic/language-reference/objects/index.md)
+- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)
+- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)
+- [Accessing Application Forms](../../../visual-basic/developing-apps/programming/accessing-application-forms.md)

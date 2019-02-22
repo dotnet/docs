@@ -15,5 +15,5 @@ Endpoint performance counters capture data that reveals how an endpoint is accep
 > [!CAUTION]
 >  There is a limit on the length of a performance counter instance's name. When a Windows Communication Foundation (WCF) counter instance name exceeds the maximum length, WCF replaces a portion of the instance name with a hash value.  
   
-## See Also  
- [Performance Counters](../../../../../docs/framework/wcf/diagnostics/performance-counters/index.md)
+## See also
+- [Performance Counters](../../../../../docs/framework/wcf/diagnostics/performance-counters/index.md)

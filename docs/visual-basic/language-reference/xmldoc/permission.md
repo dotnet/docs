@@ -1,12 +1,12 @@
 ---
-title: "&lt;permission&gt; (Visual Basic)"
+title: "<permission> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<permission> XML tag"
   - "permission XML tag"
 ms.assetid: 0edf0500-5cd7-49c0-9255-64c48f972b77
 ---
-# &lt;permission&gt; (Visual Basic)
+# \<permission> (Visual Basic)
 Specifies a required permission for the member.  
   
 ## Syntax  
@@ -32,5 +32,5 @@ Specifies a required permission for the member.
   
  [!code-vb[VbVbcnXmlDocComments#7](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/permission_1.vb)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

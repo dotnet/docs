@@ -201,11 +201,7 @@ public class WCFCustomer
   
  The [DataContract] attribute identifies this type as one that can be serialized and deserialized between client and server. The [DataMember] attribute identifies the individual properties or fields to serialize.  
   
- When WCF sends an object across tiers, it serializes only the values and creates a new instance of the object on the other tier. Any interactions with the values of the object occur only locally – they do not communicate with the other tier the way .NET Remoting by-reference objects do. For more information, see the following topics:  
-  
--   [Serialization and Deserialization](./feature-details/serialization-and-deserialization.md)  
-  
--   [Serialization in Windows Communication Foundation](https://msdn.microsoft.com/magazine/cc163569.aspx)  
+ When WCF sends an object across tiers, it serializes only the values and creates a new instance of the object on the other tier. Any interactions with the values of the object occur only locally – they do not communicate with the other tier the way .NET Remoting by-reference objects do. For more information, see [Serialization and Deserialization](./feature-details/serialization-and-deserialization.md).  
   
 ### Exception Handling Capabilities  
   
@@ -301,9 +297,9 @@ catch (FaultException<CustomerServiceFault> fault)
   
  Once a Remoting application has been migrated to WCF, it is still important to remove dependencies on .NET Remoting. This ensures that any Remoting vulnerabilities are removed from the application. These steps include the following:  
   
--   **Discontinue use of MarshalByRefObject.** The MarshalByRefObject type exists only for Remoting and is not used by WCF. Any application types that sub-class MarshalByRefObject should be removed or changed. The MarshalByRefObject type exists only for Remoting and is not used by WCF. Any application types that sub-class MarshalByRefObject should be removed or changed.  
+-   **Discontinue use of MarshalByRefObject.** The MarshalByRefObject type exists only for Remoting and is not used by WCF. Any application types that sub-class MarshalByRefObject should be removed or changed.  
   
--   **Discontinue use of [Serializable] and ISerializable.** The [Serializable] attribute and ISerializable interface were originally designed to serialize types within trusted environments, and they are used by Remoting. WCF serialization relies on types being marked with [DataContract] and [DataMember]. Data types used by an application should be modified to use [DataContract] and not to use ISerializable or [Serializable]. The [Serializable] attribute and ISerializable interface were originally designed to serialize types within trusted environments, and they are used by Remoting. WCF serialization relies on types being marked with [DataContract] and [DataMember]. Data types used by an application should be modified to use [DataContract] and not to use ISerializable or [Serializable].  
+-   **Discontinue use of [Serializable] and ISerializable.** The [Serializable] attribute and ISerializable interface were originally designed to serialize types within trusted environments, and they are used by Remoting. WCF serialization relies on types being marked with [DataContract] and [DataMember]. Data types used by an application should be modified to use [DataContract] and not to use ISerializable or [Serializable].  
   
 ### Migration Scenarios  
  Now let’s see how to accomplish the following common Remoting scenarios in WCF:  

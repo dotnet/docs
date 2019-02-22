@@ -24,6 +24,6 @@ The `My.Computer.Keyboard` object provides properties for accessing the current 
 |Determine whether SCROLL LOCK is on|<xref:Microsoft.VisualBasic.Devices.Keyboard.ScrollLock%2A>|  
 |Start an application and send it keystrokes|[How to: Start an Application and Send it Keystrokes (Visual Basic)](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-start-an-application-and-send-it-keystrokes.md)|  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Devices.Keyboard>  
- <xref:System.Windows.Forms.Keys?displayProperty=nameWithType>
+## See also
+- <xref:Microsoft.VisualBasic.Devices.Keyboard>
+- <xref:System.Windows.Forms.Keys?displayProperty=nameWithType>

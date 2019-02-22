@@ -1,9 +1,9 @@
 ---
-title: "&lt;dataContractSerializer&gt; of &lt;system.runtime.serialization&gt;"
+title: "<dataContractSerializer> of <system.runtime.serialization>"
 ms.date: "03/30/2017"
 ms.assetid: d9b3d625-be3f-4768-8e0d-1b7e6929f6a8
 ---
-# &lt;dataContractSerializer&gt; of &lt;system.runtime.serialization&gt;
+# \<dataContractSerializer> of \<system.runtime.serialization>
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
  \<system.runtime.serialization>  
@@ -12,21 +12,21 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 ## Syntax  
   
 ```xml  
-<configuration>  
-  <system.runtime.serialization>  
-    <dataContractSerializer ignoreExtensionDataObject="Boolean"  
-            maxItemsInObjectGraph="Integer">  
-      <declaredTypes>  
-        <add type="String">  
-          <knownType type="String">  
-             <parameter index="Integer"  
-                        type="String" />  
-          </knownType>  
-        </add>  
-      </declaredTypes>  
-    <dataContractSerializer>  
-  </system.runtime.serialization>  
-</configuration>  
+<configuration>
+  <system.runtime.serialization>
+    <dataContractSerializer ignoreExtensionDataObject="Boolean"
+                            maxItemsInObjectGraph="Integer">
+      <declaredTypes>
+        <add type="String">
+          <knownType type="String">
+            <parameter index="Integer"
+                       type="String" />
+          </knownType>
+        </add>
+      </declaredTypes>
+    <dataContractSerializer>
+  </system.runtime.serialization>
+</configuration>
 ```  
   
 ## Attributes and Elements  
@@ -54,7 +54,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 ## Remarks  
  For more information about known types, see <xref:System.Runtime.Serialization.DataContractSerializer> and [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>  
- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
+- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)

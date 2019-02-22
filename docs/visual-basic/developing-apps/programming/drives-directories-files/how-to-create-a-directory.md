@@ -34,6 +34,6 @@ Use the `CreateDirectory` method of the `My.Computer.FileSystem` object to creat
   
 -   The user lacks permissions in a partial-trust situation (<xref:System.Security.SecurityException>).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory%2A>  
- [Creating, Deleting, and Moving Files and Directories](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)
+## See also
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory%2A>
+- [Creating, Deleting, and Moving Files and Directories](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)

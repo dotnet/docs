@@ -16,8 +16,8 @@ The following example shows how to animate the position of a camera and animate 
 ## Example  
  [!code-xaml[Animation3DGallery_snip#PointVector3DAnimationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/PointVector3DAnimationExample.xaml#pointvector3danimationexamplewholepage)]  
   
-## See Also  
- <xref:System.Windows.Media.Animation.Vector3DAnimation>  
- <xref:System.Windows.Media.Animation.Point3DAnimation>  
- [Animate Camera Position and Direction Using Key Frames](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-camera-position-and-direction-using-key-frames.md)  
- [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)
+## See also
+- <xref:System.Windows.Media.Animation.Vector3DAnimation>
+- <xref:System.Windows.Media.Animation.Point3DAnimation>
+- [Animate Camera Position and Direction Using Key Frames](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-camera-position-and-direction-using-key-frames.md)
+- [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)

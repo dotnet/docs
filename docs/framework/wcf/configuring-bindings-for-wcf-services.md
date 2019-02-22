@@ -43,7 +43,7 @@ When creating an application, you often want to defer decisions to the administr
   
 ```xml  
 <service name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">  
-  <!—- This section is optional with the default configuration introduced  
+  <!-- This section is optional with the default configuration introduced  
        in .NET Framework 4. -->  
   <endpoint   
       address="/HelloWorld2/"  
@@ -155,8 +155,8 @@ When creating an application, you often want to defer decisions to the administr
 </bindings>  
 ```  
   
-## See Also  
- [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)  
- [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)  
- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+## See also
+- [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
+- [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)
+- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;nameEntry&gt; Element"
+title: "<nameEntry> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#nameEntry"
@@ -8,10 +8,8 @@ helpviewer_keywords:
   - "<nameEntry> element"
   - "nameEntry element"
 ms.assetid: 7d7535e9-4b4a-4b8c-82e2-e40dff5a7821
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;nameEntry&gt; Element
+# \<nameEntry> Element
 Maps a class name to a friendly algorithm name, which allows one class to have many friendly names.  
   
  \<configuration>  
@@ -71,8 +69,8 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 </configuration>  
 ```  
   
-## See Also  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
+## See also
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
 - [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

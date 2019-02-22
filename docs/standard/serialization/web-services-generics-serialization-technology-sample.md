@@ -59,8 +59,8 @@ ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
   
 ## See also
 
-- <xref:System.Collections.Generic>  
-- <xref:System.Web.Services>  
-- <xref:System.Xml.Serialization>  
-- [Serialization](../../../docs/standard/serialization/index.md)  
+- <xref:System.Collections.Generic>
+- <xref:System.Web.Services>
+- <xref:System.Xml.Serialization>
+- [Serialization](../../../docs/standard/serialization/index.md)
 - [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)

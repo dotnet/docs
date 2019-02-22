@@ -24,11 +24,11 @@ This example shows how to change the appearance of a dragged <xref:System.Window
 [!code-xaml[ListViewHeaderRoleStyle#ControlTemplateTriggersEnd](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewHeaderRoleStyle/CS/Window1.xaml#controltemplatetriggersend)]  
 [!code-xaml[ListViewHeaderRoleStyle#GVCHControlTemplateEnd](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewHeaderRoleStyle/CS/Window1.xaml#gvchcontroltemplateend)]  
   
-## See Also  
- <xref:System.Windows.Controls.GridViewColumnHeader>  
- <xref:System.Windows.Controls.GridViewColumnHeaderRole>  
- <xref:System.Windows.Controls.ListView>  
- <xref:System.Windows.Controls.GridView>  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
+## See also
+- <xref:System.Windows.Controls.GridViewColumnHeader>
+- <xref:System.Windows.Controls.GridViewColumnHeaderRole>
+- <xref:System.Windows.Controls.ListView>
+- <xref:System.Windows.Controls.GridView>
+- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
+- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)

@@ -56,11 +56,11 @@ These examples demonstrate some of the more common operations that can be perfor
  [!code-csharp[FlowDocumentSnippets#_SectionBlocksClear](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml.cs#_sectionblocksclear)]
  [!code-vb[FlowDocumentSnippets#_SectionBlocksClear](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentSnippets/visualbasic/window1.xaml.vb#_sectionblocksclear)]  
   
-## See Also  
- <xref:System.Windows.Documents.BlockCollection>  
- <xref:System.Windows.Documents.InlineCollection>  
- <xref:System.Windows.Documents.ListItemCollection>  
- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)  
- [Manipulate a Table's Row Groups through the RowGroups Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)  
- [Manipulate a Table's Columns through the Columns Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-table-columns-through-the-columns-property.md)  
- [Manipulate a Table's Row Groups through the RowGroups Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)
+## See also
+- <xref:System.Windows.Documents.BlockCollection>
+- <xref:System.Windows.Documents.InlineCollection>
+- <xref:System.Windows.Documents.ListItemCollection>
+- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+- [Manipulate a Table's Row Groups through the RowGroups Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)
+- [Manipulate a Table's Columns through the Columns Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-table-columns-through-the-columns-property.md)
+- [Manipulate a Table's Row Groups through the RowGroups Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)

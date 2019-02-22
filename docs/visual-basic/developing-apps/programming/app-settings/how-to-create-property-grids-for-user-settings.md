@@ -43,9 +43,9 @@ You can create a property grid for user settings by populating a <xref:System.Wi
 ## Robust Programming  
  The application saves the user settings when the application shuts down. To save the settings immediately, call the `My.Settings.Save` method. For more information, see [How to: Persist User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md).  
   
-## See Also  
- [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)  
- [How to: Read Application Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)  
- [How to: Change User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)  
- [How to: Persist User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)  
- [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)
+## See also
+- [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)
+- [How to: Read Application Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)
+- [How to: Change User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)
+- [How to: Persist User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)
+- [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)

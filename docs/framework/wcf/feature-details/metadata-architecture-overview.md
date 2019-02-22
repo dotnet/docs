@@ -81,12 +81,12 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
 ## Dynamic Bindings  
  You can dynamically update the binding that you use to create a channel to a service endpoint in the event that the binding for the endpoint changes or you want to create a channel to an endpoint that uses the same contract but has a different binding. You can use the <xref:System.ServiceModel.Description.MetadataResolver> static class to retrieve and import metadata at runtime for service endpoints that implement a specific contract. You can then use the imported <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> objects to create a client or channel factory to the desired endpoint.  
   
-## See Also  
- <xref:System.ServiceModel.Description>  
- [Metadata Formats](../../../../docs/framework/wcf/feature-details/metadata-formats.md)  
- [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)  
- [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)  
- [Retrieving Metadata](../../../../docs/framework/wcf/feature-details/retrieving-metadata.md)  
- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)  
- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)  
- [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)
+## See also
+- <xref:System.ServiceModel.Description>
+- [Metadata Formats](../../../../docs/framework/wcf/feature-details/metadata-formats.md)
+- [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)
+- [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)
+- [Retrieving Metadata](../../../../docs/framework/wcf/feature-details/retrieving-metadata.md)
+- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)
+- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)
+- [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)

@@ -151,7 +151,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 2.  Select the **Start**. Locate **Microsoft Visual Studio \<version>** and open a developer command prompt.  
   
-3.  Type `ildasm` in the Visual Studio Command Prompt window, and then press ENTER. The IL DASM window appears.  
+3.  Type `ildasm` in the Developer Command Prompt for Visual Studio window, and then press ENTER. The IL DASM window appears.  
   
 4.  On the **File** menu in the IL DASM window, select **File** > **Open**. Double-click **Visual Studio \<version>**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. Note that namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are included in the assembly. By default in Visual Studio, the compiler imports the types you need from a referenced PIA into your assembly.  
   
@@ -184,23 +184,23 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 8.  In Visual Studio, click **Clean Solution** on the **Build** menu to clean up the completed project.  
   
-## See Also
+## See also
 
-- [Auto-Implemented Properties (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
-- [Auto-Implemented Properties (C#)](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)  
-- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
-- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
-- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)  
-- [Passing Arguments by Position and by Name](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)  
-- [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)  
-- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
-- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
-- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
-- [Lambda Expressions (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
-- [Lambda Expressions (C#)](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
-- [How to: Use Indexed Properties in COM Interop Programming](../../../csharp/programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md)  
-- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)  
-- [Walkthrough: Embedding Types from Managed Assemblies](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  
-- [Walkthrough: Creating Your First VSTO Add-in for Excel](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)  
-- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
+- [Auto-Implemented Properties (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
+- [Auto-Implemented Properties (C#)](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)
+- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
+- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
+- [Passing Arguments by Position and by Name](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)
+- [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)
+- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
+- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)
+- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)
+- [Lambda Expressions (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
+- [Lambda Expressions (C#)](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
+- [How to: Use Indexed Properties in COM Interop Programming](../../../csharp/programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md)
+- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (C#)](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)
+- [Walkthrough: Embedding Types from Managed Assemblies](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)
+- [Walkthrough: Creating Your First VSTO Add-in for Excel](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)
+- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
 - [Interoperability](../../../csharp/programming-guide/interop/index.md)

@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: d9b12787-86f6-4022-8e0f-e12d312c4af2
 ---
 # Handling User Input
-This topic describes the main keyboard and mouse events provided by <xref:System.Windows.Forms.Control?displayProperty=nameWithType>. When handling an event, control authors should override the protected `On`*EventName* method rather than attaching a delegate to the event. For a review of events, see [Raising Events from a Component](https://msdn.microsoft.com/library/9aebf605-a87d-470b-b7c8-f9abfc8360a0).  
+This topic describes the main keyboard and mouse events provided by <xref:System.Windows.Forms.Control?displayProperty=nameWithType>. When handling an event, control authors should override the protected `On`*EventName* method rather than attaching a delegate to the event. For a review of events, see [Raising Events from a Component](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/sh2e3k5z(v=vs.120)).  
   
 > [!NOTE]
 >  If there is no data associated with an event, an instance of the base class <xref:System.EventArgs> is passed as an argument to the `On`*EventName* method.  
@@ -57,8 +57,8 @@ This topic describes the main keyboard and mouse events provided by <xref:System
   
  For the complete source code for the `FlashTrackBar` sample, see [How to: Create a Windows Forms Control That Shows Progress](../../../../docs/framework/winforms/controls/how-to-create-a-windows-forms-control-that-shows-progress.md).  
   
-## See Also  
- [Events in Windows Forms Controls](../../../../docs/framework/winforms/controls/events-in-windows-forms-controls.md)  
- [Defining an Event](../../../../docs/framework/winforms/controls/defining-an-event-in-windows-forms-controls.md)  
- [Events](../../../../docs/standard/events/index.md)  
- [User Input in Windows Forms](../../../../docs/framework/winforms/user-input-in-windows-forms.md)
+## See also
+- [Events in Windows Forms Controls](../../../../docs/framework/winforms/controls/events-in-windows-forms-controls.md)
+- [Defining an Event](../../../../docs/framework/winforms/controls/defining-an-event-in-windows-forms-controls.md)
+- [Events](../../../../docs/standard/events/index.md)
+- [User Input in Windows Forms](../../../../docs/framework/winforms/user-input-in-windows-forms.md)

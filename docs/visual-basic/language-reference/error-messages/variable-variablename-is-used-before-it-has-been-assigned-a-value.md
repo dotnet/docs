@@ -1,5 +1,5 @@
 ---
-title: "Variable &#39;&lt;variablename&gt;&#39; is used before it has been assigned a value"
+title: "Variable '<variablename>' is used before it has been assigned a value"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc42104"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC42104"
 ms.assetid: 6909aa0b-b4a1-46f5-a18c-ba3e565c1dd8
 ---
-# Variable &#39;&lt;variablename&gt;&#39; is used before it has been assigned a value
+# Variable '\<variablename>' is used before it has been assigned a value
 Variable '\<variablename>' is used before it has been assigned a value. A null reference exception could result at run time.  
   
  An application has at least one possible path through its code that reads a variable before any value is assigned to it.  
@@ -25,7 +25,7 @@ Variable '\<variablename>' is used before it has been assigned a value. A null r
   
 -   One way to guarantee that the variable always has a valid value is to initialize it as part of its declaration. See "Initialization" in [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).  
   
-## See Also  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Troubleshooting Variables](../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)
+## See also
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Troubleshooting Variables](../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)

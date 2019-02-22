@@ -83,8 +83,8 @@ The following code example demonstrates how to create a client class that access
 
 ## See also
 
-[Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)  
-[How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)  
-[ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
-[How to: Create a Client](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  
-[How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)
+- [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)
+- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [How to: Create a Client](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+- [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)

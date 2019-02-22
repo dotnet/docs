@@ -18,15 +18,15 @@ Provides properties for manipulating computer components such as audio, the cloc
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- [My.Computer.Audio Object](../../../visual-basic/language-reference/objects/my-computer-audio-object.md)  
- [My.Computer.Clipboard Object](../../../visual-basic/language-reference/objects/my-computer-clipboard-object.md)  
- [My.Computer.Clock Object](../../../visual-basic/language-reference/objects/my-computer-clock-object.md)  
- [My.Computer.FileSystem Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)  
- [My.Computer.FileSystem.SpecialDirectories Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-specialdirectories-object.md)  
- [My.Computer.Info Object](../../../visual-basic/language-reference/objects/my-computer-info-object.md)  
- [My.Computer.Keyboard Object](../../../visual-basic/language-reference/objects/my-computer-keyboard-object.md)  
- [My.Computer.Mouse Object](../../../visual-basic/language-reference/objects/my-computer-mouse-object.md)  
- [My.Computer.Network Object](../../../visual-basic/language-reference/objects/my-computer-network-object.md)  
- [My.Computer.Ports Object](../../../visual-basic/language-reference/objects/my-computer-ports-object.md)  
- [My.Computer.Registry Object](../../../visual-basic/language-reference/objects/my-computer-registry-object.md)
+## See also
+- [My.Computer.Audio Object](../../../visual-basic/language-reference/objects/my-computer-audio-object.md)
+- [My.Computer.Clipboard Object](../../../visual-basic/language-reference/objects/my-computer-clipboard-object.md)
+- [My.Computer.Clock Object](../../../visual-basic/language-reference/objects/my-computer-clock-object.md)
+- [My.Computer.FileSystem Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)
+- [My.Computer.FileSystem.SpecialDirectories Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-specialdirectories-object.md)
+- [My.Computer.Info Object](../../../visual-basic/language-reference/objects/my-computer-info-object.md)
+- [My.Computer.Keyboard Object](../../../visual-basic/language-reference/objects/my-computer-keyboard-object.md)
+- [My.Computer.Mouse Object](../../../visual-basic/language-reference/objects/my-computer-mouse-object.md)
+- [My.Computer.Network Object](../../../visual-basic/language-reference/objects/my-computer-network-object.md)
+- [My.Computer.Ports Object](../../../visual-basic/language-reference/objects/my-computer-ports-object.md)
+- [My.Computer.Registry Object](../../../visual-basic/language-reference/objects/my-computer-registry-object.md)

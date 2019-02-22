@@ -43,7 +43,7 @@ Most data types have a common representation in both managed and unmanaged memor
   
 -   One-dimensional arrays of blittable types, such as an array of integers. However, a type that contains a variable array of blittable types is not itself blittable.  
   
--   Formatted value types that contain only blittable types (and classes if they are marshaled as formatted types). For more information about formatted value types, see [Default Marshaling for Value Types](https://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a(v=vs.100)).  
+-   Formatted value types that contain only blittable types (and classes if they are marshaled as formatted types). For more information about formatted value types, see [Default marshaling for value types](default-marshaling-behavior.md#default-marshaling-for-value-types).  
   
  Object references are not blittable. This includes an array of references to objects that are blittable by themselves. For example, you can define a structure that is blittable, but you cannot define a blittable type that contains an array of references to those structures.  
   
@@ -51,7 +51,7 @@ Most data types have a common representation in both managed and unmanaged memor
   
  Some managed data types require a different representation in an unmanaged environment. These non-blittable data types must be converted into a form that can be marshaled. For example, managed strings are non-blittable types because they must be converted into string objects before they can be marshaled.  
   
- The following table lists non-blittable types from the <xref:System> namespace. [Delegates](https://msdn.microsoft.com/library/d176ee76-f982-494b-b03d-92e4118896e2(v=vs.100)), which are data structures that refer to a static method or to a class instance, are also non-blittable.  
+ The following table lists non-blittable types from the <xref:System> namespace. [Delegates](default-marshaling-behavior.md#default-marshaling-for-delegates), which are data structures that refer to a static method or to a class instance, are also non-blittable.  
   
 |Non-blittable type|Description|  
 |-------------------------|-----------------|  
@@ -67,5 +67,5 @@ Most data types have a common representation in both managed and unmanaged memor
   
  Class and object types are supported only by COM interop. For corresponding types in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++, see the [Class Library Overview](../../../docs/standard/class-library-overview.md).  
   
-## See Also  
- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)
+## See also
+- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)

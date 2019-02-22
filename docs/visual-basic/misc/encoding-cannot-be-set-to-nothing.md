@@ -12,9 +12,9 @@ An attempt to read from or write to a file has failed because the parameter `enc
   
 -   Supply a valid value for the `encoding` parameter.  
   
-## See Also  
- [File Encodings](../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)  
- [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
- [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)  
- [My.Computer.FileSystem.ReadAllText](xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A)  
- [My.Computer.FileSystem.WriteAllText](xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A)
+## See also
+- [File Encodings](../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)
+- [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
+- [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)
+- [My.Computer.FileSystem.ReadAllText](xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A)
+- [My.Computer.FileSystem.WriteAllText](xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A)

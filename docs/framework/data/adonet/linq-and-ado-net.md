@@ -35,8 +35,8 @@ Today, many business developers must use two (or more) programming languages: a 
   
 ## See also
 
-- [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)  
-- [LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md)  
-- [LINQ to Entities](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)  
+- [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)
+- [LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md)
+- [LINQ to Entities](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
 - [Language Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md)
 - [ADO.NET Overview](ado-net-overview.md)

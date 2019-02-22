@@ -27,9 +27,9 @@ This example shows how to style a row in a <xref:System.Windows.Controls.ListVie
   
  [!code-xaml[ListViewItemStyleSnippet#GridView](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyleSnippet/CS/Window1.xaml#gridview)]  
   
-## See Also  
- <xref:System.Windows.Controls.ListView>  
- <xref:System.Windows.Controls.GridView>  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+## See also
+- <xref:System.Windows.Controls.ListView>
+- <xref:System.Windows.Controls.GridView>
+- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

@@ -170,7 +170,7 @@ In the following procedure, you will create a multipane user interface that is s
     createOutlookUI();  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.SplitContainer>  
- [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)  
- [How to: Create a Multipane User Interface with Windows Forms Using the Designer](../../../../docs/framework/winforms/controls/create-a-multipane-user-interface-with-wf-using-the-designer.md)
+## See also
+- <xref:System.Windows.Forms.SplitContainer>
+- [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)
+- [How to: Create a Multipane User Interface with Windows Forms Using the Designer](../../../../docs/framework/winforms/controls/create-a-multipane-user-interface-with-wf-using-the-designer.md)

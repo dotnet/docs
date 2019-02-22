@@ -21,6 +21,6 @@ For more information about protocol correlation, see [Durable Duplex](../../../.
 
 Content-based correlation uses some piece of information in the message to associate it to a particular instance. Unlike protocol-based correlation, content-based correlation requires the application author to explicitly state where this data can be found in each related message. Activities that use content-based correlation specify this message data by using a <xref:System.ServiceModel.MessageQuerySet>. Content-based correlation is useful when communicating with services that do not use one of the context bindings such as <xref:System.ServiceModel.BasicHttpContextBinding>.
   
-## See Also  
+## See also
 
 - [NetContextExchangeCorrelation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee662963%28v%3dvs.100%29)

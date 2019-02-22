@@ -58,5 +58,5 @@ Peer Channel is by design a broadcast mesh. Its basic flooding model involves di
   
     -   *Low*:  Any, direct connection probably not needed.  
   
-## See Also  
- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+## See also
+- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

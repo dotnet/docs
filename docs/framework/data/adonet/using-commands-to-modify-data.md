@@ -17,7 +17,7 @@ Using a .NET Framework data provider, you can execute stored procedures or data 
  [Performing Catalog Operations](../../../../docs/framework/data/adonet/performing-catalog-operations.md)  
  Describes how to execute commands that modify database schema.  
   
-## See Also  
- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

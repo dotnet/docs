@@ -150,16 +150,16 @@ public Customer this[long id] => store.LookupCustomer(id);
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](index.md)  
-- [Access Modifiers](access-modifiers.md)  
-- [Static Classes and Static Class Members](static-classes-and-static-class-members.md)  
-- [Inheritance](inheritance.md)  
-- [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md)  
-- [params](../../../csharp/language-reference/keywords/params.md)  
-- [return](../../../csharp/language-reference/keywords/return.md)  
-- [out](../../../csharp/language-reference/keywords/out.md)  
-- [ref](../../../csharp/language-reference/keywords/ref.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](index.md)
+- [Access Modifiers](access-modifiers.md)
+- [Static Classes and Static Class Members](static-classes-and-static-class-members.md)
+- [Inheritance](inheritance.md)
+- [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md)
+- [params](../../../csharp/language-reference/keywords/params.md)
+- [return](../../../csharp/language-reference/keywords/return.md)
+- [out](../../../csharp/language-reference/keywords/out.md)
+- [ref](../../../csharp/language-reference/keywords/ref.md)
 - [Passing Parameters](passing-parameters.md)

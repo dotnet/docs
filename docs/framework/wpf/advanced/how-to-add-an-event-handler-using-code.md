@@ -31,6 +31,6 @@ This example shows how to add an event handler to an element by using code.
 > [!NOTE]
 >  Adding an event handler in the initially parsed [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] page is much simpler. Within the object element where you want to add the event handler, add an attribute that matches the name of the event that you want to handle. Then specify the value of that attribute as the name of the event handler method that you defined in the code-behind file of the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] page. For more information, see [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md) or [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md).  
   
-## See Also  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)
+## See also
+- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)

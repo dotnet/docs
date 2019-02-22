@@ -48,9 +48,7 @@
       "apiPlatform": "dotnet",
       "ms.topic": "managed-reference",
       "ms.prod": "dotnet-api",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "dotnet/dotnet-api-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html",
+      "feedback_system": "None",
       "_op_documentIdPathDepotMapping": {
         "api/": {
           "depot_name": "VS.core-docs"
@@ -133,11 +131,6 @@
       },
       "langs": {
         "api/**.yml": ["csharp", "vb", "fsharp", "cpp"]
-      },
-      "feedback_system": {
-        "api/Microsoft.SqlServer**.yml": "None",
-        "api/System.Data**.yml": "None",
-        "api/System.Web**.yml": "None"
       }
     },
     "dest": "_site",

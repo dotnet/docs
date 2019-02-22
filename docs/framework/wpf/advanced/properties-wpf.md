@@ -15,10 +15,10 @@ ms.assetid: d6e0197f-f2c4-48ed-b45b-b9cdb64aab1c
   
 ## In This Section  
  [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)  
- [Dependency Property Callbacks and Validation](../../../../docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md)  
+ [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)   
  [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
+ [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)
+ [Dependency Property Callbacks and Validation](../../../../docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md)
  [Framework Property Metadata](../../../../docs/framework/wpf/advanced/framework-property-metadata.md)  
  [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md)  
  [Read-Only Dependency Properties](../../../../docs/framework/wpf/advanced/read-only-dependency-properties.md)  

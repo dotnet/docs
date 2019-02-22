@@ -20,7 +20,7 @@ This article assumes that you:
 
 You should also become familiar with the content of the following topics:
 
-[.NET Standard](~/docs/standard/net-standard.md)   
+[.NET Standard](../../standard/net-standard.md)
 This topic describes the formal specification of .NET APIs that are intended to be available on all .NET implementations.
 
 [Packages, Metapackages and Frameworks](~/docs/core/packages.md)   

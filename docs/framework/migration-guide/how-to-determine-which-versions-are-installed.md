@@ -14,7 +14,7 @@ ms.author: "ronpet"
 ---
 # How to: Determine which .NET Framework versions are installed
 
-When users [install the .NET Framework](../install/guide-for-developers.md), they can install and run multiple versions of it on their computers. For an app that you develop or deploy to run properly on a user's computer, it might need to know which .NET Framework versions are installed. 
+When users [install the .NET Framework](https://docs.microsoft.com/dotnet/framework/install), they can install and run multiple versions of it on their computers. For an app that you develop or deploy to run properly on a user's computer, it might need to know which .NET Framework versions are installed. 
 
 The .NET Framework consists of two main components, which are versioned separately:  
   
@@ -58,7 +58,7 @@ For information about detecting the installed updates for each version of the .N
 
 2. In the Registry Editor, open the following subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full**. If the **Full** subkey isn't present, then you don't have the .NET Framework 4.5 or later installed.
 
-3. Check for a DWORD entry named **Release**. If it exists, then you have the .NET Framework 4.5 or later installed. Its value is a release key that corresponds to a particular version of the .NET Framework. In the following figure, for example, the value of the **Release** entry is *378389*, which is the release key for .NET Framework 4.5. 
+3. Check for a DWORD entry named **Release**. If it exists, then you have .NET Framework 4.5 or later versions installed. Its value is a release key that corresponds to a particular version of the .NET Framework. In the following figure, for example, the value of the **Release** entry is *378389*, which is the release key for .NET Framework 4.5. 
 
      ![Registry entry for the .NET Framework 4.5](media/clr-installdir.png "Registry entry for the .NET Framework 4.5")
 
@@ -94,7 +94,7 @@ For a complete table of release keys for the .NET Framework for specific Windows
 
 2. Check the value of the **Release** entry to determine the installed version. To be forward-compatible, you can check for a value greater than or equal to the value listed in the table in [Find .NET Framework versions 4.5 and later in the registry](#net_b).
 
-The following example checks the value of the **Release** entry in the registry to determine whether .NET Framework 4.5 or a later version is installed.
+The following example checks the value of the **Release** entry in the registry to find the .NET Framework 4.5 and later versions that are installed:
 
 [!code-csharp[ListVersions#5](../../../samples/snippets/csharp/framework/migration-guide/versions-installed3.cs)]
 [!code-vb[ListVersions#5](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed3.vb)]
@@ -108,11 +108,13 @@ This example follows the recommended practice for version checking:
 <a name="ps_a"></a> 
 ### Check for a minimum-required .NET Framework version (4.5 and later) with PowerShell
 
-The following example checks the value of the **Release** entry to determine whether .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
+- Use PowerShell commands to check the value of the **Release** entry of the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** subkey.
+
+    The following example checks the value of the **Release** entry to determine whether .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
 
     ```PowerShell
     # PowerShell 5
-    Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\' | Get-ItemPropertyValue -Name Release | Foreach-Object { $_ -ge 394802 } 
+    Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\' |  Get-ItemPropertyValue -Name Release | Foreach-Object { $_ -ge 394802 } 
     ```
 
     ```PowerShell
@@ -120,7 +122,7 @@ The following example checks the value of the **Release** entry to determine whe
     (Get-ItemProperty "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -gt 394802
     ```
 
-    To check for a different minimum-required .NET Framework version, replace *394802* in the previous example with another **Release** value from the table in [Find .NET Framework versions 4.5 and later in the registry](#net_b).
+    To check for a different minimum-required .NET Framework version, replace *394802* in the previous example with a **Release** value from the table in [Find .NET Framework versions 4.5 and later in the registry](#net_b).
 
 ## Find earlier .NET Framework versions (1&#8211;4)
 
@@ -147,8 +149,10 @@ The following example checks the value of the **Release** entry to determine whe
 
 - Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to access the **HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP** subkey in the Windows registry.
 
-     [!code-csharp[ListVersions](../../../samples/snippets/csharp/framework/migration-guide/versions-installed1.cs)]
-     [!code-vb[ListVersions](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed1.vb)]
+The following example finds the .NET Framework 1&#8211;4 versions that are installed:
+
+[!code-csharp[ListVersions](../../../samples/snippets/csharp/framework/migration-guide/versions-installed1.cs)]
+[!code-vb[ListVersions](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed1.vb)]
 
 
 ## Find CLR versions
@@ -158,27 +162,27 @@ The following example checks the value of the **Release** entry to determine whe
 
 Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md) to determine which versions of the CLR are installed on a computer:
 
-- From a [Developer Command Prompt for Visual Studio](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs), enter `clrver`.
+- From a [Developer Command Prompt for Visual Studio](https://docs.microsoft.com/dotnet/framework/tools/developer-command-prompt-for-vs), enter `clrver`.
 
-Sample output:
+    Sample output:
 
-```console
-Versions installed on the machine:
-v2.0.50727
-v4.0.30319
-```
+    ```console
+    Versions installed on the machine:
+    v2.0.50727
+    v4.0.30319
+    ```
 
 <a name="clr_b"></a> 
 ### Find the current CLR version with the Environment class
 
 > [!IMPORTANT]
-    > For the the .NET Framework 4.5 and later versions, we don't recommend using the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to detect the version of the CLR. Instead, query the registry as described in [To find .NET Framework versions by querying the registry in code (.NET Framework 4.5 and later)](#net_d).
+> For the the .NET Framework 4.5 and later versions, don't use the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to detect the version of the CLR. Instead, query the registry as described in [To find .NET Framework versions by querying the registry in code (.NET Framework 4.5 and later)](#net_d).
 
 1. Query the <xref:System.Environment.Version?displayProperty=nameWithType> property to retrieve a <xref:System.Version> object. 
 
     This returned object identifies the version of the runtime that's currently executing the code; it does not return assembly versions or other versions of the runtime that may have been installed on the computer.
 
-    For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form *4.0.30319.xxxxx*. For the .NET Framework 4.6 and later, it has the form *4.6.30319.42000*.    
+    For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form *4.0.30319.xxxxx*. For the .NET Framework 4.6 and later versions, it has the form *4.6.30319.42000*.    
 
 2. After you have the `Version` object, query it as follows:
 
@@ -190,7 +194,7 @@ v4.0.30319
 
 
 
-The following example uses the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to retrieve runtime version information:
+The following example uses the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to retrieve CLR version information:
 
 [!code-csharp[ListVersions](../../../samples/snippets/csharp/framework/migration-guide/versions-installed2.cs)]
 [!code-vb[ListVersions](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed2.vb)]

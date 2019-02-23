@@ -18,7 +18,7 @@ This example shows how to set the tile size for a <xref:System.Windows.Media.Til
   
  ![Example of tiling with an image brush](media/0.png "0")  
   
- [!code-csharp[UsingImageBrush_snip#RelativeTileSizeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#relativetilesizeexample)]  
+ [!code-csharp[UsingImageBrush_snip#RelativeTileSizeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#relativetilesizeexample)]  
   
  The next example creates an <xref:System.Windows.Media.ImageBrush>, sets its <xref:System.Windows.Media.TileBrush.Viewport%2A> to `0,0,25,25` and its <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> to <xref:System.Windows.Media.BrushMappingMode.Absolute>, and uses it to paint another rectangle. As a result, the brush produces tiles that have a width of 25  pixels and a height of 25 pixels .  
   
@@ -26,7 +26,7 @@ This example shows how to set the tile size for a <xref:System.Windows.Media.Til
   
  ![A tiled TileBrush with a Viewport of 0,0,0.25,0.25](media/25x25viewport.png "25x25viewport")  
   
- [!code-csharp[UsingImageBrush_snip#AbsoluteTileSizeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#absolutetilesizeexample)]  
+ [!code-csharp[UsingImageBrush_snip#AbsoluteTileSizeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#absolutetilesizeexample)]  
   
  The preceding examples are part of a larger sample. For the complete sample, see [ImageBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160005).  
   

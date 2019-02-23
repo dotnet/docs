@@ -20,15 +20,15 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
 ## Example  
  The <xref:System.Windows.Media.CompositionTarget.Rendering> event fires during the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering process. The following example shows how you register an <xref:System.EventHandler> delegate to the static <xref:System.Windows.Media.CompositionTarget.Rendering> method on <xref:System.Windows.Media.CompositionTarget>.  
   
- [!code-csharp[CompositionTargetSample#CompositionTarget1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CompositionTargetSample/CSharp/Window1.xaml.cs#compositiontarget1)]
- [!code-vb[CompositionTargetSample#CompositionTarget1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CompositionTargetSample/visualbasic/window1.xaml.vb#compositiontarget1)]  
+ [!code-csharp[CompositionTargetSample#CompositionTarget1](~/samples/snippets/csharp/VS_Snippets_Wpf/CompositionTargetSample/CSharp/Window1.xaml.cs#compositiontarget1)]
+ [!code-vb[CompositionTargetSample#CompositionTarget1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CompositionTargetSample/visualbasic/window1.xaml.vb#compositiontarget1)]  
   
  You can use your rendering event handler method to create custom drawing content. This event handler method gets called once per frame. Each time that [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] marshals the persisted rendering data in the visual tree across to the composition scene graph, your event handler method is called. In addition, if changes to the visual tree force updates to the composition scene graph, your event handler method is also called. Note that your event handler method is called after layout has been computed. However, you can modify layout in your event handler method, which means that layout will be computed once more before rendering.  
   
  The following example shows how you can provide custom drawing in a <xref:System.Windows.Media.CompositionTarget> event handler method. In this case, the background color of the <xref:System.Windows.Controls.Canvas> is drawn with a color value based on the coordinate position of the mouse. If you move the mouse inside the <xref:System.Windows.Controls.Canvas>, its background color changes. In addition, the average frame rate is calculated, based on the current elapsed time and the total number of rendered frames.  
   
- [!code-csharp[CompositionTargetSample#CompositionTarget2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CompositionTargetSample/CSharp/Window1.xaml.cs#compositiontarget2)]
- [!code-vb[CompositionTargetSample#CompositionTarget2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CompositionTargetSample/visualbasic/window1.xaml.vb#compositiontarget2)]  
+ [!code-csharp[CompositionTargetSample#CompositionTarget2](~/samples/snippets/csharp/VS_Snippets_Wpf/CompositionTargetSample/CSharp/Window1.xaml.cs#compositiontarget2)]
+ [!code-vb[CompositionTargetSample#CompositionTarget2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CompositionTargetSample/visualbasic/window1.xaml.vb#compositiontarget2)]  
   
  You may discover that your custom drawing runs at different speeds on different computers. This is because your custom drawing is not frame-rate independent. Depending on the system you are running and the workload of that system, the <xref:System.Windows.Media.CompositionTarget.Rendering> event may be called a different number of times per second. For information on determining the graphics hardware capability and performance for a device that runs a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application, see [Graphics Rendering Tiers](../advanced/graphics-rendering-tiers.md).  
   

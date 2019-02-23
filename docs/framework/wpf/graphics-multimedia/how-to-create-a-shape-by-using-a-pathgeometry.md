@@ -12,7 +12,7 @@ This example shows how to create a shape using the <xref:System.Windows.Media.Pa
 ## Example  
  The following example uses a <xref:System.Windows.Media.PathGeometry> to create a triangle. The  <xref:System.Windows.Media.PathGeometry> is displayed using a <xref:System.Windows.Shapes.Path> element.  
   
- [!code-xaml[GeometrySample#49](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/pathgeometryexample.xaml#49)]  
+ [!code-xaml[GeometrySample#49](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/pathgeometryexample.xaml#49)]  
   
  The following illustration shows the shape created in the previous example.  
   

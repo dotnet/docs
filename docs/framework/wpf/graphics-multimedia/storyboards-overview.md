@@ -62,9 +62,9 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  The following example uses a <xref:System.Windows.Media.Animation.Storyboard> to animate the <xref:System.Windows.FrameworkElement.Width%2A> of a <xref:System.Windows.Shapes.Rectangle> element and the <xref:System.Windows.Media.SolidColorBrush.Color%2A> of a <xref:System.Windows.Media.SolidColorBrush> used to paint that <xref:System.Windows.Shapes.Rectangle>.  
   
- [!code-xaml[storyboards_ovw_snip_XAML#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/StoryboardsExample.xaml#1)]  
+ [!code-xaml[storyboards_ovw_snip_XAML#1](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/StoryboardsExample.xaml#1)]  
   
- [!code-csharp[storyboards_ovw_snip#100](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/StoryboardsExample.cs#100)]  
+ [!code-csharp[storyboards_ovw_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/StoryboardsExample.cs#100)]  
   
  The following sections describe the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached properties in more detail.  
   
@@ -80,15 +80,15 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  The following example, taken from the preceding example, assigns the name `MyRectangle` a <xref:System.Windows.Shapes.Rectangle>, a type of <xref:System.Windows.FrameworkElement>.  
   
- [!code-xaml[storyboards_ovw_snip_XAML#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/StoryboardsExample.xaml#2)]  
+ [!code-xaml[storyboards_ovw_snip_XAML#2](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/StoryboardsExample.xaml#2)]  
   
- [!code-csharp[storyboards_ovw_snip#102](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/StoryboardsExample.cs#102)]  
+ [!code-csharp[storyboards_ovw_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/StoryboardsExample.cs#102)]  
   
  After it has a name, you can animate a property of that element.  
   
- [!code-xaml[storyboards_ovw_snip_XAML#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/StoryboardsExample.xaml#5)]  
+ [!code-xaml[storyboards_ovw_snip_XAML#5](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/StoryboardsExample.xaml#5)]  
   
- [!code-csharp[storyboards_ovw_snip#105](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/StoryboardsExample.cs#105)]  
+ [!code-csharp[storyboards_ovw_snip#105](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/StoryboardsExample.cs#105)]  
   
  <xref:System.Windows.Freezable> types are those classes that inherit from the <xref:System.Windows.Freezable> class. Examples of <xref:System.Windows.Freezable> include <xref:System.Windows.Media.SolidColorBrush>, <xref:System.Windows.Media.RotateTransform>, and <xref:System.Windows.Media.GradientStop>.  
   
@@ -96,15 +96,15 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  The following example assigns a name to a <xref:System.Windows.Freezable> object.  
   
- [!code-xaml[storyboards_ovw_snip_XAML#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/StoryboardsExample.xaml#3)]  
+ [!code-xaml[storyboards_ovw_snip_XAML#3](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/StoryboardsExample.xaml#3)]  
   
- [!code-csharp[storyboards_ovw_snip#103](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/StoryboardsExample.cs#103)]  
+ [!code-csharp[storyboards_ovw_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/StoryboardsExample.cs#103)]  
   
  The object can then be targeted by an animation.  
   
- [!code-xaml[storyboards_ovw_snip_XAML#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/StoryboardsExample.xaml#7)]  
+ [!code-xaml[storyboards_ovw_snip_XAML#7](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/StoryboardsExample.xaml#7)]  
   
- [!code-csharp[storyboards_ovw_snip#107](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/StoryboardsExample.cs#107)]  
+ [!code-csharp[storyboards_ovw_snip#107](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/StoryboardsExample.cs#107)]  
   
  <xref:System.Windows.Media.Animation.Storyboard> objects use name scopes to resolve the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> property. For more information about WPF name scopes, see [WPF XAML Namescopes](../advanced/wpf-xaml-namescopes.md). If the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> property is omitted, the animation targets the element on which it is defined, or, in the case of styles, the styled element.  
   
@@ -114,9 +114,9 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
 ## Indirect Targeting  
  There are times a <xref:System.Windows.Freezable> can't be targeted directly by an animation, such as when the <xref:System.Windows.Freezable> is declared as a resource or used to set a property value in a style. In these cases, even though you can't target it directly, you can still animate the <xref:System.Windows.Freezable> object. Instead of setting the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> property with the name of the <xref:System.Windows.Freezable>, you give it the name of the element to which the <xref:System.Windows.Freezable> "belongs." For example, a <xref:System.Windows.Media.SolidColorBrush> used to set the <xref:System.Windows.Shapes.Shape.Fill%2A> of a rectangle element belongs to that rectangle. To animate the brush, you would set the animation's <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> with a chain of properties that starts at the property of the framework element or framework content element the <xref:System.Windows.Freezable> was used to set and ends with the <xref:System.Windows.Freezable> property to animate.  
   
- [!code-xaml[storyboards_ovw_snip_XAML#33](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/IndirectTargetingExample.xaml#33)]  
+ [!code-xaml[storyboards_ovw_snip_XAML#33](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/IndirectTargetingExample.xaml#33)]  
   
- [!code-csharp[storyboards_ovw_snip#134](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#134)]  
+ [!code-csharp[storyboards_ovw_snip#134](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#134)]  
   
  Note that, if the <xref:System.Windows.Freezable> is frozen, a clone will be made, and that clone will be animated. When this happens, the original object's <xref:System.Windows.Media.Animation.Animatable.HasAnimatedProperties%2A> property continues to return `false`, because the original object is not actually animated. For more information about cloning, see the [Freezable Objects Overview](../advanced/freezable-objects-overview.md).  
   
@@ -142,7 +142,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  <xref:System.Windows.Shapes.Shape.Fill%2A> of a rectangle element.  
   
- [!code-xaml[storyboards_ovw_snip_XAML#32](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/IndirectTargetingExample.xaml#32)]  
+ [!code-xaml[storyboards_ovw_snip_XAML#32](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/IndirectTargetingExample.xaml#32)]  
   
  Sometimes you need to target a freezable contained in a collection or array.  
   
@@ -156,11 +156,11 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  For example, suppose that a rectangle has a <xref:System.Windows.Media.TransformGroup> resource applied to its <xref:System.Windows.UIElement.RenderTransform%2A> property, and you want to animate one of the transforms it contains.  
   
- [!code-xaml[storyboards_ovw_snip_XAML#34](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/IndirectTargetingExample.xaml#34)]  
+ [!code-xaml[storyboards_ovw_snip_XAML#34](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/IndirectTargetingExample.xaml#34)]  
   
  The following code shows how to animate the <xref:System.Windows.Media.RotateTransform.Angle%2A> property of the <xref:System.Windows.Media.RotateTransform> shown in the previous example.  
   
- [!code-xaml[storyboards_ovw_snip_XAML#35](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/IndirectTargetingExample.xaml#35)]  
+ [!code-xaml[storyboards_ovw_snip_XAML#35](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip_XAML/CS/IndirectTargetingExample.xaml#35)]  
   
 <a name="targetingpropertyofchangeableincode"></a>   
 ### Indirectly Targeting a Property of a Freezable in Code  
@@ -170,7 +170,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  The following is an example of a dependency property chain that targets the <xref:System.Windows.Media.SolidColorBrush.Color%2A> of a <xref:System.Windows.Media.SolidColorBrush> used to set the <xref:System.Windows.Shapes.Shape.Fill%2A> of a rectangle element.  
   
- [!code-csharp[storyboards_ovw_snip#135](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#135)]  
+ [!code-csharp[storyboards_ovw_snip#135](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#135)]  
   
  You also need to specify a <xref:System.Windows.PropertyPath.Path%2A>. A <xref:System.Windows.PropertyPath.Path%2A> is a <xref:System.String> that tells the <xref:System.Windows.PropertyPath.Path%2A> how to interpret its <xref:System.Windows.PropertyPath.PathParameters%2A>. It uses the following syntax.  
   
@@ -186,15 +186,15 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  The following example shows the <xref:System.Windows.PropertyPath.Path%2A> that would accompany the <xref:System.Windows.PropertyPath.PathParameters%2A> defined in the preceding example.
   
- [!code-csharp[storyboards_ovw_snip#PropertyChainAndPath](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#propertychainandpath)]  
+ [!code-csharp[storyboards_ovw_snip#PropertyChainAndPath](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#propertychainandpath)]  
   
  The following example combines the code in the previous examples to animate the <xref:System.Windows.Media.SolidColorBrush.Color%2A> of a <xref:System.Windows.Media.SolidColorBrush> used to set the <xref:System.Windows.Shapes.Shape.Fill%2A> of a rectangle element.  
   
- [!code-csharp[storyboards_ovw_snip#137](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#137)]  
+ [!code-csharp[storyboards_ovw_snip#137](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#137)]  
   
  Sometimes you need to target a freezable contained in a collection or array. For example, suppose that a rectangle has a <xref:System.Windows.Media.TransformGroup> resource applied to its <xref:System.Windows.UIElement.RenderTransform%2A> property, and you want to animate one of the transforms it contains.  
   
- [!code-xaml[storyboards_ovw_snip#142](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml#142)]  
+ [!code-xaml[storyboards_ovw_snip#142](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml#142)]  
   
  To target a <xref:System.Windows.Freezable> contained in a collection, you use the following path syntax.  
   
@@ -206,11 +206,11 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  To target the <xref:System.Windows.Media.RotateTransform.Angle%2A> property of the <xref:System.Windows.Media.RotateTransform>, the second transform in the <xref:System.Windows.Media.TransformGroup>, you would use the following <xref:System.Windows.PropertyPath.Path%2A> and <xref:System.Windows.PropertyPath.PathParameters%2A>.  
   
- [!code-csharp[storyboards_ovw_snip#139](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#139)]  
+ [!code-csharp[storyboards_ovw_snip#139](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#139)]  
   
  The following example shows the complete code for animating the <xref:System.Windows.Media.RotateTransform.Angle%2A> of a <xref:System.Windows.Media.RotateTransform> contained within a <xref:System.Windows.Media.TransformGroup>.  
   
- [!code-csharp[storyboards_ovw_snip#138](../../../../samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#138)]  
+ [!code-csharp[storyboards_ovw_snip#138](~/samples/snippets/csharp/VS_Snippets_Wpf/storyboards_ovw_snip/CSharp/IndirectTargetingExample.xaml.cs#138)]  
   
 ### Indirectly Targeting with a Freezable as the Starting Point  
  The previous sections described how to indirectly target a <xref:System.Windows.Freezable> by starting with a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> and creating a property chain to a <xref:System.Windows.Freezable> sub-property. You can also use a <xref:System.Windows.Freezable> as a starting point and indirectly target one of its <xref:System.Windows.Freezable> sub-properties. One additional restriction applies when using a <xref:System.Windows.Freezable> as a starting point for indirect targeting: the starting <xref:System.Windows.Freezable> and every <xref:System.Windows.Freezable> between it and the indirectly targeted sub-property must not be frozen.  
@@ -233,7 +233,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  In the following example, controllable storyboard actions are used to interactively control a storyboard.  
   
- [!code-xaml[animation_ovws_snip#ControllableStoryboardExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snip/CS/ControllableStoryboardExample.xaml#controllablestoryboardexamplewholepage)]  
+ [!code-xaml[animation_ovws_snip#ControllableStoryboardExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snip/CS/ControllableStoryboardExample.xaml#controllablestoryboardexamplewholepage)]  
   
 <a name="controllable_storyboards_procedural"></a>   
 ## Interactively Controlling a Storyboard by Using Code  
@@ -259,8 +259,8 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
   
  The following example shows how to apply and control animations using the interactive methods of the <xref:System.Windows.Media.Animation.Storyboard> class.  
   
- [!code-csharp[animation_ovws_procedural_snip#ControllableStoryboardExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_procedural_snip/CSharp/ControllableStoryboardExample.cs#controllablestoryboardexamplewholepage)]
- [!code-vb[animation_ovws_procedural_snip#ControllableStoryboardExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws_procedural_snip/visualbasic/controllablestoryboardexample.vb#controllablestoryboardexamplewholepage)]  
+ [!code-csharp[animation_ovws_procedural_snip#ControllableStoryboardExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_procedural_snip/CSharp/ControllableStoryboardExample.cs#controllablestoryboardexamplewholepage)]
+ [!code-vb[animation_ovws_procedural_snip#ControllableStoryboardExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws_procedural_snip/visualbasic/controllablestoryboardexample.vb#controllablestoryboardexamplewholepage)]  
   
 <a name="usingstoryboardsinstyles"></a>   
 ## Animate in a Style  

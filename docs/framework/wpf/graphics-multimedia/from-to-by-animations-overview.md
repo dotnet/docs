@@ -84,8 +84,8 @@ This topic describes how to use From/To/By animations to animate dependency prop
   
  The following example sets the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property of the <xref:System.Windows.Media.Animation.DoubleAnimation> to 50 and its <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property to 300. As a result, the <xref:System.Windows.FrameworkElement.Width%2A> of the <xref:System.Windows.Shapes.Rectangle> is animated from 50 to 300.  
   
- [!code-csharp[basicvalues_snip#FromToAnimationInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#fromtoanimationinline)]
- [!code-vb[basicvalues_snip#FromToAnimationInline](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#fromtoanimationinline)]  
+ [!code-csharp[basicvalues_snip#FromToAnimationInline](~/samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#fromtoanimationinline)]
+ [!code-vb[basicvalues_snip#FromToAnimationInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#fromtoanimationinline)]  
   
 ### To  
  When you set just the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property, the animation progresses from the base value of the animated property, or from the output of a composing animation that was previously applied to the same property, to the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property.  
@@ -94,32 +94,32 @@ This topic describes how to use From/To/By animations to animate dependency prop
   
  The following example sets just the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property of the <xref:System.Windows.Media.Animation.DoubleAnimation> to 300. Because no starting value was specified, the <xref:System.Windows.Media.Animation.DoubleAnimation> uses the base value (100) of the <xref:System.Windows.FrameworkElement.Width%2A> property as its starting value. The <xref:System.Windows.FrameworkElement.Width%2A> of the <xref:System.Windows.Shapes.Rectangle> is animated from 100 to the animation's target value of 300.  
   
- [!code-csharp[basicvalues_snip#ToAnimationInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#toanimationinline)]
- [!code-vb[basicvalues_snip#ToAnimationInline](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#toanimationinline)]  
+ [!code-csharp[basicvalues_snip#ToAnimationInline](~/samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#toanimationinline)]
+ [!code-vb[basicvalues_snip#ToAnimationInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#toanimationinline)]  
   
 ### By  
  When you set just the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property of an animation, the animation progresses from the base value of the property that is being animated, or from the output of a composing animation to the sum of that value and the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property.  
   
  The following example sets just the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property of the <xref:System.Windows.Media.Animation.DoubleAnimation> to 300. Because the example does not specify a starting value, the <xref:System.Windows.Media.Animation.DoubleAnimation> uses the base value of the <xref:System.Windows.FrameworkElement.Width%2A> property, 100, as its starting value. The ending value is determined by adding the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> value of the animation, 300, to its starting value, 100: 400. As a result, the <xref:System.Windows.FrameworkElement.Width%2A> of the <xref:System.Windows.Shapes.Rectangle> is animated from 100 to 400.  
   
- [!code-csharp[basicvalues_snip#ByAnimationInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#byanimationinline)]
- [!code-vb[basicvalues_snip#ByAnimationInline](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#byanimationinline)]  
+ [!code-csharp[basicvalues_snip#ByAnimationInline](~/samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#byanimationinline)]
+ [!code-vb[basicvalues_snip#ByAnimationInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#byanimationinline)]  
   
 ### From/By  
  When you set the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> and <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> properties of an animation, the animation progresses from the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property, to the value that is specified by the sum of the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> and <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> properties.  
   
  The following example sets the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property of the <xref:System.Windows.Media.Animation.DoubleAnimation> to 50 and its <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property to 300. The ending value is determined by adding the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> value of the animation, 300, to its starting value, 50: 350. As a result, the <xref:System.Windows.FrameworkElement.Width%2A> of the <xref:System.Windows.Shapes.Rectangle> is animated from 50 to 350.  
   
- [!code-csharp[basicvalues_snip#FromByAnimationInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#frombyanimationinline)]
- [!code-vb[basicvalues_snip#FromByAnimationInline](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#frombyanimationinline)]  
+ [!code-csharp[basicvalues_snip#FromByAnimationInline](~/samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#frombyanimationinline)]
+ [!code-vb[basicvalues_snip#FromByAnimationInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#frombyanimationinline)]  
   
 ### From  
  When you specify just the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> value of an animation, the animation progresses from the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property, to the base value of the property that is being animated or to the output of a composing animation.  
   
  The following example sets just the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property of the <xref:System.Windows.Media.Animation.DoubleAnimation> to 50. Because no ending value was specified, the <xref:System.Windows.Media.Animation.DoubleAnimation> uses the base value of the <xref:System.Windows.FrameworkElement.Width%2A> property, 100, as its ending value. The <xref:System.Windows.FrameworkElement.Width%2A> of the <xref:System.Windows.Shapes.Rectangle> is animated from 50 to the base value of the <xref:System.Windows.FrameworkElement.Width%2A> property, 100.  
   
- [!code-csharp[basicvalues_snip#FromAnimationInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#fromanimationinline)]
- [!code-vb[basicvalues_snip#FromAnimationInline](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#fromanimationinline)]  
+ [!code-csharp[basicvalues_snip#FromAnimationInline](~/samples/snippets/csharp/VS_Snippets_Wpf/basicvalues_snip/CSharp/AnimationTargetValuesExample.cs#fromanimationinline)]
+ [!code-vb[basicvalues_snip#FromAnimationInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#fromanimationinline)]  
   
 ### To/By  
  If you set both the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> and the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> properties of an animation, the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property is ignored.  

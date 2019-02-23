@@ -55,7 +55,7 @@ ms.author: "ronpet"
 |`\` *nnn*|Uses octal representation to specify a character (*nnn* consists of two or three digits).|`\w\040\w`|"a b", "c d" in "a bc d"|  
 |`\x` *nn*|Uses hexadecimal representation to specify a character (*nn* consists of exactly two digits).|`\w\x20\w`|"a b", "c d" in "a bc d"|  
 |`\c` *X*<br /><br /> `\c` *x*|Matches the ASCII control character that is specified by *X* or *x*, where *X* or *x* is the letter of the control character.|`\cC`|"\x0003" in "\x0003" (Ctrl-C)|  
-|`\u` *nnnn*|Matches a Unicode character by using hexadecimal representation (exactly four digits, as represented by *nnnn*).|`\w\u0020\w`|"a b", "c d" in "a bc d"|  
+|`\u` *nnnn*|Matches a Unicode character by using hexadecimal representation (exactly four digits, as represented by *nnnn*).|`\w\u0020\w`|`"a b"`, `"c d"` in `"a bc d"`|  
 |`\`|When followed by a character that is not recognized as an escaped character in this and other tables in this topic, matches that character. For example, `\*` is the same as `\x2A`, and `\.` is the same as `\x2E`. This allows the regular expression engine to disambiguate language elements (such as \* or ?) and character literals (represented by `\*` or `\?`).|`\d+[\+-x\*]\d+`|"2+2" and "3\*9" in "(2+2) \* 3\*9"|  
   
  [Back to top](#top)  

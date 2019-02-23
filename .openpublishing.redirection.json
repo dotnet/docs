@@ -431,6 +431,11 @@
             "redirect_url": "/dotnet/csharp/async/"
         },
         {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/index.md",
+            "redirect_url": "/dotnet/standard/assembly",
+            "redirect_document_id":true
+        },
+        {
             "source_path": "docs/csharp/programming-guide/concepts/linq/cloning-vs-attaching.md",
             "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2#attaching-vs-cloning"
         },
@@ -2266,6 +2271,10 @@
         {
             "source_path": "docs/visual-basic/misc/next-control-variable-does-not-match-for-loop-control-variable.md",
             "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/index.md",
+            "redirect_url": "/dotnet/standard/assembly"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",

@@ -38,7 +38,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
   
 3.  [How to: Edit Columns and Rows in a TableLayoutPanel Control](how-to-edit-columns-and-rows-in-a-tablelayoutpanel-control.md)  
   
-4.  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](https://msdn.microsoft.com/library/w4yc3e8c\(v=vs.110\))  
+4.  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)  
   
 ## Reference  
  <xref:System.Windows.Forms.TableLayoutPanel>  
@@ -54,4 +54,4 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
  [Localization](../../../../docs/standard/globalization-localization/localization.md)  
  Provides an overview of topics relating to localization.  
   
- Also see [Localizing Applications](https://msdn.microsoft.com/library/z68135h5\(v=vs.110\)) or [Localizing Applications](https://msdn.microsoft.com/library/z68135h5\(v=vs.120\))
+ Also see [Localizing Applications](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/z68135h5(v=vs.120)).

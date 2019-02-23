@@ -398,7 +398,7 @@
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <summary>Decrements the iterator by one element. This is the prefix version of the decrement operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -425,7 +425,7 @@
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <param name="A_0">An unused parameter that indicates this is the postfix version of the operator.</param>
         <summary>Decrements the iterator by one element. This is the postfix version of the decrement operator.</summary>
         <returns>An iterator.</returns>
@@ -557,7 +557,7 @@
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <summary>Increments the iterator by one element. This is the prefix version of the increment operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -584,8 +584,8 @@
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
-        <param name="A_0">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
+        <param name="A_0">An unused parameter that indicates this is the postfix version of the operator.</param>
         <summary>Increments the iterator by one element. This is the postfix version of the increment operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>

@@ -563,7 +563,7 @@
         <Parameter Name="_Right" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <param name="_Right">The number of elements to increment.</param>
         <summary>Increments the iterator by the given number of elements. The integer parameter is specified on the right side of the addition operator.</summary>
         <returns>An iterator.</returns>
@@ -660,7 +660,7 @@
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <summary>Decrements the iterator by one element. This is the prefix version of the decrement operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -687,7 +687,7 @@
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <param name="A_0">An unused parameter that indicates this is the postfix version of the operator.</param>
         <summary>Decrements the iterator by one element. This is the postfix version of the decrement operator.</summary>
         <returns>An iterator.</returns>
@@ -960,7 +960,7 @@
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <summary>Increments the iterator by one element. This is the prefix version of the increment operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -987,7 +987,7 @@
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <param name="A_0">An unused parameter that indicates this is the postfix version of the operator.</param>
         <summary>Increments the iterator by one element. This is the postfix version of the increment operator.</summary>
         <returns>An iterator.</returns>
@@ -1329,7 +1329,7 @@
         <Parameter Name="_Right" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <param name="_Right">The number of elements to decrement.</param>
         <summary>Decrements the iterator by the given number of elements. The integer parameter is specified on the right side of the subtraction operator.</summary>
         <returns>An iterator.</returns>

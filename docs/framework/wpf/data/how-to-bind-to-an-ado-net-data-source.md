@@ -31,5 +31,5 @@ This example shows how to bind a [!INCLUDE[TLA#tla_winclient](../../../../includ
   
 ## See also
 - <xref:System.Windows.Data.BindingListCollectionView>
-- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Data Binding Overview](data-binding-overview.md)
+- [How-to Topics](data-binding-how-to-topics.md)

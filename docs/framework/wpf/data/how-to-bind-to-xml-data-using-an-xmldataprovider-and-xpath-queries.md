@@ -20,11 +20,11 @@ This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tl
   
  [!code-xaml[XMLDataSource#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource/CS/Window1.xaml#1)]  
   
- As shown in this example, to create the same binding declaration in attribute syntax you must escape the special characters properly. For more information, see [XML Character Entities and XAML](../../../../docs/framework/xaml-services/xml-character-entities-and-xaml.md).  
+ As shown in this example, to create the same binding declaration in attribute syntax you must escape the special characters properly. For more information, see [XML Character Entities and XAML](../../xaml-services/xml-character-entities-and-xaml.md).  
   
  The <xref:System.Windows.Controls.ListBox> will show the following items when this example is run. These are the *Title*s of all of the elements under *Books* with either a *Stock* value of "*out*" or a *Number* value of 3 or greater than or equals to 8. Notice that no *CD* items are returned because the <xref:System.Windows.Data.XmlDataProvider.XPath%2A> value set on the <xref:System.Windows.Data.XmlDataProvider> indicates that only the *Books* elements should be exposed (essentially setting a filter).  
   
- ![XPath Example](../../../../docs/framework/wpf/data/media/xpathexample.PNG "XPathExample")  
+ ![XPath Example](media/xpathexample.PNG "XPathExample")  
   
  In this example, the book titles are displayed because the <xref:System.Windows.Data.Binding.XPath%2A> of the <xref:System.Windows.Controls.TextBlock> binding in the <xref:System.Windows.DataTemplate> is set to "*Title*". If you want to display the value of an attribute, such as the *ISBN*, you would set that <xref:System.Windows.Data.Binding.XPath%2A> value to "`@ISBN`".  
   
@@ -54,8 +54,8 @@ This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tl
   
 ## See also
 - <xref:System.Windows.Data.ObjectDataProvider>
-- [Bind to XDocument, XElement, or LINQ for XML Query Results](../../../../docs/framework/wpf/data/how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md)
-- [Use the Master-Detail Pattern with Hierarchical XML Data](../../../../docs/framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)
-- [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)
-- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Bind to XDocument, XElement, or LINQ for XML Query Results](how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md)
+- [Use the Master-Detail Pattern with Hierarchical XML Data](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)
+- [Binding Sources Overview](binding-sources-overview.md)
+- [Data Binding Overview](data-binding-overview.md)
+- [How-to Topics](data-binding-how-to-topics.md)

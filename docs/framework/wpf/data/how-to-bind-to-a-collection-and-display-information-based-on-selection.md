@@ -26,7 +26,7 @@ In a simple master-detail scenario, you have a data-bound <xref:System.Windows.C
   
  The following is a screenshot of what the example produces. The <xref:System.Windows.Controls.ContentControl> shows the other properties of the person selected.  
   
- ![Binding to a collection](../../../../docs/framework/wpf/data/media/databinding-collectionbindingsample.png "DataBinding_CollectionBindingSample")  
+ ![Binding to a collection](media/databinding-collectionbindingsample.png "DataBinding_CollectionBindingSample")  
   
  The two things to notice in this example are:  
   
@@ -40,8 +40,8 @@ In a simple master-detail scenario, you have a data-bound <xref:System.Windows.C
  [!code-vb[CollectionBinding#ToString](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CollectionBinding/VisualBasic/Person.vb#tostring)]  
   
 ## See also
-- [Use the Master-Detail Pattern with Hierarchical Data](../../../../docs/framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md)
-- [Use the Master-Detail Pattern with Hierarchical XML Data](../../../../docs/framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)
-- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
-- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Use the Master-Detail Pattern with Hierarchical Data](how-to-use-the-master-detail-pattern-with-hierarchical-data.md)
+- [Use the Master-Detail Pattern with Hierarchical XML Data](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)
+- [Data Binding Overview](data-binding-overview.md)
+- [Data Templating Overview](data-templating-overview.md)
+- [How-to Topics](data-binding-how-to-topics.md)

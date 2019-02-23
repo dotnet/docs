@@ -16,5 +16,5 @@ ms.assetid: 0d8fc84c-7920-427f-8ad7-d55ca656c170
 - <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>
 - <xref:System.Windows.Data.XmlDataProvider>
 - <xref:System.Windows.DataTemplate>
-- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Data Binding Overview](data-binding-overview.md)
+- [How-to Topics](data-binding-how-to-topics.md)

@@ -28,5 +28,5 @@ This example shows how to implement validation logic on a custom object and then
   
 ## See also
 - <xref:System.Windows.Controls.ExceptionValidationRule>
-- [Implement Binding Validation](../../../../docs/framework/wpf/data/how-to-implement-binding-validation.md)
-- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Implement Binding Validation](how-to-implement-binding-validation.md)
+- [How-to Topics](data-binding-how-to-topics.md)

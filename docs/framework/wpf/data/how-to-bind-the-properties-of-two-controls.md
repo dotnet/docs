@@ -17,10 +17,10 @@ This example shows how to bind the property of one instantiated control to that 
   
  When this example is rendered it looks like the following:  
   
- ![A canvas with a green background](../../../../docs/framework/wpf/data/media/databindingbindingdpssample.PNG "DataBindingBindingDPsSample")  
+ ![A canvas with a green background](media/databindingbindingdpssample.PNG "DataBindingBindingDPsSample")  
   
- **Note** The binding target property (in this example, the <xref:System.Windows.Controls.Panel.Background%2A> property) must be a dependency property. For more information, see [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
+ **Note** The binding target property (in this example, the <xref:System.Windows.Controls.Panel.Background%2A> property) must be a dependency property. For more information, see [Data Binding Overview](data-binding-overview.md).  
   
 ## See also
-- [Specify the Binding Source](../../../../docs/framework/wpf/data/how-to-specify-the-binding-source.md)
-- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Specify the Binding Source](how-to-specify-the-binding-source.md)
+- [How-to Topics](data-binding-how-to-topics.md)

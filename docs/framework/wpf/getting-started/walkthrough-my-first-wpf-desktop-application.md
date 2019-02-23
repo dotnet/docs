@@ -88,7 +88,7 @@ The first step is to create the application infrastructure, which includes an ap
    </NavigationWindow>
    ```
 
-   This app navigates to different content depending on the user input. This is why the main <xref:System.Windows.Window> needs to be changed to a <xref:System.Windows.Navigation.NavigationWindow>. <xref:System.Windows.Navigation.NavigationWindow> inherits all the properties of <xref:System.Windows.Window>. The <xref:System.Windows.Navigation.NavigationWindow> element in the XAML file creates an instance of the <xref:System.Windows.Navigation.NavigationWindow> class. For more information, see [Navigation overview](../../../../docs/framework/wpf/app-development/navigation-overview.md).
+   This app navigates to different content depending on the user input. This is why the main <xref:System.Windows.Window> needs to be changed to a <xref:System.Windows.Navigation.NavigationWindow>. <xref:System.Windows.Navigation.NavigationWindow> inherits all the properties of <xref:System.Windows.Window>. The <xref:System.Windows.Navigation.NavigationWindow> element in the XAML file creates an instance of the <xref:System.Windows.Navigation.NavigationWindow> class. For more information, see [Navigation overview](../app-development/navigation-overview.md).
 
 5. Change the following properties on the <xref:System.Windows.Navigation.NavigationWindow> element:
 
@@ -209,7 +209,7 @@ In this section, you'll add two pages and an image to the application.
 
     The following illustration shows the application with the <xref:System.Windows.Navigation.NavigationWindow> buttons:
 
-    ![ExpenseIt sample screen shot](../../../../docs/framework/wpf/getting-started/media/gettingstartedfigure1.png)
+    ![ExpenseIt sample screen shot](media/gettingstartedfigure1.png)
 
 2. Close the application to return to Visual Studio.
 
@@ -227,7 +227,7 @@ Layout provides an ordered way to place UI elements, and also manages the size a
 Each of these layout controls supports a special type of layout for its child elements. `ExpenseIt` pages can be resized, and each page has elements that are arranged horizontally and vertically alongside other elements. Consequently, the <xref:System.Windows.Controls.Grid> is the ideal layout element for the application.
 
 > [!TIP]
-> For more information about <xref:System.Windows.Controls.Panel> elements, see [Panels overview](../../../../docs/framework/wpf/controls/panels-overview.md). For more information about layout, see [Layout](../../../../docs/framework/wpf/advanced/layout.md).
+> For more information about <xref:System.Windows.Controls.Panel> elements, see [Panels overview](../controls/panels-overview.md). For more information about layout, see [Layout](../advanced/layout.md).
 
 In the section, you create a single-column table with three rows and a 10-pixel margin by adding column and row definitions to the <xref:System.Windows.Controls.Grid> in *`ExpenseItHome.xaml`*.
 
@@ -256,7 +256,7 @@ In the section, you create a single-column table with three rows and a 10-pixel 
 
 ## Add controls
 
-In this section, you'll update the home page UI to show a list of people that a user can select from to show the expense report for. Controls are UI objects that allow users to interact with your application. For more information, see [Controls](../../../../docs/framework/wpf/controls/index.md).
+In this section, you'll update the home page UI to show a list of people that a user can select from to show the expense report for. Controls are UI objects that allow users to interact with your application. For more information, see [Controls](../controls/index.md).
 
 To create this UI, you'll add the following elements to *`ExpenseItHome.xaml`*:
 
@@ -264,7 +264,7 @@ To create this UI, you'll add the following elements to *`ExpenseItHome.xaml`*:
 - <xref:System.Windows.Controls.Label> (for the list header).
 - <xref:System.Windows.Controls.Button> (to click to view the expense report for the person that is selected in the list).
 
-Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> attached property. For more information about attached properties, see [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md).
+Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> attached property. For more information about attached properties, see [Attached Properties Overview](../advanced/attached-properties-overview.md).
 
 1. Open *`ExpenseItHome.xaml`*.
 
@@ -279,7 +279,7 @@ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by se
 
 The following illustration shows the controls you just created:
 
-![ExpenseIt sample screen shot](../../../../docs/framework/wpf/getting-started/media/gettingstartedfigure2.png)
+![ExpenseIt sample screen shot](media/gettingstartedfigure2.png)
 
 ## Add an image and a title
 
@@ -315,7 +315,7 @@ In this section, you'll update the home page UI with an image and a page title.
 
 The following illustration shows the results of what you just added:
 
-![ExpenseIt sample screen shot](../../../../docs/framework/wpf/getting-started/media/gettingstartedfigure3.png)
+![ExpenseIt sample screen shot](media/gettingstartedfigure3.png)
 
 ## Add code to handle events
 
@@ -355,11 +355,11 @@ The following illustration shows the results of what you just added:
 
 The following illustration shows the UI elements added to *ExpenseReportPage.xaml*.
 
-![ExpenseIt sample screen shot](../../../../docs/framework/wpf/getting-started/media/gettingstartedfigure4.png)
+![ExpenseIt sample screen shot](media/gettingstartedfigure4.png)
 
 ## Style controls
 
-The appearance of various elements is often the same for all elements of the same type in a UI. UI uses [styles](../../../../docs/framework/wpf/controls/styling-and-templating.md) to make appearances reusable across multiple elements. The reusability of styles helps to simplify XAML creation and management. This section replaces the per-element attributes that were defined in previous steps with styles.
+The appearance of various elements is often the same for all elements of the same type in a UI. UI uses [styles](../controls/styling-and-templating.md) to make appearances reusable across multiple elements. The reusability of styles helps to simplify XAML creation and management. This section replaces the per-element attributes that were defined in previous steps with styles.
 
 1. Open *Application.xaml* or *App.xaml*.
 
@@ -381,7 +381,7 @@ The appearance of various elements is often the same for all elements of the sam
 
     - `buttonStyle`: To format the <xref:System.Windows.Controls.Button> on `ExpenseItHome.xaml`.
 
-    Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a .NET Framework application, see [Use Application Resources](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md).
+    Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a .NET Framework application, see [Use Application Resources](../advanced/how-to-use-application-resources.md).
 
 3. Open *`ExpenseItHome.xaml`*.
 
@@ -419,7 +419,7 @@ In this section, you'll create the XML data that is bound to various controls.
     [!code-xaml[ExpenseIt#24](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt8/ExpenseItHome.xaml#24)]
     [!code-xaml[ExpenseIt#22](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt8/ExpenseItHome.xaml#22)]
 
-    For more information about data templates, see [Data templating overview](../../../../docs/framework/wpf/data/data-templating-overview.md).
+    For more information about data templates, see [Data templating overview](../data/data-templating-overview.md).
 
 4. Replace the existing <xref:System.Windows.Controls.ListBox> with the following XAML:
 
@@ -451,7 +451,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 1. Open *ExpenseReportPage.xaml*.
 
-2. Bind the content of the "Name" and "Department" <xref:System.Windows.Controls.Label> elements to the appropriate data source property. For more information about data binding, see [Data binding overview](../../../../docs/framework/wpf/data/data-binding-overview.md).
+2. Bind the content of the "Name" and "Department" <xref:System.Windows.Controls.Label> elements to the appropriate data source property. For more information about data binding, see [Data binding overview](../data/data-binding-overview.md).
 
     [!code-xaml[ExpenseIt#31](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseReportPage.xaml#31)]
 
@@ -469,39 +469,39 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 The following illustration shows both pages of the `ExpenseIt` application with controls, layout, styles, data binding, and data templates applied:
 
-![ExpenseIt sample screen shots](../../../../docs/framework/wpf/getting-started/media/gettingstartedfigure5.png)
+![ExpenseIt sample screen shots](media/gettingstartedfigure5.png)
 
 > [!NOTE]
 > This sample demonstrates a specific feature of WPF and doesn't follow all best practices for things like security, localization, and accessibility. For comprehensive coverage of WPF and the .NET Framework application development best practices, see the following topics:
 >
-> - [Accessibility](../../../../docs/framework/ui-automation/accessibility-best-practices.md)
+> - [Accessibility](../../ui-automation/accessibility-best-practices.md)
 >
-> - [Security](../../../../docs/framework/wpf/security-wpf.md)
+> - [Security](../security-wpf.md)
 >
-> - [WPF globalization and localization](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)
+> - [WPF globalization and localization](../advanced/wpf-globalization-and-localization-overview.md)
 >
-> - [WPF performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
+> - [WPF performance](../advanced/optimizing-wpf-application-performance.md)
 
 ## Next steps
 
 In this walkthrough you learned a number of techniques for creating a UI using Windows Presentation Foundation (WPF). You should now have a basic understanding of the building blocks of a data-bound, .NET Framework application. For more information about the WPF architecture and programming models, see the following topics:
 
-- [WPF architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)
-- [XAML overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
-- [Dependency properties overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
-- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+- [WPF architecture](../advanced/wpf-architecture.md)
+- [XAML overview (WPF)](../advanced/xaml-overview-wpf.md)
+- [Dependency properties overview](../advanced/dependency-properties-overview.md)
+- [Layout](../advanced/layout.md)
 
 For more information about creating applications, see the following topics:
 
-- [Application development](../../../../docs/framework/wpf/app-development/index.md)
-- [Controls](../../../../docs/framework/wpf/controls/index.md)
-- [Data binding overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
-- [Graphics and multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Application development](../app-development/index.md)
+- [Controls](../controls/index.md)
+- [Data binding overview](../data/data-binding-overview.md)
+- [Graphics and multimedia](../graphics-multimedia/index.md)
+- [Documents in WPF](../advanced/documents-in-wpf.md)
 
 ## See also
 
-- [Panels overview](../../../../docs/framework/wpf/controls/panels-overview.md)
-- [Data templating overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
-- [Build a WPF application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)
-- [Styles and templates](../../../../docs/framework/wpf/controls/styles-and-templates.md)
+- [Panels overview](../controls/panels-overview.md)
+- [Data templating overview](../data/data-templating-overview.md)
+- [Build a WPF application](../app-development/building-a-wpf-application-wpf.md)
+- [Styles and templates](../controls/styles-and-templates.md)

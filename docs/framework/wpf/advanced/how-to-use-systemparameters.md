@@ -27,7 +27,7 @@ This example shows how to access and use the properties of <xref:System.Windows.
   
 ## See also
 - <xref:System.Windows.SystemParameters>
-- [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
-- [Use SystemFonts](../../../../docs/framework/wpf/advanced/how-to-use-systemfonts.md)
-- [Use System Parameters Keys](../../../../docs/framework/wpf/advanced/how-to-use-system-parameters-keys.md)
-- [How-to Topics](../../../../docs/framework/wpf/advanced/resources-how-to-topics.md)
+- [Paint an Area with a System Brush](../graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
+- [Use SystemFonts](how-to-use-systemfonts.md)
+- [Use System Parameters Keys](how-to-use-system-parameters-keys.md)
+- [How-to Topics](resources-how-to-topics.md)

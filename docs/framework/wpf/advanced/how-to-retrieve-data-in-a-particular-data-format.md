@@ -33,4 +33,4 @@ The following examples show how to retrieve data from a data object in a specifi
   
 ## See also
 - <xref:System.Windows.IDataObject>
-- [Drag and Drop Overview](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)
+- [Drag and Drop Overview](drag-and-drop-overview.md)

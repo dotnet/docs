@@ -24,7 +24,7 @@ This tutorial explains how to create a localized application by using the LocBam
 ## Requirements  
  Over the course of this discussion, you will use [!INCLUDE[TLA#tla_msbuild](../../../../includes/tlasharptla-msbuild-md.md)], which is a compiler that runs from the command line.  
   
- Also, you will be instructed to use a project file. For instructions on how to use [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] and project files, see [Build and Deploy](../../../../docs/framework/wpf/app-development/building-and-deploying-wpf-applications.md).  
+ Also, you will be instructed to use a project file. For instructions on how to use [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] and project files, see [Build and Deploy](../app-development/building-and-deploying-wpf-applications.md).  
   
  All the examples in this discussion use en-US (English-US) as the culture. This enables you to work through the steps of the examples without installing a different language.  
   
@@ -131,13 +131,13 @@ This tutorial explains how to create a localized application by using the LocBam
   
    2.  **Resource Key**. The localized resource identifier.  
   
-   3.  **Category**. The value type. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+   3.  **Category**. The value type. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
   
-   4.  **Readability**. Whether the value can be read by a localizer. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+   4.  **Readability**. Whether the value can be read by a localizer. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
   
-   5.  **Modifiability**. Whether the value can be modified by a localizer. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+   5.  **Modifiability**. Whether the value can be modified by a localizer. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
   
-   6.  **Comments**. Additional description of the value to help determine how a value is localized. See [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+   6.  **Comments**. Additional description of the value to help determine how a value is localized. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
   
    7.  **Value**. The text value to translate to the desired culture.  
   
@@ -204,5 +204,5 @@ This tutorial explains how to create a localized application by using the LocBam
  You should now have a basic understanding of how to use the LocBaml tool.  You should be able to make a file that contains Uids. By using the LocBaml tool, you should be able to parse a file to extract the localizable content, and after the content is translated, you should be able to generate a .resources.dll file that merges the translated content. This topic does not include every possible detail, but you now have the knowledge necessary to use LocBaml for localizing your applications.  
   
 ## See also
-- [Globalization for WPF](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md)
-- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)
+- [Globalization for WPF](globalization-for-wpf.md)
+- [Use Automatic Layout Overview](use-automatic-layout-overview.md)

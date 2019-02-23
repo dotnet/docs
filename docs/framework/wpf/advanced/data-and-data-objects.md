@@ -48,7 +48,7 @@ Data that is transferred as part of a drag-and-drop operation is stored in a dat
  [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_typestring)]
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_typestring)]  
   
- For more examples of code that creates a data object, see [Create a Data Object](../../../../docs/framework/wpf/advanced/how-to-create-a-data-object.md).  
+ For more examples of code that creates a data object, see [Create a Data Object](how-to-create-a-data-object.md).  
   
 ### Storing Data in Multiple Formats  
  A single data object is able to store data in multiple formats.   Strategic use of multiple data formats within a single data object potentially makes the data object consumable by a wider variety of drop targets than if only a single data format could be represented.  Note that, in general, a drag source must be agnostic about the data formats that are consumable by potential drop targets.  
@@ -66,7 +66,7 @@ Data that is transferred as part of a drag-and-drop operation is stored in a dat
  [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_getalldataformats)]
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getalldataformats)]  
   
- For more examples of code that queries a data object for available data formats, see [List the Data Formats in a Data Object](../../../../docs/framework/wpf/advanced/how-to-list-the-data-formats-in-a-data-object.md).  For examples of querying a data object for the presence of a particular data format, see [Determine if a Data Format is Present in a Data Object](../../../../docs/framework/wpf/advanced/how-to-determine-if-a-data-format-is-present-in-a-data-object.md).  
+ For more examples of code that queries a data object for available data formats, see [List the Data Formats in a Data Object](how-to-list-the-data-formats-in-a-data-object.md).  For examples of querying a data object for the presence of a particular data format, see [Determine if a Data Format is Present in a Data Object](how-to-determine-if-a-data-format-is-present-in-a-data-object.md).  
   
 ### Retrieving Data from a Data Object  
  Retrieving data from a data object in a particular format simply involves calling one of the <xref:System.Windows.DataObject.GetData%2A> methods and specifying the desired data format.  One of the <xref:System.Windows.DataObject.GetDataPresent%2A> methods can be used to check for the presence of a particular data format.  <xref:System.Windows.DataObject.GetData%2A> returns the data in an <xref:System.Object>; depending on the data format, this object can be cast to a type-specific container.  
@@ -76,7 +76,7 @@ Data that is transferred as part of a drag-and-drop operation is stored in a dat
  [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_getspecificdataformat)]
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getspecificdataformat)]  
   
- For more examples of code that retrieves data from a data object, see [Retrieve Data in a Particular Data Format](../../../../docs/framework/wpf/advanced/how-to-retrieve-data-in-a-particular-data-format.md).  
+ For more examples of code that retrieves data from a data object, see [Retrieve Data in a Particular Data Format](how-to-retrieve-data-in-a-particular-data-format.md).  
   
 ### Removing Data From a Data Object  
  Data cannot be directly removed from a data object.  To effectively remove data from a data object, follow these steps:  

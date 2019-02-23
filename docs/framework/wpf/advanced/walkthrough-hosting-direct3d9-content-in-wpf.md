@@ -26,7 +26,7 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
   
 -   DirectX SDK 9 or later.  
   
--   A DLL that contains Direct3D9 content in a WPF-compatible format. For more information, see [WPF and Direct3D9 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-direct3d9-interoperation.md) and [Walkthrough: Creating Direct3D9 Content for Hosting in WPF](../../../../docs/framework/wpf/advanced/walkthrough-creating-direct3d9-content-for-hosting-in-wpf.md).  
+-   A DLL that contains Direct3D9 content in a WPF-compatible format. For more information, see [WPF and Direct3D9 Interoperation](wpf-and-direct3d9-interoperation.md) and [Walkthrough: Creating Direct3D9 Content for Hosting in WPF](walkthrough-creating-direct3d9-content-for-hosting-in-wpf.md).  
   
 ## Creating the WPF Project  
  The first step is to create the project for the WPF application.  
@@ -67,4 +67,4 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
   
 ## See also
 - <xref:System.Windows.Interop.D3DImage>
-- [Performance Considerations for Direct3D9 and WPF Interoperability](../../../../docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md)
+- [Performance Considerations for Direct3D9 and WPF Interoperability](performance-considerations-for-direct3d9-and-wpf-interoperability.md)

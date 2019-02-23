@@ -14,4 +14,4 @@ Although it is not necessary in most cases, advanced control authors have the op
   
  [!code-csharp[LogicalOverride#SingletonPanel](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LogicalOverride/CSharp/SDKSampleLibrary/class1.cs#singletonpanel)]  
   
- For more information on the logical tree, see [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md).
+ For more information on the logical tree, see [Trees in WPF](trees-in-wpf.md).

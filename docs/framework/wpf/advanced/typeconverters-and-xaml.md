@@ -47,7 +47,7 @@ This topic introduces the purpose of type conversion from string as a general XA
 ### Type Converters and Markup Extensions  
  Markup extensions and type converters fill orthogonal roles in terms of XAML processor behavior and the scenarios that they are applied to. Although context is available for markup extension usages, type conversion behavior of properties where a markup extension provides a value is generally is not checked in the markup extension implementations. In other words, even if a markup extension returns a text string as its `ProvideValue` output, type conversion behavior on that string as applied to a specific property or property value type is not invoked, Generally, the purpose of a markup extension is to process a string and return an object without any type converter involved.  
   
- One common situation where a markup extension is necessary rather than a type converter is to make a reference to an object that already exists. At best, a stateless type converter could only generate a new instance, which might not be desirable. For more information on markup extensions, see [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
+ One common situation where a markup extension is necessary rather than a type converter is to make a reference to an object that already exists. At best, a stateless type converter could only generate a new instance, which might not be desirable. For more information on markup extensions, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).  
   
 ### Native Type Converters  
  In the WPF and .NET Framework implementation of the XAML parser, there are certain types that have native type conversion handling, yet are not types that might conventionally be thought of as primitives. An example of such a type is <xref:System.DateTime>. The reason for this is based on how the .NET Framework architecture works: the type <xref:System.DateTime> is defined in mscorlib, the most basic library in .NET. <xref:System.DateTime> is not permitted to be attributed with an attribute that comes from another assembly that introduces a dependency (<xref:System.ComponentModel.TypeConverterAttribute> is from System) so the usual type converter discovery mechanism by attributing cannot be supported. Instead, the XAML parser has a list of types that need such native processing and processes these similarly to how the true primitives are processed. (In the case of <xref:System.DateTime> this involves a call to <xref:System.DateTime.Parse%2A>.)  
@@ -110,6 +110,6 @@ This topic introduces the purpose of type conversion from string as a general XA
   
 ## See also
 - <xref:System.ComponentModel.TypeConverter>
-- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
-- [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
-- [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)
+- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
+- [XAML Syntax In Detail](xaml-syntax-in-detail.md)

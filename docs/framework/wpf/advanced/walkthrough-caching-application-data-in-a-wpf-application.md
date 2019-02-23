@@ -324,4 +324,4 @@ Caching enables you to store data in memory for rapid access. When the data is a
 - <xref:System.Runtime.Caching.MemoryCache>
 - <xref:System.Runtime.Caching.ObjectCache>
 - <xref:System.Runtime.Caching>
-- [Caching in .NET Framework Applications](../../../../docs/framework/performance/caching-in-net-framework-applications.md)
+- [Caching in .NET Framework Applications](../../performance/caching-in-net-framework-applications.md)

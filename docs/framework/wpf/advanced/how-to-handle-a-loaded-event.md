@@ -23,6 +23,6 @@ This example shows how to handle the <xref:System.Windows.FrameworkElement.Loade
   
 ## See also
 - <xref:System.Windows.FrameworkElement>
-- [Object Lifetime Events](../../../../docs/framework/wpf/advanced/object-lifetime-events.md)
-- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/advanced/base-elements-how-to-topics.md)
+- [Object Lifetime Events](object-lifetime-events.md)
+- [Routed Events Overview](routed-events-overview.md)
+- [How-to Topics](base-elements-how-to-topics.md)

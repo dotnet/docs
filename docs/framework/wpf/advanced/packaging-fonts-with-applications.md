@@ -148,7 +148,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
  [!code-xaml[OpenTypeFontsSample#OpenTypeFontsSample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontsSample/CS/Kootenay.xaml#opentypefontssample1)]  
   
 > [!NOTE]
->  This SDK contains a set of sample [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts that you can use with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. The fonts are defined in a resource-only library. For more information, see [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md).  
+>  This SDK contains a set of sample [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts that you can use with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. The fonts are defined in a resource-only library. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
 <a name="limitations_on_font_usage"></a>   
 ## Limitations on Font Usage  
@@ -171,5 +171,5 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
 - <xref:System.Windows.Media.FontFamily>
 - [Microsoft Typography: Links, News, and Contacts](https://docs.microsoft.com/typography/)
 - [OpenType Specification](https://www.microsoft.com/typography/otspec/)
-- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)
-- [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)
+- [OpenType Font Features](opentype-font-features.md)
+- [Sample OpenType Font Pack](sample-opentype-font-pack.md)

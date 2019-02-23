@@ -18,4 +18,4 @@ To animate the size of a <xref:System.Windows.FrameworkElement>, you can either 
   
  Animating the size of an element by applying an animated transform to its <xref:System.Windows.UIElement.RenderTransform%2A> property provides better performance than animated its <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> directly, because the <xref:System.Windows.UIElement.RenderTransform%2A> property does not trigger a layout pass.  
   
- For more information about animating properties, see the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md). For more information about transforms, see the [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md).
+ For more information about animating properties, see the [Animation Overview](../graphics-multimedia/animation-overview.md). For more information about transforms, see the [Transforms Overview](../graphics-multimedia/transforms-overview.md).

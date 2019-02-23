@@ -31,7 +31,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Illustrates FlowDirection**  
   
- ![TextBlock alignment](../../../../docs/framework/wpf/advanced/media/lefttorightrighttoleft.PNG "LefttoRightRighttoLeft")  
+ ![TextBlock alignment](media/lefttorightrighttoleft.PNG "LefttoRightRighttoLeft")  
   
  An element within a [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] tree will inherit the <xref:System.Windows.FrameworkElement.FlowDirection%2A> from its container. In the following example, the <xref:System.Windows.Controls.TextBlock> is inside a <xref:System.Windows.Controls.Grid>, which resides in a <xref:System.Windows.Window>. Setting the <xref:System.Windows.FrameworkElement.FlowDirection%2A> for the <xref:System.Windows.Window> implies setting it for the <xref:System.Windows.Controls.Grid> and <xref:System.Windows.Controls.TextBlock> as well.  
   
@@ -45,7 +45,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Illustrates Explicitly Assigned FlowDirection**  
   
- ![Flow direction illustration](../../../../docs/framework/wpf/advanced/media/flowdir.PNG "FlowDir")  
+ ![Flow direction illustration](media/flowdir.PNG "FlowDir")  
   
 <a name="FlowDocument"></a>   
 ## FlowDocument  
@@ -59,7 +59,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Illustrates Using the Span Element**  
   
- ![Document that flows from right to left](../../../../docs/framework/wpf/advanced/media/flowdocument.PNG "FlowDocument")  
+ ![Document that flows from right to left](media/flowdocument.PNG "FlowDocument")  
   
  Because the text is <xref:System.Windows.FlowDirection.RightToLeft>, all special characters, such as the "\\", separate the text in a right to left order. That results in the link not being shown in the correct order, therefore to solve the problem, the text must be embedded to preserve a separate <xref:System.Windows.Documents.Run> flowing <xref:System.Windows.FlowDirection.LeftToRight>. Instead of having a separate <xref:System.Windows.Documents.Run> for each language, a better way to solve the problem is to embed the less frequently used English text into a larger Arabic <xref:System.Windows.Documents.Span>.  
   
@@ -67,7 +67,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Illustrates Using the Run Element Embedded in a Span Element**  
   
- ![XamlPad screen shot](../../../../docs/framework/wpf/advanced/media/runspan.PNG "RunSpan")  
+ ![XamlPad screen shot](media/runspan.PNG "RunSpan")  
   
  The following example demonstrates using <xref:System.Windows.Documents.Run> and <xref:System.Windows.Documents.Span> elements in documents.  
   
@@ -81,7 +81,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Illustrates FlowDirection in Several TextBlock Elements**  
   
- ![Text blocks with different flow directions](../../../../docs/framework/wpf/advanced/media/span.PNG "Span")  
+ ![Text blocks with different flow directions](media/span.PNG "Span")  
   
  The following example shows how to use the <xref:System.Windows.Documents.Span> and <xref:System.Windows.Documents.Run> elements to produce the results shown in the previous graphic.  
   
@@ -94,7 +94,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Displays Numbers Using Only FlowDirection**  
   
- ![Numbers that flow from right to left](../../../../docs/framework/wpf/advanced/media/langattribute.PNG "LangAttribute")  
+ ![Numbers that flow from right to left](media/langattribute.PNG "LangAttribute")  
   
  Users of this application will be disappointed by the output, even though the <xref:System.Windows.FlowDirection> is correct the numbers are not shaped as Arabic numbers should be shaped.  
   
@@ -104,7 +104,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Illustrates Using the xml:lang Attribute**  
   
- ![Arabic numbers that flow from right to left](../../../../docs/framework/wpf/advanced/media/langattribute2.PNG "LangAttribute2")  
+ ![Arabic numbers that flow from right to left](media/langattribute2.PNG "LangAttribute2")  
   
  The following example adds `xml:lang` to the application.  
   
@@ -118,7 +118,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Shows a ToolBar with a Left to Right Gradient**  
   
- ![Gradient screen shot](../../../../docs/framework/wpf/advanced/media/gradient.PNG "Gradient")  
+ ![Gradient screen shot](media/gradient.PNG "Gradient")  
   
  After setting the <xref:System.Windows.FlowDirection> to <xref:System.Windows.FlowDirection.RightToLeft>, not only the <xref:System.Windows.Controls.ToolBar> buttons are arranged from right to left, but even the <xref:System.Windows.Media.LinearGradientBrush> realigns its offsets to flow from right to left.  
   
@@ -126,7 +126,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Shows a ToolBar with a Right to Left Gradient**  
   
- ![A gradient that flows from right to left](../../../../docs/framework/wpf/advanced/media/gradient2-wpf.PNG "Gradient2_WPF")  
+ ![A gradient that flows from right to left](media/gradient2-wpf.PNG "Gradient2_WPF")  
   
  The following example draws a <xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.Controls.ToolBar>. (To draw it left to right, remove the <xref:System.Windows.FlowDirection> attribute on the <xref:System.Windows.Controls.ToolBar>.  
   
@@ -146,7 +146,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Illustrates a Flipped Image**  
   
- ![XamlPad screen shot](../../../../docs/framework/wpf/advanced/media/image.PNG "Image")  
+ ![XamlPad screen shot](media/image.PNG "Image")  
   
  The following example demonstrates that the <xref:System.Windows.Controls.Image> fails to inherit the <xref:System.Windows.FlowDirection> from the <xref:System.Windows.Controls.StackPanel> that contains it. **Note** You must have a file named **ms_logo.jpg** on your C:\ drive to run this example.  
   
@@ -166,7 +166,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Illustrates Arrows Drawn Using the Path Element**  
   
- ![Paths](../../../../docs/framework/wpf/advanced/media/paths.PNG "Paths")  
+ ![Paths](media/paths.PNG "Paths")  
   
  The <xref:System.Windows.Controls.Image> and <xref:System.Windows.Shapes.Path> are two examples of a how [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] uses <xref:System.Windows.FlowDirection>. Beside laying out [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements in a specific direction within a container, <xref:System.Windows.FlowDirection> can be used with elements such as <xref:System.Windows.Controls.InkPresenter> which renders ink on a surface, <xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.RadialGradientBrush>. Whenever you need a right to left behavior for your content that mimics a left to right behavior, or vice versa, [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides that capability.  
   
@@ -216,7 +216,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Graphic That Shows Arabic and English Numbers Displayed**  
   
- ![XamlPad screen shot with numbers](../../../../docs/framework/wpf/advanced/media/numbers.PNG "Numbers")  
+ ![XamlPad screen shot with numbers](media/numbers.PNG "Numbers")  
   
  The <xref:System.Windows.FlowDirection> was important in this case because setting the <xref:System.Windows.FlowDirection> to <xref:System.Windows.FlowDirection.LeftToRight> instead would have yielded European digits. The following sections discuss how to have a unified display of digits throughout your document. If this example is not running on Arabic Windows, all the digits display as European digits.  
   
@@ -263,7 +263,7 @@ text1.Language = System.Windows.Markup.XmlLanguage.GetLanguage(System.Globalizat
   
  **Graphic That Displays Arabic Numbers**  
   
- ![Arabic numbers](../../../../docs/framework/wpf/advanced/media/numbers2.PNG "Numbers2")  
+ ![Arabic numbers](media/numbers2.PNG "Numbers2")  
   
  **Using the Substitution Property**  
   

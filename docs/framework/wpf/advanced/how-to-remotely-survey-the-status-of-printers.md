@@ -79,5 +79,5 @@ At any given time at medium and large companies there may be multiple printers t
 - <xref:System.Printing.EnumeratedPrintQueueTypes>
 - <xref:System.Printing.PrintQueue>
 - [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)

@@ -43,7 +43,7 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
  Since <xref:System.Windows.Shapes.Shape> objects derive from the <xref:System.Windows.FrameworkElement> class, using them can add significantly more memory consumption in your application. If you really do not need the <xref:System.Windows.FrameworkElement> features for your graphical content, consider using the lighter-weight <xref:System.Windows.Media.Drawing> objects.  
   
- For more information on <xref:System.Windows.Media.Drawing> objects, see [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md).  
+ For more information on <xref:System.Windows.Media.Drawing> objects, see [Drawing Objects Overview](../graphics-multimedia/drawing-objects-overview.md).  
   
 <a name="StreamGeometry_Objects"></a>   
 ## StreamGeometry Objects  
@@ -53,11 +53,11 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
  [!code-xaml[GeometriesMiscSnippets_snip#StreamGeometryTriangleExampleWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/StreamGeometryExample.xaml#streamgeometrytriangleexamplewholepage)]  
   
- For more information on <xref:System.Windows.Media.StreamGeometry> objects, see [Create a Shape Using a StreamGeometry](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-shape-using-a-streamgeometry.md).  
+ For more information on <xref:System.Windows.Media.StreamGeometry> objects, see [Create a Shape Using a StreamGeometry](../graphics-multimedia/how-to-create-a-shape-using-a-streamgeometry.md).  
   
 <a name="DrawingVisual_Objects"></a>   
 ## DrawingVisual Objects  
- The <xref:System.Windows.Media.DrawingVisual> object is a lightweight drawing class that is used to render shapes, images, or text. This class is considered lightweight because it does not provide layout or event handling, which improves its performance. For this reason, drawings are ideal for backgrounds and clip art. For more information, see [Using DrawingVisual Objects](../../../../docs/framework/wpf/graphics-multimedia/using-drawingvisual-objects.md).  
+ The <xref:System.Windows.Media.DrawingVisual> object is a lightweight drawing class that is used to render shapes, images, or text. This class is considered lightweight because it does not provide layout or event handling, which improves its performance. For this reason, drawings are ideal for backgrounds and clip art. For more information, see [Using DrawingVisual Objects](../graphics-multimedia/using-drawingvisual-objects.md).  
   
 <a name="Images"></a>   
 ## Images  
@@ -71,7 +71,7 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
 -   If possible, combine the images into a single image, such as a film strip composed of multiple images.  
   
--   For more information, see [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md).  
+-   For more information, see [Imaging Overview](../graphics-multimedia/imaging-overview.md).  
   
 ### BitmapScalingMode  
  When animating the scale of any bitmap, the default high-quality image re-sampling algorithm can sometimes consume sufficient system resources to cause frame rate degradation, effectively causing animations to stutter. By setting the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A> property of the <xref:System.Windows.Media.RenderOptions> object to <xref:System.Windows.Media.BitmapScalingMode.LowQuality> you can create a smoother animation when scaling a bitmap. <xref:System.Windows.Media.BitmapScalingMode.LowQuality> mode tells the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering engine to switch from a quality-optimized algorithm to a speed-optimized algorithm when processing images.  
@@ -94,13 +94,13 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
  [!code-vb[RenderOptions#RenderOptionsSnippet3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet3)]  
   
 ## See also
-- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
-- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)
-- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)
-- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)
-- [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)
-- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)
-- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)
-- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)
-- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)
-- [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)
+- [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
+- [Planning for Application Performance](planning-for-application-performance.md)
+- [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)
+- [Layout and Design](optimizing-performance-layout-and-design.md)
+- [Object Behavior](optimizing-performance-object-behavior.md)
+- [Application Resources](optimizing-performance-application-resources.md)
+- [Text](optimizing-performance-text.md)
+- [Data Binding](optimizing-performance-data-binding.md)
+- [Other Performance Recommendations](optimizing-performance-other-recommendations.md)
+- [Animation Tips and Tricks](../graphics-multimedia/animation-tips-and-tricks.md)

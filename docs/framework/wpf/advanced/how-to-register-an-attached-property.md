@@ -22,6 +22,6 @@ This example shows how to register an attached property and provide public acces
   
 ## See also
 - <xref:System.Windows.DependencyProperty>
-- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
-- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
-- [How-to Topics](../../../../docs/framework/wpf/advanced/properties-how-to-topics.md)
+- [Dependency Properties Overview](dependency-properties-overview.md)
+- [Custom Dependency Properties](custom-dependency-properties.md)
+- [How-to Topics](properties-how-to-topics.md)

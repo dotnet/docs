@@ -35,7 +35,7 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
     -   User interface support for custom run-time settings and options.  
   
 ### XPS Print Path  
- The Microsoft .NET Framework [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path also provides an extensible mechanism for writing documents through print output.  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] serves as both a document file format and is the native print spool format for [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents can be sent directly to [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md) for additional information on print path output options and capabilities.  
+ The Microsoft .NET Framework [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path also provides an extensible mechanism for writing documents through print output.  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] serves as both a document file format and is the native print spool format for [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents can be sent directly to [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](printing-overview.md) for additional information on print path output options and capabilities.  
   
 <a name="PluginSerializers"></a>   
 ## Plug-in Serializers  
@@ -71,6 +71,6 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
 - <xref:System.Windows.Documents.Serialization>
 - <xref:System.Windows.Xps.XpsDocumentWriter>
 - <xref:System.Windows.Xps.Packaging.XpsDocument>
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)
 - [XML Paper Specification: Overview](https://go.microsoft.com/fwlink?LinkID=106246)

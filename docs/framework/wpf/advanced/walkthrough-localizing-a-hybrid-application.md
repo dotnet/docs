@@ -42,7 +42,7 @@ The first step is to create the [!INCLUDE[TLA#tla_winforms](../../../../includes
 
 2.  Add a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]<xref:System.Windows.Controls.UserControl> element called `SimpleControl` to the project.
 
-3.  Use the <xref:System.Windows.Forms.Integration.ElementHost> control to place a `SimpleControl` element on the form. For more information, see [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md).
+3.  Use the <xref:System.Windows.Forms.Integration.ElementHost> control to place a `SimpleControl` element on the form. For more information, see [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md).
 
 ## Adding Localizable Content
 
@@ -132,7 +132,7 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
 ### To produce a satellite assembly
 
-1.  Copy LocBaml.exe to your project's obj\Debug folder. For more information, see [Localize an Application](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md).
+1.  Copy LocBaml.exe to your project's obj\Debug folder. For more information, see [Localize an Application](how-to-localize-an-application.md).
 
 2.  In the Command Prompt window, use the following command to extract resource strings into a temporary file.
 
@@ -170,6 +170,6 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Localize an Application](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md)
+- [Localize an Application](how-to-localize-an-application.md)
 - [Walkthrough: Localizing Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

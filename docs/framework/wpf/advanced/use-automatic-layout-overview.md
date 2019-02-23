@@ -35,7 +35,7 @@ This topic introduces guidelines for developers on how to write [!INCLUDE[TLA#tl
   
  The following graphic shows the output of the code samples.  
   
- ![The same button with text in different languages](../../../../docs/framework/wpf/advanced/media/globalizationbutton.png "GlobalizationButton")  
+ ![The same button with text in different languages](media/globalizationbutton.png "GlobalizationButton")  
 Auto Resizable Button  
   
 <a name="autolayout_coding"></a>   
@@ -48,7 +48,7 @@ Auto Resizable Button
 
 - Use <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.StackPanel>, and <xref:System.Windows.Controls.Grid> to position controls.
 
-For a discussion about various types of panels, see [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md).
+For a discussion about various types of panels, see [Panels Overview](../controls/panels-overview.md).
 
 **Do not set a fixed size for a window**
 
@@ -90,7 +90,7 @@ For a discussion about various types of panels, see [Panels Overview](../../../.
   
  The following graphic shows the grid produced by the previous code.  
   
- ![Grid example](../../../../docs/framework/wpf/advanced/media/glob-grid.png "glob_grid")  
+ ![Grid example](media/glob-grid.png "glob_grid")  
 Grid  
   
 <a name="autolay_grids_issharedsizescope"></a>   
@@ -99,9 +99,9 @@ Grid
   
  [!code-xaml[gridIssharedsizescopeProp#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/gridIssharedsizescopeProp/CSharp/Window1.xaml#2)]  
   
- **Note** For the complete code sample, see [Share Sizing Properties Between Grids](../../../../docs/framework/wpf/controls/how-to-share-sizing-properties-between-grids.md)  
+ **Note** For the complete code sample, see [Share Sizing Properties Between Grids](../controls/how-to-share-sizing-properties-between-grids.md)  
   
 ## See also
-- [Globalization for WPF](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md)
-- [Use Automatic Layout to Create a Button](../../../../docs/framework/wpf/advanced/how-to-use-automatic-layout-to-create-a-button.md)
-- [Use a Grid for Automatic Layout](../../../../docs/framework/wpf/advanced/how-to-use-a-grid-for-automatic-layout.md)
+- [Globalization for WPF](globalization-for-wpf.md)
+- [Use Automatic Layout to Create a Button](how-to-use-automatic-layout-to-create-a-button.md)
+- [Use a Grid for Automatic Layout](how-to-use-a-grid-for-automatic-layout.md)

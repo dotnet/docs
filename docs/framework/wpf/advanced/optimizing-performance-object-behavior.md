@@ -21,16 +21,16 @@ Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../.
 ## Not Removing Event Handlers on Objects may Keep Objects Alive  
  The delegate that an object passes to its event is effectively a reference to that object. Therefore, event handlers can keep objects alive longer than expected. When performing clean up of an object that has registered to listen to an object's event, it is essential to remove that delegate before releasing the object. Keeping unneeded objects alive increases the application's memory usage. This is especially true when the object is the root of a logical tree or a visual tree.  
   
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] introduces a weak event listener pattern for events that can be useful in situations where the object lifetime relationships between source and listener are difficult to keep track of. Some existing [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] events use this pattern. If you are implementing objects with custom events, this pattern may be of use to you. For details, see [Weak Event Patterns](../../../../docs/framework/wpf/advanced/weak-event-patterns.md).  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] introduces a weak event listener pattern for events that can be useful in situations where the object lifetime relationships between source and listener are difficult to keep track of. Some existing [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] events use this pattern. If you are implementing objects with custom events, this pattern may be of use to you. For details, see [Weak Event Patterns](weak-event-patterns.md).  
   
  There are several tools, such as the CLR Profiler and the Working Set Viewer, that can provides information on the memory usage of a specified process. The CLR Profiler includes a number of very useful views of the allocation profile, including a histogram of allocated types, allocation and call graphs, a time line showing garbage collections of various generations and the resulting state of the managed heap after those collections, and a call tree showing per-method allocations and assembly loads. For more information, see [.NET Framework Developer Center](https://go.microsoft.com/fwlink/?LinkId=117435).  
   
 <a name="DPs_and_Objects"></a>   
 ## Dependency Properties and Objects  
- In general, accessing a dependency property of a <xref:System.Windows.DependencyObject> is not slower than accessing a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] property. While there is a small performance overhead for setting a property value, getting a value is as fast as getting the value from a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] property. Offsetting the small performance overhead is the fact that dependency properties support robust features, such as data binding, animation, inheritance, and styling. For more information, see [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md).  
+ In general, accessing a dependency property of a <xref:System.Windows.DependencyObject> is not slower than accessing a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] property. While there is a small performance overhead for setting a property value, getting a value is as fast as getting the value from a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] property. Offsetting the small performance overhead is the fact that dependency properties support robust features, such as data binding, animation, inheritance, and styling. For more information, see [Dependency Properties Overview](dependency-properties-overview.md).  
   
 ### DependencyProperty Optimizations  
- You should define dependency properties in your application very carefully. If your <xref:System.Windows.DependencyProperty> affects only render type metadata options, rather than other metadata options such as <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, you should mark it as such by overriding its metadata. For more information about overriding or obtaining property metadata, see [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md).  
+ You should define dependency properties in your application very carefully. If your <xref:System.Windows.DependencyProperty> affects only render type metadata options, rather than other metadata options such as <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, you should mark it as such by overriding its metadata. For more information about overriding or obtaining property metadata, see [Dependency Property Metadata](dependency-property-metadata.md).  
   
  It may be more efficient to have a property change handler invalidate the measure, arrange, and render passes manually if not all property changes actually affect measure, arrange, and render. For instance, you might decide to re-render a background only when a value is greater than a set limit. In this case, your property change handler would only invalidate render when the value exceeds the set limit.  
   
@@ -48,7 +48,7 @@ Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../.
   
 <a name="Freezable_Objects"></a>   
 ## Freezable Objects  
- A <xref:System.Windows.Freezable> is a special type of object that has two states: unfrozen and frozen. Freezing objects whenever possible improves the performance of your application and reduces its working set. For more information, see [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ A <xref:System.Windows.Freezable> is a special type of object that has two states: unfrozen and frozen. Freezing objects whenever possible improves the performance of your application and reduces its working set. For more information, see [Freezable Objects Overview](freezable-objects-overview.md).  
   
  Each <xref:System.Windows.Freezable> has a <xref:System.Windows.Freezable.Changed> event that is raised whenever it changes. However, change notifications are costly in terms of application performance.  
   
@@ -105,12 +105,12 @@ Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../.
 |<xref:System.Windows.Controls.VirtualizingStackPanel>|46|  
   
 ## See also
-- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
-- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)
-- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)
-- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)
-- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
-- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)
-- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)
-- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)
-- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)
+- [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
+- [Planning for Application Performance](planning-for-application-performance.md)
+- [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)
+- [Layout and Design](optimizing-performance-layout-and-design.md)
+- [2D Graphics and Imaging](optimizing-performance-2d-graphics-and-imaging.md)
+- [Application Resources](optimizing-performance-application-resources.md)
+- [Text](optimizing-performance-text.md)
+- [Data Binding](optimizing-performance-data-binding.md)
+- [Other Performance Recommendations](optimizing-performance-other-recommendations.md)

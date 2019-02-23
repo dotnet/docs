@@ -35,5 +35,5 @@ Using reflection to itemize the properties (and the types of those properties) o
 - <xref:System.Printing.LocalPrintServer>
 - <xref:System.Printing.PrintQueue>
 - <xref:System.Collections.DictionaryEntry>
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)

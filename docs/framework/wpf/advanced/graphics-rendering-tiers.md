@@ -101,7 +101,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |**Required Video Driver Date Setting**|Specifies whether the system disables hardware acceleration for drivers released before November 2004.|  
 |**Use Reference Rasterizer Option**|Specifies whether [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] should use the reference rasterizer.|  
   
- These settings can be accessed by any external configuration utility that knows how to reference the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] registry settings. These settings can also be created or modified by accessing the values directly by using the [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Registry Editor. For more information, see [Graphics Rendering Registry Settings](../../../../docs/framework/wpf/graphics-multimedia/graphics-rendering-registry-settings.md).  
+ These settings can be accessed by any external configuration utility that knows how to reference the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] registry settings. These settings can also be created or modified by accessing the values directly by using the [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Registry Editor. For more information, see [Graphics Rendering Registry Settings](../graphics-multimedia/graphics-rendering-registry-settings.md).  
   
 ### WPF Performance Profiling Tools  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a suite of performance profiling tools that allow you to analyze the run-time behavior of your application and determine the types of performance optimizations you can apply. The following table lists the performance profiling tools that are included in the [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)] tool, WPF Performance Suite:  
@@ -120,13 +120,13 @@ A rendering tier defines a level of graphics hardware capability and performance
   
  When you run the [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] Diagnostic Tool, the main window contains a set of tabs that allow you to display and diagnose [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)]-related information. For example, the **System** tab provides system information about your computer and specifies the version of [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] that is installed on your computer.  
   
- ![Screenhot: DirectX Diagnostic Tool](../../../../docs/framework/wpf/advanced/media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
+ ![Screenhot: DirectX Diagnostic Tool](media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
 DirectX Diagnostic Tool main window  
   
 ## See also
 - <xref:System.Windows.Media.RenderCapability>
 - <xref:System.Windows.Media.RenderOptions>
-- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
+- [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
 - [WPF Performance Suite](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100))
-- [Graphics Rendering Registry Settings](../../../../docs/framework/wpf/graphics-multimedia/graphics-rendering-registry-settings.md)
-- [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)
+- [Graphics Rendering Registry Settings](../graphics-multimedia/graphics-rendering-registry-settings.md)
+- [Animation Tips and Tricks](../graphics-multimedia/animation-tips-and-tricks.md)

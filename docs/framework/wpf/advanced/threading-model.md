@@ -56,7 +56,7 @@ ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
   
  Consider the following example:  
   
- ![Prime numbers screen shot](../../../../docs/framework/wpf/advanced/media/threadingprimenumberscreenshot.PNG "ThreadingPrimeNumberScreenShot")  
+ ![Prime numbers screen shot](media/threadingprimenumberscreenshot.PNG "ThreadingPrimeNumberScreenShot")  
   
  This simple application counts upwards from three, searching for prime numbers. When the user clicks the **Start** button, the search begins. When the program finds a prime, it updates the user interface with its discovery. At any point, the user can stop the search.  
   
@@ -68,7 +68,7 @@ ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
   
  The best way to split processing time between calculation and event handling is to manage calculation from the <xref:System.Windows.Threading.Dispatcher>. By using the <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> method, we can schedule prime number checks in the same queue that [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] events are drawn from. In our example, we schedule only a single prime number check at a time. After the prime number check is complete, we schedule the next check immediately. This check proceeds only after pending [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] events have been handled.  
   
- ![Dispatcher queue illustration](../../../../docs/framework/wpf/advanced/media/threadingdispatcherqueue.PNG "ThreadingDispatcherQueue")  
+ ![Dispatcher queue illustration](media/threadingdispatcherqueue.PNG "ThreadingDispatcherQueue")  
   
  [!INCLUDE[TLA#tla_word](../../../../includes/tlasharptla-word-md.md)] accomplishes spell checking using this mechanism. Spell checking is done in the background using the idle time of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] thread. Let's take a look at the code.  
   
@@ -103,7 +103,7 @@ ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
   
  In this example, we mimic a remote procedure call that retrieves a weather forecast. We use a separate worker thread to execute this call, and we schedule an update method in the <xref:System.Windows.Threading.Dispatcher> of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] thread when we’re finished.  
   
- ![Weather UI screen shot](../../../../docs/framework/wpf/advanced/media/threadingweatheruiscreenshot.PNG "ThreadingWeatherUIScreenShot")  
+ ![Weather UI screen shot](media/threadingweatheruiscreenshot.PNG "ThreadingWeatherUIScreenShot")  
   
  [!code-csharp[ThreadingWeatherForecast#ThreadingWeatherCodeBehind](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs#threadingweathercodebehind)]
  [!code-vb[ThreadingWeatherForecast#ThreadingWeatherCodeBehind](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb#threadingweathercodebehind)]  
@@ -166,7 +166,7 @@ ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
 ## Technical Details and Stumbling Points  
   
 ### Writing Components Using Threading  
- The Microsoft .NET Framework Developer's Guide describes a pattern for how a component can expose asynchronous behavior to its clients (see [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)). For instance, suppose we wanted to package the `FetchWeatherFromServer` method into a reusable, nongraphical component. Following the standard Microsoft .NET Framework pattern, this would look something like the following.  
+ The Microsoft .NET Framework Developer's Guide describes a pattern for how a component can expose asynchronous behavior to its clients (see [Event-based Asynchronous Pattern Overview](../../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)). For instance, suppose we wanted to package the `FetchWeatherFromServer` method into a reusable, nongraphical component. Following the standard Microsoft .NET Framework pattern, this would look something like the following.  
   
  [!code-csharp[CommandingOverviewSnippets#ThreadingArticleWeatherComponent1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#threadingarticleweathercomponent1)]
  [!code-vb[CommandingOverviewSnippets#ThreadingArticleWeatherComponent1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#threadingarticleweathercomponent1)]  
@@ -183,7 +183,7 @@ ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
 ### Nested Pumping  
  Sometimes it is not feasible to completely lock up the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] thread. Let’s consider the <xref:System.Windows.MessageBox.Show%2A> method of the <xref:System.Windows.MessageBox> class. <xref:System.Windows.MessageBox.Show%2A> doesn’t return until the user clicks the OK button. It does, however, create a window that must have a message loop in order to be interactive. While we are waiting for the user to click OK, the original application window does not respond to user input. It does, however, continue to process paint messages. The original window redraws itself when covered and revealed.  
   
- ![MessageBox with an "OK" button](../../../../docs/framework/wpf/advanced/media/threadingnestedpumping.png "ThreadingNestedPumping")  
+ ![MessageBox with an "OK" button](media/threadingnestedpumping.png "ThreadingNestedPumping")  
   
  Some thread must be in charge of the message box window. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] could create a new thread just for the message box window, but this thread would be unable to paint the disabled elements in the original window (remember the earlier discussion of mutual exclusion). Instead, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses a nested message processing system. The <xref:System.Windows.Threading.Dispatcher> class includes a special method called <xref:System.Windows.Threading.Dispatcher.PushFrame%2A>, which stores an application’s current execution point then begins a new message loop. When the nested message loop finishes, execution resumes after the original <xref:System.Windows.Threading.Dispatcher.PushFrame%2A> call.  
   
@@ -203,7 +203,7 @@ ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
   
  Most interfaces are not built with thread safety in mind because developers work under the assumption that a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] is never accessed by more than one thread. In this case, that single thread may make environmental changes at unexpected times, causing those ill effects that the <xref:System.Windows.Threading.DispatcherObject> mutual exclusion mechanism is supposed to solve. Consider the following pseudocode:  
   
- ![Threading reentrancy diagram](../../../../docs/framework/wpf/advanced/media/threadingreentrancy.png "ThreadingReentrancy")  
+ ![Threading reentrancy diagram](media/threadingreentrancy.png "ThreadingReentrancy")  
   
  Most of the time that’s the right thing, but there are times in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] where such unexpected reentrancy can really cause problems. So, at certain key times, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] calls <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A>, which changes the lock instruction for that thread to use the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] reentrancy-free lock, instead of the usual [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] lock.  
   

@@ -26,9 +26,9 @@ For your custom event to support event routing, you need to register a <xref:Sys
   
  Tunneling events are created the same way, but with <xref:System.Windows.RoutedEvent.RoutingStrategy%2A> set to <xref:System.Windows.RoutingStrategy.Tunnel> in the registration call. By convention, tunneling events in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] are prefixed with the word "Preview".  
   
- To see an example of how bubbling events work, see [Handle a Routed Event](../../../../docs/framework/wpf/advanced/how-to-handle-a-routed-event.md).  
+ To see an example of how bubbling events work, see [Handle a Routed Event](how-to-handle-a-routed-event.md).  
   
 ## See also
-- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
-- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
-- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)
+- [Routed Events Overview](routed-events-overview.md)
+- [Input Overview](input-overview.md)
+- [Control Authoring Overview](../controls/control-authoring-overview.md)

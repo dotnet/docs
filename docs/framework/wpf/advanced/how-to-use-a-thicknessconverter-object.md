@@ -26,4 +26,4 @@ ms.assetid: 52682194-d7fd-499c-8005-73fcc84e7b2c
 - <xref:System.Windows.Controls.Border>
 - [How to: Change the Margin Property](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms750561(v=vs.90))
 - [How to: Convert a ListBoxItem to a new Data Type](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms749147(v=vs.90))
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Panels Overview](../controls/panels-overview.md)

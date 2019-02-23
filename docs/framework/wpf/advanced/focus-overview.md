@@ -12,7 +12,7 @@ ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4
 # Focus Overview
 In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] there are two main concepts that pertain to focus: keyboard focus and logical focus.  Keyboard focus refers to the element that receives keyboard input and logical focus refers to the element in a focus scope that has focus.  These concepts are discussed in detail in this overview.  Understanding the difference in these concepts is important for creating complex applications that have multiple regions where focus can be obtained.  
   
- The major classes that participate in focus management are the <xref:System.Windows.Input.Keyboard> class, the <xref:System.Windows.Input.FocusManager> class, and the base element classes, such as <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>.  For more information about the base elements, see the [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md).  
+ The major classes that participate in focus management are the <xref:System.Windows.Input.Keyboard> class, the <xref:System.Windows.Input.FocusManager> class, and the base element classes, such as <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>.  For more information about the base elements, see the [Base Elements Overview](base-elements-overview.md).  
   
  The <xref:System.Windows.Input.Keyboard> class is concerned primarily with keyboard focus and the <xref:System.Windows.Input.FocusManager> is concerned primarily with logical focus, but this is not an absolute distinction.  An element that has keyboard focus will also have logical focus, but an element that has logical focus does not necessarily have keyboard focus.  This is apparent when you use the <xref:System.Windows.Input.Keyboard> class to set the element that has keyboard focus, for it also sets logical focus on the element.  
   
@@ -91,7 +91,7 @@ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
   
 <a name="Focus_Events"></a>   
 ## Focus Events  
- The events related to keyboard focus are <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus>, <xref:System.Windows.Input.Keyboard.GotKeyboardFocus> and <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus>, <xref:System.Windows.Input.Keyboard.LostKeyboardFocus>.  The events are defined as attached events on the <xref:System.Windows.Input.Keyboard> class, but are more readily accessible as equivalent routed events on the base element classes.  For more information about events, see the [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md).  
+ The events related to keyboard focus are <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus>, <xref:System.Windows.Input.Keyboard.GotKeyboardFocus> and <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus>, <xref:System.Windows.Input.Keyboard.LostKeyboardFocus>.  The events are defined as attached events on the <xref:System.Windows.Input.Keyboard> class, but are more readily accessible as equivalent routed events on the base element classes.  For more information about events, see the [Routed Events Overview](routed-events-overview.md).  
   
  <xref:System.Windows.Input.Keyboard.GotKeyboardFocus> is raised when the element obtains keyboard focus.  <xref:System.Windows.Input.Keyboard.LostKeyboardFocus> is raised when the element loses keyboard focus.  If the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> event or the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocusEvent> event is handled and <xref:System.Windows.RoutedEventArgs.Handled%2A> is set to `true`, then focus will not change.  
   
@@ -115,5 +115,5 @@ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
 - <xref:System.Windows.Input.FocusManager>
 - <xref:System.Windows.UIElement>
 - <xref:System.Windows.ContentElement>
-- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
-- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)
+- [Input Overview](input-overview.md)
+- [Base Elements Overview](base-elements-overview.md)

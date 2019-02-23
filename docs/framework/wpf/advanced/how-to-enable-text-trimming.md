@@ -28,12 +28,12 @@ This example demonstrates the usage and effects of the values available in the <
   
  When <xref:System.Windows.Controls.TextBlock.TextTrimming%2A> is set to **CharacterEllipsis**, text is trimmed and continued with an ellipsis at the character closest to the trimming edge.  This setting tends to trim text to fit more closely to the trimming boundary, but may result in words being partially trimmed.  The following figure shows the effect of this setting on a <xref:System.Windows.Controls.TextBlock> similar to the one defined above.  
   
- ![Example: TextTrimming.CharacterEllipsis](../../../../docs/framework/wpf/advanced/media/texttrimming-character.png "TextTrimming_Character")  
+ ![Example: TextTrimming.CharacterEllipsis](media/texttrimming-character.png "TextTrimming_Character")  
   
  When <xref:System.Windows.Controls.TextBlock.TextTrimming%2A> is set to **WordEllipsis**, text is trimmed and continued with an ellipsis at the end of the first full word closest to the trimming edge.  This setting will not show partially trimmed words, but tends not to trim text as closely to the trimming edge as the **CharacterEllipsis** setting.  The following figure shows the effect of this setting on the <xref:System.Windows.Controls.TextBlock> defined above.  
   
- ![Example: TextTrimming.WordEllipsis](../../../../docs/framework/wpf/advanced/media/texttrimming-word.png "TextTrimming_Word")  
+ ![Example: TextTrimming.WordEllipsis](media/texttrimming-word.png "TextTrimming_Word")  
   
  When <xref:System.Windows.Controls.TextBlock.TextTrimming%2A> is set to **None**, no text trimming is performed.  In this case, text is simply cropped to the boundary of the parent text container.  The following figure shows the effect of this setting on a <xref:System.Windows.Controls.TextBlock> similar to the one defined above.  
   
- ![Example: TextTrimming.None](../../../../docs/framework/wpf/advanced/media/texttrimming-none.png "TextTrimming_None")
+ ![Example: TextTrimming.None](media/texttrimming-none.png "TextTrimming_None")

@@ -16,12 +16,12 @@ ms.assetid: e96f9764-4e3f-4d1c-bf20-3fb890118aae
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides extensive support for the development of world-ready applications.  
   
 ## In This Section  
- [WPF Globalization and Localization Overview](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)  
- [Globalization for WPF](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md)  
- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)  
- [Localization Attributes and Comments](../../../../docs/framework/wpf/advanced/localization-attributes-and-comments.md)  
- [Bidirectional Features in WPF Overview](../../../../docs/framework/wpf/advanced/bidirectional-features-in-wpf-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/globalization-and-localization-how-to-topics.md)  
+ [WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md)  
+ [Globalization for WPF](globalization-for-wpf.md)  
+ [Use Automatic Layout Overview](use-automatic-layout-overview.md)  
+ [Localization Attributes and Comments](localization-attributes-and-comments.md)  
+ [Bidirectional Features in WPF Overview](bidirectional-features-in-wpf-overview.md)  
+ [How-to Topics](globalization-and-localization-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Globalization>  
@@ -30,6 +30,6 @@ ms.assetid: e96f9764-4e3f-4d1c-bf20-3fb890118aae
   
  <xref:System.Resources.NeutralResourcesLanguageAttribute>  
   
- [xml:lang Handling in XAML](../../../../docs/framework/xaml-services/xml-lang-handling-in-xaml.md)  
+ [xml:lang Handling in XAML](../../xaml-services/xml-lang-handling-in-xaml.md)  
   
 ## Related Sections

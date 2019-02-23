@@ -16,7 +16,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
   
 <a name="requirements"></a>   
 ## Requirements  
- This tutorial assumes a basic familiarity with both [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programming. For a basic introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] programming, see [Getting Started](../../../../docs/framework/wpf/getting-started/index.md). For an introduction to [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programming, you should reference any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
+ This tutorial assumes a basic familiarity with both [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programming. For a basic introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] programming, see [Getting Started](../getting-started/index.md). For an introduction to [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programming, you should reference any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
   
  Because the sample that accompanies this tutorial is implemented in [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)], this tutorial assumes familiarity with the use of [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] to program the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)][!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] plus an understanding of managed code programming. Familiarity with [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] is helpful but not essential.  
   
@@ -225,4 +225,4 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 ## See also
 
 - <xref:System.Windows.Interop.HwndSource>
-- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)
+- [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)

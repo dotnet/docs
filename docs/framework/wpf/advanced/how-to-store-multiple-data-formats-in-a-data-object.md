@@ -23,4 +23,4 @@ The following example shows how to use the <xref:System.Windows.DataObject.SetDa
   
 ## See also
 - <xref:System.Windows.IDataObject>
-- [Drag and Drop Overview](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)
+- [Drag and Drop Overview](drag-and-drop-overview.md)

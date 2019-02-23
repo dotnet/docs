@@ -47,7 +47,7 @@ Network administrators often field complaints from users about print jobs that d
   
 -   You can read each relevant property such as <xref:System.Printing.PrintSystemJobInfo.IsBlocked%2A> and <xref:System.Printing.PrintSystemJobInfo.IsInError%2A>.  
   
- This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "Y" if he or she wanted to use the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property. See below for the details of the two methods. Finally, the application uses a method called **ReportQueueAndJobAvailability** to report on whether the job can be printed at this time of day. This method is discussed in [Discover Whether a Print Job Can Be Printed At This Time of Day](../../../../docs/framework/wpf/advanced/how-to-discover-whether-a-print-job-can-be-printed-at-this-time-of-day.md).  
+ This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "Y" if he or she wanted to use the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property. See below for the details of the two methods. Finally, the application uses a method called **ReportQueueAndJobAvailability** to report on whether the job can be printed at this time of day. This method is discussed in [Discover Whether a Print Job Can Be Printed At This Time of Day](how-to-discover-whether-a-print-job-can-be-printed-at-this-time-of-day.md).  
   
  [!code-cpp[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](../../../../samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#identifyanddiagnoseproblematicjob)]
  [!code-csharp[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#identifyanddiagnoseproblematicjob)]
@@ -81,5 +81,5 @@ Network administrators often field complaints from users about print jobs that d
 - <xref:System.FlagsAttribute>
 - <xref:System.Printing.PrintQueue>
 - [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)

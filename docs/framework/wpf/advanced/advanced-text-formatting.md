@@ -22,7 +22,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
   
 <a name="prereq"></a>   
 ## Prerequisites  
- This topic assumes that you are familiar with the higher level [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] used for text presentation. Most user scenarios will not require the advanced text formatting [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] discussed in this topic. For an introduction to the different text [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], see [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md).  
+ This topic assumes that you are familiar with the higher level [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] used for text presentation. Most user scenarios will not require the advanced text formatting [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] discussed in this topic. For an introduction to the different text [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], see [Documents in WPF](documents-in-wpf.md).  
   
 <a name="section1"></a>   
 ## Advanced Text Formatting  
@@ -36,7 +36,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
   
  Unlike a traditional text [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)], the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the text layout interaction between the client application and <xref:System.Windows.Media.TextFormatting.TextFormatter>.  
   
- ![Diagram of text layout client and TextFormatter](../../../../docs/framework/wpf/advanced/media/textformatter01.png "TextFormatter01")  
+ ![Diagram of text layout client and TextFormatter](media/textformatter01.png "TextFormatter01")  
 Interaction between application and TextFormatter  
   
  The text formatter is used to retrieve formatted text lines from the text store, which is an implementation of <xref:System.Windows.Media.TextFormatting.TextSource>. This is done by first creating an instance of the text formatter by using the <xref:System.Windows.Media.TextFormatting.TextFormatter.Create%2A> method. This method creates an instance of the text formatter and sets the maximum line height and width values. As soon as an instance of the text formatter is created, the line creation process is started by calling the <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method. <xref:System.Windows.Media.TextFormatting.TextFormatter> calls back to the text source to retrieve the text and formatting parameters for the runs of text that form a line.  
@@ -89,5 +89,5 @@ Interaction between application and TextFormatter
  <xref:System.Windows.Media.TextFormatting.TextRun> objects are formatted by using properties provided by the text store. These properties come in two types, <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties>. <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> handle paragraph inclusive properties such as <xref:System.Windows.TextAlignment> and <xref:System.Windows.FlowDirection>. <xref:System.Windows.Media.TextFormatting.TextRunProperties> are properties that can be different for each text run within a paragraph, such as foreground brush, <xref:System.Windows.Media.Typeface>, and font size. To implement custom paragraph and custom text run property types, your application must create classes that derive from <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties> respectively.  
   
 ## See also
-- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Typography in WPF](typography-in-wpf.md)
+- [Documents in WPF](documents-in-wpf.md)

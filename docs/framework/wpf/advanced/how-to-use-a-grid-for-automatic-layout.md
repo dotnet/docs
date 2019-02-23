@@ -20,9 +20,9 @@ This example describes how to use a grid in the automatic layout approach to cre
   
  The following graphic shows the output of the code sample.  
   
- ![Grid example](../../../../docs/framework/wpf/advanced/media/glob-grid.png "glob_grid")  
+ ![Grid example](media/glob-grid.png "glob_grid")  
 Grid  
   
 ## See also
-- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)
-- [Use Automatic Layout to Create a Button](../../../../docs/framework/wpf/advanced/how-to-use-automatic-layout-to-create-a-button.md)
+- [Use Automatic Layout Overview](use-automatic-layout-overview.md)
+- [Use Automatic Layout to Create a Button](how-to-use-automatic-layout-to-create-a-button.md)

@@ -20,10 +20,10 @@ This example shows how to use the <xref:System.Windows.Freezable.Clone%2A> metho
  [!code-csharp[freezablesample_procedural#CloneExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#cloneexample)]
  [!code-vb[freezablesample_procedural#CloneExample](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#cloneexample)]  
   
- For more information about <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ For more information about <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](freezable-objects-overview.md).  
   
 ## See also
 - <xref:System.Windows.Freezable>
 - <xref:System.Windows.Freezable.CloneCurrentValue%2A>
-- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/advanced/base-elements-how-to-topics.md)
+- [Freezable Objects Overview](freezable-objects-overview.md)
+- [How-to Topics](base-elements-how-to-topics.md)

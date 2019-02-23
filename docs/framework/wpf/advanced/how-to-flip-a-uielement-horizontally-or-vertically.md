@@ -12,7 +12,7 @@ This example shows how to use a <xref:System.Windows.Media.ScaleTransform> to fl
 ## Example  
  The following illustration shows the button to flip.  
   
- ![A button with no transform](../../../../docs/framework/wpf/advanced/media/graphicsmm-buttonflipbeforeflip.gif "graphicsmm_buttonflipbeforeflip")  
+ ![A button with no transform](media/graphicsmm-buttonflipbeforeflip.gif "graphicsmm_buttonflipbeforeflip")  
 The UIElement to flip  
   
  The following shows the code that creates the button.  
@@ -24,7 +24,7 @@ The UIElement to flip
   
  [!code-xaml[Transforms_snip#GraphicsMMFlipButtonExample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/FlipExample.xaml#graphicsmmflipbuttonexample1)]  
   
- ![A button flipped horizontally about &#40;0,0&#41;](../../../../docs/framework/wpf/advanced/media/graphicsmm-buttonfliphorizontalflip-displaced.gif "graphicsmm_buttonfliphorizontalflip_displaced")  
+ ![A button flipped horizontally about &#40;0,0&#41;](media/graphicsmm-buttonfliphorizontalflip-displaced.gif "graphicsmm_buttonfliphorizontalflip_displaced")  
 The button after applying the ScaleTransform  
   
 ## Example  
@@ -32,7 +32,7 @@ The button after applying the ScaleTransform
   
  [!code-xaml[Transforms_snip#GraphicsMMFlipButtonExample2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/FlipExample.xaml#graphicsmmflipbuttonexample2)]  
   
- ![A button flipped horizontally about its center](../../../../docs/framework/wpf/advanced/media/graphicsmm-buttonfliphorizontalflip-inplace.gif "graphicsmm_buttonfliphorizontalflip_inplace")  
+ ![A button flipped horizontally about its center](media/graphicsmm-buttonfliphorizontalflip-inplace.gif "graphicsmm_buttonfliphorizontalflip_inplace")  
 The button with a RenderTransformOrigin of 0.5, 0.5  
   
 ## Example  
@@ -40,8 +40,8 @@ The button with a RenderTransformOrigin of 0.5, 0.5
   
  [!code-xaml[Transforms_snip#GraphicsMMVerticalFlipButtonExample2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/FlipExample.xaml#graphicsmmverticalflipbuttonexample2)]  
   
- ![A button flipped vertically about its center](../../../../docs/framework/wpf/advanced/media/graphicsmm-buttonflipverticalflip-inplace.gif "graphicsmm_buttonflipverticalflip_inplace")  
+ ![A button flipped vertically about its center](media/graphicsmm-buttonflipverticalflip-inplace.gif "graphicsmm_buttonflipverticalflip_inplace")  
 The vertically flipped button  
   
 ## See also
-- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
+- [Transforms Overview](../graphics-multimedia/transforms-overview.md)

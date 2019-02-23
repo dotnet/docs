@@ -58,6 +58,6 @@ The [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] [Print S
 - <xref:System.Printing.EnumeratedPrintQueueTypes>
 - <xref:System.Printing.PrintQueue>
 - <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A>
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)
 - [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)

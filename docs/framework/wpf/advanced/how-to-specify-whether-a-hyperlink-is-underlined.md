@@ -13,7 +13,7 @@ The <xref:System.Windows.Documents.Hyperlink> object is an inline-level flow con
   
  In the following example, the underline for the "My MSN" link is dynamic—it only appears when the <xref:System.Windows.ContentElement.MouseEnter> event is triggered.  
   
- ![Hyperlinks displaying TextDecorations](../../../../docs/framework/wpf/advanced/media/textdecoration03.png "TextDecoration03")  
+ ![Hyperlinks displaying TextDecorations](media/textdecoration03.png "TextDecoration03")  
 Hyperlinks defined with TextDecorations  
   
 ## Example  
@@ -29,5 +29,5 @@ Hyperlinks defined with TextDecorations
 ## See also
 - <xref:System.Windows.TextDecoration>
 - <xref:System.Windows.Documents.Hyperlink>
-- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
-- [Create a Text Decoration](../../../../docs/framework/wpf/advanced/how-to-create-a-text-decoration.md)
+- [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
+- [Create a Text Decoration](how-to-create-a-text-decoration.md)

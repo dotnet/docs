@@ -38,7 +38,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
 <a name="table_vs_Grid"></a>   
 ### How is Table Different then Grid?  
- <xref:System.Windows.Documents.Table> and <xref:System.Windows.Controls.Grid> share some common functionality, but each is best suited for different scenarios. A <xref:System.Windows.Documents.Table> is designed for use within flow content (see [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md) for more information on flow content). Grids are best used inside of forms (basically anywhere outside of flow content). Within a <xref:System.Windows.Documents.FlowDocument>, <xref:System.Windows.Documents.Table> supports flow content behaviors like pagination, column reflow, and content selection while a <xref:System.Windows.Controls.Grid> does not. A <xref:System.Windows.Controls.Grid> on the other hand is best used outside of a <xref:System.Windows.Documents.FlowDocument> for many reasons including <xref:System.Windows.Controls.Grid> adds elements based on a row and column index, <xref:System.Windows.Documents.Table> does not. The <xref:System.Windows.Controls.Grid> element allows layering of child content, allowing more than one element to exist within a single "cell." <xref:System.Windows.Documents.Table> does not support layering. Child elements of a <xref:System.Windows.Controls.Grid> can be absolutely positioned relative to the area of their "cell" boundaries. <xref:System.Windows.Documents.Table> does not support this feature. Finally, a <xref:System.Windows.Controls.Grid> requires less resources then a <xref:System.Windows.Documents.Table> so consider using a <xref:System.Windows.Controls.Grid> to improve performance.  
+ <xref:System.Windows.Documents.Table> and <xref:System.Windows.Controls.Grid> share some common functionality, but each is best suited for different scenarios. A <xref:System.Windows.Documents.Table> is designed for use within flow content (see [Flow Document Overview](flow-document-overview.md) for more information on flow content). Grids are best used inside of forms (basically anywhere outside of flow content). Within a <xref:System.Windows.Documents.FlowDocument>, <xref:System.Windows.Documents.Table> supports flow content behaviors like pagination, column reflow, and content selection while a <xref:System.Windows.Controls.Grid> does not. A <xref:System.Windows.Controls.Grid> on the other hand is best used outside of a <xref:System.Windows.Documents.FlowDocument> for many reasons including <xref:System.Windows.Controls.Grid> adds elements based on a row and column index, <xref:System.Windows.Documents.Table> does not. The <xref:System.Windows.Controls.Grid> element allows layering of child content, allowing more than one element to exist within a single "cell." <xref:System.Windows.Documents.Table> does not support layering. Child elements of a <xref:System.Windows.Controls.Grid> can be absolutely positioned relative to the area of their "cell" boundaries. <xref:System.Windows.Documents.Table> does not support this feature. Finally, a <xref:System.Windows.Controls.Grid> requires less resources then a <xref:System.Windows.Documents.Table> so consider using a <xref:System.Windows.Controls.Grid> to improve performance.  
   
 <a name="basic_table_structure"></a>   
 ### Basic Table Structure  
@@ -55,7 +55,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
 -   <xref:System.Windows.Documents.Table>  
   
 > [!NOTE]
->  <xref:System.Windows.Documents.TableCell> elements may not directly host text content. For more information about the containment rules for flow content elements like <xref:System.Windows.Documents.TableCell>, see [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md).  
+>  <xref:System.Windows.Documents.TableCell> elements may not directly host text content. For more information about the containment rules for flow content elements like <xref:System.Windows.Documents.TableCell>, see [Flow Document Overview](flow-document-overview.md).  
   
 > [!NOTE]
 >  <xref:System.Windows.Documents.Table> is similar to the <xref:System.Windows.Controls.Grid> element but has more capabilities and, therefore, requires greater resource overhead.  
@@ -66,7 +66,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Render a basic table](../../../../docs/framework/wpf/advanced/media/basictablerrender.png "BasicTablerRender")  
+ ![Screenshot: Render a basic table](media/basictablerrender.png "BasicTablerRender")  
   
 <a name="table_containment"></a>   
 ### Table Containment  
@@ -96,7 +96,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Table row groups](../../../../docs/framework/wpf/advanced/media/table-rowgroups.png "Table_RowGroups")  
+ ![Screenshot: Table row groups](media/table-rowgroups.png "Table_RowGroups")  
   
 <a name="rendering_precedence"></a>   
 ### Background Rendering Precedence  
@@ -118,7 +118,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  The following figure shows how this example renders (showing background colors only).  
   
- ![Screenshot: Table z&#45;order](../../../../docs/framework/wpf/advanced/media/table-zorder.png "Table_ZOrder")  
+ ![Screenshot: Table z&#45;order](media/table-zorder.png "Table_ZOrder")  
   
 <a name="spanning_rows_or_columns"></a>   
 ### Spanning Rows or Columns  
@@ -130,7 +130,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Cell spanning all three columns](../../../../docs/framework/wpf/advanced/media/table-columnspan.png "Table_ColumnSpan")  
+ ![Screenshot: Cell spanning all three columns](media/table-columnspan.png "Table_ColumnSpan")  
   
 <a name="building_a_table_with_code"></a>   
 ## Building a Table With Code  
@@ -170,7 +170,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
  [!code-vb[TableSnippets#_TableAddFooterRow](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets/VisualBasic/Table.vb#_tableaddfooterrow)]  
   
 ## See also
-- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
-- [Define a Table with XAML](../../../../docs/framework/wpf/advanced/how-to-define-a-table-with-xaml.md)
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Use Flow Content Elements](../../../../docs/framework/wpf/advanced/how-to-use-flow-content-elements.md)
+- [Flow Document Overview](flow-document-overview.md)
+- [Define a Table with XAML](how-to-define-a-table-with-xaml.md)
+- [Documents in WPF](documents-in-wpf.md)
+- [Use Flow Content Elements](how-to-use-flow-content-elements.md)

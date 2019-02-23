@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: aaf6979f-69ab-406f-979f-5766daa85fa0
 ---
 # How to: Create a RoutedCommand
-This example shows how to create a custom <xref:System.Windows.Input.RoutedCommand> and how to implement the custom command by creating a <xref:System.Windows.Input.ExecutedRoutedEventHandler> and a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and attaching them to a <xref:System.Windows.Input.CommandBinding>.  For more information on commanding, see the [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md).  
+This example shows how to create a custom <xref:System.Windows.Input.RoutedCommand> and how to implement the custom command by creating a <xref:System.Windows.Input.ExecutedRoutedEventHandler> and a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and attaching them to a <xref:System.Windows.Input.CommandBinding>.  For more information on commanding, see the [Commanding Overview](commanding-overview.md).  
   
 ## Example  
  The first step in creating a <xref:System.Windows.Input.RoutedCommand> is defining the command and instantiating it.  
@@ -43,4 +43,4 @@ This example shows how to create a custom <xref:System.Windows.Input.RoutedComma
   
 ## See also
 - <xref:System.Windows.Input.RoutedCommand>
-- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)
+- [Commanding Overview](commanding-overview.md)

@@ -21,7 +21,7 @@ The following example shows how to use two <xref:System.Windows.Documents.TextPo
   
  The illustration below shows what this example looks like.  
   
- ![A Span element applied to a range of text](../../../../docs/framework/wpf/advanced/media/flow-insertelementintotextprogrammatically.png "Flow_InsertElementIntoTextProgrammatically")  
+ ![A Span element applied to a range of text](media/flow-insertelementintotextprogrammatically.png "Flow_InsertElementIntoTextProgrammatically")  
   
 ## See also
-- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+- [Flow Document Overview](flow-document-overview.md)

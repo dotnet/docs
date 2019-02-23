@@ -32,10 +32,10 @@ This example shows how to use the static resources of the <xref:System.Windows.S
   
 ## See also
 - <xref:System.Windows.SystemFonts>
-- [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
-- [Use SystemParameters](../../../../docs/framework/wpf/advanced/how-to-use-systemparameters.md)
-- [Use System Fonts Keys](../../../../docs/framework/wpf/advanced/how-to-use-system-fonts-keys.md)
-- [How-to Topics](../../../../docs/framework/wpf/advanced/resources-how-to-topics.md)
-- [x:Static Markup Extension](../../../../docs/framework/xaml-services/x-static-markup-extension.md)
-- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)
-- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)
+- [Paint an Area with a System Brush](../graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
+- [Use SystemParameters](how-to-use-systemparameters.md)
+- [Use System Fonts Keys](how-to-use-system-fonts-keys.md)
+- [How-to Topics](resources-how-to-topics.md)
+- [x:Static Markup Extension](../../xaml-services/x-static-markup-extension.md)
+- [XAML Resources](xaml-resources.md)
+- [DynamicResource Markup Extension](dynamicresource-markup-extension.md)

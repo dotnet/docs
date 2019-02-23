@@ -16,7 +16,7 @@ Windows Presentation Foundation (WPF) has an ink feature that makes it easy to i
 
 ## Prerequisites
 
-To use the following examples, first [install Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). It also helps to know how to write basic WPF apps. For help getting started with WPF, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).
+To use the following examples, first [install Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). It also helps to know how to write basic WPF apps. For help getting started with WPF, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
 
 ## Quick Start
 
@@ -104,7 +104,7 @@ You can access all WPF features from procedural code. Follow these steps to crea
 
 ## See also
 
-- [Digital Ink](../../../../docs/framework/wpf/advanced/digital-ink.md)
-- [Collecting Ink](../../../../docs/framework/wpf/advanced/collecting-ink.md)
-- [Handwriting Recognition](../../../../docs/framework/wpf/advanced/handwriting-recognition.md)
-- [Storing Ink](../../../../docs/framework/wpf/advanced/storing-ink.md)
+- [Digital Ink](digital-ink.md)
+- [Collecting Ink](collecting-ink.md)
+- [Handwriting Recognition](handwriting-recognition.md)
+- [Storing Ink](storing-ink.md)

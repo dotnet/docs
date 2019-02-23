@@ -15,4 +15,4 @@ The following example demonstrates how to define a <xref:System.Windows.Document
   
  The following figure shows how the table defined in this example renders.  
   
- ![Rendered table.](../../../../docs/framework/wpf/advanced/media/tableeg.png "TableEG")
+ ![Rendered table.](media/tableeg.png "TableEG")

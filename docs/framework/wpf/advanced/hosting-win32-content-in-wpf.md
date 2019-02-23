@@ -9,7 +9,7 @@ ms.assetid: 3cc8644a-34f3-4082-9ddc-77623e4df2d8
 ---
 # Hosting Win32 Content in WPF
 ## Prerequisites  
- See [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md).  
+ See [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md).  
   
 ## A Walkthrough of Win32 Inside Windows Presentation Framework (HwndHost)  
  To reuse [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] content inside [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications, use <xref:System.Windows.Interop.HwndHost>, which is a control that makes HWNDs look like [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content.  Like <xref:System.Windows.Interop.HwndSource>, <xref:System.Windows.Interop.HwndHost> is straightforward to use: derive from <xref:System.Windows.Interop.HwndHost> and implement `BuildWindowCore` and `DestroyWindowCore` methods, then instantiate your <xref:System.Windows.Interop.HwndHost> derived class and place it inside your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.  
@@ -351,7 +351,7 @@ public partial class Window1 : Window {
   
  Which gives you:  
   
- ![WPF application screen shot](../../../../docs/framework/wpf/advanced/media/interoparch09.PNG "InteropArch09")  
+ ![WPF application screen shot](media/interoparch09.PNG "InteropArch09")  
   
 ## See also
-- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)
+- [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)

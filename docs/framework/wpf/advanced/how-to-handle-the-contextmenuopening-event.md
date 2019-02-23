@@ -52,5 +52,5 @@ The <xref:System.Windows.FrameworkElement.ContextMenuOpening> event can be handl
 ## See also
 - <xref:System.Windows.Controls.ContextMenu>
 - <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType>
-- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)
-- [ContextMenu Overview](../../../../docs/framework/wpf/controls/contextmenu-overview.md)
+- [Base Elements Overview](base-elements-overview.md)
+- [ContextMenu Overview](../controls/contextmenu-overview.md)

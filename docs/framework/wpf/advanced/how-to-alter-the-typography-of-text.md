@@ -17,11 +17,11 @@ The following example shows how to set the <xref:System.Windows.Documents.TextEl
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Text with altered typography](../../../../docs/framework/wpf/advanced/media/textelement-typog.png "TextElement_Typog")  
+ ![Screenshot: Text with altered typography](media/textelement-typog.png "TextElement_Typog")  
   
  In contrast, the following figure shows how a similar example with default typographic properties renders.  
   
- ![Screenshot: Text with altered typography](../../../../docs/framework/wpf/advanced/media/textelement-typog-default.png "TextElement_Typog_Default")  
+ ![Screenshot: Text with altered typography](media/textelement-typog-default.png "TextElement_Typog_Default")  
   
 ## Example  
  The following example shows how to set the <xref:System.Windows.Controls.TextBox.Typography%2A> property programmatically.  
@@ -30,4 +30,4 @@ The following example shows how to set the <xref:System.Windows.Documents.TextEl
  [!code-vb[TextElementSnippets#_TextElement_Typog](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_typog)]  
   
 ## See also
-- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+- [Flow Document Overview](flow-document-overview.md)

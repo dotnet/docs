@@ -44,7 +44,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
   
  In a copy-and-paste operation, the system clipboard is used to temporarily store the transferred data; in a drag-and-drop operation, a <xref:System.Windows.DataObject> is used to store the data. Conceptually, a data object consists of one or more pairs of an <xref:System.Object> that contains the actual data, and a corresponding data format identifier.  
   
- The drag source initiates a drag-and-drop operation by calling the static <xref:System.Windows.DragDrop.DoDragDrop%2A?displayProperty=nameWithType> method and passing the transferred data to it. The <xref:System.Windows.DragDrop.DoDragDrop%2A> method will automatically wrap the data in a <xref:System.Windows.DataObject> if necessary. For greater control over the data format, you can wrap the data in a <xref:System.Windows.DataObject> before passing it to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method. The drop target is responsible for extracting the data from the <xref:System.Windows.DataObject>. For more information about working with data objects, see [Data and Data Objects](../../../../docs/framework/wpf/advanced/data-and-data-objects.md).  
+ The drag source initiates a drag-and-drop operation by calling the static <xref:System.Windows.DragDrop.DoDragDrop%2A?displayProperty=nameWithType> method and passing the transferred data to it. The <xref:System.Windows.DragDrop.DoDragDrop%2A> method will automatically wrap the data in a <xref:System.Windows.DataObject> if necessary. For greater control over the data format, you can wrap the data in a <xref:System.Windows.DataObject> before passing it to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method. The drop target is responsible for extracting the data from the <xref:System.Windows.DataObject>. For more information about working with data objects, see [Data and Data Objects](data-and-data-objects.md).  
   
  The source and target of a drag-and-drop operation are UI elements; however, the data that is actually being transferred typically does not have a visual representation. You can write code to provide a visual representation of the data that is dragged, such as occurs when dragging files in Windows Explorer. By default, feedback is provided to the user by changing the cursor to represent the effect that the drag-and-drop operation will have on the data, such as whether the data will be moved or copied.  
   
@@ -57,7 +57,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
   
 <a name="Drag_and_Drop_Events"></a>   
 ## Drag-and-Drop Events  
- Drag-and-drop operations support an event driven model.  Both the drag source and the drop target use a standard set of events to handle drag-and-drop operations.  The following tables summarize the standard drag-and-drop events. These are attached events on the <xref:System.Windows.DragDrop> class. For more information about attached events, see [Attached Events Overview](../../../../docs/framework/wpf/advanced/attached-events-overview.md).  
+ Drag-and-drop operations support an event driven model.  Both the drag source and the drop target use a standard set of events to handle drag-and-drop operations.  The following tables summarize the standard drag-and-drop events. These are attached events on the <xref:System.Windows.DragDrop> class. For more information about attached events, see [Attached Events Overview](attached-events-overview.md).  
   
 ### Drag Source Events  
   
@@ -81,7 +81,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
 |<xref:System.Windows.DragDrop.PreviewDragOver>|Tunneling version of <xref:System.Windows.DragDrop.DragOver>.|  
 |<xref:System.Windows.DragDrop.PreviewDrop>|Tunneling version of <xref:System.Windows.DragDrop.Drop>.|  
   
- To handle drag-and-drop events for instances of an object, add handlers for the events listed in the preceding tables. To handle drag-and-drop events at the class level, override the corresponding virtual On*Event and On\*PreviewEvent methods. For more information, see [Class Handling of Routed Events by Control Base Classes](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md#Class_Handling_of_Routed_Events).  
+ To handle drag-and-drop events for instances of an object, add handlers for the events listed in the preceding tables. To handle drag-and-drop events at the class level, override the corresponding virtual On*Event and On\*PreviewEvent methods. For more information, see [Class Handling of Routed Events by Control Base Classes](marking-routed-events-as-handled-and-class-handling.md#Class_Handling_of_Routed_Events).  
   
 <a name="Implementing_Drag_And_Drop"></a>   
 ## Implementing Drag-and-Drop  
@@ -117,7 +117,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
   
 <a name="Drag_And_Drop_Example"></a>   
 ## Drag-and-Drop Example  
- This section describes how to implement drag-and-drop for an <xref:System.Windows.Shapes.Ellipse> element. The <xref:System.Windows.Shapes.Ellipse> is both a drag source and a drop target. The transferred data is the string representation of the ellipse’s <xref:System.Windows.Shapes.Shape.Fill%2A> property. The following XAML shows the <xref:System.Windows.Shapes.Ellipse> element and the drag-and-drop related events that it handles. For complete steps on how to implement drag-and-drop, see [Walkthrough: Enabling Drag and Drop on a User Control](../../../../docs/framework/wpf/advanced/walkthrough-enabling-drag-and-drop-on-a-user-control.md).  
+ This section describes how to implement drag-and-drop for an <xref:System.Windows.Shapes.Ellipse> element. The <xref:System.Windows.Shapes.Ellipse> is both a drag source and a drop target. The transferred data is the string representation of the ellipse’s <xref:System.Windows.Shapes.Shape.Fill%2A> property. The following XAML shows the <xref:System.Windows.Shapes.Ellipse> element and the drag-and-drop related events that it handles. For complete steps on how to implement drag-and-drop, see [Walkthrough: Enabling Drag and Drop on a User Control](walkthrough-enabling-drag-and-drop-on-a-user-control.md).  
   
  [!code-xaml[DragDropSnippets#EllipseXaml](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml#ellipsexaml)]  
   
@@ -147,7 +147,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
   
 -   `allowedEffects` - One of the <xref:System.Windows.DragDropEffects> enumeration values that specifies the permitted effects of the drag-and-drop operation.  
   
- Any serializable object can be passed in the `data` parameter. If the data is not already wrapped in a <xref:System.Windows.DataObject>, it will automatically be wrapped in a new <xref:System.Windows.DataObject>. To pass multiple data items, you must create the <xref:System.Windows.DataObject> yourself, and pass it to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method. For more information, see [Data and Data Objects](../../../../docs/framework/wpf/advanced/data-and-data-objects.md).  
+ Any serializable object can be passed in the `data` parameter. If the data is not already wrapped in a <xref:System.Windows.DataObject>, it will automatically be wrapped in a new <xref:System.Windows.DataObject>. To pass multiple data items, you must create the <xref:System.Windows.DataObject> yourself, and pass it to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method. For more information, see [Data and Data Objects](data-and-data-objects.md).  
   
  The `allowedEffects` parameter is used to specify what the drag source will allow the drop target to do with the transferred data. The common values for a drag source are <xref:System.Windows.DragDropEffects.Copy>, <xref:System.Windows.DragDropEffects.Move>, and <xref:System.Windows.DragDropEffects.All>.  
   
@@ -212,6 +212,6 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
   
 ## See also
 - <xref:System.Windows.Clipboard>
-- [Walkthrough: Enabling Drag and Drop on a User Control](../../../../docs/framework/wpf/advanced/walkthrough-enabling-drag-and-drop-on-a-user-control.md)
-- [How-to Topics](../../../../docs/framework/wpf/advanced/drag-and-drop-how-to-topics.md)
-- [Drag and Drop](../../../../docs/framework/wpf/advanced/drag-and-drop.md)
+- [Walkthrough: Enabling Drag and Drop on a User Control](walkthrough-enabling-drag-and-drop-on-a-user-control.md)
+- [How-to Topics](drag-and-drop-how-to-topics.md)
+- [Drag and Drop](drag-and-drop.md)

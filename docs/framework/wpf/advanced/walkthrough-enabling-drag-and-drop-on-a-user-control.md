@@ -122,7 +122,7 @@ You need Visual Studio to complete this walkthrough.
 
 6.  Drag and drop a Circle onto the <xref:System.Windows.Controls.TextBox>. The string representation of the Circle’s fill color is appended to the <xref:System.Windows.Controls.TextBox>.
 
-     ![String representation of Circle's fill color](../../../../docs/framework/wpf/advanced/media/dragdrop-colorstring.png "DragDrop_ColorString")
+     ![String representation of Circle's fill color](media/dragdrop-colorstring.png "DragDrop_ColorString")
 
 By default, the cursor will change during a drag-and-drop operation to indicate what effect dropping the data will have. You can customize the feedback given to the user by handling the <xref:System.Windows.UIElement.GiveFeedback> event and setting a different cursor.
 
@@ -145,7 +145,7 @@ By default, the cursor will change during a drag-and-drop operation to indicate 
 
 4.  Drag one of the Circle controls over the panels, the other Circle, and the <xref:System.Windows.Controls.TextBox>. Notice that the cursors are now the custom cursors that you specified in the <xref:System.Windows.UIElement.OnGiveFeedback%2A> override.
 
-     ![Drag and drop with custom cursors](../../../../docs/framework/wpf/advanced/media/dragdrop-customcursor.png "DragDrop_CustomCursor")
+     ![Drag and drop with custom cursors](media/dragdrop-customcursor.png "DragDrop_CustomCursor")
 
 5.  Select the text `green` from the <xref:System.Windows.Controls.TextBox>.
 
@@ -191,7 +191,7 @@ The <xref:System.Windows.UIElement.OnDrop%2A> method is called when the <xref:Sy
 
 5.  Drag the text to a Circle control and drop it. The Circle changes from blue to green.
 
-     ![Convert a string to a brush](../../../../docs/framework/wpf/advanced/media/dragdrop-dropgreentext.png "DragDrop_DropGreenText")
+     ![Convert a string to a brush](media/dragdrop-dropgreentext.png "DragDrop_DropGreenText")
 
 6.  Type the text `green` in the <xref:System.Windows.Controls.TextBox>.
 
@@ -267,7 +267,7 @@ When data is dragged over the Circle user control, the control should notify the
 
 7.  Drag the text over a Circle control without dropping it. The Circle changes from blue to green.
 
-     ![Preview the effects of a drag&#45;and&#45;drop operation](../../../../docs/framework/wpf/advanced/media/dragdrop-previeweffects.png "DragDrop_PreviewEffects")
+     ![Preview the effects of a drag&#45;and&#45;drop operation](media/dragdrop-previeweffects.png "DragDrop_PreviewEffects")
 
 8.  Drag the text away from the Circle control. The Circle changes from green back to blue.
 
@@ -323,8 +323,8 @@ In this section, you enable the panels that host the Circle user controls to act
 
 10. Drag a Circle control from the panel it is in to the other panel and drop it while pressing the **Ctrl** key. The Circle is copied and the copy is added to the <xref:System.Windows.Controls.Panel.Children%2A> collection of the receiving panel.
 
-     ![Dragging a Circle while pressing the CTRL key](../../../../docs/framework/wpf/advanced/media/dragdrop-paneldrop.png "DragDrop_PanelDrop")
+     ![Dragging a Circle while pressing the CTRL key](media/dragdrop-paneldrop.png "DragDrop_PanelDrop")
 
 ## See also
 
-- [Drag and Drop Overview](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)
+- [Drag and Drop Overview](drag-and-drop-overview.md)

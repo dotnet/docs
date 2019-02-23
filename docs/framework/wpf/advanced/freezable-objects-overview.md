@@ -59,7 +59,7 @@ This topic describes how to effectively use and create <xref:System.Windows.Free
   
 -   It has animated or data bound properties.  
   
--   It has properties set by a dynamic resource. (See the [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md) for more information about dynamic resources.)  
+-   It has properties set by a dynamic resource. (See the [XAML Resources](xaml-resources.md) for more information about dynamic resources.)  
   
 -   It contains <xref:System.Windows.Freezable> sub-objects that can't be frozen.  
   
@@ -77,7 +77,7 @@ This topic describes how to effectively use and create <xref:System.Windows.Free
   
  In the preceding code example, a modifiable copy was made of a frozen object using the <xref:System.Windows.Freezable.Clone%2A> method. The next section discusses cloning in more detail.  
   
- **Note** Because a frozen freezable cannot be animated, the animation system will automatically create modifiable clones of frozen <xref:System.Windows.Freezable> objects when you try to animate them with a <xref:System.Windows.Media.Animation.Storyboard>. To eliminate the performance overhead caused by cloning, leave an object unfrozen if you intend to animate it. For more information about animating with storyboards, see the [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+ **Note** Because a frozen freezable cannot be animated, the animation system will automatically create modifiable clones of frozen <xref:System.Windows.Freezable> objects when you try to animate them with a <xref:System.Windows.Media.Animation.Storyboard>. To eliminate the performance overhead caused by cloning, leave an object unfrozen if you intend to animate it. For more information about animating with storyboards, see the [Storyboards Overview](../graphics-multimedia/storyboards-overview.md).  
   
 ### Freezing from Markup  
  To freeze a <xref:System.Windows.Freezable> object declared in markup, you use the `PresentationOptions:Freeze` attribute. In the following example, a <xref:System.Windows.Media.SolidColorBrush> is declared as a page resource and frozen. It is then used to set the background of a button.  
@@ -90,14 +90,14 @@ This topic describes how to effectively use and create <xref:System.Windows.Free
 xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"   
 ```  
   
- Because not all XAML readers recognize this attribute, it's recommended that you use the [mc:Ignorable Attribute](../../../../docs/framework/wpf/advanced/mc-ignorable-attribute.md) to mark the `Presentation:Freeze` attribute as ignorable:  
+ Because not all XAML readers recognize this attribute, it's recommended that you use the [mc:Ignorable Attribute](mc-ignorable-attribute.md) to mark the `Presentation:Freeze` attribute as ignorable:  
   
 ```  
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
 mc:Ignorable="PresentationOptions"  
 ```  
   
- For more information, see the [mc:Ignorable Attribute](../../../../docs/framework/wpf/advanced/mc-ignorable-attribute.md) page.  
+ For more information, see the [mc:Ignorable Attribute](mc-ignorable-attribute.md) page.  
   
 ### "Unfreezing" a Freezable  
  Once frozen, a <xref:System.Windows.Freezable> can never be modified or unfrozen; however, you can create an unfrozen clone using the <xref:System.Windows.Freezable.Clone%2A> or <xref:System.Windows.Freezable.CloneCurrentValue%2A> method.  
@@ -124,7 +124,7 @@ mc:Ignorable="PresentationOptions"
   
 -   Easy cloning: the Freezable class has already implemented several methods that produce deep clones.  
   
- A <xref:System.Windows.Freezable> is a type of <xref:System.Windows.DependencyObject>, and therefore uses the dependency property system. Your class properties don't have to be dependency properties, but using dependency properties will reduce the amount of code you have to write, because the <xref:System.Windows.Freezable> class was designed with dependency properties in mind. For more information about the dependency property system, see the [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md).  
+ A <xref:System.Windows.Freezable> is a type of <xref:System.Windows.DependencyObject>, and therefore uses the dependency property system. Your class properties don't have to be dependency properties, but using dependency properties will reduce the amount of code you have to write, because the <xref:System.Windows.Freezable> class was designed with dependency properties in mind. For more information about the dependency property system, see the [Dependency Properties Overview](dependency-properties-overview.md).  
   
  Every <xref:System.Windows.Freezable> subclass must override the <xref:System.Windows.Freezable.CreateInstanceCore%2A> method. If your class uses dependency properties for all its data, you're finished.  
   
@@ -158,5 +158,5 @@ mc:Ignorable="PresentationOptions"
 ## See also
 - <xref:System.Windows.Freezable>
 - [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)
-- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
-- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
+- [Dependency Properties Overview](dependency-properties-overview.md)
+- [Custom Dependency Properties](custom-dependency-properties.md)

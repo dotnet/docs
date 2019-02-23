@@ -18,43 +18,81 @@ ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35
 ---
 # How to: Make thread-safe calls to Windows Forms controls
 
-Access to Windows Forms controls is not inherently thread safe. If you have two or more threads manipulating a control, it is possible to force the control into an inconsistent state. Other thread-related bugs are possible, such as race conditions and deadlocks. If you use multithreading to improve the performance of your Windows Forms apps, make sure to call your controls in a thread-safe way.
+Multithreading can improve the performance of your Windows Forms apps, but access to Windows Forms controls is not inherently thread safe. If you have two or more threads manipulating a control, it is possible to force the control into an inconsistent state, or cause race conditions and deadlocks. If you use multithreading, be sure to call your controls in a thread-safe way.
 
-To safely call a control from different thread than the one that created the control, you can use the <xref:System.Windows.Forms.Control.Invoke%2A> method, or implement a <xref:System.ComponentModel.BackgroundWorker> component, which uses an event-driven model for multithreading. The following code example demonstrates both approaches. 
+To safely call a Windows Forms control from a different thread than the one that created the control, you can either use the <xref:System.Windows.Forms.Control.Invoke%2A> method with a delegate, or implement a <xref:System.ComponentModel.BackgroundWorker> component, which uses an event-driven model. The following article and code examples describe both approaches. 
 
-The Visual Studio debugger helps you detect unsafe thread calls. When a thread other than the one that created a control tries to call that control, the debugger raises an <xref:System.InvalidOperationException> with the message, **Control \<control name> accessed from a thread other than the thread it was created on.** This exception occurs reliably during debugging and, under some circumstances, at run time. You should fix this problem when you see it, but you can disable the exception by setting the <xref:System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls%2A> property to `false`. This causes the control to run as it would under Visual Studio .NET 2003 and the [!INCLUDE[net_v11_short](../../../../includes/net-v11-short-md.md)].
+The Visual Studio debugger helps you detect unsafe thread calls. When a thread other than the one that created a control tries to call that control, the debugger raises an <xref:System.InvalidOperationException> with the message, **Control "\<control name>" accessed from a thread other than the thread it was created on.** This exception occurs reliably during debugging, and can occur at runtime. Although you should fix this problem, you can disable the exception by setting the <xref:System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls%2A> property to `false`. This setting makes the control run as it would under Visual Studio .NET 2003 and the [!INCLUDE[net_v11_short](../../../../includes/net-v11-short-md.md)].
 
 > [!CAUTION]
-> When you use multithreading of any sort, your code can be exposed to very serious and complex bugs. For more information, see [Managed threading best practices](../../../../docs/standard/threading/managed-threading-best-practices.md) before you implement any solution that uses multithreading.
+> When you use multithreading, your code can be exposed to very serious and complex bugs. For more information, see [Managed threading best practices](../../../../docs/standard/threading/managed-threading-best-practices.md).
 
 ## Make thread-safe calls by using the Invoke method
 
-To make a thread-safe call to a Windows Forms control by using the <xref:System.Windows.Forms.Control.Invoke%2A> method:
+To safely call a Windows Form control, first query the <xref:System.Windows.Forms.Control.InvokeRequired%2A> property, which compares the control's creating thread ID to the calling thread ID. If the thread IDs are the same, call the control directly. If the thread IDs are different, call <xref:System.Windows.Forms.Control.Invoke%2A> method with a delegate from the main thread that makes the actual call to the control.
 
-1. Query the control's <xref:System.Windows.Forms.Control.InvokeRequired%2A> property.
-   
-1. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `true`, call <xref:System.Windows.Forms.Control.Invoke%2A> with a delegate that makes the actual call to the control.
-   
-1. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `false`, call the control directly.
+The following code fragment shows an unsafe call to the TextBox control. The event handler creates a separate `Unsafe` thread, which sets the main thread's <xref:System.Windows.Forms.TextBox> <xref:System.Windows.Forms.Control.Text%2A> property directly. 
 
-In the following code example, a thread-safe call is implemented in the `ThreadProcSafe` method, which is executed by the background thread. If the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `true`, the `ThreadProcSafe` method creates an instance of `StringArgReturningVoidDelegate` and passes that to the form's <xref:System.Windows.Forms.Control.Invoke%2A> method. This causes the `SetText` method to be called on the thread that created the <xref:System.Windows.Forms.TextBox> control, and in this thread context the <xref:System.Windows.Forms.Control.Text%2A> property is set directly.
+```csharp
+    public Form1()
+    {
+        textBox1 = new TextBox;
+        button1 = new Button;
+        button1.Click += new EventHandler(Button1_Click);
+
+    private void Button1_Click(object sender, EventArgs e)
+    {
+        Thread1 = new Thread(new ThreadStart(Unsafe));
+        Thread1.Start();
+    }
+    private void Unsafe()
+    {
+        textBox1.Text = "This text was set unsafely.";
+    }
+```
+
+The next code fragment demonstrates a pattern for ensuring thread-safe calls to a Windows Forms control. The `StringArgReturningVoidDelegate` enables setting the <xref:System.Windows.Forms.TextBox> <xref:System.Windows.Forms.Control.Text%2A> property. The `SetSafe` method queries the <xref:System.Windows.Forms.Control.InvokeRequired%2A> property, and if <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `true`, passes the delegate to the form's <xref:System.Windows.Forms.Control.Invoke%2A> method to make the actual call to the control. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `false`, it sets the text box text directly. The event handler creates a new `Safe` worker thread that runs the `SetSafe` method. 
+
+```csharp
+    public Form1()
+    {
+        delegate void StringArgReturningVoidDelegate(string text);
+        textBox1 = new TextBox;
+        button1 = new Button;
+        button1.Click += new EventHandler(Button1_Click);
+
+    private void SetSafe(string text)
+    {
+        if (textBox1.InvokeRequired)
+        {
+            var d = new StringArgReturningVoidDelegate(SetSafe);
+            Invoke(d, new object[] { text });
+        }
+        else
+        {
+            textBox1.Text = text;
+        }
+    }
+    private void Button1_Click(object sender, EventArgs e)
+    {
+        Thread1 = new Thread(new ThreadStart(Safe));
+        Thread1.Start();
+    }
+    private void Safe()
+    {
+        SetSafe = "This text was set safely.";
+    }
+```
 
 ## Make thread-safe calls by using BackgroundWorker
-The preferred way to implement multithreading in your app is to use the <xref:System.ComponentModel.BackgroundWorker> component, which uses an event-driven model for multithreading. The background thread runs the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler, and the thread that creates the controls runs the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handlers. You can call your controls from the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handlers.
 
-To make thread-safe calls by using BackgroundWorker:
+The easiest way to implement multithreading is with the <xref:System.ComponentModel.BackgroundWorker> component, which uses an event-driven model. The background thread runs the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler, which does not call controls created by the main thread. The thread that creates the controls runs the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handlers, which call the controls.
 
-1. Create a method to do the work that you want done in the background thread. Do not call controls created by the main thread in this method.
-   
-1. Create a method to report the results of your background work after it finishes. You can call controls created by the main thread in this method.
-   
-1. Bind the method created in step 1 to the <xref:System.ComponentModel.BackgroundWorker.DoWork> event of an instance of <xref:System.ComponentModel.BackgroundWorker>, and bind the method created in step 2 to the same instance’s <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event.
-   
-1.  To start the background thread, call the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method of the <xref:System.ComponentModel.BackgroundWorker> instance.
+To make a thread-safe call by using BackgroundWorker, create a method in the background thread to do the work you want done, and bind it to the <xref:System.ComponentModel.BackgroundWorker.DoWork> event of an instance of . Create another method in the main thread to report the results of your background work after it finishes, and bind it to the same <xref:System.ComponentModel.BackgroundWorker> instance’s <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event. To start the background thread, call the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method of the <xref:System.ComponentModel.BackgroundWorker> instance.
 
-You can also report the progress of a background task by using the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event. For an example that incorporates that event, see <xref:System.ComponentModel.BackgroundWorker>.
+You can also report the progress of a background task by using the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event. For an example, see <xref:System.ComponentModel.BackgroundWorker>.
 
-In the following code example, the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler uses <xref:System.Threading.Thread.Sleep%2A> to simulate work that takes some time. It does not call the form’s <xref:System.Windows.Forms.TextBox> control. The <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.Text%2A> property is set directly in the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler.
+In the following code example, the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler uses <xref:System.Threading.Thread.Sleep%2A> to simulate work that takes some time. It does not call the form’s <xref:System.Windows.Forms.TextBox> control. The <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.Text%2A> property is set in the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler.
 
 ```csharp
 // This BackgroundWorker is used to demonstrate the

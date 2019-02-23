@@ -1,6 +1,6 @@
 ---
 title: "Working with calendars"
-ms.date: "01/30/2019"
+ms.date: "02/23/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -127,10 +127,6 @@ However, there is one important exception. The default (uninitialized) value of 
 [!code-csharp[Conceptual.Calendars#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/minsupporteddatetime1.cs#11)]
 [!code-vb[Conceptual.Calendars#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/minsupporteddatetime1.vb#11)]
 
-### Calendars, eras, and date ranges
-
-Two calendars, the <xref:System.Globalization.JapaneseCalendar> and the <xref:System.Globalization.JapaneseLunisolarCalendar>, support more than one era. (For more information on calendar eras, see the [Working with eras](#working-with-eras) section.) When you instantiate a date using these calendars, you either explicitly or implicitly specify the era to which the date applies. Ordinarily, if the date is not valid in that particular era, the date overflows to the following era. For example,  
-
 ## Working with eras
 
 Calendars typically divide dates into eras. However, the <xref:System.Globalization.Calendar> classes in .NET do not support every era defined by a calendar, and most of the <xref:System.Globalization.Calendar> classes support only a single era. Only the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes support multiple eras.
@@ -142,15 +138,20 @@ An era in most calendars denotes an extremely long time period. In the Gregorian
 
 ### Instantiating a date with an era
 
-For the two <xref:System.Globalization.Calendar> classes that support multiple eras, a date that consists of a particular year, month, and day of the month value can be ambiguous, For example, all eras supported by the <xref:System.Globalization.JapaneseCalendar> have years numbered from 1 to 15. Ordinarily, if an era is not specified, both date and time and calendar methods assume that values belong to the current era. To explicitly specify the era when instantiating a date for a <xref:System.Globalization.Calendar> class that supports multiple eras, you can call the <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method. This method enables you to explicitly specify an era along with the calendar's year, month, day, hour, minute, second, and millisecond.
+For the two <xref:System.Globalization.Calendar> classes that support multiple eras, a date that consists of a particular year, month, and day of the month value can be ambiguous. For example, all eras supported by the <xref:System.Globalization.JapaneseCalendar> have years numbered from 1 to 15. Ordinarily, if an era is not specified, both date and time and calendar methods assume that values belong to the current era. This is true of the <xref:System.DateTime.#ctor%2A> and <xref:System.DateTimeOffset.#ctor#2A> constructors that include parameters of type <xref:System.Globalization.Calendar>, as well as the [JapaneseCalendar.ToDateTime](xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)) and [JapaneseLunisolarCalendar.ToDateTime](xref:System.Globalization.EastAsianLunisolarCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)) methods. The following 
+
+o explicitly specify the era when instantiating a date for a <xref:System.Globalization.Calendar> class that supports multiple eras, you can call the <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method. This method enables you to explicitly specify an era along with the calendar's year, month, day, hour, minute, second, and millisecond.
 
 The following example uses the <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method to instantiate the same date, the first month of the first day of the second year, in each era supported by the <xref:System.Globalization.JapaneseCalendar> class. It then displays the date in both the Japanese and Gregorian calendars. It also calls a <xref:System.DateTime> constructor to illustrate that methods that create date values without specifying an era create dates in the current era.
 
 [!code-csharp[Conceptual.Calendars#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/instantiatewithera1.cs#7)]
 [!code-vb[Conceptual.Calendars#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/instantiatewithera1.vb#7)]
 
+### Calendars, eras, and date ranges
 
-### Representing dates in calendars with eras
+Very much like individual calendars have supported date ranges, eras in the  <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes also have supporteed ranges. When you instantiate a date using these calendars, you either explicitly or implicitly specify the era to which the date applies. By default, if you instantiate date that is outside the range of a particular era, the date flows into the following era. For example,  
+
+### Representing dates in calendars with multiple eras
 
 If a <xref:System.Globalization.Calendar> object supports eras and is the current calendar of a <xref:System.Globalization.CultureInfo> object, the era is included in the string representation of a date and time value for the full date and time, long date, and short date patterns. The following example displays these date patterns when the current culture is Japan (Japanese) and the current calendar is the Japanese calendar.
 

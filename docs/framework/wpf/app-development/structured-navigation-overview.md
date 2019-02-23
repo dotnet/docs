@@ -33,7 +33,7 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
  These behaviors are illustrated by the following figure.  
   
- ![Flow between calling page and called page](../../../../docs/framework/wpf/app-development/media/structurednavigationoverviewfigure1.png "StructuredNavigationOverviewFigure1")  
+ ![Flow between calling page and called page](media/structurednavigationoverviewfigure1.png "StructuredNavigationOverviewFigure1")  
   
  You can implement these behaviors by using a <xref:System.Windows.Navigation.PageFunction%601> as the called page.  
   
@@ -161,9 +161,9 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
  For example, sometimes multiple pages are required by a calling page to gather enough data from a user or to perform a task. The use of multiple pages is referred to as a "wizard".  
   
- In other cases, applications may have complex navigation topologies that depend on structured navigation to operate effectively. For more information, see [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md).  
+ In other cases, applications may have complex navigation topologies that depend on structured navigation to operate effectively. For more information, see [Navigation Topologies Overview](navigation-topologies-overview.md).  
   
 ## See also
 - <xref:System.Windows.Navigation.PageFunction%601>
 - <xref:System.Windows.Navigation.NavigationService>
-- [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)
+- [Navigation Topologies Overview](navigation-topologies-overview.md)

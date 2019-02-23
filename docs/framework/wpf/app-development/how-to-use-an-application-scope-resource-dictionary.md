@@ -38,5 +38,5 @@ This example shows how to define and use an application-scope custom resource di
 ## See also
 - <xref:System.Windows.ResourceDictionary>
 - <xref:System.Windows.Application.Resources%2A>
-- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)
-- [Merged Resource Dictionaries](../../../../docs/framework/wpf/advanced/merged-resource-dictionaries.md)
+- [XAML Resources](../advanced/xaml-resources.md)
+- [Merged Resource Dictionaries](../advanced/merged-resource-dictionaries.md)

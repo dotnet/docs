@@ -1671,6 +1671,8 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="column" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Data.RowNotInTableException">The row does not belong to the table.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -1718,6 +1720,8 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">No column corresponds to the index specified by <paramref name="columnIndex" />.</exception>
+        <exception cref="T:System.Data.RowNotInTableException">The row does not belong to the table.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -1765,6 +1769,9 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentException">The column specified by <paramref name="columnName" /> cannot be found.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="columnName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Data.RowNotInTableException">The row does not belong to the table.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -1805,6 +1812,9 @@
         <returns>
           <see langword="true" /> if the column contains a null value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="column" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Data.RowNotInTableException">The row does not belong to the table.</exception>
+        <exception cref="T:System.Data.VersionNotFoundException">The row does not have the requested <paramref name="version" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">

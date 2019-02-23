@@ -14,7 +14,7 @@ This example shows how to wrap a <xref:System.Windows.Controls.Canvas> element w
 ## Example  
  The following example shows how to display `Hello World!` inside a <xref:System.Windows.Controls.Canvas> element. The <xref:System.Windows.Controls.Canvas> element is wrapped by a <xref:System.Windows.Controls.Border> element so that a border outlines the element.  
   
- [!code-xaml[CanvasHelloWorldBorder#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CanvasHelloWorldBorder/CS/default.xaml#1)]  
+ [!code-xaml[CanvasHelloWorldBorder#1](~/samples/snippets/csharp/VS_Snippets_Wpf/CanvasHelloWorldBorder/CS/default.xaml#1)]  
   
 ## See also
 - <xref:System.Windows.Controls.Canvas>

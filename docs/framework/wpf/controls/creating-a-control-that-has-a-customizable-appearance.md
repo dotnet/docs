@@ -70,14 +70,14 @@ A custom NumericUpDown control
   
  The following example shows the visual structure of the `NumericUpDown` control, which includes a <xref:System.Windows.Controls.Primitives.RepeatButton> to increase `Value`, a <xref:System.Windows.Controls.Primitives.RepeatButton> to decrease `Value`, and a <xref:System.Windows.Controls.TextBlock> to display `Value`.  
   
- [!code-xaml[VSMCustomControl#VisualStructure](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#visualstructure)]  
+ [!code-xaml[VSMCustomControl#VisualStructure](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#visualstructure)]  
   
  A visual behavior of the `NumericUpDown` control is that the value is in a red font if it is negative.  If you change the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> in code when the `Value` is negative, the `NumericUpDown` will always show a red negative value. You specify the visual behavior of the control in the <xref:System.Windows.Controls.ControlTemplate> by adding <xref:System.Windows.VisualState> objects to the <xref:System.Windows.Controls.ControlTemplate>.  The following example shows the <xref:System.Windows.VisualState> objects for the `Positive` and `Negative` states.  `Positive` and `Negative` are mutually exclusive (the control is always in exactly one of the two), so the example puts the <xref:System.Windows.VisualState> objects into a single <xref:System.Windows.VisualStateGroup>.  When the control goes into the `Negative` state, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> turns red.  When the control is in the `Positive` state, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> returns to it original value.  Defining <xref:System.Windows.VisualState> objects in a <xref:System.Windows.Controls.ControlTemplate> is further discussed in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
   
 > [!NOTE]
 >  Be sure to set the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=nameWithType> attached property on the root <xref:System.Windows.FrameworkElement> of the <xref:System.Windows.Controls.ControlTemplate>.  
   
- [!code-xaml[VSMCustomControl#ValueStates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#valuestates)]  
+ [!code-xaml[VSMCustomControl#ValueStates](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#valuestates)]  
   
 <a name="using_parts_of_the_controltemplate_in_code"></a>   
 ## Using Parts of the ControlTemplate in Code  
@@ -102,13 +102,13 @@ A custom NumericUpDown control
   
  In the example that defines the visual structure of the `NumericUpDown` control in the <xref:System.Windows.Controls.ControlTemplate>, the <xref:System.Windows.Controls.Primitives.RepeatButton> that increases `Value` has its `x:Name` attribute set to `UpButton`.  The following example declares a property called `UpButtonElement` that represents the <xref:System.Windows.Controls.Primitives.RepeatButton> that is declared in the <xref:System.Windows.Controls.ControlTemplate>. The `set` accessor first unsubscribes to the button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event if `UpDownElement` is not `null`, then it sets the property, and then it subscribes to the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. There is also a property defined, but not shown here, for the other <xref:System.Windows.Controls.Primitives.RepeatButton>, called `DownButtonElement`.  
   
- [!code-csharp[VSMCustomControl#UpButtonProperty](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#upbuttonproperty)]
- [!code-vb[VSMCustomControl#UpButtonProperty](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#upbuttonproperty)]  
+ [!code-csharp[VSMCustomControl#UpButtonProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#upbuttonproperty)]
+ [!code-vb[VSMCustomControl#UpButtonProperty](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#upbuttonproperty)]  
   
  The following example shows the <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A> for the `NumericUpDown` control.  The example uses the <xref:System.Windows.FrameworkElement.GetTemplateChild%2A> method to get the <xref:System.Windows.FrameworkElement> objects from the <xref:System.Windows.Controls.ControlTemplate>.  Notice that the example guards against cases where <xref:System.Windows.FrameworkElement.GetTemplateChild%2A> finds a <xref:System.Windows.FrameworkElement> with the specified name that is not of the expected type. It is also a best practice to ignore elements that have the specified `x:Name` but are of the wrong type.  
   
- [!code-csharp[VSMCustomControl#ApplyTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#applytemplate)]
- [!code-vb[VSMCustomControl#ApplyTemplate](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#applytemplate)]  
+ [!code-csharp[VSMCustomControl#ApplyTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#applytemplate)]
+ [!code-vb[VSMCustomControl#ApplyTemplate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#applytemplate)]  
   
  By following the practices that are shown in the previous examples, you ensure that your control will continue to run when the <xref:System.Windows.Controls.ControlTemplate> is missing a <xref:System.Windows.FrameworkElement>.  
   
@@ -117,14 +117,14 @@ A custom NumericUpDown control
   
  The following example repeats the previous example that shows the <xref:System.Windows.VisualState> objects that corresponds to the `Positive` and `Negative` states of the control. The <xref:System.Windows.Media.Animation.Storyboard> in the `Negative`<xref:System.Windows.VisualState> turns the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> red.   When the `NumericUpDown` control is in the `Negative` state, the storyboard in the `Negative` state begins.  Then the <xref:System.Windows.Media.Animation.Storyboard> in the `Negative` state stops when the control returns to the `Positive` state.  The `Positive`<xref:System.Windows.VisualState> does not need to contain a <xref:System.Windows.Media.Animation.Storyboard> because when the <xref:System.Windows.Media.Animation.Storyboard> for the `Negative` stops, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> returns to its original color.  
   
- [!code-xaml[VSMCustomControl#ValueStates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#valuestates)]  
+ [!code-xaml[VSMCustomControl#ValueStates](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#valuestates)]  
   
  Note that the <xref:System.Windows.Controls.TextBlock> is given a name, but the <xref:System.Windows.Controls.TextBlock> is not in the control contract for `NumericUpDown` because the control's logic never references the <xref:System.Windows.Controls.TextBlock>.  Elements that are referenced in the <xref:System.Windows.Controls.ControlTemplate> have names, but do not need to be part of the control contract because a new <xref:System.Windows.Controls.ControlTemplate> for the control might not need to reference that element.  For example, someone who creates a new <xref:System.Windows.Controls.ControlTemplate> for `NumericUpDown` might decide to not indicate that `Value` is negative by changing the <xref:System.Windows.Controls.Control.Foreground%2A>.  In that case, neither the code nor the <xref:System.Windows.Controls.ControlTemplate> references the <xref:System.Windows.Controls.TextBlock> by name.  
   
  The control's logic is responsible for changing the control's state. The following example shows that the `NumericUpDown` control calls the <xref:System.Windows.VisualStateManager.GoToState%2A> method to go into the `Positive` state when `Value` is 0 or greater, and the `Negative` state when `Value` is less than 0.  
   
- [!code-csharp[VSMCustomControl#ValueStateChange](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#valuestatechange)]
- [!code-vb[VSMCustomControl#ValueStateChange](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#valuestatechange)]  
+ [!code-csharp[VSMCustomControl#ValueStateChange](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#valuestatechange)]
+ [!code-vb[VSMCustomControl#ValueStateChange](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#valuestatechange)]  
   
  The <xref:System.Windows.VisualStateManager.GoToState%2A> method performs the logic necessary to start and stop the storyboards appropriately. When a control calls <xref:System.Windows.VisualStateManager.GoToState%2A> to change its state, the <xref:System.Windows.VisualStateManager> does the following:  
   
@@ -145,8 +145,8 @@ A custom NumericUpDown control
   
  A single method that updates all the states centralizes calls to the <xref:System.Windows.VisualStateManager> and keeps your code manageable. The following example shows the `NumericUpDown` control's helper method, `UpdateStates`. When `Value` is greater than or equal to 0, the <xref:System.Windows.Controls.Control> is in the `Positive` state.  When `Value` is less than 0, the control is in the `Negative` state.  When <xref:System.Windows.UIElement.IsFocused%2A> is `true`, the control is in the `Focused` state; otherwise, it is in the `Unfocused` state.  The control can call `UpdateStates` whenever it needs to change its state, regardless of what state changes.  
   
- [!code-csharp[VSMCustomControl#UpdateStates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#updatestates)]
- [!code-vb[VSMCustomControl#UpdateStates](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#updatestates)]  
+ [!code-csharp[VSMCustomControl#UpdateStates](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#updatestates)]
+ [!code-vb[VSMCustomControl#UpdateStates](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#updatestates)]  
   
  If you pass a state name to <xref:System.Windows.VisualStateManager.GoToState%2A> when the control is already in that state, <xref:System.Windows.VisualStateManager.GoToState%2A> does nothing, so you don't need to check for the control's current state.  For example, if `Value` changes from one negative number to another negative number, the storyboard for the `Negative` state is not interrupted and the user will not see a change in the control.  
   
@@ -164,18 +164,18 @@ A custom NumericUpDown control
   
  You should update the state of the control in the <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A> method so that the control appears in the correct state when the <xref:System.Windows.Controls.ControlTemplate> is applied. The following example calls `UpdateStates` in <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A> to ensure that the control is in the appropriate states.  For example, suppose that you create a `NumericUpDown` control, and then set its <xref:System.Windows.Controls.Control.Foreground%2A> to green and `Value` to -5.  If you do not call `UpdateStates` when the <xref:System.Windows.Controls.ControlTemplate> is applied to the `NumericUpDown` control, the control is not in the `Negative` state and the value is green instead of red.  You must call `UpdateStates` to put the control in the `Negative` state.  
   
- [!code-csharp[VSMCustomControl#ApplyTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#applytemplate)]
- [!code-vb[VSMCustomControl#ApplyTemplate](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#applytemplate)]  
+ [!code-csharp[VSMCustomControl#ApplyTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#applytemplate)]
+ [!code-vb[VSMCustomControl#ApplyTemplate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#applytemplate)]  
   
  You often need to update the states of a control when a property changes. The following example shows the entire `ValueChangedCallback` method. Because `ValueChangedCallback` is called when `Value` changes, the method calls `UpdateStates` in case `Value` changed from positive to negative or vice versa. It is acceptable to call `UpdateStates` when `Value` changes but remains positive or negative because in that case, the control will not change states.  
   
- [!code-csharp[VSMCustomControl#EntireValueChangedCallback](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#entirevaluechangedcallback)]
- [!code-vb[VSMCustomControl#EntireValueChangedCallback](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#entirevaluechangedcallback)]  
+ [!code-csharp[VSMCustomControl#EntireValueChangedCallback](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#entirevaluechangedcallback)]
+ [!code-vb[VSMCustomControl#EntireValueChangedCallback](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#entirevaluechangedcallback)]  
   
  You might also need to update states when an event occurs. The following example shows that the `NumericUpDown` calls `UpdateStates` on the <xref:System.Windows.Controls.Control> to handle the <xref:System.Windows.UIElement.GotFocus> event.  
   
- [!code-csharp[VSMCustomControl#OnGotFocus](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#ongotfocus)]
- [!code-vb[VSMCustomControl#OnGotFocus](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#ongotfocus)]  
+ [!code-csharp[VSMCustomControl#OnGotFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#ongotfocus)]
+ [!code-vb[VSMCustomControl#OnGotFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#ongotfocus)]  
   
  The <xref:System.Windows.VisualStateManager> helps you manage your control's states. By using the <xref:System.Windows.VisualStateManager>, you ensure that your control correctly transitions between states.  If you follow the recommendations described in this section for working with the <xref:System.Windows.VisualStateManager>, your control's code will remain readable and maintainable.  
   
@@ -217,19 +217,19 @@ A custom NumericUpDown control
   
  The following example specifies the <xref:System.Windows.FrameworkElement> object and states for the `NumericUpDown` control.  
   
- [!code-csharp[VSMCustomControl#ControlContract](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#controlcontract)]
- [!code-vb[VSMCustomControl#ControlContract](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#controlcontract)]  
+ [!code-csharp[VSMCustomControl#ControlContract](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#controlcontract)]
+ [!code-vb[VSMCustomControl#ControlContract](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#controlcontract)]  
   
 <a name="complete_example"></a>   
 ## Complete Example  
  The following example is the entire <xref:System.Windows.Controls.ControlTemplate> for the `NumericUpDown` control.  
   
- [!code-xaml[VSMCustomControl#NUDTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/themes/generic.xaml#nudtemplate)]  
+ [!code-xaml[VSMCustomControl#NUDTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/themes/generic.xaml#nudtemplate)]  
   
  The following example shows the logic for the `NumericUpDown`.  
   
- [!code-csharp[VSMCustomControl#ControlLogic](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#controllogic)]
- [!code-vb[VSMCustomControl#ControlLogic](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#controllogic)]  
+ [!code-csharp[VSMCustomControl#ControlLogic](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/numericupdown.cs#controllogic)]
+ [!code-vb[VSMCustomControl#ControlLogic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#controllogic)]  
   
 ## See also
 - [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)

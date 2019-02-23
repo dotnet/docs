@@ -88,5 +88,5 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
 - [WPF Partial Trust Security](../../../docs/framework/wpf/wpf-partial-trust-security.md)
 - [WPF Security Strategy - Platform Security](../../../docs/framework/wpf/wpf-security-strategy-platform-security.md)
 - [Trustworthy Computing](https://www.microsoft.com/mscorp/twc/default.mspx)
-- [Application Threat Modeling](https://msdn.microsoft.com/security/securecode/threatmodeling/acetm/)
-- [Security Guidelines: .NET Framework 2.0](https://msdn.microsoft.com/library/default.asp?url=/library/dnpag2/html/PAGGuidelines0003.asp)
+- [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling)
+- [Security Guidelines: .NET Framework 2.0](https://docs.microsoft.com/previous-versions/msp-n-p/ff648462(v=pandp.10))

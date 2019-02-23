@@ -12,7 +12,7 @@ This example shows how to obtain the binding object from a data-bound target pro
 ## Example  
  You can do the following to get the <xref:System.Windows.Data.Binding> object:  
   
- [!code-csharp[BindValidation#GetBinding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml.cs#getbinding)]  
+ [!code-csharp[BindValidation#GetBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml.cs#getbinding)]  
   
 > [!NOTE]
 >  You must specify the dependency property for the binding you want because it is possible that more than one property of the target object is using data binding.  

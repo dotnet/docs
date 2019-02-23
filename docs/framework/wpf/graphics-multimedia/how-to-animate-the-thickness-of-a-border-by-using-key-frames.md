@@ -27,6 +27,6 @@ This example shows how to animate the <xref:System.Windows.Controls.Control.Bord
 - <xref:System.Windows.Media.Animation.LinearThicknessKeyFrame>
 - <xref:System.Windows.Media.Animation.DiscreteThicknessKeyFrame>
 - <xref:System.Windows.Media.Animation.SplineThicknessKeyFrame>
-- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
-- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
-- [Animate a BorderThickness Value](../../../../docs/framework/wpf/controls/how-to-animate-a-borderthickness-value.md)
+- [Key-Frame Animations Overview](key-frame-animations-overview.md)
+- [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)
+- [Animate a BorderThickness Value](../controls/how-to-animate-a-borderthickness-value.md)

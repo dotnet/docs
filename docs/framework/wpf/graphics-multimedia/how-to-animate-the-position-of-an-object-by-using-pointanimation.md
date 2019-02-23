@@ -23,7 +23,7 @@ This example shows how to use the <xref:System.Windows.Media.Animation.PointAnim
 - <xref:System.Windows.Shapes.Path>
 - <xref:System.Windows.Media.EllipseGeometry>
 - <xref:System.Windows.Media.EllipseGeometry.Center%2A>
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [Animation Overview](animation-overview.md)
+- [Graphics and Multimedia](index.md)
 - [Graphics How-to Topics](graphics-how-to-topics.md)
 - [Animation and Timing How-to Topics](animation-and-timing-how-to-topics.md)

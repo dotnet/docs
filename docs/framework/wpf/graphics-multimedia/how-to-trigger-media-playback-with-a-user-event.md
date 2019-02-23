@@ -21,5 +21,5 @@ This example shows how to synchronize media playback with an event.
 - <xref:System.Windows.Media.MediaTimeline>
 - <xref:System.Windows.EventTrigger.RoutedEvent%2A>
 - <xref:System.Windows.Media.Animation.Storyboard>
-- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/audio-and-video-how-to-topics.md)
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [How-to Topics](audio-and-video-how-to-topics.md)
+- [Graphics and Multimedia](index.md)

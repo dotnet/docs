@@ -20,4 +20,4 @@ Use the <xref:System.Windows.Media.BitmapCacheBrush> class to reuse a cached ele
 - <xref:System.Windows.Media.BitmapCache>
 - <xref:System.Windows.Media.BitmapCacheBrush>
 - <xref:System.Windows.UIElement.CacheMode%2A>
-- [How to: Improve Rendering Performance by Caching an Element](../../../../docs/framework/wpf/graphics-multimedia/how-to-improve-rendering-performance-by-caching-an-element.md)
+- [How to: Improve Rendering Performance by Caching an Element](how-to-improve-rendering-performance-by-caching-an-element.md)

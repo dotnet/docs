@@ -15,9 +15,9 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
 ## Media API  
  The <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> classes are used to present audio or video content. These classes can be controlled interactively or by a clock. These classes can use on the [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] 10 control for media playback. Which class you use, depends on the scenario.  
   
- <xref:System.Windows.Controls.MediaElement> is a <xref:System.Windows.UIElement> that is supported by the [Layout](../../../../docs/framework/wpf/advanced/layout.md) and can be consumed as the content of many controls. It is also usable in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] as well as code. <xref:System.Windows.Media.MediaPlayer>, on the other hand, is designed for <xref:System.Windows.Media.Drawing> objects and lacks layout support. Media loaded using a <xref:System.Windows.Media.MediaPlayer> can only be presented using a <xref:System.Windows.Media.VideoDrawing> or by directly interacting with a <xref:System.Windows.Media.DrawingContext>. <xref:System.Windows.Media.MediaPlayer> cannot be used in XAML.  
+ <xref:System.Windows.Controls.MediaElement> is a <xref:System.Windows.UIElement> that is supported by the [Layout](../advanced/layout.md) and can be consumed as the content of many controls. It is also usable in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] as well as code. <xref:System.Windows.Media.MediaPlayer>, on the other hand, is designed for <xref:System.Windows.Media.Drawing> objects and lacks layout support. Media loaded using a <xref:System.Windows.Media.MediaPlayer> can only be presented using a <xref:System.Windows.Media.VideoDrawing> or by directly interacting with a <xref:System.Windows.Media.DrawingContext>. <xref:System.Windows.Media.MediaPlayer> cannot be used in XAML.  
   
- For more information about drawing objects and drawing context, see [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md).  
+ For more information about drawing objects and drawing context, see [Drawing Objects Overview](drawing-objects-overview.md).  
   
 > [!NOTE]
 >  When distributing media with your application, you cannot use a media file as a project resource. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
@@ -43,7 +43,7 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
   
  To control media playback in independent mode, the media object's control methods can be used. The control methods available are <xref:System.Windows.Controls.MediaElement.Play%2A>, <xref:System.Windows.Controls.MediaElement.Pause%2A>, <xref:System.Windows.Controls.MediaElement.Close%2A>, and <xref:System.Windows.Controls.MediaElement.Stop%2A>. For <xref:System.Windows.Controls.MediaElement>, interactive control using these methods is only available when the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> is set to <xref:System.Windows.Controls.MediaState.Manual>. These methods are unavailable when the media object is in clock mode.  
   
- See [Control a MediaElement (Play, Pause, Stop, Volume, and Speed)](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md) for an example of independent mode.  
+ See [Control a MediaElement (Play, Pause, Stop, Volume, and Speed)](how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md) for an example of independent mode.  
   
 ### Clock Mode  
  In clock mode, a <xref:System.Windows.Media.MediaTimeline> drives media playback. Clock mode has the following characteristics:  
@@ -56,9 +56,9 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
   
  To control media playback in clock mode, the <xref:System.Windows.Media.Animation.ClockController> control methods must be used. A <xref:System.Windows.Media.Animation.ClockController> is obtained from the <xref:System.Windows.Media.Animation.ClockController> property of the <xref:System.Windows.Media.MediaClock>. If you attempt to use the control methods of either a <xref:System.Windows.Controls.MediaElement> or <xref:System.Windows.Media.MediaPlayer> object while in clock mode, an <xref:System.InvalidOperationException> will be thrown.  
   
- See the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md) for more information about clocks and timelines.  
+ See the [Animation Overview](animation-overview.md) for more information about clocks and timelines.  
   
- See [Control a MediaElement by Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-by-using-a-storyboard.md) for an example of clock mode.  
+ See [Control a MediaElement by Using a Storyboard](how-to-control-a-mediaelement-by-using-a-storyboard.md) for an example of clock mode.  
   
 <a name="mediaelement"></a>   
 ## MediaElement Class  
@@ -104,9 +104,9 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
   
  [!code-csharp[DrawingMiscSnippets_snip#VideoDrawingExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/VideoDrawingExample.cs#videodrawingexampleinline)]  
   
- See the [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md) for more information about <xref:System.Windows.Media.Drawing> objects.  
+ See the [Drawing Objects Overview](drawing-objects-overview.md) for more information about <xref:System.Windows.Media.Drawing> objects.  
   
 ## See also
 - <xref:System.Windows.Media.DrawingGroup>
-- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
-- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/audio-and-video-how-to-topics.md)
+- [Layout](../advanced/layout.md)
+- [How-to Topics](audio-and-video-how-to-topics.md)

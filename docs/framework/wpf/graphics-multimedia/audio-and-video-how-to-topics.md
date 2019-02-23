@@ -13,12 +13,12 @@ The following topics demonstrate how to use the <xref:System.Windows.Controls.Me
   
 ## In This Section  
  [How to: Add an Element Dynamically](https://msdn.microsoft.com/library/d00f258a-7973-4de7-bc54-a3fc1f638419)  
- [Control a MediaElement (Play, Pause, Stop, Volume, and Speed)](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md)  
- [Control a MediaElement by Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-by-using-a-storyboard.md)  
- [Trigger Media Playback with a User Event](../../../../docs/framework/wpf/graphics-multimedia/how-to-trigger-media-playback-with-a-user-event.md)  
- [Repeat Media Playback](../../../../docs/framework/wpf/graphics-multimedia/how-to-repeat-media-playback.md)  
- [Play Media with Animations](../../../../docs/framework/wpf/graphics-multimedia/how-to-play-media-with-animations.md)  
- [Use Transforms on a MediaElement](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-transforms-on-a-mediaelement.md)  
+ [Control a MediaElement (Play, Pause, Stop, Volume, and Speed)](how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md)  
+ [Control a MediaElement by Using a Storyboard](how-to-control-a-mediaelement-by-using-a-storyboard.md)  
+ [Trigger Media Playback with a User Event](how-to-trigger-media-playback-with-a-user-event.md)  
+ [Repeat Media Playback](how-to-repeat-media-playback.md)  
+ [Play Media with Animations](how-to-play-media-with-animations.md)  
+ [Use Transforms on a MediaElement](how-to-use-transforms-on-a-mediaelement.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.MediaElement>  
@@ -28,4 +28,4 @@ The following topics demonstrate how to use the <xref:System.Windows.Controls.Me
  <xref:System.Windows.Media.MediaTimeline>  
   
 ## Related Sections  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+ [Graphics and Multimedia](index.md)

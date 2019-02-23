@@ -32,5 +32,5 @@ This example shows how to animate the <xref:System.Windows.Media.SolidColorBrush
 - <xref:System.Windows.Media.SolidColorBrush.Color%2A>
 - <xref:System.Windows.Media.SolidColorBrush>
 - <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames>
-- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
-- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+- [Key-Frame Animations Overview](key-frame-animations-overview.md)
+- [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)

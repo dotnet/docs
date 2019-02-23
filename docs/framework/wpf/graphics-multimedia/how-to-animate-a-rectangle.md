@@ -22,7 +22,7 @@ This example shows how to animate changes to the size and position of a rectangl
 - <xref:System.Windows.Media.Animation.RectAnimation>
 - <xref:System.Windows.Media.RectangleGeometry.Rect%2A>
 - <xref:System.Windows.Media.RectangleGeometry>
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [Animation Overview](animation-overview.md)
+- [Graphics and Multimedia](index.md)
 - [Graphics How-to Topics](graphics-how-to-topics.md)
 - [Animation and Timing How-to Topics](animation-and-timing-how-to-topics.md)

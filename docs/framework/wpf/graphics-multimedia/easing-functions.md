@@ -63,47 +63,47 @@ Easing functions allow you to apply custom mathematical formulas to your animati
   
  <xref:System.Windows.Media.Animation.BackEase>  
   
- ![BackEase EasingMode graphs.](../../../../docs/framework/wpf/graphics-multimedia/media/backease-graph.png "BackEase_Graph")  
+ ![BackEase EasingMode graphs.](media/backease-graph.png "BackEase_Graph")  
   
  <xref:System.Windows.Media.Animation.BounceEase>  
   
- ![BounceEase EasingMode graphs.](../../../../docs/framework/wpf/graphics-multimedia/media/bounceease-graph.png "BounceEase_Graph")  
+ ![BounceEase EasingMode graphs.](media/bounceease-graph.png "BounceEase_Graph")  
   
  <xref:System.Windows.Media.Animation.CircleEase>  
   
- ![CircleEase EasingMode graphs.](../../../../docs/framework/wpf/graphics-multimedia/media/circleease-graph.png "CircleEase_Graph")  
+ ![CircleEase EasingMode graphs.](media/circleease-graph.png "CircleEase_Graph")  
   
  <xref:System.Windows.Media.Animation.CubicEase>  
   
- ![CubicEase EasingMode graphs.](../../../../docs/framework/wpf/graphics-multimedia/media/cubicease-graph.png "CubicEase_Graph")  
+ ![CubicEase EasingMode graphs.](media/cubicease-graph.png "CubicEase_Graph")  
   
  <xref:System.Windows.Media.Animation.ElasticEase>  
   
- ![ElasticEase with graphs of different easingmodes.](../../../../docs/framework/wpf/graphics-multimedia/media/elasticease-graph.png "ElasticEase_Graph")  
+ ![ElasticEase with graphs of different easingmodes.](media/elasticease-graph.png "ElasticEase_Graph")  
   
  <xref:System.Windows.Media.Animation.ExponentialEase>  
   
- ![ExponentialEase graphs of different easingmodes.](../../../../docs/framework/wpf/graphics-multimedia/media/exponentialease-graph.png "ExponentialEase_Graph")  
+ ![ExponentialEase graphs of different easingmodes.](media/exponentialease-graph.png "ExponentialEase_Graph")  
   
  <xref:System.Windows.Media.Animation.PowerEase>  
   
- ![QuarticEase with graphs of different easingmodes.](../../../../docs/framework/wpf/graphics-multimedia/media/quarticease-graph.png "QuarticEase_Graph")  
+ ![QuarticEase with graphs of different easingmodes.](media/quarticease-graph.png "QuarticEase_Graph")  
   
  <xref:System.Windows.Media.Animation.QuadraticEase>  
   
- ![QuadraticEase with graphs of different easingmodes](../../../../docs/framework/wpf/graphics-multimedia/media/quadraticease-graph.png "QuadraticEase_Graph")  
+ ![QuadraticEase with graphs of different easingmodes](media/quadraticease-graph.png "QuadraticEase_Graph")  
   
  <xref:System.Windows.Media.Animation.QuarticEase>  
   
- ![QuarticEase with graphs of different easingmodes.](../../../../docs/framework/wpf/graphics-multimedia/media/quarticease-graph.png "QuarticEase_Graph")  
+ ![QuarticEase with graphs of different easingmodes.](media/quarticease-graph.png "QuarticEase_Graph")  
   
  <xref:System.Windows.Media.Animation.QuinticEase>  
   
- ![QuinticEase with graphs of different easingmodes.](../../../../docs/framework/wpf/graphics-multimedia/media/quinticease-graph.png "QuinticEase_Graph")  
+ ![QuinticEase with graphs of different easingmodes.](media/quinticease-graph.png "QuinticEase_Graph")  
   
  <xref:System.Windows.Media.Animation.SineEase>  
   
- ![SineEase for different EasingMode values](../../../../docs/framework/wpf/graphics-multimedia/media/sineease-graph.png "SineEase_Graph")  
+ ![SineEase for different EasingMode values](media/sineease-graph.png "SineEase_Graph")  
   
 > [!NOTE]
 >  You can use <xref:System.Windows.Media.Animation.PowerEase> to create the same behavior as <xref:System.Windows.Media.Animation.CubicEase>, <xref:System.Windows.Media.Animation.QuadraticEase>, <xref:System.Windows.Media.Animation.QuarticEase>, and <xref:System.Windows.Media.Animation.QuinticEase> by using the <xref:System.Windows.Media.Animation.PowerEase.Power%2A> property. For example, if you want to use <xref:System.Windows.Media.Animation.PowerEase> to substitute for <xref:System.Windows.Media.Animation.CubicEase>, specify a <xref:System.Windows.Media.Animation.PowerEase.Power%2A> value of 3.  

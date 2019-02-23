@@ -66,5 +66,5 @@ This topic provides an overview of how to use <xref:System.Windows.Media.Drawing
 ## See also
 - <xref:System.Windows.Media.DrawingVisual>
 - <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>
-- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
-- [Hit Testing in the Visual Layer](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md)
+- [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)
+- [Hit Testing in the Visual Layer](hit-testing-in-the-visual-layer.md)

@@ -28,7 +28,7 @@ This example shows how to animate the value of a property that takes a <xref:Sys
   
  For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
- For consistency with other animation examples, the code versions of this example use a <xref:System.Windows.Media.Animation.Storyboard> object to apply the <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>. Alternatively, when applying a single animation in code, it is simpler to use the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method instead of using a <xref:System.Windows.Media.Animation.Storyboard>. For an example, see [Animate a Property Without Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-without-using-a-storyboard.md).  
+ For consistency with other animation examples, the code versions of this example use a <xref:System.Windows.Media.Animation.Storyboard> object to apply the <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>. Alternatively, when applying a single animation in code, it is simpler to use the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method instead of using a <xref:System.Windows.Media.Animation.Storyboard>. For an example, see [Animate a Property Without Using a Storyboard](how-to-animate-a-property-without-using-a-storyboard.md).  
   
 ## See also
 - <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>
@@ -36,5 +36,5 @@ This example shows how to animate the value of a property that takes a <xref:Sys
 - <xref:System.Windows.Media.Animation.LinearDoubleKeyFrame>
 - <xref:System.Windows.Media.Animation.DiscreteDoubleKeyFrame>
 - <xref:System.Windows.Media.Animation.SplineDoubleKeyFrame>
-- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
-- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+- [Key-Frame Animations Overview](key-frame-animations-overview.md)
+- [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)

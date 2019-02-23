@@ -17,7 +17,7 @@ This example shows how to use relative values to specify the origin of a <xref:S
   
  The following illustration shows the transformation result for the example that follows.  
   
- ![A button transformed using RenderTransform](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-rendertransformwithdefaultcenter.png "graphicsmm_RenderTransformWithDefaultCenter")  
+ ![A button transformed using RenderTransform](media/graphicsmm-rendertransformwithdefaultcenter.png "graphicsmm_RenderTransformWithDefaultCenter")  
 A 45 degree clockwise rotation by using the RenderTransform property  
   
  [!code-xaml[Transforms_snip#GraphicsMMRotateButtonExample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample1)]  
@@ -26,14 +26,14 @@ A 45 degree clockwise rotation by using the RenderTransform property
   
  The following illustration shows the transformation result for the example that follows.  
   
- ![A button transformed about its center](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-rendertransformrelativecenter.png "graphicsmm_RenderTransformRelativeCenter")  
+ ![A button transformed about its center](media/graphicsmm-rendertransformrelativecenter.png "graphicsmm_RenderTransformRelativeCenter")  
 A 45 degree rotation by using the RenderTransform property with a RenderTransformOrigin of (0.5, 0.5)  
   
  [!code-xaml[Transforms_snip#GraphicsMMRotateButtonExample2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample2)]  
   
- For more information about transforming <xref:System.Windows.FrameworkElement> objects, see the [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md).  
+ For more information about transforming <xref:System.Windows.FrameworkElement> objects, see the [Transforms Overview](transforms-overview.md).  
   
 ## See also
 - <xref:System.Windows.Media.Transform>
-- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)
+- [Transforms Overview](transforms-overview.md)
+- [How-to Topics](transformations-how-to-topics.md)

@@ -14,15 +14,15 @@ This topic describes how to use From/To/By animations to animate dependency prop
   
 <a name="prereq"></a>   
 ## Prerequisites  
- To understand this topic, you should be familiar with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animations features. For an introduction to animation features, see the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  
+ To understand this topic, you should be familiar with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animations features. For an introduction to animation features, see the [Animation Overview](animation-overview.md).  
   
 <a name="whatisanimation"></a>   
 ## What Is a From/To/By Animation?  
  A From/To/By animation is a type of <xref:System.Windows.Media.Animation.AnimationTimeline> that creates a transition between a starting value and an ending value. The amount of time that the transition takes to complete is determined by the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of that animation.  
   
- You can apply a From/To/By animation to a property by using a <xref:System.Windows.Media.Animation.Storyboard> in markup and code, or by using the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method in code. You may also use a From/To/By Animation to create an <xref:System.Windows.Media.Animation.AnimationClock> and apply it to one or more properties. For more information about the different methods for applying animations, see the [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md).  
+ You can apply a From/To/By animation to a property by using a <xref:System.Windows.Media.Animation.Storyboard> in markup and code, or by using the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method in code. You may also use a From/To/By Animation to create an <xref:System.Windows.Media.Animation.AnimationClock> and apply it to one or more properties. For more information about the different methods for applying animations, see the [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
   
- From/To/By animations can have no more than two target values. If you require an animation that has more than two target values, use a key-frame animation. Key-frame animations are described in the [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md).  
+ From/To/By animations can have no more than two target values. If you require an animation that has more than two target values, use a key-frame animation. Key-frame animations are described in the [Key-Frame Animations Overview](key-frame-animations-overview.md).  
   
 <a name="animation_types"></a>   
 ## From/To/By Animation Types  
@@ -77,7 +77,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
   
  The examples in this section each use a <xref:System.Windows.Media.Animation.DoubleAnimation>, which is a type of From/To/By animation, to animate the <xref:System.Windows.FrameworkElement.Width%2A> property of a <xref:System.Windows.Shapes.Rectangle> that is 10 device independent pixels high and 100 device independent pixels wide.  
   
- Although each example uses a <xref:System.Windows.Media.Animation.DoubleAnimation>, the From, To, and By properties of all From/To/By animations behave identically. Although each of these examples uses a <xref:System.Windows.Media.Animation.Storyboard>, you can use From/To/By animations in other ways. For more information, see [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md).  
+ Although each example uses a <xref:System.Windows.Media.Animation.DoubleAnimation>, the From, To, and By properties of all From/To/By animations behave identically. Although each of these examples uses a <xref:System.Windows.Media.Animation.Storyboard>, you can use From/To/By animations in other ways. For more information, see [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
   
 ### From/To  
  When you set the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> and <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> values together, the animation progresses from the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property, to the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property.  
@@ -128,18 +128,18 @@ This topic describes how to use From/To/By animations to animate dependency prop
 ## Other Animation Types  
  From/To/By animations are not the only type of animations that [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides: it also provides key-frame animations and path animations.  
   
--   A key-frame animation animates along any number of destination values, described using key frames. For more information, see the [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md).  
+-   A key-frame animation animates along any number of destination values, described using key frames. For more information, see the [Key-Frame Animations Overview](key-frame-animations-overview.md).  
   
--   A path animation generates output values from a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/path-animations-overview.md).  
+-   A path animation generates output values from a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Animations Overview](path-animations-overview.md).  
   
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also enables you to create your own custom animation types. For more information, see the [Custom Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also enables you to create your own custom animation types. For more information, see the [Custom Animations Overview](custom-animations-overview.md).  
   
 ## See also
 - <xref:System.Windows.Media.Animation.Timeline>
 - <xref:System.Windows.Media.Animation.Storyboard>
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
-- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
-- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
-- [Path Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/path-animations-overview.md)
-- [Custom Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/custom-animations-overview.md)
+- [Animation Overview](animation-overview.md)
+- [Storyboards Overview](storyboards-overview.md)
+- [Key-Frame Animations Overview](key-frame-animations-overview.md)
+- [Path Animations Overview](path-animations-overview.md)
+- [Custom Animations Overview](custom-animations-overview.md)
 - [From, To, and By Animation Target Values Sample](https://go.microsoft.com/fwlink/?LinkID=159988)

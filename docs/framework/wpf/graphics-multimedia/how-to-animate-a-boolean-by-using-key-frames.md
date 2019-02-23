@@ -26,5 +26,5 @@ This example shows how to animate the Boolean property value of a <xref:System.W
 - <xref:System.Windows.Media.Animation.BooleanAnimationUsingKeyFrames>
 - <xref:System.Windows.UIElement.IsEnabled%2A>
 - <xref:System.Windows.Controls.Button>
-- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
-- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+- [Key-Frame Animations Overview](key-frame-animations-overview.md)
+- [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)

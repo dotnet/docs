@@ -11,7 +11,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
 <a name="prerequisites"></a>   
 ## Prerequisites  
- To understand this topic, you should be familiar with basic animation features. For more information, see the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  
+ To understand this topic, you should be familiar with basic animation features. For more information, see the [Animation Overview](animation-overview.md).  
   
 <a name="timelinetypes"></a>   
 ## Timeline Types  
@@ -70,7 +70,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
  [!code-xaml[animation_ovws_snippet#TBRepeatBehaviorForeverExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbrepeatbehaviorforeverexampleinline)]  
   
- For an additional example, see [Repeat an Animation](../../../../docs/framework/wpf/graphics-multimedia/how-to-repeat-an-animation.md).  
+ For an additional example, see [Repeat an Animation](how-to-repeat-an-animation.md).  
   
 <a name="autoreverseproperty"></a>   
 ### The AutoReverse Property  
@@ -82,11 +82,11 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
  [!code-xaml[animation_ovws_snippet#TBAutoReverseRepeatExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbautoreverserepeatexampleinline)]  
   
- If a container timeline has child <xref:System.Windows.Media.Animation.Timeline> objects, they reverse when the container timeline does. For additional examples, see [Specify Whether a Timeline Automatically Reverses](../../../../docs/framework/wpf/graphics-multimedia/how-to-specify-whether-a-timeline-automatically-reverses.md).  
+ If a container timeline has child <xref:System.Windows.Media.Animation.Timeline> objects, they reverse when the container timeline does. For additional examples, see [Specify Whether a Timeline Automatically Reverses](how-to-specify-whether-a-timeline-automatically-reverses.md).  
   
 <a name="timelinebegin"></a>   
 ## The BeginTime Property  
- The <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> property enables you to specify when a timeline starts.  A timeline's begin time is relative to its parent timeline. A begin time of zero seconds means the timeline starts as soon as it parent starts; any other value creates an offset between when the parent timeline starts playing and when the child timeline plays. For example, a begin time of two seconds means the timeline starts playing when its parent has reached a time of two seconds. By default, all timelines have a begin time of zero seconds. You may also set a timeline's begin time to `null`, which prevents the timeline from starting. In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], you specify null using the [x:Null Markup Extension](../../../../docs/framework/xaml-services/x-null-markup-extension.md).  
+ The <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> property enables you to specify when a timeline starts.  A timeline's begin time is relative to its parent timeline. A begin time of zero seconds means the timeline starts as soon as it parent starts; any other value creates an offset between when the parent timeline starts playing and when the child timeline plays. For example, a begin time of two seconds means the timeline starts playing when its parent has reached a time of two seconds. By default, all timelines have a begin time of zero seconds. You may also set a timeline's begin time to `null`, which prevents the timeline from starting. In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], you specify null using the [x:Null Markup Extension](../../xaml-services/x-null-markup-extension.md).  
   
  Note that the begin time is not applied each time a timeline repeats because of its <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> setting. If you were to create an animation with a <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> of 10 seconds and a <xref:System.Windows.Media.Animation.RepeatBehavior> of <xref:System.Windows.Media.Animation.RepeatBehavior.Forever%2A>, there would be a 10-second delay before the animation played for the first time, but not for each successive repetition. However, if the animation's parent timeline were to restart or repeat, the 10-second delay would occur.  
   
@@ -112,13 +112,13 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
 -   <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> – Specifies that rate, relative to its parent, at which time progresses for a <xref:System.Windows.Media.Animation.Timeline>. Values greater than one increase the speed of the <xref:System.Windows.Media.Animation.Timeline> and its child <xref:System.Windows.Media.Animation.Timeline> objects; values between zero and one slow it down. A value of one indicates that <xref:System.Windows.Media.Animation.Timeline> progresses at the same rate as its parent. The <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> setting  of a container timeline affects all of its child <xref:System.Windows.Media.Animation.Timeline> objects as well.  
   
--   <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> – Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent accelerating. For an example, see [How to: Accelerate or Decelerate an Animation](../../../../docs/framework/wpf/graphics-multimedia/how-to-accelerate-or-decelerate-an-animation.md). 
+-   <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> – Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent accelerating. For an example, see [How to: Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md). 
   
--   <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> - Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent decelerating. For an example, see [How to: Accelerate or Decelerate an Animation](../../../../docs/framework/wpf/graphics-multimedia/how-to-accelerate-or-decelerate-an-animation.md).  
+-   <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> - Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent decelerating. For an example, see [How to: Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md).  
   
 ## See also
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
-- [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)
-- [Timing Events Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-events-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+- [Animation Overview](animation-overview.md)
+- [Animation and Timing System Overview](animation-and-timing-system-overview.md)
+- [Timing Events Overview](timing-events-overview.md)
+- [How-to Topics](animation-and-timing-how-to-topics.md)
 - [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970)

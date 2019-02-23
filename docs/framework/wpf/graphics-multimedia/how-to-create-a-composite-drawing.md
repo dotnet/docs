@@ -13,7 +13,7 @@ This example shows how to use a <xref:System.Windows.Media.DrawingGroup> to crea
 ## Example  
  The following example uses a <xref:System.Windows.Media.DrawingGroup> to create a composite drawing from the <xref:System.Windows.Media.GeometryDrawing> and <xref:System.Windows.Media.ImageDrawing> objects. The following illustration shows the output that this example produces.  
   
- ![A DrawingGroup with multiple drawings](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-simple.jpg "graphicsmm_simple")  
+ ![A DrawingGroup with multiple drawings](media/graphicsmm-simple.jpg "graphicsmm_simple")  
 A composite drawing that is created by using DrawingGroup  
   
  Note the gray border, which shows the bounds of the drawing.  
@@ -25,7 +25,7 @@ A composite drawing that is created by using DrawingGroup
   
  The following example is similar to the preceding example, except that it uses additional <xref:System.Windows.Media.DrawingGroup> objects to apply bitmap effects and an opacity mask to some of its drawings. The following illustration shows the output that this example produces.  
   
- ![A DrawingGroup with multiple drawings](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-multiple.jpg "graphicsmm_multiple")  
+ ![A DrawingGroup with multiple drawings](media/graphicsmm-multiple.jpg "graphicsmm_multiple")  
 Composite drawing that has multiple DrawingGroup objects  
   
  Note the gray border, which shows the bounds of the drawing.  
@@ -33,7 +33,7 @@ Composite drawing that has multiple DrawingGroup objects
  [!code-csharp[DrawingMiscSnippets_snip#GraphicsMMMultipleDrawingGroupsExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/DrawingGroupExample.cs#graphicsmmmultipledrawinggroupsexample)]
  [!code-xaml[DrawingMiscSnippets_snip#GraphicsMMMultipleDrawingGroupsExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/DrawingGroupExample.xaml#graphicsmmmultipledrawinggroupsexample)]  
   
- For more information about <xref:System.Windows.Media.Drawing> objects, see [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md).  
+ For more information about <xref:System.Windows.Media.Drawing> objects, see [Drawing Objects Overview](drawing-objects-overview.md).  
   
 ## See also
 - <xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>
@@ -42,4 +42,4 @@ Composite drawing that has multiple DrawingGroup objects
 - <xref:System.Windows.Media.DrawingGroup.Opacity%2A>
 - <xref:System.Windows.Media.DrawingGroup.ClipGeometry%2A>
 - <xref:System.Windows.Media.DrawingGroup.GuidelineSet%2A>
-- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
+- [Drawing Objects Overview](drawing-objects-overview.md)

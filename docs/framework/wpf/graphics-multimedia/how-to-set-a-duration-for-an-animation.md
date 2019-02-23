@@ -19,4 +19,4 @@ A <xref:System.Windows.Media.Animation.Timeline> represents a segment of time an
   
 ## See also
 - <xref:System.Windows.Duration>
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Animation Overview](animation-overview.md)

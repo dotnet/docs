@@ -12,7 +12,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
 <a name="prerequisites"></a>   
 ## Prerequisites  
- To understand this overview, you should be familiar with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] animations and timelines. For an introduction to animations, see the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md). It also helps to be familiar with From/To/By animations. For more information, see the From/To/By Animations Overview.  
+ To understand this overview, you should be familiar with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] animations and timelines. For an introduction to animations, see the [Animation Overview](animation-overview.md). It also helps to be familiar with From/To/By animations. For more information, see the From/To/By Animations Overview.  
   
 <a name="whatisakeyframeanimation"></a>   
 ## What is a Key-Frame Animation?  
@@ -26,13 +26,13 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
 -   For each target value, create a key frame of the appropriate type, set its value and <xref:System.Windows.Media.Animation.KeyTime>, and add it to the animation's <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.KeyFrames%2A> collection.  
   
--   Associate the animation with a property, just like you would with a From/To/By animation. For more information about applying an animation to a property using a storyboard, see [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+-   Associate the animation with a property, just like you would with a From/To/By animation. For more information about applying an animation to a property using a storyboard, see [Storyboards Overview](storyboards-overview.md).  
   
  The following example uses a <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> to animate a <xref:System.Windows.Shapes.Rectangle> element to four different locations.  
   
  [!code-xaml[keyframes_ovw_snippet#BasicKeyFrameExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/KeyFramesIntroduction.xaml#basickeyframeexamplewholepage)]  
   
- Like a From/To/By animation, a key-frame animation can be applied to a property by using a <xref:System.Windows.Media.Animation.Storyboard> in markup and code or by using the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method in code. You may also use a key-frame animation to create an <xref:System.Windows.Media.Animation.AnimationClock> and apply it to one or more properties. For more information about the different methods for applying animations, see the [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md).  
+ Like a From/To/By animation, a key-frame animation can be applied to a property by using a <xref:System.Windows.Media.Animation.Storyboard> in markup and code or by using the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method in code. You may also use a key-frame animation to create an <xref:System.Windows.Media.Animation.AnimationClock> and apply it to one or more properties. For more information about the different methods for applying animations, see the [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
   
 <a name="animation_types"></a>   
 ## Key-Frame Animation Types  
@@ -93,7 +93,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
 -   Finally, the animation transitions to the value of the key frame with the greatest key time that is equal to or smaller than the animation's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>.  
   
- If the animation's <xref:System.Windows.Media.Animation.Timeline.Duration%2A> is <xref:System.Windows.Duration.Automatic%2A> or its <xref:System.Windows.Media.Animation.Timeline.Duration%2A> is equal to the time of the last key frame, the animation ends. Otherwise, if the animation's <xref:System.Windows.Duration> is greater than the key time of the last key frame, the animation holds the key frame value until it reaches the end of its <xref:System.Windows.Duration>. Like all animations, a key-frame animation uses its <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property to determine whether it holds it final value when it reaches the end of its active period. For more information, see the [Timing Behaviors Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-behaviors-overview.md).  
+ If the animation's <xref:System.Windows.Media.Animation.Timeline.Duration%2A> is <xref:System.Windows.Duration.Automatic%2A> or its <xref:System.Windows.Media.Animation.Timeline.Duration%2A> is equal to the time of the last key frame, the animation ends. Otherwise, if the animation's <xref:System.Windows.Duration> is greater than the key time of the last key frame, the animation holds the key frame value until it reaches the end of its <xref:System.Windows.Duration>. Like all animations, a key-frame animation uses its <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property to determine whether it holds it final value when it reaches the end of its active period. For more information, see the [Timing Behaviors Overview](timing-behaviors-overview.md).  
   
  The following example uses the <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> object defined in the preceding example to demonstrate how the <xref:System.Windows.Media.Animation.IKeyFrame.Value%2A> and <xref:System.Windows.Media.Animation.IKeyFrame.KeyTime%2A> properties work.  
   
@@ -157,7 +157,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
  The following example specifies a <xref:System.Windows.Media.Animation.KeySpline> of 0,1 1,0, which creates the following Bezier curve.  
   
- ![A Bezier curve](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-keyspline-0-1-1-0.png "graphicsmm_keyspline_0_1_1_0")  
+ ![A Bezier curve](media/graphicsmm-keyspline-0-1-1-0.png "graphicsmm_keyspline_0_1_1_0")  
 A key spline with control points (0.0, 1.0) and (1.0, 0.0)  
   
  [!code-xaml[keyframes_ovw_snippet#SingleSplineKeyFrameExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/InterpolationMethodsExample.xaml#singlesplinekeyframeexample)]  
@@ -166,7 +166,7 @@ A key spline with control points (0.0, 1.0) and (1.0, 0.0)
   
  The following example specifies a <xref:System.Windows.Media.Animation.KeySpline> of 0.5,0.25 0.75,1.0, which creates the following Bezier curve.  
   
- ![A Bezier curve](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-keyspline-025-050-075-10.png "graphicsmm_keyspline_025_050_075_10")  
+ ![A Bezier curve](media/graphicsmm-keyspline-025-050-075-10.png "graphicsmm_keyspline_025_050_075_10")  
 A key spline with control points (0.25, 0.5) and (0.75, 1.0)  
   
  [!code-xaml[keyframes_ovw_snippet#SingleSplineKeyFrameExampleInline3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/InterpolationMethodsExample.xaml#singlesplinekeyframeexampleinline3)]  
@@ -283,7 +283,7 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
 - <xref:System.Windows.Media.Animation.Timeline>
 - [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011)
 - [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012)
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
-- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
-- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
-- [Timing Behaviors Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-behaviors-overview.md)
+- [Animation Overview](animation-overview.md)
+- [Storyboards Overview](storyboards-overview.md)
+- [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)
+- [Timing Behaviors Overview](timing-behaviors-overview.md)

@@ -59,7 +59,7 @@ Bitmap effects enable designers and developers to apply visual effects to render
 - <xref:System.Windows.Media.Effects.BitmapEffectInput>
 - <xref:System.Windows.Media.Effects.BitmapEffectCollection>
 - [Unmanaged WPF Bitmap Effect](https://docs.microsoft.com/previous-versions/windows/desktop/wibe/-wibe-lh)
-- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
-- [Security](../../../../docs/framework/wpf/security-wpf.md)
-- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
-- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Imaging Overview](imaging-overview.md)
+- [Security](../security-wpf.md)
+- [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)
+- [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)

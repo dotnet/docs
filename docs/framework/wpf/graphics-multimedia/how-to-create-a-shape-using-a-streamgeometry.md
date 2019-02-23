@@ -17,7 +17,7 @@ ms.assetid: 08f7c8ce-074b-49cd-9aba-cc9592d4ee51
   
  [!code-xaml[GeometriesMiscSnippets_snip#StreamGeometryTriangleExampleWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/StreamGeometryExample.xaml#streamgeometrytriangleexamplewholepage)]  
   
- For more information about <xref:System.Windows.Media.StreamGeometry> attribute syntax, see the [Path Markup Syntax](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) page.  
+ For more information about <xref:System.Windows.Media.StreamGeometry> attribute syntax, see the [Path Markup Syntax](path-markup-syntax.md) page.  
   
 ## Example  
  The next example uses a <xref:System.Windows.Media.StreamGeometry> to define a triangle in code. First, the example creates a <xref:System.Windows.Media.StreamGeometry>, then obtains a <xref:System.Windows.Media.StreamGeometryContext> and uses it to describe the triangle.  
@@ -35,5 +35,5 @@ ms.assetid: 08f7c8ce-074b-49cd-9aba-cc9592d4ee51
 - <xref:System.Windows.Media.PathGeometry>
 - <xref:System.Windows.Media.StreamGeometry>
 - <xref:System.Windows.Media.StreamGeometryContext>
-- [Create a Shape by Using a PathGeometry](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-shape-by-using-a-pathgeometry.md)
-- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [Create a Shape by Using a PathGeometry](how-to-create-a-shape-by-using-a-pathgeometry.md)
+- [Geometry Overview](geometry-overview.md)

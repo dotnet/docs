@@ -21,7 +21,7 @@ This example shows how to draw an elliptical arc. To create an elliptical arc, u
   
  [xaml]  
   
- (Note that this attribute syntax actually creates a <xref:System.Windows.Media.StreamGeometry>, a lighter-weight version of a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Markup Syntax](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) page.)  
+ (Note that this attribute syntax actually creates a <xref:System.Windows.Media.StreamGeometry>, a lighter-weight version of a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Markup Syntax](path-markup-syntax.md) page.)  
   
  In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you can also draw an elliptical arc by explicitly using object tags. The following is equivalent to the preceding [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup.  
   
@@ -30,5 +30,5 @@ This example shows how to draw an elliptical arc. To create an elliptical arc, u
  This example is part of a larger sample. For the complete sample, see the [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).  
   
 ## See also
-- [Create a Quadratic Bezier Curve](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-quadratic-bezier-curve.md)
-- [Create a Cubic Bezier Curve](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-cubic-bezier-curve.md)
+- [Create a Quadratic Bezier Curve](how-to-create-a-quadratic-bezier-curve.md)
+- [Create a Cubic Bezier Curve](how-to-create-a-cubic-bezier-curve.md)

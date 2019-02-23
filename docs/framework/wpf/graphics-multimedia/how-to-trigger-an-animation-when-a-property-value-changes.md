@@ -19,5 +19,5 @@ This example shows how to use a <xref:System.Windows.Trigger> to start a <xref:S
   
 ## See also
 - <xref:System.Windows.Trigger>
-- [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)
-- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
+- [Property Animation Techniques Overview](property-animation-techniques-overview.md)
+- [Storyboards Overview](storyboards-overview.md)

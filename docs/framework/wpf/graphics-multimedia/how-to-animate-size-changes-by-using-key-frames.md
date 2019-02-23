@@ -30,5 +30,5 @@ This example shows how to animate size changes by using key frames.
 - <xref:System.Windows.Media.Animation.LinearSizeKeyFrame>
 - <xref:System.Windows.Media.Animation.DiscreteSizeKeyFrame>
 - <xref:System.Windows.Media.Animation.SplineSizeKeyFrame>
-- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
-- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+- [Key-Frame Animations Overview](key-frame-animations-overview.md)
+- [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)

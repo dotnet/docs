@@ -31,7 +31,7 @@ This example shows how to use a <xref:System.Windows.Media.SkewTransform> to ske
   
  The following illustration shows the different skews that are used in this example.  
   
- ![SkewTransform examples](../../../../docs/framework/wpf/graphics-multimedia/media/img-wcpsdk-graphicsmm-skewtransformexample.gif "img_wcpsdk_graphicsmm_skewtransformexample")  
+ ![SkewTransform examples](media/img-wcpsdk-graphicsmm-skewtransformexample.gif "img_wcpsdk_graphicsmm_skewtransformexample")  
 The three SkewTransform examples illustrated  
   
  For the complete sample, see [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252).  
@@ -39,5 +39,5 @@ The three SkewTransform examples illustrated
 ## See also
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.SkewTransform>
-- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)
+- [Transforms Overview](transforms-overview.md)
+- [How-to Topics](transformations-how-to-topics.md)

@@ -43,7 +43,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
   
 -   It must belong to a class that inherits from <xref:System.Windows.DependencyObject> and implements the <xref:System.Windows.Media.Animation.IAnimatable> interface.  
   
--   There must be a compatible animation type available. (If [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] does not provide one, you can create your own. See the [Custom Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).)  
+-   There must be a compatible animation type available. (If [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] does not provide one, you can create your own. See the [Custom Animations Overview](custom-animations-overview.md).)  
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] contains many objects that have <xref:System.Windows.Media.Animation.IAnimatable> properties. Controls such as <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.TabControl>, and also <xref:System.Windows.Controls.Panel> and <xref:System.Windows.Shapes.Shape> objects inherit from <xref:System.Windows.DependencyObject>. Most of their properties are dependency properties.  
   
@@ -131,7 +131,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_103](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/MainWindow.xaml.cs#rectangleopacityfadeexamplecode_103)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_103](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/MainWindow.xaml.vb#rectangleopacityfadeexamplecode_103)]  
   
- For more information about <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> syntax and for additional examples, see the [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+ For more information about <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> syntax and for additional examples, see the [Storyboards Overview](storyboards-overview.md).  
   
 <a name="opacity_animation_step3"></a>   
 ### Part 3 (XAML): Associate the Storyboard with a Trigger  
@@ -141,7 +141,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
   
      [!code-xaml[animation_ovws_snippet#RectangleOpacityFadeExampleInline_3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/RectangleOpacityFadeExample.xaml#rectangleopacityfadeexampleinline_3)]  
   
-2.  Create an <xref:System.Windows.EventTrigger> and add the <xref:System.Windows.Media.Animation.BeginStoryboard> to its <xref:System.Windows.EventTrigger.Actions%2A> collection. Set the <xref:System.Windows.EventTrigger.RoutedEvent%2A> property of the <xref:System.Windows.EventTrigger> to the routed event that you want to start the <xref:System.Windows.Media.Animation.Storyboard>. (For more information about routed events, see the [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md).)  
+2.  Create an <xref:System.Windows.EventTrigger> and add the <xref:System.Windows.Media.Animation.BeginStoryboard> to its <xref:System.Windows.EventTrigger.Actions%2A> collection. Set the <xref:System.Windows.EventTrigger.RoutedEvent%2A> property of the <xref:System.Windows.EventTrigger> to the routed event that you want to start the <xref:System.Windows.Media.Animation.Storyboard>. (For more information about routed events, see the [Routed Events Overview](../advanced/routed-events-overview.md).)  
   
      [!code-xaml[animation_ovws_snippet#RectangleOpacityFadeExampleInline_2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/RectangleOpacityFadeExample.xaml#rectangleopacityfadeexampleinline_2)]  
   
@@ -191,7 +191,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
   
 -   \<*Type*>AnimationUsingKeyFrames  
   
-     Key frame animations are more powerful than From/To/By animations because you can specify any number of target values and even control their interpolation method. Some types can only be animated with key frame animations. Key frame animations are described in detail in the [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md).  
+     Key frame animations are more powerful than From/To/By animations because you can specify any number of target values and even control their interpolation method. Some types can only be animated with key frame animations. Key frame animations are described in detail in the [Key-Frame Animations Overview](key-frame-animations-overview.md).  
   
 -   \<*Type*>AnimationUsingPath  
   
@@ -247,7 +247,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
 #### RepeatBehavior  
  The <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property specifies how many times a timeline plays. By default, timelines have an iteration count of `1.0`, which means they play one time and do not repeat at all.  
   
- For more information about these properties and others, see the [Timing Behaviors Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-behaviors-overview.md).  
+ For more information about these properties and others, see the [Timing Behaviors Overview](timing-behaviors-overview.md).  
   
 <a name="applyanimationstoproperty"></a>   
 ## Applying an Animation to a Property  
@@ -260,9 +260,9 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
   
 -   To make a <xref:System.Windows.FrameworkElement> an animation target, you give it a name by setting its <xref:System.Windows.FrameworkElement.Name%2A> property. In code, you must also use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the element name with the page to which it belongs.  
   
--   To make a <xref:System.Windows.Freezable> object an animation target in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you use the [x:Name Directive](../../../../docs/framework/xaml-services/x-name-directive.md) to assign it a name. In code, you just use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the object with the page to which it belongs.  
+-   To make a <xref:System.Windows.Freezable> object an animation target in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you use the [x:Name Directive](../../xaml-services/x-name-directive.md) to assign it a name. In code, you just use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the object with the page to which it belongs.  
   
- The sections that follow provide an example of naming an element in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and code. For more detailed information about naming and targeting, see the [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+ The sections that follow provide an example of naming an element in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and code. For more detailed information about naming and targeting, see the [Storyboards Overview](storyboards-overview.md).  
   
 ### Applying and Starting Storyboards  
  To start a storyboard in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you associate it with an <xref:System.Windows.EventTrigger>. An <xref:System.Windows.EventTrigger> is an object that describes what actions to take when a specified event occurs. One of those actions can be a <xref:System.Windows.Media.Animation.BeginStoryboard> action, which you use to start your storyboard. Event triggers are similar in concept to event handlers because they enable you to specify how your application responds to a particular event. Unlike event handlers, event triggers can be fully described in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]; no other code is required.  
@@ -271,7 +271,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
   
 <a name="controllingstoryboards"></a>   
 ## Interactively Control a Storyboard  
- The previous example showed how to start a <xref:System.Windows.Media.Animation.Storyboard> when an event occurs. You can also interactively control a <xref:System.Windows.Media.Animation.Storyboard> after it starts: you can pause, resume, stop, advance it to its fill period, seek, and remove the <xref:System.Windows.Media.Animation.Storyboard>. For more information and an example that shows how to interactively control a <xref:System.Windows.Media.Animation.Storyboard>, see the [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+ The previous example showed how to start a <xref:System.Windows.Media.Animation.Storyboard> when an event occurs. You can also interactively control a <xref:System.Windows.Media.Animation.Storyboard> after it starts: you can pause, resume, stop, advance it to its fill period, seek, and remove the <xref:System.Windows.Media.Animation.Storyboard>. For more information and an example that shows how to interactively control a <xref:System.Windows.Media.Animation.Storyboard>, see the [Storyboards Overview](storyboards-overview.md).  
   
 <a name="fillbehaviorsection"></a>   
 ## What Happens After an Animation Ends?  
@@ -286,9 +286,9 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
   
  Because its <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> was not changed from its default value, which is <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>, the animation holds it final value, 0, when it ends. Therefore, the <xref:System.Windows.UIElement.Opacity%2A> of the rectangle remains at 0 after the animation ends. If you set the <xref:System.Windows.UIElement.Opacity%2A> of the rectangle to another value, your code appears to have no effect, because the animation is still affecting the <xref:System.Windows.UIElement.Opacity%2A> property.  
   
- One way to regain control of an animated property in code is to use the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method and specify null for the <xref:System.Windows.Media.Animation.AnimationTimeline> parameter. For more information and an example, see [Set a Property After Animating It with a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-set-a-property-after-animating-it-with-a-storyboard.md).  
+ One way to regain control of an animated property in code is to use the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method and specify null for the <xref:System.Windows.Media.Animation.AnimationTimeline> parameter. For more information and an example, see [Set a Property After Animating It with a Storyboard](how-to-set-a-property-after-animating-it-with-a-storyboard.md).  
   
- Note that, although setting a property value that has an <xref:System.Windows.Media.Animation.ClockState.Active> or <xref:System.Windows.Media.Animation.ClockState.Filling> animation appears to have no effect, the property value does change. For more information, see the [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
+ Note that, although setting a property value that has an <xref:System.Windows.Media.Animation.ClockState.Active> or <xref:System.Windows.Media.Animation.ClockState.Filling> animation appears to have no effect, the property value does change. For more information, see the [Animation and Timing System Overview](animation-and-timing-system-overview.md).  
   
 <a name="databindingAndAnimatingAnimationsSection"></a>   
 ## Data Binding and Animating Animations  
@@ -302,11 +302,11 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
   
  For an animation to reflect data binding or animation changes, its clock must be regenerated. Clocks are not regenerated for you automatically. To make an animation reflect changes, reapply its storyboard by using a <xref:System.Windows.Media.Animation.BeginStoryboard> or the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method. When you use either of these methods, the animation restarts. In code, you can use the <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> method to shift the storyboard back to its previous position.  
   
- For an example of a data bound animation, see [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011). For more information about how the animation and timing system works, see [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
+ For an example of a data bound animation, see [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011). For more information about how the animation and timing system works, see [Animation and Timing System Overview](animation-and-timing-system-overview.md).  
   
 <a name="otherWaysToAnimateSection"></a>   
 ## Other Ways to Animate  
- The examples in this overview show how to animate by using storyboards. When you use code, you can animate in several other ways. For more information, see the [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md).  
+ The examples in this overview show how to animate by using storyboards. When you use code, you can animate in several other ways. For more information, see the [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
   
 <a name="animation_samples"></a>   
 ## Animation Samples  
@@ -325,21 +325,21 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)|Describes how the timing system uses the <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> classes, which allow you to create animations.|  
-|[Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)|Lists helpful tips for solving issues with animations, such as performance.|  
-|[Custom Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/custom-animations-overview.md)|Describes how to extend the animation system with key frames, animation classes, or per-frame callbacks.|  
+|[Animation and Timing System Overview](animation-and-timing-system-overview.md)|Describes how the timing system uses the <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> classes, which allow you to create animations.|  
+|[Animation Tips and Tricks](animation-tips-and-tricks.md)|Lists helpful tips for solving issues with animations, such as performance.|  
+|[Custom Animations Overview](custom-animations-overview.md)|Describes how to extend the animation system with key frames, animation classes, or per-frame callbacks.|  
 |From/To/By Animations Overview|Describes how to create an animation that transitions between two values.|  
-|[Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)|Describes how to create an animation with multiple target values, including the ability to control the interpolation method.|  
-|[Easing Functions](../../../../docs/framework/wpf/graphics-multimedia/easing-functions.md)|Explains how to apply mathematical formulas to your animations to get realistic behavior, such as bouncing.|  
-|[Path Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/path-animations-overview.md)|Describes how to move or rotate an object along a complex path.|  
-|[Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)|Describes property animations using storyboards, local animations, clocks, and per-frame animations.|  
-|[Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)|Describes how to use storyboards with multiple timelines to create complex animations.|  
-|[Timing Behaviors Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-behaviors-overview.md)|Describes the <xref:System.Windows.Media.Animation.Timeline> types and properties used in animations.|  
-|[Timing Events Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-events-overview.md)|Describes the events available on the <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> objects for executing code at points in the timeline, such as begin, pause, resume, skip, or stop.|  
-|[How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)|Contains code examples for using animations and timelines in your application.|  
-|[Clocks How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/clocks-how-to-topics.md)|Contains code examples for using the <xref:System.Windows.Media.Animation.Clock> object in your application.|  
-|[Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)|Contains code examples for using key-frame animations in your application.|  
-|[Path Animation How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/path-animation-how-to-topics.md)|Contains code examples for using path animations in your application.|  
+|[Key-Frame Animations Overview](key-frame-animations-overview.md)|Describes how to create an animation with multiple target values, including the ability to control the interpolation method.|  
+|[Easing Functions](easing-functions.md)|Explains how to apply mathematical formulas to your animations to get realistic behavior, such as bouncing.|  
+|[Path Animations Overview](path-animations-overview.md)|Describes how to move or rotate an object along a complex path.|  
+|[Property Animation Techniques Overview](property-animation-techniques-overview.md)|Describes property animations using storyboards, local animations, clocks, and per-frame animations.|  
+|[Storyboards Overview](storyboards-overview.md)|Describes how to use storyboards with multiple timelines to create complex animations.|  
+|[Timing Behaviors Overview](timing-behaviors-overview.md)|Describes the <xref:System.Windows.Media.Animation.Timeline> types and properties used in animations.|  
+|[Timing Events Overview](timing-events-overview.md)|Describes the events available on the <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> objects for executing code at points in the timeline, such as begin, pause, resume, skip, or stop.|  
+|[How-to Topics](animation-and-timing-how-to-topics.md)|Contains code examples for using animations and timelines in your application.|  
+|[Clocks How-to Topics](clocks-how-to-topics.md)|Contains code examples for using the <xref:System.Windows.Media.Animation.Clock> object in your application.|  
+|[Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)|Contains code examples for using key-frame animations in your application.|  
+|[Path Animation How-to Topics](path-animation-how-to-topics.md)|Contains code examples for using path animations in your application.|  
   
 <a name="reference"></a>   
 ## Reference  

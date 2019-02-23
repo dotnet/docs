@@ -22,7 +22,7 @@ A clock's <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> ev
   
  The following illustration shows the different states the animations enter as the parent timeline (*Storyboard*) progresses.  
   
- ![Clock states for a Storyboard with two animations](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-3timelines.png "graphicsmm_3timelines")  
+ ![Clock states for a Storyboard with two animations](media/graphicsmm-3timelines.png "graphicsmm_3timelines")  
   
  The following table shows the times at which *Animation1*'s <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> event fires:  
   

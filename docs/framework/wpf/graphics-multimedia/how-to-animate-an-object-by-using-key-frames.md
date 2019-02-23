@@ -35,5 +35,5 @@ This example shows how to animate an object, which in this example is the <xref:
 - <xref:System.Windows.Media.LinearGradientBrush>
 - <xref:System.Windows.Media.RadialGradientBrush>
 - <xref:System.Windows.Media.DrawingBrush>
-- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
-- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+- [Key-Frame Animations Overview](key-frame-animations-overview.md)
+- [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)

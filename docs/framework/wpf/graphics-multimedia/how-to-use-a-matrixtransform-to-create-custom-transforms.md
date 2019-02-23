@@ -17,6 +17,6 @@ This example shows how to use a <xref:System.Windows.Media.MatrixTransform> to t
 ## See also
 - <xref:System.Windows.Media.MatrixTransform>
 - <xref:System.Windows.Media.Transform>
-- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)
-- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [Transforms Overview](transforms-overview.md)
+- [How-to Topics](transformations-how-to-topics.md)
+- [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md)

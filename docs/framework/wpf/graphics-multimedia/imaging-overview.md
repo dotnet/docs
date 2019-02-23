@@ -86,7 +86,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
  There are several ways to display an image in a Windows Presentation Foundation (WPF) application. Images can be displayed using an <xref:System.Windows.Controls.Image> control, painted on a visual using an <xref:System.Windows.Media.ImageBrush>, or drawn using an <xref:System.Windows.Media.ImageDrawing>.  
   
 ### Using the Image Control  
- <xref:System.Windows.Controls.Image> is a framework element and the primary way to display images in applications. In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], <xref:System.Windows.Controls.Image> can be used in two ways; attribute syntax or property syntax. The following example shows how to render an image 200 pixels wide using both attribute syntax and property tag syntax. For more information on attribute syntax and property syntax, see [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md).  
+ <xref:System.Windows.Controls.Image> is a framework element and the primary way to display images in applications. In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], <xref:System.Windows.Controls.Image> can be used in two ways; attribute syntax or property syntax. The following example shows how to render an image 200 pixels wide using both attribute syntax and property tag syntax. For more information on attribute syntax and property syntax, see [Dependency Properties Overview](../advanced/dependency-properties-overview.md).  
   
  [!code-xaml[ImageElementExample_snip#ImageSimpleExampleInlineMarkup](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml#imagesimpleexampleinlinemarkup)]  
   
@@ -139,7 +139,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
  The following image shows the output from the example and demonstrates the affect the different <xref:System.Windows.Controls.Image.Stretch%2A> settings have when applied to an image.  
   
- ![Different TileBrush Stretch settings](../../../../docs/framework/wpf/graphics-multimedia/media/img-mmgraphics-stretchenum.jpg "img_mmgraphics_stretchenum")  
+ ![Different TileBrush Stretch settings](media/img-mmgraphics-stretchenum.jpg "img_mmgraphics_stretchenum")  
 Different stretch settings  
   
  [!code-xaml[ImageElementExample_snip#ImageStretchExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageStretchExample.xaml#imagestretchexamplewholepage)]  
@@ -147,14 +147,14 @@ Different stretch settings
 ### Painting with Images  
  Images can also be displayed in an application by painting with a <xref:System.Windows.Media.Brush>. Brushes enable you to paint [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] objects with anything from simple, solid colors to complex sets of patterns and images. To paint with images, use an <xref:System.Windows.Media.ImageBrush>. An <xref:System.Windows.Media.ImageBrush> is a type of <xref:System.Windows.Media.TileBrush> that defines its content as a bitmap image. An <xref:System.Windows.Media.ImageBrush> displays a single image, which is specified by its <xref:System.Windows.Media.ImageBrush.ImageSource%2A> property. You can control how the image is stretched, aligned, and tiled, enabling you to prevent distortion and produce patterns and other effects. The following illustration shows some effects that can be achieved with an <xref:System.Windows.Media.ImageBrush>.  
   
- ![ImageBrush output examples](../../../../docs/framework/wpf/graphics-multimedia/media/wcpsdk-mmgraphics-imagebrushexamples.gif "wcpsdk_mmgraphics_imagebrushexamples")  
+ ![ImageBrush output examples](media/wcpsdk-mmgraphics-imagebrushexamples.gif "wcpsdk_mmgraphics_imagebrushexamples")  
 Image brushes can fill shapes, controls, text, and more  
   
  The following example demonstrates how to paint the background of a button with an image using an <xref:System.Windows.Media.ImageBrush>.  
   
  [!code-xaml[UsingImageBrush#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush/CS/PaintingWithImages.xaml#4)]  
   
- For additional information about <xref:System.Windows.Media.ImageBrush> and painting images see [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md).  
+ For additional information about <xref:System.Windows.Media.ImageBrush> and painting images see [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md).  
   
 <a name="_metadata"></a>   
 ## Image Metadata  
@@ -188,5 +188,5 @@ Image brushes can fill shapes, controls, text, and more
 - <xref:System.Windows.Media.Imaging.BitmapImage>
 - <xref:System.Windows.Controls.Image>
 - <xref:System.Windows.Media.Imaging.BitmapMetadata>
-- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
 - [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052)

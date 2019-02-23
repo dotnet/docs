@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: 71e4327e-ca57-444c-a3cf-09fb381491a0
 ---
 # How to: Apply a Transform to an Element When an Event Occurs
-This example shows how to apply a <xref:System.Windows.Media.ScaleTransform> when an event occurs. The concept that is shown here is the same that you use for applying other types of transformations. For more information about the available types of transformations, see the <xref:System.Windows.Media.Transform> class or [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md).  
+This example shows how to apply a <xref:System.Windows.Media.ScaleTransform> when an event occurs. The concept that is shown here is the same that you use for applying other types of transformations. For more information about the available types of transformations, see the <xref:System.Windows.Media.Transform> class or [Transforms Overview](transforms-overview.md).  
   
  You can apply a transform to an element in either of these two ways:  
   
@@ -32,6 +32,6 @@ This example shows how to apply a <xref:System.Windows.Media.ScaleTransform> whe
 ## See also
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.ScaleTransform>
-- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)
-- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [Transforms Overview](transforms-overview.md)
+- [How-to Topics](transformations-how-to-topics.md)
+- [Routed Events Overview](../advanced/routed-events-overview.md)

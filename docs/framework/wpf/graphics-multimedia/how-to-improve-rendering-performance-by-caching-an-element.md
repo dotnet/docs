@@ -21,4 +21,4 @@ Use the <xref:System.Windows.Media.BitmapCache> class to improve rendering perfo
 - <xref:System.Windows.Media.BitmapCache>
 - <xref:System.Windows.Media.BitmapCacheBrush>
 - <xref:System.Windows.UIElement.CacheMode%2A>
-- [How to: Use a Cached Element as a Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-a-cached-element-as-a-brush.md)
+- [How to: Use a Cached Element as a Brush](how-to-use-a-cached-element-as-a-brush.md)

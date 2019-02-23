@@ -23,7 +23,7 @@ ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
 ## 3-D Coordinate Space  
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] coordinate system for [!INCLUDE[TLA2#tla_2d](../../../../includes/tla2sharptla-2d-md.md)] graphics locates the origin in the upper left of the rendering area (typically the screen). In the [!INCLUDE[TLA2#tla_2d](../../../../includes/tla2sharptla-2d-md.md)] system, positive x-axis values proceed to the right and positive y-axis values proceed downward.  In the [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] coordinate system, however, the origin is located in the center of the rendering area, with positive x-axis values proceeding to the right but positive y-axis values proceeding upward instead, and positive z-axis values proceeding outward from the origin, toward the viewer.  
   
- ![Coordinate systems](../../../../docs/framework/wpf/graphics-multimedia/media/coordsystem-1.png "CoordSystem-1")  
+ ![Coordinate systems](media/coordsystem-1.png "CoordSystem-1")  
 Conventional 2-D and 3-D coordinate system representations  
   
  The space defined by these axes is the stationary frame of reference for [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] objects in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. As you build models in this space and create lights and cameras to view them, it's helpful to distinguish this stationary frame of reference, or "world space," from the local frame of reference you create for each model when you apply transformations to it. Remember also that objects in world space might look entirely different, or not be visible at all, depending on light and camera settings, but the position of the camera does not change the location of objects in world space.  
@@ -36,12 +36,12 @@ Conventional 2-D and 3-D coordinate system representations
   
  The <xref:System.Windows.Media.Media3D.ProjectionCamera.NearPlaneDistance%2A> and <xref:System.Windows.Media.Media3D.ProjectionCamera.FarPlaneDistance%2A> properties of <xref:System.Windows.Media.Media3D.ProjectionCamera> limit the range of the camera's projection. Because cameras can be located anywhere in the scene, it's possible for the camera to be actually positioned inside a model or very near a model, making it hard to distinguish objects properly.  <xref:System.Windows.Media.Media3D.ProjectionCamera.NearPlaneDistance%2A> allows you to specify a minimum distance from the camera beyond which objects will not be drawn.  Conversely, <xref:System.Windows.Media.Media3D.ProjectionCamera.FarPlaneDistance%2A> lets you specify a distance from the camera beyond which objects will not be drawn, which ensures that objects too far away to be recognizable won't be included in the scene.  
   
- ![Camera setup](../../../../docs/framework/wpf/graphics-multimedia/media/coordsystem-6.png "CoordSystem-6")  
+ ![Camera setup](media/coordsystem-6.png "CoordSystem-6")  
 Camera position  
   
  <xref:System.Windows.Media.Media3D.OrthographicCamera> specifies an orthogonal projection of a [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] model to a [!INCLUDE[TLA2#tla_2d](../../../../includes/tla2sharptla-2d-md.md)] visual surface. Like other cameras, it specifies a position, viewing direction, and "upward" direction. Unlike <xref:System.Windows.Media.Media3D.PerspectiveCamera>, however, <xref:System.Windows.Media.Media3D.OrthographicCamera> describes a projection that does not include perspective foreshortening. In other words, <xref:System.Windows.Media.Media3D.OrthographicCamera> describes a viewing box whose sides are parallel, instead of one whose sides meet in a point at the camera. The following image shows the same model as viewed using <xref:System.Windows.Media.Media3D.PerspectiveCamera> and <xref:System.Windows.Media.Media3D.OrthographicCamera>.  
   
- ![Orthographic and perspective projection](../../../../docs/framework/wpf/graphics-multimedia/media/camera-projections4.png "Camera_projections4")  
+ ![Orthographic and perspective projection](media/camera-projections4.png "Camera_projections4")  
 Perspective and Orthographic Projections  
   
  The following code shows some typical camera settings.  
@@ -133,11 +133,11 @@ Perspective and Orthographic Projections
   
  Each model object has a <xref:System.Windows.Media.Media3D.Model3D.Transform%2A> property with which you can move, re-orient, or resize the model.  When you apply a transform, you effectively offset all the points of the model by whatever vector or value specified by the transform. In other words, you've transformed the coordinate space in which the model is defined ("model space"), but you haven't changed the values that make up the model's geometry in the coordinate system of the entire scene ("world space").  
   
- For more information about transforming models, see [3-D Transformations Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-transformations-overview.md).  
+ For more information about transforming models, see [3-D Transformations Overview](3-d-transformations-overview.md).  
   
 <a name="animations"></a>   
 ## Animating Models  
- The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] implementation participates in the same timing and animation system as [!INCLUDE[TLA2#tla_2d](../../../../includes/tla2sharptla-2d-md.md)] graphics. In other words, to animate a 3-D scene, animate the properties of its models. It's possible to animate properties of primitives directly, but it's typically easier to animate transformations that change the position or appearance of models. Because transformations can be applied to <xref:System.Windows.Media.Media3D.Model3DGroup> objects as well as individual models, it's possible to apply one set of animations to a child of a Model3DGroup and another set of animations to a group of child objects. You can also achieve a variety of visual effects by animating the properties of your scene's lighting. Finally, you might choose to animate the projection itself by animating the camera position or field of view. For background information on the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] timing and animation system, see the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md), [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md), and [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md) topics.  
+ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] implementation participates in the same timing and animation system as [!INCLUDE[TLA2#tla_2d](../../../../includes/tla2sharptla-2d-md.md)] graphics. In other words, to animate a 3-D scene, animate the properties of its models. It's possible to animate properties of primitives directly, but it's typically easier to animate transformations that change the position or appearance of models. Because transformations can be applied to <xref:System.Windows.Media.Media3D.Model3DGroup> objects as well as individual models, it's possible to apply one set of animations to a child of a Model3DGroup and another set of animations to a group of child objects. You can also achieve a variety of visual effects by animating the properties of your scene's lighting. Finally, you might choose to animate the projection itself by animating the camera position or field of view. For background information on the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] timing and animation system, see the [Animation Overview](animation-overview.md), [Storyboards Overview](storyboards-overview.md), and [Freezable Objects Overview](../advanced/freezable-objects-overview.md) topics.  
   
  To animate an object in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], you create a timeline, define an animation (which is really a change in some property value over time), and specify the property to which to apply the animation. Because all the objects in a [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] scene are children of <xref:System.Windows.Controls.Viewport3D>, the properties targeted by any animation you want to apply to the scene are properties of properties of Viewport3D.  
   
@@ -168,8 +168,8 @@ Perspective and Orthographic Projections
 - <xref:System.Windows.Media.Media3D.PerspectiveCamera>
 - <xref:System.Windows.Media.Media3D.DirectionalLight>
 - <xref:System.Windows.Media.Media3D.Material>
-- [3-D Transformations Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-transformations-overview.md)
-- [Maximize WPF 3D Performance](../../../../docs/framework/wpf/graphics-multimedia/maximize-wpf-3d-performance.md)
-- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-how-to-topics.md)
-- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
-- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+- [3-D Transformations Overview](3-d-transformations-overview.md)
+- [Maximize WPF 3D Performance](maximize-wpf-3d-performance.md)
+- [How-to Topics](3-d-graphics-how-to-topics.md)
+- [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md)
+- [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md)

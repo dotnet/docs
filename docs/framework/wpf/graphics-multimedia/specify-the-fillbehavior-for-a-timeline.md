@@ -27,5 +27,5 @@ This example shows how to specify the <xref:System.Windows.Media.Animation.Timel
 - <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A>
 - <xref:System.Windows.Media.Animation.FillBehavior.Stop>
 - <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Animation Overview](animation-overview.md)
 - [Animation and Timing How-to Topics](animation-and-timing-how-to-topics.md)

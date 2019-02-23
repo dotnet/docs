@@ -24,7 +24,7 @@ This example shows how to animate the <xref:System.Windows.Media.ArcSegment.Size
 ## See also
 - <xref:System.Windows.Media.ArcSegment.Size%2A>
 - <xref:System.Windows.Media.ArcSegment>
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
-- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [Animation Overview](animation-overview.md)
+- [Geometry Overview](geometry-overview.md)
 - [Geometries How-to Topics](geometries-how-to-topics.md)
 - [Animation and Timing How-to Topics](animation-and-timing-how-to-topics.md)

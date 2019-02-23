@@ -28,4 +28,4 @@ To play an audio or video file, you use a <xref:System.Windows.Media.VideoDrawin
   
 ## See also
 - <xref:System.Windows.Media.VideoDrawing>
-- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
+- [Drawing Objects Overview](drawing-objects-overview.md)

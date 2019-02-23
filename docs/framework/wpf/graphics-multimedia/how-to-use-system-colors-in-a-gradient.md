@@ -20,5 +20,5 @@ To use a system color in a gradient, you use the *\<SystemColor>*Color and *\<Sy
   
 ## See also
 - <xref:System.Windows.SystemColors>
-- [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
-- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
+- [Paint an Area with a System Brush](how-to-paint-an-area-with-a-system-brush.md)
+- [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md)

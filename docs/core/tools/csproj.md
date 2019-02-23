@@ -242,17 +242,29 @@ Path to a license file within the package if you are using a license that hasnâ€
 
 ### PackageLicenseUrl
 
-> [!Important]
-> PackageLicenseUrl is being deprecated. Use `PackageLicenseFile` or `PackageLicenseExpression` instead.
+An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
 
-An URL to the license that is applicable to the package.
+### PackageLicenseExpression
 
-> [!NOTE]
-> Only one of `PackageLicenseExpression`, `PackageLicenseFile` and `PackageLicenseUrl` can be specified at a time.
+An [SPDX license identifier](https://spdx.org/licenses/) or expression, i.e. `Apache-2.0`.
 
-### PackageProjectUrl
-A URL for the package's home page, often shown in UI displays as well as nuget.org.
+Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseFile` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
 
+### PackageLicenseFile
+
+A path to the license file on disk, relative to the project file, i.e. `LICENSE.txt`.
+
+Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
+
+You will need to ensure the license file is packed by adding it explicitly to the project, example usage:
+```xml
+<PropertyGroup>
+  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+</PropertyGroup>
+<ItemGroup>
+  <None Include="licenses\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+</ItemGroup>
+```
 ### PackageIconUrl
 A URL for a 64x64 image with transparent background to use as the icon for the package in UI display.
 

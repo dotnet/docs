@@ -54,4 +54,3 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
 - [How to: Determine If a File Is an Assembly (C#)](how-to-determine-if-a-file-is-an-assembly.md)
 - [How to: Create and Use Assemblies Using the Command Line (C#)](how-to-create-and-use-assemblies-using-the-command-line.md)
 - [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)
-- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (C#)](walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)

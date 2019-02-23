@@ -18,26 +18,26 @@ The <xref:System.Windows.Controls.TextBox> class enables you to display or edit 
 |Control|Real-time Spellchecking|Context Menu|Formatting commands like <xref:System.Windows.Documents.EditingCommands.ToggleBold%2A> (Ctr+B)|<xref:System.Windows.Documents.FlowDocument> content like images, paragraphs, tables, etc.|  
 |-------------|------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
 |<xref:System.Windows.Controls.TextBox>|Yes|Yes|No|No.|  
-|<xref:System.Windows.Controls.RichTextBox>|Yes|Yes|Yes (see [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md))|Yes (see [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md))|  
+|<xref:System.Windows.Controls.RichTextBox>|Yes|Yes|Yes (see [RichTextBox Overview](richtextbox-overview.md))|Yes (see [RichTextBox Overview](richtextbox-overview.md))|  
   
 > [!NOTE]
 >  Although <xref:System.Windows.Controls.TextBox> does not support formatting related editing commands like <xref:System.Windows.Documents.EditingCommands.ToggleBold%2A> (Ctr+B), many basic commands are supported by both controls such as <xref:System.Windows.Documents.EditingCommands.MoveToLineEnd%2A>. See <xref:System.Windows.Documents.EditingCommands> for more information.  
   
- Features supported by <xref:System.Windows.Controls.TextBox> are covered in the sections below. For more information about <xref:System.Windows.Controls.RichTextBox>, see [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md).  
+ Features supported by <xref:System.Windows.Controls.TextBox> are covered in the sections below. For more information about <xref:System.Windows.Controls.RichTextBox>, see [RichTextBox Overview](richtextbox-overview.md).  
   
 ### Real-time Spellchecking  
  You can enable real-time spellchecking in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox>. When spellchecking is turned on, a red line appears underneath any misspelled words (see picture below).  
   
- ![Textbox with spell&#45;checking](../../../../docs/framework/wpf/controls/media/editing-textbox-with-spellchecking.png "Editing_TextBox_with_Spellchecking")  
+ ![Textbox with spell&#45;checking](media/editing-textbox-with-spellchecking.png "Editing_TextBox_with_Spellchecking")  
   
- See [Enable Spell Checking in a Text Editing Control](../../../../docs/framework/wpf/controls/how-to-enable-spell-checking-in-a-text-editing-control.md) to learn how to enable spellchecking.  
+ See [Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md) to learn how to enable spellchecking.  
   
 ### Context Menu  
  By default, both <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox> have a context menu that appears when a user right-clicks inside the control. The context menu allows the user to cut, copy, or paste (see picture below).  
   
- ![TextBox with context menu](../../../../docs/framework/wpf/controls/media/editing-textbox-with-context-menu.png "Editing_TextBox_with_Context_Menu")  
+ ![TextBox with context menu](media/editing-textbox-with-context-menu.png "Editing_TextBox_with_Context_Menu")  
   
- You can create your own custom context menu to override the default behavior. See [Use a Custom Context Menu with a TextBox](../../../../docs/framework/wpf/controls/how-to-use-a-custom-context-menu-with-a-textbox.md) for more information.  
+ You can create your own custom context menu to override the default behavior. See [Use a Custom Context Menu with a TextBox](how-to-use-a-custom-context-menu-with-a-textbox.md) for more information.  
   
 <a name="creating_textboxes"></a>   
 ## Creating TextBoxes  
@@ -55,12 +55,12 @@ The <xref:System.Windows.Controls.TextBox> class enables you to display or edit 
   
  The <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> attribute adds a scroll bar to the <xref:System.Windows.Controls.TextBox>, so that the contents of the <xref:System.Windows.Controls.TextBox> can be scrolled through if the <xref:System.Windows.Controls.TextBox> expands beyond the size of the frame or window that encloses it.  
   
- For more information on different tasks associated with using a <xref:System.Windows.Controls.TextBox>, see [How-to Topics](../../../../docs/framework/wpf/controls/textbox-how-to-topics.md).  
+ For more information on different tasks associated with using a <xref:System.Windows.Controls.TextBox>, see [How-to Topics](textbox-how-to-topics.md).  
   
 <a name="editing_commands"></a>   
 ## Detect When Content Changes  
- Usually the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect whenever the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. See [Detect When Text in a TextBox Has Changed](../../../../docs/framework/wpf/controls/how-to-detect-when-text-in-a-textbox-has-changed.md) for an example.  
+ Usually the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect whenever the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. See [Detect When Text in a TextBox Has Changed](how-to-detect-when-text-in-a-textbox-has-changed.md) for an example.  
   
 ## See also
-- [How-to Topics](../../../../docs/framework/wpf/controls/textbox-how-to-topics.md)
-- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
+- [How-to Topics](textbox-how-to-topics.md)
+- [RichTextBox Overview](richtextbox-overview.md)

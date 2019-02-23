@@ -24,6 +24,6 @@ This example shows how to animate changes to the thickness of a border by using 
 - <xref:System.Windows.Media.Animation.ThicknessAnimation>
 - <xref:System.Windows.Controls.Border.BorderThickness%2A>
 - <xref:System.Windows.Controls.Border>
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Animation Overview](../graphics-multimedia/animation-overview.md)
 - [Animation and Timing How-to Topics](../graphics-multimedia/animation-and-timing-how-to-topics.md)
-- [Animate the Thickness of a Border by Using Key Frames](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-the-thickness-of-a-border-by-using-key-frames.md)
+- [Animate the Thickness of a Border by Using Key Frames](../graphics-multimedia/how-to-animate-the-thickness-of-a-border-by-using-key-frames.md)

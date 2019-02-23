@@ -24,5 +24,5 @@ This example shows how to use the <xref:System.Windows.Controls.ToolTipService.B
 ## See also
 - <xref:System.Windows.Controls.ToolTip>
 - <xref:System.Windows.Controls.ToolTipService>
-- [How-to Topics](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)
-- [ToolTip Overview](../../../../docs/framework/wpf/controls/tooltip-overview.md)
+- [How-to Topics](tooltip-how-to-topics.md)
+- [ToolTip Overview](tooltip-overview.md)

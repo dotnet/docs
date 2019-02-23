@@ -39,7 +39,7 @@ An <xref:System.Windows.Controls.Expander> control provides a way to provide con
   
  **Expander in a ScrollViewer**  
   
- ![Expander with ScrollBar](../../../../docs/framework/wpf/controls/media/expanderwithscrollbar.JPG "ExpanderWithScrollBar")  
+ ![Expander with ScrollBar](media/expanderwithscrollbar.JPG "ExpanderWithScrollBar")  
   
  When you place an <xref:System.Windows.Controls.Expander> control in a <xref:System.Windows.Controls.ScrollViewer>, set the <xref:System.Windows.Controls.ScrollViewer> dimension property that corresponds to the direction in which the <xref:System.Windows.Controls.Expander> content opens to the size of the <xref:System.Windows.Controls.Expander> content area. For example, if you set the <xref:System.Windows.Controls.Expander.ExpandDirection%2A> property on the <xref:System.Windows.Controls.Expander> to <xref:System.Windows.Controls.ExpandDirection.Down> (the content area opens down), set the <xref:System.Windows.FrameworkElement.Height%2A> property on the <xref:System.Windows.Controls.ScrollViewer> control to the required height for the content area. If you instead set the height dimension on the content itself, <xref:System.Windows.Controls.ScrollViewer> does not recognize this setting and therefore, does not provide scrollable content.  
   
@@ -56,4 +56,4 @@ An <xref:System.Windows.Controls.Expander> control provides a way to provide con
 ## See also
 - <xref:System.Windows.Controls.Expander>
 - <xref:System.Windows.Controls.ExpandDirection>
-- [How-to Topics](../../../../docs/framework/wpf/controls/expander-how-to-topics.md)
+- [How-to Topics](expander-how-to-topics.md)

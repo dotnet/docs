@@ -49,7 +49,7 @@ Adorners are a special type of <xref:System.Windows.FrameworkElement>, used to p
   
  The following image shows the SimpleCircleAdorner applied to a <xref:System.Windows.Controls.TextBox>.  
   
- ![Adorners Example: An adorned TextBox](../../../../docs/framework/wpf/controls/media/adornedtextbox.png "AdornedTextBox")  
+ ![Adorners Example: An adorned TextBox](media/adornedtextbox.png "AdornedTextBox")  
   
 <a name="rendering_behavior_for_Adorners"></a>   
 ## Rendering Behavior for Adorners  
@@ -64,7 +64,7 @@ Adorners are a special type of <xref:System.Windows.FrameworkElement>, used to p
   
  To enable pass-through hit testing of elements under an adorner, set the hit test <xref:System.Windows.UIElement.IsHitTestVisible%2A> property to **false** on the adorner.  For more information about hit testing, see  
   
- [Hit Testing in the Visual Layer](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md).  
+ [Hit Testing in the Visual Layer](../graphics-multimedia/hit-testing-in-the-visual-layer.md).  
   
 <a name="adorn_single_element"></a>   
 ## Adorning a Single UIElement  
@@ -97,7 +97,7 @@ Adorners are a special type of <xref:System.Windows.FrameworkElement>, used to p
   
 ## See also
 - <xref:System.Windows.Media.AdornerHitTestResult>
-- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
-- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
-- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/controls/adorners-how-to-topics.md)
+- [Shapes and Basic Drawing in WPF Overview](../graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [Painting with Images, Drawings, and Visuals](../graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+- [Drawing Objects Overview](../graphics-multimedia/drawing-objects-overview.md)
+- [How-to Topics](adorners-how-to-topics.md)

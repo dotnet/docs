@@ -34,6 +34,6 @@ ms.assetid: 6ee04a9d-63f0-4f5b-a406-0a8cd4c35729
 - <xref:System.Windows.FrameworkElement.MaxWidth%2A>
 - <xref:System.Windows.FrameworkElement.MinWidth%2A>
 - <xref:System.Windows.FrameworkElement.Width%2A>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
-- [Set the Height Properties of an Element](../../../../docs/framework/wpf/controls/how-to-set-the-height-properties-of-an-element.md)
+- [Panels Overview](panels-overview.md)
+- [Set the Height Properties of an Element](how-to-set-the-height-properties-of-an-element.md)
 - [Width Properties Comparison Sample](https://go.microsoft.com/fwlink/?LinkID=160050)

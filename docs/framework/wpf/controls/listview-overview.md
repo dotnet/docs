@@ -27,9 +27,9 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
   
  The following illustration shows how the data appears for the previous example.  
   
- ![ListView with GridView output](../../../../docs/framework/wpf/controls/media/listviewgridview.JPG "ListViewGridView")  
+ ![ListView with GridView output](media/listviewgridview.JPG "ListViewGridView")  
   
- You can create a custom view mode by defining a class that inherits from the <xref:System.Windows.Controls.ViewBase> class. The <xref:System.Windows.Controls.ViewBase> class provides the infrastructure that you need to create a custom view. For more information about how to create a custom view, see [Create a Custom View Mode for a ListView](../../../../docs/framework/wpf/controls/how-to-create-a-custom-view-mode-for-a-listview.md).  
+ You can create a custom view mode by defining a class that inherits from the <xref:System.Windows.Controls.ViewBase> class. The <xref:System.Windows.Controls.ViewBase> class provides the infrastructure that you need to create a custom view. For more information about how to create a custom view, see [Create a Custom View Mode for a ListView](how-to-create-a-custom-view-mode-for-a-listview.md).  
   
 <a name="BindingDatatoaListView"></a>   
 ## Binding Data to a ListView  
@@ -59,7 +59,7 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
   
  To avoid alignment issues between cells in a <xref:System.Windows.Controls.GridView>, do not use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> to set properties or add content that affects the width of an item in a <xref:System.Windows.Controls.ListView>. For example, an alignment issue can occur when you set the <xref:System.Windows.FrameworkElement.Margin%2A> property in the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A>. To specify properties or define content that affects the width of items in a <xref:System.Windows.Controls.GridView>, use the properties of the <xref:System.Windows.Controls.GridView> class and its related classes, such as <xref:System.Windows.Controls.GridViewColumn>.  
   
- For more information about how to use <xref:System.Windows.Controls.GridView> and its supporting classes, see [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md).  
+ For more information about how to use <xref:System.Windows.Controls.GridView> and its supporting classes, see [GridView Overview](gridview-overview.md).  
   
  If you define an <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> for a <xref:System.Windows.Controls.ListView> control and also define an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, you must include a <xref:System.Windows.Controls.ContentPresenter> in the style in order for the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> to work correctly.  
   
@@ -80,6 +80,6 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.ListViewItem>
 - <xref:System.Windows.Data.Binding>
-- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
-- [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)
+- [GridView Overview](gridview-overview.md)
+- [How-to Topics](listview-how-to-topics.md)
+- [Controls](../advanced/optimizing-performance-controls.md)

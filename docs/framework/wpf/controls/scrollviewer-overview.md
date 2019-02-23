@@ -46,19 +46,19 @@ Content within a user interface is often larger than a computer screen's display
   
 <a name="scrollviewer_styling_scrollviewer"></a>   
 ## Styling a ScrollViewer  
- Like all controls in Windows Presentation Foundation, the <xref:System.Windows.Controls.ScrollViewer> can be styled in order to change the default rendering behavior of the control. For additional information on control styling, see [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md).  
+ Like all controls in Windows Presentation Foundation, the <xref:System.Windows.Controls.ScrollViewer> can be styled in order to change the default rendering behavior of the control. For additional information on control styling, see [Styling and Templating](styling-and-templating.md).  
   
 <a name="scrollviewer_scroll_vs_paginate"></a>   
 ## Paginating Documents  
  For document content, an alternative to scrolling is to choose a document container that supports pagination. <xref:System.Windows.Documents.FlowDocument> is for documents that are designed to be hosted within a viewing control, such as <xref:System.Windows.Controls.FlowDocumentPageViewer>, that supports paginating content across multiple pages, preventing the need for scrolling. <xref:System.Windows.Controls.DocumentViewer> provides a solution for viewing <xref:System.Windows.Documents.FixedDocument> content, which uses traditional scrolling to display content outside the realm of the display area.  
   
- For additional information about document formats and presentation options, see [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md).  
+ For additional information about document formats and presentation options, see [Documents in WPF](../advanced/documents-in-wpf.md).  
   
 ## See also
 - <xref:System.Windows.Controls.ScrollViewer>
 - <xref:System.Windows.Controls.Primitives.ScrollBar>
 - <xref:System.Windows.Controls.Primitives.IScrollInfo>
 - [How to: Create a Scroll Viewer](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752352(v=vs.90))
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [ScrollBar Styles and Templates](../../../../docs/framework/wpf/controls/scrollbar-styles-and-templates.md)
-- [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)
+- [Documents in WPF](../advanced/documents-in-wpf.md)
+- [ScrollBar Styles and Templates](scrollbar-styles-and-templates.md)
+- [Controls](../advanced/optimizing-performance-controls.md)

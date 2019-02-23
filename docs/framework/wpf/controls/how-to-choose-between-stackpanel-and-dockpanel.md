@@ -28,4 +28,4 @@ This example shows how to choose between using a <xref:System.Windows.Controls.S
 ## See also
 - <xref:System.Windows.Controls.StackPanel>
 - <xref:System.Windows.Controls.DockPanel>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Panels Overview](panels-overview.md)

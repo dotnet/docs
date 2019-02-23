@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
 ---
 # GroupBox Styles and Templates
-<a name="introduction"></a> This topic describes the styles and templates for the <xref:System.Windows.Controls.GroupBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+<a name="introduction"></a> This topic describes the styles and templates for the <xref:System.Windows.Controls.GroupBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
   
 <a name="groupbox_parts"></a>   
 ## GroupBox Parts  
@@ -42,7 +42,7 @@ ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
 ## See also
 - <xref:System.Windows.FrameworkElement.Style%2A>
 - <xref:System.Windows.Controls.ControlTemplate>
-- [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)
-- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)
-- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
-- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)
+- [Control Styles and Templates](control-styles-and-templates.md)
+- [Control Customization](control-customization.md)
+- [Styling and Templating](styling-and-templating.md)
+- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)

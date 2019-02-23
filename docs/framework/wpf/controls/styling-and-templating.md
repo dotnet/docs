@@ -21,15 +21,15 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  Another feature of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] styling model is the separation of presentation and logic. This means that designers can work on the appearance of an application by using only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] at the same time that developers work on the programming logic by using C# or Visual Basic.  
   
- This overview focuses on the styling and templating aspects of the application and does not discuss any data binding concepts. For information about data binding, see [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
+ This overview focuses on the styling and templating aspects of the application and does not discuss any data binding concepts. For information about data binding, see [Data Binding Overview](../data/data-binding-overview.md).  
   
- In addition, it is important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).
+ In addition, it is important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](../advanced/xaml-resources.md).
 
 <a name="styling_and_templating_sample"></a>   
 ## Styling and Templating Sample  
  The code examples used in this overview are based on a simple photo sample shown in the following illustration:  
   
- ![Styled ListView](../../../../docs/framework/wpf/controls/media/stylingintro-triggers.png "StylingIntro_triggers")  
+ ![Styled ListView](media/stylingintro-triggers.png "StylingIntro_triggers")  
   
  This simple photo sample uses styling and templating to create a visually compelling user experience. The sample has two <xref:System.Windows.Controls.TextBlock> elements and a <xref:System.Windows.Controls.ListBox> control that is bound to a list of images. For the complete sample, see [Introduction to Styling and Templating Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
@@ -39,7 +39,7 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  [!code-xaml[StylingIntroSample_snippet#TextBlocks](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#textblocks)]  
   
- ![Styling sample screen shot](../../../../docs/framework/wpf/controls/media/stylingintro-textblocksbefore.PNG "StylingIntro_TextBlocksBefore")  
+ ![Styling sample screen shot](media/stylingintro-textblocksbefore.PNG "StylingIntro_TextBlocksBefore")  
   
  You can change the default appearance by setting properties, such as <xref:System.Windows.Controls.Control.FontSize%2A> and <xref:System.Windows.Controls.Control.FontFamily%2A>, on each <xref:System.Windows.Controls.TextBlock> element directly. However, if you want your <xref:System.Windows.Controls.TextBlock> elements to share some properties, you can create a <xref:System.Windows.Style> in the `Resources` section of your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, as shown here:  
   
@@ -51,7 +51,7 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  Now the <xref:System.Windows.Controls.TextBlock> elements appear as follows:  
   
- ![Styling sample screen shot](../../../../docs/framework/wpf/controls/media/stylingintro-textblocksbasestyle.PNG "StylingIntro_TextBlocksBaseStyle")  
+ ![Styling sample screen shot](media/stylingintro-textblocksbasestyle.PNG "StylingIntro_TextBlocksBaseStyle")  
   
 ### Extending Styles  
  Perhaps you want your two <xref:System.Windows.Controls.TextBlock> elements to share some property values, such as the <xref:System.Windows.Controls.Control.FontFamily%2A> and the centered <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, but you also want the text "My Pictures" to have some additional properties. You can do that by creating a new style that is based on the first style, as shown here:  
@@ -68,7 +68,7 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  The following shows what the <xref:System.Windows.Controls.TextBlock> elements now look like:  
   
- ![Styled TextBlocks](../../../../docs/framework/wpf/controls/media/stylingintro-textblocks.png "StylingIntro_TextBlocks")  
+ ![Styled TextBlocks](media/stylingintro-textblocks.png "StylingIntro_TextBlocks")  
   
  This `TitleText` style extends the style that has been created for the <xref:System.Windows.Controls.TextBlock> type. You can also extend a style that has an `x:Key` by using the `x:Key` value. For an example, see the example provided for the <xref:System.Windows.Style.BasedOn%2A> property.  
   
@@ -80,7 +80,7 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
  Also note that many [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls consist of a combination of other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls. If you create a style that applies to all controls of a type, you might get unexpected results. For example, if you create a style that targets the <xref:System.Windows.Controls.TextBlock> type in a <xref:System.Windows.Window>, the style is applied to all <xref:System.Windows.Controls.TextBlock> controls in the window, even if the <xref:System.Windows.Controls.TextBlock> is part of another control, such as a <xref:System.Windows.Controls.ListBox>.  
   
 ### Styles and Resources  
- You can use a style on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. The most common way to declare a style is as a resource in the `Resources` section in a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, as shown in the previous examples. Because styles are resources, they obey the same scoping rules that apply to all resources; where you declare a style affects where the style can be applied. For example, if you declare the style in the root element of your application definition [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, the style can be used anywhere in your application. If you create a navigation application and declare the style in one of the application's [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files, the style can be used only in that [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file. For more information about scoping rules for resources, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
+ You can use a style on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. The most common way to declare a style is as a resource in the `Resources` section in a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, as shown in the previous examples. Because styles are resources, they obey the same scoping rules that apply to all resources; where you declare a style affects where the style can be applied. For example, if you declare the style in the root element of your application definition [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, the style can be used anywhere in your application. If you create a navigation application and declare the style in one of the application's [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files, the style can be used only in that [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file. For more information about scoping rules for resources, see [XAML Resources](../advanced/xaml-resources.md).  
   
  In addition, you can find more information about styles and resources in [Shared Resources and Themes](#styling_themes) later in this overview.  
   
@@ -96,7 +96,7 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
 <a name="styling_binding_dynamicresource"></a>   
 ### Bindings, Dynamic Resources, and Event Handlers  
- Note that you can use the `Setter.Value` property to specify a [Binding Markup Extension](../../../../docs/framework/wpf/advanced/binding-markup-extension.md) or a [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md). For more information, see the examples provided for the <xref:System.Windows.Setter.Value%2A?displayProperty=nameWithType> property.  
+ Note that you can use the `Setter.Value` property to specify a [Binding Markup Extension](../advanced/binding-markup-extension.md) or a [DynamicResource Markup Extension](../advanced/dynamicresource-markup-extension.md). For more information, see the examples provided for the <xref:System.Windows.Setter.Value%2A?displayProperty=nameWithType> property.  
   
  So far, this overview only discusses the use of setters to set property value. You can also specify event handlers in a style. For more information, see <xref:System.Windows.EventSetter>.  
   
@@ -108,7 +108,7 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  This <xref:System.Windows.Controls.ListBox> currently looks like the following:  
   
- ![ListBox before applying template](../../../../docs/framework/wpf/controls/media/stylingintro-listboxbefore.png "StylingIntro_ListBoxBefore")  
+ ![ListBox before applying template](media/stylingintro-listboxbefore.png "StylingIntro_ListBoxBefore")  
   
  Most controls have some type of content, and that content often comes from data that you are binding to. In this sample, the data is the list of photos. In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], you use a <xref:System.Windows.DataTemplate> to define the visual representation of data. Basically, what you put into a <xref:System.Windows.DataTemplate> determines what the data looks like in the rendered application.  
   
@@ -124,13 +124,13 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  Essentially, the <xref:System.Windows.DataTemplate> in the above example defines that whenever there is a `Photo` object, it should appear as an <xref:System.Windows.Controls.Image> within a <xref:System.Windows.Controls.Border>. With this <xref:System.Windows.DataTemplate>, our application now looks like this:  
   
- ![Photo image](../../../../docs/framework/wpf/controls/media/stylingintro-photosasimages.png "StylingIntro_PhotosAsImages")  
+ ![Photo image](media/stylingintro-photosasimages.png "StylingIntro_PhotosAsImages")  
   
- The data templating model provides other features. For example, if you are displaying collection data that contains other collections using a <xref:System.Windows.Controls.HeaderedItemsControl> type such as a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.TreeView>, there is the <xref:System.Windows.HierarchicalDataTemplate>. Another data templating feature is the <xref:System.Windows.Controls.DataTemplateSelector>, which allows you to choose a <xref:System.Windows.DataTemplate> to use based on custom logic. For more information, see [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md), which provides a more in-depth discussion of the different data templating features.  
+ The data templating model provides other features. For example, if you are displaying collection data that contains other collections using a <xref:System.Windows.Controls.HeaderedItemsControl> type such as a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.TreeView>, there is the <xref:System.Windows.HierarchicalDataTemplate>. Another data templating feature is the <xref:System.Windows.Controls.DataTemplateSelector>, which allows you to choose a <xref:System.Windows.DataTemplate> to use based on custom logic. For more information, see [Data Templating Overview](../data/data-templating-overview.md), which provides a more in-depth discussion of the different data templating features.  
   
 <a name="styling_controltemplates"></a>   
 ## Control Templates  
- In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> for the control. In many cases, this gives you enough flexibility so that you do not have to write your own custom controls. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> for the control. In many cases, this gives you enough flexibility so that you do not have to write your own custom controls. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
   
 <a name="styling_triggers"></a>   
 ## Triggers  
@@ -148,18 +148,18 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  Notice that the <xref:System.Windows.FrameworkElement.MaxHeight%2A> property of the <xref:System.Windows.Controls.ListBoxItem> is set to `75`. In the following illustration, the third item is the selected item:  
   
- ![Styled ListView](../../../../docs/framework/wpf/controls/media/stylingintro-triggers.png "StylingIntro_triggers")  
+ ![Styled ListView](media/stylingintro-triggers.png "StylingIntro_triggers")  
   
 ### EventTriggers and Storyboards  
  Another type of trigger is the <xref:System.Windows.EventTrigger>, which starts a set of actions based on the occurrence of an event. For example, the following <xref:System.Windows.EventTrigger> objects specify that when the mouse pointer enters the <xref:System.Windows.Controls.ListBoxItem>, the <xref:System.Windows.FrameworkElement.MaxHeight%2A> property animates to a value of `90` over a `0.2` second period. When the mouse moves away from the item, the property returns to the original value over a period of `1` second. Note how it is not necessary to specify a <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> value for the <xref:System.Windows.ContentElement.MouseLeave> animation. This is because the animation is able to keep track of the original value.  
   
  [!code-xaml[StylingIntroSample_snippet#EventTriggers](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#eventtriggers)]  
   
- For more information, see the [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+ For more information, see the [Storyboards Overview](../graphics-multimedia/storyboards-overview.md).  
   
  In the following illustration, the mouse is pointing to the third item:  
   
- ![Styling sample screen shot](../../../../docs/framework/wpf/controls/media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")  
+ ![Styling sample screen shot](media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")  
   
 ### MultiTriggers, DataTriggers, and MultiDataTriggers  
  In addition to <xref:System.Windows.Trigger> and <xref:System.Windows.EventTrigger>, there are other types of triggers. <xref:System.Windows.MultiTrigger> allows you to set property values based on multiple conditions. You use <xref:System.Windows.DataTrigger> and <xref:System.Windows.MultiDataTrigger> when the property of your condition is data-bound.  
@@ -178,7 +178,7 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  To share a set of resources, including styles and templates, across applications, you can create a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file and define a <xref:System.Windows.ResourceDictionary>. For example, take a look at the following illustration that shows part of the [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating):
 
-![Control Template Examples](../../../../docs/framework/wpf/controls/media/stylingintro-controltemplateexamples.png "StylingIntro_ControlTemplateExamples")  
+![Control Template Examples](media/stylingintro-controltemplateexamples.png "StylingIntro_ControlTemplateExamples")  
   
  If you look at the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files in the sample, you will notice that the files all have the following:  
   
@@ -186,11 +186,11 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  It is the sharing of `shared.xaml`, which defines a <xref:System.Windows.ResourceDictionary> that contains a set of style and brush resources that enables the controls in the sample to have a consistent look.  
   
- For more information, see [Merged Resource Dictionaries](../../../../docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
+ For more information, see [Merged Resource Dictionaries](../advanced/merged-resource-dictionaries.md).  
   
- If you are creating a theme for you custom control, see the External Control Library section of the [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md).  
+ If you are creating a theme for you custom control, see the External Control Library section of the [Control Authoring Overview](control-authoring-overview.md).  
   
 ## See also
-- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
-- [How to: Find ControlTemplate-Generated Elements](../../../../docs/framework/wpf/controls/how-to-find-controltemplate-generated-elements.md)
-- [Find DataTemplate-Generated Elements](../../../../docs/framework/wpf/data/how-to-find-datatemplate-generated-elements.md)
+- [Pack URIs in WPF](../app-development/pack-uris-in-wpf.md)
+- [How to: Find ControlTemplate-Generated Elements](how-to-find-controltemplate-generated-elements.md)
+- [Find DataTemplate-Generated Elements](../data/how-to-find-datatemplate-generated-elements.md)

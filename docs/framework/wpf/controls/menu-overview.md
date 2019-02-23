@@ -39,7 +39,7 @@ The <xref:System.Windows.Controls.Menu> class enables you to organize elements a
   
  [!code-xaml[MenuEvent#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml#8)]  
   
- The <xref:System.Windows.Controls.MenuItem> class also has a <xref:System.Windows.Controls.MenuItem.CommandTarget%2A> property, which specifies the element where the command occurs. If <xref:System.Windows.Controls.MenuItem.CommandTarget%2A> is not set, the element that has keyboard focus receives the command. For more information about commands, see [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md).  
+ The <xref:System.Windows.Controls.MenuItem> class also has a <xref:System.Windows.Controls.MenuItem.CommandTarget%2A> property, which specifies the element where the command occurs. If <xref:System.Windows.Controls.MenuItem.CommandTarget%2A> is not set, the element that has keyboard focus receives the command. For more information about commands, see [Commanding Overview](../advanced/commanding-overview.md).  
   
 <a name="menu_styling"></a>   
 ## Menu Styling  

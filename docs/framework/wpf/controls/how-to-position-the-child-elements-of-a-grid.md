@@ -26,4 +26,4 @@ This example shows how to use the get and set methods that are defined on <xref:
   
 ## See also
 - <xref:System.Windows.Controls.Grid>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Panels Overview](panels-overview.md)

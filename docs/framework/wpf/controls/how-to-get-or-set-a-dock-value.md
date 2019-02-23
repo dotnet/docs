@@ -22,4 +22,4 @@ The following example shows how to assign a <xref:System.Windows.Controls.Dock> 
 - <xref:System.Windows.Controls.DockPanel>
 - <xref:System.Windows.Controls.DockPanel.GetDock%2A>
 - <xref:System.Windows.Controls.DockPanel.SetDock%2A>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Panels Overview](panels-overview.md)

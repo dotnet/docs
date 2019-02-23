@@ -19,4 +19,4 @@ An application developer can create <xref:System.Windows.Controls.ListBox> contr
 ## See also
 - <xref:System.Windows.Controls.ListBox>
 - <xref:System.Windows.Controls.ListBoxItem>
-- [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)
+- [Controls](../advanced/optimizing-performance-controls.md)

@@ -47,13 +47,13 @@ You need the following components to complete this walkthrough:
 
      You can generate entity classes for all of the tables; however, in this example you only retrieve data from those two tables.
 
-     ![Select Product and ProductCategory from tables](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step4.png "DataGrid_SQL_EF_Step4")
+     ![Select Product and ProductCategory from tables](media/datagrid-sql-ef-step4.png "DataGrid_SQL_EF_Step4")
 
 8. Click **Finish**.
 
      The Product and ProductCategory entities are displayed in the Entity Designer.
 
-     ![Product and ProductCategory entity models](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step5.png "DataGrid_SQL_EF_Step5")
+     ![Product and ProductCategory entity models](media/datagrid-sql-ef-step5.png "DataGrid_SQL_EF_Step5")
 
 ## Retrieve and present the data
 
@@ -65,7 +65,7 @@ You need the following components to complete this walkthrough:
 
      [!code-xaml[DataGrid_SQL_EF_Walkthrough#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataGrid_SQL_EF_Walkthrough/CS/MainWindow.xaml#3)]
 
-     ![Window with DataGrid](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step6.png "DataGrid_SQL_EF_Step6")
+     ![Window with DataGrid](media/datagrid-sql-ef-step6.png "DataGrid_SQL_EF_Step6")
 
 4.  Select the <xref:System.Windows.Window>.
 
@@ -89,7 +89,7 @@ You need the following components to complete this walkthrough:
 
      You should see a <xref:System.Windows.Controls.DataGrid> that displays data.
 
-     ![DataGrid with data from SQL database](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step7.png "DataGrid_SQL_EF_Step7")
+     ![DataGrid with data from SQL database](media/datagrid-sql-ef-step7.png "DataGrid_SQL_EF_Step7")
 
 ## See also
 

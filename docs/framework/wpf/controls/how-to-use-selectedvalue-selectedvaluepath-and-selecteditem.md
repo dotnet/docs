@@ -34,5 +34,5 @@ This example shows how to use the <xref:System.Windows.Controls.TreeView.Selecte
 ## See also
 - <xref:System.Windows.Controls.TreeView>
 - <xref:System.Windows.Controls.TreeViewItem>
-- [TreeView Overview](../../../../docs/framework/wpf/controls/treeview-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)
+- [TreeView Overview](treeview-overview.md)
+- [How-to Topics](treeview-how-to-topics.md)

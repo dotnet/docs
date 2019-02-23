@@ -18,15 +18,15 @@ ms.assetid: 9e356d3d-a3d0-4b01-a25f-2d43e4d53fe5
 <a name="introduction"></a>
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] gives you the ability to create a control whose appearance can be customized. For example, you can change the appearance of a <xref:System.Windows.Controls.CheckBox> beyond what setting properties will do by creating a new <xref:System.Windows.Controls.ControlTemplate>. The following illustration shows a <xref:System.Windows.Controls.CheckBox> that uses a default <xref:System.Windows.Controls.ControlTemplate> and a <xref:System.Windows.Controls.CheckBox> that uses a custom <xref:System.Windows.Controls.ControlTemplate>.  
   
- ![A checkbox with the default control template.](../../../../docs/framework/wpf/controls/media/ndp-checkboxdefault.png "NDP_CheckBoxDefault")  
+ ![A checkbox with the default control template.](media/ndp-checkboxdefault.png "NDP_CheckBoxDefault")  
 A CheckBox that uses the default control template  
   
- ![A checkbox with a custom control template.](../../../../docs/framework/wpf/controls/media/ndp-checkboxcustom.png "NDP_CheckBoxCustom")  
+ ![A checkbox with a custom control template.](media/ndp-checkboxcustom.png "NDP_CheckBoxCustom")  
 A CheckBox that uses a custom control template  
   
  If you follow the parts and states model when you create a control, your control's appearance will be customizable. Designer tools such as Microsoft Expression Blend support the parts and states model, so when you follow this model your control will be customizable in those types of applications.  This topic discusses the parts and states model and how to follow it when you create your own control. This topic uses an example of a custom control, `NumericUpDown`, to illustrate the philosophy of this model.  The `NumericUpDown` control displays a numeric value, which a user can increase or decrease by clicking on the control's buttons.  The following illustration shows the `NumericUpDown` control that is discussed in this topic.  
   
- ![NumericUpDown custom control.](../../../../docs/framework/wpf/controls/media/ndp-numericupdown.png "NDP_NumericUPDown")  
+ ![NumericUpDown custom control.](media/ndp-numericupdown.png "NDP_NumericUPDown")  
 A custom NumericUpDown control  
   
  This topic contains the following sections:  
@@ -45,7 +45,7 @@ A custom NumericUpDown control
   
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you know how to create a new <xref:System.Windows.Controls.ControlTemplate> for an existing control, are familiar with what the elements on a control contract are, and understand the concepts discussed in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+ This topic assumes that you know how to create a new <xref:System.Windows.Controls.ControlTemplate> for an existing control, are familiar with what the elements on a control contract are, and understand the concepts discussed in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
   
 > [!NOTE]
 >  To create a control that can have its appearance customized, you must create a control that inherits from the <xref:System.Windows.Controls.Control> class or one of its subclasses other than <xref:System.Windows.Controls.UserControl>.  A control that inherits from <xref:System.Windows.Controls.UserControl> is a control that can be quickly created, but it does not use a <xref:System.Windows.Controls.ControlTemplate> and you cannot customize its appearance.  
@@ -64,7 +64,7 @@ A custom NumericUpDown control
   
 <a name="defining_the_visual_structure_and_visual_behavior_of_a_control_in_a_controltemplate"></a>   
 ## Defining the Visual Structure and Visual Behavior of a Control in a ControlTemplate  
- When you create your custom control by using the parts and states model, you define the control's visual structure and visual behavior in its <xref:System.Windows.Controls.ControlTemplate> instead of in its logic.  The visual structure of a control is the composite of <xref:System.Windows.FrameworkElement> objects that make up the control.  The visual behavior is the way the control appears when it is in a certain state.   For more information about creating a <xref:System.Windows.Controls.ControlTemplate> that specifies the visual structure and visual behavior of a control, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+ When you create your custom control by using the parts and states model, you define the control's visual structure and visual behavior in its <xref:System.Windows.Controls.ControlTemplate> instead of in its logic.  The visual structure of a control is the composite of <xref:System.Windows.FrameworkElement> objects that make up the control.  The visual behavior is the way the control appears when it is in a certain state.   For more information about creating a <xref:System.Windows.Controls.ControlTemplate> that specifies the visual structure and visual behavior of a control, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
   
  In the example of the `NumericUpDown` control, the visual structure includes two <xref:System.Windows.Controls.Primitives.RepeatButton> controls and a <xref:System.Windows.Controls.TextBlock>.  If you add these controls in the code of the `NumericUpDown` control--in its constructor, for example--the positions of those controls would be unalterable.  Instead of defining the control's visual structure and visual behavior in its code, you should define it in the <xref:System.Windows.Controls.ControlTemplate>.  Then an application developer to customize the position of the buttons and <xref:System.Windows.Controls.TextBlock> and specify what behavior occurs when `Value` is negative because the <xref:System.Windows.Controls.ControlTemplate> can be replaced.  
   
@@ -72,7 +72,7 @@ A custom NumericUpDown control
   
  [!code-xaml[VSMCustomControl#VisualStructure](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#visualstructure)]  
   
- A visual behavior of the `NumericUpDown` control is that the value is in a red font if it is negative.  If you change the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> in code when the `Value` is negative, the `NumericUpDown` will always show a red negative value. You specify the visual behavior of the control in the <xref:System.Windows.Controls.ControlTemplate> by adding <xref:System.Windows.VisualState> objects to the <xref:System.Windows.Controls.ControlTemplate>.  The following example shows the <xref:System.Windows.VisualState> objects for the `Positive` and `Negative` states.  `Positive` and `Negative` are mutually exclusive (the control is always in exactly one of the two), so the example puts the <xref:System.Windows.VisualState> objects into a single <xref:System.Windows.VisualStateGroup>.  When the control goes into the `Negative` state, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> turns red.  When the control is in the `Positive` state, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> returns to it original value.  Defining <xref:System.Windows.VisualState> objects in a <xref:System.Windows.Controls.ControlTemplate> is further discussed in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+ A visual behavior of the `NumericUpDown` control is that the value is in a red font if it is negative.  If you change the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> in code when the `Value` is negative, the `NumericUpDown` will always show a red negative value. You specify the visual behavior of the control in the <xref:System.Windows.Controls.ControlTemplate> by adding <xref:System.Windows.VisualState> objects to the <xref:System.Windows.Controls.ControlTemplate>.  The following example shows the <xref:System.Windows.VisualState> objects for the `Positive` and `Negative` states.  `Positive` and `Negative` are mutually exclusive (the control is always in exactly one of the two), so the example puts the <xref:System.Windows.VisualState> objects into a single <xref:System.Windows.VisualStateGroup>.  When the control goes into the `Negative` state, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> turns red.  When the control is in the `Positive` state, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> returns to it original value.  Defining <xref:System.Windows.VisualState> objects in a <xref:System.Windows.Controls.ControlTemplate> is further discussed in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
   
 > [!NOTE]
 >  Be sure to set the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=nameWithType> attached property on the root <xref:System.Windows.FrameworkElement> of the <xref:System.Windows.Controls.ControlTemplate>.  
@@ -232,5 +232,5 @@ A custom NumericUpDown control
  [!code-vb[VSMCustomControl#ControlLogic](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#controllogic)]  
   
 ## See also
-- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)
-- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)
+- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)
+- [Control Customization](control-customization.md)

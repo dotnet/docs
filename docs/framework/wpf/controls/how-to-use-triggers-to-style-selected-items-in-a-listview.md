@@ -27,6 +27,6 @@ This example shows how to define <xref:System.Windows.Style.Triggers%2A> for a <
 - <xref:System.Windows.Controls.Control>
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
-- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
-- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
+- [How-to Topics](listview-how-to-topics.md)
+- [ListView Overview](listview-overview.md)
+- [GridView Overview](gridview-overview.md)

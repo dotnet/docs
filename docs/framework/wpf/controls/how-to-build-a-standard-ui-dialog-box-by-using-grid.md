@@ -29,5 +29,5 @@ This example shows how to create a standard [!INCLUDE[TLA#tla_ui](../../../../in
 ## See also
 - <xref:System.Windows.Controls.Grid>
 - <xref:System.Windows.GridUnitType>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/controls/grid-how-to-topics.md)
+- [Panels Overview](panels-overview.md)
+- [How-to Topics](grid-how-to-topics.md)

@@ -30,6 +30,6 @@ This example shows how to style a row in a <xref:System.Windows.Controls.ListVie
 ## See also
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
-- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
-- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [How-to Topics](listview-how-to-topics.md)
+- [ListView Overview](listview-overview.md)
+- [Styling and Templating](styling-and-templating.md)

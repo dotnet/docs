@@ -27,4 +27,4 @@ This example shows how to make sure a <xref:System.Windows.Controls.GridSplitter
   
 ## See also
 - <xref:System.Windows.Controls.GridSplitter>
-- [How-to Topics](../../../../docs/framework/wpf/controls/gridsplitter-how-to-topics.md)
+- [How-to Topics](gridsplitter-how-to-topics.md)

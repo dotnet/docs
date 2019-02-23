@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 6bd4ff8f-ea6a-4084-ac58-e7a67446ce1c
 ---
 # DocumentViewer Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.DocumentViewer> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.DocumentViewer> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
   
 ## DocumentViewer Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.DocumentViewer> control.  
@@ -44,7 +44,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## See also
 - <xref:System.Windows.FrameworkElement.Style%2A>
 - <xref:System.Windows.Controls.ControlTemplate>
-- [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)
-- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)
-- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
-- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)
+- [Control Styles and Templates](control-styles-and-templates.md)
+- [Control Customization](control-customization.md)
+- [Styling and Templating](styling-and-templating.md)
+- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)

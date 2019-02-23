@@ -24,5 +24,5 @@ ms.assetid: e0df4f1e-8c07-4e86-89a3-e22acfffdc2a
   
 ## See also
 - <xref:System.Windows.Controls.Panel>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Panels Overview](panels-overview.md)
 - [Create a Custom Content-Wrapping Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159979)

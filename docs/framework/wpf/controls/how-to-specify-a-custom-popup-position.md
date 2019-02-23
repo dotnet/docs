@@ -28,5 +28,5 @@ This example shows how to specify a custom position for a <xref:System.Windows.C
   
 ## See also
 - <xref:System.Windows.Controls.Primitives.Popup>
-- [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/controls/popup-how-to-topics.md)
+- [Popup Overview](popup-overview.md)
+- [How-to Topics](popup-how-to-topics.md)

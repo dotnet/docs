@@ -28,6 +28,6 @@ This example shows how to use the attached properties of <xref:System.Windows.Co
 - <xref:System.Windows.Controls.Canvas.Right%2A>
 - <xref:System.Windows.Controls.Canvas.Top%2A>
 - <xref:System.Windows.Controls.Button>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/controls/canvas-how-to-topics.md)
-- [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)
+- [Panels Overview](panels-overview.md)
+- [How-to Topics](canvas-how-to-topics.md)
+- [Attached Properties Overview](../advanced/attached-properties-overview.md)

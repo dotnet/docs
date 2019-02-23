@@ -19,5 +19,5 @@ This example shows how to use [!INCLUDE[TLA#tla_xaml](../../../../includes/tlash
   
 ## See also
 - <xref:System.Windows.TextWrapping>
-- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)
-- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
+- [TextBox Overview](textbox-overview.md)
+- [RichTextBox Overview](richtextbox-overview.md)

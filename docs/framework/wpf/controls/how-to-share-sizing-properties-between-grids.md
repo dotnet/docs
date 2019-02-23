@@ -32,4 +32,4 @@ This example shows how to share the sizing data of columns and rows between <xre
 ## See also
 - <xref:System.Windows.Controls.Grid>
 - <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Panels Overview](panels-overview.md)

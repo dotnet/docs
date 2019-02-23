@@ -27,6 +27,6 @@ This example shows how to scroll content by using the <xref:System.Windows.Contr
 - <xref:System.Windows.Controls.ScrollViewer>
 - <xref:System.Windows.Controls.Primitives.IScrollInfo>
 - <xref:System.Windows.Controls.StackPanel>
-- [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/controls/scrollviewer-how-to-topics.md)
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [ScrollViewer Overview](scrollviewer-overview.md)
+- [How-to Topics](scrollviewer-how-to-topics.md)
+- [Panels Overview](panels-overview.md)

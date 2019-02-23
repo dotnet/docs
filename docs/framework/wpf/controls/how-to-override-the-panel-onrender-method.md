@@ -26,6 +26,6 @@ This example shows how to override the <xref:System.Windows.Controls.Panel.OnRen
   
 ## See also
 - <xref:System.Windows.Controls.Panel>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Panels Overview](panels-overview.md)
 - [Custom Radial Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159982)
-- [How-to Topics](../../../../docs/framework/wpf/controls/panel-how-to-topics.md)
+- [How-to Topics](panel-how-to-topics.md)

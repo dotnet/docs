@@ -29,5 +29,5 @@ This example shows how to create and use an instance of <xref:System.Windows.Con
 - <xref:System.Windows.Controls.Canvas.SetLeft%2A>
 - <xref:System.Windows.Controls.Canvas.Top%2A>
 - <xref:System.Windows.Controls.Canvas.Left%2A>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/controls/canvas-how-to-topics.md)
+- [Panels Overview](panels-overview.md)
+- [How-to Topics](canvas-how-to-topics.md)

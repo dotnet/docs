@@ -18,4 +18,4 @@ This example shows how to use the <xref:System.Windows.Controls.GridViewRowPrese
 - <xref:System.Windows.Controls.GridViewHeaderRowPresenter>
 - <xref:System.Windows.Controls.GridViewRowPresenter>
 - <xref:System.Windows.Controls.GridViewColumnCollection>
-- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
+- [GridView Overview](gridview-overview.md)

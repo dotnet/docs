@@ -28,5 +28,5 @@ This example shows two ways to animate a <xref:System.Windows.Controls.Primitive
 - <xref:System.Windows.Media.RotateTransform>
 - <xref:System.Windows.Media.Animation.Storyboard>
 - <xref:System.Windows.Controls.Primitives.Popup>
-- [How-to Topics](../../../../docs/framework/wpf/controls/popup-how-to-topics.md)
-- [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)
+- [How-to Topics](popup-how-to-topics.md)
+- [Popup Overview](popup-overview.md)

@@ -49,7 +49,7 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
 ## Using the Properties of the ToolTip and ToolTipService Classes  
  You can customize tooltip content by setting visual properties and applying styles. If you define the tooltip content as a <xref:System.Windows.Controls.ToolTip> object, you can set the visual properties of the <xref:System.Windows.Controls.ToolTip> object. Otherwise, you must set equivalent attached properties on the <xref:System.Windows.Controls.ToolTipService> class.  
   
- For an example of how to set properties in order to specify the position of tooltip content by using the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> properties, see [Position a ToolTip](../../../../docs/framework/wpf/controls/how-to-position-a-tooltip.md).  
+ For an example of how to set properties in order to specify the position of tooltip content by using the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> properties, see [Position a ToolTip](how-to-position-a-tooltip.md).  
   
 <a name="StylingToolTip"></a>   
 ## Styling a ToolTip  
@@ -63,7 +63,7 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
   
  Use the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> and <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A> properties to specify a delay, typically brief, before a <xref:System.Windows.Controls.ToolTip> appears and also to specify how long a <xref:System.Windows.Controls.ToolTip> remains visible. For more information, see [How to: Delay the Display of a ToolTip](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms747264(v=vs.90)).  
   
- The <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> property determines if tooltips for different controls appear without an initial delay when you move the mouse pointer quickly between them. For more information about the <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> property, see [Use the BetweenShowDelay Property](../../../../docs/framework/wpf/controls/how-to-use-the-betweenshowdelay-property.md).  
+ The <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> property determines if tooltips for different controls appear without an initial delay when you move the mouse pointer quickly between them. For more information about the <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> property, see [Use the BetweenShowDelay Property](how-to-use-the-betweenshowdelay-property.md).  
   
  The following example shows how to set these properties for a tooltip.  
   
@@ -74,4 +74,4 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
 - <xref:System.Windows.Controls.ToolTip>
 - <xref:System.Windows.Controls.ToolTipEventArgs>
 - <xref:System.Windows.Controls.ToolTipEventHandler>
-- [How-to Topics](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)
+- [How-to Topics](tooltip-how-to-topics.md)

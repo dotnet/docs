@@ -20,16 +20,16 @@ ms.assetid: 678dd116-43a2-4b8c-82b5-6b826f126e31
   
  The following illustrations show a <xref:System.Windows.Controls.Button> that uses the <xref:System.Windows.Controls.ControlTemplate> that is created in this topic.  
   
- ![A button with a custom control template.](../../../../docs/framework/wpf/controls/media/ndp-buttonnormal.png "NDP_ButtonNormal")  
+ ![A button with a custom control template.](media/ndp-buttonnormal.png "NDP_ButtonNormal")  
 A button that uses a custom control template  
   
- ![A button with a red border.](../../../../docs/framework/wpf/controls/media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
+ ![A button with a red border.](media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
 A button that uses a custom control template and has the mouse pointer over it  
   
   
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you understand how to create and use controls and styles as discussed in [Controls](../../../../docs/framework/wpf/controls/index.md). The concepts discussed in this topic apply to elements that inherit from the <xref:System.Windows.Controls.Control> class, except for the <xref:System.Windows.Controls.UserControl>. You cannot apply a <xref:System.Windows.Controls.ControlTemplate> to a <xref:System.Windows.Controls.UserControl>.  
+ This topic assumes that you understand how to create and use controls and styles as discussed in [Controls](index.md). The concepts discussed in this topic apply to elements that inherit from the <xref:System.Windows.Controls.Control> class, except for the <xref:System.Windows.Controls.UserControl>. You cannot apply a <xref:System.Windows.Controls.ControlTemplate> to a <xref:System.Windows.Controls.UserControl>.  
   
 <a name="when_you_should_create_a_controltemplate"></a>   
 ## When You Should Create a ControlTemplate  
@@ -41,12 +41,12 @@ A button that uses a custom control template and has the mouse pointer over it
   
  The following illustration shows a <xref:System.Windows.Controls.CheckBox> that uses a default <xref:System.Windows.Controls.ControlTemplate>.  
   
- ![A checkbox with the default control template.](../../../../docs/framework/wpf/controls/media/ndp-checkboxdefault.png "NDP_CheckBoxDefault")  
+ ![A checkbox with the default control template.](media/ndp-checkboxdefault.png "NDP_CheckBoxDefault")  
 A CheckBox that uses the default control template  
   
  The following illustration shows a <xref:System.Windows.Controls.CheckBox> that uses a custom <xref:System.Windows.Controls.ControlTemplate> to place the content of the <xref:System.Windows.Controls.CheckBox> above the selection indicator and displays an X when the <xref:System.Windows.Controls.CheckBox> is selected.  
   
- ![A checkbox with a custom control template.](../../../../docs/framework/wpf/controls/media/ndp-checkboxcustom.png "NDP_CheckBoxCustom")  
+ ![A checkbox with a custom control template.](media/ndp-checkboxcustom.png "NDP_CheckBoxCustom")  
 A CheckBox that uses a custom control template  
   
  The <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.CheckBox> in this sample is relatively complex, so this topic uses a simpler example of creating a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  
@@ -68,9 +68,9 @@ A CheckBox that uses a custom control template
  [!code-xaml[VSMButtonTemplate#BasicTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#basictemplate)]  
   
 ### Preserving the Functionality of a Control's Properties by Using TemplateBinding  
- When you create a new <xref:System.Windows.Controls.ControlTemplate>, you still might want to use the public properties to change the control's appearance. The [TemplateBinding](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md) markup extension binds a property of an element that is in the <xref:System.Windows.Controls.ControlTemplate> to a public property that is defined by the control. When you use [TemplateBinding](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md), you enable properties on the control to act as parameters to the template. That is, when a property on a control is set, that value is passed on to the element that has the [TemplateBinding](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md) on it.  
+ When you create a new <xref:System.Windows.Controls.ControlTemplate>, you still might want to use the public properties to change the control's appearance. The [TemplateBinding](../advanced/templatebinding-markup-extension.md) markup extension binds a property of an element that is in the <xref:System.Windows.Controls.ControlTemplate> to a public property that is defined by the control. When you use [TemplateBinding](../advanced/templatebinding-markup-extension.md), you enable properties on the control to act as parameters to the template. That is, when a property on a control is set, that value is passed on to the element that has the [TemplateBinding](../advanced/templatebinding-markup-extension.md) on it.  
   
- The following example repeats the part of the preceding example that uses the [TemplateBinding](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md) markup extension to bind properties of elements that are in the <xref:System.Windows.Controls.ControlTemplate> to public properties that are defined by the button.  
+ The following example repeats the part of the preceding example that uses the [TemplateBinding](../advanced/templatebinding-markup-extension.md) markup extension to bind properties of elements that are in the <xref:System.Windows.Controls.ControlTemplate> to public properties that are defined by the button.  
   
  [!code-xaml[VSMButtonTemplate#TemplateBinding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#templatebinding)]  
   
@@ -110,7 +110,7 @@ A CheckBox that uses a custom control template
   
  The preceding example produces output that is similar to the following illustration.  
   
- ![Two buttons, one blue and one purple.](../../../../docs/framework/wpf/controls/media/ndp-buttontwo.png "NDP_ButtonTwo")  
+ ![Two buttons, one blue and one purple.](media/ndp-buttontwo.png "NDP_ButtonTwo")  
 Two buttons with different background colors  
   
 <a name="changing_the_appearance_of_a_control_depending_on_its_state"></a>   
@@ -145,16 +145,16 @@ Two buttons with different background colors
   
  The preceding example produces output that is similar to the following illustrations.  
   
- ![A button with a custom control template.](../../../../docs/framework/wpf/controls/media/ndp-buttonnormal.png "NDP_ButtonNormal")  
+ ![A button with a custom control template.](media/ndp-buttonnormal.png "NDP_ButtonNormal")  
 A button that uses a custom control template in the normal state  
   
- ![A button with a red border.](../../../../docs/framework/wpf/controls/media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
+ ![A button with a red border.](media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
 A button that uses a custom control template in the mouse over state  
   
- ![The border is transparent on a pressed button.](../../../../docs/framework/wpf/controls/media/ndp-buttonpressed.png "NDP_ButtonPressed")  
+ ![The border is transparent on a pressed button.](media/ndp-buttonpressed.png "NDP_ButtonPressed")  
 A button that uses a custom control template in the pressed state  
   
- To find the visual states for controls that are included with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md).  
+ To find the visual states for controls that are included with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Control Styles and Templates](control-styles-and-templates.md).  
   
 <a name="specifying_the_behavior_of_a_control_when_it_transitions_between_states"></a>   
 ## Specifying the Behavior of a Control When It Transitions Between States  
@@ -233,10 +233,10 @@ A button that uses a custom control template in the pressed state
 ### States in the Control Contract  
  The states of a control are also a part of the control contract. The example of creating a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button> shows how to specify the appearance of a <xref:System.Windows.Controls.Button> depending on its states. You create a <xref:System.Windows.VisualState> for each specified state and put all <xref:System.Windows.VisualState> objects that share a <xref:System.Windows.TemplateVisualStateAttribute.GroupName%2A> in a <xref:System.Windows.VisualStateGroup>, as described in [Changing the Appearance of a Control Depending on Its State](#changing_the_appearance_of_a_control_depending_on_its_state) earlier in this topic. Third-party controls should specify states by using the <xref:System.Windows.TemplateVisualStateAttribute>, which enables designer tools, such as Expression Blend, to expose the control's states for authoring control templates.  
   
- To find the control contract for controls that are included with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md).  
+ To find the control contract for controls that are included with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Control Styles and Templates](control-styles-and-templates.md).  
   
 ### Properties in the Control Contract  
- The public properties that visually affect the control are also included in the control contract. You can set these properties to change the appearance of the control without creating a new <xref:System.Windows.Controls.ControlTemplate>. You can also use the [TemplateBinding](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md) markup extension to bind properties of elements that are in the <xref:System.Windows.Controls.ControlTemplate> to public properties that are defined by the <xref:System.Windows.Controls.Button>.  
+ The public properties that visually affect the control are also included in the control contract. You can set these properties to change the appearance of the control without creating a new <xref:System.Windows.Controls.ControlTemplate>. You can also use the [TemplateBinding](../advanced/templatebinding-markup-extension.md) markup extension to bind properties of elements that are in the <xref:System.Windows.Controls.ControlTemplate> to public properties that are defined by the <xref:System.Windows.Controls.Button>.  
   
  The following example shows the control contract for the button.  
   
@@ -256,4 +256,4 @@ A button that uses a custom control template in the pressed state
  [!code-xaml[VSMButtonTemplate#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#3)]  
   
 ## See also
-- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [Styling and Templating](styling-and-templating.md)

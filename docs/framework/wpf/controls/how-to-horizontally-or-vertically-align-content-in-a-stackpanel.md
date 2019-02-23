@@ -28,4 +28,4 @@ This example shows how to adjust the <xref:System.Windows.Controls.StackPanel.Or
 - <xref:System.Windows.Controls.ListBox>
 - <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>
 - <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Panels Overview](panels-overview.md)

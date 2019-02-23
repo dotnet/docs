@@ -27,4 +27,4 @@ This example shows how to use the positioning methods of the <xref:System.Window
 - <xref:System.Windows.Controls.Canvas>
 - <xref:System.Windows.Controls.ListBoxItem>
 - <xref:System.Windows.LengthConverter>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Panels Overview](panels-overview.md)

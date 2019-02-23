@@ -29,6 +29,6 @@ This example shows how to change the appearance of a dragged <xref:System.Window
 - <xref:System.Windows.Controls.GridViewColumnHeaderRole>
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
-- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
-- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
+- [How-to Topics](listview-how-to-topics.md)
+- [ListView Overview](listview-overview.md)
+- [GridView Overview](gridview-overview.md)

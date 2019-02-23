@@ -48,14 +48,14 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
   
  [!code-xaml[ControlsOverview#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/AppInCode.xaml#5)]  
   
- You can also apply a style to only certain controls of a specific type by assigning a key to the style and specifying that key in the `Style` property of your control.  For more information about styles, see [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md).  
+ You can also apply a style to only certain controls of a specific type by assigning a key to the style and specifying that key in the `Style` property of your control.  For more information about styles, see [Styling and Templating](styling-and-templating.md).  
   
 ### Creating a ControlTemplate  
  A <xref:System.Windows.Style> allows you to set properties on multiple controls at a time, but sometimes you might want to customize the appearance of a <xref:System.Windows.Controls.Control> beyond what you can do by creating a <xref:System.Windows.Style>. Classes that inherit from the <xref:System.Windows.Controls.Control> class have a <xref:System.Windows.Controls.ControlTemplate>, which defines the structure and appearance of a <xref:System.Windows.Controls.Control>. The <xref:System.Windows.Controls.Control.Template%2A> property of a <xref:System.Windows.Controls.Control> is public, so you can give a <xref:System.Windows.Controls.Control> a <xref:System.Windows.Controls.ControlTemplate> that is different than its default. You can often specify a new <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Control> instead of inheriting from a control to customize the appearance of a <xref:System.Windows.Controls.Control>.  
   
  Consider the very common control, <xref:System.Windows.Controls.Button>.  The primary behavior of a <xref:System.Windows.Controls.Button> is to enable an application to take some action when the user clicks it.  By default, the <xref:System.Windows.Controls.Button> in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] appears as a raised rectangle.  While developing an application, you might want to take advantage of the behavior of a <xref:System.Windows.Controls.Button>--that is, by handling the button's click event--but you might change the button's appearance beyond what you can do by changing the button's properties.  In this case, you can create a new <xref:System.Windows.Controls.ControlTemplate>.  
   
- The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  The <xref:System.Windows.Controls.ControlTemplate> creates a <xref:System.Windows.Controls.Button> with rounded corners and a gradient background.  The <xref:System.Windows.Controls.ControlTemplate> contains a <xref:System.Windows.Controls.Border> whose <xref:System.Windows.Controls.Border.Background%2A> is a <xref:System.Windows.Media.LinearGradientBrush> with two <xref:System.Windows.Media.GradientStop> objects.  The first <xref:System.Windows.Media.GradientStop> uses data binding to bind the <xref:System.Windows.Media.GradientStop.Color%2A> property of the <xref:System.Windows.Media.GradientStop> to the color of the button's background.  When you set the <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.Button>, the color of that value will be used as the first <xref:System.Windows.Media.GradientStop>. For more information about data binding, see [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md). The example also creates a <xref:System.Windows.Trigger> that changes the appearance of the <xref:System.Windows.Controls.Button> when <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`.  
+ The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  The <xref:System.Windows.Controls.ControlTemplate> creates a <xref:System.Windows.Controls.Button> with rounded corners and a gradient background.  The <xref:System.Windows.Controls.ControlTemplate> contains a <xref:System.Windows.Controls.Border> whose <xref:System.Windows.Controls.Border.Background%2A> is a <xref:System.Windows.Media.LinearGradientBrush> with two <xref:System.Windows.Media.GradientStop> objects.  The first <xref:System.Windows.Media.GradientStop> uses data binding to bind the <xref:System.Windows.Media.GradientStop.Color%2A> property of the <xref:System.Windows.Media.GradientStop> to the color of the button's background.  When you set the <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.Button>, the color of that value will be used as the first <xref:System.Windows.Media.GradientStop>. For more information about data binding, see [Data Binding Overview](../data/data-binding-overview.md). The example also creates a <xref:System.Windows.Trigger> that changes the appearance of the <xref:System.Windows.Controls.Button> when <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`.  
   
  [!code-xaml[ControlsOverview#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/Window1.xaml#6)]  
 [!code-xaml[ControlsOverview#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/AppInCode.xaml#7)]  
@@ -90,15 +90,15 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
 -   <xref:System.Windows.Controls.HeaderedItemsControl>--Some examples of classes that inherit from this class are <xref:System.Windows.Controls.MenuItem>, <xref:System.Windows.Controls.TreeViewItem>, and <xref:System.Windows.Controls.ToolBar>.  
 
   
- For more information about these base classes, see [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md).  
+ For more information about these base classes, see [WPF Content Model](wpf-content-model.md).  
   
 ## See also
-- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
-- [Controls by Category](../../../../docs/framework/wpf/controls/controls-by-category.md)
-- [Control Library](../../../../docs/framework/wpf/controls/control-library.md)
-- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
-- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
-- [Input](../../../../docs/framework/wpf/advanced/input-wpf.md)
-- [Enable a Command](../../../../docs/framework/wpf/advanced/how-to-enable-a-command.md)
-- [Walkthroughs: Create a Custom Animated Button](../../../../docs/framework/wpf/controls/walkthroughs-create-a-custom-animated-button.md)
-- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)
+- [Styling and Templating](styling-and-templating.md)
+- [Controls by Category](controls-by-category.md)
+- [Control Library](control-library.md)
+- [Data Templating Overview](../data/data-templating-overview.md)
+- [Data Binding Overview](../data/data-binding-overview.md)
+- [Input](../advanced/input-wpf.md)
+- [Enable a Command](../advanced/how-to-enable-a-command.md)
+- [Walkthroughs: Create a Custom Animated Button](walkthroughs-create-a-custom-animated-button.md)
+- [Control Customization](control-customization.md)

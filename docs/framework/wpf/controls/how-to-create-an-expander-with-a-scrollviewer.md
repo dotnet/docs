@@ -22,5 +22,5 @@ This example shows how to create an <xref:System.Windows.Controls.Expander> cont
   
 ## See also
 - <xref:System.Windows.Controls.Expander>
-- [Expander Overview](../../../../docs/framework/wpf/controls/expander-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/controls/expander-how-to-topics.md)
+- [Expander Overview](expander-overview.md)
+- [How-to Topics](expander-how-to-topics.md)

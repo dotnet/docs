@@ -13,7 +13,7 @@ ms.assetid: 0bdc6f50-9b4c-483f-9df6-a47a1fde998b
 # How to: Add Row Details to a DataGrid Control
 When using the <xref:System.Windows.Controls.DataGrid> control, you can customize the data presentation by adding a row details section. Adding a row details section enables you to group some data in a template that is optionally visible or collapsed. For example, you can add row details to a <xref:System.Windows.Controls.DataGrid> that presents only a summary of the data for each row in the <xref:System.Windows.Controls.DataGrid>, but presents more data fields when the user selects a row. You define the template for the row details section in the <xref:System.Windows.Controls.DataGrid.RowDetailsTemplate%2A> property. The following illustration shows an example of a row details section.  
   
- ![DataGrid shown with row details](../../../../docs/framework/wpf/controls/media/ndp-rowdetails.png "NDP_RowDetails")  
+ ![DataGrid shown with row details](media/ndp-rowdetails.png "NDP_RowDetails")  
   
  You define the row details template as either inline XAML or as a resource. Both approaches are shown in the following procedures. A data template that is added as a resource can be used throughout the project without re-creating the template. A data template that is added as inline XAML is only accessible from the control where it is defined.  
   
@@ -46,7 +46,7 @@ When using the <xref:System.Windows.Controls.DataGrid> control, you can customiz
   
      [!code-xaml[DataGrid_RowDetails#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/datagrid_rowdetails/cs/app.xaml#3)]  
   
-4.  On the <xref:System.Windows.DataTemplate>, set the [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md) to a value that uniquely identifies the data template.  
+4.  On the <xref:System.Windows.DataTemplate>, set the [x:Key Directive](../../xaml-services/x-key-directive.md) to a value that uniquely identifies the data template.  
   
 5.  In the <xref:System.Windows.Controls.DataGrid> element, set the <xref:System.Windows.Controls.DataGrid.RowDetailsTemplate%2A> property to the resource defined in the previous steps. Assign the resource as a static resource.  
   

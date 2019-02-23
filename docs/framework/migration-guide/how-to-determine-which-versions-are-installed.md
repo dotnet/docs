@@ -30,12 +30,14 @@ The .NET Framework consists of two main components, which are versioned separate
 > For more information about versions, see [.NET Framework versions and dependencies](versions-and-dependencies.md).
 
 To get a list of the .NET Framework versions installed on a computer, you access the registry. You can either use the Registry Editor to view the registry or use code to query it:
-  
- - [Find .NET Framework versions 1&#8211;4 in the registry](#net_a)  
- - [Find .NET Framework versions 4.5 and later in the registry)](#net_b)  
- - [Use code to query the registry (versions 1&#8211;4)](#net_c)  
- - [Use code to query the registry (version 4.5 and later)](#net_d)  
- - [Use PowerShell to query the registry (version 4.5 and later)](#ps_a)  
+ 
+- Find recent .NET Framework versions (4.5 and later): 
+     - [Use the Registry Editor to find .NET Framework versions](#net_b)  
+     - [Use code to query the registry for .NET Framework versions](#net_d)  
+     - [Use PowerShell to query the registry for .NET Framework versions](#ps_a)
+ - Find earlier .NET Framework versions (1&#8211;4):
+     - [Use the Registry Editor to find .NET Framework versions](#net_a)
+     - [Use code to query the registry for .NET Framework versions](#net_c)   
 
 To get a list of the CLR versions installed on a computer, use a tool or code:  
   
@@ -44,26 +46,11 @@ To get a list of the CLR versions installed on a computer, use a tool or code:
 
 For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine which .NET Framework updates are installed](how-to-determine-which-net-framework-updates-are-installed.md). 
   
-<a name="net_a"></a>
-## Find .NET Framework versions 1&#8211;4 in the registry 
-  
-1.  From the **Start** menu, choose **Run**, enter *regedit*, and then select **OK**.
-  
-     You must have administrative credentials to run regedit.  
-  
-     For .NET Framework versions 1.1 through 3.5, the installed versions are listed as subkeys under the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP** subkey. The version number is stored as a value in the version subkey's **Version** entry. 
-     
-     For .NET Framework 4, the **Version** entry is under the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4.0\Client** subkey, the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4.0\Full** subkey, or under both subkeys.
 
-    > [!NOTE]
-    > The **NET Framework Setup** folder in the registry does not begin with a period.
-
-    The following figure shows the subkey and its **Version** entry for the .NET Framework 3.5.
-
-     ![The registry entry for the .NET Framework 3.5.](media/net-4-and-earlier.png ".NET Framework 3.5 and earlier versions")
+## Find recent .NET Framework versions (4.5 and later)
 
 <a name="net_b"></a> 
-## Find .NET Framework versions 4.5 and later in the registry
+### Find .NET Framework versions 4.5 and later in the registry
 
 1. From the **Start** menu, choose **Run**, enter *regedit*, and then select **OK**.
 
@@ -97,16 +84,9 @@ The following table lists the minimum value of the **Release** entry for each .N
 
 For a complete table of release keys for the .NET Framework for specific Windows operating system versions, see [.NET Framework release keys and Windows operating system versions](release-keys-and-os-versions.md).
 
-<a name="net_c"></a> 
-## Find .NET Framework versions 1&#8211;4 with code
-
-- Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to access the **HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP** subkey in the Windows registry.
-
-     [!code-csharp[ListVersions](../../../samples/snippets/csharp/framework/migration-guide/versions-installed1.cs)]
-     [!code-vb[ListVersions](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed1.vb)]
 
 <a name="net_d"></a> 
-## Find .NET Framework versions 4.5 and later with code
+### Find .NET Framework versions 4.5 and later with code
 
 1. Use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A?displayProperty=nameWithType> methods to access the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** subkey in the Windows registry.
 
@@ -126,7 +106,7 @@ This example follows the recommended practice for version checking:
 - It checks in order from most recent version to earliest version.
 
 <a name="ps_a"></a> 
-## Check for a minimum required .NET Framework version (4.5 and later) with PowerShell
+### Check for a minimum-required .NET Framework version (4.5 and later) with PowerShell
 
 The following example checks the value of the **Release** entry to determine whether .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
 
@@ -141,9 +121,40 @@ The following example checks the value of the **Release** entry to determine whe
     ```
 
     To check for a different minimum-required .NET Framework version, replace *394802* in the previous example with another **Release** value from the table in [Find .NET Framework versions 4.5 and later in the registry](#net_b).
+
+## Find earlier .NET Framework versions (1&#8211;4)
+
+<a name="net_a"></a>
+### Find .NET Framework versions 1&#8211;4 in the registry 
+  
+1.  From the **Start** menu, choose **Run**, enter *regedit*, and then select **OK**.
+  
+     You must have administrative credentials to run regedit.  
+  
+     For .NET Framework versions 1.1 through 3.5, the installed versions are listed as subkeys under the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP** subkey. The version number is stored as a value in the version subkey's **Version** entry. 
+     
+     For .NET Framework 4, the **Version** entry is under the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4.0\Client** subkey, the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4.0\Full** subkey, or under both subkeys.
+
+    > [!NOTE]
+    > The **NET Framework Setup** folder in the registry does not begin with a period.
+
+    The following figure shows the subkey and its **Version** entry for the .NET Framework 3.5.
+
+     ![The registry entry for the .NET Framework 3.5.](media/net-4-and-earlier.png ".NET Framework 3.5 and earlier versions")
+
+<a name="net_c"></a> 
+### Find .NET Framework versions 1&#8211;4 with code
+
+- Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to access the **HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP** subkey in the Windows registry.
+
+     [!code-csharp[ListVersions](../../../samples/snippets/csharp/framework/migration-guide/versions-installed1.cs)]
+     [!code-vb[ListVersions](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed1.vb)]
+
+
+## Find CLR versions
   
 <a name="clr_a"></a> 
-## Find the current CLR version with Clrver.exe
+### Find the current CLR version with Clrver.exe
 
 Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md) to determine which versions of the CLR are installed on a computer:
 
@@ -158,11 +169,16 @@ v4.0.30319
 ```
 
 <a name="clr_b"></a> 
-## Find the current CLR version with the Environment class
+### Find the current CLR version with the Environment class
+
+> [!IMPORTANT]
+    > For the the .NET Framework 4.5 and later versions, we don't recommend using the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to detect the version of the CLR. Instead, query the registry as described in [To find .NET Framework versions by querying the registry in code (.NET Framework 4.5 and later)](#net_d).
 
 1. Query the <xref:System.Environment.Version?displayProperty=nameWithType> property to retrieve a <xref:System.Version> object. 
 
     This returned object identifies the version of the runtime that's currently executing the code; it does not return assembly versions or other versions of the runtime that may have been installed on the computer.
+
+    For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form *4.0.30319.xxxxx*. For the .NET Framework 4.6 and later, it has the form *4.6.30319.42000*.    
 
 2. After you have the `Version` object, query it as follows:
 
@@ -172,10 +188,7 @@ v4.0.30319
 
    - For the entire version string (for example, *4.0.30319.18010*), use the <xref:System.Version.ToString%2A?displayProperty=nameWithType> method. This method returns a single value that reflects the version of the runtime that's executing the code. It doesn't return assembly versions or other runtime versions that may be installed on the computer.
 
-    For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property returns a <xref:System.Version> object whose string representation has the form *4.0.30319.xxxxx*. For the .NET Framework 4.6 and later, it has the form *4.0.30319.42000*.
 
-    > [!IMPORTANT]
-    > For the the .NET Framework 4.5 and later versions, we don't recommend using the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to detect the version of the runtime. Instead, query the registry as described in [To find .NET Framework versions by querying the registry in code (.NET Framework 4.5 and later)](#net_d).
 
 The following example uses the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to retrieve runtime version information:
 

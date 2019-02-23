@@ -88,8 +88,8 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 ## Communicating with the Host Web Page  
  When the application is hosted in an HTML frame, you can communicate with the Web page that contains the XBAP. You do this by retrieving the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> property of <xref:System.Windows.Interop.BrowserInteropHelper>. This property returns a script object that represents the HTML window. You can then access the properties, methods, and events on the [window object](https://go.microsoft.com/fwlink/?LinkId=160274) by using regular dot syntax. You can also access script methods and global variables. The following example shows how to retrieve the script object and close the browser.  
   
- [!code-csharp[XbapBrowserInterop#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/xbapbrowserinterop/cs/page1.xaml.cs#10)]
- [!code-vb[XbapBrowserInterop#10](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/xbapbrowserinterop/vb/page1.xaml.vb#10)]  
+ [!code-csharp[XbapBrowserInterop#10](~/samples/snippets/csharp/VS_Snippets_Wpf/xbapbrowserinterop/cs/page1.xaml.cs#10)]
+ [!code-vb[XbapBrowserInterop#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/xbapbrowserinterop/vb/page1.xaml.vb#10)]  
   
 ### Debugging XBAPs that Use HostScript  
  If your XBAP uses the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> object to communicate with the HTML window, there are two settings that you must specify to run and debug the application in Visual Studio. The application must have access to its site of origin and you must start the application with the HTML page that contains the XBAP. The following steps describe how to check these two settings:  

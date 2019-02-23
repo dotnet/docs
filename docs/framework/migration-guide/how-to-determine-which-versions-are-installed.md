@@ -70,7 +70,8 @@ The following table lists the minimum value of the **Release** entry for each .N
 
 [!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
 
-|.NET Framework Version|Value of the Release DWORD|
+<a name="version_table"></a>
+|.NET Framework version|Value of the Release DWORD|
 |--------------------------------|-------------|
 |.NET Framework 4.5|378389|
 |.NET Framework 4.5.1|378675|
@@ -92,7 +93,7 @@ For a complete table of release keys for the .NET Framework for specific Windows
 
     The existence of the **Release** DWORD entry in the subkey indicates that the .NET Framework 4.5 or a later version is installed on a computer. 
 
-2. Check the value of the **Release** entry to determine the installed version. To be forward-compatible, you can check for a value greater than or equal to the value listed in the table in [Find .NET Framework versions 4.5 and later in the registry](#net_b).
+2. Check the value of the **Release** entry to determine the installed version. To be forward-compatible, check for a value greater than or equal to the value listed in the [.NET Framework version table](#version_table).
 
 The following example checks the value of the **Release** entry in the registry to find the .NET Framework 4.5 and later versions that are installed:
 
@@ -110,19 +111,19 @@ This example follows the recommended practice for version checking:
 
 - Use PowerShell commands to check the value of the **Release** entry of the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** subkey.
 
-    The following example checks the value of the **Release** entry to determine whether .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
+The following example checks the value of the **Release** entry to determine whether .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
 
-    ```PowerShell
-    # PowerShell 5
-    Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\' |  Get-ItemPropertyValue -Name Release | Foreach-Object { $_ -ge 394802 } 
-    ```
+```PowerShell
+# PowerShell 5
+ Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\' |  Get-ItemPropertyValue -Name Release | Foreach-Object { $_ -ge 394802 } 
+ ```
 
-    ```PowerShell
-    # PowerShell 4
-    (Get-ItemProperty "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -gt 394802
-    ```
+```PowerShell
+# PowerShell 4
+(Get-ItemProperty "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -gt 394802
+```
 
-    To check for a different minimum-required .NET Framework version, replace *394802* in the previous example with a **Release** value from the table in [Find .NET Framework versions 4.5 and later in the registry](#net_b).
+To check for a different minimum-required .NET Framework version, replace *394802* in the previous example with a **Release** value from the [.NET Framework version table](#version_table).
 
 ## Find earlier .NET Framework versions (1&#8211;4)
 
@@ -176,7 +177,7 @@ Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md)
 ### Find the current CLR version with the Environment class
 
 > [!IMPORTANT]
-> For the the .NET Framework 4.5 and later versions, don't use the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to detect the version of the CLR. Instead, query the registry as described in [To find .NET Framework versions by querying the registry in code (.NET Framework 4.5 and later)](#net_d).
+> For the the .NET Framework 4.5 and later versions, don't use the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to detect the version of the CLR. Instead, query the registry as described in [Find .NET Framework versions 4.5 and later with code](#net_d).
 
 1. Query the <xref:System.Environment.Version?displayProperty=nameWithType> property to retrieve a <xref:System.Version> object. 
 

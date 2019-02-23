@@ -13,7 +13,7 @@ ms.assetid: f4e8576d-e731-4bac-9818-22e2ae636636
 This section discusses the fundamentals of recognition as it pertains to digital ink in the WPF platform.  
   
 ## Recognition Solutions  
- The following example shows how to recognize ink using the [Microsoft.Ink.InkCollector](https://msdn.microsoft.com/library/microsoft.ink.inkcollector\(v=vs.90\).aspx) class.  
+ The following example shows how to recognize ink using the [Microsoft.Ink.InkCollector](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms583683(v=vs.90)) class.  
   
 > [!NOTE]
 >  This sample requires that handwriting recognizers be installed on the system.  
@@ -28,4 +28,4 @@ This section discusses the fundamentals of recognition as it pertains to digital
  [!code-vb[InkRecognition#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InkRecognition/VisualBasic/Window1.xaml.vb#2)]  
   
 ## See also
-- [Microsoft.Ink.InkCollector](https://msdn.microsoft.com/library/microsoft.ink.inkcollector\(v=vs.90\).aspx)
+- [Microsoft.Ink.InkCollector](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms583683(v=vs.90))

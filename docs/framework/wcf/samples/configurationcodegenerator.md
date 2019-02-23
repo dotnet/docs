@@ -44,4 +44,4 @@ The ConfigurationCodeGenerator is a tool that you can use to expose your custom 
   
      The SampleConfig.xml file contains the configuration code that you must add to the configuration file that registers the handlers defined in the previous step 1 or 2.  
   
-## See Also
+## See also

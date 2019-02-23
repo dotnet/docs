@@ -64,7 +64,7 @@ HRESULT QueueUserWorkItem (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>  
- <xref:System.Threading.ThreadPool>  
- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)
+## See also
+- <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>
+- <xref:System.Threading.ThreadPool>
+- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)

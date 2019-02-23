@@ -74,12 +74,12 @@ Microsoft Windows services, formerly known as NT services, enable you to create 
   
 -   Projects containing Windows services must have installation components for the project and its services. This can be easily accomplished from the **Properties** window. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
   
-## See Also  
- [Windows Service Applications](../../../docs/framework/windows-services/index.md)  
- [Service Application Programming Architecture](../../../docs/framework/windows-services/service-application-programming-architecture.md)  
- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)  
- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)  
- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)  
- [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)  
- [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)  
- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
+## See also
+- [Windows Service Applications](../../../docs/framework/windows-services/index.md)
+- [Service Application Programming Architecture](../../../docs/framework/windows-services/service-application-programming-architecture.md)
+- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
+- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)
+- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)
+- [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)
+- [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)
+- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)

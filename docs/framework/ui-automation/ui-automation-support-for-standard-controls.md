@@ -163,5 +163,5 @@ ms.author: "mhopkins"
 |RaftingContainer|  
 |StatusStrip|  
   
-## See Also  
- [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)
+## See also
+- [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)

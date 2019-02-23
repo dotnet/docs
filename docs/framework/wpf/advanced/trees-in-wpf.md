@@ -23,7 +23,7 @@ In many technologies, elements and components are organized in a tree structure 
   
 <a name="logical_tree"></a>   
 ## The Logical Tree  
- In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], you add content to UI elements by setting properties of the objects that back those elements. For example, you add items to a <xref:System.Windows.Controls.ListBox> control by manipulating its <xref:System.Windows.Controls.ItemsControl.Items%2A> property. By doing this, you are placing items into the <xref:System.Windows.Controls.ItemCollection> that is the <xref:System.Windows.Controls.ItemsControl.Items%2A> property value. Similarly, to add objects to a <xref:System.Windows.Controls.DockPanel>, you manipulate its <xref:System.Windows.Controls.Panel.Children%2A> property value. Here, you are adding objects to the <xref:System.Windows.Controls.UIElementCollection>. For a code example, see [Add an Element Dynamically](https://msdn.microsoft.com/library/d00f258a-7973-4de7-bc54-a3fc1f638419).  
+ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], you add content to UI elements by setting properties of the objects that back those elements. For example, you add items to a <xref:System.Windows.Controls.ListBox> control by manipulating its <xref:System.Windows.Controls.ItemsControl.Items%2A> property. By doing this, you are placing items into the <xref:System.Windows.Controls.ItemCollection> that is the <xref:System.Windows.Controls.ItemsControl.Items%2A> property value. Similarly, to add objects to a <xref:System.Windows.Controls.DockPanel>, you manipulate its <xref:System.Windows.Controls.Panel.Children%2A> property value. Here, you are adding objects to the <xref:System.Windows.Controls.UIElementCollection>. For a code example, see [How to: Add an Element Dynamically](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms752374(v=vs.100)).  
   
  In [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], when you place list items in a <xref:System.Windows.Controls.ListBox> or controls or other UI elements in a <xref:System.Windows.Controls.DockPanel>, you also use the <xref:System.Windows.Controls.ItemsControl.Items%2A> and <xref:System.Windows.Controls.Panel.Children%2A> properties, either explicitly or implicitly, as in the following example.  
   
@@ -80,9 +80,9 @@ In many technologies, elements and components are organized in a tree structure 
   
  However, resource lookup can also extend beyond the immediate logical tree. For application markup, the resource lookup can then continue onward to application-level resource dictionaries and then to theme support and system values that are referenced as static properties or keys. Themes themselves can also reference system values outside of the theme logical tree if the resource references are dynamic. For more information on resource dictionaries and the lookup logic, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
   
-## See Also  
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [Initialization for Object Elements Not in an Object Tree](../../../../docs/framework/wpf/advanced/initialization-for-object-elements-not-in-an-object-tree.md)  
- [WPF Architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)
+## See also
+- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [Initialization for Object Elements Not in an Object Tree](../../../../docs/framework/wpf/advanced/initialization-for-object-elements-not-in-an-object-tree.md)
+- [WPF Architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)

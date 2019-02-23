@@ -39,5 +39,5 @@ You can customize project templates to provide additional `My` objects. This mak
  <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>  
  Describes the `My` object that provides properties, methods, and events related to the current application.  
   
-## See Also  
- [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)
+## See also
+- [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)

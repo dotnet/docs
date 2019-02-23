@@ -108,6 +108,6 @@ int j = (int) o;
   
 -   [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)

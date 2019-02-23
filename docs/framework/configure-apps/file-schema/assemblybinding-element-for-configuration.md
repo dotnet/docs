@@ -1,5 +1,5 @@
 ---
-title: "&lt;assemblyBinding&gt; element for &lt;configuration&gt;"
+title: "<assemblyBinding> element for <configuration>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/assemblyBinding"
@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "assemblyBinding Element"
   - "<assemblyBinding> Element"
 ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
-author: "mcleblanc"
-ms.author: "markl"
 ---
 
 # \<assemblyBinding> element for \<configuration>
@@ -65,4 +63,4 @@ The following example shows how to include a configuration file on the local har
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

@@ -60,17 +60,17 @@ A *data contract* is a formal agreement between a service and a client that abst
   
  For a complete code sample of a WCF service that defines a data contract see the [Basic Data Contract](../../../../docs/framework/wcf/samples/basic-data-contract.md) sample.  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataMemberAttribute>  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)  
- [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md)  
- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
- [Data Member Order](../../../../docs/framework/wcf/feature-details/data-member-order.md)  
- [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  
- [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)  
- [Data Contract Versioning](../../../../docs/framework/wcf/feature-details/data-contract-versioning.md)  
- [Version-Tolerant Serialization Callbacks](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)  
- [Data Member Default Values](../../../../docs/framework/wcf/feature-details/data-member-default-values.md)  
- [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
- [How to: Create a Basic Data Contract for a Class or Structure](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-data-contract-for-a-class-or-structure.md)
+## See also
+- <xref:System.Runtime.Serialization.DataMemberAttribute>
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)
+- [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md)
+- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)
+- [Data Member Order](../../../../docs/framework/wcf/feature-details/data-member-order.md)
+- [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+- [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)
+- [Data Contract Versioning](../../../../docs/framework/wcf/feature-details/data-contract-versioning.md)
+- [Version-Tolerant Serialization Callbacks](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)
+- [Data Member Default Values](../../../../docs/framework/wcf/feature-details/data-member-default-values.md)
+- [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+- [How to: Create a Basic Data Contract for a Class or Structure](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-data-contract-for-a-class-or-structure.md)

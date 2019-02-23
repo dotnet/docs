@@ -23,8 +23,8 @@ The `#Region` directive enables you to collapse and hide sections of code in Vis
     > [!NOTE]
     >  Hiding code does not prevent it from being compiled and does not affect `#If...#End If` statements.  
   
-## See Also  
- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)  
- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)  
- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
- [Outlining](/visualstudio/ide/outlining)
+## See also
+- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)
+- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
+- [Outlining](/visualstudio/ide/outlining)

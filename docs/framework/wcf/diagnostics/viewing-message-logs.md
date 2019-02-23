@@ -54,7 +54,7 @@ incomingMessage.Headers[i].Name.Equals("Action", StringComparison.InvariantCultu
   
 -   Encoding is enabled for transforming to UTF-8.  
   
-## See Also  
- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)  
- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)
+## See also
+- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)

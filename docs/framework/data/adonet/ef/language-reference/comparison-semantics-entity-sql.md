@@ -96,5 +96,5 @@ WHERE p1 != REF(p2)
   
  <sup>5</sup>All individual elements of the references are compared (this includes the entity set name and all the key properties of the entity type).  
   
-## See Also  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+## See also
+- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

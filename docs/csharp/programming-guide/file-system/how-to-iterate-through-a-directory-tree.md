@@ -51,8 +51,8 @@ root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);
 ## Robust Programming  
  Robust file iteration code must take into account many complexities of the file system. For more information on the Windows file system, see [NTFS overview](/windows-server/storage/file-server/ntfs-overview).  
   
-## See Also
+## See also
 
-- <xref:System.IO>  
-- [LINQ and File Directories](../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)  
+- <xref:System.IO>
+- [LINQ and File Directories](../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
 - [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

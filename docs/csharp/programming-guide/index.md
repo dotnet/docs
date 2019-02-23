@@ -65,7 +65,7 @@ This section provides detailed information on key C# language features and featu
 ## Platform Sections  
  [Application Domains](../../framework/app-domains/application-domains.md)  
   
- [Assemblies and the Global Assembly Cache](../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
+ [Assemblies in .NET](../../standard/assembly/index.md)  
   
  [Attributes](../../csharp/programming-guide/concepts/attributes/index.md)  
   
@@ -79,7 +79,7 @@ This section provides detailed information on key C# language features and featu
   
  [Reflection](../../csharp/programming-guide/concepts/reflection.md)  
   
-## See Also
+## See also
 
-- [C# Reference](../../csharp/language-reference/index.md)  
+- [C# Reference](../../csharp/language-reference/index.md)
 - [C#](../../csharp/index.md)

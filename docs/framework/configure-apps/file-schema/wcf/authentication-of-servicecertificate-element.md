@@ -1,9 +1,9 @@
 ---
-title: "&lt;authentication&gt; of &lt;serviceCertificate&gt; Element"
+title: "<authentication> of <serviceCertificate> Element"
 ms.date: "03/30/2017"
 ms.assetid: 733b67b4-08a1-4d25-9741-10046f9357ef
 ---
-# &lt;authentication&gt; of &lt;serviceCertificate&gt; Element
+# \<authentication> of \<serviceCertificate> Element
 Specifies the settings used by the client proxy to authenticate service certificates that are obtained using SSL/TLS negotiation.  
   
  \<system.ServiceModel>  
@@ -17,9 +17,10 @@ endpointBehaviors section
 ## Syntax  
   
 ```xml  
-<authentication customCertificateValidatorType="String" certificateValidationMode="None/PeerTrust/ChainTrust/PeerOrChainTrust/Custom"  
-revocationMode="NoCheck/Online/Offline"   
-trustedStoreLocation="LocalMachine/CurrentUser" />  
+<authentication customCertificateValidatorType="String"
+                certificateValidationMode="None/PeerTrust/ChainTrust/PeerOrChainTrust/Custom"
+                revocationMode="NoCheck/Online/Offline"
+                trustedStoreLocation="LocalMachine/CurrentUser" />
 ```  
   
 ## Attributes and Elements  
@@ -76,29 +77,31 @@ trustedStoreLocation="LocalMachine/CurrentUser" />
  The following example does two tasks. It first specifies a service certificate for the client to use when communicating with endpoints whose domain name is `www.contoso.com` over the HTTP protocol. Second, it specifies the revocation mode and store location used during authentication.  
   
 ```xml  
-<serviceCertificate>  
-  <defaultCertificate findValue="www.contoso.com"   
-                      storeLocation="LocalMachine"  
-                      storeName="TrustedPeople"   
-                      x509FindType="FindByIssuerDistinguishedName" />  
-  <scopedCertificates>  
-     <add targetUri="http://www.contoso.com"   
-          findValue="www.contoso.com" storeLocation="LocalMachine"  
-                  storeName="Root" x509FindType="FindByIssuerName" />  
-  </scopedCertificates>  
-  <authentication revocationMode="Online"   
-   trustedStoreLocation="LocalMachine" />  
-</serviceCertificate>  
+<serviceCertificate>
+  <defaultCertificate findValue="www.contoso.com"
+                      storeLocation="LocalMachine"
+                      storeName="TrustedPeople"
+                      x509FindType="FindByIssuerDistinguishedName" />
+  <scopedCertificates>
+     <add targetUri="http://www.contoso.com"
+          findValue="www.contoso.com"
+          storeLocation="LocalMachine"
+          storeName="Root"
+          x509FindType="FindByIssuerName" />
+  </scopedCertificates>
+  <authentication revocationMode="Online"
+                  trustedStoreLocation="LocalMachine" />
+</serviceCertificate>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.Authentication%2A>  
- <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [How to: Create a Service that Employs a Custom Certificate Validator](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  
- [\<authentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md)  
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## See also
+- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.Authentication%2A>
+- <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [How to: Create a Service that Employs a Custom Certificate Validator](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
+- [\<authentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md)
+- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

@@ -36,11 +36,11 @@ Take count
   
  [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-clause_1.vb)]  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [Take While Clause](../../../visual-basic/language-reference/queries/take-while-clause.md)  
- [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)
+## See also
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)
+- [Take While Clause](../../../visual-basic/language-reference/queries/take-while-clause.md)
+- [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)

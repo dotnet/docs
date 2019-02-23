@@ -79,7 +79,7 @@ Example of an image brush applied to the stroke and highlight
  ![Sphere following the path geometry of text](../../../../docs/framework/wpf/advanced/media/textpathgeometry01.gif "TextPathGeometry01")  
 Sphere following the path geometry of text  
   
- For more information, see [How to: Create a PathGeometry Animation for Text](https://msdn.microsoft.com/library/29f8051e-798a-463f-a926-a099a99e9c67).  
+ For more information, see [How to: Create a PathGeometry Animation for Text](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms743610(v=vs.100)).  
   
  You can create other interesting uses for formatted text once it has been converted to a <xref:System.Windows.Media.PathGeometry> object. For example, you can clip video to display inside it.  
   
@@ -117,9 +117,9 @@ Video displaying in the path geometry of text
 |DT_WORDBREAK|None|Not required. Word breaking happens automatically with <xref:System.Windows.Media.FormattedText> objects. You cannot disable it.|  
 |DT_WORD_ELLIPSIS|<xref:System.Windows.Media.FormattedText.Trimming%2A>|Use the <xref:System.Windows.Media.FormattedText.Trimming%2A> property with the value <xref:System.Windows.TextTrimming.WordEllipsis>.|  
   
-## See Also  
- <xref:System.Windows.Media.FormattedText>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
- [Create Outlined Text](../../../../docs/framework/wpf/advanced/how-to-create-outlined-text.md)  
- [How to: Create a PathGeometry Animation for Text](https://msdn.microsoft.com/library/29f8051e-798a-463f-a926-a099a99e9c67)
+## See also
+- <xref:System.Windows.Media.FormattedText>
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- [Create Outlined Text](../../../../docs/framework/wpf/advanced/how-to-create-outlined-text.md)
+- [How to: Create a PathGeometry Animation for Text](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms743610(v=vs.100))

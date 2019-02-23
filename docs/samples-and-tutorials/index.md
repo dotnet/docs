@@ -1,14 +1,14 @@
 ---
-title: Samples and tutorials
+title: .NET samples and tutorials
 description: Information on samples and tutorials for .NET Core, ASP.NET Core, and the C# language that help you learn about .NET.
 author: BillWagner
 ms.author: wiwagn
 ms.date: 04/11/2017
 ---
 
-# Samples and tutorials
+# .NET samples and tutorials
 
-The .NET documentation contains a set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](http://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://www.microsoft.com/net/learn/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tutorials/intro-to-csharp/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#viewing-and-downloading-samples) section.
+The .NET documentation contains a set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://www.microsoft.com/net/learn/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tutorials/intro-to-csharp/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#viewing-and-downloading-samples) section.
 
 ## .NET Core
 
@@ -81,6 +81,10 @@ This tutorial shows you how to build a simple .NET Core console app using Visual
 **[Building a complete .NET Core solution on macOS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs-full-solution.md)**
 
 This tutorial shows you how to build a complete .NET Core solution that includes a reusable library and unit testing.
+
+**[Creating a .NET Core application that supports plugins](../core/tutorials/creating-app-with-plugin-support.md)**
+
+This tutorial shows you how to build a simple application on .NET Core that supports a plugin architecture. The [completed sample](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin) is available in the dotnet/samples repository on GitHub.
 
 ## Deploying to containers
 

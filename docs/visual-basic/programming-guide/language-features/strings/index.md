@@ -28,5 +28,5 @@ This section describes the basic concepts behind using strings in Visual Basic.
  [Walkthrough: Encrypting and Decrypting Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/walkthrough-encrypting-and-decrypting-strings.md)  
  Demonstrates how to encrypt and decrypt strings by using the cryptographic service provider version of the Triple Data Encryption Standard algorithm.  
   
-## See Also  
- [Visual Basic Language Features](../../../../visual-basic/programming-guide/language-features/index.md)
+## See also
+- [Visual Basic Language Features](../../../../visual-basic/programming-guide/language-features/index.md)

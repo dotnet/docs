@@ -31,6 +31,6 @@ The following topics show a number of different mechanisms in Windows Communicat
 ## Related Sections  
  [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
   
-## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

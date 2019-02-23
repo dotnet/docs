@@ -1,10 +1,10 @@
 ---
-title: "&lt;sessionSecurityTokenCache&gt;"
+title: "<sessionSecurityTokenCache>"
 ms.date: "03/30/2017"
 ms.assetid: d43e676c-0153-485c-ab31-0257a2db7507
 author: "BrucePerlerMS"
 ---
-# &lt;sessionSecurityTokenCache&gt;
+# \<sessionSecurityTokenCache>
 Registers a cache for session tokens with a service or a security token handler collection.  
   
  \<system.identityModel>  
@@ -55,5 +55,5 @@ Registers a cache for session tokens with a service or a security token handler 
 </caches>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>
+## See also
+- <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>

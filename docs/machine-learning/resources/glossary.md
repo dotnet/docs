@@ -10,9 +10,7 @@ The following list is a compilation of important machine learning terms that are
 
 ## Accuracy
 
-In [classification](#classification), accuracy is the number of correctly classified items divided by the total number of items in the test set. Ranges from 0 (least accurate) to 1 (most accurate). Accuracy is one of evaluation metrics of the performance of your model. Consider it in conjunction with [precision](#precision), [recall](#recall), and [F-score](#f-score).
-
-Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.Accuracy?displayProperty=nameWithType>.
+In [classification](#classification), accuracy is the number of correctly classified items divided by the total number of items in the test set. Ranges from 0 (least accurate) to 1 (most accurate). Accuracy is one of evaluation metrics of the model performance. Consider it in conjunction with [precision](#precision), [recall](#recall), and [F-score](#f-score).
 
 ## Area under the curve (AUC)
 
@@ -81,8 +79,6 @@ All of the operations needed to fit a model to a data set. A pipeline consists o
 ## Precision
 
 In [classification](#classification), the precision for a class is the number of items correctly predicted as belonging to that class divided by the total number of items predicted as belonging to the class.
-
-Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.NegativePrecision?displayProperty=nameWithType>, <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.PositivePrecision?displayProperty=nameWithType>.
 
 ## Recall
 

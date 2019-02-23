@@ -1,5 +1,5 @@
 ---
-title: "&lt;publisherPolicy&gt; Element"
+title: "<publisherPolicy> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/publisherPolicy"
@@ -13,7 +13,7 @@ ms.assetid: 4613407e-d0a8-4ef2-9f81-a6acb9fdc7d4
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;publisherPolicy&gt; Element
+# \<publisherPolicy> Element
 Specifies whether the runtime applies publisher policy.  
   
  \<configuration>  
@@ -79,8 +79,8 @@ Specifies whether the runtime applies publisher policy.
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

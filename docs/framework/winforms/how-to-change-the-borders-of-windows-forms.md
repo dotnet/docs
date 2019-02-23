@@ -14,7 +14,7 @@ You have several border styles to choose from when you are determining the appea
   
  There is extensive support for this task in Visual Studio.  
   
- See also [How to: Change the Borders of Windows Forms Using the Designer](https://msdn.microsoft.com/library/yettzh3e\(v=vs.110\)).  
+ See also [How to: Change the Borders of Windows Forms Using the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yettzh3e(v=vs.100)).  
   
 ### To set the border style of Windows Forms programmatically  
   
@@ -33,11 +33,11 @@ You have several border styles to choose from when you are determining the appea
        System::Windows::Forms::FormBorderStyle::FixedDialog;  
     ```  
   
-     Also see [How to: Create Dialog Boxes at Design Time](https://msdn.microsoft.com/library/55cz5x2c\(v=vs.110\)).  
+     Also see [How to: Create Dialog Boxes at Design Time](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/55cz5x2c(v=vs.100)).  
   
      Additionally, if you have chosen a border style for the form that provides optional **Minimize** and **Maximize** buttons, you can specify whether you want either or both of these buttons to be functional. These buttons are useful when you want to closely control the user experience. The **Minimize** and **Maximize** buttons are enabled by default, and their functionality is manipulated through the **Properties** window.  
   
-## See Also  
- <xref:System.Windows.Forms.FormBorderStyle>  
- <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>  
- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.FormBorderStyle>
+- <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>
+- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)

@@ -263,9 +263,9 @@ elementFormDefault="qualified" >
 </Database>  
 ```  
   
-## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)  
- [How to: Generate the Object Model as an External File](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)  
- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)  
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+## See also
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
+- [How to: Generate the Object Model as an External File](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)
+- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)

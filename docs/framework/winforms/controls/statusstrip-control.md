@@ -16,7 +16,7 @@ The Windows Forms `StatusStrip` control is used on forms as an area, usually dis
  [How to: Use the Spring Property Interactively in a StatusStrip](../../../../docs/framework/winforms/controls/how-to-use-the-spring-property-interactively-in-a-statusstrip.md)  
  Demonstrates using the `Spring` property to interactively center a `ToolStripStatusLabel` in a `StatusStrip`.  
   
- Also see [StatusStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233631\(v=vs.110\)), [StatusStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233642\(v=vs.110\)).  
+ Also see [StatusStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233631(v=vs.100)) and [StatusStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233642(v=vs.100)).  
   
 ## Reference  
  <xref:System.Windows.Forms.StatusStrip>  
@@ -25,5 +25,5 @@ The Windows Forms `StatusStrip` control is used on forms as an area, usually dis
  <xref:System.Windows.Forms.ToolStripStatusLabel>  
  Provides reference information on the class and its members.  
   
-## See Also  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## See also
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

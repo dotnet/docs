@@ -53,16 +53,16 @@ This sample demonstrates how to implement a custom X.509 Certificate Validator. 
         <behavior name="CalculatorServiceBehavior">
           <serviceDebug includeExceptionDetailInFaults ="true"/>
           <serviceCredentials>
-            <!--The serviceCredentials behavior allows one -->
+            <!-- The serviceCredentials behavior allows one -->
             <!-- to specify authentication constraints on -->
             <!-- client certificates. -->
             <clientCertificate>
               <!-- Setting the certificateValidationMode to -->
               <!-- Custom means that if the custom -->
               <!-- X509CertificateValidator does NOT throw -->
-              <!-- an exception, then the provided certificate -- >
+              <!-- an exception, then the provided certificate -->
               <!-- will be trusted without performing any -->
-              <!-- validation beyond that performed by the custom-->
+              <!-- validation beyond that performed by the custom -->
               <!-- validator. The security implications of this -->
               <!-- setting should be carefully considered before -->
               <!-- using Custom in production code. -->
@@ -71,13 +71,13 @@ This sample demonstrates how to implement a custom X.509 Certificate Validator. 
                  customCertificateValidatorType =
 "Microsoft.ServiceModel.Samples.CustomX509CertificateValidator, service" />
             </clientCertificate>
-            <!-- The serviceCredentials behavior allows one to -- >
-            <!--define a service certificate. -->
-            <!--A service certificate is used by a client to  -->
-            <!--authenticate the service and provide message  -->
-            <!--protection. This configuration references the  -->
-            <!--"localhost" certificate installed during the setup  -->
-            <!--instructions. -->
+            <!-- The serviceCredentials behavior allows one to -->
+            <!-- define a service certificate. -->
+            <!-- A service certificate is used by a client to -->
+            <!-- authenticate the service and provide message -->
+            <!-- protection. This configuration references the -->
+            <!-- "localhost" certificate installed during the setup -->
+            <!-- instructions. -->
             <serviceCertificate findValue="localhost"
                  storeLocation="LocalMachine"
                  storeName="My" x509FindType="FindBySubjectName" />
@@ -226,10 +226,10 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
     <clientCertificate>
     <!-- Setting the certificateValidationMode to Custom means -->
     <!--that if the custom X509CertificateValidator does NOT -->
-    <!--throw an exception, then the provided certificate will-- >
-    <!-- be trusted without performing any validation beyond that-- >
-    <!-- performed by the custom validator. The security -- >
-    <!--implications of this setting should be carefully -- >
+    <!--throw an exception, then the provided certificate will -->
+    <!--be trusted without performing any validation beyond that -->
+    <!--performed by the custom validator. The security -->
+    <!--implications of this setting should be carefully -->
     <!--considered before using Custom in production code. -->
     <authentication certificateValidationMode="Custom"
        customCertificateValidatorType =
@@ -311,7 +311,7 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
   
 3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+4.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across computers  
   
@@ -323,25 +323,25 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
   
 4.  Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
   
-5.  On the server, run `setup.bat service` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computerand exports the service certificate to a file named Service.cer.  
+5.  On the server, run `setup.bat service` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computerand exports the service certificate to a file named Service.cer.  
   
 6.  Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer. Also change the computer name in the \<service>/\<baseAddresses> element from localhost to fully qualified name of your service computer.  
   
 7.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
   
-8.  On the client, run `setup.bat client` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
+8.  On the client, run `setup.bat client` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
   
 9. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.  
   
 10. Copy the Client.cer file from the client directory to the service directory on the server.  
   
-11. On the client, run ImportServiceCert.bat in a Visual Studio command prompt opened with administrator privileges. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
+11. On the client, run ImportServiceCert.bat in a Developer Command Prompt for Visual Studio opened with administrator privileges. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
   
-12. On the server, run ImportClientCert.bat in a Visual Studio command prompt opened with administrator privileges. This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.  
+12. On the server, run ImportClientCert.bat in a Developer Command Prompt for Visual Studio opened with administrator privileges. This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.  
   
 13. On the server computer, launch Service.exe from the command prompt window.  
   
-14. On the client computer, launch Client.exe from a command prompt window. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+14. On the client computer, launch Client.exe from a command prompt window. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To clean up after the sample  
   
@@ -350,4 +350,4 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
 > [!NOTE]
 >  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.
 
-## See Also
+## See also

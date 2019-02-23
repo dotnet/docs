@@ -400,6 +400,6 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
   
  When you attach with an `IEnumerable` set of objects, a <xref:System.Data.Linq.DuplicateKeyException> is thrown when an already existing key is present. Remaining objects are not attached.  
   
-## See Also  
- [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+## See also
+- [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

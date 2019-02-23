@@ -33,7 +33,7 @@ The new format, \*.csproj, is an XML-based format. The following example shows t
 }
 ```
 
-No longer supported. In csproj, this is determined by the project filename, which is defined by the directory name. For example, `MyProjectName.csproj`.
+No longer supported. In csproj, this is determined by the project filename, which usually matches the directory name. For example, `MyProjectName.csproj`.
 
 By default, the project filename also specifies the value of the `<AssemblyName>` and `<PackageId>` properties.
 
@@ -672,6 +672,6 @@ For more information, see [Including content in a package](/nuget/schema/msbuild
 </ItemGroup>
 ```
 
-## See Also
+## See also
 
-* [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)
+- [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)

@@ -17,5 +17,5 @@ These topics provide high-level overview information about the [!INCLUDE[sqltecx
 |[XDocument Class Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/xdocument-class-overview.md)|Introduces the <xref:System.Xml.Linq.XDocument> class, which represents XML documents.|  
 |[How to: Build LINQ to XML Examples (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-build-linq-to-xml-examples.md)|Contains the `Imports` statements that are required to build the LINQ to XML examples.|  
   
-## See Also  
- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See also
+- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

@@ -431,6 +431,11 @@
             "redirect_url": "/dotnet/csharp/async/"
         },
         {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/index.md",
+            "redirect_url": "/dotnet/standard/assembly",
+            "redirect_document_id":true
+        },
+        {
             "source_path": "docs/csharp/programming-guide/concepts/linq/cloning-vs-attaching.md",
             "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2#attaching-vs-cloning"
         },
@@ -712,6 +717,74 @@
         {
             "source_path": "docs/framework/add-ins/walkthrough-create-extensible-app.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb788290(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384297(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/client-application-services-overview.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384339(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/creating-the-game1-class.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248547(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/creating-the-gamepiece-class.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248546(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/creating-the-gamepiececollection-class.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248550(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/full-code-listings.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248551(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/how-to-configure-client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384312(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384313(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/index.md",
+            "redirect_url": "/dotnet/framework/develop-client-apps"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/manipulations-and-inertia.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248545(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/manipulations-and-inertia-overview.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248549(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/use-manipulations-and-inertia-in-an-xna-application.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248548(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/walkthrough-using-client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546195(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/msl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/msl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/ssdl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec"
         },
         {
             "source_path": "docs/framework/data/adonet/sql/linq/linq-to-sql-with-tightly-coupled-client-server-applications.md",
@@ -1894,6 +1967,11 @@
             "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
         },
         {
+            "source_path": "docs/standard/native-interop.md",
+            "redirect_url": "/dotnet/standard/native-interop/index",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md",
             "redirect_url": "/dotnet/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables",
             "redirect_document_id": true
@@ -1920,8 +1998,24 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
         },
         {
+            "source_path": "docs/standard/threading/autoresetevent.md",
+            "redirect_url": "/dotnet/api/system.threading.autoresetevent"
+        },
+        {
+            "source_path": "docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md",
+            "redirect_url": "/dotnet/standard/threading/overview-of-synchronization-primitives#thread-interaction-or-signaling"
+        },
+        {
             "source_path": "docs/standard/threading/interlocked-operations.md",
             "redirect_url": "/dotnet/api/system.threading.interlocked"
+        },
+        {
+            "source_path": "docs/standard/threading/managed-thread-states.md",
+            "redirect_url": "/dotnet/api/system.threading.threadstate"
+        },
+        {
+            "source_path": "docs/standard/threading/manualresetevent-and-manualreseteventslim.md",
+            "redirect_url": "/dotnet/api/system.threading.manualresetevent"
         },
         {
             "source_path": "docs/standard/threading/reader-writer-locks.md",
@@ -1967,6 +2061,86 @@
             "source_path": "docs/visual-basic/developing-apps/programming/drives-directories-files/processing.md",
             "redirect_url": "/dotnet/visual-basic/developing-apps/programming/drives-directories-files/index",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488279(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/deploying-applications-that-reference-power-packs-controls-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488314(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488194(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-change-the-layout-of-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488199(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-create-a-master-detail-form-by-using-two-datarepeater-controls.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488313(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488185(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-display-bound-data-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488274(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-display-item-headers-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488200(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-display-unbound-controls-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488315(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-draw-lines-with-the-lineshape-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488281(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488183(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-enable-tabbing-between-shapes-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488184(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-search-data-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488282(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488280(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488275(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/line-and-shape-controls-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488190(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/power-packs-controls.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488277(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/troubleshooting-the-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488312(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/virtual-mode-in-the-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488276(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/walkthrough-displaying-data-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488278(v=vs.120)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/using-ide/help-for-event-handlers.md",
@@ -2097,6 +2271,10 @@
         {
             "source_path": "docs/visual-basic/misc/next-control-variable-does-not-match-for-loop-control-variable.md",
             "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/index.md",
+            "redirect_url": "/dotnet/standard/assembly"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",

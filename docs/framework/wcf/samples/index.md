@@ -1,5 +1,5 @@
 ---
-title: "Windows Communication Foundation (WCF) samples documentation"
+title: "Windows Communication Foundation (WCF) samples"
 ms.date: 09/24/2018
 ms.assetid: 89d4efce-7832-4dd5-82a8-0e574b3302f9
 ---

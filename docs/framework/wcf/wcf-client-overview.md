@@ -165,6 +165,6 @@ End Interface
 ## Calling Services Using WCF Client Channels  
  WCF client types extend <xref:System.ServiceModel.ClientBase%601>, which itself derives from <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> interface to expose the underlying channel system. You can invoke services by using the target service contract with the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class. For details, see [WCF Client Architecture](../../../docs/framework/wcf/feature-details/client-architecture.md).  
   
-## See Also  
- <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>  
- <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>
+## See also
+- <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>
+- <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>

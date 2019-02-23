@@ -45,10 +45,10 @@ Select [ var1 = ] fieldName1 [, [ var2 = ] fieldName2 [...] ]
   
  [!code-vb[VbSimpleQuerySamples#30](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/select-clause_4.vb)]  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)  
- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+## See also
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
+- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)
+- [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)

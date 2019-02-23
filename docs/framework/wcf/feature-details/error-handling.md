@@ -16,7 +16,7 @@ ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
   
  Application blocks aim to incorporate commonly used best practices and provide a common approach for exception handling throughout your application. On the other hand, custom error handlers and fault contracts developed on one’s own can also be very useful. For instance, custom error handlers provide an excellent opportunity to automatically promote all exceptions to FaultExceptions and also to add logging capabilities to your application.  
   
- For more information, please see [Microsoft Enterprise Library](https://msdn.microsoft.com/library/ff632023.aspx).  
+ For more information, please see [Microsoft Enterprise Library](https://docs.microsoft.com/previous-versions/msp-n-p/ff632023(v=pandp.10)).  
   
 ### Dealing with Expected Exceptions  
  The proper course of action is to catch expected exceptions in every operation or relevant extensibility point, decide whether they can be recovered from, and return the proper custom fault in a FaultException\<T>  
@@ -61,5 +61,5 @@ ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
   
  A type conversion dispatch failure can be inspected the same as with many other types of dispatch failures by installing an error handler. The IErrorHandler extensibility point is called to handle service-level exceptions. From there, the response to be sent back to the caller – as well as perform any custom tasks and reporting – may be chosen.  
   
-## See Also  
- [Basic WCF Programming](../basic-wcf-programming.md)
+## See also
+- [Basic WCF Programming](../basic-wcf-programming.md)

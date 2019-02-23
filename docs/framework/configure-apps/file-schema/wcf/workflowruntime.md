@@ -1,9 +1,9 @@
 ---
-title: "&lt;workflowRuntime&gt;"
+title: "<workflowRuntime>"
 ms.date: "03/30/2017"
 ms.assetid: 304c70fa-78d1-4d0f-b89f-0ca23d734c6f
 ---
-# &lt;workflowRuntime&gt;
+# \<workflowRuntime>
 Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRuntime> for hosting workflow-based Windows Communication Foundation (WCF) services.  
   
  \<system.ServiceModel>  
@@ -15,17 +15,18 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ## Syntax  
   
 ```xml  
-<workflowRuntime cachedInstanceExpiration="TimeSpan"  
-                                  enablePerformanceCounters="Boolean"  
-                                  name="String"  
-                                  validateOnCreate="Boolean">  
-                 <commonParameters>  
-                    <add name="String" value="String" />  
-                 </commonParameters>  
-                 <services>  
-                    <add type="String"/>  
-                 </services>  
-</workflowRuntime>  
+<workflowRuntime cachedInstanceExpiration="TimeSpan"
+                 enablePerformanceCounters="Boolean"
+                 name="String"
+                 validateOnCreate="Boolean">
+  <commonParameters>
+    <add name="String"
+         value="String" />
+  </commonParameters>
+  <services>
+    <add type="String" />
+  </services>
+</workflowRuntime>
 ```  
   
 ## Attributes and Elements  
@@ -59,25 +60,25 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ## Example  
   
 ```xml  
-<serviceBehaviors>  
-   <behavior name="ServiceBehavior">  
-      <workflowRuntime name="WorkflowServiceHostRuntime"  
-                       validateOnCreate="true"  
-                       enablePerformanceCounters="true">  
-         <commonParameters>  
-            <add name="ConnectionString" value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;" />  
-            <add name="EnableRetries" value="True" />  
-         </commonParameters>  
-         <services>  
-             <add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common"/>  
-         </services>  
-      </workflowRuntime>  
-   </behavior>  
-</serviceBehaviors>  
+<serviceBehaviors>
+   <behavior name="ServiceBehavior">
+      <workflowRuntime name="WorkflowServiceHostRuntime"
+                       validateOnCreate="true"
+                       enablePerformanceCounters="true">
+         <commonParameters>
+            <add name="ConnectionString" value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;" />
+            <add name="EnableRetries" value="True" />
+         </commonParameters>
+         <services>
+             <add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common"/>
+         </services>
+      </workflowRuntime>
+   </behavior>
+</serviceBehaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>  
- <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>  
- <xref:System.Workflow.Runtime.WorkflowRuntime>  
- [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
+## See also
+- <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>
+- <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>
+- <xref:System.Workflow.Runtime.WorkflowRuntime>
+- [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))

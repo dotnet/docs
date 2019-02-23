@@ -22,6 +22,6 @@ The <xref:System.Windows.Controls.ScrollViewer> control creates a scrollable reg
   
  <xref:System.Windows.Controls.ScrollViewer>  
   
-## See Also  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+## See also
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Layout](../../../../docs/framework/wpf/advanced/layout.md)

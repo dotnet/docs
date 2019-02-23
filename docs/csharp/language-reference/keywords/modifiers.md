@@ -29,8 +29,8 @@ Modifiers are used to modify declarations of types and type members. This sectio
 |[virtual](../../../csharp/language-reference/keywords/virtual.md)|Declares a method or an accessor whose implementation can be changed by an overriding member in a derived class.|  
 |[volatile](../../../csharp/language-reference/keywords/volatile.md)|Indicates that a field can be modified in the program by something such as the operating system, the hardware, or a concurrently executing thread.|  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)

@@ -73,7 +73,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
  [!code-csharp[DataWorks SqlConnectionStringBuilder.UserNamePwd#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlConnectionStringBuilder.UserNamePwd/CS/source.cs#1)]
  [!code-vb[DataWorks SqlConnectionStringBuilder.UserNamePwd#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlConnectionStringBuilder.UserNamePwd/VB/source.vb#1)]  
   
-## See Also  
- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)  
- [Privacy and Data Security](../../../../docs/framework/data/adonet/privacy-and-data-security.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)
+- [Privacy and Data Security](../../../../docs/framework/data/adonet/privacy-and-data-security.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

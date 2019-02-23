@@ -3,7 +3,7 @@ title: Cluster iris flowers using a clustering learner - ML.NET
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
 ms.author: johalex
-ms.date: 12/17/2018
+ms.date: 02/19/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET so that I can build a model to cluster iris flowers based on its parameters.
@@ -51,7 +51,7 @@ As you don't know to which group each flower belongs to, you choose the [unsuper
 
 ## Prepare the data
 
-1. Download the [iris.data](https://github.com/dotnet/machinelearning/blob/master/test/data/iris.data) data set and save it to the *Data* folder you've created at the previous step. For more information about the iris data set, see the [Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set) Wikipedia page and the [Iris Data Set](http://archive.ics.uci.edu/ml/datasets/Iris) page, which is the source of the data set.
+1. Download the [iris.data](https://github.com/dotnet/machinelearning/blob/master/test/data/iris.data) data set and save it to the *Data* folder you've created at the previous step. For more information about the iris data set, see the [Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set) Wikipedia page and the [Iris Data Set](https://archive.ics.uci.edu/ml/datasets/Iris) page, which is the source of the data set.
 
 1. In **Solution Explorer**, right-click the *iris.data* file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
@@ -79,9 +79,9 @@ Remove the existing class definition and add the following code, which defines t
 
 [!code-csharp[Define data classes](~/samples/machine-learning/tutorials/IrisFlowerClustering/IrisData.cs#ClassDefinitions)]
 
-`IrisData` is the input data class and has definitions for each feature from the data set. Use the [Column](xref:Microsoft.ML.Runtime.Api.ColumnAttribute) attribute to specify the indices of the source columns in the data set file.
+`IrisData` is the input data class and has definitions for each feature from the data set. Use the [LoadColumn](xref:Microsoft.ML.Data.LoadColumnAttribute) attribute to specify the indices of the source columns in the data set file.
 
-The `ClusterPrediction` class represents the output of the clustering model applied to an `IrisData` instance. Use the [ColumnName](xref:Microsoft.ML.Runtime.Api.ColumnNameAttribute) attribute to bind the `PredictedClusterId` and `Distances` fields to the **PredictedLabel** and **Score** columns respectively. In case of the clustering task those columns have the following meaning:
+The `ClusterPrediction` class represents the output of the clustering model applied to an `IrisData` instance. Use the [ColumnName](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute to bind the `PredictedClusterId` and `Distances` fields to the **PredictedLabel** and **Score** columns respectively. In case of the clustering task those columns have the following meaning:
 
 - **PredictedLabel** column contains the ID of the predicted cluster.
 - **Score** column contains an array with squared Euclidean distances to the cluster centroids. The array length is equal to the number of clusters.
@@ -122,9 +122,9 @@ Add the following code to the `Main` method to setup the way to load data:
 
 [!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#SetupTextLoader)]
 
-Note that the column names and indices match the schema defined by the `IrisData` class. The <xref:Microsoft.ML.Runtime.Data.DataKind.R4?displayProperty=nameWithType> value specifies the `float` type.
+Use the [generic `CreateTextLoader`](xref:Microsoft.ML.TextLoaderSaverCatalog.CreateTextLoader%60%601(Microsoft.ML.DataOperationsCatalog,System.Boolean,System.Char,System.Boolean,System.Boolean,System.Boolean)) method to infer the dataset schema from the `IrisData` class definition.
 
-Use instantiated <xref:Microsoft.ML.Runtime.Data.TextLoader> instance to create an <xref:Microsoft.ML.Runtime.Data.IDataView> instance, which represents the data source for the training data set:
+Use instantiated <xref:Microsoft.ML.Data.TextLoader> instance to create an <xref:Microsoft.Data.DataView.IDataView> instance, which represents the data source for the training data set:
 
 [!code-csharp[Create IDataView](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreateDataView)]
 
@@ -155,7 +155,7 @@ At this point, you have a model that can be integrated into any of your existing
 
 ## Use the model for predictions
 
-To make predictions, use the <xref:Microsoft.ML.Runtime.Data.PredictionFunction%602> class that takes instances of the input type through the transformer pipeline and produces instances of the output type. Add the following line to the `Main` method to create an instance of that class:
+To make predictions, use the <xref:Microsoft.ML.PredictionEngine%602> class that takes instances of the input type through the transformer pipeline and produces instances of the output type. Add the following line to the `Main` method to create an instance of that class:
 
 [!code-csharp[Create predictor](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#Predictor)]
 

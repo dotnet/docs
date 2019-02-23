@@ -50,6 +50,6 @@ public class ComplexNumber
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\POCO`  
   
-## See Also  
- <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>  
- [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)
+## See also
+- <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>
+- [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)

@@ -15,7 +15,7 @@ Keep the following principles in mind any time you write F# code, especially in 
 
 1. **Good F# code is succinct, expressive, and composable**
 
-    F# has many features that allow you to express actions in fewer lines of code and reuse generic functionality. The F# core library also contains many useful types and functions for working with common collections of data. Composition of your own functions and those in the F# core library (or other libraries) is a part of routine idiomatic F# programming. As a general rule, if you can express a solution to a problem in fewer lines of code, other developers (or your future self) will be appreciative. It's also highly recommended that you use a library such as FSharp.Core, the [vast .NET libraries](https://docs.microsoft.com/dotnet/api/) that F# runs on, or a third-party package on [NuGet](https://www.nuget.org/) when you need to do a nontrivial task.
+    F# has many features that allow you to express actions in fewer lines of code and reuse generic functionality. The F# core library also contains many useful types and functions for working with common collections of data. Composition of your own functions and those in the F# core library (or other libraries) is a part of routine idiomatic F# programming. As a general rule, if you can express a solution to a problem in fewer lines of code, other developers (or your future self) will be appreciative. It's also highly recommended that you use a library such as FSharp.Core, the [vast .NET libraries](../../../api/index.md) that F# runs on, or a third-party package on [NuGet](https://www.nuget.org/) when you need to do a nontrivial task.
 
 2. **Good F# code is interoperable**
 

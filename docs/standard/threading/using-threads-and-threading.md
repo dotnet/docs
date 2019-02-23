@@ -48,6 +48,6 @@ The following table presents some of the <xref:System.Threading.Thread> properti
 
 ## See also
 
-- <xref:System.Threading.Thread?displayProperty=nameWithType>  
-- [Threads and Threading](threads-and-threading.md)  
-- [Parallel Programming](../parallel-programming/index.md)  
+- <xref:System.Threading.Thread?displayProperty=nameWithType>
+- [Threads and Threading](threads-and-threading.md)
+- [Parallel Programming](../parallel-programming/index.md)

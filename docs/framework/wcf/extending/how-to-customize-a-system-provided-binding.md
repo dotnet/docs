@@ -44,8 +44,8 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
      [!code-csharp[C_HowTo_ChangeStandardBinding#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_changestandardbinding/cs/program.cs#3)]
      [!code-vb[C_HowTo_ChangeStandardBinding#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_changestandardbinding/vb/program.vb#3)]  
   
-## See Also  
- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
- <xref:System.ServiceModel.BasicHttpBinding>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)
+## See also
+- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
+- <xref:System.ServiceModel.BasicHttpBinding>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)

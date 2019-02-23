@@ -1,9 +1,9 @@
 ---
-title: "&lt;localClientSettings&gt; element"
+title: "<localClientSettings> element"
 ms.date: "03/30/2017"
 ms.assetid: 4680ace5-f4e1-4fcb-b9d8-a4a4af5cd7ae
 ---
-# &lt;localClientSettings&gt; element
+# \<localClientSettings> element
 Specifies the security settings of a local client for this binding.  
   
  \<system.serviceModel>  
@@ -15,19 +15,19 @@ Specifies the security settings of a local client for this binding.
 ## Syntax  
   
 ```xml  
-<security>  
-   <localClientSettings cacheCookies="Boolean"  
-      cookieRenewalThresholdPercentage="Integer"  
-      detectReplays="Boolean"  
-      maxClockSkew="TimeSpan"  
-      maxCookieCachingTime="TimeSpan"  
-      reconnectTransportOnFailure="Boolean"  
-      replayCacheSize="Integer"  
-      replayWindow="TimeSpan"  
-      sessionKeyRenewalInterval="TimeSpan"  
-      sessionKeyRolloverInterval="TimeSpan"  
-      timestampValidityDuration="TimeSpan" />  
-</security>  
+<security>
+   <localClientSettings cacheCookies="Boolean"
+                        cookieRenewalThresholdPercentage="Integer"
+                        detectReplays="Boolean"
+                        maxClockSkew="TimeSpan"
+                        maxCookieCachingTime="TimeSpan"
+                        reconnectTransportOnFailure="Boolean"
+                        replayCacheSize="Integer"
+                        replayWindow="TimeSpan"
+                        sessionKeyRenewalInterval="TimeSpan"
+                        sessionKeyRolloverInterval="TimeSpan"
+                        timestampValidityDuration="TimeSpan" />
+</security>
 ```  
   
 ## Attributes and Elements  
@@ -62,15 +62,15 @@ Specifies the security settings of a local client for this binding.
 ## Remarks  
  The settings are local in the sense that they are not settings derived from the security policy of the service.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement>  
- <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalClientSettings%2A>  
- <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings%2A>  
- <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
- [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md)
+## See also
+- <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement>
+- <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalClientSettings%2A>
+- <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings%2A>
+- <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md)

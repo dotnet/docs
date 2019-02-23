@@ -25,9 +25,6 @@ The topics in this section demonstrate how to use the printing and print system 
  [Enumerate a Subset of Print Queues](../../../../docs/framework/wpf/advanced/how-to-enumerate-a-subset-of-print-queues.md)  
  Instructions for generating a list of printers having certain characteristics.  
   
- [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](https://msdn.microsoft.com/library/a3600218-1ea5-478a-9853-6560464f2885)  
- Extended discussion of how managed code programmers can extend the Print Schema to specialty printing devices or printers with new or uncommon features.  
-  
  [Get Print System Object Properties Without Reflection](../../../../docs/framework/wpf/advanced/how-to-get-print-system-object-properties-without-reflection.md)  
  Instructions for how to discover at runtime print system object's properties and their types.  
   
@@ -40,10 +37,10 @@ The topics in this section demonstrate how to use the printing and print system 
  [Validate and Merge PrintTickets](../../../../docs/framework/wpf/advanced/how-to-validate-and-merge-printtickets.md)  
  Instructions for checking that a print ticket is valid and that it does not request anything that is not supported by the printer.  
   
-## See Also  
- <xref:System.Printing>  
- <xref:System.Printing.IndexedProperties>  
- <xref:System.Printing.Interop>  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [XPS](https://www.microsoft.com/xps)
+## See also
+- <xref:System.Printing>
+- <xref:System.Printing.IndexedProperties>
+- <xref:System.Printing.Interop>
+- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [XPS Documents](/windows/desktop/printdocs/documents)

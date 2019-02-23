@@ -42,8 +42,8 @@ A Windows Forms control inherits many properties form the base class <xref:Syste
  [Attributes in Windows Forms Controls](../../../../docs/framework/winforms/controls/attributes-in-windows-forms-controls.md)  
  Describes the attributes you can apply to properties or other members of your custom controls and components.  
   
- [Design-Time Attributes for Components](https://msdn.microsoft.com/library/12050fe3-9327-4509-9e21-4ee2494b95c3)  
+ [Design-Time Attributes for Components](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/tk67c2t8(v=vs.120))  
  Lists metadata attributes to apply to components and controls so that they are displayed correctly at design time in visual designers.  
   
- [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
+ [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))  
  Describes how to implement classes such as editors and designers that provide design-time support.

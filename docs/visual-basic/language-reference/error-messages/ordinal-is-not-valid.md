@@ -22,5 +22,5 @@ Your call to a dynamic-link library (DLL) indicated to use a number instead of a
   
 3.  Isolate the procedure call causing the problem by commenting out the code. Write a `Declare` statement for the procedure, and report the problem to the type library vendor.  
   
-## See Also  
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+## See also
+- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)

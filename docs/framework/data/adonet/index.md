@@ -38,24 +38,21 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  Describes features and behaviors that are specific to the .NET Framework Data Provider for Oracle.  
   
 ## Related Sections  
- [PAVE Security in Native and .NET Framework Code](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
- Provides links to security topics for Visual Studio, the .NET Framework, and cryptography.  
+ [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md)  
+ Provides links to LINQ topics and samples using C#.  
   
- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
- Provides links to LINQ topics and samples.  
+ [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)  
+ Provides links to LINQ topics and samples using Visual Basic.  
   
  [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
  Describes how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to deploy data services on the Web or an intranet that implement the Open Data Protocol (OData).  
   
- [Core Development Technologies](https://msdn.microsoft.com/library/csxbhtye.aspx)  
+ [.NET Framework Development Guide](../../development-guide.md)  
  Provides links to information about standard development tasks in the .NET Framework.  
   
- [Advanced Development Technologies](https://msdn.microsoft.com/library/a493kdy6.aspx)  
- Provides links to information about sophisticated development tasks and techniques in the .NET Framework.  
+ [Samples and tutorials](../../../samples-and-tutorials/index.md)  
+ Provides a list of .NET samples and tutorials.
   
- [Samples and Quickstarts](https://msdn.microsoft.com/library/ms184422.aspx)  
- Provides complete listings of all samples and QuickStart samples associated with the .NET Framework.  
-  
-## See Also  
- [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

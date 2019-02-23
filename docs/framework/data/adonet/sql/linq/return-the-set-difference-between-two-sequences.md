@@ -17,6 +17,6 @@ Use the <xref:System.Linq.Queryable.Except%2A> operator to return the set differ
   
  In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the <xref:System.Linq.Queryable.Except%2A> operation is well defined only on sets. The semantics for multisets is undefined.  
   
-## See Also  
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)
+## See also
+- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)

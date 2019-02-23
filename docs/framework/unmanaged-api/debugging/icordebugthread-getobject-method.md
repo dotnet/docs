@@ -42,5 +42,5 @@ HRESULT GetObject (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- <xref:System.Threading.Thread>
+## See also
+- <xref:System.Threading.Thread>

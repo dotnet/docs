@@ -26,19 +26,19 @@ The `TextFieldParser` object allows you to parse and process very large file tha
 ## Parsing files with multiple formats  
  The `PeekChars` method of the `TextFieldParser` object can be used to check each field before reading it, allowing you to define multiple formats for the fields and react accordingly. For more information, see [How to: Read From Text Files with Multiple Formats](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md).  
   
-## See also  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLineNumber%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.FieldWidths%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.HasFieldsEnclosedInQuotes%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.LineNumber%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TrimWhiteSpace%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A>
+## See also
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLineNumber%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.FieldWidths%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.HasFieldsEnclosedInQuotes%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.LineNumber%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TrimWhiteSpace%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A>

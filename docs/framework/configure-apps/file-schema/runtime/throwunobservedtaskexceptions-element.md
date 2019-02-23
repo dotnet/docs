@@ -1,5 +1,5 @@
 ---
-title: "&lt;ThrowUnobservedTaskExceptions&gt; Element"
+title: "<ThrowUnobservedTaskExceptions> Element"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;ThrowUnobservedTaskExceptions&gt; Element
+# \<ThrowUnobservedTaskExceptions> Element
 Specifies whether unhandled task exceptions should terminate a running process.  
   
  \<configuration>  
@@ -84,6 +84,6 @@ Specifies whether unhandled task exceptions should terminate a running process.
  [!code-csharp[ThrowUnobservedTaskExceptions#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/throwunobservedtaskexceptions/cs/program.cs#1)]
  [!code-vb[ThrowUnobservedTaskExceptions#1](../../../../../samples/snippets/visualbasic/VS_Snippets_CLR/throwunobservedtaskexceptions/vb/program.vb#1)]  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

@@ -22,7 +22,7 @@ in fixing any errors you find, you may submit a [Pull Request](https://github.co
 
 ## See also
 
-- [C# Reference](../index.md)  
+- [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 
 >[!div class="step-by-step"]

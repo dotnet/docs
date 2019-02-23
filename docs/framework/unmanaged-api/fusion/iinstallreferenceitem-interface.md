@@ -33,6 +33,6 @@ Represents an item installed in the global assembly cache.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
- [FUSION_INSTALL_REFERENCE Structure](../../../../docs/framework/unmanaged-api/fusion/fusion-install-reference-structure.md)
+## See also
+- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
+- [FUSION_INSTALL_REFERENCE Structure](../../../../docs/framework/unmanaged-api/fusion/fusion-install-reference-structure.md)

@@ -41,8 +41,8 @@ Enables or disables compiler optimizations.
 vbc t2.vb -optimize  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)

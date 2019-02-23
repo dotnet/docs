@@ -49,5 +49,5 @@ HRESULT Map (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMapToken Interface](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md)
+## See also
+- [IMapToken Interface](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md)

@@ -1,10 +1,10 @@
 ---
-title: "&lt;sendMessageChannelCache&gt;"
+title: "<sendMessageChannelCache>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 241e428e-5030-4b13-8a0a-69f05288d3d9
 ---
-# &lt;sendMessageChannelCache&gt;
+# \<sendMessageChannelCache>
 A service behavior that enables the customization of the cache sharing levels, the settings of the channel factory cache, and the settings of the channel cache for workflows that send messages to service endpoints using Send messaging activities.  
   
 \<system.ServiceModel>  
@@ -86,8 +86,8 @@ A service behavior that enables the customization of the cache sharing levels, t
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Activities.SendMessageChannelCache>  
- <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>  
- <xref:System.ServiceModel.Activities.Send>  
- [Changing the Cache Sharing Levels for Send Activities](../../../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md)
+## See also
+- <xref:System.ServiceModel.Activities.SendMessageChannelCache>
+- <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>
+- <xref:System.ServiceModel.Activities.Send>
+- [Changing the Cache Sharing Levels for Send Activities](../../../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md)

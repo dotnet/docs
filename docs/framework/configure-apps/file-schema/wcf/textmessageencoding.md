@@ -1,9 +1,9 @@
 ---
-title: "&lt;textMessageEncoding&gt;"
+title: "<textMessageEncoding>"
 ms.date: "03/30/2017"
 ms.assetid: e6d834d0-356e-45eb-b530-bbefbb9ec3f0
 ---
-# &lt;textMessageEncoding&gt;
+# \<textMessageEncoding>
 Specifies the character encoding and message versioning used for text-based XML messages.  
   
  \<system.serviceModel>  
@@ -15,10 +15,10 @@ Specifies the character encoding and message versioning used for text-based XML 
 ## Syntax  
   
 ```xml  
-<textMessageEncoding maxReadPoolSize="Integer"  
-   maxWritePoolSize="Integer"  
-   messageVersion="Soap11Addressing10/Soap12Addressing10"  
-      writeEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding" />  
+<textMessageEncoding maxReadPoolSize="Integer"
+                     maxWritePoolSize="Integer"
+                     messageVersion="Soap11Addressing10/Soap12Addressing10"
+                     writeEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding" />
 ```  
   
 ## Attributes and Elements  
@@ -37,7 +37,7 @@ Specifies the character encoding and message versioning used for text-based XML 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<readerQuotas>](https://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
   
 ### Parent Elements  
   
@@ -53,20 +53,20 @@ Specifies the character encoding and message versioning used for text-based XML 
 ## Example  
   
 ```xml  
-<textMessageEncoding maxReadPoolSize="211"  
-    maxWritePoolSize="2132"  
-    messageVersion="Soap12Addressing10"  
-    textEncoding="utf-8" />  
+<textMessageEncoding maxReadPoolSize="211"
+                     maxWritePoolSize="2132"
+                     messageVersion="Soap12Addressing10"
+                     textEncoding="utf-8" />
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.TextMessageEncodingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
- <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>  
- [Choosing a Message Encoder](../../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)  
- [Message Encoding](../../../../../docs/framework/configure-apps/file-schema/wcf/message-encoding.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.TextMessageEncodingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
+- <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>
+- [Choosing a Message Encoder](../../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)
+- [Message Encoding](../../../../../docs/framework/configure-apps/file-schema/wcf/message-encoding.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

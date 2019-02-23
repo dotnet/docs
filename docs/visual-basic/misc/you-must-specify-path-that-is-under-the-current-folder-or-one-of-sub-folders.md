@@ -10,5 +10,5 @@ The specified path is not under the current directory. This may be a result of i
   
 -   Make sure you are supplying the correct path.  
   
-## See Also  
- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+## See also
+- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

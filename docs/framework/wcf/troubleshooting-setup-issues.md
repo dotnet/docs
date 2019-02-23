@@ -67,5 +67,5 @@ This topic describes how to troubleshoot Windows Communication Foundation (WCF) 
 aspnet_regiis.exe -i -enable  
 ```  
   
-## See Also  
- [Set-Up Instructions](../../../docs/framework/wcf/samples/set-up-instructions.md)
+## See also
+- [Set-Up Instructions](../../../docs/framework/wcf/samples/set-up-instructions.md)

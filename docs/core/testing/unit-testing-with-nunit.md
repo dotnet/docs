@@ -36,7 +36,7 @@ Make *PrimeService* the current directory and run the following command to creat
 dotnet new classlib
 ```
 
-Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you create a failing implementation of the `PrimeService` class:
+Rename *Class1.cs* to *PrimeService.cs*. You create a failing implementation of the `PrimeService` class:
 
 ```csharp
 using System;
@@ -103,15 +103,15 @@ The following outline shows the final solution layout:
         PrimeService.Tests.csproj
 ```
 
-Execute the following command in the *unit-testing-using-dotnet-test* directory:
+Execute the following command in the *unit-testing-using-nunit* directory:
 
 ```console
-dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
+dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. In the *PrimeService.Tests* directory, rename the *UnitTest1.cs* file to *PrimeService_IsPrimeShould.cs* and replace its entire contents with the following code:
+You write one failing test, make it pass, then repeat the process. In the *PrimeService.Tests* directory, rename the *UnitTest1.cs* file to *PrimeService_IsPrimeShould.cs* and replace its entire contents with the following code:
 
 ```csharp
 using NUnit.Framework;

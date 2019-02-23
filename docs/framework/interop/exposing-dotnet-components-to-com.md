@@ -36,14 +36,14 @@ Writing a .NET type and consuming that type from unmanaged code are distinct act
   
      COM developers can reference types in an assembly using the same tools and techniques they use today.  
   
-3.  [Call a .NET object](https://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33(v=vs.100)).  
+3.  [Call a .NET object](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100)).  
   
      COM developers can call methods on the .NET object the same way they call methods on any unmanaged type. For example, the COM **CoCreateInstance** API activates .NET objects.  
   
-4.  [Deploy an application for COM access](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100)).  
+4.  [Deploy an application for COM access](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100)).  
   
      A strong-named assembly can be installed in the global assembly cache and requires a signature from its publisher. Assemblies that are not strong named must be installed in the application directory of the client.  
   
-## See Also  
- [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)  
- [COM Interop Sample: COM Client and .NET Server](../../../docs/framework/interop/com-interop-sample-com-client-and-net-server.md)
+## See also
+- [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)
+- [COM Interop Sample: COM Client and .NET Server](../../../docs/framework/interop/com-interop-sample-com-client-and-net-server.md)

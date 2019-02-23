@@ -81,7 +81,7 @@ The [PageSetupDialog](../../../../docs/framework/winforms/controls/pagesetupdial
        System::EventHandler(this, &Form1::button1_Click);  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.PageSetupDialog>  
- [How to: Create Standard Windows Forms Print Jobs](../../../../docs/framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md)  
- [PageSetupDialog Component](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.PageSetupDialog>
+- [How to: Create Standard Windows Forms Print Jobs](../../../../docs/framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md)
+- [PageSetupDialog Component](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md)

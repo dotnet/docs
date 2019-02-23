@@ -22,5 +22,5 @@ class PnrpPeerResolverBindingElement : PeerResolverBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>
+## See also
+- <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>

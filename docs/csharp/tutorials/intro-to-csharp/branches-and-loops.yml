@@ -27,7 +27,7 @@ items:
         Console.WriteLine("The answer is greater than 10.");
     ```
 
-    Modify the declaration of `b` so that the sum is less than 10: 
+    Modify the declaration of `b` so that the sum is less than 10:
 
     ```csharp
     int b = 3;
@@ -42,9 +42,9 @@ items:
     > find those errors and report them to you. When the output
     > contains error messages, look closely at the example code,
     > and the code in the interactive window to see what to fix.
-    > That exercise will help you learn the structure of C# code.     
+    > That exercise will help you learn the structure of C# code.
 
-    This first sample shows the power of `if` and boolean types. A *boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it is skipped. 
+    This first sample shows the power of `if` and boolean types. A *boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it is skipped.
 
     This process of checking conditions and executing statements based on those conditions is very powerful. Let's explore more.
 
@@ -54,8 +54,8 @@ items:
 - title: Make if and else work together
   durationInMinutes: 10
   content: |
-    
-    To execute different code in both the true and false branches, you 
+
+    To execute different code in both the true and false branches, you
     create an `else` branch that executes when the condition is false. Try this:
 
     ```csharp
@@ -68,10 +68,10 @@ items:
     ```
 
     The statement following the `else` keyword executes only when the condition being tested is `false`. Combining `if` and `else` with boolean conditions provides all the power you need.
-    
+
     > [!IMPORTANT]
     > The indentation under the `if` and `else` statements is for human readers.
-    > The C# language doesn't treat indentation or white space as significant. 
+    > The C# language doesn't treat indentation or white space as significant.
     > The statement following the `if` or `else` keyword will be executed based
     > on the condition. All the samples in this tutorial follow a common
     > practice to indent lines based on the control flow of statements.
@@ -116,11 +116,11 @@ items:
         Console.WriteLine("Or the first number is not greater than the second");
     }
     ```
-    
+
     The `&&` represents "and". It means both conditions must be true to execute
     the statement in the true branch.  These examples also show that you can have multiple
     statements in each conditional branch, provided you enclose them in `{` and `}`.
-    
+
     You can also use  `||` to represent "or":
 
     ```csharp
@@ -174,7 +174,7 @@ items:
     > code will time out and you'll see no output from your program.
 
     The `while` loop tests the condition before executing the code
-    following the `while`. The `do` ... `while` loop executes the 
+    following the `while`. The `do` ... `while` loop executes the
     code first, and then checks the condition. It looks like this:
 
     ```csharp
@@ -185,9 +185,9 @@ items:
       counter++;
     } while (counter < 10);
     ```
-    
-    This `do` loop and the earlier `while` loop work the same. 
-    
+
+    This `do` loop and the earlier `while` loop work the same.
+
     Let's move on to one last loop statement.
 
     > [!NOTE]
@@ -203,12 +203,12 @@ items:
     for(int counter = 0; counter < 10; counter++)
     {
       Console.WriteLine($"Hello World! The counter is {counter}");
-    } 
+    }
     ```
 
     This does the same work as the `while` loop and the `do` loop you've
     already used. The `for` statement has three parts that control
-    how it works. 
+    how it works.
 
     The first part is the **for initializer**: `int counter = 0;` declares
     that `counter` is the loop variable, and sets its initial value to `0`.
@@ -238,7 +238,7 @@ items:
     constructs in the C# language, see if you can write C# code to
     find the sum of all integers 1 through 20 that are divisible
     by 3.  Here are a few hints:
-    
+
     - The `%` operator gives you the remainder of a division operation.
     - The `if` statement gives you the condition to see if a number should be part of the sum.
     - The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
@@ -271,7 +271,7 @@ items:
 - title: Congratulations!
   content: |
     You've completed the "branches and loops" interactive tutorial. You can click the **Interpolated strings** link below to start the next interactive tutorial, or you can visit the [.NET site](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Keep Learning" step brings you back to these tutorials.
-    
+
     You can learn more about these concepts in these topics:
 
     - [If and else statement](../../language-reference/keywords/if-else.md)

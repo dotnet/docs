@@ -12,7 +12,7 @@ ms.assetid: 91580b89-a0a8-4889-aecb-fddf8e63175f
 A resource is an object that can be reused in different places in your application. Examples of resources include brushes and styles. This overview describes how to use resources in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. You can also create and access resources by using code, or interchangeably between code and [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. For more information, see [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md).  
   
 > [!NOTE]
->  The resource files described in this topic are different than the resource files described in [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md) and different than the embedded or linked resources described in [Managing Application Resources (.NET)](https://msdn.microsoft.com/library/f2582734-8ada-4baa-8a7c-e2ef943ddf7e).  
+>  The resource files described in this topic are different than the resource files described in [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md) and different than the embedded or linked resources described in [Manage Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
   
   
 <a name="usingresources"></a>   
@@ -147,12 +147,12 @@ A resource is an object that can be reused in different places in your applicati
   
  <xref:System.Windows.DataTemplate> also has an implicit key. The implicit key for a <xref:System.Windows.DataTemplate> is the <xref:System.Windows.DataTemplate.DataType%2A> property value. <xref:System.Windows.DataTemplate.DataType%2A> can also be specified as the name of the type rather than explicitly using [{x:Type...}](../../../../docs/framework/xaml-services/x-type-markup-extension.md). For details, see [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md).  
   
-## See Also  
- <xref:System.Windows.ResourceDictionary>  
- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)  
- [Define and Reference a Resource](../../../../docs/framework/wpf/advanced/how-to-define-and-reference-a-resource.md)  
- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
- [x:Type Markup Extension](../../../../docs/framework/xaml-services/x-type-markup-extension.md)  
- [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)  
- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)
+## See also
+- <xref:System.Windows.ResourceDictionary>
+- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)
+- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)
+- [Define and Reference a Resource](../../../../docs/framework/wpf/advanced/how-to-define-and-reference-a-resource.md)
+- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)
+- [x:Type Markup Extension](../../../../docs/framework/xaml-services/x-type-markup-extension.md)
+- [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)
+- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)

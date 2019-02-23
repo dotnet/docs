@@ -62,7 +62,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
     > [!NOTE]
     >  All these properties affect any paragraphs that contain selected text, and also the text that is typed after the current insertion point. For example, when a user selects a word within a paragraph and then adjusts the indentation, the new settings will apply to the entire paragraph that contains that word, and also to any paragraphs subsequently entered after the selected paragraph. For information about selecting text programmatically, see <xref:System.Windows.Forms.TextBoxBase.Select%2A>.  
   
-## See Also  
- <xref:System.Windows.Forms.RichTextBox>  
- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.RichTextBox>
+- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

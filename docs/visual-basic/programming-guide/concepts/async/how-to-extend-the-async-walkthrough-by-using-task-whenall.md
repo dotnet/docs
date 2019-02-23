@@ -415,5 +415,5 @@ End Class
   
 ## See also
 
-- <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>  
+- <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>
 - [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)

@@ -130,7 +130,7 @@ If you embed type information from a strong-named managed assembly, you can loos
                 p_UserInput = Console.ReadLine();  
             }  
         }  
-    )  
+    }  
     ```  
   
 9. Save the project.  
@@ -226,9 +226,9 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 6.  In File Explorer, open the output path folder (for example, C:\TypeEquivalenceSample). Double-click the TypeEquivalenceClient.exe to run the program. The program will reflect the new version of the TypeEquivalenceRuntime assembly without having been recompiled.  
   
-## See Also
+## See also
 
-- [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)  
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
-- [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)  
-- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)
+- [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)
+- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+- [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)
+- [Assemblies in .NET](../../../../standard/assembly/index.md)

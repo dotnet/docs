@@ -32,7 +32,7 @@ You need Visual Studio to complete this walkthrough.
 ## Create the Application Project
  In this section, you will create the application infrastructure, which includes a main page with two panels and a <xref:System.Windows.Controls.TextBox>.
 
-1.  Create a new WPF Application project in Visual Basic or Visual C# named `DragDropExample`. For more information, see [How to: Create a New WPF Application Project](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).
+1.  Create a new WPF Application project in Visual Basic or Visual C# named `DragDropExample`. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
 
 2.  Open MainWindow.xaml.
 
@@ -325,6 +325,6 @@ In this section, you enable the panels that host the Circle user controls to act
 
      ![Dragging a Circle while pressing the CTRL key](../../../../docs/framework/wpf/advanced/media/dragdrop-paneldrop.png "DragDrop_PanelDrop")
 
-## See Also
+## See also
 
 - [Drag and Drop Overview](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)

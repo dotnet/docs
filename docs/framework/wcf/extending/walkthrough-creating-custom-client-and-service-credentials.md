@@ -18,8 +18,6 @@ This topic shows how to implement custom client and service credentials and how 
   
  Both the <xref:System.ServiceModel.Description.ClientCredentials> and the <xref:System.ServiceModel.Description.ServiceCredentials> classes inherit from the abstract <xref:System.ServiceModel.Security.SecurityCredentialsManager> class that defines the contract for returning the <xref:System.IdentityModel.Selectors.SecurityTokenManager>.  
   
- For more information about the credentials classes and how they fit into the WCF security architecture, see [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
-  
  The default implementations provided in WCF support the system-provided credential types and create a security token manager that is capable of handling those credentials types.  
   
 ## Reasons to Customize  
@@ -174,13 +172,13 @@ This topic shows how to implement custom client and service credentials and how 
   
  Add support for configuration using the steps described previously in the procedures "`To create a configuration handler for custom client credentials`" and "`To register and use a custom client credentials configuration handler in the application configuration`." The only difference is to use the <xref:System.ServiceModel.Configuration.ServiceCredentialsElement> class instead of the <xref:System.ServiceModel.Configuration.ClientCredentialsElement> class as a base class for the configuration handler. The custom service credential element can then be used wherever the system-provided `<serviceCredentials>` element is used.  
   
-## See Also  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ServiceCredentials>  
- <xref:System.ServiceModel.Security.SecurityCredentialsManager>  
- <xref:System.IdentityModel.Selectors.SecurityTokenManager>  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>  
- [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)  
- [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)  
- [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)
+## See also
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ServiceCredentials>
+- <xref:System.ServiceModel.Security.SecurityCredentialsManager>
+- <xref:System.IdentityModel.Selectors.SecurityTokenManager>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>
+- [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)
+- [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)
+- [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)

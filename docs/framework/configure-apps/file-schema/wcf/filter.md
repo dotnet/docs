@@ -1,10 +1,10 @@
 ---
-title: "&lt;filter&gt;"
+title: "<filter>"
 ms.date: "03/30/2017"
 ms.assetid: 3266700b-904b-44e4-93a7-e06a1a445100
 ---
 
-# &lt;filter&gt;
+# \<filter>
 
 Defines a routing filter, which determines the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well any supporting data or parameters required by the filter.
 
@@ -12,20 +12,20 @@ Defines a routing filter, which determines the type of Windows Communication Fou
 \<routing>
 \<filters>
 \<filter>
-
-## Syntax
-
-```xml
+  
+## Syntax  
+  
+```xml  
 <routing>
   <filters>
-    <filter customType="String" 
-            filterData="String" 
-            filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath" 
+    <filter customType="String"
+            filterData="String"
+            filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"
             name="String" />
   </filters>
 </routing>
-```
-
+```  
+  
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.
@@ -51,6 +51,6 @@ None.
 
 ## See also
 
-<xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=nameWithType>    
-<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A?displayProperty=nameWithType>   
-<xref:System.ServiceModel.Routing.Configuration.FilterType?displayProperty=nameWithType>   
+- <xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.FilterType?displayProperty=nameWithType>

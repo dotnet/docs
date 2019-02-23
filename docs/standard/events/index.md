@@ -39,7 +39,7 @@ Events in the .NET Framework are based on the delegate model. The delegate model
   
  Delegates are multicast, which means that they can hold references to more than one event-handling method. For details, see the <xref:System.Delegate> reference page. Delegates provide flexibility and fine-grained control in event handling. A delegate acts as an event dispatcher for the class that raises the event by maintaining a list of registered event handlers for the event.  
   
- For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates do not work, you can define a delegate. Scenarios that require you to define a delegate are very rare, such as when you must work with code that does not recognize generics. You mark a delegate with the `delegate` in (C#) and `Delegate` (in Visual Basic) keyword in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`.  
+ For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates do not work, you can define a delegate. Scenarios that require you to define a delegate are very rare, such as when you must work with code that does not recognize generics. You mark a delegate with the `delegate` (in C#) and `Delegate` (in Visual Basic) keyword in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`.  
   
  [!code-csharp[EventsOverview#4](../../../samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#4)]
  [!code-vb[EventsOverview#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#4)]  
@@ -65,7 +65,7 @@ Events in the .NET Framework are based on the delegate model. The delegate model
  [!code-vb[EventsOverview#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#2)]  
   
 ## Static and Dynamic Event Handlers  
- The .NET Framework allows subscribers to register for event notifications either statically or dynamically. Static event handlers are in effect for the entire life of the class whose events they handle. Dynamic event handlers are explicitly activated and deactivated during program execution, usually in response to some conditional program logic. For example, they can be used if event notifications are needed only under certain conditions or if an application provides multiple event handlers and run-time conditions define the appropriate one to use. The example in the previous section shows how to dynamically add an event handler. For more information, see [Events](../../visual-basic/programming-guide/language-features/events/index.md) and [Events](../../csharp/programming-guide/events/index.md).  
+ The .NET Framework allows subscribers to register for event notifications either statically or dynamically. Static event handlers are in effect for the entire life of the class whose events they handle. Dynamic event handlers are explicitly activated and deactivated during program execution, usually in response to some conditional program logic. For example, they can be used if event notifications are needed only under certain conditions or if an application provides multiple event handlers and run-time conditions define the appropriate one to use. The example in the previous section shows how to dynamically add an event handler. For more information, see [Events](../../visual-basic/programming-guide/language-features/events/index.md) (in Visual Basic) and [Events](../../csharp/programming-guide/events/index.md) (in C#).  
   
 ## Raising Multiple Events  
  If your class raises multiple events, the compiler generates one field per event delegate instance. If the number of events is large, the storage cost of one field per delegate may not be acceptable. For those situations, the .NET Framework provides event properties that you can use with another data structure of your choice to store event delegates.  
@@ -83,10 +83,10 @@ Events in the .NET Framework are based on the delegate model. The delegate model
   
 ## See also
 
-- <xref:System.EventHandler>  
-- <xref:System.EventHandler%601>  
-- <xref:System.EventArgs>  
-- <xref:System.Delegate>  
-- [Events and routed events overview (UWP apps)](/windows/uwp/xaml-platform/events-and-routed-events-overview)  
-- [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)  
+- <xref:System.EventHandler>
+- <xref:System.EventHandler%601>
+- <xref:System.EventArgs>
+- <xref:System.Delegate>
+- [Events and routed events overview (UWP apps)](/windows/uwp/xaml-platform/events-and-routed-events-overview)
+- [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)
 - [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)

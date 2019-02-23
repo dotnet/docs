@@ -23,7 +23,7 @@ This example demonstrates how to bind XML data to an <xref:System.Windows.Contro
  [!code-csharp[XLinqExample#LoadDCFromFile](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XLinqExample/CSharp/Window1.xaml.cs#loaddcfromfile)]
  [!code-vb[XLinqExample#LoadDCFromFile](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/XLinqExample/visualbasic/window1.xaml.vb#loaddcfromfile)]  
   
- XML data can be stored as a XAML resource using <xref:System.Windows.Data.ObjectDataProvider>. For a complete example, see  [L2DBForm.xaml Source Code](https://msdn.microsoft.com/library/624e96d4-6d27-4195-8ac2-2f3835f6c57e). The following sample shows how code can set the data context to an object resource.  
+ XML data can be stored as a XAML resource using <xref:System.Windows.Data.ObjectDataProvider>. For a complete example, see  [L2DBForm.xaml source code](/visualstudio/designers/l2dbform-xaml-source-code). The following sample shows how code can set the data context to an object resource.  
   
  [!code-csharp[XLinqExample#LoadDCFromXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XLinqExample/CSharp/Window1.xaml.cs#loaddcfromxaml)]
  [!code-vb[XLinqExample#LoadDCFromXAML](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/XLinqExample/visualbasic/window1.xaml.vb#loaddcfromxaml)]  
@@ -33,8 +33,8 @@ This example demonstrates how to bind XML data to an <xref:System.Windows.Contro
  [!code-csharp[XLinqExample#BindToResults](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XLinqExample/CSharp/Window1.xaml.cs#bindtoresults)]
  [!code-vb[XLinqExample#BindToResults](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/XLinqExample/visualbasic/window1.xaml.vb#bindtoresults)]  
   
-## See Also  
- [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)  
- [WPF Data Binding with LINQ to XML Overview](/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview)  
- [WPF Data Binding Using LINQ to XML Example](/visualstudio/designers/wpf-data-binding-using-linq-to-xml-example)  
- [LINQ to XML Dynamic Properties](/visualstudio/designers/linq-to-xml-dynamic-properties)
+## See also
+- [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)
+- [WPF Data Binding with LINQ to XML Overview](/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview)
+- [WPF Data Binding Using LINQ to XML Example](/visualstudio/designers/wpf-data-binding-using-linq-to-xml-example)
+- [LINQ to XML Dynamic Properties](/visualstudio/designers/linq-to-xml-dynamic-properties)

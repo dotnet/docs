@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; Element for &lt;listeners&gt; for &lt;trace&gt;"
+title: "<add> Element for <listeners> for <trace>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/add"
@@ -8,10 +8,8 @@ helpviewer_keywords:
   - "<add> element for <listeners>"
   - "add element for <listeners>"
 ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;add&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
+# \<add> Element for \<listeners> for \<trace>
 Adds a listener to the **Listeners** collection.  
   
  \<configuration>  
@@ -97,11 +95,11 @@ Adds a listener to the **Listeners** collection.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.Trace>  
- <xref:System.Diagnostics.Debug>  
- <xref:System.Diagnostics.EventLogTraceListener>  
- <xref:System.Diagnostics.ConsoleTraceListener>  
- <xref:System.Diagnostics.TextWriterTraceListener>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+## See also
+- <xref:System.Diagnostics.Trace>
+- <xref:System.Diagnostics.Debug>
+- <xref:System.Diagnostics.EventLogTraceListener>
+- <xref:System.Diagnostics.ConsoleTraceListener>
+- <xref:System.Diagnostics.TextWriterTraceListener>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

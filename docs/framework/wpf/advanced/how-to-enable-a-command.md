@@ -33,5 +33,5 @@ The following example demonstrates how to use commanding in [!INCLUDE[TLA#tla_wi
  [!code-csharp[EnableCloseCommand#CloseCommandHandler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EnableCloseCommand/CSharp/Window1.xaml.cs#closecommandhandler)]
  [!code-vb[EnableCloseCommand#CloseCommandHandler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/EnableCloseCommand/VisualBasic/Window1.xaml.vb#closecommandhandler)]  
   
-## See Also  
- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)
+## See also
+- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)

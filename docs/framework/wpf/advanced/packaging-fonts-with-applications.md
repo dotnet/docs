@@ -25,7 +25,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
   
  [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] and [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] fonts contain a type flag, fsType, that indicates font embedding licensing rights for the font. However, this type flag only refers to embedded fonts stored in a document–it does not refer to fonts embedded in an application. You can retrieve the font embedding rights for a font by creating a <xref:System.Windows.Media.GlyphTypeface> object and referencing its <xref:System.Windows.Media.GlyphTypeface.EmbeddingRights%2A> property. Refer to the "OS/2 and Windows Metrics" section of the [OpenType Specification](https://www.microsoft.com/typography/otspec/os2.htm) for more information on the fsType flag.  
   
- The [Microsoft Typography](https://www.microsoft.com/typography/links/) Web site includes contact information that can help you locate a particular font vendor or find a font vendor for custom work.  
+ The [Microsoft Typography](https://docs.microsoft.com/typography/) Web site includes contact information that can help you locate a particular font vendor or find a font vendor for custom work.  
   
 <a name="adding_fonts_as_content_items"></a>   
 ## Adding Fonts as Content Items  
@@ -166,10 +166,10 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
   
 -   In cases where there is an incorrect reference, the application falls back to using an available font.  
   
-## See Also  
- <xref:System.Windows.Documents.Typography>  
- <xref:System.Windows.Media.FontFamily>  
- [Microsoft Typography: Links, News, and Contacts](https://www.microsoft.com/typography/links/)  
- [OpenType Specification](https://www.microsoft.com/typography/otspec/)  
- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
- [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)
+## See also
+- <xref:System.Windows.Documents.Typography>
+- <xref:System.Windows.Media.FontFamily>
+- [Microsoft Typography: Links, News, and Contacts](https://docs.microsoft.com/typography/)
+- [OpenType Specification](https://www.microsoft.com/typography/otspec/)
+- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)
+- [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)

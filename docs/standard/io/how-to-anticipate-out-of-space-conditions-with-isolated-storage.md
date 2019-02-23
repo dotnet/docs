@@ -41,6 +41,6 @@ Code that uses isolated storage is constrained by a [quota](../../../docs/standa
   
 ## See also
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)  
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
+- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
 - [How to: Obtain Stores for Isolated Storage](../../../docs/standard/io/how-to-obtain-stores-for-isolated-storage.md)

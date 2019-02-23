@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Windows Forms MonthCalendar Control&#39;s Appearance"
+title: "How to: Change the Windows Forms MonthCalendar Control's Appearance"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "MonthCalendar control [Windows Forms], formatting display"
 ms.assetid: d09b95c9-e108-4608-9b31-b9100c0677bf
 ---
-# How to: Change the Windows Forms MonthCalendar Control&#39;s Appearance
+# How to: Change the Windows Forms MonthCalendar Control's Appearance
 The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you to customize the calendar's appearance in many ways. For example, you can set the color scheme and choose to display or hide week numbers and the current date.  
   
 ### To change the month calendar's color scheme  
@@ -36,7 +36,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you t
     ```  
   
     > [!NOTE]
-    >  Starting with Windows Vista and depending on the theme, setting some properties might not change the appearance of the calendar. For example, if Windows is set to use the Aero theme, setting the <xref:System.Windows.Forms.MonthCalendar.BackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleBackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleForeColor%2A>, or <xref:System.Windows.Forms.MonthCalendar.TrailingForeColor%2A> properties has no effect. This is because an updated version of the calendar is rendered with an appearance that is derived at run time from the current operating system theme. If you want to use these properties and enable the earlier version of the calendar, you can disable visual styles for your application. Disabling visual styles might affect the appearance and behavior of other controls in your application. To disable visual styles in Visual Basic, open the Project Designer and uncheck the **Enable XP visual styles** check box. To disable visual styles in C#, open Program.cs and comment out `Application.EnableVisualStyles();`. For more information about visual styles, see [How to: Enable Windows XP Visual Styles](https://msdn.microsoft.com/library/0a038ade-31cf-4e56-9cfe-7a1e6b83b57f).  
+    >  Starting with Windows Vista and depending on the theme, setting some properties might not change the appearance of the calendar. For example, if Windows is set to use the Aero theme, setting the <xref:System.Windows.Forms.MonthCalendar.BackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleBackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleForeColor%2A>, or <xref:System.Windows.Forms.MonthCalendar.TrailingForeColor%2A> properties has no effect. This is because an updated version of the calendar is rendered with an appearance that is derived at run time from the current operating system theme. If you want to use these properties and enable the earlier version of the calendar, you can disable visual styles for your application. Disabling visual styles might affect the appearance and behavior of other controls in your application. To disable visual styles in Visual Basic, open the Project Designer and uncheck the **Enable XP visual styles** check box. To disable visual styles in C#, open Program.cs and comment out `Application.EnableVisualStyles();`. For more information about visual styles, see [Enabling Visual Styles](/windows/desktop/controls/cookbook-overview).  
   
 ### To display the current date at the bottom of the control  
   
@@ -97,8 +97,8 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you t
     monthCalendar1->ShowWeekNumbers = true;  
     ```  
   
-## See Also  
- [MonthCalendar Control](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)  
- [How to: Select a Range of Dates in the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/how-to-select-a-range-of-dates-in-the-windows-forms-monthcalendar-control.md)  
- [How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/display-specific-days-in-bold-with-wf-monthcalendar-control.md)  
- [How to: Display More than One Month in the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/display-more-than-one-month-wf-monthcalendar-control.md)
+## See also
+- [MonthCalendar Control](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)
+- [How to: Select a Range of Dates in the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/how-to-select-a-range-of-dates-in-the-windows-forms-monthcalendar-control.md)
+- [How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/display-specific-days-in-bold-with-wf-monthcalendar-control.md)
+- [How to: Display More than One Month in the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/display-more-than-one-month-wf-monthcalendar-control.md)

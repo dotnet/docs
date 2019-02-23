@@ -69,5 +69,5 @@ The following examples show how the `select` statement in C# and `Select` statem
  [!code-csharp[DLinqQueryExamples#65](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#65)]
  [!code-vb[DLinqQueryExamples#65](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#65)]  
   
-## See Also  
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+## See also
+- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)

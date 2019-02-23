@@ -29,6 +29,6 @@ You can use the code presented in the following example to determine whether an 
   
 ## See also
 
-- [Nullable types](index.md)  
-- [Using nullable types](using-nullable-types.md)  
-- <xref:System.Nullable.GetUnderlyingType%2A>  
+- [Nullable types](index.md)
+- [Using nullable types](using-nullable-types.md)
+- <xref:System.Nullable.GetUnderlyingType%2A>

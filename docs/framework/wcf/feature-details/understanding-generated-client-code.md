@@ -74,5 +74,5 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framewor
   
  [!code-csharp[C_GeneratedCodeFiles#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#13)]  
   
-## See Also  
- [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md)
+## See also
+- [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md)

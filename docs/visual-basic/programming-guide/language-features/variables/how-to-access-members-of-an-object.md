@@ -64,11 +64,11 @@ When you have an object variable that refers to an object, you often want to wor
   
      To be able to access the members of any object you assign to the object variable, you must set `Option Strict Off`. When you do this, the compiler cannot guarantee that a given member is exposed by the object you assign to the variable. If the object does not expose a member you attempt to access, a <xref:System.MemberAccessException> exception occurs.  
   
-## See Also  
- <xref:System.Object>  
- <xref:System.Windows.Forms.Form>  
- <xref:System.MemberAccessException>  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  
- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+## See also
+- <xref:System.Object>
+- <xref:System.Windows.Forms.Form>
+- <xref:System.MemberAccessException>
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
+- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)

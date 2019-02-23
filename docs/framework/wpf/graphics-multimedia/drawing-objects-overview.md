@@ -227,13 +227,13 @@ A GeometryDrawing used with a DrawingBrush
   
  [!code-csharp[DrawingMiscSnippets_snip#GraphicsMMRetrieveDrawings](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/EnumerateDrawingsExample.xaml.cs#graphicsmmretrievedrawings)]  
   
-## See Also  
- <xref:System.Windows.Media.Drawing>  
- <xref:System.Windows.Media.DrawingGroup>  
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/drawings-how-to-topics.md)
+## See also
+- <xref:System.Windows.Media.Drawing>
+- <xref:System.Windows.Media.DrawingGroup>
+- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/drawings-how-to-topics.md)

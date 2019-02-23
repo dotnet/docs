@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.assetid: 8cf0070d-793b-4876-b09e-d20d28280fab
 ---
 # Mouse Events in Windows Forms
-When you handle mouse input, you usually want to know the location of the mouse pointer and the state of the mouse buttons. This topic provides details on how to get this information from mouse events, and explains the order in which mouse click events are raised in Windows Forms controls. For a list and description of all of the mouse events, see [How Mouse Input Works in Windows Forms](../../../docs/framework/winforms/how-mouse-input-works-in-windows-forms.md).  Also see [Event Handlers Overview (Windows Forms)](https://msdn.microsoft.com/library/be6fx1bb\(v=vs.110\)), [Events Overview (Windows Forms)](https://msdn.microsoft.com/library/1h12f09z\(v=vs.110\))  
+When you handle mouse input, you usually want to know the location of the mouse pointer and the state of the mouse buttons. This topic provides details on how to get this information from mouse events, and explains the order in which mouse click events are raised in Windows Forms controls. For a list and description of all of the mouse events, see [How Mouse Input Works in Windows Forms](../../../docs/framework/winforms/how-mouse-input-works-in-windows-forms.md).  Also see [Event Handlers Overview (Windows Forms)](event-handlers-overview-windows-forms.md) and [Events Overview (Windows Forms)](events-overview-windows-forms.md).  
   
 ## Mouse Information  
  A <xref:System.Windows.Forms.MouseEventArgs> is sent to the handlers of mouse events related to clicking a mouse button and tracking mouse movements. <xref:System.Windows.Forms.MouseEventArgs> provides information about the current state of the mouse, including the location of the mouse pointer in client coordinates, which mouse buttons are pressed, and whether the mouse wheel has scrolled. Several mouse events, such as those that simply notify when the mouse pointer has entered or left the bounds of a control, send an <xref:System.EventArgs> to the event handler with no further information.  
@@ -135,5 +135,5 @@ When you handle mouse input, you usually want to know the location of the mouse 
     > [!NOTE]
     >  If the user moves the pointer out of the toggle control while the mouse button is down (such as moving the mouse off the <xref:System.Windows.Forms.Button> control while it is pressed), the toggle control will paint in the raised state and only the <xref:System.Windows.Forms.Control.MouseUp> event occurs. The <xref:System.Windows.Forms.Control.Click> or <xref:System.Windows.Forms.Control.MouseClick> events will not occur in this situation.  
   
-## See Also  
- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)
+## See also
+- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)

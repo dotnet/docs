@@ -1,5 +1,5 @@
 ---
-title: "&lt;source&gt; Element"
+title: "<source> Element"
 ms.date: "09/29/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source"
@@ -7,10 +7,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "<source> element"
   - "source element"
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;source&gt; Element
+# \<source> Element
 Specifies a trace source that initiates tracing messages.  
   
  \<configuration>  
@@ -78,6 +76,6 @@ Specifies a trace source that initiates tracing messages.
 </configuration>  
 ```  
   
-## See Also  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [Trace Switches](../../../../../docs/framework/debug-trace-profile/trace-switches.md)
+## See also
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [Trace Switches](../../../../../docs/framework/debug-trace-profile/trace-switches.md)

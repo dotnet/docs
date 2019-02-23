@@ -34,10 +34,10 @@ The Schema Object Model (SOM) in the Microsoft .NET Framework is a rich API that
   
 ## See also
 
-- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
-- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)  
-- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
-- [Editing XML Schemas](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
-- [Including or Importing XML Schemas](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
-- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
+- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
+- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)
+- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
+- [Editing XML Schemas](../../../../docs/standard/data/xml/editing-xml-schemas.md)
+- [Including or Importing XML Schemas](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)
+- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
 - [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)

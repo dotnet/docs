@@ -80,5 +80,5 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ## See also
 
-- <xref:System.Security.Cryptography.Xml>  
+- <xref:System.Security.Cryptography.Xml>
 - [How to: Sign XML Documents with Digital Signatures](../../../docs/standard/security/how-to-sign-xml-documents-with-digital-signatures.md)

@@ -1,47 +1,65 @@
 ---
 title: State and data in Docker applications
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn the available option to save state in containerized applications.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 02/15/2019
 ---
 # State and data in Docker applications
 
-A primitive of containers is immutability. When compared to a VM, containers don't disappear as a common occurrence. A VM might fail in various forms from dead processes, overloaded CPU, or a full or failed disk. Yet, we expect the VM to be available and RAID drives are commonplace to assure drive failures maintain data.
+In most cases, you can think of a container as an instance of a process. A process does not maintain persistent state. While a container can write to its local storage, assuming that an instance will be around indefinitely is like assuming that a single location in memory will be durable. Container images, like processes, should be assumed to have multiple instances and that they will eventually be killed; if they're managed with a container orchestrator, it should be assumed that they might get moved from one node or VM to another.
 
-However, containers are thought to be instances of processes. A process doesn't maintain durable state. Even though a container can write to its local storage, assuming that the instance will be around indefinitely would be equivalent to assuming a single-copy memory will be durable. You should assume that containers, like processes, are duplicated, killed, or, when managed with a container orchestrator, they might be moved.
+The following solutions are used to manage persistent data in Docker applications:
 
-Docker uses a feature known as an *overlay file system* to implement a copy-on-write process that stores any updated information to the root file system of a container, compared to the original image on which it is based. These changes are lost if the container is subsequently deleted from the system. A container, therefore, does not have persistent storage by default. Although it's possible to save the state of a container, designing a system around this would be in conflict with the principle of container architecture.
+From the Docker host, as [Docker Volumes](https://docs.docker.com/engine/admin/volumes/):
 
-To manage persistent data in Docker applications, there are common solutions:
+- **Volumes** are stored in an area of the host filesystem that is managed by Docker.
 
--   [**Data volumes**](https://docs.docker.com/engine/tutorials/dockervolumes/) These mount to the host, as just noted.
+- **Bind mounts** can map to any folder in the host filesystem, so access can't be controlled from a Docker process and can pose a security risk as a container could access sensitive OS folders.
 
--   [**Data volume containers**](https://docs.docker.com/engine/tutorials/dockervolumes/#/creating-and-mounting-a-data-volume-container) These provide shared storage across containers, using an external container that can cycle.
+- **tmpfs mounts** are like virtual folders that only exist in the host's memory and are never written to the filesystem.
 
--   [**Volume Plugins**](https://docs.docker.com/engine/tutorials/dockervolumes/#/mount-a-shared-storage-volume-as-a-data-volume) These mount volumes to remote locations, providing long-term persistence.
+From remote storage:
 
--   **Remote data sources** Examples include SQL and NO-SQL databases or cache services like Redis.
+- [Azure Storage](https://azure.microsoft.com/documentation/services/storage/) provides geo-distributable storage, providing a good long-term persistence solution for containers.
 
--   [**Azure Storage**](https://docs.microsoft.com/azure/storage/) This provides geo distributable platform as a service (PaaS) storage, providing the best of containers as long-term persistence.
+- Remote relational databases like [Azure SQL Database](https://azure.microsoft.com/services/sql-database/), NoSQL databases like [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction), or cache services like [Redis](https://redis.io/).
 
-Data volumes are specially designated directories within one or more containers that bypass the [Union File System](https://docs.docker.com/glossary/?term=Union%20file%20system). Data volumes are designed to maintain data, independent of the container's life cycle. Docker therefore never automatically deletes volumes when you remove a container, nor will it "garbage collect" volumes that are no longer referenced by a container. The host operating system can browse and edit the data in any volume freely, which is just another reason to use data volumes sparingly.
+From the Docker container:
 
-A [data volume container](https://docs.docker.com/glossary/?term=volume) is an improvement over regular data volumes. It is essentially a dormant container that has one or more data volumes created within it (as described earlier). The data volume container provides access to containers from a central mount point. The benefit of this method of access is that it abstracts the location of the original data, making the data container a logical mount point. It also allows "application" containers accessing the data container volumes to be created and destroyed while keeping the data persistent in a dedicated container.
+- Docker provides a feature named the *overlay file system*. This feature implements a copy-on-write task that stores updated information to the root file system of the container. That information "lays on top of" the original image on which the container is based. If the container is deleted from the system, those changes are lost. Therefore, while it is possible to save the state of a container within its local storage, designing a system based on this feature would conflict with the premise of container design, which by default is stateless.
 
-Figure 4-5 shows that regular Docker volumes can be placed on storage out of the containers themselves but within the host server/VM physical boundaries. *Docker volumes don't have the ability to use a volume from one host server/VM to another*.
+- However, Docker Volumes is now the preferred way to handle local data in Docker. If you need more information about storage in containers, check on [Docker storage drivers](https://docs.docker.com/engine/userguide/storagedriver/) and [About images, containers, and storage drivers](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/).
 
-![](./media/image5.png)
+The following provides additional detail about these options.
 
-Figure 4-5: Data volumes and external data sources for containers apps/containers
+**Volumes** are directories mapped from the host OS to directories in containers. When code in the container has access to the directory, that access is actually to a directory on the host OS. This directory is not tied to the lifetime of the container itself, and the directory is managed by Docker and isolated from the core functionality of the host machine. Thus, data volumes are designed to persist data independently of the life of the container. If you delete a container or an image from the Docker host, the data persisted in the data volume is not deleted.
 
-Due to the inability to manage data shared between containers that run on separate physical hosts, it is recommended that you not use volumes for business data unless the Docker host is a fixed host/VM, because when using Docker containers in an orchestrator, containers are expected to be moved from one to another host, depending on the optimizations to be performed by the cluster.
+Volumes can be named or anonymous (the default). Named volumes are the evolution of **Data Volume Containers** and make it easy to share data between containers. Volumes also support volume drivers that allow you to store data on remote hosts, among other options.
 
-Therefore, regular data volumes are a good mechanism to work with trace files, temporal files, or any similar concept that won't affect the business data consistency if or when your containers are moved across multiple hosts.
+**Bind mounts** have been available for a long time and allow the mapping of any folder to a mount point in a container. Bind mounts have more limitations than volumes and some important security issues, so volumes are the recommended option.
 
-[Volume plug-ins](https://docs.docker.com/engine/extend/plugins_volume/) provide data across all hosts in a cluster. Although not all volume plug-ins are created equally, volume plug-ins typically provide externalized persistent reliable storage from the immutable containers.
+**`tmpfs` mounts** are virtual folders that live only in the host's memory and are never written to the filesystem. They are fast and secure but use memory and are only meant for non-persistent data.
 
-Remote data sources and caches like SQL Database, DocumentDB, or a remote cache like Redis would be the same as developing without containers. This is one of the preferred, and proven, ways to store business application data.
+As shown in Figure 4-5, regular Docker volumes can be stored outside of the containers themselves but within the physical boundaries of the host server or VM. However, Docker containers cannot access a volume from one host server or VM to another. In other words, with these volumes, it is not possible to manage data shared between containers that run on different Docker hosts, although it could be achieved with a volume driver that supports remote hosts.
+
+![Volumes can be shared between containers, but only in the same host, unless you use a remote driver that supports remote hosts. ](./media/image5.png)
+
+**Figure 4-5**. Volumes and external data sources for container-based applications
+
+In addition, when Docker containers are managed by an orchestrator, containers might "move" between hosts, depending on the optimizations performed by the cluster. Therefore, it is not recommended that you use data volumes for business data. But they are a good mechanism to work with trace files, temporal files, or similar, that will not impact business data consistency.
+
+**Remote data sources and cache** tools like Azure SQL Database, Azure Cosmos DB, or a remote cache like Redis can be used in containerized applications the same way they are used when developing without containers. This is a proven way to store business application data.
+
+**Azure Storage.** Business data usually needs to be placed in external resources or databases, like Azure Storage. Azure Storage provides the following services in the cloud:
+
+- Blob storage stores unstructured object data. A blob can be any type of text or binary data, such as document or media files (images, audio, and video files). Blob storage is also referred to as Object storage.
+
+- File storage offers shared storage for legacy applications using the standard SMB protocol. Azure virtual machines and cloud services can share file data across application components via mounted shares. On-premises applications can access file data in a share via the File Service REST API.
+
+- Table storage stores structured datasets. Table storage is a NoSQL key-attribute data store, which allows rapid development and fast access to large quantities of data.
+
+**Relational databases and NoSQL databases.** There are many choices for external databases, from relational databases like SQL Server, PostgreSQL, Oracle, or NoSQL databases like Azure Cosmos DB, MongoDB, etc. These databases are not going to be explained as part of this guide since they are a different topic altogether.
 
 >[!div class="step-by-step"]
 >[Previous](monolithic-applications.md)

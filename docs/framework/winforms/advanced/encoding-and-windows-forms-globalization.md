@@ -32,4 +32,4 @@ Windows Forms applications are entirely Unicode-enabled, meaning that each chara
   
 ## See also
 
-[Globalizing Windows Forms applications](globalizing-windows-forms.md)
+- [Globalizing Windows Forms applications](globalizing-windows-forms.md)

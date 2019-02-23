@@ -100,10 +100,10 @@ Loop { While | Until } condition
   
  [!code-vb[VbVbalrStatements#134](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_4.vb)]  
   
-## See Also  
- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)  
- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
+## See also
+- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
+- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)
+- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)

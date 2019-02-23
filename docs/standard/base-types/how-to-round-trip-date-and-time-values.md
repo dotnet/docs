@@ -95,6 +95,6 @@ In many applications, a date and time value is intended to unambiguously identif
   
 ## See also
 
-- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)  
-- [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md)  
+- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)
+- [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md)
 - [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)

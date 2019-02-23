@@ -96,7 +96,7 @@ public class MyServiceHost : ServiceHost
   
 -   You might need to open the port to the application. For details, see [Firewall Instructions](../../../docs/framework/wcf/samples/firewall-instructions.md) from the SDK samples.  
   
--   For other possible issues, see the samples topic [Running the Samples in a Workgroup and Across Machines](https://msdn.microsoft.com/library/a451a525-e7ce-452d-9da9-620221260113).  
+-   For other possible issues, see the samples topic [Running the Windows Communication Foundation Samples](./samples/running-the-samples.md).  
   
 -   If your client is using Windows credentials and the exception is a <xref:System.ServiceModel.Security.SecurityNegotiationException>, configure Kerberos as follows.  
   
@@ -170,7 +170,7 @@ public class MyServiceHost : ServiceHost
   
 ```xml
 <endpoint   
-  address=http://localhost:8000/MyServer/  
+  address="http://localhost:8000/MyServer/"  
   binding="wsHttpBinding"  
   bindingConfiguration="WSHttpBinding_IMyContract"  
   behaviorConfiguration="MyClient"   
@@ -243,5 +243,5 @@ public string Echo(string input)
 }  
 ```  
   
-## See Also  
- [Debugging Windows Authentication Errors](../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md)
+## See also
+- [Debugging Windows Authentication Errors](../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md)

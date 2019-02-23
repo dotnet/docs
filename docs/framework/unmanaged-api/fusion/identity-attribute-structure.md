@@ -50,7 +50,7 @@ typedef struct _IDENTITY_ATTRIBUTE {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IDefinitionIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/idefinitionidentity-interface.md)  
- [IDENTITY_ATTRIBUTE_BLOB Structure](../../../../docs/framework/unmanaged-api/fusion/identity-attribute-blob-structure.md)  
- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
+## See also
+- [IDefinitionIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/idefinitionidentity-interface.md)
+- [IDENTITY_ATTRIBUTE_BLOB Structure](../../../../docs/framework/unmanaged-api/fusion/identity-attribute-blob-structure.md)
+- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)

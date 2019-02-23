@@ -28,13 +28,13 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can define
   
  [!code-csharp[csProgGuideGenerics#40](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-delegates_5.cs)]  
   
-## See Also
+## See also
 
-- <xref:System.Collections.Generic>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
-- [Generic Methods](../../../csharp/programming-guide/generics/generic-methods.md)  
-- [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)  
-- [Generic Interfaces](../../../csharp/programming-guide/generics/generic-interfaces.md)  
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- <xref:System.Collections.Generic>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [Generic Methods](../../../csharp/programming-guide/generics/generic-methods.md)
+- [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)
+- [Generic Interfaces](../../../csharp/programming-guide/generics/generic-interfaces.md)
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)
 - [Generics](~/docs/standard/generics/index.md)

@@ -1,5 +1,5 @@
 ---
-title: "Memory&lt;T&gt; and Span&lt;T&gt; usage guidelines"
+title: "Memory<T> and Span<T> usage guidelines"
 ms.date: "10/01/2018"
 helpviewer_keywords: 
   - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"

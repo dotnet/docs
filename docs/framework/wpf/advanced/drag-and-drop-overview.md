@@ -119,7 +119,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
 ## Drag-and-Drop Example  
  This section describes how to implement drag-and-drop for an <xref:System.Windows.Shapes.Ellipse> element. The <xref:System.Windows.Shapes.Ellipse> is both a drag source and a drop target. The transferred data is the string representation of the ellipse’s <xref:System.Windows.Shapes.Shape.Fill%2A> property. The following XAML shows the <xref:System.Windows.Shapes.Ellipse> element and the drag-and-drop related events that it handles. For complete steps on how to implement drag-and-drop, see [Walkthrough: Enabling Drag and Drop on a User Control](walkthrough-enabling-drag-and-drop-on-a-user-control.md).  
   
- [!code-xaml[DragDropSnippets#EllipseXaml](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml#ellipsexaml)]  
+ [!code-xaml[DragDropSnippets#EllipseXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml#ellipsexaml)]  
   
 ### Enabling an Element to be a Drag Source  
  An object that is a drag source is responsible for:  
@@ -136,8 +136,8 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
   
  It is the responsibility of your application to determine when a drag occurs, and then initiate the drag-and-drop operation by calling the <xref:System.Windows.DragDrop.DoDragDrop%2A> method. Typically, this is when a <xref:System.Windows.UIElement.MouseMove> event occurs over the element to be dragged while a mouse button is pressed. The following example shows how to initiate a drag-and-drop operation from the <xref:System.Windows.UIElement.MouseMove> event handler of an <xref:System.Windows.Shapes.Ellipse> element to make it a drag source. The transferred data is the string representation of the ellipse’s <xref:System.Windows.Shapes.Shape.Fill%2A> property.  
   
- [!code-csharp[DragDropSnippets#DoDragDrop](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dodragdrop)]
- [!code-vb[DragDropSnippets#DoDragDrop](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dodragdrop)]  
+ [!code-csharp[DragDropSnippets#DoDragDrop](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dodragdrop)]
+ [!code-vb[DragDropSnippets#DoDragDrop](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dodragdrop)]  
   
  Inside of the <xref:System.Windows.UIElement.MouseMove> event handler, call the <xref:System.Windows.DragDrop.DoDragDrop%2A> method to initiate the drag-and-drop operation. The <xref:System.Windows.DragDrop.DoDragDrop%2A> method takes three parameters:  
   
@@ -186,29 +186,29 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
   
  The following example shows the <xref:System.Windows.DragDrop.DragEnter> event handler for an <xref:System.Windows.Shapes.Ellipse> element. This code previews the effects of the drag-and-drop operation by saving the current <xref:System.Windows.Shapes.Shape.Fill%2A> brush. It then uses the <xref:System.Windows.DataObject.GetDataPresent%2A> method to check whether the <xref:System.Windows.DataObject> being dragged over the ellipse contains string data that can be converted to a <xref:System.Windows.Media.Brush>. If so, the data is extracted using the <xref:System.Windows.DataObject.GetData%2A> method. It is then converted to a <xref:System.Windows.Media.Brush> and applied to the ellipse. The change is reverted in the <xref:System.Windows.DragDrop.DragLeave> event handler. If the data cannot be converted to a <xref:System.Windows.Media.Brush>, no action is performed.  
   
- [!code-csharp[DragDropSnippets#DragEnter](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dragenter)]
- [!code-vb[DragDropSnippets#DragEnter](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dragenter)]  
+ [!code-csharp[DragDropSnippets#DragEnter](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dragenter)]
+ [!code-vb[DragDropSnippets#DragEnter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dragenter)]  
   
  The <xref:System.Windows.DragDrop.DragOver> event occurs continuously while the data is dragged over the drop target. This event is paired with the <xref:System.Windows.DragDrop.GiveFeedback> event on the drag source. In the <xref:System.Windows.DragDrop.DragOver> event handler, you typically use the <xref:System.Windows.DataObject.GetDataPresent%2A> and <xref:System.Windows.DataObject.GetData%2A> methods to check whether the transferred data is in a format that the drop target can process. You can also check whether any modifier keys are pressed, which will typically indicate whether the user intends a move or copy action. After these checks are performed, you set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property to notify the drag source what effect dropping the data will have. The drag source receives this information in the <xref:System.Windows.DragDrop.GiveFeedback> event args, and can set an appropriate cursor to give feedback to the user.  
   
  The following example shows the <xref:System.Windows.DragDrop.DragOver> event handler for an <xref:System.Windows.Shapes.Ellipse> element. This code checks to see if the <xref:System.Windows.DataObject> being dragged over the ellipse contains string data that can be converted to a <xref:System.Windows.Media.Brush>. If so, it sets the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property to <xref:System.Windows.DragDropEffects.Copy>. This indicates to the drag source that the data can be copied to the ellipse. If the data cannot be converted to a <xref:System.Windows.Media.Brush>, the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property is set to <xref:System.Windows.DragDropEffects.None>. This indicates to the drag source that the ellipse is not a valid drop target for the data.  
   
- [!code-csharp[DragDropSnippets#DragOver](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dragover)]
- [!code-vb[DragDropSnippets#DragOver](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dragover)]  
+ [!code-csharp[DragDropSnippets#DragOver](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dragover)]
+ [!code-vb[DragDropSnippets#DragOver](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dragover)]  
   
  The <xref:System.Windows.DragDrop.DragLeave> event occurs when the data is dragged out of the target's boundary without being dropped. You handle this event to undo anything that you did in the <xref:System.Windows.DragDrop.DragEnter> event handler.  
   
  The following example shows the <xref:System.Windows.DragDrop.DragLeave> event handler for an <xref:System.Windows.Shapes.Ellipse> element. This code undoes the preview performed in the <xref:System.Windows.DragDrop.DragEnter> event handler by applying the saved <xref:System.Windows.Media.Brush> to the ellipse.  
   
- [!code-csharp[DragDropSnippets#DragLeave](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dragleave)]
- [!code-vb[DragDropSnippets#DragLeave](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dragleave)]  
+ [!code-csharp[DragDropSnippets#DragLeave](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dragleave)]
+ [!code-vb[DragDropSnippets#DragLeave](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dragleave)]  
   
  The <xref:System.Windows.DragDrop.Drop> event occurs when the data is dropped over the drop target; by default, this happens when the mouse button is released. In the <xref:System.Windows.DragDrop.Drop> event handler, you use the <xref:System.Windows.DataObject.GetData%2A> method to extract the transferred data from the <xref:System.Windows.DataObject> and perform any data processing that your application requires. The <xref:System.Windows.DragDrop.Drop> event ends the drag-and-drop operation.  
   
  The following example shows the <xref:System.Windows.DragDrop.Drop> event handler for an <xref:System.Windows.Shapes.Ellipse> element. This code applies the effects of the drag-and-drop operation, and is similar to the code in the <xref:System.Windows.DragDrop.DragEnter> event handler. It checks to see if the <xref:System.Windows.DataObject> being dragged over the ellipse contains string data that can be converted to a <xref:System.Windows.Media.Brush>. If so, the <xref:System.Windows.Media.Brush> is applied to the ellipse. If the data cannot be converted to a <xref:System.Windows.Media.Brush>, no action is performed.  
   
- [!code-csharp[DragDropSnippets#Drop](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#drop)]
- [!code-vb[DragDropSnippets#Drop](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#drop)]  
+ [!code-csharp[DragDropSnippets#Drop](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#drop)]
+ [!code-vb[DragDropSnippets#Drop](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#drop)]  
   
 ## See also
 - <xref:System.Windows.Clipboard>

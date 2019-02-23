@@ -54,7 +54,7 @@ Next, you will add a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptl
 
 2.  Set the content of the <xref:System.Windows.Controls.Button> control using the following code.
 
-     [!code-xaml[LocalizingWpfInWf#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl0.xaml#10)]
+     [!code-xaml[LocalizingWpfInWf#10](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl0.xaml#10)]
 
 3.  In **Solution Explorer**, double-click **Form1** to open it in the Windows Forms Designer.
 
@@ -86,7 +86,7 @@ The Windows Forms Designer provides settings for enabling localization in a sate
 
 7.  Copy the following code into the `Form1` constructor, preceding the call to `InitializeComponent`.
 
-     [!code-csharp[LocalizingWpfInWf#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/Form1.cs#2)]
+     [!code-csharp[LocalizingWpfInWf#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/Form1.cs#2)]
 
 8.  In **Solution Explorer**, right-click **LocalizingWpfInWf** and click **Unload Project**.
 
@@ -122,7 +122,7 @@ You can map your localizable content to resource assemblies by using resource id
 
 3.  In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the Code Editor. You will see that the `msbuild` command has added the `Uid` attribute to all the elements. This facilitates localization through the assignment of resource identifiers.
 
-     [!code-xaml[LocalizingWpfInWf#20](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl.xaml#20)]
+     [!code-xaml[LocalizingWpfInWf#20](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl.xaml#20)]
 
 4.  Press **F6** to build the solution.
 

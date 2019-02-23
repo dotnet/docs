@@ -48,11 +48,11 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
   
  The following example illustrates an application that uses the <xref:System.Windows.Documents.Serialization.SerializerProvider> method in a "PlugInFileFilter" property.  PlugInFileFilter enumerates the installed plug-ins and builds a filter string with the available file options for a <xref:Microsoft.Win32.SaveFileDialog>.  
   
- [!code-csharp[DocumentSerialize#DocSerializeFileFilter](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
+ [!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
   
  After an output file name has been selected by the user, the following example illustrates use of the <xref:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter%2A> method to store a given document in a specified format.  
   
- [!code-csharp[DocumentSerialize#DocSerializePlugIn](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
+ [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
   
 <a name="InstallingPluginSerializers"></a>   
 ### Installing Plug-in Serializers  

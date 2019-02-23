@@ -43,8 +43,8 @@ Interaction between application and TextFormatter
   
  In the following example, the process of formatting a text store is shown. The <xref:System.Windows.Media.TextFormatting.TextFormatter> object is used to retrieve text lines from the text store and then format the text line for drawing into the <xref:System.Windows.Media.DrawingContext>.  
   
- [!code-csharp[TextFormatterExample#100](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextFormatterExample/CSharp/Window1.xaml.cs#100)]
- [!code-vb[TextFormatterExample#100](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormatterExample/VisualBasic/Window1.xaml.vb#100)]  
+ [!code-csharp[TextFormatterExample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/TextFormatterExample/CSharp/Window1.xaml.cs#100)]
+ [!code-vb[TextFormatterExample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormatterExample/VisualBasic/Window1.xaml.vb#100)]  
   
 <a name="section3"></a>   
 ## Implementing the Client Text Store  
@@ -78,8 +78,8 @@ Interaction between application and TextFormatter
   
  The following example demonstrates a <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> method. This text store returns <xref:System.Windows.Media.TextFormatting.TextRun> objects to the text formatter for processing.  
   
- [!code-csharp[TextFormatterExample#101](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextFormatterExample/CSharp/CustomTextSource.cs#101)]
- [!code-vb[TextFormatterExample#101](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormatterExample/VisualBasic/CustomTextSource.vb#101)]  
+ [!code-csharp[TextFormatterExample#101](~/samples/snippets/csharp/VS_Snippets_Wpf/TextFormatterExample/CSharp/CustomTextSource.cs#101)]
+ [!code-vb[TextFormatterExample#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormatterExample/VisualBasic/CustomTextSource.vb#101)]  
   
 > [!NOTE]
 >  In this example, the text store provides the same text properties to all of the text. Advanced text stores would need to implement their own span management to allow individual characters to have different properties.  

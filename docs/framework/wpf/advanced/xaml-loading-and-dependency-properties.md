@@ -32,8 +32,8 @@ The current [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winc
   
  The following example is a recommended dependency property definition with wrappers, where the property identifier is stored as a `public` `static` `readonly` field, and the `get` and `set` definitions contain no code beyond the necessary property system methods that define the dependency property backing.  
   
- [!code-csharp[WPFAquariumSln#AGWithWrapper](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#agwithwrapper)]
- [!code-vb[WPFAquariumSln#AGWithWrapper](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agwithwrapper)]  
+ [!code-csharp[WPFAquariumSln#AGWithWrapper](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#agwithwrapper)]
+ [!code-vb[WPFAquariumSln#AGWithWrapper](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agwithwrapper)]  
   
 ## See also
 - [Dependency Properties Overview](dependency-properties-overview.md)

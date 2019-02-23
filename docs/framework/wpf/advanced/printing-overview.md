@@ -76,25 +76,25 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
  The following example demonstrates how to query the <xref:System.Printing.PrintCapabilities> of a printer and create a <xref:System.Printing.PrintTicket> using code.  
   
- [!code-cpp[xpscreate#PrinterCapabilities](../../../../samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
- [!code-csharp[xpscreate#PrinterCapabilities](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
- [!code-vb[xpscreate#PrinterCapabilities](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+ [!code-cpp[xpscreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[xpscreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[xpscreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
   
 #### PrintServer and PrintQueue  
  The <xref:System.Printing.PrintServer> class represents a network print server and the <xref:System.Printing.PrintQueue> class represents a printer and the output job queue associated with it. Together, these [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] allow advanced management of a server's print jobs. A <xref:System.Printing.PrintServer>, or one of its derived classes, is used to manage a <xref:System.Printing.PrintQueue>. The <xref:System.Printing.PrintQueue.AddJob%2A> method is used to insert a new print job into the queue.  
   
  The following example demonstrates how to create a <xref:System.Printing.LocalPrintServer> and access its default <xref:System.Printing.PrintQueue> by using code.  
   
- [!code-csharp[xpsprint#PrintQueueSnip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#printqueuesnip)]
- [!code-vb[xpsprint#PrintQueueSnip](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#printqueuesnip)]  
+ [!code-csharp[xpsprint#PrintQueueSnip](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#printqueuesnip)]
+ [!code-vb[xpsprint#PrintQueueSnip](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#printqueuesnip)]  
   
 #### XpsDocumentWriter  
  An <xref:System.Windows.Xps.XpsDocumentWriter>, with its many the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods, is used to write [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] documents to a <xref:System.Printing.PrintQueue>. For example, the <xref:System.Windows.Xps.XpsDocumentWriter.Write%28System.Windows.Documents.FixedPage%2CSystem.Printing.PrintTicket%29> method is used to output an [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] document and <xref:System.Printing.PrintTicket> synchronously. The <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%28System.Windows.Documents.FixedDocument%2CSystem.Printing.PrintTicket%29> method is used to output an [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] document and <xref:System.Printing.PrintTicket> asynchronously.  
   
  The following example demonstrates how to create an <xref:System.Windows.Xps.XpsDocumentWriter> using code.  
   
- [!code-csharp[XpsPrint#PrintQueueSnip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#printqueuesnip)]
- [!code-vb[XpsPrint#PrintQueueSnip](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#printqueuesnip)]  
+ [!code-csharp[XpsPrint#PrintQueueSnip](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#printqueuesnip)]
+ [!code-vb[XpsPrint#PrintQueueSnip](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#printqueuesnip)]  
   
  The <xref:System.Printing.PrintQueue.AddJob%2A> methods also provide ways to print. See [Programmatically Print XPS Files](how-to-programmatically-print-xps-files.md). for details.  
   

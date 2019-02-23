@@ -25,7 +25,7 @@ ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
   
  The following markup sample illustrates this point:  
   
- [!code-xaml[Performance#PerformanceSnippet7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/BrushResource.xaml#performancesnippet7)]  
+ [!code-xaml[Performance#PerformanceSnippet7](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/BrushResource.xaml#performancesnippet7)]  
   
 ## Use Static Resources when Possible  
  A static resource provides a value for any XAML property attribute by looking up a reference to an already defined resource. Lookup behavior for that resource is analogous to compile-time lookup.  
@@ -34,7 +34,7 @@ ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
   
  The following markup sample shows the use of both types of resources:  
   
- [!code-xaml[Performance#PerformanceSnippet8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/DynamicResource.xaml#performancesnippet8)]  
+ [!code-xaml[Performance#PerformanceSnippet8](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/DynamicResource.xaml#performancesnippet8)]  
   
 ## See also
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)

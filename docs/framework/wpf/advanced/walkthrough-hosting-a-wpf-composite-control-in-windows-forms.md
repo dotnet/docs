@@ -65,8 +65,8 @@ WPF composite control
   
  In MyControl1.xaml, replace the existing XAML with the following XAML.  
   
- [!code-xaml[WindowsFormsHostingWpfControl#101](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#101)]  
-[!code-xaml[WindowsFormsHostingWpfControl#102](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#102)]  
+ [!code-xaml[WindowsFormsHostingWpfControl#101](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#101)]  
+[!code-xaml[WindowsFormsHostingWpfControl#102](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#102)]  
   
 #### Adding TextBlock and TextBox Elements to the Grid  
  You place a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] element in the grid by setting the element's <xref:System.Windows.Controls.Grid.RowProperty> and <xref:System.Windows.Controls.Grid.ColumnProperty> attributes to the appropriate row and column number. Remember that row and column numbering are zero-based. You can have an element span multiple columns by setting its <xref:System.Windows.Controls.Grid.ColumnSpanProperty> attribute. For more information about <xref:System.Windows.Controls.Grid> elements, see [Create a Grid Element](../controls/how-to-create-a-grid-element.md).  
@@ -75,7 +75,7 @@ WPF composite control
   
  In MyControl1.xaml, add the following XAML within the <xref:System.Windows.Controls.Grid> element.  
   
- [!code-xaml[WindowsFormsHostingWpfControl#103](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#103)]  
+ [!code-xaml[WindowsFormsHostingWpfControl#103](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#103)]  
   
 #### Styling the UI Elements  
  Many of the elements on the data-entry form have a similar appearance, which means that they have identical settings for several of their properties. Rather than setting each element's attributes separately, the previous XAML uses <xref:System.Windows.Style> elements to define standard property settings for classes of elements. This approach reduces the complexity of the control and enables you to change the appearance of multiple elements through a single style attribute.  
@@ -86,14 +86,14 @@ WPF composite control
   
  In MyControl1.xaml, add the following XAML just after the <xref:System.Windows.Controls.Grid> start element.  
   
- [!code-xaml[WindowsFormsHostingWpfControl#104](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#104)]  
+ [!code-xaml[WindowsFormsHostingWpfControl#104](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#104)]  
   
 #### Adding the OK and Cancel Buttons  
  The final elements on the composite control are the **OK** and **Cancel**<xref:System.Windows.Controls.Button> elements, which occupy the first two columns of the last row of the <xref:System.Windows.Controls.Grid>. These elements use a common event handler, `ButtonClicked`, and the default <xref:System.Windows.Controls.Button> style defined in the previous XAML.  
   
  In MyControl1.xaml, add the following XAML after the last <xref:System.Windows.Controls.TextBox> element. The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] part of the composite control is now complete.  
   
- [!code-xaml[WindowsFormsHostingWpfControl#105](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#105)]  
+ [!code-xaml[WindowsFormsHostingWpfControl#105](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#105)]  
   
 ### Implementing the Code-Behind File  
  The code-behind file, MyControl1.xaml.cs, implements three essential tasks:
@@ -127,7 +127,7 @@ namespace MyControls
   
  Open MyControl1.xaml.cs. Change the existing class declaration so that it has the following name and inherits from <xref:System.Windows.Controls.Grid>.  
   
- [!code-csharp[WindowsFormsHostingWpfControl#21](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml.cs#21)]  
+ [!code-csharp[WindowsFormsHostingWpfControl#21](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml.cs#21)]  
   
 #### Initializing the Control  
  The following code implements several basic tasks:  
@@ -140,7 +140,7 @@ namespace MyControls
   
  Delete the existing constructor and add the following code to your `MyControl1` class.  
   
- [!code-csharp[WindowsFormsHostingWpfControl#11](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml.cs#11)]  
+ [!code-csharp[WindowsFormsHostingWpfControl#11](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml.cs#11)]  
   
 #### Handling the Buttons' Click Events  
  The user indicates that the data-entry task is finished by clicking either the **OK** button or the **Cancel** button. Both buttons use the same <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler, `ButtonClicked`. Both buttons have a name, `btnOK` or `btnCancel`, that enables the handler to determine which button was clicked by examining the value of the `sender` argument. The handler does the following:  
@@ -153,21 +153,21 @@ namespace MyControls
   
  Add the following code to your `MyControl1` class, after the `Init` method.  
   
- [!code-csharp[WindowsFormsHostingWpfControl#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml.cs#12)]  
+ [!code-csharp[WindowsFormsHostingWpfControl#12](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml.cs#12)]  
   
 #### Creating Properties  
  The remainder of the class simply exposes properties that correspond to the global variables discussed previously. When a property changes, the set accessor modifies the appearance of the control by changing the corresponding element properties and updating the underlying global variables.  
   
  Add the following code to your `MyControl1` class.  
   
- [!code-csharp[WindowsFormsHostingWpfControl#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml.cs#13)]  
+ [!code-csharp[WindowsFormsHostingWpfControl#13](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml.cs#13)]  
   
 #### Sending the Data Back to the Host  
  The final component in the file is the `MyControlEventArgs` class, which is used to send the collected data back to the host.  
   
  Add the following code to your `MyControls` namespace. The implementation is straightforward, and is not discussed further.  
   
- [!code-csharp[WindowsFormsHostingWpfControl#14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml.cs#14)]  
+ [!code-csharp[WindowsFormsHostingWpfControl#14](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml.cs#14)]  
   
  Build the solution. The build will produce a DLL named MyControls.dll.  
   
@@ -268,11 +268,11 @@ WPF composite control hosted in a Windows Forms application
   
  In the Windows Forms Designer, double-click the form to create a <xref:System.Windows.Forms.Form.Load> event handler. At the top of Form1.cs, add the following `using` statements.  
   
- [!code-csharp[WindowsFormsHostingWpfControl#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#10)]  
+ [!code-csharp[WindowsFormsHostingWpfControl#10](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#10)]  
   
  Replace the contents of the existing `Form1` class with the following code.  
   
- [!code-csharp[WindowsFormsHostingWpfControl#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#2)]  
+ [!code-csharp[WindowsFormsHostingWpfControl#2](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#2)]  
   
  The `Form1_Load` method in the preceding code shows the general procedure for hosting a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control:  
   
@@ -301,7 +301,7 @@ WPF composite control hosted in a Windows Forms application
   
  Add the following button click event handler code to the `Form1` class.  
   
- [!code-csharp[WindowsFormsHostingWpfControl#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#3)]  
+ [!code-csharp[WindowsFormsHostingWpfControl#3](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#3)]  
   
  Build and run the application. Add some text in the WPF composite control and then click **OK**. The text appears in the labels. At this point, code has not been added to handle the radio buttons.  
   
@@ -310,7 +310,7 @@ WPF composite control hosted in a Windows Forms application
   
  Double-click each <xref:System.Windows.Forms.RadioButton> control on the form to create <xref:System.Windows.Forms.RadioButton.CheckedChanged> event handlers. Replace the <xref:System.Windows.Forms.RadioButton.CheckedChanged> event handlers with the following code.  
   
- [!code-csharp[WindowsFormsHostingWpfControl#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#4)]  
+ [!code-csharp[WindowsFormsHostingWpfControl#4](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#4)]  
   
  Build and run the application. Click the different radio buttons to see the effect on the WPF composite control.  
   

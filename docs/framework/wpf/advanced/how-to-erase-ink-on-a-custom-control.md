@@ -15,5 +15,5 @@ The <xref:System.Windows.Ink.IncrementalStrokeHitTester> determines whether the 
 ## Example  
  The following example creates a custom control that enables the user to erase parts of strokes.  This example creates a control that contains ink when it is initialized.  To create a control that collects ink, see [Creating an Ink Input Control](creating-an-ink-input-control.md).  
   
- [!code-csharp[HowToEraseInk#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToEraseInk/CSharp/InkEraser.cs#1)]
- [!code-vb[HowToEraseInk#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HowToEraseInk/VisualBasic/InkEraser.vb#1)]
+ [!code-csharp[HowToEraseInk#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToEraseInk/CSharp/InkEraser.cs#1)]
+ [!code-vb[HowToEraseInk#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HowToEraseInk/VisualBasic/InkEraser.vb#1)]

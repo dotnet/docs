@@ -37,8 +37,8 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
 ## Navigation to Object  
  The <xref:System.Windows.Navigation.NavigationWindow> object derives from <xref:System.Windows.Window> and extends it with content navigation support, primarily by aggregating <xref:System.Windows.Navigation.NavigationService> and the journal. You can update the client area of <xref:System.Windows.Navigation.NavigationWindow> by specifying either a [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] or an object. The following sample shows both methods:  
   
- [!code-csharp[Performance#PerformanceSnippet14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/TestNavigation.xaml.cs#performancesnippet14)]
- [!code-vb[Performance#PerformanceSnippet14](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/testnavigation.xaml.vb#performancesnippet14)]  
+ [!code-csharp[Performance#PerformanceSnippet14](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/TestNavigation.xaml.cs#performancesnippet14)]
+ [!code-vb[Performance#PerformanceSnippet14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/testnavigation.xaml.vb#performancesnippet14)]  
   
  Each <xref:System.Windows.Navigation.NavigationWindow> object has a journal that records the user's navigation history in that window. One of the purposes of the journal is to allow users to retrace their steps.  
   

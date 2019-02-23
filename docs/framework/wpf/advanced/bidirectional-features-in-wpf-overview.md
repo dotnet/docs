@@ -21,11 +21,11 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Left-to-right flow direction**  
   
- [!code-xaml[LTRRTL#LTR](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LTRRTL/CS/Pane1.xaml#ltr)]  
+ [!code-xaml[LTRRTL#LTR](~/samples/snippets/csharp/VS_Snippets_Wpf/LTRRTL/CS/Pane1.xaml#ltr)]  
   
  **Right-to-left flow direction**  
   
- [!code-xaml[LTRRTL#RTL](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LTRRTL/CS/Pane1.xaml#rtl)]  
+ [!code-xaml[LTRRTL#RTL](~/samples/snippets/csharp/VS_Snippets_Wpf/LTRRTL/CS/Pane1.xaml#rtl)]  
   
  The following graphic shows how the previous code renders.  
   
@@ -37,7 +37,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The following example demonstrates setting <xref:System.Windows.FrameworkElement.FlowDirection%2A>.  
   
- [!code-xaml[FlowDirection#FlowDirection](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowDirection/CS/Window1.xaml#flowdirection)]  
+ [!code-xaml[FlowDirection#FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDirection/CS/Window1.xaml#flowdirection)]  
   
  The top level <xref:System.Windows.Window> has a <xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.FlowDirection>, so all elements contained within it also inherit the same <xref:System.Windows.FrameworkElement.FlowDirection%2A>. For an element to override a specified <xref:System.Windows.FrameworkElement.FlowDirection%2A> it must add an explicit direction change such as the second <xref:System.Windows.Controls.TextBlock> in the previous example which changes to <xref:System.Windows.FlowDirection.LeftToRight>. When no <xref:System.Windows.FrameworkElement.FlowDirection%2A> is defined, the default <xref:System.Windows.FlowDirection.LeftToRight> applies.  
   
@@ -71,7 +71,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The following example demonstrates using <xref:System.Windows.Documents.Run> and <xref:System.Windows.Documents.Span> elements in documents.  
   
- [!code-xaml[RunSpan#RunSpan](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RunSpan/CS/Window1.xaml#runspan)]  
+ [!code-xaml[RunSpan#RunSpan](~/samples/snippets/csharp/VS_Snippets_Wpf/RunSpan/CS/Window1.xaml#runspan)]  
   
 <a name="SpanElements"></a>   
 ## Span Elements  
@@ -85,7 +85,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The following example shows how to use the <xref:System.Windows.Documents.Span> and <xref:System.Windows.Documents.Run> elements to produce the results shown in the previous graphic.  
   
- [!code-xaml[Span#Span](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Span/CS/Window1.xaml#span)]  
+ [!code-xaml[Span#Span](~/samples/snippets/csharp/VS_Snippets_Wpf/Span/CS/Window1.xaml#span)]  
   
  In the <xref:System.Windows.Controls.TextBlock> elements in the sample, the <xref:System.Windows.Documents.Span> elements are laid out according to the <xref:System.Windows.FlowDirection> of their parents, but the text within each <xref:System.Windows.Documents.Span> element flows according to its own <xref:System.Windows.FlowDirection>. This is applicable to Latin and Arabic – or any other language.  
   
@@ -108,7 +108,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The following example adds `xml:lang` to the application.  
   
- [!code-xaml[LangAttribute#LangAttribute](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LangAttribute/CS/Window1.xaml#langattribute)]  
+ [!code-xaml[LangAttribute#LangAttribute](~/samples/snippets/csharp/VS_Snippets_Wpf/LangAttribute/CS/Window1.xaml#langattribute)]  
   
  Be aware that many languages have different `xml:lang` values depending on the targeted region, for example, `"ar-SA"` and `"ar-EG"` represent two variations of Arabic. The previous examples illustrate that you need to define both the `xml:lang` and <xref:System.Windows.FlowDirection> values.  
   
@@ -130,7 +130,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The following example draws a <xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.Controls.ToolBar>. (To draw it left to right, remove the <xref:System.Windows.FlowDirection> attribute on the <xref:System.Windows.Controls.ToolBar>.  
   
- [!code-xaml[Gradient#Gradient](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Gradient/CS/Window1.xaml#gradient)]  
+ [!code-xaml[Gradient#Gradient](~/samples/snippets/csharp/VS_Snippets_Wpf/Gradient/CS/Window1.xaml#gradient)]  
   
 <a name="FlowDirectionExceptions"></a>   
 ### FlowDirection Exceptions  
@@ -150,7 +150,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The following example demonstrates that the <xref:System.Windows.Controls.Image> fails to inherit the <xref:System.Windows.FlowDirection> from the <xref:System.Windows.Controls.StackPanel> that contains it. **Note** You must have a file named **ms_logo.jpg** on your C:\ drive to run this example.  
   
- [!code-xaml[Image#Image](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Image/CS/Window1.xaml#image)]  
+ [!code-xaml[Image#Image](~/samples/snippets/csharp/VS_Snippets_Wpf/Image/CS/Window1.xaml#image)]  
   
  **Note** Included in the download files is an **ms_logo.jpg** file. The code assumes that the .jpg file is not inside your project but somewhere on the C:\ drive. You must copy the .jpg from the project files to your C:\ drive or change the code to look for the file inside the project. To do this change `Source="file://c:/ms_logo.jpg"` to `Source="ms_logo.jpg"`.  
   
@@ -160,7 +160,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The following example draws a simple arrow using 3 lines. The first arrow inherits the <xref:System.Windows.FlowDirection.RightToLeft> flow direction from the <xref:System.Windows.Controls.StackPanel> so that its start and end points are measured from a root on the right side. The second arrow which has an explicit <xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.FlowDirection> also starts on the right side. However, the third arrow has its starting root on the left side. For more information on drawing see <xref:System.Windows.Media.LineGeometry> and <xref:System.Windows.Media.GeometryGroup>.  
   
- [!code-xaml[Paths#Paths](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Paths/CS/Window1.xaml#paths)]  
+ [!code-xaml[Paths#Paths](~/samples/snippets/csharp/VS_Snippets_Wpf/Paths/CS/Window1.xaml#paths)]  
   
  The following graphic shows the output of the previous example.  
   
@@ -210,7 +210,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  What do those values mean for a bidirectional content developer? In most cases, the developer might need only to define <xref:System.Windows.FlowDirection> and the language of each textual [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] element, for example `Language="ar-SA"` and the <xref:System.Windows.Media.NumberSubstitution> logic takes care of displaying the numbers according to the correct [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. The following example demonstrates using Arabic and English numbers in a [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application running in an Arabic version of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)].  
   
- [!code-xaml[Numbers#Numbers](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Numbers/CS/Window1.xaml#numbers)]  
+ [!code-xaml[Numbers#Numbers](~/samples/snippets/csharp/VS_Snippets_Wpf/Numbers/CS/Window1.xaml#numbers)]  
   
  The following graphic shows the output of the previous sample if you are running in an Arabic version of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)].  
   
@@ -253,11 +253,11 @@ text1.Language = System.Windows.Markup.XmlLanguage.GetLanguage(System.Globalizat
   
  Your final [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] example should be similar to the following example.  
   
- [!code-xaml[Numbers2#Numbers2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Numbers2/CS/Window1.xaml#numbers2)]  
+ [!code-xaml[Numbers2#Numbers2](~/samples/snippets/csharp/VS_Snippets_Wpf/Numbers2/CS/Window1.xaml#numbers2)]  
   
  Your final C# example should be similar to the following.  
   
- [!code-csharp[NumbersCSharp#NumbersCSharp](../../../../samples/snippets/csharp/VS_Snippets_Wpf/NumbersCSharp/CSharp/Window1.xaml.cs#numberscsharp)]  
+ [!code-csharp[NumbersCSharp#NumbersCSharp](~/samples/snippets/csharp/VS_Snippets_Wpf/NumbersCSharp/CSharp/Window1.xaml.cs#numberscsharp)]  
   
  The following graphic shows what the window looks like for either programming language.  
   
@@ -273,4 +273,4 @@ text1.Language = System.Windows.Markup.XmlLanguage.GetLanguage(System.Globalizat
   
  In the following example, the first <xref:System.Windows.Controls.TextBlock> does not have the <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> property set, so the algorithm displays Arabic digits as expected. However in the second <xref:System.Windows.Controls.TextBlock>, the substitution is set to European overriding the default substitution for Arabic numbers, and European digits are displayed.  
   
- [!code-xaml[Numbers3#Numbers3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Numbers3/CS/Window1.xaml#numbers3)]
+ [!code-xaml[Numbers3#Numbers3](~/samples/snippets/csharp/VS_Snippets_Wpf/Numbers3/CS/Window1.xaml#numbers3)]

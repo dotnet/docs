@@ -161,7 +161,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
  To use a resource in your application instantiate a <xref:System.Resources.ResourceManager> and load the resource you want to use. The following example demonstrates how to do this.
 
- [!code-csharp[LocalizationResources#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizationResources/CSharp/page1.xaml.cs#2)]
+ [!code-csharp[LocalizationResources#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationResources/CSharp/page1.xaml.cs#2)]
 
 <a name="using_clickonce"></a>
 ## Using ClickOnce with Localized Applications

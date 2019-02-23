@@ -51,7 +51,7 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
   
  Consider the following example:  
   
- [!code-xaml[XamlOvwSupport#NameScopeTemplates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page6.xaml#namescopetemplates)]  
+ [!code-xaml[XamlOvwSupport#NameScopeTemplates](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page6.xaml#namescopetemplates)]  
   
  Here, the same template is applied to two different buttons. If templates did not have discrete XAML namescopes, the `TheBorder` name used in the template would cause a name collision in the XAML namescope. Each instantiation of the template has its own XAML namescope, so in this example each instantiated template's XAML namescope would contain exactly one name.  
   

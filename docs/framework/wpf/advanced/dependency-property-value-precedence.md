@@ -24,7 +24,7 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 ## Dependency Properties Might Be "Set" in Multiple Places  
  The following is example [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] where the same property (<xref:System.Windows.Controls.Control.Background%2A>) has three different "set" operations that might influence the value.  
   
- [!code-xaml[PropertiesOvwSupport#DPPrecedence](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml#dpprecedence)]  
+ [!code-xaml[PropertiesOvwSupport#DPPrecedence](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml#dpprecedence)]  
   
  Here, which color do you expect will apply—red, green, or blue?  
   

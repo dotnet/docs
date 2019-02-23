@@ -26,7 +26,7 @@ In XAML, you set attached properties by using the syntax *AttachedPropertyProvid
 
 The following is an example of how you can set <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> in XAML:
 
-[!code-xaml[PropertiesOvwSupport#APBasicUsage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml#apbasicusage)]
+[!code-xaml[PropertiesOvwSupport#APBasicUsage](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml#apbasicusage)]
 
 Note that the usage is somewhat similar to a static property; you always reference the type <xref:System.Windows.Controls.DockPanel> that owns and registers the attached property, rather than referring to any instance specified by name.
 
@@ -58,8 +58,8 @@ Attached properties in WPF do not have the typical [!INCLUDE[TLA2#tla_clr](../..
 
 The following example shows how you can set an attached property in code. In this example, `myCheckBox` is an instance of the <xref:System.Windows.Controls.CheckBox> class.
 
-[!code-csharp[PropertiesOvwSupport#APCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml.cs#apcode)]
-[!code-vb[PropertiesOvwSupport#APCode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page4.xaml.vb#apcode)]
+[!code-csharp[PropertiesOvwSupport#APCode](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml.cs#apcode)]
+[!code-vb[PropertiesOvwSupport#APCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page4.xaml.vb#apcode)]
 
 Similar to the XAML case, if `myCheckBox` had not already been added as a child element of `myDockPanel` by the third line of code, the fourth line of code would not raise an exception, but the property value would not interact with a <xref:System.Windows.Controls.DockPanel> parent and thus would do nothing. Only a <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> value set on a child element combined with the presence of a <xref:System.Windows.Controls.DockPanel> parent element will cause an effective behavior in the rendered application. (In this case, you could set the attached property, then attach to the tree. Or you could attach to the tree then set the attached property. Either action order provides the same result.)
 
@@ -112,8 +112,8 @@ The signature for the **Set_PropertyName_** accessor must be:
 
 The following example shows the dependency property registration (using the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method), as well as the **Get_PropertyName_** and **Set_PropertyName_** accessors. In the example, the attached property name is `IsBubbleSource`. Therefore, the accessors must be named `GetIsBubbleSource` and `SetIsBubbleSource`.
 
-[!code-csharp[WPFAquariumSln#RegisterAttachedBubbler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerattachedbubbler)]
-[!code-vb[WPFAquariumSln#RegisterAttachedBubbler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerattachedbubbler)]
+[!code-csharp[WPFAquariumSln#RegisterAttachedBubbler](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerattachedbubbler)]
+[!code-vb[WPFAquariumSln#RegisterAttachedBubbler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerattachedbubbler)]
 
 #### Attached Property Attributes
 

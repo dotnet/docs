@@ -33,8 +33,8 @@ Some aspects of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-wi
   
  The example illustrates the main function only. The functions `Rasterize` and `Save` (not shown) are utility functions that take care of image processing and IO.  
   
- [!code-csharp[InitializeElements#Main](../../../../samples/snippets/csharp/VS_Snippets_Wpf/InitializeElements/CSharp/initializeelements.cs#main)]
- [!code-vb[InitializeElements#Main](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InitializeElements/VisualBasic/initializeelements.vb#main)]  
+ [!code-csharp[InitializeElements#Main](~/samples/snippets/csharp/VS_Snippets_Wpf/InitializeElements/CSharp/initializeelements.cs#main)]
+ [!code-vb[InitializeElements#Main](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InitializeElements/VisualBasic/initializeelements.vb#main)]  
   
 ## See also
 - [Trees in WPF](trees-in-wpf.md)

@@ -30,7 +30,7 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
  For example, the following is the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for attaching a handler for a custom `NeedsCleaning` attached event:  
   
- [!code-xaml[WPFAquariumSln#AE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquarium/Window1.xaml#ae)]  
+ [!code-xaml[WPFAquariumSln#AE](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquarium/Window1.xaml#ae)]  
   
  Note the `aqua:` prefix; the prefix is necessary in this case because the attached event is a custom event that comes from a custom mapped xmlns.  
   
@@ -74,8 +74,8 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
  For example, the following code defines the `NeedsCleaning` attached event on the owner class `Aquarium`, using the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] attached event strategy of declaring the attached event as a routed event.  
   
- [!code-csharp[WPFAquariumSln#AECode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#aecode)]
- [!code-vb[WPFAquariumSln#AECode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#aecode)]  
+ [!code-csharp[WPFAquariumSln#AECode](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#aecode)]
+ [!code-vb[WPFAquariumSln#AECode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#aecode)]  
   
  Note that the method used to establish the attached event identifier field, <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>, is actually the same method that is used to register a non-attached routed event. Attached events and routed events all are registered to a centralized internal store. This event store implementation enables the "events as an interface" conceptual consideration that is discussed in [Routed Events Overview](routed-events-overview.md).  
   

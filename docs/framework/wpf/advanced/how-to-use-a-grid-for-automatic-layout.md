@@ -16,7 +16,7 @@ This example describes how to use a grid in the automatic layout approach to cre
 ## Example  
  The following example shows how to use a grid.  
   
- [!code-xaml[LocalizationGrid#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizationGrid/CS/Pane1.xaml#1)]  
+ [!code-xaml[LocalizationGrid#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationGrid/CS/Pane1.xaml#1)]  
   
  The following graphic shows the output of the code sample.  
   

@@ -27,11 +27,11 @@ This topic introduces guidelines for developers on how to write [!INCLUDE[TLA#tl
 ## Automatic Layout and Controls  
  Automatic layout enables an application to adjust the size of a control automatically. For example, a control can change to accommodate the length of a string. This capability enables  localizers to translate the string; they no longer need to resize the control to fit the translated text. The following example creates a button with English content.  
   
- [!code-xaml[LocalizationBtn_snip#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizationBtn_snip/CS/Pane1.xaml#1)]  
+ [!code-xaml[LocalizationBtn_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationBtn_snip/CS/Pane1.xaml#1)]  
   
  In the example, all you have to do to make a Spanish button is change the text. For example,  
   
- [!code-xaml[LocalizationBtn#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizationBtn/CS/Pane1.xaml#1)]  
+ [!code-xaml[LocalizationBtn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationBtn/CS/Pane1.xaml#1)]  
   
  The following graphic shows the output of the code samples.  
   
@@ -54,7 +54,7 @@ For a discussion about various types of panels, see [Panels Overview](../control
 
 - Use <xref:System.Windows.Window.SizeToContent%2A?displayProperty=nameWithType>. For example:
 
-   [!code-xaml[LocalizationGrid#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizationGrid/CS/Pane1.xaml#2)]
+   [!code-xaml[LocalizationGrid#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationGrid/CS/Pane1.xaml#2)]
 
 **Add a <xref:System.Windows.FrameworkElement.FlowDirection%2A>**
 
@@ -86,7 +86,7 @@ For a discussion about various types of panels, see [Panels Overview](../control
 ## Automatic Layout and Grids  
  The <xref:System.Windows.Controls.Grid> element, is useful for automatic layout because it enables a developer to position elements. A <xref:System.Windows.Controls.Grid> control is capable of distributing the available space among its child elements, using a column and row arrangement. The UI elements can span multiple cells, and it is possible to have grids within grids. Grids are useful because they enable you to create and position complex UI. The following example demonstrates using a grid to position some buttons and text. Notice that the height and width of the cells are set to <xref:System.Windows.GridUnitType.Auto>; therefore, the cell that contains the button with an image adjusts to fit the image.  
 
- [!code-xaml[LocalizationGrid#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizationGrid/CS/Pane1.xaml#1)]  
+ [!code-xaml[LocalizationGrid#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationGrid/CS/Pane1.xaml#1)]  
   
  The following graphic shows the grid produced by the previous code.  
   
@@ -97,7 +97,7 @@ Grid
 ## Automatic Layout and Grids Using the IsSharedSizeScope Property  
  A <xref:System.Windows.Controls.Grid> element is useful in localizable applications to create controls that adjust to fit content. However, at times you want controls to maintain a particular size regardless of content. For example, if you have "OK", "Cancel" and "Browse" buttons you probably do not want the buttons sized to fit the content. In this case the <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A?displayProperty=nameWithType> attached property is useful for sharing the same sizing among multiple grid elements. The following example demonstrates how to share column and row sizing data between multiple <xref:System.Windows.Controls.Grid> elements.  
   
- [!code-xaml[gridIssharedsizescopeProp#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/gridIssharedsizescopeProp/CSharp/Window1.xaml#2)]  
+ [!code-xaml[gridIssharedsizescopeProp#2](~/samples/snippets/csharp/VS_Snippets_Wpf/gridIssharedsizescopeProp/CSharp/Window1.xaml#2)]  
   
  **Note** For the complete code sample, see [Share Sizing Properties Between Grids](../controls/how-to-share-sizing-properties-between-grids.md)  
   

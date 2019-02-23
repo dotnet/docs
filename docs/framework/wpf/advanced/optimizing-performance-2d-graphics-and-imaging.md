@@ -51,7 +51,7 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
  The following example uses attribute syntax to create a triangular <xref:System.Windows.Media.StreamGeometry> in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   
- [!code-xaml[GeometriesMiscSnippets_snip#StreamGeometryTriangleExampleWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/StreamGeometryExample.xaml#streamgeometrytriangleexamplewholepage)]  
+ [!code-xaml[GeometriesMiscSnippets_snip#StreamGeometryTriangleExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/StreamGeometryExample.xaml#streamgeometrytriangleexamplewholepage)]  
   
  For more information on <xref:System.Windows.Media.StreamGeometry> objects, see [Create a Shape Using a StreamGeometry](../graphics-multimedia/how-to-create-a-shape-using-a-streamgeometry.md).  
   
@@ -78,8 +78,8 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
  The following example shows how to set the <xref:System.Windows.Media.BitmapScalingMode> for an image object.  
   
- [!code-csharp[RenderOptions#RenderOptionsSnippet2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RenderOptions/CSharp/Window1.xaml.cs#renderoptionssnippet2)]
- [!code-vb[RenderOptions#RenderOptionsSnippet2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet2)]  
+ [!code-csharp[RenderOptions#RenderOptionsSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/RenderOptions/CSharp/Window1.xaml.cs#renderoptionssnippet2)]
+ [!code-vb[RenderOptions#RenderOptionsSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet2)]  
   
 ### CachingHint  
  By default, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] does not cache the rendered contents of <xref:System.Windows.Media.TileBrush> objects, such as <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush>. In static scenarios where neither the contents nor use of the <xref:System.Windows.Media.TileBrush> in the scene is changing, this makes sense, since it conserves video memory. It does not make as much sense when a <xref:System.Windows.Media.TileBrush> with static content is used in a non-static way—for example, when a static <xref:System.Windows.Media.DrawingBrush> or <xref:System.Windows.Media.VisualBrush> is mapped to the surface of a rotating 3D object. The default behavior of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is to re-render the entire content of the <xref:System.Windows.Media.DrawingBrush> or <xref:System.Windows.Media.VisualBrush> for every frame, even though the content is unchanging.  
@@ -90,8 +90,8 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
  The following example shows how to use the caching hint option for a <xref:System.Windows.Media.DrawingBrush>.  
   
- [!code-csharp[RenderOptions#RenderOptionsSnippet3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RenderOptions/CSharp/Window1.xaml.cs#renderoptionssnippet3)]
- [!code-vb[RenderOptions#RenderOptionsSnippet3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet3)]  
+ [!code-csharp[RenderOptions#RenderOptionsSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/RenderOptions/CSharp/Window1.xaml.cs#renderoptionssnippet3)]
+ [!code-vb[RenderOptions#RenderOptionsSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet3)]  
   
 ## See also
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)

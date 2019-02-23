@@ -18,4 +18,4 @@ Localization means to adapt a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sh
   
  To use a resource in your application, you instantiate <xref:System.Resources.ResourceManager> and load the resource you want to use. The following demonstrates how to do this.  
   
- [!code-csharp[LocalizationResources#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizationResources/CSharp/page1.xaml.cs#2)]
+ [!code-csharp[LocalizationResources#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationResources/CSharp/page1.xaml.cs#2)]

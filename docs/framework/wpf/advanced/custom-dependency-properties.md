@@ -77,8 +77,8 @@ Defining a dependency property consists of four distinct concepts. These concept
 
 In order for your property to be a dependency property, you must register that property into a table maintained by the property system, and give it a unique identifier that is used as the qualifier for later property system operations. These operations might be internal operations, or your own code calling property system [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]. To register the property, you call the <xref:System.Windows.DependencyProperty.Register%2A> method within the body of your class (inside the class, but outside of any member definitions). The identifier field is also provided by the <xref:System.Windows.DependencyProperty.Register%2A> method call, as the return value. The reason that the <xref:System.Windows.DependencyProperty.Register%2A> call is done outside of other member definitions is because you use this return value to assign and create a `public` `static` `readonly` field of type <xref:System.Windows.DependencyProperty> as part of your class. This field becomes the identifier for your dependency property.
 
-[!code-csharp[WPFAquariumSln#RegisterAG](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerag)]
-[!code-vb[WPFAquariumSln#RegisterAG](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerag)]
+[!code-csharp[WPFAquariumSln#RegisterAG](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerag)]
+[!code-vb[WPFAquariumSln#RegisterAG](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerag)]
 
 <a name="nameconventions"></a>
 ### Dependency Property Name Conventions
@@ -101,8 +101,8 @@ In all but exceptional circumstances, your wrapper implementations should perfor
 
 All existing public dependency properties that are provided on the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] classes use this simple wrapper implementation model; most of the complexity of how dependency properties work is either inherently a behavior of the property system, or is implemented through other concepts such as coercion or property change callbacks through property metadata.
 
-[!code-csharp[WPFAquariumSln#AGWithWrapper](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#agwithwrapper)]
-[!code-vb[WPFAquariumSln#AGWithWrapper](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agwithwrapper)]
+[!code-csharp[WPFAquariumSln#AGWithWrapper](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#agwithwrapper)]
+[!code-vb[WPFAquariumSln#AGWithWrapper](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agwithwrapper)]
 
 Again, by convention, the name of the wrapper property must be the same as the name chosen and given as first parameter of the <xref:System.Windows.DependencyProperty.Register%2A> call that registered the property. If your property does not follow the convention, this does not necessarily disable all possible uses, but you will encounter several notable issues:
 

@@ -54,8 +54,8 @@ Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../.
   
  Consider the following example in which each <xref:System.Windows.Shapes.Rectangle> uses the same <xref:System.Windows.Media.Brush> object:  
   
- [!code-csharp[Performance#PerformanceSnippet2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet2)]
- [!code-vb[Performance#PerformanceSnippet2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet2)]  
+ [!code-csharp[Performance#PerformanceSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet2)]
+ [!code-vb[Performance#PerformanceSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet2)]  
   
  By default, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides an event handler for the <xref:System.Windows.Media.SolidColorBrush> object's <xref:System.Windows.Freezable.Changed> event in order to invalidate the <xref:System.Windows.Shapes.Rectangle> object's <xref:System.Windows.Shapes.Shape.Fill%2A> property. In this case, each time the <xref:System.Windows.Media.SolidColorBrush> has to fire its <xref:System.Windows.Freezable.Changed> event it is required to invoke the callback function for each <xref:System.Windows.Shapes.Rectangle>—the accumulation of these callback function invocations impose a significant performance penalty. In addition, it is very performance intensive to add and remove handlers at this point since the application would have to traverse the entire list to do so. If your application scenario never changes the <xref:System.Windows.Media.SolidColorBrush>, you will be paying the cost of maintaining <xref:System.Windows.Freezable.Changed> event handlers unnecessarily.  
   
@@ -68,28 +68,28 @@ Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../.
   
  The following code sample demonstrates this concept:  
   
- [!code-csharp[Performance#PerformanceSnippet3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet3)]
- [!code-vb[Performance#PerformanceSnippet3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet3)]  
+ [!code-csharp[Performance#PerformanceSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet3)]
+ [!code-vb[Performance#PerformanceSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet3)]  
   
 ### Changed Handlers on Unfrozen Freezables may Keep Objects Alive  
  The delegate that an object passes to a <xref:System.Windows.Freezable> object's <xref:System.Windows.Freezable.Changed> event is effectively a reference to that object. Therefore, <xref:System.Windows.Freezable.Changed> event handlers can keep objects alive longer than expected. When performing clean up of an object that has registered to listen to a <xref:System.Windows.Freezable> object's <xref:System.Windows.Freezable.Changed> event, it is essential to remove that delegate before releasing the object.  
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also hooks up <xref:System.Windows.Freezable.Changed> events internally. For example, all dependency properties which take <xref:System.Windows.Freezable> as a value will listen to <xref:System.Windows.Freezable.Changed> events automatically. The <xref:System.Windows.Shapes.Shape.Fill%2A> property, which takes a <xref:System.Windows.Media.Brush>, illustrates this concept.  
   
- [!code-csharp[Performance#PerformanceSnippet4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet4)]
- [!code-vb[Performance#PerformanceSnippet4](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet4)]  
+ [!code-csharp[Performance#PerformanceSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet4)]
+ [!code-vb[Performance#PerformanceSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet4)]  
   
  On the assignment of `myBrush` to `myRectangle.Fill`, a delegate pointing back to the <xref:System.Windows.Shapes.Rectangle> object will be added to the <xref:System.Windows.Media.SolidColorBrush> object's <xref:System.Windows.Freezable.Changed> event. This means the following code does not actually make `myRect` eligible for garbage collection:  
   
- [!code-csharp[Performance#PerformanceSnippet5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet5)]
- [!code-vb[Performance#PerformanceSnippet5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet5)]  
+ [!code-csharp[Performance#PerformanceSnippet5](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet5)]
+ [!code-vb[Performance#PerformanceSnippet5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet5)]  
   
  In this case `myBrush` is still keeping `myRectangle` alive and will call back to it when it fires its <xref:System.Windows.Freezable.Changed> event. Note that assigning `myBrush` to the <xref:System.Windows.Shapes.Shape.Fill%2A> property of a new <xref:System.Windows.Shapes.Rectangle> will simply add another event handler to `myBrush`.  
   
  The recommended way to clean up these types of objects is to remove the <xref:System.Windows.Media.Brush> from the <xref:System.Windows.Shapes.Shape.Fill%2A> property, which will in turn remove the <xref:System.Windows.Freezable.Changed> event handler.  
   
- [!code-csharp[Performance#PerformanceSnippet6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet6)]
- [!code-vb[Performance#PerformanceSnippet6](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet6)]  
+ [!code-csharp[Performance#PerformanceSnippet6](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet6)]
+ [!code-vb[Performance#PerformanceSnippet6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet6)]  
   
 <a name="User_Interface_Virtualization"></a>   
 ## User Interface Virtualization  

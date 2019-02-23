@@ -38,3 +38,7 @@
 ## System.Windows.Forms.Design
 ### [DataMemberFieldEditor class](datamemberfieldeditor-class.md)
 ### [DataMemberListEditor class](datamemberlisteditor-class.md)
+## stdole Namespace
+### [IFont.Name Property](stdole.ifont.name.md)
+### [IPicture.Handle Property](stdole.ipicture.handle.md)
+### [IPictureDisp.Handle Property](stdole.ipicturedisp.handle.md)

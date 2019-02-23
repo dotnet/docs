@@ -71,6 +71,7 @@ The following table lists the minimum value of the **Release** entry for each .N
 [!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
 
 <a name="version_table"></a>
+
 |.NET Framework version|Value of the Release DWORD|
 |--------------------------------|-------------|
 |.NET Framework 4.5|378389|

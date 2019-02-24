@@ -19,7 +19,7 @@ The .NET Framework provides a comprehensive and integrated set of classes that e
   
 -   <xref:System.Xml.Linq>  
   
- For a full list, see the [System.Xml Namespaces](https://docs.microsoft.com/previous-versions/gg145036(v=vs.110)) webpage.  
+ For a full list, search for "System.Xml" on the [.NET API browser](https://docs.microsoft.com/dotnet/api/?term=system.xml).  
   
  The classes in these namespaces support World Wide Web Consortium (W3C) recommendations. For example:  
   

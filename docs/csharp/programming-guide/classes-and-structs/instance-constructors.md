@@ -21,7 +21,7 @@ Instance constructors are used to create and initialize any instance member vari
   
  [!code-csharp[csProgGuideObjects#76](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/instance-constructors_2.cs)]  
   
- This allows `CoOrd` objects to be created with default or specific initial values, like this:  
+ This allows `Coord` objects to be created with default or specific initial values, like this:  
   
  [!code-csharp[csProgGuideObjects#77](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/instance-constructors_3.cs)]  
   

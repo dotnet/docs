@@ -24,6 +24,7 @@ The .NET Framework consists of two main components, which are versioned separate
 
 > [!NOTE]
 > Each new version of the .NET Framework retains features from the previous versions and adds new features. You can load multiple versions of the .NET Framework on a single computer at the same time, which means that you can install the .NET Framework without having to uninstall previous versions. In general, you shouldn't uninstall previous versions of the .NET Framework, because an application you use may depend on a specific version and may break if that version is removed.
+>
 > There is a difference between the .NET Framework version and the CLR version: 
 > - The .NET Framework version is based on the set of assemblies that form the .NET Framework class library. For example, .NET Framework versions include 4.5, 4.6.1, and 4.7.2. 
 >- The CLR version is based on the runtime on which .NET Framework applications execute. A single CLR version typically supports multiple .NET Framework versions.For example, CLR version 4.0.30319.*xxxxx* supports .NET Framework versions 4 through 4.5.2 and CLR version 4.0.30319.42000 supports .NET Framework versions starting with .NET Framework 4.6. 
@@ -33,7 +34,7 @@ The .NET Framework consists of two main components, which are versioned separate
 
 To get a list of the .NET Framework versions installed on a computer, you access the registry. You can either use the Registry Editor to view the registry or use code to query it:
  
-- Find current .NET Framework versions (4.5 and later): 
+- Find newer .NET Framework versions (4.5 and later): 
      - [Use the Registry Editor to find .NET Framework versions](#net_b)  
      - [Use code to query the registry for .NET Framework versions](#net_d)  
      - [Use PowerShell to query the registry for .NET Framework versions](#ps_a)
@@ -49,7 +50,7 @@ To get a list of the CLR versions installed on a computer, use a tool or code:
 For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine which .NET Framework updates are installed](how-to-determine-which-net-framework-updates-are-installed.md). 
   
 
-## Find recent .NET Framework versions (4.5 and later)
+## Find newer .NET Framework versions (4.5 and later)
 
 <a name="net_b"></a> 
 ### Find .NET Framework versions 4.5 and later in the registry
@@ -128,7 +129,7 @@ The following examples check the value of the **Release** entry to determine whe
 
 To check for a different minimum-required .NET Framework version, replace *394802* in these examples with a **Release** value from the [.NET Framework version table](#version_table).
 
-## Find earlier .NET Framework versions (1&#8211;4)
+## Find older .NET Framework versions (1&#8211;4)
 
 <a name="net_a"></a>
 ### Find .NET Framework versions 1&#8211;4 in the registry 

@@ -209,7 +209,7 @@ A Boolean value that specifies whether the client must prompt the consumer to ac
 
 ### PackageLicenseExpression
 
-An [SPDX license identifier](https://spdx.org/licenses/) or expression, i.e. `Apache-2.0`.
+An [SPDX license identifier](https://spdx.org/licenses/) or expression. For example, `Apache-2.0`.
 
 Here is the complete list of [SPDX license identifiers](https://spdx.org/licenses/). NuGet.org accepts only OSI or FSF approved licenses when using license type expression.
 

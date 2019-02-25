@@ -1,6 +1,6 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed"
-ms.date: "02/22/2019"
+ms.date: "02/25/2019"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,19 +23,21 @@ The .NET Framework consists of two main components, which are versioned separate
 - The common language runtime (CLR), which manages and executes your app's code. The CLR is identified by its own version number (see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)).  
 
 > [!NOTE]
+> Each new version of the .NET Framework retains features from the previous versions and adds new features. You can load multiple versions of the .NET Framework on a single computer at the same time, which means that you can install the .NET Framework without having to uninstall previous versions. In general, you shouldn't uninstall previous versions of the .NET Framework, because an application you use may depend on a specific version and may break if that version is removed.
 > There is a difference between the .NET Framework version and the CLR version: 
 > - The .NET Framework version is based on the set of assemblies that form the .NET Framework class library. For example, .NET Framework versions include 4.5, 4.6.1, and 4.7.2. 
->- The CLR version is based on the runtime on which .NET Framework applications execute. A single CLR version typically supports multiple .NET Framework versions. For example, CLR version 4.30319.*xxxxx* supports .NET Framework versions 4 through 4.5.2 and CLR version 4.30319.42000 supports .NET Framework versions starting with .NET Framework 4.6. 
+>- The CLR version is based on the runtime on which .NET Framework applications execute. A single CLR version typically supports multiple .NET Framework versions.For example, CLR version 4.0.30319.*xxxxx* supports .NET Framework versions 4 through 4.5.2 and CLR version 4.0.30319.42000 supports .NET Framework versions starting with .NET Framework 4.6. 
 >
 > For more information about versions, see [.NET Framework versions and dependencies](versions-and-dependencies.md).
 
+
 To get a list of the .NET Framework versions installed on a computer, you access the registry. You can either use the Registry Editor to view the registry or use code to query it:
  
-- Find recent .NET Framework versions (4.5 and later): 
+- Find current .NET Framework versions (4.5 and later): 
      - [Use the Registry Editor to find .NET Framework versions](#net_b)  
      - [Use code to query the registry for .NET Framework versions](#net_d)  
      - [Use PowerShell to query the registry for .NET Framework versions](#ps_a)
- - Find earlier .NET Framework versions (1&#8211;4):
+ - Find older .NET Framework versions (1&#8211;4):
      - [Use the Registry Editor to find .NET Framework versions](#net_a)
      - [Use code to query the registry for .NET Framework versions](#net_c)   
 
@@ -112,7 +114,7 @@ This example follows the recommended practice for version checking:
 
 - Use PowerShell commands to check the value of the **Release** entry of the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** subkey.
 
-The following example checks the value of the **Release** entry to determine whether .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
+The following examples check the value of the **Release** entry to determine whether .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
 
 ```PowerShell
 # PowerShell 5
@@ -124,7 +126,7 @@ The following example checks the value of the **Release** entry to determine whe
 (Get-ItemProperty "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -gt 394802
 ```
 
-To check for a different minimum-required .NET Framework version, replace *394802* in the previous example with a **Release** value from the [.NET Framework version table](#version_table).
+To check for a different minimum-required .NET Framework version, replace *394802* in these examples with a **Release** value from the [.NET Framework version table](#version_table).
 
 ## Find earlier .NET Framework versions (1&#8211;4)
 
@@ -182,9 +184,9 @@ Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md)
 
 1. Query the <xref:System.Environment.Version?displayProperty=nameWithType> property to retrieve a <xref:System.Version> object. 
 
-    This returned object identifies the version of the runtime that's currently executing the code; it does not return assembly versions or other versions of the runtime that may have been installed on the computer.
+    The returned `System.Version` object identifies the version of the runtime that's currently executing the code. It doesn't return assembly versions or other versions of the runtime that may have been installed on the computer.
 
-    For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form *4.0.30319.xxxxx*. For the .NET Framework 4.6 and later versions, it has the form *4.6.30319.42000*.    
+    For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form 4.0.30319.*xxxxx*. For the .NET Framework 4.6 and later versions, it has the form 4.0.30319.42000.    
 
 2. After you have the `Version` object, query it as follows:
 

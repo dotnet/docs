@@ -59,7 +59,7 @@ Microsoft provides Visual Studio Code, which is a lightweight code editor that i
 >
 > For instructions on setting up Docker for Mac, go to <https://docs.docker.com/docker-for-mac/>.
 
-You can work with Docker CLI and write your code using any code editor, but if you use Visual Studio Code with the Docker extension, it gets easy to author `Dockerfile` and `docker-compose.yml` files in your workspace. You can also run tasks and scripts from the Visual Studio Code IDE, to execute Docker commands using the Docker CLI underneath.
+You can work with Docker CLI and write your code using any code editor, but using Visual Studio Code with the Docker extension makes it easy to author `Dockerfile` and `docker-compose.yml` files in your workspace. You can also run tasks and scripts from the Visual Studio Code IDE to execute Docker commands using the Docker CLI underneath.
 
 The Docker extension for VS Code provides the following features:
 
@@ -85,15 +85,15 @@ To install the Docker extension, press Ctrl+Shift+P, type `ext install`, and the
 
 ### Step 2: Create a DockerFile related to an existing image (plain OS or dev environments like .NET Core, Node.js, and Ruby)
 
-You will need a `DockerFile` per custom image to be built and per container to be deployed, therefore, if your app is made up of a single custom service, you will need a single `DockerFile`. But, if your app is composed of multiple services (as in a microservices architecture), you'll need one `Dockerfile` per service.
+You will need a `DockerFile` per custom image to be built and per container to be deployed. If your app is made up of a single custom service, you will need a single `DockerFile`. But if your app is composed of multiple services (as in a microservices architecture), you'll need one `Dockerfile` per service.
 
 The `DockerFile` is commonly placed in the root folder of your app or service and contains the required commands so that Docker knows how to set up and run that app or service. You can create your `DockerFile` and add it to your project along with your code (node.js, .NET Core, etc.), or, if you are new to the environment, take a look at the following Tip.
 
 > [!TIP]
 >
-> You can use the Docker extension to guide you when using the `Dockerfile` and `docker-compose.yml` files related to your Docker containers. Eventually, you will probably write this kind of files without this tools, but using the Docker extension is a good starting point that will accelerate your learning curve.
+> You can use the Docker extension to guide you when using the `Dockerfile` and `docker-compose.yml` files related to your Docker containers. Eventually, you will probably write these kinds of files without this tool, but using the Docker extension is a good starting point that will accelerate your learning curve.
 
-In figure 4-24, you can see how a docker-compose file is added by using the Docker Extension for VS Code.
+In Figure 4-24, you can see how a docker-compose file is added by using the Docker Extension for VS Code.
 
 ![Console view of Docker extension for VS Code.](./media/image24.png)
 
@@ -105,7 +105,7 @@ When you add a DockerFile, you specify what base Docker image you’ll be using 
 
 Using an official repository of a language stack with a version number ensures that the same language features are available on all machines (including development, testing, and production).
 
-Following is a sample DockerFile for a .NET Core container:
+The following is a sample DockerFile for a .NET Core container:
 
 ```Dockerfile
 # Base Docker image to use  
@@ -137,9 +137,9 @@ You can specify additional configuration settings in the Dockerfile, depending o
 
 **Use multi-arch image repositories**
 
-A single image name in a repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms (that is Linux and Windows). For example, the [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same image name.
+A single image name in a repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms (that is, Linux and Windows). For example, the [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same image name.
 
-When pulling the [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) image from a Windows host it pulls the Windows variant, whereas pulling the same image name from a Linux host pulls the Linux variant.
+Pulling the [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) image from a Windows host pulls the Windows variant, whereas pulling the same image name from a Linux host pulls the Linux variant.
 
 ***Create your base image from scratch***
 
@@ -151,9 +151,9 @@ For each custom service that comprises your app, you'll need to create a related
 
 > [!NOTE]
 >
-> When taking into account the "outer-loop DevOps workflow", the images will be created by an automated build process whenever you push your source code to a Git repository (Continuous Integration) so the images will be created in that global environment from your source code.
+> When taking into account the "outer-loop DevOps workflow", the images will be created by an automated build process whenever you push your source code to a Git repository (Continuous Integration), so the images will be created in that global environment from your source code.
 >
-> But, before we consider going to that outer-loop route, we need to ensure that the Docker application is actually working properly so that they don't push code that might not work properly to the source control system (Git, etc.).
+> But before we consider going to that outer-loop route, we need to ensure that the Docker application is actually working properly so that they don't push code that might not work properly to the source control system (Git, etc.).
 >
 > Therefore, each developer first needs to do the entire inner-loop process to test locally and continue developing until they want to push a complete feature or change to the source control system.
 
@@ -177,7 +177,7 @@ You can find the existing images in your local repository (your development mach
 
 With the `docker-compose.yml` file, you can define a set of related services to be deployed as a composed application with the deployment commands explained in the next step section.
 
-Create that file in your main or root solution folder; it should have a content similar to the shown in this `docker-compose.yml` file:
+Create that file in your main or root solution folder; it should have content similar to that shown in this `docker-compose.yml` file:
 
 ```yml
 version: '3.4'
@@ -218,7 +218,7 @@ You can run the Docker image by using the docker run command, as shown here:
 docker run -t -d -p 80:5000 cesardl/netcore-webapi-microservice-docker:first
 ```
 
-For this particular deployment, we'll be redirecting requests sent to port 80 to the internal port 5000. Now, the application is listening on the external port 80 at the host level.
+For this particular deployment, we'll be redirecting requests sent to port 80 to the internal port 5000. Now the application is listening on the external port 80 at the host level.
 
 ***Option B: Compose and run a multiple-container application***
 

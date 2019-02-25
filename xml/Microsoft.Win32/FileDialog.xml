@@ -902,7 +902,7 @@
       <Docs>
         <summary>Gets or sets a value indicating whether the dialog accepts only valid [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] file names.</summary>
         <value>
-          <see langword="true" /> if warnings will be shown when an invalid file name is provided; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if warnings will be shown when an invalid file name is provided; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to set the validation behavior. Associated enumeration:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>

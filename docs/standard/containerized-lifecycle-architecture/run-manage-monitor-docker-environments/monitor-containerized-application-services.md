@@ -50,7 +50,7 @@ To create an Application Insights resource, follow the instructions in the artic
 
 There are many support chores with lots of details that you have to handle to ensure your applications and infrastructure are in top notch condition to support business needs, and the situation gets heavier in the microservices realm, so you need a way to have both high-level and detailed views when you need to take action.
 
-Azure has the tools to manage both your cloud and on-premises resources in a unified view if four critical aspects:
+Azure has the tools to manage an provide a unified view of four critical aspects of both your cloud and on-premises resources:
 
 - **Security**. With [Azure Security Center](https://azure.microsoft.com/services/security-center/).
   - Get full visibility and control over the security of your virtual machines, apps, and workloads.
@@ -64,7 +64,7 @@ Azure has the tools to manage both your cloud and on-premises resources in a uni
 
 - **Monitoring**. With [Azure monitoring](https://azure.microsoft.com/solutions/monitoring/), [Log Analytics](https://azure.microsoft.com/services/log-analytics/), and [Application Insights](https://azure.microsoft.com/services/application-insights/).
   - Get full visibility into the health and performance of your Azure workloads, apps, and infrastructure.
-  - Collect data from any source and get rich insights for your virtual machines, containers, and applications.
+  - Collect data from any source and get rich insights into your virtual machines, containers, and applications.
   - Find the information you need using interactive queries and full-text search. 
   - Perform root-cause analysis with advanced analytics, including machine learning algorithms.
 

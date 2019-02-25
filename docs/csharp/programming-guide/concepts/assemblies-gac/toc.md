@@ -7,4 +7,3 @@
 ## [How to: Load and Unload Assemblies](how-to-load-and-unload-assemblies.md)
 ## [How to: Share an Assembly with Other Applications](how-to-share-an-assembly-with-other-applications.md)
 ## [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio](walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)
-## [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio](walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)

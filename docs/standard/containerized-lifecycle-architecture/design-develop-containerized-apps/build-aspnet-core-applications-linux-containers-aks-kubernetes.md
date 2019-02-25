@@ -5,7 +5,7 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 02/25/2019
 ---
-# Build ASP.NET Core 2.1 applications deployed as Linux containers into AKS/Kubernetes orchestrator
+# Build ASP.NET Core 2.1 applications deployed as Linux containers into an AKS/Kubernetes orchestrator
 
 Azure Kubernetes Services (AKS) is Azure's managed Kubernetes orchestrations services that simplify container deployment and management.
 
@@ -31,7 +31,7 @@ This example uses a simple project that's based based on a Visual Studio Web API
 
 To create the sample project in Visual Studio, select **File** > **New** > **Project**, select the **Web** project types in the left pane, followed by **ASP.NET Core Web Application**.
 
-Visual Studio lists templates for web projects. For our example, you select **Web API,** to create an ASP.NET Web API Application.
+Visual Studio lists templates for web projects. For our example, select **API** to create an ASP.NET Web API Application.
 
 Verify that you have selected ASP.NET Core 2.1 as the framework. .NET Core 2.1 is included in the last version of Visual Studio 2017 and is automatically installed and configured for you when you install Visual Studio 2017.
 
@@ -59,7 +59,7 @@ As you can see, the integration between Visual Studio 2017 and Docker is totally
 
 Now you can run your application with the **F5** key or by using the **Play** button.
 
-After running the project, you can list the images using the `docker images` command. You should see the `mssampleapplication` image created with the automatic deployment of our project with Visual Studio 2017.
+After running the project, you can list the images using the `docker images` command. You should see the `mssampleapplication` image created by the automatic deployment of our project with Visual Studio 2017.
 
 ```console
 docker images
@@ -75,7 +75,7 @@ Upload the image to any Docker registry, like [Azure Container Registry (ACR)](h
 
 ### Create the image in Release mode
 
-We'll now create the image in **Release** mode (ready for production) by changing to **Release** as in Figure 4-41 and running the application as we did before.
+We'll now create the image in **Release** mode (ready for production) by changing to **Release**, as shown in Figure 4-41, and running the application as we did before.
 
 ![Toolbar option in VS to build in release mode.](media/select-release-mode.png)
 
@@ -137,7 +137,7 @@ You can see below the result you should get when the process completes:
 
 **Figure 4-46**. View of nodes
 
-The next step is to deploy your container into your AKS Kubernetes clusterm for that you need a file (**.yml deploy file**) that, in this case, contains:
+The next step is to deploy your container into your AKS Kubernetes cluster. For that, you need a file (**.yml deploy file**) that contains the following:
 
 ```yml
 apiVersion: apps/v1beta1

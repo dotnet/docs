@@ -15,7 +15,7 @@ ms.author: "mairaw"
 # .NET Framework Support for Windows Store Apps and Windows Runtime
 The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of software development scenarios with the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. These scenarios fall into three categories:
 
--   Developing [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps with XAML controls, as described in [Roadmap for Windows Store apps using C# or Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/br229583(v=win.10)), [How tos (XAML)](https://docs.microsoft.com/previous-versions/windows/apps/br229566(v=win.10)), and [.NET for Windows Store apps overview](https://msdn.microsoft.com/library/windows/apps/br230302%28v=VS.110%29.aspx).
+-   Developing [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps with XAML controls, as described in [Roadmap for Windows Store apps using C# or Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/br229583(v=win.10)), [How tos (XAML)](https://docs.microsoft.com/previous-versions/windows/apps/br229566(v=win.10)), and [.NET for Windows Store apps overview](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140)).
 
 -   Developing class libraries to use in the [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps that you create with the .NET Framework.
 
@@ -26,7 +26,7 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of so
 ## The Basics
  The .NET Framework supports the three development scenarios listed earlier by providing [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)], and by supporting the [!INCLUDE[wrt](../../../includes/wrt-md.md)] itself.
 
--   [.NET for Windows Store apps](https://msdn.microsoft.com/library/windows/apps/br230232(v=vs.110).aspx) provides a streamlined view of the .NET Framework class libraries and include only the types and members you can use to create [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps and [!INCLUDE[wrt](../../../includes/wrt-md.md)] Components.
+-   [.NET Framework and Windows Runtime namespaces](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140)#net-framework-and-windows-runtime-namespaces) provides a streamlined view of the .NET Framework class libraries and include only the types and members you can use to create [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps and [!INCLUDE[wrt](../../../includes/wrt-md.md)] Components.
 
     -   When you use Visual Studio (Visual Studio 2012 or later) to develop a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app or a [!INCLUDE[wrt](../../../includes/wrt-md.md)] component, a set of reference assemblies ensures that you see only the relevant types and members.
 
@@ -34,7 +34,7 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of so
 
     -   Features that simply wrap the operating system API are also removed, because the [!INCLUDE[wrt](../../../includes/wrt-md.md)] is easy to call from managed code.
 
-     To read more about the [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)], see the [.NET for Windows Store apps overview](https://msdn.microsoft.com/library/windows/apps/br230302(v=VS.110).aspx). To read about the API selection process, see the [.NET for Metro style apps](https://blogs.msdn.microsoft.com/dotnet/2012/04/17/net-for-metro-style-apps/) entry in the .NET blog.
+     To read more about the [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)], see the [.NET for Windows Store apps overview](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140)). To read about the API selection process, see the [.NET for Metro style apps](https://blogs.msdn.microsoft.com/dotnet/2012/04/17/net-for-metro-style-apps/) entry in the .NET blog.
 
 -   The [Windows Runtime](/uwp/api/) provides the user interface elements for building [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, and provides access to operating system features. Like the .NET Framework, the [!INCLUDE[wrt](../../../includes/wrt-md.md)] has metadata that enables the C# and Visual Basic compilers to use the [!INCLUDE[wrt](../../../includes/wrt-md.md)] the way they use the .NET Framework class libraries. The .NET Framework makes it easier to use the [!INCLUDE[wrt](../../../includes/wrt-md.md)] by hiding some differences:
 
@@ -140,7 +140,7 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of so
 
 |Title|Description|
 |-----------|-----------------|
-|[.NET for Windows Store apps overview](https://msdn.microsoft.com/library/windows/apps/br230302(v=VS.110).aspx)|Describes the .NET Framework types and members that you can use to create [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps and [!INCLUDE[wrt](../../../includes/wrt-md.md)]Components. (In the Windows Dev Center.)|
+|[.NET for Windows Store apps overview](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140))|Describes the .NET Framework types and members that you can use to create [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps and [!INCLUDE[wrt](../../../includes/wrt-md.md)]Components. (In the Windows Dev Center.)|
 |[Roadmap for Windows Store apps using C# or Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/br229583(v=win.10))|Provides key resources to help you get started developing [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps by using C# or Visual Basic, including many Quickstart topics, guidelines, and best practices. (In the Windows Dev Center.)|
 |[How tos (XAML)](https://docs.microsoft.com/previous-versions/windows/apps/br229566(v=win.10))|Provides key resources to help you get started developing [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps by using C# or Visual Basic, including many Quickstart topics, guidelines, and best practices. (In the Windows Dev Center.)|
 |[Creating Windows Runtime Components in C# and Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic)|Describes how to create a [!INCLUDE[wrt](../../../includes/wrt-md.md)] component using the .NET Framework, explains how to use it as part of a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app built for Windows using JavaScript, and describes how to debug the combination with Visual Studio. (In the Windows Dev Center.)|

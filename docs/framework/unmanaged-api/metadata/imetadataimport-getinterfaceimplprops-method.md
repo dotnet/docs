@@ -1,6 +1,6 @@
 ---
 title: "IMetaDataImport::GetInterfaceImplProps Method"
-ms.date: "03/30/2017"
+ms.date: "02/25/2019"
 api_name: 
   - "IMetaDataImport.GetInterfaceImplProps"
 api_location: 

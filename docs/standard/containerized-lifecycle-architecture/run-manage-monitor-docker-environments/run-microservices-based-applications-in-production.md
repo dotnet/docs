@@ -11,7 +11,7 @@ Applications composed by multiple microservices do need to be deployed into orch
 
 ## Introduction to orchestrators, schedulers, and container clusters
 
-Earlier in this e-book, we introduced *clusters* and *schedulers* as part of the discussion on software architecture and development. Examples of Docker clusters are Kubernetes and Service Fabric. Both of these orchestrators can run as a part of the infrastructure provided by Microsoft Azure Kubernetes Service.
+Earlier in this e-book, *clusters* and *schedulers* were introduced as part of the discussion on software architecture and development. Kubernetes and Service Fabric are examples of Docker clusters. Both of these orchestrators can run as a part of the infrastructure provided by Microsoft Azure Kubernetes Service.
 
 When applications are scaled-out across multiple host systems, the ability to manage each host system and abstract away the complexity of the underlying platform becomes attractive. That's precisely what orchestrators and schedulers provide. Let's take a brief look at them here:
 

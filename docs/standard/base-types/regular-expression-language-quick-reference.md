@@ -44,19 +44,19 @@ ms.author: "ronpet"
   
 |Escaped character|Description|Pattern|Matches|  
 |-----------------------|-----------------|-------------|-------------|  
-|`\a`|Matches a bell character, \u0007.|`\a`|"\u0007" in "Error!" + '\u0007'|  
-|`\b`|In a character class, matches a backspace, \u0008.|`[\b]{3,}`|"\b\b\b\b" in "\b\b\b\b"|  
-|`\t`|Matches a tab, \u0009.|`(\w+)\t`|"item1\t", "item2\t" in "item1\titem2\t"|  
-|`\r`|Matches a carriage return, \u000D. (`\r` is not equivalent to the newline character, `\n`.)|`\r\n(\w+)`|"\r\nThese" in "\r\nThese are\ntwo lines."|  
-|`\v`|Matches a vertical tab, \u000B.|`[\v]{2,}`|"\v\v\v" in "\v\v\v"|  
-|`\f`|Matches a form feed, \u000C.|`[\f]{2,}`|"\f\f\f" in "\f\f\f"|  
-|`\n`|Matches a new line, \u000A.|`\r\n(\w+)`|"\r\nThese" in "\r\nThese are\ntwo lines."|  
-|`\e`|Matches an escape, \u001B.|`\e`|"\x001B" in "\x001B"|  
-|`\` *nnn*|Uses octal representation to specify a character (*nnn* consists of two or three digits).|`\w\040\w`|"a b", "c d" in "a bc d"|  
-|`\x` *nn*|Uses hexadecimal representation to specify a character (*nn* consists of exactly two digits).|`\w\x20\w`|"a b", "c d" in "a bc d"|  
-|`\c` *X*<br /><br /> `\c` *x*|Matches the ASCII control character that is specified by *X* or *x*, where *X* or *x* is the letter of the control character.|`\cC`|"\x0003" in "\x0003" (Ctrl-C)|  
+|`\a`|Matches a bell character, \u0007.|`\a`|`"\u0007"` in `"Error!" + '\u0007'`|  
+|`\b`|In a character class, matches a backspace, \u0008.|`[\b]{3,}`|`"\b\b\b\b"` in `"\b\b\b\b"`|  
+|`\t`|Matches a tab, \u0009.|`(\w+)\t`|`"item1\t"`, `"item2\t"` in `"item1\titem2\t"`|  
+|`\r`|Matches a carriage return, \u000D. (`\r` is not equivalent to the newline character, `\n`.)|`\r\n(\w+)`|`"\r\nThese"` in `"\r\nThese are\ntwo lines."`|  
+|`\v`|Matches a vertical tab, \u000B.|`[\v]{2,}`|`"\v\v\v"` in `"\v\v\v"`|  
+|`\f`|Matches a form feed, \u000C.|`[\f]{2,}`|`"\f\f\f"` in `"\f\f\f"`|  
+|`\n`|Matches a new line, \u000A.|`\r\n(\w+)`|`"\r\nThese"` in `"\r\nThese are\ntwo lines."`|  
+|`\e`|Matches an escape, \u001B.|`\e`|`"\x001B"` in `"\x001B"`|  
+|`\` *nnn*|Uses octal representation to specify a character (*nnn* consists of two or three digits).|`\w\040\w`|`"a b"`, `"c d"` in `"a bc d"`|  
+|`\x` *nn*|Uses hexadecimal representation to specify a character (*nn* consists of exactly two digits).|`\w\x20\w`|`"a b"`, `"c d"` in `"a bc d"`|  
+|`\c` *X*<br /><br /> `\c` *x*|Matches the ASCII control character that is specified by *X* or *x*, where *X* or *x* is the letter of the control character.|`\cC`|`"\x0003"` in `"\x0003"` (Ctrl-C)|  
 |`\u` *nnnn*|Matches a Unicode character by using hexadecimal representation (exactly four digits, as represented by *nnnn*).|`\w\u0020\w`|`"a b"`, `"c d"` in `"a bc d"`|  
-|`\`|When followed by a character that is not recognized as an escaped character in this and other tables in this topic, matches that character. For example, `\*` is the same as `\x2A`, and `\.` is the same as `\x2E`. This allows the regular expression engine to disambiguate language elements (such as \* or ?) and character literals (represented by `\*` or `\?`).|`\d+[\+-x\*]\d+`|"2+2" and "3\*9" in "(2+2) \* 3\*9"|  
+|`\`|When followed by a character that is not recognized as an escaped character in this and other tables in this topic, matches that character. For example, `\*` is the same as `\x2A`, and `\.` is the same as `\x2E`. This allows the regular expression engine to disambiguate language elements (such as \* or ?) and character literals (represented by `\*` or `\?`).|`\d+[\+-x\*]\d+`|`"2+2"` and `"3*9"` in `"(2+2) * 3*9"`|  
   
  [Back to top](#top)  
   

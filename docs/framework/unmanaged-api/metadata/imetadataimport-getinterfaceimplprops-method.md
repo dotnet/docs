@@ -43,7 +43,7 @@ HRESULT GetInterfaceImplProps (
 
 ## Remarks
 
- You obtain the value for `iImpl` by calling the [EnumInterfaceImpls](imetadataimport-enuminterfaceimpls-method) method.
+ You obtain the value for `iImpl` by calling the [EnumInterfaceImpls](imetadataimport-enuminterfaceimpls-method.md) method.
  
  For example, suppose that a class has an `mdTypeDef` token value of 0x02000007 and that it implements three
 interfaces whose types have tokens: 

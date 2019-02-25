@@ -199,7 +199,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 - [Lambda Expressions (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [Lambda Expressions (C#)](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
 - [How to: Use Indexed Properties in COM Interop Programming](../../../csharp/programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md)
-- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120))
+- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120))
 - [Walkthrough: Embedding Types from Managed Assemblies](../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)
 - [Walkthrough: Creating Your First VSTO Add-in for Excel](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)
 - [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)

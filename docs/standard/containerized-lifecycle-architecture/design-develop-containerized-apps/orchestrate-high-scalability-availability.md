@@ -92,7 +92,7 @@ As mentioned, Azure Dev Spaces uses Helm charts when deploying container-based a
 
 Azure Dev Spaces helps development teams be more productive on Kubernetes because it allows you to rapidly iterate and debug code directly in a global Kubernetes cluster in Azure by just using Visual Studio 2017 or Visual Studio Code. That Kubernetes cluster in Azure is a shared managed Kubernetes cluster, so your team can collaboratively work together. You can develop your code in isolation, then deploy to the global cluster and do end-to-end testing with other components without replicating or mocking up dependencies.
 
-As shown in figure 4-9, the most differential feature in Azure Dev Spaces is capability of creating 'spaces' that can run integrated to the rest of the global deployment in the cluster.
+As shown in figure 4-9, the most differentiating feature in Azure Dev Spaces is the capability of creating 'spaces' that can run integrated to the rest of the global deployment in the cluster.
 
 ![Azure Dev Spaces can transparently mix and match production microservices with development container instance, to ease testing of new versions.](media/image38.png)
 

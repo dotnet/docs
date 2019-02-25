@@ -64,7 +64,7 @@ Conceptually, this information is stored into an interface implementation table 
 
 Recall, the token is a 4-byte value:
 
-- the lower 3 bytes hold the row number, or RID
+- The lower 3 bytes hold the row number, or RID.
 - The upper byte holds the token type – 0x09 for `mdtInterfaceImpl`.
 
 `GetInterfaceImplProps` returns the information held in the row whose token you provide in the `iImpl` argument. 

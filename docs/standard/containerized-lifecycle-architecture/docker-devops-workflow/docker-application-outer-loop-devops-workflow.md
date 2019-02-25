@@ -115,11 +115,11 @@ A practical option when testing more advanced scenarios, like including several 
 
 ### Push the custom application Docker image into your global Docker Registry
 
-After the Docker images have been tested and validated, you'll want to tag and publish them to your Docker registry. The Docker registry is a critical piece in the Docker application life cycle because it is the central place where you store your custom test (aka "blessed images") to be deployed into QA and production environments.
+After the Docker images have been tested and validated, you'll want to tag and publish them to your Docker registry. The Docker registry is a critical piece in the Docker application life cycle because it is the central place where you store your custom test (also known as "blessed images") to be deployed into QA and production environments.
 
 Similar to how the application code stored in your SCC repository (Git, etc.) is your "source of truth," the Docker registry is your "source of truth" for your binary application or bits to be deployed to the QA or production environments.
 
-Typically, you might want to have your private repositories for your custom images either in a private repository in Azure Container Registry or in an on-premises registry like Docker Trusted Registry, or in a public-cloud registry with restricted access (like Docker Hub), although in this last case if your code is not open source, you must trust the vendor's security. Either way, the method you use is similar and is based on the `docker push` command, as depicted in Figure 5-4.
+Typically, you might want to have your private repositories for your custom images either in a private repository in Azure Container Registry or in an on-premises registry like Docker Trusted Registry, or in a public-cloud registry with restricted access (like Docker Hub), although in this last case if your code is not open source, you must trust the vendor's security. Either way, the method you use is similar and is based on the `docker push` command, as shown in Figure 5-4.
 
 ![In step 3, for building integration and testing (CI) you might publish the resulting docker images to a private or public registry.](./media/image4.png)
 
@@ -134,7 +134,7 @@ Using the Docker tasks, you can push a set of service images defined by a `docke
 **Figure 5-5**. Using Azure DevOps Services to publishing custom images to a Docker Registry
 
 > [!INFORMATION]
-> To learn more about Azure Container Registry, go to <https://aka.ms/azurecontainerregistry>.
+> For more information about Azure Container Registry, see <https://aka.ms/azurecontainerregistry>.
 
 ## Step 4: CD, Deploy
 

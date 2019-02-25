@@ -191,11 +191,11 @@ ms.author: "ronpet"
   
 |Option|Description|Pattern|Matches|  
 |------------|-----------------|-------------|-------------|  
-|`i`|Use case-insensitive matching.|`\b(?i)a(?-i)a\w+\b`|"aardvark", "aaaAuto" in "aardvark AAAuto aaaAuto Adam breakfast"|  
+|`i`|Use case-insensitive matching.|`\b(?i)a(?-i)a\w+\b`|`"aardvark"`, `"aaaAuto"` in `"aardvark AAAuto aaaAuto Adam breakfast"`|  
 |`m`|Use multiline mode. `^` and `$` match the beginning and end of a line, instead of the beginning and end of a string.|For an example, see the "Multiline Mode" section in [Regular Expression Options](regular-expression-options.md).||  
 |`n`|Do not capture unnamed groups.|For an example, see the "Explicit Captures Only" section in [Regular Expression Options](regular-expression-options.md).||  
 |`s`|Use single-line mode.|For an example, see the "Single-line Mode" section in [Regular Expression Options](regular-expression-options.md).||  
-|`x`|Ignore unescaped white space in the regular expression pattern.|`\b(?x) \d+ \s \w+`|"1 aardvark", "2 cats" in "1 aardvark 2 cats IV centurions"|  
+|`x`|Ignore unescaped white space in the regular expression pattern.|`\b(?x) \d+ \s \w+`|`"1 aardvark"`, `"2 cats"` in `"1 aardvark 2 cats IV centurions"`|  
   
  [Back to top](#top)  
   
@@ -205,7 +205,7 @@ ms.author: "ronpet"
   
 |Construct|Definition|Example|  
 |---------------|----------------|-------------|  
-|`(?imnsx-imnsx)`|Sets or disables options such as case insensitivity in the middle of a pattern.For more information, see [Regular Expression Options](regular-expression-options.md).|`\bA(?i)b\w+\b` matches "ABA", "Able" in "ABA Able Act"|  
+|`(?imnsx-imnsx)`|Sets or disables options such as case insensitivity in the middle of a pattern.For more information, see [Regular Expression Options](regular-expression-options.md).|`\bA(?i)b\w+\b` matches `"ABA"`, `"Able"` in `"ABA Able Act"`|  
 |`(?#` *comment* `)`|Inline comment. The comment ends at the first closing parenthesis.|`\bA(?#Matches words starting with A)\w+\b`|  
 |`#` [to end of line]|X-mode comment. The comment starts at an unescaped `#` and continues to the end of the line.|`(?x)\bA\w+\b#Matches words starting with A`|  
   

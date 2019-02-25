@@ -30,7 +30,7 @@ The second phase is to create a deployment/release pipeline. In Azure DevOps Ser
 > [!Walkthrough] Deploying eShopModernized to Kubernetes:
 >
 > For a detailed walkthrough of Azure DevOps CI/CD pipelines deploying to Kubernetes, see this post: \
-><https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-How-to-deploy-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD)>
+><https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)>
 
 >[!div class="step-by-step"]
 >[Previous](docker-application-outer-loop-devops-workflow.md)

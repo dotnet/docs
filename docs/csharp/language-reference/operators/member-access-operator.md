@@ -1,7 +1,7 @@
 ---
 title: ". operator - C# Reference"
 ms.custom: seodec18
-ms.date: 02/24/2019
+ms.date: 02/25/2019
 f1_keywords: 
   - "._CSharpKeyword"
 helpviewer_keywords: 
@@ -16,21 +16,21 @@ The dot, `.`, is typically used for member access.
 
 You use the `.` token to access a member of a namespace or a type, as the following examples demonstrate:
 
-- You can use `.` to access a nested namespace within a namespace, as the following example of a [`using` directive](../keywords/using-directive.md) shows:
+- Use `.` to access a nested namespace within a namespace, as the following example of a [`using` directive](../keywords/using-directive.md) shows:
 
   [!code-csharp[nested namespaces](~/samples/snippets/csharp/language-reference/operators/MemberAccessExamples.cs#NestedNamespace)]
 
-- You can use `.` to form a *qualified name* to access a type within a namespace, as the following code shows:
+- Use `.` to form a *qualified name* to access a type within a namespace, as the following code shows:
 
   [!code-csharp[qualified name](~/samples/snippets/csharp/language-reference/operators/MemberAccessExamples.cs#QualifiedName)]
 
   Use the [`using` directive](../keywords/using-directive.md) to make the use of qualified names optional.
 
-- You can use `.` to access [type members](../../programming-guide/classes-and-structs/index.md#members), static and non-static, as the following code shows:
+- Use `.` to access [type members](../../programming-guide/classes-and-structs/index.md#members), static and non-static, as the following code shows:
 
   [!code-csharp-interactive[type members](~/samples/snippets/csharp/language-reference/operators/MemberAccessExamples.cs#TypeMemberAccess)]
 
-You also can use `.` to invoke an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
+You can also use `.` to invoke an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 
 ## Operator overloadability
 

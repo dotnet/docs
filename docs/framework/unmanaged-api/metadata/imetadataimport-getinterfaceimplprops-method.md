@@ -54,7 +54,7 @@ interfaces whose types have tokens:
 
 Conceptually, this information is stored into an interface implementation table as:
 
-| Row Number | Class Token | Interface Token |
+| Row number | Class token | Interface token |
 |------------|-------------|-----------------|
 | 4          |             |                 |
 | 5          | 02000007    | 02000003        |

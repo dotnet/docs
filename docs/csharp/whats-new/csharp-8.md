@@ -113,7 +113,7 @@ public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
         // other cases removed for brevity...
         _ => 0M
     };
-    ```
+```
 
 Pattern matching creates a concise syntax for expressing this algorithm.
 
@@ -133,7 +133,7 @@ public static string RockPaperScissors(string first, string second)
         ("scissors", "paper") => "scissors cuts paper. Scissors wins.",
         (_, _) => "tie"
     };
-    ```
+```
 
 The messages indicate the winner. The discard case represents the three combinations for ties, or other text inputs.
 

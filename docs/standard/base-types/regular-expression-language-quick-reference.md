@@ -143,8 +143,8 @@ ms.author: "ronpet"
   
 |Backreference construct|Description|Pattern|Matches|  
 |-----------------------------|-----------------|-------------|-------------|  
-|`\` *number*|Backreference. Matches the value of a numbered subexpression.|`(\w)\1`|"ee" in "seek"|  
-|`\k<` *name* `>`|Named backreference. Matches the value of a named expression.|`(?<char>\w)\k<char>`|"ee" in "seek"|  
+|`\` *number*|Backreference. Matches the value of a numbered subexpression.|`(\w)\1`|`"ee"` in `"seek"`|  
+|`\k<` *name* `>`|Named backreference. Matches the value of a named expression.|`(?<char>\w)\k<char>`|`"ee"` in `"seek"`|  
   
  [Back to top](#top)  
   

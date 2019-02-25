@@ -3,7 +3,7 @@ title: Build ASP.NET Core 2.1 applications deployed as Linux containers into AKS
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/23/2018
+ms.date: 02/25/2019
 ---
 # Build ASP.NET Core 2.1 applications deployed as Linux containers into AKS/Kubernetes orchestrator
 
@@ -29,11 +29,11 @@ This example uses a simple project that's based based on a Visual Studio Web API
 
 **Figure 4-36**. Creating ASP.NET Core Application
 
-To create the sample project, you have to select **File** > **New** > **Project** on Visual Studio. Then you'll see a list of templates for several types of projects, where you have to look for **Web** > **.NET Core** on the left panel. For this example select **ASP.NET Core Web Application**.
+To create the sample project in Visual Studio, select **File** > **New** > **Project**, select the **Web** project types in the left pane, followed by **ASP.NET Core Web Application**.
 
-In the next dialog ensure that you have selected .NET Core and ASP.NET Core 2.1 as the target framework in the top pulldowns, as shown in figure 4-37, and then select the API option, to create an ASP.NET Core Web API application.
+Visual Studio lists templates for web projects. For our example, you select **Web API,** to create an ASP.NET Web API Application.
 
-The .NET Core 2.1 is included in Visual Studio 2017 version 15.7.0 or higher and is automatically installed and configured for you when you select the **.NET Core cross-platform development** workload during installation.
+Verify that you have selected ASP.NET Core 2.1 as the framework. .NET Core 2.1 is included in the last version of Visual Studio 2017 and is automatically installed and configured for you when you install Visual Studio 2017.
 
 ![Visual Studio dialog for selecting the type of an ASP.NET Core Web Application with API option selected.](media/create-web-api-application.png)
 
@@ -41,25 +41,25 @@ The .NET Core 2.1 is included in Visual Studio 2017 version 15.7.0 or higher and
 
 If you have any previous version of .NET Core, you can download and install the 2.1 version from <https://www.microsoft.com/net/download/core#/sdk>.
 
-You can add Docker support when creating the project in the previous step, or later, if the need arises after starting the project. To add the Docker support after the project creation, right-click on the project file in the **Solution Explorer** and select **Add** > **Docker support** on the context menu.
+You can add Docker support when creating the project or afterwards, so you can "Dockerize" your project at any time. To add Docker support after project creation, right-click on the project node in Solution Explorer and select **Add** > **Docker support** on the context menu.
 
 ![Context menu option to add Docker support to an existing project: Right click (on the project) > Add > Docker Support.](media/add-docker-support-to-project.png)
 
 **Figure 4-38**. Adding Docker support to existing project
 
-To complete adding Docker support, you have the choice of Windows or Linux. In this case, select **Linux**, because AKS doesn’t support Windows Containers (as of late 2018).
+To complete adding Docker support, you can choose Windows or Linux. In this case, select **Linux**, because AKS doesn’t support Windows Containers (as of late 2018).
 
 ![Option dialog to select Target OS for Dockerfile.](media/select-linux-docker-support.png)
 
 **Figure 4-39**. Selecting Linux containers.
 
-With these simple steps, you will have your ASP.NET Core 2.1 application running on a Linux container.
+With these simple steps, you have your ASP.NET Core 2.1 application running on a Linux container.
 
 As you can see, the integration between Visual Studio 2017 and Docker is totally oriented to the developer’s productivity.
 
-Now you can press **F5** to build and run your application.
+Now you can run your application with the **F5** key or by using the **Play** button.
 
-After running the project, you can list the images using the `docker images` command. You should see the `mssampleapplication` image created with the automatic deploy of our project with Visual Studio 2017.
+After running the project, you can list the images using the `docker images` command. You should see the `mssampleapplication` image created with the automatic deployment of our project with Visual Studio 2017.
 
 ```console
 docker images
@@ -71,17 +71,17 @@ docker images
 
 ## Register the Solution in the Azure Container Registry
 
-Upload the image to any Docker registry, like [Azure Container Registry (ACR)](https://azure.microsoft.com/services/container-registry/) or Docker Hub so the images can be deployed to the AKS cluster from that registry. In this case, we’re uploading the image to Azure Container Registry.
+Upload the image to any Docker registry, like [Azure Container Registry (ACR)](https://azure.microsoft.com/services/container-registry/) or Docker Hub, so the images can be deployed to the AKS cluster from that registry. In this case, we’re uploading the image to Azure Container Registry.
 
 ### Create the image in Release mode
 
-Create the image in **Release** Mode (ready for production) changing to Release as shown here and press F5 to run the application again.
+We'll now create the image in **Release** mode (ready for production) by changing to **Release** as in Figure 4-41 and running the application as we did before.
 
 ![Toolbar option in VS to build in release mode.](media/select-release-mode.png)
 
 **Figure 4-41**. Selecting Release Mode
 
-If you execute the `docker image` command, you'll see both images created. One for `debug` and the other for `release` mode.
+If you execute the `docker image` command, you'll see both images created, one for `debug` and the other for `release` mode.
 
 ### Create a new Tag for the Image
 
@@ -105,13 +105,13 @@ az acr list --resource-group MSSampleResourceGroup --query "[].{acrLoginServer:l
 
 In both cases, you'll obtain the name. In our example, `mssampleacr.azurecr.io`.
 
-Now you can tag the image, taking the latest image (Release image), with the following command:
+Now you can tag the image, taking the latest image (the Release image), with the command:
 
 ```console
 docker tag mssampleaksapplication:latest mssampleacr.azurecr.io/mssampleaksapplication:v1
 ```
 
-After running the `docker tag` command, list the images with the `docker images` command. You should see the image with the new tag.
+After running the `docker tag` command, list the images with the `docker images` command, and you should see the image with the new tag.
 
 ![Console output from the docker images command.](media/tagged-docker-images-list.png)
 
@@ -137,7 +137,7 @@ You can see below the result you should get when the process completes:
 
 **Figure 4-46**. View of nodes
 
-The next step is to deploy your container into your AKS Kubernetes cluster. For that you need a file (**.yml deploy file**) that, in this case, contains:
+The next step is to deploy your container into your AKS Kubernetes clusterm for that you need a file (**.yml deploy file**) that, in this case, contains:
 
 ```yml
 apiVersion: apps/v1beta1

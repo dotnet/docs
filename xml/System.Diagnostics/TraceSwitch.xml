@@ -41,7 +41,7 @@
   
  You can set the level of a <xref:System.Diagnostics.TraceSwitch> through the application configuration file and then use the configured <xref:System.Diagnostics.TraceSwitch> level in your application. Alternately, you can create a <xref:System.Diagnostics.TraceSwitch> in your code and set the level directly to instrument a specific section of code.  
   
- To configure a <xref:System.Diagnostics.TraceSwitch>, edit the   for your application. In this file, you can add or remove a switch, set a switch's value, or clear all the switches previously set by the application. The configuration file should be formatted like the following example:  
+ To configure a <xref:System.Diagnostics.TraceSwitch>, edit the configuration file for your application. In this file, you can add or remove a switch, set a switch's value, or clear all the switches previously set by the application. The configuration file should be formatted like the following example:  
   
 ```xml  
 <configuration>  

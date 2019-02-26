@@ -239,7 +239,7 @@
  The `addressFamily` parameter specifies the addressing scheme that the <xref:System.Net.Sockets.Socket> class uses, the `socketType` parameter specifies the type of the <xref:System.Net.Sockets.Socket> class, and the `protocolType` parameter specifies the protocol used by <xref:System.Net.Sockets.Socket>. The three parameters are not independent. Some address families restrict which protocols can be used with them, and often the <xref:System.Net.Sockets.Socket> type is implicit in the protocol. If the combination of address family, <xref:System.Net.Sockets.Socket> type, and protocol type results in an invalid <xref:System.Net.Sockets.Socket>, this constructor throws a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
->  If this constructor throws a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If this constructor throws a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -305,7 +305,7 @@
   
  In blocking mode, <xref:System.Net.Sockets.Socket.Accept%2A> blocks until an incoming connection attempt is queued. Once a connection is accepted, the original <xref:System.Net.Sockets.Socket> continues queuing incoming connection requests until you close it.  
   
- If you call this method using a non-blocking <xref:System.Net.Sockets.Socket>, and no connection requests are queued, <xref:System.Net.Sockets.Socket.Accept%2A> throws a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If you call this method using a non-blocking <xref:System.Net.Sockets.Socket>, and no connection requests are queued, <xref:System.Net.Sockets.Socket.Accept%2A> throws a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  Before calling the <xref:System.Net.Sockets.Socket.Accept%2A> method, you must first call the <xref:System.Net.Sockets.Socket.Listen%2A> method to listen for and queue incoming connection requests.  
@@ -519,7 +519,7 @@
 ## Remarks  
  If you are using a non-blocking <xref:System.Net.Sockets.Socket>, <xref:System.Net.Sockets.Socket.Available%2A> is a good way to determine whether data is queued for reading, before calling <xref:System.Net.Sockets.Socket.Receive%2A>. The available data is the total amount of data queued in the network buffer for reading. If no data is queued in the network buffer, <xref:System.Net.Sockets.Socket.Available%2A> returns 0.  
   
- If the remote host shuts down or closes the connection, <xref:System.Net.Sockets.Socket.Available%2A> can throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If the remote host shuts down or closes the connection, <xref:System.Net.Sockets.Socket.Available%2A> can throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -717,7 +717,7 @@
 >  You can call use the <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> property of the returned <xref:System.Net.Sockets.Socket> object to identify the remote host's network address and port number.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -820,7 +820,7 @@
 >  You can use the <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> property of the returned <xref:System.Net.Sockets.Socket> object to identify the remote host's network address and port number.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -931,7 +931,7 @@
  To cancel a pending call to the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method, close the <xref:System.Net.Sockets.Socket>. When the <xref:System.Net.Sockets.Socket.Close%2A> method is called while an asynchronous operation is in progress, the callback provided to the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method is called.  A subsequent call to the <xref:System.Net.Sockets.Socket.EndConnect%2A> method will throw an <xref:System.ObjectDisposedException> to indicate that the operation has been cancelled.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  If this socket has previously been disconnected, then <xref:System.Net.Sockets.Socket.BeginConnect%2A> must be called on a thread that will not exit until the operation is complete. This is a limitation of the underlying provider.  
@@ -1029,7 +1029,7 @@
  For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  If this socket has previously been disconnected, then <xref:System.Net.Sockets.Socket.BeginConnect%2A> must be called on a thread that will not exit until the operation is complete. This is a limitation of the underlying provider. Also the <xref:System.Net.EndPoint> that is used must be different.  
@@ -1131,7 +1131,7 @@
  For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  If this socket has previously been disconnected, then <xref:System.Net.Sockets.Socket.BeginConnect%2A> must be called on a thread that will not exit until the operation is complete. This is a limitation of the underlying provider. Also the <xref:System.Net.EndPoint> that is used must be different.  
@@ -1233,7 +1233,7 @@
  For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  If this socket has previously been disconnected, then <xref:System.Net.Sockets.Socket.BeginConnect%2A> must be called on a thread that will not exit until the operation is complete. This is a limitation of the underlying provider. Also the <xref:System.Net.EndPoint> that is used must be different.  
@@ -1322,7 +1322,7 @@
  The <xref:System.Net.Sockets.Socket.BeginDisconnect%2A> method uses a separate thread to invoke the specified callback method. The <xref:System.Net.Sockets.Socket.EndDisconnect%2A> method blocks until the pending disconnect is complete. For additional information on writing callback methods, see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1411,7 +1411,7 @@
  For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -1502,7 +1502,7 @@
  For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -1597,7 +1597,7 @@
  For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -1726,7 +1726,7 @@
  For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -1850,7 +1850,7 @@
  To cancel a pending <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A>, call the <xref:System.Net.Sockets.Socket.Close%2A> method.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1967,7 +1967,7 @@
  This method reads data into the `buffer` parameter, and captures the remote host endpoint from which the data is sent, as well as information about the received packet. For information on how to retrieve this endpoint, refer to <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A>. This method is most useful if you intend to asynchronously receive connectionless datagrams from an unknown host or multiple hosts.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -2068,7 +2068,7 @@
  If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -2164,7 +2164,7 @@
  If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -2259,7 +2259,7 @@
  If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -2371,7 +2371,7 @@
  If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -2481,7 +2481,7 @@
 ## Remarks  
  This overload sends the file `fileName` to the connected socket. If `fileName` is in the local directory, it may be identified with just the name of the file; otherwise, the full path and name of the file must be specified. Wildcards ("..\\\myfile.txt") and UNC share names ("\\\\\\\shared directory\\\myfile.txt") are supported. If the file is not found, the exception <xref:System.IO.FileNotFoundException> is thrown.  
   
- This method uses the `TransmitFile` function found in the Windows Sockets 2 API. For more information about the `TransmitFile` function and its flags, see the Windows Sockets documentation in the MSDN Library.  
+ This method uses the `TransmitFile` function found in the Windows Sockets 2 API. For more information about the `TransmitFile` function and its flags, see the [Windows Sockets](/windows/desktop/WinSock/) documentation.  
   
  The <xref:System.Net.Sockets.Socket.BeginSendFile%2A> method starts an asynchronous send operation to the remote host established in the <xref:System.Net.Sockets.Socket.Connect%2A>,<xref:System.Net.Sockets.Socket.BeginConnect%2A>, <xref:System.Net.Sockets.Socket.Accept%2A>, or <xref:System.Net.Sockets.Socket.BeginAccept%2A> methods. <xref:System.Net.Sockets.Socket.BeginSendFile%2A> throws an exception if you do not first call <xref:System.Net.Sockets.Socket.Accept%2A>, <xref:System.Net.Sockets.Socket.BeginAccept%2A>, <xref:System.Net.Sockets.Socket.Connect%2A>, or <xref:System.Net.Sockets.Socket.BeginConnect%2A>. Calling the <xref:System.Net.Sockets.Socket.BeginSendFile%2A> method enables you to send a file within a separate execution thread.  
   
@@ -2492,7 +2492,7 @@
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSendFile%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. With connectionless protocols, you must be sure that the size of your file does not exceed the maximum packet size of the underlying service provider. If it does, the datagram is not sent and <xref:System.Net.Sockets.Socket.BeginSendFile%2A> throws a <xref:System.Net.Sockets.SocketException> exception.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -2570,7 +2570,7 @@
   
  The `flags` parameter provides the Window Sockets service provider with additional information about the file transfer. For more information about how to use this parameter, see <xref:System.Net.Sockets.TransmitFileOptions>.  
   
- This method uses the `TransmitFile` function found in the Windows Sockets 2 API. For more information about the `TransmitFile` function and its flags, see the Windows Sockets documentation in the MSDN Library.  
+ This method uses the `TransmitFile` function found in the Windows Sockets 2 API. For more information about the `TransmitFile` function and its flags, see the [Windows Sockets](/windows/desktop/WinSock/) documentation.  
   
  The <xref:System.Net.Sockets.Socket.BeginSendFile%2A> method starts an asynchronous send operation to the remote host established in the <xref:System.Net.Sockets.Socket.Connect%2A>, <xref:System.Net.Sockets.Socket.BeginConnect%2A>, <xref:System.Net.Sockets.Socket.Accept%2A>, or <xref:System.Net.Sockets.Socket.BeginAccept%2A> methods. <xref:System.Net.Sockets.Socket.BeginSendFile%2A> throws an exception if you do not first call <xref:System.Net.Sockets.Socket.Accept%2A>, <xref:System.Net.Sockets.Socket.BeginAccept%2A>, <xref:System.Net.Sockets.Socket.Connect%2A>, or <xref:System.Net.Sockets.Socket.BeginConnect%2A>. Calling the <xref:System.Net.Sockets.Socket.BeginSendFile%2A> method gives you the ability to send a file within a separate execution thread.  
   
@@ -2581,7 +2581,7 @@
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSendFile%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. With connectionless protocols, you must also be sure that the size of your file does not exceed the maximum packet size of the underlying service provider. If it does, the datagram is not sent and <xref:System.Net.Sockets.Socket.BeginSendFile%2A> throws a <xref:System.Net.Sockets.SocketException> exception.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -2684,7 +2684,7 @@
  If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -2792,7 +2792,7 @@
 >  You must call the <xref:System.Net.Sockets.Socket.Bind%2A> method if you intend to receive connectionless datagrams using the <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> method.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException> when calling the <xref:System.Net.Sockets.Socket.Bind%2A> method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException> when calling the <xref:System.Net.Sockets.Socket.Bind%2A> method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -2870,7 +2870,7 @@
  If you are in blocking mode, and you make a method call which does not complete immediately, your application will block execution until the requested operation completes. If you want execution to continue even though the requested operation is not complete, change the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false`. The <xref:System.Net.Sockets.Socket.Blocking%2A> property has no effect on asynchronous methods. If you are sending and receiving data asynchronously and want to block execution, use the <xref:System.Threading.ManualResetEvent> class.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -3124,9 +3124,9 @@
 ## Remarks  
  If you are using a connection-oriented protocol such as TCP, the <xref:System.Net.Sockets.Socket.Connect%2A> method synchronously establishes a network connection between <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> and the specified remote endpoint. If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.Connect%2A> establishes a default remote host. After you call <xref:System.Net.Sockets.Socket.Connect%2A>, you can send data to the remote device with the <xref:System.Net.Sockets.Socket.Send%2A> method, or receive data from the remote device with the <xref:System.Net.Sockets.Socket.Receive%2A> method.  
   
- If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A>, any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A>, any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
- The <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
+ The <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
   
 > [!NOTE]
 >  If you are using a connection-oriented protocol and did not call <xref:System.Net.Sockets.Socket.Bind%2A> before calling <xref:System.Net.Sockets.Socket.Connect%2A>, the underlying service provider will assign the local network address and port number. If you are using a connectionless protocol, the service provider will not assign a local network address and port number until you complete a send or receive operation. If you want to change the default remote host, call <xref:System.Net.Sockets.Socket.Connect%2A> again with the desired endpoint.  
@@ -3209,9 +3209,9 @@
 ## Remarks  
  If you are using a connection-oriented protocol such as TCP, the <xref:System.Net.Sockets.Socket.Connect%2A> method synchronously establishes a network connection between <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> and the specified remote endpoint. If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.Connect%2A> establishes a default remote host. After you call <xref:System.Net.Sockets.Socket.Connect%2A> you can send data to the remote device with the <xref:System.Net.Sockets.Socket.Send%2A> method, or receive data from the remote device with the <xref:System.Net.Sockets.Socket.Receive%2A> method.  
   
- If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
- <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
+ <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
   
 > [!NOTE]
 >  If you are using a connection-oriented protocol and did not call <xref:System.Net.Sockets.Socket.Bind%2A> before calling <xref:System.Net.Sockets.Socket.Connect%2A>, the underlying service provider will assign the local network address and port number. If you are using a connectionless protocol, the service provider will not assign a local network address and port number until you complete a send or receive operation. If you want to change the default remote host, call <xref:System.Net.Sockets.Socket.Connect%2A> again with the desired endpoint.  
@@ -3286,9 +3286,9 @@
 ## Remarks  
  This method is typically used immediately after a call to <xref:System.Net.Dns.GetHostAddresses%2A>, which can return multiple IP addresses for a single host. If you are using a connection-oriented protocol such as TCP, the <xref:System.Net.Sockets.Socket.Connect%2A> method synchronously establishes a network connection between <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> and the specified remote endpoint. If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.Connect%2A> establishes a default remote host. After you call <xref:System.Net.Sockets.Socket.Connect%2A> you can send data to the remote device with the <xref:System.Net.Sockets.Socket.Send%2A> method, or receive data from the remote device with the <xref:System.Net.Sockets.Socket.Receive%2A> method.  
   
- If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
- <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
+ <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
   
 > [!NOTE]
 >  If you are using a connection-oriented protocol and did not call <xref:System.Net.Sockets.Socket.Bind%2A> before calling <xref:System.Net.Sockets.Socket.Connect%2A>, the underlying service provider will assign the local network address and port number. If you are using a connectionless protocol, the service provider will not assign a local network address and port number until you complete a send or receive operation. If you want to change the default remote host, call <xref:System.Net.Sockets.Socket.Connect%2A> again with the desired endpoint.  
@@ -3363,9 +3363,9 @@
 ## Remarks  
  If you are using a connection-oriented protocol such as TCP, the <xref:System.Net.Sockets.Socket.Connect%2A> method synchronously establishes a network connection between <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> and the specified remote host. If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.Connect%2A> establishes a default remote host. After you call <xref:System.Net.Sockets.Socket.Connect%2A> you can send data to the remote device with the <xref:System.Net.Sockets.Socket.Send%2A> method, or receive data from the remote device with the <xref:System.Net.Sockets.Socket.Receive%2A> method.  
   
- If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
- <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
+ <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
   
  If IPv6 is enabled and the <xref:System.Net.Sockets.Socket.Connect%28System.String%2CSystem.Int32%29> method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
   
@@ -3479,7 +3479,7 @@
  The <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method throws <xref:System.NotSupportedException> if the address family of the <xref:System.Net.Sockets.Socket> and the <xref:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint%2A?displayProperty=nameWithType> are not the same address family.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException> when calling this method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException> when calling this method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  ]]></format>
         </remarks>
@@ -3572,7 +3572,7 @@
  The <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method throws <xref:System.NotSupportedException> if the address family of the <xref:System.Net.Sockets.Socket> and the <xref:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint%2A?displayProperty=nameWithType> are not the same address family.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException> when calling this method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException> when calling this method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  ]]></format>
         </remarks>
@@ -3691,7 +3691,7 @@
  If you need to call <xref:System.Net.Sockets.Socket.Disconnect%2A> without first calling <xref:System.Net.Sockets.Socket.Shutdown%2A>, you can set the <xref:System.Net.Sockets.SocketOptionName.DontLinger><xref:System.Net.Sockets.Socket> option to `false` and specify a nonzero time-out interval to ensure that data queued for outgoing transmission is sent. <xref:System.Net.Sockets.Socket.Disconnect%2A> then blocks until the data is sent or until the specified time-out expires. If you set <xref:System.Net.Sockets.SocketOptionName.DontLinger> to `false` and specify a zero time-out interval, <xref:System.Net.Sockets.Socket.Close%2A> releases the connection and automatically discards outgoing queued data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -4158,7 +4158,7 @@
  The <xref:System.Net.Sockets.Socket.EndAccept%2A> method blocks until a connection is pending in the incoming connection queue. The <xref:System.Net.Sockets.Socket.EndAccept%2A> method accepts the incoming connection and returns a new <xref:System.Net.Sockets.Socket> that can be used to send data to and receive data from the remote host.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -4238,7 +4238,7 @@
  The <xref:System.Net.Sockets.Socket.EndAccept%2A> method blocks until a connection is pending in the incoming connection queue. The <xref:System.Net.Sockets.Socket.EndAccept%2A> method accepts the incoming connection and returns a new <xref:System.Net.Sockets.Socket> that can be used to send data to and receive data from the remote host.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -4319,7 +4319,7 @@
  The <xref:System.Net.Sockets.Socket.EndAccept%2A> method blocks until a connection is pending in the incoming connection queue. The <xref:System.Net.Sockets.Socket.EndAccept%2A> method accepts the incoming connection and returns a new <xref:System.Net.Sockets.Socket> that can be used to send data to and receive data from the remote host.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -4398,7 +4398,7 @@
  Within the callback method, call the <xref:System.IAsyncResult.AsyncState%2A> method of the <xref:System.IAsyncResult> parameter to obtain the <xref:System.Net.Sockets.Socket> on which the connection attempt is being made. After obtaining the <xref:System.Net.Sockets.Socket>, you can call the <xref:System.Net.Sockets.Socket.EndConnect%2A> method to successfully complete the connection attempt.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -4469,7 +4469,7 @@
  <xref:System.Net.Sockets.Socket.EndDisconnect%2A> completes a call to <xref:System.Net.Sockets.Socket.BeginDisconnect%2A>. The <xref:System.Net.Sockets.Socket.EndDisconnect%2A> method blocks until the disconnect completes. For information about asynchronous operations, see the Asynchronous Programming Overview topic in the MSDN library.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -4566,7 +4566,7 @@
  To cancel a pending <xref:System.Net.Sockets.Socket.BeginReceive%2A>, call the <xref:System.Net.Sockets.Socket.Close%2A> method.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -4653,7 +4653,7 @@
  To obtain the received data, call the <xref:System.IAsyncResult.AsyncState%2A> method of the <xref:System.IAsyncResult>, and extract the buffer contained in the resulting state object.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -4738,7 +4738,7 @@
  The <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A> method will block until data is available. If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A> will read the first enqueued datagram available in the incoming network buffer. If you are using a connection-oriented protocol, the <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A> method will read as much data as is available up to the number of bytes you specified in the `size` parameter of the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method. If the remote host shuts down the <xref:System.Net.Sockets.Socket> connection with the <xref:System.Net.Sockets.Socket.Shutdown%2A> method, and all available data has been received, the <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A> method will complete immediately and return zero bytes. To obtain the received data, call the <xref:System.IAsyncResult.AsyncState%2A> method of the <xref:System.IAsyncResult> object, and extract the buffer contained in the resulting state object. To identify the originating host, extract the <xref:System.Net.EndPoint> and cast it to an <xref:System.Net.IPEndPoint>. Use the <xref:System.Net.IPEndPoint.Address%2A?displayProperty=nameWithType> method to obtain the IP address and the <xref:System.Net.IPEndPoint.Port%2A?displayProperty=nameWithType> method to obtain the port number.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -4905,7 +4905,7 @@
  There is no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.BeginSend%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -4995,7 +4995,7 @@
  There is no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.BeginSend%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
@@ -5071,7 +5071,7 @@
  If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.EndSendFile%2A> blocks until the datagram is sent. If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.EndSendFile%2A> blocks until the entire file is sent. There is no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.BeginSendFile%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -5153,7 +5153,7 @@
  If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.EndSendTo%2A> will block until the datagram is sent. If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.EndSendTo%2A> will block until the requested number of bytes are sent. There is no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.BeginSendTo%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -5379,7 +5379,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  <xref:System.Net.Sockets.Socket> options determine the behavior of the current <xref:System.Net.Sockets.Socket>. Use this overload to get the <xref:System.Net.Sockets.SocketOptionName.Linger>, <xref:System.Net.Sockets.SocketOptionName.AddMembership>, and <xref:System.Net.Sockets.SocketOptionName.DropMembership><xref:System.Net.Sockets.Socket> options. For the <xref:System.Net.Sockets.SocketOptionName.Linger> option, use <xref:System.Net.Sockets.Socket> for the `optionLevel` parameter. For <xref:System.Net.Sockets.SocketOptionName.AddMembership> and <xref:System.Net.Sockets.SocketOptionName.DropMembership>, use <xref:System.Net.Sockets.SocketOptionLevel.IP>. If you want to set the value of any of the options listed above, use the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -5453,7 +5453,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
 ## Remarks  
  <xref:System.Net.Sockets.Socket> options determine the behavior of the current <xref:System.Net.Sockets.Socket>. Upon successful completion of this method, the array specified by the `optionValue` parameter contains the value of the specified <xref:System.Net.Sockets.Socket> option.  
   
- When the length of the `optionValue` array is smaller than the number of bytes required to store the value of the specified <xref:System.Net.Sockets.Socket> option, <xref:System.Net.Sockets.Socket.GetSocketOption%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. Use this overload for any sockets that are represented by Boolean values or integers.  
+ When the length of the `optionValue` array is smaller than the number of bytes required to store the value of the specified <xref:System.Net.Sockets.Socket> option, <xref:System.Net.Sockets.Socket.GetSocketOption%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error. Use this overload for any sockets that are represented by Boolean values or integers.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -5529,7 +5529,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  The `optionLength` parameter sets the maximum size of the returned byte array. If the option value requires fewer bytes, the array will contain only that many bytes. If the option value requires more bytes, <xref:System.Net.Sockets.Socket.GetSocketOption%2A> will throw a <xref:System.Net.Sockets.SocketException>. Use this overload for any sockets that are represented by Boolean values or integers.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -5648,10 +5648,10 @@ The GetHashCode method returns a hash code of this instance. This value can be u
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.IOControl%2A> method provides low-level access to the operating system <xref:System.Net.Sockets.Socket> underlying the current instance of the <xref:System.Net.Sockets.Socket> class. For more information, see the WSAIoctl documentation in the MSDN library.  
+ The <xref:System.Net.Sockets.Socket.IOControl%2A> method provides low-level access to the operating system <xref:System.Net.Sockets.Socket> underlying the current instance of the <xref:System.Net.Sockets.Socket> class. For more information, see the [WSAIoctl](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) documentation.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -5717,10 +5717,10 @@ The GetHashCode method returns a hash code of this instance. This value can be u
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides low-level access to the operating system <xref:System.Net.Sockets.Socket> underlying the current instance of the <xref:System.Net.Sockets.Socket> class. For more, see the WSAIoctl documentation in the MSDN library.  
+ This method provides low-level access to the operating system <xref:System.Net.Sockets.Socket> underlying the current instance of the <xref:System.Net.Sockets.Socket> class. For more, see the [WSAIoctl](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) documentation.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -5913,7 +5913,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
 ## Remarks  
  <xref:System.Net.Sockets.Socket.Listen%2A> causes a connection-oriented <xref:System.Net.Sockets.Socket> to listen for incoming connection attempts. The `backlog` parameter specifies the number of incoming connections that can be queued for acceptance. To determine the maximum number of connections you can specify, retrieve the <xref:System.Net.Sockets.SocketOptionName.MaxConnections> value. <xref:System.Net.Sockets.Socket.Listen%2A> does not block.  
   
- If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. Use <xref:System.Net.Sockets.Socket.Accept%2A> or <xref:System.Net.Sockets.Socket.BeginAccept%2A> to accept a connection from the queue.  
+ If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error. Use <xref:System.Net.Sockets.Socket.Accept%2A> or <xref:System.Net.Sockets.Socket.BeginAccept%2A> to accept a connection from the queue.  
   
 > [!NOTE]
 >  You must call the <xref:System.Net.Sockets.Socket.Bind%2A> method before calling <xref:System.Net.Sockets.Socket.Listen%2A>, or <xref:System.Net.Sockets.Socket.Listen%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
@@ -5986,7 +5986,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  The <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> property is usually set after you make a call to the <xref:System.Net.Sockets.Socket.Bind%2A> method. If you allow the system to assign your socket's local IP address and port number, the <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> property will be set after the first I/O operation. For connection-oriented protocols, the first I/O operation would be a call to the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.Accept%2A> method. For connectionless protocols, the first I/O operation would be any of the send or receive calls.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -6296,7 +6296,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  The <xref:System.Net.Sockets.Socket.Poll%2A> method will check the state of the <xref:System.Net.Sockets.Socket>. Specify <xref:System.Net.Sockets.SelectMode.SelectRead?displayProperty=nameWithType> for the `selectMode` parameter to determine if the <xref:System.Net.Sockets.Socket> is readable. Specify <xref:System.Net.Sockets.SelectMode.SelectWrite?displayProperty=nameWithType> to determine if the <xref:System.Net.Sockets.Socket> is writable. Use <xref:System.Net.Sockets.SelectMode.SelectError?displayProperty=nameWithType> to detect an error condition. <xref:System.Net.Sockets.Socket.Poll%2A> will block execution until the specified time period, measured in `microseconds`, elapses. Set the `microSeconds` parameter to a negative integer if you would like to wait indefinitely for a response. If you want to check the status of multiple sockets, you might prefer to use the <xref:System.Net.Sockets.Socket.Select%2A> method.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This method cannot detect certain kinds of connection problems, such as a broken network cable, or that the remote host was shut down ungracefully. You must attempt to send or receive data to detect these kinds of errors.  
@@ -6446,7 +6446,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless <xref:System.Net.Sockets.Socket>, <xref:System.Net.Sockets.Socket.Receive%2A> will read the first queued datagram from the destination address you specify in the <xref:System.Net.Sockets.Socket.Connect%2A> method. If the datagram you receive is larger than the size of the `buffer` parameter, `buffer` gets filled with the first part of the message, the excess data is lost and a <xref:System.Net.Sockets.SocketException> is thrown.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -6534,7 +6534,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless <xref:System.Net.Sockets.Socket>, <xref:System.Net.Sockets.Socket.Receive%2A> will read the first enqueued datagram from the destination address you specify in the <xref:System.Net.Sockets.Socket.Connect%2A> method. If the datagram you receive is larger than the size of the `buffers` parameter, `buffers` gets filled with the first part of the message, the excess data is lost and a <xref:System.Net.Sockets.SocketException> is thrown.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
@@ -6636,7 +6636,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless <xref:System.Net.Sockets.Socket>, <xref:System.Net.Sockets.Socket.Receive%2A> will read the first enqueued datagram from the destination address you specify in the <xref:System.Net.Sockets.Socket.Connect%2A> method. If the datagram you receive is larger than the size of the `buffer` parameter, `buffer` gets filled with the first part of the message, the excess data is lost and a <xref:System.Net.Sockets.SocketException> is thrown.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -6725,7 +6725,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless <xref:System.Net.Sockets.Socket>, <xref:System.Net.Sockets.Socket.Receive%2A> will read the first enqueued datagram from the destination address you specify in the <xref:System.Net.Sockets.Socket.Connect%2A> method. If the datagram you receive is larger than the size of the `buffers` parameter, `buffers` gets filled with the first part of the message, the excess data is lost and a <xref:System.Net.Sockets.SocketException> is thrown.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -6855,7 +6855,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless <xref:System.Net.Sockets.Socket>, <xref:System.Net.Sockets.Socket.Receive%2A> will read the first queued datagram from the destination address you specify in the <xref:System.Net.Sockets.Socket.Connect%2A> method. If the datagram you receive is larger than the size of the `buffer` parameter, `buffer` gets filled with the first part of the message, the excess data is lost and a <xref:System.Net.Sockets.SocketException> is thrown.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -6948,7 +6948,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless <xref:System.Net.Sockets.Socket>,<xref:System.Net.Sockets.Socket.Receive%2A> will read the first queued datagram from the destination address you specify in the <xref:System.Net.Sockets.Socket.Connect%2A> method. If the datagram you receive is larger than the size of the `buffers` parameter, `buffers` gets filled with the first part of the message, the excess data is lost and a <xref:System.Net.Sockets.SocketException> is thrown.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -7067,7 +7067,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless <xref:System.Net.Sockets.Socket>, <xref:System.Net.Sockets.Socket.Receive%2A> will read the first queued datagram from the destination address you specify in the <xref:System.Net.Sockets.Socket.Connect%2A> method. If the datagram you receive is larger than the size of the `buffer` parameter, `buffer` gets filled with the first part of the message, the excess data is lost and a <xref:System.Net.Sockets.SocketException> is thrown.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -7178,7 +7178,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless <xref:System.Net.Sockets.Socket>, <xref:System.Net.Sockets.Socket.Receive%2A> will read the first queued datagram from the destination address you specify in the <xref:System.Net.Sockets.Socket.Connect%2A> method. If the datagram you receive is larger than the size of the `buffer` parameter, `buffer` gets filled with the first part of the message, the excess data is lost and a <xref:System.Net.Sockets.SocketException> is thrown.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -7431,7 +7431,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  With connection-oriented sockets, <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will read as much data as is available up to the size of `buffer`. If the remote host shuts down the <xref:System.Net.Sockets.Socket> connection with the <xref:System.Net.Sockets.Socket.Shutdown%2A> method, and all available data has been received, the <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> method will complete immediately and return zero bytes.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> needs to match the <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.SendTo%2A>.  
@@ -7528,7 +7528,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  With connection-oriented sockets, <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will read as much data as is available up to the size of `buffer`. If the remote host shuts down the <xref:System.Net.Sockets.Socket> connection with the <xref:System.Net.Sockets.Socket.Shutdown%2A> method, and all available data has been Received, the <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> method will complete immediately and return zero bytes.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> needs to match the <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.SendTo%2A>.  
@@ -7630,7 +7630,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  With connection-oriented sockets, <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will read as much data as is available up to the number of bytes specified by the `size` parameter. If the remote host shuts down the <xref:System.Net.Sockets.Socket> connection with the <xref:System.Net.Sockets.Socket.Shutdown%2A> method, and all available data has been received, the <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> method will complete immediately and return zero bytes.  
   
 > [!NOTE]
->  Before calling <xref:System.Net.Sockets.Socket.ReceiveFrom%2A>, you must explicitly bind the <xref:System.Net.Sockets.Socket> to a local endpoint using the <xref:System.Net.Sockets.Socket.Bind%2A> method. If you do not, <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  Before calling <xref:System.Net.Sockets.Socket.ReceiveFrom%2A>, you must explicitly bind the <xref:System.Net.Sockets.Socket> to a local endpoint using the <xref:System.Net.Sockets.Socket.Bind%2A> method. If you do not, <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> needs to match the <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.SendTo%2A>.  
@@ -7742,7 +7742,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  With connection-oriented sockets, <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will read as much data as is available up to the amount of bytes specified by the `size` parameter. If the remote host shuts down the <xref:System.Net.Sockets.Socket> connection with the <xref:System.Net.Sockets.Socket.Shutdown%2A> method, and all available data has been Received, the <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> method will complete immediately and return zero bytes.  
   
 > [!NOTE]
->  Before calling <xref:System.Net.Sockets.Socket.ReceiveFrom%2A>, you must explicitly bind the <xref:System.Net.Sockets.Socket> to a local endpoint using the <xref:System.Net.Sockets.Socket.Bind%2A> method. If you do not, <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  Before calling <xref:System.Net.Sockets.Socket.ReceiveFrom%2A>, you must explicitly bind the <xref:System.Net.Sockets.Socket> to a local endpoint using the <xref:System.Net.Sockets.Socket.Bind%2A> method. If you do not, <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> needs to match the <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.SendTo%2A>.  
@@ -8191,7 +8191,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
 ## Remarks  
  If you are using a connection-oriented protocol, the <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> property gets the <xref:System.Net.EndPoint> that contains the remote IP address and port number to which the <xref:System.Net.Sockets.Socket> is connected. If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> contains the default remote IP address and port number with which the <xref:System.Net.Sockets.Socket> will communicate. You must cast this <xref:System.Net.EndPoint> to an <xref:System.Net.IPEndPoint> before retrieving any information. You can then call the <xref:System.Net.IPEndPoint.Address%2A?displayProperty=nameWithType> method to retrieve the remote <xref:System.Net.IPAddress>, and the <xref:System.Net.IPEndPoint.Port%2A?displayProperty=nameWithType> method to retrieve the remote port number.  
   
- The <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> is set after a call to either <xref:System.Net.Sockets.Socket.Accept%2A> or <xref:System.Net.Sockets.Socket.Connect%2A>. If you try to access this property earlier, <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ The <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> is set after a call to either <xref:System.Net.Sockets.Socket.Accept%2A> or <xref:System.Net.Sockets.Socket.Connect%2A>. If you try to access this property earlier, <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -8308,7 +8308,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
 >  This method cannot detect certain kinds of connection problems, such as a broken network cable, or that the remote host was shut down ungracefully. You must attempt to send or receive data to detect these kinds of errors.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -8400,7 +8400,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.Send%2A> will block until all of the bytes in the buffer are sent, unless a time-out was set by using <xref:System.Net.Sockets.Socket.SendTimeout%2A?displayProperty=nameWithType>. If the time-out value was exceeded, the <xref:System.Net.Sockets.Socket.Send%2A> call will throw a <xref:System.Net.Sockets.SocketException>. In nonblocking mode, <xref:System.Net.Sockets.Socket.Send%2A> may complete successfully even if it sends less than the number of bytes in the buffer. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends the bytes in the buffer. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.Send%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
@@ -8486,7 +8486,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.Send%2A> will block until all of the bytes in the buffer are sent, unless a time-out was set by using <xref:System.Net.Sockets.Socket.SendTimeout%2A?displayProperty=nameWithType>. If the time-out value was exceeded, the <xref:System.Net.Sockets.Socket.Send%2A> call will throw a <xref:System.Net.Sockets.SocketException>. In nonblocking mode, <xref:System.Net.Sockets.Socket.Send%2A> may complete successfully even if it sends less than the number of bytes in the buffer. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends the bytes in the buffer. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.Send%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
@@ -8593,7 +8593,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.Send%2A> will block until all of the bytes in the buffer are sent, unless a time-out was set by using <xref:System.Net.Sockets.Socket.SendTimeout%2A?displayProperty=nameWithType>. If the time-out value was exceeded, the <xref:System.Net.Sockets.Socket.Send%2A> call will throw a <xref:System.Net.Sockets.SocketException>. In nonblocking mode, <xref:System.Net.Sockets.Socket.Send%2A> may complete successfully even if it sends less than the number of bytes in the buffer. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends the requested number of bytes. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.Send%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  You must ensure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  You must ensure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
@@ -8673,7 +8673,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.Send%2A> will block until all of the bytes in the buffer are sent, unless a time-out was set by using <xref:System.Net.Sockets.Socket.SendTimeout%2A?displayProperty=nameWithType>. If the time-out value was exceeded, the <xref:System.Net.Sockets.Socket.Send%2A> call will throw a <xref:System.Net.Sockets.SocketException>. In non-blocking mode, <xref:System.Net.Sockets.Socket.Send%2A> may complete successfully even if it sends less than the number of bytes in the buffer. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends the bytes in the buffer. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.Send%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
@@ -8788,7 +8788,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  With a connection-oriented protocol, <xref:System.Net.Sockets.Socket.Send%2A> will block until the requested number of bytes are sent, unless a time-out was set by using <xref:System.Net.Sockets.Socket.SendTimeout%2A?displayProperty=nameWithType>. If the time-out value was exceeded, the <xref:System.Net.Sockets.Socket.Send%2A> call will throw a <xref:System.Net.Sockets.SocketException>. In nonblocking mode, <xref:System.Net.Sockets.Socket.Send%2A> may complete successfully even if it sends less than the number of bytes you request. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends the requested number of bytes. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.Send%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  You must ensure that the size does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  You must ensure that the size does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
@@ -8882,7 +8882,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.Send%2A> will block until all of the bytes in the buffer are sent, unless a time-out was set by using <xref:System.Net.Sockets.Socket.SendTimeout%2A?displayProperty=nameWithType>. If the time-out value was exceeded, the <xref:System.Net.Sockets.Socket.Send%2A> call will throw a <xref:System.Net.Sockets.SocketException>. In non-blocking mode, <xref:System.Net.Sockets.Socket.Send%2A> may complete successfully even if it sends less than the number of bytes in the buffer. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends the bytes in the buffer. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.Send%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
@@ -8998,7 +8998,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.Send%2A> will block until the requested number of bytes are sent, unless a time-out was set by using <xref:System.Net.Sockets.Socket.SendTimeout%2A?displayProperty=nameWithType>. If the time-out value was exceeded, the <xref:System.Net.Sockets.Socket.Send%2A> call will throw a <xref:System.Net.Sockets.SocketException>. In nonblocking mode, <xref:System.Net.Sockets.Socket.Send%2A> may complete successfully even if it sends less than the number of bytes you request. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends the requested number of bytes. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.Send%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
@@ -9107,7 +9107,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.Send%2A> will block until the requested number of bytes are sent, unless a time-out was set by using <xref:System.Net.Sockets.Socket.SendTimeout%2A?displayProperty=nameWithType>. If the time-out value was exceeded, the <xref:System.Net.Sockets.Socket.Send%2A> call will throw a <xref:System.Net.Sockets.SocketException>. In nonblocking mode, <xref:System.Net.Sockets.Socket.Send%2A> may complete successfully even if it sends less than the number of bytes you request. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends the requested number of bytes. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.Send%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
@@ -9346,7 +9346,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
 ## Remarks  
  This overload sends the file `fileName` to the connected socket. The `flags` parameter defaults to <xref:System.Net.Sockets.TransmitFileOptions.UseDefaultWorkerThread> (0), and the `preBuffer` and `postBuffer` parameters default to `null`. If `fileName` is in the local directory, it may be identified with just the name of the file; otherwise, the full path and name of the file must be specified. Wildcards ("..\\\myfile.txt") and UNC share names ("\\\\\\\shared directory\\\myfile.txt") are supported. If the file is not found, the exception <xref:System.IO.FileNotFoundException> is thrown.  
   
- This method uses the `TransmitFile` function found in the Windows Sockets 2 API. For more information about the `TransmitFile` function and its flags, see the Windows Sockets documentation in the MSDN Library.  
+ This method uses the `TransmitFile` function found in the Windows Sockets 2 API. For more information about the `TransmitFile` function and its flags, see the [Windows Sockets](/windows/desktop/WinSock/) documentation.  
   
  <xref:System.Net.Sockets.Socket.SendFile%2A> synchronously sends a file to the remote host specified in the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.Accept%2A> method. <xref:System.Net.Sockets.Socket.SendFile%2A> can be used for both connection-oriented and for connectionless protocols.  
   
@@ -9355,7 +9355,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.SendFile%2A> blocks until the file is sent. In nonblocking mode, <xref:System.Net.Sockets.Socket.SendFile%2A> may complete successfully before the entire file has been sent. There is no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.SendFile%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -9426,7 +9426,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
   
  The `flags` parameter provides the Window Sockets service provider with additional information about the file transfer. For more information about how to use this parameter, see <xref:System.Net.Sockets.TransmitFileOptions>.  
   
- This method uses the `TransmitFile` function found in the Windows Sockets 2 API. For more information about the `TransmitFile` function and its flags, see the Windows Sockets documentation in the MSDN Library.  
+ This method uses the `TransmitFile` function found in the Windows Sockets 2 API. For more information about the `TransmitFile` function and its flags, see the [Windows Sockets](/windows/desktop/WinSock/) documentation.  
   
  <xref:System.Net.Sockets.Socket.SendFile%2A> synchronously sends a file to the remote host specified in the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.Accept%2A> method. <xref:System.Net.Sockets.Socket.SendFile%2A> can be used for both connection-oriented and for connectionless protocols.  
   
@@ -9435,7 +9435,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.SendFile%2A> blocks until the entire file is sent. In nonblocking mode, <xref:System.Net.Sockets.Socket.SendFile%2A> may complete successfully before the entire file has been sent. There is no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.SendFile%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -9526,7 +9526,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
   
  The caller may set the <xref:System.Net.Sockets.SocketAsyncEventArgs.UserToken%2A?displayProperty=nameWithType> property to any user state object desired before calling the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A> method, so that the information will be retrievable in the callback method. If the callback needs more information than a single object, a small class can be created to hold the other required state information as members.  
   
- This method uses the TransmitPackets function found in the Windows Sockets 2 API. For more information about the TransmitPackets function and its flags, see the Windows Sockets documentation in the MSDN Library.  
+ This method uses the TransmitPackets function found in the Windows Sockets 2 API. For more information about the TransmitPackets function and its flags, see the [Windows Sockets](/windows/desktop/WinSock/) documentation.  
   
  Although intended for connection-oriented protocols, the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A> method also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.BeginConnect%2A>, <xref:System.Net.Sockets.Socket.Connect%2A>, or <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method to establish a default remote host. With connectionless protocols, you must also be sure that the size of your file does not exceed the maximum packet size of the underlying service provider. If it does, the datagram is not sent and <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A> throws a <xref:System.Net.Sockets.SocketException> exception.  
   
@@ -9669,7 +9669,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You must also be sure that the number of bytes sent does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -9757,7 +9757,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You must also be sure that the number of bytes sent does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -9852,7 +9852,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You must also be sure that the number of bytes sent does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -9945,7 +9945,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You must also be sure that the size does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -10244,7 +10244,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  For more information on these options, refer to the <xref:System.Net.Sockets.SocketOptionName> enumeration.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -10308,7 +10308,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  <xref:System.Net.Sockets.Socket> options determine the behavior of the current <xref:System.Net.Sockets.Socket>. Use this overload to set those <xref:System.Net.Sockets.Socket> options that require a byte array as an option value.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -10445,7 +10445,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  For more information about these options, refer to the <xref:System.Net.Sockets.SocketOptionName> enumeration.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -10516,7 +10516,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  <xref:System.Net.Sockets.Socket> options determine the behavior of the current <xref:System.Net.Sockets.Socket>. Use this overload to set the <xref:System.Net.Sockets.SocketOptionName.Linger>, <xref:System.Net.Sockets.SocketOptionName.AddMembership>, and <xref:System.Net.Sockets.SocketOptionName.DropMembership><xref:System.Net.Sockets.Socket> options. For the <xref:System.Net.Sockets.SocketOptionName.Linger> option, use <xref:System.Net.Sockets.Socket> for the `optionLevel` parameter. For <xref:System.Net.Sockets.SocketOptionName.AddMembership> and <xref:System.Net.Sockets.SocketOptionName.DropMembership>, use <xref:System.Net.Sockets.SocketOptionLevel.IP>. If you want to get the current value of any of the options listed above, use the <xref:System.Net.Sockets.Socket.GetSocketOption%2A> method.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -10605,7 +10605,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
  Setting `how` to <xref:System.Net.Sockets.SocketShutdown.Both> disables both sends and receives as described above.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException> when calling the <xref:System.Net.Sockets.Socket.Shutdown%2A> method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException> when calling the <xref:System.Net.Sockets.Socket.Shutdown%2A> method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -10887,7 +10887,7 @@ Call IDisposable.Dispose when you are finished using the <xref:System.Net.Socket
   
  Setting this property on a Transmission Control Protocol (TCP) socket is ignored by the TCP/IP stack if a successful connection has been established using the socket.  
   
- If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   

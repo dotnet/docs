@@ -10,7 +10,7 @@ ms.assetid: 9d061c7d-b33b-470f-a36d-edccb1d6f9a3
 # How To: Write User Settings at Run Time with C\#
 Settings that are application-scoped are read-only, and can only be changed at design time or by altering the .config file in between application sessions. Settings that are user-scoped, however, can be written at run time just as you would change any property value. The new value persists for the duration of the application session. You can persist the changes to the settings between application sessions by calling the Save method.  
   
-### How To: Write and Persist User Settings at Run Time with C\#
+## How To: Write and Persist User Settings at Run Time with C\#
   
 1.  Access the setting and assign it a new value as shown in this example:  
   

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFrame Interface1"
+title: "ICorDebugFrame Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugFrame"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugFrame Interface1
+# ICorDebugFrame Interface
+
 Represents a frame on the current stack.  
   
 ## Methods  

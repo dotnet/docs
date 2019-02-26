@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAppDomain2 Interface1"
+title: "ICorDebugAppDomain2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugAppDomain2"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugAppDomain2 Interface1
+# ICorDebugAppDomain2 Interface
+
 Provides methods to work with arrays, pointers, function pointers, and reference types. This interface is an extension of the ICorDebugAppDomain interface.  
   
 ## Methods  

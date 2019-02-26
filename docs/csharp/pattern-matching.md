@@ -5,7 +5,7 @@ ms.date: 01/24/2017
 ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
 ---
 
-# Pattern Matching #
+# Pattern Matching
 
 Patterns test that a value has a certain *shape*, and can *extract*
 information from the value when it has the matching shape. Pattern

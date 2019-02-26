@@ -25,7 +25,7 @@ Inside the solution directory, create a *MathService* directory. The directory a
     /MathService
 ```
 
-Make *MathService* the current directory and run [`dotnet new classlib -lang F#`](../tools/dotnet-new.md) to create the source project.  To use test-driven development (TDD), you'll create a failing implementation of the math service:
+Make *MathService* the current directory and run [`dotnet new classlib -lang F#`](../tools/dotnet-new.md) to create the source project.  You'll create a failing implementation of the math service:
 
 ```fsharp
 module MyMath =
@@ -83,7 +83,7 @@ Execute [`dotnet sln add .\MathService.Tests\MathService.Tests.fsproj`](../tools
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Open *Tests.fs* and add the following code:
+You write one failing test, make it pass, then repeat the process. Open *Tests.fs* and add the following code:
 
 ```fsharp
 [<Fact>]

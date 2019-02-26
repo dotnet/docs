@@ -125,7 +125,7 @@ string s = String.Empty;
 |[How to: Modify String Contents](../../how-to/modify-string-contents.md)|Illustrates techniques to transform strings and modify the contents of strings.|  
 |[How to: Compare Strings](../../how-to/compare-strings.md)|Shows how to perform ordinal and culture specific comparisons of strings.|  
 |[How to: Concatenate Multiple Strings](../../how-to/concatenate-multiple-strings.md)|Demonstrates various ways to join multiple strings into one.|
-|[How to: Parse Strings Using String.Split ](../../how-to/parse-strings-using-split.md)|Contains code examples that illustrate how to use the `String.Split` method to parse strings.|  
+|[How to: Parse Strings Using String.Split](../../how-to/parse-strings-using-split.md)|Contains code examples that illustrate how to use the `String.Split` method to parse strings.|  
 |[How to: Search Strings](../../how-to/search-strings.md)|Explains how to use search for specific text or patterns in strings.|  
 |[How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)|Shows how to safely parse a string to see whether it has a valid numeric value.|  
 |[String interpolation](../../language-reference/tokens/interpolated.md)|Describes the string interpolation feature that provides a convenient syntax to format strings.|

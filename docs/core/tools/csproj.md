@@ -91,29 +91,31 @@ The root `<Project>` element of the *.csproj* file has a new attribute called `S
 You need to have the `Sdk` attribute set to one of those IDs on the `<Project>` element in order to use the .NET Core tools and build your code. 
 
 ### PackageReference
-A `<PackageReference>` item element specifies a NuGet dependency in the project. The `Include` attribute specifies the package ID. 
+A `<PackageReference>` item element specifies a [NuGet dependency in the project](/nuget/consume-packages/package-references-in-project-files). The `Include` attribute specifies the package ID. 
 
 ```xml
 <PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
 ```
 
 #### Version
-`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
+The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 #### IncludeAssets, ExcludeAssets and PrivateAssets
 `IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be 
-consumed. 
+consumed. By default, all package assets are included.
 
 `ExcludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
 `PrivateAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be 
-consumed but not flow to the next project. 
+consumed but not flow to the next project. The `Analyzers`, `Build` and `ContentFiles` assets are private by default
+when this attribute is not present.
 
 > [!NOTE]
 > `PrivateAssets` is equivalent to the *project.json*/*xproj* `SuppressParent` element.
 
-These attributes can contain one or more of the following items:
+These attributes can contain one or more of the following items, separated by the semicolon `;` character if more than
+one is listed:
 
 * `Compile` – the contents of the lib folder are available to compile against.
 * `Runtime` – the contents of the runtime folder are distributed.
@@ -205,11 +207,52 @@ Copyright details for the package.
 ### PackageRequireLicenseAcceptance
 A Boolean value that specifies whether the client must prompt the consumer to accept the package license before installing the package. The default is `false`.
 
-### PackageLicenseUrl
-An URL to the license that is applicable to the package.
+### PackageLicenseExpression
 
-### PackageProjectUrl
-A URL for the package's home page, often shown in UI displays as well as nuget.org.
+An [SPDX license identifier](https://spdx.org/licenses/) or expression. For example, `Apache-2.0`.
+
+Here is the complete list of [SPDX license identifiers](https://spdx.org/licenses/). NuGet.org accepts only OSI or FSF approved licenses when using license type expression.
+
+The exact syntax of the license expressions is described below in [ABNF](https://tools.ietf.org/html/rfc5234).
+```cli
+license-id            = <short form license identifier from https://spdx.org/spdx-specification-21-web-version#h.luq9dgcle9mo>
+
+license-exception-id  = <short form license exception identifier from https://spdx.org/spdx-specification-21-web-version#h.ruv3yl8g6czd>
+
+simple-expression = license-id / license-id”+”
+
+compound-expression =  1*1(simple-expression /
+                simple-expression "WITH" license-exception-id /
+                compound-expression "AND" compound-expression /
+                compound-expression "OR" compound-expression ) /                
+                "(" compound-expression ")" )
+
+license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
+```
+
+> [!NOTE]
+> Only one of `PackageLicenseExpression`, `PackageLicenseFile` and `PackageLicenseUrl` can be specified at a time.
+
+### PackageLicenseFile
+
+Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is prefered)
+
+Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
+
+You will need to ensure the license file is packed by adding it explicitly to the project, example usage:
+```xml
+<PropertyGroup>
+  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+</PropertyGroup>
+<ItemGroup>
+  <None Include="licenses\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+</ItemGroup>
+```
+
+### PackageLicenseUrl
+
+An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
+
 
 ### PackageIconUrl
 A URL for a 64x64 image with transparent background to use as the icon for the package in UI display.

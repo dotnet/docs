@@ -1,6 +1,6 @@
 ---
 title: Defining your multi-container application with docker-compose.yml
-description: .NET Microservices Architecture for Containerized .NET Applications | How to specifiy  microservices composition for a multicontainer application with docker-compose.yml.
+description: How to specify  microservices composition for a multicontainer application with docker-compose.yml.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/02/2018
@@ -462,7 +462,7 @@ Runtime images also provides automatic setting of aspnetcore\_urls to port 80 an
     [*https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/*](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
 
 -   **Building Docker Images for .NET Core Applications** <br/>
-    [*https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
+    [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
 
 >[!div class="step-by-step"]
 >[Previous](data-driven-crud-microservice.md)

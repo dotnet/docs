@@ -72,7 +72,7 @@ Polymorphism is often referred to as the third pillar of object-oriented program
  In this case, if `DoWork` is called on D using a variable of type D, the new `DoWork` is called. If a variable of type C, B, or A is used to access an instance of D, a call to `DoWork` will follow the rules of virtual inheritance, routing those calls to the implementation of `DoWork` on class C.  
   
 ### Accessing Base Class Virtual Members from Derived Classes  
- A derived class that has replaced or overridden a method or property can still access the method or property on the base class using the base keyword. The following code provides an example:  
+ A derived class that has replaced or overridden a method or property can still access the method or property on the base class using the `base` keyword. The following code provides an example:  
   
  [!code-csharp[csProgGuideInheritance#26](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_9.cs)]  
   

@@ -23,7 +23,7 @@ The .NET assembly format is also very descriptive about the structure of a given
 
 The .NET binary format is based on the Windows [PE file](https://en.wikipedia.org/wiki/Portable_Executable) format. In fact, .NET class libraries are conformant Windows PEs, and appear on first glance to be Windows dynamic link libraries (DLLs) or application executables (EXEs). This is a very useful characteristic on Windows, where they can masquerade as native executable binaries and get some of the same treatment (for example, OS load, PE tools).
 
-![Assembly headers](./media/assembly-format/assembly-headers.png)
+![Assembly headers](../media/assembly-format/assembly-headers.png)
 
 Assembly Headers from ECMA 335 II.25.1, Structure of the runtime file format.
 

@@ -1,5 +1,5 @@
 ---
-title: "AddFile Method"
+title: "AddFile Method1"
 ms.date: "03/30/2017"
 api_name: 
   - "IALink.AddFile"
@@ -18,7 +18,7 @@ topic_type:
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# AddFile Method
+# AddFile Method1
 Adds files to the assembly. Can also be used to create unbound modules.  
   
 ## Syntax  

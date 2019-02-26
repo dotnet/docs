@@ -22,4 +22,4 @@ This example shows how to create a <xref:System.Windows.Controls.Slider> control
 - <xref:System.Windows.Controls.Slider>
 - <xref:System.Windows.Controls.Primitives.TickBar>
 - <xref:System.Windows.Controls.Slider.TickPlacement%2A>
-- [Slider How-to Topics](https://msdn.microsoft.com/library/534be86c-afb2-425d-8186-631278a9925e)
+- [How to: Bind a Slider to a Property Value](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms788716(v=vs.90))

@@ -1,7 +1,7 @@
 ---
 title: Load data from a text file for machine learning processing - ML.NET
 description: Discover how to load data from a text file for use in machine learning model building, training, and scoring with ML.NET
-ms.date: 01/29/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to load data from a text file so that I can use it in machine learning model building, training, and scoring with ML.NET.
 ---
@@ -30,7 +30,7 @@ To load the data from a text file:
 var mlContext = new MLContext();
 
 // Create the reader: define the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(
+var reader = mlContext.Data.CreateTextLoader(
     columns: new TextLoader.Column[]
     {
         // A boolean column depicting the 'target label'.

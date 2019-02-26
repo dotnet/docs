@@ -1,7 +1,7 @@
 ---
 title: Apply feature engineering for model training on textual data - ML.NET
 description: Learn how to apply feature engineering for model training on textual data with ML.NET
-ms.date: 02/01/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to apply feature engineering for my model training on textual data with ML.NET so that I can use my model in the ML.NET processing pipeline.
 ---
@@ -31,7 +31,7 @@ Sentiment   SentimentText
 
 ```csharp
 // Define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(new[] 
+var reader = mlContext.Data.CreateTextLoader(new[] 
     {
         new TextLoader.Column("IsToxic", DataKind.BL, 0),
         new TextLoader.Column("Message", DataKind.TX, 1),

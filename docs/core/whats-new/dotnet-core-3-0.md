@@ -775,7 +775,7 @@ The updated serial port APIs that were announced as part of .NET Core 3.0 Previe
 .NET Core 3 will be supported on the following operating systems:
 
 * Windows Client: 7, 8.1, 10 (1607+)
-* Windows Server: 20012 R2 SP1+
+* Windows Server: 2012 R2 SP1+
 * macOS: 10.12+
 * RHEL: 6+
 * Fedora: 26+

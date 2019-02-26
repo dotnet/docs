@@ -1,7 +1,7 @@
 ---
 title: Train a regression model to predict a value using ML.NET
 description: Discover how to train a machine learning regression model to predict a value using ML.NET
-ms.date: 02/01/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use ML.NET so that I can train a regression model to predict a value.
 ---
@@ -30,7 +30,7 @@ var mlContext = new MLContext();
 // Step one: read the data as an IDataView.
 
 // First, we define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(
+var reader = mlContext.Data.CreateTextLoader(
         columns: new TextLoader.Column[]
         {
             // We read the first 11 values as a single float vector.

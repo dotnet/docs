@@ -1,9 +1,9 @@
 ---
 title: Development environment for Docker apps
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Get to know the most important development tool options that support the Docker development life-cycle. 
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 02/15/2019
 ---
 # Development environment for Docker apps
 
@@ -16,30 +16,32 @@ No matter if you prefer a full and powerful IDE or a lightweight and agile edito
 If you prefer a lightweight, cross-platform editor supporting any development language, you can use Visual Studio Code and Docker CLI. These products provide a simple yet robust experience, which is critical for streamlining the developer workflow. By installing "Docker for Mac" or "Docker for Windows" (development environment), Docker developers can use a single Docker CLI to build apps for both Windows or Linux (runtime environment). Plus, Visual Studio Code supports extensions for Docker with IntelliSense for Dockerfiles and shortcut-tasks to run Docker commands from the editor.
 
 > [!NOTE]
+>
 > To download Visual Studio Code, go to <https://code.visualstudio.com/download>.
+>
+> To download Docker for Mac and Windows, go to <https://www.docker.com/products/docker>.
 
-To download Docker for Mac and Windows, go to <https://www.docker.com/products/docker>.
+### Visual Studio with Docker Tools (Windows development machine)
 
-### Visual Studio with Docker Tools
+We recommend you use Visual Studio 2017 (or later) with the built-in Docker Tools enabled. With Visual Studio, you can develop, run, and validate your applications directly in the chosen Docker environment. Press F5 to debug your application (single container or multiple containers) directly in a Docker host, or press Ctrl+F5 to edit and refresh your app without having to rebuild the container. It's the simplest and most powerful choice for Windows developers to create Docker containers for Linux or Windows.
 
-When you're using Visual Studio 2015 you can install the add-on tools "Docker Tools for Visual Studio." For Visual Studio 2017, Docker Tools come built in already. In both cases you can develop, run, and validate your applications directly in the chosen Docker environment. F5 your application (single container or multiple containers) directly into a Docker host with debugging, or press Ctrl+F5 to edit and refresh your app without having to rebuild the container. This is the simplest and more powerful choice for Windows developers creating Docker containers for Linux or Windows.
+### Visual Studio for Mac (Mac development machine)
 
-> [!NOTE]
-> To download Docker Tools for Visual Studio, go to <https://visualstudiogallery.msdn.microsoft.com/0f5b2caa-ea00-41c8-b8a2-058c7da0b3e4>.
+You can use [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/) when developing Docker-based applications. Visual Studio for Mac offers a richer IDE when compared to Visual Studio Code for Mac.
 
 ## Language and framework choices
 
-You can develop Docker applications and Microsoft tools with most modern languages. The following is an initial list, but you are not limited to it:
+You can develop Docker applications using Microsoft tools with most modern languages. The following is an initial list, but you are not limited to it:
 
--   .NET Core and ASP.NET Core
--   Node.js
--   Golang
--   Java
--   Ruby
--   Python
+- .NET Core and ASP.NET Core
+- Node.js
+- Go
+- Java
+- Ruby
+- Python
 
 Basically, you can use any modern language supported by Docker in Linux or Windows.
 
 >[!div class="step-by-step"]
->[Previous](orchestrate-high-scalability-availability.md)
+>[Previous](deploy-azure-kubernetes-service.md)
 >[Next](docker-apps-inner-loop-workflow.md)

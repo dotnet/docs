@@ -22,25 +22,25 @@ Applications that consume query notifications have a common set of requirements.
 ## Query Notifications Requirements  
  Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
--   [Creating a Query for Notification](https://msdn.microsoft.com/library/ms181122.aspx)  
+-   [Creating a Query for Notification](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms181122(v=sql.105))  
   
--   [Security Considerations for Service Broker](https://msdn.microsoft.com/library/ms166059.aspx)  
+-   [Security Considerations for Service Broker](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms166059(v=sql.90))  
   
--   [Security and Protection (Service Broker)](https://msdn.microsoft.com/library/bb522911.aspx)  
+-   [Security and Protection (Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522911(v=sql.105))  
   
--   [Security Considerations for Notifications Services](https://msdn.microsoft.com/library/ms172604.aspx)  
+-   [Security Considerations for Notifications Services](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms172604(v=sql.90))  
   
--   [Query Notification Permissions](https://msdn.microsoft.com/library/ms188311.aspx)  
+-   [Query Notification Permissions](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms188311(v=sql.105))  
   
--   [International Considerations for Service Broker](https://msdn.microsoft.com/library/ms166028.aspx)  
+-   [International Considerations for Service Broker](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms166028(v=sql.90))  
   
--   [Solution Design Considerations (Service Broker)](https://msdn.microsoft.com/library/bb522899.aspx)  
+-   [Solution Design Considerations (Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522899(v=sql.105))  
   
--   [Service Broker Developer InfoCenter](https://msdn.microsoft.com/library/ms166100.aspx)  
+-   [Service Broker Developer InfoCenter](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms166100(v=sql.105))  
   
--   [Developer's Guide (Service Broker)](https://msdn.microsoft.com/library/bb522908.aspx)  
+-   [Developer's Guide (Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522908(v=sql.105))  
   
 ## Enabling Query Notifications to Run Sample Code  
  To enable Service Broker on the **AdventureWorks** database by using SQL Server Management Studio, execute the following Transact-SQL statement:  

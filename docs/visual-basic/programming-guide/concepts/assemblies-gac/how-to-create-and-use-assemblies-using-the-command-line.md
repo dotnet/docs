@@ -113,5 +113,5 @@ vbc -out:TestCode.exe -reference:MathLibrary.DLL TestCode.vb
   
 ## See also
 - [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
-- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [Assemblies in .NET](../../../../standard/assembly/index.md)
 - [Creating a Class to Hold DLL Functions](../../../../framework/interop/creating-a-class-to-hold-dll-functions.md)

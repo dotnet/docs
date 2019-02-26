@@ -31,7 +31,8 @@
 ### [Portability Analyzer](standard/analyzers/portability-analyzer.md)
 ### [Framework Analyzer](standard/analyzers/framework-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions/)
-## [.NET Assembly File Format](standard/assembly-format.md)
+## [Assemblies in .NET](standard/assembly/index.md)
+### [.NET Assembly File Format](standard/assembly/file-format.md) 
 ## [Garbage Collection](standard/garbage-collection/)
 ## [Generic types](standard/generics.md)
 ## [Delegates and lambdas](standard/delegates-lambdas.md)
@@ -258,6 +259,8 @@
 ##### [Introduction to classes](csharp/tutorials/intro-to-csharp/introduction-to-classes.md)
 ### [Explore C# 6](csharp/tutorials/exploration/csharp-6.yml)
 ### [Work with nullable reference types](csharp/tutorials/nullable-reference-types.md)
+### [Generate and consume asynchronous streams](csharp/tutorials/generate-consume-asynchronous-stream.md)
+### [Upgrade an app to nullable reference types](csharp/tutorials/upgrade-to-nullable-references.md)
 ### [Console Application](csharp/tutorials/console-teleprompter.md)
 ### [REST Client](csharp/tutorials/console-webapiclient.md)
 ### [Inheritance in C# and .NET](csharp/tutorials/inheritance.md)
@@ -268,6 +271,7 @@
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
 ## What's new in C#
+### [C# 8.0 - Preview 2](csharp/whats-new/csharp-8.md)
 ### [C# 7.3](csharp/whats-new/csharp-7-3.md)
 ### [C# 7.2](csharp/whats-new/csharp-7-2.md)
 ### [C# 7.1](csharp/whats-new/csharp-7-1.md)
@@ -518,7 +522,7 @@
 #### [Customizing Which Objects are Available in My](visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
 
 ## [Programming Concepts](visual-basic/programming-guide/concepts/index.md)
-### [Assemblies and the Global Assembly Cache](visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+### [Assemblies in .NET](standard/assembly/index.md)
 ### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/index.md)
 ### [Attributes](visual-basic/programming-guide/concepts/attributes/index.md)
 ### [Expression Trees](visual-basic/programming-guide/concepts/expression-trees/index.md)

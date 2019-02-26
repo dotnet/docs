@@ -36,7 +36,7 @@ For information about the latest features added to the .NET implementations and 
 
 ## Documentation
 
-This documentation covers the breadth of .NET across platforms and languages.  You can get started with .NET and its languages in any of the following sections:
+This documentation covers the breadth of .NET across platforms and languages. You can get started with .NET and its languages in any of the following sections:
 
 - [.NET Guide](standard/index.md)
 - [.NET Core Guide](core/index.md)

@@ -169,7 +169,7 @@ The use of optional parameters affects *overload resolution*, or the way in whic
 
 <a name="return"></a>
 
-## Return values ##
+## Return values
 
 Methods can return a value to the caller. If the return type (the type listed before the method name) is not `void`, the method can return the value by using the `return` keyword. A statement with the `return` keyword followed by a variable, constant, or expression that matches the return type will return that value to the method caller. Methods with a non-void return type are required to use the `return` keyword to return a value. The `return` keyword also stops the execution of the method.
 

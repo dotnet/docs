@@ -2,7 +2,7 @@
 title: "Walkthrough: Persisting an Object using C#"
 ms.date: 04/26/2018
 ---
-# Walkthrough: persisting an object using C# #
+# Walkthrough: persisting an object using C\#
 
 You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.
 

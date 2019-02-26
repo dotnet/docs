@@ -7,10 +7,10 @@ helpviewer_keywords:
   - "application settings [Windows Forms], C#"
 ms.assetid: dbe8bf09-5e1c-49da-9192-154033d7240b
 ---
-# How To: Read Settings at Run Time With C# #
+# How To: Read Settings at Run Time With C\#
 You can read both Application-scoped and User-scoped settings at run time via the Properties object. The Properties object exposes all of the default settings for the project via the Properties.Settings.Default member.  
   
-### To Read Settings at Run Time with C#  
+### To Read Settings at Run Time with C\#
   
 -   Access the appropriate setting via the Properties.Settings.Default member. The following example shows how to assign a setting named `myColor` to a BackColor property. It requires you to have previously created a Settings file containing a setting named `myColor` of type `System.Drawing.Color`. For information about creating a Settings file, see [How To: Create a New Setting at Design Time](../../../../docs/framework/winforms/advanced/how-to-create-a-new-setting-at-design-time.md).  
   

@@ -74,8 +74,9 @@ You can invoke a method using both positional arguments and named arguments. How
 
 [!code-csharp[csSnippets.Methods#46](../../samples/snippets/csharp/concepts/methods/named2.cs#46)]
 
- <a name="inherited"></a>
- ## Inherited and overridden methods ##
+<a name="inherited"></a>
+
+## Inherited and overridden methods ##
 
 In addition to the members that are explicitly defined in a type, a type inherits members defined in its base classes. Since all types in the managed type system inherit directly or indirectly from the <xref:System.Object> class, all types inherit its members, such as <xref:System.Object.Equals(System.Object)>, <xref:System.Object.GetType>, and <xref:System.Object.ToString>. The following example defines a `Person` class, instantiates two `Person` objects, and calls the `Person.Equals` method to determine whether the two objects are equal. The `Equals` method, however, is not defined in the `Person` class; it is inherited from <xref:System.Object>.
 
@@ -166,8 +167,9 @@ The use of optional parameters affects *overload resolution*, or the way in whic
 - If more than one candidate is found, overload resolution rules for preferred conversions are applied to the arguments that are explicitly specified. Omitted arguments for optional parameters are ignored.
 - If two candidates are judged to be equally good, preference goes to a candidate that does not have optional parameters for which arguments were omitted in the call. This is a consequence of a general preference in overload resolution for candidates that have fewer parameters.
 
- <a name="return"></a>
- ## Return values ##
+<a name="return"></a>
+
+## Return values ##
 
 Methods can return a value to the caller. If the return type (the type listed before the method name) is not `void`, the method can return the value by using the `return` keyword. A statement with the `return` keyword followed by a variable, constant, or expression that matches the return type will return that value to the method caller. Methods with a non-void return type are required to use the `return` keyword to return a value. The `return` keyword also stops the execution of the method.
 
@@ -223,8 +225,9 @@ If a method is passed an array as an argument and modifies the value of individu
 
 [!code-csharp[csSnippets.Methods#101](../../samples/snippets/csharp/concepts/methods/returnarray1.cs#101)]
 
- <a name="extension"></a>
- ## Extension methods ##
+<a name="extension"></a>
+
+## Extension methods ##
 
 Ordinarily, there are two ways to add a method to an existing type:
 

@@ -67,5 +67,5 @@ The API includes the following functions:
 | [VerifyClient function](verifyclientkey.md) | Ensures that the client key has the correct security. |
 | [WritePropertyValue function](writepropertyvalue.md) | Writes a specified number of bytes to a property identified by a property handle. |
 
- ## See also
+## See also
 [Unmanaged API reference](../index.md) 

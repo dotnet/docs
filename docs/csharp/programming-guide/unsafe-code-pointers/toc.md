@@ -11,4 +11,4 @@
 ##### [How to: Increment and Decrement Pointers](how-to-increment-and-decrement-pointers.md)
 ##### [Arithmetic Operations on Pointers](arithmetic-operations-on-pointers.md)
 ##### [Pointer Comparison](pointer-comparison.md)
-### [How to: Use Pointers to Copy an Array of Bytes ](how-to-use-pointers-to-copy-an-array-of-bytes.md)
+### [How to: Use Pointers to Copy an Array of Bytes](how-to-use-pointers-to-copy-an-array-of-bytes.md)

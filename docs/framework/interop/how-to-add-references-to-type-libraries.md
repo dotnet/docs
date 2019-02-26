@@ -41,8 +41,6 @@ Visual Studio generates an interop assembly containing metadata when you add a r
 ## See also
 - [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)
 - [Exposing COM Components to the .NET Framework](exposing-com-components.md)
-- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (C#)](../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)
-- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md)
 - [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](/docs/csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md) 
 - [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)](/docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md)
 - [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)

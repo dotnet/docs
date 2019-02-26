@@ -5,7 +5,7 @@ author: erikdietrich
 ms.date: 09/20/2017
 ---
 
-# The history of C# #
+# The history of C\#
 
 This article provides a history of each major release of the C# language. The C# team is continuing to innovate and add new features. Detailed language feature status, including features considered for upcoming releases can be found [on the dotnet/roslyn repository](https://github.com/dotnet/roslyn/blob/master/docs/Language%20Feature%20Status.md) on GitHub.
 

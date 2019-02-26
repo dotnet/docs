@@ -152,7 +152,7 @@ There are many architectural patterns used by software architects and developers
 
 - Simple CRUD, single-tier, single-layer.
 
-- [Traditional N-Layered](https://msdn.microsoft.com/library/ee658109.aspx#Layers).
+- [Traditional N-Layered](https://docs.microsoft.com/previous-versions/msp-n-p/ee658109(v=pandp.10)).
 
 - [Domain-Driven Design N-layered](https://blogs.msdn.microsoft.com/cesardelatorre/2011/07/03/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
 

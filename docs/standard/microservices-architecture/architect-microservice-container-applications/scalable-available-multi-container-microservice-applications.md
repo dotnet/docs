@@ -131,7 +131,7 @@ As shown in figure 4-26, the most differential feature in Azure Dev Spaces is ca
 
 Basically you can set up a shared dev space in Azure. Each developer can focus on just their part of the application, and can iteratively develop pre-commit code in a dev space that already contains all the other services and cloud resources that their scenarios depend on. Dependencies are always up-to-date, and developers are working in a way that mirrors production.
 
-Azure Dev Spaces provides the concept of a space, which allows you to work in isolation, and without the fear of breaking your team members. This feature is based on URL pre-fixes, so if using any dev space prefix in the URL, for every container's request, it will run a special version of the container is deployed for that space it it exists. Otherwise, it will run the global/consolidated version.
+Azure Dev Spaces provides the concept of a space, which allows you to work in isolation, and without the fear of breaking your team members. This feature is based on URL prefixes, so if using any dev space prefix in the URL, for every container's request, it will run a special version of the container that is deployed for that space if it exists. Otherwise, it will run the global/consolidated version.
 
 You can see the [eShopOnContainers wiki page on Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/10.2-Using-Azure-Dev-Spaces-and-AKS), to get a practical view on a concrete example.
 

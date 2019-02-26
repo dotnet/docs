@@ -35,4 +35,4 @@ Similar to this, C# is one language that allows you to use unmanaged constructs 
 
 * [Overview of the .NET Framework](../framework/get-started/overview.md)
 * [Unsafe Code and Pointers](../../docs/csharp/programming-guide/unsafe-code-pointers/index.md)
-* [Interoperability (C# Programming guide)](../csharp/programming-guide/interop/index.md)
+* [Native interoperability](./native-interop/index.md)

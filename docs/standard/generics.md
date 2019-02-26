@@ -62,5 +62,4 @@ An additional advantage of the runtime knowing the type of your generic is a bet
 
 ## See also
 
-- [An Introduction to C# Generics](https://docs.microsoft.com/previous-versions/ms379564(v=vs.80))
 - [C# Programming Guide - Generics](../../docs/csharp/programming-guide/generics/index.md)

@@ -224,7 +224,7 @@ Asynchronous APIs in Windows Runtime programming have one of the following retur
    
   
 ##  <a name="BKMK_NamingConvention"></a> Naming convention  
- By convention, you append "Async" to the names of methods that have an `async` modifier.  
+By convention, methods that return commonly awaitable types (e.g. `Task`, `Task<T>`, `ValueTask`, `ValueTask<T>`) should have names that end with "Async". Methods that start an asynchronous operation but do not return an awaitable type should not have names that end with "Async", but may start with "Begin", "Start" or some other verb to suggest this method does not return or throw the result of the operation.
   
  You can ignore the convention where an event, base class, or interface contract suggests a different name. For example, you shouldn’t rename common event handlers, such as `Button1_Click`.  
   

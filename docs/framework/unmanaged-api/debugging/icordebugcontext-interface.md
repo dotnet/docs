@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugContext Interface1"
+title: "ICorDebugContext Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugContext"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugContext Interface1
+# ICorDebugContext Interface
+
 Represents a context object. This interface has not been implemented yet.  
   
 ## Remarks  

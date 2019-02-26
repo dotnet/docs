@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFunction2 Interface1"
+title: "ICorDebugFunction2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugFunction2"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugFunction2 Interface1
+# ICorDebugFunction2 Interface
+
 Logically extends the ICorDebugFunction interface to provide support for Just My Code step-through debugging, which skips non-user code.  
   
 ## Methods  

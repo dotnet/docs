@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugHandleValue Interface1"
+title: "ICorDebugHandleValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugHandleValue"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugHandleValue Interface1
+# ICorDebugHandleValue Interface
+
 A subclass of ICorDebugReferenceValue that represents a reference value to which the debugger has created a handle for garbage collection.  
   
 ## Methods  

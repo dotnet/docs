@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStepperEnum Interface1"
+title: "ICorDebugStepperEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugStepperEnum"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugStepperEnum Interface1
+# ICorDebugStepperEnum Interface
 Implements ICorDebugEnum methods, and enumerates ICorDebugStepper arrays.  
   
 ## Methods  

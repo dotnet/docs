@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugObjectEnum Interface1"
+title: "ICorDebugObjectEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugObjectEnum"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugObjectEnum Interface1
+# ICorDebugObjectEnum Interface
+
 Implements ICorDebugEnum methods, and enumerates arrays of objects by their relative virtual addresses (RVAs).  
   
 ## Methods  

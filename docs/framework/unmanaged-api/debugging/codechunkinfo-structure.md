@@ -1,5 +1,5 @@
 ---
-title: "CodeChunkInfo Structure1"
+title: "CodeChunkInfo Structure"
 ms.date: "03/30/2017"
 api_name: 
   - "CodeChunkInfo"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# CodeChunkInfo Structure1
+# CodeChunkInfo Structure
+
 Represents a single chunk of code in memory.  
   
 ## Syntax  

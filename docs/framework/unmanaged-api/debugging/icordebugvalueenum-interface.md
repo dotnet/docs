@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugValueEnum Interface1"
+title: "ICorDebugValueEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugValueEnum"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugValueEnum Interface1
+# ICorDebugValueEnum Interface
 Implements "ICorDebugEnum" methods and enumerates "ICorDebugValue" arrays.  
   
 ## Methods  

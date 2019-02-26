@@ -65,7 +65,7 @@ Different orchestrators might sound similar, but the diagnostics and health chec
   [*https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents*](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents)
 
 - **Logging What You Mean: Using the Semantic Logging Application Block** \
-  [*https://docs.microsoft.com/previous-versions/msp-n-p/dn440729(v=pandp.60)*](https://docs.microsoft.com/previous-versions/msp-n-p/dn440729(v=pandp.60))
+  <https://docs.microsoft.com/previous-versions/msp-n-p/dn440729(v=pandp.60)>
 
 - **Splunk** Official site. \
   [*https://www.splunk.com/*](https://www.splunk.com/)

@@ -5872,7 +5872,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object that represents the selected row in the control.</summary>
-        <value>A <see cref="T:System.Web.UI.WebControls.GridViewRow" /> that represents the selected row in the control.</value>
+        <value>A <see cref="T:System.Web.UI.WebControls.GridViewRow" /> that represents the selected row in the control, or `null` if nothing is selected.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

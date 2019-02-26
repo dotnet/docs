@@ -27,12 +27,12 @@
 ### [Base Types](standard/base-types/)
 ## [.NET Class libraries](standard/class-libraries.md)
 ## [Analyzers](standard/analyzers/index.md)
-### [API Analyzer](standard/analyzers/api-analyzer.md) 
+### [API Analyzer](standard/analyzers/api-analyzer.md)
 ### [Portability Analyzer](standard/analyzers/portability-analyzer.md)
 ### [Framework Analyzer](standard/analyzers/framework-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions/)
 ## [Assemblies in .NET](standard/assembly/index.md)
-### [.NET Assembly File Format](standard/assembly/file-format.md) 
+### [.NET Assembly File Format](standard/assembly/file-format.md)
 ## [Garbage Collection](standard/garbage-collection/)
 ## [Generic types](standard/generics.md)
 ## [Delegates and lambdas](standard/delegates-lambdas.md)
@@ -1199,8 +1199,8 @@
 ### [Iris flowers (clustering)](machine-learning/tutorials/iris-clustering.md)
 ## [How-to guides](machine-learning/how-to-guides/index.md)
 ### Prepare data
-#### [Apply categorical feature engineering ](machine-learning/how-to-guides/train-model-categorical-ml-net.md)
-#### [Apply textual feature engineering ](machine-learning/how-to-guides/train-model-textual-ml-net.md)
+#### [Apply categorical feature engineering](machine-learning/how-to-guides/train-model-categorical-ml-net.md)
+#### [Apply textual feature engineering](machine-learning/how-to-guides/train-model-textual-ml-net.md)
 #### [Load data with many columns](machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md)
 #### [Load data from multiple files](machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md)
 #### [Load data from text file](machine-learning/how-to-guides/load-data-from-text-file-ml-net.MD)
@@ -1211,7 +1211,7 @@
 #### [Inspect intermediate pipeline data values](machine-learning/how-to-guides/inspect-intermediate-data-ml-net.md)
 #### [Train regression model](machine-learning/how-to-guides/train-regression-model-ml-net.md)
 #### [Determine model feature importance with PFI](machine-learning/how-to-guides/determine-global-feature-importance-in-model.md)
-### Use the trained model  
+### Use the trained model
 #### [One prediction at a time with PredictionEngine](machine-learning/how-to-guides/single-predict-model-ml-net.md)
 #### [Operationalize a trained model](machine-learning/how-to-guides/consuming-model-ml-net.md)
 ### Infer.NET

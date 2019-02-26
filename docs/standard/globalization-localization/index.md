@@ -16,7 +16,7 @@ ms.author: "ronpet"
 ---
 # Globalizing and localizing .NET applications
 
-Developing a [world-ready application](https://msdn.microsoft.com/goglobal/bb978433.aspx), including an application that can be localized into one or more languages, involves three steps: globalization, localizability review, and localization.
+Developing a world-ready application, including an application that can be localized into one or more languages, involves three steps: globalization, localizability review, and localization.
 
 [Globalization](globalization.md)
 

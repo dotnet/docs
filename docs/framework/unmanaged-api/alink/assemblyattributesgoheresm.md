@@ -34,7 +34,7 @@ References to this type might be embedded inside netmodules whose sources contai
 
 References to this type indicate custom attributes that are security related and multiple-use.
 
-These types are marked "internal" within the .NET Framework, and are located in the <xref:System.Runtime.CompilerServices> namespace.
+These types are marked "internal" within the .NET Framework and are located in the <xref:System.Runtime.CompilerServices> namespace.
 
 ## Requirements
 

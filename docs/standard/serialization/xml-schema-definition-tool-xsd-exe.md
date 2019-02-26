@@ -218,4 +218,5 @@ xsd myAssembly.dll
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
 - [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md)
 - [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md)
-- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)
+- [LINQ (Language-Integrated Query) (C#)](../../csharp/programming-guide/concepts/linq/index.md)
+- [LINQ (Language-Integrated Query) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/index.md)

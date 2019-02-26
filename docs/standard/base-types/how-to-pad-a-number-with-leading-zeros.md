@@ -63,7 +63,7 @@ You can also use the format string in an interpolated string in both [C#](../../
   
 1. Define a custom numeric format string that uses the zero placeholder "0" to represent the minimum number of zeros.  
   
-1. Call the number's `ToString(String)` method and pass it the custom format string. You can also use the custom format string with a method that supports composite formatting.  
+1. Call the number's `ToString(String)` method and pass it the custom format string. You can also use the custom format string with string interpolation or with a method that supports composite formatting.  
   
  The following example formats several numeric values with leading zeros. As a result, the total length of the formatted number is at least eight digits to the left of the decimal.  
   

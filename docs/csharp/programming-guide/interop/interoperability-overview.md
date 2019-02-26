@@ -24,7 +24,7 @@ The topic describes methods to enable interoperability between C# managed code a
 ## C++ Interop  
  You can use C++ interop, also known as It Just Works (IJW), to wrap a native C++ class so that it can be consumed by code that is authored in C# or another .NET Framework language. To do this, you write C++ code to wrap a native DLL or COM component. Unlike other .NET Framework languages, [!INCLUDE[vcprvc](~/includes/vcprvc-md.md)] has interoperability support that enables managed and unmanaged code to be located in the same application and even in the same file. You then build the C++ code by using the **/clr** compiler switch to produce a managed assembly. Finally, you add a reference to the assembly in your C# project and use the wrapped objects just as you would use other managed classes.  
   
-## Exposing COM Components to C#  
+## Exposing COM Components to C\#
  You can consume a COM component from a C# project. The general steps are as follows:  
   
 1.  Locate a COM component to use and register it. Use regsvr32.exe to register or un–register a COM DLL.  

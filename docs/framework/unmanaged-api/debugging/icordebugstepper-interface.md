@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStepper Interface1"
+title: "ICorDebugStepper Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugStepper"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugStepper Interface1
+# ICorDebugStepper Interface
 Represents a step in code execution that is performed by a debugger, serves as an identifier between the issuance and completion of a command, and provides a way to cancel a step.  
   
 ## Methods  

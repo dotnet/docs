@@ -10,7 +10,7 @@ This section explains programming concepts in the Visual Basic language.
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Assemblies and the Global Assembly Cache (Visual Basic)](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)|Describes how to create and use assemblies.|  
+|[Assemblies in .NET](../../../standard/assembly/index.md)|Describes how to create and use assemblies.|  
 |[Asynchronous Programming with Async and Await (Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)|Describes how to write asynchronous solutions by using [Async](../../../visual-basic/language-reference/modifiers/async.md) and [Await](../../../visual-basic/language-reference/operators/await-operator.md) keywords. Includes a walkthrough.|  
 |[Attributes overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/index.md)|Discusses how to provide additional information about programming elements such as types, fields, methods, and properties by using attributes.|  
 |[Caller Information (Visual Basic)](../../../visual-basic/programming-guide/concepts/caller-information.md)|Describes how to obtain information about the caller of a method. This information includes the file path and the line number of the source code and the member name of the caller.|  

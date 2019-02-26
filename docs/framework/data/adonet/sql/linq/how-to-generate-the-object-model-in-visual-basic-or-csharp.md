@@ -3,7 +3,7 @@ title: "How to: Generate the Object Model in Visual Basic or C#"
 ms.date: "03/30/2017"
 ms.assetid: a0c73b33-5650-420c-b9dc-f49310c201ee
 ---
-# How to: Generate the Object Model in Visual Basic or C# #
+# How to: Generate the Object Model in Visual Basic or C\#
 In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an object model in your own programming language is mapped to a relational database. Two tools are available for automatically generating a Visual Basic or C# model from the metadata of an existing database.  
   
 -   If you are using Visual Studio, you can use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to generate an object model. The [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)] provides a rich user interface to help you generate a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object model. For more information see, [Linq to SQL Tools in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).

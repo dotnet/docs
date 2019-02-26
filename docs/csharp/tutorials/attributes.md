@@ -6,7 +6,7 @@ ms.date: 03/06/2017
 ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
 ---
 
-# Using Attributes in C# #
+# Using Attributes in C\#
 
 Attributes provide a way of associating information with code in a declarative way. They can also provide a reusable element that can be applied to a variety of targets.
 

@@ -63,5 +63,5 @@ End Class
 - <xref:System.Security.Permissions.StrongNameIdentityPermission>
 - [How to: Create Unsigned Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)
 - [How to: Create Signed Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)
-- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [Assemblies in .NET](../../../../standard/assembly/index.md)
 - [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

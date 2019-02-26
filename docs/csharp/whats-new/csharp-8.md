@@ -113,7 +113,7 @@ public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
         // other cases removed for brevity...
         _ => 0M
     };
-    ```
+```
 
 Pattern matching creates a concise syntax for expressing this algorithm.
 
@@ -133,7 +133,7 @@ public static string RockPaperScissors(string first, string second)
         ("scissors", "paper") => "scissors cuts paper. Scissors wins.",
         (_, _) => "tie"
     };
-    ```
+```
 
 The messages indicate the winner. The discard case represents the three combinations for ties, or other text inputs.
 
@@ -241,23 +241,23 @@ int M()
     int x = 7;
     return Add(x, y);
 
-    int Add(int left, int right) => left + right;
+    static int Add(int left, int right) => left + right;
 }
 ```
 
 ## Disposable ref structs
 
-A `struct` declared with the `ref` modifier may not implement any interfaces and so cannot implement <xref:System.IDisposable>. Therefore, to enable a `ref struct` to be disposed, it must have an accessible `void Dispose()` method.
+A `struct` declared with the `ref` modifier may not implement any interfaces and so cannot implement <xref:System.IDisposable>. Therefore, to enable a `ref struct` to be disposed, it must have an accessible `void Dispose()` method. This also applies to `readonly ref struct` declarations.
 
 ## Nullable reference types
 
 Inside a nullable annotation context, any variable of a reference type is considered to be a **nonnullable reference type**. If you want to indicate that a variable may be null, you must append the type name with the `?` to declare the variable as a **nullable reference type**.
 
-For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized during construction. The compiler generates a warning if the variable is not set in all constructors, or an initializer. Furthermore, nonnullable reference types can't be assigned a value that could be null.
+For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized during construction. The compiler generates a warning if the variable is not set by a call to any of the available constructors or by an initializer. Furthermore, nonnullable reference types can't be assigned a value that could be null.
 
 Nullable reference types aren't checked to ensure they aren't assigned or initialized to null. However, the compiler uses flow analysis to ensure that any variable of a nullable reference type is checked against null before it's accessed or assigned to a nonnullable reference type.
 
-You can learn more about the feature in the overview of [nullable reference types](../nullable-references.md). Try it yourself in a new application in this [nullable reference types tutorial](../tutorials/nullable-reference-types.md). Learn about the steps to migrate an existing codebase to make use of nullable reference types in the [migrating an application to use nullable reference types tutorial]../tutorials/upgrade-to-nullable-references.md).
+You can learn more about the feature in the overview of [nullable reference types](../nullable-references.md). Try it yourself in a new application in this [nullable reference types tutorial](../tutorials/nullable-reference-types.md). Learn about the steps to migrate an existing codebase to make use of nullable reference types in the [migrating an application to use nullable reference types tutorial](../tutorials/upgrade-to-nullable-references.md).
 
 ## Asynchronous streams
 
@@ -295,7 +295,7 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
 
-You can specify an index **from the end**. You specify **from the end** using the `^` operator. You are familiar with `array[2]` meaning the element "2 from the start". Now, `array[^2]` means the element "2 from the end". The index `^0` means "the end", or one past that last element.
+You can specify an index **from the end**. You specify **from the end** using the `^` operator. You are familiar with `array[2]` meaning the element "2 from the start". Now, `array[^2]` means the element "2 from the end". The index `^0` means "the end", or the index that follows the last element.
 
 You can specify a **range** with the **range operator**: `..`. For example, `0..^0` specifies the entire range of the array: 0 from the start up to, but not including 0 from the end. Either operand may use "from the start" or "from the end". Furthermore, either operand may be omitted. The defaults are `0` for the start index, and `^0` for the end index.
 

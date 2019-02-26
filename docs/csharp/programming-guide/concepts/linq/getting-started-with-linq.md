@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "queries [LINQ], LINQ in C#"
 ms.assetid: b8700c1f-05c9-4380-b6eb-e34c4da38e54
 ---
-# Getting Started with LINQ in C#
+# Getting Started with LINQ in C\#
 This section contains basic background information that will help you understand the rest of the LINQ documentation and samples.  
   
 ## In This Section  

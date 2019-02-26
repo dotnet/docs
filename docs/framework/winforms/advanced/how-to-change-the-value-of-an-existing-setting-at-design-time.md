@@ -9,7 +9,7 @@ ms.assetid: 5da91272-ad7e-49e7-9d1f-eb64439a1e4d
 # How To: Change the Value of an Existing Setting at Design Time
 You can use Visual Studio to edit the values of existing settings in your project.  
   
-### To Change the Value of an Existing Setting at Design Time in C#  
+### To Change the Value of an Existing Setting at Design Time in C\#
   
 1.  In **Solution Explorer**, expand the **Properties** node of your project.  
   

@@ -125,7 +125,7 @@ If you are writing a class with some operations that may incur noticeable delays
 |One Async Operation in entire class|`Sub MethodNameAsyncCancel(ByVal userState As Object)`|`Sub MethodNameAsyncCancel()`|  
 |Multiple Async Operations in class|`Sub CancelAsync(ByVal userState As Object)`|`Sub CancelAsync()`|  
   
-### C#  
+### C\#
   
 ||Multiple Simultaneous Operations Supported|Only One Operation at a Time|  
 |------|------------------------------------------------|----------------------------------|  

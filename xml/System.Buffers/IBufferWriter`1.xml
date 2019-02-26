@@ -17,7 +17,7 @@
   <Interfaces />
   <Docs>
     <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.IBufferWriter`1" />.</typeparam>
-    <summary>Represents a <typeparamref name="T" /> sink.</summary>
+    <summary>Represents a <typeparamref name="T" /> output sink into which data can be written.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,8 +43,8 @@
       </Parameters>
       <Docs>
         <param name="count">The number of data items written to the <see cref="T:System.Span`1" /> or <see cref="T:System.Memory`1" />.</param>
-        <summary>Notifies the <see cref="T:System.Buffers.IBufferWriter`1" /> that <paramref name="count" /> data items were written to the <see cref="T:System.Span`1" /> or <see cref="T:System.Memory`1" />.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Notifies the <see cref="T:System.Buffers.IBufferWriter`1" /> that <paramref name="count" /> data items were written to the output <see cref="T:System.Span`1" /> or <see cref="T:System.Memory`1" />.</summary>
+        <remarks>You must request a new buffer after calling Advance to continue writing more data; you cannot write to a previously acquired buffer.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMemory">
@@ -67,10 +67,21 @@
         <Parameter Name="sizeHint" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sizeHint">The size of the <see cref="T:System.Memory`1" /> requested. If 0, requests currently available memory. </param>
-        <summary>Requests a <see cref="T:System.Memory`1" /> that is at least <paramref name="sizeHint" /> in size if possible.</summary>
-        <returns>A <see cref="T:System.Memory`1" /> of size <paramref name="sizeHint" />, if it's available; otherwise, a <see cref="T:System.Memory`1" /> with the maximum available memory. If <paramref name="sizeHint" /> is 0, returns currently available memory.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sizeHint">The minimum length of the returned <see cref="T:System.Memory`1" />. If 0, some, non-empty buffer is returned. </param>
+        <summary>Returns a <see cref="T:System.Memory`1" /> to write to that is at least the requested size (specified by <paramref name="sizeHint" />).</summary>
+        <returns>A <see cref="T:System.Memory`1" /> of at least the size <paramref name="sizeHint" />. If <paramref name="sizeHint" /> is 0, returns a non-empty buffer.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+There is no guarantee that successive calls will return the same buffer or the same-sized buffer.
+
+This must never return <xref:System.Span%601.Empty?displayProperty=nameWithType>, but it can throw <xref:System.OutOfMemoryException> if the requested buffer size is not available.
+
+You must request a new buffer after calling `Advance` to continue writing more data; you cannot write to a previously acquired buffer.
+
+         ]]></format>
+         </remarks>
+         <exception cref="T:System.OutOfMemoryException">The requested buffer size is not available.</exception>        
       </Docs>
     </Member>
     <Member MemberName="GetSpan">
@@ -93,10 +104,19 @@
         <Parameter Name="sizeHint" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sizeHint">The size of the memory span requested. If 0, requests currently available memory. </param>
-        <summary>Requests a span that is at least <paramref name="sizeHint" /> in size if possible.</summary>
-        <returns>A span of size <paramref name="sizeHint" />, if it's available; otherwise, a memory span with the maximum available memory. If <paramref name="sizeHint" /> is 0, returns currently available memory.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sizeHint">The minimum length of the returned <see cref="T:System.Span`1" />. If 0, some, non-empty buffer is returned. </param>
+        <summary>Returns a <see cref="T:System.Span`1" /> to write to that is at least the requested size (specified by <paramref name="sizeHint" />).</summary>
+        <returns>A <see cref="T:System.Span`1" /> of at least the size <paramref name="sizeHint" />. If <paramref name="sizeHint" /> is 0, returns a non-empty buffer.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[
+  
+There is no guarantee that successive calls will return the same buffer or the same-sized buffer.
+
+This method must never return <xref:System.Span%601.Empty?displayProperty=nameWithType>, but it can throw <xref:System.OutOfMemoryException> if the requested buffer size is not available.
+
+You must request a new buffer after calling `Advance` to continue writing more data; you cannot write to a previously acquired buffer.
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
   </Members>

@@ -78,9 +78,6 @@ Adds types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter
 
 ## Related Sections
 
-[Advanced Development Technologies](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/a493kdy6(v=vs.85))  
-Provides links to more information on sophisticated development tasks and techniques in the .NET Framework.
-
 [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))  
 Provides topics that describe and explain how to program XML Web services using ASP.NET.
 

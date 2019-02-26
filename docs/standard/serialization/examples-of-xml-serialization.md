@@ -761,6 +761,6 @@ public class Test
 - [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
 - [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)
 - [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)
-- <xref:System.Xml.Serialization.XmlSerializer> Class
+- [XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)
 - [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
 - [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

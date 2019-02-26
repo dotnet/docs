@@ -79,4 +79,4 @@ You can get started developing .NET Core application by following these step-by-
 
 See the [Prerequisites for macOS development](macos-prerequisites.md) article for a list of the supported OS X / macOS versions.
 
-***
+---

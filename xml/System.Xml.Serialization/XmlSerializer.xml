@@ -1469,7 +1469,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
         <param name="mappings">An array of <see cref="T:System.Xml.Serialization.XmlTypeMapping" /> that maps one type to another.</param>
         <summary>Returns an array of <see cref="T:System.Xml.Serialization.XmlSerializer" /> objects created from an array of <see cref="T:System.Xml.Serialization.XmlTypeMapping" /> objects.</summary>
         <returns>An array of <see cref="T:System.Xml.Serialization.XmlSerializer" /> objects.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>It is recommended for callers to cache the returned serializer when there are repeated calls to this method.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromMappings">
@@ -1596,7 +1596,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlSerializer.FromTypes%2A> method allows you to efficiently create an array of <xref:System.Xml.Serialization.XmlSerializer> objects for processing an array of <xref:System.Type> objects.  
+ The <xref:System.Xml.Serialization.XmlSerializer.FromTypes%2A> method allows you to efficiently create an array of <xref:System.Xml.Serialization.XmlSerializer> objects for processing an array of <xref:System.Type> objects. However, it is recommended for callers to cache the returned serializers when there are repeated calls to this method.
   
    
   

@@ -64,7 +64,7 @@
   
  If the encoder is configured to provide a BOM, you can retrieve it by calling the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method; otherwise, the method returns an empty array. Note that, even if a <xref:System.Text.UTF8Encoding> object is configured for BOM support, you must include the BOM at the beginning of the encoded byte stream as appropriate; the encoding methods of the <xref:System.Text.UTF8Encoding> class do not do this automatically.  
   
-> [!NOTE]
+> [!CAUTION]
 >  To enable error detection and to make the class instance more secure, you should call the <xref:System.Text.UTF8Encoding.%23ctor%28System.Boolean%2CSystem.Boolean%29> constructor and set the `throwOnInvalidBytes` parameter to `true`. With error detection enabled, a method that detects an invalid sequence of characters or bytes throws an <xref:System.ArgumentException> exception. Without error detection, no exception is thrown, and the invalid sequence is generally ignored.  
   
 > [!NOTE]

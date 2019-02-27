@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugValue Interface1"
+title: "ICorDebugValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugValue"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugValue Interface1
+# ICorDebugValue Interface
 Represents a value in the process being debugged. The value can be a read or a write value.  
   
 ## Methods  

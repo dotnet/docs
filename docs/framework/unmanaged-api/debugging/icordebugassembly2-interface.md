@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAssembly2 Interface1"
+title: "ICorDebugAssembly2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugAssembly2"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugAssembly2 Interface1
+# ICorDebugAssembly2 Interface
+
 Represents an assembly. This interface is an extension of the ICorDebugAssembly interface.  
   
 ## Methods  

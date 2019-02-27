@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAssembly Interface1"
+title: "ICorDebugAssembly Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugAssembly"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugAssembly Interface1
+# ICorDebugAssembly Interface
+
 Represents an assembly.  
   
 ## Methods  

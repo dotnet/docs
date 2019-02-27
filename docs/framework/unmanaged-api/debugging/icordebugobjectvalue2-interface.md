@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugObjectValue2 Interface1"
+title: "ICorDebugObjectValue2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugObjectValue2"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugObjectValue2 Interface1
+# ICorDebugObjectValue2 Interface
+
 Extends the "ICorDebugObjectValue" interface to support inheritance and overrides.  
   
 ## Methods  

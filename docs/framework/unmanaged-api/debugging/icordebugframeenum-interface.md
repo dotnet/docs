@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFrameEnum Interface1"
+title: "ICorDebugFrameEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugFrameEnum"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugFrameEnum Interface1
+# ICorDebugFrameEnum Interface
+
 Implements ICorDebugEnum methods, and enumerates ICorDebugFrame arrays.  
   
 ## Methods  

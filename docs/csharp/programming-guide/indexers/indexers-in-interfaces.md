@@ -18,7 +18,7 @@ Indexers can be declared on an [interface](../../../csharp/language-reference/ke
   
  The following is an example of an interface indexer accessor:  
   
- [!code-csharp[csProgGuideIndexers#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/indexers-in-interfaces_1.cs)]  
+ [!code-csharp[csProgGuideIndexers#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideIndexers/CS/Indexers.cs#3)]  
   
  The signature of an indexer must differ from the signatures of all other indexers declared in the same interface.  
   

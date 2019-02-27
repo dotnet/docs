@@ -14,4 +14,4 @@ A cyclic operation has failed. Cyclic operations cycle and therefore cannot comp
   
 ## See also
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
-- [Debugging Basics: Breakpoints](https://msdn.microsoft.com/library/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)
+- [Debugging Basics: Breakpoints](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/4607yxb0(v=vs.100))

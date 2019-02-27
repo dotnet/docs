@@ -136,22 +136,68 @@ Calendars typically divide dates into eras. However, the <xref:System.Globalizat
 
 An era in most calendars denotes an extremely long time period. In the Gregorian calendar, for example, the current era spans more than two millenia. For the <xref:System.Globalization.JapaneseCalendar> and the <xref:System.Globalization.JapaneseLunisolarCalendar>, the two calendars that support multiple eras, this is not the case. An era corresponds to the period of an emperor's reign. Support for multiple eras, particularly when the upper limit of the current era is unknown, poses special challenges. For more information, see [Handling eras in the Japanese calendars](handling-eras.md).
 
+### Eras and era names
+
+In .NET, integers that represent the eras supported by a particular calendar implementation are stored in reverse order in the <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> array. The current era is at index zero, and for <xref:System.Globalization.Calendar> classes that support multiple eras, each successive index reflects the previous era. The static <xref:System.Globalization.Calendar.CurrentEra?displayProperty=nameWithType> property defines the index of the current era in the <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> array; it is a constant whose value is always zero. Individual <xref:System.Globalization.Calendar> classes also include static fields that return the value of the current era. They are listed in the following table.
+
+| Calendar class                                        | Current era field                                                 |
+| ----------------------------------------------------- | ----------------------------------------------------------------- |
+| <xref:System.Globalization.ChineseLunisolarCalendar>  | <xref:System.Globalization.ChineseLunisolarCalendar.ChineseEra>   |
+| <xref:System.Globalization.GregorianCalendar>         | <xref:System.Globalization.GregorianCalendar.ADEra>               |
+| <xref:System.Globalization.HebrewCalendar>            | <xref:System.Globalization.HebrewCalendar.HebrewEra>              |
+| <xref:System.Globalization.HijriCalendar>             | <xref:System.Globalization.HijriCalendar.HijriEra>                |
+| <xref:System.Globalization.JapaneseLunisolarCalendar> | <xref:System.Globalization.JapaneseLunisolarCalendar.JapaneseEra> |
+| <xref:System.Globalization.JulianCalendar>            | <xref:System.Globalization.JulianCalendar.JulianEra>              |
+| <xref:System.Globalization.KoreanCalendar>            | <xref:System.Globalization.KoreanCalendar.KoreanEra>              |
+| <xref:System.Globalization.KoreanLunisolarCalendar>   | <xref:System.Globalization.KoreanLunisolarCalendar.GregorianEra>  |
+| <xref:System.Globalization.PersianCalendar>           | <xref:System.Globalization.PersianCalendar.PersianEra>            |
+| <xref:System.Globalization.ThaiBuddhistCalendar>      | <xref:System.Globalization.ThaiBuddhistCalendar.ThaiBuddhistEra>  |
+| <xref:System.Globalization.UmAlQuraCalendar>          | <xref:System.Globalization.UmAlQuraCalendar.UmAlQuraEra>          |
+
+The name that corresponds to a particular era number can be retrieved by passing the era number to the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName%2A?displayProperty=nameWithType> method. The following example calls these methods to retrieve information about era support in the <xref:System.Globalization.GregorianCalendar> class.
+
+[!code-csharp[Conceptual.Calendars#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/instantiatewithera1.cs#7)]
+[!code-vb[Conceptual.Calendars#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/instantiatewithera1.vb#7)]
+
+In addition, the "g" custom date and time format string includes a calendar's era name in the string representation of a date and time. For more information, see [Custom date and time format strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md).
+
 ### Instantiating a date with an era
 
 For the two <xref:System.Globalization.Calendar> classes that support multiple eras, a date that consists of a particular year, month, and day of the month value can be ambiguous. For example, all eras supported by the <xref:System.Globalization.JapaneseCalendar> have years numbered from 1 to 15. Ordinarily, if an era is not specified, both date and time and calendar methods assume that values belong to the current era. This is true of the <xref:System.DateTime.#ctor%2A> and <xref:System.DateTimeOffset.#ctor#2A> constructors that include parameters of type <xref:System.Globalization.Calendar>, as well as the [JapaneseCalendar.ToDateTime](xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)) and [JapaneseLunisolarCalendar.ToDateTime](xref:System.Globalization.EastAsianLunisolarCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)) methods. The following example instantiates a date that represents January 1 of the second year of an unspecified era. As the output from the example shows, the date is interpreted as the second year of the Heisei era (the era, 平成, precedes the year in the string returned by the <xref:System.DateTime.ToString(System.String,System.Globalization.CultureInfo)?displayProperty=nameWithType> method) and corresponds to January 1, 1990, in the Gregorian calendar. (The range of the Heisei era is from 1989 to 2019 in the Gregorian calendar; it was the current era at the time this example was executed.)
 
-[!code-csharp[Conceptual.Calendars#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/instantiatewithera1.cs#7)]
-[!code-vb[Conceptual.Calendars#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/instantiatewithera1.vb#7)]
+[!code-csharp[A date in the current era](~/samples/snippets/standard/datetime/calendars/current-era/cs/program.cs)]
+[!code-vb[A date in the current era](~/samples/snippets/standard/datetime/calendars/current-era/vb/program.vb)]
 
-However, if the example changes, the intent of this code becomes ambiguous. Is the date intended to represent the second year of the current era, or is it intended to represent the second year of the Heisei era? To avoid this ambiguity, you should always call an overload of the <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.Globalization.JapaneseCalendar>, or <xref:System.Globalization.JapaneseLunisolarCalendar> class that explicitly specifies an era.
+However, if the era changes, the intent of this code becomes ambiguous. Is the date intended to represent the second year of the current era, or is it intended to represent the second year of the Heisei era? There are two ways to avoid this ambiguity:
+
+- Instantiate the date and time value using the default <xref:System.Globalization.GregorianCalendar> class. You can then use the Japanese calendar or the Japanese Lunisolar calendar for the string representation of dates, as the following example shows.
+
+[!code-csharp[Insantiating a Gregorian date](~/samples/snippets/standard/datetime/calendars/gregorian/cs/program.cs)]
+[!code-vb[Instantiating a Gregorian date](~/samples/snippets/standard/datetime/calendars/gregorian/vb/program.vb)]
 
 
-o explicitly specify the era when instantiating a date for a <xref:System.Globalization.Calendar> class that supports multiple eras, you can call the <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method. This method enables you to explicitly specify an era along with the calendar's year, month, day, hour, minute, second, and millisecond.
 
-The following example uses the <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method to instantiate the same date, the first month of the first day of the second year, in each era supported by the <xref:System.Globalization.JapaneseCalendar> class. It then displays the date in both the Japanese and Gregorian calendars. It also calls a <xref:System.DateTime> constructor to illustrate that methods that create date values without specifying an era create dates in the current era.
+, you should always call a date and time method that explicitly specifies an era. This includes the following methods:
 
-[!code-csharp[Conceptual.Calendars#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/instantiatewithera1.cs#7)]
-[!code-vb[Conceptual.Calendars#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/instantiatewithera1.vb#7)]
+- The <xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)> method of the <xref:System.Globalization.JapaneseCalendar> or <xref:System.Globalization.JapaneseLunisolarCalendar> class.
+
+- A <xref:System.DateTime> or <xref:System.DateTimeOffset> parsing method, such as <xref:System.DateTime.Parse>, <xref:System.DateTime.TryParse>, <xref:System.DateTime.ParseExact>, or <xref:System.DateTime.TryParseExact>, that includes the string to be parsed and optionally a <xref:System.Globalization.DateTimeStyles> argument if the current culture is Japanese-Japan ("ja-JP") and that culture's calendar is the <xref:System.Globalization.JapaneseCalendar>. The string to be parsed must include the era.
+
+- A <xref:System.DateTime> or <xref:System.DateTimeOffset> parsing method that includes a `provider` parameter of type <xref:System.Globalization.IFormatProvider>. `provider` must be either a <xref:System.Globalization.CultureInfo> object that represents the Japanese-Japan ("ja-JP") culture whose current calendar is <xref:System.Globalization.JapaneseCalendar> or a <xref:System.Globalization.DateTimeFormatInfo> object whose <xref:System.Globalization.DateTimeFormatInfo.Calendar> property is <xref:System.Globalization.JapaneseCalendar>. The string to be parsed must include the era.
+
+> [!TIP]
+> When working with calendars that support multiple eras, *always* specify the era when you instantiate a date and time based on that calendar.
+
+The following example uses three of these methods to instantiate a date and time in the Meiji era, which began on September 8, 1868, and ended on July 29, 1912. 
+
+[!code-csharp[A date in a specified era](~/samples/snippets/standard/datetime/calendars/specify-era/cs/program.cs)]
+[!code-vb[A date in a specified era](~/samples/snippets/standard/datetime/calendars/specify-era/vb/program.vb)]
+
+In specifying a era to the <xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)> method, you provide the index of the era in the calendar's <xref:System.Globalization.Calendar.Eras> property. For calendars whose eras are subject to change, however, these indexes are not constant values; the current era is at index 0, and the oldest era is at index `Eras.Length - 1`. You can retrieve the appropriate era index as follows:
+
+- For dates in the current era, always use the calendar's <xref:System.Globalization.Calendar.CurrentEra> property.
+
+- For dates in a specified era, use the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A?displayProperty=nameWithType> method to retrieve the index that corresponds to a specified era name. This requires that the <xref:System.Globalization.JapaneseCalendar> be the current calendar of the <xref:System.Globalization.CultureInfo> object that represents the ja-JP culture.  The previous example illustrates this approach. 
 
 ### Calendars, eras, and date ranges
 
@@ -177,30 +223,6 @@ In cases where the string representation of a date is expressed in a calendar th
 [!code-csharp[Conceptual.Calendars#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/formatstrings3.cs#10)]
 [!code-vb[Conceptual.Calendars#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/formatstrings3.vb#10)]
 
-### Eras and era names
-
-In .NET, integers that represent the eras supported by a particular calendar implementation are stored in reverse order in the <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> array. The current era is at index zero, and for <xref:System.Globalization.Calendar> classes that support multiple eras, each successive index reflects the previous era. The static <xref:System.Globalization.Calendar.CurrentEra?displayProperty=nameWithType> property defines the index of the current era in the <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> array; it is a constant whose value is always zero. Individual <xref:System.Globalization.Calendar> classes also include static fields that return the value of the current era. They are listed in the following table.
-
-| Calendar class                                        | Current era field                                                 |
-| ----------------------------------------------------- | ----------------------------------------------------------------- |
-| <xref:System.Globalization.ChineseLunisolarCalendar>  | <xref:System.Globalization.ChineseLunisolarCalendar.ChineseEra>   |
-| <xref:System.Globalization.GregorianCalendar>         | <xref:System.Globalization.GregorianCalendar.ADEra>               |
-| <xref:System.Globalization.HebrewCalendar>            | <xref:System.Globalization.HebrewCalendar.HebrewEra>              |
-| <xref:System.Globalization.HijriCalendar>             | <xref:System.Globalization.HijriCalendar.HijriEra>                |
-| <xref:System.Globalization.JapaneseLunisolarCalendar> | <xref:System.Globalization.JapaneseLunisolarCalendar.JapaneseEra> |
-| <xref:System.Globalization.JulianCalendar>            | <xref:System.Globalization.JulianCalendar.JulianEra>              |
-| <xref:System.Globalization.KoreanCalendar>            | <xref:System.Globalization.KoreanCalendar.KoreanEra>              |
-| <xref:System.Globalization.KoreanLunisolarCalendar>   | <xref:System.Globalization.KoreanLunisolarCalendar.GregorianEra>  |
-| <xref:System.Globalization.PersianCalendar>           | <xref:System.Globalization.PersianCalendar.PersianEra>            |
-| <xref:System.Globalization.ThaiBuddhistCalendar>      | <xref:System.Globalization.ThaiBuddhistCalendar.ThaiBuddhistEra>  |
-| <xref:System.Globalization.UmAlQuraCalendar>          | <xref:System.Globalization.UmAlQuraCalendar.UmAlQuraEra>          |
-
-The name that corresponds to a particular era number can be retrieved by passing the era number to the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName%2A?displayProperty=nameWithType> method. The following example calls these methods to retrieve information about era support in the <xref:System.Globalization.GregorianCalendar> class.
-
-[!code-csharp[Conceptual.Calendars#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/instantiatewithera1.cs#7)]
-[!code-vb[Conceptual.Calendars#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/instantiatewithera1.vb#7)]
-
-In addition, the "g" custom date and time format string includes a calendar's era name in the string representation of a date and time. For more information, see [Custom date and time format strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md).
 
 ## See also
 

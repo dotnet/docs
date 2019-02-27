@@ -8,7 +8,7 @@ ms.custom: mvc,how-to
 
 # How-To: Serve Machine Learning Model Through ASP.NET Core Web API
 
-This how-to shows how to serve a pre-built ML.NET machine learning model to the web using an ASP.NET Core Web API and Azure Web Services. By doing so it allows for users to access the API for prediction purposes via standard HTTP methods.
+This how-to shows how to serve a pre-built ML.NET machine learning model to the web using an ASP.NET Core Web API. By doing so it allows for users to access the API for prediction purposes via standard HTTP methods.
 
 ## Prerequisites
 

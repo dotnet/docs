@@ -86,8 +86,8 @@ If `plFlavor` is not `null`, the `LONG` value receives information about the ori
 |Constant  |Value  |Description  |
 |---------|---------|---------|
 | `WBEM_FLAVOR_ORIGIN_SYSTEM` | 0x40 | The property is a standard system property. |
-| `WBEM_FLAVOR_ORIGIN_PROPAGATED` | 0x20 | For a class: The property is inherited from the parent class. </br> For an instance: The property, while inherited from the parent class, has not been modified by the instance.  |
-| `WBEM_FLAVOR_ORIGIN_LOCAL` | 0 | For a class: The property belongs to the derived class. </br> For an instance: The property is modified by the instance; that is, a value was supplied, or a qualifier was added or modified. |
+| `WBEM_FLAVOR_ORIGIN_PROPAGATED` | 0x20 | For a class: The property is inherited from the parent class. <br> For an instance: The property, while inherited from the parent class, has not been modified by the instance.  |
+| `WBEM_FLAVOR_ORIGIN_LOCAL` | 0 | For a class: The property belongs to the derived class. <br> For an instance: The property is modified by the instance; that is, a value was supplied, or a qualifier was added or modified. |
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

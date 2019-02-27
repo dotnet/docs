@@ -43,7 +43,7 @@ HRESULT PutInstanceWmi (
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
-| `WBEM_FLAG_USE_AMENDED_QUALIFIERS` | 0x20000 | If set, WMI does not store any qualifiers with the **Amended** flavor. </br> If not set, it is assumed that this object is not localized, and all qualifiers are storedwith this instance. |
+| `WBEM_FLAG_USE_AMENDED_QUALIFIERS` | 0x20000 | If set, WMI does not store any qualifiers with the **Amended** flavor. <br> If not set, it is assumed that this object is not localized, and all qualifiers are storedwith this instance. |
 | `WBEM_FLAG_CREATE_OR_UPDATE` | 0 | Create the instance if it does not exist, or overwrite it if it exists already. |
 | `WBEM_FLAG_UPDATE_ONLY` | 1 | Update the instance. The instance must exist for the call to be successful. |
 | `WBEM_FLAG_CREATE_ONLY` | 2 | Create the instance. The call fails if the instance already exists. |

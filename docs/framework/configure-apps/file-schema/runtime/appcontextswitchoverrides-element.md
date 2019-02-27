@@ -113,6 +113,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.UseLegacyAccessibilityFeatures`|Controls whether accessibility features available starting with the .NET Framework 4.7.1 are enabled or disabled. | .NET Framework 4.7.1 |
 |`Switch.UseLegacyAccessibilityFeatures.2`|Controls whether accessibility features available in the .NET Framework 4.7.2 are enabled (`false`) or disabled (`true`). If `true`, `Switch.UseLegacyAccessibilityFeatures` must also be `true` to enable .NET Framework 4.7.1 accessibility features.|.NET Framework 4.7.2|
 |`System.Xml.`<br /><br /> `IgnoreEmptyKeySequences`|Controls whether empty key sequences in compound keys are ignored by XSD schema validation. For more information, see [Mitigation: XML Schema Validation](../../../migration-guide/mitigation-xml-schema-validation.md).|.NET Framework 4.6|  
+|`Switch.System.Runtime.Serialization.UseNewMaxArraySize`|Use this switch to make BinaryFormatter fast with large object graphs starting with .NET 4.7.2|.NET Framework 4.7.2|
   
 > [!NOTE]
 >  Instead of adding an `AppContextSwitchOverrides` element to an application configuration file, you can also set the switches programmatically by calling the `static` (in C#) or `Shared` (in Visual Basic) <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.  

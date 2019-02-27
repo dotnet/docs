@@ -24,7 +24,7 @@ There are two ways to safely call a Windows Forms control from a thread that did
 
 ## Unsafe cross-thread calls
 
-It is unsafe to call a control directly from a thread that did not create it. The following code snippet illustrates an unsafe call to the <xref:System.Windows.Forms.TextBox?displayProperty=nameWithType> control. The button click event handler creates a new `Unsafe` thread, which sets the main thread's <xref:System.Windows.Forms.TextBox> <xref:System.Windows.Forms.Control.Text%2A> property directly. 
+It is unsafe to call a control directly from a thread that did not create it. The following code snippet illustrates an unsafe call to the <xref:System.Windows.Forms.TextBox?displayProperty=nameWithType> control. The button click event handler creates a new `UnsafeText` thread, which sets the main thread's <xref:System.Windows.Forms.TextBox> <xref:System.Windows.Forms.Control.Text%2A> property directly. 
 
 ```csharp
 private Button button1;
@@ -45,9 +45,7 @@ private void UnsafeText()
 Dim WithEvents Button1 As Button
 Dim TextBox1 As TextBox
 
-Private Sub Button1_Click(ByVal sender As Object, e As EventArgs)
-  Handles Button1.Click
-
+Private Sub Button1_Click(ByVal sender As Object, e As EventArgs) Handles Button1.Click
     Thread2 = New Thread(New ThreadStart(AddressOf UnsafeText))
     Thread2.Start()
 End Sub
@@ -62,8 +60,8 @@ The Visual Studio debugger detects these unsafe thread calls by raising an <xref
 ## Safe cross-thread calls 
 
 The following code examples demonstrate two ways to safely call a Windows Forms control from a thread that did not create it: 
-- The <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName> method, which calls a delegate from the main thread to call the control. 
-- A <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> component, which offers an event-driven model. 
+1. The <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName> method, which calls a delegate from the main thread to call the control. 
+2. A <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> component, which offers an event-driven model. 
 
 In both examples, the background thread sleeps for one second to simulate work being done in that thread. 
 
@@ -102,6 +100,7 @@ public class InvokeThreadSafeForm : Form
         button1 = new Button
         {
             Location = new Point(15, 55),
+            Size = new Size(240, 20),
             Text = "Set text safely"
         };
         button1.Click += new EventHandler(Button1_Click);

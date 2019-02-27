@@ -50,7 +50,7 @@ number ^ exponent
 ## Example  
  The following example uses the `^` operator to raise a number to the power of an exponent. The result is the first operand raised to the power of the second.  
   
- [!code-vb[VbVbalrOperators#20](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/exponentiation-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#20)]  
   
  The preceding example produces the following results:  
   

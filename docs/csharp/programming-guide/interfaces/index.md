@@ -15,7 +15,7 @@ By using interfaces, you can, for example, include behavior from multiple source
   
 You define an interface by using the [interface](../../language-reference/keywords/interface.md) keyword. as the following example shows.  
   
-[!code-csharp[csProgGuideInheritance#47](../classes-and-structs/codesnippet/CSharp/interfaces_1.cs)]  
+ [!code-csharp[csProgGuideInheritance#47](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#47)]  
 
 The name of the struct must be a valid C# [identifier name](../inside-a-program/identifier-names.md). By convention, interface names begin with a capital `I`.
 

@@ -32,7 +32,7 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
 ## Example  
  The following example shows various ways to access information about files and folders.  
   
- [!code-csharp[csFilesandFolders#6](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-get-information-about-files-folders-and-drives_1.cs)]  
+ [!code-csharp[csFilesandFolders#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#6)]  
   
 ## Robust Programming  
  When you process user-specified path strings, you should also handle exceptions for the following conditions:  

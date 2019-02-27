@@ -39,7 +39,7 @@ result = object1 IsNot object2
 ## Example  
  The following code example uses both the `Is` operator and the `IsNot` operator to accomplish the same comparison.  
   
- [!code-vb[VbVbalrOperators#29](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/isnot-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#29)]  
   
 ## See also
 - [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)

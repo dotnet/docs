@@ -46,7 +46,7 @@ The following table shows which element and which [globs](https://en.wikipedia.o
 | None             	| \*\*/\*                                  	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx   |
 
 > [!NOTE]
-> **Exclude glob** always excludes the `./bin` (which is `$(BaseOutputPath)`) and `./obj` (which is `$(BaseIntermediateOutputPath)`) folders. As a whole, all excludes are represented by `$(DefaultItemExcludes)`.
+> **Exclude glob** always excludes the `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, respectively. As a whole, all excludes are represented by `$(DefaultItemExcludes)`.
 
 If you have globs in your project and you try to build it using the newest SDK, you'll get the following error:
 

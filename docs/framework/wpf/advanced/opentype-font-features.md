@@ -2,7 +2,7 @@
 title: "OpenType Font Features"
 ms.date: "03/30/2017"
 dev_langs: 
-  - "csharps"
+  - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "fonts [WPF], OpenType"

@@ -48,9 +48,9 @@ To create an Application Insights resource, follow the instructions in the artic
 
 ## Security, backup, and monitoring services
 
-There are many support chores with lots of details that you have to handle to ensure your applications and infrastructure are in top notch condition to support business needs, and the situation gets heavier in the microservices realm, so you need a way to have both high-level and detailed views when you need to take action.
+There are many support chores with lots of details that you have to handle to ensure your applications and infrastructure are in top notch condition to support business needs, and the situation becomes more complicated in the microservices realm, so you need a way to have both high-level and detailed views when you need to take action.
 
-Azure has the tools to manage an provide a unified view of four critical aspects of both your cloud and on-premises resources:
+Azure has the tools to manage and provide a unified view of four critical aspects of both your cloud and on-premises resources:
 
 - **Security**. With [Azure Security Center](https://azure.microsoft.com/services/security-center/).
   - Get full visibility and control over the security of your virtual machines, apps, and workloads.

@@ -81,7 +81,7 @@ Remove the existing class definition and add the following code to the Predictio
 
 While it is possible to create the service every time it needs to be used, when it comes to best practices there are better approaches to that can be taken. One such approach is dependency injection which is built into ASP.NET Core.
 
-The following link provides more information if you want to learn about [dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.1).
+The following link provides more information if you want to learn about [dependency injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.1).
 
 1. Open the Startup.cs class and add the following using statement to the top of the file: 
 

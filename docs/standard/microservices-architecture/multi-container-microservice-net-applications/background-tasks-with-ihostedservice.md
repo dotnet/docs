@@ -172,36 +172,32 @@ public class GracePeriodManagerService : BackgroundService
     public GracePeriodManagerService(IOptions<OrderingBackgroundSettings> settings,
                                      IEventBus eventBus,
                                      ILogger<GracePeriodManagerService> logger)
+    {
+        //Constructor’s parameters validations...       
+    }
+
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        _logger.LogDebug($"GracePeriodManagerService is starting.");
+
+        stoppingToken.Register(() => 
+            _logger.LogDebug($" GracePeriod background task is stopping."));
+
+        while (!stoppingToken.IsCancellationRequested)
         {
-            //Constructor’s parameters validations...       
+            _logger.LogDebug($"GracePeriod task doing background work.");
+
+            // This eShopOnContainers method is querying a database table 
+            // and publishing events into the Event Bus (RabbitMS / ServiceBus)
+            CheckConfirmedGracePeriodOrders();
+
+            await Task.Delay(_settings.CheckUpdateTime, stoppingToken);
         }
-
-        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
-        {
-            _logger.LogDebug($"GracePeriodManagerService is starting.");
-
-            stoppingToken.Register(() => 
-                    _logger.LogDebug($" GracePeriod background task is stopping."));
-
-            while (!stoppingToken.IsCancellationRequested)
-            {
-                _logger.LogDebug($"GracePeriod task doing background work.");
-
-                // This eShopOnContainers method is querying a database table 
-                // and publishing events into the Event Bus (RabbitMS / ServiceBus)
-                CheckConfirmedGracePeriodOrders();
-
-                await Task.Delay(_settings.CheckUpdateTime, stoppingToken);
-            }
             
-            _logger.LogDebug($"GracePeriod background task is stopping.");
+        _logger.LogDebug($"GracePeriod background task is stopping.");
+    }
 
-        }
-
-        protected override async Task StopAsync (CancellationToken stoppingToken)
-        {
-               // Run your graceful clean-up actions
-        }
+    .../...
 }
 ```
 

@@ -43,7 +43,7 @@ The following table shows which element and which [globs](https://en.wikipedia.o
 |-------------------|-------------------------------------------|---------------------------------------------------------------|----------------------------|
 | Compile          	| \*\*/\*.cs (or other language extensions) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc 	| N/A                     	 |
 | EmbeddedResource 	| \*\*/\*.resx                             	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | N/A                     	 |
-| None             	| \*\*/\*                                  	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | - \*\*/\*.cs; \*\*/\*.resx |
+| None             	| \*\*/\*                                  	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx   |
 
 > [!NOTE]
 > **Exclude glob** always excludes the `./bin` (which is `$(BaseOutputPath)`) and `./obj` (which is `$(BaseIntermediateOutputPath)`) folders. As a whole, all excludes are represented by `$(DefaultItemExcludes)`.

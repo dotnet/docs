@@ -169,7 +169,7 @@ For example, in the preceding OrderAggregate code example, there are several pri
   <https://msdn.microsoft.com/magazine/dn342868.aspx>
 
 - **Udi Dahan. How to create fully encapsulated Domain Models** \
-  [*http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/*](http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/)
+  <http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
 
 >[!div class="step-by-step"]
 >[Previous](microservice-domain-model.md)

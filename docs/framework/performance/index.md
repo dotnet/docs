@@ -43,7 +43,7 @@ If you want to create apps with great performance, you should design and plan fo
 |[!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps written in C++, C#, and Visual Basic|[Performance best practices for Windows Store apps using C++, C#, and Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh750313%28v=win.10%29)|  
 |Windows Presentation Foundation (WPF)|[WPF Performance Suite](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100))|  
 |ASP.NET|[ASP.NET Performance Overview](https://docs.microsoft.com/previous-versions/aspnet/cc668225(v=vs.100))|  
-|Windows Forms|[Practical Tips for Boosting the Performance of Windows Forms Apps](https://msdn.microsoft.com/magazine/cc163630.aspx)|  
+|Windows Forms|[Winning Forms: Practical Tips for Boosting the Performance of Windows Forms Apps](https://web.archive.org/web/20060411224813/https://msdn.microsoft.com/msdnmag/issues/06/03/WindowsFormsPerformance/)|  
   
 ## Related Topics  
   

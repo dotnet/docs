@@ -136,7 +136,7 @@
 ## Remarks  
  This constructor creates an instance that does not provide a Unicode byte order mark and does not throw an exception when an invalid encoding is detected.  
   
-> [!NOTE]
+> [!CAUTION]
 >  For security reasons, we recommend that you enable error detection by calling a constructor with a `throwOnInvalidBytes` parameter and setting its value to `true`.  
   
    
@@ -192,7 +192,7 @@
 ## Remarks  
  This constructor creates an instance that does not throw an exception when an invalid encoding is detected.  
   
-> [!NOTE]
+> [!CAUTION]
 >  For security reasons, you should enable error detection by calling a constructor that includes a `throwOnInvalidBytes` parameter and setting its value to `true`.  
   
  The `encoderShouldEmitUTF8Identifier` parameter controls the operation of the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method. If `true`, the method returns a byte array containing the Unicode byte order mark (BOM) in UTF-8 format.  If `false`, it returns a zero-length byte array. However, setting `encoderShouldEmitUTF8Identifier` to `true` does not cause the <xref:System.Text.UTF8Encoding.GetBytes%2A> method to prefix the BOM at the beginning of the byte array, nor does it cause the <xref:System.Text.UTF8Encoding.GetByteCount%2A> method to include the number of bytes in the BOM in the byte count.  
@@ -255,7 +255,7 @@
   
  If `throwOnInvalidBytes` is `true`, a method that detects an invalid byte sequence throws an <xref:System.ArgumentException?displayProperty=nameWithType> exception. Otherwise, the method does not throw an exception, and the invalid sequence is ignored.  
   
-> [!NOTE]
+> [!CAUTION]
 >  For security reasons, you should enable error detection by calling a constructor that includes a `throwOnInvalidBytes` parameter and setting that parameter to `true`.  
   
    
@@ -1678,10 +1678,8 @@
   
  For more information on byte order and the byte order mark, see The Unicode Standard at the [Unicode home page](https://go.microsoft.com/fwlink/?LinkId=37123).  
   
-> [!CAUTION]
->  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix the beginning of a stream of encoded bytes with a preamble. Note that the <xref:System.Text.UTF8Encoding.GetBytes%2A> method does not prepend a BOM to a sequence of encoded bytes; supplying a BOM at the beginning of an appropriate byte stream is the developer's responsibility.  
-  
-   
+> [!IMPORTANT]
+>  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix the beginning of a stream of encoded bytes with a preamble. Note that the <xref:System.Text.UTF8Encoding.GetBytes%2A> method does not prepend a BOM to a sequence of encoded bytes; supplying a BOM at the beginning of an appropriate byte stream is the developer's responsibility.
   
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method to return the Unicode byte order mark encoded in UTF-8 format. Notice that the default constructor for <xref:System.Text.UTF8Encoding> does not provide a preamble.  

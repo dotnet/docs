@@ -58,7 +58,7 @@ This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla
   
  The following text displays superscripts for the Palatino Linotype font.  
   
- ![Text using OpenType superscripts](../../../../docs/framework/wpf/advanced/media/opentypefont14.gif "opentypefont14")  
+ ![Text using OpenType superscripts](../../../../docs/framework/wpf/advanced/media/opentype-font-features/opentype-superscripts.gif "Text using OpenType superscripts")  
 Text using OpenType superscripts  
   
  The following markup example shows how to define superscripts for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
@@ -67,7 +67,7 @@ Text using OpenType superscripts
   
  The following text displays subscripts for the Palatino Linotype font.  
   
- ![Text using OpenType subscripts](../../../../docs/framework/wpf/advanced/media/opentypefont15.gif "opentypefont15")  
+ ![Text using OpenType subscripts](../../../../docs/framework/wpf/advanced/media/opentype-font-features/opentype-subscripts.gif "Text using OpenType subscripts")  
 Text using OpenType subscripts  
   
  The following markup example shows how to define subscripts for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
@@ -77,7 +77,7 @@ Text using OpenType subscripts
 ### Decorative Uses of Superscripts and Subscripts  
  You can also use superscripts and subscripts to create decorative effects of mixed case text. The following text displays superscript and subscript text for the Palatino Linotype font. Note that the capitals are not affected.  
   
- ![Text using OpenType superscripts and subscripts](../../../../docs/framework/wpf/advanced/media/opentypefont16.gif "opentypefont16")  
+ ![Text using OpenType superscripts and subscripts](../../../../docs/framework/wpf/advanced/media/opentype-font-features/opentype-superscripts-subscripts.gif "Text using OpenType superscripts and subscripts")  
 Text using OpenType superscripts and subscripts  
   
  The following markup example shows how to define superscripts and subscripts for a font, using properties of the <xref:System.Windows.Documents.Typography> object.  

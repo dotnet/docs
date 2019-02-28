@@ -1,9 +1,9 @@
 ---
-title: "<message> of <ws2007HttpBinding>"
+title: "&lt;message&gt; of &lt;ws2007HttpBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 9ffd8db6-84a8-4b38-a9fe-2cb1a87a1c97
 ---
-# \<message> of \<ws2007HttpBinding>
+# &lt;message&gt; of &lt;ws2007HttpBinding&gt;
 Defines settings for message-level security of the [\<ws2007HttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) element.  
   
  \<system.ServiceModel>  

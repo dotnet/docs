@@ -26,7 +26,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
   
 |Option|Meaning|  
 |------------|-------------|  
-|Preview|The compiler accepts all valid language syntax from the latest preview version that it can support.|
+|preview|The compiler accepts all valid language syntax from the latest preview version that it can support.|
 |latest|The compiler accepts all valid language syntax from the latest version (including minor releases) that it can support.|
 |latestMajor|The compiler accepts all valid language syntax from the latest major version that it can support.|
 |8.0|The compiler accepts only syntax that is included in C# 8.0 or lower <sup id="TCS80">[CS80](#FCS80)</sup>|

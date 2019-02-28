@@ -172,36 +172,34 @@ However, if the era changes, the intent of this code becomes ambiguous. Is the d
 
 - Instantiate the date and time value using the default <xref:System.Globalization.GregorianCalendar> class. You can then use the Japanese calendar or the Japanese Lunisolar calendar for the string representation of dates, as the following example shows.
 
-[!code-csharp[Insantiating a Gregorian date](~/samples/snippets/standard/datetime/calendars/gregorian/cs/program.cs)]
-[!code-vb[Instantiating a Gregorian date](~/samples/snippets/standard/datetime/calendars/gregorian/vb/program.vb)]
+   [!code-csharp[Insantiating a Gregorian date](~/samples/snippets/standard/datetime/calendars/gregorian/cs/program.cs)]
+   [!code-vb[Instantiating a Gregorian date](~/samples/snippets/standard/datetime/calendars/gregorian/vb/program.vb)]
 
+- Call a date and time method that explicitly specifies an era. This includes the following methods:
 
+   - The <xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)> method of the <xref:System.Globalization.JapaneseCalendar> or <xref:System.Globalization.JapaneseLunisolarCalendar> class.
 
-, you should always call a date and time method that explicitly specifies an era. This includes the following methods:
+   - A <xref:System.DateTime> or <xref:System.DateTimeOffset> parsing method, such as <xref:System.DateTime.Parse>, <xref:System.DateTime.TryParse>, <xref:System.DateTime.ParseExact>, or <xref:System.DateTime.TryParseExact>, that includes the string to be parsed and optionally a <xref:System.Globalization.DateTimeStyles> argument if the current culture is Japanese-Japan ("ja-JP") and that culture's calendar is the <xref:System.Globalization.JapaneseCalendar>. The string to be parsed must include the era.
 
-- The <xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)> method of the <xref:System.Globalization.JapaneseCalendar> or <xref:System.Globalization.JapaneseLunisolarCalendar> class.
+   - A <xref:System.DateTime> or <xref:System.DateTimeOffset> parsing method that includes a `provider` parameter of type <xref:System.Globalization.IFormatProvider>. `provider` must be either a <xref:System.Globalization.CultureInfo> object that represents the Japanese-Japan ("ja-JP") culture whose current calendar is <xref:System.Globalization.JapaneseCalendar> or a <xref:System.Globalization.DateTimeFormatInfo> object whose <xref:System.Globalization.DateTimeFormatInfo.Calendar> property is <xref:System.Globalization.JapaneseCalendar>. The string to be parsed must include the era.
 
-- A <xref:System.DateTime> or <xref:System.DateTimeOffset> parsing method, such as <xref:System.DateTime.Parse>, <xref:System.DateTime.TryParse>, <xref:System.DateTime.ParseExact>, or <xref:System.DateTime.TryParseExact>, that includes the string to be parsed and optionally a <xref:System.Globalization.DateTimeStyles> argument if the current culture is Japanese-Japan ("ja-JP") and that culture's calendar is the <xref:System.Globalization.JapaneseCalendar>. The string to be parsed must include the era.
+   The following example uses three of these methods to instantiate a date and time in the Meiji era, which began on September 8, 1868, and ended on July 29, 1912. 
 
-- A <xref:System.DateTime> or <xref:System.DateTimeOffset> parsing method that includes a `provider` parameter of type <xref:System.Globalization.IFormatProvider>. `provider` must be either a <xref:System.Globalization.CultureInfo> object that represents the Japanese-Japan ("ja-JP") culture whose current calendar is <xref:System.Globalization.JapaneseCalendar> or a <xref:System.Globalization.DateTimeFormatInfo> object whose <xref:System.Globalization.DateTimeFormatInfo.Calendar> property is <xref:System.Globalization.JapaneseCalendar>. The string to be parsed must include the era.
+   [!code-csharp[A date in a specified era](~/samples/snippets/standard/datetime/calendars/specify-era/cs/program.cs)]
+   [!code-vb[A date in a specified era](~/samples/snippets/standard/datetime/calendars/specify-era/vb/program.vb)]
 
 > [!TIP]
-> When working with calendars that support multiple eras, *always* specify the era when you instantiate a date and time based on that calendar.
+> When working with calendars that support multiple eras, *always* use the Gregorian date to instantiate a date, or specify the era when you instantiate a date and time based on that calendar.
 
-The following example uses three of these methods to instantiate a date and time in the Meiji era, which began on September 8, 1868, and ended on July 29, 1912. 
-
-[!code-csharp[A date in a specified era](~/samples/snippets/standard/datetime/calendars/specify-era/cs/program.cs)]
-[!code-vb[A date in a specified era](~/samples/snippets/standard/datetime/calendars/specify-era/vb/program.vb)]
-
-In specifying a era to the <xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)> method, you provide the index of the era in the calendar's <xref:System.Globalization.Calendar.Eras> property. For calendars whose eras are subject to change, however, these indexes are not constant values; the current era is at index 0, and the oldest era is at index `Eras.Length - 1`. You can retrieve the appropriate era index as follows:
+In specifying a era to the <xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)> method, you provide the index of the era in the calendar's <xref:System.Globalization.Calendar.Eras> property. For calendars whose eras are subject to change, however, these indexes are not constant values; the current era is at index 0, and the oldest era is at index `Eras.Length - 1`. When a new era is added to a calendar, the indexes of the previous eras increase by one. You can supply the appropriate era index as follows:
 
 - For dates in the current era, always use the calendar's <xref:System.Globalization.Calendar.CurrentEra> property.
 
-- For dates in a specified era, use the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A?displayProperty=nameWithType> method to retrieve the index that corresponds to a specified era name. This requires that the <xref:System.Globalization.JapaneseCalendar> be the current calendar of the <xref:System.Globalization.CultureInfo> object that represents the ja-JP culture.  The previous example illustrates this approach. 
+- For dates in a specified era, use the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A?displayProperty=nameWithType> method to retrieve the index that corresponds to a specified era name. This requires that the <xref:System.Globalization.JapaneseCalendar> be the current calendar of the <xref:System.Globalization.CultureInfo> object that represents the ja-JP culture.  (This technique works for the <xref:System.Globalization.JapaneseLunisolarCalendar> as well, since it supports the same eras as the <xref:System.Globalization.JapaneseCalendar>.) The previous example illustrates this approach.
 
 ### Calendars, eras, and date ranges
 
-Very much like individual calendars have supported date ranges, eras in the  <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes also have supporteed ranges. When you instantiate a date using these calendars, you either explicitly or implicitly specify the era to which the date applies. By default, if you instantiate date that is outside the range of a particular era, the date flows into the following era. For example,  
+Very much like individual calendars have supported date ranges, eras in the  <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes also have supporteed ranges. However, the .NET Framework uses relaxed ranged checking by default. That is, if a date is outside of the range of   
 
 ### Representing dates in calendars with multiple eras
 

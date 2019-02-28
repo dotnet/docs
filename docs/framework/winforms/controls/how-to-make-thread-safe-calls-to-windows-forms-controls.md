@@ -24,15 +24,15 @@ There are two ways to safely call a Windows Forms control from a thread that did
 
 ## Unsafe cross-thread calls
 
-It's unsafe to call a control directly from a thread that didn't create it. The following code snippet illustrates an unsafe call to the <xref:System.Windows.Forms.TextBox?displayProperty=nameWithType> control. The `Button1_Click` event handler creates a new `UnsafeText` thread, which sets the main thread's <xref:System.Windows.Forms.TextBox> <xref:System.Windows.Forms.Control.Text%2A> property directly. 
+It's unsafe to call a control directly from a thread that didn't create it. The following code snippet illustrates an unsafe call to the <xref:System.Windows.Forms.TextBox?displayProperty=nameWithType> control. The `Button1_Click` event handler creates a new `UnsafeText` thread, which sets the main thread's <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> property directly. 
 
 ```csharp
 private void button1_Click(object sender, EventArgs e)
 {
-    thread2 = new Thread(new ThreadStart(UnsafeText));
+    thread2 = new Thread(new ThreadStart(WriteTextUnsafe));
     thread2.Start();
 }
-private void UnsafeText()
+private void WriteTextUnsafe()
 {
     textBox1.Text = "This text was set unsafely.";
 }
@@ -40,11 +40,11 @@ private void UnsafeText()
 
 ```vb
 Private Sub Button1_Click(ByVal sender As Object, e As EventArgs) Handles Button1.Click
-    Thread2 = New Thread(New ThreadStart(AddressOf UnsafeText))
+    Thread2 = New Thread(New ThreadStart(AddressOf WriteTextUnsafe))
     Thread2.Start()
 End Sub
 
-Private Sub UnsafeText()
+Private Sub WriteTextUnsafe()
     TextBox1.Text = "This text was set unsafely."
 End Sub
 ```
@@ -59,7 +59,7 @@ The following code examples demonstrate two ways to safely call a Windows Forms 
 
 In both examples, the background thread sleeps for one second to simulate work being done in that thread. 
 
-You can build and run these examples as .NET Framework apps from the C# or Visual Basic command line. For more information, see [Command-line building with csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Build from the command line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md). 
+You can build and run these examples as .NET Framework apps from the C# or Visual Basic command line. For more information, see [Command-line building with csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Build from the command line (Visual Basic)](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md). 
 
 Starting with .NET Core 3.0, you can also build and run the examples as Windows .NET Core apps from a folder that has a .NET Core Windows Forms *\<folder name>.csproj* project file. 
 
@@ -67,7 +67,7 @@ Starting with .NET Core 3.0, you can also build and run the examples as Windows 
 
 The following example demonstrates a pattern for ensuring thread-safe calls to a Windows Forms control. It queries the <xref:System.Windows.Forms.Control.InvokeRequired%2A?displayProperty=fullName> property, which compares the control's creating thread ID to the calling thread ID. If the thread IDs are the same, it calls the control directly. If the thread IDs are different, it calls the <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=nameWithType> method with a delegate from the main thread, which makes the actual call to the control.
 
-The `SafeCallDelegate` enables setting the <xref:System.Windows.Forms.TextBox> <xref:System.Windows.Forms.Control.Text%2A> property, and the `SafeText` method queries <xref:System.Windows.Forms.Control.InvokeRequired%2A>. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `true`, `SafeText` passes the `SafeCallDelegate` to the <xref:System.Windows.Forms.Control.Invoke%2A> method to make the actual call to the control. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `false`, `SafeText` sets the <xref:System.Windows.Forms.TextBox> <xref:System.Windows.Forms.Control.Text%2A> directly. The `Button1_Click` event handler creates the new thread and runs the `SafeText` method. 
+The `SafeCallDelegate` enables setting the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.TextBox.Text%2A> property, and the `SafeText` method queries <xref:System.Windows.Forms.Control.InvokeRequired%2A>. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `true`, `SafeText` passes the `SafeCallDelegate` to the <xref:System.Windows.Forms.Control.Invoke%2A> method to make the actual call to the control. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `false`, `SafeText` sets the <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> directly. The `Button1_Click` event handler creates the new thread and runs the `SafeText` method. 
 
 ```csharp
 using System;
@@ -106,6 +106,7 @@ public class InvokeThreadSafeForm : Form
         Controls.Add(button1);
         Controls.Add(textBox1);
     }
+
     private void Button1_Click(object sender, EventArgs e)
     {
         thread2 = new Thread(new ThreadStart(SetText));
@@ -125,6 +126,7 @@ public class InvokeThreadSafeForm : Form
             textBox1.Text = text;
         }
     }
+
     private void SetText()
     {
         SafeText("This text was set safely.");
@@ -150,7 +152,7 @@ Public Class InvokeThreadSafeForm : Inherits Form
     Dim TextBox1 As TextBox
     Dim Thread2 as Thread = Nothing
 
-    Delegate Sub SafeCallDelegate([text] As String)
+    Delegate Sub SafeCallDelegate(text As String)
 
     Private Sub New()
         Button1 = New Button()
@@ -173,12 +175,12 @@ Public Class InvokeThreadSafeForm : Inherits Form
         Thread.Sleep(1000)
     End Sub
 
-    Private Sub SafeText([text] As String)
+    Private Sub SafeText(text As String)
         If TextBox1.InvokeRequired Then
             Dim d As New SafeCallDelegate(AddressOf SetText)
-            Invoke(d, New Object() {[text]})
+            Invoke(d, New Object() {text})
         Else
-            TextBox1.Text = [text]
+            TextBox1.Text = text
         End If
     End Sub
 

@@ -106,7 +106,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 -   Use the { } syntax when you declare and initialize arrays of basic data types. For example, use the following syntax:  
   
-     [!code-vb[VbVbalrGuidelines#12](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_10.vb)]  
+     [!code-vb[VbVbalrGuidelines#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#12)]  
   
      Do not use the following syntax:  
   

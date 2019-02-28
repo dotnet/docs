@@ -31,7 +31,7 @@ Properties can be declared on an [interface](../../../csharp/language-reference/
   
  implements the `Name` property on the `ICitizen` interface.  
   
- [!code-csharp[csProgGuideProperties#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/interface-properties_4.cs)]  
+ [!code-csharp[csProgGuideProperties#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#15)]  
   
   **`210 Hazem Abolrous`**    
 ## Sample Output  

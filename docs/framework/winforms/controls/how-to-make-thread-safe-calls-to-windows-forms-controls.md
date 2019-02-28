@@ -27,7 +27,7 @@ There are two ways to safely call a Windows Forms control from a thread that did
 It's unsafe to call a control directly from a thread that didn't create it. The following code snippet illustrates an unsafe call to the <xref:System.Windows.Forms.TextBox?displayProperty=nameWithType> control. The `Button1_Click` event handler creates a new `WriteTextUnsafe` thread, which sets the main thread's <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> property directly. 
 
 ```csharp
-private void button1_Click(object sender, EventArgs e)
+private void Button1_Click(object sender, EventArgs e)
 {
     thread2 = new Thread(new ThreadStart(WriteTextUnsafe));
     thread2.Start();

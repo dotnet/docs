@@ -14,4 +14,3 @@ The key cannot be deleted because it has subkeys.
 - <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%2A>
 - [How to: Delete a Registry Key](../../visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)
 - [Reading from and Writing to the Registry (Visual Basic)](../developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
-- [Troubleshooting: Manipulating the Registry (Visual Basic)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zs7t1t16(v=vs.100))

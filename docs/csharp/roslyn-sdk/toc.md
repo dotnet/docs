@@ -41,6 +41,6 @@
 <!--
 ## How to guides
 -->
-<!-- Look at the samples, and determinine which 
+<!-- Look at the samples, and determine which 
     are "How To" vs. Samples. -->
     

@@ -199,7 +199,12 @@ In specifying a era to the <xref:System.Globalization.Calendar.ToDateTime(System
 
 ### Calendars, eras, and date ranges
 
-Very much like individual calendars have supported date ranges, eras in the  <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes also have supporteed ranges. However, the .NET Framework uses relaxed ranged checking by default. That is, if a date is outside of the range of   
+Very much like individual calendars have supported date ranges, eras in the  <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes also have supported ranges. Previously, .NET used strict era range checks to ensure that a era-specific date was within the range of that era. An out-of-range date would throw a the .NET Framework uses relaxed ranged checking by default. That is, if a date is outside of the range of the specified era, the method throws an <xref:System.ArgumentOutOfRangeException>. Updates to all versions of the .NET Framework introduced relaxed era range checks; the attempt to instantiate an era-specific date that is outside the range of the specified era "overflow" into the following era, and no exception is thrown.
+
+The following example attempts to instantiate a date in the 65th year of the Showa era, which began on December 25, 1926 and ended on January 7, 1989. This date corresponds to January 9, 1990, which is outside the range of the Showa era in the <xref:System.Globalization.JapaneseCalendar>. As the output from the example illustrates, the date displayed by the example is January 9, 1990, in the second year of the Heisei era.
+
+   [!code-csharp[Relaxed range checks](~/samples/snippets/standard/datetime/calendars/relaxed-range/cs/program.cs)]
+   [!code-vb[Relaxed range checks](~/samples/snippets/standard/datetime/calendars/relaxed-range/vb/program.vb)]
 
 ### Representing dates in calendars with multiple eras
 

@@ -159,6 +159,8 @@ You create `Transformers` in ML.NET by creating `Estimators`. `Estimators` take 
 
 `MatrixFactorization`, the recommendation training algorithm you will use for training your model, is an an example of an `Estimator`.
 
+To learn more in detail about these Transformers and Estimators, refer to [ML.NET High-Level Concepts]().
+
 Build an `Estimator` with the following steps:
 
 1. First, define the data transformations:
@@ -205,7 +207,6 @@ E.g. if User 1 and User 2 rate movies similarly, then User 2 is more likely to e
 | User 1 | Watched and liked movie | Watched and liked movie | Watched and liked movie |
 | User 2 | Watched and liked movie | Watched and liked movie | Has not watched -- RECOMMEND movie |
 
-To learn more in detail about these Transformers and Estimators, refer to *ML.NET High-Level Concepts*.
 
 ## Evaluate your model
 

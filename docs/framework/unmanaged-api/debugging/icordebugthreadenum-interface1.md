@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugThreadEnum Interface1"
+title: "ICorDebugThreadEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugThreadEnum"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugThreadEnum Interface1
+# ICorDebugThreadEnum Interface
 Implements ICorDebugEnum methods and enumerates ICorDebugThread arrays.  
   
 ## Methods  

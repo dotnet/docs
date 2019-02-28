@@ -22,11 +22,11 @@ As you read the code examples, you often encounter the comment symbol (`'`). Thi
   
  Comments can follow a statement on the same line, or occupy an entire line. Both are illustrated in the following code.  
   
- [!code-vb[VbVbcnConventions#16](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/comments-in-code_1.vb)]  
+ [!code-vb[VbVbcnConventions#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#16)]  
   
  If your comment requires more than one line, use the comment symbol on each line, as the following example illustrates.  
   
- [!code-vb[VbVbcnConventions#17](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/comments-in-code_2.vb)]  
+ [!code-vb[VbVbcnConventions#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#17)]  
   
 ## Commenting Guidelines  
  The following table provides general guidelines for what types of comments can precede a section of code. These are suggestions; Visual Basic does not enforce rules for adding comments. Write what works best, both for you and for anyone else who reads your code.  

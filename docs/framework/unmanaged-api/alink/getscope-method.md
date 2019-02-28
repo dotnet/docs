@@ -1,5 +1,5 @@
 ---
-title: "GetScope Method1"
+title: "GetScope Method"
 ms.date: "03/30/2017"
 api_name: 
   - "IALink.GetScope"
@@ -17,7 +17,7 @@ topic_type:
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# GetScope Method1
+# GetScope Method
 Gets an import scope.  
   
 ## Syntax  

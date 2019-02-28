@@ -264,10 +264,10 @@ To enable or re-enable TLS 1.2 and/or TLS 1.1 on a system that supports them, se
 
 | **OS** | **TLS 1.2 support** |
 | --- | --- |
-| Windows 10</br>Windows Server 2016 | Supported, and enabled by default. |
-| Windows 8.1</br>Windows Server 2012 R2 | Supported, and enabled by default. |
-| Windows 8.0</br>Windows Server 2012 | Supported, and enabled by default. |
-| Windows 7 SP1</br>Windows Server 2008 R2 SP1 | Supported, but not enabled by default. See the [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings) web page for details on how to enable TLS 1.2. |
+| Windows 10<br>Windows Server 2016 | Supported, and enabled by default. |
+| Windows 8.1<br>Windows Server 2012 R2 | Supported, and enabled by default. |
+| Windows 8.0<br>Windows Server 2012 | Supported, and enabled by default. |
+| Windows 7 SP1<br>Windows Server 2008 R2 SP1 | Supported, but not enabled by default. See the [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings) web page for details on how to enable TLS 1.2. |
 | Windows Server 2008 | Support for TLS 1.2 and TLS 1.1 requires an update. See [Update to add support for TLS 1.1 and TLS 1.2 in Windows Server 2008 SP2](https://support.microsoft.com/help/4019276/update-to-add-support-for-tls-1-1-and-tls-1-2-in-windows-server-2008-s). |
 | Windows Vista | Not supported. |
 
@@ -279,10 +279,10 @@ This table shows the OS update you'll need to support TLS 1.2 with .NET Framewor
 
 | **OS** | **Minimum update needed to support TLS 1.2 with .NET Framework 3.5** |
 | --- | --- |
-| Windows 10</br>Windows Server 2016 | [Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016](https://support.microsoft.com/help/3156421/cumulative-update-for-windows-10-version-1511-and-windows-server-2016) |
-| Windows 8.1</br>Windows Server 2012 R2 | [Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework) |
-| Windows 8.0</br>Windows Server 2012 | [Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012](https://support.microsoft.com/help/3154519/support-for-tls-system-default-versions-included-in-the--net-framework) |
-| Windows 7 SP1</br>Windows Server 2008 R2 SP1 | [Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the--net-framework) |
+| Windows 10<br>Windows Server 2016 | [Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016](https://support.microsoft.com/help/3156421/cumulative-update-for-windows-10-version-1511-and-windows-server-2016) |
+| Windows 8.1<br>Windows Server 2012 R2 | [Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework) |
+| Windows 8.0<br>Windows Server 2012 | [Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012](https://support.microsoft.com/help/3154519/support-for-tls-system-default-versions-included-in-the--net-framework) |
+| Windows 7 SP1<br>Windows Server 2008 R2 SP1 | [Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the--net-framework) |
 | Windows Server 2008 | [Support for TLS System Default Versions included in the .NET Framework 2.0 SP2 on Windows Vista SP2 and Server 2008 SP2](https://support.microsoft.com/help/3154517/support-for-tls-system-default-versions-included-in-the--net-framework) |
 | Windows Vista | Not supported |
 

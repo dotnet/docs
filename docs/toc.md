@@ -27,12 +27,12 @@
 ### [Base Types](standard/base-types/)
 ## [.NET Class libraries](standard/class-libraries.md)
 ## [Analyzers](standard/analyzers/index.md)
-### [API Analyzer](standard/analyzers/api-analyzer.md) 
+### [API Analyzer](standard/analyzers/api-analyzer.md)
 ### [Portability Analyzer](standard/analyzers/portability-analyzer.md)
 ### [Framework Analyzer](standard/analyzers/framework-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions/)
 ## [Assemblies in .NET](standard/assembly/index.md)
-### [.NET Assembly File Format](standard/assembly/file-format.md) 
+### [.NET Assembly File Format](standard/assembly/file-format.md)
 ## [Garbage Collection](standard/garbage-collection/)
 ## [Generic types](standard/generics.md)
 ## [Delegates and lambdas](standard/delegates-lambdas.md)
@@ -93,7 +93,6 @@
 ### [What's new in .NET Core 2.1](core/whats-new/dotnet-core-2-1.md)
 ### [What's new in .NET Core 2.0](core/whats-new/dotnet-core-2-0.md)
 ## [Tutorials](core/tutorials/index.md)
-### [Building a complete .NET Core solution on Windows, using Visual Studio 2017](core/tutorials/using-on-windows-full-solution.md)
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
 ### [Getting started with .NET Core on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs.md)
 ### [Building a complete .NET Core solution on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs-full-solution.md)
@@ -101,7 +100,6 @@
 ### [Organizing and testing projects with the .NET Core command line](core/tutorials/testing-with-cli.md)
 ### [Developing Libraries with Cross Platform Tools](core/tutorials/libraries.md)
 ### [Developing ASP.NET Core applications](core/tutorials/aspnet-core.md)
-### [How to Manage Package Dependency Versions for .NET Core 1.0](core/tutorials/managing-package-dependency-versions.md)
 ### [Hosting .NET Core from native code](core/tutorials/netcore-hosting.md)
 ### [Create a custom template for dotnet new](core/tutorials/create-custom-template.md)
 ## [Packages, Metapackages and Frameworks](core/packages.md)
@@ -270,7 +268,9 @@
 ## [Tour of C#](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
+<!-- markdownlint-disable MD003 -->
 ## What's new in C#
+<!-- markdownlint-enable MD003 -->
 ### [C# 8.0 - Preview 2](csharp/whats-new/csharp-8.md)
 ### [C# 7.3](csharp/whats-new/csharp-7-3.md)
 ### [C# 7.2](csharp/whats-new/csharp-7-2.md)
@@ -522,9 +522,11 @@
 #### [Customizing Which Objects are Available in My](visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
 
 ## [Programming Concepts](visual-basic/programming-guide/concepts/index.md)
-### [Assemblies in .NET](standard/assembly/index.md)
 ### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/index.md)
 ### [Attributes](visual-basic/programming-guide/concepts/attributes/index.md)
+### [Caller Information](visual-basic/programming-guide/concepts/caller-information.md)
+### [Collections](visual-basic/programming-guide/concepts/collections.md)
+### [Covariance and Contravariance](visual-basic/programming-guide/concepts/covariance-contravariance/index.md)
 ### [Expression Trees](visual-basic/programming-guide/concepts/expression-trees/index.md)
 ### [Iterators](visual-basic/programming-guide/concepts/iterators.md)
 ### [Language-Integrated Query (LINQ)](visual-basic/programming-guide/concepts/linq/index.md)
@@ -1199,8 +1201,8 @@
 ### [Iris flowers (clustering)](machine-learning/tutorials/iris-clustering.md)
 ## [How-to guides](machine-learning/how-to-guides/index.md)
 ### Prepare data
-#### [Apply categorical feature engineering ](machine-learning/how-to-guides/train-model-categorical-ml-net.md)
-#### [Apply textual feature engineering ](machine-learning/how-to-guides/train-model-textual-ml-net.md)
+#### [Apply categorical feature engineering](machine-learning/how-to-guides/train-model-categorical-ml-net.md)
+#### [Apply textual feature engineering](machine-learning/how-to-guides/train-model-textual-ml-net.md)
 #### [Load data with many columns](machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md)
 #### [Load data from multiple files](machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md)
 #### [Load data from text file](machine-learning/how-to-guides/load-data-from-text-file-ml-net.MD)
@@ -1211,7 +1213,7 @@
 #### [Inspect intermediate pipeline data values](machine-learning/how-to-guides/inspect-intermediate-data-ml-net.md)
 #### [Train regression model](machine-learning/how-to-guides/train-regression-model-ml-net.md)
 #### [Determine model feature importance with PFI](machine-learning/how-to-guides/determine-global-feature-importance-in-model.md)
-### Use the trained model  
+### Use the trained model
 #### [One prediction at a time with PredictionEngine](machine-learning/how-to-guides/single-predict-model-ml-net.md)
 #### [Operationalize a trained model](machine-learning/how-to-guides/consuming-model-ml-net.md)
 ### Infer.NET

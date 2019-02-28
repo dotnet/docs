@@ -72,7 +72,7 @@ The statements within a conditional compilation block must be complete logical s
 ## Example
  This example uses the `#If...Then...#Else` construct to determine whether to compile certain statements.  
   
- [!code-vb[VbVbalrConditionalComp#1](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/if-then-else-directives_1.vb)]  
+ [!code-vb[VbVbalrConditionalComp#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#1)]  
   
 ## See also
 - [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)

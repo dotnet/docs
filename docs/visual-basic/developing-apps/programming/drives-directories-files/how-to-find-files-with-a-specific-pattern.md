@@ -19,7 +19,7 @@ The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A> method r
   
 -   Use the `GetFiles` method, supplying the name and path of the directory you want to search and specifying the pattern. The following example returns all files with the extension `.dll` in the directory and adds them to `ListBox1`.  
   
-     [!code-vb[VbFileIOMisc#4](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-find-files-with-a-specific-pattern_1.vb)]  
+     [!code-vb[VbFileIOMisc#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/Class1.vb#4)]  
   
 ## .NET Framework Security  
  The following conditions may cause an exception:  

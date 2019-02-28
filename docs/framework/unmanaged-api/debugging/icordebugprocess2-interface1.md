@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugProcess2 Interface1"
+title: "ICorDebugProcess2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugProcess2"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugProcess2 Interface1
+# ICorDebugProcess2 Interface
 A logical extension of the ICorDebugProcess interface, which represents a process running managed code.  
   
 ## Methods  

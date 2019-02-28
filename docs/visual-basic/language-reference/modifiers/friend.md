@@ -34,7 +34,7 @@ Specifies that one or more declared programming elements are accessible only fro
 ## Example  
  The following class uses the `Friend` modifier to allow other programming elements within the same assembly to access certain members.  
   
- [!code-vb[VbVbalrAccessModifiers#1](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/friend_1.vb)]  
+ [!code-vb[VbVbalrAccessModifiers#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalraccessmodifiers/vb/class1.vb#1)]  
   
 ## Usage  
  You can use the `Friend` modifier in these contexts:  

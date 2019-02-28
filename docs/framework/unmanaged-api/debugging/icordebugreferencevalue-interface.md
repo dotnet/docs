@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugReferenceValue Interface1"
+title: "ICorDebugReferenceValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugReferenceValue"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugReferenceValue Interface1
+# ICorDebugReferenceValue Interface
 Provides methods that manage a value that is a reference to an object. (That is, this interface provides methods that manage a pointer.) This interface implements "ICorDebugValue".  
   
 ## Methods  

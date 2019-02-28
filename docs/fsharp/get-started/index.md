@@ -3,7 +3,7 @@ title: Get started with F#
 description: Find out how to get started with the F# programming language.
 ms.date: 12/08/2018
 ---
-# Get Started with F# #
+# Get Started with F\#
 
 You can get started with F# on your machine or online.
 

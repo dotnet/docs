@@ -38,7 +38,7 @@ variableorproperty -= expression
 ## Example  
  The following example uses the `-=` operator to subtract one `Integer` variable from another and assign the result to the latter variable.  
   
- [!code-vb[VbVbalrOperators#11](codesnippet/VisualBasic/subtraction-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#11)]  
   
 ## See also
 - [- Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-operator.md)

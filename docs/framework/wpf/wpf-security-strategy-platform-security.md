@@ -204,7 +204,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 ## See also
 - [Understanding Security in Microsoft Internet Explorer 6 in Windows XP SP2](https://www.microsoft.com/downloads/details.aspx?FamilyId=E550F940-37A0-4541-B5E2-704AB386C3ED&displaylang=en)
-- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+- [Code Access Security](../misc/code-access-security.md)
 - [Security](security-wpf.md)
 - [WPF Partial Trust Security](wpf-partial-trust-security.md)
 - [WPF Security Strategy - Security Engineering](wpf-security-strategy-security-engineering.md)

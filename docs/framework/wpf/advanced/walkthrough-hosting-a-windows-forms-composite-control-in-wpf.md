@@ -31,7 +31,7 @@ You need Visual Studio to complete this walkthrough.
 ## Implementing the Windows Forms Composite Control  
  The Windows Forms composite control used in this example is a simple data-entry form. This form takes the user's name and address and then uses a custom event to return that information to the host. The following illustration shows the rendered control.  
   
- ![Simple Windows Forms control](media/wfcontrol.gif "WFControl")  
+ ![Simple Windows Forms control](./media/wfcontrol.gif "WFControl")  
 Windows Forms composite control  
   
 ### Creating the Project  
@@ -122,7 +122,7 @@ Windows Forms composite control
 ## Implementing the WPF Host Application
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] host application uses the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control to host `MyControl1`. The application handles the `OnButtonClick` event to receive the data from the control. It also has a collection of option buttons that enable you to change some of the control's properties from the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The following illustration shows the finished application.
 
- ![A control embedded in a WPF page](media/avalonhost.gif "AvalonHost")
+ ![A control embedded in a WPF page](./media/avalonhost.gif "AvalonHost")
 The complete application, showing the control embedded in the WPF application
 
 ### Creating the Project

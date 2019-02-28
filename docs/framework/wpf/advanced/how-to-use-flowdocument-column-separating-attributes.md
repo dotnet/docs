@@ -17,4 +17,4 @@ This example shows how to use the column-separating features of a <xref:System.W
   
  The following figure shows the effects of the <xref:System.Windows.Documents.FlowDocument.ColumnGap%2A>, <xref:System.Windows.Documents.FlowDocument.ColumnRuleBrush%2A>, and <xref:System.Windows.Documents.FlowDocument.ColumnRuleWidth%2A> attributes in a rendered <xref:System.Windows.Documents.FlowDocument>.  
   
- ![Screenshot: FlowDocument Intra Column](media/flowdocumentintracolumn.png "FlowDocumentIntraColumn")
+ ![Screenshot: FlowDocument Intra Column](./media/flowdocumentintracolumn.png "FlowDocumentIntraColumn")

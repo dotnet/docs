@@ -33,7 +33,7 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
  These behaviors are illustrated by the following figure.  
   
- ![Flow between calling page and called page](media/structurednavigationoverviewfigure1.png "StructuredNavigationOverviewFigure1")  
+ ![Flow between calling page and called page](./media/structurednavigationoverviewfigure1.png "StructuredNavigationOverviewFigure1")  
   
  You can implement these behaviors by using a <xref:System.Windows.Navigation.PageFunction%601> as the called page.  
   

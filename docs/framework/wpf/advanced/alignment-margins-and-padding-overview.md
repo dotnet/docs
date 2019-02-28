@@ -21,7 +21,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
  The following illustration shows a layout scenario that utilizes several positioning properties.  
   
- ![WPF Positioning Properties Sample](media/layout-margins-padding-alignment-graphic1.PNG "layout_margins_padding_alignment_graphic1")  
+ ![WPF Positioning Properties Sample](./media/layout-margins-padding-alignment-graphic1.PNG "layout_margins_padding_alignment_graphic1")  
   
  At first glance, the <xref:System.Windows.Controls.Button> elements in this illustration may appear to be placed randomly. However, their positions are actually precisely controlled by using a combination of margins, alignments, and padding.  
   
@@ -32,7 +32,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
  The following diagram provides a close-up view of the various positioning properties that are used in the preceding sample. Subsequent sections in this topic describe in greater detail how to use each positioning property.  
   
- ![Positioning Properties with Screen Call&#45;outs](media/layout-margins-padding-alignment-graphic2.PNG "layout_margins_padding_alignment_graphic2")  
+ ![Positioning Properties with Screen Call&#45;outs](./media/layout-margins-padding-alignment-graphic2.PNG "layout_margins_padding_alignment_graphic2")  
   
 <a name="wcpsdk_layout_amp_alignment_properties"></a>   
 ## Understanding Alignment Properties  
@@ -59,7 +59,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
  The preceding code yields a layout similar to the following image. The positioning effects of each <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value are visible in the illustration.  
   
- ![HorizontalAlignment Sample](media/layout-horizontal-alignment-graphic.PNG "layout_horizontal_alignment_graphic")  
+ ![HorizontalAlignment Sample](./media/layout-horizontal-alignment-graphic.PNG "layout_horizontal_alignment_graphic")  
   
 <a name="wcpsdk_layout_amp_verticalalignment_properties"></a>   
 ### VerticalAlignment Property  
@@ -80,7 +80,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
  The preceding code yields a layout similar to the following image. The positioning effects of each <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value are visible in the illustration.  
   
- ![VerticalAlignment property sample](media/layout-vertical-alignment-graphic.PNG "layout_vertical_alignment_graphic")  
+ ![VerticalAlignment property sample](./media/layout-vertical-alignment-graphic.PNG "layout_vertical_alignment_graphic")  
   
 <a name="wcpsdk_layout_amp_margin_properties"></a>   
 ## Understanding Margin Properties  
@@ -127,7 +127,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
  When compiled, the preceding application yields a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] that looks like the following illustration. The effects of the various property values are evident in the spacing between elements, and significant property values for elements in each column are shown within <xref:System.Windows.Controls.TextBlock> elements.  
   
- ![Several positioning properties in one application](media/layout-margins-padding-aligment-graphic3.PNG "layout_margins_padding_aligment_graphic3")  
+ ![Several positioning properties in one application](./media/layout-margins-padding-aligment-graphic3.PNG "layout_margins_padding_aligment_graphic3")  
   
 <a name="wcpsdk_layout_amp_alignment_whatsnext"></a>   
 ## What's Next  

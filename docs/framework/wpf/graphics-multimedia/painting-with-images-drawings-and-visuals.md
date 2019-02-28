@@ -29,7 +29,7 @@ This topic describes how to use <xref:System.Windows.Media.ImageBrush>, <xref:Sy
   
  Like all <xref:System.Windows.Media.Brush> objects, an <xref:System.Windows.Media.ImageBrush> can be used to paint objects such as shapes, panels, controls, and text. The following illustration shows some effects that can be achieved with an <xref:System.Windows.Media.ImageBrush>.  
   
- ![ImageBrush output examples](media/wcpsdk-mmgraphics-imagebrushexamples.gif "wcpsdk_mmgraphics_imagebrushexamples")  
+ ![ImageBrush output examples](./media/wcpsdk-mmgraphics-imagebrushexamples.gif "wcpsdk_mmgraphics_imagebrushexamples")  
 Objects painted by an ImageBrush  
   
  By default, an <xref:System.Windows.Media.ImageBrush> stretches its image to completely fill the area being painted, possibly distorting the image if the painted area has a different aspect ratio than the image. You can change this behavior by changing the <xref:System.Windows.Media.TileBrush.Stretch%2A> property from its default value of <xref:System.Windows.Media.Stretch.Fill> to <xref:System.Windows.Media.Stretch.None>, <xref:System.Windows.Media.Stretch.Uniform>, or <xref:System.Windows.Media.Stretch.UniformToFill>. Because <xref:System.Windows.Media.ImageBrush> is a type of <xref:System.Windows.Media.TileBrush>, you can specify exactly how an image brush fills the output area and even create patterns. For more information about advanced <xref:System.Windows.Media.TileBrush> features, see the [TileBrush Overview](tilebrush-overview.md).  
@@ -47,7 +47,7 @@ Objects painted by an ImageBrush
 ## Paint an Area with a Drawing  
  A <xref:System.Windows.Media.DrawingBrush> enables you to paint an area with shapes, text, images, and video. Shapes inside a drawing brush may themselves be painted with a solid color, gradient, image, or even another <xref:System.Windows.Media.DrawingBrush>. The following illustration demonstrates some uses of a <xref:System.Windows.Media.DrawingBrush>.  
   
- ![DrawingBrush output examples](media/wcpsdk-mmgraphics-drawingbrushexamples.png "wcpsdk_mmgraphics_drawingbrushexamples")  
+ ![DrawingBrush output examples](./media/wcpsdk-mmgraphics-drawingbrushexamples.png "wcpsdk_mmgraphics_drawingbrushexamples")  
 Objects painted by a DrawingBrush  
   
  A <xref:System.Windows.Media.DrawingBrush> paints an area with a <xref:System.Windows.Media.Drawing> object. A <xref:System.Windows.Media.Drawing> object describes visible content, such as a shape, bitmap, video, or a line of text. Different types of drawings describe different types of content. The following is a list of the different types of drawing objects.  
@@ -105,7 +105,7 @@ Objects painted by a DrawingBrush
 ## Example: Create a Reflection  
  The preceding example showed how to create a new <xref:System.Windows.Media.Visual> for use as a background. You can also use a <xref:System.Windows.Media.VisualBrush> to display an existing visual; this capability enables you to produce interesting visual effects, such as reflections and magnification. The following example uses a <xref:System.Windows.Media.VisualBrush> to create a reflection of a <xref:System.Windows.Controls.Border> that contains several elements. The following illustration shows the output that this example produces.  
   
- ![A reflected Visual object](media/graphicsmm-visualbrush-reflection-small.jpg "graphicsmm_visualbrush_reflection_small")  
+ ![A reflected Visual object](./media/graphicsmm-visualbrush-reflection-small.jpg "graphicsmm_visualbrush_reflection_small")  
 A reflected Visual object  
   
  [!code-csharp[visualbrush_markup_snip#GraphicsMMVisualBrushReflectionExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/visualbrush_markup_snip/CSharp/ReflectionExample.cs#graphicsmmvisualbrushreflectionexamplewholepage)]
@@ -120,10 +120,10 @@ A reflected Visual object
   
  A <xref:System.Windows.Media.TileBrush> has three primary components: content, tiles, and the output area.  
   
- ![TileBrush components](media/wcpsdk-mmgraphics-defaultcontentprojection2.png "wcpsdk_mmgraphics_defaultcontentprojection2")  
+ ![TileBrush components](./media/wcpsdk-mmgraphics-defaultcontentprojection2.png "wcpsdk_mmgraphics_defaultcontentprojection2")  
 Components of a TileBrush with a single tile  
   
- ![Components of a tiled TileBrush](media/graphicsmm-tiledprojection.png "graphicsmm_tiledprojection")  
+ ![Components of a tiled TileBrush](./media/graphicsmm-tiledprojection.png "graphicsmm_tiledprojection")  
 Components of a TileBrush with multiple tiles  
   
  For more information about the tiling features of <xref:System.Windows.Media.TileBrush> objects, see the [TileBrush Overview](tilebrush-overview.md).  

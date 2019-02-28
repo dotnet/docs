@@ -80,7 +80,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
 ## Glyph Metrics  
  Each glyph defines metrics that specify how it aligns with other <xref:System.Windows.Documents.Glyphs>. The following graphic defines the various typographic qualities of two different glyph characters.  
   
- ![Diagraph of glyph measurements](media/glyph-example.png "glyph_example")  
+ ![Diagraph of glyph measurements](./media/glyph-example.png "glyph_example")  
   
 <a name="text_glyphrunovw_glyphsmarkup"></a>   
 ## Glyphs Markup  

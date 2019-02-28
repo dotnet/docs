@@ -106,7 +106,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  The compiled application yields a new [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] that looks like this.  
   
- ![A typical Canvas Element.](media/panel-intro-canvas.PNG "panel_intro_canvas")  
+ ![A typical Canvas Element.](./media/panel-intro-canvas.PNG "panel_intro_canvas")  
   
 <a name="Panels_overview_DockPanel_subsection"></a>   
 ### DockPanel  
@@ -130,7 +130,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  The compiled application yields a new [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] that looks like this.  
   
- ![A typical DockPanel scenario.](media/panel-intro-dockpanel.PNG "panel_intro_dockpanel")  
+ ![A typical DockPanel scenario.](./media/panel-intro-dockpanel.PNG "panel_intro_dockpanel")  
   
 <a name="Panels_overview_Grid_subsection"></a>   
 ### Grid  
@@ -150,7 +150,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  The compiled application yields a new [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] that looks like this.  
   
- ![A typical Grid Element.](media/avalon-run-dialog.PNG "avalon_run_dialog")  
+ ![A typical Grid Element.](./media/avalon-run-dialog.PNG "avalon_run_dialog")  
   
 <a name="Panels_overview_StackPanel_subsection"></a>   
 ### StackPanel  
@@ -168,7 +168,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  The difference in rendering behavior can be seen in this image.  
   
- ![Screenshot: StackPanel vs. DockPanel screenshot](media/layout-smiley-stackpanel.PNG "layout_smiley_stackpanel")  
+ ![Screenshot: StackPanel vs. DockPanel screenshot](./media/layout-smiley-stackpanel.PNG "layout_smiley_stackpanel")  
   
 #### Defining and Using a StackPanel  
  The following example demonstrates how to use a <xref:System.Windows.Controls.StackPanel> to create a set of vertically-positioned buttons. For horizontal positioning, set the <xref:System.Windows.Controls.StackPanel.Orientation%2A> property to <xref:System.Windows.Controls.Orientation.Horizontal>.  
@@ -178,7 +178,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  The compiled application yields a new [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] that looks like this.  
   
- ![A typical StackPanel element.](media/panel-intro-stackpanel.PNG "panel_intro_stackpanel")  
+ ![A typical StackPanel element.](./media/panel-intro-stackpanel.PNG "panel_intro_stackpanel")  
   
 <a name="Panels_overview_VirtualizingStackPanel_subsection"></a>   
 #### VirtualizingStackPanel  
@@ -203,7 +203,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  The compiled application yields a new [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] that looks like this.  
   
- ![A typical WrapPanel Element.](media/wrappanel-element.PNG "WrapPanel_Element")  
+ ![A typical WrapPanel Element.](./media/wrappanel-element.PNG "WrapPanel_Element")  
   
 <a name="Panels_nested_panel_elements"></a>   
 ## Nested Panel Elements  
@@ -218,7 +218,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  The compiled application yields a new [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] that looks like this.  
   
- ![A UI that takes advantage of nested panels.](media/nested-panels.PNG "nested_panels")  
+ ![A UI that takes advantage of nested panels.](./media/nested-panels.PNG "nested_panels")  
   
 <a name="Panels_custom_panel_elements"></a>   
 ## Custom Panel Elements  

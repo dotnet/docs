@@ -16,7 +16,7 @@ An <xref:System.Windows.Controls.Expander> allows a user to view a header and ex
   
  The following illustration provides an example of this control in its expanded position.  
   
- ![Expander example](media/expanderexample.JPG "ExpanderExample")  
+ ![Expander example](./media/expanderexample.JPG "ExpanderExample")  
 Expander control  
   
 ## In This Section  

@@ -43,7 +43,7 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
   
  The following image shows the rendered <xref:System.Windows.Shapes.Line>.  
   
- ![Line illustration](media/shape-ovw-line2.gif "shape_ovw_line2")  
+ ![Line illustration](./media/shape-ovw-line2.gif "shape_ovw_line2")  
   
  Although the <xref:System.Windows.Shapes.Line> class does provide a <xref:System.Windows.Shapes.Shape.Fill%2A> property, setting it has no effect because a <xref:System.Windows.Shapes.Line> has no area.  
   
@@ -56,7 +56,7 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
   
  The following image shows an example of a rendered <xref:System.Windows.Shapes.Ellipse>.  
   
- ![Ellipse illustration](media/shape-ovw-ellipse2.png "shape_ovw_ellipse2")  
+ ![Ellipse illustration](./media/shape-ovw-ellipse2.png "shape_ovw_ellipse2")  
   
 <a name="paths"></a>   
 ## Using Paths and Geometries  
@@ -74,7 +74,7 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
   
  The following image shows the rendered shape.  
   
- ![Path illustration](media/shape-ovw-path2.gif "shape_ovw_path2")  
+ ![Path illustration](./media/shape-ovw-path2.gif "shape_ovw_path2")  
   
  For more information about <xref:System.Windows.Media.PathGeometry> and the other <xref:System.Windows.Media.Geometry> classes, see the [Geometry Overview](geometry-overview.md).  
   
@@ -89,7 +89,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  The following image shows a rendered <xref:System.Windows.Shapes.Path>.  
   
- ![Path illustration](media/shape-ovw-path.PNG "shape_ovw_path")  
+ ![Path illustration](./media/shape-ovw-path.PNG "shape_ovw_path")  
   
  The <xref:System.Windows.Shapes.Path.Data%2A> attribute string begins with the "moveto" command, indicated by M, which establishes a start point for the path in the coordinate system of the <xref:System.Windows.Controls.Canvas>. <xref:System.Windows.Shapes.Path> data parameters are case-sensitive. The capital M indicates an absolute location for the new current point. A lowercase m would indicate relative coordinates. The first segment is a cubic Bezier curve beginning at (100,200) and ending at (400,175), drawn using the two control points (100,25) and (400,350). This segment is indicated by the C command in the <xref:System.Windows.Shapes.Path.Data%2A> attribute string. Again, the capital C indicates an absolute path; the lowercase c would indicate a relative path.  
   
@@ -116,7 +116,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  The following image shows the rendered <xref:System.Windows.Shapes.Ellipse>.  
   
- ![An ellipse](media/shape-ovw-ellipsefill.PNG "shape_ovw_ellipsefill")  
+ ![An ellipse](./media/shape-ovw-ellipsefill.PNG "shape_ovw_ellipsefill")  
   
  Alternatively, you can use property element syntax to explicitly create a <xref:System.Windows.Media.SolidColorBrush> object to paint the shape with a solid color.  
   
@@ -139,7 +139,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  The following illustration shows the rendered shape.  
   
- ![SolidColorBrush illustration](media/shape-ovw-solidcolorbrush.PNG "shape_ovw_solidcolorbrush")  
+ ![SolidColorBrush illustration](./media/shape-ovw-solidcolorbrush.PNG "shape_ovw_solidcolorbrush")  
   
  You can also paint a shape's stroke or fill with gradients, images, patterns, and more. For more information, see the [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md).  
   
@@ -204,7 +204,7 @@ myPolygon.StrokeThickness = 2;
   
  The following illustration shows the results of applying the two transforms.  
   
- ![45 degree rotations with different center points](media/wcpsdk-graphicsmm-rotatetransform45degrees.gif "wcpsdk_graphicsmm_rotatetransform45degrees")  
+ ![45 degree rotations with different center points](./media/wcpsdk-graphicsmm-rotatetransform45degrees.gif "wcpsdk_graphicsmm_rotatetransform45degrees")  
   
  In the previous examples, a single transform was applied to each shape object. To apply multiple transforms to a shape (or any other UI element), use a <xref:System.Windows.Media.TransformGroup>.  
   

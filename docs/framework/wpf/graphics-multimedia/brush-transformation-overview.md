@@ -37,13 +37,13 @@ The Brush class provides two transformation properties: <xref:System.Windows.Med
   
  The following illustration shows the output of several brushes that have been rotated by 45 degrees using the <xref:System.Windows.Media.Brush.RelativeTransform%2A> and <xref:System.Windows.Media.Brush.Transform%2A> properties.  
   
- ![RelativeTransform and Transform properties](media/graphicsmm-brushrelativetransform-transform-small.png "graphicsmm_brushrelativetransform_transform_small")  
+ ![RelativeTransform and Transform properties](./media/graphicsmm-brushrelativetransform-transform-small.png "graphicsmm_brushrelativetransform_transform_small")  
   
 <a name="relativetransformandtilebrush"></a>   
 ## Using RelativeTransform with a TileBrush  
  Because tile brushes are more complex than other brushes, applying a <xref:System.Windows.Media.Brush.RelativeTransform%2A> to one might produce unexpected results. For example, take the following image.  
   
- ![The source image](media/graphicsmm-reltransform-1-original-image.jpg "graphicsmm_reltransform_1_original_image")  
+ ![The source image](./media/graphicsmm-reltransform-1-original-image.jpg "graphicsmm_reltransform_1_original_image")  
   
  The following example uses an <xref:System.Windows.Media.ImageBrush> to paint a rectangular area with the preceding image. It applies a <xref:System.Windows.Media.RotateTransform> to the <xref:System.Windows.Media.ImageBrush> object's <xref:System.Windows.Media.Brush.RelativeTransform%2A> property, and sets its <xref:System.Windows.Media.TileBrush.Stretch%2A> property to <xref:System.Windows.Media.Stretch.UniformToFill>, which should preserve the image's aspect ratio when it is stretched to completely fill the rectangle.  
   
@@ -51,25 +51,25 @@ The Brush class provides two transformation properties: <xref:System.Windows.Med
   
  This example produces the following output:  
   
- ![The transformed output](media/graphicsmm-reltransform-6-output.png "graphicsmm_reltransform_6_output")  
+ ![The transformed output](./media/graphicsmm-reltransform-6-output.png "graphicsmm_reltransform_6_output")  
   
  Notice that the image is distorted, even though the brush's <xref:System.Windows.Media.TileBrush.Stretch%2A> was set to <xref:System.Windows.Media.Stretch.UniformToFill>. That's because the relative transform is applied after the brush's <xref:System.Windows.Media.TileBrush.Viewbox%2A> is mapped to its <xref:System.Windows.Media.TileBrush.Viewport%2A>. The following list describes each step of the process:  
   
 1.  Project the brush's contents (<xref:System.Windows.Media.TileBrush.Viewbox%2A>) onto its base tile (<xref:System.Windows.Media.TileBrush.Viewport%2A>) using the brush's <xref:System.Windows.Media.TileBrush.Stretch%2A> setting.  
   
-     ![Stretch the Viewbox to fit the Viewport](media/graphicsmm-reltransform-2-viewbox-to-viewport.png "graphicsmm_reltransform_2_viewbox_to_viewport")  
+     ![Stretch the Viewbox to fit the Viewport](./media/graphicsmm-reltransform-2-viewbox-to-viewport.png "graphicsmm_reltransform_2_viewbox_to_viewport")  
   
 2.  Project the base tile onto the 1 x 1 transformation rectangle.  
   
-     ![Map the Viewport to the transformation rectangle](media/graphicsmm-reltransform-3-output-to-transform.png "graphicsmm_reltransform_3_output_to_transform")  
+     ![Map the Viewport to the transformation rectangle](./media/graphicsmm-reltransform-3-output-to-transform.png "graphicsmm_reltransform_3_output_to_transform")  
   
 3.  Apply the <xref:System.Windows.Media.RotateTransform>.  
   
-     ![Apply the relative transform](media/graphicsmm-reltransform-4-transform-rotate.png "graphicsmm_reltransform_4_transform_rotate")  
+     ![Apply the relative transform](./media/graphicsmm-reltransform-4-transform-rotate.png "graphicsmm_reltransform_4_transform_rotate")  
   
 4.  Project the transformed base tile onto the area to paint.  
   
-     ![Project the transformed brush onto the output area](media/graphicsmm-reltransform-5-transform-to-output.png "graphicsmm_reltransform_5_transform_to_output")  
+     ![Project the transformed brush onto the output area](./media/graphicsmm-reltransform-5-transform-to-output.png "graphicsmm_reltransform_5_transform_to_output")  
   
 <a name="rotateexample"></a>   
 ## Example: Rotate an ImageBrush 45 Degrees  
@@ -87,7 +87,7 @@ The Brush class provides two transformation properties: <xref:System.Windows.Med
   
  The following illustration shows the brush without a transform, with the transform applied to the <xref:System.Windows.Media.Brush.RelativeTransform%2A> property, and with the transform applied to the <xref:System.Windows.Media.Brush.Transform%2A> property.  
   
- ![Brush RelativeTransform and Transform settings](media/wcpsdk-graphicsmm-transformandrelativetransform.png "wcpsdk_graphicsmm_transformandrelativetransform")  
+ ![Brush RelativeTransform and Transform settings](./media/wcpsdk-graphicsmm-transformandrelativetransform.png "wcpsdk_graphicsmm_transformandrelativetransform")  
   
  This example is part of a larger sample. For the complete sample, see the [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973). For more information about brushes, see the  [WPF Brushes Overview](wpf-brushes-overview.md).  
   

@@ -19,11 +19,11 @@ To put [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient
 ## A Walkthrough of Windows Presentation Framework Inside Win32 (HwndSource)  
  The following graphic shows the intended end product of this tutorial:  
   
- ![Date and Time Properties dialog box](media/interoparch06.PNG "InteropArch06")  
+ ![Date and Time Properties dialog box](./media/interoparch06.PNG "InteropArch06")  
   
  You can recreate this dialog by creating C++ [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] project in [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and using the dialog editor to create the following:  
   
- ![Date and Time Properties dialog box](media/interoparch07.PNG "InteropArch07")  
+ ![Date and Time Properties dialog box](./media/interoparch07.PNG "InteropArch07")  
   
  (You do not need to use [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] to use <xref:System.Windows.Interop.HwndSource>, and you do not need to use C++ to write [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programs, but this is a fairly typical way to do it, and lends itself well to a stepwise tutorial explanation).  
   
@@ -215,7 +215,7 @@ HWND clock = ManagedCode::GetHwnd(hDlg, point.x, point.y, width, height);
   
  The final result looks like:  
   
- ![Date and Time Properties dialog box](media/interoparch08.PNG "InteropArch08")  
+ ![Date and Time Properties dialog box](./media/interoparch08.PNG "InteropArch08")  
   
  To compare your end result to the code that produced this screenshot, see [Win32 Clock Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=160051).  
   

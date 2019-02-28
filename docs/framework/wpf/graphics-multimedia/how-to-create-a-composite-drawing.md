@@ -13,7 +13,7 @@ This example shows how to use a <xref:System.Windows.Media.DrawingGroup> to crea
 ## Example  
  The following example uses a <xref:System.Windows.Media.DrawingGroup> to create a composite drawing from the <xref:System.Windows.Media.GeometryDrawing> and <xref:System.Windows.Media.ImageDrawing> objects. The following illustration shows the output that this example produces.  
   
- ![A DrawingGroup with multiple drawings](media/graphicsmm-simple.jpg "graphicsmm_simple")  
+ ![A DrawingGroup with multiple drawings](./media/graphicsmm-simple.jpg "graphicsmm_simple")  
 A composite drawing that is created by using DrawingGroup  
   
  Note the gray border, which shows the bounds of the drawing.  
@@ -25,7 +25,7 @@ A composite drawing that is created by using DrawingGroup
   
  The following example is similar to the preceding example, except that it uses additional <xref:System.Windows.Media.DrawingGroup> objects to apply bitmap effects and an opacity mask to some of its drawings. The following illustration shows the output that this example produces.  
   
- ![A DrawingGroup with multiple drawings](media/graphicsmm-multiple.jpg "graphicsmm_multiple")  
+ ![A DrawingGroup with multiple drawings](./media/graphicsmm-multiple.jpg "graphicsmm_multiple")  
 Composite drawing that has multiple DrawingGroup objects  
   
  Note the gray border, which shows the bounds of the drawing.  

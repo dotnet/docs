@@ -16,7 +16,7 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
   
  Close button with its tooltip displayed  
   
- ![ToolTip screen shot](media/ss-ctl-tooltip.png "SS_CTL_tooltip")  
+ ![ToolTip screen shot](./media/ss-ctl-tooltip.png "SS_CTL_tooltip")  
   
 ## In This Section  
  [ToolTip Overview](tooltip-overview.md)  

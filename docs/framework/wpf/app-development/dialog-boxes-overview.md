@@ -34,7 +34,7 @@ Standalone applications typically have a main window that both displays the main
 ## Message Boxes  
  A *message box* is a dialog box that can be used to display textual information and to allow users to make decisions with buttons. The following figure shows a message box that displays textual information, asks a question, and provides the user with three buttons to answer the question.  
   
- ![Word Processor dialog box](media/dialogboxesoverviewfigure1.png "DialogBoxesOverviewFigure1")  
+ ![Word Processor dialog box](./media/dialogboxesoverviewfigure1.png "DialogBoxesOverviewFigure1")  
   
  To create a message box, you use the <xref:System.Windows.MessageBox> class. <xref:System.Windows.MessageBox> lets you configure the message box text, title, icon, and buttons, using code like the following.  
   
@@ -67,7 +67,7 @@ Standalone applications typically have a main window that both displays the main
 ### Open File Dialog  
  The open file dialog box, shown in the following figure, is used by file opening functionality to retrieve the name of a file to open.  
   
- ![Open dialog box](media/dialogboxesoverviewfigure2.png "DialogBoxesOverviewFigure2")  
+ ![Open dialog box](./media/dialogboxesoverviewfigure2.png "DialogBoxesOverviewFigure2")  
   
  The common open file dialog box is implemented as the <xref:Microsoft.Win32.OpenFileDialog> class and is located in the <xref:Microsoft.Win32> namespace. The following code shows how to create, configure, and show one, and how to process the result.  
   
@@ -83,7 +83,7 @@ Standalone applications typically have a main window that both displays the main
 ### Save File Dialog Box  
  The save file dialog box, shown in the following figure, is used by file saving functionality to retrieve the name of a file to save.  
   
- ![Save As dialog box](media/dialogboxesoverviewfigure3.png "DialogBoxesOverviewFigure3")  
+ ![Save As dialog box](./media/dialogboxesoverviewfigure3.png "DialogBoxesOverviewFigure3")  
   
  The common save file dialog box is implemented as the <xref:Microsoft.Win32.SaveFileDialog> class, and is located in the <xref:Microsoft.Win32> namespace. The following code shows how to create, configure, and show one, and how to process the result.  
   
@@ -96,7 +96,7 @@ Standalone applications typically have a main window that both displays the main
 ### Print Dialog Box  
  The print dialog box, shown in the following figure, is used by printing functionality to choose and configure the printer that a user would like to print data to.  
   
- ![Print dialog box](media/dialogboxesoverviewfigure4.png "DialogBoxesOverviewFigure4")  
+ ![Print dialog box](./media/dialogboxesoverviewfigure4.png "DialogBoxesOverviewFigure4")  
   
  The common print dialog box is implemented as the <xref:System.Windows.Controls.PrintDialog> class, and is located in the <xref:System.Windows.Controls> namespace. The following code shows how to create, configure, and show one.  
   
@@ -113,7 +113,7 @@ Standalone applications typically have a main window that both displays the main
 ### Creating a Modal Custom Dialog Box  
  This topic shows how to use <xref:System.Windows.Window> to create a typical modal dialog box implementation, using the `Margins` dialog box as an example (see [Dialog Box Sample](https://go.microsoft.com/fwlink/?LinkID=159984)). The `Margins` dialog box is shown in the following figure.  
   
- ![Margins dialog box](media/dialogboxesoverviewfigure5.png "DialogBoxesOverviewFigure5")  
+ ![Margins dialog box](./media/dialogboxesoverviewfigure5.png "DialogBoxesOverviewFigure5")  
   
 #### Configuring a Modal Dialog Box  
  The user interface for a typical dialog box includes the following:  
@@ -202,7 +202,7 @@ Standalone applications typically have a main window that both displays the main
   
  Once the validation rule is associated, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] will automatically apply it when data is entered into the bound control. When a control contains invalid data, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] will display a red border around the invalid control, as shown in the following figure.  
   
- ![Invalid left margin](media/dialogboxesoverviewfigure7.png "DialogBoxesOverviewFigure7")  
+ ![Invalid left margin](./media/dialogboxesoverviewfigure7.png "DialogBoxesOverviewFigure7")  
   
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] does not restrict a user to the invalid control until they have entered valid data. This is good behavior for a dialog box; a user should be able to freely navigate the controls in a dialog box whether or not data is valid. However, this means a user can enter invalid data and press the **OK** button. For this reason, your code also needs to validate all controls in a dialog box when the **OK** button is pressed by handling the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
@@ -271,7 +271,7 @@ Standalone applications typically have a main window that both displays the main
 ### Creating a Modeless Custom Dialog Box  
  A modeless dialog box, such as the Find Dialog Box shown in the following figure, has the same fundamental appearance as the modal dialog box.  
   
- ![Find dialog box](media/dialogboxesoverviewfigure6.PNG "DialogBoxesOverviewFigure6")  
+ ![Find dialog box](./media/dialogboxesoverviewfigure6.PNG "DialogBoxesOverviewFigure6")  
   
  However, the behavior is slightly different, as described in the following sections.  
   

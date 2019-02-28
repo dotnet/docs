@@ -23,10 +23,10 @@ ms.assetid: aa4a7b7e-d09d-44c2-8d61-310c50e08d68
   
  Painting an area with a tile brush involves three components: content, the base tile, and the output area.  
   
- ![TileBrush components](media/wcpsdk-mmgraphics-defaultcontentprojection2.png "wcpsdk_mmgraphics_defaultcontentprojection2")  
+ ![TileBrush components](./media/wcpsdk-mmgraphics-defaultcontentprojection2.png "wcpsdk_mmgraphics_defaultcontentprojection2")  
 Components of a TileBrush with a single tile  
   
- ![Components of a tiled TileBrush](media/graphicsmm-tiledprojection.png "graphicsmm_tiledprojection")  
+ ![Components of a tiled TileBrush](./media/graphicsmm-tiledprojection.png "graphicsmm_tiledprojection")  
 Components of a TileBrush with a TileMode of Tile  
   
  The output area is the area being painted, such as the <xref:System.Windows.Shapes.Shape.Fill%2A> of an <xref:System.Windows.Shapes.Ellipse> or the <xref:System.Windows.Controls.Control.Background%2A> of a <xref:System.Windows.Controls.Button>. The next sections describe the other two components of a <xref:System.Windows.Media.TileBrush>.  
@@ -57,7 +57,7 @@ Components of a TileBrush with a TileMode of Tile
   
  The following image illustrates the different <xref:System.Windows.Media.TileBrush.Stretch%2A> settings.  
   
- ![Different TileBrush Stretch settings](media/img-mmgraphics-stretchenum.jpg "img_mmgraphics_stretchenum")  
+ ![Different TileBrush Stretch settings](./media/img-mmgraphics-stretchenum.jpg "img_mmgraphics_stretchenum")  
   
  In the following example, the content of an <xref:System.Windows.Media.ImageBrush> is set so that it does not stretch to fill the output area.  
   
@@ -74,7 +74,7 @@ Components of a TileBrush with a TileMode of Tile
   
  The following illustration shows the difference in output between a <xref:System.Windows.Media.TileBrush> with relative versus absolute <xref:System.Windows.Media.TileBrush.ViewportUnits%2A>. Notice that the illustrations each show a tiled pattern; the next section describes how to specify tile pattern.  
   
- ![Absolute and Relative Viewport Units](media/absolute-and-relative-viewports.png "absolute_and_relative_viewports")  
+ ![Absolute and Relative Viewport Units](./media/absolute-and-relative-viewports.png "absolute_and_relative_viewports")  
   
  In the following example, an image is used to create a tile that has a width and height of 50%. The base tile is located at (0,0) of the output area.  
   
@@ -106,7 +106,7 @@ Components of a TileBrush with a TileMode of Tile
   
  The following image illustrates the different tiling modes.  
   
- ![Different TileBrush TileMode settings](media/img-mmgraphics-tilemodes.gif "img_mmgraphics_tilemodes")  
+ ![Different TileBrush TileMode settings](./media/img-mmgraphics-tilemodes.gif "img_mmgraphics_tilemodes")  
   
  In the following example, an image is used to paint a rectangle that is 100 pixels wide and 100 pixels tall. By setting the brush's <xref:System.Windows.Media.TileBrush.Viewport%2A> has been set to 0,0,0.25,0.25, the brush's base tile is made to be 1/4 of the output area. The brush's <xref:System.Windows.Media.TileBrush.TileMode%2A> is set to <xref:System.Windows.Media.TileMode.FlipXY>. so that it fills the rectangle with rows of tiles.  
   

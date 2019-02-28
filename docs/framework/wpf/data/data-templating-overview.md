@@ -35,7 +35,7 @@ The WPF data templating model provides you with great flexibility to define the 
 ### Without a DataTemplate  
  Without a <xref:System.Windows.DataTemplate>, our <xref:System.Windows.Controls.ListBox> currently looks like this:  
   
- ![Data templating sample screen shot](media/datatemplatingintro-fig1.png "DataTemplatingIntro_fig1")  
+ ![Data templating sample screen shot](./media/datatemplatingintro-fig1.png "DataTemplatingIntro_fig1")  
   
  What's happening is that without any specific instructions, the <xref:System.Windows.Controls.ListBox> by default calls `ToString` when trying to display the objects in the collection. Therefore, if the `Task` object overrides the `ToString` method, then the <xref:System.Windows.Controls.ListBox> displays the string representation of each source object in the underlying collection.  
   
@@ -46,7 +46,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
  Then the <xref:System.Windows.Controls.ListBox> looks like the following:  
   
- ![Data templating sample screen shot](media/datatemplatingintro-fig2.png "DataTemplatingIntro_fig2")  
+ ![Data templating sample screen shot](./media/datatemplatingintro-fig2.png "DataTemplatingIntro_fig2")  
   
  However, that is limiting and inflexible. Also, if you are binding to [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data, you wouldn't be able to override `ToString`.  
   
@@ -60,7 +60,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
  Now our <xref:System.Windows.Controls.ListBox> looks like the following:  
   
- ![Data templating sample screen shot](media/datatemplatingintro-fig3.png "DataTemplatingIntro_fig3")  
+ ![Data templating sample screen shot](./media/datatemplatingintro-fig3.png "DataTemplatingIntro_fig3")  
   
 <a name="defining_datatemplate_as_a_resource"></a>   
 ### Creating the DataTemplate as a Resource  
@@ -97,7 +97,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
  The following screenshot shows the <xref:System.Windows.Controls.ListBox> with this modified <xref:System.Windows.DataTemplate>:  
   
- ![Data templating sample screen shot](media/datatemplatingintro-fig4.png "DataTemplatingIntro_fig4")  
+ ![Data templating sample screen shot](./media/datatemplatingintro-fig4.png "DataTemplatingIntro_fig4")  
   
  We can set <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> to <xref:System.Windows.HorizontalAlignment.Stretch> on the <xref:System.Windows.Controls.ListBox> to make sure the width of the items takes up the entire space:  
   
@@ -105,7 +105,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
  With the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> property set to <xref:System.Windows.HorizontalAlignment.Stretch>, the <xref:System.Windows.Controls.ListBox> now looks like this:  
   
- ![Data templating sample screen shot](media/datatemplatingintro-fig5.png "DataTemplatingIntro_fig5")  
+ ![Data templating sample screen shot](./media/datatemplatingintro-fig5.png "DataTemplatingIntro_fig5")  
   
 <a name="DataTrigger_to_Apply_Property_Values"></a>   
 ### Use DataTriggers to Apply Property Values  
@@ -119,7 +119,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
  Our application now looks like the following. Home tasks appear with a yellow border and office tasks appear with an aqua border:  
   
- ![Data templating sample screen shot](media/datatemplatingintro-fig6.png "DataTemplatingIntro_fig6")  
+ ![Data templating sample screen shot](./media/datatemplatingintro-fig6.png "DataTemplatingIntro_fig6")  
   
  In this example the <xref:System.Windows.DataTrigger> uses a <xref:System.Windows.Setter> to set a property value. The trigger classes also have the <xref:System.Windows.TriggerBase.EnterActions%2A> and <xref:System.Windows.TriggerBase.ExitActions%2A> properties that allow you to start a set of actions such as animations. In addition, there is also a <xref:System.Windows.MultiDataTrigger> class that allows you to apply changes based on multiple data-bound property values.  
   
@@ -159,7 +159,7 @@ In the previous example, we placed the trigger within the <xref:System.Windows.D
   
  With the template selector in place, the <xref:System.Windows.Controls.ListBox> now appears as follows:  
   
- ![Data templating sample screen shot](media/datatemplatingintro-fig7.png "DataTemplatingIntro_fig7")  
+ ![Data templating sample screen shot](./media/datatemplatingintro-fig7.png "DataTemplatingIntro_fig7")  
 
 This concludes our discussion of this example. For the complete sample, see [Introduction to Data Templating Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Data%20Binding/DataTemplatingIntro).
 
@@ -171,7 +171,7 @@ This concludes our discussion of this example. For the complete sample, see [Int
   
  The following is a screenshot of the example when it is rendered:  
   
- ![ItemsControl example screenshot](media/databinding-itemscontrolproperties.png "DataBinding_ItemsControlProperties")  
+ ![ItemsControl example screenshot](./media/databinding-itemscontrolproperties.png "DataBinding_ItemsControlProperties")  
   
  Note that instead of using the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, you can use the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A>. Refer to the previous section for an example. Similarly, instead of using the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A>, you have the option to use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A>.  
   
@@ -185,7 +185,7 @@ This concludes our discussion of this example. For the complete sample, see [Int
   
  The example shows that with the use of <xref:System.Windows.HierarchicalDataTemplate>, you can easily display list data that contains other lists. The following is a screenshot of the example.  
   
- ![HierarchicalDataTemplate sample screen shot](media/databinding-hierarchicaldatatemplate.png "DataBinding_HierarchicalDataTemplate")  
+ ![HierarchicalDataTemplate sample screen shot](./media/databinding-hierarchicaldatatemplate.png "DataBinding_HierarchicalDataTemplate")  
   
 ## See also
 - [Data Binding](../advanced/optimizing-performance-data-binding.md)

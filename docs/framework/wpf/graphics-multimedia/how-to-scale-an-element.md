@@ -26,7 +26,7 @@ This example shows how to use a <xref:System.Windows.Media.ScaleTransform> to sc
   
  The following illustration shows the difference between the two <xref:System.Windows.Media.ScaleTransform> operations. The dotted line shows the size and position of the rectangle before scaling.  
   
- ![2x scales with different center points](media/wcpsdk-graphicsmm-scalecenter.gif "wcpsdk_graphicsmm_scalecenter")  
+ ![2x scales with different center points](./media/wcpsdk-graphicsmm-scalecenter.gif "wcpsdk_graphicsmm_scalecenter")  
 Two ScaleTransform operations with identical ScaleX and ScaleY values but different centers  
   
  For the complete sample, see [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252).  

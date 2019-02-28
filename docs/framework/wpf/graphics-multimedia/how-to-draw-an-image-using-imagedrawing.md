@@ -13,7 +13,7 @@ This example shows how to use an <xref:System.Windows.Media.ImageDrawing> to dra
 ## Example  
  The following example creates a composite drawing using four <xref:System.Windows.Media.ImageDrawing> objects. This example produces the following image:  
   
- ![Several DrawingImage objects](media/graphicsmm-imagedrawingexample.jpg "graphicsmm_ImageDrawingExample")  
+ ![Several DrawingImage objects](./media/graphicsmm-imagedrawingexample.jpg "graphicsmm_ImageDrawingExample")  
 Four ImageDrawing objects  
   
  [!code-csharp[DrawingMiscSnippets_snip#ImageDrawingExample](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/ImageDrawingExample.cs#imagedrawingexample)]

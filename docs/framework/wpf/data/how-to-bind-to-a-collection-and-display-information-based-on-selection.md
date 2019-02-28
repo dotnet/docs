@@ -26,7 +26,7 @@ In a simple master-detail scenario, you have a data-bound <xref:System.Windows.C
   
  The following is a screenshot of what the example produces. The <xref:System.Windows.Controls.ContentControl> shows the other properties of the person selected.  
   
- ![Binding to a collection](media/databinding-collectionbindingsample.png "DataBinding_CollectionBindingSample")  
+ ![Binding to a collection](./media/databinding-collectionbindingsample.png "DataBinding_CollectionBindingSample")  
   
  The two things to notice in this example are:  
   

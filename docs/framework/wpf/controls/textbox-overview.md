@@ -28,14 +28,14 @@ The <xref:System.Windows.Controls.TextBox> class enables you to display or edit 
 ### Real-time Spellchecking  
  You can enable real-time spellchecking in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox>. When spellchecking is turned on, a red line appears underneath any misspelled words (see picture below).  
   
- ![Textbox with spell&#45;checking](media/editing-textbox-with-spellchecking.png "Editing_TextBox_with_Spellchecking")  
+ ![Textbox with spell&#45;checking](./media/editing-textbox-with-spellchecking.png "Editing_TextBox_with_Spellchecking")  
   
  See [Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md) to learn how to enable spellchecking.  
   
 ### Context Menu  
  By default, both <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox> have a context menu that appears when a user right-clicks inside the control. The context menu allows the user to cut, copy, or paste (see picture below).  
   
- ![TextBox with context menu](media/editing-textbox-with-context-menu.png "Editing_TextBox_with_Context_Menu")  
+ ![TextBox with context menu](./media/editing-textbox-with-context-menu.png "Editing_TextBox_with_Context_Menu")  
   
  You can create your own custom context menu to override the default behavior. See [Use a Custom Context Menu with a TextBox](how-to-use-a-custom-context-menu-with-a-textbox.md) for more information.  
   

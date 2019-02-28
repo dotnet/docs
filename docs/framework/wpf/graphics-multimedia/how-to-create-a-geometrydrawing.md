@@ -19,7 +19,7 @@ This example shows how to create and display a <xref:System.Windows.Media.Geomet
   
  The following illustration shows the resulting <xref:System.Windows.Media.GeometryDrawing>.  
   
- ![A GeometryDrawing of two ellipses](media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")  
+ ![A GeometryDrawing of two ellipses](./media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")  
   
  To create more complex drawings, you can combine multiple drawing objects into a single composite drawing using a <xref:System.Windows.Media.DrawingGroup>.  
   

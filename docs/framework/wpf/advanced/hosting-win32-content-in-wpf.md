@@ -351,7 +351,7 @@ public partial class Window1 : Window {
   
  Which gives you:  
   
- ![WPF application screen shot](media/interoparch09.PNG "InteropArch09")  
+ ![WPF application screen shot](./media/interoparch09.PNG "InteropArch09")  
   
 ## See also
 - [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)

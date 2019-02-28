@@ -51,7 +51,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  For each display device name for a user, a `ClearTypeLevel` DWORD value is defined. The following screenshot shows the Registry Editor setting for the [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] level.  
   
- ![ClearType settings in the Registry Editor](media/cleartyperegistry01.png "ClearTypeRegistry01")  
+ ![ClearType settings in the Registry Editor](./media/cleartyperegistry01.png "ClearTypeRegistry01")  
   
 > [!NOTE]
 >  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications render text in one of either two modes, with and without [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)]. When text is rendered without [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)], it is referred to as gray scale rendering.  
@@ -69,7 +69,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  For each display device name for a user, a `GammaLevel` DWORD value is defined. The following screenshot shows the Registry Editor setting for the gamma level.  
   
- ![ClearType settings in the Registry Editor](media/cleartyperegistry02.png "ClearTypeRegistry02")  
+ ![ClearType settings in the Registry Editor](./media/cleartyperegistry02.png "ClearTypeRegistry02")  
   
 <a name="pixel_structure"></a>   
 ## Pixel Structure  
@@ -93,7 +93,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  For each display device name for a user, a `PixelStructure` DWORD value is defined. The following screenshot shows the Registry Editor setting for the pixel structure.  
   
- ![ClearType settings in the Registry Editor](media/cleartyperegistry02.png "ClearTypeRegistry02")  
+ ![ClearType settings in the Registry Editor](./media/cleartyperegistry02.png "ClearTypeRegistry02")  
   
 <a name="text_contrast_level"></a>   
 ## Text Contrast Level  
@@ -106,7 +106,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  For each display device name for a user, a `TextContrastLevel` DWORD value is defined. The following screenshot shows the Registry Editor setting for the text contrast level.  
   
- ![ClearType settings in the Registry Editor](media/cleartyperegistry01.png "ClearTypeRegistry01")  
+ ![ClearType settings in the Registry Editor](./media/cleartyperegistry01.png "ClearTypeRegistry01")  
   
 ## See also
 - [ClearType Overview](cleartype-overview.md)

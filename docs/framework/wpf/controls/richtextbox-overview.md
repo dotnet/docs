@@ -41,7 +41,7 @@ The <xref:System.Windows.Controls.RichTextBox> control enables you to display or
   
  The following illustration shows how this sample renders.  
   
- ![RichTextBox with content](media/editing-richtextbox-with-content.png "Editing_RichTextBox_with_Content")  
+ ![RichTextBox with content](./media/editing-richtextbox-with-content.png "Editing_RichTextBox_with_Content")  
   
  Elements like <xref:System.Windows.Documents.Paragraph> and <xref:System.Windows.Documents.Bold> determine how the content inside a <xref:System.Windows.Controls.RichTextBox> appears. As a user edits <xref:System.Windows.Controls.RichTextBox> content, they change this flow content. To learn more about the features of flow content and how to work with it, see [Flow Document Overview](../advanced/flow-document-overview.md).  
   
@@ -51,7 +51,7 @@ The <xref:System.Windows.Controls.RichTextBox> control enables you to display or
 ## Real-time Spell Checking  
  You can enable real-time spell checking in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox>. When spellchecking is turned on, a red line appears underneath any misspelled words (see picture below).  
   
- ![Textbox with spell&#45;checking](media/editing-textbox-with-spellchecking.png "Editing_TextBox_with_Spellchecking")  
+ ![Textbox with spell&#45;checking](./media/editing-textbox-with-spellchecking.png "Editing_TextBox_with_Spellchecking")  
   
  See [Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md) to learn how to enable spellchecking.  
   
@@ -59,7 +59,7 @@ The <xref:System.Windows.Controls.RichTextBox> control enables you to display or
 ## Context Menu  
  By default, both <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox> have a context menu that appears when a user right-clicks inside the control. The context menu allows the user to cut, copy, or paste (see illustration below).  
   
- ![TextBox with context menu](media/editing-textbox-with-context-menu.png "Editing_TextBox_with_Context_Menu")  
+ ![TextBox with context menu](./media/editing-textbox-with-context-menu.png "Editing_TextBox_with_Context_Menu")  
   
  You can create your own custom context menu to override the default one. See [Position a Custom Context Menu in a RichTextBox](how-to-position-a-custom-context-menu-in-a-richtextbox.md) for more information.  
   
@@ -71,7 +71,7 @@ The <xref:System.Windows.Controls.RichTextBox> control enables you to display or
   
  The following illustration shows how this sample displays.  
   
- ![RichTextBox with ToolBar](media/editing-richtextbox-with-toobar.gif "Editing_RichTextBox_with_TooBar")  
+ ![RichTextBox with ToolBar](./media/editing-richtextbox-with-toobar.gif "Editing_RichTextBox_with_TooBar")  
   
 <a name="editing_commands"></a>   
 ## Detect when Content Changes  

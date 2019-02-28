@@ -20,7 +20,7 @@ This example describes how to use a grid in the automatic layout approach to cre
   
  The following graphic shows the output of the code sample.  
   
- ![Grid example](media/glob-grid.png "glob_grid")  
+ ![Grid example](./media/glob-grid.png "glob_grid")  
 Grid  
   
 ## See also

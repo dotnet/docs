@@ -39,7 +39,7 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  This element tree produces something like the following:  
   
- ![Yes, No, and Cancel buttons](media/routedevent-ovw-1.gif "RoutedEvent_ovw_1")  
+ ![Yes, No, and Cancel buttons](./media/routedevent-ovw-1.gif "RoutedEvent_ovw_1")  
   
  In this simplified element tree, the source of a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event is one of the <xref:System.Windows.Controls.Button> elements, and whichever <xref:System.Windows.Controls.Button> was clicked is the first element that has the opportunity to handle the event. But if no handler attached to the <xref:System.Windows.Controls.Button> acts on the event, then the event will bubble upwards to the <xref:System.Windows.Controls.Button> parent in the element tree, which is the <xref:System.Windows.Controls.StackPanel>. Potentially, the event bubbles to <xref:System.Windows.Controls.Border>, and then beyond to the page root of the element tree (not shown).  
   
@@ -193,7 +193,7 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  As an illustration of how input event processing works, consider the following input event example. In the following tree illustration, `leaf element #2` is the source of both a `PreviewMouseDown` and then a `MouseDown` event.  
   
- ![Event routing diagram](media/wcsdkcoreinputevents.png "wcsdkCoreInputEvents")  
+ ![Event routing diagram](./media/wcsdkcoreinputevents.png "wcsdkCoreInputEvents")  
 Input Event Bubbling and Tunneling  
   
  The order of event processing is as follows:  

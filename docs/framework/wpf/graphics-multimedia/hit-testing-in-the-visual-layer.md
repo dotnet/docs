@@ -35,7 +35,7 @@ This topic provides an overview of hit testing functionality provided by the vis
   
  The following illustration shows the relationship between a non-rectangular object's region and its bounding rectangle.  
   
- ![Diagram of valid hit test region](media/wcpsdk-mmgraphics-visuals-hittest-1.png "wcpsdk_mmgraphics_visuals_hittest_1")  
+ ![Diagram of valid hit test region](./media/wcpsdk-mmgraphics-visuals-hittest-1.png "wcpsdk_mmgraphics_visuals_hittest_1")  
 Diagram of valid hit test region  
   
 <a name="hit_testing_and_z-order"></a>   
@@ -44,7 +44,7 @@ Diagram of valid hit test region
   
  In the following illustration, the circle object is on top of both the square and triangle objects. If you are only interested in hit testing the visual object whose z-order value is top-most, you can set the visual hit test enumeration to return <xref:System.Windows.Media.HitTestResultBehavior.Stop> from the <xref:System.Windows.Media.HitTestResultCallback> to stop the hit test traversal after the first item.  
   
- ![Diagram of the z&#45;order of a visual tree](media/wcpsdk-mmgraphics-visuals-hittest-2.png "wcpsdk_mmgraphics_visuals_hittest_2")  
+ ![Diagram of the z&#45;order of a visual tree](./media/wcpsdk-mmgraphics-visuals-hittest-2.png "wcpsdk_mmgraphics_visuals_hittest_2")  
 Diagram of the z-order of a visual tree  
   
  If you want to enumerate all visual objects under a specific point or geometry, return <xref:System.Windows.Media.HitTestResultBehavior.Continue> from the <xref:System.Windows.Media.HitTestResultCallback>. This means you can hit test for visual objects that are beneath other objects, even if they are wholly obscured. See the sample code in the section "Using a Hit Test Results Callback" for more information.  
@@ -69,7 +69,7 @@ Diagram of the z-order of a visual tree
 ### How the Visual Tree Affects Hit Testing  
  The starting point in the visual tree determines which objects are returned during the hit test enumeration of objects. If you have multiple objects you want to hit test, the visual object used as the starting point in the visual tree must be the common ancestor of all objects of interest. For example, if you were interested in hit testing both the button element and drawing visual in the following diagram, you would have to set the starting point in the visual tree to the common ancestor of both. In this case, the canvas element is the common ancestor of both the button element and the drawing visual.  
   
- ![Diagram of a visual tree hierarchy](media/wcpsdk-mmgraphics-visuals-overview-01.gif "wcpsdk_mmgraphics_visuals_overview_01")  
+ ![Diagram of a visual tree hierarchy](./media/wcpsdk-mmgraphics-visuals-overview-01.gif "wcpsdk_mmgraphics_visuals_overview_01")  
 Diagram of a visual tree hierarchy  
   
 > [!NOTE]
@@ -109,7 +109,7 @@ Diagram of a visual tree hierarchy
  [!code-csharp[HitTestingOverview#105](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#105)]
  [!code-vb[HitTestingOverview#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#105)]  
   
- ![Pruning a visual tree using a hit test filter](media/filteredvisualtree-01.png "FilteredVisualTree_01")  
+ ![Pruning a visual tree using a hit test filter](./media/filteredvisualtree-01.png "FilteredVisualTree_01")  
 Pruning a visual tree  
   
  The hit test filter callback function allows you to enumerate through all the visuals whose rendered content contains the coordinates you specify. However, you may want to ignore certain branches of the visual tree that you are not interested in processing in your hit test results callback function. The return value of the hit test filter callback function determines what type of action the enumeration of the visual objects should take. For example, if you return the value, <xref:System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelfAndChildren>, you can remove the current visual object and its children from the hit test results enumeration. This means that the hit test results callback function will not see these objects in its enumeration. Pruning the visual tree of objects decreases the amount of processing during the hit test results enumeration pass. In the following code example, the filter skips labels and their descendants and hit tests everything else.  

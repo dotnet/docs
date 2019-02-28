@@ -88,9 +88,9 @@ The localization process begins after the unlocalized `MyDialog.resources.dll` f
   
  The following graphic shows a typical localization workflow that is based on the BAML form of XAML. This diagram assumes the developer writes the application in English. The developer creates and globalizes the WPF application. In the project file the developer sets `<UICulture>en-US</UICulture>` so that on build, a language neutral main assembly gets generated with a satellite .resources.dll containing all localizable resources. Alternately, one could keep the source language in the main assembly because WPF localization APIs support extraction from the main assembly. After the build process, the XAML get compiled into BAML. The culturally neutral MyDialog.exe.resources.dll get shipped to the English speaking customer.  
   
- ![Localization workflow](media/localizationworkflow.png "LocalizationWorkflow")  
+ ![Localization workflow](./media/localizationworkflow.png "LocalizationWorkflow")  
   
- ![Unlocalized work flow](media/localizationworkflow2.png "LocalizationWorkflow2")  
+ ![Unlocalized work flow](./media/localizationworkflow2.png "LocalizationWorkflow2")  
   
 ## Examples of WPF Localization
 
@@ -102,11 +102,11 @@ The localization process begins after the unlocalized `MyDialog.resources.dll` f
   
  **English:**  
   
- ![Run dialog box](media/rundialogenglish.PNG "RunDialogEnglish")  
+ ![Run dialog box](./media/rundialogenglish.PNG "RunDialogEnglish")  
   
  **German:**  
   
- ![German Run dialog box](media/rundialoggerman.PNG "RunDialogGerman")  
+ ![German Run dialog box](./media/rundialoggerman.PNG "RunDialogGerman")  
   
  **Designing a Global Run Dialog Box**  
   
@@ -220,11 +220,11 @@ The localization process begins after the unlocalized `MyDialog.resources.dll` f
   
  **English:**  
   
- ![English page](media/englishhomepage.jpg "EnglishHomepage")  
+ ![English page](./media/englishhomepage.jpg "EnglishHomepage")  
   
  **Arabic:**  
   
- ![Arabic page](media/arabichomepage.jpg "ArabicHomepage")  
+ ![Arabic page](./media/arabichomepage.jpg "ArabicHomepage")  
   
 ### Designing a Global Microsoft Homepage  
  This mock up of the Microsoft Saudi Arabia web site illustrates the globalization features provided for RightToLeft languages. Languages such as Hebrew and Arabic have a right-to-left reading order so the layout of [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] must often be laid out quite differently than it would be in left-to-right languages such as English. Localizing from a left-to-right language to a right-to-left language or vice versa can be quite challenging. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] has been designed to make such localizations much easier.  
@@ -241,11 +241,11 @@ The localization process begins after the unlocalized `MyDialog.resources.dll` f
   
  **FlowDirection="LeftToRight"**  
   
- ![Flow from left to right](media/lefttoright.PNG "LeftToRight")  
+ ![Flow from left to right](./media/lefttoright.PNG "LeftToRight")  
   
  **FlowDirection="RightToLeft"**  
   
- ![Flow from right to left](media/righttoleft.PNG "RightToLeft")  
+ ![Flow from right to left](./media/righttoleft.PNG "RightToLeft")  
   
  **Avoid Using Fixed Dimensions for Panels and Controls**  
   

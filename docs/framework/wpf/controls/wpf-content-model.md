@@ -34,7 +34,7 @@ ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
   
  Controls that inherit from these classes can contain the same type of content and treat the content in the same way. The following illustration shows one control from each content model that contains an image and some text.  
   
- ![Button, GroupBox, Listbax, TreeViewItem](media/controlcontentmodelimagetextinto.PNG "ControlContentModelImageTextInto")  
+ ![Button, GroupBox, Listbax, TreeViewItem](./media/controlcontentmodelimagetextinto.PNG "ControlContentModelImageTextInto")  
   
 ### Controls That Contain a Single Arbitrary Object  
  The <xref:System.Windows.Controls.ContentControl> class contains a single piece of arbitrary content. Its content property is <xref:System.Windows.Controls.ContentControl.Content%2A>. The following controls inherit from <xref:System.Windows.Controls.ContentControl> and use its content model:  
@@ -81,7 +81,7 @@ ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
   
  The following illustration shows four buttons whose <xref:System.Windows.Controls.ContentControl.Content%2A> is set to a string, a <xref:System.DateTime> object, a <xref:System.Windows.Shapes.Rectangle>, and a <xref:System.Windows.Controls.Panel> that contains an <xref:System.Windows.Shapes.Ellipse> and a <xref:System.Windows.Controls.TextBlock>.  
   
- ![Four buttons](media/controlcontentmodelbuttons.PNG "ControlContentModelButtons")  
+ ![Four buttons](./media/controlcontentmodelbuttons.PNG "ControlContentModelButtons")  
 Four buttons that have different types of content  
   
  For an example of how to set the <xref:System.Windows.Controls.ContentControl.Content%2A> property, see <xref:System.Windows.Controls.ContentControl>.  
@@ -99,7 +99,7 @@ Four buttons that have different types of content
   
  The following illustration shows two <xref:System.Windows.Controls.TabItem> objects. The first <xref:System.Windows.Controls.TabItem> has <xref:System.Windows.UIElement> objects as the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> and the <xref:System.Windows.Controls.ContentControl.Content%2A>. The <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> is set to a <xref:System.Windows.Controls.StackPanel> that contains an <xref:System.Windows.Shapes.Ellipse> and a <xref:System.Windows.Controls.TextBlock>. The <xref:System.Windows.Controls.ContentControl.Content%2A> is set to a <xref:System.Windows.Controls.StackPanel> that contains a <xref:System.Windows.Controls.TextBlock> and a <xref:System.Windows.Controls.Label>. The second <xref:System.Windows.Controls.TabItem> has a string in the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> and a <xref:System.Windows.Controls.TextBlock> in the <xref:System.Windows.Controls.ContentControl.Content%2A>.  
   
- ![TabControl](media/controlcontentmodelteabitem.PNG "ControlContentModelTeabItem")  
+ ![TabControl](./media/controlcontentmodelteabitem.PNG "ControlContentModelTeabItem")  
 TabControl that uses different types in the Header property  
   
  For an example of how to create <xref:System.Windows.Controls.TabItem> objects, see <xref:System.Windows.Controls.HeaderedContentControl>.  
@@ -141,7 +141,7 @@ TabControl that uses different types in the Header property
   
 -   A <xref:System.Windows.Controls.Panel> that contains an <xref:System.Windows.Shapes.Ellipse> and a <xref:System.Windows.Controls.TextBlock>.  
   
- ![ListBox with four types of content](media/controlcontentmodellistbox2.PNG "ControlContentModelListBox2")  
+ ![ListBox with four types of content](./media/controlcontentmodellistbox2.PNG "ControlContentModelListBox2")  
 ListBox that contains multiple types of objects  
   
 ### Controls That Contain a Header and a Collection of Arbitrary Objects  
@@ -209,7 +209,7 @@ ListBox that contains multiple types of objects
   
  The following illustration shows a <xref:System.Windows.Controls.TextBox> that has (is decorated with) a <xref:System.Windows.Controls.Border> around it.  
   
- ![TextBox with black border](media/layout-border-around-textbox.png "Layout_Border_around_TextBox")  
+ ![TextBox with black border](./media/layout-border-around-textbox.png "Layout_Border_around_TextBox")  
 TextBlock that has a Border  
   
 <a name="classes_that_provides_visual_feedback_about_a_uielement"></a>   

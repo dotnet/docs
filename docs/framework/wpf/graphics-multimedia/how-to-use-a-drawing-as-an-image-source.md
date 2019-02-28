@@ -13,7 +13,7 @@ This example shows how to use a <xref:System.Windows.Media.Drawing> as the <xref
 ## Example  
  The following example uses a <xref:System.Windows.Media.DrawingImage> and an <xref:System.Windows.Controls.Image> control to display a <xref:System.Windows.Media.GeometryDrawing>. This example produces the following output:  
   
- ![A GeometryDrawing of two ellipses](media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")  
+ ![A GeometryDrawing of two ellipses](./media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")  
 A DrawingImage  
   
  [!code-csharp[DrawingMiscSnippets_snip#DrawingImageExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/DrawingImageExample.cs#drawingimageexamplewholepage)]

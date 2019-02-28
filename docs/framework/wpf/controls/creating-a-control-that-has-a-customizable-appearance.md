@@ -18,15 +18,15 @@ ms.assetid: 9e356d3d-a3d0-4b01-a25f-2d43e4d53fe5
 <a name="introduction"></a>
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] gives you the ability to create a control whose appearance can be customized. For example, you can change the appearance of a <xref:System.Windows.Controls.CheckBox> beyond what setting properties will do by creating a new <xref:System.Windows.Controls.ControlTemplate>. The following illustration shows a <xref:System.Windows.Controls.CheckBox> that uses a default <xref:System.Windows.Controls.ControlTemplate> and a <xref:System.Windows.Controls.CheckBox> that uses a custom <xref:System.Windows.Controls.ControlTemplate>.  
   
- ![A checkbox with the default control template.](media/ndp-checkboxdefault.png "NDP_CheckBoxDefault")  
+ ![A checkbox with the default control template.](./media/ndp-checkboxdefault.png "NDP_CheckBoxDefault")  
 A CheckBox that uses the default control template  
   
- ![A checkbox with a custom control template.](media/ndp-checkboxcustom.png "NDP_CheckBoxCustom")  
+ ![A checkbox with a custom control template.](./media/ndp-checkboxcustom.png "NDP_CheckBoxCustom")  
 A CheckBox that uses a custom control template  
   
  If you follow the parts and states model when you create a control, your control's appearance will be customizable. Designer tools such as Microsoft Expression Blend support the parts and states model, so when you follow this model your control will be customizable in those types of applications.  This topic discusses the parts and states model and how to follow it when you create your own control. This topic uses an example of a custom control, `NumericUpDown`, to illustrate the philosophy of this model.  The `NumericUpDown` control displays a numeric value, which a user can increase or decrease by clicking on the control's buttons.  The following illustration shows the `NumericUpDown` control that is discussed in this topic.  
   
- ![NumericUpDown custom control.](media/ndp-numericupdown.png "NDP_NumericUPDown")  
+ ![NumericUpDown custom control.](./media/ndp-numericupdown.png "NDP_NumericUPDown")  
 A custom NumericUpDown control  
   
  This topic contains the following sections:  

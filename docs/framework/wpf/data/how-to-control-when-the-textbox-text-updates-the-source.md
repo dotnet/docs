@@ -22,7 +22,7 @@ This topic describes how to use the <xref:System.Windows.Data.Binding.UpdateSour
   
  As a result, the <xref:System.Windows.Controls.TextBlock> shows the same text (because the source changes) as the user enters text into the <xref:System.Windows.Controls.TextBox>, as illustrated by the following screenshot of the sample:  
   
- ![Simple data binding sample screen shot](media/databindingsimplebindingsample2.png "DataBindingSimpleBindingSample2")  
+ ![Simple data binding sample screen shot](./media/databindingsimplebindingsample2.png "DataBindingSimpleBindingSample2")  
   
  If you have a dialog or a user-editable form and you want to defer source updates until the user is finished editing the fields and clicks "OK", you can set the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value of your bindings to <xref:System.Windows.Data.UpdateSourceTrigger.Explicit>, as in the following example:  
   

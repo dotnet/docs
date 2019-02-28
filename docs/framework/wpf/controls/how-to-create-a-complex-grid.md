@@ -22,7 +22,7 @@ The example uses vertical gradients to <xref:System.Windows.Shapes.Shape.Fill%2A
 
 The following image shows the resulting control, a customizable calendar:
 
-![Screenshot of the resulting control](./media/how-to-create-a-complex-grid/wpf-manual-calendar.png)
+![Screenshot of the resulting control](././media/how-to-create-a-complex-grid/wpf-manual-calendar.png)
 
 ## See also
 

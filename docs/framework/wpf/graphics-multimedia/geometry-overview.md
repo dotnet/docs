@@ -60,7 +60,7 @@ This overview describes how to use the [!INCLUDE[TLA#tla_winclient](../../../../
   
  The following example shows how to create and render a <xref:System.Windows.Media.LineGeometry>.  As noted previously, a <xref:System.Windows.Media.Geometry> object is unable to draw itself, so the example uses a <xref:System.Windows.Shapes.Path> shape to render the line.  Because a line has no area, setting the <xref:System.Windows.Shapes.Shape.Fill%2A> property of the <xref:System.Windows.Shapes.Path> would have no effect; instead, only the <xref:System.Windows.Shapes.Shape.Stroke%2A> and <xref:System.Windows.Shapes.Shape.StrokeThickness%2A> properties are specified. The following illustration shows the output from the example.  
   
- ![A LineGeometry](media/graphicsmm-line.gif "graphicsmm_line")  
+ ![A LineGeometry](./media/graphicsmm-line.gif "graphicsmm_line")  
 A LineGeometry drawn from (10,20) to (100,130)  
   
  [!code-xaml[GeometryOverviewSamples_snip#GraphicsMMLineGeometryExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometryOverviewSamples_snip/CS/GeometryExamples.xaml#graphicsmmlinegeometryexample)]  
@@ -70,7 +70,7 @@ A LineGeometry drawn from (10,20) to (100,130)
   
  The next example shows how to create and render an <xref:System.Windows.Media.EllipseGeometry>.  The examples sets the <xref:System.Windows.Media.EllipseGeometry.Center%2A> of the <xref:System.Windows.Media.EllipseGeometry> is set to the point `50,50` and the x-radius and the y-radius are both set to `50`, which creates a circle with a diameter of 100.  The interior of the ellipse is painted by assigning a value to the Path element's Fill property, in this case <xref:System.Windows.Media.Brushes.Gold%2A>. The following illustration shows the output from the example.  
   
- ![An EllipseGeometry](media/graphicsmm-ellipse.gif "graphicsmm_ellipse")  
+ ![An EllipseGeometry](./media/graphicsmm-ellipse.gif "graphicsmm_ellipse")  
 An EllipseGeometry drawn at (50,50)  
   
  [!code-xaml[GeometryOverviewSamples_snip#GraphicsMMEllipseGeometryExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometryOverviewSamples_snip/CS/GeometryExamples.xaml#graphicsmmellipsegeometryexample)]  
@@ -80,7 +80,7 @@ An EllipseGeometry drawn at (50,50)
   
  The following example shows how to create and render a <xref:System.Windows.Media.RectangleGeometry>.  The position and the dimensions of the rectangle are defined by a <xref:System.Windows.Rect> structure. The position is `50,50` and the height and width are both `25`, which creates a square. The following illustration shows the output from the example.  
   
- ![A RectangleGeometry](media/graphicsmm-rectangle.gif "graphicsmm_rectangle")  
+ ![A RectangleGeometry](./media/graphicsmm-rectangle.gif "graphicsmm_rectangle")  
 A RectangleGeometry drawn at 50,50  
   
  [!code-xaml[GeometryOverviewSamples_snip#GraphicsMMRectangleGeometryExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometryOverviewSamples_snip/CS/GeometryExamples.xaml#graphicsmmrectanglegeometryexample)]  
@@ -90,7 +90,7 @@ A RectangleGeometry drawn at 50,50
   
  The following example shows how to use an <xref:System.Windows.Media.EllipseGeometry> as the clip region for an image.  An <xref:System.Windows.Controls.Image> object is defined with a <xref:System.Windows.FrameworkElement.Width%2A> of 200 and a <xref:System.Windows.FrameworkElement.Height%2A> of 150.  An <xref:System.Windows.Media.EllipseGeometry> with a <xref:System.Windows.Media.EllipseGeometry.RadiusX%2A> value of 100, a <xref:System.Windows.Media.EllipseGeometry.RadiusY%2A> value of 75, and a <xref:System.Windows.Media.EllipseGeometry.Center%2A> value of 100,75 is set to the <xref:System.Windows.UIElement.Clip%2A> property of the image.  Only the part of the image that is within the area of the ellipse will be displayed. The following illustration shows the output from the example.  
   
- ![An Image with and without clipping](media/graphicsmm-clipexample.png "graphicsmm_clipexample")  
+ ![An Image with and without clipping](./media/graphicsmm-clipexample.png "graphicsmm_clipexample")  
 An EllipseGeometry used to clip an Image control  
   
  [!code-xaml[GeometryOverviewSamples_snip#GraphicsMMImageClipGeometryExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometryOverviewSamples_snip/CS/GeometryExamples.xaml#graphicsmmimageclipgeometryexample)]  
@@ -120,7 +120,7 @@ An EllipseGeometry used to clip an Image control
   
  The following example creates a simple <xref:System.Windows.Media.PathGeometry> comprised of a single <xref:System.Windows.Media.PathFigure> with a <xref:System.Windows.Media.LineSegment> and displays it using a <xref:System.Windows.Shapes.Path> element. The <xref:System.Windows.Media.PathFigure> object's <xref:System.Windows.Media.PathFigure.StartPoint%2A> is set to `10,20` and a <xref:System.Windows.Media.LineSegment> is defined with an end point of `100,130`. The following illustration shows the <xref:System.Windows.Media.PathGeometry> created by this example.  
   
- ![A LineGeometry](media/graphicsmm-line.gif "graphicsmm_line")  
+ ![A LineGeometry](./media/graphicsmm-line.gif "graphicsmm_line")  
 A PathGeometry that contains a single LineSegment  
   
  [!code-xaml[GeometryOverviewSamples_snip#GraphicsMMPathGeometryLineExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometryOverviewSamples_snip/CS/GeometryExamples.xaml#graphicsmmpathgeometrylineexample)]  
@@ -138,7 +138,7 @@ A PathGeometry that contains a single LineSegment
   
  The example then adds an <xref:System.Windows.Media.ArcSegment>, which is drawn from the end point of the preceding <xref:System.Windows.Media.LineSegment> to the point specified by its <xref:System.Windows.Media.ArcSegment.Point%2A> property. The example also specifies the arc's x- and y-radius (<xref:System.Windows.Media.ArcSegment.Size%2A>), a rotation angle (<xref:System.Windows.Media.ArcSegment.RotationAngle%2A>), a flag indicating how large the angle of the resulting arc should be (<xref:System.Windows.Media.ArcSegment.IsLargeArc%2A>), and a value indicating in which direction the arc is drawn (<xref:System.Windows.Media.ArcSegment.SweepDirection%2A>). The following illustration shows the shape created by this example.  
   
- ![A PathGeometry](media/graphicsmm-path2.gif "graphicsmm_path2")  
+ ![A PathGeometry](./media/graphicsmm-path2.gif "graphicsmm_path2")  
 A PathGeometry  
   
  [!code-xaml[GeometryOverviewSamples_snip#GraphicsMMPathGeometryComplexExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometryOverviewSamples_snip/CS/GeometryExamples.xaml#graphicsmmpathgeometrycomplexexample)]  
@@ -150,7 +150,7 @@ A PathGeometry
   
  The following example creates a <xref:System.Windows.Media.PathGeometry> with two <xref:System.Windows.Media.PathFigure> objects, each of which contains multiple <xref:System.Windows.Media.PathSegment> objects.  The <xref:System.Windows.Media.PathFigure> from the above example and a <xref:System.Windows.Media.PathFigure> with a <xref:System.Windows.Media.PolyLineSegment> and a <xref:System.Windows.Media.QuadraticBezierSegment> are used.  A <xref:System.Windows.Media.PolyLineSegment> is defined with an array of points and the <xref:System.Windows.Media.QuadraticBezierSegment> is defined with a control point and an end point. The following illustration shows the shape created by this example.  
   
- ![A PathGeometry](media/graphicsmm-path.gif "graphicsmm_path")  
+ ![A PathGeometry](./media/graphicsmm-path.gif "graphicsmm_path")  
 A PathGeometry with multiple figures  
   
  [!code-xaml[GeometryOverviewSamples_snip#GraphicsMMPathGeometryComplexMultiExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometryOverviewSamples_snip/CS/GeometryExamples.xaml#graphicsmmpathgeometrycomplexmultiexample)]  
@@ -184,13 +184,13 @@ A PathGeometry with multiple figures
   
  [!code-xaml[GeometrySample#23](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/combininggeometriesexample.xaml#23)]  
   
- ![Results of the Union combine mode](media/mil-task-combined-geometry-union.PNG "mil_task_combined_geometry_union")  
+ ![Results of the Union combine mode](./media/mil-task-combined-geometry-union.PNG "mil_task_combined_geometry_union")  
   
  In the following example, a <xref:System.Windows.Media.CombinedGeometry> is defined with a combine mode of <xref:System.Windows.Media.GeometryCombineMode.Xor>.  Both <xref:System.Windows.Media.CombinedGeometry.Geometry1%2A> and the <xref:System.Windows.Media.CombinedGeometry.Geometry2%2A> are defined as circles of the same radius, but with centers offset by 50.  
   
  [!code-xaml[GeometrySample#24](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/combininggeometriesexample.xaml#24)]  
   
- ![Results of the Xor combine mode](media/mil-task-combined-geometry-xor.PNG "mil_task_combined_geometry_xor")  
+ ![Results of the Xor combine mode](./media/mil-task-combined-geometry-xor.PNG "mil_task_combined_geometry_xor")  
   
  For additional examples, see [Create a Composite Shape](how-to-create-a-composite-shape.md) and [Create a Combined Geometry](how-to-create-a-combined-geometry.md).  
   

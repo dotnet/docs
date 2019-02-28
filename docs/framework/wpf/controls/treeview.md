@@ -14,7 +14,7 @@ The <xref:System.Windows.Controls.TreeView> control displays information in a hi
   
  The following illustration is an example of a <xref:System.Windows.Controls.TreeView> control that has nested <xref:System.Windows.Controls.TreeViewItem> controls.  
   
- ![TreeView illustration](media/treeviewillustration.JPG "TreeViewIllustration")  
+ ![TreeView illustration](./media/treeviewillustration.JPG "TreeViewIllustration")  
   
 ## In This Section  
  [TreeView Overview](treeview-overview.md)  

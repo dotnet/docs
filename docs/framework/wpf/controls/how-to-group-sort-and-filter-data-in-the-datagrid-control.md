@@ -18,7 +18,7 @@ The <xref:System.Windows.Data.CollectionView> class provides grouping and sortin
 
 In this example, a collection of `Task` objects is bound to a <xref:System.Windows.Data.CollectionViewSource>. The <xref:System.Windows.Data.CollectionViewSource> is used as the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> for the <xref:System.Windows.Controls.DataGrid>. Grouping, sorting, and filtering are performed on the <xref:System.Windows.Data.CollectionViewSource> and are displayed in the <xref:System.Windows.Controls.DataGrid> UI.
 
-![Grouped data in a DataGrid](./media/wpf-datagridgroups.png "WPF_DataGridGroups")
+![Grouped data in a DataGrid](././media/wpf-datagridgroups.png "WPF_DataGridGroups")
 Grouped data in a DataGrid
 
 ## Using a CollectionViewSource as an ItemsSource

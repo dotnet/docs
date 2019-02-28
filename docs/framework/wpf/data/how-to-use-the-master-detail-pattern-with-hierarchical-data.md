@@ -17,7 +17,7 @@ This example shows how to implement the master-detail scenario.
   
  The following is a screenshot of the example. The `Divisions` <xref:System.Windows.Controls.ListBox> automatically tracks selections in the `Leagues` <xref:System.Windows.Controls.ListBox> and display the corresponding data. The `Teams` <xref:System.Windows.Controls.ListBox> tracks selections in the other two <xref:System.Windows.Controls.ListBox> controls.  
   
- ![Master&#45;detail example](media/databindingmasterdetailsample.png "DataBindingMasterDetailSample")  
+ ![Master&#45;detail example](./media/databindingmasterdetailsample.png "DataBindingMasterDetailSample")  
   
  The two things to notice in this example are:  
   

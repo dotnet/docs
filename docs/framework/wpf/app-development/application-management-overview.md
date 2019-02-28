@@ -317,7 +317,7 @@ All applications tend to share a common set of functionality that applies to app
 ### Unhandled Exceptions  
  Sometimes an application may shut down under abnormal conditions, such as when an unanticipated exception is thrown. In this case, the application may not have the code to detect and process the exception. This type of exception is an unhandled exception; a notification similar to that shown in the following figure is displayed before the application is closed.  
   
- ![Unhandled exception notification](media/applicationmanagementoverviewfigure2.png "ApplicationManagementOverviewFigure2")  
+ ![Unhandled exception notification](./media/applicationmanagementoverviewfigure2.png "ApplicationManagementOverviewFigure2")  
   
  From the user experience perspective, it is better for an application to avoid this default behavior by doing some or all of the following:  
   
@@ -344,11 +344,11 @@ All applications tend to share a common set of functionality that applies to app
 ### Application Lifetime Events  
  Standalone applications and XBAPs don't have exactly the same lifetimes. The following figure illustrates the key events in the lifetime of a standalone application and shows the sequence in which they are raised.  
   
- ![Standalone Application &#45; Application Object Events](media/applicationmodeloverview-applicationobjectevents.png "ApplicationModelOverview_ApplicationObjectEvents")  
+ ![Standalone Application &#45; Application Object Events](./media/applicationmodeloverview-applicationobjectevents.png "ApplicationModelOverview_ApplicationObjectEvents")  
   
  Likewise, the following figure illustrates the key events in the lifetime of an XBAP, and shows the sequence in which they are raised.  
   
- ![XBAP &#45; Application Object Events](media/applicationmodeloverview-applicationobjectevents-xbap.png "ApplicationModelOverview_ApplicationObjectEvents_xbap")  
+ ![XBAP &#45; Application Object Events](./media/applicationmodeloverview-applicationobjectevents-xbap.png "ApplicationModelOverview_ApplicationObjectEvents_xbap")  
   
 ## See also
 - <xref:System.Windows.Application>

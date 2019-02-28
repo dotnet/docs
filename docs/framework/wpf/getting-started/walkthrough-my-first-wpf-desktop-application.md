@@ -55,7 +55,7 @@ The first step is to create the application infrastructure, which includes an ap
 
    3. Select the **WPF App (.NET Framework)** template. Enter the name **`ExpenseIt`** and then select **OK**.
 
-      ![New Project dialog with WPF app selected](media/new-project-dialog.png)
+      ![New Project dialog with WPF app selected](./media/new-project-dialog.png)
 
       Visual Studio creates the project and opens the designer for the default application window named **MainWindow.xaml**.
 
@@ -161,7 +161,7 @@ In this section, you'll add two pages and an image to the application.
    > [!TIP]
    > You can also set the **Source** property in the **Miscellaneous** category of the **Properties** window.
    >
-   > ![Source property in Properties window](media/properties-source.png)
+   > ![Source property in Properties window](./media/properties-source.png)
 
 6. Add another new WPF page to the project, and name it *ExpenseReportPage.xaml*::
 
@@ -197,7 +197,7 @@ In this section, you'll add two pages and an image to the application.
     [!code-csharp[ExpenseIt#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/ExpenseReportPage.xaml.cs#5)]
     [!code-vb[ExpenseIt#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseReportPage.xaml.vb#5)]
 
-10. Add an image named *watermark.png* to the project. You can create your own image, copy the file from the sample code, or get it [here](https://github.com/dotnet/docs/blob/master/docs/framework/wpf/getting-started/media/watermark.png).
+10. Add an image named *watermark.png* to the project. You can create your own image, copy the file from the sample code, or get it [here](https://github.com/dotnet/docs/blob/master/docs/framework/wpf/getting-started/./media/watermark.png).
 
    1. Right-click on the project node and select **Add** > **Existing Item**, or press **Shift**+**Alt**+**A**.
 
@@ -209,7 +209,7 @@ In this section, you'll add two pages and an image to the application.
 
     The following illustration shows the application with the <xref:System.Windows.Navigation.NavigationWindow> buttons:
 
-    ![ExpenseIt sample screen shot](media/gettingstartedfigure1.png)
+    ![ExpenseIt sample screen shot](./media/gettingstartedfigure1.png)
 
 2. Close the application to return to Visual Studio.
 
@@ -242,7 +242,7 @@ In the section, you create a single-column table with three rows and a 10-pixel 
    > [!TIP]
    > You can also set the **Margin** values in the **Properties** window, under the **Layout** category:
    >
-   > ![Margin values in Properties window](media/properties-margin.png)
+   > ![Margin values in Properties window](./media/properties-margin.png)
 
 3. Add the following XAML between the <xref:System.Windows.Controls.Grid> tags to create the row and column definitions:
 
@@ -279,7 +279,7 @@ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by se
 
 The following illustration shows the controls you just created:
 
-![ExpenseIt sample screen shot](media/gettingstartedfigure2.png)
+![ExpenseIt sample screen shot](./media/gettingstartedfigure2.png)
 
 ## Add an image and a title
 
@@ -315,7 +315,7 @@ In this section, you'll update the home page UI with an image and a page title.
 
 The following illustration shows the results of what you just added:
 
-![ExpenseIt sample screen shot](media/gettingstartedfigure3.png)
+![ExpenseIt sample screen shot](./media/gettingstartedfigure3.png)
 
 ## Add code to handle events
 
@@ -355,7 +355,7 @@ The following illustration shows the results of what you just added:
 
 The following illustration shows the UI elements added to *ExpenseReportPage.xaml*.
 
-![ExpenseIt sample screen shot](media/gettingstartedfigure4.png)
+![ExpenseIt sample screen shot](./media/gettingstartedfigure4.png)
 
 ## Style controls
 
@@ -469,7 +469,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 The following illustration shows both pages of the `ExpenseIt` application with controls, layout, styles, data binding, and data templates applied:
 
-![ExpenseIt sample screen shots](media/gettingstartedfigure5.png)
+![ExpenseIt sample screen shots](./media/gettingstartedfigure5.png)
 
 > [!NOTE]
 > This sample demonstrates a specific feature of WPF and doesn't follow all best practices for things like security, localization, and accessibility. For comprehensive coverage of WPF and the .NET Framework application development best practices, see the following topics:

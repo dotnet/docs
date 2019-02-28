@@ -13,7 +13,7 @@ A calendar enables a user to select a date by using a visual calendar display.
   
  The following illustration shows two <xref:System.Windows.Controls.Calendar> controls, one with selections and blackout dates and one without.  
   
- ![Calendar controls](media/ndp-calendarcontrols.png "NDP_CalendarControls")  
+ ![Calendar controls](./media/ndp-calendarcontrols.png "NDP_CalendarControls")  
 Calendar controls  
   
  The following table provides information about tasks that are typically associated with the <xref:System.Windows.Controls.Calendar>.  

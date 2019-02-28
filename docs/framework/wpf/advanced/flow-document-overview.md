@@ -21,7 +21,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  The following illustration shows a sample flow document viewed in several windows of different sizes. As the display area changes, the content reflows to make the best use of the available space.  
   
- ![Flow Document Content Reflow](media/edocs-flowdocument.png "eDocs_FlowDocument")  
+ ![Flow Document Content Reflow](./media/edocs-flowdocument.png "eDocs_FlowDocument")  
   
  As seen in the image above, flow content can include many components including paragraphs, lists, images, and more. These components correspond to elements in markup and objects in procedural code. We will go over these classes in detail later in the [Flow Related Classes](#flow_related_classes) section of this overview. For now, here is a simple code example that creates a flow document consisting of a paragraph with some bold text and a list.
   
@@ -32,7 +32,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  The illustration below shows what this code snippet looks like.  
   
- ![Screenshot: Rendered FlowDocument example](media/flow-ovw-first-example.png "Flow_Ovw_First_Example")  
+ ![Screenshot: Rendered FlowDocument example](./media/flow-ovw-first-example.png "Flow_Ovw_First_Example")  
   
  In this example, the <xref:System.Windows.Controls.FlowDocumentReader> control is used to host the flow content. See [Flow Document Types](#flow_document_types) for more information on flow content hosting controls. <xref:System.Windows.Documents.Paragraph>, <xref:System.Windows.Documents.List>, <xref:System.Windows.Documents.ListItem>, and <xref:System.Windows.Documents.Bold> elements are used to control content formatting, based on their order in markup. For example, the <xref:System.Windows.Documents.Bold> element spans across only part of the text in the paragraph; as a result, only that part of the text is bold. If you have used HTML, this will be familiar to you.  
   
@@ -81,7 +81,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
 ## Flow Related Classes  
  The diagram below shows the objects most typically used with flow content:  
   
- ![Diagram: Flow content element class hierarchy](media/flow-class-hierarchy.png "Flow_Class_Hierarchy")  
+ ![Diagram: Flow content element class hierarchy](./media/flow-class-hierarchy.png "Flow_Class_Hierarchy")  
   
  For the purposes of flow content, there are two important categories:  
   
@@ -124,7 +124,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  The following figure shows how this example renders.  
   
- ![Screenshot: UIElement embedded in flow content](media/blockuicontainer.png "BlockUIContainer")  
+ ![Screenshot: UIElement embedded in flow content](./media/blockuicontainer.png "BlockUIContainer")  
   
  **List**  
   
@@ -160,7 +160,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  The following screenshot shows how this example renders.  
   
- ![Screenshot: Rendered Span example](media/flow-spanexample.gif "Flow_SpanExample")  
+ ![Screenshot: Rendered Span example](./media/flow-spanexample.gif "Flow_SpanExample")  
   
  **InlineUIContainer**  
   
@@ -186,7 +186,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  The following illustration shows how this example renders.  
   
- ![Screenshot: Figure example](media/flow-ovw-figure-example.png "Flow_Ovw_Figure_Example")  
+ ![Screenshot: Figure example](./media/flow-ovw-figure-example.png "Flow_Ovw_Figure_Example")  
   
  <xref:System.Windows.Documents.Figure> and <xref:System.Windows.Documents.Floater> differ in several ways and are used for different scenarios.  
   
@@ -216,7 +216,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  The following screenshot shows how this example renders.  
   
- ![Screenshot: LineBreak example](media/flow-ovw-linebreakexample.png "Flow_Ovw_LineBreakExample")  
+ ![Screenshot: LineBreak example](./media/flow-ovw-linebreakexample.png "Flow_Ovw_LineBreakExample")  
   
 ### Flow Collection Elements  
  In many of the examples above, the <xref:System.Windows.Documents.BlockCollection> and <xref:System.Windows.Documents.InlineCollection> are used to construct flow content programmatically. For example, to add elements to a <xref:System.Windows.Documents.Paragraph>, you can use the syntax:  
@@ -264,13 +264,13 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
 ## Content Schema  
  Given the number of different flow content elements, it can be overwhelming to keep track of what type of child elements an element can contain. The diagram below summarizes the containment rules for flow elements. The arrows represent the possible parent/child relationships.  
   
- ![Diagram: Flow content containment schema](media/flow-content-schema.png "Flow_Content_Schema")  
+ ![Diagram: Flow content containment schema](./media/flow-content-schema.png "Flow_Content_Schema")  
   
  As can be seen from the diagram above, the children allowed for an element are not necessarily determined by whether it is a <xref:System.Windows.Documents.Block> element or an <xref:System.Windows.Documents.Inline> element. For example, a <xref:System.Windows.Documents.Span> (an <xref:System.Windows.Documents.Inline> element) can only have <xref:System.Windows.Documents.Inline> child elements while a <xref:System.Windows.Documents.Figure> (also an <xref:System.Windows.Documents.Inline> element) can only have <xref:System.Windows.Documents.Block> child elements. Therefore, a diagram is useful for quickly determining what element can be contained in another. As an example, let's use the diagram to determine how to construct the flow content of a <xref:System.Windows.Controls.RichTextBox>.  
   
  **1.** A <xref:System.Windows.Controls.RichTextBox> must contain a <xref:System.Windows.Documents.FlowDocument> which in turn must contain a <xref:System.Windows.Documents.Block>-derived object. Below is the corresponding segment from the diagram above.  
   
- ![Diagram: RichTextBox containment rules](media/flow-ovw-schemawalkthrough1.png "Flow_Ovw_SchemaWalkThrough1")  
+ ![Diagram: RichTextBox containment rules](./media/flow-ovw-schemawalkthrough1.png "Flow_Ovw_SchemaWalkThrough1")  
   
  Thus far, this is what the markup might look like.  
   
@@ -278,7 +278,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  **2.** According to the diagram, there are several <xref:System.Windows.Documents.Block> elements to choose from including <xref:System.Windows.Documents.Paragraph>, <xref:System.Windows.Documents.Section>, <xref:System.Windows.Documents.Table>, <xref:System.Windows.Documents.List>, and <xref:System.Windows.Documents.BlockUIContainer> (see Block-derived classes above). Let's say we want a <xref:System.Windows.Documents.Table>. According to the diagram above, a <xref:System.Windows.Documents.Table> contains a <xref:System.Windows.Documents.TableRowGroup> containing <xref:System.Windows.Documents.TableRow> elements, which contain <xref:System.Windows.Documents.TableCell> elements which contain a <xref:System.Windows.Documents.Block>-derived object. Below is the corresponding segment for <xref:System.Windows.Documents.Table> taken from the diagram above.  
   
- ![Diagram: Parent&#47;child schema for Table](media/flow-ovw-schemawalkthrough2.png "Flow_Ovw_SchemaWalkThrough2")  
+ ![Diagram: Parent&#47;child schema for Table](./media/flow-ovw-schemawalkthrough2.png "Flow_Ovw_SchemaWalkThrough2")  
   
  Below is the corresponding markup.  
   
@@ -286,9 +286,9 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  **3.** Again, one or more <xref:System.Windows.Documents.Block> elements are required underneath a <xref:System.Windows.Documents.TableCell>. To make it simple, let's place some text inside the cell. We can do this using a <xref:System.Windows.Documents.Paragraph> with a <xref:System.Windows.Documents.Run> element. Below is the corresponding segments from the diagram showing that a <xref:System.Windows.Documents.Paragraph> can take an <xref:System.Windows.Documents.Inline> element and that a <xref:System.Windows.Documents.Run> (an <xref:System.Windows.Documents.Inline> element) can only take plain text.  
   
- ![Diagram: Parent&#47;child schema for Paragraph](media/flow-ovw-schemawalkthrough3.png "Flow_Ovw_SchemaWalkThrough3")  
+ ![Diagram: Parent&#47;child schema for Paragraph](./media/flow-ovw-schemawalkthrough3.png "Flow_Ovw_SchemaWalkThrough3")  
   
- ![Diagram: Parent&#47;Child schema for Run](media/flow-ovw-schemawalkthrough4.png "Flow_Ovw_SchemaWalkThrough4")  
+ ![Diagram: Parent&#47;Child schema for Run](./media/flow-ovw-schemawalkthrough4.png "Flow_Ovw_SchemaWalkThrough4")  
   
  Below is the entire example in markup.  
   
@@ -310,15 +310,15 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Text with default strikethrough effect](media/inline-textdec-strike.png "Inline_TextDec_Strike")  
+ ![Screenshot: Text with default strikethrough effect](./media/inline-textdec-strike.png "Inline_TextDec_Strike")  
   
  The following figures show how the **Overline**, **Baseline**, and **Underline** decorations render, respectively.  
   
- ![Screenshot: Overline TextDecorator](media/inline-textdec-over.png "Inline_TextDec_Over")  
+ ![Screenshot: Overline TextDecorator](./media/inline-textdec-over.png "Inline_TextDec_Over")  
   
- ![Screenshot: Default baseline effect on text](media/inline-textdec-base.png "Inline_TextDec_Base")  
+ ![Screenshot: Default baseline effect on text](./media/inline-textdec-base.png "Inline_TextDec_Base")  
   
- ![Screenshot: Text with default underline effect](media/inline-textdec-under.png "Inline_TextDec_Under")  
+ ![Screenshot: Text with default underline effect](./media/inline-textdec-under.png "Inline_TextDec_Under")  
   
 ### Typography  
  The <xref:System.Windows.Documents.TextElement.Typography%2A> property is exposed by most flow-related content including <xref:System.Windows.Documents.TextElement>, <xref:System.Windows.Documents.FlowDocument>, <xref:System.Windows.Controls.TextBlock>, and <xref:System.Windows.Controls.TextBox>. This property is used to control typographical characteristics/variations of text (i.e. small or large caps, making superscripts and subscripts, etc).  
@@ -329,11 +329,11 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Text with altered typography](media/textelement-typog.png "TextElement_Typog")  
+ ![Screenshot: Text with altered typography](./media/textelement-typog.png "TextElement_Typog")  
   
  In contrast, the following figure shows how a similar example with default typographic properties renders.  
   
- ![Screenshot: Text with altered typography](media/textelement-typog-default.png "TextElement_Typog_Default")  
+ ![Screenshot: Text with altered typography](./media/textelement-typog-default.png "TextElement_Typog_Default")  
   
  The following example shows how to set the <xref:System.Windows.Controls.TextBox.Typography%2A> property programmatically.  
   

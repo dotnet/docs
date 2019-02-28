@@ -35,7 +35,7 @@ This topic introduces guidelines for developers on how to write [!INCLUDE[TLA#tl
   
  The following graphic shows the output of the code samples.  
   
- ![The same button with text in different languages](media/globalizationbutton.png "GlobalizationButton")  
+ ![The same button with text in different languages](./media/globalizationbutton.png "GlobalizationButton")  
 Auto Resizable Button  
   
 <a name="autolayout_coding"></a>   
@@ -90,7 +90,7 @@ For a discussion about various types of panels, see [Panels Overview](../control
   
  The following graphic shows the grid produced by the previous code.  
   
- ![Grid example](media/glob-grid.png "glob_grid")  
+ ![Grid example](./media/glob-grid.png "glob_grid")  
 Grid  
   
 <a name="autolay_grids_issharedsizescope"></a>   

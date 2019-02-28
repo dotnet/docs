@@ -31,7 +31,7 @@ This example shows how to rotate an object. The example first creates a <xref:Sy
   
  The following illustration shows the results of applying a <xref:System.Windows.Media.Transform> to the two objects.  
   
- ![45 degree rotations with different center points](media/wcpsdk-graphicsmm-rotatetransform45degrees.gif "wcpsdk_graphicsmm_rotatetransform45degrees")  
+ ![45 degree rotations with different center points](./media/wcpsdk-graphicsmm-rotatetransform45degrees.gif "wcpsdk_graphicsmm_rotatetransform45degrees")  
 Two objects that rotate 45 degrees from different rotational centers  
   
  The <xref:System.Windows.Shapes.Polyline> in the previous examples is a <xref:System.Windows.UIElement>. When you apply a <xref:System.Windows.Media.Transform> to the <xref:System.Windows.UIElement.RenderTransform%2A> property of a <xref:System.Windows.UIElement>, you can use the <xref:System.Windows.UIElement.RenderTransformOrigin%2A> property to specify an origin for every <xref:System.Windows.Media.Transform> that you apply to the element. Because the <xref:System.Windows.UIElement.RenderTransformOrigin%2A> property uses relative coordinates, you can apply a transformation to the center of the element even if you do not know its size. For more information and for an example, see [Specify the Origin of a Transform by Using Relative Values](how-to-specify-the-origin-of-a-transform-by-using-relative-values.md).  

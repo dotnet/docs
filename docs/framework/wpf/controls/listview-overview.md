@@ -27,7 +27,7 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
   
  The following illustration shows how the data appears for the previous example.  
   
- ![ListView with GridView output](media/listviewgridview.JPG "ListViewGridView")  
+ ![ListView with GridView output](./media/listviewgridview.JPG "ListViewGridView")  
   
  You can create a custom view mode by defining a class that inherits from the <xref:System.Windows.Controls.ViewBase> class. The <xref:System.Windows.Controls.ViewBase> class provides the infrastructure that you need to create a custom view. For more information about how to create a custom view, see [Create a Custom View Mode for a ListView](how-to-create-a-custom-view-mode-for-a-listview.md).  
   

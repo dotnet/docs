@@ -22,7 +22,7 @@ Transforms can alter the display of text in your application. The following exam
 ## Example  
  The following example shows text rotated about a specified point in the two-dimensional x-y plane.  
   
- ![Text rotated using a RotateTransform](media/transformedtext01.jpg "TransformedText01")  
+ ![Text rotated using a RotateTransform](./media/transformedtext01.jpg "TransformedText01")  
 Example of text rotated 90 degrees  
   
  The following code example uses a <xref:System.Windows.Media.RotateTransform> to rotate text. An <xref:System.Windows.Media.RotateTransform.Angle%2A> value of 90 rotates the element 90 degrees clockwise.  
@@ -31,7 +31,7 @@ Example of text rotated 90 degrees
   
  The following example shows the second line of text scaled by 150% along the x-axis, and the third line of text scaled by 150% along the y-axis.  
   
- ![Text scaled using a ScaleTransform](media/transformedtext02.jpg "TransformedText02")  
+ ![Text scaled using a ScaleTransform](./media/transformedtext02.jpg "TransformedText02")  
 Example of scaled text  
   
  The following code example uses a <xref:System.Windows.Media.ScaleTransform> to scale text from its original size.  
@@ -43,7 +43,7 @@ Example of scaled text
   
  The following example shows text skewed along the x-axis.  
   
- ![Text skewed using a SkewTransform](media/transformedtext03.jpg "TransformedText03")  
+ ![Text skewed using a SkewTransform](./media/transformedtext03.jpg "TransformedText03")  
 Example of skewed text  
   
  The following code example uses a <xref:System.Windows.Media.SkewTransform> to skew text. A skew, also known as a shear, is a transformation that stretches the coordinate space in a non-uniform manner. In this example, the two text strings are skewed -30° and 30° along the x-coordinate.  
@@ -52,7 +52,7 @@ Example of skewed text
   
  The following example shows text translated, or moved, along the x- and y-axis.  
   
- ![Text offset using a TranslateTransform](media/transformedtext04.jpg "TransformedText04")  
+ ![Text offset using a TranslateTransform](./media/transformedtext04.jpg "TransformedText04")  
 Example of translated text  
   
  The following code example uses a <xref:System.Windows.Media.TranslateTransform> to offset text. In this example, a slightly offset copy of text below the primary text creates a shadow effect.  

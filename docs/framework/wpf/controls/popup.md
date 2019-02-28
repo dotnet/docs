@@ -15,7 +15,7 @@ The <xref:System.Windows.Controls.Primitives.Popup> control displays content in 
   
  The following illustration shows a <xref:System.Windows.Controls.Primitives.Popup> control that is positioned with respect to a <xref:System.Windows.Controls.Button> that is its parent.  
   
- ![Popup illustration](media/popuppicture.JPG "PopupPicture")  
+ ![Popup illustration](./media/popuppicture.JPG "PopupPicture")  
   
 ## In This Section  
  [Popup Overview](popup-overview.md)  

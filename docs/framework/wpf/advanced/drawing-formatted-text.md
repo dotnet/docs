@@ -18,7 +18,7 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
 ## Technology Overview  
  The <xref:System.Windows.Media.FormattedText> object allows you to draw multi-line text, in which each character in the text can be individually formatted. The following example shows text that has several formats applied to it.  
   
- ![Text displayed using FormattedText object](media/formattedtext01.jpg "FormattedText01")  
+ ![Text displayed using FormattedText object](./media/formattedtext01.jpg "FormattedText01")  
 Displayed text using FormattedText method  
   
 > [!NOTE]
@@ -36,7 +36,7 @@ Displayed text using FormattedText method
   
  Use the <xref:System.Windows.Media.FormattedText.MaxTextWidth%2A> property to constrain the text to a specific width. The text will automatically wrap to avoid exceeding the specified width. Use the <xref:System.Windows.Media.FormattedText.MaxTextHeight%2A> property to constrain the text to a specific height. The text will display an ellipsis, "…" for the text that exceeds the specified height.  
   
- ![Text displayed using FormattedText object](media/formattedtext02.png "FormattedText02")  
+ ![Text displayed using FormattedText object](./media/formattedtext02.png "FormattedText02")  
 Displayed text showing wordwrapping and ellipsis  
   
  You can apply multiple formatting styles to one or more characters. For example, you could call both the <xref:System.Windows.Media.FormattedText.SetFontSize%2A> and <xref:System.Windows.Media.FormattedText.SetForegroundBrush%2A> methods to change the formatting of the first five characters in the text.  
@@ -56,18 +56,18 @@ Displayed text showing wordwrapping and ellipsis
 ### Converting Formatted Text to a Geometry  
  You can convert formatted text into <xref:System.Windows.Media.Geometry> objects, allowing you to create other types of visually interesting text. For example, you could create a <xref:System.Windows.Media.Geometry> object based on the outline of a text string.  
   
- ![Text outline using a linear gradient brush](media/outlinedtext02.jpg "OutlinedText02")  
+ ![Text outline using a linear gradient brush](./media/outlinedtext02.jpg "OutlinedText02")  
 Text outline using a linear gradient brush  
   
  The following examples illustrate several ways of creating interesting visual effects by modifying the stroke, fill, and highlight of converted text.  
   
- ![Text with different colors for fill and stroke](media/outlinedtext03.jpg "OutlinedText03")  
+ ![Text with different colors for fill and stroke](./media/outlinedtext03.jpg "OutlinedText03")  
 Example of setting stroke and fill to different colors  
   
- ![Text with image brush applied to stroke](media/outlinedtext04.jpg "OutlinedText04")  
+ ![Text with image brush applied to stroke](./media/outlinedtext04.jpg "OutlinedText04")  
 Example of an image brush applied to the stroke  
   
- ![Text with image brush applied to stroke](media/outlinedtext05.jpg "OutlinedText05")  
+ ![Text with image brush applied to stroke](./media/outlinedtext05.jpg "OutlinedText05")  
 Example of an image brush applied to the stroke and highlight  
   
  When text is converted to a <xref:System.Windows.Media.Geometry> object, it is no longer a collection of characters—you cannot modify the characters in the text string. However, you can affect the appearance of the converted text by modifying its stroke and fill properties. The stroke refers to the outline of the converted text; the fill refers to the area inside the outline of the converted text. For more information, see [Create Outlined Text](how-to-create-outlined-text.md).  
@@ -76,14 +76,14 @@ Example of an image brush applied to the stroke and highlight
   
  The following example shows formatted text that has been converted to a <xref:System.Windows.Media.PathGeometry> object. An animated ellipse follows the path of the strokes of the rendered text.  
   
- ![Sphere following the path geometry of text](media/textpathgeometry01.gif "TextPathGeometry01")  
+ ![Sphere following the path geometry of text](./media/textpathgeometry01.gif "TextPathGeometry01")  
 Sphere following the path geometry of text  
   
  For more information, see [How to: Create a PathGeometry Animation for Text](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms743610(v=vs.100)).  
   
  You can create other interesting uses for formatted text once it has been converted to a <xref:System.Windows.Media.PathGeometry> object. For example, you can clip video to display inside it.  
   
- ![Video displaying in the path geometry of text](media/videotextdemo01.png "VideoTextDemo01")  
+ ![Video displaying in the path geometry of text](./media/videotextdemo01.png "VideoTextDemo01")  
 Video displaying in the path geometry of text  
   
 <a name="win32_migration"></a>   

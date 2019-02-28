@@ -19,7 +19,7 @@ You can include Direct3D9 content in a Windows Presentation Foundation (WPF) app
   
  The following illustration shows the relationship between the back buffer and the front buffer.  
   
- ![D3DImage display buffers](media/d3dimage-buffers.png "D3DImage_buffers")  
+ ![D3DImage display buffers](./media/d3dimage-buffers.png "D3DImage_buffers")  
   
 ## Direct3D9 Device Creation  
  To render Direct3D9 content, you must create a Direct3D9 device. There are two Direct3D9 objects that you can use to create a device, `IDirect3D9` and `IDirect3D9Ex`. Use these objects to create `IDirect3DDevice9` and `IDirect3DDevice9Ex` devices, respectively.  

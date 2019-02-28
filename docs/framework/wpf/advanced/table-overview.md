@@ -66,7 +66,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Render a basic table](media/basictablerrender.png "BasicTablerRender")  
+ ![Screenshot: Render a basic table](./media/basictablerrender.png "BasicTablerRender")  
   
 <a name="table_containment"></a>   
 ### Table Containment  
@@ -96,7 +96,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Table row groups](media/table-rowgroups.png "Table_RowGroups")  
+ ![Screenshot: Table row groups](./media/table-rowgroups.png "Table_RowGroups")  
   
 <a name="rendering_precedence"></a>   
 ### Background Rendering Precedence  
@@ -118,7 +118,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  The following figure shows how this example renders (showing background colors only).  
   
- ![Screenshot: Table z&#45;order](media/table-zorder.png "Table_ZOrder")  
+ ![Screenshot: Table z&#45;order](./media/table-zorder.png "Table_ZOrder")  
   
 <a name="spanning_rows_or_columns"></a>   
 ### Spanning Rows or Columns  
@@ -130,7 +130,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Cell spanning all three columns](media/table-columnspan.png "Table_ColumnSpan")  
+ ![Screenshot: Cell spanning all three columns](./media/table-columnspan.png "Table_ColumnSpan")  
   
 <a name="building_a_table_with_code"></a>   
 ## Building a Table With Code  

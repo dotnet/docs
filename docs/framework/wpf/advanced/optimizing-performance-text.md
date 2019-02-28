@@ -127,7 +127,7 @@ ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
 ### Showing Underlines on Hyperlinks Only on MouseEnter Events  
  A <xref:System.Windows.TextDecoration> object is a visual ornamentation that you can add to text; however, it can be performance intensive to instantiate. If you make extensive use of <xref:System.Windows.Documents.Hyperlink> elements, consider showing an underline only when triggering an event, such as the <xref:System.Windows.ContentElement.MouseEnter> event. For more information, see [Specify Whether a Hyperlink is Underlined](how-to-specify-whether-a-hyperlink-is-underlined.md).  
   
- ![Hyperlinks displaying TextDecorations](media/textdecoration03.png "TextDecoration03")  
+ ![Hyperlinks displaying TextDecorations](./media/textdecoration03.png "TextDecoration03")  
 Hyperlink appearing on MouseEnter  
   
  The following markup sample shows a <xref:System.Windows.Documents.Hyperlink> defined with and without an underline:  

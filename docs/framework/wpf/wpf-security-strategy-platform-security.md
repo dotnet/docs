@@ -21,7 +21,7 @@ ms.assetid: 2a39a054-3e2a-4659-bcb7-8bcea490ba31
 # WPF Security Strategy - Platform Security
 While Windows Presentation Foundation (WPF) provides a variety of security services, it also leverages the security features of the underlying platform, which includes the operating system, the [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)], and [!INCLUDE[TLA2#tla_ie](../../../includes/tla2sharptla-ie-md.md)]. These layers combine to provide [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] a strong, defense-in-depth security model that attempts to avoid any single point of failure, as shown in the following figure:  
   
- ![WPF security illustration](media/windowplatformsecurity.PNG "windowplatformsecurity")  
+ ![WPF security illustration](./media/windowplatformsecurity.PNG "windowplatformsecurity")  
   
  The remainder of this topic discusses the features in each of these layers that pertain to [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] specifically.  
   
@@ -134,7 +134,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
  The following figure illustrates the relationship between zones, permission sets, permissions, and resources.  
   
- ![CAS permission sets](media/caspermissionsets.png "CASPermissionSets")  
+ ![CAS permission sets](./media/caspermissionsets.png "CASPermissionSets")  
   
  The restrictions of the Internet zone security sandbox apply equally to any code that a [!INCLUDE[TLA2#tla_winfxwebapp](../../../includes/tla2sharptla-winfxwebapp-md.md)] imports from a system library, including [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]. This ensures that every bit of the code is locked down, even [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]. Unfortunately, to be able to execute, a [!INCLUDE[TLA2#tla_winfxwebapp](../../../includes/tla2sharptla-winfxwebapp-md.md)] needs to execute functionality that requires more permissions than those enabled by the Internet zone security sandbox.  
   

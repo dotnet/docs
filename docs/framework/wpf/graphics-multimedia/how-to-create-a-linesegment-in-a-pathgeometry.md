@@ -15,7 +15,7 @@ This example shows how to create a line segment. To create a line segment, use t
 ## Example  
  The following examples draw a <xref:System.Windows.Media.LineSegment> from (10, 50) to (200, 70). The following illustration shows the resulting <xref:System.Windows.Media.LineSegment>; a grid background was added to show the coordinate system.  
   
- ![A LineSegment in a PathFigure](media/graphicsmm-pathgeometrylinesegment.png "graphicsmm_pathgeometrylinesegment")  
+ ![A LineSegment in a PathFigure](./media/graphicsmm-pathgeometrylinesegment.png "graphicsmm_pathgeometrylinesegment")  
 A LineSegment drawn from (10,50) to (200,70)  
   
  [xaml]  

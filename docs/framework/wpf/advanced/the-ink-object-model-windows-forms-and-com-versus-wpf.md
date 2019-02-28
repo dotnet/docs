@@ -36,11 +36,11 @@ There are essentially three platforms that support digital ink: the Tablet PC Wi
   
  The following pair of illustrations compares the ink data object models.  On the Windows Forms and COM platforms, the [Microsoft.Ink.Ink](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms583670(v=vs.90)) object constrains the lifetime of the [Microsoft.Ink.Stroke](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms552692(v=vs.90)) objects, and the stylus packets belong to the individual strokes.  Two or more strokes can reference the same [Microsoft.Ink.DrawingAttributes](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms583636(v=vs.90)) object, as shown in the following illustration.  
   
- ![Diagram of the Ink Object Model for COM&#47;Winforms.](media/ink-inkownsstrokes.png "Ink_InkOwnsStrokes")  
+ ![Diagram of the Ink Object Model for COM&#47;Winforms.](./media/ink-inkownsstrokes.png "Ink_InkOwnsStrokes")  
   
  On the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], each <xref:System.Windows.Ink.Stroke?displayProperty=nameWithType> is a common language runtime object that exists as long as something has a reference to it.  Each <xref:System.Windows.Ink.Stroke> references a <xref:System.Windows.Input.StylusPointCollection> and <xref:System.Windows.Ink.DrawingAttributes?displayProperty=nameWithType> object, which are also common language runtime objects.  
   
- ![Diagram of the Ink Object Model for WPF.](media/ink-wpfinkobjectmodel.png "Ink_WPFInkObjectModel")  
+ ![Diagram of the Ink Object Model for WPF.](./media/ink-wpfinkobjectmodel.png "Ink_WPFInkObjectModel")  
   
  The following table compares how to accomplish some common tasks on the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] platform and the Windows Forms and COM platforms.  
   
@@ -85,7 +85,7 @@ There are essentially three platforms that support digital ink: the Tablet PC Wi
   
  The following diagram shows compares the object models for the classes that raise stylus events. The Windows Presentation Foundation object model shows only the bubbling events, not the tunneling event counterparts.  
   
- ![Diagram of the Stylus events in WPF vs Winforms.](media/ink-stylusevents.png "Ink_StylusEvents")  
+ ![Diagram of the Stylus events in WPF vs Winforms.](./media/ink-stylusevents.png "Ink_StylusEvents")  
   
 ## Pen Data  
  All three platforms provide you with ways to intercept and manipulate the data that comes in from a tablet pen.  On the Windows Forms and COM Platforms, this is achieved by creating a [Microsoft.StylusInput.RealTimeStylus](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms585724(v=vs.90)), attaching a window or control to it, and creating a class that implements the [Microsoft.StylusInput.IStylusSyncPlugin](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms575201(v=vs.90)) or [Microsoft.StylusInput.IStylusAsyncPlugin](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms575194(v=vs.90)) interface. The custom plug-in is then added to the plug-in collection of the [Microsoft.StylusInput.RealTimeStylus](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms585724(v=vs.90)). For more information about this object model, see [Architecture of the StylusInput APIs](/windows/desktop/tablet/architecture-of-the-stylusinput-apis).  
@@ -96,4 +96,4 @@ There are essentially three platforms that support digital ink: the Tablet PC Wi
   
  The following illustration compares the object models for the classes that receive pen data on the pen thread pool.  
   
- ![Diagram of the StylusPlugin model WPF vs Winforms.](media/ink-stylusplugins.png "Ink_StylusPlugins")
+ ![Diagram of the StylusPlugin model WPF vs Winforms.](./media/ink-stylusplugins.png "Ink_StylusPlugins")

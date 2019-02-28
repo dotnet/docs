@@ -17,7 +17,7 @@ This example shows how to bind the property of one instantiated control to that 
   
  When this example is rendered it looks like the following:  
   
- ![A canvas with a green background](media/databindingbindingdpssample.PNG "DataBindingBindingDPsSample")  
+ ![A canvas with a green background](./media/databindingbindingdpssample.PNG "DataBindingBindingDPsSample")  
   
  **Note** The binding target property (in this example, the <xref:System.Windows.Controls.Panel.Background%2A> property) must be a dependency property. For more information, see [Data Binding Overview](data-binding-overview.md).  
   

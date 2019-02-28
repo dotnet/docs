@@ -36,7 +36,7 @@ To create a WPF app that supports ink:
 
 3. Type `<InkCanvas/>` between the `<Grid>` tags.
 
-   ![XAML designer with InkCanvas tag](media/getting-started-with-ink/inkcanvas-xaml.png)
+   ![XAML designer with InkCanvas tag](./media/getting-started-with-ink/inkcanvas-xaml.png)
 
 4. Press **F5** to launch your application in the debugger.
 
@@ -64,7 +64,7 @@ Let’s take advantage of some features of the WPF. Replace everything between t
 
 This XAML creates a gradient brush background on your inking surface.
 
-![Gradient colors on inking surface in WPF app](media/getting-started-with-ink/gradient-colors.png)
+![Gradient colors on inking surface in WPF app](./media/getting-started-with-ink/gradient-colors.png)
 
 ### Add Some Code Behind the XAML
 
@@ -98,7 +98,7 @@ You can access all WPF features from procedural code. Follow these steps to crea
 
 1. Add references to the PresentationCore, PresentationFramework, and WindowsBase assemblies by right-clicking on **References** in **Solution Explorer** and choosing **Add Reference**.
 
-   ![Reference Manager showing PresentationCore and PresentationFramework](media/getting-started-with-ink/references.png)
+   ![Reference Manager showing PresentationCore and PresentationFramework](./media/getting-started-with-ink/references.png)
 
 1. Build the application by pressing **F5**.
 

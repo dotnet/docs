@@ -51,7 +51,7 @@ This topic introduces <xref:System.Windows.Media.Drawing> objects and describes 
   
  This example creates the following <xref:System.Windows.Media.GeometryDrawing>.  
   
- ![A GeometryDrawing of two ellipses](media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")  
+ ![A GeometryDrawing of two ellipses](./media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")  
 A GeometryDrawing  
   
  [!code-csharp[DrawingMiscSnippets_snip#GeometryDrawingExampleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/GeometryDrawingExample.cs#geometrydrawingexampleinline)]
@@ -69,7 +69,7 @@ A GeometryDrawing
   
  The following example draws an image into a rectangle located at (75,75) that is 100 by 100 pixel. The following illustration shows the <xref:System.Windows.Media.ImageDrawing> created by the example. A gray border was added to show the bounds of the <xref:System.Windows.Media.ImageDrawing>.  
   
- ![A 100 by 100 ImageDrawing drawn at &#40;75,75&#41;](media/graphicsmm-simple-imagedrawing-offset.png "graphicsmm_simple_imagedrawing_offset")  
+ ![A 100 by 100 ImageDrawing drawn at &#40;75,75&#41;](./media/graphicsmm-simple-imagedrawing-offset.png "graphicsmm_simple_imagedrawing_offset")  
 A 100 by 100 ImageDrawing  
   
  [!code-csharp[DrawingMiscSnippets_snip#ImageDrawing100by100Inline](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/ImageDrawingExample.cs#imagedrawing100by100inline)]
@@ -157,7 +157,7 @@ A 100 by 100 ImageDrawing
   
  The following example uses a <xref:System.Windows.Media.DrawingGroup> to combine two <xref:System.Windows.Media.GeometryDrawing> objects and an <xref:System.Windows.Media.ImageDrawing> object. This example produces the following output.  
   
- ![A DrawingGroup with multiple drawings](media/graphicsmm-simple.jpg "graphicsmm_simple")  
+ ![A DrawingGroup with multiple drawings](./media/graphicsmm-simple.jpg "graphicsmm_simple")  
 A composite drawing  
   
  [!code-csharp[DrawingMiscSnippets_snip#GraphicsMMSimpleDrawingGroupExample](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/DrawingGroupExample.cs#graphicsmmsimpledrawinggroupexample)]
@@ -167,19 +167,19 @@ A composite drawing
   
  The following illustration shows the order in which <xref:System.Windows.Media.DrawingGroup> operations are applied.  
   
- ![DrawingGroup order of operations](media/graphcismm-drawinggroup-order.png "graphcismm_drawinggroup_order")  
+ ![DrawingGroup order of operations](./media/graphcismm-drawinggroup-order.png "graphcismm_drawinggroup_order")  
 Order of DrawingGroup operations  
   
  The following table describes the properties you can use to manipulate a <xref:System.Windows.Media.DrawingGroup> object's contents.  
   
 |Property|Description|Illustration|  
 |--------------|-----------------|------------------|  
-|<xref:System.Windows.Media.DrawingGroup.OpacityMask%2A>|Alters the opacity of selected portions of the <xref:System.Windows.Media.DrawingGroup> contents. For an example, see [How to: Control the Opacity of a Drawing](https://msdn.microsoft.com/library/68580652-7d32-4d27-93cc-a5148cf4d5ee).|![A DrawingGroup with an opacity mask](media/graphicsmm-opmask.png "graphicsmm_opmask")|  
-|<xref:System.Windows.Media.DrawingGroup.Opacity%2A>|Uniformly changes the opacity of the <xref:System.Windows.Media.DrawingGroup> contents. Use this property to make a <xref:System.Windows.Media.Drawing> transparent or partially transparent. For an example, see [How to: Apply an Opacity Mask to a Drawing](https://msdn.microsoft.com/library/d77b420b-9be2-479c-a45e-82f4da30eb9f).|![DrawingGroups with different opacity settings](media/graphicsmm-opacity.png "graphicsmm_opacity")|  
-|<xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>|Applies a <xref:System.Windows.Media.Effects.BitmapEffect> to the <xref:System.Windows.Media.DrawingGroup> contents. For an example, see [How to: Apply a BitmapEffect to a Drawing](https://msdn.microsoft.com/library/c5b1de83-8d09-47fb-96db-5f174471f4b5).|![DrawingGroup with a BlurBitmapEffect](media/graphicsmm-bitmap.png "graphicsmm_bitmap")|  
-|<xref:System.Windows.Media.DrawingGroup.ClipGeometry%2A>|Clips the <xref:System.Windows.Media.DrawingGroup> contents to a region you describe using a <xref:System.Windows.Media.Geometry>. For an example, see [How to: Clip a Drawing](https://msdn.microsoft.com/library/1f7d8a2c-c3c2-42cb-a542-e6796f9fb058) .|![DrawingGroup with a defined clip region](media/graphicsmm-clipgeom.png "graphicsmm_clipgeom")|  
-|<xref:System.Windows.Media.DrawingGroup.GuidelineSet%2A>|Snaps device independent pixels to device pixels along the specified guidelines. This property is useful for ensuring that finely detailed graphics render sharply on low-DPI displays. For an example, see [Apply a GuidelineSet to a Drawing](how-to-apply-a-guidelineset-to-a-drawing.md).|![A DrawingGroup with and without a GuidelineSet](media/graphicsmm-drawinggroup-guidelineset.png "graphicsmm_drawinggroup_guidelineset")|  
-|<xref:System.Windows.Media.DrawingGroup.Transform%2A>|Transforms the <xref:System.Windows.Media.DrawingGroup> contents. For an example, see [How to: Apply a Transform to a Drawing](https://msdn.microsoft.com/library/0d525f2b-682d-4d67-9660-cf46929fbabd).|![A rotated DrawingGroup](media/graphicsmm-rotate.png "graphicsmm_rotate")|  
+|<xref:System.Windows.Media.DrawingGroup.OpacityMask%2A>|Alters the opacity of selected portions of the <xref:System.Windows.Media.DrawingGroup> contents. For an example, see [How to: Control the Opacity of a Drawing](https://msdn.microsoft.com/library/68580652-7d32-4d27-93cc-a5148cf4d5ee).|![A DrawingGroup with an opacity mask](./media/graphicsmm-opmask.png "graphicsmm_opmask")|  
+|<xref:System.Windows.Media.DrawingGroup.Opacity%2A>|Uniformly changes the opacity of the <xref:System.Windows.Media.DrawingGroup> contents. Use this property to make a <xref:System.Windows.Media.Drawing> transparent or partially transparent. For an example, see [How to: Apply an Opacity Mask to a Drawing](https://msdn.microsoft.com/library/d77b420b-9be2-479c-a45e-82f4da30eb9f).|![DrawingGroups with different opacity settings](./media/graphicsmm-opacity.png "graphicsmm_opacity")|  
+|<xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>|Applies a <xref:System.Windows.Media.Effects.BitmapEffect> to the <xref:System.Windows.Media.DrawingGroup> contents. For an example, see [How to: Apply a BitmapEffect to a Drawing](https://msdn.microsoft.com/library/c5b1de83-8d09-47fb-96db-5f174471f4b5).|![DrawingGroup with a BlurBitmapEffect](./media/graphicsmm-bitmap.png "graphicsmm_bitmap")|  
+|<xref:System.Windows.Media.DrawingGroup.ClipGeometry%2A>|Clips the <xref:System.Windows.Media.DrawingGroup> contents to a region you describe using a <xref:System.Windows.Media.Geometry>. For an example, see [How to: Clip a Drawing](https://msdn.microsoft.com/library/1f7d8a2c-c3c2-42cb-a542-e6796f9fb058) .|![DrawingGroup with a defined clip region](./media/graphicsmm-clipgeom.png "graphicsmm_clipgeom")|  
+|<xref:System.Windows.Media.DrawingGroup.GuidelineSet%2A>|Snaps device independent pixels to device pixels along the specified guidelines. This property is useful for ensuring that finely detailed graphics render sharply on low-DPI displays. For an example, see [Apply a GuidelineSet to a Drawing](how-to-apply-a-guidelineset-to-a-drawing.md).|![A DrawingGroup with and without a GuidelineSet](./media/graphicsmm-drawinggroup-guidelineset.png "graphicsmm_drawinggroup_guidelineset")|  
+|<xref:System.Windows.Media.DrawingGroup.Transform%2A>|Transforms the <xref:System.Windows.Media.DrawingGroup> contents. For an example, see [How to: Apply a Transform to a Drawing](https://msdn.microsoft.com/library/0d525f2b-682d-4d67-9660-cf46929fbabd).|![A rotated DrawingGroup](./media/graphicsmm-rotate.png "graphicsmm_rotate")|  
   
 <a name="usingimagedrawing"></a>   
 ## Display a Drawing as an Image  
@@ -187,7 +187,7 @@ Order of DrawingGroup operations
   
  The following example uses a <xref:System.Windows.Media.DrawingImage> and an <xref:System.Windows.Controls.Image> control to display a <xref:System.Windows.Media.GeometryDrawing>. This example produces the following output.  
   
- ![A GeometryDrawing of two ellipses](media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")  
+ ![A GeometryDrawing of two ellipses](./media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")  
 A DrawingImage  
   
  [!code-csharp[DrawingMiscSnippets_snip#DrawingImageExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/DrawingImageExample.cs#drawingimageexamplewholepage)]
@@ -199,7 +199,7 @@ A DrawingImage
   
  The following examples uses a <xref:System.Windows.Media.DrawingBrush> to paint the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle> with a pattern created from a <xref:System.Windows.Media.GeometryDrawing>. This example produces the following output.  
   
- ![A tiled DrawingBrush](media/graphicsmm-drawingbrush-geometrydrawing.png "graphicsmm_drawingbrush_geometrydrawing")  
+ ![A tiled DrawingBrush](./media/graphicsmm-drawingbrush-geometrydrawing.png "graphicsmm_drawingbrush_geometrydrawing")  
 A GeometryDrawing used with a DrawingBrush  
   
  [!code-csharp[DrawingMiscSnippets_snip#DrawingBrushExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/DrawingBrushExample.cs#drawingbrushexamplewholepage)]

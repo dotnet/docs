@@ -26,7 +26,7 @@ Windows Presentation Foundation (WPF) applications can be built as [!INCLUDE[dnp
 ## WPF Build Pipeline  
  When a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] project is built, the combination of language-specific and [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]-specific targets are invoked. The process of executing these targets is called the build pipeline, and the key steps are illustrated by the following figure.  
   
- ![WPF build process](media/wpfbuildsystem-figure1.png "WPFBuildSystem_Figure1")  
+ ![WPF build process](./media/wpfbuildsystem-figure1.png "WPFBuildSystem_Figure1")  
   
 <a name="Pre_Build_Initializations"></a>   
 ### Pre-Build Initializations  

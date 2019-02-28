@@ -16,7 +16,7 @@ This example shows how to define a <xref:System.Windows.Controls.GridView> view 
   
  The following illustration shows how this example appears.  
   
- ![ListView with GridView output](media/listviewgridview.JPG "ListViewGridView")  
+ ![ListView with GridView output](./media/listviewgridview.JPG "ListViewGridView")  
   
 ## See also
 - <xref:System.Windows.Controls.ListView>

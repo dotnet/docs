@@ -23,7 +23,7 @@ Opacity masks enable you to make portions of an element or visual either transpa
   
  Opacity masks are used to create interesting visual effects, such as to create images or buttons that fade from view, to add textures to elements, or to combine gradients to produce glass-like surfaces. The following illustration demonstrates the use of an opacity mask. A checkered background is used to show the transparent portions of the mask.  
   
- ![Object with a LinearGradientBrush opacity mask](media/wcpsdk-graphicsmm-opacitymask-imageexample.png "wcpsdk_graphicsmm_opacitymask_imageexample")  
+ ![Object with a LinearGradientBrush opacity mask](./media/wcpsdk-graphicsmm-opacitymask-imageexample.png "wcpsdk_graphicsmm_opacitymask_imageexample")  
 Opacity masking example  
   
 <a name="creatingopacitymasks"></a>   
@@ -34,21 +34,21 @@ Opacity masking example
   
      The following image shows a <xref:System.Windows.Media.LinearGradientBrush> used as an opacity mask.  
   
-     ![An object with an LinearGradientBrush opacity mask](media/wcpsdk-graphicsmm-brushes-lineagradientopacitymasksingle.jpg "wcpsdk_graphicsmm_brushes_lineagradientopacitymasksingle")  
+     ![An object with an LinearGradientBrush opacity mask](./media/wcpsdk-graphicsmm-brushes-lineagradientopacitymasksingle.jpg "wcpsdk_graphicsmm_brushes_lineagradientopacitymasksingle")  
 LinearGradientBrush Opacity Masking Example  
   
 -   <xref:System.Windows.Media.ImageBrush>: Used to create texture and soft or torn edge effects.  
   
      The following image shows an <xref:System.Windows.Media.ImageBrush> used as an opacity mask.  
   
-     ![Object that has an ImageBrush opacity mask](media/wcpsdk-graphicsmm-brushes-imageasopacitymasksingle.jpg "wcpsdk_graphicsmm_brushes_imageasopacitymasksingle")  
+     ![Object that has an ImageBrush opacity mask](./media/wcpsdk-graphicsmm-brushes-imageasopacitymasksingle.jpg "wcpsdk_graphicsmm_brushes_imageasopacitymasksingle")  
 LinearGradientBrush opacity masking example  
   
 -   <xref:System.Windows.Media.DrawingBrush>: Used to create complex opacity masks from patterns of shapes, images, and gradients.  
   
      The following image shows a <xref:System.Windows.Media.DrawingBrush> used as an opacity mask.  
   
-     ![Object with a DrawingBrush opacity mask](media/wcpsdk-drawingbrushasopacitymask-single.jpg "wcpsdk_drawingbrushasopacitymask_single")  
+     ![Object with a DrawingBrush opacity mask](./media/wcpsdk-drawingbrushasopacitymask-single.jpg "wcpsdk_drawingbrushasopacitymask_single")  
 DrawingBrush opacity masking example  
   
  The gradient brushes (<xref:System.Windows.Media.LinearGradientBrush> and <xref:System.Windows.Media.RadialGradientBrush>) are particularly well-suited for use as an opacity mask. Because a <xref:System.Windows.Media.SolidColorBrush> fills an area with a uniform color, they make poor opacity masks; using a <xref:System.Windows.Media.SolidColorBrush> is equivalent to setting the element's or visual's <xref:System.Windows.UIElement.OpacityMask%2A> property.  
@@ -79,7 +79,7 @@ DrawingBrush opacity masking example
 ## Using an Image as an Opacity Mask  
  Images can also be used as an opacity mask. The following image shows an example. A checkered background is used to show the transparent portions of the mask.  
   
- ![An object with an ImageBrush opacity mask](media/wcpsdk-graphicsmm-imageasopacitymask.png "wcpsdk_graphicsmm_imageasopacitymask")  
+ ![An object with an ImageBrush opacity mask](./media/wcpsdk-graphicsmm-imageasopacitymask.png "wcpsdk_graphicsmm_imageasopacitymask")  
 Opacity masking example  
   
  To use an image as an opacity mask, use an <xref:System.Windows.Media.ImageBrush> to contain the image. When creating an image to be used as an opacity mask, save the image in a format that supports multiple levels of transparency, such as [!INCLUDE[TLA#tla_png](../../../../includes/tlasharptla-png-md.md)]. The following example shows the code used to create the previous illustration.  
@@ -96,7 +96,7 @@ Opacity masking example
 ## Creating an Opacity Mask from a Drawing  
  Drawings can be used an opacity mask. The shapes contained within the drawing can themselves be filled with gradients, solid colors, images, or even other drawings. The following image shows an example of a drawing used as an opacity mask. A checkered background is used to show the transparent portions of the mask.  
   
- ![An object with a DrawingBrush opacity mask](media/wcpsdk-drawingbrushasopacitymask.png "wcpsdk_drawingbrushasopacitymask")  
+ ![An object with a DrawingBrush opacity mask](./media/wcpsdk-drawingbrushasopacitymask.png "wcpsdk_drawingbrushasopacitymask")  
 DrawingBrush opacity masking example  
   
  To use a drawing as an opacity mask, use a <xref:System.Windows.Media.DrawingBrush> to contain the drawing. The following example shows the code used to create the previous illustration:  

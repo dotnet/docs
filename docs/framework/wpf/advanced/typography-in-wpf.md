@@ -14,12 +14,12 @@ This topic introduces the major typographic features of [!INCLUDE[TLA2#tla_wincl
 ## Improved Quality and Performance of Text  
  Text in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is rendered using [!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)], which enhances the clarity and readability of text. [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] is a software technology developed by [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] uses sub-pixel rendering which allows text to be displayed with a greater fidelity to its true shape by aligning characters on a fractional part of a pixel. The extra resolution increases the sharpness of the tiny details in text display, making it much easier to read over long durations. Another improvement of [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is y-direction anti-aliasing, which smoothes the tops and bottoms of shallow curves in text characters. For more details on [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] features, see [ClearType Overview](cleartype-overview.md).  
   
- ![Text with ClearType y&#45;direction anti&#45;aliasing](media/typographyinwpf02.gif "TypographyInWPF02")  
+ ![Text with ClearType y&#45;direction anti&#45;aliasing](./media/typographyinwpf02.gif "TypographyInWPF02")  
 Text with ClearType y-direction antialiasing  
   
  The entire text rendering pipeline can be hardware-accelerated in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provided your machine meets the minimum level of hardware required. Rendering that cannot be performed using hardware falls back to software rendering. Hardware-acceleration affects all phases of the text rendering pipeline—from storing individual glyphs, compositing glyphs into glyph runs, applying effects, to applying the [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] blending algorithm to the final displayed output. For more information on hardware acceleration, see [Graphics Rendering Tiers](graphics-rendering-tiers.md).  
   
- ![Diagram of the text rendering pipeline](media/typographyinwpf01.png "TypographyInWPF01")  
+ ![Diagram of the text rendering pipeline](./media/typographyinwpf01.png "TypographyInWPF01")  
 Diagram of the text rendering pipeline  
   
  In addition, animated text, whether by character or glyph, takes full advantage of the graphics hardware capability enabled by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. This results in smooth text animation.  
@@ -30,12 +30,12 @@ Diagram of the text rendering pipeline
   
  The Pericles [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
   
- ![Text using OpenType stylistic alternate glyphs](media/opentypefont02.gif "opentypefont02")  
+ ![Text using OpenType stylistic alternate glyphs](./media/opentypefont02.gif "opentypefont02")  
 Text using OpenType stylistic alternate glyphs  
   
  Swashes are decorative glyphs that use elaborate ornamentation often associated with calligraphy. The following text displays standard and swash glyphs for the Pescadero font.  
   
- ![Text using OpenType standard and swash glyphs](media/opentypefont08.gif "opentypefont08")  
+ ![Text using OpenType standard and swash glyphs](./media/opentypefont08.gif "opentypefont08")  
 Text using OpenType standard and swash glyphs  
   
  For more details on [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] features, see [OpenType Font Features](opentype-font-features.md).  
@@ -84,37 +84,37 @@ Text using OpenType standard and swash glyphs
 #### Using Bitmap Effects, Transforms, and Text Effects  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to create visually interesting uses of text by uses features such as bitmap effects, transforms, and text effects. The following example shows a typical type of a drop shadow effect applied to text.  
   
- ![Text shadow with Softness &#61; 0.25](media/shadowtext01.jpg "ShadowText01")  
+ ![Text shadow with Softness &#61; 0.25](./media/shadowtext01.jpg "ShadowText01")  
 Text with a drop shadow  
   
  The following example shows a drop shadow effect and noise applied to text.  
   
- ![Text shadow with noise](media/shadowtext04.jpg "ShadowText04")  
+ ![Text shadow with noise](./media/shadowtext04.jpg "ShadowText04")  
 Text with a drop shadow and noise  
   
  The following example shows an outer glow effect applied to text.  
   
- ![Text shadow using an OuterGlowBitmapEffect](media/shadowtext05.jpg "ShadowText05")  
+ ![Text shadow using an OuterGlowBitmapEffect](./media/shadowtext05.jpg "ShadowText05")  
 Text with an outer glow effect  
   
  The following example shows a blur effect applied to text.  
   
- ![Text shadow using a BlurBitmapEffect](media/shadowtext06.jpg "ShadowText06")  
+ ![Text shadow using a BlurBitmapEffect](./media/shadowtext06.jpg "ShadowText06")  
 Text with a blur effect  
   
  The following example shows the second line of text scaled by 150% along the x-axis, and the third line of text scaled by 150% along the y-axis.  
   
- ![Text scaled using a ScaleTransform](media/transformedtext02.jpg "TransformedText02")  
+ ![Text scaled using a ScaleTransform](./media/transformedtext02.jpg "TransformedText02")  
 Text using a ScaleTransform  
   
  The following example shows text skewed along the x-axis.  
   
- ![Text skewed using a SkewTransform](media/transformedtext03.jpg "TransformedText03")  
+ ![Text skewed using a SkewTransform](./media/transformedtext03.jpg "TransformedText03")  
 Text using a SkewTransform  
   
  A <xref:System.Windows.Media.TextEffect> object is a helper object that allows you to treat text as one or more groups of characters in a text string. The following example shows an individual character being rotated. Each character is rotated independently at 1-second intervals.  
   
- ![Screenshot of text effect rotating text](media/texteffect01.jpg "TextEffect01")  
+ ![Screenshot of text effect rotating text](./media/texteffect01.jpg "TextEffect01")  
 Example of a rotating text effect animation  
   
 #### Using Flow Documents  
@@ -122,7 +122,7 @@ Example of a rotating text effect animation
   
  The following example shows text content hosted in a <xref:System.Windows.Controls.FlowDocumentReader>, which provides search, navigation, pagination, and content scaling support.  
   
- ![Using OpenType fonts sample screen shot](media/typographyinwpf-03.png "TypographyInWPF_03")  
+ ![Using OpenType fonts sample screen shot](./media/typographyinwpf-03.png "TypographyInWPF_03")  
 Text hosted in a FlowDocumentReader  
   
  For more information, see [Documents in WPF](documents-in-wpf.md).  
@@ -130,23 +130,23 @@ Text hosted in a FlowDocumentReader
 ### Lightweight Text Drawing  
  You can draw text directly to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] objects by using the <xref:System.Windows.Media.DrawingContext.DrawText%2A> method of the <xref:System.Windows.Media.DrawingContext> object. To use this method, you create a <xref:System.Windows.Media.FormattedText> object. This object allows you to draw multi-line text, in which each character in the text can be individually formatted. The functionality of the <xref:System.Windows.Media.FormattedText> object contains much of the functionality of the DrawText flags in the Win32 API. In addition, the <xref:System.Windows.Media.FormattedText> object contains functionality such as ellipsis support, in which an ellipsis is displayed when text exceeds its bounds. The following example shows text that has several formats applied to it, including a linear gradient on the second and third words.  
   
- ![Text displayed using FormattedText object](media/formattedtext01.jpg "FormattedText01")  
+ ![Text displayed using FormattedText object](./media/formattedtext01.jpg "FormattedText01")  
 Displayed text using FormattedText object  
   
  You can convert formatted text into <xref:System.Windows.Media.Geometry> objects, allowing you to create other types of visually interesting text. For example, you could create a <xref:System.Windows.Media.Geometry> object based on the outline of a text string.  
   
- ![Text outline using a linear gradient brush](media/outlinedtext02.jpg "OutlinedText02")  
+ ![Text outline using a linear gradient brush](./media/outlinedtext02.jpg "OutlinedText02")  
 Text outline using a linear gradient brush  
   
  The following examples illustrate several ways of creating interesting visual effects by modifying the stroke, fill, and highlight of converted text.  
   
- ![Text with different colors for fill and stroke](media/outlinedtext03.jpg "OutlinedText03")  
+ ![Text with different colors for fill and stroke](./media/outlinedtext03.jpg "OutlinedText03")  
 Example of setting stroke and fill to different colors  
   
- ![Text with image brush applied to stroke](media/outlinedtext04.jpg "OutlinedText04")  
+ ![Text with image brush applied to stroke](./media/outlinedtext04.jpg "OutlinedText04")  
 Example of an image brush applied to the stroke  
   
- ![Text with image brush applied to stroke](media/outlinedtext05.jpg "OutlinedText05")  
+ ![Text with image brush applied to stroke](./media/outlinedtext05.jpg "OutlinedText05")  
 Example of an image brush applied to the stroke and highlight  
   
  For more information on the <xref:System.Windows.Media.FormattedText> object, see [Drawing Formatted Text](drawing-formatted-text.md).  
@@ -156,7 +156,7 @@ Example of an image brush applied to the stroke and highlight
   
  Unlike a traditional text [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)], the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the text layout interaction between the client application and <xref:System.Windows.Media.TextFormatting.TextFormatter>.  
   
- ![Diagram of text layout client and TextFormatter](media/textformatter01.png "TextFormatter01")  
+ ![Diagram of text layout client and TextFormatter](./media/textformatter01.png "TextFormatter01")  
 Interaction between application and TextFormatter  
   
  For more details on creating custom text layout, see [Advanced Text Formatting](advanced-text-formatting.md).  

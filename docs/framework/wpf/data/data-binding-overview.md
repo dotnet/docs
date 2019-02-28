@@ -27,7 +27,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  For an example of data binding, take a look at the following application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] from the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703):  
   
- ![Data binding sample screen shot](media/databinding-databindingdemo.png "DataBinding_DataBindingDemo")  
+ ![Data binding sample screen shot](./media/databinding-databindingdemo.png "DataBinding_DataBindingDemo")  
   
  The above is the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] of an application that displays a list of auction items. The application demonstrates the following features of data binding:  
   
@@ -43,7 +43,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  When the user clicks the *Add Product* button, the following form comes up:  
   
- ![Add Product Listing page](media/databinding-demo-addproductlisting.png "DataBinding_Demo_AddProductListing")  
+ ![Add Product Listing page](./media/databinding-demo-addproductlisting.png "DataBinding_Demo_AddProductListing")  
   
  The user can edit the fields in the form, preview the product listing using the short preview and the more detailed preview panes, and then click *submit* to add the new product listing. Any existing grouping, filtering and sorting functionalities will apply to the new entry. In this particular case, the item entered in the above image will be displayed as the second item within the *Computer* category.  
   
@@ -55,7 +55,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  Regardless of what element you are binding and the nature of your data source, each binding always follows the model illustrated by the following figure:  
   
- ![Basic data binding diagram](media/databindingmostbasic.png "DataBindingMostBasic")  
+ ![Basic data binding diagram](./media/databindingmostbasic.png "DataBindingMostBasic")  
   
  As illustrated by the above figure, data binding is essentially the bridge between your binding target and your binding source. The figure demonstrates the following fundamental [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] data binding concepts:  
   
@@ -75,7 +75,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  You may want your application to enable users to change the data and propagate it back to the source object. Or you may not want to enable users to update the source data. You can control this by setting the <xref:System.Windows.Data.Binding.Mode%2A> property of your <xref:System.Windows.Data.Binding> object. The following figure illustrates the different types of data flow:  
   
- ![Data binding data flow](media/databinding-dataflow.png "DataBinding_DataFlow")  
+ ![Data binding data flow](./media/databinding-dataflow.png "DataBinding_DataFlow")  
   
 -   <xref:System.Windows.Data.BindingMode.OneWay> binding causes changes to the source property to automatically update the target property, but changes to the target property are not propagated back to the source property. This type of binding is appropriate if the control being bound is implicitly read-only. For instance, you may bind to a source such as a stock ticker or perhaps your target property has no control interface provided for making changes, such as a data-bound background color of a table. If there is no need to monitor the changes of the target property, using the <xref:System.Windows.Data.BindingMode.OneWay> binding mode avoids the overhead of the <xref:System.Windows.Data.BindingMode.TwoWay> binding mode.  
   
@@ -95,7 +95,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  However, does your source value get updated while you are editing the text or after you finish editing the text and point your mouse away from the TextBox? The <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property of the binding determines what triggers the update of the source. The dots of the right arrows in the following figure illustrate the role of the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property:  
   
- ![UpdateSourceTrigger diagram](media/databindingupdatesourcetrigger.png "DataBindingUpdateSourceTrigger")  
+ ![UpdateSourceTrigger diagram](./media/databindingupdatesourcetrigger.png "DataBindingUpdateSourceTrigger")  
   
  If the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value is <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>, then the value pointed to by the right arrow of <xref:System.Windows.Data.BindingMode.TwoWay> or the <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings gets updated as soon as the target property changes. However, if the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value is <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus>, then that value only gets updated with the new value when the target property loses focus.  
   
@@ -126,7 +126,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  If we apply this example to our basic diagram, the resulting figure looks like the following. This is a <xref:System.Windows.Data.BindingMode.OneWay> binding because the Background property supports <xref:System.Windows.Data.BindingMode.OneWay> binding by default.  
   
- ![Data binding diagram](media/databindingbuttonbackgroundexample.png "DataBindingButtonBackgroundExample")  
+ ![Data binding diagram](./media/databindingbuttonbackgroundexample.png "DataBindingButtonBackgroundExample")  
   
  You may wonder why this works even though the *ColorName* property is of type string while the <xref:System.Windows.Controls.Control.Background%2A> property is of type <xref:System.Windows.Media.Brush>. This is default type conversion at work and is discussed in the [Data Conversion](#data_conversion) section.  
   
@@ -179,7 +179,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  To add this information to the figure in the [Creating a Binding](#creating_a_binding) section, the diagram looks like the following:  
   
- ![Data binding diagram](media/databindingbuttondefaultconversion.png "DataBindingButtonDefaultConversion")  
+ ![Data binding diagram](./media/databindingbuttondefaultconversion.png "DataBindingButtonDefaultConversion")  
   
  However, what if instead of having a property of type string your binding source object has a *Color* property of type <xref:System.Windows.Media.Color>? In that case, in order for the binding to work you would need to first turn the *Color* property value into something that the <xref:System.Windows.Controls.Control.Background%2A> property accepts. You would need to create a custom converter by implementing the <xref:System.Windows.Data.IValueConverter> interface, as in the following example:  
   
@@ -190,7 +190,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  Now the custom converter is used instead of default conversion, and our diagram looks like this:  
   
- ![Data binding diagram](media/databindingconvertercolorexample.png "DataBindingConverterColorExample")  
+ ![Data binding diagram](./media/databindingconvertercolorexample.png "DataBindingConverterColorExample")  
   
  To reiterate, default conversions may be available because of type converters that are present in the type being bound to. This behavior will depend on which type converters are available in the target. If in doubt, create your own converter.  
   
@@ -211,7 +211,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  Fortunately, our basic diagram still applies. If you are binding an <xref:System.Windows.Controls.ItemsControl> to a collection, the diagram looks like this:  
   
- ![Data binding ItemsControl diagram](media/databindingitemscontrol.png "DataBindingItemsControl")  
+ ![Data binding ItemsControl diagram](./media/databindingitemscontrol.png "DataBindingItemsControl")  
   
  As shown in this diagram, to bind an <xref:System.Windows.Controls.ItemsControl> to a collection object, <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is the property to use. You can think of <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property as the content of the <xref:System.Windows.Controls.ItemsControl>. Note that the binding is <xref:System.Windows.Data.BindingMode.OneWay> because the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property supports <xref:System.Windows.Data.BindingMode.OneWay> binding by default.  
   
@@ -334,7 +334,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
 ## Data Templating  
  Without the use of data templates, our application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] in the [What Is Data Binding?](#what_is_data_binding) section would look like the following:  
   
- ![Data Binding Demo without Data Templates](media/databindingdemotemplates.png "DataBindingDemoTemplates")  
+ ![Data Binding Demo without Data Templates](./media/databindingdemotemplates.png "DataBindingDemoTemplates")  
   
  As shown in the example in the previous section, both the <xref:System.Windows.Controls.ListBox> control and the <xref:System.Windows.Controls.ContentControl> are bound to the entire collection object (or more specifically, the view over the collection object) of *AuctionItem*s. Without specific instructions of how to display the data collection, the <xref:System.Windows.Controls.ListBox> is displaying a string representation of each object in the underlying collection and the <xref:System.Windows.Controls.ContentControl> is displaying a string representation of the object it is bound to.  
   
@@ -387,11 +387,11 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  With the custom <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> and the <xref:System.Windows.Controls.ToolTip>, the *StartDateEntryForm* <xref:System.Windows.Controls.TextBox> looks like the following when there is a validation error:  
   
- ![Data binding validation error](media/databindingdemo-validation.PNG "DataBindingDemo_Validation")  
+ ![Data binding validation error](./media/databindingdemo-validation.PNG "DataBindingDemo_Validation")  
   
  If your <xref:System.Windows.Data.Binding> has associated validation rules but you do not specify an <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> on the bound control, a default <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> will be used to notify users when there is a validation error. The default <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> is a control template that defines a red border in the adorner layer. With the default <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> and the <xref:System.Windows.Controls.ToolTip>, the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] of the *StartPriceEntryForm* <xref:System.Windows.Controls.TextBox> looks like the following when there is a validation error:  
   
- ![Data binding validation error](media/databindingdemo-validationdefault.PNG "DataBindingDemo_ValidationDefault")  
+ ![Data binding validation error](./media/databindingdemo-validationdefault.PNG "DataBindingDemo_ValidationDefault")  
   
  For an example of how to provide logic to validate all controls in a dialog box, see the Custom Dialog Boxes section in the [Dialog Boxes Overview](../app-development/dialog-boxes-overview.md).  
   

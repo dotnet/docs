@@ -20,7 +20,7 @@ This example shows how to use the <xref:System.Windows.Media.TileBrush.TileMode%
   
  The following illustration shows the output that this example produces.  
   
- ![TileBrush tiling example output](media/graphicsmm-drawingbrushtilemodeexample.png "graphicsmm_DrawingBrushTileModeExample")  
+ ![TileBrush tiling example output](./media/graphicsmm-drawingbrushtilemodeexample.png "graphicsmm_DrawingBrushTileModeExample")  
 Tile patterns created with the TileMode property  
   
  [!code-csharp[BrushesIntroduction_snip#GraphicsMMDrawingBrushTileModeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesIntroduction_snip/CSharp/TileModeExample.cs#graphicsmmdrawingbrushtilemodeexample)]

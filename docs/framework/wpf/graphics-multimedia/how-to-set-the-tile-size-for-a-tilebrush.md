@@ -16,7 +16,7 @@ This example shows how to set the tile size for a <xref:System.Windows.Media.Til
   
  The following illustration shows the output that the example produces.
   
- ![Example of tiling with an image brush](media/0.png "0")  
+ ![Example of tiling with an image brush](./media/0.png "0")  
   
  [!code-csharp[UsingImageBrush_snip#RelativeTileSizeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#relativetilesizeexample)]  
   
@@ -24,7 +24,7 @@ This example shows how to set the tile size for a <xref:System.Windows.Media.Til
   
  The following illustration shows the output that the example produces.  
   
- ![A tiled TileBrush with a Viewport of 0,0,0.25,0.25](media/25x25viewport.png "25x25viewport")  
+ ![A tiled TileBrush with a Viewport of 0,0,0.25,0.25](./media/25x25viewport.png "25x25viewport")  
   
  [!code-csharp[UsingImageBrush_snip#AbsoluteTileSizeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#absolutetilesizeexample)]  
   

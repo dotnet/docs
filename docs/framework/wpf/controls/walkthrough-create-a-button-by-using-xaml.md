@@ -13,7 +13,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
  The following figure shows the finished buttons.  
   
- ![Custom buttons that were created by using XAML](media/custom-button-animatedbutton-5.gif "custom_button_AnimatedButton_5")  
+ ![Custom buttons that were created by using XAML](./media/custom-button-animatedbutton-5.gif "custom_button_AnimatedButton_5")  
   
 ## Create Basic Buttons  
  Let's start by creating a new project and adding a few buttons to the window.  
@@ -43,7 +43,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      Press F5 to run the application; you should see a set of buttons that looks like the following figure.  
   
-     ![Three basic buttons](media/custom-button-animatedbutton-1.gif "custom_button_AnimatedButton_1")  
+     ![Three basic buttons](./media/custom-button-animatedbutton-1.gif "custom_button_AnimatedButton_1")  
   
      Now that you have created the basic buttons, you are finished working in the Window1.xaml file. The rest of the walkthrough focuses on the app.xaml file, defining styles and a template for the buttons.  
   
@@ -81,7 +81,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      The <xref:System.Windows.Style.TargetType%2A> property specifies that the style applies to all objects of type <xref:System.Windows.Controls.Button>. Each <xref:System.Windows.Setter> sets a different property value for the <xref:System.Windows.Style>. Therefore, at this point every button in the application has a width of 90 and a margin of 10.  If you press F5 to run the application, you see the following window.  
   
-     ![Buttons with a width of 90 and a margin of 10](media/custom-button-animatedbutton-2.gif "custom_button_AnimatedButton_2")  
+     ![Buttons with a width of 90 and a margin of 10](./media/custom-button-animatedbutton-2.gif "custom_button_AnimatedButton_2")  
   
      There is much more you can do with styles, including a variety of ways to fine-tune what objects are targeted, specifying complex property values, and even using styles as input for other styles. For more information, see [Styling and Templating](styling-and-templating.md).  
   
@@ -106,7 +106,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      Press F5 to run the application. It should look like the following.  
   
-     ![Buttons with a gradient background](media/custom-button-animatedbutton-3.gif "custom_button_AnimatedButton_3")  
+     ![Buttons with a gradient background](./media/custom-button-animatedbutton-3.gif "custom_button_AnimatedButton_3")  
   
 ## Create a Template That Defines the Look of the Button  
  In this section, you create a template that customizes the appearance (presentation) of the button. The button presentation is made up of several objects including rectangles and other components to give the button a unique look.  
@@ -159,7 +159,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      Press F5 to run the application. It should look like the following.  
   
-     ![](media/custom-button-animatedbutton-4.gif "custom_button_AnimatedButton_4")  
+     ![](./media/custom-button-animatedbutton-4.gif "custom_button_AnimatedButton_4")  
   
 3.  **Add a glasseffect to the template:** Next you will add the glass. First you create some resources that create a glass gradient effect. Add these gradient resources anywhere within the `Application.Resources` block:  
   
@@ -238,7 +238,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      Notice that the <xref:System.Windows.UIElement.Opacity%2A> of the rectangle with the `x:Name` property of "glassCube" is 0, so when you run the sample, you do not see the glass rectangle overlaid on top. This is because we will later add triggers to the template for when the user interacts with the button. However, you can see what the button looks like now by changing the <xref:System.Windows.UIElement.Opacity%2A> value to 1 and running the application. See the following figure. Before proceeding to the next step, change the <xref:System.Windows.UIElement.Opacity%2A> back to 0.  
   
-     ![Custom buttons that were created by using XAML](media/custom-button-animatedbutton-5.gif "custom_button_AnimatedButton_5")  
+     ![Custom buttons that were created by using XAML](./media/custom-button-animatedbutton-5.gif "custom_button_AnimatedButton_5")  
   
 ## Create Button Interactivity  
  In this section, you will create property triggers and event triggers to change property values and run animations in response to user actions such as moving the mouse pointer over the button and clicking.  

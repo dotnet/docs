@@ -20,10 +20,10 @@ ms.assetid: 678dd116-43a2-4b8c-82b5-6b826f126e31
   
  The following illustrations show a <xref:System.Windows.Controls.Button> that uses the <xref:System.Windows.Controls.ControlTemplate> that is created in this topic.  
   
- ![A button with a custom control template.](media/ndp-buttonnormal.png "NDP_ButtonNormal")  
+ ![A button with a custom control template.](./media/ndp-buttonnormal.png "NDP_ButtonNormal")  
 A button that uses a custom control template  
   
- ![A button with a red border.](media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
+ ![A button with a red border.](./media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
 A button that uses a custom control template and has the mouse pointer over it  
   
   
@@ -41,12 +41,12 @@ A button that uses a custom control template and has the mouse pointer over it
   
  The following illustration shows a <xref:System.Windows.Controls.CheckBox> that uses a default <xref:System.Windows.Controls.ControlTemplate>.  
   
- ![A checkbox with the default control template.](media/ndp-checkboxdefault.png "NDP_CheckBoxDefault")  
+ ![A checkbox with the default control template.](./media/ndp-checkboxdefault.png "NDP_CheckBoxDefault")  
 A CheckBox that uses the default control template  
   
  The following illustration shows a <xref:System.Windows.Controls.CheckBox> that uses a custom <xref:System.Windows.Controls.ControlTemplate> to place the content of the <xref:System.Windows.Controls.CheckBox> above the selection indicator and displays an X when the <xref:System.Windows.Controls.CheckBox> is selected.  
   
- ![A checkbox with a custom control template.](media/ndp-checkboxcustom.png "NDP_CheckBoxCustom")  
+ ![A checkbox with a custom control template.](./media/ndp-checkboxcustom.png "NDP_CheckBoxCustom")  
 A CheckBox that uses a custom control template  
   
  The <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.CheckBox> in this sample is relatively complex, so this topic uses a simpler example of creating a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  
@@ -110,7 +110,7 @@ A CheckBox that uses a custom control template
   
  The preceding example produces output that is similar to the following illustration.  
   
- ![Two buttons, one blue and one purple.](media/ndp-buttontwo.png "NDP_ButtonTwo")  
+ ![Two buttons, one blue and one purple.](./media/ndp-buttontwo.png "NDP_ButtonTwo")  
 Two buttons with different background colors  
   
 <a name="changing_the_appearance_of_a_control_depending_on_its_state"></a>   
@@ -145,13 +145,13 @@ Two buttons with different background colors
   
  The preceding example produces output that is similar to the following illustrations.  
   
- ![A button with a custom control template.](media/ndp-buttonnormal.png "NDP_ButtonNormal")  
+ ![A button with a custom control template.](./media/ndp-buttonnormal.png "NDP_ButtonNormal")  
 A button that uses a custom control template in the normal state  
   
- ![A button with a red border.](media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
+ ![A button with a red border.](./media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
 A button that uses a custom control template in the mouse over state  
   
- ![The border is transparent on a pressed button.](media/ndp-buttonpressed.png "NDP_ButtonPressed")  
+ ![The border is transparent on a pressed button.](./media/ndp-buttonpressed.png "NDP_ButtonPressed")  
 A button that uses a custom control template in the pressed state  
   
  To find the visual states for controls that are included with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Control Styles and Templates](control-styles-and-templates.md).  

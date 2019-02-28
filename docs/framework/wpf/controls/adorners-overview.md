@@ -49,7 +49,7 @@ Adorners are a special type of <xref:System.Windows.FrameworkElement>, used to p
   
  The following image shows the SimpleCircleAdorner applied to a <xref:System.Windows.Controls.TextBox>.  
   
- ![Adorners Example: An adorned TextBox](media/adornedtextbox.png "AdornedTextBox")  
+ ![Adorners Example: An adorned TextBox](./media/adornedtextbox.png "AdornedTextBox")  
   
 <a name="rendering_behavior_for_Adorners"></a>   
 ## Rendering Behavior for Adorners  

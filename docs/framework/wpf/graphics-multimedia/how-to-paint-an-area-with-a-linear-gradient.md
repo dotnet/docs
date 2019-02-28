@@ -17,7 +17,7 @@ This example shows how to use the <xref:System.Windows.Media.LinearGradientBrush
   
  The following illustration shows the gradient created by the previous example.  
   
- ![Diagonal linear gradient](media/graphicsmm-diagonallgb.jpg "graphicsmm_DiagonalLGB")  
+ ![Diagonal linear gradient](./media/graphicsmm-diagonallgb.jpg "graphicsmm_DiagonalLGB")  
   
  To create a horizontal linear gradient, change the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> and <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> of the <xref:System.Windows.Media.LinearGradientBrush> to (0,0.5) and (1,0.5). In the following example, a <xref:System.Windows.Shapes.Rectangle> is painted with a horizontal linear gradient.  
   
@@ -27,7 +27,7 @@ This example shows how to use the <xref:System.Windows.Media.LinearGradientBrush
   
  The following illustration shows the gradient created by the previous example.  
   
- ![A horizontal linear gradient](media/graphicsmm-horizontallgb.jpg "graphicsmm_HorizontalLGB")  
+ ![A horizontal linear gradient](./media/graphicsmm-horizontallgb.jpg "graphicsmm_HorizontalLGB")  
   
  To create a vertical linear gradient, change the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> and <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> of the <xref:System.Windows.Media.LinearGradientBrush> to (0.5,0) and (0.5,1). In the following example, a <xref:System.Windows.Shapes.Rectangle> is painted with a vertical linear gradient.  
   
@@ -37,7 +37,7 @@ This example shows how to use the <xref:System.Windows.Media.LinearGradientBrush
   
  The following illustration shows the gradient created by the previous example.  
   
- ![Vertical linear gradient](media/graphicsmm-verticallgb.jpg "graphicsmm_VerticalLGB")  
+ ![Vertical linear gradient](./media/graphicsmm-verticallgb.jpg "graphicsmm_VerticalLGB")  
   
 > [!NOTE]
 >  The examples in this topic use the default coordinate system for setting start points and end points. The default coordinate system is relative to a bounding box: 0 indicates 0 percent of the bounding box, and 1 indicates 100 percent of the bounding box. You can change this coordinate system by setting the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> property to the value <xref:System.Windows.Media.BrushMappingMode.Absolute?displayProperty=nameWithType>. An absolute coordinate system is not relative to a bounding box. Values are interpreted directly in local space.  

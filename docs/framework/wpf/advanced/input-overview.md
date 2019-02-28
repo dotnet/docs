@@ -208,7 +208,7 @@ ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
 
  To understand the interaction among the touch events, consider the scenario where a user puts one finger on an element, moves the finger in the element, and then lifts the finger from the element. The following illustration shows the execution of the bubbling events (the tunneling events are omitted for simplicity).
 
- ![The sequence of touch events.](media/ndp-touchevents.png "NDP_TouchEvents")
+ ![The sequence of touch events.](./media/ndp-touchevents.png "NDP_TouchEvents")
 Touch events
 
  The following list describes the sequence of the events in the preceding illustration.
@@ -261,7 +261,7 @@ Touch events
 
  The following illustration shows the execution path of manipulation events and important information about each event.
 
- ![The sequence of manipulation events.](media/ndp-manipulationevents.png "NDP_ManipulationEvents")
+ ![The sequence of manipulation events.](./media/ndp-manipulationevents.png "NDP_ManipulationEvents")
 Manipulation events
 
  The following list describes the sequence of the events in the preceding illustration.
@@ -293,7 +293,7 @@ Manipulation events
 ### The Relationship Between Touch and Manipulation Events
  A <xref:System.Windows.UIElement> can always receive touch events. When the <xref:System.Windows.UIElement.IsManipulationEnabled%2A> property is set to `true`, a <xref:System.Windows.UIElement> can receive both touch and manipulation events.  If the <xref:System.Windows.UIElement.TouchDown> event is not handled (that is, the <xref:System.Windows.RoutedEventArgs.Handled%2A> property is `false`), the manipulation logic captures the touch to the element and generates the manipulation events. If the <xref:System.Windows.RoutedEventArgs.Handled%2A> property is set to `true` in the <xref:System.Windows.UIElement.TouchDown> event, the manipulation logic does not generate manipulation events. The following illustration shows the relationship between touch events and manipulation events.
 
- ![Relationship between touch and manipulation events](media/ndp-touchmanipulateevents.png "NDP_TouchManipulateEvents")
+ ![Relationship between touch and manipulation events](./media/ndp-touchmanipulateevents.png "NDP_TouchManipulateEvents")
 Touch and manipulation events
 
  The following list describes the relationship between the touch and manipulation events that is shown in the preceding illustration.

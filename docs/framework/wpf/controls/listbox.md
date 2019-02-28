@@ -13,7 +13,7 @@ A <xref:System.Windows.Controls.ListBox> control provides users with a list of s
   
  The following figure illustrates a typical <xref:System.Windows.Controls.ListBox>.  
   
- ![ListBox screen shot](media/ss-ctl-listbox.gif "SS_CTL_listbox")  
+ ![ListBox screen shot](./media/ss-ctl-listbox.gif "SS_CTL_listbox")  
 Typical ListBox  
   
 ## In This Section  

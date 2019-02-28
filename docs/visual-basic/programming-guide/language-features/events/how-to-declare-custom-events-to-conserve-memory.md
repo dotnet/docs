@@ -19,7 +19,7 @@ There are several circumstances when it is important that an application keep it
   
  All events in the class use the `Events` field to keep track of what methods are handling each event.  
   
- [!code-vb[VbVbalrEvents#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-conserve-memory_1.vb)]  
+ [!code-vb[VbVbalrEvents#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#22)]  
   
 ## See also
 - <xref:System.ComponentModel.EventHandlerList>

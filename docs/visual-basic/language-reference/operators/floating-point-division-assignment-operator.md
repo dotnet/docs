@@ -40,7 +40,7 @@ variableorproperty /= expression
 ## Example  
  The following example uses the `/=` operator to divide one `Integer` variable by a second and assign the quotient to the first variable.  
   
- [!code-vb[VbVbalrOperators#17](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/floating-point-division-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#17)]  
   
 ## See also
 - [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)

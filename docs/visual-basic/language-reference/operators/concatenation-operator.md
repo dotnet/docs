@@ -44,7 +44,7 @@ result = expression1 & expression2
 ## Example  
  This example uses the `&` operator to force string concatenation. The result is a string value representing the concatenation of the two string operands.  
   
- [!code-vb[VbVbalrOperators#2](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/concatenation-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#2)]  
   
 ## See also
 - [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)

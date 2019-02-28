@@ -49,7 +49,7 @@ GetType(typename)
 ## Example  
  The following examples show the `GetType` operator in use.  
   
- [!code-vb[VbVbalrOperators#26](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/gettype-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#26)]  
   
 ## See also
 - [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)

@@ -21,7 +21,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
 3.  In the <xref:System.Windows.Forms.Control.Click> event handler for Button1, add the following code:  
   
-     [!code-vb[VbVbcnMyApplicationLogFiltering#1](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-filtering-my-application-log-output_1.vb)]  
+     [!code-vb[VbVbcnMyApplicationLogFiltering#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyApplicationLogFiltering/VB/Form1.vb#1)]  
   
 4.  Run the application in the debugger.  
   

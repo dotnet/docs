@@ -333,7 +333,7 @@
       </Docs>
     </Member>
     <Member MemberName="AsRef&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static ref T AsRef&lt;T&gt; (ref T source);" />
+      <MemberSignature Language="C#" Value="public static ref T AsRef&lt;T&gt; (in T source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AsRef&lt;T&gt;([in]!!T&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AsRef``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsRef(Of T) (ByRef source As T) As T" />
@@ -356,10 +356,10 @@
         <Parameter Name="source" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of reference.</typeparam>
+        <param name="source">The read-only reference to reinterpret.</param>
+        <summary>Reinterprets the given read-only reference as a reference.</summary>
+        <returns>A reference to a value of type <typeparamref name="T" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

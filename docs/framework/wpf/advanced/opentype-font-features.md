@@ -58,8 +58,7 @@ This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla
   
  The following text displays superscripts for the Palatino Linotype font.  
   
- ![Text using OpenType superscripts](../../../../docs/framework/wpf/advanced/media/opentype-font-features/opentype-superscripts.gif "Text using OpenType superscripts")  
-Text using OpenType superscripts  
+ ![Text using OpenType superscripts](./media/opentype-font-features/opentype-superscripts.gif "Text using OpenType superscripts")  
   
  The following markup example shows how to define superscripts for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
   
@@ -67,8 +66,7 @@ Text using OpenType superscripts
   
  The following text displays subscripts for the Palatino Linotype font.  
   
- ![Text using OpenType subscripts](../../../../docs/framework/wpf/advanced/media/opentype-font-features/opentype-subscripts.gif "Text using OpenType subscripts")  
-Text using OpenType subscripts  
+ ![Text using OpenType subscripts](./media/opentype-font-features/opentype-subscripts.gif "Text using OpenType subscripts")  
   
  The following markup example shows how to define subscripts for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
   
@@ -77,9 +75,8 @@ Text using OpenType subscripts
 ### Decorative Uses of Superscripts and Subscripts  
  You can also use superscripts and subscripts to create decorative effects of mixed case text. The following text displays superscript and subscript text for the Palatino Linotype font. Note that the capitals are not affected.  
   
- ![Text using OpenType superscripts and subscripts](../../../../docs/framework/wpf/advanced/media/opentype-font-features/opentype-superscripts-subscripts.gif "Text using OpenType superscripts and subscripts")  
-Text using OpenType superscripts and subscripts  
-  
+ ![Text using OpenType superscripts and subscripts](./media/opentype-font-features/opentype-superscripts-subscripts.gif "Text using OpenType superscripts and subscripts")  
+
  The following markup example shows how to define superscripts and subscripts for a font, using properties of the <xref:System.Windows.Documents.Typography> object.  
   
  [!code-xaml[OpenTypeFontSamples#14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#14)]  
@@ -90,8 +87,8 @@ Text using OpenType superscripts and subscripts
   
  The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
   
- ![Text using OpenType capitals](../../../../docs/framework/wpf/advanced/media/opentypefont11.gif "opentypefont11")  
-Text using OpenType capitals  
+ ![Text using OpenType capitals](./media/opentype-font-features/opentype-capitals.gif "Text using OpenType capitals")  
+  
   
  The following markup example shows how to define capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object. When the "SmallCaps" format is used, any leading capital letter is ignored.  
   
@@ -100,8 +97,8 @@ Text using OpenType capitals
 ### Titling Capitals  
  Titling capitals are lighter in weight and proportion and designed to give a more elegant look than normal capitals. Titling capitals are typically used in larger font sizes as headings. The following text displays normal and titling capitals for the Pescadero font. Notice the narrower stem widths of the text on the second line.  
   
- ![Text using OpenType titling capitals](../../../../docs/framework/wpf/advanced/media/opentypefont20.gif "OpenTypeFont20")  
-Text using OpenType titling capitals  
+ ![Text using OpenType titling capitals](./media/opentype-titling-capitals.gif "Text using OpenType titling capitals")  
+  
   
  The following markup example shows how to define titling capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object.  
   
@@ -110,8 +107,8 @@ Text using OpenType titling capitals
 ### Capital Spacing  
  Capital spacing is a feature that allows you to provide more spacing when using all capitals in text. Capital letters are typically designed to blend with lowercase letters. Spacing that appears attractive between and a capital letter and a lowercase letter may look too tight when all capital letters are used. The following text displays normal and capital spacing for the Pescadero font.  
   
- ![Text using OpenType capital spacing](../../../../docs/framework/wpf/advanced/media/opentypefont21.gif "OpenTypeFont21")  
-Text using OpenType capital spacing  
+ ![Text using OpenType capital spacing](./media/opentype-capital-spacing.gif "Text using OpenType capital spacing ")  
+ 
   
  The following markup example shows how to define capital spacing for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object.  
   
@@ -131,8 +128,8 @@ Text using OpenType capital spacing
   
  The following text displays standard ligature glyphs for the Pericles font.  
   
- ![Text using OpenType standard ligatures](../../../../docs/framework/wpf/advanced/media/opentypefont04.gif "opentypefont04")  
-Text using OpenType standard ligatures  
+ ![Text using OpenType standard ligatures](./media/opentype-standard-ligatures.gif "Text using OpenType standard ligatures")  
+  
   
  The following markup example shows how to define standard ligature glyphs for the Pericles font, using properties of the <xref:System.Windows.Documents.Typography> object.  
   
@@ -140,8 +137,8 @@ Text using OpenType standard ligatures
   
  The following text displays discretionary ligature glyphs for the Pericles font.  
   
- ![Text using OpenType discretionary ligatures](../../../../docs/framework/wpf/advanced/media/opentypefont05.gif "opentypefont05")  
-Text using OpenType discretionary ligatures  
+ ![Text using OpenType discretionary ligatures](./media/opentype-discretionary-ligatures.gif "Text using OpenType discretionary ligatures")  
+  
   
  The following markup example shows how to define discretionary ligature glyphs for the Pericles font, using properties of the <xref:System.Windows.Documents.Typography> object.  
   
@@ -149,13 +146,13 @@ Text using OpenType discretionary ligatures
   
  By default, [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] enable standard ligatures. For example, if you use the Palatino Linotype font, the standard ligatures "fi", "ff", and "fl" appear as a combined character glyph. Notice that the pair of characters for each standard ligature touch each other.  
   
- ![Text using OpenType standard ligatures](../../../../docs/framework/wpf/advanced/media/opentypefont06.gif "opentypefont06")  
-Text using OpenType standard ligatures  
+ ![Text using OpenType standard ligatures](./media/opentype-standard-ligatures-palatino.gif "Text using OpenType standard ligatures with Palatino Linotype")  
+  
   
  However, you can disable standard ligature features so that a standard ligature such as "ff" displays as two separate glyphs, rather than as a combined character glyph.  
   
- ![Text using disabled OpenType standard ligatures](../../../../docs/framework/wpf/advanced/media/opentypefont07.gif "opentypefont07")  
-Text using disabled OpenType standard ligatures  
+ ![Text using disabled OpenType standard ligatures](./media/disabled-opentype-standard-ligatures.gif "Text using disabled OpenType standard ligatures")  
+  
   
  The following markup example shows how to disable standard ligature glyphs for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
   
@@ -165,8 +162,8 @@ Text using disabled OpenType standard ligatures
 ## Swashes  
  Swashes are decorative glyphs that use elaborate ornamentation often associated with calligraphy. The following text displays standard and swash glyphs for the Pescadero font.  
   
- ![Text using OpenType standard and swash glyphs](../../../../docs/framework/wpf/advanced/media/opentypefont08.gif "opentypefont08")  
-Text using OpenType standard and swash glyphs  
+ ![Text using OpenType standard and swash glyphs](../../../../docs/framework/wpf/advanced/media/opentypefont08.gif "Text using OpenType standard and swash glyphs")  
+  
   
  Swashes are often used as decorative elements in short phrases such as event announcements. The following text uses swashes to emphasize the capital letters of the name of the event.  
   

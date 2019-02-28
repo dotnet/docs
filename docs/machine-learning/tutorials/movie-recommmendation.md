@@ -191,7 +191,7 @@ var options = new MatrixFactorizationTrainer.Options
 estimator = estimator.Append(mlContext.Recommendation().Trainers.MatrixFactorization(options));
 ```
 
-The `Matrix Factorization` trainer has several options, including the input columns (`userIdEncoded` and `movieIdEncoded`) and the output column (`Label`). NumIterations and K are hyperparameters for improving the quality of the model (see *"Improve your model"* step below for more information).
+The `Matrix Factorization` trainer has several options, including the input columns (`userIdEncoded` and `movieIdEncoded`) and the output column (`Label`). NumIterations and K are hyperparameters for improving the quality of the model (see [Improve your model step](#improve-your-model) below for more information).
 
 Finally the `Fit()` method trains your model with the provided training dataset. Technically, it executes the `Estimator` defitinions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
 

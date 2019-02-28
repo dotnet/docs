@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugHeapValue Interface1"
+title: "ICorDebugHeapValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugHeapValue"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugHeapValue Interface1
+# ICorDebugHeapValue Interface
+
 A subclass of "ICorDebugValue" that represents an object that has been collected by the common language runtime (CLR) garbage collector.  
   
 ## Methods  

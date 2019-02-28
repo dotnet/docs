@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugChain Interface1"
+title: "ICorDebugChain Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugChain"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugChain Interface1
+# ICorDebugChain Interface
+
 Represents a segment of a physical or logical call stack.  
   
 ## Methods  

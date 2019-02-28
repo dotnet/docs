@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugClass Interface1"
+title: "ICorDebugClass Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugClass"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugClass Interface1
+# ICorDebugClass Interface
+
 Represents a type, which can be either basic or complex (that is, user-defined). If the type is generic, `ICorDebugClass` represents the uninstantiated generic type.  
   
 ## Methods  

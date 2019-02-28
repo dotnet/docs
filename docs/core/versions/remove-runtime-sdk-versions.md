@@ -127,7 +127,7 @@ Microsoft.NETCore.App 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 ```
 
-***
+---
 
 ## Uninstalling .NET Core
 

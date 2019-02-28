@@ -49,7 +49,7 @@ Provides properties and methods for accessing the application's settings.
 ## Example  
  This example displays the value of the `Nickname` setting.  
   
- [!code-vb[VbVbalrMyResources#14](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-settings-object_1.vb)]  
+ [!code-vb[VbVbalrMyResources#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#14)]  
   
  For this example to work, your application must have a `Nickname` setting, of type `String`.  
   

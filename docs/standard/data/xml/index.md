@@ -19,7 +19,7 @@ The .NET Framework provides a comprehensive and integrated set of classes that e
   
 -   <xref:System.Xml.Linq>  
   
- For a full list, see the [System.Xml Namespaces](https://msdn.microsoft.com/library/gg145036.aspx) webpage.  
+ For a full list, search for "System.Xml" on the [.NET API browser](https://docs.microsoft.com/dotnet/api/?term=system.xml).  
   
  The classes in these namespaces support World Wide Web Consortium (W3C) recommendations. For example:  
   
@@ -33,7 +33,7 @@ The .NET Framework provides a comprehensive and integrated set of classes that e
   
  The XML classes in the .NET Framework provide these benefits:  
   
--   **Productivity.** [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) makes it easier to program with XML and provides a query experience that is similar to SQL.  
+-   **Productivity.** [LINQ to XML (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml.md) and [LINQ to XML (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md) makes it easier to program with XML and provides a query experience that is similar to SQL.  
   
 -   **Extensibility.** The XML classes in the .NET Framework are extensible through the use of abstract base classes and virtual methods. For example, you can create a derived class of the <xref:System.Xml.XmlUrlResolver> class that stores the cache stream to the local disk.  
   
@@ -56,7 +56,7 @@ The .NET Framework provides a comprehensive and integrated set of classes that e
  Discusses options for processing XML data.  
   
  [Processing XML Data In-Memory](../../../../docs/standard/data/xml/processing-xml-data-in-memory.md)  
- Discusses the three models for processing XML data in-memory. [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13), the <xref:System.Xml.XmlDocument> class (based on the W3C Document Object Model), and the <xref:System.Xml.XPath.XPathDocument> class (based on the XPath data model).  
+ Discusses the three models for processing XML data in-memory: [LINQ to XML (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml.md) and [LINQ to XML (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md), the <xref:System.Xml.XmlDocument> class (based on the W3C Document Object Model), and the <xref:System.Xml.XPath.XPathDocument> class (based on the XPath data model).  
   
  [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)  
  Describes how to use the XSLT processor.  

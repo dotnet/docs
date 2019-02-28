@@ -63,7 +63,7 @@ Before starting the runtime, it is necessary to prepare some properties to speci
 Common properties include:
 
 * `TRUSTED_PLATFORM_ASSEMBLIES`
-   This is a list of assembly paths (delimited by ';' on Windows and ':' on Linux) which the runtime will be able to resovle by default. Some hosts have hard-coded manifests listing assemblies they can load. Others will put any library in certain locations (next to *coreclr.dll*, for example) on this list.
+   This is a list of assembly paths (delimited by ';' on Windows and ':' on Linux) which the runtime will be able to resolve by default. Some hosts have hard-coded manifests listing assemblies they can load. Others will put any library in certain locations (next to *coreclr.dll*, for example) on this list.
 * `APP_PATHS`
    This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. Because the host has more control over which assemblies are loaded using the TPA list, it is a best practice for hosts to determine which assemblies they expect to load and list them explicitly. If probing at runtime is needed, however, this property can enable that scenario.
 *  `APP_NI_PATHS`

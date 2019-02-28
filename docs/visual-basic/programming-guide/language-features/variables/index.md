@@ -17,7 +17,7 @@ You often have to store values when you perform calculations with Visual Basic. 
 ## Assigning Values  
  You use assignment statements to perform calculations and assign the result to a variable, as the following example shows.  
   
- [!code-vb[VbVbalrVariables#1](../../../../visual-basic/programming-guide/language-features/variables/codesnippet/VisualBasic/index_1.vb)]  
+ [!code-vb[VbVbalrVariables#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrVariables/VB/Class1.vb#1)]  
   
 > [!NOTE]
 >  The equal sign (`=`) in this example is an assignment operator, not an equality operator. The value is being assigned to the variable `applesSold`.  

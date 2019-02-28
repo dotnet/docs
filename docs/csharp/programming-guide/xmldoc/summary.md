@@ -29,7 +29,7 @@ ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
  Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [DocFX](https://dotnet.github.io/docfx/) or [Sandcastle](https://github.com/EWSoftware/SHFB).  
   
 ## Example  
- [!code-csharp[csProgGuideDocComments#12](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#12)]  
   
  The previous example produces the following XML file.  
   
@@ -59,7 +59,7 @@ ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
 ## Example  
  The following example shows how to make a `cref` reference to a generic type.  
   
- [!code-csharp[csProgGuideDocComments#11](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_2.cs)]  
+ [!code-csharp[csProgGuideDocComments#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#11)]  
   
  The previous example produces the following XML file.  
   

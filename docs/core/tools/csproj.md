@@ -39,11 +39,14 @@ The main reason for doing this is to reduce the clutter in your project file. Th
 
 The following table shows which element and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are both included and excluded in the SDK: 
 
-| Element          	| Include glob                           	| Exclude glob                                     	            | Remove glob             	 |
+| Element          	| Include glob                           	  | Exclude glob                                     	            | Remove glob             	 |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|----------------------------|
 | Compile          	| \*\*/\*.cs (or other language extensions) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc 	| N/A                     	 |
 | EmbeddedResource 	| \*\*/\*.resx                             	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | N/A                     	 |
-| None             	| \*\*/\*                                  	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | - \*\*/\*.cs; \*\*/\*.resx |
+| None             	| \*\*/\*                                  	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx   |
+
+> [!NOTE]
+> **Exclude glob** always excludes the `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, respectively. As a whole, all excludes are represented by `$(DefaultItemExcludes)`.
 
 If you have globs in your project and you try to build it using the newest SDK, you'll get the following error:
 
@@ -209,7 +212,7 @@ A Boolean value that specifies whether the client must prompt the consumer to ac
 
 ### PackageLicenseExpression
 
-An SPDX license expression or path to a license file within the package, often shown in UI displays as well as nuget.org.
+An [SPDX license identifier](https://spdx.org/licenses/) or expression. For example, `Apache-2.0`.
 
 Here is the complete list of [SPDX license identifiers](https://spdx.org/licenses/). NuGet.org accepts only OSI or FSF approved licenses when using license type expression.
 
@@ -237,23 +240,6 @@ license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
 
 Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is prefered)
 
-> [!NOTE]
-> Only one of `PackageLicenseExpression`, `PackageLicenseFile` and `PackageLicenseUrl` can be specified at a time.
-
-### PackageLicenseUrl
-
-An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
-
-### PackageLicenseExpression
-
-An [SPDX license identifier](https://spdx.org/licenses/) or expression, i.e. `Apache-2.0`.
-
-Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseFile` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
-
-### PackageLicenseFile
-
-A path to the license file on disk, relative to the project file, i.e. `LICENSE.txt`.
-
 Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
 
 You will need to ensure the license file is packed by adding it explicitly to the project, example usage:
@@ -265,6 +251,12 @@ You will need to ensure the license file is packed by adding it explicitly to th
   <None Include="licenses\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
 </ItemGroup>
 ```
+
+### PackageLicenseUrl
+
+An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
+
+
 ### PackageIconUrl
 A URL for a 64x64 image with transparent background to use as the icon for the package in UI display.
 

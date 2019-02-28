@@ -34,7 +34,7 @@ This page lists some common problems that can occur when you perform operations 
   
  The following example demonstrates both incorrect and correct comparison of two `Double` values.  
   
- [!code-vb[VbVbalrDataTypes#10](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#10)]  
   
  The previous example uses the <xref:System.Double.ToString%2A> method of the <xref:System.Double> structure so that it can specify better  precision than the `CStr` keyword uses. The default is 15 digits, but the "G17" format extends it to 17 digits.  
   
@@ -49,7 +49,7 @@ This page lists some common problems that can occur when you perform operations 
   
  The following example demonstrates the potential imprecision of floating-point operands.  
   
- [!code-vb[VbVbalrDataTypes#11](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_2.vb)]  
+ [!code-vb[VbVbalrDataTypes#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#11)]  
   
  The previous example uses the <xref:System.Double.ToString%2A> method of the <xref:System.Double> structure so that it can specify better precision than the `CStr` keyword uses. The default is 15 digits, but the "G17" format extends it to 17 digits.  
   
@@ -83,7 +83,7 @@ This page lists some common problems that can occur when you perform operations 
   
  The following example demonstrates both unsuccessful and successful assignments of a literal to a `Char` variable.  
   
- [!code-vb[VbVbalrDataTypes#12](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_3.vb)]  
+ [!code-vb[VbVbalrDataTypes#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#12)]  
   
  There is always a risk in using narrowing conversions, because they can fail at run time. For example, a conversion from `String` to `Char` can fail if the `String` value contains more than one character. Therefore, it is better programming to use the `C` type character.  
   

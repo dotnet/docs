@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugEval2 Interface1"
+title: "ICorDebugEval2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugEval2"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugEval2 Interface1
+# ICorDebugEval2 Interface
+
 Extends "ICorDebugEval" to provide support for generic types.  
   
 ## Methods  

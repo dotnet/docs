@@ -3,7 +3,7 @@ title: "Scope of Default Namespaces in C#1"
 ms.date: 07/20/2015
 ms.assetid: fe826236-830f-457a-9027-7ad62c909fae
 ---
-# Scope of Default Namespaces in C#
+# Scope of Default Namespaces in C\#
 Default namespaces as represented in the XML tree are not in scope for queries. If you have XML that is in a default namespace, you still must declare an <xref:System.Xml.Linq.XNamespace> variable, and combine it with the local name to make a qualified name to be used in the query.  
   
  One of the most common problems when querying XML trees is that if the XML tree has a default namespace, the developer sometimes writes the query as though the XML were not in a namespace.  

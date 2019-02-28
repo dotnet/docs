@@ -40,7 +40,7 @@ In your application design, you may find it necessary to use a single event hand
   
 6.  Add the appropriate code to the event handler.  
   
-### To connect multiple events to a single event handler in C#  
+### To connect multiple events to a single event handler in C\#
   
 1.  Select the control to which you want to connect an event handler.  
   

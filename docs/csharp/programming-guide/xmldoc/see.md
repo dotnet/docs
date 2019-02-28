@@ -30,7 +30,7 @@ ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
   
  The following example shows a \<see> tag within a summary section.  
   
- [!code-csharp[csProgGuideDocComments#12](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/see_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#12)]  
   
 ## See also
 

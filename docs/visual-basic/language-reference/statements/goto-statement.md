@@ -54,7 +54,7 @@ Valid and invalid branches in Try constructions
 ## Example  
  The following example uses the `GoTo` statement to branch to line labels in a procedure.  
   
- [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/goto-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#31)]  
   
 ## See also
 - [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)

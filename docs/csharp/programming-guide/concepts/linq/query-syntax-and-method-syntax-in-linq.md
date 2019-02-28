@@ -14,7 +14,7 @@ Most queries in the introductory Language Integrated Query ([!INCLUDE[vbteclinq]
 ## Standard Query Operator Extension Methods  
  The following example shows a simple *query expression* and the semantically equivalent query written as a *method-based query*.  
   
- [!code-csharp[csLINQGettingStarted#22](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/query-syntax-and-method-syntax-in-linq_1.cs)]  
+ [!code-csharp[csLINQGettingStarted#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#22)]  
   
  The output from the two examples is identical. You can see that the type of the query variable is the same in both forms: <xref:System.Collections.Generic.IEnumerable%601>.  
   

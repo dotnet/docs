@@ -4,7 +4,7 @@ description: Learn how to install F# based on your environment.
 ms.date: 08/28/2018
 ---
 
-# Install F# #
+# Install F\#
 
 You can install F# in multiple ways, depending on your environment.
 

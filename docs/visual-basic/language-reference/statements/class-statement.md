@@ -99,7 +99,7 @@ End Class
 ## Example  
  The following example uses a `Class` statement to define a class and several members.  
   
- [!code-vb[VbVbalrStatements#62](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/class-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#62)]  
   
 ## See also
 - [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

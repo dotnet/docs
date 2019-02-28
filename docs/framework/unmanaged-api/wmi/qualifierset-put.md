@@ -56,8 +56,8 @@ HRESULT QualifierSet_Put (
 | `WBEM_FLAVOR_OVERRIDABLE` | 0 | The qualifier can be overridden in a derived class or instance. **This is the default value.** |
 | `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE` | 1 | The qualifier is propagated to instances. |
 | `WBEM_FLAVOR_GLAG_PROPAGATE_TO_DERIVED_CLASS` | 2 | The qualifier is propagated to derived classes. |
-| `WBEM_FLAVOR_NOT_OVERRIDABLE | 0x10 | The qualifier cannot be overridden in a derived class or instance. |
-| `WBEM_FLAVOR_AMENDED | 0x80 | The qualifier is localized. |
+| `WBEM_FLAVOR_NOT_OVERRIDABLE` | 0x10 | The qualifier cannot be overridden in a derived class or instance. |
+| `WBEM_FLAVOR_AMENDED` | 0x80 | The qualifier is localized. |
 
 ## Return value
 

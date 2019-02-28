@@ -226,7 +226,7 @@ Console.WriteLine("RSquared: " + metrics.RSquared);
 The `Transform()` method makes predictions for multiple provided input rows of a test dataset. Once you have the prediction set, you call the `Evaluate()` method to assess the model, which compares the predicted values with the actual labels in the test dataset and returns metrics on how the model is performing.
 
 The print statements display your evaluation metrics in the console, which should look similar to the following:
-![evaluation metrics](./media/evalmetrics.png)
+![evaluation metrics](./media/movie-recommendation/evalmetrics.png)
 
 In this output, there are 20 iterations. In each iteration, the measure of error decreases and converges closer and closer to 0.
 

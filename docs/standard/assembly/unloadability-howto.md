@@ -242,6 +242,6 @@ This example is used in the debugging above.
 
 ## Program loaded into the TestAssemblyLoadContext
 
-This is the `test.dll` passed to the `ExecuteAndUnload` method in the main testing program.
+The following code represents the `test.dll` passed to the `ExecuteAndUnload` method in the main testing program.
 
 [!code-csharp[Program loaded into the TestAssemblyLoadContext](~/samples/snippets/standard/assembly/unloading/unloadability_issues_example_test.cs)]

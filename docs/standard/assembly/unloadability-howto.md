@@ -181,7 +181,7 @@ Another case that can prevent unloading of an `AssemblyLoadContext` is when a th
 ```
 
 The command means "apply to all threads the `!clrstack` command". Here is the output of that command for our example. Unfortunately, LLDB on Unix doesn't have any way to apply a command to all threads, so you'll need to resort to manually switching threads and repeating the `clrstack` command.
-You should ignore all threads where the debugger says "Unable to walk the managed stack."
+Ignore all threads where the debugger says "Unable to walk the managed stack."
 
 ```console
 OS Thread Id: 0x6ba8 (0)

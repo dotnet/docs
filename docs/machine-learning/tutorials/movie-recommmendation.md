@@ -99,7 +99,7 @@ In machine learning, the columns that are used to make a prediction are called [
 
 You want to predict movie ratings, so the rating column is the `Label`. The other three columns, `userId`, `movieId`, and `timestamp` are all `Features` used to predict the `Label`.
 
-![preview of data](./media/movie-recommendation/datatable.png)
+![preview of data](./media/movie-recommendation/datatable2.png)
 
 It is up to you to decide which Features you think can best be used to predict the Label (you can read more about feature selection [here]()). In this case, you should eliminate the `timestamp` column as a `Feature` because the timestamp does not really affect how a user rates a given movie and thus would not contribute to making a more accurate prediction.
 

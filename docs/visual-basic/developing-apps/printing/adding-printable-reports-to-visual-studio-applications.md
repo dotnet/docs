@@ -8,9 +8,7 @@ ms.assetid: 93928405-ef41-495e-bce2-9d43d5a7080a
 ---
 # Adding Printable Reports to Visual Studio Applications
 Visual Studio supports a variety of reporting solutions to help you add rich data reporting to your Visual Basic applications. You can create and add reports using ReportViewer controls, Crystal Reports, or SQL Server Reporting Services.  
-  
-> [!NOTE]
->  SQL Server Reporting Services is part of SQL Server 2005 rather than Visual Studio. Reporting Services not installed on your system unless you have installed SQL Server 2005.  
+
   
 ## Overview of Microsoft Reporting Technology in Visual Basic Applications  
  Choose from the following approaches to use a Microsoft reporting technology in your application:  
@@ -70,9 +68,6 @@ Visual Studio supports a variety of reporting solutions to help you add rich dat
   
 ### Creating Reports in Visual Studio for Reporting Services  
  To build reports that run on a report server, you create report definition (.rdl) files in Visual Studio through the Business Intelligence Development Studio, which is included with SQL Server 2005.  
-  
-> [!NOTE]
->  You must have SQL Server 2005 installed in order to use SQL Server Reporting Services and the Business Intelligence Development Studio.  
   
  The Business Intelligence Development Studio adds project templates that are specific to SQL Server components. To create reports, you can choose from the **Report Server Project** or **Report Server Project Wizard** templates. You can specify data source connections and queries to a variety of data source types, including SQL Server, Oracle, Analysis Services, XML, and SQL Server Integration Services. A **Data** tab, **Layout** tab, and **Preview** tab allow you to define data, create a report layout, and preview the report all in the same workspace.  
   

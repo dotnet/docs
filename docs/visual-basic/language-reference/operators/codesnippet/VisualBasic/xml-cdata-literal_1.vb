@@ -1,1 +1,0 @@
-        Dim cdata As XCData = <![CDATA[Can contain literal <XML> tags]]>

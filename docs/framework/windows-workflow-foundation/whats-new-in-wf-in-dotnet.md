@@ -1,4 +1,4 @@
-﻿---
+---
 title: "What's New in Windows Workflow Foundation in .NET 4.5"
 ms.date: "03/30/2017"
 ms.assetid: 195c43a8-e0a8-43d9-aead-d65a9e6751ec

@@ -101,7 +101,7 @@ You want to predict movie ratings, so the rating column is the `Label`. The othe
 
 ![preview of data](./media/movie-recommendation/datatable2.png)
 
-It is up to you to decide which Features you think can best be used to predict the Label (you can read more about feature selection [here]()). In this case, you should eliminate the `timestamp` column as a `Feature` because the timestamp does not really affect how a user rates a given movie and thus would not contribute to making a more accurate prediction.
+It is up to you to decide which `Features` you think can best be used to predict the `Label` (you can read more about feature selection [here]()). In this case, you should eliminate the `timestamp` column as a `Feature` because the timestamp does not really affect how a user rates a given movie and thus would not contribute to making a more accurate prediction.
 
 Create a new class, `MovieRating`, which specifies an input data class. LoadColumn specifies which columns (by column index) in the dataset should be loaded. The userId and movieId columns are your Features (the inputs you will give the model to predict the Label), and the rating column is the Label that you will predict (the output of the model).
 

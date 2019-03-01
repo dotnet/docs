@@ -7,7 +7,7 @@ ms.date: 11/22/2016
 ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
 ---
 
-# Lambda expressions #
+# Lambda expressions
 
 A *lambda expression* is a block of code (an expression or a statement block) that is treated as an object. It can be passed as an argument to methods, and it can also be returned by method calls. Lambda expressions are used extensively for:
 
@@ -27,7 +27,7 @@ Or you can pass it directly as a method argument:
 
 [!code-csharp[csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/lambda2.cs#2)]
 
-## Expression lambdas ##
+## Expression lambdas
 
  A lambda expression with an expression on the right side of the => operator is called an *expression lambda*. Expression lambdas are used extensively in the construction of [expression trees](expression-trees.md). An expression lambda returns the result of the expression and takes the following basic form:
 
@@ -49,7 +49,7 @@ Ordinarily, the compiler uses type inference in determining parameter types. How
 
 Note in the previous example that the body of an expression lambda can consist of a method call. However, if you are creating expression trees that are evaluated outside of the .NET Framework, such as in SQL Server or Entity Framework (EF), you should refrain from using method calls in lambda expressions, since the methods may have no meaning outside the context of the .NET implementation. If you do choose to use method calls in this case, be sure to test them thoroughly to ensure that the method calls can be successfully resolved.
 
-## Statement lambdas ##
+## Statement lambdas
 
 A statement lambda resembles an expression lambda except that the statement(s) is enclosed in braces:
 
@@ -63,7 +63,7 @@ The body of a statement lambda can consist of any number of statements; however,
 
 Statement lambdas, like anonymous methods, cannot be used to create expression trees.
 
-## Async lambdas ##
+## Async lambdas
 
 You can easily create lambda expressions and statements that incorporate asynchronous processing by using the [async](language-reference/keywords/async.md) and [await](language-reference/keywords/await.md) keywords. For example, the example calls a `ShowSquares` method that executes asynchronously.
 
@@ -71,7 +71,7 @@ You can easily create lambda expressions and statements that incorporate asynchr
 
 For more information about how to create and use async methods, see [Asynchronous programming with async and await](programming-guide/concepts/async/index.md).
 
-## Lambda expressions and tuples ##
+## Lambda expressions and tuples
 
 Starting with C# 7.0, the C# language provides built-in support for tuples. You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components.
 
@@ -85,7 +85,7 @@ Ordinarily, the fields of a tuple are named `Item1`, `Item2`, etc. You can, howe
 
 For more information on support for tuples in C#, see [C# Tuple types](tuples.md).
 
-## Lambdas with the standard query operators ##
+## Lambdas with the standard query operators
 
 LINQ to Objects, among other implementations, have an input parameter whose type is one of the <xref:System.Func%601> family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are very useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the <xref:System.Func%601> delegate, whose syntax is:
 
@@ -113,7 +113,7 @@ The following example specifies multiple input parameters by enclosing them in p
 
 [!code-csharp[csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/query1.cs#6)]
 
-## Type inference in lambda expressions ##
+## Type inference in lambda expressions
 
 When writing lambdas, you often do not have to specify a type for the input parameters because the compiler can infer the type based on the lambda body, the parameter types, and other factors, as described in the C# Language Specification. For most of the standard query operators, the first input is the type of the elements in the source sequence. If you are querying an `IEnumerable<Customer>`, then the input variable is inferred to be a `Customer` object, which means you have access to its methods and properties:
 
@@ -129,7 +129,7 @@ The general rules for type inference for lambdas are:
 
 Note that lambda expressions in themselves do not have a type because the common type system has no intrinsic concept of "lambda expression." However, it is sometimes convenient to speak informally of the "type" of a lambda expression. In these cases the type refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.
 
-## Variable Scope in Lambda Expressions ##
+## Variable Scope in Lambda Expressions
 
 Lambdas can refer to *outer variables* (see [Anonymous methods](programming-guide/statements-expressions-operators/anonymous-methods.md)) that are in scope in the method that defines the lambda function, or in scope in the type that contains the lambda expression. Variables that are captured in this manner are stored for use in the lambda expression even if the variables would otherwise go out of scope and be garbage collected. An outer variable must be definitely assigned before it can be consumed in a lambda expression. The following example demonstrates these rules.
 
@@ -147,7 +147,7 @@ Lambdas can refer to *outer variables* (see [Anonymous methods](programming-guid
 
 - A lambda expression cannot contain a `goto` statement, `break` statement, or `continue` statement that is inside the lambda function if the jump statement’s target is outside the block. It is also an error to have a jump statement outside the lambda function block if the target is inside the block.
 
-## See also ##
+## See also
 
 - [LINQ (Language-Integrated Query)](../standard/using-linq.md)
 - [Anonymous methods](programming-guide/statements-expressions-operators/anonymous-methods.md)

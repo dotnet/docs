@@ -36,7 +36,7 @@ Instance constructors are used to create and initialize any instance member vari
 ## Example 1  
  The following example demonstrates a class with two class constructors, one without arguments and one with two arguments.  
   
- [!code-csharp[csProgGuideObjects#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/instance-constructors_5.cs)]  
+ [!code-csharp[csProgGuideObjects#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#4)]  
   
 ## Example 2  
  In this example, the class `Person` does not have any constructors, in which case, a default constructor is automatically provided and the fields are initialized to their default values.  

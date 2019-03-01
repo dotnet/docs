@@ -2052,7 +2052,7 @@ Constructors in CLS-compliant classes and structures must follow these rules:
 
 Properties in CLS-compliant types must follow these rules:
 
-* A property must have a setter, a getter, or both. In an assembly, these are implemented as special methods, which means that they will appear as separate methods (the getter is named `get`\_*propertyname* and the setter is `set*\_*propertyname*) marked as `SpecialName` in the assembly's metadata. The C# compiler enforces this rule automatically without the need to apply the [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) attribute. 
+* A property must have a setter, a getter, or both. In an assembly, these are implemented as special methods, which means that they will appear as separate methods (the getter is named `get`\_*propertyname* and the setter is `set`\_*propertyname*) marked as `SpecialName` in the assembly's metadata. The C# compiler enforces this rule automatically without the need to apply the <xref:System.CLSCompliantAttribute> attribute. 
 
 * A property's type is the return type of the property getter and the last argument of the setter. These types must be CLS compliant, and arguments cannot be assigned to the property by reference (that is, they cannot be managed pointers). 
 

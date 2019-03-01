@@ -261,7 +261,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode%2A> method throws an exception if the HTTP response was unsuccessful. If the <xref:System.Net.Http.HttpResponseMessage.Content%2A> is not `null`, this method will also call <xref:System.Net.Http.HttpResponseMessage.Dispose%2A> to free managed and unmanaged resources.  
+ The <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode%2A> method throws an exception if the HTTP response was unsuccessful. In .NET Framework and .NET Core 2.2 and earlier versions, if the <xref:System.Net.Http.HttpResponseMessage.Content%2A> is not `null`, this method will also call <xref:System.Net.Http.HttpResponseMessage.Dispose%2A> to free managed and unmanaged resources. Starting with .NET Core 3.0, the content will not be disposed. 
   
  ]]></format>
         </remarks>

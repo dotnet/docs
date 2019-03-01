@@ -3076,8 +3076,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Is Assembly held in a collectible AssemblyLoadContext?</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this assembly is held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
+        <value><see langword="true" /> if this assembly is held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -17,10 +17,10 @@ The following provides an overview of C#’s type system.
     - Simple Types
         * Signed integral: `sbyte`, `short`, `int`, `long`
         * Unsigned integral: `byte`, `ushort`, `uint`, `ulong`
-		* Unicode characters: `char`
+        * Unicode characters: `char`
         * IEEE floating point: `float`, `double`
         * High-precision decimal: `decimal`
-		* Boolean: `bool`
+        * Boolean: `bool`
     - Enum types
         * User-defined types of the form `enum E {...}`
     - Struct types
@@ -30,13 +30,13 @@ The following provides an overview of C#’s type system.
 * Reference types
     - Class types
         * Ultimate base class of all other types: `object`
-		* Unicode strings: `string`
+        * Unicode strings: `string`
         * User-defined types of the form `class C {...}`
     - Interface types
         * User-defined types of the form `interface I {...}`
-	- Array types
+    - Array types
     	* Single- and multi-dimensional, for example, `int[]` and `int[,]`
-	- Delegate types
+    - Delegate types
         * User-defined types of the form `delegate int D(...)`
 
 The eight integral types provide support for 8-bit, 16-bit, 32-bit, and 64-bit values in signed or unsigned form.
@@ -63,10 +63,10 @@ This summarizes C#’s numeric types.
     - `ulong`  : 64 bits, range from 0 to 18,446,744,073,709,551,615
 * Floating point
     - `float`  : 32 bits, range from 1.5 × 10<sup>-45</sup> to 3.4 × 10<sup>38</sup>,    7-digit precision
-	- `double` : 64 bits, range from 5.0 × 10<sup>-324</sup> to 1.7 × 10<sup>308</sup>, 15-digit precision
+    - `double` : 64 bits, range from 5.0 × 10<sup>-324</sup> to 1.7 × 10<sup>308</sup>, 15-digit precision
 * Decimal
     - `decimal` : 128 bits, range is at least -7.9 × 10<sup>-28</sup> to 7.9 × 10<sup>28</sup>, with at least 28-digit precision
-    
+
 C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Five of C#’s categories of types are user-definable: class types, struct types, interface types, enum types, and delegate types.
 
 A `class` type defines a data structure that contains data members (fields) and function members (methods, properties, and others). Class types support single inheritance and polymorphism, mechanisms whereby derived classes can extend and specialize base classes.
@@ -110,6 +110,6 @@ There are several kinds of *variables* in C#, including fields, array elements, 
 * Delegate type
     - A `null` reference or a reference to an instance of a compatible delegate type
 
->[!div class="step-by-step"]
->[Previous](program-structure.md)
->[Next](expressions.md)
+> [!div class="step-by-step"]
+> [Previous](program-structure.md)
+> [Next](expressions.md)

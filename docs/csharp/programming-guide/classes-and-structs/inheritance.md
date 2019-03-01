@@ -29,7 +29,7 @@ Class inheritance
   
  The following example shows how the class relationships demonstrated in the previous illustration are expressed in C#. The example also shows how `WorkItem` overrides the virtual method <xref:System.Object.ToString%2A?displayProperty=nameWithType>, and how the `ChangeRequest` class inherits the `WorkItem` implementation of the method.  
   
- [!code-csharp[csProgGuideInheritance#49](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/inheritance_1.cs)]  
+ [!code-csharp[csProgGuideInheritance#49](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#49)]  
   
 ## Abstract and Virtual Methods  
  When a base class declares a method as [virtual](../../../csharp/language-reference/keywords/virtual.md), a derived class can [override](../../../csharp/language-reference/keywords/override.md) the method with its own implementation. If a base class declares a member as [abstract](../../../csharp/language-reference/keywords/abstract.md), that method must be overridden in any non-abstract class that directly inherits from that class. If a derived class is itself abstract, it inherits abstract members without implementing them. Abstract and virtual members are the basis for polymorphism, which is the second primary characteristic of object-oriented programming. For more information, see [Polymorphism](../../../csharp/programming-guide/classes-and-structs/polymorphism.md).  

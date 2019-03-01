@@ -7,7 +7,7 @@ ms.assetid: eea9819b-a78a-4552-bf13-8837fc0e7a37
 This topic extends the previous queries to do something useful: find all occurrences of a string in the document.  
   
 ## Example  
- This example processes a WordprocessingML document, to find all the occurences of a specific piece of text in the document. To do this, we use a query that finds the string "Hello". This example builds on the previous examples in this tutorial. The new query is called out in comments in the code below.  
+ This example processes a WordprocessingML document, to find all the occurrences of a specific piece of text in the document. To do this, we use a query that finds the string "Hello". This example builds on the previous examples in this tutorial. The new query is called out in comments in the code below.  
   
  For instructions for creating the source document for this example, see [Creating the Source Office Open XML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md).  
   

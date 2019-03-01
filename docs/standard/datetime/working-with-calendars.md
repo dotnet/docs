@@ -317,6 +317,37 @@ With gannen support in formatting operations disabled, the previous example disp
 Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
 ```
 
+.NET has also been updated so that date and time parsing operations support strings that contain the year represented as either "1" or Gannen. Although you should not need to do this, you can restore the previous behavior to recognizes only “1” as the first year of an era. You can do this as follows, depending on the version of .NET:
+
+- **.NET Core:** You can add the following to the *.netcore.runtime.json* config file:
+
+   ```json
+   "runtimeOptions": {
+      "configProperties": {
+         "Switch.System.Globalization.EnforceLegacyJapaneseDateParsing": true
+      } 
+   }
+   ```
+
+- **.NET Framework 4.6 or later:** You can set the following AppContext switch:
+
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <configuration>
+     <runtime>
+       <AppContextSwitchOverrides value="Switch.System.Globalization.EnforceLegacyJapaneseDateParsing=true" />
+     </runtime>
+   </configuration>
+   ```
+
+- **.NET Framework 4.5.2 or earlier:** You can set the following registry value:
+|  |  |
+|--|--|
+|Key | HKEY_LOCAL_MACHINE\Software\Microsoft.NETFramework\AppContext |
+|Name | Switch.System.Globalization.EnforceLegacyJapaneseDateParsing |
+|Type | REG_SZ |
+|Value | 1 | 
+
 ## See also
 
 - [How to: Display dates in non-Gregorian calendars](../../../docs/standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md)

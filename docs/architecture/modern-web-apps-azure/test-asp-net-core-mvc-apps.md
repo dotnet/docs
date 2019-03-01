@@ -29,32 +29,6 @@ Although it's a good idea to encapsulate your code that interacts with infrastru
 
 Integration tests will often have more complex setup and teardown procedures than unit tests. For example, an integration test that goes against an actual database will need a way to return the database to a known state before each test run. As new tests are added and the production database schema evolves, these test scripts will tend to grow in size and complexity. In many large systems, it is impractical to run full suites of integration tests on developer workstations before checking in changes to shared source control. In these cases, integration tests may be run on a build server.
 
-The `LocalFileImageService` implementation class implements the logic for fetching and returning the bytes of an image file from a particular folder given an id:
-
-```csharp
-public class LocalFileImageService : IImageService
-{
-    private readonly IHostingEnvironment _env;
-    public LocalFileImageService(IHostingEnvironment env)
-    {
-        _env = env;
-    }
-    public byte[] GetImageBytesById(int id)
-    {
-        try
-        {
-            var contentRoot = _env.ContentRootPath + "//Pics";
-            var path = Path.Combine(contentRoot, id + ".png");
-            return File.ReadAllBytes(path);
-        }
-        catch (FileNotFoundException ex)
-        {
-            throw new CatalogImageMissingException(ex);
-        }
-    }
-}
-```
-
 ### Functional tests
 
 Integration tests are written from the perspective of the developer, to verify that some components of the system work correctly together. Functional tests are written from the perspective of the user, and verify the correctness of the system based on its requirements. The following excerpt offers a useful analogy for how to think about functional tests, compared to unit tests:

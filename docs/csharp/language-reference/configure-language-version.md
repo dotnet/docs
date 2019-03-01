@@ -8,7 +8,7 @@ ms.date: 02/28/2019
 
 The C# compiler determines a default language version based on your project's target framework or frameworks. When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. When your project doesn't target a preview framework, the language version used is the latest minor version.
 
-For example, during the preview period for .NET Core 3.0, any project that targets `netcoreapp3.0` or `netstandard2.1` (both in preview), the C# 8.0 language (in preview) will be used. Projects targeting any released version will use C# 7.3 (the latest released version). This behavior means that any project targeting .NET Framework will use latest (C# 7.3). 
+For example, during the preview period for .NET Core 3.0, any project that targets `netcoreapp3.0` or `netstandard2.1` (both in preview) will use the C# 8.0 language (also in preview). Projects targeting any released version will use C# 7.3 (the latest released version). This behavior means that any project targeting .NET Framework will use latest (C# 7.3). 
 
 This capability decouples the decision to install new versions of the SDK and tools in your development environment from the decision to incorporate new language features in a project. You can install the latest SDK and tools on your build machine. Each project can be configured to use a specific version of the language for its build. The default behavior means that any language features that rely on new types or new CLR behavior are enabled only when projects target those frameworks.
 

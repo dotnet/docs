@@ -40,8 +40,7 @@ Internet Explorer is an example of an unmanaged app that hosts the runtime (in t
 
 The following illustration shows the relationship of the common language runtime and the class library to your apps and to the overall system. The illustration also shows how managed code operates within a larger architecture.
 
-![Managed code within a larger architecture](../../../docs/framework/get-started/media/circle.gif "circle")
-.NET Framework in context
+![Managed code within a larger architecture](./media/overview/language-runtime-and-class-library-relationship.gif ".NET Framework in context")
 
 The following sections describe the main features of the .NET Framework in greater detail.
 

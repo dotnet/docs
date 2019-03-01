@@ -234,7 +234,7 @@ As you can see, the last thread has `test.Program.ThreadProc()`. This is a funct
 
 ## Example source with unloadability issues
 
-This example is used in the debugging above.
+The following code is used in the previous debugging example.
 
 ### Main testing program
 

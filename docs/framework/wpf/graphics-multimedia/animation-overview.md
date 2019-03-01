@@ -122,7 +122,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_102](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/MainWindow.xaml.cs#rectangleopacityfadeexamplecode_102)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_102](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/MainWindow.xaml.vb#rectangleopacityfadeexamplecode_102)]  
   
-3.  Use the <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached property to specify the property to animate. The following shows how the animation is configured to target the <xref:System.Windows.UIElement.Opacity%2A> property of the <xref:System.Windows.Shapes.Rectangle> in XAML.
+3.  Use the <xref:System.Windows.Media.Animation.Storyboard.TargetProperty> attached property to specify the property to animate. The following shows how the animation is configured to target the <xref:System.Windows.UIElement.Opacity%2A> property of the <xref:System.Windows.Shapes.Rectangle> in XAML.
   
      [!code-xaml[animation_ovws2#RectangleOpacityFadeExampleXaml_7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_7)]  
   
@@ -131,7 +131,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_103](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/MainWindow.xaml.cs#rectangleopacityfadeexamplecode_103)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_103](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/MainWindow.xaml.vb#rectangleopacityfadeexamplecode_103)]  
   
- For more information about <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> syntax and for additional examples, see the [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+ For more information about <xref:System.Windows.Media.Animation.Storyboard.TargetProperty> syntax and for additional examples, see the [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
   
 <a name="opacity_animation_step3"></a>   
 ### Part 3 (XAML): Associate the Storyboard with a Trigger  
@@ -254,7 +254,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
  The previous sections describe the different types of animations and their timing properties. This section shows how to apply the animation to the property that you want to animate. <xref:System.Windows.Media.Animation.Storyboard> objects provide one way to apply animations to properties. A <xref:System.Windows.Media.Animation.Storyboard> is a *container timeline* that provides targeting information for the animations it contains.  
   
 ### Targeting Objects and Properties  
- The <xref:System.Windows.Media.Animation.Storyboard> class provides the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached properties. By setting these properties on an animation, you tell the animation what to animate. However, before an animation can target an object, the object must usually be given a name.  
+ The <xref:System.Windows.Media.Animation.Storyboard> class provides the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty> attached properties. By setting these properties on an animation, you tell the animation what to animate. However, before an animation can target an object, the object must usually be given a name.  
   
  Assigning a name to a <xref:System.Windows.FrameworkElement> differs from assigning a name to a <xref:System.Windows.Freezable> object. Most controls and panels are framework elements; however, most purely graphical objects, such as brushes, transforms, and geometries, are freezable objects. If you are not sure whether a type is a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.Freezable>, refer to the **Inheritance Hierarchy** section of its reference documentation.  
   
@@ -296,7 +296,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
   
  Refer to the example in the previous section that showed how to animate the <xref:System.Windows.UIElement.Opacity%2A> of a rectangle. When the rectangle in the previous example is loaded, its event trigger applies the <xref:System.Windows.Media.Animation.Storyboard>. The timing system creates a copy of the <xref:System.Windows.Media.Animation.Storyboard> and its animation. These copies are frozen (made read-only) and <xref:System.Windows.Media.Animation.Clock> objects are created from them. These clocks do the actual work of animating the targeted properties.  
   
- The timing system creates a clock for the <xref:System.Windows.Media.Animation.DoubleAnimation> and applies it to the object and property that is specified by the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> of the <xref:System.Windows.Media.Animation.DoubleAnimation>. In this case, the timing system applies the clock to the <xref:System.Windows.UIElement.Opacity%2A> property of the object that is named "MyRectangle."  
+ The timing system creates a clock for the <xref:System.Windows.Media.Animation.DoubleAnimation> and applies it to the object and property that is specified by the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty> of the <xref:System.Windows.Media.Animation.DoubleAnimation>. In this case, the timing system applies the clock to the <xref:System.Windows.UIElement.Opacity%2A> property of the object that is named "MyRectangle."  
   
  Although a clock is also created for the <xref:System.Windows.Media.Animation.Storyboard>, the clock is not applied to any properties. Its purpose is to control its child clock, the clock that is created for the <xref:System.Windows.Media.Animation.DoubleAnimation>.  
   

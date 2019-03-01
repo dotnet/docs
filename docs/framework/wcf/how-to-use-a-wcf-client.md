@@ -130,7 +130,7 @@ The output from GettingStartedHost should look like this:
 
 ```text
 The service is ready.
-Pres <ENTER> to terminate service.
+Press <ENTER> to terminate service.
 
 Received Add(100,15.99)
 Return: 115.99

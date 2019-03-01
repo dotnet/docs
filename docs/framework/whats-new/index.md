@@ -1042,8 +1042,8 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
 - Flowchart Activity Designer or other Workflow Activity Designers may display all objects in their default locations as opposed to attached property values.
 
-
-### Clickonce-1
+<a name="clickonce-1" />
+### Clickonce
 
 ClickOnce has been updated to support TLS 1.1 and TLS 1.2 in addition to the 1.0 protocol, which it already supports. ClickOnce automatically detects which protocol is required; no extra steps within the ClickOnce application are required to enable TLS 1.1 and 1.2 support.
 

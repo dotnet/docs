@@ -32,7 +32,7 @@ You may have multiple command prompts, depending on the version of Visual Studio
 
 ### In Windows 8.1
 
-1. Go to the **Start** screen, by pressing the Windows logo key ![Windows logo](../get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard for example.
+1. Go to the **Start** screen, by pressing the Windows logo key ![Windows logo](./media/developer-command-prompt-for-vs/windows-logo-key.png "Windows logo key on the keyboard") on your keyboard for example.
 
 2. On the **Start** screen, press **Ctrl**+**Tab** to open the **Apps** list, and then enter `V`. This brings a list that includes all installed Visual Studio command prompts.
 
@@ -40,9 +40,9 @@ You may have multiple command prompts, depending on the version of Visual Studio
 
 ### In Windows 8
 
-1. Go to the **Start** screen, by pressing the Windows logo key ![Windows logo](../get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard for example.
+1. Go to the **Start** screen, by pressing the Windows logo key ![Windows logo](./media/developer-command-prompt-for-vs/windows-logo-key.png "Windows logo key on the keyboard") on your keyboard for example.
 
-2. On the **Start** screen, press the Windows logo key ![Windows logo](../get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") `+ Z`.
+2. On the **Start** screen, press the Windows logo key ![Windows logo](./media/developer-command-prompt-for-vs/windows-logo-key.png "Windows logo key on the keyboard") `+ Z`.
 
 3. Choose the **Apps view** icon at the bottom of the screen and then enter `V`. This brings a list that includes all installed Visual Studio command prompts.
 

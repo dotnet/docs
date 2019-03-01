@@ -81,7 +81,7 @@
   
 -   [Formatting dates and times](#Formatting_dates_times)  
   
--   [Format strings and DateTimeFormatInfo properties](#properties)  
+-   [Format strings and DateTimeFormatInfo properties](#format-strings-and-datetimeformatinfo-properties)  
   
 -   [Modifying DateTimeFormatInfo properties](#Modifying)  
   
@@ -219,7 +219,6 @@
  [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/formatprovider1.cs#9)]
  [!code-vb[System.Globalization.DateTimeFormatInfo.Class#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/formatprovider1.vb#9)]  
   
-<a name="properties"></a>   
 ## Format strings and DateTimeFormatInfo properties  
  The <xref:System.Globalization.DateTimeFormatInfo> object includes three kinds of properties that are used in formatting operations with date and time values:  
   
@@ -263,7 +262,7 @@
   
 1.  Create a read/write copy of a <xref:System.Globalization.DateTimeFormatInfo> object whose formatting conventions you want to modify. (See the [Instantiating a DateTimeFormatInfo object](#instantiating) section.)  
   
-2.  Modify the property or properties that are used to produce the desired result string. (For information about how formatting methods use <xref:System.Globalization.DateTimeFormatInfo> properties to define result strings, see the previous section, [Format strings and DateTimeFormatInfo properties](#properties).)  
+2.  Modify the property or properties that are used to produce the desired result string. (For information about how formatting methods use <xref:System.Globalization.DateTimeFormatInfo> properties to define result strings, see the previous section, [Format strings and DateTimeFormatInfo properties](#format-strings-and-datetimeformatinfo-properties).)  
   
 3.  Use the custom <xref:System.Globalization.DateTimeFormatInfo> object you created as the <xref:System.IFormatProvider> argument in calls to formatting methods.  
   

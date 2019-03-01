@@ -97,7 +97,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
   
 <a name="opacity_animation_step2"></a>   
 ### Part 2: Create a Storyboard  
- To apply an animation to an object, you create a <xref:System.Windows.Media.Animation.Storyboard> and use the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached properties to specify the object and property to animate.  
+ To apply an animation to an object, you create a <xref:System.Windows.Media.Animation.Storyboard> and use the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty> attached properties to specify the object and property to animate.  
   
 1.  Create the <xref:System.Windows.Media.Animation.Storyboard> and add the animation as its child. The following shows how to create the <xref:System.Windows.Media.Animation.Storyboard> in XAML.  
   

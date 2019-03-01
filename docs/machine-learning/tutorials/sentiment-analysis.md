@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a sentiment analysis binary classification scenario
 description: Discover how to use ML.NET in a binary classification scenario to understand how to use sentiment prediction to take the appropriate action.
-ms.date: 02/15/2019
+ms.date: 03/01/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
@@ -13,7 +13,7 @@ This sample tutorial illustrates using ML.NET to create a sentiment classifier v
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
-This tutorial and sample is currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning github repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+This tutorial and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning github repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

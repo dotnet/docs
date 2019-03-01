@@ -33,6 +33,7 @@
 ## [Handling and throwing exceptions](standard/exceptions/)
 ## [Assemblies in .NET](standard/assembly/index.md)
 ### [.NET Assembly File Format](standard/assembly/file-format.md)
+### [How to: Use and Debug Assembly Unloadability in .NET Core](standard/assembly/unloadability-howto.md)
 ## [Garbage Collection](standard/garbage-collection/)
 ## [Generic types](standard/generics.md)
 ## [Delegates and lambdas](standard/delegates-lambdas.md)

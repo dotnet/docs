@@ -17,7 +17,7 @@ to common questions. In some cases, articles may be listed in multiple sections 
 
 * [Load data from a text file for machine learning processing.](load-data-from-text-file-ml-net.md)
 
-### Prepare data
+### Prepare the data
 
 * [Preprocess training data with normalizers to use in data processing.](normalizers-preprocess-data-ml-net.md)
 

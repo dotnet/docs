@@ -9,7 +9,7 @@ author: "BrucePerlerMS"
 
 Specifies service-level identity settings.
 
- \<system.identityModel>
+ \<system.identityModel>\
 \<identityConfiguration>
 
 ## Syntax

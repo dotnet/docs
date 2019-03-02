@@ -22,7 +22,7 @@ A *query* is an expression that retrieves data from a data source. Queries are u
   
  The following example shows how the three parts of a query operation are expressed in source code. The example uses an integer array as a data source for convenience; however, the same concepts apply to other data sources also. This example is referred to throughout the rest of this topic.  
   
- [!code-csharp[CsLINQGettingStarted#1](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/introduction-to-linq-queries_1.cs)]  
+ [!code-csharp[CsLINQGettingStarted#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#1)]  
   
  The following illustration shows the complete query operation. In [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] the execution of the query is distinct from the query itself; in other words you have not retrieved any data just by creating a query variable.  
   
@@ -52,7 +52,7 @@ IQueryable<Customer> custQuery =
 > [!NOTE]
 >  Types such as <xref:System.Collections.ArrayList> that support the non-generic <xref:System.Collections.IEnumerable> interface can also be used as a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] data source. For more information, see [How to: Query an ArrayList with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md).  
   
-##  <a name="query"></a> The Query  
+## <a name="query"></a> The Query  
  The query specifies what information to retrieve from the data source or sources. Optionally, a query also specifies how that information should be sorted, grouped, and shaped before it is returned. A query is stored in a query variable and initialized with a query expression. To make it easier to write queries, C# has introduced new query syntax.  
   
  The query in the previous example returns all the even numbers from the integer array. The query expression contains three clauses: `from`, `where` and `select`. (If you are familiar with SQL, you will have noticed that the ordering of the clauses is reversed from the order in SQL.) The `from` clause specifies the data source, the `where` clause applies the filter, and the `select` clause specifies the type of the returned elements. These and the other query clauses are discussed in detail in the [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md) section. For now, the important point is that in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], the query variable itself takes no action and returns no data. It just stores the information that is required to produce the results when the query is executed at some later point. For more information about how queries are constructed behind the scenes, see [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md).  

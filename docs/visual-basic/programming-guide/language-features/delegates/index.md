@@ -14,14 +14,14 @@ Delegates are objects that refer to methods. They are sometimes described as *ty
   
  Although you can create your own delegates, in most cases Visual Basic creates the delegate and takes care of the details for you. For example, an `Event` statement implicitly defines a delegate class named `<EventName>EventHandler` as a nested class of the class containing the `Event` statement, and with the same signature as the event. The `AddressOf` statement implicitly creates an instance of a delegate that refers to a specific procedure. The following two lines of code are equivalent. In the first line, you see the explicit creation of an instance of `Eventhandler`, with a reference to method `Button1_Click` sent as the argument. The second line is a more convenient way to do the same thing.  
   
- [!code-vb[VbVbalrDelegates#6](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegates_1.vb)]  
+ [!code-vb[VbVbalrDelegates#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#6)]  
   
  You can use the shorthand way of creating delegates anywhere the compiler can determine the delegate's type by the context.  
   
 ## Declaring Events that Use an Existing Delegate Type  
  In some situations, you may want to declare an event to use an existing delegate type as its underlying delegate. The following syntax demonstrates how:  
   
- [!code-vb[VbVbalrDelegates#7](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegates_2.vb)]  
+ [!code-vb[VbVbalrDelegates#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#7)]  
   
  This is useful when you want to route multiple events to the same handler.  
   
@@ -47,7 +47,7 @@ Delegates are objects that refer to methods. They are sometimes described as *ty
   
  The following example shows both `AddressOf` and lambda expressions used to specify the reference for a delegate.  
   
- [!code-vb[VbVbalrDelegates#15](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegates_3.vb)]  
+ [!code-vb[VbVbalrDelegates#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class2.vb#15)]  
   
  The signature of the function must match that of the delegate type. For more information about lambda expressions, see [Lambda Expressions](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md). For more examples of lambda expression and `AddressOf` assignments to delegates, see [Relaxed Delegate Conversion](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md).  
   

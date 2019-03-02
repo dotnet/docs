@@ -86,7 +86,7 @@ Next [ counter ]
   
  The following example illustrates the use of the `Continue For` and `Exit For` statements.  
   
- [!code-vb[VbVbalrStatements#115](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#115](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#115)]  
   
  You can put any number of `Exit For` statements in a `For`…`Next` loop. When used within nested `For`…`Next` loops, `Exit For` exits the innermost loop and transfers control to the next higher level of nesting.  
   
@@ -119,7 +119,7 @@ Next [ counter ]
   
  The default value of `step` is 1.  
   
-###  <a name="BKMK_Counter"></a> Counter Argument  
+### <a name="BKMK_Counter"></a> Counter Argument  
  The following table indicates whether `counter` defines a new local variable that’s scoped to the entire `For…Next` loop. This determination depends on whether `datatype` is present and whether `counter` is already defined.  
   
 |Is `datatype` present?|Is `counter` already defined?|Result (whether `counter` defines a new local variable that’s scoped to the entire `For...Next` loop)|  

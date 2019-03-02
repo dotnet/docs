@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "read-only indexers [C#]"
   - "accessors [C#]"
   - "properties [C#], read-only"
-  - "asymmetric accessor accesibility [C#]"
+  - "asymmetric accessor accessibility [C#]"
   - "indexers [C#], read-only"
 ms.assetid: 6e655798-e112-4301-a680-6310a6e012e1
 ---

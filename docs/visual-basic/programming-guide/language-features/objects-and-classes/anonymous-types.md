@@ -75,7 +75,7 @@ Visual Basic supports anonymous types, which enable you to create objects withou
 ### Read-Only Values  
  The values of key properties cannot be changed. For example, in `prod8` in the previous example, the `Name` and `Price` fields are `read-only`, but `OnHand` can be changed.  
   
- [!code-vb[VbVbalrAnonymousTypes#8](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-types_8.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#8)]  
   
 ## Anonymous Types from Query Expressions  
  Query expressions do not always require the creation of anonymous types. When possible, they use an existing type to hold the column data. This occurs when the query returns either whole records from the data source, or only one field from each record. In the following code examples, `customers` is a collection of objects of a `Customer` class. The class has many properties, and you can include one or more of them in the query result, in any order. In the first two examples, no anonymous types are required because the queries select elements of named types:  

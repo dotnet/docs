@@ -25,7 +25,7 @@ Indexers can be declared on an [interface](../../../csharp/language-reference/ke
 ## Example  
  The following example shows how to implement interface indexers.  
   
- [!code-csharp[csProgGuideIndexers#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/indexers-in-interfaces_2.cs)]  
+ [!code-csharp[csProgGuideIndexers#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideIndexers/CS/Indexers.cs#4)]  
   
  In the preceding example, you could use the explicit interface member implementation by using the fully qualified name of the interface member. For example:  
   

@@ -11,7 +11,7 @@
             string text = System.IO.File.ReadAllText(@"C:\Users\Public\TestFolder\WriteText.txt");
 
             // Display the file contents to the console. Variable text is a string.
-            System.Console.WriteLine("Contents of WriteText.txt = {0}", text);
+            System.Console.WriteLine("Contents of WriteText.txt = \n{0}", text);
 
             // Example #2
             // Read each line of the file into a string array. Each element

@@ -535,7 +535,7 @@ public class Color
 ```  
 
 <a name="BKMK_Iterators"></a> 
-##  Iterators  
+## Iterators  
  An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [yield return](../../../csharp/language-reference/keywords/yield.md) statement to return each element of the collection one at a time.  
   
  You call an iterator by using a [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement. Each iteration of the `foreach` loop calls the iterator. When a `yield return` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.  

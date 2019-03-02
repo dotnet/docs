@@ -28,7 +28,7 @@ helpviewer_keywords:
   - "<= operator [Visual Basic]"
   - "operators [Visual Basic], comparison"
   - "Is operator [Visual Basic]"
-  - "comparison operators [Visual Basic], Visual Basicl"
+  - "comparison operators [Visual Basic], Visual Basic"
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
 ---
 # Comparison Operators (Visual Basic)

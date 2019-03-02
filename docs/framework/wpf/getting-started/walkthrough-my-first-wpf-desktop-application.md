@@ -1,6 +1,6 @@
 ---
 title: Create a WPF application in Visual Studio
-ms.date: 10/26/2018
+ms.date: 03/01/2019
 dev_langs:
   - "csharp"
   - "vb"
@@ -28,7 +28,7 @@ This walkthrough includes the following steps:
 
 - Create styles for a consistent appearance throughout an application's UI.
 
-- Bind the UI to data to both populate the UI from data and keep the data and UI synchronized.
+- Bind the UI to data to both populate the UI from data and to keep the data and UI synchronized.
 
 By the end of the walkthrough, you'll have built a standalone Windows application that allows users to view expense reports for selected people. The application is composed of several WPF pages that are hosted in a browser-style window.
 
@@ -94,9 +94,9 @@ The first step is to create the application infrastructure, which includes an ap
 
     - Set the <xref:System.Windows.Window.Title%2A> property to "`ExpenseIt`".
 
-    - Set the <xref:System.Windows.FrameworkElement.Width%2A> property to 500 pixels.
-
     - Set the <xref:System.Windows.FrameworkElement.Height%2A> property to 350 pixels.
+
+    - Set the <xref:System.Windows.FrameworkElement.Width%2A> property to 500 pixels.
 
     - Remove the <xref:System.Windows.Controls.Grid> elements between the <xref:System.Windows.Navigation.NavigationWindow> tags.
 
@@ -281,6 +281,8 @@ The following illustration shows the controls you just created:
 
 ![ExpenseIt sample screen shot](../../../../docs/framework/wpf/getting-started/media/gettingstartedfigure2.png)
 
+4. Close the application to return to Visual Studio.
+
 ## Add an image and a title
 
 In this section, you'll update the home page UI with an image and a page title.
@@ -451,7 +453,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 1. Open *ExpenseReportPage.xaml*.
 
-2. Bind the content of the "Name" and "Department" <xref:System.Windows.Controls.Label> elements to the appropriate data source property. For more information about data binding, see [Data binding overview](../../../../docs/framework/wpf/data/data-binding-overview.md).
+2. Inside the <xref:System.Windows.Controls.Grid> element, bind the content of the "Name" and "Department" <xref:System.Windows.Controls.Label> elements to the appropriate data source property. For more information about data binding, see [Data binding overview](../../../../docs/framework/wpf/data/data-binding-overview.md).
 
     [!code-xaml[ExpenseIt#31](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseReportPage.xaml#31)]
 

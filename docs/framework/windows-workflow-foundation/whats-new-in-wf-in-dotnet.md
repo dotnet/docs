@@ -113,7 +113,7 @@ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], variables a
 
 The following screenshot shows the variable and argument designer context menu.
 
-![Variable and Argument Designer Context Menu](../../../docs/framework/windows-workflow-foundation/media/designercontextmenu.png "DesignerContextMenu")
+![Variable and Argument Designer Context Menu](./media/whats-new-in-wf-in-dotnet/designer-context-menu.png "Variable and argument designer context menu")
 
 ### <a name="BKMK_AutoSurround"></a> Auto-surround with Sequence
 
@@ -121,11 +121,11 @@ Since a workflow or certain container activities (such as <xref:System.Activitie
 
 The following screenshot shows a `WriteLine` activity in the `Body` of a `NoPersistScope`.
 
-![Auto&#45;surround drop location](../../../docs/framework/windows-workflow-foundation/media/autosurround1.png "AutoSurround1")
+![Auto&#45;surround drop location](./media/wf-features-in-the-rehosted-workflow-designer/auto-surround-write-line-activity.png "Auto-surround with WriteLine activity")
 
 The following screenshot shows the automatically created `Sequence` activity in the `Body` when a second `WriteLine` is dropped below the first.
 
-![Automatically created sequence activity](../../../docs/framework/windows-workflow-foundation/media/autosurround2.png "AutoSurround2")
+![Automatically created sequence activity](./media/wf-features-in-the-rehosted-workflow-designer/auto-surround-sequence-activity.png "Auto-surround with Sequence activity")
 
 ### <a name="BKMK_PanMode"></a> Pan Mode
 
@@ -133,7 +133,7 @@ To more easily navigate a large workflow in the designer, pan mode can be enable
 
 The following screenshot shows the pan button which is located at the bottom right corner of the workflow designer.
 
-![Pan button in workflow designer](../../../docs/framework/windows-workflow-foundation/media/panbutton.png "PanButton")
+![Pan button in workflow designer](./media/wf-features-in-the-rehosted-workflow-designer/pan-button.png "Use the pan button to move the visible portion of the workflow.")
 
 The middle mouse button or space bar can also be used to pan the workflow designer.
 
@@ -169,17 +169,17 @@ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], connections
 
 The following screenshot shows the attachment points that become visible when an activity is dragged from the toolbox.
 
-![Flowchart start node showing autoconnect points](../../../docs/framework/windows-workflow-foundation/media/autoconnect1.png "Autoconnect1")
+![Flowchart start node showing autoconnect points](./media/whats-new-in-wf-in-dotnet/auto-connect-points-start-node.png "Start node showing the attachments points visible when an activity is dragged from the toolbox")
 
 Activities can also be dragged onto connections between flowchart nodes and states to auto-insert the node between two other nodes. The following screenshot shows the highlighted connecting line where activities can be dragged from the toolbox and dropped.
 
-![Auto&#45;insert handle for dropping activities](../../../docs/framework/windows-workflow-foundation/media/autoinsert.png "Autoinsert")
+![Auto&#45;insert handle for dropping activities](./media/whats-new-in-wf-in-dotnet/auto-insert-connecting-line.png "Auto-insert a node between two other nodes.")
 
 ### <a name="BKMK_Annotations"></a> Designer Annotations
 
 To facilitate developing larger workflows, the designer now supports adding annotations to help keep track of the design process. Annotation can be added to activities, states, flowchart nodes, variables and arguments. The following screenshot shows the context menu used to add annotations to the designer.
 
-![Annotation context menu](../../../docs/framework/windows-workflow-foundation/media/annotationdialog.png "annotationdialog")
+![Annotation context menu](./media/whats-new-in-wf-in-dotnet/designer-annotations-context-menu.png "Context menu for adding annotations")
 
 ### Debugging states
 

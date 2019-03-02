@@ -129,17 +129,17 @@ For the purposes of C# and Visual Basic interop you can use the attributes `[<Op
 ```fsharp
 open System
 open System.Runtime.InteropServices
-type C = 
+type C =
     static member Foo([<Optional; DefaultParameterValue("Hello world")>] message) =
         printfn "%s" message
 ```
 
-You can also specify a new object as a default parameter value. For example, the `Foo` member could have an optional `CanceallationToken` as input instead:
+You can also specify a new object as a default parameter value. For example, the `Foo` member could have an optional `CancellationToken` as input instead:
 
 ```fsharp
 open System.Threading
 open System.Runtime.InteropServices
-type C = 
+type C =
     static member Foo([<Optional; DefaultParameterValue(CancellationToken())>] ct: CancellationToken) =
         printfn "%A" ct
 ```

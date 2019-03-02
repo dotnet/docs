@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Visual Basic, arrays"
 ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
 ---
+
 # Arrays in Visual Basic
 
 An array is a set of values, which are termed *elements*, that are logically related to each other. For example, an array may consist of the number of students in each grade in a grammar school; each element of the array is the number of students in a single grade. Similarly, an array may consist of a student's grades for a class; each element of the array is a single grade.
@@ -264,7 +265,7 @@ You can also combine a number of arrays into a single larger array. To do this, 
 > [!NOTE]
 > This section does not discuss joining a string array into a single string. For information on joining a string array, see the <xref:System.String.Join%2A?displayProperty=nameWithType> method.
 
-Before copying the elements of each array into the new array, you must first ensure that you have initialized the array so that it is large enough to accompodate the new array. You can do this in one of two ways:
+Before copying the elements of each array into the new array, you must first ensure that you have initialized the array so that it is large enough to accommodate the new array. You can do this in one of two ways:
 
 - Use the [`ReDim Preserve`](../../../language-reference/statements/redim-statement.md) statement to dynamically expand the array before adding new elements to it. This is the easiest technique, but it can result in performance degradation and excessive memory consumption when you are copying large arrays.
 - Calculate the total number of elements needed for the new large array, then add the elements of each source array to it.

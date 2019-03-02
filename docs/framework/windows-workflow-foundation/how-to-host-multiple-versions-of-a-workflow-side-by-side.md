@@ -35,7 +35,7 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
 > [!NOTE]
 >  Each step in the Getting Started tutorial depends on the previous steps. If you did not complete the previous steps you can download a completed version of the tutorial from [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
-###  <a name="BKMK_BackupCopy"></a> To make a copy of the NumberGuessWorkflowActivities project  
+### <a name="BKMK_BackupCopy"></a> To make a copy of the NumberGuessWorkflowActivities project  
   
 1.  Open the **WF45GettingStartedTutorial** solution in Visual Studio 2012 if it is not open.  
   
@@ -58,10 +58,10 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
 
 9. Re-open the **WF45GettingStartedTutorial** solution in Visual Studio 2012.
 
-###  <a name="BKMK_UpdateWorkflows"></a> To update the workflows
+### <a name="BKMK_UpdateWorkflows"></a> To update the workflows
  In this section, the workflow definitions are updated. The two `WriteLine` activities that give feedback on the user's guess are updated, and a new `WriteLine` activity is added that provides additional information about the game once the number is guessed.
 
-####  <a name="BKMK_UpdateStateMachine"></a> To update the StateMachine workflow
+#### <a name="BKMK_UpdateStateMachine"></a> To update the StateMachine workflow
 
 1.  In **Solution Explorer**, under the **NumberGuessWorkflowActivities** project, double-click **StateMachineNumberGuessWorkflow.xaml**.
 
@@ -103,7 +103,7 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
     Guess + " is correct. You guessed it in " + Turns + " turns."
     ```
 
-####  <a name="BKMK_UpdateFlowchart"></a> To update the Flowchart workflow
+#### <a name="BKMK_UpdateFlowchart"></a> To update the Flowchart workflow
 
 1.  In **Solution Explorer**, under the **NumberGuessWorkflowActivities** project, double-click **FlowchartNumberGuessWorkflow.xaml**.
 
@@ -139,7 +139,7 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
     Guess + " is correct. You guessed it in " + Turns + " turns."
     ```
 
-####  <a name="BKMK_UpdateSequential"></a> To update the Sequential workflow
+#### <a name="BKMK_UpdateSequential"></a> To update the Sequential workflow
 
 1.  In **Solution Explorer**, under the **NumberGuessWorkflowActivities** project, double-click **SequentialNumberGuessWorkflow.xaml**.
 
@@ -175,7 +175,7 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
     Guess + " is correct. You guessed it in " + Turns + " turns."
     ```
 
-###  <a name="BKMK_UpdateWorkflowVersionMap"></a> To update WorkflowVersionMap to include the previous workflow versions
+### <a name="BKMK_UpdateWorkflowVersionMap"></a> To update WorkflowVersionMap to include the previous workflow versions
 
 1.  Double-click **WorkflowVersionMap.cs** (or **WorkflowVersionMap.vb**) under the **NumberGuessWorkflowHost** project to open it.
 
@@ -543,7 +543,7 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
     }
     ```
 
-###  <a name="BKMK_BuildAndRun"></a> To build and run the application
+### <a name="BKMK_BuildAndRun"></a> To build and run the application
 
 1.  Press CTRL+SHIFT+B to build the application, and then CTRL+F5 to start.
 

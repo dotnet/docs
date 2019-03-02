@@ -35,7 +35,7 @@ The <xref:System.Transactions.TransactionScope> class provides a simple way to m
 ## Rolling back a transaction  
  If you want to rollback a transaction, you should not call the <xref:System.Transactions.TransactionScope.Complete%2A> method within the transaction scope. For example, you can throw an exception within the scope. The transaction in which it participates in will be rolled back.  
   
-##  <a name="ManageTxFlow"></a> Managing transaction flow using TransactionScopeOption  
+## <a name="ManageTxFlow"></a> Managing transaction flow using TransactionScopeOption  
  Transaction scope can be nested by calling a method that uses a <xref:System.Transactions.TransactionScope> from within a method that uses its own scope, as is the case with the `RootMethod` method in the following example,  
   
 ```csharp  

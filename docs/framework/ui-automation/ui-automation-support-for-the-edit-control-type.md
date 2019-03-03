@@ -64,7 +64,7 @@ The following table lists the control patterns required to be supported by all e
 |<xref:System.Windows.Automation.Provider.ITextProvider>|Depends|Edit controls should support the Text control pattern because detailed text information should always be available for clients.|
 |<xref:System.Windows.Automation.Provider.IValueProvider>|Depends|All edit controls that take a string must expose the Value pattern.|
 |<xref:System.Windows.Automation.Provider.IValueProvider.IsReadOnly%2A>|See notes.|This property must be set to indicate whether the control can have a value set programmatically or is editable by the user.|
-|<xref:System.Windows.Automation.Provider.IValueProvider.Value%2A>|See notes.|This property will return the textual contents of the edit control. If the `IsPasswordProperty` is set to `true`, this property must raise an `InvalidOpertationException` when requested.|
+|<xref:System.Windows.Automation.Provider.IValueProvider.Value%2A>|See notes.|This property will return the textual contents of the edit control. If the `IsPasswordProperty` is set to `true`, this property must raise an `InvalidOperationException` when requested.|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider>|Depends|All edit controls that take a numeric range must expose Range Value control pattern.|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider.Minimum%2A>|See notes.|This property must be the smallest value that the edit control's contents can be set to.|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider.Maximum%2A>|See notes.|This property must be the largest value that the edit control's contents can be set to.|

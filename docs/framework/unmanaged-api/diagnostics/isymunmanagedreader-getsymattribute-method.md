@@ -50,7 +50,7 @@ HRESULT GetSymAttribute (
  [out] A pointer to the variable that receives the attribute data.  
   
 ## Return Value  
- S_OK if the method succeeds; otherwise, E_FAIL or some other error code..  
+ S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  

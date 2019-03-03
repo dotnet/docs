@@ -22,7 +22,7 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  The following illustration shows the line, the ellipse, and the rectangle. Note that the color gradient repeats itself as the horizontal coordinate increases beyond 200.  
   
- ![Linear Gradient](../../../../docs/framework/winforms/advanced/media/cslineargradient1.png "cslineargradient1")  
+ ![Linear Gradient](./media/how-to-create-a-linear-gradient/gradient-ellipse-rectangle.png "Shows gradient in the line, ellipse, and rectangle.")  
   
 ### To use horizontal linear gradients  
   
@@ -47,7 +47,7 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  The following illustration shows the resulting ellipse and rectangle.  
   
- ![Linear Gradient](../../../../docs/framework/winforms/advanced/media/cslineargradient2.png "cslineargradient2")  
+ ![Linear Gradient](./media/how-to-create-a-linear-gradient/gradient-ellipse-rectangle.png "Shows gradient in the ellipse and rectangle.")  
   
 ### To customize linear gradients  
   
@@ -62,7 +62,7 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  The following illustration shows the line and the ellipse. Note that the color in the ellipse changes gradually as you move along any line that is parallel to the line passing through (0, 0) and (200, 100).  
   
- ![Linear Gradient](../../../../docs/framework/winforms/advanced/media/cslineargradient3.png "cslineargradient3")  
+ ![Linear Gradient](./media/how-to-create-a-linear-gradient/gradient-line-ellipse.png "Shows gradient in the line and ellipse.")  
   
 ### To create diagonal linear gradients  
   

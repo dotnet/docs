@@ -16,12 +16,6 @@ A *friend assembly* is an assembly that can access another assembly's [internal]
 > [!NOTE]
 >  When you compile an assembly (assembly `AssemblyB`) that will access internal types or internal members of another assembly (assembly *A*), you must explicitly specify the name of the output file (.exe or .dll) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. For more information, see [/out (C#)](../../../../csharp/language-reference/compiler-options/out-compiler-option.md) or [/out (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/out.md).  
 
-
-# [Tab1](#tab/tabid-1)
-Foo
-# [Tab2](#tab/tabid-2)
-Bar
----
  
 ```csharp  
 using System.Runtime.CompilerServices;  
@@ -49,7 +43,7 @@ public class ClassWithFriendMethod
 }  
 ```  
   
- Only assemblies that you explicitly specify as friends can access `internal` types and members. For example, if assembly B is a friend of assembly A and assembly C references assembly B, C does not have access to `internal` types in A.  
+ Only assemblies that you explicitly specify as friends can access `internal` (in C# or `Friend` in Visual Basic) types and members. For example, if assembly B is a friend of assembly A and assembly C references assembly B, C does not have access to `internal` (in C# or `Friend` in Visual Basic) types in A.  
   
  The compiler performs some basic validation of the friend assembly name passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute. If assembly *A* declares *B* as a friend assembly, the validation rules are as follows:  
   
@@ -57,9 +51,9 @@ public class ClassWithFriendMethod
   
      The friend assembly name that is passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute cannot be the strong name of assembly *B*: do not include the assembly version, culture, architecture, or public key token.  
   
--   If assembly *A* is not strong named, the friend assembly name should consist of only the assembly name. For more information, see [How to: Create Unsigned Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md).  
+-   If assembly *A* is not strong named, the friend assembly name should consist of only the assembly name. For more information, see [How to: Create Unsigned Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md) or [How to: Create Unsigned Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md).  
   
--   If assembly *B* is strong named, you must specify the strong-name key for assembly *B* by using the project setting or the command-line `/keyfile` compiler option. For more information, see [How to: Create Signed Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md).  
+-   If assembly *B* is strong named, you must specify the strong-name key for assembly *B* by using the project setting or the command-line `/keyfile` compiler option. For more information, see [How to: Create Signed Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md) or [How to: Create Signed Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md).  
   
  The <xref:System.Security.Permissions.StrongNameIdentityPermission> class also provides the ability to share types, with the following differences:  
   
@@ -67,15 +61,18 @@ public class ClassWithFriendMethod
   
 -   If there are hundreds of types in assembly *A* that you want to share with assembly *B*, you have to add <xref:System.Security.Permissions.StrongNameIdentityPermission> to all of them. If you use a friend assembly, you only need to declare the friend relationship once.  
   
--   If you use <xref:System.Security.Permissions.StrongNameIdentityPermission>, the types you want to share have to be declared as public. If you use a friend assembly, the shared types are declared as `internal`.  
+-   If you use <xref:System.Security.Permissions.StrongNameIdentityPermission>, the types you want to share have to be declared as public. If you use a friend assembly, the shared types are declared as `internal` (in C# or `Friend` in Visual Basic).  
   
- For information about how to access an assembly's `internal` types and methods from a module file (a file with the .netmodule extension), see [/moduleassemblyname (C#)](../../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md).  
+ For information about how to access an assembly's `internal` (in C# or `Friend` in Visual Basic) types and methods from a module file (a file with the .netmodule extension), see [/moduleassemblyname (C#)](../../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md) or [/moduleassemblyname (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md).  
   
 ## See also
 
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
 - <xref:System.Security.Permissions.StrongNameIdentityPermission>
 - [How to: Create Unsigned Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)
+- [How to: Create Unsigned Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)
 - [How to: Create Signed Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)
+- [How to: Create Signed Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)
 - [Assemblies in .NET](../../../../standard/assembly/index.md)
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

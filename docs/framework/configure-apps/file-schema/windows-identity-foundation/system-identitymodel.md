@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<system.identityModel>"
 ms.date: "03/30/2017"
 ms.assetid: 210ce7e9-d07b-400c-800f-5f525dcf95e8

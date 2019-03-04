@@ -62,7 +62,7 @@ An interface has the following properties:
  [How to: Explicitly Implement Members of Two Interfaces](how-to-explicitly-implement-members-of-two-interfaces.md)  
  Provides an example of how to explicitly implement members of interfaces with inheritance.  
   
-##  <a name="BKMK_RelatedSections"></a> Related Sections
+## <a name="BKMK_RelatedSections"></a> Related Sections
 
 - [Interface Properties](../classes-and-structs/interface-properties.md)  
 - [Indexers in Interfaces](../indexers/indexers-in-interfaces.md)  

@@ -1,9 +1,9 @@
 ---
-title: "<udpAnnoucementEndpoint>"
+title: "<udpAnnouncementEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: 5b3fa9c5-f372-4df9-a9d6-1e426063b721
 ---
-# \<udpAnnoucementEndpoint>
+# \<udpAnnouncementEndpoint>
 This configuration element defines a standard endpoint that is used by services to send announcement messages over a UDP binding. It has a fixed contract and supports two discovery versions. In addition it has a fixed UDP binding and a default address value as specified in the WS-Discovery specifications (WS-Discovery April 2005 or WS-Discovery version 1.1). You can specify the multicast address to use for sending and receiving the announcement messages.  
   
 \<system.ServiceModel>  
@@ -40,13 +40,13 @@ This configuration element defines a standard endpoint that is used by services 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<udpTransportSettings>](../../../../../docs/framework/configure-apps/file-schema/wcf/udptransportsettings.md)|A collection of settings that allow you to configure UDP transport for the UDP endpoint.|  
+|[\<udpTransportSettings>](udptransportsettings.md)|A collection of settings that allow you to configure UDP transport for the UDP endpoint.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
+|[\<standardEndpoints>](standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
 ## Example  
  The following example demonstrates a client listening for announcement over a UDP multicast transport with default multicast address, and UDP multicast transport with specified multicast address.  

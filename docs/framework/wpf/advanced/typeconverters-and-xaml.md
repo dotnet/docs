@@ -18,27 +18,22 @@ This topic introduces the purpose of type conversion from string as a general XA
  A XAML processor needs two pieces of information in order to process an attribute value. The first piece of information is the value type of the property that is being set. Any string that defines an attribute value and that is processed in XAML must ultimately be converted or resolved to a value of that type. If the value is a primitive that is understood by the XAML parser (such as a numeric value), a direct conversion of the string is attempted. If the value is an enumeration, the string is used to check for a name match to a named constant in that enumeration. If the value is neither a parser-understood primitive nor an enumeration, then the type in question must be able to provide an instance of the type, or a value, based on a converted string. This is done by indicating a type converter class. The type converter is effectively a helper class for providing values of another class, both for the XAML scenario and also potentially for code calls in .NET code.  
   
 ### Using Existing Type Conversion Behavior in XAML  
- Depending on your familiarity with the underlying XAML concepts, you may already be using type conversion behavior in basic application XAML without realizing it. For instance, WPF defines literally hundreds of properties that take a value of type <xref:System.Windows.Point>. A <xref:System.Windows.Point> is a value that describes a coordinate in a two-dimensional coordinate space, and it really just has two important properties: <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A>. When you specify a point in XAML, you specify it as a string with a delimiter (typically a comma) between the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> values you provide. For example: `<LinearGradientBrush StartPoint="0,0" EndPoint="1,1">`.  
+ Depending on your familiarity with the underlying XAML concepts, you may already be using type conversion behavior in basic application XAML without realizing it. For instance, WPF defines literally hundreds of properties that take a value of type <xref:System.Windows.Point>. A <xref:System.Windows.Point> is a value that describes a coordinate in a two-dimensional coordinate space, and it really just has two important properties: <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A>. When you specify a point in XAML, you specify it as a string with a delimiter (typically a comma) between the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> values you provide. For example: `<LinearGradientBrush StartPoint="0,0" EndPoint="1,1"/>`.  
   
  Even this simple type of <xref:System.Windows.Point> and its simple usage in XAML involve a type converter. In this case that is the class <xref:System.Windows.PointConverter>.  
   
  The type converter for <xref:System.Windows.Point> defined at the class level streamlines the markup usages of all properties that take <xref:System.Windows.Point>. Without a type converter here, you would need the following much more verbose markup for the same example shown previously:  
-  
- `<LinearGradientBrush>`  
-  
- `<LinearGradientBrush.StartPoint>`  
-  
- `<Point X="0" Y="0"/>`  
-  
- `</LinearGradientBrush.StartPoint>`  
-  
- `<LinearGradientBrush.EndPoint>`  
-  
- `<Point X="1" Y="1"/>`  
-  
- `</LinearGradientBrush.EndPoint>`  
-  
- `<LinearGradientBrush>`  
+
+```xaml
+<LinearGradientBrush>
+  <LinearGradientBrush.StartPoint>
+    <Point X="0" Y="0"/>
+  </LinearGradientBrush.StartPoint>
+  <LinearGradientBrush.EndPoint>
+    <Point X="1" Y="1"/>
+  </LinearGradientBrush.EndPoint>
+</LinearGradientBrush>
+ ```
   
  Whether to use the type conversion string or a more verbose equivalent syntax is generally a coding style choice. Your XAML tooling workflow might also influence how values are set. Some XAML tools tend to emit the most verbose form of the markup because it is easier to round-trip to designer views or its own serialization mechanism.  
   

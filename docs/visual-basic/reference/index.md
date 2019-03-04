@@ -21,7 +21,7 @@ This section provides links to reference information about various aspects of Vi
   
  [Visual Basic Language Specification](../../visual-basic/reference/language-specification/index.md)  
  Provides links to the complete Visual Basic language specification, which contains detailed information on all aspects of the language.  
-    
+  
 ## Related Sections  
  [General User Interface Elements (Visual Studio)](/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
  Contains topics for dialog boxes and windows used in Visual Studio.  

@@ -36,7 +36,7 @@ HRESULT CreateStream (
 );
 ```
 
-#### Parameters
+## Parameters
 
 `dwFlags`\
 [in] Flags defined in Fusion.idl.

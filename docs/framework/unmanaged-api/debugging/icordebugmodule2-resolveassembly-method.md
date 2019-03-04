@@ -32,7 +32,7 @@ HRESULT ResolveAssembly (
 );
 ```
 
-#### Parameters
+## Parameters
 
 `tkAssemblyRef`\
 [in] An `mdToken` value that references the assembly.

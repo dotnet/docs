@@ -38,25 +38,25 @@ HRESULT Next (
 
 ## Parameters
 
-`vFunc`
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`lFlags`
+`lFlags`\
 [in] Reserved. This parameter must be 0.
 
-`pstrName`
+`pstrName`\
 [out] A new `BSTR` that contains the property name. You can set this parameter to `null` if the name is not required.
 
-`pVal`
+`pVal`\
 [out] A `VARIANT` filled with the value of the property. You can set this parameter to `null` if the value is not required. If the function returns an error code, the `VARIANT` passed to `pVal` is left unmodified.
 
-`pvtType`
+`pvtType`\
 [out] A pointer to a `CIMTYPE` variable (a `LONG` into which the type of the property is placed). The value of this property can be a `VT_NULL_VARIANT`, in which case it is necessary to determine the actual type of the property. This parameter can also be `null`.
 
-`plFlavor`
+`plFlavor`\
 [out] `null`, or a value that receives information on the origin of the property. See the [Remarks] section for possible values.
 
 ## Return value
@@ -98,4 +98,5 @@ If `plFlavor` is not `null`, the `LONG` value receives information about the ori
 **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

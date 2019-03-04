@@ -36,13 +36,13 @@ HRESULT Delete (
 
 ## Parameters
 
-`vFunc`
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`wszName`
+`wszName`\
 [in] The name of the property to delete. `wszName` must be a pointer to a valid `LPCWSTR`.
 
 ## Return value

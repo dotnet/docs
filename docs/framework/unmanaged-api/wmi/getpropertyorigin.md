@@ -37,16 +37,16 @@ HRESULT GetPropertyOrigin (
 
 ## Parameters
 
-`vFunc`
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`wszMethodName`
+`wszMethodName`\
 [in] The name of the property for the object whose owning class is being requested.
 
-`pstrClassName`
+`pstrClassName`\
 [out] Receives the name of the class that owns the property.
 
 ## Return value

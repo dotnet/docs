@@ -39,22 +39,22 @@ HRESULT GetMethod (
 
 ## Parameters
 
-`vFunc`
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`wszName`
+`wszName`\
 [in] The method name. This parameter cannot be `null` and must point to a valid `LPCWSTR`.
 
-`lFlags`
+`lFlags`\
 [in] Reserved. This parameter must be 0.
 
-`ppInSignature`
+`ppInSignature`\
 [out] A pointer to the address of an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance that describes the in parameters to the method. This parameter is ignored if it is set to `null`.
 
-`ppOutSignature`
+`ppOutSignature`\
 [out] A pointer to the address of an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance that describes the out parameters to the method. This parameter is ignored if it is set to `null`.
 
 ## Return value

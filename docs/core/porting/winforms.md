@@ -172,11 +172,11 @@ The previous commands would add the following NuGet references to the **MyFormsC
   </ItemGroup>
 ```
 
-## Port control libs
+## Port control libraries
 
-If you have a Windows Forms Controls library project to port, the directions are exactly the same as porting a .NET Framework Windows Forms app project, except for a few settings. Instead of compiling an executable, you want to compile a library. The difference between the executable project and the library project, besides paths for the file globs that include your source code, is minimal.
+If you have a Windows Forms Controls library project to port, the directions are exactly the same as porting a .NET Framework Windows Forms app project except for a few settings. And, instead of compiling to an executable you will compile to a library. The difference between the executable project and the library project, besides paths for the file globs that include your source code, is minimal.
 
-Using the previous example, lets expand what projects and files we're working with.
+Using the previous step's example, lets expand what projects and files we're working with.
 
 | File | Description |
 | ---- | ----------- |
@@ -199,7 +199,7 @@ SolutionFolder
     └───MyControlsCore.csproj   <--- New project for core controls
 ```
 
-Creating the new `MyControlsCore.csproj` file by hand, there are a few differences.
+Consider the differences between the `MyControlsCore.csproj` project and the previously created `MyFormsCore.csproj` project.
 
 ```diff
  <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
@@ -217,8 +217,8 @@ Creating the new `MyControlsCore.csproj` file by hand, there are a few differenc
    </PropertyGroup>
 
    <ItemGroup>
--     <Compile Include="..\MyFormsApp\**\*.cs" />
--     <EmbeddedResource Include="..\MyFormsApp\**\*.resx" />
+-    <Compile Include="..\MyFormsApp\**\*.cs" />
+-    <EmbeddedResource Include="..\MyFormsApp\**\*.resx" />
 +    <Compile Include="..\MyFormsControls\**\*.cs" />
 +    <EmbeddedResource Include="..\MyFormsControls\**\*.resx" />
    </ItemGroup>
@@ -249,7 +249,9 @@ Here is an example of what the .NET Core Windows Forms Controls library project 
 </Project>
 ```
 
-The main .NET Core **MyFormsCore.csproj** project must reference your new .NET Core controls library. Add a reference with either Visual Studio or the .NET Core CLI from the **SolutionFolder** directory:
+As you can see, the `<OutputType>` node was removed, which defaults the compiler to produce a library instead of an executable. The `<AssemblyName>` and `<RootNamespace>` were changed. Specifically the `<RootNamespace>` should match the namespace of the Windows Forms Controls library you are porting. And finally, the `<Compile>` and `<EmbeddedResource>` nodes were adjusted to point to the folder of the Windows Forms Controls library you are porting.
+
+Next, add reference to the new .NET Core Windows Forms Control library, to the main .NET Core **MyFormsCore.csproj** project. Add a reference with either Visual Studio or the .NET Core CLI from the **SolutionFolder** directory:
 
 ```cli
 dotnet add .\MyFormsAppCore\MyFormsCore.csproj reference .\MyFormsControlsCore\MyControlsCoreProject.csproj
@@ -265,7 +267,7 @@ The previous command adds the following to the **MyFormsCore.csproj** project:
 
 ## Problems compiling
 
-If you have problems compiling your projects, this problem may be because of using some Windows-only APIs that are available in .NET Framework but not in .NET Core. You can try adding the [Windows Compatibility Pack][compat-pack] NuGet package to your project. This package only runs on Windows and adds about 20,000 Windows APIs to .NET Core and .NET Standard projects. 
+If you have problems compiling your projects, you may be using some Windows-only APIs that are available in .NET Framework but not available in .NET Core. You can try adding the [Windows Compatibility Pack][compat-pack] NuGet package to your project. This package only runs on Windows and adds about 20,000 Windows APIs to .NET Core and .NET Standard projects.
 
 ```cli
 dotnet add .\MyFormsAppCore\MyFormsCore.csproj package Microsoft.Windows.Compatibility

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "How to: Implement CopyToDataTable<T> Where the Generic Type T Is Not a DataRow"
 ms.date: "03/30/2017"
 dev_langs: 

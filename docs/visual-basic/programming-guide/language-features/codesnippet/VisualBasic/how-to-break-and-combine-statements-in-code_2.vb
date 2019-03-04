@@ -1,1 +1,0 @@
-    text1.Text = "Hello" : text1.BackColor = System.Drawing.Color.Red

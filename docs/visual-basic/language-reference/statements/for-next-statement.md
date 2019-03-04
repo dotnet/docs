@@ -119,7 +119,7 @@ Next [ counter ]
   
  The default value of `step` is 1.  
   
-###  <a name="BKMK_Counter"></a> Counter Argument  
+### <a name="BKMK_Counter"></a> Counter Argument  
  The following table indicates whether `counter` defines a new local variable that’s scoped to the entire `For…Next` loop. This determination depends on whether `datatype` is present and whether `counter` is already defined.  
   
 |Is `datatype` present?|Is `counter` already defined?|Result (whether `counter` defines a new local variable that’s scoped to the entire `For...Next` loop)|  

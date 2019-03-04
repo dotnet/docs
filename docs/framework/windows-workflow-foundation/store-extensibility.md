@@ -102,7 +102,7 @@ ms.assetid: 7c3f4a46-4bac-4138-ae6a-a7c7ee0d28f5
     go  
     ```  
   
-##  <a name="InstancePromotedProperties"></a> [System.Activities.DurableInstancing.InstancePromotedProperties] view  
+## <a name="InstancePromotedProperties"></a> [System.Activities.DurableInstancing.InstancePromotedProperties] view  
   
 |Column Name|Column Type|Description|  
 |-----------------|-----------------|-----------------|  

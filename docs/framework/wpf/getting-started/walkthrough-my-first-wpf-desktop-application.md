@@ -12,6 +12,7 @@ author: mairaw
 ms.author: mairaw
 ms.custom: vs-dotnet
 ---
+
 # Walkthrough: My first WPF desktop application
 
 This article shows you how to develop a simple Windows Presentation Foundation (WPF) application that includes the elements that are common to most WPF applications: Extensible Application Markup Language (XAML) markup, code-behind, application definitions, controls, layout, data binding, and styles.
@@ -199,9 +200,9 @@ In this section, you'll add two pages and an image to the application.
 
 10. Add an image named *watermark.png* to the project. You can create your own image, copy the file from the sample code, or get it [here](https://github.com/dotnet/docs/blob/master/docs/framework/wpf/getting-started/media/watermark.png).
 
-   1. Right-click on the project node and select **Add** > **Existing Item**, or press **Shift**+**Alt**+**A**.
+    1. Right-click on the project node and select **Add** > **Existing Item**, or press **Shift**+**Alt**+**A**.
 
-   2. In the **Add Existing Item** dialog, browse to the image file you want to use, and then select **Add**.
+    2. In the **Add Existing Item** dialog, browse to the image file you want to use, and then select **Add**.
 
 ## Build and run the application
 

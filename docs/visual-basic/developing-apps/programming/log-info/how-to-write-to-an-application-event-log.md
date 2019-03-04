@@ -17,9 +17,6 @@ You cannot write to the Security log. In order to write to the System log, you m
 
 To view an event log, you can use **Server Explorer** or **Windows Event Viewer**. For more information, see [ETW Events in the .NET Framework](../../../../framework/performance/etw-events.md).
 
-> [!NOTE]
-> Event logs are not supported on Windows 95, Windows 98, or Windows Millennium Edition.
-
 ### To add and configure the event log listener
 
 1. Right-click app.config in **Solution Explorer** and choose **Open**.

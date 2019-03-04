@@ -31,9 +31,9 @@ HRESULT GetCurrentCustomDebuggerNotification(
     );
 ```
 
-#### Parameters
+## Parameters
 
-`ppNotificationObject`
+`ppNotificationObject`\
 [out] A pointer to the current `ICorDebugManagedCallback3::CustomNotification` object on the current thread.
 
 ## Remarks

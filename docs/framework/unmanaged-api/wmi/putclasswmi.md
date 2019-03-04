@@ -37,10 +37,10 @@ HRESULT PutClassWmi (
 
 ## Parameters
 
-`pObject`
+`pObject`\
 [in] A pointer to a valid class definition. It must be correctly initialized with all the required property values.
 
-`lFlags`
+`lFlags`\
 [in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
@@ -55,10 +55,10 @@ HRESULT PutClassWmi (
 | `WBEM_FLAG_UPDATE_SAFE_MODE` | 0x20 | Allows updates of classes even if there are child classes as long as the change does not cause any conflicts with child classes. For example, this flag allows a new property to be added to the base class that was not previously mentioned in any of the child classes. If the class has instances, the update fails. |
 | `WBEM_FLAG_UPDATE_FORCE_MODE` | 0x40 | forces updates of classes when conflicting child classes exist. For example, this flag forces an update if a class qualifier is defined in a child class, and the base class tries to add the same qualifier which conflicts with the existing one. In force mode, tis conflict is resolved by deleting the conflicting qualifier in the child class. |
 
-`pCtx`
+`pCtx`\
 [in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) instance that can be used by the provider that is providing the requested classes.
 
-`ppCallResult`
+`ppCallResult`\
 [out] If `null`, this parameter is unused. If `lFlags` contains `WBEM_FLAG_RETURN_IMMEDIATELY`, the function returns immediately with `WBEM_S_NO_ERROR`. The `ppCallResult` parameter receives a pointer to a new [IWbemCallResult](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcallresult) object.
 
 ## Return value
@@ -85,7 +85,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 
 This function wraps a call to the [IWbemServices::PutClass](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-putclass) method.
 
-The user may not create classes with names that begin or end with an underscore character
+The user may not create classes with names that begin or end with an underscore character.
 
 If the function call fails, you can obtain additional error information by calling the [GetErrorInfo](geterrorinfo.md) function.
 

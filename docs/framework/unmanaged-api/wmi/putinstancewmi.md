@@ -37,10 +37,10 @@ HRESULT PutInstanceWmi (
 
 ## Parameters
 
-`pInst`
+`pInst`\
 [in] A pointer to the instance to be written.
 
-`lFlags`
+`lFlags`\
 [in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
@@ -51,10 +51,10 @@ HRESULT PutInstanceWmi (
 | `WBEM_FLAG_CREATE_ONLY` | 2 | Create the instance. The call fails if the instance already exists. |
 | `WBEM_FLAG_RETURN_IMMEDIATELY` | 0x10 | The flag causes a semisynchronous call. |
 
-`pCtx`
+`pCtx`\
 [in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) instance that can be used by the provider that is providing the requested classes.
 
-`ppCallResult`
+`ppCallResult`\
 [out] If `null`, this parameter is unused. If `lFlags` contains `WBEM_FLAG_RETURN_IMMEDIATELY`, the function returns immediately with `WBEM_S_NO_ERROR`. The `ppCallResult` parameter receives a pointer to a new [IWbemCallResult](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcallresult) object.
 
 ## Return value

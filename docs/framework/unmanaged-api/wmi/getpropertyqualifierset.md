@@ -37,16 +37,16 @@ HRESULT GetPropertyQualifierSet (
 
 ## Parameters
 
-`vFunc`
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`wszMethod`
+`wszMethod`\
 [in] The property  name. `wszProperty` must point to a valid `LPCWSTR`.
 
-`ppQualSet`
+`ppQualSet`\
 [out] Receives the interface pointer that allows access to the qualifiers of the property. `ppQualSet` cannot be `null`. If an error occurs, a new object is not returned, and the pointer is set to point to `null`.
 
 ## Return value

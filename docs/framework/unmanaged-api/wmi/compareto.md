@@ -37,17 +37,16 @@ HRESULT CompareTo (
 
 ## Parameters
 
-`vFunc`
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`flags`
+`flags`\
 [in] A bitwise combination of the flags that specify the object characteristics to consider for the comparison. See the [Remarks](#remarks) section for more information.
 
-`pCompareTo`
-
+`pCompareTo`\
 [in] The object for comparison. `pCompareTo` must be a valid [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance; it cannot be `null`.
 
 ## Return value

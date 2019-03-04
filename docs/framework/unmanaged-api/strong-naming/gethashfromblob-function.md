@@ -37,24 +37,24 @@ HRESULT GetHashFromBlob (
 );
 ```
 
-#### Parameters
+## Parameters
 
-`pbBlob`
+`pbBlob`\
 [in] A pointer to the address of the memory block to be hashed.
 
-`cchBlob`
+`cchBlob`\
 [in] The length, in bytes, of the memory block.
 
-`piHashAlg`
+`piHashAlg`\
 [in, out] A constant that specifies the hash algorithm. Use zero for the default algorithm.
 
-`pbHash`
+`pbHash`\
 [out] The returned hash buffer.
 
-`cchHash`
+`cchHash`\
 [in] The requested maximum size of `pbHash`.
 
-`pchHash`
+`pchHash`\
 [out] The size, in bytes, of the returned `pbHash`.
 
 ## Requirements
@@ -69,5 +69,5 @@ HRESULT GetHashFromBlob (
 
 ## See also
 
-- [GetHashFromBlob Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromblob-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [GetHashFromBlob Method](../hosting/iclrstrongname-gethashfromblob-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

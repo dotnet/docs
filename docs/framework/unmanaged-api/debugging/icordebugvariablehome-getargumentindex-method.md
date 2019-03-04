@@ -31,9 +31,9 @@ HRESULT GetArgumentIndex(
 );
 ```
 
-#### Parameters
+## Parameters
 
-`pArgumentIndex`
+`pArgumentIndex`\
 [out] A pointer to the argument index.
 
 ## Return Value

@@ -31,9 +31,9 @@ HRESULT GetVersion (
 );
 ```
 
-#### Parameters
+## Parameters
 
-`version`
+`version`\
 [out] A pointer to a COR_VERSION structure that stores the version number of the runtime.
 
 ## Remarks

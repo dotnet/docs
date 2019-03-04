@@ -43,10 +43,10 @@ HRESULT CreateInstanceEnumWmi (
 
 ## Parameters
 
-`strFilter`
+`strFilter`\
 [in] The name of the class for which instances are desired. This parameter cannot be `null`.
 
-`lFlags`
+`lFlags`\
 [in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
@@ -60,28 +60,28 @@ HRESULT CreateInstanceEnumWmi (
 
 The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_ONLY` for best performance.
 
-`pCtx`
+`pCtx`\
 [in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) instance that may be used by the provider that is providing the requested instances.
 
-`ppEnum`
+`ppEnum`\
 [out] Receives the pointer to the enumerator.
 
-`authLevel`
+`authLevel`\
 [in] The authorization level.
 
-`impLevel`
+`impLevel`\
 [in] The impersonation level.
 
-`pCurrentNamespace`
+`pCurrentNamespace`\
 [in] A pointer to an [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object that represents the current namespace.
 
-`strUser`
+`strUser`\
 [in] The user name. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strPassword`
+`strPassword`\
 [in] The password. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strAuthority`
+`strAuthority`\
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
 ## Return value

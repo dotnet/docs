@@ -19,7 +19,6 @@ ms.author: "ronpet"
 ---
 
 # CreateClassEnumWmi function
-
 Returns an enumerator for all classes that satisfy the specified selection criteria.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -43,10 +42,10 @@ HRESULT CreateClassEnumWmi (
 
 ## Parameters
 
-`strSuperclass`
+`strSuperclass`\
 [in] If not `null` or blank, specifies the name of a parent class; the enumerator returns only subclasses of this class. If it is `null` or blank and `lFlags` is WBEM_FLAG_SHALLOW, returns only top-level classes (classes with no parent class). If it is `null` or blank and `lFlags` is `WBEM_FLAG_DEEP`, returns all classes in the namespace.
 
-`lFlags`
+`lFlags`\
 [in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
@@ -60,28 +59,28 @@ HRESULT CreateClassEnumWmi (
 
 The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_ONLY` for best performance.
 
-`pCtx`
+`pCtx`\
 [in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) instance that can be used by the provider that is providing the requested classes.
 
-`ppEnum`
+`ppEnum`\
 [out] Receives the pointer to the enumerator.
 
-`authLevel`
+`authLevel`\
 [in] The authorization level.
 
-`impLevel`
+`impLevel`\
 [in] The impersonation level.
 
-`pCurrentNamespace`
+`pCurrentNamespace`\
 [in] A pointer to an [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object that represents the current namespace.
 
-`strUser`
+`strUser`\
 [in] The user name. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strPassword`
+`strPassword`\
 [in] The password. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strAuthority`
+`strAuthority`\
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
 ## Return value

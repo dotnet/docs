@@ -33,15 +33,15 @@ HRESULT GetUserString (
 );
 ```
 
-#### Parameters
+## Parameters
 
-`ixUserString`
+`ixUserString`\
 [in] The index value from which the hard-coded string will be retrieved.
 
-`pcbData`
+`pcbData`\
 [out] A pointer to the size of `ppData`.
 
-`ppData`
+`ppData`\
 [out] A pointer to a pointer to the returned string.
 
 ## Requirements
@@ -56,5 +56,5 @@ HRESULT GetUserString (
 
 ## See also
 
-- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
-- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+- [IMetaDataTables Interface](imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](imetadatatables2-interface.md)

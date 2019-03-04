@@ -13,11 +13,11 @@ A <xref:System.Windows.Controls.Menu> is a control that allows hierarchical orga
   
  The following illustration shows the three different states of a menu control. The default state is when no device such as a mouse pointer is resting on the <xref:System.Windows.Controls.Menu>. The focus state occurs when the mouse pointer is hovering over the <xref:System.Windows.Controls.Menu> and pressed state occurs when a mouse button is clicked over the <xref:System.Windows.Controls.Menu>.  
   
- ![Menu states](../../../../docs/framework/wpf/controls/media/ss-ctl-menu.gif "SS_CTL_menu")  
+ ![Menu states](./media/ss-ctl-menu.gif "SS_CTL_menu")  
 Menus in different states  
   
 ## In This Section  
- [Menu Overview](../../../../docs/framework/wpf/controls/menu-overview.md)  
+ [Menu Overview](menu-overview.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Menu>  

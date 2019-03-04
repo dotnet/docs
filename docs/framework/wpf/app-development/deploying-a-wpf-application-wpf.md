@@ -74,11 +74,11 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 ### Deploying Markup-Only XAML Applications  
  Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages are usually published to Web servers, like [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] pages, and can be viewed using [!INCLUDE[TLA2#tla_iegeneric](../../../../includes/tla2sharptla-iegeneric-md.md)]. Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages run within a partial-trust security sandbox with restrictions that are defined by the Internet zone permission set. This provides an equivalent security sandbox to [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)]-based Web applications.  
   
- For more information about security for [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, see [Security](../../../../docs/framework/wpf/security-wpf.md).  
+ For more information about security for [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, see [Security](../security-wpf.md).  
   
  Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages can be installed to the local file system by using either XCopy or [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)]. These pages can be viewed using [!INCLUDE[TLA2#tla_iegeneric](../../../../includes/tla2sharptla-iegeneric-md.md)] or Windows Explorer.  
   
- For more information about XAML, see [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md).  
+ For more information about XAML, see [XAML Overview (WPF)](../advanced/xaml-overview-wpf.md).  
   
 <a name="Deploying_XAML_Browser_Applications"></a>   
 ### Deploying XAML Browser Applications  
@@ -91,7 +91,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 -   *ApplicationName*.exe.manifest: The application manifest.  
   
 > [!NOTE]
->  For more information about deployment and application manifests, see [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md).  
+>  For more information about deployment and application manifests, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
  These files are produced when an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] is built. For more information, see [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)). Like markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages, [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are typically published to a Web server and viewed using [!INCLUDE[TLA2#tla_iegeneric](../../../../includes/tla2sharptla-iegeneric-md.md)].  
   
@@ -103,7 +103,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  By default, ClickOnce publishes application files with the .deploy extension. This can be problematic, but can be disabled. For more information, see [Server and Client Configuration Issues in ClickOnce Deployments](/visualstudio/deployment/server-and-client-configuration-issues-in-clickonce-deployments).  
   
- For more information about deploying [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)], see [WPF XAML Browser Applications Overview](../../../../docs/framework/wpf/app-development/wpf-xaml-browser-applications-overview.md).  
+ For more information about deploying [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)], see [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
   
 <a name="Installing__NET_Framework_3_0"></a>   
 ## Installing the .NET Framework  
@@ -115,8 +115,8 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  .NET Framework auto-detection is available on [!INCLUDE[TLA#tla_longhorn](../../../../includes/tlasharptla-longhorn-md.md)], [!INCLUDE[TLA#tla_winxpsp2](../../../../includes/tlasharptla-winxpsp2-md.md)], and [!INCLUDE[TLA#tla_winnetsvrfamsp1](../../../../includes/tlasharptla-winnetsvrfamsp1-md.md)] clients that have [!INCLUDE[TLA2#tla_ie7](../../../../includes/tla2sharptla-ie7-md.md)] or later installed.  
   
- For more information, see [Deploying the .NET Framework and Applications](../../../../docs/framework/deployment/index.md).  
+ For more information, see [Deploying the .NET Framework and Applications](../../deployment/index.md).  
   
 ## See also
-- [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)
-- [Security](../../../../docs/framework/wpf/security-wpf.md)
+- [Building a WPF Application](building-a-wpf-application-wpf.md)
+- [Security](../security-wpf.md)

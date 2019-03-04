@@ -239,7 +239,7 @@ Almost all plugins are more complex than a simple "Hello World", and many plugin
 
 ## Other plugin examples in the sample
 
-The `AssemblyDependencyResolver` object can also resolve native libraries included in NuGet packages as well as localized satellite assemblies. The `UVPlugin` and `FrenchPlugin` demonstrate these scenarios respectively.
+The complete source code for this tutorial can be found in [the dotnet/samples repository](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin). The completed sample includes a few other examples of `AssemblyDependencyResolver` behavior. For example, the `AssemblyDependencyResolver` object can also resolve native libraries as well as localized satellite assemblies included in NuGet packages. The `UVPlugin` and `FrenchPlugin` in the samples repository demonstrate these scenarios.
 
 ## How to reference a plugin interface assembly defined in a NuGet package
 

@@ -199,7 +199,7 @@ For a given DbUpdateCommandTree, the generated update command is based on the fo
 ```sql
 -- UPDATE Template
 UPDATE <target>
-SET setClauseProprerty0 = setClauseValue0,  .. setClauseProprertyN = setClauseValueN  | @i = 0
+SET setClauseProperty0 = setClauseValue0, .. setClausePropertyN = setClauseValueN  | @i = 0
 WHERE <predicate>
 
 [SELECT <returning>

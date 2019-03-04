@@ -24,6 +24,8 @@ In this tutorial, you learn how to:
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
+This tutorial and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning github repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+
 ## GitHub issue sample overview
 
 The sample is a console app that uses ML.NET to train a model that classifies and predicts the Area label for a GitHub issue. It also evaluates the model with a second dataset for quality analysis. The issue datasets are from the dotnet/corefx GitHub repo.

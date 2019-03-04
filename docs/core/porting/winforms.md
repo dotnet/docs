@@ -8,7 +8,7 @@ ms.custom:
 
 # How to port a Windows Forms desktop app to .NET Core
 
-This article describes how to port your Windows Forms-based desktop app from .NET Framework to .NET Core 3.0. The .NET core 3.0 SDK includes support for Windows desktop apps built with Windows Forms and Windows Presentation Foundation. Windows Forms is still a Windows-only framework and only runs on Windows. This example uses the .NET Core SDK CLI to create and manage your project.
+This article describes how to port your Windows Forms-based desktop app from .NET Framework to .NET Core 3.0. The .NET Core 3.0 SDK includes support for Windows desktop apps built with Windows Forms and Windows Presentation Foundation. Windows Forms is still a Windows-only framework and only runs on Windows. This example uses the .NET Core SDK CLI to create and manage your project.
 
 In this article, various names are used to identify types of files used for migration. When migrating your project, your files will be named differently, so mentally match them to the ones listed below:
 

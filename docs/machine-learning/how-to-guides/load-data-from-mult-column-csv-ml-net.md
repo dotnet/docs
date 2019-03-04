@@ -7,6 +7,11 @@ ms.custom: mvc,how-to
 ---
 # Load data with many columns from a CSV file for machine learning processing - ML.NET
 
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning github repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+
 `TextLoader` is used to load data from text files. You need to specify the data columns, their types, and their location in the text file.
 
 When the input file contains many columns of the same type and always used together, read them as a *vector column*. This strategy results in a clean data schema and avoids unnecessary performance costs, as shown in the following example:

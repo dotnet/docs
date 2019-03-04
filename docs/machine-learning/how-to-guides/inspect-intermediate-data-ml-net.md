@@ -7,6 +7,11 @@ ms.custom: mvc,how-to
 ---
 # Inspect intermediate data values during ML.NET pipeline processing
 
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning github repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+
 During the experiment, you may want to observe and validate the data processing results at a given point. This isn't easy since ML.NET operations are lazy, constructing objects that are 'promises' of data.
 
 The `GetColumn<T>` extension method lets you inspect the intermediate data. It returns the contents of one data column as an `IEnumerable`.

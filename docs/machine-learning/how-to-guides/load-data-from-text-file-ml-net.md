@@ -8,6 +8,11 @@ ms.custom: mvc,how-to
 
 # Load data from a text file for machine learning processing - ML.NET
 
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning github repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+
 `TextLoader` is used to load data from text files. You need to specify the data columns, their types, and their location in the text file.
 
 Note that it's perfectly acceptable to read some columns of a file, or read the same column multiple times.

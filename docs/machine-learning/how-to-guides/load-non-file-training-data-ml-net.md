@@ -7,6 +7,11 @@ ms.custom: mvc,how-to
 ---
 # Train a machine learning model with data that's not in a text file - ML.NET
 
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning github repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+
 The commonly demonstrated use case for ML.NET is use the `TextLoader` to read the training data from a file.
 However, in real-time training scenarios the data can be elsewhere, such as:
 

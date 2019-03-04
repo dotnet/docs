@@ -7,6 +7,11 @@ ms.custom: mvc,how-to
 ---
 # Use the PredictionEngine to make one prediction at a time - ML.NET 
 
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning github repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+
 Since any ML.NET model is a transformer, you use `model.Transform` to apply the model to the `DataView` to make predictions. 
 
 A more typical case, though, is when there is no 'dataset' that you want to predict on, but instead you receive one example at a time. For instance, you run the model as part of your ASP.NET website, and need to make a prediction for an incoming HTTP request.

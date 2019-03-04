@@ -63,6 +63,7 @@ Public Class ClassWithFriendMethod
     End Sub  
 End Class  
 ```  
+---
 
  Only assemblies that you explicitly specify as friends can access `internal` (in C# or `Friend` in Visual Basic) types and members. For example, if assembly B is a friend of assembly A and assembly C references assembly B, C does not have access to `internal` (in C# or `Friend` in Visual Basic) types in A.  
   

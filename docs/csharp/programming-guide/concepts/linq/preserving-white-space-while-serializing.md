@@ -17,9 +17,9 @@ This topic describes how to control white space when serializing an XML tree.
   
 -   <xref:System.Xml.Linq.XDocument.Save%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.Linq.XElement.ToString%2A?displayProperty=nameWithType>  
+-   [XElement.ToString()](xref:System.Xml.Linq.XNode.ToString%2A?displayProperty=nameWithType)
   
--   <xref:System.Xml.Linq.XDocument.ToString%2A?displayProperty=nameWithType>  
+-   [XDocument.ToString()](xref:System.Xml.Linq.XNode.ToString%2A?displayProperty=nameWithType)
   
  If the method does not take <xref:System.Xml.Linq.SaveOptions> as an argument, then the method will format (indent) the serialized XML. In this case, all insignificant white space in the XML tree is discarded.  
   

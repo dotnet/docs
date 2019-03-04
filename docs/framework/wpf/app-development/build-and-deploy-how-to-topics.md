@@ -12,17 +12,17 @@ ms.assetid: 88952ad2-5b74-48ca-a4c5-3f4fbb53ce12
 The following topics show how to create project files for the various [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application types.  
   
 ## In This Section  
- [Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications](../../../../docs/framework/wpf/app-development/how-to-configure-iis-5-0-and-iis-6-0-to-deploy-wpf-applications.md)  
- [Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service](../../../../docs/framework/wpf/app-development/configure-vs-to-debug-a-xaml-browser-to-call-a-web-service.md)  
- [Determine the Installed Version of WPF](../../../../docs/framework/wpf/app-development/how-to-determine-the-installed-version-of-wpf.md)  
- [Detect Whether the .NET Framework 3.0 Is Installed](../../../../docs/framework/wpf/app-development/how-to-detect-whether-the-net-framework-3-0-is-installed.md)  
- [Detect Whether the .NET Framework 3.5 Is Installed](../../../../docs/framework/wpf/app-development/how-to-detect-whether-the-net-framework-3-5-is-installed.md)  
- [Detect Whether the WPF Plug-In for Firefox Is Installed](../../../../docs/framework/wpf/app-development/how-to-detect-whether-the-wpf-plug-in-for-firefox-is-installed.md)  
+ [Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications](how-to-configure-iis-5-0-and-iis-6-0-to-deploy-wpf-applications.md)  
+ [Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service](configure-vs-to-debug-a-xaml-browser-to-call-a-web-service.md)  
+ [Determine the Installed Version of WPF](how-to-determine-the-installed-version-of-wpf.md)  
+ [Detect Whether the .NET Framework 3.0 Is Installed](how-to-detect-whether-the-net-framework-3-0-is-installed.md)  
+ [Detect Whether the .NET Framework 3.5 Is Installed](how-to-detect-whether-the-net-framework-3-5-is-installed.md)  
+ [Detect Whether the WPF Plug-In for Firefox Is Installed](how-to-detect-whether-the-wpf-plug-in-for-firefox-is-installed.md)  
   
 ## Related Sections  
- [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)  
+ [Building a WPF Application](building-a-wpf-application-wpf.md)  
   
- [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)  
+ [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)  
   
  [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  
   

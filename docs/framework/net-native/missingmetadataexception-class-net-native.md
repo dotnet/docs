@@ -30,7 +30,7 @@ The `MissingMetadataException` class has the following members:
 |Constructor|Description|
 |-----------------|-----------------|
 |`public MissingMetadataException()`|Initializes a new instance of the `MissingMetadataException` class by using a system-supplied message that describes the error.<br /><br /> This constructor is for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain only.|
-|`public MissingMetadataException(String message)`|Initializes a new instance of the `MissingMetadataException` class with a specified error message.<br /><br /> This constructor is for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] torol chain only.|
+|`public MissingMetadataException(String message)`|Initializes a new instance of the `MissingMetadataException` class with a specified error message.<br /><br /> This constructor is for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain only.|
 
 ## Properties
 

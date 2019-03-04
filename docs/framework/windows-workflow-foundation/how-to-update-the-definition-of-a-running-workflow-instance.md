@@ -34,7 +34,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
   
 -   [To enable starting previous versions of the workflows](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_StartPreviousVersions)  
   
-###  <a name="BKMK_CreateProject"></a> To create the CreateUpdateMaps project  
+### <a name="BKMK_CreateProject"></a> To create the CreateUpdateMaps project  
   
 1.  Right-click **WF45GettingStartedTutorial** in **Solution Explorer** and choose **Add**, **New Project**.  
   
@@ -218,7 +218,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
     }
     ```
 
-###  <a name="BKMK_StateMachine"></a> To update StateMachineNumberGuessWorkflow
+### <a name="BKMK_StateMachine"></a> To update StateMachineNumberGuessWorkflow
 
 1.  Add a `CreateStateMachineUpdateMap` to the `Program` class (or `Module1`).
 
@@ -411,7 +411,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
     }
     ```
 
-###  <a name="BKMK_Flowchart"></a> To update FlowchartNumberGuessWorkflow
+### <a name="BKMK_Flowchart"></a> To update FlowchartNumberGuessWorkflow
 
 1.  Add the following `CreateFlowchartUpdateMethod` to the `Program` class (or `Module1`). This method is similar to `CreateStateMachineUpdateMap`. It starts with a call to `StartUpdate`, updates the flowchart workflow definition, and finishes by saving the update map and the updated workflow definition.
 
@@ -525,7 +525,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
     }
     ```
 
-###  <a name="BKMK_Sequential"></a> To update SequentialNumberGuessWorkflow
+### <a name="BKMK_Sequential"></a> To update SequentialNumberGuessWorkflow
 
 1.  Add the following `CreateSequentialUpdateMethod` to the `Program` class (or `Module1`). This method is similar to the other two methods. It starts with a call to `StartUpdate`, updates the sequential workflow definition, and finishes by saving the update map and the updated workflow definition.
 
@@ -605,7 +605,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
     }
     ```
 
-###  <a name="BKMK_CreateUpdateMaps"></a> To build and run the CreateUpdateMaps application
+### <a name="BKMK_CreateUpdateMaps"></a> To build and run the CreateUpdateMaps application
 
 1.  Update the `Main` method and add the following three method calls. These methods are added in the following sections. Each method updates the corresponding number guess workflow and creates a `DynamicUpdateMap` that describes the updates.
 
@@ -639,7 +639,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
      Once the update maps are created and the workflow definitions updated, the next step is to build an updated workflow assembly containing the updated definitions.
 
-###  <a name="BKMK_BuildAssembly"></a> To build the updated workflow assembly
+### <a name="BKMK_BuildAssembly"></a> To build the updated workflow assembly
 
 1.  Open a second instance of Visual Studio 2012.
 
@@ -670,7 +670,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
 12. Rename **NumberGuessWorkflowActivities.dll** to **NumberGuessWorkflowActivities_v15.dll**, and copy it to the **PreviousVersions** folder you created in [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
 
-###  <a name="BKMK_UpdateWorkflowVersionMap"></a> To update WorkflowVersionMap with the new versions
+### <a name="BKMK_UpdateWorkflowVersionMap"></a> To update WorkflowVersionMap with the new versions
 
 1.  Switch back to the initial instance of Visual Studio 2012.
 
@@ -1057,7 +1057,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
 5.  Press CTRL+SHIFT+B to build the project.
 
-###  <a name="BKMK_ApplyUpdate"></a> To apply the dynamic updates
+### <a name="BKMK_ApplyUpdate"></a> To apply the dynamic updates
 
 1.  Right-click **WF45GettingStartedTutorial** in **Solution Explorer** and choose **Add**, **New Project**.
 
@@ -1432,7 +1432,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 **Inspecting: SequentialNumberGuessWorkflow; Version=2.0.0.0**
 **Press any key to continue . . .**
 
-###  <a name="BKMK_BuildAndRun"></a> To run the application with the updated workflows
+### <a name="BKMK_BuildAndRun"></a> To run the application with the updated workflows
 
 1.  Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Set as StartUp Project**.
 
@@ -1467,7 +1467,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 **Please enter a number between 1 and 10**
 **6 is correct. You guessed it in 4 turns.**
 
-###  <a name="BKMK_StartPreviousVersions"></a> To enable starting previous versions of the workflows
+### <a name="BKMK_StartPreviousVersions"></a> To enable starting previous versions of the workflows
  If you run out of workflows to update, you can modify the `NumberGuessWorkflowHost` application to enable starting previous versions of the workflows.
 
 1.  Double-click **WorkflowHostForm** in **Solution Explorer**, and select the **WorkflowType** combo box.

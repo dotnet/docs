@@ -1,4 +1,4 @@
-﻿---
+---
 title: "First statement of this 'Sub New' must be a call to 'MyBase.New' or 'MyClass.New' (No Accessible Constructor Without Parameters)"
 ms.date: 07/20/2015
 f1_keywords: 

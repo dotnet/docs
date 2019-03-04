@@ -23,6 +23,8 @@ For package-based target frameworks (for example, .NET Standard and .NET Core), 
 
 The following table defines the most common target frameworks, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library.
 
+A moniker is a method of linking objects derived from Microsoft technology for linking and embedding objects (OLE). Refers to an object or component in the Microsoft Component Object Model (COM) that is used to identify another object instance.
+
 | Target Framework      | Latest <br/> Stable Version | Target Framework Moniker (TFM) | Implemented <br/> .NET Standard Version |
 | :-------------------: | :-------------------------: | :----------------------------: | :-------------------------------------: |
 | .NET Standard         | 2.0                         | netstandard2.0                 | N/A                                     |

@@ -2,37 +2,38 @@
 title: QualifierSet_Put function (Unmanaged API Reference)
 description: The QualifierSet_Put function writes the named qualifier and its value.
 ms.date: "11/06/2017"
-api_name: 
+api_name:
   - "QualifierSet_Put"
-api_location: 
+api_location:
   - "WMINet_Utils.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "QualifierSet_Put"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "QualifierSet_Put function [.NET WMI and performance counters]"
-topic_type: 
+topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # QualifierSet_Put function
 
-Writes the named qualifier and value. The new qualifier overwrites the previous value of the same name. If the qualifier does not exist, it is created. 
+Writes the named qualifier and value. The new qualifier overwrites the previous value of the same name. If the qualifier does not exist, it is created.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
 
 ## Syntax
 
-```
+```cpp
 HRESULT QualifierSet_Put (
-   [in] int                  vFunc, 
-   [in] IWbemQualifierSet*   ptr, 
+   [in] int                  vFunc,
+   [in] IWbemQualifierSet*   ptr,
    [in] LPCWSTR              wszName,
    [in] VARIANT*             pVal,
    [in] LONG                 lFlavor
-); 
+);
 ```
 
 ## Parameters
@@ -56,7 +57,7 @@ HRESULT QualifierSet_Put (
 |---------|---------|---------|
 | `WBEM_FLAVOR_OVERRIDABLE` | 0 | The qualifier can be overridden in a derived class or instance. **This is the default value.** |
 | `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE` | 1 | The qualifier is propagated to instances. |
-| `WBEM_FLAVOR_GLAG_PROPAGATE_TO_DERIVED_CLASS` | 2 | The qualifier is propagated to derived classes. |
+| `WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` | 2 | The qualifier is propagated to derived classes. |
 | `WBEM_FLAVOR_NOT_OVERRIDABLE` | 0x10 | The qualifier cannot be overridden in a derived class or instance. |
 | `WBEM_FLAVOR_AMENDED` | 0x80 | The qualifier is localized. |
 
@@ -78,11 +79,11 @@ This function wraps a call to the [IWbemQualifierSet::Put](/windows/desktop/api/
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
 
- **Header:** WMINet_Utils.idl
+**Header:** WMINet_Utils.idl
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
 ## See also
 

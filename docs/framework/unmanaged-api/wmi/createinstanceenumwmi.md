@@ -2,29 +2,31 @@
 title: CreateInstanceEnumWmi function (Unmanaged API Reference)
 description: The  CreateInstanceEnumWmi function returns an enumerator containing instances of a specified class that meet selection criteria.
 ms.date: "11/06/2017"
-api_name: 
+api_name:
   - "CreateInstanceEnumWmi"
-api_location: 
+api_location:
   - "WMINet_Utils.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "CreateInstanceEnumWmi"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CreateInstanceEnumWmi function [.NET WMI and performance counters]"
-topic_type: 
+topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # CreateInstanceEnumWmi function
-Returns an enumerator that returns the instances of a specified class that meet specified selection criteria. 
+
+Returns an enumerator that returns the instances of a specified class that meet specified selection criteria.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
 
 ## Syntax
 
-```
+```cpp
 HRESULT CreateInstanceEnumWmi (
    [in] BSTR                    strFilter,
    [in] long                    lFlags,
@@ -36,7 +38,7 @@ HRESULT CreateInstanceEnumWmi (
    [in] BSTR                    strUser,
    [in] BSTR                    strPassword,
    [in] BSTR                    strAuthority
-); 
+);
 ```
 
 ## Parameters
@@ -45,7 +47,7 @@ HRESULT CreateInstanceEnumWmi (
 [in] The name of the class for which instances are desired. This parameter cannot be `null`.
 
 `lFlags`\
-[in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code: 
+[in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -54,7 +56,7 @@ HRESULT CreateInstanceEnumWmi (
 | `WBEM_FLAG_SHALLOW` | 1 | The enumeration includes only pure instances of this class and excludes all instances of subclasses that supply properties not found in this class. |
 | `WBEM_FLAG_RETURN_IMMEDIATELY` | 0x10 | The flag causes a semisynchronous call. |
 | `WBEM_FLAG_FORWARD_ONLY` | 0x20 | The function returns a forward-only enumerator. Typically, forward-only enumerators are faster and use less memory than conventional enumerators, but they do not allow calls to [Clone](clone.md). |
-| `WBEM_FLAG_BIDIRECTIONAL` | 0 | WMI retains pointers to objects in the enumration until they are released. | 
+| `WBEM_FLAG_BIDIRECTIONAL` | 0 | WMI retains pointers to objects in the enumeration until they are released. |
 
 The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_ONLY` for best performance.
 
@@ -79,7 +81,7 @@ The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_
 `strPassword`\
 [in] The password. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strAuthority`\ 
+`strAuthority`\
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
 ## Return value
@@ -107,11 +109,11 @@ If the function call fails, you can obtain additional error information by calli
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
 
- **Header:** WMINet_Utils.idl
+**Header:** WMINet_Utils.idl
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
 ## See also
 

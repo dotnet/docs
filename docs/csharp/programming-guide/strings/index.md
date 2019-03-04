@@ -113,7 +113,7 @@ string s = String.Empty;
   
  In this example, a <xref:System.Text.StringBuilder> object is used to create a string from a set of numeric types:  
   
- [!code-csharp[TestStringBuilder#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/TestStringBuilder.cs)]
+ [!code-csharp[TestStringBuilder#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/TestStringBuilder.cs#1)]
   
 ## Strings, Extension Methods and LINQ  
  Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions on strings. For more information, see [LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md).  

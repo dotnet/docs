@@ -196,7 +196,15 @@
       <Docs>
         <summary>Gets or sets the window handle of the message.</summary>
         <value>The window handle of the message.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+        <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ *Window handle* is a value that uniquely identifies a window on the system. This property returns a handle of the window whose window procedure receives this message. It is useful when your code need to interact with some native Windows API functions that expect window handles as parameters.
+ 
+]]></format>
+        </remarks>
+        <related type="ExternalDocumentation" href="/windows/desktop/winmsg/about-windows#window-handle">Window Handle</related>
       </Docs>
     </Member>
     <Member MemberName="LParam">

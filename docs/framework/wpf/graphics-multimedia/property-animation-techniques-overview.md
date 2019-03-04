@@ -38,7 +38,7 @@ This topic describes the different approaches for animating properties: storyboa
   
 1.  Declare a <xref:System.Windows.Media.Animation.Storyboard> and one or more animations.  
   
-2.  Use the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached properties to specify the target object and property of each animation.  
+2.  Use the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty> attached properties to specify the target object and property of each animation.  
   
 3.  (Code only) Define a <xref:System.Windows.NameScope> for a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. Register the names of the objects to animate with that <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>.  
   

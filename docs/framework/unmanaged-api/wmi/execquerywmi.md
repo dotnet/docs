@@ -18,13 +18,14 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ExecQueryWmi function
-Executes a query to retrieve objects.  
+
+Executes a query to retrieve objects.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-  
-## Syntax  
-  
-```  
+
+## Syntax
+
+```
 HRESULT ExecQueryWmi (
    [in] BSTR                    strQueryLanguage,
    [in] BSTR                    strQuery,
@@ -38,17 +39,17 @@ HRESULT ExecQueryWmi (
    [in] BSTR                    strPassword,
    [in] BSTR                    strAuthority
 ); 
-```  
+```
 
 ## Parameters
 
-`strQueryLanguage`    
+`strQueryLanguage`\
 [in] A string with the valid query language supported by Windows Management. It must be "WQL", the acronym for WMI Query Language.
 
-`strQuery`  
+`strQuery`\
 [in] The text of the query. This parameter cannot be `null`.
 
-`lFlags`   
+`lFlags`\
 [in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code: 
 
 | Constant | Value  | Description  |
@@ -63,28 +64,28 @@ HRESULT ExecQueryWmi (
 
 The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_ONLY` for best performance.
 
-`pCtx`  
+`pCtx`\
 [in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) instance that can be used by the provider that is providing the requested classes. 
 
-`ppEnum`  
+`ppEnum`\
 [out] If no error occurs, receives the pointer to the enumerator that allows the caller to retrieve the instances in the query's result set. The query can have a result set with zero instances. See the [Remarks](#remarks) section for more information.
 
-`authLevel`  
+`authLevel`\
 [in] The authorization level.
 
-`impLevel`
+`impLevel`\
 [in] The impersonation level.
 
-`pCurrentNamespace`   
+`pCurrentNamespace`\
 [in] A pointer to an [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object that represents the current namespace.
 
-`strUser`   
+`strUser`\
 [in] The user name. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strPassword`   
+`strPassword`\
 [in] The password. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strAuthority`   
+`strAuthority`\ 
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
 ## Return value
@@ -104,7 +105,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 | `WBEM_E_TRANSPORT_FAILURE` | 0x80041015 | The remote procedure call (RPC) link between the current process and WMI has failed. |
 | `WBEM_E_NOT_FOUND` | 0x80041002 | The query specifies a class that does not exist. |
 | `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
-  
+
 ## Remarks
 
 This function wraps a call to the [IWbemServices::ExecQuery](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-execquery) method.
@@ -115,12 +116,14 @@ There are limits to the number of `AND` and `OR` keywords that can be used in WQ
 
 If the function call fails, you can obtain additional error information by calling the [GetErrorInfo](geterrorinfo.md) function.
 
-## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
- **Header:** WMINet_Utils.idl  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
-  
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+
+ **Header:** WMINet_Utils.idl
+
+ **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

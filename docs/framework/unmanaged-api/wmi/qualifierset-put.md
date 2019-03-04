@@ -18,13 +18,14 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # QualifierSet_Put function
+
 Writes the named qualifier and value. The new qualifier overwrites the previous value of the same name. If the qualifier does not exist, it is created. 
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-  
-## Syntax  
-  
-```  
+
+## Syntax
+
+```
 HRESULT QualifierSet_Put (
    [in] int                  vFunc, 
    [in] IWbemQualifierSet*   ptr, 
@@ -32,23 +33,23 @@ HRESULT QualifierSet_Put (
    [in] VARIANT*             pVal,
    [in] LONG                 lFlavor
 ); 
-```  
+```
 
 ## Parameters
 
-`vFunc`   
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`   
+`ptr`\
 [in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
-`wszName`   
+`wszName`\
 [in] The name of the qualifier to write.
 
-`pVal`
+`pVal`\
 [in] A pointer to a valid `VARIANT` that contains the qualifier to write. This parameter cannot be `null`.
 
-`lFlavor`
+`lFlavor`\
 [in] One of the following constants that defines the desired qualifier flavors for this qualifier. The default value is `WBEM_FLAVOR_OVERRIDABLE` (0).
 
 |Constant  |Value  |Description  |
@@ -70,17 +71,19 @@ The following values returned by this function are defined in the *WbemCli.h* he
 | `WBEM_E_INVALID_QUALIFIER_TYPE` | 0x80041029 | The `pVal` parameter is not of a legal qualifier type. |
 | `WBEM_E_OVERRIDE_NOT_ALLOWED` | 0x8004101a | It is not possible to call the `QualifierSet_Put` method on the qualifier because the owning object does not permit overrides. |
 | `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
-  
+
 ## Remarks
 
 This function wraps a call to the [IWbemQualifierSet::Put](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-put) method.
 
-## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
- **Header:** WMINet_Utils.idl  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
-  
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+
+ **Header:** WMINet_Utils.idl
+
+ **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

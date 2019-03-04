@@ -14,7 +14,7 @@ ms.custom: vs-dotnet
 ---
 # Walkthrough: My first WPF desktop application
 
-This article shows you how to develop a simple Windows Presentation Foundation (WPF) application that includes the elements that are common to most WPF applications: Extensible Application Markup Language (XAML) markup, code-behind, application definitions, controls, layout, data binding, and styles.
+This article shows you how to develop an end-to-end Windows Presentation Foundation (WPF) application that includes the elements that are common to most WPF applications: Extensible Application Markup Language (XAML) markup, code-behind, application definitions, controls, layout, data binding, and styles.
 
 This walkthrough includes the following steps:
 

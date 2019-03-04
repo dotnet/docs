@@ -16,7 +16,7 @@ ms.assetid: b8451735-8046-478f-912b-40870a6c0c3a
   
     -   [To upgrade the database schema](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md#ToUpgrade)  
   
-##  <a name="UsingWorkflowIdentity"></a> Using WorkflowIdentity  
+## <a name="UsingWorkflowIdentity"></a> Using WorkflowIdentity  
  To use <xref:System.Activities.WorkflowIdentity>, create an instance, configure it, and associate it with a <xref:System.Activities.WorkflowApplication> instance. A <xref:System.Activities.WorkflowIdentity> instance contains three identifying pieces of information. <xref:System.Activities.WorkflowIdentity.Name%2A> and <xref:System.Activities.WorkflowIdentity.Version%2A> contain a name and a <xref:System.Version> and are required, and <xref:System.Activities.WorkflowIdentity.Package%2A> is optional and can be used to specify an additional string containing information such as assembly name or other desired information. A <xref:System.Activities.WorkflowIdentity> is unique if any of its three properties are different from another <xref:System.Activities.WorkflowIdentity>.  
   
 > [!IMPORTANT]
@@ -71,7 +71,7 @@ wfApp.Load(instanceId);
  When the previous code is executed, the following <xref:System.Activities.VersionMismatchException> is thrown.  
   
  **The WorkflowIdentity ('MortgageWorkflow v1; Version=1.0.0.0') of the loaded instance does not match the WorkflowIdentity ('MortgageWorkflow v2; Version=2.0.0.0') of the provided workflow definition. The instance can be loaded using a different definition, or updated using Dynamic Update.**  
-###  <a name="SxS"></a> Side-by-side Execution using WorkflowIdentity  
+### <a name="SxS"></a> Side-by-side Execution using WorkflowIdentity  
  <xref:System.Activities.WorkflowIdentity> can be used to facilitate the execution of multiple versions of a workflow side-by-side. One common scenario is changing business requirements on a long-running workflow. Many instances of a workflow could be running when an updated version is deployed. The host application can be configured to use the updated workflow definition when starting new instances, and it is the responsibility of the host application to provide the correct workflow definition when resuming instances. <xref:System.Activities.WorkflowIdentity> can be used to identify and supply the matching workflow definition when resuming workflow instances.  
   
  To retrieve the <xref:System.Activities.WorkflowIdentity> of a persisted workflow instance, the <xref:System.Activities.WorkflowApplication.GetInstance%2A> method is used. The <xref:System.Activities.WorkflowApplication.GetInstance%2A> method takes the <xref:System.Activities.WorkflowApplication.Id%2A> of the persisted workflow instance and the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> that contains the persisted instance and returns a <xref:System.Activities.WorkflowApplicationInstance>. A <xref:System.Activities.WorkflowApplicationInstance> contains information about a persisted workflow instance, including its associated <xref:System.Activities.WorkflowIdentity>. This associated <xref:System.Activities.WorkflowIdentity> can be used by the host to supply the correct workflow definition when loading and resuming the workflow instance.  
@@ -132,13 +132,13 @@ wfApp.Load(instance);
 // Resume the workflow...  
 ```  
   
-##  <a name="UpdatingWF4PersistenceDatabases"></a> Upgrading .NET Framework 4 Persistence Databases to Support Workflow Versioning  
+## <a name="UpdatingWF4PersistenceDatabases"></a> Upgrading .NET Framework 4 Persistence Databases to Support Workflow Versioning  
  A SqlWorkflowInstanceStoreSchemaUpgrade.sql database script is provided to upgrade persistence databases created using the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] database scripts. This script updates the databases to support the new versioning capabilities introduced in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. Any persisted workflow instances in the databases are given default versioning values, and can then participate in side-by-side execution and dynamic update.  
   
  If a [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] workflow application attempts any persistence operations that use the new versioning features on a persistence database which has not been upgraded using the provided script, an <xref:System.Runtime.DurableInstancing.InstancePersistenceCommandException> is thrown with a message similar to the following message.  
   
  **The SqlWorkflowInstanceStore has a database version of '4.0.0.0'. InstancePersistenceCommand 'System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand' cannot be run against this database version.  Please upgrade the database to '4.5.0.0'.**  
-###  <a name="ToUpgrade"></a> To upgrade the database schema  
+### <a name="ToUpgrade"></a> To upgrade the database schema  
   
 1.  Open SQL Server Management Studio and connect to the persistence database server, for example **.\SQLEXPRESS**.  
   

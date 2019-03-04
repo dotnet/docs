@@ -240,7 +240,7 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
   
  For more information about array literals, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
-##  <a name="default"></a> Default Data Types and Values  
+## <a name="default"></a> Default Data Types and Values  
  The following table describes the results of various combinations of specifying the data type and initializer in a `Dim` statement.  
   
 |Data type specified?|Initializer specified?|Example|Result|  

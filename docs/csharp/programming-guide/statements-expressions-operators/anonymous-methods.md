@@ -49,7 +49,7 @@ In versions of C# before 2.0, the only way to declare a [delegate](../../../csha
   
  In each case, a message is displayed when the delegate is invoked.  
   
- [!code-csharp[csProgGuideDelegates#4](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_5.cs)]  
+ [!code-csharp[csProgGuideDelegates#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#4)]  
   
 ## See also
 

@@ -10,7 +10,7 @@ ms.assetid: 97839aef-8fbc-40d5-9769-6b569bc2710b
 This example defines two structs, `RomanNumeral` and `BinaryNumeral`, and demonstrates conversions between them.  
   
 ## Example  
- [!code-csharp[csProgGuideStatements#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-implement-user-defined-conversions-between-structs_1.cs)]  
+ [!code-csharp[csProgGuideStatements#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#13)]  
   
 ## Robust Programming  
   

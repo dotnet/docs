@@ -3,7 +3,7 @@ title: "C# Compiler Options Listed Alphabetically"
 ms.date: 05/15/2018
 helpviewer_keywords: 
   - "compiler options [C#], listed alpabetically"
-  - "C# language, compiler options listed alphabitically"
+  - "C# language, compiler options listed alphabetically"
   - "Visual C# compiler, options listed alphabetically"
   - "Visual C#, compiler options listed alphabetically"
 ms.assetid: 43535ea0-ca47-4a15-b528-615087a86092

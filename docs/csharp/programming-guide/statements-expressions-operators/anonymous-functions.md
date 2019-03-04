@@ -3,7 +3,7 @@ title: "Anonymous Functions - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
-  - "lambda expressions [C#], as anonymus functions"
+  - "lambda expressions [C#], as anonymous functions"
   - "anonymous functions [C#]"
   - "anonymous methods [C#]"
 ms.assetid: 6ce3f04d-0c71-4728-9127-634c7e9a8365

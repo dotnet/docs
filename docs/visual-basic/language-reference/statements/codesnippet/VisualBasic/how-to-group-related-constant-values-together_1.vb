@@ -1,1 +1,0 @@
-    Private Enum temperatureValues

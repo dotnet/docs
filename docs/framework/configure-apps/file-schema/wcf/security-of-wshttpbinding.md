@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<security> of <wsHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 8658b162-2ddf-4162-a869-aa517a42288a

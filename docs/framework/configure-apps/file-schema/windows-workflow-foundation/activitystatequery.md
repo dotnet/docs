@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<activityStateQuery>"
 ms.date: "03/30/2017"
 ms.topic: "reference"

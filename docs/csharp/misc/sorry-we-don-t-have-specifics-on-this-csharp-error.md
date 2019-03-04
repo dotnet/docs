@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Sorry, we don't have specifics on this C# error"
 ms.date: 07/20/2015
 f1_keywords: 

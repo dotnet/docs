@@ -1,22 +1,22 @@
 Module Module3
 
     Sub Main()
-        ' Create an instance of the class, with 1 as the value of 
+        ' Create an instance of the class, with 1 as the value of
         ' the property.
-        Dim lambdaScopeDemoInstance = 
+        Dim lambdaScopeDemoInstance =
             New LambdaScopeDemoClass With {.Prop = 1}
 
-        ' Variable aDel will be bound to the nested lambda expression  
+        ' Variable aDel will be bound to the nested lambda expression
         ' returned by the call to functionWithNestedLambda.
         ' The value 2 is sent in for parameter level1.
-        Dim aDel As aDelegate = 
+        Dim aDel As aDelegate =
             lambdaScopeDemoInstance.functionWithNestedLambda(2)
 
-        ' Now the returned lambda expression is called, with 4 as the 
+        ' Now the returned lambda expression is called, with 4 as the
         ' value of parameter level3.
         Console.WriteLine("First value returned by aDel:   " & aDel(4))
 
-        ' Change a few values to verify that the lambda expression has 
+        ' Change a few values to verify that the lambda expression has
         ' access to the variables, not just their original values.
         lambdaScopeDemoInstance.aField = 20
         lambdaScopeDemoInstance.Prop = 30
@@ -44,12 +44,12 @@ Module Module3
 
             Dim localVar As Integer = 5
 
-            ' When the nested lambda expression is executed the first 
+            ' When the nested lambda expression is executed the first
             ' time, as aDel from Main, the variables have these values:
             ' level1 = 2
             ' level2 = 3, after aLambda is called in the Return statement
             ' level3 = 4, after aDel is called in Main
-            ' locarVar = 5
+            ' localVar = 5
             ' aField = 6
             ' aProp = 1
             ' The second time it is executed, two values have changed:
@@ -61,7 +61,7 @@ Module Module3
                                   level1 + level2 + level3 + localVar +
                                     aField + aProp
 
-            ' The function returns the nested lambda, with 3 as the 
+            ' The function returns the nested lambda, with 3 as the
             ' value of parameter level2.
             Return aLambda(3)
         End Function

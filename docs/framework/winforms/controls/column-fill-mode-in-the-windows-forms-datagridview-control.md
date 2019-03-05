@@ -33,8 +33,8 @@ In column fill mode, the <xref:System.Windows.Forms.DataGridView> control resize
  The following demonstration code enables you to experiment with different values for the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A>, <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A>, and <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> properties of different columns. In this example, a <xref:System.Windows.Forms.DataGridView> control is bound to its own <xref:System.Windows.Forms.DataGridView.Columns%2A> collection, and one column is bound to each of the <xref:System.Windows.Forms.DataGridViewColumn.HeaderText%2A>, <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A>, <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A>, <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A>, and <xref:System.Windows.Forms.DataGridViewColumn.Width%2A> properties. Each of the columns is also represented by a row in the control, and changing values in a row will update the properties of the corresponding column so that you can see how the values interact.  
   
 ### Code  
- [!code-csharp[System.Windows.Forms.DataGridViewFillColumnsDemo#00](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/CS/fillcolumns.cs#00)]
- [!code-vb[System.Windows.Forms.DataGridViewFillColumnsDemo#00](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/vb/fillcolumns.vb#00)]  
+ [!code-csharp[System.Windows.Forms.DataGridViewFillColumnsDemo#00](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/CS/fillcolumns.cs#00)]
+ [!code-vb[System.Windows.Forms.DataGridViewFillColumnsDemo#00](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/vb/fillcolumns.vb#00)]  
   
 ### Comments  
  To use this demonstration application:  

@@ -267,7 +267,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
 
  An equivalent workflow was created for WF3. The WF3 designer shows the entire workflow in the design area instead of nesting, therefore it is too big to display in this topic. A snippet of the workflow is shown below.
 
- ![WF3 Workflow](../../../docs/framework/windows-workflow-foundation/media/wf3workflow.gif "WF3Workflow")
+ ![WF3 Workflow](./media/performance/wf3-workflow-snippet.gif "Flowchart snippet of the WF3 workflow")
 
  To exercise nesting in an extreme case, another workflow that is part of this test uses 100 nested sequences.  In the innermost sequence is a single `Comment` or <xref:System.Workflow.Activities.CodeActivity>.
 

@@ -37,6 +37,18 @@
         "files": [
           "**/*.md"
         ],
+        "src": "_csharplang/proposals/csharp-7.0",
+        "dest": "csharp/language-reference/proposals/csharp-7.0",
+        "exclude": [
+          "README.md",
+          "LICENSE.md",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
         "src": "_vblang/spec",
         "dest": "visual-basic/reference/language-specification",
         "exclude": [
@@ -112,6 +124,7 @@
       },
       "ms.prod": {
         "_csharplang/spec/*.md": "dotnet-csharp",
+        "_csharplang/proposals/csharp-7.0/*.md": "dotnet-csharp",
         "_vblang/spec/*.md": "dotnet-visualbasic",
         "docs/core/**/**.md": "dotnet-core",
         "docs/csharp/**/**.md": "dotnet-csharp",
@@ -124,6 +137,7 @@
       },
       "ms.topic": {
         "_csharplang/spec/*.md": "language-reference",
+        "_csharplang/proposals/csharp-7.0/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
@@ -155,6 +169,7 @@
       },
       "ms.author": {
         "_csharplang/spec/*.md": "wiwagn",
+        "_csharplang/proposals/csharp-7.0/*.md": "wiwagn",
         "_vblang/spec/*.md": "wiwagn",
         "docs/core/**/**.md": "mairaw",
         "docs/core/docker/**.md": "adegeo",
@@ -172,10 +187,12 @@
       },
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",
+        "_csharplang/proposals/csharp-7.0/*.md": "08/13/2018",
         "_vblang/spec/*.md": "07/21/2017"
       },
       "ms.technology": {
         "_csharplang/spec/*.md": "csharp-spec",
+        "_csharplang/proposals/csharp-7.0/*.md": "csharp-spec",
         "_vblang/spec/*.md": "vb-spec",
         "docs/csharp/roslyn-sdk/**/**.md": "csharp-roslyn",
         "docs/csharp/language-reference/compiler-messages/**/**.md": "csharp-diagnostics",

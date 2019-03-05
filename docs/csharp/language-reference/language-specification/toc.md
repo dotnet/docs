@@ -22,6 +22,6 @@
 ## [C# 7.0: pattern matching](../../../../_csharplang/proposals/csharp-7.0/pattern-matching.md)
 ## [C# 7.0: local functions](../../../../_csharplang/proposals/csharp-7.0/local-functions.md)
 ## [C# 7.0: out variable declarations](../../../../_csharplang/proposals/csharp-7.0/out-var.md)
-## [C# 7.0: throw expressions](../../../../_csharplang/proposals/csharp-7.0/throw-expressions.md)
+## [C# 7.0: throw expressions](../../../../_csharplang/proposals/csharp-7.0/throw-expression.md)
 ## [C# 7.0: binary literals](../../../../_csharplang/proposals/csharp-7.0/binary-literals.md)
 ## [C# 7.0: digit separators](../../../../_csharplang/proposals/csharp-7.0/digit-separators.md)

@@ -31,7 +31,7 @@ If you have an operation that will take a long time to complete, and you do not 
   
 -   Adding Progress Reporting and Support for Cancellation  
   
- For a complete listing of the code used in this example, see [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md).  
+ For a complete listing of the code used in this example, see [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md).  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -152,17 +152,17 @@ If you have an operation that will take a long time to complete, and you do not 
   
 -   To debug your multithreaded application, see [How to: Use the Threads Window](/visualstudio/debugger/how-to-use-the-threads-window).  
   
--   Implement your own component that supports the asynchronous programming model. For more information, see [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
+-   Implement your own component that supports the asynchronous programming model. For more information, see [Event-based Asynchronous Pattern Overview](../../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
   
     > [!CAUTION]
-    >  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
+    >  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
   
 ## See also
 
 - <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType>
-- [Managed Threading](../../../../docs/standard/threading/index.md)
-- [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)
-- [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
+- [Managed Threading](../../../standard/threading/index.md)
+- [Managed Threading Best Practices](../../../standard/threading/managed-threading-best-practices.md)
+- [Event-based Asynchronous Pattern Overview](../../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
 - [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)
 - [Walkthrough: Running an Operation in the Background](walkthrough-running-an-operation-in-the-background.md)
 - [BackgroundWorker Component](backgroundworker-component.md)

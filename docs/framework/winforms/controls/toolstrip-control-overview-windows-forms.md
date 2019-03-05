@@ -71,7 +71,7 @@ The Windows Forms <xref:System.Windows.Forms.ToolStrip> control and its associat
 |<xref:System.Windows.Forms.ToolStripControlHost>|Hosts other controls that are not specifically <xref:System.Windows.Forms.ToolStrip> controls but for which you want <xref:System.Windows.Forms.ToolStrip> functionality.|  
 |<xref:System.Windows.Forms.ToolStripItemPlacement>|Specifies whether a <xref:System.Windows.Forms.ToolStripItem> is to be laid out on the main <xref:System.Windows.Forms.ToolStrip>, on the overflow <xref:System.Windows.Forms.ToolStrip>, or neither.|  
   
- For more information, see [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md) and [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md).  
+ For more information, see [ToolStrip Technology Summary](toolstrip-technology-summary.md) and [ToolStrip Control Architecture](toolstrip-control-architecture.md).  
   
 ## See also
 - <xref:System.Windows.Forms.ToolStrip>

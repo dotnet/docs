@@ -15,7 +15,7 @@ In the <xref:System.Windows.Forms.DataGridView> control, text box columns use au
   
  In the <xref:System.Windows.Forms.DataGridView> control, the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of a column determines its sorting behavior.  
   
- The following procedure shows the `Priority` column from [How to: Customize Data Formatting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md). This column is an image column and is not sortable by default. It contains actual cell values that are strings, however, so it can be sorted automatically.  
+ The following procedure shows the `Priority` column from [How to: Customize Data Formatting in the Windows Forms DataGridView Control](how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md). This column is an image column and is not sortable by default. It contains actual cell values that are strings, however, so it can be sorted automatically.  
   
 ### To set the sort mode for a column  
   
@@ -34,6 +34,6 @@ In the <xref:System.Windows.Forms.DataGridView> control, text box columns use au
 ## See also
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>
-- [Sorting Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/sorting-data-in-the-windows-forms-datagridview-control.md)
-- [Column Sort Modes in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-sort-modes-in-the-windows-forms-datagridview-control.md)
-- [How to: Customize Sorting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md)
+- [Sorting Data in the Windows Forms DataGridView Control](sorting-data-in-the-windows-forms-datagridview-control.md)
+- [Column Sort Modes in the Windows Forms DataGridView Control](column-sort-modes-in-the-windows-forms-datagridview-control.md)
+- [How to: Customize Sorting in the Windows Forms DataGridView Control](how-to-customize-sorting-in-the-windows-forms-datagridview-control.md)

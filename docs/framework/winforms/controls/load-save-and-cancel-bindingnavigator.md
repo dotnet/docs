@@ -28,7 +28,7 @@ The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <x
   
 5.  Select the <xref:System.Windows.Forms.BindingNavigator> control.  
   
-6.  Click the smart tag glyph (![Smart Tag Glyph](../../../../docs/framework/winforms/controls/media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) so the **BindingNavigator Tasks** dialog appears and select **Edit Items**.  
+6.  Click the smart tag glyph (![Smart Tag Glyph](media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) so the **BindingNavigator Tasks** dialog appears and select **Edit Items**.  
   
      The **Items Collection Editor** appears.  
   
@@ -107,5 +107,5 @@ The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <x
 - <xref:System.Windows.Forms.BindingNavigator>
 - <xref:System.Windows.Forms.BindingSource>
 - <xref:System.Windows.Forms.ToolStrip>
-- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)
-- [BindingSource Component Overview](../../../../docs/framework/winforms/controls/bindingsource-component-overview.md)
+- [BindingNavigator Control](bindingnavigator-control-windows-forms.md)
+- [BindingSource Component Overview](bindingsource-component-overview.md)

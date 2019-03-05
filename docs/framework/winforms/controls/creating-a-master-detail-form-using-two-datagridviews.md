@@ -37,7 +37,7 @@ One of the most common scenarios for using the <xref:System.Windows.Forms.DataGr
 2.  Implement a method in your form's class definition for handling the detail of connecting to the database. This example uses a `GetData` method that populates a <xref:System.Data.DataSet> object, adds a <xref:System.Data.DataRelation> object to the data set, and binds the <xref:System.Windows.Forms.BindingSource> components. Be sure to set the `connectionString` variable to a value that is appropriate for your database.  
   
     > [!IMPORTANT]
-    >  Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md).  
+    >  Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
   
      [!code-csharp[System.Windows.Forms.DataGridViewMasterDetails#20](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMasterDetails/CS/masterdetails.cs#20)]
      [!code-vb[System.Windows.Forms.DataGridViewMasterDetails#20](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMasterDetails/VB/masterdetails.vb#20)]  
@@ -74,4 +74,4 @@ One of the most common scenarios for using the <xref:System.Windows.Forms.DataGr
 - <xref:System.Windows.Forms.BindingSource>
 - [Displaying Data in the Windows Forms DataGridView Control](displaying-data-in-the-windows-forms-datagridview-control.md)
 - [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](create-a-master-detail-form-using-two-datagridviews.md)
-- [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)
+- [Protecting Connection Information](../../data/adonet/protecting-connection-information.md)

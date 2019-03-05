@@ -37,4 +37,4 @@ You can use the <xref:System.Windows.Forms.ToolStripStatusLabel.Spring%2A> prope
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.ToolStripItem>
 - <xref:System.Windows.Forms.ToolStripMenuItem>
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)

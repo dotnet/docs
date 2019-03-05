@@ -23,7 +23,7 @@ The Windows Forms `FolderBrowserDialog` component displays an interface with whi
  Describes this class and has links to all its members.  
   
 ## Related Sections  
- [Dialog Boxes in Windows Forms](../../../../docs/framework/winforms/dialog-boxes-in-windows-forms.md)  
+ [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)  
  Provides a list of tasks for dialog boxes, which often display tabs.  
   
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  

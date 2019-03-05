@@ -65,7 +65,7 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
     ```  
   
 ## See also
-- [Data Binding and Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md)
+- [Data Binding and Windows Forms](../data-binding-and-windows-forms.md)
 - [ListBox Control Overview](listbox-control-overview-windows-forms.md)
 - [ComboBox Control Overview](combobox-control-overview-windows-forms.md)
 - [CheckedListBox Control Overview](checkedlistbox-control-overview-windows-forms.md)

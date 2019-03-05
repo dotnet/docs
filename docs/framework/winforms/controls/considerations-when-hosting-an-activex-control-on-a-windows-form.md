@@ -24,7 +24,7 @@ Although Windows Forms have been optimized to host Windows Forms controls, you c
   
 ## See also
 - [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md)
-- [Code Access Security](../../../../docs/framework/misc/code-access-security.md)
+- [Code Access Security](../../misc/code-access-security.md)
 - [Controls and Programmable Objects Compared in Various Languages and Libraries](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/0061wezk(v=vs.100))
 - [Putting Controls on Windows Forms](putting-controls-on-windows-forms.md)
 - [Windows Forms Controls](index.md)

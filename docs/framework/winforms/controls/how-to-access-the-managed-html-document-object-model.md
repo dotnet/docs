@@ -18,7 +18,7 @@ You can access the managed HTML Document Object Model (DOM) from two types of ap
   
 ### To access DOM from a Windows Forms application  
   
-1.  Host a <xref:System.Windows.Forms.WebBrowser> control within your Windows Forms application and monitor for the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. For details on hosting controls and monitoring for events, see [Events](../../../../docs/standard/events/index.md).  
+1.  Host a <xref:System.Windows.Forms.WebBrowser> control within your Windows Forms application and monitor for the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. For details on hosting controls and monitoring for events, see [Events](../../../standard/events/index.md).  
   
 2.  Retrieve the <xref:System.Windows.Forms.HtmlDocument> for the current page by accessing the <xref:System.Windows.Forms.WebBrowser.Document%2A> property of the <xref:System.Windows.Forms.WebBrowser> control.  
 

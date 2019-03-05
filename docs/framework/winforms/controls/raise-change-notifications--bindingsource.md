@@ -37,5 +37,5 @@ The <xref:System.Windows.Forms.BindingSource> component will automatically detec
   
 ## See also
 - <xref:System.ComponentModel.INotifyPropertyChanged>
-- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)
-- [How to: Raise Change Notifications Using the BindingSource ResetItem Method](../../../../docs/framework/winforms/controls/how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md)
+- [BindingSource Component](bindingsource-component.md)
+- [How to: Raise Change Notifications Using the BindingSource ResetItem Method](how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md)

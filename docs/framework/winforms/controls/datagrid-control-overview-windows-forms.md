@@ -25,7 +25,7 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
- The Windows Forms <xref:System.Windows.Forms.DataGrid> control displays data in a series of rows and columns. The simplest case is when the grid is bound to a data source with a single table that contains no relationships. In that case, the data appears in simple rows and columns, as in a spreadsheet. For more information about binding data to other controls, see [Data Binding and Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md).  
+ The Windows Forms <xref:System.Windows.Forms.DataGrid> control displays data in a series of rows and columns. The simplest case is when the grid is bound to a data source with a single table that contains no relationships. In that case, the data appears in simple rows and columns, as in a spreadsheet. For more information about binding data to other controls, see [Data Binding and Windows Forms](../data-binding-and-windows-forms.md).  
   
  If the <xref:System.Windows.Forms.DataGrid> is bound to data with multiple related tables, and if navigation is enabled on the grid, the grid will display expanders in each row. With an expander, the user can move from a parent table to a child table. Clicking a node displays the child table, and clicking a back button displays the original parent table. In this manner, the grid displays the hierarchical relationships between tables.  
   
@@ -41,7 +41,7 @@ A DataGrid bound to data with multiple tables
 > [!NOTE]
 >  If you are familiar with the DataGrid control in Visual Basic 6.0, you will find some significant differences in the Windows Forms <xref:System.Windows.Forms.DataGrid> control.  
   
- When the grid is bound to a <xref:System.Data.DataSet>, the columns and rows are automatically created, formatted, and filled. For more information, see [Data Binding and Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md). Following the generation of the <xref:System.Windows.Forms.DataGrid> control, you can add, delete, rearrange, and format columns and rows depending on your needs.  
+ When the grid is bound to a <xref:System.Data.DataSet>, the columns and rows are automatically created, formatted, and filled. For more information, see [Data Binding and Windows Forms](../data-binding-and-windows-forms.md). Following the generation of the <xref:System.Windows.Forms.DataGrid> control, you can add, delete, rearrange, and format columns and rows depending on your needs.  
   
 ## Binding Data to the Control  
  For the <xref:System.Windows.Forms.DataGrid> control to work, it should be bound to a data source using the <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties at design time or the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method at run time. This binding points the <xref:System.Windows.Forms.DataGrid> to an instantiated data-source object, such as a <xref:System.Data.DataSet> or <xref:System.Data.DataTable>). The <xref:System.Windows.Forms.DataGrid> control shows the results of actions that are performed on the data. Most data-specific actions are not performed through the <xref:System.Windows.Forms.DataGrid> , but instead through the data source.  
@@ -72,7 +72,7 @@ A DataGrid bound to data with multiple tables
   
 -   Any component that implements the <xref:System.ComponentModel.IBindingList> interface.  
   
- For more information about possible data sources, see [Data Sources Supported by Windows Forms](../../../../docs/framework/winforms/data-sources-supported-by-windows-forms.md).  
+ For more information about possible data sources, see [Data Sources Supported by Windows Forms](../data-sources-supported-by-windows-forms.md).  
   
 ## Grid Display  
  A common use of the <xref:System.Windows.Forms.DataGrid> control is to display a single table of data from a dataset. However, the control can also be used to display multiple tables, including related tables. The display of the grid is adjusted automatically according to the data source. The following table shows what is displayed for various configurations.  

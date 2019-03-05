@@ -59,7 +59,7 @@ Encapsulates a data source for binding to controls.
  Provides reference documentation for the <xref:System.Windows.Forms.BindingNavigator> control.  
   
 ## Related Sections  
- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
+ [Windows Forms Data Binding](../windows-forms-data-binding.md)  
  Contains links to topics describing the Windows Forms data binding architecture.  
   
  Also see [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio).

@@ -28,5 +28,5 @@ When you set the <xref:System.Windows.Forms.ToolStrip.Stretch%2A> property of a 
 - <xref:System.Windows.Forms.ToolStrip.Stretch%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ToolStripTextBox>
 - <xref:System.Windows.Forms.ToolStripTextBox.GetPreferredSize%2A?displayProperty=nameWithType>
-- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)
-- [How to: Use the Spring Property Interactively in a StatusStrip](../../../../docs/framework/winforms/controls/how-to-use-the-spring-property-interactively-in-a-statusstrip.md)
+- [ToolStrip Control Architecture](toolstrip-control-architecture.md)
+- [How to: Use the Spring Property Interactively in a StatusStrip](how-to-use-the-spring-property-interactively-in-a-statusstrip.md)

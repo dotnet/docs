@@ -57,5 +57,5 @@ The <xref:System.Windows.Forms.BindingSource> component is designed to simplify 
 - [BindingSource Component Architecture](bindingsource-component-architecture.md)
 - [BindingSource Component](bindingsource-component.md)
 - [BindingNavigator Control](bindingnavigator-control-windows-forms.md)
-- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)
+- [Windows Forms Data Binding](../windows-forms-data-binding.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

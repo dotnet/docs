@@ -21,7 +21,7 @@ The following procedures demonstrate basic formatting of cell values using the <
   
 ### To format currency and date values  
   
--   Set the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> property of a <xref:System.Windows.Forms.DataGridViewCellStyle>. The following code example sets the format for specific columns using the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property of the columns. Values in the `UnitPrice` column appear in the current culture-specific currency format, with negative values surrounded by parentheses. Values in the `ShipDate` column appear in the current culture-specific short date format. For more information about <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> values, see [Formatting Types](../../../../docs/standard/base-types/formatting-types.md).  
+-   Set the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> property of a <xref:System.Windows.Forms.DataGridViewCellStyle>. The following code example sets the format for specific columns using the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property of the columns. Values in the `UnitPrice` column appear in the current culture-specific currency format, with negative values surrounded by parentheses. Values in the `ShipDate` column appear in the current culture-specific short date format. For more information about <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> values, see [Formatting Types](../../../standard/base-types/formatting-types.md).  
   
      [!code-csharp[System.Windows.Forms.DataGridViewMisc#071](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#071)]
      [!code-vb[System.Windows.Forms.DataGridViewMisc#071](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#071)]  
@@ -69,4 +69,4 @@ The following procedures demonstrate basic formatting of cell values using the <
 - [Cell Styles in the Windows Forms DataGridView Control](cell-styles-in-the-windows-forms-datagridview-control.md)
 - [Data Formatting in the Windows Forms DataGridView Control](data-formatting-in-the-windows-forms-datagridview-control.md)
 - [How to: Customize Data Formatting in the Windows Forms DataGridView Control](how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md)
-- [Formatting Types](../../../../docs/standard/base-types/formatting-types.md)
+- [Formatting Types](../../../standard/base-types/formatting-types.md)

@@ -45,5 +45,5 @@ The `BackgroundWorker` component enables your form or control to run an operatio
  Describes the type that holds data for the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event.  
   
 ## Related Sections  
- [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
+ [Event-based Asynchronous Pattern Overview](../../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
  Describes how the asynchronous pattern makes available the advantages of multithreaded applications while hiding many of the complex issues inherent in multithreaded design.

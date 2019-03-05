@@ -14,7 +14,7 @@ The Windows Forms `HelpProvider` component is used to associate an HTML Help 1.x
  [HelpProvider Component Overview](helpprovider-component-overview-windows-forms.md)  
  Introduces the general concepts of the `HelpProvider` component, which lets you associate an HTML Help file with a Windows-based application.  
   
- See [Help Systems in Windows Forms Applications](../../../../docs/framework/winforms/advanced/help-systems-in-windows-forms-applications.md).  
+ See [Help Systems in Windows Forms Applications](../advanced/help-systems-in-windows-forms-applications.md).  
   
 ## Reference  
  <xref:System.Windows.Forms.HelpProvider>  

@@ -24,7 +24,7 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
   
  When you are finished, you will have a reusable custom client control with the professional appearance of a Microsoft Office® XP control.  
   
- To copy the code in this topic as a single listing, see [How to: Create a Professionally Styled ToolStrip Control](../../../../docs/framework/winforms/controls/how-to-create-a-professionally-styled-toolstrip-control.md).  
+ To copy the code in this topic as a single listing, see [How to: Create a Professionally Styled ToolStrip Control](how-to-create-a-professionally-styled-toolstrip-control.md).  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -48,7 +48,7 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
 3.  Add a new <xref:System.Windows.Forms.UserControl> item to the **StackViewLibrary** project. Give the new source file a base name of `StackView`.  
   
 ## Designing the StackView Control  
- The `StackView` control is a composite control with one child <xref:System.Windows.Forms.ToolStrip> control. For more information about composite controls, see [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md).  
+ The `StackView` control is a composite control with one child <xref:System.Windows.Forms.ToolStrip> control. For more information about composite controls, see [Varieties of Custom Controls](varieties-of-custom-controls.md).  
   
 #### To design the StackView control  
   
@@ -161,7 +161,7 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
      [!code-vb[System.Windows.Forms.ToolStrip.StackView#5](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/VB/StackView.vb#5)]  
   
 ## Testing the StackView Control  
- The `StackView` control derives from the <xref:System.Windows.Forms.UserControl> class. Therefore, you can test the control with the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md).  
+ The `StackView` control derives from the <xref:System.Windows.Forms.UserControl> class. Therefore, you can test the control with the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).  
   
 #### To test the StackView control  
   
@@ -172,15 +172,15 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
 ## Next Steps  
  In this walkthrough, you have created a reusable custom client control with the professional appearance of an Office XP control. You can use the <xref:System.Windows.Forms.ToolStrip> family of controls for many other purposes:  
   
--   Create shortcut menus for your controls with <xref:System.Windows.Forms.ContextMenuStrip>. For more information, see [ContextMenu Component Overview](../../../../docs/framework/winforms/controls/contextmenu-component-overview-windows-forms.md).  
+-   Create shortcut menus for your controls with <xref:System.Windows.Forms.ContextMenuStrip>. For more information, see [ContextMenu Component Overview](contextmenu-component-overview-windows-forms.md).  
   
--   Create a form with an automatically populated standard menu. For more information, see [Walkthrough: Providing Standard Menu Items to a Form](../../../../docs/framework/winforms/controls/walkthrough-providing-standard-menu-items-to-a-form.md).  
+-   Create a form with an automatically populated standard menu. For more information, see [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md).  
   
--   Create a multiple document interface (MDI) form with docking <xref:System.Windows.Forms.ToolStrip> controls. For more information, see [How to: Create an MDI Form with Menu Merging and ToolStrip Controls](../../../../docs/framework/winforms/controls/how-to-create-an-mdi-form-with-menu-merging-and-toolstrip-controls.md).  
+-   Create a multiple document interface (MDI) form with docking <xref:System.Windows.Forms.ToolStrip> controls. For more information, see [How to: Create an MDI Form with Menu Merging and ToolStrip Controls](how-to-create-an-mdi-form-with-menu-merging-and-toolstrip-controls.md).  
   
 ## See also
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.StatusStrip>
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
-- [How to: Provide Standard Menu Items to a Form](../../../../docs/framework/winforms/controls/how-to-provide-standard-menu-items-to-a-form.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)
+- [How to: Provide Standard Menu Items to a Form](how-to-provide-standard-menu-items-to-a-form.md)

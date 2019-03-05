@@ -67,5 +67,5 @@ ms.assetid: 4e96e3d0-b1cc-4de1-8774-bc9970ec4554
 - [DataGrid Control Overview](datagrid-control-overview-windows-forms.md)
 - [How to: Add Tables and Columns to the Windows Forms DataGrid Control](how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)
 - [DataGrid Control](datagrid-control-windows-forms.md)
-- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)
+- [Windows Forms Data Binding](../windows-forms-data-binding.md)
 - [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)

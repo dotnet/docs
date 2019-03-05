@@ -87,7 +87,7 @@ For control authors, the .NET Framework provides a wealth of control authoring t
  [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)  
  Discusses how to create your own custom controls with the .NET Framework.  
   
- [Language Independence and Language-Independent Components](../../../../docs/standard/language-independence-and-language-independent-components.md)  
+ [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md)  
  Introduces the common language runtime, which is designed to simplify the creation and use of components. An important aspect of this simplification is enhanced interoperability between components written using different programming languages. The Common Language Specification (CLS) makes it possible to create tools and components that work with multiple programming languages.  
   
  [Walkthrough: Automatically Populating the Toolbox with Custom Components](walkthrough-automatically-populating-the-toolbox-with-custom-components.md)  

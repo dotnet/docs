@@ -43,7 +43,7 @@ Handling errors from the underlying data store is a required feature for a data-
      This code example uses a `GetData` method that returns a populated <xref:System.Data.DataTable> object. Be sure that you set the `connectionString` variable to a value that is appropriate for your database.  
   
     > [!IMPORTANT]
-    >  Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md).  
+    >  Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
   
      [!code-csharp[System.Windows.Forms.DataGridView.DataError#30](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DataError/CS/errorhandling.cs#30)]
      [!code-vb[System.Windows.Forms.DataGridView.DataError#30](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DataError/VB/errorhandling.vb#30)]  
@@ -88,4 +88,4 @@ Handling errors from the underlying data store is a required feature for a data-
 - [Data Entry in the Windows Forms DataGridView Control](data-entry-in-the-windows-forms-datagridview-control.md)
 - [How to: Handle Errors That Occur During Data Entry in the Windows Forms DataGridView Control](handle-errors-that-occur-during-data-entry-in-the-datagrid.md)
 - [Walkthrough: Validating Data in the Windows Forms DataGridView Control](walkthrough-validating-data-in-the-windows-forms-datagridview-control.md)
-- [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)
+- [Protecting Connection Information](../../data/adonet/protecting-connection-information.md)

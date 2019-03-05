@@ -26,7 +26,7 @@ This topic describes the main keyboard and mouse events provided by <xref:System
 |`KeyUp`|`void OnKeyUp(KeyEventArgs)`|Raised when a key is released.|  
   
 > [!NOTE]
->  Handling keyboard input is considerably more complex than overriding the events in the preceding table and is beyond the scope of this topic. For more information, see [User Input in Windows Forms](../../../../docs/framework/winforms/user-input-in-windows-forms.md).  
+>  Handling keyboard input is considerably more complex than overriding the events in the preceding table and is beyond the scope of this topic. For more information, see [User Input in Windows Forms](../user-input-in-windows-forms.md).  
   
 ## Mouse Events  
  The mouse events that your control can handle are <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseEnter>, <xref:System.Windows.Forms.Control.MouseHover>, <xref:System.Windows.Forms.Control.MouseLeave>, <xref:System.Windows.Forms.Control.MouseMove>, and <xref:System.Windows.Forms.Control.MouseUp>.  
@@ -60,5 +60,5 @@ This topic describes the main keyboard and mouse events provided by <xref:System
 ## See also
 - [Events in Windows Forms Controls](events-in-windows-forms-controls.md)
 - [Defining an Event](defining-an-event-in-windows-forms-controls.md)
-- [Events](../../../../docs/standard/events/index.md)
-- [User Input in Windows Forms](../../../../docs/framework/winforms/user-input-in-windows-forms.md)
+- [Events](../../../standard/events/index.md)
+- [User Input in Windows Forms](../user-input-in-windows-forms.md)

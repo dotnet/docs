@@ -40,7 +40,7 @@ Custom painting of controls is one of the many complicated tasks made easy by th
  Describes this method.  
   
 ## Related Sections  
- [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)  
+ [How to: Create Graphics Objects for Drawing](../advanced/how-to-create-graphics-objects-for-drawing.md)  
  Introduces [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] graphics functionality from a Visual Studio perspective and gives links to more information.  
   
  [Varieties of Custom Controls](varieties-of-custom-controls.md)  

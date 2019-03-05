@@ -17,7 +17,7 @@ You can add images to an <xref:System.Windows.Forms.ImageList> component several
   
 1.  Select the <xref:System.Windows.Forms.ImageList> component, or add one to the form.  
   
-2.  In the Properties window, click the ellipsis button (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.ImageList.Images%2A> property.  
+2.  In the Properties window, click the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.ImageList.Images%2A> property.  
   
 3.  In the **Image Collection Editor**, click **Add** or **Remove** to add or remove images from the list.  
   
@@ -32,6 +32,6 @@ You can add images to an <xref:System.Windows.Forms.ImageList> component several
 4.  In the **Images Collection Editor** click **Add** or **Remove** to add or remove images from the list.  
   
 ## See also
-- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)
+- [Images, Bitmaps, and Metafiles](../advanced/images-bitmaps-and-metafiles.md)
 - [Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls](performing-common-tasks-using-smart-tags-on-wf-controls.md)
 - [ImageList Component](imagelist-component-windows-forms.md)

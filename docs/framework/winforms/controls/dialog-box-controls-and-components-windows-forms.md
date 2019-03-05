@@ -34,7 +34,7 @@ The following Windows Forms controls and components present standard dialog boxe
  Provides reference information about the <xref:System.Windows.Forms.SaveFileDialog> class and its members.  
   
 ## Related Sections  
- [Dialog Boxes in Windows Forms](../../../../docs/framework/winforms/dialog-boxes-in-windows-forms.md)  
+ [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)  
  Describes how to create a dialog box for a Windows Form.  
   
  [ColorDialog Component Overview](colordialog-component-overview-windows-forms.md)  

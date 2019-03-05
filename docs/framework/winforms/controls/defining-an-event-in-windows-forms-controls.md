@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: d89f1096-8061-42e2-a855-a1f053f1940a
 ---
 # Defining an Event in Windows Forms Controls
-For details about defining custom events, see [Events](../../../../docs/standard/events/index.md). If you define an event that does not have any associated data, use the base type for event data, <xref:System.EventArgs>, and use <xref:System.EventHandler> as the event delegate. All that remains to do is to define an event member and a protected `On`*EventName* method that raises the event.  
+For details about defining custom events, see [Events](../../../standard/events/index.md). If you define an event that does not have any associated data, use the base type for event data, <xref:System.EventArgs>, and use <xref:System.EventHandler> as the event delegate. All that remains to do is to define an event member and a protected `On`*EventName* method that raises the event.  
   
  The following code fragment shows how the `FlashTrackBar` custom control defines a custom event, `ValueChanged`. For the complete code for the `FlashTrackBar` sample, see the [How to: Create a Windows Forms Control That Shows Progress](how-to-create-a-windows-forms-control-that-shows-progress.md).  
   
@@ -73,4 +73,4 @@ public class FlashTrackBar : Control {
 ## See also
 
 - [Events in Windows Forms Controls](events-in-windows-forms-controls.md)
-- [Events](../../../../docs/standard/events/index.md)
+- [Events](../../../standard/events/index.md)

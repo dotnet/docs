@@ -26,7 +26,7 @@ You can select text programmatically in the Windows Forms <xref:System.Windows.F
   
 3.  (Optional) Access the selected text through the <xref:System.Windows.Forms.TextBoxBase.SelectedText%2A> property.  
   
-     The code below selects the contents of a text box when the control's <xref:System.Windows.Forms.Control.Enter> event occurs. This example checks if the text box has a value for the <xref:System.Windows.Forms.TextBox.Text%2A> property that is not `null` or an empty string. When the text box receives the focus, the current text in the text box is selected. The `TextBox1_Enter` event handler must be bound to the control; for more information, see [How to: Create Event Handlers at Run Time for Windows Forms](../../../../docs/framework/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md).  
+     The code below selects the contents of a text box when the control's <xref:System.Windows.Forms.Control.Enter> event occurs. This example checks if the text box has a value for the <xref:System.Windows.Forms.TextBox.Text%2A> property that is not `null` or an empty string. When the text box receives the focus, the current text in the text box is selected. The `TextBox1_Enter` event handler must be bound to the control; for more information, see [How to: Create Event Handlers at Run Time for Windows Forms](../how-to-create-event-handlers-at-run-time-for-windows-forms.md).  
   
      To test this example, press the Tab key until the text box has the focus. If you click in the text box, the text is unselected.  
   

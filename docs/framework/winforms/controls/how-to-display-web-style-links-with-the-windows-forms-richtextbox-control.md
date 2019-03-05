@@ -27,7 +27,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
      In the example below, the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event opens an instance of Internet Explorer to the URL specified in the <xref:System.Windows.Forms.RichTextBox.Text%2A> property of the <xref:System.Windows.Forms.RichTextBox> control. This example assumes a form with a <xref:System.Windows.Forms.RichTextBox> control.  
   
     > [!IMPORTANT]
-    >  In calling the <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> method, you will encounter a <xref:System.Security.SecurityException> exception if you are running the code in a partial-trust context because of insufficient privileges. For more information, see [Code Access Security Basics](../../../../docs/framework/misc/code-access-security-basics.md).  
+    >  In calling the <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> method, you will encounter a <xref:System.Security.SecurityException> exception if you are running the code in a partial-trust context because of insufficient privileges. For more information, see [Code Access Security Basics](../../misc/code-access-security-basics.md).  
   
     ```vb  
     Public p As New System.Diagnostics.Process  

@@ -23,7 +23,7 @@ ms.assetid: 4a6d1b34-b696-476b-bf8a-57c6230aa9e1
   
 1.  In order to display data in the table, you must first bind the <xref:System.Windows.Forms.DataGrid> control to a dataset. For more information, see [How to: Bind the Windows Forms DataGrid Control to a Data Source Using the Designer](bind-wf-datagrid-control-to-a-data-source-using-the-designer.md).  
   
-2.  Select the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property in the Properties window, and then click the ellipsis button (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) next to the property to display the **DataGridTableStyle Collection Editor**.  
+2.  Select the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property in the Properties window, and then click the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the property to display the **DataGridTableStyle Collection Editor**.  
   
 3.  In the collection editor, click **Add** to insert a table style.  
   
@@ -37,7 +37,7 @@ ms.assetid: 4a6d1b34-b696-476b-bf8a-57c6230aa9e1
   
 ### To add a column to the DataGrid control in the designer  
   
-1.  In the **Members** box of the **DataGridTableStyle Collection Editor**, select the appropriate table style. In the **Properties** box of the collection editor, select the <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> collection, and then click the ellipsis button (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) next to the property to display the **DataGridColumnStyle Collection Editor**.  
+1.  In the **Members** box of the **DataGridTableStyle Collection Editor**, select the appropriate table style. In the **Properties** box of the collection editor, select the <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> collection, and then click the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the property to display the **DataGridColumnStyle Collection Editor**.  
   
 2.  In the collection editor, click **Add** to insert a column style or click the down arrow next to **Add** to specify a column type.  
   

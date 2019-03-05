@@ -15,4 +15,4 @@ A Windows Forms control inherits more than sixty events from <xref:System.Window
 - [Overriding the OnPaint Method](overriding-the-onpaint-method.md)
 - [Handling User Input](handling-user-input.md)
 - [Defining an Event](defining-an-event-in-windows-forms-controls.md)
-- [Events](../../../../docs/standard/events/index.md)
+- [Events](../../../standard/events/index.md)

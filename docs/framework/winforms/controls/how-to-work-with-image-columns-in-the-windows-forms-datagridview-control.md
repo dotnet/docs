@@ -29,5 +29,5 @@ The following code example shows how to use the <xref:System.Windows.Forms.DataG
 ## See also
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridViewImageColumn>
-- [Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/programming-with-cells-rows-and-columns-in-the-datagrid.md)
-- [How to: Display Images in Cells of the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-display-images-in-cells-of-the-windows-forms-datagridview-control.md)
+- [Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control](programming-with-cells-rows-and-columns-in-the-datagrid.md)
+- [How to: Display Images in Cells of the Windows Forms DataGridView Control](how-to-display-images-in-cells-of-the-windows-forms-datagridview-control.md)

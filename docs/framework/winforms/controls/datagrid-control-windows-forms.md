@@ -68,7 +68,7 @@ ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
  Provides details about using this property to bind the <xref:System.Windows.Forms.DataGrid> control to data.  
   
 ## Related Sections  
- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
+ [Windows Forms Data Binding](../windows-forms-data-binding.md)  
  Provides links to topics on data binding in Windows Forms.  
   
 ## See also

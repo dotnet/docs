@@ -20,7 +20,7 @@ Because the Windows Forms <xref:System.Windows.Forms.TreeView> control displays 
   
 1.  Select the <xref:System.Windows.Forms.TreeView> control.  
   
-2.  In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) button next to the <xref:System.Windows.Forms.TreeView.Nodes%2A> property.  
+2.  In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button next to the <xref:System.Windows.Forms.TreeView.Nodes%2A> property.  
   
      The **TreeNode Editor** appears.  
   

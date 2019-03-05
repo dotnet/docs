@@ -42,4 +42,4 @@ The insertion mark in the <xref:System.Windows.Forms.ListView> control shows use
 - <xref:System.Windows.Forms.ListViewInsertionMark>
 - [ListView Control](listview-control-windows-forms.md)
 - [ListView Control Overview](listview-control-overview-windows-forms.md)
-- [Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms](../../../../docs/framework/winforms/advanced/walkthrough-performing-a-drag-and-drop-operation-in-windows-forms.md)
+- [Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms](../advanced/walkthrough-performing-a-drag-and-drop-operation-in-windows-forms.md)

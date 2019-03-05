@@ -28,4 +28,4 @@ The <xref:System.Windows.Forms.ToolStripPanel> provides flexibility for multiple
   
 ## See also
 - <xref:System.Windows.Forms.ToolStripPanel>
-- [How to: Join ToolStripPanels](../../../../docs/framework/winforms/controls/how-to-join-toolstrippanels.md)
+- [How to: Join ToolStripPanels](how-to-join-toolstrippanels.md)

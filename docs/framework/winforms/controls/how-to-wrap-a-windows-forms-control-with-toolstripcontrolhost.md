@@ -61,6 +61,6 @@ ms.assetid: e2ce4990-661d-4882-a116-8a9eb575dc84
   
 ## See also
 - <xref:System.Windows.Forms.ToolStripControlHost>
-- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
-- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)
-- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Architecture](toolstrip-control-architecture.md)
+- [ToolStrip Technology Summary](toolstrip-technology-summary.md)

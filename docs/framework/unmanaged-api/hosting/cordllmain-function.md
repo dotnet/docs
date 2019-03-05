@@ -48,7 +48,7 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
   
  The operating system loader calls this method regardless of the entry point specified in the DLL file.  
   
- In Windows 98, Windows ME, Windows NT, and Windows 2000, the `_CorDllMain` function is called indirectly through a fixup in the operating system loader. In all other versions of Windows, it is called directly by the operating system loader.  
+The `_CorDllMain` function is called directly by the operating system loader.
   
  For additional information, see the Remarks section in the [_CorValidateImage](../../../../docs/framework/unmanaged-api/hosting/corvalidateimage-function.md) topic.  
   

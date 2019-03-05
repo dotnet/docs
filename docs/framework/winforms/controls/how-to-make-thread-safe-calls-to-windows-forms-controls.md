@@ -86,6 +86,6 @@ The example uses the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompl
 ## See also
 
 - <xref:System.ComponentModel.BackgroundWorker>
-- [How to: Run an operation in the background](../../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
-- [How to: Implement a form that uses a background operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
-- [Develop custom Windows Forms controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)
+- [How to: Run an operation in the background](how-to-run-an-operation-in-the-background.md)
+- [How to: Implement a form that uses a background operation](how-to-implement-a-form-that-uses-a-background-operation.md)
+- [Develop custom Windows Forms controls with the .NET Framework](developing-custom-windows-forms-controls.md)

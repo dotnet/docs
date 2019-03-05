@@ -29,5 +29,5 @@ The process of adding an item to a Windows Forms <xref:System.Windows.Forms.List
   
 ## See also
 - <xref:System.Windows.Forms.ListView>
-- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)
-- [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)
+- [ListView Control](listview-control-windows-forms.md)
+- [ListView Control Overview](listview-control-overview-windows-forms.md)

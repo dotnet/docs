@@ -27,5 +27,5 @@ You can programmatically add one or more controls to a <xref:System.Windows.Form
 ## See also
 - <xref:System.Windows.Forms.ToolStripContentPanel>
 - <xref:System.Windows.Forms.ToolStripContainer>
-- [ToolStripContainer Control](../../../../docs/framework/winforms/controls/toolstripcontainer-control.md)
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+- [ToolStripContainer Control](toolstripcontainer-control.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)

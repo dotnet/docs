@@ -36,11 +36,11 @@ The <xref:System.Windows.Forms.FlowLayoutPanel> control supports the <xref:Syste
 ## Example  
  The following illustration shows four buttons that are anchored and docked relative to the blue button in a <xref:System.Windows.Forms.FlowLayoutPanel>. The <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> is <xref:System.Windows.Forms.FlowDirection.LeftToRight>.  
   
- ![FlowLayoutPanel anchoring](../../../../docs/framework/winforms/controls/media/net-flpanchorexp.gif "NET_FLPanchorExp")  
+ ![FlowLayoutPanel anchoring](media/net-flpanchorexp.gif "NET_FLPanchorExp")  
   
  The following illustration shows four buttons that are anchored and docked relative to the blue button in a <xref:System.Windows.Forms.FlowLayoutPanel>. The <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> is <xref:System.Windows.Forms.FlowDirection.TopDown>.  
   
- ![FlowLayoutPanel anchoring](../../../../docs/framework/winforms/controls/media/vs-flpanchor2.gif "VS_FLPanchor2")  
+ ![FlowLayoutPanel anchoring](media/vs-flpanchor2.gif "VS_FLPanchor2")  
   
  The following code example demonstrates various <xref:System.Windows.Forms.Control.Anchor%2A> property values for a <xref:System.Windows.Forms.Button> control in a <xref:System.Windows.Forms.FlowLayoutPanel> control.  
   
@@ -56,4 +56,4 @@ The <xref:System.Windows.Forms.FlowLayoutPanel> control supports the <xref:Syste
   
 ## See also
 - <xref:System.Windows.Forms.FlowLayoutPanel>
-- [FlowLayoutPanel Control Overview](../../../../docs/framework/winforms/controls/flowlayoutpanel-control-overview.md)
+- [FlowLayoutPanel Control Overview](flowlayoutpanel-control-overview.md)

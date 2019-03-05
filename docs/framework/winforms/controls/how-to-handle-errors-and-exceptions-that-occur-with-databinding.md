@@ -36,4 +36,4 @@ Oftentimes exceptions and errors occur on the underlying business objects when y
 ## See also
 - <xref:System.Windows.Forms.Binding.BindingComplete?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.BindingSource.BindingComplete?displayProperty=nameWithType>
-- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)
+- [BindingSource Component](bindingsource-component.md)

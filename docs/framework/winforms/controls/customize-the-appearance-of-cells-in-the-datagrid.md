@@ -29,4 +29,4 @@ You can customize the appearance of any cell by handling the <xref:System.Window
 ## See also
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.CellPainting>
-- [Customizing the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/customizing-the-windows-forms-datagridview-control.md)
+- [Customizing the Windows Forms DataGridView Control](customizing-the-windows-forms-datagridview-control.md)

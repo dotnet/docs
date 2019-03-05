@@ -37,4 +37,4 @@ You can customize the <xref:System.Windows.Forms.ToolStripMenuItem> objects in y
 - <xref:System.Windows.Forms.ToolStripDropDownMenu>
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ToolStrip>
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)

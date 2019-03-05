@@ -173,4 +173,4 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
   
 ## See also
 - <xref:System.Windows.Forms.SaveFileDialog>
-- [SaveFileDialog Component](../../../../docs/framework/winforms/controls/savefiledialog-component-windows-forms.md)
+- [SaveFileDialog Component](savefiledialog-component-windows-forms.md)

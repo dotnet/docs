@@ -88,5 +88,5 @@ You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component 
   
 ## See also
 - <xref:System.Windows.Forms.ErrorProvider.SetError%2A>
-- [ErrorProvider Component Overview](../../../../docs/framework/winforms/controls/errorprovider-component-overview-windows-forms.md)
-- [How to: View Errors Within a DataSet with the Windows Forms ErrorProvider Component](../../../../docs/framework/winforms/controls/view-errors-within-a-dataset-with-wf-errorprovider-component.md)
+- [ErrorProvider Component Overview](errorprovider-component-overview-windows-forms.md)
+- [How to: View Errors Within a DataSet with the Windows Forms ErrorProvider Component](view-errors-within-a-dataset-with-wf-errorprovider-component.md)

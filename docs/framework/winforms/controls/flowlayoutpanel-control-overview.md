@@ -24,4 +24,4 @@ The <xref:System.Windows.Forms.FlowLayoutPanel> control arranges its contents in
 ## See also
 - <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A>
 - <xref:System.Windows.Forms.TableLayoutPanel>
-- [FlowLayoutPanel Control](../../../../docs/framework/winforms/controls/flowlayoutpanel-control-windows-forms.md)
+- [FlowLayoutPanel Control](flowlayoutpanel-control-windows-forms.md)

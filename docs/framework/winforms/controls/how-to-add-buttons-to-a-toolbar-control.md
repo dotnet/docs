@@ -144,7 +144,7 @@ ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
   
 ## See also
 - <xref:System.Windows.Forms.ToolBar>
-- [How to: Define an Icon for a ToolBar Button](../../../../docs/framework/winforms/controls/how-to-define-an-icon-for-a-toolbar-button.md)
-- [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)
-- [ToolBar Control Overview](../../../../docs/framework/winforms/controls/toolbar-control-overview-windows-forms.md)
-- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)
+- [How to: Define an Icon for a ToolBar Button](how-to-define-an-icon-for-a-toolbar-button.md)
+- [How to: Trigger Menu Events for Toolbar Buttons](how-to-trigger-menu-events-for-toolbar-buttons.md)
+- [ToolBar Control Overview](toolbar-control-overview-windows-forms.md)
+- [ToolBar Control](toolbar-control-windows-forms.md)

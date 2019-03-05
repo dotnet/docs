@@ -49,5 +49,5 @@ The advent of the <xref:System.Windows.Forms.BindingNavigator> control in Window
   
 ## See also
 - <xref:System.Windows.Forms.BindingNavigator>
-- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+- [BindingNavigator Control](bindingnavigator-control-windows-forms.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)

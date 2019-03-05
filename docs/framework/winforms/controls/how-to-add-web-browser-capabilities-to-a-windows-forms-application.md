@@ -32,4 +32,4 @@ With the <xref:System.Windows.Forms.WebBrowser> control, you can add Web browser
   
 ## See also
 - <xref:System.Windows.Forms.WebBrowser>
-- [WebBrowser Control](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)
+- [WebBrowser Control](webbrowser-control-windows-forms.md)

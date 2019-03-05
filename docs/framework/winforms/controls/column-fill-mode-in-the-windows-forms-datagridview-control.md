@@ -70,4 +70,4 @@ In column fill mode, the <xref:System.Windows.Forms.DataGridView> control resize
 - <xref:System.Windows.Forms.DataGridViewColumn.Width%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=nameWithType>
-- [Resizing Columns and Rows in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/resizing-columns-and-rows-in-the-windows-forms-datagridview-control.md)
+- [Resizing Columns and Rows in the Windows Forms DataGridView Control](resizing-columns-and-rows-in-the-windows-forms-datagridview-control.md)

@@ -52,4 +52,4 @@ You can bind the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.F
 - <xref:System.Windows.Forms.ListBox>
 - [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)
 - [Data Binding and Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md)
-- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+- [Windows Forms Controls Used to List Options](windows-forms-controls-used-to-list-options.md)

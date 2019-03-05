@@ -30,5 +30,5 @@ You can control the appearance of <xref:System.Windows.Forms.DataGridView> rows 
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridView.RowPostPaint?displayProperty=nameWithType>
-- [Customizing the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/customizing-the-windows-forms-datagridview-control.md)
-- [DataGridView Control Architecture](../../../../docs/framework/winforms/controls/datagridview-control-architecture-windows-forms.md)
+- [Customizing the Windows Forms DataGridView Control](customizing-the-windows-forms-datagridview-control.md)
+- [DataGridView Control Architecture](datagridview-control-architecture-windows-forms.md)

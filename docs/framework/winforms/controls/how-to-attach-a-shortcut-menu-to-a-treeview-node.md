@@ -32,4 +32,4 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control displays a hierar
   
 ## See also
 - <xref:System.Windows.Forms.ContextMenuStrip>
-- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)
+- [TreeView Control](treeview-control-windows-forms.md)

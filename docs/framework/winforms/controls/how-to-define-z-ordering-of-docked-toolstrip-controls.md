@@ -42,4 +42,4 @@ To position a <xref:System.Windows.Forms.ToolStrip> control correctly with docki
 - <xref:System.Windows.Forms.Control.ControlCollection.Add%2A>
 - <xref:System.Windows.Forms.Control.Controls%2A>
 - <xref:System.Windows.Forms.Control.Dock%2A>
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)

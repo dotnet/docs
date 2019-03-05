@@ -22,4 +22,4 @@ You can move or add a <xref:System.Windows.Forms.ToolStripItem> to the left or r
 - <xref:System.Windows.Forms.ToolStripItemAlignment>
 - <xref:System.Windows.Forms.ToolStripItemAlignment.Left>
 - <xref:System.Windows.Forms.ToolStripItemAlignment.Right>
-- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)

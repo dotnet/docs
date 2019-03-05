@@ -81,7 +81,7 @@ Each cell within the <xref:System.Windows.Forms.DataGridView> control can have i
   
  The following diagram illustrates this process.  
   
- ![Properties of type DataGridViewCellStyle](../../../../docs/framework/winforms/controls/media/datagridviewcells1.gif "DataGridViewCells1")  
+ ![Properties of type DataGridViewCellStyle](media/datagridviewcells1.gif "DataGridViewCells1")  
   
  You can also access the styles inherited by specific rows and columns. The column <xref:System.Windows.Forms.DataGridViewColumn.InheritedStyle%2A> property inherits its values from the following properties.  
   
@@ -116,7 +116,7 @@ Each cell within the <xref:System.Windows.Forms.DataGridView> control can have i
   
  The following diagram illustrates how different <xref:System.Windows.Forms.DataGridViewCellStyle> properties can inherit their values from different places.  
   
- ![DataGridView property&#45;value inheritance](../../../../docs/framework/winforms/controls/media/datagridviewcells2.gif "DataGridViewCells2")  
+ ![DataGridView property&#45;value inheritance](media/datagridviewcells2.gif "DataGridViewCells2")  
   
  By taking advantage of style inheritance, you can provide appropriate styles for the entire control without having to specify the same information in multiple places.  
   
@@ -156,6 +156,6 @@ Each cell within the <xref:System.Windows.Forms.DataGridView> control can have i
 - <xref:System.Windows.Forms.DataGridView.CellStyleContentChanged?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridView.RowPostPaint?displayProperty=nameWithType>
-- [Basic Formatting and Styling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)
-- [How to: Set Default Cell Styles for the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md)
-- [Data Formatting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-formatting-in-the-windows-forms-datagridview-control.md)
+- [Basic Formatting and Styling in the Windows Forms DataGridView Control](basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)
+- [How to: Set Default Cell Styles for the Windows Forms DataGridView Control](how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md)
+- [Data Formatting in the Windows Forms DataGridView Control](data-formatting-in-the-windows-forms-datagridview-control.md)

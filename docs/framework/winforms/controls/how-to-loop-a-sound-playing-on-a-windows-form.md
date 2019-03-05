@@ -49,5 +49,5 @@ The following code example plays a sound repeatedly. When the code in the `stopP
   
 ## See also
 - <xref:System.Media.SoundPlayer.PlayLooping%2A>
-- [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)
-- [SoundPlayer Class Overview](../../../../docs/framework/winforms/controls/soundplayer-class-overview.md)
+- [How to: Play a Sound from a Windows Form](how-to-play-a-sound-from-a-windows-form.md)
+- [SoundPlayer Class Overview](soundplayer-class-overview.md)

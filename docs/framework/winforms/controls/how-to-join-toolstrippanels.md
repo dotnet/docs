@@ -28,4 +28,4 @@ You can join <xref:System.Windows.Forms.ToolStrip> controls to a <xref:System.Wi
 ## See also
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.ToolStripPanel>
-- [How to: Use ToolStripPanels for MDI](../../../../docs/framework/winforms/controls/how-to-use-toolstrippanels-for-mdi.md)
+- [How to: Use ToolStripPanels for MDI](how-to-use-toolstrippanels-for-mdi.md)

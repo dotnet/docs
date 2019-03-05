@@ -16,7 +16,7 @@ You can configure the <xref:System.Windows.Forms.DataGridView> control to resize
   
  You have many options to restrict which cells are used to determine the new sizes. For example, you can configure the control to automatically resize the width of its columns based only on the values in rows that are currently displayed. With this, you can avoid inefficiency when working with large numbers of rows, although in this case, you might want to use sizing methods such as <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> to adjust sizes at times of your choosing.  
   
- For more information about automatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
+ For more information about automatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  The following code example demonstrates the options available for automatic resizing.  
   
@@ -45,6 +45,6 @@ You can configure the <xref:System.Windows.Forms.DataGridView> control to resize
 - <xref:System.Windows.Forms.DataGridViewAutoSizeColumnsMode>
 - <xref:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode>
 - <xref:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode>
-- [Resizing Columns and Rows in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/resizing-columns-and-rows-in-the-windows-forms-datagridview-control.md)
-- [Sizing Options in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md)
-- [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md)
+- [Resizing Columns and Rows in the Windows Forms DataGridView Control](resizing-columns-and-rows-in-the-windows-forms-datagridview-control.md)
+- [Sizing Options in the Windows Forms DataGridView Control](sizing-options-in-the-windows-forms-datagridview-control.md)
+- [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](programmatically-resize-cells-to-fit-content-in-the-datagrid.md)

@@ -16,7 +16,7 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
   
  There is extensive support for this feature in Visual Studio.  
   
- See [Walkthrough: Creating a Professionally Styled ToolStrip Control](../../../../docs/framework/winforms/controls/walkthrough-creating-a-professionally-styled-toolstrip-control.md).  
+ See [Walkthrough: Creating a Professionally Styled ToolStrip Control](walkthrough-creating-a-professionally-styled-toolstrip-control.md).  
   
 ## Example  
  The following code example demonstrates how to use <xref:System.Windows.Forms.ToolStrip> controls to create a composite control that mimics the **Navigation Pane** provided by Microsoft® Outlook®.  
@@ -35,5 +35,5 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.StatusStrip>
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
-- [How to: Provide Standard Menu Items to a Form](../../../../docs/framework/winforms/controls/how-to-provide-standard-menu-items-to-a-form.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)
+- [How to: Provide Standard Menu Items to a Form](how-to-provide-standard-menu-items-to-a-form.md)

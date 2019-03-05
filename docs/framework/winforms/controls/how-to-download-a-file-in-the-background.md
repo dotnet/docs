@@ -61,5 +61,5 @@ Downloading a file is a common task, and it is often useful to run this potentia
   
 ## See also
 - <xref:System.ComponentModel.BackgroundWorker>
-- [How to: Run an Operation in the Background](../../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
-- [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
+- [How to: Run an Operation in the Background](how-to-run-an-operation-in-the-background.md)
+- [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)

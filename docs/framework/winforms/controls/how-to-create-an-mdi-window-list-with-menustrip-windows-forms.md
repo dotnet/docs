@@ -78,4 +78,4 @@ Use the multiple-document interface (MDI) to create applications that can open s
 ## See also
 - [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)
 - [How to: Create MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-child-forms.md)
-- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)
+- [MenuStrip Control](menustrip-control-windows-forms.md)

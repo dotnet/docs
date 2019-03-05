@@ -24,4 +24,4 @@ The following code example demonstrates how to create a border or outline around
   
 ## See also
 - <xref:System.Windows.Forms.Padding>
-- [Margin and Padding in Windows Forms Controls](../../../../docs/framework/winforms/controls/margin-and-padding-in-windows-forms-controls.md)
+- [Margin and Padding in Windows Forms Controls](margin-and-padding-in-windows-forms-controls.md)

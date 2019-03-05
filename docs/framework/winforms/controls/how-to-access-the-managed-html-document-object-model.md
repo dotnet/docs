@@ -24,7 +24,7 @@ You can access the managed HTML Document Object Model (DOM) from two types of ap
 
 ### To access DOM from a UserControl hosted in Internet Explorer  
   
-1.  Create your own custom derived class of the <xref:System.Windows.Forms.UserControl> class. For more information, see [How to: Author Composite Controls](../../../../docs/framework/winforms/controls/how-to-author-composite-controls.md).  
+1.  Create your own custom derived class of the <xref:System.Windows.Forms.UserControl> class. For more information, see [How to: Author Composite Controls](how-to-author-composite-controls.md).  
   
 2.  Place the following code inside of your Load event handler for your <xref:System.Windows.Forms.UserControl>:  
   
@@ -40,4 +40,4 @@ You can access the managed HTML Document Object Model (DOM) from two types of ap
 1.  Your application or <xref:System.Windows.Forms.UserControl> will require full trust in order to access the managed HTML DOM. If you are deploying a Windows Forms application using [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], you can request full trust using either Permission Elevation or Trusted Application Deployment; see [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications) for details.  
   
 ## See also
-- [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)
+- [Using the Managed HTML Document Object Model](using-the-managed-html-document-object-model.md)

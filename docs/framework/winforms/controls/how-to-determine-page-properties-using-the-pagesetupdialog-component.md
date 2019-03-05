@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 6dae05bc-c0fd-4357-bb93-841a1631d98f
 ---
 # How to: Determine Page Properties Using the PageSetupDialog Component
-The [PageSetupDialog](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md) component presents layout, paper size, and other page layout choices to the user for a document.  
+The [PageSetupDialog](pagesetupdialog-component-windows-forms.md) component presents layout, paper size, and other page layout choices to the user for a document.  
   
  You need to specify an instance of the <xref:System.Drawing.Printing.PrintDocument> class—this is the document to be printed. Additionally, users must have a printer installed on their computer, either locally or through a network, as this is partly how the <xref:System.Windows.Forms.PageSetupDialog> component determines the page formatting choices presented to the user.  
   
@@ -84,4 +84,4 @@ The [PageSetupDialog](../../../../docs/framework/winforms/controls/pagesetupdial
 ## See also
 - <xref:System.Windows.Forms.PageSetupDialog>
 - [How to: Create Standard Windows Forms Print Jobs](../../../../docs/framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md)
-- [PageSetupDialog Component](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md)
+- [PageSetupDialog Component](pagesetupdialog-component-windows-forms.md)

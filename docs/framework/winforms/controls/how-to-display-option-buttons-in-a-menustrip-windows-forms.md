@@ -83,5 +83,5 @@ Option buttons, also known as radio buttons, are similar to check boxes except t
 - <xref:System.Windows.Forms.ToolStripMenuItem.OnPaint%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ToolStripMenuItem.Enabled%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.RadioButtonRenderer>
-- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)
-- [How to: Implement a Custom ToolStripRenderer](../../../../docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md)
+- [MenuStrip Control](menustrip-control-windows-forms.md)
+- [How to: Implement a Custom ToolStripRenderer](how-to-implement-a-custom-toolstriprenderer.md)

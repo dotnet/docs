@@ -32,4 +32,4 @@ When you are building controls that interact with data, you will sometimes find 
 - <xref:System.Windows.Forms.BindingNavigator>
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.BindingSource>
-- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)
+- [BindingSource Component](bindingsource-component.md)

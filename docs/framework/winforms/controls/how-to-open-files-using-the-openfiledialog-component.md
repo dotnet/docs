@@ -36,4 +36,4 @@ The following example uses the <xref:System.Windows.Forms.Button> control's <xre
 
 ## See also
 - <xref:System.Windows.Forms.OpenFileDialog>
-- [OpenFileDialog component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md)
+- [OpenFileDialog component](openfiledialog-component-windows-forms.md)

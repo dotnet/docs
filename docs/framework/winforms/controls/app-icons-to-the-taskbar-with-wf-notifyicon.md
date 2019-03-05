@@ -68,6 +68,6 @@ The Windows Forms <xref:System.Windows.Forms.NotifyIcon> component displays a si
 ## See also
 - <xref:System.Windows.Forms.NotifyIcon>
 - <xref:System.Windows.Forms.NotifyIcon.Icon%2A>
-- [How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component](../../../../docs/framework/winforms/controls/how-to-associate-a-shortcut-menu-with-a-windows-forms-notifyicon-component.md)
-- [NotifyIcon Component](../../../../docs/framework/winforms/controls/notifyicon-component-windows-forms.md)
-- [NotifyIcon Component Overview](../../../../docs/framework/winforms/controls/notifyicon-component-overview-windows-forms.md)
+- [How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component](how-to-associate-a-shortcut-menu-with-a-windows-forms-notifyicon-component.md)
+- [NotifyIcon Component](notifyicon-component-windows-forms.md)
+- [NotifyIcon Component Overview](notifyicon-component-overview-windows-forms.md)

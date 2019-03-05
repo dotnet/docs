@@ -31,5 +31,5 @@ You can customize a <xref:System.Windows.Forms.ContextMenuStrip> by setting the 
 ## See also
 - <xref:System.Windows.Forms.ContextMenuStrip>
 - <xref:System.Windows.Forms.ToolStripDropDown>
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
-- [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](../../../../docs/framework/winforms/controls/how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)
+- [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md)

@@ -26,5 +26,5 @@ The following code example demonstrates how to bind a collection of objects to a
   
 ## See also
 - <xref:System.Windows.Forms.DataGridView>
-- [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)
-- [How to: Access Objects Bound to Windows Forms DataGridView Rows](../../../../docs/framework/winforms/controls/how-to-access-objects-bound-to-windows-forms-datagridview-rows.md)
+- [Displaying Data in the Windows Forms DataGridView Control](displaying-data-in-the-windows-forms-datagridview-control.md)
+- [How to: Access Objects Bound to Windows Forms DataGridView Rows](how-to-access-objects-bound-to-windows-forms-datagridview-rows.md)

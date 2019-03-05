@@ -92,4 +92,4 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
 ## See also
 - [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)
 - [How to: Create MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-child-forms.md)
-- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+- [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)

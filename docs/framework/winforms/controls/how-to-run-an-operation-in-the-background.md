@@ -37,5 +37,5 @@ If you have an operation that will take a long time to complete, and you do not 
 ## See also
 - <xref:System.ComponentModel.BackgroundWorker>
 - <xref:System.ComponentModel.DoWorkEventArgs>
-- [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
-- [BackgroundWorker Component](../../../../docs/framework/winforms/controls/backgroundworker-component.md)
+- [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)
+- [BackgroundWorker Component](backgroundworker-component.md)

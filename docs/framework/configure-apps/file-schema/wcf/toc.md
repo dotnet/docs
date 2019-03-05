@@ -254,7 +254,7 @@
 ####### [<contractTypeNames>](contracttypenames.md)
 ######## [<add>](add-of-contracttypenames.md)
 #### [<mexEndpoint>](mexendpoint.md)
-#### [<udpAnnoucementEndpoint>](udpannoucementendpoint.md)
+#### [<udpAnnouncementEndpoint>](udpannouncementendpoint.md)
 ##### [<udpTransportSettings>](udptransportsettings-of-udpannouncementendpoint.md)
 #### [<udpDiscoveryEndpoint>](udpdiscoveryendpoint.md)
 ##### [<udpTransportSettings>](udptransportsettings.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<transport> of <netTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 49462e0a-66e1-463f-b3e1-c83a441673c6

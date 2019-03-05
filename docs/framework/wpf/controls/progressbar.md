@@ -13,7 +13,7 @@ A <xref:System.Windows.Controls.ProgressBar> indicates the progress of an operat
   
  The following illustration shows a typical <xref:System.Windows.Controls.ProgressBar>.  
   
- ![Progress bar](../../../../docs/framework/wpf/controls/media/ss-ctl-progressbar.GIF "SS_CTL_progressbar")  
+ ![Progress bar](./media/ss-ctl-progressbar.GIF "SS_CTL_progressbar")  
   
 ## In This Section  
   

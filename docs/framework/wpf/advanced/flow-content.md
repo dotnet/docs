@@ -12,10 +12,10 @@ ms.assetid: d32501af-0bac-4b80-8a20-61a6996753fe
 Flow content elements provide the building blocks for creating flow content suitable for hosting in a <xref:System.Windows.Documents.FlowDocument>.  
   
 ## In This Section  
- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)  
- [TextElement Content Model Overview](../../../../docs/framework/wpf/advanced/textelement-content-model-overview.md)  
- [Table Overview](../../../../docs/framework/wpf/advanced/table-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/flow-content-elements-how-to-topics.md)  
+ [Flow Document Overview](flow-document-overview.md)  
+ [TextElement Content Model Overview](textelement-content-model-overview.md)  
+ [Table Overview](table-overview.md)  
+ [How-to Topics](flow-content-elements-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Documents.FlowDocument>  
@@ -33,4 +33,4 @@ Flow content elements provide the building blocks for creating flow content suit
   <xref:System.Windows.Documents.ListItem>  
   
 ## Related Sections  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+ [Documents in WPF](documents-in-wpf.md)

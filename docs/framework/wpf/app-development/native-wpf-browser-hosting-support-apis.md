@@ -26,5 +26,5 @@ enum PresentationHostCommands {
  PHCMDID_TABINTO instructs PresentationHost to switch focus to the first or last focusable element in its content, depending on the state of the Shift key.  
   
 ## In This Section  
- [IEnumRAWINPUTDEVICE](../../../../docs/framework/wpf/app-development/ienumrawinputdevice.md)  
- [IWpfHostSupport](../../../../docs/framework/wpf/app-development/iwpfhostsupport.md)
+ [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md)  
+ [IWpfHostSupport](iwpfhostsupport.md)

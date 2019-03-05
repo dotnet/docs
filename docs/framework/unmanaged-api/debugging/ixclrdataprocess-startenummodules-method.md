@@ -32,7 +32,7 @@ HRESULT StartEnumModules(
 
 ### Parameters
 
-`handle`
+`handle`\
 [out] A handle for enumerating the modules.
 
 ## Remarks
@@ -48,6 +48,6 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 
 ## See also
 
-- [CLRDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)
+- [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)
+- [Debugging](index.md)
+- [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)

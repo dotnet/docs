@@ -13,6 +13,6 @@ The <xref:System.Windows.Controls.FlowDocumentPageViewer> control is used to vie
   
 ## See also
 - <xref:System.Windows.Documents.FlowDocument>
-- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/advanced/flow-content-elements-how-to-topics.md)
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Flow Document Overview](../advanced/flow-document-overview.md)
+- [How-to Topics](../advanced/flow-content-elements-how-to-topics.md)
+- [Documents in WPF](../advanced/documents-in-wpf.md)

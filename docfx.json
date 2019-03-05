@@ -37,12 +37,35 @@
         "files": [
           "**/*.md"
         ],
-        "src": "_csharplang/proposals/csharp-7.0",
-        "dest": "csharp/language-reference/proposals/csharp-7.0",
+        "src": "_csharplang/proposals",
+        "dest": "csharp/language-reference/proposals",
         "exclude": [
           "README.md",
           "LICENSE.md",
-          "**/includes/**"
+          "proposal-template.md",
+
+          "caller-argument-expression.md",
+          "covariant-returns.md",
+          "declaration-expressions.md",
+          "default-interface-methods.md",
+          "fixed-sized-buffers.md",
+          "function-pointers.md",
+          "intptr-operators.md",
+          "intrinsics.md",
+          "lambda-attributes.md",
+          "null-arg-checking.md",
+          "null-conditional-await.md",
+          "nullable-enhanced-common-type.md",
+          "proposal-template.md",
+          "readonly-instance-members.md",
+          "readonly_locals.md",
+          "skip-localsinit.md",
+          "static-delegates.md",
+          "target-typed-new.md",
+          
+          "**/includes/**",
+          "**/inactive/**",
+          "**/rejected/**"
         ]
       },
       {
@@ -123,8 +146,7 @@
         "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp"
       },
       "ms.prod": {
-        "_csharplang/spec/*.md": "dotnet-csharp",
-        "_csharplang/proposals/csharp-7.0/*.md": "dotnet-csharp",
+        "_csharplang/**/*.md": "dotnet-csharp",
         "_vblang/spec/*.md": "dotnet-visualbasic",
         "docs/core/**/**.md": "dotnet-core",
         "docs/csharp/**/**.md": "dotnet-csharp",
@@ -136,8 +158,7 @@
         "docs/visual-basic/**/**.md": "dotnet-visualbasic"
       },
       "ms.topic": {
-        "_csharplang/spec/*.md": "language-reference",
-        "_csharplang/proposals/csharp-7.0/*.md": "language-reference",
+        "_csharplang/**/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
@@ -168,8 +189,7 @@
         "docs/visual-basic/**/**.md": "KathleenDollard"
       },
       "ms.author": {
-        "_csharplang/spec/*.md": "wiwagn",
-        "_csharplang/proposals/csharp-7.0/*.md": "wiwagn",
+        "_csharplang/**/*.md": "wiwagn",
         "_vblang/spec/*.md": "wiwagn",
         "docs/core/**/**.md": "mairaw",
         "docs/core/docker/**.md": "adegeo",
@@ -191,8 +211,7 @@
         "_vblang/spec/*.md": "07/21/2017"
       },
       "ms.technology": {
-        "_csharplang/spec/*.md": "csharp-spec",
-        "_csharplang/proposals/csharp-7.0/*.md": "csharp-spec",
+        "_csharplang/**/*.md": "csharp-spec",
         "_vblang/spec/*.md": "vb-spec",
         "docs/csharp/roslyn-sdk/**/**.md": "csharp-roslyn",
         "docs/csharp/language-reference/compiler-messages/**/**.md": "csharp-diagnostics",

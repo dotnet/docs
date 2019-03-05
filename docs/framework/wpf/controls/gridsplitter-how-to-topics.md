@@ -12,9 +12,9 @@ ms.assetid: db0da67a-954f-42e6-bbf7-4e16b8cbb210
 The topics in this section describe how to use the <xref:System.Windows.Controls.GridSplitter> control.  
   
 ## In This Section  
- [Resize Rows with a GridSplitter](../../../../docs/framework/wpf/controls/how-to-resize-rows-with-a-gridsplitter.md)  
- [Resize Columns with a GridSplitter](../../../../docs/framework/wpf/controls/how-to-resize-columns-with-a-gridsplitter.md)  
- [Make Sure That a GridSplitter Is Visible](../../../../docs/framework/wpf/controls/how-to-make-sure-that-a-gridsplitter-is-visible.md)  
+ [Resize Rows with a GridSplitter](how-to-resize-rows-with-a-gridsplitter.md)  
+ [Resize Columns with a GridSplitter](how-to-resize-columns-with-a-gridsplitter.md)  
+ [Make Sure That a GridSplitter Is Visible](how-to-make-sure-that-a-gridsplitter-is-visible.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.GridSplitter>  

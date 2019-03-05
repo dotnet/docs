@@ -1,1 +1,0 @@
-    MsgBox("hello" & vbCrLf & "goodbye")

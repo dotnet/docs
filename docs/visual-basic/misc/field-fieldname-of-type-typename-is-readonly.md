@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Field '<fieldname>' of type '<typename>' is 'ReadOnly'"
 ms.date: 07/20/2015
 f1_keywords: 

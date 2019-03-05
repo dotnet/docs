@@ -13,15 +13,15 @@ ms.assetid: d3b93c6f-aa6b-486d-a010-d097ea8a516b
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] introduces routed events that can invoke handlers that exist on various listeners in the element tree of an application.  
   
 ## In This Section  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [Attached Events Overview](../../../../docs/framework/wpf/advanced/attached-events-overview.md)  
- [Object Lifetime Events](../../../../docs/framework/wpf/advanced/object-lifetime-events.md)  
- [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)  
- [Preview Events](../../../../docs/framework/wpf/advanced/preview-events.md)  
- [Property Change Events](../../../../docs/framework/wpf/advanced/property-change-events.md)  
- [Visual Basic and WPF Event Handling](../../../../docs/framework/wpf/advanced/visual-basic-and-wpf-event-handling.md)  
- [Weak Event Patterns](../../../../docs/framework/wpf/advanced/weak-event-patterns.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)  
+ [Routed Events Overview](routed-events-overview.md)  
+ [Attached Events Overview](attached-events-overview.md)  
+ [Object Lifetime Events](object-lifetime-events.md)  
+ [Marking Routed Events as Handled, and Class Handling](marking-routed-events-as-handled-and-class-handling.md)  
+ [Preview Events](preview-events.md)  
+ [Property Change Events](property-change-events.md)  
+ [Visual Basic and WPF Event Handling](visual-basic-and-wpf-event-handling.md)  
+ [Weak Event Patterns](weak-event-patterns.md)  
+ [How-to Topics](events-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.RoutedEvent>  
@@ -31,13 +31,13 @@ ms.assetid: d3b93c6f-aa6b-486d-a010-d097ea8a516b
  <xref:System.Windows.RoutingStrategy>  
   
 ## Related Sections  
- [WPF Architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)  
-  [XAML in WPF](../../../../docs/framework/wpf/advanced/xaml-in-wpf.md)  
-  [Base Elements](../../../../docs/framework/wpf/advanced/base-elements.md)  
-  [Element Tree and Serialization](../../../../docs/framework/wpf/advanced/element-tree-and-serialization.md)  
-  [Properties](../../../../docs/framework/wpf/advanced/properties-wpf.md)  
-  [Input](../../../../docs/framework/wpf/advanced/input-wpf.md)  
-  [Resources](../../../../docs/framework/wpf/advanced/resources-wpf.md)  
-  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
-  [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md)  
-  [Threading Model](../../../../docs/framework/wpf/advanced/threading-model.md)
+ [WPF Architecture](wpf-architecture.md)  
+  [XAML in WPF](xaml-in-wpf.md)  
+  [Base Elements](base-elements.md)  
+  [Element Tree and Serialization](element-tree-and-serialization.md)  
+  [Properties](properties-wpf.md)  
+  [Input](input-wpf.md)  
+  [Resources](resources-wpf.md)  
+  [Styling and Templating](../controls/styling-and-templating.md)  
+  [WPF Content Model](../controls/wpf-content-model.md)  
+  [Threading Model](threading-model.md)

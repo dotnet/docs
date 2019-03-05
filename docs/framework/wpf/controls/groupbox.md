@@ -13,10 +13,10 @@ The <xref:System.Windows.Controls.GroupBox> control is a <xref:System.Windows.Co
   
  The following illustration shows a <xref:System.Windows.Controls.GroupBox> that contains a <xref:System.Windows.Controls.TabControl> and a <xref:System.Windows.Controls.Button> that are enclosed in a <xref:System.Windows.Controls.StackPanel>.  
   
- ![GroupBoxImage](../../../../docs/framework/wpf/controls/media/groupboximage.JPG "GroupBoxImage")  
+ ![GroupBoxImage](./media/groupboximage.JPG "GroupBoxImage")  
   
 ## In This Section  
- [Define a GroupBox Template](../../../../docs/framework/wpf/controls/how-to-define-a-groupbox-template.md)  
+ [Define a GroupBox Template](how-to-define-a-groupbox-template.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.GroupBox>  

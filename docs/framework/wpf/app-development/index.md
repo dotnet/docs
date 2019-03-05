@@ -47,13 +47,13 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
  These capabilities are implemented by the <xref:System.Windows.Application> class, which you add to your applications using an *application definition*.  
   
- For more information, see [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md).  
+ For more information, see [Application Management Overview](application-management-overview.md).  
   
 <a name="WPF_Application_Resource__Content__and_Data_Files"></a>   
 ## WPF Application Resource, Content, and Data Files  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extends the core support in the Microsoft .NET Framework for embedded resources with support for three kinds of non-executable data files: resource, content, and data. For more information, see [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md).  
+ [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extends the core support in the Microsoft .NET Framework for embedded resources with support for three kinds of non-executable data files: resource, content, and data. For more information, see [WPF Application Resource, Content, and Data Files](wpf-application-resource-content-and-data-files.md).  
   
- A key component of the support for WPF non-executable data files is the ability to identify and load them using a unique [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)]. For more information, see [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
+ A key component of the support for WPF non-executable data files is the ability to identify and load them using a unique [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)]. For more information, see [Pack URIs in WPF](pack-uris-in-wpf.md).  
   
 <a name="Windows_and_Dialog_Boxes"></a>   
 ## Windows and Dialog Boxes  
@@ -67,7 +67,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 -   Tracking and interacting with the lifetime of a window.  
   
- For more information, see [WPF Windows Overview](../../../../docs/framework/wpf/app-development/wpf-windows-overview.md).  
+ For more information, see [WPF Windows Overview](wpf-windows-overview.md).  
   
  <xref:System.Windows.Window> supports the ability to create a special type of window known as a dialog box. Both modal and modeless types of dialog boxes can be created.  
   
@@ -75,7 +75,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
  A message box is a special type of dialog box for showing important textual information to users, and for asking simple Yes/No/OK/Cancel questions. You use the <xref:System.Windows.MessageBox> class to create and show message boxes.  
   
- For more information, see [Dialog Boxes Overview](../../../../docs/framework/wpf/app-development/dialog-boxes-overview.md).  
+ For more information, see [Dialog Boxes Overview](dialog-boxes-overview.md).  
   
 <a name="Navigation"></a>   
 ## Navigation  
@@ -99,29 +99,29 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 -   Remembering back and forward navigation using a journal, which can also be inspected and manipulated.  
   
- For information, see [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md).  
+ For information, see [Navigation Overview](navigation-overview.md).  
   
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] also supports a special type of navigation known as structured navigation. Structured navigation can be used to call one or more pages that return data in a structured and predictable way that is consistent with calling functions. This capability depends on the <xref:System.Windows.Navigation.PageFunction%601> class, which is described further in [Structured Navigation Overview](../../../../docs/framework/wpf/app-development/structured-navigation-overview.md). <xref:System.Windows.Navigation.PageFunction%601> also serves to simplify the creation of complex navigation topologies, which are described in [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md).  
+ [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] also supports a special type of navigation known as structured navigation. Structured navigation can be used to call one or more pages that return data in a structured and predictable way that is consistent with calling functions. This capability depends on the <xref:System.Windows.Navigation.PageFunction%601> class, which is described further in [Structured Navigation Overview](structured-navigation-overview.md). <xref:System.Windows.Navigation.PageFunction%601> also serves to simplify the creation of complex navigation topologies, which are described in [Navigation Topologies Overview](navigation-topologies-overview.md).  
   
 <a name="Hosting"></a>   
 ## Hosting  
- [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] can be hosted in [!INCLUDE[TLA#tla_ie](../../../../includes/tlasharptla-ie-md.md)] or Firefox. Each hosting model has its own set of considerations and constraints that are covered in [Hosting](../../../../docs/framework/wpf/app-development/hosting-wpf-applications.md).  
+ [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] can be hosted in [!INCLUDE[TLA#tla_ie](../../../../includes/tlasharptla-ie-md.md)] or Firefox. Each hosting model has its own set of considerations and constraints that are covered in [Hosting](hosting-wpf-applications.md).  
   
 <a name="Build_and_Deploy"></a>   
 ## Build and Deploy  
- Although simple [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications can be built from a command prompt using command-line compilers, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] integrates with [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] to provide additional support that simplified the development and build process. For more information, see [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md).  
+ Although simple [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications can be built from a command prompt using command-line compilers, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] integrates with [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] to provide additional support that simplified the development and build process. For more information, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
- Depending on the type of application you build, there are one or more deployment options to choose from. For more information, see [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md).  
+ Depending on the type of application you build, there are one or more deployment options to choose from. For more information, see [Deploying a WPF Application](deploying-a-wpf-application-wpf.md).  
   
 <a name="related_topics"></a>   
 ## Related Topics  
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)|Provides an overview of the <xref:System.Windows.Application> class including managing application lifetime, windows, application resources, and navigation.|  
-|[Windows in WPF](../../../../docs/framework/wpf/app-development/windows-in-wpf-applications.md)|Provides details of managing windows in your application including how to use the <xref:System.Windows.Window> class and dialog boxes.|  
-|[Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md)|Provides an overview of managing navigation between pages of your application.|  
-|[Hosting](../../../../docs/framework/wpf/app-development/hosting-wpf-applications.md)|Provides an overview of [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)].|  
-|[Build and Deploy](../../../../docs/framework/wpf/app-development/building-and-deploying-wpf-applications.md)|Describes how to build and deploy your WPF application.|  
-|[Introduction to WPF in Visual Studio](../../../../docs/framework/wpf/getting-started/introduction-to-wpf-in-vs.md)|Describes the main features of WPF.|  
-|[Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|A walkthrough that shows how to create a WPF application using page navigation, layout, controls, images, styles, and binding.|
+|[Application Management Overview](application-management-overview.md)|Provides an overview of the <xref:System.Windows.Application> class including managing application lifetime, windows, application resources, and navigation.|  
+|[Windows in WPF](windows-in-wpf-applications.md)|Provides details of managing windows in your application including how to use the <xref:System.Windows.Window> class and dialog boxes.|  
+|[Navigation Overview](navigation-overview.md)|Provides an overview of managing navigation between pages of your application.|  
+|[Hosting](hosting-wpf-applications.md)|Provides an overview of [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)].|  
+|[Build and Deploy](building-and-deploying-wpf-applications.md)|Describes how to build and deploy your WPF application.|  
+|[Introduction to WPF in Visual Studio](../getting-started/introduction-to-wpf-in-vs.md)|Describes the main features of WPF.|  
+|[Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)|A walkthrough that shows how to create a WPF application using page navigation, layout, controls, images, styles, and binding.|

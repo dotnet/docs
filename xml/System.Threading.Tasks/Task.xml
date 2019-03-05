@@ -4826,11 +4826,11 @@ Task t Status: RanToCompletion, Result: 42
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Tasks.Task" /> has been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out.  
+          The <see cref="P:System.TimeSpan.TotalMilliseconds" /> property of the <paramref name="timeout" /> argument is a negative number other than -1, which represents an infinite time-out.  
   
  -or-  
   
- <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+ The <see cref="P:System.TimeSpan.TotalMilliseconds" /> property of the <paramref name="timeout" /> argument is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.</exception>
       </Docs>
     </Member>

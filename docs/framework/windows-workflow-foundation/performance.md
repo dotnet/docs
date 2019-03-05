@@ -165,9 +165,9 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  Figure 2 – WF3 (left) and WF4 (right) basic compensation workflows
 
 ### Performance Test Results
- ![Performance Test Results](../../../docs/framework/windows-workflow-foundation/media/performancedata.gif "PerformanceData")
+ ![Performance Test Results](./media/performance/performance-test-data.gif "Data from performance tests")
 
- ![Performance Test Data Graph](../../../docs/framework/windows-workflow-foundation/media/performancetestchart.gif "PerformanceTestChart")
+ ![Performance Test Data Graph](./media/performance/performance-test-chart.gif "Data graph of performance test data")
 
  All tests are measured in workflows per second with the exception of the transaction scope test.  As can be seen above, the [!INCLUDE[wf1](../../../includes/wf1-md.md)] runtime performance has improved across the board, especially in areas that require multiple executions of the same activity like the while loop.
 

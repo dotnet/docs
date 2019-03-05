@@ -16,7 +16,7 @@ HRESULT GetStartAddress(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [out] A pointer to the starting address of the memory buffer.  
   

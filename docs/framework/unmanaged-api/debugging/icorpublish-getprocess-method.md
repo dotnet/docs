@@ -30,7 +30,7 @@ HRESULT GetProcess(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pid`  
  [in] The identifier of the process.  
   

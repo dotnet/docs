@@ -29,7 +29,7 @@ HRESULT GetValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppValue`  
  [out] A pointer to the address of an `ICorDebugValue` object.  
   

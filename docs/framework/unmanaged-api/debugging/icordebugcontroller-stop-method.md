@@ -29,7 +29,7 @@ HRESULT Stop (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwTimeoutIgnored`  
  Not used.  
   

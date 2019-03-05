@@ -28,7 +28,7 @@ HRESULT EnumerateInstalledRuntimes (
     [out, retval] IEnumUnknown **ppEnumerator);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnumerator`  
  [out] An enumeration of [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interfaces corresponding to each version of the CLR that is installed on the computer.  
   

@@ -29,7 +29,7 @@ HRESULT GetCachedInterfacePointers(
     [out, size_is(celt), length_is(*pceltFetched) CORDB_ADDRESS *ptrs);  
 ```  
   
-#### Parameters  
+## Parameters  
  `bIInspectableOnly`  
  [in] A value that indicates whether the method will return only [!INCLUDE[wrt](../../../../includes/wrt-md.md)] interfaces (`IInspectable` interfaces) or all COM interfaces that are cached by the runtime callable wrapper (RCW).  
   

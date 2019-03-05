@@ -29,7 +29,7 @@ HRESULT StartBlockingForDebugger (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwUnused`  
  [in] Reserved for future use.  
   

@@ -31,7 +31,7 @@ HRESULT ReJITError(
     [in] HRESULT     hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleID`  
  [in] The `ModuleID` in which the failed recompilation attempt was made.  
   

@@ -30,7 +30,7 @@ RESULT IsStronglyNamed (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyIdentity`  
  [in] The opaque canonical assembly identity data of the assembly to be evaluated.  
   

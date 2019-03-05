@@ -27,7 +27,7 @@ Determines whether the current frame is a child frame.
 HRESULT IsChild([out] BOOL * pIsChild);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIsChild`  
  [out] A Boolean value that specifies whether the current frame is a child frame.  
   

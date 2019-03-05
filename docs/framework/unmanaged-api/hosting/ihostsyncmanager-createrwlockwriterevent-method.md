@@ -30,7 +30,7 @@ HRESULT CreateRWLockWriterEvent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cookie`  
  [in] A cookie to associate with the auto-reset event.  
   

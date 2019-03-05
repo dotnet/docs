@@ -33,7 +33,7 @@ HRESULT AddFile2(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID for the assembly to which the file is added.  
   

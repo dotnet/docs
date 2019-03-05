@@ -28,7 +28,7 @@ void __stdcall FunctionEnter3WithInfo(
                [in] COR_PRF_ELT_INFO eltInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionIDOrClientID`  
  [in] The identifier of the function to which control is passed.  
   

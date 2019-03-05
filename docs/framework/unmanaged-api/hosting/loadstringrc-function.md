@@ -33,7 +33,7 @@ HRESULT LoadStringRC (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `iResourceID`  
  [in] An HRESULT.  
   

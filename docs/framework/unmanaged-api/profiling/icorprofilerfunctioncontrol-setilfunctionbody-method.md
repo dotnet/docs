@@ -29,7 +29,7 @@ HRESULT SetILFunctionBody(
     [in, size_is(cbNewILMethodHeader)] LPCBYTE pbNewILMethodHeader);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbNewILMethodHeader`  
  [in] The total size of the new CIL, including the header and any structures that come after the body.  
   

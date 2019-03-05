@@ -30,7 +30,7 @@ HRESULT CreateMonitorEvent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cookie`  
  [in] A cookie to associate with the event object.  
   

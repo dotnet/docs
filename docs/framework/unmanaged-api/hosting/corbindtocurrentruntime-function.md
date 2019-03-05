@@ -34,7 +34,7 @@ HRESULT CorBindToCurrentRuntime (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwszFileName`  
  [in] The name of an application configuration file that specifies the version of the CLR to load. If the file name is not fully qualified, it is assumed to be in the same directory as the executable making the call.  
   

@@ -30,7 +30,7 @@ HRESULT SaveDelta (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFile`  
  [in] The file name under which to save changes.  
   

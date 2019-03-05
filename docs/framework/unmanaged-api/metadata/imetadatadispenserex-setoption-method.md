@@ -30,7 +30,7 @@ HRESULT SetOption (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `optionId`  
  [in] A pointer to a GUID that specifies the option to be set.  
   

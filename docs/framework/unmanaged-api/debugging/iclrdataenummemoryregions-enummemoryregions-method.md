@@ -31,7 +31,7 @@ HRESULT EnumMemoryRegions (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `callback`  
  [in] A pointer to an [ICLRDataEnumMemoryRegionsCallback](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregionscallback-interface.md) instance that is called by this method for each memory region being enumerated to notify the debugger of the result.  
   

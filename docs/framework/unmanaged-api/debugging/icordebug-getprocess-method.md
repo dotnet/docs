@@ -30,7 +30,7 @@ HRESULT GetProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwProcessId`  
  [in] The ID of the process.  
   

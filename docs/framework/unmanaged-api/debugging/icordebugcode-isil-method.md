@@ -29,7 +29,7 @@ HRESULT IsIL (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbIL`  
  [out] `true` if this `ICorDebugCode` represents code that was compiled in MSIL; otherwise, `false`.  
   

@@ -29,7 +29,7 @@ HRESULT GetMinThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `MinThreads`  
  [out] A pointer to the minimum number of idle worker threads that the host currently maintains.  
   

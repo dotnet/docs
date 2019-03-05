@@ -22,7 +22,7 @@ HRESULT CertFreeAuthenticodeTimestamperInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTimestamperInfo`  
  [in, out] The time stamper information to be released. See the [AXL_AUTHENTICODE_TIMESTAMPER_INFO](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-timestamper-info-structure.md) structure.  
   

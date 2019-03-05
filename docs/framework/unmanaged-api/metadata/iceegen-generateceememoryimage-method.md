@@ -31,7 +31,7 @@ HRESULT GenerateCeeMemoryImage (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppImage`  
  [out] A pointer to the generated image.  
   

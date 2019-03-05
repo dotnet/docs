@@ -19,7 +19,7 @@ HRESULT GetVersion(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMajor`  
  [out] A pointer to the major version number.  
   

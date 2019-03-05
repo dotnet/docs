@@ -29,7 +29,7 @@ HRESULT Reset (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fFull`  
  [in] `true`, if the runtime should reset all thread-related static values in addition to the security and locale information related to the current `ICLRTask` instance; otherwise, `false`.  
   

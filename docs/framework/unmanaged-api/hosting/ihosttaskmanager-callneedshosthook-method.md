@@ -30,7 +30,7 @@ HRESULT CallNeedsHostHook (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `target`  
  [in] The address within the mapped portable executable (PE) file of the unmanaged function that is to be called.  
   

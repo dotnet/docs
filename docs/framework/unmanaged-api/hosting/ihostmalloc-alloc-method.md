@@ -31,7 +31,7 @@ HRESULT Alloc (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbSize`  
  [in] The size, in bytes, of the current memory allocation request.  
   

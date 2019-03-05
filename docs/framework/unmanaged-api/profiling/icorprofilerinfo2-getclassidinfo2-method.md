@@ -34,7 +34,7 @@ HRESULT GetClassIDInfo2(
     [out] ClassID typeArgs[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class for which information will be retrieved.  
   

@@ -28,7 +28,7 @@ HRESULT GetNamespace(
    [out] ISymUnmanagedNamespace  **pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer that is set to the returned [ISymUnmanagedNamespace](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md) interface.  
   

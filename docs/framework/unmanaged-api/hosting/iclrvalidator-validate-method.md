@@ -36,7 +36,7 @@ HRESULT Validate (
 );      
 ```  
   
-#### Parameters  
+## Parameters  
  `veh`  
  [in] A pointer to an `IVEHandler` instance that handles validation errors.  
   

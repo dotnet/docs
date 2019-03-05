@@ -30,7 +30,7 @@ HRESULT IsEqual (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pName`  
  [in] The `IAssemblyName` object to which to compare this `IAssemblyName`.  
   

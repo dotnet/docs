@@ -29,7 +29,7 @@ HRESULT GetCount (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnCount`  
  [out] A pointer to the total number of elements in the array.  
   

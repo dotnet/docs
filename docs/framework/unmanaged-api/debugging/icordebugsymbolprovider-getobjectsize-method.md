@@ -18,7 +18,7 @@ HRESULT GetObjectSize(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbSignature`  
  [in] The number of bytes in the typespec signature.  
   

@@ -31,7 +31,7 @@ HRESULT LoadLibrary(
      [out, retval] HMODULE *phndModule);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzDllName`  
  [in] The name of the assembly to be loaded.  
   

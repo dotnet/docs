@@ -30,7 +30,7 @@ HRESULT GetNextString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixString`  
  [in] The index value from a string table column.  
   

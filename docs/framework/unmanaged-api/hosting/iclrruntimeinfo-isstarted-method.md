@@ -27,7 +27,7 @@ HRESULT IsStarted(
         [out] DWORD    *pdwStartupFlags);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbStarted`  
  [out] `true` if this runtime is started; otherwise, `false`.  
   

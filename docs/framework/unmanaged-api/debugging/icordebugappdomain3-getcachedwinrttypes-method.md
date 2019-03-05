@@ -29,7 +29,7 @@ HRESULT GetCachedWinRTTypes (
 ;  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppGuidToTypeEnum`  
  [out] A pointer to an [ICorDebugGuidToTypeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugguidtotypeenum-interface.md) interface object that can enumerate the managed representations of [!INCLUDE[wrt](../../../../includes/wrt-md.md)] types currently loaded in the application domain.  
   

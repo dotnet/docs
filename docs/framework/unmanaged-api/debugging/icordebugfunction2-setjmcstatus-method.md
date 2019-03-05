@@ -29,7 +29,7 @@ HRESULT SetJMCStatus (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bIsJustMyCode`  
  [in] Set to `true` to mark the function as user code; otherwise, set to `false`.  
   

@@ -21,7 +21,7 @@ HRESULT GetMethodProps(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `codeRVA`  
  [in] A relative virtual address in the method about which information is to be retrieved.  
   

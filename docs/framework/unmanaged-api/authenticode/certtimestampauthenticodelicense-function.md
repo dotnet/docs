@@ -24,7 +24,7 @@ HRESULT CertTimestampAuthenticodeLicense (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pSignedLicenseBlob`  
  [in] The signed Authenticode XrML license to be time-stamped. See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
   

@@ -16,7 +16,7 @@ ms.assetid: 9b99d400-e911-4e55-99c6-64367c96aa4f
 <typeparam name="name">description</typeparam>  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  The name of the type parameter. Enclose the name in double quotation marks (" ").  
   

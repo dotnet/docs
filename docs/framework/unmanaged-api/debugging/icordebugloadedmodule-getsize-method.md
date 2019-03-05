@@ -16,7 +16,7 @@ HRESULT GetSize(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcBytes`  
  [out] A pointer to the number of bytes in the loaded module.  
   

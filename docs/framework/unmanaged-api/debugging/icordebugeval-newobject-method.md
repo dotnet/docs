@@ -33,7 +33,7 @@ HRESULT NewObject (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pConstructor`  
  [in] The constructor to be called.  
   

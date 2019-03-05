@@ -29,7 +29,7 @@ HRESULT SetAppDomainManagerType(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAppDomainManagerAssembly`  
  [in] The display name of the assembly that contains the application domain manager type; for example: "AdMgrExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6856bccf150f00b3".  
   

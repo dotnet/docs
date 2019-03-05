@@ -29,7 +29,7 @@ HRESULT GetIdentityAuthority (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppIIdentityAuthority`  
  [out] The returned `IIdentityAuthority` pointer.  
   

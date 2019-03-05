@@ -29,7 +29,7 @@ HRESULT GetVersionNumber (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nVersion`  
  [out] A pointer to the version number of the code.  
   

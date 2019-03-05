@@ -32,7 +32,7 @@ HRESULT OpenScopeOnITypeInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pITI`  
  [in] Pointer to an [ITypeInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface that provides the type information on which to open the scope.  
   

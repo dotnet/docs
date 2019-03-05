@@ -32,7 +32,7 @@ HRESULT SetFileProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `file`  
  [in] The metadata token that specifies the `File` metadata structure to be modified.  
   

@@ -29,7 +29,7 @@ HRESULT GetILFunctionBodyAllocator(
     [out] IMethodMalloc **ppMalloc);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module in which the method resides.  
   

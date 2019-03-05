@@ -29,7 +29,7 @@ HRESULT GetBlobHeapSize (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbBlobs`  
  [out] A pointer to the size, in bytes, of the BLOB heap.  
   

@@ -30,7 +30,7 @@ HRESULT UnloadAppDomain(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwAppDomainId`  
  [in] The numeric identifier of the application domain to unload.  
   

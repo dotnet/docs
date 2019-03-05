@@ -32,7 +32,7 @@ HRESULT DefineScope (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `rclsid`  
  [in] The CLSID of the version of metadata structures to be created. This value must be CLSID_CorMetaDataRuntime for the .NET Framework version 2.0.  
   

@@ -29,7 +29,7 @@ HRESULT CreateProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an ICorDebugProcess object that represents the process that has been attached or started.  
   

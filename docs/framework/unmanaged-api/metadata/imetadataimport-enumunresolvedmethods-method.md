@@ -32,7 +32,7 @@ HRESULT EnumUnresolvedMethods (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be NULL for the first call of this method.  
   

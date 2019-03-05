@@ -29,7 +29,7 @@ HRESULT SwitchInLogicalThreadState(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFiberCookie`  
  [in] Cookie that indicates the fiber to use.  
   

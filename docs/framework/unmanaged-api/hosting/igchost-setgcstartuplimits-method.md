@@ -33,7 +33,7 @@ HRESULT SetGCStartupLimits (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `SegmentSize`  
  [in] The size of the segment used by the garbage collection system.  
   

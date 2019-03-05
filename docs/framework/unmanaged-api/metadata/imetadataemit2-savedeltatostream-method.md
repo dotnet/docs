@@ -30,7 +30,7 @@ HRESULT SaveDeltaToStream (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIStream`  
  [in] An interface pointer to the writable stream to which to save changes.  
   

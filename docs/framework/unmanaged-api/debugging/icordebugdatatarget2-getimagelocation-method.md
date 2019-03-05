@@ -18,7 +18,7 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `baseAddress`  
  [in] A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the module's base address.  
   

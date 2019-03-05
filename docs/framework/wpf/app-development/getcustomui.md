@@ -14,7 +14,7 @@ Called by PresentationHost.exe to get custom progress and error messages from th
 HRESULT GetCustomUI( [out] BSTR* pwzProgressAssemblyName, [out] BSTR* pwzProgressClassName, [out] BSTR* pwzErrorAssemblyName, [out] BSTR* pwzErrorClassName );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzProgressAssemblyName`  
   
  [out] A pointer to the assembly that contains the host-supplied progress user interface.  

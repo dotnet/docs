@@ -29,7 +29,7 @@ HRESULT SetJITCompilerFlags (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwFlags`  
  [in] A bitwise combination of the [CorDebugJITCompilerFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugjitcompilerflags-enumeration.md) enumeration values.  
   

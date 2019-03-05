@@ -31,7 +31,7 @@ HRESULT GetModuleData(
 );
 ```
 
-### Parameters
+## Parameters
 
 `moduleAddr`\
 [in] The address of the module to retrieve information for.

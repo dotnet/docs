@@ -16,7 +16,7 @@ HRESULT GetBaseAddress(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [out] A pointer to the base address of the loaded module.  
   

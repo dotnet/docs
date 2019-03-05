@@ -30,7 +30,7 @@ HRESULT EnumMemoryRegion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] The starting address of the memory region that was to be enumerated.  
   

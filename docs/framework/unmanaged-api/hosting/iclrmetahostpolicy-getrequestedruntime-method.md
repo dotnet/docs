@@ -39,7 +39,7 @@ HRESULT GetRequestedRuntime(
     [out, iid_is(riid), retval] LPVOID *ppRuntime);
 ```
 
-#### Parameters
+## Parameters
 
 |Name|Description|
 |----------|-----------------|

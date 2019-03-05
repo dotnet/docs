@@ -30,7 +30,7 @@ HRESULT CreateBreakpoint (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `offset`  
  [in] The offset at which to create the breakpoint.  
   

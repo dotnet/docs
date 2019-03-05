@@ -34,7 +34,7 @@ HRESULT GetTableInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixTbl`  
  [in] The identifier of the table whose properties to return.  
   

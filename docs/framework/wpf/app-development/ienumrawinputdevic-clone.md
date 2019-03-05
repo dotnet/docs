@@ -14,7 +14,7 @@ Creates another raw input device enumerator with the same state as the current e
 HRESULT Clone( [out] IEnumRAWINPUTDEVICE **ppenum);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppenum`  
   
  [out] Address of output variable that receives the [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) interface pointer. If the method is unsuccessful, the value of this output variable is undefined.  

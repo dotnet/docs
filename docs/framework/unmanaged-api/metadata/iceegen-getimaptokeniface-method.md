@@ -31,7 +31,7 @@ HRESULT GetIMapTokenIface (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIMapToken`  
  [in, out] The metadata token for the interface to be returned.  
   

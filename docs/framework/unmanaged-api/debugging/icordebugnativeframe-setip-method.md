@@ -29,7 +29,7 @@ HRESULT SetIP (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nOffset`  
  [in] The offset location in the native code.  
   

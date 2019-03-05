@@ -30,7 +30,7 @@ HRESULT GetIP (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnOffset`  
  [out] The value of the instruction pointer.  
   

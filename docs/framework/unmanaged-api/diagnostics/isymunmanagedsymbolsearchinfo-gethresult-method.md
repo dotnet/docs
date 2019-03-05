@@ -28,7 +28,7 @@ HRESULT GetHRESULT(
     [out] HRESULT *phr);  
 ```  
   
-#### Parameters  
+## Parameters  
  `phr`  
  [out] A pointer to the HRESULT.  
   

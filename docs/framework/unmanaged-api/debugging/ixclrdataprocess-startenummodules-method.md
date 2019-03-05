@@ -30,7 +30,7 @@ HRESULT StartEnumModules(
 );
 ```
 
-### Parameters
+## Parameters
 
 `handle`\
 [out] A handle for enumerating the modules.

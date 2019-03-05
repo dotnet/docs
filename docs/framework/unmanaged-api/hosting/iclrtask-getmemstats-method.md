@@ -29,7 +29,7 @@ HRESULT GetMemStats (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMemUsage`  
  [out] A pointer to a [COR_GC_THREAD_STATS](../../../../docs/framework/unmanaged-api/hosting/cor-gc-thread-stats-structure.md) instance that contains details about the memory usage of the task, including the number of bytes allocated.  
   

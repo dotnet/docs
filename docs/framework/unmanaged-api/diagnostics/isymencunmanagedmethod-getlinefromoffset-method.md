@@ -33,7 +33,7 @@ HRESULT GetLineFromOffset(
      [out] ULONG32*  pdwStartOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwOffset`  
  [in] A `ULONG32` that contains the offset.  
   

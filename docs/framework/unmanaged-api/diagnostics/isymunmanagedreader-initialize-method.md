@@ -34,7 +34,7 @@ HRESULT Initialize (
     [in]  IStream      *pIStream);  
 ```  
   
-#### Parameters  
+## Parameters  
  `importer`  
  [in] The metadata importer interface with which this reader will be associated.  
   

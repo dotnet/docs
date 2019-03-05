@@ -29,7 +29,7 @@ HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAssemblyPath`  
  [in] The path and name of the assembly whose metadata will be modified.  
   

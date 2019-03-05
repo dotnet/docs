@@ -25,7 +25,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  [in] `moduleId`  
  The identifier of the in-memory module whose symbol stream is updated.  
   

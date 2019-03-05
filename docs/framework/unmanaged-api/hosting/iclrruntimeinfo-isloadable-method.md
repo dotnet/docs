@@ -28,7 +28,7 @@ HRESULT IsLoadable(
         [out, retval] BOOL *pbLoadable);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbLoadable`  
  [out] `true` if this runtime could be loaded into the current process; otherwise, `false`.  
   

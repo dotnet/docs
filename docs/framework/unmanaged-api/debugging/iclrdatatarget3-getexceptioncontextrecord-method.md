@@ -28,7 +28,7 @@ HRESULT GetExceptionContextRecord(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bufferSize`  
  [in] The input buffer size, in bytes. This must be large enough to accommodate the context record.  
   

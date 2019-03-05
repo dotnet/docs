@@ -31,7 +31,7 @@ HRESULT IsFrameworkAssembly (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyReference`  
  [in] The name of the assembly to check.  
   

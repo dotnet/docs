@@ -29,7 +29,7 @@ HRESULT AppDomainShutdownFinished(
     [in] HRESULT     hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `appDomainId`  
  [in] Identifies the domain in which the application's assemblies are stored.  
   

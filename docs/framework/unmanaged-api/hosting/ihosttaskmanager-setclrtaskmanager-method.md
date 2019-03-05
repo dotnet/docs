@@ -29,7 +29,7 @@ HRESULT SetCLRTaskManager (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pManager`  
  [in] A pointer to an `ICLRTaskManager` instance implemented by the common language runtime.  
   

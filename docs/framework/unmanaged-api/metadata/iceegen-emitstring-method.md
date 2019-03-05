@@ -32,7 +32,7 @@ HRESULT EmitString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpString`  
  [in] The string to emit.  
   

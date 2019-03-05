@@ -30,7 +30,7 @@ HRESULT Save (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wzFile`  
  [in] The name of the file to save to. If this value is null, the in-memory copy will be saved to the last location that was used.  
   

@@ -29,7 +29,7 @@ HRESULT GetToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTypeDef`  
  [out] A pointer to an `mdTypeDef` token that references the definition of this class.  
   

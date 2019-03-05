@@ -31,7 +31,7 @@ HRESULT FindTypeRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkResolutionScope`  
  [in] A ModuleRef, AssemblyRef, or TypeRef token that specifies the module, assembly, or type, respectively, in which the type reference is defined.  
   

@@ -1,4 +1,4 @@
-# [C# 6.0 draft specification](index.md)
+# C# 6.0 draft specification
 ## [Introduction](../../../../_csharplang/spec/introduction.md)
 ## [Lexical structure](../../../../_csharplang/spec/lexical-structure.md)
 ## [Basic concepts](../../../../_csharplang/spec/basic-concepts.md)
@@ -18,3 +18,10 @@
 ## [Attributes](../../../../_csharplang/spec/attributes.md)
 ## [Unsafe code](../../../../_csharplang/spec/unsafe-code.md)
 ## [Documentation comments](../../../../_csharplang/spec/documentation-comments.md)
+# C# language specification proposals
+## [C# 7.0: pattern matching](../../../../_csharplang/proposals/csharp-7.0/pattern-matching.md)
+## [C# 7.0: local functions](../../../../_csharplang/proposals/csharp-7.0/local-functions.md)
+## [C# 7.0: out variable declarations](../../../../_csharplang/proposals/csharp-7.0/out-var.md)
+## [C# 7.0: throw expressions](../../../../_csharplang/proposals/csharp-7.0/throw-expressions.md)
+## [C# 7.0: binary literals](../../../../_csharplang/proposals/csharp-7.0/binary-literals.md)
+## [C# 7.0: digit separators](../../../../_csharplang/proposals/csharp-7.0/digit-separators.md)

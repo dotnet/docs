@@ -70,7 +70,7 @@ Properties combine aspects of both fields and methods. To the user of an object,
 ## Example  
  This example demonstrates instance, static, and read-only properties. It accepts the name of the employee from the keyboard, increments `NumberOfEmployees` by 1, and displays the Employee name and number.  
   
- [!code-csharp[csProgGuideProperties#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-properties_8.cs)]  
+ [!code-csharp[csProgGuideProperties#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#2)]  
   
 ## Example  
  This example demonstrates how to access a property in a base class that is hidden by another property that has the same name in a derived class.  

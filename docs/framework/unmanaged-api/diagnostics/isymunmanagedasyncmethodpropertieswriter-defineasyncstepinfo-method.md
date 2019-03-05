@@ -8,7 +8,7 @@ ms.author: "ronpet"
 # ISymUnmanagedAsyncMethodPropertiesWriter::DefineAsyncStepInfo Method
 Define a group of async await operations in the current method.  
   
- Each yield offset matches an await's return instruction, identifying a potential yield. Each `breakpointMethod`/`breakpointOffset` pair tells us where the asynchronous operation will resume,(which could be in a different method.  
+ Each yield offset matches an await's return instruction, identifying a potential yield. Each `breakpointMethod`/`breakpointOffset` pair tells us where the asynchronous operation will resume which could be in a different method.  
   
 ## Syntax  
   

@@ -33,19 +33,19 @@ HRESULT Request([in] ULONG32 reqCode,
 
 ### Parameters
 
-`reqCode`
+`reqCode`\
 [in] Request type to be sent.
 
-`inBufferSize`
+`inBufferSize`\
 [in] size of the input buffer to be passed in.
 
-`inBuffer`
+`inBuffer`\
 [in, size_is(inBufferSize)] Buffer pointer for the raw data to be sent in the request.
 
-`outBufferSize`
+`outBufferSize`\
 [in] Size of the output buffer.
 
-`outBuffer`
+`outBuffer`\
 [out, size_is(outBufferSize)] Buffer pointer to used to store the request response.
 
 ## Remarks
@@ -60,5 +60,5 @@ The provided method is part of the `IXCLRDataModule` interface and corresponds t
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataModule Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md)
+- [Debugging](index.md)
+- [IXCLRDataModule Interface](ixclrdatamodule-interface.md)

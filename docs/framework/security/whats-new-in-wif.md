@@ -1,4 +1,4 @@
-﻿---
+---
 title: "What's New in Windows Identity Foundation 4.5"
 ms.date: "03/30/2017"
 ms.assetid: 3b381f04-593b-471f-bd33-0362be1aade5

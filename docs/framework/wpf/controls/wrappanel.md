@@ -28,8 +28,8 @@ The <xref:System.Windows.Controls.WrapPanel> element positions child elements in
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
+ [Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  
   
- [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)
+ [ScrollViewer Overview](scrollviewer-overview.md)

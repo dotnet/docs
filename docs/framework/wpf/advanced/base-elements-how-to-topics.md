@@ -11,16 +11,16 @@ ms.assetid: 09f3a88d-b132-4505-a8bb-55cbfc6bb55a
 The topics in this section describe how to use the four WPF base elements: <xref:System.Windows.UIElement>, <xref:System.Windows.ContentElement>, <xref:System.Windows.FrameworkElement>, and <xref:System.Windows.FrameworkContentElement>.  
   
 ## In This Section  
- [Make a UIElement Transparent or Semi-Transparent](../../../../docs/framework/wpf/advanced/how-to-make-a-uielement-transparent-or-semi-transparent.md)  
- [Animate the Size of a FrameworkElement](../../../../docs/framework/wpf/advanced/how-to-animate-the-size-of-a-frameworkelement.md)  
- [Determine Whether a Freezable Is Frozen](../../../../docs/framework/wpf/advanced/how-to-determine-whether-a-freezable-is-frozen.md)  
- [Handle a Loaded Event](../../../../docs/framework/wpf/advanced/how-to-handle-a-loaded-event.md)  
- [Set Margins of Elements and Controls](../../../../docs/framework/wpf/advanced/how-to-set-margins-of-elements-and-controls.md)  
- [Make a Freezable Read-Only](../../../../docs/framework/wpf/advanced/how-to-make-a-freezable-read-only.md)  
- [Obtain a Writable Copy of a Read-Only Freezable](../../../../docs/framework/wpf/advanced/how-to-obtain-a-writable-copy-of-a-read-only-freezable.md)  
- [Flip a UIElement Horizontally or Vertically](../../../../docs/framework/wpf/advanced/how-to-flip-a-uielement-horizontally-or-vertically.md)  
- [Use a ThicknessConverter Object](../../../../docs/framework/wpf/advanced/how-to-use-a-thicknessconverter-object.md)  
- [Handle the ContextMenuOpening Event](../../../../docs/framework/wpf/advanced/how-to-handle-the-contextmenuopening-event.md)  
+ [Make a UIElement Transparent or Semi-Transparent](how-to-make-a-uielement-transparent-or-semi-transparent.md)  
+ [Animate the Size of a FrameworkElement](how-to-animate-the-size-of-a-frameworkelement.md)  
+ [Determine Whether a Freezable Is Frozen](how-to-determine-whether-a-freezable-is-frozen.md)  
+ [Handle a Loaded Event](how-to-handle-a-loaded-event.md)  
+ [Set Margins of Elements and Controls](how-to-set-margins-of-elements-and-controls.md)  
+ [Make a Freezable Read-Only](how-to-make-a-freezable-read-only.md)  
+ [Obtain a Writable Copy of a Read-Only Freezable](how-to-obtain-a-writable-copy-of-a-read-only-freezable.md)  
+ [Flip a UIElement Horizontally or Vertically](how-to-flip-a-uielement-horizontally-or-vertically.md)  
+ [Use a ThicknessConverter Object](how-to-use-a-thicknessconverter-object.md)  
+ [Handle the ContextMenuOpening Event](how-to-handle-the-contextmenuopening-event.md)  
   
 ## Reference  
  <xref:System.Windows.UIElement>  
@@ -32,4 +32,4 @@ The topics in this section describe how to use the four WPF base elements: <xref
  <xref:System.Windows.FrameworkContentElement>  
   
 ## Related Sections  
- [Base Elements](../../../../docs/framework/wpf/advanced/base-elements.md)
+ [Base Elements](base-elements.md)

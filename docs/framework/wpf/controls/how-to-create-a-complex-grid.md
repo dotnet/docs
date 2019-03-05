@@ -18,11 +18,11 @@ The following example defines eight rows and eight columns by using the <xref:Sy
 
 The example uses vertical gradients to <xref:System.Windows.Shapes.Shape.Fill%2A> the columns and rows to improve the visual presentation and readability of the calendar. Styled <xref:System.Windows.Controls.TextBlock> elements represent the dates and days of the week. <xref:System.Windows.Controls.TextBlock> elements are absolutely positioned within their cells by using the <xref:System.Windows.FrameworkElement.Margin%2A> property and alignment properties that are defined within the style for the application.
 
-[!code-xaml[GridComplex#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridComplex/CS/default.xaml#1)]
+[!code-xaml[GridComplex#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GridComplex/CS/default.xaml#1)]
 
 The following image shows the resulting control, a customizable calendar:
 
-![Screenshot of the resulting control](./media/how-to-create-a-complex-grid/wpf-manual-calendar.png)
+![Screenshot of the resulting control](././media/how-to-create-a-complex-grid/wpf-manual-calendar.png)
 
 ## See also
 

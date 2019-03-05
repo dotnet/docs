@@ -13,13 +13,13 @@ ms.assetid: 1f73067d-c60a-4e9a-b513-c817ee7da3a1
 WPF XAML Browser Applications (XBAPs) are rich-client applications that can be deployed to a Web server and started in a browser. The WPF Host (PresentationHost.exe) is registered as the shell and MIME handler for XBAP and XAML files. Therefore, Internet Explorer knows to start the WPF Host when an XBAP is launched. Firefox users can install Firefox add-ons that enable Firefox to host XBAPs as well. An XBAP can be hosted in other browsers or stand-alone applications by using the native browser hosting APIs provided by WPF.  
   
 ## In This Section  
- [WPF XAML Browser Applications Overview](../../../../docs/framework/wpf/app-development/wpf-xaml-browser-applications-overview.md)  
-   [WPF Host (PresentationHost.exe)](../../../../docs/framework/wpf/app-development/wpf-host-presentationhost-exe.md)  
-  [Firefox Add-ons to Support .NET Application Deployment](../../../../docs/framework/wpf/app-development/firefox-add-ons-to-support-net-application-deployment.md)  
-  [Native WPF Browser Hosting Support APIs](../../../../docs/framework/wpf/app-development/native-wpf-browser-hosting-support-apis.md)  
+ [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md)  
+   [WPF Host (PresentationHost.exe)](wpf-host-presentationhost-exe.md)  
+  [Firefox Add-ons to Support .NET Application Deployment](firefox-add-ons-to-support-net-application-deployment.md)  
+  [Native WPF Browser Hosting Support APIs](native-wpf-browser-hosting-support-apis.md)  
   
 ## Related Sections  
- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
-  [Windows in WPF](../../../../docs/framework/wpf/app-development/windows-in-wpf-applications.md)  
-  [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md)  
-  [Build and Deploy](../../../../docs/framework/wpf/app-development/building-and-deploying-wpf-applications.md)
+ [Application Management Overview](application-management-overview.md)  
+  [Windows in WPF](windows-in-wpf-applications.md)  
+  [Navigation Overview](navigation-overview.md)  
+  [Build and Deploy](building-and-deploying-wpf-applications.md)

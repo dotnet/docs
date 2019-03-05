@@ -61,7 +61,7 @@ For step-by-step information about how to use these features, see the following 
 |-----------------|----------------|
 |Using the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](../../../docs/framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)|
 |Working with [!INCLUDE[vstecado](../../../includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](../../../docs/framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
-|Using the Data Sources window|[Walkthrough: Displaying Data on a Windows Form](https://msdn.microsoft.com/library/f6e08c2c-c792-43de-adf3-3e52c0100225)|
+|Using the Data Sources window|[Bind Windows Forms controls to data in Visual Studio](/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio)|
 |Using application settings|[How to: Create Application Settings](../../../docs/framework/winforms/advanced/how-to-create-application-settings.md)|
 
 ### Deploy apps to client computers

@@ -5,6 +5,7 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 01/07/2019
 ---
+
 # What OS to target with .NET containers
 
 Given the diversity of operating systems supported by Docker and the differences between .NET Framework and .NET Core, you should target a specific OS and specific versions depending on the framework you are using.
@@ -15,7 +16,7 @@ For Linux, multiple distros are available and supported in official .NET Docker 
 
 In Figure 3-1 you can see the possible OS version depending on the .NET framework used.
 
-![When deploying legacy .NET Framework applications you have to targe Windows Server Core, compatible with legacy apps and IIS, has a larger image. When deploying .NET Core applications, you can target Windows Nano Server, which is cloud optimized, uses Kestrel and is smaller and starts faster. You can also target Linux, supporting Debian, Alpine and others. Also uses Kestrel and is smaller and starts faster.](./media/image1.png)
+![When deploying legacy .NET Framework applications you have to target Windows Server Core, compatible with legacy apps and IIS, has a larger image. When deploying .NET Core applications, you can target Windows Nano Server, which is cloud optimized, uses Kestrel and is smaller and starts faster. You can also target Linux, supporting Debian, Alpine and others. Also uses Kestrel and is smaller and starts faster.](./media/image1.png)
 
 **Figure 3-1.** Operating systems to target depending on versions of the .NET framework
 
@@ -51,6 +52,6 @@ When you add the image name to your Dockerfile file, you can select the operatin
 </tbody>
 </table>
 
->[!div class="step-by-step"]
->[Previous](container-framework-choice-factors.md)
->[Next](official-net-docker-images.md)
+> [!div class="step-by-step"]
+> [Previous](container-framework-choice-factors.md)
+> [Next](official-net-docker-images.md)

@@ -16,5 +16,5 @@ The <xref:System.Windows.Controls.FlowDocumentScrollViewer> control is used to v
 - <xref:System.Windows.Controls.FlowDocumentPageViewer>
 - <xref:System.Windows.Controls.FlowDocumentScrollViewer>
 - <xref:System.Windows.Documents.FlowDocument>
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+- [Documents in WPF](../advanced/documents-in-wpf.md)
+- [Flow Document Overview](../advanced/flow-document-overview.md)

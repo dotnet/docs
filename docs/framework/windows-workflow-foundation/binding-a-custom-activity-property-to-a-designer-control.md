@@ -88,7 +88,7 @@ Binding a text box designer control to an activity argument is fairly straightfo
                 return inArgument;
     ```
 
-#### Adding the ComboBoxItemConverter to the custom designer of an activity
+## Adding the ComboBoxItemConverter to the custom designer of an activity
 
 1. Add a new item to the project. In the New Item dialog, select the Workflow node and select Activity Designer as the type of the new item. Name the item CustomPropertyDesigner.
 

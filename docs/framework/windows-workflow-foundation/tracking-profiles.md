@@ -341,7 +341,7 @@ Tracking query elements are used to create a tracking profile using either an XM
 
 A profile configured as an XML configuration file is applied to a tracking participant using a behavior extension. This is added to a WorkflowServiceHost as described in the later section [Configuring Tracking for a Workflow](../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).
 
-The verbosity of the tracking records emitted by the host is determined by configuration settings within the tracking profile. A tracking participant subscribes to tracking records by adding queries to a tracking profile. To subscribe to all tracking records, the tracking profile needs to specify all tracking queries using "*" in the name fields in each of the queries.
+The verbosity of the tracking records emitted by the host is determined by configuration settings within the tracking profile. A tracking participant subscribes to tracking records by adding queries to a tracking profile. To subscribe to all tracking records, the tracking profile needs to specify all tracking queries using "\*" in the name fields in each of the queries.
 
 Here are some of the common examples of tracking profiles.
 

@@ -80,7 +80,7 @@ There are several ways to approach recommendation problems, such as recommending
 
 2. In Solution Explorer, right-click each of the \*.csv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-   ![copy if newer in VS](./media/movie-recommendation/copytooutputdirectory.gif)
+   ![copy if newer in VS](./media/movie-recommendation/copytoout.gif)
 
 ## Load your data
 

@@ -210,9 +210,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  The <xref:System.ServiceModel.Activities.Receive> activity creates the workflow instance.  A value passed in the received message is echoed in the reply message.  A sequence following the reply contains the rest of the workflow.  In the above case, only one comment activity is shown.  The number of comment activities is changed to simulate workflow complexity.  A comment activity is equivalent to a WF3 <xref:System.Workflow.Activities.CodeActivity> that performs no work. For more information about the comment activity, see the "Component-level Performance Comparison" section earlier in this article.
 
 ##### Test Results
- ![Latency Results](../../../docs/framework/windows-workflow-foundation/media/latencyresultsgraph.gif "LatencyResultsGraph")
-
- Figure 3 – Cold and warm latency for WCF workflow services
+ ![Latency Results](./media/performance/latency-results-graph.gif "Cold and warm latency for WCF workflow services")
 
  In the graph above, cold refers to the case where there is not an existing <xref:System.ServiceModel.WorkflowServiceHost> for the given workflow.  In other words, cold latency is when the workflow is being used for the first time and the XOML or XAML needs to be compiled.  Warm latency is the time to create a new workflow instance when the workflow type has already been compiled.  The complexity of the workflow makes very little difference in the WF4 case but has a linear progression in the WF3 case.
 
@@ -305,9 +303,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
 
  The workflow definitions used in the console test were simple sequential workflows with a single activity.  The single activity was an empty <xref:System.Workflow.Activities.CodeActivity> for the WF3 case and a `Comment` activity for the WF4 case.  The IIS-hosted case used workflows that start on receiving a message and end on sending a reply:
 
- ![Workflow Services in WF3 and WF4](../../../docs/framework/windows-workflow-foundation/media/receiveworkflowboth.gif "ReceiveWorkflowBoth")
-
- Figure 4 – WF3 workflow with ReceiveActivity and WF4 workflow with request/response pattern
+ ![Workflow Services in WF3 and WF4](./media/performance/workflow-with-receive-activity.gif "WF3 workflow with ReceiveActivity and WF4 workflow with request/response pattern")
 
  The table below shows the delta in working set between a single workflow definition and 1001 definitions:
 

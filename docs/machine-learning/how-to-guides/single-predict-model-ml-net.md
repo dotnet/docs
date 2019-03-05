@@ -1,7 +1,7 @@
 ---
 title: Use the PredictionEngine to make one prediction at a time - ML.NET 
 description: Learn how to use the ML.NET PredictionEngine to make one prediction at a time
-ms.date: 02/06/2019
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use the ML.NET PredictionEngine to run an example at a time through the prediction pipeline machine learning model so that I can use my machine learning model as part of my application to make and act on one prediction at a time.
 ---

@@ -1,7 +1,7 @@
 ---
 title: Create a game match up list app with Infer.NET and probalistic programming
 description: Discover how to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
-ms.date: 10/04/2018
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
 ---

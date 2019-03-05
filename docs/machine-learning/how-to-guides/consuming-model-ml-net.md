@@ -1,7 +1,7 @@
 ---
 title: Operationalize a trained machine learning model in apps - ML.NET
 description: Discover how to use ML.NET to consume a trained and evaluated machine learning model in applications
-ms.date: 11/07/2018
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use ML.NET to consume my trained and evaluated machine learning model in my applications.
 ---

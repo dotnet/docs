@@ -37,4 +37,4 @@ Typically, a single *click* initiates a user interface (UI) action and a *double
  For information about building these examples from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build these examples in Visual Studio by pasting the code into new projects.  
   
 ## See also
-- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)
+- [Mouse Input in a Windows Forms Application](mouse-input-in-a-windows-forms-application.md)

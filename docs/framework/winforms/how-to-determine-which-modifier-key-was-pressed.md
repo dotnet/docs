@@ -42,5 +42,5 @@ When you create an application that accepts the user's keystrokes, you may also 
 ## See also
 - <xref:System.Windows.Forms.Keys>
 - <xref:System.Windows.Forms.Control.ModifierKeys%2A>
-- [Keyboard Input in a Windows Forms Application](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)
+- [Keyboard Input in a Windows Forms Application](keyboard-input-in-a-windows-forms-application.md)
 - [How to: Determine If CapsLock is On in Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/9c9d1fz9(v=vs.100))

@@ -39,7 +39,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control can display icons
   
 2.  Set the node's <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> and <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> properties. The <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> property determines the image displayed for the node's normal and expanded states, and the <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> property determines the image displayed for the node's selected state.  
   
-     These properties can be set in code, or within the TreeNode Editor. To open the TreeNode Editor, click the ellipsis button ( ![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.TreeView.Nodes%2A> property on the Properties window.  
+     These properties can be set in code, or within the TreeNode Editor. To open the TreeNode Editor, click the ellipsis button ( ![VisualStudioEllipsesButton screenshot](./media/how-to-set-icons-for-the-windows-forms-treeview-control/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) next to the <xref:System.Windows.Forms.TreeView.Nodes%2A> property on the Properties window.  
   
     ```vb  
     ' (Assumes that ImageList1 contains at least two images and  

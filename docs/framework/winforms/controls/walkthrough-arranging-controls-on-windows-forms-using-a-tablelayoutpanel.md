@@ -89,7 +89,7 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 1.  Select the <xref:System.Windows.Forms.TableLayoutPanel> control in the **Windows Forms Designer**.  
   
-2.  In the **Properties** windows, open the <xref:System.Windows.Forms.TableLayoutPanel.ColumnStyles%2A> collection by clicking the ellipsis (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) button next to the **Columns** entry.  
+2.  In the **Properties** windows, open the <xref:System.Windows.Forms.TableLayoutPanel.ColumnStyles%2A> collection by clicking the ellipsis (![VisualStudioEllipsesButton screenshot](./media/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button next to the **Columns** entry.  
   
 3.  Select the first column and change the value of its <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> property to <xref:System.Windows.Forms.SizeType.AutoSize>. Click **OK** to accept the change. Note that the width of the first column is reduced to fit the <xref:System.Windows.Forms.Button> control. Also note that the width of the column is not resizable.  
   

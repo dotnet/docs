@@ -16,7 +16,7 @@ When users enter data into your application, you may want to verify that the dat
   
  The masking language that is used by <xref:System.Windows.Forms.MaskedTextBox> is very flexible. It allows you to specify required characters, optional characters, literal characters, such as hyphens and parentheses, currency characters, and date separators. The control also works well when bound to a data source. The <xref:System.Windows.Forms.Binding.Format> event on a data binding can be used to reformat incoming data to comply with the mask, and the <xref:System.Windows.Forms.Binding.Parse> event can be used to reformat outgoing data to comply with the specifications of the data field.  
   
- For more information, see [MaskedTextBox Control](controls/maskedtextbox-control-windows-forms.md).  
+ For more information, see [MaskedTextBox Control](./controls/maskedtextbox-control-windows-forms.md).  
   
 ## Event-Driven Validation  
  If you want full programmatic control over validation, or need to perform complex validation checks, you should use the validation events built into most Windows Forms controls. Each control that accepts free-form user input has a <xref:System.Windows.Forms.Control.Validating> event that will occur whenever the control requires data validation. In the <xref:System.Windows.Forms.Control.Validating> event-handling method, you can validate user input in several ways. For example, if you have a text box that must contain a postal code, you can perform the validation in the following ways:  
@@ -88,5 +88,5 @@ When users enter data into your application, you may want to verify that the dat
 - <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType>
 - <xref:System.ComponentModel.CancelEventArgs?displayProperty=nameWithType>
-- [MaskedTextBox Control](controls/maskedtextbox-control-windows-forms.md)
+- [MaskedTextBox Control](./controls/maskedtextbox-control-windows-forms.md)
 - [Regular Expression Examples](../../standard/base-types/regular-expression-examples.md)

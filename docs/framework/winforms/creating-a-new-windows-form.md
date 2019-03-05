@@ -24,7 +24,7 @@ This topic contains links to topics that describe how to create your first Windo
  Describes this class and contains links to all its members.  
   
 ## Related Sections  
- [Handling User Input](controls/handling-user-input.md)  
+ [Handling User Input](./controls/handling-user-input.md)  
  Contains links to topics that discuss user input and how to handle it in Windows Forms applications.  
   
  [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md)  
@@ -33,5 +33,5 @@ This topic contains links to topics that describe how to create your first Windo
  [Changing the Appearance of Windows Forms](changing-the-appearance-of-windows-forms.md)  
  Contains links to topics that show how to change the appearance of Windows Forms applications.  
   
- [Windows Forms Controls by Function](controls/windows-forms-controls-by-function.md)  
+ [Windows Forms Controls by Function](./controls/windows-forms-controls-by-function.md)  
  Contains links to topics that describe the controls you can use in Windows Forms applications.

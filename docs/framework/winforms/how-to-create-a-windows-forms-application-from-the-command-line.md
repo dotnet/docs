@@ -62,9 +62,9 @@ The following procedures describe the basic steps that you must complete to crea
 3.  At the command prompt, type: `Form1.exe`  
   
 ## Adding a Control and Handling an Event  
- The previous procedure steps demonstrated how to just create a basic Windows Form that compiles and runs. The next procedure will show you how to create and add a control to the form, and handle an event for the control. For more information about the controls you can add to Windows Forms, see [Windows Forms Controls](controls/index.md).  
+ The previous procedure steps demonstrated how to just create a basic Windows Form that compiles and runs. The next procedure will show you how to create and add a control to the form, and handle an event for the control. For more information about the controls you can add to Windows Forms, see [Windows Forms Controls](./controls/index.md).  
   
- In addition to understanding how to create Windows Forms applications, you should understand event-based programming and how to handle user input. For more information, see [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md), and [Handling User Input](controls/handling-user-input.md)  
+ In addition to understanding how to create Windows Forms applications, you should understand event-based programming and how to handle user input. For more information, see [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md), and [Handling User Input](./controls/handling-user-input.md)  
   
 #### To declare a button control and handle its click event  
   
@@ -111,5 +111,5 @@ The following procedures describe the basic steps that you must complete to crea
 - <xref:System.Windows.Forms.Form>
 - <xref:System.Windows.Forms.Control>
 - [Changing the Appearance of Windows Forms](changing-the-appearance-of-windows-forms.md)
-- [Enhancing Windows Forms Applications](advanced/index.md)
+- [Enhancing Windows Forms Applications](./advanced/index.md)
 - [Getting Started with Windows Forms](getting-started-with-windows-forms.md)

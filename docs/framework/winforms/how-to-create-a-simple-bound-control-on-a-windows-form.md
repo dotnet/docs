@@ -22,7 +22,7 @@ With *simple binding*, you can display a single data element, such as a column v
   
      The properties most often bound are displayed underneath the **(DataBindings)** property. For example, in most controls, the **Text** property is most frequently bound.  
   
-4.  If the property you want to bind is not one of the commonly bound properties, click the **Ellipsis** button (![VisualStudioEllipsesButton screenshot](media/vbellipsesbutton.png "vbEllipsesButton")) in the **(Advanced)** box to display the **Formatting and Advanced Binding** dialog box with a complete list of properties for that control.  
+4.  If the property you want to bind is not one of the commonly bound properties, click the **Ellipsis** button (![VisualStudioEllipsesButton screenshot](./media/vbellipsesbutton.png "vbEllipsesButton")) in the **(Advanced)** box to display the **Formatting and Advanced Binding** dialog box with a complete list of properties for that control.  
   
 5.  Select the property you want to bind and click the drop-down arrow under **Binding**.  
   

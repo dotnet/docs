@@ -21,7 +21,7 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
   
 2.  In the form, select the control, and then open the Properties window.  
   
-3.  Expand the **(DataBindings)** property, and then in the **(Advanced)** box, click the ellipsis button (![VisualStudioEllipsesButton screenshot](media/vbellipsesbutton.png "vbEllipsesButton")) to display the **Formatting and Advanced Binding** dialog box, which has a complete list of properties for that control.  
+3.  Expand the **(DataBindings)** property, and then in the **(Advanced)** box, click the ellipsis button (![VisualStudioEllipsesButton screenshot](./media/vbellipsesbutton.png "vbEllipsesButton")) to display the **Formatting and Advanced Binding** dialog box, which has a complete list of properties for that control.  
   
 4.  Select the property you want to bind, and then click the **Binding** arrow.  
   

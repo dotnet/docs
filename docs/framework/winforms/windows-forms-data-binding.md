@@ -55,10 +55,10 @@ Data binding in Windows Forms gives you the means to display and make changes to
  Describes the class that encapsulates a data source for binding to controls.  
   
 ## Related Sections  
- [BindingSource Component](controls/bindingsource-component.md)  
+ [BindingSource Component](./controls/bindingsource-component.md)  
  Contains a list of topics that demonstrate how to use the <xref:System.Windows.Forms.BindingSource> component.  
   
- [DataGridView Control](controls/datagridview-control-windows-forms.md)  
+ [DataGridView Control](./controls/datagridview-control-windows-forms.md)  
  Provides a list of topics that demonstrate how to use a bindable datagrid control.  
   
  Also see [Accessing Data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).

@@ -28,7 +28,7 @@ With Windows Forms, you can create powerful Windows-based applications. The foll
  [Changing the Appearance of Windows Forms](changing-the-appearance-of-windows-forms.md)  
  Contains links to topics that show how to change the appearance of Windows Forms applications.  
   
- [Windows Forms Controls](controls/index.md)  
+ [Windows Forms Controls](./controls/index.md)  
  Contains links to topics that describe and show how to use Windows Forms controls and components.  
   
  [User Input in Windows Forms](user-input-in-windows-forms.md)  
@@ -50,5 +50,5 @@ With Windows Forms, you can create powerful Windows-based applications. The foll
  Demonstrates how to access collections with keys rather than indexes.  
   
 ## Related Sections  
- [Enhancing Windows Forms Applications](advanced/index.md)  
+ [Enhancing Windows Forms Applications](./advanced/index.md)  
  Contains links to topics that describe more advanced concepts for creating Windows Forms applications.

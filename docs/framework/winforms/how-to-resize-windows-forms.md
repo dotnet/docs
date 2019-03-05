@@ -108,4 +108,4 @@ You can specify the size of your Windows Form in several ways. You can change bo
   
 ## See also
 - [Getting Started with Windows Forms](getting-started-with-windows-forms.md)
-- [Enhancing Windows Forms Applications](advanced/index.md)
+- [Enhancing Windows Forms Applications](./advanced/index.md)

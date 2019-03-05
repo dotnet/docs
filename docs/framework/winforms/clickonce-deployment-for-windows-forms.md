@@ -57,7 +57,7 @@ The following topics describe [!INCLUDE[ndptecclick](../../../includes/ndpteccli
  Demonstrates how to mark a file so that it is available in the [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] data directory.  
   
 ## See also
-- [Application Settings Overview](advanced/application-settings-overview.md)
+- [Application Settings Overview](./advanced/application-settings-overview.md)
 - [Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications)
 - [Building ClickOnce Applications from the Command Line](/visualstudio/deployment/building-clickonce-applications-from-the-command-line)
 - [Debugging ClickOnce Applications That Use System.Deployment.Application](/visualstudio/deployment/debugging-clickonce-applications-that-use-system-deployment-application)

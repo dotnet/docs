@@ -25,7 +25,7 @@ Windows Forms provides several options for programmatically simulating mouse and
   
 2.  Call the <xref:System.Windows.Forms.Control.OnMouseClick%2A> method with this <xref:System.Windows.Forms.MouseEventArgs> as the argument.  
   
- For more information on custom controls, see [Developing Windows Forms Controls at Design Time](controls/developing-windows-forms-controls-at-design-time.md).  
+ For more information on custom controls, see [Developing Windows Forms Controls at Design Time](./controls/developing-windows-forms-controls-at-design-time.md).  
   
  There are other ways to simulate mouse input. For example, you can programmatically set a control property that represents a state that is typically set through mouse input (such as the <xref:System.Windows.Forms.CheckBox.Checked%2A> property of the <xref:System.Windows.Forms.CheckBox> control), or you can directly call the delegate that is attached to the event you want to simulate.  
   

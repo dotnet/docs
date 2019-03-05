@@ -79,5 +79,5 @@ Oftentimes when you work with data binding in Windows Forms, you will display da
   
 ## See also
 - [How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized](multiple-controls-bound-to-data-source-synchronized.md)
-- [BindingSource Component](controls/bindingsource-component.md)
+- [BindingSource Component](./controls/bindingsource-component.md)
 - [Data Binding and Windows Forms](data-binding-and-windows-forms.md)

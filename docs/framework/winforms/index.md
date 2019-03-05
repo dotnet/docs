@@ -14,17 +14,17 @@ As forms are the base unit of your application, it is essential that you give so
  [Getting Started with Windows Forms](getting-started-with-windows-forms.md)  
  Provides links to topics about how to harness the power of Windows Forms to display data, handle user input, and deploy your applications easily and with more robust security.  
   
- [Enhancing Windows Forms Applications](advanced/index.md)  
+ [Enhancing Windows Forms Applications](./advanced/index.md)  
  Provides links to topics about how to enhance your Windows Forms with a variety of features.  
   
 ## Related Sections  
- [Windows Forms Controls](controls/index.md)  
+ [Windows Forms Controls](./controls/index.md)  
  Contains links to topics that describe Windows Forms controls and show how to implement them.  
   
  [Windows Forms Data Binding](windows-forms-data-binding.md)  
  Contains links to topics that describe the Windows Forms data-binding architecture.  
   
- [Graphics Overview](advanced/graphics-overview-windows-forms.md)  
+ [Graphics Overview](./advanced/graphics-overview-windows-forms.md)  
  Discusses how to create graphics, draw text, and manipulate graphical images as objects using the advanced implementation of the Windows graphics design interface.  
   
  [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)  

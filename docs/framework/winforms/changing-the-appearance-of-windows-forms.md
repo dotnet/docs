@@ -35,8 +35,8 @@ You can customize the look of your Windows Forms applications in many different 
  [Adjusting the Size and Scale of Windows Forms](adjusting-the-size-and-scale-of-windows-forms.md)  
  Contains links to topics that show how to change the size and scale of a form.  
   
- [Graphics and Drawing in Windows Forms](advanced/graphics-and-drawing-in-windows-forms.md)  
+ [Graphics and Drawing in Windows Forms](./advanced/graphics-and-drawing-in-windows-forms.md)  
  Contains links to topics that describe how to perform custom drawing on Windows Forms.  
   
- [Controls with Built-In Owner-Drawing Support](controls/controls-with-built-in-owner-drawing-support.md)  
+ [Controls with Built-In Owner-Drawing Support](./controls/controls-with-built-in-owner-drawing-support.md)  
  List owner-draw support in Windows Forms controls.

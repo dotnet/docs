@@ -22,7 +22,7 @@ The following overview discusses the advantages of smart client applications, th
 
  When a user does something to your form or one of its controls, the action generates an event. Your application reacts to these events by using code, and processes the events when they occur. For more information, see [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md).
 
- Windows Forms contains a variety of controls that you can add to forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even Web pages. For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](controls/controls-to-use-on-windows-forms.md). If an existing control does not meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class.
+ Windows Forms contains a variety of controls that you can add to forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even Web pages. For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](./controls/controls-to-use-on-windows-forms.md). If an existing control does not meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class.
 
  Windows Forms has rich UI controls that emulate features in high-end applications like Microsoft Office. When you use the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.MenuStrip> control, you can create toolbars and menus that contain text and images, display submenus, and host other controls such as text boxes and combo boxes.
 
@@ -39,10 +39,10 @@ For step-by-step information about how to use these features, see the following 
 
 |Description|Help topic|
 |-----------------|----------------|
-|Using controls on forms|[How to: Add Controls to Windows Forms](controls/how-to-add-controls-to-windows-forms.md)|
-|Using the <xref:System.Windows.Forms.ToolStrip> Control|[How to: Create a Basic ToolStrip with Standard Items Using the Designer](controls/create-a-basic-wf-toolstrip-with-standard-items-using-the-designer.md)|
-|Creating graphics with <xref:System.Drawing>|[Getting Started with Graphics Programming](advanced/getting-started-with-graphics-programming.md)|
-|Creating custom controls|[How to: Inherit from the UserControl Class](controls/how-to-inherit-from-the-usercontrol-class.md)|
+|Using controls on forms|[How to: Add Controls to Windows Forms](./controls/how-to-add-controls-to-windows-forms.md)|
+|Using the <xref:System.Windows.Forms.ToolStrip> Control|[How to: Create a Basic ToolStrip with Standard Items Using the Designer](./controls/create-a-basic-wf-toolstrip-with-standard-items-using-the-designer.md)|
+|Creating graphics with <xref:System.Drawing>|[Getting Started with Graphics Programming](./advanced/getting-started-with-graphics-programming.md)|
+|Creating custom controls|[How to: Inherit from the UserControl Class](./controls/how-to-inherit-from-the-usercontrol-class.md)|
 
 ### Display and manipulate data
  Many applications must display data from a database, XML file, XML Web service, or other data source. Windows Forms provides a flexible control that is named the <xref:System.Windows.Forms.DataGridView> control for displaying such tabular data in a traditional row and column format, so that every piece of data occupies its own cell. When you use <xref:System.Windows.Forms.DataGridView>, you can customize the appearance of individual cells, lock arbitrary rows and columns in place, and display complex controls inside cells, among other features.
@@ -59,10 +59,10 @@ For step-by-step information about how to use these features, see the following 
 
 |Description|Help topic|
 |-----------------|----------------|
-|Using the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](controls/bind-wf-controls-with-the-bindingsource.md)|
-|Working with [!INCLUDE[vstecado](../../../includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
+|Using the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](./controls/bind-wf-controls-with-the-bindingsource.md)|
+|Working with [!INCLUDE[vstecado](../../../includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](./controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
 |Using the Data Sources window|[Bind Windows Forms controls to data in Visual Studio](/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio)|
-|Using application settings|[How to: Create Application Settings](advanced/how-to-create-application-settings.md)|
+|Using application settings|[How to: Create Application Settings](./advanced/how-to-create-application-settings.md)|
 
 ### Deploy apps to client computers
 
@@ -92,15 +92,15 @@ For step-by-step information about how to use these features, see the following 
 
 |Description|Help topic|
 |-----------------|----------------|
-|Printing the contents of a form|[How to: Print Graphics in Windows Forms](advanced/how-to-print-graphics-in-windows-forms.md)<br /><br /> [How to: Print a Multi-Page Text File in Windows Forms](advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)|
+|Printing the contents of a form|[How to: Print Graphics in Windows Forms](./advanced/how-to-print-graphics-in-windows-forms.md)<br /><br /> [How to: Print a Multi-Page Text File in Windows Forms](./advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)|
 |Learn more about Windows Forms security|[Security in Windows Forms Overview](security-in-windows-forms-overview.md)|
 
 ## See also
 
 - [Getting Started with Windows Forms](getting-started-with-windows-forms.md)
 - [Creating a New Windows Form](creating-a-new-windows-form.md)
-- [ToolStrip Control Overview](controls/toolstrip-control-overview-windows-forms.md)
-- [DataGridView Control Overview](controls/datagridview-control-overview-windows-forms.md)
-- [BindingSource Component Overview](controls/bindingsource-component-overview.md)
-- [Application Settings Overview](advanced/application-settings-overview.md)
+- [ToolStrip Control Overview](./controls/toolstrip-control-overview-windows-forms.md)
+- [DataGridView Control Overview](./controls/datagridview-control-overview-windows-forms.md)
+- [BindingSource Component Overview](./controls/bindingsource-component-overview.md)
+- [Application Settings Overview](./advanced/application-settings-overview.md)
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)

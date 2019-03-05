@@ -18,5 +18,5 @@ The following code example demonstrates how to implement the <xref:System.Compon
 ## See also
 - [How to: Apply the PropertyNameChanged Pattern](how-to-apply-the-propertynamechanged-pattern.md)
 - [Windows Forms Data Binding](windows-forms-data-binding.md)
-- [How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface](controls/raise-change-notifications--bindingsource.md)
+- [How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface](./controls/raise-change-notifications--bindingsource.md)
 - [Change Notification in Windows Forms Data Binding](change-notification-in-windows-forms-data-binding.md)

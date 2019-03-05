@@ -44,7 +44,7 @@ In your application design, you may find it necessary to use a single event hand
   
 1.  Select the control to which you want to connect an event handler.  
   
-2.  In the Properties window, click the **Events** button (![Events Button](media/vxeventsbutton-propertieswindow.png "vxEventsButton_PropertiesWindow")).  
+2.  In the Properties window, click the **Events** button (![Events Button](./media/vxeventsbutton-propertieswindow.png "vxEventsButton_PropertiesWindow")).  
   
 3.  Click the name of the event that you want to handle.  
   

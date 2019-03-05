@@ -47,4 +47,4 @@ ms.assetid: b9b79b8b-d9bf-4f8c-b9d6-9578bc3219d3
   
 ## See also
 - [Getting Started with Windows Forms](getting-started-with-windows-forms.md)
-- [How to: Add or Remove Images with the Windows Forms ImageList Component](controls/how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md)
+- [How to: Add or Remove Images with the Windows Forms ImageList Component](./controls/how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md)

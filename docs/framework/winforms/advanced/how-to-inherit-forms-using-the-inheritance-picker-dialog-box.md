@@ -35,7 +35,7 @@ The easiest way to inherit a form or other object is to use the **Inheritance Pi
   
 6.  Select the component.  
   
-     In **Solution Explorer**, the component is added to your project. If it has a UI, controls that are part of the inherited form will be marked with a glyph (![VisualBasicInheritanceSymbol screenshot](media/vbinheritanceglyph.gif "vbInheritanceGlyph")), and, when selected, have a border indicating the level of security that the control has on the superclassed form. The behaviors that correspond to the different security levels are listed in the table below.  
+     In **Solution Explorer**, the component is added to your project. If it has a UI, controls that are part of the inherited form will be marked with a glyph (![VisualBasicInheritanceSymbol screenshot](./media/vbinheritanceglyph.gif "vbInheritanceGlyph")), and, when selected, have a border indicating the level of security that the control has on the superclassed form. The behaviors that correspond to the different security levels are listed in the table below.  
   
     |Security level of control|Available interaction through Designer and Code Editor with Inherited Form|  
     |-------------------------------|--------------------------------------------------------------------------------|  

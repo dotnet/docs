@@ -18,7 +18,7 @@ Instead of drawing a line with a solid color, you can draw a line with a texture
   
  The following illustration shows the bitmap and the textured ellipse.  
   
- ![Pens](media/pens7.png "pens7")  
+ ![Pens](./media/pens7.png "pens7")  
   
  [!code-csharp[System.Drawing.UsingAPen#61](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#61)]
  [!code-vb[System.Drawing.UsingAPen#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#61)]  

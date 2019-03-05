@@ -21,7 +21,7 @@ ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
   
  In the preceding code, the rectangle drawn from inside the container is transformed first by the world transformation of the container (rotation) and then by the world transformation of the <xref:System.Drawing.Graphics> object (translation). The rectangle drawn from outside the container is transformed only by the world transformation of the <xref:System.Drawing.Graphics> object (translation). The following illustration shows the two rectangles.  
   
- ![Nested Containers](media/csnestedcontainers1.png "csnestedcontainers1")  
+ ![Nested Containers](./media/csnestedcontainers1.png "csnestedcontainers1")  
   
 ## Clipping in Nested Containers  
  The following example demonstrates how nested containers handle clipping regions. The code creates a <xref:System.Drawing.Graphics> object and a container within that <xref:System.Drawing.Graphics> object. The clipping region of the <xref:System.Drawing.Graphics> object is a rectangle, and the clipping region of the container is an ellipse. The code makes two calls to the <xref:System.Drawing.Graphics.DrawLine%2A> method. The first call to <xref:System.Drawing.Graphics.DrawLine%2A> is inside the container, and the second call to <xref:System.Drawing.Graphics.DrawLine%2A> is outside the container (after the call to <xref:System.Drawing.Graphics.EndContainer%2A>). The first line is clipped by the intersection of the two clipping regions. The second line is clipped only by the rectangular clipping region of the <xref:System.Drawing.Graphics> object.  
@@ -31,7 +31,7 @@ ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
   
  The following illustration shows the two clipped lines.  
   
- ![Nested Container](media/nestedcontainers2.png "nestedcontainers2")  
+ ![Nested Container](./media/nestedcontainers2.png "nestedcontainers2")  
   
  As the two preceding examples show, transformations and clipping regions are cumulative in nested containers. If you set the world transformations of the container and the <xref:System.Drawing.Graphics> object, both transformations will apply to items drawn from inside the container. The transformation of the container will be applied first, and the transformation of the <xref:System.Drawing.Graphics> object will be applied second. If you set the clipping regions of the container and the <xref:System.Drawing.Graphics> object, items drawn from inside the container will be clipped by the intersection of the two clipping regions.  
   
@@ -48,7 +48,7 @@ ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
   
  The following illustration shows the three strings. The strings drawn from the inner container and from the <xref:System.Drawing.Graphics> object are smoothed by antialiasing. The string drawn from the outer container is not smoothed by antialiasing because the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property is set to <xref:System.Drawing.Text.TextRenderingHint.SingleBitPerPixel>.  
   
- ![Nested Containers](media/nestedcontainers3.png "nestedcontainers3")  
+ ![Nested Containers](./media/nestedcontainers3.png "nestedcontainers3")  
   
 ## See also
 - <xref:System.Drawing.Graphics>

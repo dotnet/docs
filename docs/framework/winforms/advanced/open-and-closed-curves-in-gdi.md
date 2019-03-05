@@ -14,7 +14,7 @@ ms.assetid: 08d2cc9a-dc9d-4eed-bcbb-2c8e2ca5d3ae
 # Open and Closed Curves in GDI+
 The following illustration shows two curves: one open and one closed.  
   
- ![Open & Closed curves](media/aboutgdip02-art24.gif "Aboutgdip02_art24")  
+ ![Open & Closed curves](./media/aboutgdip02-art24.gif "Aboutgdip02_art24")  
   
 ## Managed Interface for Curves  
  Closed curves have an interior and therefore can be filled with a brush. The <xref:System.Drawing.Graphics> class in [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides the following methods for filling closed shapes and curves: <xref:System.Drawing.Graphics.FillRectangle%2A>, <xref:System.Drawing.Graphics.FillEllipse%2A>, <xref:System.Drawing.Graphics.FillPie%2A>, <xref:System.Drawing.Graphics.FillPolygon%2A>, <xref:System.Drawing.Graphics.FillClosedCurve%2A>, <xref:System.Drawing.Graphics.FillPath%2A>, and <xref:System.Drawing.Graphics.FillRegion%2A>. Whenever you call one of these methods, you must pass one of the specific brush types (<xref:System.Drawing.SolidBrush>, <xref:System.Drawing.Drawing2D.HatchBrush>, <xref:System.Drawing.TextureBrush>, <xref:System.Drawing.Drawing2D.LinearGradientBrush>, or <xref:System.Drawing.Drawing2D.PathGradientBrush>) as an argument.  
@@ -26,7 +26,7 @@ The following illustration shows two curves: one open and one closed.
   
  The following illustration shows the arc and the filled pie.  
   
- ![Open & Closed curves](media/aboutgdip02-art25.gif "Aboutgdip02_art25")  
+ ![Open & Closed curves](./media/aboutgdip02-art25.gif "Aboutgdip02_art25")  
   
  The <xref:System.Drawing.Graphics.FillClosedCurve%2A> method is a companion to the <xref:System.Drawing.Graphics.DrawClosedCurve%2A> method. Both methods automatically close the curve by connecting the ending point to the starting point. The following example draws a curve that passes through (0, 0), (60, 20), and (40, 50). Then, the curve is automatically closed by connecting (40, 50) to the starting point (0, 0), and the interior is filled with a solid color.  
   
@@ -40,7 +40,7 @@ The following illustration shows two curves: one open and one closed.
   
  The following illustration shows the path with and without the solid fill. Note that the text in the string is outlined, but not filled, by the <xref:System.Drawing.Graphics.DrawPath%2A> method. It is the <xref:System.Drawing.Graphics.FillPath%2A> method that paints the interiors of the characters in the string.  
   
- ![String in a path](media/aboutgdip02-art26.gif "Aboutgdip02_art26")  
+ ![String in a path](./media/aboutgdip02-art26.gif "Aboutgdip02_art26")  
   
 ## See also
 - <xref:System.Drawing.Drawing2D.GraphicsPath?displayProperty=nameWithType>

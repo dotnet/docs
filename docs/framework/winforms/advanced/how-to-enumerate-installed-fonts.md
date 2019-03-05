@@ -17,7 +17,7 @@ The <xref:System.Drawing.Text.InstalledFontCollection> class inherits from the <
   
  If you run the example code, the output will be similar to that shown in the following illustration.  
   
- ![Installed Fonts](media/csfontstext6.png "csfontstext6")  
+ ![Installed Fonts](./media/csfontstext6.png "csfontstext6")  
   
  [!code-csharp[System.Drawing.FontsAndText#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.FontsAndText/CS/Class1.cs#11)]
  [!code-vb[System.Drawing.FontsAndText#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#11)]  

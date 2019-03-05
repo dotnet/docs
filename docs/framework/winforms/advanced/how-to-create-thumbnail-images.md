@@ -17,7 +17,7 @@ A thumbnail image is a small version of an image. You can create a thumbnail ima
   
  The following illustration shows the thumbnail image.  
   
- ![Thumbnail Image](media/thumbnail1.png "Thumbnail1")  
+ ![Thumbnail Image](./media/thumbnail1.png "Thumbnail1")  
   
 > [!NOTE]
 >  In this example, a callback method is declared, but never used. This supports all versions of GDI+.  

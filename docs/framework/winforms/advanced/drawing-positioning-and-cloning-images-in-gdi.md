@@ -27,7 +27,7 @@ You can use the <xref:System.Drawing.Bitmap> class to load and display raster im
   
  The following illustration shows the image.  
   
- ![Image Sample](media/aboutgdip03-art04.gif "AboutGdip03_Art04")  
+ ![Image Sample](./media/aboutgdip03-art04.gif "AboutGdip03_Art04")  
   
  You can construct <xref:System.Drawing.Bitmap> objects from a variety of graphics file formats: BMP, GIF, JPEG, EXIF, PNG, TIFF, and ICON.  
   
@@ -43,7 +43,7 @@ You can use the <xref:System.Drawing.Bitmap> class to load and display raster im
   
  The following illustration shows the two images.  
   
- ![Cropping](media/aboutgdip03-art05.gif "AboutGdip03_Art05")  
+ ![Cropping](./media/aboutgdip03-art05.gif "AboutGdip03_Art05")  
   
 ## See also
 - [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)

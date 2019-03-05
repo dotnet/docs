@@ -27,7 +27,7 @@ You can use the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:
   
  The following illustration shows the three pictures.  
   
- ![Scaling](media/aboutgdip03-art06.gif "AboutGdip03_Art06")  
+ ![Scaling](./media/aboutgdip03-art06.gif "AboutGdip03_Art06")  
   
  Some variations of the <xref:System.Drawing.Graphics.DrawImage%2A> method have a source-rectangle parameter as well as a destination-rectangle parameter. The source-rectangle parameter specifies the portion of the original image to draw. The destination rectangle specifies the rectangle in which to draw that portion of the image. If the size of the destination rectangle is different from the size of the source rectangle, the picture is scaled to fit the destination rectangle.  
   
@@ -38,7 +38,7 @@ You can use the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:
   
  The following illustration shows the unscaled image, and the compressed and expanded image portions.  
   
- ![Cropping and Scaling](media/aboutgdip03-art07.gif "AboutGdip03_Art07")  
+ ![Cropping and Scaling](./media/aboutgdip03-art07.gif "AboutGdip03_Art07")  
   
 ## See also
 - [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)

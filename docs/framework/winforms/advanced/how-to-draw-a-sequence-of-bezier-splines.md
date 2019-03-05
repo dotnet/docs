@@ -17,7 +17,7 @@ You can use the <xref:System.Drawing.Graphics.DrawBeziers%2A> method of the <xre
   
  The following illustration shows the connected splines along with the seven points.  
   
- ![Bezier Spline](media/bezierspline2.png "BezierSpline2")  
+ ![Bezier Spline](./media/bezierspline2.png "BezierSpline2")  
   
  [!code-csharp[System.Drawing.ConstructingDrawingCurves#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/CS/Class1.cs#11)]
  [!code-vb[System.Drawing.ConstructingDrawingCurves#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/VB/Class1.vb#11)]  

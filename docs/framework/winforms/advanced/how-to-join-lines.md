@@ -20,7 +20,7 @@ A line join is the common area that is formed by two lines whose ends meet or ov
   
  The following illustration shows the results of the beveled line join example.  
   
- ![Pens](media/pens5.gif "pens5")  
+ ![Pens](./media/pens5.gif "pens5")  
   
 ## Example  
  You can specify the line join style by using the <xref:System.Drawing.Pen.LineJoin%2A> property of the <xref:System.Drawing.Pen> class. The example demonstrates a beveled line join between a horizontal line and a vertical line. In the following code, the value <xref:System.Drawing.Drawing2D.LineJoin.Bevel> assigned to the <xref:System.Drawing.Pen.LineJoin%2A> property is a member of the <xref:System.Drawing.Drawing2D.LineJoin> enumeration. The other members of the <xref:System.Drawing.Drawing2D.LineJoin> enumeration are <xref:System.Drawing.Drawing2D.LineJoin.Miter> and <xref:System.Drawing.Drawing2D.LineJoin.Round>.  

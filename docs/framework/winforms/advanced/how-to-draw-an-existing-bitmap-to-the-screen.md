@@ -18,7 +18,7 @@ You can easily draw an existing image on the screen. First you need to create a 
   
  The following illustration shows the bitmap drawn at the specified location.  
   
- ![Image Position](media/csimageposition1.png "csimageposition1")  
+ ![Image Position](./media/csimageposition1.png "csimageposition1")  
   
  [!code-csharp[System.Drawing.WorkingWithImages#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#21)]
  [!code-vb[System.Drawing.WorkingWithImages#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#21)]  

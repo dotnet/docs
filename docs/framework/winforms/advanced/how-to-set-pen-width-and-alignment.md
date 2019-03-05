@@ -22,7 +22,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
 -   Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment.Center> (the default) to specify that pixels drawn with the green pen will be centered on the theoretical line. The following illustration shows the resulting line.  
   
-     ![Pens](media/pens1a.gif "pens1A")  
+     ![Pens](./media/pens1a.gif "pens1A")  
   
      The following code example draws a rectangle twice: once with a black pen of width 1 and once with a green pen of width 10.  
   
@@ -35,7 +35,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
      The following illustration shows the resulting rectangle.  
   
-     ![Pens](media/pens2.gif "pens2")  
+     ![Pens](./media/pens2.gif "pens2")  
   
      [!code-csharp[System.Drawing.UsingAPen#42](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#42)]
      [!code-vb[System.Drawing.UsingAPen#42](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#42)]  
@@ -49,7 +49,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
      Now the pixels in the wide green line appear on the inside of the rectangle as shown in the following illustration.  
   
-     ![Pens](media/pens3.gif "pens3")  
+     ![Pens](./media/pens3.gif "pens3")  
   
 ## See also
 - [Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)

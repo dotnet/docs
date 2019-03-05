@@ -26,7 +26,7 @@ ms.assetid: 5fe2c95d-8653-4d55-bf0d-e5afa28f223b
 ## Example  
  The following example draws the same image twice. In the first case, the width and height of the destination rectangle are not specified, and the image is automatically scaled. In the second case, the width and height (measured in pixels) of the destination rectangle are specified to be the same as the width and height of the original image. The following illustration shows the image rendered twice.  
   
- ![Scaled Texture](media/csscaledtexture1.png "csscaledtexture1")  
+ ![Scaled Texture](./media/csscaledtexture1.png "csscaledtexture1")  
   
  [!code-csharp[System.Drawing.WorkingWithImages#32](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#32)]
  [!code-vb[System.Drawing.WorkingWithImages#32](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#32)]  

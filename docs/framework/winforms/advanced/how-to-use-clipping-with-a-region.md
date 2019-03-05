@@ -17,7 +17,7 @@ One of the properties of the <xref:System.Drawing.Graphics> class is the clip re
   
  The following illustration shows the clipped strings.  
   
- ![Clip](media/clip1.png "clip1")  
+ ![Clip](./media/clip1.png "clip1")  
   
  [!code-csharp[System.Drawing.MiscLegacyTopics#41](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#41)]
  [!code-vb[System.Drawing.MiscLegacyTopics#41](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#41)]  

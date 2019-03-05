@@ -33,7 +33,7 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
   
  The output of the following code is similar to the output shown in the following illustration.  
   
- ![Fonts Text](media/csfontstext7.png "csfontstext7")  
+ ![Fonts Text](./media/csfontstext7.png "csfontstext7")  
   
  Arial.tff (which was added to the private font collection in the following code example) is the font file for the Arial regular style. Note, however, that the program output shows several available styles other than regular for the Arial font family. That is because [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can simulate the bold, italic, and bold italic styles from the regular style. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can also produce underlines and strikeouts from the regular style.  
   

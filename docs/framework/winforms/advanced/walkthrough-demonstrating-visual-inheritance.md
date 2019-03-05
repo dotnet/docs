@@ -134,7 +134,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 5.  Open the inherited form (**Form2**) in the designer by double-clicking it, if it is not already open.  
   
-     In the designer, the inherited buttons have a symbol (![VisualBasicInheritanceSymbol screenshot](media/vbinheritanceglyph.gif "vbInheritanceGlyph")) in their upper corner, indicating they are inherited.  
+     In the designer, the inherited buttons have a symbol (![VisualBasicInheritanceSymbol screenshot](./media/vbinheritanceglyph.gif "vbInheritanceGlyph")) in their upper corner, indicating they are inherited.  
   
 6.  Select the **Say Hello** button and observe the resize handles. Because this button is protected, the inheritors can move it, resize it, change its caption, and make other modifications.  
   

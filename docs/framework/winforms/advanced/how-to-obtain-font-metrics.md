@@ -24,20 +24,20 @@ The <xref:System.Drawing.FontFamily> class provides the following methods that r
   
  The following illustration shows the various metrics.  
   
- ![Fonts Text](media/fontstext7a.png "fontstext7A")  
+ ![Fonts Text](./media/fontstext7a.png "fontstext7A")  
   
 ## Example  
  The following example displays the metrics for the regular style of the Arial font family. The code also creates a <xref:System.Drawing.Font> object (based on the Arial family) with size 16 pixels and displays the metrics (in pixels) for that particular <xref:System.Drawing.Font> object.  
   
  The following illustration shows the output of the example code.  
   
- ![Fonts Text](media/csfontstext8.png "csFontsText8")  
+ ![Fonts Text](./media/csfontstext8.png "csFontsText8")  
   
  Note the first two lines of output in the preceding illustration. The <xref:System.Drawing.Font> object returns a size of 16, and the <xref:System.Drawing.FontFamily> object returns an em height of 2,048. These two numbers (16 and 2,048) are the key to converting between font design units and the units (in this case pixels) of the <xref:System.Drawing.Font> object.  
   
  For example, you can convert the ascent from design units to pixels as follows:  
   
- ![Fonts Text](media/fontstext9.png "FontsText9")  
+ ![Fonts Text](./media/fontstext9.png "FontsText9")  
   
  The following code positions text vertically by setting the <xref:System.Drawing.PointF.Y%2A> data member of a <xref:System.Drawing.PointF> object. The y-coordinate is increased by `font.Height` for each new line of text. The <xref:System.Drawing.Font.Height%2A> property of a <xref:System.Drawing.Font> object returns the line spacing (in pixels) for that particular <xref:System.Drawing.Font> object. In this example, the number returned by <xref:System.Drawing.Font.Height%2A> is 19. Note that this is the same as the number (rounded up to an integer) obtained by converting the line-spacing metric to pixels.  
   

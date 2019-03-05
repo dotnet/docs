@@ -14,7 +14,7 @@ You can use a gradient brush to fill a shape with a gradually changing color. Fo
   
  The following illustration shows a rectangle filled with a linear gradient brush and an ellipse filled with a path gradient brush.  
   
- ![Gradient](media/gradient2.png "gradient2")  
+ ![Gradient](./media/gradient2.png "gradient2")  
   
 ## In This Section  
  [How to: Create a Linear Gradient](how-to-create-a-linear-gradient.md)  

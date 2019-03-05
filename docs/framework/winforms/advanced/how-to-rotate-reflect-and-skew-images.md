@@ -24,15 +24,15 @@ You can rotate, reflect, and skew an image by specifying destination points for 
   
  The following illustration shows the original image and the image mapped to the parallelogram. The original image has been skewed, reflected, rotated, and translated. The x-axis along the top edge of the original image is mapped to the line that runs through (200, 20) and (110, 100). The y-axis along the left edge of the original image is mapped to the line that runs through (200, 20) and (250, 30).  
   
- ![Stripes](media/stripes1.gif "Stripes1")  
+ ![Stripes](./media/stripes1.gif "Stripes1")  
   
  The following illustration shows a similar transformation applied to a photographic image.  
   
- ![Transformed Climber](media/transformedclimber.png "TransformedClimber")  
+ ![Transformed Climber](./media/transformedclimber.png "TransformedClimber")  
   
  The following illustration shows a similar transformation applied to a metafile.  
   
- ![Transformed Metafile](media/transformedmetafile.png "TransformedMetafile")  
+ ![Transformed Metafile](./media/transformedmetafile.png "TransformedMetafile")  
   
  The following example produces the images shown in the first illustration.  
   

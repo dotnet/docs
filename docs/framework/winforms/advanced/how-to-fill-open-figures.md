@@ -17,7 +17,7 @@ You can fill a path by passing a <xref:System.Drawing.Drawing2D.GraphicsPath> ob
   
  The following illustration shows the output of the example code. Note that the path is filled (according to <xref:System.Drawing.Drawing2D.FillMode.Alternate>) as if the open figure were closed by a straight line from its ending point to its starting point.  
   
- ![Fill Open Path](media/fillopenpath.png "FillOpenPath")  
+ ![Fill Open Path](./media/fillopenpath.png "FillOpenPath")  
   
  [!code-csharp[System.Drawing.ConstructingDrawingPaths#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingPaths/CS/Class1.cs#11)]
  [!code-vb[System.Drawing.ConstructingDrawingPaths#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingPaths/VB/Class1.vb#11)]  

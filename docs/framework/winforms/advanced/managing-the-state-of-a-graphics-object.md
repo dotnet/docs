@@ -89,7 +89,7 @@ graphics.DrawEllipse(pen, 0, 0, 100, 50);
   
  The following illustration shows the two ellipses. Note that the 30-degree rotation is about the origin of the coordinate system (upper-left corner of the client area), not about the centers of the ellipses. Also note that the pen width of 1 means 1 pixel for the first ellipse and 1 millimeter for the second ellipse.  
   
- ![Ovals](media/csgraphicsascon1.png "csgraphicsascon1")  
+ ![Ovals](./media/csgraphicsascon1.png "csgraphicsascon1")  
   
 ### Clipping Region  
  A <xref:System.Drawing.Graphics> object maintains a clipping region that applies to all items drawn by that <xref:System.Drawing.Graphics> object. You can set the clipping region by calling the <xref:System.Drawing.Graphics.SetClip%2A> method.  
@@ -142,7 +142,7 @@ graphics.DrawLine(pen, 40, 20, 190, 150);
   
  The following illustration shows the clipped lines.  
   
- ![Limited Clip Region](media/graphicsascon2.png "graphicsascon2")  
+ ![Limited Clip Region](./media/graphicsascon2.png "graphicsascon2")  
   
 ## See also
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)

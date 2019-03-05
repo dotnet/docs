@@ -26,13 +26,13 @@ ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
   
  The following matrix multiplication will perform the pair of transformations in the order listed.  
   
- ![Recoloring](media/recoloring01.gif "recoloring01")  
+ ![Recoloring](./media/recoloring01.gif "recoloring01")  
   
  The elements of a color matrix are indexed (zero-based) by row and then column. For example, the entry in the fifth row and third column of matrix M is denoted by M[4][2].  
   
  The 5×5 identity matrix (shown in the following illustration) has 1s on the diagonal and 0s everywhere else. If you multiply a color vector by the identity matrix, the color vector does not change. A convenient way to form the matrix of a color transformation is to start with the identity matrix and make a small change that produces the desired transformation.  
   
- ![Recoloring](media/recoloring02.gif "recoloring02")  
+ ![Recoloring](./media/recoloring02.gif "recoloring02")  
   
  For a more detailed discussion of matrices and transformations, see [Coordinate Systems and Transformations](coordinate-systems-and-transformations.md).  
   
@@ -41,7 +41,7 @@ ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
   
  The following illustration shows the original image on the left and the transformed image on the right.  
   
- ![Colors](media/colortrans1.png "colortrans1")  
+ ![Colors](./media/colortrans1.png "colortrans1")  
   
  The code in the following example uses the following steps to perform the recoloring:  
   

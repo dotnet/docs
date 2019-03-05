@@ -21,7 +21,7 @@ When you fill a shape, you must pass a <xref:System.Drawing.Brush> object to one
   
  The following illustration shows the output of the following code.  
   
- ![Opaque and Semitransparent](media/compqualellipse.png "compqualellipse")  
+ ![Opaque and Semitransparent](./media/compqualellipse.png "compqualellipse")  
   
  [!code-csharp[System.Drawing.AlphaBlending#31](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#31)]
  [!code-vb[System.Drawing.AlphaBlending#31](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#31)]  

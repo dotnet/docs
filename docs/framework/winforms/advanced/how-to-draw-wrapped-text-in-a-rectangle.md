@@ -17,7 +17,7 @@ You can draw wrapped text in a rectangle by using the <xref:System.Drawing.Graph
   
  The following illustration shows the output of text drawn in the rectangle when you use the <xref:System.Drawing.Graphics.DrawString%2A> method.  
   
- ![Fonts Text](media/csfontstext2.png "csfontstext2")  
+ ![Fonts Text](./media/csfontstext2.png "csfontstext2")  
   
 ### To draw wrapped text in a rectangle with GDI+  
   

@@ -22,7 +22,7 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  The following illustration shows the line, the ellipse, and the rectangle. Note that the color gradient repeats itself as the horizontal coordinate increases beyond 200.  
   
- ![Linear Gradient](media/cslineargradient1.png "cslineargradient1")  
+ ![Linear Gradient](./media/cslineargradient1.png "cslineargradient1")  
   
 ### To use horizontal linear gradients  
   
@@ -47,7 +47,7 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  The following illustration shows the resulting ellipse and rectangle.  
   
- ![Linear Gradient](media/cslineargradient2.png "cslineargradient2")  
+ ![Linear Gradient](./media/cslineargradient2.png "cslineargradient2")  
   
 ### To customize linear gradients  
   
@@ -62,7 +62,7 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  The following illustration shows the line and the ellipse. Note that the color in the ellipse changes gradually as you move along any line that is parallel to the line passing through (0, 0) and (200, 100).  
   
- ![Linear Gradient](media/cslineargradient3.png "cslineargradient3")  
+ ![Linear Gradient](./media/cslineargradient3.png "cslineargradient3")  
   
 ### To create diagonal linear gradients  
   

@@ -30,7 +30,7 @@ Paths are formed by combining lines, rectangles, and simple curves. Recall from 
   
  In GDI+, the <xref:System.Drawing.Drawing2D.GraphicsPath> object allows you to collect a sequence of these building blocks into a single unit. The entire sequence of lines, rectangles, polygons, and curves can then be drawn with one call to the <xref:System.Drawing.Graphics.DrawPath%2A> method of the <xref:System.Drawing.Graphics> class. The following illustration shows a path created by combining a line, an arc, a Bézier spline, and a cardinal spline.  
   
- ![Path](media/aboutgdip02-art14.gif "Aboutgdip02_art14")  
+ ![Path](./media/aboutgdip02-art14.gif "Aboutgdip02_art14")  
   
 ## Using a Path  
  The <xref:System.Drawing.Drawing2D.GraphicsPath> class provides the following methods for creating a sequence of items to be drawn: <xref:System.Drawing.Drawing2D.GraphicsPath.AddLine%2A>, <xref:System.Drawing.Drawing2D.GraphicsPath.AddRectangle%2A>, <xref:System.Drawing.Drawing2D.GraphicsPath.AddEllipse%2A>, <xref:System.Drawing.Drawing2D.GraphicsPath.AddArc%2A>, <xref:System.Drawing.Drawing2D.GraphicsPath.AddPolygon%2A>, <xref:System.Drawing.Drawing2D.GraphicsPath.AddCurve%2A> (for cardinal splines), and <xref:System.Drawing.Drawing2D.GraphicsPath.AddBezier%2A>. Each of these methods is overloaded; that is, each method supports several different parameter lists. For example, one variation of the <xref:System.Drawing.Drawing2D.GraphicsPath.AddLine%2A> method receives four integers, and another variation of the <xref:System.Drawing.Drawing2D.GraphicsPath.AddLine%2A> method receives two <xref:System.Drawing.Point> objects.  
@@ -44,7 +44,7 @@ Paths are formed by combining lines, rectangles, and simple curves. Recall from 
   
  The following illustration shows the path.  
   
- ![Path](media/aboutgdip02-art15.gif "Aboutgdip02_art15")  
+ ![Path](./media/aboutgdip02-art15.gif "Aboutgdip02_art15")  
   
  In addition to adding lines, rectangles, and curves to a path, you can add paths to a path. This allows you to combine existing paths to form large, complex paths.  
   
@@ -58,7 +58,7 @@ Paths are formed by combining lines, rectangles, and simple curves. Recall from 
   
  The following illustration shows the path. Note that a path does not have to be connected; the arc, cardinal spline, string, and pie are separated.  
   
- ![Paths](media/aboutgdip02-art16.gif "Aboutgdip02_Art16")  
+ ![Paths](./media/aboutgdip02-art16.gif "Aboutgdip02_Art16")  
   
 ## See also
 - <xref:System.Drawing.Drawing2D.GraphicsPath?displayProperty=nameWithType>

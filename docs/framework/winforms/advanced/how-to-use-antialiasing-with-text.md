@@ -23,7 +23,7 @@ ms.assetid: 48fc34f3-f236-4b01-a0cb-f0752e6d22ae
  
  The following illustration shows the output of the example code:  
   
- ![Fonts Text](media/fontstext10.png "FontsText10")  
+ ![Fonts Text](./media/fontstext10.png "FontsText10")  
   
 ## Compiling the Code  
  The preceding code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  

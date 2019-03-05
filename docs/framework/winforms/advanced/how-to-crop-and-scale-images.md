@@ -21,7 +21,7 @@ The <xref:System.Drawing.Graphics> class provides several <xref:System.Drawing.G
   
  The following illustration shows the original apple and the scaled, cropped apple.  
   
- ![Crop & Scale](media/cscropscale1.png "csCropScale1")  
+ ![Crop & Scale](./media/cscropscale1.png "csCropScale1")  
   
  [!code-csharp[System.Drawing.WorkingWithImages#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#11)]
  [!code-vb[System.Drawing.WorkingWithImages#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#11)]  

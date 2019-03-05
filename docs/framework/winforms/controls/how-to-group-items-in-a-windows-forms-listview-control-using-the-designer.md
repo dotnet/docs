@@ -23,7 +23,7 @@ The grouping feature of the <xref:System.Windows.Forms.ListView> control enables
   
 ### To add or remove groups in the designer  
   
-1.  In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) button next to the <xref:System.Windows.Forms.ListView.Groups%2A> property.  
+1.  In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](./media/how-to-group-items-in-a-windows-forms-listview-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button next to the <xref:System.Windows.Forms.ListView.Groups%2A> property.  
   
      The **ListViewGroup Collection Editor** appears.  
   
@@ -31,7 +31,7 @@ The grouping feature of the <xref:System.Windows.Forms.ListView> control enables
   
 ### To assign items to groups in the designer  
   
-1.  In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) button next to the <xref:System.Windows.Forms.ListView.Items%2A> property.  
+1.  In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](./media/how-to-group-items-in-a-windows-forms-listview-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button next to the <xref:System.Windows.Forms.ListView.Items%2A> property.  
   
      The **ListViewItem Collection Editor** appears.  
   

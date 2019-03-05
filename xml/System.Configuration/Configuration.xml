@@ -333,7 +333,7 @@
       </Parameters>
       <Docs>
         <param name="sectionName">The path to the section to be returned.</param>
-        <param name="path">To be added.</param>
+        <param name="path">The path to the section to be returned.</param>
         <summary>Returns the specified <see cref="T:System.Configuration.ConfigurationSection" /> object.</summary>
         <returns>The specified <see cref="T:System.Configuration.ConfigurationSection" /> object.</returns>
         <remarks>
@@ -388,7 +388,7 @@
       </Parameters>
       <Docs>
         <param name="sectionGroupName">The path name of the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> to return.</param>
-        <param name="path">To be added.</param>
+        <param name="path">The path name of the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> to return.</param>
         <summary>Gets the specified <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object.</summary>
         <returns>The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> specified.</returns>
         <remarks>
@@ -634,7 +634,7 @@
       </Parameters>
       <Docs>
         <param name="saveMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> value that determines which property values to save.</param>
-        <param name="mode">To be added.</param>
+        <param name="mode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> value that determines which property values to save.</param>
         <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the current XML configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -702,10 +702,11 @@
       </Parameters>
       <Docs>
         <param name="saveMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> value that determines which property values to save.</param>
-        <param name="mode">To be added.</param>
+        <param name="mode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> value that determines which property values to save.</param>
         <param name="forceSaveAll">
           <see langword="true" /> to save even if the configuration was not modified; otherwise, <see langword="false" />.</param>
-        <param name="forceUpdateAll">To be added.</param>
+        <param name="forceUpdateAll">
+          <see langword="true" /> to save even if the configuration was not modified; otherwise, <see langword="false" />.</param>
         <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the current XML configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -823,7 +824,7 @@
       <Docs>
         <param name="filename">The path and file name to save the configuration file to.</param>
         <param name="saveMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> value that determines which property values to save.</param>
-        <param name="mode">To be added.</param>
+        <param name="mode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> value that determines which property values to save.</param>
         <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the specified XML configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -882,10 +883,11 @@
       <Docs>
         <param name="filename">The path and file name to save the configuration file to.</param>
         <param name="saveMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> value that determines which property values to save.</param>
-        <param name="mode">To be added.</param>
+        <param name="mode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> value that determines which property values to save.</param>
         <param name="forceSaveAll">
           <see langword="true" /> to save even if the configuration was not modified; otherwise, <see langword="false" />.</param>
-        <param name="forceUpdateAll">To be added.</param>
+        <param name="forceUpdateAll">
+          <see langword="true" /> to save even if the configuration was not modified; otherwise, <see langword="false" />.</param>
         <summary>Writes the configuration settings contained within this <see cref="T:System.Configuration.Configuration" /> object to the specified XML configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

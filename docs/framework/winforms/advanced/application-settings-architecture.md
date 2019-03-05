@@ -32,8 +32,8 @@ This topic describes how the Application Settings architecture works, and explor
   
  The following code example defines a custom settings class with a single setting, `BackgroundColor`.  
   
- [!code-csharp[ApplicationSettings.Create#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Create/CS/MyAppSettings.cs#1)]
- [!code-vb[ApplicationSettings.Create#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Create/VB/MyAppSettings.vb#1)]  
+ [!code-csharp[ApplicationSettings.Create#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Create/CS/MyAppSettings.cs#1)]
+ [!code-vb[ApplicationSettings.Create#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Create/VB/MyAppSettings.vb#1)]  
   
 ## Settings Persistence  
  The <xref:System.Configuration.ApplicationSettingsBase> class does not itself persist or load settings; this job falls to the settings provider, a class that derives from <xref:System.Configuration.SettingsProvider>. If a derived class of <xref:System.Configuration.ApplicationSettingsBase> does not specify a settings provider through the <xref:System.Configuration.SettingsProviderAttribute>, then the default provider, <xref:System.Configuration.LocalFileSettingsProvider>, is used.  
@@ -121,8 +121,8 @@ This topic describes how the Application Settings architecture works, and explor
   
  Your provider will need to implement one property and one method whose implementations may not be obvious. The <xref:System.Configuration.SettingsProvider.ApplicationName%2A> property is an abstract property of <xref:System.Configuration.SettingsProvider>; you should program it to return the following:  
   
- [!code-csharp[ApplicationSettings.Architecture#2](../../../../samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Architecture/CS/DummyClass.cs#2)]
- [!code-vb[ApplicationSettings.Architecture#2](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Architecture/VB/DummyProviderClass.vb#2)]  
+ [!code-csharp[ApplicationSettings.Architecture#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Architecture/CS/DummyClass.cs#2)]
+ [!code-vb[ApplicationSettings.Architecture#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Architecture/VB/DummyProviderClass.vb#2)]  
   
  Your derived class must also implement an `Initialize` method that takes no arguments and returns no value. This method is not defined by <xref:System.Configuration.SettingsProvider>.  
   
@@ -130,8 +130,8 @@ This topic describes how the Application Settings architecture works, and explor
   
  Once you have implemented and compiled your provider, you need to instruct your settings class to use this provider instead of the default. You accomplish this through the <xref:System.Configuration.SettingsProviderAttribute>. If applied to an entire settings class, the provider is used for each setting that the class defines; if applied to individual settings, Application Settings architecture uses that provider for those settings only, and uses <xref:System.Configuration.LocalFileSettingsProvider> for the rest. The following code example shows how to instruct the settings class to use your custom provider.  
   
- [!code-csharp[ApplicationSettings.Architecture#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Architecture/CS/DummyClass.cs#1)]
- [!code-vb[ApplicationSettings.Architecture#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Architecture/VB/DummyProviderClass.vb#1)]  
+ [!code-csharp[ApplicationSettings.Architecture#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Architecture/CS/DummyClass.cs#1)]
+ [!code-vb[ApplicationSettings.Architecture#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Architecture/VB/DummyProviderClass.vb#1)]  
   
  A provider may be called from multiple threads simultaneously, but it will always write to the same storage location; therefore, the Application Settings architecture will only ever instantiate a single instance of your provider class.  
   

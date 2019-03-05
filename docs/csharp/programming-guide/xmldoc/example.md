@@ -17,7 +17,7 @@ ms.assetid: 32d6e73b-2554-4abb-83ee-a1e321334fd2
 <example>description</example>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A description of the code sample.  
   

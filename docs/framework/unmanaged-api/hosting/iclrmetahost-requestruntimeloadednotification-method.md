@@ -28,7 +28,7 @@ HRESULT RequestRuntimeLoadedNotification (
     [in] RuntimeLoadedCallbackFnPtr pCallbackFunction);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCallbackFunction`  
  [in] The callback function that is invoked when a new runtime has been loaded.  
   

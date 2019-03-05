@@ -29,7 +29,7 @@ HRESULT SetILInstrumentedCodeMap(
     [in, size_is(cILMapEntries)] COR_IL_MAP rgILMapEntries[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cILMapEntries`  
  [in] The number of entries in the map.  
   

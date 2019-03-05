@@ -32,7 +32,7 @@ HRESULT GetMethodBuffer (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `RVA`  
  [in] The relative virtual address of the method for which to return a buffer.  
   

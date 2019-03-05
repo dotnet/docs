@@ -31,7 +31,7 @@ HRESULT Next(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of objects to be retrieved.  
   

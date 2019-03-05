@@ -32,7 +32,7 @@ HRESULT GetConstants(
              constants[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cConstants`  
  [in] The length of the buffer that the `pcConstants` parameter points to.  
   

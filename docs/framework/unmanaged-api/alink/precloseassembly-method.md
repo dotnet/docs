@@ -28,7 +28,7 @@ HRESULT PreCloseAssembly(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   

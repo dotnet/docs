@@ -34,7 +34,7 @@ HRESULT GetModuleInfo(
     [out] AssemblyID *pAssemblyId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module for which information will be retrieved.  
   

@@ -32,7 +32,7 @@ HRESULT GetMetaDataStreamInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ix`  
  [in] The index of the requested metadata stream.  
   

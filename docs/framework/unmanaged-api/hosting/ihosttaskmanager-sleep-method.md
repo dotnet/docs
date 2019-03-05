@@ -30,7 +30,7 @@ HRESULT Sleep (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMilliseconds`  
  [in] The time interval, in milliseconds, that the thread will sleep.  
   

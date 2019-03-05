@@ -31,7 +31,7 @@ HRESULT GetReference (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRefData`  
  [out] The returned `FUSION_INSTALL_REFERENCE` pointer.  
   

@@ -38,7 +38,7 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
 [/s[/r registryLocation]] [destinationStorename]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  

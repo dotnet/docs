@@ -29,7 +29,7 @@ HRESULT RemotingServerSendingReply(
     [in] BOOL fIsAsync);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCookie`  
  [in] A pointer to a GUID that will correspond with the value provided in [ICorProfilerCallback::RemotingClientReceivingReply](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-remotingclientreceivingreply-method.md) under these conditions:  
   

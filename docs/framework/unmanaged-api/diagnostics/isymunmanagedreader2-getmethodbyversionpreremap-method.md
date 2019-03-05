@@ -30,7 +30,7 @@ HRESULT GetMethodByVersionPreRemap(
     [out, retval] ISymUnmanagedMethod** pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `token`  
  [in] The method metadata token.  
   

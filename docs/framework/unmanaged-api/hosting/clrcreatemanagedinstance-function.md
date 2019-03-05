@@ -36,7 +36,7 @@ STDAPI ClrCreateManagedInstance (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTypeName`  
  [in] A pointer to the name of the instance type being requested.  
   

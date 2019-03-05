@@ -27,7 +27,7 @@ Clears the current unmanaged exception on the given thread.
 HRESULT ClearCurrentException([in] DWORD threadID);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The ID of the thread on which the current unmanaged exception will be cleared.  
   

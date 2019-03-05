@@ -31,7 +31,7 @@ HRESULT GetBucketParametersForCurrentException(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pParams`  
  [out] A pointer to a [BucketParameters](../../../../docs/framework/unmanaged-api/hosting/bucketparameters-structure.md) structure that contains error data for the exception.  
   

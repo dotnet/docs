@@ -32,7 +32,7 @@ HRESULT CreateAssemblyCacheItem (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwFlags`  
  [in] Flags defined in Fusion.idl. The following values are supported:  
   

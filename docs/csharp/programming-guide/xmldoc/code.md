@@ -17,7 +17,7 @@ ms.assetid: f235e3bc-a709-43cf-8a9f-bd57cabdf6da
 <code>content</code>  
 ```  
   
-#### Parameters  
+## Parameters  
  `content`  
  The text you want marked as code.  
   

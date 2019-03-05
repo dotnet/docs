@@ -30,7 +30,7 @@ HRESULT ThreadNameChanged(
     [in] WCHAR name[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID of the thread.  
   

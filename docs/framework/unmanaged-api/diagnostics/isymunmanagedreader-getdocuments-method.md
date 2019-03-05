@@ -31,7 +31,7 @@ HRESULT GetDocuments (
         length_is (*pcDocs)] ISymUnmanagedDocument *pDocs[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cDocs`  
  [in] The size of the `pDocs` array.  
   

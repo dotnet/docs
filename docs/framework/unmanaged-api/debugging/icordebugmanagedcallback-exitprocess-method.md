@@ -29,7 +29,7 @@ HRESULT ExitProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an ICorDebugProcess object that represents the process.  
   

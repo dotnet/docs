@@ -39,7 +39,7 @@ HRESULT GetFieldProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mb`  
  [in] A FieldDef token that represents the field to get associated metadata for.  
   

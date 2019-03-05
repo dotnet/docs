@@ -37,7 +37,7 @@ HRESULT GetRuntimeInformation(
                    WCHAR  szVersionString[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pClrInstanceId`  
  [out] The representative ID of a running CLR instance in a process. This is the same as the `ClrInstanceID` that the event tracing for Windows (ETW) startup event reports.  
   

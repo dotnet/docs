@@ -33,7 +33,7 @@ HRESULT GetFunctionFromTokenAndTypeArgs(
     [out] FunctionID* pFunctionID);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleID`  
  [in] The ID of the module in which the function resides.  
   

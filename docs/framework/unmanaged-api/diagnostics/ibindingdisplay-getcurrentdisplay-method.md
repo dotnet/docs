@@ -29,7 +29,7 @@ HRESULT GetCurrentDisplay (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `display`  
  [out, retval] A pointer to a safearray containing the binding display information.  
   

@@ -16,7 +16,7 @@ HRESULT EnableVirtualModuleSplitting(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `enableSplitting`  
  `true` to enable virtual module splitting; `false` to disable it.  
   

@@ -23,7 +23,7 @@ HRESULT LoadFromHistory_export(
 )  
 ```  
   
-#### Parameters  
+## Parameters  
  pHistoryStream  
  A pointer to a stream of history information.  
   

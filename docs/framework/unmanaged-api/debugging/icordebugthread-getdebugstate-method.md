@@ -29,7 +29,7 @@ HRESULT GetDebugState (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pState`  
  [out] A pointer to a bitwise combination of CorDebugThreadState enumeration values that describes the current debug state of this thread.  
   

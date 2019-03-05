@@ -29,7 +29,7 @@ HRESULT SetCLRTask (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCLRTask`  
  [in] An interface pointer to the `ICLRTask` instance to be associated with the current `IHostTask` instance.  
   

@@ -31,7 +31,7 @@ HRESULT SetSymAttribute(
     [in, size_is(cData)] unsigned char data[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The metadata token for which the attribute is being defined.  
   

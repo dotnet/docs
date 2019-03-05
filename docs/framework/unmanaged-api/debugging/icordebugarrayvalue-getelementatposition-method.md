@@ -30,7 +30,7 @@ HRESULT GetElementAtPosition (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nPosition`  
  [in] The position of the element to be retrieved.  
   

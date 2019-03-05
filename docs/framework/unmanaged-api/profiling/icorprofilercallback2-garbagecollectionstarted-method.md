@@ -30,7 +30,7 @@ HRESULT GarbageCollectionStarted(
     [in] COR_PRF_GC_REASON reason);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cGenerations`  
  [in] The total number of entries in the `generationCollected` array.  
   

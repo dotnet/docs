@@ -32,7 +32,7 @@ HRESULT GetAppDomainsContainingModule(
                     AppDomainID appDomainIds[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the loaded module.  
   

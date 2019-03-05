@@ -30,7 +30,7 @@ HRESULT LoadModule (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain into which the module has been loaded.  
   

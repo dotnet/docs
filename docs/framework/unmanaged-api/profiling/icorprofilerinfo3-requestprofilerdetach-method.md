@@ -28,7 +28,7 @@ HRESULT RequestProfilerDetach(
    [in] DWORD    dwExpectedCompletionMilliseconds);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwExpectedCompletionMilliseconds`  
  [in] The length of time, in milliseconds, the common language runtime (CLR) should wait before checking to see whether it is safe to unload the profiler.  
   

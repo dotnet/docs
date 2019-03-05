@@ -30,7 +30,7 @@ HRESULT Wait (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMilliseconds`  
  [in] The number of milliseconds the current `IHostAutoEvent` instance should wait before returning, if no thread or fiber takes ownership.  
   

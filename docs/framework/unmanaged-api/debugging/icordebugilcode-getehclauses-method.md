@@ -29,7 +29,7 @@ HRESULT GetEHClauses(
    [out, size_is(cClauses), length_is(*pcClauses)] CorDebugEHClause clauses[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cClauses`  
  [in] The storage capacity of the `clauses` array. See the Remarks section for more information.  
   

@@ -29,7 +29,7 @@ HRESULT CreateHistoryReader (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wzFilePath`  
  [in] The file path.  
   

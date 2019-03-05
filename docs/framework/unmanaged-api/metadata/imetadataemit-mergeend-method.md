@@ -27,7 +27,7 @@ Merges into the current scope all the metadata scopes specified by one or more p
 HRESULT MergeEnd ();  
 ```  
   
-#### Parameters  
+## Parameters  
  This method takes no parameters.  
   
 ## Remarks  

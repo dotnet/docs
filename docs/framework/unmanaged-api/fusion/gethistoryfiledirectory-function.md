@@ -29,7 +29,7 @@ HRESULT GetHistoryFileDirectory (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wzDir`  
  [out] A buffer to hold the path to the application history directory.  
   

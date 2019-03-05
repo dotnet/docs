@@ -29,7 +29,7 @@ HRESULT ObjectAllocated(
     [in] ClassID classId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object for which memory was allocated.  
   

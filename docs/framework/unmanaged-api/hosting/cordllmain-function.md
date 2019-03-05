@@ -30,7 +30,7 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hInst`  
  [in] The instance handle of the loaded module.  
   

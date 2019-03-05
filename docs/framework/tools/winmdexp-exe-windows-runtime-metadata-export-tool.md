@@ -23,7 +23,7 @@ The [!INCLUDE[wrt](../../../includes/wrt-md.md)] Metadata Export Tool (Winmdexp.
 winmdexp [options] winmdmodule  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument or option|Description|  
 |------------------------|-----------------|  

@@ -17,7 +17,7 @@ HRESULT GetPublicKey(
    [out, size_is(cbPublicKey), length_is(*pcbPublicKey)] BYTE pbPublicKey[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbPublicKey`  
  [in] The maximum number of bytes in the `pbPublicKey` array.  
   

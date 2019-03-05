@@ -29,7 +29,7 @@ HRESULT GetOSThreadId (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pOsTid`  
  [out] A pointer to the OS thread identifier.  
   

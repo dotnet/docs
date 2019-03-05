@@ -29,7 +29,7 @@ HRESULT CoInitializeEE (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fFlags`  
  [in] One of the [COINITIEE](../../../../docs/framework/unmanaged-api/metadata/coinitiee-enumeration.md) enumeration constants.  
   

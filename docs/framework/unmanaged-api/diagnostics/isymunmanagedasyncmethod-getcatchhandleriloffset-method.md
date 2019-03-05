@@ -14,7 +14,7 @@ See [DefineCatchHandlerILOffset Method](../../../../docs/framework/unmanaged-api
 HRESULT GetCatchHandlerILOffset(    [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  

@@ -33,7 +33,7 @@ HRESULT SetGenericParamProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `gp`  
  [in] The token for the generic parameter definition for which to set values.  
   

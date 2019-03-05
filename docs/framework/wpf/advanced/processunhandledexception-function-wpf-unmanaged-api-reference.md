@@ -22,7 +22,7 @@ void __stdcall ProcessUnhandledException(
 )  
 ```  
   
-#### Parameters  
+## Parameters  
  errorMsg  
  The error message.  
   

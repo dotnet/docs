@@ -30,7 +30,7 @@ HRESULT SaveToStream (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIStream`  
  [in] The writable stream to save to.  
   

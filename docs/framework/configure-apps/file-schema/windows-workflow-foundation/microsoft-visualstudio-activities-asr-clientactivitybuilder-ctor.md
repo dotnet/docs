@@ -19,7 +19,7 @@ Creates an instance of the [Microsoft.VisualStudio.Activities.Asr.ClientActivity
 public ClientActivityBuilder(OperationDescription operationDescription, string configurationName, string proxyNamespace);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 ## Parameter Values  
  *operationDescription*  

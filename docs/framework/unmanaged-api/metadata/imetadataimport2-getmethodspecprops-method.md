@@ -32,7 +32,7 @@ HRESULT GetMethodSpecProps (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `mi`  
  [in] A MethodSpec token that represents the instantiation of the method.  
   

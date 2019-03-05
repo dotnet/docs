@@ -27,7 +27,7 @@ Provides information about the platform, including processor architecture and op
 HRESULT GetPlatform([out] CorDebugPlatform * pTargetPlatform);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTargetPlatform`  
  [out] A pointer to a [CorDebugPlatformEnum](../../../../docs/framework/unmanaged-api/debugging/cordebugplatform-enumeration.md) enumeration that describes the target platform.  
   

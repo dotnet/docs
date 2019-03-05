@@ -30,7 +30,7 @@ HRESULT MapFile(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hFile`  
  [in] The handle of the file to be mapped.  
   

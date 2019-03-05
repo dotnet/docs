@@ -32,7 +32,7 @@ HRESULT GetName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The size of the `szName` array. Set this value to zero to put this method in query mode.  
   

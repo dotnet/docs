@@ -31,7 +31,7 @@ HRESULT GetThreadContext(
        [out, size_is(contextSize)] BYTE * pContext);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwThreadID`  
  [in] The identifier of the thread whose context is to be retrieved. The identifier is defined by the operating system.  
   

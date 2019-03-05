@@ -29,7 +29,7 @@ HRESULT EnumerateProcesses (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppProcess`  
  A pointer to the address of an ICorDebugProcessEnum object that is the enumerator for the processes being debugged.  
   

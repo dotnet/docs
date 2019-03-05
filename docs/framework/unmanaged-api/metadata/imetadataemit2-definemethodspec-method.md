@@ -32,7 +32,7 @@ HRESULT DefineMethodSpec (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkParent`  
  [in] A token for the method of which to create the generic instance. The token must be of type `mdMethodDef` or `mdMemberRef`.  
   

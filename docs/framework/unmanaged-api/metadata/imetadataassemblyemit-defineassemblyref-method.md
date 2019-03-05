@@ -36,7 +36,7 @@ HRESULT DefineAssemblyRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbPublicKeyOrToken`  
  [in] The public key of the publisher of the referenced assembly. The helper function [StrongNameTokenFromAssembly](../../../../docs/framework/unmanaged-api/strong-naming/strongnametokenfromassembly-function.md) can be used to get the hash of the public key to pass as this parameter.  
   

@@ -34,7 +34,7 @@ HRESULT GetHashFromHandle (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hFile`  
  [in] The handle of the file to be hashed.  
   

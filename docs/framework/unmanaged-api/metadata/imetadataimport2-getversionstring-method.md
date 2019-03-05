@@ -31,7 +31,7 @@ HRESULT GetVersionString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzBuf`  
  [out] An array to store the string that specifies the version.  
   

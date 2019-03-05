@@ -33,7 +33,7 @@ HRESULT ComputePointer (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The code section for which to return a buffer.  
   

@@ -32,7 +32,7 @@ HRESULT DefineDocument(
     [out, retval] ISymUnmanagedDocumentWriter**  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `url`  
  [in] A pointer to a `WCHAR` that defines the uniform resource locator (URL) that identifies the document.  
   

@@ -31,7 +31,7 @@ HRESULT GetIlSection (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The handle to the section to get.  
   

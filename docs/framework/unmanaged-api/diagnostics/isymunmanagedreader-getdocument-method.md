@@ -32,7 +32,7 @@ HRESULT GetDocument (
     [out, retval] ISymUnmanagedDocument** pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `url`  
  [in] The URL that identifies the document.  
   

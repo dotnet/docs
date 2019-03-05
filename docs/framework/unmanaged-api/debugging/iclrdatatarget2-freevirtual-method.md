@@ -31,7 +31,7 @@ HRESULT FreeVirtual(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `addr`  
  [in] A `CLRDATA_ADDRESS` value that specifies the starting address of the memory to be freed.  
   

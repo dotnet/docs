@@ -29,7 +29,7 @@ HRESULT ExceptionCatcherEnter(
     [in] ObjectID   objectId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The identifier of the function containing the `catch` block.  
   

@@ -31,7 +31,7 @@ HRESULT GetSourceStartEnd(
     [out] BOOL                   *pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `docs`  
  [in] The starting and ending source documents.  
   

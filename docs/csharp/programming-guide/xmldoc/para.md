@@ -17,7 +17,7 @@ ms.assetid: c74b8705-29df-40b1-bff5-237492b0e978
 <para>content</para>  
 ```  
   
-#### Parameters  
+## Parameters  
  `content`  
  The text of the paragraph.  
   

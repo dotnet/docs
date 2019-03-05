@@ -29,7 +29,7 @@ HRESULT DeletePinvokeMap (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] An `mdFieldDef` or `mdMethodDef` token that represents the object for which to delete the PInvoke mapping metadata.  
   

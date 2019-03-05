@@ -31,7 +31,7 @@ HRESULT GetRow (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixTbl`  
  [in] The index of the table from which the row will be retrieved.  
   

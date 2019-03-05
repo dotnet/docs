@@ -25,7 +25,7 @@
   </Attributes>
   <Docs>
     <typeparam name="T">To be added.</typeparam>
-    <summary>Represents a sequence that can read a sequential series of <typeparam name="T" />.</summary>
+    <summary>Represents a sequence that can read a sequential series of <typeparamref name="T" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

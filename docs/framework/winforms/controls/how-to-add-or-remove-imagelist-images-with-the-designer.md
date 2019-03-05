@@ -25,7 +25,7 @@ You can add images to an <xref:System.Windows.Forms.ImageList> component several
   
 1.  Select the <xref:System.Windows.Forms.ImageList> component, or add one to the form.  
   
-2.  Click the smart tag glyph (![Smart Tag Glyph](media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph"))  
+2.  Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph"))  
   
 3.  In the **ImageList Tasks** dialog box, select **Choose Images**.  
   

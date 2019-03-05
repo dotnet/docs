@@ -21,7 +21,7 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
   
 ### To bind the control to a data source  
   
-1.  Click the smart tag glyph (![Smart Tag Glyph](media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control.  
+1.  Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control.  
   
 2.  Click the drop-down arrow for the **Choose Data Source** option.  
   

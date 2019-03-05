@@ -25,7 +25,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
  The following illustration shows the <xref:System.Windows.Forms.Control.Padding%2A> and <xref:System.Windows.Forms.Control.Margin%2A> properties on a control.  
   
- ![Padding And Margin for Windows Forms Controls](media/vs-winformpadmargin.gif "VS_WinFormPadMargin")  
+ ![Padding And Margin for Windows Forms Controls](./media/vs-winformpadmargin.gif "VS_WinFormPadMargin")  
   
  The <xref:System.Windows.Forms.Control.AutoSize%2A> property tells a control to automatically size itself to its contents. It will not resize itself to be smaller than the value of its original <xref:System.Windows.Forms.Control.Size%2A> property, and it will account for the value of its <xref:System.Windows.Forms.Control.Padding%2A> property.  
   

@@ -17,7 +17,7 @@ With the tile view feature of the <xref:System.Windows.Forms.ListView> control, 
   
  The tile view uses a 32 x 32 pixel icon and several lines of text, as shown in the following images.  
   
- ![Tile View in a ListView Control](media/listviewtile.gif "ListViewTile")  
+ ![Tile View in a ListView Control](./media/listviewtile.gif "ListViewTile")  
 Tile view icons and text  
   
  To enable tile view, set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View.Tile>. You can adjust the size of the tiles by setting the <xref:System.Windows.Forms.ListView.TileSize%2A> property, and the number of text lines displayed in the tile by adjusting the <xref:System.Windows.Forms.ListView.Columns%2A> collection.  

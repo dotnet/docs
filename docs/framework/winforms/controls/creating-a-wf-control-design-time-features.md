@@ -52,7 +52,7 @@ The design-time experience for a custom control can be enhanced by authoring an 
   
  When you are finished, your custom control will look something like the following:  
   
- ![A possible MarqueeControl arrangement](media/demomarqueecontrol.gif "DemoMarqueeControl")  
+ ![A possible MarqueeControl arrangement](./media/demomarqueecontrol.gif "DemoMarqueeControl")  
   
  For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).  
   

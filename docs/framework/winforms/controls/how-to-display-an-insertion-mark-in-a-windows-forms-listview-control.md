@@ -20,7 +20,7 @@ The insertion mark in the <xref:System.Windows.Forms.ListView> control shows use
   
  The following image shows an insertion mark:  
   
- ![A ListView Insertion Mark](media/listviewinsertion.gif "ListViewInsertion")  
+ ![A ListView Insertion Mark](./media/listviewinsertion.gif "ListViewInsertion")  
   
  The following code example demonstrates how to use this feature.  
   

@@ -22,7 +22,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
   
  This topic provides an overview of the dynamic update process of adding a new activity to a persisted instance of a compiled Xaml workflow.  
   
-###  <a name="Prepare"></a> Prepare the workflow definition for dynamic update  
+### <a name="Prepare"></a> Prepare the workflow definition for dynamic update  
  The first step in the dynamic update process is to prepare the desired workflow definition for update. This is done by calling the <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=nameWithType> method and passing in the workflow definition to modify. This method validates and then walks the workflow tree to identify all of the objects such as public activities and variables that need to be tagged so they can be compared later with the modified workflow definition. When this is complete, the workflow tree is cloned and attached to the original workflow definition. When the update map is created, the updated version of the workflow definition is compared with the original workflow definition and the update map is generated based on the differences.  
   
  To prepare a Xaml workflow for dynamic update it may be loaded into an <xref:System.Activities.ActivityBuilder>, and then the <xref:System.Activities.ActivityBuilder> is passed into <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=nameWithType>.  
@@ -53,7 +53,7 @@ DynamicUpdateServices.PrepareForUpdate(ab);
 > [!NOTE]
 >  To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).  
   
-###  <a name="Update"></a> Update the workflow definition to reflect the desired changes  
+### <a name="Update"></a> Update the workflow definition to reflect the desired changes  
  Once the workflow definition has been prepared for updating, the desired changes can be made. You can add or remove activities, add, move or delete public variables, add or remove arguments, and make changes to the signature of activity delegates. You cannot remove a running activity or change the signature of a running delegate. These changes may be made using code, or in a re-hosted workflow designer. In the following example, a custom `VerifyAppraisal` activity is added to the Sequence that makes up the body of the `MortgageWorkflow` from the previous example.  
   
 ```csharp  
@@ -71,7 +71,7 @@ Sequence s = ab.Implementation as Sequence;
 s.Activities.Insert(2, va);  
 ```  
   
-###  <a name="Create"></a> Create the update map  
+### <a name="Create"></a> Create the update map  
  Once the workflow definition that was prepared for update has been modified, the update map can be created. To create a dynamic update map, the <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap%2A?displayProperty=nameWithType> method is invoked. This returns a <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> that contains the information the runtime needs to modify a persisted workflow instance so that it may be loaded and resumed with the new workflow definition. In the following example, a dynamic map is created for the modified `MortgageWorkflow` definition from the previous example.  
   
 ```csharp  
@@ -100,7 +100,7 @@ XamlServices.Save(xw, ab);
 sw.Close();  
 ```  
   
-###  <a name="Apply"></a> Apply the update map to the desired persisted workflow instances  
+### <a name="Apply"></a> Apply the update map to the desired persisted workflow instances  
  Applying the update map can be done at any time after creating it. It can be done right away using the <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> instance that was returned by <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap%2A?displayProperty=nameWithType>, or it can be done later using a saved copy of the update map. To update a workflow instance, load it into a <xref:System.Activities.WorkflowApplicationInstance> using <xref:System.Activities.WorkflowApplication.GetInstance%2A?displayProperty=nameWithType>. Next, create a <xref:System.Activities.WorkflowApplication> using the updated workflow definition, and the desired <xref:System.Activities.WorkflowIdentity>. This <xref:System.Activities.WorkflowIdentity> may be different than the one that was used to persist the original workflow, and typically is in order to reflect that the persisted instance has been modified. Once the <xref:System.Activities.WorkflowApplication> is created, it is loaded using the overload of <xref:System.Activities.WorkflowApplication.Load%2A?displayProperty=nameWithType> that takes a <xref:System.Activities.DynamicUpdate.DynamicUpdateMap>, and then unloaded with a call to <xref:System.Activities.WorkflowApplication.Unload%2A?displayProperty=nameWithType>. This applies the dynamic update and persists the updated workflow instance.  
   
 ```csharp  

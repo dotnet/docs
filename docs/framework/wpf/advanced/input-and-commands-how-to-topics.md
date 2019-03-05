@@ -12,17 +12,17 @@ ms.assetid: a5c266b6-969c-4049-a471-ddca7b10fb89
 The topics in this section describe how to use the input and commanding infrastructure in Windows Presentation Foundation (WPF).  
   
 ## In This Section  
- [Enable a Command](../../../../docs/framework/wpf/advanced/how-to-enable-a-command.md)  
- [Change the Cursor Type](../../../../docs/framework/wpf/advanced/how-to-change-the-cursor-type.md)  
- [Change the Color of an Element Using Focus Events](../../../../docs/framework/wpf/advanced/how-to-change-the-color-of-an-element-using-focus-events.md)  
- [Apply a FocusVisualStyle to a Control](../../../../docs/framework/wpf/advanced/how-to-apply-a-focusvisualstyle-to-a-control.md)  
- [Detect When the Enter Key is Pressed](../../../../docs/framework/wpf/advanced/how-to-detect-when-the-enter-key-pressed.md)  
- [Create a Rollover Effect Using Events](../../../../docs/framework/wpf/advanced/how-to-create-a-rollover-effect-using-events.md)  
- [Make an Object Follow the Mouse Pointer](../../../../docs/framework/wpf/advanced/how-to-make-an-object-follow-the-mouse-pointer.md)  
- [Create a RoutedCommand](../../../../docs/framework/wpf/advanced/how-to-create-a-routedcommand.md)  
- [Implement ICommandSource](../../../../docs/framework/wpf/advanced/how-to-implement-icommandsource.md)  
- [Hook Up a Command to a Control with No Command Support](../../../../docs/framework/wpf/advanced/how-to-hook-up-a-command-to-a-control-with-no-command-support.md)  
- [Hook Up a Command to a Control with Command Support](../../../../docs/framework/wpf/advanced/how-to-hook-up-a-command-to-a-control-with-command-support.md)  
+ [Enable a Command](how-to-enable-a-command.md)  
+ [Change the Cursor Type](how-to-change-the-cursor-type.md)  
+ [Change the Color of an Element Using Focus Events](how-to-change-the-color-of-an-element-using-focus-events.md)  
+ [Apply a FocusVisualStyle to a Control](how-to-apply-a-focusvisualstyle-to-a-control.md)  
+ [Detect When the Enter Key is Pressed](how-to-detect-when-the-enter-key-pressed.md)  
+ [Create a Rollover Effect Using Events](how-to-create-a-rollover-effect-using-events.md)  
+ [Make an Object Follow the Mouse Pointer](how-to-make-an-object-follow-the-mouse-pointer.md)  
+ [Create a RoutedCommand](how-to-create-a-routedcommand.md)  
+ [Implement ICommandSource](how-to-implement-icommandsource.md)  
+ [Hook Up a Command to a Control with No Command Support](how-to-hook-up-a-command-to-a-control-with-no-command-support.md)  
+ [Hook Up a Command to a Control with Command Support](how-to-hook-up-a-command-to-a-control-with-command-support.md)  
   
 ## Reference  
  <xref:System.Windows.UIElement>  

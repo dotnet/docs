@@ -21,6 +21,6 @@ Friend assembly reference \<reference> is invalid. Strong-name signed assemblies
   
 ## See also
 - <xref:System.Reflection.AssemblyName>
-- [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)
+- [Friend Assemblies](../../../standard/assembly/friend-assemblies.md)
 
 

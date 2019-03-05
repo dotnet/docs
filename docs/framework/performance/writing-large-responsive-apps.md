@@ -461,7 +461,6 @@ class Compilation { /*...*/
 - [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)
 - [Performance](../../../docs/framework/performance/index.md)
 - [.NET Performance Tips](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973839(v%3dmsdn.10))
-- [Windows Phone Performance Analysis Tool](https://msdn.microsoft.com/magazine/hh781024.aspx)
 - [Channel 9 PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial)
 - [The .NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
 - [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)

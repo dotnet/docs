@@ -1,4 +1,4 @@
-﻿---
+---
 title: "What's New in Windows Communication Foundation 4.5"
 ms.date: "03/30/2017"
 helpviewer_keywords:

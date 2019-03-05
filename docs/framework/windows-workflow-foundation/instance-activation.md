@@ -6,7 +6,7 @@ ms.assetid: 134c3f70-5d4e-46d0-9d49-469a6643edd8
 # Instance Activation
 The SQL Workflow Instance Store runs an internal task that periodically wakes up and detects runnable or activatable workflow instances in the persistence database. If it finds a runnable workflow instance, it notifies the workflow host that is capable of activating the instance. If the instance store finds an activatable workflow instance, it notifies a generic host that activates a workflow host, which in turn runs the workflow instance. The following sections in this topic explain the instance activation process in detail.  
   
-##  <a name="RunnableSection"></a> Detecting and Activating Runnable Workflow Instances  
+## <a name="RunnableSection"></a> Detecting and Activating Runnable Workflow Instances  
  The SQL Workflow Instance Store considers a workflow instance *runnable* if the instance is not in the suspended state or the completed state and satisfies the following conditions:  
   
 -   The instance is unlocked and has a pending timer that has expired.  

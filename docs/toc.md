@@ -505,15 +505,6 @@
 ### [Accessing Data](visual-basic/developing-apps/accessing-data.md)
 ### [Creating and Using Components](visual-basic/developing-apps/creating-and-using-components.md)
 
-### [Printing and Reporting](visual-basic/developing-apps/printing/index.md)
-#### [PrintForm Component](visual-basic/developing-apps/printing/printform-component.md)
-#### [How to: Print a Scrollable Form](visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md)
-#### [How to: Print Client and Non-Client Areas of a Form](visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md)
-#### [How to: Print the Client Area of a Form](visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md)
-#### [How to: Print a Form by Using the PrintForm Component](visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md)
-#### [Deploying Applications That Reference the PrintForm Component](visual-basic/developing-apps/printing/deploying-applications-that-reference-the-printform-component.md)
-#### [Adding Printable Reports to Visual Studio Applications](visual-basic/developing-apps/printing/adding-printable-reports-to-visual-studio-applications.md)
-
 ### [Windows Forms Application Basics](visual-basic/developing-apps/windows-forms/index.md)
 
 ### [Customizing Projects and Extending My with Visual Basic](visual-basic/developing-apps/customizing-extending-my/index.md)

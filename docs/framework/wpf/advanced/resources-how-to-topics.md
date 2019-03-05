@@ -12,12 +12,12 @@ ms.assetid: 9f986a6d-7cc8-45ac-bb0f-43177a57649d
 The topics in this section describe how to use Windows Presentation Foundation (WPF) resources.  
   
 ## In This Section  
- [Define and Reference a Resource](../../../../docs/framework/wpf/advanced/how-to-define-and-reference-a-resource.md)  
- [Use Application Resources](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md)  
- [Use SystemFonts](../../../../docs/framework/wpf/advanced/how-to-use-systemfonts.md)  
- [Use System Fonts Keys](../../../../docs/framework/wpf/advanced/how-to-use-system-fonts-keys.md)  
- [Use SystemParameters](../../../../docs/framework/wpf/advanced/how-to-use-systemparameters.md)  
- [Use System Parameters Keys](../../../../docs/framework/wpf/advanced/how-to-use-system-parameters-keys.md)  
+ [Define and Reference a Resource](how-to-define-and-reference-a-resource.md)  
+ [Use Application Resources](how-to-use-application-resources.md)  
+ [Use SystemFonts](how-to-use-systemfonts.md)  
+ [Use System Fonts Keys](how-to-use-system-fonts-keys.md)  
+ [Use SystemParameters](how-to-use-systemparameters.md)  
+ [Use System Parameters Keys](how-to-use-system-parameters-keys.md)  
   
 ## Reference  
  <xref:System.Windows.FrameworkTemplate.Resources%2A>  
@@ -29,4 +29,4 @@ The topics in this section describe how to use Windows Presentation Foundation (
  <xref:System.Windows.SystemFonts>  
   
 ## Related Sections  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)
+ [XAML Resources](xaml-resources.md)

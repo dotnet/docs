@@ -35,7 +35,7 @@ Different Bounded Contexts (BCs) will employ different patterns. They have diffe
 
 There is only one application architecture: the architecture of the system or end-to-end application you are designing (for example, the microservices architecture). However, the design of each Bounded Context or microservice within that application reflects its own tradeoffs and internal design decisions at an architecture patterns level. Do not try to apply the same architectural patterns like CQRS or DDD everywhere.
 
-####  Additional resources
+### Additional resources
 
 - **Martin Fowler. CQRS** \
   [*https://martinfowler.com/bliki/CQRS.html*](https://martinfowler.com/bliki/CQRS.html)

@@ -96,7 +96,7 @@ Binding a text box designer control to an activity argument is fairly straightfo
 
 3. Modify the XAML of the combo box to add the new item converter as the item converter to be used for the combo box. The converter is added as a resource in the ActivityDesigner.Resources segment, and specifies the converter in the Converter attribute for the <xref:System.Windows.Controls.ComboBox>. Note that the namespace of the project is specified in the namespaces attributes for the activity designer; if the designer is to be used in a different project, this namespace will need to be changed.
 
-    ```xml
+    ```xaml
     <sap:ActivityDesigner x:Class="CustomProperty.CustomPropertyDesigner"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

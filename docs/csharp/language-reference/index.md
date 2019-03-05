@@ -31,8 +31,8 @@ This section provides reference material about C# keywords, operators, special c
  [C# Compiler Errors](../../csharp/language-reference/compiler-messages/index.md)  
  Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.  
   
- [C# Language Specification](../../csharp/language-reference/language-specification/index.md)  
- Provides links to the latest versions of the C# language specification.  
+ [C# Language Specification](../../../_csharplang/spec/introduction.md))  
+ The C# 6.0 language specification. This is a draft proposal for the C# 6.0 language. Version 5.0 has been released in December 2017 as the [Standard ECMA-334 5th Edition](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf) document.
   
 ## Related Sections  
 

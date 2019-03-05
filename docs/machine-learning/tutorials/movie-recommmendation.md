@@ -99,7 +99,7 @@ In machine learning, the columns that are used to make a prediction are called [
 
 You want to predict movie ratings, so the rating column is the `Label`. The other three columns, `userId`, `movieId`, and `timestamp` are all `Features` used to predict the `Label`.
 
-![preview of data](./media/movie-recommendation/datatable2.png)
+![preview of data](./media/movie-recommendation/dataset.png)
 
 It is up to you to decide which `Features` you think can best be used to predict the `Label`. You can also use methods like [Feature Permutation Importance](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/determine-global-feature-importance-in-model) to help with selecting the best `Features`. In this case, you should eliminate the `timestamp` column as a `Feature` because the timestamp does not really affect how a user rates a given movie and thus would not contribute to making a more accurate prediction.
 
@@ -277,7 +277,7 @@ The `Transform()` method makes predictions for multiple provided input rows of a
 
 The print statements display your evaluation metrics in the console, which should look similar to the following:
 
-![evaluation metrics](./media/movie-recommendation/evalmetrics.png)
+![evaluation metrics](./media/movie-recommendation/evaluationmetrics.png)
 
 In this output, there are 20 iterations. In each iteration, the measure of error decreases and converges closer and closer to 0.
 

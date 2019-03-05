@@ -14,8 +14,8 @@ ms.assetid: aa47ddf6-5223-40c4-833f-a78992194836
 The following code example demonstrates how to apply the *PropertyName*Changed pattern to a custom control. Apply this pattern when you implement custom controls that are used with the Windows Forms data binding engine.  
   
 ## Example  
- [!code-csharp[System.Windows.Forms.ChangeNotification#3](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ChangeNotification/CS/Form1.cs#3)]
- [!code-vb[System.Windows.Forms.ChangeNotification#3](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ChangeNotification/VB/Form1.vb#3)]  
+ [!code-csharp[System.Windows.Forms.ChangeNotification#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ChangeNotification/CS/Form1.cs#3)]
+ [!code-vb[System.Windows.Forms.ChangeNotification#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ChangeNotification/VB/Form1.vb#3)]  
   
 ## Compiling the Code  
  To compile the previous code example:  

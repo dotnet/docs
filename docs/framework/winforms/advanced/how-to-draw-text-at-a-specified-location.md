@@ -18,7 +18,7 @@ When you perform custom drawing, you can draw text in a single horizontal line s
   
  The following illustration shows the output of text drawn at a specified point when you use the <xref:System.Drawing.Graphics.DrawString%2A> overloaded method.  
   
- ![Fonts Text](../../../../docs/framework/winforms/advanced/media/csfontstext1.png "csfontstext1")  
+ ![Fonts Text](media/csfontstext1.png "csfontstext1")  
   
 ### To draw a line of text with GDI+  
   
@@ -40,7 +40,7 @@ When you perform custom drawing, you can draw text in a single horizontal line s
 -   <xref:System.Windows.Forms.PaintEventArgs>  `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
-- [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)
-- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)
-- [How to: Construct Font Families and Fonts](../../../../docs/framework/winforms/advanced/how-to-construct-font-families-and-fonts.md)
-- [How to: Draw Wrapped Text in a Rectangle](../../../../docs/framework/winforms/advanced/how-to-draw-wrapped-text-in-a-rectangle.md)
+- [How to: Draw Text with GDI](how-to-draw-text-with-gdi.md)
+- [Using Fonts and Text](using-fonts-and-text.md)
+- [How to: Construct Font Families and Fonts](how-to-construct-font-families-and-fonts.md)
+- [How to: Draw Wrapped Text in a Rectangle](how-to-draw-wrapped-text-in-a-rectangle.md)

@@ -46,7 +46,7 @@ To draw lines with [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-m
   
  You can use the properties of the <xref:System.Drawing.Pen> object to set many more attributes of the line. The <xref:System.Drawing.Pen.StartCap%2A> and <xref:System.Drawing.Pen.EndCap%2A> properties specify the appearance of the ends of the line; the ends can be flat, square, rounded, triangular, or a custom shape. The <xref:System.Drawing.Pen.LineJoin%2A> property lets you specify whether connected lines are mitered (joined with sharp corners), beveled, rounded, or clipped. The following illustration shows lines with various cap and join styles.  
   
- ![Lines](../../../../docs/framework/winforms/advanced/media/aboutgdip02-art04.gif "Aboutgdip02_art04")  
+ ![Lines](media/aboutgdip02-art04.gif "Aboutgdip02_art04")  
   
 ## Drawing a Rectangle  
  Drawing rectangles with [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is similar to drawing lines. To draw a rectangle, you need a <xref:System.Drawing.Graphics> object and a <xref:System.Drawing.Pen> object. The <xref:System.Drawing.Graphics> object provides a <xref:System.Drawing.Graphics.DrawRectangle%2A> method, and the <xref:System.Drawing.Pen> object stores attributes, such as line width and color. The <xref:System.Drawing.Pen> object is passed as one of the arguments to the <xref:System.Drawing.Graphics.DrawRectangle%2A> method. The following example draws a rectangle with its upper-left corner at (100, 50), a width of 80, and a height of 40:  
@@ -65,6 +65,6 @@ To draw lines with [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-m
 - <xref:System.Drawing.Graphics?displayProperty=nameWithType>
 - <xref:System.Drawing.Pen?displayProperty=nameWithType>
 - <xref:System.Drawing.Rectangle?displayProperty=nameWithType>
-- [How to: Create a Pen](../../../../docs/framework/winforms/advanced/how-to-create-a-pen.md)
-- [How to: Draw a Line on a Windows Form](../../../../docs/framework/winforms/advanced/how-to-draw-a-line-on-a-windows-form.md)
-- [How to: Draw an Outlined Shape](../../../../docs/framework/winforms/advanced/how-to-draw-an-outlined-shape.md)
+- [How to: Create a Pen](how-to-create-a-pen.md)
+- [How to: Draw a Line on a Windows Form](how-to-draw-a-line-on-a-windows-form.md)
+- [How to: Draw an Outlined Shape](how-to-draw-an-outlined-shape.md)

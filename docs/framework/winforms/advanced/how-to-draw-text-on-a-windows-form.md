@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 5d2447a9-21a1-4adc-b954-5516f2bb9b2c
 ---
 # How to: Draw Text on a Windows Form
-The following code example shows how to use the <xref:System.Drawing.Graphics.DrawString%2A> method of the <xref:System.Drawing.Graphics> to draw text on a form. Alternatively, you can use <xref:System.Windows.Forms.TextRenderer> for drawing text on a form. For more information, see [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md).  
+The following code example shows how to use the <xref:System.Drawing.Graphics.DrawString%2A> method of the <xref:System.Drawing.Graphics> to draw text on a form. Alternatively, you can use <xref:System.Windows.Forms.TextRenderer> for drawing text on a form. For more information, see [How to: Draw Text with GDI](how-to-draw-text-with-gdi.md).  
   
 ## Example  
  [!code-cpp[System.Drawing.ConceptualHowTos#7](../../../../samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/cpp/form1.cpp#7)]
@@ -33,5 +33,5 @@ The following code example shows how to use the <xref:System.Drawing.Graphics.Dr
 - <xref:System.Drawing.StringFormatFlags>
 - <xref:System.Windows.Forms.TextFormatFlags>
 - <xref:System.Windows.Forms.Control.OnPaint%2A>
-- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)
-- [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)
+- [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)
+- [How to: Draw Text with GDI](how-to-draw-text-with-gdi.md)

@@ -96,16 +96,16 @@ Your new WPF control is ready for use on the form. Windows Forms uses the <xref:
 
 Windows Forms and WPF are different technologies, but they are designed to interoperate closely. To provide richer appearance and behavior in your applications, try the following:
 
-- Host a Windows Forms control in a WPF page. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md).
+- Host a Windows Forms control in a WPF page. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF](../../wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md).
 
-- Apply Windows Forms visual styles to your WPF content. For more information, see [How to: Enable Visual Styles in a Hybrid Application](../../../../docs/framework/wpf/advanced/how-to-enable-visual-styles-in-a-hybrid-application.md).
+- Apply Windows Forms visual styles to your WPF content. For more information, see [How to: Enable Visual Styles in a Hybrid Application](../../wpf/advanced/how-to-enable-visual-styles-in-a-hybrid-application.md).
 
-- Change the style of your WPF content. For more information, see [Walkthrough: Styling WPF Content](../../../../docs/framework/winforms/advanced/walkthrough-styling-wpf-content.md).
+- Change the style of your WPF content. For more information, see [Walkthrough: Styling WPF Content](walkthrough-styling-wpf-content.md).
 
 ## See also
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
-- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
+- [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
+- [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

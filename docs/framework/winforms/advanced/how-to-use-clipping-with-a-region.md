@@ -17,7 +17,7 @@ One of the properties of the <xref:System.Drawing.Graphics> class is the clip re
   
  The following illustration shows the clipped strings.  
   
- ![Clip](../../../../docs/framework/winforms/advanced/media/clip1.png "clip1")  
+ ![Clip](media/clip1.png "clip1")  
   
  [!code-csharp[System.Drawing.MiscLegacyTopics#41](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#41)]
  [!code-vb[System.Drawing.MiscLegacyTopics#41](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#41)]  
@@ -26,5 +26,5 @@ One of the properties of the <xref:System.Drawing.Graphics> class is the clip re
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
-- [Regions in GDI+](../../../../docs/framework/winforms/advanced/regions-in-gdi.md)
-- [Using Regions](../../../../docs/framework/winforms/advanced/using-regions.md)
+- [Regions in GDI+](regions-in-gdi.md)
+- [Using Regions](using-regions.md)

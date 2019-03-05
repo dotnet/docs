@@ -24,7 +24,7 @@ Creating an accessible application has important business implications. Many gov
   
  For more information, see [Resources for Designing Accessible Applications](/visualstudio/ide/reference/resources-for-designing-accessible-applications).  
   
- For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](../../../../docs/standard/globalization-localization/best-practices-for-developing-world-ready-apps.md).  
+ For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](../../../standard/globalization-localization/best-practices-for-developing-world-ready-apps.md).  
   
 ## Creating the Project  
  This walkthrough creates the user interface for an application that takes pizza orders. It consists of a <xref:System.Windows.Forms.TextBox> for the customer's name, a <xref:System.Windows.Forms.RadioButton> group to select the pizza size, a <xref:System.Windows.Forms.CheckedListBox> for selecting the toppings, two Button controls labeled Order and Cancel, and a Menu with an Exit command.  
@@ -40,7 +40,7 @@ Creating an accessible application has important business implications. Many gov
 ## Adding the Controls to the Form  
  When adding the controls to a form, keep in mind the following guidelines to make an accessible application:  
   
--   Set the <xref:System.Windows.Forms.Control.AccessibleDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleName%2A> properties. In this example, the Default setting for the <xref:System.Windows.Forms.Control.AccessibleRole%2A> is sufficient. For more information on the accessibility properties, see [Providing Accessibility Information for Controls on a Windows Form](../../../../docs/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form.md).  
+-   Set the <xref:System.Windows.Forms.Control.AccessibleDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleName%2A> properties. In this example, the Default setting for the <xref:System.Windows.Forms.Control.AccessibleRole%2A> is sufficient. For more information on the accessibility properties, see [Providing Accessibility Information for Controls on a Windows Form](../controls/providing-accessibility-information-for-controls-on-a-windows-form.md).  
   
 -   Set the font size to 10 points or larger.  
   
@@ -131,7 +131,7 @@ Creating an accessible application has important business implications. Many gov
     |MenuItem|Name|exitApp|  
     ||Text|E&xit|  
   
-     ![Pizza Order Form](../../../../docs/framework/winforms/advanced/media/vbpizzaorderform.gif "vbPizzaOrderForm")  
+     ![Pizza Order Form](media/vbpizzaorderform.gif "vbPizzaOrderForm")  
 Your form will look something like the following:  
   
 ## Supporting High Contrast Mode  
@@ -290,7 +290,7 @@ Your form will look something like the following:
   
 3.  Display a message box that acquires the keyboard focus. Avoid this method when the user may be typing.  
   
-4.  Display a status indicator in the status notification area of the taskbar. For details, see [Adding Application Icons to the TaskBar with the Windows Forms NotifyIcon Component](../../../../docs/framework/winforms/controls/app-icons-to-the-taskbar-with-wf-notifyicon.md).  
+4.  Display a status indicator in the status notification area of the taskbar. For details, see [Adding Application Icons to the TaskBar with the Windows Forms NotifyIcon Component](../controls/app-icons-to-the-taskbar-with-wf-notifyicon.md).  
   
 ## Testing the Application  
  Before deploying the application, you should test the accessibility features that you have implemented.  

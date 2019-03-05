@@ -57,4 +57,4 @@ It is very common for Windows-based applications to print text. The <xref:System
 ## See also
 - <xref:System.Drawing.Graphics>
 - <xref:System.Drawing.Brush>
-- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+- [Windows Forms Print Support](windows-forms-print-support.md)

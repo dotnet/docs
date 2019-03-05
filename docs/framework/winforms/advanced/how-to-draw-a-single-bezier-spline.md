@@ -17,7 +17,7 @@ A Bézier spline is defined by four points: a start point, two control points, a
   
  The following illustration shows the resulting Bézier spline along with its start point, control points, and endpoint. The illustration also shows the spline's convex hull, which is a polygon formed by connecting the four points with straight lines.  
   
- ![Bezier Spline](../../../../docs/framework/winforms/advanced/media/bezierspline1.png "BezierSpline1")  
+ ![Bezier Spline](media/bezierspline1.png "BezierSpline1")  
   
  [!code-csharp[System.Drawing.ConstructingDrawingCurves#31](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/CS/Class1.cs#31)]
  [!code-vb[System.Drawing.ConstructingDrawingCurves#31](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/VB/Class1.vb#31)]  
@@ -27,5 +27,5 @@ A Bézier spline is defined by four points: a start point, two control points, a
   
 ## See also
 - <xref:System.Drawing.Graphics.DrawBezier%2A>
-- [Bézier Splines in GDI+](../../../../docs/framework/winforms/advanced/bezier-splines-in-gdi.md)
-- [How to: Draw a Sequence of Bézier Splines](../../../../docs/framework/winforms/advanced/how-to-draw-a-sequence-of-bezier-splines.md)
+- [Bézier Splines in GDI+](bezier-splines-in-gdi.md)
+- [How to: Draw a Sequence of Bézier Splines](how-to-draw-a-sequence-of-bezier-splines.md)

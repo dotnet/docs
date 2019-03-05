@@ -17,7 +17,7 @@ If you are managing your own buffered graphics, you will need to be able to crea
   
 ### To manually display buffered graphics  
   
-1.  Obtain a reference to an instance of the <xref:System.Drawing.BufferedGraphicsContext> class. For more information, see [How to: Manually Manage Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-manage-buffered-graphics.md).  
+1.  Obtain a reference to an instance of the <xref:System.Drawing.BufferedGraphicsContext> class. For more information, see [How to: Manually Manage Buffered Graphics](how-to-manually-manage-buffered-graphics.md).  
   
 2.  Create an instance of the <xref:System.Drawing.BufferedGraphics> class by calling the <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method, as shown in the following code example.  
   
@@ -42,5 +42,5 @@ If you are managing your own buffered graphics, you will need to be able to crea
 ## See also
 - <xref:System.Drawing.BufferedGraphicsContext>
 - <xref:System.Drawing.BufferedGraphics>
-- [Double Buffered Graphics](../../../../docs/framework/winforms/advanced/double-buffered-graphics.md)
-- [How to: Manually Manage Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-manage-buffered-graphics.md)
+- [Double Buffered Graphics](double-buffered-graphics.md)
+- [How to: Manually Manage Buffered Graphics](how-to-manually-manage-buffered-graphics.md)

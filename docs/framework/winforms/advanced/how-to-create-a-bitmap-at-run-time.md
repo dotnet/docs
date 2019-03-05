@@ -23,4 +23,4 @@ This example creates and draws in a <xref:System.Drawing.Bitmap> object and disp
   
 ## See also
 - <xref:System.Drawing.Bitmap>
-- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)
+- [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)

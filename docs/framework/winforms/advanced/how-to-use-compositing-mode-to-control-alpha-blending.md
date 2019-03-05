@@ -28,7 +28,7 @@ There may be times when you want to create an off-screen bitmap that has the fol
   
  The following illustration shows the output of the code example. Note that the ellipses are blended with the background, but they are not blended with each other.  
   
- ![Source Copy](../../../../docs/framework/winforms/advanced/media/sourcecopy.png "sourcecopy")  
+ ![Source Copy](media/sourcecopy.png "sourcecopy")  
   
  The code example contains this statement:  
   
@@ -42,7 +42,7 @@ There may be times when you want to create an off-screen bitmap that has the fol
   
  The following illustration shows the output of the revised code.  
   
- ![Source Over](../../../../docs/framework/winforms/advanced/media/sourceover.png "sourceover")  
+ ![Source Over](media/sourceover.png "sourceover")  
   
  [!code-csharp[System.Drawing.AlphaBlending#43](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#43)]
  [!code-vb[System.Drawing.AlphaBlending#43](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#43)]  
@@ -52,4 +52,4 @@ There may be times when you want to create an off-screen bitmap that has the fol
   
 ## See also
 - <xref:System.Drawing.Color.FromArgb%2A>
-- [Alpha Blending Lines and Fills](../../../../docs/framework/winforms/advanced/alpha-blending-lines-and-fills.md)
+- [Alpha Blending Lines and Fills](alpha-blending-lines-and-fills.md)

@@ -23,5 +23,5 @@ To draw lines, you need a <xref:System.Drawing.Graphics> object and a <xref:Syst
   
 ## See also
 - <xref:System.Drawing.Pen>
-- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)
-- [Pens, Lines, and Rectangles in GDI+](../../../../docs/framework/winforms/advanced/pens-lines-and-rectangles-in-gdi.md)
+- [Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)
+- [Pens, Lines, and Rectangles in GDI+](pens-lines-and-rectangles-in-gdi.md)

@@ -30,5 +30,5 @@ To create a figure, construct a <xref:System.Drawing.Drawing2D.GraphicsPath>, an
   
 ## See also
 - <xref:System.Drawing.Drawing2D.GraphicsPath>
-- [Constructing and Drawing Paths](../../../../docs/framework/winforms/advanced/constructing-and-drawing-paths.md)
-- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)
+- [Constructing and Drawing Paths](constructing-and-drawing-paths.md)
+- [Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)

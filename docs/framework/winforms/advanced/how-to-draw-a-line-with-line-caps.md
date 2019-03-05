@@ -19,7 +19,7 @@ You can draw the start or end of a line in one of several shapes called line cap
   
  The following example draws a line with an arrowhead at one end and a round cap at the other end. The illustration shows the resulting line:  
   
- ![Pens](../../../../docs/framework/winforms/advanced/media/pens4.gif "pens4")  
+ ![Pens](media/pens4.gif "pens4")  
   
  [!code-csharp[System.Drawing.UsingAPen#71](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#71)]
  [!code-vb[System.Drawing.UsingAPen#71](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#71)]  
@@ -31,5 +31,5 @@ You can draw the start or end of a line in one of several shapes called line cap
 ## See also
 - <xref:System.Drawing.Pen?displayProperty=nameWithType>
 - <xref:System.Drawing.Drawing2D.LineCap?displayProperty=nameWithType>
-- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
-- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)
+- [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
+- [Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)

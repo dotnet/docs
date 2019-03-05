@@ -55,6 +55,6 @@ When you place a component on a Windows Form, two properties are provided by the
   
 ## See also
 - <xref:System.Windows.Forms.Button>
-- [Windows Forms Visual Inheritance](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)
-- [Walkthrough: Demonstrating Visual Inheritance](../../../../docs/framework/winforms/advanced/walkthrough-demonstrating-visual-inheritance.md)
-- [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)
+- [Windows Forms Visual Inheritance](windows-forms-visual-inheritance.md)
+- [Walkthrough: Demonstrating Visual Inheritance](walkthrough-demonstrating-visual-inheritance.md)
+- [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md)

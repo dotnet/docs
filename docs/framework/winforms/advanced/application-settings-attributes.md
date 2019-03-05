@@ -34,5 +34,5 @@ The Application Settings architecture provides many attributes that can be appli
 ## See also
 - <xref:System.Configuration.ApplicationSettingsBase>
 - <xref:System.Configuration.SettingsProvider>
-- [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)
+- [Application Settings Architecture](application-settings-architecture.md)
 - [How to: Create Application Settings](how-to-create-application-settings.md)

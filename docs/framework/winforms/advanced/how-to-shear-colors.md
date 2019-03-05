@@ -17,7 +17,7 @@ Shearing increases or decreases a color component by an amount proportional to a
   
  The following illustration shows the original image on the left and the sheared image on the right.  
   
- ![Shear Colors](../../../../docs/framework/winforms/advanced/media/colortrans6.png "colortrans6")  
+ ![Shear Colors](media/colortrans6.png "colortrans6")  
   
  The following table lists the color vectors for the four bars before and after the shearing transformation.  
   
@@ -37,5 +37,5 @@ Shearing increases or decreases a color component by an amount proportional to a
 ## See also
 - <xref:System.Drawing.Imaging.ColorMatrix>
 - <xref:System.Drawing.Imaging.ImageAttributes>
-- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
-- [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)
+- [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
+- [Recoloring Images](recoloring-images.md)

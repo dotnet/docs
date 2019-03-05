@@ -36,5 +36,5 @@ The following code example shows how to draw vertical text on a form by using th
 - <xref:System.Drawing.StringFormat.FormatFlags%2A>
 - <xref:System.Drawing.StringFormatFlags>
 - <xref:System.Windows.Forms.Control.OnPaint%2A>
-- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)
-- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)
+- [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)
+- [Using Fonts and Text](using-fonts-and-text.md)

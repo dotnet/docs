@@ -33,5 +33,5 @@ For more advanced double buffering scenarios, you can use the [!INCLUDE[dnprdnsh
   
 ## See also
 - <xref:System.Drawing.BufferedGraphicsContext>
-- [Double Buffered Graphics](../../../../docs/framework/winforms/advanced/double-buffered-graphics.md)
-- [How to: Manually Render Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-render-buffered-graphics.md)
+- [Double Buffered Graphics](double-buffered-graphics.md)
+- [How to: Manually Render Buffered Graphics](how-to-manually-render-buffered-graphics.md)

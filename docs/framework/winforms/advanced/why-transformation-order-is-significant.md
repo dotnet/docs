@@ -35,5 +35,5 @@ A single <xref:System.Drawing.Drawing2D.Matrix> object can store a single transf
   
 ## See also
 - <xref:System.Drawing.Drawing2D.Matrix>
-- [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)
-- [Using Transformations in Managed GDI+](../../../../docs/framework/winforms/advanced/using-transformations-in-managed-gdi.md)
+- [Coordinate Systems and Transformations](coordinate-systems-and-transformations.md)
+- [Using Transformations in Managed GDI+](using-transformations-in-managed-gdi.md)

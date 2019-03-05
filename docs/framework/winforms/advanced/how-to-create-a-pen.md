@@ -24,5 +24,5 @@ This example creates a <xref:System.Drawing.Pen> object.
   
 ## See also
 - <xref:System.Drawing.Pen>
-- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)
-- [Pens, Lines, and Rectangles in GDI+](../../../../docs/framework/winforms/advanced/pens-lines-and-rectangles-in-gdi.md)
+- [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)
+- [Pens, Lines, and Rectangles in GDI+](pens-lines-and-rectangles-in-gdi.md)

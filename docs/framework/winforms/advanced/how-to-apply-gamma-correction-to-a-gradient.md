@@ -17,7 +17,7 @@ You can enable gamma correction for a linear gradient brush by setting the brush
   
  The following illustration shows the two filled rectangles. The top rectangle, which does not have gamma correction, appears dark in the middle. The bottom rectangle, which has gamma correction, appears to have more uniform intensity.  
   
- ![Gradient](../../../../docs/framework/winforms/advanced/media/gammagradient1.png "gammagradient1")  
+ ![Gradient](media/gammagradient1.png "gammagradient1")  
   
  [!code-csharp[System.Drawing.UsingaGradientBrush#31](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#31)]
  [!code-vb[System.Drawing.UsingaGradientBrush#31](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#31)]  
@@ -27,4 +27,4 @@ You can enable gamma correction for a linear gradient brush by setting the brush
   
 ## See also
 - <xref:System.Drawing.Drawing2D.LinearGradientBrush>
-- [Using a Gradient Brush to Fill Shapes](../../../../docs/framework/winforms/advanced/using-a-gradient-brush-to-fill-shapes.md)
+- [Using a Gradient Brush to Fill Shapes](using-a-gradient-brush-to-fill-shapes.md)

@@ -30,7 +30,7 @@ This example draws a filled rectangle on a form.
 ## See also
 - <xref:System.Drawing.Graphics.FillRectangle%2A>
 - <xref:System.Windows.Forms.Control.OnPaint%2A>
-- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)
-- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
-- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)
-- [Brushes and Filled Shapes in GDI+](../../../../docs/framework/winforms/advanced/brushes-and-filled-shapes-in-gdi.md)
+- [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)
+- [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
+- [Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)
+- [Brushes and Filled Shapes in GDI+](brushes-and-filled-shapes-in-gdi.md)

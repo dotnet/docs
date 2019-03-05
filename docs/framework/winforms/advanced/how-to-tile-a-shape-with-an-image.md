@@ -20,11 +20,11 @@ Just as tiles can be placed next to each other to cover a floor, rectangular ima
   
 -   This example uses the following 75×75 image to tile a 200×200 rectangle.  
   
- ![Tile 1](../../../../docs/framework/winforms/advanced/media/tile1.gif "tile1")  
+ ![Tile 1](media/tile1.gif "tile1")  
   
 -   The following illustration shows how the rectangle is tiled with the image. Note that all tiles have the same orientation; there is no flipping.  
   
- ![Tile 2](../../../../docs/framework/winforms/advanced/media/tile2.gif "tile2")  
+ ![Tile 2](media/tile2.gif "tile2")  
   
  [!code-csharp[System.Drawing.UsingABrush#31](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingABrush/CS/Class1.cs#31)]
  [!code-vb[System.Drawing.UsingABrush#31](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingABrush/VB/Class1.vb#31)]  
@@ -33,7 +33,7 @@ Just as tiles can be placed next to each other to cover a floor, rectangular ima
   
 -   This example uses the same 75×75 image to fill a 200×200 rectangle. The wrap mode is set to flip the image horizontally. The following illustration shows how the rectangle is tiled with the image. Note that as you move from one tile to the next in a given row, the image is flipped horizontally.  
   
- ![Tile 3](../../../../docs/framework/winforms/advanced/media/tile3.gif "tile3")  
+ ![Tile 3](media/tile3.gif "tile3")  
   
  [!code-csharp[System.Drawing.UsingABrush#32](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingABrush/CS/Class1.cs#32)]
  [!code-vb[System.Drawing.UsingABrush#32](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingABrush/VB/Class1.vb#32)]  
@@ -49,10 +49,10 @@ Just as tiles can be placed next to each other to cover a floor, rectangular ima
   
 -   This example uses the same 75×75 image to tile a 200×200 rectangle. The wrap mode is set to flip the image both horizontally and vertically. The following illustration shows how the rectangle is tiled by the image. Note that as you move from one tile to the next in a given row, the image is flipped horizontally, and as you move from one tile to the next in a given column, the image is flipped vertically.  
   
- ![Tile 5](../../../../docs/framework/winforms/advanced/media/tile5.gif "tile5")  
+ ![Tile 5](media/tile5.gif "tile5")  
   
  [!code-csharp[System.Drawing.UsingABrush#34](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingABrush/CS/Class1.cs#34)]
  [!code-vb[System.Drawing.UsingABrush#34](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingABrush/VB/Class1.vb#34)]  
   
 ## See also
-- [Using a Brush to Fill Shapes](../../../../docs/framework/winforms/advanced/using-a-brush-to-fill-shapes.md)
+- [Using a Brush to Fill Shapes](using-a-brush-to-fill-shapes.md)

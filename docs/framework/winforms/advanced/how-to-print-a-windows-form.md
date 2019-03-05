@@ -33,5 +33,5 @@ As part of the development process, you typically will want to print a copy of y
   
 ## See also
 - <xref:System.Drawing.Printing.PrintDocument>
-- [How to: Render Images with GDI+](../../../../docs/framework/winforms/advanced/how-to-render-images-with-gdi.md)
-- [How to: Print Graphics in Windows Forms](../../../../docs/framework/winforms/advanced/how-to-print-graphics-in-windows-forms.md)
+- [How to: Render Images with GDI+](how-to-render-images-with-gdi.md)
+- [How to: Print Graphics in Windows Forms](how-to-print-graphics-in-windows-forms.md)

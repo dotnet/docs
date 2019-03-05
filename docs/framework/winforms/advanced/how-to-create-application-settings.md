@@ -20,7 +20,7 @@ Using managed code, you can create new application settings and bind them to pro
   
 1.  Add a new class to your project, and rename it. For this procedure, we will call this class `MyUserSettings`. Change the class definition so that the class derives from <xref:System.Configuration.ApplicationSettingsBase>.  
   
-2.  Define a property on this wrapper class for each application setting you require, and apply that property with either the <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>, depending on the scope of the setting. For more information about settings scope, see [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md). By now, your code should look like this:  
+2.  Define a property on this wrapper class for each application setting you require, and apply that property with either the <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>, depending on the scope of the setting. For more information about settings scope, see [Application Settings Overview](application-settings-overview.md). By now, your code should look like this:  
   
      [!code-csharp[ApplicationSettings.Create#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Create/CS/MyAppSettings.cs#1)]
      [!code-vb[ApplicationSettings.Create#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Create/VB/MyAppSettings.vb#1)]  
@@ -43,5 +43,5 @@ Using managed code, you can create new application settings and bind them to pro
 ## See also
 - <xref:System.Configuration.SpecialSettingAttribute>
 - <xref:System.Configuration.LocalFileSettingsProvider>
-- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)
-- [How to: Validate Application Settings](../../../../docs/framework/winforms/advanced/how-to-validate-application-settings.md)
+- [Application Settings Overview](application-settings-overview.md)
+- [How to: Validate Application Settings](how-to-validate-application-settings.md)

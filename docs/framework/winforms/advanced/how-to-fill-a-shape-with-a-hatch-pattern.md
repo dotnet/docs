@@ -30,7 +30,7 @@ A hatch pattern is made from two colors: one for the background and one for the 
   
  The following illustration shows the filled ellipse.  
   
- ![Hatch Pattern](../../../../docs/framework/winforms/advanced/media/hatch1.png "hatch1")  
+ ![Hatch Pattern](media/hatch1.png "hatch1")  
   
  [!code-csharp[System.Drawing.UsingABrush#41](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingABrush/CS/Class1.cs#41)]
  [!code-vb[System.Drawing.UsingABrush#41](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingABrush/VB/Class1.vb#41)]  
@@ -39,4 +39,4 @@ A hatch pattern is made from two colors: one for the background and one for the 
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
-- [Using a Brush to Fill Shapes](../../../../docs/framework/winforms/advanced/using-a-brush-to-fill-shapes.md)
+- [Using a Brush to Fill Shapes](using-a-brush-to-fill-shapes.md)

@@ -61,7 +61,7 @@ graphics.DrawEllipse(pen, 0, 150, 200, 100);
 ```  
   
 ### Transformations  
- A <xref:System.Drawing.Graphics> object maintains two transformations (world and page) that are applied to all items drawn by that <xref:System.Drawing.Graphics> object. Any affine transformation can be stored in the world transformation. Affine transformations include scaling, rotating, reflecting, skewing, and translating. The page transformation can be used for scaling and for changing units (for example, pixels to inches). For more information, see [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md).  
+ A <xref:System.Drawing.Graphics> object maintains two transformations (world and page) that are applied to all items drawn by that <xref:System.Drawing.Graphics> object. Any affine transformation can be stored in the world transformation. Affine transformations include scaling, rotating, reflecting, skewing, and translating. The page transformation can be used for scaling and for changing units (for example, pixels to inches). For more information, see [Coordinate Systems and Transformations](coordinate-systems-and-transformations.md).  
   
  The following example sets the world and page transformations of a <xref:System.Drawing.Graphics> object. The world transformation is set to a 30-degree rotation. The page transformation is set so that the coordinates passed to the second <xref:System.Drawing.Graphics.DrawEllipse%2A> will be treated as millimeters instead of pixels. The code makes two identical calls to the <xref:System.Drawing.Graphics.DrawEllipse%2A> method. The world transformation is applied to the first <xref:System.Drawing.Graphics.DrawEllipse%2A> call, and both transformations (world and page) are applied to the second <xref:System.Drawing.Graphics.DrawEllipse%2A> call.  
   
@@ -89,7 +89,7 @@ graphics.DrawEllipse(pen, 0, 0, 100, 50);
   
  The following illustration shows the two ellipses. Note that the 30-degree rotation is about the origin of the coordinate system (upper-left corner of the client area), not about the centers of the ellipses. Also note that the pen width of 1 means 1 pixel for the first ellipse and 1 millimeter for the second ellipse.  
   
- ![Ovals](../../../../docs/framework/winforms/advanced/media/csgraphicsascon1.png "csgraphicsascon1")  
+ ![Ovals](media/csgraphicsascon1.png "csgraphicsascon1")  
   
 ### Clipping Region  
  A <xref:System.Drawing.Graphics> object maintains a clipping region that applies to all items drawn by that <xref:System.Drawing.Graphics> object. You can set the clipping region by calling the <xref:System.Drawing.Graphics.SetClip%2A> method.  
@@ -142,8 +142,8 @@ graphics.DrawLine(pen, 40, 20, 190, 150);
   
  The following illustration shows the clipped lines.  
   
- ![Limited Clip Region](../../../../docs/framework/winforms/advanced/media/graphicsascon2.png "graphicsascon2")  
+ ![Limited Clip Region](media/graphicsascon2.png "graphicsascon2")  
   
 ## See also
-- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
-- [Using Nested Graphics Containers](../../../../docs/framework/winforms/advanced/using-nested-graphics-containers.md)
+- [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
+- [Using Nested Graphics Containers](using-nested-graphics-containers.md)

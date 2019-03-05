@@ -23,5 +23,5 @@ The purpose of hit testing is to determine whether the cursor is over a given ob
   
 ## See also
 - <xref:System.Drawing.Region>
-- [Regions in GDI+](../../../../docs/framework/winforms/advanced/regions-in-gdi.md)
-- [How to: Use Clipping with a Region](../../../../docs/framework/winforms/advanced/how-to-use-clipping-with-a-region.md)
+- [Regions in GDI+](regions-in-gdi.md)
+- [How to: Use Clipping with a Region](how-to-use-clipping-with-a-region.md)

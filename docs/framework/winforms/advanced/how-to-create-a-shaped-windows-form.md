@@ -40,4 +40,4 @@ This example gives a form an elliptical shape that resizes with the form.
 - <xref:System.Drawing>
 - <xref:System.Drawing.Drawing2D.GraphicsPath.AddEllipse%2A>
 - <xref:System.Windows.Forms.Control.Region%2A>
-- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)
+- [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)

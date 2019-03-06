@@ -31,7 +31,7 @@ HRESULT GetScope2(
 ) PURE;   
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of target assembly.  
   

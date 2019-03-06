@@ -31,7 +31,7 @@ HRESULT GetRealProcAddress (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwszProcName`  
  [in] The name of the function.  
   

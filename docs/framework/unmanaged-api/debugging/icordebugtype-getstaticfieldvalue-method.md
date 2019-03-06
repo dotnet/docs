@@ -31,7 +31,7 @@ HRESULT GetStaticFieldValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fieldDef`  
  [in] An `mdFieldDef` token that specifies the static field.  
   

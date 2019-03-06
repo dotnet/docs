@@ -12,7 +12,7 @@ The XML Serializer Generator creates an XML serialization assembly for types in 
 sgen [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Option|Description|  
 |------------|-----------------|  

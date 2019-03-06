@@ -32,7 +32,7 @@ HRESULT SetExportedTypeProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ct`  
  [in] The metadata token that specifies the `ExportedType` metadata structure to be modified.  
   

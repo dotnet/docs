@@ -31,7 +31,7 @@ HRESULT Get (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwIndex`  
  [in] The zero-based index of the assembly identity to return.  
   

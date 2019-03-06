@@ -15,7 +15,7 @@ Defines a type parameter name and description.
 <typeparam name="name">description</typeparam>  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  The name of the type parameter. Enclose the name in double quotation marks (" ").  
   

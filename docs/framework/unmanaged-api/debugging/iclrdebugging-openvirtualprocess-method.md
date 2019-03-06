@@ -35,7 +35,7 @@ HRESULT OpenVirtualProcess(
     [out] CLR_DEBUGGING_PROCESS_FLAGS * pdwFlags);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleBaseAddress`  
  [in] The base address of a module in the target process. COR_E_NOT_CLR will be returned if the specified module is not a CLR module.  
   

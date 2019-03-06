@@ -29,7 +29,7 @@ HRESULT CreateDomainSetup (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomainSetup`  
  [out] An interface pointer to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. This parameter is typed as `IUnknown`, so callers should generally call `QueryInterface` on this pointer to obtain an interface pointer of type `IAppDomainSetup`.  
   

@@ -36,7 +36,7 @@ HRESULT FindAssemblyModule(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szAppBase`  
  [in] Not used.  
   

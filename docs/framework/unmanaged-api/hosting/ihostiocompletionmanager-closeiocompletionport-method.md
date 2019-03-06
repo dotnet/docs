@@ -29,7 +29,7 @@ HRESULT CloseIoCompletionPort (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hPort`  
  [in] The handle of the port to close.  
   

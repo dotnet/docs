@@ -29,7 +29,7 @@ HRESULT SetMaxThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMaxIoCompletionThreads`  
  [in] The maximum number of threads to allot for I/O requests.  
   

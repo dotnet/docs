@@ -31,7 +31,7 @@ HRESULT GetName(
         length_is(*pcchName)] WCHAR szName[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] A `ULONG32` that indicates the size of the `szName` buffer.  
   

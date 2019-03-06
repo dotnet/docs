@@ -15,7 +15,7 @@ Indicates that the text is multiple lines of code.
 <code>content</code>  
 ```  
   
-#### Parameters  
+## Parameters  
  `content`  
  The text to mark as code.  
   

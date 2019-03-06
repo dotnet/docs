@@ -30,7 +30,7 @@ HRESULT EnumProcesses (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Type`  
  A value of the [COR_PUB_ENUMPROCESS](../../../../docs/framework/unmanaged-api/debugging/cor-pub-enumprocess-enumeration.md) enumeration that specifies the type of process to be retrieved. In the current version, only COR_PUB_MANAGEDONLY is valid.  
   

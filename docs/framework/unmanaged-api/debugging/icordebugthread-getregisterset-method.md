@@ -29,7 +29,7 @@ HRESULT GetRegisterSet (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRegisters`  
  [out] A pointer to the address of an [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) interface object that represents the register set for the active part of this thread.  
   

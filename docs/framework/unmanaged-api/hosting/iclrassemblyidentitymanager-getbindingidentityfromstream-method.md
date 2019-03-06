@@ -32,7 +32,7 @@ HRESULT GetBindingIdentityFromStream (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStream`  
  [in] The assembly stream to be evaluated.  
   

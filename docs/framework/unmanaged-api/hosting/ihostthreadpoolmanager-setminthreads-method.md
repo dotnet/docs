@@ -29,7 +29,7 @@ HRESULT SetMinThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `MinThreads`  
  [in] The new minimum number of threads that the host must maintain.  
   

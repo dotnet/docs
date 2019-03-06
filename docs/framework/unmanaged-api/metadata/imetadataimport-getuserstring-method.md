@@ -32,7 +32,7 @@ HRESULT GetUserString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `stk`  
  [in] The String token to return the associated string for.  
   

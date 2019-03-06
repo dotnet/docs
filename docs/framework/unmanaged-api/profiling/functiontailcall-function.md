@@ -31,7 +31,7 @@ void __stdcall FunctionTailcall (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcID`  
  [in] The identifier of the currently executing function that is about to make a tail call.  
   

@@ -30,9 +30,9 @@ HRESULT EndEnumInstances(
 );
 ```
 
-### Parameters
+## Parameters
 
-`handle`
+`handle`\
 [out] A handle for enumerating the instances.
 
 ## Remarks

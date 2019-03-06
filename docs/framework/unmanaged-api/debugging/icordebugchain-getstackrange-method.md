@@ -30,7 +30,7 @@ HRESULT GetStackRange (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStart`  
  [out] A pointer to a `CORDB_ADDRESS` value that is the starting address of the stack segment.  
   

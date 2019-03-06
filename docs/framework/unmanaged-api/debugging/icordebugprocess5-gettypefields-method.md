@@ -32,7 +32,7 @@ HRESULT GetTypeFields(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [in] The identifier of the type whose field information is retrieved.  
   

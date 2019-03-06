@@ -32,7 +32,7 @@ HRESULT StrongNameGetBlobFromImage (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbBase`  
  [in] The memory address of the mapped assembly manifest.  
   

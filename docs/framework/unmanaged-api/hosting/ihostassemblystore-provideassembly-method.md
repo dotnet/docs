@@ -33,7 +33,7 @@ HRESULT ProvideAssembly (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBindInfo`  
  [in] A pointer to an [AssemblyBindInfo](../../../../docs/framework/unmanaged-api/hosting/assemblybindinfo-structure.md) instance that the host uses to determine certain bind characteristics, including the presence or absence of any versioning policy, and which assembly to bind to.  
   

@@ -30,7 +30,7 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
                    [out, size_is(contextBufSize)] BYTE contextBuf[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `contextFlags`  
  [in] Flags that indicate the requested contents of the context buffer (defined in WinNT.h).  
   

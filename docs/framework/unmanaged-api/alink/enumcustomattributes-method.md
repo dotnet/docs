@@ -33,7 +33,7 @@ HRESULT EnumCustomAttributes(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  Handle of enumerator.  
   

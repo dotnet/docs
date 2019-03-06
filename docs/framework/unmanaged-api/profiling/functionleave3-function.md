@@ -26,7 +26,7 @@ Notifies the profiler that control is being returned from a function.
 void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionOrRemappedID`  
  [in] The identifier of the function from which control is returned.  
   

@@ -32,7 +32,7 @@ HRESULT DestroyICeeFileGen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ceeFileGen`  
  [in] The `ICeeFileGen` object to destroy.  
   

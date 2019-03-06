@@ -35,7 +35,7 @@ HRESULT GetMetaData(
       );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszImagePath`  
  [in] A null-terminated string that represents the full path to the file. If the full path is not available, the name and extension of the file (*filename*.*extension*).  
   

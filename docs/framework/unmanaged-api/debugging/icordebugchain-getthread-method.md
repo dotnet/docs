@@ -29,7 +29,7 @@ HRESULT GetThread (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppThread`  
  [out] A pointer to an ICorDebugThread object that represents the physical thread this call chain is part of.  
   

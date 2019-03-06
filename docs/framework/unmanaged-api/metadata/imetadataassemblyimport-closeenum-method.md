@@ -29,7 +29,7 @@ void CloseEnum (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The enumeration instance to be closed.  
   

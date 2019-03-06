@@ -29,7 +29,7 @@ HRESULT GetHandleFromThread(
     [out] HANDLE  *phThread);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The thread ID to be mapped.  
   

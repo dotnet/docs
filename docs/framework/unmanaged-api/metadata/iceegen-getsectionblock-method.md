@@ -34,7 +34,7 @@ HRESULT GetSectionBlock (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The section from which to retrieve a block of the code base.  
   

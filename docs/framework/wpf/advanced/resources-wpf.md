@@ -13,18 +13,18 @@ ms.assetid: 12ae4b67-cd0c-4c4d-a188-2c3de173bbb9
 A resource is an object that can be reused in different places in your application. WPF supports different types of resources. These resources are primarily two types of resources: XAML resources and resource data files. Examples of XAML resources include brushes and styles. Resource data files are non-executable data files that an application needs.  
   
 ## In This Section  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
- [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)  
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
+ [XAML Resources](xaml-resources.md)  
+ [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md)  
+ [Pack URIs in WPF](../app-development/pack-uris-in-wpf.md)  
   
 ## Reference  
  <xref:System.Windows.ResourceDictionary>  
   
- [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)  
+ [StaticResource Markup Extension](staticresource-markup-extension.md)  
   
- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)  
+ [DynamicResource Markup Extension](dynamicresource-markup-extension.md)  
   
- [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md)  
+ [x:Key Directive](../../xaml-services/x-key-directive.md)  
   
 ## Related Sections  
- [XAML in WPF](../../../../docs/framework/wpf/advanced/xaml-in-wpf.md)
+ [XAML in WPF](xaml-in-wpf.md)

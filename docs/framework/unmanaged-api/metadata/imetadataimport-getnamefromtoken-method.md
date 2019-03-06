@@ -30,7 +30,7 @@ HRESULT GetNameFromToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token representing the object to return the name for.  
   

@@ -29,7 +29,7 @@ HRESULT SetIP (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nOffset`  
  The offset location in the MSIL code.  
   

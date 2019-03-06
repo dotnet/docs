@@ -30,7 +30,7 @@ HRESULT SetAppDomainManager (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwAppDomainID`  
  [in] The numeric identifier of the selected <xref:System.AppDomain>.  
   

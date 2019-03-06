@@ -29,7 +29,7 @@ HRESULT SetHostControl(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pHostControl`  
  [in] An interface pointer to the host's implementation of [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md).  
   

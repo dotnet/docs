@@ -29,7 +29,7 @@ HRESULT DeleteFieldMarshal (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] An `mdFieldDef` or `mdParamDef` token that represents the field or parameter for which to delete the marshaling metadata signature.  
   

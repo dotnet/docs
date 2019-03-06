@@ -32,7 +32,7 @@ HRESULT GetTypeID(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `obj`  
  [in] The object address.  
   

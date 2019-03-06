@@ -32,7 +32,7 @@ HRESULT GetDescription (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The size of the string buffer that will store the description.  
   

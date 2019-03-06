@@ -29,7 +29,7 @@ HRESULT Unwrap (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppv`  
  [out] A pointer to the object to be unwrapped.  
   

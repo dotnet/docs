@@ -32,7 +32,7 @@ HRESULT OnSyncCallReturn
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `in_CallID`  
  [in] ID of the call being returned from. See [CALL_ID Structure](../../../../docs/framework/unmanaged-api/diagnostics/call-id-structure.md).  
   

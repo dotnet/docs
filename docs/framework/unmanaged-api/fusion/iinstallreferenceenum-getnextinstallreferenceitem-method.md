@@ -31,7 +31,7 @@ HRESULT GetNextInstallReferenceItem (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRefItem`  
  [out] The returned `IInstallReferenceItem` pointer.  
   

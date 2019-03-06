@@ -31,7 +31,7 @@ HRESULT GetPublicKeyToken(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszKeyFile`  
  Filename of the key.  
   

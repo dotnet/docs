@@ -30,7 +30,7 @@ typedef DWORD (__stdcall *LPTHREAD_START_ROUTINE) (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpThreadParameter`  
  [in] A pointer to the code that has started executing.  
   

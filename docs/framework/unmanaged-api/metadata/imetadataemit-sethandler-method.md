@@ -29,7 +29,7 @@ HRESULT SetHandler (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pUnk`  
  [in] The handler to register.  
   

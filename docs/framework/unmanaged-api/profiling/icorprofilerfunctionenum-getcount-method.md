@@ -27,7 +27,7 @@ Gets the number of functions that were loaded by the application or forcibly loa
 HRESULT GetCount([out] ULONG * pcelt);  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [out] The number of functions that were loaded.  
   

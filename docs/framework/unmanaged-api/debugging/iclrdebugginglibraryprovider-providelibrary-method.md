@@ -31,7 +31,7 @@ HRESULT ProvideLibrary(
      [out] HMODULE* hModule);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwszFilename`  
  [in] The name of the module being requested.  
   

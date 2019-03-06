@@ -31,7 +31,7 @@ HRESULT DefineTypeRefByName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkResolutionScope`  
  [in] The token specifying the resolution scope. The following token types are valid:  
   

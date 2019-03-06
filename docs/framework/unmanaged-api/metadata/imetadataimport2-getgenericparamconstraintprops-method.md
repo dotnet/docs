@@ -31,7 +31,7 @@ HRESULT GetGenericParamConstraintProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `gpc`  
  [in] The token to the generic parameter constraint for which to return the metadata.  
   

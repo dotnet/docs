@@ -31,7 +31,7 @@ HRESULT IsArrayClass(
     [out] ULONG          *pcRank);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class to be examined.  
   

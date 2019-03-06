@@ -15,7 +15,7 @@ Specifies a remarks section for the member.
 <remarks>description</remarks>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A description of the member.  
   

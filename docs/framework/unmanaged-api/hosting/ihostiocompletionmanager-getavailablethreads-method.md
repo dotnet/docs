@@ -29,7 +29,7 @@ HRESULT GetAvailableThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwAvailableIoCompletionThreads`  
  [out] A pointer to the number of I/O completion threads managed by the host that are currently available to service requests.  
   

@@ -17,7 +17,7 @@ HRESULT GetObjectForCCW(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ccwPointer`  
  [in] A COM callable wrapper (CCW) pointer.  
   

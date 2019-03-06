@@ -20,7 +20,7 @@ HRESULT GetStaticFieldSymbols(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbSignature`  
  [in] The number of bytes in the `typeSig` array.  
   

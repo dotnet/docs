@@ -31,7 +31,7 @@ HRESULT CLRCreateInstance(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `clsid`  
  [in] One of three class identifiers: CLSID_CLRMetaHost, CLSID_CLRMetaHostPolicy, or CLSID_CLRDebugging.  
   

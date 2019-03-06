@@ -34,7 +34,7 @@ HRESULT CALLBACK _EFN_StackTrace(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] The client being debugged.  
   

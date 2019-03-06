@@ -29,7 +29,7 @@ HRESULT GetActiveFrame (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFrame`  
  [out] A pointer to the address of an ICorDebugFrame interface object that represents a frame.  
   

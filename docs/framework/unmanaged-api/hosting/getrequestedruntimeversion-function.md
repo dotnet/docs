@@ -34,7 +34,7 @@ HRESULT GetRequestedRuntimeVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pExe`  
  [in] The name of the application.  
   

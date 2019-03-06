@@ -16,12 +16,12 @@ An <xref:System.Windows.Controls.Expander> allows a user to view a header and ex
   
  The following illustration provides an example of this control in its expanded position.  
   
- ![Expander example](../../../../docs/framework/wpf/controls/media/expanderexample.JPG "ExpanderExample")  
+ ![Expander example](./media/expanderexample.JPG "ExpanderExample")  
 Expander control  
   
 ## In This Section  
- [Expander Overview](../../../../docs/framework/wpf/controls/expander-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/expander-how-to-topics.md)  
+ [Expander Overview](expander-overview.md)  
+ [How-to Topics](expander-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Expander>  

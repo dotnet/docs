@@ -30,7 +30,7 @@ HRESULT GetPEKind (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwPEKind`  
  [out] A pointer to a value of the [CorPEKind](../../../../docs/framework/unmanaged-api/metadata/corpekind-enumeration.md) enumeration that describes the PE file.  
   

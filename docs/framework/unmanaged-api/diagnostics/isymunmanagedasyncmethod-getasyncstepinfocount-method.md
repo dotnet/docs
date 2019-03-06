@@ -14,7 +14,7 @@ See [DefineAsyncStepInfo Method](../../../../docs/framework/unmanaged-api/diagno
 HRESULT GetAsyncStepInfoCount(    [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  

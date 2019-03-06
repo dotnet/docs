@@ -27,7 +27,7 @@ HRESULT DynamicMethodJITCompilationStarted(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
 [in] `functionId`  
 The identifier of the in-memory function for which JIT compilation is started.   
 

@@ -34,7 +34,7 @@ STDAPI CompareAssemblyIdentity (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyIdentity1`  
  [in] The textual identity of the first assembly in the comparison.  
   

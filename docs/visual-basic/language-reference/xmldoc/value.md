@@ -15,7 +15,7 @@ Specifies the description of a property.
 <value>property-description</value>  
 ```  
   
-#### Parameters  
+## Parameters  
  `property-description`  
  A description for the property.  
   

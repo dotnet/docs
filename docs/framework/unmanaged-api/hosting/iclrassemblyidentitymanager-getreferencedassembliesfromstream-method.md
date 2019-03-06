@@ -32,7 +32,7 @@ HRESULT GetReferencedAssembliesFromStream (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStream`  
  [in] An interface pointer to an `IStream` containing the assembly to be evaluated.  
   

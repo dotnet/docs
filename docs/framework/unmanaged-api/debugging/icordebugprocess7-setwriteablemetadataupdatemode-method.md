@@ -28,7 +28,7 @@ HRESULT SetWriteableMetadataUpdateMode(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `flags`  
  A [WriteableMetadataUpdateMode](../../../../docs/framework/unmanaged-api/debugging/writeablemetadataupdatemode-enumeration.md) enumeration value that specifies whether in-memory updates to metadata in the target process are visible (`WriteableMetadataUpdateMode::AlwaysShowUpdates`) or not visible (`WriteableMetadataUpdateMode::LegacyCompatPolicy`) to the debugger.  
   

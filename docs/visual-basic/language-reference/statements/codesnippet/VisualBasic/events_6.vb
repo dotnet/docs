@@ -1,1 +1,0 @@
-        RemoveHandler Obj.XEvent, AddressOf Me.XEventHandler

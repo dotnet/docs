@@ -34,7 +34,7 @@ HRESULT GetVersionFromProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hProcess`  
  [in] A handle to a process.  
   

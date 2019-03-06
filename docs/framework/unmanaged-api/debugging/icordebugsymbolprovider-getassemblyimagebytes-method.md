@@ -18,7 +18,7 @@ HRESULT GetAssemblyImageBytes(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `rva`  
  [in] A relative virtual address (RVA) in a merged assembly.  
   

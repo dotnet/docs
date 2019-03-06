@@ -37,7 +37,7 @@ HRESULT DefineEvent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The token for the target class or interface. This is either a `mdTypeDef` or `mdTypeDefNil` token.  
   

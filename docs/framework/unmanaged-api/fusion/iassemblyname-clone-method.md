@@ -29,7 +29,7 @@ HRESULT Clone (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pName`  
  [out] The returned copy of this `IAssemblyName` object.  
   

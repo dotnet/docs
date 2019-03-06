@@ -29,7 +29,7 @@ HRESULT SwitchOutLogicalThreadState(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFiberCookie`  
  [out] Cookie that indicates the fiber being switched out.  
   

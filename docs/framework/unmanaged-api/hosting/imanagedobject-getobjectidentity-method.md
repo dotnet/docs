@@ -31,7 +31,7 @@ HRESULT GetObjectIdentity (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBSTRGUID`  
  [out] A pointer to the GUID of the process in which the object resides.  
   

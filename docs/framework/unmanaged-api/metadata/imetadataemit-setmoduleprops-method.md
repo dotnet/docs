@@ -29,7 +29,7 @@ HRESULT SetModuleProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The module name in Unicode. This is the file name only and not the full path name.  
   

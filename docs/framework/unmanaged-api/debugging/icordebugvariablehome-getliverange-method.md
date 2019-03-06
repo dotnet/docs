@@ -30,7 +30,7 @@ HRESULT GetLiveRange(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStartOffset`  
  [out] The logical offset at which the variable is first live.  
   

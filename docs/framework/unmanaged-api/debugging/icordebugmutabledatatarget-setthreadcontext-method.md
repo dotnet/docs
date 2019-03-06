@@ -16,7 +16,7 @@ HRESULT SetThreadContext(
    [in] ULONG32 contextSize,   [in, size_is(contextSize)] const BYTE * pContext);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwThreadID`  
  [in] The operating system-defined thread identifier.  
   

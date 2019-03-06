@@ -1,8 +1,6 @@
 ---
 title: What is managed code?
 description: Learn how managed code is code whose execution is managed by a runtime, the Common Language Runtime (CLR).
-author: blackdwarf
-ms.author: mairaw
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 20bb7ea8-192e-4a96-8ef3-e10e1950fd3d

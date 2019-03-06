@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Scroll Item control pattern"
   - "Scroll Item control pattern"
 ms.assetid: 903bab5c-80c1-44d7-bdc2-0a418893b987
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation ScrollItem Control Pattern
 > [!NOTE]

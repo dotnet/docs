@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation, control types"
   - "control types, UI Automation"
 ms.assetid: 75159ef8-bd43-4d13-acb7-1f1fe9253160
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Control Types Overview
 > [!NOTE]

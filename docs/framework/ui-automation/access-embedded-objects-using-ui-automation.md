@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "accessing embedded objects"
   - "UI Automation, accessing embedded objects"
 ms.assetid: a5b513ec-7fa6-4460-869f-c18ff04f7cf2
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Access Embedded Objects Using UI Automation
 > [!NOTE]

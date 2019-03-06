@@ -6,7 +6,7 @@ ms.assetid: 593c4e9d-8a49-4e12-8257-cee5e6b4c075
 
 # How to: Create a Custom Instance Store
 
-[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] contains <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, an instance store that uses SQL Server to persist workflow data. If your application is required to persist workflow data to another medium, such as a different database or a file system, you can implement a custom instance store. A custom instance store is created by extending the abstract <xref:System.Runtime.DurableInstancing.InstanceStore> class and implementing the methods that are required for the implementation. For a complete implementation of a custom instance store, see the [Corporate Purchase Process](../../../docs/framework/windows-workflow-foundation/samples/corporate-purchase-process.md) sample.
+[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] contains <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, an instance store that uses SQL Server to persist workflow data. If your application is required to persist workflow data to another medium, such as a different database or a file system, you can implement a custom instance store. A custom instance store is created by extending the abstract <xref:System.Runtime.DurableInstancing.InstanceStore> class and implementing the methods that are required for the implementation. For a complete implementation of a custom instance store, see the [Corporate Purchase Process](samples/corporate-purchase-process.md) sample.
 
 ## Implementing the BeginTryCommand method
 
@@ -221,11 +221,11 @@ The <xref:System.Runtime.DurableInstancing.InstanceStore.BeginTryCommand%2A> is 
 
 ## Using a custom instance store
 
-To implement a custom instance store, assign an instance of the instance store to the <xref:System.Activities.WorkflowApplication.InstanceStore%2A>, and implement the <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> method. See the [How to: Create and Run a Long Running Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md) tutorial for specifics.
+To implement a custom instance store, assign an instance of the instance store to the <xref:System.Activities.WorkflowApplication.InstanceStore%2A>, and implement the <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> method. See the [How to: Create and Run a Long Running Workflow](how-to-create-and-run-a-long-running-workflow.md) tutorial for specifics.
 
 ## A sample instance store
 
-The following code sample is a complete instance store implementation, taken from the [Corporate Purchase Process](../../../docs/framework/windows-workflow-foundation/samples/corporate-purchase-process.md) sample. This instance store persists workflow data to a file using XML.
+The following code sample is a complete instance store implementation, taken from the [Corporate Purchase Process](samples/corporate-purchase-process.md) sample. This instance store persists workflow data to a file using XML.
 
 ```csharp
 using System;

@@ -94,13 +94,13 @@ Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1
 
 ## Next steps
 
-For instructions on how to create a workflow by using these activities, see the next step in the tutorial, [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md).
+For instructions on how to create a workflow by using these activities, see the next step in the tutorial, [How to: Create a Workflow](how-to-create-a-workflow.md).
 
 ## See also
 
 - <xref:System.Activities.CodeActivity>
 - <xref:System.Activities.NativeActivity%601>
-- [Designing and Implementing Custom Activities](../../../docs/framework/windows-workflow-foundation/designing-and-implementing-custom-activities.md)
-- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)
-- [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md)
-- [Using the ExpressionTextBox in a Custom Activity Designer](../../../docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)
+- [Designing and Implementing Custom Activities](designing-and-implementing-custom-activities.md)
+- [Getting Started Tutorial](getting-started-tutorial.md)
+- [How to: Create a Workflow](how-to-create-a-workflow.md)
+- [Using the ExpressionTextBox in a Custom Activity Designer](samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)

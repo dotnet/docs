@@ -7,4 +7,4 @@
 ## [C# preprocessor directives](preprocessor-directives/)
 ## [C# compiler options](compiler-options/)
 ## [C# compiler errors](compiler-messages/)
-## [C# language specification and proposals](language-specification/)
+## [C# language specification and proposals](language-specification-proposals/)

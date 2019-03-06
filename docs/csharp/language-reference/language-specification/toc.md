@@ -24,4 +24,4 @@
 ## [out variable declarations](../../../../_csharplang/proposals/csharp-7.0/out-var.md)
 ## [throw expressions](../../../../_csharplang/proposals/csharp-7.0/throw-expression.md)
 ## [binary literals](../../../../_csharplang/proposals/csharp-7.0/binary-literals.md)
-## [digit separators](../../../../_csharplang/proposals/csharp-7.0/digit-separators.md)
+## [Digit separators](../../../../_csharplang/proposals/csharp-7.0/digit-separators.md)

@@ -170,7 +170,7 @@ public static (IDataView trainSet, IDataView testSet) LoadData(MLContext mlConte
 ```
 ## Load the data
 
-Since your previously created `SentimentData` data model type matches the dataset schema, you can combine the initialization, mapping, and dataset loading into one line of code using the `MLContext.Data.ReadFromTextFile` wrapper for <xref:Microsoft.ML.TextLoaderSaverCatalog.ReadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Boolean,System.Char,System.Boolean,System.Boolean,System.Boolean%29>. It returns a
+Since your previously created `SentimentData` data model type matches the dataset schema, you can combine the initialization, mapping, and dataset loading into one line of code using the `MLContext.Data.ReadFromTextFile` wrapper for <xref:Microsoft.ML.TextLoaderSaverCatalog.ReadFromTextFile%60%601%2A>. It returns a
 <xref:Microsoft.Data.DataView.IDataView>. 
 
  As the input and output of `Transforms`, a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
@@ -274,7 +274,7 @@ The `Evaluate` method executes the following tasks:
 
 Add a call to the new method from the `Main` method, right under the `Train` method call, using the following code:
 
-[!code-csharp[CallEvaluate](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#11 "Call the Evaluate method")]
+[!code-csharp[CallEvaluate](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallEvaluate "Call the Evaluate method")]
 
 Next, you'll use the machine learning `model` parameter (a transformer) and the `splitTestSet` parameter to input the features and return predictions. Add the following code to the `Evaluate` method as the next line:
 

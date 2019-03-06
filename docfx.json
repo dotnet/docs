@@ -29,8 +29,7 @@
         "dest": "csharp/language-reference/language-specification",
         "exclude": [
           "README.md",
-          "LICENSE.md",
-          "**/includes/**"
+          "LICENSE.md"
         ]
       },
       {
@@ -40,31 +39,17 @@
         "src": "_csharplang/proposals",
         "dest": "csharp/language-reference/proposals",
         "exclude": [
-          "README.md",
+          "**/README.md",
           "LICENSE.md",
-          "proposal-template.md",
-
-          "caller-argument-expression.md",
-          "covariant-returns.md",
-          "declaration-expressions.md",
-          "default-interface-methods.md",
-          "fixed-sized-buffers.md",
-          "function-pointers.md",
-          "intptr-operators.md",
-          "intrinsics.md",
-          "lambda-attributes.md",
-          "null-arg-checking.md",
-          "null-conditional-await.md",
-          "nullable-enhanced-common-type.md",
-          "readonly-instance-members.md",
-          "readonly_locals.md",
-          "skip-localsinit.md",
-          "static-delegates.md",
-          "target-typed-new.md",
-          
-          "**/includes/**",
-          "**/inactive/**",
-          "**/rejected/**"
+          "*.md",
+          "!records.md",
+          "inactive/**",
+          "rejected/**",
+          "csharp-7.1/*.md",
+          "csharp-7.2/*.md",
+          "csharp-7.3/*.md",
+          "csharp-8.0/*.md",
+          "!csharp-8.0/patterns.md"
         ]
       },
       {

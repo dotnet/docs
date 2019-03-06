@@ -18,10 +18,10 @@
 ## [Attributes](../../../../_csharplang/spec/attributes.md)
 ## [Unsafe code](../../../../_csharplang/spec/unsafe-code.md)
 ## [Documentation comments](../../../../_csharplang/spec/documentation-comments.md)
-# C# 7.0 language proposals 
+# [C# 7.0 language proposals] 
 ## [Pattern matching](../../../../_csharplang/proposals/csharp-7.0/pattern-matching.md)
 ## [Local functions](../../../../_csharplang/proposals/csharp-7.0/local-functions.md)
-## [out variable declarations](../../../../_csharplang/proposals/csharp-7.0/out-var.md)
-## [throw expressions](../../../../_csharplang/proposals/csharp-7.0/throw-expression.md)
-## [binary literals](../../../../_csharplang/proposals/csharp-7.0/binary-literals.md)
+## [Out variable declarations](../../../../_csharplang/proposals/csharp-7.0/out-var.md)
+## [Throw expressions](../../../../_csharplang/proposals/csharp-7.0/throw-expression.md)
+## [Binary literals](../../../../_csharplang/proposals/csharp-7.0/binary-literals.md)
 ## [Digit separators](../../../../_csharplang/proposals/csharp-7.0/digit-separators.md)

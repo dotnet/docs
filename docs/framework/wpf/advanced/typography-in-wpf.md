@@ -165,4 +165,4 @@ Interaction between application and TextFormatter
 - [Drawing Formatted Text](drawing-formatted-text.md)
 - [Advanced Text Formatting](advanced-text-formatting.md)
 - [Text](optimizing-performance-text.md)
-- [Microsoft Typography](https://www.microsoft.com/typography/default.mspx)
+- [Microsoft Typography](https://docs.microsoft.com/typography/)

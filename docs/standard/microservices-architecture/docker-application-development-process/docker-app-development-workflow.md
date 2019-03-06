@@ -122,7 +122,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
   *<https://devblogs.microsoft.com/dotnet/staying-up-to-date-with-net-container-images/>*
 
 - **Using .NET and Docker Together - DockerCon 2018 Update** \
-  [*https://devblogs.microsoft.com/dotnet/using-net-and-docker-together-dockercon-2018-update/*](https://devblogs.microsoft.com/dotnet/using-net-and-docker-together-dockercon-2018-update/)
+  *<https://devblogs.microsoft.com/dotnet/using-net-and-docker-together-dockercon-2018-update/>*
 
 ### Using multi-arch image repositories
 

@@ -34,3 +34,8 @@
 ### [Throw expressions](../../../_csharplang/proposals/csharp-7.0/throw-expression.md)
 ### [Binary literals](../../../_csharplang/proposals/csharp-7.0/binary-literals.md)
 ### [Digit separators](../../../_csharplang/proposals/csharp-7.0/digit-separators.md)
+## C# 7.1 language proposals
+### [Async main method](../../../_csharplang/proposals/csharp-7.1/async-main.md)
+### [Default expressions](../../../_csharplang/proposals/csharp-7.1/target-typed-default.md)
+### [Infer tuple names](../../../_csharplang/proposals/csharp-7.1/infer-tuple-names.md)
+### [Pattern matching with generics](../../../_csharplang/proposals/csharp-7.1/generics-pattern-match.md)

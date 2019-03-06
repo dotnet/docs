@@ -29,7 +29,7 @@ HRESULT GetUserStringHeapSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbBlobs`  
  [out] A pointer to the size, in bytes, of the user string heap.  
   

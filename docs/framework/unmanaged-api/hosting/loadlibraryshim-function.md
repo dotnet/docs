@@ -34,7 +34,7 @@ HRESULT LoadLibraryShim (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szDllName`  
  [in] A zero-terminated string that represents the name of the DLL to be loaded from the .NET Framework library.  
   

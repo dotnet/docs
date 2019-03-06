@@ -34,7 +34,7 @@ HRESULT ImportFileEx(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFilename`  
  Fully qualified name of file from which to import.  
   

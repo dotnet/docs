@@ -28,7 +28,7 @@ HRESULT SetEnableCustomNotification(ICorDebugClass * pClass,
                                     BOOL fEnable);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pClass`  
  [in] The type that specifies custom debugger notifications.  
   

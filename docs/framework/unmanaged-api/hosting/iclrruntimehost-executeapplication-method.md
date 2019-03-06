@@ -34,7 +34,7 @@ HRESULT ExecuteApplication(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAppFullName`  
  [in] The full name of the application, as defined for <xref:System.ApplicationIdentity>.  
   

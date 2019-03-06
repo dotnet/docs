@@ -30,7 +30,7 @@ HRESULT GetObject(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `addr`  
  [in] The object address.  
   

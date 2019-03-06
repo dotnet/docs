@@ -29,7 +29,7 @@ HRESULT DeleteToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkObj`  
  [in] The token to be deleted.  
   

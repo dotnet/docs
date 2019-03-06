@@ -27,7 +27,7 @@ Gets the number of managed modules that were loaded into the application.
 HRESULT GetCount([out] ULONG * pcelt);  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [out] The number of runtime modules in the collection.  
   

@@ -1,7 +1,6 @@
 ---
 title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
-author: blackdwarf
 ms.date: 09/22/2017
 ---
 # Additions to the csproj format for .NET Core
@@ -39,11 +38,14 @@ The main reason for doing this is to reduce the clutter in your project file. Th
 
 The following table shows which element and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are both included and excluded in the SDK: 
 
-| Element          	| Include glob                           	| Exclude glob                                     	            | Remove glob             	 |
+| Element          	| Include glob                           	  | Exclude glob                                     	            | Remove glob             	 |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|----------------------------|
 | Compile          	| \*\*/\*.cs (or other language extensions) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc 	| N/A                     	 |
 | EmbeddedResource 	| \*\*/\*.resx                             	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | N/A                     	 |
-| None             	| \*\*/\*                                  	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | - \*\*/\*.cs; \*\*/\*.resx |
+| None             	| \*\*/\*                                  	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx   |
+
+> [!NOTE]
+> **Exclude glob** always excludes the `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, respectively. As a whole, all excludes are represented by `$(DefaultItemExcludes)`.
 
 If you have globs in your project and you try to build it using the newest SDK, you'll get the following error:
 

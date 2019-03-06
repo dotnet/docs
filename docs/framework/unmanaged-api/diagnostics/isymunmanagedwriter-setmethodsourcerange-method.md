@@ -33,7 +33,7 @@ HRESULT SetMethodSourceRange(
     [in] ULONG32                      endColumn);  
 ```  
   
-#### Parameters  
+## Parameters  
  `startDoc`  
  [in] A pointer to the document containing the starting position.  
   

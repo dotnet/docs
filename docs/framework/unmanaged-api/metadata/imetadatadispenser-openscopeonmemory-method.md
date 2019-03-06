@@ -33,7 +33,7 @@ HRESULT OpenScopeOnMemory (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pData`  
  [in] A pointer that specifies the starting address of the memory area.  
   

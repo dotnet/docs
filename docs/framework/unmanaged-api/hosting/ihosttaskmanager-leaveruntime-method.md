@@ -32,7 +32,7 @@ HRESULT LeaveRuntime (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `target`  
  [in] The address within the mapped portable executable file of the unmanaged function to be called.  
   

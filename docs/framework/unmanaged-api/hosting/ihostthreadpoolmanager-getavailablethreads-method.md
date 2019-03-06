@@ -29,7 +29,7 @@ HRESULT GetAvailableThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwAvailableWorkerThreads`  
  [out] Pointer to the number of threads in the thread pool that are not currently processing work items.  
   

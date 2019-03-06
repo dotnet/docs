@@ -30,7 +30,7 @@ HRESULT OpenScope(
     [in] ULONG32  endOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `scopeId`  
  [in] The scope identifier for the scope.  
   

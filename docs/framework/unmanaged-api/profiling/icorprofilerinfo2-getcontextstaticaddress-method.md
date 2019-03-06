@@ -31,7 +31,7 @@ HRESULT GetContextStaticAddress(
     [out] void **ppAddress);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class that contains the requested context-static field.  
   

@@ -18,7 +18,7 @@ HRESULT GetCulture(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchCulture`  
  [in] The number of characters in the `szCulture` buffer.  
   

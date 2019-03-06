@@ -29,7 +29,7 @@ HRESULT SetUnhandledExceptionPolicy (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `policy`  
  [in] One of the [EClrUnhandledException](../../../../docs/framework/unmanaged-api/hosting/eclrunhandledexception-enumeration.md) values, indicating whether the behavior is set by the CLR or the host.  
   

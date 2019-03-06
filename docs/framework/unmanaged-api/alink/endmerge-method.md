@@ -29,7 +29,7 @@ HRESULT EndMerge(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   

@@ -28,7 +28,7 @@ HRESULT GetCount (    [out] ULONG * pcelt
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [out] The number of threads used by the application.  
   

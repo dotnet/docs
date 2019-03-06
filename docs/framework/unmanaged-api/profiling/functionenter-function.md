@@ -31,7 +31,7 @@ void __stdcall FunctionEnter (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcID`  
  [in] The identifier of the function to which control is passed.  
   

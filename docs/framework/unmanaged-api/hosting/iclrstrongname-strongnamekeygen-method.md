@@ -32,7 +32,7 @@ HRESULT StrongNameKeyGen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszKeyContainer`  
  [in] The requested key container name. `wszKeyContainer` must either be a non-empty string or null to generate a temporary name.  
   

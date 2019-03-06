@@ -31,7 +31,7 @@ HRESULT GetInterfaceImplProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `iiImpl`  
  [in] The metadata token representing the method to return the class and interface tokens for.  
   

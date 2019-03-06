@@ -31,7 +31,7 @@ HRESULT CreateAssemblyCache (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAsmCache`  
  [out] The returned `IAssemblyCache` pointer.  
   

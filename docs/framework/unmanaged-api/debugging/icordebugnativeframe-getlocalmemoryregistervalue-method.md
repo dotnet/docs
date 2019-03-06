@@ -33,7 +33,7 @@ HRESULT GetLocalMemoryRegisterValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `highWordAddress`  
  [in] A `CORDB_ADDRESS` value that specifies the memory location containing the high word of the value.  
   

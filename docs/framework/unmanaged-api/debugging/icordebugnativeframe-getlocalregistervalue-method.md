@@ -32,7 +32,7 @@ HRESULT GetLocalRegisterValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `reg`  
  [in] A value of the "CorDebugRegister" enumeration that specifies the register containing the value.  
   

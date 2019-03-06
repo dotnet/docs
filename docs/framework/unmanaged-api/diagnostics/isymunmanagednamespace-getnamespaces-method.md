@@ -31,7 +31,7 @@ HRESULT GetNamespaces(
         ISymUnmanagedNamespace* namespaces[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cNameSpaces`  
  [in] A `ULONG32` that indicates the size of the `namespaces` array.  
   

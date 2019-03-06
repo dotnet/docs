@@ -30,7 +30,7 @@ HRESULT SaveToMemory (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbData`  
  [out] The address at which to begin writing metadata.  
   

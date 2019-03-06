@@ -31,7 +31,7 @@ HRESULT StepRange (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bStepIn`  
  [in] Set to `true` to step into a function that is called within the thread. Set to `false` to step over the function.  
   

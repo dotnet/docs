@@ -16,7 +16,7 @@ HRESULT MarkDebuggerAttached(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fIsAttached`  
  `true` if the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method should indicate that a debugger is attached; `false` otherwise.  
   

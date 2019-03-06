@@ -29,7 +29,7 @@ HRESULT EnumerateThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppThreads`  
  [out] A pointer to the address of an "ICorDebugThreadEnum" object that represents an enumerator for all managed threads that are active in the process.  
   

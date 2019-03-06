@@ -29,7 +29,7 @@ HRESULT GetProcessID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pid`  
  [out] A pointer to the identifier of the process represented by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) object.  
   

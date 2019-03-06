@@ -29,7 +29,7 @@ HRESULT RemotingClientReceivingReply(
     [in] BOOL fIsAsync);   
 ```  
   
-#### Parameters  
+## Parameters  
  `pCookie`  
  [in] A value that will correspond with the value provided in [ICorProfilerCallback::RemotingServerSendingReply](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-remotingserversendingreply-method.md) under these conditions:  
   

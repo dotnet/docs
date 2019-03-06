@@ -33,7 +33,7 @@ HRESULT ExecuteInDefaultAppDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyPath`  
  [in] The path to the <xref:System.Reflection.Assembly> that defines the <xref:System.Type> whose method is to be invoked.  
   

@@ -30,7 +30,7 @@ HRESULT GetSaveSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fSave`  
  [in] A value of the [CorSaveSize](../../../../docs/framework/unmanaged-api/metadata/corsavesize-enumeration.md) enumeration that specifies whether to get an accurate or approximate size. Only three values are valid: cssAccurate, cssQuick, and cssDiscardTransientCAs:  
   

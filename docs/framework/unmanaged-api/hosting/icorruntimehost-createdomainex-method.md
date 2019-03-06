@@ -32,7 +32,7 @@ HRESULT CreateDomainEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFriendlyName`  
  [in] An optional parameter used to give a friendly name to the domain. This friendly name can be displayed in user interfaces such as debuggers to identify the domain.  
   

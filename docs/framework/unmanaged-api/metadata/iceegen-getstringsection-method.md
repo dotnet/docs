@@ -31,7 +31,7 @@ HRESULT GetStringSection (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in, out] The handle to the code section.  
   

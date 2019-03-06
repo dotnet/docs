@@ -16,7 +16,7 @@
 ### [How to: Define and Execute Dynamic Methods](how-to-define-and-execute-dynamic-methods.md)
 ### [How to: Define a Generic Type with Reflection Emit](how-to-define-a-generic-type-with-reflection-emit.md)
 ### [How to: Define a Generic Method with Reflection Emit](how-to-define-a-generic-method-with-reflection-emit.md)
-### [Collectibe assemblies for dynamic type generation](collectible-assemblies.md)
+### [Collectible assemblies for dynamic type generation](collectible-assemblies.md)
 ## [Dynamic Language Runtime Overview](dynamic-language-runtime-overview.md)
 ## [Dynamic Source Code Generation and Compilation](dynamic-source-code-generation-and-compilation.md)
 ### [Using the CodeDOM](using-the-codedom.md)

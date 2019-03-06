@@ -29,7 +29,7 @@ HRESULT AssemblyLoadFinished(
     [in] HRESULT    hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `assemblyId`  
  [in] Identifies the assembly that was loaded.  
   

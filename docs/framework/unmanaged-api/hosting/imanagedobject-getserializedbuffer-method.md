@@ -29,7 +29,7 @@ HRESULT GetSerializedBuffer (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBSTR`  
  [out] A pointer to a string that is the serialized object.  
   

@@ -30,7 +30,7 @@ HRESULT SetMethodImplFlags (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `md`  
  [in] The token for the method to be changed.  
   

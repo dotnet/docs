@@ -29,7 +29,7 @@ HRESULT ModuleLoadFinished(
     [in] HRESULT  hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module that has finished loading.  
   

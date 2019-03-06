@@ -29,7 +29,7 @@ HRESULT GetPointerSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pointerSize`  
  [out] A pointer to an integer value that specifies the size, in bytes, of a pointer on the target process.  
   

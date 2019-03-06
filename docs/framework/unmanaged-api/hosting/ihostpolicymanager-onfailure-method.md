@@ -30,7 +30,7 @@ HRESULT OnFailure(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `failure`  
  [in] One of the [EClrFailure](../../../../docs/framework/unmanaged-api/hosting/eclrfailure-enumeration.md) values, indicating the kind of failure to which the CLR is responding.  
   

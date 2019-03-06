@@ -32,7 +32,7 @@ HRESULT GetCodeChunks (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbufSize`  
  [in] Size of the `chunks` array.  
   

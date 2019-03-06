@@ -58,7 +58,7 @@ using System.Linq;
   
  When the compiler cannot find an instance method with a matching signature, it will bind to a matching extension method if one exists.  
   
- [!code-csharp[csProgGuideExtensionMethods#5](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/extension-methods_3.cs)]  
+ [!code-csharp[csProgGuideExtensionMethods#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideExtensionMethods/cs/extensionmethods.cs#5)]  
   
 ## General Guidelines  
  In general, we recommend that you implement extension methods sparingly and only when you have to. Whenever possible, client code that must extend an existing type should do so by creating a new type derived from the existing type. For more information, see [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md).  

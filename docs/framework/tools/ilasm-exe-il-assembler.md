@@ -28,7 +28,7 @@ At the command prompt, type the following:
 ilasm [options] filename [[options]filename...]
 ```
 
-#### Parameters
+## Parameters
 
 | Argument | Description |
 | -------- | ----------- |

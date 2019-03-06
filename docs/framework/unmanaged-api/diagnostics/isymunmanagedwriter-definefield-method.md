@@ -36,7 +36,7 @@ HRESULT DefineField(
     [in] ULONG32      addr3);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The metadata type or method token.  
   

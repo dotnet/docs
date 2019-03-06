@@ -32,7 +32,7 @@ HRESULT VirtualProtect (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpAddress`  
  [in] A pointer to the base address of the virtual memory whose protection attributes are to be changed.  
   

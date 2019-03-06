@@ -26,7 +26,7 @@ HRESULT GetExceptionThreadID(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [out] The ID of the thread that threw the exception.  
   

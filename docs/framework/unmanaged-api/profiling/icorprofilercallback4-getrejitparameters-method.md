@@ -27,7 +27,7 @@ Allows the code profiler to set alternate code generation flags for a new recomp
 HRESULT GetReJITParameters(     [in] ModuleID moduleId,     [in] mdMethodDef methodId,     [in] ICorProfilerFunctionControl *pFunctionControl);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleID`  
  [in] The module that contains the method for which the CLR needs JIT recompilation parameters.  
   

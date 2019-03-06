@@ -30,7 +30,7 @@ HRESULT GetReaderFromStream(
     [out,retval] ISymUnmanagedReader **pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `importer`  
  [in] A pointer to the metadata import interface.  
   

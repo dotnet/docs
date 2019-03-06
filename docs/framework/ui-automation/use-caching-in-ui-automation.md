@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "caching, UI Automation"
   - "UI Automation, caching"
 ms.assetid: ec722dff-6009-4279-b86a-e18d3fa94ebf
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Use Caching in UI Automation
 > [!NOTE]

@@ -34,7 +34,7 @@ HRESULT CreateAssemblyEnum (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pEnum`  
  [out] Pointer to a memory location that contains the requested `IAssemblyEnum` pointer.  
   

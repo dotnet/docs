@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "TextPattern class"
   - "classes, TextPattern"
 ms.assetid: b51206f2-1281-4ad0-9820-ea39d88ae577
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Text Pattern
 > [!NOTE]

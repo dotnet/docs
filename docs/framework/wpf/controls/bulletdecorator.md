@@ -13,7 +13,7 @@ ms.assetid: 1756cabf-59b4-47a7-883d-1bdf2e5abe00
   
  The following illustration shows examples of controls that use a <xref:System.Windows.Controls.Primitives.BulletDecorator>.  
   
- ![3 BulletDecorators: CheckBox, RadioButton, TextBox](../../../../docs/framework/wpf/controls/media/bulletdecorator.png "BulletDecorator")  
+ ![3 BulletDecorators: CheckBox, RadioButton, TextBox](./media/bulletdecorator.png "BulletDecorator")  
   
 ## Reference  
  <xref:System.Windows.Controls.Primitives.BulletDecorator>

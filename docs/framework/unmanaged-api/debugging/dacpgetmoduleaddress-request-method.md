@@ -30,9 +30,9 @@ HRESULT Request(
 );
 ```
 
-### Parameters
+## Parameters
 
-`pDataModule`
+`pDataModule`\
 [in] A pointer to the seed data module.
 
 ## Remarks
@@ -51,5 +51,5 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [DacpGetModuleAddress Interface](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-structure.md)
+- [Debugging](index.md)
+- [DacpGetModuleAddress Interface](dacpgetmoduleaddress-structure.md)

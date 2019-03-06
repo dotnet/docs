@@ -31,7 +31,7 @@ HRESULT GetChildren(
         length_is(*pcChildren)] ISymUnmanagedScope* children[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cChildren`  
  [in] A `ULONG32` that indicates the size of the `children` array.  
   

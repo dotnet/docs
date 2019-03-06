@@ -30,7 +30,7 @@ ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
 </list>  
 ```  
   
-#### Parameters  
+## Parameters  
  `term`  
  A term to define, which will be defined in `description`.  
   

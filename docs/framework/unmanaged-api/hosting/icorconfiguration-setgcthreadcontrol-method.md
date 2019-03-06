@@ -29,7 +29,7 @@ HRESULT SetGCThreadControl (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pGCThreadControl`  
  [in] A pointer to an [IGCThreadControl](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md) object that notifies the host about the suspension of threads for non-runtime tasks.  
   

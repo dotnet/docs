@@ -31,7 +31,7 @@ HRESULT StrongNameCompareAssemblies (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAssembly1`  
  [in] The path to the first assembly.  
   

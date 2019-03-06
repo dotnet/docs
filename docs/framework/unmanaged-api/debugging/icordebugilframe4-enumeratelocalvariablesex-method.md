@@ -29,7 +29,7 @@ HRESULT EnumerateLocalVariablesEx(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `flags`  
  [in] An [ILCodeKind](../../../../docs/framework/unmanaged-api/debugging/ilcodekind-enumeration.md) enumeration member that specifies whether variables added in profiler ReJIT instrumentation are included in the frame.  
   

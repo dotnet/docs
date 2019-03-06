@@ -399,6 +399,18 @@
             "redirect_url": "/dotnet/csharp/language-reference/keywords/true-false-operators"
         },
         {
+            "source_path": "docs/csharp/language-reference/language-specification/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/introduction"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.0/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.0/pattern-matching"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.0/pattern-matching"
+        },
+        {
             "source_path": "docs/csharp/language-reference/operators/modulus-assignment-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-assignment-operator"
         },
@@ -433,6 +445,11 @@
         {
             "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/index.md",
             "redirect_url": "/dotnet/standard/assembly",
+            "redirect_document_id":true
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend-assemblies.md",
             "redirect_document_id":true
         },
         {
@@ -779,6 +796,11 @@
             "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546195(v=vs.100)"
         },
         {
+            "source_path": "docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md",
+            "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/udpannouncementendpoint",
+            "redirect_document_id": true
+        },        
+        {
             "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-specification.md",
             "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
         },
@@ -966,6 +988,10 @@
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
             "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/misc/binding.md",
+            "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/bindings"
         },
         {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
@@ -1367,6 +1393,11 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797584(v%3dvs.100)"
         },
         {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/property-grid-extensibliity.md",
+            "redirect_url": "/dotnet/framework/windows-workflow-foundation/samples/property-grid-extensibility",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/windows-workflow-foundation/samples/property-promotion-activity.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff642473(v%3dvs.100)"
         },
@@ -1527,6 +1558,26 @@
         {
             "source_path": "docs/framework/wpf/controls/datepicker-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/datepicker-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/passwordbox-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/passwordbox-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/repeatbutton-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/repeatbutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/thumb-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/thumb-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/togglebutton-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/togglebutton-styles-and-templates",
             "redirect_document_id": true
         },
         {
@@ -2056,9 +2107,40 @@
             "redirect_url": "/visualstudio/debugger/debugger-basics"
         },
         {
+            "source_path": "docs/visual-basic/developing-apps/printing/adding-printable-reports-to-visual-studio-applications.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233804(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/deploying-applications-that-reference-the-printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882689(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629268(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690944(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629243(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629256(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/index.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690938(v=vs.100)"
+        },
+        {
             "source_path": "docs/visual-basic/developing-apps/printing/printing-and-reporting.md",
-            "redirect_url": "/dotnet/visual-basic/developing-apps/printing/index",
-            "redirect_document_id": true
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md",
@@ -2288,6 +2370,10 @@
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/index.md",
             "redirect_url": "/dotnet/standard/assembly"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend-assemblies"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md",

@@ -31,7 +31,7 @@ HRESULT GetThreadContext(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `contextSize`  
  [in] The size, in bytes, of the `context` array.  
   

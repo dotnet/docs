@@ -18,7 +18,7 @@ HRESULT GetFrameProps(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `codeRva`  
  [in] A code relative virtual address.  
   

@@ -33,7 +33,7 @@ HRESULT FormatEventInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hVECode`  
  [in] The HRESULT value that was passed to the validation error handler.  
   

@@ -316,12 +316,12 @@ Caching enables you to store data in memory for rapid access. When the data is a
 ## Code Example
  After you have completed this walkthrough, the code for the project you created will resemble the following example.
 
- [!code-csharp[CachingWPFApplications#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CachingWPFApplications/CSharp/MainWindow.xaml.cs#1)]
- [!code-vb[CachingWPFApplications#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CachingWPFApplications/VisualBasic/MainWindow.xaml.vb#1)]
+ [!code-csharp[CachingWPFApplications#1](~/samples/snippets/csharp/VS_Snippets_Wpf/CachingWPFApplications/CSharp/MainWindow.xaml.cs#1)]
+ [!code-vb[CachingWPFApplications#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CachingWPFApplications/VisualBasic/MainWindow.xaml.vb#1)]
 
 ## See also
 
 - <xref:System.Runtime.Caching.MemoryCache>
 - <xref:System.Runtime.Caching.ObjectCache>
 - <xref:System.Runtime.Caching>
-- [Caching in .NET Framework Applications](../../../../docs/framework/performance/caching-in-net-framework-applications.md)
+- [Caching in .NET Framework Applications](../../performance/caching-in-net-framework-applications.md)

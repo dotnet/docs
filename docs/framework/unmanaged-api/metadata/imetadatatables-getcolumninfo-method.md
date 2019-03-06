@@ -34,7 +34,7 @@ HRESULT GetColumnInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixTbl`  
  [in] The index of the desired table.  
   

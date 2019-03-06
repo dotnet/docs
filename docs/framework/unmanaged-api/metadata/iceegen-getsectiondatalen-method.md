@@ -32,7 +32,7 @@ HRESULT GetSectionDataLen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The data section whose length will be retrieved.  
   

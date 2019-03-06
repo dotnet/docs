@@ -31,7 +31,7 @@ void __stdcall FunctionLeave2 (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcId`  
  [in] The identifier of the function that is returning.  
   

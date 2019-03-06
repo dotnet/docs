@@ -30,7 +30,7 @@ HRESULT ValidatorInit (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwModule`  
  [in] A value of the [CorValidatorModuleType](../../../../docs/framework/unmanaged-api/metadata/corvalidatormoduletype-enumeration.md) enumeration that specifies the type of the module in the current metadata scope.  
   

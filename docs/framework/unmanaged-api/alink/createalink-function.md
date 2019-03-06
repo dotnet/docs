@@ -30,7 +30,7 @@ HRESULT CreateALink (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  

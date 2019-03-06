@@ -29,7 +29,7 @@ HRESULT JITCachedFunctionSearchStarted(
     [out] BOOL *pbUseCachedFunction);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function for which the search is being performed.  
   

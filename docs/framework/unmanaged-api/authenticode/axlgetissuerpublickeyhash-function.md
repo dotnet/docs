@@ -23,7 +23,7 @@ HRESULT _AxlGetIssuerPublicKeyHash (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pChainContext`  
  [in] The CSP public key blob. See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
   

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Data Item control type"
   - "control types, Data Item"
 ms.assetid: 181708fd-2595-4c43-9abd-75811627d64c
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the DataItem Control Type
 > [!NOTE]

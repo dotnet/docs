@@ -40,7 +40,7 @@ HRESULT DefineProperty (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The token for class or interface on which the property is being defined.  
   

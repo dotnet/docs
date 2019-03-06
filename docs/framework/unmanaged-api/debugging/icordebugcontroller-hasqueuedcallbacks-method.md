@@ -30,7 +30,7 @@ HRESULT HasQueuedCallbacks (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pThread`  
  [in] A pointer to an "ICorDebugThread" object that represents the thread.  
   

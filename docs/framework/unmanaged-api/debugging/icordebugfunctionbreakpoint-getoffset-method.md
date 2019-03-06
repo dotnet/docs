@@ -29,7 +29,7 @@ HRESULT GetOffset (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnOffset`  
  [out] A pointer to the offset of the breakpoint.  
   

@@ -33,7 +33,7 @@ HRESULT GetCodeInfo3(
     COR_PRF_CODE_INFO codeInfos[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionID`  
  [in] The ID of the function with which the native code is associated.  
   

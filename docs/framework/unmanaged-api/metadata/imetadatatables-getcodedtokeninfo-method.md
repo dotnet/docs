@@ -32,7 +32,7 @@ HRESULT GetCodedTokenInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixCdTkn`  
  [in] The kind of coded token to return.  
   

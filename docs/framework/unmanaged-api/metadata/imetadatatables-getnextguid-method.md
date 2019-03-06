@@ -30,7 +30,7 @@ HRESULT GetNextGuid (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixGuid`  
  [in] The index value from a GUID table column.  
   

@@ -18,7 +18,7 @@ HRESULT GetName(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The number of characters in the `szName` buffer.  
   

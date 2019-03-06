@@ -29,7 +29,7 @@ HRESULT OnMemoryNotification (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `eMemoryAvailable`  
  [in] One of the [EMemoryAvailable](../../../../docs/framework/unmanaged-api/hosting/ememoryavailable-enumeration.md) values, indicating the memory pressure the computer is currently experiencing.  
   

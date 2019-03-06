@@ -30,7 +30,7 @@ HRESULT GetGuid (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixGuid`  
  [in] The index of the row from which to get the GUID.  
   

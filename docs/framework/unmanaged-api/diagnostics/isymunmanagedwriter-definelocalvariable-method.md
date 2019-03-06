@@ -37,7 +37,7 @@ HRESULT DefineLocalVariable(
     [in] ULONG32      endOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] A pointer to a `WCHAR` that defines the local variable name.  
   

@@ -31,7 +31,7 @@ HRESULT DefineConstant(
     [in, size_is(cSig)] unsigned char signature[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] A pointer to a `WCHAR` that defines the constant name.  
   

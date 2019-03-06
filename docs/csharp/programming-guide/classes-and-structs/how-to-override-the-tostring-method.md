@@ -31,7 +31,7 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
   
      The following example returns the name of the class in addition to the data specific to a particular instance of the class.  
   
-     [!code-csharp[csProgGuideInheritance#36](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_2.cs)]  
+     [!code-csharp[csProgGuideInheritance#36](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#36)]  
   
      You can test the `ToString` method as shown in the following code example:  
   

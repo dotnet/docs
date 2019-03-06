@@ -33,7 +33,7 @@ HRESULT FindMemberRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The TypeRef token for the class or interface that encloses the member reference to search for. If this value is `mdTokenNil`, the lookup is done for a global variable or a global-function reference.  
   

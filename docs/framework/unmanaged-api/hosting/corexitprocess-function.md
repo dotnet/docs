@@ -8,6 +8,7 @@ api_location:
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
+  - "mscorsvr.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
@@ -33,7 +34,7 @@ void STDMETHODCALLTYPE CorExitProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `exitCode`  
  An integer that specifies the process exit code.  
   

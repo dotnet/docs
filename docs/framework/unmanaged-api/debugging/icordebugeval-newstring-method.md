@@ -29,7 +29,7 @@ HRESULT NewString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `string`  
  [in] Pointer to the contents for the string.  
   

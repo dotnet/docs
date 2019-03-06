@@ -27,7 +27,7 @@ Removes the processing marks from all the tokens in the current metadata scope.
 HRESULT UnmarkAll ();  
 ```  
   
-#### Parameters  
+## Parameters  
  `UnmarkAll` takes no parameters.  
   
 ## Requirements  

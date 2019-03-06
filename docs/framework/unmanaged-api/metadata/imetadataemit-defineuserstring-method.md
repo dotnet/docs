@@ -31,7 +31,7 @@ HRESULT DefineUserString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szString`  
  [in] The user string to store.  
   

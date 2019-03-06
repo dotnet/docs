@@ -29,7 +29,7 @@ HRESULT GetSize64(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  pSize  
  [out] A pointer to the size, in bytes, of this object.  
   

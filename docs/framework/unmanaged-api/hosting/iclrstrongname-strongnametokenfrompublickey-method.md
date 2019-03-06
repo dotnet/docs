@@ -32,7 +32,7 @@ HRESULT StrongNameTokenFromPublicKey (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbPublicKeyBlob`  
  [in] A structure of type [PublicKeyBlob](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md) that contains the public portion of the key pair used to generate the strong name signature.  
   

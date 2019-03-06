@@ -17,7 +17,7 @@ HRESULT Next(
       [out] ULONG *pceltFetched);  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
   
  [in] Number of [RAWINPUTDEVICE](/windows/desktop/api/winuser/ns-winuser-rawinputdevice) structures returned in `rgelt`.  

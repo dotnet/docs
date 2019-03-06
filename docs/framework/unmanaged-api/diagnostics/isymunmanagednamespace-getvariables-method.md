@@ -31,7 +31,7 @@ HRESULT GetVariables(
         ISymUnmanagedVariable *pVars[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cVars`  
  [in] A `ULONG32` that indicates the size of the `pVars` array.  
   

@@ -67,7 +67,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
      Add the following code to the `Load` event to query the tables that are exposed as properties of your <xref:System.Data.Linq.DataContext> and count, sum, and average the results. The sample uses the `Aggregate` clause to query for a single result, and the `Group By` clause to show an average for grouped results.  
   
-     [!code-vb[VbLINQToSQLHowTos#13](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-count-sum-or-average-data-by-using-linq_1.vb)]  
+     [!code-vb[VbLINQToSQLHowTos#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form6.vb#13)]  
   
 4.  Press F5 to run your project and view the results.  
   

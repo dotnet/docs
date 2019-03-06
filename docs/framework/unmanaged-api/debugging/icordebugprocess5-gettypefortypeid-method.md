@@ -30,7 +30,7 @@ HRESULT GetTypeForTypeID(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [in] The type identifier.  
   

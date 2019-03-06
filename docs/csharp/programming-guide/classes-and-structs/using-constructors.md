@@ -11,7 +11,7 @@ When a [class](../../../csharp/language-reference/keywords/class.md) or [struct]
   
  In the following example, a class named `Taxi` is defined by using a simple constructor. This class is then instantiated with the [new](../../../csharp/language-reference/keywords/new.md) operator. The `Taxi` constructor is invoked by the `new` operator immediately after memory is allocated for the new object.  
   
- [!code-csharp[csProgGuideObjects#53](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_1.cs)]  
+ [!code-csharp[csProgGuideObjects#53](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#53)]  
   
  A constructor that takes no parameters is called a *default constructor*. Default constructors are invoked whenever an object is instantiated by using the `new` operator and no arguments are provided to `new`. For more information, see [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md).  
   
@@ -64,9 +64,9 @@ Console.WriteLine("{0}, {1}", a, b);
   
  In a derived class, if a base-class constructor is not called explicitly by using the `base` keyword, the default constructor, if there is one, is called implicitly. This means that the following constructor declarations are effectively the same:  
   
- [!code-csharp[csProgGuideObjects#58](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_6.cs)]  
+ [!code-csharp[csProgGuideObjects#58](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#58)]  
   
- [!code-csharp[csProgGuideObjects#57](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_7.cs)]  
+ [!code-csharp[csProgGuideObjects#57](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#57)]  
   
  If a base class does not offer a default constructor, the derived class must make an explicit call to a base constructor by using `base`.  
   

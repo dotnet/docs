@@ -29,7 +29,7 @@ HRESULT GetMaxThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwMaxIoCompletionThreads`  
  [out] A pointer to the maximum number of threads in the thread pool that the host can allot to service I/O requests.  
   

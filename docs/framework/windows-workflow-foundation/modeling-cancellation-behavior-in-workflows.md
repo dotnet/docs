@@ -18,7 +18,7 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
 ### Canceling a Workflow from the Host  
  A host can cancel a workflow by calling the <xref:System.Activities.WorkflowApplication.Cancel%2A> method of the <xref:System.Activities.WorkflowApplication> instance that is hosting the workflow. In the following example a workflow is created that has a <xref:System.Activities.Statements.CancellationScope>. The workflow is invoked, and then the host makes a call to <xref:System.Activities.WorkflowApplication.Cancel%2A>. The main execution of the workflow is stopped, the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> of the <xref:System.Activities.Statements.CancellationScope> is invoked, and then the workflow completes with a status of <xref:System.Activities.ActivityInstanceState.Canceled>.  
   
- [!code-csharp[CFX_WorkflowApplicationExample#35](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#35)]  
+ [!code-csharp[CFX_WorkflowApplicationExample#35](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#35)]  
   
  When this workflow is invoked, the following output is displayed to the console.  
   
@@ -30,7 +30,7 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
   
  A workflow can also be canceled from the host if an unhandled exception bubbles up past the root of the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler returns <xref:System.Activities.UnhandledExceptionAction.Cancel>. In this example the workflow starts and then throws an <xref:System.ApplicationException>. This exception is unhandled by the workflow and so the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The handler instructs the runtime to cancel the workflow, and the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> of the currently executing <xref:System.Activities.Statements.CancellationScope> activity is invoked.  
   
- [!code-csharp[CFX_WorkflowApplicationExample#36](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#36)]  
+ [!code-csharp[CFX_WorkflowApplicationExample#36](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#36)]  
   
  When this workflow is invoked, the following output is displayed to the console.  
   
@@ -42,7 +42,7 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
 ### Canceling an Activity from Inside a Workflow  
  An activity can also be canceled by its parent. For example, if a <xref:System.Activities.Statements.Parallel> activity has multiple executing branches and its <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> evaluates to `true` then its incomplete branches will be canceled. In this example a <xref:System.Activities.Statements.Parallel> activity is created that has two branches. Its <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> is set to `true` so the <xref:System.Activities.Statements.Parallel> completes as soon as any one of its branches is completed. In this example branch 2 completes, and so branch 1 is canceled.  
   
- [!code-csharp[CFX_WorkflowApplicationExample#37](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#37)]  
+ [!code-csharp[CFX_WorkflowApplicationExample#37](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#37)]  
   
  When this workflow is invoked, the following output is displayed to the console.  
   
@@ -51,7 +51,7 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
 **Branch 1 canceled.**   
 **Workflow e0685e24-18ef-4a47-acf3-5c638732f3be Completed.**  Activities are also canceled if an exception bubbles up past the root of the activity but is handled at a higher level in the workflow. In this example, the main logic of the workflow consists of a <xref:System.Activities.Statements.Sequence> activity. The <xref:System.Activities.Statements.Sequence> is specified as the <xref:System.Activities.Statements.CancellationScope.Body%2A> of a <xref:System.Activities.Statements.CancellationScope> activity which is contained by a <xref:System.Activities.Statements.TryCatch> activity. An exception is thrown from the body of the <xref:System.Activities.Statements.Sequence>, is handled by the parent <xref:System.Activities.Statements.TryCatch> activity, and the <xref:System.Activities.Statements.Sequence> is canceled.  
   
- [!code-csharp[CFX_WorkflowApplicationExample#39](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#39)]  
+ [!code-csharp[CFX_WorkflowApplicationExample#39](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#39)]  
   
  When this workflow is invoked, the following output is displayed to the console.  
   
@@ -94,6 +94,6 @@ protected override void Cancel(NativeActivityContext context)
 ### Cancellation using AsyncCodeActivity  
  <xref:System.Activities.AsyncCodeActivity> based activities can also provide custom cancellation logic by overriding the <xref:System.Activities.AsyncCodeActivity.Cancel%2A> method. If this method is not overridden, then no cancellation handling is performed if the activity is canceled. In the following example, the <xref:System.Activities.AsyncCodeActivity.Cancel%2A> override of an <xref:System.Activities.AsyncCodeActivity> based custom `ExecutePowerShell` activity is defined. When the activity is canceled, it performs the desired cancellation behavior.
   
- [!code-csharp[CFX_WorkflowApplicationExample#1020](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#1020)]  
+ [!code-csharp[CFX_WorkflowApplicationExample#1020](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#1020)]  
   
  <xref:System.Activities.AsyncCodeActivity> derived activities can determine if cancellation has been requested by inspecting the <xref:System.Activities.AsyncCodeActivityContext.IsCancellationRequested%2A> property, and mark themselves as canceled by calling the <xref:System.Activities.AsyncCodeActivityContext.MarkCanceled%2A> method.

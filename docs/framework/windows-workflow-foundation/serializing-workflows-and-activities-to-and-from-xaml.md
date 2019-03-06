@@ -9,7 +9,7 @@ In addition to being compiled into types that are contained in assemblies, workf
 ## Working with XAML Workflow Definitions  
  To create a workflow definition for serialization, the <xref:System.Activities.ActivityBuilder> class is used. Creating an <xref:System.Activities.ActivityBuilder> is very similar to creating a <xref:System.Activities.DynamicActivity>. Any desired arguments are specified, and the activities that constitute the behavior are configured. In the following example, an `Add` activity is created that takes two input arguments, adds them together, and returns the result. Because this activity returns a result, the generic <xref:System.Activities.ActivityBuilder%601> class is used.  
   
- [!code-csharp[CFX_WorkflowApplicationExample#41](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#41)]  
+ [!code-csharp[CFX_WorkflowApplicationExample#41](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#41)]  
   
  Each of the <xref:System.Activities.DynamicActivityProperty> instances represents one of the input arguments to the workflow, and the <xref:System.Activities.ActivityBuilder.Implementation%2A> contains the activities that make up the logic of the workflow. Note that the r-value expressions in this example are Visual Basic expressions. Lambda expressions are not serializable to XAML unless <xref:System.Activities.Expressions.ExpressionServices.Convert%2A> is used. If the serialized workflows are intended to be opened or edited in the workflow designer then Visual Basic expressions should be used. For more information, see [Authoring Workflows, Activities, and Expressions Using Imperative Code](authoring-workflows-activities-and-expressions-using-imperative-code.md).  
   
@@ -60,7 +60,7 @@ sw.Close();
   
  To load a serialized workflow, the <xref:System.Activities.XamlIntegration.ActivityXamlServices> <xref:System.Activities.XamlIntegration.ActivityXamlServices.Load%2A> method is used. This takes the serialized workflow definition and returns a <xref:System.Activities.DynamicActivity> that represents the workflow definition. Note that the XAML is not deserialized until <xref:System.Activities.Activity.CacheMetadata%2A> is called on the body of the <xref:System.Activities.DynamicActivity> during the validation process. If validation is not explicitly called then it is performed when the workflow is invoked. If the XAML workflow definition is invalid, then an <xref:System.ArgumentException> exception is thrown. Any exceptions thrown from <xref:System.Activities.Activity.CacheMetadata%2A> escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller. In the following example, the serialized workflow from the previous example is loaded and invoked by using <xref:System.Activities.WorkflowInvoker>.  
   
- [!code-csharp[CFX_WorkflowApplicationExample#43](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#43)]  
+ [!code-csharp[CFX_WorkflowApplicationExample#43](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#43)]  
   
  When this workflow is invoked, the following output is displayed to the console.  
   
@@ -84,4 +84,4 @@ DynamicActivity<int> wf = ActivityXamlServices.Load(new StringReader(serializedA
   
  A serialized workflow definition can also be loaded into an <xref:System.Activities.ActivityBuilder> instance by using the <xref:System.Activities.XamlIntegration.ActivityXamlServices> <xref:System.Activities.XamlIntegration.ActivityXamlServices.CreateBuilderReader%2A> method. After a serialized workflow is loaded into an <xref:System.Activities.ActivityBuilder> instance it can be inspected and modified. This is useful for custom workflow designer authors and provides a mechanism for saving and reloading workflow definitions during the design process. In the following example, the serialized workflow definition from the previous example is loaded and its properties are inspected.  
   
- [!code-csharp[CFX_WorkflowApplicationExample#44](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#44)]
+ [!code-csharp[CFX_WorkflowApplicationExample#44](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#44)]

@@ -34,7 +34,7 @@ HRESULT EvaluatePolicy (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzReferenceIdentity`  
  [in] A reference to the assembly before the policy evaluation.  
   

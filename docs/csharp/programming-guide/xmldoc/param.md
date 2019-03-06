@@ -17,7 +17,7 @@ ms.assetid: 46d329b1-5b84-4537-9e17-73ca97313e4e
 <param name="name">description</param>  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  The name of a method parameter. Enclose the name in double quotation marks (" ").  
   

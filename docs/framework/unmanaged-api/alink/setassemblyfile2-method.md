@@ -31,7 +31,7 @@ HRESULT SetAssemblyFile2(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFilename`  
  Name of manifest file.  
   

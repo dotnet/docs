@@ -27,7 +27,7 @@ The DataSvcUtil.exe tool is installed in the [!INCLUDE[dnprdnshort](../../../../
 datasvcutil /out:file [/in:file | /uri:serviceuri] [/dataservicecollection] [/language:devlang] [/nologo] [/version:ver] [/help]
 ```
 
-### Parameters
+## Parameters
 
 |Option|Description|
 |------------|-----------------|

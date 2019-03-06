@@ -29,7 +29,7 @@ HRESULT SetCLRIoCompletionManager (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pManager`  
  [in] An interface pointer to an `ICLRIoCompletionManager` instance provided by the CLR.  
   

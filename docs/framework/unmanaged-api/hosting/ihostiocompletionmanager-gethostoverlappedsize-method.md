@@ -29,7 +29,7 @@ HRESULT GetHostOverlappedSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbSize`  
  [out] A pointer to the number of bytes that the common language runtime (CLR) should allocate in addition to the size of the Win32 `OVERLAPPED` object.  
   

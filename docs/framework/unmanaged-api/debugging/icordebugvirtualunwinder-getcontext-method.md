@@ -19,7 +19,7 @@ HRESULT GetContext(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `contextFlags`  
  [in] Flags that specify which parts of the context to return (defined in WinNT.h).  
   

@@ -28,7 +28,7 @@ void __stdcall FunctionLeave3WithInfo(
                [in] COR_PRF_ELT_INFO eltInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionIDOrClientID`  
  [in] The identifier of the function from which control is returned.  
   

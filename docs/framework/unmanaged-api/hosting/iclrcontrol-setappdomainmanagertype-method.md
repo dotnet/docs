@@ -30,7 +30,7 @@ HRESULT SetAppDomainManagerType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAppDomainManagerAssembly`  
  [in] The name of the assembly in which the requested type derived from <xref:System.AppDomainManager> is implemented.  
   

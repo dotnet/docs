@@ -31,7 +31,7 @@ HRESULT VirtualFree (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpAddress`  
  [in] A pointer to the base address of the virtual memory pages to be freed.  
   

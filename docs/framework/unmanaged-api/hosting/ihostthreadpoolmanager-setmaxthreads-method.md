@@ -29,7 +29,7 @@ HRESULT SetMaxThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `MaxThreads`  
  The maximum number of worker threads in the thread pool.  
   

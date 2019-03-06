@@ -1,4 +1,4 @@
-﻿---
+---
 title: "What's New in ADO.NET"
 ms.date: "03/30/2017"
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10

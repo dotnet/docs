@@ -32,7 +32,7 @@ HRESULT StepComplete (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the thread in which the step has completed.  
   

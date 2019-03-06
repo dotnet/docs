@@ -30,7 +30,7 @@ HRESULT AcquiredVirtualAddressSpace(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `startAddress`  
  [in] The starting address of the memory.  
   

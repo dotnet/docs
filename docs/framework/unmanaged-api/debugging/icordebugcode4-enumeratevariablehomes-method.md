@@ -29,7 +29,7 @@ HRESULT EnumerateVariableHomes(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  A pointer to the address of an [ICorDebugVariableHomeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md) interface object that is an enumerator for the local variables and arguments in a function.  
   

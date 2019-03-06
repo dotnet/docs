@@ -31,7 +31,7 @@ HRESULT GetFieldValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pClass`  
  [in] A pointer to an "ICorDebugClass" object that represents the class for which to get the field value.  
   

@@ -29,7 +29,7 @@ HRESULT IsAttached (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbAttached`  
  [out] `true` if the debugger is attached to the application domain; otherwise, `false`.  
   

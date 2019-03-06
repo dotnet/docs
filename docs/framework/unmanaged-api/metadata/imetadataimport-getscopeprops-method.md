@@ -32,7 +32,7 @@ HRESULT GetScopeProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [out] A buffer for the assembly or module name.  
   

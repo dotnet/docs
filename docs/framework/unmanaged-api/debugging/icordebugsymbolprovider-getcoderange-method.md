@@ -18,7 +18,7 @@ HRESULT GetCodeRange(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `codeRva`  
  [in] The relative virtual address (RVA) in a method.  
   

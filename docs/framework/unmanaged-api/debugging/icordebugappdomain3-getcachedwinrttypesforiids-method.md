@@ -31,7 +31,7 @@ HRESULT GetCachedWinRTTypesForIIDs (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cReqTypes`  
  [in] The number of required types.  
   

@@ -30,7 +30,7 @@ HRESULT RequestReJIT (
    [in, size_is(cFunctions)]  mdMethodDef methodIds[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cFunctions`  
  [in] The number of functions to recompile.  
   

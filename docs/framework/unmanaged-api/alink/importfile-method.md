@@ -33,7 +33,7 @@ HRESULT ImportFile(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFilename`  
  Fully qualified name of file to be imported.  
   

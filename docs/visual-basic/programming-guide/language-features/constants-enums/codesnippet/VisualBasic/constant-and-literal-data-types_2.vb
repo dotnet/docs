@@ -1,1 +1,0 @@
-  Dim MyDecimal As Decimal = 100000000000000000000D

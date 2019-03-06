@@ -26,7 +26,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
   
     -   [Generation of configured messaging activities](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ActivityGeneration)  
   
-##  <a name="MappingAttributes"></a> Mapping service contract attributes to workflow attributes  
+## <a name="MappingAttributes"></a> Mapping service contract attributes to workflow attributes  
  The tables in the following sections specify the different WCF attributes and properties and how they are mapped to the messaging activities and properties in a contract-first workflow.  
   
 -   [Service Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ServiceContract)  
@@ -39,7 +39,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
   
 -   [Fault Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#FaultContract)  
   
-###  <a name="ServiceContract"></a> Service Contract Attributes  
+### <a name="ServiceContract"></a> Service Contract Attributes  
   
 |Property Name|Supported|Description|WF Validation|  
 |-------------------|---------------|-----------------|-------------------|  
@@ -54,7 +54,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
   
  Insert subsection body here.  
   
-###  <a name="OperationContract"></a> Operation Contract Attributes  
+### <a name="OperationContract"></a> Operation Contract Attributes  
   
 |Property Name|Supported|Description|WF Validation|  
 |-------------------|---------------|-----------------|-------------------|  
@@ -69,7 +69,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
 |ReplyAction|Yes|Gets or sets the value of the SOAP action for the reply message of the operation.|SendReply.Action should match.|  
 |TypeId|No|When implemented in a derived class, gets a unique identifier for this Attribute. (Inherited from Attribute.)|(N/A)|  
   
-###  <a name="MessageContract"></a> Message Contract Attributes  
+### <a name="MessageContract"></a> Message Contract Attributes  
   
 |Property Name|Supported|Description|WF Validation|  
 |-------------------|---------------|-----------------|-------------------|  
@@ -80,7 +80,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
 |WrapperName|Yes|Gets or sets the name of the wrapper element of the message body.|No validation (Receive.Content and SendReply.Content must match the message contract type).|  
 |WrapperNamespace|No|Gets or sets the namespace of the message body wrapper element.|(N/A)|  
   
-###  <a name="DataContract"></a> Data Contract Attributes  
+### <a name="DataContract"></a> Data Contract Attributes  
   
 |Property Name|Supported|Description|WF Validation|  
 |-------------------|---------------|-----------------|-------------------|  
@@ -89,7 +89,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
 |Namespace|Yes|Gets or sets the namespace for the data contract for the type.|No validation (Receive.Content and SendReply.Content must match the message contract type).|  
 |TypeId|No|When implemented in a derived class, gets a unique identifier for this Attribute. (Inherited from Attribute.)|(N/A)|  
   
-###  <a name="FaultContract"></a> Fault Contract Attributes  
+### <a name="FaultContract"></a> Fault Contract Attributes  
   
 |Property Name|Supported|Description|WF Validation|  
 |-------------------|---------------|-----------------|-------------------|  
@@ -101,19 +101,19 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
 |ProtectionLevel|No|Specifies the level of protection the SOAP fault requires from the binding.|(N/A)|  
 |TypeId|No|When implemented in a derived class, gets a unique identifier for this Attribute. (Inherited from Attribute.)|(N/A)|  
   
-##  <a name="AdditionalSupport"></a> Additional Support and Implementation Information  
+## <a name="AdditionalSupport"></a> Additional Support and Implementation Information  
   
 -   [Unsupported service contract features](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#UnsupportedFeatures)  
   
 -   [Generation of configured messaging activities](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ActivityGeneration)  
   
-###  <a name="UnsupportedFeatures"></a> Unsupported service contract features  
+### <a name="UnsupportedFeatures"></a> Unsupported service contract features  
   
 -   Use of TPL (Task Parallel Library) Tasks in contracts is not supported.  
   
 -   Inheritance in Service Contracts is not supported.  
   
-###  <a name="ActivityGeneration"></a> Generation of configured messaging activities  
+### <a name="ActivityGeneration"></a> Generation of configured messaging activities  
  Two public static methods are added to the <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> activities to support the generation of pre-configured message activities when using contract-first workflow services.  
   
 -   <xref:System.ServiceModel.Activities.Receive.FromOperationDescription%2A?displayProperty=nameWithType>  

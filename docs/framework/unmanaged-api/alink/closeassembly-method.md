@@ -29,7 +29,7 @@ HRESULT CloseAssembly(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   

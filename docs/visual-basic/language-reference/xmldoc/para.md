@@ -15,7 +15,7 @@ Specifies that the content is formatted as a paragraph.
 <para>content</para>  
 ```  
   
-#### Parameters  
+## Parameters  
  `content`  
  The text of the paragraph.  
   

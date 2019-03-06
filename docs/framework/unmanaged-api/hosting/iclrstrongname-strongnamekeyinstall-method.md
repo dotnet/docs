@@ -31,7 +31,7 @@ HRESULT StrongNameKeyInstall (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszKeyContainer`  
  [in] The name of the key container. `wszKeyContainer` must be a non-empty string.  
   

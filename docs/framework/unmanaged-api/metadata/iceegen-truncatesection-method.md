@@ -32,7 +32,7 @@ HRESULT TruncateSection (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The section to truncate.  
   

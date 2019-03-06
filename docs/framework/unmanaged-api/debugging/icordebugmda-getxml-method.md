@@ -32,7 +32,7 @@ HRESULT GetXML (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The size of the `szName` array.  
   

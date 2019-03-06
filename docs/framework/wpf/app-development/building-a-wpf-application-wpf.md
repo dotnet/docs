@@ -26,7 +26,7 @@ Windows Presentation Foundation (WPF) applications can be built as [!INCLUDE[dnp
 ## WPF Build Pipeline  
  When a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] project is built, the combination of language-specific and [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]-specific targets are invoked. The process of executing these targets is called the build pipeline, and the key steps are illustrated by the following figure.  
   
- ![WPF build process](../../../../docs/framework/wpf/app-development/media/wpfbuildsystem-figure1.png "WPFBuildSystem_Figure1")  
+ ![WPF build process](./media/wpfbuildsystem-figure1.png "WPFBuildSystem_Figure1")  
   
 <a name="Pre_Build_Initializations"></a>   
 ### Pre-Build Initializations  
@@ -161,7 +161,7 @@ End Sub
 -   Nothing is recompiled (if nothing in the project has changed).  
   
 ## See also
-- [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)
+- [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)
 - [WPF MSBuild Reference](/visualstudio/msbuild/wpf-msbuild-reference)
-- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
-- [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)
+- [Pack URIs in WPF](pack-uris-in-wpf.md)
+- [WPF Application Resource, Content, and Data Files](wpf-application-resource-content-and-data-files.md)

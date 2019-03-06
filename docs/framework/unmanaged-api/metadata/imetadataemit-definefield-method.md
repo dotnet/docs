@@ -37,7 +37,7 @@ HRESULT DefineField (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The `mdTypeDef` token for the enclosing class or interface.  
   

@@ -29,7 +29,7 @@ HRESULT SetMinThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMinIoCompletionThreads`  
  [in] The minimum number of I/O completion threads that the host should create.  
   

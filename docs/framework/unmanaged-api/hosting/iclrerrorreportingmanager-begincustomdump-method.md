@@ -32,7 +32,7 @@ HRESULT BeginCustomDump (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwFlavor`  
  [in] A [ECustomDumpFlavor](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpflavor-enumeration.md) value that indicates the kind of heap dump upon which to build the custom heap dump.  
   

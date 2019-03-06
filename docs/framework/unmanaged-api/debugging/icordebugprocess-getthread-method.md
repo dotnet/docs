@@ -29,7 +29,7 @@ HRESULT GetThread(
     [out] ICorDebugThread **ppThread);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwThreadId`  
  [in] The OS thread ID of the thread to be retrieved.  
   

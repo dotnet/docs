@@ -23,7 +23,7 @@ HRESULT _AxlPublicKeyBlobToPublicKeyToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCspPublicKeyBlob`  
  [in] The CSP public key blob.  
   

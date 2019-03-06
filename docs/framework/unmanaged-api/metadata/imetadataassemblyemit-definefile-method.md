@@ -33,7 +33,7 @@ HRESULT DefineFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the file to be consumed.  
   

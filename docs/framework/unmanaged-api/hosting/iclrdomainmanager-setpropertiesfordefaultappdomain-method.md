@@ -29,7 +29,7 @@ HRESULT SetPropertiesForDefaultAppDomain(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nProperties`  
  [in] The number of entries in `pwszPropertyNames` and `pwszPropertyValues`.  
   

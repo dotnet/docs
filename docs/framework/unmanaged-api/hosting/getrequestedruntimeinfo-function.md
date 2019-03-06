@@ -41,7 +41,7 @@ HRESULT GetRequestedRuntimeInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pExe`  
  [in] The name of the application.  
   

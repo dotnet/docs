@@ -17,7 +17,7 @@ HRESULT GetExportStepInfo(
     [out] CorDebugCodeInvokePurpose* pInvokePurpose);  
 ```  
   
-#### Parameters  
+## Parameters  
  pszExportName  
  [in] The name of a runtime export function as written in the PE export table.  
   

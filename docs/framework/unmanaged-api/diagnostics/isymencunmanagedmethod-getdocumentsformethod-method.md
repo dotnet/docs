@@ -30,7 +30,7 @@ HRESULT GetDocumentsForMethod(
     [in, size_is(cDocs)] ISymUnmanagedDocument* documents[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cDocs`  
  [in] The length of the buffer pointed to by `pcDocs`.  
   

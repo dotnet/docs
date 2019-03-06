@@ -29,7 +29,7 @@ HRESULT Init(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDispenser`  
  [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md) pointer to the metadata dispenser.  
   

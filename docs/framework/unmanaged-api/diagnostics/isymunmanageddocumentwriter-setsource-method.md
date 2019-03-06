@@ -29,7 +29,7 @@ HRESULT SetSource(
     [in, size_is(sourceSize)] BYTE  source[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `sourceSize`  
  [in] A `ULONG32` that contains the size of the `source` buffer.  
   

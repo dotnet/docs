@@ -33,6 +33,7 @@
 ## [Handling and throwing exceptions](standard/exceptions/)
 ## [Assemblies in .NET](standard/assembly/index.md)
 ### [.NET Assembly File Format](standard/assembly/file-format.md)
+### [How to: Use and Debug Assembly Unloadability in .NET Core](standard/assembly/unloadability-howto.md)
 ## [Garbage Collection](standard/garbage-collection/)
 ## [Generic types](standard/generics.md)
 ## [Delegates and lambdas](standard/delegates-lambdas.md)
@@ -268,9 +269,9 @@
 ## [Tour of C#](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
-<!-- markdownlint-disable MD003 -->
+<!-- markdownlint-disable MD003 MD020 -->
 ## What's new in C#
-<!-- markdownlint-enable MD003 -->
+<!-- markdownlint-enable MD003 MD020 -->
 ### [C# 8.0 - Preview 2](csharp/whats-new/csharp-8.md)
 ### [C# 7.3](csharp/whats-new/csharp-7-3.md)
 ### [C# 7.2](csharp/whats-new/csharp-7-2.md)
@@ -503,15 +504,6 @@
 
 ### [Accessing Data](visual-basic/developing-apps/accessing-data.md)
 ### [Creating and Using Components](visual-basic/developing-apps/creating-and-using-components.md)
-
-### [Printing and Reporting](visual-basic/developing-apps/printing/index.md)
-#### [PrintForm Component](visual-basic/developing-apps/printing/printform-component.md)
-#### [How to: Print a Scrollable Form](visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md)
-#### [How to: Print Client and Non-Client Areas of a Form](visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md)
-#### [How to: Print the Client Area of a Form](visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md)
-#### [How to: Print a Form by Using the PrintForm Component](visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md)
-#### [Deploying Applications That Reference the PrintForm Component](visual-basic/developing-apps/printing/deploying-applications-that-reference-the-printform-component.md)
-#### [Adding Printable Reports to Visual Studio Applications](visual-basic/developing-apps/printing/adding-printable-reports-to-visual-studio-applications.md)
 
 ### [Windows Forms Application Basics](visual-basic/developing-apps/windows-forms/index.md)
 

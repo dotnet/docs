@@ -29,7 +29,7 @@ HRESULT GetFlags (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFlags`  
  [in] A bitwise combination of the [CorDebugMDAFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugmdaflags-enumeration.md) enumeration values that specify the settings of the flags for this MDA.  
   

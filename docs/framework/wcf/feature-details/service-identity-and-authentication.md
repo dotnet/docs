@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: a4c8f52c-5b30-45c4-a545-63244aba82be
 ---
 # Service Identity and Authentication
-A service's *endpoint identity*is a value generated from the service Web Services Description Language (WSDL). This value, propagated to any client, is used to authenticate the service. After the client initiates a communication to an endpoint and the service authenticates itself to the client, the client compares the endpoint identity value with the actual value the endpoint authentication process returned. If they match, the client is assured it has contacted the expected service endpoint. This functions as a protection against *phishing* by preventing a client from being redirected to an endpoint hosted by a malicious service.  
+A service's *endpoint identity* is a value generated from the service Web Services Description Language (WSDL). This value, propagated to any client, is used to authenticate the service. After the client initiates a communication to an endpoint and the service authenticates itself to the client, the client compares the endpoint identity value with the actual value the endpoint authentication process returned. If they match, the client is assured it has contacted the expected service endpoint. This functions as a protection against *phishing* by preventing a client from being redirected to an endpoint hosted by a malicious service.  
   
  For a sample application that demonstrates identity setting, see [Service Identity Sample](../../../../docs/framework/wcf/samples/service-identity-sample.md). For more information about endpoints and endpoint addresses, see [Addresses](../../../../docs/framework/wcf/feature-details/endpoint-addresses.md).  
   

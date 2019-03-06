@@ -29,7 +29,7 @@ HRESULT SetThreadToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hToken`  
  [in] A handle to the token to set for the currently executing thread.  
   

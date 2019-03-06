@@ -28,7 +28,7 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
     [out] ICorDebugGCReferenceEnum **ppEnum);  
 ```  
   
-#### Parameters  
+## Parameters  
  `types`  
  [in] A bitwise combination of [CorGCReferenceType](../../../../docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md) values that specifies the type of handles to include in the collection.  
   

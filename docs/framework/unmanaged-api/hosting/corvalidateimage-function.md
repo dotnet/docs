@@ -29,7 +29,7 @@ STDAPI _CorValidateImage (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ImageBase`  
  [in] A pointer to the starting location of the image to validate as managed code. The image must already be loaded into memory.  
   

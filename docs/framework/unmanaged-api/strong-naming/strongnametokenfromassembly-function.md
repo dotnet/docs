@@ -32,7 +32,7 @@ BOOLEAN StrongNameTokenFromAssembly (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The path to the portable executable (PE) file for the assembly.  
   

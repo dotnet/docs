@@ -29,7 +29,7 @@ HRESULT GetID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `puId`  
  [out] A pointer to the identifier of the application domain.  
   

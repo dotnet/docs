@@ -27,7 +27,7 @@ The following example shows how to define [abstract](../../../csharp/language-re
 ## Example  
  This file declares the `Shape` class that contains the `Area` property of the type `double`.  
   
- [!code-csharp[csProgGuideInheritance#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-abstract-properties_1.cs)]  
+ [!code-csharp[csProgGuideInheritance#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#1)]  
   
 -   Modifiers on the property are placed on the property declaration itself. For example:  
   

@@ -30,7 +30,7 @@ HRESULT GetNextUserString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixUserString`  
  [in] An index value from the current string column.  
   

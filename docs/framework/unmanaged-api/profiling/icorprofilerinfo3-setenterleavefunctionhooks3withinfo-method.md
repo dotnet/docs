@@ -30,7 +30,7 @@ HRESULT SetEnterLeaveFunctionHooks3WithInfo(
             [in] FunctionTailcall3WithInfo *pFuncTailcall3);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFuncEnter3`  
  [in] A pointer to the implementation to be used as the `FunctionEnter3WithInfo` callback.  
   

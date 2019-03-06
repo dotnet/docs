@@ -35,7 +35,7 @@ HRESULT GetFileProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdf`  
  [in] The `mdFile` metadata token that represents the file for which to get the properties.  
   

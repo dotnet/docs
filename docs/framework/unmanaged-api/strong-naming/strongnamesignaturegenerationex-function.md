@@ -36,7 +36,7 @@ BOOLEAN StrongNameSignatureGenerationEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The path to the file that contains the manifest of the assembly for which the strong name signature will be generated.  
   

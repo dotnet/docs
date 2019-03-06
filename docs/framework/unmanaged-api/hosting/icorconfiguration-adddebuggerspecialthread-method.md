@@ -29,7 +29,7 @@ HRESULT AddDebuggerSpecialThread (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwSpecialThreadId`  
  [in] The ID of the thread that should be allowed to continue executing.  
   

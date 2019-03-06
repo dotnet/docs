@@ -17,7 +17,7 @@ Returns a <xref:System.Type> object for the specified type. The <xref:System.Typ
 GetType(typename)  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---|---|  

@@ -29,7 +29,7 @@ HRESULT IsManaged (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbManaged`  
  [out] A pointer to a Boolean value that indicates whether the process has managed code. The value is `true` if the process has managed code; otherwise, `false`.  
   

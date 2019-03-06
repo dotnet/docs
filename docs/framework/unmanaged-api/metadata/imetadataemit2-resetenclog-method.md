@@ -27,7 +27,7 @@ Resets the edit-and-continue log and starts a new session.
 HRESULT ResetENCLog ();  
 ```  
   
-#### Parameters  
+## Parameters  
  `ResetENCLog` takes no parameters.  
   
 ## Requirements  

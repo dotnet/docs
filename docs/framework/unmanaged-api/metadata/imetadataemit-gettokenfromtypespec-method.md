@@ -31,7 +31,7 @@ HRESULT GetTokenFromTypeSpec (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pvSig`  
  [in] The signature being defined.  
   

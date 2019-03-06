@@ -28,7 +28,7 @@ HRESULT GetActiveReJitRequestILCode(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppReJitedILCode`  
  A pointer to the IL from an active ReJIT request.  
   

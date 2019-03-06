@@ -1,11 +1,16 @@
 ---
 title: Apply feature engineering for model training on categorical data - ML.NET
 description: Learn how to apply feature engineering for machine learning model training on categorical data with ML.NET
-ms.date: 02/06/2019
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to apply feature engineering for my machine learning model training on categorical data with ML.NET so that I can use my model in the ML.NET processing pipeline.
 ---
 # Apply feature engineering for model training on categorical data - ML.NET
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 You need to convert any non float data to `float` data types since all ML.NET `learners` expect features as a `float vector`.
 

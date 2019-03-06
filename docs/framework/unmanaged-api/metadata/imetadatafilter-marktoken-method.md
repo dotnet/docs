@@ -29,7 +29,7 @@ HRESULT MarkToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token to mark as processed.  
   

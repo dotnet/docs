@@ -1,4 +1,4 @@
-﻿---
+---
 title: Async in depth
 description: Learn how writing I/O-bound and CPU-bound asynchronous code is straightforward using the .NET Task-based async model.
 author: cartermp

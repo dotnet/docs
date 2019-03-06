@@ -25,7 +25,7 @@ HRESULT CertVerifyAuthenticodeLicense (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pLicenseBlob`  
  [in] The Authenticode XrML license to be verified.  
   

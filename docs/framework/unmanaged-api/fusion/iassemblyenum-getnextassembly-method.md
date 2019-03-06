@@ -31,7 +31,7 @@ HRESULT GetNextAssembly (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pvReserved`  
  [in] Reserved for future extensibility. `pvReserved` must be a null reference.  
   

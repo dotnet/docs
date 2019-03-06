@@ -157,7 +157,7 @@ Your test run had no failures, but change it slightly so that one of the test me
 
    ![Test Explorer window showing the Is False assertion failure](./media/testing-library-with-visual-studio/failed-test-detail.png)
 
-1. Remove the code that you added (`"Error", `) and rerun the test. The tests will pass.
+1. Undo the modification you did in step 1 and remove the string "Error". Rerun the test and the tests will pass.
 
 ## Testing the Release version of the library
 

@@ -30,7 +30,7 @@ HRESULT SetSecurityContext (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `eContextType`  
  [in] One of the [EContextType](../../../../docs/framework/unmanaged-api/hosting/econtexttype-enumeration.md) values, indicating what type of context the common language runtime (CLR) is placing on the host.  
   

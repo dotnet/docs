@@ -30,7 +30,7 @@ HRESULT StrongNameHashSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ulHashAlg`  
  [in] The hash algorithm used to compute the buffer size.  
   

@@ -32,7 +32,7 @@ HRESULT GetILToNativeMapping (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cMap`  
  [in] The size of the `map` array.  
   

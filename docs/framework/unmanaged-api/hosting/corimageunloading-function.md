@@ -30,7 +30,7 @@ STDAPI (VOID) _CorImageUnloading(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ImageBase`  
  [in] A pointer to the starting location of the image to unload.  
   

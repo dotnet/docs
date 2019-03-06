@@ -29,7 +29,7 @@ HRESULT GetCLRControl(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCLRControl`  
  [out] An interface pointer of type [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md) that enables hosts to configure additional aspects of the CLR.  
   

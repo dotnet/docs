@@ -27,7 +27,7 @@ Returns the cumulative size of the parameters on the stack on x86 operating syst
 HRESULT GetStackParameterSize([out] ULONG32 * pSize)  
 ```  
   
-#### Parameters  
+## Parameters  
  `pSize`  
  [out] A pointer to the cumulative size of the parameters on the stack.  
   

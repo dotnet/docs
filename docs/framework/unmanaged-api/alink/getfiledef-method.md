@@ -30,7 +30,7 @@ HRESULT GetFileDef(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   

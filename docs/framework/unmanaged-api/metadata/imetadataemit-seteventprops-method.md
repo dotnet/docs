@@ -35,7 +35,7 @@ HRESULT SetEventProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ev`  
  [in] The event token.  
   

@@ -47,7 +47,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
   
 -   Add the `Student` class and the initialized list of students to the `Program` class in your project.  
   
-     [!code-csharp[CsLinqGettingStarted#11](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_1.cs)]  
+     [!code-csharp[CsLinqGettingStarted#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#11)]  
   
 #### To add a new Student to the Students list  
   

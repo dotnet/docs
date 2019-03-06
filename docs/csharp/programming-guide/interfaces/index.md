@@ -33,7 +33,7 @@ When a class or struct implements an interface, the class or struct must provide
   
 The following example shows an implementation of the <xref:System.IEquatable%601> interface. The implementing class, `Car`, must provide an implementation of the <xref:System.IEquatable%601.Equals%2A> method.  
   
-[!code-csharp[csProgGuideInheritance#48](../classes-and-structs/codesnippet/CSharp/interfaces_2.cs)]  
+ [!code-csharp[csProgGuideInheritance#48](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#48)]  
   
 Properties and indexers of a class can define extra accessors for a property or indexer that's defined in an interface. For example, an interface might declare a property that has a [get](../../language-reference/keywords/get.md) accessor. The class that implements the interface can declare the same property with both a `get` and [set](../../language-reference/keywords/set.md) accessor. However, if the property or indexer uses explicit implementation, the accessors must match. For more information about explicit implementation, see [Explicit Interface Implementation](explicit-interface-implementation.md) and [Interface Properties](../classes-and-structs/interface-properties.md).  
 
@@ -62,7 +62,7 @@ An interface has the following properties:
  [How to: Explicitly Implement Members of Two Interfaces](how-to-explicitly-implement-members-of-two-interfaces.md)  
  Provides an example of how to explicitly implement members of interfaces with inheritance.  
   
-##  <a name="BKMK_RelatedSections"></a> Related Sections
+## <a name="BKMK_RelatedSections"></a> Related Sections
 
 - [Interface Properties](../classes-and-structs/interface-properties.md)  
 - [Indexers in Interfaces](../indexers/indexers-in-interfaces.md)  

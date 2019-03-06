@@ -43,12 +43,12 @@ In many cases, PLINQ can provide significant performance improvements over seque
   
 ```vb  
 Dim fs As FileStream = File.OpenWrite(…)  
-a.Where(...).OrderBy(...).Select(...).ForAll(Sub(x) fs.Write(x))  
+a.AsParallel().Where(...).OrderBy(...).Select(...).ForAll(Sub(x) fs.Write(x))  
 ```  
   
 ```csharp  
 FileStream fs = File.OpenWrite(...);  
-a.Where(...).OrderBy(...).Select(...).ForAll(x => fs.Write(x));  
+a.AsParallel().Where(...).OrderBy(...).Select(...).ForAll(x => fs.Write(x));  
 ```  
   
 ## Limit Calls to Thread-Safe Methods  

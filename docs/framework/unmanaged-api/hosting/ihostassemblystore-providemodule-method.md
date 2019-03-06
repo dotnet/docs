@@ -32,7 +32,7 @@ HRESULT ProvideModule (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBindInfo`  
  [in] A pointer to a [ModuleBindInfo](../../../../docs/framework/unmanaged-api/hosting/modulebindinfo-structure.md) instance that describes the requested module's <xref:System.AppDomain>, assembly, and module name.  
   

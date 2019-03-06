@@ -38,7 +38,7 @@ HRESULT GetAssemblyRefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdar`  
  [in] The `mdAssemblyRef` metadata token that represents the assembly reference for which to get the properties.  
   

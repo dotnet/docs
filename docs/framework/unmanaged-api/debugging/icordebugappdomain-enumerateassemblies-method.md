@@ -29,7 +29,7 @@ HRESULT EnumerateAssemblies (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssemblies`  
  [out] A pointer to the address of an ICorDebugAssemblyEnum object that is the enumerator for the assemblies in the application domain.  
   

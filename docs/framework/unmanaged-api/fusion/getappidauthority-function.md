@@ -29,7 +29,7 @@ HRESULT GetAppIdAuthority (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppIAppIdAuthority`  
  [out] The returned `IAppIdAuthority` pointer.  
   

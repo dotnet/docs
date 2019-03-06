@@ -22,11 +22,15 @@ In this article, various names are used to identify types of files used for migr
 ## Prerequisites
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=winforms+core) for any designer work you want to do.
-  - .NET desktop development workload
-  - .NET cross-platform development workload
-- Your project must be coded in C#.
-- [.NET Core 3.0](https://aka.ms/netcore3download).
+
+  Install the following Visual Studio workloads:
+  - .NET desktop development
+  - .NET cross-platform development
+
 - A working Windows Forms project in a solution that builds and runs without issue.
+- Your project must be coded in C#. 
+- Install the latest [.NET Core 3.0](https://aka.ms/netcore3download) preview.
+
 
 >[!NOTE]
 >**Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019 Preview/RC** supports .NET Core 3.0 projects but doesn't yet support the visual designer for .NET Core 3.0 Windows Forms projects. To use the visual designer, you must have a .NET Windows Forms project in your solution that shares the forms files with the .NET Core project.

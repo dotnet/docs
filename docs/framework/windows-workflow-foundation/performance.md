@@ -107,7 +107,7 @@ Dustin Metzgar
 
  The following diagram shows the workflows used for this test. The WF3 workflow is on the left and the WF4 workflow is on the right.
 
- ![WF3 ReplicatorActivity and WF4 ParallelForEach](./media/performance/replicatorandparallelforeach.gif "ReplicatorAndParallelForEach")
+ ![WF3 ReplicatorActivity and WF4 ParallelForEach](./media/performance/replicator-and-parallel-for-wf3-wf4.gif "Replicator for WF3 and ParallelForEach for WF4")
 
 ### Sequential Workflow with Five Activities
  This test is meant to show the effect of having several activities execute in sequence.  There are five activities in the sequence.
@@ -160,9 +160,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
     }
 ```
 
- ![WF3 and WF basic compensation workflows](./media/performance/basiccompensationworkflows.gif "BasicCompensationWorkflows")
-
- Figure 2 – WF3 (left) and WF4 (right) basic compensation workflows
+ ![WF3 and WF basic compensation workflows](./media/performance/basic-compensation-workflows-for-wf3-and-wf4.gif "WF3 (left) and WF4 (right) basic compensation workflows")
 
 ### Performance Test Results
  ![Performance Test Results](./media/performance/performance-test-data.gif "Data from performance tests")
@@ -185,7 +183,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  Client requests are made to the Online Store Service via HTTP from multiple computers.  A single computer hosts all three services.  The transport layer between the Online Store Service and the backend services is TCP or HTTP.  The measurement of operations/second is based on the number of completed `PurchaseOrder` calls made to the Online Store Service.  Channel pooling is a new feature available in WF4.  In the WCF portion of this test channel pooling is not provided out of the box so a hand-coded implementation of a simple pooling technique was used in the Online Store Service.
 
 ### Performance
- ![Online Store Service Performance Graph](./media/performance/onlinestoreperfgraph.gif "OnlineStorePerfGraph")
+ ![Online Store Service Performance Graph](./media/performance/online-store-performance-graph.gif "Online Store Service performance graph")
 
  Connecting to backend TCP services without channel pooling, the [!INCLUDE[wf1](../../../includes/wf1-md.md)] service has a 17.2% impact on throughput.  With channel pooling, the penalty is about 23.8%.  For HTTP, the impact is much less: 4.3% without pooling and 8.1% with pooling.  It is also important to note that the channel pooling provides very little benefit when using HTTP.
 
@@ -198,14 +196,14 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  In a WCF workflow service application, the latency for starting a new workflow or loading an existing workflow is important as it can be blocking.  This test case measures a WF3 XOML host against a WF4 XAMLX host in a typical scenario.
 
 ##### Environment Setup
- ![Environment setup for latency and throughput tests](./media/performance/latencyandthroughputenvironment.gif "LatencyAndThroughputEnvironment")
+ ![Environment setup for latency and throughput tests](./media/performance/latency-and-throughput-environment-setup.gif "Latency and throughput environment setup")
 
 ##### Test Setup
  In the scenario, a client computer contacts a WCF workflow service using context-based correlation.  Context correlation requires a special context binding and uses a context header or cookie to relate messages to the correct workflow instance.  It has a performance benefit in that the correlation Id is located in the message header so the message body does not need to be parsed.
 
  The service will create a new workflow with the request and send an immediate response so that the measurement of latency does not include the time spent running the workflow.  The WF3 workflow is XOML with a code-behind and the WF4 workflow is entirely XAML.  The WF4 workflow looks like this:
 
- ![WF 4 Correlation Scope](./media/performance/correlationscopeworkflow.gif "CorrelationScopeWorkflow")
+ ![WF 4 Correlation Scope](./media/performance/wf4-correlationscope-workflow.gif "WF4 CorrelationScope workflow")
 
  The <xref:System.ServiceModel.Activities.Receive> activity creates the workflow instance.  A value passed in the received message is echoed in the reply message.  A sequence following the reply contains the rest of the workflow.  In the above case, only one comment activity is shown.  The number of comment activities is changed to simulate workflow complexity.  A comment activity is equivalent to a WF3 <xref:System.Workflow.Activities.CodeActivity> that performs no work. For more information about the comment activity, see the "Component-level Performance Comparison" section earlier in this article.
 
@@ -228,14 +226,14 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  The workflow shown above is the same one used in the "Persistence" section below.  For the correlation tests without persistence there is no persistence provider installed in the runtime.  Correlation occurs in two places: CreateOrder and CompleteOrder.
 
 #### Test Results
- ![Correlation Throughput](./media/performance/correlation-throughput-graph.gif "Graph of correlation throughput graph")
+ ![Correlation Throughput](./media/performance/correlation-throughput-graph.gif "Correlation throughput graph")
 
  This graph shows a decrease in performance as the number of keys used in content-based correlation increases.  The similarity in the curves between TCP and HTTP indicates the overhead associated with these protocols.
 
 #### Correlation with Persistence
  With a persisted workflow, the CPU pressure from content-based correlation shifts from the workflow runtime to the SQL database.  The stored procedures in the SQL persistence provider do the work of matching the keys to locate the appropriate workflow.
 
- ![Correlation and persistence results](./media/performance/correlation-and-persistence-graph.gif "Graph of correlation and persistence results")
+ ![Correlation and persistence results](./media/performance/correlation-and-persistence-graph.gif "Correlation and persistence results graph")
 
  Context-based correlation is still faster than content-based correlation.  However, the difference is less pronounced as persistence has more impact on performance than correlation.
 
@@ -274,7 +272,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  Tracking and persistence are not used as part of this test.
 
 ### Test Results
- ![Throughput Graph](./media/performance/throughput-performance-results.gif "Graph of throughput performance results")
+ ![Throughput Graph](./media/performance/throughput-performance-results.gif "Throughput performance results graph")
 
  Even with complex workflows with lots of depth and a high number of activities, the performance results are consistent with other throughput numbers shown earlier in this article.  WF4’s throughput is orders of magnitude faster and has to be compared on a logarithmic scale.
 
@@ -286,11 +284,11 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
 
  The two new basic tests have workflows that look like those shown below:
 
- ![Complex Workflows](./media/performance/complexworkflowboth.gif "ComplexWorkflowBoth")
+ ![Complex Workflows](./media/performance/complex-workflow-wf3-wf4.gif "Complex workflow for both WF3 and WF4 workflows")
 
  In the WF3 workflow shown above, empty <xref:System.Workflow.Activities.CodeActivity> activities are used.  The WF4 workflow above uses `Comment` activities.  The `Comment` activity was described in the Component-level Performance Comparisons section earlier in this article.
 
- ![Memory Usage Graph](./media/performance/complexmemoryusage.gif "ComplexMemoryUsage")
+ ![Memory Usage Graph](./media/performance/complex-memory-usage-wf3-wf4.gif "Complex workflow memory usage for WF3 and WF4 workflows")
 
  One of the clear trends to notice in this graph is that nesting has relatively minimal impact on memory usage in both WF3 and WF4.  The most significant memory impact comes from the number of activities in a given workflow.  Given the data from the sequence 1000, complex depth 5 sequence 5, and complex depth 7 sequence 1 variations, it is clear that as the number of activities enters the thousands, the memory usage increase becomes more noticeable.  In the extreme case (depth 7 sequence 1) where there are ~29K activities, WF4 is using almost 79% less memory than WF3.
 
@@ -356,9 +354,7 @@ public class Workflow1 : Activity
 ### Test Setup
  Even with an improved feature set and better concurrency handling, the SQL persistence provider in WF4 is faster than the provider in WF3.  To showcase this, two workflows that perform essentially the same operations in WF3 and WF4 are compared below.
 
- ![Persistence Workflows](./media/performance/persistworkflow.gif "PersistWorkflow")
-
- Figure 5 – Persistence workflow in WF3 on left and WF4 on right
+ ![Persistence Workflows](./media/performance/persist-workflow-in-wf3-and-wf4.gif "Persistence workflow in WF3 on left and WF4 on right")
 
  The two workflows are both created by a received message.  After sending an initial reply, the workflow is persisted.  In the WF3 case, an empty <xref:System.Workflow.ComponentModel.TransactionScopeActivity> is used to initiate the persistence.  The same could be achieved in WF3 by marking an activity as "persist on close."  A second, correlated message completes the workflow.  The workflows are persisted but not unloaded.
 

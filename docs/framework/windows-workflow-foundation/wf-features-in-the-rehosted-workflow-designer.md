@@ -128,7 +128,7 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
   
  The following screenshot shows the completed state machine workflow from the [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md) step [How to: Create a State Machine Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-state-machine-workflow.md).  
   
- ![Completed State Machine Workflow](./media/wf-features-in-the-rehosted-workflow-designer/getting-started-tutorial-complete-state-machine-workflow.JPG "Completed state machine workflow from the Getting Started Tutorial")  
+ ![Completed State Machine Workflow](./media/wf-features-in-the-rehosted-workflow-designer/getting-started-tutorial-complete-state-machine-workflow.jpg "Completed state machine workflow from the Getting Started Tutorial")  
   
  For more information on creating state machine workflows, see [State Machine Workflows](../../../docs/framework/windows-workflow-foundation/state-machine-workflows.md). State machine workflows are supported in the rehosted designer.  
   

@@ -111,7 +111,7 @@ You will use the `MarqueeControlTest` project to test the custom control. The te
 
  You associate the control with its designer by using the <xref:System.ComponentModel.DesignerAttribute> class. Because you are developing the entire design-time behavior of your custom control, the custom designer will implement the <xref:System.ComponentModel.Design.IRootDesigner> interface.
 
-#### To define a custom control and its custom designer
+### To define a custom control and its custom designer
 
 1. Open the `MarqueeControl` source file in the **Code Editor**. At the top of the file, import the following namespaces:
 
@@ -143,7 +143,7 @@ You will use the `MarqueeControlTest` project to test the custom control. The te
 ## Creating an Instance of Your Custom Control
  To observe the custom design-time behavior of your control, you will place an instance of your control on the form in `MarqueeControlTest` project.
 
-#### To create an instance of your custom control
+### To create an instance of your custom control
 
 1. Add a new <xref:System.Windows.Forms.UserControl> item to the `MarqueeControlTest` project. Give the new source file a base name of "DemoMarqueeControl."
 
@@ -470,7 +470,7 @@ You will add two designer verbs to your designers: **Run Test** and **Stop Test*
 
 When **Run Test** is invoked, the verb event handler will call the `StartMarquee` method on the `MarqueeControl`. When **Stop Test** is invoked, the verb event handler will call the `StopMarquee` method on the `MarqueeControl`. The implementation of the `StartMarquee` and `StopMarquee` methods call these methods on contained controls that implement `IMarqueeWidget`, so any contained `IMarqueeWidget` controls will also participate in the test.
 
-#### To add designer verbs to your custom designers
+### To add designer verbs to your custom designers
 
 1. In the `MarqueeControlRootDesigner` class, add event handlers named `OnVerbRunTest` and `OnVerbStopTest`.
 

@@ -37,5 +37,5 @@ This section describes the programming model, samples, and tools of the Windows 
  [Windows Workflow Foundation Glossary for .NET Framework 4.5](glossary.md)  
  Defines a list of terms that are specific to WF.  
   
- [Windows Workflow Samples](samples/index.md)  
+ [Windows Workflow Samples](./samples/index.md)  
  Contains sample applications that demonstrate WF features and scenarios.

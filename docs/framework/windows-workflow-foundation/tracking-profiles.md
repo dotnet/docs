@@ -382,6 +382,6 @@ Here are some of the common examples of tracking profiles.
 
 ## See also
 
-- [SQL Tracking](samples/sql-tracking.md)
+- [SQL Tracking](./samples/sql-tracking.md)
 - [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
 - [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

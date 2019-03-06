@@ -34,4 +34,4 @@ This section contains topics describing how to create custom activity designers 
  [Rehosting the Workflow Designer](rehosting-the-workflow-designer.md)  
   
 ## External Resources  
- [Custom Activities](samples/custom-activities.md)
+ [Custom Activities](./samples/custom-activities.md)

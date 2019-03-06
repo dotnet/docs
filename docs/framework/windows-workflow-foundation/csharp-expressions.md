@@ -25,7 +25,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], C# expressio
 ### <a name="WFDesigner"></a> Using C# expressions in the Workflow Designer
  Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], C# expressions are supported in Windows Workflow Foundation (WF). C# workflow projects created in Visual Studio 2012 that target [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] use C# expressions, while Visual Basic workflow projects use Visual Basic expressions. To specify the desired C# expression, type it into the box labeled **Enter a C# expression**. This label is displayed in the properties window when the activity is selected in the designer, or on the activity in the workflow designer. In the following example, two `WriteLine` activities are contained within a `Sequence` inside a `NoPersistScope`.
 
- ![Automatically created sequence activity](media/autosurround2.png "AutoSurround2")
+ ![Automatically created sequence activity](./media/autosurround2.png "AutoSurround2")
 
 > [!NOTE]
 >  C# expressions are supported only in Visual Studio, and are not supported in the re-hosted workflow designer. For more information about new WF45 features supported in the re-hosted designer, see [Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer](wf-features-in-the-rehosted-workflow-designer.md).

@@ -258,4 +258,4 @@
 ##### [Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer](wf-features-in-the-rehosted-workflow-designer.md)
 #### [Using a Custom Expression Editor](using-a-custom-expression-editor.md)
 ## [Windows Workflow Foundation Glossary](glossary.md)
-## [Windows Workflow Samples](samples/)
+## [Windows Workflow Samples](./samples/)

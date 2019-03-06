@@ -103,4 +103,4 @@ For instructions on how to create a workflow by using these activities, see the 
 - [Designing and Implementing Custom Activities](designing-and-implementing-custom-activities.md)
 - [Getting Started Tutorial](getting-started-tutorial.md)
 - [How to: Create a Workflow](how-to-create-a-workflow.md)
-- [Using the ExpressionTextBox in a Custom Activity Designer](samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)
+- [Using the ExpressionTextBox in a Custom Activity Designer](./samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)

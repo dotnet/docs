@@ -27,7 +27,7 @@ Windows Workflow tracking is a [!INCLUDE[netfx_current_long](../../../includes/n
   
  A high level view of the tracking infrastructure is shown in the following illustration.  
   
- ![Workflow Tracking Infrastructure](media/wv.gif "WV")  
+ ![Workflow Tracking Infrastructure](./media/wv.gif "WV")  
   
 ## In This Section  
  [Tracking Records](tracking-records.md)  
@@ -46,4 +46,4 @@ Windows Workflow tracking is a [!INCLUDE[netfx_current_long](../../../includes/n
  Describes the two ways to enable debug tracing for a workflow.  
   
 ## See also
-- [SQL Tracking](samples/sql-tracking.md)
+- [SQL Tracking](./samples/sql-tracking.md)

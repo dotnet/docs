@@ -30,6 +30,6 @@ The scenarios for designing custom activities and for rehosting the [!INCLUDE[wf
 ## See also
 
 - [Extending Windows Workflow Foundation](extend.md)
-- [Designer](samples/designer.md)
-- [Custom Activity Designers](samples/custom-activity-designers.md)
-- [Designer ReHosting](samples/designer-rehosting.md)
+- [Designer](./samples/designer.md)
+- [Custom Activity Designers](./samples/custom-activity-designers.md)
+- [Designer ReHosting](./samples/designer-rehosting.md)

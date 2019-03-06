@@ -38,9 +38,9 @@ The <xref:System.ServiceModel.WorkflowServiceHost> is the out-of-box workflow ho
 
 - Samples for the <xref:System.ServiceModel.WorkflowServiceHost> can be found in the following sections:
 
-    - [Execution](samples/execution.md)
+    - [Execution](./samples/execution.md)
 
-    - Application: [Suspended Instance Management](samples/suspended-instance-management.md)
+    - Application: [Suspended Instance Management](./samples/suspended-instance-management.md)
 
 - [Hosting Workflow services overview](../wcf/feature-details/hosting-workflow-services-overview.md)
 
@@ -158,9 +158,9 @@ Flowchart is a well-known paradigm to visually represent domain problems. It is 
 
 - Samples:
 
-    - [Fault Handling in a Flowchart Activity Using TryCatch](samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)
+    - [Fault Handling in a Flowchart Activity Using TryCatch](./samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)
 
-    - [Hiring Process](samples/hiring-process.md)
+    - [Hiring Process](./samples/hiring-process.md)
 
 - Designer Documentation:
 
@@ -192,9 +192,9 @@ Procedural activities provide a mechanism to model sequential control flow using
 
 - Samples:
 
-    - [Hiring Process](samples/hiring-process.md)
+    - [Hiring Process](./samples/hiring-process.md)
 
-    - [Corporate Purchase Process](samples/corporate-purchase-process.md)
+    - [Corporate Purchase Process](./samples/corporate-purchase-process.md)
 
 - Designer Documentation:
 
@@ -232,7 +232,7 @@ The <xref:System.Activities.Statements.TryCatch> activity provides a mechanism f
 
 - In Visual Studio 2012, create a workflow console application. Add a <xref:System.Activities.Statements.TryCatch> activity in the workflow designer.
 
-- Sample: [Fault Handling in a Flowchart Activity Using TryCatch](samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)
+- Sample: [Fault Handling in a Flowchart Activity Using TryCatch](./samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)
 
 - Designer Documentation: [Error Handling Activity Designers](/visualstudio/workflow-designer/error-handling-activity-designers)
 
@@ -248,7 +248,7 @@ The <xref:System.Activities.Statements.Pick> Activity provides event-based contr
 
 - In Visual Studio 2012, create a workflow console application. Add a <xref:System.Activities.Statements.Pick> activity in the workflow designer.
 
-- Sample: [Using the Pick Activity](samples/using-the-pick-activity.md)
+- Sample: [Using the Pick Activity](./samples/using-the-pick-activity.md)
 
 - Designer documentation: [Pick Activity Designer](/visualstudio/workflow-designer/pick-activity-designer)
 
@@ -338,7 +338,7 @@ Workflow tracking provides insight into the execution of a workflow instance. Th
 
     4. Observe the workflow tracking events in event viewer.
 
-3. Samples: [Tracking](samples/tracking.md)
+3. Samples: [Tracking](./samples/tracking.md)
 
 4. Conceptual documentation: [Workflow Tracking and Tracing](workflow-tracking-and-tracing.md)
 
@@ -350,6 +350,6 @@ The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> is a SQL
 
 1. In Visual Studio 2012, create a Workflow that contains an implicit or explicit <xref:System.Activities.Statements.Persist> activity. Add the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> behavior to your workflow service host. This can be done in code or in the application configuration file.
 
-2. Samples: [Persistence](samples/persistence.md)
+2. Samples: [Persistence](./samples/persistence.md)
 
 3. Conceptual documentation: [SQL Workflow Instance Store](sql-workflow-instance-store.md).

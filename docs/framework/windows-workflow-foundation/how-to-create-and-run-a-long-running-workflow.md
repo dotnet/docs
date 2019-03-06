@@ -113,7 +113,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
   
  The following example illustrates the completed form.  
   
- ![WF45 Getting Started Tutorial Workflow Host Form](media/wf45gettingstartedtutorialworkflowhostform.png "WF45GettingStartedTutorialWorkflowHostForm")  
+ ![WF45 Getting Started Tutorial Workflow Host Form](./media/wf45gettingstartedtutorialworkflowhostform.png "WF45GettingStartedTutorialWorkflowHostForm")  
   
 ### <a name="BKMK_AddHelperMethods"></a> To add the properties and helper methods of the form  
  The steps in this section add properties and helper methods to the form class that configure the UI of the form to support running and resuming number guess workflows.  

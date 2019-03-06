@@ -275,4 +275,4 @@ namespace WpfApplication1
 ## See also
 - <xref:System.Activities.Presentation.View.IExpressionEditorService>
 - <xref:System.Activities.Presentation.View.IExpressionEditorInstance>
-- [Using the ExpressionTextBox in a Custom Activity Designer](samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)
+- [Using the ExpressionTextBox in a Custom Activity Designer](./samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)

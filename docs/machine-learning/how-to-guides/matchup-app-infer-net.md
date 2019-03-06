@@ -1,11 +1,16 @@
 ---
 title: Create a game match up list app with Infer.NET and probalistic programming
 description: Discover how to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
-ms.date: 03/01/2019
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
 ---
 # Create a game match up list app with Infer.NET and probabilistic programming
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 This how-to guide teaches you about probabilistic programming using Infer.NET. Probabilistic programming is a machine learning approach where custom models are expressed as computer programs. It allows for incorporating domain knowledge in the models and makes the machine learning system more interpretable. It also supports online inference – the process of learning as new data arrives. Infer.NET is used in various products at Microsoft in Azure, Xbox, and Bing.
 

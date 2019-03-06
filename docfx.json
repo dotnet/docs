@@ -34,23 +34,16 @@
       },
       {
         "files": [
-          "**/*.md"
+          "records.md",
+          "csharp-7.0/*.md",
+          "csharp-8.0/patterns.md"
         ],
         "src": "_csharplang/proposals",
         "dest": "csharp/language-reference/proposals",
         "exclude": [
           "**/README.md",
-          "LICENSE.md",
-          "*.md",
-          "!records.md",
           "inactive/**",
-          "rejected/**",
-          "csharp-7.1/*.md",
-          "csharp-7.2/*.md",
-          "csharp-7.3/*.md",
-          "csharp-8.0/*.md",
-          "!csharp-8.0/patterns.md"
-        ]
+          "rejected/**"        ]
       },
       {
         "files": [

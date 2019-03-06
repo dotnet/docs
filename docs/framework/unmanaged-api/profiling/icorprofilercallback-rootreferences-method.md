@@ -29,7 +29,7 @@ HRESULT RootReferences(
     [in, size_is(cRootRefs)] ObjectID rootRefIds[] );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cRootRefs`  
  [in] The number of references in the `rootRefIds` array.  
   

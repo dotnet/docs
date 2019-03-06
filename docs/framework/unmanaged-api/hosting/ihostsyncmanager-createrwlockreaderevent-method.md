@@ -31,7 +31,7 @@ HRESULT CreateRWLockReaderEvent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bInitialState`  
  [in] `true`, if `ppEvent` should be signaled; otherwise, `false`.  
   

@@ -32,7 +32,7 @@ HRESULT CreateICeeFileGen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ceeFileGen`  
  [out] A pointer to the address of a new `ICeeFileGen` object.  
   

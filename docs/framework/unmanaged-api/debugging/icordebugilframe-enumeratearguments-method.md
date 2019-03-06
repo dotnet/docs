@@ -29,7 +29,7 @@ HRESULT EnumerateArguments (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppValueEnum`  
  [out] A pointer to the address of an ICorDebugValueEnum object that is the enumerator for the arguments in this frame.  
   

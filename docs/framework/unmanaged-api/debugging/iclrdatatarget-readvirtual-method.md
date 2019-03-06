@@ -33,7 +33,7 @@ HRESULT ReadVirtual (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A CLRDATA_ADDRESS that stores the virtual memory address.  
   

@@ -29,7 +29,7 @@ HRESULT GetTypeID(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [out] A pointer to the [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) for this ICorDebugType.  
   

@@ -33,7 +33,7 @@ HRESULT GetFileVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFilename`  
  [in] The path of the file to be examined.  
   

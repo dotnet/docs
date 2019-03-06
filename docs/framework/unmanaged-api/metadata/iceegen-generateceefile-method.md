@@ -29,7 +29,7 @@ Generates a code-base file that contains the code base currently loaded into thi
 HRESULT GenerateCeeFile ();  
 ```  
   
-#### Parameters  
+## Parameters  
  `GenerateCeeFile` takes no parameters.  
   
 ## Requirements  

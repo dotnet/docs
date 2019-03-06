@@ -32,7 +32,7 @@ HRESULT StartEnumMethodInstancesByAddress(
 );
 ```
 
-### Parameters
+## Parameters
 
 `address`\
 [in] The address of the first method instance.

@@ -29,7 +29,7 @@ HRESULT SetDacl (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pacl`  
  [in] A pointer to the Access Control List (ACL).  
   

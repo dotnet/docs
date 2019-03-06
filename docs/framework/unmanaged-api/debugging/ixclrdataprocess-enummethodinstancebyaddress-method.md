@@ -31,7 +31,7 @@ HRESULT EnumMethodInstanceByAddress(
 );
 ```
 
-### Parameters
+## Parameters
 
 `handle`\
 [in] A handle for enumerating the method instances.

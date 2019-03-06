@@ -28,7 +28,7 @@ HRESULT RuntimeSuspendStarted(
     [in] COR_PRF_SUSPEND_REASON suspendReason);  
 ```  
   
-#### Parameters  
+## Parameters  
  `suspendReason`  
  [in] A value of the [COR_PRF_SUSPEND_REASON](../../../../docs/framework/unmanaged-api/profiling/cor-prf-suspend-reason-enumeration.md) enumeration that indicates the reason for the suspension.  
   

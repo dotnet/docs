@@ -28,7 +28,7 @@ HRESULT FreeWin32ResBlob(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppResBlob`  
  The resource blob to be released. This method assigns the blob pointer to NULL.  
   

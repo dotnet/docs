@@ -31,7 +31,7 @@ HRESULT GetHostName (
             WCHAR szHostName[]  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchHostName`  
  [in] The size, in characters, of the `szHostName` buffer. If this parameter is 0 (zero), `szHostName` must be null.  
   

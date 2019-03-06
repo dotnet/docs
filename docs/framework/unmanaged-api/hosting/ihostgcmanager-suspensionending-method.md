@@ -29,7 +29,7 @@ HRESULT SuspensionEnding (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `generation`  
  [in] The garbage collection generation that is just finishing, from which the thread is resuming.  
   

@@ -30,7 +30,7 @@ HRESULT IsTokenMarked (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token to examine for a processing mark.  
   

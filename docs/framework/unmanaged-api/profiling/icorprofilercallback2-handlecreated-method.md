@@ -29,7 +29,7 @@ HRESULT HandleCreated(
     [in] ObjectID initialObjectId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `handleId`  
  [in] The ID of the handle for the garbage collection.  
   

@@ -32,7 +32,7 @@ HRESULT GetArrayObjectInfo(
     [out] BYTE **ppData);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of a valid array object.  
   

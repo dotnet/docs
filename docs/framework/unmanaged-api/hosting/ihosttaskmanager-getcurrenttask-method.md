@@ -29,7 +29,7 @@ HRESULT GetCurrentTask (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTask`  
  [out] A pointer to the address of an [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance that represents the currently executing task, or null, if no task is currently executing.  
   

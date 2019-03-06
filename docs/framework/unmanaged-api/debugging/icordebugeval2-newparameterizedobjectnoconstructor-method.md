@@ -31,7 +31,7 @@ HRESULT NewParameterizedObjectNoConstructor (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pClass`  
  [in] A pointer to an ICorDebugClass object that represents the class of the object to be instantiated.  
   

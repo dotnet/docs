@@ -30,7 +30,7 @@ HRESULT GetNestedClassProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tdNestedClass`  
  [in] A TypeDef token representing the <xref:System.Type> to return the parent class token for.  
   

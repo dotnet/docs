@@ -29,7 +29,7 @@ HRESULT GetReason (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pReason`  
  [out] A pointer to a value (a bitwise combination) of the CorDebugChainReason enumeration that indicates the reason for the genesis of this calling chain.  
   

@@ -34,7 +34,7 @@ HRESULT AddSectionReloc (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The section of in-memory code to which to add a .reloc instruction.  
   

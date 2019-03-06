@@ -32,7 +32,7 @@ HRESULT GetModuleRefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mur`  
  [in] The ModuleRef metadata token that references the module to get metadata information for.  
   

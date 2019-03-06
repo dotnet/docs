@@ -31,7 +31,7 @@ HRESULT Next(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of GUID-to-type mapping objects to be retrieved.  
   

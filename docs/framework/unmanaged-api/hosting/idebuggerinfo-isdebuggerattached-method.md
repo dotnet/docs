@@ -29,7 +29,7 @@ HRESULT IsDebuggerAttached (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbAttached`  
  [out] A pointer to a value that is `true` if a managed debugger is attached to the process; otherwise, `false`.  
   

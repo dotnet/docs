@@ -28,7 +28,7 @@ HRESULT GetToken(
    [out, retval]  mdMethodDef  *pToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pToken`  
  [out] A pointer to a `mdMethodDef` that receives the size, in characters, of the buffer required to contain the metadata.  
   

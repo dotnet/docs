@@ -28,7 +28,7 @@ HRESULT ExitProcess (
     [in] INT32 iExitCode);  
 ```  
   
-#### Parameters  
+## Parameters  
  `iExitCode`  
  [in] The exit code for the process.  
   

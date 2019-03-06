@@ -31,7 +31,7 @@ HRESULT QueueUserWorkItem (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Function`  
  [in] A function pointer that represents the function to execute.  
   

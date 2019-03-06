@@ -32,7 +32,7 @@ __int32 STDMETHODCALLTYPE _CorExeMain2 (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pUnmappedPE`  
  [in] A pointer to the memory-mapped code.  
   

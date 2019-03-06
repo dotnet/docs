@@ -28,7 +28,7 @@ HRESULT CustomNotification(ICorDebugThread *    pThread,
                            ICorDebugAppDomain * pAppDomain);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pThread`  
  [in] A pointer to the thread that raised the notification.  
   

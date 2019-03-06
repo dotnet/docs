@@ -33,7 +33,7 @@ HRESULT Initialize(
     [in] BOOL         fFullBuild);  
 ```  
   
-#### Parameters  
+## Parameters  
  `emitter`  
  [in] A pointer to the metadata emitter interface.  
   

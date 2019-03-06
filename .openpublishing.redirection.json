@@ -978,6 +978,10 @@
             "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
         },
         {
+            "source_path": "docs/framework/misc/binding.md",
+            "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/bindings"
+        },
+        {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
             "redirect_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki"
         },
@@ -1540,6 +1544,26 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/controls/passwordbox-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/passwordbox-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/repeatbutton-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/repeatbutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/thumb-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/thumb-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/togglebutton-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/togglebutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
             "redirect_url": "/dotnet/framework/xaml-services/escape-sequence-markup-extension",
             "redirect_document_id": true
@@ -2067,39 +2091,39 @@
         },
         {
             "source_path": "docs/visual-basic/developing-apps/printing/adding-printable-reports-to-visual-studio-applications.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233804(v=vs.100)",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233804(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/printing/deploying-applications-that-reference-the-printform-component.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882689(v=vs.100)",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882689(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629268(v=vs.100)",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629268(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690944(v=vs.100)",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690944(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629243(v=vs.100)",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629243(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629256(v=vs.100)",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629256(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/printing/index.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/printing/printform-component.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690938(v=vs.100)",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690938(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/printing/printing-and-reporting.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md",
@@ -2398,6 +2422,11 @@
         {
             "source_path": "docs/visual-basic/reference/vb6-support.md",
             "redirect_url": "/visualstudio/vb6/vb6-support",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/property-grid-extensibliity.md",
+            "redirect_url": "/dotnet/framework/windows-workflow-foundation/samples/property-grid-extensibility",
             "redirect_document_id": true
         }
     ]

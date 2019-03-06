@@ -29,7 +29,7 @@ HRESULT GetCode (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppCode`  
  [out] A pointer to the address of an ICorDebugCode object that represents the code associated with this frame.  
   

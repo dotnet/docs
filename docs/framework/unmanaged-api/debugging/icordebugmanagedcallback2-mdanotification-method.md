@@ -31,7 +31,7 @@ HRESULT MDANotification(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pController`  
  [in] A pointer to an ICorDebugController interface that exposes the process or application domain in which the MDA occurred.  
   

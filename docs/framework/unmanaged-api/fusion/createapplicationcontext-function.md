@@ -29,7 +29,7 @@ HRESULT CreateApplicationContext (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pName`  
  [in] A pointer to a friendly name.  
   

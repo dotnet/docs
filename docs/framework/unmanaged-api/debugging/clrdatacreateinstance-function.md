@@ -31,7 +31,7 @@ HRESULT CLRDataCreateInstance (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `iid`  
  [in] The identifier of the interface to be instantiated.  
   

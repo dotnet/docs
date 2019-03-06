@@ -35,7 +35,7 @@ HRESULT CallFunctionShim (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szDllName`  
  [in] The name of the library containing the function.  
   

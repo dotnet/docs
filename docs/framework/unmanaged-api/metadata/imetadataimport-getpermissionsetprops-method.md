@@ -32,7 +32,7 @@ HRESULT GetPermissionSetProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pm`  
  [in] The Permission metadata token that represents the permission set to get the metadata properties for.  
   

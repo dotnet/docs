@@ -32,7 +32,7 @@ HRESULT Initialize2(
     [in] const WCHAR  *finalfilename);  
 ```  
   
-#### Parameters  
+## Parameters  
  `emitter`  
  [in] A pointer to the metadata emitter interface.  
   

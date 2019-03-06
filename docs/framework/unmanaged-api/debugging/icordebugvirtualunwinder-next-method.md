@@ -14,7 +14,7 @@ Advances to the caller's context.
 HRESULT Next();  
 ```  
   
-#### Parameters  
+## Parameters  
  None.  
   
 ## Return Value  

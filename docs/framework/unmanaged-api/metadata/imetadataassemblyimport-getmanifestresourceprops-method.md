@@ -35,7 +35,7 @@ HRESULT GetManifestResourceProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdmr`  
  [in] An `mdManifestResource` token that represents the resource for which to get the properties.  
   

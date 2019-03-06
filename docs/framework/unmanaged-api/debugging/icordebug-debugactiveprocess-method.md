@@ -31,7 +31,7 @@ HRESULT DebugActiveProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [in] The ID of the process to which the debugger is to be attached.  
   

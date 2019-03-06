@@ -31,7 +31,7 @@ HRESULT GetMethodSemantics (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mb`  
  [in] A MethodDef token representing the method to get the semantic role information for.  
   

@@ -41,7 +41,7 @@ HRESULT GetEventProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ev`  
  [in] The event metadata token representing the event to get metadata for.  
   

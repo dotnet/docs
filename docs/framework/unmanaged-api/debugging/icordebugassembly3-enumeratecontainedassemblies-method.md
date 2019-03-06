@@ -16,7 +16,7 @@ HRESULT EnumerateContainedAssemblies(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssemblies`  
  [out] A pointer to the address of an ICorDebugAssemblyEnum interface object that is the enumerator.  
   

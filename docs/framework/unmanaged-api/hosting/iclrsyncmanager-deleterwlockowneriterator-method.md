@@ -29,7 +29,7 @@ HRESULT DeleteRWLockOwnerIterator (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Iterator`  
  [in] The iterator that was created by using a call to `CreateRWLockOwnerIterator`.  
   

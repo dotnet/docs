@@ -30,7 +30,7 @@ HRESULT ReleaseSemaphore (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lReleaseCount`  
  [in] The amount by which to increase the count of the current `IHostSemaphore` instance. This amount must be greater than zero.  
   

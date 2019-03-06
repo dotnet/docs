@@ -30,7 +30,7 @@ HRESULT EnumerateGCReferences(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `enumerateWeakReferences`  
  [in] A Boolean value that indicates whether weak references are also to be enumerated. If `enumerateWeakReferences` is `true`, the `ppEnum` enumerator includes both strong references and weak references. If `enumerateWeakReferences` is `false`, the enumerator includes only strong references.  
   

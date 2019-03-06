@@ -31,7 +31,7 @@ HRESULT GetBlob (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixBlob`  
  [in] The memory address from which to get `ppData`.  
   

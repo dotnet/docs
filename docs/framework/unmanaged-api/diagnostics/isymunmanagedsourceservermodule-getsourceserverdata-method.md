@@ -29,7 +29,7 @@ HRESULT GetSourceServerData(
     [out, size_is (, *pDataByteCount)] BYTE** ppData);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDataByteCount`  
  [out] A pointer to a `ULONG32` that receives the size, in bytes, of the source server data.  
   

@@ -26,7 +26,7 @@ Notifies the profiler that the currently executing function is about to perform 
 void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionOrRemappedID`  
  [in] The identifier of the currently executing function that is about to make a tail call.  
   

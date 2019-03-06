@@ -29,7 +29,7 @@ HRESULT FindClosestLine(
     [out, retval] ULONG32*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `line`  
  [in] A line in this document.  
   

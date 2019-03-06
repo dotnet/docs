@@ -22,7 +22,7 @@ HRESULT SaveToHistory(
 )  
 ```  
   
-#### Parameters  
+## Parameters  
  pHistoryStream  
  A pointer to the history stream.  
   

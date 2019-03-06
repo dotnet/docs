@@ -29,7 +29,7 @@ HRESULT StrongNameKeyDelete (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszKeyContainer`  
  [in] The name of the key container to delete.  
   

@@ -36,7 +36,7 @@ HRESULT SetAssemblyRefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ar`  
  [in] The metadata token that specifies the `AssemblyRef` metadata structure to be modified.  
   

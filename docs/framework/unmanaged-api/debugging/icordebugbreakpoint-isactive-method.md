@@ -29,7 +29,7 @@ HRESULT IsActive (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbActive`  
  [out] `true` if this breakpoint is active; otherwise, `false`.  
   

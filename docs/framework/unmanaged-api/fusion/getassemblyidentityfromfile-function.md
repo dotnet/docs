@@ -32,7 +32,7 @@ HRESULT GetAssemblyIdentityFromFile (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFilePath`  
  [in] A valid path to the requested assembly.  
   

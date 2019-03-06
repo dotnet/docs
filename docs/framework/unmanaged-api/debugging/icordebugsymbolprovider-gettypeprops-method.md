@@ -19,7 +19,7 @@ HRESULT GetTypeProps(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tableRva`  
  [in] A relative virtual address (RVA) in a vtable.  
   

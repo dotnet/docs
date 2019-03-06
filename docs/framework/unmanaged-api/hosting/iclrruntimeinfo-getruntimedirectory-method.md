@@ -31,7 +31,7 @@ HRESULT GetRuntimeDirectory(
 [in, out]  DWORD *pcchBuffer);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzBuffer`  
  [out] Returns the CLR installation directory. The installation path is fully qualified; for example, "c:\windows\microsoft.net\framework\v1.0.3705\\".  
   

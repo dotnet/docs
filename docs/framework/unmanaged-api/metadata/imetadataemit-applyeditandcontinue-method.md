@@ -29,7 +29,7 @@ HRESULT ApplyEditAndContinue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pImport`  
  \[in\] Pointer to an [IUnknown](/cpp/atl/iunknown) object that represents the delta metadata from the portable executable (PE) file.
   

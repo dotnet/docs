@@ -29,7 +29,7 @@ HRESULT EndConnection (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwConnectionId`  
  [in] The host-specific identifier for the connection and the associated list of common language runtime (CLR) tasks.  
   

@@ -30,7 +30,7 @@ HRESULT GetStaticFieldInfo (
     [out] COR_PRF_STATIC_TYPE  *pFieldInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class in which the static field is defined.  
   

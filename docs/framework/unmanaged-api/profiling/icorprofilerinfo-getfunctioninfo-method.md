@@ -31,7 +31,7 @@ HRESULT GetFunctionInfo(
     [out] mdToken    *pToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function for which to get the parent class and metadata token.  
   

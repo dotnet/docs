@@ -31,7 +31,7 @@ HRESULT UpdateModuleSymbols (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the module in which the symbols have changed.  
   

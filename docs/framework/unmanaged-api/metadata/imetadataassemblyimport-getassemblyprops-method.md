@@ -37,7 +37,7 @@ HRESULT GetAssemblyProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mda`  
  [in]. The `mdAssembly` metadata token that represents the assembly for which to get the properties.  
   

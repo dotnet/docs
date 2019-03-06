@@ -18,7 +18,7 @@ HRESULT GetMergedAssemblyRecords(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cRequestedRecords`  
  [in] The number of symbol records requested.  
   

@@ -32,7 +32,7 @@ HRESULT GetColumn (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixTbl`  
  [in] The index of the table.  
   

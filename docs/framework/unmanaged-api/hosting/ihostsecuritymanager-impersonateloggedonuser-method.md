@@ -29,7 +29,7 @@ HRESULT ImpersonateLoggedOnUser (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hToken`  
  [in] A token representing the credentials of the user to be impersonated.  
   

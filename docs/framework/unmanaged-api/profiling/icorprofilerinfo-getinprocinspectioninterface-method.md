@@ -28,7 +28,7 @@ HRESULT GetInprocInspectionInterface(
     [out] IUnknown **ppicd);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppicd`  
  [out](/cpp/atl/iunknown) object that can be queried for an `ICorDebugProcess` interface.  
   

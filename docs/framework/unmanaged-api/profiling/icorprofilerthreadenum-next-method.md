@@ -31,7 +31,7 @@ HRESULT Next (    [in]  ULONG      celt,
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of threads to retrieve.  
   

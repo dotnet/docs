@@ -33,7 +33,7 @@ HRESULT GetHashFromAssemblyFileW (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The path to the file to be hashed. This parameter must be a Unicode string.  
   

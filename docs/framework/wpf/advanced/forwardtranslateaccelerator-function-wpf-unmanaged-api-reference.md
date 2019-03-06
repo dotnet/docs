@@ -23,7 +23,7 @@ HRESULT ForwardTranslateAccelerator(
 )  
 ```  
   
-#### Parameters  
+## Parameters  
  pMsg  
  A pointer to a message.  
   

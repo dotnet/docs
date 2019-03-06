@@ -30,7 +30,7 @@ HRESULT SetRVA (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `md`  
  [in] The token for the target method or method implementation.  
   

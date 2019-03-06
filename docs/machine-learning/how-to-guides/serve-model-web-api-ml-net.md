@@ -1,9 +1,9 @@
 ---
 title: Serve Machine Learning Model In ASP.NET Core Web API
-description: Serve ML.NET sentiment analysis machine learning model over the internet using ASP.NET Core Web APi
-ms.date: 02/27/2019
+description: Serve ML.NET sentiment analysis machine learning model over the internet using ASP.NET Core Web API
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
-#Customer intent: As a developer, I want to use my ML.NET Machine Learning model through the internet using an ASP.NET Core WEB API
+#Customer intent: As a developer, I want to use my ML.NET Machine Learning model through the internet using an ASP.NET Core Web API
 ---
 
 # How-To: Serve Machine Learning Model Through ASP.NET Core Web API
@@ -62,7 +62,7 @@ Remove the existing class definition and add the following code to the Sentiment
 
 ## Create Prediction Service
 
-To organize the logic to make predictions, it can be useful to create a prediction service which can then be used throughout the entire application.
+To organize and re-use the prediction logic throughout the entire application, create a prediction service.
 
 1. Create a directory named Services in your project to hold services to be used by the application:
 
@@ -79,7 +79,7 @@ Remove the existing class definition and add the following code to the Predictio
 
 ## Register Predictions Service for Use in Application
 
-While it is possible to create the service every time it needs to be used, when it comes to best practices there are better approaches to that can be taken. One such approach is dependency injection which is built into ASP.NET Core.
+To use the prediction service in your application you will have to create it every time it is needed. In that case, a best practice to consider is ASP.NET Core dependency injection.
 
 The following link provides more information if you want to learn about [dependency injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.1).
 
@@ -95,7 +95,7 @@ At a high level, this code initializes the objects and services automatically wh
 
 ## Create Predict Controller
 
-To process our incoming HTTP requests, we need to create a controller.
+To process your incoming HTTP requests, you need to create a controller.
 
 1. In Solution Explorer, right-click the *Controllers* directory, and then select Add > Controller.
 1. In the Add New Item dialog box, select API Controller Empty and select Add.
@@ -107,11 +107,13 @@ Remove the existing class definition and add the following code to the PredictCo
 
 [!code-csharp[DefinePredictController](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Controllers/PredictController.cs#2 "Define Predict Controller")]
 
-All this is doing is assigning the Prediction service by passing it to the controller's constructor which we get via dependency injection. Then, in the POST method of this controller the Prediction service is being used to make predictions and return the results back to the user if successful.
+This is assigning the Prediction service by passing it to the controller's constructor which you get via dependency injection. Then, in the POST method of this controller the Prediction service is being used to make predictions and return the results back to the user if successful.
 
 ## Test Web API Locally
 
-1. Once everything is set up, it's time to test the application. To do so, run the application.
+Once everything is set up, it's time to test the application.
+
+1. Run the application.
 1. Open Powershell and enter the following code where PORT is the port your application is listening on.
 
 ```powershell

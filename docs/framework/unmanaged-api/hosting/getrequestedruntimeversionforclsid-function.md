@@ -34,7 +34,7 @@ HRESULT GetRequestedRuntimeVersionForCLSID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `rclsid`  
  [in]  The `CLSID` of the component.  
   

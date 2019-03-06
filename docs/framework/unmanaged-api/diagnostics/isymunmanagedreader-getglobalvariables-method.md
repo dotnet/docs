@@ -31,7 +31,7 @@ HRESULT GetGlobalVariables(
         length_is(*pcVars)] ISymUnmanagedVariable *pVars[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cVars`  
  [in] The length of the buffer pointed to by `pcVars`.  
   

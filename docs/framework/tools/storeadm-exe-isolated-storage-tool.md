@@ -24,7 +24,7 @@ The Isolated Storage tool lists or removes all existing stores for the current u
 storeadm [/list][/machine][/remove][/roaming][/quiet]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Option|Description|  
 |------------|-----------------|  

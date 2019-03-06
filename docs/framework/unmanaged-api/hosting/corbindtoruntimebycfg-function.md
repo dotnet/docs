@@ -35,7 +35,7 @@ HRESULT CorBindToRuntimeByCfg (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCfgStream`  
  [in] A pointer to an `IStream` object that reads the XML file.  
   

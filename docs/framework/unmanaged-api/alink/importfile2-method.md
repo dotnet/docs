@@ -34,7 +34,7 @@ HRESULT ImportFile2(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFilename`  
  Name of file to be imported.  
   

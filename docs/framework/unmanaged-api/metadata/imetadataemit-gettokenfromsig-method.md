@@ -31,7 +31,7 @@ HRESULT GetTokenFromSig (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pvSig`  
  [in] The signature to be persisted and stored.  
   

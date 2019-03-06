@@ -29,7 +29,7 @@ HRESULT GetStats (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStats`  
  [in, out] A pointer to a [COR_GC_STATS](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md) structure that contains the statistics for the current state of the garbage collection system.  
   

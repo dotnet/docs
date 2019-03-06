@@ -15,7 +15,7 @@ Formats a word as a parameter.
 <paramref name="name"/>  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  The name of the parameter to refer to. Enclose the name in double quotation marks (" ").  
   

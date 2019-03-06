@@ -16,7 +16,7 @@ Sets the IL offset for the compiler-generated catch handler that wraps an async 
 HRESULT DefineCatchHandlerILOffset(    [in] ULONG32 catchHandlerOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  

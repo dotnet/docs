@@ -30,7 +30,7 @@ HRESULT SetSymbolReadingPolicy (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `policy`  
  [in] A member of the [ESymbolReadingPolicy](../../../../docs/framework/unmanaged-api/hosting/esymbolreadingpolicy-enumeration.md) enumeration.  
   

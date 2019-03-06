@@ -28,7 +28,7 @@ HRESULT GetCheckSumAlgorithmId(
     [out, retval] GUID*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a variable that receives the checksum algorithm identifier.  
   

@@ -29,7 +29,7 @@ HRESULT Capture (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppClonedContext`  
  [out] A pointer to the address of a clone of the `IHostSecurityContext` object to be captured.  
   

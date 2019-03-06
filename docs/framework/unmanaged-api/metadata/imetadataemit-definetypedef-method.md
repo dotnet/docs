@@ -33,7 +33,7 @@ HRESULT DefineTypeDef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szTypeDef`  
  [in] The name of the type in Unicode.  
   

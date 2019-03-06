@@ -28,7 +28,7 @@ HRESULT GetSymbolSearchInfoCount(
     [out] ULONG32 *pcSearchInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcSearchInfo`  
  ]out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the search information.  
   

@@ -31,7 +31,7 @@ HRESULT GetParameters(
         length_is(*pcParams)] ISymUnmanagedVariable*  params[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cParams`  
  [in] The size of the `params` array.  
   

@@ -16,7 +16,7 @@ HRESULT GetSize(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbSize`  
  [out] A pointer to length of the field.  
   

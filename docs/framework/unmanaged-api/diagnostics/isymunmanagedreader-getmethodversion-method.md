@@ -29,7 +29,7 @@ HRESULT GetMethodVersion (
     [out] int* version);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMethod`  
  [in] The method for which to get the version.  
   

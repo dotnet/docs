@@ -31,7 +31,7 @@ HRESULT GetName(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchname`  
  [in] The size of the `szName` array.  
   

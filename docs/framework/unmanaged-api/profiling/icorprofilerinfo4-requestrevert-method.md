@@ -31,7 +31,7 @@ HRESULT RequestRevert (
    [out, size_is(cFunctions)]  HRESULT status[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cFunctions`  
  [in] The number of functions to revert.  
   

@@ -29,7 +29,7 @@ HRESULT SetJMC (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fIsJMCStepper`  
  [in] Set to `true` to step only through code that is authored by an application's developer; otherwise, set to `false`.  
   

@@ -29,7 +29,7 @@ HRESULT GetToken(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pToken`  
  [out] A pointer to the `mdModule` token that references the module's metadata.  
   

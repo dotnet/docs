@@ -29,7 +29,7 @@ HRESULT IsStringAssemblyReferenceInList (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyName`  
  [in] The name of the assembly for which to search.  
   

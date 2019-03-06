@@ -16,7 +16,7 @@ HRESULT GetCode(
     [out] ICorDebugCode **ppCode);  
 ```  
   
-#### Parameters  
+## Parameters  
  `codeAddress`  
  [in] A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that specifies the starting address of the managed code segment.  
   

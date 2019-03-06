@@ -29,7 +29,7 @@ HRESULT GetRank (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnRank`  
  [out] A pointer to the number of dimensions.  
   

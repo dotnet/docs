@@ -26,7 +26,7 @@ At the command prompt, type the following:
 ildasm [options] [PEfilename] [options]
 ```
 
-#### Parameters
+## Parameters
 
 The following options are available for *.exe*, *.dll*, *.obj*, *.lib*, and *.winmd* files.
 

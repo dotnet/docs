@@ -30,7 +30,7 @@ HRESULT GetMetaDataInterface (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `riid`  
  [in] The reference ID that specifies the metadata interface.  
   

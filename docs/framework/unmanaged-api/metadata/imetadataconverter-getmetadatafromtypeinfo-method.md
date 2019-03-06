@@ -30,7 +30,7 @@ HRESULT GetMetaDataFromTypeInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pITI`  
  [in] A pointer to an `ITypeInfo` object that refers to the type library.  
   

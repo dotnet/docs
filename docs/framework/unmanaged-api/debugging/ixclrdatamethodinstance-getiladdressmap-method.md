@@ -32,7 +32,7 @@ HRESULT GetILAddressMap(
 );
 ```
 
-### Parameters
+## Parameters
 
 `mapLen`\
 [in] The length of the provided maps array.

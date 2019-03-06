@@ -14,7 +14,7 @@ See [DefineCatchHandlerILOffset Method](../../../../docs/framework/unmanaged-api
 HRESULT HasCatchHandlerILOffset(    [out, retval] BOOL* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  

@@ -29,7 +29,7 @@ HRESULT IsMatchingParentFrame([in] ICorDebugNativeFrame2
                               [out] BOOL *pIsParent);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pPotentialParentFrame`  
  [in] A pointer to the frame object that you want to evaluate for parent status.  
   

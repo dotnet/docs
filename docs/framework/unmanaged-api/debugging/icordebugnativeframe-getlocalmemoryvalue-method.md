@@ -32,7 +32,7 @@ HRESULT GetLocalMemoryValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` value that specifies the memory location containing the value.  
   

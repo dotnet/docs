@@ -30,7 +30,7 @@ HRESULT IsGlobal (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pd`  
  [in] A metadata token that represents a type, field, or method.  
   

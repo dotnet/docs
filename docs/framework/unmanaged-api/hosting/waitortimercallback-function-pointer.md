@@ -31,7 +31,7 @@ typedef VOID (__stdcall *WAITORTIMERCALLBACK) (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpParameter`  
  [in] A pointer to an object that contains information defined by the host.  
   

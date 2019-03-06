@@ -31,7 +31,7 @@ At the command prompt, type the following:
 installutil [/u[ninstall]] [options] assembly [[options] assembly] ...
 ```
 
-#### Parameters
+## Parameters
 
 |Argument|Description|
 |--------------|-----------------|

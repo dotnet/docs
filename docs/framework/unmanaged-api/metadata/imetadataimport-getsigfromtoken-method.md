@@ -31,7 +31,7 @@ HRESULT GetSigFromToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdSig`  
  [in] The token to return the binary metadata signature for.  
   

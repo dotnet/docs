@@ -27,7 +27,7 @@ Moves the cursor of to the beginning of the enumeration.
 HRESULT Reset ();  
 ```  
   
-#### Parameters  
+## Parameters  
  `Reset` takes no parameters.  
   
 ## Requirements  

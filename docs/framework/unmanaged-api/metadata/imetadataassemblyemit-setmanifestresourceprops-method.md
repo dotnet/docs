@@ -32,7 +32,7 @@ HRESULT SetManifestResourceProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mr`  
  [in] The token that specifies the `ManifestResource` metadata structure to be modified.  
   

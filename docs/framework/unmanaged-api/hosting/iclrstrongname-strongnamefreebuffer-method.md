@@ -29,7 +29,7 @@ HRESULT StrongNameFreeBuffer (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbMemory`  
  [in] A pointer to the memory to free.  
   

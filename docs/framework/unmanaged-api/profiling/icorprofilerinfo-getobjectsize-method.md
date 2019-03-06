@@ -29,7 +29,7 @@ HRESULT GetObjectSize(
     [out] ULONG  *pcSize);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object.  
   

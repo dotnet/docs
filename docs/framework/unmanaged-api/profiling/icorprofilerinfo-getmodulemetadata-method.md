@@ -31,7 +31,7 @@ HRESULT GetModuleMetaData(
     [out] IUnknown **ppOut);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module to which the interface instance will be mapped.  
   

@@ -31,7 +31,7 @@ HRESULT Request([in] ULONG32 reqCode,
     [out, size_is(outBufferSize)] BYTE* outBuffer);
 ```
 
-### Parameters
+## Parameters
 
 `reqCode`\
 [in] Request type to be sent.

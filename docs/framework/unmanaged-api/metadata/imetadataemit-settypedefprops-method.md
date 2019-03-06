@@ -32,7 +32,7 @@ HRESULT SetTypeDefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] An `mdTypeDef` token obtained from original call to [IMetaDataEmit::DefineTypeDef](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definetypedef-method.md).  
   

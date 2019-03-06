@@ -32,7 +32,7 @@ HRESULT GetClassLayout(
     [out] ULONG *pulClassSize);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classID`  
  [in] The ID of the class for which the layout will be retrieved.  
   

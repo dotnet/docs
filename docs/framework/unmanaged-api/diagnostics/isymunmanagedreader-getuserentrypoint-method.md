@@ -28,7 +28,7 @@ HRESULT GetUserEntryPoint (
     [out, retval]  mdMethodDef  *pToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pToken`  
  [out] A pointer to a variable that receives the entry point.  
   

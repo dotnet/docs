@@ -34,7 +34,7 @@ The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../..
 sn [-quiet][option [parameter(s)]]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Option|Description|  
 |------------|-----------------|  

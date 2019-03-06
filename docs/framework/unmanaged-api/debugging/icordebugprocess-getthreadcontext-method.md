@@ -31,7 +31,7 @@ HRESULT GetThreadContext(
     BYTE context[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The ID of the thread for which to retrieve the context.  
   

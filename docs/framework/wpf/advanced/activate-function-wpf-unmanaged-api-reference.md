@@ -23,7 +23,7 @@ void Activate(
     );  
 ```  
   
-#### Parameters  
+## Parameters  
  pParameters  
  A pointer to the window's activation parameters.  
   

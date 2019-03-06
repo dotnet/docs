@@ -30,7 +30,7 @@ HRESULT Map (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkImp`  
  [in] The metadata token that represents the imported code object.  
   

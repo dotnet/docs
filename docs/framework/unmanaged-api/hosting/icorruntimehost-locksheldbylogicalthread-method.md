@@ -31,7 +31,7 @@ HRESULT LocksHeldByLogicalThread(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCount`  
  [out] A pointer to the number of locks that the current thread holds.  
   

@@ -35,7 +35,7 @@ HRESULT GetVersionString(
     [in, out]  DWORD *pcchBuffer);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzBuffer`  
  [out] The .NET Framework compilation version in the format "v*A*.*B*[.*X*]". *A*, *B*, and *X* are decimal numbers that correspond to the major version, the minor version, and the build number. *X* is optional. If *X* is not present, there is no trailing period.  
   

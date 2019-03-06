@@ -33,7 +33,7 @@ HRESULT DefineCustomAttribute (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkObj`  
  [in] The token for the owner item.  
   

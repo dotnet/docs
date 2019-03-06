@@ -34,7 +34,7 @@ HRESULT GetTypeDefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The TypeDef token that represents the type to return metadata for.  
   

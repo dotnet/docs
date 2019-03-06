@@ -30,7 +30,7 @@ HRESULT ResetEnum (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The enumerator to reset.  
   

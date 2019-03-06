@@ -30,7 +30,7 @@ HRESULT _stdcall DoCallback(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFunc`  
  [in] A pointer to the function to be executed within the apartment.  
   

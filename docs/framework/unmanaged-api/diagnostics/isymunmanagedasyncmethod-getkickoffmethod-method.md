@@ -14,7 +14,7 @@ See [DefineKickoffMethod Method](../../../../docs/framework/unmanaged-api/diagno
 HRESULT GetKickoffMethod(    [out, retval] mdToken* kickoffMethod);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  

@@ -31,7 +31,7 @@ HRESULT Merge (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pImport`  
  [in] A pointer to an [IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) object that identifies the imported scope to be merged.  
   

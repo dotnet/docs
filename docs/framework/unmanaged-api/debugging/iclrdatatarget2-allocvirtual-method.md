@@ -33,7 +33,7 @@ HRESULT AllocVirtual(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `addr`  
  [in] A `CLRDATA_ADDRESS` value that specifies the requested starting address of the memory to be allocated.  
   

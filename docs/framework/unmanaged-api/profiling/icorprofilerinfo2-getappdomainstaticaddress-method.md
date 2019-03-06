@@ -31,7 +31,7 @@ RESULT GetAppDomainStaticAddress(
     [out] void **ppAddress);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The class ID of the class that contains the requested application domain-static field.  
   

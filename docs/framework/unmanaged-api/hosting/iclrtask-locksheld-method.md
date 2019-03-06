@@ -29,7 +29,7 @@ HRESULT LocksHeld (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pLockCount`  
  [out] The number of locks held on the task at the time of the method call.  
   

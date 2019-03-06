@@ -18,7 +18,7 @@ Specifies which version of the Common Language Runtime (CLR) can run the assembl
 -platform:string  
 ```  
   
-#### Parameters  
+## Parameters  
  `string`  
  anycpu (default), anycpu32bitpreferred, ARM, x64, x86, or Itanium.  
   

@@ -32,7 +32,7 @@ BOOLEAN StrongNameSignatureVerification (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The path to the portable executable (.dll or .exe) file for the assembly to verify.  
   

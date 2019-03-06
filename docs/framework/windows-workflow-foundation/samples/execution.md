@@ -8,11 +8,11 @@ This section contains samples that demonstrate executing workflows in Windows Wo
   
 ## In This Section
   
- [Creating and Running a Workflow Instance](../samples/creating-and-running-a-workflow-instance.md)  
+ [Creating and Running a Workflow Instance](creating-and-running-a-workflow-instance.md)  
  Demonstrates how to run a workflow instance. It shows how to execute it synchronously and asynchronously.  
   
- [WorkflowHostingEndpoint Resume Bookmark](../samples/workflowhostingendpoint-resume-bookmark.md)  
+ [WorkflowHostingEndpoint Resume Bookmark](workflowhostingendpoint-resume-bookmark.md)  
  Demonstrates how the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> can be used with <xref:System.ServiceModel.Activities.WorkflowServiceHost> to create workflow instances.  
   
- [Bookmark Resolver for WorkflowHostingEndpoint](../samples/bookmark-resolver-for-workflowhostingendpoint.md)  
+ [Bookmark Resolver for WorkflowHostingEndpoint](bookmark-resolver-for-workflowhostingendpoint.md)  
  Demonstrates how the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> can be used with <xref:System.ServiceModel.Activities.WorkflowServiceHost> to resume custom bookmarks on workflow instances.

@@ -7,20 +7,20 @@ ms.assetid: 84a315b6-3f96-4959-8306-49be37936a23
 This section provides samples that demonstrate basic Windows Workflow Foundation (WF) functionality.  
   
 ## In This Section  
- [Built-in Activities](../samples/built-in-activities.md)  
+ [Built-in Activities](built-in-activities.md)  
  Contains samples that use the built-in activity library.  
   
- [Custom Activities](../samples/custom-activities.md)  
+ [Custom Activities](custom-activities.md)  
  Contains samples that demonstrate creating custom activities.  
   
- [Designer](../samples/designer.md)  
+ [Designer](designer.md)  
  Contains samples that demonstrate how to use [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)].  
   
- [Designer ReHosting](../samples/designer-rehosting.md)  
+ [Designer ReHosting](designer-rehosting.md)  
  Contains samples that demonstrate re-hosting the activity designer.  
   
- [Execution](../samples/execution.md)  
+ [Execution](execution.md)  
  Contains samples that demonstrate executing workflows.
   
- [Tracking](../samples/tracking.md)  
+ [Tracking](tracking.md)  
  Contains samples that demonstrate workflow tracking.

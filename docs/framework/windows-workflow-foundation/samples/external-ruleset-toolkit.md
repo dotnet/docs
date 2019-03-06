@@ -25,7 +25,7 @@ The components of this sample include:
 
 The interaction of the components is shown in Figure 1. The sections that follow describe each component.
 
-![External RuleSet Sample Conceptual Overview](../samples/media/rulesettoolkitsampleoverview.gif "RuleSetToolkitSampleOverview")
+![External RuleSet Sample Conceptual Overview](media/rulesettoolkitsampleoverview.gif "RuleSetToolkitSampleOverview")
 
 Figure 1: Sample Overview
 
@@ -42,7 +42,7 @@ Figure 1: Sample Overview
 
 A screen shot of the RuleSet tool is shown in Figure 2. From the **Rule Store** menu, you can load the available RuleSets from the database and save modified RuleSets back to the store. An application configuration file provides a database connection string for the RuleSet database. When you start the tool, it automatically loads the RuleSets from the configured database.
 
-![External RuleSet Toolkit Sample output](../samples/media/rulesetbrowser.gif "RuleSetBrowser")
+![External RuleSet Toolkit Sample output](media/rulesetbrowser.gif "RuleSetBrowser")
 
 Figure 2: RuleSet Browser
 
@@ -50,13 +50,13 @@ The RuleSet tool applies major and minor version numbers to the RuleSets, allowi
 
 When you click **Edit Rules**, the RuleSet editor starts, as shown in Figure 3.
 
-![External RuleSet Toolkit Sample Output](../samples/media/ruleseteditor.gif "RuleSetEditor")
+![External RuleSet Toolkit Sample Output](media/ruleseteditor.gif "RuleSetEditor")
 
 Figure 3: RuleSet Editor
 
 This is a re-hosting of the editor dialog that is part of the Windows Workflow Foundation Visual Studio add-in. It provides the same functionality, including Intellisense support. The rules are authored against a target type (such as a workflow) that is associated with the RuleSet in the tool; when you click **Browse** in the main tool dialog, the **Workflow/Type Selector** dialog appears, as shown in Figure 4.
 
-![Workflow &#47;Type Selection](../samples/media/71f08d57-e8f2-499e-8151-ece2cbdcabfd.gif "71f08d57-e8f2-499e-8151-ece2cbdcabfd")
+![Workflow &#47;Type Selection](media/71f08d57-e8f2-499e-8151-ece2cbdcabfd.gif "71f08d57-e8f2-499e-8151-ece2cbdcabfd")
 
 Figure 4: Workflow/Type Selector
 
@@ -66,7 +66,7 @@ The path to the assembly file and the type `name are stored with the` RuleSet in
 
 When you click **OK** in the **Workflow/Type Selector** dialog, it validates the selected type against the RuleSet, to ensure that the target type has all the members referenced by the rules. Errors are shown in a **Validation Errors** dialog (see Figure 5). You can choose to continue with the change despite the errors, or click **Cancel**. From the **Tools** menu in the main tool dialog, you can click **Validate** to re-validate the RuleSet version against the target activity.
 
-![Validation Errors from External RuleSet Sample](../samples/media/validationerrorsruleset.png "ValidationErrorsRuleSet")
+![Validation Errors from External RuleSet Sample](media/validationerrorsruleset.png "ValidationErrorsRuleSet")
 
 Figure 5: Validation Errors
 
@@ -76,7 +76,7 @@ After selecting a .rules file, a **RuleSet Selector** dialog appears (see Figure
 
 For each RuleSet it imports, the tool attempts to locate the associated type from the bin\Debug folder under the location of the .rules file (if it exists), based on the members used in the RuleSet. If the tool finds multiple matching types, it attempts to choose a type based on a match between the .rules file name and the type name (for example, the `Workflow1` type corresponds to Workflow1.rules). If multiple matches exist, you are prompted to select the type. If this auto-identification mechanism fails to locate a matching assembly or type, then after importing you can click **Browse** on the main tool dialog to navigate to the associated type.
 
-![Ruleset selector](../samples/media/rulesetselector.gif "RuleSetSelector")
+![Ruleset selector](media/rulesetselector.gif "RuleSetSelector")
 
 Figure 6: RuleSet Selector
 

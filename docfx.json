@@ -217,6 +217,8 @@
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       },
       "titleSuffix": {
+        "_csharplang/spec/*.md": "C# language specification",
+        "_csharplang/proposals/csharp-7.0/*.md": "C# 7.0 language proposals",
         "docs/fsharp/tutorials/**/**.md": "F#",
         "docs/fsharp/language-reference/**/**.md": "F#",
         "docs/core/additional-tools/**.md": ".NET Core",

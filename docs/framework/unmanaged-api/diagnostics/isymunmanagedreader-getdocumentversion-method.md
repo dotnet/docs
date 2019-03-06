@@ -30,7 +30,7 @@ HRESULT GetDocumentVersion (
     [out] BOOL* pbCurrent);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDoc`  
  [in] The specified document.  
   

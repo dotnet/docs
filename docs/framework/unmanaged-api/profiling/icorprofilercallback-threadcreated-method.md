@@ -28,7 +28,7 @@ HRESULT ThreadCreated(
     [in] ThreadID threadId);   
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID of the thread that has been created.  
   

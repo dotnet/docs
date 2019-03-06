@@ -30,7 +30,7 @@ HRESULT GetCheckSum(
     [out, size_is(cData), length_is(*pcData)] BYTE data[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cData`  
  [in] The length of the buffer provided by the `data` parameter  
   

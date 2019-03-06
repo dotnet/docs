@@ -29,7 +29,7 @@ HRESULT SetCLRSyncManager (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pManager`  
  [in] A pointer to an `ICLRSyncManager` instance supplied by the common language runtime (CLR).  
   

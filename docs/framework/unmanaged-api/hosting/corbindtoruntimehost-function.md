@@ -37,7 +37,7 @@ HRESULT CorBindToRuntimeHost (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwszVersion`  
  [in] A string that describes the version of the CLR you want to load.  
   

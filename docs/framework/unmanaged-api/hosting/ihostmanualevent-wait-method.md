@@ -30,7 +30,7 @@ HRESULT Wait (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMilliseconds`  
  [in] The number of milliseconds to wait before returning, if the current `IHostManualEvent` instance is not owned.  
   

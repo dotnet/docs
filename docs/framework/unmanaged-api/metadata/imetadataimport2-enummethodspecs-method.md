@@ -33,7 +33,7 @@ HRESULT EnumMethodSpecs (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator for `rMethodSpecs`.  
   

@@ -29,7 +29,7 @@ HRESULT GetScopeFromOffset(
     [out, retval] ISymUnmanagedScope**  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `offset`  
  [in] A `ULONG` that contains the offset.  
   

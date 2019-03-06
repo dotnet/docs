@@ -32,7 +32,7 @@ HRESULT SetClassLayout (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] An `mdTypeDef` token that specifies the class to be laid out.  
   

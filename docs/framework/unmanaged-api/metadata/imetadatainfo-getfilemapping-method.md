@@ -31,7 +31,7 @@ HRESULT GetFileMapping (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppvData`  
  [out] A pointer to the start of the mapped file.  
   

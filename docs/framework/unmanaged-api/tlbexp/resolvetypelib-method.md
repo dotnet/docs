@@ -32,7 +32,7 @@ HRESULT ResolveTypeLib(
     [out] BSTR     *pbstrResolvedTlbName);  
 ```  
   
-#### Parameters  
+## Parameters  
  `bstrSimpleName`  
  [in] A [BSTR](https://docs.microsoft.com/previous-versions/windows/desktop/automat/bstr) that contains the simple name of the type library.  
   

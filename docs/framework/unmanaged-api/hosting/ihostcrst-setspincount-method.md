@@ -29,7 +29,7 @@ HRESULT SetSpinCount (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwSpinCount`  
  [in] The new spin count for the current `IHostCrst` instance.  
   

@@ -29,7 +29,7 @@ HRESULT GetGCHeapInformation(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pHeapInfo`  
  [out] A pointer to a [COR_HEAPINFO](../../../../docs/framework/unmanaged-api/debugging/cor-heapinfo-structure.md) value that provides general information about the garbage collection heap.  
   

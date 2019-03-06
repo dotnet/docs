@@ -28,7 +28,7 @@ HRESULT ModuleLoadStarted(
     [in] ModuleID moduleId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module that is being loaded.  
   

@@ -31,7 +31,7 @@ HRESULT GetRuntime (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzVersion`  
  [in] The .NET Framework compilation version stored in the metadata, in the format "v*A*.*B*[.*X*]". *A*, *B*, and *X* are decimal numbers that correspond to the major version, the minor version, and the build number.  
   

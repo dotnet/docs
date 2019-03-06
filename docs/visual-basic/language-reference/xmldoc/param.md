@@ -15,7 +15,7 @@ Defines a parameter name and description.
 <param name="name">description</param>  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  The name of a method parameter. Enclose the name in double quotation marks (" ").  
   

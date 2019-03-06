@@ -22,7 +22,7 @@
 ### [Designer](designer.md)
 #### [Removing the View State the Designer Adds to an XAML File](removing-the-view-state-the-designer-adds-to-an-xaml-file.md)
 #### [Programming Model Item Tree](programming-model-item-tree.md)
-#### [Property Grid Extensibliity](property-grid-extensibliity.md)
+#### [Property Grid Extensibility](property-grid-extensibility.md)
 ### [Designer Rehosting](designer-rehosting.md)
 ### [Execution](execution.md)
 #### [Creating and Running a Workflow Instance](creating-and-running-a-workflow-instance.md)

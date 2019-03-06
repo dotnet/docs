@@ -33,7 +33,7 @@ HRESULT GetHashFromFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFilePath`  
  [in] The name of the file to hash.  
   

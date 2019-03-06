@@ -30,7 +30,7 @@ HRESULT GetMetaDataStorage (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppvMd`  
  [in, out] A pointer to a metadata section.  
   

@@ -30,7 +30,7 @@ HRESULT Next([in] ULONG  celt,
              [out] ULONG *pceltFetched;  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of objects to retrieve.  
   

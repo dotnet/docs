@@ -29,7 +29,7 @@ HRESULT GetAddress (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStart`  
  [out] A pointer to the RVA of the code segment.  
   

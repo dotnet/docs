@@ -31,7 +31,7 @@ HRESULT GetTypeLibFromMetaData (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `strModule`  
  [in] The name of the type library's module.  
   

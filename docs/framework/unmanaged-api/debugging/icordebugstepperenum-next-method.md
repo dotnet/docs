@@ -32,7 +32,7 @@ HRESULT Next(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of `ICorDebugStepper` instances to be retrieved.  
   

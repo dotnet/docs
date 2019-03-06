@@ -30,7 +30,7 @@ HRESULT GetVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwVersionHi`  
  [out] The high 32 bits of the version.  
   

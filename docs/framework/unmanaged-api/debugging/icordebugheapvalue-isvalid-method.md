@@ -31,7 +31,7 @@ HRESULT IsValid (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbValid`  
  [out] A pointer to a Boolean value that indicates whether this value on the heap is valid.  
   

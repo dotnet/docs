@@ -35,7 +35,7 @@ HRESULT GetModuleInfo2(
     [out] DWORD                 *pdwModuleFlags);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module for which information will be retrieved.  
   

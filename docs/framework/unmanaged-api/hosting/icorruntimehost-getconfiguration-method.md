@@ -29,7 +29,7 @@ HRESULT GetConfiguration(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pConfiguration`  
  [out] A pointer to the address of an [ICorConfiguration](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md) object that can be used to configure the CLR.  
   

@@ -30,7 +30,7 @@ HRESULT GetThreadOwningMonitorLock (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppThread`  
  [out] The managed thread that owns the monitor lock on this object.  
   

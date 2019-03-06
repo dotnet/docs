@@ -30,7 +30,7 @@ HRESULT CanLaunchOrAttach (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwProcessId`  
  [in] The ID of an existing process.  
   

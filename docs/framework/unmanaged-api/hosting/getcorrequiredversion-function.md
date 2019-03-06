@@ -32,7 +32,7 @@ HRESULT GetCORRequiredVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbuffer`  
  [out] A buffer containing a string that specifies the version number.  
   

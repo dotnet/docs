@@ -32,7 +32,7 @@ HRESULT SetPinvokeMap (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The `mdToken` to which mapping information applies.  
   

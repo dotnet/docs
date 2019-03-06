@@ -16,7 +16,7 @@ HRESULT GetContainerAssembly(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssembly`  
  A pointer to the address of an ICorDebugAssembly object that represents the container assembly, or **null** if the method call fails.  
   

@@ -29,7 +29,7 @@ HRESULT EnumDomains (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [out] An enumerator for the domains.  
   

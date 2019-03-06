@@ -33,7 +33,7 @@ HRESULT CreateInstallReferenceEnum (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRefEnum`  
  [out] The returned `IInstallReferenceEnum` pointer.  
   

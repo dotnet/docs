@@ -31,7 +31,7 @@ HRESULT SetConnectionTasks (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [in] The host-specific identifier for the connection with which to associate the `ppCLRTask` array.  
   

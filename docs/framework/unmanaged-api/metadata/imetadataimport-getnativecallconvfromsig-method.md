@@ -31,7 +31,7 @@ HRESULT GetNativeCallConvFromSig (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pvSig`  
  [in] A pointer to the metadata signature of the method to return the calling convention for.  
   

@@ -34,7 +34,7 @@ HRESULT SetParamProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pd`  
  [in] The token for the target parameter.  
   

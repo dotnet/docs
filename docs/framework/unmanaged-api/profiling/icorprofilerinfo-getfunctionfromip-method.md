@@ -29,7 +29,7 @@ HRESULT GetFunctionFromIP(
     [out] FunctionID *pFunctionId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ip`  
  [in] The instruction pointer in managed code.  
   

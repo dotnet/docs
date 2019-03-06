@@ -29,7 +29,7 @@ HRESULT GetCodeEx(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `flags`  
  [in] An [ILCodeKind](../../../../docs/framework/unmanaged-api/debugging/ilcodekind-enumeration.md) enumeration member that specifies whether the intermediate language (IL) defined by the profiler's ReJIT request is included in the frame.  
   

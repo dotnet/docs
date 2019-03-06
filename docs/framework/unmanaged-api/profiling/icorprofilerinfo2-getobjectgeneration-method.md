@@ -29,7 +29,7 @@ HRESULT GetObjectGeneration(
     [out] COR_PRF_GC_GENERATION_RANGE *range);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object.  
   

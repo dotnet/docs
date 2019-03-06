@@ -29,7 +29,7 @@ HRESULT GetAssemblyFromScope (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ptkAssembly`  
  [out] A pointer to the retrieved `mdAssembly` token that identifies the assembly.  
   

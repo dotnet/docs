@@ -29,7 +29,7 @@ HRESULT RemapToken(
     [in] mdToken  newToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `oldToken`  
  [in] The metadata token that was remapped.  
   

@@ -33,7 +33,7 @@ HRESULT CreateAssemblyNameObject (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssemblyNameObj`  
  [out] The returned `IAssemblyName`.  
   

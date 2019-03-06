@@ -35,7 +35,7 @@ HRESULT SetAssemblyProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pma`  
  [in] The metadata token that specifies the `Assembly` metadata structure to be modified.  
   

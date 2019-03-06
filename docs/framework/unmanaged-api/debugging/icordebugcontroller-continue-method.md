@@ -29,7 +29,7 @@ HRESULT Continue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fIsOutOfBand`  
  [in] Set to `true` if continuing from an out-of-band event; otherwise, set to `false`.  
   

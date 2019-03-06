@@ -30,7 +30,7 @@ HRESULT ObjectsAllocatedByClass(
     [in, size_is(cClassCount)] ULONG   cObjects[] );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cClassCount`  
  [in] The size of the `classIds` and `cObjects` arrays.  
   

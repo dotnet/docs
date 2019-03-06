@@ -30,7 +30,7 @@ HRESULT BeginConnection (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwConnectionId`  
  [in] An identifier to associate with the list of common language runtime (CLR) tasks.  
   

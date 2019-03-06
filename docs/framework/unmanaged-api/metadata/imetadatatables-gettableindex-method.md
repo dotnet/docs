@@ -30,7 +30,7 @@ HRESULT GetTableIndex (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `token`  
  [in] The token that references the table.  
   

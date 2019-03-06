@@ -36,7 +36,7 @@ HRESULT DefineParam (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `md`  
  [in] The token for the method whose parameter is being defined.  
   

@@ -63,7 +63,7 @@ resgen  [/define:symbol1[,symbol2,...]] [/useSourcePath] filename.extension  | /
 resgen filename.extension [outputDirectory]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter or switch|Description|  
 |-------------------------|-----------------|  

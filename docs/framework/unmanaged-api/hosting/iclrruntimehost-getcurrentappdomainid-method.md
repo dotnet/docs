@@ -29,7 +29,7 @@ HRESULT GetCurrentAppDomainId(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwAppDomainId`  
  [out] The numeric identifier of the <xref:System.AppDomain> that is currently executing.  
   

@@ -14,7 +14,7 @@ Allows PresentationHost.exe to discover the raw input devices (Human Interface D
 HRESULT GetRawInputDevices( [out] IEnumRAWINPUTDEVICE **ppEnum );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
   
  [out] A pointer to an [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) for enumerating the raw input devices.  

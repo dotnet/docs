@@ -29,7 +29,7 @@ HRESULT GetAssemblyStore (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssemblyStore`  
  [out] A function pointer to an `IHostAssemblyStore` instance, or null, if the host does not implement `IHostAssemblyStore`.  
   

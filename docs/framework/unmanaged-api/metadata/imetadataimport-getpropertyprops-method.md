@@ -44,7 +44,7 @@ HRESULT GetPropertyProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `prop`  
  [in] A token that represents the property to return metadata for.  
   

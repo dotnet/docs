@@ -26,7 +26,7 @@ HRESULT ApplyMetaData(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleID`  
  [in] The identifier of the module whose metadata was changed.  
   

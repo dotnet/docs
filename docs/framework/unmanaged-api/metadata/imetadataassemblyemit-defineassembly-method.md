@@ -35,7 +35,7 @@ HRESULT DefineAssembly (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbPublicKey`  
  [in] The public key that identifies the publisher of the assembly, or NULL if the assembly is not strongly named.  
   

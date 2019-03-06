@@ -31,7 +31,7 @@ HRESULT  GetCLRAssemblyReferenceList (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppwzAssemblyReferences`  
  [in] An array of null-terminated strings in the form "name, property=value..." that specify a list of partial assembly identities.  
   

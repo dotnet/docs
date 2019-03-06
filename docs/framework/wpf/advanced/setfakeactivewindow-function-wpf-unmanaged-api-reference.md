@@ -22,7 +22,7 @@ void __stdcall SetFakeActiveWindow(
 )  
 ```  
   
-#### Parameters  
+## Parameters  
  hwnd  
  A window handle.  
   

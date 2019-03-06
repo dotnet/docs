@@ -35,7 +35,7 @@ HRESULT ExportNestedType(
 ) PURE;   
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of assembly to export from.  
   

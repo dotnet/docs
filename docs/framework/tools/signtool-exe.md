@@ -21,7 +21,7 @@ Sign Tool is a command-line tool that digitally signs files, verifies signatures
 signtool [command] [options] [file_name | ...]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  

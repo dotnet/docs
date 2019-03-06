@@ -32,7 +32,7 @@ HRESULT EnumFiles (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be a null value for the first call of this method.  
   

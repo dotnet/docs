@@ -30,7 +30,7 @@ HRESULT GetClassFromToken(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `typedef`  
  [in] An `mdTypeDef` metadata token that references the metadata of a class.  
   

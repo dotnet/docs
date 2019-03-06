@@ -29,7 +29,7 @@ HRESULT GetModuleFromScope (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pmd`  
  [out] A pointer to the token representing the module referenced in the current metadata scope.  
   

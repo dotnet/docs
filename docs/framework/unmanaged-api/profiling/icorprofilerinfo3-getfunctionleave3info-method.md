@@ -31,7 +31,7 @@ HRESULT GetFunctionLeave3Info(
             [out] COR_PRF_FUNCTION_ARGUMENT_RANGE *pRetvalRange);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The `FunctionID` of the function that is returning.  
   

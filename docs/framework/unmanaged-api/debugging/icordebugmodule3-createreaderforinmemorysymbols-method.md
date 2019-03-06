@@ -29,7 +29,7 @@ HRESULT CreateReaderForInMemorySymbols (
       [out][iid_is(riid)] void **    ppObj  
 ```  
   
-#### Parameters  
+## Parameters  
  riid  
  [in] The IID of the COM interface to return. Typically, this is an [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md).  
   

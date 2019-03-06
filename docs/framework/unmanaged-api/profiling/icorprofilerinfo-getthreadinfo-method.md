@@ -29,7 +29,7 @@ HRESULT GetThreadInfo(
     [out] DWORD    *pdwWin32ThreadId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID of the thread for which to get the current Win32 ID.  
   

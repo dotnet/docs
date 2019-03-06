@@ -34,7 +34,7 @@ HRESULT GetRanges(
         length_is(*pcRanges)] ULONG32 ranges[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] The document for which the offset is requested.  
   

@@ -30,7 +30,7 @@ HRESULT CreateManualEvent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bInitialState`  
  [in] `true`, if the object is signaled; otherwise, `false`.  
   

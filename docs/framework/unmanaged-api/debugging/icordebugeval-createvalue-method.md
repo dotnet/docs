@@ -33,7 +33,7 @@ HRESULT CreateValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `elementType`  
  [in] A value of the [CorElementType](../../../../docs/framework/unmanaged-api/metadata/corelementtype-enumeration.md) enumeration that specifies the type of the value.  
   

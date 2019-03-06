@@ -33,7 +33,7 @@ HRESULT FunctionRemapOpportunity (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the edited function.  
   

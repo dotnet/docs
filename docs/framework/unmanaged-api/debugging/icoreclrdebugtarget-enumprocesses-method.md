@@ -32,7 +32,7 @@ HRESULT EnumProcesses (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcProcs`  
  [out] The number of processes returned in `ppProcs`. This value can be 0 (zero).  
   

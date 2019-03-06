@@ -36,24 +36,24 @@ HRESULT CreateStream (
 );
 ```
 
-#### Parameters
+## Parameters
 
-`dwFlags`
+`dwFlags`\
 [in] Flags defined in Fusion.idl.
 
-`pszStreamName`
+`pszStreamName`\
 [in] The name of the stream to be created.
 
-`dwFormat`
+`dwFormat`\
 [in] The format of the file to be streamed.
 
-`dwFormatFlags`
+`dwFormatFlags`\
 [in] Format-specific flags defined in Fusion.idl.
 
-`ppIStream`
+`ppIStream`\
 [out] A pointer to the address of the returned [IStream](/windows/desktop/api/objidl/nn-objidl-istream) instance.
 
-`puliMaxSize`
+`puliMaxSize`\
 [in, optional] The maximum size of the stream referenced by `ppIStream`.
 
 ## Requirements
@@ -66,4 +66,4 @@ HRESULT CreateStream (
 
 ## See also
 
-- [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)
+- [IAssemblyCacheItem Interface](iassemblycacheitem-interface.md)

@@ -34,7 +34,7 @@ HRESULT GetPinvokeMap (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] A FieldDef or MethodDef token to get the PInvoke mapping metadata for.  
   

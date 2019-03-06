@@ -29,7 +29,7 @@ HRESULT GetBlockingObjects (
     );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppBlockingObjectEnum`  
  [out] A pointer to the address of an ordered enumeration of [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structures.  
   

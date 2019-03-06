@@ -29,7 +29,7 @@ HRESULT OnAppDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppdomain`  
  [in] A pointer to an [IUnknown](/cpp/atl/iunknown) interface object that represents the new application domain.  
   

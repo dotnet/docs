@@ -32,7 +32,7 @@ HRESULT VirtualQuery (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpAddress`  
  [in] A pointer to the address in virtual memory to be queried.  
   

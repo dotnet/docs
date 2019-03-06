@@ -32,7 +32,7 @@ HRESULT AddImport(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  Unique ID of assembly to be augmented.  
   

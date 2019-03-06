@@ -31,7 +31,7 @@ HRESULT GetScope(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  Unique ID of assembly to import to.  
   

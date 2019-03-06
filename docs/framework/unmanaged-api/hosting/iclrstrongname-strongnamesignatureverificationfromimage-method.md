@@ -32,7 +32,7 @@ HRESULT StrongNameSignatureVerificationFromImage (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbBase`  
  [in] The relative virtual address of the mapped assembly manifest.  
   

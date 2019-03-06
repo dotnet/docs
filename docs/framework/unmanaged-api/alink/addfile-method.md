@@ -33,7 +33,7 @@ HRESULT AddFile(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  Unique ID of the assembly to be augmented.  
   

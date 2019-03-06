@@ -31,7 +31,7 @@ HRESULT CordbCreateObject (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `iDebuggerVersion`  
  [in] Debugger version of the target process. This parameter must be CorDebugVersion_2_0 for remote debugging.  
   

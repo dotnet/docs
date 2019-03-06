@@ -14,7 +14,7 @@ Sets the starting method that initiates the async operation.
 HRESULT DefineKickoffMethod(    [in] mdToken kickoffMethod);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  

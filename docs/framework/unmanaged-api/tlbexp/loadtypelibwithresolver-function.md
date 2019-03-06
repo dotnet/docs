@@ -30,7 +30,7 @@ HRESULT LoadTypeLibWithResolver(
     [out] ITypeLib          **pptlib);  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFile`  
  [in] The file path of the type library.  
   

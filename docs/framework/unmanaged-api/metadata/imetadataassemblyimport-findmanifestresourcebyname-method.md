@@ -30,7 +30,7 @@ HRESULT FindManifestResourceByName (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the resource.  
   

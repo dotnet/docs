@@ -19,7 +19,7 @@ HRESULT GetMethodParameterSymbols(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nativeRVA`  
  [in] The native relative virtual address of the method.  
   

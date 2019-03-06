@@ -31,7 +31,7 @@ HRESULT SetProperty (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `PropertyId`  
  [in] The unique identifier of the property whose value will be set.  
   

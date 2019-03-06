@@ -29,7 +29,7 @@ HRESULT GetCurrentTaskType(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTaskType`  
  [out] A pointer to a value of the [ETaskType](../../../../docs/framework/unmanaged-api/hosting/etasktype-enumeration.md) enumeration that indicates the type of task that is currently executing.  
   

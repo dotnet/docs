@@ -32,12 +32,12 @@ HRESULT ResolveAssembly (
 );
 ```
 
-#### Parameters
+## Parameters
 
-`tkAssemblyRef`
+`tkAssemblyRef`\
 [in] An `mdToken` value that references the assembly.
 
-`ppAssembly`
+`ppAssembly`\
 [out] A pointer to the address of an ICorDebugAssembly object that represents the assembly.
 
 ## Remarks

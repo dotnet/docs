@@ -27,7 +27,7 @@ Gets information about the layout of an object in memory based on its type ident
 HRESULT GetTypeLayout(    [in] COR_TYPEID id,     [out] COR_TYPE_LAYOUT *pLayout);  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [in] A [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) token that specifies the type whose layout is desired.  
   

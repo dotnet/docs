@@ -28,7 +28,7 @@ HRESULT SetUserEntryPoint(
     [in] mdMethodDef entryMethod);  
 ```  
   
-#### Parameters  
+## Parameters  
  `entryMethod`  
  [in] The metadata token for the method that is the user entry point.  
   

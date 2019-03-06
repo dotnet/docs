@@ -38,19 +38,19 @@ HRESULT GetPropertyHandle (
 
 ## Parameters
 
-`vFunc`
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) instance.
 
-`wszPropertyName`
+`wszPropertyName`\
 [in] A null-terminated string of UTF16-encoded characters that contains the property name.
 
-`pType`
+`pType`\
 [out] A pointer to a [`CIMTYPE`](/windows/desktop/api/wbemcli/ne-wbemcli-tag_cimtype_enumeration) enumeration member that represents the CIM type of the property.
 
-`pHandle`
+`pHandle`\
 [out] A pointer to an integer that contains the property handle.
 
 ## Return value

@@ -28,7 +28,7 @@ HRESULT FunctionUnloadStarted(
     [in] FunctionID functionId);   
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function that is being unloaded.  
   

@@ -17,7 +17,6 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-
 # QualifierSet_BeginEnumeration function
 
 Resets an enumerator of the qualifiers of an object to the beginning of the enumeration.
@@ -36,13 +35,13 @@ HRESULT QualifierSet_BeginEnumeration (
 
 ## Parameters
 
-`vFunc`
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
-`lFlags`
+`lFlags`\
 [in] A bitwise combination of the flags or values described in the [Remarks](#remarks) section that specifies the qualifiers to include in the enumeration.
 
 ## Return value

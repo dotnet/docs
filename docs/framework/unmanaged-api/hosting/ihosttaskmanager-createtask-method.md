@@ -32,7 +32,7 @@ HRESULT CreateTask (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `stacksize`  
  [in] The requested size, in bytes, of the requested stack, or 0 (zero) for the default size.  
   

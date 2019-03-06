@@ -34,7 +34,7 @@ HRESULT GetMethodsFromDocumentPosition (
         length_is (*pcMethod)] ISymUnmanagedMethod* pRetVal[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] The specified document.  
   

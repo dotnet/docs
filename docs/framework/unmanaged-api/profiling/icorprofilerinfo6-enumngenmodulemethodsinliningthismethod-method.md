@@ -5,12 +5,9 @@ ms.assetid: b933dfe6-7833-40cb-aad8-40842dc3034f
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-
 # ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod Method
 
-[Supported in the .NET Framework 4.6 and later versions]
-
-Returns an enumerator to all the methods that          are defined in  a given NGen module and          inline a given method.
+Returns an enumerator to all the methods that are defined in a given NGen module and inline a given method.
 
 ## Syntax
 
@@ -24,21 +21,21 @@ HRESULT EnumNgenModuleMethodsInliningThisMethod(
 );
 ```
 
-#### Parameters
+## Parameters
 
-`inlinersModuleId`
+`inlinersModuleId`\
 [in] The identifier of an NGen module.
 
-`inlineeModuleId`
+`inlineeModuleId`\
 [in] The identifier of a module that defines `inlineeMethodId`. See the Remarks section for more information.
 
-`inlineeMethodId`
+`inlineeMethodId`\
 [in] The identifier of an inlined method. See the Remarks section for more information.
 
-`incompleteData`
+`incompleteData`\
 [out] A flag that indicates whether `ppEnum` contains all methods inlining a given method.  See the Remarks section for more information.
 
-`ppEnum`
+`ppEnum`\
 [out] A pointer to the address of an enumerator
 
 ## Remarks
@@ -81,4 +78,5 @@ However because `Fancy.AddTwice` has already inlined `Simple.Add`, it continues 
 **.NET Framework Versions:** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]
 
 ## See also
-- [ICorProfilerInfo6 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo6-interface.md)
+
+- [ICorProfilerInfo6 Interface](icorprofilerinfo6-interface.md)

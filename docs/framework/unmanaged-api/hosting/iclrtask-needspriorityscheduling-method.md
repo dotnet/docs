@@ -29,7 +29,7 @@ HRESULT NeedsPriorityScheduling (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbNeedsPriorityRescheduling`  
  [out] `true`, if the host should attempt to reschedule the current task instance as soon as possible; otherwise, `false`.  
   

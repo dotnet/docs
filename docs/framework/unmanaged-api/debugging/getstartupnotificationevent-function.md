@@ -32,7 +32,7 @@ HRESULT GetStartupNotificationEvent
     );  
 ```  
   
-#### Parameters  
+## Parameters  
  `debuggeePID`  
  [in] Process identifier of the target process from which to receive CLR startup notifications.  
   

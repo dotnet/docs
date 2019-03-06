@@ -32,12 +32,12 @@ HRESULT Break (
 );
 ```
 
-#### Parameters
+## Parameters
 
-`pAppDomain`
+`pAppDomain`\
 [in] A pointer to an ICorDebugAppDomain object that represents the application domain that contains the break instruction.
 
-`thread`
+`thread`\
 [in] A pointer to an ICorDebugThread object that represents the thread that contains the break instruction.
 
 ## Requirements
@@ -52,4 +52,4 @@ HRESULT Break (
 
 ## See also
 
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

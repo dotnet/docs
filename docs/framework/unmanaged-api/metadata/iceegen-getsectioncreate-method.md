@@ -33,7 +33,7 @@ HRESULT GetSectionCreate (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] A pointer to a string that specifies the name of the section to be created.  
   

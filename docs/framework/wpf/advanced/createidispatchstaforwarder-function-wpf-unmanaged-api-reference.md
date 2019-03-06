@@ -23,7 +23,7 @@ HRESULT CreateIDispatchSTAForwarder(
 )  
 ```  
   
-#### Parameters  
+## Parameters  
   
 ## Property Value/Return Value  
  pDispatchDelegate  

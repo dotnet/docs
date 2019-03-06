@@ -34,7 +34,7 @@ HRESULT GetHashFromBlob (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbBlob`  
  [in] A pointer to the address of the memory block to be hashed.  
   

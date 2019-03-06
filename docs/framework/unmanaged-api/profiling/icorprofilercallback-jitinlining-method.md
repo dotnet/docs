@@ -30,7 +30,7 @@ HRESULT JITInlining(
     [out] BOOL      *pfShouldInline);  
 ```  
   
-#### Parameters  
+## Parameters  
  `callerId`  
  [in] The ID of the function into which the `calleeId` function will be inserted.  
   

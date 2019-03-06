@@ -30,7 +30,7 @@ HRESULT GetMetaDataFromTypeLib (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pITL`  
  [in] Pointer to an `ITypeLib` object that represents the type library.  
   

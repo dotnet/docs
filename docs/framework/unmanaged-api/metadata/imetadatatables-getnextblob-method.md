@@ -30,7 +30,7 @@ HRESULT GetNextBlob (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixBlob`  
  [in] The index, as returned from a column of BLOBs.  
   

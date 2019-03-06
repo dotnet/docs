@@ -14,7 +14,7 @@ Notifies [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebu
 HRESULT ProcessStateChanged(   [in] CorDebugStateChange change);  
 ```  
   
-#### Parameters  
+## Parameters  
  `change`  
  [in] A member of the [ProcessStateChanged](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-processstatechanged-method.md) enumeration  
   

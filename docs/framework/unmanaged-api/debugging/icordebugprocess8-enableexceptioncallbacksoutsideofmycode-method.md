@@ -20,7 +20,7 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `enableExceptionsOutsideOfJMC`  
  [in]  
   

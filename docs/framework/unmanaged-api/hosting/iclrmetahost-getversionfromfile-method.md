@@ -31,7 +31,7 @@ HRESULT GetVersionFromFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFilePath`  
  [in] The complete assembly file path.  
   

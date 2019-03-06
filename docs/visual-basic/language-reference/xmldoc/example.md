@@ -15,7 +15,7 @@ Specifies an example for the member.
 <example>description</example>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A description of the code sample.  
   

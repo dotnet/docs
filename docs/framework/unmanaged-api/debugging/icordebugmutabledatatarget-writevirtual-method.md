@@ -17,7 +17,7 @@ HRESULT WriteVirtual(
    [in] ULONG32 bytesRequested);  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] The address at which to write the contents of `pBuffer`.  
   

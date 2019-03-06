@@ -19,7 +19,7 @@ ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
 #pragma warning restore warning-list  
 ```  
   
-#### Parameters  
+## Parameters  
  `warning-list`  
  A comma-separated list of warning numbers. The "CS" prefix is optional.  
   

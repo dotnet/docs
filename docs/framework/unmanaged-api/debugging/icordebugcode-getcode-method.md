@@ -34,7 +34,7 @@ HRESULT GetCode (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `startOffset`  
  [in] The offset of the beginning of the function.  
   

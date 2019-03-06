@@ -33,7 +33,7 @@ HRESULT RunDll32ShimW (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hwnd`  
  [in] A handle to a window in which the command output will be displayed.  
   

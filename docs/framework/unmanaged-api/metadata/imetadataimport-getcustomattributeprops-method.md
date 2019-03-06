@@ -33,7 +33,7 @@ HRESULT GetCustomAttributeProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cv`  
  [in] A metadata token that represents the custom attribute to be retrieved.  
   

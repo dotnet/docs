@@ -34,18 +34,18 @@ HRESULT EnumImportTypes(
 ) PURE;
 ```
 
-#### Parameters
+## Parameters
 
-`hEnum`
+`hEnum`\
 Handle for enumerator.
 
-`dwMax`
+`dwMax`\
 Maximum number of types to retrieve.
 
-`aTypeDefs`
+`aTypeDefs`\
 Receives type tokens, not to exceed `dwMax`.
 
-`pdwCount`
+`pdwCount`\
 Receives actual number of type in `aTypeDefs`.
 
 ## Return Value
@@ -58,6 +58,6 @@ Requires alink.h
 
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

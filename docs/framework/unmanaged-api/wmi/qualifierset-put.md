@@ -38,19 +38,19 @@ HRESULT QualifierSet_Put (
 
 ## Parameters
 
-`vFunc`
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
-`wszName`
+`wszName`\
 [in] The name of the qualifier to write.
 
-`pVal`
+`pVal`\
 [in] A pointer to a valid `VARIANT` that contains the qualifier to write. This parameter cannot be `null`.
 
-`lFlavor`
+`lFlavor`\
 [in] One of the following constants that defines the desired qualifier flavors for this qualifier. The default value is `WBEM_FLAVOR_OVERRIDABLE` (0).
 
 |Constant  |Value  |Description  |

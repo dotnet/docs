@@ -30,7 +30,7 @@ HRESULT SaveDeltaToMemory (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbData`  
  [out] The address at which to begin writing the metadata delta.  
   

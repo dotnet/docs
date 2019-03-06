@@ -29,7 +29,7 @@ HRESULT GetDacl (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppacl`  
  [out] An interface pointer to the Access Control List (ACL).  
   

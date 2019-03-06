@@ -30,7 +30,7 @@ HRESULT DefineModuleRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the other metadata file, typically a DLL. This is the file name only. Do not use a full path name.  
   

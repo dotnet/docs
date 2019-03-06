@@ -30,7 +30,7 @@ HRESULT GetModuleFromMetaDataInterface (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIMetaData`  
  [in] A pointer to an object that is one of the [Metadata interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md).  
   

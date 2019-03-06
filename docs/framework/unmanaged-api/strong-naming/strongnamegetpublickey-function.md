@@ -35,7 +35,7 @@ BOOLEAN StrongNameGetPublicKey (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szKeyContainer`  
  [in] The name of the key container that contains the public/private key pair. If `pbKeyBlob` is null, `szKeyContainer` must specify a valid container within the CSP. In this case, `StrongNameGetPublicKey` extracts the public key from the key pair stored in the container.  
   

@@ -29,7 +29,7 @@ HRESULT EnumerateHeapRegions(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRegions`  
  [out] A pointer to the address of an [ICorDebugHeapSegmentEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapsegmentenum-interface.md) interface object that is an enumerator for the ranges of memory in which objects reside in the managed heap.  
   

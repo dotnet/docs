@@ -29,7 +29,7 @@ HRESULT SetLocale (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lcid`  
  [in] The locale identifier value that maps to the newly assigned geographical culture and language.  
   

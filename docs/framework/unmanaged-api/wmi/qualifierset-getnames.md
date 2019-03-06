@@ -37,13 +37,13 @@ HRESULT QualifierSet_GetNames (
 
 ## Parameters
 
-`vFunc`
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
-`lFlags`
+`lFlags`\
 [in] One of the following flags or values that specifies which names to include in the enumeration.
 
 |Constant  |Value  |Description  |
@@ -52,7 +52,7 @@ HRESULT QualifierSet_GetNames (
 | `WBEM_FLAG_LOCAL_ONLY` | 0x10 | Return only the names of qualifiers specific to the current property or object. <br/> For a property: Return only the qualifiers specific to the property (including overrides), and not those qualifiers propagated from the class definition. <br/> For an instance: Return only instance-specific qualifier names. <br/> For a class: Return only qualifiers specific to the class being derived.
 |`WBEM_FLAG_PROPAGATED_ONLY` | 0x20 | Return only the names of qualifiers propagated from another object. <br/> For a property: Return only the qualifiers propagated to this property from the class definition, and not those from the property itself. <br/> For an instance: Return only those qualifiers propagated from the class definition. <br/> For a class: Return only those qualifier names inherited from the parent classes. |
 
-`pstrNames`
+`pstrNames`\
 [out] A new `SAFEARRAY` that contains the requested names. The array can have 0 elements. If an error occurs, a new `SAFEARRAY` is not returned.
 
 ## Return value

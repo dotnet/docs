@@ -33,7 +33,7 @@ HRESULT ImportTypes(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly to import to.  
   

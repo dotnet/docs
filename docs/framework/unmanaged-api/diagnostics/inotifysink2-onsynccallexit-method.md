@@ -32,7 +32,7 @@ HRESULT OnSyncCallExit
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `in_CallID`  
  [in] ID of the call being exited. See [CALL_ID Structure](../../../../docs/framework/unmanaged-api/diagnostics/call-id-structure.md).  
   

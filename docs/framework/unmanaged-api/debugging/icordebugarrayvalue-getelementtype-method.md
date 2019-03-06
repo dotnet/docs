@@ -29,7 +29,7 @@ HRESULT GetElementType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pType`  
  [out] A pointer to a value of the CorElementType enumeration that indicates the type.  
   

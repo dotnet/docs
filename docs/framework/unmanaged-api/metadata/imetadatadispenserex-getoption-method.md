@@ -30,7 +30,7 @@ HRESULT GetOption (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `optionId`  
  [in] A pointer to a GUID that specifies the option to be retrieved. See the Remarks section for a list of supported GUIDs.  
   

@@ -16,7 +16,7 @@ HRESULT ContinueStatusChanged(
    [in] CORDB_CONTINUE_STATUS continueStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwThreadId`  
  The operating system-defined thread identifier.  
   

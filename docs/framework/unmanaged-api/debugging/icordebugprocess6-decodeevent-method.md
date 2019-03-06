@@ -21,7 +21,7 @@ HRESULT DecodeEvent(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRecord`  
  [in] A pointer to a byte array from a native exception debug event that includes information about a managed debug event.  
   

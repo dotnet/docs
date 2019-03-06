@@ -39,7 +39,7 @@ HRESULT TranslateSigWithScope (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAssemImport`  
  [in] The interface for import assembly (where the signature is defined).  
   

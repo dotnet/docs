@@ -15,7 +15,7 @@ Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL i
 HRESULT FilterInputMessage( [in] MSG* pMsg ) ;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMsg`  
   
  [in] The WM_INPUT message sent to the window that is getting raw input.  

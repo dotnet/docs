@@ -33,7 +33,7 @@ HRESULT GetTypeLibInfo(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFile`  
  [in] The file name of the type library.  
   

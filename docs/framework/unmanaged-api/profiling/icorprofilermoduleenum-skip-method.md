@@ -27,7 +27,7 @@ Advances the enumerator's cursor from its current position so that the specified
 HRESULT Skip([in] ULONG celt);  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of elements to be skipped.  
   

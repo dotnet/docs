@@ -21,7 +21,7 @@ HRESULT SetValue(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `offset`  
  [in] The starting offset in the variable at which to set the value. This parameter is used when writing to member fields in an object.  
   

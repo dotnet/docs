@@ -30,7 +30,7 @@ typedef HRESULT (__stdcall *FExecuteInAppDomainCallback) (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cookie`  
  [in] A pointer to opaque caller-allocated memory that contains the managed code to be executed.  
   

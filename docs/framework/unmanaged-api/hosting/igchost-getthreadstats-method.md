@@ -30,7 +30,7 @@ HRESULT GetThreadStats (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFiberCookie`  
  [in] A pointer to a fiber cookie that specifies the thread for which to retrieve the statistics.  
   

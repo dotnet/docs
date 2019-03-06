@@ -33,7 +33,7 @@ HRESULT GetHashFromAssemblyFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFilePath`  
  [in] The path to the file to be hashed.  
   

@@ -33,7 +33,7 @@ HRESULT GetAppDomainInfo(
     [out] ProcessID   *pProcessId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `appDomainId`  
  [in] The ID of the application domain.  
   

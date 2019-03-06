@@ -32,7 +32,7 @@ HRESULT GetRegisters (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `maskCount`  
  [in] The size, in bytes, of the `mask` array.  
   

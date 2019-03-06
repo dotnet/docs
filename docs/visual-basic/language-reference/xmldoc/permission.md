@@ -15,7 +15,7 @@ Specifies a required permission for the member.
 <permission cref="member">description</permission>  
 ```  
   
-#### Parameters  
+## Parameters  
  `member`  
  A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and translates `member` to the canonical element name in the output XML. Enclose `member` in quotation marks (" ").  
   

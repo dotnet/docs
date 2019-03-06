@@ -29,7 +29,7 @@ HRESULT SwitchToTask (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `option`  
  [in] One of the [WAIT_OPTION](../../../../docs/framework/unmanaged-api/hosting/wait-option-enumeration.md) enumeration values, indicating the action the host should take if the requested operation blocks.  
   

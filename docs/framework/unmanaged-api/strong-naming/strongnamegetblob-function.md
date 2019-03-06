@@ -32,7 +32,7 @@ BOOLEAN StrongNameGetBlob (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] A valid path to the executable file to be loaded.  
   

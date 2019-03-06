@@ -31,12 +31,12 @@ HRESULT EnumMethodInstanceByAddress(
 );
 ```
 
-### Parameters
+## Parameters
 
-`handle`
+`handle`\
 [in] A handle for enumerating the method instances.
 
-`mod`
+`mod`\
 [out] The enumerated method instance.
 
 ## Remarks
@@ -51,6 +51,6 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]   
  
 ## See also
-- [CLRDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)
+- [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)
+- [Debugging](index.md)
+- [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)

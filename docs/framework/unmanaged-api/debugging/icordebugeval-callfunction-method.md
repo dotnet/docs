@@ -18,12 +18,11 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-
 # ICorDebugEval::CallFunction Method
 
 Sets up a call to the specified function.
 
-This method is obsolete in the .NET Framework version 2.0. Use [ICorDebugEval2::CallParameterizedFunction](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-callparameterizedfunction-method.md) instead.
+This method is obsolete in the .NET Framework version 2.0. Use [ICorDebugEval2::CallParameterizedFunction](icordebugeval2-callparameterizedfunction-method.md) instead.
 
 ## Syntax
 
@@ -35,15 +34,15 @@ HRESULT CallFunction (
 );
 ```
 
-#### Parameters
+## Parameters
 
-`pFunction`
+`pFunction`\
 [in] Pointer to an ICorDebugFunction object that specifies the function to be called.
 
-`nArgs`
+`nArgs`\
 [in] The number of arguments for the function.
 
-`ppArgs`
+`ppArgs`\
 [in] An array of pointers, each of which points to an ICorDebugValue object that specifies an argument to be passed to the function.
 
 ## Remarks
@@ -62,4 +61,4 @@ If the function is virtual, `CallFunction` will perform virtual dispatch. If the
 
 ## See also
 
-- [CallParameterizedFunction Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-callparameterizedfunction-method.md)
+- [CallParameterizedFunction Method](icordebugeval2-callparameterizedfunction-method.md)

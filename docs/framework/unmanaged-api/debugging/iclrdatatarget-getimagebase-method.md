@@ -30,7 +30,7 @@ HRESULT GetImageBase (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `imagePath`  
  [in] The file name of the image, including its path.  
   

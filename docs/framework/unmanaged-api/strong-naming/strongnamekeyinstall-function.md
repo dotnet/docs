@@ -22,7 +22,7 @@ ms.author: "ronpet"
 
 Imports a public/private key pair into a container.
 
-This function has been deprecated. Use the [ICLRStrongName::StrongNameKeyInstall](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md) method instead.
+This function has been deprecated. Use the [ICLRStrongName::StrongNameKeyInstall](../hosting/iclrstrongname-strongnamekeyinstall-method.md) method instead.
 
 ## Syntax
 
@@ -34,15 +34,15 @@ BOOLEAN StrongNameKeyInstall (
 );
 ```
 
-#### Parameters
+## Parameters
 
-`wszKeyContainer`
+`wszKeyContainer`\
 [in] The name of the key container. `wszKeyContainer` must be a non-empty string.
 
-`pbKeyBlob`
+`pbKeyBlob`\
 [in] The binary key pair.
 
-`cbKeyBlob`
+`cbKeyBlob`\
 [in] The size, in bytes, of `pbKeyBlob`.
 
 ## Return Value
@@ -51,9 +51,9 @@ BOOLEAN StrongNameKeyInstall (
 
 ## Remarks
 
-Use the [StrongNameKeyDelete](../../../../docs/framework/unmanaged-api/strong-naming/strongnamekeydelete-function.md) function to delete the key container.
+Use the [StrongNameKeyDelete](strongnamekeydelete-function.md) function to delete the key container.
 
-If the `StrongNameKeyInstall` function does not complete successfully, call the [StrongNameErrorInfo](../../../../docs/framework/unmanaged-api/strong-naming/strongnameerrorinfo-function.md) function to retrieve the last generated error.
+If the `StrongNameKeyInstall` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.
 
 ## Requirements
 
@@ -67,6 +67,6 @@ If the `StrongNameKeyInstall` function does not complete successfully, call the 
 
 ## See also
 
-- [StrongNameKeyInstall Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md)
-- [StrongNameKeyDelete Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeydelete-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [StrongNameKeyInstall Method](../hosting/iclrstrongname-strongnamekeyinstall-method.md)
+- [StrongNameKeyDelete Method](../hosting/iclrstrongname-strongnamekeydelete-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

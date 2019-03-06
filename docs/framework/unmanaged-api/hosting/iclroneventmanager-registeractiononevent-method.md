@@ -30,7 +30,7 @@ HRESULT RegisterActionOnEvent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `event`  
  [in] One of the [EClrEvent](../../../../docs/framework/unmanaged-api/hosting/eclrevent-enumeration.md) values, indicating the event for which to register the callback pointer described by `pAction`.  
   

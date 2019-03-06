@@ -29,7 +29,7 @@ HRESULT Collect (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Generation`  
  [in] The generation to collect. A value of -1 forces a collection of all generations.  
   

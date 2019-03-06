@@ -33,7 +33,7 @@ HRESULT SetPermissionSetProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] A metadata token that represents the object to be decorated.  
   

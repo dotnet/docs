@@ -19,7 +19,7 @@ ms.assetid: aad5b16e-a29e-445e-bd0d-eea0b138d7b2
 <c>text</c>  
 ```  
   
-#### Parameters  
+## Parameters  
  `text`  
  The text you would like to indicate as code.  
   

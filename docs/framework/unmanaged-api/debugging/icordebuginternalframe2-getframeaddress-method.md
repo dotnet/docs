@@ -27,7 +27,7 @@ Returns the stack address of the internal frame.
 HRESULT GetFrameAddress([out] CORDB_ADDRESS *pAddress);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [out] Pointer to the `CORDB_ADDRESS` for the internal frame.  
   

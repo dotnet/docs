@@ -203,7 +203,7 @@ virtual bool TranslateAccelerator(System::Windows::Interop::MSG% msg,
     ModifierKeys modifiers) override
 {
     ::MSG m = ConvertMessage(msg);
-```
+}
 
 Both MSGs have the same data, but sometimes it is easier to work with the unmanaged definition, so in this sample you can define the obvious conversion routine:
 

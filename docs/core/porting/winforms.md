@@ -22,12 +22,14 @@ In this article, various names are used to identify types of files used for migr
 ## Prerequisites
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=winforms+core) for any designer work you want to do.
-- C#.
-- [.NET Core 3.0](https://aka.ms/netcore3download)
+  - .NET desktop development workload
+  - .NET cross-platform development workload
+- Your project must be coded in C#.
+- [.NET Core 3.0](https://aka.ms/netcore3download).
 - A working Windows Forms project in a solution that builds and runs without issue.
 
 >[!NOTE]
->**Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019 Preview/RC** supports .NET Core 3.0 projects but doesn't yet support the visual designer for .NET Core 3.0 Windows Forms projects.
+>**Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019 Preview/RC** supports .NET Core 3.0 projects but doesn't yet support the visual designer for .NET Core 3.0 Windows Forms projects. To use the visual designer, you must have a .NET Windows Forms project in your solution that shares the forms files with the .NET Core project.
 
 ### Consider
 
@@ -51,7 +53,7 @@ When porting a .NET Framework Windows Forms application, there are a few things 
 
 01. Visual Studio 2019 Preview/RC doesn't yet support the Forms Designer for .NET Core 3.0
 
-    Currently, you need to keep your existing .NET Framework Windows Forms project file and use that to edit the forms in your project.
+    Currently, you need to keep your existing .NET Framework Windows Forms project file if you want to use the Forms Designer from Visual Studio.
 
 ## Create a new SDK project
 
@@ -251,7 +253,7 @@ Here is an example of what the .NET Core Windows Forms Controls library project 
 
 As you can see, the `<OutputType>` node was removed, which defaults the compiler to produce a library instead of an executable. The `<AssemblyName>` and `<RootNamespace>` were changed. Specifically the `<RootNamespace>` should match the namespace of the Windows Forms Controls library you are porting. And finally, the `<Compile>` and `<EmbeddedResource>` nodes were adjusted to point to the folder of the Windows Forms Controls library you are porting.
 
-Next, add reference to the new .NET Core Windows Forms Control library, to the main .NET Core **MyFormsCore.csproj** project. Add a reference with either Visual Studio or the .NET Core CLI from the **SolutionFolder** directory:
+Next, in the main .NET Core **MyFormsCore.csproj** project add reference to the new .NET Core Windows Forms Control library. Add a reference with either Visual Studio or the .NET Core CLI from the **SolutionFolder** directory:
 
 ```cli
 dotnet add .\MyFormsAppCore\MyFormsCore.csproj reference .\MyFormsControlsCore\MyControlsCoreProject.csproj
@@ -281,14 +283,11 @@ The previous command adds the following to the **MyFormsCore.csproj** project:
   </ItemGroup>
 ```
 
-If you have more problems compiling 
-
-
 ## Windows Forms Designer
 
-Currently, Visual Studio 2019 Preview/RC only support the Forms Designer in .NET Framework projects. To solve this problem, we created a side-by-side .NET Core project. Your solution should include both the .NET Framework and .NET Core projects. Add and design your forms and controls in the .NET Framework project, and based on the file glob patterns we added to the .NET Core projects. Any new or changed files will automatically be included in the .NET Core projects.
+As detailed in this article, Visual Studio 2019 Preview/RC only supports the Forms Designer in .NET Framework projects. By creating a side-by-side .NET Core project, you can test your project with .NET Core while you use the .NET Framework project to design forms. Your solution file includes both the .NET Framework and .NET Core projects. Add and design your forms and controls in the .NET Framework project, and based on the file glob patterns we added to the .NET Core projects, any new or changed files will automatically be included in the .NET Core projects.
 
-Once Visual Studio 2019 supports the Windows Forms Designer, you can copy/paste the content of your .NET Core project file into the .NET Framework project file. Then delete the `<Source>` and `<EmbeddedResource>` items, and fix any project reference paths. This effectively upgrades the .NET Framework project to a .NET Core project.
+Once Visual Studio 2019 supports the Windows Forms Designer, you can copy/paste the content of your .NET Core project file into the .NET Framework project file. Then delete the file glob patterns added with the `<Source>` and `<EmbeddedResource>` items. Fix the paths to any project reference used by your app. This effectively upgrades the .NET Framework project to a .NET Core project.
  
 ## Next steps
 

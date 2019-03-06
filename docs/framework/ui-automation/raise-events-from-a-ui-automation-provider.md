@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation, raising events"
   - "raising UI Automation events"
 ms.assetid: 9fe2f01b-f7d8-49a8-a185-d4472b9976c0
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Raise Events from a UI Automation Provider
 > [!NOTE]

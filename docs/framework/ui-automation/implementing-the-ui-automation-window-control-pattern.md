@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Window control pattern"
   - "Window control pattern"
 ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation Window Control Pattern
 > [!NOTE]

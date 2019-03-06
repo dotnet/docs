@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "UI Automation, registering provider assemblies"
   - "provider assemblies, registering"
 ms.assetid: a03af4d9-2771-43cc-b07b-d468dca23190
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Register a Client-Side Provider Assembly
 > [!NOTE]

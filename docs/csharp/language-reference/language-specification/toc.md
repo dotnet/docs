@@ -18,7 +18,7 @@
 ## [Attributes](../../../../_csharplang/spec/attributes.md)
 ## [Unsafe code](../../../../_csharplang/spec/unsafe-code.md)
 ## [Documentation comments](../../../../_csharplang/spec/documentation-comments.md)
-# [C# 7.0 language proposals] 
+# C# 7.0 language proposals
 ## [Pattern matching](../../../../_csharplang/proposals/csharp-7.0/pattern-matching.md)
 ## [Local functions](../../../../_csharplang/proposals/csharp-7.0/local-functions.md)
 ## [Out variable declarations](../../../../_csharplang/proposals/csharp-7.0/out-var.md)

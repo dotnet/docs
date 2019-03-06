@@ -29,7 +29,7 @@ HRESULT GetSlotIndex(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pSlotIndex`  
  [out] A pointer to the slot-index of a local variable.  
   

@@ -31,7 +31,7 @@ HRESULT _EFN_GetManagedExcepStack(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] The client being debugged.  
   

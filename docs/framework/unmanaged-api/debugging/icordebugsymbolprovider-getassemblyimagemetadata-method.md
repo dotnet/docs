@@ -16,7 +16,7 @@ HRESULT GetAssemblyImageMetadata(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppMemoryBuffer`  
  [out] A pointer to the address of an [ICorDebugMemoryBuffer](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md) object that contains information about the size and address of the merged assembly's metadata.  
   

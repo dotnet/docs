@@ -14,7 +14,7 @@ Instructs the enumerator to skip the next `celt` elements in the enumeration so 
 HRESULT Skip( [in] ULONG celt);  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
   
  [in] Number of elements to be skipped.  

@@ -30,7 +30,7 @@ HRESULT GetMonitorOwner (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cookie`  
  [in] The cookie associated with the monitor.  
   

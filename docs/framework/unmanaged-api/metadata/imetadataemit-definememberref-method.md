@@ -33,7 +33,7 @@ HRESULT DefineMemberRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkImport`  
  [in] Token for the target member's class or interface, if the member is not global; if the member is global, the `mdModuleRef` token for that other file.  
   

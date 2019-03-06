@@ -29,7 +29,7 @@ HRESULT DeleteClassLayout (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] An `mdTypeDef` metadata token that represents the type for which the class layout will be deleted.  
   

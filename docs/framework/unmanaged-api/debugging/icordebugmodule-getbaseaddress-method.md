@@ -29,7 +29,7 @@ HRESULT GetBaseAddress(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [out] A `CORDB_ADDRESS` that specifies the base address of the module.  
   

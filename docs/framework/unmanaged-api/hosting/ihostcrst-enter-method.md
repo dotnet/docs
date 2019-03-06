@@ -29,7 +29,7 @@ HRESULT Enter (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `option`  
  [in] One of the [WAIT_OPTION](../../../../docs/framework/unmanaged-api/hosting/wait-option-enumeration.md) values, indicating what action the host should take if the operation blocks.  
   

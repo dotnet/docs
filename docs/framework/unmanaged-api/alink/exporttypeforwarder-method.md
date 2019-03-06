@@ -31,7 +31,7 @@ HRESULT ExportTypeForwarder(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkAssemblyRef`  
  Reference to the assembly to which the type forwarder refers.  
   

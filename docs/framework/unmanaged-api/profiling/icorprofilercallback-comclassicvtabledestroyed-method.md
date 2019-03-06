@@ -33,7 +33,7 @@ HRESULT COMClassicVTableDestroyed(
     [in] void    *pVTable);  
 ```  
   
-#### Parameters  
+## Parameters  
  `wrappedClasId`  
  [in] The ID of the class for which this vtable was created.  
   

@@ -29,7 +29,7 @@ HRESULT SetProtectedCategories (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `categories`  
  [in] A combination of [EApiCategories](../../../../docs/framework/unmanaged-api/hosting/eapicategories-enumeration.md) values, indicating which categories of managed types and members should be blocked from running in partially trusted code.  
   

@@ -32,7 +32,7 @@ HRESULT GetCustomAttributeByName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkObj`  
  [in] A metadata token representing the object that owns the custom attribute.  
   

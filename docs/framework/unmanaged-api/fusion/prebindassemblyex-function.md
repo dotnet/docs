@@ -35,7 +35,7 @@ HRESULT PreBindAssemblyEx (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppCtx`  
  [in] Identifies the application context.  
   

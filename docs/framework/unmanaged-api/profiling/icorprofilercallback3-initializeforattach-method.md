@@ -30,7 +30,7 @@ HRESULT InitializeForAttach(
             [in] UINT cbClientData);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCorProfilerInfoUnk`  
  [in] An interface pointer for the `ICorProfilerInfo*` interface.  
   

@@ -29,7 +29,7 @@ HRESULT GetMaxThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwMaxWorkerThreads`  
  [out] A pointer to the maximum number of threads that the host maintains in the thread pool.  
   

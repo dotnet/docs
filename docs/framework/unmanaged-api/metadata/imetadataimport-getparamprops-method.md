@@ -38,7 +38,7 @@ HRESULT GetParamProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] A ParamDef token that represents the parameter to return metadata for.  
   

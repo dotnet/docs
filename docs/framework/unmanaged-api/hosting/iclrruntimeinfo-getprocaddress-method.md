@@ -31,7 +31,7 @@ HRESULT GetProcAddress(
      [out, retval] LPVOID *ppProc);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszProcName`  
  [in] The name of the exported function.  
   

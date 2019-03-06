@@ -31,7 +31,7 @@ HRESULT ObjectReferences(
     [in, size_is(cObjectRefs)] ObjectID objectRefIds[] );  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object that is referencing objects.  
   

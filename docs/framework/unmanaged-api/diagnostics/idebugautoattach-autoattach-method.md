@@ -34,7 +34,7 @@ HRESULT AutoAttach
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `guidPort`  
  [in] Always set to `GUID_NULL`.  
   

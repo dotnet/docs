@@ -29,7 +29,7 @@ HRESULT GetExactType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppType`  
  [out] A pointer to the address of an `ICorDebugType` object that represents the <xref:System.Type> of the value represented by this "ICorDebugValue2" object.  
   

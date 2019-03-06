@@ -29,7 +29,7 @@ HRESULT EnumerateTypeParameters (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppTyParEnum`  
  A pointer to the address of a ICorDebugTypeEnum interface object that allows enumeration of type parameters.  
   

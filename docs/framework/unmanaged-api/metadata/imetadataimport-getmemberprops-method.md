@@ -41,7 +41,7 @@ HRESULT GetMemberProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mb`  
  [in] The token that references the member to get the associated metadata for.  
   

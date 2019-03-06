@@ -33,7 +33,7 @@ HRESULT __stdcall StackSnapshotCallback (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcId`  
  [in] If this value is zero, this callback is for a run of unmanaged frames; otherwise, it is the identifier of a managed function and this callback is for a managed frame.  
   

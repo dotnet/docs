@@ -1,13 +1,14 @@
 ---
 title: "Why Transformation Order Is Significant"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
-  - "transformations [Windows Forms], order signficance"
+helpviewer_keywords:
+  - "transformations [Windows Forms], order significance"
 ms.assetid: 37d5f9dc-a5cf-4475-aa5d-34d714e808a9
 ---
+
 # Why Transformation Order Is Significant
 A single <xref:System.Drawing.Drawing2D.Matrix> object can store a single transformation or a sequence of transformations. The latter is called a composite transformation. The matrix of a composite transformation is obtained by multiplying the matrices of individual transformations.  
   
@@ -34,6 +35,7 @@ A single <xref:System.Drawing.Drawing2D.Matrix> object can store a single transf
  The result of the immediately preceding example is the same as the result of the first example in this topic. This is because we reversed both the order of the method calls and the order of the matrix multiplication.  
   
 ## See also
+
 - <xref:System.Drawing.Drawing2D.Matrix>
 - [Coordinate Systems and Transformations](coordinate-systems-and-transformations.md)
 - [Using Transformations in Managed GDI+](using-transformations-in-managed-gdi.md)

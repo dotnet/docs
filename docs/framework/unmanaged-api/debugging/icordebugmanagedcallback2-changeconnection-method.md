@@ -30,7 +30,7 @@ HRESULT ChangeConnection (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an "ICorDebugProcess" object that represents the process containing the connection that changed.  
   

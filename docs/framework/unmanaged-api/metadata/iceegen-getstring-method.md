@@ -32,7 +32,7 @@ HRESULT GetString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `RVA`  
  [in] The relative virtual address of the string to return.  
   

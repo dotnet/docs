@@ -29,7 +29,7 @@ HRESULT GetStats (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStats`  
  [in, out] A [COR_GC_STATS](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md) instance that contains the requested statistics.  
   

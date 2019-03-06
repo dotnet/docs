@@ -36,7 +36,7 @@ HRESULT SetPropertyProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pr`  
  [in] The token for the property to be changed  
   

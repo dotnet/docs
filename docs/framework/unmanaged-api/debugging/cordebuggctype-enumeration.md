@@ -29,7 +29,7 @@ typedef enum CorDebugGCType {
 } CorDebugGCType;  
 ```  
   
-#### Parameters  
+## Parameters  
   
 ## Members  
   

@@ -28,7 +28,7 @@ HRESULT GetLocalVarSigToken(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pmdSig`  
  [out] A pointer to the `mdSignature` token for the local variable signature for this function, or `mdSignatureNil` if there is no signature (that is, if the function doesn't have any local variables).  
   

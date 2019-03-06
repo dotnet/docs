@@ -32,7 +32,7 @@ HRESULT GetProbingAssembliesFromReference (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMachineType`  
  [in] A valid value that specifies the processor architecture, as defined in WinNT.h.  
   

@@ -31,7 +31,7 @@ HRESULT OnComplete (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwErrorCode`  
  [in] An HRESULT value that indicates the status of the bind operation.  
   

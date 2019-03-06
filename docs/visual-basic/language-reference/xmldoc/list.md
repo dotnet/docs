@@ -32,7 +32,7 @@ Defines a list or table.
 </list>  
 ```  
   
-#### Parameters  
+## Parameters  
  `type`  
  The type of the list. Must be a "bullet" for a bulleted list, "number" for a numbered list, or "table" for a two-column table.  
   

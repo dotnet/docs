@@ -30,7 +30,7 @@ HRESULT GetHostManager (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `riid`  
  [in] The `IID` of the interface that the common language runtime (CLR) is querying for.  
   

@@ -30,7 +30,7 @@ HRESULT GetName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpcwBuffer`  
  [in, out] The size of `pwzName` in wide characters, including the null terminator character.  
   

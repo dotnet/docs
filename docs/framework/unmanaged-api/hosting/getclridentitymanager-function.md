@@ -31,7 +31,7 @@ STDAPI GetCLRIdentityManager(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `riid`  
  [in] A `REFIID` (an interface identifier) that specifies which interface to get. This value must be either IID_ICLRAssemblyIdentityManager or IID_ICLRHostBindingPolicyManager.  
   

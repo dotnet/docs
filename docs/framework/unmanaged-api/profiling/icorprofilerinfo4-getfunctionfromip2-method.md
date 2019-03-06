@@ -30,7 +30,7 @@ HRESULT GetFunctionFromIP2(
     [out] ReJITID *pReJitId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ip`  
  [in] The instruction pointer in managed code.  
   

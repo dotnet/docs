@@ -24,7 +24,7 @@ The Type Library Exporter generates a type library that describes the types defi
 tlbexp assemblyName [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  

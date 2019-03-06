@@ -31,7 +31,7 @@ HRESULT SetNotifyFilter
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `in_NotifyFilter`  
  [in] A bitwise combination of the [NOTIFY_FILTER](../../../../docs/framework/unmanaged-api/diagnostics/notify-filter-enumeration.md) enumeration values that identify callbacks for the debugger API.  
   

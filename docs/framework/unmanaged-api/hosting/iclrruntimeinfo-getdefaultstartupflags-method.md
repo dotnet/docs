@@ -30,7 +30,7 @@ HRESULT GetDefaultStartupFlags(
      [in, out]  DWORD *pcchHostConfigFile);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwStartupFlags`  
  [out] A pointer to the host startup flags that are currently set.  
   

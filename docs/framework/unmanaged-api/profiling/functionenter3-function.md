@@ -26,7 +26,7 @@ Notifies the profiler that control is being passed to a function.
 void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionOrRemappedID`  
  [in] The identifier of the function to which control is passed.  
   

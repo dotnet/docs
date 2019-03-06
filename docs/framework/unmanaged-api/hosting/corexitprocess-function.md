@@ -34,7 +34,7 @@ void STDMETHODCALLTYPE CorExitProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `exitCode`  
  An integer that specifies the process exit code.  
   

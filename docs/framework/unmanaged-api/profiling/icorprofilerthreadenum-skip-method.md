@@ -28,7 +28,7 @@ HRESULT Skip (    [in] ULONG celt
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of elements to be skipped.  
   

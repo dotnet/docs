@@ -30,7 +30,7 @@ HRESULT GetAssemblyRefHash(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `FileToken`  
  ID of assembly to which the hash will refer.  
   

@@ -27,7 +27,7 @@ Determines whether a library that was provided by an [ICLRDebuggingLibraryProvid
 HRESULT CanUnloadNow(HMODULE hModule);  
 ```  
   
-#### Parameters  
+## Parameters  
  `hmodule`  
  [in] The base address of a module in the target process.  
   

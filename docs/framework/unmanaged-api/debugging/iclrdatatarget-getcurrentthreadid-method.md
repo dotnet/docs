@@ -29,7 +29,7 @@ HRESULT GetCurrentThreadID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [out] A pointer to the operating system identifier of the current thread for the target process.  
   

@@ -31,7 +31,7 @@ HRESULT COMClassicVTableCreated(
     [in] ULONG   cSlots);  
 ```  
   
-#### Parameters  
+## Parameters  
  `wrappedClasId`  
  [in] The ID of the class for which the vtable has been created.  
   

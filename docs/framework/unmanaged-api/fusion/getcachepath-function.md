@@ -32,7 +32,7 @@ HRESULT GetCachePath (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwCacheFlags`  
  [in] An [ASM_CACHE_FLAGS](../../../../docs/framework/unmanaged-api/fusion/asm-cache-flags-enumeration.md) value that indicates the source of the cached assembly.  
   

@@ -29,7 +29,7 @@ HRESULT IsInMemory(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pInMemory`  
  [out] `true` if this module exists only in memory; otherwise, `false`.  
   

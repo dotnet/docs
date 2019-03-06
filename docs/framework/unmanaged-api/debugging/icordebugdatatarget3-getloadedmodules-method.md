@@ -18,7 +18,7 @@ HRESULT GetLoadedModules(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cRequestedModules`  
  [in] The number of modules for which information is requested.  
   

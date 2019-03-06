@@ -33,7 +33,7 @@ HRESULT LockClrVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hostCallback`  
  [in] The function to be called by the CLR upon initialization.  
   

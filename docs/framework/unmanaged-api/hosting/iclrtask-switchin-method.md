@@ -29,7 +29,7 @@ HRESULT SwitchIn (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadHandle`  
  [in] A handle to the physical thread on which the task represented by the current `ICLRTask` instance is executing.  
   

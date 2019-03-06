@@ -16,7 +16,7 @@ HRESULT GetEventKind(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  pDebugEventKind  
  A pointer to a [CorDebugDebugEventKind](../../../../docs/framework/unmanaged-api/debugging/cordebugdebugeventkind-enumeration.md) enumeration member that indicates the type of event.  
   

@@ -29,7 +29,7 @@ HRESULT GetGuidHeapSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbGuids`  
  [out] A pointer to the size, in bytes, of the GUID heap.  
   

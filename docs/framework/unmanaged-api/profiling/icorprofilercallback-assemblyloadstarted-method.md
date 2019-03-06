@@ -28,7 +28,7 @@ HRESULT AssemblyLoadStarted(
     [in] AssemblyID assemblyId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `assemblyId`  
  [in] Identifies the assembly that is being loaded.  
   

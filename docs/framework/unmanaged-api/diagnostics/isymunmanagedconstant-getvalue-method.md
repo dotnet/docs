@@ -29,7 +29,7 @@ HRESULT GetValue(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pValue`  
  [out] A pointer to a variable that receives the value.  
   

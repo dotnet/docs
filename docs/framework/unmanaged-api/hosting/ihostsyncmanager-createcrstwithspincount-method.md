@@ -30,7 +30,7 @@ HRESULT CreateCrstWithSpinCount (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwSpinCount`  
  [in] Specifies the spin count for the critical section object.  
   

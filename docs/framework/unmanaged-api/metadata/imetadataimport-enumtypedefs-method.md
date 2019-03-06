@@ -32,7 +32,7 @@ HRESULT EnumTypeDefs (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [out] A pointer to the new enumerator. This must be NULL for the first call of this method.  
   

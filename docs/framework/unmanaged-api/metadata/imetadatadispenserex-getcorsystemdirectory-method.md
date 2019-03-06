@@ -31,7 +31,7 @@ HRESULT GetCORSystemDirectory (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szBuffer`  
  [out] The buffer to receive the directory name.  
   

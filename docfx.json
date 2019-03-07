@@ -37,6 +37,7 @@
           "records.md",
           "csharp-7.0/*.md",
           "csharp-7.1/*.md",
+          "csharp-7.2/*.md",
           "csharp-8.0/patterns.md"
         ],
         "src": "_csharplang/proposals",
@@ -186,6 +187,8 @@
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",
         "_csharplang/proposals/csharp-7.0/*.md": "08/13/2018",
+        "_csharplang/proposals/csharp-7.1/*.md": "02/16/2018",
+        "_csharplang/proposals/csharp-7.2/*.md": "01/19/2019",
         "_vblang/spec/*.md": "07/21/2017"
       },
       "ms.technology": {
@@ -220,6 +223,8 @@
       "titleSuffix": {
         "_csharplang/spec/*.md": "C# language specification",
         "_csharplang/proposals/csharp-7.0/*.md": "C# 7.0 language proposals",
+        "_csharplang/proposals/csharp-7.1/*.md": "C# 7.1 language proposals",
+        "_csharplang/proposals/csharp-7.2/*.md": "C# 7.2 language proposals",
         "docs/fsharp/tutorials/**/**.md": "F#",
         "docs/fsharp/language-reference/**/**.md": "F#",
         "docs/core/additional-tools/**.md": ".NET Core",

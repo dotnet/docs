@@ -46,7 +46,7 @@ For more information about microservices architecture, see [.NET Microservices. 
 
 Containers are commonly used in conjunction with a microservices architecture. Containers can also be used to containerize web apps or services that follow any architectural pattern. .NET Framework can be used on Windows containers, but the modularity and lightweight nature of .NET Core makes it a better choice for containers. When creating and deploying a container, the size of its image is much smaller with .NET Core than with .NET Framework. Because it's cross-platform, you can deploy server apps to Linux Docker containers, for example.
 
-Docker containers can be hosted in your own Linux or Windows infrastructure, or in a cloud service such as [Azure Container Service](https://azure.microsoft.com/services/container-service/). Azure Container Service can manage, orchestrate, and scale container-based applications in the cloud.
+Docker containers can be hosted in your own Linux or Windows infrastructure, or in a cloud service such as [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). Azure Kubernetes Service can manage, orchestrate, and scale container-based applications in the cloud.
 
 ### A need for high-performance and scalable systems
 

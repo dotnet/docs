@@ -623,8 +623,8 @@
         <ReturnType>System.ServiceModel.IDuplexContextChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the inner duplex channel.</summary>
-        <value>The inner duplex channel.</value>
+        <summary>Gets the underlying <see cref="T:System.ServiceModel.IClientChannel" /> implementation for the duplex channel.</summary>
+        <value>The inner duplex channel returned by the <see cref="P:System.ServiceModel.ClientBase`1.InnerChannel" /> property cast to an IDuplexContextChannel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

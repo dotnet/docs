@@ -39,3 +39,10 @@
 ### [Default expressions](../../../_csharplang/proposals/csharp-7.1/target-typed-default.md)
 ### [Infer tuple names](../../../_csharplang/proposals/csharp-7.1/infer-tuple-names.md)
 ### [Pattern matching with generics](../../../_csharplang/proposals/csharp-7.1/generics-pattern-match.md)
+## C# 7.2 language proposals
+### [Readonly references](../../../_csharplang/proposals/csharp-7.2/readonly-ref.md)
+### [Compile time safety for ref-like types](../../../_csharplang/proposals/csharp-7.2/span-safety.md)
+### [Non-trailing named arguments](../../../_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md)
+### [Private protected](../../../_csharplang/proposals/csharp-7.2/private-protected.md)
+### [Conditional ref](../../../_csharplang/proposals/csharp-7.2/conditional-ref.md)
+### [Leading digit separator](../../../_csharplang/proposals/csharp-7.2/leading-separator.md)

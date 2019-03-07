@@ -33,7 +33,7 @@ To create the sample project in Visual Studio, select **File** > **New** > **Pro
 
 Visual Studio lists templates for web projects. For our example, select **API** to create an ASP.NET Web API Application.
 
-Verify that you have selected ASP.NET Core 2.1 as the framework. .NET Core 2.1 is included in the last version of Visual Studio 2017 and is automatically installed and configured for you when you install Visual Studio 2017.
+Verify that you've selected ASP.NET Core 2.1 as the framework. .NET Core 2.1 is included in the last version of Visual Studio 2017 and is automatically installed and configured for you when you install Visual Studio 2017.
 
 ![Visual Studio dialog for selecting the type of an ASP.NET Core Web Application with API option selected.](media/create-web-api-application.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a sentiment analysis binary classification scenario
 description: Discover how to use ML.NET in a binary classification scenario to understand how to use sentiment prediction to take the appropriate action.
-ms.date: 03/05/2019
+ms.date: 03/07/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
@@ -13,7 +13,7 @@ This sample tutorial illustrates using ML.NET to create a sentiment classifier v
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
-This tutorial and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+This tutorial and related sample are currently using **ML.NET version 0.11**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 
 ## Sentiment analysis sample overview
 
-The sample is a console app that uses ML.NET to train a model that classifies and predicts sentiment as either positive or negative. The sentiment dataset is from University of California, Irvine (UCI), which is split into a train dataset and a test dataset. The sample evaluates the model with the test dataset for quality analysis. 
+The sample is a console app that uses ML.NET to train a model that classifies and predicts sentiment as either positive or negative. The Yelp sentiment dataset is from University of California, Irvine (UCI), which is split into a train dataset and a test dataset. The sample evaluates the model with the test dataset for quality analysis. 
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis) repository.
 
@@ -69,6 +69,7 @@ You then need to **determine** the sentiment, which helps you with the machine l
 With this problem, you know the following facts:
 
 Training data: website comments can be positive (1) or negative (0) (**sentiment**).
+
 Predict the **sentiment** of a new website comment, either positive or negative, such as in the following examples:
 
 * I love the wait staff here. They rock.
@@ -76,7 +77,7 @@ Predict the **sentiment** of a new website comment, either positive or negative,
 
 The classification machine learning algorithm is best suited for this scenario.
 
-### About the classification task
+### About the classification algorithm
 
 Classification is a machine learning algorithm that uses data to **determine** the category, type, or class of an item or row of data. For example, you can use classification to:
 
@@ -89,6 +90,8 @@ Classification algorithms are frequently one of the following types:
 
 * Binary: either A or B.
 * Multiclass: multiple categories that can be predicted by using a single model.
+
+Because the website comments need to be classified as either positive or negative, you use the Binary Classification algorithm. 
 
 ## Create a console application
 
@@ -172,7 +175,7 @@ public static (IDataView trainSet, IDataView testSet) LoadData(MLContext mlConte
 ```
 ## Load the data
 
-Since your previously created `SentimentData` data model type matches the dataset schema, you can combine the initialization, mapping, and dataset loading into one line of code using the `MLContext.Data.ReadFromTextFile` wrapper for <xref:Microsoft.ML.TextLoaderSaverCatalog.ReadFromTextFile%60%601>. It returns a
+Since your previously created `SentimentData` data model type matches the dataset schema, you can combine the initialization, mapping, and dataset loading into one line of code using the `MLContext.Data.ReadFromTextFile` wrapper for <xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601>. It returns a
 <xref:Microsoft.Data.DataView.IDataView>. 
 
  As the input and output of `Transforms`, a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
@@ -357,7 +360,7 @@ Add a comment to test the trained model's prediction in the `Predict` method by 
 
 [!code-csharp[Predict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#Predict "Create a prediction of sentiment")]
 
-### Using the model: prediction
+### Use the model: prediction
 
 Display `SentimentText` and corresponding sentiment prediction in order to share the results and act on them accordingly. This is called operationalization, using the returned data as part of the operational policies. Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 
@@ -397,7 +400,7 @@ Now that you have a model, you can use that to predict the Toxic or Non Toxic se
 
 [!code-csharp[Predict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#Prediction "Create predictions of sentiments")]
 
-### Using the loaded model for prediction
+### Use the loaded model for prediction
 
 Display `SentimentText` and corresponding sentiment prediction in order to share the results and act on them accordingly. This is called operationalization, using the returned data as part of the operational policies. Create a header for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 

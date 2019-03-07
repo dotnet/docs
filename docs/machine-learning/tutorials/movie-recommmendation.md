@@ -28,10 +28,10 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 ## Machine learning workflow
 You will use the following steps to accomplish your task, as well as any other ML.NET task:
 
-1. Load your data
-1. Build and train your model
-1. Evaluate your model
-1. Use your model
+1. [Load your data](#load-your-data)
+2. [Build and train your model](#build-and-train-your-model)
+3. [Evaluate your model](#evaluate-your-model)
+4. [Use your model](#use-your-model)
 
 ## Prerequisites
 
@@ -64,14 +64,14 @@ There are several ways to approach recommendation problems, such as recommending
 
 <!-- [!code-csharp[UsingStatements](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#UsingStatements "Add necessary usings")] --> 
 
-     ```CSharp
+    ```csharp
     using System;
     using System.IO;
     using Microsoft.ML;
     using Microsoft.ML.Trainers;
     using Microsoft.ML.Data;
     using Microsoft.Data.DataView;
-     ```
+    ```
 
 ### Download your data
 
@@ -190,7 +190,8 @@ Build an `Estimator` with the following steps:
 
 1. After your `LoadData()` method, add the following code in `Main()`: 
 
-    [!code-csharp[BuildTrainModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method in Main")]
+<!--[!code-csharp[BuildTrainModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method in Main")]-->
+
     ```csharp
     ITransformer model = BuildAndTrainModel(mlcontext, trainingDataView);
     ```

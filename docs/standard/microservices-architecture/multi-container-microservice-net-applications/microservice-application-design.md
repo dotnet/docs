@@ -5,6 +5,7 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/02/2018
 ---
+
 # Designing a microservice-oriented application
 
 This section focuses on developing a hypothetical server-side enterprise application.
@@ -85,7 +86,7 @@ Therefore, the units of deployment for microservices (and even for databases in 
 
 ### Additional resources
 
-- **eShopOnContainers GitHub repo. Source code for the reference application**  
+- **eShopOnContainers GitHub repo. Source code for the reference application**\
     [https://aka.ms/eShopOnContainers/](https://aka.ms/eShopOnContainers/)
 
 ## Benefits of a microservice-based solution
@@ -144,7 +145,7 @@ For instance, in our *eShopOnContainers* sample, the catalog, basket, and user p
 
 Another reason for a different technology per microservice might be the nature of each microservice. For example, it might be better to use a functional programming language like F\#, or even a language like R if you are targeting AI and machine learning domains, instead of a more object-oriented programming language like C\#.
 
-The bottom line is that each microservice can have a different internal architecture based on different design patterns. Not all microservices should be implemented using advanced DDD patterns, because that would be over-engineering them. Similarly, complex microservices with ever-changing business logic should not be implemented as CRUD components, or you can end up with low-quality code. 
+The bottom line is that each microservice can have a different internal architecture based on different design patterns. Not all microservices should be implemented using advanced DDD patterns, because that would be over-engineering them. Similarly, complex microservices with ever-changing business logic should not be implemented as CRUD components, or you can end up with low-quality code.
 
 ## The new world: multiple architectural patterns and polyglot microservices
 
@@ -166,7 +167,7 @@ You can also build microservices with many technologies and languages, such as A
 
 The important point is that no particular architecture pattern or style, nor any particular technology, is right for all situations. Figure 6-3 shows some approaches and technologies (although not in any particular order) that could be used in different microservices.
 
-![Multi-architectural pattern and polyglot microservices means you can mix and match languages and tecnologies to the needs of each microservice and still have them talking to each other.](./media/image3.png)
+![Multi-architectural pattern and polyglot microservices means you can mix and match languages and technologies to the needs of each microservice and still have them talking to each other.](./media/image3.png)
 
 **Figure 6-3**. Multi-architectural patterns and the polyglot microservices world
 

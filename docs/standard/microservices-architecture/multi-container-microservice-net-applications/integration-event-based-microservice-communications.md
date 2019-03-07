@@ -89,7 +89,7 @@ In Figure 6-19 you can see how, from an application point of view, the event bus
 
 In Figure 6-20 you can see an abstraction of an event bus with multiple implementations based on infrastructure messaging technologies like RabbitMQ, Azure Service Bus, or another event/message broker.
 
-![It's good to have the event bus defined through an interface so it can be implemented with several tecnologies, like RabbitMQ Azure Service bus or others.](./media/image21.png)
+![It's good to have the event bus defined through an interface so it can be implemented with several technologies, like RabbitMQ Azure Service bus or others.](./media/image21.png)
 
 **Figure 6- 20.** Multiple implementations of an event bus
 

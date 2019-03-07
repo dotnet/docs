@@ -51,7 +51,7 @@
 ### [Indexing `fixed` fields should not require pinning regardless of the movable/unmovable context](../../../_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md)
 ### [Pattern-based `fixed` statement](../../../_csharplang/proposals/csharp-7.3/pattern-based-fixed.md)
 ### [Ref local reassignment](../../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md)
-### [Stackalloc array initializers](../../../_csharplang/proposals/csharp-7.3/stackalloc-array-initializeers.md)
+### [Stackalloc array initializers](../../../_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md)
 ### [Auto-implemented property field-targeted attributes](../../../_csharplang/proposals/csharp-7.3/auto-prop-field-attrs.md)
 ### [expression variables in initializers](../../../_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md)
 ### [Tuple equality (==) and inequality (!=)](../../../_csharplang/proposals/csharp-7.3/tuple-equality.md)

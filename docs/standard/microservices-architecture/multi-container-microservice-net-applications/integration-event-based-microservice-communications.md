@@ -5,6 +5,7 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/02/2018
 ---
+
 # Implementing event-based communication between microservices (integration events)
 
 As described earlier, when you use event-based communication, a microservice publishes an event when something notable happens, such as when it updates a business entity. Other microservices subscribe to those events. When a microservice receives an event, it can update its own business entities, which might lead to more events being published. This is the essence of the eventual consistency concept. This publish/subscribe system is usually performed by using an implementation of an event bus. The event bus can be designed as an interface with the API needed to subscribe and unsubscribe to events and to publish events. It can also have one or more implementations based on any inter-process or messaging communication, such as a messaging queue or a service bus that supports asynchronous communication and a publish/subscribe model.
@@ -60,7 +61,7 @@ There are only a few kinds of libraries you should share across microservices. O
 
 An event bus allows publish/subscribe-style communication between microservices without requiring the components to explicitly be aware of each other, as shown in Figure 6-19.
 
-![Basic pub/sub patter, Microservice A publishes to Event Bus, which distributes to susbcribing microservices B and C, without publisher needing to know the susbcribers.](./media/image20.png)
+![Basic pub/sub patter, Microservice A publishes to Event Bus, which distributes to subscribing microservices B and C, without publisher needing to know the subscribers.](./media/image20.png)
 
 **Figure 6-19**. Publish/subscribe basics with an event bus
 
@@ -70,19 +71,19 @@ The event bus is related to the Observer pattern and the publish-subscribe patte
 
 In the [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern), your primary object (known as the Observable) notifies other interested objects (known as Observers) with relevant information (events).
 
-### Publish/Subscribe (Pub/Sub) pattern 
+### Publish/Subscribe (Pub/Sub) pattern
 
 The purpose of the [Publish/Subscribe pattern](https://docs.microsoft.com/previous-versions/msp-n-p/ff649664(v=pandp.10)) is the same as the Observer pattern: you want to notify other services when certain events take place. But there is an important difference between the Observer and Pub/Sub patterns. In the observer pattern, the broadcast is performed directly from the observable to the observers, so they “know” each other. But when using a Pub/Sub pattern, there is a third component, called broker or message broker or event bus, which is known by both the publisher and subscriber. Therefore, when using the Pub/Sub pattern the publisher and the subscribers are precisely decoupled thanks to the mentioned event bus or message broker.
 
-### The middleman or event bus 
+### The middleman or event bus
 
 How do you achieve anonymity between publisher and subscriber? An easy way is let a middleman take care of all the communication. An event bus is one such middleman.
 
 An event bus is typically composed of two parts:
 
--   The abstraction or interface.
+- The abstraction or interface.
 
--   One or more implementations.
+- One or more implementations.
 
 In Figure 6-19 you can see how, from an application point of view, the event bus is nothing more than a Pub/Sub channel. The way you implement this asynchronous communication can vary. It can have multiple implementations so that you can swap between them, depending on the environment requirements (for example, production versus development environments).
 
@@ -123,6 +124,6 @@ The `Publish` method is straightforward. The event bus will broadcast the integr
 
 The `Subscribe` methods (you can have several implementations depending on the arguments) are used by the microservices that want to receive events. This method has two arguments. The first is the integration event to subscribe to (`IntegrationEvent`). The second argument is the integration event handler (or callback method), named `IIntegrationEventHandler<T>`, to be executed when the receiver microservice gets that integration event message.
 
->[!div class="step-by-step"]
->[Previous](database-server-container.md)
->[Next](rabbitmq-event-bus-development-test-environment.md)
+> [!div class="step-by-step"]
+> [Previous](database-server-container.md)
+> [Next](rabbitmq-event-bus-development-test-environment.md)

@@ -81,9 +81,9 @@ The following table might help you decide how to set these options.
 > [!INFORMATION]
 > For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 >
->Debugging apps in a local Docker container: [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh/](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
+>Debugging apps in a local Docker container: <https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh>
 >
->Deploy an ASP.NET container to a container registry using Visual Studio: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
+>Deploy an ASP.NET container to a container registry using Visual Studio: <https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker>
 
 >[!div class="step-by-step"]
 >[Previous](docker-apps-inner-loop-workflow.md)

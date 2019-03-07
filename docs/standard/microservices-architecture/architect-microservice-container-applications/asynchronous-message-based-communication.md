@@ -1,6 +1,6 @@
 ---
 title: Asynchronous message-based communication
-description: .NET Microservices Architecture for Containerized .NET Applications | Asynchronous message-based communications is an essential concept in the microservices architecture, because it's the best way to keep microservices independent from one another while also beeing synchronized, eventually.
+description: .NET Microservices Architecture for Containerized .NET Applications | Asynchronous message-based communications is an essential concept in the microservices architecture, because it's the best way to keep microservices independent from one another while also being synchronized eventually.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018

@@ -46,3 +46,14 @@
 ### [Private protected](../../../_csharplang/proposals/csharp-7.2/private-protected.md)
 ### [Conditional ref](../../../_csharplang/proposals/csharp-7.2/conditional-ref.md)
 ### [Leading digit separator](../../../_csharplang/proposals/csharp-7.2/leading-separator.md)
+## C# 7.3 language proposals
+### [Unmanaged generic type constraints](../../../_csharplang/proposals/csharp-7.3/blittable.md)
+### [Indexing `fixed` fields should not require pinning regardless of the movable/unmovable context](../../../_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md)
+### [Pattern-based `fixed` statement](../../../_csharplang/proposals/csharp-7.3/pattern-based-fixed.md)
+### [Ref local reassignment](../../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md)
+### [Stackalloc array initializers](../../../_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md)
+### [Auto-implemented property field-targeted attributes](../../../_csharplang/proposals/csharp-7.3/auto-prop-field-attrs.md)
+### [expression variables in initializers](../../../_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md)
+### [Tuple equality (==) and inequality (!=)](../../../_csharplang/proposals/csharp-7.3/tuple-equality.md)
+### [Improved overload candidates](../../../_csharplang/proposals/csharp-7.3/improved-overload-candidates.md)
+

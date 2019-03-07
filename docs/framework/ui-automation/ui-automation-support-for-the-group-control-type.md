@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Group control type"
   - "control types, Group"
 ms.assetid: 18e01bab-01f8-4567-b867-88dce9c4a435
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Group Control Type
 > [!NOTE]
@@ -68,7 +66,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Group>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Group>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

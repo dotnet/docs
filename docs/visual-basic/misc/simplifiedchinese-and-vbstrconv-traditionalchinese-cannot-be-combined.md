@@ -12,7 +12,7 @@ Your application is attempting to combine the `VbStrConv` enumeration members `S
   
 -   Remove either `VbStrConv.SimplifiedChinese` or `VbStrConv.TraditionalChinese`.  
   
-## See Also  
- <xref:System.Globalization>  
-   
- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+## See also
+- <xref:System.Globalization>
+
+- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

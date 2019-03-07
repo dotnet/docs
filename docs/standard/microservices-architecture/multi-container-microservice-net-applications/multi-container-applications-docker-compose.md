@@ -1,6 +1,6 @@
 ---
 title: Defining your multi-container application with docker-compose.yml
-description: .NET Microservices Architecture for Containerized .NET Applications | How to specifiy  microservices composition for a multicontainer application with docker-compose.yml.
+description: How to specify  microservices composition for a multicontainer application with docker-compose.yml.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/02/2018
@@ -452,7 +452,7 @@ To achieve this, the .NET team is providing three basic variants in [microsoft/d
 
 1.  **sdk**: for the development and build scenarios.
 2.  **runtime**: for the production scenario and
-3.  **runtime-deps**: for the production scenario of [self-contained applications](https://docs.microsoft.com/dotnet/core/deploying/index#self-contained-deployments-scd).
+3.  **runtime-deps**: for the production scenario of [self-contained applications](../../../core/deploying/index.md#self-contained-deployments-scd).
 
 Runtime images also provides automatic setting of aspnetcore\_urls to port 80 and the pre-ngend cache of assemblies; to help in getting faster startup.
 
@@ -462,7 +462,7 @@ Runtime images also provides automatic setting of aspnetcore\_urls to port 80 an
     [*https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/*](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
 
 -   **Building Docker Images for .NET Core Applications** <br/>
-    [*https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images*](https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images)
+    [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
 
 >[!div class="step-by-step"]
 >[Previous](data-driven-crud-microservice.md)

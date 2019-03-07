@@ -28,5 +28,5 @@ This example shows how to force PLINQ to bypass its default heuristics and paral
   
 ## See also
 
-- <xref:System.Linq.ParallelEnumerable.AsSequential%2A>  
+- <xref:System.Linq.ParallelEnumerable.AsSequential%2A>
 - [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

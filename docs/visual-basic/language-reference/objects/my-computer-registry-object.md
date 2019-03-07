@@ -24,5 +24,5 @@ Provides properties and methods for manipulating the registry.
   
  **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
-## See Also  
- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+## See also
+- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

@@ -29,7 +29,7 @@ HRESULT SetILFunctionBody(
     [in, size_is(cbNewILMethodHeader)] LPCBYTE pbNewILMethodHeader);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbNewILMethodHeader`  
  [in] The total size of the new CIL, including the header and any structures that come after the body.  
   
@@ -55,5 +55,5 @@ HRESULT SetILFunctionBody(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorProfilerFunctionControl Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctioncontrol-interface.md)
+## See also
+- [ICorProfilerFunctionControl Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctioncontrol-interface.md)

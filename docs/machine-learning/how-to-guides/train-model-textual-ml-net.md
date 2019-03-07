@@ -1,11 +1,16 @@
 ---
 title: Apply feature engineering for model training on textual data - ML.NET
 description: Learn how to apply feature engineering for model training on textual data with ML.NET
-ms.date: 11/07/2018
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to apply feature engineering for my model training on textual data with ML.NET so that I can use my model in the ML.NET processing pipeline.
 ---
 # Apply feature engineering for machine learning model training on textual data with ML.NET
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 You need to convert any non float data to `float` data types since all ML.NET `learners` expect features as a `float vector`.
 
@@ -30,19 +35,14 @@ Sentiment   SentimentText
 ```
 
 ```csharp
-// Create a new context for ML.NET operations. It can be used for exception tracking and logging, 
-// as a catalog of available operations and as the source of randomness.
-var mlContext = new MLContext();
-
 // Define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.TextReader(new TextLoader.Arguments
-{
-    Column = new[] {
+var reader = mlContext.Data.CreateTextLoader(new[] 
+    {
         new TextLoader.Column("IsToxic", DataKind.BL, 0),
         new TextLoader.Column("Message", DataKind.TX, 1),
     },
-    HasHeader = true
-});
+    hasHeader: true
+);
 
 // Read the data.
 var data = reader.Read(dataPath);
@@ -53,27 +53,27 @@ var messageTexts = data.GetColumn<string>(mlContext, "Message").Take(20).ToArray
 // Apply various kinds of text operations supported by ML.NET.
 var pipeline =
     // One-stop shop to run the full text featurization.
-    mlContext.Transforms.Text.FeaturizeText("Message", "TextFeatures")
+    mlContext.Transforms.Text.FeaturizeText("TextFeatures", "Message")
 
     // Normalize the message for later transforms
-    .Append(mlContext.Transforms.Text.NormalizeText("Message", "NormalizedMessage"))
+    .Append(mlContext.Transforms.Text.NormalizeText("NormalizedMessage", "Message"))
 
     // NLP pipeline 1: bag of words.
-    .Append(new WordBagEstimator(mlContext, "NormalizedMessage", "BagOfWords"))
+    .Append(new WordBagEstimator(mlContext, "BagOfWords", "NormalizedMessage"))
 
     // NLP pipeline 2: bag of bigrams, using hashes instead of dictionary indices.
-    .Append(new WordHashBagEstimator(mlContext, "NormalizedMessage", "BagOfBigrams",
+    .Append(new WordHashBagEstimator(mlContext, "BagOfBigrams","NormalizedMessage", 
                 ngramLength: 2, allLengths: false))
 
     // NLP pipeline 3: bag of tri-character sequences with TF-IDF weighting.
-    .Append(mlContext.Transforms.Text.TokenizeCharacters("Message", "MessageChars"))
-    .Append(new NgramEstimator(mlContext, "MessageChars", "BagOfTrichar",
-                ngramLength: 3, weighting: NgramTransform.WeightingCriteria.TfIdf))
+    .Append(mlContext.Transforms.Text.TokenizeCharacters("MessageChars", "Message"))
+    .Append(new NgramExtractingEstimator(mlContext, "BagOfTrichar", "MessageChars", 
+                ngramLength: 3, weighting: NgramExtractingEstimator.WeightingCriteria.TfIdf))
 
     // NLP pipeline 4: word embeddings.
-    .Append(mlContext.Transforms.Text.TokenizeWords("NormalizedMessage", "TokenizedMessage"))
-    .Append(mlContext.Transforms.Text.ExtractWordEmbeedings("TokenizedMessage", "Embeddings",
-                WordEmbeddingsTransform.PretrainedModelKind.GloVeTwitter25D));
+    .Append(mlContext.Transforms.Text.TokenizeWords("TokenizedMessage", "NormalizedMessage"))
+    .Append(mlContext.Transforms.Text.ExtractWordEmbeddings("Embeddings", "TokenizedMessage",
+                WordEmbeddingsExtractingTransformer.PretrainedModelKind.GloVeTwitter25D));
 
 // Let's train our pipeline, and then apply it to the same data.
 // Note that even on a small dataset of 70KB the pipeline above can take up to a minute to completely train.

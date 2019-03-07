@@ -15,12 +15,12 @@ The following simple example shows the standard way to declare events in a base 
 >  Do not declare virtual events in a base class and override them in a derived class. The C# compiler does not handle these correctly and it is unpredictable whether a subscriber to the derived event will actually be subscribing to the base class event.  
   
 ## Example  
- [!code-csharp[csProgGuideEvents#1](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-raise-base-class-events-in-derived-classes_1.cs)]  
+ [!code-csharp[csProgGuideEvents#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEvents/CS/Events.cs#1)]  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Events](../../../csharp/programming-guide/events/index.md)  
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
-- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Events](../../../csharp/programming-guide/events/index.md)
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)
 - [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)

@@ -22,7 +22,7 @@ This topic demonstrates how to extend the [!INCLUDE[TLA#tla_winvista](../../../.
   
  **Internet Explorer with extended glass frame behind address bar.**  
   
- ![IE7 with glass frame extended behind address bar.](../../../../docs/framework/wpf/graphics-multimedia/media/ie7glasstopbar.PNG "IE7glasstopbar")  
+ ![IE7 with glass frame extended behind address bar.](./media/ie7glasstopbar.PNG "IE7glasstopbar")  
   
  To extend the glass frame on a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application, access to unmanaged [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] is needed. The following code example does a Platform Invoke (pinvoke) for the two [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] needed to extend the frame into the client area. Each of these [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] are declared in a class called **NonClientRegionAPI**.  
   
@@ -141,9 +141,9 @@ void OnLoaded(object sender, RoutedEventArgs e)
   
  **Glass Frame Extended into a**  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]  **Application.**  
   
- ![Glass Frame Extended into a WPF application.](../../../../docs/framework/wpf/graphics-multimedia/media/wpfextendedglassintoclient.PNG "WPFextendedGlassIntoClient")  
+ ![Glass Frame Extended into a WPF application.](./media/wpfextendedglassintoclient.PNG "WPFextendedGlassIntoClient")  
   
-## See Also  
- [Desktop Window Manager Overview](/windows/desktop/dwm/dwm-overview)  
- [Desktop Window Manager Blur Overview](/windows/desktop/dwm/blur-ovw)  
- [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea)
+## See also
+- [Desktop Window Manager Overview](/windows/desktop/dwm/dwm-overview)
+- [Desktop Window Manager Blur Overview](/windows/desktop/dwm/blur-ovw)
+- [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea)

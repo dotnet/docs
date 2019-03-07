@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "client-side UI Automation provider, implementation"
   - "provider implementation, UI Automation"
 ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Client-Side UI Automation Provider Implementation
 > [!NOTE]
@@ -45,6 +43,6 @@ ms.author: "mhopkins"
   
  The last two parameters are optional. The client might specify the image name of the target application when it wants to use different providers for different applications. For example, the client might use one provider for a [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] list view control in a known application that supports the Multiple View pattern, and another for a similar control in another known application that does not.  
   
-## See Also  
- [Create a Client-Side UI Automation Provider](../../../docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md)  
- [Implement UI Automation Providers in a Client Application](../../../docs/framework/ui-automation/implement-ui-automation-providers-in-a-client-application.md)
+## See also
+- [Create a Client-Side UI Automation Provider](../../../docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md)
+- [Implement UI Automation Providers in a Client Application](../../../docs/framework/ui-automation/implement-ui-automation-providers-in-a-client-application.md)

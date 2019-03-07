@@ -10,7 +10,7 @@ ms.assetid: 75ea8509-a4ea-4e7a-a2b3-cf72482e9282
 # Generics (C# Programming Guide)
 Generics were added to version 2.0 of the C# language and the common language runtime (CLR). Generics introduce to the .NET Framework the concept of type parameters, which make it possible to design classes and methods that defer the specification of one or more types until the class or method is declared and instantiated by client code. For example, by using a generic type parameter T you can write a single class that other client code can use without incurring the cost or risk of runtime casts or boxing operations, as shown here:  
   
- [!code-csharp[csProgGuideGenerics#1](../../../csharp/programming-guide/generics/codesnippet/CSharp/index_1.cs)]  
+ [!code-csharp[csProgGuideGenerics#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#1)]  
   
 ## Generics Overview  
   
@@ -54,11 +54,11 @@ Generics were added to version 2.0 of the C# language and the common language ru
 ## C# Language Specification  
  For more information, see the [C# Language Specification](~/_csharplang/spec/types.md#constructed-types).  
   
-## See Also
+## See also
 
-- <xref:System.Collections.Generic>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Types](../../../csharp/programming-guide/types/index.md)  
-- [\<typeparam>](../../../csharp/programming-guide/xmldoc/typeparam.md)  
-- [\<typeparamref>](../../../csharp/programming-guide/xmldoc/typeparamref.md)  
-- [Generics in .NET](../../../standard/generics/index.md)  
+- <xref:System.Collections.Generic>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Types](../../../csharp/programming-guide/types/index.md)
+- [\<typeparam>](../../../csharp/programming-guide/xmldoc/typeparam.md)
+- [\<typeparamref>](../../../csharp/programming-guide/xmldoc/typeparamref.md)
+- [Generics in .NET](../../../standard/generics/index.md)

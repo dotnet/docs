@@ -18,8 +18,6 @@ This topic shows how to create new token types with a custom security token prov
   
  For more information about custom credentials and security token manager see the [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
   
- For more information about credentials, security token manager, provider and authenticator classes, see the [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
-  
 ### To create a custom security token provider  
   
 1.  Define a new class derived from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class.  
@@ -48,11 +46,10 @@ This topic shows how to create new token types with a custom security token prov
  [!code-csharp[c_CustomTokenProvider#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtokenprovider/cs/source.cs#0)]
  [!code-vb[c_CustomTokenProvider#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenprovider/vb/source.vb#0)]  
   
-## See Also  
- <xref:System.IdentityModel.Selectors.SecurityTokenProvider>  
- <xref:System.IdentityModel.Selectors.SecurityTokenRequirement>  
- <xref:System.IdentityModel.Selectors.SecurityTokenManager>  
- <xref:System.IdentityModel.Tokens.X509SecurityToken>  
- [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)  
- [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)  
- [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)
+## See also
+- <xref:System.IdentityModel.Selectors.SecurityTokenProvider>
+- <xref:System.IdentityModel.Selectors.SecurityTokenRequirement>
+- <xref:System.IdentityModel.Selectors.SecurityTokenManager>
+- <xref:System.IdentityModel.Tokens.X509SecurityToken>
+- [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)
+- [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)

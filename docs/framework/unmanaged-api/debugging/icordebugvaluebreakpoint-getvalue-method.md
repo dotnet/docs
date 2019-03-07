@@ -29,7 +29,7 @@ HRESULT GetValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppValue`  
  [out] A pointer to the address of an `ICorDebugValue` object.  
   
@@ -42,5 +42,5 @@ HRESULT GetValue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

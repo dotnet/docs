@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Pane control type"
   - "control types, Pane"
 ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Pane Control Type
 > [!NOTE]
@@ -89,7 +87,7 @@ ms.author: "mhopkins"
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|  
 |<ul><li>Pane</li><li>Tree (Scroll Pattern)<br /><br /> <ul><li>TreeItem</li><li>Pane</li><li>Edit (Scroll Pattern</li></ul></li></ul>|-   Pane<br />-   Tree (Scroll Pattern)<br />-   TreeItem<br />-   …Pane<br />-   Edit<br />-   (Scroll Pattern)|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Pane>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Pane>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

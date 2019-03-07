@@ -60,5 +60,5 @@ Profiling is a method of gathering performance data in any development or deploy
 |<xref:System.Diagnostics.PerformanceCounterInstaller?displayProperty=nameWithType>|Specifies an installer for the `PerformanceCounter` component.|  
 |<xref:System.Diagnostics.PerformanceCounterType?displayProperty=nameWithType>|Specifies the formula to calculate the `NextValue` method for a `PerformanceCounter`.|  
   
-## See Also  
- [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)
+## See also
+- [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)

@@ -30,7 +30,7 @@ HRESULT StrongNameHashSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ulHashAlg`  
  [in] The hash algorithm used to compute the buffer size.  
   
@@ -49,5 +49,5 @@ HRESULT StrongNameHashSize (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

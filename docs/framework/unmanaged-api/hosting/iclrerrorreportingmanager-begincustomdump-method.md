@@ -32,7 +32,7 @@ HRESULT BeginCustomDump (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwFlavor`  
  [in] A [ECustomDumpFlavor](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpflavor-enumeration.md) value that indicates the kind of heap dump upon which to build the custom heap dump.  
   
@@ -71,7 +71,7 @@ HRESULT BeginCustomDump (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [CustomDumpItem Structure](../../../../docs/framework/unmanaged-api/hosting/customdumpitem-structure.md)  
- [ECustomDumpFlavor Enumeration](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpflavor-enumeration.md)  
- [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)
+## See also
+- [CustomDumpItem Structure](../../../../docs/framework/unmanaged-api/hosting/customdumpitem-structure.md)
+- [ECustomDumpFlavor Enumeration](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpflavor-enumeration.md)
+- [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)

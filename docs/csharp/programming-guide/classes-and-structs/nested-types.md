@@ -9,7 +9,7 @@ ms.assetid: f2e1b315-e3d1-48ce-977f-7bae0960ba99
 # Nested Types (C# Programming Guide)
 A type defined within a [class](../../../csharp/language-reference/keywords/class.md) or [struct](../../../csharp/language-reference/keywords/struct.md) is called a nested type. For example:  
   
-[!code-csharp[csProgGuideObjects#68](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/nested-types_1.cs)]  
+ [!code-csharp[csProgGuideObjects#68](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#68)]  
   
 Regardless of whether the outer type is a class or a struct, nested types default to [private](../../../csharp/language-reference/keywords/private.md); they are accessible only from their containing type. In the previous example, the `Nested` class is inaccessible to external types. 
 
@@ -23,21 +23,21 @@ You can also specify an [access modifier](../../language-reference/keywords/acce
   
 The following example makes the `Nested` class public:
   
-[!code-csharp[csProgGuideObjects#69](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/nested-types_2.cs)]  
+ [!code-csharp[csProgGuideObjects#69](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#69)]  
   
  The nested, or inner, type can access the containing, or outer, type. To access the containing type, pass it as an argument to the constructor of the nested type. For example:  
   
- [!code-csharp[csProgGuideObjects#70](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/nested-types_3.cs)]  
+ [!code-csharp[csProgGuideObjects#70](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#70)]  
   
  A nested type has access to all of the members that are accessible to its containing type. It can access private and protected members of the containing type, including any inherited protected members.  
   
  In the previous declaration, the full name of class `Nested` is `Container.Nested`. This is the name used to create a new instance of the nested class, as follows:  
   
- [!code-csharp[csProgGuideObjects#71](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/nested-types_4.cs)]  
+ [!code-csharp[csProgGuideObjects#71](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#71)]  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)
 - [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)

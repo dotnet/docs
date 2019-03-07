@@ -38,8 +38,8 @@ from LOB.Orders as o
   
  [!code-csharp[DP EntityServices Concepts 2#CREATEREF](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#createref)]  
   
-## See Also  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [DEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/deref-entity-sql.md)  
- [KEY](../../../../../../docs/framework/data/adonet/ef/language-reference/key-entity-sql.md)  
- [REF](../../../../../../docs/framework/data/adonet/ef/language-reference/ref-entity-sql.md)
+## See also
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [DEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/deref-entity-sql.md)
+- [KEY](../../../../../../docs/framework/data/adonet/ef/language-reference/key-entity-sql.md)
+- [REF](../../../../../../docs/framework/data/adonet/ef/language-reference/ref-entity-sql.md)

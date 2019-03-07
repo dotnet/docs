@@ -29,7 +29,7 @@ HRESULT GetAddress (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [out] Pointer to a `CORDB_ADDRESS` object that specifies the address of this value object.  
   
@@ -45,5 +45,5 @@ HRESULT GetAddress (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

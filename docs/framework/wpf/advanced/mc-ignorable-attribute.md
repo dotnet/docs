@@ -53,14 +53,14 @@ Specifies which [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md
   
  If you are implementing a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor, your processor implementation must not raise parsing or processing errors on type resolution for any element or attribute that is qualified by a prefix that is identified as `mc:Ignorable`. But your processor implementation can still raise exceptions that are a secondary result of an element failing to load or be processed, such as the one-child element example given earlier.  
   
- By default, a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor will ignore content within an ignored element. However, you can specify an additional attribute, [mc:ProcessContent Attribute](../../../../docs/framework/wpf/advanced/mc-processcontent-attribute.md), to require continued processing of content within an ignored element by the next available parent element.  
+ By default, a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor will ignore content within an ignored element. However, you can specify an additional attribute, [mc:ProcessContent Attribute](mc-processcontent-attribute.md), to require continued processing of content within an ignored element by the next available parent element.  
   
  Multiple prefixes can be specified in the attribute, using one or more white-space characters as the separator, for example: `mc:Ignorable="ignore1 ignore2"`.  
 
  The [!INCLUDE[TLA#tla_mcxmlnsv1](../../../../includes/tlasharptla-mcxmlnsv1-md.md)] namespace defines other elements and attributes that are not documented within this area of the [!INCLUDE[TLA#tla_sdk](../../../../includes/tlasharptla-sdk-md.md)]. For more information, see [XML Markup Compatibility Specification](/office/open-xml/introduction-to-markup-compatibility#markup-compatibility-in-the-open-xml-file-formats-specification).  
   
-## See Also  
- <xref:System.Windows.Markup.XamlReader>  
- [PresentationOptions:Freeze Attribute](../../../../docs/framework/wpf/advanced/presentationoptions-freeze-attribute.md)  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+## See also
+- <xref:System.Windows.Markup.XamlReader>
+- [PresentationOptions:Freeze Attribute](presentationoptions-freeze-attribute.md)
+- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [Documents in WPF](documents-in-wpf.md)

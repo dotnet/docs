@@ -30,7 +30,7 @@ HRESULT GetMetaDataInterface (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `riid`  
  [in] The reference ID that specifies the metadata interface.  
   
@@ -49,5 +49,5 @@ HRESULT GetMetaDataInterface (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata](../../../../docs/framework/unmanaged-api/metadata/index.md)
+## See also
+- [Metadata](../../../../docs/framework/unmanaged-api/metadata/index.md)

@@ -42,7 +42,7 @@ The first step is to create the [!INCLUDE[TLA#tla_winforms](../../../../includes
 
 2.  Add a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]<xref:System.Windows.Controls.UserControl> element called `SimpleControl` to the project.
 
-3.  Use the <xref:System.Windows.Forms.Integration.ElementHost> control to place a `SimpleControl` element on the form. For more information, see [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md).
+3.  Use the <xref:System.Windows.Forms.Integration.ElementHost> control to place a `SimpleControl` element on the form. For more information, see [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md).
 
 ## Adding Localizable Content
 
@@ -54,7 +54,7 @@ Next, you will add a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptl
 
 2.  Set the content of the <xref:System.Windows.Controls.Button> control using the following code.
 
-     [!code-xaml[LocalizingWpfInWf#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl0.xaml#10)]
+     [!code-xaml[LocalizingWpfInWf#10](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl0.xaml#10)]
 
 3.  In **Solution Explorer**, double-click **Form1** to open it in the Windows Forms Designer.
 
@@ -86,7 +86,7 @@ The Windows Forms Designer provides settings for enabling localization in a sate
 
 7.  Copy the following code into the `Form1` constructor, preceding the call to `InitializeComponent`.
 
-     [!code-csharp[LocalizingWpfInWf#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/Form1.cs#2)]
+     [!code-csharp[LocalizingWpfInWf#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/Form1.cs#2)]
 
 8.  In **Solution Explorer**, right-click **LocalizingWpfInWf** and click **Unload Project**.
 
@@ -112,7 +112,7 @@ You can map your localizable content to resource assemblies by using resource id
 
 ### To assign resource identifiers
 
-1.  From the Start Menu, open the Visual Studio Command Prompt.
+1.  From the Start Menu, open the Developer Command Prompt for Visual Studio.
 
 2.  Use the following command to assign resource identifiers to your localizable content.
 
@@ -122,7 +122,7 @@ You can map your localizable content to resource assemblies by using resource id
 
 3.  In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the Code Editor. You will see that the `msbuild` command has added the `Uid` attribute to all the elements. This facilitates localization through the assignment of resource identifiers.
 
-     [!code-xaml[LocalizingWpfInWf#20](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl.xaml#20)]
+     [!code-xaml[LocalizingWpfInWf#20](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl.xaml#20)]
 
 4.  Press **F6** to build the solution.
 
@@ -132,7 +132,7 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
 ### To produce a satellite assembly
 
-1.  Copy LocBaml.exe to your project's obj\Debug folder. For more information, see [Localize an Application](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md).
+1.  Copy LocBaml.exe to your project's obj\Debug folder. For more information, see [Localize an Application](how-to-localize-an-application.md).
 
 2.  In the Command Prompt window, use the following command to extract resource strings into a temporary file.
 
@@ -166,10 +166,10 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
      The application shows the localized strings instead of the English strings.
 
-## See Also
+## See also
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Localize an Application](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md)
-- [Walkthrough: Localizing Windows Forms](https://msdn.microsoft.com/library/9a96220d-a19b-4de0-9f48-01e5d82679e5)
+- [Localize an Application](how-to-localize-an-application.md)
+- [Walkthrough: Localizing Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

@@ -118,6 +118,6 @@ Tasks illustrated in this walkthrough include:
     End Sub  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.MaskedTextBox>  
- [MaskedTextBox Control](../../../../docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.MaskedTextBox>
+- [MaskedTextBox Control](../../../../docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)

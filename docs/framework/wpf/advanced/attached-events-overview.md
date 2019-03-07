@@ -20,7 +20,7 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you have read [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md) and [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md).  
+ This topic assumes that you have read [Routed Events Overview](routed-events-overview.md) and [XAML Overview (WPF)](xaml-overview-wpf.md).  
   
 <a name="Syntax"></a>   
 ## Attached Event Syntax  
@@ -30,7 +30,7 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
  For example, the following is the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for attaching a handler for a custom `NeedsCleaning` attached event:  
   
- [!code-xaml[WPFAquariumSln#AE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquarium/Window1.xaml#ae)]  
+ [!code-xaml[WPFAquariumSln#AE](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquarium/Window1.xaml#ae)]  
   
  Note the `aqua:` prefix; the prefix is necessary in this case because the attached event is a custom event that comes from a custom mapped xmlns.  
   
@@ -52,7 +52,7 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
  In general, a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] attached event is not very different from a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] routed event. The differences are how the event is sourced and how it is exposed by a class as a member (which also affects the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] handler syntax).  
   
- However, as noted earlier, the existing [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] attached events are not particularly intended for handling in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. More often, the purpose of the event is to enable a composited element to report a state to a parent element in compositing, in which case the event is usually raised in code and also relies on class handling in the relevant parent class. For instance, items within a <xref:System.Windows.Controls.Primitives.Selector> are expected to raise the attached <xref:System.Windows.Controls.Primitives.Selector.Selected> event, which is then class handled by the <xref:System.Windows.Controls.Primitives.Selector> class and then potentially converted by the <xref:System.Windows.Controls.Primitives.Selector> class into a different routed event, <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged>. For more information on routed events and class handling, see [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md).  
+ However, as noted earlier, the existing [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] attached events are not particularly intended for handling in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. More often, the purpose of the event is to enable a composited element to report a state to a parent element in compositing, in which case the event is usually raised in code and also relies on class handling in the relevant parent class. For instance, items within a <xref:System.Windows.Controls.Primitives.Selector> are expected to raise the attached <xref:System.Windows.Controls.Primitives.Selector.Selected> event, which is then class handled by the <xref:System.Windows.Controls.Primitives.Selector> class and then potentially converted by the <xref:System.Windows.Controls.Primitives.Selector> class into a different routed event, <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged>. For more information on routed events and class handling, see [Marking Routed Events as Handled, and Class Handling](marking-routed-events-as-handled-and-class-handling.md).  
   
 <a name="Custom"></a>   
 ## Defining Your Own Attached Events as Routed Events  
@@ -74,10 +74,10 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
  For example, the following code defines the `NeedsCleaning` attached event on the owner class `Aquarium`, using the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] attached event strategy of declaring the attached event as a routed event.  
   
- [!code-csharp[WPFAquariumSln#AECode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#aecode)]
- [!code-vb[WPFAquariumSln#AECode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#aecode)]  
+ [!code-csharp[WPFAquariumSln#AECode](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#aecode)]
+ [!code-vb[WPFAquariumSln#AECode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#aecode)]  
   
- Note that the method used to establish the attached event identifier field, <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>, is actually the same method that is used to register a non-attached routed event. Attached events and routed events all are registered to a centralized internal store. This event store implementation enables the "events as an interface" conceptual consideration that is discussed in [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md).  
+ Note that the method used to establish the attached event identifier field, <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>, is actually the same method that is used to register a non-attached routed event. Attached events and routed events all are registered to a centralized internal store. This event store implementation enables the "events as an interface" conceptual consideration that is discussed in [Routed Events Overview](routed-events-overview.md).  
   
 <a name="Raising"></a>   
 ## Raising a WPF Attached Event  
@@ -85,7 +85,7 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
  However, if you are defining a custom attached event based on the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] model of basing attached events on <xref:System.Windows.RoutedEvent>, you can use <xref:System.Windows.UIElement.RaiseEvent%2A> to raise an attached event from any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement>. Raising a routed event (attached or not) requires that you declare a particular element in the element tree as the event source; that source is reported as the <xref:System.Windows.UIElement.RaiseEvent%2A> caller. Determining which element is reported as the source in the tree is your service's responsibility  
   
-## See Also  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)  
- [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+## See also
+- [Routed Events Overview](routed-events-overview.md)
+- [XAML Syntax In Detail](xaml-syntax-in-detail.md)
+- [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)

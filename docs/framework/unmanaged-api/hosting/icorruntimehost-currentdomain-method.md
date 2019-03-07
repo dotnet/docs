@@ -29,7 +29,7 @@ HRESULT CurrentDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [out] A pointer of type <xref:System.AppDomain?displayProperty=nameWithType> that represents the thread's current application domain. This pointer is typed `IUnknown`, so callers should generally call `QueryInterface` to obtain a pointer of type <xref:System._AppDomain>.  
   
@@ -51,7 +51,7 @@ HRESULT CurrentDomain (
   
  **.NET Framework Versions:** 1.0, 1.1  
   
-## See Also  
- <xref:System._AppDomain>  
- <xref:System.AppDomain>  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+- <xref:System._AppDomain>
+- <xref:System.AppDomain>
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

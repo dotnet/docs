@@ -12,5 +12,5 @@ Windows Communication Foundation (WCF) depends on several resources that are pro
 |Internet Information Services (IIS)|Required if you want to use IIS to host your application.|  
 |Windows Process Activation Service (WAS)|Required if you want to use WAS to host your application.|  
   
-## See Also  
- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)
+## See also
+- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)

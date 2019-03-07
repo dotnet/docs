@@ -21,7 +21,7 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
 -   Host a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. With this technique, you can use an existing custom [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] control in the context of other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content, and pass data across the boundaries.  
   
- Each of these techniques is conceptually introduced in this topic. For a more code-oriented illustration of hosting [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] in [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)], see [Walkthrough: Hosting WPF Content in Win32](../../../../docs/framework/wpf/advanced/walkthrough-hosting-wpf-content-in-win32.md). For a more code-oriented illustration of hosting [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Walkthrough: Hosting a Win32 Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-win32-control-in-wpf.md).  
+ Each of these techniques is conceptually introduced in this topic. For a more code-oriented illustration of hosting [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] in [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)], see [Walkthrough: Hosting WPF Content in Win32](walkthrough-hosting-wpf-content-in-win32.md). For a more code-oriented illustration of hosting [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Walkthrough: Hosting a Win32 Control in WPF](walkthrough-hosting-a-win32-control-in-wpf.md).  
   
 <a name="projects"></a>   
 ## WPF Interoperation Projects  
@@ -44,11 +44,11 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
 <a name="hwnds"></a>   
 ## How WPF Uses Hwnds  
- To make the most of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] "HWND interop", you need to understand how [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses HWNDs. For any HWND, you cannot mix [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering with [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] rendering or [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] / [!INCLUDE[TLA2#tla_gdiplus](../../../../includes/tla2sharptla-gdiplus-md.md)] rendering. This has a number of implications. Primarily, in order to mix these rendering models at all, you must create an interoperation solution, and use designated segments of interoperation for each rendering model that you choose to use. Also, the rendering behavior creates an "airspace" restriction for what your interoperation solution can accomplish. The "airspace" concept is explained in greater detail in the topic [Technology Regions Overview](../../../../docs/framework/wpf/advanced/technology-regions-overview.md).  
+ To make the most of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] "HWND interop", you need to understand how [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses HWNDs. For any HWND, you cannot mix [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering with [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] rendering or [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] / [!INCLUDE[TLA2#tla_gdiplus](../../../../includes/tla2sharptla-gdiplus-md.md)] rendering. This has a number of implications. Primarily, in order to mix these rendering models at all, you must create an interoperation solution, and use designated segments of interoperation for each rendering model that you choose to use. Also, the rendering behavior creates an "airspace" restriction for what your interoperation solution can accomplish. The "airspace" concept is explained in greater detail in the topic [Technology Regions Overview](technology-regions-overview.md).  
   
  All [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements on the screen are ultimately backed by a HWND. When you create a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Window>, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] creates a top-level HWND, and uses an <xref:System.Windows.Interop.HwndSource> to put the <xref:System.Windows.Window> and its [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content inside the HWND.  The rest of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in the application shares that singular HWND. An exception is menus, combo box drop downs, and other pop-ups. These elements create their own top-level window, which is why a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] menu can potentially go past the edge of the window HWND that contains it. When you use <xref:System.Windows.Interop.HwndHost> to put an HWND inside [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] informs [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] how to position the new child HWND relative to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Window> HWND.  
   
- A related concept to HWND is transparency within and between each HWND. This is also discussed in the topic [Technology Regions Overview](../../../../docs/framework/wpf/advanced/technology-regions-overview.md).  
+ A related concept to HWND is transparency within and between each HWND. This is also discussed in the topic [Technology Regions Overview](technology-regions-overview.md).  
   
 <a name="hosting_a_wpf_page"></a>   
 ## Hosting WPF Content in a Microsoft Win32 Window  
@@ -81,7 +81,7 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
 > [!NOTE]
 >  You can do some or all of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content class definition for Step One in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] using the default partial class of the content class, if you produce a separate assembly and then reference it. Although you typically include an <xref:System.Windows.Application> object as part of compiling the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] into an assembly, you do not end up using that <xref:System.Windows.Application> as part of the interoperation, you just use one or more of the root classes for [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files referred to by the application and reference their partial classes. The remainder of the procedure is essentially similar to that outlined above.  
 >   
->  Each of these steps is illustrated through code in the topic [Walkthrough: Hosting WPF Content in Win32](../../../../docs/framework/wpf/advanced/walkthrough-hosting-wpf-content-in-win32.md).  
+>  Each of these steps is illustrated through code in the topic [Walkthrough: Hosting WPF Content in Win32](walkthrough-hosting-wpf-content-in-win32.md).  
   
 <a name="hosting_an_hwnd"></a>   
 ## Hosting a Microsoft Win32 Window in WPF  
@@ -109,7 +109,7 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
  Following these steps creates an application that works with mouse input. You can add tabbing support for your hosted window by implementing the <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
   
- Each of these steps is illustrated through code in the topic [Walkthrough: Hosting a Win32 Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-win32-control-in-wpf.md).  
+ Each of these steps is illustrated through code in the topic [Walkthrough: Hosting a Win32 Control in WPF](walkthrough-hosting-a-win32-control-in-wpf.md).  
   
 ### Hwnds Inside WPF  
  You can think of <xref:System.Windows.Interop.HwndHost> as a special control. (Technically, <xref:System.Windows.Interop.HwndHost> is a <xref:System.Windows.FrameworkElement> derived class, not a <xref:System.Windows.Controls.Control> derived class, but it can be considered a control for purposes of interoperation.) <xref:System.Windows.Interop.HwndHost> abstracts the underlying [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] nature of the hosted content such that the remainder of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] considers the hosted content to be another control-like object, which should render and process input. <xref:System.Windows.Interop.HwndHost> generally behaves like any other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.FrameworkElement>, although there are some important differences around output (drawing and graphics) and input (mouse and keyboard) based on limitations of what the underlying HWNDs can support.  
@@ -150,9 +150,9 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
  The interfaces only provide support for what happens on the transition between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] regions. Within the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] region, tabbing behavior is entirely controlled by the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] implemented logic for tabbing, if any.  
   
-## See Also  
- <xref:System.Windows.Interop.HwndHost>  
- <xref:System.Windows.Interop.HwndSource>  
- <xref:System.Windows.Interop>  
- [Walkthrough: Hosting a Win32 Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-win32-control-in-wpf.md)  
- [Walkthrough: Hosting WPF Content in Win32](../../../../docs/framework/wpf/advanced/walkthrough-hosting-wpf-content-in-win32.md)
+## See also
+- <xref:System.Windows.Interop.HwndHost>
+- <xref:System.Windows.Interop.HwndSource>
+- <xref:System.Windows.Interop>
+- [Walkthrough: Hosting a Win32 Control in WPF](walkthrough-hosting-a-win32-control-in-wpf.md)
+- [Walkthrough: Hosting WPF Content in Win32](walkthrough-hosting-wpf-content-in-win32.md)

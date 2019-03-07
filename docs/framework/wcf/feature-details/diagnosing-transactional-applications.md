@@ -114,7 +114,7 @@ This topic describes how to use the Windows Communication Foundation (WCF) manag
   
      This also enables WCF tracing, as WCF also utilizes the <xref:System.Transactions> infrastructure.  
   
-## See Also  
- [Administration and Diagnostics](../../../../docs/framework/wcf/diagnostics/index.md)  
- [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
- [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
+## See also
+- [Administration and Diagnostics](../../../../docs/framework/wcf/diagnostics/index.md)
+- [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
+- [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)

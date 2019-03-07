@@ -1,9 +1,9 @@
 ---
-title: "&lt;sslStreamSecurity&gt;"
+title: "<sslStreamSecurity>"
 ms.date: "03/30/2017"
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
 ---
-# &lt;sslStreamSecurity&gt;
+# \<sslStreamSecurity>
 Represents a custom binding element that supports channel security using an SSL stream.  
   
  \<system.serviceModel>  
@@ -15,7 +15,8 @@ Represents a custom binding element that supports channel security using an SSL 
 ## Syntax  
   
 ```xml  
-<sslStreamSecurity requireClientCertificate="Boolean"      sslProtocols="Ssl3|Tls|Tls11|Tls12" />  
+<sslStreamSecurity requireClientCertificate="Boolean"
+                   sslProtocols="Ssl3|Tls|Tls11|Tls12" />
 ```  
   
 ## Attributes and Elements  
@@ -37,11 +38,11 @@ Represents a custom binding element that supports channel security using an SSL 
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.SslStreamSecurityElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.SslStreamSecurityElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

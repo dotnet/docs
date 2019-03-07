@@ -33,7 +33,7 @@ HRESULT EnumRuntimes (
     );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwInternalProcessID`  
  [in] The internal process ID of the process for which you want to enumerate runtimes. This will be `m_dwInternalID` from the corresponding [CoreClrDebugProcInfo](../../../../docs/framework/unmanaged-api/debugging/coreclrdebugprocinfo-structure.md).  
   
@@ -68,5 +68,5 @@ HRESULT EnumRuntimes (
   
  **.NET Framework Versions:** 3.5 SP1  
   
-## See Also  
- [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)
+## See also
+- [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)

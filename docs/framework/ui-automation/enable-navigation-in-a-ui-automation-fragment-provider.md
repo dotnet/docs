@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "UI Automation, enabling navigation in provider"
   - "navigation, enabling in UI Automation provider"
 ms.assetid: 3cb6092a-58c9-4ca0-84a5-0e54d5d00a0d
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Enable Navigation in a UI Automation Fragment Provider
 > [!NOTE]
@@ -23,6 +21,6 @@ ms.author: "mhopkins"
  [!code-csharp[UIAFragmentProvider_snip#103](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListItemFragment.cs#103)]
  [!code-vb[UIAFragmentProvider_snip#103](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListItemFragment.vb#103)]  
   
-## See Also  
- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+## See also
+- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

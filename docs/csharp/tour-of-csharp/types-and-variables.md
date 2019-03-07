@@ -17,10 +17,10 @@ The following provides an overview of C#’s type system.
     - Simple Types
         * Signed integral: `sbyte`, `short`, `int`, `long`
         * Unsigned integral: `byte`, `ushort`, `uint`, `ulong`
-		* Unicode characters: `char`
+        * Unicode characters: `char`
         * IEEE floating point: `float`, `double`
         * High-precision decimal: `decimal`
-		* Boolean: `bool`
+        * Boolean: `bool`
     - Enum types
         * User-defined types of the form `enum E {...}`
     - Struct types
@@ -30,13 +30,13 @@ The following provides an overview of C#’s type system.
 * Reference types
     - Class types
         * Ultimate base class of all other types: `object`
-		* Unicode strings: `string`
+        * Unicode strings: `string`
         * User-defined types of the form `class C {...}`
     - Interface types
         * User-defined types of the form `interface I {...}`
-	- Array types
+    - Array types
     	* Single- and multi-dimensional, for example, `int[]` and `int[,]`
-	- Delegate types
+    - Delegate types
         * User-defined types of the form `delegate int D(...)`
 
 The eight integral types provide support for 8-bit, 16-bit, 32-bit, and 64-bit values in signed or unsigned form.
@@ -52,21 +52,21 @@ Character and string processing in C# uses Unicode encoding. The `char` type rep
 This summarizes C#’s numeric types.
 
 * Signed Integral
-    - `sbyte`:  8 bits, range from -128 - 127
-    - `short`: 16 bits, range from -32,768 - 32,767
-    - `int`  : 32 bits, range from -2,147,483,648 - 2,147,483,647
-    - `long` : 64 bits, range from –9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+    - `sbyte`:  8 bits, range from -128 to 127
+    - `short`: 16 bits, range from -32,768 to 32,767
+    - `int`  : 32 bits, range from -2,147,483,648 to 2,147,483,647
+    - `long` : 64 bits, range from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
 * Unsigned integral
-    - `byte`   :  8 bits, range from 0 - 255
-    - `ushort` : 16 bits, range from 0 - 65,535
-    - `uint`   : 32 bits, range from 0 - 4,294,967,295
-    - `ulong`  : 64 bits, range from 0 - 18,446,744,073,709,551,615
+    - `byte`   :  8 bits, range from 0 to 255
+    - `ushort` : 16 bits, range from 0 to 65,535
+    - `uint`   : 32 bits, range from 0 to 4,294,967,295
+    - `ulong`  : 64 bits, range from 0 to 18,446,744,073,709,551,615
 * Floating point
-    - `float`  : 32 bits, range from 1.5 × 10<sup>−45</sup> - 3.4 × 10<sup>38</sup>,    7-digit precision
-	- `double` : 64 bits, range from 5.0 × 10<sup>−324</sup> - 1.7 × 10<sup>308</sup>, 15-digit precision
+    - `float`  : 32 bits, range from 1.5 × 10<sup>-45</sup> to 3.4 × 10<sup>38</sup>,    7-digit precision
+    - `double` : 64 bits, range from 5.0 × 10<sup>-324</sup> to 1.7 × 10<sup>308</sup>, 15-digit precision
 * Decimal
-    - `decimal` : 128 bits, range is at least –7.9 × 10<sup>−28</sup> -  7.9 × 10<sup>28</sup>, with at least 28-digit precision
-    
+    - `decimal` : 128 bits, range is at least -7.9 × 10<sup>-28</sup> to 7.9 × 10<sup>28</sup>, with at least 28-digit precision
+
 C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Five of C#’s categories of types are user-definable: class types, struct types, interface types, enum types, and delegate types.
 
 A `class` type defines a data structure that contains data members (fields) and function members (methods, properties, and others). Class types support single inheritance and polymorphism, mechanisms whereby derived classes can extend and specialize base classes.
@@ -110,6 +110,6 @@ There are several kinds of *variables* in C#, including fields, array elements, 
 * Delegate type
     - A `null` reference or a reference to an instance of a compatible delegate type
 
->[!div class="step-by-step"]
->[Previous](program-structure.md)
->[Next](expressions.md)
+> [!div class="step-by-step"]
+> [Previous](program-structure.md)
+> [Next](expressions.md)

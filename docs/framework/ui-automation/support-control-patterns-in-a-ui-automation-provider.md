@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "control patterns, supporting in UI Automation provider"
   - "UI Automation, supporting control patterns in provider"
 ms.assetid: 0d635c35-ffa8-4dc8-bbc9-12fcd5445776
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Support Control Patterns in a UI Automation Provider
 > [!NOTE]
@@ -35,6 +33,6 @@ ms.author: "mhopkins"
  [!code-csharp[UIAFragmentProvider_snip#120](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#120)]
  [!code-vb[UIAFragmentProvider_snip#120](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#120)]  
   
-## See Also  
- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+## See also
+- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

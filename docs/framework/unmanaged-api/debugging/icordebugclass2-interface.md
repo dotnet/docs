@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugClass2 Interface1"
+title: "ICorDebugClass2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugClass2"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugClass2 Interface1
+# ICorDebugClass2 Interface
+
 Represents a generic class or a class with a method parameter of type <xref:System.Type>. This interface extends [ICorDebugClass](../../../../docs/framework/unmanaged-api/debugging/icordebugclass-interface.md).  
   
 ## Methods  
@@ -41,6 +42,6 @@ Represents a generic class or a class with a method parameter of type <xref:Syst
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorDebugClass Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugclass-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugClass Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugclass-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

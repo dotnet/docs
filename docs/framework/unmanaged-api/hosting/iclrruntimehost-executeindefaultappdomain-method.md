@@ -33,7 +33,7 @@ HRESULT ExecuteInDefaultAppDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyPath`  
  [in] The path to the <xref:System.Reflection.Assembly> that defines the <xref:System.Type> whose method is to be invoked.  
   
@@ -78,5 +78,5 @@ static int pwzMethodName (String pwzArgument)
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)
+## See also
+- [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)

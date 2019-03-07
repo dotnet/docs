@@ -15,7 +15,7 @@ This example shows how to create a line segment. To create a line segment, use t
 ## Example  
  The following examples draw a <xref:System.Windows.Media.LineSegment> from (10, 50) to (200, 70). The following illustration shows the resulting <xref:System.Windows.Media.LineSegment>; a grid background was added to show the coordinate system.  
   
- ![A LineSegment in a PathFigure](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-pathgeometrylinesegment.png "graphicsmm_pathgeometrylinesegment")  
+ ![A LineSegment in a PathFigure](./media/graphicsmm-pathgeometrylinesegment.png "graphicsmm_pathgeometrylinesegment")  
 A LineSegment drawn from (10,50) to (200,70)  
   
  [xaml]  
@@ -29,7 +29,7 @@ A LineSegment drawn from (10,50) to (200,70)
   
  [xaml]  
   
- (Note that this attribute syntax actually creates a <xref:System.Windows.Media.StreamGeometry>, a lighter-weight version of a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Markup Syntax](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) page.)  
+ (Note that this attribute syntax actually creates a <xref:System.Windows.Media.StreamGeometry>, a lighter-weight version of a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Markup Syntax](path-markup-syntax.md) page.)  
   
  In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you may also draw a line segment by using object element syntax. The following is equivalent to the previous [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example.  
   
@@ -95,9 +95,9 @@ Dim myPathFigure As New PathFigure()
   
  This example is part of larger sample; for the complete sample, see the [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).  
   
-## See Also  
- <xref:System.Windows.Media.PathFigure>  
- <xref:System.Windows.Media.PathGeometry>  
- <xref:System.Windows.Media.GeometryDrawing>  
- <xref:System.Windows.Shapes.Path>  
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+## See also
+- <xref:System.Windows.Media.PathFigure>
+- <xref:System.Windows.Media.PathGeometry>
+- <xref:System.Windows.Media.GeometryDrawing>
+- <xref:System.Windows.Shapes.Path>
+- [Geometry Overview](geometry-overview.md)

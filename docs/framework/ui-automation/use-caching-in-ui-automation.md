@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "caching, UI Automation"
   - "UI Automation, caching"
 ms.assetid: ec722dff-6009-4279-b86a-e18d3fa94ebf
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Use Caching in UI Automation
 > [!NOTE]
@@ -59,5 +57,5 @@ ms.author: "mhopkins"
  [!code-csharp[UIAClient_snip#108](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#108)]
  [!code-vb[UIAClient_snip#108](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#108)]  
   
-## See Also  
- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)
+## See also
+- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)

@@ -24,13 +24,13 @@ You can [view or download the sample code](https://github.com/dotnet/samples/tre
 Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following:
 
 ```console
-$ dotnet new console
-$ dotnet run
+dotnet new console
+dotnet run
 ```
 
 Let's do a quick walkthrough:
 
-1. `$ dotnet new console`
+1. `dotnet new console`
 
    [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `Hello.csproj` project file with the dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
 
@@ -53,12 +53,12 @@ Let's do a quick walkthrough:
 
    [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-   `dotnet new` calls [`dotnet restore`](../tools/dotnet-restore.md) implicitly. `dotnet restore` calls into [NuGet](https://www.nuget.org/) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies defined in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file, which is necessary to compile and run the sample. 
-   
+   `dotnet new` calls [`dotnet restore`](../tools/dotnet-restore.md) implicitly. `dotnet restore` calls into [NuGet](https://www.nuget.org/) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies defined in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file, which is necessary to compile and run the sample.
+
    > [!IMPORTANT]
    > If you're using a .NET Core 1.x version of the SDK, you'll have to call `dotnet restore` yourself after calling `dotnet new`.
 
-2. `$ dotnet run`
+2. `dotnet run`
 
    [`dotnet run`](../tools/dotnet-run.md) calls [`dotnet build`](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
 
@@ -68,6 +68,7 @@ Let's do a quick walkthrough:
     ```
 
     Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a compiled application as a DLL file that can be run with `dotnet bin\Debug\netcoreapp2.1\Hello.dll` on Windows (use `/` for non-Windows systems). You may also specify arguments to the application as you'll see later on the topic.
+
     ```console
     $ dotnet bin\Debug\netcoreapp2.1\Hello.dll
     Hello World!
@@ -152,4 +153,4 @@ Note that the commands and steps shown in this tutorial to run your application 
 
 ## See also
 
-* [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
+- [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)

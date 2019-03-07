@@ -34,8 +34,8 @@ Oftentimes when working with data binding in Windows Forms, multiple controls ar
   
 -   A form with the <xref:System.Windows.Forms.Form.Load> event handled and a call to the `InitializeControlsAndDataSource` method in the example from the form's <xref:System.Windows.Forms.Form.Load> event handler.  
   
-## See Also  
- [How to: Share Bound Data Across Forms Using the BindingSource Component](../../../docs/framework/winforms/controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component.md)  
- [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)  
- [Interfaces Related to Data Binding](../../../docs/framework/winforms/interfaces-related-to-data-binding.md)  
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)
+## See also
+- [How to: Share Bound Data Across Forms Using the BindingSource Component](../../../docs/framework/winforms/controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component.md)
+- [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)
+- [Interfaces Related to Data Binding](../../../docs/framework/winforms/interfaces-related-to-data-binding.md)
+- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)

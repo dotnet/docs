@@ -29,7 +29,7 @@ HRESULT SetCLRIoCompletionManager (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pManager`  
  [in] An interface pointer to an `ICLRIoCompletionManager` instance provided by the CLR.  
   
@@ -56,6 +56,6 @@ HRESULT SetCLRIoCompletionManager (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)  
- [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)
+## See also
+- [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
+- [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

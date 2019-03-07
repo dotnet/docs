@@ -29,7 +29,7 @@ HRESULT SetManagedHandler (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCallback`  
  [in] A pointer to an [ICorDebugManagedCallback](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md) object, which is the event handler object.  
   
@@ -47,5 +47,5 @@ HRESULT SetManagedHandler (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+## See also
+- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

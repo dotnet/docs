@@ -38,7 +38,7 @@ More information on unit testing in .NET Core projects:
 You can also choose between:
 * [xUnit](https://xunit.github.io) 
 * [NUnit](https://nunit.org)
-* [MSTest](https://github.com/Microsoft/vstest-docs)
+* [MSTest](https://github.com/Microsoft/testfx-docs)
 
 You can learn more in the following walkthroughs:
 

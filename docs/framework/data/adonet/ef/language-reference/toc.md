@@ -1,8 +1,4 @@
 # [Language Reference](index.md)
-## [CSDL, SSDL, and MSL Specifications](csdl-ssdl-and-msl-specifications.md)
-### [CSDL Specification](csdl-specification.md)
-### [SSDL Specification](ssdl-specification.md)
-### [MSL Specification](msl-specification.md)
 ## [LINQ to Entities](linq-to-entities.md)
 ### [Queries in LINQ to Entities](queries-in-linq-to-entities.md)
 #### [Method-Based Query Syntax Examples: Projection](method-based-query-syntax-examples-projection.md)

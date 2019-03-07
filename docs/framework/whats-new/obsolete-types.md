@@ -624,7 +624,9 @@ ms.author: "ronpet"
 
 <a name="VBCompat"></a>
 ### Assembly: Microsoft.VisualBasic.Compatibility.dll
-  For information about migrating from Visual Basic 6, see [Visual Basic 6.0 Resource Center](https://msdn.microsoft.com/library/windows/desktop/ms788229).
+
+For information about migrating from Visual Basic 6, see [Visual Basic 6.0 Resource Center](https://docs.microsoft.com/previous-versions/visualstudio/visual-basic-6/visual-basic-6.0-documentation).
+  
 |Type|Message|
 |----------|-------------|
 |<xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray?displayProperty=nameWithType>|This member is obsolete.|
@@ -770,6 +772,6 @@ ms.author: "ronpet"
 |<xref:Microsoft.VisualC.NeedsCopyConstructorModifier?displayProperty=nameWithType>|Microsoft.VisualC.dll is an obsolete assembly and exists only for backwards compatibility.|
 |<xref:Microsoft.VisualC.NoSignSpecifiedModifier?displayProperty=nameWithType>|Microsoft.VisualC.dll is an obsolete assembly and exists only for backwards compatibility.|
 
-## See Also
- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
- [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md)
+## See also
+- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
+- [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md)

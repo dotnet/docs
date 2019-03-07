@@ -1,8 +1,7 @@
 ---
-title: "* Operator - C# Reference"
+title: "* operator - C# Reference"
 ms.custom: seodec18
-
-ms.date: 04/04/2018
+ms.date: 02/26/2019
 f1_keywords: 
   - "*_CSharpKeyword"
 helpviewer_keywords: 
@@ -10,25 +9,33 @@ helpviewer_keywords:
   - "* operator [C#]"
 ms.assetid: abd9a5f0-9b24-431e-971a-09ee1c45c50e
 ---
-# * Operator (C# Reference)
-The multiplication operator (`*`) computes the product of its operands. All numeric types have predefined multiplication operators.  
+# * operator (C# Reference)
 
-`*` also serves as the dereference operator, which allows reading and writing to a pointer.
-  
-## Remarks  
- The `*` operator is also used to declare pointer types and to dereference pointers. This operator can only be used in unsafe contexts, denoted by the use of the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword, and requiring the [/unsafe](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md) compiler option.  The dereference operator is also known as the indirection operator.  
-  
- User-defined types can overload the binary `*` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)). When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
-  
-## Example  
- [!code-csharp-interactive[csRefOperators#50](../../../csharp/language-reference/operators/codesnippet/CSharp/multiplication-operator_1.cs)]  
-  
-## Example  
- [!code-csharp[csRefOperators#51](../../../csharp/language-reference/operators/codesnippet/CSharp/multiplication-operator_2.cs)]  
-  
-## See Also
+The `*` operator is supported in two forms: a unary pointer indirection operator or a binary multiplication operator.
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
-- [C# Operators](../../../csharp/language-reference/operators/index.md)
+## Pointer indirection operator
+
+Use the unary `*` operator to obtain the variable to which an operand of a pointer type points. For more information, see [How to: obtain the value of a pointer variable](../../programming-guide/unsafe-code-pointers/how-to-obtain-the-value-of-a-pointer-variable.md).
+
+The pointer indirection operator `*` requires [unsafe](../keywords/unsafe.md) context.
+
+## Multiplication operator
+
+For numeric types, the `*` operator computes the product of its operands:
+
+[!code-csharp-interactive[multiplication](~/samples/snippets/csharp/language-reference/operators/MultiplicationExamples.cs#Multiply)]
+
+## Operator overloadability
+
+User-defined types can [overload](../keywords/operator.md) a binary `*` operator. When a binary `*` operator is overloaded, the [multiplication assignment operator](multiplication-assignment-operator.md) `*=` is also implicitly overloaded.
+
+## C# language specification
+
+For more information, see the [Pointer indirection](~/_csharplang/spec/unsafe-code.md#pointer-indirection) and [Multiplication operator](~/_csharplang/spec/expressions.md#multiplication-operator) sections of the [C# language specification](../language-specification/index.md).
+
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Operators](index.md)
+- [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)

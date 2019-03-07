@@ -1,9 +1,9 @@
 ---
-title: "&lt;certificateReference&gt; for &lt;identity&gt;"
+title: "<certificateReference> for <identity>"
 ms.date: "03/30/2017"
 ms.assetid: ac359c65-c22d-42d2-97de-db53b77cebdb
 ---
-# &lt;certificateReference&gt; for &lt;identity&gt;
+# \<certificateReference> for \<identity>
 Specifies settings for X.509 certificate validation. A secure Windows Communication Foundation (WCF) client that connects to an endpoint with this identity verifies that the claims presented by the server contain the identity claim used to construct this identity.  
   
  \<identity>  
@@ -12,15 +12,12 @@ Specifies settings for X.509 certificate validation. A secure Windows Communicat
 ## Syntax  
   
 ```xml  
-<certificateReference   
-        findValue="String"   
-    isChainIncluded="Boolean"  
-    storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"storeName="  
-  
-    storeLocation="LocalMachine/CurrentUser"  
-  
-X509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"  
-</certificateReference>  
+<certificateReference findValue="String"
+                      isChainIncluded="Boolean"
+                      storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"
+                      storeLocation="LocalMachine/CurrentUser"
+                      X509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier">
+</certificateReference>
 ```  
   
 ## Attributes and Elements  
@@ -45,8 +42,8 @@ X509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/
 |-------------|-----------------|  
 |[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|Specifies settings that enable the authentication of an endpoint by other endpoints exchanging messages with it.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.CertificateReferenceElement>  
- <xref:System.ServiceModel.Configuration.IdentityElement>  
- <xref:System.ServiceModel.EndpointAddress>  
- <xref:System.ServiceModel.EndpointAddress.Identity%2A>
+## See also
+- <xref:System.ServiceModel.Configuration.CertificateReferenceElement>
+- <xref:System.ServiceModel.Configuration.IdentityElement>
+- <xref:System.ServiceModel.EndpointAddress>
+- <xref:System.ServiceModel.EndpointAddress.Identity%2A>

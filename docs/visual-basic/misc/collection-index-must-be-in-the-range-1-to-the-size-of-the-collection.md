@@ -11,6 +11,3 @@ The supplied index value falls outside the valid range, which is 1 to the size o
 ## To correct this error  
   
 1.  Change the supplied value to a valid one.  
-  
-## See Also  
- [Controls Collection Changes in Visual Basic .NET](https://msdn.microsoft.com/library/8eb5b458-8b39-4d79-9c97-2b29c527afa5)

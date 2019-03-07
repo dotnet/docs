@@ -4,7 +4,7 @@ description: Learn C# in your browser, and get started with your own development
 ms.date: 01/30/2018
 ms.custom: mvc
 ---
-# Introduction to C# #
+# Introduction to C\#
 
 Welcome to the introduction to C# tutorials. These start with interactive lessons
 that you can run in your browser.

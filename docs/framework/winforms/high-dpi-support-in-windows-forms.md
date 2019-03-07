@@ -33,7 +33,7 @@ In addition, to configure high DPI support in your Windows Forms application, yo
   To do this, add the following to your manifest file:
 
   ```xml
-  <compatibility xmlns="urn:schemas-microsoft.com:compatibility.v1">
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
       <!-- Windows 10 compatibility -->
       <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
@@ -126,5 +126,5 @@ Console.WriteLine(AppDomain.CurrentDomain.SetupInformation.TargetFrameworkName);
 
 ## See also
 
-[Windows Forms Add Configuration Element](../../../docs/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md)  
-[Adjusting the Size and Scale of Windows Forms](../../../docs/framework/winforms/adjusting-the-size-and-scale-of-windows-forms.md)
+- [Windows Forms Add Configuration Element](../../../docs/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md)
+- [Adjusting the Size and Scale of Windows Forms](../../../docs/framework/winforms/adjusting-the-size-and-scale-of-windows-forms.md)

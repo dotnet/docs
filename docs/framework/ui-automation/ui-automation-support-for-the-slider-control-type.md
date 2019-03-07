@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Slider control type"
   - "Slider control type"
 ms.assetid: 045ea62f-7b50-46cf-a5a9-8eb97704355f
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Slider Control Type
 > [!NOTE]
@@ -70,7 +68,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Slider>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Slider>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

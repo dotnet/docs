@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "controls, UI Automation support for"
   - "UI Automation, support for standard controls"
 ms.assetid: 3770ea8a-2655-4add-9c59-fe0610ad5084
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for Standard Controls
 > [!NOTE]
@@ -163,5 +161,5 @@ ms.author: "mhopkins"
 |RaftingContainer|  
 |StatusStrip|  
   
-## See Also  
- [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)
+## See also
+- [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)

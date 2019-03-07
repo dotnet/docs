@@ -68,10 +68,10 @@ If a property has both a `get` and a `set` accessor, both must be auto-implement
 
 For more information, see [Properties](~/_csharplang/spec/classes.md#properties) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
-- [get keyword](../../../csharp/language-reference/keywords/get.md)    
-- [set keyword](../../../csharp/language-reference/keywords/set.md)    
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)
+- [get keyword](../../../csharp/language-reference/keywords/get.md)
+- [set keyword](../../../csharp/language-reference/keywords/set.md)

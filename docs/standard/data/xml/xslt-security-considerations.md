@@ -52,6 +52,6 @@ The XSLT language has a rich set of features that give you a great deal of power
   
 ## See also
 
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)  
-- [Resolving External Resources During XSLT Processing](../../../../docs/standard/data/xml/resolving-external-resources-during-xslt-processing.md)  
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [Resolving External Resources During XSLT Processing](../../../../docs/standard/data/xml/resolving-external-resources-during-xslt-processing.md)
 - [Code Access Security](../../../../docs/framework/misc/code-access-security.md)

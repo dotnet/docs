@@ -38,8 +38,7 @@ ms.author: "ronpet"
   
  Both platform invoke and COM interop use interop marshaling to accurately move method arguments between caller and callee and back, if required. As the following illustration shows, a platform invoke method call flows from managed to unmanaged code and never the other way, except when [callback functions](callback-functions.md) are involved. Even though platform invoke calls can flow only from managed to unmanaged code, data can flow in both directions as input or output parameters. COM interop method calls can flow in either direction.  
   
- ![Platform invoke](./media/interopmarshaling.png "interopmarshaling")  
-Platform invoke and COM interop call flow  
+ ![Platform invoke](./media/interop-marshaling/interop-marshaling-invoke-and-com.png "Platform invoke and COM interop call flow")  
   
  At the lowest level, both mechanisms use the same interop marshaling service; however, certain data types are supported exclusively by COM interop or platform invoke. For details, see [Default Marshaling Behavior](default-marshaling-behavior.md).  
   
@@ -61,8 +60,7 @@ Platform invoke and COM interop call flow
   
  Because the client and server are in the same apartment, the interop marshaling service automatically handles all data marshaling. The following illustration shows the interop marshaling service operating between managed and unmanaged heaps within the same COM-style apartment.  
   
- ![Interop marshaling](./media/interopheap.gif "interopheap")  
-Same-apartment marshaling process  
+ ![Interop marshaling between managed and unmanaged heaps](./media/interop-marshaling/interop-heaps-managed-and-unmanaged.gif "Same-apartment marshaling process")  
   
  If you plan to export a managed server, be aware that the COM client determines the apartment of the server. A managed server called by a COM client initialized in an MTA must ensure thread safety.  
   
@@ -78,8 +76,7 @@ Same-apartment marshaling process
   
  When a managed client and unmanaged server are in the same apartment, the interop marshaling service handles all data marshaling. However, when client and server are initialized in different apartments, COM marshaling is also required. The following illustration shows the elements of a cross-apartment call.  
   
- ![COM marshaling](./media/singleprocessmultapt.gif "singleprocessmultapt")  
-Cross-apartment call between a .NET client and COM object  
+ ![COM marshaling](./media/interop-marshaling/single-process-across-multi-apartment.gif "Cross-apartment call between a .NET client and COM object")  
   
  For cross-apartment marshaling, you can do the following:  
   
@@ -104,14 +101,12 @@ Cross-apartment call between a .NET client and COM object
   
  The following illustration shows how interop marshaling and COM marshaling provide communications channels across process and host boundaries.  
   
- ![COM marshaling](./media/interophost.gif "interophost")  
-Cross-process marshaling  
+ ![COM marshaling](./media/interop-marshaling/interop-and-com-marshaling.gif "Cross-process marshaling")  
   
 ### Preserving Identity  
  The common language runtime preserves the identity of managed and unmanaged references. The following illustration shows the flow of direct unmanaged references (top row) and direct managed references (bottom row) across process and host boundaries.  
   
- ![COM callable wrapper and runtime callable wrapper](./media/interopdirectref.gif "interopdirectref")  
-Reference passing across process and host boundaries  
+ ![COM callable wrapper and runtime callable wrapper](./media/interop-marshaling/interop-direct-ref-across-process.gif "Reference passing across process and host boundaries")  
   
  In this illustration:  
   
@@ -127,7 +122,7 @@ Reference passing across process and host boundaries
 ### Managed Remoting  
  The runtime also provides managed remoting, which you can use to establish a communications channel between managed objects across process and host boundaries. Managed remoting can accommodate a firewall between the communicating components, as the following illustration shows.  
   
- ![SOAP or TcpChannel](./media/interopremotesoap.gif "interopremotesoap")  
+ ![SOAP or TcpChannel](./media/interop-marshaling/interop-remote-soap-or-tcp.gif "Remote calls across firewalls using SOAP or the TcpChannel class")  
 Remote calls across firewalls using SOAP or the TcpChannel class  
   
  Some unmanaged calls can be channeled through SOAP, such as the calls between serviced components and COM.  
@@ -144,10 +139,10 @@ Remote calls across firewalls using SOAP or the TcpChannel class
 |[Marshaling Data with COM Interop](marshaling-data-with-com-interop.md)|Describes how to customize COM wrappers to alter marshaling behavior.|  
 |[How to: Migrate Managed-Code DCOM to WCF](how-to-migrate-managed-code-dcom-to-wcf.md)|Describes how to migrate from DCOM to WCF.|  
 |[How to: Map HRESULTs and Exceptions](how-to-map-hresults-and-exceptions.md)|Describes how to map custom exceptions to HRESULTs and provides the complete mapping from each HRESULT to its comparable exception class in the .NET Framework.|  
-|[Interoperating Using Generic Types](https://msdn.microsoft.com/library/26b88e03-085b-4b53-94ba-a5a9c709ce58(v=vs.100))|Describes which actions are supported when using generic types for COM interoperability.|  
+|[Interoperating Using Generic Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100))|Describes which actions are supported when using generic types for COM interoperability.|  
 |[Interoperating with Unmanaged Code](index.md)|Describes interoperability services provided by the common language runtime.|  
 |[Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Provides links to more information about incorporating COM components into your .NET Framework application.|  
-|[Design Considerations for Interoperation](https://msdn.microsoft.com/library/b59637f6-fe35-40d6-ae72-901e7a707689(v=vs.100))|Provides tips for writing integrated COM components.|  
+|[Design Considerations for Interoperation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100))|Provides tips for writing integrated COM components.|  
   
  [Back to top](#top)  
   

@@ -33,7 +33,7 @@ HRESULT GetLocalRegisterMemoryValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `highWordReg`  
  [in] A value of the "CorDebugRegister" enumeration that specifies the register containing the high word of the value.  
   
@@ -58,5 +58,5 @@ HRESULT GetLocalRegisterMemoryValue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- 
+## See also
+

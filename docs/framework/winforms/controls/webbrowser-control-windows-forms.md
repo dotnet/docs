@@ -72,5 +72,5 @@ The Windows Forms `WebBrowser` control hosts Web pages and provides Web browsing
  <xref:System.Windows.Forms.WebBrowserRefreshOption>  
  Describes this enumeration and all its values.  
   
-## See Also  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## See also
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

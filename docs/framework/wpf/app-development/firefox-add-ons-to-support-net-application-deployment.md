@@ -16,7 +16,7 @@ The Windows Presentation Foundation (WPF) plug-in for Firefox and the .NET Frame
   
  The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] plug-in for Firefox is installed with the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)]. Window 7 includes the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)], but does not include the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] plug-in for Firefox. You cannot install the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] plug-in for Firefox on Windows 7.  
   
- The [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] does not include the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] plug-in for Firefox. However, if both the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)] and [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] are installed, the WPF plug-in for Firefox is installed with the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)]. Therefore [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] applications will still run because the WPF Host will load the correct version of the framework. For more information, see [WPF Host (PresentationHost.exe)](../../../../docs/framework/wpf/app-development/wpf-host-presentationhost-exe.md).  
+ The [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] does not include the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] plug-in for Firefox. However, if both the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)] and [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] are installed, the WPF plug-in for Firefox is installed with the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)]. Therefore [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] applications will still run because the WPF Host will load the correct version of the framework. For more information, see [WPF Host (PresentationHost.exe)](wpf-host-presentationhost-exe.md).  
   
 ## .NET Framework Assistant for Firefox  
  The .NET Framework Assistant for Firefox enables stand-alone ClickOnce applications to run from the Firefox browser. The .NET Framework Assistant for Firefox functions identically when it is installed before and after the Firefox browser. When the Firefox browser is launched and the [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)] is installed, Firefox finds and installs the .NET Framework Assistant for Firefox. Users can configure the .NET Framework Assistant for Firefox to do the following:  
@@ -27,7 +27,7 @@ The Windows Presentation Foundation (WPF) plug-in for Firefox and the .NET Frame
   
  The .NET Framework Assistant for Firefox is included with the [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)]. For information about removing the .NET Framework Assistant for Firefox, see [How to remove the .NET Framework Assistant for Firefox](https://go.microsoft.com/fwlink/?LinkId=177944).  
   
-## See Also  
- [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)  
- [WPF XAML Browser Applications Overview](../../../../docs/framework/wpf/app-development/wpf-xaml-browser-applications-overview.md)  
- [Detect Whether the WPF Plug-In for Firefox Is Installed](../../../../docs/framework/wpf/app-development/how-to-detect-whether-the-wpf-plug-in-for-firefox-is-installed.md)
+## See also
+- [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)
+- [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md)
+- [Detect Whether the WPF Plug-In for Firefox Is Installed](how-to-detect-whether-the-wpf-plug-in-for-firefox-is-installed.md)

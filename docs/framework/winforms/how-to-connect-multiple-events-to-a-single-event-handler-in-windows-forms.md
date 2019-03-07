@@ -40,7 +40,7 @@ In your application design, you may find it necessary to use a single event hand
   
 6.  Add the appropriate code to the event handler.  
   
-### To connect multiple events to a single event handler in C#  
+### To connect multiple events to a single event handler in C\#
   
 1.  Select the control to which you want to connect an event handler.  
   
@@ -54,6 +54,6 @@ In your application design, you may find it necessary to use a single event hand
   
      Code will be added to the form to bind the event to the existing event handler.  
   
-## See Also  
- [Creating Event Handlers in Windows Forms](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
- [Event Handlers Overview](../../../docs/framework/winforms/event-handlers-overview-windows-forms.md)
+## See also
+- [Creating Event Handlers in Windows Forms](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)
+- [Event Handlers Overview](../../../docs/framework/winforms/event-handlers-overview-windows-forms.md)

@@ -18,7 +18,7 @@ Specifies which version of the Common Language Runtime (CLR) can run the assembl
 -platform:string  
 ```  
   
-#### Parameters  
+## Parameters  
  `string`  
  anycpu (default), anycpu32bitpreferred, ARM, x64, x86, or Itanium.  
   
@@ -30,6 +30,8 @@ Specifies which version of the Common Language Runtime (CLR) can run the assembl
   
 -   **ARM** compiles your assembly to run on a computer that has an Advanced RISC Machine (ARM) processor.  
   
+-   **ARM64** compiles your assembly to run by the 64-bit CLR on a computer that has an Advanced RISC Machine (ARM) processor that supports the A64 instruction set.  
+
 -   **x64** compiles your assembly to be run by the 64-bit CLR on a computer that supports the AMD64 or EM64T instruction set.  
   
 -   **x86** compiles your assembly to be run by the 32-bit, x86-compatible CLR.  
@@ -69,7 +71,7 @@ Specifies which version of the Common Language Runtime (CLR) can run the assembl
 csc -platform:anycpu filename.cs  
 ```  
   
-## See Also  
+## See also
 
-- [C# Compiler Options](index.md)  
+- [C# Compiler Options](index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

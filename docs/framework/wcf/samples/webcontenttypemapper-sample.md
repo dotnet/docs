@@ -63,4 +63,4 @@ public class JsonContentTypeMapper : WebContentTypeMapper
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Ajax\WebContentTypeMapper`  
   
-## See Also
+## See also

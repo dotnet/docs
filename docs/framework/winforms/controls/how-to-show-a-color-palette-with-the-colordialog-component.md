@@ -70,6 +70,6 @@ The [ColorDialog](../../../../docs/framework/winforms/controls/colordialog-compo
        gcnew System::EventHandler(this, &Form1::button1_Click);  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ColorDialog>  
- [ColorDialog Component](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.ColorDialog>
+- [ColorDialog Component](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md)

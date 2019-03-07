@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "control patterns, for UI Automation clients"
   - "UI Automation, clients, control patterns for"
 ms.assetid: 8b81645b-8be3-4e26-9c98-4fb0fceca06b
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Control Pattern Mapping for UI Automation Clients
 > [!NOTE]
@@ -72,5 +70,5 @@ ms.author: "mhopkins"
 > [!NOTE]
 >  If a control type has no supported control patterns listed but has one or more conditionally-supported control patterns, then one of those conditional control patterns will be supported at all times.  
   
-## See Also  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

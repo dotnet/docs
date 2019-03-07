@@ -66,5 +66,5 @@ class OperationBehaviorAttribute : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.OperationBehaviorAttribute>
+## See also
+- <xref:System.ServiceModel.OperationBehaviorAttribute>

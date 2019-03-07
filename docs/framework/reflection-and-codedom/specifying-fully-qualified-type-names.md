@@ -1,6 +1,6 @@
 ---
 title: "Specifying Fully Qualified Type Names"
-ms.date: "03/14/2018"
+ms.date: "02/21/2019"
 helpviewer_keywords: 
   - "names [.NET Framework], fully qualified type names"
   - "reflection, fully qualified type names"
@@ -17,10 +17,10 @@ ms.assetid: d90b1e39-9115-4f2a-81c0-05e7e74e5580
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Specifying Fully Qualified Type Names
+# Specifying fully qualified type names
 You must specify type names to have valid input to various reflection operations. A fully qualified type name consists of an assembly name specification, a namespace specification, and a type name. Type name specifications are used by methods such as <xref:System.Type.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>.  
   
-## Grammar for Type Names  
+## Grammar for type names  
  The grammar defines the syntax of formal languages. The following table lists lexical rules that describe how to recognize a valid input. Terminals (those elements that are not further reducible) are shown in all uppercase letters. Nonterminals (those elements that are further reducible) are shown in mixed-case or singly quoted strings, but the single quote (') is not a part of the syntax itself. The pipe character (&#124;) denotes rules that have subrules.  
 
 ```antlr
@@ -35,9 +35,12 @@ ReferenceTypeSpec
 
 SimpleTypeSpec
 	: PointerTypeSpec
-	| ArrayTypeSpec
+	| GenericTypeSpec
 	| TypeName
 	;
+
+GenericTypeSpec
+   : SimpleTypeSpec ` NUMBER
 
 PointerTypeSpec
 	: SimpleTypeSpec '*'
@@ -101,7 +104,7 @@ AssemblyProperty
 	;
 ```
 
-## Specifying Special Characters  
+## Specifying special characters  
  In a type name, IDENTIFIER is any valid name determined by the rules of a language.  
   
  Use the backslash (\\) as an escape character to separate the following tokens when used as part of IDENTIFIER.  
@@ -125,7 +128,7 @@ AssemblyProperty
   
  If the namespace were `Ozzy.Out+Back`, then the plus sign must be preceded by a backslash. Otherwise, the parser would interpret it as a nesting separator. Reflection emits this string as `Ozzy.Out\+Back.Kangaroo+Wallaby,MyAssembly`.  
   
-## Specifying Assembly Names  
+## Specifying assembly names  
  The minimum information required in an assembly name specification is the textual name (IDENTIFIER) of the assembly. You can follow the IDENTIFIER by a comma-separated list of property/value pairs as described in the following table. IDENTIFIER naming should follow the rules for file naming. The IDENTIFIER is case-insensitive.  
   
 |Property name|Description|Allowable values|  
@@ -171,14 +174,17 @@ com.microsoft.crypto, Culture="", PublicKeyToken=a5d015c7d5a0b012
 com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,  
     Version=1.0.0.0  
 ```  
-  
-## Specifying Pointers  
+## Specifying generic types
+
+SimpleTypeSpec\`NUMBER represents an open generic type with from 1 to *n* generic type parameters. For example, to get reference to the open generic type List\<T> or the closed generic type List\<String>, use ``Type.GetType("System.Collections.Generic.List`1")`` To get a reference to the generic type Dictionary\<TKey,TValue>, use ``Type.GetType("System.Collections.Generic.Dictionary`2")``. 
+
+## Specifying pointers  
  SimpleTypeSpec* represents an unmanaged pointer. For example, to get a pointer to type MyType, use `Type.GetType("MyType*")`. To get a pointer to a pointer to type MyType, use `Type.GetType("MyType**")`.  
   
-## Specifying References  
+## Specifying references  
  SimpleTypeSpec & represents a managed pointer or reference. For example, to get a reference to type MyType, use `Type.GetType("MyType &")`. Note that unlike pointers, references are limited to one level.  
   
-## Specifying Arrays  
+## Specifying arrays  
  In the BNF Grammar, ReflectionEmitDimension only applies to incomplete type definitions retrieved using <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>. Incomplete type definitions are <xref:System.Reflection.Emit.TypeBuilder> objects constructed using <xref:System.Reflection.Emit?displayProperty=nameWithType> but on which <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> has not been called. ReflectionDimension can be used to retrieve any type definition that has been completed, that is, a type that has been loaded.  
   
  Arrays are accessed in reflection by specifying the rank of the array:  
@@ -186,7 +192,6 @@ com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,
 -   `Type.GetType("MyArray[]")` gets a single-dimension array with 0 lower bound.  
   
 -   `Type.GetType("MyArray[*]")` gets a single-dimension array with unknown lower bound.  
-  
 -   `Type.GetType("MyArray[][]")` gets a two-dimensional array's array.  
   
 -   `Type.GetType("MyArray[*,*]")` and `Type.GetType("MyArray[,]")` gets a rectangular two-dimensional array with unknown lower bounds.  
@@ -195,11 +200,11 @@ com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,
   
  For **ModuleBuilder.GetType**, `MyArray[0..5]` indicates a single-dimension array with size 6, lower bound 0. `MyArray[4…]` indicates a single-dimension array of unknown size and lower bound 4.  
   
-## See Also  
- <xref:System.Reflection.AssemblyName>  
- <xref:System.Reflection.Emit.ModuleBuilder>  
- <xref:System.Reflection.Emit.TypeBuilder>  
- <xref:System.Type.FullName%2A?displayProperty=nameWithType>  
- <xref:System.Type.GetType%2A?displayProperty=nameWithType>  
- <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType>  
- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+## See also
+- <xref:System.Reflection.AssemblyName>
+- <xref:System.Reflection.Emit.ModuleBuilder>
+- <xref:System.Reflection.Emit.TypeBuilder>
+- <xref:System.Type.FullName%2A?displayProperty=nameWithType>
+- <xref:System.Type.GetType%2A?displayProperty=nameWithType>
+- <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType>
+- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)

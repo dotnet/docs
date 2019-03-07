@@ -38,7 +38,7 @@ Throw [ expression ]
 ## Example  
  The following code uses the `Throw` statement to throw an exception:  
   
- [!code-vb[VbVbalrStatements#84](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/throw-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#84](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#84)]  
   
 ## Requirements  
  **Namespace:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  
@@ -47,6 +47,6 @@ Throw [ expression ]
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
- [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)
+## See also
+- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)

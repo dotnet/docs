@@ -260,8 +260,8 @@ The following example uses both approaches to include reserved characters in a c
   
 ## See also
 
-- <xref:System.Globalization.NumberFormatInfo?displayProperty=nameWithType>  
-- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
-- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
-- [How to: Pad a Number with Leading Zeros](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)  
+- <xref:System.Globalization.NumberFormatInfo?displayProperty=nameWithType>
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)
+- [How to: Pad a Number with Leading Zeros](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)
 - [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

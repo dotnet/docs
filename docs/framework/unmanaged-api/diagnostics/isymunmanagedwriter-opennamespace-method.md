@@ -28,7 +28,7 @@ HRESULT OpenNamespace(
     [in] const WCHAR *name);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] A pointer to the name of the new namespace.  
   
@@ -38,6 +38,6 @@ HRESULT OpenNamespace(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)  
- [CloseNamespace Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-closenamespace-method.md)
+## See also
+- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+- [CloseNamespace Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-closenamespace-method.md)

@@ -29,7 +29,7 @@ Generates a code-base file that contains the code base currently loaded into thi
 HRESULT GenerateCeeFile ();  
 ```  
   
-#### Parameters  
+## Parameters  
  `GenerateCeeFile` takes no parameters.  
   
 ## Requirements  
@@ -41,5 +41,5 @@ HRESULT GenerateCeeFile ();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+## See also
+- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

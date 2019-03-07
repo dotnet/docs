@@ -37,7 +37,7 @@ HRESULT DefineEvent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The token for the target class or interface. This is either a `mdTypeDef` or `mdTypeDefNil` token.  
   
@@ -74,6 +74,6 @@ HRESULT DefineEvent (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

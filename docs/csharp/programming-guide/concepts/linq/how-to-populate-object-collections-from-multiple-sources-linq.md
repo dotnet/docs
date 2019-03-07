@@ -141,8 +141,8 @@ Create and compile a project that targets one of the following options:
 - .NET Framework version 4.0 or higher.
 - .NET Core version 1.0 or higher.
 
-## See Also
+## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)  
-- [Object and Collection Initializers](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
-- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
+- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
+- [Object and Collection Initializers](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)

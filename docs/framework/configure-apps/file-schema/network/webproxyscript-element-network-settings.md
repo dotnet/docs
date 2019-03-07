@@ -1,5 +1,5 @@
 ---
-title: "&lt;webProxyScript&gt; Element (Network Settings)"
+title: "<webProxyScript> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#webProxyScript"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "webProxyScript element"
 ms.assetid: a13c26db-6218-4af3-9696-38f24b23bfac
 ---
-# &lt;webProxyScript&gt; Element (Network Settings)
+# \<webProxyScript> Element (Network Settings)
 Configures the characteristics of the script used to discover Web proxies.  
   
  \<configuration>  
@@ -48,5 +48,5 @@ Configures the characteristics of the script used to discover Web proxies.
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
-## See Also  
+## See also
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

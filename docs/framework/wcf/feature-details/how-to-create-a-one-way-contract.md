@@ -25,10 +25,10 @@ This topic shows the basic steps to create methods that use a one-way contract. 
  [!code-csharp[S_Service_Session#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_service_session/cs/service.cs#1)]
  [!code-vb[S_Service_Session#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_service_session/vb/service.vb#1)]  
   
-## See Also  
- <xref:System.ServiceModel.ServiceContractAttribute>  
- <xref:System.ServiceModel.OperationContractAttribute>  
- [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)  
- [How to: Define a Service Contract](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)  
- [Session](../../../../docs/framework/wcf/samples/session.md)  
- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
+## See also
+- <xref:System.ServiceModel.ServiceContractAttribute>
+- <xref:System.ServiceModel.OperationContractAttribute>
+- [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)
+- [How to: Define a Service Contract](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)
+- [Session](../../../../docs/framework/wcf/samples/session.md)
+- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)

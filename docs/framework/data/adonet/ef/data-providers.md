@@ -20,5 +20,5 @@ This section provides information on data providers that support the [!INCLUDE[a
  [Third-Party Providers for the Entity Framework](https://go.microsoft.com/fwlink/?LinkId=143699)  
  List of the third-party data providers currently available for the Entity Framework.  
   
-## See Also  
- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)
+## See also
+- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)

@@ -96,6 +96,6 @@ Use the `dotnet` executable from *artifacts/{os}-{arch}/stage2* to try out the n
 
 ## See also
 
-* [.NET Core Common Language Runtime (CoreCLR)](https://github.com/dotnet/coreclr/blob/master/README.md)
-* [.NET Core CLI Developer Guide](https://github.com/dotnet/cli/blob/master/Documentation/project-docs/developer-guide.md)
-* [.NET Core distribution packaging](./distribution-packaging.md)
+- [.NET Core Common Language Runtime (CoreCLR)](https://github.com/dotnet/coreclr/blob/master/README.md)
+- [.NET Core CLI Developer Guide](https://github.com/dotnet/cli/blob/master/Documentation/project-docs/developer-guide.md)
+- [.NET Core distribution packaging](./distribution-packaging.md)

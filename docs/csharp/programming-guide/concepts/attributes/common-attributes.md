@@ -14,7 +14,7 @@ This topic describes the attributes that are most commonly used in C# programs.
   
 -   [Caller Info Attributes](#CallerInfo)  
   
-##  <a name="Global"></a> Global Attributes  
+## <a name="Global"></a> Global Attributes  
  Most attributes are applied to specific language elements such as classes or methods; however, some attributes are global—they apply to an entire assembly or module. For example, the <xref:System.Reflection.AssemblyVersionAttribute> attribute can be used to embed version information into an assembly, like this:  
   
 ```csharp  
@@ -66,7 +66,7 @@ This topic describes the attributes that are most commonly used in C# programs.
 |<xref:System.Reflection.AssemblyConfigurationAttribute>|Defines a custom attribute that specifies an assembly configuration (such as retail or debug) for an assembly manifest.|  
 |<xref:System.Reflection.AssemblyDefaultAliasAttribute>|Defines a friendly default alias for an assembly manifest|  
   
-##  <a name="Obsolete"></a> Obsolete Attribute  
+## <a name="Obsolete"></a> Obsolete Attribute  
  The `Obsolete` attribute marks a program entity as one that is no longer recommended for use. Each use of an entity marked obsolete will subsequently generate a warning or an error, depending on how the attribute is configured. For example:  
   
 ```csharp  
@@ -105,7 +105,7 @@ b.NewMethod();
   
  The `Obsolete` attribute is a single-use attribute and can be applied to any entity that allows attributes. `Obsolete` is an alias for <xref:System.ObsoleteAttribute>.  
   
-##  <a name="Conditional"></a> Conditional Attribute  
+## <a name="Conditional"></a> Conditional Attribute  
  The `Conditional` attribute makes the execution of a method dependent on a preprocessing identifier. The `Conditional` attribute is an alias for <xref:System.Diagnostics.ConditionalAttribute>, and can be applied to a method or an attribute class.  
   
  In this example, `Conditional` is applied to a method to enable or disable the display of program-specific diagnostic information:  
@@ -210,7 +210,7 @@ class SampleClass
 }  
 ```  
   
-##  <a name="CallerInfo"></a> Caller Info Attributes  
+## <a name="CallerInfo"></a> Caller Info Attributes  
  By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain the file path of the source code, the line number in the source code, and the member name of the caller.  
   
  To obtain member caller information, you use attributes that are applied to optional parameters. Each optional parameter specifies a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace:  
@@ -223,11 +223,11 @@ class SampleClass
   
  For more information about the Caller Info attributes, see [Caller Information (C#)](../../../../csharp/programming-guide/concepts/caller-information.md).  
   
-## See Also
+## See also
 
-- <xref:System.Reflection>  
-- <xref:System.Attribute>  
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
-- [Attributes](../../../../../docs/standard/attributes/index.md)  
-- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
+- <xref:System.Reflection>
+- <xref:System.Attribute>
+- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+- [Attributes](../../../../../docs/standard/attributes/index.md)
+- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)
 - [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

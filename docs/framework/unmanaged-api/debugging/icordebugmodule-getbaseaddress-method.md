@@ -29,7 +29,7 @@ HRESULT GetBaseAddress(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [out] A `CORDB_ADDRESS` that specifies the base address of the module.  
   
@@ -45,6 +45,6 @@ HRESULT GetBaseAddress(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- 
+## See also
+
+

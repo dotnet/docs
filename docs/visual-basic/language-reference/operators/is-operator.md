@@ -40,14 +40,14 @@ result = object1 Is object2
 ## Example  
  The following example uses the `Is` operator to compare pairs of object references. The results are assigned to a `Boolean` value representing whether the two objects are identical.  
   
- [!code-vb[VbVbalrOperators#27](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/is-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#27)]  
   
  As the preceding example demonstrates, you can use the `Is` operator to test both early bound and late bound objects.  
   
-## See Also  
- [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)  
- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)  
- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+## See also
+- [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)
+- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)
+- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)

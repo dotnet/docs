@@ -52,13 +52,12 @@ An *operator* is a code element that performs an operation on one or more code e
   
  Several operators can perform actions in a single expression or statement, as the following example illustrates.  
   
- [!code-vb[VbVbalrOperators#56](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/index_1.vb)]  
+ [!code-vb[VbVbalrOperators#56](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#56)]  
   
  In the preceding example, Visual Basic performs the operations in the expression on the right side of the assignment operator (`=`), then assigns the resulting value to the variable `x` on the left. There is no practical limit to the number of operators that can be combined into an expression, but an understanding of [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md) is necessary to ensure that you get the results you expect.  
   
- For more information and examples, see [Operator Overloading in Visual Basic 2005](https://msdn.microsoft.com/library/ms379613(v=vs.80).aspx).  
   
-## See Also  
- [Operators](../../../../visual-basic/language-reference/operators/index.md)  
- [Efficient Combination of Operators](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)  
- [Statements](../../../../visual-basic/language-reference/statements/index.md)
+## See also
+- [Operators](../../../../visual-basic/language-reference/operators/index.md)
+- [Efficient Combination of Operators](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)
+- [Statements](../../../../visual-basic/language-reference/statements/index.md)

@@ -88,12 +88,12 @@ End Module
 -   **Qualification.** You can have multiple modules in a project, and you can declare members with the same name in two or more modules. However, you must qualify any reference to such a member with the appropriate module name if the reference is from outside that module. For more information, see [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md).  
   
 ## Example  
- [!code-vb[VbVbalrStatements#69](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/module-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#69)]  
   
-## See Also  
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)  
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)
+## See also
+- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
+- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)
+- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)

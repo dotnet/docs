@@ -5,6 +5,7 @@ api_name:
   - "CoUninitializeCor"
 api_location: 
   - "mscoree.dll"
+  - "mscorsvr.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
@@ -29,5 +30,5 @@ STDAPI_(void) CoUninitializeCor(void);
 ## Remarks  
  The common language runtime cannot be unloaded from a process. To completely remove the runtime from a running process, you must shut down that process.  
   
-## See Also  
- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+## See also
+- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)

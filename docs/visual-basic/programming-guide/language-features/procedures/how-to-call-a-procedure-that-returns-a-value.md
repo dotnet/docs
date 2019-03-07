@@ -36,12 +36,12 @@ A `Function` procedure returns a value to the calling code. You call it by inclu
 ## Example  
  The following example calls the Visual Basic <xref:Microsoft.VisualBasic.Interaction.Environ%2A> to retrieve the value of an operating system environment variable. The first line calls `Environ` within an expression, and the second line calls it in an assignment statement. `Environ` takes the variable name as its sole argument. It returns the variable's value to the calling code.  
   
- [!code-vb[VbVbcnProcedures#7](./codesnippet/VisualBasic/how-to-call-a-procedure-that-returns-a-value_1.vb)]  
+ [!code-vb[VbVbcnProcedures#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#7)]  
   
-## See Also  
- [Function Procedures](./function-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  
- [How to: Create a Procedure that Returns a Value](./how-to-create-a-procedure-that-returns-a-value.md)  
- [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)  
- [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)
+## See also
+- [Function Procedures](./function-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)
+- [How to: Create a Procedure that Returns a Value](./how-to-create-a-procedure-that-returns-a-value.md)
+- [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)
+- [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)

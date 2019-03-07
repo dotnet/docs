@@ -17,16 +17,16 @@ In a simple master-detail scenario, you have a data-bound <xref:System.Windows.C
 ## Example  
  In this example, `People` is an <xref:System.Collections.ObjectModel.ObservableCollection%601> of `Person` classes. This `Person` class contains three properties: `FirstName`, `LastName`, and `HomeTown`, all of type `string`.  
   
- [!code-xaml[CollectionBinding#Source](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CollectionBinding/CSharp/Window1.xaml#source)]  
-[!code-xaml[CollectionBinding#UI](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CollectionBinding/CSharp/Window1.xaml#ui)]  
+ [!code-xaml[CollectionBinding#Source](~/samples/snippets/csharp/VS_Snippets_Wpf/CollectionBinding/CSharp/Window1.xaml#source)]  
+[!code-xaml[CollectionBinding#UI](~/samples/snippets/csharp/VS_Snippets_Wpf/CollectionBinding/CSharp/Window1.xaml#ui)]  
   
  The <xref:System.Windows.Controls.ContentControl> uses the following <xref:System.Windows.DataTemplate> that defines how the information of a `Person` is presented:  
   
- [!code-xaml[CollectionBinding#DetailTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CollectionBinding/CSharp/Window1.xaml#detailtemplate)]  
+ [!code-xaml[CollectionBinding#DetailTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/CollectionBinding/CSharp/Window1.xaml#detailtemplate)]  
   
  The following is a screenshot of what the example produces. The <xref:System.Windows.Controls.ContentControl> shows the other properties of the person selected.  
   
- ![Binding to a collection](../../../../docs/framework/wpf/data/media/databinding-collectionbindingsample.png "DataBinding_CollectionBindingSample")  
+ ![Binding to a collection](./media/databinding-collectionbindingsample.png "DataBinding_CollectionBindingSample")  
   
  The two things to notice in this example are:  
   
@@ -36,12 +36,12 @@ In a simple master-detail scenario, you have a data-bound <xref:System.Windows.C
   
  Note that the `Person` class overrides the `ToString` method the following way. By default, the <xref:System.Windows.Controls.ListBox> calls `ToString` and displays a string representation of each object in the bound collection. That is why each `Person` appears as a first name in the <xref:System.Windows.Controls.ListBox>.  
   
- [!code-csharp[CollectionBinding#ToString](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CollectionBinding/CSharp/Data.cs#tostring)]
- [!code-vb[CollectionBinding#ToString](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CollectionBinding/VisualBasic/Person.vb#tostring)]  
+ [!code-csharp[CollectionBinding#ToString](~/samples/snippets/csharp/VS_Snippets_Wpf/CollectionBinding/CSharp/Data.cs#tostring)]
+ [!code-vb[CollectionBinding#ToString](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CollectionBinding/VisualBasic/Person.vb#tostring)]  
   
-## See Also  
- [Use the Master-Detail Pattern with Hierarchical Data](../../../../docs/framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md)  
- [Use the Master-Detail Pattern with Hierarchical XML Data](../../../../docs/framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## See also
+- [Use the Master-Detail Pattern with Hierarchical Data](how-to-use-the-master-detail-pattern-with-hierarchical-data.md)
+- [Use the Master-Detail Pattern with Hierarchical XML Data](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)
+- [Data Binding Overview](data-binding-overview.md)
+- [Data Templating Overview](data-templating-overview.md)
+- [How-to Topics](data-binding-how-to-topics.md)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Combo Box control type"
   - "ComboBox controls"
 ms.assetid: bb321126-4770-41da-983a-67b7b89d45dd
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the ComboBox Control Type
 > [!NOTE]
@@ -72,7 +70,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.ExpandCollapsePatternIdentifiers.ExpandCollapseStateProperty> property-changed event.|Required|None|  
 |<xref:System.Windows.Automation.ValuePatternIdentifiers.ValueProperty> property-changed event.|Depends|If the control supports the Value pattern, it must support this event.|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.ComboBox>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.ComboBox>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

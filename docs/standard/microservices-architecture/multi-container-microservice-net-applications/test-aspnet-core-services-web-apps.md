@@ -104,13 +104,13 @@ public class PrimeWebDefaultRequestShould
     [*https://docs.microsoft.com/aspnet/core/test/integration-tests*](https://docs.microsoft.com/aspnet/core/test/integration-tests)
 
 -   **Unit testing in .NET Core using dotnet test** <br/>
-    [*https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test*](https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test)
+    [*https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test*](~/docs/core/testing/unit-testing-with-dotnet-test.md)
 
 -   **xUnit.net**. Official site. <br/>
     [*https://xunit.github.io/*](https://xunit.github.io/)
 
 -   **Unit Test Basics.** <br/>
-    [*https://msdn.microsoft.com/library/hh694602.aspx*](https://msdn.microsoft.com/library/hh694602.aspx)
+    [*https://docs.microsoft.com/visualstudio/test/unit-test-basics*](/visualstudio/test/unit-test-basics)
 
 -   **Moq**. GitHub repo. <br/>
     [*https://github.com/moq/moq*](https://github.com/moq/moq)

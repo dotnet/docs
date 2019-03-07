@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
 ---
 # Optimizing Performance: Other Recommendations
-<a name="introduction"></a> This topic provides performance recommendations in addition to the ones covered by the topics in the [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md) section.  
+<a name="introduction"></a> This topic provides performance recommendations in addition to the ones covered by the topics in the [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md) section.  
   
  This topic contains the following sections:  
   
@@ -37,8 +37,8 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
 ## Navigation to Object  
  The <xref:System.Windows.Navigation.NavigationWindow> object derives from <xref:System.Windows.Window> and extends it with content navigation support, primarily by aggregating <xref:System.Windows.Navigation.NavigationService> and the journal. You can update the client area of <xref:System.Windows.Navigation.NavigationWindow> by specifying either a [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] or an object. The following sample shows both methods:  
   
- [!code-csharp[Performance#PerformanceSnippet14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/TestNavigation.xaml.cs#performancesnippet14)]
- [!code-vb[Performance#PerformanceSnippet14](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/testnavigation.xaml.vb#performancesnippet14)]  
+ [!code-csharp[Performance#PerformanceSnippet14](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/TestNavigation.xaml.cs#performancesnippet14)]
+ [!code-vb[Performance#PerformanceSnippet14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/testnavigation.xaml.vb#performancesnippet14)]  
   
  Each <xref:System.Windows.Navigation.NavigationWindow> object has a journal that records the user's navigation history in that window. One of the purposes of the journal is to allow users to retrace their steps.  
   
@@ -46,7 +46,7 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
   
  When you navigate using an object, the journal stores the entire visual tree of the object. This means that each time you revisit the page, it renders immediately without having to be reconstructed. In this case, the journal storage cost is high, but the time to reconstitute the page is low.  
   
- When you use the <xref:System.Windows.Navigation.NavigationWindow> object, you will need to keep in mind how the journaling support impacts your application's performance. For more information, see [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md).  
+ When you use the <xref:System.Windows.Navigation.NavigationWindow> object, you will need to keep in mind how the journaling support impacts your application's performance. For more information, see [Navigation Overview](../app-development/navigation-overview.md).  
   
 <a name="Hit_Testing"></a>   
 ## Hit Testing on Large 3D Surfaces  
@@ -66,13 +66,13 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
 ## Configure Font Cache Service to Reduce Start-up Time  
  The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] Font Cache service shares font data between [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications. The first [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application you run starts this service if the service is not already running. If you are using [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)], you can set the "Windows Presentation Foundation (WPF) Font Cache 3.0.0.0" service from "Manual" (the default) to "Automatic (Delayed Start)" to reduce the initial start-up time of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
-## See Also  
- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)  
- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)  
- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)  
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)  
- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
- [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)
+## See also
+- [Planning for Application Performance](planning-for-application-performance.md)
+- [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)
+- [Layout and Design](optimizing-performance-layout-and-design.md)
+- [2D Graphics and Imaging](optimizing-performance-2d-graphics-and-imaging.md)
+- [Object Behavior](optimizing-performance-object-behavior.md)
+- [Application Resources](optimizing-performance-application-resources.md)
+- [Text](optimizing-performance-text.md)
+- [Data Binding](optimizing-performance-data-binding.md)
+- [Animation Tips and Tricks](../graphics-multimedia/animation-tips-and-tricks.md)

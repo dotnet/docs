@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "properties, returned by UI Automation providers"
   - "UI Automation, providers returning properties"
 ms.assetid: 5eba950e-b9e1-48eb-ab8e-b69db76bf589
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Return Properties from a UI Automation Provider
 > [!NOTE]
@@ -24,6 +22,6 @@ ms.author: "mhopkins"
  [!code-csharp[UIAFragmentProvider_snip#117](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#117)]
  [!code-vb[UIAFragmentProvider_snip#117](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#117)]  
   
-## See Also  
- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+## See also
+- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

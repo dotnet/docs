@@ -29,7 +29,7 @@ HRESULT GetFunction (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFunction`  
  [out] A pointer to the address of an ICorDebugFunction object that represents the function containing the code associated with this stack frame.  
   

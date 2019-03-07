@@ -36,14 +36,14 @@ Security Assertions Markup Language (SAML) *tokens* are XML representations of c
 ## From SamlAttributes to Claims  
  When SAML tokens are received in messages, the various statements in the SAML token are turned into <xref:System.IdentityModel.Policy.IAuthorizationPolicy> objects that are placed into the <xref:System.IdentityModel.Policy.AuthorizationContext>. The claims from each SAML statement are returned by the <xref:System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A> property of the <xref:System.IdentityModel.Policy.AuthorizationContext> and can be examined to determine whether to authenticate and authorize the user.  
   
-## See Also  
- <xref:System.IdentityModel.Policy.AuthorizationContext>  
- <xref:System.IdentityModel.Policy.IAuthorizationPolicy>  
- <xref:System.IdentityModel.Claims.ClaimSet>  
- [Federation](../../../../docs/framework/wcf/feature-details/federation.md)  
- [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
- [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)  
- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)  
- [Claims and Tokens](../../../../docs/framework/wcf/feature-details/claims-and-tokens.md)  
- [Claim Creation and Resource Values](../../../../docs/framework/wcf/feature-details/claim-creation-and-resource-values.md)  
- [How to: Create a Custom Claim](../../../../docs/framework/wcf/extending/how-to-create-a-custom-claim.md)
+## See also
+- <xref:System.IdentityModel.Policy.AuthorizationContext>
+- <xref:System.IdentityModel.Policy.IAuthorizationPolicy>
+- <xref:System.IdentityModel.Claims.ClaimSet>
+- [Federation](../../../../docs/framework/wcf/feature-details/federation.md)
+- [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
+- [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
+- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+- [Claims and Tokens](../../../../docs/framework/wcf/feature-details/claims-and-tokens.md)
+- [Claim Creation and Resource Values](../../../../docs/framework/wcf/feature-details/claim-creation-and-resource-values.md)
+- [How to: Create a Custom Claim](../../../../docs/framework/wcf/extending/how-to-create-a-custom-claim.md)

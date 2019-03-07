@@ -13,9 +13,9 @@ ms.author: "mairaw"
 Helps in constructing .NET Framework assemblies. Among other things, the interface contains methods that assist in writing assembly manifests for multi-module assemblies, signing assemblies with strong names, and creating netmodules.  
   
 ## In This Section  
- [AddFile Method1](../../../../docs/framework/unmanaged-api/alink/addfile-method.md)  
+ [AddFile Method](../../../../docs/framework/unmanaged-api/alink/addfile-method.md)  
   
- [AddImport Method1](../../../../docs/framework/unmanaged-api/alink/addimport-method.md)  
+ [AddImport Method](../../../../docs/framework/unmanaged-api/alink/addimport-method.md)  
   
  [CloseAssembly Method](../../../../docs/framework/unmanaged-api/alink/closeassembly-method.md)  
   
@@ -47,7 +47,7 @@ Helps in constructing .NET Framework assemblies. Among other things, the interfa
   
  [GetResolutionScope Method](../../../../docs/framework/unmanaged-api/alink/getresolutionscope-method.md)  
   
- [GetScope Method1](../../../../docs/framework/unmanaged-api/alink/getscope-method.md)  
+ [GetScope Method](../../../../docs/framework/unmanaged-api/alink/getscope-method.md)  
   
  [GetWin32ResBlob Method](../../../../docs/framework/unmanaged-api/alink/getwin32resblob-method.md)  
   
@@ -69,7 +69,7 @@ Helps in constructing .NET Framework assemblies. Among other things, the interfa
   
  [SetNonAssemblyFlags Method](../../../../docs/framework/unmanaged-api/alink/setnonassemblyflags-method.md)  
   
-## See Also  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+## See also
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)

@@ -1,9 +1,9 @@
 ---
-title: "&lt;messageSenderAuthentication&gt; element"
+title: "<messageSenderAuthentication> element"
 ms.date: "03/30/2017"
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
 ---
-# &lt;messageSenderAuthentication&gt; element
+# \<messageSenderAuthentication> element
 Specifies authentication options for peer-to-peer message senders.  
   
  For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  
@@ -19,12 +19,10 @@ Specifies authentication options for peer-to-peer message senders.
 ## Syntax  
   
 ```xml  
-<messageSenderAuthentication  
-customCertificateValidatorType= "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
-certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
-revocationMode="NoCheck/Online/Offline"  
-trustedStoreLocation="CurrentUser/LocalMachine"   
-/>  
+<messageSenderAuthentication customCertificateValidatorType= "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
+                             certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
+                             revocationMode="NoCheck/Online/Offline"
+                             trustedStoreLocation="CurrentUser/LocalMachine" />
 ```  
   
 ## Attributes and Elements  
@@ -79,30 +77,30 @@ trustedStoreLocation="CurrentUser/LocalMachine"
  The following code sets the message sender validation mode to `PeerOrChainTrust`.  
   
 ```xml  
-<behaviors>  
- <endpointBehaviors>  
-  <behavior name="MyEndpointBehavior">  
-   <clientCredentials>  
-    <peer>  
-      <certificate findValue="www.contoso.com"   
-                   storeLocation="LocalMachine"  
-                   x509FindType="FindByIssuerName" />  
-        <messageSenderAuthentication   
-          certificateValidationMode="PeerOrChainTrust" />  
-       <messageSenderAuthentication certificateValidationMode="None" />  
-    </peer>  
-   </clientCredentials>  
-  </behavior>  
- </endpointBehaviors>  
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="MyEndpointBehavior">
+      <clientCredentials>
+        <peer>
+          <certificate findValue="www.contoso.com"
+                       storeLocation="LocalMachine"
+                       x509FindType="FindByIssuerName" />
+          <messageSenderAuthentication certificateValidationMode="PeerOrChainTrust" />
+          <messageSenderAuthentication certificateValidationMode="None" />
+        </peer>
+      </clientCredentials>
+    </behavior>
+  </endpointBehaviors>
+</behaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>  
- <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>  
- <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>  
- <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)  
- [Peer Channel Message Authentication](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)  
- [Peer Channel Custom Authentication](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)  
- [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
+## See also
+- <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>
+- <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
+- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
+- [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)

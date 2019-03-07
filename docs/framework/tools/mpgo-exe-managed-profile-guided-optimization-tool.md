@@ -19,7 +19,7 @@ Profile-guided optimization improves application startup time, memory utilizatio
   
 When you encounter performance issues with startup time and working set size for Intermediate Language (IL) assemblies, we recommend that you first use Ngen.exe to eliminate just-in-time (JIT) compilation costs and to facilitate code sharing. If you need additional improvements, you can then use Mpgo.exe to further optimize your application. You can use the performance data from the un-optimized native image assemblies as a baseline to evaluate the performance gains. Using Mpgo.exe may result in faster cold startup times and a smaller working set size. Mpgo.exe adds information to IL assemblies that Ngen.exe uses to create optimized native image assemblies. For more information, see the entry [Improving Launch Performance for your Desktop Applications](https://go.microsoft.com/fwlink/p/?LinkId=248943) in the .NET blog.  
   
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7) with administrator credentials, and type the following at the command prompt. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7) with administrator credentials, and type the following at the command prompt. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
 For desktop apps:  
   
@@ -35,7 +35,7 @@ For [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app
 mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>  
 ```  
   
-#### Parameters  
+## Parameters  
  All arguments to Mpgo.exe are case-insensitive. Commands are prefixed with a dash.  
   
 > [!NOTE]
@@ -98,11 +98,11 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
   
 -   You cannot use quoted paths with trailing slash marks, because Visual Studio macros also use trailing slash marks by default. (For example, `–OutDir "C:\Output Folder\"` is invalid.) To work around this restriction, you can escape the trailing slash. (For example, use `-OutDir "$(OutDir)\"` instead.)  
   
--   By default, Mpgo.exe is not on the Visual Studio build path. You must either add the path to Visual Studio or specify the full path on the Mpgo command line. You can use either the `–Scenario` or the `–Import` parameter in the post-build event in Visual Studio. However, the typical process is to use `–Scenario` one time from a Visual Studio developer command prompt, and then use `–Import` to update the optimized assemblies after each build; for example:  `"C:\Program Files\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\mpgo.exe" -import "$(OutDir)tmp" -assemblylist "$(TargetPath)" -outdir "$(OutDir)\"`.  
+-   By default, Mpgo.exe is not on the Visual Studio build path. You must either add the path to Visual Studio or specify the full path on the Mpgo command line. You can use either the `–Scenario` or the `–Import` parameter in the post-build event in Visual Studio. However, the typical process is to use `–Scenario` one time from a Developer Command Prompt for Visual Studio, and then use `–Import` to update the optimized assemblies after each build; for example:  `"C:\Program Files\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\mpgo.exe" -import "$(OutDir)tmp" -assemblylist "$(TargetPath)" -outdir "$(OutDir)\"`.  
   
 <a name="samples"></a>   
 ## Examples  
- The following Mpgo.exe command from a Visual Studio developer command prompt optimizes a tax application:  
+ The following Mpgo.exe command from a Developer Command Prompt for Visual Studio optimizes a tax application:  
   
 ```  
 mpgo –scenario "C:\MyApp\MyTax.exe /params par" –AssemblyList Mytax.dll MyTaxUtil2011.dll –OutDir C:\Optimized –TimeOut 15  
@@ -120,8 +120,8 @@ mpgo –scenario "C:\MyApp\wav2wma.exe –input song1.wav –output song1.wma" �
 mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyTaxUtil2011.dll" -outdir C:\ReOptimized  
 ```  
   
-## See Also  
- [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)  
- [Improving Launch Performance for your Desktop Applications](https://go.microsoft.com/fwlink/p/?LinkId=248943)  
- [An Overview of Performance Improvements in .NET 4.5](https://go.microsoft.com/fwlink/p/?LinkId=249131)
+## See also
+- [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Improving Launch Performance for your Desktop Applications](https://go.microsoft.com/fwlink/p/?LinkId=248943)
+- [An Overview of Performance Improvements in .NET 4.5](https://go.microsoft.com/fwlink/p/?LinkId=249131)

@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: c1cfcddb-e39c-41c8-a7f3-60984914dfae
 ---
 # Resources and Code
-This overview concentrates on how [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] resources can be accessed or created using  code rather than [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] syntax. For more information on general resource usage and resources from a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax perspective, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
+This overview concentrates on how [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] resources can be accessed or created using  code rather than [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] syntax. For more information on general resource usage and resources from a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax perspective, see [XAML Resources](xaml-resources.md).  
   
   
   
@@ -23,8 +23,8 @@ This overview concentrates on how [!INCLUDE[TLA#tla_winclient](../../../../inclu
   
  The following is a brief code example that finds a resource by key and uses the returned value to set a property, implemented as a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler.  
   
- [!code-csharp[PropertiesOvwSupport#ResourceProceduralGet](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml.cs#resourceproceduralget)]
- [!code-vb[PropertiesOvwSupport#ResourceProceduralGet](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page3.xaml.vb#resourceproceduralget)]  
+ [!code-csharp[PropertiesOvwSupport#ResourceProceduralGet](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml.cs#resourceproceduralget)]
+ [!code-vb[PropertiesOvwSupport#ResourceProceduralGet](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page3.xaml.vb#resourceproceduralget)]  
   
  An alternative method for assigning a resource reference is <xref:System.Windows.FrameworkElement.SetResourceReference%2A>. This method takes two parameters: the key of the resource, and the identifier for a particular dependency property that is present on the element instance to which the resource value should be assigned. Functionally, this method is the same and has the advantage of not requiring any casting of return values.  
   
@@ -38,8 +38,8 @@ This overview concentrates on how [!INCLUDE[TLA#tla_winclient](../../../../inclu
   
 <a name="objectaskey"></a>   
 ## Using Objects as Keys  
- Most resource usages will set the key of the resource to be a string. However, various [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] features deliberately do not use a string type to specify keys, instead this parameter is an object. The capability of having the resource be keyed by an object is used by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] style and theming support. The styles in themes which become the default style for an otherwise non-styled control are each keyed by the <xref:System.Type> of the control that they should apply to. Being keyed by type provides a reliable lookup mechanism that works on default instances of each control type, and type can be detected by reflection and used for styling derived classes even though the derived type otherwise has no default style. You can specify a <xref:System.Type> key for a resource defined in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] by using the [x:Type Markup Extension](../../../../docs/framework/xaml-services/x-type-markup-extension.md). Similar extensions exist for other nonstring key usages that support [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] features, such as [ComponentResourceKey Markup Extension](../../../../docs/framework/wpf/advanced/componentresourcekey-markup-extension.md).  
+ Most resource usages will set the key of the resource to be a string. However, various [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] features deliberately do not use a string type to specify keys, instead this parameter is an object. The capability of having the resource be keyed by an object is used by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] style and theming support. The styles in themes which become the default style for an otherwise non-styled control are each keyed by the <xref:System.Type> of the control that they should apply to. Being keyed by type provides a reliable lookup mechanism that works on default instances of each control type, and type can be detected by reflection and used for styling derived classes even though the derived type otherwise has no default style. You can specify a <xref:System.Type> key for a resource defined in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] by using the [x:Type Markup Extension](../../xaml-services/x-type-markup-extension.md). Similar extensions exist for other nonstring key usages that support [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] features, such as [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md).  
   
-## See Also  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+## See also
+- [XAML Resources](xaml-resources.md)
+- [Styling and Templating](../controls/styling-and-templating.md)

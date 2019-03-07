@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "List Item control type"
   - "UI Automation, List Item control type"
 ms.assetid: 34f533bf-fc14-4e78-8fee-fb7107345fab
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the ListItem Control Type
 > [!NOTE]
@@ -84,7 +82,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.ListItem>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.ListItem>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

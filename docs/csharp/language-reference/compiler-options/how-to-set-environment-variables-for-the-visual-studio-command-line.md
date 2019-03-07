@@ -43,6 +43,6 @@ To see the available options for VsDevCmd.BAT, run the command with the `-help` 
 VsDevCmd.bat -help
 ```
 
-## See Also  
+## See also
 
 - [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)

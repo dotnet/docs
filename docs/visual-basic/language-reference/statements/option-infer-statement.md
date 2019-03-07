@@ -80,19 +80,19 @@ IntelliSense when Option Infer is off
 ## Example  
  The following examples demonstrate how the `Option Infer` statement enables local type inference.  
   
- [!code-vb[VbVbalrTypeInference#6](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_1.vb)]  
+ [!code-vb[VbVbalrTypeInference#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#6)]  
   
 ## Example  
  The following example demonstrates that the run-time type can differ when a variable is identified as an `Object`.  
   
- [!code-vb[VbVbalrTypeInference#11](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_2.vb)]  
+ [!code-vb[VbVbalrTypeInference#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#11)]  
   
-## See Also  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)  
- [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
- [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)
+## See also
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
+- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+- [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)

@@ -30,15 +30,15 @@ AddressOf procedurename
 ## Example  
  This example uses the `AddressOf` operator to designate a delegate to handle the `Click` event of a button.  
   
- [!code-vb[VbVbalrDelegates#8](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addressof-operator_1.vb)]  
+ [!code-vb[VbVbalrDelegates#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#8)]  
   
 ## Example  
  The following example uses the `AddressOf` operator to designate the startup function for a thread.  
   
- [!code-vb[VbVbalrDelegates#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addressof-operator_2.vb)]  
+ [!code-vb[VbVbalrDelegates#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#9)]  
   
-## See Also  
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)
+## See also
+- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)

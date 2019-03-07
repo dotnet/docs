@@ -30,7 +30,7 @@ HRESULT UnregisterNotifySource
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `in_pNotifySource`  
  [in] Notification object to be unregistered.  
   
@@ -40,8 +40,8 @@ HRESULT UnregisterNotifySource
 ## Requirements  
  **Header:** ProtocolNotify2.idl  
   
-## See Also  
- [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)  
- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)  
- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)  
- [RegisterNotifySource Method](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-registernotifysource-method.md)
+## See also
+- [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
+- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
+- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
+- [RegisterNotifySource Method](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-registernotifysource-method.md)

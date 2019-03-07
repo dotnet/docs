@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAssemblyEnum Interface1"
+title: "ICorDebugAssemblyEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugAssemblyEnum"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugAssemblyEnum Interface1
+# ICorDebugAssemblyEnum Interface
+
 Implements ICorDebugEnum methods and enumerates ICorDebugAssembly arrays.  
   
 ## Methods  
@@ -40,5 +41,5 @@ Implements ICorDebugEnum methods and enumerates ICorDebugAssembly arrays.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

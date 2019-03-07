@@ -19,7 +19,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # IMetaDataImport::GetMemberProps Method
-Gets metadata information, including the name, binary signature, and relative virtual address, of the <xref:System.Type> member referenced by the specified metadata token.  
+Gets information stored in the metadata for a specified member definition, including the name, binary signature, and relative virtual address, of the <xref:System.Type> member referenced by the specified metadata token. This is a simple helper method: if *mb* is a MethodDef, then **GetMethodProps** is called; if *mb* is a FieldDef, then **GetFieldProps** is called. See these other methods for details. 
   
 ## Syntax  
   
@@ -41,7 +41,7 @@ HRESULT GetMemberProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mb`  
  [in] The token that references the member to get the associated metadata for.  
   
@@ -73,7 +73,7 @@ HRESULT GetMemberProps (
  [out] Any method implementation flags associated with the member.  
   
  `pdwCPlusTypeFlag`  
- [out] A flag that marks a <xref:System.ValueType>.  
+ [out] A flag that marks a <xref:System.ValueType>. It is one of the `ELEMENT_TYPE_*` values.
   
  `ppValue`  
  [out] A constant string value returned by this member.  
@@ -90,6 +90,6 @@ HRESULT GetMemberProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

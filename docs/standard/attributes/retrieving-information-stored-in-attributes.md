@@ -80,7 +80,7 @@ The attribute was not found.
   
 ## See also
 
-- <xref:System.Type?displayProperty=nameWithType>  
-- <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>  
-- <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>  
+- <xref:System.Type?displayProperty=nameWithType>
+- <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>
+- <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>
 - [Attributes](../../../docs/standard/attributes/index.md)

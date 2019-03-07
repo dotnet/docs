@@ -14,17 +14,17 @@ You can use implicitly typed local variables whenever you want the compiler to d
 ## Example  
  The following example shows a common scenario in which the `var` keyword is required: a query expression that produces a sequence of anonymous types. In this scenario, both the query variable and the iteration variable in the `foreach` statement must be implicitly typed by using `var` because you do not have access to a type name for the anonymous type. For more information about anonymous types, see [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md).  
   
- [!code-csharp[csProgGuideLINQ#32](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression_1.cs)]  
+ [!code-csharp[csProgGuideLINQ#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS/csRef30LangFeatures_2.cs#32)]  
   
 ## Example  
  The following example uses the `var` keyword in a situation that is similar, but in which the use of `var` is optional. Because `student.LastName` is a string, execution of the query returns a sequence of strings. Therefore, the type of `queryID` could be declared as `System.Collections.Generic.IEnumerable<string>` instead of `var`. Keyword `var` is used for convenience. In the example, the iteration variable in the `foreach` statement is explicitly typed as a string, but it could instead be declared by using `var`. Because the type of the iteration variable is not an anonymous type, the use of `var` is an option, not a requirement. Remember, `var` itself is not a type, but an instruction to the compiler to infer and assign the type.  
   
- [!code-csharp[csProgGuideLINQ#33](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression_2.cs)]  
+ [!code-csharp[csProgGuideLINQ#33](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS/csRef30LangFeatures_2.cs#33)]  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
-- [LINQ (Language-Integrated Query)](../../../csharp/linq/index.md)  
-- [var](../../../csharp/language-reference/keywords/var.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)
+- [LINQ (Language-Integrated Query)](../../../csharp/linq/index.md)
+- [var](../../../csharp/language-reference/keywords/var.md)
 - [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

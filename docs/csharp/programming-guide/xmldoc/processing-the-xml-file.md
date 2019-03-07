@@ -73,10 +73,10 @@ The compiler generates an ID string for each construct in your code that is tagg
 ## Examples  
  The following examples show how the ID strings for a class and its members would be generated:  
   
- [!code-csharp[csProgGuidePointers#21](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/processing-the-xml-file_1.cs)]  
+ [!code-csharp[csProgGuidePointers#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers.cs#21)]  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)
 - [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

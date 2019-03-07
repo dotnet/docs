@@ -18,11 +18,11 @@ This example shows how to use the <xref:System.Windows.Controls.ToolTipService.B
   
 -   If the tooltip is not visible at the beginning of the time interval for the first ellipse.  
   
- [!code-xaml[ToolTipService#ToolTip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
-[!code-xaml[ToolTipService#NoToolTip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
+ [!code-xaml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
+[!code-xaml[ToolTipService#NoToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
   
-## See Also  
- <xref:System.Windows.Controls.ToolTip>  
- <xref:System.Windows.Controls.ToolTipService>  
- [How-to Topics](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)  
- [ToolTip Overview](../../../../docs/framework/wpf/controls/tooltip-overview.md)
+## See also
+- <xref:System.Windows.Controls.ToolTip>
+- <xref:System.Windows.Controls.ToolTipService>
+- [How-to Topics](tooltip-how-to-topics.md)
+- [ToolTip Overview](tooltip-overview.md)

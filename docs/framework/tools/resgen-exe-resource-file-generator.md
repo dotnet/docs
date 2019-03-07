@@ -49,7 +49,7 @@ resgen /?
   
  If you use Resgen,exe to generate binary .resources files, you can use a language compiler to embed the binary files into executable assemblies, or you can use the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to compile them into satellite assemblies.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -63,7 +63,7 @@ resgen  [/define:symbol1[,symbol2,...]] [/useSourcePath] filename.extension  | /
 resgen filename.extension [outputDirectory]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter or switch|Description|  
 |-------------------------|-----------------|  
@@ -323,9 +323,9 @@ resgen inputFilename [outputFilename] /str:language[,namespace,[classname[,filen
 resgen StringResources.txt /str:vb,,StringResources   
 ```  
   
-## See Also  
- [Tools](../../../docs/framework/tools/index.md)  
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)  
- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- [Tools](../../../docs/framework/tools/index.md)
+- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)
+- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

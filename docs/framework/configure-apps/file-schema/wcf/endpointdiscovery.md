@@ -1,9 +1,9 @@
 ---
-title: "&lt;endpointDiscovery&gt;"
+title: "<endpointDiscovery>"
 ms.date: "03/30/2017"
 ms.assetid: 70812717-888a-4748-9640-0df6715ff029
 ---
-# &lt;endpointDiscovery&gt;
+# \<endpointDiscovery>
 Specifies the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata.  
   
 \<system.ServiceModel>  
@@ -26,7 +26,7 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
       </endpointDiscovery>
     </behavior>
   </endpointBehaviors>
-</behaviors>  
+</behaviors>
 ```  
   
 ## Attributes and Elements  
@@ -62,41 +62,41 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
  The following configuration example specifies filtering scopes and extension metadata to be published for an endpoint.  
   
 ```xml  
-<services>  
-  <service name="CalculatorService"  
-           behaviorConfiguration="CalculatorServiceBehavior">  
-     <endpoint binding="basicHttpBinding"  
-              address="calculator"  
-              contract="ICalculatorService"  
-              behaviorConfiguration="calculatorEndpointBehavior" />  
-  </service>  
-</services>  
-<behaviors>  
-  <serviceBehaviors>  
-    <behavior name="CalculatorServiceBehavior">  
-      <serviceDiscovery />  
-    </behavior>  
-  </serviceBehaviors>  
-  <endpointBehaviors>  
-    <behavior name="calculatorEndpointBehavior">  
-      <endpointDiscovery enabled="true">  
-        <scopes>  
-          <add scope="http://contoso/test1"/>  
-          <add scope="http://contoso/test2"/>  
-        </scopes>  
-        <extensions>  
-          <e:Publisher xmlns:e="http://example.org">  
-            <e:Name>The Example Organization</e:Name>  
-            <e:Address>One Example Way, ExampleTown, EX 12345</e:Address>  
-            <e:Contact>support@example.org</e:Contact>  
-          </e:Publisher>  
-          <AnotherCustomMetadata>Custom Metadata</AnotherCustomMetadata>  
-        </extensions>  
-      </endpointDiscovery>  
-    </behavior>  
-  </endpointBehaviors>  
-</behaviors>  
+<services>
+  <service name="CalculatorService"
+           behaviorConfiguration="CalculatorServiceBehavior">
+    <endpoint binding="basicHttpBinding"
+              address="calculator"
+              contract="ICalculatorService"
+              behaviorConfiguration="calculatorEndpointBehavior" />
+  </service>
+</services>
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="CalculatorServiceBehavior">
+      <serviceDiscovery />
+    </behavior>
+  </serviceBehaviors>
+  <endpointBehaviors>
+    <behavior name="calculatorEndpointBehavior">
+      <endpointDiscovery enabled="true">
+        <scopes>
+          <add scope="http://contoso/test1" />
+          <add scope="http://contoso/test2" />
+        </scopes>
+        <extensions>
+          <e:Publisher xmlns:e="http://example.org">
+            <e:Name>The Example Organization</e:Name>
+            <e:Address>One Example Way, ExampleTown, EX 12345</e:Address>
+            <e:Contact>support@example.org</e:Contact>
+          </e:Publisher>
+          <AnotherCustomMetadata>Custom Metadata</AnotherCustomMetadata>
+        </extensions>
+      </endpointDiscovery>
+    </behavior>
+  </endpointBehaviors>
+</behaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>
+## See also
+- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>

@@ -29,7 +29,7 @@ HRESULT RemotingClientSendingMessage(
     [in] BOOL fIsAsync);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCookie`  
  [in] A value that will correspond with the value provided in [ICorProfilerCallback::RemotingClientSendingMessage](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-remotingclientsendingmessage-method.md) under these conditions:  
   
@@ -56,5 +56,5 @@ HRESULT RemotingClientSendingMessage(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

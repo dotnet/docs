@@ -1,5 +1,5 @@
 ---
-title: "XSLT Stylesheet Scripting Using &lt;msxsl:script&gt;"
+title: "XSLT Stylesheet Scripting Using <msxsl:script>"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -9,7 +9,7 @@ ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# XSLT Stylesheet Scripting Using &lt;msxsl:script&gt;
+# XSLT Stylesheet Scripting Using \<msxsl:script>
 The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using the `script` element.  
   
 > [!NOTE]
@@ -39,7 +39,7 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
   
  To get the evidence from your assembly, use `this.GetType().Assembly.Evidence`. To get the evidence from a Uniform Resource Identifier (URI), use `Evidence e = XmlSecureResolver.CreateEvidenceForUrl(stylesheetURI)`.  
   
- If you use <xref:System.Xml.Xsl.XslTransform.Load%2A> methods that take an <xref:System.Xml.XmlResolver> but no `Evidence`, the security zone for the assembly defaults to Full Trust. For more information, see <xref:System.Security.SecurityZone> and [Named Permission Sets](https://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3).  
+ If you use <xref:System.Xml.Xsl.XslTransform.Load%2A> methods that take an <xref:System.Xml.XmlResolver> but no `Evidence`, the security zone for the assembly defaults to Full Trust. For more information, see <xref:System.Security.SecurityZone> and [Named Permission Sets](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
   
  Functions can be declared within the `msxsl:script` element. The following table shows the namespaces that are supported by default. You can use classes outside the listed namespaces. However, these classes must be fully qualified.  
   
@@ -83,9 +83,10 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
  It is highly recommended that all script content be placed in a CDATA section, because operators, identifiers, or delimiters for a given language have the potential of being misinterpreted as XML. The following example shows the use of the logical AND operator in script.  
   
 ```xml  
-<msxsl:script implements-prefix='yourprefix' language='CSharp>  
+<msxsl:script implements-prefix='yourprefix' language='CSharp'>  
     public string book(string abc, string xyz)  
-    {  if ((abc== abc)&&(abc== xyz)) return bar+xyz;  
+    {  
+        if ((abc == bar) && (abc == xyz)) return bar + xyz;  
         else return null;  
     }  
 </msxsl:script>  
@@ -140,8 +141,8 @@ public class Sample
    private const String filename = "number.xml";  
    private const String stylesheet = "calc.xsl";  
   
-   public static void Main() {  
-  
+   public static void Main()  
+   {  
     //Create the XslTransform and load the style sheet.  
     XslTransform xslt = new XslTransform();  
     xslt.Load(stylesheet);  
@@ -156,7 +157,7 @@ public class Sample
     //Transform the file.  
     xslt.Transform(doc, null, writer, null);  
     writer.Close();  
-  }   
+  }  
 }  
 ```  
   
@@ -184,7 +185,8 @@ public class Sample
   
   <msxsl:script language="C#" implements-prefix="user">  
      <![CDATA[  
-     public double circumference(double radius){  
+     public double circumference(double radius)  
+     {  
        double pi = 3.14;  
        double circ = pi*radius*2;  
        return circ;  

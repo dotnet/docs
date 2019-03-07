@@ -32,7 +32,7 @@ HRESULT CreateDomainEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFriendlyName`  
  [in] An optional parameter used to give a friendly name to the domain. This friendly name can be displayed in user interfaces such as debuggers to identify the domain.  
   
@@ -66,9 +66,9 @@ HRESULT CreateDomainEx (
   
  **.NET Framework Version:** 1.0, 1.1  
   
-## See Also  
- <xref:System._AppDomain>  
- <xref:System.AppDomain>  
- <xref:System.IAppDomainSetup?displayProperty=nameWithType>  
- [CreateDomain Method](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomain-method.md)  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+- <xref:System._AppDomain>
+- <xref:System.AppDomain>
+- <xref:System.IAppDomainSetup?displayProperty=nameWithType>
+- [CreateDomain Method](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomain-method.md)
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

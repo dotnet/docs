@@ -319,5 +319,5 @@ This topic outlines the basic steps required to create a routing configuration t
 </configuration>  
 ```  
   
-## See Also  
- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)
+## See also
+- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)

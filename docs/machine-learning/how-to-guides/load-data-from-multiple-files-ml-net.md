@@ -1,11 +1,16 @@
 ---
 title: Load data from multiple files for machine learning processing - ML.NET
 description: Learn how to Load data from multiple files for use in machine learning model building, training, and scoring with ML.NET
-ms.date: 11/07/2018
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to load data from multiple files so that I can use it in machine learning model building, training, and scoring with ML.NET.
 ---
 # Load data from multiple files for machine learning processing - ML.NET
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 Use the `TextLoader`, and specify an array of files to the `Read` method. The files must have the same schema (same number and type of columns):
 
@@ -18,19 +23,19 @@ Use the `TextLoader`, and specify an array of files to the `Read` method. The fi
 var mlContext = new MLContext();
 
 // Create the reader: define the data columns and where to find them in the text file.
-var reader = mlContext.Data.TextReader(new TextLoader.Arguments
-{
-    Column = new[] {
-        // A boolean column depicting the 'label'.
-        new TextLoader.Column("IsOver50k", DataKind.BL, 0),
+var reader = mlContext.Data.CreateTextLoader(
+    columns: new TextLoader.Column[]
+    {
+        // A boolean column depicting the 'target label'.
+        new TextLoader.Column("IsOver50k",DataKind.BL,0),
         // Three text columns.
-        new TextLoader.Column("Workclass", DataKind.TX, 1),
-        new TextLoader.Column("Education", DataKind.TX, 2),
-        new TextLoader.Column("MaritalStatus", DataKind.TX, 3)
+        new TextLoader.Column("WorkClass",DataKind.TX,1),
+        new TextLoader.Column("Education",DataKind.TX,2),
+        new TextLoader.Column("MaritalStatus",DataKind.TX,3)
     },
-    // First line of the file is a header, not a data row.
-    HasHeader = true
-});
+    hasHeader: true
+);
 
+// Now read the files (remember though, readers are lazy, so the actual reading will happen when the data is accessed).
 var data = reader.Read(exampleFile1, exampleFile2);
 ```

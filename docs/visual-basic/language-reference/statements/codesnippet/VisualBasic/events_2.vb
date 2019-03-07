@@ -1,1 +1,0 @@
-        RaiseEvent AnEvent(EventNumber)

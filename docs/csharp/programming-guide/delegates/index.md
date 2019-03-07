@@ -12,7 +12,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
  Delegates are used to pass methods as arguments to other methods. Event handlers are nothing more than methods that are invoked through delegates. You create a custom method, and a class such as a windows control can call your method when a certain event occurs. The following example shows a delegate declaration:  
   
- [!code-csharp[csProgGuideDelegates#20](../../../csharp/programming-guide/delegates/codesnippet/CSharp/index_1.cs)]  
+ [!code-csharp[csProgGuideDelegates#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#20)]  
   
  Any method from any accessible class or struct that matches the delegate type can be assigned to the delegate. The method can be either static or an instance method. This makes it possible to programmatically change method calls, and also plug new code into existing classes.  
   
@@ -40,7 +40,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
 -   [Using Delegates](../../../csharp/programming-guide/delegates/using-delegates.md)  
   
--   [When to Use Delegates Instead of Interfaces (C# Programming Guide)](https://msdn.microsoft.com/library/2e759bdf-7ca4-4005-8597-af92edf6d8f0)  
+-   [When to Use Delegates Instead of Interfaces (C# Programming Guide)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms173173(v=vs.100))  
   
 -   [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)  
   
@@ -62,8 +62,8 @@ For more information, see [Delegates](~/_csharplang/spec/delegates.md) in the [C
   
  [Delegates and Events](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652490%28v=orm.10%29) in [Learning C# 3.0: Master the fundamentals of C# 3.0](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652493%28v=orm.10%29)  
   
-## See Also
+## See also
 
-- <xref:System.Delegate>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- <xref:System.Delegate>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Events](../../../csharp/programming-guide/events/index.md)

@@ -33,7 +33,7 @@ HRESULT GetLocalMemoryRegisterValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `highWordAddress`  
  [in] A `CORDB_ADDRESS` value that specifies the memory location containing the high word of the value.  
   
@@ -58,5 +58,5 @@ HRESULT GetLocalMemoryRegisterValue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

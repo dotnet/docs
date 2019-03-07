@@ -22,8 +22,8 @@ In C#, the `new` keyword can be used as an operator, a modifier, or a constraint
  [new Constraint](../../../csharp/language-reference/keywords/new-constraint.md)  
  Used to restrict types that might be used as arguments for a type parameter in a generic declaration.  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)

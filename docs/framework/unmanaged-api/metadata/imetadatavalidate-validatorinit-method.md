@@ -30,7 +30,7 @@ HRESULT ValidatorInit (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwModule`  
  [in] A value of the [CorValidatorModuleType](../../../../docs/framework/unmanaged-api/metadata/corvalidatormoduletype-enumeration.md) enumeration that specifies the type of the module in the current metadata scope.  
   
@@ -46,5 +46,5 @@ HRESULT ValidatorInit (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataValidate Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatavalidate-interface.md)
+## See also
+- [IMetaDataValidate Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatavalidate-interface.md)

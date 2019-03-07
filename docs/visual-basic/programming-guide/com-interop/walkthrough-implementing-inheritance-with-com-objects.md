@@ -88,15 +88,15 @@ You can derive Visual Basic classes from `Public` classes in COM objects, even t
   
 6.  Add the following code to the top of `MathClass` to inherit from the COM class.  
   
-     [!code-vb[VbVbalrInterop#31](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_1.vb)]  
+     [!code-vb[VbVbalrInterop#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#31)]  
   
 7.  Overload the public method of the base class by adding the following code to `MathClass`:  
   
-     [!code-vb[VbVbalrInterop#32](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_2.vb)]  
+     [!code-vb[VbVbalrInterop#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#32)]  
   
 8.  Extend the inherited class by adding the following code to `MathClass`:  
   
-     [!code-vb[VbVbalrInterop#33](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_3.vb)]  
+     [!code-vb[VbVbalrInterop#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#33)]  
   
  The new class inherits the properties of the base class in the COM object, overloads a method, and defines a new method to extend the class.  
   
@@ -106,7 +106,7 @@ You can derive Visual Basic classes from `Public` classes in COM objects, even t
   
 2.  In the button's `Click` event handler procedure, add the following code to create an instance of `MathClass` and call the overloaded methods:  
   
-     [!code-vb[VbVbalrInterop#34](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_4.vb)]  
+     [!code-vb[VbVbalrInterop#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#34)]  
   
 3.  Run the project by pressing F5.  
   
@@ -123,7 +123,7 @@ You can derive Visual Basic classes from `Public` classes in COM objects, even t
   
 -   Properties that use `ByRef` parameters cannot be overridden.  
   
-## See Also  
- [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)  
- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)
+## See also
+- [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)
+- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
+- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)

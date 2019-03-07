@@ -23,22 +23,22 @@ This topic discusses using the arithmetic operators `+` and `-` to manipulate po
  No exceptions are generated when the arithmetic operation overflows the domain of the pointer, and the result depends on the implementation.  
   
 ## Example  
- [!code-csharp[csProgGuidePointers#14](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_1.cs)]  
+ [!code-csharp[csProgGuidePointers#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers2.cs#14)]  
   
- [!code-csharp[csProgGuidePointers#15](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_2.cs)]  
+ [!code-csharp[csProgGuidePointers#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers.cs#15)]  
   
 ## C# language specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)  
-- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
-- [C# Operators](../../../csharp/language-reference/operators/index.md)  
-- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
-- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
-- [Types](../../../csharp/language-reference/keywords/types.md)  
-- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
-- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)
+- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
+- [C# Operators](../../../csharp/language-reference/operators/index.md)
+- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Types](../../../csharp/language-reference/keywords/types.md)
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
+- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)
 - [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

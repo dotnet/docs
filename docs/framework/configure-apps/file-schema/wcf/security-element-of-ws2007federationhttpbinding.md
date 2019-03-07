@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; element of &lt;ws2007FederationHttpBinding&gt;"
+title: "<security> element of <ws2007FederationHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
 ---
-# &lt;security&gt; element of &lt;ws2007FederationHttpBinding&gt;
+# \<security> element of \<ws2007FederationHttpBinding>
 Defines the security settings of the [\<ws2007FederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) element.  
   
  \<system.ServiceModel>  
@@ -15,18 +15,18 @@ Defines the security settings of the [\<ws2007FederationHttpBinding>](../../../.
 ## Syntax  
   
 ```xml  
-<ws2007FederationBinding>  
-    <binding >  
-        <security mode="None/Message/TransportWithMessageCredential">  
-           <message negotiateServiceCredential="Boolean"  
-                algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/ Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-                defaultProtectionLevel="none/sign/EncryptAndSign"   
-                issuedTokenType="string"   
-                issuedKeyType="SymmetricKey/PublicKey"  
-           </message>  
-        </security>  
-    </binding>  
-</ws2007FederationBinding>  
+<ws2007FederationBinding>
+  <binding>
+    <security mode="None/Message/TransportWithMessageCredential">
+      <message negotiateServiceCredential="Boolean"
+               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/  Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               defaultProtectionLevel="none/sign/EncryptAndSign"
+               issuedTokenType="string"
+               issuedKeyType="SymmetricKey/PublicKey">
+      </message>
+    </security>
+  </binding>
+</ws2007FederationBinding>
 ```  
   
 ## Attributes and Elements  
@@ -58,15 +58,15 @@ Defines the security settings of the [\<ws2007FederationHttpBinding>](../../../.
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).|  
   
-## See Also  
- <xref:System.ServiceModel.WSFederationHttpSecurity>  
- <xref:System.ServiceModel.WSFederationHttpBinding.Security%2A>  
- <xref:System.ServiceModel.Configuration.WSFederationHttpBindingElement.Security%2A>  
- <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement>  
- [How to: Create a WSFederationHttpBinding](../../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.WSFederationHttpSecurity>
+- <xref:System.ServiceModel.WSFederationHttpBinding.Security%2A>
+- <xref:System.ServiceModel.Configuration.WSFederationHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement>
+- [How to: Create a WSFederationHttpBinding](../../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

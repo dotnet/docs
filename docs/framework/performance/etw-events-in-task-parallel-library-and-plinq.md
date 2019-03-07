@@ -112,7 +112,7 @@ EVENT_DESCRIPTOR.Id = 1
 |OriginatingTaskID|<xref:System.Int32?displayProperty=nameWithType>|The ID of the task that started the loop.|
 |QueryID|<xref:System.Int32?displayProperty=nameWithType>|A unique query identifier.|
 
-## See Also
+## See also
 
 - [ETW Events in the .NET Framework](../../../docs/framework/performance/etw-events.md)
 - [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)

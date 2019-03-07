@@ -20,16 +20,16 @@ You can use `implicit` conversion operators, which are easier to use, or `explic
 ## Example  
  This is an example of an explicit conversion operator. This operator converts from the type <xref:System.Byte> to a value type called `Digit`. Because not all bytes can be converted to a digit, the conversion is explicit, meaning that a cast must be used, as shown in the `Main` method.  
   
- [!code-csharp[csProgGuideStatements#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-conversion-operators_1.cs)]  
+ [!code-csharp[csProgGuideStatements#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#11)]  
   
 ## Example  
  This example demonstrates an implicit conversion operator by defining a conversion operator that undoes what the previous example did: it converts from a value class called `Digit` to the integral <xref:System.Byte> type. Because any digit can be converted to a <xref:System.Byte>, there's no need to force users to be explicit about the conversion.  
   
- [!code-csharp[csProgGuideStatements#12](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-conversion-operators_2.cs)]  
+ [!code-csharp[csProgGuideStatements#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#12)]  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)
 - [is](../../../csharp/language-reference/keywords/is.md)

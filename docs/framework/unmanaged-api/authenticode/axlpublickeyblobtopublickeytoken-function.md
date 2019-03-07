@@ -23,7 +23,7 @@ HRESULT _AxlPublicKeyBlobToPublicKeyToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCspPublicKeyBlob`  
  [in] The CSP public key blob.  
   
@@ -33,5 +33,5 @@ HRESULT _AxlPublicKeyBlobToPublicKeyToken (
 ## Return Value  
  `S_OK` if the function succeeds; otherwise `S_FALSE`.  
   
-## See Also  
- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+## See also
+- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

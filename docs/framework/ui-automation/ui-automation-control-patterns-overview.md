@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "control patterns"
   - "UI Automation, control patterns"
 ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Control Patterns Overview
 > [!NOTE]
@@ -37,7 +35,7 @@ ms.author: "mhopkins"
   
  UI Automation clients access methods and properties of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control pattern classes and use them to get information about the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], or to manipulate the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. These control pattern classes are found in the <xref:System.Windows.Automation> namespace (for example, <xref:System.Windows.Automation.InvokePattern> and <xref:System.Windows.Automation.SelectionPattern>).  
   
- Clients use <xref:System.Windows.Automation.AutomationElement> methods (such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> or <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType>) or the [!INCLUDE[TLA#tla_clr](../../../includes/tlasharptla-clr-md.md)] accessors to access the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties on a pattern. Each control pattern class has a field member (for example, <xref:System.Windows.Automation.InvokePattern.Pattern?displayProperty=nameWithType>``or <xref:System.Windows.Automation.SelectionPattern.Pattern?displayProperty=nameWithType>) that identifies that control pattern and can be passed as a parameter to <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> or <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve that pattern for an <xref:System.Windows.Automation.AutomationElement>.  
+ Clients use <xref:System.Windows.Automation.AutomationElement> methods (such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> or <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType>) or the [!INCLUDE[TLA#tla_clr](../../../includes/tlasharptla-clr-md.md)] accessors to access the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties on a pattern. Each control pattern class has a field member (for example, <xref:System.Windows.Automation.InvokePattern.Pattern?displayProperty=nameWithType> or <xref:System.Windows.Automation.SelectionPattern.Pattern?displayProperty=nameWithType>) that identifies that control pattern and can be passed as a parameter to <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> or <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve that pattern for an <xref:System.Windows.Automation.AutomationElement>.  
   
 <a name="uiautomation_control_patterns_dynamic"></a>   
 ## Dynamic Control Patterns  
@@ -68,9 +66,9 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.ValuePattern>|<xref:System.Windows.Automation.Provider.IValueProvider>|Allows clients to get or set a value on controls that do not support a range of values. For example, a date time picker.|  
 |<xref:System.Windows.Automation.WindowPattern>|<xref:System.Windows.Automation.Provider.IWindowProvider>|Exposes information specific to windows, a fundamental concept to the [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)] operating system. Examples of controls that are windows are top-level application windows ([!INCLUDE[TLA#tla_word](../../../includes/tlasharptla-word-md.md)], [!INCLUDE[TLA#tla_winexpl](../../../includes/tlasharptla-winexpl-md.md)], and so on), [!INCLUDE[TLA#tla_mdi](../../../includes/tlasharptla-mdi-md.md)] child windows, and dialogs.|  
   
-## See Also  
- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)  
- [Control Pattern Mapping for UI Automation Clients](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)  
- [UI Automation Properties for Clients](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md)  
- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)
+## See also
+- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
+- [Control Pattern Mapping for UI Automation Clients](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+- [UI Automation Properties for Clients](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md)
+- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)

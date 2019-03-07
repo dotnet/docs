@@ -22,7 +22,7 @@ The Event-based Asynchronous Pattern provides you with an effective way to expos
  If you implement the Event-based Asynchronous Pattern, you must provide a number of guarantees to ensure that your class will behave properly and clients of your class can rely on such behavior.  
   
 ### Completion  
- Always invoke the <em>MethodName</em>**Completed** event handler when you have successful completion, an error, or a cancellation. Applications should never encounter a situation where they remain idle and completion never occurs. One exception to this rule is if the asynchronous operation itself it designed so that it never completes.  
+ Always invoke the <em>MethodName</em>**Completed** event handler when you have successful completion, an error, or a cancellation. Applications should never encounter a situation where they remain idle and completion never occurs. One exception to this rule is if the asynchronous operation itself is designed so that it never completes.  
   
 ### Completed Event and EventArgs  
  For each separate <em>MethodName</em>**Async** method, apply the following design requirements:  
@@ -139,14 +139,14 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 ## See also
 
-- <xref:System.ComponentModel.AsyncOperation>  
-- <xref:System.ComponentModel.AsyncOperationManager>  
-- <xref:System.ComponentModel.AsyncCompletedEventArgs>  
-- <xref:System.ComponentModel.ProgressChangedEventArgs>  
-- <xref:System.ComponentModel.BackgroundWorker>  
-- [Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md)  
-- [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
-- [Deciding When to Implement the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)  
-- [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)  
-- [How to: Use Components That Support the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md)  
+- <xref:System.ComponentModel.AsyncOperation>
+- <xref:System.ComponentModel.AsyncOperationManager>
+- <xref:System.ComponentModel.AsyncCompletedEventArgs>
+- <xref:System.ComponentModel.ProgressChangedEventArgs>
+- <xref:System.ComponentModel.BackgroundWorker>
+- [Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md)
+- [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
+- [Deciding When to Implement the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)
+- [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
+- [How to: Use Components That Support the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md)
 - [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)

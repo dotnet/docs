@@ -36,9 +36,9 @@ Determines whether an expression is `True`.
 ## Example  
  The following code example defines the outline of a structure that includes definitions for the `IsFalse` and `IsTrue` operators.  
   
- [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/istrue-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#28)]  
   
-## See Also  
- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)  
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
- [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md)
+## See also
+- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)
+- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md)

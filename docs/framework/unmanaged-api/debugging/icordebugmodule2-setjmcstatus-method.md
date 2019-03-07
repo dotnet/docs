@@ -31,7 +31,7 @@ HRESULT SetJMCStatus (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bIsJustMycode`  
  [in] Set to `true` if the code is to be debugged; otherwise, set to `false`.  
   

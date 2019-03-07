@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;netPeerBinding&gt;"
+title: "<security> of <netPeerBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 1ef40d8c-f903-4426-9b08-da81462766d8
 ---
-# &lt;security&gt; of &lt;netPeerBinding&gt;
+# \<security> of \<netPeerBinding>
 Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md), including the type of authentication used and the security used for the message transport.  
   
  \<system.ServiceModel>  
@@ -15,13 +15,13 @@ Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/
 ## Syntax  
   
 ```xml  
-<netPeerBinding>  
-    <binding>  
-        <security mode="Message/None/Transport//TransportWithMessageCredential">  
-            <transport credentialType="Certificate/Password" />  
-        </security>  
-    </binding>  
-</netPeerBinding>  
+<netPeerBinding>
+  <binding>
+    <security mode="Message/None/Transport//TransportWithMessageCredential">
+      <transport credentialType="Certificate/Password" />
+    </security>
+  </binding>
+</netPeerBinding>
 ```  
   
 ## Attributes and Elements  
@@ -57,14 +57,14 @@ Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/
 ## Remarks  
  Security can be either message- or transport-specific.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.PeerSecurityElement>  
- <xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>  
- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Security%2A>  
- <xref:System.ServiceModel.PeerSecuritySettings>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.PeerSecurityElement>
+- <xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>
+- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Security%2A>
+- <xref:System.ServiceModel.PeerSecuritySettings>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

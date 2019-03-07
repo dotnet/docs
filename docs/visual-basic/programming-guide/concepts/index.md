@@ -1,16 +1,16 @@
 ---
-title: "Programming Concepts (Visual Basic)"
-ms.date: 07/20/2015
+title: "Programming concepts - Visual Basic"
+ms.date: 02/27/2017
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
 ---
 # Programming Concepts (Visual Basic)
+
 This section explains programming concepts in the Visual Basic language.  
   
-## In This Section  
+## In this section  
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Assemblies and the Global Assembly Cache (Visual Basic)](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)|Describes how to create and use assemblies.|  
 |[Asynchronous Programming with Async and Await (Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)|Describes how to write asynchronous solutions by using [Async](../../../visual-basic/language-reference/modifiers/async.md) and [Await](../../../visual-basic/language-reference/operators/await-operator.md) keywords. Includes a walkthrough.|  
 |[Attributes overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/index.md)|Discusses how to provide additional information about programming elements such as types, fields, methods, and properties by using attributes.|  
 |[Caller Information (Visual Basic)](../../../visual-basic/programming-guide/concepts/caller-information.md)|Describes how to obtain information about the caller of a method. This information includes the file path and the line number of the source code and the member name of the caller.|  
@@ -23,8 +23,9 @@ This section explains programming concepts in the Visual Basic language.
 |[Reflection (Visual Basic)](../../../visual-basic/programming-guide/concepts/reflection.md)|Explains how to use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties.|
 |[Serialization (Visual Basic)](../../../visual-basic/programming-guide/concepts/serialization/index.md)|Describes key concepts in binary, XML, and SOAP serialization.|  
   
-## Related Sections  
+## Related sections  
   
 |||  
 |---|---|  
+|[Assemblies in .NET](../../../standard/assembly/index.md)|Describes how to create and use assemblies.|  
 |[Performance Tips](../../../framework/performance/performance-tips.md) | Discusses several basic rules that may help you increase the performance of your application.|

@@ -21,8 +21,8 @@ All versions of SQL Server use role-based security, which allows you to assign p
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Server-Level Roles](/sql/relational-databases/security/authentication-access/server-level-roles) and [Permissions of Fixed Server Roles](https://msdn.microsoft.com/library/ms175892.aspx) in SQL Server Books Online|Describes fixed server roles and the permissions associated with them in SQL Server.|  
-|[Database-Level Roles](/sql/relational-databases/security/authentication-access/database-level-roles) and [Permissions of Fixed Database Roles](https://msdn.microsoft.com/library/ms189612.aspx) in SQL Server Books Online|Describes fixed database roles and the permissions associated with them|  
+|[Server-Level Roles](/sql/relational-databases/security/authentication-access/server-level-roles)|Describes fixed server roles and the permissions associated with them in SQL Server.|  
+|[Database-Level Roles](/sql/relational-databases/security/authentication-access/database-level-roles)|Describes fixed database roles and the permissions associated with them|  
   
 ## Database Roles and Users  
  Logins must be mapped to database user accounts in order to work with database objects. Database users can then be added to database roles, inheriting any permission sets associated with those roles. All permissions can be granted.  
@@ -52,13 +52,13 @@ All versions of SQL Server use role-based security, which allows you to assign p
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Identity and Access Control](https://msdn.microsoft.com/library/bb510418.aspx) in SQL Server Books Online|Contains links to topics that describe principals, roles, credentials, securables and permissions.|  
-|[Principals](/sql/relational-databases/security/authentication-access/principals-database-engine) in SQL Server Books Online|Describes principals and contains links to topics that describe server and database roles.|  
+|[Getting Started with Database Engine Permissions](/sql/relational-databases/security/authentication-access/getting-started-with-database-engine-permissions)|Contains links to topics that describe principals, roles, credentials, securables and permissions.|  
+|[Principals](/sql/relational-databases/security/authentication-access/principals-database-engine)|Describes principals and contains links to topics that describe server and database roles.|  
   
-## See Also  
- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
- [Authentication in SQL Server](../../../../../docs/framework/data/adonet/sql/authentication-in-sql-server.md)  
- [Ownership and User-Schema Separation in SQL Server](../../../../../docs/framework/data/adonet/sql/ownership-and-user-schema-separation-in-sql-server.md)  
- [Authorization and Permissions in SQL Server](../../../../../docs/framework/data/adonet/sql/authorization-and-permissions-in-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
+- [Authentication in SQL Server](../../../../../docs/framework/data/adonet/sql/authentication-in-sql-server.md)
+- [Ownership and User-Schema Separation in SQL Server](../../../../../docs/framework/data/adonet/sql/ownership-and-user-schema-separation-in-sql-server.md)
+- [Authorization and Permissions in SQL Server](../../../../../docs/framework/data/adonet/sql/authorization-and-permissions-in-sql-server.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

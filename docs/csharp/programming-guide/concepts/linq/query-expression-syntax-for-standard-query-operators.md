@@ -23,9 +23,9 @@ Some of the more frequently used standard query operators have dedicated C# lang
 |<xref:System.Linq.Enumerable.ThenByDescending%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby …, … descending`<br /><br /> (For more information, see [orderby clause](../../../../csharp/language-reference/keywords/orderby-clause.md).)|  
 |<xref:System.Linq.Enumerable.Where%2A>|`where`<br /><br /> (For more information, see [where clause](../../../../csharp/language-reference/keywords/where-clause.md).)|  
   
-## See Also
+## See also
 
-- <xref:System.Linq.Enumerable>  
-- <xref:System.Linq.Queryable>  
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+- <xref:System.Linq.Enumerable>
+- <xref:System.Linq.Queryable>
+- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Classification of Standard Query Operators by Manner of Execution (C#)](../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)

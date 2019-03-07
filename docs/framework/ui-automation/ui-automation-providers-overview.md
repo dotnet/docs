@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation, providers"
   - "providers, UI Automation"
 ms.assetid: 859557b8-51e1-4d15-92e8-318d2dcdb2f7
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Providers Overview
 > [!NOTE]
@@ -72,5 +70,5 @@ ms.author: "mhopkins"
   
  The host of a fragment plays an important role in providing [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] services. It enables navigation to the fragment root, and supplies some default properties so that the custom provider does not have to implement them.  
   
-## See Also  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+## See also
+- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

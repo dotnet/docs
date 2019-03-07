@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "control types, Data Grid"
   - "UI Automation, Data Grid control type"
 ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the DataGrid Control Type
 > [!NOTE]
@@ -100,7 +98,7 @@ ms.author: "mhopkins"
   
  *The preceding example shows a DataGrid that contains multiple levels of controls. The Group ("Contoso") control contains two DataItem controls ("Accounts Receivable.doc" and "Accounts Payable.doc"). A DataGrid/GridItem pair is independent of a pair at another level. The DataItem controls under a Group can also be exposed as a ListItem control type, enabling them to be presented more clearly as selectable objects, rather than as simple data elements. This example does not include the sub-elements of the grouped data items.  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.DataGrid>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.DataGrid>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

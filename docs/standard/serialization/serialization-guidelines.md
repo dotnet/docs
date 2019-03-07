@@ -93,7 +93,7 @@ This document lists the guidelines to consider when designing an API to be seria
   
 1.  AVOID designing your types specifically for XML Serialization, unless you have a very strong reason to control the shape of the XML produced. This serialization technology has been superseded by the Data Contract Serialization discussed in the previous section.  
   
-     In other words, don’t apply attributes from the <xref:System.Runtime.Serialization> namespace to new types, unless you know that the type will be used with XML Serialization. The following example shows how **System.Xml.Serialization** can be used to control the shape of the XML -produced.  
+     In other words, don’t apply attributes from the <xref:System.Xml.Serialization> namespace to new types, unless you know that the type will be used with XML Serialization. The following example shows how **System.Xml.Serialization** can be used to control the shape of the XML -produced.  
   
      [!code-csharp[SerializationGuidelines#6](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#6)]
      [!code-vb[SerializationGuidelines#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#6)]  
@@ -134,10 +134,10 @@ This document lists the guidelines to consider when designing an API to be seria
   
 ## See also
 
-- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
-- [Data Contract Serializer](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)  
-- [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
-- [Binary Serialization](binary-serialization.md)  
-- [Remote Objects](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
-- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
+- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [Data Contract Serializer](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)
+- [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+- [Binary Serialization](binary-serialization.md)
+- [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)
 - [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)

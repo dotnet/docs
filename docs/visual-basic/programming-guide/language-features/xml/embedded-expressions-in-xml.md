@@ -14,7 +14,7 @@ Embedded expressions enable you to create XML literals that contain expressions 
   
  For example, you can create an XML element literal, combining embedded expressions with literal text content.  
   
- [!code-vb[VbXMLSamples#27](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_1.vb)]  
+ [!code-vb[VbXMLSamples#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#27)]  
   
  If `isbnNumber` contains the integer 12345 and `modifiedDate` contains the date 3/5/2006, when this code executes, the value of `book` is:  
   
@@ -38,27 +38,27 @@ Embedded expressions enable you to create XML literals that contain expressions 
   
 -   Example of an embedded expression in an XML element name:  
   
-     [!code-vb[VbXMLSamples#32](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_2.vb)]  
+     [!code-vb[VbXMLSamples#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#32)]  
   
 -   Example of an embedded expression in the content of an XML element:  
   
-     [!code-vb[VbXMLSamples#33](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_3.vb)]  
+     [!code-vb[VbXMLSamples#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#33)]  
   
 -   Example of an embedded expression in an XML element attribute name:  
   
-     [!code-vb[VbXMLSamples#34](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_4.vb)]  
+     [!code-vb[VbXMLSamples#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#34)]  
   
 -   Example of an embedded expression in an XML element attribute value:  
   
-     [!code-vb[VbXMLSamples#35](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_5.vb)]  
+     [!code-vb[VbXMLSamples#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#35)]  
   
 -   Example of an embedded expression in an XML element attribute:  
   
-     [!code-vb[VbXMLSamples#36](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_6.vb)]  
+     [!code-vb[VbXMLSamples#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#36)]  
   
 -   Example of an embedded expression in an XML document root element:  
   
-     [!code-vb[VbXMLSamples#37](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_7.vb)]  
+     [!code-vb[VbXMLSamples#37](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#37)]  
   
  If you enable `Option Strict`, the compiler checks that the type of each embedded expression widens to the required type. The only exception is for the root element of an XML document, which is verified when the code runs. If you compile without `Option Strict`, you can embed expressions of type `Object` and their type is verified at run time.  
   
@@ -74,10 +74,10 @@ Embedded expressions enable you to create XML literals that contain expressions 
 > [!NOTE]
 >  When you declare an XML namespace prefix by using the `xmlns` namespace attribute, the attribute value must be a constant string. In this regard, using the `xmlns` attribute is like using the `Imports` statement to declare an XML namespace. You cannot use an embedded expression to specify the XML namespace value.  
   
-## See Also  
- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)  
- [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
- [XML Literals Overview](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-overview.md)
+## See also
+- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
+- [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [XML Literals Overview](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-overview.md)

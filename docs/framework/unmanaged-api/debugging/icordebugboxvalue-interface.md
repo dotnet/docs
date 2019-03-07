@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugBoxValue Interface1"
+title: "ICorDebugBoxValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugBoxValue"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugBoxValue Interface1
+# ICorDebugBoxValue Interface
+
 A subclass of "ICorDebugHeapValue" that represents a boxed value class object.  
   
 ## Methods  
@@ -40,5 +41,5 @@ A subclass of "ICorDebugHeapValue" that represents a boxed value class object.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

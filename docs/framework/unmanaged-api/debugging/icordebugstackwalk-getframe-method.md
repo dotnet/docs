@@ -27,7 +27,7 @@ Gets the current frame in the [ICorDebugStackWalk](../../../../docs/framework/un
 HRESULT GetFrame([out] ICorDebugFrame ** pFrame);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFrame`  
  [in] A pointer to the address of the created frame object that represents the current frame in the stack.  
   
@@ -56,7 +56,7 @@ HRESULT GetFrame([out] ICorDebugFrame ** pFrame);
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorDebugStackWalk Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [ICorDebugStackWalk Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -99,14 +99,14 @@ End Class
 ## Example  
  The following example uses a `Class` statement to define a class and several members.  
   
- [!code-vb[VbVbalrStatements#62](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/class-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#62)]  
   
-## See Also  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)  
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+## See also
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
+- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)

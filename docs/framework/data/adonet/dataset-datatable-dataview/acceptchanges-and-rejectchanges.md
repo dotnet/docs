@@ -50,9 +50,9 @@ if (workTable.HasErrors)
 workTable.AcceptChanges();  
 ```  
   
-## See Also  
- <xref:System.Data.DataRow>  
- <xref:System.Data.DataSet>  
- <xref:System.Data.DataTable>  
- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- <xref:System.Data.DataRow>
+- <xref:System.Data.DataSet>
+- <xref:System.Data.DataTable>
+- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

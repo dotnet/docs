@@ -24,8 +24,8 @@ A `Sub` or `Function` must be defined in order to be called. Possible causes of 
   
 3.  Check the name of the routine.  
   
-## See Also  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+## See also
+- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)

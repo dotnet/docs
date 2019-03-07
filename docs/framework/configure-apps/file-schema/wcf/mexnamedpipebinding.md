@@ -1,9 +1,9 @@
 ---
-title: "&lt;mexNamedPipeBinding&gt;"
+title: "<mexNamedPipeBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 193412fa-3260-414c-92c6-b32ed3b94a34
 ---
-# &lt;mexNamedPipeBinding&gt;
+# \<mexNamedPipeBinding>
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over named pipe.  
   
  \<system.ServiceModel>  
@@ -13,15 +13,14 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 ## Syntax  
   
 ```xml  
-<mexNamedPipeBinding>  
-   <binding   
-       closeTimeout="TimeSpan"   
-       name="string"   
-       openTimeout="TimeSpan"   
-       receiveTimeout="TimeSpan"  
-       sendTimeout="TimeSpan">  
-   </binding>  
-</mexNamedPipeBinding>  
+<mexNamedPipeBinding>
+  <binding closeTimeout="TimeSpan"
+           name="string"
+           openTimeout="TimeSpan"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan">
+  </binding>
+</mexNamedPipeBinding>
 ```  
   
 ## Attributes and Elements  
@@ -46,13 +45,13 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 |-------------|-----------------|  
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
-## See Also  
- <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexNamedPipeBinding%2A>  
- <xref:System.ServiceModel.Configuration.MexNamedPipeBindingElement>  
- [How to: Publish Metadata for a Service Using a Configuration File](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)  
- [Publishing and Retrieving Metadata Over a Custom Binding](../../../../../docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)  
- [Metadata](../../../../../docs/framework/wcf/feature-details/metadata.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexNamedPipeBinding%2A>
+- <xref:System.ServiceModel.Configuration.MexNamedPipeBindingElement>
+- [How to: Publish Metadata for a Service Using a Configuration File](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
+- [Publishing and Retrieving Metadata Over a Custom Binding](../../../../../docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)
+- [Metadata](../../../../../docs/framework/wcf/feature-details/metadata.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

@@ -15,9 +15,9 @@ System resources expose a number of system metrics as resources to help develope
  The following example shows how to access and use system parameter dynamic resources to style or customize a button. This [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example sizes a button by assigning <xref:System.Windows.SystemParameters> values to the button's width and height.  
   
 ## Example  
- [!code-xaml[SystemRes_snip#ParameterDynamicResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/MyApp.xaml#parameterdynamicresources)]  
+ [!code-xaml[SystemRes_snip#ParameterDynamicResources](~/samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/MyApp.xaml#parameterdynamicresources)]  
   
-## See Also  
- [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)  
- [Use SystemFonts](../../../../docs/framework/wpf/advanced/how-to-use-systemfonts.md)  
- [Use SystemParameters](../../../../docs/framework/wpf/advanced/how-to-use-systemparameters.md)
+## See also
+- [Paint an Area with a System Brush](../graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
+- [Use SystemFonts](how-to-use-systemfonts.md)
+- [Use SystemParameters](how-to-use-systemparameters.md)

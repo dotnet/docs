@@ -30,7 +30,7 @@ HRESULT GetReaderFromStream(
     [out,retval] ISymUnmanagedReader **pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `importer`  
  [in] A pointer to the metadata import interface.  
   
@@ -46,5 +46,5 @@ HRESULT GetReaderFromStream(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedBinder Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)
+## See also
+- [ISymUnmanagedBinder Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)

@@ -30,7 +30,7 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
                    [out, size_is(contextBufSize)] BYTE contextBuf[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `contextFlags`  
  [in] Flags that indicate the requested contents of the context buffer (defined in WinNT.h).  
   
@@ -67,6 +67,6 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

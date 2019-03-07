@@ -36,7 +36,7 @@ HRESULT GetGenericParamProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `gp`  
  [in] The token that represents the generic parameter for which to return metadata.  
   
@@ -70,6 +70,6 @@ HRESULT GetGenericParamProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+## See also
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

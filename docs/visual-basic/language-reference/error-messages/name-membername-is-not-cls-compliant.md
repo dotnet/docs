@@ -1,5 +1,5 @@
 ---
-title: "Name &lt;membername&gt; is not CLS-compliant"
+title: "Name <membername> is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc40031"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC40031"
 ms.assetid: e2b885dc-cbf9-49ff-bbbe-531657ea99f7
 ---
-# Name &lt;membername&gt; is not CLS-compliant
+# Name \<membername> is not CLS-compliant
 An assembly is marked as `<CLSCompliant(True)>` but exposes a member with a name that begins with an underscore (`_`).  
   
  A programming element can contain one or more underscores, but to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), it must not begin with an underscore. See [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
@@ -27,7 +27,7 @@ An assembly is marked as `<CLSCompliant(True)>` but exposes a member with a name
   
 -   If you require that the member name remain unchanged, remove the <xref:System.CLSCompliantAttribute> from its definition or mark it as `<CLSCompliant(False)>`. You can still mark the assembly as `<CLSCompliant(True)>`.  
   
-## See Also  
- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)  
+## See also
+- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
 

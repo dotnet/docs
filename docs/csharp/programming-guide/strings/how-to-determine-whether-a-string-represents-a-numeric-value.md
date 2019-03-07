@@ -25,7 +25,7 @@ bool result = int.TryParse(s, out i); //i now = 108
 ## Example  
  The following examples show how to use `TryParse` with string representations of `long`, `byte`, and `decimal` values.  
   
- [!code-csharp[csProgGuideStrings#14](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-determine-whether-a-string-represents-a-numeric-value_1.cs)]  
+ [!code-csharp[csProgGuideStrings#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#14)]  
   
 ## Robust Programming  
  Primitive numeric types also implement the `Parse` static method, which throws an exception if the string is not a valid number. `TryParse` is generally more efficient because it just returns false if the number is not valid.  
@@ -33,10 +33,10 @@ bool result = int.TryParse(s, out i); //i now = 108
 ## .NET Framework Security  
  Always use the `TryParse` or `Parse` methods to validate user input from controls such as text boxes and combo boxes.  
   
-## See Also
+## See also
 
-- [How to: Convert a byte Array to an int](../../../csharp/programming-guide/types/how-to-convert-a-byte-array-to-an-int.md)  
-- [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)  
-- [How to: Convert Between Hexadecimal Strings and Numeric Types](../../../csharp/programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)  
-- [Parsing Numeric Strings](../../../standard/base-types/parsing-numeric.md)  
+- [How to: Convert a byte Array to an int](../../../csharp/programming-guide/types/how-to-convert-a-byte-array-to-an-int.md)
+- [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)
+- [How to: Convert Between Hexadecimal Strings and Numeric Types](../../../csharp/programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)
+- [Parsing Numeric Strings](../../../standard/base-types/parsing-numeric.md)
 - [Formatting Types](../../../standard/base-types/formatting-types.md)

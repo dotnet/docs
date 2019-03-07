@@ -15,17 +15,17 @@ Another approach to iterating over the array is to use the [foreach](../../../cs
 ## Example  
  This example demonstrates how to print out the command line arguments using `foreach`.  
   
- [!code-csharp[csProgGuideMain#10](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/how-to-access-command-line-arguments-using-foreach_1.cs)]  
+ [!code-csharp[csProgGuideMain#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class2.cs#10)]  
   
- [!code-csharp[csProgGuideMain#11](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/how-to-access-command-line-arguments-using-foreach_2.cs)]  
+ [!code-csharp[csProgGuideMain#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#11)]  
   
-## See Also
+## See also
 
-- <xref:System.Array>  
-- <xref:System.Collections>  
-- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)  
-- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)  
-- [How to: Display Command Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)  
+- <xref:System.Array>
+- <xref:System.Collections>
+- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)
+- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)
+- [How to: Display Command Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
 - [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)

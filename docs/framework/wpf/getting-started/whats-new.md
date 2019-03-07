@@ -1,12 +1,12 @@
 ---
-title: "What&#39;s New in WPF Version 4.5"
+title: "What's New in WPF Version 4.5"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Presentation Foundation [WPF], what's new"
   - "WPF [WPF], what's new"
 ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 ---
-# What&#39;s New in WPF Version 4.5
+# What's New in WPF Version 4.5
 <a name="introduction"></a> This topic contains information about new and enhanced features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] version 4.5.  
   
  This topic contains the following sections:  
@@ -109,15 +109,15 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
   
 <a name="weak_event_pattern"></a>   
 ## Improved Support for Establishing a Weak Reference to an Event  
- Implementing the weak event pattern is now easier because subscribers to events can participate in it without implementing an extra interface.  The generic <xref:System.Windows.WeakEventManager> class also enables subscribers to participate in the weak event pattern if a dedicated <xref:System.Windows.WeakEventManager> does not exist for a certain event.  For more information, see [Weak Event Patterns](../../../../docs/framework/wpf/advanced/weak-event-patterns.md).  
+ Implementing the weak event pattern is now easier because subscribers to events can participate in it without implementing an extra interface.  The generic <xref:System.Windows.WeakEventManager> class also enables subscribers to participate in the weak event pattern if a dedicated <xref:System.Windows.WeakEventManager> does not exist for a certain event.  For more information, see [Weak Event Patterns](../advanced/weak-event-patterns.md).  
   
 <a name="async"></a>   
 ## New methods for the Dispatcher class  
- The Dispatcher class defines new methods for synchronous and asynchronous operations.  The synchronous <xref:System.Windows.Threading.Dispatcher.Invoke%2A> method defines overloads that take an <xref:System.Action> or <xref:System.Func%601> parameter. The new asynchronous method, <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, also takes an <xref:System.Action> or <xref:System.Func%601> as the callback parameter and returns a <xref:System.Windows.Threading.DispatcherOperation> or <xref:System.Windows.Threading.DispatcherOperation%601>.   The <xref:System.Windows.Threading.DispatcherOperation> and <xref:System.Windows.Threading.DispatcherOperation%601> classes define a <xref:System.Threading.Tasks.Task> property.  When you call <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, you can use the `await` keyword with either the <xref:System.Windows.Threading.DispatcherOperation> or the associated <xref:System.Threading.Tasks.Task>. If you need to wait synchronously for the <xref:System.Threading.Tasks.Task> that is returned by a <xref:System.Windows.Threading.DispatcherOperation> or <xref:System.Windows.Threading.DispatcherOperation%601>, call the <xref:System.Windows.Threading.TaskExtensions.DispatcherOperationWait%2A> extension method. Calling <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> will result in a deadlock if the operation is queued on a calling thread. For more information about using a <xref:System.Threading.Tasks.Task> to perform asynchronous operations, see [Task Parallelism (Task Parallel Library)](../../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md).  
+ The Dispatcher class defines new methods for synchronous and asynchronous operations.  The synchronous <xref:System.Windows.Threading.Dispatcher.Invoke%2A> method defines overloads that take an <xref:System.Action> or <xref:System.Func%601> parameter. The new asynchronous method, <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, also takes an <xref:System.Action> or <xref:System.Func%601> as the callback parameter and returns a <xref:System.Windows.Threading.DispatcherOperation> or <xref:System.Windows.Threading.DispatcherOperation%601>.   The <xref:System.Windows.Threading.DispatcherOperation> and <xref:System.Windows.Threading.DispatcherOperation%601> classes define a <xref:System.Threading.Tasks.Task> property.  When you call <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, you can use the `await` keyword with either the <xref:System.Windows.Threading.DispatcherOperation> or the associated <xref:System.Threading.Tasks.Task>. If you need to wait synchronously for the <xref:System.Threading.Tasks.Task> that is returned by a <xref:System.Windows.Threading.DispatcherOperation> or <xref:System.Windows.Threading.DispatcherOperation%601>, call the <xref:System.Windows.Threading.TaskExtensions.DispatcherOperationWait%2A> extension method. Calling <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> will result in a deadlock if the operation is queued on a calling thread. For more information about using a <xref:System.Threading.Tasks.Task> to perform asynchronous operations, see [Task Parallelism (Task Parallel Library)](../../../standard/parallel-programming/task-based-asynchronous-programming.md).  
   
 <a name="events_markup_extenions"></a>   
 ## Markup Extensions for Events  
  WPF 4.5 supports markup extensions for events.  While WPF does not define a markup extension to be used for events, third parties are able to create a markup extension that can be used with events.  
   
-## See Also  
- [What's New in the .NET Framework](../../../../docs/framework/whats-new/index.md)
+## See also
+- [What's New in the .NET Framework](../../whats-new/index.md)

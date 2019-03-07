@@ -1,9 +1,9 @@
 ---
-title: "&lt;backupList&gt;"
+title: "<backupList>"
 ms.date: "03/30/2017"
 ms.assetid: a3d9d1f9-4a53-45e9-a880-86c8bee0b833
 ---
-# &lt;backupList&gt;
+# \<backupList>
 Represents a configuration section for defining a backup list that enumerates a set of endpoints that you would like the Routing Service to use in case the primary endpoint can't be reached. If the first endpoint in the list is down, the Routing Service will automatically fail-over to the next one in the list.  This gives you a quick way to add reliability to your application without having to teach your client application how to handle complex patterns or where all of your services are deployed.  
   
  \<system.serviceModel>  
@@ -13,10 +13,16 @@ Represents a configuration section for defining a backup list that enumerates a 
   
 ## Syntax  
   
-```xml 
-   <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
-```
-
+```xml  
+<routing>
+  <backupLists>
+    <backupList name="String">
+      <add endpointName="String" />
+    </backupList>
+  </backupLists>
+</routing>
+```  
+  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -46,18 +52,20 @@ Represents a configuration section for defining a backup list that enumerates a 
  In the following example, if a send to the primary endpoint named "Destination" returns a communication exception, the service will attempt to send the message to the "alternateServiceQueue". If this attempt also returns a communication exception, the Routing Service will attempt to send the message to the next endpoint in the collection.  
   
 ```xml  
-<filterTables>  
-     <filterTable name="filterTable1">  
-          <add filterName="MatchAllFilter1" endpointName="Destination" backupList="backupEndpointList"/>  
-     </filterTable>  
-</filterTables>  
-<backupLists>  
-     <backupList name="backupEndpointList">  
-          <add endpointName="backupServiceQueue" />  
-          <add endpointName="alternateServiceQueue" />  
-     </backupList>  
-</backupLists>  
+<filterTables>
+  <filterTable name="filterTable1">
+    <add filterName="MatchAllFilter1"
+         endpointName="Destination"
+         backupList="backupEndpointList" />
+  </filterTable>
+</filterTables>
+<backupLists>
+  <backupList name="backupEndpointList">
+    <add endpointName="backupServiceQueue" />
+    <add endpointName="alternateServiceQueue" />
+  </backupList>
+</backupLists>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection?displayProperty=nameWithType>    
+## See also
+- <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection?displayProperty=nameWithType>

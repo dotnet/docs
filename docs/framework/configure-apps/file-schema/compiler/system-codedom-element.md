@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.codedom&gt; Element"
+title: "<system.codedom> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom"
@@ -9,10 +9,8 @@ helpviewer_keywords:
   - "system.codedom element"
   - "<system.codedom> element"
 ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;system.codedom&gt; Element
+# \<system.codedom> Element
 Specifies compiler configuration settings for available language providers.  
   
  \<configuration> Element  
@@ -83,9 +81,9 @@ Specifies compiler configuration settings for available language providers.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.CodeDom.Compiler.CompilerInfo>  
-- <xref:System.CodeDom.Compiler.CodeDomProvider>  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Compiler and Language Provider Settings Schema](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)  
+## See also
+- <xref:System.CodeDom.Compiler.CompilerInfo>
+- <xref:System.CodeDom.Compiler.CodeDomProvider>
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Compiler and Language Provider Settings Schema](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)
 - [\<compiler> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)

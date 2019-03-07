@@ -231,4 +231,4 @@ Microsoft.ServiceModel.Samples.CustomTextMessageEncodingBindingSection,
 </extensions>  
 ```  
   
-## See Also
+## See also

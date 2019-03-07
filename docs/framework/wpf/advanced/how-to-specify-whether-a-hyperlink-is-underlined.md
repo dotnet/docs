@@ -13,21 +13,21 @@ The <xref:System.Windows.Documents.Hyperlink> object is an inline-level flow con
   
  In the following example, the underline for the "My MSN" link is dynamic—it only appears when the <xref:System.Windows.ContentElement.MouseEnter> event is triggered.  
   
- ![Hyperlinks displaying TextDecorations](../../../../docs/framework/wpf/advanced/media/textdecoration03.png "TextDecoration03")  
+ ![Hyperlinks displaying TextDecorations](./media/textdecoration03.png "TextDecoration03")  
 Hyperlinks defined with TextDecorations  
   
 ## Example  
  The following markup sample shows a <xref:System.Windows.Documents.Hyperlink> defined with and without an underline:  
   
- [!code-xaml[Performance#PerformanceSnippet11](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Hyperlink.xaml#performancesnippet11)]  
+ [!code-xaml[Performance#PerformanceSnippet11](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Hyperlink.xaml#performancesnippet11)]  
   
  The following code sample shows how to create an underline for the <xref:System.Windows.Documents.Hyperlink> on the <xref:System.Windows.ContentElement.MouseEnter> event, and remove it on the <xref:System.Windows.ContentElement.MouseLeave> event.  
   
- [!code-csharp[Performance#PerformanceSnippet15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Hyperlink.xaml.cs#performancesnippet15)]
- [!code-vb[Performance#PerformanceSnippet15](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/hyperlink.xaml.vb#performancesnippet15)]  
+ [!code-csharp[Performance#PerformanceSnippet15](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Hyperlink.xaml.cs#performancesnippet15)]
+ [!code-vb[Performance#PerformanceSnippet15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/hyperlink.xaml.vb#performancesnippet15)]  
   
-## See Also  
- <xref:System.Windows.TextDecoration>  
- <xref:System.Windows.Documents.Hyperlink>  
- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)  
- [Create a Text Decoration](../../../../docs/framework/wpf/advanced/how-to-create-a-text-decoration.md)
+## See also
+- <xref:System.Windows.TextDecoration>
+- <xref:System.Windows.Documents.Hyperlink>
+- [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
+- [Create a Text Decoration](how-to-create-a-text-decoration.md)

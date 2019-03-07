@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation, raising events"
   - "raising UI Automation events"
 ms.assetid: 9fe2f01b-f7d8-49a8-a185-d4472b9976c0
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Raise Events from a UI Automation Provider
 > [!NOTE]
@@ -21,5 +19,5 @@ ms.author: "mhopkins"
   
  [!code-csharp[UIAProvider_snip#150](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAProvider_snip/CSharp/FragmentRoot.cs#150)]  
   
-## See Also  
- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+## See also
+- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)

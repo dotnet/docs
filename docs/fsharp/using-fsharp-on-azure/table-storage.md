@@ -4,7 +4,7 @@ description: Store structured data in the cloud using Azure Table storage or Azu
 author: sylvanc
 ms.date: 03/26/2018
 ---
-# Get started with Azure Table storage and the Azure Cosmos DB Table API using F# # 
+# Get started with Azure Table storage and the Azure Cosmos DB Table API using F\#
 
 Azure Table storage is a service that stores structured NoSQL data in the cloud. Table storage is a key/attribute store with a schemaless design. Because Table storage is schemaless, it's easy to adapt your data as the needs of your application evolve. Access to data is fast and cost-effective for all kinds of applications. Table storage is typically significantly lower in cost than traditional SQL for similar volumes of data.
 
@@ -191,7 +191,7 @@ to learn about more complex storage tasks and the Azure Cosmos DB Table API.
 
 - [Introduction to Azure Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction)
 - [Storage Client Library for .NET reference](https://docs.microsoft.com/dotnet/api/overview/azure/storage?view=azure-dotnet)
-- [Azure Storage Type Provider](http://fsprojects.github.io/AzureStorageTypeProvider/)
+- [Azure Storage Type Provider](https://fsprojects.github.io/AzureStorageTypeProvider/)
 - [Azure Storage Team Blog](https://blogs.msdn.com/b/windowsazurestorage/)
 - [Configuring Connection Strings](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 - [Getting Started with Azure Table Storage in .NET](https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/)

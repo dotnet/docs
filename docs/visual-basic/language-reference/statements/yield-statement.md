@@ -18,7 +18,7 @@ Sends the next element of a collection to a `For Each...Next` statement.
 Yield expression  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Term|Definition|  
 |---|---|  
@@ -78,14 +78,14 @@ Next
   
  The return type of the iterator method is <xref:System.Collections.Generic.IEnumerable%601>, an iterator interface type. When the iterator method is called, it returns an enumerable object that contains the powers of a number.  
   
- [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
 ## Example  
  The following example demonstrates a `Get` accessor that is an iterator. The property declaration includes an `Iterator` modifier.  
   
- [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  
   
  For additional examples, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
-## See Also  
- [Statements](../../../visual-basic/language-reference/statements/index.md)
+## See also
+- [Statements](../../../visual-basic/language-reference/statements/index.md)

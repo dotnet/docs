@@ -15,7 +15,7 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
  The <xref:System.Windows.Input.StylusPlugIns> classes provide a mechanism for implementing low-level control over <xref:System.Windows.Input.Stylus> input and dynamically rendering ink. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> class provides a mechanism for you to implement custom behavior and apply it to the stream of data coming from the stylus device for optimal performance. The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer>, a specialized <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn>, allows you to customize dynamically rendering ink data in real-time which means that the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> draws digital ink immediately as <xref:System.Windows.Input.StylusPoint> data is generated, so it appears to "flow" from the stylus device.  
   
 ## In This Section  
- [Custom Rendering Ink](../../../../docs/framework/wpf/advanced/custom-rendering-ink.md)  
-  [Intercepting Input from the Stylus](../../../../docs/framework/wpf/advanced/intercepting-input-from-the-stylus.md)  
-  [Creating an Ink Input Control](../../../../docs/framework/wpf/advanced/creating-an-ink-input-control.md)  
-  [The Ink Threading Model](../../../../docs/framework/wpf/advanced/the-ink-threading-model.md)
+ [Custom Rendering Ink](custom-rendering-ink.md)  
+  [Intercepting Input from the Stylus](intercepting-input-from-the-stylus.md)  
+  [Creating an Ink Input Control](creating-an-ink-input-control.md)  
+  [The Ink Threading Model](the-ink-threading-model.md)

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "UI Automation, creating client-side provider"
   - "client-side UI Automation provider, creating"
 ms.assetid: d91edaf2-be28-41ec-a508-af421cb43c3d
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Create a Client-Side UI Automation Provider
 > [!NOTE]
@@ -23,6 +21,6 @@ ms.author: "mhopkins"
  [!code-csharp[UIAClientSideProvider_snip#101](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClientSideProvider_snip/CSharp/CSProviderProgram.cs#101)]
  [!code-vb[UIAClientSideProvider_snip#101](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClientSideProvider_snip/visualbasic/csproviderprogram.vb#101)]  
   
-## See Also  
- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
- [Register a Client-Side Provider Assembly](../../../docs/framework/ui-automation/register-a-client-side-provider-assembly.md)
+## See also
+- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+- [Register a Client-Side Provider Assembly](../../../docs/framework/ui-automation/register-a-client-side-provider-assembly.md)

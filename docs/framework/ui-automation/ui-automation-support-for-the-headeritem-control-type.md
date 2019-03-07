@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Header Item control type"
   - "control types, Header Item"
 ms.assetid: 09ce1310-ee31-493c-a71e-010bafc42fcf
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the HeaderItem Control Type
 > [!NOTE]
@@ -67,7 +65,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.HeaderItem>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.HeaderItem>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

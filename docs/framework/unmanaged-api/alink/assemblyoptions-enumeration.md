@@ -78,5 +78,5 @@ typedef enum _AssemblyOptions {
   
  **Library**: alink.dll  
   
-## See Also  
- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+## See also
+- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)

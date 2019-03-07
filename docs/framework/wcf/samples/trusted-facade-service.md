@@ -270,7 +270,7 @@ Press <ENTER> to terminate client.
   
 5.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-6.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+6.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To clean up after the sample  
   
@@ -285,4 +285,4 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\TrustedFacade`  
   
-## See Also
+## See also

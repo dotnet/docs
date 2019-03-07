@@ -30,7 +30,7 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
 ### Adding Objects to Runtime Object Trees  
  The moment that XAML is parsed represents the moment in time that a WPF XAML namescope is created and defined. If you add an object to an object tree at a point in time after the XAML that produced that tree was parsed, a `Name` or `x:Name` value on the new object does not automatically update the information in a XAML namescope. To add a name for an object into a WPF XAML namescope after XAML is loaded, you must call the appropriate implementation of <xref:System.Windows.Markup.INameScope.RegisterName%2A> on the object that defines the XAML namescope, which is typically the XAML page root. If the name is not registered, the added object cannot be referenced by name through methods such as <xref:System.Windows.FrameworkElement.FindName%2A>, and you cannot use that name for animation targeting.  
   
- The most common scenario for application developers is that you will use <xref:System.Windows.FrameworkElement.RegisterName%2A> to register names into the XAML namescope on the current root of the page. <xref:System.Windows.FrameworkElement.RegisterName%2A> is part of an important scenario for storyboards that target objects for animations. For more information, see [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+ The most common scenario for application developers is that you will use <xref:System.Windows.FrameworkElement.RegisterName%2A> to register names into the XAML namescope on the current root of the page. <xref:System.Windows.FrameworkElement.RegisterName%2A> is part of an important scenario for storyboards that target objects for animations. For more information, see [Storyboards Overview](../graphics-multimedia/storyboards-overview.md).  
   
  If you call <xref:System.Windows.FrameworkElement.RegisterName%2A> on an object other than the object that defines the XAML namescope, the name is still registered to the XAML namescope that the calling object is held within, as if you had called <xref:System.Windows.FrameworkElement.RegisterName%2A> on the XAML namescope defining object.  
   
@@ -43,7 +43,7 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
   
  If the object provided as `dependencyObject` for <xref:System.Windows.NameScope.SetNameScope%2A> is not a <xref:System.Windows.Markup.INameScope> implementation, <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, calling <xref:System.Windows.FrameworkElement.RegisterName%2A> on any child elements will have no effect. If you fail to create the new XAML namescope explicitly, then calls to <xref:System.Windows.FrameworkElement.RegisterName%2A> will raise an exception.  
   
- For an example of using XAML namescope APIs in code, see [Define a Name Scope](../../../../docs/framework/wpf/graphics-multimedia/how-to-define-a-name-scope.md).  
+ For an example of using XAML namescope APIs in code, see [Define a Name Scope](../graphics-multimedia/how-to-define-a-name-scope.md).  
   
 <a name="Namescopes_in_Styles_and_Templates"></a>   
 ## XAML Namescopes in Styles and Templates  
@@ -51,7 +51,7 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
   
  Consider the following example:  
   
- [!code-xaml[XamlOvwSupport#NameScopeTemplates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page6.xaml#namescopetemplates)]  
+ [!code-xaml[XamlOvwSupport#NameScopeTemplates](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page6.xaml#namescopetemplates)]  
   
  Here, the same template is applied to two different buttons. If templates did not have discrete XAML namescopes, the `TheBorder` name used in the template would cause a name collision in the XAML namescope. Each instantiation of the template has its own XAML namescope, so in this example each instantiated template's XAML namescope would contain exactly one name.  
   
@@ -90,6 +90,6 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
   
 -   <xref:System.Windows.FrameworkContentElement>  
   
-## See Also  
- [XAML Namespaces and Namespace Mapping for WPF XAML](../../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)  
- [x:Name Directive](../../../../docs/framework/xaml-services/x-name-directive.md)
+## See also
+- [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)
+- [x:Name Directive](../../xaml-services/x-name-directive.md)

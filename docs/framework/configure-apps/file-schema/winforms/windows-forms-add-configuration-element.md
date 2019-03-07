@@ -1,13 +1,14 @@
 ---
 title: "Windows Forms Add Configuration Element"
 ms.date: "04/07/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms Add configuration element"
   - "configuring Windows Forms applications"
 ms.assetid: 3e3e04de-99d1-4658-b716-44cb669d9589
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # Windows Forms Add Configuration Element
 
 The `<add>` element adds a predefined key that specifies whether your Windows Form app supports features added to Windows Forms apps in the .NET Framework 4.7 or later.
@@ -57,9 +58,9 @@ None.
 
 ## <a name="remarks" /> Remarks
 
-Starting with the .NET Framework 4.7, the `<System.Windows.Forms.ApplicationConfigurationSection>` element allows you to configure Windows Forms applications to take advantage of features added in recent releases of the .NET Framework. 
+Starting with the .NET Framework 4.7, the `<System.Windows.Forms.ApplicationConfigurationSection>` element allows you to configure Windows Forms applications to take advantage of features added in recent releases of the .NET Framework.
 
-The `<System.Windows.Forms.ApplicationConfigurationSection>` element allows you to add one or more child `<add>` elements, each of which defines a specific configuration setting.  
+The `<System.Windows.Forms.ApplicationConfigurationSection>` element allows you to add one or more child `<add>` elements, each of which defines a specific configuration setting.
 
 For an overview of Windows Forms High DPI support, see [High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md).
 
@@ -69,7 +70,7 @@ Windows Forms apps that run under Windows versions starting with Windows 10 Crea
 
 - Support for dynamic DPI scenarios in which the user changes the DPI or scale factor after a Windows Forms application has been launched.
 
-- Improvements in the scaling and layout of a number of Windows Forms controls, such as the <xref:System.Windows.Forms.MonthCalendar> control and the <xref:System.Windows.Forms.CheckedListBox> control. 
+- Improvements in the scaling and layout of a number of Windows Forms controls, such as the <xref:System.Windows.Forms.MonthCalendar> control and the <xref:System.Windows.Forms.CheckedListBox> control.
 
 High DPI awareness is an opt-in feature; by default, the value of `DpiAwareness` is `false`. You can opt into Windows Forms' support for DPI awareness by setting the value of this key to `PerMonitorV2` in the application configuration file. If DPI awareness is enabled, all individual DPI features are also enabled. These include:
 
@@ -77,11 +78,11 @@ High DPI awareness is an opt-in feature; by default, the value of `DpiAwareness`
 
 - Dynamic DPI support, which is controlled by the `EnableWindowsFormsHighDpiAutoResizing` key.
 
-- Single-pass control scaling, which is controlled by the `Form.DisableSinglePassControlScaling` for individual <xref:System.Windows.Forms.Form> controls, by the `AnchorLayout.DisableSinglePassControlScaling` key for anchored controls, and by the `MonthCalendar.DisableSinglePassControlScaling` key for the <xref:System.Windows.Forms.MonthCalendar> control 
+- Single-pass control scaling, which is controlled by the `Form.DisableSinglePassControlScaling` for individual <xref:System.Windows.Forms.Form> controls, by the `AnchorLayout.DisableSinglePassControlScaling` key for anchored controls, and by the `MonthCalendar.DisableSinglePassControlScaling` key for the <xref:System.Windows.Forms.MonthCalendar> control
 
-- High DPI scaling and layout improvements, which is controlled by the `CheckListBox.DisableHighDpiImprovements` key for the <xref:System.Windows.Forms.CheckedListBox> control, by the `DataGridView.DisableHighDpiImprovements` key for the <xref:System.Windows.Forms.DataGridView> control, and by the `Toolstrip.DisableHighDpiImprovements` key for the <xref:System.Windows.Forms.ToolStrip> control.  
+- High DPI scaling and layout improvements, which is controlled by the `CheckListBox.DisableHighDpiImprovements` key for the <xref:System.Windows.Forms.CheckedListBox> control, by the `DataGridView.DisableHighDpiImprovements` key for the <xref:System.Windows.Forms.DataGridView> control, and by the `Toolstrip.DisableHighDpiImprovements` key for the <xref:System.Windows.Forms.ToolStrip> control.
 
-The single default opt-in setting provided by setting `DpiAwareness` to `PerMonitorV2` is generally adequate for new Windows Forms applications. However, You can then opt out of individual high DPI improvements by adding the corresponding key to the application configuration file. For example, to take advantage of all the new DPI featuers except for dynamic DPI support, you would add the following to your application configuration file:
+The single default opt-in setting provided by setting `DpiAwareness` to `PerMonitorV2` is generally adequate for new Windows Forms applications. However, You can then opt out of individual high DPI improvements by adding the corresponding key to the application configuration file. For example, to take advantage of all the new DPI features except for dynamic DPI support, you would add the following to your application configuration file:
 
 ```xml
 <System.Windows.Forms.ApplicationConfigurationSection>
@@ -93,16 +94,16 @@ The single default opt-in setting provided by setting `DpiAwareness` to `PerMoni
 Typically, you opt out of a particular feature because you've chosen to handle it programmatically.
 
 For more information on taking advantage of High DPI support in Windows Forms applications, see [High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md).
- 
+
 ### DisableDpiChangedMessageHandling
 
-Starting with the .NET Framework 4.7, Windows Forms controls raise a number of events related to changes in DPI scaling. These include the <xref:System.Windows.Forms.Control.DpiChangedAfterParent>, <xref:System.Windows.Forms.Control.DpiChangedBeforeParent>, and <xref:System.Windows.Forms.Form.DpiChanged> events. The value of the `DisableDpiChangedMessageHandling` key determines whether these events are raised in a Windows Forms application. 
+Starting with the .NET Framework 4.7, Windows Forms controls raise a number of events related to changes in DPI scaling. These include the <xref:System.Windows.Forms.Control.DpiChangedAfterParent>, <xref:System.Windows.Forms.Control.DpiChangedBeforeParent>, and <xref:System.Windows.Forms.Form.DpiChanged> events. The value of the `DisableDpiChangedMessageHandling` key determines whether these events are raised in a Windows Forms application.
 
 ### Single-pass scaling
 
-Single or multi-pass scaling influences the perceived responsiveness of the user interface and the visual appearance of user interface elements as they are scaled. Starting with the .NET Framework 4.7, Windows Forms uses single pass scaling. In previous versions of the .NET Framework, scaling was performed through multiple passes, which caused some controls to be scaled more than was necessary. Single-pass scaling should only be disabled if your app depends on the old behavior.  
+Single or multi-pass scaling influences the perceived responsiveness of the user interface and the visual appearance of user interface elements as they are scaled. Starting with the .NET Framework 4.7, Windows Forms uses single pass scaling. In previous versions of the .NET Framework, scaling was performed through multiple passes, which caused some controls to be scaled more than was necessary. Single-pass scaling should only be disabled if your app depends on the old behavior.
 
 ## See also
- 
-[Windows Forms Configuration Section](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md)   
-[High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)
+
+- [Windows Forms Configuration Section](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md)
+- [High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)

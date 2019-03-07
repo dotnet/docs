@@ -30,7 +30,7 @@ HRESULT AcquiredVirtualAddressSpace(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `startAddress`  
  [in] The starting address of the memory.  
   
@@ -49,5 +49,5 @@ HRESULT AcquiredVirtualAddressSpace(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+## See also
+- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;servicePointManager&gt; Element (Network Settings)"
+title: "<servicePointManager> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#servicePointManager"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<servicePointManager> element"
 ms.assetid: 6e5def51-3646-4ef6-a7bd-c69151321bec
 ---
-# &lt;servicePointManager&gt; Element (Network Settings)
+# \<servicePointManager> Element (Network Settings)
 Configures connections to network resources.  
   
  \<configuration>  
@@ -60,7 +60,7 @@ Configures connections to network resources.
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
-## See Also  
-- <xref:System.Net.ServicePointManager>  
-- <xref:System.Net.Security.EncryptionPolicy>  
+## See also
+- <xref:System.Net.ServicePointManager>
+- <xref:System.Net.Security.EncryptionPolicy>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

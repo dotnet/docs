@@ -82,7 +82,7 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
 ## Example  
  The following example increases the size of the last dimension of a dynamic array without losing any existing data in the array, and then decreases the size with partial data loss. Finally, it decreases the size back to its original value and reinitializes all the array elements.  
   
- [!code-vb[VbVbalrStatements#52](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/redim-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#52](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#52)]  
   
  The `Dim` statement creates a new array with three dimensions. Each dimension is declared with a bound of 10, so the array index for each dimension can range from 0 through 10. In the following discussion, the three dimensions are referred to as layer, row, and column.  
   
@@ -94,10 +94,10 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
  For additional examples, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
-## See Also  
- <xref:System.IndexOutOfRangeException>  
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Erase Statement](../../../visual-basic/language-reference/statements/erase-statement.md)  
- [Nothing](../../../visual-basic/language-reference/nothing.md)  
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+## See also
+- <xref:System.IndexOutOfRangeException>
+- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Erase Statement](../../../visual-basic/language-reference/statements/erase-statement.md)
+- [Nothing](../../../visual-basic/language-reference/nothing.md)
+- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

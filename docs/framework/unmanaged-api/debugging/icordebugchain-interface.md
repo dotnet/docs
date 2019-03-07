@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugChain Interface1"
+title: "ICorDebugChain Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugChain"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugChain Interface1
+# ICorDebugChain Interface
+
 Represents a segment of a physical or logical call stack.  
   
 ## Methods  
@@ -52,5 +53,5 @@ Represents a segment of a physical or logical call stack.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

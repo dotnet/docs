@@ -104,15 +104,15 @@ using (XmlWriter writer = doc.CreateNavigator().AppendChild()) {
 ### MSXML Functions  
  Support for additional MSXML functions have been added to the <xref:System.Xml.Xsl.XslCompiledTransform> class. The following list describes new or improved functionality:  
   
--   msxsl:node-set: <xref:System.Xml.Xsl.XslTransform> required the argument of the [node-set Function](https://msdn.microsoft.com/library/87b6b3f4-16f4-4fa3-8103-d62a679ac2a7) function to be a result tree fragment. The <xref:System.Xml.Xsl.XslCompiledTransform> class does not have this requirement.  
+-   msxsl:node-set: <xref:System.Xml.Xsl.XslTransform> required the argument of the [node-set Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256197(v=vs.100)) function to be a result tree fragment. The <xref:System.Xml.Xsl.XslCompiledTransform> class does not have this requirement.  
   
 -   msxsl:version: This function is supported in <xref:System.Xml.Xsl.XslCompiledTransform>.  
   
--   XPath extension functions: The [ms:string-compare Function](https://msdn.microsoft.com/library/20616b82-9e27-444c-b714-4f1e09b73aee), [ms:utc Function](https://msdn.microsoft.com/library/ef26fc88-84c6-4fb9-9c3b-f2f5264b864f), [ms:namespace-uri Function](https://msdn.microsoft.com/library/91f9cabf-ab93-4dbe-9c12-e6a75214f4c7), [ms:local-name Function](https://msdn.microsoft.com/library/10ed60a1-17a9-4d74-8b98-7940ac97c0b5), [ms:number Function](https://msdn.microsoft.com/library/b94fc08e-1f31-4f48-b1a8-6d78c1b5d954), [ms:format-date Function](https://msdn.microsoft.com/library/51f35609-89a9-4098-a166-88bf01300bf5), and [ms:format-time Function](https://msdn.microsoft.com/library/e5c2df2d-e8fb-4a8f-bfc0-db84ea12a5d5) functions are now supported.  
+-   XPath extension functions: The [ms:string-compare Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256114(v=vs.100)), [ms:utc Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256474(v=vs.100)), [ms:namespace-uri Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256231(v=vs.100)), [ms:local-name Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256055(v=vs.100)), [ms:number Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256155(v=vs.100)), [ms:format-date Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256099(v=vs.100)), and [ms:format-time Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256467(v=vs.100)) functions are now supported.  
   
 -   Schema-related XPath extension functions: These functions are not supported natively by <xref:System.Xml.Xsl.XslCompiledTransform>. However, they can be implemented as extension functions.  
   
 ## See also
 
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)  
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
 - [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)

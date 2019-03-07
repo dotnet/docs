@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStringValue Interface1"
+title: "ICorDebugStringValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugStringValue"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugStringValue Interface1
+# ICorDebugStringValue Interface
 A subclass of ICorDebugHeapValue that applies to string values.  
   
 ## Methods  
@@ -41,5 +41,5 @@ A subclass of ICorDebugHeapValue that applies to string values.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

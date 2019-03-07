@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugModule Interface1"
+title: "ICorDebugModule Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugModule"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugModule Interface1
+# ICorDebugModule Interface
+
 Represents a common language runtime (CLR) module, which is either an executable file or a dynamic-link library (DLL).  
   
 ## Methods  
@@ -56,6 +57,6 @@ Represents a common language runtime (CLR) module, which is either an executable
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

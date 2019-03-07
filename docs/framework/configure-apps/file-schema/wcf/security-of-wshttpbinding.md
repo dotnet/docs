@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;wsHttpBinding&gt;"
+title: "<security> of <wsHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 8658b162-2ddf-4162-a869-aa517a42288a
 ---
-# &lt;security&gt; of &lt;wsHttpBinding&gt;
+# \<security> of \<wsHttpBinding>
 Represents the security capabilities of the [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
   
  \<system.ServiceModel>  
@@ -15,20 +15,18 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
 ## Syntax  
   
 ```xml  
-<security mode="Message/None/Transport/TransportWithMessageCredential">  
-   <transport  
-         clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-      proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-      realm="string"   
-      defaultClientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-      defaultProxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-      defaultRealm="string" />  
-   <message  
-            clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"  
-      algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-       establishSecurityContext="Boolean"   
-      negotiateServiceCredential="Boolean"/>  
-</security>  
+<security mode="Message/None/Transport/TransportWithMessageCredential">
+  <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+             proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+             realm="String"
+             defaultClientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+             defaultProxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+             defaultRealm="String" />
+  <message clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"
+           algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+           establishSecurityContext="Boolean"
+           negotiateServiceCredential="Boolean" />
+</security>
 ```  
   
 ## Attributes and Elements  
@@ -65,13 +63,13 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
 ## Remarks  
  The WSHttpBinding class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS.  
   
-## See Also  
- <xref:System.ServiceModel.WSHttpSecurity>  
- <xref:System.ServiceModel.WSHttpBinding.Security%2A>  
- <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security%2A>  
- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.WSHttpSecurity>
+- <xref:System.ServiceModel.WSHttpBinding.Security%2A>
+- <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

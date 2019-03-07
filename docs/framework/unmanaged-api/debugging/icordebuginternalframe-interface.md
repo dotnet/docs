@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugInternalFrame Interface1"
+title: "ICorDebugInternalFrame Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugInternalFrame"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugInternalFrame Interface1
+# ICorDebugInternalFrame Interface
+
 Represents a runtime-internal frame on the stack. This interface is a subclass of the ICorDebugFrame interface.  
   
 ## Methods  
@@ -40,5 +41,5 @@ Represents a runtime-internal frame on the stack. This interface is a subclass o
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

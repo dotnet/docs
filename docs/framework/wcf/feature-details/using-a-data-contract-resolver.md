@@ -49,7 +49,7 @@ public class MyCustomerResolver : DataContractResolver
 XmlObjectSerializer serializer = new DataContractSerializer(typeof(Customer), null, Int32.MaxValue, false, false, null, new MyCustomerResolver());  
 ```  
   
- You can specify a <xref:System.Runtime.Serialization.DataContractSerializer> in a call to the <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> or <xref:System.Runtime.Serialization.DataContractSerializer.WriteObject%2A> methods, as shown in the following example.  
+ You can specify a <xref:System.Runtime.Serialization.DataContractResolver> in a call to the <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A?displayProperty=nameWithType> or <xref:System.Runtime.Serialization.DataContractSerializer.WriteObject%2A?displayProperty=nameWithType> methods, as shown in the following example.  
   
 ```  
 MemoryStream ms = new MemoryStream();  
@@ -81,7 +81,7 @@ SerializerBehavior.DataContractResolver = new MyCustomerResolver();
   
  You can declaratively specify a data contract resolver by implementing an attribute that can be applied to a service.  For more information, see the [KnownAssemblyAttribute](../../../../docs/framework/wcf/samples/knownassemblyattribute.md) sample. This sample implements an attribute called "KnownAssembly" that adds a custom data contract resolver to the service’s behavior.  
   
-## See Also  
- [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  
- [DataContractSerializer Sample](../../../../docs/framework/wcf/samples/datacontractserializer-sample.md)  
- [KnownAssemblyAttribute](../../../../docs/framework/wcf/samples/knownassemblyattribute.md)
+## See also
+- [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+- [DataContractSerializer Sample](../../../../docs/framework/wcf/samples/datacontractserializer-sample.md)
+- [KnownAssemblyAttribute](../../../../docs/framework/wcf/samples/knownassemblyattribute.md)

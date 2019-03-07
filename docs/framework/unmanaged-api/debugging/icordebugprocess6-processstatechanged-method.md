@@ -14,7 +14,7 @@ Notifies [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebu
 HRESULT ProcessStateChanged(   [in] CorDebugStateChange change);  
 ```  
   
-#### Parameters  
+## Parameters  
  `change`  
  [in] A member of the [ProcessStateChanged](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-processstatechanged-method.md) enumeration  
   
@@ -33,6 +33,6 @@ HRESULT ProcessStateChanged(   [in] CorDebugStateChange change);
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

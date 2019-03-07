@@ -42,10 +42,10 @@ The following illustration shows two curves: one open and one closed.
   
  ![String in a path](../../../../docs/framework/winforms/advanced/media/aboutgdip02-art26.gif "Aboutgdip02_art26")  
   
-## See Also  
- <xref:System.Drawing.Drawing2D.GraphicsPath?displayProperty=nameWithType>  
- <xref:System.Drawing.Pen?displayProperty=nameWithType>  
- <xref:System.Drawing.Point?displayProperty=nameWithType>  
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
- [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)  
- [Constructing and Drawing Paths](../../../../docs/framework/winforms/advanced/constructing-and-drawing-paths.md)
+## See also
+- <xref:System.Drawing.Drawing2D.GraphicsPath?displayProperty=nameWithType>
+- <xref:System.Drawing.Pen?displayProperty=nameWithType>
+- <xref:System.Drawing.Point?displayProperty=nameWithType>
+- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)
+- [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)
+- [Constructing and Drawing Paths](../../../../docs/framework/winforms/advanced/constructing-and-drawing-paths.md)

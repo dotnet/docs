@@ -33,8 +33,8 @@ where O.CUSTOMERID = @CustomerID AND O.ORDERID = OD.ORDERID
  [!code-csharp[DLinqSprox#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSprox/cs/Program.cs#3)]
  [!code-vb[DLinqSprox#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/Module1.vb#3)]  
   
-## See Also  
- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)  
- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)  
- [Using Nullable Types](~/docs/csharp/programming-guide/nullable-types/using-nullable-types.md)  
- [Nullable Value Types](~/docs/visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
+## See also
+- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)
+- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+- [Using Nullable Types](~/docs/csharp/programming-guide/nullable-types/using-nullable-types.md)
+- [Nullable Value Types](~/docs/visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)

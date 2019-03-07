@@ -48,10 +48,10 @@ The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema th
   
 ## See also
 
-- <xref:System.Data.DataSet>  
-- [The XML Schema Definition Tool and XML Serialization](../../../docs/standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md)  
-- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
-- [XML Schema Definition Tool (Xsd.exe)](../../../docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md)  
-- <xref:System.Xml.Serialization.XmlSerializer>  
-- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+- <xref:System.Data.DataSet>
+- [The XML Schema Definition Tool and XML Serialization](../../../docs/standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md)
+- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
+- [XML Schema Definition Tool (Xsd.exe)](../../../docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md)
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
 - [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

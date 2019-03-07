@@ -1,7 +1,6 @@
 ---
 title: .NET Core Command-line tools architecture
 description: Learn about the .NET Core tooling layers and what has changed in recent versions.
-author: blackdwarf
 ms.date: 03/06/2017
 ---
 # High-level overview of changes in the .NET Core tools

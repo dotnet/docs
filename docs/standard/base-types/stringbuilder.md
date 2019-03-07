@@ -107,6 +107,6 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
   
 ## See also
 
-- <xref:System.Text.StringBuilder?displayProperty=nameWithType>  
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
+- <xref:System.Text.StringBuilder?displayProperty=nameWithType>
+- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
 - [Formatting Types](../../../docs/standard/base-types/formatting-types.md)

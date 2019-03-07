@@ -30,7 +30,7 @@ HRESULT GetThreadForTaskID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `taskid`  
  [in] The identifier of the task.  
   

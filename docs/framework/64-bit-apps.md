@@ -32,7 +32,7 @@ When you compile an application, you can specify that it should run on a Windows
   
 -   Code that casts `IntPtr` to `Int32`.  
   
- For more information about how to port a 32-bit application to run on the 64-bit CLR, see [Migrating 32-bit Managed Code to 64-bit](https://msdn.microsoft.com/library/ms973190.aspx).  
+ For more information about how to port a 32-bit application to run on the 64-bit CLR, see [Migrating 32-bit Managed Code to 64-bit](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973190(v=msdn.10)).  
   
 ## General 64-Bit Programming Information  
  For general information about 64-bit programming, see the following documents:  

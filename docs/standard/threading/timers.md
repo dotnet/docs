@@ -52,6 +52,6 @@ For more information and examples, see <xref:System.Timers.Timer?displayProperty
   
 ## See also
 
-- <xref:System.Threading.Timer?displayProperty=nameWithType>  
-- <xref:System.Timers.Timer?displayProperty=nameWithType>  
+- <xref:System.Threading.Timer?displayProperty=nameWithType>
+- <xref:System.Timers.Timer?displayProperty=nameWithType>
 - [Threading Objects and Features](threading-objects-and-features.md)

@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "UI (user interface), automation"
   - "UI Automation"
 ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation and Screen Scaling
 > [!NOTE]
@@ -59,7 +57,7 @@ ms.author: "mhopkins"
      [!code-csharp[Highlighter#101](../../../samples/snippets/csharp/VS_Snippets_Wpf/Highlighter/CSharp/NativeMethods.cs#101)]
      [!code-vb[Highlighter#101](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Highlighter/VisualBasic/NativeMethods.vb#101)]  
   
-     This function makes the entire process [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]-aware, meaning that all windows that belong to the process are unscaled. In the [Highlighter Sample](https://msdn.microsoft.com/library/19ba4577-753e-4efd-92cc-c02ee67c1b69), for instance, the four windows that make up the highlight rectangle are located at the physical coordinates obtained from [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], not the logical coordinates. If the sample were not [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]-aware, the highlight would be drawn at the logical coordinates on the desktop, which would result in incorrect placement in a non-96- [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] environment.  
+     This function makes the entire process dpi-aware, meaning that all windows that belong to the process are unscaled. In the [Highlighter Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/Highlighter), for instance, the four windows that make up the highlight rectangle are located at the physical coordinates obtained from UI Automation, not the logical coordinates. If the sample were not dpi-aware, the highlight would be drawn at the logical coordinates on the desktop, which would result in incorrect placement in a non-96- dpi environment.  
   
 2.  To get cursor coordinates, call the [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] function `GetPhysicalCursorPos`. The following example shows how to declare and use this function.  
   
@@ -71,5 +69,5 @@ ms.author: "mhopkins"
   
  If your application performs direct cross-process communication with non- [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]-aware applications, you may have convert between logical and physical coordinates by using the [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] functions `PhysicalToLogicalPoint` and `LogicalToPhysicalPoint`.  
   
-## See Also  
- [Highlighter Sample](https://msdn.microsoft.com/library/19ba4577-753e-4efd-92cc-c02ee67c1b69)
+## See also
+- [Highlighter Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/Highlighter)

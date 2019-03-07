@@ -29,7 +29,7 @@ HRESULT Clone (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pName`  
  [out] The returned copy of this `IAssemblyName` object.  
   
@@ -40,5 +40,5 @@ HRESULT Clone (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+## See also
+- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)

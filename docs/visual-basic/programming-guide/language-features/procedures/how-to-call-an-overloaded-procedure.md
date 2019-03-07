@@ -22,18 +22,18 @@ The advantage of overloading a procedure is in the flexibility of the call. The 
   
      The following example calls the `post` procedure declared in [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md). It obtains the customer identification, determines whether it is a `String` or an `Integer`, and then in either case calls the same procedure.  
   
-     [!code-vb[VbVbcnProcedures#56](./codesnippet/VisualBasic/how-to-call-an-overloaded-procedure_1.vb)]  
+     [!code-vb[VbVbcnProcedures#56](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#56)]  
   
-     [!code-vb[VbVbcnProcedures#57](./codesnippet/VisualBasic/how-to-call-an-overloaded-procedure_2.vb)]  
+     [!code-vb[VbVbcnProcedures#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#57)]  
   
-## See Also  
- [Procedures](./index.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Procedure Overloading](./procedure-overloading.md)  
- [Troubleshooting Procedures](./troubleshooting-procedures.md)  
- [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)  
- [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)  
- [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)  
- [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md)  
- [Overload Resolution](./overload-resolution.md)  
- [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)
+## See also
+- [Procedures](./index.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Procedure Overloading](./procedure-overloading.md)
+- [Troubleshooting Procedures](./troubleshooting-procedures.md)
+- [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)
+- [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)
+- [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)
+- [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md)
+- [Overload Resolution](./overload-resolution.md)
+- [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)

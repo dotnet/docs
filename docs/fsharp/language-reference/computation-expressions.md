@@ -212,6 +212,7 @@ The following table describes methods that can be used in a workflow builder cla
 |`Yield`|`'T -> M<'T>`|Called for `yield` expressions in computation expressions.|
 |`YieldFrom`|`M<'T> -> M<'T>`|Called for `yield!` expressions in computation expressions.|
 |`Zero`|`unit -> M<'T>`|Called for empty `else` branches of `if...then` expressions in computation expressions.|
+|`Quote`|`Quotations.Expr<'T> -> Quotations.Expr<'T>`|Indicates that the computation expression is passed to the `Run` member as a quotation. It translates all instances of a computation into a quotation.|
 
 Many of the methods in a builder class use and return an `M<'T>` construct, which is typically a separately defined type that characterizes the kind of computations being combined, for example, `Async<'T>` for asynchronous workflows and `Seq<'T>` for sequence workflows. The signatures of these methods enable them to be combined and nested with each other, so that the workflow object returned from one construct can be passed to the next. The compiler, when it parses a computation expression, converts the expression into a series of nested function calls by using the methods in the preceding table and the code in the computation expression.
 

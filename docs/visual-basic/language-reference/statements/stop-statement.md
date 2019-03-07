@@ -33,7 +33,7 @@ Stop
 ## Example  
  This example uses the `Stop` statement to suspend execution for each iteration through the `For...Next` loop.  
   
- [!code-vb[VbVbalrStatements#56](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/stop-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#56](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#56)]  
   
-## See Also  
- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)
+## See also
+- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)

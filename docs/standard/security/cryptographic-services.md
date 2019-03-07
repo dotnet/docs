@@ -190,7 +190,7 @@ ms.author: "mairaw"
   
 -   Alice sends the plaintext message and the hashed message (digital signature) to Bob. Bob receives and hashes the message and compares his hash value to the hash value that he received from Alice. If the hash values are identical, the message was not altered. If the values are not identical, the message was altered after Alice wrote it.  
   
-     Unfortunately, this method does not establish the authenticity of the sender. Anyone can impersonate Alice and send a message to Bob. They can use the same hash algorithm to sign their message, and all Bob can determine is that the message matches its signature. This is one form of a man-in-the-middle attack. See [NIB: Cryptography Next Generation (CNG) Secure Communication Example](https://msdn.microsoft.com/library/8048e94e-054a-417b-87c6-4f5e26710e6e) for more information.  
+     Unfortunately, this method does not establish the authenticity of the sender. Anyone can impersonate Alice and send a message to Bob. They can use the same hash algorithm to sign their message, and all Bob can determine is that the message matches its signature. This is one form of a man-in-the-middle attack. For more information, see [Cryptography Next Generation (CNG) Secure Communication Example](https://docs.microsoft.com/previous-versions/cc488018(v=vs.100)).  
   
 -   Alice sends the plaintext message to Bob over a nonsecure public channel. She sends the hashed message to Bob over a secure private channel. Bob receives the plaintext message, hashes it, and compares the hash to the privately exchanged hash. If the hashes match, Bob knows two things:  
   

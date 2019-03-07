@@ -12,7 +12,7 @@ ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
 This example defines and calls the `MessageBox` function in user32.dll and then passes a string to it.  
   
 ## Example  
- [!code-vb[VbVbalrInterop#1](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/how-to-call-windows-apis_1.vb)]  
+ [!code-vb[VbVbalrInterop#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#1)]  
   
 ## Compiling the Code  
  This example requires:  
@@ -30,9 +30,9 @@ This example defines and calls the `MessageBox` function in user32.dll and then 
   
 ## See also
 
-- [A Closer Look at Platform Invoke](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)  
-- [Platform Invoke Examples](../../../framework/interop/platform-invoke-examples.md)  
-- [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md)  
-- [Defining a Method with Reflection Emit](https://msdn.microsoft.com/library/84fd3bf6-628f-41aa-83d9-b990cf926e81)  
-- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)  
+- [A Closer Look at Platform Invoke](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)
+- [Platform Invoke Examples](../../../framework/interop/platform-invoke-examples.md)
+- [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md)
+- [Defining a Method with Reflection Emit](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w63y4d4f(v=vs.100))
+- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
 - [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)

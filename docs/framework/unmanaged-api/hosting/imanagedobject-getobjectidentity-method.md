@@ -31,7 +31,7 @@ HRESULT GetObjectIdentity (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBSTRGUID`  
  [out] A pointer to the GUID of the process in which the object resides.  
   
@@ -53,5 +53,5 @@ HRESULT GetObjectIdentity (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IManagedObject Interface](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md)
+## See also
+- [IManagedObject Interface](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md)

@@ -34,13 +34,13 @@ Skip count
 ## Example  
  The following code example uses the `Skip` clause together with the `Take` clause to return data from a query in pages. The `GetCustomers` function uses the `Skip` clause to bypass the customers in the list until the supplied starting index value, and uses the `Take` clause to return a page of customers starting from that index value.  
   
- [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/skip-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#1)]  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [Skip While Clause](../../../visual-basic/language-reference/queries/skip-while-clause.md)  
- [Take Clause](../../../visual-basic/language-reference/queries/take-clause.md)
+## See also
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)
+- [Skip While Clause](../../../visual-basic/language-reference/queries/skip-while-clause.md)
+- [Take Clause](../../../visual-basic/language-reference/queries/take-clause.md)

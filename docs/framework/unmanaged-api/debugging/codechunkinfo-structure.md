@@ -1,5 +1,5 @@
 ---
-title: "CodeChunkInfo Structure1"
+title: "CodeChunkInfo Structure"
 ms.date: "03/30/2017"
 api_name: 
   - "CodeChunkInfo"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# CodeChunkInfo Structure1
+# CodeChunkInfo Structure
+
 Represents a single chunk of code in memory.  
   
 ## Syntax  
@@ -48,7 +49,7 @@ typedef struct _CodeChunkInfo {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)
+- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

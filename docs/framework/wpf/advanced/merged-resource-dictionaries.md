@@ -12,9 +12,9 @@ ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
 ## Introducing a Merged Resource Dictionary  
  In markup, you use the following syntax to introduce a merged resource dictionary into a page:  
   
- [!code-xaml[ResourceMergeDictionary#MergedXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ResourceMergeDictionary/CS/default.xaml#mergedxaml)]  
+ [!code-xaml[ResourceMergeDictionary#MergedXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourceMergeDictionary/CS/default.xaml#mergedxaml)]  
   
- Note that the <xref:System.Windows.ResourceDictionary> element does not have an [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md), which is generally required for all items in a resource collection. But another <xref:System.Windows.ResourceDictionary> reference within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection is a special case, reserved for this merged resource dictionary scenario. The <xref:System.Windows.ResourceDictionary> that introduces a merged resource dictionary cannot have an [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md). Typically, each <xref:System.Windows.ResourceDictionary> within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection specifies a <xref:System.Windows.ResourceDictionary.Source%2A> attribute. The value of <xref:System.Windows.ResourceDictionary.Source%2A> should be a [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] that resolves to the location of the resources file to be merged. The destination of that [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] must be another [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, with <xref:System.Windows.ResourceDictionary> as its root element.  
+ Note that the <xref:System.Windows.ResourceDictionary> element does not have an [x:Key Directive](../../xaml-services/x-key-directive.md), which is generally required for all items in a resource collection. But another <xref:System.Windows.ResourceDictionary> reference within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection is a special case, reserved for this merged resource dictionary scenario. The <xref:System.Windows.ResourceDictionary> that introduces a merged resource dictionary cannot have an [x:Key Directive](../../xaml-services/x-key-directive.md). Typically, each <xref:System.Windows.ResourceDictionary> within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection specifies a <xref:System.Windows.ResourceDictionary.Source%2A> attribute. The value of <xref:System.Windows.ResourceDictionary.Source%2A> should be a [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] that resolves to the location of the resources file to be merged. The destination of that [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] must be another [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, with <xref:System.Windows.ResourceDictionary> as its root element.  
   
 > [!NOTE]
 >  It is legal to define resources within a <xref:System.Windows.ResourceDictionary> that is specified as a merged dictionary, either as an alternative to specifying <xref:System.Windows.ResourceDictionary.Source%2A>, or in addition to whatever resources are included from the specified source. However, this is not a common scenario; the main scenario for merged dictionaries is to merge resources from external file locations. If you want to specify resources within the markup for a page, you should typically define these in the main <xref:System.Windows.ResourceDictionary> and not in the merged dictionaries.  
@@ -33,7 +33,7 @@ ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
 > [!NOTE]
 >  Do not use the Embedded Resource build action. The build action itself is supported for [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications, but the resolution of <xref:System.Windows.ResourceDictionary.Source%2A> does not incorporate <xref:System.Resources.ResourceManager>, and thus cannot separate the individual resource out of the stream. You could still use Embedded Resource for other purposes so long as you also used <xref:System.Resources.ResourceManager> to access the resources.  
   
- A related technique is to use a Pack URI to a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, and refer to it as Source. Pack URI enables references to components of referenced assemblies and other techniques. For more information on Pack URIs, see [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md).  
+ A related technique is to use a Pack URI to a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, and refer to it as Source. Pack URI enables references to components of referenced assemblies and other techniques. For more information on Pack URIs, see [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md).  
   
  For resources that are not compiled as part of the project, the URI is evaluated at run time. You can use a common URI transport such as file: or http: to refer to the resource file. The disadvantage of using the noncompiled resource approach is that file: access requires additional deployment steps, and http: access implies the Internet security zone.  
   
@@ -43,10 +43,10 @@ ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
  Writing merged dictionaries as local application files or to local shared storage is another possible merged dictionary / application deployment scenario.  
   
 ### Localization  
- If resources that need to be localized are isolated to dictionaries that are merged into primary dictionaries, and kept as loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], these files can be localized separately. This technique is a lightweight alternative to localizing  the satellite resource assemblies. For details, see [WPF Globalization and Localization Overview](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md).  
+ If resources that need to be localized are isolated to dictionaries that are merged into primary dictionaries, and kept as loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], these files can be localized separately. This technique is a lightweight alternative to localizing  the satellite resource assemblies. For details, see [WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md).  
   
-## See Also  
- <xref:System.Windows.ResourceDictionary>  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)  
- [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)
+## See also
+- <xref:System.Windows.ResourceDictionary>
+- [XAML Resources](xaml-resources.md)
+- [Resources and Code](resources-and-code.md)
+- [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md)

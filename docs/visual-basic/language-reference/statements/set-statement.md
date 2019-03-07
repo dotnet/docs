@@ -79,10 +79,10 @@ End Set
 ## Example  
  The following example uses the `Set` statement to set the value of a property.  
   
- [!code-vb[VbVbalrStatements#55](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/set-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#55](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#55)]  
   
-## See Also  
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
+## See also
+- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)

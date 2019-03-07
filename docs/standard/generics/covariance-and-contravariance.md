@@ -129,7 +129,7 @@ ms.author: "mairaw"
 ### Variance in Generic and Non-Generic Delegates  
  In the preceding code, the signature of `MyMethod` exactly matches the signature of the constructed generic delegate: `Func<Base, Derived>` (`Func(Of Base, Derived)` in Visual Basic). The example shows that this generic delegate can be stored in variables or method parameters that have more derived parameter types and less derived return types, as long as all the delegate types are constructed from the generic delegate type <xref:System.Func%602>.  
   
- This is an important point. The effects of covariance and contravariance in the type parameters of generic delegates are similar to the effects of covariance and contravariance in ordinary delegate binding (see [Variance in Delegates](https://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)). However, variance in delegate binding works with all delegate types, not just with generic delegate types that have variant type parameters. Furthermore, variance in delegate binding enables a method to be bound to any delegate that has more restrictive parameter types and a less restrictive return type, whereas the assignment of generic delegates works only if both delegate types are constructed from the same generic type definition.  
+ This is an important point. The effects of covariance and contravariance in the type parameters of generic delegates are similar to the effects of covariance and contravariance in ordinary delegate binding (see [Variance in Delegates (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md) and [Variance in Delegates (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)). However, variance in delegate binding works with all delegate types, not just with generic delegate types that have variant type parameters. Furthermore, variance in delegate binding enables a method to be bound to any delegate that has more restrictive parameter types and a less restrictive return type, whereas the assignment of generic delegates works only if both delegate types are constructed from the same generic type definition.  
   
  The following example shows the combined effects of variance in delegate binding and variance in generic type parameters. The example defines a type hierarchy that includes three types, from least derived (`Type1`) to most derived (`Type3`). Variance in ordinary delegate binding is used to bind a method with a parameter type of `Type1` and a return type of `Type3` to a generic delegate with a parameter type of `Type2` and a return type of `Type2`. The resulting generic delegate is then assigned to another variable whose generic delegate type has a parameter of type `Type3` and a return type of `Type1`, using the covariance and contravariance of generic type parameters. The second assignment requires both the variable type and the delegate type to be constructed from the same generic type definition, in this case, <xref:System.Func%602>.  
   
@@ -156,7 +156,7 @@ ms.author: "mairaw"
   
  Visual Basic and C# do not allow you to violate the rules for using covariant and contravariant type parameters, or to add covariance and contravariance annotations to the type parameters of types other than interfaces and delegates. The [MSIL Assembler](../../../docs/framework/tools/ilasm-exe-il-assembler.md) does not perform such checks, but a <xref:System.TypeLoadException> is thrown if you try to load a type that violates the rules.  
   
- For information and example code, see [Variance in Generic Interfaces](https://msdn.microsoft.com/library/e14322da-1db3-42f2-9a67-397daddd6b6a).  
+ For information and example code, see [Variance in Generic Interfaces (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md) and [Variance in Generic Interfaces (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md).  
   
  [Back to top](#top)  
   
@@ -184,6 +184,7 @@ ms.author: "mairaw"
   
 ## See also
 
-- [Covariance and Contravariance (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/index.md)  
-- [Covariance and Contravariance (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)    
-- [Variance in Delegates](https://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)
+- [Covariance and Contravariance (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/index.md)
+- [Covariance and Contravariance (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)
+- [Variance in Delegates (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)
+- [Variance in Delegates (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)

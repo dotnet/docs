@@ -3,7 +3,7 @@ title: Tour of F#
 description: Examine some of the key features of the F# programming language in this tour with code samples.
 ms.date: 11/06/2018
 ---
-# Tour of F# #
+# Tour of F\#
 
 The best way to learn about F# is to read and write F# code. This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine. To learn about setting up a development environment, check out [Getting Started](tutorials/getting-started/index.md).
 
@@ -11,7 +11,7 @@ There are two primary concepts in F#: functions and types.  This tour will empha
 
 ## Executing the code online
 
-If you don't have F# installed on your machine, you can execute all of the samples online with the [Fable REPL](http://fable.io/repl/). Fable is a dialect of F# that executes directly in your browser. To view the samples that follow in the REPL, check out **Samples > Learn > Tour of F#** in the left-hand menu bar of the Fable REPL.
+If you don't have F# installed on your machine, you can execute all of the samples online with the [Fable REPL](https://fable.io/repl/). Fable is a dialect of F# that executes directly in your browser. To view the samples that follow in the REPL, check out **Samples > Learn > Tour of F#** in the left-hand menu bar of the Fable REPL.
 
 ## Functions and Modules
 

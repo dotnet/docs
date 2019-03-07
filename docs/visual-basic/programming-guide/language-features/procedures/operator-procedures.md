@@ -67,22 +67,21 @@ An operator procedure is a series of Visual Basic statements that define the beh
 ### Illustration of Declaration and Call  
  The following structure stores a signed 128-bit integer value as the constituent high-order and low-order parts. It defines the `+` operator to add two `veryLong` values and generate a resulting `veryLong` value.  
   
- [!code-vb[VbVbcnProcedures#23](./codesnippet/VisualBasic/operator-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#23)]  
   
  The following example shows a typical call to the `+` operator defined on `veryLong`.  
   
- [!code-vb[VbVbcnProcedures#24](./codesnippet/VisualBasic/operator-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#24)]  
   
- For more information and examples, see [Operator Overloading in Visual Basic 2005](https://msdn.microsoft.com/library/ms379613(v=vs.80).aspx).  
   
-## See Also  
- [Procedures](./index.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Function Procedures](./function-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)  
- [How to: Define an Operator](./how-to-define-an-operator.md)  
- [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)  
- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)  
- [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md)
+## See also
+- [Procedures](./index.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Function Procedures](./function-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)
+- [How to: Define an Operator](./how-to-define-an-operator.md)
+- [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)
+- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)
+- [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md)

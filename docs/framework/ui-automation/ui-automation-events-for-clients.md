@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation, events for clients"
   - "events, UI Automation clients"
 ms.assetid: b909e388-3f24-4997-b6d4-bd9c35c2dc27
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Events for Clients
 > [!NOTE]
@@ -53,8 +51,8 @@ ms.author: "mhopkins"
   
  For example code, see [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md).  
   
-## See Also  
- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)  
- [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)  
- [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)  
- [TrackFocus Sample](https://msdn.microsoft.com/library/4a91c0af-6bb5-4d38-a743-cf136f268fc9)
+## See also
+- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)
+- [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)
+- [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)
+- [TrackFocus Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/FocusTracker)

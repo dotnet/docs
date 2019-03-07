@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "UI Automation, server-side provider, exposing"
   - "server-side UI Automation provider, exposing"
 ms.assetid: 55d419c0-2201-4101-90c9-2888df4dbb47
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Expose a Server-side UI Automation Provider
 > [!NOTE]
@@ -24,6 +22,6 @@ ms.author: "mhopkins"
  [!code-csharp[UIAFragmentProvider_snip#116](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#116)]
  [!code-vb[UIAFragmentProvider_snip#116](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#116)]  
   
-## See Also  
- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+## See also
+- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

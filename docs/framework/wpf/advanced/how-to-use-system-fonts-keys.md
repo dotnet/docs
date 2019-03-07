@@ -16,9 +16,9 @@ System resources expose a number of system metrics as resources to help develope
  The following example shows how to access and use system font dynamic resources to style or customize a button. This [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example creates a button style that assigns <xref:System.Windows.SystemFonts> values to a button.  
   
 ## Example  
- [!code-xaml[SystemRes_snip#FontDynamicResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/MyApp.xaml#fontdynamicresources)]  
+ [!code-xaml[SystemRes_snip#FontDynamicResources](~/samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/MyApp.xaml#fontdynamicresources)]  
   
-## See Also  
- [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)  
- [Use SystemParameters](../../../../docs/framework/wpf/advanced/how-to-use-systemparameters.md)  
- [Use SystemFonts](../../../../docs/framework/wpf/advanced/how-to-use-systemfonts.md)
+## See also
+- [Paint an Area with a System Brush](../graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
+- [Use SystemParameters](how-to-use-systemparameters.md)
+- [Use SystemFonts](how-to-use-systemfonts.md)

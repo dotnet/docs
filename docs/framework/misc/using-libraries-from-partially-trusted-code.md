@@ -45,5 +45,5 @@ ms.author: "mairaw"
 > [!NOTE]
 >  Some classes in the .NET Framework class library do not have the **AllowPartiallyTrustedCallersAttribute** attribute and cannot be called by partially trusted code.  
   
-## See Also  
- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+## See also
+- [Code Access Security](../../../docs/framework/misc/code-access-security.md)

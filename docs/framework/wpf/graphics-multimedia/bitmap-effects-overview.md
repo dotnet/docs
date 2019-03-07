@@ -41,11 +41,11 @@ Bitmap effects enable designers and developers to apply visual effects to render
   
  The following example demonstrates how to apply a <xref:System.Windows.Media.Effects.BitmapEffect> in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
   
- [!code-xaml[EffectsGallery_snip#BlurSimpleExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EffectsGallery_snip/CSharp/blursimpleexample.xaml#blursimpleexampleinline)]  
+ [!code-xaml[EffectsGallery_snip#BlurSimpleExampleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/EffectsGallery_snip/CSharp/blursimpleexample.xaml#blursimpleexampleinline)]  
   
  The following example demonstrates how to apply a <xref:System.Windows.Media.Effects.BitmapEffect> in code.  
   
- [!code-csharp[EffectsGallery_snip#CodeBehindBlurCodeBehindExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EffectsGallery_snip/CSharp/blurcodebehindexample.xaml.cs#codebehindblurcodebehindexampleinline)]  
+ [!code-csharp[EffectsGallery_snip#CodeBehindBlurCodeBehindExampleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/EffectsGallery_snip/CSharp/blurcodebehindexample.xaml.cs#codebehindblurcodebehindexampleinline)]  
   
 > [!NOTE]
 >  When a <xref:System.Windows.Media.Effects.BitmapEffect> is applied to a layout container, such as <xref:System.Windows.Controls.DockPanel> or <xref:System.Windows.Controls.Canvas>, the effect is applied to the visual tree of the element or visual, including all of its child elements.  
@@ -54,12 +54,12 @@ Bitmap effects enable designers and developers to apply visual effects to render
 ## Creating Custom Effects  
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] also provides unmanaged interfaces to create custom effects that can be used in managed [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications. For additional reference material for creating custom bitmap effects, see the [Unmanaged WPF Bitmap Effect](https://docs.microsoft.com/previous-versions/windows/desktop/wibe/-wibe-lh) documentation.  
   
-## See Also  
- <xref:System.Windows.Media.Effects.BitmapEffectGroup>  
- <xref:System.Windows.Media.Effects.BitmapEffectInput>  
- <xref:System.Windows.Media.Effects.BitmapEffectCollection>  
- [Unmanaged WPF Bitmap Effect](https://docs.microsoft.com/previous-versions/windows/desktop/wibe/-wibe-lh)  
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
- [Security](../../../../docs/framework/wpf/security-wpf.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+## See also
+- <xref:System.Windows.Media.Effects.BitmapEffectGroup>
+- <xref:System.Windows.Media.Effects.BitmapEffectInput>
+- <xref:System.Windows.Media.Effects.BitmapEffectCollection>
+- [Unmanaged WPF Bitmap Effect](https://docs.microsoft.com/previous-versions/windows/desktop/wibe/-wibe-lh)
+- [Imaging Overview](imaging-overview.md)
+- [Security](../security-wpf.md)
+- [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)
+- [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)

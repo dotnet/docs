@@ -31,5 +31,5 @@ This section contains a set of walkthrough topics that introduce you to programm
  [How to: Update the Definition of a Running Workflow Instance](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md)  
  Describes how to use dynamic update to modify running workflow instances.  
   
-## See Also  
- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)
+## See also
+- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)

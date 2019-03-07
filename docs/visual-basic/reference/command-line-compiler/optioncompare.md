@@ -49,11 +49,11 @@ Specifies how string comparisons are made.
 vbc -optioncompare:binary projFile.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)  
- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)  
- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
+- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
+- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
+- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

@@ -29,7 +29,7 @@ HRESULT GetHandleType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pType`  
  [out] A pointer to a value of the CorDebugHandleType enumeration that indicates the type of this handle.  
   

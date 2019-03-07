@@ -120,7 +120,7 @@ Unit tests provide automated software testing during your development and publis
 
    You expect that the `searchWord` "Jack" returns two instances with `inputString` "Jack jack" passed into `GetWordCount`. Run the test again by clicking the **Run Tests** button in the **Unit Tests** panel or the **Rerun Tests** button in the **Test Results** panel at the bottom of the screen. The test passes. There are two instances of "Jack" in the string "Jack jack" (ignoring casing), and the test assertion is `true`.
 
-   ![isual Studio for Mac test pass display](./media/using-on-mac-vs-full-solution/visual-studio-mac-unit-test-pass.png)
+   ![Visual Studio for Mac test pass display](./media/using-on-mac-vs-full-solution/visual-studio-mac-unit-test-pass.png)
 
 1. Testing individual return values with a `Fact` is only the beginning of what you can do with unit testing. Another powerful technique allows you to test several values at once using a `Theory`. Add the following method to your `TextUtils_GetWordCountShould` class. You have two methods in the class after you add this method:
 
@@ -186,4 +186,4 @@ Unit tests provide automated software testing during your development and publis
 
 ## See also
 
-* [Visual Studio 2017 for Mac Release Notes](/visualstudio/releasenotes/vs2017-mac-relnotes)
+- [Visual Studio 2017 for Mac Release Notes](/visualstudio/releasenotes/vs2017-mac-relnotes)

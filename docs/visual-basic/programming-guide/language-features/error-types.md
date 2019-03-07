@@ -26,6 +26,6 @@ In Visual Basic, errors (also called *exceptions*) fall into one of three catego
 ## Logic Errors  
  *Logic errors* are those that appear once the application is in use. They are most often unwanted or unexpected results in response to user actions. For example, a mistyped key or other outside influence might cause your application to stop working within expected parameters, or altogether. Logic errors are generally the hardest type to fix, since it is not always clear where they originate.  
   
-## See Also  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
- [Debugger Basics](/visualstudio/debugger/debugger-basics)
+## See also
+- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Debugger Basics](/visualstudio/debugger/debugger-basics)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Window control type"
   - "control types, Window"
 ms.assetid: 53be78a6-cdcc-4af3-a464-5927d19c54e8
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Window Control Type
 > [!NOTE]
@@ -78,7 +76,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.WindowPatternIdentifiers.WindowOpenedEvent>|Required|None|  
 |<xref:System.Windows.Automation.WindowPatternIdentifiers.WindowVisualStateProperty> property-changed event.|Depends|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Window>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Window>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

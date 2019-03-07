@@ -1,5 +1,5 @@
 ---
-title: "Sorry, we don&#39;t have specifics on this C# error"
+title: "Sorry, we don't have specifics on this C# error"
 ms.date: 07/20/2015
 f1_keywords: 
   - "CS1583"
@@ -883,7 +883,7 @@ helpviewer_keywords:
   - "errors [C#], additional information"
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
 ---
-# Sorry, we don&#39;t have specifics on this C# error
+# Sorry, we don't have specifics on this C# error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or you can ask other developers using one of these forums:  
   
  [Visual C# Language](https://social.msdn.microsoft.com/Forums/en-US/home?forum=csharplanguage)  
@@ -901,8 +901,8 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Also see:  
  [Additional Resources for Visual C# Programmers](../../csharp/getting-started/additional-resources.md)  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../csharp/programming-guide/index.md)  
-- [C# Reference](../../csharp/language-reference/index.md)  
-- [Talk to Us](/visualstudio/ide/talk-to-us)  
+- [C# Programming Guide](../../csharp/programming-guide/index.md)
+- [C# Reference](../../csharp/language-reference/index.md)
+- [Talk to Us](/visualstudio/ide/talk-to-us)

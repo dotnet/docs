@@ -33,7 +33,7 @@ HRESULT GetSymAttributePreRemap(
         length_is(*pcBuffer)] BYTE buffer[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The metadata token of the parent.  
   
@@ -55,5 +55,5 @@ HRESULT GetSymAttributePreRemap(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)
+## See also
+- [ISymUnmanagedReader2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)

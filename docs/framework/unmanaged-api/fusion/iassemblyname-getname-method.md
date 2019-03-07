@@ -30,7 +30,7 @@ HRESULT GetName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpcwBuffer`  
  [in, out] The size of `pwzName` in wide characters, including the null terminator character.  
   
@@ -44,5 +44,5 @@ HRESULT GetName (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+## See also
+- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)

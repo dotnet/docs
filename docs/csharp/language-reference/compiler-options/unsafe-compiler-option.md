@@ -47,7 +47,7 @@ Open the .csproj file for a project, and add the following elements:
 csc -unsafe in.cs  
 ```  
   
-## See Also  
+## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

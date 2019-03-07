@@ -144,7 +144,7 @@ The switches have the same effect whether you're doing HTTP networking (<xref:Sy
 
 ### Switch.System.Net.DontEnableSchUseStrongCrypto
 
-A value of `false` for `Switch.System.Net.DontEnableSchUseStrongCrypto` causes your app to use strong cryptography. A value of `false` for `DontEnableSchUseStrongCrypto` uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. For more info, see [The SCH_USE_STRONG_CRYPTO flag](#the-schusestrongcrypto-flag). A value of `true` disables strong cryptography for your app.
+A value of `false` for `Switch.System.Net.DontEnableSchUseStrongCrypto` causes your app to use strong cryptography. A value of `false` for `DontEnableSchUseStrongCrypto` uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. For more info, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag). A value of `true` disables strong cryptography for your app.
 
 If your app targets .NET Framework 4.6 or later versions, this switch defaults to `false`. That's a secure default, which we recommend. If your app runs on .NET Framework 4.6, but targets an earlier version, the switch defaults to `true`. In that case, you should explicitly set it to `false`.
 
@@ -185,7 +185,7 @@ All of the registry keys described below have the same effect whether you're doi
 
 ### SchUseStrongCrypto
 
-The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` registry key has a value of type DWORD. A value of 1 causes your app to use strong cryptography. The strong cryptography uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. A value of 0 disables strong cryptography. For more information, see [The SCH_USE_STRONG_CRYPTO flag](#the-schusestrongcrypto-flag).
+The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` registry key has a value of type DWORD. A value of 1 causes your app to use strong cryptography. The strong cryptography uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. A value of 0 disables strong cryptography. For more information, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag).
 
 If your app targets .NET Framework 4.6 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app runs on .NET Framework 4.6, but targets an earlier version, then the key defaults to 0. In that case, you should explicitly set its value to 1.
 
@@ -231,7 +231,7 @@ You can use the registry for fine-grained control over the protocols that your c
 
 Start with the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols` registry key. Under that key you can create any subkeys in the set `SSL 2.0`, `SSL 3.0`, `TLS 1.0`, `TLS 1.1`, and `TLS 1.2`. Under each of those subkeys, you can create subkeys `Client` and/or `Server`. Under `Client` and `Server`, you can create DWORD values `DisabledByDefault` (0 or 1) and `Enabled` (0 or 0xFFFFFFFF).
 
-## The SCH_USE_STRONG_CRYPTO flag
+## <a name="the-sch_use_strong_crypto-flag"></a>The SCH_USE_STRONG_CRYPTO flag
 
 When it's enabled (by default, by an `AppContext` switch, or by the Windows Registry), the .NET Framework uses the `SCH_USE_STRONG_CRYPTO` flag when your app requests a TLS security protocol. The `SCH_USE_STRONG_CRYPTO` flag can be enabled by default, with the `AppContext` switch, or with the Registry. The OS passes the flag to `Schannel`to instruct it to disable known weak cryptographic algorithms, cipher suites, and TLS/SSL protocol versions that may be otherwise enabled for better interoperability. For more information, see:
 
@@ -264,10 +264,10 @@ To enable or re-enable TLS 1.2 and/or TLS 1.1 on a system that supports them, se
 
 | **OS** | **TLS 1.2 support** |
 | --- | --- |
-| Windows 10</br>Windows Server 2016 | Supported, and enabled by default. |
-| Windows 8.1</br>Windows Server 2012 R2 | Supported, and enabled by default. |
-| Windows 8.0</br>Windows Server 2012 | Supported, and enabled by default. |
-| Windows 7 SP1</br>Windows Server 2008 R2 SP1 | Supported, but not enabled by default. See the [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings) web page for details on how to enable TLS 1.2. |
+| Windows 10<br>Windows Server 2016 | Supported, and enabled by default. |
+| Windows 8.1<br>Windows Server 2012 R2 | Supported, and enabled by default. |
+| Windows 8.0<br>Windows Server 2012 | Supported, and enabled by default. |
+| Windows 7 SP1<br>Windows Server 2008 R2 SP1 | Supported, but not enabled by default. See the [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings) web page for details on how to enable TLS 1.2. |
 | Windows Server 2008 | Support for TLS 1.2 and TLS 1.1 requires an update. See [Update to add support for TLS 1.1 and TLS 1.2 in Windows Server 2008 SP2](https://support.microsoft.com/help/4019276/update-to-add-support-for-tls-1-1-and-tls-1-2-in-windows-server-2008-s). |
 | Windows Vista | Not supported. |
 
@@ -279,10 +279,10 @@ This table shows the OS update you'll need to support TLS 1.2 with .NET Framewor
 
 | **OS** | **Minimum update needed to support TLS 1.2 with .NET Framework 3.5** |
 | --- | --- |
-| Windows 10</br>Windows Server 2016 | [Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016](https://support.microsoft.com/help/3156421/cumulative-update-for-windows-10-version-1511-and-windows-server-2016) |
-| Windows 8.1</br>Windows Server 2012 R2 | [Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework) |
-| Windows 8.0</br>Windows Server 2012 | [Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012](https://support.microsoft.com/help/3154519/support-for-tls-system-default-versions-included-in-the--net-framework) |
-| Windows 7 SP1</br>Windows Server 2008 R2 SP1 | [Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the--net-framework) |
+| Windows 10<br>Windows Server 2016 | [Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016](https://support.microsoft.com/help/3156421/cumulative-update-for-windows-10-version-1511-and-windows-server-2016) |
+| Windows 8.1<br>Windows Server 2012 R2 | [Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework) |
+| Windows 8.0<br>Windows Server 2012 | [Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012](https://support.microsoft.com/help/3154519/support-for-tls-system-default-versions-included-in-the--net-framework) |
+| Windows 7 SP1<br>Windows Server 2008 R2 SP1 | [Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the--net-framework) |
 | Windows Server 2008 | [Support for TLS System Default Versions included in the .NET Framework 2.0 SP2 on Windows Vista SP2 and Server 2008 SP2](https://support.microsoft.com/help/3154517/support-for-tls-system-default-versions-included-in-the--net-framework) |
 | Windows Vista | Not supported |
 

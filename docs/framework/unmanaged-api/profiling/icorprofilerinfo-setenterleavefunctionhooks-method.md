@@ -30,7 +30,7 @@ HRESULT SetEnterLeaveFunctionHooks(
     [in] FunctionTailcall *pFuncTailcall);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFuncEnter`  
  [in] A pointer to the implementation to be used as the [FunctionEnter](../../../../docs/framework/unmanaged-api/profiling/functionenter-function.md) callback.  
   
@@ -56,5 +56,5 @@ HRESULT SetEnterLeaveFunctionHooks(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

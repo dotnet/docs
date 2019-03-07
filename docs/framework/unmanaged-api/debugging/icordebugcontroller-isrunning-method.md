@@ -29,7 +29,7 @@ HRESULT IsRunning (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbRunning`  
  [out] A pointer to a value that is `true` if the threads in the process are running freely; otherwise, `false`.  
   
@@ -42,5 +42,5 @@ HRESULT IsRunning (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

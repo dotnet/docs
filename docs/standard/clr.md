@@ -18,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: "updateeachrelease"
 ---
 # Common Language Runtime (CLR) overview
 

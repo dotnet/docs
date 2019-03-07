@@ -29,9 +29,9 @@ p--;
 ## Example  
  In this example, you step through an array by incrementing the pointer by the size of `int`. With each step, you display the address and the content of the array element.  
   
- [!code-csharp[csProgGuidePointers#3](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-increment-and-decrement-pointers_1.cs)]  
+ [!code-csharp[csProgGuidePointers#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers2.cs#3)]  
   
- [!code-csharp[csProgGuidePointers#13](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-increment-and-decrement-pointers_2.cs)]  
+ [!code-csharp[csProgGuidePointers#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers.cs#13)]  
   
 **Value:0 @ Address:12860272**
 **Value:1 @ Address:12860276**
@@ -41,13 +41,13 @@ p--;
 
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
-- [C# Operators](../../../csharp/language-reference/operators/index.md)  
-- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
-- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
-- [Types](../../../csharp/language-reference/keywords/types.md)  
-- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
-- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
+- [C# Operators](../../../csharp/language-reference/operators/index.md)
+- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Types](../../../csharp/language-reference/keywords/types.md)
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
+- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)
 - [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
 - [sizeof](../../../csharp/language-reference/keywords/sizeof.md)

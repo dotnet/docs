@@ -11,7 +11,7 @@ ms.assetid: b7cf4ff2-0eb7-4e5c-93d5-b2196b4f5d89
 
 Structs are defined by using the [struct](../../language-reference/keywords/struct.md) keyword, for example:  
   
-[!code-csharp[csProgGuideObjects#39](./codesnippet/CSharp/structs_1.cs)]  
+ [!code-csharp[csProgGuideObjects#39](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#39)]  
   
 Structs share most of the same syntax as classes. The name of the struct must be a valid C# [identifier name](../inside-a-program/identifier-names.md). Structs are more limited than classes in the following ways:  
   
@@ -22,8 +22,8 @@ Structs share most of the same syntax as classes. The name of the struct must be
 - Unlike classes, structs can be instantiated without using a `new` operator.  
 - Structs can declare constructors that have parameters. 
 - A struct cannot inherit from another struct or class, and it cannot be the base of a class. All structs inherit directly from <xref:System.ValueType>, which inherits from <xref:System.Object>.  
-- A struct can implement interfaces.  
-- A struct can be used as a nullable type and can be assigned a null value.  
+- A struct can implement interfaces. 
+- A struct cannot be `null`, and a struct variable cannot be assigned `null` unless the variable is declared as a nullable type.
   
 ## Related sections  
 

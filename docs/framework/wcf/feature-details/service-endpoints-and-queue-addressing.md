@@ -40,7 +40,7 @@ This topic discusses how clients address services that read from queues and how 
   
  The queue address is used as the Listen URI by the Listener to read messages from. In other words, the queue address is equivalent to the listen port of TCP socket.  
   
- An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../../../../docs/framework/wcf/samples/net-msmq-binding.md) and [Message Queuing Integration Binding Samples](https://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a).  
+ An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../../../../docs/framework/wcf/samples/net-msmq-binding.md).  
   
 ### Multiple Contracts in a Queue  
  Messages in a queue can implement different contracts. In this case, it is essential that one of the following is true to successfully read and process all messages:  
@@ -98,5 +98,5 @@ This topic discusses how clients address services that read from queues and how 
   
  Note that you cannot use net.msmq:// addressing with `MsmqIntegrationBinding`. Because `MsmqIntegrationBinding` supports free-form MSMQ format name addressing, you can use a WCF service that uses this binding to use multicast and distribution list features in MSMQ. One exception is specifying `CustomDeadLetterQueue` when using the `MsmqIntegrationBinding`. It must be of the form net.msmq://, similar to how it is specified using the `NetMsmqBinding`.  
   
-## See Also  
- [Web Hosting a Queued Application](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)
+## See also
+- [Web Hosting a Queued Application](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.web&gt; Element (Web Settings)"
+title: "<system.web> Element (Web Settings)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Web.config configuration file [ASP.NET]"
@@ -8,10 +8,8 @@ helpviewer_keywords:
   - "ASP.NET configuration system"
   - "configuration files [ASP.NET]"
 ms.assetid: 24c4cf4f-ad32-42b2-b040-8e4549e2855e
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;system.web&gt; Element (Web Settings)
+# \<system.web> Element (Web Settings)
 Contains information about how the ASP.NET hosting layer manages process-wide behavior.  
   
  \<configuration>  
@@ -68,5 +66,5 @@ Contains information about how the ASP.NET hosting layer manages process-wide be
 |Validation File||  
 |Can be Empty||  
   
-## See Also  
- [\<applicationPool> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)
+## See also
+- [\<applicationPool> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)

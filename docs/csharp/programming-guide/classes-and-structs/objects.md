@@ -18,11 +18,11 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
  Instances of classes are created by using the [new operator](../../../csharp/language-reference/keywords/new-operator.md). In the following example, `Person` is the type and `person1` and `person 2` are instances, or objects, of that type.  
   
- [!code-csharp[csProgGuideStatements#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_1.cs)]  
+ [!code-csharp[csProgGuideStatements#30](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#30)]  
   
  Because structs are value types, a variable of a struct object holds a copy of the entire object. Instances of structs can also be created by using the `new` operator, but this is not required, as shown in the following example:  
   
- [!code-csharp[csProgGuideStatements#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_2.cs)]  
+ [!code-csharp[csProgGuideStatements#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#31)]  
   
  The memory for both `p1` and `p2` is allocated on the thread stack. That memory is reclaimed along with the type or method in which it is declared. This is one reason why structs are copied on assignment. By contrast, the memory that is allocated for a class instance is automatically reclaimed (garbage collected) by the common language runtime when all references to the object have gone out of scope. It is not possible to deterministically destroy a class object like you can in C++. For more information about garbage collection in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], see [Garbage Collection](../../../standard/garbage-collection/index.md).  
   
@@ -36,7 +36,7 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
 -   To determine whether the instance fields in two struct instances have the same values, use the <xref:System.ValueType.Equals%2A?displayProperty=nameWithType> method. Because all structs implicitly inherit from <xref:System.ValueType?displayProperty=nameWithType>, you call the method directly on your object as shown in the following example:  
   
- [!code-csharp[csProgGuideStatements#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_3.cs)]  
+ [!code-csharp[csProgGuideStatements#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#32)]  
   
  The <xref:System.ValueType?displayProperty=nameWithType> implementation of `Equals` uses reflection because it must be able to determine what the fields are in any struct. When creating your own structs, override the `Equals` method to provide an efficient equality algorithm that is specific to your type.  
   
@@ -55,12 +55,12 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
 -   [Events](../../../csharp/programming-guide/events/index.md)  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [object](../../../csharp/language-reference/keywords/object.md)  
-- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
-- [class](../../../csharp/language-reference/keywords/class.md)  
-- [struct](../../../csharp/language-reference/keywords/struct.md)  
-- [new Operator](../../../csharp/language-reference/keywords/new-operator.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [object](../../../csharp/language-reference/keywords/object.md)
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+- [class](../../../csharp/language-reference/keywords/class.md)
+- [struct](../../../csharp/language-reference/keywords/struct.md)
+- [new Operator](../../../csharp/language-reference/keywords/new-operator.md)
 - [Common Type System](../../../standard/base-types/common-type-system.md)

@@ -29,7 +29,7 @@ HRESULT SetDebuggerThreadControl (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDebuggerThreadControl`  
  [in] A pointer to an [IDebuggerThreadControl](../../../../docs/framework/unmanaged-api/hosting/idebuggerthreadcontrol-interface.md) object that notifies the host about the blocking and unblocking of threads by the debugging services.  
   
@@ -42,5 +42,5 @@ HRESULT SetDebuggerThreadControl (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorConfiguration Interface](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)
+## See also
+- [ICorConfiguration Interface](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)

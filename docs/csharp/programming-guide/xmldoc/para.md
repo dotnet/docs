@@ -1,5 +1,5 @@
 ---
-title: "&lt;para&gt; - C# Programming Guide"
+title: "<para> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,14 +10,14 @@ helpviewer_keywords:
   - "para C# XML tag"
 ms.assetid: c74b8705-29df-40b1-bff5-237492b0e978
 ---
-# &lt;para&gt; (C# Programming Guide)
+# \<para> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
 <para>content</para>  
 ```  
   
-#### Parameters  
+## Parameters  
  `content`  
  The text of the paragraph.  
   
@@ -29,7 +29,7 @@ ms.assetid: c74b8705-29df-40b1-bff5-237492b0e978
 ## Example  
  See [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md) for an example of using \<para>.  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;example&gt; - C# Programming Guide"
+title: "<example> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,14 +10,14 @@ helpviewer_keywords:
   - "example C# XML tag"
 ms.assetid: 32d6e73b-2554-4abb-83ee-a1e321334fd2
 ---
-# &lt;example&gt; (C# Programming Guide)
+# \<example> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
 <example>description</example>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A description of the code sample.  
   
@@ -27,9 +27,9 @@ ms.assetid: 32d6e73b-2554-4abb-83ee-a1e321334fd2
  Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-csharp[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/example_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#3)]  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

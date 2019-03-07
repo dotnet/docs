@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Calendar control type"
   - "control types, Calendar"
 ms.assetid: e91a7393-a7f9-4838-a1a6-857438b24bc9
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Calendar Control Type
 > [!NOTE]
@@ -79,7 +77,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalViewSizeProperty> property-changed event.|Depends|If the control supports the Scroll control pattern, it must support this event.|  
 |<xref:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Calendar>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Calendar>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

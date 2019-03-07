@@ -39,7 +39,7 @@ You can also choose from existing issues for which community contributions are w
 
 You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution. 
 
-**Step 2:** Fork the `/dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
+**Step 2:** Fork the `dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
 
 For small changes, you can use GitHub's web interface. Simply click the **Edit the file in your fork of this project** on the file you'd like to change. 
 GitHub creates the new branch for you when you submit the changes.
@@ -106,13 +106,13 @@ contain a short description of the sample (one or two paragraphs). Your *readme.
 should tell readers what they will learn by exploring this sample. The *readme.md* file should also contain
 a link to the live document on the [.NET documentation site](https://docs.microsoft.com/dotnet/welcome).
 To determine where a given file in the repository maps to that site, replace `/docs` in the repository path
-with `http://docs.microsoft.com/dotnet/articles`.
+with `https://docs.microsoft.com/dotnet`.
 
 Your topic will also contain links to the sample. Link directly to the sample's folder on GitHub.
 
 For more information, see the [Samples Readme](https://github.com/dotnet/samples/blob/master/README.md).
 
-## The C# interactive experience #
+## The C# interactive experience
 
 Short code samples in C# can use the `csharp-interactive` language tag to
 specify a C# sample that runs in the browser. (Inline code samples use the
@@ -152,7 +152,7 @@ The following list shows some guiding rules that you should keep in mind when yo
 
 ## Contributor License Agreement
 
-You must sign the [.NET Foundation Contribution License Agreement (CLA)](https://cla.dotnetfoundation.org) before your PR is merged. This is a one-time requirement for projects in the .NET Foundation. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
+You must sign the [.NET Foundation Contribution License Agreement (CLA)](https://cla.dotnetfoundation.org) before your PR is merged. This is a one-time requirement for projects in the .NET Foundation. You can read more about [Contribution License Agreements (CLA)](https://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
 
 The agreement: [net-foundation-contribution-license-agreement.pdf](https://github.com/dotnet/home/blob/master/guidance/net-foundation-contribution-license-agreement.pdf)
 

@@ -36,7 +36,7 @@ HRESULT DefineLocalVariable2(
     [in] ULONG32      endOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The local variable name.  
   
@@ -70,6 +70,6 @@ HRESULT DefineLocalVariable2(
 ## Requirements  
  **Header:** CorSym.idl  
   
-## See Also  
- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)  
- [DefineLocalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-definelocalvariable-method.md)
+## See also
+- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)
+- [DefineLocalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-definelocalvariable-method.md)

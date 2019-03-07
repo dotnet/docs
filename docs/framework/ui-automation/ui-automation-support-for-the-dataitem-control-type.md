@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Data Item control type"
   - "control types, Data Item"
 ms.assetid: 181708fd-2595-4c43-9abd-75811627d64c
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the DataItem Control Type
 > [!NOTE]
@@ -102,7 +100,7 @@ ms.author: "mhopkins"
   
  If a grid represents a list of selectable items, the corresponding UI elements can be exposed with the ListItem control type instead of the DataItem control type. In the preceding example, the DataItem elements ("Accounts Receivable.doc" and "Accounts Payable.doc") under Group ("Contoso") can be improved by exposing them as ListItem control types because that type already supports the SelectionItem control pattern.  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.DataItem>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.DataItem>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

@@ -33,7 +33,7 @@ HRESULT GetActiveInternalFrames
       );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cInternalFrames`  
  [in] The number of internal frames expected in `ppInternalFrames`.  
   
@@ -72,6 +72,6 @@ HRESULT GetActiveInternalFrames
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

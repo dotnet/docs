@@ -1,11 +1,11 @@
 ---
-title: "&lt;netTcpBinding&gt;"
+title: "<netTcpBinding>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "netTcpBinding Element"
 ms.assetid: 5c5104a7-8754-4335-8233-46a45322503e
 ---
-# &lt;netTcpBinding&gt;
+# \<netTcpBinding>
 
 Specifies a secure, reliable, optimized binding suitable for cross-machine communication. By default, it generates a runtime communication stack with Windows Security for message security and authentication, TCP for message delivery, and binary message encoding.
 
@@ -17,37 +17,37 @@ Specifies a secure, reliable, optimized binding suitable for cross-machine commu
   
 ```xml  
 <netTcpBinding>
-  <binding closeTimeout="TimeSpan"  
+  <binding closeTimeout="TimeSpan"
            hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
-           listenBacklog="Integer"  
-           maxBufferPoolSize="integer"  
-           maxBufferSize="Integer"  
-           maxConnections="Integer"   
-           maxReceivedMessageSize="Integer"  
-           name="string"  
-           openTimeout="TimeSpan"  
-           portSharingEnabled="Boolean"  
-           receiveTimeout="TimeSpan"  
-           sendTimeout="TimeSpan"  
-           transactionFlow="Boolean"   
-           transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"   
+           listenBacklog="Integer"
+           maxBufferPoolSize="integer"
+           maxBufferSize="Integer"
+           maxConnections="Integer"
+           maxReceivedMessageSize="Integer"
+           name="string"
+           openTimeout="TimeSpan"
+           portSharingEnabled="Boolean"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           transactionFlow="Boolean"
+           transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"
            transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
-    <reliableSession ordered="Boolean"  
-                     inactivityTimeout="TimeSpan"  
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan"
                      enabled="Boolean" />
     <security mode="None/Transport/Message/Both">
-      <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
+      <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
                algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />
-      <transport clientCredentialType="None/Windows/Certificate"  
+      <transport clientCredentialType="None/Windows/Certificate"
                  protectionLevel="None/Sign/EncryptAndSign" />
     </security>
-    <readerQuotas maxArrayLength="Integer"     
-                  maxBytesPerRead="Integer"      
-                  maxDepth="Integer" 
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
                   maxNameTableCharCount="Integer"
                   maxStringContentLength="Integer" />
   </binding>
-</netTcpBinding> 
+</netTcpBinding>
 ```  
   
 ## Attributes and elements
@@ -79,8 +79,8 @@ The following sections describe attributes, child elements, and parent elements.
 |Element|Description|  
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>.|  
-|[\<readerQuotas>](https://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[reliableSession](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b)|Specifies if reliable sessions are established between channel endpoints.|  
+|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Specifies if reliable sessions are established between channel endpoints.|  
   
 ### Parent elements  
   
@@ -99,54 +99,52 @@ This binding generates a run-time communication stack by default, which uses tra
 The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the `<endpoint>` element. If you want to configure the netTcpBinding binding and change some of its settings, it is necessary to define a binding configuration. The endpoint must reference the binding configuration with a `bindingConfiguration` attribute. In the following example, a binding configuration is defined.  
   
 ```xml  
-<services>  
-  <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
-           behaviorConfiguration="CalculatorServiceBehavior">  
-    ...  
-    <endpoint address=""  
-              binding="netTcpBinding"  
-              contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-    ...  
-  </service>  
-</services>  
-  
-<bindings>  
-  <netTcpBinding>  
-    <binding   
-             closeTimeout="00:01:00"  
-             openTimeout="00:01:00"   
-             receiveTimeout="00:10:00"   
-             sendTimeout="00:01:00"  
-             transactionFlow="false"   
-             transferMode="Buffered"   
-             transactionProtocol="OleTransactions"  
-             hostNameComparisonMode="StrongWildcard"   
-             listenBacklog="10"  
-             maxBufferPoolSize="524288"   
-             maxBufferSize="65536"   
-             maxConnections="10"  
-             maxReceivedMessageSize="65536">  
-      <readerQuotas maxDepth="32"   
-                    maxStringContentLength="8192"   
-                    maxArrayLength="16384"  
-                    maxBytesPerRead="4096"   
-                    maxNameTableCharCount="16384" />  
-      <reliableSession ordered="true"   
-                       inactivityTimeout="00:10:00"  
-                       enabled="false" />  
-      <security mode="Transport">  
-        <transport clientCredentialType="Windows" protectionLevel="EncryptAndSign" />  
-      </security>  
-    </binding>  
-  </netTcpBinding>  
-</bindings>  
+<services>
+  <service name="Microsoft.ServiceModel.Samples.CalculatorService"
+           behaviorConfiguration="CalculatorServiceBehavior">
+    ...
+    <endpoint address=""
+              binding="netTcpBinding"
+              contract="Microsoft.ServiceModel.Samples.ICalculator" />
+    ...
+  </service>
+</services>
+<bindings>
+  <netTcpBinding>
+    <binding closeTimeout="00:01:00"
+             openTimeout="00:01:00"
+             receiveTimeout="00:10:00"
+             sendTimeout="00:01:00"
+             transactionFlow="false"
+             transferMode="Buffered"
+             transactionProtocol="OleTransactions"
+             hostNameComparisonMode="StrongWildcard"
+             listenBacklog="10"
+             maxBufferPoolSize="524288"
+             maxBufferSize="65536"
+             maxConnections="10"
+             maxReceivedMessageSize="65536">
+      <readerQuotas maxDepth="32"
+                    maxStringContentLength="8192"
+                    maxArrayLength="16384"
+                    maxBytesPerRead="4096"
+                    maxNameTableCharCount="16384" />
+      <reliableSession ordered="true"
+                       inactivityTimeout="00:10:00"
+                       enabled="false" />
+      <security mode="Transport">
+        <transport clientCredentialType="Windows" protectionLevel="EncryptAndSign" />
+      </security>
+    </binding>
+  </netTcpBinding>
+</bindings>
 ```  
   
-## See also  
+## See also
 
-- <xref:System.ServiceModel.NetTcpBinding>  
-- <xref:System.ServiceModel.Configuration.NetTcpBindingElement>  
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
+- <xref:System.ServiceModel.NetTcpBinding>
+- <xref:System.ServiceModel.Configuration.NetTcpBindingElement>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
 - [\<binding>](../../../../../docs/framework/misc/binding.md)

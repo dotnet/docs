@@ -16,7 +16,7 @@ HRESULT EnumerateContainedAssemblies(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssemblies`  
  [out] A pointer to the address of an ICorDebugAssemblyEnum interface object that is the enumerator.  
   
@@ -38,6 +38,6 @@ HRESULT EnumerateContainedAssemblies(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugAssembly3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugAssembly3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

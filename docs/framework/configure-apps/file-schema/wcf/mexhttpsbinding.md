@@ -1,9 +1,9 @@
 ---
-title: "&lt;mexHttpsBinding&gt;"
+title: "<mexHttpsBinding>"
 ms.date: "03/30/2017"
 ms.assetid: f2ed3774-78b9-4a15-b79b-655f1ad68b86
 ---
-# &lt;mexHttpsBinding&gt;
+# \<mexHttpsBinding>
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over HTTPS.  
   
  \<system.ServiceModel>  
@@ -13,15 +13,14 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 ## Syntax  
   
 ```xml  
-<mexHttpsBinding>  
-   <binding   
-       closeTimeout="TimeSpan"   
-       name="string"   
-       openTimeout="TimeSpan"   
-       receiveTimeout="TimeSpan"  
-       sendTimeout="TimeSpan">  
-   </binding>  
-</mexHttpsBinding>  
+<mexHttpsBinding>
+  <binding closeTimeout="TimeSpan"
+            name="string"
+            openTimeout="TimeSpan"
+            receiveTimeout="TimeSpan"
+            sendTimeout="TimeSpan">
+  </binding>
+</mexHttpsBinding>
 ```  
   
 ## Attributes and Elements  
@@ -49,16 +48,16 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 ## Remarks  
  This binding is essentially a `WSHttpBinding` binding that supports transport-level security using certificates. For more information about configuring and using such a metadata endpoint, see [How to: Configure a Custom WS-Metadata Exchange Binding](../../../../../docs/framework/wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md), [How to: Retrieve Metadata Over a non-MEX Binding](../../../../../docs/framework/wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md), and the sample [Custom Secure Metadata Endpoint](../../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md).  
   
-## See Also  
- <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpsBinding%2A>  
- <xref:System.ServiceModel.Configuration.MexHttpsBindingElement>  
- [How to: Publish Metadata for a Service Using a Configuration File](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)  
- [Publishing and Retrieving Metadata Over a Custom Binding](../../../../../docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)  
- [How to: Configure a Custom WS-Metadata Exchange Binding](../../../../../docs/framework/wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md)  
- [How to: Retrieve Metadata Over a non-MEX Binding](../../../../../docs/framework/wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md)  
- [Custom Secure Metadata Endpoint](../../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md)  
- [Metadata](../../../../../docs/framework/wcf/feature-details/metadata.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpsBinding%2A>
+- <xref:System.ServiceModel.Configuration.MexHttpsBindingElement>
+- [How to: Publish Metadata for a Service Using a Configuration File](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
+- [Publishing and Retrieving Metadata Over a Custom Binding](../../../../../docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)
+- [How to: Configure a Custom WS-Metadata Exchange Binding](../../../../../docs/framework/wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md)
+- [How to: Retrieve Metadata Over a non-MEX Binding](../../../../../docs/framework/wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md)
+- [Custom Secure Metadata Endpoint](../../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md)
+- [Metadata](../../../../../docs/framework/wcf/feature-details/metadata.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

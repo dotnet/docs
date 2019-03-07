@@ -90,8 +90,8 @@ ms.author: "ronpet"
 ||<xref:System.UInt16>|A 16-bit unsigned integer.<br /><br /> Not CLS-compliant.|**UShort**|**ushort**|**unsigned short**|**uint16**|  
 ||<xref:System.UInt32>|A 32-bit unsigned integer.<br /><br /> Not CLS-compliant.|**UInteger**|**uint**|**unsigned int**<br /> -or-<br /> **unsigned long**|**uint32**|  
 ||<xref:System.UInt64>|A 64-bit unsigned integer.<br /><br /> Not CLS-compliant.|**ULong**|**ulong**|**unsigned __int64**|**uint64**|  
-|Floating point|<xref:System.Single>|A single-precision (32-bit) floating-point number.|**Single**|**float**|**float**|**float32**</br> or</br>**single**|  
-||<xref:System.Double>|A double-precision (64-bit) floating-point number.|**Double**|**double**|**double**|**float**</br> or </br> **double**|  
+|Floating point|<xref:System.Single>|A single-precision (32-bit) floating-point number.|**Single**|**float**|**float**|**float32**<br> or<br>**single**|  
+||<xref:System.Double>|A double-precision (64-bit) floating-point number.|**Double**|**double**|**double**|**float**<br> or <br> **double**|  
 |Logical|<xref:System.Boolean>|A Boolean value (true or false).|**Boolean**|**bool**|**bool**|**bool**|  
 |Other|<xref:System.Char>|A Unicode (16-bit) character.|**Char**|**char**|**wchar_t**|**char**|  
 ||<xref:System.Decimal>|A decimal  (128-bit) value.|**Decimal**|**decimal**|**Decimal**|**decimal**|  
@@ -106,6 +106,6 @@ ms.author: "ronpet"
   
 ## See also
 
-- [Common Type System](../../docs/standard/base-types/common-type-system.md)  
-- [.NET API Browser](https://docs.microsoft.com/dotnet/api)  
+- [Common Type System](../../docs/standard/base-types/common-type-system.md)
+- [.NET API Browser](../../api/index.md)
 - [Overview](../../docs/framework/get-started/overview.md)

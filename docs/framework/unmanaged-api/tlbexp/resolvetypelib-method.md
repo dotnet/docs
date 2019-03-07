@@ -32,7 +32,7 @@ HRESULT ResolveTypeLib(
     [out] BSTR     *pbstrResolvedTlbName);  
 ```  
   
-#### Parameters  
+## Parameters  
  `bstrSimpleName`  
  [in] A [BSTR](https://docs.microsoft.com/previous-versions/windows/desktop/automat/bstr) that contains the simple name of the type library.  
   
@@ -68,6 +68,6 @@ HRESULT ResolveTypeLib(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
- [LoadTypeLibEx](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)
+## See also
+- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)
+- [LoadTypeLibEx](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

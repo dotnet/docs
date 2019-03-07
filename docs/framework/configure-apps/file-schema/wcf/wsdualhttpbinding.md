@@ -1,11 +1,11 @@
 ---
-title: "&lt;wsDualHttpBinding&gt;"
+title: "<wsDualHttpBinding>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "wsDualHttpBinding Element"
 ms.assetid: fd8ac4e2-5641-473b-9115-73f14ab1c065
 ---
-# &lt;wsDualHttpBinding&gt;
+# \<wsDualHttpBinding>
 Defines a secure, reliable and interoperable binding that is suitable for duplex service contracts or communication through SOAP intermediaries.  
   
  \<system.ServiceModel>  
@@ -15,32 +15,36 @@ Defines a secure, reliable and interoperable binding that is suitable for duplex
 ## Syntax  
   
 ```xml  
-<wsDualHttpBinding>  
-        <binding name="string"  
-        closeTimeout="TimeSpan"  
-        openTimeout="TimeSpan"   
-        receiveTimeout="TimeSpan"  
-        sendTimeout="TimeSpan"  
-        bypassProxyOnLocal="Boolean"  
-        clientBaseAddress="URI"  
-        transactionFlow="Boolean"   
-        hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-        maxBufferPoolSize="integer"  
-        maxReceivedMessageSize="Integer"  
-        messageEncoding="Text/Mtom"   
-        proxyAddress="URI"  
-  
-textEncoding="Unicode/BigEndianUnicode/UTF8"  
-        useDefaultWebProxy="Boolean">  
-        <reliableSession ordered="Boolean"  
-            inactivityTimeout="TimeSpan" />  
-        <security mode="None/Message">  
-           <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
-                negotiateServiceCredential="Boolean"  
-                    algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />  
-                </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />    </binding>  
-</wsDualHttpBinding>  
+<wsDualHttpBinding>
+  <binding name="String"
+          closeTimeout="TimeSpan"
+          openTimeout="TimeSpan"
+          receiveTimeout="TimeSpan"
+          sendTimeout="TimeSpan"
+          bypassProxyOnLocal="Boolean"
+          clientBaseAddress="URI"
+          transactionFlow="Boolean"
+          hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+          maxBufferPoolSize="integer"
+          maxReceivedMessageSize="Integer"
+          messageEncoding="Text/Mtom"
+          proxyAddress="URI"
+          textEncoding="Unicode/BigEndianUnicode/UTF8"
+          useDefaultWebProxy="Boolean">
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan" />
+    <security mode="None/Message">
+      <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
+               negotiateServiceCredential="Boolean"
+               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</wsDualHttpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -71,8 +75,8 @@ textEncoding="Unicode/BigEndianUnicode/UTF8"
 |Element|Description|  
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsdualhttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement>.|  
-|[\<readerQuotas>](https://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[reliableSession](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b)|Specifies if reliable sessions are established between channel endpoints.|  
+|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Specifies if reliable sessions are established between channel endpoints.|  
   
 ### Parent Elements  
   
@@ -90,42 +94,41 @@ textEncoding="Unicode/BigEndianUnicode/UTF8"
 ## Example  
   
 ```xml  
-<configuration>  
-<system.ServiceModel>  
-<bindings>  
-<wsDualHttpBinding>  
-    <binding   
-        closeTimeout="00:00:10"  
-        openTimeout="00:00:20"   
-        receiveTimeout="00:00:30"  
-        sendTimeout="00:00:40"  
-        bypassProxyOnLocal="false"   
-        clientBaseAddress="http://localhost:8001/client/"  
-        transactionFlow="true"   
-        hostNameComparisonMode="WeakWildcard"  
-        maxReceivedMessageSize="1000"  
-        messageEncoding="Mtom"   
-        proxyAddress="http://foo/bar"   
-        textEncoding="utf-16"  
-        useDefaultWebProxy="false">  
-        <reliableSession ordered="false"  
-            inactivityTimeout="00:02:00" />  
-        <security mode="None">  
-            <message clientCredentialType="None"  
-                negotiateServiceCredential="false"  
-                algorithmSuite="Aes128" />  
-        </security>  
-    </binding>  
-</wsDualHttpBinding>  
-</bindings>  
-</system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <wsDualHttpBinding>
+        <binding closeTimeout="00:00:10"
+                 openTimeout="00:00:20"
+                 receiveTimeout="00:00:30"
+                 sendTimeout="00:00:40"
+                 bypassProxyOnLocal="false"
+                 clientBaseAddress="http://localhost:8001/client/"
+                 transactionFlow="true"
+                 hostNameComparisonMode="WeakWildcard"
+                 maxReceivedMessageSize="1000"
+                 messageEncoding="Mtom"
+                 proxyAddress="http://foo/bar"
+                 textEncoding="utf-16"
+                 useDefaultWebProxy="false">
+          <reliableSession ordered="false"
+                           inactivityTimeout="00:02:00" />
+          <security mode="None">
+            <message clientCredentialType="None"
+                     negotiateServiceCredential="false"
+                     algorithmSuite="Aes128" />
+          </security>
+        </binding>
+      </wsDualHttpBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.WSDualHttpBinding>  
- <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.WSDualHttpBinding>
+- <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "ProgressBar control type"
   - "UI Automation, Progress Bar control type"
 ms.assetid: 302e778c-24b0-4789-814a-c8d37cf53a5f
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the ProgressBar Control Type
 > [!NOTE]
@@ -75,7 +73,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.ProgressBar>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.ProgressBar>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

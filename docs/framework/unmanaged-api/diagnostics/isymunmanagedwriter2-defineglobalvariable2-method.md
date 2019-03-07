@@ -34,7 +34,7 @@ HRESULT DefineGlobalVariable2(
     [in] ULONG32      addr3);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The global variable name.  
   
@@ -62,6 +62,6 @@ HRESULT DefineGlobalVariable2(
 ## Requirements  
  **Header:** CorSym.idl  
   
-## See Also  
- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)  
- [DefineGlobalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-defineglobalvariable-method.md)
+## See also
+- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)
+- [DefineGlobalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-defineglobalvariable-method.md)

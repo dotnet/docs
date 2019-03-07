@@ -60,7 +60,7 @@ Internet Information Services (IIS) 7.0 has a modular design that allows you to 
  </system.webServer>
  ```
 
-## See Also
+## See also
 
 - [WAS Activation Architecture](../../../../docs/framework/wcf/feature-details/was-activation-architecture.md)
 - [Configuring WAS for Use with WCF](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)

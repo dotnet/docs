@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;webHttpBinding&gt;"
+title: "<security> of <webHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83
 ---
-# &lt;security&gt; of &lt;webHttpBinding&gt;
+# \<security> of \<webHttpBinding>
 Specifies the security requirements for an endpoint configured with a [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
   
  \<system.ServiceModel>  
@@ -15,19 +15,19 @@ Specifies the security requirements for an endpoint configured with a [\<wsHttpB
 ## Syntax  
   
 ```xml  
-<system.ServiceModel>  
-    <bindings>  
-        <webHttpBinding>  
-            <binding name = "string">  
-              <security mode="None/Transport/TransportCredentialOnly">  
-                                    <transport clientCredentialType =   
-                                     "Basic/Certificate/Digest/None/Ntlm/Windows"  
-                                     proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                                     realm="string" />  
-              </security>  
-        </webHttpBinding>  
-    </bindings>  
-</system.ServiceModel>  
+<system.ServiceModel>
+  <bindings>
+    <webHttpBinding>
+      <binding name = "String">
+        <security mode="None/Transport/TransportCredentialOnly">
+          <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+                     proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+                     realm="String" />
+        </security>
+      </binding>
+    </webHttpBinding>
+  </bindings>
+</system.ServiceModel>
 ```  
   
 ## Attributes and Elements  
@@ -59,16 +59,16 @@ Specifies the security requirements for an endpoint configured with a [\<wsHttpB
 |-------------|-----------------|  
 |[\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md)|A binding element that is used to configure endpoints for Windows Communication Foundation (WCF) Web services that respond to HTTP requests instead of SOAP messages.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.WebHttpBindingElement>  
- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>  
- <xref:System.ServiceModel.WebHttpBinding.Security%2A>  
- <xref:System.ServiceModel.Configuration.WebHttpBindingElement.Security%2A>  
- <xref:System.ServiceModel.WebHttpSecurity>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [WCF Web HTTP Programming Model](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+## See also
+- <xref:System.ServiceModel.Configuration.WebHttpBindingElement>
+- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>
+- <xref:System.ServiceModel.WebHttpBinding.Security%2A>
+- <xref:System.ServiceModel.Configuration.WebHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.WebHttpSecurity>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [WCF Web HTTP Programming Model](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

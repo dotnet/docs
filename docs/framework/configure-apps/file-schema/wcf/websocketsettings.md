@@ -1,9 +1,9 @@
 ---
-title: "&lt;webSocketSettings&gt;"
+title: "<webSocketSettings>"
 ms.date: "03/30/2017"
 ms.assetid: bbf97e02-8dd1-4922-acac-3cd33397b249
 ---
-# &lt;webSocketSettings&gt;
+# \<webSocketSettings>
 A configuration element used to specify Web Socket settings.  
   
 \<system.ServiceModel>  
@@ -13,18 +13,18 @@ A configuration element used to specify Web Socket settings.
 ## Syntax  
   
 ```xml  
-<netHttpBinding>  
-  <binding>   
-    <webSocketSettings createNotificationOnConnection="boolean" 
-                       disablePayloadMasking="boolean" 
-                       keepAliveInterval="TimeSpan" 
-                       maxPendingConnections="Integer" 
-                       receiveBufferSize="Integer" 
-                       sendBufferSize="Integer" 
-                       subProtocol="String" 
-                       transportUsage="WhenDuplex/Always/Never"/>
-  </binding>  
-</netHttpBinding>  
+<netHttpBinding>
+  <binding>
+    <webSocketSettings createNotificationOnConnection="Boolean"
+                       disablePayloadMasking="Boolean"
+                       keepAliveInterval="TimeSpan"
+                       maxPendingConnections="Integer"
+                       receiveBufferSize="Integer"
+                       sendBufferSize="Integer"
+                       subProtocol="String"
+                       transportUsage="WhenDuplex/Always/Never" />
+  </binding>
+</netHttpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -64,27 +64,26 @@ A configuration element used to specify Web Socket settings.
  The following example shows how to use the \<webSocketSettings> element.  
   
 ```xml  
-<netHttpBinding>  
-        <binding>  
-          <webSocketSettings createNotificationOnConnection="true"  
-                              disablePayloadMasking="false  
-                              keepAliveInterval="00:10:00"  
-                              maxPendingConnections="100"  
-                              receiveBufferSize="1000"  
-                              sendBufferSize="1000"  
-                              subProtocol="Soap"  
-                              transportUsage="WhenDuplex/Always/Never"/>  
-  
-        </binding>  
-      </netHttpBinding>  
+<netHttpBinding>
+  <binding>
+    <webSocketSettings createNotificationOnConnection="true"
+                       disablePayloadMasking="false"
+                       keepAliveInterval="00:10:00"
+                       maxPendingConnections="100"
+                       receiveBufferSize="1000"
+                       sendBufferSize="1000"
+                       subProtocol="Soap"
+                       transportUsage="WhenDuplex/Always/Never" />
+  </binding>
+</netHttpBinding>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Channels.Binding>  
- <xref:System.ServiceModel.Channels.BindingElement>  
- <xref:System.ServiceModel.BasicHttpBinding>  
- <xref:System.ServiceModel.Configuration.BasicHttpBindingElement>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.Channels.Binding>
+- <xref:System.ServiceModel.Channels.BindingElement>
+- <xref:System.ServiceModel.BasicHttpBinding>
+- <xref:System.ServiceModel.Configuration.BasicHttpBindingElement>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

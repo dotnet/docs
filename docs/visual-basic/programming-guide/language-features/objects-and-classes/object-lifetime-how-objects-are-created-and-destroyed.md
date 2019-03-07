@@ -36,11 +36,11 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
   
  To create a constructor for a class, create a procedure named `Sub New` anywhere in the class definition. To create a parameterized constructor, specify the names and data types of arguments to `Sub New` just as you would specify arguments for any other procedure, as in the following code:  
   
- [!code-vb[VbVbalrOOP#42](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_1.vb)]  
+ [!code-vb[VbVbalrOOP#42](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/WhidbeyStuff.vb#42)]  
   
  Constructors are frequently overloaded, as in the following code:  
   
- [!code-vb[VbVbalrOOP#116](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_2.vb)]  
+ [!code-vb[VbVbalrOOP#116](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/WhidbeyStuff.vb#116)]  
   
  When you define a class derived from another class, the first line of a constructor must be a call to the constructor of the base class, unless the base class has an accessible constructor that takes no parameters. A call to the base class that contains the above constructor, for example, would be `MyBase.New(s)`. Otherwise, `MyBase.New` is optional, and the Visual Basic runtime calls it implicitly.  
   
@@ -140,9 +140,9 @@ End Sub
   
  Another difference between the garbage-collection systems involves the use of `Nothing`. To take advantage of reference counting in Visual Basic 6.0 and earlier versions, programmers sometimes assigned `Nothing` to object variables to release the references those variables held. If the variable held the last reference to the object, the object's resources were released immediately. In later versions of Visual Basic, while there may be cases in which this procedure is still valuable, performing it never causes the referenced object to release its resources immediately. To release resources immediately, use the object's <xref:System.IDisposable.Dispose%2A> method, if available. The only time you should set a variable to `Nothing` is when its lifetime is long relative to the time the garbage collector takes to detect orphaned objects.  
   
-## See Also  
- <xref:System.IDisposable.Dispose%2A>  
- [Initialization and Termination of Components](https://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)  
- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
- [Cleaning Up Unmanaged Resources](../../../../standard/garbage-collection/unmanaged.md)  
- [Nothing](../../../../visual-basic/language-reference/nothing.md)
+## See also
+- <xref:System.IDisposable.Dispose%2A>
+- [Initialization and Termination of Components](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ws9dc6t6(v=vs.120))
+- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)
+- [Cleaning Up Unmanaged Resources](../../../../standard/garbage-collection/unmanaged.md)
+- [Nothing](../../../../visual-basic/language-reference/nothing.md)

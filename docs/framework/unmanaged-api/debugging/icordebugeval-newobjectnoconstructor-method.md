@@ -31,7 +31,7 @@ HRESULT NewObjectNoConstructor (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pClass`  
  [in] Pointer to an ICorDebugClass object that represents the type of object to be instantiated.  
   
@@ -44,5 +44,5 @@ HRESULT NewObjectNoConstructor (
   
  **.NET Framework Versions:** 1.1, 1.0  
   
-## See Also  
- [NewParameterizedObjectNoConstructor Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobjectnoconstructor-method.md)
+## See also
+- [NewParameterizedObjectNoConstructor Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobjectnoconstructor-method.md)

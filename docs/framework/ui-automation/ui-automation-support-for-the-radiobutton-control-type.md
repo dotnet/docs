@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Radio Button control type"
   - "RadioButton control type"
 ms.assetid: 87170464-7857-41f1-bcf7-bb41be31cb53
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the RadioButton Control Type
 > [!NOTE]
@@ -71,7 +69,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.RadioButton>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.RadioButton>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

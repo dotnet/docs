@@ -31,7 +31,7 @@ HRESULT CLRCreateInstance(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `clsid`  
  [in] One of three class identifiers: CLSID_CLRMetaHost, CLSID_CLRMetaHostPolicy, or CLSID_CLRDebugging.  
   
@@ -85,5 +85,5 @@ hr = CLRCreateInstance (CLSID_CLRDebugging, IID_ICLRDebugging,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

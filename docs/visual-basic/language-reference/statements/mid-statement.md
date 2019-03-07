@@ -54,7 +54,7 @@ Mid( _
 ## Example  
  This example uses the `Mid` statement to replace a specified number of characters in a string variable with characters from another string.  
   
- [!code-vb[VbVbalrStrings#5](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/mid-statement_1.vb)]  
+ [!code-vb[VbVbalrStrings#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#5)]  
   
 ## Requirements  
  **Namespace:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  
@@ -63,7 +63,7 @@ Mid( _
   
  **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Strings.Mid%2A>  
- [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)  
- [Introduction to Strings in Visual Basic](../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+## See also
+- <xref:Microsoft.VisualBasic.Strings.Mid%2A>
+- [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)
+- [Introduction to Strings in Visual Basic](../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

@@ -30,7 +30,7 @@ HRESULT ObjectsAllocatedByClass(
     [in, size_is(cClassCount)] ULONG   cObjects[] );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cClassCount`  
  [in] The size of the `classIds` and `cObjects` arrays.  
   
@@ -56,5 +56,5 @@ HRESULT ObjectsAllocatedByClass(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

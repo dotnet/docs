@@ -32,13 +32,13 @@ Take While expression
 ## Example  
  The following code example uses the `Take While` clause to retrieve results until the first customer without any orders is found.  
   
- [!code-vb[VbSimpleQuerySamples#2](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-while-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#2)]  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Take Clause](../../../visual-basic/language-reference/queries/take-clause.md)  
- [Skip While Clause](../../../visual-basic/language-reference/queries/skip-while-clause.md)  
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
+## See also
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Take Clause](../../../visual-basic/language-reference/queries/take-clause.md)
+- [Skip While Clause](../../../visual-basic/language-reference/queries/skip-while-clause.md)
+- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)

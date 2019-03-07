@@ -25,7 +25,7 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
 );  
 ```  
   
-### Parameters  
+## Parameters  
  `pModulusBlob`  
  [in] The base64-encoded Modulus blob (from the \<Modulus> element).  See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
   
@@ -38,5 +38,5 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
 ## Return Value  
  `S_OK` if the function succeeds. Otherwise, returns an error code.  
   
-## See Also  
- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+## See also
+- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Title Bar control type"
   - "UI Automation, Title Bar control type"
 ms.assetid: 3b7a4e13-0305-45d5-bc33-1f4133c50782
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the TitleBar Control Type
 > [!NOTE]
@@ -63,7 +61,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Never|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.TitleBar>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.TitleBar>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

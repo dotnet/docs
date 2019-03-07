@@ -30,7 +30,7 @@ HRESULT NewStringWithLength (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `string`  
  [in] A pointer to the string value.  
   

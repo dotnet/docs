@@ -32,7 +32,7 @@ HRESULT GetLocalRegisterValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `reg`  
  [in] A value of the "CorDebugRegister" enumeration that specifies the register containing the value.  
   
@@ -57,5 +57,5 @@ HRESULT GetLocalRegisterValue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

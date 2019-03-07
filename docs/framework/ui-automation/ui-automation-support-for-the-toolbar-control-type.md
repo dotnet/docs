@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Toolbar control type"
   - "ToolBar control type"
 ms.assetid: 85152efd-f4c5-430c-8878-3371cc598616
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the ToolBar Control Type
 > [!NOTE]
@@ -67,7 +65,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.ToolBar>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.ToolBar>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

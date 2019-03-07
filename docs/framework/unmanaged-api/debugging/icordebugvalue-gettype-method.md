@@ -29,7 +29,7 @@ HRESULT GetType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pType`  
  [out] A pointer to a value of the "CorElementType" enumeration that indicates the value's type.  
   
@@ -47,5 +47,5 @@ HRESULT GetType (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

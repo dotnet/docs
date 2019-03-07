@@ -30,7 +30,7 @@ HRESULT GetCheckSum(
     [out, size_is(cData), length_is(*pcData)] BYTE data[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cData`  
  [in] The length of the buffer provided by the `data` parameter  
   
@@ -43,5 +43,5 @@ HRESULT GetCheckSum(
 ## Return Value  
  S_OK if the method succeeds; otherwise, an error code.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

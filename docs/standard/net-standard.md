@@ -3,7 +3,7 @@ title: .NET Standard
 description: Learn about .NET Standard, its versions and the .NET implementations that support it.
 author: mairaw
 ms.author: mairaw
-ms.date: 07/19/2018
+ms.date: 02/25/2019
 ms.technology: dotnet-standard
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
@@ -59,9 +59,9 @@ The .NET Standard specification is a standardized set of APIs. The specification
 
 ### Official artifacts
 
-The official specification is a set of .cs files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/standard/tree/master/netstandard/ref) in the [dotnet/standard repository](https://github.com/dotnet/standard) defines the .NET Standard APIs.
+The official specification is a set of .cs files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/standard/tree/master/src/netstandard/ref) in the [dotnet/standard repository](https://github.com/dotnet/standard) defines the .NET Standard APIs.
 
-The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/master/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard versions.
+The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/master/src/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard versions.
 
 A given component, like `System.Runtime`, describes:
 

@@ -68,7 +68,7 @@ interface ITestService
 <s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"   
             xmlns:s="http://www.w3.org/2003/05/soap-envelope">  
   <s:Header>  
-<!—Original message action is replaced with a chunking-specific action. -->  
+<!--Original message action is replaced with a chunking-specific action. -->  
     <a:Action s:mustUnderstand="1">http://samples.microsoft.com/chunkingAction</a:Action>  
 <!--  
 Original message is assigned a unique id that is transmitted   
@@ -265,7 +265,7 @@ interface ITestService
  `OnOpen` calls `innerChannel.Open` to open the inner channel.  
   
 ### OnClose  
- `OnClose` first sets `stopReceive` to `true` to signal the pending `ReceiveChunkLoop` to stop. It then waits for the `receiveStopped``ManualResetEvent`, which is set when `ReceiveChunkLoop` stops. Assuming the `ReceiveChunkLoop` stops within the specified timeout, `OnClose` calls `innerChannel.Close` with the remaining timeout.  
+ `OnClose` first sets `stopReceive` to `true` to signal the pending `ReceiveChunkLoop` to stop. It then waits for the `receiveStopped` <xref:System.Threading.ManualResetEvent>, which is set when `ReceiveChunkLoop` stops. Assuming the `ReceiveChunkLoop` stops within the specified timeout, `OnClose` calls `innerChannel.Close` with the remaining timeout.  
   
 ### OnAbort  
  `OnAbort` calls `innerChannel.Abort` to abort the inner channel. If there is a pending `ReceiveChunkLoop` it gets an exception from the pending `innerChannel.Receive` call.  
@@ -372,4 +372,4 @@ Service started, press enter to exit
  > Sent chunk 10 of message 5b226ad5-c088-4988-b737-6a565e0563dd  
 ```  
   
-## See Also
+## See also

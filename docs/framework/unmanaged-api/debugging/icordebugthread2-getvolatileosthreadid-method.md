@@ -29,7 +29,7 @@ HRESULT GetVolatileOSThreadID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwTid`  
  [out] The operating system thread identifier for this thread.  
   

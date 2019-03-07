@@ -42,21 +42,21 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
 ## Example  
  The following example defines and calls the function `calcSum`. The `ParamArray` modifier for the parameter `args` enables the function to accept a variable number of arguments.  
   
- [!code-vb[VbVbalrStatements#26](../../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/parameter-arrays_1.vb)]  
+ [!code-vb[VbVbalrStatements#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#26)]  
   
  The following example defines a procedure with a parameter array, and outputs the values of all the array elements passed to the parameter array.  
   
- [!code-vb[VbVbcnProcedures#48](./codesnippet/VisualBasic/parameter-arrays_2.vb)]  
+ [!code-vb[VbVbcnProcedures#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#48)]  
   
- [!code-vb[VbVbcnProcedures#49](./codesnippet/VisualBasic/parameter-arrays_3.vb)]  
+ [!code-vb[VbVbcnProcedures#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#49)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Information.UBound%2A>  
- [Procedures](./index.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
- [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)  
- [Optional Parameters](./optional-parameters.md)  
- [Procedure Overloading](./procedure-overloading.md)  
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)
+## See also
+- <xref:Microsoft.VisualBasic.Information.UBound%2A>
+- [Procedures](./index.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)
+- [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)
+- [Optional Parameters](./optional-parameters.md)
+- [Procedure Overloading](./procedure-overloading.md)
+- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)

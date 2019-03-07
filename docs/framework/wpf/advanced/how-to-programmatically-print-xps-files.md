@@ -37,8 +37,8 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
   
  The meat of the example is in the `static`**BatchXPSPrinter.PrintXPS** method. After creating a print server and queue, the method prompts the user for a directory containing [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files. After validating the existence of the directory and the presence of \*.xps files in it, the method adds each such file to the print queue. The example assumes that the printer is non-XPSDrv, so we are passing `false` to the last parameter of <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method. For this reason, the method will validate the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] markup in the file before it attempts to convert it to the printer's page description language. If the validation fails, an exception is thrown. The example code will catch the exception, notify the user about it, and then go on to process the next [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] file.  
   
- [!code-csharp[BatchPrintXPSFiles#BatchPrintXPSFiles](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BatchPrintXPSFiles/CSharp/Program.cs#batchprintxpsfiles)]
- [!code-vb[BatchPrintXPSFiles#BatchPrintXPSFiles](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BatchPrintXPSFiles/visualbasic/program.vb#batchprintxpsfiles)]  
+ [!code-csharp[BatchPrintXPSFiles#BatchPrintXPSFiles](~/samples/snippets/csharp/VS_Snippets_Wpf/BatchPrintXPSFiles/CSharp/Program.cs#batchprintxpsfiles)]
+ [!code-vb[BatchPrintXPSFiles#BatchPrintXPSFiles](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BatchPrintXPSFiles/visualbasic/program.vb#batchprintxpsfiles)]  
   
  If you are using an XPSDrv printer, then you can set the final parameter to `true`. In that case, since [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] is the printer's page description language, the method will send the file to the printer without validating it or converting it to another page description language. If you are uncertain at design time whether the application will be using an XPSDrv printer, you can modify the application to have it read the <xref:System.Printing.PrintQueue.IsXpsDevice%2A> property and branch according to what it finds.  
   
@@ -52,14 +52,14 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
   
  **Note** For simplicity, the example above uses the presence of an \*.xps extension as its test that a file is [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]. However, [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100)) is one way of testing a file for [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] validity.  
   
-## See Also  
- <xref:System.Printing.PrintQueue>  
- <xref:System.Printing.PrintQueue.AddJob%2A>  
- <xref:System.Threading.ApartmentState>  
- <xref:System.STAThreadAttribute>  
- [XPS](https://www.microsoft.com/xps)  
- [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90))  
- [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))  
- [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))  
- [Documents in WPF](documents-in-wpf.md)  
- [Printing Overview](printing-overview.md)
+## See also
+- <xref:System.Printing.PrintQueue>
+- <xref:System.Printing.PrintQueue.AddJob%2A>
+- <xref:System.Threading.ApartmentState>
+- <xref:System.STAThreadAttribute>
+- [XPS Documents](/windows/desktop/printdocs/documents)
+- [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90))
+- [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))
+- [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)

@@ -33,7 +33,7 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
  When hosting with IIS, you do not manage the <xref:System.ServiceModel.ServiceHost> instance yourself. The base address is always the address specified in the .svc file for the service when hosting in IIS. So you must use relative endpoint addresses for IIS-hosted service endpoints. Supplying a fully-qualified endpoint address can lead to errors in the deployment of the service. For more information, see [Deploying an Internet Information Services-Hosted WCF Service](../../../docs/framework/wcf/feature-details/deploying-an-internet-information-services-hosted-wcf-service.md).  
   
 ## Defining Endpoint Addresses in Configuration  
- To define an endpoint in a configuration file, use the [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
+ To define an endpoint in a configuration file, use the [\<endpoint>](../configure-apps/file-schema/wcf/endpoint-element.md) element.  
   
  [!code-xml[S_UEHelloWorld#5](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp2.config#5)]  
   
@@ -76,8 +76,8 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
   
  If endpoints are explicitly provided, the default endpoints can still be added by calling <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A> on the <xref:System.ServiceModel.ServiceHost> before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
-## See Also  
- <xref:System.ServiceModel.EndpointAddress>  
- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [Hosting](../../../docs/framework/wcf/feature-details/hosting.md)
+## See also
+- <xref:System.ServiceModel.EndpointAddress>
+- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [Hosting](../../../docs/framework/wcf/feature-details/hosting.md)

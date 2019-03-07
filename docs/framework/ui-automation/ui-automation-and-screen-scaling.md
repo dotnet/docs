@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "UI (user interface), automation"
   - "UI Automation"
 ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation and Screen Scaling
 > [!NOTE]

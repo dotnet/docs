@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "UI Automation, creating client-side provider"
   - "client-side UI Automation provider, creating"
 ms.assetid: d91edaf2-be28-41ec-a508-af421cb43c3d
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Create a Client-Side UI Automation Provider
 > [!NOTE]

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Menu control type"
   - "Menu control type"
 ms.assetid: 016323cb-f800-4938-b77b-2eb25d646090
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Menu Control Type
 > [!NOTE]

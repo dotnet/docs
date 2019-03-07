@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "elements, navigating among"
   - "UI Automation, navigating among elements"
 ms.assetid: afcd21dc-2ffa-48c9-9332-51269f44b7e9
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Navigate Among UI Automation Elements with TreeWalker
 > [!NOTE]

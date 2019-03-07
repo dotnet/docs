@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "TextPattern class"
   - "classes, TextPattern"
 ms.assetid: 41787927-df1f-4f4a-aba3-641662854fc4
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 
 # UI Automation TextPattern Overview

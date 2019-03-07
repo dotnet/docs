@@ -21,7 +21,7 @@ The following examples explore the creation of an ASP.NET Core 2.1 application t
 
 ## Creating the ASP.NET Core 2.1 Project using Visual Studio 2017
 
-ASP.NET Core is a general-purpose development platform maintained by Microsoft and the .NET community on GitHub. It is cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
+ASP.NET Core is a general-purpose development platform maintained by Microsoft and the .NET community on GitHub. It's cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
 
 This example uses a simple project that's based on a Visual Studio Web API template, so you don't need any additional knowledge to create the sample. You only have to create the project using a standard template that includes all the elements to run a small project with a REST API, using ASP.NET Core 2.1 technology.
 

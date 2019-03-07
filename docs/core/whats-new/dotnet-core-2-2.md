@@ -77,7 +77,7 @@ In .NET Core 2.1, the JIT compiler implemented a new compiler technology, *tiere
 
 - A **second tier**, which generates optimized code for those methods that are executed frequently. The second tier of compilation is performed in parallel for enhanced performance.
 
-For information on the performance improvement that can result from tiered compilation, see [Announcing .NET Core 2.2 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2018/09/12/announcing-net-core-2-2-preview-2/).
+For information on the performance improvement that can result from tiered compilation, see [Announcing .NET Core 2.2 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2-preview-2/).
 
 In .NET Core 2.2 Preview 2, tiered compilation was enabled by default. However, we've decided that we are still not ready to enable tiered compilation by default. So in .NET Core 2.2, tiered compilation continues to be an opt-in feature. For information on opting in to tiered compilation, see [Jit compiler improvements](dotnet-core-2-1.md#jit-compiler-improvements) in [What's new in .NET Core 2.1](dotnet-core-2-1.md).
 

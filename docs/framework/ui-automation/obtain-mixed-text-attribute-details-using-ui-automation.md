@@ -5,8 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d0e4c005-abd1-42bb-92a4-5faf87097311
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Obtain Mixed Text Attribute Details Using UI Automation
 > [!NOTE]

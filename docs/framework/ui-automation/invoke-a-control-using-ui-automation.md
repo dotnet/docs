@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "UI Automation, invoking controls"
   - "controls, invoking"
 ms.assetid: 5ee2de3f-256c-43ec-b64c-62ace91f9983
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Invoke a Control Using UI Automation
 > [!NOTE]

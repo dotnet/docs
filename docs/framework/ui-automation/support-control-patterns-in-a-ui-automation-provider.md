@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "control patterns, supporting in UI Automation provider"
   - "UI Automation, supporting control patterns in provider"
 ms.assetid: 0d635c35-ffa8-4dc8-bbc9-12fcd5445776
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Support Control Patterns in a UI Automation Provider
 > [!NOTE]

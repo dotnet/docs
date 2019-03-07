@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "MultipleView control pattern"
   - "control patterns, MultipleView"
 ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation MultipleView Control Pattern
 > [!NOTE]

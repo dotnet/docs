@@ -52,11 +52,11 @@ There are several ways to approach recommendation problems, such as recommending
 
 1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "MovieRecommender" and then select the **OK** button.
 
-1. Create a directory named *Data* in your project to store the data set:
+2. Create a directory named *Data* in your project to store the data set:
 
     In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and hit Enter.
 
-1. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
+3. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
 
     In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender**.
 
@@ -64,9 +64,7 @@ There are several ways to approach recommendation problems, such as recommending
   > This tutorial uses **Microsoft.ML v0.11.0** and **Microsoft.ML.Recommender v0.11.0**.
     
     
-1. Add the following `using` statements at the top of your *Program.cs* file:
-
-<!-- [!code-csharp[UsingStatements](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#UsingStatements "Add necessary usings")] --> 
+4. Add the following `using` statements at the top of your *Program.cs* file:
 
     ```csharp
     using System;
@@ -76,6 +74,8 @@ There are several ways to approach recommendation problems, such as recommending
     using Microsoft.ML.Data;
     using Microsoft.Data.DataView;
     ```
+    
+<!-- [!code-csharp[UsingStatements](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#UsingStatements "Add necessary usings")]--> 
 
 ### Download your data
 
@@ -194,11 +194,11 @@ Build an `Estimator` with the following steps:
 
 1. After your `LoadData()` method, add the following code in `Main()`: 
 
-<!--[!code-csharp[BuildTrainModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method in Main")]-->
-
     ```csharp
     ITransformer model = BuildAndTrainModel(mlContext, trainingDataView);
     ```
+    
+<!--[!code-csharp[BuildTrainModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method in Main")]-->
 
 2. Create and start defining the method `BuildandTrainModel()` outside of `Main()` by defining the data transformations:
 

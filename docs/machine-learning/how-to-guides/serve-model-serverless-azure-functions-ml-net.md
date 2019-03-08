@@ -8,6 +8,8 @@ ms.custom: mvc,how-to
 
 # How-To: Use ML.NET Model in Azure Functions
 
+This how-to shows how individual predictions can be made using a pre-built ML.NET machine learning model through the internet in a serverless environment such as Azure Functions.
+
 ## Prerequisites
 
 - [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload and "Azure development" installed. 

@@ -455,7 +455,7 @@ To achieve this, the .NET team is providing three basic variants in [microsoft/d
 2. **runtime**: for the production scenario and
 3. **runtime-deps**: for the production scenario of [self-contained applications](../../../core/deploying/index.md#self-contained-deployments-scd).
 
-Runtime images also provides automatic setting of aspnetcore\_urls to port 80 and the pre-ngen'd cache of assemblies; to help in getting faster startup.
+For faster startup, runtime images also automatically set aspnetcore\_urls to port 80 and use Ngen to create a native image cache of assemblies.
 
 #### Additional resources
 

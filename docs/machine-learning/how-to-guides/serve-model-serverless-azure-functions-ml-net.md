@@ -62,7 +62,7 @@ using Microsoft.ML.Data;
 
 ### Create Data Models
 
-Create classes to define machine learning input and outputs. Add the following code to the *AnalyzeSentiment.cs* file under the *AnalyzeSentiment* class definition. 
+Create classes to define machine learning model's input and outputs. Add the following code to the *AnalyzeSentiment.cs* file under the *AnalyzeSentiment* class definition. 
 
 ```csharp
 public class SentimentData

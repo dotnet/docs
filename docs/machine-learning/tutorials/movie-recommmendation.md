@@ -114,11 +114,11 @@ Add a new class to your project:
 
 2. In the **Add New Item dialog box**, select **Class** and change the **Name** field to *MovieRatingData.cs*. Then, select the **Add** button.
 
-3. The *MovieRatingData.cs* file opens in the code editor. Add the following `using` statement to the top of MovieRatingData.cs:
+The *MovieRatingData.cs* file opens in the code editor. Add the following `using` statement to the top of *MovieRatingData.cs*:
 
-    ```csharp
-    using Microsoft.ML.Data;
-    ```
+```csharp
+using Microsoft.ML.Data;
+```
 
 Remove the existing class definition and add the following code:
 

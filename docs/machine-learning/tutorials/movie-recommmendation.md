@@ -174,7 +174,7 @@ public static (IDataView training, IDataView test) LoadData(MLContext mlContext)
 
 Data in ML.NET is represented as an <xref:Microsoft.Data.DataView.IDataView>. `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (e.g. SQL database or log files) to an `IDataView` object.
 
-You use `ReadFromTextFile()` to define the data schema. In this case, you provide the path for your files (`Test` and `Train`) and indicate both the text file header (so it can use the column names properly) and the comma character data separator (the default separator is a tab).
+You use `LoadFromTextFile()` to define the data schema. In this case, you provide the path for your files (`Test` and `Train`) and indicate both the text file header (so it can use the column names properly) and the comma character data separator (the default separator is a tab).
 
 ## Build and train your model
 

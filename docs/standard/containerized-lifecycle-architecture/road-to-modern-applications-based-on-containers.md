@@ -7,7 +7,7 @@ ms.date: 11/23/2018
 ---
 # Road to modern applications based on containers
 
-You're probably reading this book because you're planning the development of new applications and/or you're assessing the impact of using Docker, Containers, and new approaches like Microservices in your company.
+You're probably reading this book because you're planning the development of new applications or you're assessing the impact of using Docker, Containers, and new approaches like Microservices in your company.
 
 The adoption of new development paradigms must be taken with caution before starting a project, to assess the impact on your dev teams, your budget, or your infrastructure.
 

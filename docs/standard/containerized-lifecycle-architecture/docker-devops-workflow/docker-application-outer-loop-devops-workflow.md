@@ -199,7 +199,7 @@ Figure 5-11 demonstrates how you can edit the Docker Deploy task and specify the
 
 ## Step 5: Run and manage
 
-Because running and managing applications at enterprise-production level is a major subject in and of itself, and due to the type of operations and people working at that level (IT operations) as well as the large scope of this area, we've devoted the entire next chapter to explaining it.
+Because running and managing applications at enterprise-production level is a major subject in and of itself, and due to the type of operations and people working at that level (IT operations) as well as the large scope of this area, the entire next chapter is devoted to explaining it.
 
 ## Step 6: Monitor and diagnose
 

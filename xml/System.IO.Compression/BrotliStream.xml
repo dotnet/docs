@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods and properties used to compress and decompress streams by using the Brotli data format specification.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +34,9 @@
         <Parameter Name="compressionLevel" Type="System.IO.Compression.CompressionLevel" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="compressionLevel">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream to compress.</param>
+        <param name="compressionLevel">One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing the stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.BrotliStream" /> class by using the specified stream and compression level.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +56,9 @@
         <Parameter Name="mode" Type="System.IO.Compression.CompressionMode" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream to compress.</param>
+        <param name="mode">One of the enumeration values that indicates whether to compress or decompress the stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.BrotliStream" /> class by using the specified stream and compression mode.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,10 +79,10 @@
         <Parameter Name="leaveOpen" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="compressionLevel">To be added.</param>
-        <param name="leaveOpen">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream to compress.</param>
+        <param name="compressionLevel">One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing the stream.</param>
+        <param name="leaveOpen"><see langword="true" /> to leave the stream open after disposing the <see cref="T:System.IO.Compression.BrotliStream" /> object; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.BrotliStream" /> class by using the specified stream and compression level, and optionally leaves the stream open.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,10 +103,10 @@
         <Parameter Name="leaveOpen" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="mode">To be added.</param>
+        <param name="stream">The stream to compress.</param>
+        <param name="mode">One of the enumeration values that indicates whether to compress or decompress the stream.</param>
         <param name="leaveOpen">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.BrotliStream" /> class by using the specified stream and compression mode, and optionally leaves the stream open.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,9 +126,10 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the underlying stream.</summary>
+        <value>A stream object that represents the underlying stream.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The underlying stream is closed.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginRead">
@@ -153,14 +154,19 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="asyncCallback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buffer">The buffer from which data will be read.</param>
+        <param name="offset">The byte offset in <paramref name="array" /> at which to begin reading data from the stream.</param>
+        <param name="count">To maximum number of bytes to read.</param>
+        <param name="asyncCallback">An optional asynchronous callback, to be called when the read operation is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous read request from other requests.</param>
+        <summary>Begins an asynchronous read operation. (Consider using the <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
+        <returns>An object that represents the asynchronous read operation, which could still be pending.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IO.IOException">The method tried to read asynchronously past the end of the stream, or a disk error occurred.</exception>
+        <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <exception cref="T:System.NotSupportedException">The current <see cref="T:System.IO.Compression.BrotliStream" /> implementation does not support the read operation.</exception>
+        <exception cref="T:System.InvalidOperationException">This call cannot be completed.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginWrite">
@@ -185,14 +191,19 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="asyncCallback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buffer">The buffer from which data will be written.</param>
+        <param name="offset">The byte offset in <paramref name="array" /> at which to begin writing data from the stream.</param>
+        <param name="count">The maximum number of bytes to write.</param>
+        <param name="asyncCallback">An optional asynchronous callback, to be called when the write operation is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous write request from other requests.</param>
+        <summary>Begins an asynchronous write operation. (Consider using the <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
+        <returns>An object that represents the asynchronous write operation, which could still be pending.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IO.IOException">The method tried to write asynchronously past the end of the stream, or a disk error occurred.</exception>
+        <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
+        <exception cref="T:System.NotSupportedException">The current <see cref="T:System.IO.Compression.BrotliStream" /> implementation does not support the write operation.</exception>
+        <exception cref="T:System.InvalidOperationException">The write operation cannot be performed because the stream is closed.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -211,8 +222,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the stream supports reading while decompressing a file.</summary>
+        <value><see langword="true" /> if the <see cref="T:System.IO.Compression.CompressionMode" /> value is <see langword="Decompress," /> and the underlying stream supports reading and is not closed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +243,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the stream supports seeking.</summary>
+        <value><see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,8 +264,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the stream supports writing.</summary>
+        <value><see langword="true" /> if the <see cref="T:System.IO.Compression.CompressionMode" /> value is <see langword="Compress" />, and the underlying stream supports writing and is not closed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,8 +288,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing"><see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.Compression.BrotliStream" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,10 +334,13 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">The reference to the pending asynchronous request to finish.</param>
+        <summary>Waits for the pending asynchronous read to complete. (Consider using the <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
+        <returns>The number of bytes read from the stream, between 0 (zero) and the number of bytes you requested. <see cref="T:System.IO.Compression.BrotliStream" /> returns 0 only at the end of the stream; otherwise, it blocks until at least one byte is available.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="asyncResult" /> did not originate from a <see cref="M:System.IO.Compression.BrotliStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> method on the current stream.</exception>
+        <exception cref="T:System.InvalidOperationException">The end operation cannot be performed because the stream is closed.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndWrite">
@@ -348,9 +362,10 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="asyncResult">The object that represents the asynchronous call.</param>
+        <summary>Handles the end of an asynchronous write operation. (Consider using the <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying stream is closed or <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -370,7 +385,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current implementation of this method has no functionality.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,9 +429,10 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not supported and always throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <value>A long value.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">This property is not supported on this stream.</exception>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -435,9 +451,10 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not supported and always throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <value>A long value.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">This property is not supported on this stream.</exception>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -486,12 +503,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buffer">The array used to store decompressed bytes.</param>
+        <param name="offset">The byte offset in <paramref name="buffer" /> at which the read bytes will be placed.</param>
+        <param name="count">The maximum number of decompressed bytes to read.</param>
+        <summary>Reads a number of decompressed bytes into the specified byte array.</summary>
+        <returns>The number of bytes that were decompressed into the byte array. If the end of the stream has been reached, zero or the number of bytes read is returned.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.IO.Compression.CompressionMode" /> value was <see langword="Compress" /> when the object was created, or there is already an active asynchronous operation on this stream.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="offset" /> or <paramref name="count" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="buffer" /> length minus the index starting point is less than <paramref name="count" />.</exception>
+        <exception cref="T:System.IO.InvalidDataException">The data is in an invalid format.</exception>
+        <exception cref="T:System.ObjectDisposedException">The underlying stream is null or closed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -569,11 +592,12 @@
         <Parameter Name="origin" Type="System.IO.SeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="offset">The location in the stream.</param>
+        <param name="origin">One of the <see cref="T:System.IO.SeekOrigin" /> values.</param>
+        <summary>This property is not supported and always throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <returns>A long value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">This property is not supported on this stream.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetLength">
@@ -595,8 +619,8 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The length of the stream.</param>
+        <summary>This property is not supported and always throws a <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -645,11 +669,12 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buffer">The buffer containing the data to compress.</param>
+        <param name="offset">The byte offset in <paramref name="array" /> from which the bytes will be read.</param>
+        <param name="count">The maximum number of bytes to write.</param>
+        <summary>Writes compressed bytes to the underlying stream from the specified byte array.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The write operation cannot be performed because the stream is closed.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">

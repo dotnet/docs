@@ -3076,9 +3076,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this assembly is held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
+        <value><see langword="true" /> if this assembly is held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ For more information see <see href="/en-us/dotnet/standard/assembly/unloadability-howto">How to use and debug assembly unloadability in .NET Core</see>.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDefined">

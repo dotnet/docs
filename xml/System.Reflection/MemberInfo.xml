@@ -591,9 +591,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Reflection.MemberInfo" /> object is part of an assembly held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
+        <value><see langword="true" /> if the <see cref="T:System.Reflection.MemberInfo" /> is part of an assembly held in a collectible assembly load context; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ For more information see <see href="/en-us/dotnet/standard/assembly/unloadability-howto">How to use and debug assembly unloadability in .NET Core</see>.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDefined">

@@ -156,6 +156,7 @@
       },
       "author": {
         "docs/core/**/**.md": "mairaw",
+        "docs/core/docker/**.md": "Thraka",
         "docs/csharp/**/**.md": "billwagner",
         "docs/csharp/**/**.yml": "billwagner",
         "docs/framework/configure-apps/file-schema/network/**/**.md": "karelz",
@@ -244,6 +245,9 @@
       "ms.custom": {
         "docs/fsharp/tutorials/**/**.md": "seodec18",
         "docs/fsharp/language-reference/**/**.md": "seodec18"
+      },
+      "open_to_public_contributors": {
+	      "docs/standard/design-guidelines/**.md": false
       }
     },
     "dest": "_site",

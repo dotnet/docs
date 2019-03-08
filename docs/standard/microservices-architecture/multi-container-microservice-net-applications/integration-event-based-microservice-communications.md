@@ -61,7 +61,7 @@ There are only a few kinds of libraries you should share across microservices. O
 
 An event bus allows publish/subscribe-style communication between microservices without requiring the components to explicitly be aware of each other, as shown in Figure 6-19.
 
-![Basic pub/sub patter, Microservice A publishes to Event Bus, which distributes to subscribing microservices B and C, without publisher needing to know the subscribers.](./media/image20.png)
+![Basic pub/sub patter, Microservice A publishes to Event Bus, which distributes to subscribing microservices B and C, without the publisher needing to know the subscribers.](./media/image20.png)
 
 **Figure 6-19**. Publish/subscribe basics with an event bus
 

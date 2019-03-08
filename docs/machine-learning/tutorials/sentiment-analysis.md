@@ -109,7 +109,7 @@ Because the website comments need to be classified as either positive or negativ
 
 1. Download [The UCI Sentiment Labeled Sentences dataset zip file (see citations in the following note)](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip), and unzip.
 
-2. Copy the `yelp_labeled.txt` file into the *Data* directory you created.
+2. Copy the `yelp_labelled.txt` file into the *Data* directory you created.
 
 > [!NOTE]
 > The datasets this tutorial uses are from the 'From Group to Individual Labels using Deep Features', Kotzias et. al,. KDD 2015, and hosted at the UCI Machine Learning Repository - Dua, D. and Karra Taniskidou, E. (2017). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.

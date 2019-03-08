@@ -5,6 +5,7 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 01/07/2019
 ---
+
 # Official .NET Docker images
 
 The Official .NET Docker images are Docker images created and optimized by Microsoft. They are publicly available in the Microsoft repositories on [Docker Hub](https://hub.docker.com/u/microsoft/). Each repository can contain multiple images, depending on .NET versions, and depending on the OS and versions (Linux Debian, Linux Alpine, Windows Nano Server, Windows Server Core, etc.).
@@ -17,15 +18,15 @@ Most image repos provide extensive tagging to help you select not just a specifi
 
 When building Docker images for developers, Microsoft focused on the following main scenarios:
 
--   Images used to *develop* and build .NET Core apps.
+- Images used to *develop* and build .NET Core apps.
 
--   Images used to *run* .NET Core apps.
+- Images used to *run* .NET Core apps.
 
 Why multiple images? When developing, building, and running containerized applications, you usually have different priorities. By providing different images for these separate tasks, Microsoft helps optimize the separate processes of developing, building, and deploying apps.
 
 ### During development and build
 
-During development, what is important is how fast you can iterate changes, and the ability to debug the changes. The size of the image is not as important as the ability to make changes to your code and see the changes quickly. Some tools and "build-agent containers", use the development .NET Core image (*microsoft/dotnet:2.2-sdk*) during development and build proces. When building inside a Docker container, the important aspects are the elements that are needed in order to compile your app. This includes the compiler and any other .NET dependencies.
+During development, what is important is how fast you can iterate changes, and the ability to debug the changes. The size of the image is not as important as the ability to make changes to your code and see the changes quickly. Some tools and "build-agent containers", use the development .NET Core image (*microsoft/dotnet:2.2-sdk*) during development and build process. When building inside a Docker container, the important aspects are the elements that are needed in order to compile your app. This includes the compiler and any other .NET dependencies.
 
 Why is this type of build image important? You do not deploy this image to production. Instead, it is an image you use to build the content you place into a production image. This image would be used in your continuous integration (CI) environment or build environment when using Docker Multi-stage builds.
 
@@ -44,6 +45,6 @@ When you explore the .NET image repositories at Docker Hub, you will find multip
 | microsoft/dotnet:**2.2-aspnetcore-runtime** | ASP.NET Core, with runtime only and ASP.NET Core optimizations, on Linux and Windows (multi-arch) |
 | microsoft/dotnet:**2.2-sdk**                | .NET Core, with SDKs included, on Linux and Windows (multi-arch)                                  |
 
->[!div class="step-by-step"]
->[Previous](net-container-os-targets.md)
->[Next](../architect-microservice-container-applications/index.md)
+> [!div class="step-by-step"]
+> [Previous](net-container-os-targets.md)
+> [Next](../architect-microservice-container-applications/index.md)

@@ -81,7 +81,7 @@ Each cell within the <xref:System.Windows.Forms.DataGridView> control can have i
   
  The following diagram illustrates this process.  
   
- ![Properties of type DataGridViewCellStyle](../../../../docs/framework/winforms/controls/media/datagridviewcells1.gif "DataGridViewCells1")  
+ ![Properties of type DataGridViewCellStyle](./media/cell-styles-in-the-windows-forms-datagridview-control/datagridviewcells-inheritance-diagram.gif "DataGridViewCells inheritance diagram")  
   
  You can also access the styles inherited by specific rows and columns. The column <xref:System.Windows.Forms.DataGridViewColumn.InheritedStyle%2A> property inherits its values from the following properties.  
   
@@ -116,7 +116,7 @@ Each cell within the <xref:System.Windows.Forms.DataGridView> control can have i
   
  The following diagram illustrates how different <xref:System.Windows.Forms.DataGridViewCellStyle> properties can inherit their values from different places.  
   
- ![DataGridView property&#45;value inheritance](../../../../docs/framework/winforms/controls/media/datagridviewcells2.gif "DataGridViewCells2")  
+ ![DataGridView property&#45;value inheritance](./media/cell-styles-in-the-windows-forms-datagridview-control/datagridviewcells-value-inheritance-diagram.gif "DataGridViewCells value inheritance diagram")  
   
  By taking advantage of style inheritance, you can provide appropriate styles for the entire control without having to specify the same information in multiple places.  
   

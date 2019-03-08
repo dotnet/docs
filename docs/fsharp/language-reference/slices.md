@@ -80,7 +80,7 @@ printfn "%A" subA'
 
 // Slice a 2x2 matrix out of the full 3x3 matrix
 let twoByTwo = A.[0..1,0..1]
-printfn "%A" twobyTwo
+printfn "%A" twoByTwo
 ```
 
 The F# core library does not define `GetSlice`for 3D arrays. If you wish to slice those or other arrays of more dimensions, you must define the `GetSlice` member yourself.

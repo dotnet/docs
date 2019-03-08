@@ -103,9 +103,9 @@ ms.author: "ronpet"
   
  The intrusiveness (frequency and duration) of garbage collections is the result of the volume of allocations and the amount of survived memory on the managed heap.  
   
- The heap can be considered as the accumulation of two heaps: the large object heap and the small object heap.  
+ The heap can be considered as the accumulation of two heaps: the [large object heap](large-object-heap.md) and the small object heap.  
   
- The large object heap contains very large objects that are 85,000 bytes and larger. The objects on the large object heap are usually arrays. It is rare for an instance object to be extremely large.  
+ The [large object heap](large-object-heap.md) contains very large objects that are 85,000 bytes and larger. The objects on the large object heap are usually arrays. It is rare for an instance object to be extremely large.  
   
  [Back to top](#top)  
   
@@ -293,3 +293,4 @@ Background server garbage collection
 ## See also
 
 - [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+

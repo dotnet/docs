@@ -364,7 +364,7 @@ var movieRatingPrediction = predictionEngine.Predict(testInput);
 ```
 The `Predict()` function makes a prediction on a single column of data (in this case on the `testInput`). 
 
-You can then use the `Score`, or the predicted rating, to determine whether you want to recommend the movie with movieId 10 to user 6. The higher the `Score`, the higher the likelihood of a user liking a particular movie. In this case, let’s say that we recommend movies with a predicted rating of > 3.5:
+You can then use the `Score`, or the predicted rating, to determine whether you want to recommend the movie with movieId 10 to user 6. The higher the `Score`, the higher the likelihood of a user liking a particular movie. In this case, let’s say that you recommend movies with a predicted rating of > 3.5. To do that, add the following as the next code lines in the`UseModelForSinglePrediction()` method:
 
 <!--[!code-csharp[PrintResults](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#PrintResults "Print the recommendation prediction results")]-->
 

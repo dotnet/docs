@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "user interface, see UI"
   - "accessibility, UI automation"
 ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Overview
 > [!NOTE]

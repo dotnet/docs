@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation, threading issues"
   - "threading issues with UI Automation"
 ms.assetid: 0ab8d42c-5b8b-481b-b788-2caecc2f0191
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Threading Issues
 > [!NOTE]

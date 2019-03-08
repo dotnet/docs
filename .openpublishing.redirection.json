@@ -399,6 +399,30 @@
             "redirect_url": "/dotnet/csharp/language-reference/keywords/true-false-operators"
         },
         {
+            "source_path": "docs/csharp/language-reference/language-specification/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/introduction"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.0/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.0/pattern-matching"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.1/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.1/async-main"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.2/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.2/readonly-ref"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.3/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.3/blittable"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.3/blittable"
+        },
+        {
             "source_path": "docs/csharp/language-reference/operators/modulus-assignment-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-assignment-operator"
         },
@@ -1379,6 +1403,11 @@
         {
             "source_path": "docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797584(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/property-grid-extensibliity.md",
+            "redirect_url": "/dotnet/framework/windows-workflow-foundation/samples/property-grid-extensibility",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/framework/windows-workflow-foundation/samples/property-promotion-activity.md",
@@ -2422,11 +2451,6 @@
         {
             "source_path": "docs/visual-basic/reference/vb6-support.md",
             "redirect_url": "/visualstudio/vb6/vb6-support",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/framework/windows-workflow-foundation/samples/property-grid-extensibliity.md",
-            "redirect_url": "/dotnet/framework/windows-workflow-foundation/samples/property-grid-extensibility",
             "redirect_document_id": true
         }
     ]

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Edit control type"
   - "UI Automation, Edit control type"
 ms.assetid: 6db9d231-c0a0-4e17-910e-ac80357f774f
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 
 # UI Automation Support for the Edit Control Type

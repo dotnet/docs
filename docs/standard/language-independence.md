@@ -2065,7 +2065,7 @@ An event is defined by its name and its type. The event type is a delegate that 
 
 * A method for removing an event handler, named `remove`_*EventName*. For example, the removal method for the `DbConnection.StateChange` event is named `remove_StateChange`.
 
-* A method for indicating that the event has occurred, named `raise`_*EventName*.
+* A method for indicating that the event has occurred, named `raise`\_*EventName*.
 
 > [!NOTE]
 > Most of the Common Language Specification's rules regarding events are implemented by language compilers and are transparent to component developers.

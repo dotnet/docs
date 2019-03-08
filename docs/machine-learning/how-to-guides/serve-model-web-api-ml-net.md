@@ -19,15 +19,15 @@ This how-to shows how to serve a pre-built ML.NET machine learning model to the 
 
 ## Create ASP.NET Core Web API Project
 
-1. Open Visual Studio 2017. Select File > New > Project from the menu bar. In the New Project dialog, select the Visual C# node followed by the Web node. Then select the ASP.NET Core Web Application project template. In the Name text box, type "SentimentAnalysisWebAPI" and then select the OK button.
-1. In the window that displays the different types of ASP.NET Core Projects, select API and the select the OK button.
-1. Create a directory named MLModels in your project to save your pre-built machine learning model files:
+1. Open Visual Studio 2017. Select **File > New > Project** from the menu bar. In the New Project dialog, select the **Visual C#** node followed by the **Web** node. Then select the **ASP.NET Core Web Application** project template. In the **Name** text box, type "SentimentAnalysisWebAPI" and then select the **OK** button.
+1. In the window that displays the different types of ASP.NET Core Projects, select **API** and the select the **OK** button.
+1. Create a directory named *MLModels* in your project to save your pre-built machine learning model files:
 
     In Solution Explorer, right-click on your project and select Add > New Folder. Type "MLModels" and hit Enter.
 
-1. Install the Microsoft.ML NuGet Package:
+1. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select Manage NuGet Packages. Choose "nuget.org" as the Package source, select the Browse tab, search for Microsoft.ML, select that package in the list, and select the Install button. Select the OK button on the Preview Changes dialog and then select the I Accept button on the License Acceptance dialog if you agree with the license terms for the packages listed.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the Install button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the License Acceptance dialog if you agree with the license terms for the packages listed.
 
 ### Add Model to ASP.NET Core Web API Project
 
@@ -38,44 +38,100 @@ This how-to shows how to serve a pre-built ML.NET machine learning model to the 
 
 You need to create some classes for your input data and predictions. Add a new class to your project:
 
-1. Create a directory named Models in your project to save your data models:
+1. Create a directory named *DataModels* in your project to save your data models:
 
-    In Solution Explorer, right-click on your project and select Add > New Folder. Type "Models" and hit Enter.
+    In Solution Explorer, right-click on your project and select Add > New Folder. Type "DataModels" and hit **Enter**.
 
-2. In Solution Explorer, right-click the *Models* directory, and then select Add > New Item.
-3. In the Add New Item dialog box, select Class and change the Name field to SentimentData.cs. Then, select the Add button. The SentimentData.cs file opens in the code editor. Add the following using statement to the top of SentimentData.cs:
+2. In Solution Explorer, right-click the *DataModels* directory, and then select Add > New Item.
+3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button. The *SentimentData.cs* file opens in the code editor. Add the following using statement to the top of *SentimentData.cs*:
 
-[!code-csharp[AddUsings](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Models/SentimentData.cs#1 "Add necessary usings")]
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.ML.Data;
+```
 
-Remove the existing class definition and add the following code to the SentimentData.cs file:
+Remove the existing class definition and add the following code to the **SentimentData.cs** file:
 
-[!code-csharp[SentimentClassDefinition](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Models/SentimentData.cs#2 "Define Sentiment Data Class")]
+```csharp
+public class SentimentData
+{
+    [LoadColumn(0)]
+    public bool Label { get; set; }
+    [LoadColumn(1)]
+    public string Text { get; set; }   
+}
+```
 
-4. In Solution Explorer, right-click the *Models* directory, and then select Add > New Item.
-5. In the Add New Item dialog box, select Class and change the Name field to SentimentPrediction.cs. Then, select the Add button. The SentimentPrediction.cs file opens in the code editor. Add the following using statement to the top of SentimentPrediction.cs:
+4. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > New Item**.
+5. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentPrediction.cs*. Then, select the Add button. The *SentimentPrediction.cs* file opens in the code editor. Add the following using statement to the top of *SentimentPrediction.cs*:
 
-[!code-csharp[AddUsings](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Models/SentimentPrediction.cs#1 "Add necessary usings")]
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.ML.Data;
+```
 
-Remove the existing class definition and add the following code to the SentimentPrediction.cs file:
+Remove the existing class definition and add the following code to the *SentimentPrediction.cs* file:
 
-[!code-csharp[SentimentPredictionDefinition](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Models/SentimentPrediction.cs#1 "Define Sentiment Prediction Class")]
+```csharp
+public class SentimentPrediction
+{
+    [ColumnName("PredictedLabel")]
+    public bool Prediction { get; set; }
+}
+```
 
 ## Create Prediction Service
 
 To organize and re-use the prediction logic throughout the entire application, create a prediction service.
 
-1. Create a directory named Services in your project to hold services to be used by the application:
+1. Create a directory named *Services* in your project to hold services to be used by the application:
 
-    In Solution Explorer, right-click on your project and select Add > New Folder. Type "Services" and hit Enter.
+    In Solution Explorer, right-click on your project and select **Add > New Folder**. Type "Services" and hit **Enter**.
 
-1. In Solution Explorer, right-click the *Services* directory, and then select Add > New Item.
-1. In the Add New Item dialog box, select Class and change the Name field to PredictionService.cs. Then, select the Add button. The PredictionService.cs file opens in the code editor. Add the following using statement to the top of PredictionService.cs:
+1. In Solution Explorer, right-click the *Services* directory, and then select **Add > New Item**.
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *PredictionService.cs*. Then, select the **Add** button. The *PredictionService.cs* file opens in the code editor. Add the following using statement to the top of *PredictionService.cs*:
 
-[!code-csharp[AddUsings](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Services/PredictionService.cs#1 "Add necessary usings")]
+```csharp
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.ML;
+using Microsoft.ML.Core.Data;
+using SentimentAnalysisWebAPI.DataModels;
+```
 
-Remove the existing class definition and add the following code to the PredictionService.cs file:
+Remove the existing class definition and add the following code to the *PredictionService.cs* file:
 
-[!code-csharp[DefinePredictionService](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Services/PredictionService.cs#2 "Define Prediction Service")]
+```csharp
+public class PredictionService
+{
+    private readonly PredictionEngine<SentimentData, SentimentPrediction> _predictionEngine;
+    public PredictionService(PredictionEngine<SentimentData,SentimentPrediction> predictionEngine)
+    {
+        _predictionEngine = predictionEngine;
+    }
+
+    public string Predict(SentimentData input)
+    {
+        // Make a prediction
+        SentimentPrediction prediction = _predictionEngine.Predict(input);
+
+        //If prediction is true then it is toxic. If it is false, the it is not.
+        string isToxic = Convert.ToBoolean(prediction.Prediction) ? "Toxic" : "Not Toxic";
+
+        return isToxic;
+
+    }
+}
+```
 
 ## Register Predictions Service for Use in Application
 
@@ -83,13 +139,47 @@ To use the prediction service in your application you will have to create it eve
 
 The following link provides more information if you want to learn about [dependency injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.1).
 
-1. Open the Startup.cs class and add the following using statement to the top of the file: 
+1. Open the *Startup.cs* class and add the following using statement to the top of the file:
 
-[!code-csharp[AddUsings](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Startup.cs#1 "Add necessary usings")]
+```csharp
+using System.IO;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.ML;
+using Microsoft.ML.Core.Data;
+using SentimentAnalysisWebAPI.DataModels;
+using SentimentAnalysisWebAPI.Services;
+```
 
-1. Add the following lines of code to the ConfigureServices method:
+1. Add the following lines of code to the *ConfigureServices* method:
 
-[!code-csharp[RegisterServices](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Startup.cs#2 "Register Services")]
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+    services.AddSingleton<MLContext>();
+    services.AddSingleton<PredictionEngine<SentimentData, SentimentPrediction>>((ctx) =>
+    {
+        MLContext mlContext = ctx.GetRequiredService<MLContext>();
+        string modelFilePathName = "MLModels/sentiment_model.zip";
+
+        //Load model from file
+        ITransformer model;
+        using (var stream = File.OpenRead(modelFilePathName))
+        {
+            model = mlContext.Model.Load(stream);
+        }
+
+        // Return prediction engine
+        return model.CreatePredictionEngine<SentimentData, SentimentPrediction>(mlContext);
+    });
+    services.AddSingleton<PredictionService>();
+}
+```
 
 At a high level, this code initializes the objects and services automatically when requested by the application instead of having to manually do it.
 
@@ -97,15 +187,41 @@ At a high level, this code initializes the objects and services automatically wh
 
 To process your incoming HTTP requests, you need to create a controller.
 
-1. In Solution Explorer, right-click the *Controllers* directory, and then select Add > Controller.
-1. In the Add New Item dialog box, select API Controller Empty and select Add.
-1. In the prompt change the Controller Name field to PredictController.cs. Then, select the Add button. The PredictController.cs file opens in the code editor. Add the following using statement to the top of PredictController.cs:
+1. In Solution Explorer, right-click the *Controllers* directory, and then select **Add > Controller**.
+1. In the **Add New Item** dialog box, select **API Controller Empty** and select **Add**.
+1. In the prompt change the **Controller Name** field to *PredictController.cs*. Then, select the Add button. The *PredictController.cs* file opens in the code editor. Add the following using statement to the top of *PredictController.cs*:
 
-[!code-csharp[AddUsings](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Controllers/PredictController.cs#1 "Add necessary usings")]
+```csharp
+using Microsoft.AspNetCore.Mvc;
+using SentimentAnalysisWebAPI.DataModels;
+using SentimentAnalysisWebAPI.Services;
+```
 
-Remove the existing class definition and add the following code to the PredictController.cs file:
+Remove the existing class definition and add the following code to the *PredictController.cs* file:
 
-[!code-csharp[DefinePredictController](../../../samples/machine-learning/how-tos/SentimentAnalysisWebAPI/Controllers/PredictController.cs#2 "Define Predict Controller")]
+```csharp
+public class PredictController : ControllerBase
+{
+
+    private readonly PredictionService _predictionService;
+
+    public PredictController(PredictionService predictionService)
+    {
+        _predictionService = predictionService; //Define prediction service
+    }
+
+    [HttpPost]
+    public ActionResult<string> Post([FromBody]SentimentData input)
+    {
+        if(!ModelState.IsValid)
+        {
+            return BadRequest();
+        }
+        return Ok(_predictionService.Predict(input));
+    }
+
+}
+```
 
 This is assigning the Prediction service by passing it to the controller's constructor which you get via dependency injection. Then, in the POST method of this controller the Prediction service is being used to make predictions and return the results back to the user if successful.
 

@@ -56,4 +56,12 @@
 ### [expression variables in initializers](../../../_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md)
 ### [Tuple equality (==) and inequality (!=)](../../../_csharplang/proposals/csharp-7.3/tuple-equality.md)
 ### [Improved overload candidates](../../../_csharplang/proposals/csharp-7.3/improved-overload-candidates.md)
+## C# 8.0 language proposals
+### [Null reference types - proposal](../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md)
+### [nullable reference types - specification](../../../_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md)
+### [Recursive pattern matching](../../../_csharplang/proposals/csharp-8.0/patterns.md)
+### [async streams](../../../_csharplang/proposals/csharp-8.0/async-streams.md)
+### [Ranges](../../../_csharplang/proposals/csharp-8.0/ranges.md)
+### [Pattern based using and using declarations](../../../_csharplang/proposals/csharp-8.0/using.md)
+### [null coalescing assignment](../../../_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md)
 

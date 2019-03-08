@@ -34,12 +34,11 @@
       },
       {
         "files": [
-          "records.md",
           "csharp-7.0/*.md",
           "csharp-7.1/*.md",
           "csharp-7.2/*.md",
           "csharp-7.3/*.md",
-          "csharp-8.0/patterns.md"
+          "csharp-8.0/*.md"
         ],
         "src": "_csharplang/proposals",
         "dest": "csharp/language-reference/proposals",
@@ -191,7 +190,8 @@
         "_csharplang/proposals/csharp-7.0/*.md": "08/13/2018",
         "_csharplang/proposals/csharp-7.1/*.md": "02/16/2018",
         "_csharplang/proposals/csharp-7.2/*.md": "01/19/2019",
-        "_csharplang/proposals/csharp-7.2/*.md": "11/25/2018",
+        "_csharplang/proposals/csharp-7.3/*.md": "11/25/2018",
+        "_csharplang/proposals/csharp-8.0/*.md": "02/25/2019",
         "_vblang/spec/*.md": "07/21/2017"
       },
       "ms.technology": {
@@ -229,6 +229,7 @@
         "_csharplang/proposals/csharp-7.1/*.md": "C# 7.1 language proposals",
         "_csharplang/proposals/csharp-7.2/*.md": "C# 7.2 language proposals",
         "_csharplang/proposals/csharp-7.3/*.md": "C# 7.3 language proposals",
+        "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 language proposals",
         "docs/fsharp/tutorials/**/**.md": "F#",
         "docs/fsharp/language-reference/**/**.md": "F#",
         "docs/core/additional-tools/**.md": ".NET Core",

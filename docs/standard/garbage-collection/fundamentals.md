@@ -24,28 +24,8 @@ ms.author: "ronpet"
   
 -   Provides memory safety by making sure that an object cannot use the content of another object.  
   
- This topic describes the core concepts of garbage collection. It contains the following sections:  
-  
--   [Fundamentals of memory](#fundamentals_of_memory)  
-  
--   [Conditions for a garbage collection](#conditions_for_a_garbage_collection)  
-  
--   [The managed heap](#the_managed_heap)  
-  
--   [Generations](#generations)  
-  
--   [What happens during a garbage collection](#what_happens_during_a_garbage_collection)  
-  
--   [Manipulating unmanaged resources](#manipulating_unmanaged_resources)  
-  
--   [Workstation and server garbage collection](#workstation_and_server_garbage_collection)  
-  
--   [Concurrent garbage collection](#concurrent_garbage_collection)  
-  
--   [Background workstation garbage collection](#background_garbage_collection)  
-  
--   [Background server garbage collection](#background_server_garbage_collection)  
-  
+ This topic describes the core concepts of garbage collection. 
+ 
 <a name="fundamentals_of_memory"></a>   
 ## Fundamentals of memory  
  The following list summarizes important CLR memory concepts.  
@@ -293,4 +273,3 @@ Background server garbage collection
 ## See also
 
 - [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
-

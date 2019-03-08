@@ -4,7 +4,7 @@ description: Learn how to customize how .NET marshals your structures to a nativ
 author: jkoritzinsky
 ms.author: jekoritz
 ms.date: 01/18/2019
-dev_langs: 
+dev_langs:
   - "csharp"
   - "cpp"
 ---
@@ -60,7 +60,7 @@ struct WinBool
 };
 ```
 
-Using the `UmanagedType.U1` or `UnmanagedType.I1` values below, you can tell the runtime to marshal the `b` field as a 1-byte native `bool` type.
+Using the `UnmanagedType.U1` or `UnmanagedType.I1` values below, you can tell the runtime to marshal the `b` field as a 1-byte native `bool` type.
 
 ```csharp
 public struct CBool
@@ -337,7 +337,7 @@ struct Currency
 On Windows, you can marshal `object`-typed fields to native code. You can marshal these fields to one of three types:
 - [`VARIANT`](/windows/desktop/api/oaidl/ns-oaidl-tagvariant)
 - [`IUnknown*`](/windows/desktop/api/unknwn/nn-unknwn-iunknown)
-- [`IDispatch*`](/windows/desktop/api/oaidl/nn-oaidl-idispatch). 
+- [`IDispatch*`](/windows/desktop/api/oaidl/nn-oaidl-idispatch)
 
 By default, an `object`-typed field will be marshalled to an `IUnknown*` that wraps the object.
 

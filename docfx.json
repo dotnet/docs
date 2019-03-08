@@ -245,6 +245,9 @@
       "ms.custom": {
         "docs/fsharp/tutorials/**/**.md": "seodec18",
         "docs/fsharp/language-reference/**/**.md": "seodec18"
+      },
+      "open_to_public_contributors": {
+	      "docs/standard/design-guidelines/**.md": false
       }
     },
     "dest": "_site",

@@ -2,7 +2,7 @@
 title: Use ML.NET in a movie recommendation scenario
 description: Discover how to use ML.NET in a recommendation scenario to recommend movies to users.
 ms.author: brachtma
-ms.date: 02/19/2019
+ms.date: 03/08/2019
 ms.custom: mvc
 ms.topic: tutorial
 #Customer intent: As a developer, I want to use ML.NET to apply a recommendation learning algorithm so that I can understand how to recommend items based on a user's history.
@@ -84,10 +84,9 @@ There are several ways to approach recommendation problems, such as recommending
 *   Open [*recommendation-ratings-train.csv*](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-train.csv), right click on the "Download" link, and select "Save Link (or Target) As".
 *   Open [*recommendation-ratings-test.csv*](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-test.csv), right click on the "Raw" link, and select "Save Link (or Target) As".
 
-    Make sure you either save the \*.csv files to the *Data* folder, or after you save it elsewhere, move the \*.csv files to the *Data* folder.
+     Make sure you either save the \*.csv files to the *Data* folder, or after you save it elsewhere, move the \*.csv files to the *Data* folder.
 
-
-2. In **Solution Explorer**, right-click each of the \*.csv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
+2. In Solution Explorer, right-click each of the \*.csv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
    ![copy if newer in VS](./media/movie-recommendation/copytoout.gif)
 
@@ -110,7 +109,7 @@ You want to predict movie ratings, so the rating column is the `Label`. The othe
 
 ![preview of data](./media/movie-recommendation/dataset.png)
 
-It is up to you to decide which `Features` you think can best be used to predict the `Label`. You can also use methods like [Feature Permutation Importance](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/determine-global-feature-importance-in-model) to help with selecting the best `Features`. In this case, you should eliminate the `timestamp` column as a `Feature` because the timestamp does not really affect how a user rates a given movie and thus would not contribute to making a more accurate prediction.
+It is up to you to decide which `Features` you think can best be used to predict the `Label`. You can also use methods like [Feature Permutation Importance](../how-to-guides/determine-global-feature-importance-in-model.md) to help with selecting the best `Features`. In this case, you should eliminate the `timestamp` column as a `Feature` because the timestamp does not really affect how a user rates a given movie and thus would not contribute to making a more accurate prediction.
 
 Next you must define your data structure for the input class.
 
@@ -142,7 +141,7 @@ public class MovieRating
 }
 ```
 
-`MovieRating` specifies an input data class. `LoadColumn` specifies which columns (by column index) in the dataset should be loaded. The `userId` and `movieId` columns are your `Features` (the inputs you will give the model to predict the `Label`), and the rating column is the `Label` that you will predict (the output of the model).
+`MovieRating` specifies an input data class. <xref:Microsoft.ML.Data.LoadColumnAttribute.%23ctor%28System.Int32%29> specifies which columns (by column index) in the dataset should be loaded. The `userId` and `movieId` columns are your `Features` (the inputs you will give the model to predict the `Label`), and the rating column is the `Label` that you will predict (the output of the model).
 
 In *Program.cs*, add the following code inside `Main()`:
 
@@ -180,11 +179,12 @@ public static (IDataView training, IDataView test) LoadData(MLContext mlContext)
 
 Data in ML.NET is represented as an <xref:Microsoft.Data.DataView.IDataView>. `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (e.g. SQL database or log files) to an `IDataView` object.
 
-You use `LoadFromTextFile()` to define the data schema. In this case, you provide the path for your files (`Test` and `Train`) and indicate both the text file header (so it can use the column names properly) and the comma character data separator (the default separator is a tab).
+You use <xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29> to define the data schema. It returns a
+`IDataView`. In this case, you provide the path for your files (`Test` and `Train`) and indicate both the text file header (so it can use the column names properly) and the comma character data separator (the default separator is a tab).
 
 ## Build and train your model
 
-There are three major concepts with ML.NET: [`Data`](../basic-concepts-model-training-in-mldotnet.md#data), [`Transformers`](../basic-concepts-model-training-in-mldotnet.md#transformer), and [`Estimators`](../basic-concepts-model-training-in-mldotnet.md#estimator).
+There are three major concepts with ML.NET: [Data](../basic-concepts-model-training-in-mldotnet.md#data), [Transformers](../basic-concepts-model-training-in-mldotnet.md#transformer), and [Estimators](../basic-concepts-model-training-in-mldotnet.md#estimator).
 
 Machine learning training algorithms require data in a certain format. `Transformers` are used to transform tabular data to a compatible format.
 
@@ -194,7 +194,7 @@ You create `Transformers` in ML.NET by creating `Estimators`. `Estimators` take 
 
 ![estimator image](./media/movie-recommendation/estimator.png)
 
-`MatrixFactorization`, the recommendation training algorithm you will use for training your model, is an an example of an `Estimator`.
+<xref:Microsoft.ML.RecommendationCatalog.RecommendationTrainers.MatrixFactorization%28Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options%29>, the recommendation training algorithm you will use for training your model, is an an example of an `Estimator`.
 
 Build an `Estimator` with the following steps:
 
@@ -217,7 +217,7 @@ Build an `Estimator` with the following steps:
     }
    ```
 
-    Since `userId` and `movieId` represent users and movie titles, not real values, you use `MapValueToKey()` to transform each `userId` and each `movieId` into a numeric key type `Feature` column (a format accepted by recommendation algorithms) and add them as new dataset columns:
+    Since `userId` and `movieId` represent users and movie titles, not real values, you use <xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A> to transform each `userId` and each `movieId` into a numeric key type `Feature` column (a format accepted by recommendation algorithms) and add them as new dataset columns:
 
     | userID | movieID | Label | userIdEncoded | movieIdEncoded |
     | ------------- |:-------------:| -----:|-----:|-----:|
@@ -247,9 +247,18 @@ Build an `Estimator` with the following steps:
     return model;
     ```
 
-    The `Matrix Factorization` trainer has several options, including the input columns (`userIdEncoded` and `movieIdEncoded`) and the output column (`Label`). `NumberOfIterations` and `ApproximationRank` are hyperparameters for improving the quality of the model (see [Improve your model step](#improve-your-model) below for more information).
+The `Matrix Factorization` trainer has several <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options> including:
+Input and output columns:
+* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.MatrixColumnIndexColumnName> (`userIdEncoded`)
+* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.MatrixRowIndexColumnName> (`movieIdEncoded`)
+* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.LabelColumnName> (`Label`) 
+[Hyperparameters](../resources/glossary.md#hyperparameter) for improving the model quality: 
+* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.NumberOfIterations> 
+* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.ApproximationRank> 
 
-    Finally the `Fit()` method trains your model with the provided training dataset. Technically, it executes the `Estimator` defitinions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
+For more information, see [Improve your model step](#improve-your-model) below ).
+
+    Finally, the `Fit()` method trains your model with the provided training dataset. Technically, it executes the `Estimator` defitinions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
 
 ### Matrix Factorization
 Matrix factorization is one of the training algorithms for recommendation scenarios; it is a common approach to recommendation when you have data on how users have rated products in the past. In this case, the algorithm uses a method called collaborative filtering, which assumes that if User 1 has the same opinion as User 2 on a certain issue, then User 1 is more likely to feel the same way as User 2 about a different issue.
@@ -290,7 +299,7 @@ public static void EvaluateModel(MLContext mlContext, IDataView testDataView, IT
 }
 ```
 
-The `Transform()` method makes predictions for multiple provided input rows of a test dataset. Once you have the prediction set, you call the `Evaluate()` method to assess the model, which compares the predicted values with the actual labels in the test dataset and returns metrics on how the model is performing.
+The <xref:Microsoft.ML.ITransformer.Transform%2A> method makes predictions for multiple provided input rows of a test dataset. Once you have the prediction set, you call the <xref:Microsoft.ML.RecommendationCatalog.Evaluate%2A> method to assess the model, which compares the predicted values with the actual labels in the test dataset and returns metrics on how the model is performing.
 
 The print statements display your evaluation metrics in the console, which should look similar to the following:
 

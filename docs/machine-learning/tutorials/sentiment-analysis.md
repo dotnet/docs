@@ -8,7 +8,7 @@ ms.custom: mvc, seodec18
 ---
 # Tutorial: Use ML.NET in a sentiment analysis binary classification scenario
 
-This sample tutorial illustrates using ML.NET to create a sentiment classifier via a .NET Core console application using C# in Visual Studio 2017.
+This sample tutorial illustrates using ML.NET to create a sentiment classifier to predict either positive or negative sentiment via a .NET Core console application using C# in Visual Studio 2017. In the world of machine learning, this type of prediction is known as binary classification.
 
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
@@ -157,7 +157,7 @@ Create a variable called `mlContext` and initialize it with a new instance of `M
 
 Add the following as the next line of code in the `Main` method:
 
-[!code-csharp[CallLoadData](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallProcessData)]
+[!code-csharp[CallLoadData](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallLoadData)]
 
 The `LoadData` method executes the following tasks:
 
@@ -188,7 +188,7 @@ In ML.NET, data is similar to a SQL view. It is lazily evaluated, schematized, a
 
 ### Split the dataset for model training and testing
 
-Next, you need both a training dataset to train the model and a test dataset to evaluate the model. Use the `MLContext.BinaryClassification.TrainTestSplit` which wraps <xref:Microsoft.ML.StaticPipe.TrainingStaticExtensions.TrainTestSplit%2A> to split the loaded dataset into train and test datasets. You can specify the fraction of data for the test set with the `testFraction`parameter. The default is 10% but you use 20% in this case to use more data for the evaluation.  
+Next, you need both a training dataset to train the model and a test dataset to evaluate the model. Use the `MLContext.BinaryClassification.TrainTestSplit` which wraps <xref:Microsoft.ML.StaticPipe.TrainingStaticExtensions.TrainTestSplit%2A> to split the loaded dataset into train and test datasets and return them inside of a <xref:Microsoft.ML.TrainCatalogBase.TrainTestData>. You can specify the fraction of data for the test set with the `testFraction`parameter. The default is 10% but you use 20% in this case to use more data for the evaluation.  
 
 To split the loaded data into the needed datasets, add the following code as the next line in the `LoadData` method:
 

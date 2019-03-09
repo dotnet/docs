@@ -4,6 +4,7 @@ description: Learn how to do specific tasks to assist with custom AI solutions c
 ms.custom: seodec18
 ms.date: 03/01/2019
 ---
+
 # .NET Machine learning how-to guides - ML.NET
 
 In the How to section of the ML.NET Guide, you can find quick answers
@@ -45,7 +46,7 @@ to common questions. In some cases, articles may be listed in multiple sections 
 
 * [Apply feature engineering for model training on textual data with ML.NET.](train-model-textual-ml-net.md)
 
-## Run 
+## Run
 
 * [Inspect intermediate data values during ML.NET pipeline processing.](inspect-intermediate-data-ml-net.md)
 
@@ -53,7 +54,6 @@ to common questions. In some cases, articles may be listed in multiple sections 
 
 * [Use the PredictionFunction to make one prediction at a time.](single-predict-model-ml-net.md)
 
-## Probabalistic (Infer.NET)
+## Probabilistic (Infer.NET)
 
 * [Create a game match up list app with Infer.NET and probabilistic programming.](matchup-app-infer-net.md)
-

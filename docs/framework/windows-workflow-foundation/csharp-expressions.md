@@ -8,19 +8,19 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], C# expressio
 
 ## Using C# expressions in workflows
 
--   [Using C# expressions in the Workflow Designer](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#WFDesigner)
+-   [Using C# expressions in the Workflow Designer](csharp-expressions.md#WFDesigner)
 
-    -   [Backwards compatibility](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#BackwardCompat)
+    -   [Backwards compatibility](csharp-expressions.md#BackwardCompat)
 
--   [Using C# expressions in code workflows](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#CodeWorkflows)
+-   [Using C# expressions in code workflows](csharp-expressions.md#CodeWorkflows)
 
--   [Using C# expressions in XAML workflows](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#XamlWorkflows)
+-   [Using C# expressions in XAML workflows](csharp-expressions.md#XamlWorkflows)
 
-    -   [Compiled Xaml](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#CompiledXaml)
+    -   [Compiled Xaml](csharp-expressions.md#CompiledXaml)
 
-    -   [Loose Xaml](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#LooseXaml)
+    -   [Loose Xaml](csharp-expressions.md#LooseXaml)
 
--   [Using C# expressions in XAMLX workflow services](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#WFServices)
+-   [Using C# expressions in XAMLX workflow services](csharp-expressions.md#WFServices)
 
 ### <a name="WFDesigner"></a> Using C# expressions in the Workflow Designer
  Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], C# expressions are supported in Windows Workflow Foundation (WF). C# workflow projects created in Visual Studio 2012 that target [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] use C# expressions, while Visual Basic workflow projects use Visual Basic expressions. To specify the desired C# expression, type it into the box labeled **Enter a C# expression**. This label is displayed in the properties window when the activity is selected in the designer, or on the activity in the workflow designer. In the following example, two `WriteLine` activities are contained within a `Sequence` inside a `NoPersistScope`.
@@ -28,7 +28,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], C# expressio
  ![Automatically created sequence activity](./media/csharp-expressions/auto-surround-sequence-activity.png "Auto-surround with Sequence activity")
 
 > [!NOTE]
->  C# expressions are supported only in Visual Studio, and are not supported in the re-hosted workflow designer. For more information about new WF45 features supported in the re-hosted designer, see [Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer](../../../docs/framework/windows-workflow-foundation/wf-features-in-the-rehosted-workflow-designer.md).
+>  C# expressions are supported only in Visual Studio, and are not supported in the re-hosted workflow designer. For more information about new WF45 features supported in the re-hosted designer, see [Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer](wf-features-in-the-rehosted-workflow-designer.md).
 
 #### <a name="BackwardCompat"></a> Backwards compatibility
  Visual Basic expressions in existing [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] C# workflow projects that have been migrated to [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] are supported. When the Visual Basic expressions are viewed in the workflow designer, the text of the existing Visual Basic expression is replaced with **Value was set in XAML**, unless the Visual Basic expression is valid C# syntax. If the Visual Basic expression is valid C# syntax, then the expression is displayed. To update the Visual Basic expressions to C#, you can edit them in the workflow designer and specify the equivalent C# expression. It is not required to update the Visual Basic expressions to C#, but once the expressions are updated in the workflow designer they are converted to C# and may not be reverted to Visual Basic.
@@ -178,14 +178,14 @@ static void CompileExpressions(DynamicActivity dynamicActivity)
 
 -   `CompiledExpressionInvoker.SetCompiledExpressionRootForImplementation` is called instead of `CompiledExpressionInvoker.SetCompiledExpressionRoot`.
 
- For more information about working with expressions in code, see [Authoring Workflows, Activities, and Expressions Using Imperative Code](../../../docs/framework/windows-workflow-foundation/authoring-workflows-activities-and-expressions-using-imperative-code.md).
+ For more information about working with expressions in code, see [Authoring Workflows, Activities, and Expressions Using Imperative Code](authoring-workflows-activities-and-expressions-using-imperative-code.md).
 
 ### <a name="XamlWorkflows"></a> Using C# expressions in XAML workflows
  C# expressions are supported in XAML workflows. Compiled XAML workflows are compiled into a type, and loose XAML workflows are loaded by the runtime and compiled into an activity tree when the workflow is executed.
 
--   [Compiled Xaml](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#CompiledXaml)
+-   [Compiled Xaml](csharp-expressions.md#CompiledXaml)
 
--   [Loose Xaml](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#LooseXaml)
+-   [Loose Xaml](csharp-expressions.md#LooseXaml)
 
 #### <a name="CompiledXaml"></a> Compiled Xaml
  C# expressions are supported in compiled XAML workflows that are compiled to a type as part of a C# workflow project that targets [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]. Compiled XAML is the default type of workflow authoring in Visual Studio, and C# workflow projects created in Visual Studio that target [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] use C# expressions.
@@ -202,10 +202,10 @@ ActivityXamlServicesSettings settings = new ActivityXamlServicesSettings
 DynamicActivity<int> wf = ActivityXamlServices.Load(new StringReader(serializedAB), settings) as DynamicActivity<int>;
 ```
 
- For more information about working with XAML workflows, see [Serializing Workflows and Activities to and from XAML](../../../docs/framework/windows-workflow-foundation/serializing-workflows-and-activities-to-and-from-xaml.md).
+ For more information about working with XAML workflows, see [Serializing Workflows and Activities to and from XAML](serializing-workflows-and-activities-to-and-from-xaml.md).
 
 ### <a name="WFServices"></a> Using C# expressions in XAMLX workflow services
- C# expressions are supported in XAMLX workflow services. When a workflow service is hosted in IIS or WAS then no additional steps are required, but if the XAML workflow service is self-hosted, then the C# expressions must be compiled. To compile the C# expressions in a self-hosted XAMLX workflow service, first load the XAMLX file into a `WorkflowService`, and then pass the `Body` of the `WorkflowService` to the `CompileExpressions` method described in the previous [Using C# expressions in code workflows](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#CodeWorkflows) section. In the following example, a XAMLX workflow service is loaded, the C# expressions are compiled, and then the workflow service is opened and waits for requests.
+ C# expressions are supported in XAMLX workflow services. When a workflow service is hosted in IIS or WAS then no additional steps are required, but if the XAML workflow service is self-hosted, then the C# expressions must be compiled. To compile the C# expressions in a self-hosted XAMLX workflow service, first load the XAMLX file into a `WorkflowService`, and then pass the `Body` of the `WorkflowService` to the `CompileExpressions` method described in the previous [Using C# expressions in code workflows](csharp-expressions.md#CodeWorkflows) section. In the following example, a XAMLX workflow service is loaded, the C# expressions are compiled, and then the workflow service is opened and waits for requests.
 
 ```csharp
 // Load the XAMLX workflow service.
@@ -230,7 +230,7 @@ Console.WriteLine("Press enter to quit");
 Console.ReadLine();
 ```
 
- If the C# expressions are not compiled, the `Open` operation succeeds but the workflow will fail when it is invoked. The following `CompileExpressions` method is the same as the method from the previous [Using C# expressions in code workflows](../../../docs/framework/windows-workflow-foundation/csharp-expressions.md#CodeWorkflows) section.
+ If the C# expressions are not compiled, the `Open` operation succeeds but the workflow will fail when it is invoked. The following `CompileExpressions` method is the same as the method from the previous [Using C# expressions in code workflows](csharp-expressions.md#CodeWorkflows) section.
 
 ```csharp
 static void CompileExpressions(Activity activity)

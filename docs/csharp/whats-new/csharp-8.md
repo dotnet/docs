@@ -329,7 +329,7 @@ Console.WriteLine($"The last word is {words[^1]}");
 The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` is not in the range.
 
 ```csharp
-var brownFox = words[1..4];
+var quickBrownFox = words[1..4];
 ```
 
 The following code creates a subrange with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` is not included:

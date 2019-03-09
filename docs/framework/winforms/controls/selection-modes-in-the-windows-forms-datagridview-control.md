@@ -43,5 +43,5 @@ Sometimes you want your application to perform actions based on user selections 
 - <xref:System.Windows.Forms.DataGridView.MultiSelect%2A>
 - <xref:System.Windows.Forms.DataGridView.SelectionMode%2A>
 - <xref:System.Windows.Forms.DataGridViewSelectionMode>
-- [Selection and Clipboard Use with the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/selection-and-clipboard-use-with-the-windows-forms-datagridview-control.md)
-- [How to: Set the Selection Mode of the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-the-selection-mode-of-the-windows-forms-datagridview-control.md)
+- [Selection and Clipboard Use with the Windows Forms DataGridView Control](selection-and-clipboard-use-with-the-windows-forms-datagridview-control.md)
+- [How to: Set the Selection Mode of the Windows Forms DataGridView Control](how-to-set-the-selection-mode-of-the-windows-forms-datagridview-control.md)

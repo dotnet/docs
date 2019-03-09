@@ -34,4 +34,4 @@ Some HTML documents are composed out of *frames*, or windows that can hold their
   
 ## See also
 - [\<frame> element](https://developer.mozilla.org/docs/Web/HTML/Element/frame)
-- [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)
+- [Using the Managed HTML Document Object Model](using-the-managed-html-document-object-model.md)

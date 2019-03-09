@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.assetid: 1fd83ccd-3798-42fc-85a3-6cba99467387
 ---
 # Walkthrough: Debugging Custom Windows Forms Controls at Design Time
-When you create a custom control, you will often find it necessary to debug its design-time behavior. This is especially true if you are authoring a custom designer for your custom control. For details, see [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md).  
+When you create a custom control, you will often find it necessary to debug its design-time behavior. This is especially true if you are authoring a custom designer for your custom control. For details, see [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](creating-a-wf-control-design-time-features.md).  
   
  You can debug your custom controls using Visual Studio, just as you would debug any other .NET Framework classes. The difference is that you will debug a separate instance of Visual Studio that is running your custom control's code  
   
@@ -128,7 +128,7 @@ When you create a custom control, you will often find it necessary to debug its 
   
 2.  In the **DebugControlLibrary** property sheet, select the **Debug** tab.  
   
-     In the **Start Action** section, select **Start external program**. You will be debugging a separate instance of Visual Studio, so click the ellipsis (![VisualStudioEllipsesButton screenshot](./media/walkthrough-debugging-custom-windows-forms-controls-at-design-time/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button to browse for the Visual Studio IDE. The name of the executable file is **devenv.exe**, and if you installed to the default location, its path is %programfiles%\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe.  
+     In the **Start Action** section, select **Start external program**. You will be debugging a separate instance of Visual Studio, so click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/walkthrough-debugging-custom-windows-forms-controls-at-design-time/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button to browse for the Visual Studio IDE. The name of the executable file is **devenv.exe**, and if you installed to the default location, its path is %programfiles%\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe.  
   
 3.  Click **OK** to close the dialog box.  
   
@@ -164,9 +164,9 @@ When you create a custom control, you will often find it necessary to debug its 
   
 -   There are several attributes you can apply to your control's properties to manipulate your custom control's interaction with the designer. You can find these attributes in the <xref:System.ComponentModel?displayProperty=nameWithType> namespace.  
   
--   You can write a custom designer for your custom control. This gives you complete control over the design experience using the extensible designer infrastructure exposed by Visual Studio. For details, see [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md).  
+-   You can write a custom designer for your custom control. This gives you complete control over the design experience using the extensible designer infrastructure exposed by Visual Studio. For details, see [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](creating-a-wf-control-design-time-features.md).  
   
 ## See also
-- [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)
+- [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](creating-a-wf-control-design-time-features.md)
 - [How to: Access Design-Time Services](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171822(v=vs.120))
 - [How to: Access Design-Time Support in Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171827(v=vs.120))

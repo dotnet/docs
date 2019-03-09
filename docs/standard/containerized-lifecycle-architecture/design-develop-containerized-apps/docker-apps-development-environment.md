@@ -31,7 +31,7 @@ You can use [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/) 
 
 ## Language and framework choices
 
-You can develop Docker applications using Microsoft tools with most modern languages. The following is an initial list, but you are not limited to it:
+You can develop Docker applications using Microsoft tools with most modern languages. The following is an initial list, but you're not limited to it:
 
 - .NET Core and ASP.NET Core
 - Node.js

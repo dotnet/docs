@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: c4b60637-4c0a-44c2-a103-f66dff887936
 ---
 # How to: Set ToolTips for Controls on a Windows Form at Design Time
-You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windows Forms Designer. For more information about the <xref:System.Windows.Forms.ToolTip> component, see [ToolTip Component Overview](../../../../docs/framework/winforms/controls/tooltip-component-overview-windows-forms.md).  
+You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windows Forms Designer. For more information about the <xref:System.Windows.Forms.ToolTip> component, see [ToolTip Component Overview](tooltip-component-overview-windows-forms.md).  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -71,6 +71,6 @@ You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windo
 2.  In the **Properties** window, delete the text in the **ToolTip on ToolTip1**.  
 
 ## See also
-- [ToolTip Component Overview](../../../../docs/framework/winforms/controls/tooltip-component-overview-windows-forms.md)
-- [How to: Change the Delay of the Windows Forms ToolTip Component](../../../../docs/framework/winforms/controls/how-to-change-the-delay-of-the-windows-forms-tooltip-component.md)
-- [ToolTip Component](../../../../docs/framework/winforms/controls/tooltip-component-windows-forms.md)
+- [ToolTip Component Overview](tooltip-component-overview-windows-forms.md)
+- [How to: Change the Delay of the Windows Forms ToolTip Component](how-to-change-the-delay-of-the-windows-forms-tooltip-component.md)
+- [ToolTip Component](tooltip-component-windows-forms.md)

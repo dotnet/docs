@@ -33,18 +33,18 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
   
  The output of the following code is similar to the output shown in the following illustration.  
   
- ![Fonts Text](../../../../docs/framework/winforms/advanced/media/csfontstext7.png "csfontstext7")  
+ ![Fonts Text](./media/csfontstext7.png "csfontstext7")  
   
  Arial.tff (which was added to the private font collection in the following code example) is the font file for the Arial regular style. Note, however, that the program output shows several available styles other than regular for the Arial font family. That is because [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can simulate the bold, italic, and bold italic styles from the regular style. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can also produce underlines and strikeouts from the regular style.  
   
  Similarly, [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can simulate the bold italic style from either the bold style or the italic style. The program output shows that the bold italic style is available for the Times family even though TimesBd.tff (Times New Roman, bold) is the only Times file in the collection.  
   
- [!code-csharp[System.Drawing.FontsAndText#51](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.FontsAndText/CS/Class1.cs#51)]
- [!code-vb[System.Drawing.FontsAndText#51](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#51)]  
+ [!code-csharp[System.Drawing.FontsAndText#51](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.FontsAndText/CS/Class1.cs#51)]
+ [!code-vb[System.Drawing.FontsAndText#51](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#51)]  
   
 ## Compiling the Code  
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
 - <xref:System.Drawing.Text.PrivateFontCollection>
-- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)
+- [Using Fonts and Text](using-fonts-and-text.md)

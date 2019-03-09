@@ -28,12 +28,12 @@ This topic describes how the Application Settings architecture works, and explor
   
 -   Validating settings, either before they are changed or before they are saved  
   
- The settings can be described using a number of attributes defined within the <xref:System.Configuration> namespace; these are described in [Application Settings Attributes](../../../../docs/framework/winforms/advanced/application-settings-attributes.md). When you define a setting, you must apply it with either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>, which describes whether the setting applies to the entire application or just to the current user.  
+ The settings can be described using a number of attributes defined within the <xref:System.Configuration> namespace; these are described in [Application Settings Attributes](application-settings-attributes.md). When you define a setting, you must apply it with either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>, which describes whether the setting applies to the entire application or just to the current user.  
   
  The following code example defines a custom settings class with a single setting, `BackgroundColor`.  
   
- [!code-csharp[ApplicationSettings.Create#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Create/CS/MyAppSettings.cs#1)]
- [!code-vb[ApplicationSettings.Create#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Create/VB/MyAppSettings.vb#1)]  
+ [!code-csharp[ApplicationSettings.Create#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Create/CS/MyAppSettings.cs#1)]
+ [!code-vb[ApplicationSettings.Create#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Create/VB/MyAppSettings.vb#1)]  
   
 ## Settings Persistence  
  The <xref:System.Configuration.ApplicationSettingsBase> class does not itself persist or load settings; this job falls to the settings provider, a class that derives from <xref:System.Configuration.SettingsProvider>. If a derived class of <xref:System.Configuration.ApplicationSettingsBase> does not specify a settings provider through the <xref:System.Configuration.SettingsProviderAttribute>, then the default provider, <xref:System.Configuration.LocalFileSettingsProvider>, is used.  
@@ -82,7 +82,7 @@ This topic describes how the Application Settings architecture works, and explor
 </configuration>  
 ```  
   
- For a definition of the elements within the application settings section of a configuration file, see [Application Settings Schema](../../../../docs/framework/configure-apps/file-schema/application-settings-schema.md).  
+ For a definition of the elements within the application settings section of a configuration file, see [Application Settings Schema](../../configure-apps/file-schema/application-settings-schema.md).  
   
 ### Settings Bindings  
  Application settings uses the Windows Forms data binding architecture to provide two-way communication of settings updates between the settings object and components. If you use Visual Studio to create application settings and assign them to component properties, these bindings are generated automatically.  
@@ -100,7 +100,7 @@ This topic describes how the Application Settings architecture works, and explor
   
 3.  Determines which settings go in which files, based on the setting's attribute.  
   
- If you implement your own settings class, you can use the <xref:System.Configuration.SettingsSerializeAsAttribute> to mark a setting for either binary or custom serialization using the <xref:System.Configuration.SettingsSerializeAs> enumeration. For more information on creating your own settings class in code, see [How to: Create Application Settings](../../../../docs/framework/winforms/advanced/how-to-create-application-settings.md).  
+ If you implement your own settings class, you can use the <xref:System.Configuration.SettingsSerializeAsAttribute> to mark a setting for either binary or custom serialization using the <xref:System.Configuration.SettingsSerializeAs> enumeration. For more information on creating your own settings class in code, see [How to: Create Application Settings](how-to-create-application-settings.md).  
   
 ### Settings File Locations  
  The location of the `app`.exe.config and *user*.config files will differ based on how the application is installed. For a Windows Forms-based application copied onto the local computer, `app`.exe.config will reside in the same directory as the base directory of the application's main executable file, and *user*.config will reside in the location specified by the <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A?displayProperty=nameWithType> property. For an application installed by means of [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], both of these files will reside in the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] Data Directory underneath %InstallRoot%\Documents and Settings\\*username*\Local Settings.  
@@ -121,8 +121,8 @@ This topic describes how the Application Settings architecture works, and explor
   
  Your provider will need to implement one property and one method whose implementations may not be obvious. The <xref:System.Configuration.SettingsProvider.ApplicationName%2A> property is an abstract property of <xref:System.Configuration.SettingsProvider>; you should program it to return the following:  
   
- [!code-csharp[ApplicationSettings.Architecture#2](../../../../samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Architecture/CS/DummyClass.cs#2)]
- [!code-vb[ApplicationSettings.Architecture#2](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Architecture/VB/DummyProviderClass.vb#2)]  
+ [!code-csharp[ApplicationSettings.Architecture#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Architecture/CS/DummyClass.cs#2)]
+ [!code-vb[ApplicationSettings.Architecture#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Architecture/VB/DummyProviderClass.vb#2)]  
   
  Your derived class must also implement an `Initialize` method that takes no arguments and returns no value. This method is not defined by <xref:System.Configuration.SettingsProvider>.  
   
@@ -130,8 +130,8 @@ This topic describes how the Application Settings architecture works, and explor
   
  Once you have implemented and compiled your provider, you need to instruct your settings class to use this provider instead of the default. You accomplish this through the <xref:System.Configuration.SettingsProviderAttribute>. If applied to an entire settings class, the provider is used for each setting that the class defines; if applied to individual settings, Application Settings architecture uses that provider for those settings only, and uses <xref:System.Configuration.LocalFileSettingsProvider> for the rest. The following code example shows how to instruct the settings class to use your custom provider.  
   
- [!code-csharp[ApplicationSettings.Architecture#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Architecture/CS/DummyClass.cs#1)]
- [!code-vb[ApplicationSettings.Architecture#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Architecture/VB/DummyProviderClass.vb#1)]  
+ [!code-csharp[ApplicationSettings.Architecture#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Architecture/CS/DummyClass.cs#1)]
+ [!code-vb[ApplicationSettings.Architecture#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Architecture/VB/DummyProviderClass.vb#1)]  
   
  A provider may be called from multiple threads simultaneously, but it will always write to the same storage location; therefore, the Application Settings architecture will only ever instantiate a single instance of your provider class.  
   
@@ -144,7 +144,7 @@ This topic describes how the Application Settings architecture works, and explor
 - <xref:System.Configuration.ApplicationSettingsBase>
 - <xref:System.Configuration.SettingsProvider>
 - <xref:System.Configuration.LocalFileSettingsProvider>
-- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)
-- [Application Settings for Custom Controls](../../../../docs/framework/winforms/advanced/application-settings-for-custom-controls.md)
+- [Application Settings Overview](application-settings-overview.md)
+- [Application Settings for Custom Controls](application-settings-for-custom-controls.md)
 - [ClickOnce and Application Settings](/visualstudio/deployment/clickonce-and-application-settings)
-- [Application Settings Schema](../../../../docs/framework/configure-apps/file-schema/application-settings-schema.md)
+- [Application Settings Schema](../../configure-apps/file-schema/application-settings-schema.md)

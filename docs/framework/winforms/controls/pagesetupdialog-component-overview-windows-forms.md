@@ -18,4 +18,4 @@ The Windows Forms <xref:System.Windows.Forms.PageSetupDialog> component is a pre
   
 ## See also
 - <xref:System.Windows.Forms.PageSetupDialog>
-- [PageSetupDialog Component](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md)
+- [PageSetupDialog Component](pagesetupdialog-component-windows-forms.md)

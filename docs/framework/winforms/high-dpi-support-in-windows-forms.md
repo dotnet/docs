@@ -43,7 +43,7 @@ In addition, to configure high DPI support in your Windows Forms application, yo
 
 - Enable per-monitor DPI awareness in the *app.config* file.
 
-  Windows Forms introduces a new [`<System.Windows.Forms.ApplicationConfigurationSection>`](../../../docs/framework/configure-apps/file-schema/winforms/index.md) element to support new features and customizations added starting with the .NET Framework 4.7. To take advantage of the new features that support high DPI, add the following to your application configuration file.   
+  Windows Forms introduces a new [`<System.Windows.Forms.ApplicationConfigurationSection>`](../configure-apps/file-schema/winforms/index.md) element to support new features and customizations added starting with the .NET Framework 4.7. To take advantage of the new features that support high DPI, add the following to your application configuration file.   
 
   ```xml
   <System.Windows.Forms.ApplicationConfigurationSection>
@@ -78,7 +78,7 @@ Setting the `DpiAwareness` value to `PerMonitorV2` enables all high DPI awarenes
 </System.Windows.Forms.ApplicationConfigurationSection>	   
 ```
 
-For a list of individual keys and their values, see [Windows Forms Add Configuration Element](../../../docs/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md).
+For a list of individual keys and their values, see [Windows Forms Add Configuration Element](../configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md).
 
 ## New DPI change events
 
@@ -126,5 +126,5 @@ Console.WriteLine(AppDomain.CurrentDomain.SetupInformation.TargetFrameworkName);
 
 ## See also
 
-- [Windows Forms Add Configuration Element](../../../docs/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md)
-- [Adjusting the Size and Scale of Windows Forms](../../../docs/framework/winforms/adjusting-the-size-and-scale-of-windows-forms.md)
+- [Windows Forms Add Configuration Element](../configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md)
+- [Adjusting the Size and Scale of Windows Forms](adjusting-the-size-and-scale-of-windows-forms.md)

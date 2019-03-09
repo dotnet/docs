@@ -1,10 +1,11 @@
 ---
 title: Designing the microservice application layer and Web API
-description: .NET Microservices Architecture for Containerized .NET Applications | A brief mention of the SOLID priciples for designing the application layer.
+description: .NET Microservices Architecture for Containerized .NET Applications | A brief mention of the SOLID principles for designing the application layer.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
 ---
+
 # Design the microservice application layer and Web API
 
 ## Use SOLID principles and Dependency Injection
@@ -40,6 +41,6 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
 - **Steve Smith. New is Glue** \
   [*https://ardalis.com/new-is-glue*](https://ardalis.com/new-is-glue)
 
->[!div class="step-by-step"]
->[Previous](nosql-database-persistence-infrastructure.md)
->[Next](microservice-application-layer-implementation-web-api.md)
+> [!div class="step-by-step"]
+> [Previous](nosql-database-persistence-infrastructure.md)
+> [Next](microservice-application-layer-implementation-web-api.md)

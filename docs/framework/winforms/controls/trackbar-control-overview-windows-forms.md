@@ -19,4 +19,4 @@ The Windows Forms <xref:System.Windows.Forms.TrackBar> control (also sometimes c
   
 ## See also
 - <xref:System.Windows.Forms.TrackBar>
-- [TrackBar Control](../../../../docs/framework/winforms/controls/trackbar-control-windows-forms.md)
+- [TrackBar Control](trackbar-control-windows-forms.md)

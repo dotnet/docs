@@ -22,14 +22,14 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  The following illustration shows the line, the ellipse, and the rectangle. Note that the color gradient repeats itself as the horizontal coordinate increases beyond 200.  
   
- ![Linear Gradient](./media/how-to-create-a-linear-gradient/gradient-ellipse-rectangle.png "Shows gradient in the line, ellipse, and rectangle.")  
+ ![Shows gradient in the line, ellipse, and rectangle.](./media/how-to-create-a-linear-gradient/gradient-ellipse-rectangle.png "Shows gradient in the line, ellipse, and rectangle.")  
   
 ### To use horizontal linear gradients  
   
 -   Pass in the opaque red and opaque blue as the third and fourth argument, respectively.  
   
-     [!code-csharp[System.Drawing.UsingaGradientBrush#21](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#21)]
-     [!code-vb[System.Drawing.UsingaGradientBrush#21](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#21)]  
+     [!code-csharp[System.Drawing.UsingaGradientBrush#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#21)]
+     [!code-vb[System.Drawing.UsingaGradientBrush#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#21)]  
   
  In the preceding example, the color components change linearly as you move from a horizontal coordinate of 0 to a horizontal coordinate of 200. For example, a point whose first coordinate is halfway between 0 and 200 will have a blue component that is halfway between 0 and 255.  
   
@@ -47,14 +47,14 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  The following illustration shows the resulting ellipse and rectangle.  
   
- ![Linear Gradient](./media/how-to-create-a-linear-gradient/gradient-ellipse-rectangle.png "Shows gradient in the ellipse and rectangle.")  
+ ![Shows gradient in the ellipse and rectangle.](./media/how-to-create-a-linear-gradient/gradient-ellipse-rectangle.png "Shows gradient in the ellipse and rectangle.")  
   
 ### To customize linear gradients  
   
 -   Pass in the opaque black and opaque red as the third and fourth argument, respectively.  
   
-     [!code-csharp[System.Drawing.UsingaGradientBrush#22](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#22)]
-     [!code-vb[System.Drawing.UsingaGradientBrush#22](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#22)]  
+     [!code-csharp[System.Drawing.UsingaGradientBrush#22](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#22)]
+     [!code-vb[System.Drawing.UsingaGradientBrush#22](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#22)]  
   
  The gradients in the preceding examples have been horizontal; that is, the color changes gradually as you move along any horizontal line. You can also define vertical gradients and diagonal gradients.  
   
@@ -62,15 +62,15 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  The following illustration shows the line and the ellipse. Note that the color in the ellipse changes gradually as you move along any line that is parallel to the line passing through (0, 0) and (200, 100).  
   
- ![Linear Gradient](./media/how-to-create-a-linear-gradient/gradient-line-ellipse.png "Shows gradient in the line and ellipse.")  
+ ![Shows gradient in the line and ellipse.](./media/how-to-create-a-linear-gradient/gradient-line-ellipse.png "Shows gradient in the line and ellipse.")  
   
 ### To create diagonal linear gradients  
   
 -   Pass in the opaque blue and opaque green as the third and fourth argument, respectively.  
   
-     [!code-csharp[System.Drawing.UsingaGradientBrush#23](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#23)]
-     [!code-vb[System.Drawing.UsingaGradientBrush#23](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#23)]  
+     [!code-csharp[System.Drawing.UsingaGradientBrush#23](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#23)]
+     [!code-vb[System.Drawing.UsingaGradientBrush#23](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#23)]  
   
 ## See also
-- [Using a Gradient Brush to Fill Shapes](../../../../docs/framework/winforms/advanced/using-a-gradient-brush-to-fill-shapes.md)
-- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
+- [Using a Gradient Brush to Fill Shapes](using-a-gradient-brush-to-fill-shapes.md)
+- [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)

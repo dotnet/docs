@@ -21,7 +21,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a 
   
 ### To load a file into the RichTextBox control  
   
-1.  Determine the path of the file to be opened using the <xref:System.Windows.Forms.OpenFileDialog> component. For an overview, see [OpenFileDialog Component Overview](../../../../docs/framework/winforms/controls/openfiledialog-component-overview-windows-forms.md).  
+1.  Determine the path of the file to be opened using the <xref:System.Windows.Forms.OpenFileDialog> component. For an overview, see [OpenFileDialog Component Overview](openfiledialog-component-overview-windows-forms.md).  
   
 2.  Call the <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> method of the <xref:System.Windows.Forms.RichTextBox> control, specifying the file to load and optionally a file type. In the example below, the file to load is taken from the <xref:System.Windows.Forms.OpenFileDialog> component's <xref:System.Windows.Forms.FileDialog.FileName%2A> property. If you call the method with a file name as its only argument, the file type will be assumed to be RTF. To specify another file type, call the method with a value of the <xref:System.Windows.Forms.RichTextBoxStreamType> enumeration as its second argument.  
   
@@ -72,10 +72,10 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a 
     ```  
   
     > [!IMPORTANT]
-    >  To run this process, your assembly may require a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. If you are running in a partial-trust context, the process might throw an exception because of insufficient privileges. For more information, see [Code Access Security Basics](../../../../docs/framework/misc/code-access-security-basics.md).  
+    >  To run this process, your assembly may require a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. If you are running in a partial-trust context, the process might throw an exception because of insufficient privileges. For more information, see [Code Access Security Basics](../../misc/code-access-security-basics.md).  
   
 ## See also
 - <xref:System.Windows.Forms.RichTextBox.LoadFile%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.RichTextBox>
-- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- [RichTextBox Control](richtextbox-control-windows-forms.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

@@ -1,17 +1,23 @@
 ---
-title: Create a game match up list app with Infer.NET and probalistic programming
-description: Discover how to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
-ms.date: 03/01/2019
+title: Create a game match up list app with Infer.NET and probabilistic programming
+description: Discover how to use probabilistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
-#Customer intent: As a developer, I want to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
+#Customer intent: As a developer, I want to use probabilistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
 ---
+
 # Create a game match up list app with Infer.NET and probabilistic programming
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 This how-to guide teaches you about probabilistic programming using Infer.NET. Probabilistic programming is a machine learning approach where custom models are expressed as computer programs. It allows for incorporating domain knowledge in the models and makes the machine learning system more interpretable. It also supports online inference – the process of learning as new data arrives. Infer.NET is used in various products at Microsoft in Azure, Xbox, and Bing.
 
 ## What is probabilistic programming?
 
-Probabilistic programming allows you to create statistical models of real-world processes. 
+Probabilistic programming allows you to create statistical models of real-world processes.
 
 ## Prerequisites
 
@@ -80,7 +86,7 @@ namespace myApp
             var winnerData = new[] { 0, 0, 0, 1, 3, 4 };
             var loserData = new[] { 1, 3, 4, 2, 1, 2 };
 
-            // Define the statistical model as a probabilistic program 
+            // Define the statistical model as a probabilistic program
             var game = new Range(winnerData.Length);
             var player = new Range(winnerData.Concat(loserData).Max() + 1);
             var playerSkills = Variable.Array<double>(player);
@@ -144,7 +150,7 @@ Player 1 skill: Gaussian(4.955, 3.503)
 Player 2 skill: Gaussian(2.639, 4.288)
 ```
 
-In the results, notice that player 3 ranks slightly higher than player 4 according to our model. That’s because the victory of player 3 over player 1 is more significant than the victory of player 4 over player 2 – note that player 1 beats player 2. Player 0 is the overall champ!  
+In the results, notice that player 3 ranks slightly higher than player 4 according to our model. That’s because the victory of player 3 over player 1 is more significant than the victory of player 4 over player 2 – note that player 1 beats player 2. Player 0 is the overall champ!
 
 ## Keep learning
 

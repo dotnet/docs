@@ -13,7 +13,7 @@ ms.assetid: 796b622c-3ba9-4356-93bb-e217fc52f2c7
 The Windows Forms <xref:System.Windows.Forms.FolderBrowserDialog> component is a modal dialog box that is used for browsing and selecting folders. New folders can also be created from within the <xref:System.Windows.Forms.FolderBrowserDialog> component.  
   
 > [!NOTE]
->  To select files, instead of folders, use the [OpenFileDialog](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md) component.  
+>  To select files, instead of folders, use the [OpenFileDialog](openfiledialog-component-windows-forms.md) component.  
   
  The <xref:System.Windows.Forms.FolderBrowserDialog> component is displayed at run time using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method. Set the <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> property to determine the top-most folder and any subfolders that will appear within the tree view of the dialog box. Once the dialog box has been shown, you can use the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> property to get the path of the folder that was selected.  
   
@@ -21,5 +21,5 @@ The Windows Forms <xref:System.Windows.Forms.FolderBrowserDialog> component is a
   
 ## See also
 - <xref:System.Windows.Forms.FolderBrowserDialog>
-- [How to: Choose Folders with the Windows Forms FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/how-to-choose-folders-with-the-windows-forms-folderbrowserdialog-component.md)
-- [FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-windows-forms.md)
+- [How to: Choose Folders with the Windows Forms FolderBrowserDialog Component](how-to-choose-folders-with-the-windows-forms-folderbrowserdialog-component.md)
+- [FolderBrowserDialog Component](folderbrowserdialog-component-windows-forms.md)

@@ -13,7 +13,7 @@ ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
 # How to: Format the Windows Forms DataGrid Control Using the Designer
 
 > [!NOTE]
->  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
+>  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
  Applying different colors to various parts of a <xref:System.Windows.Forms.DataGrid> control can help to make the information in it easier to read and interpret. Color can be applied to rows and columns. Rows and columns can also be hidden or shown at your discretion.  
   
@@ -27,7 +27,7 @@ ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
   
  As an initial step in formatting a data grid, you can set the properties of the <xref:System.Windows.Forms.DataGrid> itself. These color and format choices form a base from which you can then make changes depending on the data tables and columns displayed.  
   
- The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.DataGrid> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md). In Visual Studio 2005, the <xref:System.Windows.Forms.DataGrid> control is not in the **Toolbox** by default. For more information, see [How to: Add Items to the Toolbox](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165355(v=vs.100)).  
+ The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.DataGrid> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md). In Visual Studio 2005, the <xref:System.Windows.Forms.DataGrid> control is not in the **Toolbox** by default. For more information, see [How to: Add Items to the Toolbox](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165355(v=vs.100)).  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -67,13 +67,13 @@ ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
     > [!NOTE]
     >  When you are customizing the colors of controls, it is possible to make the control inaccessible due to poor color choice (for example, red and green). Use the colors available on the **System Colors** palette to avoid this issue.
 
-     The following procedure requires a <xref:System.Windows.Forms.DataGrid> control bound to a data table. For more information, see [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md).
+     The following procedure requires a <xref:System.Windows.Forms.DataGrid> control bound to a data table. For more information, see [How to: Bind the Windows Forms DataGrid Control to a Data Source](how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md).
 
 ### To set the table and column style of a data table at design time
 
 1.  Select the <xref:System.Windows.Forms.DataGrid> control on your form.
 
-2.  In the **Properties** window, select the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property and click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](./media/how-to-format-the-windows-forms-datagrid-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button.
+2.  In the **Properties** window, select the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property and click the **Ellipsis** (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/how-to-format-the-windows-forms-datagrid-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button.
 
 3.  In the **DataGridTableStyle Collection Editor** dialog box, click **Add** to add a table style to the collection.
 
@@ -83,19 +83,19 @@ ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
 
      The mapping name is used to specify which table style should be used with which table.
 
-5.  In the **DataGridTableStyle Collection Editor**, select the <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> property and click the ellipsis button (![VisualStudioEllipsesButton screenshot](./media/how-to-format-the-windows-forms-datagrid-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")).
+5.  In the **DataGridTableStyle Collection Editor**, select the <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> property and click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/how-to-format-the-windows-forms-datagrid-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")).
 
 6.  In the **DataGridColumnStyle Collection Editor** dialog box, add column styles to the table style you created.
 
      With the **DataGridColumnStyle Collection Editor**, you can add and remove column styles, set display and layout properties, and set the mapping name and formatting strings for the data columns.
 
     > [!NOTE]
-    >  For more information about formatting strings, see [Formatting Types](../../../../docs/standard/base-types/formatting-types.md).
+    >  For more information about formatting strings, see [Formatting Types](../../../standard/base-types/formatting-types.md).
 
 ## See also
 
 - <xref:System.Windows.Forms.GridTableStylesCollection>
 - <xref:System.Windows.Forms.GridColumnStylesCollection>
 - <xref:System.Windows.Forms.DataGrid>
-- [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)
-- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+- [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)
+- [DataGrid Control](datagrid-control-windows-forms.md)

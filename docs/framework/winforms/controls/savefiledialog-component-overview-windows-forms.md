@@ -20,4 +20,4 @@ The Windows Forms <xref:System.Windows.Forms.SaveFileDialog> component is a pre-
   
 ## See also
 - <xref:System.Windows.Forms.SaveFileDialog>
-- [SaveFileDialog Component](../../../../docs/framework/winforms/controls/savefiledialog-component-windows-forms.md)
+- [SaveFileDialog Component](savefiledialog-component-windows-forms.md)

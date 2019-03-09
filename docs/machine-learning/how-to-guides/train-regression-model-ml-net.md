@@ -1,11 +1,16 @@
 ---
 title: Train a regression model to predict a value using ML.NET
 description: Discover how to train a machine learning regression model to predict a value using ML.NET
-ms.date: 02/06/2019
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use ML.NET so that I can train a regression model to predict a value.
 ---
 # Train a regression model to predict a value using ML.NET
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 Generally, there are three steps for model training in ML.NET:
 

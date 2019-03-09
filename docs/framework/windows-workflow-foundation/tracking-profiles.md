@@ -339,7 +339,7 @@ Tracking query elements are used to create a tracking profile using either an XM
 > [!WARNING]
 > For a WF using the Workflow service host, the tracking profile is typically created using a configuration file. It is also possible to create a tracking profile with code using the tracking profile and tracking query API.
 
-A profile configured as an XML configuration file is applied to a tracking participant using a behavior extension. This is added to a WorkflowServiceHost as described in the later section [Configuring Tracking for a Workflow](../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).
+A profile configured as an XML configuration file is applied to a tracking participant using a behavior extension. This is added to a WorkflowServiceHost as described in the later section [Configuring Tracking for a Workflow](configuring-tracking-for-a-workflow.md).
 
 The verbosity of the tracking records emitted by the host is determined by configuration settings within the tracking profile. A tracking participant subscribes to tracking records by adding queries to a tracking profile. To subscribe to all tracking records, the tracking profile needs to specify all tracking queries using "\*" in the name fields in each of the queries.
 
@@ -382,6 +382,6 @@ Here are some of the common examples of tracking profiles.
 
 ## See also
 
-- [SQL Tracking](../../../docs/framework/windows-workflow-foundation/samples/sql-tracking.md)
+- [SQL Tracking](./samples/sql-tracking.md)
 - [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
 - [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

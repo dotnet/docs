@@ -52,7 +52,7 @@ A persistence participant can participate in a persistence operation (Save or Lo
   
 ## In This Section  
   
--   [How to: Create a Custom Persistence Participant](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-persistence-participant.md)  
+-   [How to: Create a Custom Persistence Participant](how-to-create-a-custom-persistence-participant.md)  
   
 ## See also
-- [Store Extensibility](../../../docs/framework/windows-workflow-foundation/store-extensibility.md)
+- [Store Extensibility](store-extensibility.md)

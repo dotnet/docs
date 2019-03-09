@@ -7,10 +7,10 @@ dev_langs:
 ms.assetid: 185d7aea-68a6-4bd8-adde-45050f33170a
 ---
 # How to: Create a Flowchart Workflow
-Workflows can be constructed from built-in activities as well as from custom activities. This topic steps through creating a workflow that uses both built-in activities such as the <xref:System.Activities.Statements.Flowchart> activity, and the custom activities from the previous [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) topic. The workflow models a number guessing game.  
+Workflows can be constructed from built-in activities as well as from custom activities. This topic steps through creating a workflow that uses both built-in activities such as the <xref:System.Activities.Statements.Flowchart> activity, and the custom activities from the previous [How to: Create an Activity](how-to-create-an-activity.md) topic. The workflow models a number guessing game.  
   
 > [!NOTE]
->  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md).  
+>  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](how-to-create-an-activity.md).  
   
 > [!NOTE]
 >  To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
@@ -136,19 +136,19 @@ Workflows can be constructed from built-in activities as well as from custom act
   
      The following example illustrates the completed workflow.  
   
-     ![Completed Windows Workflow Foundation](../../../docs/framework/windows-workflow-foundation/media/gettingstartedtutorialcompletedflowchart.PNG "GettingStartedTutorialCompletedFlowchart")  
+     ![Completed Windows Workflow Foundation](./media/gettingstartedtutorialcompletedflowchart.PNG "GettingStartedTutorialCompletedFlowchart")  
   
 ### To build the workflow  
   
 1.  Press CTRL+SHIFT+B to build the solution.  
   
-     For instructions on how to run the workflow, please see the next topic, [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md). If you have already completed the [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md) step with a different style of workflow and wish to run it using the flowchart workflow from this step, skip ahead to the [To build and run the application](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md#BKMK_ToRunTheApplication) section of [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md).  
+     For instructions on how to run the workflow, please see the next topic, [How to: Run a Workflow](how-to-run-a-workflow.md). If you have already completed the [How to: Run a Workflow](how-to-run-a-workflow.md) step with a different style of workflow and wish to run it using the flowchart workflow from this step, skip ahead to the [To build and run the application](how-to-run-a-workflow.md#BKMK_ToRunTheApplication) section of [How to: Run a Workflow](how-to-run-a-workflow.md).  
   
 ## See also
 - <xref:System.Activities.Statements.Flowchart>
 - <xref:System.Activities.Statements.FlowDecision>
-- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)
-- [Designing Workflows](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)
-- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)
-- [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md)
-- [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md)
+- [Windows Workflow Foundation Programming](programming.md)
+- [Designing Workflows](designing-workflows.md)
+- [Getting Started Tutorial](getting-started-tutorial.md)
+- [How to: Create an Activity](how-to-create-an-activity.md)
+- [How to: Run a Workflow](how-to-run-a-workflow.md)

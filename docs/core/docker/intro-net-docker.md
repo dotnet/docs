@@ -173,7 +173,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 Now that you have learned about the Docker platform and different Docker images, the next step is to explore the rich Docker ecosystem. The following links show you how the Microsoft tools complement container development.
 
-* [Using .NET and Docker together](https://blogs.msdn.microsoft.com/dotnet/2017/05/25/using-net-and-docker-together/)
+* [Using .NET and Docker together](https://devblogs.microsoft.com/dotnet/using-net-and-docker-together/)
 * [Designing and Developing Multi-Container and Microservice-Based .NET Applications](../../standard/microservices-architecture/multi-container-microservice-net-applications/index.md)
 * [Visual Studio Code Docker extension](https://code.visualstudio.com/docs/languages/dockerfile)
 * [Learn how to use Azure Service Fabric](/azure/service-fabric/index)

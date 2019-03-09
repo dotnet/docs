@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "properties, returned by UI Automation providers"
   - "UI Automation, providers returning properties"
 ms.assetid: 5eba950e-b9e1-48eb-ab8e-b69db76bf589
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Return Properties from a UI Automation Provider
 > [!NOTE]

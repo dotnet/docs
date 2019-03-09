@@ -36,14 +36,14 @@ The following sections describe attributes, child elements, and parent elements.
 
 | `key` name | Values | Description |
 | ---------- | ------ | ----------- |
-| "AnchorLayout.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether anchored controls are scaled in a single pass. "true" to disable single pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
+| "AnchorLayout.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether anchored controls are scaled in a single pass. "true" to disable single pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#remarks) for more information. |
 | "DpiAwareness" | "PerMonitorV2"&#124;"false" | Indicates whether an application is DPI-aware. Set the key to "PerMonitorV2" to support Dpi awareness; otherwise, set it to "false". DPI awareness is an opt-in feature; to take advantage of Windows Forms' high DPI support, you should set its value to "PerMonitorV2". See the [Remarks](#remarks) section for more information. |
 | "CheckedListBox.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.CheckedListBox> control takes advantage of scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of caling and layout improvements; otherwise, "false". |
 | "DataGridView.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.DataGridView> control scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of DPI awareness; "false" otherwise. |
 | "DisableDpiChangedMessageHandling" | "true"&#124;"false" | "true" to opt out of receiving messages related to DPI scaling changes; "false" otherwise. See the [Remarks](#remarks) section for more information. |
 | "EnableWindowsFormsHighDpiAutoResizing" | "true"&#124;"false" | Indicates whether a Windows Forms application is automatically resized due to DPI scaling changes. "true" to enable automatic resizing; otherwise, false. |
-| "Form.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.Form> is scaled in a single pass. "true" to disable single-pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
-| "MonthCalendar.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.MonthCalendar> control is scaled in a single pass. "true" to disable single-pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
+| "Form.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.Form> is scaled in a single pass. "true" to disable single-pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#remarks) for more information. |
+| "MonthCalendar.DisableSinglePassControlScaling" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.MonthCalendar> control is scaled in a single pass. "true" to disable single-pass scaling; otherwise, false. See the "Single pass scaling" section in the [Remarks](#remarks) for more information. |
 | "Toolstrip.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the <xref:System.Windows.Forms.ToolStrip> control takes advantage of scaling and layout improvements introduced in the .NET Framework 4.7. "true" to opt out of DPI awareness; "false" otherwise. |
 
 ### Child elements
@@ -56,7 +56,7 @@ None.
 | ------- | ----------- |
 | [`<System.Windows.Forms.ApplicationConfigurationSection>`](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md) | Configures support for new Windows Forms application features. |
 
-## <a name="remarks" /> Remarks
+## Remarks
 
 Starting with the .NET Framework 4.7, the `<System.Windows.Forms.ApplicationConfigurationSection>` element allows you to configure Windows Forms applications to take advantage of features added in recent releases of the .NET Framework.
 
@@ -91,6 +91,7 @@ The single default opt-in setting provided by setting `DpiAwareness` to `PerMoni
    <add key="EnableWindowsFormsHighDpiAutoResizing" value="false" />
 </System.Windows.Forms.ApplicationConfigurationSection>
 ```
+
 Typically, you opt out of a particular feature because you've chosen to handle it programmatically.
 
 For more information on taking advantage of High DPI support in Windows Forms applications, see [High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md).

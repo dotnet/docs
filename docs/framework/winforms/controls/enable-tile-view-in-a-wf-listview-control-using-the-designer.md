@@ -12,7 +12,7 @@ The tile view feature of the <xref:System.Windows.Forms.ListView> control enable
   
  The tile view uses a 32 x 32 icon and several lines of text, as shown in the following image.  
   
- ![Tile View in a ListView Control](./media/listviewtile.gif "ListViewTile")  
+ ![Tile View in a ListView Control](./media/enable-tile-view-in-a-wf-listview-control-using-the-designer/tile-view-in-listview-control.gif "Tile view icons and text")  
   
  Tile view properties and methods enable you to specify which column fields to display for each item, and to collectively control the size and appearance of all items within a tile view window. For clarity, the first line of text in a tile is always the item's name; it cannot be changed.  
   

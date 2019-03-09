@@ -27,7 +27,7 @@ The two teams are collaborating through a foundational platform (Docker containe
 
 There are many reasons that will increase the number of containerized applications in the upcoming years, and one of these reasons is the creation of applications based on microservices.
 
-During the last 15 years, the use of web services has been the base of thousands of applications, and probably, after a few years, we will find the same situation with microservice-based applications running on Docker containers.
+During the last 15 years, the use of web services has been the base of thousands of applications, and probably, after a few years, we'll find the same situation with microservice-based applications running on Docker containers.
 
 It is also worth to mention that you can also use Docker containers for monolithic applications and you still get most of the benefits of Docker. Containers are not targeting only microservices.
 
@@ -47,7 +47,7 @@ These challenges create new demands when using DevOps tools, so you'll have to d
 
 - How can we use Open Source tools/platforms for containers in Microsoft Azure?
 
-If you can answer all those questions, you will be better prepared to move your applications (existing or new apps) to Docker containers. 
+If you can answer all those questions, you'll be better prepared to move your applications (existing or new apps) to Docker containers. 
 
 ## Introduction to a generic end-to-end Docker application life cycle workflow
 
@@ -57,11 +57,11 @@ Figure 2-2 presents a more detailed workflow for a Docker application life cycle
 
 **Figure 2-2.** High-level workflow for the Docker containerized application life cycle
 
-Everything begins with the developer, who starts writing code in the inner-loop workflow. The inner-loop stage is where developers define everything that happens before pushing code into the code repository (for example, a source control system such as Git). After it is committed, the repository triggers Continuous Integration (CI) and the rest of the workflow.
+Everything begins with the developer, who starts writing code in the inner-loop workflow. The inner-loop stage is where developers define everything that happens before pushing code into the code repository (for example, a source control system such as Git). After it's committed, the repository triggers Continuous Integration (CI) and the rest of the workflow.
 
 The inner loop basically consists of typical steps like "code," "run," "test," and "debug," plus the additional steps needed right before running the app locally. This is the developer's process to run and test the app as a Docker container. The inner-loop workflow will be explained in the sections that follow.
 
-Taking a step back to look at the end-to end workflow, the DevOps workflow is more than a technology or a tool set: it's a mindset that requires cultural evolution. It is people, processes, and the appropriate tools to make your application life cycle faster and more predictable. Enterprises that adopt a containerized workflow typically restructure their organizations to represent people and processes that match the containerized workflow.
+Taking a step back to look at the end-to end workflow, the DevOps workflow is more than a technology or a tool set: it's a mindset that requires cultural evolution. It's people, processes, and the appropriate tools to make your application life cycle faster and more predictable. Enterprises that adopt a containerized workflow typically restructure their organizations to represent people and processes that match the containerized workflow.
 
 Practicing DevOps can help teams respond faster together to competitive pressures by replacing error-prone manual processes with automation, which results in improved traceability and repeatable workflows. Organizations also can manage environments more efficiently and realize cost savings with a combination of on-premises and cloud resources as well as tightly integrated tooling.
 

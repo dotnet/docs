@@ -8,23 +8,23 @@ This section contains samples that demonstrate advanced custom activities in Win
   
 ## In This Section
 
- [SendMail Custom Activity](../../../../docs/framework/windows-workflow-foundation/samples/sendmail-custom-activity.md)  
+ [SendMail Custom Activity](sendmail-custom-activity.md)  
  Demonstrates how to create a custom activity that derives from <xref:System.Activities.AsyncCodeActivity> to send mail using SMTP for use within a workflow application.  
   
- [Throttled Parallel ForEach](../../../../docs/framework/windows-workflow-foundation/samples/throttled-parallel-foreach.md)  
+ [Throttled Parallel ForEach](throttled-parallel-foreach.md)  
  Demonstrates how the `ThrottleParallelForEach` activity is similar to the <xref:System.Activities.Statements.ParallelForEach%601> activity with the one exception that it allows setting a concurrency factor to restrict the number of simultaneous branches to execute.
   
- [Database Access Activities](../../../../docs/framework/windows-workflow-foundation/samples/database-access-activities.md)  
+ [Database Access Activities](database-access-activities.md)  
  Demonstrates how to create activities that allow accessing databases to retrieve or modify information and use [ADO.NET](https://go.microsoft.com/fwlink/?LinkId=166081) to access the database.  
   
- [Externalized Policy Activity in .NET Framework 4.5](../../../../docs/framework/windows-workflow-foundation/samples/externalized-policy-activity-in-net-framework-4-5.md)  
+ [Externalized Policy Activity in .NET Framework 4.5](externalized-policy-activity-in-net-framework-4-5.md)  
  Demonstrates how the ExternalizedPolicy4 activity allows executing existing Windows Workflow Foundation in [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects in Windows Workflow Foundation in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] (WF 4.5) directly by using the rules engine that is shipped in WF 3.5. 
   
- [Non-Generic ForEach](../../../../docs/framework/windows-workflow-foundation/samples/non-generic-foreach.md)  
+ [Non-Generic ForEach](non-generic-foreach.md)  
  Demonstrates how to create a non-generic version of the <xref:System.Activities.Statements.ForEach%601> activity.  
   
- [Non-Generic ParallelForEach](../../../../docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md)  
+ [Non-Generic ParallelForEach](non-generic-parallelforeach.md)  
  Demonstrates how to create a non-generic version of the <xref:System.Activities.Statements.ParallelForEach%601> activity.  
   
- [Get WorkflowInstanceId](../../../../docs/framework/windows-workflow-foundation/samples/get-workflowinstanceid.md)  
+ [Get WorkflowInstanceId](get-workflowinstanceid.md)  
  Demonstrates how to use the custom activity, `GetWorkflowInstanceId`, to return the workflow instance ID.

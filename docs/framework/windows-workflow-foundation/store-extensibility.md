@@ -31,7 +31,7 @@ The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> class ha
     application.Extensions.Add(documentStatusExtension);
     ```
 
-     For more details about adding a custom persistence participant, see the [Persistence Participants](../../../docs/framework/windows-workflow-foundation/persistence-participants.md) sample.
+     For more details about adding a custom persistence participant, see the [Persistence Participants](persistence-participants.md) sample.
 
 3. The custom activities in the DP application populate various status fields in the **Execute** method.
 

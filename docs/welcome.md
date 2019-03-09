@@ -16,10 +16,10 @@ Build many types of apps with .NET, such as cloud, IoT, and games using free cro
 
 For news about .NET, check the following blogs:
 
-- [.NET Blog](https://blogs.msdn.microsoft.com/dotnet/)
-- [ASP.NET Blog](https://blogs.msdn.microsoft.com/webdev/)
-- [The Visual Studio Blog](https://blogs.msdn.microsoft.com/visualstudio/)
-- [The Visual Basic Team](https://blogs.msdn.microsoft.com/vbteam/)
+- [.NET Blog](https://devblogs.microsoft.com/dotnet/)
+- [ASP.NET Blog](https://devblogs.microsoft.com/aspnet/)
+- [The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)
+- [The Visual Basic Team](https://devblogs.microsoft.com/vbteam/)
 
 Also follow the latest .NET events:
 

@@ -19,8 +19,8 @@ The Windows Forms <xref:System.Windows.Forms.DomainUpDown> control is essentiall
 ## Key Properties  
  The key properties of the control are <xref:System.Windows.Forms.DomainUpDown.Items%2A>, <xref:System.Windows.Forms.UpDownBase.ReadOnly%2A>, and <xref:System.Windows.Forms.DomainUpDown.Wrap%2A>. The <xref:System.Windows.Forms.DomainUpDown.Items%2A> property contains the list of objects whose text values are displayed in the control. If <xref:System.Windows.Forms.UpDownBase.ReadOnly%2A> is set to `false`, the control automatically completes text that the user types and matches it to a value in the list. If <xref:System.Windows.Forms.DomainUpDown.Wrap%2A> is set to `true`, scrolling past the last item will take you to the first item in the list and vice versa. The key methods of the control are <xref:System.Windows.Forms.DomainUpDown.UpButton%2A> and <xref:System.Windows.Forms.DomainUpDown.DownButton%2A>.  
   
- This control displays only text strings. If you want a control that displays numeric values, use the <xref:System.Windows.Forms.NumericUpDown> control. For more information, see [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md).  
+ This control displays only text strings. If you want a control that displays numeric values, use the <xref:System.Windows.Forms.NumericUpDown> control. For more information, see [NumericUpDown Control Overview](numericupdown-control-overview-windows-forms.md).  
   
 ## See also
 - <xref:System.Windows.Forms.DomainUpDown>
-- [DomainUpDown Control](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)
+- [DomainUpDown Control](domainupdown-control-windows-forms.md)

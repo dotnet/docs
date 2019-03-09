@@ -19,6 +19,6 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to ad
   
 ## See also
 - <xref:System.Windows.Forms.LinkLabel>
-- [Label Control Overview](../../../../docs/framework/winforms/controls/label-control-overview-windows-forms.md)
-- [How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/link-to-an-object-or-web-page-with-wf-linklabel-control.md)
-- [How to: Change the Appearance of the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)
+- [Label Control Overview](label-control-overview-windows-forms.md)
+- [How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control](link-to-an-object-or-web-page-with-wf-linklabel-control.md)
+- [How to: Change the Appearance of the Windows Forms LinkLabel Control](how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)

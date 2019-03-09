@@ -246,8 +246,8 @@ The best practices in this article depend on recent security updates being insta
 
 To update the .NET Framework to allow the operating system to choose the best version of TLS to use, you must install at least:
 
-- The [.NET Framework August 2017 Preview of Quality Rollup](https://blogs.msdn.microsoft.com/dotnet/2017/08/16/net-framework-august-2017-preview-of-quality-rollup).
-- **Or** the [.NET Framework September 2017 Security and Quality Rollup](https://blogs.msdn.microsoft.com/dotnet/2017/09/12/net-framework-september-2017-security-and-quality-rollup).
+- The [.NET Framework August 2017 Preview of Quality Rollup](https://devblogs.microsoft.com/dotnet/net-framework-august-2017-preview-of-quality-rollup/).
+- **Or** the [.NET Framework September 2017 Security and Quality Rollup](https://devblogs.microsoft.com/dotnet/net-framework-september-2017-security-and-quality-rollup/).
 
 See also:
 

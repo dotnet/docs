@@ -18,7 +18,7 @@ The currently selected date or time in the Windows Forms <xref:System.Windows.Fo
   
 -   For date values, the <xref:System.DateTime.Month%2A>, <xref:System.DateTime.Day%2A>, and <xref:System.DateTime.Year%2A> properties return integer values for those time units of the selected date. The <xref:System.DateTime.DayOfWeek%2A> property returns a value indicating the selected day of the week (possible values are listed in the <xref:System.DayOfWeek> enumeration).  
   
--   For time values, the <xref:System.DateTime.Hour%2A>, <xref:System.DateTime.Minute%2A>, <xref:System.DateTime.Second%2A>, and <xref:System.DateTime.Millisecond%2A> properties return integer values for those time units. To configure the control to display times, see [How to: Display Time with the DateTimePicker Control](../../../../docs/framework/winforms/controls/how-to-display-time-with-the-datetimepicker-control.md).  
+-   For time values, the <xref:System.DateTime.Hour%2A>, <xref:System.DateTime.Minute%2A>, <xref:System.DateTime.Second%2A>, and <xref:System.DateTime.Millisecond%2A> properties return integer values for those time units. To configure the control to display times, see [How to: Display Time with the DateTimePicker Control](how-to-display-time-with-the-datetimepicker-control.md).  
   
 ### To set the date and time value of the control  
   
@@ -67,5 +67,5 @@ The currently selected date or time in the Windows Forms <xref:System.Windows.Fo
     ```  
   
 ## See also
-- [DateTimePicker Control](../../../../docs/framework/winforms/controls/datetimepicker-control-windows-forms.md)
-- [How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control](../../../../docs/framework/winforms/controls/display-a-date-in-a-custom-format-with-wf-datetimepicker-control.md)
+- [DateTimePicker Control](datetimepicker-control-windows-forms.md)
+- [How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control](display-a-date-in-a-custom-format-with-wf-datetimepicker-control.md)

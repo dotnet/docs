@@ -3,11 +3,12 @@ title: What's new in C# 7.2
 description: An overview of new features in C# 7.2.
 ms.date: 08/16/2017
 ---
+
 # What's new in C# 7.2
 
 C# 7.2 is another point release that adds a number of useful features.
 One theme for this release is working more efficiently with value types by
-avoiding unnecessary copies or allocations. 
+avoiding unnecessary copies or allocations.
 
 The remaining features are small, nice-to-have features.
 
@@ -30,13 +31,13 @@ The new language features in this release are:
 ## Safe efficient code enhancements
 
 Language features introduced in 7.2 let you work with value types
-while using reference semantics. They 
+while using reference semantics. They
 are designed to increase performance by minimizing copying value types without
 incurring the memory allocations associated with using reference types. The
 features include:
 
  - The `in` modifier on parameters, to specify that an argument is passed by reference but not modified by the called method. Adding the `in` modifier to an argument is a [source compatible change](version-update-considerations.md#source-compatible-changes).
- - The `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object. Adding the `ref readonly` modifier is a [source compatible change](version-update-considerations.md#source-compatible-changes), if the return is assigned to a value. Adding the `readonly` modifer to an existing `ref` return statement is an [incompatible change](version-update-considerations.md#incompatible-changes). It requires callers to update the declaration of `ref` local variables to include the `readonly` modifier.
+ - The `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object. Adding the `ref readonly` modifier is a [source compatible change](version-update-considerations.md#source-compatible-changes), if the return is assigned to a value. Adding the `readonly` modifier to an existing `ref` return statement is an [incompatible change](version-update-considerations.md#incompatible-changes). It requires callers to update the declaration of `ref` local variables to include the `readonly` modifier.
  - The `readonly struct` declaration, to indicate that a struct is immutable and should be passed as an `in` parameter to its member methods. Adding the `readonly` modifier to an existing struct declaration is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
  - The `ref struct` declaration, to indicate that a struct type accesses managed memory directly and must always be stack allocated. Adding the `ref` modifier to an existing `struct` declaration is an [incompatible change](version-update-considerations.md#incompatible-changes). A `ref struct` cannot be a member of a class or used in other locations where it may be allocated on the heap.
 
@@ -52,7 +53,7 @@ named arguments are in the correct positions. For more information see
 
 The implementation of support for digit separators in C# 7.0
 didn't allow the `_` to be the first character of the literal value. Hex
-and binary numeric literals may now begin with an `_`. 
+and binary numeric literals may now begin with an `_`.
 
 For example:
 

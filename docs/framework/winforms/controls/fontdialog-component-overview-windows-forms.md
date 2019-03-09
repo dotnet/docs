@@ -19,4 +19,4 @@ The Windows Forms <xref:System.Windows.Forms.FontDialog> component is a pre-conf
   
 ## See also
 - <xref:System.Windows.Forms.FontDialog>
-- [FontDialog Component](../../../../docs/framework/winforms/controls/fontdialog-component-windows-forms.md)
+- [FontDialog Component](fontdialog-component-windows-forms.md)

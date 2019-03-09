@@ -14,8 +14,8 @@ ms.assetid: 3b6a9296-1d5e-4d52-a4ba-94366d6fe302
 The following code example asynchronously loads a sound from an URL and then plays it on a new thread.  
   
 ## Example  
- [!code-csharp[System.Media.SoundPlayer.LoadAsync#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Media.SoundPlayer.LoadAsync/CS/Form1.cs#1)]
- [!code-vb[System.Media.SoundPlayer.LoadAsync#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Media.SoundPlayer.LoadAsync/VB/Form1.vb#1)]  
+ [!code-csharp[System.Media.SoundPlayer.LoadAsync#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Media.SoundPlayer.LoadAsync/CS/Form1.cs#1)]
+ [!code-vb[System.Media.SoundPlayer.LoadAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Media.SoundPlayer.LoadAsync/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
  This example requires:  
@@ -50,4 +50,4 @@ The following code example asynchronously loads a sound from an URL and then pla
 - <xref:System.Media.SoundPlayer.LoadAsync%2A>
 - <xref:System.Media.SoundPlayer.LoadCompleted>
 - <xref:System.Media.SoundPlayer.Play%2A>
-- [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)
+- [How to: Play a Sound from a Windows Form](how-to-play-a-sound-from-a-windows-form.md)

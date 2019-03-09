@@ -50,7 +50,7 @@ Dustin Metzgar
 ### Messaging
  Initially WF3 had very limited messaging support through external events or web services invocations. In .Net 3.5, workflows could be implemented as WCF clients or exposed as WCF services through <xref:System.Workflow.Activities.SendActivity> and <xref:System.Workflow.Activities.ReceiveActivity>. In WF4, the concept of workflow-based messaging programming has been further strengthened through the tight integration of WCF messaging logic into WF.
 
- The unified message processing pipeline provided in WCF in .Net 4 helps WF4 services to have significantly better performance and scalability than WF3. WF4 also provides richer messaging programming support that can model complex Message Exchange Patterns (MEPs). Developers can use either typed service contracts to achieve easy programming or un-typed service contracts to achieve better performance without paying serialization costs. The client-side channel caching support through the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class in WF4 helps developers build fast applications with minimal effort. For more information, see [Changing the Cache Sharing Levels for Send Activities](../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).
+ The unified message processing pipeline provided in WCF in .Net 4 helps WF4 services to have significantly better performance and scalability than WF3. WF4 also provides richer messaging programming support that can model complex Message Exchange Patterns (MEPs). Developers can use either typed service contracts to achieve easy programming or un-typed service contracts to achieve better performance without paying serialization costs. The client-side channel caching support through the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class in WF4 helps developers build fast applications with minimal effort. For more information, see [Changing the Cache Sharing Levels for Send Activities](../wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).
 
 ### Declarative Programming
  WF4 provides a clean and simple declarative programming framework to model business processes and services. The programming model supports fully declarative composition of activities, with no code-beside, greatly simplifying workflow authoring. In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], the XAML-based declarative programming framework has been unified into the single assembly System.Xaml.dll to support both WPF and WF.
@@ -64,7 +64,7 @@ Dustin Metzgar
  This section contains data on direct comparisons between individual activities in WF3 and WF4 workflows.  Key areas like persistence have a more profound impact on performance than the individual activity components.  The performance improvements in individual components in WF4 are important though because the components are now fast enough to be compared against hand-coded orchestration logic.  An example of which is covered in the next section: "Service Composition Scenario."
 
 ### Environment Setup
- ![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
+ ![Environment setup for workflow performance measurement](./media/performance/performance-test-environment.gif)
 
  The above figure shows the machine configuration used for component-level performance measurement. A single server and five clients connected over one 1-Gbps Ethernet network interface. For easy measurements, the server is configured to use a single core of a dual-proc/quad-core server  running Windows Server 2008 x86. The system CPU utilization is maintained at nearly 100%.
 
@@ -107,7 +107,7 @@ Dustin Metzgar
 
  The following diagram shows the workflows used for this test. The WF3 workflow is on the left and the WF4 workflow is on the right.
 
- ![WF3 ReplicatorActivity and WF4 ParallelForEach](./media/performance/replicator-and-parallel-for-wf3-wf4.gif "Replicator for WF3 and ParallelForEach for WF4")
+ ![WF3 ReplicatorActivity and WF4 ParallelForEach](./media/performance/replicator-and-parallel-for-wf3-wf4.gif)
 
 ### Sequential Workflow with Five Activities
  This test is meant to show the effect of having several activities execute in sequence.  There are five activities in the sequence.
@@ -410,7 +410,7 @@ public class Workflow1 : Activity
 
  While WF4 does not have a SQL tracking provider, AppFabric does.  AppFabric’s SQL tracking approach is to subscribe to ETW events with a Windows Service that batches the events and writes them to a SQL table designed for quick inserts.  A separate job drains the data from this table and reforms it into reporting tables that can be viewed on the AppFabric dashboard.  This means that a batch of tracking events is handled independent of the workflow it came from and therefore does not have to wait for a persistence point before being recorded.
 
- ETW events can be recorded with tools such as logman or xperf.  The compact ETL file can be viewed with a tool like xperfview or converted to a more readable format, such as XML, with tracerpt.  In WF3, the only option for getting tracking events without a SQL database is to create a custom tracking service. For more information about ETW, see [WCF Services and Event Tracing for Windows](../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md) and [Event Tracing - Windows applications](/windows/desktop/etw/event-tracing-portal).
+ ETW events can be recorded with tools such as logman or xperf.  The compact ETL file can be viewed with a tool like xperfview or converted to a more readable format, such as XML, with tracerpt.  In WF3, the only option for getting tracking events without a SQL database is to create a custom tracking service. For more information about ETW, see [WCF Services and Event Tracing for Windows](../wcf/samples/wcf-services-and-event-tracing-for-windows.md) and [Event Tracing - Windows applications](/windows/desktop/etw/event-tracing-portal).
 
  Enabling workflow tracking will impact performance in varying degrees.  The benchmark below uses the logman tool to consume the ETW tracking events and record them to an ETL file.  The cost of the SQL tracking in AppFabric is not in the scope of this article.  The basic tracking profile, also used in AppFabric, is shown in this benchmark.  Also included is the cost of tracking only health monitoring events.  These events are useful for troubleshooting problems and determining the average throughput of the system.
 

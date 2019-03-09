@@ -9,32 +9,32 @@ ms.assetid: 26dfac36-ae23-4909-9867-62495b55fb5e
 
 # How to: Update the Definition of a Running Workflow Instance
 
-Dynamic update provides a mechanism for workflow application developers to update the workflow definition of a persisted workflow instance. The required change can be to implement a bug fix, new requirements, or to accommodate unexpected changes. This step in the tutorial demonstrates how to use dynamic update to modify  persisted instances of the `v1` number guessing workflow to match the new functionality introduced in [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
+Dynamic update provides a mechanism for workflow application developers to update the workflow definition of a persisted workflow instance. The required change can be to implement a bug fix, new requirements, or to accommodate unexpected changes. This step in the tutorial demonstrates how to use dynamic update to modify  persisted instances of the `v1` number guessing workflow to match the new functionality introduced in [How to: Host Multiple Versions of a Workflow Side-by-Side](how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
 
 > [!NOTE]
 > To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).
 
 ## In this topic
 
-- [To create the CreateUpdateMaps project](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_CreateProject)
+- [To create the CreateUpdateMaps project](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_CreateProject)
 
-- [To update StateMachineNumberGuessWorkflow](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_StateMachine)
+- [To update StateMachineNumberGuessWorkflow](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_StateMachine)
 
-- [To update FlowchartNumberGuessWorkflow](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_Flowchart)
+- [To update FlowchartNumberGuessWorkflow](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_Flowchart)
 
-- [To update SequentialNumberGuessWorkflow](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_Sequential)
+- [To update SequentialNumberGuessWorkflow](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_Sequential)
 
-- [To build and run the CreateUpdateMaps application](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_CreateUpdateMaps)
+- [To build and run the CreateUpdateMaps application](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_CreateUpdateMaps)
 
-- [To build the updated workflow assembly](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_BuildAssembly)
+- [To build the updated workflow assembly](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_BuildAssembly)
 
-- [To update WorkflowVersionMap with the new versions](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_UpdateWorkflowVersionMap)
+- [To update WorkflowVersionMap with the new versions](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_UpdateWorkflowVersionMap)
 
-- [To apply the dynamic updates](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_ApplyUpdate)
+- [To apply the dynamic updates](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_ApplyUpdate)
 
-- [To run the application with the updated workflows](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_BuildAndRun)
+- [To run the application with the updated workflows](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_BuildAndRun)
 
-- [To enable starting previous versions of the workflows](../../../docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_StartPreviousVersions)
+- [To enable starting previous versions of the workflows](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_StartPreviousVersions)
 
 ### <a name="BKMK_CreateProject"></a> To create the CreateUpdateMaps project
 
@@ -252,7 +252,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
     StateMachine sm = wf.Implementation as StateMachine;
     ```
 
-3. Next, update the expressions of the two `WriteLine` activities that display whether the user's guess is too high or too low so that they match the updates made in [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
+3. Next, update the expressions of the two `WriteLine` activities that display whether the user's guess is too high or too low so that they match the updates made in [How to: Host Multiple Versions of a Workflow Side-by-Side](how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
 
     ```vb
     'Update the Text of the two WriteLine activities that write the
@@ -647,13 +647,13 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
 2. Choose **Open**, **Project/Solution** from the **File** menu.
 
-3. Navigate to the **NumberGuessWorkflowActivities_du** folder you created in [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md), select **NumberGuessWorkflowActivities.csproj** (or **vbproj**), and click **Open**.
+3. Navigate to the **NumberGuessWorkflowActivities_du** folder you created in [How to: Host Multiple Versions of a Workflow Side-by-Side](how-to-host-multiple-versions-of-a-workflow-side-by-side.md), select **NumberGuessWorkflowActivities.csproj** (or **vbproj**), and click **Open**.
 
 4. In **Solution Explorer**, right click **SequentialNumberGuessWorkflow.xaml** and choose **Exclude From Project**. Do the same thing for **FlowchartNumberGuessWorkflow.xaml** and **StateMachineNumberGuessWorkflow.xaml**. This step removes the previous versions of the workflow definitions from the project.
 
 5. Choose **Add Existing Item** from the **Project** menu.
 
-6. Navigate to the **NumberGuessWorkflowActivities_du** folder you created in [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
+6. Navigate to the **NumberGuessWorkflowActivities_du** folder you created in [How to: Host Multiple Versions of a Workflow Side-by-Side](how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
 
 7. Choose **XAML Files (\*.xaml;\*.xoml)** from the **Files of type** drop-down list.
 
@@ -670,7 +670,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
 11. Open Windows Explorer and navigate to the **NumberGuessWorkflowActivities_du\bin\Debug** folder (or **bin\Release** depending on your project settings).
 
-12. Rename **NumberGuessWorkflowActivities.dll** to **NumberGuessWorkflowActivities_v15.dll**, and copy it to the **PreviousVersions** folder you created in [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
+12. Rename **NumberGuessWorkflowActivities.dll** to **NumberGuessWorkflowActivities_v15.dll**, and copy it to the **PreviousVersions** folder you created in [How to: Host Multiple Versions of a Workflow Side-by-Side](how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
 
 ### <a name="BKMK_UpdateWorkflowVersionMap"></a> To update WorkflowVersionMap with the new versions
 
@@ -1442,7 +1442,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
 3. Click **New Game** to start a new workflow and note the version information below the status window that indicates the workflow is a `v2` workflow.
 
-4. Select one of the `v1` workflows you started at the beginning of the [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md) topic. Note that the version information under the status window indicates that the workflow is a version **1.5.0.0** workflow. Note that there is no information indicated about previous guesses other than whether they were too high or too low.
+4. Select one of the `v1` workflows you started at the beginning of the [How to: Host Multiple Versions of a Workflow Side-by-Side](how-to-host-multiple-versions-of-a-workflow-side-by-side.md) topic. Note that the version information under the status window indicates that the workflow is a version **1.5.0.0** workflow. Note that there is no information indicated about previous guesses other than whether they were too high or too low.
 
     **Please enter a number between 1 and 10**\
     **Your guess is too low.**

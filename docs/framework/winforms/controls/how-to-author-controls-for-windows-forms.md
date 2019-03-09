@@ -29,15 +29,15 @@ A control represents a graphical link between the user and the program. A contro
   
 2.  If you need an object model for your control, determine how functionality will be distributed throughout the object model, and divide up functionality between the control and any subobjects. An object model may be useful if you are planning a complex control, or want to incorporate several functionalities.  
   
-3.  Determine the type of control (for example, user control, custom control, inherited Windows Forms control) you need. For details, see [Control Type Recommendations](../../../../docs/framework/winforms/controls/control-type-recommendations.md) and [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md).  
+3.  Determine the type of control (for example, user control, custom control, inherited Windows Forms control) you need. For details, see [Control Type Recommendations](control-type-recommendations.md) and [Varieties of Custom Controls](varieties-of-custom-controls.md).  
   
 4.  Express functionality as properties, methods, and events of the control and its subobjects or subsidiary structures, and assign appropriate access levels (for example, public, protected, and so on).  
   
-5.  If you need custom painting for your control, add code for it. For details, see [Custom Control Painting and Rendering](../../../../docs/framework/winforms/controls/custom-control-painting-and-rendering.md).  
+5.  If you need custom painting for your control, add code for it. For details, see [Custom Control Painting and Rendering](custom-control-painting-and-rendering.md).  
   
-6.  If your control inherits from <xref:System.Windows.Forms.UserControl>, you can test its runtime behavior by building the control project and running it in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md).  
+6.  If your control inherits from <xref:System.Windows.Forms.UserControl>, you can test its runtime behavior by building the control project and running it in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).  
   
-7.  You can also test and debug your control by creating a new project, such as a Windows Application, and placing it into a container. This process is demonstrated as part of [Walkthrough: Authoring a Composite Control with Visual Basic](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-basic.md).  
+7.  You can also test and debug your control by creating a new project, such as a Windows Application, and placing it into a container. This process is demonstrated as part of [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md).  
   
 8.  As you add each feature, add features to your test project to exercise the new functionality.  
   
@@ -46,10 +46,10 @@ A control represents a graphical link between the user and the program. A contro
 10. Package and deploy your control. For details, see [First look at deployment in Visual Studio](/visualstudio/deployment/deploying-applications-services-and-components).  
   
 ## See also
-- [Walkthrough: Authoring a Composite Control with Visual Basic](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-basic.md)
-- [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](../../../../docs/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)
-- [How to: Inherit from the UserControl Class](../../../../docs/framework/winforms/controls/how-to-inherit-from-the-usercontrol-class.md)
-- [How to: Inherit from the Control Class](../../../../docs/framework/winforms/controls/how-to-inherit-from-the-control-class.md)
-- [How to: Inherit from Existing Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-inherit-from-existing-windows-forms-controls.md)
-- [How to: Test the Run-Time Behavior of a UserControl](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md)
-- [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)
+- [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)
+- [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)
+- [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)
+- [How to: Inherit from the Control Class](how-to-inherit-from-the-control-class.md)
+- [How to: Inherit from Existing Windows Forms Controls](how-to-inherit-from-existing-windows-forms-controls.md)
+- [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md)
+- [Varieties of Custom Controls](varieties-of-custom-controls.md)

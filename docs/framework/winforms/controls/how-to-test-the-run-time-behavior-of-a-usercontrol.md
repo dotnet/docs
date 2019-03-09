@@ -62,7 +62,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
   
 ## See also
 - <xref:System.Windows.Forms.UserControl>
-- [How to: Author Composite Controls](../../../../docs/framework/winforms/controls/how-to-author-composite-controls.md)
-- [Walkthrough: Authoring a Composite Control with Visual Basic](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-basic.md)
-- [Walkthrough: Authoring a Composite Control with Visual C#](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)
+- [How to: Author Composite Controls](how-to-author-composite-controls.md)
+- [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)
+- [Walkthrough: Authoring a Composite Control with Visual C#](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
 - [User Control Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/183c3hth(v=vs.100))

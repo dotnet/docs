@@ -24,4 +24,4 @@ ms.assetid: b41cc5a3-cc59-4996-aa3c-8dd9c17d3c90
 - <xref:System.Windows.Forms.MenuItem>
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ContextMenuStrip>
-- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+- [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)

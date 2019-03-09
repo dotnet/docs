@@ -30,8 +30,7 @@ When the Visual Basic compiler encounters a call to a procedure that is defined 
   
  The following illustration shows the process that determines which of a set of overloaded versions to call.  
   
- ![Flow diagram of overload resolution process](./media/overloadres.gif "OverloadRes")  
-Resolving among overloaded versions  
+ ![Flow diagram of overload resolution process](./media/overload-resolution/determine-overloaded-version.gif "Resolving among overloaded versions")    
   
  The following example illustrates this overload resolution process.  
   

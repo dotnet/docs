@@ -47,9 +47,9 @@ With the .NET Framework, you can develop and implement new controls. You can ext
   
  A composite control holds all of the inherent functionality associated with each of the contained Windows Forms controls and enables you to selectively expose and bind their properties. A composite control also provides a great deal of default keyboard handling functionality with no extra development effort on your part.  
   
- For example, a composite control could be built to display customer address data from a database. This control could include a <xref:System.Windows.Forms.DataGridView> control to display the database fields, a <xref:System.Windows.Forms.BindingSource> to handle binding to a data source, and a <xref:System.Windows.Forms.BindingNavigator> control to move through the records. You could selectively expose data binding properties, and you could package and reuse the entire control from application to application. For an example of this kind of composite control, see [How to: Apply Attributes in Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+ For example, a composite control could be built to display customer address data from a database. This control could include a <xref:System.Windows.Forms.DataGridView> control to display the database fields, a <xref:System.Windows.Forms.BindingSource> to handle binding to a data source, and a <xref:System.Windows.Forms.BindingNavigator> control to move through the records. You could selectively expose data binding properties, and you could package and reuse the entire control from application to application. For an example of this kind of composite control, see [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md).  
   
- To author a composite control, derive from the <xref:System.Windows.Forms.UserControl> class. The <xref:System.Windows.Forms.UserControl> base class provides keyboard routing for child controls and enables child controls to work as a group. For more information, see [Developing a Composite Windows Forms Control](../../../../docs/framework/winforms/controls/developing-a-composite-windows-forms-control.md).  
+ To author a composite control, derive from the <xref:System.Windows.Forms.UserControl> class. The <xref:System.Windows.Forms.UserControl> base class provides keyboard routing for child controls and enables child controls to work as a group. For more information, see [Developing a Composite Windows Forms Control](developing-a-composite-windows-forms-control.md).  
   
  **Recommendation**  
   
@@ -79,7 +79,7 @@ With the .NET Framework, you can develop and implement new controls. You can ext
   
  To implement a custom control, you must write code for the <xref:System.Windows.Forms.Control.OnPaint%2A> event of the control, as well as any feature-specific code you need. You can also override the <xref:System.Windows.Forms.Control.WndProc%2A> method and handle windows messages directly. This is the most powerful way to create a control, but to use this technique effectively, you need to be familiar with the Microsoft Win32® API.  
   
- An example of a custom control is a clock control that duplicates the appearance and behavior of an analog clock. Custom painting is invoked to cause the hands of the clock to move in response to <xref:System.Windows.Forms.Timer.Tick> events from an internal <xref:System.Windows.Forms.Timer> component. For more information, see [How to: Develop a Simple Windows Forms Control](../../../../docs/framework/winforms/controls/how-to-develop-a-simple-windows-forms-control.md).  
+ An example of a custom control is a clock control that duplicates the appearance and behavior of an analog clock. Custom painting is invoked to cause the hands of the clock to move in response to <xref:System.Windows.Forms.Timer.Tick> events from an internal <xref:System.Windows.Forms.Timer> component. For more information, see [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md).  
   
  **Recommendation**  
   
@@ -90,7 +90,7 @@ With the .NET Framework, you can develop and implement new controls. You can ext
 -   You need to implement custom functionality that is not available through standard controls.  
   
 ### ActiveX Controls  
- Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There is support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md).  
+ Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There is support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).  
   
 ### Windowless Controls  
  The Microsoft Visual Basic® 6.0and ActiveX technologies support *windowless* controls. Windowless controls are not supported in Windows Forms.  
@@ -101,8 +101,8 @@ With the .NET Framework, you can develop and implement new controls. You can ext
  Use the <xref:System.ComponentModel.DesignerAttribute> to associate your control with your designer. For more information, see [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)) and [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).  
   
 ## See also
-- [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)
-- [How to: Develop a Simple Windows Forms Control](../../../../docs/framework/winforms/controls/how-to-develop-a-simple-windows-forms-control.md)
-- [Developing a Composite Windows Forms Control](../../../../docs/framework/winforms/controls/developing-a-composite-windows-forms-control.md)
+- [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
+- [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md)
+- [Developing a Composite Windows Forms Control](developing-a-composite-windows-forms-control.md)
 - [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
 - [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))

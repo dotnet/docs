@@ -67,15 +67,6 @@ There are several ways to approach recommendation problems, such as recommending
     
     
 4. Add the following `using` statements at the top of your *Program.cs* file:
-
-    ```csharp
-    using System;
-    using System.IO;
-    using Microsoft.ML;
-    using Microsoft.ML.Trainers;
-    using Microsoft.ML.Data;
-    using Microsoft.Data.DataView;
-    ```
     
 [!code-csharp[UsingStatements](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#UsingStatements "Add necessary usings")]
 
@@ -131,18 +122,6 @@ Remove the existing class definition and add the following code:
 
 [!code-csharp[MovieRatingClass](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#MovieRatingClass "Add Movie Rating class")]
 
-```csharp
-public class MovieRating
-{
-  [LoadColumn(0)]
-  public float userId;
-  [LoadColumn(1)]
-  public float movieId;
-  [LoadColumn(2)]
-  public float Label;
-}
-```
-
 `MovieRating` specifies an input data class. The [LoadColumn attribute](xref:Microsoft.ML.Data.LoadColumnAttribute.%23ctor%28System.Int32%29) specifies which columns (by column index) in the dataset should be loaded. The `userId` and `movieId` columns are your `Features` (the inputs you will give the model to predict the `Label`), and the rating column is the `Label` that you will predict (the output of the model).
 
 In *Program.cs*, add the following code inside `Main()`:
@@ -156,28 +135,11 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
 After you initialize `mlContext`, add the following code in `Main()`: 
 
-<!--[!code-csharp[LoadDataMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#LoadDataMain "Add LoadData method to Main")]-->
-
-```csharp
-IDataView trainingDataView = LoadData(mlContext).training;
-IDataView testDataView = LoadData(mlContext).test;
-```
+[!code-csharp[LoadDataMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#LoadDataMain "Add LoadData method to Main")]
 
 Create and define the method `LoadData()` outside of `Main()` by initializing the data path variables, reading the data from a text file, and returning the loaded `Training` and `Test` data:
 
 [!code-csharp[LoadData](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#LoadData "Load data from data paths")]
-
-```csharp
-public static (IDataView training, IDataView test) LoadData(MLContext mlContext){
-    var trainingDataPath = Path.Combine(Environment.CurrentDirectory, "Data", "recommendation-ratings-train.csv");
-    var testDataPath = Path.Combine(Environment.CurrentDirectory, "Data", "recommendation-ratings-test.csv");
-
-    IDataView trainingDataView = mlContext.Data.LoadFromTextFile<MovieRating>(trainingDataPath, hasHeader: true, separatorChar: ',');
-    IDataView testDataView = mlContext.Data.LoadFromTextFile<MovieRating>(testDataPath, hasHeader: true, separatorChar: ',');
-
-    return (trainingDataView, testDataView);
-}
-```
 
 Data in ML.NET is represented as an [IDataView class](xref:Microsoft.Data.DataView.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (e.g. SQL database or log files) to an `IDataView` object.
 
@@ -201,23 +163,12 @@ You create `Transformers` in ML.NET by creating `Estimators`. `Estimators` take 
 Build an `Estimator` with the following steps:
 
 1. After your `LoadData()` method, add the following code in `Main()`: 
-
-    ```csharp
-    ITransformer model = BuildAndTrainModel(mlContext, trainingDataView);
-    ```
     
 [!code-csharp[BuildTrainModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method in Main")]
 
 2. Create and start defining the method `BuildandTrainModel()` outside of `Main()` by defining the data transformations:
 
    [!code-csharp[DataTransformations](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#DataTransformations "Define data transormations")]
-   
-   ```csharp
-   public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView trainingDataView){
-        IEstimator<ITransformer> estimator = mlContext.Transforms.Conversion.MapValueToKey(outputColumnName: "userIdEncoded", inputColumnName: "userId")
-        .Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName: "movieIdEncoded", inputColumnName: "movieId"));
-    }
-   ```
 
     Since `userId` and `movieId` represent users and movie titles, not real values, you use the [MapValueToKey() method](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A) to transform each `userId` and each `movieId` into a numeric key type `Feature` column (a format accepted by recommendation algorithms) and add them as new dataset columns:
 
@@ -230,24 +181,6 @@ Build an `Estimator` with the following steps:
 3. After defining the data tranformations in your `BuildAndTrainModel()` method, append the training algorithm (in this case, a `Matrix Factorization Trainer`), train the model with the `Train` dataset, and return the trained model:
 
     [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#TrainModel "Add algorithm with set options and train model")]
-    
-    ```csharp
-    var options = new MatrixFactorizationTrainer.Options
-    {
-        MatrixColumnIndexColumnName = "userIdEncoded",
-        MatrixRowIndexColumnName = "movieIdEncoded",
-        LabelColumnName = "Label",
-        NumberOfIterations = 20,
-        ApproximationRank = 100
-    };
-
-    estimator = estimator.Append(mlContext.Recommendation().Trainers.MatrixFactorization(options));
-
-    Console.WriteLine("=============== Training the model ===============");
-    ITransformer model = estimator.Fit(trainingDataView);
-    
-    return model;
-    ```
 
 The `Matrix Factorization` trainer has several [options](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options) including:
 Input and output columns:
@@ -282,27 +215,9 @@ Once you have trained your model, use your test data to evaluate how your model 
 
 [!code-csharp[EvaluateModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#TEvaluateModelMain "Add EvaluateModel method in Main")]
 
-```csharp
-EvaluateModel(mlContext, testDataView, model);
-```
-
 Create and define the method `EvaluateModel()` outside of `Main()` by using the model to return predictions from the test data:
 
 [!code-csharp[EvaluateModel](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#EvaluateModel "Evaluate the model and print metrics")]
-
-```csharp
-public static void EvaluateModel(MLContext mlContext, IDataView testDataView, ITransformer model){
-    Console.WriteLine("======= Evaluating the model =======");
-
-    var prediction = model.Transform(testDataView);
-
-    var metrics = mlContext.Recommendation().Evaluate(prediction, 
-    label: "Label", score: "Score");
-
-    Console.WriteLine("Rms: " + metrics.Rms);
-    Console.WriteLine("RSquared: " + metrics.RSquared);
-}
-```
 
 The [Transform() method](xref:Microsoft.ML.ITransformer.Transform%2A) makes predictions for multiple provided input rows of a test dataset. Once you have the prediction set, you call the [Evaluate() method](xref:Microsoft.ML.RecommendationCatalog.Evaluate%2A) to assess the model, which compares the predicted values with the actual labels in the test dataset and returns metrics on how the model is performing.
 
@@ -346,58 +261,25 @@ Add the following class in *MovieRatingData.cs* to represent predicted results:
 
 [!code-csharp[PredictionClass](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#PredictionClass "Add the Movie Prediction Class")]
 
-```csharp
-public class MovieRatingPrediction
-{
-  public float Label;
-  public float Score;
-}
-```
-
 In *Program.cs*, add the following code to `Main()` after your `Evaluate()` method to make a single prediction:
 
 [!code-csharp[UseModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#UseModelMain "Add UseModelForSinglePrediction method in Main")]
 
-```csharp
-UseModelForSinglePrediction(mlContext, model);
-```
-
 Create and begin defining the method `UseModelForSinglePrediction()` outside of `Main()` by creating a `Prediction Engine`:
 
 [!code-csharp[PredictionEngine](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#PredictionEngine "Create Prediction Engine")]
-```csharp
-public static void UseModelForSinglePrediction(MLContext mlContext, ITransformer model){
-    Console.WriteLine("=============== Making a prediction      ===============");
-    var predictionEngine = model.CreatePredictionEngine<MovieRating, MovieRatingPrediction>(mlContext);
-}
-```
+
 The [PredictionEngine class](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass a single instance of data and then perform a prediction on this single instance of data.
 
 In your `UseModelForSinglePrediction()` method, create an instance of `MovieRating` and pass it to the `Prediction Engine`:
 
 [!code-csharp[MakeSinglePrediction](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#MakeSinglePrediction "Make a single prediction with the Prediction Engine")]
 
-```csharp
-var testInput = new MovieRating { userId = 6, movieId = 10 };
-
-var movieRatingPrediction = predictionEngine.Predict(testInput);
-```
 The [Predict() function](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) makes a prediction on a single column of data (in this case on the `testInput`). 
 
 You can then use the `Score`, or the predicted rating, to determine whether you want to recommend the movie with movieId 10 to user 6. The higher the `Score`, the higher the likelihood of a user liking a particular movie. In this case, let’s say that you recommend movies with a predicted rating of > 3.5. To do that, add the following as the next code lines in the`UseModelForSinglePrediction()` method:
 
 [!code-csharp[PrintResults](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#PrintResults "Print the recommendation prediction results")]
-
-```csharp
-if (Math.Round(movieRatingPrediction.Score, 1) > 3.5)
-{
-  Console.WriteLine("Movie " + testInput.movieId + " is recommended for user " + testInput.userId);
-}
-else
-{
-  Console.WriteLine("Movie " + testInput.movieId + " is not recommended for user " + testInput.userId);
-}
-```
 
 ### Save your model
 To use your model to make predictions in end-user applications, you must first save the model.
@@ -406,23 +288,9 @@ Add the following code in `Main()` after your `UseModelToMakeSinglePrediction()`
 
 [!code-csharp[SaveModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#SaveModelMain "Create SaveModel method in Main")]
 
-```csharp
-SaveModel(mlContext, model);
-```
-
 Create and define the method `SaveModel()` outside of `Main()`:
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#SaveModel "Save the model to a zip file")]
-
-```csharp
- public static void SaveModel(MLContext mlContext, ITransformer model){
-    Console.WriteLine("======= Saving the model to a file =======");
-    using (var fs = new FileStream("moviePredictionModel.zip",
-    FileMode.Create, FileAccess.Write, FileShare.Write))
-
-    mlContext.Model.Save(model, fs);
- }
-```
 
 This saves the model to a .zip file, which can then be loaded into and used in your other .NET applications.
 
@@ -432,15 +300,6 @@ To use the model in another .NET application (or in a different method just for 
 1. Add a class for the result returned from the prediction operations (e.g. `MovieRatingPrediction`).
 2. Create an ML.NET context (e.g. `MLContext`).
 3. Create a new file stream with the path to the model file and load the model from the stream:
-    ```csharp
-    ITransformer trainedModel;
-
-    using (var stream = new FileStream(modelPath,
-        FileMode.Open, FileAccess.Read, FileShare.Read))
-        {
-            trainedModel = mlContext.Model.Load(stream);
-        }
-    ```
 4. Make predictions with the loaded model using the `Prediction Engine`.
 
 ## Results

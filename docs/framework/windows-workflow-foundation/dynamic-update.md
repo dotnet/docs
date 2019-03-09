@@ -12,13 +12,13 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
 To apply dynamic updates to a persisted workflow instance, a <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> is created that contains instructions for the runtime that describe how to modify the persisted workflow instance to reflect the desired changes. Once the update map is created, it is applied to the desired persisted workflow instances. Once the dynamic update is applied, the workflow instance may be resumed using the new updated workflow definition. There are four steps required to create and apply an update map.
 
-1. [Prepare the workflow definition for dynamic update](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Prepare)
+1. [Prepare the workflow definition for dynamic update](dynamic-update.md#Prepare)
 
-2. [Update the workflow definition to reflect the desired changes](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Update)
+2. [Update the workflow definition to reflect the desired changes](dynamic-update.md#Update)
 
-3. [Create the update map](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Create)
+3. [Create the update map](dynamic-update.md#Create)
 
-4. [Apply the update map to the desired persisted workflow instances](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Apply)
+4. [Apply the update map to the desired persisted workflow instances](dynamic-update.md#Apply)
 
 > [!NOTE]
 > Note that steps 1 through 3, which cover the creation of the update map, may be performed independently of applying the update. A common scenario that the workflow developer will create the update map offline, and then an administrator will apply the update at a later time.
@@ -32,7 +32,7 @@ The first step in the dynamic update process is to prepare the desired workflow 
 To prepare a Xaml workflow for dynamic update it may be loaded into an <xref:System.Activities.ActivityBuilder>, and then the <xref:System.Activities.ActivityBuilder> is passed into <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=nameWithType>.
 
 > [!NOTE]
-> For more information about working with serialized workflows and <xref:System.Activities.ActivityBuilder>, see [Serializing Workflows and Activities to and from XAML](../../../docs/framework/windows-workflow-foundation/serializing-workflows-and-activities-to-and-from-xaml.md).
+> For more information about working with serialized workflows and <xref:System.Activities.ActivityBuilder>, see [Serializing Workflows and Activities to and from XAML](serializing-workflows-and-activities-to-and-from-xaml.md).
 
 In the following example, a `MortgageWorkflow` definition (that consists of a <xref:System.Activities.Statements.Sequence> with several child activities) is loaded into an <xref:System.Activities.ActivityBuilder>, and then prepared for dynamic update. After the method returns, the <xref:System.Activities.ActivityBuilder> contains the original workflow definition as well as a copy.
 
@@ -166,7 +166,7 @@ foreach (Guid id in ids)
 Once dynamic update has been applied, the workflow instance may be resumed. Note that the new updated definition and <xref:System.Activities.WorkflowIdentity> must be used.
 
 > [!NOTE]
-> For more information about working with <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowIdentity>, see [Using WorkflowIdentity and Versioning](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md).
+> For more information about working with <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowIdentity>, see [Using WorkflowIdentity and Versioning](using-workflowidentity-and-versioning.md).
 
 In the following example, the `MortgageWorkflow_v1.1.xaml` workflow from the previous example has been compiled, and is loaded and resumed using the updated workflow definition.
 

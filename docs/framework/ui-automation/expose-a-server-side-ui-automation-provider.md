@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "UI Automation, server-side provider, exposing"
   - "server-side UI Automation provider, exposing"
 ms.assetid: 55d419c0-2201-4101-90c9-2888df4dbb47
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Expose a Server-side UI Automation Provider
 > [!NOTE]

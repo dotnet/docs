@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation GridItem control pattern"
   - "GridItem control pattern"
 ms.assetid: bffbae08-fe2a-42fd-ab84-f37187518916
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation GridItem Control Pattern
 > [!NOTE]

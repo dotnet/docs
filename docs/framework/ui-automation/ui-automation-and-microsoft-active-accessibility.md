@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "UI Automation, Microsoft Active Accessibility"
   - "Active Accessibility, UI Automation compared to"
 ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation and Microsoft Active Accessibility
 > [!NOTE]

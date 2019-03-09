@@ -4,40 +4,40 @@ ms.date: "03/30/2017"
 ms.assetid: e5dbaa7b-005f-4330-848d-58ac4f42f093
 ---
 # Contract First Workflow Service Development
-Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Workflow Foundation (WF) features better integration between web services and workflows in the form of contract-first workflow development. The contract-first workflow development tool allows you to design the contract in code first. The tool then automatically generates an activity template in the toolbox for the operations in the contract. This topic provides an overview of how the activities and properties in a workflow service map to the attributes of a service contract. For a step-by-step example of creating a contract-first workflow service, see [How to: Create a workflow service that consumes an existing service contract](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow-service-that-consumes-an-existing-service-contract.md).  
+Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Workflow Foundation (WF) features better integration between web services and workflows in the form of contract-first workflow development. The contract-first workflow development tool allows you to design the contract in code first. The tool then automatically generates an activity template in the toolbox for the operations in the contract. This topic provides an overview of how the activities and properties in a workflow service map to the attributes of a service contract. For a step-by-step example of creating a contract-first workflow service, see [How to: Create a workflow service that consumes an existing service contract](how-to-create-a-workflow-service-that-consumes-an-existing-service-contract.md).  
   
 ## In this topic  
   
--   [Mapping service contract attributes to workflow attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#MappingAttributes)  
+-   [Mapping service contract attributes to workflow attributes](contract-first-workflow-service-development.md#MappingAttributes)  
   
-    -   [Service Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ServiceContract)  
+    -   [Service Contract Attributes](contract-first-workflow-service-development.md#ServiceContract)  
   
-    -   [Operation Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#OperationContract)  
+    -   [Operation Contract Attributes](contract-first-workflow-service-development.md#OperationContract)  
   
-    -   [Message Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#MessageContract)  
+    -   [Message Contract Attributes](contract-first-workflow-service-development.md#MessageContract)  
   
-    -   [Data Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#DataContract)  
+    -   [Data Contract Attributes](contract-first-workflow-service-development.md#DataContract)  
   
-    -   [Fault Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#FaultContract)  
+    -   [Fault Contract Attributes](contract-first-workflow-service-development.md#FaultContract)  
   
--   [Additional Support and Implementation Information](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#AdditionalSupport)  
+-   [Additional Support and Implementation Information](contract-first-workflow-service-development.md#AdditionalSupport)  
   
-    -   [Unsupported service contract features](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#UnsupportedFeatures)  
+    -   [Unsupported service contract features](contract-first-workflow-service-development.md#UnsupportedFeatures)  
   
-    -   [Generation of configured messaging activities](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ActivityGeneration)  
+    -   [Generation of configured messaging activities](contract-first-workflow-service-development.md#ActivityGeneration)  
   
 ## <a name="MappingAttributes"></a> Mapping service contract attributes to workflow attributes  
  The tables in the following sections specify the different WCF attributes and properties and how they are mapped to the messaging activities and properties in a contract-first workflow.  
   
--   [Service Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ServiceContract)  
+-   [Service Contract Attributes](contract-first-workflow-service-development.md#ServiceContract)  
   
--   [Operation Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#OperationContract)  
+-   [Operation Contract Attributes](contract-first-workflow-service-development.md#OperationContract)  
   
--   [Message Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#MessageContract)  
+-   [Message Contract Attributes](contract-first-workflow-service-development.md#MessageContract)  
   
--   [Data Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#DataContract)  
+-   [Data Contract Attributes](contract-first-workflow-service-development.md#DataContract)  
   
--   [Fault Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#FaultContract)  
+-   [Fault Contract Attributes](contract-first-workflow-service-development.md#FaultContract)  
   
 ### <a name="ServiceContract"></a> Service Contract Attributes  
   
@@ -103,9 +103,9 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
   
 ## <a name="AdditionalSupport"></a> Additional Support and Implementation Information  
   
--   [Unsupported service contract features](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#UnsupportedFeatures)  
+-   [Unsupported service contract features](contract-first-workflow-service-development.md#UnsupportedFeatures)  
   
--   [Generation of configured messaging activities](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ActivityGeneration)  
+-   [Generation of configured messaging activities](contract-first-workflow-service-development.md#ActivityGeneration)  
   
 ### <a name="UnsupportedFeatures"></a> Unsupported service contract features  
   

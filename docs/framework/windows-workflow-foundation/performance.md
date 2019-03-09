@@ -4,11 +4,6 @@ ms.date: "03/30/2017"
 ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 ---
 # Windows Workflow Foundation 4 Performance
-Dustin Metzgar
-
- Wenlong Dong
-
- Microsoft Corporation, September 2010
 
  Microsoft [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)] includes a major revision of the Windows Workflow Foundation (WF) with heavy investments in performance.  This new revision introduces significant design changes from the previous versions of [!INCLUDE[wf1](../../../includes/wf1-md.md)] that shipped as part of .NET Framework 3.0 and [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]. It has been re-architected from the core of the programming model, runtime, and tooling to greatly improve performance and usability. This topic shows the important performance characteristics of these revisions and compares them against those of the previous version.
 
@@ -50,7 +45,7 @@ Dustin Metzgar
 ### Messaging
  Initially WF3 had very limited messaging support through external events or web services invocations. In .Net 3.5, workflows could be implemented as WCF clients or exposed as WCF services through <xref:System.Workflow.Activities.SendActivity> and <xref:System.Workflow.Activities.ReceiveActivity>. In WF4, the concept of workflow-based messaging programming has been further strengthened through the tight integration of WCF messaging logic into WF.
 
- The unified message processing pipeline provided in WCF in .Net 4 helps WF4 services to have significantly better performance and scalability than WF3. WF4 also provides richer messaging programming support that can model complex Message Exchange Patterns (MEPs). Developers can use either typed service contracts to achieve easy programming or un-typed service contracts to achieve better performance without paying serialization costs. The client-side channel caching support through the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class in WF4 helps developers build fast applications with minimal effort. For more information, see [Changing the Cache Sharing Levels for Send Activities](../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).
+ The unified message processing pipeline provided in WCF in .Net 4 helps WF4 services to have significantly better performance and scalability than WF3. WF4 also provides richer messaging programming support that can model complex Message Exchange Patterns (MEPs). Developers can use either typed service contracts to achieve easy programming or un-typed service contracts to achieve better performance without paying serialization costs. The client-side channel caching support through the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class in WF4 helps developers build fast applications with minimal effort. For more information, see [Changing the Cache Sharing Levels for Send Activities](../wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).
 
 ### Declarative Programming
  WF4 provides a clean and simple declarative programming framework to model business processes and services. The programming model supports fully declarative composition of activities, with no code-beside, greatly simplifying workflow authoring. In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], the XAML-based declarative programming framework has been unified into the single assembly System.Xaml.dll to support both WPF and WF.
@@ -64,6 +59,7 @@ Dustin Metzgar
  This section contains data on direct comparisons between individual activities in WF3 and WF4 workflows.  Key areas like persistence have a more profound impact on performance than the individual activity components.  The performance improvements in individual components in WF4 are important though because the components are now fast enough to be compared against hand-coded orchestration logic.  An example of which is covered in the next section: "Service Composition Scenario."
 
 ### Environment Setup
+
  ![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
 
  The above figure shows the machine configuration used for component-level performance measurement. A single server and five clients connected over one 1-Gbps Ethernet network interface. For easy measurements, the server is configured to use a single core of a dual-proc/quad-core server  running Windows Server 2008 x86. The system CPU utilization is maintained at nearly 100%.
@@ -71,7 +67,7 @@ Dustin Metzgar
 ### Test Details
  The WF3 <xref:System.Workflow.Activities.CodeActivity> is likely the simplest activity that can be used in a WF3 workflow.  The activity calls a method in the code-behind that the workflow programmer can put custom code into.  In WF4, there is no direct analog to the WF3 <xref:System.Workflow.Activities.CodeActivity> that provides the same functionality.  Note that there is a <xref:System.Activities.CodeActivity> base class in WF4 that is not related to the WF3 <xref:System.Workflow.Activities.CodeActivity>.  Workflow authors are encouraged to create custom activities and build XAML-only workflows.  In the tests below, an activity called `Comment` is used in place of an empty <xref:System.Workflow.Activities.CodeActivity> in WF4 workflows.  The code in the `Comment` activity is as follows:
 
-```
+```csharp
 [ContentProperty("Body")]
     public sealed class Comment : CodeActivity
     {
@@ -118,7 +114,7 @@ Dustin Metzgar
 ### Compensation
  The WF3 workflow has a single compensatable activity named `WorkScope`.  The activity simply implements the <xref:System.Workflow.ComponentModel.ICompensatableActivity> interface:
 
-```
+```csharp
 class WorkScope :
         CompositeActivity, ICompensatableActivity
     {
@@ -163,6 +159,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  ![WF3 and WF basic compensation workflows](./media/performance/basic-compensation-workflows-for-wf3-and-wf4.gif "WF3 (left) and WF4 (right) basic compensation workflows")
 
 ### Performance Test Results
+
  ![Performance Test Results](./media/performance/performance-test-data.gif "Data from performance tests")
 
  ![Performance Test Data Graph](./media/performance/performance-test-chart.gif "Data graph of performance test data")
@@ -178,12 +175,14 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  The two backend services, Order Validating Service and Warehouse Service, remain the same for both tests.  The part that changes is the Online Store Service that performs the orchestration.  In one case, the service is hand-coded as a WCF service.  For the other case, the service is written as a WCF workflow service in WF4. [!INCLUDE[wf1](../../../includes/wf1-md.md)]-specific features like tracking and persistence are turned off for this test.
 
 ### Environment
- ![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
+
+![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
 
  Client requests are made to the Online Store Service via HTTP from multiple computers.  A single computer hosts all three services.  The transport layer between the Online Store Service and the backend services is TCP or HTTP.  The measurement of operations/second is based on the number of completed `PurchaseOrder` calls made to the Online Store Service.  Channel pooling is a new feature available in WF4.  In the WCF portion of this test channel pooling is not provided out of the box so a hand-coded implementation of a simple pooling technique was used in the Online Store Service.
 
 ### Performance
- ![Online Store Service Performance Graph](./media/performance/online-store-performance-graph.gif "Online Store Service performance graph")
+
+![Online Store Service Performance Graph](./media/performance/online-store-performance-graph.gif "Online Store Service performance graph")
 
  Connecting to backend TCP services without channel pooling, the [!INCLUDE[wf1](../../../includes/wf1-md.md)] service has a 17.2% impact on throughput.  With channel pooling, the penalty is about 23.8%.  For HTTP, the impact is much less: 4.3% without pooling and 8.1% with pooling.  It is also important to note that the channel pooling provides very little benefit when using HTTP.
 
@@ -196,7 +195,8 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  In a WCF workflow service application, the latency for starting a new workflow or loading an existing workflow is important as it can be blocking.  This test case measures a WF3 XOML host against a WF4 XAMLX host in a typical scenario.
 
 ##### Environment Setup
- ![Environment setup for latency and throughput tests](./media/performance/latency-and-throughput-environment-setup.gif "Latency and throughput environment setup")
+
+![Environment setup for latency and throughput tests](./media/performance/latency-and-throughput-environment-setup.gif "Latency and throughput environment setup")
 
 ##### Test Setup
  In the scenario, a client computer contacts a WCF workflow service using context-based correlation.  Context correlation requires a special context binding and uses a context header or cookie to relate messages to the correct workflow instance.  It has a performance benefit in that the correlation Id is located in the message header so the message body does not need to be parsed.
@@ -208,6 +208,9 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  The <xref:System.ServiceModel.Activities.Receive> activity creates the workflow instance.  A value passed in the received message is echoed in the reply message.  A sequence following the reply contains the rest of the workflow.  In the above case, only one comment activity is shown.  The number of comment activities is changed to simulate workflow complexity.  A comment activity is equivalent to a WF3 <xref:System.Workflow.Activities.CodeActivity> that performs no work. For more information about the comment activity, see the "Component-level Performance Comparison" section earlier in this article.
 
 ##### Test Results
+
+ Cold and warm latency for WCF workflow services:
+
  ![Latency Results](./media/performance/latency-results-graph.gif "Cold and warm latency for WCF workflow services")
 
  In the graph above, cold refers to the case where there is not an existing <xref:System.ServiceModel.WorkflowServiceHost> for the given workflow.  In other words, cold latency is when the workflow is being used for the first time and the XOML or XAML needs to be compiled.  Warm latency is the time to create a new workflow instance when the workflow type has already been compiled.  The complexity of the workflow makes very little difference in the WF4 case but has a linear progression in the WF3 case.
@@ -218,7 +221,8 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  Context-based correlation has a performance advantage in that the correlation key is located in the message header.  The key can be read from the message without de-serialization/message-copying.  In content-based correlation, the correlation key is stored in the message body.  An XPath expression is used to locate the key.  The cost of this extra processing depends on the size of the message, depth of the key in the body, and the number of keys.  This test compares context- and content-based correlation and also shows the performance degradation when using multiple keys.
 
 #### Environment Setup
- ![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
+
+![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
 
 #### Test Setup
  ![Correlation Throughput Workflow Test](./media/performance/correlation-throughput-workflow.gif "Correlation throughput workflow test setup")
@@ -226,6 +230,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  The workflow shown above is the same one used in the "Persistence" section below.  For the correlation tests without persistence there is no persistence provider installed in the runtime.  Correlation occurs in two places: CreateOrder and CompleteOrder.
 
 #### Test Results
+
  ![Correlation Throughput](./media/performance/correlation-throughput-graph.gif "Correlation throughput graph")
 
  This graph shows a decrease in performance as the number of keys used in content-based correlation increases.  The similarity in the curves between TCP and HTTP indicates the overhead associated with these protocols.
@@ -272,6 +277,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  Tracking and persistence are not used as part of this test.
 
 ### Test Results
+
  ![Throughput Graph](./media/performance/throughput-performance-results.gif "Throughput performance results graph")
 
  Even with complex workflows with lots of depth and a high number of activities, the performance results are consistent with other throughput numbers shown earlier in this article.  WF4’s throughput is orders of magnitude faster and has to be compared on a logarithmic scale.
@@ -303,7 +309,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
 
  ![Workflow Services in WF3 and WF4](./media/performance/workflow-with-receive-activity.gif "WF3 workflow with ReceiveActivity and WF4 workflow with request/response pattern")
 
- The table below shows the delta in working set between a single workflow definition and 1001 definitions:
+ The following table shows the delta in working set between a single workflow definition and 1001 definitions:
 
 |Hosting Options|WF3 Working Set Delta|WF4 Working Set Delta|
 |---------------------|---------------------------|---------------------------|
@@ -314,7 +320,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
 
  For console hosting in WF3 the workflows were implemented in code instead of XOML.  In WF4 the default is to use XAML.  The XAML is stored as an embedded resource in the assembly and compiled during runtime to provide the implementation of the workflow.  There is some overhead associated with this process.  In order to make a fair comparison between WF3 and WF4, coded workflows were used instead of XAML.  An example of one of the WF4 workflows is shown below:
 
-```
+```csharp
 public class Workflow1 : Activity
 {
     protected override Func<Activity> Implementation
@@ -349,7 +355,8 @@ public class Workflow1 : Activity
  The WF4 SQL persistence provider has tried to address some of these concerns.  The persistence tables expose certain information such as the active bookmarks and promotable properties.  The new content-based correlation feature in WF4 would not perform well using the WF3 SQL persistence approach, which has driven some change in the organization of the persisted workflow instance.  This makes the job of the persistence provider more complex and puts extra stress on the database.
 
 ### Environment Setup
- ![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
+
+![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
 
 ### Test Setup
  Even with an improved feature set and better concurrency handling, the SQL persistence provider in WF4 is faster than the provider in WF3.  To showcase this, two workflows that perform essentially the same operations in WF3 and WF4 are compared below.
@@ -359,6 +366,7 @@ public class Workflow1 : Activity
  The two workflows are both created by a received message.  After sending an initial reply, the workflow is persisted.  In the WF3 case, an empty <xref:System.Workflow.ComponentModel.TransactionScopeActivity> is used to initiate the persistence.  The same could be achieved in WF3 by marking an activity as "persist on close."  A second, correlated message completes the workflow.  The workflows are persisted but not unloaded.
 
 ### Test Results
+
  ![Throughput Persistence](./media/performance/throughput-persistence-graph.gif "Throughput Persistence graph")
 
  When the transport between client and middle tier is HTTP, persistence in WF4 shows an improvement of 2.6 times.  The TCP transport increases that factor to 3.0 times.  In all cases, CPU utilization on the middle tier is 98% or higher.  The reason that WF4 throughput is greater is due to the faster workflow runtime.  The size of the serialized instance is low for both cases and is not a major contributing element in this situation.
@@ -410,11 +418,12 @@ public class Workflow1 : Activity
 
  While WF4 does not have a SQL tracking provider, AppFabric does.  AppFabric’s SQL tracking approach is to subscribe to ETW events with a Windows Service that batches the events and writes them to a SQL table designed for quick inserts.  A separate job drains the data from this table and reforms it into reporting tables that can be viewed on the AppFabric dashboard.  This means that a batch of tracking events is handled independent of the workflow it came from and therefore does not have to wait for a persistence point before being recorded.
 
- ETW events can be recorded with tools such as logman or xperf.  The compact ETL file can be viewed with a tool like xperfview or converted to a more readable format, such as XML, with tracerpt.  In WF3, the only option for getting tracking events without a SQL database is to create a custom tracking service. For more information about ETW, see [WCF Services and Event Tracing for Windows](../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md) and [Event Tracing - Windows applications](/windows/desktop/etw/event-tracing-portal).
+ ETW events can be recorded with tools such as logman or xperf.  The compact ETL file can be viewed with a tool like xperfview or converted to a more readable format, such as XML, with tracerpt.  In WF3, the only option for getting tracking events without a SQL database is to create a custom tracking service. For more information about ETW, see [WCF Services and Event Tracing for Windows](../wcf/samples/wcf-services-and-event-tracing-for-windows.md) and [Event Tracing - Windows applications](/windows/desktop/etw/event-tracing-portal).
 
  Enabling workflow tracking will impact performance in varying degrees.  The benchmark below uses the logman tool to consume the ETW tracking events and record them to an ETL file.  The cost of the SQL tracking in AppFabric is not in the scope of this article.  The basic tracking profile, also used in AppFabric, is shown in this benchmark.  Also included is the cost of tracking only health monitoring events.  These events are useful for troubleshooting problems and determining the average throughput of the system.
 
 ### Environment Setup
+
  ![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
 
 ### Test Results
@@ -426,10 +435,12 @@ public class Workflow1 : Activity
  WF4 is almost a complete rewrite of [!INCLUDE[wf1](../../../includes/wf1-md.md)] and therefore WF3 workflows and activities are not directly compatible with WF4.  Many customers that adopted Windows Workflow Foundation early will have in-house or third-party workflow definitions and custom activities for WF3.  One way to ease the transition to WF4 is to use the Interop activity, which can execute WF3 activities from within a WF4 workflow.  It is recommended that the <xref:System.Activities.Statements.Interop> activity only be used when necessary. For more information about migrating to WF4 check out the [WF4 Migration Guidance](https://go.microsoft.com/fwlink/?LinkID=153313).
 
 ### Environment Setup
+
  ![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
 
 ### Test Results
- The table below shows the results of running a workflow containing five activities in a sequence in various configurations.
+ 
+The following table shows the results of running a workflow containing five activities in a sequence in various configurations.
 
 |Test|Throughput (workflows/sec)|
 |----------|-----------------------------------|
@@ -441,18 +452,3 @@ public class Workflow1 : Activity
 
 ## Summary
  Heavy investments in performance for WF4 have paid off in many crucial areas.  Individual workflow component performance is in some cases hundreds of times faster in WF4 compared to WF3 due to a leaner [!INCLUDE[wf1](../../../includes/wf1-md.md)] runtime.  Latency numbers are significantly better as well.  This means the performance penalty for using [!INCLUDE[wf1](../../../includes/wf1-md.md)] as opposed to hand-coding WCF orchestration services is very small considering the added benefits of using [!INCLUDE[wf1](../../../includes/wf1-md.md)].  Persistence performance has increased by a factor of 2.5 - 3.0.  Health monitoring by means of workflow tracking now has very little overhead.  A comprehensive set of migration guides are available for those that are considering moving from WF3 to WF4.  All of this should make WF4 an attractive option for writing complex applications.
-
-## Acknowledgements
- Many thanks to the following contributors and reviewers for their efforts:
-
--   Leon Welicki, Microsoft Corporation
-
--   Ryszard Kwiecinski, Microsoft Corporation
-
--   Emil Velinov, Microsoft Corporation
-
--   Nate Talbert, Microsoft Corporation
-
--   Bob Schmidt, Microsoft Corporation
-
--   Stefan Batres, Microsoft Corporation

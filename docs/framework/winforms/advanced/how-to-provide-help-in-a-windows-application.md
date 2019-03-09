@@ -47,10 +47,10 @@ You can use of the <xref:System.Windows.Forms.HelpProvider> component to attach 
 > [!IMPORTANT]
 >  Be careful to check any information that is sent from a client before using it in your application. Malicious users might try to send or inject executable script, SQL statements, or other code. Before you display a user's input, store it in a database, or work with it, check that it does not contain potentially unsafe information. A typical way to check is to use a regular expression to look for keywords such as "SCRIPT" when you receive input from a user.  
   
- You can also use the <xref:System.Windows.Forms.HelpProvider> component to show pop-up Help, even if you have it configured to display Help files for the controls on your Windows Forms. For more information, see [How to: Display Pop-up Help](../../../../docs/framework/winforms/advanced/how-to-display-pop-up-help.md).  
+ You can also use the <xref:System.Windows.Forms.HelpProvider> component to show pop-up Help, even if you have it configured to display Help files for the controls on your Windows Forms. For more information, see [How to: Display Pop-up Help](how-to-display-pop-up-help.md).  
   
 ## See also
-- [How to: Display Pop-up Help](../../../../docs/framework/winforms/advanced/how-to-display-pop-up-help.md)
-- [Control Help Using ToolTips](../../../../docs/framework/winforms/advanced/control-help-using-tooltips.md)
-- [Integrating User Help in Windows Forms](../../../../docs/framework/winforms/advanced/integrating-user-help-in-windows-forms.md)
-- [Windows Forms](../../../../docs/framework/winforms/index.md)
+- [How to: Display Pop-up Help](how-to-display-pop-up-help.md)
+- [Control Help Using ToolTips](control-help-using-tooltips.md)
+- [Integrating User Help in Windows Forms](integrating-user-help-in-windows-forms.md)
+- [Windows Forms](../index.md)

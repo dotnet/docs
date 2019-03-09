@@ -120,4 +120,4 @@ Tasks illustrated in this walkthrough include:
   
 ## See also
 - <xref:System.Windows.Forms.MaskedTextBox>
-- [MaskedTextBox Control](../../../../docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)
+- [MaskedTextBox Control](maskedtextbox-control-windows-forms.md)

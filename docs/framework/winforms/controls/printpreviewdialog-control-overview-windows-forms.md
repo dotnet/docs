@@ -10,7 +10,7 @@ author: rpetrusha
 ms.author: ronpet
 ---
 # PrintPreviewDialog control overview (Windows Forms)
-The Windows Forms <xref:System.Windows.Forms.PrintPreviewDialog> control is a pre-configured dialog box used to display how a [PrintDocument](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md) will appear when printed. Use it within your Windows-based application as a simple solution instead of configuring your own dialog box. The control contains buttons for printing, zooming in, displaying one or multiple pages, and closing the dialog box.  
+The Windows Forms <xref:System.Windows.Forms.PrintPreviewDialog> control is a pre-configured dialog box used to display how a [PrintDocument](printdocument-component-windows-forms.md) will appear when printed. Use it within your Windows-based application as a simple solution instead of configuring your own dialog box. The control contains buttons for printing, zooming in, displaying one or multiple pages, and closing the dialog box.  
   
 ## Key properties and methods  
  The control's key property is <xref:System.Windows.Forms.PrintPreviewDialog.Document%2A>, which sets the document to be previewed. The document must be a <xref:System.Drawing.Printing.PrintDocument> object. In order to display the dialog box, you must call its <xref:System.Windows.Forms.Form.ShowDialog%2A> method. Anti-aliasing can make the text appear smoother, but it can also make the display slower; to use it, set the <xref:System.Windows.Forms.PrintPreviewDialog.UseAntiAlias%2A> property to `true`.  
@@ -47,6 +47,6 @@ If you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> ev
 
 ## See also
 - <xref:System.Windows.Forms.PrintPreviewDialog>
-- [PrintPreviewControl Control Overview](../../../../docs/framework/winforms/controls/printpreviewcontrol-control-overview-windows-forms.md)
-- [PrintPreviewDialog Control](../../../../docs/framework/winforms/controls/printpreviewdialog-control-windows-forms.md)
-- [Dialog-Box Controls and Components](../../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md)
+- [PrintPreviewControl Control Overview](printpreviewcontrol-control-overview-windows-forms.md)
+- [PrintPreviewDialog Control](printpreviewdialog-control-windows-forms.md)
+- [Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)

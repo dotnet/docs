@@ -92,4 +92,4 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
   
 ## See also
 
-- [Authoring Workflows, Activities, and Expressions Using Imperative Code](../../../docs/framework/windows-workflow-foundation/authoring-workflows-activities-and-expressions-using-imperative-code.md)
+- [Authoring Workflows, Activities, and Expressions Using Imperative Code](authoring-workflows-activities-and-expressions-using-imperative-code.md)

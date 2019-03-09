@@ -50,6 +50,6 @@ If you have a multiple-document interface (MDI) application, you can merge menu 
 ## See also
 - <xref:System.Windows.Forms.ToolStripManager>
 - <xref:System.Windows.Forms.MenuStrip>
-- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)
-- [How to: Create an MDI Window List with MenuStrip](../../../../docs/framework/winforms/controls/how-to-create-an-mdi-window-list-with-menustrip-windows-forms.md)
-- [How to: Set Up Automatic Menu Merging for MDI Applications](../../../../docs/framework/winforms/controls/how-to-set-up-automatic-menu-merging-for-mdi-applications.md)
+- [MenuStrip Control](menustrip-control-windows-forms.md)
+- [How to: Create an MDI Window List with MenuStrip](how-to-create-an-mdi-window-list-with-menustrip-windows-forms.md)
+- [How to: Set Up Automatic Menu Merging for MDI Applications](how-to-set-up-automatic-menu-merging-for-mdi-applications.md)

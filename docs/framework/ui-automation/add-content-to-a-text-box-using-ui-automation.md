@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "text boxes, adding content"
   - "UI Automation, adding content to text boxes"
 ms.assetid: 8bdd1a73-1ecb-4a05-a891-a7827ebb767f
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Add Content to a Text Box Using UI Automation
 > [!NOTE]

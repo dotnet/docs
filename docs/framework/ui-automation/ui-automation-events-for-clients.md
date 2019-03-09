@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation, events for clients"
   - "events, UI Automation clients"
 ms.assetid: b909e388-3f24-4997-b6d4-bd9c35c2dc27
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Events for Clients
 > [!NOTE]

@@ -28,4 +28,4 @@ Windows Forms <xref:System.Windows.Forms.GroupBox> controls are used to group ot
   
 ## See also
 - <xref:System.Windows.Forms.GroupBox>
-- [GroupBox Control](../../../../docs/framework/winforms/controls/groupbox-control-windows-forms.md)
+- [GroupBox Control](groupbox-control-windows-forms.md)

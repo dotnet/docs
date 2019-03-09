@@ -1,13 +1,14 @@
 ---
 title: "C# Compiler Options Listed Alphabetically"
 ms.date: 05/15/2018
-helpviewer_keywords: 
-  - "compiler options [C#], listed alpabetically"
+helpviewer_keywords:
+  - "compiler options [C#], listed alphabetically"
   - "C# language, compiler options listed alphabetically"
   - "Visual C# compiler, options listed alphabetically"
   - "Visual C#, compiler options listed alphabetically"
 ms.assetid: 43535ea0-ca47-4a15-b528-615087a86092
 ---
+
 # C# Compiler Options Listed Alphabetically
 
 The following compiler options are sorted alphabetically. For a categorical list, see [C# Compiler Options Listed by Category](listed-by-category.md).

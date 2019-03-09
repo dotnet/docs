@@ -8,7 +8,7 @@ ms.assetid: e4e5e4e8-527f-44d1-92fa-8904a08784ea
   
 ### Obtaining the XML from the .NET Blog RSS feed  
   
-1.  In Internet Explorer, navigate to the [.NET Blog RSS feed](https://blogs.msdn.microsoft.com/dotnet/feed/).  
+1.  In Internet Explorer, navigate to the [.NET Blog RSS feed](https://devblogs.microsoft.com/dotnet/feed/).  
   
 2.  Right-click the page and select **View Source**.  
   

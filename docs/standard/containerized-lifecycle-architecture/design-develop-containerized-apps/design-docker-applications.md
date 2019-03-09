@@ -11,7 +11,7 @@ Chapter 1 introduced the fundamental concepts regarding containers and Docker. T
 
 **More info** To learn more about enterprise applications and microservices architecture in depth, read the guide [NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/standard/microservices-architecture) that you can also download from <https://aka.ms/MicroservicesEbook>.
 
-However, before we get into the application life cycle and DevOps, it is important to know how you are going to design and construct your application and what are your design choices.
+However, before we get into the application life cycle and DevOps, it's important to know how you're going to design and construct your application and what are your design choices.
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

@@ -65,7 +65,6 @@ There are several ways to approach recommendation problems, such as recommending
   > [!NOTE]
   > This tutorial uses **Microsoft.ML v0.11.0** and **Microsoft.ML.Recommender v0.11.0**.
     
-    
 4. Add the following `using` statements at the top of your *Program.cs* file:
     
 [!code-csharp[UsingStatements](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#UsingStatements "Add necessary usings")]
@@ -128,9 +127,6 @@ In *Program.cs*, add the following code inside `Main()`:
 
 [!code-csharp[MLContext](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#MLContext "Add MLContext")]
 
-```csharp
-var mlContext = new MLContext();
-```
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations, and initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It is similar, conceptually, to `DBContext` in Entity Framework.
 
 After you initialize `mlContext`, add the following code in `Main()`: 
@@ -164,7 +160,7 @@ Build an `Estimator` with the following steps:
 
 1. After your `LoadData()` method, add the following code in `Main()`: 
     
-[!code-csharp[BuildTrainModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method in Main")]
+   [!code-csharp[BuildTrainModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#BuildTrainModelMain "Add BuildAndTrainModel method in Main")]
 
 2. Create and start defining the method `BuildandTrainModel()` outside of `Main()` by defining the data transformations:
 
@@ -183,18 +179,18 @@ Build an `Estimator` with the following steps:
     [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#TrainModel "Add algorithm with set options and train model")]
 
 The `Matrix Factorization` trainer has several [options](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options) including:
-Input and output columns:
 
+**Input and output columns**
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.MatrixColumnIndexColumnName> (`userIdEncoded`)
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.MatrixRowIndexColumnName> (`movieIdEncoded`)
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.LabelColumnName> (`Label`)
 
-[Hyperparameters](../resources/glossary.md#hyperparameter) for improving the model quality: 
+**[Hyperparameters](../resources/glossary.md#hyperparameter)**
 
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.NumberOfIterations> 
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.ApproximationRank> 
 
-For more information, see [Improve your model step](#improve-your-model) below ).
+For more information on hyperparameters, see [Improve your model step](#improve-your-model) below).
 
 Finally, the [Fit() method](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.Data.DataView.IDataView,Microsoft.Data.DataView.IDataView%29)  trains your model with the provided training dataset. Technically, it executes the `Estimator` defitinions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
 

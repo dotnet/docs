@@ -53,5 +53,5 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
   
 ## See also
 - <xref:System.Windows.Forms.NumericUpDown>
-- [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md)
-- [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md)
+- [NumericUpDown Control](numericupdown-control-windows-forms.md)
+- [NumericUpDown Control Overview](numericupdown-control-overview-windows-forms.md)

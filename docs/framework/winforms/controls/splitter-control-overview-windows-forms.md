@@ -18,5 +18,5 @@ ms.assetid: e2b6ab83-dfdd-40ec-9762-850702c82dcb
   
 ## See also
 - <xref:System.Windows.Forms.SplitContainer>
-- [How to: Dock Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-dock-controls-on-windows-forms.md)
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- [How to: Dock Controls on Windows Forms](how-to-dock-controls-on-windows-forms.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

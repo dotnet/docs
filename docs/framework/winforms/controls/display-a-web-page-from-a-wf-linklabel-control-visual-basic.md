@@ -45,4 +45,4 @@ End Sub
   
 ## See also
 - <xref:System.Windows.Forms.LinkLabel>
-- [LinkLabel Control](../../../../docs/framework/winforms/controls/linklabel-control-windows-forms.md)
+- [LinkLabel Control](linklabel-control-windows-forms.md)

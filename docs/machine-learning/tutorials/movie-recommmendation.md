@@ -23,6 +23,8 @@ In this tutorial, you learn how to:
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
+This tutorial and related sample are currently using **ML.NET version 0.11**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/MovieRecommendation) repository.
 
 ## Machine learning workflow
@@ -94,7 +96,7 @@ There are several ways to approach recommendation problems, such as recommending
 
 The first step in the ML.NET process is to prepare and load your model training and testing data.
 
-The recommendation ratings data is split into `Train` and `Test` datasets. You will use your `Train` data to fit your model, and then you will use your `Test` data to make predictions with your trained model and evaluate how your model is performing. It is common to have an 80/20 split with `Train` and `Test` data, but there are other more advanced methods that don’t involve extracting test data from the dataset (e.g. [cross validation](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/train-cross-validation-ml-net)).
+The recommendation ratings data is split into `Train` and `Test` datasets. You will use your `Train` data to fit your model, and then you will use your `Test` data to make predictions with your trained model and evaluate how your model is performing. It is common to have an 80/20 split with `Train` and `Test` data, but there are other more advanced methods that don’t involve extracting test data from the dataset (e.g. [cross validation](../how-to-guides/train-cross-validation-ml-net.md)).
 
 In *recommendation-ratings-train.csv*, there are four columns:
 
@@ -141,7 +143,7 @@ public class MovieRating
 }
 ```
 
-`MovieRating` specifies an input data class. <xref:Microsoft.ML.Data.LoadColumnAttribute.%23ctor%28System.Int32%29> specifies which columns (by column index) in the dataset should be loaded. The `userId` and `movieId` columns are your `Features` (the inputs you will give the model to predict the `Label`), and the rating column is the `Label` that you will predict (the output of the model).
+`MovieRating` specifies an input data class. The [LoadColumn attribute](xref:Microsoft.ML.Data.LoadColumnAttribute.%23ctor%28System.Int32%29) specifies which columns (by column index) in the dataset should be loaded. The `userId` and `movieId` columns are your `Features` (the inputs you will give the model to predict the `Label`), and the rating column is the `Label` that you will predict (the output of the model).
 
 In *Program.cs*, add the following code inside `Main()`:
 
@@ -150,7 +152,7 @@ In *Program.cs*, add the following code inside `Main()`:
 ```csharp
 var mlContext = new MLContext();
 ```
-<xref:Microsoft.ML.MLContext> is a starting point for all ML.NET operations, and initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It is similar, conceptually, to `DBContext` in Entity Framework.
+The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations, and initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It is similar, conceptually, to `DBContext` in Entity Framework.
 
 After you initialize `mlContext`, add the following code in `Main()`: 
 
@@ -177,9 +179,9 @@ public static (IDataView training, IDataView test) LoadData(MLContext mlContext)
 }
 ```
 
-Data in ML.NET is represented as an <xref:Microsoft.Data.DataView.IDataView>. `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (e.g. SQL database or log files) to an `IDataView` object.
+Data in ML.NET is represented as an [IDataView class](xref:Microsoft.Data.DataView.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (e.g. SQL database or log files) to an `IDataView` object.
 
-You use <xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29> to define the data schema. It returns a
+You use [LoadFromTextFile() method](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) to define the data schema. It returns a
 `IDataView`. In this case, you provide the path for your files (`Test` and `Train`) and indicate both the text file header (so it can use the column names properly) and the comma character data separator (the default separator is a tab).
 
 ## Build and train your model
@@ -194,7 +196,7 @@ You create `Transformers` in ML.NET by creating `Estimators`. `Estimators` take 
 
 ![estimator image](./media/movie-recommendation/estimator.png)
 
-<xref:Microsoft.ML.RecommendationCatalog.RecommendationTrainers.MatrixFactorization%28Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options%29>, the recommendation training algorithm you will use for training your model, is an an example of an `Estimator`.
+[Matrix Factorization](xref:Microsoft.ML.RecommendationCatalog.RecommendationTrainers.MatrixFactorization%28Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options%29), the recommendation training algorithm you will use for training your model, is an an example of an `Estimator`.
 
 Build an `Estimator` with the following steps:
 
@@ -217,7 +219,7 @@ Build an `Estimator` with the following steps:
     }
    ```
 
-    Since `userId` and `movieId` represent users and movie titles, not real values, you use <xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A> to transform each `userId` and each `movieId` into a numeric key type `Feature` column (a format accepted by recommendation algorithms) and add them as new dataset columns:
+    Since `userId` and `movieId` represent users and movie titles, not real values, you use the [MapValueToKey() method](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A) to transform each `userId` and each `movieId` into a numeric key type `Feature` column (a format accepted by recommendation algorithms) and add them as new dataset columns:
 
     | userID | movieID | Label | userIdEncoded | movieIdEncoded |
     | ------------- |:-------------:| -----:|-----:|-----:|
@@ -247,18 +249,21 @@ Build an `Estimator` with the following steps:
     return model;
     ```
 
-The `Matrix Factorization` trainer has several <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options> including:
+The `Matrix Factorization` trainer has several [options](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options) including:
 Input and output columns:
+
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.MatrixColumnIndexColumnName> (`userIdEncoded`)
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.MatrixRowIndexColumnName> (`movieIdEncoded`)
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.LabelColumnName> (`Label`)
+
 [Hyperparameters](../resources/glossary.md#hyperparameter) for improving the model quality: 
+
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.NumberOfIterations> 
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.ApproximationRank> 
 
 For more information, see [Improve your model step](#improve-your-model) below ).
 
-Finally, the <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.Data.DataView.IDataView,Microsoft.Data.DataView.IDataView%29> method trains your model with the provided training dataset. Technically, it executes the `Estimator` defitinions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
+Finally, the [Fit() method](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.Data.DataView.IDataView,Microsoft.Data.DataView.IDataView%29)  trains your model with the provided training dataset. Technically, it executes the `Estimator` defitinions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
 
 ### Matrix Factorization
 Matrix factorization is one of the training algorithms for recommendation scenarios; it is a common approach to recommendation when you have data on how users have rated products in the past. In this case, the algorithm uses a method called collaborative filtering, which assumes that if User 1 has the same opinion as User 2 on a certain issue, then User 1 is more likely to feel the same way as User 2 about a different issue.
@@ -299,7 +304,7 @@ public static void EvaluateModel(MLContext mlContext, IDataView testDataView, IT
 }
 ```
 
-The <xref:Microsoft.ML.ITransformer.Transform%2A> method makes predictions for multiple provided input rows of a test dataset. Once you have the prediction set, you call the <xref:Microsoft.ML.RecommendationCatalog.Evaluate%2A> method to assess the model, which compares the predicted values with the actual labels in the test dataset and returns metrics on how the model is performing.
+The [Transform() method](xref:Microsoft.ML.ITransformer.Transform%2A) makes predictions for multiple provided input rows of a test dataset. Once you have the prediction set, you call the [Evaluate() method](xref:Microsoft.ML.RecommendationCatalog.Evaluate%2A) to assess the model, which compares the predicted values with the actual labels in the test dataset and returns metrics on how the model is performing.
 
 The print statements display your evaluation metrics in the console, which should look similar to the following:
 
@@ -366,7 +371,7 @@ public static void UseModelForSinglePrediction(MLContext mlContext, ITransformer
     var predictionEngine = model.CreatePredictionEngine<MovieRating, MovieRatingPrediction>(mlContext);
 }
 ```
-The <xref:Microsoft.ML.PredictionEngine%602> is a convenience API, which allows you to pass a single instance of data and then perform a prediction on this single instance of data.
+The [PredictionEngine class](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass a single instance of data and then perform a prediction on this single instance of data.
 
 In your `UseModelForSinglePrediction()` method, create an instance of `MovieRating` and pass it to the `Prediction Engine`:
 
@@ -377,7 +382,7 @@ var testInput = new MovieRating { userId = 6, movieId = 10 };
 
 var movieRatingPrediction = predictionEngine.Predict(testInput);
 ```
-The `Predict()` function makes a prediction on a single column of data (in this case on the `testInput`). 
+The [Predict() function](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) makes a prediction on a single column of data (in this case on the `testInput`). 
 
 You can then use the `Score`, or the predicted rating, to determine whether you want to recommend the movie with movieId 10 to user 6. The higher the `Score`, the higher the likelihood of a user liking a particular movie. In this case, let’s say that you recommend movies with a predicted rating of > 3.5. To do that, add the following as the next code lines in the`UseModelForSinglePrediction()` method:
 
@@ -487,7 +492,7 @@ In this tutorial, you only use the three `Features` (`user id`, `movie id`, and 
 
 While this is a good start, in reality you might want to add other attributes or `Features` (e.g. age, gender, geo-location, etc.) if they are included in the dataset. Adding more relevant `Features` can help improve the performance of your recommendation model. 
 
-If you are unsure about which `Features` might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC) and [Feature Permutation Importance](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/determine-global-feature-importance-in-model), which ML.NET provides to discover the most influential `Features`.
+If you are unsure about which `Features` might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC) and [Feature Permutation Importance](../how-to-guides/determine-global-feature-importance-in-model.md), which ML.NET provides to discover the most influential `Features`.
 
 ### Algorithm
 
@@ -523,7 +528,7 @@ This is only one approach for performing movie recommendations. In many cases, y
 ## Other ML.NET Scenarios
 Try out another tutorial to use ML.NET for other Machine Learning scenarios:
 
-| [Taxi fare prediction (regression)](https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/taxi-fare) | [Sentiment analysis (binary classification)](https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/sentiment-analysis) | [Issue classification (multi-class classification)](https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/github-issue-classification) |
+| [Taxi fare prediction (regression)](../tutorials/taxi-fare) | [Sentiment analysis (binary classification)](../tutorials/sentiment-analysis.md) | [Issue classification (multi-class classification)](..tutorials/github-issue-classification.md) |
 | ------------- |:-------------:| -----:|
 
 ## Next steps

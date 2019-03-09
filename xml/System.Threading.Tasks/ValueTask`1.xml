@@ -50,7 +50,7 @@ For uses other than consuming the result of an asynchronous operation using awai
 As such, the default choice for any asynchronous method should be to return a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. Only if performance analysis proves it worthwhile should a <xref:System.Threading.Tasks.ValueTask%601> be used instead of a <xref:System.Threading.Tasks.Task%601>. There is no non-generic version of <xref:System.Threading.Tasks.ValueTask%601>, as the <xref:System.Threading.Tasks.Task.CompletedTask> property may be used to hand back a successfully completed singleton in the case where a method returning a <xref:System.Threading.Tasks.Task> completes synchronously and successfully.   
 
 > [!NOTE]
->  The use of the <xref:System.Threading.Tasks.ValueTask%601> type is supported starting with C# 7, and is not supported by any version of Visual Basic.
+>  The use of the <xref:System.Threading.Tasks.ValueTask%601> type is supported starting with C# 7.0, and is not supported by any version of Visual Basic.
  ]]></format>
     </remarks>
   </Docs>

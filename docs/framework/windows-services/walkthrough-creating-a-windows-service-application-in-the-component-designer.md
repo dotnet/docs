@@ -31,7 +31,7 @@ To begin, create the project and set the values that are required for the servic
 
 3. For **Name**, enter *MyNewService*, and then select **OK**.
 
-   The **Service1.cs [Design]** window appears.
+   The **Design** tab appears (**Service1.cs [Design]** or **Service1.vb [Design]**).
    
    The project template includes a component class named `Service1` that inherits from <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType>. It includes much of the basic service code, such as the code to start the service.
 
@@ -39,15 +39,15 @@ To begin, create the project and set the values that are required for the servic
 
 Rename the service from **Service1** to **MyNewService**.
 
-1. In the **Service1.cs [Design]** tab for **Service1.cs** (or **Service1.vb [Design]** for **Service1.vb**), select the **switch to code view** link. 
+1. In the **Design** tab, select the **switch to code view** link. 
 
-    The **Service1.cs** window appears.
+    The **Service1.cs** or **Service1.vb** tab appears.
 
-2. In the **Service1.cs** window, select any instance of `Service1` in the code, and then choose **Rename** from the shortcut menu. Replace `Service1` with *MyNewService* in the code and then either press **Enter** or select **Apply** in the **Rename: Service1** pop-up window.
+2. Select `Service1` in the code, and then choose **Rename** from the shortcut menu. Replace `Service1` with `MyNewService`, and then either press **Enter** or select **Apply** in the **Rename: Service1** pop-up window.
 
-3. Select the **Service1.cs [Design]** (or **Service1.vb [Design]**) tab and select **Properties** from the shortcut menu. From the **Properties** window, change the **ServiceName** value to *MyNewService*.
+3. In the **Design** tab, select **Properties** from the shortcut menu. From the **Properties** window, change the **ServiceName** value to *MyNewService*.
 
-4. In **Solution Explorer**, rename **Service1.cs** to **MyNewService.cs** (or rename **Service1.vb** to **MyNewService.vb**).
+4. In **Solution Explorer**, rename **Service1.cs** to **MyNewService.cs**, or rename **Service1.vb** to **MyNewService.vb**.
 
 ## Add features to the service
 
@@ -55,13 +55,13 @@ In this section, you add a custom event log to the Windows service. The <xref:Sy
 
 ### Add custom event log functionality
 
-1. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs** (or **MyNewService.vb**), choose **View Designer**.
+1. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs**, or **MyNewService.vb**, choose **View Designer**.
 
-2. In **Toolbox**, expand **Components**, and then drag the **EventLog** component to the **Service1.cs [Design]** (or **Service1.vb [Design]**) tab.
+2. In **Toolbox**, expand **Components**, and then drag the **EventLog** component to the **Service1.cs [Design]**, or **Service1.vb [Design]** tab.
 
-3. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs** (or **MyNewService.vb**), choose **View Code**.
+3. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs**, or **MyNewService.vb**, choose **View Code**.
 
-4. Edit the `MyNewService()` constructor to define a custom event log:
+4. For C#, edit the `MyNewService()` constructor, or the `New()` constructor for Visual Basic, to define a custom event log:
 
    ```csharp
    public MyNewService()
@@ -174,7 +174,7 @@ Services report their status to the [Service Control Manager](/windows/desktop/S
 
 ### Implement service pending status
 
-1. Add a `using` statement (or `Imports` declaration for VB) for the <xref:System.Runtime.InteropServices?displayProperty=nameWithType> namespace in the **MyNewService.cs** (or **MyNewService.vb**) file:
+1. Add a `using` statement, or an `Imports` statement for Visual Basic, for the <xref:System.Runtime.InteropServices?displayProperty=nameWithType> namespace in the **MyNewService.cs** or **MyNewService.vb** file:
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -184,7 +184,7 @@ Services report their status to the [Service Control Manager](/windows/desktop/S
     Imports System.Runtime.InteropServices
     ```
 
-2. Add the following code to **MyNewService.cs** to declare the `ServiceState` values and to add a structure for the status, which you'll use in a platform invoke call:
+2. Add the following code to **MyNewService.cs**, or **MyNewService.vb**, to declare the `ServiceState` values and to add a structure for the status, which you'll use in a platform invoke call:
 
     ```csharp
     public enum ServiceState
@@ -286,13 +286,13 @@ Services report their status to the [Service Control Manager](/windows/desktop/S
 
 Before you run a Windows service, you need to install it, which registers it with the Service Control Manager. Add installers to your project to handle the registration details.
 
-1. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs** (or **MyNewService.vb**), choose **View Designer**.
+1. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs**, or **MyNewService.vb**, choose **View Designer**.
 
-2. In the **Design** view, select the background area (as opposed to the contents), then choose **Add Installer** from the shortcut menu.
+2. In the **Design** view, select the background area, then choose **Add Installer** from the shortcut menu.
 
      By default, Visual Studio adds a component class named `ProjectInstaller`, which contains two installers, to your project. These installers are for your service and for the service's associated process.
 
-4. In the **Design** view for **ProjectInstaller**, select **serviceInstaller1** for a Visual C# project (or **ServiceInstaller1** for a Visual Basic project), then choose **Properties** from the shortcut menu.
+4. In the **Design** view for **ProjectInstaller**, select **serviceInstaller1** for a Visual C# project, or **ServiceInstaller1** for a Visual Basic project, then choose **Properties** from the shortcut menu.
 
 5. In the **Properties** window, verify the <xref:System.ServiceProcess.ServiceInstaller.ServiceName%2A> property is set to **MyNewService**.
 
@@ -304,11 +304,11 @@ Before you run a Windows service, you need to install it, which registers it wit
 
      This text appears in the **Display Name** column of the **Services** window. This name can be different from the <xref:System.ServiceProcess.ServiceInstaller.ServiceName%2A> property, which is the name the system uses (for example, the name you use for the `net start` command to start your service).
 
-8. Set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property to <xref:System.ServiceProcess.ServiceStartMode.Automatic> from the dropdown list.
+8. Set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property to <xref:System.ServiceProcess.ServiceStartMode.Automatic> from the drop-down list.
 
      ![Installer Properties for a Windows service](media/windows-service-installer-properties.png "Windows service installer properties")
 
-9. In the **Design** view for **ProjectInstaller**, choose **serviceProcessInstaller1** for a Visual C# project (or **ServiceProcessInstaller1** for a Visual Basic project), then choose **Properties** from the shortcut menu. Set the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> property to <xref:System.ServiceProcess.ServiceAccount.LocalSystem> from the dropdown list. 
+9. In the **Design** view for **ProjectInstaller**, choose **serviceProcessInstaller1** for a Visual C# project, or **ServiceProcessInstaller1** for a Visual Basic project, then choose **Properties** from the shortcut menu. Set the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> property to <xref:System.ServiceProcess.ServiceAccount.LocalSystem> from the drop-down list. 
 
      This setting installs the service and runs it by using the local system account.
 
@@ -328,7 +328,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
 ### To add startup parameters
 
-1. Select **Program.cs** (or **MyNewService.Designer.vb**), then choose **View Code** from the shortcut menu. In the `Main` method, add an input parameter to pass to the service constructor:
+1. Select **Program.cs**, or **MyNewService.Designer.vb**, then choose **View Code** from the shortcut menu. In the `Main` method, add an input parameter to pass to the service constructor:
 
    ```csharp
    static void Main(string[] args)
@@ -344,12 +344,12 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
    ```vb
    Shared Sub Main(ByVal cmdArgs() As String)
-       Dim ServicesToRun() As System.ServiceProcess.ServiceBase = New System.ServiceProcess.ServiceBase() {New MyNewServiceVB(cmdArgs)}
+       Dim ServicesToRun() As System.ServiceProcess.ServiceBase = New System.ServiceProcess.ServiceBase() {New MyNewService(cmdArgs)}
        System.ServiceProcess.ServiceBase.Run(ServicesToRun)
    End Sub
    ```
 
-2. In **MyNewService.cs** (or **MyNewService.cs**), change the `MyNewService` constructor as follows:
+2. In **MyNewService.cs**, or **MyNewService.vb**, change the `MyNewService` constructor as follows:
 
    ```csharp
    public MyNewService(string[] args)
@@ -403,7 +403,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
    This code sets the event source and log name according to the startup parameters that the user supplies. Or, it uses default values if no arguments are supplied.
 
-3. To specify the command-line arguments, add the following code to the `ProjectInstaller` class in **ProjectInstaller.cs** (or **ProjectInstaller.vb**):
+3. To specify the command-line arguments, add the following code to the `ProjectInstaller` class in **ProjectInstaller.cs**, or **ProjectInstaller.vb**:
 
    ```csharp
    protected override void OnBeforeInstall(IDictionary savedState)
@@ -422,7 +422,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
    End Sub
    ```
 
-   This code adds the default parameter values to the **ImagePath** registry subkey. Typically, this subkey contains the full path to the executable for the Windows service. For the service to start up correctly, the user must supply quotation marks for the path and each individual parameter. A user can change the parameters in the **ImagePath** registry key to change the startup parameters for the Windows service. However, a better way is to change the key programmatically and expose the functionality in a user-friendly way. For example, in a management or configuration utility.
+   This code adds the default parameter values to the **ImagePath** registry entry. Typically, this subkey contains the full path to the executable for the Windows service. For the service to start up correctly, the user must supply quotation marks for the path and each individual parameter. A user can change the parameters in the **ImagePath** entry value to change the startup parameters for the Windows service. However, a better way is to change the value programmatically and expose the functionality in a user-friendly way. For example, in a management or configuration utility.
 
 ## Build the service
 
@@ -430,7 +430,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
    The property pages for your project appear.
 
-2. On the **Application** tab, in the **Startup object** list, choose **MyNewService.Program**.
+2. On the **Application** tab, in the **Startup object** list, choose **MyNewService.Program**, or **Sub Main** for Visual Basic projects.
 
 3. To build the project, in **Solution Explorer**, choose **Build** from the shortcut menu for your project (or press **Ctrl**+**Shift**+**B**).
 
@@ -465,7 +465,7 @@ For more information, see [How to: Install and uninstall services](how-to-instal
 
      You should see your service listed in **Services**, displayed alphabetically by the display name that you set for it.
 
-     ![MyNewService in the Services window.](../../../docs/framework/windows-services/media/windowsservices-serviceswindow.PNG)
+     ![MyNewService in the Services window.](media/windowsservices-serviceswindow.PNG)
 
 2. To start the service, choose **Start** from the service's shortcut menu.
 

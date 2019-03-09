@@ -222,7 +222,7 @@ The following table lists the supported languages.
 
 - For information about migrating your app from the .NET Framework 4 to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases, see the [migration guide](~/docs/framework/migration-guide/index.md).
 
-- See the [.NET Framework Reference Source](https://referencesource.microsoft.com/) to browse through the .NET Framework source code online. The reference source is also available on [GitHub](https://github.com/Microsoft/referencesource). You can [download the reference source](https://referencesource.microsoft.com/download.html) for offline viewing and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](https://blogs.msdn.com/b/dotnet/archive/2014/02/24/a-new-look-for-net-reference-source.aspx).
+- See the [.NET Framework Reference Source](https://referencesource.microsoft.com/) to browse through the .NET Framework source code online. The reference source is also available on [GitHub](https://github.com/Microsoft/referencesource). You can [download the reference source](https://referencesource.microsoft.com/download.html) for offline viewing and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](https://devblogs.microsoft.com/dotnet/a-new-look-for-net-reference-source/).
 
 ## See also
 

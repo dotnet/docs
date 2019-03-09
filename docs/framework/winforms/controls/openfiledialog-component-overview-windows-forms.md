@@ -20,4 +20,4 @@ The Windows Forms <xref:System.Windows.Forms.OpenFileDialog> component is a pre-
   
 ## See also
 - <xref:System.Windows.Forms.OpenFileDialog>
-- [OpenFileDialog Component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md)
+- [OpenFileDialog Component](openfiledialog-component-windows-forms.md)

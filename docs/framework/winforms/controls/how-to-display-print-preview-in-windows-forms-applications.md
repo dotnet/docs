@@ -14,7 +14,7 @@ ms.assetid: e394134c-0886-4517-bd8d-edc4a3749eb5
 # How to: Display Print Preview in Windows Forms Applications
 You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable users to display a document, often before it is to be printed.  
   
- To do this, you need to specify an instance of the <xref:System.Drawing.Printing.PrintDocument> class; this is the document to be printed. For more information about using print preview with the <xref:System.Drawing.Printing.PrintDocument> component, see [How to: Print in Windows Forms Using Print Preview](../../../../docs/framework/winforms/advanced/how-to-print-in-windows-forms-using-print-preview.md).  
+ To do this, you need to specify an instance of the <xref:System.Drawing.Printing.PrintDocument> class; this is the document to be printed. For more information about using print preview with the <xref:System.Drawing.Printing.PrintDocument> component, see [How to: Print in Windows Forms Using Print Preview](../advanced/how-to-print-in-windows-forms-using-print-preview.md).  
   
 > [!NOTE]
 >  To use the <xref:System.Windows.Forms.PrintPreviewDialog> control at run time, users must have a printer installed on their computer, either locally or through a network, as this is partly how the <xref:System.Windows.Forms.PrintPreviewDialog> component determines how a document will look when printed.  
@@ -76,7 +76,7 @@ You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable
     ```  
   
 ## See also
-- [PrintDocument Component](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md)
-- [PrintPreviewDialog Control](../../../../docs/framework/winforms/controls/printpreviewdialog-control-windows-forms.md)
-- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
-- [Windows Forms](../../../../docs/framework/winforms/index.md)
+- [PrintDocument Component](printdocument-component-windows-forms.md)
+- [PrintPreviewDialog Control](printpreviewdialog-control-windows-forms.md)
+- [Windows Forms Print Support](../advanced/windows-forms-print-support.md)
+- [Windows Forms](../index.md)

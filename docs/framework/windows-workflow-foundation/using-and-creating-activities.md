@@ -9,8 +9,8 @@ ms.assetid: 2a69f32e-007f-47d0-ab96-535311641428
 The topics in this section describe the system-provided activities available in Windows Workflow Foundation (WF).  
   
 ## In This Section  
- [Built-In Activity Library](../../../docs/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library.md)  
+ [Built-In Activity Library](net-framework-4-5-built-in-activity-library.md)  
  Describes the system-provided activities available in [!INCLUDE[wf1](../../../includes/wf1-md.md)].  
   
- [Designing and Implementing Custom Activities](../../../docs/framework/windows-workflow-foundation/designing-and-implementing-custom-activities.md)  
+ [Designing and Implementing Custom Activities](designing-and-implementing-custom-activities.md)  
  Describes how to create custom activities with the <xref:System.Activities.CodeActivity> or the <xref:System.Activities.NativeActivity> methods.

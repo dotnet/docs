@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.assetid: 6c91c975-3cb7-4504-82f0-fc6255f8fb85
 ---
 # How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control
-The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to create Web-style links on your form. When the link is clicked, you can change its color to indicate the link has been visited. For more information on changing the color, see [How to: Change the Appearance of the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md).  
+The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to create Web-style links on your form. When the link is clicked, you can change its color to indicate the link has been visited. For more information on changing the color, see [How to: Change the Appearance of the Windows Forms LinkLabel Control](how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md).  
   
 ## Linking to Another Form  
   
@@ -174,6 +174,6 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
   
 ## See also
 - <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType>
-- [LinkLabel Control Overview](../../../../docs/framework/winforms/controls/linklabel-control-overview-windows-forms.md)
-- [How to: Change the Appearance of the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)
-- [LinkLabel Control](../../../../docs/framework/winforms/controls/linklabel-control-windows-forms.md)
+- [LinkLabel Control Overview](linklabel-control-overview-windows-forms.md)
+- [How to: Change the Appearance of the Windows Forms LinkLabel Control](how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)
+- [LinkLabel Control](linklabel-control-windows-forms.md)

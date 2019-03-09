@@ -14,8 +14,8 @@ The articles in this section describe some of the samples in the download packag
 
 ## In this section
 
-[Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md) - Provides samples that are related to workflow applications.
+[Application](application.md) - Provides samples that are related to workflow applications.
 
-[Basic](../../../../docs/framework/windows-workflow-foundation/samples/basic.md) - Provides samples that demonstrate basic Windows Workflow Foundation (WF) functionality.
+[Basic](basic.md) - Provides samples that demonstrate basic Windows Workflow Foundation (WF) functionality.
 
-[Scenario](../../../../docs/framework/windows-workflow-foundation/samples/scenario.md) - Provides examples of Windows Workflow Foundation (WF) scenarios.
+[Scenario](scenario.md) - Provides examples of Windows Workflow Foundation (WF) scenarios.

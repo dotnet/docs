@@ -30,4 +30,4 @@ ms.assetid: 9233e0c3-2fa6-405e-8701-959479b1250e
   
 ## See also
 - <xref:System.Windows.Forms.TableLayoutPanel>
-- [TableLayoutPanel Control Overview](../../../../docs/framework/winforms/controls/tablelayoutpanel-control-overview.md)
+- [TableLayoutPanel Control Overview](tablelayoutpanel-control-overview.md)

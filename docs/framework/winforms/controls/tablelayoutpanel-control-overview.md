@@ -38,6 +38,6 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
 ## See also
 - <xref:System.Windows.Forms.FlowLayoutPanel>
 - <xref:System.Windows.Forms.TableLayoutSettings>
-- [How to: Design a Windows Forms Layout that Responds Well to Localization](../../../../docs/framework/winforms/controls/how-to-design-a-windows-forms-layout-that-responds-well-to-localization.md)
-- [How to: Create a Resizable Windows Form for Data Entry](../../../../docs/framework/winforms/controls/how-to-create-a-resizable-windows-form-for-data-entry.md)
-- [Best Practices for the TableLayoutPanel Control](../../../../docs/framework/winforms/controls/best-practices-for-the-tablelayoutpanel-control.md)
+- [How to: Design a Windows Forms Layout that Responds Well to Localization](how-to-design-a-windows-forms-layout-that-responds-well-to-localization.md)
+- [How to: Create a Resizable Windows Form for Data Entry](how-to-create-a-resizable-windows-form-for-data-entry.md)
+- [Best Practices for the TableLayoutPanel Control](best-practices-for-the-tablelayoutpanel-control.md)

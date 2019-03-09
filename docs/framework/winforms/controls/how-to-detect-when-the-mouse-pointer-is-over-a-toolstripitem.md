@@ -20,4 +20,4 @@ Use the following procedure to detect when the mouse pointer is over a <xref:Sys
 ## See also
 - <xref:System.Windows.Forms.ToolStripItem>
 - <xref:System.Windows.Forms.ToolStripItem.Selected%2A>
-- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)

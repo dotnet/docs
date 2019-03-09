@@ -44,6 +44,6 @@ When you add <xref:System.Windows.Forms.ToolStripItem>s that require more space 
 - <xref:System.Windows.Forms.ToolStripOverflowButton>
 - <xref:System.Windows.Forms.ToolStripItem.Overflow%2A>
 - <xref:System.Windows.Forms.ToolStrip.CanOverflow%2A>
-- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
-- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)
-- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Architecture](toolstrip-control-architecture.md)
+- [ToolStrip Technology Summary](toolstrip-technology-summary.md)

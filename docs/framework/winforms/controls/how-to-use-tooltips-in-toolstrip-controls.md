@@ -34,4 +34,4 @@ You can display a <xref:System.Windows.Forms.ToolTip> for the <xref:System.Windo
 - <xref:System.Windows.Forms.ToolStripButton>
 - <xref:System.Windows.Forms.ToolStripDropDownButton>
 - <xref:System.Windows.Forms.ToolStripSplitButton>
-- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)

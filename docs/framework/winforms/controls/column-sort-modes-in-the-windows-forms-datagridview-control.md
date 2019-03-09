@@ -25,7 +25,7 @@ ms.assetid: 43715887-2df9-4da7-bcf1-b9c7c842b2bf
   
  When a <xref:System.Windows.Forms.DataGridView> is sorted, you can determine both the sort column and the sort order by checking the values of the <xref:System.Windows.Forms.DataGridView.SortedColumn%2A> and <xref:System.Windows.Forms.DataGridView.SortOrder%2A> properties. These values are not meaningful after a custom sorting operation. For more information about custom sorting, see the Custom Sorting section later in this topic.  
   
- When a <xref:System.Windows.Forms.DataGridView> control containing both bound and unbound columns is sorted, the values in the unbound columns cannot be maintained automatically. To maintain these values, you must implement virtual mode by setting the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` and handling the <xref:System.Windows.Forms.DataGridView.CellValueNeeded> and <xref:System.Windows.Forms.DataGridView.CellValuePushed> events. For more information, see [How to: Implement Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-implement-virtual-mode-in-the-windows-forms-datagridview-control.md). Sorting by unbound columns in bound mode is not supported.  
+ When a <xref:System.Windows.Forms.DataGridView> control containing both bound and unbound columns is sorted, the values in the unbound columns cannot be maintained automatically. To maintain these values, you must implement virtual mode by setting the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` and handling the <xref:System.Windows.Forms.DataGridView.CellValueNeeded> and <xref:System.Windows.Forms.DataGridView.CellValuePushed> events. For more information, see [How to: Implement Virtual Mode in the Windows Forms DataGridView Control](how-to-implement-virtual-mode-in-the-windows-forms-datagridview-control.md). Sorting by unbound columns in bound mode is not supported.  
   
 ## Programmatic Sorting  
  You can sort a <xref:System.Windows.Forms.DataGridView> programmatically by calling its <xref:System.Windows.Forms.DataGridView.Sort%2A> method.  
@@ -59,6 +59,6 @@ ms.assetid: 43715887-2df9-4da7-bcf1-b9c7c842b2bf
 - <xref:System.Windows.Forms.DataGridView.SortOrder%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A?displayProperty=nameWithType>
-- [Sorting Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/sorting-data-in-the-windows-forms-datagridview-control.md)
-- [How to: Set the Sort Modes for Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/set-the-sort-modes-for-columns-wf-datagridview-control.md)
-- [How to: Customize Sorting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md)
+- [Sorting Data in the Windows Forms DataGridView Control](sorting-data-in-the-windows-forms-datagridview-control.md)
+- [How to: Set the Sort Modes for Columns in the Windows Forms DataGridView Control](set-the-sort-modes-for-columns-wf-datagridview-control.md)
+- [How to: Customize Sorting in the Windows Forms DataGridView Control](how-to-customize-sorting-in-the-windows-forms-datagridview-control.md)

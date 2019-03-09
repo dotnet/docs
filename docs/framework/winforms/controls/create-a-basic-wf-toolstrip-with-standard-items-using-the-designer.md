@@ -24,7 +24,7 @@ The following procedure demonstrates how to create a <xref:System.Windows.Forms.
   
 ## See also
 - <xref:System.Windows.Forms.ToolStrip>
-- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
-- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)
-- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)
+- [ToolStrip Control Architecture](toolstrip-control-architecture.md)
+- [ToolStrip Technology Summary](toolstrip-technology-summary.md)

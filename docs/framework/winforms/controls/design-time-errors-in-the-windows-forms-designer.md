@@ -48,6 +48,6 @@ This topic explains the meaning and use of the design-time error list that appea
   
 ## See also
 - [Troubleshooting Design-Time Development](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171843(v=vs.120))
-- [Troubleshooting Control and Component Authoring](../../../../docs/framework/winforms/controls/troubleshooting-control-and-component-authoring.md)
-- [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)
+- [Troubleshooting Control and Component Authoring](troubleshooting-control-and-component-authoring.md)
+- [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)
 - [Windows Forms Designer Error Messages](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233640(v=vs.100))

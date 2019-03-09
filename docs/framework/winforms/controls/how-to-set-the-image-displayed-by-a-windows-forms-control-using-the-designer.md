@@ -20,7 +20,7 @@ Several Windows Forms controls can display images. The image can be an icon that
   
 1.  In the **Properties** window, select the **Image** or **BackgroundImage** property of the control, then click the ellipsis button (  
   
-     ![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")  
+     ![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")  
   
      ) to display the **Select Resource** dialog box.  
   
@@ -30,4 +30,4 @@ Several Windows Forms controls can display images. The image can be an icon that
 - <xref:System.Drawing.Image.FromFile%2A>
 - <xref:System.Drawing.Image>
 - <xref:System.Windows.Forms.Control.BackgroundImage%2A>
-- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](../../../../docs/framework/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
+- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)

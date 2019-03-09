@@ -13,16 +13,16 @@ The common language runtime uses an advanced implementation of the Windows Graph
   
  In this section, you will find topics that introduce the fundamentals of [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] programming. Although not intended to be a comprehensive reference, this section includes information about the <xref:System.Drawing.Graphics>, <xref:System.Drawing.Pen>, <xref:System.Drawing.Brush>, and <xref:System.Drawing.Color> objects, and explains how to perform such tasks as drawing shapes, drawing text, or displaying images. For more information, see [GDI+ Reference](/windows/desktop/gdiplus/-gdiplus-class-gdi-reference).  
   
- If you'd like to jump in and get started right away, see [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md). It has topics on how to use code to draw lines, shapes, text, and more on Windows forms.  
+ If you'd like to jump in and get started right away, see [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md). It has topics on how to use code to draw lines, shapes, text, and more on Windows forms.  
   
 ## In This Section  
- [Graphics Overview](../../../../docs/framework/winforms/advanced/graphics-overview-windows-forms.md)  
+ [Graphics Overview](graphics-overview-windows-forms.md)  
  Provides an introduction to the graphics-related managed classes.  
   
- [About GDI+ Managed Code](../../../../docs/framework/winforms/advanced/about-gdi-managed-code.md)  
+ [About GDI+ Managed Code](about-gdi-managed-code.md)  
  Provides information about the managed [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] classes.  
   
- [Using Managed Graphics Classes](../../../../docs/framework/winforms/advanced/using-managed-graphics-classes.md)  
+ [Using Managed Graphics Classes](using-managed-graphics-classes.md)  
  Demonstrates how to complete a variety of tasks using the [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] managed classes.  
   
 ## Reference  
@@ -42,5 +42,5 @@ The common language runtime uses an advanced implementation of the Windows Graph
  Provides printing functionality.  
   
 ## Related Sections  
- [Custom Control Painting and Rendering](../../../../docs/framework/winforms/controls/custom-control-painting-and-rendering.md)  
+ [Custom Control Painting and Rendering](../controls/custom-control-painting-and-rendering.md)  
  Details how to provide code for painting controls.

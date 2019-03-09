@@ -60,7 +60,7 @@ The following example demonstrates the usage of the conditional ref expression:
 
 [!code-csharp[conditional ref](~/samples/snippets/csharp/language-reference/operators/ConditionalExamples.cs#ConditionalRef)]
 
-For more information, see the [feature proposal note](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.2/conditional-ref.md).
+For more information, see the [feature proposal note](../../../../_csharplang/proposals/csharp-7.2/conditional-ref.md).
 
 ## Conditional operator and an `if..else` statement
 

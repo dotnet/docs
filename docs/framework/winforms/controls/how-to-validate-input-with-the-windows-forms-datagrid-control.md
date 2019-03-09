@@ -16,7 +16,7 @@ ms.assetid: f1e9c3a0-d0a1-4893-a615-b4b0db046c63
 # How to: Validate Input with the Windows Forms DataGrid Control
 
 > [!NOTE]
-> The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).
+> The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).
 
 There are two types of input validation available for the Windows Forms <xref:System.Windows.Forms.DataGrid> control. If the user attempts to enter a value that is of an unacceptable data type for the cell, for example a string into an integer, the new invalid value is replaced with the old value. This kind of input validation is done automatically and cannot be customized.
 
@@ -84,4 +84,4 @@ The other type of input validation can be used to reject any unacceptable data, 
 - <xref:System.Windows.Forms.DataGrid>
 - <xref:System.Data.DataTable.ColumnChanging>
 - <xref:System.Data.DataRow.SetColumnError%2A>
-- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+- [DataGrid Control](datagrid-control-windows-forms.md)

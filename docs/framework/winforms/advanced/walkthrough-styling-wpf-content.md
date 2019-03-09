@@ -41,7 +41,7 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
   
 #### To create WPF control types  
   
-1.  Add a new WPF <xref:System.Windows.Controls.UserControl> project to the solution. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
+1.  Add a new WPF <xref:System.Windows.Controls.UserControl> project to the solution. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
   
 2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100)).  
   
@@ -70,7 +70,7 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
   
 4.  In XAML view, insert the following XAML after the `<UserControl>` opening tag.  
   
-     This XAML creates a gradient with a contrasting gradient border. When the control is clicked, the gradients are changed to generate a pressed button look. For more information, see [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md).  
+     This XAML creates a gradient with a contrasting gradient border. When the control is clicked, the gradients are changed to generate a pressed button look. For more information, see [Styling and Templating](../../wpf/controls/styling-and-templating.md).  
   
 ```xaml  
 <UserControl.Resources>  
@@ -146,8 +146,8 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 ## See also
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
-- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
+- [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
+- [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
-- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
-- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [XAML Overview (WPF)](../../wpf/advanced/xaml-overview-wpf.md)
+- [Styling and Templating](../../wpf/controls/styling-and-templating.md)

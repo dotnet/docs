@@ -15,11 +15,11 @@ Visual Studio is a dots per inch (DPI) aware application, which means the displa
 
 The **Windows Forms Designer** in Visual Studio doesn't have scaling support. This causes display issues when you open some forms in the **Windows Forms Designer** on high dots per inch (HDPI) monitors. For examples, controls can appear to overlap as shown in the following image:
 
-![Windows Forms Designer on HDPI monitor](media/disable-dpi-awareness-visual-studio/win-forms-designer-hdpi.png)
+![Windows Forms Designer on HDPI monitor](./media/disable-dpi-awareness-visual-studio/win-forms-designer-hdpi.png)
 
 In Visual Studio 2017 version 15.8 and later, when you open a form in the **Windows Forms Designer** on an HDPI monitor, Visual Studio displays a yellow informational bar at the top of the designer:
 
-![Informational bar in Visual Studio to restart in DPI-unaware mode](media/disable-dpi-awareness-visual-studio/scaling-gold-bar.png)
+![Informational bar in Visual Studio to restart in DPI-unaware mode](./media/disable-dpi-awareness-visual-studio/scaling-gold-bar.png)
 
 The message reads **Scaling on your main display is set to 200% (192 dpi). This might cause rendering problems in the designer window.**
 
@@ -69,7 +69,7 @@ You can choose not to be notified of DPI scaling issues in Visual Studio. You mi
 
 To disable notifications, choose **Tools** > **Options** to open the **Options** dialog. Then, choose **Windows Forms Designer** > **General**, and set **DPI Scaling Notifications** to **False**.
 
-![DPI scaling notifications option in Visual Studio](media/disable-dpi-awareness-visual-studio/notifications-option.png)
+![DPI scaling notifications option in Visual Studio](./media/disable-dpi-awareness-visual-studio/notifications-option.png)
 
 If you want to later reenable scaling notifications, set the property to **True**.
 

@@ -219,7 +219,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
  Context-based correlation has a performance advantage in that the correlation key is located in the message header.  The key can be read from the message without de-serialization/message-copying.  In content-based correlation, the correlation key is stored in the message body.  An XPath expression is used to locate the key.  The cost of this extra processing depends on the size of the message, depth of the key in the body, and the number of keys.  This test compares context- and content-based correlation and also shows the performance degradation when using multiple keys.
 
 #### Environment Setup
-![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
+![Environment setup for workflow performance test](./media/performance/performance-test-environment.gif)
 
 #### Test Setup
 ![Correlation Throughput Workflow Test](./media/performance/correlation-throughput-workflow.gif "Correlation throughput workflow test setup")

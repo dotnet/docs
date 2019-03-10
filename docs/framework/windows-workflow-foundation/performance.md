@@ -224,7 +224,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 #### Test Setup
 ![Correlation Throughput Workflow Test](./media/performance/correlation-throughput-workflow.gif "Correlation throughput workflow test setup")
 
- The workflow shown above is the same one used in the "Persistence" section below.  For the correlation tests without persistence there is no persistence provider installed in the runtime.  Correlation occurs in two places: CreateOrder and CompleteOrder.
+ The previous workflow is the same one used in the [Persistence](#persistence) section. For the correlation tests without persistence, there is no persistence provider installed in the runtime. Correlation occurs in two places: CreateOrder and CompleteOrder.
 
 #### Test Results
 ![Correlation Throughput](./media/performance/correlation-throughput-graph.gif "Correlation throughput graph")

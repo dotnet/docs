@@ -102,7 +102,7 @@ ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 
  The following diagram shows the workflows used for this test. The WF3 workflow is on the left and the WF4 workflow is on the right.
 
- ![WF3 ReplicatorActivity and WF4 ParallelForEach](./media/performance/replicator-and-parallel-for-wf3-wf4.gif)
+ ![WF3 ReplicatorActivity and WF4 ParallelForEach](./media/performance/replicator-parallel-wf3-wf4.gif)
 
 ### Sequential Workflow with Five Activities
  This test is meant to show the effect of having several activities execute in sequence.  There are five activities in the sequence.
@@ -157,7 +157,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
 
 The following diagram shows the basic compensation workflow. The WF3 workflow is on the left and the WF4 workflow is on the right.
 
-![WF3 and WF4 basic compensation workflows](./media/performance/basic-compensation-workflows-for-wf3-and-wf4.gif)
+![WF3 and WF4 basic compensation workflows](./media/performance/basic-compensation-workflows-wf3-wf4.gif)
 
 ### Performance Test Results
 
@@ -194,7 +194,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
  In a WCF workflow service application, the latency for starting a new workflow or loading an existing workflow is important as it can be blocking.  This test case measures a WF3 XOML host against a WF4 XAMLX host in a typical scenario.
 
 ##### Environment Setup
- ![Environment setup for latency and throughput tests](./media/performance/latency-and-throughput-environment-setup.gif "Latency and throughput environment setup")
+ ![Environment setup for latency and throughput tests](./media/performance/latency-throughput-environment-setup.gif)
 
 ##### Test Setup
  In the scenario, a client computer contacts a WCF workflow service using context-based correlation.  Context correlation requires a special context binding and uses a context header or cookie to relate messages to the correct workflow instance.  It has a performance benefit in that the correlation Id is located in the message header so the message body does not need to be parsed.
@@ -234,7 +234,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 #### Correlation with Persistence
  With a persisted workflow, the CPU pressure from content-based correlation shifts from the workflow runtime to the SQL database.  The stored procedures in the SQL persistence provider do the work of matching the keys to locate the appropriate workflow.
 
- ![Line chart showing correlation and persistence results](./media/performance/correlation-and-persistence-graph.gif)
+ ![Line chart showing correlation and persistence results](./media/performance/correlation-persistence-graph.gif)
 
  Context-based correlation is still faster than content-based correlation.  However, the difference is less pronounced as persistence has more impact on performance than correlation.
 
@@ -248,11 +248,11 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  The number of activities in a given test is determined by the depth and number of activities per sequence.  The following equation computes the number of activities in the WF4 test:
 
- ![Equation to compute number of activities](./media/performance/number-of-activities-equation.gif "Number of activities equation")
+ ![Equation to compute number of activities](./media/performance/number-activities-equation.gif)
 
  The WF3 test’s activity count can be computed with a slightly different equation due to an extra sequence:
 
- ![Equation to compute number of WF3 activities](./media/performance/wf3-number-of-activities-equation.gif "WF3 number of activities equation")
+ ![Equation to compute number of WF3 activities](./media/performance/wf3-number-activities-equation.gif)
 
  Where d is the depth and a is the number of activities per sequence.  The logic behind these equations is that the first constant, multiplied by a, is the number of sequences and the second constant is the static number of activities in the current level.  There are three flowchart child activities in each flowchart.  At the bottom depth level, these flowcharts are empty but at the other levels they are copies of the main flowchart.  The number of activities in each test variation’s workflow definition is indicated in the following table:
 
@@ -264,11 +264,11 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  An equivalent workflow was created for WF3. The WF3 designer shows the entire workflow in the design area instead of nesting, therefore it is too big to display in this topic. A snippet of the workflow is shown below.
 
- ![Flowchart snippet of the WF3 workflow](./media/performance/wf3-workflow-snippet.gif "WF3 Workflow")
+ ![Flowchart snippet of the WF3 workflow](./media/performance/wf3-workflow-snippet.gif)
 
  To exercise nesting in an extreme case, another workflow that is part of this test uses 100 nested sequences.  In the innermost sequence is a single `Comment` or <xref:System.Workflow.Activities.CodeActivity>.
 
- ![Flowchart of a nested sequence](./media/performance/nested-sequence-workflow.gif "Nested sequences")
+ ![Flowchart of a nested sequence](./media/performance/nested-sequence-workflow.gif)
 
  Tracking and persistence are not used as part of this test.
 
@@ -285,11 +285,11 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  The two new basic tests have workflows that look like those shown below:
 
- ![Complex workflow for both WF3 and WF4](./media/performance/complex-workflow-wf3-wf4.gif "Complex workflows")
+ ![Complex workflow for both WF3 and WF4](./media/performance/complex-workflow-wf3-wf4.gif)
 
  In the WF3 workflow shown above, empty <xref:System.Workflow.Activities.CodeActivity> activities are used.  The WF4 workflow above uses `Comment` activities.  The `Comment` activity was described in the Component-level Performance Comparisons section earlier in this article.
 
- ![Column chart showing complex workflow memory usage for WF3 and WF4 workflows](./media/performance/complex-memory-usage-wf3-wf4.gif "Memory usage chart")
+ ![Column chart showing complex workflow memory usage for WF3 and WF4 workflows](./media/performance/complex-memory-usage-wf3-wf4.gif)
 
  One of the clear trends to notice in this graph is that nesting has relatively minimal impact on memory usage in both WF3 and WF4.  The most significant memory impact comes from the number of activities in a given workflow.  Given the data from the sequence 1000, complex depth 5 sequence 5, and complex depth 7 sequence 1 variations, it is clear that as the number of activities enters the thousands, the memory usage increase becomes more noticeable.  In the extreme case (depth 7 sequence 1) where there are ~29K activities, WF4 is using almost 79% less memory than WF3.
 
@@ -304,7 +304,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
 The following image shows a WF3 workflow with ReceiveActivity and a WF4 workflow with request/response pattern:
 
- ![Workflow Services in WF3 and WF4](./media/performance/workflow-with-receive-activity.gif)
+ ![Workflow Services in WF3 and WF4](./media/performance/workflow-receive-activity.gif)
 
  The following table shows the delta in working set between a single workflow definition and 1001 definitions:
 
@@ -357,12 +357,12 @@ public class Workflow1 : Activity
 ### Test Setup
  Even with an improved feature set and better concurrency handling, the SQL persistence provider in WF4 is faster than the provider in WF3.  To showcase this, two workflows that perform essentially the same operations in WF3 and WF4 are compared below.
 
- ![Persistence workflow in WF3 on left and WF4 on right](./media/performance/persist-workflow-in-wf3-and-wf4.gif "Persistence workflows")
+ ![Persistence workflow in WF3 on left and WF4 on right](./media/performance/persist-workflow-wf3-wf4.gif)
 
  The two workflows are both created by a received message.  After sending an initial reply, the workflow is persisted.  In the WF3 case, an empty <xref:System.Workflow.ComponentModel.TransactionScopeActivity> is used to initiate the persistence.  The same could be achieved in WF3 by marking an activity as "persist on close."  A second, correlated message completes the workflow.  The workflows are persisted but not unloaded.
 
 ### Test Results
- ![Column chart showing throughput persistence](./media/performance/throughput-persistence-graph.gif "Throughput Persistence")
+ ![Column chart showing throughput persistence](./media/performance/throughput-persistence-graph.gif)
 
  When the transport between client and middle tier is HTTP, persistence in WF4 shows an improvement of 2.6 times.  The TCP transport increases that factor to 3.0 times.  In all cases, CPU utilization on the middle tier is 98% or higher.  The reason that WF4 throughput is greater is due to the faster workflow runtime.  The size of the serialized instance is low for both cases and is not a major contributing element in this situation.
 
@@ -422,7 +422,7 @@ public class Workflow1 : Activity
 
 ### Test Results
 
- ![Column chart showing workflow tracking costs](./media/performance/workflow-tracking-costs.gif "Workflow tracking cost")
+ ![Column chart showing workflow tracking costs](./media/performance/workflow-tracking-costs.gif)
 
  Health monitoring has roughly a 3% impact on throughput.  The basic profile’s cost is around 8%.
 

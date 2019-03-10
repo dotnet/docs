@@ -18,10 +18,10 @@ A Windows Forms <xref:System.Windows.Forms.ListBox> control displays a list from
   
 ## See also
 - <xref:System.Windows.Forms.ListBox>
-- [How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control](../../../../docs/framework/winforms/controls/add-and-remove-items-from-a-wf-combobox.md)
-- [How to: Sort the Contents of a Windows Forms ComboBox, ListBox, or CheckedListBox Control](../../../../docs/framework/winforms/controls/sort-the-contents-of-a-wf-combobox-listbox-or-checkedlistbox-control.md)
-- [How to: Bind a Windows Forms ComboBox or ListBox Control to Data](../../../../docs/framework/winforms/controls/how-to-bind-a-windows-forms-combobox-or-listbox-control-to-data.md)
-- [ComboBox Control Overview](../../../../docs/framework/winforms/controls/combobox-control-overview-windows-forms.md)
-- [CheckedListBox Control Overview](../../../../docs/framework/winforms/controls/checkedlistbox-control-overview-windows-forms.md)
-- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
-- [How to: Create a Lookup Table for a Windows Forms ComboBox, ListBox, or CheckedListBox Control](../../../../docs/framework/winforms/controls/create-a-lookup-table-for-a-wf-combobox-listbox.md)
+- [How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control](add-and-remove-items-from-a-wf-combobox.md)
+- [How to: Sort the Contents of a Windows Forms ComboBox, ListBox, or CheckedListBox Control](sort-the-contents-of-a-wf-combobox-listbox-or-checkedlistbox-control.md)
+- [How to: Bind a Windows Forms ComboBox or ListBox Control to Data](how-to-bind-a-windows-forms-combobox-or-listbox-control-to-data.md)
+- [ComboBox Control Overview](combobox-control-overview-windows-forms.md)
+- [CheckedListBox Control Overview](checkedlistbox-control-overview-windows-forms.md)
+- [Windows Forms Controls Used to List Options](windows-forms-controls-used-to-list-options.md)
+- [How to: Create a Lookup Table for a Windows Forms ComboBox, ListBox, or CheckedListBox Control](create-a-lookup-table-for-a-wf-combobox-listbox.md)

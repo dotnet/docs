@@ -31,4 +31,4 @@ ms.assetid: a05d9cba-3a6a-4f8f-94b8-8ec12799fb80
   
 ## See also
 - <xref:System.Windows.Forms.ProgressBar>
-- [ProgressBar Control](../../../../docs/framework/winforms/controls/progressbar-control-windows-forms.md)
+- [ProgressBar Control](progressbar-control-windows-forms.md)

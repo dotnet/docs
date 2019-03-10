@@ -53,5 +53,5 @@ public Color ButtonColor
   
 ## See also
 - <xref:System.Windows.Forms.UserControl>
-- [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)
-- [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)
+- [Properties in Windows Forms Controls](properties-in-windows-forms-controls.md)
+- [Varieties of Custom Controls](varieties-of-custom-controls.md)

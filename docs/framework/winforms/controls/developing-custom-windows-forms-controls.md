@@ -10,31 +10,31 @@ ms.assetid: 236cebc0-bd71-4f18-9fd6-5d0e592375df
 Windows Forms controls are reusable components that encapsulate user interface functionality and are used in client-side Windows-based applications. Not only does Windows Forms provide many ready-to-use controls, it also provides the infrastructure for developing your own controls. You can combine existing controls, extend existing controls, or author your own custom controls. This section provides background information and samples to help you develop Windows Forms controls.  
   
 ## In This Section  
- [Overview of Using Controls in Windows Forms](../../../../docs/framework/winforms/controls/overview-of-using-controls-in-windows-forms.md)  
+ [Overview of Using Controls in Windows Forms](overview-of-using-controls-in-windows-forms.md)  
  Highlights the essential elements of using controls in Windows Forms applications.  
   
- [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)  
+ [Varieties of Custom Controls](varieties-of-custom-controls.md)  
  Describes the different kinds of custom controls you can author with the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace.  
   
- [Windows Forms Control Development Basics](../../../../docs/framework/winforms/controls/windows-forms-control-development-basics.md)  
+ [Windows Forms Control Development Basics](windows-forms-control-development-basics.md)  
  Discusses the first steps in developing a Windows Forms control.  
   
- [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)  
+ [Properties in Windows Forms Controls](properties-in-windows-forms-controls.md)  
  Shows how to add to properties to Windows Forms controls.  
   
- [Events in Windows Forms Controls](../../../../docs/framework/winforms/controls/events-in-windows-forms-controls.md)  
+ [Events in Windows Forms Controls](events-in-windows-forms-controls.md)  
  Shows how to handle and define events in Windows Forms controls.  
   
- [Attributes in Windows Forms Controls](../../../../docs/framework/winforms/controls/attributes-in-windows-forms-controls.md)  
+ [Attributes in Windows Forms Controls](attributes-in-windows-forms-controls.md)  
  Describes the attributes you can apply to properties or other members of your custom controls and components.  
   
- [Custom Control Painting and Rendering](../../../../docs/framework/winforms/controls/custom-control-painting-and-rendering.md)  
+ [Custom Control Painting and Rendering](custom-control-painting-and-rendering.md)  
  Shows how to customize the appearance of your controls.  
   
- [Layout in Windows Forms Controls](../../../../docs/framework/winforms/controls/layout-in-windows-forms-controls.md)  
+ [Layout in Windows Forms Controls](layout-in-windows-forms-controls.md)  
  Shows how to create sophisticated layouts for your controls and forms.  
   
- [Multithreading in Windows Forms Controls](../../../../docs/framework/winforms/controls/multithreading-in-windows-forms-controls.md)  
+ [Multithreading in Windows Forms Controls](multithreading-in-windows-forms-controls.md)  
  Shows how to implement multithreaded controls.  
   
 ## Reference  

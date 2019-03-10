@@ -21,20 +21,20 @@ Using the layout features of Visual Studio, you can precisely direct where contr
   
      For more information, see [General, Windows Forms Designer, Options Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100)). All controls now align themselves along the points on the grid.  
   
-     You can snap individual controls to the grid by locking them in place. However, while they are locked, they cannot be moved or resized. For more information about locking controls, see [How to: Lock Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-lock-controls-to-windows-forms.md).  
+     You can snap individual controls to the grid by locking them in place. However, while they are locked, they cannot be moved or resized. For more information about locking controls, see [How to: Lock Controls to Windows Forms](how-to-lock-controls-to-windows-forms.md).  
   
 ### To align controls using snaplines  
   
 -   Select the **SnapLines** layout mode in the Windows Forms Designer **Options** dialog box.  
   
-     For more information, see [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md). You can now use snaplines to align and arrange controls on your form.  
+     For more information, see [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md). You can now use snaplines to align and arrange controls on your form.  
   
 ## See also
 - [General, Windows Forms Designer, Options Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100))
-- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
-- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)
-- [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)
-- [Arranging Controls on Windows Forms](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)
-- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](../../../../docs/framework/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
-- [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md)
+- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
+- [Windows Forms Controls](index.md)
+- [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)
+- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
+- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
+- [Windows Forms Controls by Function](windows-forms-controls-by-function.md)

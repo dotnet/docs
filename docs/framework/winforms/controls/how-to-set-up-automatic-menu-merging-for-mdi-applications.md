@@ -28,4 +28,4 @@ The following procedure gives the basic steps for setting up automatic merging i
 ## See also
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ToolStripMenuItem>
-- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+- [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)

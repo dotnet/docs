@@ -26,5 +26,5 @@ The mouse *pointer*, which is sometimes referred to as the cursor, is a bitmap t
   
 ## See also
 - <xref:System.Windows.Forms.Cursor>
-- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)
-- [Drag-and-Drop Functionality in Windows Forms](../../../docs/framework/winforms/drag-and-drop-functionality-in-windows-forms.md)
+- [Mouse Input in a Windows Forms Application](mouse-input-in-a-windows-forms-application.md)
+- [Drag-and-Drop Functionality in Windows Forms](drag-and-drop-functionality-in-windows-forms.md)

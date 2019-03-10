@@ -25,16 +25,16 @@ The <xref:System.Windows.Forms.DataGridView> control is designed to provide maxi
   
 -   Preventing rows from becoming unshared  
   
- If you have special performance needs, you can implement virtual mode and provide your own data management operations. For more information, see [Data Display Modes in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-display-modes-in-the-windows-forms-datagridview-control.md).  
+ If you have special performance needs, you can implement virtual mode and provide your own data management operations. For more information, see [Data Display Modes in the Windows Forms DataGridView Control](data-display-modes-in-the-windows-forms-datagridview-control.md).  
   
 ## Using Cell Styles Efficiently  
  Each cell, row, and column can have its own style information. Style information is stored in <xref:System.Windows.Forms.DataGridViewCellStyle> objects. Creating cell style objects for many individual <xref:System.Windows.Forms.DataGridView> elements can be inefficient, especially when working with large amounts of data. To avoid a performance impact, use the following guidelines:  
   
 -   Avoid setting cell style properties for individual <xref:System.Windows.Forms.DataGridViewCell> or <xref:System.Windows.Forms.DataGridViewRow> objects. This includes the row object specified by the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property. Each new row that is cloned from the row template will receive its own copy of the template's cell style object. For maximum scalability, set cell style properties at the <xref:System.Windows.Forms.DataGridView> level. For example, set the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType> property rather than the <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType> property.  
   
--   If some cells require formatting other than default formatting, use the same <xref:System.Windows.Forms.DataGridViewCellStyle> instance across groups of cells, rows, or columns. Avoid directly setting properties of type <xref:System.Windows.Forms.DataGridViewCellStyle> on individual cells, rows, and columns. For an example of cell style sharing, see [How to: Set Default Cell Styles for the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md). You can also avoid a performance penalty when setting cell styles individually by handling the <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler. For an example, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md).  
+-   If some cells require formatting other than default formatting, use the same <xref:System.Windows.Forms.DataGridViewCellStyle> instance across groups of cells, rows, or columns. Avoid directly setting properties of type <xref:System.Windows.Forms.DataGridViewCellStyle> on individual cells, rows, and columns. For an example of cell style sharing, see [How to: Set Default Cell Styles for the Windows Forms DataGridView Control](how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md). You can also avoid a performance penalty when setting cell styles individually by handling the <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler. For an example, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md).  
   
--   When determining a cell's style, use the <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A?displayProperty=nameWithType> property rather than the <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType> property. Accessing the <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property creates a new instance of the <xref:System.Windows.Forms.DataGridViewCellStyle> class if the property has not already been used. Additionally, this object might not contain the complete style information for the cell if some styles are inherited from the row, column, or control. For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
+-   When determining a cell's style, use the <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A?displayProperty=nameWithType> property rather than the <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType> property. Accessing the <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property creates a new instance of the <xref:System.Windows.Forms.DataGridViewCellStyle> class if the property has not already been used. Additionally, this object might not contain the complete style information for the cell if some styles are inherited from the row, column, or control. For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](cell-styles-in-the-windows-forms-datagridview-control.md).  
   
 ## Using Shortcut Menus Efficiently  
  Each cell, row, and column can have its own shortcut menu. Shortcut menus in the <xref:System.Windows.Forms.DataGridView> control are represented by <xref:System.Windows.Forms.ContextMenuStrip> controls. Just as with cell style objects, creating shortcut menus for many individual <xref:System.Windows.Forms.DataGridView> elements will negatively impact performance. To avoid this penalty, use the following guidelines:  
@@ -54,7 +54,7 @@ The <xref:System.Windows.Forms.DataGridView> control is designed to provide maxi
   
 -   For maximum scalability, turn off automatic sizing and use programmatic resizing.  
   
- For more information, see [Sizing Options in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
+ For more information, see [Sizing Options in the Windows Forms DataGridView Control](sizing-options-in-the-windows-forms-datagridview-control.md).  
   
 ## Using the Selected Cells, Rows, and Columns Collections Efficiently  
  The <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> collection does not perform efficiently with large selections. The <xref:System.Windows.Forms.DataGridView.SelectedRows%2A> and <xref:System.Windows.Forms.DataGridView.SelectedColumns%2A> collections can also be inefficient, although to a lesser degree because there are many fewer rows than cells in a typical <xref:System.Windows.Forms.DataGridView> control, and many fewer columns than rows. To avoid performance penalties when working with these collections, use the following guidelines:  
@@ -131,9 +131,9 @@ The <xref:System.Windows.Forms.DataGridView> control is designed to provide maxi
   
 ## See also
 - <xref:System.Windows.Forms.DataGridView>
-- [Performance Tuning in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/performance-tuning-in-the-windows-forms-datagridview-control.md)
-- [Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md)
-- [Data Display Modes in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-display-modes-in-the-windows-forms-datagridview-control.md)
-- [Cell Styles in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md)
-- [How to: Set Default Cell Styles for the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md)
-- [Sizing Options in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md)
+- [Performance Tuning in the Windows Forms DataGridView Control](performance-tuning-in-the-windows-forms-datagridview-control.md)
+- [Virtual Mode in the Windows Forms DataGridView Control](virtual-mode-in-the-windows-forms-datagridview-control.md)
+- [Data Display Modes in the Windows Forms DataGridView Control](data-display-modes-in-the-windows-forms-datagridview-control.md)
+- [Cell Styles in the Windows Forms DataGridView Control](cell-styles-in-the-windows-forms-datagridview-control.md)
+- [How to: Set Default Cell Styles for the Windows Forms DataGridView Control](how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md)
+- [Sizing Options in the Windows Forms DataGridView Control](sizing-options-in-the-windows-forms-datagridview-control.md)

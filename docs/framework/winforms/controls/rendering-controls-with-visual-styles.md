@@ -43,7 +43,7 @@ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides sup
   
 -   <xref:System.Windows.Forms.TrackBarRenderer>  
   
- For more information on using these classes to draw a control, see [How to: Use a Control Rendering Class](../../../../docs/framework/winforms/controls/how-to-use-a-control-rendering-class.md).  
+ For more information on using these classes to draw a control, see [How to: Use a Control Rendering Class](how-to-use-a-control-rendering-class.md).  
   
 ## Visual Style Element and Rendering Classes  
  The <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namespace includes classes that can be used to draw and get information about any control or UI element that is supported by visual styles. Supported controls include common controls that have a rendering class in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace (see the previous section), as well as other controls, such as tab controls and rebar controls. Other supported UI elements include the parts of the **Start** menu, the taskbar, and the nonclient area of windows.  
@@ -52,7 +52,7 @@ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides sup
   
  <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> provides the methods that draw and get information about each <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> defined by the current visual style of the operating system. Information that can be retrieved about an element includes its default size, background type, and color definitions. <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> wraps the functionality of the visual styles (UxTheme) API from the Windows Shell portion of the Windows Platform SDK. For more information, see [Enabling Visual Styles](/windows/desktop/controls/cookbook-overview).  
   
- For more information about using <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>, see [How to: Render a Visual Style Element](../../../../docs/framework/winforms/controls/how-to-render-a-visual-style-element.md).  
+ For more information about using <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>, see [How to: Render a Visual Style Element](how-to-render-a-visual-style-element.md).  
   
 ## Enabling Visual Styles  
  To enable visual styles for an application written for the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.0, programmers must include an application manifest that specifies that ComCtl32.dll version 6 or later will be used to draw controls. Applications built with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.1 or later can use the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method of the <xref:System.Windows.Forms.Application> class.  
@@ -73,4 +73,4 @@ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides sup
 >  If you want to use <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to render a control or UI element when the user enables or switches visual styles, make sure that you do this when handling the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event instead of the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> event. An exception will be thrown if you use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class when handling <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging>.  
   
 ## See also
-- [Custom Control Painting and Rendering](../../../../docs/framework/winforms/controls/custom-control-painting-and-rendering.md)
+- [Custom Control Painting and Rendering](custom-control-painting-and-rendering.md)

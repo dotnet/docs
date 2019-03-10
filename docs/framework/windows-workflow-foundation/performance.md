@@ -256,7 +256,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  Where d is the depth and a is the number of activities per sequence.  The logic behind these equations is that the first constant, multiplied by a, is the number of sequences and the second constant is the static number of activities in the current level.  There are three flowchart child activities in each flowchart.  At the bottom depth level, these flowcharts are empty but at the other levels they are copies of the main flowchart.  The number of activities in each test variation’s workflow definition is indicated in the following table:
 
- ![Compares number of activities used in each test](./media/performance/workflow-variation-compare-table.gif "Compares number of activities used in each test.")
+ ![A table that shows the number of activities used in each test](./media/performance/workflow-variation-compare-table.gif)
 
  The number of activities in the workflow definition increases sharply with each depth level.  But only one path per decision point is executed in a given workflow instance, so only a small subset of the actual activities are executed.
 

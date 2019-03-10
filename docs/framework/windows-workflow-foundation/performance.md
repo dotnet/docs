@@ -362,7 +362,7 @@ public class Workflow1 : Activity
  The two workflows are both created by a received message.  After sending an initial reply, the workflow is persisted.  In the WF3 case, an empty <xref:System.Workflow.ComponentModel.TransactionScopeActivity> is used to initiate the persistence.  The same could be achieved in WF3 by marking an activity as "persist on close."  A second, correlated message completes the workflow.  The workflows are persisted but not unloaded.
 
 ### Test Results
- ![Throughput Persistence](./media/performance/throughput-persistence-graph.gif "Throughput Persistence graph")
+ ![Column chart showing throughput persistence](./media/performance/throughput-persistence-graph.gif "Throughput Persistence")
 
  When the transport between client and middle tier is HTTP, persistence in WF4 shows an improvement of 2.6 times.  The TCP transport increases that factor to 3.0 times.  In all cases, CPU utilization on the middle tier is 98% or higher.  The reason that WF4 throughput is greater is due to the faster workflow runtime.  The size of the serialized instance is low for both cases and is not a major contributing element in this situation.
 

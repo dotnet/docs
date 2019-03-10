@@ -161,7 +161,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
 ### Performance Test Results
 
- ![Performance Test Results](./media/performance/performance-test-data.gif "Data from performance tests")
+ ![Table showing performance test results data](./media/performance/performance-test-data.gif)
 
  ![Performance Test Data Graph](./media/performance/performance-test-chart.gif "Data graph of performance test data")
 

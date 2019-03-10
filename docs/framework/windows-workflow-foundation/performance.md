@@ -209,7 +209,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  Cold and warm latency for WCF workflow services:
 
- ![Latency Results](./media/performance/latency-results-graph.gif "Cold and warm latency for WCF workflow services")
+ ![Column chart showing cold and warm latency for WCF workflow services using WF3 and WF4](./media/performance/latency-results-graph.gif)
 
  In the previous chart, cold refers to the case where there is not an existing <xref:System.ServiceModel.WorkflowServiceHost> for the given workflow.  In other words, cold latency is when the workflow is being used for the first time and the XOML or XAML needs to be compiled.  Warm latency is the time to create a new workflow instance when the workflow type has already been compiled.  The complexity of the workflow makes very little difference in the WF4 case but has a linear progression in the WF3 case.
 

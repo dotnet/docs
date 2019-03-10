@@ -430,7 +430,7 @@ public class Workflow1 : Activity
  WF4 is almost a complete rewrite of [!INCLUDE[wf1](../../../includes/wf1-md.md)] and therefore WF3 workflows and activities are not directly compatible with WF4.  Many customers that adopted Windows Workflow Foundation early will have in-house or third-party workflow definitions and custom activities for WF3.  One way to ease the transition to WF4 is to use the Interop activity, which can execute WF3 activities from within a WF4 workflow.  It is recommended that the <xref:System.Activities.Statements.Interop> activity only be used when necessary. For more information about migrating to WF4 check out the [WF4 Migration Guidance](https://go.microsoft.com/fwlink/?LinkID=153313).
 
 ### Environment Setup
- ![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
+ ![Environment setup for workflow performance test](./media/performance/performance-test-environment.gif)
 
 ### Test Results
  

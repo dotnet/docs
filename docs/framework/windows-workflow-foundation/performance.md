@@ -421,7 +421,8 @@ public class Workflow1 : Activity
  ![Environment setup for workflow performance test](./media/performance/performance-test-environment.gif)
 
 ### Test Results
- ![Workflow Tracing Cost](./media/performance/workflow-tracking-costs.gif "Shows workflow tracking costs")
+
+ ![Column chart showing workflow tracking costs](./media/performance/workflow-tracking-costs.gif "Workflow tracking cost")
 
  Health monitoring has roughly a 3% impact on throughput.  The basic profile’s cost is around 8%.
 

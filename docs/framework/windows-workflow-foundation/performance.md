@@ -260,7 +260,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  The number of activities in the workflow definition increases sharply with each depth level.  But only one path per decision point is executed in a given workflow instance, so only a small subset of the actual activities are executed.
 
- ![Complex Workflow](./media/performance/complex-workflow-throughput-workflow.gif "Flowchart of the complex throughput workflow")
+ ![Flowchart of the complex throughput workflow](./media/performance/complex-workflow-throughput-workflow.gif)
 
  An equivalent workflow was created for WF3. The WF3 designer shows the entire workflow in the design area instead of nesting, therefore it is too big to display in this topic. A snippet of the workflow is shown below.
 

@@ -418,7 +418,7 @@ public class Workflow1 : Activity
  Enabling workflow tracking will impact performance in varying degrees.  The benchmark below uses the logman tool to consume the ETW tracking events and record them to an ETL file.  The cost of the SQL tracking in AppFabric is not in the scope of this article.  The basic tracking profile, also used in AppFabric, is shown in this benchmark.  Also included is the cost of tracking only health monitoring events.  These events are useful for troubleshooting problems and determining the average throughput of the system.
 
 ### Environment Setup
- ![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
+ ![Environment setup for workflow performance test](./media/performance/performance-test-environment.gif)
 
 ### Test Results
  ![Workflow Tracing Cost](./media/performance/workflow-tracking-costs.gif "Shows workflow tracking costs")

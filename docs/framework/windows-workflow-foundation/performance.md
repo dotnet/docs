@@ -268,7 +268,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  To exercise nesting in an extreme case, another workflow that is part of this test uses 100 nested sequences.  In the innermost sequence is a single `Comment` or <xref:System.Workflow.Activities.CodeActivity>.
 
- ![Nested sequences](./media/performance/nested-sequence-workflow.gif "Flowchart of a nested sequence")
+ ![Flowchart of a nested sequence](./media/performance/nested-sequence-workflow.gif "Nested sequences")
 
  Tracking and persistence are not used as part of this test.
 

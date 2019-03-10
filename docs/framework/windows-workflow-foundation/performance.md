@@ -201,7 +201,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  The service will create a new workflow with the request and send an immediate response so that the measurement of latency does not include the time spent running the workflow.  The WF3 workflow is XOML with a code-behind and the WF4 workflow is entirely XAML.  The WF4 workflow looks like this:
 
- ![WF 4 Correlation Scope](./media/performance/wf4-correlationscope-workflow.gif "WF4 CorrelationScope workflow")
+ ![WF4 Correlation Scope workflow](./media/performance/wf4-correlationscope-workflow.gif)
 
  The <xref:System.ServiceModel.Activities.Receive> activity creates the workflow instance.  A value passed in the received message is echoed in the reply message.  A sequence following the reply contains the rest of the workflow.  In the above case, only one comment activity is shown.  The number of comment activities is changed to simulate workflow complexity.  A comment activity is equivalent to a WF3 <xref:System.Workflow.Activities.CodeActivity> that performs no work. For more information about the comment activity, see the "Component-level Performance Comparison" section earlier in this article.
 

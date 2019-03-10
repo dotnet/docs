@@ -302,7 +302,9 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  The workflow definitions used in the console test were simple sequential workflows with a single activity.  The single activity was an empty <xref:System.Workflow.Activities.CodeActivity> for the WF3 case and a `Comment` activity for the WF4 case.  The IIS-hosted case used workflows that start on receiving a message and end on sending a reply:
 
- ![Workflow Services in WF3 and WF4](./media/performance/workflow-with-receive-activity.gif "WF3 workflow with ReceiveActivity and WF4 workflow with request/response pattern")
+The following image shows a WF3 workflow with ReceiveActivity and a WF4 workflow with request/response pattern:
+
+ ![Workflow Services in WF3 and WF4](./media/performance/workflow-with-receive-activity.gif)
 
  The following table shows the delta in working set between a single workflow definition and 1001 definitions:
 

@@ -273,7 +273,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
  Tracking and persistence are not used as part of this test.
 
 ### Test Results
- ![Throughput Graph](./media/performance/throughput-performance-results.gif "Throughput performance results graph")
+ ![Column chart showing throughput performance results](./media/performance/throughput-performance-results.gif)
 
  Even with complex workflows with lots of depth and a high number of activities, the performance results are consistent with other throughput numbers shown earlier in this article.  WF4’s throughput is orders of magnitude faster and has to be compared on a logarithmic scale.
 

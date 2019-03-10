@@ -289,7 +289,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  In the WF3 workflow shown above, empty <xref:System.Workflow.Activities.CodeActivity> activities are used.  The WF4 workflow above uses `Comment` activities.  The `Comment` activity was described in the Component-level Performance Comparisons section earlier in this article.
 
- ![Memory Usage Graph](./media/performance/complex-memory-usage-wf3-wf4.gif "Complex workflow memory usage for WF3 and WF4 workflows")
+ ![Column chart showing complex workflow memory usage for WF3 and WF4 workflows](./media/performance/complex-memory-usage-wf3-wf4.gif "Memory usage chart")
 
  One of the clear trends to notice in this graph is that nesting has relatively minimal impact on memory usage in both WF3 and WF4.  The most significant memory impact comes from the number of activities in a given workflow.  Given the data from the sequence 1000, complex depth 5 sequence 5, and complex depth 7 sequence 1 variations, it is clear that as the number of activities enters the thousands, the memory usage increase becomes more noticeable.  In the extreme case (depth 7 sequence 1) where there are ~29K activities, WF4 is using almost 79% less memory than WF3.
 

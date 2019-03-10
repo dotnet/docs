@@ -211,7 +211,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  ![Latency Results](./media/performance/latency-results-graph.gif "Cold and warm latency for WCF workflow services")
 
- In the graph above, cold refers to the case where there is not an existing <xref:System.ServiceModel.WorkflowServiceHost> for the given workflow.  In other words, cold latency is when the workflow is being used for the first time and the XOML or XAML needs to be compiled.  Warm latency is the time to create a new workflow instance when the workflow type has already been compiled.  The complexity of the workflow makes very little difference in the WF4 case but has a linear progression in the WF3 case.
+ In the previous chart, cold refers to the case where there is not an existing <xref:System.ServiceModel.WorkflowServiceHost> for the given workflow.  In other words, cold latency is when the workflow is being used for the first time and the XOML or XAML needs to be compiled.  Warm latency is the time to create a new workflow instance when the workflow type has already been compiled.  The complexity of the workflow makes very little difference in the WF4 case but has a linear progression in the WF3 case.
 
 #### Correlation Throughput
  WF4 introduces a new content-based correlation feature.  WF3 provided only context-based correlation.  Context-based correlation could only be done over specific WCF channel bindings.  The workflow Id is inserted into the message header when using these bindings.  The WF3 runtime could only identify a workflow by its Id.  With content-based correlation, the workflow author can create a correlation key out of a relevant piece of data like an account number or customer Id.

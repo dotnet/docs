@@ -234,7 +234,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 #### Correlation with Persistence
  With a persisted workflow, the CPU pressure from content-based correlation shifts from the workflow runtime to the SQL database.  The stored procedures in the SQL persistence provider do the work of matching the keys to locate the appropriate workflow.
 
- ![Correlation and persistence results](./media/performance/correlation-and-persistence-graph.gif "Correlation and persistence results graph")
+ ![Line chart showing correlation and persistence results](./media/performance/correlation-and-persistence-graph.gif)
 
  Context-based correlation is still faster than content-based correlation.  However, the difference is less pronounced as persistence has more impact on performance than correlation.
 

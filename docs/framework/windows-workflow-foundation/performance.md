@@ -355,7 +355,7 @@ public class Workflow1 : Activity
 ### Test Setup
  Even with an improved feature set and better concurrency handling, the SQL persistence provider in WF4 is faster than the provider in WF3.  To showcase this, two workflows that perform essentially the same operations in WF3 and WF4 are compared below.
 
- ![Persistence Workflows](./media/performance/persist-workflow-in-wf3-and-wf4.gif "Persistence workflow in WF3 on left and WF4 on right")
+ ![Persistence workflow in WF3 on left and WF4 on right](./media/performance/persist-workflow-in-wf3-and-wf4.gif "Persistence workflows")
 
  The two workflows are both created by a received message.  After sending an initial reply, the workflow is persisted.  In the WF3 case, an empty <xref:System.Workflow.ComponentModel.TransactionScopeActivity> is used to initiate the persistence.  The same could be achieved in WF3 by marking an activity as "persist on close."  A second, correlated message completes the workflow.  The workflows are persisted but not unloaded.
 

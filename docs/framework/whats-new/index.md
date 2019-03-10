@@ -12,7 +12,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 
-# What's new in the .NET Framework <a name="introduction"></a>
+# What's new in the .NET Framework
 
 This article summarizes key new features and improvements in the following versions of the .NET Framework:
 
@@ -1571,8 +1571,6 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
      .NET Core packages such as the immutable collections, [SIMD APIs](https://go.microsoft.com/fwlink/?LinkID=518639), and networking APIs such as those found in the <xref:System.Net.Http> namespace are now available as open source packages on [GitHub](https://github.com/). To access the code, see [CoreFx on GitHub](https://github.com/dotnet/corefx). For more information and how to contribute to these packages, see [.NET Core and Open-Source](../../../docs/framework/get-started/net-core-and-open-source.md), [.NET Home Page on GitHub](https://github.com/dotnet/home).
 
-[Back to top](#introduction)
-
 <a name="v452" />
 
 ## What's new in the .NET Framework 4.5.2
@@ -1644,8 +1642,6 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
      The method may be used by an enlistment that was previously created by <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A?displayProperty=nameWithType> in response to the <xref:System.Transactions.ITransactionPromoter.Promote%2A?displayProperty=nameWithType> method. It asks `System.Transactions` to promote the transaction to an MSDTC transaction and to "convert" the promotable enlistment to a durable enlistment. After this method completes successfully, the <xref:System.Transactions.IPromotableSinglePhaseNotification> interface will no longer be referenced by `System.Transactions`, and any future notifications will arrive on the provided <xref:System.Transactions.ISinglePhaseNotification> interface. The enlistment in question must act as a durable enlistment, supporting transaction logging and recovery. Refer to <xref:System.Transactions.Transaction.EnlistDurable%2A?displayProperty=nameWithType> for details. In addition, the enlistment must support <xref:System.Transactions.ISinglePhaseNotification>.  This method can *only* be called while processing an <xref:System.Transactions.ITransactionPromoter.Promote%2A?displayProperty=nameWithType> call. If that is not the case, a <xref:System.Transactions.TransactionException> exception is thrown.
 
-[Back to top](#introduction)
-
 <a name="v451" />
 
 ## What's new in the .NET Framework 4.5.1
@@ -1707,8 +1703,6 @@ Improvements when debugging your .NET Framework apps in Visual Studio 2013 inclu
 Starting with Visual Studio 2013, you can use the [Managed Profile Guided Optimization Tool (Mpgo.exe)](../../../docs/framework/tools/mpgo-exe-managed-profile-guided-optimization-tool.md) to optimize [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps as well as desktop apps.
 
 For new features in ASP.NET 4.5.1, see [ASP.NET and Web Tools for Visual Studio 2013 Release Notes](/aspnet/visual-studio/overview/2013/release-notes).
-
-[Back to top](#introduction)
 
 <a name="v45" />
 

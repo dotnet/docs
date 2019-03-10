@@ -285,7 +285,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  The two new basic tests have workflows that look like those shown below:
 
- ![Complex Workflows](./media/performance/complex-workflow-wf3-wf4.gif "Complex workflow for both WF3 and WF4 workflows")
+ ![Complex workflow for both WF3 and WF4](./media/performance/complex-workflow-wf3-wf4.gif "Complex workflows")
 
  In the WF3 workflow shown above, empty <xref:System.Workflow.Activities.CodeActivity> activities are used.  The WF4 workflow above uses `Comment` activities.  The `Comment` activity was described in the Component-level Performance Comparisons section earlier in this article.
 

@@ -52,12 +52,12 @@ This topic describes the activities and transfers for different asynchronous req
   
  The callback creates a new activity (G) when the client calls user code to notify that results are ready. User code then calls `endCall` within the callback (as shown in Figure 5) or outside the callback (Figure 6). Because it is not known which user activity `endCall` is being called from, this activity is labeled `A’`. It is possible that A’ can be identical to or different from A.  
   
- ![Asynchronous scenarios](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-with-callback-endcall-in-callback.gif "Shows an asynchronous client with callback, endcall in callback.")  
+ ![Asynchronous scenarios](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-callback-endcall-in-callback.gif "Shows an asynchronous client with callback, endcall in callback.")  
     
- ![Asynchronous Scenarios](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-with-callback-endcall-outside-callback.gif "Shows an asynchronous client with callback, endcall outside callback.")  
+ ![Asynchronous Scenarios](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-callback-endcall-outside-callback.gif "Shows an asynchronous client with callback, endcall outside callback.")  
     
 ### Asynchronous Server with Callback  
- ![Asynchronous scenarios using HTTP&#47;TCP&#47; Named&#45;Pipe](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-server-with-callback.gif "Shows an asynchronous server with callback.")  
+ ![Asynchronous scenarios using HTTP&#47;TCP&#47; Named&#45;Pipe](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-server-callback.gif "Shows an asynchronous server with callback.")  
     
  The channel stack calls back the client on Message Receive: traces for this processing are emitted in the ProcessRequest activity itself.  
   

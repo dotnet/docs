@@ -352,7 +352,7 @@ public class Workflow1 : Activity
  The WF4 SQL persistence provider has tried to address some of these concerns.  The persistence tables expose certain information such as the active bookmarks and promotable properties.  The new content-based correlation feature in WF4 would not perform well using the WF3 SQL persistence approach, which has driven some change in the organization of the persisted workflow instance.  This makes the job of the persistence provider more complex and puts extra stress on the database.
 
 ### Environment Setup
-![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
+![Environment setup for workflow performance test](./media/performance/performance-test-environment.gif)
 
 ### Test Setup
  Even with an improved feature set and better concurrency handling, the SQL persistence provider in WF4 is faster than the provider in WF3.  To showcase this, two workflows that perform essentially the same operations in WF3 and WF4 are compared below.

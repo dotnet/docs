@@ -176,7 +176,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
  The two backend services, Order Validating Service and Warehouse Service, remain the same for both tests.  The part that changes is the Online Store Service that performs the orchestration.  In one case, the service is hand-coded as a WCF service.  For the other case, the service is written as a WCF workflow service in WF4. [!INCLUDE[wf1](../../../includes/wf1-md.md)]-specific features like tracking and persistence are turned off for this test.
 
 ### Environment
-![Workflow Performance Test Environment](./media/performance/performance-test-environment.gif "Performance test environment workflow")
+![Environment setup for performance measurement](./media/performance/performance-test-environment.gif)
 
  Client requests are made to the Online Store Service via HTTP from multiple computers.  A single computer hosts all three services.  The transport layer between the Online Store Service and the backend services is TCP or HTTP.  The measurement of operations/second is based on the number of completed `PurchaseOrder` calls made to the Online Store Service.  Channel pooling is a new feature available in WF4.  In the WCF portion of this test channel pooling is not provided out of the box so a hand-coded implementation of a simple pooling technique was used in the Online Store Service.
 

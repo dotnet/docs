@@ -252,7 +252,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  The WF3 test’s activity count can be computed with a slightly different equation due to an extra sequence:
 
- ![Equation to compute number of activities](./media/performance/wf3-number-of-activities-equation.gif "Equation to determine number of WF3 activities")
+ ![Equation to compute number of WF3 activities](./media/performance/wf3-number-of-activities-equation.gif "WF3 number of activities equation")
 
  Where d is the depth and a is the number of activities per sequence.  The logic behind these equations is that the first constant, multiplied by a, is the number of sequences and the second constant is the static number of activities in the current level.  There are three flowchart child activities in each flowchart.  At the bottom depth level, these flowcharts are empty but at the other levels they are copies of the main flowchart.  The number of activities in each test variation’s workflow definition is indicated in the following table:
 

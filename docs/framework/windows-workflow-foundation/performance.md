@@ -155,7 +155,9 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
     }
 ```
 
- ![WF3 and WF basic compensation workflows](./media/performance/basic-compensation-workflows-for-wf3-and-wf4.gif "WF3 (left) and WF4 (right) basic compensation workflows")
+The following diagram shows the basic compensation workflow. The WF3 workflow is on the left and the WF4 workflow is on the right.
+
+![WF3 and WF4 basic compensation workflows](./media/performance/basic-compensation-workflows-for-wf3-and-wf4.gif)
 
 ### Performance Test Results
 

@@ -163,7 +163,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  ![Table showing performance test results data](./media/performance/performance-test-data.gif)
 
- ![Performance Test Data Graph](./media/performance/performance-test-chart.gif "Data graph of performance test data")
+ ![Column chart comparing WF3 and WF4 performance test data](./media/performance/performance-test-chart.gif)
 
  All tests are measured in workflows per second with the exception of the transaction scope test.  As can be seen above, the [!INCLUDE[wf1](../../../includes/wf1-md.md)] runtime performance has improved across the board, especially in areas that require multiple executions of the same activity like the while loop.
 

@@ -248,7 +248,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  The number of activities in a given test is determined by the depth and number of activities per sequence.  The following equation computes the number of activities in the WF4 test:
 
- ![Equation to compute number of activities](./media/performance/number-of-activities-equation.gif "Equation to determine number of activities")
+ ![Equation to compute number of activities](./media/performance/number-of-activities-equation.gif "Number of activities equation")
 
  The WF3 test’s activity count can be computed with a slightly different equation due to an extra sequence:
 

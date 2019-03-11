@@ -1,11 +1,11 @@
 ---
-title: Getting started with .NET Core on macOS
+title: Get started with .NET Core on macOS
 description: This document provides the steps and workflow to create a .NET Core Solution using Visual Studio Code.
 author: bleroy
 ms.date: 03/23/2017
 ms.custom: seodec18
 ---
-# Getting started with .NET Core on macOS
+# Get started with .NET Core on macOS
 
 This document provides the steps and workflow to create a .NET Core solution for macOS. Learn how to create projects, unit tests, use the debugging tools, and incorporate third-party libraries via [NuGet](https://www.nuget.org/).
 
@@ -20,7 +20,7 @@ Install [Visual Studio Code](https://code.visualstudio.com). During the course o
 
 Install the Visual Studio Code C# extension by opening Visual Studio Code and pressing <kbd>F1</kbd> to open the Visual Studio Code palette. Type **ext install** to see the list of extensions. Select the C# extension. Restart Visual Studio Code to activate the extension. For more information, see the [Visual Studio Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
-## Getting started
+## Get started
 
 In this tutorial, you create three projects: a library project, tests for that library project, and a console application that makes use of the library. You can [view or download the source](https://github.com/dotnet/samples/tree/master/core/getting-started/golden) for this topic at the dotnet/samples repository on GitHub. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 

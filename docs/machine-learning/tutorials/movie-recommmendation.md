@@ -128,7 +128,7 @@ Remove the existing class definition and add the following code:
 
 Add the following class in *MovieRatingData.cs* to represent predicted results:
 
-[!code-csharp[PredictionClass](../../../samples/machine-learning/tutorials/MovieRecommendation/MovieRatingData#PredictionClass "Add the Movie Prediction Class")]
+[!code-csharp[PredictionClass](../../../samples/machine-learning/tutorials/MovieRecommendation/MovieRatingData.cs#PredictionClass "Add the Movie Prediction Class")]
 
 In *Program.cs*, add the following code inside `Main()`:
 

@@ -16,7 +16,7 @@ This how-to shows how to serve a pre-built ML.NET machine learning model to the 
 - Powershell.
 - Pre-trained model.
     - Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
-    - Download this [pre-trained sentiment analysis machine learning model](../../../samples/machine-learning/models/sentimentanalysis/sentiment_model.zip)
+    - Download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
 ## Create ASP.NET Core Web API Project
 

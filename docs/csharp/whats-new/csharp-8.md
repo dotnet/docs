@@ -77,7 +77,7 @@ There are several syntax improvements here:
 Contrast that with the equivalent code using the classic `switch` statement:
 
 ```csharp
-public static RGBColor fromRainbowClassic(Rainbow colorBand)
+public static RGBColor FromRainbowClassic(Rainbow colorBand)
 {
     switch (colorBand)
     {

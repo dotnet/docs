@@ -13,10 +13,11 @@ This how-to shows how individual predictions can be made using a pre-built ML.NE
 ## Prerequisites
 
 - [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload and "Azure development" installed. 
-- [Azure Functions Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs#check-your-tools-version)
+- [Azure Functions Tools](/azure/azure-functions/functions-develop-vs#check-your-tools-version)
+- Powershell
 - Pre-trained model. 
-    - Build Your Own [sentiment analysis machine learning model]()
-    - Download this [pre-trained sentiment analysis machine learning model]()
+    - Use the [ML.NET Sentient Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
+    - Download this [pre-trained sentiment analysis machine learning model](../../../samples/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
 ## Create Azure Functions Project
 
@@ -64,7 +65,18 @@ using Microsoft.ML.Data;
 
 ### Create Data Models
 
-Create classes to define machine learning model's input and outputs. Add the following code to the *AnalyzeSentiment.cs* file under the *AnalyzeSentiment* class definition. 
+You need to create some classes for your input data and predictions. Add a new class to your project:
+
+1. Create a directory named *DataModels* in your project to save your data models:
+    In Solution Explorer, right-click on your project and select **Add > New Folder**. Type "DataModels" and hit Enter.
+2. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > New Item**.
+3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button. The *SentimentData.cs* file opens in the code editor. Add the following using statement to the top of *SentimentData.cs*:
+
+```csharp
+using Microsoft.ML.Data;
+```
+
+Remove the existing class definition and add the following code to the SentimentData.cs file:
 
 ```csharp
 public class SentimentData
@@ -74,7 +86,18 @@ public class SentimentData
     [LoadColumn(1)]
     public string Text { get; set; }
 }
+```
 
+4. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > New Item**.
+5. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentPrediction.cs*. Then, select the **Add** button. The *SentimentPrediction.cs* file opens in the code editor. Add the following using statement to the top of *SentimentPrediction.cs*:
+
+```csharp
+using Microsoft.ML.Data;
+```
+
+Remove the existing class definition and add the following code to the *SentimentPrediction.cs* file:
+
+```csharp
 public class SentimentPrediction
 {
     [ColumnName("PredictedLabel")]
@@ -132,6 +155,12 @@ Now that everything is set up, it's time to test the application:
 Invoke-RestMethod "http://localhost:<PORT>/api/predict" -Method Post -Body (@{Text="This is a very rude movie"} | ConvertTo-Json) -ContentType "application/json"
 ```
 
+If successful, the output should look similar to the text below:
+
+```powershell
+Toxic
+```
+
 ## Next Steps
 
-- [Deploy to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs#publish-to-azure)
+- [Deploy to Azure](/azure/azure-functions/functions-develop-vs#publish-to-azure)

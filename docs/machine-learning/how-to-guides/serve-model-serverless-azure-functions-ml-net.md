@@ -16,7 +16,7 @@ This how-to shows how individual predictions can be made using a pre-built ML.NE
 - [Azure Functions Tools](/azure/azure-functions/functions-develop-vs#check-your-tools-version)
 - Powershell
 - Pre-trained model. 
-    - Use the [ML.NET Sentient Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
+    - Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
     - Download this [pre-trained sentiment analysis machine learning model](../../../samples/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
 ## Create Azure Functions Project

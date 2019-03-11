@@ -29,7 +29,7 @@ HRESULT EnableNGENPolicy(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ePolicy`  
  [in] A [CorDebugNGenPolicy](../../../../docs/framework/unmanaged-api/debugging/cordebugngenpolicy-enumeration.md) constant that determines how an application loads native images while running under a managed debugger.  
   

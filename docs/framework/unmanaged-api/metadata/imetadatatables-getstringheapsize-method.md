@@ -29,7 +29,7 @@ HRESULT GetStringHeapSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbStrings`  
  [out] A pointer to the size, in bytes, of the string heap.  
   

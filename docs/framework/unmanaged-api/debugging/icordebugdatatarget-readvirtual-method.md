@@ -32,7 +32,7 @@ HRESULT ReadVirtual(
     [out] ULONG32 *  pBytesRead);  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] The start address of requested memory.  
   

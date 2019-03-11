@@ -31,7 +31,7 @@ HRESULT GetTLSValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The operating system identifier of a thread in the target process.  
   

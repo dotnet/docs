@@ -33,7 +33,7 @@ HRESULT DefineExportedType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of type to be exported. For version 1.1 of the common language runtime, the name of the exported type must exactly match the name given in the `TypeDef` for the type.  
   

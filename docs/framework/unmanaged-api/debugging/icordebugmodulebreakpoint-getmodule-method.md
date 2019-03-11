@@ -29,7 +29,7 @@ HRESULT GetModule (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppModule`  
  [out] A pointer to the address of an `ICorDebugModule` interface that references the module in which the breakpoint is set.  
   

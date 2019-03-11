@@ -29,7 +29,7 @@ HRESULT IsDynamic(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDynamic`  
  [out] `true` if this module is dynamic; otherwise, `false`.  
   

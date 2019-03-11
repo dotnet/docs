@@ -29,7 +29,7 @@ HRESULT Free (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMem`  
  [in] A pointer to the memory to be freed.  
   

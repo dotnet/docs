@@ -30,7 +30,7 @@ HRESULT CreateRWLockOwnerIterator (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cookie`  
  [in] The cookie associated with the desired reader-writer lock.  
   

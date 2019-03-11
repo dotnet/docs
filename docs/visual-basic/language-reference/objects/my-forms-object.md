@@ -40,7 +40,7 @@ Provides properties for accessing an instance of each Windows form declared in t
 ## Example  
  This example changes the title of the default `SidebarMenu` form.  
   
- [!code-vb[VbVbalrMyForms#2](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-forms-object_1.vb)]  
+ [!code-vb[VbVbalrMyForms#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyForms/VB/Class1.vb#2)]  
   
  For this example to work, your project must have a form named `SidebarMenu`.  
   

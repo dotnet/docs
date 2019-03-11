@@ -30,7 +30,7 @@ HRESULT GetFunctionTailcall3Info(
             [out] COR_PRF_FRAME_INFO *pFrameInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The `FunctionID` of the function that is returning.  
   

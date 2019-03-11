@@ -4,7 +4,7 @@ description: Store unstructured data in the cloud with Azure Blob storage.
 author: sylvanc
 ms.date: 09/20/2016
 ---
-# Get started with Azure Blob storage using F# #
+# Get started with Azure Blob storage using F\#
 
 Azure Blob storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
 
@@ -212,23 +212,24 @@ By default, Azure Storage keeps your data secure by limiting access to the accou
 
 By default, the blob data in your storage account is accessible only to storage account owner. Authenticating requests against Blob storage requires the account access key by default. However, you might want to make certain blob data available to other users.
 
-For details on how to control access to blob storage, see [the .NET guide for blob storage section on access control](/azure/storage/storage-dotnet-how-to-use-blobs#controlling-access-to-blob-data).
-
-
 ### Encrypting blob data
 
 Azure Storage supports encrypting blob data both at the client and on the server.
-
-For details on encrypting blob data, see [the .NET guide for blob storage section on encryption](/azure/storage/storage-dotnet-how-to-use-blobs#encrypting-blob-data).
 
 ## Next steps
 
 Now that you've learned the basics of Blob storage, follow these links to learn more.
 
 ### Tools
-- [F# AzureStorageTypeProvider](https://fsprojects.github.io/AzureStorageTypeProvider/) An F# Type Provider which can be used to explore Blob, Table and Queue Azure Storage assets and easily apply CRUD operations on them.
-- [FSharp.Azure.Storage](https://github.com/fsprojects/FSharp.Azure.Storage) An F# API for using Microsoft Azure Table Storage service
-- [Microsoft Azure Storage Explorer (MASE)](/azure/vs-azure-tools-storage-manage-with-storage-explorer) is a free, standalone app from Microsoft that enables you to work visually with Azure Storage data on Windows, OS X, and Linux.
+
+- [F# AzureStorageTypeProvider](https://fsprojects.github.io/AzureStorageTypeProvider/)\
+An F# Type Provider which can be used to explore Blob, Table and Queue Azure Storage assets and easily apply CRUD operations on them.
+
+- [FSharp.Azure.Storage](https://github.com/fsprojects/FSharp.Azure.Storage)\
+An F# API for using Microsoft Azure Table Storage service
+
+- [Microsoft Azure Storage Explorer (MASE)](/azure/vs-azure-tools-storage-manage-with-storage-explorer)\
+A free, standalone app from Microsoft that enables you to work visually with Azure Storage data on Windows, OS X, and Linux.
 
 ### Blob storage reference
 
@@ -242,3 +243,4 @@ Now that you've learned the basics of Blob storage, follow these links to learn 
 - [Transfer data with the AzCopy command-line utility on Linux](/azure/storage/common/storage-use-azcopy-linux)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Quickstart: Use .NET to create a blob in object storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet)

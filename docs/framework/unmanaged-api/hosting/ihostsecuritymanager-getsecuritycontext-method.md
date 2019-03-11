@@ -30,7 +30,7 @@ HRESULT GetSecurityContext (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `eContextType`  
  [in] One of the [EContextType](../../../../docs/framework/unmanaged-api/hosting/econtexttype-enumeration.md) values, indicating what type of security context to return.  
   

@@ -38,7 +38,7 @@ variableorproperty *= expression
 ## Example  
  The following example uses the `*=` operator to multiply one `Integer` variable by a second and assign the result to the first variable.  
   
- [!code-vb[VbVbalrOperators#5](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/multiplication-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#5)]  
   
 ## See also
 - [* Operator](../../../visual-basic/language-reference/operators/multiplication-operator.md)

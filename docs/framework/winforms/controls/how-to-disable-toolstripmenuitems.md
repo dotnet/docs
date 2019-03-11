@@ -39,5 +39,5 @@ You can limit or broaden the commands a user may make by enabling and disabling 
 ## See also
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ToolStripMenuItem>
-- [How to: Hide ToolStripMenuItems](../../../../docs/framework/winforms/controls/how-to-hide-toolstripmenuitems.md)
-- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+- [How to: Hide ToolStripMenuItems](how-to-hide-toolstripmenuitems.md)
+- [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)

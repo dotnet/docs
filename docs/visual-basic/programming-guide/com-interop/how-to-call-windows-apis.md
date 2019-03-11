@@ -12,7 +12,7 @@ ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
 This example defines and calls the `MessageBox` function in user32.dll and then passes a string to it.  
   
 ## Example  
- [!code-vb[VbVbalrInterop#1](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/how-to-call-windows-apis_1.vb)]  
+ [!code-vb[VbVbalrInterop#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#1)]  
   
 ## Compiling the Code  
  This example requires:  

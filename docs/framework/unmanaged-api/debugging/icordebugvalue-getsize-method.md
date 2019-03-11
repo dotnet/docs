@@ -29,7 +29,7 @@ HRESULT GetSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pSize`  
  [out] The size, in bytes, of this value object.  
   

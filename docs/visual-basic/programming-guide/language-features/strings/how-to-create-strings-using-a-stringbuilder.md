@@ -12,7 +12,7 @@ This example constructs a long string from many smaller strings using the <xref:
 ## Example  
  The following example creates an instance of the <xref:System.Text.StringBuilder> class, appends 1,000 strings to that instance, and then returns its string representation.  
   
- [!code-vb[VbVbalrStrings#70](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-create-strings-using-a-stringbuilder_1.vb)]  
+ [!code-vb[VbVbalrStrings#70](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#70)]  
   
 ## See also
 - [Using the StringBuilder Class](../../../../standard/base-types/stringbuilder.md)

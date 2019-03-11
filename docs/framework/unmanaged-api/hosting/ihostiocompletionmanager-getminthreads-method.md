@@ -29,7 +29,7 @@ HRESULT GetMinThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwMinIOCompletionThreads`  
  [out] A pointer to the minimum number of threads that the host provides to process I/O requests.  
   

@@ -1,6 +1,6 @@
 # [File System and the Registry](index.md)
 ## [How to: Iterate Through a Directory Tree](how-to-iterate-through-a-directory-tree.md)
-## [How to: Get Information About Files, Folders, and Drives ](how-to-get-information-about-files-folders-and-drives.md)
+## [How to: Get Information About Files, Folders, and Drives](how-to-get-information-about-files-folders-and-drives.md)
 ## [How to: Create a File or Folder](how-to-create-a-file-or-folder.md)
 ## [How to: Copy, Delete, and Move Files and Folders](how-to-copy-delete-and-move-files-and-folders.md)
 ## [How to: Provide a Progress Dialog Box for File Operations](how-to-provide-a-progress-dialog-box-for-file-operations.md)

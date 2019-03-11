@@ -35,7 +35,7 @@ HRESULT DefineGenericParam (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] An `mdTypeDef` or `mdMethodDef` token that represents the method or constructor for which to define a generic parameter.  
   

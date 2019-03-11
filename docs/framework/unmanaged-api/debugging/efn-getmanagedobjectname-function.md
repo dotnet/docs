@@ -31,7 +31,7 @@ HRESULT _EFN_GetManagedObjectName(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] A pointer to the debug client.  
   

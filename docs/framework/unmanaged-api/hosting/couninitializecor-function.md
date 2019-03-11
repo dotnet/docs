@@ -5,6 +5,7 @@ api_name:
   - "CoUninitializeCor"
 api_location: 
   - "mscoree.dll"
+  - "mscorsvr.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 

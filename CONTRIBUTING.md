@@ -112,7 +112,7 @@ Your topic will also contain links to the sample. Link directly to the sample's 
 
 For more information, see the [Samples Readme](https://github.com/dotnet/samples/blob/master/README.md).
 
-## The C# interactive experience #
+## The C# interactive experience
 
 Short code samples in C# can use the `csharp-interactive` language tag to
 specify a C# sample that runs in the browser. (Inline code samples use the

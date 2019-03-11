@@ -20,7 +20,7 @@ HRESULT CreateVirtualUnwinder(
 };  
 ```  
   
-#### Parameters  
+## Parameters  
  nativeThreadID  
  [in] The native thread ID of the thread whose stack is to be unwound.  
   

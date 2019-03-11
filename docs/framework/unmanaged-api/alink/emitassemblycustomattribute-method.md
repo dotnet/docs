@@ -35,7 +35,7 @@ HRESULT EmitAssemblyCustomAttribute(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   

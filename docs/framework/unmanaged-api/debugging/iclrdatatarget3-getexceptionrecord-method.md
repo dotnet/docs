@@ -28,7 +28,7 @@ HRESULT GetExceptionRecord(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bufferSize`  
  [in] The input buffer size, in bytes. This must be equal to `sizeof(`[MINIDUMP_EXCEPTION](/windows/desktop/api/minidumpapiset/ns-minidumpapiset-_minidump_exception)`)`.  
   

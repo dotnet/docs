@@ -1,4 +1,4 @@
-﻿---
+---
 title: Async in depth
 description: Learn how writing I/O-bound and CPU-bound asynchronous code is straightforward using the .NET Task-based async model.
 author: cartermp
@@ -136,7 +136,7 @@ Once `await` is encountered, the execution of `CalculateResult()` is yielded to 
 
 ### Why does async help here?
 
-`async` and `await` are the best practice managing CPU-bound work when you need responsiveness. There are multiple patterns for using async with CPU-bound work. It's important to note that there is a small cost to using async and it's not recommended for tight loops.  It's up to you to determine how you write your code around this new capability.
+`async` and `await` are the best practice for managing CPU-bound work when you need responsiveness. There are multiple patterns for using async with CPU-bound work. It's important to note that there is a small cost to using async and it's not recommended for tight loops.  It's up to you to determine how you write your code around this new capability.
 
 ## See also
 

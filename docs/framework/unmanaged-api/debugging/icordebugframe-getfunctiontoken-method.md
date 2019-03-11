@@ -29,7 +29,7 @@ HRESULT GetFunctionToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pToken`  
  [out] A pointer to an `mdMethodDef` token that references the metadata for the function.  
   

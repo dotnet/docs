@@ -32,7 +32,7 @@ HRESULT GetMethodsInDocument(
         length_is(*pcMethod)] ISymUnmanagedMethod* pRetVal[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] A pointer to the document.  
   

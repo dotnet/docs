@@ -28,7 +28,7 @@ HRESULT EnumThreads([out]
             ICorProfilerThreadEnum** ppEnum);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  [out] A pointer to an [ICorProfilerThreadEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md) interface.  
   

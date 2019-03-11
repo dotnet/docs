@@ -30,7 +30,7 @@ HRESULT CreateMalloc (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMallocType`  
  [in] A combination of [MALLOC_TYPE](../../../../docs/framework/unmanaged-api/hosting/malloc-type-enumeration.md) flags that specifies the characteristics of the memory that is being allocated.  
   

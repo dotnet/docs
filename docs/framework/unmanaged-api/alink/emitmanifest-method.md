@@ -31,7 +31,7 @@ HRESULT EmitManifest(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   

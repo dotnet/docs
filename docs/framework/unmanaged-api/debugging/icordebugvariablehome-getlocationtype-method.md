@@ -29,7 +29,7 @@ HRESULT GetLocationType(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pLocationType`  
  [out] A pointer to the type of the variable's native location.  See the [VariableLocationType](../../../../docs/framework/unmanaged-api/debugging/variablelocationtype-enumeration.md) enumeration for more information.  
   

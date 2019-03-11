@@ -18,7 +18,7 @@ HRESULT GetPublicKeyToken(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbPublicKeyToken`  
  [in] The maximum number of bytes in the `pbPublicKeyToken` array.  
   

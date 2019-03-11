@@ -31,7 +31,7 @@ HRESULT RegisterNotifySource
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `in_pNotifySource`  
  [in] Specifies the object to be used as the notification source.  
   

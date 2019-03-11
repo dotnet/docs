@@ -29,7 +29,7 @@ HRESULT GetObjectSize2(
     [out] SIZE_T *pcSize);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object.  
   

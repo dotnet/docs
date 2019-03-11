@@ -24,16 +24,16 @@ ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
   
 1.  Create a new Windows form.  
   
-2.  Add a <xref:System.Windows.Forms.StatusBar> control to your form. For details, see [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md).  
+2.  Add a <xref:System.Windows.Forms.StatusBar> control to your form. For details, see [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md).  
   
-3.  Add a status bar panel to your <xref:System.Windows.Forms.StatusBar> control. For details, see [How to: Add Panels to a StatusBar Control](../../../../docs/framework/winforms/controls/how-to-add-panels-to-a-statusbar-control.md).  
+3.  Add a status bar panel to your <xref:System.Windows.Forms.StatusBar> control. For details, see [How to: Add Panels to a StatusBar Control](how-to-add-panels-to-a-statusbar-control.md).  
   
 4.  For the <xref:System.Windows.Forms.StatusBar> control you added to your form, set the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to `true`.  
   
 5.  Add a Windows Forms <xref:System.Windows.Forms.Timer> component to the form.  
   
     > [!NOTE]
-    >  The Windows Forms <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://msdn.microsoft.com/library/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).  
+    >  The Windows Forms <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).  
   
 6.  Set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `true`.  
   
@@ -81,6 +81,6 @@ ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
 ## See also
 - <xref:System.Windows.Forms.StatusBar>
 - <xref:System.Windows.Forms.ToolStripStatusLabel>
-- [How to: Add Panels to a StatusBar Control](../../../../docs/framework/winforms/controls/how-to-add-panels-to-a-statusbar-control.md)
-- [How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked](../../../../docs/framework/winforms/controls/determine-which-panel-wf-statusbar-control-was-clicked.md)
-- [StatusBar Control Overview](../../../../docs/framework/winforms/controls/statusbar-control-overview-windows-forms.md)
+- [How to: Add Panels to a StatusBar Control](how-to-add-panels-to-a-statusbar-control.md)
+- [How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked](determine-which-panel-wf-statusbar-control-was-clicked.md)
+- [StatusBar Control Overview](statusbar-control-overview-windows-forms.md)

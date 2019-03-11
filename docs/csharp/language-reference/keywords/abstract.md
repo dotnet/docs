@@ -24,7 +24,7 @@ The `abstract` modifier indicates that the thing being modified has a missing or
   
 -   An abstract class may contain abstract methods and accessors.  
   
--   It is not possible to modify an abstract class with the [sealed](../../../csharp/language-reference/keywords/sealed.md) modifier because the two modifers have opposite meanings. The `sealed` modifier prevents a class from being inherited and the `abstract` modifier requires a class to be inherited.  
+-   It is not possible to modify an abstract class with the [sealed](../../../csharp/language-reference/keywords/sealed.md) modifier because the two modifiers have opposite meanings. The `sealed` modifier prevents a class from being inherited and the `abstract` modifier requires a class to be inherited.  
   
 -   A non-abstract class derived from an abstract class must include actual implementations of all inherited abstract methods and accessors.  
   

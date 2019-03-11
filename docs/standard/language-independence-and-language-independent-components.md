@@ -299,7 +299,7 @@ The .NET Framework is language independent. This means that, as a developer, you
   
      Because of this rule, CLS-compliant types are not required to implement non-CLS-compliant members. If a CLS-compliant framework does expose a class that implements a non-CLS compliant interface, it should also provide concrete implementations of all non-CLS-compliant members.  
   
- CLS-compliant language compilers must also allow a class to provide separate implementations of members that have the same name and signature in multiple interfaces.  Both C# and Visual Basic support [explicit interface implementations](~/docs/csharp/programming-guide/interfaces/explicit-interface-implementation.md) to provide different implementations of identically named methods. Visual Basic also supports the `Implements` keyword, which enables you to explicitly designate which interface and member a particular member implements. The following example illustrates this scenario by defining a `Temperature` class that implements the `ICelsius` and `IFahrenheit` interfaces as explicit interface implementations.  
+ CLS-compliant language compilers must also allow a class to provide separate implementations of members that have the same name and signature in multiple interfaces.  Both C# and Visual Basic support [explicit interface implementations](../csharp/programming-guide/interfaces/explicit-interface-implementation.md) to provide different implementations of identically named methods. Visual Basic also supports the `Implements` keyword, which enables you to explicitly designate which interface and member a particular member implements. The following example illustrates this scenario by defining a `Temperature` class that implements the `ICelsius` and `IFahrenheit` interfaces as explicit interface implementations.  
   
  [!code-csharp[Conceptual.CLSCompliant#24](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/eii1.cs#24)]
  [!code-vb[Conceptual.CLSCompliant#24](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/eii1.vb#24)]  
@@ -542,23 +542,23 @@ The .NET Framework is language independent. This means that, as a developer, you
   
  To package the two classes in a single assembly, you must compile them into modules. To compile the Visual Basic source code file into a module, use this command:  
   
-```  
+```console  
 vbc /t:module StringUtil.vb   
 ```  
   
- For more information about the command-line syntax of the Visual Basic compiler, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
+ For more information about the command-line syntax of the Visual Basic compiler, see [Building from the Command Line](../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
   
  To compile the C# source code file into a module, use this command:  
   
-```  
+```console  
 csc /t:module NumberUtil.cs  
 ```  
   
- For more information about the command-line syntax of the C# compiler, see [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).  
+ For more information about the command-line syntax of the C# compiler, see [Command-line Building With csc.exe](../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).  
   
- You then use the [Link tool (Link.exe)](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129) to compile the two modules into an assembly:  
+ You then use the [Linker options](/cpp/build/reference/linker-options) to compile the two modules into an assembly:  
   
-```  
+```console  
 link numberutil.netmodule stringutil.netmodule /out:UtilityLib.dll /dll   
 ```  
   
@@ -569,13 +569,13 @@ link numberutil.netmodule stringutil.netmodule /out:UtilityLib.dll /dll
   
  To compile the Visual Basic code, use this command:  
   
-```  
+```console  
 vbc example.vb /r:UtilityLib.dll  
 ```  
   
  To compile with C#, change the name of the compiler from **vbc** to **csc**, and change the file extension from .vb to .cs:  
   
-```  
+```console  
 csc example.cs /r:UtilityLib.dll  
 ```  
   

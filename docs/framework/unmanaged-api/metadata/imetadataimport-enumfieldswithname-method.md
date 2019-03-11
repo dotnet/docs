@@ -34,7 +34,7 @@ HRESULT EnumFieldsWithName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator.  
   

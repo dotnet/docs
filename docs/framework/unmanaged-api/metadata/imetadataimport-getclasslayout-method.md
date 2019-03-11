@@ -34,7 +34,7 @@ HRESULT GetClassLayout  (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The TypeDef token for the class with the layout to return.  
   

@@ -33,7 +33,7 @@ BOOLEAN StrongNameKeyGen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszKeyContainer`  
  [in] The requested key container name. `wszKeyContainer` must be a non-empty string, or null to generate a temporary name.  
   

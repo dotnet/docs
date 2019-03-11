@@ -33,7 +33,7 @@ The compiler generates an ID string for each construct in your code that is tagg
 ## Example  
  The following code shows how the ID strings for a class and its members are generated.  
   
- [!code-vb[VbVbcnXmlDocComments#10](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/processing-the-xml-file_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#10)]  
   
 ## See also
 - [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)

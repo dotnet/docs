@@ -32,7 +32,7 @@ HRESULT RootReferences2(
     [in, size_is(cRootRefs)] UINT_PTR rootIds[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cRootRefs`  
  [in] The number of elements in the `rootRefIds`, `rootKinds`, `rootFlags`, and `rootIds` arrays.  
   

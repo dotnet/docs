@@ -121,4 +121,4 @@ namespace DelayActivityTemplate
 ## See also
 
 - <xref:System.Activities.Presentation.IActivityTemplateFactory>
-- [Customizing the Workflow Design Experience](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md)
+- [Customizing the Workflow Design Experience](customizing-the-workflow-design-experience.md)

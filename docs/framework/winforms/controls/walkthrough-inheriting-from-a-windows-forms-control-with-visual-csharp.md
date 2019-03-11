@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: 09476da0-8d4c-4a4c-b969-649519dfb438
 ---
-# Walkthrough: Inheriting from a Windows Forms Control with Visual C# #
+# Walkthrough: Inheriting from a Windows Forms Control with Visual C\#
 With [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)], you can create powerful custom controls through *inheritance*. Through inheritance you are able to create controls that retain all of the inherent functionality of standard Windows Forms controls but also incorporate custom functionality. In this walkthrough, you will create a simple inherited control called `ValueButton`. This button will inherit functionality from the standard Windows Forms <xref:System.Windows.Forms.Button> control, and will expose a custom property called `ButtonValue`.  
   
 > [!NOTE]
@@ -136,5 +136,5 @@ With [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)], you can crea
      The numeral '5' is displayed in `label1`, demonstrating that the `ButtonValue` property of your inherited control has been passed to `label1` through the `valueButton1_Click` method. Thus your `ValueButton` control inherits all the functionality of the standard Windows Forms button, but exposes an additional, custom property.  
   
 ## See also
-- [How to: Display a Control in the Choose Toolbox Items Dialog Box](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)
-- [Walkthrough: Authoring a Composite Control with Visual C#](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)
+- [How to: Display a Control in the Choose Toolbox Items Dialog Box](how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)
+- [Walkthrough: Authoring a Composite Control with Visual C#](walkthrough-authoring-a-composite-control-with-visual-csharp.md)

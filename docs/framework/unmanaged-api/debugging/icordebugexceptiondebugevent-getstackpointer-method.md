@@ -16,7 +16,7 @@ HRESULT GetStackPointer(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStackPointer`  
  [out] A pointer to the address of the stack pointer for this exception debug event. See the Remarks section for more information.  
   

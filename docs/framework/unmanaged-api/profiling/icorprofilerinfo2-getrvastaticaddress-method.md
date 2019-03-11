@@ -30,7 +30,7 @@ HRESULT GetRVAStaticAddress(
     [out] void **ppAddress);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class that contains the requested RVA-static field.  
   

@@ -30,7 +30,7 @@ HRESULT ExitAppDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an ICorDebugProcess object that represents the process that contains the given application domain.  
   

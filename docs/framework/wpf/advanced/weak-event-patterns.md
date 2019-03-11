@@ -90,7 +90,7 @@ In applications, it is possible that handlers that are attached to event sources
   
      This class inherits from the <xref:System.Windows.WeakEventManager> class.  
   
-     [!code-csharp[WeakEvents#WeakEventManagerTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WeakEvents/CSharp/WeakEventManagerTemplate.cs#weakeventmanagertemplate)]  
+     [!code-csharp[WeakEvents#WeakEventManagerTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/WeakEvents/CSharp/WeakEventManagerTemplate.cs#weakeventmanagertemplate)]  
   
 2.  Replace the `SomeEventWeakEventManager` name with your own name.  
   
@@ -127,5 +127,5 @@ In applications, it is possible that handlers that are attached to event sources
 ## See also
 - <xref:System.Windows.WeakEventManager>
 - <xref:System.Windows.IWeakEventListener>
-- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
-- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Routed Events Overview](routed-events-overview.md)
+- [Data Binding Overview](../data/data-binding-overview.md)

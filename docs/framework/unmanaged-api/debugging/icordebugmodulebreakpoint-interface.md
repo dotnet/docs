@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugModuleBreakpoint Interface1"
+title: "ICorDebugModuleBreakpoint Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugModuleBreakpoint"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugModuleBreakpoint Interface1
+# ICorDebugModuleBreakpoint Interface
+
 Provides access to specific modules. This interface is a subclass of the ICorDebugBreakpoint interface.  
   
 ## Methods  

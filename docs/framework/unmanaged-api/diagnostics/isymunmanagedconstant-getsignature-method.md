@@ -31,7 +31,7 @@ HRESULT GetSignature(
         length_is(*pcSig)] BYTE sig[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cSig`  
  [in] The length of the buffer that the `pcSig` parameter points to.  
   

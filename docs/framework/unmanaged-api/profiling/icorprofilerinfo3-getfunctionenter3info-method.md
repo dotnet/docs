@@ -33,7 +33,7 @@ HRESULT GetFunctionEnter3Info(
                   COR_PRF_FUNCTION_ARGUMENT_INFO *pArgumentInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The `FunctionID` of the function that is being entered.  
   

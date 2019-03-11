@@ -29,7 +29,7 @@ HRESULT InitializeForProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pid`  
  [in] The process identifier.  
   

@@ -29,7 +29,7 @@ HRESULT ThreadAssignedToOSThread(
     [in] DWORD    osThreadId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `managedThreadId`  
  [in] The identifier of the managed thread.  
   

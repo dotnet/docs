@@ -32,7 +32,7 @@ HRESULT Terminate (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `exitCode`  
  [in] A numeric value that is the exit code. The valid numeric values are defined in Winbase.h.  
   

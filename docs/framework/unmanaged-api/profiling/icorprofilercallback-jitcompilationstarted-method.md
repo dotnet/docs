@@ -29,7 +29,7 @@ HRESULT JITCompilationStarted(
     [in] BOOL       fIsSafeToBlock);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function for which the compilation is starting.  
   

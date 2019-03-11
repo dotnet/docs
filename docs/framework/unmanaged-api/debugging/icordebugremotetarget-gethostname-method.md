@@ -31,7 +31,7 @@ HRESULT GetHostName (
             WCHAR szHostName[]  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchHostName`  
  [in] The size, in characters, of the `szHostName` buffer. If this parameter is 0 (zero), `szHostName` must be null.  
   
@@ -49,7 +49,7 @@ HRESULT GetHostName (
  Unable to return the host name or IP address.  
   
 ## Remarks  
- This method is implemented by the debugger writer. It must follow the multiple call paradigm: On the first call, the caller passes null to both `cchHostName` and `szHostName`, and `pcchHostName` returns the size of the required buffer . On the second call, the size that was previously returned is passed in `cchHostName`, and an appropriately sized buffer is passed in `szHostName`.  
+ This method is implemented by the debugger writer. It must follow the multiple call paradigm: On the first call, the caller passes null to both `cchHostName` and `szHostName`, and `pcchHostName` returns the size of the required buffer. On the second call, the size that was previously returned is passed in `cchHostName`, and an appropriately sized buffer is passed in `szHostName`.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -33,7 +33,7 @@ HRESULT GetActiveInternalFrames
       );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cInternalFrames`  
  [in] The number of internal frames expected in `ppInternalFrames`.  
   

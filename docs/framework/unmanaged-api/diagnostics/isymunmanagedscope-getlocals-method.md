@@ -31,7 +31,7 @@ HRESULT GetLocals(
         length_is(*pcLocals)] ISymUnmanagedVariable* locals[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cLocals`  
  [in] A `ULONG32` that indicates the size of the `locals` array.  
   

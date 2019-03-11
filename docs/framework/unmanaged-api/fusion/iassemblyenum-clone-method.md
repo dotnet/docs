@@ -29,7 +29,7 @@ HRESULT Clone (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  [out] A pointer to the copy.  
   

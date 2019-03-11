@@ -33,7 +33,7 @@ HRESULT GetSymAttributePreRemap(
         length_is(*pcBuffer)] BYTE buffer[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The metadata token of the parent.  
   

@@ -48,7 +48,7 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
   
 #### To create WPF controls  
   
-1.  Add a new WPF <xref:System.Windows.Controls.UserControl> to the project. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
+1.  Add a new WPF <xref:System.Windows.Controls.UserControl> to the project. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
   
 2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100)).  
   
@@ -84,7 +84,7 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
      Both <xref:System.Windows.Forms.Integration.ElementHost> controls are resized to fit into the new layout.  
   
 ## Using Snaplines to Align WPF Controls  
- Snaplines enable easy alignment of controls on a form. You can use snaplines to align your WPF controls as well. For more information, see [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md).  
+ Snaplines enable easy alignment of controls on a form. You can use snaplines to align your WPF controls as well. For more information, see [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md).  
   
 #### To use snaplines to align WPF controls  
   
@@ -139,14 +139,14 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
   
      All three <xref:System.Windows.Forms.Integration.ElementHost> controls resize appropriately.  
   
-     For more information, see [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](../../../../docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md).  
+     For more information, see [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](../controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md).  
   
 ## See also
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](../../../../docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)
-- [How to: Align a Control to the Edges of Forms at Design Time](../../../../docs/framework/winforms/controls/how-to-align-a-control-to-the-edges-of-forms-at-design-time.md)
-- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
-- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
-- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
+- [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](../controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)
+- [How to: Align a Control to the Edges of Forms at Design Time](../controls/how-to-align-a-control-to-the-edges-of-forms-at-design-time.md)
+- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
+- [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
+- [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

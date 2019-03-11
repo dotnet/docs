@@ -31,7 +31,7 @@ HRESULT FindExportedTypeByName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the exported type.  
   

@@ -33,7 +33,7 @@ The Global Assembly Cache tool allows you to view and manipulate the contents of
 gacutil [options] [assemblyName | assemblyPath | assemblyListFile]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  

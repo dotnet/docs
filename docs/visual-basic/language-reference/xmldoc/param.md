@@ -15,7 +15,7 @@ Defines a parameter name and description.
 <param name="name">description</param>  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  The name of a method parameter. Enclose the name in double quotation marks (" ").  
   
@@ -36,7 +36,7 @@ Defines a parameter name and description.
 ## Example  
  This example uses the `<param>` tag to describe the `id` parameter.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/param_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
 ## See also
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

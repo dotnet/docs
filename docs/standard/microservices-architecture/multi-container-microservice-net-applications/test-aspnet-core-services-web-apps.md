@@ -5,19 +5,20 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/02/2018
 ---
+
 # Testing ASP.NET Core services and web apps
 
 Controllers are a central part of any ASP.NET Core API service and ASP.NET MVC Web application. As such, you should have confidence they behave as intended for your application. Automated tests can provide you with this confidence and can detect errors before they reach production.
 
 You need to test how the controller behaves based on valid or invalid inputs, and test controller responses based on the result of the business operation it performs. However, you should have these types of tests for your microservices:
 
--   Unit tests. These ensure that individual components of the application work as expected. Assertions test the component API.
+- Unit tests. These ensure that individual components of the application work as expected. Assertions test the component API.
 
--   Integration tests. These ensure that component interactions work as expected against external artifacts like databases. Assertions can test component API, UI, or the side effects of actions like database I/O, logging, etc.
+- Integration tests. These ensure that component interactions work as expected against external artifacts like databases. Assertions can test component API, UI, or the side effects of actions like database I/O, logging, etc.
 
--   Functional tests for each microservice. These ensure that the application works as expected from the user’s perspective.
+- Functional tests for each microservice. These ensure that the application works as expected from the user’s perspective.
 
--   Service tests. These ensure that end-to-end service use cases, including testing multiple services at the same time, are tested. For this type of testing, you need to prepare the environment first. In this case, it means starting the services (for example, by using docker-compose up).
+- Service tests. These ensure that end-to-end service use cases, including testing multiple services at the same time, are tested. For this type of testing, you need to prepare the environment first. In this case, it means starting the services (for example, by using docker-compose up).
 
 ### Implementing unit tests for ASP.NET Core Web APIs
 
@@ -36,18 +37,18 @@ public async Task Get_order_detail_success()
     //Arrange
     var fakeOrderId = "12";
     var fakeOrder = GetFakeOrder();
- 
+
     //...
 
     //Act
     var orderController = new OrderController(
-        _orderServiceMock.Object, 
-        _basketServiceMock.Object, 
+        _orderServiceMock.Object,
+        _basketServiceMock.Object,
         _identityParserMock.Object);
 
     orderController.ControllerContext.HttpContext = _contextMock.Object;
     var actionResult = await orderController.Detail(fakeOrderId);
- 
+
     //Assert
     var viewResult = Assert.IsType<ViewResult>(actionResult);
     Assert.IsAssignableFrom<Order>(viewResult.ViewData.Model);
@@ -97,28 +98,28 @@ public class PrimeWebDefaultRequestShould
 
 #### Additional resources
 
--   **Steve Smith. Testing controllers** (ASP.NET Core) <br/>
+- **Steve Smith. Testing controllers** (ASP.NET Core) <br/>
     [*https://docs.microsoft.com/aspnet/core/mvc/controllers/testing*](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing)
 
--   **Steve Smith. Integration testing** (ASP.NET Core) <br/>
+- **Steve Smith. Integration testing** (ASP.NET Core) <br/>
     [*https://docs.microsoft.com/aspnet/core/test/integration-tests*](https://docs.microsoft.com/aspnet/core/test/integration-tests)
 
--   **Unit testing in .NET Core using dotnet test** <br/>
+- **Unit testing in .NET Core using dotnet test** <br/>
     [*https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test*](~/docs/core/testing/unit-testing-with-dotnet-test.md)
 
--   **xUnit.net**. Official site. <br/>
+- **xUnit.net**. Official site. <br/>
     [*https://xunit.github.io/*](https://xunit.github.io/)
 
--   **Unit Test Basics.** <br/>
-    [*https://msdn.microsoft.com/library/hh694602.aspx*](https://msdn.microsoft.com/library/hh694602.aspx)
+- **Unit Test Basics.** <br/>
+    [*https://docs.microsoft.com/visualstudio/test/unit-test-basics*](/visualstudio/test/unit-test-basics)
 
--   **Moq**. GitHub repo. <br/>
+- **Moq**. GitHub repo. <br/>
     [*https://github.com/moq/moq*](https://github.com/moq/moq)
 
--   **NUnit**. Official site. <br/>
+- **NUnit**. Official site. <br/>
     [*https://www.nunit.org/*](https://www.nunit.org/)
 
-### Implementing service tests on a multi-container application 
+### Implementing service tests on a multi-container application
 
 As noted earlier, when you test multi-container applications, all the microservices need to be running within the Docker host or container cluster. End-to-end service tests that include multiple operations involving several microservices require you to deploy and start the whole application in the Docker host by running docker-compose up (or a comparable mechanism if you are using an orchestrator). Once the whole application and all its services is running, you can execute end-to-end integration and functional tests.
 
@@ -130,15 +131,15 @@ Once the compose application is up and running, you can take advantage of breakp
 
 The reference application (eShopOnContainers) tests were recently restructured and now there are four categories:
 
-1.  **Unit** tests, just plain old regular unit tests, contained in the **{MicroserviceName}.UnitTests** projects
+1. **Unit** tests, just plain old regular unit tests, contained in the **{MicroserviceName}.UnitTests** projects
 
-2.  **Microservice functional/integration tests**, with test cases involving the insfrastructure for each microservice but isolated from the others and are contained in the **{MicroserviceName}.FunctionalTests** projects.
+2. **Microservice functional/integration tests**, with test cases involving the infrastructure for each microservice but isolated from the others and are contained in the **{MicroserviceName}.FunctionalTests** projects.
 
-3.  **Application functional/integration tests**, that focus on microservices integration, with test cases that exert several microservices. These tests are located in project **Application.FunctionalTests**.
+3. **Application functional/integration tests**, that focus on microservices integration, with test cases that exert several microservices. These tests are located in project **Application.FunctionalTests**.
 
-4.  **Load tests**, that focus on response times for each microservice. These tests are located in project **LoadTest** and need Visual Studio 2017 Enterprise Edition.
+4. **Load tests**, that focus on response times for each microservice. These tests are located in project **LoadTest** and need Visual Studio 2017 Enterprise Edition.
 
-Unit and integration test per microservice are contained in a test folder in each microservice and Application a Load tests are contained under the test foldel in the solution folder, as shown in Figure 6-25.
+Unit and integration test per microservice are contained in a test folder in each microservice and Application a Load tests are contained under the test folder in the solution folder, as shown in Figure 6-25.
 
 ![Structure of tests in eShopOnContainers: Each service has a "test" folder that includes unit and functional tests. Under the solution "test" folder there are the application wide functional tests and load test.](./media/image42.png)
 
@@ -174,7 +175,7 @@ services:
   rabbitmq:
     ports:
       - "15672:15672"
-      - "5672:5672" 
+      - "5672:5672"
   sql.data:
     environment:
       - SA_PASSWORD=Pass@word
@@ -192,16 +193,16 @@ So, to run the functional/integration tests you must first run this command, fro
 docker-compose -f docker-compose-test.yml -f docker-compose-test.override.yml up
 ```
 
-As you can see, these docker-compose files only start the Redis, RabitMQ, SQL Server and MongoDB microservices.
+As you can see, these docker-compose files only start the Redis, RabbitMQ, SQL Server and MongoDB microservices.
 
-### Additionl resources
+### Additional resources
 
--   **Tests README file** on the eShopOnContainers repo on GitHub <br/>
+- **Tests README file** on the eShopOnContainers repo on GitHub <br/>
     [*https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test*](https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test)
 
--   **Load tests README file** on the eShopOnContainers repo on GitHub <br/>
+- **Load tests README file** on the eShopOnContainers repo on GitHub <br/>
     [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/)
 
->[!div class="step-by-step"]
->[Previous](subscribe-events.md)
->[Next](background-tasks-with-ihostedservice.md)
+> [!div class="step-by-step"]
+> [Previous](subscribe-events.md)
+> [Next](background-tasks-with-ihostedservice.md)

@@ -27,7 +27,7 @@ At the command prompt, type the following:
 al sources options
 ```
 
-#### Parameters
+## Parameters
 
 You can specify one or more of the following `sources`.
 

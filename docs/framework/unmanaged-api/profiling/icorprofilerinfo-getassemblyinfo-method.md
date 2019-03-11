@@ -34,7 +34,7 @@ HRESULT GetAssemblyInfo(
     [out] ModuleID    *pModuleId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `assemblyId`  
  [in] The identifier of the assembly.  
   

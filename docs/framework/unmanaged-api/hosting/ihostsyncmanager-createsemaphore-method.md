@@ -31,7 +31,7 @@ HRESULT CreateSemaphore (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwInitial`  
  [in] The initial count for `ppSemaphore`.  
   

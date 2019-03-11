@@ -28,7 +28,7 @@ HRESULT SetNonAssemblyFlags(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `afFlags`  
  ALink flags.  
   

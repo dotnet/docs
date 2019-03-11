@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "properties, retrieving"
   - "UI Automation, retrieving properties of elements"
 ms.assetid: 09576b1a-291f-435c-980e-dee32d899ae1
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Get UI Automation Element Properties
 > [!NOTE]

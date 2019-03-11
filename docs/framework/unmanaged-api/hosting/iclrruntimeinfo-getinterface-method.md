@@ -32,7 +32,7 @@ HRESULT GetInterface(
 [out, iid_is(riid), retval] LPVOID *ppUnk);  
 ```  
   
-#### Parameters  
+## Parameters  
  `rclsid`  
  [in] The CLSID interface for the coclass.  
   

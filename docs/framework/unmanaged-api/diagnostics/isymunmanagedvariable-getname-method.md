@@ -31,7 +31,7 @@ HRESULT GetName(
         length_is(*pcchName)] WCHAR szName[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The length of the buffer that the `pcchName` parameter points to.  
   

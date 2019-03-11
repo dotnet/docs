@@ -5,6 +5,7 @@ author: JRAlexander
 ms.custom: seodec18
 ms.date: 01/14/2019
 ---
+
 # Machine learning data transforms - ML.NET
 
 The following tables contain information about all of the data transforms supported in ML.NET.
@@ -19,7 +20,7 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.GroupTransform> | Groups values of a scalar column into a vector based on a contiguous group ID. |
 | <xref:Microsoft.ML.Transforms.UngroupTransform> | Un-groups vector columns into sequences of rows, inverse of Group transform. |
 
-## Conversions 
+## Conversions
 
 | Transform | Definition |
 | --- | --- |
@@ -30,7 +31,6 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.Conversions.KeyToVectorMappingTransformer> | Converts a key to a vector column. |
 | <xref:Microsoft.ML.Transforms.Conversions.TypeConvertingTransformer> | Changes underlying column type provided the type can be converted. |
 | <xref:Microsoft.ML.Transforms.Conversions.ValueToKeyMappingTransformer> | Converts input values (words, numbers, etc.) to index in a dictionary. |
-
 
 ## Deep learning
 
@@ -43,17 +43,17 @@ The following tables contain information about all of the data transforms suppor
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.Transforms.Text.CustomStopWordsRemovingTransform> | Removes specified list of stop words by comparing individual tokens (case-insensitive comparison) to the stopwords.| 
-| <xref:Microsoft.ML.ImageAnalytics.ImageGrayscaleTransform> | Takes one or more ImageType columns and converts them to a greyscale representation of the same image.|
+| <xref:Microsoft.ML.Transforms.Text.CustomStopWordsRemovingTransform> | Removes specified list of stop words by comparing individual tokens (case-insensitive comparison) to the stopwords.|
+| <xref:Microsoft.ML.ImageAnalytics.ImageGrayscaleTransform> | Takes one or more ImageType columns and converts them to a grayscale representation of the same image.|
 | <xref:Microsoft.ML.ImageAnalytics.ImageLoaderTransform> | Takes one or more ReadOnlyMemory columns and loads them as an ImageType. |
 | <xref:Microsoft.ML.ImageAnalytics.ImagePixelExtractorTransform> | Takes one or more ImageType columns and converts them into a vector representation.|
 | <xref:Microsoft.ML.ImageAnalytics.ImageResizerTransform> | Takes one or more ImageType columns and resizes them to  the provided height and width.|
 | <xref:Microsoft.ML.Transforms.Text.LatentDirichletAllocationTransformer> | Implements LightLDA, a state-of-the-art implementation of Latent Dirichlet Allocation.|
 | <xref:Microsoft.ML.Transforms.LoadTransform> | Loads specific transforms from the specified model file. Allows for 'cherry picking' transforms from a serialized chain, or to apply a pre-trained transform to a different (but still compatible) data view. |
-| <xref:Microsoft.ML.Transforms.Text.NgramExtractingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive values of length 1-n) in a given vector of keys. It does so by building a dictionary of ngrams and using the id in the dictionary as the index in the bag. | 
-| <xref:Microsoft.ML.Transforms.Text.NgramExtractorTransform> | Turns a collection of tokenized text (vector of ReadOnlyMemory), or vectors of keys into numerical feature vectors. The feature vectors are counts of ngrams (sequences of consecutive tokens -words or keys- of length 1-n). | 
-| <xref:Microsoft.ML.Transforms.Text.NgramHashExtractingTransformer> | Turns a collection of tokenized text (vector of ReadOnlyMemory) into numerical feature vectors using hashing. | 
-| <xref:Microsoft.ML.Transforms.Text.NgramHashingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive words of length 1-n) in a given text. | 
+| <xref:Microsoft.ML.Transforms.Text.NgramExtractingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive values of length 1-n) in a given vector of keys. It does so by building a dictionary of ngrams and using the id in the dictionary as the index in the bag. |
+| <xref:Microsoft.ML.Transforms.Text.NgramExtractorTransform> | Turns a collection of tokenized text (vector of ReadOnlyMemory), or vectors of keys into numerical feature vectors. The feature vectors are counts of ngrams (sequences of consecutive tokens -words or keys- of length 1-n). |
+| <xref:Microsoft.ML.Transforms.Text.NgramHashExtractingTransformer> | Turns a collection of tokenized text (vector of ReadOnlyMemory) into numerical feature vectors using hashing. |
+| <xref:Microsoft.ML.Transforms.Text.NgramHashingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive words of length 1-n) in a given text. |
 | <xref:Microsoft.ML.Transforms.Categorical.OneHotEncodingTransformer> | Converts the categorical value into an indicator array by building a dictionary of categories based on the data and using the id in the dictionary as the index in the array |
 | <xref:Microsoft.ML.Transforms.Projections.PcaTransform> | Computes the projection of the feature vector onto a low-rank subspace. |
 | <xref:Microsoft.ML.Transforms.Text.SentimentAnalyzingTransformer> | Uses a pretrained sentiment model to score input strings. |
@@ -67,7 +67,7 @@ The following tables contain information about all of the data transforms suppor
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.Transforms.AlexNetExtension> | This is an extension method to be used with the <xref:Microsoft.ML.Transforms.DnnImageFeaturizerEstimator> in order to use a pretrained [AlexNet](https://en.wikipedia.org/wiki/AlexNet) model. The NuGet containing this extension is also guaranteed to include the binary model file. | 
+| <xref:Microsoft.ML.Transforms.AlexNetExtension> | This is an extension method to be used with the <xref:Microsoft.ML.Transforms.DnnImageFeaturizerEstimator> in order to use a pretrained [AlexNet](https://en.wikipedia.org/wiki/AlexNet) model. The NuGet containing this extension is also guaranteed to include the binary model file. |
 | <xref:Microsoft.ML.Transforms.ResNet18Extension> | This is an extension method to be used with the <xref:Microsoft.ML.Transforms.DnnImageFeaturizerEstimator> to use a pretrained ResNet18 model. The NuGet containing this extension is also guaranteed to include the binary model file. |
 | <xref:Microsoft.ML.Transforms.ResNet50Extension> | This is an extension method to be used with the <xref:Microsoft.ML.Transforms.DnnImageFeaturizerEstimator> to use a pretrained ResNet50model. The NuGet containing this extension is also guaranteed to include the binary model file. |
 | <xref:Microsoft.ML.Transforms.ResNet101Extension> | This is an extension method to be used with the <xref:Microsoft.ML.Transforms.DnnImageFeaturizerEstimator> to use a pretrained ResNet101 model. The NuGet containing this extension is also guaranteed to include the binary model file. |
@@ -110,7 +110,7 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.BootstrapSamplingTransformer> | Approximates bootstrap sampling using Poisson sampling. |
 | <xref:Microsoft.ML.Transforms.Projections.RandomFourierFeaturizingTransformer> | Produces random Fourier feature. |
 | <xref:Microsoft.ML.Transforms.Text.TokenizingByCharactersTransformer> | Character-oriented tokenizer where text is considered a sequence of characters. |
-| <xref:Microsoft.ML.Transforms.Projections.VectorWhiteningTransformer> | Simplfies optimization to assist with identifying weights. |
+| <xref:Microsoft.ML.Transforms.Projections.VectorWhiteningTransformer> | Simplifies optimization to assist with identifying weights. |
 
 ## Row Filters
 

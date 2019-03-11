@@ -31,7 +31,7 @@ HRESULT GetTypeSpecFromToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `typespec`  
  [in] The TypeSpec token associated with the requested metadata signature.  
   

@@ -1,1 +1,0 @@
-        Public Const ClassId As String = "2C8B0AEE-02C9-486e-B809-C780A11530FE"

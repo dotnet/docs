@@ -29,7 +29,7 @@ HRESULT EmitInternalExportedTypes(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of assembly.  
   

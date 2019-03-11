@@ -29,7 +29,7 @@ HRESULT GetStackGuarantee(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pGuarantee`  
  [out] A pointer to the number of bytes that are available.  
   

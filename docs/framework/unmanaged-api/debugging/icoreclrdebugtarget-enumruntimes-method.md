@@ -33,7 +33,7 @@ HRESULT EnumRuntimes (
     );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwInternalProcessID`  
  [in] The internal process ID of the process for which you want to enumerate runtimes. This will be `m_dwInternalID` from the corresponding [CoreClrDebugProcInfo](../../../../docs/framework/unmanaged-api/debugging/coreclrdebugprocinfo-structure.md).  
   

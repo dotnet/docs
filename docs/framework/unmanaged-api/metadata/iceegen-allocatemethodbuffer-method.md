@@ -33,7 +33,7 @@ HRESULT AllocateMethodBuffer (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchBuffer`  
  [in] The length of the buffer to create.  
   

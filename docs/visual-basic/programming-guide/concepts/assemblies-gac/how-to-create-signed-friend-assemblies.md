@@ -80,8 +80,8 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 ## See also
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
-- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
-- [Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)
+- [Assemblies in .NET](../../../../standard/assembly/index.md)
+- [Friend Assemblies](../../../../standard/assembly/friend-assemblies.md)
 - [How to: Create Unsigned Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)
 - [-keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)
 - [Sn.exe (Strong Name Tool)](../../../../framework/tools/sn-exe-strong-name-tool.md))

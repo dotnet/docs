@@ -29,7 +29,7 @@ HRESULT GetDefaultDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [out] An interface pointer of type <xref:System._AppDomain?displayProperty=nameWithType> to the <xref:System.AppDomain> instance that represents the default application domain for the process.  
   

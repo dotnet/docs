@@ -29,7 +29,7 @@ HRESULT Skip (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of elements to be skipped.  
   

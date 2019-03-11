@@ -29,7 +29,7 @@ HRESULT EnumerateHeap(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppObject`  
  [out] A pointer to the address of an [ICorDebugHeapEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md) interface object that is an enumerator for the objects that reside on the managed heap.  
   

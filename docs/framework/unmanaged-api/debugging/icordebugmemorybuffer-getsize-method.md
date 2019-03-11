@@ -16,7 +16,7 @@ HRESULT GetSize(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbBufferLength`  
  [out] A pointer to the size of the memory buffer.  
   

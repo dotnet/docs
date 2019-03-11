@@ -31,7 +31,7 @@ HRESULT GetRVA (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] A MethodDef or FieldDef metadata token that represents the code object to return the RVA for. If the token is a FieldDef, the field must be a global variable.  
   

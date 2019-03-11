@@ -21,7 +21,7 @@ HRESULT CertFreeAuthenticodeSignerInfo (
     [in, out]  PAXL_AUTHENTICODE_SIGNER_INFO   pSignerInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pSignerInfo`  
  [in, out] Signer information to be released. See the [AXL_AUTHENTICODE_SIGNER_INFO](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-signer-info-structure.md) structure.  
   

@@ -28,7 +28,7 @@ HRESULT GetNotifiedExceptionClauseInfo(
     [out] COR_PRF_EX_CLAUSE_INFO *pinfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pinfo`  
  [out] A pointer to a [COR_PRF_EX_CLAUSE_INFO](../../../../docs/framework/unmanaged-api/profiling/cor-prf-ex-clause-info-structure.md) structure that describes the current exception clause instance and its associated frame.  
   

@@ -1,1 +1,0 @@
-        SomeType[] array4 = new SomeType[10];

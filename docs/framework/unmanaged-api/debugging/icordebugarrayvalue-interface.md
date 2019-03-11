@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugArrayValue Interface1"
+title: "ICorDebugArrayValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugArrayValue"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugArrayValue Interface1
+# ICorDebugArrayValue Interface
+
 A subclass of ICorDebugHeapValue that represents a single-dimensional or multi-dimensional array.  
   
 ## Methods  

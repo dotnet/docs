@@ -27,7 +27,7 @@ Gets the current frame in the [ICorDebugStackWalk](../../../../docs/framework/un
 HRESULT GetFrame([out] ICorDebugFrame ** pFrame);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFrame`  
  [in] A pointer to the address of the created frame object that represents the current frame in the stack.  
   

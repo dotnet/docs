@@ -11,8 +11,8 @@ ms.assetid: 232ad0d7-2264-4bed-aae3-10dfde116a9c
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides document viewing controls that support annotating document content.  
   
 ## In This Section  
- [Annotations Overview](../../../../docs/framework/wpf/advanced/annotations-overview.md)  
-  [Annotations Schema](../../../../docs/framework/wpf/advanced/annotations-schema.md)  
+ [Annotations Overview](annotations-overview.md)  
+  [Annotations Schema](annotations-schema.md)  
   
 ## Reference  
  <xref:System.Windows.Annotations.Annotation>  
@@ -20,5 +20,5 @@ ms.assetid: 232ad0d7-2264-4bed-aae3-10dfde116a9c
   <xref:System.Windows.Controls.DocumentViewer>  
   
 ## Related Sections  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
-  [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+ [Documents in WPF](documents-in-wpf.md)  
+  [Flow Document Overview](flow-document-overview.md)

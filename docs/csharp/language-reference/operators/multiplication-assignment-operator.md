@@ -1,7 +1,7 @@
 ---
 title: "*= Operator - C# Reference"
 ms.custom: seodec18
-ms.date: 07/20/2015
+ms.date: 02/26/2019
 f1_keywords: 
   - "*=_CSharpKeyword"
 helpviewer_keywords: 
@@ -11,11 +11,9 @@ ms.assetid: 2e472155-59db-4dbf-bb94-bcccfa1a794d
 ---
 # \*= Operator (C# Reference)
 
-The binary multiplication assignment operator.
+The multiplication assignment operator.
 
-## Remarks
-
-An expression using the `*=` assignment operator, such as
+An expression using the `*=` operator, such as
 
 ```csharp
 x *= y
@@ -27,13 +25,21 @@ is equivalent to
 x = x * y
 ```
 
-except that `x` is only evaluated once. The [\* operator](multiplication-operator.md) is predefined for numeric types to perform multiplication.
+except that `x` is only evaluated once.
 
-The `*=` operator cannot be overloaded directly, but user-defined types can overload the [\* operator](multiplication-operator.md) (see [operator](../keywords/operator.md)).
+For numeric types, the [\* operator](multiplication-operator.md) computes the product of its operands.
 
-## Example
+The following example demonstrates the usage of the `*=` operator:
 
-[!code-csharp[csRefOperators#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#13)]
+[!code-csharp-interactive[multiply and assign](~/samples/snippets/csharp/language-reference/operators/MultiplicationExamples.cs#MultiplyAndAssign)]
+
+## Operator overloadability
+
+If a user-defined type [overloads](../keywords/operator.md) the [multiplication operator](multiplication-operator.md) `*`, the multiplication assignment operator `*=` is implicitly overloaded. A user-defined type cannot explicitly overload the multiplication assignment operator.
+
+## C# language specification
+
+For more information, see the [Compound assignment](~/_csharplang/spec/expressions.md#compound-assignment) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 

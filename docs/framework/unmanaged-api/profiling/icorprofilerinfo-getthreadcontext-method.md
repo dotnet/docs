@@ -29,7 +29,7 @@ HRESULT GetThreadContext(
     [out] ContextID *pContextId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID of the thread.  
   

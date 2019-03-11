@@ -28,7 +28,7 @@ HRESULT SetManifestFile(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFile`  
   
  The name of the manifest file whose contents are put into the Win32 resources blob.  

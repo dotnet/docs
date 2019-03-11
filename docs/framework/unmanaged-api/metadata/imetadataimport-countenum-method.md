@@ -30,7 +30,7 @@ HRESULT CountEnum (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The handle for the enumerator.  
   

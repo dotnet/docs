@@ -30,7 +30,7 @@ HRESULT Join (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `milliseconds`  
  [in] The time interval, in milliseconds, to wait for the task to terminate. If this interval elapses before the task terminates, the calling task unblocks.  
   

@@ -16,7 +16,7 @@ HRESULT GetFlags(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwFlags`  
  [out] A pointer to a [CorDebugExceptionFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugexceptionflags-enumeration.md) value that indicates whether the exception can be intercepted.  
   

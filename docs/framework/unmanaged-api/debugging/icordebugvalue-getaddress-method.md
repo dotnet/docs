@@ -29,7 +29,7 @@ HRESULT GetAddress (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [out] Pointer to a `CORDB_ADDRESS` object that specifies the address of this value object.  
   

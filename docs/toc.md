@@ -27,11 +27,13 @@
 ### [Base Types](standard/base-types/)
 ## [.NET Class libraries](standard/class-libraries.md)
 ## [Analyzers](standard/analyzers/index.md)
-### [API Analyzer](standard/analyzers/api-analyzer.md) 
+### [API Analyzer](standard/analyzers/api-analyzer.md)
 ### [Portability Analyzer](standard/analyzers/portability-analyzer.md)
 ### [Framework Analyzer](standard/analyzers/framework-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions/)
-## [.NET Assembly File Format](standard/assembly-format.md)
+## [Assemblies in .NET](standard/assembly/index.md)
+### [.NET Assembly File Format](standard/assembly/file-format.md)
+### [How to: Use and Debug Assembly Unloadability in .NET Core](standard/assembly/unloadability-howto.md)
 ## [Garbage Collection](standard/garbage-collection/)
 ## [Generic types](standard/generics.md)
 ## [Delegates and lambdas](standard/delegates-lambdas.md)
@@ -92,15 +94,13 @@
 ### [What's new in .NET Core 2.1](core/whats-new/dotnet-core-2-1.md)
 ### [What's new in .NET Core 2.0](core/whats-new/dotnet-core-2-0.md)
 ## [Tutorials](core/tutorials/index.md)
-### [Building a complete .NET Core solution on Windows, using Visual Studio 2017](core/tutorials/using-on-windows-full-solution.md)
-### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
-### [Getting started with .NET Core on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs.md)
+### [Get started with .NET Core on macOS](core/tutorials/using-on-macos.md)
+### [Get started with .NET Core on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs.md)
 ### [Building a complete .NET Core solution on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs-full-solution.md)
-### [Getting started with .NET Core using the CLI tools](core/tutorials/using-with-xplat-cli.md)
+### [Get started with .NET Core using the CLI tools](core/tutorials/using-with-xplat-cli.md)
 ### [Organizing and testing projects with the .NET Core command line](core/tutorials/testing-with-cli.md)
 ### [Developing Libraries with Cross Platform Tools](core/tutorials/libraries.md)
 ### [Developing ASP.NET Core applications](core/tutorials/aspnet-core.md)
-### [How to Manage Package Dependency Versions for .NET Core 1.0](core/tutorials/managing-package-dependency-versions.md)
 ### [Hosting .NET Core from native code](core/tutorials/netcore-hosting.md)
 ### [Create a custom template for dotnet new](core/tutorials/create-custom-template.md)
 ## [Packages, Metapackages and Frameworks](core/packages.md)
@@ -197,6 +197,7 @@
 ### [Organizing projects for .NET Core](core/porting/project-structure.md)
 ### [Tools to help with porting to .NET Core](core/porting/tools.md)
 ### [Using the Windows Compatibility Pack](core/porting/windows-compat-pack.md)
+### [Port Windows Forms projects](core/porting/winforms.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
 ## [Build .NET Core from source](core/build/index.md)
 ### [.NET Core distribution packaging](core/build/distribution-packaging.md)
@@ -259,6 +260,7 @@
 ### [Explore C# 6](csharp/tutorials/exploration/csharp-6.yml)
 ### [Work with nullable reference types](csharp/tutorials/nullable-reference-types.md)
 ### [Generate and consume asynchronous streams](csharp/tutorials/generate-consume-asynchronous-stream.md)
+### [Upgrade an app to nullable reference types](csharp/tutorials/upgrade-to-nullable-references.md)
 ### [Console Application](csharp/tutorials/console-teleprompter.md)
 ### [REST Client](csharp/tutorials/console-webapiclient.md)
 ### [Inheritance in C# and .NET](csharp/tutorials/inheritance.md)
@@ -268,7 +270,10 @@
 ## [Tour of C#](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
+<!-- markdownlint-disable MD003 MD020 -->
 ## What's new in C#
+<!-- markdownlint-enable MD003 MD020 -->
+### [C# 8.0 - Preview 2](csharp/whats-new/csharp-8.md)
 ### [C# 7.3](csharp/whats-new/csharp-7-3.md)
 ### [C# 7.2](csharp/whats-new/csharp-7-2.md)
 ### [C# 7.1](csharp/whats-new/csharp-7-1.md)
@@ -501,15 +506,6 @@
 ### [Accessing Data](visual-basic/developing-apps/accessing-data.md)
 ### [Creating and Using Components](visual-basic/developing-apps/creating-and-using-components.md)
 
-### [Printing and Reporting](visual-basic/developing-apps/printing/index.md)
-#### [PrintForm Component](visual-basic/developing-apps/printing/printform-component.md)
-#### [How to: Print a Scrollable Form](visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md)
-#### [How to: Print Client and Non-Client Areas of a Form](visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md)
-#### [How to: Print the Client Area of a Form](visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md)
-#### [How to: Print a Form by Using the PrintForm Component](visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md)
-#### [Deploying Applications That Reference the PrintForm Component](visual-basic/developing-apps/printing/deploying-applications-that-reference-the-printform-component.md)
-#### [Adding Printable Reports to Visual Studio Applications](visual-basic/developing-apps/printing/adding-printable-reports-to-visual-studio-applications.md)
-
 ### [Windows Forms Application Basics](visual-basic/developing-apps/windows-forms/index.md)
 
 ### [Customizing Projects and Extending My with Visual Basic](visual-basic/developing-apps/customizing-extending-my/index.md)
@@ -519,9 +515,11 @@
 #### [Customizing Which Objects are Available in My](visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
 
 ## [Programming Concepts](visual-basic/programming-guide/concepts/index.md)
-### [Assemblies and the Global Assembly Cache](visual-basic/programming-guide/concepts/assemblies-gac/index.md)
 ### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/index.md)
 ### [Attributes](visual-basic/programming-guide/concepts/attributes/index.md)
+### [Caller Information](visual-basic/programming-guide/concepts/caller-information.md)
+### [Collections](visual-basic/programming-guide/concepts/collections.md)
+### [Covariance and Contravariance](visual-basic/programming-guide/concepts/covariance-contravariance/index.md)
 ### [Expression Trees](visual-basic/programming-guide/concepts/expression-trees/index.md)
 ### [Iterators](visual-basic/programming-guide/concepts/iterators.md)
 ### [Language-Integrated Query (LINQ)](visual-basic/programming-guide/concepts/linq/index.md)
@@ -1196,8 +1194,8 @@
 ### [Iris flowers (clustering)](machine-learning/tutorials/iris-clustering.md)
 ## [How-to guides](machine-learning/how-to-guides/index.md)
 ### Prepare data
-#### [Apply categorical feature engineering ](machine-learning/how-to-guides/train-model-categorical-ml-net.md)
-#### [Apply textual feature engineering ](machine-learning/how-to-guides/train-model-textual-ml-net.md)
+#### [Apply categorical feature engineering](machine-learning/how-to-guides/train-model-categorical-ml-net.md)
+#### [Apply textual feature engineering](machine-learning/how-to-guides/train-model-textual-ml-net.md)
 #### [Load data with many columns](machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md)
 #### [Load data from multiple files](machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md)
 #### [Load data from text file](machine-learning/how-to-guides/load-data-from-text-file-ml-net.MD)
@@ -1208,9 +1206,10 @@
 #### [Inspect intermediate pipeline data values](machine-learning/how-to-guides/inspect-intermediate-data-ml-net.md)
 #### [Train regression model](machine-learning/how-to-guides/train-regression-model-ml-net.md)
 #### [Determine model feature importance with PFI](machine-learning/how-to-guides/determine-global-feature-importance-in-model.md)
-### Use the trained model  
+### Use the trained model
 #### [One prediction at a time with PredictionEngine](machine-learning/how-to-guides/single-predict-model-ml-net.md)
 #### [Operationalize a trained model](machine-learning/how-to-guides/consuming-model-ml-net.md)
+#### [Serve Model in Azure Functions](machine-learning/how-to-guides/serve-model-serverless-azure-functions-ml-net.md)
 #### [Serve Model in Web API](machine-learning/how-to-guides/serve-model-web-api-ml-net.md)
 ### Infer.NET
 #### [Probabilistic programming with Infer.NET](machine-learning/how-to-guides/matchup-app-infer-net.md)

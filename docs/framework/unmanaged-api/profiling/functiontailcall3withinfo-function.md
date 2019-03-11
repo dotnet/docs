@@ -28,7 +28,7 @@ void __stdcall FunctionTailcall3WithInfo(
                [in] COR_PRF_ELT_INFO eltInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionIDOrClientID`  
  [in] The identifier of the currently executing function that is about to make a tail call.  
   

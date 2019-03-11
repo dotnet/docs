@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<transport> of <basicHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 4c5ba293-3d7e-47a6-b84e-e9022857b7e5

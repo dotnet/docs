@@ -34,7 +34,7 @@ HRESULT GetReturnValueLiveOffset(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ILoffset`  
  The IL offset. It must be a function call site or the function call will fail.  
   

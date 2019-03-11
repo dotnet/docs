@@ -29,7 +29,7 @@ BOOL IsValidToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token to check the reference validity for.  
   

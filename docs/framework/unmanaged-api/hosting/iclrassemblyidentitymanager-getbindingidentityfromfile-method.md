@@ -32,7 +32,7 @@ HRESULT GetBindingIdentityFromFile(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFilePath`  
  [in] The path to the file to be evaluated.  
   

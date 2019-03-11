@@ -1,7 +1,7 @@
 ---
 title: Basic concepts for model training in ML.NET
 description: This article explains the basic concepts covering *model training* scenarios in ML.NET. Not all concepts are relevant to the more simple scenario of *prediction with existing model*.
-ms.date: 02/13/2019
+ms.date: 03/05/2019
 ms.topic: overview
 ms.custom: mvc
 #Customer intent: As a developer, I want to learn the basic ML.NET concepts related to model training so that I can understand how to leverage machine learning in my applications.
@@ -9,6 +9,8 @@ ms.custom: mvc
 # Basic concepts for model training in ML.NET
 
 This article explains the basic concepts covering *model training* scenarios in ML.NET. Not all concepts are relevant to the more simple scenario of *prediction with an existing model*.
+
+This article and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 ## Model training concepts
 

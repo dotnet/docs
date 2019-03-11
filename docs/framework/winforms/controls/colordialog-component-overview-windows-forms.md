@@ -15,6 +15,6 @@ The Windows Forms <xref:System.Windows.Forms.ColorDialog> component is a pre-con
   
 ## See also
 - <xref:System.Windows.Forms.ColorDialog>
-- [ColorDialog Component](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md)
-- [Dialog-Box Controls and Components](../../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md)
-- [How to: Change the Appearance of the Windows Forms ColorDialog Component](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-colordialog-component.md)
+- [ColorDialog Component](colordialog-component-windows-forms.md)
+- [Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)
+- [How to: Change the Appearance of the Windows Forms ColorDialog Component](how-to-change-the-appearance-of-the-windows-forms-colordialog-component.md)

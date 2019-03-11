@@ -24,7 +24,7 @@ For an FDD, you deploy only your app and third-party dependencies. Your app will
 
 Deploying an FDD has a number of advantages:
 
-- You don't have to define the target operating systems that your .NET Core app will run on in advance. Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system. For more information on the PE file format, see [.NET Assembly File Format](../../standard/assembly-format.md).
+- You don't have to define the target operating systems that your .NET Core app will run on in advance. Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system. For more information on the PE file format, see [.NET Assembly File Format](../../standard/assembly/file-format.md).
 
 - The size of your deployment package is small. You only deploy your app and its dependencies, not .NET Core itself.
 

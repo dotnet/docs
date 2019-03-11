@@ -129,13 +129,28 @@ You have now completed the tutorial. You defined a service contract, implemented
 The output from GettingStartedHost should look like this:
 
 ```text
-The service is ready.Press <ENTER> to terminate service.Received Add(100,15.99)Return: 115.99Received Subtract(145,76.54)Return: 68.46Received Multiply(9,81.25)Return: 731.25Received Divide(22,7)Return: 3.14285714285714
+The service is ready.
+Press <ENTER> to terminate service.
+
+Received Add(100,15.99)
+Return: 115.99
+Received Subtract(145,76.54)
+Return: 68.46
+Received Multiply(9,81.25)
+Return: 731.25
+Received Divide(22,7)
+Return: 3.14285714285714
 ```
 
 The output from GettingStartedClient should look like this:
 
 ```text
-Add(100,15.99) = 115.99Subtract(145,76.54) = 68.46Multiply(9,81.25) = 731.25Divide(22,7) = 3.14285714285714Press <ENTER> to terminate client.
+Add(100,15.99) = 115.99
+Subtract(145,76.54) = 68.46
+Multiply(9,81.25) = 731.25
+Divide(22,7) = 3.14285714285714
+
+Press <ENTER> to terminate client.
 ```
 
 ## See also

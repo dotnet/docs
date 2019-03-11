@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "accessing embedded objects"
   - "embedded objects, UI Automation"
 ms.assetid: 93fdfbb9-0025-4b72-8ca0-0714adbb70d5
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # TextPattern and Embedded Objects Overview
 > [!NOTE]

@@ -20,8 +20,40 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains extension methods for converting between streams in the Windows Runtime and managed streams in the .NET for Windows Store apps.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+## Remarks
+
+These extension methods are available only when you develop Windows Store apps. The methods provide convenient ways of working with streams in Windows Store apps. You do not create an instance of the `WindowsRuntimeStreamExtensions` class; instead, you use these methods from instances of the <xref:Windows.Storage.Streams.IInputStream> and <xref:Windows.Storage.Streams.IOutputStream> interfaces and the <xref:System.IO.Stream> class.
+
+The `WindowsRuntimeStreamExtensions` class contains two methods for converting a managed <xref:System.IO.Stream> object to a stream in the Windows Runtime:
+
+  - <xref:System.IO.WindowsRuntimeStreamExtensions.AsInputStream%2A>
+  - <xref:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream%2A>
+
+The `WindowsRuntimeStreamExtensions` class contains three overloaded methods for converting a stream in the Windows Runtime to a <xref:System.IO.Stream> object:
+
+  - <xref:System.IO.WindowsRuntimeStreamExtensions.AsStream%2A>
+  - <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A>
+  - <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite%2A>
+
+Starting with the .NET Framework 4.5.1, the `WindowsRuntimeStreamExtensions` class contains a method for converting a stream to a Windows Runtime <xref:Windows.Storage.Streams.RandomAccessStream>:
+
+  - <xref:System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream)>
+
+## Examples
+
+The following example shows how to use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite%2A> and <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A>
+
+[!code-csharp[windowsruntimestreamextensions#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/cs/blankpage.xaml.cs#2)]
+[!code-vb[windowsruntimestreamextensions#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/vb/blankpage.xaml.vb#2)]
+
+Here's the XAML code that is associated with the previous example. 
+
+[!code-xaml[windowsruntimestreamextensions#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/cs/blankpage.xaml#1)]
+]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AsInputStream">
@@ -48,10 +80,32 @@
         <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream to convert.</param>
+        <summary>Converts a managed stream in the .NET for Windows Store apps to an input stream in the Windows Runtime.</summary>
+        <returns>A Windows Runtime <see cref="T:Windows.Storage.Streams.IInputStream" /> object that represents the converted stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+          
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <System.IO.Stream>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+## Examples
+
+The following example shows how to use the `AsInputStream` and <xref:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream%2A> methods to convert a managed stream to and from a stream in the Windows Runtime.
+
+[!code-csharp[windowsruntimestreamextensions#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/cs/blankpage2.xaml.cs#4)]
+[!code-vb[windowsruntimestreamextensions#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/vb/blankpage2.xaml.vb#4)]
+
+Here's the XAML code that is associated with the previous example.
+
+[!code-xaml[windowsruntimestreamextensions#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/cs/blankpage2.xaml#3)]
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsOutputStream">
@@ -78,10 +132,32 @@
         <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream to convert.</param>
+        <summary>Converts a managed stream in the .NET for Windows Store apps to an output stream in the Windows Runtime.</summary>
+        <returns>A Windows Runtime <see cref="T:Windows.Storage.Streams.IOutputStream" /> object that represents the converted stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:System.IO.Stream>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+## Examples
+
+The following example shows how to use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsInputStream%2A> and `AsOutputStream`> methods to convert a managed stream to and from a stream in the Windows Runtime.
+
+[!code-csharp[windowsruntimestreamextensions#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/cs/blankpage2.xaml.cs#4)]
+[!code-vb[windowsruntimestreamextensions#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/vb/blankpage2.xaml.vb#4)]
+
+Here's the XAML code that is associated with the previous example.
+
+[!code-xaml[windowsruntimestreamextensions#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/cs/blankpage2.xaml#3)]
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsRandomAccessStream">
@@ -108,10 +184,20 @@
         <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream to convert.</param>
+        <summary>Converts the specified stream to a random access stream.</summary>
+        <returns>A Windows Runtime <see cref="T:Windows.Storage.Streams.IRandomAccessStream" />, which represents the converted stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:System.IO.Stream>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsStream">
@@ -139,10 +225,22 @@
         <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IRandomAccessStream" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="windowsRuntimeStream">The Windows Runtime <see cref="T:Windows.Storage.Streams.IRandomAccessStream" /> object to convert.</param>
+        <summary>Converts a random access stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps.</summary>
+        <returns>The converted stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:System.IO.Stream>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+A default buffer size of 16,384 bytes is used when converting the stream. To specify a different buffer size, use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStream(Windows.Storage.Streams.IRandomAccessStream,System.Int32)> overload.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStream">
@@ -171,11 +269,26 @@
         <Parameter Name="bufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">To be added.</param>
-        <param name="bufferSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="windowsRuntimeStream">The Windows Runtime <see cref="T:Windows.Storage.Streams.IRandomAccessStream" /> object to convert.</param>
+        <param name="bufferSize">The size, in bytes, of the buffer. This value cannot be negative, but it can be 0 (zero) to disable buffering.</param>
+        <summary>Converts a random access stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps using the specified buffer size.</summary>
+        <returns>The converted stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:System.IO.Stream>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+You use this method to specify a buffer size when converting the stream. To use the default buffer size of 16,384 bytes, use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStream(Windows.Storage.Streams.IRandomAccessStream)> overload.
+
+In most situations, buffering improves the performance of stream operations. You can disable buffering by setting `bufferSize` to zero, but you should do this only when you are sure that disabling buffering is appropriate for your situation.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="bufferSize" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStreamForRead">
@@ -203,10 +316,33 @@
         <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IInputStream" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="windowsRuntimeStream">The Windows Runtime <see cref="T:Windows.Storage.Streams.IInputStream" /> object to convert.</param>
+        <summary>Converts an input stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps.</summary>
+        <returns>The converted stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:System.IO.Stream>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+A default buffer size of 16,384 bytes is used when converting the stream. To specify a different buffer size, use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead(Windows.Storage.Streams.IInputStream,System.Int32)> overload.
+
+## Examples
+
+The following example shows how to use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite%2A> and <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A> methods to convert a managed stream to and from a stream in the Windows Runtime.
+
+[!code-csharp[windowsruntimestreamextensions#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/cs/blankpage.xaml.cs#2)]
+[!code-vb[windowsruntimestreamextensions#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/vb/blankpage.xaml.vb#2)]
+
+Here's the XAML code that is associated with the previous example.
+
+[!code-xaml[windowsruntimestreamextensions#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/cs/blankpage.xaml#1)]
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStreamForRead">
@@ -235,11 +371,25 @@
         <Parameter Name="bufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">To be added.</param>
-        <param name="bufferSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="windowsRuntimeStream">The Windows Runtime <see xref="T:Windows.Storage.Streams.IInputStream"/> object to convert.</param>
+        <param name="bufferSize">The size, in bytes, of the buffer. This value cannot be negative, but it can be 0 (zero) to disable buffering.</param>
+        <summary>Converts an input stream in the Windows Runtime to a managed stream in the .NET for Windows 8.x Store apps using the specified buffer size.</summary>
+        <returns>The converted stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:System.IO.Stream>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+You use this method to specify a buffer size when converting the stream. To use the default buffer size of 16,384 bytes, use the  <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead(Windows.Storage.Streams.IInputStream)> overload.
+
+In most situations, buffering improves the performance of stream operations. You can disable buffering by setting `bufferSize` to zero, but you should do this only when you are sure that disabling buffering is appropriate for your situation.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="bufferSize" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStreamForWrite">
@@ -267,10 +417,31 @@
         <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IOutputStream" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="windowsRuntimeStream">The Windows Runtime <see xref="T:Windows.Storage.Streams.IOutputStream"/> object to convert.</param>
+        <summary>Converts an output stream in the Windows Runtime to a managed stream in the .NET for Windows 8.x Store apps.</summary>
+        <returns>The converted stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:System.IO.Stream>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+A default buffer size of 16,384 bytes is used when converting the stream. To specify a different buffer size, use the <xref:> overload.
+
+## Examples
+The following example shows how to use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite%2A> and <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A> methods to convert a managed stream to and from a stream in the Windows Runtime.
+
+[!code-csharp[windowsruntimestreamextensions#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/cs/blankpage.xaml.cs#2)]
+[!code-vb[windowsruntimestreamextensions#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/vb/blankpage.xaml.vb#2)]
+
+Here's the XAML code that is associated with the previous example.
+
+[!code-xaml[windowsruntimestreamextensions#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensions/cs/blankpage.xaml#1)]
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStreamForWrite">
@@ -299,11 +470,26 @@
         <Parameter Name="bufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">To be added.</param>
-        <param name="bufferSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="windowsRuntimeStream">The Windows Runtime <see cref="T:Windows.Storage.Streams.IOutputStream" /> object to convert.</param>
+        <param name="bufferSize">The size, in bytes, of the buffer. This value cannot be negative, but it can be 0 (zero) to disable buffering.</param>
+        <summary>Converts an output stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps using the specified buffer size.</summary>
+        <returns>The converted stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:System.IO.Stream>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+You use this method to specify a buffer size when converting the stream. To use the default buffer size of 16,384 bytes, use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite(Windows.Storage.Streams.IOutputStream)> overload.
+
+In most situations, buffering improves the performance of stream operations. You can disable buffering by setting `bufferSize` to zero, but you should do this only when you are sure that disabling buffering is appropriate for your situation.
+
+]]></format>
+        </remarks>
+         <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="bufferSize" /> is negative.</exception>
       </Docs>
     </Member>
   </Members>

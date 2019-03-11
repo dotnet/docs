@@ -1003,7 +1003,7 @@
       <Parameters />
       <Docs>
         <summary>Creates control collection.</summary>
-        <returns>To be added.</returns>
+        <returns>A <see cref="T:System.Web.UI.ControlCollection"/> object to contain the current server control's child server controls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1053,7 +1053,7 @@
       <Parameters />
       <Docs>
         <summary>Creates control style.</summary>
-        <returns>To be added.</returns>
+        <returns>A <see cref="T:System.Web.UI.WebControls.Style"/> that is used to implement all style-related properties of the control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1857,7 +1857,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the design mode state.</summary>
-        <returns>To be added.</returns>
+        <returns>An <see cref="T:System.Collections.IDictionary"/> containing the design-time data for the control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

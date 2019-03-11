@@ -606,7 +606,7 @@
         <Parameter Name="_Right" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">The iterator that the operator is to act on.</param>
         <param name="_Right">The number of elements to increment.</param>
         <summary>Increments the reverse iterator by the given number of elements. The integer parameter is specified on the right side of the addition operator.</summary>
         <returns>An iterator.</returns>

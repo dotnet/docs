@@ -970,7 +970,7 @@
       <Docs>
         <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values.</param>
         <summary>Determines whether the specified key is an input key or a special key that requires preprocessing.</summary>
-        <returns>To be added.</returns>
+        <returns><see langword="true"/> if the specified key is an input key; otherwise, <see langword="false"/>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -315,7 +315,7 @@ private void keyTest()
       <Parameters />
       <Docs>
         <summary>Returns an instance of <see cref="T:System.Speech.Recognition.GrammarBuilder" /> constructed from the current <see cref="T:System.Speech.Recognition.SemanticResultKey" /> instance.</summary>
-        <returns>To be added.</returns>
+        <returns>An instance of <see cref="T:System.Speech.Recognition.GrammarBuilder" /> constructed from the current <see langword="SemanticResultKey"/> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

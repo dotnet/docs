@@ -23,8 +23,20 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides extension methods for converting between tasks and Windows Runtime asynchronous actions and operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+The <xref:System.WindowsRuntimeSystemExtensions.AsTask%2A> extension method overloads enable you to use a .NET <xref:System.Threading.Tasks.Task> object to manage an asynchronous operation from the Windows Runtime.
+
+The <xref:System.WindowsRuntimeSystemExtensions.AsAsyncAction%2A> method and the <xref:System.WindowsRuntimeSystemExtensions.AsAsyncOperation%2A> method enable you to pass started tasks to methods that take Windows Runtime asynchronous actions and operations. See also the methods of the <xref:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo> class.
+
+The <xref:System.WindowsRuntimeSystemExtensions.GetAwaiter%2A> methods are used by compilers to implement the <see langword="await" /> operation (<see langword="Await" /> in Visual Basic).
+
+]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AsAsyncAction">
@@ -47,10 +59,25 @@
         <Parameter Name="source" Type="System.Threading.Tasks.Task" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">The started task.</param>
+        <summary>Returns a Windows Runtime asynchronous action that represents a started task.</summary>
+        <returns>A <see cref="T:Windows.Foundation.IAsyncAction" /> instance that represents the started task.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:System.Threading.Tasks.Task>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method when you want to pass a task to a Windows Runtime method that takes an asynchronous action.
+
+The <xref:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo> class provides static methods (`Shared` methods in Visual Basic) that create and start Windows Runtime asynchronous actions that represent tasks that can respond to cancellation requests and report progress. 
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException"><paramref name="source" /> is an unstarted task.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsAsyncOperation&lt;TResult&gt;">
@@ -76,11 +103,26 @@
         <Parameter Name="source" Type="System.Threading.Tasks.Task&lt;TResult&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type that returns the result.</typeparam>
+        <param name="source">The started task.</param>
+        <summary>Returns a Windows Runtime asynchronous operation that represents a started task that returns a result.</summary>
+        <returns>A <see cref="T:Windows.Foundation.IAsyncOperation`1" /> instance that represents the started task.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:System.Threading.Tasks.Task>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method when you want to pass a task that returns a result to a Windows Runtime method that takes an asynchronous operation.
+
+The <xref:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo> class provides static methods (`Shared` methods in Visual Basic) that create and start Windows Runtime asynchronous operations that represent tasks that return results and can respond to cancellation requests and report progress.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException"><paramref name="source" /> is an unstarted task.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask">
@@ -103,10 +145,22 @@
         <Parameter Name="source" Type="Windows.Foundation.IAsyncAction" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">The asynchronous action.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous action.</summary>
+        <returns>A task that represents the asynchronous action.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncAction>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task> objects simplify the coordination of asynchronous operations.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask">
@@ -129,11 +183,22 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">The asynchronous action.</param>
+        <param name="cancellationToken">A token that can be used to request cancellation of the asynchronous action.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous action that can be cancelled.</summary>
+        <returns>A task that represents the asynchronous action.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncAction>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task> objects simplify the coordination of asynchronous operations.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TProgress&gt;">
@@ -159,11 +224,25 @@
         <Parameter Name="source" Type="Windows.Foundation.IAsyncActionWithProgress&lt;TProgress&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TProgress">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TProgress">The type of object that provides data that indicates progress.</typeparam>
+        <param name="source">The asynchronous action.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous action.</summary>
+        <returns>A task that represents the asynchronous action.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncActionWithProgress%601>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task> objects simplify the coordination of asynchronous operations.
+
+Calling this method overload is equivalent to calling the <xref:System.WindowsRuntimeSystemExtensions.AsTask%60%602(Windows.Foundation.IAsyncOperationWithProgress{%60%600,%60%601},System.IProgress{%60%601})> extension method overload and specifying <see langword="null" /> for the <paramref name="progress" /> parameter. This is useful when you don't want to get progress reports from an action that reports progress.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TProgress&gt;">
@@ -190,12 +269,23 @@
         <Parameter Name="progress" Type="System.IProgress&lt;TProgress&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TProgress">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="progress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TProgress">The type of object that provides data that indicates progress.</typeparam>
+        <param name="source">The asynchronous action.</param>
+        <param name="progress">An object that receives progress updates.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous action that reports progress.</summary>
+        <returns>A task that represents the asynchronous action.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncActionWithProgress%601>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task> objects simplify the coordination of asynchronous operations.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TProgress&gt;">
@@ -221,12 +311,25 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TProgress">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TProgress">The type of object that provides data that indicates progress.</typeparam>
+        <param name="source">The asynchronous action.</param>
+        <param name="cancellationToken">A token that can be used to request cancellation of the asynchronous action.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous action that can be cancelled.</summary>
+        <returns>A task that represents the asynchronous action.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncActionWithProgress%601>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task> objects simplify the coordination of asynchronous operations.
+
+Calling this method overload is equivalent to calling the <xref:System.WindowsRuntimeSystemExtensions.AsTask%60%602(Windows.Foundation.IAsyncOperationWithProgress{%60%600,%60%601},System.Threading.CancellationToken,System.IProgress{%60%601})> extension method overload and specifying <see langword="null" /> for the <paramref name="progress" /> parameter. This is useful when you don't want to get progress reports from an action that reports progress.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TProgress&gt;">
@@ -253,13 +356,24 @@
         <Parameter Name="progress" Type="System.IProgress&lt;TProgress&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TProgress">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="progress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TProgress">The type of object that provides data that indicates progress.</typeparam>
+        <param name="source">The asynchronous action.</param>
+        <param name="cancellationToken">A token that can be used to request cancellation of the asynchronous action.</param>
+        <param name="progress">An object that receives progress updates.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous action that reports progress and can be cancelled.</summary>
+        <returns>A task that represents the asynchronous action.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncActionWithProgress%601>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task> objects simplify the coordination of asynchronous operations.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult&gt;">
@@ -285,11 +399,22 @@
         <Parameter Name="source" Type="Windows.Foundation.IAsyncOperation&lt;TResult&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of object that returns the result of the asynchronous operation.</typeparam>
+        <param name="source">The asynchronous operation.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous operation returns a result.</summary>
+        <returns>A task that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncActionWithProgress%601>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task%601> objects simplify the coordination of asynchronous operations.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult&gt;">
@@ -315,12 +440,23 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of object that returns the result of the asynchronous operation.</typeparam>
+        <param name="source">The asynchronous operation.</param>
+        <param name="cancellationToken">A token that can be used to request cancellation of the asynchronous operation.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous operation that returns a result and can be cancelled.</summary>
+        <returns>A task that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncActionWithProgress%601>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task%601> objects simplify the coordination of asynchronous operations.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult,TProgress&gt;">
@@ -347,12 +483,26 @@
         <Parameter Name="source" Type="Windows.Foundation.IAsyncOperationWithProgress&lt;TResult,TProgress&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <typeparam name="TProgress">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of object that returns the result of the asynchronous operation.</typeparam>
+        <typeparam name="TProgress">The type of object that provides data that indicates progress.</typeparam>
+        <param name="source">The asynchronous operation.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous operation returns a result.</summary>
+        <returns>A task that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncOperationWithProgress%602>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task%601> objects simplify the coordination of asynchronous operations. 
+
+Calling this method overload is equivalent to calling the <xref:System.WindowsRuntimeSystemExtensions.AsTask%60%602(Windows.Foundation.IAsyncOperationWithProgress{%60%600,%60%601},System.IProgress{%60%601})> extension method overload and specifying <see langword="null" /> for the <paramref name="progress" /> parameter. This is useful when you don't want to get progress reports from an action that reports progress.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult,TProgress&gt;">
@@ -380,13 +530,25 @@
         <Parameter Name="progress" Type="System.IProgress&lt;TProgress&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <typeparam name="TProgress">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="progress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of object that returns the result of the asynchronous operation.</typeparam>
+        <typeparam name="TProgress">The type of object that provides data that indicates progress.</typeparam>
+        <param name="source">The asynchronous operation.</param>
+        <param name="progress">An object that receives progress updates.</param>
+        <summary>Returns a task that represents Windows Runtime asynchronous operation that returns a result and reports progress.</summary>
+        <returns>A task that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncOperationWithProgress%602>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task%601> objects simplify the coordination of asynchronous operations.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult,TProgress&gt;">
@@ -413,13 +575,27 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <typeparam name="TProgress">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of object that returns the result of the asynchronous operation.</typeparam>
+        <typeparam name="TProgress">The type of object that provides data that indicates progress.</typeparam>
+        <param name="source">The asynchronous operation.</param>
+        <param name="cancellationToken">A token that can be used to request cancellation of the asynchronous operation.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous operation that returns a result and can be cancelled.</summary>
+        <returns>A task that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncOperationWithProgress%602>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task%601> objects simplify the coordination of asynchronous operations.
+
+Calling this method overload is equivalent to calling the <xref:System.WindowsRuntimeSystemExtensions.AsTask%60%602(Windows.Foundation.IAsyncOperationWithProgress{%60%600,%60%601},System.Threading.CancellationToken,System.IProgress{%60%601})> extension method overload and specifying <see langword="null" /> for the <paramref name="progress" /> parameter. This is useful when you don't want to get progress reports from an action that reports progress.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult,TProgress&gt;">
@@ -447,14 +623,25 @@
         <Parameter Name="progress" Type="System.IProgress&lt;TProgress&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <typeparam name="TProgress">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="progress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of object that returns the result of the asynchronous operation.</typeparam>
+        <typeparam name="TProgress">The type of object that provides data that indicates progress.</typeparam>
+        <param name="source">The asynchronous operation.</param>
+        <param name="cancellationToken">A token that can be used to request cancellation of the asynchronous operation.</param>
+        <param name="progress">An object that receives progress updates.</param>
+        <summary>Returns a task that represents a Windows Runtime asynchronous operation that returns a result, reports progress, and can be cancelled.</summary>
+        <returns>A task that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncOperationWithProgress%602>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Windows Runtime asynchronous operation. <xref:System.Threading.Tasks.Task%601> objects simplify the coordination of asynchronous operations.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter">
@@ -482,10 +669,19 @@
         <Parameter Name="source" Type="Windows.Foundation.IAsyncAction" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">The asynchronous action to await.</param>
+        <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+        <returns>An object that awaits the specified asynchronous action.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type IAsyncAction. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter&lt;TProgress&gt;">
@@ -516,11 +712,20 @@
         <Parameter Name="source" Type="Windows.Foundation.IAsyncActionWithProgress&lt;TProgress&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TProgress">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TProgress">The type of object that provides data that indicates progress.</typeparam>
+        <param name="source">The asynchronous action to await.</param>
+        <summary>Returns an object that awaits an asynchronous action that reports progress.</summary>
+        <returns>An object that awaits the specified asynchronous action.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncActionWithProgress%601>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter&lt;TResult&gt;">
@@ -551,11 +756,20 @@
         <Parameter Name="source" Type="Windows.Foundation.IAsyncOperation&lt;TResult&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of object that returns the result of the asynchronous operation.</typeparam>
+        <param name="source">The asynchronous operation to await.</param>
+        <summary>Returns an object that awaits an asynchronous operation that returns a result.</summary>
+        <returns>An object that awaits the specified asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type IAsyncOperation<TResult>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter&lt;TResult,TProgress&gt;">
@@ -587,12 +801,21 @@
         <Parameter Name="source" Type="Windows.Foundation.IAsyncOperationWithProgress&lt;TResult,TProgress&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <typeparam name="TProgress">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of object that returns the result of the asynchronous operation.</typeparam>
+        <typeparam name="TProgress">The type of object that provides data that indicates progress.</typeparam>
+        <param name="source">The asynchronous operation to await.</param>
+        <summary>Returns an object that awaits an asynchronous operation that reports progress and returns a result.</summary>
+        <returns>An object that awaits the specified asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+> [!NOTE]
+> In Visual Basic and C#, you can call this method as an instance method on any object of type <xref:Windows.Foundation.IAsyncOperationWithProgress%602>. When you use instance method syntax to call this method, omit the first parameter. For more information, see [Extension Methods (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/procedures/extension-methods.md) or [Extension Methods (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/extension-methods.md).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

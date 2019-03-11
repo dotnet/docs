@@ -13,9 +13,10 @@ This how-to shows how to serve a pre-built ML.NET machine learning model to the 
 ## Prerequisites
 
 - [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
-- Pre-trained model. 
-    - Build Your Own [sentiment analysis machine learning model]()
-    - Download this [pre-trained sentiment analysis machine learning model]()
+- Powershell.
+- Pre-trained model.
+    - Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
+    - Download this [pre-trained sentiment analysis machine learning model](../../../samples/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
 ## Create ASP.NET Core Web API Project
 
@@ -236,4 +237,14 @@ Once everything is set up, it's time to test the application.
 Invoke-RestMethod "https://localhost:<PORT>/api/predict" -Method Post -Body (@{Text="This is a very rude movie"} | ConvertTo-Json) -ContentType "application/json"
 ```
 
+If successful, the output should look similar to the text below:
+
+```powershell
+Toxic
+```
+
 Congratulations! You have successfully served your model to make predictions over the internet using an ASP.NET Core API.
+
+## Next Steps
+
+- [Deploy to Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure)

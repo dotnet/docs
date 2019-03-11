@@ -61,6 +61,7 @@ using Newtonsoft.Json;
 using Microsoft.ML;
 using Microsoft.ML.Core.Data;
 using Microsoft.ML.Data;
+using MLNETServerless.DataModels;
 ```
 
 ### Create Data Models

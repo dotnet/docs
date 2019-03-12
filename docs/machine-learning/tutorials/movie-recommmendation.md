@@ -222,7 +222,7 @@ The `Matrix Factorization` trainer has several [Options](xref:Microsoft.ML.Train
 
 For more information on hyperparameters, see the [Improve your model](#improve-your-model) step below.
 
-Append the algorithm to the data transformations by adding the following as the next line of code in `BuildAndTrainModel()`:
+Set the algorithm options and append the algorithm to the data transformations by adding the following as the next line of code in `BuildAndTrainModel()`:
 
 [!code-csharp[AddAlgorithm](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#AddAlgorithm "Add the training algorithm with options")]
 

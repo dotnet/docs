@@ -78,7 +78,7 @@ The following table might help you decide how to set these options.
 > [!WARNING]
 > If the localhost SSL certificate is not trusted, and you check the box to suppress prompting, then HTTPS web requests might fail at runtime in your app or service. In that case, uncheck the **Do not prompt** checkbox, run your project, and indicate trust at the prompt.
 
-> [!INFORMATION]
+> [!TIP]
 > For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 >
 >Debugging apps in a local Docker container: <https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh>

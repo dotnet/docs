@@ -119,7 +119,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="continuation" Type="System.Action" />
+        <Parameter Name="continuation" Type="System.Action" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="continuation">To be added.</param>
@@ -152,7 +152,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="continuation" Type="System.Action" />
+        <Parameter Name="continuation" Type="System.Action" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="continuation">To be added.</param>

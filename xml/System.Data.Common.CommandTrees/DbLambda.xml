@@ -69,8 +69,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="body" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="variables" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt;" />
+        <Parameter Name="body" Type="System.Data.Common.CommandTrees.DbExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="variables" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="body">An expression that defines the logic of the Lambda function</param>
@@ -98,8 +98,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="body" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="variables" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression[]">
+        <Parameter Name="body" Type="System.Data.Common.CommandTrees.DbExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="variables" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression[]" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -133,8 +133,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the argument to the Lambda function</param>
@@ -161,9 +161,9 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -191,10 +191,10 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -223,11 +223,11 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -257,12 +257,12 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -293,13 +293,13 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -331,14 +331,14 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="7" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -371,15 +371,15 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="7" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="8" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -413,16 +413,16 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="7" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="8" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="9" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -457,17 +457,17 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="7" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="8" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="9" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="10" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -503,18 +503,18 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="7" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="8" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="9" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="10" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="11" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -551,19 +551,19 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="7" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="8" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="9" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="10" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="11" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="12" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -601,20 +601,20 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="7" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="8" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="9" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="10" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="11" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="12" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="13" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -653,21 +653,21 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument14Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="7" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="8" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="9" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="10" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="11" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="12" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument14Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="13" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="14" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -707,22 +707,22 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument14Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument15Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="7" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="8" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="9" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="10" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="11" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="12" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument14Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="13" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument15Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="14" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="15" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>
@@ -763,23 +763,23 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument14Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument15Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="argument16Type" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="7" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="8" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="9" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="10" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="11" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="12" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument14Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="13" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument15Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="14" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument16Type" Type="System.Data.Metadata.Edm.TypeUsage" Index="15" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="16" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument1Type">A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> that defines the EDM type of the first argument to the Lambda function</param>

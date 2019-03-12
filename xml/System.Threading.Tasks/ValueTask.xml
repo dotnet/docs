@@ -48,7 +48,7 @@
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="task" Type="System.Threading.Tasks.Task" />
+        <Parameter Name="task" Type="System.Threading.Tasks.Task" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="task">To be added.</param>
@@ -72,8 +72,8 @@
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="source" Type="System.Threading.Tasks.Sources.IValueTaskSource" />
-        <Parameter Name="token" Type="System.Int16" />
+        <Parameter Name="source" Type="System.Threading.Tasks.Sources.IValueTaskSource" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="token" Type="System.Int16" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -126,7 +126,7 @@
         <ReturnType>System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
+        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="continueOnCapturedContext">To be added.</param>
@@ -154,7 +154,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
@@ -185,7 +185,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Threading.Tasks.ValueTask" />
+        <Parameter Name="other" Type="System.Threading.Tasks.ValueTask" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
@@ -359,8 +359,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask" />
-        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" />
+        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -389,8 +389,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask" />
-        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" />
+        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>

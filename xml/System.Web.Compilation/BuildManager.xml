@@ -47,7 +47,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dependency" Type="System.String" />
+        <Parameter Name="dependency" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dependency">A string that represents a dependency.</param>
@@ -79,7 +79,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="assembly">The assembly to add.</param>
@@ -177,7 +177,7 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileName">The name of the file to create.</param>
@@ -285,9 +285,9 @@
         <ReturnType>System.Web.Compilation.BuildDependencySet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Web.HttpContext" />
-        <Parameter Name="virtualPath" Type="System.String" />
-        <Parameter Name="ensureIsUpToDate" Type="System.Boolean" />
+        <Parameter Name="context" Type="System.Web.HttpContext" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="virtualPath" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="ensureIsUpToDate" Type="System.Boolean" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">The context of the request.</param>
@@ -439,8 +439,8 @@
         <ReturnType>System.Web.Util.IWebObjectFactory</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="virtualPath" Type="System.String" />
-        <Parameter Name="throwIfNotFound" Type="System.Boolean" />
+        <Parameter Name="virtualPath" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="throwIfNotFound" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path.</param>
@@ -710,7 +710,7 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileName">The name of the file to read.</param>

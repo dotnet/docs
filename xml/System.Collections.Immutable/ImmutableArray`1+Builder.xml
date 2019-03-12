@@ -197,7 +197,7 @@
       <Parameters>
         <Parameter Name="items" Type="T[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1138,7 +1138,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="comparison" Type="System.Comparison&lt;T&gt;" />
+        <Parameter Name="comparison" Type="System.Comparison&lt;T&gt;" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="comparison">The <see cref="T:System.Comparison`1" /> to use when comparing elements.</param>

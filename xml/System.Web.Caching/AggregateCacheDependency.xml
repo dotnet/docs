@@ -86,7 +86,7 @@
       <Parameters>
         <Parameter Name="dependencies" Type="System.Web.Caching.CacheDependency[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-2.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

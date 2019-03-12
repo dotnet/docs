@@ -338,7 +338,7 @@
         <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
@@ -499,7 +499,7 @@
         <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
@@ -554,7 +554,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The dependency object on which to get the property value.</param>
@@ -585,7 +585,7 @@ The <xref:System.Windows.Automation.AutomationProperties.PositionInSet> property
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The dependency object on which to get the property value.</param>
@@ -1332,8 +1332,8 @@ The `PositionInSet` attached property works in coordination with the <xref:Syste
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="value" Type="System.Windows.Automation.IsOffscreenBehavior" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value" Type="System.Windows.Automation.IsOffscreenBehavior" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
@@ -1499,8 +1499,8 @@ The `PositionInSet` attached property works in coordination with the <xref:Syste
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="value" Type="System.Windows.Automation.AutomationLiveSetting" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value" Type="System.Windows.Automation.AutomationLiveSetting" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
@@ -1554,8 +1554,8 @@ The `PositionInSet` attached property works in coordination with the <xref:Syste
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
+        <Parameter Name="value" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The dependency object on which to set the property.</param>
@@ -1586,8 +1586,8 @@ The <xref:System.Windows.Automation.AutomationProperties.PositionInSet> property
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
+        <Parameter Name="value" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The dependency object on which to set the property.</param>

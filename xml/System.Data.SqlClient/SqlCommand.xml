@@ -703,10 +703,10 @@ class Program {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="cmdText" Type="System.String" />
-        <Parameter Name="connection" Type="System.Data.SqlClient.SqlConnection" />
-        <Parameter Name="transaction" Type="System.Data.SqlClient.SqlTransaction" />
-        <Parameter Name="columnEncryptionSetting" Type="System.Data.SqlClient.SqlCommandColumnEncryptionSetting" />
+        <Parameter Name="cmdText" Type="System.String" Index="0" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="connection" Type="System.Data.SqlClient.SqlConnection" Index="1" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="transaction" Type="System.Data.SqlClient.SqlTransaction" Index="2" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="columnEncryptionSetting" Type="System.Data.SqlClient.SqlCommandColumnEncryptionSetting" Index="3" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="cmdText">The text of the query.</param>
@@ -969,7 +969,7 @@ class Program {
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
+        <Parameter Name="behavior" Type="System.Data.CommandBehavior" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values, indicating options for statement execution and data retrieval.</param>
@@ -1041,8 +1041,8 @@ class Program {
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callback" Type="System.AsyncCallback" />
-        <Parameter Name="stateObject" Type="System.Object" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="stateObject" Type="System.Object" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that is invoked when the command's execution has completed. Pass <see langword="null" /> (<see langword="Nothing" /> in Microsoft Visual Basic) to indicate that no callback is required.</param>
@@ -1119,9 +1119,9 @@ class Program {
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callback" Type="System.AsyncCallback" />
-        <Parameter Name="stateObject" Type="System.Object" />
-        <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="stateObject" Type="System.Object" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="behavior" Type="System.Data.CommandBehavior" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that is invoked when the command's execution has completed. Pass <see langword="null" /> (<see langword="Nothing" /> in Microsoft Visual Basic) to indicate that no callback is required.</param>
@@ -2181,7 +2181,7 @@ public class A {
         <ReturnType>System.Data.SqlClient.SqlDataReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> returned by the call to <see cref="M:System.Data.SqlClient.SqlCommand.BeginExecuteReader" />.</param>
@@ -3632,7 +3632,7 @@ For more information about asynchronous programming in the .NET Framework Data P
         <ReturnType>System.Data.IDataReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
+        <Parameter Name="behavior" Type="System.Data.CommandBehavior" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values.</param>

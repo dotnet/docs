@@ -300,7 +300,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="parameters" Type="System.Object[]">
+        <Parameter Name="parameters" Type="System.Object[]" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -345,7 +345,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the channel listener accepts.</typeparam>
@@ -384,9 +384,9 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="listenUriBaseAddress" Type="System.Uri" />
-        <Parameter Name="listenUriRelativeAddress" Type="System.String" />
-        <Parameter Name="parameters" Type="System.Object[]">
+        <Parameter Name="listenUriBaseAddress" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="listenUriRelativeAddress" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="parameters" Type="System.Object[]" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -438,9 +438,9 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="listenUriBaseAddress" Type="System.Uri" />
-        <Parameter Name="listenUriRelativeAddress" Type="System.String" />
-        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+        <Parameter Name="listenUriBaseAddress" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="listenUriRelativeAddress" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the channel listener accepts.</typeparam>
@@ -580,10 +580,10 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="listenUriBaseAddress" Type="System.Uri" />
-        <Parameter Name="listenUriRelativeAddress" Type="System.String" />
-        <Parameter Name="listenUriMode" Type="System.ServiceModel.Description.ListenUriMode" />
-        <Parameter Name="parameters" Type="System.Object[]">
+        <Parameter Name="listenUriBaseAddress" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="listenUriRelativeAddress" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="listenUriMode" Type="System.ServiceModel.Description.ListenUriMode" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="parameters" Type="System.Object[]" Index="3" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -630,10 +630,10 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="listenUriBaseAddress" Type="System.Uri" />
-        <Parameter Name="listenUriRelativeAddress" Type="System.String" />
-        <Parameter Name="listenUriMode" Type="System.ServiceModel.Description.ListenUriMode" />
-        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+        <Parameter Name="listenUriBaseAddress" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="listenUriRelativeAddress" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="listenUriMode" Type="System.ServiceModel.Description.ListenUriMode" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" Index="3" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the channel listener accepts.</typeparam>
@@ -802,7 +802,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="parameters" Type="System.Object[]">
+        <Parameter Name="parameters" Type="System.Object[]" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -854,7 +854,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel for which the listener is being tested.</typeparam>

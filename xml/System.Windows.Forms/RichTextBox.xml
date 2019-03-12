@@ -898,8 +898,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bitmap" Type="System.Drawing.Bitmap" />
-        <Parameter Name="targetBounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="bitmap" Type="System.Drawing.Bitmap" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="targetBounds" Type="System.Drawing.Rectangle" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bitmap">A <see cref="T:System.Drawing.Bitmap" />.</param>
@@ -1390,7 +1390,7 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pt" Type="System.Drawing.Point" />
+        <Parameter Name="pt" Type="System.Drawing.Point" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="pt">The location to search.</param>
@@ -2360,7 +2360,7 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" />
+        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="e">An object that contains the event data.</param>
@@ -2384,7 +2384,7 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" />
+        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="e">An object that contains event data.</param>
@@ -2494,8 +2494,8 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="m" Type="System.Windows.Forms.Message" RefType="ref" />
-        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+        <Parameter Name="m" Type="System.Windows.Forms.Message" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>

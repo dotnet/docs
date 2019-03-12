@@ -528,7 +528,7 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;+Builder" Index="0" FrameworkAlternate="netcore-3.0" RefType="this" />
+        <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue&gt;+Builder" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TKey">To be added.</typeparam>

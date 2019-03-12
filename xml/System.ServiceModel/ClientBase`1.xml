@@ -150,7 +150,7 @@
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="endpoint">The endpoint for a service that allows clients to find and communicate with the service.</param>

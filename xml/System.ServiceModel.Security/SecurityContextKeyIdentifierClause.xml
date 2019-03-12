@@ -60,7 +60,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="contextId" Type="System.Xml.UniqueId" />
+        <Parameter Name="contextId" Type="System.Xml.UniqueId" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="contextId">The unique ID of the security context.</param>
@@ -98,8 +98,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="contextId" Type="System.Xml.UniqueId" />
-        <Parameter Name="generation" Type="System.Xml.UniqueId" />
+        <Parameter Name="contextId" Type="System.Xml.UniqueId" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="generation" Type="System.Xml.UniqueId" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="contextId">A <see cref="T:System.Xml.UniqueId" /> that represents the Context ID of the security context.</param>
@@ -135,10 +135,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="contextId" Type="System.Xml.UniqueId" />
-        <Parameter Name="generation" Type="System.Xml.UniqueId" />
-        <Parameter Name="derivationNonce" Type="System.Byte[]" />
-        <Parameter Name="derivationLength" Type="System.Int32" />
+        <Parameter Name="contextId" Type="System.Xml.UniqueId" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="generation" Type="System.Xml.UniqueId" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="derivationNonce" Type="System.Byte[]" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="derivationLength" Type="System.Int32" Index="3" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="contextId">The context ID part of the identifier clause.</param>
@@ -248,7 +248,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="keyIdentifierClause">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to be compared.</param>
@@ -279,8 +279,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="contextId" Type="System.Xml.UniqueId" />
-        <Parameter Name="generation" Type="System.Xml.UniqueId" />
+        <Parameter Name="contextId" Type="System.Xml.UniqueId" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="generation" Type="System.Xml.UniqueId" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="contextId">The context ID part of the identifier clause.</param>

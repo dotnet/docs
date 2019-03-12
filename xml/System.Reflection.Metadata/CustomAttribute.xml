@@ -76,7 +76,7 @@
         <TypeParameter Name="TType" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="provider" Type="System.Reflection.Metadata.ICustomAttributeTypeProvider&lt;TType&gt;" />
+        <Parameter Name="provider" Type="System.Reflection.Metadata.ICustomAttributeTypeProvider&lt;TType&gt;" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TType">To be added.</typeparam>

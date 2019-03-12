@@ -104,7 +104,7 @@
         <AssemblyName>WindowsBase</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="elements" Type="System.Array" />
+        <Parameter Name="elements" Type="System.Array" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="elements">The array content that populates the created array.</param>
@@ -141,7 +141,7 @@
         <AssemblyName>WindowsBase</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="arrayType" Type="System.Type" />
+        <Parameter Name="arrayType" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="arrayType">The object type of the new array.</param>
@@ -181,7 +181,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The object to add to the end of the array.</param>
@@ -224,7 +224,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="text">The text to add to the end of the array.</param>
@@ -309,7 +309,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="serviceProvider">An object that can provide services for the markup extension.</param>

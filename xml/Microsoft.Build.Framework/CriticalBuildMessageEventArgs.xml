@@ -155,7 +155,7 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
         <Parameter Name="messageArgs" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

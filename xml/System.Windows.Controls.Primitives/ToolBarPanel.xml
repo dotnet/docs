@@ -94,7 +94,7 @@
         <ReturnType>System.Windows.Media.Visual</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="index">Specified index. Index must be between 0 and the count of the visual children.</param>

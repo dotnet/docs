@@ -896,7 +896,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Controls.ContextMenuEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Controls.ContextMenuEventArgs" Index="0" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
@@ -942,7 +942,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" />
+        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
@@ -966,7 +966,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" Index="0" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
@@ -990,7 +990,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" Index="0" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
@@ -1014,7 +1014,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" Index="0" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
@@ -1038,7 +1038,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
+        <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
@@ -1189,9 +1189,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="expressionActivityEditorType" Type="System.Type" />
-        <Parameter Name="convertFromString" Type="System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="expressionActivityEditorType" Type="System.Type" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="convertFromString" Type="System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The name of the epression editor.</param>
@@ -1273,8 +1273,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="connectionId" Type="System.Int32" />
-        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="connectionId" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.0" />
+        <Parameter Name="target" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="connectionId">The connection ID.</param>

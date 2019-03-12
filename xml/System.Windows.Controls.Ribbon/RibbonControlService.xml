@@ -1186,6 +1186,22 @@
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="IsInControlGroup">
+      <MemberSignature Language="C#" Value="see GetIsInControlGroup" />
+      <MemberSignature Language="ILAsm" Value="see GetIsInControlGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.IsInControlGroup" />
+      <MemberSignature Language="VB.NET" Value="see GetIsInControlGroup" />
+      <MemberSignature Language="F#" Value="see GetIsInControlGroup" Usage="see GetIsInControlGroup" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsInControlGroupProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInControlGroupProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInControlGroupProperty" />
@@ -1203,6 +1219,22 @@
       </ReturnValue>
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.IsInControlGroup" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInQuickAccessToolBar">
+      <MemberSignature Language="C#" Value="see GetIsInQuickAccessToolBar" />
+      <MemberSignature Language="ILAsm" Value="see GetIsInQuickAccessToolBar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.IsInQuickAccessToolBar" />
+      <MemberSignature Language="VB.NET" Value="see GetIsInQuickAccessToolBar" />
+      <MemberSignature Language="F#" Value="see GetIsInQuickAccessToolBar" Usage="see GetIsInQuickAccessToolBar" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1653,6 +1685,22 @@
         <param name="element">The object from which the attached event is removed.</param>
         <param name="handler">The event handler.</param>
         <summary>Removes a handler for the <see cref="E:System.Windows.Controls.Ribbon.RibbonControlService.DismissPopup" /> attached event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ribbon">
+      <MemberSignature Language="C#" Value="see GetRibbon" />
+      <MemberSignature Language="ILAsm" Value="see GetRibbon" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.Ribbon" />
+      <MemberSignature Language="VB.NET" Value="see GetRibbon" />
+      <MemberSignature Language="F#" Value="see GetRibbon" Usage="see GetRibbon" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2295,6 +2343,22 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipTitle" /> attached property for an object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowKeyboardCues">
+      <MemberSignature Language="C#" Value="see GetShowKeyboardCues" />
+      <MemberSignature Language="ILAsm" Value="see GetShowKeyboardCues" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.ShowKeyboardCues" />
+      <MemberSignature Language="VB.NET" Value="see GetShowKeyboardCues" />
+      <MemberSignature Language="F#" Value="see GetShowKeyboardCues" Usage="see GetShowKeyboardCues" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowKeyboardCuesProperty">

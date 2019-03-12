@@ -34,7 +34,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">An expression that specifies the numeric value.</param>
@@ -61,8 +61,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue">An expression that specifies the value to which **addValue**should be added.</param>
@@ -90,8 +90,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
@@ -119,8 +119,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
@@ -148,8 +148,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
@@ -177,8 +177,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
@@ -206,8 +206,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue">An expression that specifies the value to which **addValue**should be added.</param>
@@ -235,8 +235,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
@@ -264,8 +264,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
@@ -293,8 +293,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue">An expression that specifies the value to which **addValue**should be added.</param>
@@ -322,7 +322,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">An expression that specifies the collection from which the average value should be computed.</param>
@@ -349,8 +349,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value1">An expression that specifies the first operand.</param>
@@ -378,7 +378,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">An expression that specifies the first operand.</param>
@@ -405,8 +405,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value1">An expression that specifies the first operand.</param>
@@ -434,8 +434,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value1">An expression that specifies the first operand.</param>
@@ -463,7 +463,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">An expression that specifies the numeric value.</param>
@@ -490,8 +490,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="string1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="string2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="string1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="string2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="string1">An expression that specifies the string that should appear first in the concatenated result string.</param>
@@ -519,8 +519,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchedString" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="searchedForString" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="searchedString" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="searchedForString" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="searchedString">An expression that specifies the string to search for any occurence of **searchedForString**.</param>
@@ -548,7 +548,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">An expression that specifies the collection over which the count value should be computed.</param>
@@ -575,12 +575,12 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="year" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="month" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="day" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="year" Type="System.Data.Common.CommandTrees.DbExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="month" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="day" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="year">An expression that provides the year value for the new DateTime instance.</param>
@@ -612,13 +612,13 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="year" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="month" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="day" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="timeZoneOffset" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="year" Type="System.Data.Common.CommandTrees.DbExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="month" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="day" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="timeZoneOffset" Type="System.Data.Common.CommandTrees.DbExpression" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="year">An expression that provides the year value for the new DateTimeOffset instance.</param>
@@ -651,9 +651,9 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="hour">An expression that provides the hour value for the new DateTime instance.</param>
@@ -748,7 +748,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue">An expression that specifies the value from which the day should be retrieved.</param>
@@ -775,7 +775,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue">An expression that specifies the value from which the day within the year should be retrieved.</param>
@@ -802,8 +802,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue1">An expression that specifies the first date value argument.</param>
@@ -829,8 +829,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue1">An expression that specifies the first time value argument.</param>
@@ -856,8 +856,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue1">An expression that specifies the first time value argument.</param>
@@ -883,8 +883,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue1">An expression that specifies the first time value argument.</param>
@@ -910,8 +910,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue1">An expression that specifies the first time value argument.</param>
@@ -937,8 +937,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue1">An expression that specifies the first date value argument.</param>
@@ -964,8 +964,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue1">An expression that specifies the first time value argument.</param>
@@ -991,8 +991,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue1">An expression that specifies the first time value argument.</param>
@@ -1018,8 +1018,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue1">An expression that specifies the first date value argument.</param>
@@ -1045,8 +1045,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="suffix" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="suffix" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string that is searched at the end for string **suffix**.</param>
@@ -1072,7 +1072,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">An expression that specifies the numeric value.</param>
@@ -1099,7 +1099,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateTimeOffsetArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateTimeOffsetArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateTimeOffsetArgument">An expression that specifies the DateTimeOffset value from which the minute offset from GMT should be retrieved.</param>
@@ -1126,7 +1126,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue">An expression that specifies the value from which the hour should be retrieved.</param>
@@ -1153,8 +1153,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchString" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="stringToFind" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="searchString" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="stringToFind" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="searchString">An expression that specifies the string to search for **stringToFind**.</param>
@@ -1189,8 +1189,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string from which to extract the leftmost substring.</param>
@@ -1218,7 +1218,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string for which the length should be computed.</param>
@@ -1245,7 +1245,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">An expression that specifies the collection over which the count value should be computed.</param>
@@ -1272,7 +1272,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">An expression that specifies the collection from which the maximum value should be retrieved</param>
@@ -1299,7 +1299,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue">An expression that specifies the value from which the millisecond should be retrieved.</param>
@@ -1326,7 +1326,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">An expression that specifies the collection from which the minimum value should be retrieved.</param>
@@ -1353,7 +1353,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue">An expression that specifies the value from which the minute should be retrieved.</param>
@@ -1380,7 +1380,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue">An expression that specifies the value from which the month should be retrieved.</param>
@@ -1429,8 +1429,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="baseArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="exponent" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="baseArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="exponent" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="baseArgument">An expression that specifies the numeric value to raise to the given power.</param>
@@ -1458,9 +1458,9 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="toReplace" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="replacement" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="toReplace" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="replacement" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string in which to perform the replacement operation.</param>
@@ -1489,7 +1489,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string to reverse.</param>
@@ -1516,8 +1516,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string from which to extract the rightmost substring.</param>
@@ -1554,7 +1554,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">An expression that specifies the numeric value to round.</param>
@@ -1581,8 +1581,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="digits" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="digits" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">An expression that specifies the numeric value to round.</param>
@@ -1610,7 +1610,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeValue">An expression that specifies the value from which the second should be retrieved.</param>
@@ -1637,8 +1637,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="prefix" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="prefix" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string that is searched at the start for string **prefix**.</param>
@@ -1664,7 +1664,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">An expression that specifies the collection for which the standard deviation should be computed.</param>
@@ -1691,7 +1691,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">An expression that specifies the collection for which the standard deviation should be computed.</param>
@@ -1718,9 +1718,9 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="start" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="start" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string from which to extract the substring.</param>
@@ -1756,7 +1756,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">An expression that specifies the collection from which the sum should be computed.</param>
@@ -1783,7 +1783,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string that should be converted to lower case.</param>
@@ -1810,7 +1810,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string that should be converted to upper case.</param>
@@ -1837,7 +1837,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string from which leading and trailing space should be removed.</param>
@@ -1864,7 +1864,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string from which trailing space should be removed.</param>
@@ -1891,7 +1891,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stringArgument">An expression that specifies the string from which leading space should be removed.</param>
@@ -1918,8 +1918,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="digits" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="digits" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">An expression that specifies the numeric value to truncate.</param>
@@ -1947,7 +1947,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue">An expression that specifies the value for which the time portion should be truncated.</param>
@@ -1974,7 +1974,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">An expression that specifies the collection for which the statistical variance should be computed.</param>
@@ -2001,7 +2001,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">An expression that specifies the collection for which the statistical variance should be computed.</param>
@@ -2028,7 +2028,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dateValue">An expression that specifies the value from which the year should be retrieved.</param>

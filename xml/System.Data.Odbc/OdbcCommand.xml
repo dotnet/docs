@@ -1212,7 +1212,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <ReturnType>System.Data.IDataReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
+        <Parameter Name="behavior" Type="System.Data.CommandBehavior" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="behavior">To be added.</param>

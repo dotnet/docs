@@ -42,7 +42,7 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="builder">To be added.</param>
@@ -69,8 +69,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementType" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.SignatureTypeEncoder&gt;" />
-        <Parameter Name="arrayShape" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.ArrayShapeEncoder&gt;" />
+        <Parameter Name="elementType" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.SignatureTypeEncoder&gt;" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="arrayShape" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.ArrayShapeEncoder&gt;" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="elementType">To be added.</param>
@@ -98,8 +98,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementType" Type="System.Reflection.Metadata.Ecma335.SignatureTypeEncoder" RefType="out" />
-        <Parameter Name="arrayShape" Type="System.Reflection.Metadata.Ecma335.ArrayShapeEncoder" RefType="out" />
+        <Parameter Name="elementType" Type="System.Reflection.Metadata.Ecma335.SignatureTypeEncoder" RefType="out" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="arrayShape" Type="System.Reflection.Metadata.Ecma335.ArrayShapeEncoder" RefType="out" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="elementType">To be added.</param>
@@ -271,9 +271,9 @@
         <ReturnType>System.Reflection.Metadata.Ecma335.MethodSignatureEncoder</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="convention" Type="System.Reflection.Metadata.SignatureCallingConvention" />
-        <Parameter Name="attributes" Type="System.Reflection.Metadata.Ecma335.FunctionPointerAttributes" />
-        <Parameter Name="genericParameterCount" Type="System.Int32" />
+        <Parameter Name="convention" Type="System.Reflection.Metadata.SignatureCallingConvention" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="attributes" Type="System.Reflection.Metadata.Ecma335.FunctionPointerAttributes" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="genericParameterCount" Type="System.Int32" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="convention">To be added.</param>
@@ -303,9 +303,9 @@
         <ReturnType>System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="genericType" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="genericArgumentCount" Type="System.Int32" />
-        <Parameter Name="isValueType" Type="System.Boolean" />
+        <Parameter Name="genericType" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="genericArgumentCount" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="isValueType" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="genericType">To be added.</param>
@@ -335,7 +335,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameterIndex" Type="System.Int32" />
+        <Parameter Name="parameterIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="parameterIndex">To be added.</param>
@@ -362,7 +362,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameterIndex" Type="System.Int32" />
+        <Parameter Name="parameterIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="parameterIndex">To be added.</param>
@@ -534,7 +534,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Reflection.Metadata.PrimitiveTypeCode" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.PrimitiveTypeCode" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -658,8 +658,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="isValueType" Type="System.Boolean" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="isValueType" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>

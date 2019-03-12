@@ -36,10 +36,10 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="userStringHeapStartOffset" Type="System.Int32" />
-        <Parameter Name="stringHeapStartOffset" Type="System.Int32" />
-        <Parameter Name="blobHeapStartOffset" Type="System.Int32" />
-        <Parameter Name="guidHeapStartOffset" Type="System.Int32" />
+        <Parameter Name="userStringHeapStartOffset" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="stringHeapStartOffset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="blobHeapStartOffset" Type="System.Int32" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="guidHeapStartOffset" Type="System.Int32" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="userStringHeapStartOffset">To be added.</param>
@@ -68,12 +68,12 @@
         <ReturnType>System.Reflection.Metadata.AssemblyDefinitionHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="version" Type="System.Version" />
-        <Parameter Name="culture" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="publicKey" Type="System.Reflection.Metadata.BlobHandle" />
-        <Parameter Name="flags" Type="System.Reflection.AssemblyFlags" />
-        <Parameter Name="hashAlgorithm" Type="System.Reflection.AssemblyHashAlgorithm" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="version" Type="System.Version" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="culture" Type="System.Reflection.Metadata.StringHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="publicKey" Type="System.Reflection.Metadata.BlobHandle" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="flags" Type="System.Reflection.AssemblyFlags" Index="4" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="hashAlgorithm" Type="System.Reflection.AssemblyHashAlgorithm" Index="5" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -106,9 +106,9 @@
         <ReturnType>System.Reflection.Metadata.AssemblyFileHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="hashValue" Type="System.Reflection.Metadata.BlobHandle" />
-        <Parameter Name="containsMetadata" Type="System.Boolean" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="hashValue" Type="System.Reflection.Metadata.BlobHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="containsMetadata" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -137,12 +137,12 @@
         <ReturnType>System.Reflection.Metadata.AssemblyReferenceHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="version" Type="System.Version" />
-        <Parameter Name="culture" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="publicKeyOrToken" Type="System.Reflection.Metadata.BlobHandle" />
-        <Parameter Name="flags" Type="System.Reflection.AssemblyFlags" />
-        <Parameter Name="hashValue" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="version" Type="System.Version" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="culture" Type="System.Reflection.Metadata.StringHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="publicKeyOrToken" Type="System.Reflection.Metadata.BlobHandle" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="flags" Type="System.Reflection.AssemblyFlags" Index="4" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="hashValue" Type="System.Reflection.Metadata.BlobHandle" Index="5" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -175,8 +175,8 @@
         <ReturnType>System.Reflection.Metadata.ConstantHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="parent">To be added.</param>
@@ -205,9 +205,9 @@
         <ReturnType>System.Reflection.Metadata.CustomAttributeHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="constructor" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="value" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="constructor" Type="System.Reflection.Metadata.EntityHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.Reflection.Metadata.BlobHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="parent">To be added.</param>
@@ -237,9 +237,9 @@
         <ReturnType>System.Reflection.Metadata.CustomDebugInformationHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="kind" Type="System.Reflection.Metadata.GuidHandle" />
-        <Parameter Name="value" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="kind" Type="System.Reflection.Metadata.GuidHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.Reflection.Metadata.BlobHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="parent">To be added.</param>
@@ -269,9 +269,9 @@
         <ReturnType>System.Reflection.Metadata.DeclarativeSecurityAttributeHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="action" Type="System.Reflection.DeclarativeSecurityAction" />
-        <Parameter Name="permissionSet" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="action" Type="System.Reflection.DeclarativeSecurityAction" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="permissionSet" Type="System.Reflection.Metadata.BlobHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="parent">To be added.</param>
@@ -301,10 +301,10 @@
         <ReturnType>System.Reflection.Metadata.DocumentHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.Reflection.Metadata.BlobHandle" />
-        <Parameter Name="hashAlgorithm" Type="System.Reflection.Metadata.GuidHandle" />
-        <Parameter Name="hash" Type="System.Reflection.Metadata.BlobHandle" />
-        <Parameter Name="language" Type="System.Reflection.Metadata.GuidHandle" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.BlobHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="hashAlgorithm" Type="System.Reflection.Metadata.GuidHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="hash" Type="System.Reflection.Metadata.BlobHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="language" Type="System.Reflection.Metadata.GuidHandle" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -335,8 +335,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="code" Type="System.Reflection.Metadata.Ecma335.EditAndContinueOperation" />
+        <Parameter Name="entity" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="code" Type="System.Reflection.Metadata.Ecma335.EditAndContinueOperation" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="entity">To be added.</param>
@@ -364,7 +364,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="entity" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="entity">To be added.</param>
@@ -391,9 +391,9 @@
         <ReturnType>System.Reflection.Metadata.EventDefinitionHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributes" Type="System.Reflection.EventAttributes" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="type" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.EventAttributes" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.EntityHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="attributes">To be added.</param>
@@ -423,8 +423,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="declaringType" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
-        <Parameter Name="eventList" Type="System.Reflection.Metadata.EventDefinitionHandle" />
+        <Parameter Name="declaringType" Type="System.Reflection.Metadata.TypeDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="eventList" Type="System.Reflection.Metadata.EventDefinitionHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="declaringType">To be added.</param>
@@ -452,11 +452,11 @@
         <ReturnType>System.Reflection.Metadata.ExportedTypeHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributes" Type="System.Reflection.TypeAttributes" />
-        <Parameter Name="namespace" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="implementation" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="typeDefinitionId" Type="System.Int32" />
+        <Parameter Name="attributes" Type="System.Reflection.TypeAttributes" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="namespace" Type="System.Reflection.Metadata.StringHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="implementation" Type="System.Reflection.Metadata.EntityHandle" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="typeDefinitionId" Type="System.Int32" Index="4" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="attributes">To be added.</param>
@@ -488,9 +488,9 @@
         <ReturnType>System.Reflection.Metadata.FieldDefinitionHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="attributes">To be added.</param>
@@ -520,8 +520,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="field" Type="System.Reflection.Metadata.FieldDefinitionHandle" />
-        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="field" Type="System.Reflection.Metadata.FieldDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="field">To be added.</param>
@@ -549,8 +549,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="field" Type="System.Reflection.Metadata.FieldDefinitionHandle" />
-        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="field" Type="System.Reflection.Metadata.FieldDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="field">To be added.</param>
@@ -578,10 +578,10 @@
         <ReturnType>System.Reflection.Metadata.GenericParameterHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="attributes" Type="System.Reflection.GenericParameterAttributes" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="attributes" Type="System.Reflection.GenericParameterAttributes" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="parent">To be added.</param>
@@ -612,8 +612,8 @@
         <ReturnType>System.Reflection.Metadata.GenericParameterConstraintHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="genericParameter" Type="System.Reflection.Metadata.GenericParameterHandle" />
-        <Parameter Name="constraint" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="genericParameter" Type="System.Reflection.Metadata.GenericParameterHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="constraint" Type="System.Reflection.Metadata.EntityHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="genericParameter">To be added.</param>
@@ -642,8 +642,8 @@
         <ReturnType>System.Reflection.Metadata.ImportScopeHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parentScope" Type="System.Reflection.Metadata.ImportScopeHandle" />
-        <Parameter Name="imports" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="parentScope" Type="System.Reflection.Metadata.ImportScopeHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="imports" Type="System.Reflection.Metadata.BlobHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="parentScope">To be added.</param>
@@ -672,8 +672,8 @@
         <ReturnType>System.Reflection.Metadata.InterfaceImplementationHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
-        <Parameter Name="implementedInterface" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="implementedInterface" Type="System.Reflection.Metadata.EntityHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -702,8 +702,8 @@
         <ReturnType>System.Reflection.Metadata.LocalConstantHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -732,12 +732,12 @@
         <ReturnType>System.Reflection.Metadata.LocalScopeHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="method" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
-        <Parameter Name="importScope" Type="System.Reflection.Metadata.ImportScopeHandle" />
-        <Parameter Name="variableList" Type="System.Reflection.Metadata.LocalVariableHandle" />
-        <Parameter Name="constantList" Type="System.Reflection.Metadata.LocalConstantHandle" />
-        <Parameter Name="startOffset" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="method" Type="System.Reflection.Metadata.MethodDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="importScope" Type="System.Reflection.Metadata.ImportScopeHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="variableList" Type="System.Reflection.Metadata.LocalVariableHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="constantList" Type="System.Reflection.Metadata.LocalConstantHandle" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="startOffset" Type="System.Int32" Index="4" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="5" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="method">To be added.</param>
@@ -770,9 +770,9 @@
         <ReturnType>System.Reflection.Metadata.LocalVariableHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributes" Type="System.Reflection.Metadata.LocalVariableAttributes" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.Metadata.LocalVariableAttributes" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="attributes">To be added.</param>
@@ -802,10 +802,10 @@
         <ReturnType>System.Reflection.Metadata.ManifestResourceHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributes" Type="System.Reflection.ManifestResourceAttributes" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="implementation" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="offset" Type="System.UInt32" />
+        <Parameter Name="attributes" Type="System.Reflection.ManifestResourceAttributes" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="implementation" Type="System.Reflection.Metadata.EntityHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="offset" Type="System.UInt32" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="attributes">To be added.</param>
@@ -836,8 +836,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="descriptor" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="descriptor" Type="System.Reflection.Metadata.BlobHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="parent">To be added.</param>
@@ -865,9 +865,9 @@
         <ReturnType>System.Reflection.Metadata.MemberReferenceHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="parent" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="parent">To be added.</param>
@@ -897,8 +897,8 @@
         <ReturnType>System.Reflection.Metadata.MethodDebugInformationHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="document" Type="System.Reflection.Metadata.DocumentHandle" />
-        <Parameter Name="sequencePoints" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="document" Type="System.Reflection.Metadata.DocumentHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="sequencePoints" Type="System.Reflection.Metadata.BlobHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="document">To be added.</param>
@@ -927,12 +927,12 @@
         <ReturnType>System.Reflection.Metadata.MethodDefinitionHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributes" Type="System.Reflection.MethodAttributes" />
-        <Parameter Name="implAttributes" Type="System.Reflection.MethodImplAttributes" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
-        <Parameter Name="bodyOffset" Type="System.Int32" />
-        <Parameter Name="parameterList" Type="System.Reflection.Metadata.ParameterHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.MethodAttributes" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="implAttributes" Type="System.Reflection.MethodImplAttributes" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="bodyOffset" Type="System.Int32" Index="4" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="parameterList" Type="System.Reflection.Metadata.ParameterHandle" Index="5" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="attributes">To be added.</param>
@@ -965,9 +965,9 @@
         <ReturnType>System.Reflection.Metadata.MethodImplementationHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
-        <Parameter Name="methodBody" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="methodDeclaration" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="methodBody" Type="System.Reflection.Metadata.EntityHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="methodDeclaration" Type="System.Reflection.Metadata.EntityHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -997,10 +997,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="method" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
-        <Parameter Name="attributes" Type="System.Reflection.MethodImportAttributes" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="module" Type="System.Reflection.Metadata.ModuleReferenceHandle" />
+        <Parameter Name="method" Type="System.Reflection.Metadata.MethodDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="attributes" Type="System.Reflection.MethodImportAttributes" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="module" Type="System.Reflection.Metadata.ModuleReferenceHandle" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="method">To be added.</param>
@@ -1030,9 +1030,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="association" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="semantics" Type="System.Reflection.MethodSemanticsAttributes" />
-        <Parameter Name="methodDefinition" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+        <Parameter Name="association" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="semantics" Type="System.Reflection.MethodSemanticsAttributes" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="methodDefinition" Type="System.Reflection.Metadata.MethodDefinitionHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="association">To be added.</param>
@@ -1061,8 +1061,8 @@
         <ReturnType>System.Reflection.Metadata.MethodSpecificationHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="method" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="instantiation" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="method" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="instantiation" Type="System.Reflection.Metadata.BlobHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="method">To be added.</param>
@@ -1091,11 +1091,11 @@
         <ReturnType>System.Reflection.Metadata.ModuleDefinitionHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="generation" Type="System.Int32" />
-        <Parameter Name="moduleName" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="mvid" Type="System.Reflection.Metadata.GuidHandle" />
-        <Parameter Name="encId" Type="System.Reflection.Metadata.GuidHandle" />
-        <Parameter Name="encBaseId" Type="System.Reflection.Metadata.GuidHandle" />
+        <Parameter Name="generation" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="moduleName" Type="System.Reflection.Metadata.StringHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="mvid" Type="System.Reflection.Metadata.GuidHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="encId" Type="System.Reflection.Metadata.GuidHandle" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="encBaseId" Type="System.Reflection.Metadata.GuidHandle" Index="4" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="generation">To be added.</param>
@@ -1127,7 +1127,7 @@
         <ReturnType>System.Reflection.Metadata.ModuleReferenceHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="moduleName" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="moduleName" Type="System.Reflection.Metadata.StringHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="moduleName">To be added.</param>
@@ -1155,8 +1155,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
-        <Parameter Name="enclosingType" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="enclosingType" Type="System.Reflection.Metadata.TypeDefinitionHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -1184,9 +1184,9 @@
         <ReturnType>System.Reflection.Metadata.ParameterHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributes" Type="System.Reflection.ParameterAttributes" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="sequenceNumber" Type="System.Int32" />
+        <Parameter Name="attributes" Type="System.Reflection.ParameterAttributes" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="sequenceNumber" Type="System.Int32" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="attributes">To be added.</param>
@@ -1216,9 +1216,9 @@
         <ReturnType>System.Reflection.Metadata.PropertyDefinitionHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributes" Type="System.Reflection.PropertyAttributes" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.PropertyAttributes" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="attributes">To be added.</param>
@@ -1248,8 +1248,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="declaringType" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
-        <Parameter Name="propertyList" Type="System.Reflection.Metadata.PropertyDefinitionHandle" />
+        <Parameter Name="declaringType" Type="System.Reflection.Metadata.TypeDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="propertyList" Type="System.Reflection.Metadata.PropertyDefinitionHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="declaringType">To be added.</param>
@@ -1277,7 +1277,7 @@
         <ReturnType>System.Reflection.Metadata.StandaloneSignatureHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="signature">To be added.</param>
@@ -1305,8 +1305,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="moveNextMethod" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
-        <Parameter Name="kickoffMethod" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+        <Parameter Name="moveNextMethod" Type="System.Reflection.Metadata.MethodDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="kickoffMethod" Type="System.Reflection.Metadata.MethodDefinitionHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="moveNextMethod">To be added.</param>
@@ -1334,12 +1334,12 @@
         <ReturnType>System.Reflection.Metadata.TypeDefinitionHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributes" Type="System.Reflection.TypeAttributes" />
-        <Parameter Name="namespace" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="baseType" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="fieldList" Type="System.Reflection.Metadata.FieldDefinitionHandle" />
-        <Parameter Name="methodList" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+        <Parameter Name="attributes" Type="System.Reflection.TypeAttributes" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="namespace" Type="System.Reflection.Metadata.StringHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="baseType" Type="System.Reflection.Metadata.EntityHandle" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="fieldList" Type="System.Reflection.Metadata.FieldDefinitionHandle" Index="4" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="methodList" Type="System.Reflection.Metadata.MethodDefinitionHandle" Index="5" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="attributes">To be added.</param>
@@ -1372,9 +1372,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
-        <Parameter Name="packingSize" Type="System.UInt16" />
-        <Parameter Name="size" Type="System.UInt32" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.TypeDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="packingSize" Type="System.UInt16" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="size" Type="System.UInt32" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -1403,9 +1403,9 @@
         <ReturnType>System.Reflection.Metadata.TypeReferenceHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resolutionScope" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="namespace" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="resolutionScope" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="namespace" Type="System.Reflection.Metadata.StringHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.StringHandle" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="resolutionScope">To be added.</param>
@@ -1435,7 +1435,7 @@
         <ReturnType>System.Reflection.Metadata.TypeSpecificationHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.BlobHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="signature">To be added.</param>
@@ -1463,7 +1463,7 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Byte[]" />
+        <Parameter Name="value" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1491,7 +1491,7 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1519,7 +1519,7 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Reflection.Metadata.BlobBuilder" />
+        <Parameter Name="value" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1547,7 +1547,7 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1574,8 +1574,8 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="allowUnpairedSurrogates" Type="System.Boolean" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="allowUnpairedSurrogates" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1604,7 +1604,7 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1632,7 +1632,7 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1659,7 +1659,7 @@
         <ReturnType>System.Reflection.Metadata.GuidHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="guid" Type="System.Guid" />
+        <Parameter Name="guid" Type="System.Guid" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="guid">To be added.</param>
@@ -1687,7 +1687,7 @@
         <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1715,7 +1715,7 @@
         <ReturnType>System.Reflection.Metadata.UserStringHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1743,7 +1743,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="table" Type="System.Reflection.Metadata.Ecma335.TableIndex" />
+        <Parameter Name="table" Type="System.Reflection.Metadata.Ecma335.TableIndex" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="table">To be added.</param>
@@ -1821,7 +1821,7 @@
         <ReturnType>System.Reflection.Metadata.ReservedBlob&lt;System.Reflection.Metadata.UserStringHandle&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="length">To be added.</param>
@@ -1849,8 +1849,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="heap" Type="System.Reflection.Metadata.Ecma335.HeapIndex" />
-        <Parameter Name="byteCount" Type="System.Int32" />
+        <Parameter Name="heap" Type="System.Reflection.Metadata.Ecma335.HeapIndex" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="heap">To be added.</param>
@@ -1878,8 +1878,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="table" Type="System.Reflection.Metadata.Ecma335.TableIndex" />
-        <Parameter Name="rowCount" Type="System.Int32" />
+        <Parameter Name="table" Type="System.Reflection.Metadata.Ecma335.TableIndex" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="rowCount" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="table">To be added.</param>

@@ -43,9 +43,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ComponentModel.INotifyPropertyChanged" />
-        <Parameter Name="handler" Type="System.EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt;" />
-        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="source" Type="System.ComponentModel.INotifyPropertyChanged" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="propertyName" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">The source object that the raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</param>
@@ -164,9 +164,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ComponentModel.INotifyPropertyChanged" />
-        <Parameter Name="handler" Type="System.EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt;" />
-        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="source" Type="System.ComponentModel.INotifyPropertyChanged" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="propertyName" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">The source object that the raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</param>

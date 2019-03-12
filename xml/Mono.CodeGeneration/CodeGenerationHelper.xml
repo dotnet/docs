@@ -59,7 +59,7 @@
         <Parameter Name="method" Type="Mono.CodeGeneration.CodeMethod" />
         <Parameter Name="parameters" Type="Mono.CodeGeneration.CodeExpression[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -96,7 +96,7 @@
         <Parameter Name="method" Type="System.Reflection.MethodBase" />
         <Parameter Name="parameters" Type="Mono.CodeGeneration.CodeExpression[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

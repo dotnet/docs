@@ -51,7 +51,7 @@
         <Parameter Name="primaryPurpose" Type="System.String" />
         <Parameter Name="specificPurpose" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

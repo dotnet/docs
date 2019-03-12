@@ -71,7 +71,7 @@
       <Parameters>
         <Parameter Name="filePaths" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

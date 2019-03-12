@@ -104,7 +104,7 @@
         <AssemblyName>WindowsBase</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="member" Type="System.String" />
+        <Parameter Name="member" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="member">A string that identifies the member to make a reference to. This string uses the format <c>prefix:typeName.fieldOrPropertyName</c>. <c>prefix</c> is the mapping prefix for a XAML namespace, and is only required to reference static values that are not mapped to the default XAML namespace.</param>
@@ -242,7 +242,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="serviceProvider">An object that can provide services for the markup extension. The service provider is expected to provide a service that implements a type resolver (<see cref="T:System.Windows.Markup.IXamlTypeResolver" />).</param>

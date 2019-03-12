@@ -124,7 +124,7 @@
         <Parameter Name="argCount" Type="System.Int32" />
         <Parameter Name="argNames" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

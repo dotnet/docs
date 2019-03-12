@@ -84,8 +84,8 @@
         <ReturnType>System.Data.Objects.ObjectStateEntry</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
-        <Parameter Name="entityState" Type="System.Data.EntityState" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="entityState" Type="System.Data.EntityState" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">The object for which the state must be changed.</param>
@@ -151,10 +151,10 @@
         <ReturnType>System.Data.Objects.ObjectStateEntry</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sourceEntity" Type="System.Object" />
-        <Parameter Name="targetEntity" Type="System.Object" />
-        <Parameter Name="navigationProperty" Type="System.String" />
-        <Parameter Name="relationshipState" Type="System.Data.EntityState" />
+        <Parameter Name="sourceEntity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="targetEntity" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="navigationProperty" Type="System.String" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="relationshipState" Type="System.Data.EntityState" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="sourceEntity">The object instance or <see cref="T:System.Data.EntityKey" /> of the source entity at one end of the relationship.</param>
@@ -202,11 +202,11 @@
         <ReturnType>System.Data.Objects.ObjectStateEntry</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sourceEntity" Type="System.Object" />
-        <Parameter Name="targetEntity" Type="System.Object" />
-        <Parameter Name="relationshipName" Type="System.String" />
-        <Parameter Name="targetRoleName" Type="System.String" />
-        <Parameter Name="relationshipState" Type="System.Data.EntityState" />
+        <Parameter Name="sourceEntity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="targetEntity" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="relationshipName" Type="System.String" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="targetRoleName" Type="System.String" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="relationshipState" Type="System.Data.EntityState" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="sourceEntity">The object instance or <see cref="T:System.Data.EntityKey" /> of the source entity at one end of the relationship.</param>
@@ -262,10 +262,10 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sourceEntity" Type="TEntity" />
-        <Parameter Name="targetEntity" Type="System.Object" />
-        <Parameter Name="navigationPropertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity,System.Object&gt;&gt;" />
-        <Parameter Name="relationshipState" Type="System.Data.EntityState" />
+        <Parameter Name="sourceEntity" Type="TEntity" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="targetEntity" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="navigationPropertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity,System.Object&gt;&gt;" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="relationshipState" Type="System.Data.EntityState" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">The entity type of the <paramref name="sourceEntity" /> object.</typeparam>
@@ -437,7 +437,7 @@
         <ReturnType>System.Data.Objects.DataClasses.RelationshipManager</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">The object for which to return the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" />.</param>
@@ -625,8 +625,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
-        <Parameter Name="relationshipManager" Type="System.Data.Objects.DataClasses.RelationshipManager" RefType="out" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="relationshipManager" Type="System.Data.Objects.DataClasses.RelationshipManager" RefType="out" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">The object for which to return the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" />.</param>

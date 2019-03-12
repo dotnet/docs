@@ -31,7 +31,7 @@
         <ReturnType>System.Linq.IQueryable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Linq.IQueryable" />
+        <Parameter Name="source" Type="System.Linq.IQueryable" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">The data source query.</param>
@@ -56,7 +56,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dataSource" Type="System.Web.UI.WebControls.IQueryableDataSource" />
+        <Parameter Name="dataSource" Type="System.Web.UI.WebControls.IQueryableDataSource" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dataSource">The data source.</param>

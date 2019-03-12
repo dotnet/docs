@@ -151,8 +151,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
-        <Parameter Name="attributes" Type="System.Xml.Serialization.XmlAttributes" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="attributes" Type="System.Xml.Serialization.XmlAttributes" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of the object that is overridden.</param>
@@ -212,9 +212,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
-        <Parameter Name="member" Type="System.String" />
-        <Parameter Name="attributes" Type="System.Xml.Serialization.XmlAttributes" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="member" Type="System.String" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="attributes" Type="System.Xml.Serialization.XmlAttributes" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of the object to override.</param>
@@ -286,7 +286,7 @@
         <ReturnType>System.Xml.Serialization.XmlAttributes</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="type">The base class <see cref="T:System.Type" /> that is associated with the collection of attributes you want to retrieve.</param>
@@ -347,8 +347,8 @@
         <ReturnType>System.Xml.Serialization.XmlAttributes</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
-        <Parameter Name="member" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="member" Type="System.String" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="type">The base class <see cref="T:System.Type" /> that is associated with the collection of attributes you want.</param>

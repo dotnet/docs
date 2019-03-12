@@ -40,10 +40,13 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebOperationContext(System::ServiceModel::OperationContext ^ operationContext);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public WebOperationContext (System.ServiceModel.OperationContext operation);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.OperationContext operation) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.#ctor(System.ServiceModel.OperationContext)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (operation As OperationContext)" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.#ctor(System.ServiceModel.OperationContext)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (operation As OperationContext)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebOperationContext(System::ServiceModel::OperationContext ^ operation);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebOperationContext : System.ServiceModel.OperationContext -&gt; System.ServiceModel.Web.WebOperationContext" Usage="new System.ServiceModel.Web.WebOperationContext operation" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebOperationContext : System.ServiceModel.OperationContext -&gt; System.ServiceModel.Web.WebOperationContext" Usage="new System.ServiceModel.Web.WebOperationContext operationContext" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.#ctor(System.ServiceModel.OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (operation As OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebOperationContext : System.ServiceModel.OperationContext -&gt; System.ServiceModel.Web.WebOperationContext" Usage="new System.ServiceModel.Web.WebOperationContext operation" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -52,7 +55,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="operationContext" Type="System.ServiceModel.OperationContext" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="operationContext" Type="System.ServiceModel.OperationContext" Index="0" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="operation" Type="System.ServiceModel.OperationContext" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -65,7 +68,7 @@
     <Member MemberName="Attach">
       <MemberSignature Language="C#" Value="public void Attach (System.ServiceModel.OperationContext owner);" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Attach(class System.ServiceModel.OperationContext owner) cil managed" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Attach(System.ServiceModel.OperationContext)" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Attach(System.ServiceModel.OperationContext)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (owner As OperationContext)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Attach(System::ServiceModel::OperationContext ^ owner);" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="F#" Value="abstract member Attach : System.ServiceModel.OperationContext -&gt; unit&#xA;override this.Attach : System.ServiceModel.OperationContext -&gt; unit" Usage="webOperationContext.Attach owner" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
@@ -74,6 +77,7 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (context As OperationContext)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::ServiceModel::OperationContext ^ context);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       <MemberSignature Language="F#" Value="member this.Attach : System.ServiceModel.OperationContext -&gt; unit" Usage="webOperationContext.Attach context" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Attach(System.ServiceModel.OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.IExtension`1.Attach(`0)</InterfaceMember>
@@ -123,7 +127,7 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="document" Type="System.ServiceModel.Syndication.ServiceDocument" />
+        <Parameter Name="document" Type="System.ServiceModel.Syndication.ServiceDocument" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="document">The content to write to the message.</param>
@@ -148,7 +152,7 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="feed" Type="System.ServiceModel.Syndication.SyndicationFeed" />
+        <Parameter Name="feed" Type="System.ServiceModel.Syndication.SyndicationFeed" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="feed">The content to write to the message.</param>
@@ -173,7 +177,7 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.ServiceModel.Syndication.SyndicationItem" />
+        <Parameter Name="item" Type="System.ServiceModel.Syndication.SyndicationItem" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="item">The content to write to the message.</param>
@@ -210,7 +214,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="instance" Type="T" />
+        <Parameter Name="instance" Type="T" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of object to write to the message.</typeparam>
@@ -239,8 +243,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="instance" Type="T" />
-        <Parameter Name="serializer" Type="System.Runtime.Serialization.Json.DataContractJsonSerializer" />
+        <Parameter Name="instance" Type="T" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.Json.DataContractJsonSerializer" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of object to write to the message.</typeparam>
@@ -276,8 +280,8 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="streamWriter" Type="System.Action&lt;System.IO.Stream&gt;" />
-        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="streamWriter" Type="System.Action&lt;System.IO.Stream&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentType" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="streamWriter">The stream writer containg the data to write to the stream.</param>
@@ -302,8 +306,8 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" />
-        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentType" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stream">The stream containing the data to write to the stream.</param>
@@ -329,8 +333,8 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bodyWriter" Type="System.ServiceModel.Channels.StreamBodyWriter" />
-        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="bodyWriter" Type="System.ServiceModel.Channels.StreamBodyWriter" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentType" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bodyWriter">The stream body writer containing the data to write to the message.</param>
@@ -365,7 +369,7 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="text">The text to write to the message.</param>
@@ -390,8 +394,8 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="textWriter" Type="System.Action&lt;System.IO.TextWriter&gt;" />
-        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="textWriter" Type="System.Action&lt;System.IO.TextWriter&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentType" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="textWriter">A delegate that writes the text data.</param>
@@ -417,8 +421,8 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
-        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentType" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="text">The text to write to the message.</param>
@@ -443,9 +447,9 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="textWriter" Type="System.Action&lt;System.IO.TextWriter&gt;" />
-        <Parameter Name="contentType" Type="System.String" />
-        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="textWriter" Type="System.Action&lt;System.IO.TextWriter&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentType" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="textWriter">A delegate that writes the text data.</param>
@@ -471,9 +475,9 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
-        <Parameter Name="contentType" Type="System.String" />
-        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contentType" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="text">The text to write to the message.</param>
@@ -509,7 +513,7 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="document" Type="System.Xml.Linq.XDocument" />
+        <Parameter Name="document" Type="System.Xml.Linq.XDocument" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="document">The data to write to the message.</param>
@@ -534,7 +538,7 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Xml.Linq.XElement" />
+        <Parameter Name="element" Type="System.Xml.Linq.XElement" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The data to write to the message.</param>
@@ -562,7 +566,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="instance" Type="T" />
+        <Parameter Name="instance" Type="T" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of object to write to the message.</typeparam>
@@ -591,8 +595,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="instance" Type="T" />
-        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
+        <Parameter Name="instance" Type="T" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of object to write to the message.</typeparam>
@@ -622,8 +626,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="instance" Type="T" />
-        <Parameter Name="serializer" Type="System.Xml.Serialization.XmlSerializer" />
+        <Parameter Name="instance" Type="T" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="serializer" Type="System.Xml.Serialization.XmlSerializer" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of object to write to the message.</typeparam>
@@ -669,7 +673,7 @@
     <Member MemberName="Detach">
       <MemberSignature Language="C#" Value="public void Detach (System.ServiceModel.OperationContext owner);" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Detach(class System.ServiceModel.OperationContext owner) cil managed" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (owner As OperationContext)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Detach(System::ServiceModel::OperationContext ^ owner);" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="F#" Value="abstract member Detach : System.ServiceModel.OperationContext -&gt; unit&#xA;override this.Detach : System.ServiceModel.OperationContext -&gt; unit" Usage="webOperationContext.Detach owner" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
@@ -678,6 +682,7 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (context As OperationContext)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Detach(System::ServiceModel::OperationContext ^ context);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       <MemberSignature Language="F#" Value="member this.Detach : System.ServiceModel.OperationContext -&gt; unit" Usage="webOperationContext.Detach context" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.IExtension`1.Detach(`0)</InterfaceMember>
@@ -718,7 +723,7 @@
         <ReturnType>System.UriTemplate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operationName" Type="System.String" />
+        <Parameter Name="operationName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="operationName">The operation.</param>

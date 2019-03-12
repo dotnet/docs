@@ -309,8 +309,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="oldDpi" Type="System.Windows.DpiScale" />
-        <Parameter Name="newDpi" Type="System.Windows.DpiScale" />
+        <Parameter Name="oldDpi" Type="System.Windows.DpiScale" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="newDpi" Type="System.Windows.DpiScale" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="oldDpi">The previous DPI scale setting</param>

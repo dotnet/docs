@@ -46,11 +46,11 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="header" Type="System.Reflection.Metadata.SignatureHeader" />
-        <Parameter Name="returnType" Type="TType" />
-        <Parameter Name="requiredParameterCount" Type="System.Int32" />
-        <Parameter Name="genericParameterCount" Type="System.Int32" />
-        <Parameter Name="parameterTypes" Type="System.Collections.Immutable.ImmutableArray&lt;TType&gt;" />
+        <Parameter Name="header" Type="System.Reflection.Metadata.SignatureHeader" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="returnType" Type="TType" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="requiredParameterCount" Type="System.Int32" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="genericParameterCount" Type="System.Int32" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="parameterTypes" Type="System.Collections.Immutable.ImmutableArray&lt;TType&gt;" Index="4" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="header">The information in the leading byte of the signature (kind, calling convention, flags).</param>

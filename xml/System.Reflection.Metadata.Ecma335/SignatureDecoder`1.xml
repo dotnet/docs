@@ -33,8 +33,8 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="provider" Type="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType&gt;" />
-        <Parameter Name="metadataReader" Type="System.Reflection.Metadata.MetadataReader" />
+        <Parameter Name="provider" Type="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType&gt;" Index="0" FrameworkAlternate="netcore-1.1" />
+        <Parameter Name="metadataReader" Type="System.Reflection.Metadata.MetadataReader" Index="1" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="provider">To be added.</param>
@@ -59,7 +59,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" />
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="blobReader">To be added.</param>
@@ -84,7 +84,7 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TType&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" />
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="blobReader">To be added.</param>
@@ -109,7 +109,7 @@
         <ReturnType>System.Reflection.Metadata.MethodSignature&lt;TType&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" />
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="blobReader">To be added.</param>
@@ -134,7 +134,7 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TType&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" />
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="blobReader">To be added.</param>
@@ -158,8 +158,8 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" />
-        <Parameter Name="allowTypeSpecifications" Type="System.Boolean" />
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader" RefType="ref" Index="0" FrameworkAlternate="netcore-1.1" />
+        <Parameter Name="allowTypeSpecifications" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="blobReader">To be added.</param>

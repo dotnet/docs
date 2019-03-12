@@ -39,8 +39,8 @@
         <ReturnType>System.Data.Common.DbCommandDefinition</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="providerManifest" Type="System.Data.Common.DbProviderManifest" />
-        <Parameter Name="commandTree" Type="System.Data.Common.CommandTrees.DbCommandTree" />
+        <Parameter Name="providerManifest" Type="System.Data.Common.DbProviderManifest" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="commandTree" Type="System.Data.Common.CommandTrees.DbCommandTree" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="providerManifest">To be added.</param>
@@ -65,9 +65,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="connection" Type="System.Data.Common.DbConnection" />
-        <Parameter Name="commandTimeout" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="storeItemCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" />
+        <Parameter Name="connection" Type="System.Data.Common.DbConnection" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="commandTimeout" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="storeItemCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="connection">To be added.</param>
@@ -92,8 +92,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="providerManifestToken" Type="System.String" />
-        <Parameter Name="storeItemCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" />
+        <Parameter Name="providerManifestToken" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="storeItemCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="providerManifestToken">To be added.</param>
@@ -118,9 +118,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="connection" Type="System.Data.Common.DbConnection" />
-        <Parameter Name="commandTimeout" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="storeItemCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" />
+        <Parameter Name="connection" Type="System.Data.Common.DbConnection" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="commandTimeout" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="storeItemCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="connection">To be added.</param>
@@ -146,9 +146,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="connection" Type="System.Data.Common.DbConnection" />
-        <Parameter Name="commandTimeout" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="storeItemCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" />
+        <Parameter Name="connection" Type="System.Data.Common.DbConnection" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="commandTimeout" Type="System.Nullable&lt;System.Int32&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="storeItemCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="connection">To be added.</param>
@@ -174,7 +174,7 @@
         <ReturnType>System.Data.Spatial.DbSpatialServices</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="versionHint" Type="System.String" />
+        <Parameter Name="versionHint" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="versionHint">To be added.</param>
@@ -199,7 +199,7 @@
         <ReturnType>System.Data.Common.DbProviderManifest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="versionHint" Type="System.String" />
+        <Parameter Name="versionHint" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="versionHint">To be added.</param>
@@ -224,7 +224,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="connection" Type="System.Data.Common.DbConnection" />
+        <Parameter Name="connection" Type="System.Data.Common.DbConnection" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="connection">To be added.</param>
@@ -249,8 +249,8 @@
         <ReturnType>System.Data.Spatial.DbSpatialDataReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fromReader" Type="System.Data.Common.DbDataReader" />
-        <Parameter Name="versionHint" Type="System.String" />
+        <Parameter Name="fromReader" Type="System.Data.Common.DbDataReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="versionHint" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fromReader">To be added.</param>
@@ -276,9 +276,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameter" Type="System.Data.Common.DbParameter" />
-        <Parameter Name="parameterType" Type="System.Data.Metadata.Edm.TypeUsage" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="parameter" Type="System.Data.Common.DbParameter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="parameterType" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value" Type="System.Object" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="parameter">To be added.</param>

@@ -445,9 +445,9 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeKind</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
-        <Parameter Name="typeHandle" Type="System.Reflection.Metadata.EntityHandle" />
-        <Parameter Name="rawTypeKind" Type="System.Byte" />
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="typeHandle" Type="System.Reflection.Metadata.EntityHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="rawTypeKind" Type="System.Byte" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">To be added.</param>

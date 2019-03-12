@@ -92,7 +92,7 @@
         <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.Object" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
@@ -171,8 +171,8 @@
         <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.Object" />
-        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
@@ -201,8 +201,8 @@
         <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.Object" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
@@ -242,8 +242,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">An <see cref="T:System.ServiceModel.InstanceContext" /> object that associates the callback object with the channel to the service.</param>
@@ -318,9 +318,9 @@
         <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.Object" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
@@ -357,9 +357,9 @@
         <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.Object" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
-        <Parameter Name="remoteAddress" Type="System.String" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="remoteAddress" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
@@ -528,8 +528,8 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String, address As EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ address);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpointConfigurationName, remoteAddress)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-1.0;netcore-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpointConfigurationName, address)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpointConfigurationName, remoteAddress)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpointConfigurationName, address)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-uwp-10.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

@@ -135,7 +135,7 @@
         <Parameter Name="eventHandler" Type="System.Windows.Automation.AutomationPropertyChangedEventHandler" />
         <Parameter Name="properties" Type="System.Windows.Automation.AutomationProperty[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

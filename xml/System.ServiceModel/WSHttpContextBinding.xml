@@ -83,7 +83,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="securityMode" Type="System.ServiceModel.SecurityMode" />
+        <Parameter Name="securityMode" Type="System.ServiceModel.SecurityMode" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="securityMode">The security mode.</param>
@@ -115,7 +115,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="configName" Type="System.String" />
+        <Parameter Name="configName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="configName">The name of the binding configuration.</param>
@@ -146,8 +146,8 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="securityMode" Type="System.ServiceModel.SecurityMode" />
-        <Parameter Name="reliableSessionEnabled" Type="System.Boolean" />
+        <Parameter Name="securityMode" Type="System.ServiceModel.SecurityMode" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="reliableSessionEnabled" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="securityMode">The security mode.</param>

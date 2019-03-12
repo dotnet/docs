@@ -113,7 +113,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="protectionLevel" Type="System.Net.Security.ProtectionLevel" />
+        <Parameter Name="protectionLevel" Type="System.Net.Security.ProtectionLevel" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="protectionLevel">The <see cref="T:System.Net.Security.ProtectionLevel" /> for the binding element.</param>
@@ -150,8 +150,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="protectionLevel" Type="System.Net.Security.ProtectionLevel" />
-        <Parameter Name="contextExchangeMechanism" Type="System.ServiceModel.Channels.ContextExchangeMechanism" />
+        <Parameter Name="protectionLevel" Type="System.Net.Security.ProtectionLevel" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="contextExchangeMechanism" Type="System.ServiceModel.Channels.ContextExchangeMechanism" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="protectionLevel">The <see cref="T:System.Net.Security.ProtectionLevel" /> for the binding element.</param>
@@ -182,9 +182,9 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="protectionLevel" Type="System.Net.Security.ProtectionLevel" />
-        <Parameter Name="contextExchangeMechanism" Type="System.ServiceModel.Channels.ContextExchangeMechanism" />
-        <Parameter Name="clientCallbackAddress" Type="System.Uri" />
+        <Parameter Name="protectionLevel" Type="System.Net.Security.ProtectionLevel" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contextExchangeMechanism" Type="System.ServiceModel.Channels.ContextExchangeMechanism" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="clientCallbackAddress" Type="System.Uri" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="protectionLevel">The protection level form the binding element.</param>
@@ -209,10 +209,10 @@
         <AssemblyName>System.WorkflowServices</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="protectionLevel" Type="System.Net.Security.ProtectionLevel" />
-        <Parameter Name="contextExchangeMechanism" Type="System.ServiceModel.Channels.ContextExchangeMechanism" />
-        <Parameter Name="clientCallbackAddress" Type="System.Uri" />
-        <Parameter Name="contextManagementEnabled" Type="System.Boolean" />
+        <Parameter Name="protectionLevel" Type="System.Net.Security.ProtectionLevel" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contextExchangeMechanism" Type="System.ServiceModel.Channels.ContextExchangeMechanism" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="clientCallbackAddress" Type="System.Uri" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="contextManagementEnabled" Type="System.Boolean" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="protectionLevel">The protection level for the binding element.</param>
@@ -247,7 +247,7 @@
         <TypeParameter Name="TChannel" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the channel factory produces.</typeparam>
@@ -287,7 +287,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the channel listener accepts.</typeparam>
@@ -322,7 +322,7 @@
         <TypeParameter Name="TChannel" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the channel factory produces. Only <see cref="T:System.ServiceModel.Channels.IRequestChannel" />, <see cref="T:System.ServiceModel.Channels.IRequestSessionChannel" />, and <see cref="T:System.ServiceModel.Channels.IDuplexSessionChannel" /> are allowed by default.</typeparam>
@@ -361,7 +361,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the channel listener accepts. Only <see cref="T:System.ServiceModel.Channels.IReplyChannel" />, <see cref="T:System.ServiceModel.Channels.IReplySessionChannel" />, and <see cref="T:System.ServiceModel.Channels.IDuplexSessionChannel" /> are allowed by default.</typeparam>
@@ -535,8 +535,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.MetadataExporter" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.MetadataExporter" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="exporter">The <see cref="T:System.ServiceModel.Description.MetadataExporter" /> that exports the metadata information.</param>
@@ -574,7 +574,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="T">The typed object for which the method is querying.</typeparam>

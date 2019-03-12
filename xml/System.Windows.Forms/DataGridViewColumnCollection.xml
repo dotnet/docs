@@ -274,7 +274,7 @@
       <Parameters>
         <Parameter Name="dataGridViewColumns" Type="System.Windows.Forms.DataGridViewColumn[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

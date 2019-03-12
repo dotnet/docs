@@ -457,7 +457,7 @@
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="typeArguments" Type="System.Xaml.XamlType[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

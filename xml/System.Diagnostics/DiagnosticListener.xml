@@ -184,9 +184,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="arg1" Type="System.Object" />
-        <Parameter Name="arg2" Type="System.Object" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="arg2" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -275,8 +275,8 @@
         <ReturnType>System.IDisposable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="observer" Type="System.IObserver&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
-        <Parameter Name="isEnabled" Type="System.Func&lt;System.String,System.Object,System.Object,System.Boolean&gt;" />
+        <Parameter Name="observer" Type="System.IObserver&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="isEnabled" Type="System.Func&lt;System.String,System.Object,System.Object,System.Boolean&gt;" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="observer">To be added.</param>
@@ -345,14 +345,16 @@
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (string name, object value);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object value) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.1;netcore-2.2;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (name As String, value As Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ value);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-3.0" />
       <MemberSignature Language="C#" Value="public override void Write (string name, object parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object parameters) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (name As String, parameters As Object)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
-      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, value)" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, value)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, parameters)" FrameworkAlternate="netcore-2.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>

@@ -1310,11 +1310,11 @@ The caller must add the UsingTask element to the location of choice in the proje
         <ReturnType>Microsoft.Build.Construction.ProjectUsingTaskElement</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="taskName" Type="System.String" />
-        <Parameter Name="assemblyFile" Type="System.String" />
-        <Parameter Name="assemblyName" Type="System.String" />
-        <Parameter Name="runtime" Type="System.String" />
-        <Parameter Name="architecture" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyFile" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyName" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="runtime" Type="System.String" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="architecture" Type="System.String" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="taskName">The task name.</param>

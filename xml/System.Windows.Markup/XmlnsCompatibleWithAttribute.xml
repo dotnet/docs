@@ -64,8 +64,8 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="oldNamespace" Type="System.String" />
-        <Parameter Name="newNamespace" Type="System.String" />
+        <Parameter Name="oldNamespace" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="newNamespace" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="oldNamespace">The reference XAML namespace identifier.</param>

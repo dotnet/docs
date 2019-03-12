@@ -101,7 +101,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="errorMessage" Type="System.String" />
+        <Parameter Name="errorMessage" Type="System.String" Index="0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="errorMessage">The error message to localize.</param>
@@ -126,8 +126,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="arguments" Type="System.Object[]">
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="arguments" Type="System.Object[]" Index="1" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>

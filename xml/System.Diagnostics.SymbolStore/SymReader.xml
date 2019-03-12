@@ -45,7 +45,7 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="pReader" Type="ISymUnmanagedReader*" />
+        <Parameter Name="pReader" Type="ISymUnmanagedReader*" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="pReader">A pointer to an unmanaged ISymUnmanagedReader object.</param>
@@ -73,7 +73,7 @@ Typically, instances of this type are obtained by using the <xref:System.Diagnos
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="pReader" Type="System.Diagnostics.SymbolStore.Private.ISymUnmanagedReader*" />
+        <Parameter Name="pReader" Type="System.Diagnostics.SymbolStore.Private.ISymUnmanagedReader*" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="pReader">A pointer to an unmanaged ISymUnmanagedReader object.</param>
@@ -195,7 +195,7 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="A_0" Type="System.Boolean" />
+        <Parameter Name="A_0" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="A_0">
@@ -554,8 +554,8 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fileName" Type="System.String" />
-        <Parameter Name="stream" Type="System.IntPtr" />
+        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="stream" Type="System.IntPtr" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileName">The name of the file containing the symbol store, or <see langword="null" /> if using an in-memory store.</param>
@@ -590,8 +590,8 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fileName" Type="System.String" />
-        <Parameter Name="stream" Type="System.IntPtr" />
+        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="stream" Type="System.IntPtr" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileName">The name of the file containing the symbol store, or <see langword="null" /> if using an in-memory store.</param>

@@ -61,9 +61,9 @@
     </Attribute>
   </Attributes>
   <Parameters>
-    <Parameter Name="arg1" Type="T1" />
-    <Parameter Name="arg2" Type="T2" />
-    <Parameter Name="arg3" Type="T3" />
+    <Parameter Name="arg1" Type="T1" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+    <Parameter Name="arg2" Type="T2" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+    <Parameter Name="arg3" Type="T3" Index="2" FrameworkAlternate="xamarinmac-3.0" />
   </Parameters>
   <ReturnValue>
     <ReturnType>TResult</ReturnType>

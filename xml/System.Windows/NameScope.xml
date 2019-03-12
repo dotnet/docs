@@ -130,7 +130,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="item">A <see cref="T:System.Collections.Generic.KeyValuePair`2" /> (key is <see cref="T:System.String" />, value is <see cref="T:System.Object" />) that represents the name mapping to add to the XAML namescope.</param>
@@ -161,8 +161,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The string key, which is the name of the XAML namescope mapping to add.</param>
@@ -231,7 +231,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="item">The item to find in the collection, specified as a <see cref="T:System.Collections.Generic.KeyValuePair`2" /> (key is <see cref="T:System.String" />, value is <see cref="T:System.Object" />).</param>
@@ -272,7 +272,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The string key to find.</param>
@@ -310,8 +310,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;[]" />
-        <Parameter Name="arrayIndex" Type="System.Int32" />
+        <Parameter Name="array" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;[]" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="arrayIndex" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the collection The array must have zero-based indexing.</param>
@@ -370,7 +370,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">Name portion of an existing mapping to retrieve the object portion for.</param>
@@ -412,7 +412,7 @@
         <ReturnType>System.Windows.Markup.INameScope</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dependencyObject">The object to get the XAML namescope from.</param>
@@ -480,7 +480,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The string name for the XAML name mapping to get or set.</param>
@@ -605,8 +605,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="scopedElement" Type="System.Object" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="scopedElement" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The name to use for mapping the given object.</param>
@@ -661,7 +661,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="item">The object to remove from the collection, specified as a <see cref="T:System.Collections.Generic.KeyValuePair`2" /> (key is <see cref="T:System.String" />, value is <see cref="T:System.Object" />).</param>
@@ -700,7 +700,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The string key, which is the name of the XAML namescope mapping to remove.</param>
@@ -736,8 +736,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
-        <Parameter Name="value" Type="System.Windows.Markup.INameScope" />
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="value" Type="System.Windows.Markup.INameScope" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dependencyObject">Object to change XAML namescope for.</param>
@@ -839,8 +839,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Object" RefType="out" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value" Type="System.Object" RefType="out" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>
@@ -873,7 +873,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The name of the mapping to remove.</param>

@@ -60,8 +60,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
-        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TAwaiter">To be added.</typeparam>
@@ -110,8 +110,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
-        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TAwaiter">To be added.</typeparam>
@@ -169,7 +169,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exception" Type="System.Exception" />
+        <Parameter Name="exception" Type="System.Exception" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="exception">To be added.</param>
@@ -198,7 +198,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="result" Type="TResult" />
+        <Parameter Name="result" Type="TResult" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="result">To be added.</param>
@@ -227,7 +227,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stateMachine" Type="System.Runtime.CompilerServices.IAsyncStateMachine" />
+        <Parameter Name="stateMachine" Type="System.Runtime.CompilerServices.IAsyncStateMachine" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="stateMachine">To be added.</param>
@@ -263,7 +263,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TStateMachine">To be added.</typeparam>

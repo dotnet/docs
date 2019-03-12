@@ -226,7 +226,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The <see cref="T:System.ServiceModel.Channels.IChannel" /> that the listener is built to accept.</typeparam>
@@ -315,7 +315,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The <see cref="T:System.ServiceModel.Channels.IChannel" /> that the channel listener, if build, accepts.</typeparam>
@@ -703,8 +703,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.MetadataExporter" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.MetadataExporter" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="exporter">The <see cref="T:System.ServiceModel.Description.MetadataExporter" /> that exports the binding information in the reliable session binding element to the WSDL elements.</param>

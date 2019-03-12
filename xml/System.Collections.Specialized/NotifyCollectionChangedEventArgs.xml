@@ -86,7 +86,7 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This must be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />.</param>
@@ -126,8 +126,8 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
-        <Parameter Name="changedItems" Type="System.Collections.IList" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="changedItems" Type="System.Collections.IList" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
@@ -168,8 +168,8 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
-        <Parameter Name="changedItem" Type="System.Object" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="changedItem" Type="System.Object" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
@@ -211,9 +211,9 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
-        <Parameter Name="newItems" Type="System.Collections.IList" />
-        <Parameter Name="oldItems" Type="System.Collections.IList" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="newItems" Type="System.Collections.IList" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="oldItems" Type="System.Collections.IList" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
@@ -257,9 +257,9 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
-        <Parameter Name="changedItems" Type="System.Collections.IList" />
-        <Parameter Name="startingIndex" Type="System.Int32" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="changedItems" Type="System.Collections.IList" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="startingIndex" Type="System.Int32" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
@@ -303,9 +303,9 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
-        <Parameter Name="changedItem" Type="System.Object" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="changedItem" Type="System.Object" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
@@ -348,9 +348,9 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
-        <Parameter Name="newItem" Type="System.Object" />
-        <Parameter Name="oldItem" Type="System.Object" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="newItem" Type="System.Object" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="oldItem" Type="System.Object" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
@@ -393,10 +393,10 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
-        <Parameter Name="newItems" Type="System.Collections.IList" />
-        <Parameter Name="oldItems" Type="System.Collections.IList" />
-        <Parameter Name="startingIndex" Type="System.Int32" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="newItems" Type="System.Collections.IList" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="oldItems" Type="System.Collections.IList" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="startingIndex" Type="System.Int32" Index="3" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
@@ -441,10 +441,10 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
-        <Parameter Name="changedItems" Type="System.Collections.IList" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="oldIndex" Type="System.Int32" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="changedItems" Type="System.Collections.IList" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="oldIndex" Type="System.Int32" Index="3" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />.</param>
@@ -488,10 +488,10 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
-        <Parameter Name="changedItem" Type="System.Object" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="oldIndex" Type="System.Int32" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="changedItem" Type="System.Object" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="oldIndex" Type="System.Int32" Index="3" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />.</param>
@@ -535,10 +535,10 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
-        <Parameter Name="newItem" Type="System.Object" />
-        <Parameter Name="oldItem" Type="System.Object" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="newItem" Type="System.Object" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="oldItem" Type="System.Object" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="3" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>

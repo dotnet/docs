@@ -71,7 +71,7 @@
         <ReturnType>System.Net.WebRequest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="uri" Type="System.Uri" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="uri">The uniform resource identifier (URI) of the Web resource.</param>

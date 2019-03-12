@@ -273,7 +273,7 @@
       <Parameters>
         <Parameter Name="values" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -606,7 +606,7 @@
       <Parameters>
         <Parameter Name="dataGridViewRows" Type="System.Windows.Forms.DataGridViewRow[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1454,7 +1454,7 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
         <Parameter Name="values" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1809,7 +1809,7 @@
         <Parameter Name="rowIndex" Type="System.Int32" />
         <Parameter Name="dataGridViewRows" Type="System.Windows.Forms.DataGridViewRow[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

@@ -653,9 +653,9 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
-        <Parameter Name="factor" Type="System.Drawing.SizeF" />
-        <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="factor" Type="System.Drawing.SizeF" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that specifies the initial bounds.</param>
@@ -1154,7 +1154,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /></param>
@@ -1323,8 +1323,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="deviceDpiOld" Type="System.Int32" />
-        <Parameter Name="deviceDpiNew" Type="System.Int32" />
+        <Parameter Name="deviceDpiOld" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
+        <Parameter Name="deviceDpiNew" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="deviceDpiOld">The DPI value prior to the change.</param>

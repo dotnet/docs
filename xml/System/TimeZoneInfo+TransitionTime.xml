@@ -109,9 +109,9 @@
         <ReturnType>System.TimeZoneInfo+TransitionTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeOfDay" Type="System.DateTime" />
-        <Parameter Name="month" Type="System.Int32" />
-        <Parameter Name="day" Type="System.Int32" />
+        <Parameter Name="timeOfDay" Type="System.DateTime" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="month" Type="System.Int32" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="day" Type="System.Int32" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="timeOfDay">The time at which the time change occurs. This parameter corresponds to the <see cref="P:System.TimeZoneInfo.TransitionTime.TimeOfDay" /> property.</param>
@@ -182,10 +182,10 @@
         <ReturnType>System.TimeZoneInfo+TransitionTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeOfDay" Type="System.DateTime" />
-        <Parameter Name="month" Type="System.Int32" />
-        <Parameter Name="week" Type="System.Int32" />
-        <Parameter Name="dayOfWeek" Type="System.DayOfWeek" />
+        <Parameter Name="timeOfDay" Type="System.DateTime" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="month" Type="System.Int32" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="week" Type="System.Int32" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="dayOfWeek" Type="System.DayOfWeek" Index="3" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="timeOfDay">The time at which the time change occurs. This parameter corresponds to the <see cref="P:System.TimeZoneInfo.TransitionTime.TimeOfDay" /> property.</param>
@@ -379,7 +379,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="obj">An object to compare with the current <see cref="T:System.TimeZoneInfo.TransitionTime" /> object.</param>
@@ -437,7 +437,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.TimeZoneInfo+TransitionTime" />
+        <Parameter Name="other" Type="System.TimeZoneInfo+TransitionTime" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="other">An object to compare to the current instance.</param>
@@ -614,14 +614,16 @@
     <Member MemberName="op_Equality">
       <MemberSignature Language="C#" Value="public static bool operator == (TimeZoneInfo.TransitionTime t1, TimeZoneInfo.TransitionTime t2);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.TimeZoneInfo/TransitionTime t1, valuetype System.TimeZoneInfo/TransitionTime t2) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.op_Equality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.op_Equality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (t1 As TimeZoneInfo.TransitionTime, t2 As TimeZoneInfo.TransitionTime) As Boolean" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(TimeZoneInfo::TransitionTime t1, TimeZoneInfo::TransitionTime t2);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="F#" Value="static member ( = ) : TimeZoneInfo.TransitionTime * TimeZoneInfo.TransitionTime -&gt; bool" Usage="t1 = t2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-2.0;netcore-2.1;netframework-3.5;netframework-4.8;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="F#" Value="static member ( = ) : TimeZoneInfo.TransitionTime * TimeZoneInfo.TransitionTime -&gt; bool" Usage="t1 = t2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.0" />
       <MemberSignature Language="C#" Value="public static bool operator == (TimeZoneInfo.TransitionTime left, TimeZoneInfo.TransitionTime right);" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.TimeZoneInfo/TransitionTime left, valuetype System.TimeZoneInfo/TransitionTime right) cil managed" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As TimeZoneInfo.TransitionTime, right As TimeZoneInfo.TransitionTime) As Boolean" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(TimeZoneInfo::TransitionTime left, TimeZoneInfo::TransitionTime right);" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.op_Equality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member ( = ) : TimeZoneInfo.TransitionTime * TimeZoneInfo.TransitionTime -&gt; bool" Usage="left = right" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -645,9 +647,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="t1" Type="System.TimeZoneInfo+TransitionTime" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
+        <Parameter Name="t1" Type="System.TimeZoneInfo+TransitionTime" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="left" Type="System.TimeZoneInfo+TransitionTime" Index="0" FrameworkAlternate="netframework-3.5" />
-        <Parameter Name="t2" Type="System.TimeZoneInfo+TransitionTime" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
+        <Parameter Name="t2" Type="System.TimeZoneInfo+TransitionTime" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="right" Type="System.TimeZoneInfo+TransitionTime" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
@@ -671,14 +673,16 @@
     <Member MemberName="op_Inequality">
       <MemberSignature Language="C#" Value="public static bool operator != (TimeZoneInfo.TransitionTime t1, TimeZoneInfo.TransitionTime t2);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.TimeZoneInfo/TransitionTime t1, valuetype System.TimeZoneInfo/TransitionTime t2) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.op_Inequality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.op_Inequality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (t1 As TimeZoneInfo.TransitionTime, t2 As TimeZoneInfo.TransitionTime) As Boolean" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(TimeZoneInfo::TransitionTime t1, TimeZoneInfo::TransitionTime t2);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="F#" Value="static member op_Inequality : TimeZoneInfo.TransitionTime * TimeZoneInfo.TransitionTime -&gt; bool" Usage="System.TimeZoneInfo.TransitionTime.op_Inequality (t1, t2)" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-2.0;netcore-2.1;netframework-3.5;netframework-4.8;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : TimeZoneInfo.TransitionTime * TimeZoneInfo.TransitionTime -&gt; bool" Usage="System.TimeZoneInfo.TransitionTime.op_Inequality (t1, t2)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.0" />
       <MemberSignature Language="C#" Value="public static bool operator != (TimeZoneInfo.TransitionTime left, TimeZoneInfo.TransitionTime right);" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.TimeZoneInfo/TransitionTime left, valuetype System.TimeZoneInfo/TransitionTime right) cil managed" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As TimeZoneInfo.TransitionTime, right As TimeZoneInfo.TransitionTime) As Boolean" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(TimeZoneInfo::TransitionTime left, TimeZoneInfo::TransitionTime right);" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.op_Inequality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : TimeZoneInfo.TransitionTime * TimeZoneInfo.TransitionTime -&gt; bool" Usage="System.TimeZoneInfo.TransitionTime.op_Inequality (left, right)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -702,9 +706,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="t1" Type="System.TimeZoneInfo+TransitionTime" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
+        <Parameter Name="t1" Type="System.TimeZoneInfo+TransitionTime" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="left" Type="System.TimeZoneInfo+TransitionTime" Index="0" FrameworkAlternate="netframework-3.5" />
-        <Parameter Name="t2" Type="System.TimeZoneInfo+TransitionTime" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
+        <Parameter Name="t2" Type="System.TimeZoneInfo+TransitionTime" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="right" Type="System.TimeZoneInfo+TransitionTime" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
@@ -757,7 +761,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="sender">The object that initiated the callback. The functionality for this parameter is not currently implemented.</param>
@@ -802,8 +806,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="info">The object to populate with data.</param>

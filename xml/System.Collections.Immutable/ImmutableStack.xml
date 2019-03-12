@@ -117,7 +117,7 @@
       <Parameters>
         <Parameter Name="items" Type="T[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

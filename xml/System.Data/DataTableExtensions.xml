@@ -36,7 +36,7 @@
         <ReturnType>System.Data.DataView</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="table" Type="System.Data.DataTable" RefType="this" />
+        <Parameter Name="table" Type="System.Data.DataTable" RefType="this" Index="0" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="table">The source <see cref="T:System.Data.DataTable" /> from which the LINQ-enabled <see cref="T:System.Data.DataView" /> is created.</param>
@@ -86,7 +86,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.EnumerableRowCollection&lt;T&gt;" RefType="this" />
+        <Parameter Name="source" Type="System.Data.EnumerableRowCollection&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of objects in the source sequence, typically <see cref="T:System.Data.DataRow" />.</typeparam>

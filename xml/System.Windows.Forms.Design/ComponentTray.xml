@@ -450,8 +450,8 @@
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
-        <Parameter Name="forward" Type="System.Boolean" />
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="forward" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="component">The component from which to start enumerating.</param>
@@ -528,7 +528,7 @@
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="receiver" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="receiver" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> that receives the location extender property.</param>
@@ -568,7 +568,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="comp" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="comp" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="comp">The component to test for presence in the component tray.</param>
@@ -597,7 +597,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" />
+        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
@@ -836,7 +836,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that provides data for the event.</param>
@@ -1087,8 +1087,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="receiver" Type="System.ComponentModel.IComponent" />
-        <Parameter Name="location" Type="System.Drawing.Point" />
+        <Parameter Name="receiver" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="location" Type="System.Drawing.Point" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> that receives the location extender property.</param>

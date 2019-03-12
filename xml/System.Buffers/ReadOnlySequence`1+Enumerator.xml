@@ -40,7 +40,7 @@
       <Parameters>
         <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-2.1">
               <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
             </Attribute>
           </Attributes>

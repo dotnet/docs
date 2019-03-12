@@ -63,7 +63,7 @@
         <ReturnType>System.ServiceModel.EndpointAddress10</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> used to initialize the instance of this class.</param>
@@ -103,7 +103,7 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="xmlSchemaSet" Type="System.Xml.Schema.XmlSchemaSet" />
+        <Parameter Name="xmlSchemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="xmlSchemaSet">A <see cref="T:System.Xml.Schema.XmlSchema" /> that contains a cache of the XML schema definition language (XSD) schemas for the endpoint address.</param>
@@ -167,7 +167,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">The <see cref="T:System.Xml.XmlReader" /> from which the endpoint address is obtained.</param>
@@ -194,7 +194,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to which the current endpoint address is saved.</param>

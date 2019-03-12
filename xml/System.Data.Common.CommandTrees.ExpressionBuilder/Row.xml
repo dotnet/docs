@@ -31,8 +31,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="columnValue" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="columnValues" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;[]">
+        <Parameter Name="columnValue" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="columnValues" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;[]" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -62,7 +62,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="row" Type="System.Data.Common.CommandTrees.ExpressionBuilder.Row" />
+        <Parameter Name="row" Type="System.Data.Common.CommandTrees.ExpressionBuilder.Row" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="row">The row to be converted.</param>

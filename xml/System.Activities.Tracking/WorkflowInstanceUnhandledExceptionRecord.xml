@@ -98,11 +98,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="instanceId" Type="System.Guid" />
-        <Parameter Name="activityDefinitionId" Type="System.String" />
-        <Parameter Name="faultSource" Type="System.Activities.Tracking.ActivityInfo" />
-        <Parameter Name="exception" Type="System.Exception" />
-        <Parameter Name="workflowDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+        <Parameter Name="instanceId" Type="System.Guid" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="activityDefinitionId" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="faultSource" Type="System.Activities.Tracking.ActivityInfo" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="exception" Type="System.Exception" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="workflowDefinitionIdentity" Type="System.Activities.WorkflowIdentity" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="instanceId">The instance ID of the generating workflow instance.</param>
@@ -126,12 +126,12 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="instanceId" Type="System.Guid" />
-        <Parameter Name="recordNumber" Type="System.Int64" />
-        <Parameter Name="activityDefinitionId" Type="System.String" />
-        <Parameter Name="faultSource" Type="System.Activities.Tracking.ActivityInfo" />
-        <Parameter Name="exception" Type="System.Exception" />
-        <Parameter Name="workflowDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+        <Parameter Name="instanceId" Type="System.Guid" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="recordNumber" Type="System.Int64" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="activityDefinitionId" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="faultSource" Type="System.Activities.Tracking.ActivityInfo" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="exception" Type="System.Exception" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="workflowDefinitionIdentity" Type="System.Activities.WorkflowIdentity" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="instanceId">The instance ID of the generating workflow instance.</param>

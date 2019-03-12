@@ -97,8 +97,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="usernames" Type="System.String[]" />
-        <Parameter Name="roleNames" Type="System.String[]" />
+        <Parameter Name="usernames" Type="System.String[]" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="roleNames" Type="System.String[]" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="usernames">A string array of user names to be added to the specified roles.</param>
@@ -196,7 +196,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="roleName" Type="System.String" />
+        <Parameter Name="roleName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="roleName">The name of the role to create.</param>
@@ -246,8 +246,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="roleName" Type="System.String" />
-        <Parameter Name="throwOnPopulatedRole" Type="System.Boolean" />
+        <Parameter Name="roleName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="throwOnPopulatedRole" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="roleName">The name of the role to delete.</param>
@@ -300,8 +300,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="roleName" Type="System.String" />
-        <Parameter Name="usernameToMatch" Type="System.String" />
+        <Parameter Name="roleName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="usernameToMatch" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="roleName">The role to search in.</param>
@@ -393,7 +393,7 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="username" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="username">The user to return a list of roles for.</param>
@@ -442,7 +442,7 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="roleName" Type="System.String" />
+        <Parameter Name="roleName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="roleName">The name of the role to get the list of users for.</param>
@@ -491,8 +491,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="username" Type="System.String" />
-        <Parameter Name="roleName" Type="System.String" />
+        <Parameter Name="username" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="roleName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="username">The user name to search for.</param>
@@ -543,8 +543,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="usernames" Type="System.String[]" />
-        <Parameter Name="roleNames" Type="System.String[]" />
+        <Parameter Name="usernames" Type="System.String[]" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="roleNames" Type="System.String[]" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="usernames">A string array of user names to be removed from the specified roles.</param>
@@ -599,7 +599,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="roleName" Type="System.String" />
+        <Parameter Name="roleName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="roleName">The name of the role to search for in the data source.</param>

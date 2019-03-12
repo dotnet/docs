@@ -157,7 +157,7 @@ public void WorldSoccerWinners ()
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="elements" Type="System.Speech.Recognition.SrgsGrammar.SrgsElement[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

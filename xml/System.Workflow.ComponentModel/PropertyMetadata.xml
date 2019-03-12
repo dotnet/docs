@@ -76,7 +76,7 @@
       <Parameters>
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -149,7 +149,7 @@
         <Parameter Name="defaultValue" Type="System.Object" />
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -203,7 +203,7 @@
         <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -234,7 +234,7 @@
         <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -294,7 +294,7 @@
         <Parameter Name="setValueOverride" Type="System.Workflow.ComponentModel.SetValueOverride" />
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

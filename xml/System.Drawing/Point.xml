@@ -240,8 +240,8 @@
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pt" Type="System.Drawing.Point" />
-        <Parameter Name="sz" Type="System.Drawing.Size" />
+        <Parameter Name="pt" Type="System.Drawing.Point" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+        <Parameter Name="sz" Type="System.Drawing.Size" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="pt">The <see cref="T:System.Drawing.Point" /> to add.</param>
@@ -361,7 +361,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Drawing.Point" />
+        <Parameter Name="other" Type="System.Drawing.Point" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
@@ -525,7 +525,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="p" Type="System.Drawing.Point" />
+        <Parameter Name="p" Type="System.Drawing.Point" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="p">The <see cref="T:System.Drawing.Point" /> used offset this <see cref="T:System.Drawing.Point" />.</param>
@@ -963,8 +963,8 @@
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pt" Type="System.Drawing.Point" />
-        <Parameter Name="sz" Type="System.Drawing.Size" />
+        <Parameter Name="pt" Type="System.Drawing.Point" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+        <Parameter Name="sz" Type="System.Drawing.Size" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="pt">The <see cref="T:System.Drawing.Point" /> to be subtracted from.</param>

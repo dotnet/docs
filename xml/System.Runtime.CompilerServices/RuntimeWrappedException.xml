@@ -71,7 +71,7 @@
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="thrownObject" Type="System.Object" />
+        <Parameter Name="thrownObject" Type="System.Object" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="thrownObject">To be added.</param>

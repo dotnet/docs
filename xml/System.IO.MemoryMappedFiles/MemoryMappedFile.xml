@@ -497,12 +497,12 @@
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFile</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fileStream" Type="System.IO.FileStream" />
-        <Parameter Name="mapName" Type="System.String" />
-        <Parameter Name="capacity" Type="System.Int64" />
-        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" />
-        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
-        <Parameter Name="leaveOpen" Type="System.Boolean" />
+        <Parameter Name="fileStream" Type="System.IO.FileStream" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="mapName" Type="System.String" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="capacity" Type="System.Int64" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="leaveOpen" Type="System.Boolean" Index="5" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="fileStream">The file stream of the existing file.</param>
@@ -575,13 +575,13 @@
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFile</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fileStream" Type="System.IO.FileStream" />
-        <Parameter Name="mapName" Type="System.String" />
-        <Parameter Name="capacity" Type="System.Int64" />
-        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" />
-        <Parameter Name="memoryMappedFileSecurity" Type="System.IO.MemoryMappedFiles.MemoryMappedFileSecurity" />
-        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
-        <Parameter Name="leaveOpen" Type="System.Boolean" />
+        <Parameter Name="fileStream" Type="System.IO.FileStream" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="mapName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="capacity" Type="System.Int64" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="memoryMappedFileSecurity" Type="System.IO.MemoryMappedFiles.MemoryMappedFileSecurity" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" Index="5" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="leaveOpen" Type="System.Boolean" Index="6" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="fileStream">The <paramref name="fileStream" /> to the file to map.</param>
@@ -853,11 +853,11 @@ Process C says: True
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFile</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mapName" Type="System.String" />
-        <Parameter Name="capacity" Type="System.Int64" />
-        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" />
-        <Parameter Name="options" Type="System.IO.MemoryMappedFiles.MemoryMappedFileOptions" />
-        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
+        <Parameter Name="mapName" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="capacity" Type="System.Int64" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="options" Type="System.IO.MemoryMappedFiles.MemoryMappedFileOptions" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> that you do not intend to share across processes.</param>
@@ -913,12 +913,12 @@ Process C says: True
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFile</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mapName" Type="System.String" />
-        <Parameter Name="capacity" Type="System.Int64" />
-        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" />
-        <Parameter Name="options" Type="System.IO.MemoryMappedFiles.MemoryMappedFileOptions" />
-        <Parameter Name="memoryMappedFileSecurity" Type="System.IO.MemoryMappedFiles.MemoryMappedFileSecurity" />
-        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
+        <Parameter Name="mapName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="capacity" Type="System.Int64" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="options" Type="System.IO.MemoryMappedFiles.MemoryMappedFileOptions" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="memoryMappedFileSecurity" Type="System.IO.MemoryMappedFiles.MemoryMappedFileSecurity" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" Index="5" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> that you do not intend to share across processes.</param>
@@ -1127,11 +1127,11 @@ Process C says: True
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFile</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mapName" Type="System.String" />
-        <Parameter Name="capacity" Type="System.Int64" />
-        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" />
-        <Parameter Name="options" Type="System.IO.MemoryMappedFiles.MemoryMappedFileOptions" />
-        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
+        <Parameter Name="mapName" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="capacity" Type="System.Int64" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="options" Type="System.IO.MemoryMappedFiles.MemoryMappedFileOptions" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="mapName">The name of the memory-mapped file.</param>
@@ -1194,12 +1194,12 @@ Process C says: True
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFile</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mapName" Type="System.String" />
-        <Parameter Name="capacity" Type="System.Int64" />
-        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" />
-        <Parameter Name="options" Type="System.IO.MemoryMappedFiles.MemoryMappedFileOptions" />
-        <Parameter Name="memoryMappedFileSecurity" Type="System.IO.MemoryMappedFiles.MemoryMappedFileSecurity" />
-        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
+        <Parameter Name="mapName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="capacity" Type="System.Int64" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="access" Type="System.IO.MemoryMappedFiles.MemoryMappedFileAccess" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="options" Type="System.IO.MemoryMappedFiles.MemoryMappedFileOptions" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="memoryMappedFileSecurity" Type="System.IO.MemoryMappedFiles.MemoryMappedFileSecurity" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" Index="5" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="mapName">The name of the memory-mapped file.</param>
@@ -2024,7 +2024,7 @@ Process C says: True
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="memoryMappedFileSecurity" Type="System.IO.MemoryMappedFiles.MemoryMappedFileSecurity" />
+        <Parameter Name="memoryMappedFileSecurity" Type="System.IO.MemoryMappedFiles.MemoryMappedFileSecurity" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="memoryMappedFileSecurity">The permissions that can be granted for file access and operations on memory-mapped files.</param>

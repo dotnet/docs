@@ -68,8 +68,8 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="xmlNamespace" Type="System.String" />
-        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="xmlNamespace" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="prefix" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="xmlNamespace">The XAML namespace indentifier.</param>

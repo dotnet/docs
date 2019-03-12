@@ -159,7 +159,7 @@ Interaction between the text layout client and the TextFormatter object
         <ReturnType>System.Windows.Media.TextFormatting.TextFormatter</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="textFormattingMode" Type="System.Windows.Media.TextFormattingMode" />
+        <Parameter Name="textFormattingMode" Type="System.Windows.Media.TextFormattingMode" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="textFormattingMode">The <see cref="T:System.Windows.Media.TextFormattingMode" /> that specifies the text layout for the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" />.</param>

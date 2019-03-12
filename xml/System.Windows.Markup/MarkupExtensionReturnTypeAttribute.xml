@@ -101,7 +101,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="returnType" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="returnType">The return type that this attribute reports.</param>
@@ -141,8 +141,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="returnType" Type="System.Type" />
-        <Parameter Name="expressionType" Type="System.Type" />
+        <Parameter Name="returnType" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="expressionType" Type="System.Type" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="returnType">The return type that this  [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] reports.</param>

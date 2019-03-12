@@ -84,7 +84,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service</param>
@@ -117,7 +117,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="callbackInstanceType" Type="System.Type" />
+        <Parameter Name="callbackInstanceType" Type="System.Type" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
@@ -237,8 +237,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
@@ -325,8 +325,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="callbackInstanceType" Type="System.Type" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="callbackInstanceType" Type="System.Type" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
@@ -360,8 +360,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="callbackInstanceType" Type="System.Type" />
-        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="callbackInstanceType" Type="System.Type" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
@@ -395,8 +395,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="callbackInstanceType" Type="System.Type" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="callbackInstanceType" Type="System.Type" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
@@ -699,9 +699,9 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="callbackInstanceType" Type="System.Type" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="callbackInstanceType" Type="System.Type" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
@@ -730,9 +730,9 @@
         <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackInstanceType" Type="System.Type" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="remoteAddress" Type="System.String" />
+        <Parameter Name="callbackInstanceType" Type="System.Type" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="remoteAddress" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
@@ -767,9 +767,9 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="callbackInstanceType" Type="System.Type" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
-        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="callbackInstanceType" Type="System.Type" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
@@ -973,8 +973,8 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callbackObject" Type="System.Object" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="callbackObject" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
@@ -1089,8 +1089,8 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
@@ -1124,9 +1124,9 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callbackObject" Type="System.Object" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="callbackObject" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
@@ -1161,9 +1161,9 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
@@ -1241,10 +1241,10 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callbackObject" Type="System.Object" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
-        <Parameter Name="via" Type="System.Uri" />
+        <Parameter Name="callbackObject" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="via" Type="System.Uri" Index="3" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
@@ -1280,10 +1280,10 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
-        <Parameter Name="via" Type="System.Uri" />
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="via" Type="System.Uri" Index="3" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>

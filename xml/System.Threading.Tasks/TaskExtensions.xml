@@ -58,7 +58,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" RefType="this" />
+        <Parameter Name="source" Type="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
         <Parameter Name="continueOnCapturedContext" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
@@ -201,7 +201,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" RefType="this" />
+        <Parameter Name="source" Type="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>

@@ -68,7 +68,7 @@
         <Parameter Name="activity" Type="System.Activities.Activity" />
         <Parameter Name="baseAddresses" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -105,7 +105,7 @@
         <Parameter Name="serviceImplementation" Type="System.Object" />
         <Parameter Name="baseAddresses" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -134,7 +134,7 @@
         <Parameter Name="serviceDefinition" Type="System.ServiceModel.Activities.WorkflowService" />
         <Parameter Name="baseAddresses" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -580,9 +580,9 @@
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeout" Type="System.TimeSpan" />
-        <Parameter Name="callback" Type="System.AsyncCallback" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="0" FrameworkAlternate="netframework-4.0" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="1" FrameworkAlternate="netframework-4.0" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="timeout">The period of time the asynchronous open operation has to complete before timing out.</param>
@@ -664,7 +664,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="result" Type="System.IAsyncResult" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="result">A reference to the asynchronous operation.</param>
@@ -688,7 +688,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="0" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="timeout">The period of time the open operation has to complete before timing out.</param>

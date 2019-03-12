@@ -147,8 +147,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="key" Type="System.Byte[]" />
-        <Parameter Name="useManagedSha1" Type="System.Boolean" />
+        <Parameter Name="key" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="useManagedSha1" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="key">The secret key for <see cref="T:System.Security.Cryptography.HMACSHA1" /> encryption. The key can be any length, but if it is more than 64 bytes long, it is hashed (using SHA-1) to derive a 64-byte key. Therefore, the recommended size of the secret key is 64 bytes.</param>
@@ -161,15 +161,16 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HMACSHA1 (byte[] key);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] key) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACSHA1.#ctor(System.Byte[])" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACSHA1.#ctor(System.Byte[])" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As Byte())" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HMACSHA1(cli::array &lt;System::Byte&gt; ^ key);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="F#" Value="new System.Security.Cryptography.HMACSHA1 : byte[] -&gt; System.Security.Cryptography.HMACSHA1" Usage="new System.Security.Cryptography.HMACSHA1 key" FrameworkAlternate="netcore-2.2;netframework-1.1" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.HMACSHA1 : byte[] -&gt; System.Security.Cryptography.HMACSHA1" Usage="new System.Security.Cryptography.HMACSHA1 key" FrameworkAlternate="netframework-1.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C#" Value="public HMACSHA1 (byte[] rgbKey);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] rgbKey) cil managed" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rgbKey As Byte())" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HMACSHA1(cli::array &lt;System::Byte&gt; ^ rgbKey);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="new System.Security.Cryptography.HMACSHA1 : byte[] -&gt; System.Security.Cryptography.HMACSHA1" Usage="new System.Security.Cryptography.HMACSHA1 rgbKey" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.HMACSHA1 : byte[] -&gt; System.Security.Cryptography.HMACSHA1" Usage="new System.Security.Cryptography.HMACSHA1 rgbKey" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACSHA1.#ctor(System.Byte[])" FrameworkAlternate="netframework-1.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -191,7 +192,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="key" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0" />
+        <Parameter Name="key" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="rgbKey" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
@@ -245,7 +246,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" />
+        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="disposing">
@@ -305,7 +306,7 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -340,9 +341,9 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rgb" Type="System.Byte[]" />
-        <Parameter Name="ib" Type="System.Int32" />
-        <Parameter Name="cb" Type="System.Int32" />
+        <Parameter Name="rgb" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6" />
+        <Parameter Name="ib" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6" />
+        <Parameter Name="cb" Type="System.Int32" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="rgb">The input data.</param>
@@ -527,8 +528,8 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>

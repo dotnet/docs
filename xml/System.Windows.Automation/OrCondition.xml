@@ -39,7 +39,7 @@
       <Parameters>
         <Parameter Name="conditions" Type="System.Windows.Automation.Condition[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

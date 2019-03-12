@@ -50,7 +50,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="httpRequest" Type="System.Web.HttpRequest" />
+        <Parameter Name="httpRequest" Type="System.Web.HttpRequest" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="httpRequest">The object that this wrapper class provides access to.</param>
@@ -211,7 +211,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="count">The number of bytes to read.</param>
@@ -642,7 +642,7 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="disableMaxRequestLength" Type="System.Boolean" />
+        <Parameter Name="disableMaxRequestLength" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="disableMaxRequestLength">
@@ -817,9 +817,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" />
-        <Parameter Name="offset" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="buffer">An array that contains the request entity data.</param>
@@ -933,7 +933,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The name of the collection member to get.</param>
@@ -987,7 +987,7 @@
         <ReturnType>System.Int32[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="imageFieldName" Type="System.String" />
+        <Parameter Name="imageFieldName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="imageFieldName">The name of the image map.</param>
@@ -1025,7 +1025,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="virtualPath" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path (absolute or relative) to map to a physical path.</param>
@@ -1054,9 +1054,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="virtualPath" Type="System.String" />
-        <Parameter Name="baseVirtualDir" Type="System.String" />
-        <Parameter Name="allowCrossAppMapping" Type="System.Boolean" />
+        <Parameter Name="virtualPath" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="baseVirtualDir" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="allowCrossAppMapping" Type="System.Boolean" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path (absolute or relative) to map to a physical path.</param>
@@ -1093,7 +1093,7 @@ No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</e
         <ReturnType>System.Double[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="imageFieldName" Type="System.String" />
+        <Parameter Name="imageFieldName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="imageFieldName">The name of the image field.</param>
@@ -1384,8 +1384,8 @@ No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</e
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filename" Type="System.String" />
-        <Parameter Name="includeHeaders" Type="System.Boolean" />
+        <Parameter Name="filename" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="includeHeaders" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="filename">The physical drive path.</param>

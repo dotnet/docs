@@ -1087,11 +1087,11 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
-        <Parameter Name="baseType" Type="System.CodeDom.CodeTypeDeclaration" />
-        <Parameter Name="derivedType" Type="System.CodeDom.CodeTypeDeclaration" />
-        <Parameter Name="buildMethod" Type="System.CodeDom.CodeMemberMethod" />
-        <Parameter Name="dataBindingMethod" Type="System.CodeDom.CodeMemberMethod" />
+        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="baseType" Type="System.CodeDom.CodeTypeDeclaration" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="derivedType" Type="System.CodeDom.CodeTypeDeclaration" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="buildMethod" Type="System.CodeDom.CodeMemberMethod" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dataBindingMethod" Type="System.CodeDom.CodeMemberMethod" Index="4" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="codeCompileUnit">The root container of a CodeDOM graph of the control that is being built.</param>
@@ -1162,7 +1162,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceKey" Type="System.String" />
+        <Parameter Name="resourceKey" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="resourceKey">The resource key for this <see cref="T:System.Web.UI.ControlBuilder" />.</param>
@@ -1188,7 +1188,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="serviceProvider">An <see cref="T:System.IServiceProvider" /> that represents the service object for the <see cref="T:System.Web.UI.ControlBuilder" />.</param>

@@ -77,9 +77,9 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="kind" Type="System.Reflection.Metadata.SignatureKind" />
-        <Parameter Name="convention" Type="System.Reflection.Metadata.SignatureCallingConvention" />
-        <Parameter Name="attributes" Type="System.Reflection.Metadata.SignatureAttributes" />
+        <Parameter Name="kind" Type="System.Reflection.Metadata.SignatureKind" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="convention" Type="System.Reflection.Metadata.SignatureCallingConvention" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="attributes" Type="System.Reflection.Metadata.SignatureAttributes" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="kind">The signature kind.</param>

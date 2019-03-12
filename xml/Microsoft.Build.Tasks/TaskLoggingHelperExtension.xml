@@ -78,7 +78,7 @@
         <Parameter Name="resourceName" Type="System.String" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-2.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

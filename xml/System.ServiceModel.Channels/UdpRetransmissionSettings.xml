@@ -57,8 +57,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="maxUnicastRetransmitCount" Type="System.Int32" />
-        <Parameter Name="maxMulticastRetransmitCount" Type="System.Int32" />
+        <Parameter Name="maxUnicastRetransmitCount" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="maxMulticastRetransmitCount" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="maxUnicastRetransmitCount">The maximum unicast retransmit count.</param>
@@ -80,11 +80,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="maxUnicastRetransmitCount" Type="System.Int32" />
-        <Parameter Name="maxMulticastRetransmitCount" Type="System.Int32" />
-        <Parameter Name="delayLowerBound" Type="System.TimeSpan" />
-        <Parameter Name="delayUpperBound" Type="System.TimeSpan" />
-        <Parameter Name="maxDelayPerRetransmission" Type="System.TimeSpan" />
+        <Parameter Name="maxUnicastRetransmitCount" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="maxMulticastRetransmitCount" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="delayLowerBound" Type="System.TimeSpan" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="delayUpperBound" Type="System.TimeSpan" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="maxDelayPerRetransmission" Type="System.TimeSpan" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="maxUnicastRetransmitCount">The maximum unicast retransmit count.</param>

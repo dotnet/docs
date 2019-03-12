@@ -142,8 +142,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="TKey" RefType="out" />
-        <Parameter Name="value" Type="TValue" RefType="out" />
+        <Parameter Name="key" Type="TKey" RefType="out" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="TValue" RefType="out" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="key">To be added.</param>

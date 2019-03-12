@@ -563,7 +563,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="text">The string to be encoded.</param>
@@ -589,7 +589,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="url" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="url">The URL string.</param>
@@ -624,7 +624,7 @@ Derived writer classes can override this method.
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="urlText" Type="System.String" />
+        <Parameter Name="urlText" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="urlText">The URL string.</param>
@@ -657,8 +657,8 @@ Inherited writer classes can override this method.
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
-        <Parameter Name="argument" Type="System.Boolean" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="argument" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="s">The string to be added.</param>

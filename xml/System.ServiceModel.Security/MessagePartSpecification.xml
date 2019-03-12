@@ -111,7 +111,7 @@
       <Parameters>
         <Parameter Name="headerTypes" Type="System.Xml.XmlQualifiedName[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -148,7 +148,7 @@
         <Parameter Name="isBodyIncluded" Type="System.Boolean" />
         <Parameter Name="headerTypes" Type="System.Xml.XmlQualifiedName[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -348,10 +348,12 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::ServiceModel::Security::MessagePartSpecification ^ specification);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public void Union (System.ServiceModel.Security.MessagePartSpecification other);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(class System.ServiceModel.Security.MessagePartSpecification other) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.Union(System.ServiceModel.Security.MessagePartSpecification)" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.Union(System.ServiceModel.Security.MessagePartSpecification)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Union (other As MessagePartSpecification)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::ServiceModel::Security::MessagePartSpecification ^ other);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="member this.Union : System.ServiceModel.Security.MessagePartSpecification -&gt; unit" Usage="messagePartSpecification.Union other" />
+      <MemberSignature Language="F#" Value="member this.Union : System.ServiceModel.Security.MessagePartSpecification -&gt; unit" Usage="messagePartSpecification.Union specification" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.Union(System.ServiceModel.Security.MessagePartSpecification)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="F#" Value="member this.Union : System.ServiceModel.Security.MessagePartSpecification -&gt; unit" Usage="messagePartSpecification.Union other" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -363,7 +365,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="specification" Type="System.ServiceModel.Security.MessagePartSpecification" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="specification" Type="System.ServiceModel.Security.MessagePartSpecification" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="other" Type="System.ServiceModel.Security.MessagePartSpecification" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>

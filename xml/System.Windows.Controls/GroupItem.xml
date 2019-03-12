@@ -74,7 +74,7 @@
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="arrangeSize" Type="System.Windows.Size" />
+        <Parameter Name="arrangeSize" Type="System.Windows.Size" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="arrangeSize">The final area within the parent that the <see cref="T:System.Windows.Controls.GroupItem" /> should use to arrange itself and its children.</param>
@@ -175,8 +175,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Object" />
-        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="item" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="item">The associated item.</param>
@@ -203,7 +203,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dp">The property to remove.</param>
@@ -229,8 +229,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Object" />
-        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="item" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="item">The item that has the specified property associated with it.</param>
@@ -258,9 +258,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Object" />
-        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="item" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="item">The item to associate the value and property with.</param>

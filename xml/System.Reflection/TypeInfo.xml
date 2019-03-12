@@ -844,7 +844,7 @@
         <ReturnType>System.Reflection.ConstructorInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="types" Type="System.Type[]" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="types">To be added.</param>
@@ -1208,7 +1208,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1335,7 +1335,7 @@
         <ReturnType>System.Reflection.EventInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1369,7 +1369,7 @@
         <ReturnType>System.Reflection.FieldInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1531,7 +1531,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1565,7 +1565,7 @@
         <ReturnType>System.Reflection.MemberInfo[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1630,7 +1630,7 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1664,8 +1664,8 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1700,8 +1700,8 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="types" Type="System.Type[]" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1736,9 +1736,9 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="types" Type="System.Type[]" />
-        <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="types" Type="System.Type[]" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1805,7 +1805,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1901,7 +1901,7 @@
         <ReturnType>System.Reflection.PropertyInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1935,8 +1935,8 @@
         <ReturnType>System.Reflection.PropertyInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -1971,8 +1971,8 @@
         <ReturnType>System.Reflection.PropertyInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="returnType" Type="System.Type" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -2007,8 +2007,8 @@
         <ReturnType>System.Reflection.PropertyInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="types" Type="System.Type[]" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -2043,9 +2043,9 @@
         <ReturnType>System.Reflection.PropertyInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="returnType" Type="System.Type" />
-        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="returnType" Type="System.Type" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="types" Type="System.Type[]" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -2081,10 +2081,10 @@
         <ReturnType>System.Reflection.PropertyInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="returnType" Type="System.Type" />
-        <Parameter Name="types" Type="System.Type[]" />
-        <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="returnType" Type="System.Type" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="types" Type="System.Type[]" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
+        <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -2327,7 +2327,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -2361,7 +2361,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Type" />
+        <Parameter Name="other" Type="System.Type" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
@@ -2654,7 +2654,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rank" Type="System.Int32" />
+        <Parameter Name="rank" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6" />
       </Parameters>
       <Docs>
         <param name="rank">To be added.</param>
@@ -2723,9 +2723,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="typeArguments" Type="System.Type[]">
+        <Parameter Name="typeArguments" Type="System.Type[]" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

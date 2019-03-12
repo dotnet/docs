@@ -61,7 +61,7 @@
         <AssemblyName>System.Windows</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property that has an error.  <see langword="null" /> or <see cref="F:System.String.Empty" /> if the error is object-level.</param>

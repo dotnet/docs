@@ -1368,8 +1368,8 @@ public class GoodController : ApiController
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestUri" Type="System.String" />
-        <Parameter Name="content" Type="System.Net.Http.HttpContent" />
+        <Parameter Name="requestUri" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="content" Type="System.Net.Http.HttpContent" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="requestUri">To be added.</param>
@@ -1398,8 +1398,8 @@ public class GoodController : ApiController
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestUri" Type="System.Uri" />
-        <Parameter Name="content" Type="System.Net.Http.HttpContent" />
+        <Parameter Name="requestUri" Type="System.Uri" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="content" Type="System.Net.Http.HttpContent" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="requestUri">To be added.</param>
@@ -1427,9 +1427,9 @@ public class GoodController : ApiController
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestUri" Type="System.String" />
-        <Parameter Name="content" Type="System.Net.Http.HttpContent" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="requestUri" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="content" Type="System.Net.Http.HttpContent" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="requestUri">To be added.</param>
@@ -1458,9 +1458,9 @@ public class GoodController : ApiController
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestUri" Type="System.Uri" />
-        <Parameter Name="content" Type="System.Net.Http.HttpContent" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="requestUri" Type="System.Uri" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="content" Type="System.Net.Http.HttpContent" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="requestUri">To be added.</param>

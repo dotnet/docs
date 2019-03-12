@@ -52,7 +52,7 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="pScope" Type="ISymUnmanagedScope*" />
+        <Parameter Name="pScope" Type="ISymUnmanagedScope*" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="pScope">A pointer to an unmanaged ISymUnmanagedScope object.</param>
@@ -80,7 +80,7 @@ Typically, you use the <xref:System.Diagnostics.SymbolStore.SymMethod.RootScope>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="pScope" Type="System.Diagnostics.SymbolStore.Private.ISymUnmanagedScope*" />
+        <Parameter Name="pScope" Type="System.Diagnostics.SymbolStore.Private.ISymUnmanagedScope*" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="pScope">A pointer to an unmanaged ISymUnmanagedScope object.</param>
@@ -193,7 +193,7 @@ Use the <xref:System.Diagnostics.SymbolStore.SymScope.Finalize> method to releas
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="A_0" Type="System.Boolean" />
+        <Parameter Name="A_0" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="A_0">

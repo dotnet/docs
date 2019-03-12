@@ -128,7 +128,7 @@
       <Parameters>
         <Parameter Name="elements" Type="System.Speech.Recognition.SrgsGrammar.SrgsElement[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -217,7 +217,7 @@
         <Parameter Name="max" Type="System.Int32" />
         <Parameter Name="elements" Type="System.Speech.Recognition.SrgsGrammar.SrgsElement[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

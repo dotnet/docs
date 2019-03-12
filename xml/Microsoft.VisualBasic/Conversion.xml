@@ -58,8 +58,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" />
-        <Parameter Name="TargetType" Type="System.Type" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="TargetType" Type="System.Type" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">The object to convert.</param>
@@ -134,7 +134,7 @@ End Class
         <TypeParameter Name="TargetType" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TargetType">The type to which to convert the object.</typeparam>
@@ -1068,7 +1068,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.SByte" />
+        <Parameter Name="Number" Type="System.SByte" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
@@ -1129,7 +1129,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.UInt16" />
+        <Parameter Name="Number" Type="System.UInt16" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
@@ -1190,7 +1190,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.UInt32" />
+        <Parameter Name="Number" Type="System.UInt32" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
@@ -1251,7 +1251,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.UInt64" />
+        <Parameter Name="Number" Type="System.UInt64" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
@@ -2066,7 +2066,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.SByte" />
+        <Parameter Name="Number" Type="System.SByte" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
@@ -2127,7 +2127,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.UInt16" />
+        <Parameter Name="Number" Type="System.UInt16" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
@@ -2188,7 +2188,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.UInt32" />
+        <Parameter Name="Number" Type="System.UInt32" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
@@ -2249,7 +2249,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.UInt64" />
+        <Parameter Name="Number" Type="System.UInt64" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>

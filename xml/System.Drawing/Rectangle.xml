@@ -472,7 +472,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Drawing.Rectangle" />
+        <Parameter Name="other" Type="System.Drawing.Rectangle" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>

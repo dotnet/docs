@@ -635,7 +635,7 @@ The <xref:System.Web.UI.Design.ControlDesigner.ID> property is never hidden.
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="component">The control element being designed.</param>
@@ -843,7 +843,7 @@ The <xref:System.Web.UI.Design.ControlDesigner.ID> property is never hidden.
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+        <Parameter Name="properties" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="properties">The member attributes for component.</param>

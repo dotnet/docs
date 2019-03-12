@@ -129,7 +129,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> specified for the channels produced by the factory.</param>
@@ -162,7 +162,7 @@
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> for the channels produced by the factory.</param>
@@ -335,8 +335,8 @@
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="remoteAddress" Type="System.String" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="remoteAddress" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
@@ -531,7 +531,7 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="endpointConfigurationName">The name of the endpoint configuration used for the service.</param>
@@ -718,7 +718,7 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="actAsToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="actAsToken" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="actAsToken">The security token.</param>
@@ -746,8 +746,8 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="actAsToken" Type="System.IdentityModel.Tokens.SecurityToken" />
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="actAsToken" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="actAsToken">The security token</param>
@@ -776,9 +776,9 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="actAsToken" Type="System.IdentityModel.Tokens.SecurityToken" />
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
-        <Parameter Name="via" Type="System.Uri" />
+        <Parameter Name="actAsToken" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="via" Type="System.Uri" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="actAsToken">The security token</param>
@@ -817,7 +817,7 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="issuedToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="issuedToken" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="issuedToken">The issued security token.</param>
@@ -845,8 +845,8 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="issuedToken" Type="System.IdentityModel.Tokens.SecurityToken" />
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="issuedToken" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="issuedToken">The issued security token.</param>
@@ -875,9 +875,9 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="issuedToken" Type="System.IdentityModel.Tokens.SecurityToken" />
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
-        <Parameter Name="via" Type="System.Uri" />
+        <Parameter Name="issuedToken" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="via" Type="System.Uri" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="issuedToken">The issued security token.</param>
@@ -916,7 +916,7 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="onBehalfOf" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="onBehalfOf" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="onBehalfOf">The security token.</param>
@@ -944,8 +944,8 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="onBehalfOf" Type="System.IdentityModel.Tokens.SecurityToken" />
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="onBehalfOf" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="onBehalfOf">The security token.</param>
@@ -974,9 +974,9 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="onBehalfOf" Type="System.IdentityModel.Tokens.SecurityToken" />
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
-        <Parameter Name="via" Type="System.Uri" />
+        <Parameter Name="onBehalfOf" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="via" Type="System.Uri" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="onBehalfOf">The security token.</param>

@@ -94,7 +94,7 @@
         <Parameter Name="singletonInstance" Type="System.Object" />
         <Parameter Name="baseAddresses" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -141,7 +141,7 @@
         <Parameter Name="serviceType" Type="System.Type" />
         <Parameter Name="baseAddresses" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

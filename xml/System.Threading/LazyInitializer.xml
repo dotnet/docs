@@ -278,9 +278,9 @@ ExpensiveData _data = null;
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="target" Type="T" RefType="ref" />
-        <Parameter Name="syncLock" Type="System.Object" RefType="ref" />
-        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
+        <Parameter Name="target" Type="T" RefType="ref" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="syncLock" Type="System.Object" RefType="ref" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>

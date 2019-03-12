@@ -351,8 +351,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="accessMode" Type="System.Messaging.QueueAccessMode" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="accessMode" Type="System.Messaging.QueueAccessMode" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="path">The location of the queue referenced by this <see cref="T:System.Messaging.MessageQueue" />, which can be "." for the local computer.</param>
@@ -375,9 +375,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="sharedModeDenyReceive" Type="System.Boolean" />
-        <Parameter Name="enableCache" Type="System.Boolean" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sharedModeDenyReceive" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="enableCache" Type="System.Boolean" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The location of the queue referenced by this <see cref="T:System.Messaging.MessageQueue" />, which can be "." for the local computer.</param>
@@ -413,10 +413,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="sharedModeDenyReceive" Type="System.Boolean" />
-        <Parameter Name="enableCache" Type="System.Boolean" />
-        <Parameter Name="accessMode" Type="System.Messaging.QueueAccessMode" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sharedModeDenyReceive" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="enableCache" Type="System.Boolean" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="accessMode" Type="System.Messaging.QueueAccessMode" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The location of the queue referenced by this <see cref="T:System.Messaging.MessageQueue" />, which can be "." for the local computer.</param>
@@ -912,11 +912,11 @@
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeout" Type="System.TimeSpan" />
-        <Parameter Name="cursor" Type="System.Messaging.Cursor" />
-        <Parameter Name="action" Type="System.Messaging.PeekAction" />
-        <Parameter Name="state" Type="System.Object" />
-        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="cursor" Type="System.Messaging.Cursor" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="action" Type="System.Messaging.PeekAction" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="4" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that indicates the interval of time to wait for a message to become available.</param>
@@ -1337,10 +1337,10 @@ myMessageQueue.BeginTransaction();
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeout" Type="System.TimeSpan" />
-        <Parameter Name="cursor" Type="System.Messaging.Cursor" />
-        <Parameter Name="state" Type="System.Object" />
-        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="cursor" Type="System.Messaging.Cursor" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that indicates the interval of time to wait for a message to become available.</param>
@@ -4377,9 +4377,9 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <ReturnType>System.Messaging.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeout" Type="System.TimeSpan" />
-        <Parameter Name="cursor" Type="System.Messaging.Cursor" />
-        <Parameter Name="action" Type="System.Messaging.PeekAction" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="cursor" Type="System.Messaging.Cursor" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="action" Type="System.Messaging.PeekAction" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that indicates the maximum time to wait for the queue to contain a message.</param>
@@ -4721,7 +4721,7 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <ReturnType>System.Messaging.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="lookupId" Type="System.Int64" />
+        <Parameter Name="lookupId" Type="System.Int64" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="lookupId">The <see cref="P:System.Messaging.Message.LookupId" /> of the message to peek at.</param>
@@ -4772,8 +4772,8 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <ReturnType>System.Messaging.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="action" Type="System.Messaging.MessageLookupAction" />
-        <Parameter Name="lookupId" Type="System.Int64" />
+        <Parameter Name="action" Type="System.Messaging.MessageLookupAction" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lookupId" Type="System.Int64" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="action">One of the <see cref="T:System.Messaging.MessageLookupAction" /> values, specifying how the message is read in the queue. Specify one of the following:  
@@ -5334,8 +5334,8 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <ReturnType>System.Messaging.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeout" Type="System.TimeSpan" />
-        <Parameter Name="cursor" Type="System.Messaging.Cursor" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="cursor" Type="System.Messaging.Cursor" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that indicates the time to wait until a new message is available for inspection.</param>
@@ -5523,9 +5523,9 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <ReturnType>System.Messaging.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeout" Type="System.TimeSpan" />
-        <Parameter Name="cursor" Type="System.Messaging.Cursor" />
-        <Parameter Name="transaction" Type="System.Messaging.MessageQueueTransaction" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="cursor" Type="System.Messaging.Cursor" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="transaction" Type="System.Messaging.MessageQueueTransaction" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that indicates the time to wait until a new message is available for inspection.</param>
@@ -5598,9 +5598,9 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <ReturnType>System.Messaging.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="timeout" Type="System.TimeSpan" />
-        <Parameter Name="cursor" Type="System.Messaging.Cursor" />
-        <Parameter Name="transactionType" Type="System.Messaging.MessageQueueTransactionType" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="cursor" Type="System.Messaging.Cursor" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="transactionType" Type="System.Messaging.MessageQueueTransactionType" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that indicates the time to wait until a new message is available for inspection.</param>
@@ -6601,7 +6601,7 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <ReturnType>System.Messaging.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="lookupId" Type="System.Int64" />
+        <Parameter Name="lookupId" Type="System.Int64" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="lookupId">The <see cref="P:System.Messaging.Message.LookupId" /> of the message to receive.</param>
@@ -6652,9 +6652,9 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <ReturnType>System.Messaging.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="action" Type="System.Messaging.MessageLookupAction" />
-        <Parameter Name="lookupId" Type="System.Int64" />
-        <Parameter Name="transaction" Type="System.Messaging.MessageQueueTransaction" />
+        <Parameter Name="action" Type="System.Messaging.MessageLookupAction" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lookupId" Type="System.Int64" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="transaction" Type="System.Messaging.MessageQueueTransaction" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="action">One of the <see cref="T:System.Messaging.MessageLookupAction" /> values, specifying how the message is read in the queue. Specify one of the following:  
@@ -6724,9 +6724,9 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <ReturnType>System.Messaging.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="action" Type="System.Messaging.MessageLookupAction" />
-        <Parameter Name="lookupId" Type="System.Int64" />
-        <Parameter Name="transactionType" Type="System.Messaging.MessageQueueTransactionType" />
+        <Parameter Name="action" Type="System.Messaging.MessageLookupAction" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lookupId" Type="System.Int64" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="transactionType" Type="System.Messaging.MessageQueueTransactionType" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="action">One of the <see cref="T:System.Messaging.MessageLookupAction" /> values, specifying how the message is read in the queue. Specify one of the following:  

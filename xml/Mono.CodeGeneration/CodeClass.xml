@@ -62,7 +62,7 @@
         <Parameter Name="baseType" Type="System.Type" />
         <Parameter Name="interfaces" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -97,7 +97,7 @@
         <Parameter Name="baseType" Type="System.Type" />
         <Parameter Name="interfaces" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -132,7 +132,7 @@
       <Parameters>
         <Parameter Name="parameters" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -165,7 +165,7 @@
         <Parameter Name="attributes" Type="System.Reflection.MethodAttributes" />
         <Parameter Name="parameters" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -294,7 +294,7 @@
         <Parameter Name="returnType" Type="System.Type" />
         <Parameter Name="parameterTypes" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -331,7 +331,7 @@
         <Parameter Name="returnType" Type="System.Type" />
         <Parameter Name="parameterTypes" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -368,7 +368,7 @@
         <Parameter Name="returnType" Type="System.Type" />
         <Parameter Name="parameterTypes" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -404,7 +404,7 @@
         <Parameter Name="methodAttributes" Type="System.Reflection.MethodAttributes" />
         <Parameter Name="parameterTypes" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -441,7 +441,7 @@
         <Parameter Name="returnType" Type="System.Type" />
         <Parameter Name="parameterTypes" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -500,7 +500,7 @@
         <Parameter Name="returnType" Type="System.Type" />
         <Parameter Name="parameterTypes" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -535,7 +535,7 @@
         <Parameter Name="type" Type="System.Type" />
         <Parameter Name="customAttributes" Type="Mono.CodeGeneration.CodeCustomAttribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -572,7 +572,7 @@
         <Parameter Name="initialValue" Type="Mono.CodeGeneration.CodeExpression" />
         <Parameter Name="customAttributes" Type="Mono.CodeGeneration.CodeCustomAttribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -609,7 +609,7 @@
         <Parameter Name="initialValue" Type="Mono.CodeGeneration.CodeExpression" />
         <Parameter Name="customAttributes" Type="Mono.CodeGeneration.CodeCustomAttribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -644,7 +644,7 @@
         <Parameter Name="initialValue" Type="Mono.CodeGeneration.CodeExpression" />
         <Parameter Name="customAttributes" Type="Mono.CodeGeneration.CodeCustomAttribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

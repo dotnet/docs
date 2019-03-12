@@ -98,7 +98,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -126,7 +126,7 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -154,11 +154,11 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="dataIndex" Type="System.Int64" />
-        <Parameter Name="buffer" Type="System.Byte[]" />
-        <Parameter Name="bufferIndex" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="dataIndex" Type="System.Int64" Index="1" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="2" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="bufferIndex" Type="System.Int32" Index="3" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="length" Type="System.Int32" Index="4" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -190,7 +190,7 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -218,11 +218,11 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="dataIndex" Type="System.Int64" />
-        <Parameter Name="buffer" Type="System.Char[]" />
-        <Parameter Name="bufferIndex" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="dataIndex" Type="System.Int64" Index="1" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="buffer" Type="System.Char[]" Index="2" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="bufferIndex" Type="System.Int32" Index="3" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="length" Type="System.Int32" Index="4" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -254,7 +254,7 @@
         <ReturnType>System.Data.Common.DbDataReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" />
+        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="i">The ordinal of the field.</param>
@@ -283,7 +283,7 @@
         <ReturnType>System.Data.Common.DbDataRecord</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -311,7 +311,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -339,7 +339,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -364,7 +364,7 @@
         <ReturnType>System.Data.Common.DbDataReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -393,7 +393,7 @@
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">To be added.</param>
@@ -421,7 +421,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -449,7 +449,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -477,7 +477,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -505,7 +505,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -533,7 +533,7 @@
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -561,7 +561,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -589,7 +589,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -617,7 +617,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -645,7 +645,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="name">The name of the field.</param>
@@ -670,7 +670,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -698,7 +698,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -726,7 +726,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -754,7 +754,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="values" Type="System.Object[]" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="values">An array of objects to store the field values.</param>
@@ -782,7 +782,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -811,7 +811,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -839,7 +839,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="name">The name of the field.</param>
@@ -864,8 +864,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Boolean" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -890,8 +890,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Byte" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Byte" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -916,8 +916,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Char" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Char" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -942,8 +942,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Data.IDataRecord" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Data.IDataRecord" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -968,8 +968,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.DateTime" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.DateTime" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -994,7 +994,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1018,8 +1018,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Decimal" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Decimal" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1044,8 +1044,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Double" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1070,8 +1070,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Single" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1096,8 +1096,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Guid" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Guid" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1122,8 +1122,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Int16" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Int16" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1148,8 +1148,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Int32" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1174,8 +1174,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Int64" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1200,8 +1200,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1226,8 +1226,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1252,8 +1252,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
@@ -1278,9 +1278,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="values" Type="System.Object[]">
+        <Parameter Name="values" Type="System.Object[]" Index="0" FrameworkAlternate="netframework-3.5">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1311,7 +1311,7 @@
         <ReturnType>System.Data.IDataReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>

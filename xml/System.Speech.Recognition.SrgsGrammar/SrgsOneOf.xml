@@ -135,7 +135,7 @@ public void WorldSoccerWinners ()
       <Parameters>
         <Parameter Name="items" Type="System.Speech.Recognition.SrgsGrammar.SrgsItem[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -207,7 +207,7 @@ public void WorldSoccerWinners ()
       <Parameters>
         <Parameter Name="items" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

@@ -77,7 +77,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="String" Type="System.Char" />
+        <Parameter Name="String" Type="System.Char" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <paramref name="String" /> is a <see langword="String" /> expression, only the first character of the string is used for input. If <paramref name="String" /> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
@@ -133,7 +133,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="String" Type="System.String" />
+        <Parameter Name="String" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <paramref name="String" /> is a <see langword="String" /> expression, only the first character of the string is used for input. If <paramref name="String" /> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
@@ -312,7 +312,7 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="CharCode" Type="System.Int32" />
+        <Parameter Name="CharCode" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="CharCode">Required. An <see langword="Integer" /> expression representing the <c>code point</c>, or character code, for the character.</param>
@@ -450,10 +450,10 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Source" Type="System.Object[]" />
-        <Parameter Name="Match" Type="System.String" />
-        <Parameter Name="Include" Type="System.Boolean" />
-        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+        <Parameter Name="Source" Type="System.Object[]" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Match" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Include" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="3" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
@@ -521,10 +521,10 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Source" Type="System.String[]" />
-        <Parameter Name="Match" Type="System.String" />
-        <Parameter Name="Include" Type="System.Boolean" />
-        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+        <Parameter Name="Source" Type="System.String[]" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Match" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Include" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="3" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
@@ -590,8 +590,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" />
-        <Parameter Name="Style" Type="System.String" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Style" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Required. Any valid expression.</param>
@@ -795,11 +795,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" />
-        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" />
-        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" />
-        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" />
-        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Required. Expression to be formatted.</param>
@@ -869,8 +869,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.DateTime" />
-        <Parameter Name="NamedFormat" Type="Microsoft.VisualBasic.DateFormat" />
+        <Parameter Name="Expression" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="NamedFormat" Type="Microsoft.VisualBasic.DateFormat" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Required. <see langword="Date" /> expression to be formatted.</param>
@@ -936,11 +936,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" />
-        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" />
-        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" />
-        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" />
-        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Required. Expression to be formatted.</param>
@@ -1005,11 +1005,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" />
-        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" />
-        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" />
-        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" />
-        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Required. Expression to be formatted.</param>
@@ -1076,8 +1076,8 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
-        <Parameter Name="Index" Type="System.Int32" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Index" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="str">Required. Any valid <see langword="String" /> expression.</param>
@@ -1137,9 +1137,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="String1" Type="System.String" />
-        <Parameter Name="String2" Type="System.String" />
-        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+        <Parameter Name="String1" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="String2" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="2" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
@@ -1379,10 +1379,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="StringCheck" Type="System.String" />
-        <Parameter Name="StringMatch" Type="System.String" />
-        <Parameter Name="Start" Type="System.Int32" />
-        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+        <Parameter Name="StringCheck" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="StringMatch" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Start" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="3" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
@@ -1507,8 +1507,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="SourceArray" Type="System.Object[]" />
-        <Parameter Name="Delimiter" Type="System.String" />
+        <Parameter Name="SourceArray" Type="System.Object[]" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Delimiter" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="SourceArray">Required. One-dimensional array containing substrings to be joined.</param>
@@ -1557,8 +1557,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="SourceArray" Type="System.String[]" />
-        <Parameter Name="Delimiter" Type="System.String" />
+        <Parameter Name="SourceArray" Type="System.String[]" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Delimiter" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="SourceArray">Required. One-dimensional array containing substrings to be joined.</param>
@@ -1617,7 +1617,7 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Value" Type="System.Char" />
+        <Parameter Name="Value" Type="System.Char" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
@@ -1669,7 +1669,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Value" Type="System.String" />
+        <Parameter Name="Value" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
@@ -1722,8 +1722,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
-        <Parameter Name="Length" Type="System.Int32" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="str">Required. <see langword="String" /> expression from which the leftmost characters are returned.</param>
@@ -1788,7 +1788,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Boolean" />
+        <Parameter Name="Expression" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -1849,7 +1849,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Byte" />
+        <Parameter Name="Expression" Type="System.Byte" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -1910,7 +1910,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Char" />
+        <Parameter Name="Expression" Type="System.Char" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -1971,7 +1971,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.DateTime" />
+        <Parameter Name="Expression" Type="System.DateTime" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2032,7 +2032,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Decimal" />
+        <Parameter Name="Expression" Type="System.Decimal" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2093,7 +2093,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Double" />
+        <Parameter Name="Expression" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2154,7 +2154,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Int16" />
+        <Parameter Name="Expression" Type="System.Int16" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2215,7 +2215,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Int32" />
+        <Parameter Name="Expression" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2276,7 +2276,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Int64" />
+        <Parameter Name="Expression" Type="System.Int64" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2342,7 +2342,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2407,7 +2407,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.SByte" />
+        <Parameter Name="Expression" Type="System.SByte" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2469,7 +2469,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Single" />
+        <Parameter Name="Expression" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2530,7 +2530,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.String" />
+        <Parameter Name="Expression" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2595,7 +2595,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.UInt16" />
+        <Parameter Name="Expression" Type="System.UInt16" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2661,7 +2661,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.UInt32" />
+        <Parameter Name="Expression" Type="System.UInt32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2727,7 +2727,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.UInt64" />
+        <Parameter Name="Expression" Type="System.UInt64" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
@@ -2788,8 +2788,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Source" Type="System.String" />
-        <Parameter Name="Length" Type="System.Int32" />
+        <Parameter Name="Source" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Length" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Source">Required. <see langword="String" /> expression. Name of string variable.</param>
@@ -2839,7 +2839,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="str">Required. Any valid <see langword="String" /> expression.</param>
@@ -2899,8 +2899,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
-        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="str">Required. <see langword="String" /> expression from which characters are returned.</param>
@@ -2964,9 +2964,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
-        <Parameter Name="Start" Type="System.Int32" />
-        <Parameter Name="Length" Type="System.Int32" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="str">Required. <see langword="String" /> expression from which characters are returned.</param>
@@ -3029,12 +3029,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.String" />
-        <Parameter Name="Find" Type="System.String" />
-        <Parameter Name="Replacement" Type="System.String" />
-        <Parameter Name="Start" Type="System.Int32" />
-        <Parameter Name="Count" Type="System.Int32" />
-        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+        <Parameter Name="Expression" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Find" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Replacement" Type="System.String" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Start" Type="System.Int32" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Count" Type="System.Int32" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="5" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
@@ -3117,8 +3117,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
-        <Parameter Name="Length" Type="System.Int32" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="str">Required. <see langword="String" /> expression from which the rightmost characters are returned.</param>
@@ -3173,8 +3173,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Source" Type="System.String" />
-        <Parameter Name="Length" Type="System.Int32" />
+        <Parameter Name="Source" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Length" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Source">Required. <see langword="String" /> expression. Name of string variable.</param>
@@ -3224,7 +3224,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="str">Required. Any valid <see langword="String" /> expression.</param>
@@ -3274,7 +3274,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.Int32" />
+        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The number of spaces you want in the string.</param>
@@ -3322,10 +3322,10 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.String" />
-        <Parameter Name="Delimiter" Type="System.String" />
-        <Parameter Name="Limit" Type="System.Int32" />
-        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+        <Parameter Name="Expression" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Delimiter" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Limit" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
@@ -3407,9 +3407,9 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="String1" Type="System.String" />
-        <Parameter Name="String2" Type="System.String" />
-        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+        <Parameter Name="String1" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="String2" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
@@ -3486,9 +3486,9 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
-        <Parameter Name="Conversion" Type="Microsoft.VisualBasic.VbStrConv" />
-        <Parameter Name="LocaleID" Type="System.Int32" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Conversion" Type="Microsoft.VisualBasic.VbStrConv" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="LocaleID" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="str">Required. <see langword="String" /> expression to be converted.</param>
@@ -3580,8 +3580,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.Int32" />
-        <Parameter Name="Character" Type="System.Char" />
+        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Character" Type="System.Char" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
@@ -3634,8 +3634,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.Int32" />
-        <Parameter Name="Character" Type="System.Object" />
+        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Character" Type="System.Object" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
@@ -3688,8 +3688,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.Int32" />
-        <Parameter Name="Character" Type="System.String" />
+        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Character" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
@@ -3742,7 +3742,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.String" />
+        <Parameter Name="Expression" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Expression">Required. String expression whose characters are to be reversed. If <paramref name="Expression" /> is a zero-length string (""), a zero-length string is returned.</param>
@@ -3787,7 +3787,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="str">Required. Any valid <see langword="String" /> expression.</param>
@@ -3846,7 +3846,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Value" Type="System.Char" />
+        <Parameter Name="Value" Type="System.Char" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
@@ -3899,7 +3899,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Value" Type="System.String" />
+        <Parameter Name="Value" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>

@@ -282,8 +282,8 @@ The proxy class does not have a binding defined.</exception>
         <ReturnType>System.Xml.XmlReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapClientMessage" />
-        <Parameter Name="bufferSize" Type="System.Int32" />
+        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapClientMessage" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="bufferSize" Type="System.Int32" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="message">A <see cref="T:System.Web.Services.Protocols.SoapClientMessage" /> that provides the <see cref="P:System.Web.Services.Protocols.SoapMessage.Stream" /> to initialize the <see cref="T:System.Xml.XmlReader" />.</param>
@@ -351,8 +351,8 @@ The proxy class does not have a binding defined.</exception>
         <ReturnType>System.Xml.XmlWriter</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapClientMessage" />
-        <Parameter Name="bufferSize" Type="System.Int32" />
+        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapClientMessage" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="bufferSize" Type="System.Int32" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="message">A <see cref="T:System.Web.Services.Protocols.SoapClientMessage" /> that provides the <see cref="P:System.Web.Services.Protocols.SoapMessage.Stream" /> to initialize the <see cref="T:System.Xml.XmlWriter" />.</param>
@@ -369,10 +369,12 @@ The proxy class does not have a binding defined.</exception>
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Object ^&gt; ^ Invoke(System::String ^ methodName, cli::array &lt;System::Object ^&gt; ^ parameters);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="protected object[] Invoke (string method_name, object[] parameters);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object[] Invoke(string method_name, object[] parameters) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Function Invoke (method_name As String, parameters As Object()) As Object()" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Object ^&gt; ^ Invoke(System::String ^ method_name, cli::array &lt;System::Object ^&gt; ^ parameters);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="member this.Invoke : string * obj[] -&gt; obj[]" Usage="soapHttpClientProtocol.Invoke (method_name, parameters)" />
+      <MemberSignature Language="F#" Value="member this.Invoke : string * obj[] -&gt; obj[]" Usage="soapHttpClientProtocol.Invoke (methodName, parameters)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="F#" Value="member this.Invoke : string * obj[] -&gt; obj[]" Usage="soapHttpClientProtocol.Invoke (method_name, parameters)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -385,7 +387,7 @@ The proxy class does not have a binding defined.</exception>
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="methodName" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="method_name" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="parameters" Type="System.Object[]" Index="1" />
       </Parameters>
@@ -455,9 +457,9 @@ The proxy class does not have a binding defined.</exception>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodName" Type="System.String" />
-        <Parameter Name="parameters" Type="System.Object[]" />
-        <Parameter Name="callback" Type="System.Threading.SendOrPostCallback" />
+        <Parameter Name="methodName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="parameters" Type="System.Object[]" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="callback" Type="System.Threading.SendOrPostCallback" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="methodName">The name of the method to invoke.</param>
@@ -485,10 +487,10 @@ The proxy class does not have a binding defined.</exception>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodName" Type="System.String" />
-        <Parameter Name="parameters" Type="System.Object[]" />
-        <Parameter Name="callback" Type="System.Threading.SendOrPostCallback" />
-        <Parameter Name="userState" Type="System.Object" />
+        <Parameter Name="methodName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="parameters" Type="System.Object[]" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="callback" Type="System.Threading.SendOrPostCallback" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="userState" Type="System.Object" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="methodName">The name of the method to invoke.</param>

@@ -111,7 +111,7 @@ Public Property theData As ExportFactory(Of String)
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="composablePartDefinition" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" />
+        <Parameter Name="composablePartDefinition" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="composablePartDefinition">To be added.</param>

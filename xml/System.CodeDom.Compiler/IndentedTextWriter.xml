@@ -919,7 +919,7 @@
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="arg" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-2.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1534,7 +1534,7 @@
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="arg" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-2.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

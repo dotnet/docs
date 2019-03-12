@@ -48,8 +48,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.DocumentNameBlobHandle" />
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.DocumentNameBlobHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -143,9 +143,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.DocumentNameBlobHandle" />
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.DocumentNameBlobHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -176,9 +176,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.NamespaceDefinitionHandle" />
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.NamespaceDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -209,9 +209,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.StringHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -274,9 +274,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.StringHandle" />
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.StringHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>

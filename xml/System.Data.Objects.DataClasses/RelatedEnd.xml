@@ -103,8 +103,8 @@
         <TypeParameter Name="TEntity" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" />
-        <Parameter Name="allowCollection" Type="System.Boolean" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="allowCollection" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">The type of the <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of entity objects to attach.</typeparam>
@@ -321,9 +321,9 @@ The `Attach<TEntity>(IEnumerable<TEntity>, Boolean)` method is called by Object 
         <TypeParameter Name="TEntity" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" />
-        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
-        <Parameter Name="setIsLoaded" Type="System.Boolean" />
+        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" Index="1" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="setIsLoaded" Type="System.Boolean" Index="2" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">The type of the <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of entity objects to be merged.</typeparam>
@@ -368,7 +368,7 @@ The `Merge<TEntity>` method is called by Object Services during relationship ope
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">The serialized stream.</param>
@@ -556,7 +556,7 @@ The `Merge<TEntity>` method is called by Object Services during relationship ope
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">An entity instance to add to the related end.</param>
@@ -634,7 +634,7 @@ The `Merge<TEntity>` method is called by Object Services during relationship ope
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">An entity instance to attach to the related end.</param>
@@ -749,7 +749,7 @@ The `Merge<TEntity>` method is called by Object Services during relationship ope
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">An entity instance to remove from the related end.</param>
@@ -834,9 +834,9 @@ The `Merge<TEntity>` method is called by Object Services during relationship ope
         <TypeParameter Name="TEntity" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="entity" Type="TEntity" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="allowCollection" Type="System.Boolean" />
+        <Parameter Name="entity" Type="TEntity" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="allowCollection" Type="System.Boolean" Index="2" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">The type of the object to validate.</typeparam>
@@ -883,8 +883,8 @@ The `ValidateEntityForAttach<TEntity>` method is called by Object Services durin
         <TypeParameter Name="TEntity" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
-        <Parameter Name="relatedEndName" Type="System.String" />
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="relatedEndName" Type="System.String" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">The type of the object to validate.</typeparam>

@@ -275,7 +275,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -327,7 +327,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -381,7 +381,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -437,7 +437,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -495,7 +495,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -555,7 +555,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -617,7 +617,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -681,7 +681,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -747,7 +747,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -815,7 +815,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -885,7 +885,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TArg14,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TArg14,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
@@ -957,7 +957,7 @@
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TArg14,TArg15,TResult&gt;&gt;" />
+        <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TArg14,TArg15,TResult&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>

@@ -144,7 +144,7 @@
       <Parameters>
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-1.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -490,10 +490,10 @@
         <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="existing" Type="System.ComponentModel.AttributeCollection" />
-        <Parameter Name="newAttributes" Type="System.Attribute[]">
+        <Parameter Name="existing" Type="System.ComponentModel.AttributeCollection" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="newAttributes" Type="System.Attribute[]" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-1.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

@@ -108,7 +108,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="activationContext" Type="System.ActivationContext" />
+        <Parameter Name="activationContext" Type="System.ActivationContext" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="activationContext">The activation context to be used for an application domain.</param>
@@ -150,7 +150,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="activationArguments" Type="System.Runtime.Hosting.ActivationArguments" />
+        <Parameter Name="activationArguments" Type="System.Runtime.Hosting.ActivationArguments" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="activationArguments">An object that specifies information required for the manifest-based activation of a new application domain.</param>
@@ -1141,7 +1141,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="switches" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="switches" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="switches">An enumerable set of string values that specify compatibility switches, or <see langword="null" /> to erase the existing compatibility switches.</param>
@@ -1196,7 +1196,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Byte[]" />
+        <Parameter Name="value" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="value">An array that contains the XML configuration information to be used for the application domain.</param>
@@ -1241,9 +1241,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="functionName" Type="System.String" />
-        <Parameter Name="functionVersion" Type="System.Int32" />
-        <Parameter Name="functionPointer" Type="System.IntPtr" />
+        <Parameter Name="functionName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="functionVersion" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="functionPointer" Type="System.IntPtr" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="functionName">The name of the string comparison function to override.</param>

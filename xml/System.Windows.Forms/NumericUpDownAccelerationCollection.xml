@@ -134,7 +134,7 @@
       <Parameters>
         <Parameter Name="accelerations" Type="System.Windows.Forms.NumericUpDownAcceleration[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

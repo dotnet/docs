@@ -50,7 +50,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="httpPostedFile" Type="System.Web.HttpPostedFile" />
+        <Parameter Name="httpPostedFile" Type="System.Web.HttpPostedFile" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="httpPostedFile">The object that this wrapper class provides access to.</param>
@@ -180,7 +180,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="filename" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="filename">The name of the file to save.</param>

@@ -128,8 +128,8 @@
         <ReturnType>System.Func&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xaml.XamlReader" />
-        <Parameter Name="resultType" Type="System.Type" />
+        <Parameter Name="reader" Type="System.Xaml.XamlReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="resultType" Type="System.Type" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="reader">The XAML reader.</param>
@@ -162,7 +162,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xaml.XamlReader" />
+        <Parameter Name="reader" Type="System.Xaml.XamlReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the return value of the method that this delegate encapsulates.</typeparam>
@@ -286,8 +286,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="componentType" Type="System.Type" />
-        <Parameter Name="componentInstance" Type="System.Object" />
+        <Parameter Name="componentType" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="componentInstance" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="componentType">The type of the component.</param>
@@ -441,8 +441,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" />
-        <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
+        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stream">The workflow definition.</param>
@@ -467,8 +467,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="textReader" Type="System.IO.TextReader" />
-        <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
+        <Parameter Name="textReader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="textReader">The workflow definition.</param>
@@ -494,8 +494,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fileName" Type="System.String" />
-        <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
+        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileName">A file that contains the workflow definition.</param>
@@ -520,8 +520,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="xamlReader" Type="System.Xaml.XamlReader" />
-        <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
+        <Parameter Name="xamlReader" Type="System.Xaml.XamlReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="xamlReader">The workflow definition.</param>
@@ -546,8 +546,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
-        <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="settings" Type="System.Activities.XamlIntegration.ActivityXamlServicesSettings" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="xmlReader">The workflow definition.</param>

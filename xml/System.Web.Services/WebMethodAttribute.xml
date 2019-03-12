@@ -114,8 +114,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="enableSession" Type="System.Boolean" />
-        <Parameter Name="transactionOption" Type="System.EnterpriseServices.TransactionOption" />
+        <Parameter Name="enableSession" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="transactionOption" Type="System.EnterpriseServices.TransactionOption" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="enableSession">Initializes whether session state is enabled for the XML Web service method.</param>
@@ -157,8 +157,8 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="enableSession" Type="System.Boolean" />
-        <Parameter Name="transactionOption" Type="System.Web.Services.TransactionOption" />
+        <Parameter Name="enableSession" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="transactionOption" Type="System.Web.Services.TransactionOption" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="enableSession">To be added.</param>
@@ -181,9 +181,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="enableSession" Type="System.Boolean" />
-        <Parameter Name="transactionOption" Type="System.EnterpriseServices.TransactionOption" />
-        <Parameter Name="cacheDuration" Type="System.Int32" />
+        <Parameter Name="enableSession" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="transactionOption" Type="System.EnterpriseServices.TransactionOption" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="cacheDuration" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="enableSession">Initializes whether session state is enabled for the XML Web service method.</param>
@@ -226,9 +226,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="enableSession" Type="System.Boolean" />
-        <Parameter Name="transactionOption" Type="System.Web.Services.TransactionOption" />
-        <Parameter Name="cacheDuration" Type="System.Int32" />
+        <Parameter Name="enableSession" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="transactionOption" Type="System.Web.Services.TransactionOption" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="cacheDuration" Type="System.Int32" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="enableSession">To be added.</param>
@@ -252,10 +252,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="enableSession" Type="System.Boolean" />
-        <Parameter Name="transactionOption" Type="System.EnterpriseServices.TransactionOption" />
-        <Parameter Name="cacheDuration" Type="System.Int32" />
-        <Parameter Name="bufferResponse" Type="System.Boolean" />
+        <Parameter Name="enableSession" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="transactionOption" Type="System.EnterpriseServices.TransactionOption" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="cacheDuration" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="bufferResponse" Type="System.Boolean" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="enableSession">Initializes whether session state is enabled for the XML Web service method.</param>
@@ -299,10 +299,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="enableSession" Type="System.Boolean" />
-        <Parameter Name="transactionOption" Type="System.Web.Services.TransactionOption" />
-        <Parameter Name="cacheDuration" Type="System.Int32" />
-        <Parameter Name="bufferResponse" Type="System.Boolean" />
+        <Parameter Name="enableSession" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="transactionOption" Type="System.Web.Services.TransactionOption" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="cacheDuration" Type="System.Int32" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="bufferResponse" Type="System.Boolean" Index="3" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="enableSession">To be added.</param>

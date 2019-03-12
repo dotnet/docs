@@ -58,9 +58,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parent" Type="System.Object" />
-        <Parameter Name="configContext" Type="System.Object" />
-        <Parameter Name="section" Type="System.Xml.XmlNode" />
+        <Parameter Name="parent" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="configContext" Type="System.Object" Index="1" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="section" Type="System.Xml.XmlNode" Index="2" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="parent">To be added.</param>

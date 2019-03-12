@@ -42,7 +42,7 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="builder">To be added.</param>
@@ -93,7 +93,7 @@
         <ReturnType>System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="count">To be added.</param>

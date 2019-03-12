@@ -60,7 +60,7 @@ In addition to `Memory<T>`, you can use <xref:System.ReadOnlyMemory%601?displayP
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">The array from which to create the <see cref="T:System.Memory`1" /> object.</param>
@@ -96,9 +96,9 @@ The array is <see href="~/docs/csharp/programming-guide/concepts/covariance-cont
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
-        <Parameter Name="start" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">The source array.</param>
@@ -147,7 +147,7 @@ If `array` is `null`, this constructor returns a  <xref:System.Memory%601> objec
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">The destination <see cref="T:System.Memory`1" /> object.</param>
@@ -205,7 +205,7 @@ This method copies all of the contents of the current <xref:System.Memory%601> i
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="other" Type="System.Memory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="other">The object to compare with the current instance.</param>
@@ -251,7 +251,7 @@ The `Equals(Memory<T>)` method performs a test for reference equality; it does n
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="obj">The object to compare with the current instance.</param>
@@ -365,7 +365,7 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="segment">The object to convert.</param>
@@ -393,7 +393,7 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="memory">The object to convert.</param>
@@ -421,7 +421,7 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">The array to convert.</param>
@@ -487,7 +487,7 @@ The garbage collector will not move the memory until the returned <xref:System.B
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin the slice.</param>
@@ -517,8 +517,8 @@ The garbage collector will not move the memory until the returned <xref:System.B
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin the slice.</param>
@@ -641,7 +641,7 @@ For a `Memory<Char>`, the `ToString` method returns a <xref:System.String> that 
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">The destination <see cref="T:System.Memory`1" /> object.</param>

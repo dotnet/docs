@@ -66,10 +66,13 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsSecurityToken(System::Security::Principal::WindowsIdentity ^ windowsIdentity);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public WindowsSecurityToken (System.Security.Principal.WindowsIdentity identity);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity identity) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity)" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsSecurityToken(System::Security::Principal::WindowsIdentity ^ identity);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.WindowsSecurityToken : System.Security.Principal.WindowsIdentity -&gt; System.IdentityModel.Tokens.WindowsSecurityToken" Usage="new System.IdentityModel.Tokens.WindowsSecurityToken identity" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.WindowsSecurityToken : System.Security.Principal.WindowsIdentity -&gt; System.IdentityModel.Tokens.WindowsSecurityToken" Usage="new System.IdentityModel.Tokens.WindowsSecurityToken windowsIdentity" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.WindowsSecurityToken : System.Security.Principal.WindowsIdentity -&gt; System.IdentityModel.Tokens.WindowsSecurityToken" Usage="new System.IdentityModel.Tokens.WindowsSecurityToken identity" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -77,7 +80,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -102,10 +105,13 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsSecurityToken(System::Security::Principal::WindowsIdentity ^ windowsIdentity, System::String ^ id);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public WindowsSecurityToken (System.Security.Principal.WindowsIdentity identity, string id);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity identity, string id) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity, id As String)" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity,System.String)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity, id As String)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsSecurityToken(System::Security::Principal::WindowsIdentity ^ identity, System::String ^ id);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.WindowsSecurityToken : System.Security.Principal.WindowsIdentity * string -&gt; System.IdentityModel.Tokens.WindowsSecurityToken" Usage="new System.IdentityModel.Tokens.WindowsSecurityToken (identity, id)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.WindowsSecurityToken : System.Security.Principal.WindowsIdentity * string -&gt; System.IdentityModel.Tokens.WindowsSecurityToken" Usage="new System.IdentityModel.Tokens.WindowsSecurityToken (windowsIdentity, id)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity,System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity, id As String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.WindowsSecurityToken : System.Security.Principal.WindowsIdentity * string -&gt; System.IdentityModel.Tokens.WindowsSecurityToken" Usage="new System.IdentityModel.Tokens.WindowsSecurityToken (identity, id)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -113,7 +119,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="id" Type="System.String" Index="1" />
       </Parameters>
@@ -150,9 +156,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" />
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="authenticationType" Type="System.String" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="authenticationType" Type="System.String" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user.</param>
@@ -265,11 +271,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="effectiveTime" Type="System.DateTime" />
-        <Parameter Name="expirationTime" Type="System.DateTime" />
-        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" />
-        <Parameter Name="clone" Type="System.Boolean" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="effectiveTime" Type="System.DateTime" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="expirationTime" Type="System.DateTime" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="3" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="clone" Type="System.Boolean" Index="4" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="id">A unique identifier for the security token. Sets the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.Id" /> property.</param>
@@ -310,12 +316,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="authenticationType" Type="System.String" />
-        <Parameter Name="effectiveTime" Type="System.DateTime" />
-        <Parameter Name="expirationTime" Type="System.DateTime" />
-        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" />
-        <Parameter Name="clone" Type="System.Boolean" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="authenticationType" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="effectiveTime" Type="System.DateTime" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="expirationTime" Type="System.DateTime" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="clone" Type="System.Boolean" Index="5" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="id">A unique identifier for the security token.</param>

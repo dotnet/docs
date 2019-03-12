@@ -147,9 +147,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="username" Type="System.String" />
-        <Parameter Name="oldPassword" Type="System.String" />
-        <Parameter Name="newPassword" Type="System.String" />
+        <Parameter Name="username" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="oldPassword" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="newPassword" Type="System.String" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="username">The user to update the password for.</param>
@@ -195,10 +195,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="username" Type="System.String" />
-        <Parameter Name="password" Type="System.String" />
-        <Parameter Name="newPasswordQuestion" Type="System.String" />
-        <Parameter Name="newPasswordAnswer" Type="System.String" />
+        <Parameter Name="username" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="password" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="newPasswordQuestion" Type="System.String" Index="2" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="newPasswordAnswer" Type="System.String" Index="3" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="username">The user to change the password question and answer for.</param>
@@ -247,14 +247,14 @@
         <ReturnType>System.Web.Security.MembershipUser</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="username" Type="System.String" />
-        <Parameter Name="password" Type="System.String" />
-        <Parameter Name="email" Type="System.String" />
-        <Parameter Name="passwordQuestion" Type="System.String" />
-        <Parameter Name="passwordAnswer" Type="System.String" />
-        <Parameter Name="isApproved" Type="System.Boolean" />
-        <Parameter Name="providerUserKey" Type="System.Object" />
-        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus" RefType="out" />
+        <Parameter Name="username" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="password" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="email" Type="System.String" Index="2" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="passwordQuestion" Type="System.String" Index="3" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="passwordAnswer" Type="System.String" Index="4" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="isApproved" Type="System.Boolean" Index="5" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="providerUserKey" Type="System.Object" Index="6" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus" RefType="out" Index="7" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="username">The user name for the new user.</param>
@@ -306,7 +306,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="encodedPassword" Type="System.Byte[]" />
+        <Parameter Name="encodedPassword" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="encodedPassword">A byte array that contains the encrypted password to decrypt.</param>
@@ -351,8 +351,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="username" Type="System.String" />
-        <Parameter Name="deleteAllRelatedData" Type="System.Boolean" />
+        <Parameter Name="username" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="deleteAllRelatedData" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="username">The name of the user to delete.</param>
@@ -502,7 +502,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="password" Type="System.Byte[]" />
+        <Parameter Name="password" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="password">A byte array that contains the password to encrypt.</param>
@@ -546,8 +546,8 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="password" Type="System.Byte[]" />
-        <Parameter Name="legacyPasswordCompatibilityMode" Type="System.Web.Configuration.MembershipPasswordCompatibilityMode" />
+        <Parameter Name="password" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="legacyPasswordCompatibilityMode" Type="System.Web.Configuration.MembershipPasswordCompatibilityMode" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="password">A byte array that contains the password to encrypt.</param>
@@ -579,10 +579,10 @@
         <ReturnType>System.Web.Security.MembershipUserCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="emailToMatch" Type="System.String" />
-        <Parameter Name="pageIndex" Type="System.Int32" />
-        <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
+        <Parameter Name="emailToMatch" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="pageIndex" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="pageSize" Type="System.Int32" Index="2" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" Index="3" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="emailToMatch">The email address to search for.</param>
@@ -630,10 +630,10 @@
         <ReturnType>System.Web.Security.MembershipUserCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="usernameToMatch" Type="System.String" />
-        <Parameter Name="pageIndex" Type="System.Int32" />
-        <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
+        <Parameter Name="usernameToMatch" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="pageIndex" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="pageSize" Type="System.Int32" Index="2" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" Index="3" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="usernameToMatch">The user name to search for.</param>
@@ -681,9 +681,9 @@
         <ReturnType>System.Web.Security.MembershipUserCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pageIndex" Type="System.Int32" />
-        <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
+        <Parameter Name="pageIndex" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="pageSize" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="pageIndex">The index of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
@@ -770,8 +770,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="username" Type="System.String" />
-        <Parameter Name="answer" Type="System.String" />
+        <Parameter Name="username" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="answer" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="username">The user to retrieve the password for.</param>
@@ -832,8 +832,8 @@
         <ReturnType>System.Web.Security.MembershipUser</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="providerUserKey" Type="System.Object" />
-        <Parameter Name="userIsOnline" Type="System.Boolean" />
+        <Parameter Name="providerUserKey" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="userIsOnline" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="providerUserKey">The unique identifier for the membership user to get information for.</param>
@@ -878,8 +878,8 @@
         <ReturnType>System.Web.Security.MembershipUser</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="username" Type="System.String" />
-        <Parameter Name="userIsOnline" Type="System.Boolean" />
+        <Parameter Name="username" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="userIsOnline" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="username">The name of the user to get information for.</param>
@@ -924,7 +924,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="email" Type="System.String" />
+        <Parameter Name="email" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="email">The email address to search for.</param>
@@ -1133,7 +1133,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Web.Security.ValidatePasswordEventArgs" />
+        <Parameter Name="e" Type="System.Web.Security.ValidatePasswordEventArgs" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.Web.Security.ValidatePasswordEventArgs" /> to pass to the <see cref="E:System.Web.Security.MembershipProvider.ValidatingPassword" /> event handler.</param>
@@ -1406,8 +1406,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="username" Type="System.String" />
-        <Parameter Name="answer" Type="System.String" />
+        <Parameter Name="username" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="answer" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="username">The user to reset the password for.</param>
@@ -1460,7 +1460,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="userName">The membership user whose lock status you want to clear.</param>
@@ -1504,7 +1504,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="user" Type="System.Web.Security.MembershipUser" />
+        <Parameter Name="user" Type="System.Web.Security.MembershipUser" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="user">A <see cref="T:System.Web.Security.MembershipUser" /> object that represents the user to update and the updated information for the user.</param>
@@ -1546,8 +1546,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="username" Type="System.String" />
-        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="username" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="password" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="username">The name of the user to validate.</param>

@@ -114,7 +114,7 @@
         <ReturnType>Microsoft.JScript.Vsa.IJSVsaEngine</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="domain" Type="System.AppDomain" />
+        <Parameter Name="domain" Type="System.AppDomain" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="domain">To be added.</param>
@@ -287,10 +287,10 @@
         <ReturnType>Microsoft.JScript.GlobalScope</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fast" Type="System.Boolean" />
-        <Parameter Name="assemblyNames" Type="System.String[]" />
-        <Parameter Name="callingTypeHandle" Type="System.RuntimeTypeHandle" />
-        <Parameter Name="rootNamespace" Type="System.String" />
+        <Parameter Name="fast" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyNames" Type="System.String[]" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="callingTypeHandle" Type="System.RuntimeTypeHandle" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="rootNamespace" Type="System.String" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fast">To be added.</param>
@@ -419,7 +419,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaPersistSite" />
+        <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaPersistSite" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="site">To be added.</param>
@@ -444,7 +444,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="site" Type="Microsoft.Vsa.IVsaPersistSite" />
+        <Parameter Name="site" Type="Microsoft.Vsa.IVsaPersistSite" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="site">To be added.</param>
@@ -496,7 +496,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaPersistSite" />
+        <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaPersistSite" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="site">To be added.</param>
@@ -521,7 +521,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="site" Type="Microsoft.Vsa.IVsaPersistSite" />
+        <Parameter Name="site" Type="Microsoft.Vsa.IVsaPersistSite" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="site">To be added.</param>
@@ -628,7 +628,7 @@
         <ReturnType>Microsoft.JScript.Vsa.IJSVsaItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="itemName" Type="System.String" />
+        <Parameter Name="itemName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="itemName">To be added.</param>
@@ -654,7 +654,7 @@
         <ReturnType>Microsoft.JScript.Vsa.IJSVsaItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -836,8 +836,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rootMoniker" Type="System.String" />
-        <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaSite" />
+        <Parameter Name="rootMoniker" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaSite" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="rootMoniker">To be added.</param>
@@ -866,8 +866,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rootMoniker" Type="System.String" />
-        <Parameter Name="site" Type="Microsoft.Vsa.IVsaSite" />
+        <Parameter Name="rootMoniker" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5" />
+        <Parameter Name="site" Type="Microsoft.Vsa.IVsaSite" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="rootMoniker">To be added.</param>

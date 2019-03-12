@@ -323,8 +323,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="entitySetName" Type="System.String" />
-        <Parameter Name="currentEntity" Type="TEntity" />
+        <Parameter Name="entitySetName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="currentEntity" Type="TEntity" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">The entity type of the object.</typeparam>
@@ -384,8 +384,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="entitySetName" Type="System.String" />
-        <Parameter Name="originalEntity" Type="TEntity" />
+        <Parameter Name="entitySetName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="originalEntity" Type="TEntity" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">The type of the entity object.</typeparam>
@@ -961,7 +961,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="entitySetName" Type="System.String" />
+        <Parameter Name="entitySetName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">Entity type of the requested <see cref="T:System.Data.Objects.ObjectSet`1" />.</typeparam>
@@ -996,7 +996,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="types" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+        <Parameter Name="types" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="types">An enumeration of <see cref="T:System.Type" /> objects that represent custom data classes that map to the conceptual model.</param>
@@ -1036,7 +1036,7 @@
         <Parameter Name="queryString" Type="System.String" />
         <Parameter Name="parameters" Type="System.Data.Objects.ObjectParameter[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1402,8 +1402,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="functionName" Type="System.String" />
-        <Parameter Name="parameters" Type="System.Data.Objects.ObjectParameter[]">
+        <Parameter Name="functionName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="parameters" Type="System.Data.Objects.ObjectParameter[]" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -1458,7 +1458,7 @@
         <Parameter Name="functionName" Type="System.String" />
         <Parameter Name="parameters" Type="System.Data.Objects.ObjectParameter[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1514,9 +1514,9 @@
         <TypeParameter Name="TElement" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="functionName" Type="System.String" />
-        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
-        <Parameter Name="parameters" Type="System.Data.Objects.ObjectParameter[]">
+        <Parameter Name="functionName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="parameters" Type="System.Data.Objects.ObjectParameter[]" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -1571,8 +1571,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="commandText" Type="System.String" />
-        <Parameter Name="parameters" Type="System.Object[]">
+        <Parameter Name="commandText" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="parameters" Type="System.Object[]" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -1629,8 +1629,8 @@
         <TypeParameter Name="TElement" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="commandText" Type="System.String" />
-        <Parameter Name="parameters" Type="System.Object[]">
+        <Parameter Name="commandText" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="parameters" Type="System.Object[]" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -1688,10 +1688,10 @@
         <TypeParameter Name="TEntity" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="commandText" Type="System.String" />
-        <Parameter Name="entitySetName" Type="System.String" />
-        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
-        <Parameter Name="parameters" Type="System.Object[]">
+        <Parameter Name="commandText" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="entitySetName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="parameters" Type="System.Object[]" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -1828,7 +1828,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of the proxy object.</param>
@@ -1877,8 +1877,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
-        <Parameter Name="navigationProperty" Type="System.String" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="navigationProperty" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">The entity for which related objects are to be loaded.</param>
@@ -1920,9 +1920,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
-        <Parameter Name="navigationProperty" Type="System.String" />
-        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="navigationProperty" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">The entity for which related objects are to be loaded.</param>
@@ -1967,8 +1967,8 @@
         <TypeParameter Name="TEntity" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="entity" Type="TEntity" />
-        <Parameter Name="selector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity,System.Object&gt;&gt;" />
+        <Parameter Name="entity" Type="TEntity" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="selector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity,System.Object&gt;&gt;" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">The type of the supplied object.</typeparam>
@@ -2018,9 +2018,9 @@
         <TypeParameter Name="TEntity" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="entity" Type="TEntity" />
-        <Parameter Name="selector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity,System.Object&gt;&gt;" />
-        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
+        <Parameter Name="entity" Type="TEntity" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="selector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity,System.Object&gt;&gt;" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">The type of the supplied object.</typeparam>
@@ -2421,7 +2421,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="System.Data.Objects.SaveOptions" />
+        <Parameter Name="options" Type="System.Data.Objects.SaveOptions" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="options">A <see cref="T:System.Data.Objects.SaveOptions" /> value that determines the behavior of the operation.</param>
@@ -2500,7 +2500,7 @@
         <TypeParameter Name="TElement" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" />
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TElement">The entity type of the data in the <see cref="T:System.Data.Common.DbDataReader" />.</typeparam>
@@ -2544,9 +2544,9 @@
         <TypeParameter Name="TEntity" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" />
-        <Parameter Name="entitySetName" Type="System.String" />
-        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="entitySetName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TEntity">The entity type of the data in the <see cref="T:System.Data.Common.DbDataReader" />.</typeparam>

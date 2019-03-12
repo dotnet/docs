@@ -87,8 +87,8 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
-        <Parameter Name="routeData" Type="System.Web.Routing.RouteData" />
+        <Parameter Name="httpContext" Type="System.Web.HttpContextBase" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="routeData" Type="System.Web.Routing.RouteData" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="httpContext">An object that contains information about the HTTP request.</param>

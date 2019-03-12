@@ -48,7 +48,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="signature" Type="System.Reflection.Metadata.MethodSignature&lt;TType&gt;" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.MethodSignature&lt;TType&gt;" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="signature">To be added.</param>
@@ -73,7 +73,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -98,7 +98,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -123,10 +123,10 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" />
-        <Parameter Name="isRequired" Type="System.Boolean" />
-        <Parameter Name="modifier" Type="TType" />
-        <Parameter Name="unmodifiedType" Type="TType" />
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" Index="0" FrameworkAlternate="netcore-1.1" />
+        <Parameter Name="isRequired" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-1.1" />
+        <Parameter Name="modifier" Type="TType" Index="2" FrameworkAlternate="netcore-1.1" />
+        <Parameter Name="unmodifiedType" Type="TType" Index="3" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="reader">To be added.</param>
@@ -154,7 +154,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementType" Type="TType" />
+        <Parameter Name="elementType" Type="TType" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="elementType">To be added.</param>

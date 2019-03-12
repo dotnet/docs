@@ -611,7 +611,7 @@ When you set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoSort> proper
         <ReturnType>System.Web.UI.WebControls.ContextDataSourceContextData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operation" Type="System.Web.UI.DataSourceOperation" />
+        <Parameter Name="operation" Type="System.Web.UI.DataSourceOperation" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="operation">The data source operation to use.</param>
@@ -636,8 +636,8 @@ When you set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoSort> proper
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keys" Type="System.Collections.IDictionary" />
-        <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
+        <Parameter Name="keys" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="oldValues" Type="System.Collections.IDictionary" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="keys">The row key values for the records to delete.</param>
@@ -734,7 +734,7 @@ For information about how to delete data with the <xref:System.Web.UI.WebControl
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="oldEntity" Type="System.Object" />
+        <Parameter Name="oldEntity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="oldEntity">The data object to delete.</param>
@@ -813,7 +813,7 @@ For information about how to delete data with the <xref:System.Web.UI.WebControl
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dataContext" Type="System.Object" />
+        <Parameter Name="dataContext" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dataContext">The data context to dispose.</param>
@@ -1110,7 +1110,7 @@ For information about how to delete data with the <xref:System.Web.UI.WebControl
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tableType" Type="System.Type" />
+        <Parameter Name="tableType" Type="System.Type" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="tableType">The table type.</param>
@@ -1136,7 +1136,7 @@ For information about how to delete data with the <xref:System.Web.UI.WebControl
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Web.UI.WebControls.QueryContext" />
+        <Parameter Name="context" Type="System.Web.UI.WebControls.QueryContext" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">The data context to apply the query to.</param>
@@ -1245,8 +1245,8 @@ For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Gro
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="errors" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Exception&gt;" />
-        <Parameter Name="operation" Type="System.Web.UI.DataSourceOperation" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Exception&gt;" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="operation" Type="System.Web.UI.DataSourceOperation" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="errors">The system-generated, field-specific exceptions that occurred.</param>
@@ -1271,7 +1271,7 @@ For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Gro
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="values" Type="System.Collections.IDictionary" />
+        <Parameter Name="values" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="values">A dictionary that specifies the data to insert.</param>
@@ -1398,7 +1398,7 @@ For information about how to insert data through the <xref:System.Web.UI.WebCont
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="newEntity" Type="System.Object" />
+        <Parameter Name="newEntity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="newEntity">The data object to insert.</param>
@@ -1492,7 +1492,7 @@ The IsTrackingViewState property is set to true when you call the <xref:System.W
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="savedState" Type="System.Object" />
+        <Parameter Name="savedState" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="savedState">The <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> control state to restore.</param>
@@ -2270,7 +2270,7 @@ For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Sel
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="results" Type="System.Collections.IList" />
+        <Parameter Name="results" Type="System.Collections.IList" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="results">The result of the <see langword="Select" /> operation.</param>
@@ -2366,7 +2366,7 @@ This member is an explicit interface member implementation. It can be used only 
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="savedState" Type="System.Object" />
+        <Parameter Name="savedState" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="savedState">An object that represents the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> state to restore.</param>
@@ -2522,9 +2522,9 @@ This member is an explicit interface member implementation. It can be used only 
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keys" Type="System.Collections.IDictionary" />
-        <Parameter Name="values" Type="System.Collections.IDictionary" />
-        <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
+        <Parameter Name="keys" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="values" Type="System.Collections.IDictionary" Index="1" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="oldValues" Type="System.Collections.IDictionary" Index="2" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="keys">The row key values for the records to update.</param>
@@ -2622,8 +2622,8 @@ For information about how to update data through a <xref:System.Web.UI.WebContro
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="oldEntity" Type="System.Object" />
-        <Parameter Name="newEntity" Type="System.Object" />
+        <Parameter Name="oldEntity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="newEntity" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="oldEntity">The object to update.</param>
@@ -2837,8 +2837,8 @@ For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Upd
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-3.5" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="name">The name of the parameter to validate.</param>
@@ -2865,7 +2865,7 @@ For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Upd
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="name">The parameter name to verify.</param>

@@ -54,7 +54,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="scopeVariables" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt;" />
+        <Parameter Name="scopeVariables" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="scopeVariables">The collection of scope variables.</param>
@@ -99,8 +99,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="oldExpression" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="newExpression" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="oldExpression" Type="System.Data.Common.CommandTrees.DbExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="newExpression" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="oldExpression">The old expression.</param>
@@ -125,8 +125,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fromVarRef" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression" />
-        <Parameter Name="toVarRef" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression" />
+        <Parameter Name="fromVarRef" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="toVarRef" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fromVarRef">The location of the variable.</param>
@@ -160,7 +160,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbAndExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbAndExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The logical AND expression.</param>
@@ -185,7 +185,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbApplyExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbApplyExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The APPLY expression.</param>
@@ -210,7 +210,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbArithmeticExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbArithmeticExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The arithmetic expression.</param>
@@ -235,7 +235,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCaseExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCaseExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The case expression.</param>
@@ -260,7 +260,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCastExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCastExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The cast expression.</param>
@@ -285,7 +285,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbComparisonExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbComparisonExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The cast expression.</param>
@@ -310,7 +310,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbConstantExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbConstantExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The constant expression.</param>
@@ -335,7 +335,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCrossJoinExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCrossJoinExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The join expression.</param>
@@ -360,7 +360,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbDerefExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbDerefExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The DEREF expression.</param>
@@ -385,7 +385,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbDistinctExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbDistinctExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The distinct expression.</param>
@@ -410,7 +410,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbElementExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbElementExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The element expression.</param>
@@ -435,7 +435,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbEntityRefExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbEntityRefExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The entity reference expression.</param>
@@ -460,7 +460,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExceptExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExceptExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -485,7 +485,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -510,7 +510,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbFilterExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbFilterExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The filter expression.</param>
@@ -535,7 +535,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbFunctionExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbFunctionExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The function expression.</param>
@@ -560,7 +560,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbGroupByExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbGroupByExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -585,7 +585,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIntersectExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIntersectExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -610,7 +610,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsEmptyExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsEmptyExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -635,7 +635,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsNullExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsNullExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -660,7 +660,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsOfExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsOfExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -685,7 +685,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbJoinExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbJoinExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -710,7 +710,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLambdaExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLambdaExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -735,7 +735,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLikeExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLikeExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -760,7 +760,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLimitExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLimitExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -785,7 +785,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNewInstanceExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNewInstanceExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -810,7 +810,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNotExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNotExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -835,7 +835,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNullExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNullExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -860,7 +860,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbOfTypeExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbOfTypeExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -885,7 +885,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbOrExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbOrExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -910,7 +910,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbParameterReferenceExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbParameterReferenceExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -935,7 +935,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbProjectExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbProjectExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -960,7 +960,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbPropertyExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbPropertyExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -985,7 +985,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbQuantifierExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbQuantifierExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1010,7 +1010,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRefExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRefExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1035,7 +1035,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRefKeyExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRefKeyExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1060,7 +1060,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1085,7 +1085,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbScanExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbScanExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1110,7 +1110,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbSkipExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbSkipExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1135,7 +1135,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbSortExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbSortExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1160,7 +1160,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbTreatExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbTreatExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1185,7 +1185,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbUnionAllExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbUnionAllExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1210,7 +1210,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1235,7 +1235,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbAggregate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="aggregate" Type="System.Data.Common.CommandTrees.DbAggregate" />
+        <Parameter Name="aggregate" Type="System.Data.Common.CommandTrees.DbAggregate" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="aggregate">The aggregate.</param>
@@ -1260,7 +1260,7 @@
         <ReturnType>System.Data.Metadata.Edm.EntitySetBase</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySetBase" />
+        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySetBase" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entitySet">The entity set.</param>
@@ -1285,7 +1285,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The expression.</param>
@@ -1310,7 +1310,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionBinding</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="binding" Type="System.Data.Common.CommandTrees.DbExpressionBinding" />
+        <Parameter Name="binding" Type="System.Data.Common.CommandTrees.DbExpressionBinding" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="binding">The expression binding.</param>
@@ -1335,7 +1335,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpressionBinding&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpressionBinding&gt;" />
+        <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpressionBinding&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="list">The expression binding list.</param>
@@ -1360,7 +1360,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpression&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="list">The expression list.</param>
@@ -1385,7 +1385,7 @@
         <ReturnType>System.Data.Metadata.Edm.EdmFunction</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="functionMetadata" Type="System.Data.Metadata.Edm.EdmFunction" />
+        <Parameter Name="functionMetadata" Type="System.Data.Metadata.Edm.EdmFunction" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="functionMetadata">The function metadata.</param>
@@ -1410,7 +1410,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionAggregate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="aggregate" Type="System.Data.Common.CommandTrees.DbFunctionAggregate" />
+        <Parameter Name="aggregate" Type="System.Data.Common.CommandTrees.DbFunctionAggregate" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="aggregate">The aggregate.</param>
@@ -1435,7 +1435,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbGroupAggregate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="aggregate" Type="System.Data.Common.CommandTrees.DbGroupAggregate" />
+        <Parameter Name="aggregate" Type="System.Data.Common.CommandTrees.DbGroupAggregate" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="aggregate">The aggregate.</param>
@@ -1460,7 +1460,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbGroupExpressionBinding</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="binding" Type="System.Data.Common.CommandTrees.DbGroupExpressionBinding" />
+        <Parameter Name="binding" Type="System.Data.Common.CommandTrees.DbGroupExpressionBinding" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="binding">The binding.</param>
@@ -1485,7 +1485,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="lambda" Type="System.Data.Common.CommandTrees.DbLambda" />
+        <Parameter Name="lambda" Type="System.Data.Common.CommandTrees.DbLambda" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="lambda">The lambda function.</param>
@@ -1510,7 +1510,7 @@
         <ReturnType>System.Data.Common.CommandTrees.DbSortClause</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="clause" Type="System.Data.Common.CommandTrees.DbSortClause" />
+        <Parameter Name="clause" Type="System.Data.Common.CommandTrees.DbSortClause" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="clause">The sort clause.</param>
@@ -1535,7 +1535,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbSortClause&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sortOrder" Type="System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbSortClause&gt;" />
+        <Parameter Name="sortOrder" Type="System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbSortClause&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="sortOrder">The sort order.</param>
@@ -1560,7 +1560,7 @@
         <ReturnType>System.Data.Metadata.Edm.EdmType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">The type.</param>
@@ -1585,7 +1585,7 @@
         <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">The type.</param>

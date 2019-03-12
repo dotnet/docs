@@ -88,7 +88,7 @@
         <Parameter Name="baseType" Type="System.Type" />
         <Parameter Name="interfaces" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -125,7 +125,7 @@
         <Parameter Name="baseType" Type="System.Type" />
         <Parameter Name="interfaces" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="xamarinandroid-7.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

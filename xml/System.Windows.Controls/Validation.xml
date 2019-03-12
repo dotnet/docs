@@ -156,6 +156,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Errors">
+      <MemberSignature Language="C#" Value="see GetErrors" />
+      <MemberSignature Language="ILAsm" Value="see GetErrors" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Validation.Errors" />
+      <MemberSignature Language="VB.NET" Value="see GetErrors" />
+      <MemberSignature Language="F#" Value="see GetErrors" Usage="see GetErrors" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ErrorsProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ErrorsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ErrorsProperty" />
@@ -378,6 +395,23 @@
         <param name="element">The element from which to get the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" />.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" /> attached property for the specified element.</summary>
         <returns>The value of the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasError">
+      <MemberSignature Language="C#" Value="see GetHasError" />
+      <MemberSignature Language="ILAsm" Value="see GetHasError" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Validation.HasError" />
+      <MemberSignature Language="VB.NET" Value="see GetHasError" />
+      <MemberSignature Language="F#" Value="see GetHasError" Usage="see GetHasError" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

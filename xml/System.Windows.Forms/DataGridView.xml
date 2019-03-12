@@ -15174,7 +15174,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="keyData">A bitwise combination of values that represents the key or keys to process.</param>

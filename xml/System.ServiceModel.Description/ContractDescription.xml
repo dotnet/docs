@@ -478,8 +478,8 @@
         <ReturnType>System.ServiceModel.Description.ContractDescription</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="contractType" Type="System.Type" />
-        <Parameter Name="serviceImplementation" Type="System.Object" />
+        <Parameter Name="contractType" Type="System.Type" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="serviceImplementation" Type="System.Object" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="contractType">The <see cref="T:System.Type" /> of contract.</param>
@@ -523,8 +523,8 @@
         <ReturnType>System.ServiceModel.Description.ContractDescription</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="contractType" Type="System.Type" />
-        <Parameter Name="serviceType" Type="System.Type" />
+        <Parameter Name="contractType" Type="System.Type" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="serviceType" Type="System.Type" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="contractType">The <see cref="T:System.Type" /> of contract.</param>

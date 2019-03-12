@@ -98,7 +98,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="virtualPathProvider" Type="System.Web.Hosting.VirtualPathProvider" />
+        <Parameter Name="virtualPathProvider" Type="System.Web.Hosting.VirtualPathProvider" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="virtualPathProvider">A provider for retrieving resources from a virtual file system.</param>
@@ -127,8 +127,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="item" Type="System.Web.Routing.RouteBase" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="item" Type="System.Web.Routing.RouteBase" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The value that identifies the route. The value can be <see langword="null" /> or an empty string.</param>
@@ -292,7 +292,7 @@
         <ReturnType>System.Web.Routing.RouteData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
+        <Parameter Name="httpContext" Type="System.Web.HttpContextBase" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="httpContext">An object that encapsulates information about the HTTP request.</param>
@@ -334,8 +334,8 @@
         <ReturnType>System.Web.Routing.VirtualPathData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
-        <Parameter Name="values" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="values" Type="System.Web.Routing.RouteValueDictionary" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="requestContext">An object that encapsulates information about the requested route.</param>
@@ -365,9 +365,9 @@
         <ReturnType>System.Web.Routing.VirtualPathData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="values" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="values" Type="System.Web.Routing.RouteValueDictionary" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="requestContext">An object that encapsulates information about the requested route.</param>
@@ -467,7 +467,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="url" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="url">The URL pattern to be ignored.</param>
@@ -512,8 +512,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String" />
-        <Parameter Name="constraints" Type="System.Object" />
+        <Parameter Name="url" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="constraints" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="url">The URL pattern to be ignored.</param>
@@ -568,8 +568,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="item" Type="System.Web.Routing.RouteBase" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="item" Type="System.Web.Routing.RouteBase" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which <paramref name="item" /> is inserted.</param>
@@ -612,7 +612,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         <ReturnType>System.Web.Routing.RouteBase</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The value that identifies the route to get.</param>
@@ -711,9 +711,9 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         <ReturnType>System.Web.Routing.Route</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
-        <Parameter Name="routeUrl" Type="System.String" />
-        <Parameter Name="physicalFile" Type="System.String" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="routeUrl" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="physicalFile" Type="System.String" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -764,10 +764,10 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         <ReturnType>System.Web.Routing.Route</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
-        <Parameter Name="routeUrl" Type="System.String" />
-        <Parameter Name="physicalFile" Type="System.String" />
-        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="routeUrl" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="physicalFile" Type="System.String" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -819,11 +819,11 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         <ReturnType>System.Web.Routing.Route</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
-        <Parameter Name="routeUrl" Type="System.String" />
-        <Parameter Name="physicalFile" Type="System.String" />
-        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" />
-        <Parameter Name="defaults" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="routeUrl" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="physicalFile" Type="System.String" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="defaults" Type="System.Web.Routing.RouteValueDictionary" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -876,12 +876,12 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         <ReturnType>System.Web.Routing.Route</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
-        <Parameter Name="routeUrl" Type="System.String" />
-        <Parameter Name="physicalFile" Type="System.String" />
-        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" />
-        <Parameter Name="defaults" Type="System.Web.Routing.RouteValueDictionary" />
-        <Parameter Name="constraints" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="routeUrl" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="physicalFile" Type="System.String" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="defaults" Type="System.Web.Routing.RouteValueDictionary" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="constraints" Type="System.Web.Routing.RouteValueDictionary" Index="5" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -930,13 +930,13 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         <ReturnType>System.Web.Routing.Route</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
-        <Parameter Name="routeUrl" Type="System.String" />
-        <Parameter Name="physicalFile" Type="System.String" />
-        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" />
-        <Parameter Name="defaults" Type="System.Web.Routing.RouteValueDictionary" />
-        <Parameter Name="constraints" Type="System.Web.Routing.RouteValueDictionary" />
-        <Parameter Name="dataTokens" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="routeUrl" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="physicalFile" Type="System.String" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="defaults" Type="System.Web.Routing.RouteValueDictionary" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="constraints" Type="System.Web.Routing.RouteValueDictionary" Index="5" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dataTokens" Type="System.Web.Routing.RouteValueDictionary" Index="6" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -988,7 +988,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the route to remove.</param>
@@ -1066,8 +1066,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="item" Type="System.Web.Routing.RouteBase" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="item" Type="System.Web.Routing.RouteBase" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the route to replace.</param>

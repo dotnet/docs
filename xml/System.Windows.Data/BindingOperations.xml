@@ -42,9 +42,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Collections.IEnumerable" />
-        <Parameter Name="accessMethod" Type="System.Action" />
-        <Parameter Name="writeAccess" Type="System.Boolean" />
+        <Parameter Name="collection" Type="System.Collections.IEnumerable" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="accessMethod" Type="System.Action" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="writeAccess" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">The collection to access.</param>
@@ -181,7 +181,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Collections.IEnumerable" />
+        <Parameter Name="collection" Type="System.Collections.IEnumerable" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">The collection to remove synchronized access from.</param>
@@ -291,8 +291,8 @@ The net effect is that you can change the collection on any thread, and those c
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Collections.IEnumerable" />
-        <Parameter Name="lockObject" Type="System.Object" />
+        <Parameter Name="collection" Type="System.Collections.IEnumerable" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="lockObject" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">The collection that needs synchronized access.</param>
@@ -361,9 +361,9 @@ The net effect is that you can change the collection on any thread, and those c
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Collections.IEnumerable" />
-        <Parameter Name="context" Type="System.Object" />
-        <Parameter Name="synchronizationCallback" Type="System.Windows.Data.CollectionSynchronizationCallback" />
+        <Parameter Name="collection" Type="System.Collections.IEnumerable" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="synchronizationCallback" Type="System.Windows.Data.CollectionSynchronizationCallback" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collection">The collection that needs synchronized access.</param>
@@ -731,7 +731,7 @@ The net effect is that you can change the collection on any thread, and those c
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingGroup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="root" Type="System.Windows.DependencyObject" />
+        <Parameter Name="root" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="root">The root <see cref="T:System.Windows.UIElement" /> to get binding groups for.  This method returns <see cref="T:System.Windows.Data.BindingGroup" /> objects that are associated with this element or its descendant elements.</param>
@@ -763,7 +763,7 @@ The net effect is that you can change the collection on any thread, and those c
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingExpressionBase&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="root" Type="System.Windows.DependencyObject" />
+        <Parameter Name="root" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="root">The root <see cref="T:System.Windows.UIElement" /> to get binding groups for.  This method returns <see cref="T:System.Windows.Data.BindingExpressionBase" /> objects that are associated with this element or its descendant elements.</param>

@@ -58,11 +58,11 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="keyToWrap" Type="System.Byte[]" />
-        <Parameter Name="wrappingAlgorithm" Type="System.String" />
-        <Parameter Name="wrappingToken" Type="System.IdentityModel.Tokens.SecurityToken" />
-        <Parameter Name="wrappingTokenReference" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="keyToWrap" Type="System.Byte[]" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="wrappingAlgorithm" Type="System.String" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="wrappingToken" Type="System.IdentityModel.Tokens.SecurityToken" Index="3" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="wrappingTokenReference" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" Index="4" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="id">The ID of the key token.</param>
@@ -224,7 +224,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="keyIdentifierClause">The specified security key identifier clause.</param>

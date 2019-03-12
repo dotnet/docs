@@ -49,7 +49,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="builderType" Type="System.Type" />
+        <Parameter Name="builderType" Type="System.Type" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="builderType">To be added.</param>

@@ -381,7 +381,7 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
         <Parameter Name="id" Type="System.Int32" />
         <Parameter Name="data" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -488,7 +488,7 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

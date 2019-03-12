@@ -409,7 +409,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="value" Type="System.SByte" />
+        <Parameter Name="value" Type="System.SByte" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -521,7 +521,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="value" Type="System.UInt16" />
+        <Parameter Name="value" Type="System.UInt16" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -554,7 +554,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="value" Type="System.UInt32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -587,7 +587,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="value" Type="System.UInt64" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -741,7 +741,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The default value.</param>

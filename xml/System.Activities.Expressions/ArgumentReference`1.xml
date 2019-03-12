@@ -147,7 +147,7 @@
         <ReturnType>System.Activities.Location&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Activities.CodeActivityContext" />
+        <Parameter Name="context" Type="System.Activities.CodeActivityContext" Index="0" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>

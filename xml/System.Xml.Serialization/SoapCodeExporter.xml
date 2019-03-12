@@ -116,9 +116,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="codeNamespace" Type="System.CodeDom.CodeNamespace" />
-        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
-        <Parameter Name="options" Type="System.Xml.Serialization.CodeGenerationOptions" />
+        <Parameter Name="codeNamespace" Type="System.CodeDom.CodeNamespace" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="options" Type="System.Xml.Serialization.CodeGenerationOptions" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="codeNamespace">A <see cref="T:System.CodeDom.CodeNamespace" /> that specifies the namespace of the types to generate.</param>
@@ -149,10 +149,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="codeNamespace" Type="System.CodeDom.CodeNamespace" />
-        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
-        <Parameter Name="options" Type="System.Xml.Serialization.CodeGenerationOptions" />
-        <Parameter Name="mappings" Type="System.Collections.Hashtable" />
+        <Parameter Name="codeNamespace" Type="System.CodeDom.CodeNamespace" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="options" Type="System.Xml.Serialization.CodeGenerationOptions" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="mappings" Type="System.Collections.Hashtable" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="codeNamespace">A <see cref="T:System.CodeDom.CodeNamespace" /> that specifies the namespace of the types to generate.</param>
@@ -189,11 +189,11 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="codeNamespace" Type="System.CodeDom.CodeNamespace" />
-        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
-        <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
-        <Parameter Name="options" Type="System.Xml.Serialization.CodeGenerationOptions" />
-        <Parameter Name="mappings" Type="System.Collections.Hashtable" />
+        <Parameter Name="codeNamespace" Type="System.CodeDom.CodeNamespace" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="options" Type="System.Xml.Serialization.CodeGenerationOptions" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="mappings" Type="System.Collections.Hashtable" Index="4" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="codeNamespace">A <see cref="T:System.CodeDom.CodeNamespace" /> that specifies the namespace of the types to generate.</param>

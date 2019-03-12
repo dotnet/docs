@@ -95,8 +95,8 @@
         <ReturnType>System.Runtime.CompilerServices.IRuntimeVariables</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="System.Object[]" />
-        <Parameter Name="indexes" Type="System.Int64[]" />
+        <Parameter Name="data" Type="System.Object[]" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinmac-3.0" />
+        <Parameter Name="indexes" Type="System.Int64[]" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="data">The closure array.</param>
@@ -341,9 +341,9 @@
         <ReturnType>System.Runtime.CompilerServices.IRuntimeVariables</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="first" Type="System.Runtime.CompilerServices.IRuntimeVariables" />
-        <Parameter Name="second" Type="System.Runtime.CompilerServices.IRuntimeVariables" />
-        <Parameter Name="indexes" Type="System.Int32[]" />
+        <Parameter Name="first" Type="System.Runtime.CompilerServices.IRuntimeVariables" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinmac-3.0" />
+        <Parameter Name="second" Type="System.Runtime.CompilerServices.IRuntimeVariables" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinmac-3.0" />
+        <Parameter Name="indexes" Type="System.Int32[]" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="first">The first list.</param>
@@ -379,9 +379,9 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
-        <Parameter Name="hoistedLocals" Type="System.Object" />
-        <Parameter Name="locals" Type="System.Object[]" />
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinmac-3.0" />
+        <Parameter Name="hoistedLocals" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinmac-3.0" />
+        <Parameter Name="locals" Type="System.Object[]" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="expression">The expression to quote.</param>

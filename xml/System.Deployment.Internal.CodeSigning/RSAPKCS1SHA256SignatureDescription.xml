@@ -65,7 +65,7 @@
         <ReturnType>System.Security.Cryptography.AsymmetricSignatureDeformatter</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
+        <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key to use in the deformatter.</param>
@@ -95,7 +95,7 @@
         <ReturnType>System.Security.Cryptography.AsymmetricSignatureFormatter</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
+        <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key to use in the formatter.</param>

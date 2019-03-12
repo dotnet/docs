@@ -200,7 +200,7 @@
       <Parameters>
         <Parameter Name="maps" Type="System.Activities.DynamicUpdate.DynamicUpdateMap[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

@@ -35,25 +35,25 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="machine" Type="System.Reflection.PortableExecutable.Machine" />
-        <Parameter Name="sectionAlignment" Type="System.Int32" />
-        <Parameter Name="fileAlignment" Type="System.Int32" />
-        <Parameter Name="imageBase" Type="System.UInt64" />
-        <Parameter Name="majorLinkerVersion" Type="System.Byte" />
-        <Parameter Name="minorLinkerVersion" Type="System.Byte" />
-        <Parameter Name="majorOperatingSystemVersion" Type="System.UInt16" />
-        <Parameter Name="minorOperatingSystemVersion" Type="System.UInt16" />
-        <Parameter Name="majorImageVersion" Type="System.UInt16" />
-        <Parameter Name="minorImageVersion" Type="System.UInt16" />
-        <Parameter Name="majorSubsystemVersion" Type="System.UInt16" />
-        <Parameter Name="minorSubsystemVersion" Type="System.UInt16" />
-        <Parameter Name="subsystem" Type="System.Reflection.PortableExecutable.Subsystem" />
-        <Parameter Name="dllCharacteristics" Type="System.Reflection.PortableExecutable.DllCharacteristics" />
-        <Parameter Name="imageCharacteristics" Type="System.Reflection.PortableExecutable.Characteristics" />
-        <Parameter Name="sizeOfStackReserve" Type="System.UInt64" />
-        <Parameter Name="sizeOfStackCommit" Type="System.UInt64" />
-        <Parameter Name="sizeOfHeapReserve" Type="System.UInt64" />
-        <Parameter Name="sizeOfHeapCommit" Type="System.UInt64" />
+        <Parameter Name="machine" Type="System.Reflection.PortableExecutable.Machine" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="sectionAlignment" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="fileAlignment" Type="System.Int32" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="imageBase" Type="System.UInt64" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="majorLinkerVersion" Type="System.Byte" Index="4" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="minorLinkerVersion" Type="System.Byte" Index="5" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="majorOperatingSystemVersion" Type="System.UInt16" Index="6" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="minorOperatingSystemVersion" Type="System.UInt16" Index="7" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="majorImageVersion" Type="System.UInt16" Index="8" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="minorImageVersion" Type="System.UInt16" Index="9" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="majorSubsystemVersion" Type="System.UInt16" Index="10" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="minorSubsystemVersion" Type="System.UInt16" Index="11" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="subsystem" Type="System.Reflection.PortableExecutable.Subsystem" Index="12" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="dllCharacteristics" Type="System.Reflection.PortableExecutable.DllCharacteristics" Index="13" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="imageCharacteristics" Type="System.Reflection.PortableExecutable.Characteristics" Index="14" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="sizeOfStackReserve" Type="System.UInt64" Index="15" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="sizeOfStackCommit" Type="System.UInt64" Index="16" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="sizeOfHeapReserve" Type="System.UInt64" Index="17" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="sizeOfHeapCommit" Type="System.UInt64" Index="18" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="machine">To be added.</param>

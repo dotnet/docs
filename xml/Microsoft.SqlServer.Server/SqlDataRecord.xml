@@ -425,7 +425,7 @@
         <ReturnType>System.Data.IDataReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="ordinal">To be added.</param>

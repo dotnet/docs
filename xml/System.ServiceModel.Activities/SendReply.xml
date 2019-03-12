@@ -245,8 +245,8 @@
         <ReturnType>System.ServiceModel.Activities.SendReply</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operation" Type="System.ServiceModel.Description.OperationDescription" />
-        <Parameter Name="faultReplies" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Activities.SendReply&gt;" RefType="out" />
+        <Parameter Name="operation" Type="System.ServiceModel.Description.OperationDescription" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="faultReplies" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Activities.SendReply&gt;" RefType="out" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="operation">The contract operation description.</param>

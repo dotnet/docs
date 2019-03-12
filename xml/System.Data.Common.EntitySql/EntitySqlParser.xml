@@ -37,7 +37,7 @@
         <Parameter Name="query" Type="System.String" />
         <Parameter Name="parameters" Type="System.Data.Common.CommandTrees.DbParameterReferenceExpression[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -70,7 +70,7 @@
         <Parameter Name="query" Type="System.String" />
         <Parameter Name="variables" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

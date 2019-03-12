@@ -286,7 +286,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.ComponentModel.Composition.Primitives.ExportDefinition&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="definition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
+        <Parameter Name="definition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" Index="0" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="definition">Conditions that specify which exports to match.</param>

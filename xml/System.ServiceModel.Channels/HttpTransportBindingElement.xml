@@ -381,7 +381,7 @@ int odd=calc.Add(5,4);
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel factory.</typeparam>
@@ -531,7 +531,7 @@ httpBinding.BypassProxyOnLocal = true;
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel to check.</typeparam>
@@ -1279,8 +1279,8 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.MetadataExporter" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.MetadataExporter" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="exporter">The <see cref="T:System.ServiceModel.Description.MetadataExporter" /> that you can use to modify the exporting process.</param>
@@ -1324,8 +1324,8 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" />
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
@@ -1356,8 +1356,8 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" />
-        <Parameter Name="endpointContext" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endpointContext" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
@@ -1502,7 +1502,7 @@ httpBinding.UnsafeConnectionNtlmAuthentication = true;
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">The binding context.</param>

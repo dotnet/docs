@@ -50,7 +50,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="httpCachePolicy" Type="System.Web.HttpCachePolicy" />
+        <Parameter Name="httpCachePolicy" Type="System.Web.HttpCachePolicy" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="httpCachePolicy">The object that this wrapper class provides access to.</param>
@@ -80,8 +80,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handler" Type="System.Web.HttpCacheValidateHandler" />
-        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="handler" Type="System.Web.HttpCacheValidateHandler" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="data" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="handler">The object that will handle the request.</param>
@@ -111,7 +111,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="extension" Type="System.String" />
+        <Parameter Name="extension" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="extension">The text to append to the <see langword="Cache-Control" /> header.</param>
@@ -141,7 +141,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="allow" Type="System.Boolean" />
+        <Parameter Name="allow" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="allow">
@@ -179,7 +179,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cacheability" Type="System.Web.HttpCacheability" />
+        <Parameter Name="cacheability" Type="System.Web.HttpCacheability" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="cacheability">The <see cref="T:System.Web.HttpCacheability" /> enumeration value to set the header to.</param>
@@ -209,8 +209,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cacheability" Type="System.Web.HttpCacheability" />
-        <Parameter Name="field" Type="System.String" />
+        <Parameter Name="cacheability" Type="System.Web.HttpCacheability" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="field" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="cacheability">The <see cref="T:System.Web.HttpCacheability" /> enumeration value to set the header to.</param>
@@ -243,7 +243,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="etag" Type="System.String" />
+        <Parameter Name="etag" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="etag">The text to use for the <see langword="ETag" /> header.</param>
@@ -304,7 +304,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="date" Type="System.DateTime" />
+        <Parameter Name="date" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="date">The absolute expiration time.</param>
@@ -332,7 +332,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="date" Type="System.DateTime" />
+        <Parameter Name="date" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="date">The date-time value to set the <see langword="Last-Modified" /> header to.</param>
@@ -387,7 +387,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="delta" Type="System.TimeSpan" />
+        <Parameter Name="delta" Type="System.TimeSpan" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="delta">The time span to set the <see langword="Cache" />-<see langword="Control: max-age" /> header to.</param>
@@ -492,7 +492,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="omit" Type="System.Boolean" />
+        <Parameter Name="omit" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="omit">
@@ -521,7 +521,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="delta" Type="System.TimeSpan" />
+        <Parameter Name="delta" Type="System.TimeSpan" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="delta">The time span to set the <see langword="Cache-Control: s-maxage" /> header to.</param>
@@ -551,7 +551,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="revalidation" Type="System.Web.HttpCacheRevalidation" />
+        <Parameter Name="revalidation" Type="System.Web.HttpCacheRevalidation" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="revalidation">The <see cref="T:System.Web.HttpCacheRevalidation" /> enumeration value to set the <see langword="Cache-Control" /> header to.</param>
@@ -581,7 +581,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="slide" Type="System.Boolean" />
+        <Parameter Name="slide" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="slide">
@@ -610,7 +610,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="validUntilExpires" Type="System.Boolean" />
+        <Parameter Name="validUntilExpires" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="validUntilExpires">
@@ -639,7 +639,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="custom" Type="System.String" />
+        <Parameter Name="custom" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="custom">The text string to vary cached output by.</param>

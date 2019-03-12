@@ -89,7 +89,7 @@
       <Parameters>
         <Parameter Name="claims" Type="System.IdentityModel.Claims.Claim[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -166,7 +166,7 @@
         <Parameter Name="issuer" Type="System.IdentityModel.Claims.ClaimSet" />
         <Parameter Name="claims" Type="System.IdentityModel.Claims.Claim[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

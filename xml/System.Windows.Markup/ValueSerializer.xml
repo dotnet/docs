@@ -97,8 +97,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The string to evaluate for conversion.</param>
@@ -136,8 +136,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
-        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The object to evaluate for conversion.</param>
@@ -175,8 +175,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The string to convert.</param>
@@ -218,8 +218,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
-        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The object to convert into a string.</param>
@@ -261,7 +261,7 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The object that could not be converted.</param>
@@ -299,8 +299,8 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
-        <Parameter Name="destinationType" Type="System.Type" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="destinationType" Type="System.Type" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The object that could not be converted.</param>
@@ -348,7 +348,7 @@
         <ReturnType>System.Windows.Markup.ValueSerializer</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="descriptor" Type="System.ComponentModel.PropertyDescriptor" />
+        <Parameter Name="descriptor" Type="System.ComponentModel.PropertyDescriptor" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="descriptor">The CLR property descriptor for the property to be serialized.</param>
@@ -400,7 +400,7 @@
         <ReturnType>System.Windows.Markup.ValueSerializer</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">The type to get the <see cref="T:System.Windows.Markup.ValueSerializer" /> for.</param>
@@ -453,8 +453,8 @@
         <ReturnType>System.Windows.Markup.ValueSerializer</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="descriptor" Type="System.ComponentModel.PropertyDescriptor" />
-        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+        <Parameter Name="descriptor" Type="System.ComponentModel.PropertyDescriptor" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="descriptor">Descriptor for the property to be serialized.</param>
@@ -496,8 +496,8 @@
         <ReturnType>System.Windows.Markup.ValueSerializer</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
-        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">The type to get the <see cref="T:System.Windows.Markup.ValueSerializer" /> for.</param>
@@ -540,8 +540,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
-        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The value being serialized.</param>

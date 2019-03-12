@@ -103,13 +103,13 @@ Example of a formatted text string
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="textToFormat" Type="System.String" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
-        <Parameter Name="flowDirection" Type="System.Windows.FlowDirection" />
-        <Parameter Name="typeface" Type="System.Windows.Media.Typeface" />
-        <Parameter Name="emSize" Type="System.Double" />
-        <Parameter Name="foreground" Type="System.Windows.Media.Brush" />
-        <Parameter Name="pixelsPerDip" Type="System.Double" />
+        <Parameter Name="textToFormat" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="flowDirection" Type="System.Windows.FlowDirection" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="typeface" Type="System.Windows.Media.Typeface" Index="3" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="emSize" Type="System.Double" Index="4" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="foreground" Type="System.Windows.Media.Brush" Index="5" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="pixelsPerDip" Type="System.Double" Index="6" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="textToFormat">The text to be displayed.</param>
@@ -176,14 +176,14 @@ Example of a formatted text string
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="textToFormat" Type="System.String" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
-        <Parameter Name="flowDirection" Type="System.Windows.FlowDirection" />
-        <Parameter Name="typeface" Type="System.Windows.Media.Typeface" />
-        <Parameter Name="emSize" Type="System.Double" />
-        <Parameter Name="foreground" Type="System.Windows.Media.Brush" />
-        <Parameter Name="numberSubstitution" Type="System.Windows.Media.NumberSubstitution" />
-        <Parameter Name="pixelsPerDip" Type="System.Double" />
+        <Parameter Name="textToFormat" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="flowDirection" Type="System.Windows.FlowDirection" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="typeface" Type="System.Windows.Media.Typeface" Index="3" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="emSize" Type="System.Double" Index="4" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="foreground" Type="System.Windows.Media.Brush" Index="5" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="numberSubstitution" Type="System.Windows.Media.NumberSubstitution" Index="6" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="pixelsPerDip" Type="System.Double" Index="7" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="textToFormat">The text to display.</param>
@@ -215,14 +215,14 @@ Example of a formatted text string
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="textToFormat" Type="System.String" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
-        <Parameter Name="flowDirection" Type="System.Windows.FlowDirection" />
-        <Parameter Name="typeface" Type="System.Windows.Media.Typeface" />
-        <Parameter Name="emSize" Type="System.Double" />
-        <Parameter Name="foreground" Type="System.Windows.Media.Brush" />
-        <Parameter Name="numberSubstitution" Type="System.Windows.Media.NumberSubstitution" />
-        <Parameter Name="textFormattingMode" Type="System.Windows.Media.TextFormattingMode" />
+        <Parameter Name="textToFormat" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="flowDirection" Type="System.Windows.FlowDirection" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="typeface" Type="System.Windows.Media.Typeface" Index="3" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="emSize" Type="System.Double" Index="4" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="foreground" Type="System.Windows.Media.Brush" Index="5" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="numberSubstitution" Type="System.Windows.Media.NumberSubstitution" Index="6" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="textFormattingMode" Type="System.Windows.Media.TextFormattingMode" Index="7" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="textToFormat">The text to be displayed.</param>
@@ -249,15 +249,15 @@ Example of a formatted text string
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="textToFormat" Type="System.String" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
-        <Parameter Name="flowDirection" Type="System.Windows.FlowDirection" />
-        <Parameter Name="typeface" Type="System.Windows.Media.Typeface" />
-        <Parameter Name="emSize" Type="System.Double" />
-        <Parameter Name="foreground" Type="System.Windows.Media.Brush" />
-        <Parameter Name="numberSubstitution" Type="System.Windows.Media.NumberSubstitution" />
-        <Parameter Name="textFormattingMode" Type="System.Windows.Media.TextFormattingMode" />
-        <Parameter Name="pixelsPerDip" Type="System.Double" />
+        <Parameter Name="textToFormat" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="flowDirection" Type="System.Windows.FlowDirection" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="typeface" Type="System.Windows.Media.Typeface" Index="3" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="emSize" Type="System.Double" Index="4" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="foreground" Type="System.Windows.Media.Brush" Index="5" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="numberSubstitution" Type="System.Windows.Media.NumberSubstitution" Index="6" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="textFormattingMode" Type="System.Windows.Media.TextFormattingMode" Index="7" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="pixelsPerDip" Type="System.Double" Index="8" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="textToFormat">The text to display.</param>

@@ -383,8 +383,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="sUserPrincipalName" Type="System.String" />
-        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="sUserPrincipalName" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="type" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="sUserPrincipalName">The UPN for the user on whose behalf the code is running.</param>
@@ -446,9 +446,9 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="userToken" Type="System.IntPtr" />
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="acctType" Type="System.Security.Principal.WindowsAccountType" />
+        <Parameter Name="userToken" Type="System.IntPtr" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="type" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="acctType" Type="System.Security.Principal.WindowsAccountType" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="userToken">The account token for the user on whose behalf the code is running.</param>
@@ -520,10 +520,10 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="userToken" Type="System.IntPtr" />
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="acctType" Type="System.Security.Principal.WindowsAccountType" />
-        <Parameter Name="isAuthenticated" Type="System.Boolean" />
+        <Parameter Name="userToken" Type="System.IntPtr" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="type" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="acctType" Type="System.Security.Principal.WindowsAccountType" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="isAuthenticated" Type="System.Boolean" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="userToken">The account token for the user on whose behalf the code is running.</param>
@@ -1273,7 +1273,7 @@ Application code does not call this method; it is automatically invoked during g
         <ReturnType>System.Security.Principal.WindowsImpersonationContext</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="userToken" Type="System.IntPtr" />
+        <Parameter Name="userToken" Type="System.IntPtr" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="userToken">The handle of a Windows account token. This token is usually retrieved through a call to unmanaged code, such as a call to the Win32 API <see langword="LogonUser" /> function.</param>

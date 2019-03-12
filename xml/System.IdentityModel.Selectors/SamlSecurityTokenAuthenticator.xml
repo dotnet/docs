@@ -334,7 +334,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="audienceRestrictionCondition" Type="System.IdentityModel.Tokens.SamlAudienceRestrictionCondition" />
+        <Parameter Name="audienceRestrictionCondition" Type="System.IdentityModel.Tokens.SamlAudienceRestrictionCondition" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="audienceRestrictionCondition">A <see cref="T:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition" /> that specifies the set of target Web services for which the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token is intended.</param>

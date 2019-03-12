@@ -51,11 +51,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
-        <Parameter Name="route" Type="System.Web.Routing.Route" />
-        <Parameter Name="parameterName" Type="System.String" />
-        <Parameter Name="values" Type="System.Web.Routing.RouteValueDictionary" />
-        <Parameter Name="routeDirection" Type="System.Web.Routing.RouteDirection" />
+        <Parameter Name="httpContext" Type="System.Web.HttpContextBase" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="route" Type="System.Web.Routing.Route" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="parameterName" Type="System.String" Index="2" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="values" Type="System.Web.Routing.RouteValueDictionary" Index="3" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="routeDirection" Type="System.Web.Routing.RouteDirection" Index="4" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="httpContext">An object that encapsulates information about the HTTP request.</param>

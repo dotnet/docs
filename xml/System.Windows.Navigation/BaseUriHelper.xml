@@ -20,6 +20,22 @@
     <altmember cref="T:System.Windows.Markup.IUriContext" />
   </Docs>
   <Members>
+    <Member MemberName="BaseUri">
+      <MemberSignature Language="C#" Value="see GetBaseUri" />
+      <MemberSignature Language="ILAsm" Value="see GetBaseUri" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.BaseUriHelper.BaseUri" />
+      <MemberSignature Language="VB.NET" Value="see GetBaseUri" />
+      <MemberSignature Language="F#" Value="see GetBaseUri" Usage="see GetBaseUri" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BaseUriProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BaseUriProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BaseUriProperty" />

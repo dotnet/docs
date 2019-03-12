@@ -63,7 +63,7 @@
       <Parameters>
         <Parameter Name="messages" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-1.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -163,7 +163,7 @@
       <Parameters>
         <Parameter Name="messages" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-1.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

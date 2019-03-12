@@ -84,8 +84,8 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="route" Type="System.Web.Routing.RouteBase" />
-        <Parameter Name="routeHandler" Type="System.Web.Routing.IRouteHandler" />
+        <Parameter Name="route" Type="System.Web.Routing.RouteBase" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="routeHandler" Type="System.Web.Routing.IRouteHandler" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="route">An object that defines the route.</param>
@@ -153,7 +153,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="valueName" Type="System.String" />
+        <Parameter Name="valueName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="valueName">The key of the value to retrieve.</param>

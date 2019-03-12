@@ -545,7 +545,7 @@
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="availableSize" Type="System.Windows.Size" />
+        <Parameter Name="availableSize" Type="System.Windows.Size" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="availableSize">To be added.</param>
@@ -584,7 +584,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="drawingContext" Type="System.Windows.Media.DrawingContext" />
+        <Parameter Name="drawingContext" Type="System.Windows.Media.DrawingContext" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="drawingContext">To be added.</param>

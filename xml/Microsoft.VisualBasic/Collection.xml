@@ -257,7 +257,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Key" Type="System.String" />
+        <Parameter Name="Key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Key">Required. A <see langword="String" /> expression that specifies the key for which to search the elements of the collection.</param>
@@ -527,7 +527,7 @@ MsgBox(CStr(customers(1)))
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Key" Type="System.String" />
+        <Parameter Name="Key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="Key">A unique <see langword="String" /> expression that specifies a key string that can be used, instead of a positional index, to access an element of the collection. <paramref name="Key" /> must correspond to the <paramref name="Key" /> argument specified when the element was added to the collection.</param>
@@ -1128,8 +1128,8 @@ MsgBox(CStr(customers(1)))
     </Member>
     <Member MemberName="System.Collections.IList.Item" ExplicitInterfaceMemberName="IListItem">
       <MemberSignature Language="C#" Value="object System.Collections.IList.IListItem[int Index] { get; set; }" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="ILAsm" Value=".property instance object IListItem(int32)" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListItem(System.Int32)" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.System#Collections#IList#Item(System.Int32)" FrameworkAlternate="netcore-3.0" />
       <MemberSignature Language="VB.NET" Value=" Property IListItem(Index As Integer) As Object Implements IList.IListItem" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.IListItem[int] { System::Object ^ get(int Index); void set(int Index, System::Object ^ value); };" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListItem" FrameworkAlternate="netframework-1.1" />
@@ -1137,6 +1137,12 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="VB.NET" Value=" Property IListItem(index As Integer) As Object Implements IList.IListItem" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.IListItem[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListItem" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int Index] { get; set; }" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="ILAsm" Value=".property instance object IListItem(int32)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListItem(System.Int32)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value=" Property IListItem(Index As Integer) As Object Implements IList.Item" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IList::Item[int] { System::Object ^ get(int Index); void set(int Index, System::Object ^ value); };" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.Item" FrameworkAlternate="netframework-1.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1152,8 +1158,8 @@ MsgBox(CStr(customers(1)))
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="Index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1" />
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="Index">The zero-based index of the element to get or set.</param>
@@ -1278,7 +1284,7 @@ MsgBox(CStr(customers(1)))
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="sender">The object that initiated the callback.</param>
@@ -1323,8 +1329,8 @@ MsgBox(CStr(customers(1)))
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object containing the information required to serialize the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</param>

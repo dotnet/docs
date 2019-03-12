@@ -209,7 +209,7 @@
       <Parameters>
         <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -255,7 +255,7 @@
         <Parameter Name="target" Type="System.Dynamic.DynamicMetaObject" />
         <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

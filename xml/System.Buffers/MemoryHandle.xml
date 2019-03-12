@@ -57,9 +57,9 @@ A `MemoryHandle` instance represents a handle to a pinned block of memory. It is
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="pointer" Type="System.Void*" />
-        <Parameter Name="handle" Type="System.Runtime.InteropServices.GCHandle" />
-        <Parameter Name="pinnable" Type="System.Buffers.IPinnable" />
+        <Parameter Name="pointer" Type="System.Void*" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="handle" Type="System.Runtime.InteropServices.GCHandle" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="pinnable" Type="System.Buffers.IPinnable" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="pointer">A pointer to memory.</param>

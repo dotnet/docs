@@ -158,8 +158,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="bootstrapSecurityBindingElement" Type="System.ServiceModel.Channels.SecurityBindingElement" />
-        <Parameter Name="requireCancellation" Type="System.Boolean" />
+        <Parameter Name="bootstrapSecurityBindingElement" Type="System.ServiceModel.Channels.SecurityBindingElement" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="requireCancellation" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="bootstrapSecurityBindingElement">The bootstrap security binding element.</param>
@@ -236,9 +236,9 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="bootstrapSecurityBindingElement" Type="System.ServiceModel.Channels.SecurityBindingElement" />
-        <Parameter Name="requireCancellation" Type="System.Boolean" />
-        <Parameter Name="canRenewSession" Type="System.Boolean" />
+        <Parameter Name="bootstrapSecurityBindingElement" Type="System.ServiceModel.Channels.SecurityBindingElement" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="requireCancellation" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="canRenewSession" Type="System.Boolean" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bootstrapSecurityBindingElement">A security binding element object that secures the message exchanged as part of the secure conversation token issuance.</param>
@@ -272,9 +272,9 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="bootstrapSecurityBindingElement" Type="System.ServiceModel.Channels.SecurityBindingElement" />
-        <Parameter Name="requireCancellation" Type="System.Boolean" />
-        <Parameter Name="bootstrapProtectionRequirements" Type="System.ServiceModel.Security.ChannelProtectionRequirements" />
+        <Parameter Name="bootstrapSecurityBindingElement" Type="System.ServiceModel.Channels.SecurityBindingElement" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="requireCancellation" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="bootstrapProtectionRequirements" Type="System.ServiceModel.Security.ChannelProtectionRequirements" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bootstrapSecurityBindingElement">The bootstrap security binding element.</param>
@@ -310,10 +310,10 @@
         <AssemblyName>System.ServiceModel.Security</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="bootstrapSecurityBindingElement" Type="System.ServiceModel.Channels.SecurityBindingElement" />
-        <Parameter Name="requireCancellation" Type="System.Boolean" />
-        <Parameter Name="canRenewSession" Type="System.Boolean" />
-        <Parameter Name="bootstrapProtectionRequirements" Type="System.ServiceModel.Security.ChannelProtectionRequirements" />
+        <Parameter Name="bootstrapSecurityBindingElement" Type="System.ServiceModel.Channels.SecurityBindingElement" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="requireCancellation" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="canRenewSession" Type="System.Boolean" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="bootstrapProtectionRequirements" Type="System.ServiceModel.Security.ChannelProtectionRequirements" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bootstrapSecurityBindingElement">A security binding element object that secures the message exchanged as part of the secure conversation token issuance.</param>
@@ -486,8 +486,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
-        <Parameter Name="referenceStyle" Type="System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="referenceStyle" Type="System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="token">The token.</param>
@@ -561,7 +561,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" />
+        <Parameter Name="requirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="requirement">The requirement of the security token.</param>

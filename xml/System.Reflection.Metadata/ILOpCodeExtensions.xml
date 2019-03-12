@@ -40,7 +40,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" />
+        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="opCode">To be added.</param>
@@ -68,7 +68,7 @@
         <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" />
+        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="opCode">To be added.</param>
@@ -96,7 +96,7 @@
         <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" />
+        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="opCode">To be added.</param>
@@ -124,7 +124,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" />
+        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="opCode">To be added.</param>

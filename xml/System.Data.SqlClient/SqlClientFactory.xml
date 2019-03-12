@@ -451,7 +451,7 @@ DbParameter cmd = newFactory.CreateParameter();
         <ReturnType>System.Security.CodeAccessPermission</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="state">A member of the <see cref="T:System.Security.Permissions.PermissionState" /> enumeration.</param>
@@ -535,7 +535,7 @@ DbCommand cmd = newFactory.CreateCommand();
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serviceType" Type="System.Type" />
+        <Parameter Name="serviceType" Type="System.Type" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="serviceType">An object that specifies the type of service object to get.</param>

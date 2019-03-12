@@ -61,8 +61,8 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="route" Type="System.Web.Routing.RouteBase" />
-        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="route" Type="System.Web.Routing.RouteBase" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="virtualPath" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="route">The object that is used to generate the URL.</param>

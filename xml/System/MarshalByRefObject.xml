@@ -136,7 +136,7 @@
         <ReturnType>System.Runtime.Remoting.ObjRef</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestedType" Type="System.Type" />
+        <Parameter Name="requestedType" Type="System.Type" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="requestedType">The <see cref="T:System.Type" /> of the object that the new <see cref="T:System.Runtime.Remoting.ObjRef" /> will reference.</param>
@@ -297,7 +297,7 @@
         <ReturnType>System.MarshalByRefObject</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cloneIdentity" Type="System.Boolean" />
+        <Parameter Name="cloneIdentity" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="cloneIdentity">

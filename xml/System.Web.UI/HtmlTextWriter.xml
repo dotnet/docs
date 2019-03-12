@@ -1072,7 +1072,7 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
+        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="style">A <see cref="T:System.Web.UI.WebControls.Style" /> that specifies the layout and formatting to begin applying to the block of markup.</param>
@@ -1119,8 +1119,8 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
-        <Parameter Name="tag" Type="System.Web.UI.HtmlTextWriterTag" />
+        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="tag" Type="System.Web.UI.HtmlTextWriterTag" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="style">A <see cref="T:System.Web.UI.WebControls.Style" /> that specifies the layout and formatting to begin applying to the block of markup.</param>
@@ -1269,7 +1269,7 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
+        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="style">A <see cref="T:System.Web.UI.WebControls.Style" /> that specifies the layout and formatting to close.</param>
@@ -1314,8 +1314,8 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
-        <Parameter Name="tag" Type="System.Web.UI.HtmlTextWriterTag" />
+        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="tag" Type="System.Web.UI.HtmlTextWriterTag" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="style">A <see cref="T:System.Web.UI.WebControls.Style" /> that specifies the layout and formatting to stop applying to the output text.</param>
@@ -2002,7 +2002,7 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attribute" Type="System.String" />
+        <Parameter Name="attribute" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="attribute">A string that contains the name of the attribute to check.</param>
@@ -3799,7 +3799,7 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="arg" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-1.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -4208,7 +4208,7 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="text">The text string to encode and write to the output stream.</param>
@@ -4255,7 +4255,7 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="url" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="url">The URL string to encode and write to the output stream.</param>
@@ -4303,7 +4303,7 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="urlText" Type="System.String" />
+        <Parameter Name="urlText" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="urlText">The URL parameter string to encode and write to the output stream.</param>
@@ -4974,7 +4974,7 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="arg" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-1.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -5276,8 +5276,8 @@ If the attribute type is `Style`, the value won't be encoded even if `fEndode` i
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
-        <Parameter Name="argument" Type="System.Boolean" />
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="text">The string to encode and write to the output stream.</param>

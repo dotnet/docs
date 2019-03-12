@@ -41,7 +41,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementType" Type="TType" />
+        <Parameter Name="elementType" Type="TType" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="elementType">To be added.</param>

@@ -81,7 +81,7 @@
         <Parameter Name="workflowDefinition" Type="System.IO.Stream" />
         <Parameter Name="baseAddress" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -119,7 +119,7 @@
         <Parameter Name="workflowDefinitionPath" Type="System.String" />
         <Parameter Name="baseAddress" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -156,7 +156,7 @@
         <Parameter Name="workflowType" Type="System.Type" />
         <Parameter Name="baseAddress" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -194,7 +194,7 @@
         <Parameter Name="ruleDefinition" Type="System.IO.Stream" />
         <Parameter Name="baseAddress" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -235,7 +235,7 @@
         <Parameter Name="ruleDefinitionPath" Type="System.String" />
         <Parameter Name="baseAddress" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -275,7 +275,7 @@
         <Parameter Name="typeProvider" Type="System.Workflow.ComponentModel.Compiler.ITypeProvider" />
         <Parameter Name="baseAddress" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -318,7 +318,7 @@
         <Parameter Name="typeProvider" Type="System.Workflow.ComponentModel.Compiler.ITypeProvider" />
         <Parameter Name="baseAddress" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

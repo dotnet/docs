@@ -138,8 +138,8 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="masterKeyPath" Type="System.String" />
-        <Parameter Name="allowEnclaveComputations" Type="System.Boolean" />
+        <Parameter Name="masterKeyPath" Type="System.String" Index="0" FrameworkAlternate="netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="allowEnclaveComputations" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="masterKeyPath">The column master key path. The path format is specific to a key store provider.</param>
@@ -174,9 +174,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="masterKeyPath" Type="System.String" />
-        <Parameter Name="allowEnclaveComputations" Type="System.Boolean" />
-        <Parameter Name="signature" Type="System.Byte[]" />
+        <Parameter Name="masterKeyPath" Type="System.String" Index="0" FrameworkAlternate="netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="allowEnclaveComputations" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="signature" Type="System.Byte[]" Index="2" FrameworkAlternate="netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="masterKeyPath">The complete path of an asymmetric key. The path format is specific to a key store provider.</param>

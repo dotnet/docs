@@ -44,7 +44,7 @@
         <ReturnType>System.Web.IHttpHandler</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
+        <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="requestContext">An object that encapsulates information about the request.</param>

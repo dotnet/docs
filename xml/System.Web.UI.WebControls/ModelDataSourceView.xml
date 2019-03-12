@@ -287,9 +287,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keys" Type="System.Collections.IDictionary" />
-        <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
-        <Parameter Name="callback" Type="System.Web.UI.DataSourceViewOperationCallback" />
+        <Parameter Name="keys" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="oldValues" Type="System.Collections.IDictionary" Index="1" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="callback" Type="System.Web.UI.DataSourceViewOperationCallback" Index="2" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="keys">The keys.</param>
@@ -758,8 +758,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="values" Type="System.Collections.IDictionary" />
-        <Parameter Name="callback" Type="System.Web.UI.DataSourceViewOperationCallback" />
+        <Parameter Name="values" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="callback" Type="System.Web.UI.DataSourceViewOperationCallback" Index="1" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="values">The values to be inserted.</param>
@@ -986,8 +986,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" />
-        <Parameter Name="callback" Type="System.Web.UI.DataSourceViewSelectCallback" />
+        <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" Index="0" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="callback" Type="System.Web.UI.DataSourceViewSelectCallback" Index="1" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="arguments">The select method arguments.</param>
@@ -1190,10 +1190,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keys" Type="System.Collections.IDictionary" />
-        <Parameter Name="values" Type="System.Collections.IDictionary" />
-        <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
-        <Parameter Name="callback" Type="System.Web.UI.DataSourceViewOperationCallback" />
+        <Parameter Name="keys" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="values" Type="System.Collections.IDictionary" Index="1" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="oldValues" Type="System.Collections.IDictionary" Index="2" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="callback" Type="System.Web.UI.DataSourceViewOperationCallback" Index="3" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="keys">The specified keys.</param>

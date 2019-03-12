@@ -204,10 +204,10 @@
         <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="webReferences" Type="System.Web.Services.Description.WebReferenceCollection" />
-        <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
-        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
-        <Parameter Name="options" Type="System.Web.Services.Description.WebReferenceOptions" />
+        <Parameter Name="webReferences" Type="System.Web.Services.Description.WebReferenceCollection" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="options" Type="System.Web.Services.Description.WebReferenceOptions" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="webReferences">A <see cref="T:System.Web.Services.Description.WebReferenceCollection" /> of Web references to compile.</param>
@@ -245,8 +245,8 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionImportWarnings</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="codeNamespace" Type="System.CodeDom.CodeNamespace" />
-        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
+        <Parameter Name="codeNamespace" Type="System.CodeDom.CodeNamespace" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="codeNamespace">The namespace into which the <see cref="P:System.Web.Services.Description.ServiceDescriptionImporter.ServiceDescriptions" /> values are imported.</param>

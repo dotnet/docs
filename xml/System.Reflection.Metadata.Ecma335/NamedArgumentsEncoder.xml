@@ -42,7 +42,7 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="builder">To be added.</param>
@@ -69,10 +69,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isField" Type="System.Boolean" />
-        <Parameter Name="type" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder&gt;" />
-        <Parameter Name="name" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.NameEncoder&gt;" />
-        <Parameter Name="literal" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.LiteralEncoder&gt;" />
+        <Parameter Name="isField" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="type" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder&gt;" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.NameEncoder&gt;" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="literal" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.LiteralEncoder&gt;" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="isField">To be added.</param>
@@ -102,10 +102,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isField" Type="System.Boolean" />
-        <Parameter Name="type" Type="System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder" RefType="out" />
-        <Parameter Name="name" Type="System.Reflection.Metadata.Ecma335.NameEncoder" RefType="out" />
-        <Parameter Name="literal" Type="System.Reflection.Metadata.Ecma335.LiteralEncoder" RefType="out" />
+        <Parameter Name="isField" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder" RefType="out" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.Ecma335.NameEncoder" RefType="out" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="literal" Type="System.Reflection.Metadata.Ecma335.LiteralEncoder" RefType="out" Index="3" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="isField">To be added.</param>

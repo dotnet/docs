@@ -234,8 +234,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="memberInfo" Type="System.Reflection.MemberInfo" />
-        <Parameter Name="associationCriteria" Type="System.Linq.Expressions.LambdaExpression" RefType="out" />
+        <Parameter Name="memberInfo" Type="System.Reflection.MemberInfo" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="associationCriteria" Type="System.Linq.Expressions.LambdaExpression" RefType="out" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="memberInfo">To be added.</param>
@@ -260,7 +260,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="memberInfo" Type="System.Reflection.MemberInfo" />
+        <Parameter Name="memberInfo" Type="System.Reflection.MemberInfo" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="memberInfo">To be added.</param>

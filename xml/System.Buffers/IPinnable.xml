@@ -45,7 +45,7 @@ The <xref:System.Buffers.MemoryManager%601> class implements the `IPinnable` int
         <ReturnType>System.Buffers.MemoryHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementIndex" Type="System.Int32" />
+        <Parameter Name="elementIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="elementIndex">The offset to the element within the memory buffer to which the returned <see cref="T:System.Buffers.MemoryHandle" /> points.</param>

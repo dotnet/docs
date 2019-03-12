@@ -100,7 +100,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.Configuration.Provider.ProviderBase" />
+        <Parameter Name="provider" Type="System.Configuration.Provider.ProviderBase" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="provider">The membership provider to add to the collection.</param>
@@ -140,8 +140,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Web.Security.MembershipProvider[]" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="array" Type="System.Web.Security.MembershipProvider[]" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="array">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.Web.Security.MembershipProviderCollection" />. The array must have zero-based indexing.</param>
@@ -197,7 +197,7 @@
         <ReturnType>System.Web.Security.MembershipProvider</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The name of the membership provider.</param>

@@ -714,7 +714,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="obj">The <see cref="T:System.Security.Policy.Evidence" /> object to compare with the current <see cref="T:System.Security.Policy.Evidence" />.</param>

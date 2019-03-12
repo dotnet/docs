@@ -73,7 +73,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -101,7 +101,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="TType" />
+        <Parameter Name="type" Type="TType" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -129,7 +129,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="TType" />
+        <Parameter Name="type" Type="TType" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>

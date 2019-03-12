@@ -101,7 +101,7 @@
       <Parameters>
         <Parameter Name="hmenu" Type="Accessibility._RemotableHandle" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
             </Attribute>
           </Attributes>
@@ -148,7 +148,7 @@
       <Parameters>
         <Parameter Name="hwnd" Type="Accessibility._RemotableHandle" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
             </Attribute>
           </Attributes>
@@ -238,7 +238,7 @@
       <Parameters>
         <Parameter Name="hmenu" Type="Accessibility._RemotableHandle" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
             </Attribute>
           </Attributes>
@@ -285,7 +285,7 @@
       <Parameters>
         <Parameter Name="hwnd" Type="Accessibility._RemotableHandle" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
             </Attribute>
           </Attributes>
@@ -331,16 +331,16 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pIDString" Type="System.Byte" RefType="ref" />
-        <Parameter Name="dwIDStringLen" Type="System.UInt32" />
-        <Parameter Name="phmenu" Type="Accessibility._RemotableHandle" RefType="out">
+        <Parameter Name="pIDString" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="netframework-4.0" />
+        <Parameter Name="dwIDStringLen" Type="System.UInt32" Index="1" FrameworkAlternate="netframework-4.0" />
+        <Parameter Name="phmenu" Type="Accessibility._RemotableHandle" RefType="out" Index="2" FrameworkAlternate="netframework-4.0">
           <Attributes>
             <Attribute>
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
-        <Parameter Name="pidChild" Type="System.UInt32" RefType="out" />
+        <Parameter Name="pidChild" Type="System.UInt32" RefType="out" Index="3" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="pIDString">The <see cref="T:Accessibility.CAccPropServicesClass" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</param>
@@ -371,16 +371,16 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pIDString" Type="System.Byte" RefType="ref" />
-        <Parameter Name="dwIDStringLen" Type="System.UInt32" />
-        <Parameter Name="phmenu" Type="System.IntPtr">
+        <Parameter Name="pIDString" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dwIDStringLen" Type="System.UInt32" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="phmenu" Type="System.IntPtr" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
-        <Parameter Name="pidChild" Type="System.UInt32" RefType="out" />
+        <Parameter Name="pidChild" Type="System.UInt32" RefType="out" Index="3" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="pIDString">Pointer to a buffer containing identity string of an HMENU-based accessible element.</param>
@@ -410,17 +410,17 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pIDString" Type="System.Byte" RefType="ref" />
-        <Parameter Name="dwIDStringLen" Type="System.UInt32" />
-        <Parameter Name="phwnd" Type="Accessibility._RemotableHandle" RefType="out">
+        <Parameter Name="pIDString" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="netframework-4.0" />
+        <Parameter Name="dwIDStringLen" Type="System.UInt32" Index="1" FrameworkAlternate="netframework-4.0" />
+        <Parameter Name="phwnd" Type="Accessibility._RemotableHandle" RefType="out" Index="2" FrameworkAlternate="netframework-4.0">
           <Attributes>
             <Attribute>
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
-        <Parameter Name="pidObject" Type="System.UInt32" RefType="out" />
-        <Parameter Name="pidChild" Type="System.UInt32" RefType="out" />
+        <Parameter Name="pidObject" Type="System.UInt32" RefType="out" Index="3" FrameworkAlternate="netframework-4.0" />
+        <Parameter Name="pidChild" Type="System.UInt32" RefType="out" Index="4" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="pIDString">The <see cref="T:Accessibility.CAccPropServicesClass" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) IAccPropServices interface.</param>
@@ -452,17 +452,17 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pIDString" Type="System.Byte" RefType="ref" />
-        <Parameter Name="dwIDStringLen" Type="System.UInt32" />
-        <Parameter Name="phwnd" Type="System.IntPtr">
+        <Parameter Name="pIDString" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dwIDStringLen" Type="System.UInt32" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="phwnd" Type="System.IntPtr" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
-        <Parameter Name="pidObject" Type="System.UInt32" RefType="out" />
-        <Parameter Name="pidChild" Type="System.UInt32" RefType="out" />
+        <Parameter Name="pidObject" Type="System.UInt32" RefType="out" Index="3" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="pidChild" Type="System.UInt32" RefType="out" Index="4" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="pIDString">Pointer to a buffer containing identity string of an Hwnd-based accessible element.</param>
@@ -496,7 +496,7 @@
       <Parameters>
         <Parameter Name="hmenu" Type="Accessibility._RemotableHandle" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
             </Attribute>
           </Attributes>
@@ -542,7 +542,7 @@
       <Parameters>
         <Parameter Name="hmenu" Type="Accessibility._RemotableHandle" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
             </Attribute>
           </Attributes>
@@ -593,7 +593,7 @@
       <Parameters>
         <Parameter Name="hmenu" Type="Accessibility._RemotableHandle" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
             </Attribute>
           </Attributes>
@@ -640,7 +640,7 @@
       <Parameters>
         <Parameter Name="hwnd" Type="Accessibility._RemotableHandle" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
             </Attribute>
           </Attributes>
@@ -688,7 +688,7 @@
       <Parameters>
         <Parameter Name="hwnd" Type="Accessibility._RemotableHandle" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
             </Attribute>
           </Attributes>
@@ -741,7 +741,7 @@
       <Parameters>
         <Parameter Name="hwnd" Type="Accessibility._RemotableHandle" RefType="ref">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
             </Attribute>
           </Attributes>

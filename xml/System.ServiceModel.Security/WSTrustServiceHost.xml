@@ -59,7 +59,7 @@
         <Parameter Name="securityTokenServiceConfiguration" Type="System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" />
         <Parameter Name="baseAddresses" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -97,7 +97,7 @@
         <Parameter Name="serviceContract" Type="System.ServiceModel.Security.WSTrustServiceContract" />
         <Parameter Name="baseAddresses" Type="System.Uri[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

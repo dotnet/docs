@@ -120,7 +120,7 @@
         <ReturnType>System.Security.Cryptography.ECDiffieHellman</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" />
+        <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="curve">The curve to use to generate a new public/private key-pair.</param>
@@ -161,7 +161,7 @@
         <ReturnType>System.Security.Cryptography.ECDiffieHellman</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="System.Security.Cryptography.ECParameters" />
+        <Parameter Name="parameters" Type="System.Security.Cryptography.ECParameters" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="parameters">The parameters  for the elliptic curve cryptography (ECC) algorithm.</param>
@@ -261,8 +261,8 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
-        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="otherPartyPublicKey">The other party's public key.</param>
@@ -299,10 +299,10 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
-        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
-        <Parameter Name="secretPrepend" Type="System.Byte[]" />
-        <Parameter Name="secretAppend" Type="System.Byte[]" />
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="secretPrepend" Type="System.Byte[]" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="secretAppend" Type="System.Byte[]" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="otherPartyPublicKey">The other party's public key.</param>
@@ -344,9 +344,9 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
-        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
-        <Parameter Name="hmacKey" Type="System.Byte[]" />
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="hmacKey" Type="System.Byte[]" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="otherPartyPublicKey">The other party's public key.</param>
@@ -384,11 +384,11 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
-        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
-        <Parameter Name="hmacKey" Type="System.Byte[]" />
-        <Parameter Name="secretPrepend" Type="System.Byte[]" />
-        <Parameter Name="secretAppend" Type="System.Byte[]" />
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="hmacKey" Type="System.Byte[]" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="secretPrepend" Type="System.Byte[]" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="secretAppend" Type="System.Byte[]" Index="4" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="otherPartyPublicKey">The other party's public key.</param>
@@ -459,9 +459,9 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
-        <Parameter Name="prfLabel" Type="System.Byte[]" />
-        <Parameter Name="prfSeed" Type="System.Byte[]" />
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="prfLabel" Type="System.Byte[]" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="prfSeed" Type="System.Byte[]" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="otherPartyPublicKey">The other party's public key.</param>
@@ -518,7 +518,7 @@
         <ReturnType>System.Security.Cryptography.ECParameters</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="includePrivateParameters">
@@ -549,7 +549,7 @@
         <ReturnType>System.Security.Cryptography.ECParameters</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="includePrivateParameters">
@@ -586,7 +586,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="xmlString" Type="System.String" />
+        <Parameter Name="xmlString" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="xmlString">To be added.</param>
@@ -614,7 +614,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" />
+        <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="curve">The curve used to generate an ephemeral public/private key pair.</param>
@@ -683,7 +683,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="System.Security.Cryptography.ECParameters" />
+        <Parameter Name="parameters" Type="System.Security.Cryptography.ECParameters" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="parameters">The curve's parameters to import.</param>
@@ -818,7 +818,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="includePrivateParameters">To be added.</param>

@@ -59,7 +59,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="from" Type="System.ServiceModel.Configuration.X509DefaultServiceCertificateElement" />
+        <Parameter Name="from" Type="System.ServiceModel.Configuration.X509DefaultServiceCertificateElement" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="from">The configuration element to be copied.</param>

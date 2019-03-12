@@ -126,7 +126,7 @@ private void pwdGrammar()
         <Parameter Name="semanticResultKey" Type="System.String" />
         <Parameter Name="builders" Type="System.Speech.Recognition.GrammarBuilder[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -240,7 +240,7 @@ private void pwdGrammar()
         <Parameter Name="semanticResultKey" Type="System.String" />
         <Parameter Name="phrases" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

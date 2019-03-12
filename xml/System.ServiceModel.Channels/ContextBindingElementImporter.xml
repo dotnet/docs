@@ -83,9 +83,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="wsdlDocuments" Type="System.Web.Services.Description.ServiceDescriptionCollection" />
-        <Parameter Name="xmlSchemas" Type="System.Xml.Schema.XmlSchemaSet" />
-        <Parameter Name="policy" Type="System.Collections.Generic.ICollection&lt;System.Xml.XmlElement&gt;" />
+        <Parameter Name="wsdlDocuments" Type="System.Web.Services.Description.ServiceDescriptionCollection" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="xmlSchemas" Type="System.Xml.Schema.XmlSchemaSet" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="policy" Type="System.Collections.Generic.ICollection&lt;System.Xml.XmlElement&gt;" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="wsdlDocuments">The <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> of instances of <see cref="T:System.Web.Services.Description.ServiceDescription" />.</param>
@@ -118,8 +118,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="importer" Type="System.ServiceModel.Description.WsdlImporter" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" />
+        <Parameter Name="importer" Type="System.ServiceModel.Description.WsdlImporter" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="importer">The <see cref="T:System.ServiceModel.Description.WsdlImporter" />.</param>
@@ -151,8 +151,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="importer" Type="System.ServiceModel.Description.WsdlImporter" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
+        <Parameter Name="importer" Type="System.ServiceModel.Description.WsdlImporter" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="importer">The <see cref="T:System.ServiceModel.Description.WsdlImporter" />.</param>
@@ -192,8 +192,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="importer" Type="System.ServiceModel.Description.MetadataImporter" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
+        <Parameter Name="importer" Type="System.ServiceModel.Description.MetadataImporter" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="importer">The <see cref="T:System.ServiceModel.Description.MetadataImporter" />.</param>

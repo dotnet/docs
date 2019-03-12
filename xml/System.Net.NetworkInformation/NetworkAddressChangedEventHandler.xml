@@ -29,8 +29,8 @@
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="sender" Type="System.Object" />
-    <Parameter Name="e" Type="System.EventArgs" />
+    <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+    <Parameter Name="e" Type="System.EventArgs" Index="1" FrameworkAlternate="xamarinmac-3.0" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>

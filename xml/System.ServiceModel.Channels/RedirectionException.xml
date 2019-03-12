@@ -73,7 +73,7 @@
         <Parameter Name="scope" Type="System.ServiceModel.Channels.RedirectionScope" />
         <Parameter Name="locations" Type="System.ServiceModel.Channels.RedirectionLocation[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -107,7 +107,7 @@
         <Parameter Name="innerException" Type="System.Exception" />
         <Parameter Name="locations" Type="System.ServiceModel.Channels.RedirectionLocation[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -147,7 +147,7 @@
         <Parameter Name="scope" Type="System.ServiceModel.Channels.RedirectionScope" />
         <Parameter Name="locations" Type="System.ServiceModel.Channels.RedirectionLocation[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -183,7 +183,7 @@
         <Parameter Name="innerException" Type="System.Exception" />
         <Parameter Name="locations" Type="System.ServiceModel.Channels.RedirectionLocation[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

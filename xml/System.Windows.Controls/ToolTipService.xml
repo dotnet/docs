@@ -68,8 +68,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="handler" Type="System.Windows.Controls.ToolTipEventHandler" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="handler" Type="System.Windows.Controls.ToolTipEventHandler" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
@@ -94,8 +94,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="handler" Type="System.Windows.Controls.ToolTipEventHandler" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="handler" Type="System.Windows.Controls.ToolTipEventHandler" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
@@ -1016,15 +1016,16 @@
       </Docs>
     </Member>
     <Member MemberName="IsOpen">
-      <MemberSignature Language="C#" Value="see GetIsOpen, and SetIsOpen" />
-      <MemberSignature Language="ILAsm" Value="see GetIsOpen, and SetIsOpen" />
+      <MemberSignature Language="C#" Value="see GetIsOpen" />
+      <MemberSignature Language="ILAsm" Value="see GetIsOpen" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolTipService.IsOpen" />
-      <MemberSignature Language="VB.NET" Value="see GetIsOpen, and SetIsOpen" />
-      <MemberSignature Language="F#" Value="see GetIsOpen, and SetIsOpen" Usage="see GetIsOpen, and SetIsOpen" />
+      <MemberSignature Language="VB.NET" Value="see GetIsOpen" />
+      <MemberSignature Language="F#" Value="see GetIsOpen" Usage="see GetIsOpen" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
         <summary>Gets whether a tooltip is currently visible.</summary>
@@ -1258,8 +1259,8 @@ This is an attached property. For information about how to get the value of this
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="handler" Type="System.Windows.Controls.ToolTipEventHandler" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="handler" Type="System.Windows.Controls.ToolTipEventHandler" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
@@ -1284,8 +1285,8 @@ This is an attached property. For information about how to get the value of this
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="handler" Type="System.Windows.Controls.ToolTipEventHandler" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="handler" Type="System.Windows.Controls.ToolTipEventHandler" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>

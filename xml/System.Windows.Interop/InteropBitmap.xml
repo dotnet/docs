@@ -242,7 +242,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dirtyRect" Type="System.Nullable&lt;System.Windows.Int32Rect&gt;" />
+        <Parameter Name="dirtyRect" Type="System.Nullable&lt;System.Windows.Int32Rect&gt;" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dirtyRect">The area of the hosted non-[!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] to be rendered. If this parameter is null, the entire non-[!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] is rendered.</param>

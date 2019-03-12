@@ -149,7 +149,7 @@
         <ReturnType>System.Data.Common.DbTransaction</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isolationLevel" Type="System.Data.IsolationLevel" />
+        <Parameter Name="isolationLevel" Type="System.Data.IsolationLevel" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="isolationLevel">To be added.</param>
@@ -278,7 +278,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The name of the database to use instead of the current database.</param>
@@ -345,7 +345,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="connection" Type="System.Data.OracleClient.OracleConnection" />
+        <Parameter Name="connection" Type="System.Data.OracleClient.OracleConnection" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="connection">The <see cref="T:System.Data.OracleClient.OracleConnection" /> to be cleared from the pool.</param>
@@ -762,7 +762,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="transaction" Type="System.Transactions.Transaction" />
+        <Parameter Name="transaction" Type="System.Transactions.Transaction" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="transaction">A reference to an existing <see cref="T:System.Transactions.Transaction" /> in which to enlist.</param>
@@ -830,7 +830,7 @@
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collectionName" Type="System.String" />
+        <Parameter Name="collectionName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collectionName">Specifies the name of the schema to return.</param>
@@ -876,8 +876,8 @@
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collectionName" Type="System.String" />
-        <Parameter Name="restrictionValues" Type="System.String[]" />
+        <Parameter Name="collectionName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="restrictionValues" Type="System.String[]" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collectionName">Specifies the name of the schema to return.</param>
@@ -1143,7 +1143,7 @@ Once the transaction has completed, you must explicitly commit or roll back the 
         <ReturnType>System.Data.IDbTransaction</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="il" Type="System.Data.IsolationLevel" />
+        <Parameter Name="il" Type="System.Data.IsolationLevel" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="il">One of the <see cref="T:System.Data.IsolationLevel" /> values.</param>
@@ -1177,7 +1177,7 @@ Once the transaction has completed, you must explicitly commit or roll back the 
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="value">The name of the database to use in place of the current database.</param>

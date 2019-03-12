@@ -63,8 +63,8 @@ End Class
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="metaModel" Type="System.Web.DynamicData.MetaModel" />
-        <Parameter Name="tableProvider" Type="System.Web.DynamicData.ModelProviders.TableProvider" />
+        <Parameter Name="metaModel" Type="System.Web.DynamicData.MetaModel" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="tableProvider" Type="System.Web.DynamicData.ModelProviders.TableProvider" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="metaModel">The entity meta model.</param>
@@ -146,7 +146,7 @@ End Class
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
+        <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="principal">The user's security context.</param>
@@ -182,7 +182,7 @@ End Class
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
+        <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="principal">The user's security context.</param>
@@ -218,7 +218,7 @@ End Class
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
+        <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="principal">The user's security context.</param>
@@ -254,7 +254,7 @@ End Class
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
+        <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="principal">The user's security context.</param>
@@ -326,7 +326,7 @@ End Class
         <ReturnType>System.Web.DynamicData.MetaChildrenColumn</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="columnProvider" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
+        <Parameter Name="columnProvider" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="columnProvider">The column provider.</param>
@@ -357,7 +357,7 @@ End Class
         <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="columnProvider" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
+        <Parameter Name="columnProvider" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="columnProvider">The column provider.</param>
@@ -421,7 +421,7 @@ End Class
         <ReturnType>System.Web.DynamicData.MetaForeignKeyColumn</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="columnProvider" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
+        <Parameter Name="columnProvider" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="columnProvider">The column provider.</param>
@@ -462,7 +462,7 @@ End Class
         <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="typeDescriptor" Type="System.ComponentModel.ICustomTypeDescriptor" />
+        <Parameter Name="typeDescriptor" Type="System.ComponentModel.ICustomTypeDescriptor" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="typeDescriptor">Information about the table type.</param>
@@ -487,7 +487,7 @@ End Class
         <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entityType" Type="System.Type" />
+        <Parameter Name="entityType" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entityType">The table type for which to generate metadata.</param>
@@ -977,7 +977,7 @@ End Class
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="context" Type="System.Web.HttpContext" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">The context for the specified Web request.</param>
@@ -1102,7 +1102,7 @@ End Class
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="row" Type="System.Object" />
+        <Parameter Name="row" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="row">A row.</param>
@@ -1326,8 +1326,8 @@ End Function
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.DynamicData.MetaColumn&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
-        <Parameter Name="containerType" Type="System.Web.DynamicData.ContainerType" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="containerType" Type="System.Web.DynamicData.ContainerType" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="mode">The data-bound control mode.</param>
@@ -1364,7 +1364,7 @@ End Function
         <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entityType" Type="System.Type" />
+        <Parameter Name="entityType" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entityType">The type of the entity.</param>
@@ -1842,8 +1842,8 @@ End Sub
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entityType" Type="System.Type" />
-        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" RefType="out" />
+        <Parameter Name="entityType" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" RefType="out" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entityType">The type of the entity.</param>

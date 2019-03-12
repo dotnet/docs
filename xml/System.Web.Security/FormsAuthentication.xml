@@ -502,7 +502,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="configurationData" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="configurationData" Type="System.Collections.Specialized.NameValueCollection" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="configurationData">A name-value collection that contains values for "defaultUrl" and/or "loginUrl". The parameter can be null if there are no values for the default URL or the login URL.</param>
@@ -1170,7 +1170,7 @@ This method does not create a cookie.
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="extraQueryString" Type="System.String" />
+        <Parameter Name="extraQueryString" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="extraQueryString">The query string to include with the redirect URL.</param>

@@ -278,9 +278,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.AcquireRequestState" />.</param>
@@ -349,9 +349,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.AuthenticateRequest" />.</param>
@@ -420,9 +420,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.AuthorizeRequest" />.</param>
@@ -491,9 +491,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.BeginRequest" />.</param>
@@ -562,9 +562,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.EndRequest" />.</param>
@@ -608,8 +608,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bh" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="eh" Type="System.Web.EndEventHandler" />
+        <Parameter Name="bh" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="eh" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bh">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.LogRequest" />.</param>
@@ -642,9 +642,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.LogRequest" />.</param>
@@ -688,8 +688,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bh" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="eh" Type="System.Web.EndEventHandler" />
+        <Parameter Name="bh" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="eh" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bh">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.MapRequestHandler" />.</param>
@@ -722,9 +722,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.MapRequestHandler" />.</param>
@@ -765,8 +765,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bh" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="eh" Type="System.Web.EndEventHandler" />
+        <Parameter Name="bh" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="eh" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bh">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostAcquireRequestState" />.</param>
@@ -792,9 +792,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostAcquireRequestState" />.</param>
@@ -835,8 +835,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bh" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="eh" Type="System.Web.EndEventHandler" />
+        <Parameter Name="bh" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="eh" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bh">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostAuthenticateRequest" />.</param>
@@ -862,9 +862,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostAuthorizeRequest" />.</param>
@@ -905,8 +905,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bh" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="eh" Type="System.Web.EndEventHandler" />
+        <Parameter Name="bh" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="eh" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bh">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostAuthorizeRequest" />.</param>
@@ -932,9 +932,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostAuthorizeRequest" />.</param>
@@ -978,8 +978,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bh" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="eh" Type="System.Web.EndEventHandler" />
+        <Parameter Name="bh" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="eh" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bh">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostLogRequest" />.</param>
@@ -1012,9 +1012,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostLogRequest" />.</param>
@@ -1055,8 +1055,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bh" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="eh" Type="System.Web.EndEventHandler" />
+        <Parameter Name="bh" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="eh" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bh">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostMapRequestHandler" />.</param>
@@ -1082,9 +1082,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostMapRequestHandler" />.</param>
@@ -1125,8 +1125,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bh" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="eh" Type="System.Web.EndEventHandler" />
+        <Parameter Name="bh" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="eh" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bh">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostReleaseRequestState" />.</param>
@@ -1152,9 +1152,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostReleaseRequestState" />.</param>
@@ -1223,9 +1223,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostRequestHandlerExecute" />.</param>
@@ -1266,8 +1266,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bh" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="eh" Type="System.Web.EndEventHandler" />
+        <Parameter Name="bh" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="eh" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bh">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostResolveRequestCache" />.</param>
@@ -1293,9 +1293,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostResolveRequestCache" />.</param>
@@ -1336,8 +1336,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bh" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="eh" Type="System.Web.EndEventHandler" />
+        <Parameter Name="bh" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="eh" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="bh">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PostUpdateRequestCache" />.</param>
@@ -1363,9 +1363,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the event.</param>
@@ -1434,9 +1434,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.PreRequestHandlerExecute" />.</param>
@@ -1505,9 +1505,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.ReleaseRequestState" />.</param>
@@ -1576,9 +1576,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.ResolveRequestCache" />.</param>
@@ -1647,9 +1647,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" />
-        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="beginHandler" Type="System.Web.BeginEventHandler" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endHandler" Type="System.Web.EndEventHandler" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="beginHandler">The <see cref="T:System.Web.BeginEventHandler" /> that starts asynchronous processing of the <see cref="E:System.Web.HttpApplication.UpdateRequestCache" />.</param>
@@ -2034,7 +2034,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="context" Type="System.Web.HttpContext" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.Web.HttpContext" /> that provides references to intrinsic server objects that are used to service HTTP requests.</param>
@@ -2277,7 +2277,7 @@ End Sub
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callback" Type="System.Action&lt;System.Web.HttpContextBase,System.Action&gt;" />
+        <Parameter Name="callback" Type="System.Action&lt;System.Web.HttpContextBase,System.Action&gt;" Index="0" FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="callback">The callback method.</param>
@@ -2675,7 +2675,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="moduleType" Type="System.Type" />
+        <Parameter Name="moduleType" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="moduleType">The type of the module.</param>

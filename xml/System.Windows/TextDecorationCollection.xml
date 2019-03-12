@@ -1187,8 +1187,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="textDecorations" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.TextDecoration&gt;" />
-        <Parameter Name="result" Type="System.Windows.TextDecorationCollection" RefType="out" />
+        <Parameter Name="textDecorations" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.TextDecoration&gt;" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="result" Type="System.Windows.TextDecorationCollection" RefType="out" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="textDecorations">The collection to be removed</param>

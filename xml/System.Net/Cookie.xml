@@ -147,8 +147,8 @@
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">The name of a <see cref="T:System.Net.Cookie" />. The following characters must not be used inside <paramref name="name" />: equal sign, semicolon, comma, newline (\n), return (\r), tab (\t), and space character. The dollar sign character ("$") cannot be the first character.</param>
@@ -233,9 +233,9 @@
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="path" Type="System.String" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">The name of a <see cref="T:System.Net.Cookie" />. The following characters must not be used inside <paramref name="name" />: equal sign, semicolon, comma, newline (\n), return (\r), tab (\t), and space character. The dollar sign character ("$") cannot be the first character.</param>
@@ -321,10 +321,10 @@
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="domain" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="path" Type="System.String" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="domain" Type="System.String" Index="3" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">The name of a <see cref="T:System.Net.Cookie" />. The following characters must not be used inside <paramref name="name" />: equal sign, semicolon, comma, newline (\n), return (\r), tab (\t), and space character. The dollar sign character ("$") cannot be the first character.</param>
@@ -671,7 +671,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="comparand" Type="System.Object" />
+        <Parameter Name="comparand" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="comparand">A reference to a <see cref="T:System.Net.Cookie" />.</param>

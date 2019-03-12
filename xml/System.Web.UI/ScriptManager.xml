@@ -3040,8 +3040,8 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="control" Type="System.Web.UI.Control" />
-        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="control" Type="System.Web.UI.Control" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="resourceName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="control">The control that is registering the script.</param>
@@ -3065,8 +3065,8 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="page" Type="System.Web.UI.Page" />
-        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="page" Type="System.Web.UI.Page" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="resourceName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="page">The page object that is registering the script.</param>

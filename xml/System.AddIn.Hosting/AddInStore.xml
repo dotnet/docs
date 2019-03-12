@@ -200,7 +200,7 @@
         <Parameter Name="location" Type="System.AddIn.Hosting.PipelineStoreLocation" />
         <Parameter Name="addInFolderPaths" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -258,7 +258,7 @@
         <Parameter Name="pipelineRootFolderPath" Type="System.String" />
         <Parameter Name="addInFolderPaths" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

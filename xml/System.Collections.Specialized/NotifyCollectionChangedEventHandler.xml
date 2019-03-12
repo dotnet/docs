@@ -37,8 +37,8 @@
     </Attribute>
   </Attributes>
   <Parameters>
-    <Parameter Name="sender" Type="System.Object" />
-    <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+    <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+    <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" Index="1" FrameworkAlternate="xamarinmac-3.0" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>

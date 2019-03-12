@@ -35,7 +35,7 @@
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="arguments" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.6.2">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

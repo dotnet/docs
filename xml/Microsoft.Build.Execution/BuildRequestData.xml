@@ -121,11 +121,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="projectInstance" Type="Microsoft.Build.Execution.ProjectInstance" />
-        <Parameter Name="targetsToBuild" Type="System.String[]" />
-        <Parameter Name="hostServices" Type="Microsoft.Build.Execution.HostServices" />
-        <Parameter Name="flags" Type="Microsoft.Build.Execution.BuildRequestDataFlags" />
-        <Parameter Name="propertiesToTransfer" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="projectInstance" Type="Microsoft.Build.Execution.ProjectInstance" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="targetsToBuild" Type="System.String[]" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="hostServices" Type="Microsoft.Build.Execution.HostServices" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="flags" Type="Microsoft.Build.Execution.BuildRequestDataFlags" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="propertiesToTransfer" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="projectInstance">The instance to build.</param>

@@ -109,7 +109,7 @@
         <AssemblyName>WindowsBase</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="typeName">A string that identifies the type to make a reference to. This string uses the format <c>prefix:className</c>. <c>prefix</c> is the mapping prefix for a XAML namespace, and is only required to reference types that are not mapped to the default XAML namespace.</param>
@@ -144,7 +144,7 @@
         <AssemblyName>WindowsBase</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">The type to be represented by this <see cref="T:System.Windows.Markup.TypeExtension" />.</param>
@@ -184,7 +184,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="serviceProvider">Object that can provide services for the markup extension. The provider is expected to provide a service for <see cref="T:System.Windows.Markup.IXamlTypeResolver" />.</param>

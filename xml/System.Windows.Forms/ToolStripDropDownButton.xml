@@ -193,7 +193,7 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
         <Parameter Name="dropDownItems" Type="System.Windows.Forms.ToolStripItem[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

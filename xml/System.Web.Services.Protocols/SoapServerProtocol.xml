@@ -61,8 +61,8 @@
         <ReturnType>System.Xml.XmlReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapServerMessage" />
-        <Parameter Name="bufferSize" Type="System.Int32" />
+        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapServerMessage" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="bufferSize" Type="System.Int32" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="message">The <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> with which to initialize the <see cref="T:System.Xml.XmlTextReader" />.</param>
@@ -89,8 +89,8 @@
         <ReturnType>System.Xml.XmlWriter</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapServerMessage" />
-        <Parameter Name="bufferSize" Type="System.Int32" />
+        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapServerMessage" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="bufferSize" Type="System.Int32" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="message">The <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> with which to initialize the <see cref="T:System.Xml.XmlTextWriter" />.</param>
@@ -117,8 +117,8 @@
         <ReturnType>System.Web.Services.Protocols.SoapExtension[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="group" Type="System.Web.Services.Configuration.PriorityGroup" />
-        <Parameter Name="extensions" Type="System.Web.Services.Protocols.SoapExtension[]" />
+        <Parameter Name="group" Type="System.Web.Services.Configuration.PriorityGroup" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="extensions" Type="System.Web.Services.Protocols.SoapExtension[]" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="group">A <see cref="T:System.Web.Services.Configuration.PriorityGroup" /> that specifies the priority and group attributes to be applied to the SOAP extensions contained in <paramref name="extensions" />.</param>
@@ -145,7 +145,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapServerMethod</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapServerMessage" />
+        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapServerMessage" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="message">The <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> sent to the XML Web service.</param>

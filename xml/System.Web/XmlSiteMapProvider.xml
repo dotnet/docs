@@ -561,7 +561,7 @@
         <ReturnType>System.Web.SiteMapNodeCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="node" Type="System.Web.SiteMapNode" />
+        <Parameter Name="node" Type="System.Web.SiteMapNode" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="node">The <see cref="T:System.Web.SiteMapNode" /> object to get child nodes from.</param>
@@ -586,7 +586,7 @@
         <ReturnType>System.Web.SiteMapNode</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="node" Type="System.Web.SiteMapNode" />
+        <Parameter Name="node" Type="System.Web.SiteMapNode" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="node">The <see cref="T:System.Web.SiteMapNode" /> object to get the parent node from.</param>

@@ -192,7 +192,7 @@ public Grammar CreatePhonePhrase()
       <Parameters>
         <Parameter Name="alternateChoices" Type="System.Speech.Recognition.GrammarBuilder[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -270,7 +270,7 @@ public Grammar CreatePhonePhrase()
       <Parameters>
         <Parameter Name="phrases" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -358,7 +358,7 @@ public Grammar CreatePhonePhrase()
       <Parameters>
         <Parameter Name="alternateChoices" Type="System.Speech.Recognition.GrammarBuilder[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -441,7 +441,7 @@ public Grammar CreatePhonePhrase()
       <Parameters>
         <Parameter Name="phrases" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

@@ -880,9 +880,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="backBufferType" Type="System.Windows.Interop.D3DResourceType" />
-        <Parameter Name="backBuffer" Type="System.IntPtr" />
-        <Parameter Name="enableSoftwareFallback" Type="System.Boolean" />
+        <Parameter Name="backBufferType" Type="System.Windows.Interop.D3DResourceType" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="backBuffer" Type="System.IntPtr" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="enableSoftwareFallback" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="backBufferType">The type of Direct3D surface. Must be a valid <see cref="T:System.Windows.Interop.D3DResourceType" />.</param>

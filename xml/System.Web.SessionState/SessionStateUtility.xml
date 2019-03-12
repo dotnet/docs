@@ -208,7 +208,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="context" Type="System.Web.HttpContext" Index="0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">Specifies the <see cref="T:System.Web.HttpContext" /> to check.</param>
@@ -234,7 +234,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="context" Type="System.Web.HttpContext" Index="0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">Specifies the <see cref="T:System.Web.HttpContext" /> to check.</param>

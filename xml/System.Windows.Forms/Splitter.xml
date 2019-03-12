@@ -1267,7 +1267,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="m" Type="System.Windows.Forms.Message" RefType="ref" />
+        <Parameter Name="m" Type="System.Windows.Forms.Message" RefType="ref" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="m">To be added.</param>

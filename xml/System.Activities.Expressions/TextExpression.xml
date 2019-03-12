@@ -262,7 +262,7 @@
         <Parameter Name="target" Type="System.Object" />
         <Parameter Name="namespaces" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -329,7 +329,7 @@
         <Parameter Name="target" Type="System.Object" />
         <Parameter Name="namespaces" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -370,7 +370,7 @@
         <Parameter Name="target" Type="System.Object" />
         <Parameter Name="references" Type="System.Activities.Expressions.AssemblyReference[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -437,7 +437,7 @@
         <Parameter Name="target" Type="System.Object" />
         <Parameter Name="references" Type="System.Activities.Expressions.AssemblyReference[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

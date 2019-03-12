@@ -563,7 +563,7 @@
         <ReturnType>System.Reflection.Metadata.BlobReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.StringHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.StringHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -682,7 +682,7 @@
         <ReturnType>System.Reflection.Metadata.CustomDebugInformation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.CustomDebugInformationHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.CustomDebugInformationHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -711,7 +711,7 @@
         <ReturnType>System.Reflection.Metadata.CustomDebugInformationHandleCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -770,7 +770,7 @@
         <ReturnType>System.Reflection.Metadata.Document</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.DocumentHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.DocumentHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -979,7 +979,7 @@
         <ReturnType>System.Reflection.Metadata.ImportScope</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.ImportScopeHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.ImportScopeHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -1038,7 +1038,7 @@
         <ReturnType>System.Reflection.Metadata.LocalConstant</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.LocalConstantHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.LocalConstantHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -1067,7 +1067,7 @@
         <ReturnType>System.Reflection.Metadata.LocalScope</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.LocalScopeHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.LocalScopeHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -1096,7 +1096,7 @@
         <ReturnType>System.Reflection.Metadata.LocalScopeHandleCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.MethodDebugInformationHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.MethodDebugInformationHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -1125,7 +1125,7 @@
         <ReturnType>System.Reflection.Metadata.LocalScopeHandleCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.MethodDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -1154,7 +1154,7 @@
         <ReturnType>System.Reflection.Metadata.LocalVariable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.LocalVariableHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.LocalVariableHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -1243,7 +1243,7 @@
         <ReturnType>System.Reflection.Metadata.MethodDebugInformation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.MethodDebugInformationHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.MethodDebugInformationHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -1272,7 +1272,7 @@
         <ReturnType>System.Reflection.Metadata.MethodDebugInformation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.MethodDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -1595,7 +1595,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.DocumentNameBlobHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.DocumentNameBlobHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>

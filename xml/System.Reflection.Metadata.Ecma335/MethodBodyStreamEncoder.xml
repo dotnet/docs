@@ -98,11 +98,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="instructionEncoder" Type="System.Reflection.Metadata.Ecma335.InstructionEncoder" />
-        <Parameter Name="maxStack" Type="System.Int32" />
-        <Parameter Name="localVariablesSignature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" />
-        <Parameter Name="attributes" Type="System.Reflection.Metadata.Ecma335.MethodBodyAttributes" />
-        <Parameter Name="hasDynamicStackAllocation" Type="System.Boolean" />
+        <Parameter Name="instructionEncoder" Type="System.Reflection.Metadata.Ecma335.InstructionEncoder" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="maxStack" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="localVariablesSignature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="attributes" Type="System.Reflection.Metadata.Ecma335.MethodBodyAttributes" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="hasDynamicStackAllocation" Type="System.Boolean" Index="4" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="instructionEncoder">To be added.</param>
@@ -169,13 +169,13 @@
         <ReturnType>System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder+MethodBody</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="codeSize" Type="System.Int32" />
-        <Parameter Name="maxStack" Type="System.Int32" />
-        <Parameter Name="exceptionRegionCount" Type="System.Int32" />
-        <Parameter Name="hasSmallExceptionRegions" Type="System.Boolean" />
-        <Parameter Name="localVariablesSignature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" />
-        <Parameter Name="attributes" Type="System.Reflection.Metadata.Ecma335.MethodBodyAttributes" />
-        <Parameter Name="hasDynamicStackAllocation" Type="System.Boolean" />
+        <Parameter Name="codeSize" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="maxStack" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="exceptionRegionCount" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="hasSmallExceptionRegions" Type="System.Boolean" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="localVariablesSignature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" Index="4" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="attributes" Type="System.Reflection.Metadata.Ecma335.MethodBodyAttributes" Index="5" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="hasDynamicStackAllocation" Type="System.Boolean" Index="6" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="codeSize">To be added.</param>

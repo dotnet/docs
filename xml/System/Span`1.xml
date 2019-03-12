@@ -101,7 +101,7 @@ This allocation and copy operation can be eliminated by using either `Span<T>` o
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">The array from which to create the <see cref="T:System.Span`1" /> object. </param>
@@ -138,8 +138,8 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="pointer" Type="System.Void*" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="pointer" Type="System.Void*" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="pointer">A pointer to the starting address of a specified number of bytes in memory.</param>
@@ -175,9 +175,9 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
-        <Parameter Name="start" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">The source array.</param>
@@ -251,7 +251,7 @@ The `Clear` method sets the items in the <xref:System.Span%601> object to their 
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">The destination <see cref="System.Span`1" /> object.</param>
@@ -320,7 +320,7 @@ This method copies all of `source` to `destination` even if `source` and `destin
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="obj">Not supported.</param>
@@ -362,7 +362,7 @@ To compare two <xref:System.Span%601> objects for equality, use the <xref:System
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="T" />
+        <Parameter Name="value" Type="T" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The value to assign to each element of the span.</param>
@@ -543,7 +543,7 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element.</param>
@@ -627,8 +627,8 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Span&lt;T&gt;" />
-        <Parameter Name="right" Type="System.Span&lt;T&gt;" />
+        <Parameter Name="left" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Span&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">The first span to compare.</param>
@@ -643,6 +643,39 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
 
          ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Span&lt;T&gt; (ArraySegment&lt;T&gt; arraySegment);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Span`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; arraySegment) cil managed" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (arraySegment As ArraySegment(Of T)) As Span(Of T)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Span&lt;T&gt;(ArraySegment&lt;T&gt; arraySegment);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="C#" Value="public static implicit operator Span&lt;T&gt; (ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Span`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; segment) cil managed" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Span`1.op_Implicit(System.ArraySegment{`0})~System.Span{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (segment As ArraySegment(Of T)) As Span(Of T)" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Span&lt;T&gt;(ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : ArraySegment&lt;'T&gt; -&gt; Span&lt;'T&gt;" Usage="System.Span&lt;'T&gt;.op_Implicit segment" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="segment">The array segment to be converted to a <see cref="T:System.Span`1" />.</param>
+        <summary>Defines an implicit conversion of an <see cref="T:System.ArraySegment`1" /> to a <see cref="T:System.Span`1" />.</summary>
+        <returns>A span that corresponds to the array segment.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -665,7 +698,7 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="span">The object to convert to a <see cref="T:System.ReadOnlySpan`1" />.</param>
@@ -694,47 +727,12 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">The array to convert to a <see cref="T:System.Span`1" />.</param>
         <summary>Defines an implicit conversion of an array to a <see cref="T:System.Span`1" />.</summary>
         <returns>The span that corresponds to <paramref name="array" />.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator Span&lt;T&gt; (ArraySegment&lt;T&gt; arraySegment);" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Span`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; arraySegment) cil managed" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (arraySegment As ArraySegment(Of T)) As Span(Of T)" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Span&lt;T&gt;(ArraySegment&lt;T&gt; arraySegment);" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="C#" Value="public static implicit operator Span&lt;T&gt; (ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Span`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; segment) cil managed" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Span`1.op_Implicit(System.ArraySegment{`0})~System.Span{`0}" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (segment As ArraySegment(Of T)) As Span(Of T)" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Span&lt;T&gt;(ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="F#" Value="static member op_Implicit : ArraySegment&lt;'T&gt; -&gt; Span&lt;'T&gt;" Usage="System.Span&lt;'T&gt;.op_Implicit segment" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Span&lt;T&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="arraySegment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.0" />
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="arraySegment">The array segment to be converted to a <see cref="T:System.Span`1" />.</param>
-        <param name="segment">The array segment to be converted to a <see cref="T:System.Span`1" />.</param>
-        <summary>Defines an implicit conversion of an <see cref="T:System.ArraySegment`1" /> to a <see cref="T:System.Span`1" />.</summary>
-        <returns>A span that corresponds to the array segment.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -758,8 +756,8 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Span&lt;T&gt;" />
-        <Parameter Name="right" Type="System.Span&lt;T&gt;" />
+        <Parameter Name="left" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Span&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">The first span to compare.</param>
@@ -796,7 +794,7 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin the slice.</param>
@@ -827,8 +825,8 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin this slice.</param>
@@ -922,7 +920,7 @@ For a `Span<Char>`, the `ToString` method returns a <xref:System.String> that co
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">The target of the copy operation.</param>

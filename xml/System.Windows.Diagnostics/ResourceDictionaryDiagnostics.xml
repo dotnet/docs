@@ -84,7 +84,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Application&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" />
+        <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dictionary">A resource dictionary.</param>
@@ -109,7 +109,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.FrameworkContentElement&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" />
+        <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dictionary">A resource dictionary.</param>
@@ -134,7 +134,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.FrameworkElement&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" />
+        <Parameter Name="dictionary" Type="System.Windows.ResourceDictionary" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dictionary">A resource dictionary.</param>
@@ -158,7 +158,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.ResourceDictionary&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="uri" Type="System.Uri" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="uri">The source URI.</param>

@@ -89,7 +89,7 @@
         <Parameter Name="parameters" Type="System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" />
         <Parameter Name="files" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

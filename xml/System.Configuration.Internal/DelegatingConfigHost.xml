@@ -1457,8 +1457,8 @@
         <ReturnType>System.Configuration.ConfigurationSection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="configSection" Type="System.Configuration.ConfigurationSection" />
-        <Parameter Name="builder" Type="System.Configuration.ConfigurationBuilder" />
+        <Parameter Name="configSection" Type="System.Configuration.ConfigurationSection" Index="0" FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="builder" Type="System.Configuration.ConfigurationBuilder" Index="1" FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="configSection">The <see cref="T:System.Configuration.ConfigurationSection" /> to process.</param>
@@ -1491,8 +1491,8 @@
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rawXml" Type="System.Xml.XmlNode" />
-        <Parameter Name="builder" Type="System.Configuration.ConfigurationBuilder" />
+        <Parameter Name="rawXml" Type="System.Xml.XmlNode" Index="0" FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="builder" Type="System.Configuration.ConfigurationBuilder" Index="1" FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="rawXml">The <see cref="T:System.Xml.XmlNode" /> to process.</param>

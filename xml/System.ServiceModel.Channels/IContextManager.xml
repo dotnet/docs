@@ -158,7 +158,7 @@ if (cm != null)
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">The <see cref="T:System.Collections.Generic.IDictionary`2" /> of key/value pairs with the namespace and name of the context that is set.</param>

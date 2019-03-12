@@ -60,8 +60,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
-        <Parameter Name="location" Type="System.Reflection.PortableExecutable.SectionLocation" />
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="location" Type="System.Reflection.PortableExecutable.SectionLocation" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="builder">To be added.</param>

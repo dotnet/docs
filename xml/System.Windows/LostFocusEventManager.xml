@@ -46,8 +46,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Windows.DependencyObject" />
-        <Parameter Name="handler" Type="System.EventHandler&lt;System.Windows.RoutedEventArgs&gt;" />
+        <Parameter Name="source" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;System.Windows.RoutedEventArgs&gt;" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">The source object that the raises the <see cref="E:System.Windows.UIElement.LostFocus" /> or <see cref="E:System.Windows.ContentElement.LostFocus" /> event.</param>
@@ -132,8 +132,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Windows.DependencyObject" />
-        <Parameter Name="handler" Type="System.EventHandler&lt;System.Windows.RoutedEventArgs&gt;" />
+        <Parameter Name="source" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;System.Windows.RoutedEventArgs&gt;" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">The source object that the raises the <see cref="E:System.Windows.UIElement.LostFocus" /> or <see cref="E:System.Windows.ContentElement.LostFocus" /> event.</param>

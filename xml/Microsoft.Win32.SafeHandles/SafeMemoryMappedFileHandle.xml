@@ -65,8 +65,8 @@
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="preexistingHandle" Type="System.IntPtr" />
-        <Parameter Name="ownsHandle" Type="System.Boolean" />
+        <Parameter Name="preexistingHandle" Type="System.IntPtr" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="ownsHandle" Type="System.Boolean" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="preexistingHandle">To be added.</param>

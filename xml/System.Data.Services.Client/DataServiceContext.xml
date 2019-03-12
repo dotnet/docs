@@ -556,7 +556,7 @@
         <Parameter Name="state" Type="System.Object" />
         <Parameter Name="queries" Type="System.Data.Services.Client.DataServiceRequest[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1529,7 +1529,7 @@
       <Parameters>
         <Parameter Name="queries" Type="System.Data.Services.Client.DataServiceRequest[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

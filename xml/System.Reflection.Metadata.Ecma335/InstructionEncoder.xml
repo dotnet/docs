@@ -40,8 +40,8 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="codeBuilder" Type="System.Reflection.Metadata.BlobBuilder" />
-        <Parameter Name="controlFlowBuilder" Type="System.Reflection.Metadata.Ecma335.ControlFlowBuilder" />
+        <Parameter Name="codeBuilder" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="controlFlowBuilder" Type="System.Reflection.Metadata.Ecma335.ControlFlowBuilder" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="codeBuilder">To be added.</param>
@@ -69,8 +69,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="code" Type="System.Reflection.Metadata.ILOpCode" />
-        <Parameter Name="label" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="code" Type="System.Reflection.Metadata.ILOpCode" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="label" Type="System.Reflection.Metadata.Ecma335.LabelHandle" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="code">To be added.</param>
@@ -98,7 +98,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodHandle" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="methodHandle" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="methodHandle">To be added.</param>
@@ -125,7 +125,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodHandle" Type="System.Reflection.Metadata.MemberReferenceHandle" />
+        <Parameter Name="methodHandle" Type="System.Reflection.Metadata.MemberReferenceHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="methodHandle">To be added.</param>
@@ -152,7 +152,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodHandle" Type="System.Reflection.Metadata.MethodDefinitionHandle" />
+        <Parameter Name="methodHandle" Type="System.Reflection.Metadata.MethodDefinitionHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="methodHandle">To be added.</param>
@@ -179,7 +179,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodHandle" Type="System.Reflection.Metadata.MethodSpecificationHandle" />
+        <Parameter Name="methodHandle" Type="System.Reflection.Metadata.MethodSpecificationHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="methodHandle">To be added.</param>
@@ -206,7 +206,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="signature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" />
+        <Parameter Name="signature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="signature">To be added.</param>
@@ -306,7 +306,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argumentIndex" Type="System.Int32" />
+        <Parameter Name="argumentIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="argumentIndex">To be added.</param>
@@ -333,7 +333,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argumentIndex" Type="System.Int32" />
+        <Parameter Name="argumentIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="argumentIndex">To be added.</param>
@@ -360,7 +360,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -387,7 +387,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Int64" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -414,7 +414,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="value" Type="System.Single" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -441,7 +441,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="value" Type="System.Double" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -468,7 +468,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="slotIndex" Type="System.Int32" />
+        <Parameter Name="slotIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="slotIndex">To be added.</param>
@@ -495,7 +495,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="slotIndex" Type="System.Int32" />
+        <Parameter Name="slotIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="slotIndex">To be added.</param>
@@ -522,7 +522,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.UserStringHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.UserStringHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
@@ -549,7 +549,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="label" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="label" Type="System.Reflection.Metadata.Ecma335.LabelHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="label">To be added.</param>
@@ -600,7 +600,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="code" Type="System.Reflection.Metadata.ILOpCode" />
+        <Parameter Name="code" Type="System.Reflection.Metadata.ILOpCode" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="code">To be added.</param>
@@ -627,7 +627,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argumentIndex" Type="System.Int32" />
+        <Parameter Name="argumentIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="argumentIndex">To be added.</param>
@@ -654,7 +654,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="slotIndex" Type="System.Int32" />
+        <Parameter Name="slotIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="slotIndex">To be added.</param>
@@ -681,7 +681,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="token" Type="System.Int32" />
+        <Parameter Name="token" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="token">To be added.</param>
@@ -708,7 +708,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>

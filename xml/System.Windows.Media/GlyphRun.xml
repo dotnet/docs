@@ -84,7 +84,7 @@ Various typographic qualities of two different glyph characters
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="pixelsPerDip" Type="System.Single" />
+        <Parameter Name="pixelsPerDip" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="pixelsPerDip">The Pixels Per Density Independent Pixel value, which is the equivalent of the scale factor. For example, if the DPI of a screen is 120 (or 1.25 because 120/96 = 1.25) , 1.25 pixel per density independent pixel is drawn. DIP is the unit of measurement used by WPF to be independent of device resolution and DPIs.</param>
@@ -162,20 +162,20 @@ Various typographic qualities of two different glyph characters
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="glyphTypeface" Type="System.Windows.Media.GlyphTypeface" />
-        <Parameter Name="bidiLevel" Type="System.Int32" />
-        <Parameter Name="isSideways" Type="System.Boolean" />
-        <Parameter Name="renderingEmSize" Type="System.Double" />
-        <Parameter Name="pixelsPerDip" Type="System.Single" />
-        <Parameter Name="glyphIndices" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" />
-        <Parameter Name="baselineOrigin" Type="System.Windows.Point" />
-        <Parameter Name="advanceWidths" Type="System.Collections.Generic.IList&lt;System.Double&gt;" />
-        <Parameter Name="glyphOffsets" Type="System.Collections.Generic.IList&lt;System.Windows.Point&gt;" />
-        <Parameter Name="characters" Type="System.Collections.Generic.IList&lt;System.Char&gt;" />
-        <Parameter Name="deviceFontName" Type="System.String" />
-        <Parameter Name="clusterMap" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" />
-        <Parameter Name="caretStops" Type="System.Collections.Generic.IList&lt;System.Boolean&gt;" />
-        <Parameter Name="language" Type="System.Windows.Markup.XmlLanguage" />
+        <Parameter Name="glyphTypeface" Type="System.Windows.Media.GlyphTypeface" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="bidiLevel" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="isSideways" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="renderingEmSize" Type="System.Double" Index="3" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="pixelsPerDip" Type="System.Single" Index="4" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="glyphIndices" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" Index="5" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="baselineOrigin" Type="System.Windows.Point" Index="6" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="advanceWidths" Type="System.Collections.Generic.IList&lt;System.Double&gt;" Index="7" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="glyphOffsets" Type="System.Collections.Generic.IList&lt;System.Windows.Point&gt;" Index="8" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="characters" Type="System.Collections.Generic.IList&lt;System.Char&gt;" Index="9" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="deviceFontName" Type="System.String" Index="10" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="clusterMap" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" Index="11" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="caretStops" Type="System.Collections.Generic.IList&lt;System.Boolean&gt;" Index="12" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="language" Type="System.Windows.Markup.XmlLanguage" Index="13" FrameworkAlternate="netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="glyphTypeface">A value of type <see cref="T:System.Windows.Media.GlyphTypeface" />.</param>

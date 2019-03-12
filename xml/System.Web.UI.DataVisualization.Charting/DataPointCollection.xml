@@ -61,7 +61,7 @@
       <Parameters>
         <Parameter Name="y" Type="System.Double[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -140,7 +140,7 @@
         <Parameter Name="xValue" Type="System.Object" />
         <Parameter Name="yValue" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -230,7 +230,7 @@
       <Parameters>
         <Parameter Name="yValue" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -331,7 +331,7 @@
         <Parameter Name="xValue" Type="System.Collections.IEnumerable" />
         <Parameter Name="yValues" Type="System.Collections.IEnumerable[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -458,7 +458,7 @@
       <Parameters>
         <Parameter Name="yValue" Type="System.Collections.IEnumerable[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -970,7 +970,7 @@
         <Parameter Name="xValue" Type="System.Object" />
         <Parameter Name="yValue" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1003,7 +1003,7 @@
         <Parameter Name="index" Type="System.Int32" />
         <Parameter Name="yValue" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

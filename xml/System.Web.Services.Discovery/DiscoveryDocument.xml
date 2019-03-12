@@ -226,9 +226,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Discovery::DiscoveryDocument ^ Read(System::IO::TextReader ^ reader);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public static System.Web.Services.Discovery.DiscoveryDocument Read (System.IO.TextReader textReader);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Discovery.DiscoveryDocument Read(class System.IO.TextReader textReader) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Read(System.IO.TextReader)" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Read(System.IO.TextReader)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Discovery::DiscoveryDocument ^ Read(System::IO::TextReader ^ textReader);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member Read : System.IO.TextReader -&gt; System.Web.Services.Discovery.DiscoveryDocument" Usage="System.Web.Services.Discovery.DiscoveryDocument.Read textReader" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.TextReader -&gt; System.Web.Services.Discovery.DiscoveryDocument" Usage="System.Web.Services.Discovery.DiscoveryDocument.Read reader" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Read(System.IO.TextReader)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.TextReader -&gt; System.Web.Services.Discovery.DiscoveryDocument" Usage="System.Web.Services.Discovery.DiscoveryDocument.Read textReader" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -241,7 +243,7 @@
         <ReturnType>System.Web.Services.Discovery.DiscoveryDocument</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="reader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="textReader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -365,9 +367,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::IO::TextWriter ^ writer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public void Write (System.IO.TextWriter textWriter);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.IO.TextWriter textWriter) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Write(System.IO.TextWriter)" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Write(System.IO.TextWriter)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::IO::TextWriter ^ textWriter);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="member this.Write : System.IO.TextWriter -&gt; unit" Usage="discoveryDocument.Write textWriter" />
+      <MemberSignature Language="F#" Value="member this.Write : System.IO.TextWriter -&gt; unit" Usage="discoveryDocument.Write writer" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Write(System.IO.TextWriter)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="F#" Value="member this.Write : System.IO.TextWriter -&gt; unit" Usage="discoveryDocument.Write textWriter" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -380,7 +384,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.IO.TextWriter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="writer" Type="System.IO.TextWriter" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="textWriter" Type="System.IO.TextWriter" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -409,9 +413,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::Xml::XmlWriter ^ writer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public void Write (System.Xml.XmlWriter xmlWriter);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.Xml.XmlWriter xmlWriter) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Write(System.Xml.XmlWriter)" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Write(System.Xml.XmlWriter)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::Xml::XmlWriter ^ xmlWriter);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="member this.Write : System.Xml.XmlWriter -&gt; unit" Usage="discoveryDocument.Write xmlWriter" />
+      <MemberSignature Language="F#" Value="member this.Write : System.Xml.XmlWriter -&gt; unit" Usage="discoveryDocument.Write writer" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Write(System.Xml.XmlWriter)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="F#" Value="member this.Write : System.Xml.XmlWriter -&gt; unit" Usage="discoveryDocument.Write xmlWriter" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -424,7 +430,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>

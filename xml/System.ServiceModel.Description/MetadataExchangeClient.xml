@@ -512,8 +512,8 @@
         <ReturnType>System.ServiceModel.Description.MetadataSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
-        <Parameter Name="via" Type="System.Uri" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="via" Type="System.Uri" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="address">The address from which to download the metadata.</param>
@@ -605,7 +605,7 @@
         <ReturnType>System.Threading.Tasks.Task&lt;System.ServiceModel.Description.MetadataSet&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="address">The address from which to download the asynchronous metadata</param>
@@ -630,8 +630,8 @@
         <ReturnType>System.Threading.Tasks.Task&lt;System.ServiceModel.Description.MetadataSet&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
-        <Parameter Name="via" Type="System.Uri" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="via" Type="System.Uri" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="address">The address from which to download the metadata.</param>
@@ -657,8 +657,8 @@
         <ReturnType>System.Threading.Tasks.Task&lt;System.ServiceModel.Description.MetadataSet&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.Uri" />
-        <Parameter Name="mode" Type="System.ServiceModel.Description.MetadataExchangeClientMode" />
+        <Parameter Name="address" Type="System.Uri" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="mode" Type="System.ServiceModel.Description.MetadataExchangeClientMode" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="address">The address from which to download the metadata.</param>

@@ -254,7 +254,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="directorySecurity" Type="System.Security.AccessControl.DirectorySecurity" />
+        <Parameter Name="directorySecurity" Type="System.Security.AccessControl.DirectorySecurity" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="directorySecurity">The access control to apply to the directory.</param>
@@ -405,8 +405,8 @@
         <ReturnType>System.IO.DirectoryInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="directorySecurity" Type="System.Security.AccessControl.DirectorySecurity" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="directorySecurity" Type="System.Security.AccessControl.DirectorySecurity" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="path">The specified path. This cannot be a different disk volume or Universal Naming Convention (UNC) name.</param>
@@ -733,7 +733,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.DirectoryInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
@@ -807,8 +807,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.DirectoryInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">To be added.</param>
@@ -850,8 +850,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.DirectoryInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="searchOption" Type="System.IO.SearchOption" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="searchOption" Type="System.IO.SearchOption" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
@@ -1047,7 +1047,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.FileInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
@@ -1131,8 +1131,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.FileInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">To be added.</param>
@@ -1174,8 +1174,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.FileInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="searchOption" Type="System.IO.SearchOption" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="searchOption" Type="System.IO.SearchOption" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
@@ -1357,7 +1357,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.FileSystemInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
@@ -1432,8 +1432,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.FileSystemInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">To be added.</param>
@@ -1475,8 +1475,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.FileSystemInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="searchOption" Type="System.IO.SearchOption" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="searchOption" Type="System.IO.SearchOption" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
@@ -1593,6 +1593,26 @@
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAccessControl">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the access control list (ACL) entries for the current directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.IO.DirectoryInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for the current file.  
+  
+ For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FullName">
       <MemberSignature Language="C#" Value="public override string FullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
@@ -1624,27 +1644,7 @@
         <value>A string containing the full path.</value>
         <remarks>To be added.</remarks>
       </Docs>
-    </Member>    
-    <MemberGroup MemberName="GetAccessControl">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the access control list (ACL) entries for the current directory.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use <xref:System.IO.DirectoryInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for the current file.  
-  
- For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
+    </Member>        
     <Member MemberName="GetAccessControl">
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.DirectorySecurity GetAccessControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.AccessControl.DirectorySecurity GetAccessControl() cil managed" />
@@ -1732,7 +1732,7 @@
         <ReturnType>System.Security.AccessControl.DirectorySecurity</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="includeSections" Type="System.Security.AccessControl.AccessControlSections" />
+        <Parameter Name="includeSections" Type="System.Security.AccessControl.AccessControlSections" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="includeSections">One of the <see cref="T:System.Security.AccessControl.AccessControlSections" /> values that specifies the type of access control list (ACL) information to receive.</param>
@@ -1981,8 +1981,8 @@
         <ReturnType>System.IO.DirectoryInfo[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">To be added.</param>
@@ -2025,8 +2025,8 @@
         <ReturnType>System.IO.DirectoryInfo[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="searchOption" Type="System.IO.SearchOption" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="searchOption" Type="System.IO.SearchOption" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
@@ -2330,8 +2330,8 @@
         <ReturnType>System.IO.FileInfo[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">To be added.</param>
@@ -2374,8 +2374,8 @@
         <ReturnType>System.IO.FileInfo[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="searchOption" Type="System.IO.SearchOption" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="searchOption" Type="System.IO.SearchOption" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
@@ -2678,8 +2678,8 @@
         <ReturnType>System.IO.FileSystemInfo[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="enumerationOptions" Type="System.IO.EnumerationOptions" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">To be added.</param>
@@ -2721,8 +2721,8 @@
         <ReturnType>System.IO.FileSystemInfo[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchPattern" Type="System.String" />
-        <Parameter Name="searchOption" Type="System.IO.SearchOption" />
+        <Parameter Name="searchPattern" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="searchOption" Type="System.IO.SearchOption" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="searchPattern">The search string to match against the names of directories and filesa.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
@@ -3062,7 +3062,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="directorySecurity" Type="System.Security.AccessControl.DirectorySecurity" />
+        <Parameter Name="directorySecurity" Type="System.Security.AccessControl.DirectorySecurity" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="directorySecurity">An object that describes an ACL entry to apply to the directory described by the <paramref name="path" /> parameter.</param>

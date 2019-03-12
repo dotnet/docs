@@ -73,7 +73,7 @@
         <TypeParameter Name="TType" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="provider" Type="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType&gt;" />
+        <Parameter Name="provider" Type="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType&gt;" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <typeparam name="TType">To be added.</typeparam>
@@ -105,8 +105,8 @@
         <TypeParameter Name="TGenericContext" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="provider" Type="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt;" />
-        <Parameter Name="genericContext" Type="TGenericContext" />
+        <Parameter Name="provider" Type="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt;" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="genericContext" Type="TGenericContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TType">To be added.</typeparam>

@@ -66,7 +66,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The name of the property that provides the <see langword="x:Uid" /> value.</param>

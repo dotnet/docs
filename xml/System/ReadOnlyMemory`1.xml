@@ -46,7 +46,7 @@
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">To be added.</param>
@@ -70,9 +70,9 @@
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
-        <Parameter Name="start" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">To be added.</param>
@@ -101,7 +101,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>
@@ -157,7 +157,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
@@ -185,7 +185,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.ReadOnlyMemory&lt;T&gt;" />
+        <Parameter Name="other" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
@@ -291,7 +291,7 @@
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="segment">To be added.</param>
@@ -319,7 +319,7 @@
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">To be added.</param>
@@ -372,7 +372,7 @@
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="start">To be added.</param>
@@ -400,8 +400,8 @@
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="start">To be added.</param>
@@ -504,7 +504,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>

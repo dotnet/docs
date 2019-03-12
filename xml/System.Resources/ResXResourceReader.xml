@@ -244,8 +244,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" />
-        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" />
+        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stream">An input stream that contains resources.</param>
@@ -307,8 +307,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="reader" Type="System.IO.TextReader" />
-        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" />
+        <Parameter Name="reader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="reader">An object used to read resources from a stream of text.</param>
@@ -370,8 +370,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="fileName" Type="System.String" />
-        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" />
+        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileName">The name of an XML resource file that contains resources.</param>
@@ -626,8 +626,8 @@
         <ReturnType>System.Resources.ResXResourceReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fileContents" Type="System.String" />
-        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" />
+        <Parameter Name="fileContents" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileContents">A string whose contents are in the form of an XML resource file.</param>

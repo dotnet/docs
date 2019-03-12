@@ -449,7 +449,7 @@
         <Parameter Name="dataGridView" Type="System.Windows.Forms.DataGridView" />
         <Parameter Name="values" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1660,7 +1660,7 @@
       <Parameters>
         <Parameter Name="values" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

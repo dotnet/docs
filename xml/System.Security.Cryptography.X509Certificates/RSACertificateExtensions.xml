@@ -59,8 +59,8 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" RefType="this" />
-        <Parameter Name="privateKey" Type="System.Security.Cryptography.RSA" />
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" RefType="this" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="privateKey" Type="System.Security.Cryptography.RSA" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="certificate">The RSA certificate.</param>

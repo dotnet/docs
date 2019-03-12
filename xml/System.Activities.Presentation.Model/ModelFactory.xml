@@ -79,7 +79,7 @@
         <Parameter Name="itemType" Type="System.Type" />
         <Parameter Name="arguments" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -115,7 +115,7 @@
         <Parameter Name="options" Type="System.Activities.Presentation.Model.CreateOptions" />
         <Parameter Name="arguments" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

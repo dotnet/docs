@@ -875,7 +875,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="m" Type="System.Windows.Forms.Message" RefType="ref" />
+        <Parameter Name="m" Type="System.Windows.Forms.Message" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
@@ -1740,7 +1740,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" />
+        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -1782,7 +1782,7 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" />
+        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -2150,8 +2150,8 @@ The <xref:System.Windows.Forms.AccessibleObject> is only available in applicatio
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="deviceDpiOld" Type="System.Int32" />
-        <Parameter Name="deviceDpiNew" Type="System.Int32" />
+        <Parameter Name="deviceDpiOld" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="deviceDpiNew" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="deviceDpiOld">The DPI value prior to the change.</param>

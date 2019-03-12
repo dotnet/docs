@@ -220,8 +220,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="si" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="si" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="si">The SerializationInfo to populate with the data needed to serialize the target object.</param>

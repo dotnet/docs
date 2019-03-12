@@ -530,8 +530,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which to insert value.</param>

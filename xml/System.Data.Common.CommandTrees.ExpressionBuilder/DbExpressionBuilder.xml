@@ -34,8 +34,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionAggregate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="function" Type="System.Data.Metadata.Edm.EdmFunction" RefType="this" />
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="function" Type="System.Data.Metadata.Edm.EdmFunction" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="function">The function that defines the aggregate operation.</param>
@@ -65,8 +65,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionAggregate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="function" Type="System.Data.Metadata.Edm.EdmFunction" RefType="this" />
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="function" Type="System.Data.Metadata.Edm.EdmFunction" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="function">The function that defines the aggregate operation.</param>
@@ -105,8 +105,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbQuantifierExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="predicate" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="predicate" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">An expression that specifies the input set.</param>
@@ -144,8 +144,8 @@ The expression produced by <paramref name="Predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbQuantifierExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="predicate" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="predicate" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">An expression binding that specifies the input set.</param>
@@ -175,8 +175,8 @@ The expression produced by <paramref name="Predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbAndExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">A Boolean expression that specifies the left argument.</param>
@@ -215,7 +215,7 @@ The expression produced by <paramref name="Predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">An expression that specifies the input set.</param>
@@ -244,8 +244,8 @@ The expression produced by <paramref name="Predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbQuantifierExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="predicate" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="predicate" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">An expression that specifies the input set.</param>
@@ -283,8 +283,8 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbQuantifierExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="predicate" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="predicate" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">An expression binding that specifies the input set.</param>
@@ -322,8 +322,8 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbAggregate&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbAggregate" RefType="this" />
-        <Parameter Name="alias" Type="System.String" />
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbAggregate" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="alias" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The value in the key/value pair.</param>
@@ -349,8 +349,8 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="alias" Type="System.String" />
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="alias" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The value in the key/value pair.</param>
@@ -376,7 +376,7 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionBinding</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">The expression to bind.</param>
@@ -405,8 +405,8 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionBinding</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="varName" Type="System.String" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="varName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">The expression to bind.</param>
@@ -436,9 +436,9 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbCaseExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="whenExpressions" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="thenExpressions" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="elseExpression" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="whenExpressions" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="thenExpressions" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="elseExpression" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="whenExpressions">A list of expressions that provide the conditional for of each case.</param>
@@ -469,8 +469,8 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbCastExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="toType" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="toType" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">The argument to which the cast should be applied.</param>
@@ -508,7 +508,7 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbConstantExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The constant value to represent.</param>
@@ -537,8 +537,8 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbConstantExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="constantType" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="constantType" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="constantType">The type of the constant value.</param>
@@ -576,8 +576,8 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbRefExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" />
-        <Parameter Name="keyValues" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="keyValues" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entitySet">The entity set in which the referenced element resides.</param>
@@ -605,8 +605,8 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbRefExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" />
-        <Parameter Name="keyValues" Type="System.Data.Common.CommandTrees.DbExpression[]">
+        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="keyValues" Type="System.Data.Common.CommandTrees.DbExpression[]" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -640,9 +640,9 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <ReturnType>System.Data.Common.CommandTrees.DbRefExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" />
-        <Parameter Name="entityType" Type="System.Data.Metadata.Edm.EntityType" />
-        <Parameter Name="keyValues" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="entityType" Type="System.Data.Metadata.Edm.EntityType" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="keyValues" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entitySet">The entity set in which the referenced element resides.</param>
@@ -676,9 +676,9 @@ The count of <paramref name="keyValues" /> does not match the count of key membe
         <ReturnType>System.Data.Common.CommandTrees.DbRefExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" />
-        <Parameter Name="entityType" Type="System.Data.Metadata.Edm.EntityType" />
-        <Parameter Name="keyValues" Type="System.Data.Common.CommandTrees.DbExpression[]">
+        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="entityType" Type="System.Data.Metadata.Edm.EntityType" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="keyValues" Type="System.Data.Common.CommandTrees.DbExpression[]" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -728,8 +728,8 @@ The count of <paramref name="keyValues" /> does not match the count of key membe
         <ReturnType>System.Data.Common.CommandTrees.DbApplyExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="apply" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="apply" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the input set.</param>
@@ -767,8 +767,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbApplyExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="apply" Type="System.Data.Common.CommandTrees.DbExpressionBinding" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="apply" Type="System.Data.Common.CommandTrees.DbExpressionBinding" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">An <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the input set.</param>
@@ -796,7 +796,7 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbCrossJoinExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="inputs" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpressionBinding&gt;" />
+        <Parameter Name="inputs" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpressionBinding&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="inputs">A list of expression bindings that specifies the input sets.</param>
@@ -825,7 +825,7 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbDerefExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that provides the reference. This expression must have a reference Type.</param>
@@ -854,7 +854,7 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbDistinctExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that defines the set over which to perfom the distinct operation.</param>
@@ -883,8 +883,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbArithmeticExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -913,7 +913,7 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbElementExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the input set.</param>
@@ -942,8 +942,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbComparisonExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -972,8 +972,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbExceptExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that defines the left set argument.</param>
@@ -1002,7 +1002,7 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the input set.</param>
@@ -1052,8 +1052,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbFilterExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="predicate" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="predicate" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">An expression binding that specifies the input set.</param>
@@ -1092,9 +1092,9 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbJoinExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="joinCondition" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="joinCondition" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the left set argument.</param>
@@ -1133,9 +1133,9 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbJoinExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpressionBinding" />
-        <Parameter Name="joinCondition" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpressionBinding" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="joinCondition" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the left set argument.</param>
@@ -1165,7 +1165,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbEntityRefExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">The expression that provides the entity. This expression must have an entity result type.</param>
@@ -1194,7 +1194,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbRefKeyExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">The expression that provides the reference. This expression must have a reference Type with an Entity element type.</param>
@@ -1223,8 +1223,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbComparisonExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -1253,8 +1253,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbComparisonExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -1283,7 +1283,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbGroupExpressionBinding</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">The expression to bind.</param>
@@ -1312,9 +1312,9 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbGroupExpressionBinding</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="varName" Type="System.String" />
-        <Parameter Name="groupVarName" Type="System.String" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="varName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="groupVarName" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">The expression to bind.</param>
@@ -1345,9 +1345,9 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbGroupByExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbGroupExpressionBinding" RefType="this" />
-        <Parameter Name="keys" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;&gt;" />
-        <Parameter Name="aggregates" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbAggregate&gt;&gt;" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbGroupExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="keys" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="aggregates" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbAggregate&gt;&gt;" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">A <see cref="T:System.Data.Common.CommandTrees.DbGroupExpressionBinding" /> that specifies the input set.</param>
@@ -1393,9 +1393,9 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbJoinExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="joinCondition" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="joinCondition" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the left set argument.</param>
@@ -1434,9 +1434,9 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbJoinExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpressionBinding" />
-        <Parameter Name="joinCondition" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpressionBinding" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="joinCondition" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the left set argument.</param>
@@ -1467,8 +1467,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbIntersectExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that defines the left set argument.</param>
@@ -1506,8 +1506,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbLambdaExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="lambda" Type="System.Data.Common.CommandTrees.DbLambda" RefType="this" />
-        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="lambda" Type="System.Data.Common.CommandTrees.DbLambda" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="lambda">A <see cref="T:System.Data.Common.CommandTrees.DbLambda" /> instance representing the Lambda function to apply.</param>
@@ -1536,8 +1536,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbLambdaExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="lambda" Type="System.Data.Common.CommandTrees.DbLambda" RefType="this" />
-        <Parameter Name="arguments" Type="System.Data.Common.CommandTrees.DbExpression[]">
+        <Parameter Name="lambda" Type="System.Data.Common.CommandTrees.DbLambda" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="arguments" Type="System.Data.Common.CommandTrees.DbExpression[]" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -1572,8 +1572,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="function" Type="System.Data.Metadata.Edm.EdmFunction" RefType="this" />
-        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="function" Type="System.Data.Metadata.Edm.EdmFunction" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="function">Metadata for the function to invoke.</param>
@@ -1602,8 +1602,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="function" Type="System.Data.Metadata.Edm.EdmFunction" RefType="this" />
-        <Parameter Name="arguments" Type="System.Data.Common.CommandTrees.DbExpression[]">
+        <Parameter Name="function" Type="System.Data.Metadata.Edm.EdmFunction" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="arguments" Type="System.Data.Common.CommandTrees.DbExpression[]" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -1638,7 +1638,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbIsEmptyExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the input set.</param>
@@ -1667,7 +1667,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbIsNullExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the argument.</param>
@@ -1696,8 +1696,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbIsOfExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the instance.</param>
@@ -1734,8 +1734,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbIsOfExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the instance.</param>
@@ -1772,10 +1772,10 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbJoinExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="outer" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="inner" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="outerKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="innerKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="outer" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="inner" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="outerKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="innerKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="outer">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the outer set argument.</param>
@@ -1818,11 +1818,11 @@ The expressions produced by <paramref name="outerKey" /> and <paramref name="inn
         <TypeParameter Name="TSelector" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="outer" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="inner" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="outerKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="innerKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="selector" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,TSelector&gt;" />
+        <Parameter Name="outer" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="inner" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="outerKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="innerKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="selector" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,TSelector&gt;" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TSelector">The type of the <paramref name="selector" />.</typeparam>
@@ -1900,8 +1900,8 @@ The result of <paramref name="selector" /> is not compatible with SelectMany.</e
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="body" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="variables" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt;" />
+        <Parameter Name="body" Type="System.Data.Common.CommandTrees.DbExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="variables" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="body">An expression that defines the logic of the Lambda function.</param>
@@ -1931,8 +1931,8 @@ The result of <paramref name="selector" /> is not compatible with SelectMany.</e
         <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="body" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="variables" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression[]">
+        <Parameter Name="body" Type="System.Data.Common.CommandTrees.DbExpression" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="variables" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression[]" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -1977,9 +1977,9 @@ The result of <paramref name="selector" /> is not compatible with SelectMany.</e
         <ReturnType>System.Data.Common.CommandTrees.DbJoinExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="joinCondition" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="joinCondition" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the left set argument.</param>
@@ -2018,9 +2018,9 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbJoinExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpressionBinding" />
-        <Parameter Name="joinCondition" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpressionBinding" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="joinCondition" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the left set argument.</param>
@@ -2051,8 +2051,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbComparisonExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -2081,8 +2081,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbComparisonExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -2120,8 +2120,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbLikeExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="pattern" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="pattern" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the input string.</param>
@@ -2151,9 +2151,9 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbLikeExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="pattern" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="escape" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="pattern" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="escape" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the input string.</param>
@@ -2184,8 +2184,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbLimitExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="count" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="count" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the input collection.</param>
@@ -2215,8 +2215,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbArithmeticExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -2245,8 +2245,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbArithmeticExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -2275,8 +2275,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbArithmeticExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -2314,9 +2314,9 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbRelationshipNavigationExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="navigateFrom" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="fromEnd" Type="System.Data.Metadata.Edm.RelationshipEndMember" />
-        <Parameter Name="toEnd" Type="System.Data.Metadata.Edm.RelationshipEndMember" />
+        <Parameter Name="navigateFrom" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="fromEnd" Type="System.Data.Metadata.Edm.RelationshipEndMember" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="toEnd" Type="System.Data.Metadata.Edm.RelationshipEndMember" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="navigateFrom">An expression that specifies the instance from which navigation should occur.</param>
@@ -2354,10 +2354,10 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbRelationshipNavigationExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.RelationshipType" RefType="this" />
-        <Parameter Name="fromEndName" Type="System.String" />
-        <Parameter Name="toEndName" Type="System.String" />
-        <Parameter Name="navigateFrom" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.RelationshipType" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="fromEndName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="toEndName" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="navigateFrom" Type="System.Data.Common.CommandTrees.DbExpression" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">Metadata for the relation type that represents the relationship.</param>
@@ -2396,7 +2396,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbArithmeticExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the argument.</param>
@@ -2433,8 +2433,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbNewInstanceExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="instanceType" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" />
-        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="instanceType" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="instanceType">The type of the new instance.</param>
@@ -2471,8 +2471,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbNewInstanceExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="instanceType" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" />
-        <Parameter Name="arguments" Type="System.Data.Common.CommandTrees.DbExpression[]">
+        <Parameter Name="instanceType" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="arguments" Type="System.Data.Common.CommandTrees.DbExpression[]" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -2524,7 +2524,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbNewInstanceExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="elements">A list of expressions that provide the elements of the collection.</param>
@@ -2553,7 +2553,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbNewInstanceExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elements" Type="System.Data.Common.CommandTrees.DbExpression[]">
+        <Parameter Name="elements" Type="System.Data.Common.CommandTrees.DbExpression[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -2588,7 +2588,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbNewInstanceExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collectionType" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" />
+        <Parameter Name="collectionType" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="collectionType">The type metadata for the collection to create</param>
@@ -2617,7 +2617,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbNewInstanceExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="columnValues" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;&gt;" />
+        <Parameter Name="columnValues" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="columnValues">A list of string-DbExpression key-value pairs that defines the structure and values of the row.</param>
@@ -2646,7 +2646,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbNotExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">A Boolean expression that specifies the argument.</param>
@@ -2675,8 +2675,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbComparisonExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -2705,7 +2705,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbNullExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="nullType" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" />
+        <Parameter Name="nullType" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="nullType">The type of the null value.</param>
@@ -2732,8 +2732,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbOfTypeExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the input set.</param>
@@ -2770,8 +2770,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbOfTypeExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the input set.</param>
@@ -2808,8 +2808,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbOrExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">A Boolean expression that specifies the left argument.</param>
@@ -2848,8 +2848,8 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <ReturnType>System.Data.Common.CommandTrees.DbSortExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">An expression that specifies the input set.</param>
@@ -2887,9 +2887,9 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbSortExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="collation" Type="System.String" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="collation" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">An expression that specifies the input set.</param>
@@ -2939,8 +2939,8 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbSortExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">An expression that specifies the input set.</param>
@@ -2978,9 +2978,9 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbSortExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="collation" Type="System.String" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="collation" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">An expression that specifies the input set.</param>
@@ -3030,8 +3030,8 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbApplyExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="apply" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="apply" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the input set.</param>
@@ -3069,8 +3069,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbApplyExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="apply" Type="System.Data.Common.CommandTrees.DbExpressionBinding" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="apply" Type="System.Data.Common.CommandTrees.DbExpressionBinding" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">An <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the input set.</param>
@@ -3098,8 +3098,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbParameterReferenceExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" />
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">The type of the referenced parameter.</param>
@@ -3125,8 +3125,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbArithmeticExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that specifies the left argument.</param>
@@ -3155,8 +3155,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbProjectExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="projection" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="projection" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">An expression binding that specifies the input set.</param>
@@ -3193,8 +3193,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbPropertyExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="instance" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="propertyMetadata" Type="System.Data.Metadata.Edm.EdmProperty" />
+        <Parameter Name="instance" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="propertyMetadata" Type="System.Data.Metadata.Edm.EdmProperty" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="instance">The instance from which to retrieve the property. May be null if the property is static.</param>
@@ -3221,8 +3221,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbPropertyExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="instance" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="navigationProperty" Type="System.Data.Metadata.Edm.NavigationProperty" />
+        <Parameter Name="instance" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="navigationProperty" Type="System.Data.Metadata.Edm.NavigationProperty" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="instance">The instance from which to retrieve the navigation property.</param>
@@ -3250,8 +3250,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbPropertyExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="instance" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="relationshipEnd" Type="System.Data.Metadata.Edm.RelationshipEndMember" />
+        <Parameter Name="instance" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="relationshipEnd" Type="System.Data.Metadata.Edm.RelationshipEndMember" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="instance">The instance from which to retrieve the relationship end member.</param>
@@ -3279,8 +3279,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbPropertyExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="instance" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="instance" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="propertyName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="instance">The instance from which to retrieve the property.</param>
@@ -3317,8 +3317,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbRefExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" />
-        <Parameter Name="keyRow" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="keyRow" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entitySet">The Entity set in which the referenced element resides.</param>
@@ -3354,9 +3354,9 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbRefExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" />
-        <Parameter Name="keyRow" Type="System.Data.Common.CommandTrees.DbExpression" />
-        <Parameter Name="entityType" Type="System.Data.Metadata.Edm.EntityType" />
+        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="keyRow" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="entityType" Type="System.Data.Metadata.Edm.EntityType" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entitySet">The Entity set in which the referenced element resides.</param>
@@ -3394,7 +3394,7 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <ReturnType>System.Data.Common.CommandTrees.DbScanExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="targetSet" Type="System.Data.Metadata.Edm.EntitySetBase" RefType="this" />
+        <Parameter Name="targetSet" Type="System.Data.Metadata.Edm.EntitySetBase" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="targetSet">Metadata for the entity or relationship set to reference.</param>
@@ -3424,8 +3424,8 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <TypeParameter Name="TProjection" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="projection" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,TProjection&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="projection" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,TProjection&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TProjection">The method result type of <paramref name="projection" />.</typeparam>
@@ -3477,8 +3477,8 @@ The result of <paramref name="projection" /> is null.</exception>
         <ReturnType>System.Data.Common.CommandTrees.DbProjectExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="apply" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="apply" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the input set.</param>
@@ -3519,9 +3519,9 @@ The expression produced by <paramref name="apply" /> does not have a collection 
         <TypeParameter Name="TSelector" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="apply" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="selector" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,TSelector&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="apply" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="selector" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,TSelector&gt;" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TSelector">The method result type of <paramref name="selector" />.</typeparam>
@@ -3593,8 +3593,8 @@ The expression produced by <paramref name="apply" /> does not have a collection 
         <ReturnType>System.Data.Common.CommandTrees.DbSkipExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbSortExpression" RefType="this" />
-        <Parameter Name="count" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbSortExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="count" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">A <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that specifies the sorted input set.</param>
@@ -3624,9 +3624,9 @@ The expression produced by <paramref name="apply" /> does not have a collection 
         <ReturnType>System.Data.Common.CommandTrees.DbSkipExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="sortOrder" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbSortClause&gt;" />
-        <Parameter Name="count" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sortOrder" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbSortClause&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="count" Type="System.Data.Common.CommandTrees.DbExpression" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">An expression binding that specifies the input set.</param>
@@ -3657,8 +3657,8 @@ The expression produced by <paramref name="apply" /> does not have a collection 
         <ReturnType>System.Data.Common.CommandTrees.DbSortExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" />
-        <Parameter Name="sortOrder" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbSortClause&gt;" />
+        <Parameter Name="input" Type="System.Data.Common.CommandTrees.DbExpressionBinding" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sortOrder" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbSortClause&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">An expression binding that specifies the input set.</param>
@@ -3688,8 +3688,8 @@ The expression produced by <paramref name="apply" /> does not have a collection 
         <ReturnType>System.Data.Common.CommandTrees.DbLimitExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="count" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="count" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the input collection.</param>
@@ -3728,8 +3728,8 @@ The expression produced by <paramref name="apply" /> does not have a collection 
         <ReturnType>System.Data.Common.CommandTrees.DbSortExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbSortExpression" RefType="this" />
-        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbSortExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">A DbSortExpression that specifies the ordered input set.</param>
@@ -3767,9 +3767,9 @@ The expression produced by <paramref name="sortKey" /> is null.</exception>
         <ReturnType>System.Data.Common.CommandTrees.DbSortExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbSortExpression" RefType="this" />
-        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="collation" Type="System.String" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbSortExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="collation" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">A DbSortExpression that specifies the ordered input set.</param>
@@ -3819,8 +3819,8 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbSortExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbSortExpression" RefType="this" />
-        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbSortExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">A DbSortExpression that specifies the ordered input set.</param>
@@ -3858,9 +3858,9 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbSortExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbSortExpression" RefType="this" />
-        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
-        <Parameter Name="collation" Type="System.String" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbSortExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="sortKey" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="collation" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">A DbSortExpression that specifies the ordered input set.</param>
@@ -3910,7 +3910,7 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbSortClause</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="key" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The expression that defines the sort key.</param>
@@ -3939,8 +3939,8 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbSortClause</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="collation" Type="System.String" />
+        <Parameter Name="key" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="collation" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The expression that defines the sort key.</param>
@@ -3981,7 +3981,7 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbSortClause</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="key" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The expression that defines the sort key.</param>
@@ -4010,8 +4010,8 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbSortClause</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="collation" Type="System.String" />
+        <Parameter Name="key" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="collation" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The expression that defines the sort key.</param>
@@ -4043,8 +4043,8 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbTreatExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="treatType" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="treatType" Type="System.Data.Metadata.Edm.TypeUsage" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the instance.</param>
@@ -4102,7 +4102,7 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbArithmeticExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="argument">An expression that specifies the argument.</param>
@@ -4130,8 +4130,8 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that defines the left set argument.</param>
@@ -4160,8 +4160,8 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbUnionAllExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="left" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="right" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="left">An expression that defines the left set argument.</param>
@@ -4190,8 +4190,8 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbVariableReferenceExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" />
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">The type of the referenced variable.</param>
@@ -4217,8 +4217,8 @@ The expression produced by <paramref name="sortKey" /> does not have an order-co
         <ReturnType>System.Data.Common.CommandTrees.DbFilterExpression</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
-        <Parameter Name="predicate" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="source" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="predicate" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="source">An expression that specifies the input set.</param>

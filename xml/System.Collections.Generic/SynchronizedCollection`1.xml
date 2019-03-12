@@ -218,9 +218,9 @@
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="syncRoot" Type="System.Object" />
-        <Parameter Name="list" Type="System.Collections.Generic.List&lt;T&gt;" />
-        <Parameter Name="makeCopy" Type="System.Boolean" />
+        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="list" Type="System.Collections.Generic.List&lt;T&gt;" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="makeCopy" Type="System.Boolean" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="syncRoot">To be added.</param>

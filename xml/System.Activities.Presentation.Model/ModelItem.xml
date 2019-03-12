@@ -207,7 +207,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
         <ReturnType>System.Activities.Presentation.Model.ModelEditingScope</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="shouldApplyChangesImmediately" Type="System.Boolean" />
+        <Parameter Name="shouldApplyChangesImmediately" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="shouldApplyChangesImmediately">
@@ -267,8 +267,8 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
         <ReturnType>System.Activities.Presentation.Model.ModelEditingScope</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="shouldApplyChangesImmediately" Type="System.Boolean" />
+        <Parameter Name="description" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="shouldApplyChangesImmediately" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="description">An optional description of the change. This will be set into the <see cref="P:System.Activities.Presentation.Model.ModelEditingScope.Description" /> property of the editing scope.</param>

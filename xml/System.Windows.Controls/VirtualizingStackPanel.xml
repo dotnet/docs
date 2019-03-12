@@ -376,7 +376,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="o" Type="System.Windows.DependencyObject" />
+        <Parameter Name="o" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="o">The object from which the attached property value is read.</param>
@@ -412,7 +412,7 @@ The default value of the <xref:System.Windows.Controls.VirtualizingStackPanel.Is
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="child" Type="System.Windows.UIElement" />
+        <Parameter Name="child" Type="System.Windows.UIElement" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="child">The element whose position to find.</param>
@@ -438,7 +438,7 @@ The default value of the <xref:System.Windows.Controls.VirtualizingStackPanel.Is
         <ReturnType>System.Windows.Controls.VirtualizationMode</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="element">The object from which the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.VirtualizationMode" /> property is read.</param>
@@ -1032,7 +1032,7 @@ Notice that the IsVirtualizing attached property is explicitly set to `true`.
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="e">The data for the event.</param>
@@ -1084,7 +1084,7 @@ Notice that the IsVirtualizing attached property is explicitly set to `true`.
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="e">The data for the event.</param>
@@ -1469,8 +1469,8 @@ Notice that the IsVirtualizing attached property is explicitly set to `true`.
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="value" Type="System.Boolean" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="value" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="element">The object to which the attached property value is set.</param>
@@ -1537,8 +1537,8 @@ The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number 
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="value" Type="System.Windows.Controls.VirtualizationMode" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="value" Type="System.Windows.Controls.VirtualizationMode" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="element">The element on which to set the <see cref="P:System.Windows.Controls.VirtualizingStackPanel.VirtualizationMode" /> property.</param>
@@ -1571,8 +1571,8 @@ For more information about the <xref:System.Windows.Controls.VirtualizingStackPa
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="areItemChangesLocal" Type="System.Boolean" />
-        <Parameter Name="args" Type="System.Windows.Controls.Primitives.ItemsChangedEventArgs" />
+        <Parameter Name="areItemChangesLocal" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="args" Type="System.Windows.Controls.Primitives.ItemsChangedEventArgs" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="areItemChangesLocal">

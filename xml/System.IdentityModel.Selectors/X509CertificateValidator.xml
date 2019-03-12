@@ -129,8 +129,8 @@
         <ReturnType>System.IdentityModel.Selectors.X509CertificateValidator</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="useMachineContext" Type="System.Boolean" />
-        <Parameter Name="chainPolicy" Type="System.Security.Cryptography.X509Certificates.X509ChainPolicy" />
+        <Parameter Name="useMachineContext" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="chainPolicy" Type="System.Security.Cryptography.X509Certificates.X509ChainPolicy" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="useMachineContext">
@@ -168,8 +168,8 @@
         <ReturnType>System.IdentityModel.Selectors.X509CertificateValidator</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="useMachineContext" Type="System.Boolean" />
-        <Parameter Name="chainPolicy" Type="System.Security.Cryptography.X509Certificates.X509ChainPolicy" />
+        <Parameter Name="useMachineContext" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="chainPolicy" Type="System.Security.Cryptography.X509Certificates.X509ChainPolicy" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="useMachineContext">
@@ -208,7 +208,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="nodelist" Type="System.Xml.XmlNodeList" />
+        <Parameter Name="nodelist" Type="System.Xml.XmlNodeList" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="nodelist">The custom configuration elements.</param>

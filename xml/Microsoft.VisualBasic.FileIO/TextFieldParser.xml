@@ -1314,7 +1314,7 @@
       <Parameters>
         <Parameter Name="delimiters" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1384,7 +1384,7 @@
       <Parameters>
         <Parameter Name="fieldWidths" Type="System.Int32[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

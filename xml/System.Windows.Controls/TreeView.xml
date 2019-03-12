@@ -92,7 +92,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="container" Type="System.Windows.Controls.TreeViewItem" />
+        <Parameter Name="container" Type="System.Windows.Controls.TreeViewItem" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="container">The <see cref="T:System.Windows.Controls.TreeViewItem" /> to expand.</param>
@@ -213,7 +213,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
+        <Parameter Name="e" Type="System.Windows.RoutedEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">The data for the event.</param>
@@ -371,8 +371,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="item" Type="System.Object" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="element">The element that displays the specified item.</param>

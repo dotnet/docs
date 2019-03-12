@@ -84,7 +84,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The configuration name of the binding. The value should be unique because it is used as identification for the binding.</param>
@@ -228,7 +228,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="binding">The binding that contains the content, context protection level, and content exchange mechanism used to initialize the class.</param>
@@ -255,7 +255,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="binding">The binding that contains the content, context protection level, and content exchange mechanism used to configure the class.</param>

@@ -71,7 +71,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="value" Type="System.Double" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">A <see cref="T:System.Double" /> that specifies the font size.</param>
@@ -280,8 +280,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-        <Parameter Name="type" Type="System.Web.UI.WebControls.UnitType" />
+        <Parameter Name="value" Type="System.Double" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="type" Type="System.Web.UI.WebControls.UnitType" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">A <see cref="T:System.Double" /> that specifies the font size.</param>
@@ -1088,7 +1088,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="formatProvider" Type="System.IFormatProvider" />
+        <Parameter Name="formatProvider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="formatProvider">An <see cref="T:System.IFormatProvider" /> that supplies culture-specific formatting information, which is used if the <see cref="P:System.Web.UI.WebControls.FontUnit.Type" /> property is set to the <see cref="F:System.Web.UI.WebControls.FontSize.AsUnit" /> value; otherwise, it is ignored.</param>

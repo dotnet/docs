@@ -46,8 +46,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="firstPackUri" Type="System.Uri" />
-        <Parameter Name="secondPackUri" Type="System.Uri" />
+        <Parameter Name="firstPackUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="secondPackUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="firstPackUri">The first pack URI.</param>
@@ -211,7 +211,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packageUri" Type="System.Uri" />
+        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="packageUri">The URI of the referenced <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -277,8 +277,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packageUri" Type="System.Uri" />
-        <Parameter Name="partUri" Type="System.Uri" />
+        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="partUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="packageUri">The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -350,9 +350,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packageUri" Type="System.Uri" />
-        <Parameter Name="partUri" Type="System.Uri" />
-        <Parameter Name="fragment" Type="System.String" />
+        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="partUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="fragment" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="packageUri">The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -545,7 +545,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packUri" Type="System.Uri" />
+        <Parameter Name="packUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="packUri">The pack URI from which to return the URI of the <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -592,7 +592,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packUri" Type="System.Uri" />
+        <Parameter Name="packUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="packUri">The pack URI from which to return the <see cref="T:System.IO.Packaging.PackagePart" /> URI.</param>

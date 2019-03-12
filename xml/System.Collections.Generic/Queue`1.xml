@@ -1253,7 +1253,7 @@ finally {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="result" Type="T" RefType="out" />
+        <Parameter Name="result" Type="T" RefType="out" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="result">To be added.</param>
@@ -1285,7 +1285,7 @@ finally {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="result" Type="T" RefType="out" />
+        <Parameter Name="result" Type="T" RefType="out" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="result">To be added.</param>

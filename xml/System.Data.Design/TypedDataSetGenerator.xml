@@ -435,13 +435,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="inputFileContent" Type="System.String" />
-        <Parameter Name="compileUnit" Type="System.CodeDom.CodeCompileUnit" />
-        <Parameter Name="mainNamespace" Type="System.CodeDom.CodeNamespace" />
-        <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
-        <Parameter Name="option" Type="System.Data.Design.TypedDataSetGenerator+GenerateOption" />
-        <Parameter Name="dataSetNamespace" Type="System.String" />
-        <Parameter Name="basePath" Type="System.String" />
+        <Parameter Name="inputFileContent" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="compileUnit" Type="System.CodeDom.CodeCompileUnit" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="mainNamespace" Type="System.CodeDom.CodeNamespace" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="option" Type="System.Data.Design.TypedDataSetGenerator+GenerateOption" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dataSetNamespace" Type="System.String" Index="5" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="basePath" Type="System.String" Index="6" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>
@@ -482,14 +482,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="inputFileContent" Type="System.String" />
-        <Parameter Name="compileUnit" Type="System.CodeDom.CodeCompileUnit" />
-        <Parameter Name="mainNamespace" Type="System.CodeDom.CodeNamespace" />
-        <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
-        <Parameter Name="customDBProviders" Type="System.Collections.Hashtable" />
-        <Parameter Name="option" Type="System.Data.Design.TypedDataSetGenerator+GenerateOption" />
-        <Parameter Name="dataSetNamespace" Type="System.String" />
-        <Parameter Name="basePath" Type="System.String" />
+        <Parameter Name="inputFileContent" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="compileUnit" Type="System.CodeDom.CodeCompileUnit" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="mainNamespace" Type="System.CodeDom.CodeNamespace" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="customDBProviders" Type="System.Collections.Hashtable" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="option" Type="System.Data.Design.TypedDataSetGenerator+GenerateOption" Index="5" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dataSetNamespace" Type="System.String" Index="6" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="basePath" Type="System.String" Index="7" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="inputFileContent">A string that represents the XML schema to base the <see cref="T:System.Data.DataSet" /> on.</param>

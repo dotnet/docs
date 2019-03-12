@@ -290,7 +290,7 @@ Console.WriteLine(xmlTree)
       <Parameters>
         <Parameter Name="content" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -642,7 +642,7 @@ Console.WriteLine(xmlTree)
       <Parameters>
         <Parameter Name="content" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -2382,7 +2382,7 @@ Console.WriteLine(root)
       <Parameters>
         <Parameter Name="content" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

@@ -32,8 +32,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
-        <Parameter Name="protocolsSupported" Type="System.Web.Services.Configuration.WebServiceProtocols" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="protocolsSupported" Type="System.Web.Services.Configuration.WebServiceProtocols" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> on which this XML Web service is based.</param>
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapServerMethod</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="key" Type="System.Object" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key associated with the desired duplicate <see cref="T:System.Web.Services.Protocols.SoapServerMethod" />.</param>
@@ -85,7 +85,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapServerMethod</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="key" Type="System.Object" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key associated with the desired <see cref="T:System.Web.Services.Protocols.SoapServerMethod" />.</param>

@@ -657,7 +657,7 @@
         <ReturnType>TResultType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLambdaExpression" />
+        <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLambdaExpression" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbLambdaExpression" /> that is being visited.</param>

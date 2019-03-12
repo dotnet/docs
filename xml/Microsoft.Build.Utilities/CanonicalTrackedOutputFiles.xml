@@ -227,7 +227,7 @@
       <Parameters>
         <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -267,7 +267,7 @@
       <Parameters>
         <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -296,8 +296,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]" />
-        <Parameter Name="searchForSubRootsInCompositeRootingMarkers" Type="System.Boolean" />
+        <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="searchForSubRootsInCompositeRootingMarkers" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="sources">The sources to find outputs for.</param>

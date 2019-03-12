@@ -415,15 +415,16 @@
     <Member MemberName="OnCollectionChanged">
       <MemberSignature Language="C#" Value="protected void OnCollectionChanged (System.ComponentModel.CollectionChangeEventArgs ccevent);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnCollectionChanged(class System.ComponentModel.CollectionChangeEventArgs ccevent) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridTableStylesCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridTableStylesCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnCollectionChanged (ccevent As CollectionChangeEventArgs)" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ ccevent);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridTableStylesCollection.OnCollectionChanged ccevent" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridTableStylesCollection.OnCollectionChanged ccevent" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C#" Value="protected void OnCollectionChanged (System.ComponentModel.CollectionChangeEventArgs e);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnCollectionChanged(class System.ComponentModel.CollectionChangeEventArgs e) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnCollectionChanged (e As CollectionChangeEventArgs)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ e);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
-      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridTableStylesCollection.OnCollectionChanged e" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridTableStylesCollection.OnCollectionChanged e" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridTableStylesCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" FrameworkAlternate="netframework-1.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -435,8 +436,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.CollectionChangeEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="ccevent" Type="System.ComponentModel.CollectionChangeEventArgs" Index="0" FrameworkAlternate="netframework-1.1" />
-        <Parameter Name="e" Type="System.ComponentModel.CollectionChangeEventArgs" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> containing the event data.</param>
@@ -900,7 +901,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element.</param>

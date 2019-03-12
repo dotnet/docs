@@ -35,7 +35,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="typeCode" Type="System.Reflection.Metadata.PrimitiveTypeCode" />
+        <Parameter Name="typeCode" Type="System.Reflection.Metadata.PrimitiveTypeCode" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="typeCode">To be added.</param>

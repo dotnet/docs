@@ -139,7 +139,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
+        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="patternInterface">A value in the enumeration.</param>

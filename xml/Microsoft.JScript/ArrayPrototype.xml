@@ -51,7 +51,7 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-1.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -197,7 +197,7 @@
         <Parameter Name="thisob" Type="System.Object" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-1.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -393,7 +393,7 @@
         <Parameter Name="deleteCnt" Type="System.Double" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-1.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -508,7 +508,7 @@
         <Parameter Name="thisob" Type="System.Object" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-1.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

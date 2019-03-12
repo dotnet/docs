@@ -1483,7 +1483,7 @@ private static void DumpGrammarStatus(Grammar item)
         <Parameter Name="type" Type="System.Type" />
         <Parameter Name="onInitParameters" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

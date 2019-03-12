@@ -127,7 +127,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" />
+        <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> to add.</param>
@@ -212,7 +212,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" />
+        <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> to look for.</param>
@@ -254,8 +254,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Xml.Serialization.XmlElementAttribute[]" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="array" Type="System.Xml.Serialization.XmlElementAttribute[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> array to hold the copied elements.</param>
@@ -363,7 +363,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" />
+        <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> whose index is being retrieved.</param>
@@ -404,8 +404,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index where the member is inserted.</param>
@@ -446,7 +446,7 @@
         <ReturnType>System.Xml.Serialization.XmlElementAttribute</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get or set.</param>
@@ -490,7 +490,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" />
+        <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> to remove from the collection.</param>
@@ -526,7 +526,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -560,8 +560,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Array" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="array" Type="System.Array" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="array">To be added.</param>
@@ -663,7 +663,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -699,7 +699,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -735,7 +735,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -771,8 +771,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -875,7 +875,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -911,7 +911,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>

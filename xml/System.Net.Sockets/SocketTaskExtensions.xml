@@ -398,10 +398,10 @@
         <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
-        <Parameter Name="buffer" Type="System.Memory&lt;System.Byte&gt;" />
-        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="buffer" Type="System.Memory&lt;System.Byte&gt;" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="socket">To be added.</param>
@@ -613,10 +613,10 @@
         <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
-        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
-        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="socket">To be added.</param>

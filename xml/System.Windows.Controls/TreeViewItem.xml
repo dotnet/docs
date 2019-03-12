@@ -103,7 +103,7 @@
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="arrangeSize" Type="System.Windows.Size" />
+        <Parameter Name="arrangeSize" Type="System.Windows.Size" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="arrangeSize">The final area within the parent that the <see cref="T:System.Windows.Controls.TreeViewItem" /> should use to arrange itself and its children.</param>
@@ -625,7 +625,7 @@
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="constraint" Type="System.Windows.Size" />
+        <Parameter Name="constraint" Type="System.Windows.Size" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="constraint">The maximum size that this element can give to child elements. Infinity can be specified as a value to indicate that the element will size to whatever content is available</param>
@@ -974,8 +974,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="System.Windows.DependencyObject" />
-        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="element" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="item" Type="System.Object" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="element">The element that displays the specified item.</param>

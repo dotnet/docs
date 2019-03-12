@@ -492,8 +492,8 @@
         <ReturnType>System.Printing.PrintSystemJobInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="jobName" Type="System.String" />
-        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
+        <Parameter Name="jobName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="jobName">The path and name of the document that is being printed.</param>
@@ -596,10 +596,10 @@
         <ReturnType>System.Printing.PrintSystemJobInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="jobName" Type="System.String" />
-        <Parameter Name="documentPath" Type="System.String" />
-        <Parameter Name="fastCopy" Type="System.Boolean" />
-        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
+        <Parameter Name="jobName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="documentPath" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="fastCopy" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" Index="3" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="jobName">The path and name of the document that is being printed.</param>

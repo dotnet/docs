@@ -142,13 +142,13 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dwFlags" Type="System.Int32" />
-        <Parameter Name="dwZone" Type="System.Int32" />
-        <Parameter Name="wszSite" Type="System.String" />
-        <Parameter Name="wszId" Type="System.String" />
-        <Parameter Name="wszConfig" Type="System.String" />
-        <Parameter Name="wszLicenses" Type="System.String" />
-        <Parameter Name="wszDeploymentManifest" Type="System.String" />
+        <Parameter Name="dwFlags" Type="System.Int32" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
+        <Parameter Name="dwZone" Type="System.Int32" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
+        <Parameter Name="wszSite" Type="System.String" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
+        <Parameter Name="wszId" Type="System.String" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
+        <Parameter Name="wszConfig" Type="System.String" Index="4" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
+        <Parameter Name="wszLicenses" Type="System.String" Index="5" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
+        <Parameter Name="wszDeploymentManifest" Type="System.String" Index="6" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="dwFlags">One of the following CORIESECURITY values:

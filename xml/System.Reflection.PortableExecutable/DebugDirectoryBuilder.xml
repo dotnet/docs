@@ -60,9 +60,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pdbPath" Type="System.String" />
-        <Parameter Name="pdbContentId" Type="System.Reflection.Metadata.BlobContentId" />
-        <Parameter Name="portablePdbVersion" Type="System.UInt16" />
+        <Parameter Name="pdbPath" Type="System.String" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="pdbContentId" Type="System.Reflection.Metadata.BlobContentId" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="portablePdbVersion" Type="System.UInt16" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="pdbPath">To be added.</param>
@@ -91,8 +91,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="debugMetadata" Type="System.Reflection.Metadata.BlobBuilder" />
-        <Parameter Name="portablePdbVersion" Type="System.UInt16" />
+        <Parameter Name="debugMetadata" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="portablePdbVersion" Type="System.UInt16" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="debugMetadata">To be added.</param>
@@ -118,9 +118,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Reflection.PortableExecutable.DebugDirectoryEntryType" />
-        <Parameter Name="version" Type="System.UInt32" />
-        <Parameter Name="stamp" Type="System.UInt32" />
+        <Parameter Name="type" Type="System.Reflection.PortableExecutable.DebugDirectoryEntryType" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="version" Type="System.UInt32" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="stamp" Type="System.UInt32" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -150,11 +150,11 @@
         <TypeParameter Name="TData" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="type" Type="System.Reflection.PortableExecutable.DebugDirectoryEntryType" />
-        <Parameter Name="version" Type="System.UInt32" />
-        <Parameter Name="stamp" Type="System.UInt32" />
-        <Parameter Name="data" Type="TData" />
-        <Parameter Name="dataSerializer" Type="System.Action&lt;System.Reflection.Metadata.BlobBuilder,TData&gt;" />
+        <Parameter Name="type" Type="System.Reflection.PortableExecutable.DebugDirectoryEntryType" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="version" Type="System.UInt32" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="stamp" Type="System.UInt32" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="data" Type="TData" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="dataSerializer" Type="System.Action&lt;System.Reflection.Metadata.BlobBuilder,TData&gt;" Index="4" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TData">To be added.</typeparam>
@@ -184,8 +184,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algorithmName" Type="System.String" />
-        <Parameter Name="checksum" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
+        <Parameter Name="algorithmName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="checksum" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="algorithmName">To be added.</param>

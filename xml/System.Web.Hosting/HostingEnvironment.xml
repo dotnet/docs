@@ -649,7 +649,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workItem" Type="System.Action&lt;System.Threading.CancellationToken&gt;" />
+        <Parameter Name="workItem" Type="System.Action&lt;System.Threading.CancellationToken&gt;" Index="0" FrameworkAlternate="netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="workItem">A unit of execution.</param>
@@ -682,7 +682,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workItem" Type="System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="workItem" Type="System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&gt;" Index="0" FrameworkAlternate="netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="workItem">A unit of execution.</param>

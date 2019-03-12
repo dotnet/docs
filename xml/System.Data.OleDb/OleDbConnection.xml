@@ -188,7 +188,7 @@
         <ReturnType>System.Data.Common.DbTransaction</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isolationLevel" Type="System.Data.IsolationLevel" />
+        <Parameter Name="isolationLevel" Type="System.Data.IsolationLevel" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="isolationLevel">To be added.</param>
@@ -787,7 +787,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="transaction" Type="System.Transactions.Transaction" />
+        <Parameter Name="transaction" Type="System.Transactions.Transaction" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="transaction">A reference to an existing <see cref="T:System.Transactions.Transaction" /> in which to enlist.</param>
@@ -910,7 +910,7 @@
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collectionName" Type="System.String" />
+        <Parameter Name="collectionName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="collectionName">Specifies the name of the schema to return.</param>
@@ -944,8 +944,8 @@
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collectionName" Type="System.String" />
-        <Parameter Name="restrictionValues" Type="System.String[]" />
+        <Parameter Name="collectionName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="restrictionValues" Type="System.String[]" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="collectionName">Specifies the name of the schema to return.</param>
@@ -1347,7 +1347,7 @@
         <ReturnType>System.Data.IDbTransaction</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isolationLevel" Type="System.Data.IsolationLevel" />
+        <Parameter Name="isolationLevel" Type="System.Data.IsolationLevel" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="isolationLevel">To be added.</param>

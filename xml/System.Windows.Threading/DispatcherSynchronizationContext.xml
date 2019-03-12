@@ -88,8 +88,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="dispatcher" Type="System.Windows.Threading.Dispatcher" />
-        <Parameter Name="priority" Type="System.Windows.Threading.DispatcherPriority" />
+        <Parameter Name="dispatcher" Type="System.Windows.Threading.Dispatcher" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="priority" Type="System.Windows.Threading.DispatcherPriority" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dispatcher">The <see cref="T:System.Windows.Threading.Dispatcher" /> to associate this <see cref="T:System.Windows.Threading.DispatcherSynchronizationContext" /> with.</param>

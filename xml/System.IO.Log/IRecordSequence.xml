@@ -1325,7 +1325,7 @@ using System;
         <Parameter Name="reservationCollection" Type="System.IO.Log.ReservationCollection" />
         <Parameter Name="reservations" Type="System.Int64[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1381,7 +1381,7 @@ using System;
         <Parameter Name="reservationCollection" Type="System.IO.Log.ReservationCollection" />
         <Parameter Name="reservations" Type="System.Int64[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

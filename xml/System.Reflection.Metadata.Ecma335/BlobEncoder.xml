@@ -42,7 +42,7 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="builder">To be added.</param>
@@ -93,8 +93,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fixedArguments" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder&gt;" />
-        <Parameter Name="namedArguments" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder&gt;" />
+        <Parameter Name="fixedArguments" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder&gt;" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="namedArguments" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder&gt;" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="fixedArguments">To be added.</param>
@@ -122,8 +122,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fixedArguments" Type="System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder" RefType="out" />
-        <Parameter Name="namedArguments" Type="System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder" RefType="out" />
+        <Parameter Name="fixedArguments" Type="System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder" RefType="out" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="namedArguments" Type="System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder" RefType="out" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="fixedArguments">To be added.</param>
@@ -176,7 +176,7 @@
         <ReturnType>System.Reflection.Metadata.Ecma335.LocalVariablesEncoder</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="variableCount" Type="System.Int32" />
+        <Parameter Name="variableCount" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="variableCount">To be added.</param>
@@ -203,9 +203,9 @@
         <ReturnType>System.Reflection.Metadata.Ecma335.MethodSignatureEncoder</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="convention" Type="System.Reflection.Metadata.SignatureCallingConvention" />
-        <Parameter Name="genericParameterCount" Type="System.Int32" />
-        <Parameter Name="isInstanceMethod" Type="System.Boolean" />
+        <Parameter Name="convention" Type="System.Reflection.Metadata.SignatureCallingConvention" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="genericParameterCount" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="isInstanceMethod" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="convention">To be added.</param>
@@ -235,7 +235,7 @@
         <ReturnType>System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="genericArgumentCount" Type="System.Int32" />
+        <Parameter Name="genericArgumentCount" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="genericArgumentCount">To be added.</param>
@@ -263,7 +263,7 @@
         <ReturnType>System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="argumentCount" Type="System.Int32" />
+        <Parameter Name="argumentCount" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="argumentCount">To be added.</param>
@@ -291,7 +291,7 @@
         <ReturnType>System.Reflection.Metadata.Ecma335.PermissionSetEncoder</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributeCount" Type="System.Int32" />
+        <Parameter Name="attributeCount" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="attributeCount">To be added.</param>
@@ -318,7 +318,7 @@
         <ReturnType>System.Reflection.Metadata.Ecma335.MethodSignatureEncoder</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isInstanceProperty" Type="System.Boolean" />
+        <Parameter Name="isInstanceProperty" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="isInstanceProperty">To be added.</param>

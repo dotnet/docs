@@ -42,7 +42,7 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="builder">To be added.</param>
@@ -118,8 +118,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder&gt;" />
-        <Parameter Name="scalar" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.ScalarEncoder&gt;" />
+        <Parameter Name="type" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder&gt;" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="scalar" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.ScalarEncoder&gt;" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -147,8 +147,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder" RefType="out" />
-        <Parameter Name="scalar" Type="System.Reflection.Metadata.Ecma335.ScalarEncoder" RefType="out" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder" RefType="out" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="scalar" Type="System.Reflection.Metadata.Ecma335.ScalarEncoder" RefType="out" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -176,8 +176,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="arrayType" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder&gt;" />
-        <Parameter Name="vector" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.VectorEncoder&gt;" />
+        <Parameter Name="arrayType" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder&gt;" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="vector" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.VectorEncoder&gt;" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="arrayType">To be added.</param>
@@ -205,8 +205,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="arrayType" Type="System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder" RefType="out" />
-        <Parameter Name="vector" Type="System.Reflection.Metadata.Ecma335.VectorEncoder" RefType="out" />
+        <Parameter Name="arrayType" Type="System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder" RefType="out" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="vector" Type="System.Reflection.Metadata.Ecma335.VectorEncoder" RefType="out" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="arrayType">To be added.</param>

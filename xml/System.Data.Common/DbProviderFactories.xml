@@ -56,7 +56,7 @@
         <ReturnType>System.Data.Common.DbProviderFactory</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="connection" Type="System.Data.Common.DbConnection" />
+        <Parameter Name="connection" Type="System.Data.Common.DbConnection" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="connection">The connection used.</param>
@@ -251,8 +251,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="providerInvariantName" Type="System.String" />
-        <Parameter Name="factory" Type="System.Data.Common.DbProviderFactory" />
+        <Parameter Name="providerInvariantName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="factory" Type="System.Data.Common.DbProviderFactory" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="providerInvariantName">To be added.</param>
@@ -280,8 +280,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="providerInvariantName" Type="System.String" />
-        <Parameter Name="factoryTypeAssemblyQualifiedName" Type="System.String" />
+        <Parameter Name="providerInvariantName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="factoryTypeAssemblyQualifiedName" Type="System.String" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="providerInvariantName">To be added.</param>
@@ -309,8 +309,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="providerInvariantName" Type="System.String" />
-        <Parameter Name="providerFactoryClass" Type="System.Type" />
+        <Parameter Name="providerInvariantName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="providerFactoryClass" Type="System.Type" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="providerInvariantName">To be added.</param>
@@ -338,8 +338,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="providerInvariantName" Type="System.String" />
-        <Parameter Name="factory" Type="System.Data.Common.DbProviderFactory" RefType="out" />
+        <Parameter Name="providerInvariantName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="factory" Type="System.Data.Common.DbProviderFactory" RefType="out" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="providerInvariantName">To be added.</param>
@@ -368,7 +368,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="providerInvariantName" Type="System.String" />
+        <Parameter Name="providerInvariantName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="providerInvariantName">To be added.</param>

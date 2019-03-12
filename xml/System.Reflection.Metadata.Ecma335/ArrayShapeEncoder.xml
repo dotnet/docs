@@ -42,7 +42,7 @@
         <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="builder">To be added.</param>
@@ -93,9 +93,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rank" Type="System.Int32" />
-        <Parameter Name="sizes" Type="System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;" />
-        <Parameter Name="lowerBounds" Type="System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;" />
+        <Parameter Name="rank" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="sizes" Type="System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="lowerBounds" Type="System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="rank">To be added.</param>

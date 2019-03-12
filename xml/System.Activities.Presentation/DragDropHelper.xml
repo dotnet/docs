@@ -45,7 +45,7 @@
         <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
         <Parameter Name="allowedItemTypes" Type="System.Type[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -337,7 +337,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">The drag event data.</param>
@@ -396,9 +396,9 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dropTarget" Type="System.Windows.DependencyObject" />
-        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
-        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+        <Parameter Name="dropTarget" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dropTarget">The location for the drag.</param>

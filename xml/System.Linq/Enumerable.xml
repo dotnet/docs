@@ -512,8 +512,8 @@
         <TypeParameter Name="TSource" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
-        <Parameter Name="element" Type="TSource" />
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="element" Type="TSource" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
@@ -8078,8 +8078,8 @@ Only unique elements are returned.
         <TypeParameter Name="TSource" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
-        <Parameter Name="element" Type="TSource" />
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="element" Type="TSource" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
@@ -9283,8 +9283,8 @@ Only unique elements are returned.
         <TypeParameter Name="TSource" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TSource">To be added.</typeparam>
@@ -10861,8 +10861,8 @@ Only unique elements are returned.
         <TypeParameter Name="TSource" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TSource">To be added.</typeparam>
@@ -11706,7 +11706,7 @@ Only unique elements are returned.
         <TypeParameter Name="TSource" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
@@ -11743,8 +11743,8 @@ Only unique elements are returned.
         <TypeParameter Name="TSource" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
-        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TSource&gt;" />
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TSource&gt;" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
@@ -12421,9 +12421,9 @@ Only unique elements are returned.
         <TypeParameter Name="TResult" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="first" Type="System.Collections.Generic.IEnumerable&lt;TFirst&gt;" RefType="this" />
-        <Parameter Name="second" Type="System.Collections.Generic.IEnumerable&lt;TSecond&gt;" />
-        <Parameter Name="resultSelector" Type="System.Func&lt;TFirst,TSecond,TResult&gt;" />
+        <Parameter Name="first" Type="System.Collections.Generic.IEnumerable&lt;TFirst&gt;" RefType="this" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="second" Type="System.Collections.Generic.IEnumerable&lt;TSecond&gt;" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="resultSelector" Type="System.Func&lt;TFirst,TSecond,TResult&gt;" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TFirst">The type of the elements of the first input sequence.</typeparam>

@@ -118,7 +118,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="application" Type="System.Web.HttpApplication" />
+        <Parameter Name="application" Type="System.Web.HttpApplication" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="application">An object that provides access to the methods, properties, and events common to all application objects in an ASP.NET application.</param>
@@ -152,7 +152,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Web.HttpContextBase" />
+        <Parameter Name="context" Type="System.Web.HttpContextBase" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">Encapsulates all HTTP-specific information about an individual HTTP request.</param>
@@ -189,7 +189,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.Web.HttpContextBase" />
+        <Parameter Name="context" Type="System.Web.HttpContextBase" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="context">Encapsulates all HTTP-specific information about an individual HTTP request.</param>
@@ -303,7 +303,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="application" Type="System.Web.HttpApplication" />
+        <Parameter Name="application" Type="System.Web.HttpApplication" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="application">An object that provides access to the methods, properties, and events that are common to all application objects in an ASP.NET application.</param>

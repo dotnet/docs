@@ -45,8 +45,8 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementType" Type="TType" />
-        <Parameter Name="shape" Type="System.Reflection.Metadata.ArrayShape" />
+        <Parameter Name="elementType" Type="TType" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="shape" Type="System.Reflection.Metadata.ArrayShape" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="elementType">To be added.</param>
@@ -75,7 +75,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementType" Type="TType" />
+        <Parameter Name="elementType" Type="TType" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="elementType">To be added.</param>
@@ -100,8 +100,8 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="genericType" Type="TType" />
-        <Parameter Name="typeArguments" Type="System.Collections.Immutable.ImmutableArray&lt;TType&gt;" />
+        <Parameter Name="genericType" Type="TType" Index="0" FrameworkAlternate="netcore-1.1" />
+        <Parameter Name="typeArguments" Type="System.Collections.Immutable.ImmutableArray&lt;TType&gt;" Index="1" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="genericType">To be added.</param>
@@ -129,8 +129,8 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="genericType" Type="TType" />
-        <Parameter Name="typeArguments" Type="System.Collections.Immutable.ImmutableArray&lt;TType&gt;" />
+        <Parameter Name="genericType" Type="TType" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="typeArguments" Type="System.Collections.Immutable.ImmutableArray&lt;TType&gt;" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="genericType">To be added.</param>
@@ -159,7 +159,7 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementType" Type="TType" />
+        <Parameter Name="elementType" Type="TType" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="elementType">To be added.</param>

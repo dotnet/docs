@@ -1796,13 +1796,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="format" Type="System.String" />
-        <Parameter Name="arg" Type="System.Object[]">
-          <Attributes>
-            <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
+        <Parameter Name="arg" Type="System.Object[]" />
       </Parameters>
       <Docs>
         <param name="format">A string containing zero or more format items.</param>

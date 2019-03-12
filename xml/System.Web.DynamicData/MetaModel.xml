@@ -128,7 +128,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="registerGlobally" Type="System.Boolean" />
+        <Parameter Name="registerGlobally" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="registerGlobally">
@@ -162,7 +162,7 @@
         <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.Web.DynamicData.ModelProviders.TableProvider" />
+        <Parameter Name="provider" Type="System.Web.DynamicData.ModelProviders.TableProvider" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="provider">The provider for the table.</param>
@@ -952,8 +952,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entityType" Type="System.Type" />
-        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" RefType="out" />
+        <Parameter Name="entityType" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" RefType="out" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entityType">The table type.</param>

@@ -163,11 +163,11 @@ W. Central Africa Standard Time has no adjustment rules
         <ReturnType>System.TimeZoneInfo+AdjustmentRule</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dateStart" Type="System.DateTime" />
-        <Parameter Name="dateEnd" Type="System.DateTime" />
-        <Parameter Name="daylightDelta" Type="System.TimeSpan" />
-        <Parameter Name="daylightTransitionStart" Type="System.TimeZoneInfo+TransitionTime" />
-        <Parameter Name="daylightTransitionEnd" Type="System.TimeZoneInfo+TransitionTime" />
+        <Parameter Name="dateStart" Type="System.DateTime" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="dateEnd" Type="System.DateTime" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="daylightDelta" Type="System.TimeSpan" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="daylightTransitionStart" Type="System.TimeZoneInfo+TransitionTime" Index="3" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="daylightTransitionEnd" Type="System.TimeZoneInfo+TransitionTime" Index="4" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="dateStart">The effective date of the adjustment rule. If the value of the <paramref name="dateStart" /> parameter is <see langword="DateTime.MinValue.Date" />, this is the first adjustment rule in effect for a time zone.</param>
@@ -533,7 +533,7 @@ TimeZoneTime = BaseUtcOffset + DaylightDelta + UtcTime
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.TimeZoneInfo+AdjustmentRule" />
+        <Parameter Name="other" Type="System.TimeZoneInfo+AdjustmentRule" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="other">The object to compare with the current object.</param>
@@ -634,7 +634,7 @@ Comparing Central Standard Time rule for 1/1/0001 to 12/31/9999 with:
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="sender">The object that initiated the callback. The functionality for this parameter is not currently implemented.</param>
@@ -679,8 +679,8 @@ Comparing Central Standard Time rule for 1/1/0001 to 12/31/9999 with:
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="info">The object to populate with data.</param>

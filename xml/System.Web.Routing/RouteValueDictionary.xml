@@ -123,7 +123,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dictionary">A collection whose elements are copied to the new collection.</param>
@@ -160,7 +160,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="values" Type="System.Object" />
+        <Parameter Name="values" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="values">An object that contains properties that will be added as elements to the new collection.</param>
@@ -207,8 +207,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key of the element to add.</param>
@@ -270,7 +270,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key to locate in the dictionary.</param>
@@ -301,7 +301,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The value to locate in the dictionary.</param>
@@ -391,7 +391,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get or set.</param>
@@ -450,7 +450,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key of the element to remove.</param>
@@ -483,7 +483,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="item">The key/value pair to add to the dictionary.</param>
@@ -514,7 +514,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="item">The key and value pair to locate in the dictionary.</param>
@@ -544,8 +544,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;[]" />
-        <Parameter Name="arrayIndex" Type="System.Int32" />
+        <Parameter Name="array" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;[]" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="arrayIndex" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the dictionary.</param>
@@ -607,7 +607,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="item">The key of the element to remove.</param>
@@ -761,8 +761,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Object" RefType="out" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="value" Type="System.Object" RefType="out" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>

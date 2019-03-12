@@ -579,7 +579,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" Index="0" FrameworkAlternate="netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.Windows.Input.KeyboardFocusChangedEventArgs" /> that contains the event data.</param>

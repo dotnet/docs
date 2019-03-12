@@ -131,7 +131,7 @@
       <Parameters>
         <Parameter Name="dataGridViewCells" Type="System.Windows.Forms.DataGridViewCell[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

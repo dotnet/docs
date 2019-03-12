@@ -73,7 +73,7 @@
         <ReturnType>System.Windows.Markup.ValueSerializer</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="descriptor" Type="System.ComponentModel.PropertyDescriptor" />
+        <Parameter Name="descriptor" Type="System.ComponentModel.PropertyDescriptor" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="descriptor">The descriptor of the property being converted.</param>
@@ -103,7 +103,7 @@
         <ReturnType>System.Windows.Markup.ValueSerializer</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">The type of the value being converted.</param>

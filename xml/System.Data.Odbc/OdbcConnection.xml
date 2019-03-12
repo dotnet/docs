@@ -844,7 +844,7 @@ driver-defined-attribute-keyword ::= identifier
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="transaction" Type="System.EnterpriseServices.ITransaction" />
+        <Parameter Name="transaction" Type="System.EnterpriseServices.ITransaction" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="transaction">A reference to an existing <see cref="T:System.EnterpriseServices.ITransaction" /> in which to enlist.</param>
@@ -882,7 +882,7 @@ driver-defined-attribute-keyword ::= identifier
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="transaction" Type="System.Transactions.Transaction" />
+        <Parameter Name="transaction" Type="System.Transactions.Transaction" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="transaction">A reference to an existing <see cref="T:System.Transactions.Transaction" /> in which to enlist.</param>
@@ -956,7 +956,7 @@ driver-defined-attribute-keyword ::= identifier
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collectionName" Type="System.String" />
+        <Parameter Name="collectionName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="collectionName">Specifies the name of the schema to return.</param>
@@ -997,8 +997,8 @@ driver-defined-attribute-keyword ::= identifier
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collectionName" Type="System.String" />
-        <Parameter Name="restrictionValues" Type="System.String[]" />
+        <Parameter Name="collectionName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="restrictionValues" Type="System.String[]" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="collectionName">Specifies the name of the schema to return.</param>
@@ -1323,7 +1323,7 @@ driver-defined-attribute-keyword ::= identifier
         <ReturnType>System.Data.IDbTransaction</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isolevel" Type="System.Data.IsolationLevel" />
+        <Parameter Name="isolevel" Type="System.Data.IsolationLevel" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="isolevel">To be added.</param>

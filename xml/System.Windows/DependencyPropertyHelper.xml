@@ -78,8 +78,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementInTemplate" Type="System.Windows.DependencyObject" />
-        <Parameter Name="dependencyProperty" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="elementInTemplate" Type="System.Windows.DependencyObject" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dependencyProperty" Type="System.Windows.DependencyProperty" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="elementInTemplate">An element that belongs to a template instance.</param>

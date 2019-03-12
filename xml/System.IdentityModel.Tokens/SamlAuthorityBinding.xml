@@ -70,10 +70,12 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlAuthorityBinding(System::Xml::XmlQualifiedName ^ authorityKind, System::String ^ binding, System::String ^ location);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public SamlAuthorityBinding (System.Xml.XmlQualifiedName kind, string binding, string location);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlQualifiedName kind, string binding, string location) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorityBinding.#ctor(System.Xml.XmlQualifiedName,System.String,System.String)" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorityBinding.#ctor(System.Xml.XmlQualifiedName,System.String,System.String)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (kind As XmlQualifiedName, binding As String, location As String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlAuthorityBinding(System::Xml::XmlQualifiedName ^ kind, System::String ^ binding, System::String ^ location);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAuthorityBinding : System.Xml.XmlQualifiedName * string * string -&gt; System.IdentityModel.Tokens.SamlAuthorityBinding" Usage="new System.IdentityModel.Tokens.SamlAuthorityBinding (kind, binding, location)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAuthorityBinding : System.Xml.XmlQualifiedName * string * string -&gt; System.IdentityModel.Tokens.SamlAuthorityBinding" Usage="new System.IdentityModel.Tokens.SamlAuthorityBinding (authorityKind, binding, location)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorityBinding.#ctor(System.Xml.XmlQualifiedName,System.String,System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAuthorityBinding : System.Xml.XmlQualifiedName * string * string -&gt; System.IdentityModel.Tokens.SamlAuthorityBinding" Usage="new System.IdentityModel.Tokens.SamlAuthorityBinding (kind, binding, location)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -81,7 +83,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="authorityKind" Type="System.Xml.XmlQualifiedName" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="authorityKind" Type="System.Xml.XmlQualifiedName" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="kind" Type="System.Xml.XmlQualifiedName" Index="0" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="binding" Type="System.String" Index="1" />
         <Parameter Name="location" Type="System.String" Index="2" />

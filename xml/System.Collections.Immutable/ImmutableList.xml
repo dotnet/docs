@@ -117,7 +117,7 @@
       <Parameters>
         <Parameter Name="items" Type="T[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -663,7 +663,7 @@
         <TypeParameter Name="TSource" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableList&lt;TSource&gt;+Builder" Index="0" FrameworkAlternate="netcore-3.0" RefType="this" />
+        <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableList&lt;TSource&gt;+Builder" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TSource">To be added.</typeparam>

@@ -111,7 +111,7 @@
         <Parameter Name="type" Type="System.Type" />
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -155,7 +155,7 @@
         <Parameter Name="descriptor" Type="System.ComponentModel.MemberDescriptor" />
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -200,7 +200,7 @@
         <Parameter Name="member" Type="System.Reflection.MemberInfo" />
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -245,7 +245,7 @@
         <Parameter Name="memberName" Type="System.String" />
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -290,7 +290,7 @@
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
         <Parameter Name="attributes" Type="System.Attribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

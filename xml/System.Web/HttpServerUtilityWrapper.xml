@@ -50,7 +50,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="httpServerUtility" Type="System.Web.HttpServerUtility" />
+        <Parameter Name="httpServerUtility" Type="System.Web.HttpServerUtility" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="httpServerUtility">The object that this wrapper class provides access to.</param>
@@ -113,7 +113,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="progID" Type="System.String" />
+        <Parameter Name="progID" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="progID">The class or type of object to create an instance of.</param>
@@ -142,7 +142,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="type">A type that represents the object to create.</param>
@@ -171,7 +171,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="clsid" Type="System.String" />
+        <Parameter Name="clsid" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="clsid">The class identifier of the object to create an instance of.</param>
@@ -210,7 +210,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the handler to execute.</param>
@@ -249,8 +249,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="preserveForm" Type="System.Boolean" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="preserveForm" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the handler to execute.</param>
@@ -291,8 +291,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="writer" Type="System.IO.TextWriter" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="writer" Type="System.IO.TextWriter" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the handler to execute.</param>
@@ -339,9 +339,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="writer" Type="System.IO.TextWriter" />
-        <Parameter Name="preserveForm" Type="System.Boolean" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="writer" Type="System.IO.TextWriter" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="preserveForm" Type="System.Boolean" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the handler to execute.</param>
@@ -385,9 +385,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handler" Type="System.Web.IHttpHandler" />
-        <Parameter Name="writer" Type="System.IO.TextWriter" />
-        <Parameter Name="preserveForm" Type="System.Boolean" />
+        <Parameter Name="handler" Type="System.Web.IHttpHandler" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="writer" Type="System.IO.TextWriter" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="preserveForm" Type="System.Boolean" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="handler">The HTTP handler that implements the interface to transfer the current request to.</param>
@@ -455,7 +455,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="s">The HTML string to decode.</param>
@@ -484,8 +484,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
-        <Parameter Name="output" Type="System.IO.TextWriter" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="output" Type="System.IO.TextWriter" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="s">The HTML string to decode.</param>
@@ -530,7 +530,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="s">The string to encode.</param>
@@ -559,8 +559,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
-        <Parameter Name="output" Type="System.IO.TextWriter" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="output" Type="System.IO.TextWriter" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="s">The string to encode.</param>
@@ -622,7 +622,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The virtual path to get the physical path for.</param>
@@ -688,7 +688,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the page or handler to execute.</param>
@@ -716,8 +716,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="preserveForm" Type="System.Boolean" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="preserveForm" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the page or handler to execute.</param>
@@ -748,8 +748,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handler" Type="System.Web.IHttpHandler" />
-        <Parameter Name="preserveForm" Type="System.Boolean" />
+        <Parameter Name="handler" Type="System.Web.IHttpHandler" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="preserveForm" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="handler">The HTTP handler to transfer the current request to.</param>
@@ -789,7 +789,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the page or handler to execute.</param>
@@ -821,8 +821,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="preserveForm" Type="System.Boolean" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="preserveForm" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the page to execute.</param>
@@ -856,10 +856,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="preserveForm" Type="System.Boolean" />
-        <Parameter Name="method" Type="System.String" />
-        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="preserveForm" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="method" Type="System.String" Index="2" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" Index="3" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the page or handler to execute.</param>
@@ -894,11 +894,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="preserveForm" Type="System.Boolean" />
-        <Parameter Name="method" Type="System.String" />
-        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
-        <Parameter Name="preserveUser" Type="System.Boolean" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="preserveForm" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="method" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="preserveUser" Type="System.Boolean" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The path.</param>
@@ -945,7 +945,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="s">The string to decode.</param>
@@ -974,8 +974,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
-        <Parameter Name="output" Type="System.IO.TextWriter" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="output" Type="System.IO.TextWriter" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="s">The HTML string to decode.</param>
@@ -1020,7 +1020,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="s">The text to URL-encode.</param>
@@ -1049,8 +1049,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
-        <Parameter Name="output" Type="System.IO.TextWriter" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="output" Type="System.IO.TextWriter" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="s">The string to encode.</param>
@@ -1079,7 +1079,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="s">The string to URL-encode.</param>
@@ -1108,7 +1108,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="input" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">The URL string token to decode.</param>
@@ -1138,7 +1138,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.Byte[]" />
+        <Parameter Name="input" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="input">The byte array to encode.</param>

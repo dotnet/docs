@@ -539,7 +539,7 @@
         <Parameter Name="y" Type="System.Object" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-1.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -582,7 +582,7 @@
         <Parameter Name="y" Type="System.Object" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-1.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

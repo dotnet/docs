@@ -82,9 +82,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dependencies" Type="System.Web.Caching.CacheDependency[]">
+        <Parameter Name="dependencies" Type="System.Web.Caching.CacheDependency[]" Index="0" FrameworkAlternate="netframework-4.8">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -126,7 +126,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cacheKeys" Type="System.Collections.ArrayList" />
+        <Parameter Name="cacheKeys" Type="System.Collections.ArrayList" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="cacheKeys">A collection that contains the keys of the items that the cached response is dependent on.</param>
@@ -155,7 +155,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cacheKeys" Type="System.String[]" />
+        <Parameter Name="cacheKeys" Type="System.String[]" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="cacheKeys">An array that contains the keys of the items that the cached response is dependent on.</param>
@@ -184,7 +184,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cacheKey" Type="System.String" />
+        <Parameter Name="cacheKey" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="cacheKey">The key of the item that the cached response is dependent on.</param>
@@ -222,7 +222,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filenames" Type="System.Collections.ArrayList" />
+        <Parameter Name="filenames" Type="System.Collections.ArrayList" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="filenames">The names of the files to add.</param>
@@ -251,7 +251,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filenames" Type="System.String[]" />
+        <Parameter Name="filenames" Type="System.String[]" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="filenames">An array of file names to add.</param>
@@ -280,7 +280,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="filename" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="filename">The name of the file to add.</param>
@@ -309,8 +309,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The name of the HTTP header to add <paramref name="value" /> to.</param>
@@ -339,7 +339,7 @@
         <ReturnType>System.Web.ISubscriptionToken</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callback" Type="System.Action&lt;System.Web.HttpContextBase&gt;" />
+        <Parameter Name="callback" Type="System.Action&lt;System.Web.HttpContextBase&gt;" Index="0" FrameworkAlternate="netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="callback">The callback method.</param>
@@ -385,7 +385,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cookie" Type="System.Web.HttpCookie" />
+        <Parameter Name="cookie" Type="System.Web.HttpCookie" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="cookie">The cookie to add to the response.</param>
@@ -414,8 +414,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The name of the HTTP header to add to the current response.</param>
@@ -445,7 +445,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="param" Type="System.String" />
+        <Parameter Name="param" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="param">The text to add to the log file.</param>
@@ -474,7 +474,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="virtualPath" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path of a resource.</param>
@@ -503,8 +503,8 @@
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callback" Type="System.AsyncCallback" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="callback">The callback object.</param>
@@ -534,7 +534,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="buffer">The binary characters to write to the current response.</param>
@@ -997,7 +997,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="asyncResult">The asynchronous result object.</param>
@@ -1337,7 +1337,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The string to add to the <see langword="PICS-Label" /> header.</param>
@@ -1374,7 +1374,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the push request. It should be the virtual path of the relative resource that the server wants to push to the client.</param>
@@ -1408,9 +1408,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="method" Type="System.String" />
-        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="method" Type="System.String" Index="1" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" Index="2" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The URL of the push request. It should be the virtual path of the relative resource that the server wants to push to the client.</param>
@@ -1456,7 +1456,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="url" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="url">The target location.</param>
@@ -1485,8 +1485,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String" />
-        <Parameter Name="endResponse" Type="System.Boolean" />
+        <Parameter Name="url" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="endResponse" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="url">The target location.</param>
@@ -1551,7 +1551,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="url" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="url">The location to which the request is redirected.</param>
@@ -1588,8 +1588,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String" />
-        <Parameter Name="endResponse" Type="System.Boolean" />
+        <Parameter Name="url" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="endResponse" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="url">The location to which the request is redirected.</param>
@@ -1635,7 +1635,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeValues" Type="System.Object" />
+        <Parameter Name="routeValues" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeValues">The route parameter values.</param>
@@ -1670,7 +1670,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -1705,7 +1705,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeValues">The route parameter values.</param>
@@ -1740,8 +1740,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
-        <Parameter Name="routeValues" Type="System.Object" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="routeValues" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -1777,8 +1777,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
-        <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -1823,7 +1823,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeValues" Type="System.Object" />
+        <Parameter Name="routeValues" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeValues">The route parameter values.</param>
@@ -1858,7 +1858,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -1893,7 +1893,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeValues">The route parameter values.</param>
@@ -1928,8 +1928,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
-        <Parameter Name="routeValues" Type="System.Object" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="routeValues" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -1965,8 +1965,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="routeName" Type="System.String" />
-        <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="routeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="routeName">The name of the route.</param>
@@ -2012,7 +2012,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The virtual absolute path to the items to be removed from the cache.</param>
@@ -2040,8 +2040,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="providerName" Type="System.String" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="providerName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="path">The virtual absolute path of the items that are removed from the cache.</param>
@@ -2078,7 +2078,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cookie" Type="System.Web.HttpCookie" />
+        <Parameter Name="cookie" Type="System.Web.HttpCookie" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="cookie">The cookie in the collection to be updated.</param>
@@ -2337,7 +2337,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="filename" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="filename">The name of the file to write to the HTTP output stream.</param>
@@ -2366,9 +2366,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filename" Type="System.String" />
-        <Parameter Name="offset" Type="System.Int64" />
-        <Parameter Name="length" Type="System.Int64" />
+        <Parameter Name="filename" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="offset" Type="System.Int64" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="length" Type="System.Int64" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="filename">The name of the file to write to the HTTP output stream.</param>
@@ -2435,7 +2435,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ch" Type="System.Char" />
+        <Parameter Name="ch" Type="System.Char" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="ch">The character to write to the HTTP output stream.</param>
@@ -2464,7 +2464,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="obj">The object to write to the HTTP output stream.</param>
@@ -2493,7 +2493,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="s">The string to write to the HTTP output stream.</param>
@@ -2522,9 +2522,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Char[]" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="buffer" Type="System.Char[]" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="buffer">The character array to write.</param>
@@ -2564,7 +2564,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="filename" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="filename">The name of the file to write to the HTTP output stream.</param>
@@ -2593,8 +2593,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filename" Type="System.String" />
-        <Parameter Name="readIntoMemory" Type="System.Boolean" />
+        <Parameter Name="filename" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="readIntoMemory" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="filename">The name of the file to write to the current response.</param>
@@ -2625,9 +2625,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fileHandle" Type="System.IntPtr" />
-        <Parameter Name="offset" Type="System.Int64" />
-        <Parameter Name="size" Type="System.Int64" />
+        <Parameter Name="fileHandle" Type="System.IntPtr" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="offset" Type="System.Int64" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="size" Type="System.Int64" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileHandle">The file handle of the file to write to the HTTP output stream.</param>
@@ -2658,9 +2658,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filename" Type="System.String" />
-        <Parameter Name="offset" Type="System.Int64" />
-        <Parameter Name="size" Type="System.Int64" />
+        <Parameter Name="filename" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="offset" Type="System.Int64" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="size" Type="System.Int64" Index="2" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="filename">The name of the file to write to the HTTP output stream.</param>
@@ -2691,7 +2691,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callback" Type="System.Web.HttpResponseSubstitutionCallback" />
+        <Parameter Name="callback" Type="System.Web.HttpResponseSubstitutionCallback" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="callback">The method, user control, or object to substitute.</param>

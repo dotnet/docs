@@ -139,7 +139,7 @@
         <ReturnType>System.Web.HttpStaticObjectsCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.IO.BinaryReader" />
+        <Parameter Name="reader" Type="System.IO.BinaryReader" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="reader">The <see cref="T:System.IO.BinaryReader" /> used to read the serialized collection from a stream or encoded string.</param>
@@ -373,7 +373,7 @@ The <xref:System.Web.HttpStaticObjectsCollection.Deserialize%2A> method is used 
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.IO.BinaryWriter" />
+        <Parameter Name="writer" Type="System.IO.BinaryWriter" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> used to write the serialized collection to a stream or encoded string.</param>

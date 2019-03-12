@@ -177,7 +177,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="System.String[]" />
+        <Parameter Name="parameters" Type="System.String[]" Index="0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="parameters">An array of values which contain the HTTP <see langword="GET" /> or <see langword="POST" /> parameters for varying the cache.</param>

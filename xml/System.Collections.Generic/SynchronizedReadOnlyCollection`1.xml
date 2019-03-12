@@ -91,10 +91,12 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ syncRoot);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object sync_root);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object sync_root) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object)" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sync_root As Object)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ sync_root);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; sync_root" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; syncRoot" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; sync_root" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,7 +105,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="sync_root" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -136,9 +138,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="sync_root" Type="System.Object" />
-        <Parameter Name="list" Type="System.Collections.Generic.List&lt;T&gt;" />
-        <Parameter Name="make_copy" Type="System.Boolean" />
+        <Parameter Name="sync_root" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="list" Type="System.Collections.Generic.List&lt;T&gt;" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="make_copy" Type="System.Boolean" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="sync_root">To be added.</param>
@@ -155,10 +157,12 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ syncRoot, System::Collections::Generic::IEnumerable&lt;T&gt; ^ list);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object sync_root, System.Collections.Generic.IEnumerable&lt;T&gt; list);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object sync_root, class System.Collections.Generic.IEnumerable`1&lt;!T&gt; list) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,System.Collections.Generic.IEnumerable{`0})" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sync_root As Object, list As IEnumerable(Of T))" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ sync_root, System::Collections::Generic::IEnumerable&lt;T&gt; ^ list);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj * seq&lt;'T&gt; -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; (sync_root, list)" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj * seq&lt;'T&gt; -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; (syncRoot, list)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,System.Collections.Generic.IEnumerable{`0})" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj * seq&lt;'T&gt; -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; (sync_root, list)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,7 +171,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="sync_root" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="list" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" Index="1" />
       </Parameters>
@@ -188,10 +192,12 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ syncRoot, ... cli::array &lt;T&gt; ^ list);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object sync_root, params T[] list);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object sync_root, !T[] list) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,`0[])" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,`0[])" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sync_root As Object, ParamArray list As T())" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ sync_root, ... cli::array &lt;T&gt; ^ list);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj * 'T[] -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; (sync_root, list)" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj * 'T[] -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; (syncRoot, list)" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,`0[])" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj * 'T[] -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; (sync_root, list)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,11 +206,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="sync_root" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="list" Type="T[]" Index="1">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

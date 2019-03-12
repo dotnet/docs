@@ -61,7 +61,7 @@
         <TypeParameter Name="TChannel" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the factory builds.</typeparam>
@@ -95,7 +95,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the listener is built to accept.</typeparam>
@@ -124,7 +124,7 @@
         <TypeParameter Name="TChannel" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the channel factory produces.</typeparam>
@@ -159,7 +159,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="TChannel">The type of channel the listener accepts.</typeparam>
@@ -241,7 +241,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the property to get.</typeparam>
@@ -417,8 +417,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="importer" Type="System.ServiceModel.Description.MetadataImporter" />
-        <Parameter Name="policyContext" Type="System.ServiceModel.Description.PolicyConversionContext" />
+        <Parameter Name="importer" Type="System.ServiceModel.Description.MetadataImporter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="policyContext" Type="System.ServiceModel.Description.PolicyConversionContext" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="importer">The <see cref="T:System.ServiceModel.Description.MetadataImporter" /> object in use.</param>
@@ -445,8 +445,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.MetadataExporter" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.MetadataExporter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="exporter">The object that exports the metadata information.</param>
@@ -473,8 +473,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" />
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="exporter">The object that exports the contract information.</param>
@@ -501,8 +501,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="exporter">The object that exports the contract information.</param>

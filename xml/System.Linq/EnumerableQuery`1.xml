@@ -88,7 +88,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="enumerable" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="enumerable" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="enumerable">A collection to associate with the new instance.</param>
@@ -124,7 +124,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="expression">An expression tree to associate with the new instance.</param>
@@ -342,7 +342,7 @@
         <ReturnType>System.Linq.IQueryable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="expression">An expression tree that represents an <see cref="T:System.Linq.IQueryable" /> collection of data.</param>
@@ -382,7 +382,7 @@
         <TypeParameter Name="S" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="S">The type of the data in the collection that <paramref name="expression" /> represents.</typeparam>
@@ -420,7 +420,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="expression">An expression tree to execute.</param>
@@ -460,7 +460,7 @@
         <TypeParameter Name="S" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="S">The type of the data in the collection that <paramref name="expression" /> represents.</typeparam>

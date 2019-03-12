@@ -2152,7 +2152,7 @@ These data point properties are:
         <Parameter Name="ignoreTransparent" Type="System.Boolean" />
         <Parameter Name="requestedElement" Type="System.Windows.Forms.DataVisualization.Charting.ChartElementType[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-4.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

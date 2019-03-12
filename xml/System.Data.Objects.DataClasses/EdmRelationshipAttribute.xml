@@ -112,15 +112,15 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="relationshipNamespaceName" Type="System.String" />
-        <Parameter Name="relationshipName" Type="System.String" />
-        <Parameter Name="role1Name" Type="System.String" />
-        <Parameter Name="role1Multiplicity" Type="System.Data.Metadata.Edm.RelationshipMultiplicity" />
-        <Parameter Name="role1Type" Type="System.Type" />
-        <Parameter Name="role2Name" Type="System.String" />
-        <Parameter Name="role2Multiplicity" Type="System.Data.Metadata.Edm.RelationshipMultiplicity" />
-        <Parameter Name="role2Type" Type="System.Type" />
-        <Parameter Name="isForeignKey" Type="System.Boolean" />
+        <Parameter Name="relationshipNamespaceName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="relationshipName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="role1Name" Type="System.String" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="role1Multiplicity" Type="System.Data.Metadata.Edm.RelationshipMultiplicity" Index="3" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="role1Type" Type="System.Type" Index="4" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="role2Name" Type="System.String" Index="5" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="role2Multiplicity" Type="System.Data.Metadata.Edm.RelationshipMultiplicity" Index="6" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="role2Type" Type="System.Type" Index="7" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="isForeignKey" Type="System.Boolean" Index="8" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="relationshipNamespaceName">The name of the namespace for the association in which this entity participates.</param>

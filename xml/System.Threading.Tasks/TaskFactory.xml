@@ -4149,7 +4149,7 @@
 ## Remarks  
  Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a task by using one of its constructors, and then calling the <xref:System.Threading.Tasks.Task.Start%2A?displayProperty=nameWithType> method to schedule the task for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%28System.Action%29?displayProperty=nameWithType> method as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%28System.Action%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> does. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%28System.Action%29?displayProperty=nameWithType> method as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%28System.Action%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> does. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
    
   
@@ -4211,7 +4211,7 @@
 ## Remarks  
  Calling `StartNew` is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> method as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> does. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> method as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> does. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
    
   
@@ -4274,7 +4274,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -4330,7 +4330,7 @@
 ## Remarks  
  Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a <xref:System.Threading.Tasks.Task> using one of its constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
    
   
@@ -4396,7 +4396,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
    
   
@@ -4464,7 +4464,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -4523,7 +4523,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -4589,7 +4589,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -4652,7 +4652,7 @@
 ## Remarks  
  Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can call the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=nameWithType> method as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task%601> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%29> does. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can call the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=nameWithType> method as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task%601> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%29> does. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
    
   
@@ -4719,7 +4719,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -4777,7 +4777,7 @@
 ## Remarks  
  Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> method as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task%601> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29> does. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> method as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task%601> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29> does. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
    
   
@@ -4845,7 +4845,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -4906,7 +4906,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -4968,7 +4968,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -5031,7 +5031,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -5101,7 +5101,7 @@
 ## Remarks  
  Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>

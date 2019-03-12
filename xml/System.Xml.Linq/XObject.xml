@@ -83,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Note that annotations are not part of the infoset; they are not persisted, or displayed by <xref:System.Xml.Linq.XNode.ToString%2A>. Also, if you import an XML Namespace into your VB project and call AddAnnotation with the SaveOptions.OmitDuplicateNamespaces enumeration value, then only one element will contain the XML Namespace attribute instead of every element. For more information, see [Removing duplicate namespaces in XML Literals](https://blogs.msdn.com/b/vbteam/archive/2010/06/09/removing-duplicate-namespaces-in-xml-literals-shyam-namboodiripad.aspx).  
+ Note that annotations are not part of the infoset; they are not persisted, or displayed by <xref:System.Xml.Linq.XNode.ToString%2A>. Also, if you import an XML Namespace into your VB project and call AddAnnotation with the SaveOptions.OmitDuplicateNamespaces enumeration value, then only one element will contain the XML Namespace attribute instead of every element. For more information, see [Removing duplicate namespaces in XML Literals](https://devblogs.microsoft.com/vbteam/removing-duplicate-namespaces-in-xml-literals-shyam-namboodiripad/).  
   
    
   

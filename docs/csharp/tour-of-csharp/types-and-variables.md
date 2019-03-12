@@ -35,7 +35,7 @@ The following provides an overview of C#’s type system.
     - Interface types
         * User-defined types of the form `interface I {...}`
     - Array types
-    	* Single- and multi-dimensional, for example, `int[]` and `int[,]`
+        * Single- and multi-dimensional, for example, `int[]` and `int[,]`
     - Delegate types
         * User-defined types of the form `delegate int D(...)`
 

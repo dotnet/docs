@@ -54,7 +54,7 @@ Tasks illustrated in this walkthrough include:
 
 When you are finished, your custom control will look something like the following:
 
-![A possible MarqueeControl arrangement](./media/demomarqueecontrol.gif "DemoMarqueeControl")
+![A possible MarqueeControl arrangement](./media/creating-a-wf-control-design-time-features/demo-marquee-control.gif)
 
 For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
 

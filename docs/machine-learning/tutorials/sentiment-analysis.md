@@ -211,7 +211,7 @@ The `BuildAndTrainModel` method executes the following tasks:
 * Predicts sentiment based on test data.
 * Returns the model.
 
-Create the `Train` method, just after the `Main` method, using the following code:
+Create the `BuildAndTrainModel` method, just after the `Main` method, using the following code:
 
 ```csharp
 public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView splitTrainSet)

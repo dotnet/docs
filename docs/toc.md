@@ -1210,6 +1210,7 @@
 #### [One prediction at a time with PredictionEngine](machine-learning/how-to-guides/single-predict-model-ml-net.md)
 #### [Operationalize a trained model](machine-learning/how-to-guides/consuming-model-ml-net.md)
 #### [Serve Model Azure Functions](machine-learning/how-to-guides/serve-model-serverless-azure-functions-ml-net.md)
+#### [Serve Model in Web API](machine-learning/how-to-guides/serve-model-web-api-ml-net.md)
 ### Infer.NET
 #### [Probabilistic programming with Infer.NET](machine-learning/how-to-guides/matchup-app-infer-net.md)
 ## Reference

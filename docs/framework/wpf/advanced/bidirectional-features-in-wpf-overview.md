@@ -59,7 +59,7 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The following graphic illustrates this.   
   
- ![Graphic that illustrates using the Run element embedded in a Span element.](./media/bidirectional-features-in-wpf-overview/embedded-span-element.png)  
+ ![Graphic illustrates the Run element embedded in a Span element.](./media/bidirectional-features-in-wpf-overview/embedded-span-element.png)  
   
  The following example demonstrates using <xref:System.Windows.Documents.Run> and <xref:System.Windows.Documents.Span> elements in documents.  
   
@@ -125,10 +125,8 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
  Unlike other [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements, an <xref:System.Windows.Controls.Image> does not inherit the <xref:System.Windows.FlowDirection> from the container. However, if the <xref:System.Windows.FlowDirection> is set explicitly to <xref:System.Windows.FlowDirection.RightToLeft>, an <xref:System.Windows.Controls.Image> is displayed flipped horizontally. This is implemented as a convenient feature for developers of bidirectional content; because in some cases, horizontally flipping the image produces the desired effect.  
   
  The following graphic shows a flipped <xref:System.Windows.Controls.Image>.  
-  
- **Graphic That Illustrates a Flipped Image**  
-  
- ![XamlPad screen shot](./media/image.PNG "Image")  
+    
+ ![Graphic that illustrates a flipped image.](./media/bidirectional-features-in-wpf-overview/flipped-image-example.png)  
   
  The following example demonstrates that the <xref:System.Windows.Controls.Image> fails to inherit the <xref:System.Windows.FlowDirection> from the <xref:System.Windows.Controls.StackPanel> that contains it. **Note** You must have a file named **ms_logo.jpg** on your C:\ drive to run this example.  
   

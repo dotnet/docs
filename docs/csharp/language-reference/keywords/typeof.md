@@ -29,7 +29,7 @@ System.Type type = i.GetType();
 
 The `typeof` operator cannot be overloaded.
 
-The `typeof` operator can also be used on open generic types. Types with more than one type parameter must have the appropriate number of commas in the specification. For example:
+The `typeof` operator can also be used on open generic types. Types with more than one type parameter must have the appropriate number of commas in the specification. For example, the <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWIthType> has two type arguments, so you use one comma:
 
 ```csharp
 Type t = typeof(System.Collection.Generic.Dictionary<,>);

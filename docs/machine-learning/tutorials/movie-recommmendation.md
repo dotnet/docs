@@ -121,11 +121,11 @@ using Microsoft.ML.Data;
 
 Specify an input data class named `MovieRating`. Use the [LoadColumn attribute](xref:Microsoft.ML.Data.LoadColumnAttribute.%23ctor%28System.Int32%29) to specify which columns (by column index) in the dataset should be loaded. The `userId` and `movieId` columns are your `Features` (the inputs you will give the model to predict the `Label`), and the rating column is the `Label` that you will predict (the output of the model).
 
-Remove the existing class definition and add the following code:
+Create the `MovieRating` class by removing the existing class definition and adding the following code in `MovieRatingData.cs`:
 
 [!code-csharp[MovieRatingClass](../../../samples/machine-learning/tutorials/MovieRecommendation/MovieRatingData.cs#MovieRatingClass "Add the Movie Rating class")]
 
-Another class, `MovieRatingPrediction`, will represent predicted results. Add the following class in *MovieRatingData.cs* after the `MovieRating` class:
+Create another class, `MovieRatingPrediction`, to represent predicted results by adding the following code after the `MovieRating` class in *MovieRatingData.cs*:
 
 [!code-csharp[PredictionClass](../../../samples/machine-learning/tutorials/MovieRecommendation/MovieRatingData.cs#PredictionClass "Add the Movie Prediction Class")]
 

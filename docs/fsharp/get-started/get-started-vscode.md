@@ -9,6 +9,9 @@ You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the
 
 To begin, ensure that you have [F# and the Ionide plugin correctly installed](install-fsharp.md#install-f-with-visual-studio-code).
 
+> [!NOTE]
+> Ionide will generate .NET Framework F# projects, not dotnet core, which can have cross-platform compatibility issues. If you are running on **Linux** or **OSX**, a simpler way to get started is to use the (command line tools)[https://docs.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-command-line].
+
 ## Creating your first project with Ionide
 
 To create a new F# project, open Visual Studio Code in a new folder (you can name it whatever you like).

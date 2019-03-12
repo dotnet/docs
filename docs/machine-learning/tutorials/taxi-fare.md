@@ -87,7 +87,7 @@ Remove the existing class definition and add the following code, which has two c
 
 [!code-csharp[DefineTaxiTrip](../../../samples/machine-learning/tutorials/TaxiFarePrediction/TaxiTrip.cs#2 "Define the taxi trip and fare predictions classes")]
 
-`TaxiTrip` is the input data class and has definitions for each of the data set columns. Use the <xref:Microsoft.ML.Data.ColumnAttribute> attribute to specify the indices of the source columns in the data set.
+`TaxiTrip` is the input data class and has definitions for each of the data set columns. Use the <xref:Microsoft.ML.Data.LoadColumnAttribute> attribute to specify the indices of the source columns in the data set.
 
 The `TaxiTripFarePrediction` class represents predicted results. It has a single float field, `FareAmount`, with a `Score` <xref:Microsoft.ML.Data.ColumnNameAttribute> attribute applied. In case of the regression task the **Score** column contains predicted label values.
 
@@ -100,12 +100,11 @@ Add the following additional `using` statements to the top of the *Program.cs* f
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#1 "Add necessary usings")]
 
-You need to create three fields to hold the paths to the files with data sets and the file to save the model, and a global variable for the `TextLoader`:
+You need to create three fields to hold the paths to the files with data sets and the file to save the model:
 
 * `_trainDataPath` contains the path to the file with the data set used to train the model.
 * `_testDataPath` contains the path to the file with the data set used to evaluate the model.
 * `_modelPath` contains the path to the file where the trained model is stored.
-* `_textLoader` is the <xref:Microsoft.ML.Data.TextLoader> used to load and transform the datasets.
 
 Add the following code right above the `Main` method to specify those paths and for the `_textLoader` variable:
 
@@ -118,14 +117,6 @@ When building a model with ML.NET you start by creating an ML Context. This is c
 Create a variable called `mlContext` and initialize it with a new instance of `MLContext`.  Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
 
 [!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#3 "Create the ML Context")]
-
-Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it. When you create a `TextLoader`, you pass in the context needed and the <xref:Microsoft.ML.Data.TextLoader.Arguments> class which enables customization. Specify the data schema by passing an array of <xref:Microsoft.ML.Data.TextLoader.Column> objects to the `TextLoader` containing all the column names and their types. We defined the data schema previously when we created our `TaxiTrip` class.
-
-The `TextLoader` class returns a fully initialized <xref:Microsoft.ML.Data.TextLoader>  
-
-To initialize the `_textLoader` global variable in order to reuse it for the needed datasets, add the following code after the  `mlContext` initialization:
-
-[!code-csharp[initTextLoader](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#4 "Initialize the TextLoader")]
 
 Add the following as the next line of code in the `Main` method to call the `Train` method:
 

@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a GitHub issue multiclass classification scenario
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 02/20/2019
+ms.date: 03/12/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to classify GitHGub issues to assign them to a given area.
@@ -201,7 +201,7 @@ You defined the data schema previously when you created the `GitHubIssue` class.
 * the third column `Title` (GitHub issue title) is the first [feature](../resources/glossary.md##feature)  used for predicting the `Area`
 * the fourth column  `Description` is the second feature used for predicting the `Area`
 
-The second part of the line  (`.Read(_trainDataPath)`) uses <xref:Microsoft.ML.Data.TextLoader.Read%2A> method to load the training text file using `_trainDataPath` into the `IDataView` (`_trainingDataView`) global variable.  
+The second part of the line  (`.Load(_trainDataPath)`) uses <xref:Microsoft.ML.Data.TextLoader.Load%2A> method to load the training text file using `_trainDataPath` into the `IDataView` (`_trainingDataView`) global variable.  
 
 To initialize and load the `_trainingDataView` global variable in order to use it for the pipeline, add the following code after the  `mlContext` initialization:
 
@@ -220,7 +220,7 @@ The `ProcessData` method executes the following tasks:
 Create the `ProcessData` method, just after the `Main` method, using the following code:
 
 ```csharp
-public static EstimatorChain<ITransformer> ProcessData()
+public static EstimatorChain<ColumnConcatenatingTransformer> ProcessData()
 {
 
 }
@@ -279,7 +279,7 @@ The `BuildAndTrainModel` method executes the following tasks:
 Create the `BuildAndTrainModel` method, just after the `Main` method, using the following code:
 
 ```csharp
-public static EstimatorChain<KeyToValueMappingTransformer> BuildAndTrainModel(IDataView trainingDataView, EstimatorChain<ITransformer> pipeline)
+public static EstimatorChain<KeyToValueMappingTransformer> BuildAndTrainModel(IDataView trainingDataView, EstimatorChain<ColumnConcatenatingTransformer> pipeline)
 {
 
 }

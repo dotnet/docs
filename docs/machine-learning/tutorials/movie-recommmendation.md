@@ -200,20 +200,7 @@ Here you are defining the data transformations. Since `userId` and `movieId` rep
 
 Add the following as the next line of code in the `BuildAndTrainModel()` method:
 
-<!--[!code-csharp[TrainingAlgorithm](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#TrainingAlgorithm "Add the training algorithm with options")]-->
-
-```csharp
-var options = new MatrixFactorizationTrainer.Options
-{
-    MatrixColumnIndexColumnName = "userIdEncoded",
-    MatrixRowIndexColumnName = "movieIdEncoded",
-    LabelColumnName = "Label",
-    NumIterations = 20,
-    K = 100
-};
-
-est = est.Append(mlcontext.Recommendation().Trainers.MatrixFactorization(options));
-```
+[!code-csharp[AddAlgorithm](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#AddAlgorithm "Add the training algorithm with options")]-->
 
 Here you choose the [MatrixFactorizationTrainer](xref:Microsoft.ML.RecommendationCatalog.RecommendationTrainers.MatrixFactorization%28Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options%29) as your training algorithm with various set options and append it to the data transformation definitions from the previous step.
 
@@ -242,17 +229,9 @@ The `Matrix Factorization` trainer has several [Options](xref:Microsoft.ML.Train
 
 For more information on hyperparameters, see the [Improve your model](#improve-your-model) step below.
 
-
 Add the following as the next line of code in the `BuildAndTrainModel()` method:
 
-<!--[!code-csharp[FitModel](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#FitModel "Call the Fit method and return back the trained model")]-->
-
-```csharp
-Console.WriteLine("=============== Training the model ===============");
-model = est.Fit(trainingDataView);
-
-return model;
-```
+[!code-csharp[FitModel](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#FitModel "Call the Fit method and return back the trained model")]
 
 The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.Data.DataView.IDataView,Microsoft.Data.DataView.IDataView%29) method trains your model with the provided training dataset. Technically, it executes the `Estimator` definitions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
 
@@ -273,11 +252,21 @@ public static void EvaluateModel(MLContext mlcontext, IDataView testDataView, IT
 }
 ```
 
-Define the method by adding the following code to `EvaluateModel()`:
+Start to define the method by adding the following code to `EvaluateModel()`:
 
-[!code-csharp[EvaluateModel](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#EvaluateModel "Evaluate the model and print metrics")]
+[!code-csharp[Transform](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#Transform "Transform the test data")]
 
-The [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method makes predictions for multiple provided input rows of a test dataset. Once you have the prediction set, you call the [Evaluate()](xref:Microsoft.ML.RecommendationCatalog.Evaluate%2A) method to assess the model, which compares the predicted values with the actual `Labels` in the test dataset and returns metrics on how the model is performing.
+The [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method makes predictions for multiple provided input rows of a test dataset.
+
+Add the following as the next line of code in the `EvaluateModel()` method:
+
+[!code-csharp[Evaluate](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#Evaluate "Evaluate the model using predictions from the test data")]
+
+Once you have the prediction set, you call the [Evaluate()](xref:Microsoft.ML.RecommendationCatalog.Evaluate%2A) method to assess the model, which compares the predicted values with the actual `Labels` in the test dataset and returns metrics on how the model is performing.
+
+Add the following as the next line of code in the `EvaluateModel()` method:
+
+[!code-csharp[PrintMetrics](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#PrintMetrics "Print the evaluation metrics")]
 
 The print statements display your evaluation metrics in the console, which should look similar to the following:
 
@@ -314,7 +303,6 @@ The `root of mean squared error` (RMS or RMSE) is frequently used to measure the
 Add the following as the next line of code in the `Main()` method to call your `EvaluateModel()` method:
 
 [!code-csharp[EvaluateModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#EvaluateModelMain "Add EvaluateModel method in Main")]
-
 
 ## Use your model
 

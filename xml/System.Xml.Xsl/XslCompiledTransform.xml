@@ -584,27 +584,8 @@ xslt.Load(typeof(bookOrders));
 > [!NOTE]
 >  The "Transform" assembly used in this example was built using the xsltc.exe utility. For detailed information on using this command line tool, see [How to: Perform an XSLT Transformation by Using an Assembly](~/docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md).  
   
- The code example above uses the following transformation:  
-  
-```  
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
-  xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
-  xmlns:user="urn:my-scripts">  
-  <msxsl:script language="C#" implements-prefix="user">  
-    <![CDATA[  
-  public double modifyPrice(double price){  
-    price*=0.9;  
-    return price;  
-  }  
-  ]]]><![CDATA[]>  
-  </msxsl:script>  
-  <xsl:template match="Root">  
-    <Root xmlns="">  
-      <Price><xsl:value-of select="user:modifyPrice(Price)"/></Price>  
-    </Root>  
-  </xsl:template>  
-</xsl:stylesheet>  
-```  
+ The previous code example uses the following transformation:  
+ [!code-xml[XsltDynamicMethodLoad-xslt](~/samples/snippets/csharp/VS_Snippets_Data/XsltDynamicMethodLoad/CS/Transform.xslt)]
   
  ]]></format>
         </remarks>

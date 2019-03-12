@@ -84,11 +84,11 @@ Authorization is the process of determining which entities have permission to ch
   
  The following figure shows an example of three sets of claims where one set of claims has, as its issuer, another set of claims, which in turn has the System claim set as its issuer. Therefore, sets of claims form a hierarchy that may be arbitrarily deep.  
   
- ![Managing claims and authorization](./media/managing-claims-and-authorization-with-the-identity-model/claims-hierarchy.gif "Sets of claims within the hierarchy")  
+ ![Sets of claims within the hierarchy](./media/managing-claims-and-authorization-with-the-identity-model/claims-sets-hierarchy.gif)  
   
  Multiple sets of claims may have the same issuing claim set, as illustrated in the following figure.  
   
- ![Managing claims and authorization](./media/managing-claims-and-authorization-with-the-identity-model/multiple-sets-of-claims.gif "Multiple sets of claims with the same issuing claim set")  
+ ![Multiple sets of claims with the same issuing claim set](./media/managing-claims-and-authorization-with-the-identity-model/multiple-claim-sets.gif "Multiple sets of claims with the same issuing claim set")  
   
  With the exception of a claim set that is its own issuer, the Identity Model does not provide any support for claim sets to form a loop. Thus a situation where claim set A is issued by claim set B, which is itself issued by claim set A, can never arise. Also, the Identity Model does not provide any support for claim sets to have multiple issuers. If two or more issuers must issue a given set of claims, then you must use multiple claim sets, each containing the same claims, but having different issuers.  
   

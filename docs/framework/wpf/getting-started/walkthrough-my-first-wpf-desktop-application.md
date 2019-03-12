@@ -56,7 +56,7 @@ The first step is to create the application infrastructure, which includes an ap
 
    3. Select the **WPF App (.NET Framework)** template. Enter the name **`ExpenseIt`** and then select **OK**.
 
-      ![New Project dialog with WPF app selected](./media/new-project-dialog.png)
+      ![New Project dialog with WPF app selected](./media/walkthrough-my-first-wpf-desktop-application/new-project-dialog-box.png)
 
       Visual Studio creates the project and opens the designer for the default application window named **MainWindow.xaml**.
 

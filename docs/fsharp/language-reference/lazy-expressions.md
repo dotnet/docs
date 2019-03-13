@@ -1,7 +1,7 @@
 ---
 title: Lazy Expressions
 description: Learn how F# lazy expressions can improve the performance of your apps and libraries.
-ms.date: 05/16/2016
+ms.date: 03/13/2019
 ---
 # Lazy Expressions
 

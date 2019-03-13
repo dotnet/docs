@@ -19,7 +19,7 @@ You can use a <xref:System.Drawing.StringFormat> object to specify that text be 
   
  The following illustration shows the vertical text: 
   
- ![Graphic that shows verticle font text.](./media/how-to-create-verticle-text/verticle-font-text-graphic.png)  
+ ![Graphic that shows vertical font text.](./media/how-to-create-vertical-text/vertical-font-text-graphic.png)  
   
  [!code-csharp[System.Drawing.FontsAndText#31](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.FontsAndText/CS/Class1.cs#31)]
  [!code-vb[System.Drawing.FontsAndText#31](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#31)]  

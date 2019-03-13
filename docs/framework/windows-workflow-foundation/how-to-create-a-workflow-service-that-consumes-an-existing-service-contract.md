@@ -51,7 +51,7 @@ ms.assetid: 11d11b59-acc4-48bf-8e4b-e97b516aa0a9
   
 4.  In **Solution Explorer**, open Service1.xamlx. The workflow service will appear in the designer.  
   
-5.  Select the **Sequence** activity. In the Properties window, click the **…** button in the **ImplementedContract** property. In the **Type Collection Editor** window that appears, click the **Type** dropdown, and select the **Browse for Types…** entry. In the **Browse and Select a .Net Type** dialog, under **\<Current Project>**, open all sub-nodes and select **IBookService**. Click **OK**. In the **Type Collection Editor** dialog, click **OK**.  
+5.  Select the **Sequence** activity. In the Properties window, click the **…** button in the **ImplementedContract** property. In the **Type Collection Editor** window that appears, click the **Type** dropdown, and select the **Browse for Types…** entry. In the **Browse and Select a .NET Type** dialog, under **\<Current Project>**, open all sub-nodes and select **IBookService**. Click **OK**. In the **Type Collection Editor** dialog, click **OK**.  
   
 6.  Select and delete the **ReceiveRequest** and **SendResponse** activities.  
   

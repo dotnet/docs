@@ -89,7 +89,7 @@ protected override void OnModelItemChanged(object newItem)
  Using the Items collection is similar to using the Services collection, except that <xref:System.Activities.Presentation.ContextItemManager.SetValue%2A> is used instead of Publish. This collection is more appropriate for sharing simple data between the designers and the host, rather than complex functionality.  
   
 ## EditingContext host items and services  
- The .Net Framework provides a number of built-in items and services accessed through the editing context.  
+ The .NET Framework provides a number of built-in items and services accessed through the editing context.  
   
  Items:  
   
@@ -121,7 +121,7 @@ protected override void OnModelItemChanged(object newItem)
   
 -   <xref:System.Activities.Presentation.Validation.IValidationErrorService>: Provides access to validation errors using <xref:System.Activities.Presentation.Validation.IValidationErrorService.ShowValidationErrors%2A>.  
   
--   <xref:System.Activities.Presentation.IWorkflowDesignerStorageService>: Provides an internal service to store and retrieve data. This service is used internally by the .Net Framework, and is not intended for external use.  
+-   <xref:System.Activities.Presentation.IWorkflowDesignerStorageService>: Provides an internal service to store and retrieve data. This service is used internally by the .NET Framework, and is not intended for external use.  
   
 -   <xref:System.Activities.Presentation.IXamlLoadErrorService>: Provides access to the XAML load error collection using <xref:System.Activities.Presentation.IXamlLoadErrorService.ShowXamlLoadErrors%2A>.  
   

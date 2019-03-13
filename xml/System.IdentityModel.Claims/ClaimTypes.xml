@@ -55,7 +55,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/anonymous.  
+
+The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/anonymous`.
   
  ]]></format>
         </remarks>
@@ -84,7 +85,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authentication.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authentication`.  
   
  ]]></format>
         </remarks>
@@ -114,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authorizationdecision.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authorizationdecision`.  
   
  ]]></format>
         </remarks>
@@ -144,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country`.  
   
  ]]></format>
         </remarks>
@@ -173,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dateofbirth.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dateofbirth`.  
   
  ]]></format>
         </remarks>
@@ -204,7 +205,7 @@
 ## Remarks  
  A deny-only SID denies the specified entity to a securable object.  
   
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid`.  
   
  ]]></format>
         </remarks>
@@ -234,7 +235,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dns.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dns`.  
   
  ]]></format>
         </remarks>
@@ -264,7 +265,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`.  
   
  ]]></format>
         </remarks>
@@ -294,7 +295,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/gender.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/gender`.  
   
  ]]></format>
         </remarks>
@@ -323,7 +324,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname`.  
   
  ]]></format>
         </remarks>
@@ -352,7 +353,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/hash.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/hash`.  
   
  ]]></format>
         </remarks>
@@ -382,7 +383,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/homephone.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/homephone`.  
   
  ]]></format>
         </remarks>
@@ -411,7 +412,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/locality.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/locality`.  
   
  ]]></format>
         </remarks>
@@ -440,7 +441,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/mobilephone.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/mobilephone`.  
   
  ]]></format>
         </remarks>
@@ -469,7 +470,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name`.  
   
  ]]></format>
         </remarks>
@@ -499,7 +500,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier`.  
   
  ]]></format>
         </remarks>
@@ -528,7 +529,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/otherphone.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/otherphone`.  
   
  ]]></format>
         </remarks>
@@ -557,7 +558,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/postalcode.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/postalcode`.  
   
  ]]></format>
         </remarks>
@@ -586,7 +587,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier`.  
   
  ]]></format>
         </remarks>
@@ -615,7 +616,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa`.  
   
  ]]></format>
         </remarks>
@@ -645,7 +646,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/sid.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/sid`.  
   
  ]]></format>
         </remarks>
@@ -675,7 +676,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn`.  
   
  ]]></format>
         </remarks>
@@ -705,7 +706,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/stateorprovince.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/stateorprovince`.  
   
  ]]></format>
         </remarks>
@@ -734,7 +735,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/streetaddress.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/streetaddress`.  
   
  ]]></format>
         </remarks>
@@ -763,7 +764,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`.  
   
  ]]></format>
         </remarks>
@@ -794,7 +795,7 @@
 ## Remarks  
  The <xref:System.IdentityModel.Claims.ClaimTypes.System%2A> is typically used to identify the issuer of a claim when the issuer is the current application.  
   
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/system.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/system`.  
   
  ]]></format>
         </remarks>
@@ -825,7 +826,7 @@
 ## Remarks  
  A thumbprint is a globally unique SHA-1 hash of an X.509 certificate.  
   
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/thumbprint.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/thumbprint`.  
   
  ]]></format>
         </remarks>
@@ -855,7 +856,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn`.  
   
    
   
@@ -890,7 +891,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/uri.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/uri`.  
   
  ]]></format>
         </remarks>
@@ -920,7 +921,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/webpage.  
+ The string returned by this property is `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/webpage`.  
   
  ]]></format>
         </remarks>

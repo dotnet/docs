@@ -42,7 +42,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string that is returned by the <xref:System.IdentityModel.Claims.Rights.Identity%2A> property is http://schemas.xmlsoap.org/ws/2005/05/identity/right/Identity.  
+ The string that is returned by the <xref:System.IdentityModel.Claims.Rights.Identity%2A> property is `http://schemas.xmlsoap.org/ws/2005/05/identity/right/identity`.  
   
  In general, a typical <xref:System.IdentityModel.Claims.ClaimSet> has one claim with the <xref:System.IdentityModel.Claims.Rights.Identity%2A> right. This claim represents the identity of the <xref:System.IdentityModel.Claims.ClaimSet>. For example, a <xref:System.IdentityModel.Claims.WindowsClaimSet> has a SID claim that represents the user's SID. Likewise, the <xref:System.IdentityModel.Claims.X509CertificateClaimSet> has a <xref:System.IdentityModel.Claims.ClaimTypes.Thumbprint%2A> claim that represents the identity that is associated with an X.509 certificate.  
   
@@ -73,7 +73,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string that is returned by the <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> property is http://schemas.xmlsoap.org/ws/2005/05/identity/right/PossessProperty.  
+ The string that is returned by the <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> property is `http://schemas.xmlsoap.org/ws/2005/05/identity/right/possessproperty`.  
   
  A claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Name%2A> with right <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> over the value `Martin` indicates that the entity with which such a claim is associated possesses a `Name` property with the value `Martin`.  
   

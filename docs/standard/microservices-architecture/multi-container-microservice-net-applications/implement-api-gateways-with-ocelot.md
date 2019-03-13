@@ -171,10 +171,10 @@ namespace OcelotApiGw
             var builder = WebHost.CreateDefaultBuilder(args);
 
             builder.ConfigureServices(s => s.AddSingleton(builder))
-                                                          .ConfigureAppConfiguration(
-                              ic => ic.AddJsonFile(Path.Combine("configuration",
-                                                                "configuration.json")))
-                                                                .UseStartup<Startup>();
+                    .ConfigureAppConfiguration(
+                          ic => ic.AddJsonFile(Path.Combine("configuration",
+                                                            "configuration.json")))
+                    .UseStartup<Startup>();
             var host = builder.Build();
             return host;
         }
@@ -536,19 +536,19 @@ The ingress, however, is just redirecting HTTP requests but not trying to hide a
 
 Having an ingress Nginx tier in Kubernetes in front of the web applications plus the several Ocelot API Gateways / BFF is the ideal architecture, as shown in the following diagram.
 
- ![A Kubernetes Ingress acts as a reverse proxy for all traffic to the app, including the web applications, that are usually out of the Api gateway scope.](./media/image41.png)
+![A Kubernetes Ingress acts as a reverse proxy for all traffic to the app, including the web applications, that are usually out of the Api gateway scope.](./media/image41.png)
 
 **Figure 6-41**. The ingress tier in eShopOnContainers when deployed into Kubernetes
 
 When you deploy eShopOnContainers into Kubernetes, it exposes just a few services or endpoints via _ingress_, basically the following list of postfixes on the URLs:
 
--	`/` for the client SPA web application
--	`/webmvc` for the client MVC web application
--	`/webstatus` for the client web app showing the status/healthchecks
--	`/webshoppingapigw` for the web BFF and shopping business processes
--	`/webmarketingapigw` for the web BFF and marketing business processes
--	`/mobileshoppingapigw` for the mobile BFF and shopping business processes
--	`/mobilemarketingapigw` for the mobile BFF and marketing business processes
+- `/` for the client SPA web application
+- `/webmvc` for the client MVC web application
+- `/webstatus` for the client web app showing the status/healthchecks
+- `/webshoppingapigw` for the web BFF and shopping business processes
+- `/webmarketingapigw` for the web BFF and marketing business processes
+- `/mobileshoppingapigw` for the mobile BFF and shopping business processes
+- `/mobilemarketingapigw` for the mobile BFF and marketing business processes
 
 When deploying to Kubernetes, each Ocelot API Gateway is using a different “configuration.json” file for each _pod_ running the API Gateways. Those “configuration.json” files are provided by mounting (originally with the deploy.ps1 script) a volume created based on a Kubernetes _config map_ named ‘ocelot’. Each container mounts its related configuration file in the container’s folder named `/app/configuration`.
 

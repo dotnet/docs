@@ -27,7 +27,7 @@ This walkthrough includes the following steps:
 
 - Add controls and create the layout to compose the application UI.
 
-- Create styles for a consistent appearance throughout an application's UI.
+- Create styles for a consistent appearance throughout the application's UI.
 
 - Bind the UI to data, both to populate the UI from data and to keep the data and UI synchronized.
 

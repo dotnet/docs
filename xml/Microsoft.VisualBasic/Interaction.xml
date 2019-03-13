@@ -28,8 +28,6 @@
 ## Remarks  
  This module supports the Visual Basic language keywords and run-time library members that run other programs, call a method or property, sound a beep from the computer, provide a command-line string, manipulate COM objects, and control dialog boxes.  
   
-   
-  
 ## Examples  
  The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle.NormalFocus?displayProperty=nameWithType> as the second argument opens the application in normal size and gives it the focus.  
   
@@ -37,8 +35,6 @@
 Dim procID As Integer  
 ' Run calculator.  
 procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)  
-' The preceding path is for Windows XP.  
-' The Windows 2000 path is C:\WINNT\system32\calc.exe.  
 ```  
   
  ]]></format>

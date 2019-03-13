@@ -151,7 +151,7 @@ In this section, you'll add two pages and an image to the application.
 
 4. Open *MainWindow.xaml*.
 
-5. Set the <xref:System.Windows.Navigation.NavigationWindow.Source%2A> property on the <xref:System.Windows.Navigation.NavigationWindow> to "`ExpenseItHome.xaml`".
+5. Add a <xref:System.Windows.Navigation.NavigationWindow.Source%2A> property to the <xref:System.Windows.Navigation.NavigationWindow> element and set it to "`ExpenseItHome.xaml`".
 
     This sets *`ExpenseItHome.xaml`* to be the first page opened when the application starts. 
 

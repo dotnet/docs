@@ -1164,7 +1164,7 @@ Use this method to return a deterministic path based on a specified volume and r
 The following example defines a variable, `basePath`, to represent an application's current directory. It then passes it to the `GetFullPath` method to get a fully qualified path to the application's data directory.
 
 [!code-csharp[Path.GetFullPath(String,String)](~/samples/snippets/csharp/api/system.io/path/getfullpath/program.cs)] 
-[!code-csharp[Path.GetFullPath(String,String)](~/samples/snippets/visualbasic/api/system.io/path/getfullpath/program.vb)] 
+[!code-vb[Path.GetFullPath(String,String)](~/samples/snippets/visualbasic/api/system.io/path/getfullpath/program.vb)] 
 
  ]]></format>
         </remarks>

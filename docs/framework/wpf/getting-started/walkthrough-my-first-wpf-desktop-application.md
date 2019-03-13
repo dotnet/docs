@@ -113,7 +113,7 @@ The first step is to create the application infrastructure, which includes an ap
 
     This file is a code-behind file that contains code to handle the events declared in *MainWindow.xaml*. This file contains a partial class for the window defined in XAML.
 
-7. If you're using C#, change the `MainWindow` class to derive from <xref:System.Windows.Navigation.NavigationWindow>. (In Visual Basic, this happens automatically when you change the window in XAML.)
+7. If you're using C#, change the `MainWindow` class to derive from <xref:System.Windows.Navigation.NavigationWindow>. (In Visual Basic, this happens automatically when you change the window in XAML.) Your C# code should now look like this:
 
    Example code:
 

@@ -88,7 +88,7 @@ string connectionString = "Data Source=MSSQL1;" +
   
  Message: Transaction context in use by another session.  
   
- Source: .Net SqlClient Data Provider  
+ Source: .NET SqlClient Data Provider  
   
  Expected: (null)  
   

@@ -12,6 +12,8 @@ One use for the `add` and `remove` custom event accessors is to expose many even
 
 [!code-csharp[csProgGuideEvents#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEvents/CS/Events.cs#9)]
 
+This implementation conforms to the behavior for [adding and removing delegates](~/_csharplang/spec/delegates.md#delegate-invocation) in the C# language specification.
+
 Note that the [lock](../../language-reference/keywords/lock-statement.md) statement is used only to *access* the dictionary with event handlers. Don't invoke an event handler inside the body of the `lock` statement, as it could lead to deadlocks or lock contention.
 
 ## See also

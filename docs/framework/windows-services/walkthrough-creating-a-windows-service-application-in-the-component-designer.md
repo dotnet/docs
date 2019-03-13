@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Create a Windows service app"
-ms.date: 03/06/2019
+ms.date: 03/12/2019
 dev_langs: 
   - "csharp"
   - "vb"
@@ -39,15 +39,20 @@ To begin, create the project and set the values that are required for the servic
 
 Rename the service from **Service1** to **MyNewService**.
 
-1. In the **Design** tab, select the **switch to code view** link. 
+1. In **Solution Explorer**, select **Service1.cs**, or **Service1.vb**, and choose **Rename** from the shortcut menu. Rename the file to **MyNewService.cs**, or **MyNewService.vb**, and then press **Enter**
 
-    The **Service1.cs** or **Service1.vb** tab appears.
+    A pop-up window appears asking whether you would like to rename all references to the code element *Service1*.
 
-2. Select `Service1` in the code, and then choose **Rename** from the shortcut menu. Replace `Service1` with `MyNewService`, and then either press **Enter** or select **Apply** in the **Rename: Service1** pop-up window.
+2. In the pop-up window, select **Yes**.
 
-3. In the **Design** tab, select **Properties** from the shortcut menu. From the **Properties** window, change the **ServiceName** value to *MyNewService*.
+    ![Rename prompt](media/windows-service-rename.png "Windows service rename prompt")
 
-4. In **Solution Explorer**, rename **Service1.cs** to **MyNewService.cs**, or rename **Service1.vb** to **MyNewService.vb**.
+2. In the **Design** tab, select **Properties** from the shortcut menu. From the **Properties** window, change the **ServiceName** value to *MyNewService*.
+
+    ![Service properties](media/windows-service-properties.png "Windows service properties")
+
+3. Select **Save All** from the **File** menu.
+
 
 ## Add features to the service
 
@@ -68,11 +73,10 @@ In this section, you add a custom event log to the Windows service. The <xref:Sy
    {
         InitializeComponent();
 
-        eventLog1 = new System.Diagnostics.EventLog();
-        if (!System.Diagnostics.EventLog.SourceExists("MySource"))
+        eventLog1 = new EventLog();
+        if (!EventLog.SourceExists("MySource"))
         {
-            System.Diagnostics.EventLog.CreateEventSource(
-                "MySource", "MyNewLog");
+            EventLog.CreateEventSource("MySource", "MyNewLog");
         }
         eventLog1.Source = "MySource";
         eventLog1.Log = "MyNewLog";
@@ -81,41 +85,51 @@ In this section, you add a custom event log to the Windows service. The <xref:Sy
 
    [!code-vb[VbRadconService#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#2)]
 
-5. Press **Ctrl**+**S** to save the file.
+5. Select **Save All** from the **File** menu.
 
 ### Define what occurs when the service starts
 
-In the code editor, locate the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, which was automatically overridden when you created the project. Add code that writes an entry to the event log when the service starts:
+In the code editor, locate the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method; Visual Studio automatically created an empty method definition when you created the project. Add code that writes an entry to the event log when the service starts:
 
 [!code-csharp[VbRadconService#3](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#3)]
 [!code-vb[VbRadconService#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#3)]
 
-Because a service application is designed to be long-running, it usually polls or monitors the system by using code in the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method. The `OnStart` method must return to the operating system after the service's operation has begun so that the system isn't blocked. 
+Because a service application is designed to be long-running, it usually polls or monitors the system, which you set up in the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method. The `OnStart` method must return to the operating system after the service's operation has begun so that the system isn't blocked. 
 
-To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayProperty=nameWithType> component as follows: 
-1. In the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, set parameters on the component. 
+To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayProperty=nameWithType> component. The timer raises an <xref:System.Timers.Timer.Elapsed> event at regular intervals, at which time your service can do its monitoring. Use the <xref:System.Timers.Timer> component as follows:
 
-2. Set the <xref:System.Timers.Timer.Enabled?displayProperty=nameWithType> property to `true` by calling the <xref:System.Timers.Timer.Start%2A> method. 
+1. In the `MyNewService.OnStart` method, set the properties of the <xref:System.Timers.Timer> component.
 
-    The timer raises events in your code periodically, at which time your service can do its monitoring.
+2. Start the timer by calling the <xref:System.Timers.Timer.Start%2A> method. 
 
-The following code sample shows how to do set up the polling mechanism within the `OnStart` method:
+
+The following example shows the code in the `MyNewService.OnStart` event that sets up the polling mechanism:
 
 ```csharp
 // Set up a timer that triggers every minute.
-System.Timers.Timer timer = new System.Timers.Timer();
+Timer timer = new Timer();
 timer.Interval = 60000; // 60 seconds
-timer.Elapsed += new System.Timers.ElapsedEventHandler(this.OnTimer);
+timer.Elapsed += new ElapsedEventHandler(this.OnTimer);
 timer.Start();
 ```
 
 ```vb
 ' Set up a timer that triggers every minute.
-Dim timer As System.Timers.Timer = New System.Timers.Timer()
+Dim timer As Timer = New Timer()
 timer.Interval = 60000 ' 60 seconds
 AddHandler timer.Elapsed, AddressOf Me.OnTimer
 timer.Start()
 ```
+
+Add a `using` statement, or an `Imports` statement for Visual Basic, for the <xref:System.Timers?displayProperty=nameWithType> namespace:
+
+    ```csharp
+    using System.Timers;
+    ```
+
+    ```vb
+    Imports System.Timers
+    ```
 
 Add a member variable to the `MyNewService` class. It contains the identifier of the next event to write into the event log:
 
@@ -127,10 +141,10 @@ private int eventId = 1;
 Private eventId As Integer = 1
 ```
 
-Add a new method to the `MyNewService` class to handle the timer event:
+Add a new method to the `MyNewService` class to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:
 
 ```csharp
-public void OnTimer(object sender, System.Timers.ElapsedEventArgs args)
+public void OnTimer(object sender, ElapsedEventArgs args)
 {
     // TODO: Insert monitoring activities here.
     eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId++);
@@ -166,11 +180,13 @@ The following code shows how you to override the <xref:System.ServiceProcess.Ser
 [!code-csharp[VbRadconService#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#5)]
 [!code-vb[VbRadconService#5](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#5)]
 
-When the <xref:System.Configuration.Install.Installer> class installs a Windows service, some custom actions must occur. Visual Studio can create these installers specifically for a Windows service and add them to your project.
 
 ## Set service status
 
-Services report their status to the [Service Control Manager](/windows/desktop/Services/service-control-manager), so that a user can tell whether a service is functioning correctly. By default, services that inherit from <xref:System.ServiceProcess.ServiceBase> report a limited set of status settings. These status settings include:  SERVICE_STOPPED, SERVICE_PAUSED, and SERVICE_RUNNING. If a service takes a while to start up, it's useful to report a SERVICE_START_PENDING status. You can also implement the SERVICE_START_PENDING and SERVICE_STOP_PENDING status settings by adding code that calls the Windows [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) function.
+Services report their status to the [Service Control Manager](/windows/desktop/Services/service-control-manager) so that a user can tell whether a service is functioning correctly. By default, a service that inherits from <xref:System.ServiceProcess.ServiceBase> reports a limited set of status settings, which include SERVICE_STOPPED, SERVICE_PAUSED, and SERVICE_RUNNING. If a service takes a while to start up, it's useful to report a SERVICE_START_PENDING status. 
+
+You can implement the SERVICE_START_PENDING and SERVICE_STOP_PENDING status settings by adding code that calls the Windows [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) function.
+
 
 ### Implement service pending status
 
@@ -277,7 +293,7 @@ Services report their status to the [Service Control Manager](/windows/desktop/S
     SetServiceStatus(Me.ServiceHandle, serviceStatus)
     ```
 
-6. (Optional) Repeat this procedure for the <xref:System.ServiceProcess.ServiceBase.OnStop%2A> method.
+6. (Optional) If <xref:System.ServiceProcess.ServiceBase.OnStop%2A> is a long-running method, repeat this procedure to implement the SERVICE_STOP_PENDING status and return the SERVICE_STOPPED status before the <xref:System.ServiceProcess.ServiceBase.OnStop%2A> method exits.
 
 > [!NOTE]
 > The Service Control Manager uses the `dwWaitHint` and `dwCheckpoint` members of the [SERVICE_STATUS structure](/windows/desktop/api/winsvc/ns-winsvc-_service_status) to determine how much time to wait for a Windows service to start or shut down. If your `OnStart` and `OnStop` methods run long, your service can request more time by calling `SetServiceStatus` again with an incremented `dwCheckPoint` value.
@@ -300,11 +316,15 @@ Before you run a Windows service, you need to install it, which registers it wit
 
      This text appears in the **Description** column of the **Services** window and describes the service to the user.
 
-7. Add text to the <xref:System.ServiceProcess.ServiceInstaller.DisplayName%2A> property. For example, *MyNewService display name*. 
+    ![Service description in the Services window.](media/windows-service-description.png "Service description")
+
+7. Add text to the <xref:System.ServiceProcess.ServiceInstaller.DisplayName%2A> property. For example, *MyNewService Display Name*. 
 
      This text appears in the **Display Name** column of the **Services** window. This name can be different from the <xref:System.ServiceProcess.ServiceInstaller.ServiceName%2A> property, which is the name the system uses (for example, the name you use for the `net start` command to start your service).
 
 8. Set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property to <xref:System.ServiceProcess.ServiceStartMode.Automatic> from the drop-down list.
+
+9. When you're finished, the **Properties** windows should look like the following figure:
 
      ![Installer Properties for a Windows service](media/windows-service-installer-properties.png "Windows service installer properties")
 
@@ -352,6 +372,8 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 2. In **MyNewService.cs**, or **MyNewService.vb**, change the `MyNewService` constructor as follows:
 
    ```csharp
+   using System.Diagnostics;
+
    public MyNewService(string[] args)
    {
        InitializeComponent();
@@ -369,11 +391,11 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
             logName = args[1];
         }
 
-        eventLog1 = new System.Diagnostics.EventLog();
+        eventLog1 = new EventLog();
 
-        if (!System.Diagnostics.EventLog.SourceExists(eventSourceName))
+        if (!EventLog.SourceExists(eventSourceName))
         {
-            System.Diagnostics.EventLog.CreateEventSource(eventSourceName, logName);
+            EventLog.CreateEventSource(eventSourceName, logName);
         }
 
         eventLog1.Source = eventSourceName;
@@ -382,6 +404,8 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
    ```
 
    ```vb
+   Imports System.Diagnostics
+
    Public Sub New(ByVal cmdArgs() As String)
        InitializeComponent()
        Dim eventSourceName As String = "MySource"
@@ -392,16 +416,16 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
        If (cmdArgs.Count() > 1) Then
            logName = cmdArgs(1)
        End If
-       eventLog1 = New System.Diagnostics.EventLog()
-       If (Not System.Diagnostics.EventLog.SourceExists(eventSourceName)) Then
-           System.Diagnostics.EventLog.CreateEventSource(eventSourceName, logName)
+       eventLog1 = New EventLog()
+       If (Not EventLog.SourceExists(eventSourceName)) Then
+           EventLog.CreateEventSource(eventSourceName, logName)
        End If
        eventLog1.Source = eventSourceName
        eventLog1.Log = logName
    End Sub
    ```
 
-   This code sets the event source and log name according to the startup parameters that the user supplies. Or, it uses default values if no arguments are supplied.
+   This code sets the event source and log name according to the startup parameters that the user supplies. If no arguments are supplied, it uses default values.
 
 3. To specify the command-line arguments, add the following code to the `ProjectInstaller` class in **ProjectInstaller.cs**, or **ProjectInstaller.vb**:
 
@@ -422,7 +446,8 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
    End Sub
    ```
 
-   This code adds the default parameter values to the **ImagePath** registry entry. Typically, this subkey contains the full path to the executable for the Windows service. For the service to start up correctly, the user must supply quotation marks for the path and each individual parameter. A user can change the parameters in the **ImagePath** entry value to change the startup parameters for the Windows service. However, a better way is to change the value programmatically and expose the functionality in a user-friendly way. For example, in a management or configuration utility.
+   Typically, this value contains the full path to the executable for the Windows service. For the service to start up correctly, the user must supply quotation marks for the path and each individual parameter. A user can change the parameters in the **ImagePath** registry entry to change the startup parameters for the Windows service. However, a better way is to change the value programmatically and expose the functionality in a user-friendly way, such as by using a management or configuration utility.
+
 
 ## Build the service
 

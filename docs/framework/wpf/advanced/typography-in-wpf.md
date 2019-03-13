@@ -152,9 +152,9 @@ Example of an image brush applied to the stroke and highlight
   
  Unlike a traditional text [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)], the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the text layout interaction between the client application and <xref:System.Windows.Media.TextFormatting.TextFormatter>.  
   
- ![Diagram of text layout client and TextFormatter](./media/textformatter01.png "TextFormatter01")   
- Interaction between application and TextFormatter   
-   
+![Diagram of text layout client and TextFormatter](./media/textformatter01.png "TextFormatter01")
+Interaction between application and TextFormatter
+
  For more details on creating custom text layout, see [Advanced Text Formatting](advanced-text-formatting.md).  
   
 ## See also

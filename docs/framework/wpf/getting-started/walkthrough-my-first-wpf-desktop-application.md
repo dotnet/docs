@@ -182,7 +182,7 @@ In this section, you'll add two pages and an image to the application.
 
 9. Set the `DesignHeight` and `DesignWidth` to 300 pixels.
 
-    Example XAML in Visual Basic:
+    *ExpenseReportPage.xaml* now looks like the following:
 
     [!code-xaml[ExpenseIt#4_A](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseReportPage.xaml#4_a)]
 

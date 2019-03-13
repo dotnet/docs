@@ -49,7 +49,7 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
 
  The following screenshot shows the pan button which is located at the bottom right corner of the workflow designer.
 
- ![Use the pan button to move the visible portion of the workflow.](./media/wf-features-in-the-rehosted-workflow-designer/pan-button.png "Use the pan button to move the visible portion of the workflow.")
+ ![Use the pan button to move the visible portion of the workflow.](./media/wf-features-in-the-rehosted-workflow-designer/pan-button-visible-workflow.png)
 
  The middle mouse button or space bar can also be used to pan the workflow designer.
 

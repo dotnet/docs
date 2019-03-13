@@ -121,11 +121,11 @@ Since a workflow or certain container activities (such as <xref:System.Activitie
 
 The following screenshot shows a `WriteLine` activity in the `Body` of a `NoPersistScope`.
 
-![Auto&#45;surround drop location](./media/whats-new-in-wf-in-dotnet/auto-surround-write-line-activity.png "Auto-surround with WriteLine activity")
+![Auto-surround with WriteLine activity](./media/whats-new-in-wf-in-dotnet/auto-surround-write-line-activity.png)
 
 The following screenshot shows the automatically created `Sequence` activity in the `Body` when a second `WriteLine` is dropped below the first.
 
-![Automatically created sequence activity](./media/whats-new-in-wf-in-dotnet/auto-surround-sequence-activity.png "Auto-surround with Sequence activity")
+![Auto-surround with Sequence activity](./media/whats-new-in-wf-in-dotnet/auto-surround-sequence-activity.png)
 
 ### <a name="BKMK_PanMode"></a> Pan Mode
 
@@ -133,7 +133,7 @@ To more easily navigate a large workflow in the designer, pan mode can be enable
 
 The following screenshot shows the pan button which is located at the bottom right corner of the workflow designer.
 
-![Pan button in workflow designer](./media/whats-new-in-wf-in-dotnet/pan-button.png "Use the pan button to move the visible portion of the workflow.")
+![Use the pan button to move the visible portion of the workflow.](./media/whats-new-in-wf-in-dotnet/pan-button-visible-workflow.png)
 
 The middle mouse button or space bar can also be used to pan the workflow designer.
 
@@ -149,7 +149,7 @@ In order to make hierarchical workflows easier to navigate, components of a work
 
 The following screenshot of the completed workflow from the [Getting Started Tutorial](getting-started-tutorial.md) shows the outline view with a sequential workflow.
 
-![Outline View in Workflow Designer](./media/whats-new-in-wf-in-dotnet/outline-view-in-workflow-designer.jpg "Outline view with a sequential workflow")
+![Outline view with a sequential workflow.](./media/whats-new-in-wf-in-dotnet/outline-view-in-workflow-designer.jpg)
 
 ### <a name="BKMK_CSharpExpressions"></a> C# Expressions
 

@@ -1,6 +1,6 @@
 title: Use pattern matching features to extend data types
 description: This advanced tutorial demonstrates how to use pattern matching techniques to extend data types that .
-ms.date: 02/19/2019
+ms.date: 03/13/2019
 ms.custom: mvc
 ---
 # Tutorial: Using pattern matching features to extend data types
@@ -10,9 +10,9 @@ C# 7 introduced basic pattern matching features. Those are extended in C# 8 with
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Do awesome pattern things
-> * understand pattern things
-> * be awesome
+> * How to recognize situations where pattern matching should be used.
+> * How to use pattern matching expressions to implement behavior based on types and property values.
+> * How to combine pattern matching with other techniques to create complete algorithms.
 
 ## Prerequisites
 
@@ -22,15 +22,19 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 ## Scenarios for pattern matching
 
-Modern development often includes pulling data from multiple sources and presenting information and insights from that data in a cohesive application. You and your team won't have control or access for all the types that represent the incoming data.
+Modern development often includes integrating data from multiple sources and presenting information and insights from that data in a single cohesive application. You and your team won't have control or access for all the types that represent the incoming data.
 
-The classic object oriented design would call for creating types in your application that represent each data type from those multiple data sources. Then, your application would work with those new types, building inheritance hierarchies, creating virtual methods, and implementing abstractions. Those techniques work, and sometimes they are the best tools. Other times you can write less code, and write more clear code using other techniques.
+The classic object oriented design would call for creating types in your application that represent each data type from those multiple data sources. Then, your application would work with those new types, build inheritance hierarchies, create virtual methods, and implement abstractions. Those techniques work, and sometimes they are the best tools. Other times you can write less code, and write more clear code using techniques that separate the data from the operations that manipulate that data.
 
 In this tutorial, you'll create and explore an application that takes incoming data from several external sources for a single scenario. You'll see how **pattern matching** provides an efficient way to consume and process that data in ways that weren't part of the original system.
 
-Consider a major metro area that is using tolls and peak time pricing to manage traffic. You'll write an application that calculates tolls for a vehicle based on its type. Later enhancements will add pricing based on the time and the day of the week. Further enhancements will incorporate pricing based on the number of occupants in the vehicle.
+Consider a major metro area that is using tolls and peak time pricing to manage traffic. You write an application that calculates tolls for a vehicle based on its type. Later enhancements incorporate pricing based on the number of occupants in the vehicle. Further enhancements add pricing based on the time and the day of the week.
 
-From that brief description, you may have quickly sketched out  an object hierarchy to model this system. If you were building the entire system, and these were the only requirements, that would be a good solution. However, that's not the situation. This metro area had already been using software to manage vehicle registrations for years. In addition, this metro area bought different systems from different suppliers for personal cars, taxis, buses, and delivery trucks. These different systems all provide classes to represent the data they export. But these different systems don't provide a single object model for you to use.
+From that brief description, you may have quickly sketched out an object hierarchy to model this system. If you were building the entire system, and these were the only requirements, that would be a good solution. However, that's not the situation. This metro area had already been using software to manage vehicle registrations for years. In addition, this metro area bought different systems from different suppliers for personal cars, taxis, buses, and delivery trucks. These different systems all provide classes to represent the data they export. But these different systems don't provide a single object model for you to use. In this tutorial, you'll use these simplified classes for the vehicle classes from these external systems, as shown in the following code:
+
+[!code-csharp[ExternalSystems](../../../samples/csharp/tutorials/patterns/start/toll-calculator/ExternalSystems.cs)]
+
+You can download the starter code from the [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/patterns/start) GitHub repository. You can see that the vehicle classes are from different systems, and are in different namespaces. No common base class, other than `System.Object` can be leveraged.
 
 ## Pattern matching designs
 
@@ -43,9 +47,23 @@ The pattern matching features in C# make it easier to build software when the *s
 
 ## Implement the basic toll calculations
 
-The most basic toll calculation relies only on the vehicle type.  THe base rate for a `Car` is `$2.00`, `$3.50` for a `Taxi`, `$5.00` for a `Bus`, and `$10.00` for a `DeliveryTruck`.  You can implement that using this version of a `TollCalculator` class:
+The most basic toll calculation relies only on the vehicle type:
+
+- A `Car` is $2.00.
+- A `Taxi` is $3.50.
+- A `Bus` is $5.00.
+- A `DeliveryTruck` is $10.00
+
+Create a new `TollCalculator` class, and implement the You can implement that using this version of a `TollCalculator` class:
 
 ```csharp
+using System;
+using CommercialRegistration;
+using ConsumerVehicleRegistration;
+using LiveryRegistration;
+
+namespace toll_calculator
+{
     public class TollCalculator
     {
         public decimal CalculateToll(object vehicle) =>
@@ -59,13 +77,65 @@ The most basic toll calculation relies only on the vehicle type.  THe base rate 
             null => throw new ArgumentNullException(nameof(vehicle))
         };
     }
+}
 ```
 
-The preceding code uses a **switch expression** that tests the **type pattern**. A **switch expression** begins with the variable, `vehicle` in the preceding code, followed by the `switch` keyword. Next comes all the cases inside curly braces. The `switch` expression makes other refinements to the ceremony that surrounded the `switch` statement. The `case` keyword is omitted, and the result of each case is an expression. The last two cases are also new. The `{ }` case matches any non-null object that didn't match an earlier case. This can catch any incorrect types passed to this method. Finally, the `null` pattern catches when `null` is passed to this method. The `null` pattern can be last because the other type patterns match only a non-null object of the correct type.
+The preceding code uses a **switch expression** that tests the **type pattern**. A **switch expression** begins with the variable, `vehicle` in the preceding code, followed by the `switch` keyword. Next comes all the switch arms inside curly braces. The `switch` expression makes other refinements to the ceremony that surrounded the `switch` statement. The `case` keyword is omitted, and the result of each arm is an expression. The last two arms are show a new language feature. The `{ }` case matches any non-null object that didn't match an earlier arm. This can catch any incorrect types passed to this method. Finally, the `null` pattern catches when `null` is passed to this method. The `null` pattern can be last because the other type patterns match only a non-null object of the correct type.
+
+You can test this code using the following code in `Program.cs`:
+
+```csharp
+using System;
+using CommercialRegistration;
+using ConsumerVehicleRegistration;
+using LiveryRegistration;
+
+namespace toll_calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var tollCalc = new TollCalculator();
+
+            var car = new Car();
+            var taxi = new Taxi();
+            var bus = new Bus();
+            var truck = new DeliveryTruck();
+
+            Console.WriteLine($"The toll for a car is {tollCalc.CalculateToll(car)}");
+            Console.WriteLine($"The toll for a taxi is {tollCalc.CalculateToll(taxi)}");
+            Console.WriteLine($"The toll for a bus is {tollCalc.CalculateToll(bus)}");
+            Console.WriteLine($"The toll for a truck is {tollCalc.CalculateToll(truck)}");
+
+            try
+            {
+                tollCalc.CalculateToll("this will fail");
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine("Caught an argument exception when using the wrong type", DayOfWeek.Friday);
+            }
+            try
+            {
+                tollCalc.CalculateToll(null);
+            }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine("Caught an argument exception when using null");
+            }
+        }
+    }
+}
+```
+
+That code is included in the starter project, but is commented out. Remove the comments, and you can test what you've written.
+
+You're starting to see how patterns can help you create algorithms where the code and the data are separate. The `switch` expression tests the type and produces different values based on the results. That's only the beginning.
 
 ## Add occupancy pricing
 
-Next, you can inspect the properties of the vehicles to add occupancy based pricing. The metro area adopted the following policies:
+The toll authority wants to encourage vehicles to travel at maximum capacity. They've decided to charge more when vehicles have fewer passengers, and encourage full vehicles by offering lower pricing:
 
 - Cars and taxis with no passengers pay an extra $0.50.
 - Cars and taxis with 2 passengers get a 0.50 discount.
@@ -95,83 +165,160 @@ Taxi t => 3.50m - 1.00m,
 
 In the preceding example, the `when` clause was omitted on the final case.
 
-You can finish implementing the occupancy rules by expanding the cases for buses, as shown in the following complete exmaple:
+Next, implement the occupancy rules by expanding the cases for buses, as shown in the following exmaple:
+
+```csharp
+Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
+Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
+Bus b => 5.00m,
+```
+
+The toll authority is not concerned with the number of passengers in the delivery trucks. Instead, they will charge more based on the weight class of the trucks. Trucks over 5000 lbs are charged an extra $5.00. Light trucks, under 3000 lbs are given a $2.00 discount.  That code looks like the following:
+
+```csharp
+DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
+DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
+DeliveryTruck t => 10.00m,
+```
+
+## Recursive patterns
+
+You can make this code less repetitive by using **recursive patterns**. The `Car` and `Taxi` both have four different arms in the preceding examples. In both cases, you can create a type pattern that feeds into a property pattern. This is shown in the following code:
 
 ```csharp
 public decimal CalculateToll(object vehicle) =>
     vehicle switch
 {
-    Car { Passengers: 0} => 2.00m + 0.50m,
-    Car { Passengers: 1 } => 2.0m,
-    Car { Passengers: 2} => 2.0m - 0.50m,
-    Car c when c.Passengers > 2 => 2.00m - 1.0m,
+    Car c => c.Passengers switch
+    {
+        0 => 2.00m + 0.5m,
+        1 => 2.0m,
+        2 => 2.0m - 0.5m,
+        _ => 2.00m - 1.0m
+    },
 
-    Taxi { Fares: 0} => 3.50m + 1.00m,
-    Taxi { Fares: 1 } => 3.50m,
-    Taxi { Fares: 2} => 3.50m - 0.50m,
-    Taxi t => 3.50m - 1.00m,
+    Taxi t => t.Fares switch
+    {
+        0 => 3.50m + 1.00m,
+        1 => 3.50m,
+        2 => 3.50m - 0.50m,
+        _ => 3.50m - 1.00m
+    },
 
     Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
     Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
     Bus b => 5.00m,
 
+    DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
+    DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
     DeliveryTruck t => 10.00m,
     { } => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
     null => throw new ArgumentNullException(nameof(vehicle))
 };
 ```
 
+In the preceding sample, using a recursive expression means you don't repeat the `Car` and `Taxi` arms contain child arms that test the property value. This technique isn't used for the `Bus` and `DeliveryTruck` arms because those are testing ranges for the property, not discrete values.
+
 ## Add peak pricing
 
-For the final feature, the toll authority wants to add time sensitive peak pricing. During the morning and evening rush hours, the tolls are doubled. That rule only affects traffic in one direction: inbound to the city in the morning, and outbound in the evening rush hour. During other times during the workday, tolls increase by 50%. Late night and early morning, tolls are reduced by 25%. During the weekend, it's the normal rate.
+For the final feature, the toll authority wants to add time sensitive peak pricing. During the morning and evening rush hours, the tolls are doubled. That rule only affects traffic in one direction: inbound to the city in the morning, and outbound in the evening rush hour. During other times during the workday, tolls increase by 50%. Late night and early morning, tolls are reduced by 25%. During the weekend, it's the normal rate, regardless of the time.
 
-You will use pattern matching for this feature, but you'll integrate it with other techniques. You could build a single pattern match expression that would account all the combinations of direction, day of the week, and time. The result would be a very complicated expression. It would be hard to read and difficult to understand. As a result, it would be hard to ensure it was correct.
+You'll use pattern matching for this feature, but you'll integrate it with other techniques. You could build a single pattern match expression that would account all the combinations of direction, day of the week, and time. The result would be a very complicated expression. It would be hard to read and difficult to understand. As a result, it would be hard to ensure it was correct. You can combine those methods to build a tuple of values that concisely describes all those states and uses pattern matching to calculate a multiplier for the toll. The tuple contains three discrete conditions:
 
-Instead, you can simplify the combinations by creating two different variables.  The following function uses as pattern matching switch expression to express whether a `DateTime` represents a weekend or a weekday:
+- The day is either a weekday or a weekend.
+- The band of time when the toll is collected.
+- The direction is into the city or out of the city
+
+The following table shows the combinations of input values and the peak pricing multiplier:
+
+| Day        | Time         | Direction | Premium |
+| ---------- | ------------ | --------- |--------:|
+| Weekday    | morning rush | inbound   | x 2.00  |
+| Weekday    | morning rush | outbound  | x 1.00  |
+| Weekday    | daytime      | inbound   | x 1.50  |
+| Weekday    | daytime      | outbound  | x 1.50  |
+| Weekday    | evening rush | inbound   | x 1.00  |
+| Weekday    | evening rush | outbound  | x 2.00  |
+| Weekday    | overnight    | inbound   | x 0.75  |
+| Weekday    | overnight    | outbound  | x 0.75  |
+| Weekend    | morning rush | inbound   | x 1.00  |
+| Weekend    | morning rush | outbound  | x 1.00  |
+| Weekend    | daytime      | inbound   | x 1.00  |
+| Weekend    | daytime      | outbound  | x 1.00  |
+| Weekend    | evening rush | inbound   | x 1.00  |
+| Weekend    | evening rush | outbound  | x 1.00  |
+| Weekend    | overnight    | inbound   | x 1.00  |
+| Weekend    | overnight    | outbound  | x 1.00  |
+
+There are sixteen different combinations of the three variables. By combining some of the conditions, you'll simplify the final switch expression.
+
+The system that collects the tools uses a <xref:System.DateTime> structure for the time when the toll was collection. You need to build member methods that create the variables from the preceding table.  The following function uses as pattern matching switch expression to express whether a <xref:System.DateTime> represents a weekend or a weekday:
 
 ```csharp
-private static bool isWeekDay(DateTime timeOfToll) =>
+private static bool IsWeekDay(DateTime timeOfToll) =>
     timeOfToll.DayOfWeek switch
 {
+    DayOfWeek.Monday => true,
+    DayOfWeek.Tuesday => true,
+    DayOfWeek.Wednesday => true,
+    DayOfWeek.Thursday => true,
+    DayOfWeek.Friday => true,
     DayOfWeek.Saturday => false,
-    DayOfWeek.Sunday => false,
-    _ => true
+    DayOfWeek.Sunday => false
 };
 ```
 
-Next, add a similar function to categorize the time into one of several blocks:
+That method works, but there's a lot of repetition. YOu can simplify it, as shown in the following code:
+
+[!code-csharp[IsWeekDay](../../../samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#IsWeekDay)]
+
+Next, add a similar function to categorize the time into the blocks:
+
+[!code-csharp[GetTimeBand](../../../samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#GetTimeBand)]
+
+The previous method doesn't use pattern matching. It's more clear using a familiar cascade of `if` statements. You do add a private `enum` to convert each range of time to a discrete value.
+
+After you create those methods, you can use another `switch` expression with the **tuple pattern** to calculate the pricing premium. You could build a `switch` expression with all sixteen arms:
+
+[!code-csharp[FullTuplePattern](../../../samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#TuplePatternOne)]
+
+This works, but it can be simplified. You should observe that all eight combinations for the weekend have the same toll. You can replace all eight with the following one line:
 
 ```csharp
-private static TimeBand TimeBlock(DateTime timeOfToll)
+(false, _, _) => 1.0m,
+```
+
+Both inbound and outbound traffic have the same multiplier during the weekday daytime and overnight hours. Those four switch arms can be replaced with the follow two lines:
+
+```csharp
+(true, TimeBand.Overnight, _) => 0.75m,
+(true, TimeBand.Daytime, _) => 1.5m,
+```
+
+The code should look like the following code after those two changes:
+
+```csharp
+public decimal PeakTimePremium(DateTime timeOfToll, bool inbound) =>
+    (IsWeekDay(timeOfToll), GetTimeBand(timeOfToll), inbound) switch
 {
-    int hour = timeOfToll.Hour;
-    if (hour < 6) return TimeBand.Overnight;
-    else if (hour < 10) return TimeBand.MorningRush;
-    else if (hour < 4) return TimeBand.Daytime;
-    else if (hour < 8) return TimeBand.EveningRush;
-    else return TimeBand.Overnight;
-}
+    (true, TimeBand.MorningRush, true) => 2.00m,
+    (true, TimeBand.MorningRush, false) => 1.00m,
+    (true, TimeBand.Daytime, _) => 1.50m,
+    (true, TimeBand.EveningRush, true) => 1.00m,
+    (true, TimeBand.EveningRush, false) => 2.00m,
+    (true, TimeBand.Overnight, _) => 0.75m,
+    (false, _, _) => 1.00m,
+};
 ```
 
-The previous method doesn't use pattern matching. It's more clear using a familiar cascade of `if` statements.
+Finally, you can remove the two rush hour times that pay the regular price. Once you remove those, you can replace the `false` with a discard (`_`) in the final switch arm. You'll have the following finished method:
 
-You can combine those methods to build a tuple of values that concisely describes all those states and uses pattern matching to calculate a multiplier for the toll.
+[!code-csharp[SimplifiedTuplePattern](../../../samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#FinalTuplePattern)]
 
-.. Describe combinations
-.. Add table of results
-.. combine to shorter code.
-.. tuple pattern. Cool!
+This example highlights one of the advantages of pattern matching. The pattern branches are evaluated in order. If you rearrange them so that an earlier branch handles one of your later cases, the compiler warns you. Those language rules made it easier to do the preceding simplifications with confidence that the code didn't change.
 
-```csharp
-```
-
-This example highlights one of the advantages of pattern matching. The pattern branches are evaluated in order. If you rearrange them so that an earlier branch handles one of your later cases, the compiler warns you. The language rules help you combine separate cases. <expand with example>,
-
-You can combine this code with the previous pattern matching expression to build the following method that computes the tolls:
-
-```csharp
-```
+Pattern matching provides a natural syntax that enables you to implement different solutions than you'd create if you used object oriented techniques. The cloud is causing data and functionality to live apart. The *shape* of the data and the *operations* on it are not necessarily described together. In this tutorial, you consumed existing data in entirely different ways from its original function. Pattern matching gave you the ability to write functionality that over those types, even though you couldn't extend them.
 
 ## Next staps
 
-You can run the code <here> in our GitHub repo. Explore patterns on your own and add this tecnique into your regular coding activities.
+You can download the finished code from the [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/patterns/finished) GitHub repository. Explore patterns on your own and add this technique into your regular coding activities. Learning these techniques gives you another way to approach problems and create new functionality.

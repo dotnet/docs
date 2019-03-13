@@ -493,7 +493,7 @@ The following illustration shows both pages of the `ExpenseIt` application with 
 
 ## Next steps
 
-In this walkthrough you learned a number of techniques for creating a UI using Windows Presentation Foundation (WPF). You should now have a basic understanding of the building blocks of a data-bound, .NET app. For more information about the WPF architecture and programming models, see the following topics:
+In this walkthrough you learned a number of techniques for creating a UI using Windows Presentation Foundation (WPF). You should now have a basic understanding of the building blocks of a data-bound .NET app. For more information about the WPF architecture and programming models, see the following topics:
 
 - [WPF architecture](../advanced/wpf-architecture.md)
 - [XAML overview (WPF)](../advanced/xaml-overview-wpf.md)

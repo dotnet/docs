@@ -65,7 +65,7 @@ The first step is to create the application infrastructure, which includes an ap
 
 2. Open *Application.xaml* (Visual Basic) or *App.xaml* (C#).
 
-    This XAML file defines a WPF application and any application resources. You also use this file to specify the UI that automatically shows when the application starts; in this case, *MainWindow.xaml*.
+    This XAML file defines a WPF application and any application resources. You also use this file to specify the UI, in this case *MainWindow.xaml*, that automatically shows when the application starts.
 
     Example XAML in Visual Basic:
 

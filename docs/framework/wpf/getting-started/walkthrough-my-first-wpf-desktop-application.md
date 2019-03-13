@@ -192,7 +192,7 @@ In this section, you'll add two pages and an image to the application.
 
 10. Open *ExpenseItHome.xaml.vb* and *ExpenseReportPage.xaml.vb*, or *ExpenseItHome.xaml.cs* and *ExpenseReportPage.xaml.cs*.
 
-    When you create a new Page file, Visual Studio automatically creates a *code-behind* file. These code-behind files handle the logic for responding to user input.
+    When you create a new Page file, Visual Studio automatically creates its *code-behind* file. These code-behind files handle the logic for responding to user input.
 
     Your code should look like the following for **`ExpenseItHome`**:
 

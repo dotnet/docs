@@ -449,7 +449,7 @@
 ### [Signature Files](fsharp/language-reference/signature-files.md)
 ### [Units of Measure](fsharp/language-reference/units-of-measure.md)
 ### [XML Documentation](fsharp/language-reference/xml-documentation.md)
-### [Lazy Computations](fsharp/language-reference/lazy-computations.md)
+### [Lazy Expressions](fsharp/language-reference/lazy-expressions.md)
 ### [Computation Expressions](fsharp/language-reference/computation-expressions.md)
 ### [Asynchronous Workflows](fsharp/language-reference/asynchronous-workflows.md)
 ### [Query Expressions](fsharp/language-reference/query-expressions.md)

@@ -35,8 +35,7 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
   
  Use the <xref:System.Windows.Media.FormattedText.MaxTextWidth%2A> property to constrain the text to a specific width. The text will automatically wrap to avoid exceeding the specified width. Use the <xref:System.Windows.Media.FormattedText.MaxTextHeight%2A> property to constrain the text to a specific height. The text will display an ellipsis, "…" for the text that exceeds the specified height.  
   
- ![Text displayed using FormattedText object](./media/formattedtext02.png "FormattedText02")  
-Displayed text showing wordwrapping and ellipsis  
+ ![Text displayed with wordwrap and ellipsis.](./media/drawing-formatted-text/formatted-text-wordwrap-ellipsis.png)    
   
  You can apply multiple formatting styles to one or more characters. For example, you could call both the <xref:System.Windows.Media.FormattedText.SetFontSize%2A> and <xref:System.Windows.Media.FormattedText.SetForegroundBrush%2A> methods to change the formatting of the first five characters in the text.  
   
@@ -71,15 +70,14 @@ Displayed text showing wordwrapping and ellipsis
   
  The following example shows formatted text that has been converted to a <xref:System.Windows.Media.PathGeometry> object. An animated ellipse follows the path of the strokes of the rendered text.  
   
- ![Sphere following the path geometry of text](./media/textpathgeometry01.gif "TextPathGeometry01")  
+ ![Sphere following the path geometry of text](./media/drawing-formatted-text/sphere-following-geometry-path.gif)  
 Sphere following the path geometry of text  
   
  For more information, see [How to: Create a PathGeometry Animation for Text](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms743610(v=vs.100)).  
   
  You can create other interesting uses for formatted text once it has been converted to a <xref:System.Windows.Media.PathGeometry> object. For example, you can clip video to display inside it.  
   
- ![Video displaying in the path geometry of text](./media/videotextdemo01.png "VideoTextDemo01")  
-Video displaying in the path geometry of text  
+ ![Video displaying in the path geometry of text](./media/drawing-formatted-text/video-displaying-text-path-geometry.png)
   
 <a name="win32_migration"></a>   
 ## Win32 Migration  

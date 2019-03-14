@@ -24,13 +24,11 @@ The examples in this section show how to create a shadow effect for displayed te
   
  The following example shows a hard drop shadow effect applied to text. In this case, the shadow is not blurred.  
   
- ![Text shadow with Softness &#61; 0](./media/shadowtext02.jpg "ShadowText02")  
-Example of text with a hard shadow  
+ ![Text shadow with Softness &#61; 0](./media/how-to-create-text-with-a-shadow/text-shadow-softness.jpg) 
   
  You can create a hard shadow by setting the <xref:System.Windows.Media.Effects.DropShadowEffect.BlurRadius%2A> property to `0.0`, which indicates that no blurring is used. You can control the direction of the shadow by modifying the <xref:System.Windows.Media.Effects.DropShadowEffect.Direction%2A> property. Set the directional value of this property to a degree between `0` and `360`. The following illustration shows the directional values of the <xref:System.Windows.Media.Effects.DropShadowEffect.Direction%2A> property setting.  
   
- ![DropShadow degree setting of shadow](./media/shadowtext08.png "ShadowText08")  
-DropShadow Direction diagram  
+ ![DropShadow degree setting of shadow](./media/how-to-create-text-with-a-shadow/drop-shadow-degree-setting.png)
   
  The following code example shows how to create a hard shadow.  
   
@@ -52,8 +50,7 @@ DropShadow Direction diagram
   
  The following code example uses a <xref:System.Windows.Media.TranslateTransform> to offset text. In this example, a slightly offset copy of text below the primary text creates a shadow effect.  
   
- ![Text shadow using a TranslateTransform](./media/shadowtext07.jpg "ShadowText07")  
-Example of text using a transform for a shadow effect  
+ ![Text shadow using a TranslateTransform](./media/how-to-create-text-with-a-shadow/text-transform-shadow-effect.jpg)    
   
  The following code example shows how to create a transform for a shadow effect.  
   

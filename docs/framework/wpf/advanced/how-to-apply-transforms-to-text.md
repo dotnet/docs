@@ -22,8 +22,7 @@ Transforms can alter the display of text in your application. The following exam
 ## Example  
  The following example shows text rotated about a specified point in the two-dimensional x-y plane.  
   
- ![Text rotated using a RotateTransform](./media/transformedtext01.jpg "TransformedText01")  
-Example of text rotated 90 degrees  
+ ![Text rotated using a RotateTransform](./media/how-to-apply-transforms-to-text/text-rotated-ninety-degrees.jpg)  
   
  The following code example uses a <xref:System.Windows.Media.RotateTransform> to rotate text. An <xref:System.Windows.Media.RotateTransform.Angle%2A> value of 90 rotates the element 90 degrees clockwise.  
   
@@ -50,8 +49,7 @@ Example of text rotated 90 degrees
   
  The following example shows text translated, or moved, along the x- and y-axis.  
   
- ![Text offset using a TranslateTransform](./media/transformedtext04.jpg "TransformedText04")  
-Example of translated text  
+ ![Text offset using a TranslateTransform](./media/how-to-apply-transforms-to-text/transformed-text-x-y-axis.jpg)
   
  The following code example uses a <xref:System.Windows.Media.TranslateTransform> to offset text. In this example, a slightly offset copy of text below the primary text creates a shadow effect.  
   

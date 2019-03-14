@@ -210,7 +210,7 @@ The following rules apply to variable scope in lambda expressions:
 
 ## C# language specification
 
-For more information, see the [Anonymous function expressions](~/_csharplang/spec/expressions.md#anonymous-function-expressions) section of the [C# language specification](../language-specification/index.md).
+For more information, see the [Anonymous function expressions](~/_csharplang/spec/expressions.md#anonymous-function-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## Featured book chapter
 

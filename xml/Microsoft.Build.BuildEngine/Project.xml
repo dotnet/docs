@@ -796,7 +796,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method generates the list of possible values by inspecting all of the  attributes in the project that involve the property.  
+ This method generates the list of possible values by inspecting all of the [Condition](/visualstudio/msbuild/msbuild-conditions) attributes in the project that involve the property.  
   
  ]]></format>
         </remarks>
@@ -1001,7 +1001,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Imported projects are specified by the  element in the project.  
+ Imported projects are specified by the [Import](/visualstudio/msbuild/import-element-msbuild) element in the project.  
   
  ]]></format>
         </remarks>
@@ -2191,7 +2191,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Targets are specified by the  element in the project.  
+ Targets are specified by the [Target](/visualstudio/msbuild/target-element-msbuild) element in the project.  
   
  ]]></format>
         </remarks>

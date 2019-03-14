@@ -541,7 +541,7 @@
 ## Remarks  
  This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
   
- When the Visual Basic equality operator is used to compare two strings, it passes the strings to the <xref:Microsoft.VisualBasic.CompilerServices.Operators.CompareString%2A> method along with a value of `False` for the `TextCompare` argument. This performs a case-sensitive comparison that is either ordinal or based on the current culture, depending on the value of the  statement.  
+ When the Visual Basic equality operator is used to compare two strings, it passes the strings to the <xref:Microsoft.VisualBasic.CompilerServices.Operators.CompareString%2A> method along with a value of `False` for the `TextCompare` argument. This performs a case-sensitive comparison that is either ordinal or based on the current culture, depending on the value of the [Option Compare](~/docs/visual-basic/language-reference/statements/option-compare-statement.md) statement.  
   
  ]]></format>
         </remarks>

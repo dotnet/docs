@@ -11,7 +11,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Obsolete Members in the .NET Framework
-The tables in this article list the type members that are obsolete in the .NET Framework 4.5 and later versions organized by assembly. Use the following links to see a list of the obsolete members and the recommended alternatives in each assembly. This topic doesn't list the members of obsolete types. For a list of obsolete types, see [Obsolete Types](../../../docs/framework/whats-new/obsolete-types.md).  
+The tables in this article list the type members that are obsolete in the .NET Framework 4.5 and later versions organized by assembly. Use the following links to see a list of the obsolete members and the recommended alternatives in each assembly. This topic doesn't list the members of obsolete types. For a list of obsolete types, see [Obsolete Types](obsolete-types.md).  
   
 -   [Obsolete members in system assemblies](#SystemMembers)  
   
@@ -793,5 +793,5 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:Microsoft.VisualBasic.MyServices.RegistryProxy?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.MyServices.RegistryProxy.DynData%2A>|The `DynData` registry key works only on Win9x, which is not supported by this version of the .NET Framework. Use the `PerformanceData` registry key instead. This property will be removed from a future version of the Framework.|  
   
 ## See also
-- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
-- [Obsolete Types](../../../docs/framework/whats-new/obsolete-types.md)
+- [What's Obsolete in the Class Library](whats-obsolete.md)
+- [Obsolete Types](obsolete-types.md)

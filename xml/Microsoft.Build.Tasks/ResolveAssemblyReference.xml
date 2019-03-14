@@ -271,16 +271,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that specifies whether the resulting dependency graph is automatically treated as if there were an App.Config file passed in to the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AppConfigFile" /> property.</summary>
+        <summary>Gets or sets a value that indicates whether the resulting dependency graph is automatically treated as if there were an App.Config file passed in to the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AppConfigFile" /> property.</summary>
         <value>
-          <see langword="true" /> if the resulting dependency graph is automatically treated as if there were an App.Config file passed in to the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AppConfigFile" /> property.</value>
+          <see langword="true" /> if the resulting dependency graph is automatically treated as if there were an App.Config file passed in to the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AppConfigFile" /> property; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The default value is `false`.  
   
- For more information about this property, see [ResolveAssemblyReference Task](https://msdn.microsoft.com/library/4d56d848-b29b-4dff-86a2-0a96c9e4a170)  
+ For more information about this property, see [ResolveAssemblyReference Task](/visualstudio/msbuild/resolveassemblyreference-task).  
   
  ]]></format>
         </remarks>
@@ -537,7 +537,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that specifies whether related files such as .pdb files and .xml files will be found.</summary>
+        <summary>Gets or sets a value that indicates whether related files such as .pdb files and .xml files will be found.</summary>
         <value>
           <see langword="true" /> if related files such as .pdb files and .xml files will be found; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -579,7 +579,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that specifies whether satellite assemblies will be found.</summary>
+        <summary>Gets or sets a value that indicates whether satellite assemblies will be found.</summary>
         <value>
           <see langword="true" /> if satellite assemblies will be found; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -621,7 +621,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that specifies whether the serialization assemblies will be found.</summary>
+        <summary>Gets or sets a value that indicates whether the serialization assemblies will be found.</summary>
         <value>
           <see langword="true" /> if the serialization assemblies will be found; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -731,7 +731,7 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A string that contains the names of the subsets of the specified target framework.</summary>
+        <summary>Gets or sets a string that contains the names of the subsets of the specified target framework.</summary>
         <value>A string value that contains subset names.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -880,8 +880,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An <see cref="T:Microsoft.Build.Framework.ITaskItem" /> that represents a list of XML files that contain assemblies that are expected to be in the target subset.</summary>
-        <value>An <see cref="T:Microsoft.Build.Framework.ITaskItem" /> list of XML files.</value>
+        <summary>Gets or sets an <see cref="T:Microsoft.Build.Framework.ITaskItem" /> that represents a list of XML files that contain assemblies that are expected to be in the target subset.</summary>
+        <value>A list of XML files.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1114,10 +1114,10 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A list of resolved SDK references which contain the sdk name, sdk location and the targeted configuration.  
+        <summary>Gets or sets a list of resolved SDK references which contain the sdk name, sdk location and the targeted configuration.  
   
  These locations will only be searched if the reference has the SDKName metadata attached to it.</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
+        <value>A list of resolved SDK references.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -1228,7 +1228,7 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the directories or special locations that are searched to find the files on disk that represent the assemblies.</summary>
+        <summary>Gets or sets the directories or special locations that are searched to find the files on disk that represent the assemblies.</summary>
         <value>The directories or special locations that are searched to find the files on disk that represent the assemblies.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -1296,7 +1296,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that specifies whether no messages are logged.</summary>
+        <summary>Gets or sets a value that indicates whether no messages are logged.</summary>
         <value>
           <see langword="true" /> if no messages are logged; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1553,8 +1553,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A list of target framework subset names that will be searched for in the target framework directories.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a list of target framework subset names that will be searched for in the target framework directories.</summary>
+        <value>A list of target framework subset names.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

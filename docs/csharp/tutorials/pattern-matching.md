@@ -17,7 +17,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 preview compiler. The C# 8 preview compiler is available with [Visual Studio 2019 preview 4](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+preview), or [.NET Core 3.0 preview 3](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You'll need to set up your machine to run .NET Core, including the C# 8.0 preview compiler. The C# 8 preview compiler is available with the latest [Visual Studio 2019 preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+preview), or the latest [.NET Core 3.0 preview](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -81,7 +81,7 @@ namespace toll_calculator
 }
 ```
 
-The preceding code uses a **switch expression** that tests the **type pattern**. A **switch expression** begins with the variable, `vehicle` in the preceding code, followed by the `switch` keyword. Next comes all the switch arms inside curly braces. The `switch` expression makes other refinements to the ceremony that surrounded the `switch` statement. The `case` keyword is omitted, and the result of each arm is an expression. The last two arms show a new language feature. The `{ }` case matches any non-null object that didn't match an earlier arm. This arm catches any incorrect types passed to this method. Finally, the `null` pattern catches when `null` is passed to this method. The `null` pattern can be last because the other type patterns match only a non-null object of the correct type.
+The preceding code uses a **switch expression** (not the same as a [`switch`](../language-reference/keywords/switch.md) statement) that tests the **type pattern**. A **switch expression** begins with the variable, `vehicle` in the preceding code, followed by the `switch` keyword. Next comes all the switch arms inside curly braces. The `switch` expression makes other refinements to the syntax that surrounds the `switch` statement. The `case` keyword is omitted, and the result of each arm is an expression. The last two arms show a new language feature. The `{ }` case matches any non-null object that didn't match an earlier arm. This arm catches any incorrect types passed to this method. Finally, the `null` pattern catches when `null` is passed to this method. The `null` pattern can be last because the other type patterns match only a non-null object of the correct type.
 
 You can test this code using the following code in `Program.cs`:
 
@@ -147,10 +147,15 @@ The toll authority wants to encourage vehicles to travel at maximum capacity. Th
 These rules can be implemented using the **property pattern** in the same switch expression. The property pattern examines properties of the object once the type has been determined.  The single case for a `Car` expands to four different cases:
 
 ```csharp
-Car { Passengers: 0} => 2.00m + 0.50m,
-Car { Passengers: 1 } => 2.0m,
-Car { Passengers: 2} => 2.0m - 0.50m,
-Car c when c.Passengers > 2 => 2.00m - 1.0m,
+vehicle switch
+{
+    Car { Passengers: 0} => 2.00m + 0.50m,
+    Car { Passengers: 1 } => 2.0m,
+    Car { Passengers: 2} => 2.0m - 0.50m,
+    Car c when c.Passengers > 2 => 2.00m - 1.0m,
+
+    // ...
+};
 ```
 
 The first three cases test the type as a `Car`, then check the value of the `Passengers` property. If both match, that expression is evaluated and returned. The final clause shows the `when` clause for a property pattern. You use the `when` clause to test conditions other than equality on a property. In the preceding example, the `when` clause tests to see that there are more than 2 passengers in the car. Strictly speaking, it's not necessary in this example.
@@ -158,10 +163,17 @@ The first three cases test the type as a `Car`, then check the value of the `Pas
 You would also expand the cases for taxis in a similar manner:
 
 ```csharp
-Taxi { Fares: 0} => 3.50m + 1.00m,
-Taxi { Fares: 1 } => 3.50m,
-Taxi { Fares: 2} => 3.50m - 0.50m,
-Taxi t => 3.50m - 1.00m,
+vehicle switch
+{
+    // ...
+
+    Taxi { Fares: 0} => 3.50m + 1.00m,
+    Taxi { Fares: 1 } => 3.50m,
+    Taxi { Fares: 2} => 3.50m - 0.50m,
+    Taxi t => 3.50m - 1.00m,
+
+    // ...
+};
 ```
 
 In the preceding example, the `when` clause was omitted on the final case.
@@ -169,17 +181,54 @@ In the preceding example, the `when` clause was omitted on the final case.
 Next, implement the occupancy rules by expanding the cases for buses, as shown in the following exmaple:
 
 ```csharp
-Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
-Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
-Bus b => 5.00m,
+vehicle switch
+{
+    // ...
+
+    Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
+    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
+    Bus b => 5.00m,
+    
+    // ...
+};
 ```
 
 The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they charge more based on the weight class of the trucks. Trucks over 5000 lbs are charged an extra $5.00. Light trucks, under 3000 lbs are given a $2.00 discount.  That rule is implemented with the following code:
 
 ```csharp
-DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
-DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
-DeliveryTruck t => 10.00m,
+vehicle switch
+{
+    // ...
+
+    DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
+    DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
+    DeliveryTruck t => 10.00m,
+};
+```
+
+When you've finished, you'll have a method that looks much like the following:
+
+```csharp
+vehicle switch
+{
+    Car { Passengers: 0} => 2.00m + 0.50m,
+    Car { Passengers: 1 } => 2.0m,
+    Car { Passengers: 2} => 2.0m - 0.50m,
+    Car c when c.Passengers > 2 => 2.00m - 1.0m,
+   
+    Taxi { Fares: 0} => 3.50m + 1.00m,
+    Taxi { Fares: 1 } => 3.50m,
+    Taxi { Fares: 2} => 3.50m - 0.50m,
+    Taxi t => 3.50m - 1.00m,
+    
+    Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
+    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
+    Bus b => 5.00m,
+    
+    DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
+    DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
+    DeliveryTruck t => 10.00m,
+};
 ```
 
 ## Recursive patterns
@@ -189,33 +238,33 @@ You can make this code less repetitive by using **recursive patterns**. The `Car
 ```csharp
 public decimal CalculateToll(object vehicle) =>
     vehicle switch
-{
-    Car c => c.Passengers switch
     {
-        0 => 2.00m + 0.5m,
-        1 => 2.0m,
-        2 => 2.0m - 0.5m,
-        _ => 2.00m - 1.0m
-    },
-
-    Taxi t => t.Fares switch
-    {
-        0 => 3.50m + 1.00m,
-        1 => 3.50m,
-        2 => 3.50m - 0.50m,
-        _ => 3.50m - 1.00m
-    },
-
-    Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
-    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
-    Bus b => 5.00m,
-
-    DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
-    DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
-    DeliveryTruck t => 10.00m,
-    { } => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
-    null => throw new ArgumentNullException(nameof(vehicle))
-};
+        Car c => c.Passengers switch
+        {
+            0 => 2.00m + 0.5m,
+            1 => 2.0m,
+            2 => 2.0m - 0.5m,
+            _ => 2.00m - 1.0m
+        },
+    
+        Taxi t => t.Fares switch
+        {
+            0 => 3.50m + 1.00m,
+            1 => 3.50m,
+            2 => 3.50m - 0.50m,
+            _ => 3.50m - 1.00m
+        },
+    
+        Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
+        Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
+        Bus b => 5.00m,
+    
+        DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
+        DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
+        DeliveryTruck t => 10.00m,
+        { } => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
+        null => throw new ArgumentNullException(nameof(vehicle))
+    };
 ```
 
 In the preceding sample, using a recursive expression means you don't repeat the `Car` and `Taxi` arms contain child arms that test the property value. This technique isn't used for the `Bus` and `DeliveryTruck` arms because those arms are testing ranges for the property, not discrete values.
@@ -258,18 +307,30 @@ The system that collects the tools uses a <xref:System.DateTime> structure for t
 ```csharp
 private static bool IsWeekDay(DateTime timeOfToll) =>
     timeOfToll.DayOfWeek switch
-{
-    DayOfWeek.Monday => true,
-    DayOfWeek.Tuesday => true,
-    DayOfWeek.Wednesday => true,
-    DayOfWeek.Thursday => true,
-    DayOfWeek.Friday => true,
-    DayOfWeek.Saturday => false,
-    DayOfWeek.Sunday => false
-};
+    {
+        DayOfWeek.Monday => true,
+        DayOfWeek.Tuesday => true,
+        DayOfWeek.Wednesday => true,
+        DayOfWeek.Thursday => true,
+        DayOfWeek.Friday => true,
+        DayOfWeek.Saturday => false,
+        DayOfWeek.Sunday => false
+    };
 ```
 
 That method works, but it's repetitious. You can simplify it, as shown in the following code:
+
+```csharp
+private static bool IsWeekDay(DateTime timeOfToll) =>
+    timeOfToll.DayOfWeek switch
+    {
+        DayOfWeek.Saturday,  => false,
+        DayOfWeek.Sunday => false,
+        _ => true
+    };
+```
+
+You can make a further simplification to this expression by combining the two values into one arm:
 
 [!code-csharp[IsWeekDay](../../../samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#IsWeekDay)]
 
@@ -301,15 +362,15 @@ The code should look like the following code after those two changes:
 ```csharp
 public decimal PeakTimePremium(DateTime timeOfToll, bool inbound) =>
     (IsWeekDay(timeOfToll), GetTimeBand(timeOfToll), inbound) switch
-{
-    (true, TimeBand.MorningRush, true) => 2.00m,
-    (true, TimeBand.MorningRush, false) => 1.00m,
-    (true, TimeBand.Daytime, _) => 1.50m,
-    (true, TimeBand.EveningRush, true) => 1.00m,
-    (true, TimeBand.EveningRush, false) => 2.00m,
-    (true, TimeBand.Overnight, _) => 0.75m,
-    (false, _, _) => 1.00m,
-};
+    {
+        (true, TimeBand.MorningRush, true) => 2.00m,
+        (true, TimeBand.MorningRush, false) => 1.00m,
+        (true, TimeBand.Daytime, _) => 1.50m,
+        (true, TimeBand.EveningRush, true) => 1.00m,
+        (true, TimeBand.EveningRush, false) => 2.00m,
+        (true, TimeBand.Overnight, _) => 0.75m,
+        (false, _, _) => 1.00m,
+    };
 ```
 
 Finally, you can remove the two rush hour times that pay the regular price. Once you remove those arms, you can replace the `false` with a discard (`_`) in the final switch arm. You'll have the following finished method:

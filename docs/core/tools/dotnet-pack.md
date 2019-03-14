@@ -199,7 +199,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   dotnet pack --runtime win10-x64
   ```
 
-* Pack the projec using a [.nuspec file](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec):
+* Pack the project using a [.nuspec file](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec):
 
   ```console
   dotnet pack  ~/projects/app1/project.csproj /p:NuspecFile=~/projects/app1/project.nuspec /p:NuspecBasePath=~/projects/app1/nuget

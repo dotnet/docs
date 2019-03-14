@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Create a Windows service app"
-ms.date: 03/12/2019
+ms.date: 03/14/2019
 dev_langs: 
   - "csharp"
   - "vb"
@@ -66,7 +66,7 @@ In this section, you add a custom event log to the Windows service. The <xref:Sy
 
 3. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs**, or **MyNewService.vb**, choose **View Code**.
 
-4. For C#, edit the `MyNewService()` constructor, or the `New()` constructor for Visual Basic, to define a custom event log:
+4. Define a custom event log. For C#, edit the existing `MyNewService()` constructor; for Visual Basic, add the `New()` constructor:
 
    ```csharp
    public MyNewService()
@@ -85,79 +85,93 @@ In this section, you add a custom event log to the Windows service. The <xref:Sy
 
    [!code-vb[VbRadconService#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#2)]
 
-5. Select **Save All** from the **File** menu.
+5. Add a `using` statement to **MyNewService.cs** (if it doesn't already exist), or an `Imports` statement **MyNewService.vb**, for the <xref:System.Diagnostics?displayProperty=nameWithType> namespace:
+
+    ```csharp
+    using System.Diagnostics;
+    ```
+
+    ```vb
+    Imports System.Diagnostics
+    ```
+
+6. Select **Save All** from the **File** menu.
 
 ### Define what occurs when the service starts
 
-In the code editor, locate the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method; Visual Studio automatically created an empty method definition when you created the project. Add code that writes an entry to the event log when the service starts:
+In the code editor for **MyNewService.cs** or **MyNewService.vb**, locate the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method; Visual Studio automatically created an empty method definition when you created the project. Add code that writes an entry to the event log when the service starts:
 
 [!code-csharp[VbRadconService#3](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#3)]
 [!code-vb[VbRadconService#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#3)]
 
+#### Polling
+
 Because a service application is designed to be long-running, it usually polls or monitors the system, which you set up in the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method. The `OnStart` method must return to the operating system after the service's operation has begun so that the system isn't blocked. 
 
-To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayProperty=nameWithType> component. The timer raises an <xref:System.Timers.Timer.Elapsed> event at regular intervals, at which time your service can do its monitoring. Use the <xref:System.Timers.Timer> component as follows:
+To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayProperty=nameWithType> component. The timer raises an <xref:System.Timers.Timer.Elapsed> event at regular intervals, at which time your service can do its monitoring. You use the <xref:System.Timers.Timer> component as follows:
 
-1. In the `MyNewService.OnStart` method, set the properties of the <xref:System.Timers.Timer> component.
+- Set the properties of the <xref:System.Timers.Timer> component in the `MyNewService.OnStart` method.
+- Start the timer by calling the <xref:System.Timers.Timer.Start%2A> method.
 
-2. Start the timer by calling the <xref:System.Timers.Timer.Start%2A> method. 
+##### Set up the polling mechanism.
+
+1. Add the following code in the `MyNewService.OnStart` event to set up the polling mechanism:
+
+   ```csharp
+   // Set up a timer that triggers every minute.
+   Timer timer = new Timer();
+   timer.Interval = 60000; // 60 seconds
+   timer.Elapsed += new ElapsedEventHandler(this.OnTimer);
+   timer.Start();
+   ```
+
+   ```vb
+   ' Set up a timer that triggers every minute.
+   Dim timer As Timer = New Timer()
+   timer.Interval = 60000 ' 60 seconds
+   AddHandler timer.Elapsed, AddressOf Me.OnTimer
+   timer.Start()
+   ```
+
+2. Add a `using` statement to **MyNewService.cs**, or an `Imports` statement to **MyNewService.vb**, for the <xref:System.Timers?displayProperty=nameWithType> namespace:
 
 
-The following example shows the code in the `MyNewService.OnStart` event that sets up the polling mechanism:
+   ```csharp
+   using System.Timers;
+   ```
 
-```csharp
-// Set up a timer that triggers every minute.
-Timer timer = new Timer();
-timer.Interval = 60000; // 60 seconds
-timer.Elapsed += new ElapsedEventHandler(this.OnTimer);
-timer.Start();
-```
+   ```vb
+   Imports System.Timers
+   ```
 
-```vb
-' Set up a timer that triggers every minute.
-Dim timer As Timer = New Timer()
-timer.Interval = 60000 ' 60 seconds
-AddHandler timer.Elapsed, AddressOf Me.OnTimer
-timer.Start()
-```
 
-Add a `using` statement, or an `Imports` statement for Visual Basic, for the <xref:System.Timers?displayProperty=nameWithType> namespace:
+3. In the `MyNewService` class, add the `OnTimer` method to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:
 
-    ```csharp
-    using System.Timers;
-    ```
+   ```csharp
+   public void OnTimer(object sender, ElapsedEventArgs args)
+   {
+       // TODO: Insert monitoring activities here.
+       eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId++);
+   }
+   ```
 
-    ```vb
-    Imports System.Timers
-    ```
+   ```vb
+   Private Sub OnTimer(sender As Object, e As Timers.ElapsedEventArgs)
+      ' TODO: Insert monitoring activities here.
+      eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId)
+      eventId = eventId + 1
+   End Sub
+   ```
 
-Add a member variable to the `MyNewService` class. It contains the identifier of the next event to write into the event log:
+4. In the `MyNewService` class, add a member variable. It contains the identifier of the next event to write into the event log:
 
-```csharp
-private int eventId = 1;
-```
+   ```csharp
+   private int eventId = 1;
+   ```
 
-```vb
-Private eventId As Integer = 1
-```
-
-Add a new method to the `MyNewService` class to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:
-
-```csharp
-public void OnTimer(object sender, ElapsedEventArgs args)
-{
-    // TODO: Insert monitoring activities here.
-    eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId++);
-}
-```
-
-```vb
-Private Sub OnTimer(sender As Object, e As Timers.ElapsedEventArgs)
-    ' TODO: Insert monitoring activities here.
-    eventLog1.WriteEntry("Monitoring the System", EventLogEntryType.Information, eventId)
-    eventId = eventId + 1
-End Sub
-```
+   ```vb
+   Private eventId As Integer = 1
+   ```
 
 Instead of running all your work on the main thread, you can run tasks by using background worker threads. For more information, see <xref:System.ComponentModel.BackgroundWorker?displayProperty=fullName>.
 
@@ -190,7 +204,7 @@ You can implement the SERVICE_START_PENDING and SERVICE_STOP_PENDING status sett
 
 ### Implement service pending status
 
-1. Add a `using` statement, or an `Imports` statement for Visual Basic, for the <xref:System.Runtime.InteropServices?displayProperty=nameWithType> namespace in the **MyNewService.cs** or **MyNewService.vb** file:
+1. Add a `using` statement to **MyNewService.cs**, or an `Imports` statement to **MyNewService.vb**, for the <xref:System.Runtime.InteropServices?displayProperty=nameWithType> namespace:
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -293,7 +307,33 @@ You can implement the SERVICE_START_PENDING and SERVICE_STOP_PENDING status sett
     SetServiceStatus(Me.ServiceHandle, serviceStatus)
     ```
 
-6. (Optional) If <xref:System.ServiceProcess.ServiceBase.OnStop%2A> is a long-running method, repeat this procedure to implement the SERVICE_STOP_PENDING status and return the SERVICE_STOPPED status before the <xref:System.ServiceProcess.ServiceBase.OnStop%2A> method exits.
+6. (Optional) If <xref:System.ServiceProcess.ServiceBase.OnStop%2A> is a long-running method, repeat this procedure in the `OnStop` method. Implement the SERVICE_STOP_PENDING status and return the SERVICE_STOPPED status before the `OnStop` method exits.
+
+   For example:
+
+    ```csharp
+    // Update the service state to Stop Pending.
+    ServiceStatus serviceStatus = new ServiceStatus();
+    serviceStatus.dwCurrentState = ServiceState.SERVICE_STOP_PENDING;
+    serviceStatus.dwWaitHint = 100000;
+    SetServiceStatus(this.ServiceHandle, ref serviceStatus);
+
+    // Update the service state to Stopped.
+    serviceStatus.dwCurrentState = ServiceState.SERVICE_STOPPED;
+    SetServiceStatus(this.ServiceHandle, ref serviceStatus);
+    ```
+
+    ```vb
+    ' Update the service state to Stop Pending.
+    Dim serviceStatus As ServiceStatus = New ServiceStatus()
+    serviceStatus.dwCurrentState = ServiceState.SERVICE_STOP_PENDING
+    serviceStatus.dwWaitHint = 100000
+    SetServiceStatus(Me.ServiceHandle, serviceStatus)
+
+    ' Update the service state to Stopped.
+    serviceStatus.dwCurrentState = ServiceState.SERVICE_STOPPED
+    SetServiceStatus(Me.ServiceHandle, serviceStatus)    
+    ```
 
 > [!NOTE]
 > The Service Control Manager uses the `dwWaitHint` and `dwCheckpoint` members of the [SERVICE_STATUS structure](/windows/desktop/api/winsvc/ns-winsvc-_service_status) to determine how much time to wait for a Windows service to start or shut down. If your `OnStart` and `OnStop` methods run long, your service can request more time by calling `SetServiceStatus` again with an incremented `dwCheckPoint` value.
@@ -348,7 +388,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
 ### To add startup parameters
 
-1. Select **Program.cs**, or **MyNewService.Designer.vb**, then choose **View Code** from the shortcut menu. In the `Main` method, add an input parameter to pass to the service constructor:
+1. Select **Program.cs**, or **MyNewService.Designer.vb**, then choose **View Code** from the shortcut menu. In the `Main` method, change the code to add an input parameter and pass it to the service constructor:
 
    ```csharp
    static void Main(string[] args)
@@ -369,7 +409,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
    End Sub
    ```
 
-2. In **MyNewService.cs**, or **MyNewService.vb**, change the `MyNewService` constructor as follows:
+2. In **MyNewService.cs**, or **MyNewService.vb**, change the `MyNewService` constructor to process the input parameter as follows:
 
    ```csharp
    using System.Diagnostics;
@@ -378,28 +418,28 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
    {
        InitializeComponent();
 
-        string eventSourceName = "MySource";
-        string logName = "MyNewLog";
+       string eventSourceName = "MySource";
+       string logName = "MyNewLog";
 
-        if (args.Length > 0)
-        {
-            eventSourceName = args[0];
-        }
+       if (args.Length > 0)
+       {
+          eventSourceName = args[0];
+       }
 
-        if (args.Length > 1)
-        {
-            logName = args[1];
-        }
+       if (args.Length > 1)
+       {
+           logName = args[1];
+       }
 
-        eventLog1 = new EventLog();
+       eventLog1 = new EventLog();
 
-        if (!EventLog.SourceExists(eventSourceName))
-        {
-            EventLog.CreateEventSource(eventSourceName, logName);
-        }
+       if (!EventLog.SourceExists(eventSourceName))
+       {
+           EventLog.CreateEventSource(eventSourceName, logName);
+       }
 
-        eventLog1.Source = eventSourceName;
-        eventLog1.Log = logName;
+       eventLog1.Source = eventSourceName;
+       eventLog1.Log = logName;
    }
    ```
 

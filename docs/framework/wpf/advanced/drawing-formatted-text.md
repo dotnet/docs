@@ -18,8 +18,7 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
 ## Technology Overview  
  The <xref:System.Windows.Media.FormattedText> object allows you to draw multi-line text, in which each character in the text can be individually formatted. The following example shows text that has several formats applied to it.  
   
- ![Text displayed using FormattedText object](./media/formattedtext01.jpg "FormattedText01")  
-Displayed text using FormattedText method  
+ ![Text displayed using FormattedText object](./media/typography-in-wpf/text-formatted-linear-gradient.jpg)  
   
 > [!NOTE]
 >  For those developers migrating from the [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] API, the table in the [Win32 Migration](#win32_migration) section lists the [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] DrawText flags and the approximate equivalent in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
@@ -56,19 +55,15 @@ Displayed text showing wordwrapping and ellipsis
 ### Converting Formatted Text to a Geometry  
  You can convert formatted text into <xref:System.Windows.Media.Geometry> objects, allowing you to create other types of visually interesting text. For example, you could create a <xref:System.Windows.Media.Geometry> object based on the outline of a text string.  
   
- ![Text outline using a linear gradient brush](./media/outlinedtext02.jpg "OutlinedText02")  
-Text outline using a linear gradient brush  
+ ![Text outline using a linear gradient brush](./media/typography-in-wpf/text-outline-linear-gradient.jpg)    
   
  The following examples illustrate several ways of creating interesting visual effects by modifying the stroke, fill, and highlight of converted text.  
   
- ![Text with different colors for fill and stroke](./media/outlinedtext03.jpg "OutlinedText03")  
-Example of setting stroke and fill to different colors  
+ ![Text with different colors for fill and stroke](./media/typography-in-wpf/fill-stroke-text-effect.jpg)  
   
- ![Text with image brush applied to stroke](./media/outlinedtext04.jpg "OutlinedText04")  
-Example of an image brush applied to the stroke  
+ ![Text with image brush applied to stroke](./media/typography-in-wpf/image-brush-application.jpg)
   
- ![Text with image brush applied to stroke](./media/outlinedtext05.jpg "OutlinedText05")  
-Example of an image brush applied to the stroke and highlight  
+ ![Text with image brush applied to stroke and highlight](./media/typography-in-wpf/image-brush-text-application.jpg)
   
  When text is converted to a <xref:System.Windows.Media.Geometry> object, it is no longer a collection of characters—you cannot modify the characters in the text string. However, you can affect the appearance of the converted text by modifying its stroke and fill properties. The stroke refers to the outline of the converted text; the fill refers to the area inside the outline of the converted text. For more information, see [Create Outlined Text](how-to-create-outlined-text.md).  
   

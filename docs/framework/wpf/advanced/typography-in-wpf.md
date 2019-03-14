@@ -130,7 +130,7 @@ Text hosted in a FlowDocumentReader
   
  ![Text with image brush applied to stroke](./media/typography-in-wpf/image-brush-application.jpg)
   
- ![Text with image brush applied to stroke](./media/typography-in-wpf/image-brush-text-application.jpg)
+ ![Text with image brush applied to stroke and highlight](./media/typography-in-wpf/image-brush-text-application.jpg)
   
  For more information on the <xref:System.Windows.Media.FormattedText> object, see [Drawing Formatted Text](drawing-formatted-text.md).  
   

@@ -294,7 +294,7 @@
 ### [Deconstructing tuples and other types](csharp/deconstruct.md)
 ### [Interfaces](csharp/programming-guide/interfaces/index.md)
 ### [Methods](csharp/methods.md)
-### [Lambda Expressions](csharp/lambda-expressions.md)
+### [Lambda Expressions](csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
 ### [Discards](csharp/discards.md)

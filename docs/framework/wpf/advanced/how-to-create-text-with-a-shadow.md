@@ -13,8 +13,7 @@ The examples in this section show how to create a shadow effect for displayed te
 ## Example  
  The <xref:System.Windows.Media.Effects.DropShadowEffect> object allows you to create a variety of drop shadow effects for [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] objects. The following example shows a drop shadow effect applied to text. In this case, the shadow is a soft shadow, which means the shadow color blurs.  
   
- ![Text shadow with Softness &#61; 0.25](./media/shadowtext01.jpg "ShadowText01")  
-Example of text with a soft shadow  
+ ![Text shadow with Softness &#61; 0.25](./media/how-to-create-text-with-a-shadow/drop-shadow-text-effect.jpg) 
   
  You can control the width of a shadow by setting the <xref:System.Windows.Media.Effects.DropShadowEffect.ShadowDepth%2A> property. A value of `4.0` indicates a shadow width of 4 pixels. You can control the softness, or blur, of a shadow by modifying the <xref:System.Windows.Media.Effects.DropShadowEffect.BlurRadius%2A> property. A value of `0.0` indicates no blurring. The following code example shows how to create a soft shadow.  
   
@@ -42,8 +41,7 @@ DropShadow Direction diagram
   
  The following example shows a blur effect applied to text.  
   
- ![Text shadow using a BlurBitmapEffect](./media/shadowtext06.jpg "ShadowText06")  
-Example of text with a blur effect  
+ ![Text shadow using a BlurBitmapEffect](./media/how-to-create-text-with-a-shadow/text-shadow-blur-effect.jpg)  
   
  The following code example shows how to create a blur effect.  
   

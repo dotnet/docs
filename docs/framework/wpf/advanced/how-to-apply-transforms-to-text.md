@@ -31,7 +31,7 @@ Example of text rotated 90 degrees
   
  The following example shows the second line of text scaled by 150% along the x-axis, and the third line of text scaled by 150% along the y-axis.  
   
- ![Text scaled using a ScaleTransform](./media/typography-in-wpf/scaled-text-scaletransform.jpg) 
+ ![Text scaled using a ScaleTransform](./media/how-to-apply-transforms-to-text/scaled-text-scaletransform.jpg) 
   
  The following code example uses a <xref:System.Windows.Media.ScaleTransform> to scale text from its original size.  
   
@@ -42,7 +42,7 @@ Example of text rotated 90 degrees
   
  The following example shows text skewed along the x-axis.  
   
- ![Text skewed using a SkewTransform](./media/typography-in-wpf/skewed-transformed-text.jpg)
+ ![Text skewed using a SkewTransform](./media/how-to-apply-transforms-to-text/skewed-transformed-text.jpg)
    
  The following code example uses a <xref:System.Windows.Media.SkewTransform> to skew text. A skew, also known as a shear, is a transformation that stretches the coordinate space in a non-uniform manner. In this example, the two text strings are skewed -30° and 30° along the x-coordinate.  
   

@@ -62,9 +62,9 @@ The .NET Framework changes over time. Each new version adds new types and type m
 |1.0|v1.0.3705|  
   
 ## Obsolete Lists for the .NET Framework 4.5 and later versions  
- [Obsolete Types](../../../docs/framework/whats-new/obsolete-types.md)  
+ [Obsolete Types](obsolete-types.md)  
   
- [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md)  
+ [Obsolete Members](obsolete-members.md)  
   
 ## Obsolete Lists for Previous Versions  
  [Obsolete Types in the .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=224224)  
@@ -76,4 +76,4 @@ The .NET Framework changes over time. Each new version adds new types and type m
  [.NET Framework 2.0 Obsolete List](https://go.microsoft.com/fwlink/?LinkID=125264)  
   
 ## See also
-- [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)
+- [\<supportedRuntime> Element](../configure-apps/file-schema/startup/supportedruntime-element.md)

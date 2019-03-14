@@ -110,8 +110,7 @@ Text with ClearType y-direction antialiasing
   
  The following example shows text content hosted in a <xref:System.Windows.Controls.FlowDocumentReader>, which provides search, navigation, pagination, and content scaling support.  
   
- ![Using OpenType fonts sample screen shot](./media/typographyinwpf-03.png "TypographyInWPF_03")  
-Text hosted in a FlowDocumentReader  
+ ![Screenshot that shows OpenType fonts.](./media/typography-in-wpf/typography-text-flowdocumentreader.png)
   
  For more information, see [Documents in WPF](documents-in-wpf.md).  
   

@@ -31,7 +31,7 @@ In this tutorial, you'll create and explore an application that takes incoming d
 
 Consider a major metro area that is using tolls and peak time pricing to manage traffic. You write an application that calculates tolls for a vehicle based on its type. Later enhancements incorporate pricing based on the number of occupants in the vehicle. Further enhancements add pricing based on the time and the day of the week.
 
-From that brief description, you may have quickly sketched out an object hierarchy to model this system. If you're building the entire system, and these were the only requirements, that would be a good solution. That's not the situation. This metro area had already been using software to manage vehicle registrations for years. They bought different systems from different suppliers for personal cars, taxis, buses, and delivery trucks. Different systems all provide classes to represent the data they export. But these different systems don't provide a single object model for you to use. In this tutorial, you'll use these simplified classes for the vehicle classes from these external systems, as shown in the following code:
+From that brief description, you may have quickly sketched out an object hierarchy to model this system. However, your data is coming from multiple sources like other vehicle registration management systems. These systems provide different classes to model that data and you don't have a single object model you can use. In this tutorial, you'll use these simplified classes to model for the vehicle data from these external systems, as shown in the following code:
 
 [!code-csharp[ExternalSystems](../../../samples/csharp/tutorials/patterns/start/toll-calculator/ExternalSystems.cs)]
 
@@ -44,7 +44,7 @@ The scenario used in this tutorial highlights the kinds of problems that are wel
 - The objects you need to work with aren't in an object hierarchy that matches your goals. You may be working with classes that are part of unrelated systems.
 - The functionality you're adding isn't part of the core abstraction for these classes. The toll paid by a vehicle *changes* for different types of vehicles, but the toll isn't a core function of the vehicle.
 
-The pattern matching features in C# make it easier to build software when the *shape* of the data and the *operations* on that data are not described together.
+When the *shape* of the data and the *operations* on that data are not described together, the pattern matching features in C# make it easier to work with. 
 
 ## Implement the basic toll calculations
 
@@ -55,7 +55,7 @@ The most basic toll calculation relies only on the vehicle type:
 - A `Bus` is $5.00.
 - A `DeliveryTruck` is $10.00
 
-Create a new `TollCalculator` class, and implement the You can implement that using this version of a `TollCalculator` class:
+Create a new `TollCalculator` class, and implement pattern matching on the vehicle type to get the toll amount.
 
 ```csharp
 using System;

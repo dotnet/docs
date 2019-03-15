@@ -248,4 +248,3 @@ This sample demonstrates how to implement a custom client issued token provider.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Security\DurableIssuedTokenProvider`  
   
-## See also

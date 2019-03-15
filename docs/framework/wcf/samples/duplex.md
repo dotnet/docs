@@ -188,4 +188,3 @@ client.Close();
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Service\Duplex`  
   
-## See also

@@ -298,4 +298,3 @@ public interface ICalculator
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Metadata\WsdlDocumentation`  
   
-## See also

@@ -53,7 +53,7 @@ Windows containers are supported on [Windows 10 Anniversary Update](https://www.
 
 You need to have Docker for Windows, version 1.12 Beta 26 or higher to support Windows containers. By default, Docker enables Linux based containers; switch to Windows containers by right clicking the Docker icon in the system tray and select **Switch to Windows containers**. Docker will run the process to change and a restart may be required.
 
-![Windows-Containers](./media/console/SwitchContainer.png)
+![Screenshot of the Windows container menu option.](./media/console/windows-container-option.png)
 
 ## Building the application
 Typically console applications are distributed through an installer, FTP, or File Share deployment. When deploying to a container, the assets need to be compiled and staged to a location that can be used when the Docker image is created.

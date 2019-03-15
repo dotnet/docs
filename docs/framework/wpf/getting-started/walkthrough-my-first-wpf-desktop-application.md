@@ -80,6 +80,8 @@ The first step is to create the application infrastructure, which includes an ap
 
     [!code-xaml[ExpenseIt#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/App.xaml#1)]
 
+    ---
+
 3. Open *MainWindow.xaml*.
 
     This XAML file is the main window of your application and displays content created in pages. The <xref:System.Windows.Window> class defines the properties of a window, such as its title, size, or icon, and handles events, such as closing or hiding.

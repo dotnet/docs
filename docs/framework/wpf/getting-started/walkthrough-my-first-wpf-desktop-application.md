@@ -66,11 +66,12 @@ The first step is to create the application infrastructure, which includes an ap
 
     Your XAML should look like the following in Visual Basic:
 
+
     [!code-vb[ExpenseIt#1_A](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/Application.xaml#1_a)]
 
     And like the following in C#:
 
-    [!code-csharp[ExpenseIt#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/App.xaml#1)]
+    [!code-xaml[ExpenseIt#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/App.xaml#1)]
 
 # [Visual Basic](#tab/vb)
 

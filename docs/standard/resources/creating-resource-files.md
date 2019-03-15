@@ -115,7 +115,7 @@ The text file is converted to a .resources file by using the following command:
 ```console
 resgen GreetingResources.txt
 ```
-# [.NET Framework](#net-framework)
+# [.NET Framework](#tab/net-framework)
 
  The following example shows the source code for a console application that uses the .resources file to display messages to the user.
 
@@ -133,8 +133,7 @@ vbc greeting.vb -resource:GreetingResources.resources
  ```console
 csc greeting.cs -resource:GreetingResources.resources
 ```
-
-# [.NET Core](#net-core)
+# [.NET Core](#tab/net-core)
 
 The following example shows the source code for a .NET Core console application that uses the .resources file to display messages to the user.
 
@@ -150,6 +149,7 @@ To include the .resources file in your .NET Core application, you have to add th
     <EmbeddedResource Include="GreetingResources.resources" />
   </ItemGroup>
 ```
+
 ---
 
 <a name="ResxFiles"></a>

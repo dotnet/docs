@@ -17,6 +17,7 @@ One of the properties of the `My.Computer.Mouse` object was called, but the comp
 -   Install a mouse on the computer.  
   
 ## See also
+
 - [My.Computer.Mouse](xref:Microsoft.VisualBasic.Devices.Mouse)
 - [Handling and throwing exceptions in .NET](../../standard/exceptions/index.md)
 - [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

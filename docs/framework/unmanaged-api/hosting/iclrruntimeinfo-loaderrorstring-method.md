@@ -37,7 +37,7 @@ HRESULT LoadErrorString(
      [in, lcid] LONG iLocaleID);  
 ```  
   
-#### Parameters  
+## Parameters  
  `iResourceID`  
  [in] The HRESULT to translate.  
   

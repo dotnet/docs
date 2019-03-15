@@ -28,7 +28,7 @@ HRESULT HasEmbeddedSource(
    [out, retval]  BOOL  *pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a variable that indicates whether the document has source embedded in the debugging symbols.  
   

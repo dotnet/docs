@@ -38,7 +38,7 @@ HRESULT GetMetadata(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `imagePath`  
  [in] A string that specifies the path of the image file.  
   

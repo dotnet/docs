@@ -28,7 +28,7 @@ HRESULT GetReturnValueForILOffset(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ILOffset`  
  The IL offset. See the Remarks section.  
   

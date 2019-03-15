@@ -29,7 +29,7 @@ HRESULT CreateCrst (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppCrst`  
  [out] A pointer to the address of an [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md) instance implemented by the host, or null if the critical section could not be created.  
   

@@ -29,7 +29,7 @@ HRESULT Clone (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  [out] A pointer to the address of an `ICorDebugEnum` object that is a copy of this `ICorDebugEnum` object.  
   

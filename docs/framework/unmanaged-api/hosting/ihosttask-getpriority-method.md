@@ -29,7 +29,7 @@ HRESULT GetPriority (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pPriority`  
  [out] A pointer to an integer that indicates the thread priority level of the task represented by the current `IHostTask` instance.  
   

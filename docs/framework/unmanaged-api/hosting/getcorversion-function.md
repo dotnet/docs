@@ -33,7 +33,7 @@ HRESULT GetCORVersion (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `pbuffer`  
  A pointer to a buffer in which the CLR returns a string specifying the version of the runtime that is currently loaded into the process. The returned string takes the same form as strings passed to [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md), for example, "v1.0.1216". If the runtime has not yet been loaded into the process, the function returns the appropriate directory information for the latest version of the runtime installed on the computer.  
   

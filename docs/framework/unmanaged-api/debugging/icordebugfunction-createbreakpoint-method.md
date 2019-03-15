@@ -29,7 +29,7 @@ HRESULT CreateBreakpoint (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppBreakpoint`  
  [out] A pointer to the address of an ICorDebugFunctionBreakpoint object that represents the new breakpoint for the function.  
   

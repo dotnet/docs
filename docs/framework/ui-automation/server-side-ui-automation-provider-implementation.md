@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, server-side provider implementation"
   - "provider implementation, UI Automation"
 ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Server-Side UI Automation Provider Implementation
 > [!NOTE]
@@ -172,5 +170,3 @@ ms.author: "mhopkins"
 - [Raise Events from a UI Automation Provider](../../../docs/framework/ui-automation/raise-events-from-a-ui-automation-provider.md)
 - [Enable Navigation in a UI Automation Fragment Provider](../../../docs/framework/ui-automation/enable-navigation-in-a-ui-automation-fragment-provider.md)
 - [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
-- [Simple Provider Sample](https://msdn.microsoft.com/library/c10a6255-e8dc-494b-a051-15111b47984a)
-- [Fragment Provider Sample](https://msdn.microsoft.com/library/778ef1bc-8610-4bc9-886e-aeff94a8a13e)

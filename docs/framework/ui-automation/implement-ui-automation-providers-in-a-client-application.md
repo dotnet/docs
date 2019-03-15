@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "client-side UI Automation provider, implementation within applications"
   - "UI Automation, implementing client-side provider within application"
 ms.assetid: f325f0d8-1715-41ea-85ca-45b82ffea8bc
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implement UI Automation Providers in a Client Application
 > [!NOTE]

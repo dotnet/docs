@@ -23,7 +23,7 @@ The [!INCLUDE[wrt](../../../includes/wrt-md.md)] Metadata Export Tool (Winmdexp.
 winmdexp [options] winmdmodule  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument or option|Description|  
 |------------------------|-----------------|  
@@ -48,4 +48,4 @@ winmdexp [options] winmdmodule
 - [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
 - [Creating Windows Runtime Components in C# and Visual Basic](https://go.microsoft.com/fwlink/p/?LinkID=238313)
 - [Winmdexp.exe Error Messages](../../../docs/framework/tools/winmdexp-exe-error-messages.md)
-- [Build, Deployment, and Configuration Tools (.NET Framework)](https://msdn.microsoft.com/library/b8c921be-6012-4181-b8d4-ab15813fc9a7)
+- [Build, Deployment, and Configuration Tools (.NET Framework)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd233108(v=vs.100))

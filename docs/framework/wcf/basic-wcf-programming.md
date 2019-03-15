@@ -26,7 +26,7 @@ This section presents the fundamentals for creating Windows Communication Founda
  Describes the basics of hosting services in an application.  
   
  [Building Clients](../../../docs/framework/wcf/building-clients.md)  
- Describes how to obtain metadata from services, convert that into WCF client code, handle security issues, and build, configure, and host an WCF client.  
+ Describes how to obtain metadata from services, convert that into WCF client code, handle security issues, and build, configure, and host a WCF client.  
   
  [Introduction to Extensibility](../../../docs/framework/wcf/introduction-to-extensibility.md)  
  Describes how to extend WCF to create custom solutions.  
@@ -55,7 +55,7 @@ This section presents the fundamentals for creating Windows Communication Founda
   
  [Windows Communication Foundation Tools](../../../docs/framework/wcf/tools.md)  
   
- [Windows Communication Foundation Samples](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)  
+ [Windows Communication Foundation (WCF) samples](./samples/index.md)  
   
  [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)  
   

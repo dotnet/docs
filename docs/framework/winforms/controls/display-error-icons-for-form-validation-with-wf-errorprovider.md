@@ -21,7 +21,7 @@ You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component 
   
 2.  Add an <xref:System.Windows.Forms.ErrorProvider> component to the form.  
   
-3.  Select the first control and add code to its <xref:System.Windows.Forms.Control.Validating> event handler. In order for this code to run properly, the procedure must be connected to the event. For more information, see [How to: Create Event Handlers at Run Time for Windows Forms](../../../../docs/framework/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md).  
+3.  Select the first control and add code to its <xref:System.Windows.Forms.Control.Validating> event handler. In order for this code to run properly, the procedure must be connected to the event. For more information, see [How to: Create Event Handlers at Run Time for Windows Forms](../how-to-create-event-handlers-at-run-time-for-windows-forms.md).  
   
      The following code tests the validity of the data the user has entered; if the data is invalid, the <xref:System.Windows.Forms.ErrorProvider.SetError%2A> method is called. The first argument of the <xref:System.Windows.Forms.ErrorProvider.SetError%2A> method specifies which control to display the icon next to. The second argument is the error text to display.  
   
@@ -88,5 +88,5 @@ You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component 
   
 ## See also
 - <xref:System.Windows.Forms.ErrorProvider.SetError%2A>
-- [ErrorProvider Component Overview](../../../../docs/framework/winforms/controls/errorprovider-component-overview-windows-forms.md)
-- [How to: View Errors Within a DataSet with the Windows Forms ErrorProvider Component](../../../../docs/framework/winforms/controls/view-errors-within-a-dataset-with-wf-errorprovider-component.md)
+- [ErrorProvider Component Overview](errorprovider-component-overview-windows-forms.md)
+- [How to: View Errors Within a DataSet with the Windows Forms ErrorProvider Component](view-errors-within-a-dataset-with-wf-errorprovider-component.md)

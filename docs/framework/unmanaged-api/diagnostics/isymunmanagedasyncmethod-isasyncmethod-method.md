@@ -16,7 +16,7 @@ Checks if the method has async information or not.
 HRESULT IsAsyncMethod(    [out, retval] BOOL* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  

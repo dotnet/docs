@@ -31,7 +31,7 @@ HRESULT GetParamForMethodIndex (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `md`  
  [in] A token that represents the method to return the parameter token for.  
   

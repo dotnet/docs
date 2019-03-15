@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugILFrame Interface1"
+title: "ICorDebugILFrame Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugILFrame"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugILFrame Interface1
+# ICorDebugILFrame Interface
+
 Represents a stack frame of Microsoft intermediate language (MSIL) code. This interface is a subclass of the ICorDebugFrame interface.  
   
 ## Methods  

@@ -14,4 +14,4 @@ The <xref:System.Windows.Controls.PasswordBox> control is used to input sensitiv
 ## See also
 - <xref:System.Windows.Controls.TextBox>
 - <xref:System.Windows.Controls.RichTextBox>
-- [Control Library](../../../../docs/framework/wpf/controls/control-library.md)
+- [Control Library](control-library.md)

@@ -30,7 +30,7 @@ HRESULT DebugEvent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDebugEvent`  
  [in] A pointer to the native event.  
   

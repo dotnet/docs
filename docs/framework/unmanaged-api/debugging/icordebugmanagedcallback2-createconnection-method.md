@@ -31,7 +31,7 @@ HRESULT CreateConnection (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an "ICorDebugProcess" object that represents the process in which the connection was created  
   

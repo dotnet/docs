@@ -29,7 +29,7 @@ HRESULT CreateAssemblyScavenger (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppUnkReserved`  
  [out] The returned `IUnknown` pointer.  
   

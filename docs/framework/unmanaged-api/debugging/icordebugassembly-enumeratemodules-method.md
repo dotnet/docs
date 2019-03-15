@@ -29,7 +29,7 @@ HRESULT EnumerateModules (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppModules`  
  [out] A pointer to the address of the ICorDebugModuleEnum interface that is the enumerator.  
   

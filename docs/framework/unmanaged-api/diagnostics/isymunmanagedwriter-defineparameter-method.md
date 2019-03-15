@@ -36,7 +36,7 @@ HRESULT DefineParameter(
     [in] ULONG32      addr3);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The parameter name.  
   

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "elements, moving"
   - "UI Automation, moving elements"
 ms.assetid: 4042cb44-e27e-4a03-ac36-9be1eed65b47
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Move a UI Automation Element
 > [!NOTE]
@@ -27,4 +25,4 @@ ms.author: "mhopkins"
 [!code-vb[WindowMove#1300](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WindowMove/VisualBasic/windowmove.vb#1300)]  
   
 ## See also
-- [WindowPattern Sample](https://msdn.microsoft.com/library/598b695c-8baf-406e-bbfb-2a1c7842a1de)
+- [WindowPattern Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/WindowMove)

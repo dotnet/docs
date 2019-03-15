@@ -29,7 +29,7 @@ HRESULT InitializeHostOverlapped (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pvOverlapped`  
  [in] A pointer to the Win32 `OVERLAPPED` structure to be included with the I/O request.  
   

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugILFrame2 Interface1"
+title: "ICorDebugILFrame2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugILFrame2"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugILFrame2 Interface1
+# ICorDebugILFrame2 Interface
+
 A logical extension of the ICorDebugILFrame interface.  
   
 ## Methods  

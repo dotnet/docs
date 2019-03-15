@@ -4,7 +4,7 @@ description: Learn the fundamentals of functional programming in F#.
 ms.date: 10/29/2018
 ---
 
-# Introduction to Functional Programming in F# #
+# Introduction to Functional Programming in F\#
 
 Functional programming is a style of programming that emphasizes the use of functions and immutable data. Typed functional programming is when functional programming is combined with static types, such as with F#. In general, the following concepts are emphasized in functional programming:
 

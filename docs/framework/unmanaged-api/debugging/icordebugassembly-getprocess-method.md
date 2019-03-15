@@ -29,7 +29,7 @@ HRESULT GetProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppProcess`  
  [out] A pointer to an ICorDebugProcess interface that represents the process.  
   

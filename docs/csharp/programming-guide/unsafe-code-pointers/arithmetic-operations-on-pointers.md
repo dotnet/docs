@@ -23,9 +23,9 @@ This topic discusses using the arithmetic operators `+` and `-` to manipulate po
  No exceptions are generated when the arithmetic operation overflows the domain of the pointer, and the result depends on the implementation.  
   
 ## Example  
- [!code-csharp[csProgGuidePointers#14](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_1.cs)]  
+ [!code-csharp[csProgGuidePointers#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers2.cs#14)]  
   
- [!code-csharp[csProgGuidePointers#15](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_2.cs)]  
+ [!code-csharp[csProgGuidePointers#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers.cs#15)]  
   
 ## C# language specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

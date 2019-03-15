@@ -30,7 +30,7 @@ HRESULT SetActionOnFailure (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `failure`  
  [in] One of the [EClrFailure](../../../../docs/framework/unmanaged-api/hosting/eclrfailure-enumeration.md) values, indicating the type of failure for which to take action.  
   

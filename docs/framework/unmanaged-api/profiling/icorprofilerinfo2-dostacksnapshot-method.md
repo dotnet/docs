@@ -33,7 +33,7 @@ HRESULT DoStackSnapshot(
     [in] ULONG32 contextSize);  
 ```  
   
-#### Parameters  
+## Parameters  
  `thread`  
  [in] The ID of the target thread.  
   

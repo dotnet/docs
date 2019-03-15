@@ -4,6 +4,7 @@ description: In this tutorial about branches and loops, you write C# code to exp
 ms.date: 10/31/2017
 ms.custom: mvc
 ---
+
 # Learn conditional logic with branch and loop statements
 
 This tutorial teaches you how to write code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
@@ -14,7 +15,7 @@ This tutorial expects you to have a machine you can use for development. The .NE
 
 Create a directory named **branches-tutorial**. Make that the current directory and run `dotnet new console -n BranchesAndLoops -o .`. This command creates a new .NET Core console application in the current directory.
 
-Open **Program.cs** in your favorite editor, and replace the line `Console.Writeline("Hello World!");` with the following code:
+Open **Program.cs** in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code:
 
 ```csharp
 int a = 5;
@@ -25,7 +26,7 @@ if (a + b > 10)
 
 Try this code by typing `dotnet run` in your console window. You should see the message "The answer is greater than 10." printed to your console.
 
-Modify the declaration of `b` so that the sum is less than 10: 
+Modify the declaration of `b` so that the sum is less than 10:
 
 ```csharp
 int b = 3;
@@ -37,7 +38,7 @@ written one of the possible branches for an `if` statement: the true branch.
 > [!TIP]
 > As you explore C# (or any programming language), you'll
 > make mistakes when you write code. The compiler will
-> find and report the errors. Look closely at the error 
+> find and report the errors. Look closely at the error
 > output and the code that generated the error. The compiler
 > error can usually help you find the problem.
 
@@ -47,7 +48,7 @@ This process of checking conditions and executing statements based on those cond
 
 ## Make if and else work together
 
-To execute different code in both the true and false branches, you 
+To execute different code in both the true and false branches, you
 create an `else` branch that executes when the condition is false. Try this. Add the last two lines in the code below to your `Main` method (you should already have the first four):
 
 ```csharp
@@ -63,7 +64,7 @@ The statement following the `else` keyword executes only when the condition bein
 
 > [!IMPORTANT]
 > The indentation under the `if` and `else` statements is for human readers.
-> The C# language doesn't treat indentation or white space as significant. 
+> The C# language doesn't treat indentation or white space as significant.
 > The statement following the `if` or `else` keyword will be executed based
 > on the condition. All the samples in this tutorial follow a common
 > practice to indent lines based on the control flow of statements.
@@ -168,7 +169,7 @@ namespace BranchesAndLoops
             {
                 Console.WriteLine("The answer is not greater than 10");
                 Console.WriteLine("And the first number is not greater than the second");
-            }            
+            }
         }
 
         static void Main(string[] args)
@@ -212,12 +213,12 @@ to the value of `counter` and stores that value in the `counter` variable.
 > [!IMPORTANT]
 > Make sure that the `while` loop condition changes to
 > false as you execute the code. Otherwise, you create an
-> **infinite loop** where your program never ends. That is 
+> **infinite loop** where your program never ends. That is
 > not demonstrated in this sample, because you have to force your program to
 > quit using **CTRL-C** or other means.
 
 The `while` loop tests the condition before executing the code
-following the `while`. The `do` ... `while` loop executes the 
+following the `while`. The `do` ... `while` loop executes the
 code first, and then checks the condition. The do while loop is shown in the following code:
 
 ```csharp
@@ -239,7 +240,7 @@ The **for** loop is commonly used in C#. Try this code in your Main() method:
 for(int index = 0; index < 10; index++)
 {
     Console.WriteLine($"Hello World! The index is {index}");
-} 
+}
 ```
 
 This does the same work as the `while` loop and the `do` loop you've
@@ -286,7 +287,7 @@ your own development environment.
 
 You can learn more about these concepts in these topics:
 
-[If and else statement](../../language-reference/keywords/if-else.md)  
-[While statement](../../language-reference/keywords/while.md)  
-[Do statement](../../language-reference/keywords/do.md)  
-[For statement](../../language-reference/keywords/for.md)  
+- [If and else statement](../../language-reference/keywords/if-else.md)
+- [While statement](../../language-reference/keywords/while.md)
+- [Do statement](../../language-reference/keywords/do.md)
+- [For statement](../../language-reference/keywords/for.md)

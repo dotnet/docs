@@ -27,7 +27,7 @@ Set operations in LINQ refer to query operations that produce a result set that 
 ### Except  
  The following illustration depicts the behavior of <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType>. The returned sequence contains only the elements from the first input sequence that are not in the second input sequence.  
   
- ![Graphic showing the action of Except&#40;&#41;.](../../../../csharp/programming-guide/concepts/linq/media/except.png "Except")  
+ ![Graphic showing the action of Except&#40;&#41;.](./media/set-operations/except-behavior-graphic.png "Shows the behavior of Except.")  
   
 ### Intersect  
  The following illustration depicts the behavior of <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType>. The returned sequence contains the elements that are common to both of the input sequences.  
@@ -42,7 +42,7 @@ Set operations in LINQ refer to query operations that produce a result set that 
 ## Query Expression Syntax Example  
  The following example uses the `Distinct` clause in a LINQ query to return the unique numbers from a list of integers.  
   
- [!code-vb[CsLINQSetOps#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/set-operations_1.vb)]  
+ [!code-vb[CsLINQSetOps#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQSetOps/VB/setops.vb#1)]  
   
 ## See also
 - <xref:System.Linq>

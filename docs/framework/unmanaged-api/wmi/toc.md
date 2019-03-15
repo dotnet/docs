@@ -1,4 +1,4 @@
-# [ WMI and Performance Counters ](index.md)
+# [WMI and Performance Counters](index.md)
 ## [BeginEnumeration function](beginenumeration.md)
 ## [BeginMethodEnumeration function](beginmethodenumeration.md)
 ## [BlessIWbemServices function](blessiwbemservices.md)

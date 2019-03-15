@@ -29,7 +29,7 @@ HRESULT GetIP (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnOffset`  
  [out] A pointer to the offset location in the native code.  
   

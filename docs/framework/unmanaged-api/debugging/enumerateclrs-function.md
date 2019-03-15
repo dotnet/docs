@@ -33,7 +33,7 @@ HRESULT EnumerateCLRs (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `debuggeePID`  
  [in] Process identifier of the process from which loaded CLRs will be enumerated.  
   

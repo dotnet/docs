@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Table Item control pattern"
   - "TableItem control pattern"
 ms.assetid: ac178408-1485-436f-8d3e-eee3bf80cb24
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation TableItem Control Pattern
 > [!NOTE]

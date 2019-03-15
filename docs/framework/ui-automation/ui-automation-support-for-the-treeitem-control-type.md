@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Tree Item control type"
   - "UI Automation, Tree Item control type"
 ms.assetid: 229f341a-477f-434e-b877-4db9973068eb
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the TreeItem Control Type
 > [!NOTE]

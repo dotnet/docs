@@ -31,7 +31,7 @@ HRESULT CreateCoreClrDebugTarget (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwAddress`  
  [in] IPv4 address of a remote target machine.  
   

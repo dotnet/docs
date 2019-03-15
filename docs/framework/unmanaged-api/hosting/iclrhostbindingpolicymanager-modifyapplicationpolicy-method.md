@@ -35,7 +35,7 @@ HRESULT  ModifyApplicationPolicy (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzSourceAssemblyIdentity`  
  [in] The identity of the assembly to modify.  
   

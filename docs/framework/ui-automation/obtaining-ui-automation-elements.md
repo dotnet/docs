@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation, obtaining elements"
   - "elements, UI Automation, obtaining"
 ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Obtaining UI Automation Elements
 > [!NOTE]

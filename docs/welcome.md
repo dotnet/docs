@@ -16,10 +16,10 @@ Build many types of apps with .NET, such as cloud, IoT, and games using free cro
 
 For news about .NET, check the following blogs:
 
-- [.NET Blog](https://blogs.msdn.microsoft.com/dotnet/)
-- [ASP.NET Blog](https://blogs.msdn.microsoft.com/webdev/)
-- [The Visual Studio Blog](https://blogs.msdn.microsoft.com/visualstudio/)
-- [The Visual Basic Team](https://blogs.msdn.microsoft.com/vbteam/)
+- [.NET Blog](https://devblogs.microsoft.com/dotnet/)
+- [ASP.NET Blog](https://devblogs.microsoft.com/aspnet/)
+- [The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)
+- [The Visual Basic Team](https://devblogs.microsoft.com/vbteam/)
 
 Also follow the latest .NET events:
 
@@ -36,7 +36,7 @@ For information about the latest features added to the .NET implementations and 
 
 ## Documentation
 
-This documentation covers the breadth of .NET across platforms and languages.  You can get started with .NET and its languages in any of the following sections:
+This documentation covers the breadth of .NET across platforms and languages. You can get started with .NET and its languages in any of the following sections:
 
 - [.NET Guide](standard/index.md)
 - [.NET Core Guide](core/index.md)

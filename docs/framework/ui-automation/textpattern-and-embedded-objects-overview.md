@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "accessing embedded objects"
   - "embedded objects, UI Automation"
 ms.assetid: 93fdfbb9-0025-4b72-8ca0-0714adbb70d5
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # TextPattern and Embedded Objects Overview
 > [!NOTE]
@@ -152,4 +150,4 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 - [Access Embedded Objects Using UI Automation](../../../docs/framework/ui-automation/access-embedded-objects-using-ui-automation.md)
 - [Expose the Content of a Table Using UI Automation](../../../docs/framework/ui-automation/expose-the-content-of-a-table-using-ui-automation.md)
 - [Traverse Text Using UI Automation](../../../docs/framework/ui-automation/traverse-text-using-ui-automation.md)
-- [TextPattern Search and Selection Sample](https://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)
+- [TextPattern Search and Selection Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/FindText)

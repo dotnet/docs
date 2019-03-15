@@ -33,7 +33,7 @@ HRESULT FindMember (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The TypeDef token for the class or interface that encloses the member to search for. If this value is `mdTokenNil`, the lookup is done for a global-variable or global-function.  
   

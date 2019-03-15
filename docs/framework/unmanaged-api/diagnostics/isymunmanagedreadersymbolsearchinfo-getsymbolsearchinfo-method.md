@@ -31,7 +31,7 @@ HRESULT GetSymbolSearchInfo(
         ISymUnmanagedSymbolSearchInfo **rgpSearchInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cSearchInfo`  
  [in] A `ULONG32` that indicates the size of `rgpSearchInfo`.  
   

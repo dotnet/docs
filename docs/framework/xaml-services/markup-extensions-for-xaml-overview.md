@@ -19,28 +19,28 @@ Markup extensions are a XAML technique for obtaining a value that is neither a p
 >  The `x:` prefix is used for the typical XAML namespace mapping of the XAML language namespace, in the root element of a XAML production. For example, the Visual Studio project and page templates for various specific frameworks initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML language XAML namespace, as opposed to a specific framework's default XAML namespace or other arbitrary CLR or XML namespaces.  
   
 ### x:Type  
- `x:Type` supplies the <xref:System.Type> object for the named type. This functionality is used most frequently in deferral mechanisms that use underlying CLR type and type derivation as a grouping moniker or identifier. WPF styles and templates, and their usage of `TargetType` properties, are a specific example. For more information, see [x:Type Markup Extension](../../../docs/framework/xaml-services/x-type-markup-extension.md).  
+ `x:Type` supplies the <xref:System.Type> object for the named type. This functionality is used most frequently in deferral mechanisms that use underlying CLR type and type derivation as a grouping moniker or identifier. WPF styles and templates, and their usage of `TargetType` properties, are a specific example. For more information, see [x:Type Markup Extension](x-type-markup-extension.md).  
   
 ### x:Static  
- `x:Static` produces static values from value-type code entities that are not directly the type of a property's value, but can be evaluated to that type. This is useful for specifying values that already exist as well-known constants in a type definition. For more information, see [x:Static Markup Extension](../../../docs/framework/xaml-services/x-static-markup-extension.md).  
+ `x:Static` produces static values from value-type code entities that are not directly the type of a property's value, but can be evaluated to that type. This is useful for specifying values that already exist as well-known constants in a type definition. For more information, see [x:Static Markup Extension](x-static-markup-extension.md).  
   
 ### x:Null  
- `x:Null` specifies `null` as a value for a XAML member. Depending on the design of specific types or on larger framework concepts, `null` is not always a default value for a property, or the implied value of an empty string attribute. For more information, see [x:Null Markup Extension](../../../docs/framework/xaml-services/x-null-markup-extension.md).  
+ `x:Null` specifies `null` as a value for a XAML member. Depending on the design of specific types or on larger framework concepts, `null` is not always a default value for a property, or the implied value of an empty string attribute. For more information, see [x:Null Markup Extension](x-null-markup-extension.md).  
   
 ### x:Array  
- `x:Array` supports creation of general arrays in XAML syntax in cases where the collection support that is provided by base elements and control models is deliberately not used. For more information, see [x:Array Markup Extension](../../../docs/framework/xaml-services/x-array-markup-extension.md). In XAML 2009 specifically, arrays are accessed as language primitives instead of as an extension. For more information, see [XAML 2009 Language Features](../../../docs/framework/xaml-services/xaml-2009-language-features.md).  
+ `x:Array` supports creation of general arrays in XAML syntax in cases where the collection support that is provided by base elements and control models is deliberately not used. For more information, see [x:Array Markup Extension](x-array-markup-extension.md). In XAML 2009 specifically, arrays are accessed as language primitives instead of as an extension. For more information, see [XAML 2009 Language Features](xaml-2009-language-features.md).  
   
 ### x:Reference  
- `x:Reference` is part of XAML 2009, an extension of the original (2006) language set. `x:Reference` represents a reference to another existing object in an object graph. That object is identified by its `x:Name`. For more information, see [x:Reference Markup Extension](../../../docs/framework/xaml-services/x-reference-markup-extension.md).  
+ `x:Reference` is part of XAML 2009, an extension of the original (2006) language set. `x:Reference` represents a reference to another existing object in an object graph. That object is identified by its `x:Name`. For more information, see [x:Reference Markup Extension](x-reference-markup-extension.md).  
   
 ### Other x: Constructs  
- Other `x:` constructs to support XAML language features exist, but these are not implemented as markup extensions. For more information, see [XAML Namespace (x:) Language Features](../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md).  
+ Other `x:` constructs to support XAML language features exist, but these are not implemented as markup extensions. For more information, see [XAML Namespace (x:) Language Features](xaml-namespace-x-language-features.md).  
   
 <a name="the_markupextension_base_class"></a>   
 ## The MarkupExtension Base Class  
  To define a custom markup extension that can interact with the default implementations of XAML readers and XAML writers in System.Xaml, you derive a class from the abstract <xref:System.Windows.Markup.MarkupExtension> class. That class has one method to override, which is <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>. You might also need to define additional constructors to support arguments to the markup extension usage, and matching settable properties.  
   
- Through <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>, a custom markup extension has access to a service context that reports the environment where the markup extension is actually invoked by a XAML processor. In the load path this is typically a <xref:System.Xaml.XamlObjectWriter>. In the save path this is typically a <xref:System.Xaml.XamlXmlWriter>. Each report the service context as an internal XAML service provider context class that implements a service provider pattern. For more information about the available services and what they represent, see [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md).  
+ Through <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>, a custom markup extension has access to a service context that reports the environment where the markup extension is actually invoked by a XAML processor. In the load path this is typically a <xref:System.Xaml.XamlObjectWriter>. In the save path this is typically a <xref:System.Xaml.XamlXmlWriter>. Each report the service context as an internal XAML service provider context class that implements a service provider pattern. For more information about the available services and what they represent, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md).  
   
  Your markup extension class must use a public access level; XAML processors must always be able to instantiate the markup extension's support class in order to use its services.  
   
@@ -104,13 +104,13 @@ public Collate(CollationMode collationMode, object collateThis) {...}
   
 <a name="accessing_service_provider_context_from_a_markup_extension_implementation"></a>   
 ## Accessing Service Provider Context from a Markup Extension Implementation  
- The services available are the same for any value converter. The difference is in how each value converter receives the service context. Accessing services and the services available are documented in the topic [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md).  
+ The services available are the same for any value converter. The difference is in how each value converter receives the service context. Accessing services and the services available are documented in the topic [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md).  
   
 <a name="property_element_usage_of_a_markup_extension"></a>   
 ## Property Element Usage of a Markup Extension  
  The scenarios for markup extension usages are often designed around using the markup extension in attribute usage. However, it is also potentially possible to define the backing class to support property element usage.  
   
- To support property element usage of your markup extension, define a public default constructor. This should be an instance constructor not a static constructor. This is required because a XAML processor must generally invoke the default constructor on any object element it processes from markup, and this includes markup extension classes as object elements. For advanced scenarios, you can define non-default construction paths for classes. (For more information, see [x:FactoryMethod Directive](../../../docs/framework/xaml-services/x-factorymethod-directive.md).) However, you should not use these patterns for markup extension purposes because this makes discovery of the usage pattern much more difficult, both for designers and for users of raw markup.  
+ To support property element usage of your markup extension, define a public default constructor. This should be an instance constructor not a static constructor. This is required because a XAML processor must generally invoke the default constructor on any object element it processes from markup, and this includes markup extension classes as object elements. For advanced scenarios, you can define non-default construction paths for classes. (For more information, see [x:FactoryMethod Directive](x-factorymethod-directive.md).) However, you should not use these patterns for markup extension purposes because this makes discovery of the usage pattern much more difficult, both for designers and for users of raw markup.  
   
 <a name="attributing_for_a_custom_markup_extension"></a>   
 ## Attributing for a Custom Markup Extension  
@@ -150,5 +150,5 @@ public Collate(CollationMode collationMode, object collateThis) {...}
   
 ## See also
 - <xref:System.Windows.Markup.MarkupExtension>
-- [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)
-- [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md)
+- [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)

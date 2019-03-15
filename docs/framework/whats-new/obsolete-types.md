@@ -10,7 +10,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Obsolete Types in the .NET Framework
-<a name="introduction"></a> The tables in this article list the types that are obsolete in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], organized by assembly. Use the following links to see a list of the obsolete types and the recommended alternatives in each assembly. Because these types are obsolete, all their members are also obsolete. For a list of additional obsolete members in the .NET Framework class library, see [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md).
+<a name="introduction"></a> The tables in this article list the types that are obsolete in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], organized by assembly. Use the following links to see a list of the obsolete types and the recommended alternatives in each assembly. Because these types are obsolete, all their members are also obsolete. For a list of additional obsolete members in the .NET Framework class library, see [Obsolete Members](obsolete-members.md).
 
 -   [Obsolete types in system assemblies](#obsolete_types_in_system_assemblies)
 
@@ -624,7 +624,8 @@ ms.author: "ronpet"
 
 <a name="VBCompat"></a>
 ### Assembly: Microsoft.VisualBasic.Compatibility.dll
-  For information about migrating from Visual Basic 6, see [Visual Basic 6.0 Resource Center](https://msdn.microsoft.com/library/windows/desktop/ms788229).
+
+For information about migrating from Visual Basic 6, see [Visual Basic 6.0 Resource Center](https://docs.microsoft.com/previous-versions/visualstudio/visual-basic-6/visual-basic-6.0-documentation).
   
 |Type|Message|
 |----------|-------------|
@@ -772,5 +773,5 @@ ms.author: "ronpet"
 |<xref:Microsoft.VisualC.NoSignSpecifiedModifier?displayProperty=nameWithType>|Microsoft.VisualC.dll is an obsolete assembly and exists only for backwards compatibility.|
 
 ## See also
-- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
-- [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md)
+- [What's Obsolete in the Class Library](whats-obsolete.md)
+- [Obsolete Members](obsolete-members.md)

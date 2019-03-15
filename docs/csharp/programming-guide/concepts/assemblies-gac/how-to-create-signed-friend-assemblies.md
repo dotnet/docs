@@ -85,8 +85,8 @@ This example shows how to use friend assemblies with assemblies that have strong
 ## See also
 
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
-- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)
-- [Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)
+- [Assemblies in .NET](../../../../standard/assembly/index.md)
+- [Friend Assemblies](../../../../standard/assembly/friend-assemblies.md)
 - [How to: Create Unsigned Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)
 - [/keyfile](../../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md)
 - [Sn.exe (Strong Name Tool)](../../../../framework/tools/sn-exe-strong-name-tool.md)

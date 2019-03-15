@@ -34,7 +34,7 @@ HRESULT VirtualAlloc (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [in] A pointer to the starting address of the region to allocate.  
   

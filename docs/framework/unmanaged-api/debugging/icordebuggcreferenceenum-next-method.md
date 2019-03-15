@@ -30,7 +30,7 @@ HRESULT Next(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  celt  
  [in] The number of roots to be retrieved.  
   

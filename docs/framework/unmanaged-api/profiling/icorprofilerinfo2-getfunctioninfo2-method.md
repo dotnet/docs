@@ -35,7 +35,7 @@ HRESULT GetFunctionInfo2(
     [out] ClassID typeArgs[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcId`  
  [in] The ID of the function for which to get the parent class and other information.  
   

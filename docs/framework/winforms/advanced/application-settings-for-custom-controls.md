@@ -20,7 +20,7 @@ You must complete certain tasks to give your custom controls the ability to pers
   
 2.  Create this custom settings class after the control has been created and placed on a form, such as in the form's <xref:System.Windows.Forms.Form.Load> event handler.  
   
- For instructions on creating a custom settings class, see [How to: Create Application Settings](../../../../docs/framework/winforms/advanced/how-to-create-application-settings.md).  
+ For instructions on creating a custom settings class, see [How to: Create Application Settings](how-to-create-application-settings.md).  
   
 ## Settings Keys and Shared Settings  
  Some controls can be used multiple times within the same form. Most of the time, you will want these controls to persist their own individual settings. With the <xref:System.Configuration.IPersistComponentSettings.SettingsKey%2A> property on <xref:System.Configuration.IPersistComponentSettings>, you can supply a unique string that acts to disambiguate multiple versions of a control on a form.  
@@ -42,4 +42,4 @@ You must complete certain tasks to give your custom controls the ability to pers
 ## See also
 - <xref:System.Configuration.ApplicationSettingsBase>
 - <xref:System.Configuration.IPersistComponentSettings>
-- [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)
+- [Application Settings Architecture](application-settings-architecture.md)

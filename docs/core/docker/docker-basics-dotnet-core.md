@@ -154,7 +154,7 @@ The [**COPY**](https://docs.docker.com/engine/reference/builder/#copy) instructi
 COPY *.csproj ./
 ```
 
-The [**RUN**](https://docs.docker.com/engine/reference/builder/#run) instruction executes any commands in a new layer on top of the current image and commit the results. The resulting committed image is used for the next step in the Dockerfile. We are running **dotnet restore** to get the needed dependencies of the C# project file. 
+The [**RUN**](https://docs.docker.com/engine/reference/builder/#run) instruction executes any commands in a new layer on top of the current image and commit the results. The resulting committed image is used for the next step in the Dockerfile. We are running **dotnet restore** to get the needed dependencies of the C# project file.
 
 ```Dockerfile
 RUN dotnet restore
@@ -258,7 +258,7 @@ Here are some next steps you can take:
 * [Docker for Azure Quickstarts](https://docs.docker.com/docker-for-azure/#docker-community-edition-ce-for-azure)
 * [Deploy your app on Docker for Azure](https://docs.docker.com/docker-for-azure/deploy/)
 
-> [!Note]
+> [!NOTE]
 > If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.
 
 ## Docker Images used in this sample

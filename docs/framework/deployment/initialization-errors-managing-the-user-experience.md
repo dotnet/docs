@@ -35,8 +35,7 @@ The CLR activation APIs return HRESULT codes to report the result of an activati
 
 If the CLR activation system cannot load the correct version of the runtime that is required by an application, it displays an error message to users to inform them that their computer is not properly configured to run the application, and provides them with an opportunity to remedy the situation. The following error message is typically presented in this situation. The user can choose **Yes** to go to a Microsoft website where they can download the correct .NET Framework version for the application.
 
-![.NET Framework Initialization Error dialog box](../../../docs/framework/deployment/media/initerrordialog.png "InitErrorDialog")
-Typical error message for initialization errors
+![.NET Framework Initialization Error dialog box](./media/initialization-errors-managing-the-user-experience/initialization-error-dialog.png "Typical error message for initialization errors")
 
 ## Resolving the initialization error
 
@@ -77,8 +76,7 @@ The CLR includes a set of hosts for a variety of scenarios, and these hosts all 
 
 The CLR activation system provides the same behavior and UI on [!INCLUDE[win8](../../../includes/win8-md.md)] as it does on other versions of the Windows operating system, except when it encounters issues loading CLR 2.0. [!INCLUDE[win8](../../../includes/win8-md.md)] includes the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], which uses CLR 4.5. However, [!INCLUDE[win8](../../../includes/win8-md.md)] does not include the .NET Framework 2.0, 3.0, or 3.5, which all use CLR 2.0. As a result, applications that depend on CLR 2.0 do not run on [!INCLUDE[win8](../../../includes/win8-md.md)] by default. Instead, they display the following dialog box to enable users to install the .NET Framework 3.5. Users can also enable the .NET Framework 3.5 in Control Panel. Both options are discussed in the article [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](../../../docs/framework/install/dotnet-35-windows-10.md).
 
-![Dialog box for 3.5 install on Windows 8](../../../docs/framework/deployment/media/installdialog.png "installdialog")
-Prompt for installing the .NET Framework 3.5 on demand
+![Dialog box for 3.5 install on Windows 8](./media/initialization-errors-managing-the-user-experience/install-framework-on-demand-dialog.png "Prompt for installing the .NET Framework 3.5 on demand")
 
 > [!NOTE]
 > The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] replaces the .NET Framework 4 (CLR 4) on the user's computer. Therefore, .NET Framework 4 applications run seamlessly, without displaying this dialog box, on [!INCLUDE[win8](../../../includes/win8-md.md)].

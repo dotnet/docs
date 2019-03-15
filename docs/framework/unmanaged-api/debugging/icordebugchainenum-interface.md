@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugChainEnum Interface1"
+title: "ICorDebugChainEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugChainEnum"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugChainEnum Interface1
+# ICorDebugChainEnum Interface
+
 Implements ICorDebugEnum methods, and enumerates ICorDebugChain arrays.  
   
 ## Methods  

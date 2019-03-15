@@ -28,7 +28,7 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
                        [out] BOOL * pIsCloser);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFrameToCompare`  
  [in] A pointer to the comparison `ICorDebugFrame` object.  
   

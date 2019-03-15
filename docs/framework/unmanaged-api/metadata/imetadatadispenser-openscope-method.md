@@ -32,7 +32,7 @@ HRESULT OpenScope (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szScope`  
  [in] The name of the file to be opened. The file must contain common language runtime (CLR) metadata.  
   

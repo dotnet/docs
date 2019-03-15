@@ -27,7 +27,7 @@ Provides information about the layout of array types.
 HRESULT GetArrayLayout(    [in] COR_TYPEID id,     [out] COR_ARRAY_LAYOUT *pLayout);  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [in] A [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) token that specifies the array whose layout is desired.  
   

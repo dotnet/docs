@@ -35,7 +35,7 @@ HRESULT LoadStringRCEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lcid`  
  [in] A culture identifier. Pass -1 for `lcid` to use the default culture.  
   

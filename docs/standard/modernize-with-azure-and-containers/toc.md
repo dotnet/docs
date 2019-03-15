@@ -13,7 +13,7 @@
 ### [When to deploy Windows Containers to Service Fabric](./modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-service-fabric.md)
 ### [When to deploy Windows Containers to Azure Container Service (ACS-Kubernetes)](./modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)
 ### [Choosing Azure compute platforms for container-based applications](./modernize-existing-apps-to-cloud-optimized/choosing-azure-compute-options-for-container-based-applications.md)
-### [Build resilient services ready for the cloud: Embrace transient failures in the cloud ](./modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)
+### [Build resilient services ready for the cloud: Embrace transient failures in the cloud](./modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)
 ### [Modernize your apps with monitoring and telemetry](./modernize-existing-apps-to-cloud-optimized/modernize-your-apps-with-monitoring-and-telemetry.md)
 ### [Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud](./modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md)
 ### [Migrate to hybrid cloud scenarios](./modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios.md)

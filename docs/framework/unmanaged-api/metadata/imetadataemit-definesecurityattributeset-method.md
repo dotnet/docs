@@ -32,7 +32,7 @@ HRESULT DefineSecurityAttributeSet (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkObj`  
  [in] The token to which the security information is attached.  
   

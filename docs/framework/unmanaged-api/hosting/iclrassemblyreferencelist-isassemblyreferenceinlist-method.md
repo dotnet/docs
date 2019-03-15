@@ -29,7 +29,7 @@ HRESULT IsAssemblyReferenceInList (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pName`  
  [in] An interface pointer to the assembly for which to search. Valid values are of type `IAssemblyName` or `IReferenceIdentity`.  
   

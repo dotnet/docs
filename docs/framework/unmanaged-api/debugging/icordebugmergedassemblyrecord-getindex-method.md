@@ -16,7 +16,7 @@ HRESULT GetIndex(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIndex`  
  [out] A pointer to the prefix index.  
   

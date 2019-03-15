@@ -29,7 +29,7 @@ HRESULT GetCurrentException (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppExceptionObject`  
  [out] A pointer to the address of an `ICorDebugValue` object that represents the exception that is currently being thrown by managed code.  
   

@@ -29,7 +29,7 @@ HRESULT CloseEnum(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  Handle of enumeration to be closed.  
   

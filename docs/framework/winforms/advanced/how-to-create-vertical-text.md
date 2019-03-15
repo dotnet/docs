@@ -19,14 +19,14 @@ You can use a <xref:System.Drawing.StringFormat> object to specify that text be 
   
  The following illustration shows the vertical text.  
   
- ![Fonts Text](../../../../docs/framework/winforms/advanced/media/csfontstext5.png "csfontstext5")  
+ ![Fonts Text](./media/csfontstext5.png "csfontstext5")  
   
- [!code-csharp[System.Drawing.FontsAndText#31](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.FontsAndText/CS/Class1.cs#31)]
- [!code-vb[System.Drawing.FontsAndText#31](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#31)]  
+ [!code-csharp[System.Drawing.FontsAndText#31](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.FontsAndText/CS/Class1.cs#31)]
+ [!code-vb[System.Drawing.FontsAndText#31](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#31)]  
   
 ## Compiling the Code  
   
 -   The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e` , which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
-- [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)
+- [How to: Draw Text with GDI](how-to-draw-text-with-gdi.md)

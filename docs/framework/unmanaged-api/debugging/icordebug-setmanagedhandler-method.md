@@ -29,7 +29,7 @@ HRESULT SetManagedHandler (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCallback`  
  [in] A pointer to an [ICorDebugManagedCallback](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md) object, which is the event handler object.  
   

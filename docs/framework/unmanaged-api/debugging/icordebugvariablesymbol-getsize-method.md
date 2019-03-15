@@ -16,7 +16,7 @@ HRESULT GetSize(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbValue`  
  A pointer to a 32-bit unsigned integer containing the size of the variable.  
   

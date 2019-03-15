@@ -29,7 +29,7 @@ HRESULT CreateTask (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTask`  
  [out] A pointer to the address of a newly created [ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md), or null, if the task could not be created.  
   

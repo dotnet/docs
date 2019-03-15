@@ -1,11 +1,16 @@
 ---
 title: Use the PredictionEngine to make one prediction at a time - ML.NET 
 description: Learn how to use the ML.NET PredictionEngine to make one prediction at a time
-ms.date: 02/06/2019
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use the ML.NET PredictionEngine to run an example at a time through the prediction pipeline machine learning model so that I can use my machine learning model as part of my application to make and act on one prediction at a time.
 ---
 # Use the PredictionEngine to make one prediction at a time - ML.NET 
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 Since any ML.NET model is a transformer, you use `model.Transform` to apply the model to the `DataView` to make predictions. 
 

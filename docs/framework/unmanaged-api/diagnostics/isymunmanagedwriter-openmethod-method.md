@@ -28,7 +28,7 @@ HRESULT OpenMethod(
     [in] mdMethodDef method);  
 ```  
   
-#### Parameters  
+## Parameters  
  `method`  
  [in] The metadata token for the method to be opened.  
   

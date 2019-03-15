@@ -30,7 +30,7 @@ HRESULT SetCheckSum(
     [in, size_is(checkSumSize)]  BYTE checkSum[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `algorithmId`  
  [in] The GUID that represents the algorithm identifier.  
   

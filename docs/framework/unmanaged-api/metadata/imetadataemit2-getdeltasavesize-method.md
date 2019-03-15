@@ -30,7 +30,7 @@ HRESULT GetDeltaSaveSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fSave`  
  [in] One of the [CorSaveSize](../../../../docs/framework/unmanaged-api/metadata/corsavesize-enumeration.md) values, indicating the level of precision desired. For the .NET Framework version 2.0, this parameter is ignored.  
   

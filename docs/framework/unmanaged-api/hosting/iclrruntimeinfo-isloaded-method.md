@@ -29,7 +29,7 @@ HRESULT IsLoaded(
 [out, retval] BOOL *pbLoaded);  
 ```  
   
-#### Parameters  
+## Parameters  
  `hndProcess`  
  [in] A handle to the process.  
   

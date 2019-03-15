@@ -32,7 +32,7 @@ HRESULT UpdateSymbolStore (
     [in] IStream *pIStream);  
 ```  
   
-#### Parameters  
+## Parameters  
  `filename`  
  [in] The name of the file that contains the symbol store.  
   

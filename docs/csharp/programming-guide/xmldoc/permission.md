@@ -17,7 +17,7 @@ ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
 <permission cref="member">description</permission>  
 ```  
   
-#### Parameters  
+## Parameters  
  cref = " `member`"  
  A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and translates `member` to the canonical element name in the output XML. *member* must appear within double quotation marks (" ").  
   
@@ -32,7 +32,7 @@ ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
  Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-csharp[csProgGuideDocComments#8](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/permission_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#8)]  
   
 ## See also
 

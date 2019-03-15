@@ -38,7 +38,7 @@ Return expression
 ## Example  
  The following example uses the `Return` statement several times to return to the calling code when the procedure does not have to do anything else.  
   
- [!code-vb[VbVbalrStatements#53](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/return-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#53](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#53)]  
   
 ## See also
 - [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)

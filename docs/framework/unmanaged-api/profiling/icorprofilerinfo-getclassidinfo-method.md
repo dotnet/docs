@@ -30,7 +30,7 @@ HRESULT GetClassIDInfo(
     [out] mdTypeDef *pTypeDefToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class for which to get the information.  
   

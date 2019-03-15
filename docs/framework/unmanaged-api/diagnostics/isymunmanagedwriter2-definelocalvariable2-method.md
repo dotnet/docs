@@ -36,7 +36,7 @@ HRESULT DefineLocalVariable2(
     [in] ULONG32      endOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The local variable name.  
   

@@ -100,14 +100,14 @@ In this tutorial, you learn how to:
                     smb.HttpGetEnabled = true;
                     selfHost.Description.Behaviors.Add(smb)    ;
 
-                    // Step 5: Start (and then stop) the service.
+                    // Step 5: Start the service.
                     selfHost.Open();
                     Console.WriteLine("The service is ready.");
-                    Console.WriteLine("Press <Enter> to terminate service.");
-                    Console.WriteLine();
-                    Console.ReadLine();
 
                     // Close the ServiceHost to stop the service.
+                    Console.WriteLine("Press <Enter> to terminate the service.");
+                    Console.WriteLine();
+                    Console.ReadLine();
                     selfHost.Close();
                 }
                 catch (CommunicationException ce)
@@ -147,14 +147,14 @@ In this tutorial, you learn how to:
                     smb.HttpGetEnabled = True
                     selfHost.Description.Behaviors.Add(smb)
 
-                    ' Step 5: Start (and then stop) the service.
+                    ' Step 5: Start the service.
                     selfHost.Open()
                     Console.WriteLine("The service is ready.")
-                    Console.WriteLine("Press <Enter> to terminate service.")
-                    Console.WriteLine()
-                    Console.ReadLine()
 
                     ' Close the ServiceHost to stop the service.
+                    Console.WriteLine("Press <Enter> to terminate the service.")
+                    Console.WriteLine()
+                    Console.ReadLine()
                     selfHost.Close()
 
                 Catch ce As CommunicationException
@@ -192,7 +192,9 @@ In this tutorial, you learn how to:
 
 ## Verify the service is working
 
-1. Build the solution, and then run the **GettingStartedHost** console application from inside Visual Studio. As an alternative, you can open a new command prompt by using **Run as administrator** and run *GettingStartedHost.exe* within it. 
+1. Build the solution, and then run the **GettingStartedHost** console application from inside Visual Studio. 
+
+    The service must be run with administrator privileges. Because Visual Studio was opened with administrator privileges, **GettingStartedHost** is also run with administrator privileges. As an alternative, you can open a new command prompt as an adminstrator (select **More** > **Run as administrator** from the shortcut menu) and run *GettingStartedHost.exe* within it.
 
 2. Open a web browser and browse to the service's page at `http://localhost:8000/GettingStarted/CalculatorService`.
    
@@ -213,9 +215,14 @@ The steps in the code you added to host the service are described as follows:
     > [!IMPORTANT]
     > For .NET Framework Version 4 and later, adding a service endpoint is optional. For these versions, if you don't add your code or configuration, WCF adds one default endpoint for each combination of base address and contract implemented by the service. For more information about default endpoints, see [Specifying an endpoint address](specifying-an-endpoint-address.md). For more information about default endpoints, bindings, and behaviors, see [Simplified configuration](simplified-configuration.md) and [Simplified configuration for WCF services](samples/simplified-configuration-for-wcf-services.md).
 
-- **Step 4**: Enable metadata exchange. Clients use metadata exchange to generate proxies for calling the service operations. To enable metadata exchange, create a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance, set its <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled> property to `true`, and add the `ServiceMetadataBehavior` object to the <!--zz <xref:System.ServiceModel.ServiceHost.Behaviors%2A>  -->`System.ServiceModel.ServiceHost.Behaviors` collection of the <xref:System.ServiceModel.ServiceHost> instance.
+- **Step 4**: Enable metadata exchange. Clients use metadata exchange to generate proxies for calling the service operations. To enable metadata exchange, create a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance, set its <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled> property to `true`, and add the `ServiceMetadataBehavior` object to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> collection of the <xref:System.ServiceModel.ServiceHost> instance.
 
 - **Step 5**: Open <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. The application waits for you to press **Enter**. If you don't press **Enter**, the app closes immediately and the service shuts down. After the application instantiates <xref:System.ServiceModel.ServiceHost>, it executes a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
+
+> [!IMPORTANT]
+> When you add a WCF service library, Visual Studio hosts it for you if you debug it by starting a service host. To avoid conflicts, you can prevent Visual Studio from hosting the WCF service library. 
+> 1. Select the **GettingStartedLib** project in **Solution Explorer** and choose **Properties** from the shortcut menu.
+> 2. Select **WCF Options** and uncheck **Start WCF Service Host when debugging another project in the same solution**.
 
 
 ## Next steps

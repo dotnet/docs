@@ -14,9 +14,9 @@ ms.author: ronpet
 ---
 # How to: Bind data to the Windows Forms DataGridView control
 
-The <xref:System.Windows.Forms.DataGridView> control supports the standard Windows Forms data binding model, so it can bind to a variety of data sources. Usually, you bind to a <xref:System.Windows.Forms.BindingSource> that manages the interaction with the data source. The <xref:System.Windows.Forms.BindingSource> can be any Windows Forms data source, which gives you great flexibility when choosing or modifying your data's location. For more information about data sources the <xref:System.Windows.Forms.DataGridView> control supports, see the [DataGridView control overview](../../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md).  
+The <xref:System.Windows.Forms.DataGridView> control supports the standard Windows Forms data binding model, so it can bind to a variety of data sources. Usually, you bind to a <xref:System.Windows.Forms.BindingSource> that manages the interaction with the data source. The <xref:System.Windows.Forms.BindingSource> can be any Windows Forms data source, which gives you great flexibility when choosing or modifying your data's location. For more information about data sources the <xref:System.Windows.Forms.DataGridView> control supports, see the [DataGridView control overview](datagridview-control-overview-windows-forms.md).  
 
-Visual Studio has extensive support for data binding to the DataGridView control. For more information, see [How to: Bind data to the Windows Forms DataGridView control using the Designer](https://msdn.microsoft.com/library/33w255ac\(v=vs.110\)).  
+Visual Studio has extensive support for data binding to the DataGridView control. For more information, see [How to: Bind data to the Windows Forms DataGridView control using the Designer](bind-data-to-the-datagrid-using-the-designer.md).  
 
 To connect a DataGridView control to data:
 
@@ -34,12 +34,12 @@ This example requires:
 
 - References to the System, System.Windows.Forms, System.Data, and System.Xml assemblies.  
 
-To build and run this example, paste the code into the *Form1* code file in a new Windows Forms project.  For more information, see [How to: Compile and run a complete Windows Forms code example using Visual Studio](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\)). For information about building from the C# or Visual Basic command line, see [Command-line building with csc.exe](/csharp/language-reference/compiler-options/command-line-building-with-csc-exe) or [Build from the command line](/visual-basic/reference/command-line-compiler/building-from-the-command-line).  
+To build and run this example, paste the code into the *Form1* code file in a new Windows Forms project. For information about building from the C# or Visual Basic command line, see [Command-line building with csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Build from the command line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
   
 Populate the `connectionString` variable in the example with the values for your Northwind SQL Server sample database connection. Windows Authentication, also called integrated security, is a more secure way to connect to the database than storing a password in the connection string. For more information about connection security, see [Protect connection information](../../data/adonet/protecting-connection-information.md).  
 
-[!code-csharp[System.Windows.Forms.DataGridViewBoundEditable](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/CS/datagridviewboundeditable.cs)]
-[!code-vb[System.Windows.Forms.DataGridViewBoundEditable](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/VB/datagridviewboundeditable.vb)]  
+[!code-csharp[System.Windows.Forms.DataGridViewBoundEditable](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/CS/datagridviewboundeditable.cs)]
+[!code-vb[System.Windows.Forms.DataGridViewBoundEditable](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/VB/datagridviewboundeditable.vb)]  
   
 ## See also
 - <xref:System.Windows.Forms.DataGridView>

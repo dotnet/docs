@@ -30,7 +30,7 @@ HRESULT GetString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixString`  
  [in] The index at which to start to search for the next value.  
   

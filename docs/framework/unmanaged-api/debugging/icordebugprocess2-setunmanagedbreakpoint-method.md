@@ -33,7 +33,7 @@ HRESULT SetUnmanagedBreakpoint (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` object that specifies the native image offset.  
   

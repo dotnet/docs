@@ -80,7 +80,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
 -   <xref:System.Windows.Forms.ComboBox.DrawItem?displayProperty=nameWithType>  
   
--   [How to: Create Variable Sized Text in a ComboBox Control](../../../../docs/framework/winforms/controls/how-to-create-variable-sized-text-in-a-combobox-control.md)  
+-   [How to: Create Variable Sized Text in a ComboBox Control](how-to-create-variable-sized-text-in-a-combobox-control.md)  
   
 ### MenuItem Component  
  The <xref:System.Windows.Forms.MenuItem> component represents a single menu item in a <xref:System.Windows.Forms.MainMenu> or <xref:System.Windows.Forms.ContextMenu> component.  
@@ -166,9 +166,9 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
 -   <xref:System.Windows.Forms.DataGridView.RowPostPaint>  
   
--   [How to: Customize the Appearance of Cells in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/customize-the-appearance-of-cells-in-the-datagrid.md)  
+-   [How to: Customize the Appearance of Cells in the Windows Forms DataGridView Control](customize-the-appearance-of-cells-in-the-datagrid.md)  
   
--   [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md)  
+-   [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](customize-the-appearance-of-rows-in-the-datagrid.md)  
   
 ### ToolStrip Control  
  <xref:System.Windows.Forms.ToolStrip> and derived controls enable you to customize any aspect of their appearance.  
@@ -179,9 +179,9 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
 -   <xref:System.Windows.Forms.ToolStripRenderer>  
   
--   [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](../../../../docs/framework/winforms/controls/create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)  
+-   [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)  
   
--   [How to: Custom Draw a ToolStrip Control](../../../../docs/framework/winforms/controls/how-to-custom-draw-a-toolstrip-control.md)  
+-   [How to: Custom Draw a ToolStrip Control](how-to-custom-draw-a-toolstrip-control.md)  
   
 ## See also
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

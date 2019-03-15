@@ -16,7 +16,7 @@ HRESULT GetModule(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppModule`  
  [out] A pointer to the address of an ICorDebugModule object that represents the merged module that was just loaded or unloaded.  
   

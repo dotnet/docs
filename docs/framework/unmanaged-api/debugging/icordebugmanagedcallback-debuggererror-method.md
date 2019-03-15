@@ -31,7 +31,7 @@ HRESULT DebuggerError (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an "ICorDebugProcess" object that represents the process in which the event occurred.  
   

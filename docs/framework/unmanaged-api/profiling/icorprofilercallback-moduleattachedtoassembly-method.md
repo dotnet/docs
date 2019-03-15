@@ -29,7 +29,7 @@ HRESULT ModuleAttachedToAssembly(
     [in] AssemblyID AssemblyId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module that is being attached.  
   

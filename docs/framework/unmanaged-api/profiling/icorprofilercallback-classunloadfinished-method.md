@@ -29,7 +29,7 @@ HRESULT ClassUnloadFinished(
     [in] HRESULT hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] Identifies the class that was unloaded.  
   

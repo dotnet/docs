@@ -31,7 +31,7 @@ HRESULT GetProperty (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `PropertyId`  
  [in] The unique identifier for the requested property.  
   

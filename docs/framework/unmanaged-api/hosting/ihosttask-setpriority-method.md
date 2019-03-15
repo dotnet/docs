@@ -29,7 +29,7 @@ HRESULT SetPriority (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `newPriority`  
  [in] An integer that represents the requested thread priority value for the task represented by the current `IHostTask` instance.  
   

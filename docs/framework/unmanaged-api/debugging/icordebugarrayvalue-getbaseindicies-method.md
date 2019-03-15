@@ -31,7 +31,7 @@ HRESULT GetBaseIndicies (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cdim`  
  [in] The number of dimensions of this `ICorDebugArrayValue` object. This value is also the size of the `indicies` array because its size is equal to the number of dimensions of the `ICorDebugArrayValue` object.  
   

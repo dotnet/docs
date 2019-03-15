@@ -192,7 +192,7 @@ First, you must define data transformations. Since `userId` and `movieId` repres
 
 Create the `BuildAndTrainModel()` method, just after the `LoadData()` method, using the following code:
 ```csharp
-public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView trainingDataView){
+public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView trainingDataView)
 {
 
 
@@ -350,7 +350,7 @@ To use your model to make predictions in end-user applications, you must first s
 
 Create the `SaveModel()` method, just after the `UseModelForSinglePrediction()` method, using the following code:
 ```csharp
-public static void SaveModel(MLContext mlContext, ITransformer model){
+public static void SaveModel(MLContext mlContext, ITransformer model)
 {
 
 
@@ -409,7 +409,7 @@ There are several ways that you can improve the performance of your model so tha
 
 Adding more training data that has enough samples for each user and movie id can help improve the quality of the recommendation model.
 
-[Cross validation](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/train-cross-validation-ml-net) is a technique for evaluating models that randomly splits up data into subsets (instead of extracting out test data from the dataset like you did in this tutorial) and takes some of the groups as train data and some of the groups as test data. This method outperforms making a train-test split in terms of model quality.
+[Cross validation](../how-to-guides/train-cross-validation-ml-net) is a technique for evaluating models that randomly splits up data into subsets (instead of extracting out test data from the dataset like you did in this tutorial) and takes some of the groups as train data and some of the groups as test data. This method outperforms making a train-test split in terms of model quality.
 
 ### Features
 

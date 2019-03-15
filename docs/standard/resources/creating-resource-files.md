@@ -117,7 +117,7 @@ resgen GreetingResources.txt
 ```
 # [.NET Framework](#tab/net-framework)
 
- The following example shows the source code for a console application that uses the .resources file to display messages to the user.
+ The following example shows the source code for a .NET Framework console application that uses the .resources file to display messages to the user.
 
  [!code-csharp[Conceptual.Resources.TextFiles#1](~/samples/snippets/csharp/standard/resources/create/create.txt.framework/cs/greeting.cs)]
  [!code-vb[Conceptual.Resources.TextFiles#1](~/samples/snippets/visualbasic/standard/resources/create/create.txt.framework/vb/greeting.vb)]

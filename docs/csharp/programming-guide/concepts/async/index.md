@@ -1,7 +1,7 @@
 ---
 title: Asynchronous programming in C#
 description: An overview of the C# language support for asynchronous programming using async, await, Task and Task<T>
-ms.date: 02/10/2019
+ms.date: 03/18/2019
 ---
 # The Task asynchronous programming model in C# #
 
@@ -105,6 +105,7 @@ Read those instructions as though they were the description of a computer algori
 
 Now, consider those same instructions written as C# statements:
 
+
 ```csharp
 Coffee cup = PourCoffee();
 Console.WriteLine("coffee is ready");
@@ -153,17 +154,144 @@ Console.WriteLine("oj is ready");
 Console.WriteLine("Breakfast is ready!");
 ```
 
-For many applications, this change is all that's needed. Now, the thread working on the breakfast is freed to do other work while awaiting any started task that hasn't yet finished. If this is a restaurant where multiple orders are placed, the cook could start another breakfast while the first is cooking. 
+For many applications, this change is all that's needed. Now, the thread working on the breakfast is freed to do other work while awaiting any started task that hasn't yet finished. If this is a restaurant where multiple orders are placed, the cook could start another breakfast while the first is cooking. However, for this scenario, we want to make more changes. You don't want each of the component tasks to be executed sequentially. It's better to start each of the component tasks before awaiting the previous task's completion.
 
+## Composition with tasks
 
+The next series of changes illustrate a key concept for async code: composition of tasks. Task composition is a natural extension of the techniques you use to compose algorithms for synchronous code. You already compose algorithms using methods. Some of those methods do work, and have `void` as the return type. Other methods compute some value, and the return type reflects that value. Asynchronous methods compose using <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. A method that returns a <xref:System.Threading.Tasks.Task> represents an asynchronous method that does work. A method that returns <xref:System.Threading.Tasks.Task%601> represents an asynchronous method that computes a value. In the same way that you compose synchronous algorithms from multiple results and methods, you compose asynchronous algorithms from multiple tasks and methods. 
+
+The `Task` object provides methods and properties to check if it has completed successfully, faulted, or is still running. If the task has completed, the `Task` object provides the means to retrieve the results of that work.
+
+It is possible to compose algorithms that contain some synchronous methods and some asynchronous methods. The combination of those components is an asynchronous operation. Stated another way, any code that calls an asynchronous operation is also asynchronous. If the method you write is going to call methods that return `Task` or `Task<T>`, that method should also return `Task` or `Task<T>`.
+
+The language features for `async` and `await`, combined with the `Task` class enable you to create those algorithms while preserving the step-by-step nature of your original synchronous algorithms. Let's demonstrate it with the breakfast example.
 
 ## Start multiple tasks
 
-Do the next step
+Making breakfast combines both synchronous and asynchronous tasks. Frying the eggs and the bacon is asynchronous. Toasting bread is asynchronous. Adding butter and jam to the toast is synchronous. Pouring coffee and juice is synchronous. You want to start the asynchronous operations and then continue working on other tasks. You'll folow up on the asynchronous task when needed. The first step is to store the tasks for operations when they start, rather than awaiting them:
 
-## Composition
+```csharp
+Coffee cup = PourCoffee();
+Console.WriteLine("coffee is ready");
+Task<Egg> eggTask = FryEggs(2);
+Egg eggs = await eggTask;
+Console.WriteLine("eggs are ready");
+Task<Bacon> baconTask = FryBacon(3);
+Bacon bacon = await baconTask;
+Console.WriteLine("bacon is ready");
+Task<Toast> toastTask = ToastBread(2);
+Toast toast = await toastTask;
+ApplyButter(toast);
+ApplyJam(toast);
+Console.WriteLine("toast is ready");
+Juice oj = PourOJ();
+Console.WriteLine("oj is ready");
 
-async composition is Task, Task<T>. It contrasts with sync composition of void, T
+Console.WriteLine("Breakfast is ready!");
+```
 
-## Lessons learned
+Next, you can move the `await` statements for the bacon and eggs to the end of the method, before serving breakfast:
+
+```csharp
+Coffee cup = PourCoffee();
+Console.WriteLine("coffee is ready");
+Task<Egg> eggTask = FryEggs(2);
+Task<Bacon> baconTask = FryBacon(3);
+Task<Toast> toastTask = ToastBread(2);
+Toast toast = await toastTask;
+ApplyButter(toast);
+ApplyJam(toast);
+Console.WriteLine("toast is ready");
+Juice oj = PourOJ();
+Console.WriteLine("oj is ready");
+
+Egg eggs = await eggTask;
+Console.WriteLine("eggs are ready");
+Bacon bacon = await baconTask;
+Console.WriteLine("bacon is ready");
+
+Console.WriteLine("Breakfast is ready!");
+```
+
+This works better, but everything stops for the toast. Making toast involves an asynchronous step followed by two synchronous steps. You can create a new Task that composes these three steps by introducing a new method:
+
+```csharp
+async Task<Toast> makeToastWithButterAndJamAsync(int number)
+{
+    var plainToast = await ToastBreadAsync(number);
+    ApplyButter(plainToast);
+    ApplyJam(plainToast);
+    return plainToast;
+}
+```
+
+The main block of code now becomes:
+
+```csharp
+Coffee cup = PourCoffee();
+Console.WriteLine("coffee is ready");
+Task<Egg> eggTask = FryEggs(2);
+Task<Bacon> baconTask = FryBacon(3);
+var toastTask = makeToastWithButterAndJamAsync(2);
+Juice oj = PourOJ();
+Console.WriteLine("oj is ready");
+
+Egg eggs = await eggTask;
+Console.WriteLine("eggs are ready");
+Bacon bacon = await baconTask;
+Console.WriteLine("bacon is ready");
+Toast toast = await toastTask;
+Console.WriteLine("toast is ready");
+
+Console.WriteLine("Breakfast is ready!");
+```
+
+The previous change illustrated an important technique for working with asynchronous code. You compose tasks by separating the operations into a new method that returns a task. You can choose when to await that task, as long as you don't use it's result before it's been awaited.
+
+Finally, theTask class has APIs that to await one or all of a set of tasks. You use the `WhatAll` method to await all the tasks before serving breakfast:
+
+```csharp
+await Task.WhenAll(eggTask, baconTask, toastTask);
+Console.WriteLine("eggs are ready");
+Console.WriteLine("bacon is ready");
+Console.WriteLine("toast is ready");
+Console.WriteLine("Breakfast is ready!");
+```
+
+Or, you could use `Task.WaitAny` to await a single task and determine which has completed:
+
+```csharp
+var allTasks = new List<Task>{eggTask, baconTask, toastTask};
+while (allTasks.Any())
+{
+   Task finished = await Task.WhenAny(allTasks);
+   if (finished == eggTask)
+   {
+        Console.WriteLine("eggs are ready");
+        allTasks.Remove(eggTask);
+        var eggs = await eggTask;
+   } else if (finished == baconTask)
+   {
+        Console.WriteLine("bacon is ready");
+        allTasks.Remove(baconTask);
+        var bacon = await baconTask;
+   } else if (finished == toastTask)
+   {
+        Console.WriteLine("toast is ready");
+        allTasks.Remove(toastTask);
+        var toast = await toastTask;
+   } else
+        allTasks.Remove(finished);
+}
+```
+
+This final version starts any of the tasks as early as possible, then awaits for any one of the started tasks to complete. Notice that `Task.WhenAny` return a `Task<Task>`. When you await `Task.WhenAny` it returns the task that has completed! You can `await` that task to get its result. That happens immediately because you know the task has already completed. Finally, you remove the completed Task from the allTasks collection, and await again. When all the tasks are done, breakfast is ready.
+
+## Key practices for async programming
+
+1. Asynchronous work composes as tasks.
+1. Asynchronous is not necessarily parallel.
+1. If any part of an algorithm is asynchronous, the entire algorithm is asynchronous.
+1. The compiler enables you to write a sequence of instructions that are executed in an asynchronous matter, rather than waiting for each subsequent task to complete.
+
 

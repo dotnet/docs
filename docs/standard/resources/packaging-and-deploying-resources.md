@@ -53,7 +53,7 @@ There are several advantages to this model:
 When you package your application's resources, you must name them using the resource naming conventions that the common language runtime expects. The runtime identifies a resource by its culture name. Each culture is given a unique name, which is usually a combination of a two-letter, lowercase culture name associated with a language and, if required, a two-letter, uppercase subculture name associated with a country or region. The subculture name follows the culture name, separated by a dash (-). Examples include ja-JP for Japanese as spoken in Japan, en-US for English as spoken in the United States, de-DE for German as spoken in Germany, or de-AT for German as spoken in Austria. See the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center for a complete list of culture names.
 
 > [!NOTE]
-> For information about creating resource files, see [Creating Resource Files](creating-resource-files-for-desktop-apps.md) and [Creating Satellite Assemblies](creating-satellite-assemblies-for-desktop-apps.md).
+> For information about creating resource files, see [Creating Resource Files](creating-resource-files.md) and [Creating Satellite Assemblies](creating-satellite-assemblies.md).
 
 <a name="cpconpackagingdeployingresourcesanchor1"></a>
 
@@ -229,5 +229,5 @@ Time or budget constraints might prevent you from creating a set of resources fo
 
 - [Resources in Desktop Apps](index.md)
 - [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
-- [Creating Resource Files](creating-resource-files-for-desktop-apps.md)
-- [Creating Satellite Assemblies](creating-satellite-assemblies-for-desktop-apps.md)
+- [Creating Resource Files](creating-resource-files.md)
+- [Creating Satellite Assemblies](creating-satellite-assemblies.md)

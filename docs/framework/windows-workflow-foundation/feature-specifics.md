@@ -96,7 +96,7 @@ The WCF configuration schema is complex and provides users with many hard to fin
 
 - [Standard Endpoint Element](https://go.microsoft.com/fwlink/?LinkId=204942)
 
-- [Service configuration improvements in .Net Framework 4](https://go.microsoft.com/fwlink/?LinkId=204943)
+- [Service configuration improvements in .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=204943)
 
 - [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://go.microsoft.com/fwlink/?LinkId=204944)
 
@@ -258,7 +258,7 @@ A user needs to be prompted for input. Under normal circumstances, the developer
 
 ## WCF Routing Service
 
-The Routing Service is designed to be a generic software Router that allows you to control how WCF messages flow in between your clients and services. The Routing Service allows you to decouple your clients from your services, which gives you much more freedom in terms of the configurations that you can support and the flexibility you have when considering how to host your services. In .NET 3.5, clients and services were tightly coupled; a client had to know about all of the services it needed to talk to and where they were located. In addition, WCF in .Net Framework 3.5 had the following limitations:
+The Routing Service is designed to be a generic software Router that allows you to control how WCF messages flow in between your clients and services. The Routing Service allows you to decouple your clients from your services, which gives you much more freedom in terms of the configurations that you can support and the flexibility you have when considering how to host your services. In .NET 3.5, clients and services were tightly coupled; a client had to know about all of the services it needed to talk to and where they were located. In addition, WCF in .NET Framework 3.5 had the following limitations:
 
 - Error handling was complex, as this logic had to be hard-coded into the client.
 
@@ -266,7 +266,7 @@ The Routing Service is designed to be a generic software Router that allows you 
 
 - Services were rarely well factored: it is easier to have the client talk to one service which implements everything, rather than needing to choose between multiple services.
 
-The routing service in .Net 4 is designed to make these problems easier to solve. The new routing service has the following features:
+The routing service in .NET 4 is designed to make these problems easier to solve. The new routing service has the following features:
 
 1. Content based routing (<xref:System.ServiceModel.Dispatcher.MessageFilter> objects examine a message to determine where it should be sent.)
 
@@ -322,7 +322,7 @@ A developer doesn't want to hard code endpoints, since it is unknown when my ser
 
 ## Tracking
 
-Workflow tracking provides insight into the execution of a workflow instance. The tracking events are emitted from a workflow at the workflow instance level and when activities within the workflow execute. A workflow tracking participant needs to be added to the workflow host to subscribe to tracking records. The tracking records are filtered using a tracking profile. The .Net Framework provides an ETW (Event Tracing for Windows) tracking participant, and a basic profile is installed in the machine.config file.
+Workflow tracking provides insight into the execution of a workflow instance. The tracking events are emitted from a workflow at the workflow instance level and when activities within the workflow execute. A workflow tracking participant needs to be added to the workflow host to subscribe to tracking records. The tracking records are filtered using a tracking profile. The .NET Framework provides an ETW (Event Tracing for Windows) tracking participant, and a basic profile is installed in the machine.config file.
 
 ### Getting Started
 

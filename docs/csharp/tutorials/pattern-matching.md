@@ -70,12 +70,12 @@ namespace toll_calculator
         public decimal CalculateToll(object vehicle) =>
             vehicle switch
         {
-            Car c => 2.00m,
-            Taxi t => 3.50m,
-            Bus b => 5.00m,
+            Car c           => 2.00m,
+            Taxi t          => 3.50m,
+            Bus b           => 5.00m,
             DeliveryTruck t => 10.00m,
-            { } => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
-            null => throw new ArgumentNullException(nameof(vehicle))
+            { }             => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
+            null            => throw new ArgumentNullException(nameof(vehicle))
         };
     }
 }
@@ -149,16 +149,16 @@ These rules can be implemented using the **property pattern** in the same switch
 ```csharp
 vehicle switch
 {
-    Car { Passengers: 0} => 2.00m + 0.50m,
-    Car { Passengers: 1 } => 2.0m,
-    Car { Passengers: 2} => 2.0m - 0.50m,
+    Car { Passengers: 0}        => 2.00m + 0.50m,
+    Car { Passengers: 1 }       => 2.0m,
+    Car { Passengers: 2}        => 2.0m - 0.50m,
     Car c when c.Passengers > 2 => 2.00m - 1.0m,
 
     // ...
 };
 ```
 
-The first three cases test the type as a `Car`, then check the value of the `Passengers` property. If both match, that expression is evaluated and returned. The final clause shows the `when` clause for a property pattern. You use the `when` clause to test conditions other than equality on a property. In the preceding example, the `when` clause tests to see that there are more than 2 passengers in the car. Strictly speaking, it's not necessary in this example.
+The first three cases test the type as a `Car`, then check the value of the `Passengers` property. If both match, that expression is evaluated and returned. The final clause shows the `when` clause of a switch arm. You use the `when` clause to test conditions other than equality on a property. In the preceding example, the `when` clause tests to see that there are more than 2 passengers in the car. Strictly speaking, it's not necessary in this example.
 
 You would also expand the cases for taxis in a similar manner:
 
@@ -167,10 +167,10 @@ vehicle switch
 {
     // ...
 
-    Taxi { Fares: 0} => 3.50m + 1.00m,
+    Taxi { Fares: 0}  => 3.50m + 1.00m,
     Taxi { Fares: 1 } => 3.50m,
-    Taxi { Fares: 2} => 3.50m - 0.50m,
-    Taxi t => 3.50m - 1.00m,
+    Taxi { Fares: 2}  => 3.50m - 0.50m,
+    Taxi t            => 3.50m - 1.00m,
 
     // ...
 };
@@ -178,7 +178,7 @@ vehicle switch
 
 In the preceding example, the `when` clause was omitted on the final case.
 
-Next, implement the occupancy rules by expanding the cases for buses, as shown in the following exmaple:
+Next, implement the occupancy rules by expanding the cases for buses, as shown in the following example:
 
 ```csharp
 vehicle switch
@@ -211,15 +211,15 @@ When you've finished, you'll have a method that looks much like the following:
 ```csharp
 vehicle switch
 {
-    Car { Passengers: 0} => 2.00m + 0.50m,
-    Car { Passengers: 1 } => 2.0m,
-    Car { Passengers: 2} => 2.0m - 0.50m,
+    Car { Passengers: 0}        => 2.00m + 0.50m,
+    Car { Passengers: 1}        => 2.0m,
+    Car { Passengers: 2}        => 2.0m - 0.50m,
     Car c when c.Passengers > 2 => 2.00m - 1.0m,
    
-    Taxi { Fares: 0} => 3.50m + 1.00m,
+    Taxi { Fares: 0}  => 3.50m + 1.00m,
     Taxi { Fares: 1 } => 3.50m,
-    Taxi { Fares: 2} => 3.50m - 0.50m,
-    Taxi t => 3.50m - 1.00m,
+    Taxi { Fares: 2}  => 3.50m - 0.50m,
+    Taxi t            => 3.50m - 1.00m,
     
     Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
     Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
@@ -231,9 +231,9 @@ vehicle switch
 };
 ```
 
-## Recursive patterns
+Many of these switch arms are examples of **recursive patterns**. For example, `Car { Passengers: 1}` shows a constant pattern inside a property pattern.
 
-You can make this code less repetitive by using **recursive patterns**. The `Car` and `Taxi` both have four different arms in the preceding examples. In both cases, you can create a type pattern that feeds into a property pattern. This technique is shown in the following code:
+You can make this code less repetitive by using nested switches. The `Car` and `Taxi` both have four different arms in the preceding examples. In both cases, you can create a type pattern that feeds into a property pattern. This technique is shown in the following code:
 
 ```csharp
 public decimal CalculateToll(object vehicle) =>
@@ -262,7 +262,8 @@ public decimal CalculateToll(object vehicle) =>
         DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
         DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
         DeliveryTruck t => 10.00m,
-        { } => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
+
+        { }  => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
         null => throw new ArgumentNullException(nameof(vehicle))
     };
 ```
@@ -308,29 +309,17 @@ The system that collects the tools uses a <xref:System.DateTime> structure for t
 private static bool IsWeekDay(DateTime timeOfToll) =>
     timeOfToll.DayOfWeek switch
     {
-        DayOfWeek.Monday => true,
-        DayOfWeek.Tuesday => true,
+        DayOfWeek.Monday    => true,
+        DayOfWeek.Tuesday   => true,
         DayOfWeek.Wednesday => true,
-        DayOfWeek.Thursday => true,
-        DayOfWeek.Friday => true,
-        DayOfWeek.Saturday => false,
-        DayOfWeek.Sunday => false
+        DayOfWeek.Thursday  => true,
+        DayOfWeek.Friday    => true,
+        DayOfWeek.Saturday  => false,
+        DayOfWeek.Sunday    => false
     };
 ```
 
 That method works, but it's repetitious. You can simplify it, as shown in the following code:
-
-```csharp
-private static bool IsWeekDay(DateTime timeOfToll) =>
-    timeOfToll.DayOfWeek switch
-    {
-        DayOfWeek.Saturday,  => false,
-        DayOfWeek.Sunday => false,
-        _ => true
-    };
-```
-
-You can make a further simplification to this expression by combining the two values into one arm:
 
 [!code-csharp[IsWeekDay](../../../samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#IsWeekDay)]
 
@@ -354,7 +343,7 @@ Both inbound and outbound traffic have the same multiplier during the weekday da
 
 ```csharp
 (true, TimeBand.Overnight, _) => 0.75m,
-(true, TimeBand.Daytime, _) => 1.5m,
+(true, TimeBand.Daytime, _)   => 1.5m,
 ```
 
 The code should look like the following code after those two changes:
@@ -363,13 +352,13 @@ The code should look like the following code after those two changes:
 public decimal PeakTimePremium(DateTime timeOfToll, bool inbound) =>
     (IsWeekDay(timeOfToll), GetTimeBand(timeOfToll), inbound) switch
     {
-        (true, TimeBand.MorningRush, true) => 2.00m,
+        (true, TimeBand.MorningRush, true)  => 2.00m,
         (true, TimeBand.MorningRush, false) => 1.00m,
-        (true, TimeBand.Daytime, _) => 1.50m,
-        (true, TimeBand.EveningRush, true) => 1.00m,
+        (true, TimeBand.Daytime,     _)     => 1.50m,
+        (true, TimeBand.EveningRush, true)  => 1.00m,
         (true, TimeBand.EveningRush, false) => 2.00m,
-        (true, TimeBand.Overnight, _) => 0.75m,
-        (false, _, _) => 1.00m,
+        (true, TimeBand.Overnight,   _)     => 0.75m,
+        (false, _,                   _)     => 1.00m,
     };
 ```
 

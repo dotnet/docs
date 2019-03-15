@@ -409,7 +409,7 @@ There are several ways that you can improve the performance of your model so tha
 
 Adding more training data that has enough samples for each user and movie id can help improve the quality of the recommendation model.
 
-[Cross validation](../how-to-guides/train-cross-validation-ml-net) is a technique for evaluating models that randomly splits up data into subsets (instead of extracting out test data from the dataset like you did in this tutorial) and takes some of the groups as train data and some of the groups as test data. This method outperforms making a train-test split in terms of model quality.
+[Cross validation](../how-to-guides/train-cross-validation-ml-net.md) is a technique for evaluating models that randomly splits up data into subsets (instead of extracting out test data from the dataset like you did in this tutorial) and takes some of the groups as train data and some of the groups as test data. This method outperforms making a train-test split in terms of model quality.
 
 ### Features
 

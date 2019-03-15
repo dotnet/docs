@@ -12,20 +12,21 @@ helpviewer_keywords:
 ms.assetid: 6c5ad891-66a0-4e7a-adcf-f41863ba6d8d
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: "updateeachrelease"
 ---
 # Create resource files for .NET apps
 
-You can include resources, such as strings, images, or object data, in resources files to make them easily available to your application. The .NET Framework offers five ways to create resources files:
+You can include resources, such as strings, images, or object data, in resources files to make them easily available to your application. .NET offers five ways to create resources files:
 
-- Create a text file that contains string resources. You can use [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to convert the text file into a binary resource (.resources) file. You can then embed the binary resource file  in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in Text Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#TextFiles) section.
+- Create a text file that contains string resources. You can use [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to convert the text file into a binary resource (.resources) file. You can then embed the binary resource file  in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in Text Files](creating-resource-files-for-desktop-apps.md#TextFiles) section.
 
-- Create an XML resource (.resx) file that contains string, image, or object data. You can use [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file into a binary resource (.resources) file. You can then embed the binary resource file in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in .resx Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#ResxFiles) section.
+- Create an XML resource (.resx) file that contains string, image, or object data. You can use [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file into a binary resource (.resources) file. You can then embed the binary resource file in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in .resx Files](creating-resource-files-for-desktop-apps.md#ResxFiles) section.
 
-- Create an XML resource (.resx) file programmatically by using types in the <xref:System.Resources> namespace. You can create a .resx file, enumerate its resources, and retrieve specific resources by name. For more information, see the topic [Working with .resx Files Programmatically](../../../docs/framework/resources/working-with-resx-files-programmatically.md).
+- Create an XML resource (.resx) file programmatically by using types in the <xref:System.Resources> namespace. You can create a .resx file, enumerate its resources, and retrieve specific resources by name. For more information, see the topic [Working with .resx Files Programmatically](working-with-resx-files-programmatically.md).
 
-- Create a binary resource (.resources) file programmatically. You can then embed the file in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in .resources Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#ResourcesFiles) section.
+- Create a binary resource (.resources) file programmatically. You can then embed the file in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in .resources Files](creating-resource-files.md#ResourcesFiles) section.
 
-- Use [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) to create a resource file and include it in your project. Visual Studio provides a resource editor that lets you add, delete, and modify resources. At compile time, the resource file is automatically converted to a binary .resources file and embedded in an application assembly or satellite assembly. For more information, see the [Resource Files in Visual Studio](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#VSResFiles) section.
+- Use [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) to create a resource file and include it in your project. Visual Studio provides a resource editor that lets you add, delete, and modify resources. At compile time, the resource file is automatically converted to a binary .resources file and embedded in an application assembly or satellite assembly. For more information, see the [Resource Files in Visual Studio](creating-resource-files-for-desktop-apps.md#VSResFiles) section.
 
 <a name="TextFiles"></a>
 ## Resources in text files
@@ -74,6 +75,9 @@ EmptyString=
 
  Starting with .NET Framework 4.5 and in all versions of .NET Core, text files support conditional compilation with the `#ifdef`*symbol*... `#endif` and `#if !`*symbol*... `#endif` constructs. You can then use the `/define` switch with [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to define symbols. Each resource requires its own `#ifdef`*symbol*... `#endif` or `#if !`*symbol*... `#endif` construct. If you use an `#ifdef` statement and *symbol* is defined, the associated resource is included in the .resources file; otherwise, it is not included. If you use an `#if !` statement and *symbol* is not defined, the associated resource is included in the .resources file; otherwise, it is not included.
 
+> [!NOTE]
+> [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) is not included with the .NET Core SDK. If you compile resource files from the command line on Windows systems, you can download the [.NET Framework 4.7.2 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=874338), which includes the Resource File Generator. For Unix systems, the source code for the Mono version of Resgen.exe is available on [GitHub](https://github.com/mono/mono/tree/c5b88ec4f323f2bdb7c7d0a595ece28dae66579c/mcs/tools/resgen).
+
  Comments are optional in text files and are preceded either by a semicolon (;) or by a pound sign (#) at the beginning of a line. Lines that contain comments can be placed anywhere in the file. Comments are not included in a compiled .resources file that is created by using [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md).
 
  Any blank lines in the text files are considered to be white space and are ignored.
@@ -111,11 +115,12 @@ The text file is converted to a .resources file by using the following command:
 ```console
 resgen GreetingResources.txt
 ```
+# [.NET Framework](#net-framework)
 
  The following example shows the source code for a console application that uses the .resources file to display messages to the user.
 
- [!code-csharp[Conceptual.Resources.TextFiles#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.textfiles/cs/greeting.cs#1)]
- [!code-vb[Conceptual.Resources.TextFiles#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.textfiles/vb/greeting.vb#1)]
+ [!code-csharp[Conceptual.Resources.TextFiles#1](~/samples/snippets/csharp/standard/resources/create/create.txt.framework/cs/greeting.cs)]
+ [!code-vb[Conceptual.Resources.TextFiles#1](~/samples/snippets/visualbasic/standard/resources/create/create.txt.framework/vb/greeting.vb)]
 
  If you are using Visual Basic, and the source code file is named Greeting.vb, the following command creates an executable file that includes the embedded .resources file:
 
@@ -128,6 +133,24 @@ vbc greeting.vb -resource:GreetingResources.resources
  ```console
 csc greeting.cs -resource:GreetingResources.resources
 ```
+
+# [.NET Core](#net-core)
+
+The following example shows the source code for a .NET Core console application that uses the .resources file to display messages to the user.
+
+[!code-csharp[Resources from a text file](~/samples/snippets/csharp/standard/resources/create/create.txt.core/cs/greeting.cs)]
+[!code-vb[Resources from a text file](~/samples/snippets/visualbasic/standard/resources/create/create.txt.core/vb/greeting.vb)]
+
+Note that when .NET Core embeds resource files in the main application assembly, their fully qualified name includes the name of the project (which by default is the name of the directory in which the project files are located) in the fully qualified resource name. This is different from .NET Framework, which includes either the fully qualified namespace name or simply The resource file name project name is the same as the name of the MSBuild project file, and by default is also the name of the directory in which the project files are located. This example assumes that the project name and the project directory name are the same.
+
+To include the .resources file in your .NET Core application, you have to add the `EmbeddedResource` element to your project file. You place it in an `ItemGroup` element that is a child of the  `Project` element:
+
+```xml
+  <ItemGroup>
+    <EmbeddedResource Include="GreetingResources.resources" />
+  </ItemGroup>
+```
+---
 
 <a name="ResxFiles"></a>
 ## Resources in .resx files
@@ -166,7 +189,7 @@ csc greeting.cs -resource:GreetingResources.resources
 ```
 
 > [!IMPORTANT]
-> Because .resx files must consist of well-formed XML in a predefined format, we do not recommend working with .resx files manually, particularly when the .resx files contain resources other than strings. Instead, [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) provides a transparent interface for creating and manipulating .resx files. For more information, see the [Resource Files in Visual Studio](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#VSResFiles) section. You can also create and manipulate .resx files programmatically. For more information, see [Working with .resx Files Programmatically](../../../docs/framework/resources/working-with-resx-files-programmatically.md).
+> Because .resx files must consist of well-formed XML in a predefined format, we do not recommend working with .resx files manually, particularly when the .resx files contain resources other than strings. Instead, [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) provides a transparent interface for creating and manipulating .resx files. For more information, see the [Resource Files in Visual Studio](creating-resource-files-for-desktop-apps.md#VSResFiles) section. You can also create and manipulate .resx files programmatically. For more information, see [Working with .resx Files Programmatically](working-with-resx-files-programmatically.md).
 
 <a name="ResourcesFiles"></a>
 ## Resources in .resources files
@@ -184,15 +207,15 @@ You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithTy
 
  The following example programmatically creates a .resources file named CarResources.resources that stores six strings, an icon, and two application-defined objects (two `Automobile` objects). Note that the `Automobile` class, which is defined and instantiated in the example, is tagged with the <xref:System.SerializableAttribute> attribute, which allows it to be persisted by the binary serialization formatter.
 
- [!code-csharp[Conceptual.Resources.Resources#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resources/cs/resources1.cs#1)]
- [!code-vb[Conceptual.Resources.Resources#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resources/vb/resources1.vb#1)]
+ [!code-csharp[Conceptual.Resources.Resources#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resources/cs/resources1.cs#1)]
+ [!code-vb[Conceptual.Resources.Resources#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resources/vb/resources1.vb#1)]
 
  After you create the .resources file, you can embed it in a run-time executable or library by including the language compiler's `/resource` switch, or embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md).
 
 <a name="VSResFiles"></a>
 ## Resource files in Visual Studio
 
-When you add a resource file to your [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) project, Visual Studio creates a .resx file in the project directory. Visual Studio provides resource editors that enable you to add strings, images, and binary objects. Because the editors are designed to handle static data only, they cannot be used to store programmatic objects; you must write object data to either a .resx file or to a .resources file programmatically. For more information, see [Working with .resx Files Programmatically](../../../docs/framework/resources/working-with-resx-files-programmatically.md) and the [Resources in .resources Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md#ResourcesFiles) section.
+When you add a resource file to your [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) project, Visual Studio creates a .resx file in the project directory. Visual Studio provides resource editors that enable you to add strings, images, and binary objects. Because the editors are designed to handle static data only, they cannot be used to store programmatic objects; you must write object data to either a .resx file or to a .resources file programmatically. For more information, see [Working with .resx Files Programmatically](working-with-resx-files-programmatically.md) and the [Resources in .resources Files](creating-resource-files-for-desktop-apps.md#ResourcesFiles) section.
 
 If you're adding localized resources, give them the same root file name as the main resource file. You should also designate their culture in the file name. For example, if you add a resource file named Resources.resx, you might also create resource files named Resources.en-US.resx and Resources.fr-FR.resx to hold localized resources for the English (United States) and French (France) cultures, respectively. You should also designate your application's default culture. This is the culture whose resources are used if no localized resources for a particular culture can be found. To specify the default culture, in Solution Explorer in Visual Studio, right-click the project name, point to Application, click **Assembly Information**, and select the appropriate language/culture in the **Neutral language** list.
 
@@ -201,5 +224,5 @@ At compile time, Visual Studio first converts the .resx files in a project to bi
 ## See also
 
 - <xref:System.Resources>
-- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
-- [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [Resources in Desktop Apps](index.md)
+- [Packaging and Deploying Resources](packaging-and-deploying-resources.md)

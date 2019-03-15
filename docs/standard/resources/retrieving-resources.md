@@ -1,11 +1,11 @@
 ---
-title: "Retrieving Resources in Desktop Apps"
+title: "Retrieving Resources in .NET Apps"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "deploying applications [.NET Framework], resources"
+  - "deploying applications [.NET], resources"
   - "resource files, deploying"
   - "resource files, packaging"
   - "application resources, packaging"
@@ -21,8 +21,8 @@ ms.assetid: eca16922-1c46-4f68-aefe-e7a12283641f
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Retrieving Resources in Desktop Apps
-When you work with localized resources in .NET Framework desktop apps, you should ideally package the resources for the default or neutral culture with the main assembly and create a separate satellite assembly for each language or culture that your app supports. You can then use the <xref:System.Resources.ResourceManager> class as described in the next section to access named resources. If you choose not to embed your resources in the main assembly and satellite assemblies, you can also access binary .resources files directly, as discussed in the section [Retrieving Resources from .resources files](#from_file) later in this article.  To retrieve resources in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, see [Creating and retrieving resources in Windows Store apps](https://go.microsoft.com/fwlink/p/?LinkID=241674) in the Windows Dev Center.  
+# Retrieving Resources in .NET Apps
+When you work with localized resources in .NET apps, you should ideally package the resources for the default or neutral culture with the main assembly and create a separate satellite assembly for each language or culture that your app supports. You can then use the <xref:System.Resources.ResourceManager> class as described in the next section to access named resources. If you choose not to embed your resources in the main assembly and satellite assemblies, you can also access binary .resources files directly, as discussed in the section [Retrieving Resources from .resources files](#from_file) later in this article.  To retrieve resources in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, see [Creating and retrieving resources in Windows Store apps](https://go.microsoft.com/fwlink/p/?LinkID=241674) in the Windows Dev Center.  
   
 <a name="from_assembly"></a>   
 ## Retrieving Resources from Assemblies  
@@ -32,7 +32,7 @@ When you work with localized resources in .NET Framework desktop apps, you shoul
   
 -   An overload that has two parameters: a string containing the name of the resource, and a <xref:System.Globalization.CultureInfo> object that represents the culture whose resource is to be retrieved. If a resource set for that culture cannot be found, the resource manager uses fallback rules to retrieve an appropriate resource. For more information, see the <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29>, <xref:System.Resources.ResourceManager.GetObject%28System.String%2CSystem.Globalization.CultureInfo%29>, and <xref:System.Resources.ResourceManager.GetStream%28System.String%2CSystem.Globalization.CultureInfo%29> methods.  
   
- The resource manager uses the resource fallback process to control how the app retrieves culture-specific resources. For more information, see the "Resource Fallback Process" section in [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). For information about instantiating a <xref:System.Resources.ResourceManager> object, see the "Instantiating a ResourceManager Object" section in the <xref:System.Resources.ResourceManager> class topic.  
+ The resource manager uses the resource fallback process to control how the app retrieves culture-specific resources. For more information, see the "Resource Fallback Process" section in [Packaging and Deploying Resources](packaging-and-deploying-resources.md). For information about instantiating a <xref:System.Resources.ResourceManager> object, see the "Instantiating a ResourceManager Object" section in the <xref:System.Resources.ResourceManager> class topic.  
   
 ### Retrieving String Data: An Example  
  The following example calls the <xref:System.Resources.ResourceManager.GetString%28System.String%29> method to retrieve the string resources of the current UI culture. It includes a neutral string resource for the English (United States) culture and localized resources for the French (France) and Russian (Russia) cultures. The following English (United States) resource is in a file named Strings.txt:  
@@ -128,7 +128,7 @@ GetObject.exe
 ```  
   
 ## Versioning Support for Satellite Assemblies  
- By default, when the <xref:System.Resources.ResourceManager> object retrieves requested resources, it looks for satellite assemblies that have version numbers that match the version number of the main assembly. After you have deployed an app, you might want to update the main assembly or specific resource satellite assemblies. The .NET Framework provides support for versioning the main assembly and satellite assemblies.  
+ By default, when the <xref:System.Resources.ResourceManager> object retrieves requested resources, it looks for satellite assemblies that have version numbers that match the version number of the main assembly. After you have deployed an app, you might want to update the main assembly or specific resource satellite assemblies. .NET provides support for versioning the main assembly and satellite assemblies.  
   
  The <xref:System.Resources.SatelliteContractVersionAttribute> attribute  provides versioning support for a main assembly. Specifying this attribute on an app's main assembly enables you to update and redeploy a main assembly without updating its satellite assemblies. After you update the main assembly, increment the main assembly's version number but leave the satellite contract version number unchanged. When the resource manager retrieves requested resources, it loads the satellite assembly version specified by this attribute.  
   
@@ -145,7 +145,7 @@ GetObject.exe
 ### Deploying .resources Files  
  When you embed .resources files in an application assembly and satellite assemblies, each satellite assembly has the same file name, but is placed in a subdirectory that reflects the satellite assembly's culture. In contrast, when you access resources from .resources files directly, you can place all the .resources files in a single directory, usually a subdirectory of the application directory. The name of the app's default .resources file consists of a root name only, with no indication of its culture (for example, strings.resources). The resources for each localized culture are stored in a file whose name consists of the root name followed by the culture (for example, strings.ja.resources or strings.de-DE.resources). The following illustration shows where resource files should be located in the directory structure.  
   
- ![Main directory for your application](../../../docs/framework/resources/media/resappdir.gif "resappdir")  
+ ![Main directory for your application](media/resappdir.gif "resappdir")  
 Directory structure and naming conventions for .resources files  
   
 ### Using the Resource Manager  
@@ -196,7 +196,7 @@ csc Example.cs
   
 ## See also
 - <xref:System.Resources.ResourceManager>
-- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
-- [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [Resources in Desktop Apps](index.md)
+- [Packaging and Deploying Resources](packaging-and-deploying-resources.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Creating and retrieving resources in Windows Store apps](https://go.microsoft.com/fwlink/p/?LinkID=241674)
+- [Creating and retrieving resources in Windows Store apps](/previous-versions/windows/apps/hh694557(v%3dvs.140))

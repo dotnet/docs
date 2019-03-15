@@ -42,7 +42,7 @@ The following example creates a .resx file named CarResources.resx that stores s
 > [!TIP]
 > You can also use [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) to create .resx files. At compile time, Visual Studio uses the [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file to a binary resource (.resources) file, and also embeds it in either an application assembly or a satellite assembly.
 
-You cannot embed a .resx file in a runtime executable or compile it into a satellite assembly. You must convert your .resx file into a binary resource (.resources) file by using the [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md). The resulting .resources file can then be embedded in an application assembly or a satellite assembly. For more information, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md).
+You cannot embed a .resx file in a runtime executable or compile it into a satellite assembly. You must convert your .resx file into a binary resource (.resources) file by using the [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md). The resulting .resources file can then be embedded in an application assembly or a satellite assembly. For more information, see [Creating Resource Files](creating-resource-files.md).
 
 ## Enumerate resources
  In some cases, you may want to retrieve all resources, instead of a specific resource, from a .resx file. To do this, you can use the <xref:System.Resources.ResXResourceReader?displayProperty=nameWithType> class, which provides an enumerator for all resources in the .resx file. The <xref:System.Resources.ResXResourceReader?displayProperty=nameWithType> class implements <xref:System.Collections.IDictionaryEnumerator>, which returns a <xref:System.Collections.DictionaryEntry> object that represents a particular resource for each iteration of the loop. Its <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property returns the resource's key, and its <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property returns the resource's value.
@@ -80,6 +80,6 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
  **al** *resourcesFilename* **-out:** *assemblyFilename*
 
 ## See also
-- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)
+- [Creating Resource Files](creating-resource-files.md)
 - [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)
 - [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)

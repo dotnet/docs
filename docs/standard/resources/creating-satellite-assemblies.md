@@ -1,11 +1,11 @@
 ---
-title: "Creating Satellite Assemblies for Desktop Apps"
+title: "Create Satellite Assemblies"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "deploying applications [.NET Framework], resources"
+  - "deploying applications [.NET], resources"
   - "resource files, deploying"
   - "hub-and-spoke resource deployment model"
   - "resource files, packaging"
@@ -26,14 +26,14 @@ ms.assetid: 8d5c6044-2919-41d2-8321-274706b295ac
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Creating Satellite Assemblies for Desktop Apps
-Resource files play a central role in localized applications. They enable an application to display strings, images, and other data in the user's own language and culture, and to provide alternate data if resources for the user's own language or culture are unavailable. The .NET Framework uses a hub-and-spoke model to locate and retrieve localized resources. The hub is the main assembly that contains the non-localizable executable code and the resources for a single culture, which is called the neutral or default culture. The default culture is the fallback culture for the application; it is used when no localized resources are available. You use the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to designate the culture of the application's default culture. Each spoke connects to a satellite assembly that contains the resources for a single localized culture but does not contain any code. Because the satellite assemblies are not part of the main assembly, you can easily update or replace resources that correspond to a specific culture without replacing the main assembly for the application.  
+# Create satellite assemblies for .NET apps
+Resource files play a central role in localized applications. They enable an application to display strings, images, and other data in the user's own language and culture, and to provide alternate data if resources for the user's own language or culture are unavailable. .NET uses a hub-and-spoke model to locate and retrieve localized resources. The hub is the main assembly that contains the non-localizable executable code and the resources for a single culture, which is called the neutral or default culture. The default culture is the fallback culture for the application; it is used when no localized resources are available. You use the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to designate the culture of the application's default culture. Each spoke connects to a satellite assembly that contains the resources for a single localized culture but does not contain any code. Because the satellite assemblies are not part of the main assembly, you can easily update or replace resources that correspond to a specific culture without replacing the main assembly for the application.  
   
 > [!NOTE]
 >  The resources of an application's default culture can also be stored in a satellite assembly. To do this, you assign the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute a value of <xref:System.Resources.UltimateResourceFallbackLocation.Satellite?displayProperty=nameWithType>.  
   
-## Satellite Assembly Name and Location  
- The hub-and-spoke model requires that you place resources in specific locations so that they can be easily located and used. If you do not compile and name resources as expected, or if you do not place them in the correct locations, the common language runtime will not be able to locate them and will use the resources of the default culture instead. The .NET Framework Resource Manager, represented by a <xref:System.Resources.ResourceManager> object, is used to automatically access localized resources. The Resource Manager requires the following:  
+## Satellite assembly name and Location  
+ The hub-and-spoke model requires that you place resources in specific locations so that they can be easily located and used. If you do not compile and name resources as expected, or if you do not place them in the correct locations, the common language runtime will not be able to locate them and will use the resources of the default culture instead. The .NET Resource Manager, represented by a <xref:System.Resources.ResourceManager> object, is used to automatically access localized resources. The Resource Manager requires the following:  
   
 -   A single satellite assembly must include all the resources for a particular culture. In other words, you should compile multiple .txt or .resx files into a single binary .resources file.  
   
@@ -46,12 +46,12 @@ Resource files play a central role in localized applications. They enable an app
   
 -   Information about the culture of the satellite assembly must be included in the assembly's metadata. To store the culture name in the satellite assembly's metadata, you specify the `/culture` option when you use [Assembly Linker](../../../docs/framework/tools/al-exe-assembly-linker.md) to embed resources in the satellite assembly.  
   
- The following illustration shows a sample directory structure and location requirements for applications that you are not installing in the [global assembly cache](../../../docs/framework/app-domains/gac.md). The items with .txt and .resources extensions will not ship with the final application. These are the intermediate resource files used to create the final satellite resource assemblies. In this example, you could substitute .resx files for the .txt files. For more information, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
+ The following illustration shows a sample directory structure and location requirements for applications that you are not installing in the [global assembly cache](../../../docs/framework/app-domains/gac.md). The items with .txt and .resources extensions will not ship with the final application. These are the intermediate resource files used to create the final satellite resource assemblies. In this example, you could substitute .resx files for the .txt files. For more information, see [Packaging and Deploying Resources](packaging-and-deploying-resources.md).  
   
- ![Satellite assemblies](../../../docs/framework/resources/media/satelliteassemblydir.gif "satelliteassemblydir")  
+ ![Satellite assemblies](media/satelliteassemblydir.gif "satelliteassemblydir")  
 Satellite assembly directory  
   
-## Compiling Satellite Assemblies  
+## Compiling satellite assemblies  
  You use [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile text files or XML (.resx) files that contain resources to binary .resources files. You then use [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to compile .resources files into satellite assemblies. Al.exe creates an assembly from the .resources files that you specify. Satellite assemblies can contain only resources; they cannot contain any executable code.  
   
  The following Al.exe command creates a satellite assembly for the application `Example` from the German resources file strings.de.resources.  
@@ -78,7 +78,7 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
   
  For a complete list of options available with Al.exe, see [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md).  
   
-## Satellite Assemblies: An Example  
+## Satellite assemblies: An example  
  The following is a simple "Hello world" example that displays a message box containing a localized greeting. The example includes resources for the English (United States), French (France), and Russian (Russia) cultures, and its fallback culture is English. To create the example, do the following:  
   
 1.  Create a resource file named Greeting.resx or Greeting.txt to contain the resource for the default culture. Store a single string named `HelloString` whose value is "Hello world!" in this file.  
@@ -140,14 +140,18 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
  You can then run the example. It will randomly make one of the supported cultures the current culture and display a localized greeting.  
   
 <a name="SN"></a>   
-## Installing Satellite Assemblies in the Global Assembly Cache  
- Instead of installing assemblies in a local application subdirectory, you can install them in the global assembly cache. This is particularly useful if you have class libraries and class library resource assemblies that are used by multiple applications.  
+## Installing satellite assemblies in the Global Assembly Cache  
+
+For .NET Framework applications, instead of installing assemblies in a local application subdirectory, you can install them in the global assembly cache. This is particularly useful if you have class libraries and class library resource assemblies that are used by multiple applications.  
   
- Installing assemblies in the global assembly cache requires that they have strong names. Strong-named assemblies are signed with a valid public/private key pair. They contain version information that the runtime uses to determine which assembly to use to satisfy a binding request. For more information about strong names and versioning, see [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md). For more information about strong names, see [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md).  
+> [!IMPORTANT]
+>  .NET Core does not support the Global Assembly Cache. Only applications that run on the .NET Framework can install satellite assemblies in the Global Assembly Cache.
+  
+Installing assemblies in the global assembly cache requires that they have strong names. Strong-named assemblies are signed with a valid public/private key pair. They contain version information that the runtime uses to determine which assembly to use to satisfy a binding request. For more information about strong names and versioning, see [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md). For more information about strong names, see [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md).  
   
  When you are developing an application, it is unlikely that you will have access to the final public/private key pair. In order to install a satellite assembly in the global assembly cache and ensure that it works as expected, you can use a technique called delayed signing. When you delay sign an assembly, at build time you reserve space in the file for the strong name signature. The actual signing is delayed until later, when the final public/private key pair is available. For more information about delayed signing, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md).  
   
-### Obtaining the Public Key  
+### Obtaining the public key  
  To delay sign an assembly, you must have access to the public key. You can either obtain the real public key from the organization in your company that will do the eventual signing, or create a public key by using the [Strong Name Tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md).  
   
  The following Sn.exe command creates a test public/private key pair. The **–k** option specifies that Sn.exe should create a new key pair and save it in a file named TestKeyPair.snk.  
@@ -162,7 +166,7 @@ sn –k TestKeyPair.snk
 sn –p TestKeyPair.snk PublicKey.snk  
 ```  
   
-### Delay Signing an Assembly  
+### Delay signing an assembly  
  After you obtain or create the public key, you use the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to compile the assembly and specify delayed signing.  
   
  The following Al.exe command creates a strong-named satellite assembly for the application StringLibrary from the strings.ja.resources file:  
@@ -173,7 +177,7 @@ al -target:lib -embed:strings.ja.resources -culture:ja -out:StringLibrary.resour
   
  The **-delay+** option specifies that the Assembly Linker should delay sign the assembly. The **-keyfile** option specifies the name of the key file that contains the public key to use to delay sign the assembly.  
   
-### Re-signing an Assembly  
+### Re-signing an assembly  
  Before you deploy your application, you must re-sign the delay signed satellite assembly with the real key pair. You can do this by using Sn.exe.  
   
  The following Sn.exe command signs StringLibrary.resources.dll with the key pair stored in the file RealKeyPair.snk. The **–R** option specifies that a previously signed or delay signed assembly is to be re-signed.  
@@ -182,8 +186,8 @@ al -target:lib -embed:strings.ja.resources -culture:ja -out:StringLibrary.resour
 sn –R StringLibrary.resources.dll RealKeyPair.snk   
 ```  
   
-### Installing a Satellite Assembly in the Global Assembly Cache  
- When the runtime searches for resources in the resource fallback process, it looks in the [global assembly cache](../../../docs/framework/app-domains/gac.md) first. (For more information, see the "Resource Fallback Process" section of the [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) topic.) As soon as a satellite assembly is signed with a strong name, it can be installed in the global assembly cache by using the [Global Assembly Cache Tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md).  
+### Installing a satellite assembly in the Global Assembly Cache  
+ When the runtime searches for resources in the resource fallback process, it looks in the [global assembly cache](../../../docs/framework/app-domains/gac.md) first. (For more information, see the "Resource Fallback Process" section of the [Packaging and Deploying Resources](packaging-and-deploying-resources.md) topic.) As soon as a satellite assembly is signed with a strong name, it can be installed in the global assembly cache by using the [Global Assembly Cache Tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md).  
   
  The following Gacutil.exe command installs StringLibrary.resources.dll in the global assembly cache:  
   
@@ -193,7 +197,7 @@ gacutil -i:StringLibrary.resources.dll
   
  The **/i** option specifies that Gacutil.exe should install the specified assembly into the global assembly cache. After the satellite assembly is installed in the cache, the resources it contains become available to all applications that are designed to use the satellite assembly.  
   
-### Resources in the Global Assembly Cache: An Example  
+### Resources in the Global Assembly Cache: An example  
  The following example uses a method in a .NET Framework class library to extract and return a localized greeting from a resource file. The library and its resources are registered in the global assembly cache. The example includes resources for the English (United States), French (France), Russian (Russia), and English cultures. English is the default culture; its resources are stored in the main assembly. The example initially delay signs the library and its satellite assemblies with a public key, then re-signs them with a public/private key pair. To create the example, do the following:  
   
 1.  If you are not using Visual Studio, use the following [Strong Name Tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) command to create a public/private key pair named ResKey.snk:  
@@ -303,9 +307,9 @@ gacutil -i:StringLibrary.resources.dll
 14. Run Example.exe.  
   
 ## See also
-- [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [Packaging and Deploying Resources](packaging-and-deploying-resources.md)
 - [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)
 - [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)
 - [Sn.exe (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)
 - [Gacutil.exe (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)
-- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+- [Resources in Desktop Apps](index.md)

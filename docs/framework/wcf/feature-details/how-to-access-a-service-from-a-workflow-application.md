@@ -14,7 +14,7 @@ This topic describes how to call a workflow service from a workflow console appl
 
 3.  Right click the **MyWFService** solution in the **Solution Explorer** and select **Add**, **New Project**. Select **Workflow** in the **Installed Templates** and **Workflow Console Application** from the list of project types. Name the project MyWFClient and use the default location as shown in the following illustration.
 
-     ![Add New Project Dialog](../../../../docs/framework/wcf/feature-details/media/addnewprojectdlg.JPG "AddNewProjectDlg")
+     ![Add New Project Dialog](./media/how-to-access-a-service-from-a-workflow-application/add-new-project-dialog.jpg)
 
      Click the **OK** button to dismiss the **Add New Project Dialog**.
 
@@ -34,7 +34,7 @@ This topic describes how to call a workflow service from a workflow console appl
 
      Click **OK** to dismiss the dialog. Next, press CTRL+SHIFT+B to build the solution. Notice in the toolbox a new section has been added called **MyWFClient.ServiceReference1.Activities**. Expand this section and notice the Echo activity that has been added as shown in the following illustration.
 
-     ![Echo activity in toolbox](../../../../docs/framework/wcf/feature-details/media/echoactivity.JPG "EchoActivity")
+     ![Echo activity in the toolbox](./media/how-to-access-a-service-from-a-workflow-application/echo-activity-toolbox.jpg)
 
 7.  Drag and drop a <xref:System.Activities.Statements.Sequence> activity onto the designer surface. It is under the **Control Flow** section of the toolbox.
 

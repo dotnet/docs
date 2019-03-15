@@ -119,7 +119,7 @@ The *MovieRatingData.cs* file opens in the code editor. Add the following `using
 using Microsoft.ML.Data;
 ```
 
-Create a class called `MovieRating` by removing the existing class definition and adding the following code in `MovieRatingData.cs`:
+Create a class called `MovieRating` by removing the existing class definition and adding the following code in *MovieRatingData.cs*:
 
 [!code-csharp[MovieRatingClass](../../../samples/machine-learning/tutorials/MovieRecommendation/MovieRatingData.cs#MovieRatingClass "Add the Movie Rating class")]
 

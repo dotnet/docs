@@ -137,7 +137,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 12. Right click the <xref:System.ServiceModel.Activities.Receive> activity and select **Create SendReply** and paste it after the last <xref:System.Activities.Statements.WriteLine> activity. Click the **Define...** link in the `SendReplyToReceive` activity and make the following settings.  
   
-     ![Reply message settings](./media/flowing-transactions-into-and-out-of-workflow-services//reply-message-settings.jpg)  
+     ![Reply message settings](./media/flowing-transactions-into-and-out-of-workflow-services/reply-message-settings.jpg)  
   
 13. Drag and drop a <xref:System.Activities.Statements.WriteLine> activity after the `SendReplyToReceive` activity and set it’s <xref:System.Activities.Statements.WriteLine.Text%2A> property to "Service: Reply sent."  
   
@@ -161,7 +161,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 4.  Drag and drop a <xref:System.Activities.Statements.TransactionScope> activity after the <xref:System.Activities.Statements.WriteLine> activity.  Select the <xref:System.Activities.Statements.TransactionScope> activity, click the Variables button and add the following variables.  
   
-     ![Add variables to the TransactionScope](.media/flowing-transactions-into-and-out-of-workflow-services/transactionscope-variables.jpg)  
+     ![Add variables to the TransactionScope](./media/flowing-transactions-into-and-out-of-workflow-services/transactionscope-variables.jpg)  
   
 5.  Drag and drop a <xref:System.Activities.Statements.Sequence> activity into the body of the <xref:System.Activities.Statements.TransactionScope> activity.  
   

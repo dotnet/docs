@@ -177,7 +177,7 @@ You create `Transformers` in ML.NET by creating `Estimators`. `Estimators` take 
 
 ![estimator image](./media/movie-recommendation/estimator.png)
 
-The recommendation training algorithm you will use for training your model is an an example of an `Estimator`.
+The recommendation training algorithm you will use for training your model is an example of an `Estimator`.
 
 Build an `Estimator` with the following steps:
 

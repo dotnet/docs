@@ -72,15 +72,17 @@ The first step is to create the application infrastructure, which includes an ap
 
     [!code-csharp[ExpenseIt#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/App.xaml#1)]
 
-### [Visual Basic](#tab/vb)
+# [Visual Basic](#tab/vb)
 
     [!code-xaml[ExpenseIt#1_A](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/Application.xaml#1_a)]
 
-### [C#](#tab/csharp)
+---
+
+# [C#](#tab/csharp)
 
     [!code-xaml[ExpenseIt#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/App.xaml#1)]
 
-    ---
+---
 
 3. Open *MainWindow.xaml*.
 

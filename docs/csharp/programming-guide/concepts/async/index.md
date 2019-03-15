@@ -1,92 +1,11 @@
 ---
-title: "Asynchronous Programming with async and await (C#)"
-ms.date: 05/22/2017
-ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
+title: Asynchronous programming in C#
+description: An overview of the C# language support for asynchronous programming using async, await, Task and Task<T>
+ms.date: 02/10/2019
 ---
-# Asynchronous programming with async and await (C#)
-You can avoid performance bottlenecks and enhance the overall responsiveness of your application by using asynchronous programming. However, traditional techniques for writing asynchronous applications can be complicated, making them difficult to write, debug, and maintain.  
-  
-[C# 5](../../../whats-new/csharp-version-history.md#c-version-50) introduced a simplified approach, async programming, that leverages asynchronous support in the .NET Framework 4.5 and higher, .NET Core, and the Windows Runtime. The compiler does the difficult work that the developer used to do, and your application retains a logical structure that resembles synchronous code. As a result, you get all the advantages of asynchronous programming with a fraction of the effort.  
-  
-This topic provides an overview of when and how to use async programming and includes links to support topics that contain details and examples.  
-  
-## <a name="BKMK_WhentoUseAsynchrony"></a> Async improves responsiveness  
- Asynchrony is essential for activities that are potentially blocking, such as web access. Access to a web resource sometimes is slow or delayed. If such an activity is blocked in a synchronous process, the entire application must wait. In an asynchronous process, the application can continue with other work that doesn't depend on the web resource until the potentially blocking task finishes.  
-  
- The following table shows typical areas where asynchronous programming improves responsiveness. The listed APIs from .NET and the Windows Runtime contain methods that support async programming.  
-  
-| Application area    | .NET types with async methods     | Windows Runtime types with async methods  |
-|---------------------|-----------------------------------|-------------------------------------------|
-|Web access|<xref:System.Net.Http.HttpClient>|<xref:Windows.Web.Syndication.SyndicationClient>|
-|Working with files|<xref:System.IO.StreamWriter>, <xref:System.IO.StreamReader>, <xref:System.Xml.XmlReader>|<xref:Windows.Storage.StorageFile>|  
-|Working with images||<xref:Windows.Media.Capture.MediaCapture>, <xref:Windows.Graphics.Imaging.BitmapEncoder>, <xref:Windows.Graphics.Imaging.BitmapDecoder>|  
-|WCF programming|[Synchronous and Asynchronous Operations](../../../../framework/wcf/synchronous-and-asynchronous-operations.md)||  
-  
-Asynchrony proves especially valuable for applications that access the UI thread because all UI-related activity usually shares one thread. If any process is blocked in a synchronous application, all are blocked. Your application stops responding, and you might conclude that it has failed when instead it's just waiting.  
-  
- When you use asynchronous methods, the application continues to respond to the UI. You can resize or minimize a window, for example, or you can close the application if you don't want to wait for it to finish.  
-  
- The async-based approach adds the equivalent of an automatic transmission to the list of options that you can choose from when designing asynchronous operations. That is, you get all the benefits of traditional asynchronous programming but with much less effort from the developer.  
-  
-## <a name="BKMK_HowtoWriteanAsyncMethod"></a> Async methods are easier to write  
- The [async](../../../../csharp/language-reference/keywords/async.md) and [await](../../../../csharp/language-reference/keywords/await.md) keywords in C# are the heart of async programming. By using those two keywords, you can use resources in the .NET Framework, .NET Core, or the Windows Runtime to create an asynchronous method almost as easily as you create a synchronous method. Asynchronous methods that you define by using the `async` keyword are referred to as *async methods*.  
-  
- The following example shows an async method. Almost everything in the code should look completely familiar to you. The comments call out the features that you add to create the asynchrony.  
-  
- You can find a complete Windows Presentation Foundation (WPF) example file at the end of this topic, and you can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://code.msdn.microsoft.com/Async-Sample-Example-from-9b9f505c).  
-  
-```csharp  
-// Three things to note in the signature:  
-//  - The method has an async modifier.   
-//  - The return type is Task or Task<T>. (See "Return Types" section.)  
-//    Here, it is Task<int> because the return statement returns an integer.  
-//  - The method name ends in "Async."  
-async Task<int> AccessTheWebAsync()  
-{   
-    // You need to add a reference to System.Net.Http to declare client.  
-    using (HttpClient client = new HttpClient())  
-    {  
-        // GetStringAsync returns a Task<string>. That means that when you await the  
-        // task you'll get a string (urlContents).  
-        Task<string> getStringTask = client.GetStringAsync("https://docs.microsoft.com");  
-  
-        // You can do work here that doesn't rely on the string from GetStringAsync.  
-        DoIndependentWork();  
-  
-        // The await operator suspends AccessTheWebAsync.  
-        //  - AccessTheWebAsync can't continue until getStringTask is complete.  
-        //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
-        //  - Control resumes here when getStringTask is complete.   
-        //  - The await operator then retrieves the string result from getStringTask.  
-        string urlContents = await getStringTask;  
-  
-        // The return statement specifies an integer result.  
-        // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
-        return urlContents.Length;  
-    }  
-}  
-```  
-  
- If `AccessTheWebAsync` doesn't have any work that it can do between calling `GetStringAsync` and awaiting its completion, you can simplify your code by calling and awaiting in the following single statement.  
-  
-```csharp  
-string urlContents = await client.GetStringAsync("https://docs.microsoft.com");  
-```  
- 
-The following characteristics summarize what makes the previous example an async method.  
-  
--   The method signature includes an `async` modifier.  
-  
--   The name of an async method, by convention, ends with an "Async" suffix.  
-  
--   The return type is one of the following types:  
-  
-    -   <xref:System.Threading.Tasks.Task%601> if your method has a return statement in which the operand has type `TResult`.  
-  
-    -   <xref:System.Threading.Tasks.Task> if your method has no return statement or has a return statement with no operand.  
-  
-    -   `void` if you're writing an async event handler.  
+# The Task asynchronous programming model in C# #
 
+<<<<<<< HEAD
     -   Any other type that has a `GetAwaiter` method (starting with C# 7.0).
   
      For more information, see the [Return Types and Parameters](#BKMK_ReturnTypesandParameters) section.  
@@ -167,171 +86,84 @@ An async method typically returns a <xref:System.Threading.Tasks.Task> or a <xre
 You specify <xref:System.Threading.Tasks.Task%601> as the return type if the method contains a [return](../../../../csharp/language-reference/keywords/return.md) statement that specifies an operand of type `TResult`. 
   
 You use <xref:System.Threading.Tasks.Task>  as the return type if the method has no return statement or has a return statement that doesn't return an operand.  
+=======
+The Task asynchronous programming model (TAP) provides an abstraction over asynchronous code. You write code as a sequence of statements, just like always. You can read that code as though each statement completes before the next begins. The compiler performs a number of transformations because some of those statements may start work and return a <xref:System.Threading.Tasks.Task> that represents the ongoing work.
+>>>>>>> interim checkin to switch branches
 
-Starting with C# 7.0, you can also specify any other return type, provided that the type includes a `GetAwaiter` method. <xref:System.Threading.Tasks.ValueTask%601> is an example of such a type. It is available in the [System.Threading.Tasks.Extension](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/) NuGet package.
-  
- The following example shows how you declare and call a method that returns a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.Task>.  
-  
-```csharp  
-// Signature specifies Task<TResult>  
-async Task<int> GetTaskOfTResultAsync()  
-{  
-    int hours = 0;  
-    await Task.Delay(0);  
-    // Return statement specifies an integer result.  
-    return hours;  
-}  
-  
-// Calls to GetTaskOfTResultAsync  
-Task<int> returnedTaskTResult = GetTaskOfTResultAsync();  
-int intResult = await returnedTaskTResult;  
-// or, in a single statement  
-int intResult = await GetTaskOfTResultAsync();  
-  
-// Signature specifies Task  
-async Task GetTaskAsync()  
-{  
-    await Task.Delay(0);  
-    // The method has no return statement.    
-}  
-  
-// Calls to GetTaskAsync  
-Task returnedTask = GetTaskAsync();  
-await returnedTask;  
-// or, in a single statement  
-await GetTaskAsync();  
-```  
-  
-Each returned task represents ongoing work. A task encapsulates information about the state of the asynchronous process and, eventually, either the final result from the process or the exception that the process raises if it doesn't succeed.  
-  
-An async method can also have a `void` return type. This return type is used primarily to define event handlers, where a `void` return type is required. Async event handlers often serve as the starting point for async programs.  
-  
-An async method that has a `void` return type can’t be awaited, and the caller of a void-returning method can't catch any exceptions that the method throws.  
-  
-An async method can't declare [in](../../../../csharp/language-reference/keywords/in-parameter-modifier.md), [ref](../../../../csharp/language-reference/keywords/ref.md) or [out](../../../../csharp/language-reference/keywords/out-parameter-modifier.md) parameters, but the method can call methods that have such parameters. Similarly, an async method can't return a value by reference, although it can call methods with ref return values. 
-  
-For more information and examples, see [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md). For more information about how to catch exceptions in async methods, see [try-catch](../../../../csharp/language-reference/keywords/try-catch.md). 
-  
-Asynchronous APIs in Windows Runtime programming have one of the following return types, which are similar to tasks:  
-  
--   <xref:Windows.Foundation.IAsyncOperation%601>, which corresponds to <xref:System.Threading.Tasks.Task%601>  
-  
--   <xref:Windows.Foundation.IAsyncAction>, which corresponds to <xref:System.Threading.Tasks.Task>  
-  
--   <xref:Windows.Foundation.IAsyncActionWithProgress%601>  
-  
--   <xref:Windows.Foundation.IAsyncOperationWithProgress%602>  
-   
-  
-## <a name="BKMK_NamingConvention"></a> Naming convention  
-By convention, methods that return commonly awaitable types (e.g. `Task`, `Task<T>`, `ValueTask`, `ValueTask<T>`) should have names that end with "Async". Methods that start an asynchronous operation but do not return an awaitable type should not have names that end with "Async", but may start with "Begin", "Start" or some other verb to suggest this method does not return or throw the result of the operation.
-  
- You can ignore the convention where an event, base class, or interface contract suggests a different name. For example, you shouldn’t rename common event handlers, such as `Button1_Click`.  
-  
-## <a name="BKMK_RelatedTopics"></a> Related topics and samples (Visual Studio)  
-  
-|Title|Description|Sample|  
-|-----------|-----------------|------------|  
-|[Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)|Shows how to convert a synchronous WPF solution to an asynchronous WPF solution. The application downloads a series of websites.|[Async Sample: Accessing the Web Walkthrough](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)|  
-|[How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)|Adds <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> to the previous walkthrough. The use of `WhenAll` starts all the downloads at the same time.||  
-|[How to: Make Multiple Web Requests in Parallel by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)|Demonstrates how to start several tasks at the same time.|[Async Sample: Make Multiple Web Requests in Parallel](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e)|  
-|[Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)|Illustrates the types that async methods can return and explains when each type is appropriate.||  
-|[Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)|Traces in detail the flow of control through a succession of await expressions in an asynchronous program.|[Async Sample: Control Flow in Async Programs](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0)|  
-|[Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)|Shows how to add the following functionality to your async solution:<br /><br /> -   [Cancel an Async Task or a List of Tasks (C#)](../../../../csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md)<br />-   [Cancel Async Tasks after a Period of Time (C#)](../../../../csharp/programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md)<br />-   [Cancel Remaining Async Tasks after One Is Complete (C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)<br />-   [Start Multiple Async Tasks and Process Them As They Complete (C#)](../../../../csharp/programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md)|[Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)|  
-|[Handling Reentrancy in Async Apps (C#)](../../../../csharp/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md)|Shows how to handle cases in which an active asynchronous operation is restarted while it’s running.||  
-|[WhenAny: Bridging between the .NET Framework and the Windows Runtime](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/jj635140(v=vs.120))|Shows how to bridge between Task types in the .NET Framework and IAsyncOperations in the [!INCLUDE[wrt](~/includes/wrt-md.md)] so that you can use <xref:System.Threading.Tasks.Task.WhenAny%2A> with a [!INCLUDE[wrt](~/includes/wrt-md.md)] method.|[Async Sample: Bridging between .NET and Windows Runtime (AsTask and WhenAny)](https://code.msdn.microsoft.com/Async-Sample-Bridging-d6a2f739)|  
-|Async Cancellation: Bridging between the .NET Framework and the Windows Runtime|Shows how to bridge between Task types in the .NET Framework and IAsyncOperations in the [!INCLUDE[wrt](~/includes/wrt-md.md)] so that you can use <xref:System.Threading.CancellationTokenSource> with a [!INCLUDE[wrt](~/includes/wrt-md.md)] method.|[Async Sample: Bridging between .NET and Windows Runtime (AsTask & Cancellation)](https://code.msdn.microsoft.com/Async-Sample-Bridging-9479eca3)|  
-|[Using Async for File Access (C#)](../../../../csharp/programming-guide/concepts/async/using-async-for-file-access.md)|Lists and demonstrates the benefits of using async and await to access files.||  
-|[Task-based Asynchronous Pattern (TAP)](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)|Describes a new pattern for asynchrony in the .NET Framework. The pattern is based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> types.||  
-|[Async Videos on Channel 9](https://channel9.msdn.com/search?term=async%20&type=All#pubDate=year&ch9Search&lang-en=en)|Provides links to a variety of videos about async programming.||  
-  
-## <a name="BKMK_CompleteExample"></a> Complete example  
- The following code is the MainWindow.xaml.cs file from the Windows Presentation Foundation (WPF) application that this topic discusses. You can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://code.msdn.microsoft.com/Async-Sample-Example-from-9b9f505c).  
-  
-```csharp  
-using System;  
-using System.Collections.Generic;  
-using System.Linq;  
-using System.Text;  
-using System.Threading.Tasks;  
-using System.Windows;  
-using System.Windows.Controls;  
-using System.Windows.Data;  
-using System.Windows.Documents;  
-using System.Windows.Input;  
-using System.Windows.Media;  
-using System.Windows.Media.Imaging;  
-using System.Windows.Navigation;  
-using System.Windows.Shapes;  
-  
-// Add a using directive and a reference for System.Net.Http;  
-using System.Net.Http;  
-  
-namespace AsyncFirstExample  
-{  
-    public partial class MainWindow : Window  
-    {  
-        // Mark the event handler with async so you can use await in it.  
-        private async void StartButton_Click(object sender, RoutedEventArgs e)  
-        {  
-            // Call and await separately.  
-            //Task<int> getLengthTask = AccessTheWebAsync();  
-            //// You can do independent work here.  
-            //int contentLength = await getLengthTask;  
-  
-            int contentLength = await AccessTheWebAsync();  
-  
-            resultsTextBox.Text +=
-                $"\r\nLength of the downloaded string: {contentLength}.\r\n";
-        }  
-  
-        // Three things to note in the signature:  
-        //  - The method has an async modifier.   
-        //  - The return type is Task or Task<T>. (See "Return Types" section.)  
-        //    Here, it is Task<int> because the return statement returns an integer.  
-        //  - The method name ends in "Async."  
-        async Task<int> AccessTheWebAsync()  
-        {   
-            // You need to add a reference to System.Net.Http to declare client.  
-            using (HttpClient client = new HttpClient())  
-            {  
-                    // GetStringAsync returns a Task<string>. That means that when you await the  
-                    // task you'll get a string (urlContents).  
-                    Task<string> getStringTask = client.GetStringAsync("https://docs.microsoft.com");  
-  
-                    // You can do work here that doesn't rely on the string from GetStringAsync.  
-                    DoIndependentWork();  
-  
-                    // The await operator suspends AccessTheWebAsync.  
-                    //  - AccessTheWebAsync can't continue until getStringTask is complete.  
-                    //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
-                    //  - Control resumes here when getStringTask is complete.   
-                    //  - The await operator then retrieves the string result from getStringTask.  
-                    string urlContents = await getStringTask;  
-  
-                    // The return statement specifies an integer result.  
-                    // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
-                    return urlContents.Length;  
-            }  
-        }  
-  
-        void DoIndependentWork()  
-        {  
-            resultsTextBox.Text += "Working . . . . . . .\r\n";  
-        }  
-    }  
-}  
-  
-// Sample Output:  
-  
-// Working . . . . . . .  
-  
-// Length of the downloaded string: 25035.  
-```  
-  
-## See also
+That's the goal of this syntax: enable code that reads like a sequence of statements, but executes in a much more complicated order based on external resource allocation and when tasks complete.
 
-- [async](../../../../csharp/language-reference/keywords/async.md)
-- [await](../../../../csharp/language-reference/keywords/await.md)
-- [Asynchronous programming](../../../../csharp/async.md)
-- [Async overview](../../../../standard/async.md)
+It's analogous to how people give instructions for processes that include asynchronous tasks. As an example, consider making breakfast. You'd write the instructions something like the following list:
+
+1. Pour a cup of coffee.
+1. Heat up a pan, then fry two eggs.
+1. Fry three slices of bacon.
+1. Toast two pieces of bread.
+1. Add butter and jam to the toast.
+1. Pour a glass of orange juice.
+
+Read those instructions as though they were the description of a computer algorithm. Imagine a person following them exactly as written. That would created an unsatisfying breakfast. The later tasks would not be started until the earlier tasks had completed. It would take much longer to create the breakfast, and some items would have gotten cold before being served. Thankfully, most people would interpret those instructions differently. They would naturally perform those tasks asynchronously.
+
+Now, consider those same instructions written as C# statements:
+
+```csharp
+Coffee cup = PourCoffee();
+Console.WriteLine("coffee is ready");
+Egg eggs = FryEggs(2);
+Console.WriteLine("eggs are ready");
+Bacon bacon = FryBacon(3);
+Console.WriteLine("bacon is ready");
+Toast toast = ToastBread(2);
+ApplyButter(toast);
+ApplyJam(toast);
+Console.WriteLine("toast is ready");
+Juice oj = PourOJ();
+Console.WriteLine("oj is ready");
+
+Console.WriteLine("Breakfast is ready!");
+```
+
+Computers do not interpret those instructions the same way people do. The computer will block on each statement until the work is complete before moving on to the next statement. You get a cold breakfast, and it takes longer than it should to arrive. If you want the computer to execute the above instructions asynchronously, you must write asynchronous code.
+
+Asynchronous code is not the same as parallel code. Continuing the breakfast analogy, one person can make breakfast asynchronously by starting the next task before the first completes. As soon as you start warming the pan for the eggs, you can begin frying the bacon. Once the bacon starts, you can put the bread into the toaster.
+
+For a parallel algorithm, you'd need multiple cooks (or threads). One would make the eggs, one the bacon, and so on. Each one would be focused on just that one task. Each cook (or thread) would be blocked synchronously waiting for bacon to be ready to flip, or the toast to pop. 
+
+These concerns are important for the programs you write today. When you write client programs, you want the UI to be responsive to user input. Your application shouldn't make a phone appear frozen while it's downloading data from the web. When you write server programs, you don't want threads blocked. Those threads could be serving other requests. Using synchronous code when asynchronous alternatives exist hurts your ability to scale out less expensively. You need to pay for those blocked threads.
+
+Successful modern applications require asynchronous code. Too often, though, writing asynchronous code required callbacks, completion events, or other means that obscured the original intent of the code. The advantage of the synchronous code is that it's easy to understand. The step-by-step actions make it easy to scan and understand.
+
+## Create an asynchronous alternative
+
+The `await` keyword provides a non-blocking way to start a task, then continue execution when that task completes. A simple asynchronous version of the make a breakfast code would look like the following snippet:
+
+```csharp
+Coffee cup = PourCoffee();
+Console.WriteLine("coffee is ready");
+Egg eggs = await FryEggs(2);
+Console.WriteLine("eggs are ready");
+Bacon bacon = await FryBacon(3);
+Console.WriteLine("bacon is ready");
+Toast toast = await ToastBread(2);
+ApplyButter(toast);
+ApplyJam(toast);
+Console.WriteLine("toast is ready");
+Juice oj = PourOJ();
+Console.WriteLine("oj is ready");
+
+Console.WriteLine("Breakfast is ready!");
+```
+
+For many applications, this change is all that's needed. Now, the thread working on the breakfast is freed to do other work while awaiting any started task that hasn't yet finished. If this is a restaurant where multiple orders are placed, the cook could start another breakfast while the first is cooking. 
+
+
+
+## Start multiple tasks
+
+Do the next step
+
+## Composition
+
+async composition is Task, Task<T>. It contrasts with sync composition of void, T
+
+## Lessons learned
+

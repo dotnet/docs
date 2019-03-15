@@ -1,6 +1,8 @@
 - name: Asynchronous Programming with async and await
   href: index.md
   items:
+  - name: Task asynchronous programming model
+    href: task-asynchronous-programming-model.md
   - name: "Walkthrough: Accessing the Web by Using async and await"
     href: walkthrough-accessing-the-web-by-using-async-and-await.md
   - name: "How to: Extend the async Walkthrough by Using Task.WhenAll"

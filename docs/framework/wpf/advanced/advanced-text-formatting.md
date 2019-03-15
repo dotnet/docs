@@ -36,7 +36,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
   
  Unlike a traditional text [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)], the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the text layout interaction between the client application and <xref:System.Windows.Media.TextFormatting.TextFormatter>.  
   
- ![Diagram of text layout client and TextFormatter](./media/advanced-text-formatting/text-layout-text-formatter-interaction.png)  
+ ![Diagram of text layout client and TextFormatter](./media/advanced-text-formatting/text-layout-textformatter-interaction.png)  
   
  The text formatter is used to retrieve formatted text lines from the text store, which is an implementation of <xref:System.Windows.Media.TextFormatting.TextSource>. This is done by first creating an instance of the text formatter by using the <xref:System.Windows.Media.TextFormatting.TextFormatter.Create%2A> method. This method creates an instance of the text formatter and sets the maximum line height and width values. As soon as an instance of the text formatter is created, the line creation process is started by calling the <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method. <xref:System.Windows.Media.TextFormatting.TextFormatter> calls back to the text source to retrieve the text and formatting parameters for the runs of text that form a line.  
   

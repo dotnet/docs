@@ -81,7 +81,7 @@ HRESULT PassStringRef4([in, out] LPWStr *s);
 |----------------------|-------------------------------------|  
 |`UnmanagedType.AnsiBStr`|A COM-style `BSTR` with a prefixed length and ANSI characters.|  
 |`UnmanagedType.BStr`|A COM-style `BSTR` with a prefixed length and Unicode characters.|  
-|`UnmanagedType.LPStr`|A pointer to a null-terminated array of ANSI characters.|  
+|`UnmanagedType.LPStr` (default)|A pointer to a null-terminated array of ANSI characters.|  
 |`UnmanagedType.LPTStr`|A pointer to a null-terminated array of platform-dependent characters.|  
 |`UnmanagedType.LPWStr`|A pointer to a null-terminated array of Unicode characters.|  
 |`UnmanagedType.TBStr`|A COM-style `BSTR` with a prefixed length and platform-dependent characters.|  
@@ -138,7 +138,7 @@ String s);
 |Enumeration type|Description of unmanaged format|  
 |----------------------|-------------------------------------|  
 |`UnmanagedType.BStr`|A COM-style `BSTR` with a prefixed length and Unicode characters.|  
-|`UnmanagedType.LPStr`|A pointer to a null-terminated array of ANSI characters.|  
+|`UnmanagedType.LPStr` (default)|A pointer to a null-terminated array of ANSI characters.|  
 |`UnmanagedType.LPTStr`|A pointer to a null-terminated array of platform-dependent characters.|  
 |`UnmanagedType.LPWStr`|A pointer to a null-terminated array of Unicode characters.|  
 |`UnmanagedType.ByValTStr`|A fixed-length array of characters; the array's type is determined by the character set of the containing structure.|  
@@ -259,6 +259,7 @@ public class Window {
   
 ## See also
 - [Default Marshaling Behavior](default-marshaling-behavior.md)
+- [Marshaling Strings](marshaling-strings)
 - [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
 - [Directional Attributes](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))
 - [Copying and Pinning](copying-and-pinning.md)

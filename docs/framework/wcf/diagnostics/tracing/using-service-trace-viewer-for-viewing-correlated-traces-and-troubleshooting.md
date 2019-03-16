@@ -124,20 +124,18 @@ This topic describes the format of trace data, how to view it, and approaches th
 > [!NOTE]
 >  In WCF, we show response messages being processed initially in a separate activity (Process message) before we correlate them to the corresponding Process Action activity that includes the request message, through a transfer. This happens for infrastructure messages and asynchronous requests and is due to the fact that we must inspect the message, read the activityId header, and identify the existing Process Action activity with that id to correlate to it. For synchronous requests, we are blocking for the response and hence know which Process action the response relates to.  
   
- ![Using the Trace Viewer](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace4.gif "e2eTrace4")  
-WCF client activities listed by creation time (left panel) and their nested activities and traces (upper right panel)  
+ ![WCF client activities listed by creation time (left panel)](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-client-activities-creation-time.gif)  
   
  When we select an activity in the left panel, we can see nested activities and traces on the upper right panel. Therefore, this is a reduced hierarchical view of the list of activities on the left, based on the selected parent activity. Because the selected Process action Add is the first request made, this activity contains the Set Up Secure Session activity (transfer to, transfer back from), and traces for the actual processing of the Add action.  
   
  If we double click the Process action Add activity in the left panel, we can see a graphical representation of the client WCF activities related to Add. The first activity on the left is the root activity (0000), which is the default activity. WCF transfers out of the ambient activity. If this is not defined, WCF transfers out of 0000. Here, the second activity, Process Action Add, transfers out of 0. Then we see Setup Secure Session.  
   
- ![Using the Trace Viewer](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace5.gif "e2eTrace5")  
-Graph view of WCF client activities: Ambient Activity (here 0), Process action, and Set Up Secure Session  
+ ![Graph that shows Ambient Activity and Process action.](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-activities-graph-ambient-process.gif)   
   
  On the upper right panel, we can see all traces related to the Process Action Add activity. Specifically, we have sent the request message ("Sent a message over a channel") and received the response ("Received a message over a channel") in the same activity. This is shown in the following graph. For clarity, the Set up Secure Session activity is collapsed in the graph.  
   
- ![Using the Trace Viewer](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace6.gif "e2eTrace6")  
-List of traces for the Process Action activity: we send the request and receive the response in the same activity.  
+ ![List of traces for the Process Action activity.](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/process-action-traces.gif)  
+ we send the request and receive the response in the same activity.  
   
  Here, we load client traces only for clarity, but service traces (request message received and response message sent) appear in the same activity if they are also loaded in the tool and `propagateActivity` was set to `true.` This is shown in a later illustration.  
   
@@ -157,13 +155,12 @@ List of traces for the Process Action activity: we send the request and receive 
   
  In the illustration that follows, the first activity on the left is the root activity (0000), which is the default activity. The next three activities are to open the ServiceHost. The activity in column 5 is the listener, and the remaining activities (6 to 8) describe the WCF processing of a message, from bytes processing to user code activation.  
   
- ![Using the Trace Viewer](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace7.gif "e2eTrace7")  
-List of WCF service activities  
+ ![List of WCF service activities](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-service-activities.gif)  
+  
   
  The following screenshot shows the activities for both the client and service, and highlights the Process Action Add activity across processes (orange). Arrows relate the request and response messages sent and received by the client and service. The traces of Process Action are separated across processes in the graph, but shown as part of the same activity in the upper-right panel. In this panel, we can see client traces for sent messages followed by service traces for received and processed messages.  
   
- ![Using the Trace Viewer](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace8.gif "e2eTrace8")  
-Graph view of both WCF client and service activities  
+ ![Graph that shows both WCF client and service activities.](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-client-service-activities.gif)   
   
  In the following error scenario, error and warning traces at the service and client are related. An exception is first thrown in user code on the service (right-most green activity that includes a warning trace for the exception "The service cannot process this request in user code."). When the response is sent to the client, a warning trace is again emitted to denote the fault message (left pink activity). The client then closes its WCF client (yellow activity on the lower-left side), which aborts the connection to the service. The service throws an error (longest pink activity on the right).  
   
@@ -175,8 +172,8 @@ Error correlation across the service and client
 ## Troubleshooting Using the Service Trace Viewer  
  When you load trace files in the Service Trace Viewer Tool, you can select any red or yellow activity on the left panel to track down the cause of a problem in your application. The 000 activity typically has unhandled exceptions that bubble up to the user.  
   
- ![Using the Trace Viewer](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace10.gif "e2eTrace10")  
-Selecting red or yellow activity to locate the root of a problem  
+ ![Select red or yellow activity to locate the root of a problem.](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/service-trace-viewer.gif)  
+ 
   
  On the upper right panel, you can examine traces for the activity you selected on the left. You can then examine red or yellow traces in that panel and see how they are correlated. In the preceding graph, we see warning traces both for the client and service in the same Process Action activity.  
   
@@ -189,8 +186,9 @@ Expanding activities to track the root cause of a problem
   
  If Message Logging is enabled, you can use the Message Tab to see which message is impacted by the error. By double-clicking a message in red or yellow, you can see the graph view of the related activities. These activities are the ones most closely related to the request where an error happened.  
   
- ![Using the Trace Viewer](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace11.gif "e2eTrace11")  
-To start troubleshooting, you can also pick a red or yellow message trace and double click it to track the root cause  
+ ![Screenshot of Trace Viewer with message logging enabled.](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/message-logging-enabled.gif)  
+
+To start troubleshooting, you can also pick a red or yellow message trace and double click it to track the root cause.  
   
 ## See also
 - [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)

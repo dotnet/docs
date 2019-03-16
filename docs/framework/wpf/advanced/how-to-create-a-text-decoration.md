@@ -33,8 +33,7 @@ A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can 
  In the following example, the underline for the "My MSN" link is dynamic—it only appears when the <xref:System.Windows.ContentElement.MouseEnter> event is triggered.  
   
  ![Hyperlinks displaying TextDecorations](./media/how-to-create-a-text-decoration/text-decorations-hyperlinks.png)  
-Hyperlinks defined with TextDecorations  
-  
+   
  For more information, see [Specify Whether a Hyperlink is Underlined](how-to-specify-whether-a-hyperlink-is-underlined.md).  
   
 ## Example  

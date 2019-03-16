@@ -178,9 +178,9 @@ To view tracking records, follow these steps.
 
 6. Right-click the **Analytic** node and select **Refresh.** Tracking records should be visible in the center pane.
 
-The following image shows tracking events in the event viewer.
+The following image shows tracking events in the event viewer:
 
-![Event Viewer showing tracking records](./media/trackingeventviewer.PNG "TrackingEventViewer")
+![Screenshot of the Event Viewer showing tracking records.](./media/configuring-tracking-for-a-workflow/tracking-event-viewer.png)
 
 ### Registering an application-specific provider ID
 

@@ -36,8 +36,7 @@ Set operations in LINQ refer to query operations that produce a result set that 
 ### Union  
  The following illustration depicts a union operation on two sequences of characters. The returned sequence contains the unique elements from both input sequences.  
   
- ![Graphic showing the union of two sequences.](./media/set-operations/union-two-sequences.png)  
-  
+ ![Graphic showing the union of two sequences.](./media/set-operations/union-operation-two-sequences.png)    
 ## Query Expression Syntax Example  
  The following example uses the `Distinct` clause in a LINQ query to return the unique numbers from a list of integers.  
   

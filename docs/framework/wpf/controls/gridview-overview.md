@@ -21,7 +21,7 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
   
  The following illustration shows a <xref:System.Windows.Controls.GridView> view of <xref:System.Windows.Controls.ListView> content.  
     
- ![Screenshot that shows GridView view of ListView content.](./media/how-to-access-a-service-from-a-workflow-application/styled-listview-content.png)  
+ ![Screenshot that shows GridView view of ListView content.](./media/gridview-overview/styled-listview-content.png)  
   
  <xref:System.Windows.Controls.GridView> columns are represented by <xref:System.Windows.Controls.GridViewColumn> objects, which can automatically size to their content. Optionally, you can explicitly set a <xref:System.Windows.Controls.GridViewColumn> to a specific width. You can resize columns by dragging the gripper between column headers. You can also dynamically add, remove, replace, and reorder columns because this functionality is built into <xref:System.Windows.Controls.GridView>. However, <xref:System.Windows.Controls.GridView> cannot directly update the data that it displays.  
   
@@ -31,7 +31,7 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
   
  The following illustration shows the table that the previous example creates.  
     
- ![Screenshot that shows a ListView with GridView output.](./media/how-to-access-a-service-from-a-workflow-application/listview-gridview-output.jpg)  
+ ![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)  
   
 <a name="GridViewLayoutandStyle"></a>   
 ## GridView Layout and Style  

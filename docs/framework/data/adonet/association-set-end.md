@@ -15,7 +15,7 @@ An *association set end* identifies the [entity type](../../../../docs/framework
 ## Example  
  The diagram below shows a conceptual model with two associations: `WrittenBy` and `PublishedBy`.  
   
- ![Example Model](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![Example model with three entity types](./media/association-set-end/example-model-three-entity-types.gif)  
   
  The following diagram shows an association set (`PublishedBy`) and two entity sets (`Books` and `Publishers`) based on the conceptual model shown above. The association set ends are the `Books` and `Publishers` entity sets. Bi in the `Books` entity set represents an instance of the `Book` entity type at run time. Similarly, Pj represents a `Publisher` instance in the `Publishers` entity set. BiPj represents an instance of the `PublishedBy` association in the `PublishedBy` association set.  
   

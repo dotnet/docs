@@ -19,7 +19,7 @@ An *entity key* is a [property](../../../../docs/framework/data/adonet/property.
 ## Example  
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`. The properties of each entity type that make up its entity key are denoted with "(Key)". Note that the `Author` entity type has an entity key that consists of two properties, `Name` and `Address`.  
   
- ![Example Model](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![Example model with three entity types](./media/entity-key/example-model-three-entity-types.gif)  
   
  The [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) to define conceptual models. The CSDL below defines the `Book` entity type shown in the diagram above. Note that the entity key is defined by referencing the `ISBN` property of the entity type.  
   

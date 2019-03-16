@@ -32,12 +32,12 @@ Set operations in LINQ refer to query operations that produce a result set that 
 ### Intersect  
  The following illustration depicts the behavior of <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType>. The returned sequence contains the elements that are common to both of the input sequences.  
   
- ![Graphic showing the intersection of two sequences.](../../../../csharp/programming-guide/concepts/linq/media/intersect.png "Intersect")  
-  
+ ![Graphic showing the intersection of two sequences.](./media/set-operations/intersection-two-sequences.png)  
+ 
 ### Union  
  The following illustration depicts a union operation on two sequences of characters. The returned sequence contains the unique elements from both input sequences.  
   
- ![Graphic showing the union of two sequences.](../../../../csharp/programming-guide/concepts/linq/media/union.png "Union")  
+ ![Graphic showing the union of two sequences.](./media/set-operations/union-two-sequences.png)  
   
 ## See also
 

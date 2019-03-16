@@ -8,7 +8,7 @@ A sorting operation orders the elements of a sequence based on one or more attri
   
  The following illustration shows the results of an alphabetical sort operation on a sequence of characters.  
   
- ![LINQ Sorting Operation](../../../../csharp/programming-guide/concepts/linq/media/linq_ordering.png "LINQ_Ordering")  
+ ![Graphic that shows an alphabetical sort operation.](./media/sorting-data/alphabetical-sort-operation.png)  
   
  The standard query operator methods that sort data are listed in the following section.  
   

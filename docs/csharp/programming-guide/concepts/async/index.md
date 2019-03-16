@@ -98,9 +98,9 @@ The following characteristics summarize what makes the previous example an async
  For more information about asynchrony in previous versions of the .NET Framework, see [TPL and Traditional .NET Framework Asynchronous Programming](../../../../standard/parallel-programming/tpl-and-traditional-async-programming.md).  
   
 ## <a name="BKMK_WhatHappensUnderstandinganAsyncMethod"></a> What happens in an async method  
- The most important thing to understand in asynchronous programming is how the control flow moves from method to method. The following diagram leads you through the process.  
+ The most important thing to understand in asynchronous programming is how the control flow moves from method to method. The following diagram leads you through the process:  
   
- ![Trace an async program](../../../../csharp/programming-guide/concepts/async/media/navigationtrace.png "NavigationTrace")  
+ ![Diagram that shows tracing an async program.](./media/index/navigation-trace-async-program.png)  
   
  The numbers in the diagram correspond to the following steps.  
   

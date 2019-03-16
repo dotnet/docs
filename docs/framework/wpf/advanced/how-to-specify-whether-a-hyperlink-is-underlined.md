@@ -13,8 +13,8 @@ The <xref:System.Windows.Documents.Hyperlink> object is an inline-level flow con
   
  In the following example, the underline for the "My MSN" link is dynamic—it only appears when the <xref:System.Windows.ContentElement.MouseEnter> event is triggered.  
   
- ![Hyperlinks displaying TextDecorations](./media/textdecoration03.png "TextDecoration03")  
-Hyperlinks defined with TextDecorations  
+  ![Hyperlinks displaying TextDecorations](./media/how-to-specify-whether-a-hyperlink-is-underlined/text-decorations-hyperlinks.png)  
+  
   
 ## Example  
  The following markup sample shows a <xref:System.Windows.Documents.Hyperlink> defined with and without an underline:  

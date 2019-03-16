@@ -88,7 +88,7 @@ The recommendation ratings data is split into `Train` and `Test` datasets. The `
 
 Below is a preview of the data from your \*.csv files:
 
-![preview of data](./media/movie-recommendationcsv-dataset-preview.png)
+![preview of data](./media/movie-recommendation/csv-dataset-preview.png)
 
 In the \*.csv files, there are four columns:
 

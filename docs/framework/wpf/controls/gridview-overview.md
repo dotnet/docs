@@ -29,7 +29,7 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
   
  [!code-xaml[ListViewCode#ListViewEmployee](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewemployee)]  
   
- The following illustration shows the table that the previous example creates.  
+ The following illustration shows the table that the previous example creates. The GridView control displays data from an ItemsSource object:
     
  ![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)  
   

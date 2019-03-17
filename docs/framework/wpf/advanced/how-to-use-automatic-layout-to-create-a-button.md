@@ -20,8 +20,7 @@ This example describes how to use the automatic layout approach to create a butt
   
  The following graphic shows the output of the code samples.  
   
- ![The same button with text in different languages](./media/globalizationbutton.png "GlobalizationButton")  
-Auto Resizable Button  
+ ![The same button with text in different languages](./media/use-automatic-layout-overview/auto-resizable-button.png)  
   
 ## See also
 - [Use Automatic Layout Overview](use-automatic-layout-overview.md)

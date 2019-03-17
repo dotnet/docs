@@ -11,7 +11,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
   
  For a sample application, see [Message Security Certificate](../../../../docs/framework/wcf/samples/message-security-certificate.md).  
   
- ![Client with certificate](../../../../docs/framework/wcf/feature-details/media/clientwithcertificate.gif "ClientWithCertificate")  
+ ![Screenshot that shows a client with certificate.](./media/message-security-with-a-certificate-client/client-with-certificate.gif)  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  

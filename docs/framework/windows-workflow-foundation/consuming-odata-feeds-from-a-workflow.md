@@ -19,7 +19,7 @@ WCF Data Services includes client libraries that enable you to more easily consu
 
 To generate the Northwind client libraries, you can use the **Add Service Reference** dialog box in Visual Studio 2012 to add a reference to the Northwind OData service.
 
-![Add Service Reference](./media/addservicereferencetonorthwindodataservice.gif "AddServiceReferencetoNorthwindODataService")
+![Screenshot that shows the Add Service Reference dialog.](./media/consuming-odata-feeds-from-a-workflow/add-service-reference-dialog.gif)
 
 Note that there are no service operations exposed by the service, and in the **Services** list there are items representing the entities exposed by the Northwind data service. When the service reference is added, classes will be generated for these entities and they can be used in the client code. The examples in this topic use these classes and the `NorthwindEntities` class to perform the queries.
 

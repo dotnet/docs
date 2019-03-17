@@ -1,6 +1,6 @@
 ---
-title: "Pipelines"
-ms.date: "01/18/2019"
+title: "Pipelines types"
+ms.date: "03/17/2019"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "Pipe"
@@ -10,55 +10,12 @@ helpviewer_keywords:
 author: "KPixel"
 #ms.author: "TODO"
 ---
-# Pipelines
+# Pipelines types
 
-## Who would be interested in this tutorial
-
-.NET Core has been improving a lot in high-performance applications. One of the key scenarios has been to make it as fast and efficient as possible to run a website, and more generally network-based applications.
-
-.NET Core 2.1 introduces a new primitive called Span and builds a new way to read and write data on top of it.
-Kestrel and SignalR are two libraries built on top of this new API.
-
-If you are just planning to use these libraries, you do not need to read this article. However, if you want to understand how they work internally, or write your own low-level library, this article is for you.
-We will introduces three layers: System primitives (`Span`, `Memory`), Pipelines (`Pipe`, `DuplexPipe`), Connections (`ConnectionContext`, `ConnectionHandler`).
-
-## Quick introduction to the primitives Span and Memory
-
-The general idea behind `Span` and `Memory` is to create a structure as fast as an array, but a lot more versatile.
-What matters most about them, in this context, is that they allow us to write fast and efficient code where we allocate as little memory as possible and avoid copying data unnecessarily.
-
-Practical example: You have the byte array `{ 0, 1, 2, 3, 4 }`. You want to write it while skipping `2`. Without Span, you would end up allocating two new arrays `{ 0, 1 }` and `{ 3, 4 }`.
-However, with Span, you can do:
-
-```C#
-Span<byte> bytes = new byte[] { 0, 1, 2, 3, 4 };
-var part1 = bytes.Slice(0, 2); // == { 0, 1 }
-var part2 = bytes.Slice(3, 2); // == { 3, 4 }
-```
-
-Here, part1 and part2 are not new arrays, they are re-using the original array.
-
-For more technical details, please read:
-
-- https://msdn.microsoft.com/en-us/magazine/mt814808.aspx
-- https://github.com/dotnet/corefxlab/blob/master/docs/specs/span.md
-- https://github.com/dotnet/corefxlab/blob/master/docs/specs/memory.md
-- Upcoming Span doc: https://github.com/dotnet/docs/issues/4400
-- Upcoming Memory doc: https://github.com/dotnet/docs/issues/4823
-
-## Understanding System.IO.Pipelines
+## Pipe
 
 We can use <xref:System.Span%601> and <xref:System.Memory%601> to implement various message-passing patterns.
 A simple example is a `Pipe`.
-
-For more technical details, please read:
-
-- https://github.com/dotnet/corefxlab/blob/master/docs/specs/pipelines-io.md
-- https://github.com/dotnet/corefx/tree/master/src/System.IO.Pipelines/src/System/IO/Pipelines
-
-Note: Do not confuse this API with the [TPL version also called Pipelines](https://msdn.microsoft.com/en-us/library/ff963548.aspx). 
-
-### Pipe
 
 ![Pipe](media/pipelines/pipe.png)
 
@@ -83,7 +40,7 @@ Console.Out.WriteLine($"{result.Buffer.Length}"); // 8
 
 ### The `Receive()` loop
 
-Receiving data from a Pipe requires a specific loop that should always be respected.
+Receiving data from a Pipe should be done in a loop with specific patterns.
 
 ```C#
 private static async Task ReceiveFromPipeLoop(PipeReader pipeReader)
@@ -97,10 +54,6 @@ private static async Task ReceiveFromPipeLoop(PipeReader pipeReader)
 
             try
             {
-                if (result.IsCanceled)
-                {
-                    break;
-                }
                 if (!buffer.IsEmpty)
                 {
                     Console.Out.WriteLine($"Received {buffer.Length} bytes.");
@@ -127,7 +80,7 @@ Reading from the Pipe returns a buffer that contains the data. This buffer can a
 
 Note that this loop can be more complex if you need to buffer the data.
 
-### Pipes in ASP.NET Core 2.1+
+### Pipes in ASP.NET Core
 
 If the Producer acquires the data that it sends through a network connection, it could do (pseudo-code): `var data = await network.ReceiveAsync(); await pipe.Writer.WriteAsync(data);`
 
@@ -136,7 +89,7 @@ Here, the network connection writes its data straight into the pipe.
 
 In ASP.NET Core, such a Producer can be called a Transport (Refer to the section "Duplex Connection").
 
-### Introducing IDuplexPipe
+## Introducing IDuplexPipe
 
 ![DuplexPipe](media/pipelines/duplexpipe.png)
 
@@ -187,9 +140,7 @@ Node A is connected to Node B through their Transports.
 Most of the time, Node A will be a computer or smartphone, and Node B will be a Server.
 For example: In Kestrel (and other HTTP servers), Node A is the user's browser, Node B is the Kestrel server, and they are connected through a TCP connection. In SignalR, they are instead connected through WebSockets.
 
-## Pipelines usage in Microsoft.AspNetCore.Connections
+## See also
 
-TODO
-
-ConnectionContext holds the pair of DuplexPipes and is typically created by a Connection that uses the Transport DuplexPipe internally.
-ConnectionHandler uses the Application DuplexPipe.
+- [Pipelines namespace](xref:System.IO.Pipelines)
+- [ASP.NET Core SignalR](https://docs.microsoft.com/en-us/aspnet/core/signalr/introduction)

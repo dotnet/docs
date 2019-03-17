@@ -19,7 +19,7 @@ A simple example is a `Pipe`.
 ![Pipe](media/pipelines/pipe.png)
 
 A <xref:System.IO.Pipelines.Pipe%601> is a class that [a Producer can use to send data to a Consumer](https://en.wikipedia.org/wiki/Producer–consumer_problem) (one-way).
-Conceptually, it looks a lot like a [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream).
+Conceptually, it looks a lot like a [Stream](https://docs.microsoft.com/dotnet/api/system.io.stream).
 
 Although creating a new Pipe is simple, "closing" it properly is not. You must call `Complete()` on its `Writer` and `Reader`. This will gracefully end the `Receive()` and `Send()` loops (if you have them).
 

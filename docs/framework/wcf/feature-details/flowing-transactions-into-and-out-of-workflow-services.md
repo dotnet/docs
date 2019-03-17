@@ -82,7 +82,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 4.  Drag and drop a <xref:System.ServiceModel.Activities.TransactedReceiveScope> after the <xref:System.Activities.Statements.WriteLine> activity. The <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity can be found in the **Messaging** section of the **Toolbox**. The <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity is composed of two sections **Request** and **Body**. The **Request** section contains the <xref:System.ServiceModel.Activities.Receive> activity. The **Body** section contains the activities to execute within a transaction after a message has been received.  
   
-     ![Adding a TransactedReceiveScope activity](./media/flowing-transactions-into-and-out-of-workflow-services/transreceivescope-activity.jpg)  
+     ![Adding a TransactedReceiveScope activity](./media/flowing-transactions-into-and-out-of-workflow-services/transactedreceivescope-activity.jpg)  
   
 5.  Select the <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity and click the **Variables** button. Add the following variables.  
   

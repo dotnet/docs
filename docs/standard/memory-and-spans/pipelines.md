@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "DuplexPipe"
   - "Duplex Connection"
 author: "KPixel"
-#ms.author: "TODO"
 ---
 # Pipelines types
 
@@ -143,4 +142,4 @@ For example: In Kestrel (and other HTTP servers), Node A is the user's browser, 
 ## See also
 
 - [Pipelines namespace](xref:System.IO.Pipelines)
-- [ASP.NET Core SignalR](https://docs.microsoft.com/en-us/aspnet/core/signalr/introduction)
+- [ASP.NET Core SignalR](https://docs.microsoft.com/aspnet/core/signalr/introduction)

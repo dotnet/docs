@@ -18,10 +18,10 @@ When you fill a shape, you must pass a <xref:System.Drawing.Brush> object to one
   
 ## Example  
  The following example draws a bitmap and then fills three ellipses that overlap the bitmap. The first ellipse uses an alpha component of 255, so it is opaque. The second and third ellipses use an alpha component of 128, so they are semitransparent; you can see the background image through the ellipses. The call that sets the <xref:System.Drawing.Graphics.CompositingQuality%2A> property causes the blending for the third ellipse to be done in conjunction with gamma correction.  
+
+ The following illustration shows the output of the following code: 
   
- The following illustration shows the output of the following code.  
-  
- ![Opaque and Semitransparent](./media/compqualellipse.png "compqualellipse")  
+ ![Illustration that shows opaque and semitransparent output.](./media/how-to-draw-with-opaque-and-semitransparent-brushes/comp-qual-ellipse-semitransparent.png)  
   
  [!code-csharp[System.Drawing.AlphaBlending#31](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#31)]
  [!code-vb[System.Drawing.AlphaBlending#31](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#31)]  

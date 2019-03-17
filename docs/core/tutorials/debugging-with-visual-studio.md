@@ -33,7 +33,7 @@ Run your program in Debug mode and try a few debugging features:
 
 1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Autos** window displays the values of variables that are used around the current line. The **Locals** window (which you can view by clicking the **Locals** tab) displays the values of variables that are defined in the currently executing method.
 
-   ![Visual Studio application window](./media/debugging-with-visual-studio/break.png)
+   ![Screenshot that shows an example of a breakpoint.](./media/debugging-with-visual-studio/breakpoint-console-window.png)
 
 1. You can change the value of the variables to see how it affects your program. If the **Immediate Window** is not visible, display it by choosing the **Debug** > **Windows** > **Immediate** menu item. The **Immediate Window** lets you interact with the application you're debugging.
 

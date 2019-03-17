@@ -12,9 +12,9 @@ You can use a gradient brush to fill a shape with a gradually changing color. Fo
   
  A linear gradient changes color as you move horizontally, vertically, or parallel to a specified slanted line. A path gradient changes color as you move about the interior and boundary of a path. You can customize path gradients to achieve a wide variety of effects.  
   
- The following illustration shows a rectangle filled with a linear gradient brush and an ellipse filled with a path gradient brush.  
+ The following illustration shows a rectangle filled with a linear gradient brush and an ellipse filled with a path gradient brush:  
   
- ![Gradient](./media/gradient2.png "gradient2")  
+ ![A rectangle filled with a gradient brush with an ellipse.](./media/using-a-gradient-brush-to-fill-shapes/rectangle-ellipse-gradient-brush.png)  
   
 ## In This Section  
  [How to: Create a Linear Gradient](how-to-create-a-linear-gradient.md)  

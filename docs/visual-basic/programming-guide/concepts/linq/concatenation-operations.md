@@ -8,7 +8,7 @@ Concatenation refers to the operation of appending one sequence to another.
   
  The following illustration depicts a concatenation operation on two sequences of characters.  
   
- ![Graphic showing concatenation of two sequences.](../../../../csharp/programming-guide/concepts/linq/media/concat.png "Concat")  
+ ![Graphic showing concatenation of two sequences.](./media/concatenation-operations/concatenation-two-sequences.png)  
   
  The standard query operator methods that perform concatenation are listed in the following section.  
   

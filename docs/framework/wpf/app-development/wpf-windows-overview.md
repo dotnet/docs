@@ -38,9 +38,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 <a name="TheWindowClass"></a>   
 ## The Window Class  
- The following figure illustrates the constituent parts of a window.  
+ The following figure illustrates the constituent parts of a window:  
   
- ![Window elements](./media/windowoverviewfigure1.PNG "WindowOverviewFigure1")  
+ ![Screenshot that shows window elements.](./media/wpf-windows-overview/window-constituent-elements.png)  
   
  A window is divided into two areas: the non-client area and client area.  
   
@@ -140,7 +140,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
  The window is finally opened by calling the <xref:System.Windows.Window.Show%2A> method; the result is shown in the following figure.  
   
- ![A Window Opened by Calling Window.Show](./media/windowoverviewfigure8.png "WindowOverviewFigure8")  
+ ![A Window Opened by Calling Window.Show](./media/wpf-windows-overview//window-opened-window-show.png)  
   
  A window that is opened by calling <xref:System.Windows.Window.Show%2A> is a modeless window, which means that the application operates in a mode that allows users to activate other windows in the same application.  
   
@@ -456,7 +456,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 ### Task Bar Presence  
  The default appearance of a window includes a task bar button, like the one shown in the following figure.  
   
- ![Window with a task bar button](./media/windowoverviewfigure7.PNG "WindowOverviewFigure7")  
+ ![Screenshot that shows a window with a task bar button.](./media/wpf-windows-overview/window-task-bar-button.png)  
   
  Some types of windows don't have a task bar button, such as message boxes and dialog boxes (see [Dialog Boxes Overview](dialog-boxes-overview.md)). You can control whether the task bar button for a window is shown by setting the <xref:System.Windows.Window.ShowInTaskbar%2A> property (`true` by default).  
   

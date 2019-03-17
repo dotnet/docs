@@ -61,8 +61,7 @@ Next ctl
 ## Overlapping Control Structures  
  You cannot overlap control structures. This means that any nested structure must be completely contained within the next innermost structure. For example, the following arrangement is invalid because the `For` loop terminates before the inner `With` block terminates.  
   
- ![Graphic diagram of invalid nesting](../../../../visual-basic/programming-guide/language-features/control-flow/media/nestexampleinvalid.gif "NestExampleInvalid")  
-Invalid nesting of For and With structures  
+ ![Diagram that shows an example of invalid nesting.](./media/nested-control-structures/example-invalid-nesting.gif) 
   
  The Visual Basic compiler detects such overlapping control structures and signals a compile-time error.  
   

@@ -1,9 +1,9 @@
 ---
-title: "&lt;reliableSession&gt;"
+title: "<reliableSession>"
 ms.date: "03/30/2017"
 ms.assetid: 129b4a59-37f0-4030-b664-03795d257d29
 ---
-# &lt;reliableSession&gt;
+# \<reliableSession>
 Defines setting for WS-Reliable Messaging. When this element is added to a custom binding, the resulting channel can support exactly-once delivery assurances.  
   
  \<system.serviceModel>  
@@ -113,12 +113,12 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 </configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ReliableSessionElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>  
- [Reliable Sessions](../../../../../docs/framework/wcf/feature-details/reliable-sessions.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ReliableSessionElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>
+- [Reliable Sessions](../../../../../docs/framework/wcf/feature-details/reliable-sessions.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

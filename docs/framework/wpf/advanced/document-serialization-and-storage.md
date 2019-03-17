@@ -35,7 +35,7 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
     -   User interface support for custom run-time settings and options.  
   
 ### XPS Print Path  
- The Microsoft .NET Framework [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path also provides an extensible mechanism for writing documents through print output.  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] serves as both a document file format and is the native print spool format for [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents can be sent directly to [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md) for additional information on print path output options and capabilities.  
+ The Microsoft .NET Framework [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path also provides an extensible mechanism for writing documents through print output.  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] serves as both a document file format and is the native print spool format for [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents can be sent directly to [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](printing-overview.md) for additional information on print path output options and capabilities.  
   
 <a name="PluginSerializers"></a>   
 ## Plug-in Serializers  
@@ -48,11 +48,11 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
   
  The following example illustrates an application that uses the <xref:System.Windows.Documents.Serialization.SerializerProvider> method in a "PlugInFileFilter" property.  PlugInFileFilter enumerates the installed plug-ins and builds a filter string with the available file options for a <xref:Microsoft.Win32.SaveFileDialog>.  
   
- [!code-csharp[DocumentSerialize#DocSerializeFileFilter](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
+ [!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
   
  After an output file name has been selected by the user, the following example illustrates use of the <xref:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter%2A> method to store a given document in a specified format.  
   
- [!code-csharp[DocumentSerialize#DocSerializePlugIn](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
+ [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
   
 <a name="InstallingPluginSerializers"></a>   
 ### Installing Plug-in Serializers  
@@ -67,10 +67,10 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
   
 3.  After the plug-in serializer is created, an installation script is implemented for distributing and installing (and uninstalling) the plug-in (see above, "[Installing Plug-in Serializers](#InstallingPluginSerializers)").  
   
-## See Also  
- <xref:System.Windows.Documents.Serialization>  
- <xref:System.Windows.Xps.XpsDocumentWriter>  
- <xref:System.Windows.Xps.Packaging.XpsDocument>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
- [XML Paper Specification: Overview](https://go.microsoft.com/fwlink?LinkID=106246)
+## See also
+- <xref:System.Windows.Documents.Serialization>
+- <xref:System.Windows.Xps.XpsDocumentWriter>
+- <xref:System.Windows.Xps.Packaging.XpsDocument>
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)
+- [XML Paper Specification: Overview](https://go.microsoft.com/fwlink?LinkID=106246)

@@ -1,7 +1,7 @@
 ---
-title: "&lt;&lt;= operator - C# Reference"
+title: "<<= operator - C# Reference"
 ms.custom: seodec18
-ms.date: 07/20/2015
+ms.date: 02/12/2019
 f1_keywords: 
   - "<<=_CSharpKeyword"
 helpviewer_keywords: 
@@ -9,31 +9,37 @@ helpviewer_keywords:
   - "left shift assignment operator (<<=) [C#]"
 ms.assetid: 3bc99c78-1edb-4827-86fc-bce6c3048871
 ---
-# &lt;&lt;= operator (C# Reference)
+# \<\<= operator (C# Reference)
 
 The left-shift assignment operator.
 
-## Remarks
-
-An expression of the form
+An expression using the `<<=` operator, such as
 
 ```csharp
 x <<= y
 ```
 
-is evaluated as
+is equivalent to
 
 ```csharp
 x = x << y
 ```
 
-except that `x` is only evaluated once. The [<< operator](left-shift-operator.md) shifts `x` left by the number of bits specified by `y`.
+except that `x` is only evaluated once.
 
-The `<<=` operator cannot be overloaded directly, but user-defined types can overload the [<< operator](left-shift-operator.md) (see [operator](../keywords/operator.md)).
+The [`<<` operator](left-shift-operator.md) shifts its first operand left by the number of bits defined by its second operand.
 
-## Example
+The following example demonstrates the usage of the `<<=` operator:
 
-[!code-csharp[csRefOperators#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#12)]
+[!code-csharp-interactive[left shift assignment](~/samples/snippets/csharp/language-reference/operators/ShiftOperatorsExamples.cs#LeftShiftAssignment)]
+
+## Operator overloadability
+
+If a user-defined type [overloads](../keywords/operator.md) the [`<<` operator](left-shift-operator.md), the left-shift assignment operator `<<=` is implicitly overloaded. A user-defined type cannot explicitly overload the left-shift assignment operator.
+
+## C# language specification
+
+For more information, see the [Compound assignment](~/_csharplang/spec/expressions.md#compound-assignment) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 

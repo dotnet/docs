@@ -32,7 +32,7 @@ HRESULT GetModuleRefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mur`  
  [in] The ModuleRef metadata token that references the module to get metadata information for.  
   
@@ -54,6 +54,6 @@ HRESULT GetModuleRefProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

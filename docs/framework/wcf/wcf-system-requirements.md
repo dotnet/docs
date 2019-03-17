@@ -15,8 +15,8 @@ Windows Communication Foundation (WCF) is a communication infrastructure that is
   
  **Note** The Message Queuing (MSMQ) functionality of WCF is supported only on [!INCLUDE[wv](../../../includes/wv-md.md)], [!INCLUDE[ws2003r2](../../../includes/ws2003r2-md.md)], [!INCLUDE[ws2003sp1](../../../includes/ws2003sp1-md.md)], and [!INCLUDE[wxppro](../../../includes/wxppro-md.md)].  
   
-## See Also  
- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
- [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)  
- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)
+## See also
+- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)
+- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
+- [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)
+- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)

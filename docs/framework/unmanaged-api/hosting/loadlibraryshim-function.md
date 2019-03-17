@@ -34,7 +34,7 @@ HRESULT LoadLibraryShim (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szDllName`  
  [in] A zero-terminated string that represents the name of the DLL to be loaded from the .NET Framework library.  
   
@@ -68,5 +68,5 @@ HRESULT LoadLibraryShim (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

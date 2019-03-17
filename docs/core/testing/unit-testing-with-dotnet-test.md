@@ -23,7 +23,7 @@ Inside the solution directory, create a *PrimeService* directory. The directory 
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you first create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. You first create a failing implementation of the `PrimeService` class:
 
 ```csharp
 using System;
@@ -61,7 +61,7 @@ Next, create the *PrimeService.Tests* directory. The following outline shows the
     /PrimeService.Tests
 ```
 
-Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new xunit`](../tools/dotnet-new.md). This command creates a test project that uses xUnit as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file similar to the following code:
+Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new xunit`](../tools/dotnet-new.md). This command creates a test project that uses [xUnit](https://xunit.github.io/) as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file similar to the following code:
 
 ```xml
 <ItemGroup>
@@ -100,7 +100,7 @@ dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs*. Add the following code:
+You write one failing test, make it pass, then repeat the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs*. Add the following code:
 
 ```csharp
 using Xunit;
@@ -167,4 +167,5 @@ Continue to iterate by adding more tests, more theories, and more code in the ma
 
 ### Additional resources
 
+- [xUnit.net official site](https://xunit.github.io)
 - [Testing controller logic in ASP.NET Core](/aspnet/core/mvc/controllers/testing)

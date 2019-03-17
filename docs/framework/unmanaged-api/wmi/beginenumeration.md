@@ -34,13 +34,13 @@ HRESULT BeginEnumeration (
 
 ## Parameters
 
-`vFunc`  
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`lEnumFlags`  
+`lEnumFlags`\
 [in] A bitwise combination of the flags or values described in the [Remarks](#remarks) section that controls the properties included in the enumeration.
 
 ## Return value
@@ -99,5 +99,6 @@ Constant  |Value  |Description  |
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

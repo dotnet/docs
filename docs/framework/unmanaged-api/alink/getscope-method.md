@@ -1,5 +1,5 @@
 ---
-title: "GetScope Method1"
+title: "GetScope Method"
 ms.date: "03/30/2017"
 api_name: 
   - "IALink.GetScope"
@@ -17,7 +17,7 @@ topic_type:
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# GetScope Method1
+# GetScope Method
 Gets an import scope.  
   
 ## Syntax  
@@ -31,7 +31,7 @@ HRESULT GetScope(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  Unique ID of assembly to import to.  
   
@@ -50,7 +50,7 @@ HRESULT GetScope(
 ## Requirements  
  Requires alink.h  
   
-## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

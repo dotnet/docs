@@ -54,7 +54,7 @@ COM developers can benefit from the following information about the managed type
   
      Regardless of the mechanism you choose, only public types defined in the assembly you supply are included in the generated type library.  
   
-     You can package a type library as a separate file or embed it as Win32 resource file within a .NET-based application. Microsoft Visual Basic 6.0 performed this task for you automatically; however, when using [!INCLUDE[vbprvbext](../../../includes/vbprvbext-md.md)], you must embed your type library manually. For instructions, see [How to: Embed Type Libraries as Win32 Resources in .NET-Based Applications](https://msdn.microsoft.com/library/c97b4b8c-2ab7-4ac7-8fc8-0ba5c5d59c44(v=vs.100)).  
+     You can package a type library as a separate file or embed it as Win32 resource file within a .NET-based application. Microsoft Visual Basic 6.0 performed this task for you automatically; however, when using [!INCLUDE[vbprvbext](../../../includes/vbprvbext-md.md)], you must embed your type library manually. For instructions, see [How to: Embed Type Libraries as Win32 Resources in .NET-Based Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100)).  
   
 <a name="cpconpackagingassemblyforcomanchor1"></a>   
 ## Type Library Exporter  
@@ -74,13 +74,13 @@ COM developers can benefit from the following information about the managed type
 ## .NET Services Installation Tool  
  The [.NET Services Installation Tool (Regsvcs.exe)](../tools/regsvcs-exe-net-services-installation-tool.md) adds managed classes to Windows 2000 Component Services and combines several tasks within a single tool. In addition to loading and registering an assembly, Regsvcs.exe can generate, register, and install the type library into an existing COM+ 1.0 application.  
   
-## See Also  
- <xref:System.Runtime.InteropServices.TypeLibConverter>  
- <xref:System.Runtime.InteropServices.ITypeLibConverter>  
- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
- [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)  
- [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)  
- [Assembly Security Considerations](../app-domains/assembly-security-considerations.md)  
- [Tlbexp.exe (Type Library Exporter)](../tools/tlbexp-exe-type-library-exporter.md)  
- [Registering Assemblies with COM](registering-assemblies-with-com.md)  
- [How to: Embed Type Libraries as Win32 Resources in Applications](https://msdn.microsoft.com/library/c97b4b8c-2ab7-4ac7-8fc8-0ba5c5d59c44(v=vs.100))
+## See also
+- <xref:System.Runtime.InteropServices.TypeLibConverter>
+- <xref:System.Runtime.InteropServices.ITypeLibConverter>
+- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
+- [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)
+- [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)
+- [Assembly Security Considerations](../app-domains/assembly-security-considerations.md)
+- [Tlbexp.exe (Type Library Exporter)](../tools/tlbexp-exe-type-library-exporter.md)
+- [Registering Assemblies with COM](registering-assemblies-with-com.md)
+- [How to: Embed Type Libraries as Win32 Resources in Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100))

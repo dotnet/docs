@@ -180,5 +180,5 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
 > [!NOTE]
 >  After you have added the new customer by submitting the changes, you cannot execute this solution again as is, because you cannot add the same customer again as is. To execute the solution again, change the value of the customer ID to be added.  
   
-## See Also  
- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+## See also
+- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)

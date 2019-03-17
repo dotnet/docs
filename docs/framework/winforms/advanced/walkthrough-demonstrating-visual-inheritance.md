@@ -134,7 +134,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 5.  Open the inherited form (**Form2**) in the designer by double-clicking it, if it is not already open.  
   
-     In the designer, the inherited buttons have a symbol (![VisualBasicInheritanceSymbol screenshot](../../../../docs/framework/winforms/advanced/media/vbinheritanceglyph.gif "vbInheritanceGlyph")) in their upper corner, indicating they are inherited.  
+     In the designer, the inherited buttons have a symbol (![VisualBasicInheritanceSymbol screenshot](./media/vbinheritanceglyph.gif "vbInheritanceGlyph")) in their upper corner, indicating they are inherited.  
   
 6.  Select the **Say Hello** button and observe the resize handles. Because this button is protected, the inheritors can move it, resize it, change its caption, and make other modifications.  
   
@@ -155,9 +155,9 @@ Visual inheritance enables you to see the controls on the base form and to add n
 12. Press F5 to run the application, and observe the behavior of the inherited form.  
   
 ## Next Steps  
- Inheritance for user controls works in much the same way. Open a new class library project and add a user control. Place constituent controls on it and compile the project. Open another new class library project and add a reference to the compiled class library. Also, try adding an inherited control (through the **Add New Items** dialog box) to the project and using the **Inheritance Picker**. Add a user control, and change the `Inherits` (`:` in Visual C#) statement. For more information, see [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md).  
+ Inheritance for user controls works in much the same way. Open a new class library project and add a user control. Place constituent controls on it and compile the project. Open another new class library project and add a reference to the compiled class library. Also, try adding an inherited control (through the **Add New Items** dialog box) to the project and using the **Inheritance Picker**. Add a user control, and change the `Inherits` (`:` in Visual C#) statement. For more information, see [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md).  
   
-## See Also  
- [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)  
- [Windows Forms Visual Inheritance](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)  
- [Windows Forms](../../../../docs/framework/winforms/index.md)
+## See also
+- [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md)
+- [Windows Forms Visual Inheritance](windows-forms-visual-inheritance.md)
+- [Windows Forms](../index.md)

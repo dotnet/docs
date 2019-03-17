@@ -241,6 +241,10 @@
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
+            "source_path": "docs/core/tutorials/using-on-windows-full-solution.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
             "source_path": "docs/core/versions/install-management.md",
             "redirect_url": "/dotnet/core/versions/remove-runtime-sdk-versions"
         },
@@ -379,6 +383,10 @@
             "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
         },
         {
+            "source_path": "docs/csharp/lambda-expressions.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+        },
+        {
             "source_path": "docs/csharp/language-reference/compiler-options/app-deployment.md",
             "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
         },
@@ -393,6 +401,34 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/true-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/true-false-operators"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/language-specification/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/introduction"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.0/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.0/pattern-matching"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.1/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.1/async-main"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.2/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.2/readonly-ref"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.3/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.3/blittable"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-8.0/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/modulus-assignment-operator.md",
@@ -425,6 +461,20 @@
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/foreach-in"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/index.md",
+            "redirect_url": "/dotnet/standard/assembly",
+            "redirect_document_id":true
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend-assemblies.md",
+            "redirect_document_id":true
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
         },
         {
             "source_path": "docs/csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md",
@@ -766,6 +816,27 @@
             "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546195(v=vs.100)"
         },
         {
+            "source_path": "docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md",
+            "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/udpannouncementendpoint",
+            "redirect_document_id": true
+        },        
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/msl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/msl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/ssdl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec"
+        },
+        {
             "source_path": "docs/framework/data/adonet/sql/linq/linq-to-sql-with-tightly-coupled-client-server-applications.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb882676(v=vs.100)"
         },
@@ -937,6 +1008,10 @@
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
             "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/misc/binding.md",
+            "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/bindings"
         },
         {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
@@ -1338,6 +1413,11 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797584(v%3dvs.100)"
         },
         {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/property-grid-extensibliity.md",
+            "redirect_url": "/dotnet/framework/windows-workflow-foundation/samples/property-grid-extensibility",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/windows-workflow-foundation/samples/property-promotion-activity.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff642473(v%3dvs.100)"
         },
@@ -1501,6 +1581,26 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/controls/passwordbox-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/passwordbox-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/repeatbutton-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/repeatbutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/thumb-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/thumb-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/togglebutton-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/togglebutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
             "redirect_url": "/dotnet/framework/xaml-services/escape-sequence-markup-extension",
             "redirect_document_id": true
@@ -1521,6 +1621,11 @@
         {
             "source_path": "docs/fsharp/language-reference/code-formatting-guidelines.md",
             "redirect_url": "/dotnet/fsharp/style-guide/formatting"
+        },
+        {
+            "source_path": "docs/fsharp/language-reference/lazy-computations.md",
+            "redirect_url": "/dotnet/fsharp/language-reference/lazy-expressions",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/language-reference/primitive-types.md",
@@ -1624,6 +1729,11 @@
         {
             "source_path": "docs/standard/about.md",
             "redirect_url": "/dotnet/standard/index"
+        },
+        {
+            "source_path": "docs/standard/assembly-format.md",
+            "redirect_url": "/dotnet/standard/assembly/file-format",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md",
@@ -1946,6 +2056,11 @@
             "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
         },
         {
+            "source_path": "docs/standard/native-interop.md",
+            "redirect_url": "/dotnet/standard/native-interop/index",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md",
             "redirect_url": "/dotnet/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables",
             "redirect_document_id": true
@@ -1972,8 +2087,24 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
         },
         {
+            "source_path": "docs/standard/threading/autoresetevent.md",
+            "redirect_url": "/dotnet/api/system.threading.autoresetevent"
+        },
+        {
+            "source_path": "docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md",
+            "redirect_url": "/dotnet/standard/threading/overview-of-synchronization-primitives#thread-interaction-or-signaling"
+        },
+        {
             "source_path": "docs/standard/threading/interlocked-operations.md",
             "redirect_url": "/dotnet/api/system.threading.interlocked"
+        },
+        {
+            "source_path": "docs/standard/threading/managed-thread-states.md",
+            "redirect_url": "/dotnet/api/system.threading.threadstate"
+        },
+        {
+            "source_path": "docs/standard/threading/manualresetevent-and-manualreseteventslim.md",
+            "redirect_url": "/dotnet/api/system.threading.manualresetevent"
         },
         {
             "source_path": "docs/standard/threading/reader-writer-locks.md",
@@ -2001,9 +2132,40 @@
             "redirect_url": "/visualstudio/debugger/debugger-basics"
         },
         {
+            "source_path": "docs/visual-basic/developing-apps/printing/adding-printable-reports-to-visual-studio-applications.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233804(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/deploying-applications-that-reference-the-printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882689(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629268(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690944(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629243(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629256(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/index.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690938(v=vs.100)"
+        },
+        {
             "source_path": "docs/visual-basic/developing-apps/printing/printing-and-reporting.md",
-            "redirect_url": "/dotnet/visual-basic/developing-apps/printing/index",
-            "redirect_document_id": true
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md",
@@ -2019,6 +2181,86 @@
             "source_path": "docs/visual-basic/developing-apps/programming/drives-directories-files/processing.md",
             "redirect_url": "/dotnet/visual-basic/developing-apps/programming/drives-directories-files/index",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488279(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/deploying-applications-that-reference-power-packs-controls-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488314(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488194(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-change-the-layout-of-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488199(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-create-a-master-detail-form-by-using-two-datarepeater-controls.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488313(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488185(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-display-bound-data-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488274(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-display-item-headers-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488200(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-display-unbound-controls-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488315(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-draw-lines-with-the-lineshape-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488281(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488183(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-enable-tabbing-between-shapes-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488184(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-search-data-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488282(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488280(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488275(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/line-and-shape-controls-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488190(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/power-packs-controls.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488277(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/troubleshooting-the-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488312(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/virtual-mode-in-the-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488276(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/walkthrough-displaying-data-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488278(v=vs.120)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/using-ide/help-for-event-handlers.md",
@@ -2149,6 +2391,18 @@
         {
             "source_path": "docs/visual-basic/misc/next-control-variable-does-not-match-for-loop-control-variable.md",
             "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/index.md",
+            "redirect_url": "/dotnet/standard/assembly"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend-assemblies"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",

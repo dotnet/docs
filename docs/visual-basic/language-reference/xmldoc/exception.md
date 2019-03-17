@@ -1,12 +1,12 @@
 ---
-title: "&lt;exception&gt; (Visual Basic)"
+title: "<exception> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<exception> XML tag"
   - "exception XML tag"
 ms.assetid: c0517549-171e-4dae-ab88-a9c1700b6eee
 ---
-# &lt;exception&gt; (Visual Basic)
+# \<exception> (Visual Basic)
 Specifies which exceptions can be thrown.  
   
 ## Syntax  
@@ -15,7 +15,7 @@ Specifies which exceptions can be thrown.
 <exception cref="member">description</exception>  
 ```  
   
-#### Parameters  
+## Parameters  
  `member`  
  A reference to an exception that is available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within double quotation marks (" ").  
   
@@ -30,7 +30,7 @@ Specifies which exceptions can be thrown.
 ## Example  
  This example uses the `<exception>` tag to describe an exception that the `IntDivide` function can throw.  
   
- [!code-vb[VbVbcnXmlDocComments#3](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/exception_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#3)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

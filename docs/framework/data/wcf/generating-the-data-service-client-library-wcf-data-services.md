@@ -15,7 +15,7 @@ A data service that implements the [!INCLUDE[ssODataFull](../../../../includes/s
     > [!NOTE]
     >  The returned metadata is stored in the client project as an .edmx file. This .edmx file cannot be opened by using the Entity Data Model designer because it does not have the same format an .edmx file used by the Entity Framework. You can view this metadata file by using the XML editor or any text editor. For more information, see the [\[MC-EDMX\]: Entity Data Model for Data Services Packaging Format](https://go.microsoft.com/fwlink/?LinkID=178833) specification  
   
--   Generates a representation of the service as an entity container class that inherits from <xref:System.Data.Services.Client.DataServiceContext>. This generated entity container class resembles the entity container that the Entity Data Model tools generate. For more information, see [Object Services Overview (Entity Framework)](https://msdn.microsoft.com/library/43014cf9-c9cb-4538-bfbb-197820b60038).  
+-   Generates a representation of the service as an entity container class that inherits from <xref:System.Data.Services.Client.DataServiceContext>. This generated entity container class resembles the entity container that the Entity Data Model tools generate. For more information, see [Object Services Overview (Entity Framework)](https://docs.microsoft.com/previous-versions/bb386871(v=vs.100)).  
   
 -   Generates data classes for the data model types that it discovers in the service metadata.  
   
@@ -46,6 +46,6 @@ A data service that implements the [!INCLUDE[ssODataFull](../../../../includes/s
   
  For more information, see [OData: Primitive Data Types](https://go.microsoft.com/fwlink/?LinkId=186072).  
   
-## See Also  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
+## See also
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)

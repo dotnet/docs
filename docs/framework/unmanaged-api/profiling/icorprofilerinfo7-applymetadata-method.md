@@ -1,6 +1,6 @@
 ---
 title: "ICorProfilerInfo7::ApplyMetaData Method"
-ms.date: "03/30/2017"
+ms.date: "02/15/2019"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -26,7 +26,7 @@ HRESULT ApplyMetaData(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleID`  
  [in] The identifier of the module whose metadata was changed.  
   
@@ -46,7 +46,13 @@ HRESULT ApplyMetaData(
 -   `MemberSpec` records, which you create by calling the [IMetaDataEmit2::DefineMethodSpec](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-definemethodspec-method.md) method.  
   
 -   `UserString` records, which you create by calling the [IMetaDataEmit::DefineUserString](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-defineuserstring-method.md) method.  
-  
+
+Starting with .NET Core 3.0, `ApplyMetaData` also supports the following types:
+
+- `TypeDef` records, which you create by calling the [IMetaDataEmit::DefineTypeDef](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definetypedef-method.md) method.
+
+- `MethodDef` records, which you create by calling the [IMetaDataEmit::DefineMethod](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definemethod-method.md) method. However, adding virtual methods to an existing type is not supported. Virtual methods must be added before the [ModuleLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md) callback.
+
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
@@ -56,5 +62,5 @@ HRESULT ApplyMetaData(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md)
+## See also
+- [ICorProfilerInfo7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md)

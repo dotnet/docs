@@ -20,7 +20,7 @@ The `Main` method is the entry point of a C# application. (Libraries and service
 
  There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **/main** compiler option to specify which `Main` method to use as the entry point. For more information, see [/main (C# Compiler Options)](../../../csharp/language-reference/compiler-options/main-compiler-option.md).
 
- [!code-csharp[csProgGuideMain#17](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/main-and-command-line-arguments_1.cs)]
+ [!code-csharp[csProgGuideMain#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#17)]
 
 ## Overview
 
@@ -36,9 +36,9 @@ The addition of `async` and `Task`, `Task<int>` return types simplifies program 
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
+## See also
 
-- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-- [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)  
+- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "control types, Table"
   - "UI Automation, Table control type"
 ms.assetid: 9050dde5-6469-4c83-abb7-f861c24ff985
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Table Control Type
 > [!NOTE]
@@ -70,7 +68,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Table>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Table>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

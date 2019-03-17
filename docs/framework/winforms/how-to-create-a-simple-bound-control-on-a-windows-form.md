@@ -14,7 +14,7 @@ With *simple binding*, you can display a single data element, such as a column v
   
 ### To simple-bind a control  
   
-1.  Connect to a data source. For more information, see [Connecting to a Data Source](../../../docs/framework/data/adonet/connecting-to-a-data-source.md).  
+1.  Connect to a data source. For more information, see [Connecting to a Data Source](../data/adonet/connecting-to-a-data-source.md).  
   
 2.  In the form, select the control and display the **Properties** window.  
   
@@ -22,7 +22,7 @@ With *simple binding*, you can display a single data element, such as a column v
   
      The properties most often bound are displayed underneath the **(DataBindings)** property. For example, in most controls, the **Text** property is most frequently bound.  
   
-4.  If the property you want to bind is not one of the commonly bound properties, click the **Ellipsis** button (![VisualStudioEllipsesButton screenshot](../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) in the **(Advanced)** box to display the **Formatting and Advanced Binding** dialog box with a complete list of properties for that control.  
+4.  If the property you want to bind is not one of the commonly bound properties, click the **Ellipsis** button (![VisualStudioEllipsesButton screenshot](./media/vbellipsesbutton.png "vbEllipsesButton")) in the **(Advanced)** box to display the **Formatting and Advanced Binding** dialog box with a complete list of properties for that control.  
   
 5.  Select the property you want to bind and click the drop-down arrow under **Binding**.  
   
@@ -39,7 +39,7 @@ With *simple binding*, you can display a single data element, such as a column v
     > [!NOTE]
     >  Because simple-bound controls show only a single data element, it is very typical to include navigation logic in a Windows Form with simple-bound controls.  
   
-## See Also  
- <xref:System.Windows.Forms.Binding>  
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)  
- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.Binding>
+- [Windows Forms Data Binding](windows-forms-data-binding.md)
+- [Data Binding and Windows Forms](data-binding-and-windows-forms.md)

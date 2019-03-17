@@ -135,7 +135,7 @@ imageList1.Images.Clear();
 imageList1.Images.RemoveByKey("myPhoto");  
 ```  
   
-## See Also  
-- [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)
-- [ImageList Component Overview](../../../../docs/framework/winforms/controls/imagelist-component-overview-windows-forms.md)
-- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)
+## See also
+- [ImageList Component](imagelist-component-windows-forms.md)
+- [ImageList Component Overview](imagelist-component-overview-windows-forms.md)
+- [Images, Bitmaps, and Metafiles](../advanced/images-bitmaps-and-metafiles.md)

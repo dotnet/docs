@@ -113,7 +113,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
 ## Example  
  The following example shows how to create a simple XML element that has two nested empty elements.  
   
- [!code-vb[VbXMLSamples#20](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples9.vb#20)]  
   
  The example displays the following text. Notice that the literal preserves the structure of the empty elements.  
   
@@ -127,7 +127,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
 ## Example  
  The following example shows how to use embedded expressions to name an element and create attributes.  
   
- [!code-vb[VbXMLSamples#21](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_2.vb)]  
+ [!code-vb[VbXMLSamples#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples9.vb#21)]  
   
  This code displays the following text:  
   
@@ -138,7 +138,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
 ## Example  
  The following example declares `ns` as an XML namespace prefix. It then uses the prefix of the namespace to create an XML literal and displays the element's final form.  
   
- [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_3.vb)]  
+ [!code-vb[VbXMLSamples#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples10.vb#22)]  
   
  This code displays the following text:  
   
@@ -153,12 +153,12 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
  Notice that the compiler converted the prefix of the global XML namespace into a prefix definition for the XML namespace. The \<ns:middle> element redefines the XML namespace prefix for the \<ns:inner1> element. However, the \<ns:inner2> element uses the namespace defined by the `Imports` statement.  
   
-## See Also  
- <xref:System.Xml.Linq.XElement>  
- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)  
- [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)  
- [XML CDATA Literal](../../../visual-basic/language-reference/xml-literals/xml-cdata-literal.md)  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)  
- [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)
+## See also
+- <xref:System.Xml.Linq.XElement>
+- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+- [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)
+- [XML CDATA Literal](../../../visual-basic/language-reference/xml-literals/xml-cdata-literal.md)
+- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)
+- [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)

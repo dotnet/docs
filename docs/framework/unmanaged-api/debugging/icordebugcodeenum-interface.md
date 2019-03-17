@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugCodeEnum Interface1"
+title: "ICorDebugCodeEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugCodeEnum"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugCodeEnum Interface1
+# ICorDebugCodeEnum Interface
+
 Implements "ICorDebugEnum" methods, and enumerates "ICorDebugCode" arrays.  
   
 ## Methods  
@@ -40,5 +41,5 @@ Implements "ICorDebugEnum" methods, and enumerates "ICorDebugCode" arrays.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

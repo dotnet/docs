@@ -75,7 +75,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
 vbc -platform:x86 myFile.vb  
 ```  
   
-## See Also  
- [/target (Visual Basic)](target.md)  
- [Visual Basic Command-Line Compiler](index.md)  
- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
+## See also
+- [/target (Visual Basic)](target.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

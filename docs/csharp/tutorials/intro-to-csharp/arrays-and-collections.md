@@ -15,9 +15,6 @@ This tutorial expects you to have a machine you can use for development. The .NE
 
 Create a directory named **list-tutorial**. Make that the current directory and run `dotnet new console`.
 
-> [!NOTE]
-> If you just completed [Get started with .NET in 10 minutes](https://www.microsoft.com/net), you can keep using the myApp application that you just created.
-
 Open **Program.cs** in your favorite editor, and replace the existing code with the following:
 
 ```csharp

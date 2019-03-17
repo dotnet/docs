@@ -34,31 +34,31 @@ The following Windows Forms controls and components present standard dialog boxe
  Provides reference information about the <xref:System.Windows.Forms.SaveFileDialog> class and its members.  
   
 ## Related Sections  
- [Dialog Boxes in Windows Forms](../../../../docs/framework/winforms/dialog-boxes-in-windows-forms.md)  
+ [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)  
  Describes how to create a dialog box for a Windows Form.  
   
- [ColorDialog Component Overview](../../../../docs/framework/winforms/controls/colordialog-component-overview-windows-forms.md)  
+ [ColorDialog Component Overview](colordialog-component-overview-windows-forms.md)  
  Enables the user to select a color from a palette in a pre-configured dialog box and to add custom colors to that palette.  
   
- [FolderBrowserDialog Component Overview (Windows Forms)](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-overview-windows-forms.md)  
+ [FolderBrowserDialog Component Overview (Windows Forms)](folderbrowserdialog-component-overview-windows-forms.md)  
  Enables users to browse and select folders.  
   
- [FontDialog Component Overview](../../../../docs/framework/winforms/controls/fontdialog-component-overview-windows-forms.md)  
+ [FontDialog Component Overview](fontdialog-component-overview-windows-forms.md)  
  Exposes the fonts that are currently installed on the system.  
   
- [OpenFileDialog Component Overview](../../../../docs/framework/winforms/controls/openfiledialog-component-overview-windows-forms.md)  
+ [OpenFileDialog Component Overview](openfiledialog-component-overview-windows-forms.md)  
  Allows users to open files via a pre-configured dialog box.  
   
- [PageSetupDialog Component Overview](../../../../docs/framework/winforms/controls/pagesetupdialog-component-overview-windows-forms.md)  
+ [PageSetupDialog Component Overview](pagesetupdialog-component-overview-windows-forms.md)  
  Sets page details for printing via a pre-configured dialog box.  
   
- [PrintDialog Component Overview](../../../../docs/framework/winforms/controls/printdialog-component-overview-windows-forms.md)  
+ [PrintDialog Component Overview](printdialog-component-overview-windows-forms.md)  
  Selects a printer, chooses the pages to print, and determines other print-related settings.  
   
- [PrintPreviewDialog Control Overview](../../../../docs/framework/winforms/controls/printpreviewdialog-control-overview-windows-forms.md)  
+ [PrintPreviewDialog Control Overview](printpreviewdialog-control-overview-windows-forms.md)  
  Displays a document as it will appear when it is printed.  
   
- [SaveFileDialog Component Overview](../../../../docs/framework/winforms/controls/savefiledialog-component-overview-windows-forms.md)  
+ [SaveFileDialog Component Overview](savefiledialog-component-overview-windows-forms.md)  
  Selects files to save and where to save them.  
   
- Also see [Dialog Boxes in Windows Forms](https://msdn.microsoft.com/library/2chz8edb\(v=vs.110\)).
+ Also see [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md).

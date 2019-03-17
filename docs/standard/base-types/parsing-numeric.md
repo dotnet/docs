@@ -79,6 +79,6 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
   
 ## See also
 
-- <xref:System.Globalization.NumberStyles>  
-- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)  
+- <xref:System.Globalization.NumberStyles>
+- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)
 - [Formatting Types](../../../docs/standard/base-types/formatting-types.md)

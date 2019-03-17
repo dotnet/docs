@@ -28,7 +28,7 @@ HRESULT SetManifestFile(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFile`  
   
  The name of the manifest file whose contents are put into the Win32 resources blob.  
@@ -42,8 +42,8 @@ HRESULT SetManifestFile(
 ## Requirements  
  Requires aLink.h  
   
-## See Also  
- [IALink3 Interface](../../../../docs/framework/unmanaged-api/alink/ialink3-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+## See also
+- [IALink3 Interface](../../../../docs/framework/unmanaged-api/alink/ialink3-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)

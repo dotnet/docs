@@ -31,7 +31,7 @@ HRESULT GetSymbolSearchInfo(
         ISymUnmanagedSymbolSearchInfo **rgpSearchInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cSearchInfo`  
  [in] A `ULONG32` that indicates the size of `rgpSearchInfo`.  
   
@@ -47,5 +47,5 @@ HRESULT GetSymbolSearchInfo(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReaderSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreadersymbolsearchinfo-interface.md)
+## See also
+- [ISymUnmanagedReaderSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreadersymbolsearchinfo-interface.md)

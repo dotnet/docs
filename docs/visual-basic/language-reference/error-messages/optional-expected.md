@@ -1,5 +1,5 @@
 ---
-title: "&#39;Optional&#39; expected"
+title: "'Optional' expected"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30202"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30202"
 ms.assetid: 6f75060c-2db4-4a79-b5d1-5780c09a74cd
 ---
-# &#39;Optional&#39; expected
+# 'Optional' expected
 An optional argument in a procedure declaration is followed by a required argument. Every argument following an optional argument must also be optional.  
   
  **Error ID:** BC30202  
@@ -19,5 +19,5 @@ An optional argument in a procedure declaration is followed by a required argume
   
 2.  If the argument is intended to be optional, use the `Optional` keyword.  
   
-## See Also  
- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
+## See also
+- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)

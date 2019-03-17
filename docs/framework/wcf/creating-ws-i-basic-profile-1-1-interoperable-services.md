@@ -35,5 +35,5 @@ To configure a WCF service endpoint to be interoperable with [!INCLUDE[vstecasp]
  [!code-vb[C_HowTo-WCFServiceAndASMXClient#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto-wcfserviceandasmxclient/vb/program.vb#0)]  
  [!code-xml[C_HowTo-WCFServiceAndASMXClient#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto-wcfserviceandasmxclient/common/app.config#1)]  
   
-## See Also  
- [Interoperability with ASP.NET Web Services](../../../docs/framework/wcf/feature-details/interop-with-aspnet-web-services.md)
+## See also
+- [Interoperability with ASP.NET Web Services](../../../docs/framework/wcf/feature-details/interop-with-aspnet-web-services.md)

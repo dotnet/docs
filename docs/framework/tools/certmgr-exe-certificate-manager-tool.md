@@ -38,7 +38,7 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
 [/s[/r registryLocation]] [destinationStorename]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -131,7 +131,7 @@ certmgr /del /all /ctl /s my newStore.str
 certmgr /put /c /s my newFile  
 ```  
   
-## See Also  
- [Tools](../../../docs/framework/tools/index.md)  
- [Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- [Tools](../../../docs/framework/tools/index.md)
+- [Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

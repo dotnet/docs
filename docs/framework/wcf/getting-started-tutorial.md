@@ -16,7 +16,7 @@ The topics contained in this section are intended to give you quick exposure to 
 
 The topics in this section assume you are using Visual Studio as the development environment. If you are using another development environment, ignore the Visual Studio-specific instructions.
 
-For sample applications that can be downloaded to your hard disk and run, see the topics in [Windows Communication Foundation Samples](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91). For this topic, see, in particular, the [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md).
+For sample applications that can be downloaded to your hard disk and run, see the topics in [Windows Communication Foundation (WCF) samples](./samples/index.md). For this topic, see, in particular, the [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md).
 
 For more in-depth information about creating services and clients, see [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md).
 
@@ -27,7 +27,7 @@ For more in-depth information about creating services and clients, see [Basic WC
 
  [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)
 
- Describes how to implement a service contract. Once a contract is define, it must be implemented with a service class.
+ Describes how to implement a service contract. Once a contract is defined, it must be implemented with a service class.
 
  [How to: Host and Run a Basic Service](../../../docs/framework/wcf/how-to-host-and-run-a-basic-wcf-service.md)
 
@@ -52,10 +52,10 @@ For more in-depth information about creating services and clients, see [Basic WC
 
 ## Related Sections
 
-- [Windows Communication Foundation Samples](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)
+- [Windows Communication Foundation (WCF) samples](./samples/index.md)
 - [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)
 
-## See Also
+## See also
 
 - [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)
 - [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)

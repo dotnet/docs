@@ -35,5 +35,5 @@ This topic describes best practices for security in applications when you use XA
 ## XAML Type Mapping and Type System Access  
  XAML supports its own type system, which in many ways is a peer to how CLR implements the basic CLR type system. However, for certain aspects of type awareness where you are making trust decisions about a type based on its type information, you should defer to the type information in the CLR backing types. This is because some of the specific reporting capabilities of the XAML type system are left open as virtual methods and are therefore, not fully under the control of the original .NET Framework XAML Services implementations. These extensibility points exist because the XAML type system is extensible, to match the extensibility of XAML itself and its possible alternative type-mapping strategies versus the default CLR-backed implementation and default XAML schema context. For more information, see the specific notes on several of the properties of <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>.  
   
-## See Also  
- <xref:System.Xaml.Permissions.XamlAccessLevel>
+## See also
+- <xref:System.Xaml.Permissions.XamlAccessLevel>

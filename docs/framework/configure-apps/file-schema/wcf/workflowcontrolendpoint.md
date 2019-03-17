@@ -1,9 +1,9 @@
 ---
-title: "&lt;workflowControlEndpoint&gt;"
+title: "<workflowControlEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: 6c89e76c-643b-4b6a-9b25-628f753d7027
 ---
-# &lt;workflowControlEndpoint&gt;
+# \<workflowControlEndpoint>
 This configuration element defines a standard endpoint for controlling the execution of workflow instances (create, run, suspend, terminate, etc).  
   
 \<system.ServiceModel>  
@@ -39,5 +39,5 @@ This configuration element defines a standard endpoint for controlling the execu
 |-------------|-----------------|  
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
-## See Also  
- <xref:System.ServiceModel.Activities.WorkflowControlEndpoint>
+## See also
+- <xref:System.ServiceModel.Activities.WorkflowControlEndpoint>

@@ -12,5 +12,6 @@ The dynamic-link library (DLL) for Visual Basic can only accommodate access by a
   
 -   Reduce the number of open applications accessing Visual Basic.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

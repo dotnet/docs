@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Document control type"
   - "UI Automation, Document control type"
 ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Document Control Type
 > [!NOTE]
@@ -76,7 +74,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.TextPatternIdentifiers.TextChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.ValuePatternIdentifiers.ValueProperty> property-changed event.|Never|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Document>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Document>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

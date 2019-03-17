@@ -39,7 +39,7 @@ Windows Workflow Foundation (WF) is integrated with several different technologi
 -   The ServiceSecurityContext for the incoming message is also available from within workflow by accessing OperationContext.
 
 ## WF Security Pack CTP
- The Microsoft WF Security Pack CTP 1 is the first community technology preview (CTP) release of a set of activities and their implementation based on [Windows Workflow Foundation](https://msdn.microsoft.com/netframework/aa663328.aspx)in [.NET Framework 4](https://msdn.microsoft.com/netframework/default.aspx) (WF 4) and the [Windows Identity Foundation (WIF)](https://msdn.microsoft.com/security/aa570351.aspx).  The Microsoft WF Security Pack CTP 1 contains both activities and their designers which illustrate how to easily enable various security-related scenarios using workflow, including:
+ The Microsoft WF Security Pack CTP 1 is the first community technology preview (CTP) release of a set of activities and their implementation based on [Windows Workflow Foundation](index.md) in [.NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w0x726c2(v=vs.100)) (WF 4) and the [Windows Identity Foundation (WIF)](../security/index.md).  The Microsoft WF Security Pack CTP 1 contains both activities and their designers which illustrate how to easily enable various security-related scenarios using workflow, including:
 
 1.  Impersonating a client identity in the workflow
 
@@ -49,4 +49,4 @@ Windows Workflow Foundation (WF) is integrated with several different technologi
 
 4.  Flowing a client security token to a back-end service (claims-based delegation) using WS-Trust ActAs
 
-For more information and to download the WF Security Pack CTP, see: [WF Security Pack CTP](https://wf.codeplex.com/releases/view/48114)
+For more information and to download the WF Security Pack CTP, see: [WF Security Pack CTP](https://archive.codeplex.com/?p=wf)

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugProcess2 Interface1"
+title: "ICorDebugProcess2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugProcess2"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugProcess2 Interface1
+# ICorDebugProcess2 Interface
 A logical extension of the ICorDebugProcess interface, which represents a process running managed code.  
   
 ## Methods  
@@ -46,5 +46,5 @@ A logical extension of the ICorDebugProcess interface, which represents a proces
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

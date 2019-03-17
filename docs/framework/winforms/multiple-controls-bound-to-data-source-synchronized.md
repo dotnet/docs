@@ -23,8 +23,8 @@ Oftentimes when working with data binding in Windows Forms, multiple controls ar
   
  The example uses a <xref:System.Windows.Forms.BindingSource> to bind the data source and the controls. Alternatively, you can bind the controls directly to the data source and retrieve the <xref:System.Windows.Forms.BindingManagerBase> for the binding from the form's <xref:System.Windows.Forms.Control.BindingContext%2A> and then handle the <xref:System.Windows.Forms.BindingManagerBase.BindingComplete> event for the <xref:System.Windows.Forms.BindingManagerBase>. For an example of how to do this, see the Help page about the <xref:System.Windows.Forms.BindingManagerBase.BindingComplete> event of <xref:System.Windows.Forms.BindingManagerBase>.  
   
- [!code-csharp[System.Windows.Forms.BindingSourceMultipleControls#1](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleControls/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.BindingSourceMultipleControls#1](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleControls/VB/Form1.vb#1)]  
+ [!code-csharp[System.Windows.Forms.BindingSourceMultipleControls#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleControls/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.BindingSourceMultipleControls#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleControls/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
   
@@ -34,8 +34,8 @@ Oftentimes when working with data binding in Windows Forms, multiple controls ar
   
 -   A form with the <xref:System.Windows.Forms.Form.Load> event handled and a call to the `InitializeControlsAndDataSource` method in the example from the form's <xref:System.Windows.Forms.Form.Load> event handler.  
   
-## See Also  
- [How to: Share Bound Data Across Forms Using the BindingSource Component](../../../docs/framework/winforms/controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component.md)  
- [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)  
- [Interfaces Related to Data Binding](../../../docs/framework/winforms/interfaces-related-to-data-binding.md)  
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)
+## See also
+- [How to: Share Bound Data Across Forms Using the BindingSource Component](./controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component.md)
+- [Change Notification in Windows Forms Data Binding](change-notification-in-windows-forms-data-binding.md)
+- [Interfaces Related to Data Binding](interfaces-related-to-data-binding.md)
+- [Windows Forms Data Binding](windows-forms-data-binding.md)

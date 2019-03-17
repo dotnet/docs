@@ -34,7 +34,7 @@ This page lists some common problems that can occur when you perform operations 
   
  The following example demonstrates both incorrect and correct comparison of two `Double` values.  
   
- [!code-vb[VbVbalrDataTypes#10](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#10)]  
   
  The previous example uses the <xref:System.Double.ToString%2A> method of the <xref:System.Double> structure so that it can specify better  precision than the `CStr` keyword uses. The default is 15 digits, but the "G17" format extends it to 17 digits.  
   
@@ -49,7 +49,7 @@ This page lists some common problems that can occur when you perform operations 
   
  The following example demonstrates the potential imprecision of floating-point operands.  
   
- [!code-vb[VbVbalrDataTypes#11](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_2.vb)]  
+ [!code-vb[VbVbalrDataTypes#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#11)]  
   
  The previous example uses the <xref:System.Double.ToString%2A> method of the <xref:System.Double> structure so that it can specify better precision than the `CStr` keyword uses. The default is 15 digits, but the "G17" format extends it to 17 digits.  
   
@@ -83,7 +83,7 @@ This page lists some common problems that can occur when you perform operations 
   
  The following example demonstrates both unsuccessful and successful assignments of a literal to a `Char` variable.  
   
- [!code-vb[VbVbalrDataTypes#12](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_3.vb)]  
+ [!code-vb[VbVbalrDataTypes#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#12)]  
   
  There is always a risk in using narrowing conversions, because they can fail at run time. For example, a conversion from `String` to `Char` can fail if the `String` value contains more than one character. Therefore, it is better programming to use the `C` type character.  
   
@@ -106,11 +106,11 @@ This page lists some common problems that can occur when you perform operations 
 ### Meaningless Values  
  In general, `String` values are not meaningful in other data types, and conversion is highly artificial and dangerous. Whenever possible, you should restrict usage of `String` variables to the character sequences for which they are designed. You should never write code that relies on equivalent values in other types.  
   
-## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Efficient Use of Data Types](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+## See also
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
+- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Efficient Use of Data Types](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

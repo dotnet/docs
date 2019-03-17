@@ -21,9 +21,9 @@ Determines whether an expression is `False`.
 ## Example  
  The following code example defines the outline of a structure that includes definitions for the `IsFalse` and `IsTrue` operators.  
   
- [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/isfalse-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#28)]  
   
-## See Also  
- [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)  
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
- [AndAlso Operator](../../../visual-basic/language-reference/operators/andalso-operator.md)
+## See also
+- [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)
+- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [AndAlso Operator](../../../visual-basic/language-reference/operators/andalso-operator.md)

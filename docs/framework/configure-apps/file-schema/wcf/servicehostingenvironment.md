@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceHostingEnvironment&gt;"
+title: "<serviceHostingEnvironment>"
 ms.date: "03/30/2017"
 ms.assetid: 4f8a7c4f-e735-4987-979a-b74fcdae2652
 ---
-# &lt;serviceHostingEnvironment&gt;
+# \<serviceHostingEnvironment>
 This element defines the type the service hosting environment instantiates for a particular transport. If this element is empty, the default type is used. This element can only be used at the application or machine level configuration files.  
   
  \<system.ServiceModel>  
@@ -86,8 +86,8 @@ This element defines the type the service hosting environment instantiates for a
 <serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
- <xref:System.ServiceModel.ServiceHostingEnvironment>  
- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)  
- [WCF Services and ASP.NET](../../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
+- <xref:System.ServiceModel.ServiceHostingEnvironment>
+- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [WCF Services and ASP.NET](../../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)

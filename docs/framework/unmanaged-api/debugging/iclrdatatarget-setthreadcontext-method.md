@@ -32,7 +32,7 @@ HRESULT SetThreadContext (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The operating system identifier of a thread in the target process.  
   
@@ -56,5 +56,5 @@ HRESULT SetThreadContext (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+## See also
+- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

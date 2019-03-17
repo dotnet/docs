@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "UI Automation, Microsoft Active Accessibility"
   - "Active Accessibility, UI Automation compared to"
 ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation and Microsoft Active Accessibility
 > [!NOTE]
@@ -245,5 +243,5 @@ ms.author: "mhopkins"
   
  The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] model removes the need for providers to call through to other provider code. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] core service does all the necessary aggregation.  
   
-## See Also  
- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)
+## See also
+- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)

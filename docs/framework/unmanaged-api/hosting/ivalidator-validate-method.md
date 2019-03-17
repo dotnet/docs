@@ -36,7 +36,7 @@ HRESULT Validate (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `veh`  
  [in] A pointer to an `IVEHandler` instance that handles validation errors.  
   
@@ -70,5 +70,5 @@ HRESULT Validate (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- 
+## See also
+

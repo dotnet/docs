@@ -157,7 +157,7 @@ Basically, this is just a disclaimer stating that you shouldn’t always use Mon
 
 ### The code: Use MongoDB API in .NET Core applications
 
-MongoDB API for .NET is based on NuGet packages that you need to add to your projects, like in the Locations.API project shown in the the following figure.
+MongoDB API for .NET is based on NuGet packages that you need to add to your projects, like in the Locations.API project shown in the following figure.
 
 ![The Solution Explorer view showing the dependencies in the MongoDB NuGet packages.](./media/image21-bis.png)
 
@@ -311,7 +311,7 @@ services:
   [*https://docs.microsoft.com/azure/cosmos-db/modeling-data*](https://docs.microsoft.com/azure/cosmos-db/modeling-data)
 
 - **Vaughn Vernon. The Ideal Domain-Driven Design Aggregate Store?** \
-  [*https://vaughnvernon.co/?p=942*](https://vaughnvernon.co/?p=942)
+  <https://kalele.io/blog-posts/the-ideal-domain-driven-design-aggregate-store/>
 
 - **Introduction to Azure Cosmos DB: API for MongoDB**  \
   [*https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction*](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction)

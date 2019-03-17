@@ -14,7 +14,7 @@ A Windows Forms button can be selected in the following ways:
   
 -   Move the focus to the button by pressing the TAB key, and then choose the button by pressing the SPACEBAR or ENTER.  
   
--   Press the access key (ALT + the underlined letter) for the button. For more information about access keys, see [How to: Create Access Keys for Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-create-access-keys-for-windows-forms-controls.md).  
+-   Press the access key (ALT + the underlined letter) for the button. For more information about access keys, see [How to: Create Access Keys for Windows Forms Controls](how-to-create-access-keys-for-windows-forms-controls.md).  
   
 -   If the button is the "accept" button of the form, pressing ENTER chooses the button, even if another control has the focus — except if that other control is another button, a multi-line text box, or a custom control that traps the enter key.  
   
@@ -22,7 +22,7 @@ A Windows Forms button can be selected in the following ways:
   
 -   Call the <xref:System.Windows.Forms.Button.PerformClick%2A> method to select the button programmatically.  
   
-## See Also  
- [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)  
- [How to: Respond to Windows Forms Button Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-button-clicks.md)  
- [Button Control](../../../../docs/framework/winforms/controls/button-control-windows-forms.md)
+## See also
+- [Button Control Overview](button-control-overview-windows-forms.md)
+- [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)
+- [Button Control](button-control-windows-forms.md)

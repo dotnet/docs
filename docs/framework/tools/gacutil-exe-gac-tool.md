@@ -33,7 +33,7 @@ The Global Assembly Cache tool allows you to view and manipulate the contents of
 gacutil [options] [assemblyName | assemblyPath | assemblyListFile]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -159,8 +159,8 @@ gacutil /i /r mydll.dll OPAQUE "Insert custom application details here" "Insert 
 gacutil /l  
 ```  
   
-## See Also  
- [Tools](../../../docs/framework/tools/index.md)  
- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
- [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- [Tools](../../../docs/framework/tools/index.md)
+- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
+- [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

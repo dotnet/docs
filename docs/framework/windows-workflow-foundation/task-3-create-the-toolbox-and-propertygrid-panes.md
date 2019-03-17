@@ -6,11 +6,11 @@ ms.assetid: 72c1546a-eed5-4f0f-a616-719a163414f4
 # Task 3: Create the Toolbox and PropertyGrid Panes
 In this task, you will create the **Toolbox** and **PropertyGrid** panes and add them to the rehosted [!INCLUDE[wfd1](../../../includes/wfd1-md.md)].  
   
- For reference, the code that should be in the MainWindow.xaml.cs file after completing the three tasks in the [Rehosting the Workflow Designer](../../../docs/framework/windows-workflow-foundation/rehosting-the-workflow-designer.md) series of topics is provided at the end of this topic.  
+ For reference, the code that should be in the MainWindow.xaml.cs file after completing the three tasks in the [Rehosting the Workflow Designer](rehosting-the-workflow-designer.md) series of topics is provided at the end of this topic.  
   
 ### To create the Toolbox and add it to the grid  
   
-1.  Open the HostingApplication project you obtained by following the procedure described in [Task 2: Host the Workflow Designer](../../../docs/framework/windows-workflow-foundation/task-2-host-the-workflow-designer.md).  
+1.  Open the HostingApplication project you obtained by following the procedure described in [Task 2: Host the Workflow Designer](task-2-host-the-workflow-designer.md).  
   
 2.  In the **Solution Explorer** pane, right-click the MainWindow.xaml file and select **View Code**.  
   
@@ -206,7 +206,7 @@ namespace HostingApplication
 }  
 ```  
   
-## See Also  
- [Rehosting the Workflow Designer](../../../docs/framework/windows-workflow-foundation/rehosting-the-workflow-designer.md)  
- [Task 1: Create a New Windows Presentation Foundation Application](../../../docs/framework/windows-workflow-foundation/task-1-create-a-new-wpf-app.md)  
- [Task 2: Host the Workflow Designer](../../../docs/framework/windows-workflow-foundation/task-2-host-the-workflow-designer.md)
+## See also
+- [Rehosting the Workflow Designer](rehosting-the-workflow-designer.md)
+- [Task 1: Create a New Windows Presentation Foundation Application](task-1-create-a-new-wpf-app.md)
+- [Task 2: Host the Workflow Designer](task-2-host-the-workflow-designer.md)

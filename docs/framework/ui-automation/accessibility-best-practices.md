@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "best practices for accessibility"
   - "accessibility, best practices for"
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Accessibility Best Practices
 > [!NOTE]
@@ -126,7 +124,7 @@ ms.author: "mhopkins"
 ### Use Standard Input APIs with Device-Independent Calls  
  Device-independent calls ensure keyboard and mouse feature equality, while providing [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] with needed information about the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
   
-## See Also  
- <xref:System.Windows.Automation.Peers>  
- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://msdn.microsoft.com/library/9aed3c10-68eb-419e-a57f-1d2af15a8253)  
- [Guidelines for Keyboard User Interface Design](https://docs.microsoft.com/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
+## See also
+- <xref:System.Windows.Automation.Peers>
+- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771573(v=vs.90))
+- [Guidelines for Keyboard User Interface Design](https://docs.microsoft.com/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)

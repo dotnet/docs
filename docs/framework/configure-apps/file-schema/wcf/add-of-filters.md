@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;filters&gt;"
+title: "<add> of <filters>"
 ms.date: "03/30/2017"
 ms.assetid: e3bf437c-dd99-49f3-9792-9a8721e6eaad
 ---
-# &lt;add&gt; of &lt;filters&gt;
+# \<add> of \<filters>
 A XPath filter that specifies the kind of message to be logged.  
   
  \<system.ServiceModel>  
@@ -64,14 +64,14 @@ A XPath filter that specifies the kind of message to be logged.
 </messageLogging>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.DiagnosticSection>  
- <xref:System.ServiceModel.Diagnostics>  
- <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>  
- <xref:System.ServiceModel.Configuration.MessageLoggingElement>  
- <xref:System.ServiceModel.Configuration.MessageLoggingElement.Filters%2A>  
- <xref:System.ServiceModel.Configuration.XPathMessageFilterElement>  
- <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>  
- [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)  
- [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)  
- [\<messageLogging>](../../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)
+## See also
+- <xref:System.ServiceModel.Configuration.DiagnosticSection>
+- <xref:System.ServiceModel.Diagnostics>
+- <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>
+- <xref:System.ServiceModel.Configuration.MessageLoggingElement>
+- <xref:System.ServiceModel.Configuration.MessageLoggingElement.Filters%2A>
+- <xref:System.ServiceModel.Configuration.XPathMessageFilterElement>
+- <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>
+- [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)
+- [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)
+- [\<messageLogging>](../../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)

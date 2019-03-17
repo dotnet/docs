@@ -1,9 +1,9 @@
 ---
-title: "&lt;filterTable&gt;"
+title: "<filterTable>"
 ms.date: "03/30/2017"
 ms.assetid: e9f05441-3ad1-49b9-a267-71724aa094b4
 ---
-# &lt;filterTable&gt;
+# \<filterTable>
 Represents a routing table that contains a list of filters to evaluate messages against and the client endpoint to route messages to if the filter evaluates to true.  
   
  \<system.serviceModel>  
@@ -49,5 +49,5 @@ Represents a routing table that contains a list of filters to evaluate messages 
 |-------------|-----------------|  
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains routing tables.|  
   
-## See Also  
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>    
+## See also
+- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>

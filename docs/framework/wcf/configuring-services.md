@@ -1,11 +1,12 @@
 ---
-title: "Configuring Services"
+title: "Configuring WCF services"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "configuration [WCF]"
 ms.assetid: beac771e-f28e-4f84-9ff1-ad9251c726d3
 ---
-# Configuring Services
+# Configuring WCF services
+
 Once you have designed and implemented your service contract, you are ready to configure your service. This is where you define and customize how your service is exposed to clients, including specifying the address where it can be found, the transport and message encoding it uses to send and receive messages, and the type of security it requires.  
   
  Configuration as used here includes all the ways, imperatively in code or by using a configuration file, in which you can define and customize the various aspects of a service, such as specifying its endpoint addresses, the transports used, and its security schemes. In practice, writing configuration is a major part of programming WCF applications.  
@@ -49,7 +50,7 @@ Once you have designed and implemented your service contract, you are ready to c
   
  [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md)  
   
-## See Also  
- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
- [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)
+## See also
+- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
+- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)
+- [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)

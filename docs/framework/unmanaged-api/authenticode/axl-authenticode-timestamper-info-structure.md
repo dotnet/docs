@@ -30,5 +30,5 @@ typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {
 |`ftTimestamp`|The time of the time stamp.|  
 |`pChainContext`|The time stamper’s chain context.  See the [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) structure.|  
   
-## See Also  
- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+## See also
+- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

@@ -1,9 +1,9 @@
 ---
-title: "&lt;transport&gt; of &lt;netHttpBinding&gt;"
+title: "<transport> of <netHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 3b180006-1661-43bf-a699-96fd3da469af
 ---
-# &lt;transport&gt; of &lt;netHttpBinding&gt;
+# \<transport> of \<netHttpBinding>
 Defines properties that control authentication parameters for the HTTP transport.  
   
 \<system.serviceModel>  
@@ -111,12 +111,12 @@ Defines properties that control authentication parameters for the HTTP transport
 </system.serviceModel>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>
- <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>  
- <xref:System.ServiceModel.HttpTransportSecurity>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>
+- <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>
+- <xref:System.ServiceModel.HttpTransportSecurity>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

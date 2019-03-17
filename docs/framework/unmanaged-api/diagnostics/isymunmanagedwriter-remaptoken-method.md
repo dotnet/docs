@@ -29,7 +29,7 @@ HRESULT RemapToken(
     [in] mdToken  newToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `oldToken`  
  [in] The metadata token that was remapped.  
   
@@ -42,5 +42,5 @@ HRESULT RemapToken(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+## See also
+- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

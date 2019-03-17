@@ -32,7 +32,7 @@ HRESULT GetILToNativeMapping (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cMap`  
  [in] The size of the `map` array.  
   
@@ -40,7 +40,7 @@ HRESULT GetILToNativeMapping (
  [out] A pointer to the actual number of elements returned in the `map` array.  
   
  `map`  
- [out] An array of `COR_DEBUG_IL_TO_NATIVE_MAP` stuctures, each of which represents a mapping from an MSIL offset to a native offset.  
+ [out] An array of `COR_DEBUG_IL_TO_NATIVE_MAP` structures, each of which represents a mapping from an MSIL offset to a native offset.  
   
  There is no ordering to the array of elements returned.  
   
@@ -56,5 +56,5 @@ HRESULT GetILToNativeMapping (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebugCode Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md)
+## See also
+- [ICorDebugCode Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md)

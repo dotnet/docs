@@ -1,9 +1,9 @@
 ---
-title: "&lt;ws2007HttpBinding&gt;"
+title: "<ws2007HttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 8586ecc9-bdaa-44d6-8d4d-7038e4ea1741
 ---
-# &lt;ws2007HttpBinding&gt;
+# \<ws2007HttpBinding>
 Defines an interoperable binding that provides support for the correct versions of the <xref:System.ServiceModel.WSHttpBinding.Security%2A>, <xref:System.ServiceModel.ReliableSession>, and <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> binding elements.  
   
  \<system.serviceModel>  
@@ -79,8 +79,8 @@ Defines an interoperable binding that provides support for the correct versions 
 |Element|Description|  
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>.|  
-|[\<readerQuotas>](https://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that endpoints configured with this binding can process. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[reliableSession](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b)|Specifies whether reliable sessions are established between channel endpoints.|  
+|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that endpoints configured with this binding can process. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Specifies whether reliable sessions are established between channel endpoints.|  
   
 ### Parent Elements  
   
@@ -129,10 +129,10 @@ Defines an interoperable binding that provides support for the correct versions 
 </configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.WS2007HttpBinding>  
- <xref:System.ServiceModel.Configuration.WS2007HttpBindingElement>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.WS2007HttpBinding>
+- <xref:System.ServiceModel.Configuration.WS2007HttpBindingElement>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

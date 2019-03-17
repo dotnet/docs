@@ -348,7 +348,7 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 
 - Encapsulate building the list in the iterator. In the iterator method, you can build the list and then yield each result in a loop.
 
-## See Also
+## See also
 
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>

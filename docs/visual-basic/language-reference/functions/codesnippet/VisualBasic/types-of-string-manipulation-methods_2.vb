@@ -1,1 +1,0 @@
-        Dim aString As String = String.Copy("A literal string")

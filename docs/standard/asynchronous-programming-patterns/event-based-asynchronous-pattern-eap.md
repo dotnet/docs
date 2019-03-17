@@ -61,6 +61,6 @@ There are a number of ways to expose asynchronous features to client code. The E
   
 ## See also
 
-- [Managed Threading Best Practices](../threading/managed-threading-best-practices.md)  
-- [Events](../events/index.md)  
+- [Managed Threading Best Practices](../threading/managed-threading-best-practices.md)
+- [Events](../events/index.md)
 - [Asynchronous Programming Design Patterns](index.md)

@@ -1,6 +1,7 @@
 ---
-title: "Fundamentals of Garbage Collection"
-ms.date: "03/30/2017"
+title: "Fundamentals of garbage collection"
+description: "Learn how the garbage collector works and how it can be configured for optimum performance."
+ms.date: "03/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "garbage collection, generations"
@@ -13,7 +14,7 @@ ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Fundamentals of Garbage Collection
+# Fundamentals of garbage collection
 <a name="top"></a> In the common language runtime (CLR), the garbage collector serves as an automatic memory manager. It provides the following benefits:  
   
 -   Enables you to develop your application without having to free memory.  
@@ -24,28 +25,8 @@ ms.author: "ronpet"
   
 -   Provides memory safety by making sure that an object cannot use the content of another object.  
   
- This topic describes the core concepts of garbage collection. It contains the following sections:  
-  
--   [Fundamentals of memory](#fundamentals_of_memory)  
-  
--   [Conditions for a garbage collection](#conditions_for_a_garbage_collection)  
-  
--   [The managed heap](#the_managed_heap)  
-  
--   [Generations](#generations)  
-  
--   [What happens during a garbage collection](#what_happens_during_a_garbage_collection)  
-  
--   [Manipulating unmanaged resources](#manipulating_unmanaged_resources)  
-  
--   [Workstation and server garbage collection](#workstation_and_server_garbage_collection)  
-  
--   [Concurrent garbage collection](#concurrent_garbage_collection)  
-  
--   [Background workstation garbage collection](#background_garbage_collection)  
-  
--   [Background server garbage collection](#background_server_garbage_collection)  
-  
+ This topic describes the core concepts of garbage collection. 
+ 
 <a name="fundamentals_of_memory"></a>   
 ## Fundamentals of memory  
  The following list summarizes important CLR memory concepts.  
@@ -92,7 +73,7 @@ ms.author: "ronpet"
   
  There is a managed heap for each managed process. All threads in the process allocate memory for objects on the same heap.  
   
- To reserve memory, the garbage collector calls the Win32 [VirtualAlloc](https://msdn.microsoft.com/library/aa366887.aspx) function, and reserves one segment of memory at a time for managed applications. The garbage collector also reserves segments as needed, and releases segments back to the operating system (after clearing them of any objects) by calling the Win32 [VirtualFree](https://msdn.microsoft.com/library/aa366892.aspx) function.  
+ To reserve memory, the garbage collector calls the Win32 [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) function, and reserves one segment of memory at a time for managed applications. The garbage collector also reserves segments as needed, and releases segments back to the operating system (after clearing them of any objects) by calling the Win32 [VirtualFree](/windows/desktop/api/memoryapi/nf-memoryapi-virtualfree) function.  
   
 > [!IMPORTANT]
 >  The size of segments allocated by the garbage collector is implementation-specific and is subject to change at any time, including in periodic updates. Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations.  
@@ -103,9 +84,9 @@ ms.author: "ronpet"
   
  The intrusiveness (frequency and duration) of garbage collections is the result of the volume of allocations and the amount of survived memory on the managed heap.  
   
- The heap can be considered as the accumulation of two heaps: the large object heap and the small object heap.  
+ The heap can be considered as the accumulation of two heaps: the [large object heap](large-object-heap.md) and the small object heap.  
   
- The large object heap contains very large objects that are 85,000 bytes and larger. The objects on the large object heap are usually arrays. It is rare for an instance object to be extremely large.  
+ The [large object heap](large-object-heap.md) contains very large objects that are 85,000 bytes and larger. The objects on the large object heap are usually arrays. It is rare for an instance object to be extremely large.  
   
  [Back to top](#top)  
   

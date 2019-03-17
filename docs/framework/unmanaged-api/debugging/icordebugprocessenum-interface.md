@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugProcessEnum Interface1"
+title: "ICorDebugProcessEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugProcessEnum"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugProcessEnum Interface1
+# ICorDebugProcessEnum Interface
 Implements ICorDebugEnum methods and enumerates ICorDebugProcess arrays.  
   
 ## Methods  
@@ -40,5 +40,5 @@ Implements ICorDebugEnum methods and enumerates ICorDebugProcess arrays.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

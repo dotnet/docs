@@ -37,17 +37,17 @@ variableorproperty = value
 ## Example  
  The following example demonstrates the assignment operator. The value on the right is assigned to the variable on the left.  
   
- [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#9)]  
   
-## See Also  
- [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)  
- [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)  
- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
- [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)  
- [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
- [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
- [^= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+## See also
+- [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)
+- [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)
+- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)
+- [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)
+- [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)
+- [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)
+- [^= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)
+- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)
+- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)

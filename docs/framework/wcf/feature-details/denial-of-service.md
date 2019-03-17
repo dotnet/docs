@@ -73,11 +73,11 @@ Denial of service occurs when a system is overwhelmed in such a way that message
   
  To mitigate this, set the limit for the maximum number of active sessions and the maximum lifetime for a session by setting the <xref:System.ServiceModel.Channels.SecurityBindingElement> property of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
   
-## See Also  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  
- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)  
- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)  
- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+## See also
+- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
+- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
+- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)
+- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
+- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
+- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)
+- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)

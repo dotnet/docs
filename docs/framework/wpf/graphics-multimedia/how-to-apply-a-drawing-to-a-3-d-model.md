@@ -11,17 +11,17 @@ This example shows how to use a <xref:System.Windows.Media.DrawingBrush> as the 
   
  The following code defines a <xref:System.Windows.Media.DrawingGroup> as the content of a <xref:System.Windows.Media.DrawingBrush>.  The <xref:System.Windows.Media.DrawingBrush> is set as the <xref:System.Windows.Media.Media3D.DiffuseMaterial.Brush%2A> property of the <xref:System.Windows.Media.Media3D.DiffuseMaterial> applied to a [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] plane.  
   
- **Note:** It is often desirable to define complex objects and values like the drawing below as resources which can be reused and simplify your code. See [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md) for more information.  
+ **Note:** It is often desirable to define complex objects and values like the drawing below as resources which can be reused and simplify your code. See [XAML Resources](../advanced/xaml-resources.md) for more information.  
   
- [!code-xaml[3DGallery_snip#ApplyDrawingToMaterialInline1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialinline1)]  
+ [!code-xaml[3DGallery_snip#ApplyDrawingToMaterialInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialinline1)]  
   
 ## Example  
  The following code shows the entire sample.  
   
- [!code-xaml[3DGallery_snip#ApplyDrawingToMaterialExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialexamplewholepage)]  
+ [!code-xaml[3DGallery_snip#ApplyDrawingToMaterialExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialexamplewholepage)]  
   
-## See Also  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
- [Create a 3-D Scene](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md)  
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
- [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)
+## See also
+- [XAML Resources](../advanced/xaml-resources.md)
+- [Create a 3-D Scene](how-to-create-a-3-d-scene.md)
+- [Drawing Objects Overview](drawing-objects-overview.md)
+- [3-D Graphics Overview](3-d-graphics-overview.md)

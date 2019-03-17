@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7b7b1c66-f093-43c3-b4d1-7173b46516da
 ---
 # Workflow Activity Authoring Using the Activity Class
-The most basic way to create an activity using Windows Workflow Foundation (WF) in [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] is to create a class that inherits from <xref:System.Activities.Activity> that creates functionality by assembling custom activities or activities from the [Built-In Activity Library](../../../docs/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library.md). This topic demonstrates how to create an activity that writes two messages to the console.
+The most basic way to create an activity using Windows Workflow Foundation (WF) in [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] is to create a class that inherits from <xref:System.Activities.Activity> that creates functionality by assembling custom activities or activities from the [Built-In Activity Library](net-framework-4-5-built-in-activity-library.md). This topic demonstrates how to create an activity that writes two messages to the console.
 
 ### To create a custom Activity using the activity designer
 

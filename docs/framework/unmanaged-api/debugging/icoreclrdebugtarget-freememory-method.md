@@ -30,7 +30,7 @@ void FreeMemory (
      [in] void*pMemory);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMemory`  
  [in] A pointer to the array that is returned by either the [ICoreClrDebugTarget::EnumProcesses](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-enumprocesses-method.md) or the [ICoreClrDebugTarget::EnumRuntimes](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-enumruntimes-method.md) method.  
   
@@ -43,5 +43,5 @@ void FreeMemory (
   
  **.NET Framework Versions:** 3.5 SP1  
   
-## See Also  
- [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)
+## See also
+- [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)

@@ -5,7 +5,7 @@ author: kendrahavens
 ms.date: 12/05/2018
 ms.custom: "seodec18"
 ---
-# Get Started with C# and Visual Studio Code
+# Get started with C# and Visual Studio Code
 
 .NET Core gives you a fast and modular platform for creating applications that run on Windows, Linux, and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
 
@@ -134,5 +134,5 @@ The Visual Studio Code C# extension can generate assets to build and debug for y
 
 ## See also
 
-* [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
-* [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)
+- [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
+- [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)

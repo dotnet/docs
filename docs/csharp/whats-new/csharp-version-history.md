@@ -5,7 +5,7 @@ author: erikdietrich
 ms.date: 09/20/2017
 ---
 
-# The history of C# #
+# The history of C\#
 
 This article provides a history of each major release of the C# language. The C# team is continuing to innovate and add new features. Detailed language feature status, including features considered for upcoming releases can be found [on the dotnet/roslyn repository](https://github.com/dotnet/roslyn/blob/master/docs/Language%20Feature%20Status.md) on GitHub.
 
@@ -79,7 +79,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Auto-implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
 - [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
 - [Query expressions](../linq/query-expression-basics.md)
-- [Lambda expressions](../lambda-expressions.md)
+- [Lambda expressions](../programming-guide/statements-expressions-operators/lambda-expressions.md)
 - [Expression trees](../expression-trees.md)
 - [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)
 - [Implicitly typed local variables](../language-reference/keywords/var.md)

@@ -1,7 +1,7 @@
 ---
 title: "! operator - C# Reference"
 ms.custom: seodec18
-ms.date: 07/20/2015
+ms.date: 02/14/2019
 f1_keywords: 
   - "!_CSharpKeyword"
 helpviewer_keywords: 
@@ -12,15 +12,17 @@ ms.assetid: f5ae133f-8f64-4560-b34f-cd9cd5eed4ad
 ---
 # ! operator (C# Reference)
 
-The logical negation operator (`!`) is a unary operator that negates its operand. It is defined for `bool` and returns `true` if and only if its operand is `false`.
+The logical negation operator `!` is a unary operator that computes logical negation of its [bool](../keywords/bool.md) operand. That is, it produces `true`, if the operand is `false`, and `false`, if the operand is `true`:
 
-## Remarks
+[!code-csharp-interactive[logical negation](~/samples/snippets/csharp/language-reference/operators/LogicalNegationExamples.cs#Example)]
 
-User-defined types can overload the `!` operator (see [operator](../keywords/operator.md)).
+## Operator overloadability
 
-## Example
+User-defined types can [overload](../keywords/operator.md) the `!` operator.
 
-[!code-csharp[csRefOperators#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#7)]
+## C# language specification
+
+For more information, see the [Logical negation operator](~/_csharplang/spec/expressions.md#logical-negation-operator) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 

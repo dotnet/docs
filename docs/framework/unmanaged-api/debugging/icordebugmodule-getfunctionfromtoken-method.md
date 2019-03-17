@@ -30,7 +30,7 @@ HRESULT GetFunctionFromToken(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `methodDef`  
  [in] A `mdMethodDef` metadata token that references the function's metadata.  
   

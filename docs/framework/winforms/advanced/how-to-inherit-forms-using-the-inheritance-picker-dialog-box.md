@@ -35,7 +35,7 @@ The easiest way to inherit a form or other object is to use the **Inheritance Pi
   
 6.  Select the component.  
   
-     In **Solution Explorer**, the component is added to your project. If it has a UI, controls that are part of the inherited form will be marked with a glyph (![VisualBasicInheritanceSymbol screenshot](../../../../docs/framework/winforms/advanced/media/vbinheritanceglyph.gif "vbInheritanceGlyph")), and, when selected, have a border indicating the level of security that the control has on the superclassed form. The behaviors that correspond to the different security levels are listed in the table below.  
+     In **Solution Explorer**, the component is added to your project. If it has a UI, controls that are part of the inherited form will be marked with a glyph (![VisualBasicInheritanceSymbol screenshot](./media/vbinheritanceglyph.gif "vbInheritanceGlyph")), and, when selected, have a border indicating the level of security that the control has on the superclassed form. The behaviors that correspond to the different security levels are listed in the table below.  
   
     |Security level of control|Available interaction through Designer and Code Editor with Inherited Form|  
     |-------------------------------|--------------------------------------------------------------------------------|  
@@ -45,13 +45,13 @@ The easiest way to inherit a form or other object is to use the **Inheritance Pi
     |Internal (Friend in Visual Basic)|Standard border with no sizing handles, shown on the form, properties visible in **Properties** window. However, all aspects of the control will be considered read-only. You cannot move or size the control, or change its properties. If the control is a container of other controls, like a group box, new controls cannot be added and existing controls cannot be removed, even if those controls were public. The control can only be accessed by other members of the assembly that contains it.|  
     |Private|Standard border with no sizing handles, shown on the form, properties visible in **Properties** window. However, all aspects of the control will be considered read-only. You cannot move or size the control, or change its properties. If the control is a container of other controls, like a group box, new controls cannot be added and existing controls cannot be removed, even if those controls were public. The control can only be accessed by the class that declares it.|  
   
-     For information about how to alter a base form's appearance, see [Effects of Modifying a Base Form's Appearance](../../../../docs/framework/winforms/advanced/effects-of-modifying-base-form-appearance.md).  
+     For information about how to alter a base form's appearance, see [Effects of Modifying a Base Form's Appearance](effects-of-modifying-base-form-appearance.md).  
   
     > [!NOTE]
-    >  When you combine inherited controls and components with standard controls and components on Windows Forms, you might encounter conflicts with the z-ordering. You can correct this by modifying the z-order, which is done by clicking in the **Format** menu, pointing to **Order**, and then clicking **Bring To Front** or **Send To Back**. For more information about the z-order of controls, see [How to: Layer Objects on Windows Forms](../../../../docs/framework/winforms/controls/how-to-layer-objects-on-windows-forms.md).  
+    >  When you combine inherited controls and components with standard controls and components on Windows Forms, you might encounter conflicts with the z-ordering. You can correct this by modifying the z-order, which is done by clicking in the **Format** menu, pointing to **Order**, and then clicking **Bring To Front** or **Send To Back**. For more information about the z-order of controls, see [How to: Layer Objects on Windows Forms](../controls/how-to-layer-objects-on-windows-forms.md).  
   
-## See Also  
- [Inherits Statement](~/docs/visual-basic/language-reference/statements/inherits-statement.md)  
- [using](~/docs/csharp/language-reference/keywords/using.md)  
- [Effects of Modifying a Base Form's Appearance](../../../../docs/framework/winforms/advanced/effects-of-modifying-base-form-appearance.md)  
- [Windows Forms Visual Inheritance](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)
+## See also
+- [Inherits Statement](~/docs/visual-basic/language-reference/statements/inherits-statement.md)
+- [using](~/docs/csharp/language-reference/keywords/using.md)
+- [Effects of Modifying a Base Form's Appearance](effects-of-modifying-base-form-appearance.md)
+- [Windows Forms Visual Inheritance](windows-forms-visual-inheritance.md)

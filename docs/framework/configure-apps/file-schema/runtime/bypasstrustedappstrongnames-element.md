@@ -1,5 +1,5 @@
 ---
-title: "&lt;bypassTrustedAppStrongNames&gt; Element"
+title: "<bypassTrustedAppStrongNames> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "strong-name bypass feature"
@@ -10,7 +10,7 @@ ms.assetid: 71b2ebf6-3843-41e2-ad52-ffa5cd083a40
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;bypassTrustedAppStrongNames&gt; Element
+# \<bypassTrustedAppStrongNames> Element
 Specifies whether to bypass the validation of strong names on full-trust assemblies that are loaded into a full-trust <xref:System.AppDomain>.  
   
  \<configuration>  
@@ -77,7 +77,7 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [How to: Disable the Strong-Name Bypass Feature](../../../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md)

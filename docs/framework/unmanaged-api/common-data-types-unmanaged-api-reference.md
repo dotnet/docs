@@ -13,16 +13,19 @@ This topic lists simple data types used by the unmanaged APIs for the .NET Frame
 |AppDomainID|`typedef UINT_PTR AppDomainID;`|corprof.h|The identifier of an application domain.|  
 |AssemblyID|`typedef UINT_PTR AssemblyID;`|corprof.h|The identifier of an assembly.|  
 |ClassID|`typedef UINT_PTR ClassID;`|corprof.h|The identifier of a managed class.|  
+|CLRDATA_ADDRESS|`typedef ULONG64 CLRDATA_ADDRESS;`|clrdata.h|A 64-bit memory address.|
+|CLRDATA_ENUM|`typedef ULONG64 CLRDATA_ADDRESS;`|Not Available|A 64-bit memory address.|
 |CONNID|`typedef DWORD CONNID;`|cordebug.h, mscoree.h|The connection identifier for a thread that is connected to an instance of Microsoft SQL Server.|  
 |ContextID|`typedef UINT_PTR ContextID;`|corprof.h|The identifier of the context associated with a particular managed thread.|  
 |COR_PRF_ELT_INFO|`typedef UINT_PTR COR_PRF_ELT_INFO;`|corprof.h|An opaque handle that represents information about a particular stack frame.|  
 |COR_PRF_FRAME_INFO|`typedef UINT_PTR COR_PRF_FRAME_INFO;`|corprof.h|An opaque handle that points to a stack frame. It is valid only during the callback to which it is passed.|  
 |CORDB_ADDRESS|`typedef ULONG64 CORDB_ADDRESS;`|cordebug.h|An address in memory.|  
 |CORDB_CONTINUE_STATUS|`typedef DWORD CORDB_CONTINUE_STATUS;`|cordebug.h|The continuation status.|  
-|CORDB_REGISTER|`typedef ULONG64 CORDB_REGISTER;`|cordebug.h|The value of a CPU register.|  
+|CORDB_REGISTER|`typedef ULONG64 CORDB_REGISTER;`|cordebug.h|The value of a CPU register.|
 |FunctionID|`typedef UINT_PTR FunctionID;`|corprof.h|The identifier of a function or method.|  
 |GCHandleID|`typedef UINT_PTR GCHandleID;`|corprof.h|A garbage collection handle.|  
-|mdToken|`typedef UINT32 mdToken;`|corprof.h|A   metadata token (a row in a metadata table).|  
+|mdMethodDef|`typedef mdToken mdMethodDef;`|cordebug.h|A method definition token.|
+|mdToken|`typedef UINT32 mdToken;`|corprof.h|A metadata token (a row in a metadata table).|  
 |ModuleID|`typedef UINT_PTR ModuleID;`|corprof.h|The identifier of an assembly module.|  
 |ObjectID|`typedef UINT_PTR ObjectID;`|corprof.h|The identifier of an object.|  
 |ProcessID|`typedef UINT_PTR ProcessID;`|corprof.h|The identifier of a managed process.|  
@@ -30,5 +33,5 @@ This topic lists simple data types used by the unmanaged APIs for the .NET Frame
 |TASKID|`typedef UINT64 TASKID;`|cordebug.h, mscoree.h|The identifier of an [ICLRTask](../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) instance.|  
 |ThreadID|`typedef UINT_PTR ThreadID;`|corprof.h|The identifier of a managed thread.|  
   
-## See Also  
+## See also
 - [Unmanaged API Reference](../../../docs/framework/unmanaged-api/index.md)

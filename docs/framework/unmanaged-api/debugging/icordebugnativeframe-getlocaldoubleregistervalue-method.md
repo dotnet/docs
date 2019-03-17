@@ -33,7 +33,7 @@ HRESULT GetLocalDoubleRegisterValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `highWordReg`  
  [in] A value of the "CorDebugRegister" enumeration that specifies the register containing the high word of the value.  
   
@@ -61,5 +61,5 @@ HRESULT GetLocalDoubleRegisterValue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

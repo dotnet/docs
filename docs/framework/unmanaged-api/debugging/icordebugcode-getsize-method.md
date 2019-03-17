@@ -29,7 +29,7 @@ HRESULT GetSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcBytes`  
  [out] A pointer to the size, in bytes, of the binary code that this `ICorDebugCode` object represents.  
   
@@ -42,5 +42,5 @@ HRESULT GetSize (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

@@ -1,9 +1,9 @@
 ---
-title: "&lt;udpTransportSettings&gt;"
+title: "<udpTransportSettings>"
 ms.date: "03/30/2017"
 ms.assetid: 842d92e9-6199-4ec5-b2d1-58533054e1f0
 ---
-# &lt;udpTransportSettings&gt;
+# \<udpTransportSettings>
 This configuration element exposes UDP transport settings for [\<udpDiscoveryEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpdiscoveryendpoint.md).  
   
 \<system.ServiceModel>  
@@ -58,5 +58,5 @@ This configuration element exposes UDP transport settings for [\<udpDiscoveryEnd
 |-------------|-----------------|  
 |[\<udpDiscoveryEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpdiscoveryendpoint.md)|A standard endpoint that has fixed discovery contract and UDP transport binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.UdpTransportSettings>
+## See also
+- <xref:System.ServiceModel.Discovery.UdpTransportSettings>

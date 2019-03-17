@@ -28,7 +28,7 @@ HRESULT GetDocumentsForMethodCount(
     [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the documents.  
   
@@ -38,5 +38,5 @@ HRESULT GetDocumentsForMethodCount(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+## See also
+- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)

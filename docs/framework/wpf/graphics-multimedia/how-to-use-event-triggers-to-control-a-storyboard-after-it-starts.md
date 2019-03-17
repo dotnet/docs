@@ -27,19 +27,19 @@ This example shows how to control a <xref:System.Windows.Media.Animation.Storybo
 ## Example  
  The following example uses controllable storyboard actions to interactively control a storyboard.  
   
- **Note:** To see an example of controlling a storyboard by using code, see [Control a Storyboard After It Starts Using Its Interactive Methods](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
+ **Note:** To see an example of controlling a storyboard by using code, see [Control a Storyboard After It Starts Using Its Interactive Methods](how-to-control-a-storyboard-after-it-starts.md).  
   
- [!code-xaml[timingbehaviors_snip#ControlStoryboardExampleUsingWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/ControlStoryboardExample.xaml#controlstoryboardexampleusingwholepage)]  
+ [!code-xaml[timingbehaviors_snip#ControlStoryboardExampleUsingWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/ControlStoryboardExample.xaml#controlstoryboardexampleusingwholepage)]  
   
  For additional examples, see the [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).  
   
-## See Also  
- <xref:System.Windows.Media.Animation.ResumeStoryboard>  
- <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>  
- <xref:System.Windows.Media.Animation.SkipStoryboardToFill>  
- <xref:System.Windows.Media.Animation.PauseStoryboard>  
- <xref:System.Windows.Media.Animation.StopStoryboard>  
- <xref:System.Windows.Media.Animation.SeekStoryboard>  
- [Control a Storyboard After It Starts Using Its Interactive Methods](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
+## See also
+- <xref:System.Windows.Media.Animation.ResumeStoryboard>
+- <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>
+- <xref:System.Windows.Media.Animation.SkipStoryboardToFill>
+- <xref:System.Windows.Media.Animation.PauseStoryboard>
+- <xref:System.Windows.Media.Animation.StopStoryboard>
+- <xref:System.Windows.Media.Animation.SeekStoryboard>
+- [Control a Storyboard After It Starts Using Its Interactive Methods](how-to-control-a-storyboard-after-it-starts.md)
+- [Animation Overview](animation-overview.md)
+- [Storyboards Overview](storyboards-overview.md)

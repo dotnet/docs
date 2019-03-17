@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;scopedCertificates&gt; Element"
+title: "<add> of <scopedCertificates> Element"
 ms.date: "03/30/2017"
 ms.assetid: e21c1ef8-d6d6-4bca-ac5a-6fbf4bd77412
 ---
-# &lt;add&gt; of &lt;scopedCertificates&gt; Element
+# \<add> of \<scopedCertificates> Element
 Adds an X.509 certificate to the collection of scoped certificates.  
   
  \<system.ServiceModel>  
@@ -101,13 +101,13 @@ endpointBehaviors section
 </behaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.ScopedCertificates%2A>  
- <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection>  
- <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElement>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A>  
- [How to: Create a Federated Client](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## See also
+- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.ScopedCertificates%2A>
+- <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection>
+- <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElement>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A>
+- [How to: Create a Federated Client](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
+- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "schema startup settings"
   - "configuration schema [.NET Framework], startup settings"
 ms.assetid: 03de6972-442a-4648-9f3e-efa654e3b949
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Startup settings schema
 
@@ -21,5 +19,5 @@ Startup settings specify the version of the common language runtime that should 
   
 ## See also
 
-- [Configuration File Schema](../index.md)  
+- [Configuration File Schema](../index.md)
 - [How to: Configure an app to support .NET Framework 4 or later versions](../../../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)

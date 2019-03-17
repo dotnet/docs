@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "UI Automation, invoking controls"
   - "controls, invoking"
 ms.assetid: 5ee2de3f-256c-43ec-b64c-62ace91f9983
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Invoke a Control Using UI Automation
 > [!NOTE]
@@ -34,5 +32,5 @@ ms.author: "mhopkins"
 [!code-csharp[InvokePatternApp#1102](../../../samples/snippets/csharp/VS_Snippets_Wpf/InvokePatternApp/CSharp/InvokePatternApp.cs#1102)]
 [!code-vb[InvokePatternApp#1102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InvokePatternApp/VisualBasic/Client.vb#1102)]  
   
-## See Also  
- [InvokePattern and ExpandCollapsePattern Menu Item Sample](https://msdn.microsoft.com/library/b7fa141c-e2d1-4da2-a27f-81a7d1172210)
+## See also
+- [InvokePattern, ExpandCollapsePattern, and TogglePattern Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InvokePattern)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Thumb control type"
   - "Thumb control type"
 ms.assetid: 13636338-e320-4355-b071-ede20a3fb1de
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Thumb Control Type
 > [!NOTE]
@@ -66,7 +64,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Thumb>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Thumb>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

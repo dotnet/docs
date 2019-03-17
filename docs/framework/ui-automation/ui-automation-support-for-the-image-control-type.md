@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "control types, Image"
   - "Image control type"
 ms.assetid: 4e0eeefb-e09b-46d2-b83b-0a7e35543ab8
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Image Control Type
 > [!NOTE]
@@ -74,7 +72,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Image>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Image>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

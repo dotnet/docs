@@ -63,11 +63,11 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] enables you 
 |Version 3|-   You can download and install a pre-release version that supports OData version 3 from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=203885).|
 
 ### Metadata Versions
- By default, WCF Data Services uses version 1.1 of CSDL to represent a data model. This is always the case for data models that are based on either a reflection provider or a custom data service provider. However, when the data model is defined by using the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)], the version of CSDL returned is the same as the version that is used by the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]. The version of the CSDL is determined by the namespace of the [Schema element](https://msdn.microsoft.com/library/396074d8-f99c-4f50-a073-68bce848224f). For more information, see the specification [\[MC-CSDL\]: Conceptual Schema Definition File Format](https://go.microsoft.com/fwlink/?LinkId=159072).
+ By default, WCF Data Services uses version 1.1 of CSDL to represent a data model. This is always the case for data models that are based on either a reflection provider or a custom data service provider. However, when the data model is defined by using the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)], the version of CSDL returned is the same as the version that is used by the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]. The version of the CSDL is determined by the namespace of the [Schema element (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#schema-element-csdl).
 
  The `DataServices` element of the returned metadata also contains a `DataServiceVersion` attribute, which is the same value as the `DataServiceVersion` header in the response message. Client applications, such as the **Add Service Reference** dialog box in Visual Studio, use this information to generate client data service classes that work correctly with the version of WCF Data Services that host the data service. For more information, see [OData: Protocol Versioning](https://go.microsoft.com/fwlink/?LinkId=186071).
 
-## See Also
+## See also
 
 - [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
 - [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)

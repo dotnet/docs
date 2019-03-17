@@ -14,7 +14,7 @@ See [DefineCatchHandlerILOffset Method](../../../../docs/framework/unmanaged-api
 HRESULT GetCatchHandlerILOffset(    [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
@@ -26,5 +26,5 @@ HRESULT GetCatchHandlerILOffset(    [out, retval] ULONG32* pRetVal);
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)
+## See also
+- [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)

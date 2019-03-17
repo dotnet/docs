@@ -28,7 +28,7 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
     [out] ICorDebugGCReferenceEnum **ppEnum);  
 ```  
   
-#### Parameters  
+## Parameters  
  `types`  
  [in] A bitwise combination of [CorGCReferenceType](../../../../docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md) values that specifies the type of handles to include in the collection.  
   
@@ -55,6 +55,6 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

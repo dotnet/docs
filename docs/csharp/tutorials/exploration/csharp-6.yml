@@ -64,7 +64,7 @@ items:
 - title: Importing a single class
   durationInMinutes: 2
   content: |
-    If you repeatedly use a class' static methods throughout your code, including the class name each time obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even though only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:
+    If you repeatedly use one class' static methods throughout your code, including the class name each time obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even though only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:
 
     [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-finished/Program.cs#UsingStatic)]  
     
@@ -121,7 +121,7 @@ items:
    Console.WriteLine(s?.Length);
    ``` 
 
-   After this change, there's no output. That's because the result of `s?.Length` is a `int?` when the result of `s.Length` is an `int`. In this example, `s?.Length` is `null`. The `?.` returns `null` if its left operand is `null`. If the type of the right operand is a value type, the `?.` operator returns a nullable type for that type. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
+   After this change, there's no output. That's because the result of `s?.Length` is an `int?` when the result of `s.Length` is an `int`. In this example, `s?.Length` is `null`. The `?.` returns `null` if its left operand is `null`. If the type of the right operand is a value type, the `?.` operator returns a nullable type for that type. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
 
     ```csharp
     char? c = s?[0];
@@ -145,10 +145,10 @@ items:
 
     The **null conditional operator** helps you write code that makes your core logic clear while seamlessly testing for `null` values.
 
-- title: Exception filers
+- title: Exception filters
   durationInMinutes: 2
   content: |
-    Exception filters enable you to catch an exception based on some condition. A typical use is to create a filter method that logs exceptions, but never handles those exceptions. An exception filter is a boolean expression that is `true` when the `catch` clause should be executed, and `false` when the exception should not be caught by the `catch` clause. Try the following code in the interactive window: It logs the exception type and message to the console. It returns false which indicates that the exception can't be handled. Try the program in the interactive window.
+    Exception filters enable you to catch an exception based on some condition. A typical use is to create a filter method that logs exceptions, but never handles those exceptions. An exception filter is a boolean expression that is `true` when the `catch` clause should be executed, and `false` when the exception should not be caught by the `catch` clause. Try the following code in the interactive window: It logs the exception type and message to the console. It returns `false` which indicates that the exception can't be handled. Try the program in the interactive window.
 
     ```csharp
     using System;
@@ -177,14 +177,14 @@ items:
     }
     ```
 
-    You should sen the message from the `LogException` method, followed by the default exception message. Just to experiment, change the `return false` statement to `return true` and run this again. Now, the exception is caught and the program runs to completion.
+    You should see the message from the `LogException` method, followed by the default exception message. Just to experiment, change the `return false` statement to `return true` and run this again. Now, the exception is caught and the program runs to completion.
 
     Beyond logging scenarios, exception filters can be most useful when a property of the exception determines what action to take. For example, you can look inside an <xref:System.AggregateException> to see what the contained exceptions are and take some appropriate action depending on the specific exception.
 
 - title: Using nameof
   durationInMinutes: 2
   content: |
-    The `nameof` operator returns the name of any variable or type. Try the following code in the interactive window to see how it works:
+    The `nameof` operator returns the name of any variable, a type, or a type's member. Try the following code in the interactive window to see how it works:
 
     ```csharp
     using System;
@@ -224,7 +224,7 @@ items:
 
     In the `Main` method, you initialize a path by providing coordinates for the points. Those points are added to the collection through the `Add` method.
 
-    The Add method can also be an extension method. You could update the preceding sample as follows. This sample won't compile in the interactive experience because of sandbox limitations. You can try it on your own machine.
+    The `Add` method can also be an extension method. You could update the preceding sample as follows. This sample won't compile in the interactive experience because of sandbox limitations. You can try it on your own machine.
 
     ```csharp
     public class Path : IEnumerable<Point3D>

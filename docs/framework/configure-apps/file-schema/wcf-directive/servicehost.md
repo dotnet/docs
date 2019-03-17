@@ -60,5 +60,5 @@ Factory="WebScriptServiceHostFactory"
 %>  
 ```  
   
-## See Also  
- [Custom Service Host](../../../../../docs/framework/wcf/samples/custom-service-host.md)
+## See also
+- [Custom Service Host](../../../../../docs/framework/wcf/samples/custom-service-host.md)

@@ -31,16 +31,16 @@ If you want to create a completely custom control to use on a Windows Form, you 
   
 6.  Modify the code to incorporate any custom painting you want for your control.  
   
-     For information about writing code to render graphics for controls, see [Custom Control Painting and Rendering](../../../../docs/framework/winforms/controls/custom-control-painting-and-rendering.md).  
+     For information about writing code to render graphics for controls, see [Custom Control Painting and Rendering](custom-control-painting-and-rendering.md).  
   
 7.  Implement any custom methods, properties, or events that your control will incorporate.  
   
 8.  Save and test your control.  
   
-## See Also  
- [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)  
- [How to: Inherit from the UserControl Class](../../../../docs/framework/winforms/controls/how-to-inherit-from-the-usercontrol-class.md)  
- [How to: Inherit from Existing Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-inherit-from-existing-windows-forms-controls.md)  
- [How to: Author Controls for Windows Forms](../../../../docs/framework/winforms/controls/how-to-author-controls-for-windows-forms.md)  
- [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)  
- [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)
+## See also
+- [Varieties of Custom Controls](varieties-of-custom-controls.md)
+- [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)
+- [How to: Inherit from Existing Windows Forms Controls](how-to-inherit-from-existing-windows-forms-controls.md)
+- [How to: Author Controls for Windows Forms](how-to-author-controls-for-windows-forms.md)
+- [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)
+- [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)

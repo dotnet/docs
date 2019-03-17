@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "UI automation, finding text"
   - "highlighting text"
 ms.assetid: b77693f5-87bb-4b29-a297-05ff882e2044
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Find and Highlight Text Using UI Automation
 > [!NOTE]
@@ -31,5 +29,5 @@ ms.author: "mhopkins"
 [!code-csharp[FindText#SearchTarget](../../../samples/snippets/csharp/VS_Snippets_Wpf/FindText/CSharp/SearchWindow.cs#searchtarget)]
 [!code-vb[FindText#SearchTarget](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FindText/VisualBasic/SearchWindow.vb#searchtarget)]  
   
-## See Also  
- [Find and Highlight Text Using UI Automation](../../../docs/framework/ui-automation/find-and-highlight-text-using-ui-automation.md)
+## See also
+- [Find and Highlight Text Using UI Automation](../../../docs/framework/ui-automation/find-and-highlight-text-using-ui-automation.md)

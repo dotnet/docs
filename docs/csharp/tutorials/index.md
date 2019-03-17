@@ -7,7 +7,7 @@ ms.date: 10/25/2018
 
 Welcome to the C# tutorials. These start with interactive lessons that you can run in your browser. Later tutorials, and more advanced tutorials help you work with the .NET development tools to create C# programs on your machine.
 
-## Introduction to C# interactive tutorials #
+## Introduction to C# interactive tutorials
 
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,
@@ -60,9 +60,13 @@ with the next lesson online or on your own machine. There are links
 to help you setup your environment and continue with the next tutorial
 on your machine.
 
-## Explore new features in C# #
+## Explore new features in C\#
 
-Try new features in [C# 6](../whats-new/csharp-6.md) in this [interactive exploration](exploration/csharp-6.yml).
+* [Try new features in C# 6 interactively](exploration/csharp-6.yml): Explore the features added in [C# 6](../whats-new/csharp-6.md) interactively in your browser.
+* [String Interpolation](string-interpolation.md): demonstrates how to use string interpolation to create formatted strings in C#.
+* [Nullable reference types](nullable-reference-types.md): demonstrates how to use nullable reference types to express your intent for null references.
+* [Update a project to make use of Nullable reference types](upgrade-to-nullable-references.md): demonstrates techniques to upgrade an existing project to make use of nullable reference types.
+* [Extend data capabilities using pattern matching](pattern-matching.md): demonstrates how to use pattern matching to extend types beyond their core features.
 
 ## General Tutorials
 
@@ -72,6 +76,4 @@ The following tutorials enable you to build C# programs using [.NET Core](../../
 * [REST Client](console-webapiclient.md): demonstrates web communications, JSON serialization, and object-oriented features in the C# language.
 * [Inheritance in C# and .NET](inheritance.md): demonstrates inheritance in C#, including the use of inheritance to define base classes, abstract base classes, and derived classes.
 * [Working with LINQ](working-with-linq.md): demonstrates many of the features of LINQ and the language elements that support it.
-* [String Interpolation](string-interpolation.md): demonstrates how to use string interpolation to create formatted strings in C#.
 * [Using Attributes](attributes.md): demonstrates how to create and use attributes in C#.
-* [Nullable reference types](nullable-reference-types.md): demonstrates how to use nullable reference types to express your intent for null references.

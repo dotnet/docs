@@ -12,7 +12,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
 <a name="overview"></a>   
 ## Technology Overview  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications that render text to a display device use [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] features to provide an enhanced reading experience. [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] is a software technology developed by [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] works by accessing the individual vertical color stripe elements in every pixel of an LCD screen. For more information on [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)], see [ClearType Overview](../../../../docs/framework/wpf/advanced/cleartype-overview.md).  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications that render text to a display device use [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] features to provide an enhanced reading experience. [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] is a software technology developed by [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] works by accessing the individual vertical color stripe elements in every pixel of an LCD screen. For more information on [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)], see [ClearType Overview](cleartype-overview.md).  
   
  Text that is rendered with [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] can appear significantly different when viewed on various display devices. For example, a small number of monitors implement the color stripe elements in blue, green, red order rather than the more common red, green, blue (    [!INCLUDE[TLA#tla_rgb](../../../../includes/tlasharptla-rgb-md.md)]) order.  
   
@@ -51,7 +51,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  For each display device name for a user, a `ClearTypeLevel` DWORD value is defined. The following screenshot shows the Registry Editor setting for the [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] level.  
   
- ![ClearType settings in the Registry Editor](../../../../docs/framework/wpf/advanced/media/cleartyperegistry01.png "ClearTypeRegistry01")  
+ ![ClearType settings in the Registry Editor](./media/cleartyperegistry01.png "ClearTypeRegistry01")  
   
 > [!NOTE]
 >  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications render text in one of either two modes, with and without [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)]. When text is rendered without [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)], it is referred to as gray scale rendering.  
@@ -69,7 +69,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  For each display device name for a user, a `GammaLevel` DWORD value is defined. The following screenshot shows the Registry Editor setting for the gamma level.  
   
- ![ClearType settings in the Registry Editor](../../../../docs/framework/wpf/advanced/media/cleartyperegistry02.png "ClearTypeRegistry02")  
+ ![ClearType settings in the Registry Editor](./media/cleartyperegistry02.png "ClearTypeRegistry02")  
   
 <a name="pixel_structure"></a>   
 ## Pixel Structure  
@@ -93,7 +93,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  For each display device name for a user, a `PixelStructure` DWORD value is defined. The following screenshot shows the Registry Editor setting for the pixel structure.  
   
- ![ClearType settings in the Registry Editor](../../../../docs/framework/wpf/advanced/media/cleartyperegistry02.png "ClearTypeRegistry02")  
+ ![ClearType settings in the Registry Editor](./media/cleartyperegistry02.png "ClearTypeRegistry02")  
   
 <a name="text_contrast_level"></a>   
 ## Text Contrast Level  
@@ -106,8 +106,8 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  For each display device name for a user, a `TextContrastLevel` DWORD value is defined. The following screenshot shows the Registry Editor setting for the text contrast level.  
   
- ![ClearType settings in the Registry Editor](../../../../docs/framework/wpf/advanced/media/cleartyperegistry01.png "ClearTypeRegistry01")  
+ ![ClearType settings in the Registry Editor](./media/cleartyperegistry01.png "ClearTypeRegistry01")  
   
-## See Also  
- [ClearType Overview](../../../../docs/framework/wpf/advanced/cleartype-overview.md)  
- [ClearType Antialiasing](/windows/desktop/gdi/cleartype-antialiasing)
+## See also
+- [ClearType Overview](cleartype-overview.md)
+- [ClearType Antialiasing](/windows/desktop/gdi/cleartype-antialiasing)

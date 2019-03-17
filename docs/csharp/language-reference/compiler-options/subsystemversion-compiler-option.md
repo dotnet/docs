@@ -15,7 +15,7 @@ Specifies the minimum version of the subsystem on which the generated executable
 -subsystemversion:major.minor  
 ```  
   
-#### Parameters  
+## Parameters  
  `major.minor`  
  The minimum required version of the subsystem, as expressed in a dot notation for major and minor versions. For example, you can specify that an application can't run on an operating system that's older than Windows 7 if you set the value of this option to 6.01, as the table later in this topic describes. You must specify the values for `major` and `minor` as integers.  
   
@@ -52,6 +52,6 @@ Specifies the minimum version of the subsystem on which the generated executable
 ## Setting this option  
  To set the **-subsystemversion** compiler option in Visual Studio, you must open the .csproj file and specify a value for the `SubsystemVersion` property in the MSBuild XML. You can't set this option in the Visual Studio IDE. For more information, see "Default values" earlier in this topic or [Common MSBuild Project Properties](/visualstudio/msbuild/common-msbuild-project-properties).  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

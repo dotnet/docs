@@ -27,7 +27,7 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
  The major components of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] are illustrated in the figure below. The red sections of the diagram (PresentationFramework, PresentationCore, and milcore) are the major code portions of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]. Of these, only one is an unmanaged component – milcore. Milcore is written in unmanaged code in order to enable tight integration with [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)]. All display in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] is done through the [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] engine, allowing for efficient hardware and software rendering. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] also required fine control over memory and execution. The composition engine in milcore is extremely performance sensitive, and required giving up many advantages of the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] to gain performance.  
   
- ![The position of WPF within the .NET Framework.](../../../../docs/framework/wpf/advanced/media/wpf-architect1.PNG "wpf_architect1")  
+ ![The position of WPF within the .NET Framework.](./media/wpf-architect1.PNG "wpf_architect1")  
   
  Communication between the managed and unmanaged portions of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] is discussed later in this topic. The remainder of the managed programming model is described below.  
   
@@ -65,7 +65,7 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
  When programming [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], you create <xref:System.Windows.Media.Visual> elements, and derived types, which internally communicate to the composition tree through this messaging protocol. Each <xref:System.Windows.Media.Visual> in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] may create one, none, or several composition nodes.  
   
- ![The Windows Presentation Foundation Visual Tree.](../../../../docs/framework/wpf/advanced/media/wpf-architecture2.PNG "wpf_architecture2")  
+ ![The Windows Presentation Foundation Visual Tree.](./media/wpf-architecture2.PNG "wpf_architecture2")  
   
  There is a very important architectural detail to notice here – the entire tree of visuals and drawing instructions is cached. In graphics terms, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] uses a retained rendering system. This enables the system to repaint at high refresh rates without the composition system blocking on callbacks to user code. This helps prevent the appearance of an unresponsive application.  
   
@@ -135,14 +135,14 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
  When you begin developing [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] based applications, it should feel very familiar. You can set properties, use objects, and data bind in much the same way that you can using [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] or [!INCLUDE[TLA#tla_aspnet](../../../../includes/tlasharptla-aspnet-md.md)]. With a deeper investigation into the architecture of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], you'll find that the possibility exists for creating much richer applications that fundamentally treat data as the core driver of the application.  
   
-## See Also  
- <xref:System.Windows.Media.Visual>  
- <xref:System.Windows.UIElement>  
- <xref:System.Windows.Input.ICommand>  
- <xref:System.Windows.FrameworkElement>  
- <xref:System.Windows.Threading.DispatcherObject>  
- <xref:System.Windows.Input.CommandBinding>  
- <xref:System.Windows.Controls.Control>  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+## See also
+- <xref:System.Windows.Media.Visual>
+- <xref:System.Windows.UIElement>
+- <xref:System.Windows.Input.ICommand>
+- <xref:System.Windows.FrameworkElement>
+- <xref:System.Windows.Threading.DispatcherObject>
+- <xref:System.Windows.Input.CommandBinding>
+- <xref:System.Windows.Controls.Control>
+- [Data Binding Overview](../data/data-binding-overview.md)
+- [Layout](layout.md)
+- [Animation Overview](../graphics-multimedia/animation-overview.md)

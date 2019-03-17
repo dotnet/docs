@@ -35,16 +35,16 @@ Specifies that a function or `Get` accessor is an iterator.
 ## Example  
  The following example demonstrates an iterator function. The iterator function has a `Yield` statement that is inside a [For…Next](../../../visual-basic/language-reference/statements/for-next-statement.md) loop. Each iteration of the [For Each](../../../visual-basic/language-reference/statements/for-each-next-statement.md) statement body in `Main` creates a call to the `Power` iterator function. Each call to the iterator function proceeds to the next execution of the `Yield` statement, which occurs during the next iteration of the `For…Next` loop.  
   
- [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/iterator_1.vb)]  
+ [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
 ## Example  
  The following example demonstrates a `Get` accessor that is an iterator. The `Iterator` modifier is in the property declaration.  
   
- [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/iterator_2.vb)]  
+ [!code-vb[VbVbalrStatements#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  
   
  For additional examples, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
-## See Also  
- <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>  
- [Iterators](../../programming-guide/concepts/iterators.md)  
- [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)
+## See also
+- <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>
+- [Iterators](../../programming-guide/concepts/iterators.md)
+- [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)

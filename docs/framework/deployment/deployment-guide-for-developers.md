@@ -49,7 +49,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
 
 - Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], your users can view a list of running .NET Framework apps during setup and close them easily. This may help avoid system restarts caused by .NET Framework installations. See [Reducing System Restarts](../../../docs/framework/deployment/reducing-system-restarts.md).
 
-- Uninstalling the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases also removes pre-existing [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] files. If you want to go back to the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you must reinstall it and any updates to it. (See [Installing the .NET Framework 4](https://msdn.microsoft.com/library/5a4x27ek\(v=vs.100\).aspx).)
+- Uninstalling the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases also removes pre-existing [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] files. If you want to go back to the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you must reinstall it and any updates to it. (See [Installing the .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5a4x27ek(v=vs.100)).)
 
 - The .NET Framework 4.5 redistributable was updated on October 9, 2012 to correct an issue related to an improper timestamp on a digital certificate, which caused the digital signature on files produced and signed by Microsoft to expire prematurely. If you previously installed the .NET Framework 4.5 redistributable package dated August 16, 2012, we recommend that you update your copy with the latest redistributable from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=245484). For more information about this issue, see [Microsoft Security Advisory 2749655](https://docs.microsoft.com/security-updates/SecurityAdvisories/2012/2749655).
 
@@ -397,9 +397,9 @@ The following table lists .NET Framework language packs that are available for t
 |3082|Spanish - Spain (Modern Sort)|es|
 
 ## See also
-- [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)  
-- [System Requirements](../../../docs/framework/get-started/system-requirements.md)  
-- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)  
-- [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
-- [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)  
+- [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)
+- [System Requirements](../../../docs/framework/get-started/system-requirements.md)
+- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)
+- [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
+- [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)
 - [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)

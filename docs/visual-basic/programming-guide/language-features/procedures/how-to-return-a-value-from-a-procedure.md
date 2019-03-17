@@ -20,11 +20,11 @@ A `Function` procedure returns a value to the calling code either by executing a
   
      The following `Function` procedure calculates the longest side, or hypotenuse, of a right triangle, and returns it to the calling code.  
   
-     [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/how-to-return-a-value-from-a-procedure_1.vb)]  
+     [!code-vb[VbVbcnProcedures#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#1)]  
   
      The following example shows a typical call to `hypotenuse`, which stores the returned value.  
   
-     [!code-vb[VbVbcnProcedures#6](./codesnippet/VisualBasic/how-to-return-a-value-from-a-procedure_2.vb)]  
+     [!code-vb[VbVbcnProcedures#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#6)]  
   
 ### To return a value using Exit Function or End Function  
   
@@ -38,13 +38,13 @@ A `Function` procedure returns a value to the calling code either by executing a
   
      For more information and an example, see "Return Value" in [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md).  
   
-## See Also  
- [Procedures](./index.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  
- [Return Statement](../../../../visual-basic/language-reference/statements/return-statement.md)  
- [How to: Create a Procedure that Returns a Value](./how-to-create-a-procedure-that-returns-a-value.md)  
- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)
+## See also
+- [Procedures](./index.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)
+- [Return Statement](../../../../visual-basic/language-reference/statements/return-statement.md)
+- [How to: Create a Procedure that Returns a Value](./how-to-create-a-procedure-that-returns-a-value.md)
+- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)

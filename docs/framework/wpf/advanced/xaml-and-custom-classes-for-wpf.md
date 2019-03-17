@@ -20,7 +20,7 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
   
 -   The advantage of defining the custom classes in the application is that this technique is relatively lightweight and minimizes the deployment and testing issues encountered when you introduce separate assemblies beyond the main application executable.  
   
--   Whether defined in the same or different assembly, custom classes need to be mapped between CLR  namespace and XML  namespace in order to be used in XAML as elements. See [XAML Namespaces and Namespace Mapping for WPF XAML](../../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+-   Whether defined in the same or different assembly, custom classes need to be mapped between CLR  namespace and XML  namespace in order to be used in XAML as elements. See [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 <a name="Requirements_for_a_Custom_Class_as_a_XAML_Element"></a>   
 ## Requirements for a Custom Class as a XAML Element  
@@ -46,19 +46,19 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
 ### TypeConverter Enabled Attribute Syntax  
  If you provide a dedicated, attributed type converter at the class level, the applied type conversion enables attribute syntax for any property that needs to instantiate that type. A type converter does not enable object element usage of the type; only the presence of a default constructor for that type enables object element usage. Therefore, properties that are type-converter enabled are generally speaking not usable in property syntax, unless the type itself also supports object element syntax. The exception to this is that you can specify a property element syntax, but have the property element contain a string. That usage is really essentially equivalent to an attribute syntax usage, and such a usage is not common unless there is a need for more robust white-space handling of the attribute value. For example, the following is a property element usage that takes a string, and the attribute usage equivalent:  
   
- [!code-xaml[XamlOvwSupport#GoofyTCPE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe)]  
+ [!code-xaml[XamlOvwSupport#GoofyTCPE](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe)]  
   
- [!code-xaml[XamlOvwSupport#GoofyTCPE2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe2)]  
+ [!code-xaml[XamlOvwSupport#GoofyTCPE2](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe2)]  
   
  Examples of properties where attribute syntax is allowed but property element syntax that contains an object element is disallowed through XAML are various properties that take the <xref:System.Windows.Input.Cursor> type. The <xref:System.Windows.Input.Cursor> class has a dedicated type converter <xref:System.Windows.Input.CursorConverter>, but does not expose a default constructor, so the <xref:System.Windows.FrameworkElement.Cursor%2A> property can only be set through attribute syntax even though the actual <xref:System.Windows.Input.Cursor> type is a reference type.  
   
 ### Per-Property Type Converters  
  Alternatively, the property itself may declare a type converter at the property level. This enables a "mini language" that instantiates objects of the type of the property inline, by processing incoming string values of the attribute as input for a <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A> operation based on the appropriate type. Typically this is done to provide a convenience accessor, and not as the sole means to enable setting a property in XAML. However, it is also possible to use type converters for attributes where you want to use existing [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] types that do not supply either a default constructor or an attributed type converter. Examples from the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] API are certain properties that take the <xref:System.Globalization.CultureInfo> type. In this case, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] used the existing Microsoft .NET Framework <xref:System.Globalization.CultureInfo> type to better address compatibility and migration scenarios that were used in earlier versions of frameworks, but the <xref:System.Globalization.CultureInfo> type did not support the necessary constructors or type-level type conversion to be usable as a XAML property value directly.  
   
- Whenever you expose a property that has a XAML usage, particularly if you are a control author, you should strongly consider backing that property with a dependency property. This is particularly true if you use the existing [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] implementation of the XAML processor, because you can improve performance by using <xref:System.Windows.DependencyProperty> backing. A dependency property will expose property system features for your property that users will come to expect for a XAML accessible property. This includes features such as animation, data binding, and style support. For more information, see [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md) and [XAML Loading and Dependency Properties](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md).  
+ Whenever you expose a property that has a XAML usage, particularly if you are a control author, you should strongly consider backing that property with a dependency property. This is particularly true if you use the existing [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] implementation of the XAML processor, because you can improve performance by using <xref:System.Windows.DependencyProperty> backing. A dependency property will expose property system features for your property that users will come to expect for a XAML accessible property. This includes features such as animation, data binding, and style support. For more information, see [Custom Dependency Properties](custom-dependency-properties.md) and [XAML Loading and Dependency Properties](xaml-loading-and-dependency-properties.md).  
   
 ### Writing and Attributing a Type Converter  
- You occasionally will need to write a custom <xref:System.ComponentModel.TypeConverter> derived class to provide type conversion for your property type. For instructions on how to derive from and create a type converter that can support XAML usages, and how to apply the <xref:System.ComponentModel.TypeConverterAttribute>, see [TypeConverters and XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md).  
+ You occasionally will need to write a custom <xref:System.ComponentModel.TypeConverter> derived class to provide type conversion for your property type. For instructions on how to derive from and create a type converter that can support XAML usages, and how to apply the <xref:System.ComponentModel.TypeConverterAttribute>, see [TypeConverters and XAML](typeconverters-and-xaml.md).  
   
 <a name="Requirements_for_Events_of_a_Custom_Class_as_XAML"></a>   
 ## Requirements for XAML Event Handler Attribute Syntax on Events of a Custom Class  
@@ -73,7 +73,7 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
   
 -   The object that is the collection object does not need to be specified in object element syntax. The presence of that collection type is implicit whenever you specify a property in XAML that takes a collection type.  
   
--   Child elements of the collection property in markup are processed to become members of the collection. Ordinarily, the code access to the members of a collection is performed through list/dictionary methods such as `Add`, or through an indexer. But XAML syntax does not support methods or indexers (exception: XAML 2009 can support methods, but using XAML 2009 restricts the possible WPF usages; see [XAML 2009 Language Features](../../../../docs/framework/xaml-services/xaml-2009-language-features.md)). Collections are obviously a very common requirement for building a tree of elements, and you need some way to populate these collections in declarative XAML. Therefore, child elements of a collection property are processed by adding them to the collection that is the collection property type value.  
+-   Child elements of the collection property in markup are processed to become members of the collection. Ordinarily, the code access to the members of a collection is performed through list/dictionary methods such as `Add`, or through an indexer. But XAML syntax does not support methods or indexers (exception: XAML 2009 can support methods, but using XAML 2009 restricts the possible WPF usages; see [XAML 2009 Language Features](../../xaml-services/xaml-2009-language-features.md)). Collections are obviously a very common requirement for building a tree of elements, and you need some way to populate these collections in declarative XAML. Therefore, child elements of a collection property are processed by adding them to the collection that is the collection property type value.  
   
  The .NET Framework XAML Services implementation and thus the WPF XAML processor uses the following definition for what constitutes a collection property. The property type of the property must implement one of the following:  
   
@@ -81,7 +81,7 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
   
 -   Implements <xref:System.Collections.IDictionary> or the generic equivalent (<xref:System.Collections.Generic.IDictionary%602>).  
   
--   Derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../../../docs/framework/xaml-services/x-array-markup-extension.md).)  
+-   Derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../xaml-services/x-array-markup-extension.md).)  
   
 -   Implements <xref:System.Windows.Markup.IAddChild> (an interface defined by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]).  
   
@@ -90,7 +90,7 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
 > [!NOTE]
 >  The generic `List` and `Dictionary` interfaces (<xref:System.Collections.Generic.IList%601> and <xref:System.Collections.Generic.IDictionary%602>) are not supported for collection detection by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] XAML processor. However, you can use the <xref:System.Collections.Generic.List%601> class as a base class, because it implements <xref:System.Collections.IList> directly, or <xref:System.Collections.Generic.Dictionary%602> as a base class, because it implements <xref:System.Collections.IDictionary> directly.  
   
- When you declare a property that takes a collection, be cautious about how that property value is initialized in new instances of the type. If you are not implementing the property as a dependency property, then having the property use a backing field that calls the collection type constructor is adequate. If your property is a dependency property, then you may need to initialize the collection property as part of the default type constructor. This is because a dependency property takes its default value from metadata, and you typically do not want the initial value of a collection property to be a static, shared collection. There should be a collection instance per each containing type instance. For more information, see [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md).  
+ When you declare a property that takes a collection, be cautious about how that property value is initialized in new instances of the type. If you are not implementing the property as a dependency property, then having the property use a backing field that calls the collection type constructor is adequate. If your property is a dependency property, then you may need to initialize the collection property as part of the default type constructor. This is because a dependency property takes its default value from metadata, and you typically do not want the initial value of a collection property to be a static, shared collection. There should be a collection instance per each containing type instance. For more information, see [Custom Dependency Properties](custom-dependency-properties.md).  
   
  You can implement a custom collection type for your collection property. Because of implicit collection property treatment, the custom collection type does not need to provide a default constructor in order to be used in XAML implicitly. However, you can optionally provide a default constructor for the collection type. This can be a worthwhile practice. Unless you do provide a default constructor, you cannot explicitly declare the collection as an object element. Some markup authors might prefer to see the explicit collection as a matter of markup style. Also, a default constructor can simplify the initialization requirements when you create new objects that use your collection type as a property value.  
   
@@ -104,11 +104,11 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
   
 <a name="Serializing"></a>   
 ## Serializing XAML  
- For certain scenarios, such as if you are a control author, you may also want to assure that any object representation that can be instantiated in XAML can also be serialized back to equivalent XAML markup. Serialization requirements are not described in this topic. See [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md) and [Element Tree and Serialization](../../../../docs/framework/wpf/advanced/element-tree-and-serialization.md).  
+ For certain scenarios, such as if you are a control author, you may also want to assure that any object representation that can be instantiated in XAML can also be serialized back to equivalent XAML markup. Serialization requirements are not described in this topic. See [Control Authoring Overview](../controls/control-authoring-overview.md) and [Element Tree and Serialization](element-tree-and-serialization.md).  
   
-## See Also  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)  
- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)  
- [XAML Loading and Dependency Properties](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md)
+## See also
+- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [Custom Dependency Properties](custom-dependency-properties.md)
+- [Control Authoring Overview](../controls/control-authoring-overview.md)
+- [Base Elements Overview](base-elements-overview.md)
+- [XAML Loading and Dependency Properties](xaml-loading-and-dependency-properties.md)

@@ -1,9 +1,9 @@
 ---
-title: "&lt;baseAddressPrefixFilters&gt;"
+title: "<baseAddressPrefixFilters>"
 ms.date: "03/30/2017"
 ms.assetid: 8cab2a9a-c51f-4283-bb60-2ad0c274fd46
 ---
-# &lt;baseAddressPrefixFilters&gt;
+# \<baseAddressPrefixFilters>
 Represents a collection of configuration elements that specify pass through filters, which provide a mechanism to pick the appropriate Internet Information Services (IIS) bindings when hosting the Windows Communication Foundation (WCF) application in IIS.  
   
 > [!WARNING]
@@ -74,8 +74,8 @@ http://test2.fabrikam.com/Service.svc
 > [!NOTE]
 >  The filter does not support any wildcards. In addition, the baseAddresses supplied by IIS may have addresses bound to other schemes not present in the `baseAddressPrefixFilters` list. These addresses are not filtered out.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection>  
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
- <xref:System.ServiceModel.ServiceHostingEnvironment>  
- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+## See also
+- <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection>
+- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
+- <xref:System.ServiceModel.ServiceHostingEnvironment>
+- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

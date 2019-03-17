@@ -1,9 +1,9 @@
 ---
-title: "&lt;behaviorExtensions&gt;"
+title: "<behaviorExtensions>"
 ms.date: "03/30/2017"
 ms.assetid: 59f2791a-c78f-40d7-aa80-0d9cd10135d9
 ---
-# &lt;behaviorExtensions&gt;
+# \<behaviorExtensions>
 Behavior extensions enable the user to create user-defined behavior elements. These elements can be used alongside the standard Windows Communication Foundation (WCF) behavior elements. The `behaviorExtensions` section defines the element such that it can be used in configuration. Here is an example of a typical behavior extension.  
   
 ```xml  
@@ -45,6 +45,6 @@ Behavior extensions enable the user to create user-defined behavior elements. Th
   
  For more information, see [How the Runtime Locates Assemblies](https://go.microsoft.com/fwlink/?LinkId=95336) and <xref:System.AppDomain.TypeResolve>.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>  
- [Configuring and Extending the Runtime with Behaviors](../../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)
+## See also
+- <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>
+- [Configuring and Extending the Runtime with Behaviors](../../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;supportedRuntime&gt; Element"
+title: "<supportedRuntime> Element"
 ms.date: "04/10/2018"
 ms.custom: "updateeachrelease"
 f1_keywords: 
@@ -9,10 +9,8 @@ helpviewer_keywords:
   - "supportedRuntime element"
   - "<supportedRuntime> element"
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;supportedRuntime&gt; Element
+# \<supportedRuntime> Element
 
 Specifies which versions of the common language runtime the application supports. This element should be used by all applications built with version 1.1 or later of the .NET Framework.  
   
@@ -104,6 +102,6 @@ This element can be used in the application configuration file.
 
 ## See also
 
- [Startup Settings Schema](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [In-Process Side-by-Side Execution](../../../../../docs/framework/deployment/in-process-side-by-side-execution.md)  
+- [Startup Settings Schema](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [In-Process Side-by-Side Execution](../../../../../docs/framework/deployment/in-process-side-by-side-execution.md)

@@ -50,5 +50,5 @@ class PeerTransportBindingElement : TransportBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.PeerTransportBindingElement>
+## See also
+- <xref:System.ServiceModel.Channels.PeerTransportBindingElement>

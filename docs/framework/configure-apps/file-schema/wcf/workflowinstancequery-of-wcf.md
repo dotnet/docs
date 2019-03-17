@@ -1,9 +1,9 @@
 ---
-title: "&lt;workflowInstanceQuery&gt; of WCF"
+title: "<workflowInstanceQuery> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: 35c73f9d-474e-42eb-874d-ddc04b1987f3
 ---
-# &lt;workflowInstanceQuery&gt; of WCF
+# \<workflowInstanceQuery> of WCF
 
 Represents a query that tracks workflow instance life cycle changes such as a started or completed event.  
   

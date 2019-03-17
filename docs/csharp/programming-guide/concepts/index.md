@@ -10,7 +10,7 @@ This section explains programming concepts in the C# language.
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Assemblies and the Global Assembly Cache (C#)](../../../csharp/programming-guide/concepts/assemblies-gac/index.md)|Describes how to create and use assemblies.|  
+|[Assemblies in .NET](../../../standard/assembly/index.md)|Describes how to create and use assemblies.|  
 |[Asynchronous Programming with async and await (C#)](../../../csharp/programming-guide/concepts/async/index.md)|Describes how to write asynchronous solutions by using the [async](../../../csharp/language-reference/keywords/async.md) and [await](../../../csharp/language-reference/keywords/await.md) keywords in C#. Includes a walkthrough.|  
 |[Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/index.md)|Discusses how to provide additional information about programming elements such as types, fields, methods, and properties by using attributes.|  
 |[Caller Information (C#)](../../../csharp/programming-guide/concepts/caller-information.md)|Describes how to obtain information about the caller of a method. This information includes the file path and the line number of the source code and the member name of the caller.|  

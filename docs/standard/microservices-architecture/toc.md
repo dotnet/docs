@@ -13,7 +13,7 @@
 ## [Architecting Container and Microservice Based Applications](architect-microservice-container-applications/index.md)
 ### [Containerizing monolithic applications](architect-microservice-container-applications/containerize-monolithic-applications.md)
 ### [State and data in Docker applications](architect-microservice-container-applications/docker-application-state-data.md)
-### [Service-oriented architecture ](architect-microservice-container-applications/service-oriented-architecture.md)
+### [Service-oriented architecture](architect-microservice-container-applications/service-oriented-architecture.md)
 ### [Microservices architecture](architect-microservice-container-applications/microservices-architecture.md)
 ### [Data sovereignty per microservice](architect-microservice-container-applications/data-sovereignty-per-microservice.md)
 ### [Logical architecture versus physical architecture](architect-microservice-container-applications/logical-versus-physical-architecture.md)

@@ -34,7 +34,7 @@ When writing your code, you might at times create lengthy statements that necess
   
      In the following example, the statement is broken into four lines with line-continuation characters terminating all but the last line.  
   
-     [!code-vb[VbVbcnConventions#20](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_1.vb)]  
+     [!code-vb[VbVbcnConventions#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#20)]  
   
      Using this sequence makes your code easier to read, both online and when printed.  
   
@@ -50,8 +50,8 @@ When writing your code, you might at times create lengthy statements that necess
   
 -   Separate the statements with a colon (`:`), as in the following example.  
   
-     [!code-vb[VbVbcnConventions#10](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_2.vb)]  
+     [!code-vb[VbVbcnConventions#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#10)]  
   
-## See Also  
- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+## See also
+- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

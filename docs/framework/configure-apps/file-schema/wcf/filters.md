@@ -1,10 +1,10 @@
 ---
-title: "&lt;filters&gt;"
+title: "<filters>"
 ms.date: "03/30/2017"
 ms.assetid: 37a87222-ec78-4728-8105-9ca1bd961f0c
 ---
 
-# &lt;filters&gt;
+# \<filters>
 
 The `filters` element holds a collection of XPath filters used to control what kind of message is logged.
 
@@ -32,13 +32,13 @@ The following is an example of how to configure a filter that records only messa
   
 ## See also
 
- <xref:System.ServiceModel.Configuration.DiagnosticSection>
- <xref:System.ServiceModel.Diagnostics>
- <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>
- <xref:System.ServiceModel.Configuration.MessageLoggingElement>
- <xref:System.ServiceModel.Configuration.MessageLoggingElement.Filters%2A>
- <xref:System.ServiceModel.Configuration.XPathMessageFilterElementCollection>
- <xref:System.ServiceModel.Configuration.XPathMessageFilterElement>
- <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>
- [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)
- [\<messageLogging>](../../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)
+- <xref:System.ServiceModel.Configuration.DiagnosticSection>
+- <xref:System.ServiceModel.Diagnostics>
+- <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>
+- <xref:System.ServiceModel.Configuration.MessageLoggingElement>
+- <xref:System.ServiceModel.Configuration.MessageLoggingElement.Filters%2A>
+- <xref:System.ServiceModel.Configuration.XPathMessageFilterElementCollection>
+- <xref:System.ServiceModel.Configuration.XPathMessageFilterElement>
+- <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>
+- [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)
+- [\<messageLogging>](../../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)

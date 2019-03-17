@@ -19,7 +19,7 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
   
 3.  If Visual Studio 2012 is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).  
   
-4.  Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](https://msdn.microsoft.com/library/ee5499fc-1b10-4cda-a9b1-13dba70f05f8).  
+4.  Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752252(v=vs.90)).  
   
     > [!WARNING]
     >  If IIS is reinstalled, the following commands will need to be run again.
@@ -80,4 +80,4 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
 
 15. Some samples require certificates. See [Internet Information Services (IIS) Server Certificate Installation Instructions](../../../../docs/framework/wcf/samples/iis-server-certificate-installation-instructions.md).
 
-## See Also
+## See also

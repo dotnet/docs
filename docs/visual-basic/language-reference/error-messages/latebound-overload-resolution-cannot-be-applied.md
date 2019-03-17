@@ -1,5 +1,5 @@
 ---
-title: "Latebound overload resolution cannot be applied to &#39;&lt;procedurename&gt;&#39; because the accessing instance is an interface type"
+title: "Latebound overload resolution cannot be applied to '<procedurename>' because the accessing instance is an interface type"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30933"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "BC30933"
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
 ---
-# Latebound overload resolution cannot be applied to &#39;&lt;procedurename&gt;&#39; because the accessing instance is an interface type
+# Latebound overload resolution cannot be applied to '\<procedurename>' because the accessing instance is an interface type
 The compiler is attempting to resolve a reference to an overloaded property or procedure, but the reference fails because an argument is of type `Object` and the referring object has the data type of an interface. The `Object` argument forces the compiler to resolve the reference as late-bound.  
   
  In these circumstances, the compiler resolves the overload through the implementing class instead of through the underlying interface. If the class renames one of the overloaded versions, the compiler does not consider that version to be an overload because its name is different. This in turn causes the compiler to ignore the renamed version when it might have been the correct choice to resolve the reference.  
@@ -58,7 +58,7 @@ refer.s1(CType(o1, Double))
   
  Each of the preceding lines of code explicitly casts the `Object` variable `o1` to one of the parameter types defined for the overloads.  
   
-## See Also  
- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)  
- [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)  
- [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)
+## See also
+- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
+- [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)
+- [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)

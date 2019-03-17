@@ -44,12 +44,12 @@ End
 ## Example  
  The following example uses the `End` statement to terminate code execution if the user requests it.  
   
- [!code-vb[VbVersHelp60Controls#64](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/end-statement_1.vb)]  
+ [!code-vb[VbVersHelp60Controls#64](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVersHelp60Controls/VB/Form1.vb#64)]  
   
 ## Smart Device Developer Notes  
  This statement is not supported.  
   
-## See Also  
- <xref:System.Security.Permissions.SecurityPermissionFlag>  
- [Stop Statement](../../../visual-basic/language-reference/statements/stop-statement.md)  
- [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)
+## See also
+- <xref:System.Security.Permissions.SecurityPermissionFlag>
+- [Stop Statement](../../../visual-basic/language-reference/statements/stop-statement.md)
+- [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)

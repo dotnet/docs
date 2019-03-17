@@ -11,7 +11,7 @@ You can set up a button that you can use to cancel an async application if you d
 > [!NOTE]
 >  To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
-##  <a name="BKMK_CancelaTask"></a> Cancel a Task  
+## <a name="BKMK_CancelaTask"></a> Cancel a Task  
  The first example associates the **Cancel** button with a single download task. If you choose the button while the application is downloading content, the download is canceled.  
   
 ### Downloading the Example  
@@ -129,7 +129,7 @@ You can set up a button that you can use to cancel an async application if you d
     Download canceled.  
     ```  
   
-##  <a name="BKMK_CancelaListofTasks"></a> Cancel a List of Tasks  
+## <a name="BKMK_CancelaListofTasks"></a> Cancel a List of Tasks  
  You can extend the previous example to cancel many tasks by associating the same `CancellationTokenSource` instance with each task. If you choose the **Cancel** button, you cancel all tasks that aren’t yet complete.  
   
 ### Downloading the Example  
@@ -241,7 +241,7 @@ You can set up a button that you can use to cancel an async application if you d
     Downloads canceled.  
     ```  
   
-##  <a name="BKMK_CompleteExamples"></a> Complete Examples  
+## <a name="BKMK_CompleteExamples"></a> Complete Examples  
  The following sections contain the code for each of the previous examples. Notice that you must add a reference for <xref:System.Net.Http>.  
   
  You can download the projects from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
@@ -448,9 +448,9 @@ End Class
 ' Downloads canceled.  
 ```  
   
-## See Also  
- <xref:System.Threading.CancellationTokenSource>  
- <xref:System.Threading.CancellationToken>  
- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
- [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)  
- [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)
+## See also
+- <xref:System.Threading.CancellationTokenSource>
+- <xref:System.Threading.CancellationToken>
+- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
+- [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)
+- [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

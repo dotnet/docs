@@ -46,6 +46,6 @@ The *HttpCfg.exe* tool can be used to configure server certificates for the <xre
   
  In addition to these tools, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> classes provides methods for loading a certificate from the file system.  
   
-## See Also  
- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
+## See also
+- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
+- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)

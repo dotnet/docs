@@ -62,7 +62,7 @@ If you want your object to be deserialized in a custom manner as well, you must 
 
 Designer serialization is a special form of serialization that involves the kind of object persistence associated with development tools. Designer serialization is the process of converting an object graph into a source file that can later be used to recover the object graph. A source file can contain code, markup, or even SQL table information.
 
-##  <a name="BKMK_RelatedTopics"></a> Related Topics and Examples  
+## <a name="BKMK_RelatedTopics"></a> Related Topics and Examples  
 [Walkthrough: Persisting an Object in Visual Studio (C#)](walkthrough-persisting-an-object-in-visual-studio.md)  
 Demonstrates how serialization can be used to persist an object's data between instances, allowing you to store values and retrieve them the next time the object is instantiated.
 

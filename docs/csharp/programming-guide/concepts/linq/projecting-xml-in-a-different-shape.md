@@ -229,6 +229,6 @@ class Program
   
 -   [Finding Text in Word Documents (C#)](../../../../csharp/programming-guide/concepts/linq/finding-text-in-word-documents.md)  
   
-## See Also
+## See also
 
 - [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

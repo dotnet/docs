@@ -99,7 +99,7 @@ All of these rules together mean that the holder of an `inref` pointer may not m
 
 The purpose of `outref<'T>` is to indicate that the pointer should only be read from. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes. Semantically, `outref<'T>` is no different than `byref<'T>`.
 
-### Interop with C# #
+### Interop with C\#
 
 C# supports the `in ref` and `out ref` keywords, in addition to `ref` returns. The following table shows how F# interprets what C# emits:
 

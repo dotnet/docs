@@ -31,7 +31,7 @@ HRESULT GetNamespaces(
         ISymUnmanagedNamespace* namespaces[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cNameSpaces`  
  [in] A `ULONG32` that indicates the size of the `namespaces` array.  
   
@@ -47,5 +47,5 @@ HRESULT GetNamespaces(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)
+## See also
+- [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)

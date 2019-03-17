@@ -1,10 +1,10 @@
 ---
-title: "&lt;udpTransportSettings&gt; of &lt;udpAnnouncementEndpoint&gt;"
+title: "<udpTransportSettings> of <udpAnnouncementEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f
 ---
-# &lt;udpTransportSettings&gt; of &lt;udpAnnouncementEndpoint&gt;
-This configuration element exposes UDP transport settings for [\<udpAnnoucementEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md).  
+# \<udpTransportSettings> of \<udpAnnouncementEndpoint>
+This configuration element exposes UDP transport settings for [\<udpAnnouncementEndpoint>](udpannouncementendpoint.md).  
   
 \<system.ServiceModel>  
 \<standardEndpoints>  
@@ -56,7 +56,7 @@ This configuration element exposes UDP transport settings for [\<udpAnnoucementE
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<udpAnnoucementEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md)|A standard endpoint that has fixed announcement contract and UDP transport binding.|  
+|[\<udpAnnouncementEndpoint>](udpannouncementendpoint.md)|A standard endpoint that has fixed announcement contract and UDP transport binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.UdpTransportSettings>
+## See also
+- <xref:System.ServiceModel.Discovery.UdpTransportSettings>

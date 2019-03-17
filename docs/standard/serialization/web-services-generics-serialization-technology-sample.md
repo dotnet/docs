@@ -55,12 +55,12 @@ ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
 2.  Type `http://localhost/[virtual directory]/Service.asmx`, where `[virtual directory]` represents the virtual directory you created when you built the sample.  
   
 ## Remarks  
- The sample displays a default ASP.NET page that contains links to the definition of the Web Service. You can customize the display in addition to modifying the source code for the Web service. For more information, see [Building XML Web Service Clients](https://msdn.microsoft.com/library/c606f3cb-4111-45b4-ae42-9300420fa16c).  
+ The sample displays a default ASP.NET page that contains links to the definition of the Web Service. You can customize the display in addition to modifying the source code for the Web service. For more information, see [Building XML Web Service Clients](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w3h45ebk(v=vs.100)).  
   
 ## See also
 
-- <xref:System.Collections.Generic>  
-- <xref:System.Web.Services>  
-- <xref:System.Xml.Serialization>  
-- [Serialization](../../../docs/standard/serialization/index.md)  
-- [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)
+- <xref:System.Collections.Generic>
+- <xref:System.Web.Services>
+- <xref:System.Xml.Serialization>
+- [Serialization](../../../docs/standard/serialization/index.md)
+- [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))

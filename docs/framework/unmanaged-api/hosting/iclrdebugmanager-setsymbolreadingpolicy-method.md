@@ -30,7 +30,7 @@ HRESULT SetSymbolReadingPolicy (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `policy`  
  [in] A member of the [ESymbolReadingPolicy](../../../../docs/framework/unmanaged-api/hosting/esymbolreadingpolicy-enumeration.md) enumeration.  
   
@@ -51,5 +51,5 @@ HRESULT SetSymbolReadingPolicy (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
+## See also
+- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)

@@ -29,7 +29,7 @@ HRESULT GetToken(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pToken`  
  [out] A pointer to the `mdModule` token that references the module's metadata.  
   
@@ -45,5 +45,5 @@ HRESULT GetToken(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata](../../../../docs/framework/unmanaged-api/metadata/index.md)
+## See also
+- [Metadata](../../../../docs/framework/unmanaged-api/metadata/index.md)

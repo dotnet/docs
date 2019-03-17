@@ -21,9 +21,9 @@ Branching is performed using jump statements, which cause an immediate transfer 
   
 -   [throw](../../../csharp/language-reference/keywords/throw.md)  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
 - [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)

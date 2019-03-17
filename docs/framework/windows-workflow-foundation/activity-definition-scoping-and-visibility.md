@@ -16,7 +16,7 @@ Activity definition scoping and visibility, just like scoping and visibility of 
  In addition to data scoping, activity model visibility can restrict access to other aspects of the activity, such as validation, debugging, tracking, or tracing. Execution properties use visibility and scoping for constraining execution characteristics to a particular scope of definition. Secondary roots use visibility and scoping to constrain the state captured by a <xref:System.Activities.Statements.CompensableActivity> to the scope of definition in which the compensable activities are used.  
   
 ## Definition and usage  
- A workflow is written by authoring new activities by inheriting from base activity classes, and by using activities from the [Built-In Activity Library](../../../docs/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library.md). In order to use an activity, the activity author must configure the visibility of each component of its definition.  
+ A workflow is written by authoring new activities by inheriting from base activity classes, and by using activities from the [Built-In Activity Library](net-framework-4-5-built-in-activity-library.md). In order to use an activity, the activity author must configure the visibility of each component of its definition.  
   
 ### Activity Members  
  The activity model defines the arguments, variables, delegates, and child activities that the activity makes available to consumers. Each of these members can be declared as `public` or `private`. Public members are configured by the consumer of the activity, whereas `private` members use an implementation fixed by the author of the activity. The visibility rules for data scoping are as follows:  

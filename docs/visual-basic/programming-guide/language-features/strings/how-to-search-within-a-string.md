@@ -11,7 +11,7 @@ ms.assetid: ae4c79e0-08ea-489f-bdb2-5eb6d355f284
 This example calls the <xref:System.String.IndexOf%2A> method on a <xref:System.String> object to report the index of the first occurrence of a substring.  
   
 ## Example  
- [!code-vb[VbVbalrStrings#71](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-search-within-a-string_1.vb)]  
+ [!code-vb[VbVbalrStrings#71](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#71)]  
   
 ## Compiling the Code  
  This example requires:  
@@ -27,8 +27,8 @@ This example calls the <xref:System.String.IndexOf%2A> method on a <xref:System.
   
  For optimal error control, you might want to enclose the string search in the `Try` block of a [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md) construction.  
   
-## See Also  
- <xref:System.String.IndexOf%2A>  
- [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)  
- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)
+## See also
+- <xref:System.String.IndexOf%2A>
+- [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)

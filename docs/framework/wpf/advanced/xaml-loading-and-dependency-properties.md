@@ -16,7 +16,7 @@ The current [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winc
   
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you understand dependency properties both as consumer and author and have read [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md) and [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md). You should also have read [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md) and [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
+ This topic assumes that you understand dependency properties both as consumer and author and have read [Dependency Properties Overview](dependency-properties-overview.md) and [Custom Dependency Properties](custom-dependency-properties.md). You should also have read [XAML Overview (WPF)](xaml-overview-wpf.md) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).  
   
 <a name="implementation"></a>   
 ## The WPF XAML Loader Implementation, and Performance  
@@ -32,13 +32,13 @@ The current [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winc
   
  The following example is a recommended dependency property definition with wrappers, where the property identifier is stored as a `public` `static` `readonly` field, and the `get` and `set` definitions contain no code beyond the necessary property system methods that define the dependency property backing.  
   
- [!code-csharp[WPFAquariumSln#AGWithWrapper](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#agwithwrapper)]
- [!code-vb[WPFAquariumSln#AGWithWrapper](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agwithwrapper)]  
+ [!code-csharp[WPFAquariumSln#AGWithWrapper](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#agwithwrapper)]
+ [!code-vb[WPFAquariumSln#AGWithWrapper](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agwithwrapper)]  
   
-## See Also  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
- [Collection-Type Dependency Properties](../../../../docs/framework/wpf/advanced/collection-type-dependency-properties.md)  
- [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md)  
- [Safe Constructor Patterns for DependencyObjects](../../../../docs/framework/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md)
+## See also
+- [Dependency Properties Overview](dependency-properties-overview.md)
+- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [Dependency Property Metadata](dependency-property-metadata.md)
+- [Collection-Type Dependency Properties](collection-type-dependency-properties.md)
+- [Dependency Property Security](dependency-property-security.md)
+- [Safe Constructor Patterns for DependencyObjects](safe-constructor-patterns-for-dependencyobjects.md)

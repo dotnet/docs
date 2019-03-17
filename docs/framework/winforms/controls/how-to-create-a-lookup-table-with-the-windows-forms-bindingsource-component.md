@@ -29,7 +29,7 @@ A lookup table is a table of data that has a column that displays data from reco
   
  In this scenario, one table, CustomersTable, stores the actual information you want to display and save. But to save space, the table leaves out data that adds clarity. The other table, OrdersTable, contains only appearance-related information about which customer ID number is equivalent to which order date and order ID. There is no mention of the customers' names.  
   
- Four important properties are set on the [ComboBox Control](../../../../docs/framework/winforms/controls/combobox-control-windows-forms.md) control to create the lookup table.  
+ Four important properties are set on the [ComboBox Control](combobox-control-windows-forms.md) control to create the lookup table.  
   
 -   The <xref:System.Windows.Forms.ComboBox.DataSource%2A> property contains the name of the table.  
   
@@ -47,7 +47,7 @@ A lookup table is a table of data that has a column that displays data from reco
   
      This control will display the column from parent table.  
   
-2.  Drag other controls to display details from the child table. The format of the data in the table should determine which controls you choose. For more information, see [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md).  
+2.  Drag other controls to display details from the child table. The format of the data in the table should determine which controls you choose. For more information, see [Windows Forms Controls by Function](windows-forms-controls-by-function.md).  
   
 3.  Drag a <xref:System.Windows.Forms.BindingNavigator> control onto the form; this will allow you to navigate the data in the child table.  
   
@@ -85,8 +85,8 @@ A lookup table is a table of data that has a column that displays data from reco
   
 8.  Bind the controls other than the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.BindingNavigator> control to the details fields from the child table's <xref:System.Windows.Forms.BindingSource> (for example, `OrdersBindingSource`) that you want to display.  
   
-## See Also  
- <xref:System.Windows.Forms.BindingSource>  
- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)  
- [ComboBox Control](../../../../docs/framework/winforms/controls/combobox-control-windows-forms.md)  
- [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)
+## See also
+- <xref:System.Windows.Forms.BindingSource>
+- [BindingSource Component](bindingsource-component.md)
+- [ComboBox Control](combobox-control-windows-forms.md)
+- [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)

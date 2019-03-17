@@ -14,15 +14,15 @@ Allows PresentationHost.exe to discover the raw input devices (Human Interface D
 HRESULT GetRawInputDevices( [out] IEnumRAWINPUTDEVICE **ppEnum );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
   
- [out] A pointer to an [IEnumRAWINPUTDEVICE](../../../../docs/framework/wpf/app-development/ienumrawinputdevice.md) for enumerating the raw input devices.  
+ [out] A pointer to an [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) for enumerating the raw input devices.  
   
 ## Property Value/Return Value  
  HRESULT:  
   
- S_OK - [IEnumRAWINPUTDEVICE](../../../../docs/framework/wpf/app-development/ienumrawinputdevice.md) will only be used by PresentationHost.exe if S_OK is returned.  
+ S_OK - [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) will only be used by PresentationHost.exe if S_OK is returned.  
   
  E_NOTIMPL  
   
@@ -31,6 +31,6 @@ HRESULT GetRawInputDevices( [out] IEnumRAWINPUTDEVICE **ppEnum );
   
  Once the list of raw input devices has been retrieved, PresentationHost.exe registers with the devices to receive WM_INPUT notification messages.  
   
-## See Also  
- [GetRawInputDeviceList](/windows/desktop/api/winuser/nf-winuser-getrawinputdevicelist)  
- [FilterInputMessage](../../../../docs/framework/wpf/app-development/filterinputmessage.md)
+## See also
+- [GetRawInputDeviceList](/windows/desktop/api/winuser/nf-winuser-getrawinputdevicelist)
+- [FilterInputMessage](filterinputmessage.md)

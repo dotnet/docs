@@ -30,7 +30,7 @@ HRESULT GetDefaultStartupFlags(
      [in, out]  DWORD *pcchHostConfigFile);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwStartupFlags`  
  [out] A pointer to the host startup flags that are currently set.  
   
@@ -59,7 +59,7 @@ HRESULT GetDefaultStartupFlags(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

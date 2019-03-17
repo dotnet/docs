@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "elements, finding for list items"
   - "UI Automation, finding elements for List items"
 ms.assetid: c326ad2b-2144-4f64-ae4c-d850c74f95c5
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Find a UI Automation Element for a List Item
 > [!NOTE]
@@ -26,5 +24,5 @@ ms.author: "mhopkins"
  [!code-csharp[UIAClient_snip#184](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#184)]
  [!code-vb[UIAClient_snip#184](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#184)]  
   
-## See Also  
- [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)
+## See also
+- [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)

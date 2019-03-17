@@ -1,5 +1,5 @@
 ---
-title: "&lt;declaredTypes&gt;"
+title: "<declaredTypes>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "dataContractSerializer element"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<declaredTypes> element"
 ms.assetid: f35184e4-9d9e-4d37-8fb4-d5b58220eb3e
 ---
-# &lt;declaredTypes&gt;
+# \<declaredTypes>
 Contains the known types that the <xref:System.Runtime.Serialization.DataContractSerializer> uses when deserializing.  
   
  For more information about data contracts and known types, see [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
@@ -82,8 +82,8 @@ Contains the known types that the <xref:System.Runtime.Serialization.DataContrac
 </configuration>
 ```  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)  
- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  
- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)
+- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)

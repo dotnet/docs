@@ -30,7 +30,7 @@ HRESULT GetNestedClassProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tdNestedClass`  
  [in] A TypeDef token representing the <xref:System.Type> to return the parent class token for.  
   
@@ -46,6 +46,6 @@ HRESULT GetNestedClassProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

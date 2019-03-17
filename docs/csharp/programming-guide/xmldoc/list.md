@@ -1,5 +1,5 @@
 ---
-title: "&lt;list&gt; - C# Programming Guide"
+title: "<list> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "<list> C# XML tag"
 ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
 ---
-# &lt;list&gt; (C# Programming Guide)
+# \<list> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
@@ -30,7 +30,7 @@ ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
 </list>  
 ```  
   
-#### Parameters  
+## Parameters  
  `term`  
  A term to define, which will be defined in `description`.  
   
@@ -47,9 +47,9 @@ ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
  Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-csharp[csProgGuideDocComments#6](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/list_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#6)]  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

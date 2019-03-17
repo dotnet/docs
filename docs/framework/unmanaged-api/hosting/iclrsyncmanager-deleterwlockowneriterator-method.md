@@ -29,7 +29,7 @@ HRESULT DeleteRWLockOwnerIterator (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Iterator`  
  [in] The iterator that was created by using a call to `CreateRWLockOwnerIterator`.  
   
@@ -56,6 +56,6 @@ HRESULT DeleteRWLockOwnerIterator (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+## See also
+- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
+- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

@@ -18,7 +18,7 @@ Generates checksums for source files to aid with debugging [!INCLUDE[vstecasp](~
 #pragma checksum "filename" "{guid}" "checksum bytes"  
 ```  
   
-#### Parameters  
+## Parameters  
  `"filename"`  
  The name of the file that requires monitoring for changes or updates.  
   
@@ -49,8 +49,8 @@ class TestClass
 }  
 ```  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)

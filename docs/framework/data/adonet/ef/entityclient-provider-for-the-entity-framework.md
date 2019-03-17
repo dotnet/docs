@@ -18,13 +18,12 @@ The EntityClient provider is a data provider used by Entity Framework applicatio
   
  The following example creates an <xref:System.Data.EntityClient.EntityCommand> object and assigns an [!INCLUDE[esql](../../../../../includes/esql-md.md)] query text to its <xref:System.Data.EntityClient.EntityCommand.CommandText%2A?displayProperty=nameWithType> property. This [!INCLUDE[esql](../../../../../includes/esql-md.md)] query requests products ordered by the list price from the conceptual model. The following code has no knowledge of the storage model at all.  
   
- `EntityCommand cmd = conn.CreateCommand();`  
-  
- `cmd.CommandText = @"` `SELECT VALUE p`  
-  
- `FROM AdventureWorksEntities.Product AS p`  
-  
- `ORDER BY p.ListPrice ";`  
+ ```csharp
+EntityCommand cmd = conn.CreateCommand();
+cmd.CommandText = @"SELECT VALUE p
+  FROM AdventureWorksEntities.Product AS p
+  ORDER BY p.ListPrice";
+```
   
 ## Executing Queries  
  When a query is executed, it is parsed and converted into a canonical command tree. All subsequent processing is performed on the command tree. The command tree is the means of communication between the <xref:System.Data.EntityClient> and the underlying [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] data provider, such as <xref:System.Data.SqlClient>.  
@@ -34,7 +33,7 @@ The EntityClient provider is a data provider used by Entity Framework applicatio
 ## Managing Transactions  
  In the Entity Framework, there are two ways to use transactions: automatic and explicit. Automatic transactions use the <xref:System.Transactions> namespace, and explicit transactions use the <xref:System.Data.EntityClient.EntityTransaction> class.  
   
- To update data that is exposed through a conceptual model; see [How to: Manage Transactions in the Entity Framework](https://msdn.microsoft.com/library/4a55eb7f-f826-4a48-9df1-aebe2352ebef).  
+ To update data that is exposed through a conceptual model, see [How to: Manage Transactions in the Entity Framework](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738523(v=vs.100)).  
   
 ## In This Section  
  [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  
@@ -57,7 +56,7 @@ The EntityClient provider is a data provider used by Entity Framework applicatio
   
  [How to: Navigate Relationships with the Navigate Operator](../../../../../docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md)  
   
-## See Also  
- [Managing Connections and Transactions](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)  
- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)  
- [Language Reference](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)
+## See also
+- [Managing Connections and Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
+- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)
+- [Language Reference](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)

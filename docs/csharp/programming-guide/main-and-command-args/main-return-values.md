@@ -11,11 +11,11 @@ ms.assetid: c2f5a1d8-1676-4bea-bc7e-44a97e72d5bc
 
 The `Main` method can return `void`:
 
-[!code-csharp[csProgGuideMain#12](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/main-return-values_1.cs)]
+ [!code-csharp[csProgGuideMain#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#12)]
 
 It can also return an `int`:
 
-[!code-csharp[csProgGuideMain#13](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/main-return-values_2.cs)]
+ [!code-csharp[csProgGuideMain#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#13)]
 
 If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file. The return value from `Main` is treated as the exit code for the process. The following example shows how the return value from `Main` can be accessed.
 
@@ -25,7 +25,7 @@ This example uses [.NET Core](../../../core/index.md) command line tools. If you
 
 Modify the `Main` method in *program.cs* as follows:
 
-[!code-csharp[csProgGuideMain#14](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/main-return-values_3.cs)]
+ [!code-csharp[csProgGuideMain#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#14)]
 
 When a program is executed in Windows, any value returned from the `Main` function is stored in an environment variable. This environment variable can be retrieved using `ERRORLEVEL` from a batch file, or `$LastExitCode` from powershell.
 
@@ -88,7 +88,7 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 > [!NOTE]
 >If the examples used `async` modifier on the `Main` method, the compiler would generate the same code.
 
-## See Also
+## See also
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Reference](../index.md)
 - [Main() and Command-Line Arguments](index.md)

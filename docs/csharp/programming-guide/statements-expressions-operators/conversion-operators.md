@@ -13,7 +13,7 @@ ms.assetid: c5ad73a3-d57b-4d2b-b4c9-24e3c2856efc
 
 C# enables programmers to declare conversions on classes or structs so that classes or structs can be converted to and/or from other classes or structs, or basic types. Conversions are defined like operators and are named for the type to which they convert. Either the type of the argument to be converted, or the type of the result of the conversion, but not both, must be the containing type.  
   
- [!code-csharp[csProgGuideStatements#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/conversion-operators_1.cs)]  
+ [!code-csharp[csProgGuideStatements#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#10)]  
   
 ## Conversion operators overview
 
@@ -43,6 +43,6 @@ C# enables programmers to declare conversions on classes or structs so that clas
   
 ## See also
 
-- <xref:System.Convert>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- <xref:System.Convert>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)

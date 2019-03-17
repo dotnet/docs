@@ -38,8 +38,8 @@ Specifies the location of mscorlib.dll and Microsoft.VisualBasic.dll.
 vbc -netcf -sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE " myfile.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)  
- [-vbruntime](../../../visual-basic/reference/command-line-compiler/vbruntime.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)
+- [-vbruntime](../../../visual-basic/reference/command-line-compiler/vbruntime.md)

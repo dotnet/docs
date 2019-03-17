@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Button control type"
   - "Button control type"
 ms.assetid: 057c983a-da83-4c50-86c7-26fe381076a6
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Button Control Type
 > [!NOTE]
@@ -71,7 +69,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent>|Depends|If the control supports the Invoke control pattern, it must support this event.|  
 |<xref:System.Windows.Automation.TogglePatternIdentifiers.ToggleStateProperty> property-changed event.|Depends|If the control supports the Toggle control pattern, it must support this event.|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Button>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Button>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

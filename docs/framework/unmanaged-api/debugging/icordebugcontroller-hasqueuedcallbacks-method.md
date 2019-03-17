@@ -30,7 +30,7 @@ HRESULT HasQueuedCallbacks (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pThread`  
  [in] A pointer to an "ICorDebugThread" object that represents the thread.  
   
@@ -53,5 +53,5 @@ HRESULT HasQueuedCallbacks (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

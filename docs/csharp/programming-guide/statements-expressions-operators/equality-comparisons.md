@@ -12,7 +12,7 @@ It is sometimes necessary to compare two values for equality. In some cases, you
 ## Reference Equality  
  Reference equality means that two object references refer to the same underlying object. This can occur through simple assignment, as shown in the following example.  
   
- [!code-csharp[csProgGuideStatements#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/equality-comparisons_1.cs)]  
+ [!code-csharp[csProgGuideStatements#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#18)]  
   
  In this code, two objects are created, but after the assignment statement, both references refer to the same object. Therefore they have reference equality. Use the <xref:System.Object.ReferenceEquals%2A> method to determine whether two references refer to the same object.  
   
@@ -48,6 +48,6 @@ if( b == a)
 |[C# Programming Guide](../../../csharp/programming-guide/index.md)|Provides links to detailed information about important C# language features and features that are available to C# through the .NET Framework.|  
 |[Types](../../../csharp/programming-guide/types/index.md)|Provides information about the C# type system and links to additional information.|  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)

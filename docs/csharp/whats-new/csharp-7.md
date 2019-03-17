@@ -1,6 +1,6 @@
 ---
 title: What's New in C# 7.0 - C# Guide
-description: Get an overview of the new features coming in the upcoming version 7 of the C# language.
+description: Get an overview of the new features in version 7.0 of the C# language.
 ms.date: 12/21/2016
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 ---
@@ -228,7 +228,7 @@ rules to the pattern.
 
 ### `is` expression
 
-The `is` pattern expression extends the familiar `is` operator to query an object beyond its type.
+The `is` pattern expression extends the familiar [`is` operator](../language-reference/keywords/is.md#pattern-matching-with-is) to query an object beyond its type.
 
 Let's start with a simple scenario. We'll add capabilities to this scenario
 that demonstrate how pattern matching expressions make algorithms that work

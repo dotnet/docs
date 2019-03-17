@@ -21,7 +21,7 @@ This document summarizes a set of best practices to consider when designing a co
   
 -   Data templates.  
   
- For an introduction to styling and templating, see [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md).  
+ For an introduction to styling and templating, see [Styling and Templating](styling-and-templating.md).  
   
 <a name="Before_You_Start__Understanding_Your_Control"></a>   
 ## Before You Start: Understanding Your Control  
@@ -112,6 +112,6 @@ This document summarizes a set of best practices to consider when designing a co
   
 -   **Theme styles do not need to have consistent "layout" semantics across all themes**. For example, the default style does not need to guarantee that a control will occupy the same amount of size in all themes or guarantee that a control will have the same content margins / padding across all themes.  
   
-## See Also  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)
+## See also
+- [Styling and Templating](styling-and-templating.md)
+- [Control Authoring Overview](control-authoring-overview.md)

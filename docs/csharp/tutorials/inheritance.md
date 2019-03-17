@@ -75,7 +75,7 @@ public class B : A
 }
 ```
 
-In some cases, a derived class *must* override the base class implementation. Base class members marked with the [abstract](../language-reference/keywords/abstract.md) keyword require that derived classes override them. Attempting to compile the following example generates compiler error CS0534, "<class> does not implement inherited abstract member <member>', because class `B` provides no implementation for `A.Method1`.
+In some cases, a derived class *must* override the base class implementation. Base class members marked with the [abstract](../language-reference/keywords/abstract.md) keyword require that derived classes override them. Attempting to compile the following example generates compiler error CS0534, "&lt;class&gt; does not implement inherited abstract member &lt;member&gt;", because class `B` provides no implementation for `A.Method1`.
 
 ```csharp
 public abstract class A
@@ -290,7 +290,7 @@ The following example uses objects derived from `Shape`. It instantiates an arra
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#3)]
 
-## See Also
+## See also
 
-- [Classes and objects](../tour-of-csharp/classes-and-objects.md)   
+- [Classes and objects](../tour-of-csharp/classes-and-objects.md)
 - [Inheritance (C# Programming Guide)](../programming-guide/classes-and-structs/inheritance.md)

@@ -34,9 +34,9 @@ This topic demonstrates how to validate application settings before they are per
   
 -   For events raised before their associated actions, such as <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> and <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>, uses the <xref:System.ComponentModel.CancelEventArgs> argument to cancel the operation.  
   
- For more information about event handling, see [Event Handlers Overview](../../../../docs/framework/winforms/event-handlers-overview-windows-forms.md).  
+ For more information about event handling, see [Event Handlers Overview](../event-handlers-overview-windows-forms.md).  
   
- The following procedures show how to test for a valid birth date using either the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> or the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event. The procedures were written under the assumption that you have already created your application settings; in this example, we will perform bounds checking on a setting named `DateOfBirth`. For more information about creating settings, see [How to: Create Application Settings](../../../../docs/framework/winforms/advanced/how-to-create-application-settings.md).  
+ The following procedures show how to test for a valid birth date using either the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> or the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event. The procedures were written under the assumption that you have already created your application settings; in this example, we will perform bounds checking on a setting named `DateOfBirth`. For more information about creating settings, see [How to: Create Application Settings](how-to-create-application-settings.md).  
   
 ### To obtain the application settings object  
   
@@ -154,6 +154,6 @@ This topic demonstrates how to validate application settings before they are per
     End Sub  
     ```  
   
-## See Also  
- [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
- [How to: Create Application Settings](../../../../docs/framework/winforms/advanced/how-to-create-application-settings.md)
+## See also
+- [Creating Event Handlers in Windows Forms](../creating-event-handlers-in-windows-forms.md)
+- [How to: Create Application Settings](how-to-create-application-settings.md)

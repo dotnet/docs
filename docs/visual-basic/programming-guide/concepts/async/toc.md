@@ -1,4 +1,4 @@
-#[Asynchronous Programming with Async and Await](index.md)
+# [Asynchronous Programming with Async and Await](index.md)
 ## [Walkthrough: Accessing the Web by Using Async and Await](walkthrough-accessing-the-web-by-using-async-and-await.md)
 ## [How to: Extend the Async Walkthrough by Using Task.WhenAll](how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
 ## [How to: Make Multiple Web Requests in Parallel by Using Async and Await](how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)

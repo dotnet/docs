@@ -20,12 +20,12 @@ An event is an action which you can respond to, or "handle," in code. Events can
 > [!NOTE]
 >  Many events occur in conjunction with other events. For example, in the course of the <xref:System.Windows.Forms.Control.DoubleClick> event occurring, the <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseUp>, and <xref:System.Windows.Forms.Control.Click> events occur.  
   
- For information about how to raise and consume an event, see [Events](../../../docs/standard/events/index.md).  
+ For information about how to raise and consume an event, see [Events](../../standard/events/index.md).  
   
 ## Delegates and Their Role  
  Delegates are classes commonly used within the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] to build event-handling mechanisms. Delegates roughly equate to function pointers, commonly used in [!INCLUDE[vcprvc](../../../includes/vcprvc-md.md)] and other object-oriented languages. Unlike function pointers however, delegates are object-oriented, type-safe, and secure. In addition, where a function pointer contains only a reference to a particular function, a delegate consists of a reference to an object, and references to one or more methods within the object.  
   
- This event model uses *delegates* to bind events to the methods that are used to handle them. The delegate enables other classes to register for event notification by specifying a handler method. When the event occurs, the delegate calls the bound method. For more information about how to define delegates, see [Events](../../../docs/standard/events/index.md).  
+ This event model uses *delegates* to bind events to the methods that are used to handle them. The delegate enables other classes to register for event notification by specifying a handler method. When the event occurs, the delegate calls the bound method. For more information about how to define delegates, see [Events](../../standard/events/index.md).  
   
  Delegates can be bound to a single method or to multiple methods, referred to as multicasting. When creating a delegate for an event, you (or the Windows Forms Designer) typically create a multicast event. A rare exception might be an event that results in a specific procedure (such as displaying a dialog box) that would not logically repeat multiple times per event. For information about how to create a multicast delegate, see [How to: Combine Delegates (Multicast Delegates)](~/docs/csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md).  
   
@@ -37,6 +37,6 @@ An event is an action which you can respond to, or "handle," in code. Events can
   
  The binding mechanism used with delegates is dynamic: a delegate can be bound at run time to any method whose signature matches that of the event handler. With this feature, you can set up or change the bound method depending on a condition and to dynamically attach an event handler to a control.  
   
-## See Also  
- [Creating Event Handlers in Windows Forms](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
- [Event Handlers Overview](../../../docs/framework/winforms/event-handlers-overview-windows-forms.md)
+## See also
+- [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md)
+- [Event Handlers Overview](event-handlers-overview-windows-forms.md)

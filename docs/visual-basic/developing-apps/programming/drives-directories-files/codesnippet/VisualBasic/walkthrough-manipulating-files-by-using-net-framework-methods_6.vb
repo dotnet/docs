@@ -1,1 +1,0 @@
-        Entry.Text = ""

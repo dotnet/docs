@@ -37,22 +37,22 @@ HRESULT BlessIWbemServices (
 
 ## Parameters
 
-`pIWbemServices`  
+`pIWbemServices`\
 [in] A pointer to the [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object for which permissions are required.
 
-`strUser`  
+`strUser`\
 [in] The user name.
 
-`strPassword`  
+`strPassword`\
 [in] The password associated with `strUser`.
 
-`strAuthority`
+`strAuthority`\
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`impLevel`
+`impLevel`\
 [in] The impersonation level.
 
-`authnLevel`
+`authnLevel`\
 [in] The authorization level.
 
 ## Return value
@@ -68,11 +68,13 @@ The following values returned by this function are defined in the *WinError.h* h
 | `S_OK` | 0 | The function call was successful. | 
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

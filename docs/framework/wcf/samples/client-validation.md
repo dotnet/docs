@@ -22,7 +22,7 @@ Services frequently publish metadata to enable automatic generation and configur
   
 3.  Run the client application from \client\bin\Debug. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+4.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 5.  Remove the certificates by running Cleanup.bat when you have finished with the sample. Other security samples use the same certificates.  
   
@@ -48,7 +48,7 @@ Services frequently publish metadata to enable automatic generation and configur
   
 10. On the client computer, run client.exe.  
   
-    1.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+    1.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To clean up after the sample  
   
@@ -57,5 +57,5 @@ Services frequently publish metadata to enable automatic generation and configur
     > [!NOTE]
     >  This script does not remove service certificates on a client when running this sample across computers. If you have run WCF samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>. For example: certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
-## See Also  
- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)
+## See also
+- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)

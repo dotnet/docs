@@ -78,14 +78,14 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 ## Example  
  The following example shows a `Function` procedure that defines two parameters.  
   
- [!code-vb[VbVbalrStatements#2](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/parameter-list_1.vb)]  
+ [!code-vb[VbVbalrStatements#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#2)]  
   
-## See Also  
- <xref:System.Runtime.InteropServices.DllImportAttribute>  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)  
- [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
+## See also
+- <xref:System.Runtime.InteropServices.DllImportAttribute>
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

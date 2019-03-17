@@ -1,9 +1,9 @@
 ---
-title: "&lt;endpointDiscovery&gt;"
+title: "<endpointDiscovery>"
 ms.date: "03/30/2017"
 ms.assetid: 70812717-888a-4748-9640-0df6715ff029
 ---
-# &lt;endpointDiscovery&gt;
+# \<endpointDiscovery>
 Specifies the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata.  
   
 \<system.ServiceModel>  
@@ -98,5 +98,5 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
 </behaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>
+## See also
+- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>

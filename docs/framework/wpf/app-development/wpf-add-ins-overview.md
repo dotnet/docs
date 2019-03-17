@@ -50,7 +50,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
   
 -   **Communication**: Allowing add-ins and host applications to communicate with each other across isolation boundaries by calling methods and passing data.  
   
--   **Lifetime Management**: Loading and unloading application domains and processes in a clean, predictable manner (see [Application Domains](../../../../docs/framework/app-domains/application-domains.md)).  
+-   **Lifetime Management**: Loading and unloading application domains and processes in a clean, predictable manner (see [Application Domains](../../app-domains/application-domains.md)).  
   
 -   **Versioning**: Ensuring that host applications and add-ins can still communicate when new versions of either are created.  
   
@@ -94,7 +94,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 -   Has the <xref:System.SerializableAttribute> attribute applied.  
   
 > [!NOTE]
->  For more information regarding the creation of remotable .NET Framework objects, see [Making Objects Remotable](https://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a).  
+>  For more information regarding the creation of remotable .NET Framework objects, see [Making Objects Remotable](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/wcf3swha(v=vs.100)).  
   
  The WPF UI types are not remotable. To solve the problem, WPF extends the .NET Framework add-in model to enable WPF UI created by add-ins to be displayed from host applications. This support is provided by WPF by two types: the <xref:System.AddIn.Contract.INativeHandleContract> interface and two static methods implemented by the <xref:System.AddIn.Pipeline.FrameworkElementAdapters> class: <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A> and <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A>. At a high level, these types and methods are used in the following manner:  
   
@@ -124,7 +124,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
   
 6.  The host application displays the returned <xref:System.Windows.FrameworkElement>.  
   
- For an example that demonstrates how to implement an add-in that returns a UI, see [Create an Add-In That Returns a UI](../../../../docs/framework/wpf/app-development/how-to-create-an-add-in-that-returns-a-ui.md).  
+ For an example that demonstrates how to implement an add-in that returns a UI, see [Create an Add-In That Returns a UI](how-to-create-an-add-in-that-returns-a-ui.md).  
   
 <a name="AddInIsAUI"></a>   
 ## Add-In Is a User Interface  
@@ -142,7 +142,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
   
 6.  The host application displays the returned <xref:System.Windows.FrameworkElement>.  
   
- For an example that demonstrates how to implement an add-in that is a UI, see [Create an Add-In That Is a UI](../../../../docs/framework/wpf/app-development/how-to-create-an-add-in-that-is-a-ui.md).  
+ For an example that demonstrates how to implement an add-in that is a UI, see [Create an Add-In That Is a UI](how-to-create-an-add-in-that-is-a-ui.md).  
   
 <a name="ReturningMultipleUIsFromAnAddIn"></a>   
 ## Returning Multiple UIs from an Add-In  
@@ -213,7 +213,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
   
 -   On the host application side, WPF repackages the <xref:System.Windows.Interop.HwndSource> as an internal WPF class that derives from <xref:System.Windows.Interop.HwndHost> and consumes <xref:System.AddIn.Contract.INativeHandleContract>. An instance of this class is returned by <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A> to the host application.  
   
- <xref:System.Windows.Interop.HwndHost> exists to display user interfaces, identified by window handles, from WPF user interfaces. For more information, see [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md).  
+ <xref:System.Windows.Interop.HwndHost> exists to display user interfaces, identified by window handles, from WPF user interfaces. For more information, see [WPF and Win32 Interoperation](../advanced/wpf-and-win32-interoperation.md).  
   
  In summary, <xref:System.AddIn.Contract.INativeHandleContract>, <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A>, and <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A> exist to allow the window handle for a WPF UI to be passed from an add-in to a host application, where it is encapsulated by a <xref:System.Windows.Interop.HwndHost> and displayed the host application's UI.  
   
@@ -246,11 +246,11 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
   
 -   Add-in user interfaces displayed from a host application do not respect the host application's clipping behavior.  
   
--   The concept of *airspace* in interoperability scenarios also applies to add-ins (see [Technology Regions Overview](../../../../docs/framework/wpf/advanced/technology-regions-overview.md)).  
+-   The concept of *airspace* in interoperability scenarios also applies to add-ins (see [Technology Regions Overview](../advanced/technology-regions-overview.md)).  
   
 -   A host application's UI services, such as resource inheritance, data binding, and commanding, are not automatically available to add-in user interfaces. To provide these services to the add-in, you need to update the pipeline.  
   
--   An add-in UI cannot be rotated, scaled, skewed, or otherwise affected by a transformation (see [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)).  
+-   An add-in UI cannot be rotated, scaled, skewed, or otherwise affected by a transformation (see [Transforms Overview](../graphics-multimedia/transforms-overview.md)).  
   
 -   Content inside add-in user interfaces that is rendered by drawing operations from the <xref:System.Drawing> namespace can include alpha blending. However, both an add-in UI and the host application UI that contains it must be 100% opaque; in other words, the `Opacity` property on both must be set to 1.  
   
@@ -274,12 +274,12 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
   
 <a name="PerformanceOptimization"></a>   
 ## Performance Optimization  
- By default, when multiple application domains are used, the various .NET Framework assemblies required by each application are all loaded into that application's domain. As a result, the time required for creating new application domains and starting applications in them might affect performance. However, the .NET Framework provides a way for you to reduce start times by instructing applications to share assemblies across application domains if they are already loaded. You do this by using the <xref:System.LoaderOptimizationAttribute> attribute, which must be applied to the entry point method (`Main`). In this case, you must use only code to implement your application definition (see [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)).  
+ By default, when multiple application domains are used, the various .NET Framework assemblies required by each application are all loaded into that application's domain. As a result, the time required for creating new application domains and starting applications in them might affect performance. However, the .NET Framework provides a way for you to reduce start times by instructing applications to share assemblies across application domains if they are already loaded. You do this by using the <xref:System.LoaderOptimizationAttribute> attribute, which must be applied to the entry point method (`Main`). In this case, you must use only code to implement your application definition (see [Application Management Overview](application-management-overview.md)).  
   
-## See Also  
- <xref:System.LoaderOptimizationAttribute>  
- [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))  
- [Application Domains](../../../../docs/framework/app-domains/application-domains.md)  
- [.NET Framework Remoting Overview](https://msdn.microsoft.com/library/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)  
- [Making Objects Remotable](https://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a)  
- [How-to Topics](../../../../docs/framework/wpf/app-development/how-to-topics.md)
+## See also
+- <xref:System.LoaderOptimizationAttribute>
+- [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
+- [Application Domains](../../app-domains/application-domains.md)
+- [.NET Framework Remoting Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kwdt6w2k(v=vs.100))
+- [Making Objects Remotable](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/wcf3swha(v=vs.100))
+- [How-to Topics](how-to-topics.md)

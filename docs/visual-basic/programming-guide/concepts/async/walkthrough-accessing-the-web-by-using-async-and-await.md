@@ -41,7 +41,7 @@ You can write asynchronous programs more easily and intuitively by using async/a
 ## Prerequisites  
  Visual Studio 2012 or later must be installed on your computer. For more information, see the [Microsoft website](https://go.microsoft.com/fwlink/?LinkId=235233).  
   
-###  <a name="CreateWPFApp"></a> To create a WPF application  
+### <a name="CreateWPFApp"></a> To create a WPF application  
   
 1.  Start Visual Studio.  
   
@@ -55,8 +55,8 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
      The new project appears in **Solution Explorer**.  
   
-##  <a name="BKMK_DesignWPFMainWin"></a>   
-###  <a name="MainWindow"></a> To design a simple WPF MainWindow  
+## <a name="BKMK_DesignWPFMainWin"></a>   
+### <a name="MainWindow"></a> To design a simple WPF MainWindow  
   
 1.  In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.  
   
@@ -84,8 +84,8 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
      For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).  
   
-##  <a name="BKMK_AddReference"></a>   
-###  <a name="AddRef"></a> To add a reference  
+## <a name="BKMK_AddReference"></a>   
+### <a name="AddRef"></a> To add a reference  
   
 1.  In **Solution Explorer**, highlight your project's name.  
   
@@ -101,8 +101,8 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
 6.  Choose the **OK** button to close the dialog box.  
   
-##  <a name="BKMK_AddStatesandDirs"></a>   
-###  <a name="ImportsState"></a> To add necessary Imports statements  
+## <a name="BKMK_AddStatesandDirs"></a>   
+### <a name="ImportsState"></a> To add necessary Imports statements  
   
 1.  In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.vb, and then choose **View Code**.  
   
@@ -114,8 +114,8 @@ You can write asynchronous programs more easily and intuitively by using async/a
     Imports System.IO  
     ```  
   
-##  <a name="BKMK_CreatSynchApp"></a>   
-###  <a name="synchronous"></a> To create a synchronous application  
+## <a name="BKMK_CreatSynchApp"></a>   
+### <a name="synchronous"></a> To create a synchronous application  
   
 1.  In the design window, MainWindow.xaml, double-click the **Start** button to create the `startButton_Click` event handler in MainWindow.xaml.vb.  
   
@@ -215,8 +215,8 @@ You can write asynchronous programs more easily and intuitively by using async/a
     End Sub  
     ```  
   
-##  <a name="BKMK_TestSynchSol"></a>   
-###  <a name="testSynch"></a> To test the synchronous solution  
+## <a name="BKMK_TestSynchSol"></a>   
+### <a name="testSynch"></a> To test the synchronous solution  
   
 1.  Choose the F5 key to run the program, and then choose the **Start** button.  
   
@@ -241,8 +241,8 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
      Notice that it takes a few seconds to display the counts. During that time, the UI thread is blocked while it waits for requested resources to download. As a result, you can't move, maximize, minimize, or even close the display window after you choose the  **Start** button. These efforts fail until the byte counts start to appear. If a website isn’t responding, you have no indication of which site failed. It is difficult even to stop waiting and close the program.  
   
-##  <a name="BKMK_ConvertGtBtArr"></a>   
-###  <a name="GetURLContents"></a> To convert GetURLContents to an asynchronous method  
+## <a name="BKMK_ConvertGtBtArr"></a>   
+### <a name="GetURLContents"></a> To convert GetURLContents to an asynchronous method  
   
 1.  To convert the synchronous solution to an asynchronous solution, the best place to start is in `GetURLContents` because the calls to the <xref:System.Net.HttpWebRequest> method <xref:System.Net.HttpWebRequest.GetResponse%2A> and to the <xref:System.IO.Stream> method <xref:System.IO.Stream.CopyTo%2A> are where the application accesses the web. The .NET Framework makes the conversion easy by supplying asynchronous versions of both methods.  
   
@@ -323,8 +323,8 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
      With those few changes, the conversion of `GetURLContents` to an asynchronous method is complete.  
   
-##  <a name="BKMK_ConvertSumPagSzs"></a>   
-###  <a name="SumPageSizes"></a> To convert SumPageSizes to an asynchronous method  
+## <a name="BKMK_ConvertSumPagSzs"></a>   
+### <a name="SumPageSizes"></a> To convert SumPageSizes to an asynchronous method  
   
 1.  Repeat the steps from the previous procedure for `SumPageSizes`. First, change the call to `GetURLContents` to an asynchronous call.  
   
@@ -363,8 +363,8 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
      The conversion of `SumPageSizes` to `SumPageSizesAsync` is complete.  
   
-##  <a name="BKMK_Cnvrtbttn1"></a>   
-###  <a name="startButton"></a> To convert startButton_Click to an asynchronous method  
+## <a name="BKMK_Cnvrtbttn1"></a>   
+### <a name="startButton"></a> To convert startButton_Click to an asynchronous method  
   
 1.  In the event handler, change the name of the called method from `SumPageSizes` to `SumPageSizesAsync`, if you haven’t already done so.  
   
@@ -409,8 +409,8 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
      The conversion of the project from synchronous to asynchronous processing is complete.  
   
-##  <a name="BKMK_testAsynchSolution"></a>   
-###  <a name="testAsynch"></a> To test the asynchronous solution  
+## <a name="BKMK_testAsynchSolution"></a>   
+### <a name="testAsynch"></a> To test the asynchronous solution  
   
 1.  Choose the F5 key to run the program, and then choose the **Start** button.  
   
@@ -420,8 +420,8 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
     -   Most importantly, the UI thread isn’t blocked during the downloads. You can move or resize the window while the web resources are being downloaded, counted, and displayed. If one of the websites is slow or not responding, you can cancel the operation by choosing the **Close** button (the x in the red field in the upper-right corner).  
   
-##  <a name="BKMK_ReplaceGetByteArrayAsync"></a>   
-###  <a name="GetURLContentsAsync"></a> To replace method GetURLContentsAsync with a .NET Framework method  
+## <a name="BKMK_ReplaceGetByteArrayAsync"></a>   
+### <a name="GetURLContentsAsync"></a> To replace method GetURLContentsAsync with a .NET Framework method  
   
 1.  The .NET Framework 4.5 provides many async methods that you can use. One of them, the <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29>, does just what you need for this walkthrough. You can use it instead of the `GetURLContentsAsync` method that you created in an earlier procedure.  
   
@@ -446,7 +446,7 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
      The behavior of this version of the project should match the behavior that the "To test the asynchronous solution" procedure describes but with even less effort from you.  
   
-##  <a name="BKMK_CompleteCodeExamples"></a> Example  
+## <a name="BKMK_CompleteCodeExamples"></a> Example  
  The following code contains the full example of the conversion from a synchronous to an asynchronous solution by using the asynchronous `GetURLContentsAsync` method that you wrote. Notice that it strongly resembles the original, synchronous solution.  
   
 ```vb  
@@ -667,12 +667,12 @@ Class MainWindow
 End Class  
 ```  
   
-## See Also  
- [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)  
- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)  
- [Async](../../../../visual-basic/language-reference/modifiers/async.md)  
- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
- [Async Return Types (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)  
- [Task-based Asynchronous Programming (TAP)](https://go.microsoft.com/fwlink/?LinkId=204847)  
- [How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)  
- [How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)
+## See also
+- [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
+- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)
+- [Async](../../../../visual-basic/language-reference/modifiers/async.md)
+- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
+- [Async Return Types (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)
+- [Task-based Asynchronous Programming (TAP)](https://go.microsoft.com/fwlink/?LinkId=204847)
+- [How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
+- [How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)

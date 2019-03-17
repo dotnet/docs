@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 9a29433c-a180-49bb-b74c-d187786584c8
 ---
 # How Keyboard Input Works
-Windows Forms processes keyboard input by raising keyboard events in response to Windows messages. Most Windows Forms applications process keyboard input exclusively by handling the keyboard events. However, you need to understand how keyboard messages work so you can implement more advanced keyboard-input scenarios, such as intercepting keys before they reach a control. This topic describes the types of key data that Windows Forms recognizes and provides an overview of how keyboard messages are routed. For information about keyboard events, see [Using Keyboard Events](../../../docs/framework/winforms/using-keyboard-events.md).  
+Windows Forms processes keyboard input by raising keyboard events in response to Windows messages. Most Windows Forms applications process keyboard input exclusively by handling the keyboard events. However, you need to understand how keyboard messages work so you can implement more advanced keyboard-input scenarios, such as intercepting keys before they reach a control. This topic describes the types of key data that Windows Forms recognizes and provides an overview of how keyboard messages are routed. For information about keyboard events, see [Using Keyboard Events](using-keyboard-events.md).  
   
 ## Types of Keys  
  Windows Forms identifies keyboard input as virtual-key codes that are represented by the bitwise <xref:System.Windows.Forms.Keys> enumeration. With the <xref:System.Windows.Forms.Keys> enumeration, you can combine a series of pressed keys to result in a single value. These values correspond to the values that accompany the WM_KEYDOWN and WM_SYSKEYDOWN Windows messages. You can detect most physical key presses by handling the <xref:System.Windows.Forms.Control.KeyDown> or <xref:System.Windows.Forms.Control.KeyUp> events. Character keys are a subset of the <xref:System.Windows.Forms.Keys> enumeration and correspond to the values that accompany the WM_CHAR and WM_SYSCHAR Windows messages. If the combination of pressed keys results in a character, you can detect the character by handling the <xref:System.Windows.Forms.Control.KeyPress> event. Alternatively, you can use <xref:Microsoft.VisualBasic.Devices.Keyboard>, exposed by Visual Basic programming interface, to discover which keys were pressed and send keys. For more information, see [Accessing the Keyboard](~/docs/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md).  
@@ -62,10 +62,10 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 |Perform special input or navigation handling during a <xref:System.Windows.Forms.Control.KeyPress> event. For example, in a list control holding down the "r" key skips between items that begin with the letter r.|Override <xref:System.Windows.Forms.Control.ProcessDialogChar%2A>|  
 |Perform custom mnemonic handling; for example, you want to handle mnemonics on owner-drawn buttons contained in a toolbar.|Override <xref:System.Windows.Forms.Control.ProcessMnemonic%2A>.|  
   
-## See Also  
- <xref:System.Windows.Forms.Keys>  
- <xref:System.Windows.Forms.Control.WndProc%2A>  
- <xref:System.Windows.Forms.Control.PreProcessMessage%2A>  
- [My.Computer.Keyboard Object](~/docs/visual-basic/language-reference/objects/my-computer-keyboard-object.md)  
- [Accessing the Keyboard](~/docs/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md)  
- [Using Keyboard Events](../../../docs/framework/winforms/using-keyboard-events.md)
+## See also
+- <xref:System.Windows.Forms.Keys>
+- <xref:System.Windows.Forms.Control.WndProc%2A>
+- <xref:System.Windows.Forms.Control.PreProcessMessage%2A>
+- [My.Computer.Keyboard Object](~/docs/visual-basic/language-reference/objects/my-computer-keyboard-object.md)
+- [Accessing the Keyboard](~/docs/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md)
+- [Using Keyboard Events](using-keyboard-events.md)

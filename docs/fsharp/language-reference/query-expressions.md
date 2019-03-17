@@ -505,7 +505,7 @@ The following table shows some common Transact-SQL queries and their equivalents
     <th>F# Query Expression (case sensitive)</th>
   </tr>
 <tr><td>
-Select all fields from table.</br>
+Select all fields from table.<br>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 </code></pre>

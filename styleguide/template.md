@@ -39,6 +39,7 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 - **ms.devlang** defines the language filter displayed for the topic. You can see a list of the supported values in the [Supported languages](#supported-languages) section. Only needs to be set when there's more than one programming language covered in the topic. Typically, we only use `csharp`, `vb`, `fsharp`, and `cpp` for this value in our content.
 - **ms.prod**: Product identification used for BI purposes. They're usually set at a global level, so they don't usually appear in the metadata block of each article.
 - **ms.technology**: Additional BI classification. Some of the supported values are: `devlang-csharp` for C# topics, `devlang-fsharp` for F# topics, and `devlang-visual-basic` for VB topics. For other guides, the values will vary, so ask a member of the team for guidance.
+- **ms.date**: A date in the format MM/DD/YYYY. Displayed on the published page to indicate the last time the article was substantially edited or guaranteed "fresh" (that is, the article was reviewed and considered up-to-date).
 - **helpviewer_keywords**: Entries are used for the offline books index (functionality in Visual Studio).
 - **f1_keywords**: Connects the article to the F1 key (functionality in Visual Studio).
 
@@ -414,25 +415,22 @@ docs.microsoft provides a few additional extensions to GitHub Flavored Markdown.
 
 It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.
 
-#### Note
-
+```markdown
 > [!NOTE]
-> This is a NOTE
-
-#### Warning
-
-> [!WARNING]
-> This is a WARNING
-
-#### Tip
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> This is a TIP
-
-#### Important
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> This is IMPORTANT
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
+```
 
 And they'll render like this:
 ![Alert styles](../images/alerts.png)

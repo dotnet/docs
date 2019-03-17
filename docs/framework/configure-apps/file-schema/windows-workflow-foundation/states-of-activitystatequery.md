@@ -1,10 +1,10 @@
 ---
-title: "&lt;states&gt; of &lt;activityStateQuery&gt;"
+title: "<states> of <activityStateQuery>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: a7cc2018-2b79-44f1-825a-bb7ca08690a3
 ---
-# &lt;states&gt; of &lt;activityStateQuery&gt;
+# \<states> of \<activityStateQuery>
 A collection of configuration elements that contain the states of the subscribed activity for which a tracking record should be emitted.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  
@@ -69,8 +69,8 @@ A collection of configuration elements that contain the states of the subscribed
 </activityStateQuery>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection?displayProperty=nameWithType>      
- <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=nameWithType>       
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+## See also
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection?displayProperty=nameWithType>
+- <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=nameWithType>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

@@ -29,7 +29,7 @@ HRESULT GetCompilerFlags (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwFlags`  
  [out] A pointer to a value of the [CorDebugJITCompilerFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugjitcompilerflags-enumeration.md) enumeration that specifies the behavior of the JIT compiler or the native image generator.  
   
@@ -42,5 +42,5 @@ HRESULT GetCompilerFlags (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- 
+## See also
+

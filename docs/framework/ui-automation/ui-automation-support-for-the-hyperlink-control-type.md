@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Hyperlink control type"
   - "control types, Hyperlink"
 ms.assetid: 110cceea-5932-4955-a1a6-13afc51422b2
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Hyperlink Control Type
 > [!NOTE]
@@ -68,7 +66,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Hyperlink>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Hyperlink>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

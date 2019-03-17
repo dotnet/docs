@@ -111,7 +111,7 @@ By default, when a user name and password is used for authentication, Windows Co
 [!code-csharp[C_CustomUsernameAndPasswordValidator#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customusernameandpasswordvalidator/cs/service.cs#2)]
 [!code-vb[C_CustomUsernameAndPasswordValidator#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customusernameandpasswordvalidator/vb/service.vb#2)]  
   
-## See Also  
- <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>  
- [How to: Use the ASP.NET Membership Provider](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md)  
- [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)
+## See also
+- <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>
+- [How to: Use the ASP.NET Membership Provider](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md)
+- [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)

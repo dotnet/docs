@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "automation tree"
   - "UI Automation, tree"
 ms.assetid: 03b98058-bdb3-47a0-8ff7-45e6cdf67166
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Tree Overview
 > [!NOTE]
@@ -50,6 +48,6 @@ ms.author: "mhopkins"
   
  The content view is obtained by searching for elements that have the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsContentElement%2A> property set to `true`, or by using the <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> to navigate the tree.  
   
-## See Also  
- <xref:System.Windows.Automation.AutomationElement>  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.AutomationElement>
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

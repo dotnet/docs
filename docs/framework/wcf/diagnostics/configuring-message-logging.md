@@ -157,7 +157,7 @@ This topic describes how you can configure message logging for different scenari
   
  You should be aware that the `type` attribute should be set to a qualified assembly name of the type.  
   
-## See Also  
- [\<messageLogging>](../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)  
- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)  
- [Recommended Settings for Tracing and Message Logging](../../../../docs/framework/wcf/diagnostics/tracing/recommended-settings-for-tracing-and-message-logging.md)
+## See also
+- [\<messageLogging>](../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)
+- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)
+- [Recommended Settings for Tracing and Message Logging](../../../../docs/framework/wcf/diagnostics/tracing/recommended-settings-for-tracing-and-message-logging.md)

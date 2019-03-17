@@ -20,7 +20,7 @@ This example reads the contents of a text file by using the static methods <xref
 >  The files that are used in this example are created in the topic [How to: Write to a Text File](../../../csharp/programming-guide/file-system/how-to-write-to-a-text-file.md).  
   
 ## Example  
- [!code-csharp[csFilesandFolders#4](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-read-from-a-text-file_1.cs)]  
+ [!code-csharp[csFilesandFolders#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#4)]  
   
 ## Compiling the Code  
  Copy the code and paste it into a C# console application.  
@@ -35,8 +35,8 @@ This example reads the contents of a text file by using the static methods <xref
 ## .NET Framework Security  
  Do not rely on the name of a file to determine the contents of the file. For example, the file `myFile.cs` might not be a C# source file.  
   
-## See Also
+## See also
 
-- <xref:System.IO?displayProperty=nameWithType>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- <xref:System.IO?displayProperty=nameWithType>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

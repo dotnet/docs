@@ -1,12 +1,12 @@
 ---
-title: "&lt;c&gt; (Visual Basic)"
+title: "<c> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "c XML tag"
   - "<c> XML tag"
 ms.assetid: 36ad5d1b-11f7-4012-8932-41962ac327d1
 ---
-# &lt;c&gt; (Visual Basic)
+# \<c> (Visual Basic)
 Indicates that text within a description is code.  
   
 ## Syntax  
@@ -15,7 +15,7 @@ Indicates that text within a description is code.
 <c>text</c>  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---|---|  
@@ -29,7 +29,7 @@ Indicates that text within a description is code.
 ## Example  
  This example uses the `<c>` tag in the summary section to indicate that `Counter` is code.  
   
- [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/c_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

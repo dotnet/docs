@@ -30,5 +30,5 @@ This example shows how to add and remove items from a <xref:System.Collections.C
   
 ## See also
 
-- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
 - [BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md)

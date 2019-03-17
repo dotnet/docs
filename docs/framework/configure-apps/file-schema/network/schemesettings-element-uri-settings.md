@@ -1,9 +1,9 @@
 ---
-title: "&lt;schemeSettings&gt; Element (Uri Settings)"
+title: "<schemeSettings> Element (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 0ae45c6e-8c4c-4c0d-8b9f-a93824648890
 ---
-# &lt;schemeSettings&gt; Element (Uri Settings)
+# \<schemeSettings> Element (Uri Settings)
 Specifies how a <xref:System.Uri> will be parsed for specific schemes.  
   
  \<configuration>  
@@ -77,11 +77,11 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 |Validation File||  
 |Can be Empty||  
   
-## See Also  
-- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>  
-- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>  
-- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
-- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>  
-- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>  
-- <xref:System.Uri?displayProperty=nameWithType>  
+## See also
+- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
+- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>
+- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>
+- <xref:System.Uri?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

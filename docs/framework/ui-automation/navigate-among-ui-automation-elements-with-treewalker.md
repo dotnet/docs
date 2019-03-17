@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "elements, navigating among"
   - "UI Automation, navigating among elements"
 ms.assetid: afcd21dc-2ffa-48c9-9332-51269f44b7e9
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Navigate Among UI Automation Elements with TreeWalker
 > [!NOTE]
@@ -31,5 +29,5 @@ ms.author: "mhopkins"
  [!code-csharp[UIAClient_snip#174](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#174)]
  [!code-vb[UIAClient_snip#174](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#174)]  
   
-## See Also  
- [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)
+## See also
+- [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)

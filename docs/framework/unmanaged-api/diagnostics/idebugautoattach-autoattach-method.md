@@ -34,7 +34,7 @@ HRESULT AutoAttach
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `guidPort`  
  [in] Always set to `GUID_NULL`.  
   
@@ -56,5 +56,5 @@ HRESULT AutoAttach
 ## Requirements  
  **Header:** DbgAutoAttach.h  
   
-## See Also  
- [IDebugAutoAttach Interface](../../../../docs/framework/unmanaged-api/diagnostics/idebugautoattach-interface.md)
+## See also
+- [IDebugAutoAttach Interface](../../../../docs/framework/unmanaged-api/diagnostics/idebugautoattach-interface.md)

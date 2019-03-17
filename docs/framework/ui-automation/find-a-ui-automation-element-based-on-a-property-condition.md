@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "elements, finding by property conditions"
   - "UI Automation, finding elements by property conditions"
 ms.assetid: 3acaee5a-6ce8-4c3e-81c8-67e59eb74477
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Find a UI Automation Element Based on a Property Condition
 > [!NOTE]
@@ -26,7 +24,7 @@ ms.author: "mhopkins"
  [!code-csharp[InvokePatternApp#1100](../../../samples/snippets/csharp/VS_Snippets_Wpf/InvokePatternApp/CSharp/InvokePatternApp.cs#1100)]
  [!code-vb[InvokePatternApp#1100](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InvokePatternApp/VisualBasic/Client.vb#1100)]  
   
-## See Also  
- [InvokePattern and ExpandCollapsePattern Menu Item Sample](https://msdn.microsoft.com/library/b7fa141c-e2d1-4da2-a27f-81a7d1172210)  
- [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)  
- [Use the AutomationID Property](../../../docs/framework/ui-automation/use-the-automationid-property.md)
+## See also
+- [InvokePattern and ExpandCollapsePattern Menu Item Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771636(v=vs.90))
+- [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)
+- [Use the AutomationID Property](../../../docs/framework/ui-automation/use-the-automationid-property.md)

@@ -51,7 +51,7 @@ This sample demonstrates how to configure security by using a custom binding. It
 </behaviors>
 ```
 
- Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the `security` binding element. Both client and service are authenticated using message-level security if the Kerberos authentication mechanism is available. This happens if the sample is run in the Active Directory environment. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate the service to the client. The `security` binding element is configured to use `SecureConversation``authenticationType`, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work.
+ Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the `security` binding element. Both client and service are authenticated using message-level security if the Kerberos authentication mechanism is available. This happens if the sample is run in the Active Directory environment. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate the service to the client. The `security` binding element is configured to use `SecureConversation` `authenticationType`, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work.
 
  When you run the sample, the operation requests and responses are displayed in the client's console window. Press ENTER in the client window to shut down the client.
 
@@ -116,7 +116,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
 3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+4.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To run the sample across computers  
   
@@ -180,4 +180,4 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
 -   Run Cleanup.bat in the samples folder after you have finished running the sample.
 
-## See Also
+## See also

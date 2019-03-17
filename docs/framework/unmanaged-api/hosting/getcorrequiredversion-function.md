@@ -32,7 +32,7 @@ HRESULT GetCORRequiredVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbuffer`  
  [out] A buffer containing a string that specifies the version number.  
   
@@ -51,5 +51,5 @@ HRESULT GetCORRequiredVersion (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

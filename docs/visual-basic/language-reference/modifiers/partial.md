@@ -83,14 +83,14 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
 ## Example  
  The following example splits the definition of class `sampleClass` into two declarations, each of which defines a different `Sub` procedure.  
   
- [!code-vb[VbVbalrKeywords#3](../../../visual-basic/language-reference/codesnippet/VisualBasic/partial_1.vb)]  
+ [!code-vb[VbVbalrKeywords#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#3)]  
   
  The two partial definitions in the preceding example could be in the same source file or in two different source files.  
   
-## See Also  
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
- [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)  
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)
+## See also
+- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
+- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)
+- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)

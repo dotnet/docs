@@ -31,7 +31,7 @@ HRESULT DebugActiveProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [in] The ID of the process to which the debugger is to be attached.  
   
@@ -53,5 +53,5 @@ HRESULT DebugActiveProcess (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+## See also
+- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

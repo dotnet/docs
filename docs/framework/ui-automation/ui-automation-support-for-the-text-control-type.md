@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Text control type"
   - "control types, Text"
 ms.assetid: ab0d0ada-8a71-4547-9c03-aadf675938f2
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Text Control Type
 > [!NOTE]
@@ -81,7 +79,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Text>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Text>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

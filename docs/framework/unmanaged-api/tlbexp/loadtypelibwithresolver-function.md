@@ -30,7 +30,7 @@ HRESULT LoadTypeLibWithResolver(
     [out] ITypeLib          **pptlib);  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFile`  
  [in] The file path of the type library.  
   
@@ -87,6 +87,6 @@ HRESULT LoadTypeLibWithResolver(
   
  **.NET Framework Version:** 3.5, 3.0, 2.0  
   
-## See Also  
- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
- [LoadTypeLibEx Function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)
+## See also
+- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)
+- [LoadTypeLibEx Function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

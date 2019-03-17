@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "providers, UI Automation"
   - "UI Automation, clients"
 ms.assetid: 69eebd8b-39ed-40e7-93cc-4457c4caf746
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Events Overview
 > [!NOTE]
@@ -77,7 +75,7 @@ ms.author: "mhopkins"
   
  For a list of event identifiers, see [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md).  
   
-## See Also  
- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)  
- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)
+## See also
+- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)
+- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)

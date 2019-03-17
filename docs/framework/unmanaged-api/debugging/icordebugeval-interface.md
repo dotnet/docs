@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugEval Interface1"
+title: "ICorDebugEval Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugEval"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugEval Interface1
+# ICorDebugEval Interface
+
 Provides methods to enable the debugger to execute code within the context of the code being debugged.  
   
 ## Methods  
@@ -56,8 +57,8 @@ Provides methods to enable the debugger to execute code within the context of th
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
-    
-    
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+
+
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -20,19 +20,19 @@ If you have defined a class or structure, you can define a type conversion opera
 ## Example  
  The following example defines conversion operators between a structure called `digit` and a `Byte`.  
   
- [!code-vb[VbVbcnProcedures#27](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_1.vb)]  
+ [!code-vb[VbVbcnProcedures#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#27)]  
   
  You can test the structure `digit` with the following code.  
   
- [!code-vb[VbVbcnProcedures#28](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_2.vb)]  
+ [!code-vb[VbVbcnProcedures#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#28)]  
   
-## See Also  
- [Operator Procedures](./operator-procedures.md)  
- [How to: Define an Operator](./how-to-define-an-operator.md)  
- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)  
- [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md)  
- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)  
- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)  
- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)  
- [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
- [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+## See also
+- [Operator Procedures](./operator-procedures.md)
+- [How to: Define an Operator](./how-to-define-an-operator.md)
+- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)
+- [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md)
+- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)
+- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)
+- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
+- [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)

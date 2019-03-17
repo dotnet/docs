@@ -169,8 +169,8 @@ public class TestPlatformInvoke
 }  
 ```  
   
-## See Also  
- [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)  
- <xref:System.Runtime.InteropServices.StructLayoutAttribute>  
- <xref:System.Runtime.InteropServices.StructLayoutAttribute>  
- <xref:System.Runtime.InteropServices.FieldOffsetAttribute>
+## See also
+- [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)
+- <xref:System.Runtime.InteropServices.StructLayoutAttribute>
+- <xref:System.Runtime.InteropServices.StructLayoutAttribute>
+- <xref:System.Runtime.InteropServices.FieldOffsetAttribute>

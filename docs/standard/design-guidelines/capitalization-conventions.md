@@ -100,5 +100,5 @@ The guidelines in this chapter lay out a simple method for using case that, when
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)

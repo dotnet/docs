@@ -29,7 +29,7 @@ HRESULT IsValueClass (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbIsValueClass`  
  [out] A pointer to a Boolean value that is `true` if the object value, represented by this "ICorDebugObjectValue", is a value type rather than a reference type; otherwise, `pbIsValueClass` is `false`.  
   
@@ -42,6 +42,6 @@ HRESULT IsValueClass (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- 
+## See also
+
+

@@ -1,5 +1,5 @@
 ---
-title: "AddImport Method1"
+title: "AddImport Method"
 ms.date: "03/30/2017"
 api_name: 
   - "AddImport"
@@ -18,7 +18,7 @@ topic_type:
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# AddImport Method1
+# AddImport Method
 Adds imports to the assembly.  
   
 ## Syntax  
@@ -32,7 +32,7 @@ HRESULT AddImport(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  Unique ID of assembly to be augmented.  
   
@@ -51,7 +51,7 @@ HRESULT AddImport(
 ## Requirements  
  Requires alink.h  
   
-## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

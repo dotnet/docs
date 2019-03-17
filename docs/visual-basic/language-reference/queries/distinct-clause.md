@@ -24,11 +24,11 @@ Distinct
 ## Example  
  The following query expression joins a list of customers and a list of customer orders. The `Distinct` clause is included to return a list of unique customer names and order dates.  
   
- [!code-vb[VbSimpleQuerySamples#20](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/distinct-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#20)]  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
+## See also
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)

@@ -29,7 +29,7 @@ HRESULT SuspensionEnding (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Generation`  
  [in] The generation on which a garbage collection has been performed.  
   
@@ -45,5 +45,5 @@ HRESULT SuspensionEnding (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IGCThreadControl Interface](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md)
+## See also
+- [IGCThreadControl Interface](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md)

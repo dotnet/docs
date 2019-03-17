@@ -27,7 +27,7 @@ Merges into the current scope all the metadata scopes specified by one or more p
 HRESULT MergeEnd ();  
 ```  
   
-#### Parameters  
+## Parameters  
  This method takes no parameters.  
   
 ## Remarks  
@@ -64,6 +64,6 @@ HRESULT MergeEnd ();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

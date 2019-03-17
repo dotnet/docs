@@ -29,7 +29,7 @@ HRESULT GetPointerSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pointerSize`  
  [out] A pointer to an integer value that specifies the size, in bytes, of a pointer on the target process.  
   
@@ -45,5 +45,5 @@ HRESULT GetPointerSize (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+## See also
+- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

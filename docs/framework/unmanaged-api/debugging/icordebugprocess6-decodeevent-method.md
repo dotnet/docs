@@ -21,7 +21,7 @@ HRESULT DecodeEvent(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRecord`  
  [in] A pointer to a byte array from a native exception debug event that includes information about a managed debug event.  
   
@@ -54,6 +54,6 @@ HRESULT DecodeEvent(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

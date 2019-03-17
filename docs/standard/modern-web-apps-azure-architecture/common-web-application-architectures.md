@@ -3,7 +3,7 @@ title: Common web application architectures
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Explore the common web application architectures
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/28/2018
+ms.date: 01/30/2019
 ---
 # Common web application architectures
 
@@ -81,7 +81,7 @@ As application needs grow, more complex and robust deployment solutions may be r
 
 Internally, this project's organization into multiple projects based on responsibility improves the maintainability of the application.
 
-This unit can be scaled up or out to take advantage of cloud-based on-demand scalability. Scaling up means adding additional CPU, memory, disk space, or other resources to the server(s) hosting your app. Scaling out means adding additional instances of such servers, whether these are physical servers or virtual machines. When your app is hosted across multiple instances, a load balancer is used to assign requests to individual app instances.
+This unit can be scaled up or out to take advantage of cloud-based on-demand scalability. Scaling up means adding additional CPU, memory, disk space, or other resources to the server(s) hosting your app. Scaling out means adding additional instances of such servers, whether these are physical servers, virtual machines, or containers. When your app is hosted across multiple instances, a load balancer is used to assign requests to individual app instances.
 
 The simplest approach to scaling a web application in Azure is to configure scaling manually in the application's App Service Plan. Figure 5-6 shows the appropriate Azure dashboard screen to configure how many instances are serving an app.
 
@@ -206,9 +206,9 @@ Deploying updates as Docker images is far faster and network efficient. Docker I
 
 As containers are inherently immutable by design, you never need to worry about corrupted VMs, whereas update scripts might forget to account for some specific configuration or file left on disk.
 
-_You can use Docker containers for monolithic deployment of simpler web applications. This improves continuous integration and continuous deployment pipelines and helps achieve deployment-to-production success. No more “It works in my machine, why does it not work in production?”_
+You can use Docker containers for monolithic deployment of simpler web applications. This improves continuous integration and continuous deployment pipelines and helps achieve deployment-to-production success. No more “It works in my machine, why does it not work in production?”
 
-A microservices-based architecture has many benefits, but those benefits come at a cost of increased complexity. In some cases, the costs outweigh the benefits, a monolithic deployment application running in a single container or in just a few containers is a better option.
+A microservices-based architecture has many benefits, but those benefits come at a cost of increased complexity. In some cases, the costs outweigh the benefits, so a monolithic deployment application running in a single container or in just a few containers is a better option.
 
 A monolithic application might not be easily decomposable into well-separated microservices. Microservices should work independently of each other to provide a more resilient application. If you can't deliver independent feature slices of the application, separating it only adds complexity.
 
@@ -218,7 +218,7 @@ Early in the development of an application, you might not have a clear idea wher
 
 Separating an application into many discrete processes also introduces overhead. There's more complexity in separating features into different processes. The communication protocols become more complex. Instead of method calls, you must use asynchronous communications between services. As you move to a microservices architecture, you need to add many of the building blocks implemented in the microservices version of the eShopOnContainers application: event bus handling, message resiliency and retries, eventual consistency, and more.
 
-The much simpler [eShopOnWeb reference application](https://github.com/dotnet-architecture/eShopOnWeb) supports single-container monolithic container usage. The application includes two web applications: one using traditional MVC and another using Razor Pages. Both can be launched from the solution root using the `docker-compose build` and `docker-compose up` commands. This command configures separate containers for each web instance, using the `Dockerfile` found in each web project's root, and runs each container on a separate port. You can download the source for this application from GitHub and run it locally. Even this monolithic application benefits from being deployed in a container environment.
+The much simpler [eShopOnWeb reference application](https://github.com/dotnet-architecture/eShopOnWeb) supports single-container monolithic container usage. The application includes one web application that includes traditional MVC views, web APIs, and Razor Pages. This application can be launched from the solution root using the `docker-compose build` and `docker-compose up` commands. This command configures a container for the web instance, using the `Dockerfile` found in the web project's root, and runs the container on a specified port. You can download the source for this application from GitHub and run it locally. Even this monolithic application benefits from being deployed in a container environment.
 
 For one, the containerized deployment means that every instance of the application runs in the same environment. This includes the developer environment where early testing and development take place. The development team can run the application in a containerized environment that matches the production environment.
 
@@ -230,24 +230,14 @@ Finally, containerizing the application forces a separation between the business
 
 The `eShopOnWeb` project runs on .NET Core. Therefore, it can run in either Linux-based or Windows-based containers. Note that for Docker deployment, you want to use the same host type for SQL Server. Linux-based containers allow a smaller footprint and are preferred.
 
-You can use Visual Studio 2017 to add Docker support to an existing application by right-clicking on a project in **Solution Explorer** and choosing **Add** > **Docker Support**. This adds the files required and modifies the project to use them. The current `eShopOnWeb` sample already has these files in place.
+You can use Visual Studio 2017 or later to add Docker support to an existing application by right-clicking on a project in **Solution Explorer** and choosing **Add** > **Docker Support**. This adds the files required and modifies the project to use them. The current `eShopOnWeb` sample already has these files in place.
 
-The solution-level `docker-compose.yml` file contains information about what images to build and what containers to launch. The file allows you to use the `docker-compose` command to launch both versions of the web application at the same time. You can also use it to configure dependencies, such as a separate database container.
+The solution-level `docker-compose.yml` file contains information about what images to build and what containers to launch. The file allows you to use the `docker-compose` command to launch multiple applications at the same time. In this case, it is only launching the Web project. You can also use it to configure dependencies, such as a separate database container.
 
 ```yml
 version: '3'
 
 services:
-  eshopwebrazor:
-    image: eshopwebrazor
-    build:
-      context: .
-      dockerfile: src/WebRazorPages/Dockerfile
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "5107:5107"
-
   eshopwebmvc:
     image: eshopwebmvc
     build:
@@ -264,28 +254,27 @@ networks:
       name: nat
 ```
 
-The `docker-compose.yml` file references the `Dockerfile` in the `Web` and `WebRazorPages` projects. The `Dockerfile` is used to specify which base container will be used and how the application will be configured on it. The `WebRazorPages`' `Dockerfile`:
+The `docker-compose.yml` file references the `Dockerfile` in the `Web` project. The `Dockerfile` is used to specify which base container will be used and how the application will be configured on it. The `Web`' `Dockerfile`:
 
 ```
-FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /app
-EXPOSE 80
 
-FROM microsoft/aspnetcore-build:2.1.300-preview1 AS build
-RUN npm install -g bower@1.8.4
-WORKDIR /src
+COPY *.sln .
 COPY . .
-WORKDIR /src/src/WebRazorPages
-RUN dotnet restore -nowarn:msb3202,nu1503
-RUN dotnet build --no-restore -c Release -o /app
+WORKDIR /app/src/Web
+RUN dotnet restore
 
-FROM build AS publish
-RUN dotnet publish --no-restore -c Release -o /app
+RUN dotnet publish -c Release -o out
 
-FROM base AS final
+FROM microsoft/dotnet:2.2-aspnetcore-runtime AS runtime
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "Microsoft.eShopWeb.RazorPages.dll"]
+COPY --from=build /app/src/Web/out ./
+
+# Optional: Set this here if not setting it from docker-compose.yml
+# ENV ASPNETCORE_ENVIRONMENT Development
+
+ENTRYPOINT ["dotnet", "Web.dll"]
 ```
 
 ### Troubleshooting Docker problems
@@ -294,10 +283,9 @@ Once you run the containerized application, it continues to run until you stop i
 
 Note that running Docker containers may be bound to ports you might otherwise try to use in your development environment. If you try to run or debug an application using the same port as a running Docker container, you'll get an error stating that the server can't bind to that port. Once again, stopping the container should resolve the issue.
 
-If you want to add Docker support to your application using Visual Studio, make sure Docker is running when you do so. The wizard won't run correctly if Docker isn't running when you start the wizard. In addition, the wizard examines your current container choice to add the correct Docker support. If you want to add support for Windows Containers, you need to run the wizard while you have Docker running with Windows Containers configured. If you want to add support for Linux containers, run the wizard while you have Docker running with Linux containers configured.
+If you want to add Docker support to your application using Visual Studio, make sure Docker Desktop is running when you do so. The wizard won't run correctly if Docker Desktop isn't running when you start the wizard. In addition, the wizard examines your current container choice to add the correct Docker support. If you want to add support for Windows Containers, you need to run the wizard while you have Docker Desktop running with Windows Containers configured. If you want to add support for Linux containers, run the wizard while you have Docker running with Linux containers configured.
 
-> ### References – Common web architectures
->
+### References – Common web architectures
 > - **The Clean Architecture**  
 >   <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
 > - **The Onion Architecture**  

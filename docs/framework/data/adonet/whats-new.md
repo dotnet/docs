@@ -1,9 +1,9 @@
 ---
-title: "What&#39;s New in ADO.NET"
+title: "What's New in ADO.NET"
 ms.date: "03/30/2017"
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
 ---
-# What&#39;s New in ADO.NET
+# What's New in ADO.NET
 The following features are new in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] in the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].  
   
 ## SqlClient Data Provider  
@@ -44,9 +44,9 @@ The following features are new in [!INCLUDE[vstecado](../../../../includes/vstec
 ## ADO.NET Entity Framework  
  The [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](https://go.microsoft.com/fwlink/?LinkID=251106) and [Entity Framework Releases and Versioning](https://go.microsoft.com/fwlink/?LinkId=234899).  
   
-## See Also  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
- [What's New in WCF Data Services](https://msdn.microsoft.com/library/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)
+- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)
+- [What's New in WCF Data Services 5.0](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

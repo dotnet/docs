@@ -1,9 +1,9 @@
 ---
-title: "&lt;messageLogging&gt;"
+title: "<messageLogging>"
 ms.date: "03/30/2017"
 ms.assetid: 1d06a7e6-9633-4a12-8c5d-123adbbc19c5
 ---
-# &lt;messageLogging&gt;
+# \<messageLogging>
 This element defines the settings for the message-logging capabilities of Windows Communication Foundation (WCF).  
   
  \<system.ServiceModel>  
@@ -115,9 +115,9 @@ This element defines the settings for the message-logging capabilities of Window
 </messageLogging>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.DiagnosticSection>  
- <xref:System.ServiceModel.Diagnostics>  
- <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>  
- <xref:System.ServiceModel.Configuration.MessageLoggingElement>  
- [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)
+## See also
+- <xref:System.ServiceModel.Configuration.DiagnosticSection>
+- <xref:System.ServiceModel.Diagnostics>
+- <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>
+- <xref:System.ServiceModel.Configuration.MessageLoggingElement>
+- [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)

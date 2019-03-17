@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugContext Interface1"
+title: "ICorDebugContext Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugContext"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugContext Interface1
+# ICorDebugContext Interface
+
 Represents a context object. This interface has not been implemented yet.  
   
 ## Remarks  
@@ -34,5 +35,5 @@ Represents a context object. This interface has not been implemented yet.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

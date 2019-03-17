@@ -33,5 +33,5 @@ Provides functions for the Edit and Continue feature.
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+## See also
+- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

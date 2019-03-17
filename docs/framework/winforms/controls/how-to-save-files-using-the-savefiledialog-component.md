@@ -26,7 +26,7 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
      In the example below, there is a <xref:System.Windows.Forms.Button> control with an image assigned to it. When you click the button, a <xref:System.Windows.Forms.SaveFileDialog> component is instantiated with a filter that allows files of type .gif, .jpeg, and .bmp. If a file of this type is selected in the Save File dialog box, the button's image is saved.  
   
     > [!IMPORTANT]
-    >  To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../../../docs/framework/misc/code-access-security-basics.md).  
+    >  To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../misc/code-access-security-basics.md).  
   
      The example assumes your form has a <xref:System.Windows.Forms.Button> control with its <xref:System.Windows.Forms.ButtonBase.Image%2A> property set to a file of type .gif, .jpeg, or .bmp.  
   
@@ -171,6 +171,6 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
     > [!NOTE]
     >  Certain controls, such as the <xref:System.Windows.Forms.RichTextBox> control, have the ability to save files. For more information, see the "SaveFileDialog Component" section of the MSDN Online Library technical article, [Essential Code for Windows Forms Dialog Boxes](https://go.microsoft.com/fwlink/?LinkID=102575).  
   
-## See Also  
- <xref:System.Windows.Forms.SaveFileDialog>  
- [SaveFileDialog Component](../../../../docs/framework/winforms/controls/savefiledialog-component-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.SaveFileDialog>
+- [SaveFileDialog Component](savefiledialog-component-windows-forms.md)

@@ -16,7 +16,7 @@ ms.assetid: b3ec38cb-f509-4d0b-bd79-9f3611259c62
 # How to: Navigate to a URL with the WebBrowser Control
 The following code example demonstrates how to navigate the <xref:System.Windows.Forms.WebBrowser> control to a specific URL.  
   
- To determine when the new document is fully loaded, handle the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. For a demonstration of this event, see [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md).  
+ To determine when the new document is fully loaded, handle the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. For a demonstration of this event, see [How to: Print with a WebBrowser Control](how-to-print-with-a-webbrowser-control.md).  
   
 ## Example  
   
@@ -35,10 +35,10 @@ this.webBrowser1.Navigate("http://www.microsoft.com");
   
 -   References to the `System` and `System.Windows.Forms` assemblies.  
   
-## See Also  
- <xref:System.Windows.Forms.WebBrowser>  
- <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=nameWithType>  
- [WebBrowser Control](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)  
- [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md)
+## See also
+- <xref:System.Windows.Forms.WebBrowser>
+- <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=nameWithType>
+- [WebBrowser Control](webbrowser-control-windows-forms.md)
+- [How to: Print with a WebBrowser Control](how-to-print-with-a-webbrowser-control.md)

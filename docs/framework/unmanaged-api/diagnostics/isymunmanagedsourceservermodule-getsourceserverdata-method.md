@@ -29,7 +29,7 @@ HRESULT GetSourceServerData(
     [out, size_is (, *pDataByteCount)] BYTE** ppData);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDataByteCount`  
  [out] A pointer to a `ULONG32` that receives the size, in bytes, of the source server data.  
   
@@ -42,5 +42,5 @@ HRESULT GetSourceServerData(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedSourceServerModule Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsourceservermodule-interface.md)
+## See also
+- [ISymUnmanagedSourceServerModule Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsourceservermodule-interface.md)

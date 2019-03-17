@@ -33,7 +33,7 @@ HRESULT FormatEventInfo(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hVECode`  
  [in] The HRESULT value that was passed to the validation error handler.  
   
@@ -58,5 +58,5 @@ HRESULT FormatEventInfo(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- 
+## See also
+

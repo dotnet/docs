@@ -117,5 +117,5 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
   
 5.  At this point, you have a collection of service endpoints. For more information about importing metadata, see [How to: Import Metadata into Service Endpoints](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md).  
   
-## See Also  
- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
+## See also
+- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)

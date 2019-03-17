@@ -29,7 +29,7 @@ HRESULT GetCurrentDisplay (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `display`  
  [out, retval] A pointer to a safearray containing the binding display information.  
   
@@ -47,6 +47,6 @@ HRESULT GetCurrentDisplay (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IBindingDisplay Interface](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md)  
- [InitializeForProcess Method](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-initializeforprocess-method.md)
+## See also
+- [IBindingDisplay Interface](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md)
+- [InitializeForProcess Method](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-initializeforprocess-method.md)

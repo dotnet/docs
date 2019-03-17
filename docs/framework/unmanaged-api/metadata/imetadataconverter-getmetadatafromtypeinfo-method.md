@@ -30,7 +30,7 @@ HRESULT GetMetaDataFromTypeInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pITI`  
  [in] A pointer to an `ITypeInfo` object that refers to the type library.  
   
@@ -46,6 +46,6 @@ HRESULT GetMetaDataFromTypeInfo (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

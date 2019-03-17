@@ -17,5 +17,5 @@ Compares keys from collections being joined.
   
  [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

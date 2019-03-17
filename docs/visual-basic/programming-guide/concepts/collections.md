@@ -221,7 +221,7 @@ End Class
  The <xref:System.Collections.Specialized> namespace provides specialized and strongly typed collection classes, such as string-only collections and linked-list and hybrid dictionaries.  
 
 <a name="BKMK_VisualBasic"></a> 
-###  Visual Basic Collection Class  
+### Visual Basic Collection Class  
  You can use the Visual Basic <xref:Microsoft.VisualBasic.Collection> class to access a collection item by using either a numeric index or a `String` key. You can add items to a collection object either with or without specifying a key. If you add an item without a key, you must use its numeric index to access it.  
   
  The Visual Basic `Collection` class stores all its elements as type `Object`, so you can add an item of any data type. There is no safeguard against inappropriate data types being added.  
@@ -331,7 +331,7 @@ End Sub
 ```  
   
 <a name="BKMK_LINQ"></a> 
-##  Using LINQ to Access a Collection  
+## Using LINQ to Access a Collection  
  LINQ (Language-Integrated Query) can be used to access collections. LINQ queries provide filtering, ordering, and grouping capabilities. For more information, see [Getting Started with LINQ in Visual Basic](../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md).  
   
  The following example runs a LINQ query against a generic `List`. The LINQ query returns a different collection that contains the results.  
@@ -456,7 +456,7 @@ End Class
   
 <a name="BKMK_CustomCollection"></a> 
 ## Defining a Custom Collection  
- You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface. For additional information, see [Enumerating a Collection](https://msdn.microsoft.com/library/71807ea7-9180-48a6-916f-35a5251d477f).  
+ You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface. For additional information, see [Enumerating a Collection](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hwyysy67(v=vs.100)).
   
  Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](#kinds-of-collections) earlier in this topic.  
   
@@ -533,7 +533,7 @@ End Class
 ```  
   
 <a name="BKMK_Iterators"></a>
-##  Iterators  
+## Iterators  
  An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) statement to return each element of the collection one at a time.  
   
  You call an iterator by using a [For Each…Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md) statement. Each iteration of the `For Each` loop calls the iterator. When a `Yield` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.  
@@ -566,13 +566,12 @@ End Function
   
 ## See also
 
-- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
-- [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)  
-- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
-- [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
-- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
-- [Collections and Data Structures](../../../standard/collections/index.md)  
-- [Creating and Manipulating Collections](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
-- [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)  
-- [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
+- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
+- [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)
+- [Collections and Data Structures](../../../standard/collections/index.md)
+- [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)
+- [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)
 - [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)

@@ -13,6 +13,6 @@ Id: 159
 ## Description  
  This event indicates that an error occurred while parsing the specific binding of the specific site, thus the protocol is disabled for the site temporarily. The event lists the binding, source, exception, process name and process ID.  
   
-## See Also  
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+## See also
+- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
+- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

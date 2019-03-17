@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStepperEnum Interface1"
+title: "ICorDebugStepperEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugStepperEnum"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugStepperEnum Interface1
+# ICorDebugStepperEnum Interface
 Implements ICorDebugEnum methods, and enumerates ICorDebugStepper arrays.  
   
 ## Methods  
@@ -40,5 +40,5 @@ Implements ICorDebugEnum methods, and enumerates ICorDebugStepper arrays.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

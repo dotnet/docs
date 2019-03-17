@@ -29,7 +29,7 @@ HRESULT SwitchInLogicalThreadState(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFiberCookie`  
  [in] Cookie that indicates the fiber to use.  
   
@@ -42,5 +42,5 @@ HRESULT SwitchInLogicalThreadState(
   
  **.NET Framework Version:** 1.0, 1.1  
   
-## See Also  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

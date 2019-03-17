@@ -28,7 +28,7 @@ HRESULT GetHRESULT(
     [out] HRESULT *phr);  
 ```  
   
-#### Parameters  
+## Parameters  
  `phr`  
  [out] A pointer to the HRESULT.  
   
@@ -38,5 +38,5 @@ HRESULT GetHRESULT(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsymbolsearchinfo-interface.md)
+## See also
+- [ISymUnmanagedSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsymbolsearchinfo-interface.md)

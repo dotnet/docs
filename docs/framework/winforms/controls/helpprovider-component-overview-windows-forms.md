@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 6b10c2cc-c577-4cb5-9669-e37b33416af9
 ---
 # HelpProvider Component Overview (Windows Forms)
-The Windows Forms [HelpProvider](../../../../docs/framework/winforms/controls/helpprovider-component-windows-forms.md) component is used to associate an HTML Help 1.x Help file (either a .chm file, produced with the HTML Help Workshop, or an .htm file) with your Windows application. You can provide help in a variety of ways:  
+The Windows Forms [HelpProvider](helpprovider-component-windows-forms.md) component is used to associate an HTML Help 1.x Help file (either a .chm file, produced with the HTML Help Workshop, or an .htm file) with your Windows application. You can provide help in a variety of ways:  
   
 -   Provide context-sensitive Help for controls on Windows Forms.  
   
@@ -28,7 +28,7 @@ The Windows Forms [HelpProvider](../../../../docs/framework/winforms/controls/he
  If <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> has not been set, you must use <xref:System.Windows.Forms.HelpProvider.SetHelpString%2A> to provide the Help text. If you have set both <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> and the Help string, Help based on <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> will take precedence.  
   
 > [!NOTE]
->  You may encounter problems using the relative path when specifiying the path to the Help file in the <xref:System.Windows.Forms.Help.ShowHelp%2A> method or <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property of the <xref:System.Windows.Forms.HelpProvider> control. As such, be sure to use the absolute file path to specify the Help file.  
+>  You may encounter problems using the relative path when specifying the path to the Help file in the <xref:System.Windows.Forms.Help.ShowHelp%2A> method or <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property of the <xref:System.Windows.Forms.HelpProvider> control. As such, be sure to use the absolute file path to specify the Help file.  
   
-## See Also  
- [Help Systems in Windows Forms Applications](../../../../docs/framework/winforms/advanced/help-systems-in-windows-forms-applications.md)
+## See also
+- [Help Systems in Windows Forms Applications](../advanced/help-systems-in-windows-forms-applications.md)

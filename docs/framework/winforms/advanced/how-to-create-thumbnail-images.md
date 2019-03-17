@@ -15,9 +15,9 @@ A thumbnail image is a small version of an image. You can create a thumbnail ima
 ## Example  
  The following example constructs an <xref:System.Drawing.Image> object from a JPG file. The original image has a width of 640 pixels and a height of 479 pixels. The code creates a thumbnail image that has a width of 100 pixels and a height of 100 pixels.  
   
- The following illustration shows the thumbnail image.  
+ The following illustration shows the thumbnail image:  
   
- ![Thumbnail Image](./media/thumbnail1.png "Thumbnail1")  
+ ![Screenshot that shows the output thumbnail.](./media/how-to-create-thumbnail-images/construct-thumbnail-image.png)  
   
 > [!NOTE]
 >  In this example, a callback method is declared, but never used. This supports all versions of GDI+.  

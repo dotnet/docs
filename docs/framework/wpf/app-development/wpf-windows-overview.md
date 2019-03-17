@@ -276,13 +276,13 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 <a name="Window_Lifetime_Events"></a>   
 ### Window Lifetime Events  
- The following illustration shows the sequence of the principal events in the lifetime of a window.  
+ The following illustration shows the sequence of the principal events in the lifetime of a window:  
   
- ![Window Lifetime](./media/windowlifetimeevents.png "WindowLifetimeEvents")  
+ ![Diagram that shows events in a window's lifetime.](./media/wpf-windows-overview/window-lifetime-events.png)  
   
- The following illustration shows the sequence of the principal events in the lifetime of a window that is shown without activation (<xref:System.Windows.Window.ShowActivated%2A> is set to `false` before the window is shown).  
+ The following illustration shows the sequence of the principal events in the lifetime of a window that is shown without activation (<xref:System.Windows.Window.ShowActivated%2A> is set to `false` before the window is shown):  
   
- ![Window Lifetime &#40;Window.ShowActivated &#61; False&#41;](./media/windowlifetimenoact.png "WindowLifetimeNoAct")  
+ ![Window Lifetime &#40;Window.ShowActivated &#61; False&#41;](./media/wpf-windows-overview/window-lifetime-no-activation.png)  
   
 <a name="WindowLocation"></a>   
 ## Window Location  
@@ -431,9 +431,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 -   <xref:System.Windows.WindowStyle.ToolWindow>  
   
- The effect of these window styles are illustrated in the following figure.  
+ The effect of these window styles are illustrated in the following figure:  
   
- ![Window styles](./media/windowoverviewfigure6.PNG "WindowOverviewFigure6")  
+ ![Illustration of window border styles.](./media/wpf-windows-overview/window-border-styles.png)  
   
  You can set <xref:System.Windows.Window.WindowStyle%2A> using either [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup or code; because it is unlikely to change during the lifetime of a window, you will most likely configure it using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup.  
   
@@ -442,9 +442,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 #### Non-Rectangular Window Style  
  There are also situations where the border styles that <xref:System.Windows.Window.WindowStyle%2A> allows you to have are not sufficient. For example, you may want to create an application with a non-rectangular border, like [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] uses.  
   
- For example, consider the speech bubble window shown in the following figure.  
+ For example, consider the speech bubble window shown in the following figure:  
   
- ![Nonrectangular window](./media/nonrectangularwindowfigure.PNG "NonRectangularWindowFigure")  
+ ![Screenshot that shows a nonrectangular window.](./media/wpf-windows-overview/non-rectangular-window-figure.png)  
   
  This type of window can be created by setting the <xref:System.Windows.Window.WindowStyle%2A> property to <xref:System.Windows.WindowStyle.None>, and by using special support that <xref:System.Windows.Window> has for transparency.  
   

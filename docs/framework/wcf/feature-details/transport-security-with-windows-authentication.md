@@ -11,7 +11,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
   
  An intranet Web service displays human resources information. The client is a Windows Form application. The application is deployed in a domain with a Kerberos controller securing the domain.  
   
- ![Transport security with Windows authentication](../../../../docs/framework/wcf/feature-details/media/securedbywindows.gif "SecuredByWindows")  
+ ![Transport security with Windows authentication](./media/transport-security-with-windows-authentication/secured-windows-authentication.gif)  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  

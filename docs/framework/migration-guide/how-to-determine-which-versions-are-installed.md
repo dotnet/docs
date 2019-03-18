@@ -1,6 +1,6 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed"
-ms.date: "02/26/2019"
+ms.date: "03/18/2019"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,7 +14,7 @@ ms.author: "ronpet"
 ---
 # How to: Determine which .NET Framework versions are installed
 
-When users [install the .NET Framework](https://docs.microsoft.com/dotnet/framework/install), they can install and run multiple versions of it on their computers. For an app that you develop or deploy to run properly on a user's computer, it might need to know which .NET Framework versions are installed. 
+Users can [install](https://docs.microsoft.com/dotnet/framework/install) and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer. 
 
 The .NET Framework consists of two main components, which are versioned separately:  
   
@@ -98,7 +98,7 @@ For a complete table of release keys for the .NET Framework for specific Windows
 
 1. Use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A?displayProperty=nameWithType> methods to access the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** subkey in the Windows registry.
 
-    The existence of the **Release** DWORD entry in the subkey indicates that the .NET Framework 4.5 or a later version is installed on a computer. 
+    The existence of the **Release** DWORD entry in the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** subkey indicates that the .NET Framework 4.5 or a later version is installed on a computer. 
 
 2. Check the value of the **Release** entry to determine the installed version. To be forward-compatible, check for a value greater than or equal to the value listed in the [.NET Framework version table](#version_table).
 

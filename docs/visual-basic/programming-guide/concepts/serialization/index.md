@@ -9,7 +9,7 @@ Serialization is the process of converting an object into a stream of bytes in o
 ## How Serialization Works  
  This illustration shows the overall process of serialization.  
   
-![Serialization graphic](./media/index/serialization-graphic.gif)
+![Serialization graphic](./media/index/serialization-process.gif)
   
  The object is serialized to a stream, which carries not just the data, but information about the object's type, such as its version, culture, and assembly name. From that stream, it can be stored in a database, a file, or memory.  
   

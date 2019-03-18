@@ -317,7 +317,7 @@ All applications tend to share a common set of functionality that applies to app
 ### Unhandled Exceptions  
  Sometimes an application may shut down under abnormal conditions, such as when an unanticipated exception is thrown. In this case, the application may not have the code to detect and process the exception. This type of exception is an unhandled exception; a notification similar to that shown in the following figure is displayed before the application is closed.  
   
- ![Unhandled exception notification](./media/applicationmanagementoverviewfigure2.png "ApplicationManagementOverviewFigure2")  
+ ![Screenshot that shows an unhandled exception notification.](./media/application-management-overview/unhandled-exception-notification.png)  
   
  From the user experience perspective, it is better for an application to avoid this default behavior by doing some or all of the following:  
   

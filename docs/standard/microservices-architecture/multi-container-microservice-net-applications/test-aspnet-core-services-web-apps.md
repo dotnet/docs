@@ -99,25 +99,25 @@ public class PrimeWebDefaultRequestShould
 #### Additional resources
 
 - **Steve Smith. Testing controllers** (ASP.NET Core) <br/>
-    [*https://docs.microsoft.com/aspnet/core/mvc/controllers/testing*](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing)
+    [https://docs.microsoft.com/aspnet/core/mvc/controllers/testing](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing)
 
 - **Steve Smith. Integration testing** (ASP.NET Core) <br/>
-    [*https://docs.microsoft.com/aspnet/core/test/integration-tests*](https://docs.microsoft.com/aspnet/core/test/integration-tests)
+    [https://docs.microsoft.com/aspnet/core/test/integration-tests](https://docs.microsoft.com/aspnet/core/test/integration-tests)
 
 - **Unit testing in .NET Core using dotnet test** <br/>
-    [*https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test*](../../../core/testing/unit-testing-with-dotnet-test.md)
+    [https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test](../../../core/testing/unit-testing-with-dotnet-test.md)
 
 - **xUnit.net**. Official site. <br/>
-    [*https://xunit.github.io/*](https://xunit.github.io/)
+    [https://xunit.github.io/](https://xunit.github.io/)
 
 - **Unit Test Basics.** <br/>
-    [*https://docs.microsoft.com/visualstudio/test/unit-test-basics*](/visualstudio/test/unit-test-basics)
+    [https://docs.microsoft.com/visualstudio/test/unit-test-basics](/visualstudio/test/unit-test-basics)
 
 - **Moq**. GitHub repo. <br/>
-    [*https://github.com/moq/moq*](https://github.com/moq/moq)
+    [https://github.com/moq/moq](https://github.com/moq/moq)
 
 - **NUnit**. Official site. <br/>
-    [*https://www.nunit.org/*](https://www.nunit.org/)
+    [https://www.nunit.org/](https://www.nunit.org/)
 
 ### Implementing service tests on a multi-container application
 
@@ -198,10 +198,10 @@ As you can see, these docker-compose files only start the Redis, RabbitMQ, SQL S
 ### Additional resources
 
 - **Tests README file** on the eShopOnContainers repo on GitHub <br/>
-    [*https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test*](https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test)
+    [https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test](https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test)
 
 - **Load tests README file** on the eShopOnContainers repo on GitHub <br/>
-    [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/)
+    [https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/)
 
 > [!div class="step-by-step"]
 > [Previous](subscribe-events.md)

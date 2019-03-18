@@ -152,10 +152,10 @@ Up to this point, the code shown is just performing regular Http requests, but t
 ## Additional resources
 
 - **Using HttpClientFactory in .NET Core**\
-  [*https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1*](/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1)
+  [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1](/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1)
 
 - **HttpClientFactory GitHub repo**\
-  [*https://github.com/aspnet/Extensions/tree/master/src/HttpClientFactory*](https://github.com/aspnet/Extensions/tree/master/src/HttpClientFactory)
+  <https://github.com/aspnet/Extensions/tree/master/src/HttpClientFactory>
 
 >[!div class="step-by-step"]
 >[Previous](explore-custom-http-call-retries-exponential-backoff.md)

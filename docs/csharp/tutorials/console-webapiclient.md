@@ -290,11 +290,11 @@ Compile and run the application. It will print out the names of the repositories
 Before you add more features, let's address the `repo` type and make it follow more standard
 C# conventions. You'll do this by annotating the `repo` type with *attributes* that control how
 the JSON Serializer works. In your case, you'll use these attributes to define a mapping between
-the JSON key names and the C# class and member names. The two attributes used are the `DataContract`
-attribute and the `DataMember` attribute. By convention, all Attribute classes end in the suffix
+the JSON key names and the C# class and member names. The two attributes used are the <xref:System.Runtime.Serialization.DataContractAttribute>
+attribute and the <xref:System.Runtime.Serialization.DataMemberAttribute> attributes. By convention, all Attribute classes end in the suffix
 `Attribute`. However, you do not need to use that suffix when you apply an attribute.
 
-The `DataContract` and `DataMember` attributes are in a different library, so you'll need to add
+The <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes are in a different library, so you'll need to add
 that library to your C# project file as a dependency. Add the following line to the `<ItemGroup>` section of your project file:
 
 ```xml
@@ -305,7 +305,7 @@ After you save the file, run `dotnet restore` ([see note](#dotnet-restore-note))
 
 Next, open the `repo.cs` file. Let's change the name to use Pascal Case, and fully spell out the name
 `Repository`. We still want to map JSON 'repo' nodes to this type, so you'll need to add the
-`DataContract` attribute to the class declaration. You'll set the `Name` property of the attribute
+<xref:System.Runtime.Serialization.DataContractAttribute> attribute to the class declaration. You'll set the `Name` property of the attribute
 to the name of the JSON nodes that map to this type:
 
 ```csharp
@@ -465,7 +465,7 @@ string representation of the date time in your `Repository` class:
 private string JsonDate { get; set; }
 ```
 
-The `DataMember` attribute informs the serializer that this should be processed, even though it is not
+The <xref:System.Runtime.Serialization.DataMemberAttribute> attribute informs the serializer that this should be processed, even though it is not
 a public member. Next, you need to write a public read-only property that converts the string to a
 valid <xref:System.DateTime> object, and returns that <xref:System.DateTime>:
 

@@ -58,9 +58,9 @@ public class Person
 }  
 ```  
   
- You can apply the `DataContract` attribute to the `Person` class, but this is not always possible. For example, the `Person` class can be defined in a separate assembly over which you have no control.  
+ You can apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the `Person` class, but this is not always possible. For example, the `Person` class can be defined in a separate assembly over which you have no control.  
   
- Given this restriction, one way to serialize the `Person` class is to substitute it with another class that is marked with `DataContractAttribute` and copy over necessary data to the new class. The objective is to make the `Person` class appear as a DataContract to the <xref:System.Runtime.Serialization.DataContractSerializer>. Note that this is one way to serialize non-data contract classes.  
+ Given this restriction, one way to serialize the `Person` class is to substitute it with another class that is marked with <xref:System.Runtime.Serialization.DataContractAttribute> and copy over necessary data to the new class. The objective is to make the `Person` class appear as a DataContract to the <xref:System.Runtime.Serialization.DataContractSerializer>. Note that this is one way to serialize non-data contract classes.  
   
  The sample logically replaces the `Person` class with a different class named `PersonSurrogated`.  
   

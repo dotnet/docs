@@ -328,15 +328,15 @@ Note the following concerns regarding threats related to code running with parti
 
     At the same time, there are two major disadvantages.
 
-    The first disadvantage is that the opt-in property of the `InternalsVisibleTo` attribute is assembly-wide. That is, you cannot specify that only a certain class can have its internal members serialized. Of course, you can still choose not to serialize a specific internal member, by simply not adding a <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to that member. Similarly, a developer can also choose to make a member internal rather than private or protected, with slight visibility concerns.
+    The first disadvantage is that the opt-in property of the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute is assembly-wide. That is, you cannot specify that only a certain class can have its internal members serialized. Of course, you can still choose not to serialize a specific internal member, by simply not adding a <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to that member. Similarly, a developer can also choose to make a member internal rather than private or protected, with slight visibility concerns.
 
     The second disadvantage is that it still does not support private or protected members.
 
-    To illustrate the use of the `InternalsVisibleTo` attribute in partial trust, consider the following program:
+    To illustrate the use of the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute in partial trust, consider the following program:
 
     [!code-csharp[CDF_WCF_SecurityConsiderationsForData#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/cdf_wcf_securityconsiderationsfordata/cs/program.cs#1)]
 
-    In the example above, `PermissionsHelper.InternetZone` corresponds to the <xref:System.Security.PermissionSet> for partial trust. Now, without `InternalsVisibleTo` attribute, the application will fail, throwing a <xref:System.Security.SecurityException> indicating that non-public members cannot be serialized in partial trust.
+    In the example above, `PermissionsHelper.InternetZone` corresponds to the <xref:System.Security.PermissionSet> for partial trust. Now, without <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute, the application will fail, throwing a <xref:System.Security.SecurityException> indicating that non-public members cannot be serialized in partial trust.
 
     However, if we add the following line to the source file, the program runs successfully.
 

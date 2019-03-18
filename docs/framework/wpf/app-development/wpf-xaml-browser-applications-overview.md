@@ -148,7 +148,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
   
 -   In the project file, the `<TargetZone>` element value is changed to `Custom`.  
   
--   In the application manifest (app.manifest), an `Unrestricted="true"` attribute is added to the `PermissionSet` element.  
+-   In the application manifest (app.manifest), an `Unrestricted="true"` attribute is added to the `<xref:System.Security.PermissionSet> element.  
   
     ```xml
     <PermissionSet class="System.Security.PermissionSet"   

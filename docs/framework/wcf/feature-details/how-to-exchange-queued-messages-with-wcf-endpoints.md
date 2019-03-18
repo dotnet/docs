@@ -18,7 +18,7 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
      [!code-csharp[S_Msmq_Transacted#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/service.cs#1)]
      [!code-vb[S_Msmq_Transacted#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/service.vb#1)]  
   
-2.  When the service contract passes user-defined types, you must define data contracts for those types. The following code shows two data contracts, `PurchaseOrder` and `PurchaseOrderLineItem`. These two types define data that is sent to the service. (Note that the classes that define this data contract also define a number of methods. These methods are not considered part of the data contract. Only those members that are declared with the `DataMember` attribute are part of the data contract.)  
+2.  When the service contract passes user-defined types, you must define data contracts for those types. The following code shows two data contracts, `PurchaseOrder` and `PurchaseOrderLineItem`. These two types define data that is sent to the service. (Note that the classes that define this data contract also define a number of methods. These methods are not considered part of the data contract. Only those members that are declared with the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute are part of the data contract.)  
   
      [!code-csharp[S_Msmq_Transacted#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/service.cs#2)]
      [!code-vb[S_Msmq_Transacted#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/service.vb#2)]  

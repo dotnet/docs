@@ -292,7 +292,7 @@ The JWT bearer authentication middleware can also support more advanced scenario
   [https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/](https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/)
 
 - **IdentityServer4. Official documentation** \
-  *<https://identityserver4.readthedocs.io/en/latest/>*
+  <https://identityserver4.readthedocs.io/en/latest/>
 
 >[!div class="step-by-step"]
 >[Previous](../implement-resilient-applications/monitor-app-health.md)

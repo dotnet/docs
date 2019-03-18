@@ -18,7 +18,7 @@ ms.author: "mairaw"
 Be sure to choose your collection class carefully. Using the wrong type can restrict your use of the collection.  
 
 > [!IMPORTANT]
-> Avoid using the types in the <xref:System.Collections> namespace unless you are specifically targeting .NET Framework 1.1. The generic and concurrent versions of the collections are recommended because of their greater type safety and other improvements.  
+> Avoid using the types in the <xref:System.Collections> namespace. The generic and concurrent versions of the collections are recommended because of their greater type safety and other improvements.  
 
  Consider the following questions:  
   

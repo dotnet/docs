@@ -40,8 +40,6 @@ You will use the following steps to accomplish your task, as well as any other M
 
 * [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
-* You will use data from the [MovieLens Dataset](http://files.grouplens.org/datasets/movielens/) (see more detailed instructions on how to download the datasets [below](#download-your-data)).
-
 ## Select the appropriate machine learning task
 
 There are several ways to approach recommendation problems, such as recommending a list of movies or recommending a list of related products, but in this case you will predict what rating (1-5) a user will give to a particular movie and recommend that movie if it's higher than a defined threshold (the higher the rating, the higher the likelihood of a user liking a particular movie).
@@ -427,7 +425,7 @@ While this is a good start, in reality you might want to add other attributes or
 
 If you are unsure about which `Features` might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC) and [Feature Permutation Importance](../how-to-guides/determine-global-feature-importance-in-model.md), which ML.NET provides to discover the most influential `Features`.
 
-### Algorithm
+### Algorithm parameters
 
 While ML.NET provides good default training algorithms, you can further fine-tune performance by changing parameters on these individual algorithms.
 
@@ -435,7 +433,7 @@ For `Matrix Factorization`, you can experiment with Learning Rate, Approximation
 
 Here is an example of how to fine-tune the `Matrix Factorization Trainer` options:
 
-```CSharp
+```csharp
 var options = new MatrixFactorizationTrainer.Options
 {
   MatrixColumnIndexColumnName = "userIdEncoded",
@@ -447,12 +445,7 @@ var options = new MatrixFactorizationTrainer.Options
 };
 ```
 
-### New user scenario
-One common problem in collaborative filtering is the cold start problem, which is when you have a new user with no previous data to draw inferences from. This is often solved by asking new users to create a profile and, for instance, rate movies they have seen in the past. While this puts some burden on the user, it provides some starting data for new users with no rating history.
-
-## Recommended Resources
-
-### Other Recommendation Engines
+### Other Recommendation Algorithms
 This is only one approach for performing movie recommendations. In many cases, you may not have the ratings data available and only have movie history available from users. In other cases, you may have more than just the user’s rating data.
 
 | Algorithm       | Scenario           | Sample  |
@@ -460,12 +453,11 @@ This is only one approach for performing movie recommendations. In many cases, y
 | One Class Matrix Factorization | Use this when you only have userId and movieId. This style of recommendation is based upon the co-purchase scenario, or products frequently bought together, which means it will recommend to customers a set of products based upon their own purchase order history. | [>Try it out](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/MatrixFactorization_ProductRecommendation) |
 | Field Aware Factorization Machines | Use this to make recommendations when you have more Features beyond userId, productId, and rating (such as product description or product price). This also uses a collaborative filtering approach. | [>Try it out](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender) |
 
+### New user scenario
+One common problem in collaborative filtering is the cold start problem, which is when you have a new user with no previous data to draw inferences from. This is often solved by asking new users to create a profile and, for instance, rate movies they have seen in the past. While this puts some burden on the user, it provides some starting data for new users with no rating history.
 
-### Other ML.NET Scenarios
-Try out another tutorial to use ML.NET for other Machine Learning scenarios:
-
-| [Taxi fare price prediction (regression)](../tutorials/taxi-fare) | [Sentiment analysis (binary classification)](../tutorials/sentiment-analysis.md) | [Issue classification (multi-class classification)](..tutorials/github-issue-classification.md) |
-| ------------- |:-------------:| -----:|
+## Resources
+The data used in this tutorial is derived from [MovieLens Dataset](http://files.grouplens.org/datasets/movielens/).
 
 ## Next steps
 In this tutorial, you learned how to:

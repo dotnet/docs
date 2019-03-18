@@ -3092,7 +3092,13 @@ Only the <xref:System.Globalization.JapaneseCalendar> and the <xref:System.Globa
         <param name="millisecond">An integer from 0 to 999 that represents the millisecond.</param>
         <summary>Returns a <see cref="T:System.DateTime" /> that is set to the specified date and time in the current era.</summary>
         <returns>The <see cref="T:System.DateTime" /> that is set to the specified date and time in the current era.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+This method returns a date and time based on the current era of a particular calendar. For the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar>, which support multiple eras based on the reign of the emperor, calling this method can produce an unintended date when an era changes. When instantiating a date using either of these calendars, we recommend that you call the <xref:System.Globalization.JapaneseCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)?displayProperty=nameWithType> or [JapaneseLunisolarCalendar.ToDateTime(Int32,Int32,Int32,Int32,Int32,Int32,Int32,Int32)](xref:System.Globalization.EastAsianLunisolarCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)) method and explicitly specify an era. 
+
+         ]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> is outside the range supported by the calendar.  
   

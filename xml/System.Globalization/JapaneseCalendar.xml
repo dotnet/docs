@@ -49,7 +49,7 @@
 > [!NOTE]
 >  For information about using the <xref:System.Globalization.JapaneseCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
- The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
+ The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen. By default, formatting operations with specified date and time format strings, such as "D", "F", and "Y", output Gannen rather than "1" in the result string. 
 
 [!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
 
@@ -87,9 +87,9 @@
   
  The date January 1, 2001 A.D. in the Gregorian calendar is equivalent to the first day of Ichigatsu in the year Heisei 13 in the Japanese calendar.  
   
- If the application is using the <xref:System.Globalization.JapaneseCalendar> class, <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> recognizes the era abbreviations in front of the year. The abbreviation is either the single-character case-insensitive Latin alphabet abbreviation or the single-character Kanji abbreviation.  
+ If the <xref:System.Globalization.JapaneseCalendar> is the current calendar of the Japanese culture, <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> recognizes the era abbreviations in front of the year. The abbreviation is either the single-character case-insensitive Latin alphabet abbreviation or the single-character Kanji abbreviation. xref:System.DateTime.Parse%2A?displayProperty=nameWithType> also recognizes either "1" or Gannen (元年) as the first year of an era.
   
- Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> to a new <xref:System.Globalization.Calendar>.  
+ Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property to a new <xref:System.Globalization.Calendar>.
   
  ]]></format>
     </remarks>
@@ -1591,7 +1591,16 @@
   
 ## Remarks  
  The <xref:System.Globalization.JapaneseCalendar.ToDateTime%2A> method is useful because it can convert any date in the current calendar to a Gregorian calendar date. The Gregorian date can subsequently be used, for example, to compare dates in different calendars or create an equivalent date in a particular calendar.  
-  
+
+Because the <xref:System.Globalization.JapaneseCalendar> supports multiple eras based on the reign of the emperor, you should always call this method and explicitly specify an era to avoid an unintended date and to make the intent of your code clear. The example shows how to instantiate a date that is always in the current era and one that belongs to a specified era.
+
+## Examples
+
+The following example instantiates two dates. The first is always the first day of the second year in the current era, while the second identifies a specific day in the Taisho era. The output from the example was produced with the Heisei era as the current era.
+
+[!code-csharp[Specifying the era](~/samples/snippets/csharp/api/system.globalization/japanesecalendar/todatetime/program.cs)]
+[!code-vb[Specifying the era](~/samples/snippets/visualbasic/api/system.globalization/japanesecalendar/todatetime/Program.vb)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">

@@ -31,7 +31,7 @@ HRESULT DefineMethodImpl (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The `mdTypedef` token of the implementing class.  
   

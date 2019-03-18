@@ -27,7 +27,7 @@ For more in-depth information about creating services and clients, see [Basic WC
 
  [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)
 
- Describes how to implement a service contract. Once a contract is define, it must be implemented with a service class.
+ Describes how to implement a service contract. Once a contract is defined, it must be implemented with a service class.
 
  [How to: Host and Run a Basic Service](../../../docs/framework/wcf/how-to-host-and-run-a-basic-wcf-service.md)
 

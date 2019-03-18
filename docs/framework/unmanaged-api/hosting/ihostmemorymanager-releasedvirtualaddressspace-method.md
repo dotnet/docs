@@ -29,7 +29,7 @@ HRESULT ReleasedVirtualAddressSpace(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `startAddress`  
  [in] Pointer to the starting address of the memory to be released.  
   

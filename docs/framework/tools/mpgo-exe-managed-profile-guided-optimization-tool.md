@@ -35,7 +35,7 @@ For [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app
 mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>  
 ```  
   
-#### Parameters  
+## Parameters  
  All arguments to Mpgo.exe are case-insensitive. Commands are prefixed with a dash.  
   
 > [!NOTE]

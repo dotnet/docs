@@ -28,7 +28,7 @@ HRESULT GetCurrentAllocated([in]  DWORD dwAppDomainId,
                             [out] ULONGLONG* pBytesAllocated);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwAppDomainId`  
  [in] The ID of the requested application domain.  
   

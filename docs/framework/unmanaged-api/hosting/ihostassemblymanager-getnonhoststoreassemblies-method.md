@@ -29,7 +29,7 @@ HRESULT GetNonHostStoreAssemblies (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppReferenceList`  
  [out] A pointer to the address of an `ICLRAssemblyReferenceList` that contains a list of references to assemblies that the host expects the CLR to load.  
   

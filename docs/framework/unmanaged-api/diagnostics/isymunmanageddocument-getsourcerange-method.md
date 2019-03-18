@@ -35,7 +35,7 @@ HRESULT GetSourceRange(
         length_is(*pcSourceBytes)] BYTE source[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `startLine`  
  [in] The starting line in the current document.  
   

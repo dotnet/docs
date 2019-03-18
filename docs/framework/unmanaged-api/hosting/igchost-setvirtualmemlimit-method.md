@@ -29,7 +29,7 @@ HRESULT SetVirtualMemLimit (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `sztMaxVirtualMemMB`  
  [in] The maximum size, in megabytes, of the runtime's virtual memory.  
   

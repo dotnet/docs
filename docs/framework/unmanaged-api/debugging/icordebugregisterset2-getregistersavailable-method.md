@@ -30,7 +30,7 @@ HRESULT GetRegistersAvailable (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `numChunks`  
  [in] The size of the `availableRegChunks` array.  
   

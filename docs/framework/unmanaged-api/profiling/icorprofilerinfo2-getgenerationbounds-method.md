@@ -30,7 +30,7 @@ HRESULT GetGenerationBounds(
     [out, size_is(cObjectRanges), length_is(*pcObjectRanges)] COR_PRF_GC_GENERATION_RANGE ranges[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cObjectRanges`  
  [in] The number of elements allocated by the caller for the `ranges` array.  
   

@@ -32,7 +32,7 @@ HRESULT GetReferencedAssembliesFromFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFilePath`  
  [in] The path to the assembly to be evaluated.  
   

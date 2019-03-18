@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<participants> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: d99dbddc-0057-4e18-8e42-f91411d39970

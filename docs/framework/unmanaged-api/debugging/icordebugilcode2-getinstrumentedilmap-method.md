@@ -30,7 +30,7 @@ HRESULT GetInstrumentedILMap(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  cMap  
  [in] The storage capacity of the `map` array. See the Remarks section for more information.  
   

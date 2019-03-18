@@ -22,7 +22,7 @@ Two versions of *Mage.exe* and *MageUI.exe* are included with Visual Studio. To 
 Mage [commands] [commandOptions]
 ```
 
-### Parameters
+## Parameters
 
 The following table shows the commands supported by *Mage.exe*. For more information about the options supported by these commands, see [New and Update command options](#new-and-update-command-options) and [Sign command options](#sign-command-options).
 

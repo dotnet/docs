@@ -35,7 +35,7 @@ HRESULT GetExportedTypeProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdct`  
  [in] An `mdExportedType` metadata token that represents the exported type.  
   

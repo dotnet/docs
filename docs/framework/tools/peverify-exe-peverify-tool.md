@@ -26,7 +26,7 @@ The PEVerify tool helps developers who generate Microsoft intermediate language 
 peverify filename [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  

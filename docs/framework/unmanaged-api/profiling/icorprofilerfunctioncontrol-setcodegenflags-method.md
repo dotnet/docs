@@ -28,7 +28,7 @@ HRESULT SetCodegenFlags(
     [in] DWORD flags);  
 ```  
   
-#### Parameters  
+## Parameters  
  `flags`  
  [in] One or more flags from the [COR_PRF_CODEGEN_FLAGS](../../../../docs/framework/unmanaged-api/profiling/cor-prf-codegen-flags-enumeration.md) enumeration.  
   

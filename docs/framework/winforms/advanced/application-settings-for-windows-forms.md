@@ -32,7 +32,7 @@ The Applications Settings feature of Windows Forms makes it easy to create, stor
   
 ## Related topics
 
-[Windows Forms Configuration Section](../../../../docs/framework/configure-apps/file-schema/winforms/index.md)    
+[Windows Forms Configuration Section](../../configure-apps/file-schema/winforms/index.md)    
 Documents the settings to enable High DPI support in Windows Forms Application starting with the .NET Framework 4.7.
 
 ## See also

@@ -29,7 +29,7 @@ HRESULT CreateAutoEvent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEvent`  
  [out] A pointer to the address of an [IHostAutoEvent](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md) instance implemented by the host, or null if the event object could not be created.  
   

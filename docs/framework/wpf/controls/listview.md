@@ -13,11 +13,11 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
   
  The following illustration shows a <xref:System.Windows.Controls.ListView>.  
   
- ![ListView with GridView output](../../../../docs/framework/wpf/controls/media/listviewgridview.JPG "ListViewGridView")  
+ ![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)  
   
 ## In This Section  
- [Overviews](../../../../docs/framework/wpf/controls/listview-overviews.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
+ [Overviews](listview-overviews.md)  
+ [How-to Topics](listview-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.ListView>  
@@ -25,5 +25,5 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
   <xref:System.Windows.Controls.GridView>  
   
 ## Related Sections  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
-  [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
+ [Data Binding Overview](../data/data-binding-overview.md)  
+  [Data Templating Overview](../data/data-templating-overview.md)

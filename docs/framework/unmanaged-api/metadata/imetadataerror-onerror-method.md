@@ -30,7 +30,7 @@ HRESULT OnError (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hrError`  
  [in] The HRESULT error value returned to the calling method.  
   

@@ -48,7 +48,7 @@ Starting with C# 7.0, both the get and set accessor can be an implemented as exp
   
 -   Indexers can have more than one formal parameter, for example, when accessing a two-dimensional array.  
   
-##  <a name="BKMK_RelatedSections"></a> Related Sections  
+## <a name="BKMK_RelatedSections"></a> Related Sections  
   
 -   [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)  
   

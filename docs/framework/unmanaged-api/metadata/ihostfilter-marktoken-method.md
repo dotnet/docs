@@ -29,7 +29,7 @@ HRESULT MarkToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The metadata token to be processed.  
   

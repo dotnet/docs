@@ -1,11 +1,17 @@
 ---
 title: Apply feature engineering for model training on categorical data - ML.NET
 description: Learn how to apply feature engineering for machine learning model training on categorical data with ML.NET
-ms.date: 02/06/2018
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to apply feature engineering for my machine learning model training on categorical data with ML.NET so that I can use my model in the ML.NET processing pipeline.
 ---
+
 # Apply feature engineering for model training on categorical data - ML.NET
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 You need to convert any non float data to `float` data types since all ML.NET `learners` expect features as a `float vector`.
 
@@ -24,6 +30,7 @@ Include categorical featurization directly in the ML.NET learning pipeline to en
 
 The following example illustrates categorical handling for the [adult census dataset](https://github.com/dotnet/machinelearning/blob/master/test/data/adult.tiny.with-schema.txt):
 
+<!-- markdownlint-disable MD010 -->
 ```console
 Label	Workclass	education	marital-status	occupation	relationship	ethnicity	sex	native-country-region	age	fnlwgt	education-num	capital-gain	capital-loss	hours-per-week
 0	Private	11th	Never-married	Machine-op-inspct	Own-child	Black	Male	United-States	25	226802	7	0	0	40
@@ -31,6 +38,7 @@ Label	Workclass	education	marital-status	occupation	relationship	ethnicity	sex	n
 1	Local-gov	Assoc-acdm	Married-civ-spouse	Protective-serv	Husband	White	Male	United-States	28	336951	12	0	0	40
 1	Private	Some-college	Married-civ-spouse	Machine-op-inspct	Husband	Black	Male	United-States	44	160323	10	7688	0	40
 ```
+<!-- markdownlint-enable MD010 -->
 
 ```csharp
 // Create a new context for ML.NET operations. It can be used for exception tracking and logging, 

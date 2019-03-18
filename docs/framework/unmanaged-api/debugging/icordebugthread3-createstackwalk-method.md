@@ -27,7 +27,7 @@ Creates an [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debuggi
 HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppStackWalk`  
  [out] A pointer to address of the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.  
   

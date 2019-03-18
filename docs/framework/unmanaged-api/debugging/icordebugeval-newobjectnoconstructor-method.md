@@ -31,7 +31,7 @@ HRESULT NewObjectNoConstructor (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pClass`  
  [in] Pointer to an ICorDebugClass object that represents the type of object to be instantiated.  
   

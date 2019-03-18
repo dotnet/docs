@@ -31,7 +31,7 @@ HRESULT ReadMemory(
     [out] SIZE_T *read);  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` value that specifies the base address of the memory to be read.  
   

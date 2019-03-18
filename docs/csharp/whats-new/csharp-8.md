@@ -45,6 +45,7 @@ public enum Rainbow
     Red,
     Orange,
     Yellow,
+    Green,
     Blue,
     Indigo,
     Violet
@@ -60,6 +61,7 @@ public static RGBColor FromRainbow(Rainbow colorBand) =>
         Rainbow.Red    => new RGBColor(0xFF, 0x00, 0x00),
         Rainbow.Orange => new RGBColor(0xFF, 0x7F, 0x00),
         Rainbow.Yellow => new RGBColor(0xFF, 0xFF, 0x00),
+        Rainbow.Green  => new RGBColor(0x00, 0xFF, 0x00),
         Rainbow.Blue   => new RGBColor(0x00, 0x00, 0xFF),
         Rainbow.Indigo => new RGBColor(0x4B, 0x00, 0x82),
         Rainbow.Violet => new RGBColor(0x94, 0x00, 0xD3),
@@ -77,7 +79,7 @@ There are several syntax improvements here:
 Contrast that with the equivalent code using the classic `switch` statement:
 
 ```csharp
-public static RGBColor fromRainbowClassic(Rainbow colorBand)
+public static RGBColor FromRainbowClassic(Rainbow colorBand)
 {
     switch (colorBand)
     {
@@ -87,6 +89,8 @@ public static RGBColor fromRainbowClassic(Rainbow colorBand)
             return new RGBColor(0xFF, 0x7F, 0x00);
         case Rainbow.Yellow:
             return new RGBColor(0xFF, 0xFF, 0x00);
+        case Rainbow.Green:
+            return new RGBColor(0x00, 0xFF, 0x00);
         case Rainbow.Blue:
             return new RGBColor(0x00, 0x00, 0xFF);
         case Rainbow.Indigo:
@@ -263,11 +267,11 @@ You can learn more about the feature in the overview of [nullable reference type
 
 Starting with C# 8.0, you can create and consume streams asynchronously. A method that returns an asynchronous stream has three properties:
 
-1. It was declared with the `async` modifier.
+1. It's declared with the `async` modifier.
 1. It returns an <xref:System.Collections.Generic.IAsyncEnumerable%601>.
 1. The method contains `yield return` statements to return successive elements in the asynchronous stream.
 
-Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream to be declared with the `async` modifier and to return a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an <xref:System.Collections.Generic.IAsyncEnumerable%601>. The following code generates a sequence from 1 to 20, waiting 100 ms between generating each number:
+Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream to be declared with the `async` modifier and to return a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an <xref:System.Collections.Generic.IAsyncEnumerable%601>. The following code generates a sequence from 0 to 19, waiting 100 ms between generating each number:
 
 ```csharp
 public static async System.Collections.Generic.IAsyncEnumerable<int> GenerateSequence()
@@ -329,7 +333,7 @@ Console.WriteLine($"The last word is {words[^1]}");
 The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` is not in the range.
 
 ```csharp
-var brownFox = words[1..4];
+var quickBrownFox = words[1..4];
 ```
 
 The following code creates a subrange with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` is not included:

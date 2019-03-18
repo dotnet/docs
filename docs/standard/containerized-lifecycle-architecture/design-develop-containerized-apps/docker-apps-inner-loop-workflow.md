@@ -7,7 +7,7 @@ ms.date: 02/15/2019
 ---
 # Inner-loop development workflow for Docker apps
 
-Before triggering the outer-loop workflow spanning the entire DevOps cycle, it all begins on each developer's machine, coding the app itself, using their preferred languages or platforms, and testing it locally (Figure 4-21). But in every case, you will have an important point in common, no matter what language, framework, or platforms you choose. In this specific workflow, you are always developing and testing Docker containers, but locally.
+Before triggering the outer-loop workflow spanning the entire DevOps cycle, it all begins on each developer's machine, coding the app itself, using their preferred languages or platforms, and testing it locally (Figure 4-21). But in every case, you'll have an important point in common, no matter what language, framework, or platforms you choose. In this specific workflow, you're always developing and testing Docker containers, but locally.
 
 ![Step 1 - Code/Run/Debug](./media/image18.png)
 
@@ -37,7 +37,7 @@ Figure 4-22 shows the basic steps that you usually need to carry out when buildi
 
 ### Step 1: Start coding in Visual Studio Code and create your initial app/service baseline
 
-The way you develop your application is similar to the way you do it without Docker. The difference is that while developing, you are deploying and testing your application or services running within Docker containers placed in your local environment (like a Linux VM or Windows).
+The way you develop your application is similar to the way you do it without Docker. The difference is that while developing, you're deploying and testing your application or services running within Docker containers placed in your local environment (like a Linux VM or Windows).
 
 **Setting up your local environment**
 
@@ -51,7 +51,7 @@ With the latest versions of Docker for Mac and Windows, it's easier than ever to
 
 In addition, you'll need a code editor so that you can actually develop your application while using Docker CLI.
 
-Microsoft provides Visual Studio Code, which is a lightweight code editor that is supported on Mac, Windows, and Linux, and provides IntelliSense with [support for many languages](https://code.visualstudio.com/docs/languages/overview) (JavaScript, .NET, Go, Java, Ruby, Python, and most modern languages), [debugging](https://code.visualstudio.com/Docs/editor/debugging), [integration with Git](https://code.visualstudio.com/Docs/editor/versioncontrol) and [extensions support](https://code.visualstudio.com/docs/extensions/overview). This editor is a great fit for Mac and Linux developers. In Windows, you also can use the full Visual Studio application.
+Microsoft provides Visual Studio Code, which is a lightweight code editor that's supported on Mac, Windows, and Linux, and provides IntelliSense with [support for many languages](https://code.visualstudio.com/docs/languages/overview) (JavaScript, .NET, Go, Java, Ruby, Python, and most modern languages), [debugging](https://code.visualstudio.com/Docs/editor/debugging), [integration with Git](https://code.visualstudio.com/Docs/editor/versioncontrol) and [extensions support](https://code.visualstudio.com/docs/extensions/overview). This editor is a great fit for Mac and Linux developers. In Windows, you also can use the full Visual Studio application.
 
 > [!INFORMATION]
 >
@@ -85,13 +85,13 @@ To install the Docker extension, press Ctrl+Shift+P, type `ext install`, and the
 
 ### Step 2: Create a DockerFile related to an existing image (plain OS or dev environments like .NET Core, Node.js, and Ruby)
 
-You will need a `DockerFile` per custom image to be built and per container to be deployed. If your app is made up of a single custom service, you will need a single `DockerFile`. But if your app is composed of multiple services (as in a microservices architecture), you'll need one `Dockerfile` per service.
+You'll need a `DockerFile` per custom image to be built and per container to be deployed. If your app is made up of a single custom service, you'll need a single `DockerFile`. But if your app is composed of multiple services (as in a microservices architecture), you'll need one `Dockerfile` per service.
 
-The `DockerFile` is commonly placed in the root folder of your app or service and contains the required commands so that Docker knows how to set up and run that app or service. You can create your `DockerFile` and add it to your project along with your code (node.js, .NET Core, etc.), or, if you are new to the environment, take a look at the following Tip.
+The `DockerFile` is commonly placed in the root folder of your app or service and contains the required commands so that Docker knows how to set up and run that app or service. You can create your `DockerFile` and add it to your project along with your code (node.js, .NET Core, etc.), or, if you're new to the environment, take a look at the following Tip.
 
 > [!TIP]
 >
-> You can use the Docker extension to guide you when using the `Dockerfile` and `docker-compose.yml` files related to your Docker containers. Eventually, you will probably write these kinds of files without this tool, but using the Docker extension is a good starting point that will accelerate your learning curve.
+> You can use the Docker extension to guide you when using the `Dockerfile` and `docker-compose.yml` files related to your Docker containers. Eventually, you'll probably write these kinds of files without this tool, but using the Docker extension is a good starting point that will accelerate your learning curve.
 
 In Figure 4-24, you can see how a docker-compose file is added by using the Docker Extension for VS Code.
 
@@ -99,7 +99,7 @@ In Figure 4-24, you can see how a docker-compose file is added by using the Dock
 
 **Figure 4-24**. Docker files added using the **Add Docker files to Workspace command**
 
-When you add a DockerFile, you specify what base Docker image you’ll be using (like using `FROM microsoft/aspnetcore`). You will usually build your custom image on top of a base image that you get from any official repository at the [Docker Hub registry](https://hub.docker.com/) (like an [image for .NET Core](https://hub.docker.com/r/microsoft/dotnet/) or the one [for Node.js](https://hub.docker.com/_/node/)).
+When you add a DockerFile, you specify what base Docker image you’ll be using (like using `FROM microsoft/aspnetcore`). You'll usually build your custom image on top of a base image that you get from any official repository at the [Docker Hub registry](https://hub.docker.com/) (like an [image for .NET Core](https://hub.docker.com/r/microsoft/dotnet/) or the one [for Node.js](https://hub.docker.com/_/node/)).
 
 ***Use an existing official Docker image***
 
@@ -143,7 +143,7 @@ Pulling the [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore
 
 ***Create your base image from scratch***
 
-You can create your own Docker base image from scratch as explained in this [article](https://docs.docker.com/engine/userguide/eng-image/baseimages/) from Docker. This scenario is probably not the best for you if you are just starting with Docker, but if you want to set the specific bits of your own base image, you can do it.
+You can create your own Docker base image from scratch as explained in this [article](https://docs.docker.com/engine/userguide/eng-image/baseimages/) from Docker. This scenario is probably not the best for you if you're just starting with Docker, but if you want to set the specific bits of your own base image, you can do it.
 
 ### Step 3: Create your custom Docker images embedding your service in it
 

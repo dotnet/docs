@@ -35,7 +35,7 @@ HRESULT FindAssembly(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szAppBase`  
  [in] Not used.  
   

@@ -43,7 +43,7 @@ The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)
   
  Attached properties on container elements are fully supported by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.  
   
- For more information, see [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](../../../../docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-windowsformshost-element.md).  
+ For more information, see [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](walkthrough-mapping-properties-using-the-windowsformshost-element.md).  
   
 ## Updates to Parent Properties  
  Changes to most parent properties cause notifications to the hosted child control. The following list describes properties which do not cause notifications when their values change.  
@@ -111,7 +111,7 @@ The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)
   
  The <xref:System.Windows.Forms.Integration.ElementHost> control translates default [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] properties to their [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] equivalents by using the following translation table.  
   
- For more information, see [Walkthrough: Mapping Properties Using the ElementHost Control](../../../../docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-elementhost-control.md).  
+ For more information, see [Walkthrough: Mapping Properties Using the ElementHost Control](walkthrough-mapping-properties-using-the-elementhost-control.md).  
   
 |Windows Forms hosting|Windows Presentation Foundation|Interoperation behavior|  
 |---------------------------|-------------------------------------|-----------------------------|  
@@ -131,7 +131,7 @@ The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)
 ## See also
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)
-- [WPF and Windows Forms Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-windows-forms-interoperation.md)
-- [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](../../../../docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-windowsformshost-element.md)
-- [Walkthrough: Mapping Properties Using the ElementHost Control](../../../../docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-elementhost-control.md)
+- [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)
+- [WPF and Windows Forms Interoperation](wpf-and-windows-forms-interoperation.md)
+- [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](walkthrough-mapping-properties-using-the-windowsformshost-element.md)
+- [Walkthrough: Mapping Properties Using the ElementHost Control](walkthrough-mapping-properties-using-the-elementhost-control.md)

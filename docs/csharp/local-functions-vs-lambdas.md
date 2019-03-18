@@ -6,7 +6,7 @@ ms.assetid: 368d1752-3659-489a-97b4-f15d87e49ae3
 ---
 # Local functions compared to lambda expressions
 
-At first glance, [local functions](programming-guide/classes-and-structs/local-functions.md) and [lambda expressions](lambda-expressions.md) are very similar. In many cases, the choice between using
+At first glance, [local functions](programming-guide/classes-and-structs/local-functions.md) and [lambda expressions](./programming-guide/statements-expressions-operators/lambda-expressions.md) are very similar. In many cases, the choice between using
 lambda expressions and local functions is a matter of style and personal
 preference. However, there are real differences in where you can use one or
 the other that you should be aware of.

@@ -36,7 +36,7 @@ HRESULT GetGenericParamProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `gp`  
  [in] The token that represents the generic parameter for which to return metadata.  
   

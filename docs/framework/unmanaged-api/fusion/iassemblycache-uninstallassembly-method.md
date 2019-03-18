@@ -32,7 +32,7 @@ HRESULT UninstallAssembly (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwFlags`  
  [in] Flags defined in Fusion.idl.  
   

@@ -32,7 +32,7 @@ HRESULT BreakpointSetError (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain that contains the unbound breakpoint.  
   

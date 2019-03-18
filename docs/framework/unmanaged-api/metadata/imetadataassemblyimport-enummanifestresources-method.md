@@ -32,7 +32,7 @@ HRESULT EnumManifestResources (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be a null value when the `EnumManifestResources` method is called for the first time.  
   

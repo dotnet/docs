@@ -30,7 +30,7 @@ HRESULT GetCLRManager (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `riid`  
  [in] The `IID` of the manager type to return. The following `IID` values are supported.  
   

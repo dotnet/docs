@@ -26,7 +26,7 @@ The Type Library Importer converts the type definitions found within a COM type 
 tlbimp tlbFile [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  

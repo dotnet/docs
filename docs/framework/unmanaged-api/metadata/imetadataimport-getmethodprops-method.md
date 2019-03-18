@@ -38,7 +38,7 @@ HRESULT GetMethodProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mb`  
  [in] The MethodDef token that represents the method to return metadata for.  
   

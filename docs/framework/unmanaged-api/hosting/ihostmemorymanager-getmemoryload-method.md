@@ -30,7 +30,7 @@ HRESULT GetMemoryLoad (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMemoryLoad`  
  [out] A pointer to the approximate percentage of total physical memory that is currently in use.  
   

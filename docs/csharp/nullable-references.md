@@ -35,7 +35,7 @@ The compiler uses static analysis to determine if a nullable reference is known 
 name!.Length;
 ```
 
-You can read details about this operator in the [draft nullable reference types](https://github.com/dotnet/csharplang/blob/master/proposals/nullable-reference-types-specification.md#the-null-forgiving-operator) specification proposal on GitHub.
+You can read details about this operator in the [draft nullable reference types](../../_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md#the-null-forgiving-operator) specification proposal on GitHub.
 
 ## Nullability of types
 
@@ -116,6 +116,6 @@ The compiler generates warnings whenever you dereference a variable or expressio
 
 ## Learn more
 
-- [Draft Nullable reference specification](https://github.com/dotnet/csharplang/blob/master/proposals/nullable-reference-types-specification.md)
+- [Draft Nullable reference specification](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-8.0/nullable-reference-types-specification.md)
 - [Intro to nullable references tutorial](tutorials/nullable-reference-types.md)
 - [Migrate an existing codebase to nullable references](tutorials/upgrade-to-nullable-references.md)

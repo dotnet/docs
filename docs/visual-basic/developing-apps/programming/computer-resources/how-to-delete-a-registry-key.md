@@ -21,7 +21,7 @@ The <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%29> and <xref
   
 -   Use the `DeleteSubKey` method to delete a registry key. This example deletes the key Software/TestApp in the CurrentUser hive. You can change this in the code to the appropriate string, or have it rely on user-supplied information.  
   
-     [!code-vb[VbResourceTasks#19](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-delete-a-registry-key_1.vb)]  
+     [!code-vb[VbResourceTasks#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#19)]  
   
 ## Robust Programming  
  The `DeleteSubKey` method returns an empty string if the key/value pair does not exist.  

@@ -1,11 +1,16 @@
 ---
 title: Train a machine learning model with data that's not in a text file - ML.NET 
 description: Discover how to use ML.NET to load non-file training data for machine learning model training as part of the prediction pipeline.
-ms.date: 02/06/2019
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use ML.NET to train a machine learning model with data that's not in a text file as part of the prediction pipeline for later use in my applications.
 ---
 # Train a machine learning model with data that's not in a text file - ML.NET
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 The commonly demonstrated use case for ML.NET is use the `TextLoader` to read the training data from a file.
 However, in real-time training scenarios the data can be elsewhere, such as:

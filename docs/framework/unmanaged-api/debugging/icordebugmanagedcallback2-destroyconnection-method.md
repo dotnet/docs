@@ -30,7 +30,7 @@ HRESULT DestroyConnection (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an ICorDebugProcess object that represents the process containing the connection that was destroyed.  
   

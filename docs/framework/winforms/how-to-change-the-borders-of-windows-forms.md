@@ -40,4 +40,4 @@ You have several border styles to choose from when you are determining the appea
 ## See also
 - <xref:System.Windows.Forms.FormBorderStyle>
 - <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>
-- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)
+- [Getting Started with Windows Forms](getting-started-with-windows-forms.md)

@@ -14,5 +14,5 @@ ms.assetid: 67992d76-8bcc-456c-8232-03807803d69e
 ---
 # Markup Compatibility (mc:) Language Features
 ## In This Section  
- [mc:Ignorable Attribute](../../../../docs/framework/wpf/advanced/mc-ignorable-attribute.md)  
-  [mc:ProcessContent Attribute](../../../../docs/framework/wpf/advanced/mc-processcontent-attribute.md)
+ [mc:Ignorable Attribute](mc-ignorable-attribute.md)  
+  [mc:ProcessContent Attribute](mc-processcontent-attribute.md)

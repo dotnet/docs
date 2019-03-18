@@ -29,7 +29,7 @@ HRESULT SetUILocale (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lcid`  
  [in] The locale identifier value that maps to the newly assigned geographical culture and language for the user interface.  
   

@@ -28,7 +28,7 @@ HRESULT GetCurrentThreadID(
     [out] ThreadID *pThreadId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pThreadId`  
  [out] A pointer to the returned ID of the managed thread.  
   

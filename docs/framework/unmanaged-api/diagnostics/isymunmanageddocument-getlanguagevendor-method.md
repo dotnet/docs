@@ -28,7 +28,7 @@ HRESULT GetLanguageVendor(
     [out, retval]  GUID*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a variable that receives the language vendor.  
   

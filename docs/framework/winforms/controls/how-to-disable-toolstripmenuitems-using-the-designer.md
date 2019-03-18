@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 985e311e-7d67-4205-b5a3-d045b68a4a03
 ---
 # How to: Disable ToolStripMenuItems Using the Designer
-You can limit or broaden the commands a user may make by enabling and disabling menu items in response to user activities. Menu items are enabled by default when they are created, but this can be adjusted through the <xref:System.Windows.Forms.ToolStripMenuItem.Enabled%2A> property. You can manipulate this property at design time in the **Properties** window or programmatically by setting it in code. For more information, see [How to: Disable ToolStripMenuItems](../../../../docs/framework/winforms/controls/how-to-disable-toolstripmenuitems.md).  
+You can limit or broaden the commands a user may make by enabling and disabling menu items in response to user activities. Menu items are enabled by default when they are created, but this can be adjusted through the <xref:System.Windows.Forms.ToolStripMenuItem.Enabled%2A> property. You can manipulate this property at design time in the **Properties** window or programmatically by setting it in code. For more information, see [How to: Disable ToolStripMenuItems](how-to-disable-toolstripmenuitems.md).  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -24,5 +24,5 @@ You can limit or broaden the commands a user may make by enabling and disabling 
 ## See also
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ToolStripMenuItem>
-- [How to: Hide ToolStripMenuItems](../../../../docs/framework/winforms/controls/how-to-hide-toolstripmenuitems.md)
-- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+- [How to: Hide ToolStripMenuItems](how-to-hide-toolstripmenuitems.md)
+- [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)

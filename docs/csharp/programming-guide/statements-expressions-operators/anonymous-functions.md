@@ -3,7 +3,7 @@ title: "Anonymous Functions - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
-  - "lambda expressions [C#], as anonymus functions"
+  - "lambda expressions [C#], as anonymous functions"
   - "anonymous functions [C#]"
   - "anonymous methods [C#]"
 ms.assetid: 6ce3f04d-0c71-4728-9127-634c7e9a8365
@@ -25,7 +25,7 @@ An anonymous function is an "inline" statement or expression that can be used wh
   
  The following example demonstrates the evolution of delegate creation from C# 1.0 to C# 3.0:  
   
- [!code-csharp[csProgGuideLINQ#65](../../../csharp/programming-guide/arrays/codesnippet/CSharp/anonymous-functions_1.cs)]  
+ [!code-csharp[csProgGuideLINQ#65](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS/csRef30LangFeatures_2.cs#65)]  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

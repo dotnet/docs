@@ -29,7 +29,7 @@ HRESULT CloseEnum (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The enumerator to reset.  
   

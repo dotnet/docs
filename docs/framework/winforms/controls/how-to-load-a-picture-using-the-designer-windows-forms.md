@@ -39,7 +39,7 @@ With the Windows Forms <xref:System.Windows.Forms.PictureBox> control, you can l
   
 ## See also
 - <xref:System.Windows.Forms.PictureBox>
-- [PictureBox Control Overview](../../../../docs/framework/winforms/controls/picturebox-control-overview-windows-forms.md)
-- [How to: Modify the Size or Placement of a Picture at Run Time](../../../../docs/framework/winforms/controls/how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)
-- [How to: Set Pictures at Run Time](../../../../docs/framework/winforms/controls/how-to-set-pictures-at-run-time-windows-forms.md)
-- [PictureBox Control](../../../../docs/framework/winforms/controls/picturebox-control-windows-forms.md)
+- [PictureBox Control Overview](picturebox-control-overview-windows-forms.md)
+- [How to: Modify the Size or Placement of a Picture at Run Time](how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)
+- [How to: Set Pictures at Run Time](how-to-set-pictures-at-run-time-windows-forms.md)
+- [PictureBox Control](picturebox-control-windows-forms.md)

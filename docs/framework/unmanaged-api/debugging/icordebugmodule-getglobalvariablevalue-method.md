@@ -30,7 +30,7 @@ HRESULT GetGlobalVariableValue(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fieldDef`  
  [in] An `mdFieldDef` token that references the metadata describing the global variable.  
   

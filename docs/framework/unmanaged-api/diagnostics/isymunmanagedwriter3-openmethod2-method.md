@@ -30,7 +30,7 @@ HRESULT OpenMethod2(
     [in] ULONG32 offset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `method`  
  [in] The metadata token for the method to be opened.  
   

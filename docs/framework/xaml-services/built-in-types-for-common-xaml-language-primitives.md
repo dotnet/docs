@@ -119,7 +119,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib">
 ### x:Array  
  For CLR backing, the `x:Array` primitive corresponds to <xref:System.Array>.  
   
- You can define an array in XAML 2006  by using a markup extension syntax; however, the XAML 2009 syntax is a language-defined primitive that does not require accessing a markup extension. For more information about XAML 2006 support, see [x:Array Markup Extension](../../../docs/framework/xaml-services/x-array-markup-extension.md).  
+ You can define an array in XAML 2006  by using a markup extension syntax; however, the XAML 2009 syntax is a language-defined primitive that does not require accessing a markup extension. For more information about XAML 2006 support, see [x:Array Markup Extension](x-array-markup-extension.md).  
   
  For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.18](https://go.microsoft.com/fwlink/?LinkId=114525).  
   

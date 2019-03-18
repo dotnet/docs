@@ -35,7 +35,7 @@ HRESULT Request (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `reqCode`  
  [in] User-defined.  
   

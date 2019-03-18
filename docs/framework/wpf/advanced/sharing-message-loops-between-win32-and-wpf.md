@@ -58,6 +58,6 @@ This topic describes how to implement a message loop for interoperation with [!I
 ## See also
 - <xref:System.Windows.Interop.ComponentDispatcher>
 - <xref:System.Windows.Interop.IKeyboardInputSink>
-- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)
-- [Threading Model](../../../../docs/framework/wpf/advanced/threading-model.md)
-- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+- [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)
+- [Threading Model](threading-model.md)
+- [Input Overview](input-overview.md)

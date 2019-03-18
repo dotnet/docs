@@ -8,6 +8,7 @@ api_location:
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
+  - "mscorsvr.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
@@ -35,7 +36,7 @@ STDAPI ClrCreateManagedInstance (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTypeName`  
  [in] A pointer to the name of the instance type being requested.  
   

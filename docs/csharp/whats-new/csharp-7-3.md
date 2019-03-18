@@ -45,7 +45,7 @@ unsafe struct S
 }
 ```
 
-In earlier versions of C#, you needed to pin a variable to access one of the integers that are part of `myFixedField`. Now, the following code compiles in a safe context:
+In earlier versions of C#, you needed to pin a variable to access one of the integers that are part of `myFixedField`. Now, the following code compiles without pinning the variable `p` inside a separate `fixed` statement:
 
 ```csharp
 class C

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAppDomain Interface1"
+title: "ICorDebugAppDomain Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugAppDomain"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugAppDomain Interface1
+# ICorDebugAppDomain Interface
+
 Provides methods for debugging application domains. This interface is a subclass of ICorDebugController.  
   
 ## Methods  

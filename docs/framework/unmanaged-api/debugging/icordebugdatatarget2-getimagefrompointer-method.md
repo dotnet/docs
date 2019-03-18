@@ -18,7 +18,7 @@ HRESULT GetImageFromPointer(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `addr`  
  A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents an address in a module.  
   

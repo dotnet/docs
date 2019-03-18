@@ -28,7 +28,7 @@ HRESULT OpenNamespace(
     [in] const WCHAR *name);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] A pointer to the name of the new namespace.  
   

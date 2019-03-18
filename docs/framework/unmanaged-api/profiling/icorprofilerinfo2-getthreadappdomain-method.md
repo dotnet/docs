@@ -29,7 +29,7 @@ HRESULT GetThreadAppDomain(
     [out] AppDomainID *pAppDomainId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID specifying the thread.  
   

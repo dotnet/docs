@@ -7,7 +7,7 @@ ms.assetid: 11d11b59-acc4-48bf-8e4b-e97b516aa0a9
 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] features better integration between web services and workflows in the form of contract-first workflow development. The contract-first workflow development tool allows you to design the contract in code first. The tool then automatically generates an activity template in the toolbox for the operations in the contract.  
   
 > [!NOTE]
->  This topic provides step-by-step guidance on creating a contract-first workflow service. For more information about contract-first workflow service development, see [Contract First Workflow Service Development](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md).  
+>  This topic provides step-by-step guidance on creating a contract-first workflow service. For more information about contract-first workflow service development, see [Contract First Workflow Service Development](contract-first-workflow-service-development.md).  
   
 ### Creating the workflow project  
   
@@ -51,7 +51,7 @@ ms.assetid: 11d11b59-acc4-48bf-8e4b-e97b516aa0a9
   
 4.  In **Solution Explorer**, open Service1.xamlx. The workflow service will appear in the designer.  
   
-5.  Select the **Sequence** activity. In the Properties window, click the **…** button in the **ImplementedContract** property. In the **Type Collection Editor** window that appears, click the **Type** dropdown, and select the **Browse for Types…** entry. In the **Browse and Select a .Net Type** dialog, under **\<Current Project>**, open all sub-nodes and select **IBookService**. Click **OK**. In the **Type Collection Editor** dialog, click **OK**.  
+5.  Select the **Sequence** activity. In the Properties window, click the **…** button in the **ImplementedContract** property. In the **Type Collection Editor** window that appears, click the **Type** dropdown, and select the **Browse for Types…** entry. In the **Browse and Select a .NET Type** dialog, under **\<Current Project>**, open all sub-nodes and select **IBookService**. Click **OK**. In the **Type Collection Editor** dialog, click **OK**.  
   
 6.  Select and delete the **ReceiveRequest** and **SendResponse** activities.  
   

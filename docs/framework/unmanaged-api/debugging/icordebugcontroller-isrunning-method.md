@@ -29,7 +29,7 @@ HRESULT IsRunning (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbRunning`  
  [out] A pointer to a value that is `true` if the threads in the process are running freely; otherwise, `false`.  
   

@@ -30,7 +30,7 @@ HRESULT EnumerateLoadedRuntimes (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hndProcess`  
  [in] The handle of the process to inspect for loaded runtimes.  
   

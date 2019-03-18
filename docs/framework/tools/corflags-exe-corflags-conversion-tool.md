@@ -22,7 +22,7 @@ The CorFlags Conversion tool allows you to configure the CorFlags section of the
 CorFlags.exe assembly [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Required parameter|Description|  
 |------------------------|-----------------|  

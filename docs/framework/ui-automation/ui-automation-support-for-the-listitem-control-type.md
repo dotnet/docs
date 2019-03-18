@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "List Item control type"
   - "UI Automation, List Item control type"
 ms.assetid: 34f533bf-fc14-4e78-8fee-fb7107345fab
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the ListItem Control Type
 > [!NOTE]

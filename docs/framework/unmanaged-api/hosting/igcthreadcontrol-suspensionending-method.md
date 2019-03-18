@@ -29,7 +29,7 @@ HRESULT SuspensionEnding (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Generation`  
  [in] The generation on which a garbage collection has been performed.  
   

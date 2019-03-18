@@ -28,7 +28,7 @@ HRESULT HandleDestroyed(
     [in] GCHandleID handleId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `handleId`  
  [in] The ID of the handle for the garbage collection.  
   

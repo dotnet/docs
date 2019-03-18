@@ -14,16 +14,16 @@ You can use a gradient brush to fill a shape with a gradually changing color. Fo
   
  The following illustration shows a rectangle filled with a linear gradient brush and an ellipse filled with a path gradient brush.  
   
- ![Gradient](../../../../docs/framework/winforms/advanced/media/gradient2.png "gradient2")  
+ ![Gradient](./media/gradient2.png "gradient2")  
   
 ## In This Section  
- [How to: Create a Linear Gradient](../../../../docs/framework/winforms/advanced/how-to-create-a-linear-gradient.md)  
+ [How to: Create a Linear Gradient](how-to-create-a-linear-gradient.md)  
  Shows how to create a linear gradient using the <xref:System.Drawing.Drawing2D.LinearGradientBrush> class.  
   
- [How to: Create a Path Gradient](../../../../docs/framework/winforms/advanced/how-to-create-a-path-gradient.md)  
+ [How to: Create a Path Gradient](how-to-create-a-path-gradient.md)  
  Describes how to create a path gradient using the <xref:System.Drawing.Drawing2D.PathGradientBrush> class.  
   
- [How to: Apply Gamma Correction to a Gradient](../../../../docs/framework/winforms/advanced/how-to-apply-gamma-correction-to-a-gradient.md)  
+ [How to: Apply Gamma Correction to a Gradient](how-to-apply-gamma-correction-to-a-gradient.md)  
  Explains how to use gamma correction with a gradient brush.  
   
 ## Reference  

@@ -30,7 +30,7 @@ HRESULT UnregisterNotifySource
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `in_pNotifySource`  
  [in] Notification object to be unregistered.  
   

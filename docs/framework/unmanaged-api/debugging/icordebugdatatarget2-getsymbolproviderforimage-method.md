@@ -17,7 +17,7 @@ HRESULT GetSymbolProviderForImage(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `imageBaseAddress`  
  [in] A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the base address of a module.  
   

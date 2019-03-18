@@ -32,7 +32,7 @@ HRESULT ResolveTypeRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tr`  
  [in] The TypeRef metadata token to return the referenced type information for.  
   

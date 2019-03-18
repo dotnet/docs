@@ -31,7 +31,7 @@ HRESULT FindTypeDefByName
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szTypeDef`  
  [in] The name of the type for which to get the TypeDef token.  
   

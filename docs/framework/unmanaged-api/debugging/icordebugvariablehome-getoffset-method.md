@@ -29,7 +29,7 @@ HRESULT GetOffset(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pOffset`  
  [out] The offset from the base register.  
   

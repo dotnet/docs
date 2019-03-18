@@ -31,7 +31,7 @@ HRESULT GetDisplayName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szDisplayName`  
  [out] The string buffer that contains the name of the referenced assembly.  
   

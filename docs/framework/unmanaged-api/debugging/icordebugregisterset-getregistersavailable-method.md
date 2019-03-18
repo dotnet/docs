@@ -29,7 +29,7 @@ HRESULT GetRegistersAvailable (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAvailable`  
  [out] A bit mask that indicates which registers are currently available.  
   

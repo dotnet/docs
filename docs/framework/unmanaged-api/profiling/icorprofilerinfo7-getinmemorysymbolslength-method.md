@@ -26,7 +26,7 @@ HRESULT GetInMemorySymbolsLength(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The identifier of the module containing the in-memory stream.  
   

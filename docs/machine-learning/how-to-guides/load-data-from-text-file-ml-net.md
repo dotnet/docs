@@ -1,12 +1,17 @@
 ---
 title: Load data from a text file for machine learning processing - ML.NET
 description: Discover how to load data from a text file for use in machine learning model building, training, and scoring with ML.NET
-ms.date: 02/06/2019
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to load data from a text file so that I can use it in machine learning model building, training, and scoring with ML.NET.
 ---
 
 # Load data from a text file for machine learning processing - ML.NET
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 `TextLoader` is used to load data from text files. You need to specify the data columns, their types, and their location in the text file.
 
@@ -14,6 +19,7 @@ Note that it's perfectly acceptable to read some columns of a file, or read the 
 
 [Example file](https://github.com/dotnet/machinelearning/blob/master/test/data/adult.tiny.with-schema.txt):
 
+<!-- markdownlint-disable MD010 -->
 ```console
 Label	Workclass	education	marital-status
 0	Private	11th	Never-married
@@ -21,11 +27,12 @@ Label	Workclass	education	marital-status
 1	Local-gov	Assoc-acdm	Married-civ-spouse
 1	Private	Some-college	Married-civ-spouse
 ```
+<!-- markdownlint-enable MD010 -->
 
 To load the data from a text file:
 
 ```csharp
-// Create a new context for ML.NET operations. It can be used for exception tracking and logging, 
+// Create a new context for ML.NET operations. It can be used for exception tracking and logging,
 // as a catalog of available operations and as the source of randomness.
 var mlContext = new MLContext();
 

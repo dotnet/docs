@@ -30,7 +30,7 @@ HRESULT RequestVirtualMemLimit (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `sztMaxVirtualMemMB`  
  [in] The requested size of memory to be allocated.  
   

@@ -33,7 +33,7 @@ HRESULT DefinePermissionSet (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The object to be decorated.  
   

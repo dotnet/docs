@@ -29,7 +29,7 @@ HRESULT SetDesiredNGENCompilerFlags (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwFlags`  
  [in] A value of the [CorDebugJITCompilerFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugjitcompilerflags-enumeration.md) enumeration that specifies the compiler flags used to select the correct pre-compiled image.  
   

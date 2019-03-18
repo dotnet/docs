@@ -30,7 +30,7 @@ HRESULT SetParent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mr`  
  [in] The `mdMemberRef` token to receive a new parent.  
   

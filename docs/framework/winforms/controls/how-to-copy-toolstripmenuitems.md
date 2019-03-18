@@ -39,4 +39,4 @@ At design time, you can copy entire top-level menus and their submenu items to a
 ## See also
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ToolStripMenuItem>
-- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+- [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)

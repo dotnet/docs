@@ -16,7 +16,7 @@ HRESULT GetNativeIP(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIP`  
  [out] A pointer to the instruction pointer for this exception debug event. See the Remarks section for more information.  
   

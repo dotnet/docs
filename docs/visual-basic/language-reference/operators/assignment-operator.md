@@ -37,7 +37,7 @@ variableorproperty = value
 ## Example  
  The following example demonstrates the assignment operator. The value on the right is assigned to the variable on the left.  
   
- [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#9)]  
   
 ## See also
 - [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)

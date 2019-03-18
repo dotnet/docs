@@ -29,7 +29,7 @@ UINT_PTR __stdcall FunctionIDMapper (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcId`  
  [in] The function identifier to be remapped.  
   

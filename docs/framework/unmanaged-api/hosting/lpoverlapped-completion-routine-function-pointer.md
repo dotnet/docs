@@ -32,7 +32,7 @@ typedef VOID (*LPOVERLAPPED_COMPLETION_ROUTINE) (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwErrorCode`  
  [in] A value that is an error code if the device has been closed; otherwise, this value is zero.  
   

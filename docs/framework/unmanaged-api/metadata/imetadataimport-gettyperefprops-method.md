@@ -33,7 +33,7 @@ HRESULT GetTypeRefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tr`  
  [in] The TypeRef token that represents the type to return metadata for.  
   

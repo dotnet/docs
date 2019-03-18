@@ -37,7 +37,7 @@ HRESULT CorLaunchApplication (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwClickOnceHost`  
  [in] A value of the [HOST_TYPE](../../../../docs/framework/unmanaged-api/hosting/host-type-enumeration.md) enumeration that specifies the type of host that is launching the application.  
   

@@ -36,7 +36,7 @@ In Visual Basic, two variable references are considered identical if their point
 ## Example  
  The following example tests pairs of `Object` variables to see if they point to the same class instance.  
   
- [!code-vb[VbVbalrKeywords#14](../../../../visual-basic/language-reference/codesnippet/VisualBasic/how-to-determine-whether-two-objects-are-identical_1.vb)]  
+ [!code-vb[VbVbalrKeywords#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class7.vb#14)]  
   
  The preceding example displays the following output.  
   

@@ -1,16 +1,18 @@
 ---
 title: Select the C# language version - C# Guide
 description: Configure the compiler to perform syntax validation using a specific compiler version
-ms.date: 05/24/2018
+ms.date: 02/28/2019
 ---
 
 # Select the C# language version
 
-The C# compiler defaults to the latest major version of the language that has been released. You may choose to compile any project using a new point release of the language. Choosing a newer version of the language enables your project to make use of the latest language features. In other scenarios, you may need to validate that a project compiles cleanly when using an older version of the language.
+The C# compiler determines a default language version based on your project's target framework or frameworks. When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. When your project doesn't target a preview framework, the language version used is the latest minor version.
 
-This capability decouples the decision to install new versions of the SDK and tools in your development environment from the decision to incorporate new language features in a project. You can install the latest SDK and tools on your build machine. Each project can be configured to use a specific version of the language for its build.
+For example, during the preview period for .NET Core 3.0, any project that targets `netcoreapp3.0` or `netstandard2.1` (both in preview) will use the C# 8.0 language (also in preview). Projects targeting any released version will use C# 7.3 (the latest released version). This behavior means that any project targeting .NET Framework will use latest (C# 7.3). 
 
-There are several ways to set the language version:
+This capability decouples the decision to install new versions of the SDK and tools in your development environment from the decision to incorporate new language features in a project. You can install the latest SDK and tools on your build machine. Each project can be configured to use a specific version of the language for its build. The default behavior means that any language features that rely on new types or new CLR behavior are enabled only when projects target those frameworks.
+
+You can override the default behavior by specifying a language version. There are several ways to set the language version:
 
 - Rely on a [Visual Studio quick action](#visual-studio-quick-action).
 - Set the language version in the [Visual Studio UI](#set-the-language-version-in-visual-studio).
@@ -60,21 +62,20 @@ The value `latest` uses the latest minor version of the C# language. Valid value
 
 |Value|Meaning|
 |------------|-------------|
-|default|The compiler accepts all valid language syntax from the latest major version that it can support.|
-|ISO-1|The compiler accepts only syntax that is included in ISO/IEC 23270:2003 C# (1.0/1.2) |
-|ISO-2|The compiler accepts only syntax that is included in ISO/IEC 23270:2006 C# (2.0) |
-|3|The compiler accepts only syntax that is included in C# 3.0 or lower.|
-|4|The compiler accepts only syntax that is included in C# 4.0 or lower.|
-|5|The compiler accepts only syntax that is included in C# 5.0 or lower.|
-|6|The compiler accepts only syntax that is included in C# 6.0 or lower.|
-|7|The compiler accepts only syntax that is included in C# 7.0 or lower.|
-|7.1|The compiler accepts only syntax that is included in C# 7.1 or lower.|
-|7.2|The compiler accepts only syntax that is included in C# 7.2 or lower.|
+|preview|The compiler accepts all valid language syntax from the latest preview version.|
+|latest|The compiler accepts syntax from the latest released version of the compiler (including minor version).|
+|latestMajor|The compiler accepts syntax from the latest released major version of the compiler.|
+|8.0|The compiler accepts only syntax that is included in C# 8.0 or lower.|
 |7.3|The compiler accepts only syntax that is included in C# 7.3 or lower.|
-|latest|The compiler accepts all valid language syntax that it can support.|
-
-The special strings `default` and `latest` resolve to the latest major (C# 7.0)
-and minor (C# 7.3) language versions installed on the build machine, respectively.
+|7.2|The compiler accepts only syntax that is included in C# 7.2 or lower.|
+|7.1|The compiler accepts only syntax that is included in C# 7.1 or lower.|
+|7|The compiler accepts only syntax that is included in C# 7.0 or lower.|
+|6|The compiler accepts only syntax that is included in C# 6.0 or lower.|
+|5|The compiler accepts only syntax that is included in C# 5.0 or lower.|
+|4|The compiler accepts only syntax that is included in C# 4.0 or lower.|
+|3|The compiler accepts only syntax that is included in C# 3.0 or lower.|
+|ISO-2|The compiler accepts only syntax that is included in ISO/IEC 23270:2006 C# (2.0) |
+|ISO-1|The compiler accepts only syntax that is included in ISO/IEC 23270:2003 C# (1.0/1.2) |
 
 ## Configure multiple projects
 

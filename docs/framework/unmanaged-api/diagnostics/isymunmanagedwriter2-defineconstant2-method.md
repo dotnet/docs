@@ -30,7 +30,7 @@ HRESULT DefineConstant2(
     [in] mdSignature  sigToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The constant name.  
   

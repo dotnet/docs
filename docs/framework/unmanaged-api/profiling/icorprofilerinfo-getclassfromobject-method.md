@@ -29,7 +29,7 @@ HRESULT GetClassFromObject(
     [out] ClassID *pClassId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object for which to get the `ClassID`.  
   

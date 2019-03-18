@@ -35,7 +35,7 @@ HRESULT GetMemberRefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mr`  
  [in] The MemberRef token to return associated metadata for.  
   

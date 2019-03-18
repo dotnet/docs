@@ -18,7 +18,7 @@ HRESULT EnumerateThreadIDs(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  cThreadIDs  
  [in] The maximum number of threads whose IDs can be returned.  
   

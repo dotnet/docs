@@ -29,7 +29,7 @@ HRESULT GetNumTables (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcTables`  
  [out] A pointer to the number of tables in the current instance scope.  
   

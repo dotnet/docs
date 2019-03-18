@@ -353,7 +353,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     [https://geteventstore.com/](https://geteventstore.com/)
 
 - **Patrick Nommensen. Event-Driven Data Management for Microservices** <br/>
-    *<https://dzone.com/articles/event-driven-data-management-for-microservices-1> *
+    <https://dzone.com/articles/event-driven-data-management-for-microservices-1>
 
 - **The CAP Theorem** <br/>
     [https://en.wikipedia.org/wiki/CAP\_theorem](https://en.wikipedia.org/wiki/CAP_theorem)
@@ -373,7 +373,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 - **Azure Service Bus. Brokered Messaging: Duplicate Detection**  <br/>
     [https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25](https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25)
 
-- **Reliability Guide** (RabbitMQ documentation)* <br/>
+- **Reliability Guide** (RabbitMQ documentation) <br/>
     [https://www.rabbitmq.com/reliability.html\#consumer](https://www.rabbitmq.com/reliability.html#consumer)
 
 - **Azure Service Bus. Brokered Messaging: Duplicate Detection** <br/>

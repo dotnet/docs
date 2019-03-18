@@ -138,7 +138,7 @@
 ## Remarks  
  The `providerInvariantName` parameter corresponds to the **InvariantName** column of a table returned by <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A>.
 
- If you pass a value for `providerInvariantName` that's not valid, an exception is raised with the message, "Unable to find the requested .Net Framework Data Provider.  It may not be installed."
+ If you pass a value for `providerInvariantName` that's not valid, an exception is raised with the message, "Unable to find the requested .NET Framework Data Provider.  It may not be installed."
   
  ]]></format>
         </remarks>

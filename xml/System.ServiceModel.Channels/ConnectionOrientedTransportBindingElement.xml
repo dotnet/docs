@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines how long a TCP connection can take to authenticate itself using the .Net Framing protocol. A client needs to send some initial data before the server has enough information to perform authentication. This timeout is intentionally made smaller than the ReceiveTimeout (10 min) so that malicious unauthenticated clients do not keep the connections tied up to the server for long. The default value is 30 seconds.  
+ This property determines how long a TCP connection can take to authenticate itself using the .NET Framing protocol. A client needs to send some initial data before the server has enough information to perform authentication. This timeout is intentionally made smaller than the ReceiveTimeout (10 min) so that malicious unauthenticated clients do not keep the connections tied up to the server for long. The default value is 30 seconds.  
   
  ]]></format>
         </remarks>

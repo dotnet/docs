@@ -22,7 +22,7 @@
 ## Remarks  
  This class is used by the serialization infrastructure to handle the configuration elements and cannot be used directly.  
   
- Instead, to configure the <xref:System.Xml.Serialization.XmlSchemaImporter>, create an application configuration file and use the following XML elements to specify types used by the class when mapping XSD types to .Net Framework types:  
+ Instead, to configure the <xref:System.Xml.Serialization.XmlSchemaImporter>, create an application configuration file and use the following XML elements to specify types used by the class when mapping XSD types to .NET Framework types:  
   
 -   [&lt;system.xml.serialization&gt; Element](~/docs/standard/serialization/system-xml-serialization-element.md)  
   

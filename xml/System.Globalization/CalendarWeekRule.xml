@@ -88,7 +88,7 @@
  [!code-vb[System.Globalization.CalendarWeekRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendarweekrule/vb/calendarweekruleex.vb#1)]  
   
 > [!NOTE]
->  This does not map exactly to ISO 8601. The differences are discussed in the blog entry [ISO 8601 Week of Year format in Microsoft .Net](https://go.microsoft.com/fwlink/?LinkId=160851).  
+>  This does not map exactly to ISO 8601. The differences are discussed in the blog entry [ISO 8601 Week of Year format in Microsoft .NET](https://go.microsoft.com/fwlink/?LinkId=160851).  
   
  Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> to a new <xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek?displayProperty=nameWithType>.  
   

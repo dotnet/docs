@@ -31,7 +31,7 @@ In general, a static assembly can consist of four elements:
   
  In the following illustration, the developer of a hypothetical application has chosen to separate some utility code into a different module and to keep a large resource file (in this case a .bmp image) in its original file. The .NET Framework downloads a file only when it is referenced; keeping infrequently referenced code in a separate file from the application optimizes code download.  
   
- ![Diagram that shows a multifile assembly.](./media/assembly-contents/multifile-assembly.gif) 
+ ![Diagram that shows a multifile assembly.](./media/assembly-contents/multifile-assembly-diagram.gif) 
   
 > [!NOTE]
 >  The files that make up a multifile assembly are not physically linked by the file system. Rather, they are linked through the assembly manifest and the common language runtime manages them as a unit.  

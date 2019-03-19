@@ -55,7 +55,7 @@ The most basic toll calculation relies only on the vehicle type:
 - A `Bus` is $5.00.
 - A `DeliveryTruck` is $10.00
 
-Create a new `TollCalculator` class, and implement pattern matching on the vehicle type to get the toll amount.
+Create a new `TollCalculator` class, and implement pattern matching on the vehicle type to get the toll amount. The following code shows the initial implementation of the `TollCalculator`.
 
 ```csharp
 using System;
@@ -81,7 +81,7 @@ namespace toll_calculator
 }
 ```
 
-The preceding code uses a **switch expression** (not the same as a [`switch`](../language-reference/keywords/switch.md) statement) that tests the **type pattern**. A **switch expression** begins with the variable, `vehicle` in the preceding code, followed by the `switch` keyword. Next comes all the **switch arms** inside curly braces. The `switch` expression makes other refinements to the syntax that surrounds the `switch` statement. The `case` keyword is omitted, and the result of each arm is an expression. The last two arms show a new language feature. The `{ }` case matches any non-null object that didn't match an earlier arm. This arm catches any incorrect types passed to this method. Finally, the `null` pattern catches when `null` is passed to this method. The `null` pattern can be last because the other type patterns match only a non-null object of the correct type.
+The preceding code uses a **switch expression** (not the same as a [`switch`](../language-reference/keywords/switch.md) statement) that tests the **type pattern**. A **switch expression** begins with the variable, `vehicle` in the preceding code, followed by the `switch` keyword. Next comes all the **switch arms** inside curly braces. The `switch` expression makes other refinements to the syntax that surrounds the `switch` statement. The `case` keyword is omitted, and the result of each arm is an expression. The last two arms show a new language feature. The `{ }` case matches any non-null object that didn't match an earlier arm. This arm catches any incorrect types passed to this method. Finally, the `null` pattern catches when `null` is passed to this method. The `null` pattern can be last because the other type patterns match only a non-null object of the correct type. These `{ }` case must follow the cases for each vehicle type. If the order were reversed, the `{ }` case would take precedence.
 
 You can test this code using the following code in `Program.cs`:
 
@@ -115,7 +115,7 @@ namespace toll_calculator
             }
             catch (ArgumentException e)
             {
-                Console.WriteLine("Caught an argument exception when using the wrong type", DayOfWeek.Friday);
+                Console.WriteLine("Caught an argument exception when using the wrong type");
             }
             try
             {
@@ -152,13 +152,13 @@ vehicle switch
     Car { Passengers: 0}        => 2.00m + 0.50m,
     Car { Passengers: 1 }       => 2.0m,
     Car { Passengers: 2}        => 2.0m - 0.50m,
-    Car c when c.Passengers > 2 => 2.00m - 1.0m,
+    Car c                       => 2.00m - 1.0m,
 
     // ...
 };
 ```
 
-The first three cases test the type as a `Car`, then check the value of the `Passengers` property. If both match, that expression is evaluated and returned. The final clause shows the `when` clause of a switch arm. You use the `when` clause to test conditions other than equality on a property. In the preceding example, the `when` clause tests to see that there are more than 2 passengers in the car. Strictly speaking, it's not necessary in this example.
+The first three cases test the type as a `Car`, then check the value of the `Passengers` property. If both match, that expression is evaluated and returned.
 
 You would also expand the cases for taxis in a similar manner:
 
@@ -206,7 +206,7 @@ vehicle switch
 };
 ```
 
-When you've finished, you'll have a method that looks much like the following:
+The preceding code shows the `when` clause of a switch arm. You use the `when` clause to test conditions other than equality on a property. When you've finished, you'll have a method that looks much like the following:
 
 ```csharp
 vehicle switch
@@ -214,7 +214,7 @@ vehicle switch
     Car { Passengers: 0}        => 2.00m + 0.50m,
     Car { Passengers: 1}        => 2.0m,
     Car { Passengers: 2}        => 2.0m - 0.50m,
-    Car c when c.Passengers > 2 => 2.00m - 1.0m,
+    Car c                       => 2.00m - 1.0m,
 
     Taxi { Fares: 0}  => 3.50m + 1.00m,
     Taxi { Fares: 1 } => 3.50m,
@@ -366,9 +366,9 @@ Finally, you can remove the two rush hour times that pay the regular price. Once
 
 [!code-csharp[SimplifiedTuplePattern](../../../samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#FinalTuplePattern)]
 
-This example highlights one of the advantages of pattern matching: the pattern branches are evaluated in order. If you rearrange them so that an earlier branch handles one of your later cases, the compiler warns you. Those language rules made it easier to do the preceding simplifications with confidence that the code didn't change.
+This example highlights one of the advantages of pattern matching: the pattern branches are evaluated in order. If you rearrange them so that an earlier branch handles one of your later cases, the compiler warns you about the unreachable code. Those language rules made it easier to do the preceding simplifications with confidence that the code didn't change.
 
-Pattern matching provides a natural syntax to implement different solutions than you'd create if you used object-oriented techniques. The cloud is causing data and functionality to live apart. The *shape* of the data and the *operations* on it aren't necessarily described together. In this tutorial, you consumed existing data in entirely different ways from its original function. Pattern matching gave you the ability to write functionality that overrode those types, even though you couldn't extend them.
+Pattern matching makes some types of code more readable and offers an alternative to object-oriented techniques when you can't add code to your classes. The cloud is causing data and functionality to live apart. The *shape* of the data and the *operations* on it aren't necessarily described together. In this tutorial, you consumed existing data in entirely different ways from its original function. Pattern matching gave you the ability to write functionality that overrode those types, even though you couldn't extend them.
 
 ## Next steps
 

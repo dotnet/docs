@@ -13,14 +13,14 @@ An *association end* identifies the [entity type](../../../../docs/framework/dat
     > [!NOTE]
     >  For a given association, the entity type specified for each association end can be the same. This creates a self-association.  
   
--   An [association end multiplicity](../../../../docs/framework/data/adonet/association-end-multiplicity.md) that indicates the number of entity type instances that can be at one end of the association. An association end multiplicity can have a value of one (1), zero or one (0..1), or many (*).  
+-   An [association end multiplicity](../../../../docs/framework/data/adonet/association-end-multiplicity.md) that indicates the number of entity type instances that can be at one end of the association. An association end multiplicity can have a value of one (1), zero or one (0..1), or many (\*).  
   
 -   A name for the association end. (Optional)  
   
 -   Information about operations that are performed on the association end, such as cascade on delete. (Optional)  
   
 ## Example  
- The diagram below shows a conceptual model with two associations: `PublishedBy` and `WrittenBy`. The association ends for the `PublishedBy` association are the `Book` and `Publisher` entity types. The multiplicity of the `Publisher` end is one (1) and the multiplicity of the `Book` end is many (*), indicating that a publisher publishes many books and a book is published by one publisher.  
+ The diagram below shows a conceptual model with two associations: `PublishedBy` and `WrittenBy`. The association ends for the `PublishedBy` association are the `Book` and `Publisher` entity types. The multiplicity of the `Publisher` end is one (1) and the multiplicity of the `Book` end is many (\*), indicating that a publisher publishes many books and a book is published by one publisher.  
   
  ![Example Model](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
   

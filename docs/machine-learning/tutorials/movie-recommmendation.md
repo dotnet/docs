@@ -358,16 +358,18 @@ public static void SaveModel(MLContext mlContext, ITransformer model)
 }
 ```
 
-Save your trained model to a .zip file (which can then be used in your other .NET applications), by adding the following code in the `SaveModel()` method:
+Save your trained model by adding the following code in the `SaveModel()` method:
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#SaveModel "Save the model to a zip file")]
+
+This saves your trained model to a .zip file (in the "Data" folder), which can then be used in other .NET applications to make predictions.
 
 Add the following as the next line of code in the `Main()` method to call your `SaveModel()` method:
 
 [!code-csharp[SaveModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#SaveModelMain "Create SaveModel method in Main")]
 
 ### Use your saved model
-Once you have saved your trained model, you can consume the model in different environments (see the ["How-to guide"](../how-to-guides//consuming-model-ml-net.md) to learn how to operationalize a trained machine learning model in apps).
+Once you have saved your trained model, you can consume the model in different environments (see the ["How-to guide"](../how-to-guides/consuming-model-ml-net.md) to learn how to operationalize a trained machine learning model in apps).
 
 ## Results
 

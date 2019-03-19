@@ -15,7 +15,7 @@ This topic demonstrates how to enable a Windows Communication Foundation (WCF) s
   
 ## To configure a WCF service to authenticate using Windows domain username and password
   
-1.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding>, set the security mode of the binding to <xref:System.ServiceModel.WSHttpSecurity.Message>, set the `ClientCredentialType` of the binding to <xref:System.ServiceModel.MessageCredentialType.UserName>, and add a service endpoint using the configured binding to the service host as shown in the following code:  
+1.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding>, set the security mode of the binding to <xref:System.ServiceModel.WSHttpSecurity.Message?displayProperty=nameWithType>, set the `ClientCredentialType` of the binding to <xref:System.ServiceModel.MessageCredentialType.UserName?displayProperty=nameWithType>, and add a service endpoint using the configured binding to the service host as shown in the following code:  
   
     ```  
     // ...  

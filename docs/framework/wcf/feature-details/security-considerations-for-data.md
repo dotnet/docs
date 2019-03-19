@@ -336,7 +336,7 @@ Note the following concerns regarding threats related to code running with parti
 
     [!code-csharp[CDF_WCF_SecurityConsiderationsForData#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/cdf_wcf_securityconsiderationsfordata/cs/program.cs#1)]
 
-    In the example above, `PermissionsHelper.InternetZone` corresponds to the <xref:System.Security.PermissionSet> for partial trust. Now, without <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute, the application will fail, throwing a <xref:System.Security.SecurityException> indicating that non-public members cannot be serialized in partial trust.
+    In the example above, `PermissionsHelper.InternetZone` corresponds to the <xref:System.Security.PermissionSet> for partial trust. Now, without the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute, the application will fail, throwing a <xref:System.Security.SecurityException> indicating that non-public members cannot be serialized in partial trust.
 
     However, if we add the following line to the source file, the program runs successfully.
 

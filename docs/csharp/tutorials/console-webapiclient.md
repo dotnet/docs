@@ -291,7 +291,7 @@ Before you add more features, let's address the `repo` type and make it follow m
 C# conventions. You'll do this by annotating the `repo` type with *attributes* that control how
 the JSON Serializer works. In your case, you'll use these attributes to define a mapping between
 the JSON key names and the C# class and member names. The two attributes used are the <xref:System.Runtime.Serialization.DataContractAttribute>
-attribute and the <xref:System.Runtime.Serialization.DataMemberAttribute> attributes. By convention, all Attribute classes end in the suffix
+and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes. By convention, all Attribute classes end in the suffix
 `Attribute`. However, you do not need to use that suffix when you apply an attribute.
 
 The <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes are in a different library, so you'll need to add

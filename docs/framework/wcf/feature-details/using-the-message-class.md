@@ -187,7 +187,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
  Note that if you create a copy of a message, the copy uses the message headers from the original.  
   
 ### Other Members that Can Be Overridden  
- You can override the <xref:System.ServiceModel.Channels.Message.OnWriteStartEnvelope%2A>, <xref:System.ServiceModel.Channels.Message.OnWriteStartHeaders%2A>, and <xref:System.ServiceModel.Channels.Message.OnWriteStartBody%2A> methods to specify how the SOAP envelope, SOAP headers, and SOAP body element start tags are written out. These normally correspond to `<soap:Envelope>`, `<soap:Header>`, and `<soap:Body>`. These methods should normally not write anything out if the `Version` property returns <xref:System.ServiceModel.Channels.MessageVersion.None>.  
+ You can override the <xref:System.ServiceModel.Channels.Message.OnWriteStartEnvelope%2A>, <xref:System.ServiceModel.Channels.Message.OnWriteStartHeaders%2A>, and <xref:System.ServiceModel.Channels.Message.OnWriteStartBody%2A> methods to specify how the SOAP envelope, SOAP headers, and SOAP body element start tags are written out. These normally correspond to `<soap:Envelope>`, `<soap:Header>`, and `<soap:Body>`. These methods should normally not write anything out if the <xref:System.ServiceModel.Channels.Message.Version> property returns <xref:System.ServiceModel.Channels.MessageVersion.None>.  
   
 > [!NOTE]
 >  The default implementation of `OnGetReaderAtBodyContents` calls `OnWriteStartEnvelope` and `OnWriteStartBody` before calling `OnWriteBodyContents` and buffering the results. Headers are not written out.  

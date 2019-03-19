@@ -17,15 +17,6 @@ Both the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text
 
 Strings are marshaled as a COM-style `BSTR` type or as a null-terminated string (a character array that ends with a null character). The characters within the string can be marshaled as Unicode (the default on Windows systems) or ANSI.
 
-This topic provides the following information on marshaling string types:
-
-- [Strings Used in Interfaces](#cpcondefaultmarshalingforstringsanchor1)
-- [Strings Used in Platform Invoke](#cpcondefaultmarshalingforstringsanchor5)
-- [Strings Used in Structures](#cpcondefaultmarshalingforstringsanchor2)
-- [Fixed-Length String Buffers](#cpcondefaultmarshalingforstringsanchor3)
-
-<a name="cpcondefaultmarshalingforstringsanchor1"></a>
-
 ## Strings Used in Interfaces
 
 The following table shows the marshaling options for the string data type when marshaled as a method argument to unmanaged code. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings to COM interfaces.
@@ -69,8 +60,6 @@ interface IStringWorker : IDispatch
     HRESULT PassStringRef4([in, out] LPWStr *s);
 };
 ```
-
-<a name="cpcondefaultmarshalingforstringsanchor5"></a>
 
 ## Strings Used in Platform Invoke
 
@@ -126,8 +115,6 @@ class StringLibAPI
     public static extern void PassTBStr([MarshalAs(UnmanagedType.TBStr)] string s);
 }
 ```
-
-<a name="cpcondefaultmarshalingforstringsanchor2"></a>
 
 ## Strings Used in Structures
 
@@ -217,8 +204,6 @@ struct StringInfoT
     [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 256)] public string f2;
 }
 ```
-
-<a name="cpcondefaultmarshalingforstringsanchor3"></a>
 
 ## Fixed-Length String Buffers
 

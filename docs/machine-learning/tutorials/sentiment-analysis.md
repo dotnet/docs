@@ -318,8 +318,6 @@ Next, create a method to save the model so that it can be reused and consumed in
 
 [!code-csharp[SaveToMethod](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#SaveModel "Add the SaveTo Method")]
 
-## Deploy and Predict with a loaded model
-
 You could also display where the file was written by writing a console message with the `_modelPath`, using the following code:
 
 ```csharp

@@ -100,7 +100,7 @@ The following characteristics summarize what makes the previous example an async
 ## <a name="BKMK_WhatHappensUnderstandinganAsyncMethod"></a> What happens in an async method  
  The most important thing to understand in asynchronous programming is how the control flow moves from method to method. The following diagram leads you through the process.  
   
- ![Trace an async program](./media/task-asynchronous-programming-model/navigationtrace.png "NavigationTrace")  
+ ![Trace an async program](./media/task-asynchronous-programming-model/navigation-trace-async-program.png "NavigationTrace")  
   
  The numbers in the diagram correspond to the following steps.  
   

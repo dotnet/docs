@@ -168,7 +168,7 @@ The `LoadData` method executes the following tasks:
 Create the `LoadData` method, just after the `Main` method, using the following code:
 
 ```csharp
-public static (IDataView trainSet, IDataView testSet) LoadData(MLContext mlContext)
+public static TrainCatalogBase.TrainTestData LoadData(MLContext mlContext)
 {
 
 }

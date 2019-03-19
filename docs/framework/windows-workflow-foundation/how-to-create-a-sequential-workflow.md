@@ -15,7 +15,7 @@ Workflows can be constructed from built-in activities as well as from custom act
 > [!NOTE]
 >  To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
-### To create the workflow  
+## To create the workflow  
   
 1.  Right-click **NumberGuessWorkflowActivities** in **Solution Explorer** and select **Add**, **New Item**.  
   
@@ -25,7 +25,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 4.  Drag a **Sequence** activity from the **Control Flow** section of the **Toolbox** and drop it onto the **Drop activity here** label on the workflow design surface.  
   
-### To create the workflow variables and arguments  
+## To create the workflow variables and arguments  
   
 1.  Double-click **SequentialNumberGuessWorkflow.xaml** in **Solution Explorer** to display the workflow in the designer, if it is not already displayed.  
   
@@ -56,7 +56,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 13. Click **Variables** in the lower-left side of the activity designer to close the **Variables** pane.  
   
-### To add the workflow activities  
+## To add the workflow activities  
   
 1.  Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and drop it onto the **Sequence** activity. Type `Target` into the **To** box and the following expression into the **Enter a C# expression** or **Enter a VB expression** box.  
   
@@ -131,13 +131,13 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 13. Click the **WriteLine** activity in the **Then** section to select it, and type the following expression into the **Text** property value box.  
   
-    ```vb  
+    ```text
     "Your guess is too low."  
     ```  
   
 14. Click the **WriteLine** activity in the **Else** section to select it, and type the following expression into the **Text** property value box.  
   
-    ```vb  
+    ```text
     "Your guess is too high."  
     ```  
   
@@ -145,7 +145,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
      ![Completed Sequential Workflow](./media/wfsequentialgettingstartedtutorialcomplete.JPG "WFSequentialGettingStartedTutorialComplete")  
   
-### To build the workflow  
+## To build the workflow  
   
 1.  Press CTRL+SHIFT+B to build the solution.  
   

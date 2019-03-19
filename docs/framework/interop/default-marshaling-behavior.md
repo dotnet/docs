@@ -160,11 +160,11 @@ internal class DelegateTest {
   
  This topic provides the follow information on formatted value types:  
   
--   [Value Types Used in Platform Invoke](#cpcondefaultmarshalingforvaluetypesanchor2)  
+-   [Value Types Used in Platform Invoke](#value-types-used-in-platform-invoke)  
   
--   [Value Types Used in COM Interop](#cpcondefaultmarshalingforvaluetypesanchor3)  
+-   [Value Types Used in COM Interop](#value-types-used-in-com-interop)  
   
- In addition to describing formatted types, this topic identifies [System Value Types](#cpcondefaultmarshalingforvaluetypesanchor1) that have unusual marshaling behavior.  
+ In addition to describing formatted types, this topic identifies [System Value Types](#system-value-types) that have unusual marshaling behavior.  
   
  A formatted type is a complex type that contains information that explicitly controls the layout of its members in memory. The member layout information is provided using the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute. The layout can be one of the following <xref:System.Runtime.InteropServices.LayoutKind> enumeration values:  
   
@@ -180,7 +180,6 @@ internal class DelegateTest {
   
      Indicates that the members are laid out according to the <xref:System.Runtime.InteropServices.FieldOffsetAttribute> supplied with each field.  
   
-<a name="cpcondefaultmarshalingforvaluetypesanchor2"></a>   
 ### Value Types Used in Platform Invoke  
  In the following example the `Point` and `Rect` types provide member layout information using the **StructLayoutAttribute**.  
   
@@ -323,7 +322,6 @@ public class Point {
 }  
 ```  
   
-<a name="cpcondefaultmarshalingforvaluetypesanchor3"></a>   
 ### Value Types Used in COM Interop  
  Formatted types can also be passed to COM interop method calls. In fact, when exported to a type library, value types are automatically converted to structures. As the following example shows, the `Point` value type becomes a type definition (typedef) with the name `Point`. All references to the `Point` value type elsewhere in the type library are replaced with the `Point` typedef.  
   
@@ -347,7 +345,6 @@ interface _Graphics {
 > [!NOTE]
 >  Structures having the <xref:System.Runtime.InteropServices.LayoutKind> enumeration value set to **Explicit** cannot be used in COM interop because the exported type library cannot express an explicit layout.  
   
-<a name="cpcondefaultmarshalingforvaluetypesanchor1"></a>   
 ### System Value Types  
  The <xref:System> namespace has several value types that represent the boxed form of the runtime primitive types. For example, the value type <xref:System.Int32?displayProperty=nameWithType> structure represents the boxed form of **ELEMENT_TYPE_I4**. Instead of marshaling these types as structures, as other formatted types are, you marshal them in the same way as the primitive types they box. **System.Int32** is therefore marshaled as **ELEMENT_TYPE_I4** instead of as a structure containing a single member of type **long**. The following table contains a list of the value types in the **System** namespace that are boxed representations of primitive types.  
   

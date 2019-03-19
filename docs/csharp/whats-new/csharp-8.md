@@ -175,6 +175,8 @@ static string Quadrant(Point p) => p switch
 
 The discard pattern in the preceding switch matches when either `x` or `y`, but not both, is 0. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you do not cover all possible cases in your switch expression.
 
+You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../tutorials/pattern-matching.md).
+
 ## using declarations
 
 A **using declaration** is a variable declaration preceded by the `using` keyword. It tells the compiler that the variable being declared should be disposed at the end of the enclosing scope. For example, consider the following code that writes a text file:

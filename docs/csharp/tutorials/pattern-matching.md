@@ -11,9 +11,9 @@ C# 7 introduced basic pattern matching features. Those features are extended in 
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * How to recognize situations where pattern matching should be used.
-> * How to use pattern matching expressions to implement behavior based on types and property values.
-> * How to combine pattern matching with other techniques to create complete algorithms.
+> * Recognize situations where pattern matching should be used.
+> * Use pattern matching expressions to implement behavior based on types and property values.
+> * Combine pattern matching with other techniques to create complete algorithms.
 
 ## Prerequisites
 
@@ -39,12 +39,12 @@ You can download the starter code from the [dotnet/samples](https://github.com/d
 
 ## Pattern matching designs
 
-The scenario used in this tutorial highlights the kinds of problems that are well suited to use pattern matching to solve: 
+The scenario used in this tutorial highlights the kinds of problems that pattern matching is well-suited to solve:
 
 - The objects you need to work with aren't in an object hierarchy that matches your goals. You may be working with classes that are part of unrelated systems.
 - The functionality you're adding isn't part of the core abstraction for these classes. The toll paid by a vehicle *changes* for different types of vehicles, but the toll isn't a core function of the vehicle.
 
-When the *shape* of the data and the *operations* on that data are not described together, the pattern matching features in C# make it easier to work with. 
+When the *shape* of the data and the *operations* on that data are not described together, the pattern matching features in C# make it easier to work with.
 
 ## Implement the basic toll calculations
 
@@ -144,7 +144,7 @@ The toll authority wants to encourage vehicles to travel at maximum capacity. Th
 - Buses that are less than 50% full pay an extra $2.00.
 - Buses that are more than 90% full get a $1.00 discount.
 
-These rules can be implemented using the **property pattern** in the same switch expression. The property pattern examines properties of the object once the type has been determined.  The single case for a `Car` expands to four different cases:
+These rules can be implemented using the **property pattern** in the same switch expression. The property pattern examines properties of the object once the type has been determined. The single case for a `Car` expands to four different cases:
 
 ```csharp
 vehicle switch
@@ -186,14 +186,14 @@ vehicle switch
     // ...
 
     Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
-    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
+    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m,
     Bus b => 5.00m,
-    
+
     // ...
 };
 ```
 
-The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they charge more based on the weight class of the trucks. Trucks over 5000 lbs are charged an extra $5.00. Light trucks, under 3000 lbs are given a $2.00 discount.  That rule is implemented with the following code:
+The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they charge more based on the weight class of the trucks. Trucks over 5000 lbs are charged an extra $5.00. Light trucks under 3000 lbs are given a $2.00 discount. That rule is implemented with the following code:
 
 ```csharp
 vehicle switch
@@ -215,16 +215,16 @@ vehicle switch
     Car { Passengers: 1}        => 2.0m,
     Car { Passengers: 2}        => 2.0m - 0.50m,
     Car c when c.Passengers > 2 => 2.00m - 1.0m,
-   
+
     Taxi { Fares: 0}  => 3.50m + 1.00m,
     Taxi { Fares: 1 } => 3.50m,
     Taxi { Fares: 2}  => 3.50m - 0.50m,
     Taxi t            => 3.50m - 1.00m,
-    
+
     Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
-    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
+    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m,
     Bus b => 5.00m,
-    
+
     DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
     DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
     DeliveryTruck t => 10.00m,
@@ -246,7 +246,7 @@ public decimal CalculateToll(object vehicle) =>
             2 => 2.0m - 0.5m,
             _ => 2.00m - 1.0m
         },
-    
+
         Taxi t => t.Fares switch
         {
             0 => 3.50m + 1.00m,
@@ -254,11 +254,11 @@ public decimal CalculateToll(object vehicle) =>
             2 => 3.50m - 0.50m,
             _ => 3.50m - 1.00m
         },
-    
+
         Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
-        Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
+        Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m,
         Bus b => 5.00m,
-    
+
         DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
         DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
         DeliveryTruck t => 10.00m,
@@ -268,13 +268,13 @@ public decimal CalculateToll(object vehicle) =>
     };
 ```
 
-In the preceding sample, using a recursive expression means you don't repeat the `Car` and `Taxi` arms contain child arms that test the property value. This technique isn't used for the `Bus` and `DeliveryTruck` arms because those arms are testing ranges for the property, not discrete values.
+In the preceding sample, using a recursive expression means you don't repeat the `Car` and `Taxi` arms containing child arms that test the property value. This technique isn't used for the `Bus` and `DeliveryTruck` arms because those arms are testing ranges for the property, not discrete values.
 
 ## Add peak pricing
 
 For the final feature, the toll authority wants to add time sensitive peak pricing. During the morning and evening rush hours, the tolls are doubled. That rule only affects traffic in one direction: inbound to the city in the morning, and outbound in the evening rush hour. During other times during the workday, tolls increase by 50%. Late night and early morning, tolls are reduced by 25%. During the weekend, it's the normal rate, regardless of the time.
 
-You'll use pattern matching for this feature, but you'll integrate it with other techniques. You could build a single pattern match expression that would account all the combinations of direction, day of the week, and time. The result would be a complicated expression. It would be hard to read and difficult to understand. That makes it hard to ensure correctness. Instead, combine those methods to build a tuple of values that concisely describes all those states. Then use pattern matching to calculate a multiplier for the toll. The tuple contains three discrete conditions:
+You'll use pattern matching for this feature, but you'll integrate it with other techniques. You could build a single pattern match expression that would account for all the combinations of direction, day of the week, and time. The result would be a complicated expression. It would be hard to read and difficult to understand. That makes it hard to ensure correctness. Instead, combine those methods to build a tuple of values that concisely describes all those states. Then use pattern matching to calculate a multiplier for the toll. The tuple contains three discrete conditions:
 
 - The day is either a weekday or a weekend.
 - The band of time when the toll is collected.
@@ -303,7 +303,7 @@ The following table shows the combinations of input values and the peak pricing 
 
 There are 16 different combinations of the three variables. By combining some of the conditions, you'll simplify the final switch expression.
 
-The system that collects the tools uses a <xref:System.DateTime> structure for the time when the toll was collection. Build member methods that create the variables from the preceding table.  The following function uses as pattern matching switch expression to express whether a <xref:System.DateTime> represents a weekend or a weekday:
+The system that collects the tolls uses a <xref:System.DateTime> structure for the time when the toll was collected. Build member methods that create the variables from the preceding table. The following function uses a pattern matching switch expression to express whether a <xref:System.DateTime> represents a weekend or a weekday:
 
 ```csharp
 private static bool IsWeekDay(DateTime timeOfToll) =>
@@ -333,13 +333,13 @@ After you create those methods, you can use another `switch` expression with the
 
 [!code-csharp[FullTuplePattern](~/samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#TuplePatternOne)]
 
-The above code works, but it can be simplified. All eight combinations for the weekend have the same toll. You can replace all eight with the following one line:
+The above code works, but it can be simplified. All eight combinations for the weekend have the same toll. You can replace all eight with the following line:
 
 ```csharp
 (false, _, _) => 1.0m,
 ```
 
-Both inbound and outbound traffic have the same multiplier during the weekday daytime and overnight hours. Those four switch arms can be replaced with the follow two lines:
+Both inbound and outbound traffic have the same multiplier during the weekday daytime and overnight hours. Those four switch arms can be replaced with the following two lines:
 
 ```csharp
 (true, TimeBand.Overnight, _) => 0.75m,
@@ -366,9 +366,9 @@ Finally, you can remove the two rush hour times that pay the regular price. Once
 
 [!code-csharp[SimplifiedTuplePattern](../../../samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#FinalTuplePattern)]
 
-This example highlights one of the advantages of pattern matching. The pattern branches are evaluated in order. If you rearrange them so that an earlier branch handles one of your later cases, the compiler warns you. Those language rules made it easier to do the preceding simplifications with confidence that the code didn't change.
+This example highlights one of the advantages of pattern matching: the pattern branches are evaluated in order. If you rearrange them so that an earlier branch handles one of your later cases, the compiler warns you. Those language rules made it easier to do the preceding simplifications with confidence that the code didn't change.
 
-Pattern matching provides a natural syntax to implement different solutions than you'd create if you used object-oriented techniques. The cloud is causing data and functionality to live apart. The *shape* of the data and the *operations* on it aren't necessarily described together. In this tutorial, you consumed existing data in entirely different ways from its original function. Pattern matching gave you the ability to write functionality that over those types, even though you couldn't extend them.
+Pattern matching provides a natural syntax to implement different solutions than you'd create if you used object-oriented techniques. The cloud is causing data and functionality to live apart. The *shape* of the data and the *operations* on it aren't necessarily described together. In this tutorial, you consumed existing data in entirely different ways from its original function. Pattern matching gave you the ability to write functionality that overrode those types, even though you couldn't extend them.
 
 ## Next steps
 

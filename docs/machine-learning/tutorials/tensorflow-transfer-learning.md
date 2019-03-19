@@ -26,7 +26,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Understand the problem
 
-Image classification is a common Machine Learning problem which has well-known solutions. This tutorial uses an approach that mixes new techniques (deep learning) and traditional (SDCA) techniques.
+Image classification is a common Machine Learning problem which has well-known solutions. This tutorial uses an approach that mixes new techniques (deep learning) and traditional (Logistic Regression) techniques.
 
 This model uses the [Inception model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip) as a *featurizer* (the model is already stored in the [assets folder](./ImageClassification.Train/assets/inputs/inception/)). This means that the model processes input images through the neural network, using the tensor output before classification. This tensor contains the *image features*, used for image identification.
 
@@ -94,7 +94,7 @@ Create global fields to hold the paths to the various assets, and global variabl
 * `_inceptionPb` has the path to the pre-trained model to be reused to train the model.
 * `_inputImageClassifierZip` has the path where the trained model is loaded from.
 * `_outputImageClassifierZip` has the path where the trained model is saved.
-* `LabelTokey` is the `Label`
+* `LabelTokey` is the `Label` value mapped to a key.
 * `ImageReal`  is the column containing the predicted label value. 
 * `PredictedLabelValue` is the column containing the predicted label value.
 
@@ -150,7 +150,7 @@ When building a model with ML.NET, you start by creating an <xref:Microsoft.ML.M
 
 Initialize the `_mlContext` global variable  with a new instance of `MLContext`.  Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
 
-[!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CreateMLContext)]
+[!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#CreateMLContext)]
 
 ## Load the data
 

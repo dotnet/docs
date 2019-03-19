@@ -264,7 +264,11 @@ Print your evaluation metrics to the console by adding the following as the next
 
 [!code-csharp[PrintMetrics](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#PrintMetrics "Print the evaluation metrics")]
 
-This output should look similar to the following:
+Add the following as the next line of code in the `Main()` method to call your `EvaluateModel()` method:
+
+[!code-csharp[EvaluateModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#EvaluateModelMain "Add EvaluateModel method in Main")]
+
+The output so far should look similar to the following:
 
 ```console
 =============== Training the model ===============
@@ -300,10 +304,6 @@ The `root of mean squared error` (RMS or RMSE) is frequently used to measure the
 
 `R Squared` is the variation percentage in the predicted values explained by your model. It's a value between 0 and 1, and the closer the value is to 0, the better the model is.
 
-Add the following as the next line of code in the `Main()` method to call your `EvaluateModel()` method:
-
-[!code-csharp[EvaluateModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#EvaluateModelMain "Add EvaluateModel method in Main")]
-
 ## Use your model
 
 Now you can use your trained model to make predictions on new data.
@@ -338,6 +338,13 @@ To print the results, add the following as the next lines of code in the `UseMod
 Add the following as the next line of code in the `Main()` method to call your `UseModelForSinglePrediction()` method:
 
 [!code-csharp[UseModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#UseModelMain "Add UseModelForSinglePrediction method in Main")]
+
+The output of this method should look similar to the following:
+
+```console
+=============== Making a prediction ===============
+Movie 10 is recommended for user 6
+```
 
 ### Save your model
 To use your model to make predictions in end-user applications, you must first save the model.

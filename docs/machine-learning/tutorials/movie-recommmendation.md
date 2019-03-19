@@ -213,7 +213,7 @@ Choose the machine learning algorithm and append it to the data transformation d
 
 [!code-csharp[AddAlgorithm](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#AddAlgorithm "Add the training algorithm with options")]
 
-The [MatrixFactorizationTrainer](xref:Microsoft.ML.RecommendationCatalog.RecommendationTrainers.MatrixFactorization%28Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options%29) as is your recommendation training algorithm.  [Matrix Factorization](https://en.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)) is a common approach to recommendation when you have data on how users have rated products in the past, which is the case for the datasets in this tutorial. There are other recommendation algorithms for when you have different data available (see the [Recommended Resources](#recommended-resources) section below to learn more). 
+The [MatrixFactorizationTrainer](xref:Microsoft.ML.RecommendationCatalog.RecommendationTrainers.MatrixFactorization%28Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options%29) is your recommendation training algorithm.  [Matrix Factorization](https://en.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)) is a common approach to recommendation when you have data on how users have rated products in the past, which is the case for the datasets in this tutorial. There are other recommendation algorithms for when you have different data available (see the [Other recommendation algorithms](#other-recommendation-algorithms) section below to learn more). 
 
 In this case, the `Matrix Factorization` algorithm uses a method called "collaborative filtering", which assumes that if User 1 has the same opinion as User 2 on a certain issue, then User 1 is more likely to feel the same way as User 2 about a different issue.
 
@@ -224,19 +224,7 @@ E.g. if User 1 and User 2 rate movies similarly, then User 2 is more likely to e
 | User 1 | Watched and liked movie | Watched and liked movie | Watched and liked movie |
 | User 2 | Watched and liked movie | Watched and liked movie | Has not watched -- RECOMMEND movie |
 
-The `Matrix Factorization` trainer has several [Options](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options) including:
-
-**Input and output columns**
-* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.MatrixColumnIndexColumnName> (`userIdEncoded`)
-* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.MatrixRowIndexColumnName> (`movieIdEncoded`)
-* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.LabelColumnName> (`Label`)
-
-**[Hyperparameters](../resources/glossary.md#hyperparameter)**
-
-* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.NumberOfIterations> 
-* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.ApproximationRank> 
-
-For more information on hyperparameters, see the [Improve your model](#improve-your-model) step below.
+The `Matrix Factorization` trainer has several [Options](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options) which you can read more about in the [Algorithm hyperparameters](#algorithm-hyperparameters) section below.
 
 Fit the model to the `Train` data and return the trained model by adding the following as the next line of code in the `BuildAndTrainModel()` method:
 
@@ -425,23 +413,22 @@ While this is a good start, in reality you might want to add other attributes or
 
 If you are unsure about which `Features` might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC) and [Feature Permutation Importance](../how-to-guides/determine-global-feature-importance-in-model.md), which ML.NET provides to discover the most influential `Features`.
 
-### Algorithm parameters
+### Algorithm hyperparameters
 
-While ML.NET provides good default training algorithms, you can further fine-tune performance by changing parameters on these individual algorithms.
+While ML.NET provides good default training algorithms, you can further fine-tune performance by changing the algorithm's [hyperparameters](../resources/glossary.md#hyperparameter).
 
-For `Matrix Factorization`, you can experiment with Learning Rate, ApproximationRank, NumberOfIterations, and several other options to see if that gives you better results.
+For `Matrix Factorization`, you can experiment with hyperparameters such as [NumberOfIterations](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.NumberOfIterations) and [ApproximationRank](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.ApproximationRank) to see if that gives you better results.
 
-Here is an example of how to fine-tune the `Matrix Factorization Trainer` options:
+For instance, in this tutorial the algorithm options are set as the following:
 
 ```csharp
 var options = new MatrixFactorizationTrainer.Options
 {
-  MatrixColumnIndexColumnName = "userIdEncoded",
-  MatrixRowIndexColumnName = "movieIdEncoded",
-  LabelColumnName = "Label",
-  NumberOfThreads = 1,
-  ApproximationRank = 32,
-  LearningRate = 0.3
+    MatrixColumnIndexColumnName = "userIdEncoded",
+    MatrixRowIndexColumnName = "movieIdEncoded", 
+    LabelColumnName = "Label",
+    NumberOfIterations = 20,
+    ApproximationRank = 100
 };
 ```
 

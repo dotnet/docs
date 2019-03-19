@@ -11,7 +11,7 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an objec
   
  In this scenario, you do not issue database commands (for example, `INSERT`) to the database. Instead, you change values and execute methods within your object model. When you want to query the database or send it changes, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates your requests into the correct SQL commands and sends those commands to the database.  
   
- ![Screenshto that shows the Linq Object Model.](./media/the-linq-to-sql-object-model/linq-object-model-two-tier.png)  
+ ![Screenshot that shows the Linq Object Model.](./media/the-linq-to-sql-object-model/linq-object-model-two-tier.png)  
   
  The most fundamental elements in the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object model and their relationship to elements in the relational data model are summarized in the following table:  
   

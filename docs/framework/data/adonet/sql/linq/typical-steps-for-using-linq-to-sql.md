@@ -49,7 +49,7 @@ To implement a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md
 ## Using the Object Model  
  The following illustration shows the relationship between the developer and the data in a two-tier scenario. For other scenarios, see [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md).  
   
- ![Screenshto that shows the Linq Object Model.](./media/the-linq-to-sql-object-model/linq-object-model-two-tier.png)  
+ ![Screenshot that shows the Linq Object Model.](./media/the-linq-to-sql-object-model/linq-object-model-two-tier.png)  
   
  Now that you have the object model, you describe information requests and manipulate data within that model. You think in terms of the objects and properties in your object model and not in terms of the rows and columns of the database. You do not deal directly with the database.  
   

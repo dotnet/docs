@@ -19,11 +19,11 @@ The <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property of a <xref:Sy
   
  The following illustration shows the shape created in the previous example.  
   
- ![Screenshot: FillRule Property of EvenOdd](./media/fillruleevenoddfirstone.png "FillRuleEvenOddFirstOne")  
+ ![Diagram showing the FillRule property of EvenOdd.](./media/how-to-control-the-fill-of-a-composite-shape/fillrule-evenodd-property.png)  
   
  In the illustration above, notice that the center and 3rd ring are not filled. This is because a ray drawn from any point within either of those two rings passes through an even number of segments. See illustration below:  
   
- ![Diagram: FillRule property value of EvenOdd](./media/fillruleevenodd2.png "FillRuleEvenOdd2")  
+ ![Diagram showing the EvenOdd rays drawn in the circle.](./media/how-to-control-the-fill-of-a-composite-shape/fillrule-evenodd-rays.png)  
   
  **NonZero:** This rule determines whether a point is in the fill region of the path by drawing a ray from that point to infinity in any direction and then examining the places where a segment of the shape crosses the ray. Starting with a count of zero, add one each time a Segment crosses the ray from left to right and subtract one each time a path segment crosses the ray from right to left. After counting the crossings, if the result is zero then the point is outside the path. Otherwise, it is inside.  
   
@@ -31,11 +31,11 @@ The <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property of a <xref:Sy
   
  Using the example above, a value of <xref:System.Windows.Media.FillRule.Nonzero> for <xref:System.Windows.Media.GeometryGroup.FillRule%2A> gives the following illustration as a result:  
   
- ![Screenshot: FillRule value of NonZero](./media/fillrulenonzero1.png "FillRuleNonZero1")  
+ ![Illustration showing the FillRule value of Nonzero.](./media/how-to-control-the-fill-of-a-composite-shape/fillrule-value-nonzero.png)  
   
  As you can see, all the rings are filled. This is because all the segments are running in the same direction and so a ray drawn from any point will cross one or more segments and the sum of the crossings will not equal zero. For example, in the illustration below, the red arrows represent the direction the segments are drawn and the white arrow represents an arbitrary ray running from a point in the innermost ring. Starting with a value of zero, for each segment that the ray crosses, a value of one is added because the segment crosses the ray from left to right.  
   
- ![Diagram: FillRule property value equal to NonZero](./media/fillrulenonzero2.png "FillRuleNonZero2")  
+ ![Illustration showing the FillRule property value equal to Nonzero.](./media/how-to-control-the-fill-of-a-composite-shape/fillrule-value-equal-nonzero.png)  
   
  To better demonstrate the behavior of <xref:System.Windows.Media.FillRule.Nonzero> rule a more complex shape with segments running in different directions is required. The XAML code below creates a similar shape as the previous example except that it is created with a <xref:System.Windows.Media.PathGeometry> rather then a <xref:System.Windows.Media.EllipseGeometry> which creates four concentric arcs rather then fully closed concentric circles.  
   
@@ -43,15 +43,15 @@ The <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property of a <xref:Sy
   
  The following illustration shows the shape created in the previous example.  
   
- ![Screenshot: FillRule property value of NonZero](./media/fillrulenonzero3.png "FillRuleNonZero3")  
+ ![Diagram showing the shape created using PathGeometry.](./media/how-to-control-the-fill-of-a-composite-shape/pathgeometry-concentric-arcs.png)  
   
  Notice that the third arc from the center is not filled. The illustration below shows why this is. In the illustration, the red arrows represent the direction the segments are drawn. The two white arrows represent two arbitrary rays that move out from a point in the "non-filled" region. As can be seen from the illustration, the sum of the values from a given ray crossing the segments in its path is zero. As defined above, a sum of zero means that the point is not part of the geometry (not part of the fill) while a sum that is *not* zero, including a negative value, is part of the geometry.  
   
- ![Diagram: FillRule property value of NonZero](./media/fillrulenonzero4.png "FillRuleNonZero4")  
+ ![Diagram showing arbitrary rays crossing segments.](./media/how-to-control-the-fill-of-a-composite-shape/arbitrary-ray-cross-segment.png)  
   
  **Note:** For the purposes of <xref:System.Windows.Media.FillRule>, all shapes are considered closed. If there is a gap in a segment, draw an imaginary line to close it. In the example above, there are small gaps in the rings. Given this, one might expect a ray that runs through the gap to give a different result then a ray running in another direction. Below is an enlarged illustration of one of these gaps and the "imaginary segment" (segment that is drawn for purposes of applying the <xref:System.Windows.Media.FillRule>) that closes it.  
   
- ![Diagram: For FillRule, segments are always closed](./media/fillruleclosedshapes.png "FillRuleClosedShapes")  
+ ![Diagram showing FillRule segments that are always closed.](./media/how-to-control-the-fill-of-a-composite-shape/fillrule-closed-segments.png)  
   
 ## Example  
   

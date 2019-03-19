@@ -1,6 +1,6 @@
 ---
 title: Asynchronous programming in C#
-description: An overview of the C# language support for asynchronous programming using async, await, Task and Task<T>
+description: An overview of the C# language support for asynchronous programming using async, await, Task, and Task<T>
 ms.date: 03/18/2019
 ---
 # The Task asynchronous programming model in C# #
@@ -16,9 +16,9 @@ That's the goal of this syntax: enable code that reads like a sequence of statem
 1. Add butter and jam to the toast.
 1. Pour a glass of orange juice.
 
-If you have experience cooking, you'd would execute those instructions **asynchronously**. you'd start warming the pan for eggs, then start the bacon. You'd put the bread in the toaster, then start the eggs. At each step of the process, you'd start a task, then turn your attention to tasks that are ready for your attention.
+If you have experience cooking, you'd execute those instructions **asynchronously**. you'd start warming the pan for eggs, then start the bacon. You'd put the bread in the toaster, then start the eggs. At each step of the process, you'd start a task, then turn your attention to tasks that are ready for your attention.
 
-This is a good example of asynchronous work that is not parallel. One person (or thread) can handle all these tasks. Continuing the breakfast analogy, one person can make breakfast asynchronously by starting the next task before the first completes. The cooking progresses whether or not someone is watching it. As soon as you start warming the pan for the eggs, you can begin frying the bacon. Once the bacon starts, you can put the bread into the toaster.
+Cooking breakfast is a good example of asynchronous work that isn't parallel. One person (or thread) can handle all these tasks. Continuing the breakfast analogy, one person can make breakfast asynchronously by starting the next task before the first completes. The cooking progresses whether or not someone is watching it. As soon as you start warming the pan for the eggs, you can begin frying the bacon. Once the bacon starts, you can put the bread into the toaster.
 
 For a parallel algorithm, you'd need multiple cooks (or threads). One would make the eggs, one the bacon, and so on. Each one would be focused on just that one task. Each cook (or thread) would be blocked synchronously waiting for bacon to be ready to flip, or the toast to pop. 
 
@@ -26,11 +26,11 @@ Now, consider those same instructions written as C# statements:
 
 [!code-csharp[SynchronousBreakfast](~/samples/snippets/csharp/tour-of-async/AsyncBreakfaster-starter/Program.cs#Main)]
 
-Computers do not interpret those instructions the same way people do. The computer will block on each statement until the work is complete before moving on to the next statement. That creates an unsatisfying breakfast. The later tasks would not be started until the earlier tasks had completed. It would take much longer to create the breakfast, and some items would have gotten cold before being served. 
+Computers don't interpret those instructions the same way people do. The computer will block on each statement until the work is complete before moving on to the next statement. That creates an unsatisfying breakfast. The later tasks wouldn't be started until the earlier tasks had completed. It would take much longer to create the breakfast, and some items would have gotten cold before being served. 
 
 If you want the computer to execute the above instructions asynchronously, you must write asynchronous code.
 
-These concerns are important for the programs you write today. When you write client programs, you want the UI to be responsive to user input. Your application shouldn't make a phone appear frozen while it's downloading data from the web. When you write server programs, you don't want threads blocked. Those threads could be serving other requests. Using synchronous code when asynchronous alternatives exist hurts your ability to scale out less expensively. You need to pay for those blocked threads.
+These concerns are important for the programs you write today. When you write client programs, you want the UI to be responsive to user input. Your application shouldn't make a phone appear frozen while it's downloading data from the web. When you write server programs, you don't want threads blocked. Those threads could be serving other requests. Using synchronous code when asynchronous alternatives exist hurts your ability to scale out less expensively. You pay for those blocked threads.
 
 Successful modern applications require asynchronous code. Without language support, writing asynchronous code required callbacks, completion events, or other means that obscured the original intent of the code. The advantage of the synchronous code is that it's easy to understand. The step-by-step actions make it easy to scan and understand. Traditional asynchronous models forced you to focus on the asynchronous nature of the code, not on the fundamental actions of the code.
 
@@ -42,13 +42,13 @@ Let's start by updating this code so that the thread doesn't block while tasks a
 
 [!code-csharp[SimpleAsyncBreakfast](~/samples/snippets/csharp/tour-of-async/AsyncBreakfaster-V2/Program.cs#Main)]
 
-This code doesn't block while the eggs or the bacon are cooking. This code won't start any other tasks though. You'd still put the toast in the toaster and stare at it until it pops. But at least, you'd respond to anyone that wanted your attention. If this is a restaurant where multiple orders are placed, the cook could start another breakfast while the first is cooking.
+This code doesn't block while the eggs or the bacon are cooking. This code won't start any other tasks though. You'd still put the toast in the toaster and stare at it until it pops. But at least, you'd respond to anyone that wanted your attention. In a restaurant where multiple orders are placed, the cook could start another breakfast while the first is cooking.
 
-Now, the thread working on the breakfast is not blocked while awaiting any started task that hasn't yet finished. For some applications, this change is all that's needed. A GUI application would still respond to the user with just this change. However, for this scenario, we want more changes. You don't want each of the component tasks to be executed sequentially. It's better to start each of the component tasks before awaiting the previous task's completion.
+Now, the thread working on the breakfast isn't blocked while awaiting any started task that hasn't yet finished. For some applications, this change is all that's needed. A GUI application still responds to the user with just this change. However, for this scenario, you want more. You don't want each of the component tasks to be executed sequentially. It's better to start each of the component tasks before awaiting the previous task's completion.
 
 ## Start tasks concurrently
 
-In many scenarios, you want to start several independent tasks immediately. Then, as each of these tasks finish, you can continue other work that's ready. In the breakfast analogy, that's how you get breakfast done more quickly. You also get everything done close to the same time. You'll get a hot breakfast.
+In many scenarios, you want to start several independent tasks immediately. Then, as each task finishes, you can continue other work that's ready. In the breakfast analogy, that's how you get breakfast done more quickly. You also get everything done close to the same time. You'll get a hot breakfast.
 
 The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and related types are classes you can use to reason about tasks that are in progress. That enables you to write code that more closely resembles the way you'd actually create breakfast. You'd start cooking the eggs, bacon, and toast at the same time. As each requires action, you'd turn your attention to that task, take care of the next action, then await for something else that requires your attention.
 
@@ -99,7 +99,7 @@ Console.WriteLine("bacon is ready");
 Console.WriteLine("Breakfast is ready!");
 ```
 
-This works better. You start all the asynchronous tasks at once. You await each task only when you need the results. This may be similar to code in a web application that makes requests of different microservices, then combines the results into a single page. You'll make all the requests immediately. Then, `await` all those tasks, and compose the web page.
+The preceding code works better. You start all the asynchronous tasks at once. You await each task only when you need the results. The preceding code may be similar to code in a web application that makes requests of different microservices, then combines the results into a single page. You'll make all the requests immediately. Then, `await` all those tasks, and compose the web page.
 
 ## Composition with tasks
 
@@ -120,7 +120,7 @@ The previous change illustrated an important technique for working with asynchro
 
 ## Await tasks efficiently
 
-The series of `await` statements at the end of the preceding code can be improved by using methods of the `Task` class. One of those is <xref:System.Threading.Tasks.Task.WhenAll%2A>, which returns a <xref:System.Threading.Tasks.Task> that completes when all the tasks in its argument list have completed as shown in the following code:
+The series of `await` statements at the end of the preceding code can be improved by using methods of the `Task` class. One of those APIs is <xref:System.Threading.Tasks.Task.WhenAll%2A>, which returns a <xref:System.Threading.Tasks.Task> that completes when all the tasks in its argument list have completed as shown in the following code:
 
 ```csharp
 await Task.WhenAll(eggTask, baconTask, toastTask);
@@ -130,7 +130,7 @@ Console.WriteLine("toast is ready");
 Console.WriteLine("Breakfast is ready!");
 ```
 
-Another option is to use <xref:System.Threading.Tasks.Task.WhenAny%2A> which returns a `Task<Task>` that completes when any of its arguments completes. You can await the returned task, knowing that it has already finished. The following code shows how you could use <xref:System.Threading.Tasks.Task.WhenAny%2A> to await the first task to finish, and then process its result. After processing the result from the completed task, you remove that completed task from the list of tasks passed to `WhenAny`.
+Another option is to use <xref:System.Threading.Tasks.Task.WhenAny%2A>, which returns a `Task<Task>` that completes when any of its arguments completes. You can await the returned task, knowing that it has already finished. The following code shows how you could use <xref:System.Threading.Tasks.Task.WhenAny%2A> to await the first task to finish, and then process its result. After processing the result from the completed task, you remove that completed task from the list of tasks passed to `WhenAny`.
 
 [!code-csharp[AwaitAnyTask](~/samples/snippets/csharp/tour-of-async/AsyncBreakfaster-final/Program.cs#AwaitAnyTask)]
 

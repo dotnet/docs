@@ -3,6 +3,7 @@ title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
 ms.date: 06/04/2018
 ---
+
 # dotnet command
 
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
@@ -14,20 +15,26 @@ ms.date: 06/04/2018
 ## Synopsis
 
 # [.NET Core 2.1](#tab/netcore21)
+
 ```
 dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics] [--fx-version]
     [-h|--help] [--info] [--list-runtimes] [--list-sdks] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
 ```
+
 # [.NET Core 2.0](#tab/netcore20)
+
 ```
 dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics]
     [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
 ```
+
 # [.NET Core 1.x](#tab/netcore1x)
+
 ```
 dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-version]
     [-h|--help] [--info] [-v|--verbosity] [--version]
 ```
+
 ---
 
 ## Description
@@ -75,11 +82,12 @@ Displays the installed .NET Core SDKs.
 `--roll-forward-on-no-candidate-fx <N>`
 
 Defines behavior when the required shared framework is not available. `N` can be:
- * `0` - Disable even minor version roll forward.
- * `1` - Roll forward on minor version, but not on major version. This is the default behavior.
- * `2` - Roll forward on minor and major versions.
 
- For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
+* `0` - Disable even minor version roll forward.
+* `1` - Roll forward on minor version, but not on major version. This is the default behavior.
+* `2` - Roll forward on minor and major versions.
+
+For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
 `-v|--verbosity <LEVEL>`
 
@@ -117,7 +125,7 @@ Prints out detailed information about a .NET Core installation and the machine e
 
 `--roll-forward-on-no-candidate-fx`
 
- Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
+Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
 `-v|--verbosity <LEVEL>`
 
@@ -163,7 +171,7 @@ Prints out the version of the .NET Core SDK in use.
 
 ### General
 
-# [.NET Core 2.1](#tab/netcore21)
+#### [.NET Core 2.1](#tab/netcore21)
 
 | Command                                       | Function                                                            |
 | --------------------------------------------- | ------------------------------------------------------------------- |

@@ -30,7 +30,7 @@ Image classification is a common Machine Learning problem which has well-known s
 
 This model uses the [Inception model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip) as a *featurizer* (the model is already stored in the [assets folder](./ImageClassification.Train/assets/inputs/inception/)). This means that the model processes input images through the neural network, using the tensor output before classification. This tensor contains the *image features*, used for image identification.
 
-Finally, these image features will be fed to an SDCA algorithm which will learn how to classify different sets of image features.
+Finally, these image features will be fed to a Logistic regression algorithm which will learn how to classify different sets of image features.
 
 ## DataSet
 
@@ -156,7 +156,7 @@ Initialize the `_mlContext` global variable  with a new instance of `MLContext`.
 
  As the input and output of [`Transforms`](../basic-concepts-model-training-in-mldotnet.md#transformer), a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
 
-In ML.NET, data is similar to a `SQL view`. It is lazily evaluated, schematized, and heterogenous. The object is the first part of the pipeline, and loads the data. For this tutorial, it loads a dataset with issue titles, descriptions, and corresponding area GitHub label. The `DataView` is used to create and train the model.
+In ML.NET, data is similar to a `SQL view`. It is lazily evaluated, schematized, and heterogenous. The object is the first part of the pipeline, and loads the data.  The `DataView` is used to create and train the model.
 
 Since your previously created `ImageNetData` data model type matches the dataset schema, you can combine the initialization, mapping, and dataset loading into one line of code.
 
@@ -194,17 +194,15 @@ Pre-processing and cleaning data are important tasks that occur before a dataset
 
 ML.NET's transform pipelines compose a custom `transforms`set that is applied to your data before training or testing. The transforms' primary purpose is data [featurization](../resources/glossary.md#feature-engineering). Machine learning algorithms understand [featurized](../resources/glossary.md#feature) data, so the next step is to transform our textual data into a format that our ML algorithms recognize. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
 
-In the next steps, we refer to the columns by the names defined in the `GitHubIssue` class.
-
 When the model is trained and evaluated, by default, the values in the **Label** column are considered as correct values to be predicted. As you are using a pretrained model you need to map fields to the new model.. To do that, use the `MLContext.Transforms.Conversion.MapValueToKey`, which is a wrapper for the <xref:Microsoft.ML.ConversionsExtensionsCatalog.ValueToKeyMappingEstimator%2A> transformation class.  The `MapValueToKey` returns an <xref:Microsoft.ML.Data.EstimatorChain%601> that will effectively be a pipeline. Name this `pipeline` as you will then append the trainer to it. Add the next line of code:
 
 [!code-csharp[MapValueToKey1](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#MapValueToKey1)]
 
-
+Your image processing pipeline uses pre-trained DNN featurizers for feature extraction. The images are loaded in memory as a Bitmap type. Next, you resize the images as the pre-trained model has a defined input image width and height. Finally, The `ImagePixelExtractingEstimator` extracts the pixels from the input images and converts them into a numeric vector. Add these image transforms as the next lines of code:
 
 [!code-csharp[ImageTransforms](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ImageTransforms)]
 
-
+The `TensorFlowTransform` extracts specified outputs and scores a dataset using a pre-trained Tensorflow model. 
 
 [!code-csharp[ScoreTensorFlowModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ScoreTensorFlowModel)]
 
@@ -218,7 +216,7 @@ You also need to map the predictedlabel to the predictedlabelvalue:
 
 [!code-csharp[MapValueToKey2](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#MapValueToKey2)]
 
-You train the model, <xref:Microsoft.ML.Data.TransformerChain%601>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, you train your model using the <xref:Microsoft.ML.Data.EstimatorChain%601.Fit%2A> method while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until the `.Fit()` method runs.
+You train the model, <xref:Microsoft.ML.Data.TransformerChain%601>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, you train your model using the <xref:Microsoft.ML.Data.EstimatorChain%601.Fit%2A> method while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. This DataView includes the `softmax2_pre_activation` property (also known as image features) and is produced by the ApplyTensorFlowGraph function. The experiment is not executed until the `.Fit()` method runs. Add this with the following code:
 
 [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#TrainModel)]
 

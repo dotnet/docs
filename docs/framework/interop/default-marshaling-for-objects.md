@@ -287,7 +287,7 @@ mo.SetVariant(new CurrencyWrapper(new Decimal(5.25)));
 ## Marshaling ByRef Variants  
  Although variants themselves can be passed by value or by reference, the **VT_BYREF** flag can also be used with any variant type to indicate that the contents of the variant are being passed by reference instead of by value. The difference between marshaling variants by reference and marshaling a variant with the **VT_BYREF** flag set can be confusing. The following illustration clarifies the differences:  
   
- ![Diagram that showsvVariant passed on the stack.](./media/default-marshaling-for-objects/interop-variant-passed-value-reference.gif)  
+ ![Diagram that shows variant passed on the stack.](./media/default-marshaling-for-objects/interop-variant-passed-value-reference.gif)  
 Variants passed by value and by reference  
   
  **Default behavior for marshaling objects and variants by value**  

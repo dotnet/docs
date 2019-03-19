@@ -160,7 +160,7 @@ Initialize your data path variables, load the data from the *.csv files, and ret
 
 [!code-csharp[LoadData](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#LoadData "Load data from data paths")]
 
-Data in ML.NET is represented as an [IDataView class](xref:Microsoft.Data.DataView.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (e.g. SQL database or log files) to an `IDataView` object.
+Data in ML.NET is represented as an [IDataView class](xref:Microsoft.Data.DataView.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
 
 The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`. In this case, you provide the path for your `Test` and `Train` files and indicate both the text file header (so it can use the column names properly) and the comma character data separator (the default separator is a tab).
 
@@ -217,14 +217,14 @@ The [MatrixFactorizationTrainer](xref:Microsoft.ML.RecommendationCatalog.Recomme
 
 In this case, the `Matrix Factorization` algorithm uses a method called "collaborative filtering", which assumes that if User 1 has the same opinion as User 2 on a certain issue, then User 1 is more likely to feel the same way as User 2 about a different issue.
 
-E.g. if User 1 and User 2 rate movies similarly, then User 2 is more likely to enjoy a movie that User 1 has watched and rated highly:
+For instance, if User 1 and User 2 rate movies similarly, then User 2 is more likely to enjoy a movie that User 1 has watched and rated highly:
 
-|       | Incredibles 2 (2018) | The Avengers (2012) | Guardians of the Galaxy (2014) |
+| | `Incredibles 2 (2018)` | `The Avengers (2012)` | `Guardians of the Galaxy (2014)` |
 | -------------:|-------------:| -----:|-----:|
 | User 1 | Watched and liked movie | Watched and liked movie | Watched and liked movie |
 | User 2 | Watched and liked movie | Watched and liked movie | Has not watched -- RECOMMEND movie |
 
-The `Matrix Factorization` trainer has several [Options](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options) which you can read more about in the [Algorithm hyperparameters](#algorithm-hyperparameters) section below.
+The `Matrix Factorization` trainer has several [Options, which you can read more about in the [Algorithm hyperparameters](#algorithm-hyperparameters) section below.
 
 Fit the model to the `Train` data and return the trained model by adding the following as the next line of code in the `BuildAndTrainModel()` method:
 
@@ -268,7 +268,7 @@ Add the following as the next line of code in the `Main()` method to call your `
 
 [!code-csharp[EvaluateModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#EvaluateModelMain "Add EvaluateModel method in Main")]
 
-The output so far should look similar to the following:
+The output so far should look similar to the following text:
 
 ```console
 =============== Training the model ===============
@@ -300,7 +300,7 @@ RSquared: 0.412556298844873
 
 In this output, there are 20 iterations. In each iteration, the measure of error decreases and converges closer and closer to 0.
 
-The `root of mean squared error` (RMS or RMSE) is frequently used to measure the differences between values predicted by a model and the values actually observed in a test dataset. Technically it's the square root of the average of the squares of the errors. You want your RMSE score to be as close to 1 as possible.
+The `root of mean squared error` (RMS or RMSE) is frequently used to measure the differences between values predicted by a model and the values observed in a test dataset. Technically it's the square root of the average of the squares of the errors. You want your RMSE score to be as close to 1 as possible.
 
 `R Squared` is the variation percentage in the predicted values explained by your model. It's a value between 0 and 1, and the closer the value is to 0, the better the model is.
 
@@ -339,7 +339,7 @@ Add the following as the next line of code in the `Main()` method to call your `
 
 [!code-csharp[UseModelMain](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#UseModelMain "Add UseModelForSinglePrediction method in Main")]
 
-The output of this method should look similar to the following:
+The output of this method should look similar to the following text:
 
 ```console
 =============== Making a prediction ===============
@@ -362,7 +362,7 @@ Save your trained model by adding the following code in the `SaveModel()` method
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/MovieRecommendation/Program.cs#SaveModel "Save the model to a zip file")]
 
-This saves your trained model to a .zip file (in the "Data" folder), which can then be used in other .NET applications to make predictions.
+This method saves your trained model to a .zip file (in the "Data" folder), which can then be used in other .NET applications to make predictions.
 
 Add the following as the next line of code in the `Main()` method to call your `SaveModel()` method:
 
@@ -422,7 +422,7 @@ Adding more training data that has enough samples for each user and movie id can
 
 In this tutorial, you only use the three `Features` (`user id`, `movie id`, and `rating`) that are provided by the dataset. 
 
-While this is a good start, in reality you might want to add other attributes or `Features` (e.g. age, gender, geo-location, etc.) if they are included in the dataset. Adding more relevant `Features` can help improve the performance of your recommendation model. 
+While this is a good start, in reality you might want to add other attributes or `Features` (for example, age, gender, geo-location, etc.) if they are included in the dataset. Adding more relevant `Features` can help improve the performance of your recommendation model. 
 
 If you are unsure about which `Features` might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC) and [Feature Permutation Importance](../how-to-guides/determine-global-feature-importance-in-model.md), which ML.NET provides to discover the most influential `Features`.
 
@@ -432,7 +432,7 @@ While ML.NET provides good default training algorithms, you can further fine-tun
 
 For `Matrix Factorization`, you can experiment with hyperparameters such as [NumberOfIterations](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.NumberOfIterations) and [ApproximationRank](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options.ApproximationRank) to see if that gives you better results.
 
-For instance, in this tutorial the algorithm options are set as the following:
+For instance, in this tutorial the algorithm options are:
 
 ```csharp
 var options = new MatrixFactorizationTrainer.Options
@@ -446,15 +446,15 @@ var options = new MatrixFactorizationTrainer.Options
 ```
 
 ### Other Recommendation Algorithms
-This is only one approach for performing movie recommendations. In many cases, you may not have the ratings data available and only have movie history available from users. In other cases, you may have more than just the user’s rating data.
+The matrix factorization algorithm with collaborative filtering is only one approach for performing movie recommendations. In many cases, you may not have the ratings data available and only have movie history available from users. In other cases, you may have more than just the user’s rating data.
 
 | Algorithm       | Scenario           | Sample  |
 | ------------- |:-------------:| -----:|
 | One Class Matrix Factorization | Use this when you only have userId and movieId. This style of recommendation is based upon the co-purchase scenario, or products frequently bought together, which means it will recommend to customers a set of products based upon their own purchase order history. | [>Try it out](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/MatrixFactorization_ProductRecommendation) |
-| Field Aware Factorization Machines | Use this to make recommendations when you have more Features beyond userId, productId, and rating (such as product description or product price). This also uses a collaborative filtering approach. | [>Try it out](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender) |
+| Field Aware Factorization Machines | Use this to make recommendations when you have more Features beyond userId, productId, and rating (such as product description or product price). This method also uses a collaborative filtering approach. | [>Try it out](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender) |
 
 ### New user scenario
-One common problem in collaborative filtering is the cold start problem, which is when you have a new user with no previous data to draw inferences from. This is often solved by asking new users to create a profile and, for instance, rate movies they have seen in the past. While this puts some burden on the user, it provides some starting data for new users with no rating history.
+One common problem in collaborative filtering is the cold start problem, which is when you have a new user with no previous data to draw inferences from. This problem is often solved by asking new users to create a profile and, for instance, rate movies they have seen in the past. While this method puts some burden on the user, it provides some starting data for new users with no rating history.
 
 ## Resources
 The data used in this tutorial is derived from [MovieLens Dataset](http://files.grouplens.org/datasets/movielens/).

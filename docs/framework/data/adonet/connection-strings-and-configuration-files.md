@@ -75,7 +75,7 @@ Embedding connection strings in your application's code can lead to security vul
 |<xref:System.Configuration.ConnectionStringSettings.ConnectionString%2A>|The connection string. Maps to the **connectionString** attribute.|  
   
 ### Example: Listing All Connection Strings  
- This example iterates through the <xref:System.Configuration.ConnectionStringSettings> collection and displays the <xref:System.Configuration.ConnectionStringSettings.Name%2A>, <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A>, and <xref:System.Configuration.ConnectionStringSettings.ConnectionString%2A> properties in the console window.  
+ This example iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection> and displays the <xref:System.Configuration.ConnectionStringSettings.Name%2A?displayProperty=nameWithType>, <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A?displayProperty=nameWithType>, and <xref:System.Configuration.ConnectionStringSettings.ConnectionString%2A?displayProperty=nameWithType> properties in the console window.  
   
 > [!NOTE]
 >  System.Configuration.dll is not included in all project types, and you may need to set a reference to it in order to use the configuration classes. The name and location of a particular application configuration file varies by the type of application and the hosting process.  

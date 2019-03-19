@@ -31,7 +31,7 @@ Within every assembly is an *assembly manifest*. Similar to a table of contents,
 
 - An *assembly reference list*, which is a list of all external dependencies — .dlls or other files your application needs that may have been created by someone else. Assembly references contain references to both global and private objects. Global objects are available to all other applications. In .NET Core, they are coupled with a particular .NET Core runtime. In .NET Framework, they reside in the global assembly cache. The <xref:System.IO?displayProperty=nameWithType> namespace is an example of an assembly in the global assembly cache. Private objects must be in a directory at either the same level as or below the directory in which your application is installed.
 
-Because assemblies contain information about content, versioning, and dependencies, the applications that use them need not rely don Windows registry values to function properly. Assemblies reduce .dll conflicts and make your applications more reliable and easier to deploy. In many cases, you can install a .NET-based application simply by copying its files to the target computer. For more information, see [Assembly Manifest](../../framework/app-domains/assembly-manifest.md).
+Because assemblies contain information about content, versioning, and dependencies, the applications that use them need not rely on Windows registry values to function properly. Assemblies reduce .dll conflicts and make your applications more reliable and easier to deploy. In many cases, you can install a .NET-based application simply by copying its files to the target computer. For more information, see [Assembly Manifest](../../framework/app-domains/assembly-manifest.md).
 
 ## Adding a reference to an assembly
 

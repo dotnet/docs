@@ -378,28 +378,32 @@ After following the steps above, run your console app (Ctrl + F5). Your results 
 ```console
 =============== Training the model ===============
 iter      tr_rmse          obj
-   0       1.5390   3.1236e+05
-   1       0.9225   1.6025e+05
-   2       0.8690   1.5031e+05
-   3       0.8410   1.4575e+05
-   4       0.8141   1.4236e+05
-   5       0.7852   1.3909e+05
-   6       0.7546   1.3607e+05
-   7       0.7260   1.3350e+05
-   8       0.6988   1.3102e+05
-   9       0.6744   1.2936e+05
-  10       0.6530   1.2766e+05
-  11       0.6353   1.2638e+05
-  12       0.6201   1.2542e+05
-  13       0.6060   1.2464e+05
-  14       0.5955   1.2390e+05
-  15       0.5864   1.2329e+05
-======= Evaluating the model =======
-Rms: 0.981309770322365
-RSquared: 0.427519426849609
-=============== Making a prediction      ===============
+   0       1.5382   3.1213e+05
+   1       0.9223   1.6051e+05
+   2       0.8691   1.5050e+05
+   3       0.8413   1.4576e+05
+   4       0.8145   1.4208e+05
+   5       0.7848   1.3895e+05
+   6       0.7552   1.3613e+05
+   7       0.7259   1.3357e+05
+   8       0.6987   1.3121e+05
+   9       0.6747   1.2949e+05
+  10       0.6533   1.2766e+05
+  11       0.6353   1.2636e+05
+  12       0.6209   1.2561e+05
+  13       0.6072   1.2462e+05
+  14       0.5965   1.2394e+05
+  15       0.5868   1.2352e+05
+  16       0.5782   1.2279e+05
+  17       0.5713   1.2227e+05
+  18       0.5637   1.2190e+05
+  19       0.5604   1.2178e+05
+=============== Evaluating the model ===============
+Rms: 0.977175077487166
+RSquared: 0.43233349213192
+=============== Making a prediction ===============
 Movie 10 is recommended for user 6
-======= Saving the model to a file =======
+=============== Saving the model to a file ===============
 ```
 
 Congratulations! You've now successfully built a machine learning model for recommending movies. You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/MovieRecommendation) repository.

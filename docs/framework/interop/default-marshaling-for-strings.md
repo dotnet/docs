@@ -226,7 +226,7 @@ A `StringBuilder` can be dereferenced and modified by the callee, provided it do
 ```vb
 Public Class Win32API
     Public Declare Auto Sub GetWindowText Lib "User32.Dll" _
-        (h As Integer, s As StringBuilder, nMaxCount As Integer)
+        (hWnd As Integer, lpString As StringBuilder, nMaxCount As Integer)
 End Class
 
 Public Class Window
@@ -243,8 +243,7 @@ End Class
 public class Win32API
 {
     [DllImport("User32.Dll")]
-    public static extern void GetWindowText(int h, StringBuilder s,
-        int nMaxCount);
+    public static extern void GetWindowText(int hWnd, StringBuilder lpString, int nMaxCount);
 }
 
 public class Window

@@ -19,7 +19,7 @@ You can place control statements inside other control statements, for example an
   
  In the following example, the procedure `sumRows` adds together the positive elements of each row of the matrix.  
   
-```  
+```vb
 Public Sub sumRows(ByVal a(,) As Double, ByRef r() As Double)  
     Dim i, j As Integer  
     For i = 0 To UBound(a, 1)  
@@ -43,7 +43,7 @@ End Sub
 ## Nesting Different Kinds of Control Structures  
  You can nest one kind of control structure within another kind. The following example uses a `With` block inside a `For Each` loop and nested `If` blocks inside the `With` block.  
   
-```  
+```vb
 For Each ctl As System.Windows.Forms.Control In Me.Controls  
     With ctl  
         .BackColor = System.Drawing.Color.Yellow  

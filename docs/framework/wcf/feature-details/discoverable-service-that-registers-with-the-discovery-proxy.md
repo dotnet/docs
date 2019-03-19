@@ -260,7 +260,7 @@ namespace Microsoft.Samples.Discovery
                 Console.WriteLine();
                 Console.WriteLine("Press <ENTER> to terminate the service.");
                 Console.WriteLine();
-                Console.ReadLine() 
+                Console.ReadLine();
 
                 serviceHost.Close();
             }

@@ -27,9 +27,9 @@ This topic provides a brief overview of the concept of federated security. It al
 |Security Token Service (STS)|A Web service that issues security tokens; that is, it makes assertions based on evidence that it trusts, to whomever trusts it. This forms the basis of trust brokering between domains.|  
   
 ### Example Scenario  
- The following illustration shows an example of federated security.  
+ The following illustration shows an example of federated security:  
   
- ![Federation](../../../../docs/framework/wcf/feature-details/media/typicalfederatedsecurityscenario.gif "TypicalFederatedSecurityScenario")  
+ ![Diagram showing a typical federated security scenario.](./media/federation/typical-federated-security-scenario.gif)  
   
  This scenario includes two organizations: A and B. Organization B has a Web resource (a Web service) that some users in organization A find valuable.  
   
@@ -84,12 +84,12 @@ This topic provides a brief overview of the concept of federated security. It al
 ## Sample Implementation Using WCF  
  The following illustration shows a sample implementation for a federated security architecture using native support from WCF.  
   
- ![Federation security in WCF](../../../../docs/framework/wcf/feature-details/media/federatedsecurityinwcf.gif "FederatedSecurityInWCF")  
+ ![Diagram showing a sample Federation security implementation.](./media/federation/federated-security-implementation.gif)  
   
 ### Example MyService  
  The service `MyService` exposes a single endpoint through `MyServiceEndpoint`. The following illustration shows the address, binding, and contract associated with the endpoint.  
   
- ![Federation](../../../../docs/framework/wcf/feature-details/media/myservice.gif "MyService")  
+ ![Diagram showing the MyServiceEndpoint details.](./media/federation/myserviceendpoint-details.gif)  
   
  The service endpoint `MyServiceEndpoint` uses the [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and requires a valid Security Assertions Markup Language (SAML) token with an `accessAuthorized` claim issued by STS B. This is declaratively specified in the service configuration.  
   
@@ -154,7 +154,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 #### STS B  
  The following illustration shows the STS B. As stated earlier, a security token service (STS) is also a Web service and can have its associated endpoints, policy, and so on.  
   
- ![Federation](../../../../docs/framework/wcf/feature-details/media/msservicestsb.gif "MsServiceSTSB")  
+ ![Diagram showing security token service B.](./media/federation/myservice-security-token-service-b.gif)  
   
  STS B exposes a single endpoint, called `STSEndpoint` that can be use to request security tokens. Specifically, STS B issues SAML tokens with the `accessAuthorized` claim, which can be presented at the `MyService` service site for accessing the service. However, STS B requires users to present a valid SAML token issued by STS A that contains the `userAuthenticated` claim. This is declaratively specified in the STS configuration.  
   
@@ -278,7 +278,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 ### Client at Organization A  
  The following illustration shows the client at organization A, along with the steps involved in making a `MyService` service call. The other functional components are also included for completeness.  
   
- ![Federation](../../../../docs/framework/wcf/feature-details/media/federationclienta.gif "FederationClientA")  
+ ![Diagram showwing the steps in a MyService service call.](./media/federation/federation-myservice-service-call-process.gif)  
   
 ## Summary  
  Federated security provides a clean division of responsibility and helps to build secure, scalable service architectures. As a platform for building and deploying distributed applications, WCF provides native support for implementing federated security.  

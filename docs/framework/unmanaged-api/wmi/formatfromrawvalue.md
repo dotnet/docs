@@ -80,7 +80,7 @@ The following values are returned by this function:
 
 ## Remarks
 
-This function wraps a call to the [FormatFromRawValue](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms231047%28v=vs.85%29) function.
+This function wraps a call to the [FormatFromRawValue](https://docs.microsoft.com/previous-versions//ms231047(v=vs.85)) function.
 
 ## Requirements
 

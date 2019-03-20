@@ -29,10 +29,9 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
   
  If the <xref:System.Windows.Forms.DataGrid> is bound to data with multiple related tables, and if navigation is enabled on the grid, the grid will display expanders in each row. With an expander, the user can move from a parent table to a child table. Clicking a node displays the child table, and clicking a back button displays the original parent table. In this manner, the grid displays the hierarchical relationships between tables.  
   
- The following screen shot shows a DataGrid bound to data with multiple tables.  
+ The following screen shot shows a DataGrid bound to data with multiple tables:  
   
- ![A DataGrid bound to data with multiple tables](./media/vbcontrol1.gif "vbControl1")  
-A DataGrid bound to data with multiple tables  
+ ![Diagram that shows a DataGrid bound to data with multiple tables.](./media/datagrid-control-overview-windows-forms/datagrid-bound-multiple-tables.gif)  
   
  The <xref:System.Windows.Forms.DataGrid> can provide a user interface for a dataset, navigation between related tables, and rich formatting and editing capabilities.  
   
@@ -88,15 +87,16 @@ A DataGrid bound to data with multiple tables
   
  When the <xref:System.Windows.Forms.DataGrid> control is displaying a table and the <xref:System.Windows.Forms.DataGrid.AllowSorting%2A> property is set to `true`, data can be resorted by clicking the column headers. The user can also add rows and edit cells.  
   
- The relationships between a set of tables are displayed to users by using a parent/child structure of navigation. Parent tables are the highest level of data, and child tables are those data tables that are derived from the individual listings in the parent tables. Expanders are displayed in each parent row that contains a child table. Clicking an expander generates a list of Web-like links to the child tables. When the user selects a link, the child table is displayed. Clicking the show/hide parent rows icon (![show&#47;hide parent rows icon](./media/vbicon.gif "vbIcon")) will hide the information about the parent table or cause it to reappear if the user has previously hidden it. The user can click a back button to move back to the previously viewed table.  
+ The relationships between a set of tables are displayed to users by using a parent/child structure of navigation. Parent tables are the highest level of data, and child tables are those data tables that are derived from the individual listings in the parent tables. Expanders are displayed in each parent row that contains a child table. Clicking an expander generates a list of Web-like links to the child tables. When the user selects a link, the child table is displayed. Clicking the show/hide parent rows icon (![Show/hide parent rows icon](./media/datagrid-control-overview-windows-forms/show-hide-parent-rows.gif)) will hide the information about the parent table or cause it to reappear if the user has previously hidden it. The user can click a back button to move back to the previously viewed table.  
   
 ## Columns and Rows  
  The <xref:System.Windows.Forms.DataGrid> consists of a collection of <xref:System.Windows.Forms.DataGridTableStyle> objects that are contained in the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property. A table style may contain a collection of <xref:System.Windows.Forms.DataGridColumnStyle> objects that are contained in the <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> property of the <xref:System.Windows.Forms.DataGridTableStyle>.. You can edit the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> and <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> properties by using collection editors accessed through the **Properties** window.  
   
  Any <xref:System.Windows.Forms.DataGridTableStyle> associated with the <xref:System.Windows.Forms.DataGrid> control can be accessed through the <xref:System.Windows.Forms.GridTableStylesCollection>. The <xref:System.Windows.Forms.GridTableStylesCollection> can be edited in the designer with the <xref:System.Windows.Forms.DataGridTableStyle> collection editor, or programmatically through the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property.  
-  
- ![Objects included in the DataGrid control](./media/vbcolumns1.gif "vbColumns1")  
-The following illustration shows the objects included in the DataGrid control.  
+
+ The following illustration shows the objects included in the DataGrid control:
+
+ ![Diagram that shows objects included in the DataGrid control.](./media/datagrid-control-overview-windows-forms/visual-basic-columns.gif)  
   
  Table styles and column styles are synchronized with <xref:System.Data.DataTable> objects and <xref:System.Data.DataColumn> objects by setting their `MappingName` properties to the appropriate <xref:System.Data.DataTable.TableName%2A> and <xref:System.Data.DataColumn.ColumnName%2A> properties. When a <xref:System.Windows.Forms.DataGridTableStyle> that has no column styles is added to a <xref:System.Windows.Forms.DataGrid> control bound to a valid data source, and the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property of that table style is set to a valid <xref:System.Data.DataTable.TableName%2A> property, a collection of <xref:System.Windows.Forms.DataGridColumnStyle> objects is created for that table style. For each <xref:System.Data.DataColumn> found in the <xref:System.Data.DataTable.Columns%2A> collection of the <xref:System.Data.DataTable>, a corresponding <xref:System.Windows.Forms.DataGridColumnStyle> is added to the <xref:System.Windows.Forms.GridColumnStylesCollection>. <xref:System.Windows.Forms.GridColumnStylesCollection> is accessed through the <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> property of the <xref:System.Windows.Forms.DataGridTableStyle>. Columns can be added or deleted from the grid using the <xref:System.Windows.Forms.GridColumnStylesCollection.Add%2A> or <xref:System.Windows.Forms.GridColumnStylesCollection.Remove%2A> method on the <xref:System.Windows.Forms.GridColumnStylesCollection>. For more information, see [How to: Add Tables and Columns to the Windows Forms DataGrid Control](how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md) and [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md).  
   

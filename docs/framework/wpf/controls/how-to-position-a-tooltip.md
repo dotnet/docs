@@ -29,15 +29,12 @@ This example shows how to specify the position of a tooltip on the screen.
   
  The following illustrations show how to position a tooltip by using these properties. Although, the [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] examples in these illustrations show how to set the properties that are defined by the <xref:System.Windows.Controls.ToolTip> class, the corresponding properties of the <xref:System.Windows.Controls.ToolTipService> class follow the same layout rules. For more information about the possible values for the Placement property, see [Popup Placement Behavior](popup-placement-behavior.md).  
   
- ![ToolTip placement](./media/tooltipplacement.png "ToolTipPlacement")  
-ToolTip placement by using the Placement property  
+ ![Diagram showing ToolTip placement by using the Placement property.](./media/how-to-position-a-tooltip/tooltip-placement-property.png)  
+
+ ![Diagram showing ToolTip placement by using a placement rectangle.](./media/how-to-position-a-tooltip/tooltip-placement-rectangle-property.png)  
   
- ![Placing a ToolTip by using a placement rectangle](./media/tooltipplacementrectangle.png "ToolTipPlacementRectangle")  
-ToolTip placement by using the Placement and PlacementRectangle properties  
-  
- ![ToolTip placement diagram](./media/tooltipplacementprhv.png "ToolTipPlacementPRHV")  
-ToolTip placement by using the Placement, PlacementRectangle, and Offset properties  
-  
+ ![ToolTip placement by using the Offset property.](./media/how-to-position-a-tooltip/tooltip-placement-offset-property.png)
+
  The following example shows how to use the <xref:System.Windows.Controls.ToolTip> properties to specify the position of a tooltip whose content is a <xref:System.Windows.Controls.ToolTip> object.  
   
  [!code-xaml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  

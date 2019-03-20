@@ -81,23 +81,6 @@ This table applies to <xref:System.String>. For <xref:System.Text.StringBuilder>
 
 The following type definition shows the correct use of `MarshalAsAttribute` for platform invoke calls.
 
-```vb
-Class StringLibAPI
-    Public Declare Auto Sub PassLPStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.LPStr)> s As String)
-    Public Declare Auto Sub PassLPWStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.LPWStr)> s As String)
-    Public Declare Auto Sub PassLPTStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.LPTStr)> s As String)
-    Public Declare Auto Sub PassBStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.BStr)> s As String)
-    Public Declare Auto Sub PassAnsiBStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.AnsiBStr)> s As String)
-    Public Declare Auto Sub PassTBStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.TBStr)> s As String)
-End Class
-```
-
 ```csharp
 class StringLibAPI
 {
@@ -114,6 +97,23 @@ class StringLibAPI
     [DllImport("StringLib.dll")]
     public static extern void PassTBStr([MarshalAs(UnmanagedType.TBStr)] string s);
 }
+```
+
+```vb
+Class StringLibAPI
+    Public Declare Auto Sub PassLPStr Lib "StringLib.dll" _
+        (<MarshalAs(UnmanagedType.LPStr)> s As String)
+    Public Declare Auto Sub PassLPWStr Lib "StringLib.dll" _
+        (<MarshalAs(UnmanagedType.LPWStr)> s As String)
+    Public Declare Auto Sub PassLPTStr Lib "StringLib.dll" _
+        (<MarshalAs(UnmanagedType.LPTStr)> s As String)
+    Public Declare Auto Sub PassBStr Lib "StringLib.dll" _
+        (<MarshalAs(UnmanagedType.BStr)> s As String)
+    Public Declare Auto Sub PassAnsiBStr Lib "StringLib.dll" _
+        (<MarshalAs(UnmanagedType.AnsiBStr)> s As String)
+    Public Declare Auto Sub PassTBStr Lib "StringLib.dll" _
+        (<MarshalAs(UnmanagedType.TBStr)> s As String)
+End Class
 ```
 
 ## Strings Used in Structures
@@ -157,30 +157,6 @@ struct StringInfoT
 
 The following example shows how to use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> to define the same structure in different formats.
 
-```vb
-<StructLayout(LayoutKind.Sequential, CharSet := CharSet.Ansi)> _
-Structure StringInfoA
-    <MarshalAs(UnmanagedType.LPStr)> Public f1 As String
-    <MarshalAs(UnmanagedType.ByValTStr, SizeConst := 256)> _
-    Public f2 As String
-End Structure
-
-<StructLayout(LayoutKind.Sequential, CharSet := CharSet.Unicode)> _
-Structure StringInfoW
-    <MarshalAs(UnmanagedType.LPWStr)> Public f1 As String
-    <MarshalAs(UnmanagedType.ByValTStr, SizeConst := 256)> _
-    Public f2 As String
-<MarshalAs(UnmanagedType.BStr)> Public f3 As String
-End Structure
-
-<StructLayout(LayoutKind.Sequential, CharSet := CharSet.Auto)> _
-Structure StringInfoT
-    <MarshalAs(UnmanagedType.LPTStr)> Public f1 As String
-    <MarshalAs(UnmanagedType.ByValTStr, SizeConst := 256)> _
-    Public f2 As String
-End Structure
-```
-
 ```csharp
 [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
 struct StringInfoA
@@ -205,6 +181,30 @@ struct StringInfoT
 }
 ```
 
+```vb
+<StructLayout(LayoutKind.Sequential, CharSet := CharSet.Ansi)> _
+Structure StringInfoA
+    <MarshalAs(UnmanagedType.LPStr)> Public f1 As String
+    <MarshalAs(UnmanagedType.ByValTStr, SizeConst := 256)> _
+    Public f2 As String
+End Structure
+
+<StructLayout(LayoutKind.Sequential, CharSet := CharSet.Unicode)> _
+Structure StringInfoW
+    <MarshalAs(UnmanagedType.LPWStr)> Public f1 As String
+    <MarshalAs(UnmanagedType.ByValTStr, SizeConst := 256)> _
+    Public f2 As String
+<MarshalAs(UnmanagedType.BStr)> Public f3 As String
+End Structure
+
+<StructLayout(LayoutKind.Sequential, CharSet := CharSet.Auto)> _
+Structure StringInfoT
+    <MarshalAs(UnmanagedType.LPTStr)> Public f1 As String
+    <MarshalAs(UnmanagedType.ByValTStr, SizeConst := 256)> _
+    Public f2 As String
+End Structure
+```
+
 ## Fixed-Length String Buffers
 
 In some circumstances, a fixed-length character buffer must be passed into unmanaged code to be manipulated. Simply passing a string does not work in this case because the callee cannot modify the contents of the passed buffer. Even if the string is passed by reference, there is no way to initialize the buffer to a given size.
@@ -223,22 +223,6 @@ int GetWindowText(
 
 A `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. The following code example demonstrates how `StringBuilder` can be initialized to a fixed length.
 
-```vb
-Public Class Win32API
-    Public Declare Auto Sub GetWindowText Lib "User32.dll" _
-        (hWnd As Integer, lpString As StringBuilder, nMaxCount As Integer)
-End Class
-
-Public Class Window
-    Friend h As Integer ' Friend handle to Window.
-    Public Function GetText() As String
-        Dim sb As New StringBuilder(256)
-        Win32API.GetWindowText(h, sb, sb.Capacity + 1)
-        Return sb.ToString()
-   End Function
-End Class
-```
-
 ```csharp
 public class Win32API
 {
@@ -256,6 +240,22 @@ public class Window
         return sb.ToString();
     }
 }
+```
+
+```vb
+Public Class Win32API
+    Public Declare Auto Sub GetWindowText Lib "User32.dll" _
+        (hWnd As Integer, lpString As StringBuilder, nMaxCount As Integer)
+End Class
+
+Public Class Window
+    Friend h As Integer ' Friend handle to Window.
+    Public Function GetText() As String
+        Dim sb As New StringBuilder(256)
+        Win32API.GetWindowText(h, sb, sb.Capacity + 1)
+        Return sb.ToString()
+   End Function
+End Class
 ```
 
 ## See also

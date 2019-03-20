@@ -1,6 +1,6 @@
 ---
 title: "Marshaling Data with Platform Invoke"
-ms.date: "07/31/2018"
+ms.date: "03/20/2019"
 dev_langs:
   - "cpp"
 helpviewer_keywords:

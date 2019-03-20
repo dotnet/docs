@@ -3,7 +3,7 @@ title: Predict prices using a regression learner with ML.NET
 description: Predict prices using a regression learner with ML.NET.
 author: aditidugar
 ms.author: johalex
-ms.date: 03/12/2019
+ms.date: 03/20/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict prices.
@@ -148,7 +148,7 @@ Load the data using the `MLContext.Data.LoadFromTextFile` wrapper for the [LoadF
 
 As the input and output of `Transforms`, a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
 
-In ML.NET, data is similar to a SQL view. It is lazily evaluated, schematized, and heterogenous. The object is the first part of the pipeline, and loads the data. For this tutorial, it loads a dataset with comments and corresponding toxic or non toxic sentiment. This is used to create the model, and train it.
+In ML.NET, data is similar to a SQL view. It is lazily evaluated, schematized, and heterogenous. The object is the first part of the pipeline, and loads the data. For this tutorial, it loads a dataset with taxi trip pricing information. This is used to create the model, and train it.
 
 Add the following code as the first line of the `Train` method:
 
@@ -183,8 +183,6 @@ Add the following code into the `Train` method to add the `FastTreeRegressionTra
 The final step is to train the model. We train the model, <xref:Microsoft.ML.Data.TransformerChain>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, we train the model using the <xref:Microsoft.ML.Data.EstimatorChain%601.Fit%2A> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
 
 [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#11 "Train the model")]
-
-And that's it! You have successfully trained a machine learning model that can predict taxi fares in NYC. Now let's take a look to understand how accurate the model is and learn how to use it to predict taxi fare values.
 
 ### Save the model
 

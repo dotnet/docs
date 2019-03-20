@@ -98,7 +98,7 @@ You can access all WPF features from procedural code. Follow these steps to crea
 
 1. Add references to the PresentationCore, PresentationFramework, and WindowsBase assemblies by right-clicking on **References** in **Solution Explorer** and choosing **Add Reference**.
 
-   ![Reference Manager showing PresentationCore and PresentationFramework](./media/getting-started-with-ink/references.png)
+   ![Reference Manager showing PresentationCore and PresentationFramework](./media/getting-started-with-ink/reference-manager-presentationcore-presentationframework.png)
 
 1. Build the application by pressing **F5**.
 

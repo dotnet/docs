@@ -48,7 +48,7 @@ As you read the code examples, you often encounter the comment symbol (`'`). Thi
   
 -   Comments cannot follow a line-continuation sequence on the same line.  
   
- You can add or remove comment symbols for a block of code by selecting one or more lines of code and choosing the **Comment** (![Graphic shows the Visual Basic Comment button.](./media/comment-in-code/visual-basic-comment-button.gif)) and **Uncomment** (![Graphic shows the Visual Basic Uncomment button.](./media/comment-in-code/visual-basic-uncomment-button.gif)) buttons on the **Edit** toolbar.  
+ You can add or remove comment symbols for a block of code by selecting one or more lines of code and choosing the **Comment** (![Graphic shows the Visual Basic Comment button.](./media/comments-in-code/visual-basic-comment-button.gif)) and **Uncomment** (![Graphic shows the Visual Basic Uncomment button.](./media/comments-in-code/visual-basic-uncomment-button.gif)) buttons on the **Edit** toolbar.  
   
 > [!NOTE]
 >  You can also add comments to your code by preceding the text with the `REM` keyword. However, the `'` symbol and the **Comment**/**Uncomment** buttons are easier to use and require less space and memory.  

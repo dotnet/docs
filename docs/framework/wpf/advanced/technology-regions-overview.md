@@ -19,7 +19,7 @@ If multiple presentation technologies are used in an application, such as WPF, W
 ### Region Examples  
  The following illustration shows an application that mixes [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)], [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)], and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. Each technology uses its own separate, non-overlapping set of pixels, and there are no region issues.  
   
- ![A window that does not have airspace issues](./media/migrationinteroparchitectarticle01.png "MigrationInteropArchitectArticle01")  
+ ![An example of an application that mixes Win32, DirectX, and WPF.](./media/technology-regions-overview/win32-directx-windows-presentation-foundation-application.png)  
   
  Suppose that this application uses the mouse pointer position to create an animation that attempts to render over any of these three regions. No matter which technology was responsible for the animation itself, that technology would violate the region of the other two. The following illustration shows an attempt to render a WPF circle over a Win32 region.  
   

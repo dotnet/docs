@@ -8,9 +8,9 @@ author: "BrucePerlerMS"
 Windows Identity Foundation (WIF) includes support for federated authentication in ASP.NET applications through the WS-Federated Authentication Module (WS-FAM). This topic will help you understand how federated authentication works and how to use it.  
   
 ### Overview of Federated Authentication  
- Federated authentication allows a Security Token Service (STS) in one trust domain to provide authentication information to an STS in another trust domain when there is a trust relationship between the two domains. An example of this is shown in the following illustration.  
+ Federated authentication allows a Security Token Service (STS) in one trust domain to provide authentication information to an STS in another trust domain when there is a trust relationship between the two domains. An example of this is shown in the following illustration:  
   
- ![Federation Authentication Scenario](../../../docs/framework/security/media/federatedauthentication.gif "FederatedAuthentication")  
+ ![Diagram showing the federated authentication scenario.](./media/wsfederation-authentication-module-overview/federated-authentication.gif)  
   
 1.  A client in the Fabrikam trust domain sends a request to a Relying Party (RP) application in the Contoso trust domain.  
   
@@ -44,7 +44,7 @@ Windows Identity Foundation (WIF) includes support for federated authentication 
   
  The following diagram shows the overall flow of information in the passive redirect case. The request is automatically redirected via the STS to establish credentials without a login page:  
   
- ![Timing diagram for sign&#45;in with passive redirect](../../../docs/framework/security/media/signinusingpassiveredirect.gif "SignInUsingPassiveRedirect")  
+ ![Diagram that shows sign&#45;in with passive redirect.](./media/wsfederation-authentication-module-overview/sign-in-using-passive-redirect.gif)  
   
  The following diagram shows more detail on what happens when the user has authenticated to the STS and their security tokens are processed by the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>:  
   

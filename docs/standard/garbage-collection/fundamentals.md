@@ -257,19 +257,17 @@ Concurrent garbage collection
   
  The following illustration shows background garbage collection performed on a separate dedicated thread on a workstation.  
   
- ![Background workstation garbage collection](../../../docs/standard/garbage-collection/media/backgroundworkstn.png "BackgroundWorkstn")  
-Background workstation garbage collection  
-  
+ ![Diagram that shows background workstation garbage collection.](./media/fundamentals/background-workstation-garbage-collection.png)
+   
  [Back to top](#top)  
   
 <a name="background_server_garbage_collection"></a>   
 ## Background server garbage collection  
  Starting with the .NET Framework 4.5, background server garbage collection is the default mode for server garbage collection. To choose this mode, set the `enabled` attribute of the [\<gcServer> element](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) to `true` in the runtime configuration schema. This mode functions similarly to background workstation garbage collection, described in the previous section, but there are a few differences. Background workstation garbage collection uses one dedicated background garbage collection thread, whereas background server garbage collection uses multiple threads, typically a dedicated thread for each logical processor. Unlike the workstation background garbage collection thread, these threads do not time out.  
   
- The following illustration shows background garbage collection performed on a separate dedicated thread on a server.  
+ The following illustration shows background garbage collection performed on a separate dedicated thread on a server:  
   
- ![Background server garbage collection](../../../docs/standard/garbage-collection/media/backgroundserver.png "BackgroundServer")  
-Background server garbage collection  
+ ![Diagram that shows background server garbage collection.](./media/fundamentals/background-server-garbage-collection.png)  
   
 ## See also
 

@@ -23,19 +23,19 @@ If multiple presentation technologies are used in an application, such as WPF, W
   
  Suppose that this application uses the mouse pointer position to create an animation that attempts to render over any of these three regions. No matter which technology was responsible for the animation itself, that technology would violate the region of the other two. The following illustration shows an attempt to render a WPF circle over a Win32 region.  
   
- ![Interop diagram](./media/migrationinteroparchitectarticle02.png "MigrationInteropArchitectArticle02")  
+ ![An attempt to render a WPF circle over a Win32 region.](./media/technology-regions-overview/render-windows-presentation-foundation-circle-over-win32-region.png)  
   
  Another violation is if you try to use transparency/alpha blending between different technologies.  In the following illustration, the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] box violates the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] and [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] regions. Because pixels in that [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] box are semi-transparent, they would have to be owned jointly by both [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], which is not possible.  So this is another violation and cannot be built.  
   
- ![Interop diagram](./media/migrationinteroparchitectarticle03.png "MigrationInteropArchitectArticle03")  
+ ![Diagram showing a WPF box violating the Win32 and DirectX regions.](./media/technology-regions-overview/windows-foundation-presentation-box-violate-win32-directx-region.png)  
   
  The previous three examples used rectangular regions, but different shapes are possible.  For example, a region can have a hole. The following illustration shows a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] region with a rectangular hole this is the size of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] regions combined.  
   
- ![Interop diagram](./media/migrationinteroparchitectarticle04.png "MigrationInteropArchitectArticle04")  
+ ![Diagram that shows a Win32 region with a rectangular hole.](./media/technology-regions-overview/win32-region-rectangular-hole.png)  
   
  Regions can also be completely nonrectangular, or any shape describable by a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] HRGN (region).  
   
- ![Interop diagram](./media/migrationinteroparchitectarticle05.png "MigrationInteropArchitectArticle05")  
+ ![Diagram that shows a nonrectangular region.](./media/technology-regions-overview/nonrectangular-win32-region.png)  
   
 ## Transparency and Top-Level Windows  
  The window manager in Windows only really processes [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] HWNDs. Therefore, every [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Window> is an HWND. The <xref:System.Windows.Window> HWND must abide by the general rules for any HWND. Within that HWND, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] code can do whatever the overall [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] support. But for interactions with other HWNDs on the desktop, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] must abide by [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] processing and rendering rules.  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] supports non-rectangular windows by using [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]—HRGNs for non-rectangular windows, and layered windows for a per-pixel alpha.  

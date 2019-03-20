@@ -17,7 +17,7 @@ Visual Basic provides new features for rapid application development that improv
   
  This table shows the top-level `My` objects and their relationship to each other.  
   
- ![Object Model for My](../../../visual-basic/developing-apps/development-with-my/media/myobjmodel.gif "MyObjModel")  
+ ![Diagram shows the Object Model for My.](./media/index/my-object-model-relationships.gif)  
   
 ## In This Section  
  [Performing Tasks with My.Application, My.Computer, and My.User](../../../visual-basic/developing-apps/development-with-my/performing-tasks-with-my-application-my-computer-and-my-user.md)  

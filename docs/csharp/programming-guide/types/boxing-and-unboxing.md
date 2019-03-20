@@ -67,7 +67,7 @@ Boxing is the process of converting a [value type](../../../csharp/language-refe
   
  The following figure demonstrates the result of the previous statements: 
   
- ![Graphic showing an unboxing conversion.](./media/boxing-and-unboxing/unboxing-conversion.gif)
+ ![Graphic showing an unboxing conversion.](./media/boxing-and-unboxing/unboxing-conversion-operation.gif)
   
  For the unboxing of value types to succeed at run time, the item being unboxed must be a reference to an object that was previously created by boxing an instance of that value type. Attempting to unbox `null` causes a <xref:System.NullReferenceException>. Attempting to unbox a reference to an incompatible value type causes an <xref:System.InvalidCastException>.  
   

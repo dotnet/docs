@@ -13,12 +13,11 @@ ms.author: "ronpet"
 # Copying and Pinning
 When marshaling data, the interop marshaler can copy or pin the data being marshaled. Copying the data places a copy of data from one memory location in another memory location. The following illustration shows the differences between copying a value type and copying a type passed by reference from managed to unmanaged memory.  
   
- ![Value types passed by value and by reference](./media/interopmarshalcopy.gif "interopmarshalcopy")  
-Value types passed by value and by reference  
+ ![Diagram that shows value types passed by value and by reference.](./media/copying-and-pinning/interop-marshal-copy.gif)  
   
  Method arguments passed by value are marshaled to unmanaged code as values on the stack. The copying process is direct. Arguments passed by reference are passed as pointers on the stack. Reference types are also passed by value and by reference. As the following illustration shows, reference types passed by value are either copied or pinned.  
   
- ![COM interop](./media/interopmarshalpin.gif "interopmarshalpin")  
+ ![Diagram showing reference types passed by value and by reference.](./media/copying-and-pinning/interop-marshal-reference-pin.gif)  
 Reference types passed by value and by reference  
   
  Pinning temporarily locks the data in its current memory location, thus keeping it from being relocated by the common language runtime's garbage collector. The marshaler pins data to reduce the overhead of copying and enhance performance. The type of the data determines whether it is copied or pinned during the marshaling process.  Pinning is automatically performed during marshaling for objects such as <xref:System.String>, however you can also manually pin memory using the <xref:System.Runtime.InteropServices.GCHandle> class.  

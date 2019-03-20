@@ -1193,6 +1193,7 @@
 ### [Issue classification (multiclass classification)](machine-learning/tutorials/github-issue-classification.md)
 ### [Price prediction (regression)](machine-learning/tutorials/taxi-fare.md)
 ### [Iris flowers (clustering)](machine-learning/tutorials/iris-clustering.md)
+### [Movie recommendation (recommendation)](machine-learning/tutorials/movie-recommmendation.md)
 ## [How-to guides](machine-learning/how-to-guides/index.md)
 ### Prepare data
 #### [Apply categorical feature engineering](machine-learning/how-to-guides/train-model-categorical-ml-net.md)

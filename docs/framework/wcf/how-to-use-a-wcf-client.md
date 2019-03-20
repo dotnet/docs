@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Use a Windows Communication Foundation client"
-ms.date: 01/25/2019
+ms.date: 03/19/2019
 helpviewer_keywords:
   - "WCF clients [WCF], using"
 dev_langs:
@@ -12,10 +12,7 @@ ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
 
 This tutorial describes the last of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-After you've created and configured a Windows Communication Foundation (WCF) proxy, create a client instance and compile the client application. You then use it to communicate with the WCF service. The client code does the following steps:
-- Instantiates the WCF client.
-- Calls the service operations from the generated proxy.
-- Closes the client after the operation call is completed.
+After you've created and configured a Windows Communication Foundation (WCF) proxy, you create a client instance and compile the client application. You then use it to communicate with the WCF service. 
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -24,7 +21,12 @@ In this tutorial, you learn how to:
 
 ## Add code to use the WCF client
 
-Open the *Program.cs* (or *Module1.vb*) file from the **GettingStartedClient** project and replace the existing code with the following code:
+The client code does the following steps:
+- Instantiates the WCF client.
+- Calls the service operations from the generated proxy.
+- Closes the client after the operation call is completed.
+
+Open the **Program.cs** or **Module1.vb** file from the **GettingStartedClient** project and replace its code with the following code:
 
 ```csharp
 using System;
@@ -68,7 +70,7 @@ namespace GettingStartedClient
             Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result);
 
             // Step 3: Close the client to gracefully close the connection and clean up resources.
-            Console.WriteLine("\nPress <Enter> to terminate client.");
+            Console.WriteLine("\nPress <Enter> to terminate the client.");
             Console.ReadLine();
             client.Close();
         }
@@ -116,7 +118,7 @@ Module Module1
 
         ' Step 3: Close the client to gracefully close the connection and clean up resources.
         Console.WriteLine()
-        Console.WriteLine("Press <Enter> to terminate client.")
+        Console.WriteLine("Press <Enter> to terminate the client.")
         Console.ReadLine()
         Client.Close()
 
@@ -129,37 +131,48 @@ Notice the `using` (for Visual C#) or `Imports` (for Visual Basic) statement tha
 
 ## Test the WCF client
 
-To test the application:
+### To test the application from Visual Studio
+
 1. Save and build the solution.
-2. Run *GettingStartedHost.exe* to start the service.
-3. Run *GettingStartedClient.exe* to start the client.
 
-*GettingStartedHost.exe* produces the following output:
+2. Select the **GettingStartedLib** folder, and then select **Set as Startup Project** from the shortcut menu.
 
-```text
-The service is ready.
-Press <Enter> to terminate service.
+3. From **Startup Projects**, select **GettingStartedLib** from the drop-down list, then select **Run** or press **F5**.
 
-Received Add(100,15.99)
-Return: 115.99
-Received Subtract(145,76.54)
-Return: 68.46
-Received Multiply(9,81.25)
-Return: 731.25
-Received Divide(22,7)
-Return: 3.14285714285714
-```
+### To test the application from a command prompt
 
-*GettingStartedClient.exe* produces the following output:
+1. Open a command prompt as an administrator, and then navigate to your Visual Studio solution directory. 
 
-```text
-Add(100,15.99) = 115.99
-Subtract(145,76.54) = 68.46
-Multiply(9,81.25) = 731.25
-Divide(22,7) = 3.14285714285714
+2. Enter *GettingStartedHost\bin\Debug\GettingStartedHost.exe* to start the service.
 
-Press <Enter> to terminate client.
-```
+3. Open another command prompt, navigate to your Visual Studio solution directory, then enter *GettingStartedClient\bin\Debug\GettingStartedClient.exe* to start the client.
+
+   *GettingStartedHost.exe* produces the following output:
+
+   ```text
+   The service is ready.
+   Press <Enter> to terminate the service.
+
+   Received Add(100,15.99)
+   Return: 115.99
+   Received Subtract(145,76.54)
+   Return: 68.46
+   Received Multiply(9,81.25)
+   Return: 731.25
+   Received Divide(22,7)
+   Return: 3.14285714285714
+   ```
+
+   *GettingStartedClient.exe* produces the following output:
+
+   ```text
+   Add(100,15.99) = 115.99
+   Subtract(145,76.54) = 68.46
+   Multiply(9,81.25) = 731.25
+   Divide(22,7) = 3.14285714285714
+
+   Press <Enter> to terminate the client.
+   ```
 
 ## Next steps
 

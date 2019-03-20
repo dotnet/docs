@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Host and run a basic Windows Communication Foundation service"
-ms.date: 01/25/2019
+ms.date: 03/19/2019
 dev_langs:
   - "csharp"
   - "vb"
@@ -13,15 +13,7 @@ ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
 
 This tutorial describes the third of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-The next task for creating a WCF application is to host a WCF service in a console application. After you create a console application project, you then add a program to host the service. This program has the following [steps](#service-hosting-program-steps):
-
-1. Create a URI for the base address.
-2. Create a class instance for hosting the service.
-3. Create a service endpoint.
-4. Enable metadata exchange.
-5. Open the service host to listen for incoming messages.
-
-A WCF service exposes one or more *endpoints*, each of which exposes one or more service operations. A service endpoint specifies the following information: 
+The next task for creating a WCF application is to host a WCF service in a console application. A WCF service exposes one or more *endpoints*, each of which exposes one or more service operations. A service endpoint specifies the following information: 
 - An address where you can find the service.
 - A binding that contains the information that describes how a client must communicate with the service. 
 - A contract that defines the functionality that the service provides to its clients.
@@ -54,7 +46,7 @@ In this tutorial, you learn how to:
 
     2. In the **Add Reference** dialog, under **Projects** on the left side of the window, select **Solution**. 
  
-    3. Find and select **GettingStartedLib** in the center section of the window, and then select **OK**. 
+    3. Select **GettingStartedLib** in the center section of the window, and then select **OK**. 
 
        This action makes the types defined in the **GettingStartedLib** project available to the **GettingStartedHost** project.
 
@@ -70,7 +62,16 @@ In this tutorial, you learn how to:
 
 ## Add code to host the service
 
-1. Open the *Program.cs* (or *Module1.vb*) file in the **GettingStartedHost** project and replace its code with the following code:
+To host the service, you add code to do the following steps: 
+   1. Create a URI for the base address.
+   2. Create a class instance for hosting the service.
+   3. Create a service endpoint.
+   4. Enable metadata exchange.
+   5. Open the service host to listen for incoming messages.
+  
+Make the following changes to the code:
+
+1. Open the **Program.cs** or **Module1.vb** file in the **GettingStartedHost** project and replace its code with the following code:
 
     ```csharp
     using System;
@@ -170,31 +171,24 @@ In this tutorial, you learn how to:
     For information about how this code works, see [Service hosting program steps](#service-hosting-program-steps).
 
 
-2. Edit *App.config* in **GettingStartedLib**:
-   - For Visual C# projects, edit *App.config* to reflect the changes you made to *Program.cs*:
-       - Change line 14 to `<service name="GettingStartedLib.CalculatorService">`
-       - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
-       - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`
-
-   - For Visual Basic projects, edit *App.config* to reflect the changes you made to *Module1.vb*:
-       - Change line 14 to `<service name="GettingStartedLib.GettingStartedLib.CalculatorService">`
-       - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
-       - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.GettingStartedLib.ICalculator">`
-
-3. For Visual Basic projects, make the following change to the project properties:
+2. Update the project properties:
 
    1. In the **Solution Explorer** window, select the **GettingStartedHost** folder, and then select **Properties** from the shortcut menu.
 
-   2. In the **GettingStartedHost** window, for **Startup object**, select **Service.Program** from the list. 
+   2. On the **GettingStartedHost** properties page, select the **Application** tab:
 
-   3. From the main menu, select **File** > **Save All**.
+      - For C# projects, select **GettingStartedHost.Program** from the **Startup object** list.
+
+      - For Visual Basic projects, select **Service.Program** from the **Startup object** list.
+
+   3. From the **File** menu, select **Save All**.
 
 
 ## Verify the service is working
 
 1. Build the solution, and then run the **GettingStartedHost** console application from inside Visual Studio. 
 
-    The service must be run with administrator privileges. Because Visual Studio was opened with administrator privileges, **GettingStartedHost** is also run with administrator privileges. As an alternative, you can open a new command prompt as an adminstrator (select **More** > **Run as administrator** from the shortcut menu) and run *GettingStartedHost.exe* within it.
+    The service must be run with administrator privileges. Because you opened Visual Studio with administrator privileges, when you run **GettingStartedHost** in Visual Studio, the application is run with administrator privileges as well. As an alternative, you can open a new command prompt as an administrator (select **More** > **Run as administrator** from the shortcut menu) and run **GettingStartedHost.exe** within it.
 
 2. Open a web browser and browse to the service's page at `http://localhost:8000/GettingStarted/CalculatorService`.
    
@@ -217,7 +211,7 @@ The steps in the code you added to host the service are described as follows:
 
 - **Step 4**: Enable metadata exchange. Clients use metadata exchange to generate proxies for calling the service operations. To enable metadata exchange, create a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance, set its <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled> property to `true`, and add the `ServiceMetadataBehavior` object to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> collection of the <xref:System.ServiceModel.ServiceHost> instance.
 
-- **Step 5**: Open <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. The application waits for you to press **Enter**. If you don't press **Enter**, the app closes immediately and the service shuts down. After the application instantiates <xref:System.ServiceModel.ServiceHost>, it executes a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
+- **Step 5**: Open <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. The application waits for you to press **Enter**. After the application instantiates <xref:System.ServiceModel.ServiceHost>, it executes a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
 
 > [!IMPORTANT]
 > When you add a WCF service library, Visual Studio hosts it for you if you debug it by starting a service host. To avoid conflicts, you can prevent Visual Studio from hosting the WCF service library. 

@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Create a Windows Communication Foundation client"
-ms.dat8: 01/25/2019
+ms.dat8: 03/19/2019
 helpviewer_keywords:
   - "clients [WCF], running"
   - "WCF clients [WCF], running"
@@ -30,11 +30,15 @@ In this tutorial, you learn how to:
 
 1. Create a console app project in Visual Studio. 
 
-    1. In the **Solution Explorer** window, select the **GettingStarted** solution (top node), and then select **Add** > **New Project** from the shortcut menu. 
-    
-    2. In the **Add New Project** window, on the left side, select the **Windows Desktop** category under **Visual C#** or **Visual Basic**. 
+    1. From the **File** menu, select **Open** > **Project/Solution** and browse to the **GettingStarted** solution you previously created (*GettingStarted.sln*). Select **Open**.
 
-    3. Select the **Console App (.NET Framework)** template, and enter *GettingStartedClient* for the **Name**. Select **OK**.
+    2. From the **View** menu, select **Solution Explorer**.
+
+    3. In the **Solution Explorer** window, select the **GettingStarted** solution (top node), and then select **Add** > **New Project** from the shortcut menu. 
+    
+    4. In the **Add New Project** window, on the left side, select the **Windows Desktop** category under **Visual C#** or **Visual Basic**. 
+
+    5. Select the **Console App (.NET Framework)** template, and enter *GettingStartedClient* for the **Name**. Select **OK**.
 
 2. Add a reference in the **GettingStartedClient** project to the <xref:System.ServiceModel> assembly. 
 
@@ -50,13 +54,11 @@ In this tutorial, you learn how to:
 
    1. In the **Solution Explorer** window, select the **References** folder under the **GettingStartedClient** project, and then select **Add Service Reference** from the shortcut menu.
 
-   2. In the **Add Service Reference** window, enter the following URL for the **Address**: `http://localhost:8000/GettingStarted/CalculatorService`.
+   2. In the **Add Service Reference** window, select **Discover**.
 
-   3. Select **Go**. 
+      The CalculatorService service starts and Visual Studio displays it in the **Services** box.
 
-      The CalculatorService service starts and Visual Studio displays the **CalculatorService** service in the **Services** box.
-
-   4. Select **CalculatorService** to expand it and display the service contracts implemented by the service. Leave the default **Namespace** and choose **OK**.
+   3. Select **CalculatorService** to expand it and display the service contracts implemented by the service. Leave the default **Namespace** and choose **OK**.
 
       Visual Studio adds a new item under the **Connected Services** folder in the **GettingStartedClient** project. 
 
@@ -75,7 +77,7 @@ svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localh
 
 ### Client configuration file
 
-After you've created the client, Visual Studio creates an *App.config* configuration file in the **GettingStartedClient** project, which should be similar to the following example:
+After you've created the client, Visual Studio creates the **App.config** configuration file in the **GettingStartedClient** project, which should be similar to the following example:
 
 ```xml
     <?xml version="1.0" encoding="utf-8" ?>

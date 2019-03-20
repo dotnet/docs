@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Define a Windows Communication Foundation service contract"
-ms.date: 01/25/2019
+ms.date: 03/19/2019
 helpviewer_keywords:
   - "service contracts [WCF], defining"
 dev_langs:
@@ -46,7 +46,11 @@ In this tutorial, you learn how to:
       - The *Service1* file contains the default implementation of the service contract. 
       - The *App.config* file contains the configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more information about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
 
-3. Open the *IService1.cs* (or *IService1.vb*) file, and replace its code with the following code:
+      > [!NOTE]
+      > If you installed Visual Studio with Visual Basic developer environment setting, you might the solution might be hidden. If this is the case, select **Options** from the **Tools** menu, then select **Projects and Solutions** > **General** in the **Options** window. Select **Always show solution**. Also, verify that **Save new projects when created** is selected.
+
+
+3. From **Solution Explorer**, open the **IService1.cs** or **IService1.vb** file, and replace its code with the following code:
 
     ```csharp
     using System;

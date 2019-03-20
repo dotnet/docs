@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Implement a Windows Communication Foundation service contract"
-ms.date: 01/25/2019
+ms.date: 03/19/2019
 dev_langs:
   - "csharp"
   - "vb"
@@ -21,7 +21,7 @@ In this tutorial, you learn how to:
 
 ## Add code to implement the WCF service contract
 
-Open the *Service1.cs* (or *Service1.vb*) file and replace its code with the following code:
+In **GettingStartedLib**, open the **Service1.cs** or **Service1.vb** file and replace its code with the following code:
 
 ```csharp
 using System;
@@ -109,6 +109,20 @@ Namespace GettingStartedLib
     End Class
 End Namespace
 ```
+
+## Edit App.config
+
+Edit *App.config* in **GettingStartedLib** to reflect the changes you made to the code:
+   - For Visual C# projects:
+       - Change line 14 to `<service name="GettingStartedLib.CalculatorService">`
+       - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
+       - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`
+
+   - For Visual Basic projects:
+       - Change line 14 to `<service name="GettingStartedLib.GettingStartedLib.CalculatorService">`
+       - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
+       - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.GettingStartedLib.ICalculator">`
+
 
 ## Compile the code
 

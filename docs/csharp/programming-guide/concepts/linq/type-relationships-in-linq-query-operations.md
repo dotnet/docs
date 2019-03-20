@@ -23,7 +23,7 @@ To write queries effectively, you should understand how types of the variables i
 ## Queries that do not Transform the Source Data  
  The following illustration shows a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to Objects query operation that performs no transformations on the data. The source contains a sequence of strings and the query output is also a sequence of strings.  
   
- ![Relation of data types in a LINQ query](../../../../csharp/programming-guide/concepts/linq/media/linq_flow1.png "LINQ_flow1")  
+ ![Diagram that shows the relation of data types in a LINQ query.](./media/type-relationships-in-linq-query-operations/linq-query-data-type-relation.png)  
   
 1.  The type argument of the data source determines the type of the range variable.  
   
@@ -34,7 +34,7 @@ To write queries effectively, you should understand how types of the variables i
 ## Queries that Transform the Source Data  
  The following illustration shows a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] query operation that performs a simple transformation on the data. The query takes a sequence of `Customer` objects as input, and selects only the `Name` property in the result. Because `Name` is a string, the query produces a sequence of strings as output.  
   
- ![A query that transforms the data type](../../../../csharp/programming-guide/concepts/linq/media/linq_flow2.png "LINQ_flow2")  
+ ![Diagram showing a query that transforms the data type.](./media/type-relationships-in-linq-query-operations/linq-query-transform-data-type.png)  
   
 1.  The type argument of the data source determines the type of the range variable.  
   
@@ -44,7 +44,7 @@ To write queries effectively, you should understand how types of the variables i
   
  The following illustration shows a slightly more complex transformation. The `select` statement returns an anonymous type that captures just two members of the original `Customer` object.  
   
- ![A query that transforms the data type](../../../../csharp/programming-guide/concepts/linq/media/linq_flow3.png "LINQ_flow3")  
+ ![Diagram showing a more complex query that transforms the data type](./media/type-relationships-in-linq-query-operations/linq-complex-query-transform-data-type.png)  
   
 1.  The type argument of the data source is always the type of the range variable in the query.  
   
@@ -55,7 +55,7 @@ To write queries effectively, you should understand how types of the variables i
 ## Letting the compiler infer type information  
  Although you should understand the type relationships in a query operation, you have the option to let the compiler do all the work for you. The keyword [var](../../../../csharp/language-reference/keywords/var.md) can be used for any local variable in a query operation. The following illustration is similar to example number 2 that was discussed earlier. However, the compiler supplies the strong type for each variable in the query operation.  
   
- ![Type flow with implicit typing](../../../../csharp/programming-guide/concepts/linq/media/linq_flow4.png "LINQ_flow4")  
+ ![Diagram that shows the type flow with implicit typing.](./media/type-relationships-in-linq-query-operations/linq-type-flow-implicit-typing.png)  
   
  For more information about `var`, see [Implicitly Typed Local Variables](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  
   

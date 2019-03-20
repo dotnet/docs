@@ -832,7 +832,7 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
         <param name="start">The index at which to begin this slice.</param>
         <param name="length">The desired length for the slice.</param>
         <summary>Forms a slice out of the current span starting at a specified index for a specified length.</summary>
-        <returns>&gt;A span that consists of <paramref name="length" /> elements from the current span starting at <paramref name="index" />.</returns>
+        <returns>A span that consists of <paramref name="length" /> elements from the current span starting at <paramref name="index" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="start" /> or <paramref name="start" /> + <paramref name="index" /> is less than zero or greater than <see cref="T:System.Span`1.Length" />.</exception>

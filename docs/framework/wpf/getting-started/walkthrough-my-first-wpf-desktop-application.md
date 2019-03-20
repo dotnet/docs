@@ -52,9 +52,9 @@ The first step is to create the application infrastructure, which includes an ap
 
    1. Open Visual Studio and select **File** > **New** > **Project**.
 
-      The **New Project** dialog opens.
+      The **Create a new project** dialog opens.
 
-   2. Under the **Installed** category, expand either the **Visual C#** or **Visual Basic** node, and then select **Windows Desktop**.
+   2. In the **Installed** category, expand either the **Visual C#** or **Visual Basic** node, and then select **Windows Desktop**.
 
    3. Select the **WPF App (.NET Framework)** template. Enter the name **`ExpenseIt`** and then select **OK**.
 
@@ -396,17 +396,13 @@ In this section, you'll create the XML data that is bound to various controls.
 
 1. In *`ExpenseItHome.xaml`*, after the opening <xref:System.Windows.Controls.Grid> element, add the following XAML to create an <xref:System.Windows.Data.XmlDataProvider> that contains the data for each person:
 
-    [!code-xaml[ExpenseIt#21](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt8/ExpenseItHome.xaml#21)]
     [!code-xaml[ExpenseIt#23](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt8/ExpenseItHome.xaml#23)]
-    [!code-xaml[ExpenseIt#22](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt8/ExpenseItHome.xaml#22)]
 
     The data is created as a <xref:System.Windows.Controls.Grid> resource. Normally this data would be loaded as a file, but for simplicity the data is added inline.
 
 2. Within the `<Grid.Resources>` element, add the following `<xref:System.Windows.DataTemplate>` element, which defines how to display the data in the <xref:System.Windows.Controls.ListBox>, after the `<XmlDataProvider>` element:
 
-    [!code-xaml[ExpenseIt#21](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt8/ExpenseItHome.xaml#21)]
     [!code-xaml[ExpenseIt#24](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt8/ExpenseItHome.xaml#24)]
-    [!code-xaml[ExpenseIt#22](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt8/ExpenseItHome.xaml#22)]
 
     For more information about data templates, see [Data templating overview](../data/data-templating-overview.md).
 

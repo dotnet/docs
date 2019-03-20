@@ -149,10 +149,9 @@ These performance counters are usually a good first step in investigating perfor
 
    Displays the current size, in bytes, including free space, of the LOH. This counter is updated at the end of a garbage collection, not at each allocation.
 
-A common way to look at performance counters is with Performance Monitor (perfmon.exe). Use “Add Counters” to add the interesting counter for processes that you care about. You can save the performance counter data to a log file, as Figure 4 shows.
+A common way to look at performance counters is with Performance Monitor (perfmon.exe). Use “Add Counters” to add the interesting counter for processes that you care about. You can save the performance counter data to a log file, as the following screenshot shows:
 
-![Figure 4: Adding performance counters.](media/loh/perfcounter.png)\
-Figure 4: The LOH after a generation 2 GC
+![Screenshow that shows adding performance counters.](media/large-object-heap/add-performance-counter.png)
 
 Performance counters can also be queried programmatically. Many people collect them this way as part of their routine testing process. When they spot counters with values that are out of the ordinary, they use other means to get more detailed data to help with the investigation.
 
@@ -179,8 +178,7 @@ perfview /GCCollectOnly /AcceptEULA /nogui collect
 
 The result is something like this:
 
-![Figure 5: Examining ETW events using PerfView](media/loh/perfview.png)
-Figure 5: ETW events shown using PerfView
+![Screenshot that shows ETW events in PerfView.](media/large-object-heap/event-tracing-windows-perfview.png)
 
 As you can see, all GCs are generation 2 GCs, and they are all triggered by AllocLarge, which means that allocating a large object triggered this GC. We know that these allocations are temporary because the **LOH Survival Rate %** column says 1%.
 
@@ -192,8 +190,7 @@ perfview /GCOnly /AcceptEULA /nogui collect
 
 collects an AllocationTick event which is fired approximately every 100k worth of allocations. In other words, an event is fired each time a large object is allocated. You can then look at one of the GC Heap Alloc views which show you the callstacks that allocated large objects:
 
-![Figure 6: A GC Heap Alloc view](media/loh/perfview2.png)\
-Figure 6: A GC Heap Alloc view
+![Screenshot that shows a garbage collector heap view.](media/large-object-heap/garbage-collector-heap.png)
 
 As you can see, this is a very simple test that just allocates large objects from its `Main` method.
 

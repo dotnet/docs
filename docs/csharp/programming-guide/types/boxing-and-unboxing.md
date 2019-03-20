@@ -40,10 +40,9 @@ Boxing is the process of converting a [value type](../../../csharp/language-refe
   
  [!code-csharp[csProgGuideTypes#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#18)]  
   
- The result of this statement is creating an object reference `o`, on the stack, that references a value of the type `int`, on the heap. This value is a copy of the value-type value assigned to the variable `i`. The difference between the two variables, `i` and `o`, is illustrated in the following figure.  
+ The result of this statement is creating an object reference `o`, on the stack, that references a value of the type `int`, on the heap. This value is a copy of the value-type value assigned to the variable `i`. The difference between the two variables, `i` and `o`, is illustrated in the following figure:  
   
- ![BoxingConversion graphic](../../../csharp/programming-guide/types/media/vcboxingconversion.gif "vcBoxingConversion")  
-Boxing Conversion  
+ ![Graphic showing the difference between i and o variables.](./media/boxing-and-unboxing/boxing-operation-i-o-variables.gif)    
   
  It is also possible to perform the boxing explicitly as in the following example, but explicit boxing is never required:  
   
@@ -66,10 +65,9 @@ Boxing Conversion
   
  [!code-csharp[csProgGuideTypes#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#21)]  
   
- The following figure demonstrates the result of the previous statements.  
+ The following figure demonstrates the result of the previous statements: 
   
- ![UnBoxing Conversion graphic](../../../csharp/programming-guide/types/media/vcunboxingconversion.gif "vcUnBoxingConversion")  
-Unboxing Conversion  
+ ![Graphic showing an unboxing conversion.](./media/boxing-and-unboxing/unboxing-conversion.gif)
   
  For the unboxing of value types to succeed at run time, the item being unboxed must be a reference to an object that was previously created by boxing an instance of that value type. Attempting to unbox `null` causes a <xref:System.NullReferenceException>. Attempting to unbox a reference to an incompatible value type causes an <xref:System.InvalidCastException>.  
   

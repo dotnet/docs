@@ -45,6 +45,19 @@ public interface IStringWorker
 }
 ```
 
+```vb
+Public Interface IStringWorker
+    Sub PassString1(s As String)
+    Sub PassString2(<MarshalAs(UnmanagedType.BStr)> s As String)
+    Sub PassString3(<MarshalAs(UnmanagedType.LPStr)> s As String)
+    Sub PassString4(<MarshalAs(UnmanagedType.LPWStr)> s As String)
+    Sub PassStringRef1(ByRef s As String)
+    Sub PassStringRef2(<MarshalAs(UnmanagedType.BStr)> ByRef s As String)
+    Sub PassStringRef3(<MarshalAs(UnmanagedType.LPStr)> ByRef s As String)
+    Sub PassStringRef4(<MarshalAs(UnmanagedType.LPWStr)> ByRef s As String)
+End Interface
+```
+
 The following example shows the corresponding interface described in a type library.
 
 ```cpp

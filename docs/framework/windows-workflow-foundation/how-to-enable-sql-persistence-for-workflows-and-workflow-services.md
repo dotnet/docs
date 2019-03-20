@@ -26,7 +26,7 @@ Before using the SQL Workflow Instance Store feature, create a database that the
 >
 > System.Data.SqlClient.SqlException: Could not find stored procedure 'System.Activities.DurableInstancing.CreateLockOwner'
 
-The following sections describe how to enable persistence for workflows and workflow services using the SQL Workflow Instance Store. For more information about properties of the SQL Workflow Instance Store, see [Properties of SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/properties-of-sql-workflow-instance-store.md).
+The following sections describe how to enable persistence for workflows and workflow services using the SQL Workflow Instance Store. For more information about properties of the SQL Workflow Instance Store, see [Properties of SQL Workflow Instance Store](properties-of-sql-workflow-instance-store.md).
 
 ## Enabling Persistence for Self-Hosted Workflows that use WorkflowApplication
 
@@ -67,7 +67,7 @@ You can enable persistence for self-hosted workflows that use <xref:System.Activ
    ```
 
 > [!NOTE]
-> See the [How to: Create and Run a Long Running Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md) step of the [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md) for step by step instructions.
+> See the [How to: Create and Run a Long Running Workflow](how-to-create-and-run-a-long-running-workflow.md) step of the [Getting Started Tutorial](getting-started-tutorial.md) for step by step instructions.
 
 ## Enabling Persistence for Self-Hosted Workflow Services that use the WorkflowServiceHost
 
@@ -124,7 +124,7 @@ workflowServiceHost.DurableInstancingOptions.InstanceStore = sqlInstanceStoreObj
 
 You can enable persistence for self-hosted or Windows Process Activation Service (WAS)-hosted workflow services by using a configuration file. A WAS-hosted workflow service uses the WorkflowServiceHost as the self-hosted workflow services do.
 
-The `SqlWorkflowInstanceStoreBehavior`, a service behavior that allows you to conveniently change the [SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md) properties through XML configuration. For WAS-hosted workflow services, use the Web.config file. The following configuration example shows how to configure the SQL Workflow Instance Store by using the `sqlWorkflowInstanceStore` behavior element in a configuration file.
+The `SqlWorkflowInstanceStoreBehavior`, a service behavior that allows you to conveniently change the [SQL Workflow Instance Store](sql-workflow-instance-store.md) properties through XML configuration. For WAS-hosted workflow services, use the Web.config file. The following configuration example shows how to configure the SQL Workflow Instance Store by using the `sqlWorkflowInstanceStore` behavior element in a configuration file.
 
 ```xml
 <serviceBehaviors>

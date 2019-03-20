@@ -38,4 +38,4 @@ MessageBox.Show("Good morning " + User + ". You are connected to " _
   
 ## See also
 - <xref:System.Windows.Forms.SystemInformation>
-- [Power Management in Windows Forms](../../../../docs/framework/winforms/advanced/power-management-in-windows-forms.md)
+- [Power Management in Windows Forms](power-management-in-windows-forms.md)

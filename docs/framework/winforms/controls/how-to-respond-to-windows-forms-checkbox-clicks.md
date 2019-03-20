@@ -131,6 +131,6 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
   
 ## See also
 - <xref:System.Windows.Forms.CheckBox>
-- [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)
-- [How to: Set Options with Windows Forms CheckBox Controls](../../../../docs/framework/winforms/controls/how-to-set-options-with-windows-forms-checkbox-controls.md)
-- [CheckBox Control](../../../../docs/framework/winforms/controls/checkbox-control-windows-forms.md)
+- [CheckBox Control Overview](checkbox-control-overview-windows-forms.md)
+- [How to: Set Options with Windows Forms CheckBox Controls](how-to-set-options-with-windows-forms-checkbox-controls.md)
+- [CheckBox Control](checkbox-control-windows-forms.md)

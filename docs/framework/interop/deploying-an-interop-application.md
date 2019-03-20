@@ -32,8 +32,7 @@ An interop application typically includes a .NET client assembly, one or more in
 ### Private Assemblies  
  To install an assembly to be used privately, both the application executable and the interop assembly that contains imported COM types must be installed in the same directory structure. The following illustration shows an unsigned interop assembly to be used privately by Client1.exe and Client2.exe, which reside in separate application directories. The interop assembly, which is called LOANLib.dll in this example, is installed twice.  
   
- ![Directory structure and Windows registry](media/comdeployprivate.gif "comdeployprivate")  
-Directory structure and registry entries for a private deployment  
+ ![Directory structure and Windows registry](./media/deploying-an-interop-application/com-private-deployment.gif "Directory structure and registry entries for a private deployment")  
   
  All COM components associated with the application must be installed in the Windows registry. If Client1.exe and Client2.exe in the illustration are installed on different computers, you must register the COM components on both computers.  
   

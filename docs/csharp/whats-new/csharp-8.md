@@ -45,6 +45,7 @@ public enum Rainbow
     Red,
     Orange,
     Yellow,
+    Green,
     Blue,
     Indigo,
     Violet
@@ -60,6 +61,7 @@ public static RGBColor FromRainbow(Rainbow colorBand) =>
         Rainbow.Red    => new RGBColor(0xFF, 0x00, 0x00),
         Rainbow.Orange => new RGBColor(0xFF, 0x7F, 0x00),
         Rainbow.Yellow => new RGBColor(0xFF, 0xFF, 0x00),
+        Rainbow.Green  => new RGBColor(0x00, 0xFF, 0x00),
         Rainbow.Blue   => new RGBColor(0x00, 0x00, 0xFF),
         Rainbow.Indigo => new RGBColor(0x4B, 0x00, 0x82),
         Rainbow.Violet => new RGBColor(0x94, 0x00, 0xD3),
@@ -77,7 +79,7 @@ There are several syntax improvements here:
 Contrast that with the equivalent code using the classic `switch` statement:
 
 ```csharp
-public static RGBColor fromRainbowClassic(Rainbow colorBand)
+public static RGBColor FromRainbowClassic(Rainbow colorBand)
 {
     switch (colorBand)
     {
@@ -87,6 +89,8 @@ public static RGBColor fromRainbowClassic(Rainbow colorBand)
             return new RGBColor(0xFF, 0x7F, 0x00);
         case Rainbow.Yellow:
             return new RGBColor(0xFF, 0xFF, 0x00);
+        case Rainbow.Green:
+            return new RGBColor(0x00, 0xFF, 0x00);
         case Rainbow.Blue:
             return new RGBColor(0x00, 0x00, 0xFF);
         case Rainbow.Indigo:
@@ -170,6 +174,8 @@ static string Quadrant(Point p) => p switch
 ```
 
 The discard pattern in the preceding switch matches when either `x` or `y`, but not both, is 0. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you do not cover all possible cases in your switch expression.
+
+You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../tutorials/pattern-matching.md).
 
 ## using declarations
 
@@ -329,7 +335,7 @@ Console.WriteLine($"The last word is {words[^1]}");
 The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` is not in the range.
 
 ```csharp
-var brownFox = words[1..4];
+var quickBrownFox = words[1..4];
 ```
 
 The following code creates a subrange with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` is not included:

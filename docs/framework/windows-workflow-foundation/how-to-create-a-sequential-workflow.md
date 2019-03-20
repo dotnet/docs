@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 5280e816-ae17-48c4-8de0-a1e6895dd8f0
 ---
 # How to: Create a Sequential Workflow
-Workflows can be constructed from built-in activities as well as from custom activities. This topic steps through creating a workflow that uses both built-in activities such as the <xref:System.Activities.Statements.Sequence> activity, and the custom activities from the previous [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) topic. The workflow models a number guessing game.  
+Workflows can be constructed from built-in activities as well as from custom activities. This topic steps through creating a workflow that uses both built-in activities such as the <xref:System.Activities.Statements.Sequence> activity, and the custom activities from the previous [How to: Create an Activity](how-to-create-an-activity.md) topic. The workflow models a number guessing game.  
   
 > [!NOTE]
->  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md).  
+>  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](how-to-create-an-activity.md).  
   
 > [!NOTE]
 >  To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
-### To create the workflow  
+## To create the workflow  
   
 1.  Right-click **NumberGuessWorkflowActivities** in **Solution Explorer** and select **Add**, **New Item**.  
   
@@ -25,7 +25,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 4.  Drag a **Sequence** activity from the **Control Flow** section of the **Toolbox** and drop it onto the **Drop activity here** label on the workflow design surface.  
   
-### To create the workflow variables and arguments  
+## To create the workflow variables and arguments  
   
 1.  Double-click **SequentialNumberGuessWorkflow.xaml** in **Solution Explorer** to display the workflow in the designer, if it is not already displayed.  
   
@@ -56,7 +56,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 13. Click **Variables** in the lower-left side of the activity designer to close the **Variables** pane.  
   
-### To add the workflow activities  
+## To add the workflow activities  
   
 1.  Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and drop it onto the **Sequence** activity. Type `Target` into the **To** box and the following expression into the **Enter a C# expression** or **Enter a VB expression** box.  
   
@@ -131,31 +131,31 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 13. Click the **WriteLine** activity in the **Then** section to select it, and type the following expression into the **Text** property value box.  
   
-    ```vb  
+    ```text
     "Your guess is too low."  
     ```  
   
 14. Click the **WriteLine** activity in the **Else** section to select it, and type the following expression into the **Text** property value box.  
   
-    ```vb  
+    ```text
     "Your guess is too high."  
     ```  
   
      The following example illustrates the completed workflow.  
   
-     ![Completed Sequential Workflow](../../../docs/framework/windows-workflow-foundation/media/wfsequentialgettingstartedtutorialcomplete.JPG "WFSequentialGettingStartedTutorialComplete")  
+     ![Completed Sequential Workflow](./media/wfsequentialgettingstartedtutorialcomplete.JPG "WFSequentialGettingStartedTutorialComplete")  
   
-### To build the workflow  
+## To build the workflow  
   
 1.  Press CTRL+SHIFT+B to build the solution.  
   
-     For instructions on how to run the workflow, please see the next topic, [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md). If you have already completed the [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md) step with a different style of workflow and wish to run it using the sequential workflow from this step, skip ahead to the [To build and run the application](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md#BKMK_ToRunTheApplication) section of [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md).  
+     For instructions on how to run the workflow, please see the next topic, [How to: Run a Workflow](how-to-run-a-workflow.md). If you have already completed the [How to: Run a Workflow](how-to-run-a-workflow.md) step with a different style of workflow and wish to run it using the sequential workflow from this step, skip ahead to the [To build and run the application](how-to-run-a-workflow.md#BKMK_ToRunTheApplication) section of [How to: Run a Workflow](how-to-run-a-workflow.md).  
   
 ## See also
 - <xref:System.Activities.Statements.Flowchart>
 - <xref:System.Activities.Statements.FlowDecision>
-- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)
-- [Designing Workflows](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)
-- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)
-- [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md)
-- [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md)
+- [Windows Workflow Foundation Programming](programming.md)
+- [Designing Workflows](designing-workflows.md)
+- [Getting Started Tutorial](getting-started-tutorial.md)
+- [How to: Create an Activity](how-to-create-an-activity.md)
+- [How to: Run a Workflow](how-to-run-a-workflow.md)

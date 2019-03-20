@@ -13,5 +13,5 @@ The <xref:System.Windows.Forms.WebBrowser> control is designed to work in full t
   
 ## See also
 - <xref:System.Windows.Forms.WebBrowser>
-- [WebBrowser Control Overview](../../../../docs/framework/winforms/controls/webbrowser-control-overview.md)
+- [WebBrowser Control Overview](webbrowser-control-overview.md)
 - [WebBrowser Control](https://go.microsoft.com/fwlink/?LinkId=198812)

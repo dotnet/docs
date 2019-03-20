@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bcaebeb1-b9e5-49e8-881b-e49af66fd341
 ---
 # SQL Tracking
-This sample demonstrates how to write a custom SQL tracking participant, that writes tracking records to a SQL database. Windows Workflow Foundation (WF) provides workflow tracking to gain visibility into the execution of a workflow instance. The tracking runtime emits workflow tracking records during the execution of the workflow. For more information about workflow tracking, see [Workflow Tracking and Tracing](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md).
+This sample demonstrates how to write a custom SQL tracking participant, that writes tracking records to a SQL database. Windows Workflow Foundation (WF) provides workflow tracking to gain visibility into the execution of a workflow instance. The tracking runtime emits workflow tracking records during the execution of the workflow. For more information about workflow tracking, see [Workflow Tracking and Tracing](../workflow-tracking-and-tracing.md).
 
 #### To use this sample
 

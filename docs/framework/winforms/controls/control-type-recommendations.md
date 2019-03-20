@@ -74,5 +74,5 @@ The .NET Framework gives you power to develop and implement new controls. In add
 -   [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))  
   
 ## See also
-- [How to: Develop a Simple Windows Forms Control](../../../../docs/framework/winforms/controls/how-to-develop-a-simple-windows-forms-control.md)
-- [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)
+- [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md)
+- [Varieties of Custom Controls](varieties-of-custom-controls.md)

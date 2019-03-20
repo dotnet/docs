@@ -4,6 +4,7 @@ description: New to C#? Read this overview of classes, objects and inheritance
 ms.date: 08/10/2016
 ms.assetid: 63a89bde-0f05-4bc4-b0cd-4f693854f0cd
 ---
+
 # Classes and objects
 
 *Classes* are the most fundamental of C#’s types. A class is a data structure that combines state (fields) and actions (methods and other function members) in a single unit. A class provides a definition for dynamically created *instances* of the class, also known as *objects*. Classes support *inheritance* and *polymorphism*, mechanisms whereby *derived classes* can extend and specialize *base classes*.
@@ -52,17 +53,17 @@ The following provides an overview of the kinds of members a class can contain.
 Each member of a class has an associated accessibility, which controls the regions of program text that are able to access the member. There are six possible forms of accessibility. These are summarized below.
 
 * `public`
-	- Access not limited
+    - Access not limited
 * `protected`
-	- Access limited to this class or classes derived from this class
+    - Access limited to this class or classes derived from this class
 * `internal`
-	- Access limited to the current assembly (.exe, .dll, etc.)
+    - Access limited to the current assembly (.exe, .dll, etc.)
 * `protected internal`
-	- Access limited to the containing class, classes derived from the containing class, or classes within the same assembly
+    - Access limited to the containing class, classes derived from the containing class, or classes within the same assembly
 * `private`
-	- Access limited to this class
+    - Access limited to this class
 * `private protected`
-	- Access limited to the containing class or classes derived from the containing type within the same assembly
+    - Access limited to the containing class or classes derived from the containing type within the same assembly
 
 ## Type parameters
 
@@ -117,7 +118,7 @@ The *signature* of a method must be unique in the class in which the method is d
 
 Parameters are used to pass values or variable references to methods. The parameters of a method get their actual values from the *arguments* that are specified when the method is invoked. There are four kinds of parameters: value parameters, reference parameters, output parameters, and parameter arrays.
 
-A *value parameter* is used for passing input arguments. A value parameter corresponds to a local variable that gets its initial value from the argument that was passed for the parameter. Modifications to a value parameter do not affect the argument that was passed for the parameter. 
+A *value parameter* is used for passing input arguments. A value parameter corresponds to a local variable that gets its initial value from the argument that was passed for the parameter. Modifications to a value parameter do not affect the argument that was passed for the parameter.
 
 Value parameters can be optional, by specifying a default value so that corresponding arguments can be omitted.
 
@@ -287,6 +288,6 @@ The garbage collector is allowed wide latitude in deciding when to collect objec
 
 The `using` statement provides a better approach to object destruction.
 
->[!div class="step-by-step"]
->[Previous](statements.md)
->[Next](structs.md)
+> [!div class="step-by-step"]
+> [Previous](statements.md)
+> [Next](structs.md)

@@ -7,7 +7,7 @@ ms.date: 02/15/2019
 ---
 # Monolithic applications
 
-In this scenario, you are building a single and monolithic web application or service and deploying it as a container. Within the application, the structure might not be monolithic; it might comprise several libraries, components, or even layers (application layer, domain layer, data access layer, etc.). Externally, it is a single container, like a single process, single web application, or single service.
+In this scenario, you're building a single and monolithic web application or service and deploying it as a container. Within the application, the structure might not be monolithic; it might comprise several libraries, components, or even layers (application layer, domain layer, data access layer, etc.). Externally, it's a single container, like a single process, single web application, or single service.
 
 To manage this model, you deploy a single container to represent the application. To scale it, just add a few more copies with a load balancer in front. The simplicity comes from managing a single deployment in a single container or virtual machine (VM).
 
@@ -57,7 +57,7 @@ Because containers are inherently immutable, by design, you never need to worry 
 
 Although monolithic apps can benefit from Docker, we're touching on only the tips of the benefits. The larger benefits of managing containers come from deploying with container orchestrators that manage the various instances and life cycle of each container instance. Breaking up the monolithic application into subsystems that can be scaled, developed, and deployed individually is your entry point into the realm of microservices.
 
-To learn about how to “lift and shift” monolithic applications with containers and how you can modernize your applications, you can read this additional Microsoft guide, [Modernize existing .NET applications with Azure cloud and Windows Containers](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/), that you can also download as PDF from <https://aka.ms/LiftAndShiftWithContainersEbook>.
+To learn about how to “lift and shift” monolithic applications with containers and how you can modernize your applications, you can read this additional Microsoft guide, [Modernize existing .NET applications with Azure cloud and Windows Containers](../../modernize-with-azure-and-containers/index.md), that you can also download as PDF from <https://aka.ms/LiftAndShiftWithContainersEbook>.
 
 ## Publish a single Docker container app to Azure App Service
 
@@ -65,7 +65,7 @@ Either because you want to get a quick validation of a container deployed to Azu
 
 Using Azure App Service is intuitive and you can get up and running quickly because it provides great Git integration to take your code, build it in Microsoft Visual Studio, and directly deploy it to Azure. But, traditionally (with no Docker), if you needed other capabilities, frameworks, or dependencies that aren't supported in App Services, you needed to wait for it until the Azure team updates those dependencies in App Service or switched to other services like Service Fabric, Cloud Services, or even plain VMs, for which you have further control and can install a required component or framework for your application.
 
-Now, as shown in Figure 4-4, when using Visual Studio 2017, container support in Azure App Service gives you the ability to include whatever you want in your app environment. If you added a dependency to your app, because you are running it in a container, you get the capability of including those dependencies in your Dockerfile or Docker image.
+Now, as shown in Figure 4-4, when using Visual Studio 2017, container support in Azure App Service gives you the ability to include whatever you want in your app environment. If you added a dependency to your app, because you're running it in a container, you get the capability of including those dependencies in your Dockerfile or Docker image.
 
 ![View of Visual Studio wizard to publish to an Azure app service, highlighting the selector for the container registry.](./media/image4.png)
 

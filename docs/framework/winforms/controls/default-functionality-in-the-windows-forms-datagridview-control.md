@@ -42,4 +42,4 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control provides user
   
 ## See also
 - <xref:System.Windows.Forms.DataGridView>
-- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [DataGridView Control](datagridview-control-windows-forms.md)

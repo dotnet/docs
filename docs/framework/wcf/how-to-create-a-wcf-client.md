@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 
 ## Create a Windows Communication Foundation client
 
-1. Create a console app project in Visual Studio. 
+1. Create a console app project in Visual Studio: 
 
     1. From the **File** menu, select **Open** > **Project/Solution** and browse to the **GettingStarted** solution you previously created (*GettingStarted.sln*). Select **Open**.
 
@@ -40,7 +40,7 @@ In this tutorial, you learn how to:
 
     5. Select the **Console App (.NET Framework)** template, and enter *GettingStartedClient* for the **Name**. Select **OK**.
 
-2. Add a reference in the **GettingStartedClient** project to the <xref:System.ServiceModel> assembly. 
+2. Add a reference in the **GettingStartedClient** project to the <xref:System.ServiceModel> assembly: 
 
     1.  In the **Solution Explorer** window, select the **References** folder under the **GettingStartedClient** project, and then select **Add Reference** from the shortcut menu. 
 
@@ -50,7 +50,7 @@ In this tutorial, you learn how to:
 
     4. Save the solution by selecting **File** > **Save All**.
 
-3. Add a service reference to the calculator service.
+3. Add a service reference to the calculator service:
 
    1. In the **Solution Explorer** window, select the **References** folder under the **GettingStartedClient** project, and then select **Add Service Reference** from the shortcut menu.
 

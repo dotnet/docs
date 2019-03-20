@@ -47,7 +47,7 @@ In this tutorial, you learn how to:
       - The *App.config* file contains the configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more information about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
 
       > [!NOTE]
-      > If you installed Visual Studio with Visual Basic developer environment setting, you might the solution might be hidden. If this is the case, select **Options** from the **Tools** menu, then select **Projects and Solutions** > **General** in the **Options** window. Select **Always show solution**. Also, verify that **Save new projects when created** is selected.
+      > If you installed Visual Studio with Visual Basic developer environment settings, the solution might be hidden. If this is the case, select **Options** from the **Tools** menu, then select **Projects and Solutions** > **General** in the **Options** window. Select **Always show solution**. Also, verify that **Save new projects when created** is selected.
 
 
 3. From **Solution Explorer**, open the **IService1.cs** or **IService1.vb** file, and replace its code with the following code:

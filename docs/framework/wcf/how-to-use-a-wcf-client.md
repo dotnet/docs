@@ -131,7 +131,7 @@ Notice the `using` (for Visual C#) or `Imports` (for Visual Basic) statement tha
 
 ## Test the WCF client
 
-### To test the application from Visual Studio
+### Test the application from Visual Studio
 
 1. Save and build the solution.
 
@@ -139,13 +139,13 @@ Notice the `using` (for Visual C#) or `Imports` (for Visual Basic) statement tha
 
 3. From **Startup Projects**, select **GettingStartedLib** from the drop-down list, then select **Run** or press **F5**.
 
-### To test the application from a command prompt
+### Test the application from a command prompt
 
 1. Open a command prompt as an administrator, and then navigate to your Visual Studio solution directory. 
 
-2. Enter *GettingStartedHost\bin\Debug\GettingStartedHost.exe* to start the service.
+2. To start the service: Enter *GettingStartedHost\bin\Debug\GettingStartedHost.exe*.
 
-3. Open another command prompt, navigate to your Visual Studio solution directory, then enter *GettingStartedClient\bin\Debug\GettingStartedClient.exe* to start the client.
+3. To start the client: Open another command prompt, navigate to your Visual Studio solution directory, then enter *GettingStartedClient\bin\Debug\GettingStartedClient.exe*.
 
    *GettingStartedHost.exe* produces the following output:
 

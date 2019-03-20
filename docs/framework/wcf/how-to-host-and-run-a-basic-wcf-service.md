@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 
 ## Create and configure a console app project for hosting the service
 
-1. Create a console app project in Visual Studio. 
+1. Create a console app project in Visual Studio: 
  
     1. From the **File** menu, select **Open** > **Project/Solution** and browse to the **GettingStarted** solution you previously created (*GettingStarted.sln*). Select **Open**.
 
@@ -40,7 +40,7 @@ In this tutorial, you learn how to:
 
     5. Select the **Console App (.NET Framework)** template, and enter *GettingStartedHost* for the **Name**. Select **OK**.
 
-2. Add a reference in the **GettingStartedHost** project to the **GettingStartedLib** project. 
+2. Add a reference in the **GettingStartedHost** project to the **GettingStartedLib** project: 
 
     1. In the **Solution Explorer** window, select the **References** folder under the **GettingStartedHost** project, and then select **Add Reference** from the shortcut menu. 
 
@@ -50,7 +50,7 @@ In this tutorial, you learn how to:
 
        This action makes the types defined in the **GettingStartedLib** project available to the **GettingStartedHost** project.
 
-3. Add a reference in the **GettingStartedHost** project to the <xref:System.ServiceModel> assembly. 
+3. Add a reference in the **GettingStartedHost** project to the <xref:System.ServiceModel> assembly: 
 
     1. In the **Solution Explorer** window, select the **References** folder under the **GettingStartedHost** project, and then select **Add Reference** from the shortcut menu.
     

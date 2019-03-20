@@ -112,7 +112,7 @@ End Namespace
 
 ## Edit App.config
 
-Edit *App.config* in **GettingStartedLib** to reflect the changes you made to the code:
+Edit **App.config** in **GettingStartedLib** to reflect the changes you made to the code.
    - For Visual C# projects:
        - Change line 14 to `<service name="GettingStartedLib.CalculatorService">`
        - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`

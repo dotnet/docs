@@ -81,7 +81,7 @@ ms.date: "12/04/2018"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/net.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/dotnet.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -100,7 +100,7 @@ ms.date: "12/04/2018"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/netcore.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/dotnet-core.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -121,7 +121,7 @@ ms.date: "12/04/2018"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/netframework.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/dotnet-framework.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -141,7 +141,8 @@ ms.date: "12/04/2018"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/xamarin.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/xamarin-icon
+                                                    .svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -161,7 +162,7 @@ ms.date: "12/04/2018"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/csharp.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/csharp-icon.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -181,7 +182,7 @@ ms.date: "12/04/2018"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/fsharp.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/fsharp-icon.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -200,7 +201,7 @@ ms.date: "12/04/2018"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/vb.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/visual-basic.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -219,7 +220,7 @@ ms.date: "12/04/2018"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/mldotnet.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/machine-learning-dotnet.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

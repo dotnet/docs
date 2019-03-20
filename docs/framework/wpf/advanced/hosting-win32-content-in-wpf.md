@@ -361,7 +361,7 @@ public partial class Window1 : Window {
 
 Which gives you:
 
-![WPF application screen shot](./media/interoparch09.PNG "InteropArch09")
+![Windows Presentation Foundation application dialog screenshot](./media/hosting-win32-content-in-wpf/windows-presentation-foundation-application.png)
 
 ## See also
 

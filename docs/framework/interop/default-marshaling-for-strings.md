@@ -83,17 +83,17 @@ The following type definition shows the correct use of `MarshalAsAttribute` for 
 
 ```vb
 Class StringLibAPI
-    Public Declare Auto Sub PassLPStr Lib "StringLib.Dll" _
+    Public Declare Auto Sub PassLPStr Lib "StringLib.dll" _
         (<MarshalAs(UnmanagedType.LPStr)> s As String)
-    Public Declare Auto Sub PassLPWStr Lib "StringLib.Dll" _
+    Public Declare Auto Sub PassLPWStr Lib "StringLib.dll" _
         (<MarshalAs(UnmanagedType.LPWStr)> s As String)
-    Public Declare Auto Sub PassLPTStr Lib "StringLib.Dll" _
+    Public Declare Auto Sub PassLPTStr Lib "StringLib.dll" _
         (<MarshalAs(UnmanagedType.LPTStr)> s As String)
-    Public Declare Auto Sub PassBStr Lib "StringLib.Dll" _
+    Public Declare Auto Sub PassBStr Lib "StringLib.dll" _
         (<MarshalAs(UnmanagedType.BStr)> s As String)
-    Public Declare Auto Sub PassAnsiBStr Lib "StringLib.Dll" _
+    Public Declare Auto Sub PassAnsiBStr Lib "StringLib.dll" _
         (<MarshalAs(UnmanagedType.AnsiBStr)> s As String)
-    Public Declare Auto Sub PassTBStr Lib "StringLib.Dll" _
+    Public Declare Auto Sub PassTBStr Lib "StringLib.dll" _
         (<MarshalAs(UnmanagedType.TBStr)> s As String)
 End Class
 ```
@@ -101,17 +101,17 @@ End Class
 ```csharp
 class StringLibAPI
 {
-    [DllImport("StringLib.Dll")]
+    [DllImport("StringLib.dll")]
     public static extern void PassLPStr([MarshalAs(UnmanagedType.LPStr)] string s);
-    [DllImport("StringLib.Dll")]
+    [DllImport("StringLib.dll")]
     public static extern void PassLPWStr([MarshalAs(UnmanagedType.LPWStr)] string s);
-    [DllImport("StringLib.Dll")]
+    [DllImport("StringLib.dll")]
     public static extern void PassLPTStr([MarshalAs(UnmanagedType.LPTStr)] string s);
-    [DllImport("StringLib.Dll")]
+    [DllImport("StringLib.dll")]
     public static extern void PassBStr([MarshalAs(UnmanagedType.BStr)] string s);
-    [DllImport("StringLib.Dll")]
+    [DllImport("StringLib.dll")]
     public static extern void PassAnsiBStr([MarshalAs(UnmanagedType.AnsiBStr)] string s);
-    [DllImport("StringLib.Dll")]
+    [DllImport("StringLib.dll")]
     public static extern void PassTBStr([MarshalAs(UnmanagedType.TBStr)] string s);
 }
 ```
@@ -225,7 +225,7 @@ A `StringBuilder` can be dereferenced and modified by the callee, provided it do
 
 ```vb
 Public Class Win32API
-    Public Declare Auto Sub GetWindowText Lib "User32.Dll" _
+    Public Declare Auto Sub GetWindowText Lib "User32.dll" _
         (hWnd As Integer, lpString As StringBuilder, nMaxCount As Integer)
 End Class
 
@@ -242,7 +242,7 @@ End Class
 ```csharp
 public class Win32API
 {
-    [DllImport("User32.Dll")]
+    [DllImport("User32.dll")]
     public static extern void GetWindowText(int hWnd, StringBuilder lpString, int nMaxCount);
 }
 

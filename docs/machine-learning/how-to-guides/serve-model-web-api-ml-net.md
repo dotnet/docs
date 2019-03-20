@@ -112,7 +112,7 @@ using Microsoft.ML.Core.Data;
 using SentimentAnalysisWebAPI.DataModels;
 ```
 
-1. Add the following lines of code to the *ConfigureServices* method:
+2. Add the following lines of code to the *ConfigureServices* method:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)

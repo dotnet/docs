@@ -224,7 +224,7 @@ For instance, if User 1 and User 2 rate movies similarly, then User 2 is more li
 | User 1 | Watched and liked movie | Watched and liked movie | Watched and liked movie |
 | User 2 | Watched and liked movie | Watched and liked movie | Has not watched -- RECOMMEND movie |
 
-The `Matrix Factorization` trainer has several [Options, which you can read more about in the [Algorithm hyperparameters](#algorithm-hyperparameters) section below.
+The `Matrix Factorization` trainer has several [Options](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options), which you can read more about in the [Algorithm hyperparameters](#algorithm-hyperparameters) section below.
 
 Fit the model to the `Train` data and return the trained model by adding the following as the next line of code in the `BuildAndTrainModel()` method:
 

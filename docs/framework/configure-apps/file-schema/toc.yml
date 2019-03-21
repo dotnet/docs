@@ -1,0 +1,59 @@
+- name: Configuration File Schema
+  href: index.md
+  items:
+  - name: <configuration> Element
+    href: configuration-element.md
+  - name: <assemblyBinding> Element
+    href: assemblybinding-element-for-configuration.md
+  - name: <linkedConfiguration> Element
+    href: linkedconfiguration-element.md
+  - name: <configSections> Element
+    href: configsections-element-for-configuration.md
+  - name: <clear> Element for <configSections>
+    href: clear-element-for-configsections.md
+  - name: <remove> Element for <configSections>
+    href: remove-element-for-configsections.md
+  - name: <sectionGroup> Element
+    href: sectiongroup-element-for-configsections.md
+  - name: Custom Element for SingleTagSectionHandler
+    href: custom-element-1.md
+  - name: Custom Element for NameValueSectionHandler and DictionarySectionHandler
+    href: custom-element-2.md
+  - name: <add> Element
+    href: add-element-for-custom-2.md
+  - name: <clear> Element for NameValueSectionHandler and DictionarySectionHandler
+    href: clear-element-for-custom-2.md
+  - name: <remove> Element for NameValueSectionHandler and DictionarySectionHandler
+    href: remove-element-for-custom-2.md
+  - name: <section> Element
+    href: section-element.md
+  - name: App Settings Schema
+    href: appsettings/
+  - name: Application Settings Schema
+    href: application-settings-schema.md
+  - name: Compiler and Language Provider Settings Schema
+    href: compiler/
+  - name: Configuration Sections Schema
+    href: configuration-sections-schema.md
+  - name: Cryptography Settings Schema
+    href: cryptography/
+  - name: Network Settings Schema
+    href: network/
+  - name: Runtime Settings Schema
+    href: runtime/
+  - name: Startup Settings Schema
+    href: startup/
+  - name: Trace and Debug Settings Schema
+    href: trace-debug/
+  - name: Web Settings Schema
+    href: web/
+  - name: WCF Configuration Schema
+    href: wcf/
+  - name: WCF Directive Syntax
+    href: wcf-directive/
+  - name: WIF Configuration Schema
+    href: windows-identity-foundation/
+  - name: Windows Forms Configuration Section
+    href: winforms/
+  - name: Windows Workflow Foundation Configuration Schema
+    href: windows-workflow-foundation/

@@ -81,7 +81,7 @@ The new way is much simpler:
 
 ```vb
 SendNews = SendNews.Combine({SendNews, client})  
-SendNew?.Invoke("Just in...")
+SendNews?.Invoke("Just in...")
 ```
 
 The new way is thread-safe because the compiler generates code to evaluate `SendNews` one time only, keeping the result in a temporary variable. You need to explicitly call the `Invoke` method because there is no null-conditional delegate invocation syntax `SendNews?(String)`.  

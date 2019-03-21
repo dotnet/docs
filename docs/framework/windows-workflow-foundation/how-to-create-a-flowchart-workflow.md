@@ -136,7 +136,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
      The following example illustrates the completed workflow.  
   
-     ![Diagram that shows a completed Windows Workflow flowchart.](./media/completed-windows-workflow-flowchart.png)  
+     ![Diagram that shows a completed Windows Workflow flowchart.](./media/how-to-create-a-flowchart-workflow/completed-windows-workflow-flowchart.png)  
   
 ### To build the workflow  
   

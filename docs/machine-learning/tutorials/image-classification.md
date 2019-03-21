@@ -1,19 +1,21 @@
 ---
 title: Build an ML.NET custom image classifier with TensorFlow
 description: Discover how to build an ML.NET custom image classifier in a TensorFlow transfer learning scenario to classify images by reusing a pre-trained TensorFlow model.
-ms.date: 03/20/2019
+ms.date: 03/22/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to reuse a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
 ---
 # Tutorial: Build an ML.NET custom image classifier with TensorFlow
 
-This sample tutorial illustrates using ML.NET to build a custom image classifier with TensorFlow via a .NET Core console application using C# in Visual Studio 2017.
+This sample tutorial illustrates how you can use an already trained Image Classifier `TensorFlow` model to build a new custom Image Classifier model. What if you could reuse a model that's already been pre trained to solve a similar problem and retrain either all or some of the layers of that model to make it solve your problem? This technique of re-using part of an already trained model to build a new model is known as [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning).
+
+Training an [Image Classification](https://en.wikipedia.org/wiki/Outline_of_object_recognition) model from scratch requires setting millions of parameters, a ton of labeled training data and a vast amount of compute resources (hundreds of GPU hours). While not as effective as training a custom model from scratch, transfer learning allows you to shortcut this process by working with thousands of images vs. millions of labeled images and build a customized model fairly quickly (within an hour on a machine without a GPU).
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Understand the problem
-> * Build and Train the model
+> * Reuse and tune the pre-trained model
 > * Classify Images
 
 > [!NOTE]
@@ -32,7 +34,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 Use the following steps to accomplish your task, and any other ML.NET task (depending on the task some steps may be combined):
 
 1. Load your data
-2. Build and train your model
+2. Build and train your model (In this case, you will reuse and tune (re-train) the pre-trained model instead)
 3. Evaluate your model
 4. Use your model
 
@@ -48,7 +50,7 @@ Use the following steps to accomplish your task, and any other ML.NET task (depe
 
 ## Select the appropriate machine learning task
 
-[Deep learning](https://en.wikipedia.org/wiki/Deep_learning) is a subset of AI and machine learning that teaches programs to learn by example, just like humans do. A deep learning [model]() learns to perform object detection and classification tasks directly from images, sound or text. It can perform resource intensive tasks such as speech recognition and language translation.  Deep learning is different from traditional machine learning approaches that need [feature engineering](https://docs.microsoft.com/en-us/dotnet/machine-learning/resources/glossary#feature-engineering) and data processing.
+[Deep learning](https://en.wikipedia.org/wiki/Deep_learning) is a subset of AI and machine learning that teaches programs to learn by example, just like humans. A deep learning [model](../resources/glossary.md#model) learns to perform object detection and classification tasks directly from images, sound or text. It can perform resource intensive tasks such as speech recognition and language translation.  Deep learning is different from traditional machine learning approaches that need [feature engineering](../resources/glossary.md#feature-engineering) and data processing.
 
 Deep learning models are trained by using large sets of [labeled data](https://en.wikipedia.org/wiki/Labeled_data) and [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) that contain multiple learning layers. Deep learning:
 
@@ -56,13 +58,23 @@ Deep learning models are trained by using large sets of [labeled data](https://e
 
 * Takes advantage of huge amounts of available data (and requires that volume to perform well).
 
-[Image Classification](https://en.wikipedia.org/wiki/Outline_of_object_recognition) is a common Machine Learning problem that has well-known solutions. However, training a model for any of these solutions takes significant time, computing resources, and data. It's an expensive process. What if you could reuse a model that's already been pre trained to solve a similar problem and retrain either all or some of the layers of that model to make it solve your problem? In the world of machine learning, this is called [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning).
+Image Classification is a common Machine Learning task which allows us to automatically classify images into multiple categories e.g. take an image and help us detect whether there is a human face in or not. Cats vs. dogs etc. Or as in the following images, pizza or teddy bear or toaster?
 
-Transfer learning includes a few strategies, such as *retrain all layers* and *penultimate layer*. This tutorial will explain and show how to use the penultimate layer strategy. The penultimate layer strategy reuses a model that's already been pre-trained to solve a specific problem and then retrain the final layer of that model to make it solve a new problem. Reusing the pre-trained model as part of your new model will save a lot of time and resources.
+![pizza image](./media/TransferLearningTF/pizza.jpg)
+![teddy bear image](./media/TransferLearningTF/teddy2.jpg)
+![toaster image](./media/TransferLearningTF/toaster.jpg)
 
-Your image classification model reuses the [Inception model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip) that's already been pre trained on thousands of different images and contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. The image feature layers recognize edges  You train the final layer against a much smaller set of data because you're starting with a pre trained model that already understands how to classify images.
+Image citations are following.
 
- You're going to retrain the final layer of that model with a Logistic regression algorithm using a set of four categories:
+Transfer learning includes a few strategies, such as *retrain all layers* and *penultimate layer*. This tutorial will explain and show how to use the *penultimate layer strategy*. The *penultimate layer strategy* reuses a model that's already been pre-trained to solve a specific problem and then retrain the final layer of that model to make it solve a new problem. Reusing the pre-trained model as part of your new model will save a lot of time and resources.
+
+Your image classification model reuses the [Inception model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip), a very popular image recognition model trained on the `ImageNet` dataset where the TensorFlow model tries to classify entire images into a thousand classes, like “Umbrella”, “Jersey”, and “Dishwasher”.
+
+The `Inception v3 model` can be classified as a [deep convolutional neural network](https://en.wikipedia.org/wiki/Convolutional_neural_network) and can achieve reasonable performance on hard visual recognition tasks, matching or exceeding human performance in some domains. The model/algorithm was developed by multiple researchers and based on the original paper: ["Rethinking the Inception Architecture for Computer Vision” by Szegedy, et. al.](https://arxiv.org/abs/1512.00567)
+
+Because the `Inception model` has already been pre trained on thousands of different images, it contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. The lower image feature layers recognize simple features (such as edges) and the higher layers recognize more complex features (such as shapes). You train the final layer against a much smaller set of data because you're starting with a pre trained model that already understands how to classify images. As your model allows you to classify more than two categories, this is an example of a [multi-class classifier](../resources/tasks.md#multiclass-classification).
+
+ Since this is a Multi-class classification problem, you're going to retrain the final layer of that model with a `Logistic regression` algorithm using a set of four categories:
 
 * Broccoli
 * Pizza
@@ -71,7 +83,7 @@ Your image classification model reuses the [Inception model](https://storage.goo
 
 ## DataSet
 
-There are two data sources: the `.tsv` file, and the image files.  The tags.tsv file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
+There are two data sources: the `.tsv` file, and the image files.  The `tags.tsv` file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
 
 ```tsv
 broccoli.jpg	broccoli
@@ -135,47 +147,43 @@ Add the following code to the line right above the `Main` method to specify thos
 
 [!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DeclareGlobalVariables)]
 
-Create some classes for your input data, inspections, and predictions. Add a new class to your project:
+Create some classes for your input data, and predictions. Add a new class to your project:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 
-1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *ImageNetData.cs*. Then, select the **Add** button.
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *ImageData.cs*. Then, select the **Add** button.
 
-    The *ImageNetData.cs* file opens in the code editor. Add the following `using` statement to the top of *ImageNetData.cs*:
+    The *ImageData.cs* file opens in the code editor. Add the following `using` statement to the top of *ImageData.cs*:
 
-[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TransferLearningTF/ImageNetData.cs#AddUsings)]
+[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TransferLearningTF/ImageData.cs#AddUsings)]
 
-Remove the existing class definition and add the following code, which has two classes `ImageNetData` and `ImageNetPipeline`, to the *ImageNetData.cs* file:
+Remove the existing class definition and add the following code for the `ImageData` class to the *ImageData.cs* file:
 
-[!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TransferLearningTF/ImageNetData.cs#DeclareTypes)]
+[!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TransferLearningTF/ImageData.cs#DeclareTypes)]
 
-`ImageNetData` is the input image data class and has the following <xref:System.String> fields:
+`ImageData` is the input image data class and has the following <xref:System.String> fields:
 
-* `ImagePath` contains the path for the image file
-* `Label` contains a value for the image label
+* `ImagePath` contains the image file name.
+* `Label` contains a value for the image label.
 
-`ImageNetData` also has a method (`ReadFromCsv`) to read the image data `.csv` file and load it into an `ImageNetData` object.
-
-`ImageNetPipeline` is the class used for inspecting column values after the model has been trained. It has a `string` (`ImagePath`) for the image path. The `Label` is used to create and train the model, and it's also used to evaluate the model. The `PredictedLabelValue` is used during prediction and evaluation. For evaluation an input with training data, the predicted values, and the model are used.
-
-Add a new class to your project:
+Add a new class to your project for `ImagePrediction`:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 
-1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *ImageNetPrediction.cs*. Then, select the **Add** button.
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *ImagePrediction.cs*. Then, select the **Add** button.
 
-    The *ImageNetPrediction.cs* file opens in the code editor. Remove both the `System.Collections.Generic` and the `System.Text` `using` statements at the top of *ImageNetPrediction.cs*:
+    The *ImagePrediction.cs* file opens in the code editor. Remove both the `System.Collections.Generic` and the `System.Text` `using` statements at the top of *ImagePrediction.cs*:
 
-Remove the existing class definition and add the following code, which has the `ImageNetPrediction` class, to the *ImageNetPrediction.cs* file:
+Remove the existing class definition and add the following code, which has the `ImagePrediction` class, to the *ImagePrediction.cs* file:
 
-[!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TransferLearningTF/ImageNetPrediction.cs#DeclareTypes)]
+[!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TransferLearningTF/ImagePrediction.cs#DeclareTypes)]
 
-`ImageNetPrediction` is the image prediction class and has the following fields:
+`ImagePrediction` is the image prediction class and has the following fields:
 
 * `Score` contains the confidence percentage for a given image classification.
 * `PredictedLabelValue` contains a value for the predicted image classification label.
 
-`ImageNetPrediction` is the class used for prediction after the model has been trained. It has a `string` (`ImagePath`) for the image path. The `Label` is used to create and train the model, and it's also used with a second dataset to evaluate the model. The `PredictedLabelValue` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
+`ImagePrediction` is the class used for prediction after the model has been trained. It has a `string` (`ImagePath`) for the image path. The `Label` is used to reuse and re-train the model. The `PredictedLabelValue` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
 
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations, and initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
@@ -185,56 +193,82 @@ Initialize the `mlContext` variable with a new instance of `MLContext`.  Replace
 
 [!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#CreateMLContext)]
 
-## Create a display utility method
+### Create a struct for default parameters
+
+The Inception model has several default parameters you need to pass in. Create a struct to map the default parameter values to friendly names with the following code, just after the `Main()` method:
+
+[!code-csharp[InceptionSettings](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#InceptionSettings)]
+
+### Create a display utility method
 
 You need to pair and display the image data and the related predictions more than once, and you don't want to duplicate code. Create a display utility method to handle pairing and displaying the image and prediction results.
 
-The `PairAndDisplayResults` method executes the following tasks:
+The `PairAndDisplayResults()` method executes the following tasks:
 
 * Combines data and predictions for reporting.
 * Displays the predicted results.
 
-Create the `PairAndDisplayResults` method, just after the `Main` method, using the following code:
+Create the `PairAndDisplayResults()` method, just after the `InceptionSettings` struct, using the following code:
 
 ```csharp
-private static void PairAndDisplayResults(IEnumerable<ImageNetData> imageNetData, IEnumerable<ImageNetPrediction> imageNetPredictionData)
+private static void PairAndDisplayResults(IEnumerable<ImageNetData> imageData, IEnumerable<ImageNetPrediction> imagePredictionData)
 {
 
 }
 ```
 
-Before displaying the predicted results, combine the `imageNetData` and `imageNetPrediction` together to see the original `Image Path` with its predicted category. The following code uses the <xref:System.Linq.Enumerable.Zip%2A?displayProperty=nameWithType> method to make that happen, so add the following code as the first line of the `PairAndDisplayResults()` method:
+Before displaying the predicted results, combine the `imageData` and `imagePrediction` together to see the original `Image Path` with its predicted category. The following code uses the <xref:System.Linq.Enumerable.Zip%2A?displayProperty=nameWithType> method to make that happen, so add it as the first line of the `PairAndDisplayResults()` method:
 
 [!code-csharp[BuildImagePredictionPairs](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#BuildImagePredictionPairs)]
 
-Now that you've combined the `imageNetData` and `imageNetData` into a class, you can display the results using the <xref:System.Console.WriteLine?displayProperty=nameWithType> method:
+Now that you've combined the `imageData` and `imageData` into a class, you can display the results using the <xref:System.Console.WriteLine?displayProperty=nameWithType> method:
 
 [!code-csharp[DisplayPredictions](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DisplayPredictions)]
 
 You'll call the `PairAndDisplayResults()` method in the next two methods.
 
-## Build and Train the model
+### Create a .tsv file utility method
 
+The `ReadFromTsv()` method executes the following tasks:
+
+* Reads the image data `tags.tsv` file.
+* Adds the file path to the image file name.
+* Loads the file data into an IEnumerable`ImageData` object.
+
+Create the `ReadFromTsv()` method, just after the `PairAndDisplayResults()` method, using the following code:
+
+```csharp
+public static IEnumerable<ImageData> ReadFromTsv(string file, string folder)
+{
+
+}
+```
+
+The following code parses through the `tags.tsv` file to add the file path to the image file name for the `ImagePath` property and load it and the `Label` into an `ImageData` object. Add it as the first line of the `ReadFromTsv()` method.  You need the fully qualified file path to display the prediction results.
+
+[!code-csharp[ReadFromTsv](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ReadFromTsv)]
 There are three major concepts in ML.NET: [Data](../basic-concepts-model-training-in-mldotnet.md#data), [Transformers](../basic-concepts-model-training-in-mldotnet.md#transformer), and [Estimators](../basic-concepts-model-training-in-mldotnet.md#estimator).
 
-Add the following call to the `BuildAndTrainModel`method as the next line of code in the `Main` method:
+## Reuse and tune pre-trained model
 
-[!code-csharp[CallBuildAndTrainModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#CallBuildAndTrainModel)]
+Add the following call to the `ReuseAndTuneInceptionModel()`method as the next line of code in the `Main()` method:
 
-The `BuildAndTrainModel` method executes the following tasks:
+[!code-csharp[CallReuseAndTuneInceptionModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#CallReuseAndTuneInceptionModel)]
+
+The `ReuseAndTuneInceptionModel()` method executes the following tasks:
 
 * Loads the data
 * Extracts and transforms the data.
 * Scores the TensorFlow model.
-* Trains the model.
+* Tunes (re-trains) the model.
 * Displays model results.
 * Evaluates the model.
 * Saves the model.
 
-Create the `BuildAndTrainModel` method, just after the `Main` method and just before the `PairAndDisplayResults` method, using the following code:
+Create the `ReuseAndTuneInceptionModel()` method, just after the `InceptionSettings` struct and just before the `PairAndDisplayResults()` method, using the following code:
 
 ```csharp
-public static void BuildAndTrainModel(MLContext mlContext, string dataLocation, string imagesFolder, string inputModelLocation, string outputModelLocation)
+public static void ReuseAndTuneInceptionModel(MLContext mlContext, string dataLocation, string imagesFolder, string inputModelLocation, string outputModelLocation)
 {
 
 }
@@ -244,7 +278,7 @@ public static void BuildAndTrainModel(MLContext mlContext, string dataLocation, 
 
 Data in ML.NET is represented as an [IDataView class](xref:Microsoft.Data.DataView.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
 
-Load the data using the `MLContext.Data.ReadFromTextFile` wrapper. Add the following code as the next line in the BuildAndTrainModel method:
+Load the data using the `MLContext.Data.ReadFromTextFile` wrapper. Add the following code as the next line in the `ReuseAndTuneInceptionModel()` method:
 
 [!code-csharp[LoadData](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#LoadData "Load the data")]
 
@@ -254,13 +288,13 @@ Pre-processing and cleaning data are important tasks that occur before a dataset
 
 ML.NET's transform pipelines compose a custom `transforms`set that is applied to your data before training or testing. The transforms' primary purpose is data [featurization](../resources/glossary.md#feature-engineering). Machine learning algorithms understand [featurized](../resources/glossary.md#feature) data, and when dealing with deep neural networks you must adapt the images to the format expected by the network. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
 
-When the model is trained and evaluated, by default, the values in the **Label** column are considered as correct values to be predicted. As you are using a pre-trained model you need to map fields to the new model. To do that, use the `MLContext.Transforms.Conversion.MapValueToKey`.  Name this `estimator` as you will then append the trainer to it. Add the next line of code:
+When the model is trained and evaluated, by default, the values in the **Label** column are considered as correct values to be predicted. As you are using a pre-trained model you need to map fields to the new model. To do that, use the `MLContext.Transforms.Conversion.MapValueToKey()`.  Name this `estimator` as you will then append the trainer to it. Add the next line of code:
 
 [!code-csharp[MapValueToKey1](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#MapValueToKey1)]
 
-Your image processing estimator uses pre-trained DNN featurizers for feature extraction. You use several image transforms to get the image data in the expected form:
+Your image processing estimator uses pre-trained [Deep Neural Network(DNN)](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks) featurizers for feature extraction. Usually, when dealing with deep neural networks, you must adapt the images to the format expected by the network. This is the reason you use several image transforms to get the image data in the form expected by the model:
 
-1. The `LoadImages`transform images are loaded in memory as a Bitmap type. 
+1. The `LoadImages`transform images are loaded in memory as a Bitmap type.
 2. The `Resize` transform resizes the images as the pre-trained model has a defined input image width and height.
 3. The `ImagePixelExtractingEstimator` transform extracts the pixels from the input images and converts them into a numeric vector.
 
@@ -268,13 +302,30 @@ Add these image transforms as the next lines of code:
 
 [!code-csharp[ImageTransforms](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ImageTransforms)]
 
-TensorFlow is a popular deep learning and machine learning toolkit that enables training deep neural networks (and general numeric computations), and is implemented as a transformer in ML.NET.  It's used to reuse the Inception model. The `TensorFlowTransform` extracts specified outputs (the model's image features `softmax2_pre_activation`) , and scores a dataset using a pre-trained Tensorflow model.
+`TensorFlow` is a popular deep learning and machine learning toolkit that enables training deep neural networks (and general numeric computations), and is implemented as a `transformer` in ML.NET. For this tutorial, it's used to reuse the `Inception model`.
+
+As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET Core or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library which allows you to write code that loads an existing trained `TensorFlow` model file for scoring.  
+
+![TensorFlow transform ML.NET Arch diagram](./media/TransferLearningTF/TF-diagram.png)
+
+The `TensorFlowTransform` extracts specified outputs (the model's image features `softmax2_pre_activation`), and scores a dataset using the pre-trained `TensorFlow` model.
+
+`softmax2_pre_activation` assists the model with determining which class the images belongs to. `softmax2_pre_activation` returns a probability for each of the categories for an image, and all of those probabilities must add up to 1. It assumes that an image will belong to only one category, as shown in the following example:
+
+| Class         | Probability   |
+| ------------- | ------------- |
+| `Brocolli`    |  0.001        |
+| `Pizza`       |  0.95         |
+| `Teddy`       |  0.06         |
+| `Toaster`     |  0.005        |
+
+Append the `TensorFlowTransform` to the `estimator` with the following line of code: 
 
 [!code-csharp[ScoreTensorFlowModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ScoreTensorFlowModel)]
 
 ### Choose a learning algorithm
 
-To add the learning algorithm, call the `mlContext.MulticlassClassification.Trainers.LogisticRegression` wrapper method.  The `LogisticRegression` is appended to the `estimator` and accepts the Inception image features (`softmax2_pre_activation`) and the `Label` input parameters to learn from the historic data.  Add the trainer with the following code:
+To add the learning algorithm, call the `mlContext.MulticlassClassification.Trainers.LogisticRegression()` wrapper method.  The `LogisticRegression` is appended to the `estimator` and accepts the Inception image features (`softmax2_pre_activation`) and the `Label` input parameters to learn from the historic data.  Add the trainer with the following code:
 
 [!code-csharp[AddTrainer](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#AddTrainer)]
 
@@ -282,11 +333,11 @@ You also need to map the predictedlabel to the predictedlabelvalue:
 
 [!code-csharp[MapValueToKey2](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#MapValueToKey2)]
 
-The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.Data.DataView.IDataView,Microsoft.Data.DataView.IDataView%29) method trains your model with the provided training dataset. It executes the `Estimator` definitions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`. The experiment is not executed until the `.Fit()` method runs. Fit the model to the `Train` data and return the trained model by adding the following as the next line of code in the `BuildAndTrainModel()` method:
+The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.Data.DataView.IDataView,Microsoft.Data.DataView.IDataView%29) method trains your model with the provided training dataset. It executes the `Estimator` definitions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`. The experiment is not executed until the `.Fit()` method runs. Fit the model to the `Train` data and return the trained model by adding the following as the next line of code in the `ReuseAndTuneInceptionModel()` method:
 
 [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#TrainModel)]
 
-The [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method makes predictions for multiple provided input rows of a test dataset.  Transform the `Training` data by adding the following code to `BuildAndTrainModel()`:
+The [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method makes predictions for multiple provided input rows of a test dataset.  Transform the `Training` data by adding the following code to `ReuseAndTuneInceptionModel()`:
 
 [!code-csharp[TransformData](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#TransformData)]
 
@@ -294,41 +345,41 @@ Now that you have your image data and prediction `DataViews`, convert them into 
 
 [!code-csharp[EnumerateDataViews](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#EnumerateDataViews)]
 
-To pair and display your data and predictions, add the following code to call the `PairAndDisplayResults` method previously created as the next line in the `BuildAndTrainModel()` method:
+To pair and display your data and predictions, add the following code to call the `PairAndDisplayResults()` method previously created as the next line in the `ReuseAndTuneInceptionModel()` method:
 
 [!code-csharp[CallPairAndDisplayResults1](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#CallPairAndDisplayResults1)]
 
-Once you have the prediction set, the [Evaluate()](xref:Microsoft.ML.RecommendationCatalog.Evaluate%2A) method assesses the model, which compares the predicted values with the actual `Labels` in the dataset and returns metrics on how the model is performing. Add the following code to the `Evaluate` method as the next line:
+Once you have the prediction set, the [Evaluate()](xref:Microsoft.ML.RecommendationCatalog.Evaluate%2A) method assesses the model, which compares the predicted values with the actual `Labels` in the dataset and returns metrics on how the model is performing. Add the following code to the `ReuseAndTuneInceptionModel()` method as the next line:
 
 [!code-csharp[Evaluate](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#Evaluate)]
 
 The following metrics are evaluated for image classification:
 
-* Log-loss - see [Log Loss](../resources/glossary.md#log-loss). You want Log-loss to be as close to zero as possible.
+* `Log-loss` - see [Log Loss](../resources/glossary.md#log-loss). You want Log-loss to be as close to zero as possible.
 
-* Per class Log-loss. You want per class Log-loss to be as close to zero as possible.
+* `Per class Log-loss`. You want per class Log-loss to be as close to zero as possible.
 
 Use the following code to display the metrics, share the results, and then act on them:
 
 [!code-csharp[DisplayMetrics](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DisplayMetrics)]
 
-`mlContext.Model.Save` saves your trained model to a .zip file (in the "assets/outputs" folder), which can be used in other .NET applications to make predictions. Add the following code to the `BuildAndTrainModel` method as the next line:
+`mlContext.Model.Save` saves your trained model to a .zip file (in the "assets/outputs" folder), which can be used in other .NET applications to make predictions. Add the following code to the `ReuseAndTuneInceptionModel()` method as the next line:
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#SaveModel)]
 
 ## Classify images with a loaded model
 
-Add the following call to the `ClassifyImages` method as the next line of code in the `Main` method:
+Add the following call to the `ClassifyImages()` method as the next line of code in the `Main` method:
 
 [!code-csharp[CallClassifyImages](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#CallClassifyImages)]
 
-The `ClassifyImages` method executes the following tasks:
+The `ClassifyImages()` method executes the following tasks:
 
 * Loads the model.
 * Reads .csv file into List.
 * Predicts image classifications based on test data.
 
-Create the `ClassifyImages` method, just after the `BuildAndTrainModel` method and just before the `PairAndDisplayResults` method, using the following code:
+Create the `ClassifyImages()` method, just after the `ReuseAndTuneInceptionModel()` method and just before the `PairAndDisplayResults()` method, using the following code:
 
 ```csharp
 public static void ClassifyImages(MLContext mlContext, string dataLocation, string imagesFolder, string outputModelLocation)
@@ -345,11 +396,11 @@ Call the `ImageNetData.ReadFromCsv()` method to create an `INumerable<ImageNetDa
 
 [!code-csharp[ReadFromCSV](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ReadFromCSV)]
 
-As you did previously with the training image data, predict the category of the test image data using the <xref:Microsoft.ML.ITransformer.Transform%2A> method. Add the following code to the `ClassifyImages()` method for the predictions and to convert the `predictions` `IDataView` into an `IEnumerable` for pairing and display:
+As you did previously with the training image data, predict the category of the test image data using the [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method. Add the following code to the `ClassifyImages()` method for the predictions and to convert the `predictions` `IDataView` into an `IEnumerable` for pairing and display:
 
 [!code-csharp[Predict](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#Predict)]
 
-To pair and display your test image data and predictions, add the following code to call the `PairAndDisplayResults` method previously created as the next line in the `ClassifyImages()` method:
+To pair and display your test image data and predictions, add the following code to call the `PairAndDisplayResults()` method previously created as the next line in the `ClassifyImages()` method:
 
 [!code-csharp[CallPairAndDisplayResults2](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#CallPairAndDisplayResults2)]
 
@@ -385,14 +436,14 @@ ImagePath: toaster3.jpg predicted as: toaster with score: 0.9649727
 Press any key to continue . . .
 ```
 
-Congratulations! You've now successfully built a machine learning model for image classification by reusing a pre-trained TensorFlow model in ML.NET.
+Congratulations! You've now successfully built a machine learning model for image classification by reusing a pre-trained `TensorFlow` model in ML.NET.
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF) repository.
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
 > * Understand the problem
-> * Build and Train the model
+> * Reuse and tune the pre-trained model
 > * Classify images with a loaded model
 
 Check out the Machine Learning samples GitHub repository to explore an expanded image classification sample.

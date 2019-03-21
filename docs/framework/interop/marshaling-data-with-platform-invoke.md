@@ -25,9 +25,9 @@ This section provides samples that demonstrate how to create managed function pr
 
 ## Platform invoke data types
 
-The following table lists data types used in the Win32 API (listed in Wtypes.h) and C-style functions. Many unmanaged libraries contain functions that pass these data types as parameters and return values. The third column lists the corresponding .NET Framework built-in value type or class that you use in managed code. In some cases, you can substitute a type of the same size for the type listed in the table.
+The following table lists data types used in the Windows APIs and C-style functions. Many unmanaged libraries contain functions that pass these data types as parameters and return values. The third column lists the corresponding .NET Framework built-in value type or class that you use in managed code. In some cases, you can substitute a type of the same size for the type listed in the table.
 
-|Unmanaged type in Win32 APIs|Unmanaged C language type|Managed type|Description|
+|Unmanaged type in Windows APIs|Unmanaged C language type|Managed type|Description|
 |--------------------------------|-------------------------------|------------------------|-----------------|
 |`VOID`|`void`|<xref:System.Void?displayProperty=nameWithType>|Applied to a function that does not return a value.|
 |`HANDLE`|`void *`|<xref:System.IntPtr?displayProperty=nameWithType> or <xref:System.UIntPtr?displayProperty=nameWithType>|32 bits on 32-bit Windows operating systems, 64 bits on 64-bit Windows operating systems.|

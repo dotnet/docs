@@ -1419,11 +1419,10 @@ namespace SampleSynthesis
   
       // Initialize a new instance of the speech synthesizer.  
       using (SpeechSynthesizer synth = new SpeechSynthesizer())  
-      using (MemoryStream stream = new MemoryStream())  
+      using (MemoryStream streamAudio = new MemoryStream())  
       {  
   
         // Create a SoundPlayer instance to play the output audio file.  
-        MemoryStream streamAudio = new MemoryStream();  
         System.Media.SoundPlayer m_SoundPlayer = new System.Media.SoundPlayer();  
   
         // Configure the synthesizer to output to an audio stream.  

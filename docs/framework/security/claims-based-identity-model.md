@@ -67,7 +67,7 @@ When you build claims-aware applications, the user identity is represented in yo
   
  This diagram shows a Web site (the relying party application, RP) that has been configured to use WIF for authentication and a client, a web browser, that wants to use that site.  
   
-1.  When an unauthenticated user requests a page their browser is redirected to the identity provider (IdP) pages.  
+1.  When an unauthenticated user requests a page, their browser is redirected to the identity provider (IdP) pages.  
   
 2.  The IdP requires the user to present their credentials, e.g. username/password, Kerberos, etc.  
   

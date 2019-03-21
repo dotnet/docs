@@ -169,7 +169,7 @@ items:
     [!code-csharp[DeconstructNames](~/samples/snippets/csharp/new-in-7/program.cs#13_DeconstructNames "Deconstruct with new names")]
 
     You can learn more in depth about tuples in the
-    [tuples topic](../tuples.md).
+    [tuples topic](../../tuples.md).
 
 - title: Use discards to select needed members
   durationInMinutes: 2
@@ -180,9 +180,9 @@ items:
 
     * When deconstructing tuples or user-defined types.
 
-    * When calling methods with [out](../language-reference/keywords/out-parameter-modifier.md) parameters.
+    * When calling methods with [out](../../language-reference/keywords/out-parameter-modifier.md) parameters.
 
-    * In a pattern matching operation with the [is](../language-reference/keywords/is.md) and [switch](../language-reference/keywords/switch.md) statements.
+    * In a pattern matching operation with the [is](../../language-reference/keywords/is.md) and [switch](../../language-reference/keywords/switch.md) statements.
 
     * As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
 
@@ -190,7 +190,7 @@ items:
 
     [!code-csharp[Tuple-discard](~/samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
 
-    For more information, see [Discards](../discards.md).
+    For more information, see [Discards](../../discards.md).
 
 - title: Use the type pattern with the is expression
   durationInMinutes: 2
@@ -211,7 +211,7 @@ items:
 
     ### `is` expression
 
-    The `is` pattern expression extends the familiar [`is` operator](../language-reference/keywords/is.md#pattern-matching-with-is) to query an object beyond its type.
+    The `is` pattern expression extends the familiar [`is` operator](../../language-reference/keywords/is.md#pattern-matching-with-is) to query an object beyond its type.
 
     Let's start with a simple scenario. We'll add capabilities to this scenario
     that demonstrate how pattern matching expressions make algorithms that work
@@ -292,7 +292,7 @@ items:
     constructs on data types that are unrelated by inheritance.
 
     You can learn more about pattern matching in the topic
-    dedicated to [pattern matching in C#](../pattern-matching.md).
+    dedicated to [pattern matching in C#](../../pattern-matching.md).
 
 - title: Optimize memory storage using ref locals and returns
   durationInMinutes: 2
@@ -391,7 +391,7 @@ items:
 
     Adding `ref` to the return value is a [source compatible change](version-update-considerations.md#source-compatible-changes). Existing code compiles, but the ref return value is copied when assigned. Callers must update the storage for the return value to a `ref` local variable to store the return as a reference.
 
-    For more information, see the [ref keyword](../language-reference/keywords/ref.md) article.
+    For more information, see the [ref keyword](../../language-reference/keywords/ref.md) article.
 
 - title: Minimize access to code with local functions
   durationInMinutes: 2
@@ -461,7 +461,7 @@ items:
     > [!NOTE]
     > Some of the designs that are supported by local functions
     > could also be accomplished using *lambda expressions*. Those
-    > interested can [read more about the differences](../local-functions-vs-lambdas.md)
+    > interested can [read more about the differences](../../local-functions-vs-lambdas.md)
 
 - title: Throw expressions more concise error reporting
   durationInMinutes: 2

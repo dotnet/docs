@@ -68,6 +68,8 @@
   
  A string is a sequential collection of characters that is used to represent text. A <xref:System.String> object is a sequential collection of <xref:System.Char?displayProperty=nameWithType> objects that represent a string; a <xref:System.Char?displayProperty=nameWithType> object corresponds to a UTF-16 code unit. The value of the <xref:System.String> object is the content of the sequential collection of <xref:System.Char?displayProperty=nameWithType> objects, and that value is immutable (that is, it is read-only). For more information about the immutability of strings, see the [Immutability and the StringBuilder class](#Immutability) section later in this topic. The maximum size of a <xref:System.String> object in memory is 2GB, or about 1 billion characters.  
   
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note-some.md)]
+
  In this section:  
   
  [Instantiating a String object](#Instantiation)   
@@ -88,31 +90,31 @@
 -   By assigning a string literal to a <xref:System.String> variable. This is the most commonly used method for creating a string. The following example uses assignment to create several strings. Note that in C#, because the backslash (\\) is an escape character, literal backslashes in a string must be escaped or the entire string must be @-quoted.  
   
      [!code-cpp[System.String.Class.Instantiate#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.class.instantiate/cpp/string.instantiate1.cpp#1)]
-     [!code-csharp[System.String.Class.Instantiate#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#1)]
+     [!code-csharp-interactive[System.String.Class.Instantiate#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#1)]
      [!code-vb[System.String.Class.Instantiate#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.class.instantiate/vb/instantiate1.vb#1)]  
   
 -   By calling a <xref:System.String> class constructor. The following example instantiates strings by calling several class constructors. Note that some of the constructors include pointers to character arrays or signed byte arrays as parameters. Visual Basic does not support calls to these constructors. For detailed information about <xref:System.String> constructors, see the <xref:System.String.%23ctor%2A> constructor summary.  
   
      [!code-cpp[System.String.Class.Instantiate#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.class.instantiate/cpp/string.instantiate2.cpp#2)]
-     [!code-csharp[System.String.Class.Instantiate#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#2)]
+     [!code-csharp-interactive[System.String.Class.Instantiate#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#2)]
      [!code-vb[System.String.Class.Instantiate#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.class.instantiate/vb/instantiate1.vb#2)]  
   
 -   By using the string concatenation operator (+ in C# and & or + in Visual Basic) to create a single string from any combination of <xref:System.String> instances and string literals. The following example illustrates the use of the string concatenation operator.  
   
      [!code-cpp[System.String.Class.Instantiate#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.class.instantiate/cpp/string.instantiate3.cpp#3)]
-     [!code-csharp[System.String.Class.Instantiate#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#3)]
+     [!code-csharp-interactive[System.String.Class.Instantiate#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#3)]
      [!code-vb[System.String.Class.Instantiate#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.class.instantiate/vb/instantiate1.vb#3)]  
   
 -   By retrieving a property or calling a method that returns a string. The following example uses the methods of the <xref:System.String> class to extract a substring from a larger string.  
   
      [!code-cpp[System.String.Class.Instantiate#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.class.instantiate/cpp/string.instantiate3.cpp#4)]
-     [!code-csharp[System.String.Class.Instantiate#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#4)]
+     [!code-csharp-interactive[System.String.Class.Instantiate#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#4)]
      [!code-vb[System.String.Class.Instantiate#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.class.instantiate/vb/instantiate1.vb#4)]  
   
 -   By calling a formatting method to convert a value or object to its string representation. The following example uses the                [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature to embed the string representation of two objects into a string.  
   
      [!code-cpp[System.String.Class.Instantiate#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.class.instantiate/cpp/string.instantiate3.cpp#5)]
-     [!code-csharp[System.String.Class.Instantiate#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#5)]
+     [!code-csharp-interactive[System.String.Class.Instantiate#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#5)]
      [!code-vb[System.String.Class.Instantiate#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.class.instantiate/vb/instantiate1.vb#5)]  
   
 <a name="Characters"></a>   

@@ -69,7 +69,7 @@ When you build claims-aware applications, the user identity is represented in yo
   
 1.  When an unauthenticated user requests a page, their browser is redirected to the identity provider (IdP) pages.  
   
-2.  The IdP requires the user to present their credentials, e.g. username/password, Kerberos, etc.  
+2.  The IdP requires the user to present their credentials, such as username/password or Kerberos authentication.  
   
 3.  The IdP issues a token back to that is returned to the browser.  
   

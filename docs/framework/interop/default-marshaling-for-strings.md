@@ -1,6 +1,6 @@
 ---
 title: "Default Marshaling for Strings"
-ms.date: "03/30/2017"
+ms.date: "03/20/2019"
 dev_langs:
   - "csharp"
   - "vb"
@@ -27,7 +27,7 @@ The following table shows the marshaling options for the string data type when m
 |`UnmanagedType.LPStr`|A pointer to a null-terminated array of ANSI characters.|
 |`UnmanagedType.LPWStr`|A pointer to a null-terminated array of Unicode characters.|
 
-This table applies to strings. However, for <xref:System.Text.StringBuilder>, the only options allowed are `UnmanagedType.LPStr` and `UnmanagedType.LPWStr`.
+This table applies to <xref:System.String>. For <xref:System.Text.StringBuilder>, the only options allowed are `UnmanagedType.LPStr` and `UnmanagedType.LPWStr`.
 
 The following example shows strings declared in the `IStringWorker` interface.
 
@@ -75,9 +75,9 @@ The following table lists the marshaling options for strings when marshaled as a
 |`UnmanagedType.LPTStr`|A pointer to a null-terminated array of platform-dependent characters.|
 |`UnmanagedType.LPWStr`|A pointer to a null-terminated array of Unicode characters.|
 |`UnmanagedType.TBStr`|A COM-style `BSTR` with a prefixed length and platform-dependent characters.|
-|`VBByRefStr`|A value that enables Visual Basic .NET to change a string in unmanaged code, and have the results reflected in managed code. This value is supported only for platform invoke. This is default value in Visual Basic for `ByVal` strings.|
+|`VBByRefStr`|A value that enables Visual Basic .NET to change a string in unmanaged code and have the results reflected in managed code. This value is supported only for platform invoke. This is the default value in Visual Basic for `ByVal` strings.|
 
-This table applies to strings. However, for <xref:System.Text.StringBuilder>, the only options allowed are `LPStr`, `LPTStr`, and `LPWStr`.
+This table applies to <xref:System.String>. For <xref:System.Text.StringBuilder>, the only options allowed are `LPStr`, `LPTStr`, and `LPWStr`.
 
 The following type definition shows the correct use of `MarshalAsAttribute` for platform invoke calls.
 
@@ -118,7 +118,7 @@ class StringLibAPI
 
 ## Strings Used in Structures
 
-Strings are valid members of structures; however, <xref:System.Text.StringBuilder> buffers are invalid in structures. The following table shows the marshaling options for the string data type when the type is marshaled as a field. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings to a field.
+Strings are valid members of structures; however, <xref:System.Text.StringBuilder> buffers are invalid in structures. The following table shows the marshaling options for the <xref:System.String> data type when the type is marshaled as a field. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal strings to a field.
 
 |Enumeration type|Description of unmanaged format|
 |----------------------|-------------------------------------|
@@ -130,9 +130,9 @@ Strings are valid members of structures; however, <xref:System.Text.StringBuilde
 
 The `ByValTStr` type is used for inline, fixed-length character arrays that appear within a structure. Other types apply to string references contained within structures that contain pointers to strings.
 
-The `CharSet` argument of the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute that is applied to the containing structure determines the character format of strings in structures. The following example structures contain string references and inline strings, as well as ANSI, Unicode, and platform-dependent characters.
+The `CharSet` argument of the <xref:System.Runtime.InteropServices.StructLayoutAttribute> that is applied to the containing structure determines the character format of strings in structures. The following example structures contain string references and inline strings, as well as ANSI, Unicode, and platform-dependent characters. The representation of these structures in a type library is shown in the following C++ code:
 
-### Type Library Representation
+
 
 ```cpp
 struct StringInfoA
@@ -155,7 +155,7 @@ struct StringInfoT
 };
 ```
 
-The following code example shows how to use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to define the same structure in different formats.
+The following example shows how to use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> to define the same structure in different formats.
 
 ```vb
 <StructLayout(LayoutKind.Sequential, CharSet := CharSet.Ansi)> _
@@ -209,7 +209,7 @@ struct StringInfoT
 
 In some circumstances, a fixed-length character buffer must be passed into unmanaged code to be manipulated. Simply passing a string does not work in this case because the callee cannot modify the contents of the passed buffer. Even if the string is passed by reference, there is no way to initialize the buffer to a given size.
 
-The solution is to pass a <xref:System.Text.StringBuilder> buffer as the argument instead of a string. A `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaler provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` does not.
+The solution is to pass a <xref:System.Text.StringBuilder> buffer as the argument instead of a <xref:System.String>. A `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaler provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` does not.
 
 For example, the Microsoft Windows API `GetWindowText` function (defined in Windows.h) is a fixed-length character buffer that must be passed into unmanaged code to be manipulated. `LpString` points to a caller-allocated buffer of size `nMaxCount`. The caller is expected to allocate the buffer and set the `nMaxCount` argument to the size of the allocated buffer. The following code shows the `GetWindowText` function declaration as defined in Windows.h.
 
@@ -261,7 +261,7 @@ public class Window
 ## See also
 
 - [Default Marshaling Behavior](default-marshaling-behavior.md)
-- [Marshaling Strings](marshaling-strings)
+- [Marshaling Strings](marshaling-strings.md)
 - [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
 - [Directional Attributes](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))
 - [Copying and Pinning](copying-and-pinning.md)

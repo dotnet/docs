@@ -215,7 +215,7 @@ public struct Rect {
 }  
 ```  
   
- When marshaled to unmanaged code, these formatted types are marshaled as C-style structures. This provides an easy way of calling an unmanaged API that has structure arguments. For example, the `POINT` and `RECT` structures can be passed to the Microsoft Win32 API **PtInRect** function as follows:  
+ When marshaled to unmanaged code, these formatted types are marshaled as C-style structures. This provides an easy way of calling an unmanaged API that has structure arguments. For example, the `POINT` and `RECT` structures can be passed to the Microsoft Windows API **PtInRect** function as follows:  
   
 ```  
 BOOL PtInRect(const RECT *lprc, POINT pt);  
@@ -247,7 +247,7 @@ class Win32API {
 > [!NOTE]
 >  If a reference type has members of non-blittable types, conversion is required twice: the first time when an argument is passed to the unmanaged side and the second time on return from the call. Due to this added overhead, In/Out parameters must be explicitly applied to an argument if the caller wants to see changes made by the callee.  
   
- In the following example, the `SystemTime` class has sequential member layout and can be passed to the Win32 API **GetSystemTime** function.  
+ In the following example, the `SystemTime` class has sequential member layout and can be passed to the Windows API **GetSystemTime** function.  
   
 ```vb  
 <StructLayout(LayoutKind.Sequential)> Public Class SystemTime  

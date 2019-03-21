@@ -16,7 +16,7 @@ ms.author: "ronpet"
 # Specifying a Character Set
 The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field controls string marshaling and determines how platform invoke finds function names in a DLL. This topic describes both behaviors.  
   
- Some APIs export two versions of functions that take string arguments: narrow (ANSI) and wide (Unicode). The Win32 API, for instance, includes the following entry-point names for the **MessageBox** function:  
+ Some APIs export two versions of functions that take string arguments: narrow (ANSI) and wide (Unicode). The Windows API, for instance, includes the following entry-point names for the **MessageBox** function:  
   
 -   **MessageBoxA**  
   

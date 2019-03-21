@@ -25,4 +25,4 @@ You can view the earlier version of the documentation in the repository, but man
 ## Current version of the documentation
 
 * [.NET Core documentation](./core/index.md)
-* [ASP.NET Core documentation](/aspnet/core/)
+* [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/)

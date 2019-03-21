@@ -389,7 +389,7 @@ items:
     efficient by avoiding copying values, or performing dereferencing operations
     multiple times.
 
-    Adding `ref` to the return value is a [source compatible change](version-update-considerations.md#source-compatible-changes). Existing code compiles, but the ref return value is copied when assigned. Callers must update the storage for the return value to a `ref` local variable to store the return as a reference.
+    Adding `ref` to the return value is a [source compatible change](../../whats-new/version-update-considerations.md#source-compatible-changes). Existing code compiles, but the ref return value is copied when assigned. Callers must update the storage for the return value to a `ref` local variable to store the return as a reference.
 
     For more information, see the [ref keyword](../../language-reference/keywords/ref.md) article.
 

@@ -205,11 +205,11 @@ private static void PairAndDisplayResults(IEnumerable<ImageNetData> imageNetData
 
 Before displaying the predicted results, combine the `imageNetData` and `imageNetPrediction` together to see the original `Image Path` with its predicted category. The following code uses the <xref:System.Linq.Enumerable.Zip%2A?displayProperty=nameWithType> method to make that happen, so add the following code as the first line of the `PairAndDisplayResults()` method:
 
-[!code-csharp[BuildImagePredictionPairs](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#BuildImagePredictionPairs)
+[!code-csharp[BuildImagePredictionPairs](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#BuildImagePredictionPairs)]
 
 Now that you've combined the `imageNetData` and `imageNetData` into a class, you can display the results using the <xref:System.Console.WriteLine?displayProperty=nameWithType> method:
 
-[!code-csharp[DisplayPredictions](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DisplayResults)
+[!code-csharp[DisplayPredictions](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DisplayPredictions)]
 
 You'll call the `PairAndDisplayResults()` method in the next two methods.
 
@@ -393,7 +393,7 @@ In this tutorial, you learned how to:
 > [!div class="checklist"]
 > * Understand the problem
 > * Build and Train the model
-> * Classify Images
+> * Classify images with a loaded model
 
 Check out the Machine Learning samples GitHub repository to explore an expanded image classification sample.
 > [!div class="nextstepaction"]

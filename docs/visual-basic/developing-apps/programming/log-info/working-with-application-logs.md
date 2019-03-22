@@ -18,11 +18,11 @@ First, the severity of the message is checked with the <xref:System.Diagnostics.
 
 The following diagram shows how a message written to the `WriteEntry` method gets passed to the `WriteLine` methods of the log's trace listeners:
 
-![My Log Call](../../../../visual-basic/developing-apps/programming/log-info/media/mylogcall.png "MyLogCall")
+![Diagram that shows My log call.](./media/working-with-application-logs/my-log-call-message.png)
 
 You can change the behavior of the log and the trace listeners by changing the application's configuration file. The following diagram shows the correspondence between the parts of the log and the configuration file.
 
-![My Log Configuration](../../../../visual-basic/developing-apps/programming/log-info/media/mylogconfig.png "MyLogConfig")
+![Diagram that shows My log configuration.](./media/working-with-application-logs/my-log-configuration.png)
 
 ## Where Messages are Logged
 

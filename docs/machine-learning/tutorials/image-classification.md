@@ -383,7 +383,7 @@ Add the following call to the `ClassifyImages()` method as the next line of code
 The `ClassifyImages()` method executes the following tasks:
 
 * Loads the model.
-* Reads .csv file into List.
+* Reads .TSV file into `IEnumerable`.
 * Predicts image classifications based on test data.
 
 Create the `ClassifyImages()` method, just after the `ReuseAndTuneInceptionModel()` method and just before the `PairAndDisplayResults()` method, using the following code:

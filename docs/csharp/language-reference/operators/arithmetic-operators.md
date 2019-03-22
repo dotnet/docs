@@ -36,7 +36,7 @@ You can use the following operators to perform arithmetic operations with numeri
 
 Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types. The `++`, `--`, `+`, and `-` operators also support operands of an [enum](../keywords/enum.md) type.
 
-## Increment operator
+## ++ operator
 
 The unary increment operator `++` increments its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../../csharp/programming-guide/indexers/index.md) access.
 
@@ -54,7 +54,7 @@ The result of `++x` is the value of `x` *after* the operation, as the following 
 
 [!code-csharp-interactive[prefix increment](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#PrefixIncrement)]
 
-## Decrement operator
+## -- operator
 
 The unary decrement operator `--` decrements its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../../csharp/programming-guide/indexers/index.md) access.
 
@@ -72,7 +72,7 @@ The result of `--x` is the value of `x` *after* the operation, as the following 
 
 [!code-csharp-interactive[prefix decrement](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#PrefixDecrement)]
 
-## Unary plus and minus operators
+## Unary + and - operators
 
 The unary `+` operator returns the value of its operand. The unary `-` operator computes the numeric negation of its operand.
 
@@ -80,7 +80,7 @@ The unary `+` operator returns the value of its operand. The unary `-` operator 
 
 The unary `-` operator doesn't support the [ulong](../keywords/ulong.md) type.
 
-## Multiplication operator
+## * operator
 
 The multiplication operator `*` computes the product of its operands:
 
@@ -88,7 +88,7 @@ The multiplication operator `*` computes the product of its operands:
 
 The unary `*` operator is a [pointer indirection operator](multiplication-operator.md#pointer-indirection-operator).
 
-## Division operator
+## / operator
 
 The division operator `/` divides its first operand by its second operand.
 
@@ -110,7 +110,7 @@ For the `float`, `double`, and `decimal` types, the result of the `/` operator i
 
 If one of the operands is `decimal`, another operand can be neither `float` nor `double`, because neither `float` nor `double` is implicitly convertible to `decimal`. You must explicitly convert the `float` or `double` operand to the `decimal` type. For more information about implicit conversions between numeric types, see [Implicit numeric conversions table](../keywords/implicit-numeric-conversions-table.md).
 
-## Remainder operator
+## Remainder operator %
 
 The remainder operator `%` computes the remainder after dividing its first operand by its second operand.
 
@@ -142,7 +142,7 @@ Note the round-off errors that can be associated with the floating-point types.
 
 For the `decimal` operands, the remainder operator `%` is equivalent to the [remainder operator](<xref:System.Decimal.op_Modulus(System.Decimal,System.Decimal)>) of the <xref:System.Decimal?displayProperty=nameWithType> type.
 
-## Addition operator
+## + operator
 
 The addition operator `+` computes the sum of its operands:
 
@@ -150,7 +150,7 @@ The addition operator `+` computes the sum of its operands:
 
 You also can use the `+` operator for string concatenation and delegate combination. For more information, see the [`+` operator](addition-operator.md) article.
 
-## Subtraction operator
+## Subtraction `-` operator
 
 The subtraction operator `-` subtracts its second operand from its first operand:
 
@@ -194,6 +194,8 @@ except that `x` is only evaluated once. The `op` operation can be `*`, `/`, `%`,
 The following example demonstrates the usage of compound assignment:
 
 [!code-csharp-interactive[compound assignment](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#CompoundAssignment)]
+
+You also use the `+=` and `-=` operators to subscribe to and unsubscribe from [events](../keywords/event.md). For more information, see [How to: subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
 ## Arithmetic overflow
 

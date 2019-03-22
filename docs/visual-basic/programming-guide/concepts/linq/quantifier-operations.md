@@ -8,7 +8,7 @@ Quantifier operations return a <xref:System.Boolean> value that indicates whethe
   
  The following illustration depicts two different quantifier operations on two different source sequences. The first operation asks if one or more of the elements are the character 'A', and the result is `true`. The second operation asks if all the elements are the character 'A', and the result is `true`.  
   
- ![LINQ Quantifier Operations](../../../../csharp/programming-guide/concepts/linq/media/linq_quantifier.png "LINQ_Quantifier")  
+ ![LINQ Quantifier Operations](./media/quantifier-operations/linq-quantifier-operations.png)  
   
  The standard query operator methods that perform quantifier operations are listed in the following section.  
   

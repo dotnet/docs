@@ -29,7 +29,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
 ## String Marshaling and Name Matching  
  The **CharSet** field accepts the following values:  
   
- **CharSet.Ansi** (default value)  
+ <xref:System.Runtime.InteropServices.CharSet.Ansi> (default value)  
   
 -   String marshaling  
   
@@ -41,7 +41,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
      When the **ExactSpelling** field is **false**, as it is by default in C++ and C#, platform invoke searches for the unmangled alias first (**MessageBox**), then the mangled name (**MessageBoxA**) if the unmangled alias is not found. Notice that ANSI name-matching behavior differs from Unicode name-matching behavior.  
   
- **CharSet.Unicode**  
+ <xref:System.Runtime.InteropServices.CharSet.Unicode>  
   
 -   String marshaling  
   
@@ -53,7 +53,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
      When the **ExactSpelling** field is **false**, as it is by default in C++ and C#, platform invoke searches for the mangled name first (**MessageBoxW**), then the unmangled alias (**MessageBox**) if the mangled name is not found. Notice that Unicode name-matching behavior differs from ANSI name-matching behavior.  
   
- **CharSet.Auto**  
+ <xref:System.Runtime.InteropServices.CharSet.Auto>  
   
 -   Platform invoke chooses between ANSI and Unicode formats at run time, based on the target platform.  
   

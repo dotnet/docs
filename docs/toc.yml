@@ -1827,37 +1827,37 @@
     - name: Error Messages
       href: visual-basic/language-reference/error-messages/index.md
       items:
-      - name: '#ElseIf' must be preceded by a matching '#If' or '#ElseIf'
+      - name: "'#ElseIf' must be preceded by a matching '#If' or '#ElseIf'"
         href: visual-basic/language-reference/error-messages/elseif-must-be-preceded-by-a-matching-if-or-elseif.md
-      - name: '#Region' and '#End Region' statements are not valid within method bodies-multiline lambdas
+      - name: "'#Region' and '#End Region' statements are not valid within method bodies-multiline lambdas"
         href: visual-basic/language-reference/error-messages/region-and-end-region-are-not-valid-within-method-bodies-multiline-lambdas.md
-      - name: '<attribute>' cannot be applied because the format of the GUID '<number>' is not correct
+      - name: "'<attribute>' cannot be applied because the format of the GUID '<number>' is not correct"
         href: visual-basic/language-reference/error-messages/attribute-cannot-be-applied-because-the-format-of-the-guid-is-not-correct.md
-      - name: '<classname>' is not CLS-compliant because the interface '<interfacename>' it implements is not CLS-compliant
+      - name: "'<classname>' is not CLS-compliant because the interface '<interfacename>' it implements is not CLS-compliant"
         href: visual-basic/language-reference/error-messages/classname-is-not-cls-compliant-because-the-interface-is-not-cls-compliant.md
-      - name: '<elementname>' is obsolete (Visual Basic Warning)
+      - name: "'<elementname>' is obsolete (Visual Basic Warning)"
         href: visual-basic/language-reference/error-messages/elementname-is-obsolete-visual-basic-warning.md
-      - name: '<eventname>' is an event, and cannot be called directly
+      - name: "'<eventname>' is an event, and cannot be called directly"
         href: visual-basic/language-reference/error-messages/eventname-is-an-event-and-cannot-be-called-directly.md
-      - name: '<expression>' cannot be used as a type constraint
+      - name: "'<expression>' cannot be used as a type constraint"
         href: visual-basic/language-reference/error-messages/expression-cannot-be-used-as-a-type-constraint.md
-      - name: '<functionname>' is not declared (Smart Device-Visual Basic Compiler Error)
+      - name: "'<functionname>' is not declared (Smart Device-Visual Basic Compiler Error)"
         href: visual-basic/language-reference/error-messages/functionname-is-not-declared-smart-device-visual-basic-compiler-error.md
-      - name: '<interfacename>.<membername>' is already implemented by the base class '<baseclassname>'. Re-implementation of <type> assumed
+      - name: "'<interfacename>.<membername>' is already implemented by the base class '<baseclassname>'. Re-implementation of <type> assumed"
         href: visual-basic/language-reference/error-messages/interfacename-membername-is-already-implemented-by-the-base-class.md
-      - name: '<keyword>' is valid only within an instance method
+      - name: "'<keyword>' is valid only within an instance method"
         href: visual-basic/language-reference/error-messages/keyword-is-valid-only-within-an-instance-method.md
-      - name: '<membername>' cannot expose type '<typename>' outside the project through <containertype> '<containertypename>'
+      - name: "'<membername>' cannot expose type '<typename>' outside the project through <containertype> '<containertypename>'"
         href: visual-basic/language-reference/error-messages/membername-cannot-expose-type-typename-outside-the-project.md
-      - name: '<membername>' is ambiguous across the inherited interfaces '<interfacename1>' and '<interfacename2>'
+      - name: "'<membername>' is ambiguous across the inherited interfaces '<interfacename1>' and '<interfacename2>'"
         href: visual-basic/language-reference/error-messages/membername-is-ambiguous-across-the-inherited-interfaces.md
       - name: <message> This error could also be due to mixing a file reference with a project reference to assembly '<assemblyname>'
         href: visual-basic/language-reference/error-messages/message-this-error-could-also-be-due-to-mixing-a-file-reference.md
-      - name: '<methodname>' has multiple definitions with identical signatures
+      - name: "'<methodname>' has multiple definitions with identical signatures"
         href: visual-basic/language-reference/error-messages/methodname-has-multiple-definitions-with-identical-signatures.md
-      - name: '<name>' is ambiguous in the namespace '<namespacename>'
+      - name: "'<name>' is ambiguous in the namespace '<namespacename>'"
         href: visual-basic/language-reference/error-messages/name-is-ambiguous-in-the-namespace-namespacename.md
-      - name: '<name1>' is ambiguous, imported from the namespaces or types '<name2>'
+      - name: "'<name1>' is ambiguous, imported from the namespaces or types '<name2>'"
         href: visual-basic/language-reference/error-messages/name1-is-ambiguous-imported-from-the-namespaces-or-types-name2.md
       - name: <proceduresignature1> is not CLS-compliant because it overloads <proceduresignature2> which differs from it only by array of array parameter types or by the rank of the array parameter types
         href: visual-basic/language-reference/error-messages/proceduresignature1-not-cls-compliant-because-it-overloads-proceduresignature2.md
@@ -1865,11 +1865,11 @@
         href: visual-basic/language-reference/error-messages/type1-must-implement-membername-for-interface.md
       - name: <type1>'<typename>' must implement '<methodname>' for interface '<interfacename>'
         href: visual-basic/language-reference/error-messages/type1-typename-must-implement-methodname-for-interface-interfacename.md
-      - name: '<typename>' cannot inherit from <type> '<basetypename>' because it expands the access of the base <type> outside the assembly
+      - name: "'<typename>' cannot inherit from <type> '<basetypename>' because it expands the access of the base <type> outside the assembly"
         href: visual-basic/language-reference/error-messages/typename-cannot-inherit-from-type-basetypename.md
-      - name: '<typename>' is a delegate type
+      - name: "'<typename>' is a delegate type"
         href: visual-basic/language-reference/error-messages/typename-is-a-delegate-type.md
-      - name: '<typename>' is a type and cannot be used as an expression
+      - name: "'<typename>' is a type and cannot be used as an expression"
         href: visual-basic/language-reference/error-messages/typename-is-a-type-and-cannot-be-used-as-an-expression.md
       - name: A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True
         href: visual-basic/language-reference/error-messages/a-double-quote-is-not-a-valid-comment-token-for-delimited-fields.md
@@ -1881,7 +1881,7 @@
         href: visual-basic/language-reference/error-messages/a-startup-form-has-not-been-specified.md
       - name: Access of shared member through an instance; qualifying expression will not be evaluated
         href: visual-basic/language-reference/error-messages/access-of-shared-member-through-an-instance-qualifying-expression.md
-      - name: 'AddressOf' operand must be the name of a method (without parentheses)
+      - name: "'AddressOf' operand must be the name of a method (without parentheses)"
         href: visual-basic/language-reference/error-messages/addressof-operand-must-be-the-name-of-a-method-without-parentheses.md
       - name: An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired
         href: visual-basic/language-reference/error-messages/an-unexpected-error-has-occurred.md
@@ -1897,7 +1897,7 @@
         href: visual-basic/language-reference/error-messages/array-subscript-expression-missing.md
       - name: Arrays declared as structure members cannot be declared with an initial size
         href: visual-basic/language-reference/error-messages/arrays-declared-as-structure-members-cannot-be-declared-with-an-initial-size.md
-      - name: 'As Any' is not supported in 'Declare' statements
+      - name: "'As Any' is not supported in 'Declare' statements"
         href: visual-basic/language-reference/error-messages/as-any-is-not-supported-in-declare-statements.md
       - name: Attribute '<attributename>' cannot be applied multiple times
         href: visual-basic/language-reference/error-messages/attribute-attributename-cannot-be-applied-multiple-times.md
@@ -1931,7 +1931,7 @@
         href: visual-basic/language-reference/error-messages/class-classname-cannot-be-found.md
       - name: Class does not support Automation or does not support expected interface
         href: visual-basic/language-reference/error-messages/class-does-not-support-automation-or-does-not-support-expected-interface.md
-      - name: 'Class' statement must end with a matching 'End Class'
+      - name: "'Class' statement must end with a matching 'End Class'"
         href: visual-basic/language-reference/error-messages/class-statement-must-end-with-a-matching-end-class.md
       - name: Clipboard format is not valid
         href: visual-basic/language-reference/error-messages/clipboard-format-is-not-valid.md
@@ -1943,7 +1943,7 @@
         href: visual-basic/language-reference/error-messages/constructor-name-cannot-call-itself.md
       - name: Copying the value of 'ByRef' parameter '<parametername>' back to the matching argument narrows from type '<typename1>' to type '<typename2>'
         href: visual-basic/language-reference/error-messages/copying-the-value-of-byref-parameter-back-to-the-matching-argument-narrows.md
-      - name: 'Custom' modifier is not valid on events declared without explicit delegate types
+      - name: "'Custom' modifier is not valid on events declared without explicit delegate types"
         href: visual-basic/language-reference/error-messages/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types.md
       - name: Data type(s) of the type parameter(s) cannot be inferred from these arguments
         href: visual-basic/language-reference/error-messages/data-type-s-of-the-type-parameter-s-cannot-be-inferred-from-these-arguments.md
@@ -1959,7 +1959,7 @@
         href: visual-basic/language-reference/error-messages/derived-classes-cannot-raise-base-class-events.md
       - name: Device I/O error
         href: visual-basic/language-reference/error-messages/device-i-o-error.md
-      - name: 'Dir' function must first be called with a 'PathName' argument
+      - name: "'Dir' function must first be called with a 'PathName' argument"
         href: visual-basic/language-reference/error-messages/dir-function-must-first-be-called-with-a-pathname-argument.md
       - name: End of statement expected
         href: visual-basic/language-reference/error-messages/end-of-statement-expected.md
@@ -1993,7 +1993,7 @@
         href: visual-basic/language-reference/error-messages/expression-recursively-calls-the-containing-property-propertyname.md
       - name: Expression too complex
         href: visual-basic/language-reference/error-messages/expression-too-complex.md
-      - name: 'Extension' attribute can be applied only to 'Module', 'Sub', or 'Function' declarations
+      - name: "'Extension' attribute can be applied only to 'Module', 'Sub', or 'Function' declarations"
         href: visual-basic/language-reference/error-messages/extension-attribute-can-be-applied-only-to-module-sub-or-function-declarations.md
       - name: File already open
         href: visual-basic/language-reference/error-messages/file-already-open.md
@@ -2009,7 +2009,7 @@
         href: visual-basic/language-reference/error-messages/first-statement-of-this-sub-new-must-be-a-call-to-mybase-new-or-myclass-new.md
       - name: "First statement of this 'Sub New' must be an explicit call to 'MyBase.New' or 'MyClass.New' because the '<constructorname>' in the base class '<baseclassname>' of '<derivedclassname>' is marked obsolete: '<errormessage>'"
         href: visual-basic/language-reference/error-messages/first-statement-of-sub-new-must-be-explicit-call-to-mybase-new-or-myclass-new.md
-      - name: 'For Each' on type '<typename>' is ambiguous because the type implements multiple instantiations of 'System.Collections.Generic.IEnumerable(Of T)'
+      - name: "'For Each' on type '<typename>' is ambiguous because the type implements multiple instantiations of 'System.Collections.Generic.IEnumerable(Of T)'"
         href: visual-basic/language-reference/error-messages/for-each-on-type-typename-is-ambiguous.md
       - name: Friend assembly reference <reference> is invalid
         href: visual-basic/language-reference/error-messages/friend-assembly-reference-reference-is-invalid.md
@@ -2019,7 +2019,7 @@
         href: visual-basic/language-reference/error-messages/function-evaluation-is-disabled.md
       - name: Generic parameters used as optional parameter types must be class constrained
         href: visual-basic/language-reference/error-messages/generic-parameters-used-as-optional-parameter-types-must-be-class-constrained.md
-      - name: 'Get' accessor of property '<propertyname>' is not accessible
+      - name: "'Get' accessor of property '<propertyname>' is not accessible"
         href: visual-basic/language-reference/error-messages/get-accessor-of-property-propertyname-is-not-accessible.md
       - name: Handles clause requires a WithEvents variable defined in the containing type or one of its base types
         href: visual-basic/language-reference/error-messages/handles-clause-requires-a-withevents-variable-defined.md
@@ -2035,9 +2035,9 @@
         href: visual-basic/language-reference/error-messages/internal-error-happened-at-location.md
       - name: Implicit conversion from '<typename1>' to '<typename2>' in copying the value of 'ByRef' parameter '<parametername>' back to the matching argument.
         href: visual-basic/language-reference/error-messages/implicit-conversion-from-typename1-to-typename2-in-copying.md
-      - name: 'Is' requires operands that have reference types, but this operand has the value type '<typename>'
+      - name: "'Is' requires operands that have reference types, but this operand has the value type '<typename>'"
         href: visual-basic/language-reference/error-messages/is-requires-operands-that-have-reference-types.md
-      - name: 'IsNot' operand of type 'typename' can only be compared to 'Nothing', because 'typename' is a nullable type
+      - name: "'IsNot' operand of type 'typename' can only be compared to 'Nothing', because 'typename' is a nullable type"
         href: visual-basic/language-reference/error-messages/isnot-operand-of-type-can-only-be-compared-to-nothing.md
       - name: Labels that are numbers must be followed by colons
         href: visual-basic/language-reference/error-messages/labels-that-are-numbers-must-be-followed-by-colons.md
@@ -2053,13 +2053,13 @@
         href: visual-basic/language-reference/error-messages/leading-period-or-exclamation-point-can-only-appear-inside-a-with-statement.md
       - name: Line is too long
         href: visual-basic/language-reference/error-messages/line-is-too-long.md
-      - name: 'Line' statements are no longer supported (Visual Basic Compiler Error)
+      - name: "'Line' statements are no longer supported (Visual Basic Compiler Error)"
         href: visual-basic/language-reference/error-messages/line-statements-are-no-longer-supported-visual-basic-compiler-error.md
       - name: Method does not have a signature compatible with the delegate
         href: visual-basic/language-reference/error-messages/method-does-not-have-a-signature-compatible-with-the-delegate.md
       - name: Methods of 'System.Nullable(Of T)' cannot be used as operands of the 'AddressOf' operator
         href: visual-basic/language-reference/error-messages/methods-of-system-nullable-of-t-cannot-be-used-as-operands-of-the-addressof.md
-      - name: 'Module' statements can occur only at file or namespace level
+      - name: "'Module' statements can occur only at file or namespace level"
         href: visual-basic/language-reference/error-messages/module-statements-can-occur-only-at-file-or-namespace-level.md
       - name: Name <membername> is not CLS-compliant
         href: visual-basic/language-reference/error-messages/name-membername-is-not-cls-compliant.md
@@ -2091,7 +2091,7 @@
         href: visual-basic/language-reference/error-messages/object-variable-or-with-block-variable-not-set.md
       - name: "Operator declaration must be one of:  +,-,*,-,-,^, &, Like, Mod, And, Or, Xor, Not, <<, >>, =, <>, <, <=, >, >=, CType, IsTrue, IsFalse"
         href: visual-basic/language-reference/error-messages/operator-declaration-must-be-one-of.md
-      - name: 'Optional' expected
+      - name: "'Optional' expected"
         href: visual-basic/language-reference/error-messages/optional-expected.md
       - name: Optional parameters must specify a default value
         href: visual-basic/language-reference/error-messages/optional-parameters-must-specify-a-default-value.md
@@ -2139,7 +2139,7 @@
         href: visual-basic/language-reference/error-messages/resume-without-error.md
       - name: Return type of function '<procedurename>' is not CLS-compliant
         href: visual-basic/language-reference/error-messages/return-type-of-function-procedurename-is-not-cls-compliant.md
-      - name: 'Set' accessor of property '<propertyname>' is not accessible
+      - name: "'Set' accessor of property '<propertyname>' is not accessible"
         href: visual-basic/language-reference/error-messages/set-accessor-of-property-propertyname-is-not-accessible.md
       - name: Some subkeys cannot be deleted
         href: visual-basic/language-reference/error-messages/some-subkeys-cannot-be-deleted.md
@@ -2153,7 +2153,7 @@
         href: visual-basic/language-reference/error-messages/string-constants-must-end-with-a-double-quote.md
       - name: Structure '<structurename>' must contain at least one instance member variable or at least one instance event declaration not marked 'Custom'
         href: visual-basic/language-reference/error-messages/structure-structurename-must-contain.md
-      - name: 'Sub Main' was not found in '<name>'
+      - name: "'Sub Main' was not found in '<name>'"
         href: visual-basic/language-reference/error-messages/sub-main-was-not-found-in-name.md
       - name: Sub or Function not defined
         href: visual-basic/language-reference/error-messages/sub-or-function-not-defined.md

@@ -62,7 +62,7 @@ Image Classification is a common Machine Learning task which allows us to automa
 
 ![pizza image](./media/image-classification/220px-Pepperoni_pizza.jpg)
 ![teddy bear image](./media/image-classification/Nalle_-_a_small_brown_teddy_bear.jpg)
-![toaster image](./media/image-classification/toaster.jpg)
+![toaster image](./media/image-classification/193px-Broodrooster.jpg)
 
 >[!Note]
 > The preceding images belong to Wikimedia Commons and are attributed as follows:

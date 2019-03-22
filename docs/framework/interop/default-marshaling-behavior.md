@@ -223,19 +223,20 @@ BOOL PtInRect(const RECT *lprc, POINT pt);
   
  You can pass structures using the following platform invoke definition:  
   
-```vb  
-Class Win32API      
-   Declare Auto Function PtInRect Lib "User32.dll" _  
-    (ByRef r As Rect, p As Point) As Boolean  
-End Class  
-```  
+```vb
+Friend Class WindowsAPI
+    Friend Shared Declare Auto Function PtInRect Lib "User32.dll" (
+        ByRef r As Rect, p As Point) As Boolean
+End Class
+```
   
-```csharp  
-class Win32API {  
-   [DllImport("User32.dll")]  
-   public static extern Bool PtInRect(ref Rect r, Point p);  
-}  
-```  
+```csharp
+internal static class WindowsAPI
+{
+   [DllImport("User32.dll")]
+   internal static extern bool PtInRect(ref Rect r, Point p);
+}
+```
   
  The `Rect` value type must be passed by reference because the unmanaged API is expecting a pointer to a `RECT` to be passed to the function. The `Point` value type is passed by value because the unmanaged API expects the `POINT` to be passed on the stack. This subtle difference is very important. References are passed to unmanaged code as pointers. Values are passed to unmanaged code on the stack.  
   
@@ -284,19 +285,20 @@ void GetSystemTime(SYSTEMTIME* SystemTime);
   
  The equivalent platform invoke definition for **GetSystemTime** is as follows:  
   
-```vb  
-Public Class Win32  
-   Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (ByVal sysTime _  
-   As SystemTime)  
-End Class  
-```  
+```vb
+Friend Class WindowsAPI
+    Friend Shared Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (
+        ByVal sysTime As SystemTime)
+End Class
+```
   
-```csharp  
-class Win32API {  
-   [DllImport("Kernel32.dll", CharSet=CharSet.Auto)]  
-   public static extern void GetSystemTime(SystemTime st);  
-}  
-```  
+```csharp
+internal static class WindowsAPI
+{
+   [DllImport("Kernel32.dll", CharSet = CharSet.Auto)]
+   internal static extern void GetSystemTime(SystemTime st);
+}
+```
   
  Notice that the `SystemTime` argument is not typed as a reference argument because `SystemTime` is a class, not a value type. Unlike value types, classes are always passed by reference.  
   

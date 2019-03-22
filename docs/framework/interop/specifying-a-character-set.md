@@ -62,77 +62,85 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
  If you omit the character-set keyword, as is done in the first declaration statement, the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field defaults to the ANSI character set. The second and third statements in the example explicitly specify a character set with a keyword.  
   
-```vb  
-Imports System.Runtime.InteropServices  
-  
-Public Class Win32  
-   Declare Function MessageBoxA Lib "user32.dll"(ByVal hWnd As Integer, _  
-       ByVal txt As String, ByVal caption As String, _  
-       ByVal Typ As Integer) As Integer  
-  
-   Declare Unicode Function MessageBoxW Lib "user32.dll" _  
-       (ByVal hWnd As Integer, ByVal txt As String, _  
-        ByVal caption As String, ByVal Typ As Integer) As Integer  
-  
-   Declare Auto Function MessageBox Lib "user32.dll" _  
-       (ByVal hWnd As Integer, ByVal txt As String, _  
-        ByVal caption As String, ByVal Typ As Integer) As Integer  
-End Class  
-```  
+```vb
+Imports System
+
+Friend Class WindowsAPI
+    Friend Shared Declare Function MessageBoxA Lib "user32.dll" (
+        ByVal hWnd As IntPtr,
+        ByVal lpText As String,
+        ByVal lpCaption As String,
+        ByVal uType As UInteger) As Integer
+
+    Friend Shared Declare Unicode Function MessageBoxW Lib "user32.dll" (
+        ByVal hWnd As IntPtr,
+        ByVal lpText As String,
+        ByVal lpCaption As String,
+        ByVal uType As UInteger) As Integer
+
+    Friend Shared Declare Auto Function MessageBox Lib "user32.dll" (
+        ByVal hWnd As IntPtr,
+        ByVal lpText As String,
+        ByVal lpCaption As String,
+        ByVal uType As UInteger) As Integer
+End Class
+```
   
 ## Specifying a Character Set in C# and C++  
  The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field identifies the underlying character set as ANSI or Unicode. The character set controls how string arguments to a method should be marshaled. Use one of the following forms to indicate the character set:  
   
-```csharp  
-[DllImport("dllname", CharSet=CharSet.Ansi)]  
-[DllImport("dllname", CharSet=CharSet.Unicode)]  
-[DllImport("dllname", CharSet=CharSet.Auto)]  
-```  
+```csharp
+[DllImport("DllName", CharSet = CharSet.Ansi)]
+[DllImport("DllName", CharSet = CharSet.Unicode)]
+[DllImport("DllName", CharSet = CharSet.Auto)]
+```
   
-```cpp  
-[DllImport("dllname", CharSet=CharSet::Ansi)]  
-[DllImport("dllname", CharSet=CharSet::Unicode)]  
-[DllImport("dllname", CharSet=CharSet::Auto)]  
-```  
+```cpp
+[DllImport("DllName", CharSet = CharSet::Ansi)]
+[DllImport("DllName", CharSet = CharSet::Unicode)]
+[DllImport("DllName", CharSet = CharSet::Auto)]
+```
   
  The following example shows three managed definitions of the **MessageBox** function attributed to specify a character set. In the first definition, by its omission, the `CharSet` field defaults to the ANSI character set.  
   
 ```csharp  
-[DllImport("user32.dll")]  
-    public static extern int MessageBoxA(int hWnd, String text,   
-        String caption, uint type);  
-[DllImport("user32.dll", CharSet=CharSet.Unicode)]  
-    public static extern int MessageBoxW(int hWnd, String text,   
-        String caption, uint type);  
-[DllImport("user32.dll", CharSet=CharSet.Auto)]  
-    public static extern int MessageBox(int hWnd, String text,   
-        String caption, uint type);  
+using System;
+using System.Runtime.InteropServices;
+
+internal static class WindowsAPI
+{
+    [DllImport("user32.dll")]
+    internal static extern int MessageBoxA(
+        IntPtr hWnd, string lpText, string lpCaption, uint uType);
+
+    [DllImport("user32.dll", CharSet = CharSet.Unicode)]
+    internal static extern int MessageBoxW(
+        IntPtr hWnd, string lpText, string lpCaption, uint uType);
+
+    [DllImport("user32.dll", CharSet = CharSet.Auto)]
+    internal static extern int MessageBox(
+        IntPtr hWnd, string lpText, string lpCaption, uint uType);
+}
 ```  
   
-```cpp  
-typedef void* HWND;  
-  
-//Can use MessageBox or MessageBoxA.  
-[DllImport("user32")]  
-extern "C" int MessageBox(HWND hWnd,  
-                          String* pText,  
-                          String* pCaption,  
-                          unsigned int uType);  
-  
-//Can use MessageBox or MessageBoxW.  
-[DllImport("user32", CharSet=CharSet::Unicode)]  
-extern "C" int MessageBoxW(HWND hWnd,  
-                          String* pText,  
-                          String* pCaption,  
-                          unsigned int uType);  
-  
-//Must use MessageBox.  
-[DllImport("user32", CharSet=CharSet::Auto)]  
-extern "C" int MessageBox(HWND hWnd,  
-                          String* pText,  
-                          String* pCaption,  
-                          unsigned int uType);  
-```  
+```cpp
+typedef void* HWND;
+
+// Can use MessageBox or MessageBoxA.
+[DllImport("user32")]
+extern "C" int MessageBox(
+    HWND hWnd, String* lpText, String* lpCaption, unsigned int uType);
+
+// Can use MessageBox or MessageBoxW.
+[DllImport("user32", CharSet = CharSet::Unicode)]
+extern "C" int MessageBoxW(
+    HWND hWnd, String* lpText, String* lpCaption, unsigned int uType);
+
+// Must use MessageBox.
+[DllImport("user32", CharSet = CharSet::Auto)]
+extern "C" int MessageBox(
+    HWND hWnd, String* lpText, String* lpCaption, unsigned int uType);
+```
   
 ## See also
 - <xref:System.Runtime.InteropServices.DllImportAttribute>

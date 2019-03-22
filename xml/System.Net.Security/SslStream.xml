@@ -86,7 +86,8 @@
   
  [!code-cpp[NclSslClientSync#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#0)]
  [!code-csharp[NclSslClientSync#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#0)]  
-  
+ [!code-vb[NclSslClientSync#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientSync/VB/clientsync.vb#0)]
+
  ]]></format>
     </remarks>
     <altmember cref="T:System.Net.Security.NegotiateStream" />
@@ -308,6 +309,7 @@
   
  [!code-cpp[NclSslClientSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#4)]
  [!code-csharp[NclSslClientSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#4)]  
+ [!code-vb[NclSslClientSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientSync/VB/clientsync.vb#4)]
   
  ]]></format>
         </remarks>
@@ -392,7 +394,8 @@
   
  [!code-cpp[NclSslClientAsync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#6)]
  [!code-csharp[NclSslClientAsync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#6)]  
-  
+ [!code-vb[NclSslClientAsync#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientAsync/VB/clientasync.vb#6)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1839,15 +1842,19 @@
   
  [!code-cpp[NclSslClientAsync#8](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#8)]
  [!code-csharp[NclSslClientAsync#8](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#8)]  
-  
+ [!code-vb[NclSslClientAsync#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientAsync/VB/clientasync.vb#8)]  
+
  [!code-cpp[NclSslClientAsync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#4)]
- [!code-csharp[NclSslClientAsync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#4)]  
+ [!code-csharp[NclSslClientAsync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#4)] 
+ [!code-vb[NclSslClientAsync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientAsync/VB/clientasync.vb#4)]  
+
   
  The following method is called when the read completes.  
   
  [!code-cpp[NclSslClientAsync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#5)]
  [!code-csharp[NclSslClientAsync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#5)]  
-  
+ [!code-vb[NclSslClientAsync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientAsync/VB/clientasync.vb#5)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2567,7 +2574,8 @@
   
  [!code-cpp[NclSslClientAsync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#5)]
  [!code-csharp[NclSslClientAsync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#5)]  
-  
+ [!code-vb[NclSslClientAsync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientAsync/VB/clientasync.vb#5)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2697,7 +2705,8 @@ Authentication has not occurred.</exception>
   
  [!code-cpp[NclSslClientSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#5)]
  [!code-csharp[NclSslClientSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#5)]  
-  
+ [!code-vb[NclSslClientSync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientSync/VB/clientsync.vb#5)]
+
  ]]></format>
         </remarks>
       </Docs>
@@ -3435,7 +3444,8 @@ Authentication has not occurred.</exception>
   
  [!code-cpp[NclSslClientSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#6)]
  [!code-csharp[NclSslClientSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#6)]  
-  
+ [!code-vb[NclSslClientSync#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientSync/VB/clientsync.vb#6)]
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

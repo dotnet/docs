@@ -136,11 +136,11 @@ Create global fields to hold the paths to the various assets, and global variabl
 * `_predictTagsTsv` has the path to the prediction image data tags tsv file.
 * `_trainImagesFolder` has the path to the images used to train the model.
 * `_predictImagesFolder` has the path to the images to be classified by the trained model.
-* `_inceptionPb` has the path to the pre-trained model to be reused to train the model.
+* `_inceptionPb` has the path to the pre-trained Inception model to be reused to train the model.
 * `_inputImageClassifierZip` has the path where the trained model is loaded from.
 * `_outputImageClassifierZip` has the path where the trained model is saved.
 * `LabelTokey` is the `Label` value mapped to a key.
-* `ImageReal`  is the column containing the predicted label value. 
+* `ImageReal`  is the column containing the predicted image value.
 * `PredictedLabelValue` is the column containing the predicted label value.
 
 Add the following code to the line right above the `Main` method to specify those paths and the other variables:

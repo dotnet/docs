@@ -21,25 +21,25 @@ To understand basics, see [Basic concepts for model training in ML.NET](basic-co
 
 ## Tutorials
 
-[Analyze sentiment using a binary classification model](tutorials/sentiment-analysis.md) shows you how to build an app that determines whether sentiment is positive or negative.
+[Analyze sentiment using a binary classification model](./tutorials/sentiment-analysis.md) shows you how to build an app that determines whether sentiment is positive or negative.
 
-[Classify GitHub issues using a multiclass classification model](tutorials/github-issue-classification.md) shows you how to build an app that determines the Area label for a GitHub issue.
+[Classify GitHub issues using a multiclass classification model](./tutorials/github-issue-classification.md) shows you how to build an app that determines the Area label for a GitHub issue.
 
-[Predict prices using a regression model](tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.
+[Predict prices using a regression model](./tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.
 
-[Classify iris flowers by features](tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set. 
+[Classify iris flowers by features](./tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set. 
 
 ## How to guide
 
-[Build a game match-up list app with Infer.NET and probabilistic programming](how-to-guides/matchup-app-infer-net.md) shows you how to build a simplified version of a match-up app like you'd see in an Xbox game.
+[Build a game match-up list app with Infer.NET and probabilistic programming](./how-to-guides/matchup-app-infer-net.md) shows you how to build a simplified version of a match-up app like you'd see in an Xbox game.
 
 ## Resources
 
-[Machine learning glossary](resources/glossary.md) defines key terminology.
+[Machine learning glossary](./resources/glossary.md) defines key terminology.
 
-[Machine learning tasks](resources/tasks.md) describes tasks, such as classification and anomaly detection. 
+[Machine learning tasks](./resources/tasks.md) describes tasks, such as classification and anomaly detection. 
 
-[Data transforms](resources/transforms.md) describes data preparation capabilities in ML.NET.
+[Data transforms](./resources/transforms.md) describes data preparation capabilities in ML.NET.
 
 
 ## API reference

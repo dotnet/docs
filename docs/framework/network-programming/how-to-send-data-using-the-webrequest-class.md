@@ -25,7 +25,8 @@ The following procedure describes the steps to send data to a server. This proce
     ```  
   
     > [!NOTE]
-    > The .NET Framework provides protocol-specific classes derived from the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes for URIs that begin with *http:*, *https:*, *ftp:*, and *file:*. To access resources by using other protocols, implement protocol-specific classes that derive from `WebRequest` and `WebResponse`. For more information, see [Programming pluggable protocols](programming-pluggable-protocols.md). 
+    > The .NET Framework provides protocol-specific classes derived from the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes for URIs that begin with *http:*, *https:*, *ftp:*, and *file:*.
+    If you need to set or read protocol-specific properties, you must cast your `WebRequest` object to a protocol-specific object type. For more information, see [Programming pluggable protocols](programming-pluggable-protocols.md). 
   
 2.  Set any property values that you need in your `WebRequest` object. For example, to enable authentication, set the `Credentials` property to an instance of the <xref:System.Net.NetworkCredential> class:  
   
@@ -37,17 +38,7 @@ The following procedure describes the steps to send data to a server. This proce
     request.Credentials = CredentialCache.DefaultCredentials  
     ```  
   
-     In most cases, a `WebRequest` object is sufficient to receive data. However, if you need to set protocol-specific properties, you must cast your `WebRequest` object to the protocol-specific object type. For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebRequest>, cast your `WebRequest` object to an `HttpWebRequest` reference. The following code example shows how to set the HTTP-specific <xref:System.Net.HttpWebRequest.UserAgent%2A> property:  
-  
-    ```csharp  
-    ((HttpWebRequest)request).UserAgent = ".NET Framework Example Client";  
-    ```  
-  
-    ```vb  
-    Ctype(request,HttpWebRequest).UserAgent = ".NET Framework Example Client"  
-    ```  
-  
-3.  Specify a protocol method that permits data to be sent with a request, such as the HTTP `POST` method.  
+3.  Specify a protocol method that permits data to be sent with a request, such as the HTTP `POST` method:  
   
     ```csharp  
     request.Method = "POST";  
@@ -57,7 +48,7 @@ The following procedure describes the steps to send data to a server. This proce
     request.Method = "POST"  
     ```  
   
-4.  Set the `ContentLength` property.  
+4.  Set the `ContentLength` property. For example: 
   
     ```csharp  
     request.ContentLength = byteArray.Length;  
@@ -67,7 +58,7 @@ The following procedure describes the steps to send data to a server. This proce
     request.ContentLength = byteArray.Length  
     ```  
   
-5.  Set the `ContentType` property to an appropriate value.  
+5.  Set the `ContentType` property to an appropriate value. For example:
   
     ```csharp  
     request.ContentType = "application/x-www-form-urlencoded";  
@@ -77,7 +68,7 @@ The following procedure describes the steps to send data to a server. This proce
     request.ContentType = "application/x-www-form-urlencoded"  
     ```  
   
-6.  Get the stream that holds request data by calling the <xref:System.Net.WebRequest.GetRequestStream%2A> method.  
+6.  Get the stream that holds request data by calling the <xref:System.Net.WebRequest.GetRequestStream%2A> method. For example:
   
     ```csharp  
     Stream dataStream = request.GetRequestStream ();  
@@ -87,7 +78,7 @@ The following procedure describes the steps to send data to a server. This proce
     Stream dataStream = request.GetRequestStream ()  
     ```  
   
-7.  Write the data to the <xref:System.IO.Stream> object returned by the `GetRequestStream` method.  
+7.  Write the data to the <xref:System.IO.Stream> object returned by the `GetRequestStream` method. For example:
   
     ```csharp  
     dataStream.Write (byteArray, 0, byteArray.Length);  
@@ -97,7 +88,7 @@ The following procedure describes the steps to send data to a server. This proce
     dataStream.Write (byteArray, 0, byteArray.Length)  
     ```  
   
-8.  Close the request stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method.  
+8.  Close the request stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. For example:
   
     ```csharp  
     dataStream.Close ();  
@@ -107,7 +98,7 @@ The following procedure describes the steps to send data to a server. This proce
     dataStream.Close ()  
     ```  
   
-9. Send the request to the server by calling <xref:System.Net.WebRequest.GetResponse%2A>. This method returns an object containing the server's response. The returned <xref:System.Net.WebResponse> object's type is determined by the scheme of the request's URI.  
+9. Send the request to the server by calling <xref:System.Net.WebRequest.GetResponse%2A>. This method returns an object containing the server's response. The returned <xref:System.Net.WebResponse> object's type is determined by the scheme of the request's URI. For example:
   
     ```csharp  
     WebResponse response = request.GetResponse();  
@@ -116,11 +107,10 @@ The following procedure describes the steps to send data to a server. This proce
     ```vb  
     Dim response As WebResponse = request.GetResponse()  
     ```  
-
-    > [!NOTE]
-    >  After you're finished with your <xref:System.Net.WebResponse> object, close it by calling the <xref:System.Net.WebResponse.Close%2A> method. Alternatively, if you've obtained a response stream from the response object, you can close the stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. If you don't close either the response or the stream, your application can run out of server connections and thus become unable to process additional requests.  
   
-10. You can access the properties of your `WebResponse` object or cast it to a protocol-specific instance to read protocol-specific properties. For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebResponse>, cast `WebResponse` to an `HttpWebResponse` reference. The following code example shows how to display the status information sent with a response:  
+10. In most cases, a `WebRequest` object is sufficient to receive data. However, if you need to set or read protocol-specific properties, you must cast your `WebRequest` object to a protocol-specific object type. 
+
+    For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebResponse>, cast your `WebResponse` object to an `HttpWebResponse` reference. The following code example shows how to display the HTTP-specific <xref:System.Net.HttpWebRequest.StatusDescription%2A?displayProperty=nameWithType> property sent with a response:
   
     ```csharp  
     Console.WriteLine (((HttpWebResponse)response).StatusDescription);  
@@ -130,7 +120,7 @@ The following procedure describes the steps to send data to a server. This proce
     Console.WriteLine(CType(response, HttpWebResponse).StatusDescription)  
     ```  
   
-11. To get the stream containing response data sent by the server, call the <xref:System.Net.WebResponse.GetResponseStream%2A> method of your `WebResponse` object.  
+11. To get the stream containing response data sent by the server, call the <xref:System.Net.WebResponse.GetResponseStream%2A> method of your `WebResponse` object. For example:
   
     ```csharp  
     Stream data = response.GetResponseStream;  
@@ -140,7 +130,7 @@ The following procedure describes the steps to send data to a server. This proce
     Dim data As Stream = response.GetResponseStream  
     ```  
   
-12. After you've read the data from the response object, you must either close it with the `WebResponse.Close` method or close the response stream with the `Stream.Close` method. Because the `WebResponse.Close` method calls `Stream.Close` when it closes the response, it's not necessary to call `Close` on both the response and stream objects. However, doing so isn't harmful.
+12. After you've read the data from the response object, you must either close it with the <xref:System.Net.WebResponse.Close%2A?displayProperty=nameWithType> method or close the response stream with the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. Because the `WebResponse.Close` method calls `Stream.Close` when it closes the response, it's not necessary to call `Close` on both the response and stream objects. However, doing so isn't harmful. If you don't close either the response or the stream, your application can run out of server connections and become unable to process additional requests.
   
     ```csharp  
     response.Close();  
@@ -152,6 +142,8 @@ The following procedure describes the steps to send data to a server. This proce
   
 ## Example  
   
+The following code example shows how to create and send a web request to a server and read its response.  
+
 ```csharp  
 using System;  
 using System.IO;  

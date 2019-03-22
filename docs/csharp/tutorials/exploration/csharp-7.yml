@@ -106,12 +106,12 @@ items:
 when inspecting the tuple using reflection at runtime, for example.
 
     In a tuple assignment, you can also specify the names of the fields
-    on the right-hand side of the assignment:
+    on the right-hand side of the assignment: 
 
     [!code-csharp[ImplicitNamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
 
     You can specify names for the fields on both the
-    left and right-hand side of the assignment:
+    left and right-hand side of the assignment: 
 
     [!code-csharp[NamedTupleConflict](~/samples/snippets/csharp/new-in-7/program.cs#07_NamedTupleConflict "Named tuple conflict")]
 

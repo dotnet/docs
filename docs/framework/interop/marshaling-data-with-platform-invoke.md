@@ -49,7 +49,7 @@ The following table lists data types used in the Windows APIs and C-style functi
 |`FLOAT`|`float`|<xref:System.Single?displayProperty=nameWithType>|32 bits|
 |`DOUBLE`|`double`|<xref:System.Double?displayProperty=nameWithType>|64 bits|
 
-For corresponding types in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++, see the [Introduction to the .NET Framework Class Library](../../../docs/standard/class-library-overview.md).
+For corresponding types in Visual Basic, C#, and C++, see the [Introduction to the .NET Framework Class Library](../../standard/class-library-overview.md#system-namespace).
 
 ## PinvokeLib.dll
 

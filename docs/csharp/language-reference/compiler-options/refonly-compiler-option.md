@@ -28,7 +28,7 @@ Reference assemblies include an assembly-level `ReferenceAssembly` attribute. Th
 Reference assemblies further remove metadata (private members) from metadata-only assemblies:
 
 - A reference assembly only has references for what it needs in the API surface. The real assembly may have additional references related to specific implementations. For instance, the reference assembly for `class C { private void M() { dynamic d = 1; ... } }` does not reference any types required for `dynamic`.
-- Private function-members (methods, properties, and events) are removed in cases where their removal doesn't observably impact compilation. If there are no `InternalsVisibleTo` attributes, do the same for internal function-members.
+- Private function-members (methods, properties, and events) are removed in cases where their removal doesn't observably impact compilation. If there are no <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attributes, do the same for internal function-members.
 - But all types (including private or nested types) are kept in reference assemblies. All attributes are kept (even internal ones).
 - All virtual methods are kept. Explicit interface implementations are kept. Explicitly implemented properties and events are kept, as their accessors are virtual (and are therefore kept).
 - All fields of a struct are kept. (This is a candidate for post-C#-7.1 refinement)

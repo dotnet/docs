@@ -158,7 +158,7 @@ internal class DelegateTest {
 ## Default marshaling for value types  
  Most value types, such as integers and floating-point numbers, are [blittable](blittable-and-non-blittable-types.md) and do not require marshaling. Other [non-blittable](blittable-and-non-blittable-types.md) types have dissimilar representations in managed and unmanaged memory and do require marshaling. Still other types require explicit formatting across the interoperation boundary.  
   
- This topic provides the follow information on formatted value types:  
+ This section provides information on the following formatted value types:  
   
 -   [Value Types Used in Platform Invoke](#value-types-used-in-platform-invoke)  
   

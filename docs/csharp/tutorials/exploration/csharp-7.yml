@@ -16,22 +16,17 @@ items:
 - title: Our variable declarations at the assignment location
   durationInMinutes: 2
   content: |
-    The existing syntax that supports `out` parameters has been improved
-    in this version.  
+    The existing syntax that supports `out` parameters has been improved in this version.  
 
-    Previously, you would need to separate the declaration of the out variable
-    and its initialization into two different statements:
+    Previously, you would need to separate the declaration of the out variable and its initialization into two different statements:
 
     [!code-csharp[OutVariableOldStyle](~/samples/snippets/csharp/new-in-7/program.cs#03_OutVariableOldStyle "classic out variable declaration")]
 
-    You can now declare `out` variables in the argument list of a method call,
-    rather than writing a separate declaration statement:
+    You can now declare `out` variables in the argument list of a method call, rather than writing a separate declaration statement:
 
     [!code-csharp[OutVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#01_OutVariableDeclarations "Out variable declarations")]
 
-    You may want to specify the type of the `out` variable for clarity,
-    as shown above. However, the language does support using an implicitly
-    typed local variable:
+    You may want to specify the type of the `out` variable for clarity, as shown above. However, the language does support using an implicitly typed local variable:
 
     [!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#02_OutVarVariableDeclarations "Implicitly typed Out variable")]
 
@@ -40,9 +35,7 @@ items:
     * No need to assign an initial value.
         - By declaring the `out` variable where it is used in a method call, you can't accidentally use it before it is assigned.
 
-    The most common use for this feature is in the `Try` pattern. In this
-    pattern, a method returns a `bool` indicating success or failure and an
-    `out` variable that provides the result if the method succeeds.
+    The most common use for this feature is in the `Try` pattern. In this pattern, a method returns a `bool` indicating success or failure and an `out` variable that provides the result if the method succeeds.
 
     When using the `out` variable declaration, the declared variable "leaks" into the outer scope of the if statement. This allows you to use the variable afterwards:
 
@@ -58,6 +51,8 @@ items:
 - title: Tuples create light-weight data structures
   durationInMinutes: 1
   content: |
+    Put a paragraph before the note in case that's the root cause.
+    
     > [!NOTE]
     > The new tuples features require the <xref:System.ValueTuple> types.
     > You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it

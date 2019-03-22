@@ -122,7 +122,11 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task%601> object and launch a task is by calling the static <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=nameWithType> and <xref:System.Threading.Tasks.TaskFactory%601.StartNew%28System.Func%7B%600%7D%29?displayProperty=nameWithType> methods. The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
+ This constructor should only be used in advanced scenarios where it is required that the creation and starting of the task is separated.  
+  
+ Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task%601> object and launch a task is by calling the static <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=nameWithType> and <xref:System.Threading.Tasks.TaskFactory%601.StartNew%28System.Func%7B%600%7D%29?displayProperty=nameWithType> methods.  
+  
+ If a task with no action is needed just for the consumer of an API to have something to await, a <xref:System.Threading.Tasks.TaskCompletionSource%601> should be used.  
   
    
   

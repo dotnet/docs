@@ -211,7 +211,7 @@ In some circumstances, a fixed-length character buffer must be passed into unman
 
 The solution is to pass a <xref:System.Text.StringBuilder> buffer as the argument instead of a <xref:System.String>. A `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaler provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` does not.
 
-For example, the Microsoft Windows API `GetWindowText` function (defined in Windows.h) is a fixed-length character buffer that must be passed into unmanaged code to be manipulated. `LpString` points to a caller-allocated buffer of size `nMaxCount`. The caller is expected to allocate the buffer and set the `nMaxCount` argument to the size of the allocated buffer. The following code shows the `GetWindowText` function declaration as defined in Windows.h.
+For example, the Windows [`GetWindowText`](/windows/desktop/api/winuser/nf-winuser-getwindowtextw) API function (defined in *Windows.h*) requires that the caller pass a fixed-length character buffer to which the function writes the window's text. `LpString` points to a caller-allocated buffer of size `nMaxCount`. The caller is expected to allocate the buffer and set the `nMaxCount` argument to the size of the allocated buffer. The following example shows the `GetWindowText` function declaration as defined in *Windows.h*.
 
 ```cpp
 int GetWindowText(

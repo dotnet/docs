@@ -54,20 +54,9 @@ items:
     Put a paragraph before the note in case that's the root cause.
     
     > [!NOTE]
-    > The new tuples features require the <xref:System.ValueTuple> types.
-    > You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it
-    > on platforms that do not include the types.
+    > The new tuples features require the <xref:System.ValueTuple> types. You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it on platforms that do not include the types.
     >
-    > This is similar to other language features that rely on types
-    > delivered in the framework. Examples include `async` and `await`
-    > relying on the `INotifyCompletion` interface, and LINQ relying
-    > on `IEnumerable<T>`. However, the delivery mechanism is changing
-    > as .NET is becoming more platform independent. The .NET Framework
-    > may not always ship on the same cadence as the language compiler. When new language
-    > features rely on new types, those types will be available as NuGet packages when
-    > the language features ship. As these new types are added to the .NET Standard
-    > Library and delivered as part of the framework, the NuGet package requirement will
-    > be removed.
+    > This is similar to other language features that rely on types delivered in the framework. Examples include `async` and `await` relying on the `INotifyCompletion` interface, and LINQ relying on `IEnumerable<T>`. However, the delivery mechanism is changing as .NET is becoming more platform independent. The .NET Framework may not always ship on the same cadence as the language compiler. When new language features rely on new types, those types will be available as NuGet packages when the language features ship. As these new types are added to the .NET Standard Library and delivered as part of the framework, the NuGet package requirement will be removed.
 
     C# provides a rich syntax for classes and structs that explains
     your design intent. But sometimes that rich syntax requires extra
@@ -78,52 +67,31 @@ items:
     The fields are not validated, and you cannot define your own methods
 
     > [!NOTE]
-    > Tuples were available before C# 7.0,
-    > but they were inefficient and had no language support.
-    > This meant that tuple elements could only be referenced as
-    > `Item1`, `Item2` and so on. C# 7.0 introduces language support for tuples,
-    > which enables semantic names for the fields of a tuple using new,
-    > more efficient tuple types.
+    > Tuples were available before C# 7.0, but they were inefficient and had no language support. This meant that tuple elements could only be referenced as `Item1`, `Item2` and so on. C# 7.0 introduces language support for tuples, which enables semantic names for the fields of a tuple using new more efficient tuple types.
 
     You can create a tuple by assigning a value to each member:
 
     [!code-csharp[UnnamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#04_UnnamedTuple "Unnamed tuple")]
 
-    That assignment creates a tuple whose members are `Item1` and `Item2`,
-    which you can use in the same way as <xref:System.Tuple>
-    You can change the syntax to create a tuple that provides semantic
-    names to each of the members of the tuple:
+    That assignment creates a tuple whose members are `Item1` and `Item2`, which you can use in the same way as <xref:System.Tuple> You can change the syntax to create a tuple that provides semantic names to each of the members of the tuple:
 
     [!code-csharp[NamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
-    The `namedLetters` tuple contains fields referred to as `Alpha` and
-    `Beta`. Those names exist only at compile time and are not preserved
-when inspecting the tuple using reflection at runtime, for example.
+    The `namedLetters` tuple contains fields referred to as `Alpha` and `Beta`. Those names exist only at compile time and are not preserved when inspecting the tuple using reflection at runtime, for example.
 
-    In a tuple assignment, you can also specify the names of the fields
-    on the right-hand side of the assignment: 
+    In a tuple assignment, you can also specify the names of the fields on the right-hand side of the assignment: 
 
     [!code-csharp[ImplicitNamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
 
-    You can specify names for the fields on both the
-    left and right-hand side of the assignment: 
+    You can specify names for the fields on both the left and right-hand side of the assignment: 
 
     [!code-csharp[NamedTupleConflict](~/samples/snippets/csharp/new-in-7/program.cs#07_NamedTupleConflict "Named tuple conflict")]
 
-    The line above generates a warning, `CS8123`, telling you that the names on the right
-    side of the assignment, `Alpha` and `Beta`, are ignored because they conflict
-    with the names on the left side, `First` and `Second`.
+    The line above generates a warning, `CS8123`, telling you that the names on the right side of the assignment, `Alpha` and `Beta`, are ignored because they conflict with the names on the left side, `First` and `Second`.
 
-    The examples above show the basic syntax to declare tuples. Tuples are
-    most useful as return types for `private` and `internal` methods. Tuples
-    provide a simple syntax for those methods to return multiple discrete values:
-    You save the work of authoring a `class` or a `struct` that
-    defines the type returned. There is no need to create a new type.
+    The examples above show the basic syntax to declare tuples. Tuples are most useful as return types for `private` and `internal` methods. Tuples provide a simple syntax for those methods to return multiple discrete values: You save the work of authoring a `class` or a `struct` that defines the type returned. There is no need to create a new type.
 
-    Creating a tuple is more efficient and more productive.
-    It has a simpler, lightweight syntax to define a data structure that carries
-    more than one value. The example method below returns the minimum and maximum
-    values found in a sequence of integers:
+    Creating a tuple is more efficient and more productive. It has a simpler, lightweight syntax to define a data structure that carries more than one value. The example method below returns the minimum and maximum values found in a sequence of integers:
 
     [!code-csharp[TupleReturningMethod](~/samples/snippets/csharp/new-in-7/program.cs#08_TupleReturningMethod "Tuple returning method")]
 
@@ -133,15 +101,11 @@ when inspecting the tuple using reflection at runtime, for example.
     * You do not need to create new type.
     * The language enhancements removes the need to call the <xref:System.Tuple.Create``1(``0)?displayProperty=nameWithType> methods.
 
-    The declaration for the method provides the names for the fields of the
-    tuple that is returned. When you call the method, the return value is a 
-    tuple whose fields are `Max` and `Min`:
+    The declaration for the method provides the names for the fields of the tuple that is returned. When you call the method, the return value is a  tuple whose fields are `Max` and `Min`:
 
     [!code-csharp[CallingTupleMethod](~/samples/snippets/csharp/new-in-7/program.cs#09_CallingTupleMethod "Calling a tuple returning method")]
 
-    There may be times when you want to unpackage the members of a tuple that
-    were returned from a method.  You can do that by declaring separate variables
-    for each of the values in the tuple. This is called *deconstructing* the tuple:
+    There may be times when you want to unpackage the members of a tuple that were returned from a method.  You can do that by declaring separate variables for each of the values in the tuple. This is called *deconstructing* the tuple:
 
     [!code-csharp[CallingWithDeconstructor](~/samples/snippets/csharp/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
 

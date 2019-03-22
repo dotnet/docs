@@ -27,7 +27,7 @@ Interop marshaling operates on rules that dictate how data associated with metho
   
 ### Unmanaged signature  
   
-```  
+```cpp  
 BSTR MethodOne (BSTR b) {  
      return b;  
 }  
@@ -95,7 +95,7 @@ void m5([MarshalAs(UnmanagedType.FunctionPtr)] ref Delegate d);
   
 ### Type library representation  
   
-```  
+```cpp  
 importlib("mscorlib.tlb");  
 interface DelegateTest : IDispatch {  
 [id(…)] HRESULT m1([in] _Delegate* d);  
@@ -217,7 +217,7 @@ public struct Rect {
   
  When marshaled to unmanaged code, these formatted types are marshaled as C-style structures. This provides an easy way of calling an unmanaged API that has structure arguments. For example, the `POINT` and `RECT` structures can be passed to the Microsoft Windows API **PtInRect** function as follows:  
   
-```  
+```cpp  
 BOOL PtInRect(const RECT *lprc, POINT pt);  
 ```  
   
@@ -278,7 +278,7 @@ End Class
   
  The **GetSystemTime** function is defined as follows:  
   
-```  
+```cpp  
 void GetSystemTime(SYSTEMTIME* SystemTime);  
 ```  
   
@@ -329,7 +329,7 @@ public class Point {
   
  **Type library representation**  
   
-```  
+```cpp  
 typedef struct tagPoint {  
    int x;  
    int y;  
@@ -382,7 +382,7 @@ interface _Graphics {
   
 #### Type library representation  
   
-```  
+```cpp  
 typedef double DATE;  
 typedef DWORD OLE_COLOR;  
   
@@ -424,7 +424,7 @@ public interface IValueTypes {
   
 #### Type library representation  
   
-```  
+```cpp  
 […]  
 interface IValueTypes : IDispatch {  
    HRESULT M1([in] DATE d);  

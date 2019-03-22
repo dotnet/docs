@@ -61,14 +61,14 @@ Deep learning models are trained by using large sets of [labeled data](https://e
 Image Classification is a common Machine Learning task which allows us to automatically classify images into multiple categories e.g. take an image and help us detect whether there is a human face in or not. Cats vs. dogs etc. Or as in the following images, pizza or teddy bear or toaster?
 
 ![pizza image](./media/image-classification/220px-Pepperoni_pizza.jpg)
-![teddy bear image](./media/image-classification/Nalle_-_a_small_brown_teddy_bear.jpg)
+![teddy bear image](./media/image-classification/119px-Nalle_-_a_small_brown_teddy_bear.jpg)
 ![toaster image](./media/image-classification/193px-Broodrooster.jpg)
 
 >[!Note]
 > The preceding images belong to Wikimedia Commons and are attributed as follows:
 >
 > * "220px-Pepperoni_pizza.jpg" Public Domain, https://commons.wikimedia.org/w/index.php?curid=79505,
-> * "Nalle_-_a_small_brown_teddy_bear.jpg" By [Jonik](https://commons.wikimedia.org/wiki/User:Jonik) - Self-photographed, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=48166.
+> * "119px-Nalle_-_a_small_brown_teddy_bear.jpg" By [Jonik](https://commons.wikimedia.org/wiki/User:Jonik) - Self-photographed, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=48166.
 > * "193px-Broodrooster.jpg" By [M.Minderhoud](https://nl.wikipedia.org/wiki/Gebruiker:Michiel1972) - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=27403
 
 Image citations are following.

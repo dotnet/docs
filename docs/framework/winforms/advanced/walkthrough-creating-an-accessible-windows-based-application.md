@@ -131,7 +131,7 @@ Creating an accessible application has important business implications. Many gov
     |MenuItem|Name|exitApp|  
     ||Text|E&xit|  
   
-     ![Pizza Order Form](./media/vbpizzaorderform.gif "vbPizzaOrderForm")  
+     ![Screenshot that shows the pizza order form.](./media/walkthrough-creating-an-accessible-windows-based-application/visual-basic-pizza-order-form.gif)  
 Your form will look something like the following:  
   
 ## Supporting High Contrast Mode  

@@ -15,9 +15,9 @@ You can draw wrapped text in a rectangle by using the <xref:System.Drawing.Graph
   
  You can also draw wrapped text in a rectangle by using the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> overloaded method of the <xref:System.Windows.Forms.TextRenderer> that takes a <xref:System.Drawing.Rectangle> and a <xref:System.Windows.Forms.TextFormatFlags> parameter. You will also use a <xref:System.Drawing.Color> and a <xref:System.Drawing.Font>.  
   
- The following illustration shows the output of text drawn in the rectangle when you use the <xref:System.Drawing.Graphics.DrawString%2A> method.  
+ The following illustration shows the output of text drawn in the rectangle when you use the <xref:System.Drawing.Graphics.DrawString%2A> method:
   
- ![Fonts Text](./media/csfontstext2.png "csfontstext2")  
+ ![Screenshot that shows the output when using DrawString method.](./media/how-to-draw-wrapped-text-in-a-rectangle/drawstring-method-font-text.png)  
   
 ### To draw wrapped text in a rectangle with GDI+  
   

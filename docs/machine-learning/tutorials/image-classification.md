@@ -60,9 +60,16 @@ Deep learning models are trained by using large sets of [labeled data](https://e
 
 Image Classification is a common Machine Learning task which allows us to automatically classify images into multiple categories e.g. take an image and help us detect whether there is a human face in or not. Cats vs. dogs etc. Or as in the following images, pizza or teddy bear or toaster?
 
-![pizza image](./media/TransferLearningTF/pizza.jpg)
-![teddy bear image](./media/TransferLearningTF/teddy2.jpg)
-![toaster image](./media/TransferLearningTF/toaster.jpg)
+![pizza image](./media/image-classification/220px-Pepperoni_pizza.jpg)
+![teddy bear image](./media/image-classification/Nalle_-_a_small_brown_teddy_bear.jpg)
+![toaster image](./media/image-classification/toaster.jpg)
+
+>[!Note]
+> The preceding images belong to Wikimedia Commons and are attributed as follows:
+>
+> * "220px-Pepperoni_pizza.jpg" Public Domain, https://commons.wikimedia.org/w/index.php?curid=79505,
+> * "Nalle_-_a_small_brown_teddy_bear.jpg" By [Jonik](https://commons.wikimedia.org/wiki/User:Jonik) - Self-photographed, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=48166.
+> * "193px-Broodrooster.jpg" By [M.Minderhoud](https://nl.wikipedia.org/wiki/Gebruiker:Michiel1972) - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=27403
 
 Image citations are following.
 
@@ -73,6 +80,12 @@ Your image classification model reuses the [Inception model](https://storage.goo
 The `Inception v3 model` can be classified as a [deep convolutional neural network](https://en.wikipedia.org/wiki/Convolutional_neural_network) and can achieve reasonable performance on hard visual recognition tasks, matching or exceeding human performance in some domains. The model/algorithm was developed by multiple researchers and based on the original paper: ["Rethinking the Inception Architecture for Computer Vision” by Szegedy, et. al.](https://arxiv.org/abs/1512.00567)
 
 Because the `Inception model` has already been pre trained on thousands of different images, it contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. The lower image feature layers recognize simple features (such as edges) and the higher layers recognize more complex features (such as shapes). You train the final layer against a much smaller set of data because you're starting with a pre trained model that already understands how to classify images. As your model allows you to classify more than two categories, this is an example of a [multi-class classifier](../resources/tasks.md#multiclass-classification).
+
+`TensorFlow` is a popular deep learning and machine learning toolkit that enables training deep neural networks (and general numeric computations), and is implemented as a `transformer` in ML.NET. For this tutorial, it's used to reuse the `Inception model`.
+
+As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET Core or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library which allows you to write code that loads an existing trained `TensorFlow` model file for scoring.  
+
+![TensorFlow transform ML.NET Arch diagram](./media/image-classification/tensorflow-mlnet.png)
 
  Since this is a Multi-class classification problem, you're going to retrain the final layer of that model with a `Logistic regression` algorithm using a set of four categories:
 
@@ -136,7 +149,7 @@ Create global fields to hold the paths to the various assets, and global variabl
 * `_predictTagsTsv` has the path to the prediction image data tags tsv file.
 * `_trainImagesFolder` has the path to the images used to train the model.
 * `_predictImagesFolder` has the path to the images to be classified by the trained model.
-* `_inceptionPb` has the path to the pre-trained Inception model to be reused to train the model.
+* `_inceptionPb` has the path to the pre-trained Inception model to be reused to re-train your model.
 * `_inputImageClassifierZip` has the path where the trained model is loaded from.
 * `_outputImageClassifierZip` has the path where the trained model is saved.
 * `LabelTokey` is the `Label` value mapped to a key.
@@ -302,13 +315,7 @@ Add these image transforms as the next lines of code:
 
 [!code-csharp[ImageTransforms](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ImageTransforms)]
 
-`TensorFlow` is a popular deep learning and machine learning toolkit that enables training deep neural networks (and general numeric computations), and is implemented as a `transformer` in ML.NET. For this tutorial, it's used to reuse the `Inception model`.
-
-As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET Core or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library which allows you to write code that loads an existing trained `TensorFlow` model file for scoring.  
-
-![TensorFlow transform ML.NET Arch diagram](./media/TransferLearningTF/TF-diagram.png)
-
-The `TensorFlowTransform` extracts specified outputs (the model's image features `softmax2_pre_activation`), and scores a dataset using the pre-trained `TensorFlow` model.
+The `TensorFlowTransform` extracts specified outputs (the `Inception model`'s image features `softmax2_pre_activation`), and scores a dataset using the pre-trained `TensorFlow` model.
 
 `softmax2_pre_activation` assists the model with determining which class the images belongs to. `softmax2_pre_activation` returns a probability for each of the categories for an image, and all of those probabilities must add up to 1. It assumes that an image will belong to only one category, as shown in the following example:
 
@@ -319,7 +326,7 @@ The `TensorFlowTransform` extracts specified outputs (the model's image features
 | `Teddy`       |  0.06         |
 | `Toaster`     |  0.005        |
 
-Append the `TensorFlowTransform` to the `estimator` with the following line of code: 
+Append the `TensorFlowTransform` to the `estimator` with the following line of code:
 
 [!code-csharp[ScoreTensorFlowModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ScoreTensorFlowModel)]
 
@@ -329,7 +336,7 @@ To add the learning algorithm, call the `mlContext.MulticlassClassification.Trai
 
 [!code-csharp[AddTrainer](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#AddTrainer)]
 
-You also need to map the predictedlabel to the predictedlabelvalue:
+You also need to map the `predictedlabel` to the `predictedlabelvalue`:
 
 [!code-csharp[MapValueToKey2](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#MapValueToKey2)]
 
@@ -392,9 +399,9 @@ First, load the model that you saved previously with the following code:
 
 [!code-csharp[LoadModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#LoadModel)]
 
-Call the `ImageNetData.ReadFromCsv()` method to create an `INumerable<ImageNetData>` class that contains the fully qualified path for each `ImagePath`. You need that file path to pair your data and prediction results. You also need to convert the `INumerable<ImageNetData>` class to an `IDataView` that you will use to predict. Add the following code as the next two lines in the `ClassifyImages()` method:
+Call the `ReadFromTsv()` method to create an `INumerable<ImageData>` class that contains the fully qualified path for each `ImagePath`. You need that file path to pair your data and prediction results. You also need to convert the `INumerable<ImageData>` class to an `IDataView` that you will use to predict. Add the following code as the next two lines in the `ClassifyImages()` method:
 
-[!code-csharp[ReadFromCSV](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ReadFromCSV)]
+[!code-csharp[ReadFromTSV](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ReadFromTSV)]
 
 As you did previously with the training image data, predict the category of the test image data using the [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method. Add the following code to the `ClassifyImages()` method for the predictions and to convert the `predictions` `IDataView` into an `IEnumerable` for pairing and display:
 

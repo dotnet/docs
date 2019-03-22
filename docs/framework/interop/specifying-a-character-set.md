@@ -27,7 +27,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
      Provides 2-byte character Unicode formatting, distinguished by a "W" appended to the entry-point name. Calls to **MessageBoxW** always marshal strings in Unicode format, as is common on Windows NT, Windows 2000, and Windows XP platforms.  
   
 ## String Marshaling and Name Matching  
- The **CharSet** field accepts the following values:  
+ The `CharSet` field accepts the following values:  
   
  <xref:System.Runtime.InteropServices.CharSet.Ansi> (default value)  
   
@@ -37,9 +37,9 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
 -   Name matching  
   
-     When the <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling?displayProperty=nameWithType> field is **true**, as it is by default in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], platform invoke searches only for the name you specify. For example, if you specify **MessageBox**, platform invoke searches for **MessageBox** and fails when it cannot locate the exact spelling.  
+     When the <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling?displayProperty=nameWithType> field is `true`, as it is by default in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], platform invoke searches only for the name you specify. For example, if you specify **MessageBox**, platform invoke searches for **MessageBox** and fails when it cannot locate the exact spelling.  
   
-     When the **ExactSpelling** field is **false**, as it is by default in C++ and C#, platform invoke searches for the unmangled alias first (**MessageBox**), then the mangled name (**MessageBoxA**) if the unmangled alias is not found. Notice that ANSI name-matching behavior differs from Unicode name-matching behavior.  
+     When the `ExactSpelling` field is `false`, as it is by default in C++ and C#, platform invoke searches for the unmangled alias first (**MessageBox**), then the mangled name (**MessageBoxA**) if the unmangled alias is not found. Notice that ANSI name-matching behavior differs from Unicode name-matching behavior.  
   
  <xref:System.Runtime.InteropServices.CharSet.Unicode>  
   
@@ -49,9 +49,9 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
 -   Name matching  
   
-     When the **ExactSpelling** field is **true**, as it is by default in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], platform invoke searches only for the name you specify. For example, if you specify **MessageBox**, platform invoke searches for **MessageBox** and fails if it cannot locate the exact spelling.  
+     When the `ExactSpelling` field is `true`, as it is by default in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], platform invoke searches only for the name you specify. For example, if you specify **MessageBox**, platform invoke searches for **MessageBox** and fails if it cannot locate the exact spelling.  
   
-     When the **ExactSpelling** field is **false**, as it is by default in C++ and C#, platform invoke searches for the mangled name first (**MessageBoxW**), then the unmangled alias (**MessageBox**) if the mangled name is not found. Notice that Unicode name-matching behavior differs from ANSI name-matching behavior.  
+     When the `ExactSpelling` field is `false`, as it is by default in C++ and C#, platform invoke searches for the mangled name first (**MessageBoxW**), then the unmangled alias (**MessageBox**) if the mangled name is not found. Notice that Unicode name-matching behavior differs from ANSI name-matching behavior.  
   
  <xref:System.Runtime.InteropServices.CharSet.Auto>  
   
@@ -95,7 +95,7 @@ End Class
 [DllImport("dllname", CharSet=CharSet::Auto)]  
 ```  
   
- The following example shows three managed definitions of the **MessageBox** function attributed to specify a character set. In the first definition, by its omission, the **CharSet** field defaults to the ANSI character set.  
+ The following example shows three managed definitions of the **MessageBox** function attributed to specify a character set. In the first definition, by its omission, the `CharSet` field defaults to the ANSI character set.  
   
 ```csharp  
 [DllImport("user32.dll")]  

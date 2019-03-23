@@ -15,9 +15,9 @@ ms.assetid: 368b8d0f-dc5e-4469-a8b8-b2adbf5dd800
 # How to: Request data by using the WebRequest class
 The following procedure describes the steps to request a resource, such as a Web page or a file, from a server. The resource must be identified by a URI.  
   
-### To request data from a host server  
+## To request data from a host server  
   
-1.  Create a <xref:System.Net.WebRequest> instance by calling <xref:System.Net.WebRequest.Create%2A> with the URI of the resource.  
+1.  Create a <xref:System.Net.WebRequest> instance by calling <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> with the URI of a resource. For example: 
   
     ```csharp  
     WebRequest request = WebRequest.Create("http://www.contoso.com/");  
@@ -28,9 +28,10 @@ The following procedure describes the steps to request a resource, such as a Web
     ```  
   
     > [!NOTE]
-    >  The .NET Framework provides protocol-specific classes derived from the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes for URIs that begin with *http:*, *https:*, *ftp:*, and *file:*. To access resources by using other protocols, implement protocol-specific classes that derive from `WebRequest` and `WebResponse`. For more information, see [Programming pluggable protocols](programming-pluggable-protocols.md).  
+    > The .NET Framework provides protocol-specific classes derived from the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes for URIs that begin with *http:*, *https:*, *ftp:*, and *file:*.
+    If you need to set or read protocol-specific properties, you must cast your `WebRequest` object to a protocol-specific object type. For more information, see [Programming pluggable protocols](programming-pluggable-protocols.md). 
   
-2.  Set any property values that you need in your `WebRequest` object. For example, to enable authentication, set the `Credentials` property to an instance of the <xref:System.Net.NetworkCredential> class.  
+2.  Set any property values that you need in your `WebRequest` object. For example, to enable authentication, set the `Credentials` property to an instance of the <xref:System.Net.NetworkCredential> class:  
   
     ```csharp  
     request.Credentials = CredentialCache.DefaultCredentials;  
@@ -40,17 +41,7 @@ The following procedure describes the steps to request a resource, such as a Web
     request.Credentials = CredentialCache.DefaultCredentials  
     ```  
   
-     In most cases, a `WebRequest` object is sufficient to receive data. However, if you need to set protocol-specific properties, you must cast your `WebRequest` object to the protocol-specific object type. For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebRequest>, cast your `WebRequest` object to an `HttpWebRequest` reference. The following code example shows how to set the HTTP-specific <xref:System.Net.HttpWebRequest.UserAgent%2A> property.  
-  
-    ```csharp  
-    ((HttpWebRequest)request).UserAgent = ".NET Framework Example Client";  
-    ```  
-  
-    ```vb  
-    Ctype(request,HttpWebRequest).UserAgent = ".NET Framework Example Client"  
-    ```  
-  
-3.  To send the request to the server, call the <xref:System.Net.HttpWebRequest.GetResponse%2A> method. The actual type of the returned `WebResponse` object is determined by the scheme of the requested URI.  
+3.  Send the request to the server by calling <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType>. This method returns an object containing the server's response. The returned <xref:System.Net.WebResponse> object's type is determined by the scheme of the request's URI. For example:
   
     ```csharp  
     WebResponse response = request.GetResponse();  
@@ -60,10 +51,9 @@ The following procedure describes the steps to request a resource, such as a Web
     Dim response As WebResponse = request.GetResponse()  
     ```  
   
-    > [!NOTE]
-    >  After you're finished with your <xref:System.Net.WebResponse> object, close it by calling the <xref:System.Net.WebResponse.Close%2A> method. Alternatively, if you've obtained a response stream from the response object, you can close the stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. If you don't close either the response or the stream, your application can run out of server connections and thus become unable to process additional requests.  
-  
-4.  You can access the properties of your `WebResponse` object or cast it to a protocol-specific instance to read protocol-specific properties. For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebResponse>, cast `WebResponse` to an `HttpWebResponse` reference. The following code example shows how to display the status information sent with a response:  
+4.  You can access the properties of your `WebResponse` object or cast it to a protocol-specific instance to read protocol-specific properties. 
+
+    For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebResponse>, cast your `WebResponse` object to an `HttpWebResponse` reference. The following code example shows how to display the HTTP-specific <xref:System.Net.HttpWebRequest.StatusDescription%2A?displayProperty=nameWithType> property sent with a response:
   
     ```csharp  
     Console.WriteLine (((HttpWebResponse)response).StatusDescription);  
@@ -73,7 +63,7 @@ The following procedure describes the steps to request a resource, such as a Web
     Console.WriteLine(CType(response,HttpWebResponse).StatusDescription)  
     ```  
   
-5.  To get the stream containing response data sent by the server, use the <xref:System.Net.HttpWebResponse.GetResponseStream%2A> method of your `WebResponse` object:  
+5.  To get the stream containing response data sent by the server, call the <xref:System.Net.WebResponse.GetResponseStream%2A?displayProperty=nameWithType> method of your `WebResponse` object. For example:  
   
     ```csharp  
     Stream dataStream = response.GetResponseStream();  
@@ -83,7 +73,7 @@ The following procedure describes the steps to request a resource, such as a Web
     Dim dataStream As Stream = response.GetResponseStream()  
     ```  
   
-6.  After you've read the data from the `WebResonse` object, you must either close the response stream with the `Stream.Close` method or close the response object with the `WebResponse.Close` method. Because the `WebResponse.Close` method calls `Stream.Close` when it closes the response, it's not necessary to call `Close` on both the stream and response objects. However, doing so isn't harmful.
+6.  After you've read the data from the response object, either close it with the <xref:System.Net.WebResponse.Close%2A?displayProperty=nameWithType> method or close the response stream with the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. If you don't close either the response or the stream, your application can run out of server connections and become unable to process additional requests. Because the `WebResponse.Close` method calls `Stream.Close` when it closes the response, it's not necessary to call `Close` on both the response and stream objects, although doing so isn't harmful. For example:
   
     ```csharp  
     response.Close();  
@@ -94,6 +84,8 @@ The following procedure describes the steps to request a resource, such as a Web
     ```  
   
 ## Example  
+
+The following code example shows how to create a request to a web server and read the data in its response:  
   
 ```csharp  
 using System;  
@@ -128,7 +120,7 @@ namespace Examples.System.Net
             // Display the content.  
             Console.WriteLine(responseFromServer);  
 
-            // Clean up the streams and the response.  
+            // Clean up the response.  
             reader.Close();  
             response.Close();  
         }  
@@ -169,7 +161,7 @@ Namespace Examples.System.Net
             ' Display the content.  
             Console.WriteLine(responseFromServer)  
 
-            ' Clean up the streams and the response.  
+            ' Clean up the response.  
             reader.Close()  
             response.Close() 
 

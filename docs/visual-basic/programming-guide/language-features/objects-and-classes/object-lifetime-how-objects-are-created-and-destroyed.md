@@ -64,11 +64,11 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
   
  When an instance of a derived class is created, the `Sub New` constructor of the base class executes first, followed by constructors in derived classes. This happens because the first line of code in a `Sub New` constructor uses the syntax `MyBase.New()`to call the constructor of the class immediately above itself in the class hierarchy. The `Sub New` constructor is then called for each class in the class hierarchy until the constructor for the base class is reached. At that point, the code in the constructor for the base class executes, followed by the code in each constructor in all derived classes and the code in the most derived classes is executed last.  
   
- ![Constructors and Inheritance](../../../../visual-basic/programming-guide/language-features/objects-and-classes/media/vaconstructorsinheritance.gif "vaConstructorsInheritance")  
+ ![Screenshot showing class hierarchy constructors and inheritance.](./media/object-lifetime-how-objects-are-created-and-destroyed/subnew-constructor-inheritance.gif)  
   
  When an object is no longer needed, the CLR calls the <xref:System.Object.Finalize%2A> method for that object before freeing its memory. The <xref:System.Object.Finalize%2A> method is called a `destructor` because it performs cleanup tasks, such as saving state information, closing files and connections to databases, and other tasks that must be done before releasing the object.  
   
- ![Constructors Inheritance2](../../../../visual-basic/programming-guide/language-features/objects-and-classes/media/vaconstructorsinheritance_2.gif "vaConstructorsInheritance_2")  
+ ![Screenshot showing the Finalize method destructor.](./media/finalize-method-destructor.gif)  
   
 ## IDisposable Interface  
  Class instances often control resources not managed by the CLR, such as Windows handles and database connections. These resources must be disposed of in the `Finalize` method of the class, so that they will be released when the object is destroyed by the garbage collector. However, the garbage collector destroys objects only when the CLR requires more free memory. This means that the resources may not be released until long after the object goes out of scope.  

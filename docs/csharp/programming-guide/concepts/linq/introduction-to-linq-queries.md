@@ -26,7 +26,7 @@ A *query* is an expression that retrieves data from a data source. Queries are u
   
  The following illustration shows the complete query operation. In [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] the execution of the query is distinct from the query itself; in other words you have not retrieved any data just by creating a query variable.  
   
- ![Complete LINQ Query Operation](../../../../csharp/programming-guide/concepts/linq/media/linq_query.png "LINQ_Query")  
+ ![Diagram of the complete LINQ query operation.](./media/linq-query-complete-operation.png)  
   
 ## The Data Source  
  In the previous example, because the data source is an array, it implicitly supports the generic <xref:System.Collections.Generic.IEnumerable%601> interface. This fact means it can be queried with [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]. A query is executed in a `foreach` statement, and `foreach` requires <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. Types that support <xref:System.Collections.Generic.IEnumerable%601> or a derived interface such as the generic <xref:System.Linq.IQueryable%601> are called *queryable types*.  

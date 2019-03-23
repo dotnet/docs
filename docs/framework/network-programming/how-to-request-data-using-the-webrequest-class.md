@@ -53,7 +53,7 @@ The following procedure describes the steps to request a resource, such as a Web
   
 4.  You can access the properties of your `WebResponse` object or cast it to a protocol-specific instance to read protocol-specific properties. 
 
-    For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebResponse>, cast your `WebResponse` object to an `HttpWebResponse` reference. The following code example shows how to display the HTTP-specific <xref:System.Net.HttpWebRequest.StatusDescription%2A?displayProperty=nameWithType> property sent with a response:
+    For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebResponse>, cast your `WebResponse` object to an `HttpWebResponse` reference. The following code example shows how to display the HTTP-specific <xref:System.Net.HttpWebResponse.StatusDescription%2A?displayProperty=nameWithType> property sent with a response:
   
     ```csharp  
     Console.WriteLine (((HttpWebResponse)response).StatusDescription);  

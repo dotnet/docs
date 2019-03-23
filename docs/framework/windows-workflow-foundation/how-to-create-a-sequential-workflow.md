@@ -143,7 +143,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
      The following example illustrates the completed workflow:  
   
-     ![Screenshot that shows a completed sequential workflow.](./media/how-to-create-a-sequential-workflow/complete-sequential-workflow.jpg)  
+     ![Screenshot that shows the completed sequential workflow.](./media/how-to-create-a-sequential-workflow/complete-sequential-workflow.jpg)  
   
 ### To build the workflow  
   

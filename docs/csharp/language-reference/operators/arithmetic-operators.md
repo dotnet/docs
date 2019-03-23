@@ -36,7 +36,7 @@ You can use the following operators to perform arithmetic operations with numeri
 
 Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types. The `++`, `--`, `+`, and `-` operators also support operands of an [enum](../keywords/enum.md) type.
 
-## ++ operator
+## Increment operator ++
 
 The unary increment operator `++` increments its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../../csharp/programming-guide/indexers/index.md) access.
 
@@ -54,7 +54,7 @@ The result of `++x` is the value of `x` *after* the operation, as the following 
 
 [!code-csharp-interactive[prefix increment](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#PrefixIncrement)]
 
-## -- operator
+## Decrement operator --
 
 The unary decrement operator `--` decrements its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../../csharp/programming-guide/indexers/index.md) access.
 
@@ -72,7 +72,7 @@ The result of `--x` is the value of `x` *after* the operation, as the following 
 
 [!code-csharp-interactive[prefix decrement](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#PrefixDecrement)]
 
-## Unary + and - operators
+## Unary plus and minus operators
 
 The unary `+` operator returns the value of its operand. The unary `-` operator computes the numeric negation of its operand.
 
@@ -80,7 +80,7 @@ The unary `+` operator returns the value of its operand. The unary `-` operator 
 
 The unary `-` operator doesn't support the [ulong](../keywords/ulong.md) type.
 
-## * operator
+## Multiplication operator *
 
 The multiplication operator `*` computes the product of its operands:
 
@@ -88,7 +88,7 @@ The multiplication operator `*` computes the product of its operands:
 
 The unary `*` operator is a [pointer indirection operator](multiplication-operator.md#pointer-indirection-operator).
 
-## / operator
+## Division operator /
 
 The division operator `/` divides its first operand by its second operand.
 
@@ -142,7 +142,7 @@ Note the round-off errors that can be associated with the floating-point types.
 
 For the `decimal` operands, the remainder operator `%` is equivalent to the [remainder operator](<xref:System.Decimal.op_Modulus(System.Decimal,System.Decimal)>) of the <xref:System.Decimal?displayProperty=nameWithType> type.
 
-## + operator
+## Addition operator +
 
 The addition operator `+` computes the sum of its operands:
 
@@ -150,7 +150,7 @@ The addition operator `+` computes the sum of its operands:
 
 You also can use the `+` operator for string concatenation and delegate combination. For more information, see the [`+` operator](addition-operator.md) article.
 
-## Subtraction `-` operator
+## Subtraction operator -
 
 The subtraction operator `-` subtracts its second operand from its first operand:
 

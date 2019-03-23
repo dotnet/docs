@@ -16,7 +16,7 @@ This topic describes how to create a simple workflow service using messaging act
   
 3.  When the project is created, the Service1.xamlx file is opened in the designer as shown in the following illustration.  
   
-     ![Screenshot that shows the default workflow in the designer.](./media/how-to-create-a-workflow-service-with-messaging-activities/default-workflow-service.jpg)  
+     ![Screenshot shows the open Service1.xamlx file in the designer.](./media/how-to-create-a-workflow-service-with-messaging-activities/default-workflow-service.jpg)  
   
      Right-click the activity labeled **Sequential Service** and select **Delete**.  
   
@@ -24,7 +24,7 @@ This topic describes how to create a simple workflow service using messaging act
   
 1.  Select the **Toolbox** tab on the left side of the screen to display the toolbox and click the pushpin to keep the window open. Expand the **Messaging** section of the toolbox to display the messaging activities and the messaging activity templates as shown in the following illustration.  
   
-     ![Screenshot that shows the toolbox with Messaging tab expanded.](./media/how-to-create-a-workflow-service-with-messaging-activities/toolbox-messaging-tab.jpg)  
+     ![Screenshot that shows the toolbox with Messaging section expanded.](./media/how-to-create-a-workflow-service-with-messaging-activities/toolbox-messaging-section.jpg)  
   
 2.  Drag and drop a **ReceiveAndSendReply** template to the workflow designer. This creates a <xref:System.Activities.Statements.Sequence> activity with a **Receive** activity followed by a <xref:System.ServiceModel.Activities.SendReply> activity as shown in the following illustration.  
   

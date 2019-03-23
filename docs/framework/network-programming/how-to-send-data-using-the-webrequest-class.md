@@ -110,7 +110,7 @@ The following procedure describes the steps to send data to a server. This proce
   
 10. You can access the properties of your `WebResponse` object or cast it to a protocol-specific instance to read protocol-specific properties. 
 
-    For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebResponse>, cast your `WebResponse` object to an `HttpWebResponse` reference. The following code example shows how to display the HTTP-specific <xref:System.Net.HttpWebRequest.StatusDescription%2A?displayProperty=nameWithType> property sent with a response:
+    For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebResponse>, cast your `WebResponse` object to an `HttpWebResponse` reference. The following code example shows how to display the HTTP-specific <xref:System.Net.HttpWebResponse.StatusDescription%2A?displayProperty=nameWithType> property sent with a response:
   
     ```csharp  
     Console.WriteLine (((HttpWebResponse)response).StatusDescription);  
@@ -263,5 +263,5 @@ End Namespace
 - [Creating internet requests](creating-internet-requests.md)
 - [Using streams on the network](using-streams-on-the-network.md)
 - [Accessing the internet through a proxy](accessing-the-internet-through-a-proxy.md)
-- [Requesting data](network-programming/requesting-data.md)
+- [Requesting data](requesting-data.md)
 - [How to: Request data by using the WebRequest class](how-to-request-data-using-the-webrequest-class.md)

@@ -14,7 +14,7 @@ The following procedure describes the steps to send data to a server. This proce
   
 ## To send data to a host server  
   
-1.  Create a <xref:System.Net.WebRequest> instance by calling <xref:System.Net.WebRequest.Create%2A> with the URI of a resource, such as a script or ASP.NET page, that accepts data.  
+1.  Create a <xref:System.Net.WebRequest> instance by calling <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> with the URI of a resource, such as a script or ASP.NET page, that accepts data. For example: 
   
     ```csharp  
     WebRequest request = WebRequest.Create("http://www.contoso.com/");  
@@ -98,7 +98,7 @@ The following procedure describes the steps to send data to a server. This proce
     dataStream.Close ()  
     ```  
   
-9. Send the request to the server by calling <xref:System.Net.WebRequest.GetResponse%2A>. This method returns an object containing the server's response. The returned <xref:System.Net.WebResponse> object's type is determined by the scheme of the request's URI. For example:
+9. Send the request to the server by calling <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType>. This method returns an object containing the server's response. The returned <xref:System.Net.WebResponse> object's type is determined by the scheme of the request's URI. For example:
   
     ```csharp  
     WebResponse response = request.GetResponse();  
@@ -108,7 +108,7 @@ The following procedure describes the steps to send data to a server. This proce
     Dim response As WebResponse = request.GetResponse()  
     ```  
   
-10. In most cases, a `WebRequest` object is sufficient to receive data. However, if you need to set or read protocol-specific properties, you must cast your `WebRequest` object to a protocol-specific object type. 
+10. You can access the properties of your `WebResponse` object or cast it to a protocol-specific instance to read protocol-specific properties. 
 
     For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebResponse>, cast your `WebResponse` object to an `HttpWebResponse` reference. The following code example shows how to display the HTTP-specific <xref:System.Net.HttpWebRequest.StatusDescription%2A?displayProperty=nameWithType> property sent with a response:
   
@@ -120,17 +120,17 @@ The following procedure describes the steps to send data to a server. This proce
     Console.WriteLine(CType(response, HttpWebResponse).StatusDescription)  
     ```  
   
-11. To get the stream containing response data sent by the server, call the <xref:System.Net.WebResponse.GetResponseStream%2A> method of your `WebResponse` object. For example:
+11. To get the stream containing response data sent by the server, call the <xref:System.Net.WebResponse.GetResponseStream%2A?displayProperty=nameWithType> method of your `WebResponse` object. For example:
   
     ```csharp  
-    Stream data = response.GetResponseStream;  
+    Stream dataStream = response.GetResponseStream();  
     ```  
   
     ```vb  
-    Dim data As Stream = response.GetResponseStream  
+    Dim dataStream As Stream = response.GetResponseStream()  
     ```  
   
-12. After you've read the data from the response object, you must either close it with the <xref:System.Net.WebResponse.Close%2A?displayProperty=nameWithType> method or close the response stream with the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. Because the `WebResponse.Close` method calls `Stream.Close` when it closes the response, it's not necessary to call `Close` on both the response and stream objects. However, doing so isn't harmful. If you don't close either the response or the stream, your application can run out of server connections and become unable to process additional requests.
+12. After you've read the data from the response object, either close it with the <xref:System.Net.WebResponse.Close%2A?displayProperty=nameWithType> method or close the response stream with the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. If you don't close either the response or the stream, your application can run out of server connections and become unable to process additional requests. Because the `WebResponse.Close` method calls `Stream.Close` when it closes the response, it's not necessary to call `Close` on both the response and stream objects, although doing so isn't harmful. For example:
   
     ```csharp  
     response.Close();  
@@ -142,7 +142,7 @@ The following procedure describes the steps to send data to a server. This proce
   
 ## Example  
   
-The following code example shows how to create and send a web request to a server and read its response.  
+The following code example shows how to send data to a web server and read the data in its response:  
 
 ```csharp  
 using System;  
@@ -165,9 +165,9 @@ namespace Examples.System.Net
             string postData = "This is a test that posts this string to a Web server.";  
             byte[] byteArray = Encoding.UTF8.GetBytes (postData);  
 
-            // Set the ContentType property of the WebRequest.  
+            // Set the ContentType property of the request.  
             request.ContentType = "application/x-www-form-urlencoded";  
-            // Set the ContentLength property of the WebRequest.  
+            // Set the ContentLength property of the request.  
             request.ContentLength = byteArray.Length;  
 
             // Get the request stream.  
@@ -192,9 +192,8 @@ namespace Examples.System.Net
             // Display the content.  
             Console.WriteLine (responseFromServer);  
 
-            // Clean up the stream.  
+            // Clean up the response.  
             reader.Close ();  
-            dataStream.Close ();  
             response.Close ();  
         }  
     }  
@@ -249,9 +248,8 @@ Namespace Examples.System.Net
             ' Display the content.  
             Console.WriteLine(responseFromServer)  
 
-            ' Clean up the stream.  
+            ' Clean up the response.  
             reader.Close()  
-            dataStream.Close()  
             response.Close()  
 
         End Sub  

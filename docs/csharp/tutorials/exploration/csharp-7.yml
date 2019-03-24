@@ -24,10 +24,12 @@ items:
 
     You can now declare `out` variables in the argument list of a method call, rather than writing a separate declaration statement:
 
+    IN OTHER FILE AS WELL
     [!code-csharp[OutVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#01_OutVariableDeclarations "Out variable declarations")]
 
     You may want to specify the type of the `out` variable for clarity, as shown above. However, the language does support using an implicitly typed local variable:
 
+    IN OTHER FILE AS WELL
     [!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#02_OutVarVariableDeclarations "Implicitly typed Out variable")]
 
     * The code is easier to read. 
@@ -75,12 +77,14 @@ items:
 
     That assignment creates a tuple whose members are `Item1` and `Item2`, which you can use in the same way as <xref:System.Tuple> You can change the syntax to create a tuple that provides semantic names to each of the members of the tuple:
 
+    USED IN OTHER FILE
     [!code-csharp[NamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
     The `namedLetters` tuple contains fields referred to as `Alpha` and `Beta`. Those names exist only at compile time and are not preserved when inspecting the tuple using reflection at runtime, for example.
 
     In a tuple assignment, you can also specify the names of the fields on the right-hand side of the assignment: 
 
+    USED IN OTHER FILE
     [!code-csharp[ImplicitNamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
 
     You can specify names for the fields on both the left and right-hand side of the assignment: 
@@ -107,6 +111,7 @@ items:
 
     There may be times when you want to unpackage the members of a tuple that were returned from a method.  You can do that by declaring separate variables for each of the values in the tuple. This is called *deconstructing* the tuple:
 
+    USED IN OTHER FILE
     [!code-csharp[CallingWithDeconstructor](~/samples/snippets/csharp/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
 
     You can also provide a similar deconstruction for any type in .NET. This is
@@ -116,10 +121,12 @@ items:
     this `Point` class that provides a deconstructor method that extracts
     the `X` and `Y` coordinates:
 
+    USED IN OTHER FILE
     [!code-csharp[PointWithDeconstruction](~/samples/snippets/csharp/new-in-7/point.cs#11_PointWithDeconstruction "Point with deconstruction method")]
     
     You can extract the individual fields by assigning a `Point` to a tuple:
 
+    USED IN OTHER FILE
     [!code-csharp[DeconstructPoint](~/samples/snippets/csharp/new-in-7/program.cs#12_DeconstructPoint "Deconstruct a point")]
 
     You are not bound by the names defined in the `Deconstruct` method. You
@@ -147,6 +154,7 @@ items:
 
     The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
 
+    USED IN OTHER FILE
     [!code-csharp[Tuple-discard](~/samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
 
     For more information, see [Discards](../../discards.md).
@@ -307,6 +315,7 @@ items:
     by reference, and helps developers reading the code later remember that
     the method returns by reference:
 
+    USED IN OTHER FILE
     [!code-csharp[FindReturningRef](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#22_FindReturningRef "Find returning by reference")]
 
     Now that the method returns a reference to the integer value in the
@@ -326,6 +335,7 @@ items:
     to the local variable declaration to make the variable a reference when
     the return value is a reference:
 
+    USED IN OTHER FILE
     [!code-csharp[AssignRefReturn](~/samples/snippets/csharp/new-in-7/program.cs#24_AssignRefReturn "Assign ref return")]
 
     Now, the second `WriteLine` statement in the example above prints 
@@ -404,6 +414,7 @@ items:
     `alphabetSubsetImplementation` as a local function inside the public
     API method:
 
+    USED IN OTHER FILE
     [!code-csharp[22_IteratorMethodLocal](~/samples/snippets/csharp/new-in-7/Iterator.cs#28_IteratorMethodLocal "Iterator method with local function")]
 
     The version above makes it clear that the local method is referenced
@@ -415,6 +426,7 @@ items:
     exceptions arising from argument validation are thrown before the asynchronous
     work begins:
 
+    USED IN OTHER FILE
     [!code-csharp[TaskExample](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#29_TaskExample "Task returning method with local function")]
 
     > [!NOTE]
@@ -475,21 +487,24 @@ items:
     Binary numbers can get very long, so it's often easier to see
     the bit patterns by introducing the `_` as a digit separator:
 
+        USED IN OTHER FILE
     [!code-csharp[ThousandSeparators](~/samples/snippets/csharp/new-in-7/Program.cs#33_ThousandSeparators "Thousands separators")]
 
     The digit separator can appear anywhere in the constant. For base 10
     numbers, it would be common to use it as a thousands separator:
 
+        USED IN OTHER FILE
     [!code-csharp[LargeIntegers](~/samples/snippets/csharp/new-in-7/Program.cs#34_LargeIntegers "Large integer")]
 
     The digit separator can be used with `decimal`, `float` and `double`
     types as well:
 
+        USED IN OTHER FILE
     [!code-csharp[OtherConstants](~/samples/snippets/csharp/new-in-7/Program.cs#35_OtherConstants "non-integral constants")]
 
     Taken together, you can declare numeric constants with much more
     readability.
 
 - content: |
-    You've completed an exploration of the new features in C# 6. Now try them yourself in your applications.
+    You've completed an exploration of the new features in C# 7. Now try them yourself in your applications.
     

@@ -72,7 +72,7 @@ The fields aren't validated, and you cannot define your own methods
 You can create a tuple by assigning a value to each member, and optionally providing semantic
 names to each of the members of the tuple:
 
-[!code-csharp[NamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#05_NamedTuple "Named tuple")]
+[!code-csharp[NamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
 The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. Those names exist only at compile time and aren't preserved,
@@ -81,13 +81,13 @@ for example when inspecting the tuple using reflection at runtime.
 In a tuple assignment, you can also specify the names of the fields
 on the right-hand side of the assignment:
 
-[!code-csharp[ImplicitNamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
+[!code-csharp[ImplicitNamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
 
 There may be times when you want to unpackage the members of a tuple that
 were returned from a method.  You can do that by declaring separate variables
 for each of the values in the tuple. This unpackaging is called *deconstructing* the tuple:
 
-[!code-csharp[CallingWithDeconstructor](../../../samples/snippets/csharp/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
+[!code-csharp[CallingWithDeconstructor](~/samples/snippets/csharp/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
 
 You can also provide a similar deconstruction for any type in .NET. You write a `Deconstruct` method as a member of the class. That
 `Deconstruct` method provides a set of `out` arguments for each of the
@@ -95,11 +95,11 @@ properties you want to extract. Consider
 this `Point` class that provides a deconstructor method that extracts
 the `X` and `Y` coordinates:
 
-[!code-csharp[PointWithDeconstruction](../../../samples/snippets/csharp/new-in-7/point.cs#11_PointWithDeconstruction "Point with deconstruction method")]
+[!code-csharp[PointWithDeconstruction](~/samples/snippets/csharp/new-in-7/point.cs#11_PointWithDeconstruction "Point with deconstruction method")]
  
 You can extract the individual fields by assigning a `Point` to a tuple:
 
-[!code-csharp[DeconstructPoint](../../../samples/snippets/csharp/new-in-7/program.cs#12_DeconstructPoint "Deconstruct a point")]
+[!code-csharp[DeconstructPoint](~/samples/snippets/csharp/new-in-7/program.cs#12_DeconstructPoint "Deconstruct a point")]
 
 You can learn more in depth about tuples in the
 [tuples article](../tuples.md).
@@ -117,7 +117,7 @@ Discards are supported in the following scenarios:
 
 The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains a data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
 
-[!code-csharp[Tuple-discard](../../../samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
+[!code-csharp[Tuple-discard](~/samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
 
 For more information, see [Discards](../discards.md).
 
@@ -267,7 +267,7 @@ members that can be implemented as expressions. In C# 7.0, you can implement
 *constructors*, *finalizers*, and `get` and `set` accessors on *properties*
 and *indexers*. The following code shows examples of each:
 
-[!code-csharp[ExpressionBodiedMembers](../../../samples/snippets/csharp/new-in-7/expressionmembers.cs#36_ExpressionBodiedEverything "new expression-bodied members")]
+[!code-csharp[ExpressionBodiedMembers](~/samples/snippets/csharp/new-in-7/expressionmembers.cs#36_ExpressionBodiedEverything "new expression-bodied members")]
 
 > [!NOTE]
 > This example does not need a finalizer, but it is shown
@@ -311,7 +311,7 @@ must be accessible. As one concrete example, the `ValueTask` type
 has been added to the .NET framework to make use of this new language
 feature: 
 
-[!code-csharp[UsingValueTask](../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#30_UsingValueTask "Using ValueTask")]
+[!code-csharp[UsingValueTask](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#30_UsingValueTask "Using ValueTask")]
 
 > [!NOTE]
 > You need to add the NuGet package [`System.Threading.Tasks.Extensions`](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/)

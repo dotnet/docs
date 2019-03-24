@@ -16,7 +16,7 @@ Visual Basic loop structures allow you to run one or more lines of code repetiti
   
  The following illustration shows a loop structure that runs a set of statements until a condition becomes true:  
   
- ![Flow chart that shows a Do...Until loop.](./media/loop-structure/do-until-loop-true-condition.gif)  
+ ![Flow chart that shows a Do...Until loop.](./media/loop-structures/do-until-loop-true-condition.gif)  
   
 ## While Loops  
  The `While`...`End While` construction runs a set of statements as long as the condition specified in the `While` statement is `True`. For more information, see [While...End While Statement](../../../../visual-basic/language-reference/statements/while-end-while-statement.md).  

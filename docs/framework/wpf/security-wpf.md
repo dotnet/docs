@@ -43,7 +43,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  *Application navigation* is navigation between items of content within an application that is hosted by a browser. *Browser navigation* is navigation that changes the content and location URL of a browser itself. The relationship between application navigation (typically XAML) and browser navigation (typically HTML) is shown in the following illustration:
   
- ![Navigation diagram](./media/safetoplevelnavigationfigure.png "SafeTopLevelNavigationFigure")  
+ ![Relationship between application navigation and browser navigation.](./media/security-wpf/application-browser-navigation-relationship.png)  
   
  The type of content that is considered safe for an [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] to navigate to is primarily determined by whether application navigation or browser navigation is used.  
   
@@ -109,7 +109,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
      The **Security Settings** dialog box appears and you can configure the security settings for the selected zone.  
   
-     ![Security Settings dialog box](./media/wpfsecurityfigure1.PNG "WPFSecurityFigure1")  
+     ![Screenshot that shows the Security Settings dialog box.](./media/security-wpf/windows-presentation-foundation-security-settings.png)  
   
 > [!NOTE]
 >  You can also get to the Internet Options dialog box from Internet Explorer. Click **Tools** and then click **Internet Options**.  

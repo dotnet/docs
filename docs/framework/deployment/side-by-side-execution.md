@@ -12,7 +12,7 @@ Side-by-side execution is the ability to run multiple versions of an application
   
  The following illustration shows several applications using two different versions of the runtime on the same computer. Applications A, B, and C use runtime version 1.0, while application D uses runtime version 1.1.  
   
- ![Side&#45;by&#45;side execution of different runtime versions,](./media/side-by-side-runtime-execution.gif)  
+ ![Side&#45;by&#45;side execution of different runtime versions,](./media/side-by-side-execution/side-by-side-runtime-execution.gif)  
   
  The .NET Framework consists of the common language runtime and a collection of assemblies that contain the API types. The runtime and the .NET Framework assemblies are versioned separately. For example, version 4.0 of the runtime is actually version 4.0.319, while version 1.0 of the .NET Framework assemblies is version 1.0.3300.0.  
   

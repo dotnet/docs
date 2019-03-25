@@ -831,7 +831,7 @@
    
   
 ## Examples  
- The following code example shows a form created using code that automatically resizes to fit its contents. When run, the form displaya a <xref:System.Windows.Forms.Label>, a <xref:System.Windows.Forms.TextBox> for entering a URL, and a <xref:System.Windows.Forms.Button> for displaying that URL inside of the user's default Web browser. The code example uses a <xref:System.Windows.Forms.FlowLayoutPanel> to lay out the contained controls one after the other. It also sets the <xref:System.Windows.Forms.Control.AutoSize%2A> and <xref:System.Windows.Forms.AutoSizeMode> to grow and shrink to fit the contents of its form.  
+ The following code example shows a form created using code that automatically resizes to fit its contents. When run, the form displays a <xref:System.Windows.Forms.Label>, a <xref:System.Windows.Forms.TextBox> for entering a URL, and a <xref:System.Windows.Forms.Button> for displaying that URL inside of the user's default Web browser. The code example uses a <xref:System.Windows.Forms.FlowLayoutPanel> to lay out the contained controls one after the other. It also sets the <xref:System.Windows.Forms.Control.AutoSize%2A> and <xref:System.Windows.Forms.AutoSizeMode> to grow and shrink to fit the contents of its form.  
   
  [!code-csharp[Form.AutoSize#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Form.AutoSize/CS/Form1.cs#1)]
  [!code-vb[Form.AutoSize#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Form.AutoSize/VB/Form1.vb#1)]  

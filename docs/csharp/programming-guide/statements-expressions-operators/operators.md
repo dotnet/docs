@@ -39,8 +39,8 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |x[.](../../../csharp/language-reference/operators/member-access-operator.md)y<br /><br /> x?.y|Member access<br /><br /> Conditional member access|  
 |f[(x)](../../../csharp/language-reference/operators/invocation-operator.md)|Method and delegate invocation|  
 |a[&#91;x&#93;](../../../csharp/language-reference/operators/index-operator.md)<br /><br /> a?[x]|Array and indexer access<br /><br /> Conditional array and indexer access|  
-|x[++](../../../csharp/language-reference/operators/increment-operator.md)|Post-increment|  
-|x[--](../../../csharp/language-reference/operators/decrement-operator.md)|Post-decrement|  
+|x[++](../../../csharp/language-reference/operators/arithmetic-operators.md#increment-operator-)|Post-increment|  
+|x[--](../../../csharp/language-reference/operators/arithmetic-operators.md#decrement-operator---)|Post-decrement|  
 |[new](../../../csharp/language-reference/keywords/new-operator.md) T(...)|Object and delegate creation|  
 |`new` T(...){...}|Object creation with initializer. See [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md).|  
 |`new` {...}|Anonymous object initializer. See [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md).|  
@@ -59,8 +59,8 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |[-](../../../csharp/language-reference/operators/subtraction-operator.md)x|Negation|  
 |[\!](../../../csharp/language-reference/operators/logical-negation-operator.md)x|Logical negation|  
 |[~](../../../csharp/language-reference/operators/bitwise-complement-operator.md)x|Bitwise negation|  
-|[++](../../../csharp/language-reference/operators/increment-operator.md)x|Pre-increment|  
-|[--](../../../csharp/language-reference/operators/decrement-operator.md)x|Pre-decrement|  
+|[++](../../../csharp/language-reference/operators/arithmetic-operators.md#increment-operator-)x|Pre-increment|  
+|[--](../../../csharp/language-reference/operators/arithmetic-operators.md#decrement-operator---)x|Pre-decrement|  
 |[(T)](../../../csharp/language-reference/operators/invocation-operator.md)x|Explicitly convert x to type T|  
   
  **Multiplicative Operators**  

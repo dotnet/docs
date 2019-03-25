@@ -41,9 +41,9 @@ These are the highest precedence operators.
 
 [a&#91;x&#93;](index-operator.md) – aggregate object indexing.
 
-[x++](increment-operator.md) – postfix increment. Returns the value of x and then updates the storage location with the value of x that is one greater (typically adds the integer 1).
+[x++](arithmetic-operators.md#increment-operator-) – postfix increment. Returns the value of x and then updates the storage location with the value of x that is one greater (typically adds the integer 1).
 
-[x--](decrement-operator.md) –  postfix decrement. Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).
+[x--](arithmetic-operators.md#decrement-operator---) –  postfix decrement. Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).
 
 [new](../keywords/new-operator.md) – type instantiation.
 
@@ -73,9 +73,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [~x](bitwise-complement-operator.md) – bitwise complement.
 
-[++x](increment-operator.md) – prefix increment. Returns the value of x after updating the storage location with the value of x that is one greater (typically adds the integer 1).
+[++x](arithmetic-operators.md#increment-operator-) – prefix increment. Returns the value of x after updating the storage location with the value of x that is one greater (typically adds the integer 1).
 
-[--x](decrement-operator.md) – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).
+[--x](arithmetic-operators.md#decrement-operator---) – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).
 
 [(T)x](invocation-operator.md) – type casting.
 

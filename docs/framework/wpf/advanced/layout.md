@@ -35,7 +35,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
  The following illustration shows a simple layout.  
   
- ![A typical Grid, no bounding box superimposed.](./media/boundingbox1.png "boundingbox1")  
+ ![Screenshot that shows a typical grid, no bounding box superimposed.](./media/layout/grid-no-bounding-box-superimpose.png)  
   
  This layout can be achieved by using the following [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   
@@ -43,7 +43,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
  A single <xref:System.Windows.Controls.TextBlock> element is hosted within a <xref:System.Windows.Controls.Grid>. While the text fills only the upper-left corner of the first column, the allocated space for the <xref:System.Windows.Controls.TextBlock> is actually much larger. The bounding box of any <xref:System.Windows.FrameworkElement> can be retrieved by using the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method. The following illustration shows the bounding box for the <xref:System.Windows.Controls.TextBlock> element.  
   
- ![The bounding box of the TextBlock is now visible.](./media/boundingbox2.png "boundingbox2")  
+ ![Screenshot that shows that the TextBlock bounding box is now visible.](./media/layout/visible-textblock-bounding-box.png)  
   
  As shown by the yellow rectangle, the allocated space for the <xref:System.Windows.Controls.TextBlock> element is actually much larger than it appears. As additional elements are added to the <xref:System.Windows.Controls.Grid>, this allocation could shrink or expand, depending on the type and size of elements that are added.  
   

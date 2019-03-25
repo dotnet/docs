@@ -80,23 +80,23 @@ The output of the previous example is as follows:
 Something else : Not matched.
 ```
 
-When using partial active patterns, sometimes the individual choices can be disjoint or mutually exclusive, but they need not be. In the following example, the pattern Square and the pattern Cube are not disjoint, because some numbers are both squares and cubes, such as 64. The following program prints out all integers up to 1000000 that are both squares and cubes.
+When using partial active patterns, sometimes the individual choices can be disjoint or mutually exclusive, but they need not be. In the following example, the pattern Square and the pattern Cube are not disjoint, because some numbers are both squares and cubes, such as 64. The following program uses the AND pattern to combine the Square and Cube patterns. It print out all integers up to 1000 that are both squares and cubes, as well as those which are only cubes. 
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5005.fs)]
 
 The output is as follows:
 
 ```
-1
-64
-729
-4096
-15625
-46656
-117649
-262144
-531441
-1000000
+1 is a cube and a square
+8 is a cube
+27 is a cube
+64 is a cube and a square
+125 is a cube
+216 is a cube
+343 is a cube
+512 is a cube
+729 is a cube and a square
+1000 is a cube
 ```
 
 ## Parameterized Active Patterns

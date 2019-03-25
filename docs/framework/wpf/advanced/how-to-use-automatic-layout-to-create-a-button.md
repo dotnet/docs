@@ -19,10 +19,9 @@ The following two [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-
   
 [!code-xaml[LocalizationBtn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationBtn/CS/Pane1.xaml#1)]  
   
- The following graphic shows the output of the code samples.  
+ The following graphic shows the output of the code samples with auto-resizable buttons:
   
- ![The same button with text in different languages](./media/globalizationbutton.png "GlobalizationButton")  
-Auto Resizable Button  
+ ![The same button with text in different languages](./media/use-automatic-layout-overview/auto-resizable-button.png)  
   
 ## See also
 

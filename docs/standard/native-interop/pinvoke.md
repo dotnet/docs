@@ -236,6 +236,6 @@ Both of the previous examples depend on parameters, and in both cases, the param
 
 ## More resources
 
-*   [PInvoke.net wiki](https://www.pinvoke.net/) an excellent Wiki with information on common Win32 APIs and how to call them.
+*   [PInvoke.net wiki](https://www.pinvoke.net/) an excellent Wiki with information on common Windows APIs and how to call them.
 *   [P/Invoke on MSDN](/cpp/dotnet/native-and-dotnet-interoperability)
 *   [Mono documentation on P/Invoke](https://www.mono-project.com/docs/advanced/pinvoke/)

@@ -58,7 +58,7 @@ In this example, the type `Drawing<Square,RegularRedBrush>` has the data contrac
 
 ## Customizing data contract names for generic types
 
-Sometimes, the data contract names generated for generic types, as described previously, are unacceptable. For example, you may know in advance that you will not run into name collisions and may want to remove the hash. In this case, you can use the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property of the `DataContractAttribute` attribute to specify a different way to generate names. You can use numbers in curly braces inside of the `Name` property to refer to data contract names of the generic parameters. (0 refers to the first parameter, 1 refers to the second, and so on.) You can use a number (#) sign inside curly braces to refer to the hash. You can use each of these references multiple times or not at all.
+Sometimes, the data contract names generated for generic types, as described previously, are unacceptable. For example, you may know in advance that you will not run into name collisions and may want to remove the hash. In this case, you can use the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A?displayProperty=nameWithType> property to specify a different way to generate names. You can use numbers in curly braces inside of the `Name` property to refer to data contract names of the generic parameters. (0 refers to the first parameter, 1 refers to the second, and so on.) You can use a number (#) sign inside curly braces to refer to the hash. You can use each of these references multiple times or not at all.
 
 For example, the preceding generic `Drawing` type could have been declared as shown in the following example.
 

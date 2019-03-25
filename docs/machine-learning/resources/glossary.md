@@ -109,7 +109,7 @@ A subclass of machine learning in which a desired model predicts the label for y
 
 ## Training
 
-The process of identifying a [model](#model) for a given training data set. For a linear model, this means finding the weights. For a tree, it involves the identifying the split points.
+The process of identifying a [model](#model) for a given training data set. For a linear model, this means finding the weights. For a tree, it involves identifying the split points.
 
 ## Transform
 

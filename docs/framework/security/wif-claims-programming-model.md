@@ -7,7 +7,7 @@ author: "BrucePerlerMS"
 # WIF Claims Programming Model
 ASP.NET and Windows Communication Foundation (WCF) developers ordinarily use the IIdentity and IPrincipal interfaces to work with the user’s identity information. In .NET 4.5, Windows Identity Foundation (WIF) has been integrated such that claims are now always present for any principal as illustrated in the following diagram:
 
- ![WIF Claims Programming Model](../../../docs/framework/security/media/wifclaimsprogrammingmodel.png "WIFClaimsProgrammingModel")
+ ![Diagram that shows the WIF Claims programming model.](./media/wif-claims-programming-model/wif-claims-programming-model.png)
 
  In .NET 4.5, System.Security.Claims contains the new ClaimsPrincipal and ClaimsIdentity classes (see diagram above). All principals in .NET now derive from ClaimsPrincipal. All built-in identity classes, like FormsIdentity for ASP.NET and WindowsIdentity now derive from ClaimsIdentity. Similarly, all built-in principal classes like GenericPrincipal and WindowsPrincipal derive from ClaimsPrincipal.
 

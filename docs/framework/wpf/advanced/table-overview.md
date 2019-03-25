@@ -66,7 +66,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Render a basic table](./media/basictablerrender.png "BasicTablerRender")  
+ ![Screenshot that shows how a basic table renders.](./media/table-overview/basic-table-render-example.png)  
   
 <a name="table_containment"></a>   
 ### Table Containment  

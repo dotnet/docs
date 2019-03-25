@@ -22,7 +22,7 @@ Remapping is the process of converting the colors in an image according to a col
   
  The following illustration shows the original image on the left and the remapped image on the right.  
   
- ![Color ReMap](./media/colortrans7.png "colortrans7")  
+ ![Screenshot showing the original image and the remapped image.](./media/how-to-use-a-color-remap-table/original-image-remap-colors.png)  
   
  [!code-csharp[System.Drawing.RecoloringImages#31](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RecoloringImages/CS/Class1.cs#31)]
  [!code-vb[System.Drawing.RecoloringImages#31](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RecoloringImages/VB/Class1.vb#31)]  

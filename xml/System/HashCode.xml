@@ -150,7 +150,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <Parameter Name="value1" Type="T1" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">The type of the value to add the the hash code.</typeparam>
+        <typeparam name="T1">The type of the value to add the hash code.</typeparam>
         <param name="value1">The value to add to the hash code.</param>
         <summary>Diffuses the hash code returned by the specified value.</summary>
         <returns>The hash code that represents the single value.</returns>

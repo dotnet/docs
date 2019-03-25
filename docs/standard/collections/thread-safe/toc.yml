@@ -1,0 +1,19 @@
+- name: Thread-Safe Collections
+  href: index.md
+  items:
+  - name: BlockingCollection Overview
+    href: blockingcollection-overview.md
+  - name: When to Use a Thread-Safe Collection
+    href: when-to-use-a-thread-safe-collection.md
+  - name: "How to: Add and Take Items Individually from a BlockingCollection"
+    href: how-to-add-and-take-items.md
+  - name: "How to: Use ForEach to Remove Items in a BlockingCollection"
+    href: how-to-use-foreach-to-remove.md
+  - name: "How to: Add and Remove Items from a ConcurrentDictionary"
+    href: how-to-add-and-remove-items.md
+  - name: "How to: Add Bounding and Blocking Functionality to a Collection"
+    href: how-to-add-bounding-and-blocking.md
+  - name: "How to: Use Arrays of Blocking Collections in a Pipeline"
+    href: how-to-use-arrays-of-blockingcollections.md
+  - name: "How to: Create an Object Pool by Using a ConcurrentBag"
+    href: how-to-create-an-object-pool.md

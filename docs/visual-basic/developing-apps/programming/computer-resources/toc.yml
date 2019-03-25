@@ -1,0 +1,51 @@
+- name: Accessing Computer Resources
+  href: index.md
+  items:
+  - name: Playing Sounds
+    href: playing-sounds.md
+  - name: Storing Data to and Reading from the Clipboard
+    href: storing-data-to-and-reading-from-the-clipboard.md
+  - name: Getting Information about the Computer
+    href: getting-information-about-the-computer.md
+  - name: Accessing the Keyboard
+    href: accessing-the-keyboard.md
+    items:
+    - name: "How to: Start an Application and Send it Keystrokes"
+      href: how-to-start-an-application-and-send-it-keystrokes.md
+  - name: Accessing the Mouse
+    href: accessing-the-mouse.md
+  - name: Performing Network Operations
+    href: performing-network-operations.md
+    items:
+    - name: "How to: Upload a File"
+      href: how-to-upload-a-file.md
+    - name: "How to: Download a File"
+      href: how-to-download-a-file.md
+    - name: "How to: Check Connection Status"
+      href: how-to-check-connection-status.md
+  - name: Accessing the Computer's Ports
+    href: accessing-the-computer-s-ports.md
+    items:
+    - name: "How to: Show Available Serial Ports"
+      href: how-to-show-available-serial-ports.md
+    - name: "How to: Dial Modems Attached to Serial Ports"
+      href: how-to-dial-modems-attached-to-serial-ports.md
+    - name: "How to: Send Strings to Serial Ports"
+      href: how-to-send-strings-to-serial-ports.md
+    - name: "How to: Receive Strings From Serial Ports"
+      href: how-to-receive-strings-from-serial-ports.md
+    - name: Port Operations in the .NET Framework
+      href: port-operations-in-the-net-framework.md
+  - name: Reading from and Writing to the Registry
+    href: reading-from-and-writing-to-the-registry.md
+    items:
+    - name: "How to: Create a Registry Key and Set Its Value"
+      href: how-to-create-a-registry-key-and-set-its-value.md
+    - name: "How to: Read a Value from a Registry Key"
+      href: how-to-read-a-value-from-a-registry-key.md
+    - name: "How to: Delete a Registry Key"
+      href: how-to-delete-a-registry-key.md
+    - name: Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace
+      href: reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace.md
+    - name: Security and the Registry
+      href: security-and-the-registry.md

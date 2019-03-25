@@ -1,0 +1,32 @@
+- name: Unsafe Code and Pointers
+  href: index.md
+  items:
+  - name: Fixed Size Buffers
+    href: fixed-size-buffers.md
+  - name: Pointer types
+    href: pointer-types.md
+    items:
+    - name: Pointer Conversions
+      href: pointer-conversions.md
+    - name: Pointer Expressions
+      href: pointer-expressions.md
+      items:
+      - name: "How to: Obtain the Value of a Pointer Variable"
+        href: how-to-obtain-the-value-of-a-pointer-variable.md
+      - name: "How to: Obtain the Address of a Variable"
+        href: how-to-obtain-the-address-of-a-variable.md
+      - name: "How to: Access a Member with a Pointer"
+        href: how-to-access-a-member-with-a-pointer.md
+      - name: "How to: Access an Array Element with a Pointer"
+        href: how-to-access-an-array-element-with-a-pointer.md
+      - name: Manipulating Pointers
+        href: manipulating-pointers.md
+        items:
+        - name: "How to: Increment and Decrement Pointers"
+          href: how-to-increment-and-decrement-pointers.md
+        - name: Arithmetic Operations on Pointers
+          href: arithmetic-operations-on-pointers.md
+        - name: Pointer Comparison
+          href: pointer-comparison.md
+    - name: "How to: Use Pointers to Copy an Array of Bytes"
+      href: how-to-use-pointers-to-copy-an-array-of-bytes.md

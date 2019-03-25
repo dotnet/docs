@@ -33,7 +33,7 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
 #### Additional resources
 
 - **SOLID: Fundamental OOP Principles** \
-  [https://deviq.com/solid/](https://deviq.com/solid/%20)
+  [https://deviq.com/solid/](https://deviq.com/solid/)
 
 - **Inversion of Control Containers and the Dependency Injection pattern** \
   [https://martinfowler.com/articles/injection.html](https://martinfowler.com/articles/injection.html)

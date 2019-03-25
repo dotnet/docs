@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- All task classes must implement this interface to be recognized by the build engine. Instead of implenting this interface directly, you can also derive your class from the helper class, <xref:Microsoft.Build.Utilities.Task>, which provides default implementations of some <xref:Microsoft.Build.Framework.ITask> members.  
+ All task classes must implement this interface to be recognized by the build engine. Instead of implementing this interface directly, you can also derive your class from the helper class, <xref:Microsoft.Build.Utilities.Task>, which provides default implementations of some <xref:Microsoft.Build.Framework.ITask> members.  
   
    
   

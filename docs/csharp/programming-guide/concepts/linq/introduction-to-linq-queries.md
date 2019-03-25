@@ -86,7 +86,6 @@ IQueryable<Customer> custQuery =
 
 - [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [Walkthrough: Writing Queries in C#](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)
-- [Walkthrough: Writing Queries in C#](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)
 - [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)
 - [foreach, in](../../../../csharp/language-reference/keywords/foreach-in.md)
 - [Query Keywords (LINQ)](../../../../csharp/language-reference/keywords/query-keywords.md)

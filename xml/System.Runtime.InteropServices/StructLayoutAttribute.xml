@@ -70,7 +70,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Initalizes a new instance of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> class.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -102,7 +102,7 @@
       </Parameters>
       <Docs>
         <param name="layoutKind">A 16-bit integer that represents one of the <see cref="T:System.Runtime.InteropServices.LayoutKind" /> values that specifes how the class or structure should be arranged.</param>
-        <summary>Initalizes a new instance of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.LayoutKind" /> enumeration member.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.LayoutKind" /> enumeration member.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -147,7 +147,7 @@
       </Parameters>
       <Docs>
         <param name="layoutKind">One of the enumeration values that specifes how the class or structure should be arranged.</param>
-        <summary>Initalizes a new instance of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.LayoutKind" /> enumeration member.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.LayoutKind" /> enumeration member.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

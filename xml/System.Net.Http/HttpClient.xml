@@ -106,18 +106,18 @@ If this change is undesirable, you can configure your application to use the old
 - By calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method as follows:
 
    ```csharp
-   AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", false);
+   AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", false);
    ```
 
    ```vb
-   AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
+   AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", False)
    ``` 
-- By defining the `System.Net.Http.useSocketsHttpHandler` switch in the *.netcore.runtimeconfig.json* configuration file:
+- By defining the `System.Net.Http.UseSocketsHttpHandler` switch in the *.netcore.runtimeconfig.json* configuration file:
 
   ```json
   "runtimeOptions": {
     "configProperties": {
-        "System.Net.Http.useSocketsHttpHandler": false
+        "System.Net.Http.UseSocketsHttpHandler": false
     }
   }
   ```

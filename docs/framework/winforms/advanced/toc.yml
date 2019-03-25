@@ -1,0 +1,415 @@
+- name: Enhancing Windows Forms Applications
+  href: index.md
+  items:
+  - name: Graphics and Drawing in Windows Forms
+    href: graphics-and-drawing-in-windows-forms.md
+    items:
+    - name: Graphics Overview
+      href: graphics-overview-windows-forms.md
+      items:
+      - name: Overview of Graphics
+        href: overview-of-graphics.md
+      - name: Three Categories of Graphics Services
+        href: three-categories-of-graphics-services.md
+      - name: Structure of the Graphics Interface
+        href: structure-of-the-graphics-interface.md
+    - name: About GDI+ Managed Code
+      href: about-gdi-managed-code.md
+      items:
+      - name: Lines, Curves, and Shapes
+        href: lines-curves-and-shapes.md
+        items:
+        - name: Vector Graphics Overview
+          href: vector-graphics-overview.md
+        - name: Pens, Lines, and Rectangles in GDI+
+          href: pens-lines-and-rectangles-in-gdi.md
+        - name: Ellipses and Arcs in GDI+
+          href: ellipses-and-arcs-in-gdi.md
+        - name: Polygons in GDI+
+          href: polygons-in-gdi.md
+        - name: Cardinal Splines in GDI+
+          href: cardinal-splines-in-gdi.md
+        - name: Bézier Splines in GDI+
+          href: bezier-splines-in-gdi.md
+        - name: Graphics Paths in GDI+
+          href: graphics-paths-in-gdi.md
+        - name: Brushes and Filled Shapes in GDI+
+          href: brushes-and-filled-shapes-in-gdi.md
+        - name: Open and Closed Curves in GDI+
+          href: open-and-closed-curves-in-gdi.md
+        - name: Regions in GDI+
+          href: regions-in-gdi.md
+        - name: Restricting the Drawing Surface in GDI+
+          href: restricting-the-drawing-surface-in-gdi.md
+        - name: Antialiasing with Lines and Curves
+          href: antialiasing-with-lines-and-curves.md
+      - name: Images, Bitmaps, and Metafiles
+        href: images-bitmaps-and-metafiles.md
+        items:
+        - name: Types of Bitmaps
+          href: types-of-bitmaps.md
+        - name: Metafiles in GDI+
+          href: metafiles-in-gdi.md
+        - name: Drawing, Positioning, and Cloning Images in GDI+
+          href: drawing-positioning-and-cloning-images-in-gdi.md
+        - name: Cropping and Scaling Images in GDI+
+          href: cropping-and-scaling-images-in-gdi.md
+      - name: Coordinate Systems and Transformations
+        href: coordinate-systems-and-transformations.md
+        items:
+        - name: Types of Coordinate Systems
+          href: types-of-coordinate-systems.md
+        - name: Matrix Representation of Transformations
+          href: matrix-representation-of-transformations.md
+        - name: Global and Local Transformations
+          href: global-and-local-transformations.md
+    - name: Using Managed Graphics Classes
+      href: using-managed-graphics-classes.md
+      items:
+      - name: Getting Started with Graphics Programming
+        href: getting-started-with-graphics-programming.md
+        items:
+        - name: "How to: Create Graphics Objects for Drawing"
+          href: how-to-create-graphics-objects-for-drawing.md
+        - name: "How to: Create a Pen"
+          href: how-to-create-a-pen.md
+        - name: "How to: Set the Color of a Pen"
+          href: how-to-set-the-color-of-a-pen.md
+        - name: "How to: Create a Solid Brush"
+          href: how-to-create-a-solid-brush.md
+        - name: "How to: Draw a Line on a Windows Form"
+          href: how-to-draw-a-line-on-a-windows-form.md
+        - name: "How to: Draw an Outlined Shape"
+          href: how-to-draw-an-outlined-shape.md
+        - name: "How to: Draw a Filled Rectangle on a Windows Form"
+          href: how-to-draw-a-filled-rectangle-on-a-windows-form.md
+        - name: "How to: Draw a Filled Ellipse on a Windows Form"
+          href: how-to-draw-a-filled-ellipse-on-a-windows-form.md
+        - name: "How to: Draw Text on a Windows Form"
+          href: how-to-draw-text-on-a-windows-form.md
+        - name: "How to: Draw Vertical Text on a Windows Form"
+          href: how-to-draw-vertical-text-on-a-windows-form.md
+        - name: "How to: Render Images with GDI+"
+          href: how-to-render-images-with-gdi.md
+        - name: "How to: Create a Shaped Windows Form"
+          href: how-to-create-a-shaped-windows-form.md
+        - name: "How to: Copy Pixels for Reducing Flicker in Windows Forms"
+          href: how-to-copy-pixels-for-reducing-flicker-in-windows-forms.md
+      - name: Using a Pen to Draw Lines and Shapes
+        href: using-a-pen-to-draw-lines-and-shapes.md
+        items:
+        - name: "How to: Use a Pen to Draw Lines"
+          href: how-to-use-a-pen-to-draw-lines.md
+        - name: "How to: Use a Pen to Draw Rectangles"
+          href: how-to-use-a-pen-to-draw-rectangles.md
+        - name: "How to: Set Pen Width and Alignment"
+          href: how-to-set-pen-width-and-alignment.md
+        - name: "How to: Draw a Line with Line Caps"
+          href: how-to-draw-a-line-with-line-caps.md
+        - name: "How to: Join Lines"
+          href: how-to-join-lines.md
+        - name: "How to: Draw a Custom Dashed Line"
+          href: how-to-draw-a-custom-dashed-line.md
+        - name: "How to: Draw a Line Filled with a Texture"
+          href: how-to-draw-a-line-filled-with-a-texture.md
+      - name: Using a Brush to Fill Shapes
+        href: using-a-brush-to-fill-shapes.md
+        items:
+        - name: "How to: Fill a Shape with a Solid Color"
+          href: how-to-fill-a-shape-with-a-solid-color.md
+        - name: "How to: Fill a Shape with a Hatch Pattern"
+          href: how-to-fill-a-shape-with-a-hatch-pattern.md
+        - name: "How to: Fill a Shape with an Image Texture"
+          href: how-to-fill-a-shape-with-an-image-texture.md
+        - name: "How to: Tile a Shape with an Image"
+          href: how-to-tile-a-shape-with-an-image.md
+      - name: Using a Gradient Brush to Fill Shapes
+        href: using-a-gradient-brush-to-fill-shapes.md
+        items:
+        - name: "How to: Create a Linear Gradient"
+          href: how-to-create-a-linear-gradient.md
+        - name: "How to: Create a Path Gradient"
+          href: how-to-create-a-path-gradient.md
+        - name: "How to: Apply Gamma Correction to a Gradient"
+          href: how-to-apply-gamma-correction-to-a-gradient.md
+      - name: Working with Images, Bitmaps, Icons, and Metafiles
+        href: working-with-images-bitmaps-icons-and-metafiles.md
+        items:
+        - name: "How to: Draw an Existing Bitmap to the Screen"
+          href: how-to-draw-an-existing-bitmap-to-the-screen.md
+        - name: "How to: Load and Display Metafiles"
+          href: how-to-load-and-display-metafiles.md
+        - name: "How to: Crop and Scale Images"
+          href: how-to-crop-and-scale-images.md
+        - name: "How to: Rotate, Reflect, and Skew Images"
+          href: how-to-rotate-reflect-and-skew-images.md
+        - name: "How to: Use Interpolation Mode to Control Image Quality During Scaling"
+          href: how-to-use-interpolation-mode-to-control-image-quality-during-scaling.md
+        - name: "How to: Create Thumbnail Images"
+          href: how-to-create-thumbnail-images.md
+        - name: "How to: Improve Performance by Avoiding Automatic Scaling"
+          href: how-to-improve-performance-by-avoiding-automatic-scaling.md
+        - name: "How to: Read Image Metadata"
+          href: how-to-read-image-metadata.md
+        - name: "How to: Create a Bitmap at Run Time"
+          href: how-to-create-a-bitmap-at-run-time.md
+        - name: "How to: Extract the Icon Associated with a File in Windows Forms"
+          href: how-to-extract-the-icon-associated-with-a-file-in-windows-forms.md
+      - name: Alpha Blending Lines and Fills
+        href: alpha-blending-lines-and-fills.md
+        items:
+        - name: "How to: Draw Opaque and Semitransparent Lines"
+          href: how-to-draw-opaque-and-semitransparent-lines.md
+        - name: "How to: Draw with Opaque and Semitransparent Brushes"
+          href: how-to-draw-with-opaque-and-semitransparent-brushes.md
+        - name: "How to: Use Compositing Mode to Control Alpha Blending"
+          href: how-to-use-compositing-mode-to-control-alpha-blending.md
+        - name: "How to: Use a Color Matrix to Set Alpha Values in Images"
+          href: how-to-use-a-color-matrix-to-set-alpha-values-in-images.md
+      - name: Using Fonts and Text
+        href: using-fonts-and-text.md
+        items:
+        - name: "How to: Construct Font Families and Fonts"
+          href: how-to-construct-font-families-and-fonts.md
+        - name: "How to: Draw Text at a Specified Location"
+          href: how-to-draw-text-at-a-specified-location.md
+        - name: "How to: Draw Wrapped Text in a Rectangle"
+          href: how-to-draw-wrapped-text-in-a-rectangle.md
+        - name: "How to: Draw Text with GDI"
+          href: how-to-draw-text-with-gdi.md
+        - name: "How to: Align Drawn Text"
+          href: how-to-align-drawn-text.md
+        - name: "How to: Create Vertical Text"
+          href: how-to-create-vertical-text.md
+        - name: "How to: Set Tab Stops in Drawn Text"
+          href: how-to-set-tab-stops-in-drawn-text.md
+        - name: "How to: Enumerate Installed Fonts"
+          href: how-to-enumerate-installed-fonts.md
+        - name: "How to: Create a Private Font Collection"
+          href: how-to-create-a-private-font-collection.md
+        - name: "How to: Obtain Font Metrics"
+          href: how-to-obtain-font-metrics.md
+        - name: "How to: Use Antialiasing with Text"
+          href: how-to-use-antialiasing-with-text.md
+      - name: Constructing and Drawing Curves
+        href: constructing-and-drawing-curves.md
+        items:
+        - name: "How to: Draw Cardinal Splines"
+          href: how-to-draw-cardinal-splines.md
+        - name: "How to: Draw a Single Bézier Spline"
+          href: how-to-draw-a-single-bezier-spline.md
+        - name: "How to: Draw a Sequence of Bézier Splines"
+          href: how-to-draw-a-sequence-of-bezier-splines.md
+      - name: Constructing and Drawing Paths
+        href: constructing-and-drawing-paths.md
+        items:
+        - name: "How to: Create Figures from Lines, Curves, and Shapes"
+          href: how-to-create-figures-from-lines-curves-and-shapes.md
+        - name: "How to: Fill Open Figures"
+          href: how-to-fill-open-figures.md
+        - name: "How to: Flatten a Curved Path into a Line"
+          href: how-to-flatten-a-curved-path-into-a-line.md
+      - name: Using Transformations in Managed GDI+
+        href: using-transformations-in-managed-gdi.md
+        items:
+        - name: Using the World Transformation
+          href: using-the-world-transformation.md
+        - name: Why Transformation Order Is Significant
+          href: why-transformation-order-is-significant.md
+      - name: Using Graphics Containers
+        href: using-graphics-containers.md
+        items:
+        - name: Managing the State of a Graphics Object
+          href: managing-the-state-of-a-graphics-object.md
+        - name: Using Nested Graphics Containers
+          href: using-nested-graphics-containers.md
+      - name: Using Regions
+        href: using-regions.md
+        items:
+        - name: "How to: Use Hit Testing with a Region"
+          href: how-to-use-hit-testing-with-a-region.md
+        - name: "How to: Use Clipping with a Region"
+          href: how-to-use-clipping-with-a-region.md
+      - name: Recoloring Images
+        href: recoloring-images.md
+        items:
+        - name: "How to: Use a Color Matrix to Transform a Single Color"
+          href: how-to-use-a-color-matrix-to-transform-a-single-color.md
+        - name: "How to: Translate Image Colors"
+          href: how-to-translate-image-colors.md
+        - name: Using Transformations to Scale Colors
+          href: using-transformations-to-scale-colors.md
+        - name: "How to: Rotate Colors"
+          href: how-to-rotate-colors.md
+        - name: "How to: Shear Colors"
+          href: how-to-shear-colors.md
+        - name: "How to: Use a Color Remap Table"
+          href: how-to-use-a-color-remap-table.md
+      - name: Using Image Encoders and Decoders in Managed GDI+
+        href: using-image-encoders-and-decoders-in-managed-gdi.md
+        items:
+        - name: "How to: List Installed Encoders"
+          href: how-to-list-installed-encoders.md
+        - name: "How to: List Installed Decoders"
+          href: how-to-list-installed-decoders.md
+        - name: "How to: Determine the Parameters Supported by an Encoder"
+          href: how-to-determine-the-parameters-supported-by-an-encoder.md
+        - name: "How to: Convert a BMP image to a PNG image"
+          href: how-to-convert-a-bmp-image-to-a-png-image.md
+        - name: "How to: Set JPEG Compression Level"
+          href: how-to-set-jpeg-compression-level.md
+      - name: Using Double Buffering
+        href: using-double-buffering.md
+        items:
+        - name: Double Buffered Graphics
+          href: double-buffered-graphics.md
+        - name: "How to: Reduce Graphics Flicker with Double Buffering for Forms and Controls"
+          href: how-to-reduce-graphics-flicker-with-double-buffering-for-forms-and-controls.md
+        - name: "How to: Manually Manage Buffered Graphics"
+          href: how-to-manually-manage-buffered-graphics.md
+        - name: "How to: Manually Render Buffered Graphics"
+          href: how-to-manually-render-buffered-graphics.md
+  - name: Application Settings for Windows Forms
+    href: application-settings-for-windows-forms.md
+    items:
+    - name: Application Settings Overview
+      href: application-settings-overview.md
+    - name: Application Settings Architecture
+      href: application-settings-architecture.md
+    - name: Application Settings Attributes
+      href: application-settings-attributes.md
+    - name: Application Settings for Custom Controls
+      href: application-settings-for-custom-controls.md
+    - name: Using Application Settings and User Settings
+      href: using-application-settings-and-user-settings.md
+      items:
+      - name: "How To: Create a New Setting at Design Time"
+        href: how-to-create-a-new-setting-at-design-time.md
+      - name: "How To: Change the Value of an Existing Setting at Design Time"
+        href: how-to-change-the-value-of-an-existing-setting-at-design-time.md
+      - name: "How To: Change the Value of a Setting Between Application Sessions"
+        href: how-to-change-the-value-of-a-setting-between-application-sessions.md
+      - name: "How To: Read Settings at Run Time With C#"
+        href: how-to-read-settings-at-run-time-with-csharp.md
+      - name: "How To: Write User Settings at Run Time with C#"
+        href: how-to-write-user-settings-at-run-time-with-csharp.md
+      - name: "How To: Add Multiple Sets of Settings To Your Application in C#"
+        href: how-to-add-multiple-sets-of-settings-to-your-application-in-csharp.md
+    - name: "How to: Create Application Settings"
+      href: how-to-create-application-settings.md
+    - name: "How to: Validate Application Settings"
+      href: how-to-validate-application-settings.md
+  - name: Windows Forms Print Support
+    href: windows-forms-print-support.md
+    items:
+    - name: "How to: Create Standard Windows Forms Print Jobs"
+      href: how-to-create-standard-windows-forms-print-jobs.md
+    - name: "How to: Capture User Input from a PrintDialog at Run Time"
+      href: how-to-capture-user-input-from-a-printdialog-at-run-time.md
+    - name: "How to: Choose the Printers Attached to a User's Computer in Windows Forms"
+      href: how-to-choose-the-printers-attached-to-user-computer-in-windows-forms.md
+    - name: "How to: Print Graphics in Windows Forms"
+      href: how-to-print-graphics-in-windows-forms.md
+    - name: "How to: Print a Multi-Page Text File in Windows Forms"
+      href: how-to-print-a-multi-page-text-file-in-windows-forms.md
+    - name: "How to: Complete Windows Forms Print Jobs"
+      href: how-to-complete-windows-forms-print-jobs.md
+    - name: "How to: Print a Windows Form"
+      href: how-to-print-a-windows-form.md
+    - name: "How to: Print in Windows Forms Using Print Preview"
+      href: how-to-print-in-windows-forms-using-print-preview.md
+  - name: Drag-and-Drop Operations and Clipboard Support
+    href: drag-and-drop-operations-and-clipboard-support.md
+    items:
+    - name: "Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms"
+      href: walkthrough-performing-a-drag-and-drop-operation-in-windows-forms.md
+    - name: "How to: Perform Drag-and-Drop Operations Between Applications"
+      href: how-to-perform-drag-and-drop-operations-between-applications.md
+    - name: "How to: Add Data to the Clipboard"
+      href: how-to-add-data-to-the-clipboard.md
+    - name: "How to: Retrieve Data from the Clipboard"
+      href: how-to-retrieve-data-from-the-clipboard.md
+  - name: Networking in Windows Forms Applications
+    href: networking-in-windows-forms-applications.md
+  - name: Globalizing Windows Forms
+    href: globalizing-windows-forms.md
+    items:
+    - name: Encoding and Windows Forms Globalization
+      href: encoding-and-windows-forms-globalization.md
+    - name: International Fonts in Windows Forms and Controls
+      href: international-fonts-in-windows-forms-and-controls.md
+    - name: Bi-Directional Support for Windows Forms Applications
+      href: bi-directional-support-for-windows-forms-applications.md
+    - name: Display of Asian Characters with the ImeMode Property
+      href: display-of-asian-characters-with-the-imemode-property.md
+  - name: Windows Forms and Unmanaged Applications
+    href: windows-forms-and-unmanaged-applications.md
+    items:
+    - name: Windows Forms and Unmanaged Applications Overview
+      href: windows-forms-and-unmanaged-applications-overview.md
+    - name: "How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread"
+      href: how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md
+    - name: "How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method"
+      href: com-interop-by-displaying-a-windows-form-shadow.md
+  - name: System Information and Windows Forms
+    href: system-information-and-windows-forms.md
+  - name: Power Management in Windows Forms
+    href: power-management-in-windows-forms.md
+  - name: Help Systems in Windows Forms Applications
+    href: help-systems-in-windows-forms-applications.md
+  - name: Windows Forms Visual Inheritance
+    href: windows-forms-visual-inheritance.md
+    items:
+    - name: "How to: Inherit Windows Forms"
+      href: how-to-inherit-windows-forms.md
+    - name: "How to: Inherit Forms Using the Inheritance Picker Dialog Box"
+      href: how-to-inherit-forms-using-the-inheritance-picker-dialog-box.md
+    - name: Effects of Modifying a Base Form's Appearance
+      href: effects-of-modifying-base-form-appearance.md
+    - name: "Walkthrough: Demonstrating Visual Inheritance"
+      href: walkthrough-demonstrating-visual-inheritance.md
+    - name: "How to: Use the Modifiers and GenerateMember Properties"
+      href: how-to-use-the-modifiers-and-generatemember-properties.md
+  - name: Multiple-Document Interface (MDI) Applications
+    href: multiple-document-interface-mdi-applications.md
+    items:
+    - name: "How to: Create MDI Parent Forms"
+      href: how-to-create-mdi-parent-forms.md
+    - name: "How to: Create MDI Child Forms"
+      href: how-to-create-mdi-child-forms.md
+    - name: "How to: Determine the Active MDI Child"
+      href: how-to-determine-the-active-mdi-child.md
+    - name: "How to: Send Data to the Active MDI Child"
+      href: how-to-send-data-to-the-active-mdi-child.md
+    - name: "How to: Arrange MDI Child Forms"
+      href: how-to-arrange-mdi-child-forms.md
+  - name: Integrating User Help in Windows Forms
+    href: integrating-user-help-in-windows-forms.md
+    items:
+    - name: "How to: Provide Help in a Windows Application"
+      href: how-to-provide-help-in-a-windows-application.md
+    - name: "How to: Display Pop-up Help"
+      href: how-to-display-pop-up-help.md
+    - name: Control Help Using ToolTips
+      href: control-help-using-tooltips.md
+  - name: Windows Forms Accessibility
+    href: windows-forms-accessibility.md
+    items:
+    - name: "Walkthrough: Creating an Accessible Windows-based Application"
+      href: walkthrough-creating-an-accessible-windows-based-application.md
+      items:
+      - name: Properties on Windows Forms Controls That Support Accessibility Guidelines
+        href: properties-on-windows-forms-controls-that-support-accessibility-guidelines.md
+  - name: Using WPF Controls
+    href: using-wpf-controls.md
+    items:
+    - name: "How to: Copy and Paste an ElementHost Control at Design Time"
+      href: how-to-copy-and-paste-an-elementhost-control-at-design-time.md
+    - name: "Walkthrough: Arranging WPF Content on Windows Forms at Design Time"
+      href: walkthrough-arranging-wpf-content-on-windows-forms-at-design-time.md
+    - name: "Walkthrough: Creating New WPF Content on Windows Forms at Design Time"
+      href: walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md
+    - name: "Walkthrough: Assigning WPF Content on Windows Forms at Design Time"
+      href: walkthrough-assigning-wpf-content-on-windows-forms-at-design-time.md
+    - name: "Walkthrough: Styling WPF Content"
+      href: walkthrough-styling-wpf-content.md

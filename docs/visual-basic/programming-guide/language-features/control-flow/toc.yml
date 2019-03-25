@@ -1,0 +1,17 @@
+- name: Control Flow
+  href: index.md
+  items:
+  - name: Decision Structures
+    href: decision-structures.md
+  - name: Loop Structures
+    href: loop-structures.md
+    items:
+    - name: "Walkthrough: Implementing IEnumerable(Of T)"
+      href: walkthrough-implementing-ienumerable-of-t.md
+  - name: Other Control Structures
+    href: other-control-structures.md
+    items:
+    - name: "How to: Dispose of a System Resource"
+      href: how-to-dispose-of-a-system-resource.md
+  - name: Nested Control Structures
+    href: nested-control-structures.md

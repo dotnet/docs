@@ -138,7 +138,7 @@ For more information, see [Live Unit Testing with Visual Studio 2017](/visualstu
 
 If you're building a project for multiple target frameworks, you can now select the target platform from the top-level menu. In the following figure, a project named SCD1 targets 64-bit macOS X 10.11 (`osx.10.11-x64`) and 64-bit Windows 10/Windows Server 2016 (`win10-x64`). You can select the target framework before selecting the project button, in this case to run a debug build.
 
-![Selecting the target framework when building a project](media/multitarget.png)
+![Screenshot showing target framework selection when building a project.](./media/dotnet-core-2-0/target-framework-selection.png)
 
 ### Side-by-side support for .NET Core SDKs
 

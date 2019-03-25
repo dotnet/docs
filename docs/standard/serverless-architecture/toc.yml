@@ -1,0 +1,35 @@
+- name: Serverless apps e-book
+  href: index.md
+  items:
+  - name: Architecture approaches
+    href: architecture-approaches.md
+    items:
+    - name: Architecture deployment approaches
+      href: architecture-deployment-approaches.md
+  - name: Serverless architecture
+    href: serverless-architecture.md
+    items:
+    - name: Serverless architecture considerations
+      href: serverless-architecture-considerations.md
+    - name: Serverless design examples
+      href: serverless-design-examples.md
+  - name: The Azure serverless platform
+    href: azure-serverless-platform.md
+    items:
+    - name: Azure Functions
+      href: azure-functions.md
+    - name: Application Insights
+      href: application-insights.md
+    - name: Azure Logic Apps
+      href: logic-apps.md
+    - name: Azure Event Grid
+      href: event-grid.md
+  - name: Durable Azure functions
+    href: durable-azure-functions.md
+    items:
+    - name: Orchestration Patterns
+      href: orchestration-patterns.md
+  - name: Serverless business scenarios and use cases
+    href: serverless-business-scenarios.md
+  - name: Conclusion
+    href: serverless-conclusion.md

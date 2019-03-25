@@ -235,7 +235,7 @@ Any component that transfers ownership of the <xref:System.Buffers.IMemoryOwner%
 
 **Rule #9: If you're wrapping a synchronous p/invoke method, your API should accept Span\<T> as a parameter.**
 
-According to Rule #1, <xref:System.Span%601> is generally the correct type to use for synchronous APIs. You can pin <xref:System.Span%601><T> instances via the [`fixed`](~/docs/csharp/language-reference/keywords/fixed-statement.md) keyword, as in the following example.
+According to Rule #1, <xref:System.Span%601> is generally the correct type to use for synchronous APIs. You can pin <xref:System.Span%601>\<T> instances via the [`fixed`](~/docs/csharp/language-reference/keywords/fixed-statement.md) keyword, as in the following example.
 
 ```csharp
 using System.Runtime.InteropServices;

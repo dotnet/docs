@@ -21,7 +21,7 @@ The *entity type* is the fundamental building block for describing the structure
 ## Example  
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`:  
   
- ![Example Model](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![Example model with three entity types](./media/entity-type/example-model-three-entity-types.gif)  
   
  Note that the properties of each entity type that make up its entity key are denoted with "(Key)".  
   

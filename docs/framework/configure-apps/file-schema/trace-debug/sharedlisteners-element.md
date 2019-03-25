@@ -79,7 +79,7 @@ Contains listeners that any source or trace element can reference.  These listen
       </listeners>  
     </trace>  
   </system.diagnostics>  
-</configuration></system.diagnostics>   
+</configuration>
 ```  
   
 ## See also

@@ -21,11 +21,9 @@ This topic demonstrates how to extend the [!INCLUDE[TLA#tla_winvista](../../../.
 
 ## Example
 
-The following image illustrates the glass frame extended into the address bar of Internet Explorer 7.
+The following image illustrates the glass frame extended into the address bar of Internet Explorer 7:
 
-**Internet Explorer with extended glass frame behind address bar.**
-
-![IE7 with glass frame extended behind address bar.](./media/ie7glasstopbar.PNG "IE7glasstopbar")
+![Screenshot showing glass frame extended behind IE7 address bar.](./media/extend-glass-frame-into-a-wpf-application/internet-explorer-glass-frame-extended-address-bar.png)
 
 To extend the glass frame on a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application, access to unmanaged [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] is needed. The following code example does a Platform Invoke (pinvoke) for the two [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] needed to extend the frame into the client area. Each of these [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] are declared in a class called **NonClientRegionAPI**.
 
@@ -142,11 +140,9 @@ The following example shows a simple window in which the frame is extended into 
 </Window>
 ```
 
-The following image illustrates the glass frame extended into a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application.
+The following image illustrates the glass frame extended into a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application:
 
-**Glass Frame Extended into a**  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]  **Application.**
-
-![Glass Frame Extended into a WPF application.](./media/wpfextendedglassintoclient.PNG "WPFextendedGlassIntoClient")
+![Screenshot showing a glass frame extended into a WPF application.](./media/extend-glass-frame-into-a-wpf-application/glass-frame-extended-wpf-application.png)
 
 ## See also
 

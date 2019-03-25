@@ -75,7 +75,7 @@
         <param name="message">text message.</param>
         <param name="helpKeyword">help keyword.</param>
         <param name="senderName">name of event sender.</param>
-        <summary>This constuctor allows all event data to be initialized.</summary>
+        <summary>This constructor allows all event data to be initialized.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@
         <param name="senderName">name of event sender.</param>
         <param name="eventTimestamp">Timestamp when event was created.</param>
         <param name="messageArgs">Message arguments.</param>
-        <summary>This constuctor that allows message arguments that are lazily formatted.</summary>
+        <summary>This constructor allows message arguments that are lazily formatted.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

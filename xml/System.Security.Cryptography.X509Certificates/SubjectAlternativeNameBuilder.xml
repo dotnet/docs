@@ -73,7 +73,7 @@
         <summary>Adds a DNS Name to the subject alternative name extension.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="dnsName" /> is is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+          <paramref name="dnsName" /> is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddEmailAddress">
@@ -195,7 +195,7 @@
         <summary>Adds a User Principal Name (UPN) to the subject alternative name extension.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="upn" /> is is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+          <paramref name="upn" /> is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Build">

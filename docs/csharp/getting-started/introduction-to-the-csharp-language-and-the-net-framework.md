@@ -52,7 +52,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  When the C# program is executed, the assembly is loaded into the CLR, which might take various actions based on the information in the manifest. Then, if the security requirements are met, the CLR performs just in time (JIT) compilation to convert the IL code to native machine instructions. The CLR also provides other services related to automatic garbage collection, exception handling, and resource management. Code that is executed by the CLR is sometimes referred to as "managed code," in contrast to "unmanaged code" which is compiled into native machine language that targets a specific system. The following diagram illustrates the compile-time and run-time relationships of C# source code files, the .NET Framework class libraries, assemblies, and the CLR.  
   
- ![From C&#35; source code to machine execution](../../csharp/getting-started/media/netarchitecture.png "NETarchitecture")  
+ ![From C&#35; source code to machine execution](./media/introduction-to-the-csharp-language-and-the-net-framework/net-architecture-relationships.png)  
   
  Language interoperability is a key feature of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. Because the IL code produced by the C# compiler conforms to the Common Type Specification (CTS), IL code generated from C# can interact with code that was generated from the .NET versions of Visual Basic, Visual C++, or any of more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages, and the types can reference each other just as if they were written in the same language.  
   

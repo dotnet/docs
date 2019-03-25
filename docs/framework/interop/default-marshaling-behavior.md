@@ -27,7 +27,7 @@ Interop marshaling operates on rules that dictate how data associated with metho
   
 ### Unmanaged signature  
   
-```  
+```cpp  
 BSTR MethodOne (BSTR b) {  
      return b;  
 }  
@@ -95,7 +95,7 @@ void m5([MarshalAs(UnmanagedType.FunctionPtr)] ref Delegate d);
   
 ### Type library representation  
   
-```  
+```cpp  
 importlib("mscorlib.tlb");  
 interface DelegateTest : IDispatch {  
 [id(…)] HRESULT m1([in] _Delegate* d);  
@@ -158,13 +158,13 @@ internal class DelegateTest {
 ## Default marshaling for value types  
  Most value types, such as integers and floating-point numbers, are [blittable](blittable-and-non-blittable-types.md) and do not require marshaling. Other [non-blittable](blittable-and-non-blittable-types.md) types have dissimilar representations in managed and unmanaged memory and do require marshaling. Still other types require explicit formatting across the interoperation boundary.  
   
- This topic provides the follow information on formatted value types:  
+ This section provides information on the following formatted value types:  
   
--   [Value Types Used in Platform Invoke](#cpcondefaultmarshalingforvaluetypesanchor2)  
+-   [Value Types Used in Platform Invoke](#value-types-used-in-platform-invoke)  
   
--   [Value Types Used in COM Interop](#cpcondefaultmarshalingforvaluetypesanchor3)  
+-   [Value Types Used in COM Interop](#value-types-used-in-com-interop)  
   
- In addition to describing formatted types, this topic identifies [System Value Types](#cpcondefaultmarshalingforvaluetypesanchor1) that have unusual marshaling behavior.  
+ In addition to describing formatted types, this topic identifies [System Value Types](#system-value-types) that have unusual marshaling behavior.  
   
  A formatted type is a complex type that contains information that explicitly controls the layout of its members in memory. The member layout information is provided using the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute. The layout can be one of the following <xref:System.Runtime.InteropServices.LayoutKind> enumeration values:  
   
@@ -180,7 +180,6 @@ internal class DelegateTest {
   
      Indicates that the members are laid out according to the <xref:System.Runtime.InteropServices.FieldOffsetAttribute> supplied with each field.  
   
-<a name="cpcondefaultmarshalingforvaluetypesanchor2"></a>   
 ### Value Types Used in Platform Invoke  
  In the following example the `Point` and `Rect` types provide member layout information using the **StructLayoutAttribute**.  
   
@@ -215,27 +214,28 @@ public struct Rect {
 }  
 ```  
   
- When marshaled to unmanaged code, these formatted types are marshaled as C-style structures. This provides an easy way of calling an unmanaged API that has structure arguments. For example, the `POINT` and `RECT` structures can be passed to the Microsoft Win32 API **PtInRect** function as follows:  
+ When marshaled to unmanaged code, these formatted types are marshaled as C-style structures. This provides an easy way of calling an unmanaged API that has structure arguments. For example, the `POINT` and `RECT` structures can be passed to the Microsoft Windows API **PtInRect** function as follows:  
   
-```  
+```cpp  
 BOOL PtInRect(const RECT *lprc, POINT pt);  
 ```  
   
  You can pass structures using the following platform invoke definition:  
   
-```vb  
-Class Win32API      
-   Declare Auto Function PtInRect Lib "User32.dll" _  
-    (ByRef r As Rect, p As Point) As Boolean  
-End Class  
-```  
+```vb
+Friend Class WindowsAPI
+    Friend Shared Declare Auto Function PtInRect Lib "User32.dll" (
+        ByRef r As Rect, p As Point) As Boolean
+End Class
+```
   
-```csharp  
-class Win32API {  
-   [DllImport("User32.dll")]  
-   public static extern Bool PtInRect(ref Rect r, Point p);  
-}  
-```  
+```csharp
+internal static class WindowsAPI
+{
+   [DllImport("User32.dll")]
+   internal static extern bool PtInRect(ref Rect r, Point p);
+}
+```
   
  The `Rect` value type must be passed by reference because the unmanaged API is expecting a pointer to a `RECT` to be passed to the function. The `Point` value type is passed by value because the unmanaged API expects the `POINT` to be passed on the stack. This subtle difference is very important. References are passed to unmanaged code as pointers. Values are passed to unmanaged code on the stack.  
   
@@ -247,7 +247,7 @@ class Win32API {
 > [!NOTE]
 >  If a reference type has members of non-blittable types, conversion is required twice: the first time when an argument is passed to the unmanaged side and the second time on return from the call. Due to this added overhead, In/Out parameters must be explicitly applied to an argument if the caller wants to see changes made by the callee.  
   
- In the following example, the `SystemTime` class has sequential member layout and can be passed to the Win32 API **GetSystemTime** function.  
+ In the following example, the `SystemTime` class has sequential member layout and can be passed to the Windows API **GetSystemTime** function.  
   
 ```vb  
 <StructLayout(LayoutKind.Sequential)> Public Class SystemTime  
@@ -278,25 +278,26 @@ End Class
   
  The **GetSystemTime** function is defined as follows:  
   
-```  
+```cpp  
 void GetSystemTime(SYSTEMTIME* SystemTime);  
 ```  
   
  The equivalent platform invoke definition for **GetSystemTime** is as follows:  
   
-```vb  
-Public Class Win32  
-   Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (ByVal sysTime _  
-   As SystemTime)  
-End Class  
-```  
+```vb
+Friend Class WindowsAPI
+    Friend Shared Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (
+        ByVal sysTime As SystemTime)
+End Class
+```
   
-```csharp  
-class Win32API {  
-   [DllImport("Kernel32.dll", CharSet=CharSet.Auto)]  
-   public static extern void GetSystemTime(SystemTime st);  
-}  
-```  
+```csharp
+internal static class WindowsAPI
+{
+   [DllImport("Kernel32.dll", CharSet = CharSet.Auto)]
+   internal static extern void GetSystemTime(SystemTime st);
+}
+```
   
  Notice that the `SystemTime` argument is not typed as a reference argument because `SystemTime` is a class, not a value type. Unlike value types, classes are always passed by reference.  
   
@@ -323,13 +324,12 @@ public class Point {
 }  
 ```  
   
-<a name="cpcondefaultmarshalingforvaluetypesanchor3"></a>   
 ### Value Types Used in COM Interop  
  Formatted types can also be passed to COM interop method calls. In fact, when exported to a type library, value types are automatically converted to structures. As the following example shows, the `Point` value type becomes a type definition (typedef) with the name `Point`. All references to the `Point` value type elsewhere in the type library are replaced with the `Point` typedef.  
   
  **Type library representation**  
   
-```  
+```cpp  
 typedef struct tagPoint {  
    int x;  
    int y;  
@@ -347,7 +347,6 @@ interface _Graphics {
 > [!NOTE]
 >  Structures having the <xref:System.Runtime.InteropServices.LayoutKind> enumeration value set to **Explicit** cannot be used in COM interop because the exported type library cannot express an explicit layout.  
   
-<a name="cpcondefaultmarshalingforvaluetypesanchor1"></a>   
 ### System Value Types  
  The <xref:System> namespace has several value types that represent the boxed form of the runtime primitive types. For example, the value type <xref:System.Int32?displayProperty=nameWithType> structure represents the boxed form of **ELEMENT_TYPE_I4**. Instead of marshaling these types as structures, as other formatted types are, you marshal them in the same way as the primitive types they box. **System.Int32** is therefore marshaled as **ELEMENT_TYPE_I4** instead of as a structure containing a single member of type **long**. The following table contains a list of the value types in the **System** namespace that are boxed representations of primitive types.  
   
@@ -382,7 +381,7 @@ interface _Graphics {
   
 #### Type library representation  
   
-```  
+```cpp  
 typedef double DATE;  
 typedef DWORD OLE_COLOR;  
   
@@ -424,7 +423,7 @@ public interface IValueTypes {
   
 #### Type library representation  
   
-```  
+```cpp  
 […]  
 interface IValueTypes : IDispatch {  
    HRESULT M1([in] DATE d);  

@@ -38,14 +38,14 @@ To get a list of the .NET Framework versions installed on a computer, you access
      - [Use the Registry Editor to find .NET Framework versions](#net_b)  
      - [Use code to query the registry for .NET Framework versions](#net_d)  
      - [Use PowerShell to query the registry for .NET Framework versions](#ps_a)
- - Find older .NET Framework versions (1&#8211;4):
+- Find older .NET Framework versions (1&#8211;4):
      - [Use the Registry Editor to find .NET Framework versions](#net_a)
      - [Use code to query the registry for .NET Framework versions](#net_c)   
 
 To get a list of the CLR versions installed on a computer, use a tool or code:  
   
- - [Use the Clrver tool](#clr_a)  
- - [Use code to query the Environment class](#clr_b)  
+- [Use the Clrver tool](#clr_a)  
+- [Use code to query the Environment class](#clr_b)  
 
 For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine which .NET Framework updates are installed](how-to-determine-which-net-framework-updates-are-installed.md). 
   

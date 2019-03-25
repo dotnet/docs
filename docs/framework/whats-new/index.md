@@ -868,7 +868,7 @@ This behavior is not desirable when connecting to Azure SQL Databases, since con
 
 The addition of the new `PoolBlockingPeriod` keyword lets you to select the blocking period best suited for your app. Values include:
 
-`Auto`
+<xref:System.Data.SqlClient.PoolBlockingPeriod.Auto>
 
 The connection pool blocking period for an application that connects to an Azure SQL Database is disabled, and the connection pool blocking period for an application that connects to any other SQL Server instance is enabled. This is the default value. If the Server endpoint name ends with any of the following, they are considered Azure SQL Databases:
 
@@ -880,11 +880,11 @@ The connection pool blocking period for an application that connects to an Azure
 
 - .database.cloudapi.de
 
-`AlwaysBlock`
+<xref:System.Data.SqlClient.PoolBlockingPeriod.AlwaysBlock>
 
 The connection pool blocking period is always enabled.
 
-`NeverBlock`
+<xref:System.Data.SqlClient.PoolBlockingPeriod.NeverBlock>
 
 The connection pool blocking period is always disabled.
 

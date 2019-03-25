@@ -45,7 +45,7 @@ If you use .NET Core SDK 2.1, the default publish mode for apps that target .NET
 
 ### Native dependencies
 
-If your app has native dependencies, it may not run on a different operating system. For example, if your app uses the native Win32 API, it won't run on macOS or Linux. You would need to provide platform-specific code and compile an executable for each platform.
+If your app has native dependencies, it may not run on a different operating system. For example, if your app uses the native Windows API, it won't run on macOS or Linux. You would need to provide platform-specific code and compile an executable for each platform.
 
 Consider also, if a library you referenced has a native dependency, your app may not run on every platform. However, it's possible a NuGet package you're referencing has included platform-specific versions to handle the required native dependencies for you.
 

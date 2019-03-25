@@ -169,7 +169,7 @@
       <Docs>
         <summary>Calls the host object to perform the work of the task.</summary>
         <returns>
-          <see langword="true" /> if the method was successfule; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,7 +407,7 @@ abstract class CustomToolTask : ToolTask
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Runs the exectuable file with the specified task parameters.</summary>
+        <summary>Runs the executable file with the specified task parameters.</summary>
         <returns>
           <see langword="true" /> if the task runs successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -445,7 +445,7 @@ abstract class CustomToolTask : ToolTask
         <param name="pathToTool">The path to the executable file.</param>
         <param name="responseFileCommands">The command line arguments to place in the .rsp file.</param>
         <param name="commandLineCommands">The command line arguments to pass directly to the executable file.</param>
-        <summary>Creates a temporoary response (.rsp) file and runs the executable file.</summary>
+        <summary>Creates a temporary response (.rsp) file and runs the executable file.</summary>
         <returns>The returned exit code of the executable file. If the task logged errors, but the executable returned an exit code of 0, this method returns -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -671,8 +671,8 @@ abstract class CustomToolTask : ToolTask
       </Parameters>
       <Docs>
         <param name="responseFilePath">The full path to the temporary .rsp file.</param>
-        <summary>Returns the command line switch used by the executable file to specifiy a response (.rsp) file.</summary>
-        <returns>The command line switch used by the executable file to specifiy a response (.rsp) file.</returns>
+        <summary>Returns the command line switch used by the executable file to specify a response (.rsp) file.</summary>
+        <returns>The command line switch used by the executable file to specify a response (.rsp) file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1545,7 +1545,7 @@ abstract class CustomToolTask : ToolTask
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether all task paratmeters are valid.</summary>
+        <summary>Indicates whether all task parameters are valid.</summary>
         <returns>
           <see langword="true" /> if all task parameters are valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

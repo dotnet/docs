@@ -70,7 +70,7 @@ if (largeItem.Elements[0] is SrgsText)
 SrgsOneOf itemSize = new SrgsOneOf(new SrgsItem[]   
   { smallItem, mediumItem, largeItem });  
   
-// Create a new SrgsRule from the SrgsOneOf object, and specifiy its identifier.  
+// Create a new SrgsRule from the SrgsOneOf object, and specify its identifier.  
 SrgsRule size = new SrgsRule("Sizes", itemSize);  
   
 // Create an SrgsDocument object.  

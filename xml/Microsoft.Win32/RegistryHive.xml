@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `RegistryHive` values are used by the <xref:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey%2A> method to represent the top-level node of a requested key on a foreign (remote) machine. The node that can be opened with the OpenRemoteBaseKey method must be one of these top-level `RegistryKeys`. Further access to the subkeys of the identified node is available using using methods in <xref:Microsoft.Win32.RegistryKey>, so long as the user has appropriate permission.  
+ `RegistryHive` values are used by the <xref:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey%2A> method to represent the top-level node of a requested key on a foreign (remote) machine. The node that can be opened with the OpenRemoteBaseKey method must be one of these top-level `RegistryKeys`. Further access to the subkeys of the identified node is available using methods in <xref:Microsoft.Win32.RegistryKey>, so long as the user has appropriate permission.  
   
    
   

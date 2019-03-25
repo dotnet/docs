@@ -86,7 +86,7 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using using a workflow definition consisting of a single `DiceRoll` activity. The `DiceRoll` activity has two output arguments that represent the results of the dice roll operation. When the workflow completes, the outputs are retrieved in the <xref:System.Activities.WorkflowApplication.Completed%2A> handler, and the following output is displayed to the console.  
+ The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using a workflow definition consisting of a single `DiceRoll` activity. The `DiceRoll` activity has two output arguments that represent the results of the dice roll operation. When the workflow completes, the outputs are retrieved in the <xref:System.Activities.WorkflowApplication.Completed%2A> handler, and the following output is displayed to the console.  
   
 ```Output  
 Workflow aae3fb48-7229-4737-b969-d63e131b96b3 Completed.   
@@ -149,7 +149,7 @@ The two dice are 1 and 5.
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using using a workflow definition consisting of a single `Divide` activity that takes two input arguments, and a dictionary of input arguments containing the two values to be passed, keyed by argument name. The desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. When the workflow is completed, the following output is displayed to the console.  
+ The following example hosts a workflow using <xref:System.Activities.WorkflowApplication>. A <xref:System.Activities.WorkflowApplication> instance is constructed using a workflow definition consisting of a single `Divide` activity that takes two input arguments, and a dictionary of input arguments containing the two values to be passed, keyed by argument name. The desired workflow lifecycle events are handled, and the workflow is invoked with a call to <xref:System.Activities.WorkflowApplication.Run%2A>. When the workflow is completed, the following output is displayed to the console.  
   
 ```Output  
 Workflow 8dc844c1-bbf8-4b21-a9a2-05f89e416055 Completed  

@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- There is only one node (msbuild.exe process) per CPU. Only one project, target, and task can build at any time on a node. If a task is waiting, for example, for a spawned tool or some other event to complete, the task can call Yield, which returns immediately. This lets the node build a target in another project, if any are available.  When the task is ready to continue, it should call <xref:Microsoft.Build.Framework.IBuildEngine3.Reacquire%2A>. As a rough rule, if a task expects that an operation will take more than 20 or 30 seconds, it can choose to call `Yield` before it starts the operation, and `Reaquire` when the operation is complete.  
+ There is only one node (msbuild.exe process) per CPU. Only one project, target, and task can build at any time on a node. If a task is waiting, for example, for a spawned tool or some other event to complete, the task can call Yield, which returns immediately. This lets the node build a target in another project, if any are available.  When the task is ready to continue, it should call <xref:Microsoft.Build.Framework.IBuildEngine3.Reacquire%2A>. As a rough rule, if a task expects that an operation will take more than 20 or 30 seconds, it can choose to call `Yield` before it starts the operation, and `Reacquire` when the operation is complete.  
   
  ]]></format>
         </remarks>

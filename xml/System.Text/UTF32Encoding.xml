@@ -1684,7 +1684,7 @@
    
   
 ## Examples  
- The following example encodes a string into two arrays arrays of bytes, one in little-endian order and the other in big-endian order. It then decodes the bytes back into a string.  
+ The following example encodes a string into two arrays of bytes, one in little-endian order and the other in big-endian order. It then decodes the bytes back into a string.  
   
  [!code-csharp[System.Text.UTF32Encoding.GetString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.utf32encoding.getstring/CS/getstring.cs#1)]
  [!code-vb[System.Text.UTF32Encoding.GetString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf32encoding.getstring/VB/GetString.vb#1)]  

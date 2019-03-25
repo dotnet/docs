@@ -296,7 +296,7 @@
         <Parameter Name="overlapped" Type="System.Threading.NativeOverlapped*" />
       </Parameters>
       <Docs>
-        <param name="overlapped">An unmanaged pointer to the <see cref="T:System.Threading.NativeOverlapped" /> structure structure to be freed.</param>
+        <param name="overlapped">An unmanaged pointer to the <see cref="T:System.Threading.NativeOverlapped" /> structure to be freed.</param>
         <summary>Frees the memory associated with a <see cref="T:System.Threading.NativeOverlapped" /> structure allocated by the <see cref="Overload:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -304,7 +304,7 @@
 ## Remarks  
   
 > [!CAUTION]
->  You must call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method exactly once on every <xref:System.Threading.NativeOverlapped> unmanaged pointer allocated by using the <xref:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped%2A> method. If you do not call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method, you will leak memory. If you call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method method more than once on the same <xref:System.Threading.NativeOverlapped> unmanaged pointer, memory will be corrupted.  
+>  You must call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method exactly once on every <xref:System.Threading.NativeOverlapped> unmanaged pointer allocated by using the <xref:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped%2A> method. If you do not call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method, you will leak memory. If you call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method more than once on the same <xref:System.Threading.NativeOverlapped> unmanaged pointer, memory will be corrupted.  
   
  ]]></format>
         </remarks>

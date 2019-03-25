@@ -111,7 +111,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <Docs>
         <param name="maxArrayLength">The maximum length of an array instance that may be stored in the pool.</param>
         <param name="maxArraysPerBucket">The maximum number of array instances that may be stored in each bucket in the pool. The pool groups arrays of similar lengths into buckets for faster access.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class using the specifed configuration.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class using the specified configuration.</summary>
         <returns>A new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class with the specified configuration.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

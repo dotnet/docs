@@ -316,7 +316,7 @@
       <Docs>
         <param name="name">The name of a property.</param>
         <param name="value">A byte array containing the value of the property to add.</param>
-        <summary>Adds a design-time property whose value is specifed as a byte array to the list of resources to write.</summary>
+        <summary>Adds a design-time property whose value is specified as a byte array to the list of resources to write.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The resource specified by the <paramref name="name" /> parameter has already been added.</exception>
       </Docs>

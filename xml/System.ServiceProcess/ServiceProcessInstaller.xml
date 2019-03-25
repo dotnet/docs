@@ -273,7 +273,7 @@
   
  Another option for running a service under a separate account is to use the computer's System account. That account, which is distinct from the Administrator account, requires no password. The System account's privileges may exceed those of the user currently logged in. Running under the System account rather than a user account avoids problems resulting from the user lacking a permission the service requires  
   
- If <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> is any value other than `User`, the specifed account (local or network service, or local system) is used, even if the <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> and <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> properties are populated.  
+ If <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> is any value other than `User`, the specified account (local or network service, or local system) is used, even if the <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> and <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> properties are populated.  
   
  ]]></format>
         </remarks>

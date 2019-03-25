@@ -857,7 +857,7 @@ The result of <paramref name="apply" /> contains a name or expression that is no
         <Parameter Name="argument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="argument">An expression that defines the set over which to perfom the distinct operation.</param>
+        <param name="argument">An expression that defines the set over which to perform the distinct operation.</param>
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbDistinctExpression" /> that removes duplicates from the given set argument.</summary>
         <returns>A new DbDistinctExpression that represents the distinct operation applied to the specified set argument.</returns>
         <remarks>To be added.</remarks>
@@ -1169,7 +1169,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
       </Parameters>
       <Docs>
         <param name="argument">The expression that provides the entity. This expression must have an entity result type.</param>
-        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbEntityRefExpression" /> that retrieves the ref of the specifed entity in structural form.</summary>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbEntityRefExpression" /> that retrieves the ref of the specified entity in structural form.</summary>
         <returns>A new DbEntityRefExpression that retrieves a reference to the specified entity.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1198,7 +1198,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
       </Parameters>
       <Docs>
         <param name="argument">The expression that provides the reference. This expression must have a reference Type with an Entity element type.</param>
-        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbRefKeyExpression" /> that retrieves the key values of the specifed reference in structural form.</summary>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbRefKeyExpression" /> that retrieves the key values of the specified reference in structural form.</summary>
         <returns>A new DbRefKeyExpression that retrieves the key values of the specified reference.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2363,7 +2363,7 @@ The expression produced by <paramref name="joinCondition" /> does not have a Boo
         <param name="type">Metadata for the relation type that represents the relationship.</param>
         <param name="fromEndName">The name of the property of the relation type that represents the end of the relationship from which navigation should occur.</param>
         <param name="toEndName">The name of the property of the relation type that represents the end of the relationship to which navigation should occur.</param>
-        <param name="navigateFrom">An expression the specifies the instance from which naviagtion should occur.</param>
+        <param name="navigateFrom">An expression the specifies the instance from which navigation should occur.</param>
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" /> representing the navigation of a composition or association relationship.</summary>
         <returns>A new DbRelationshipNavigationExpression representing the navigation of the specified from and to relation ends of the specified relation type from the specified navigation source instance.</returns>
         <remarks>

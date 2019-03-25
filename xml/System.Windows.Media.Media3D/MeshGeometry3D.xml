@@ -291,7 +291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The points specifed by this property represent the vertices of the triangles that make up a 3-D mesh.  
+ The points specified by this property represent the vertices of the triangles that make up a 3-D mesh.  
   
  The winding order (the order in which the Positions that make up each triangle of the mesh are specified) determines whether a given face is front-facing or back-facing.  Front-facing triangles are wound in counter-clockwise order; back-facing triangles are wound in clockwise order.  
   

@@ -3168,7 +3168,7 @@ These data point properties are:
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Saves the image to the specifed target.</summary>
+        <summary>Saves the image to the specified target.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="SaveImage">
@@ -3193,7 +3193,7 @@ These data point properties are:
       <Docs>
         <param name="imageStream">The stream in which the image is saved to.</param>
         <param name="format">The image format.</param>
-        <summary>Saves the image to the specifed stream.</summary>
+        <summary>Saves the image to the specified stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

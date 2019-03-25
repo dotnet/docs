@@ -38,7 +38,7 @@ OOB releases for core common language runtime (CLR) components are delivered thr
 
 4.  In the right pane, use the **Search** box to locate the package you would like to use. Some Microsoft packages are identified by the Microsoft .NET Framework logo, and all identify Microsoft as the publisher.
 
- ![NuGet Package Manager](../../../docs/framework/get-started/media/clrnugetdialog.png "clrNugetDialog")
+ ![Screenshot that shows the NuGet Package Manager.](./media/the-net-framework-and-out-of-band-releases/nuget-package-manager-dialog.png)
 
  As mentioned previously, when you deploy an app that uses an OOB package, the OOB assemblies will ship with your app package.
 

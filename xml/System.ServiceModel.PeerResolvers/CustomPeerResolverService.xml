@@ -474,9 +474,9 @@
       <Docs>
         <param name="updateInfo">
           <see cref="T:System.ServiceModel.PeerResolvers.UpdateInfo" /> that uniquely identifies a specific registration entry and provides updated information for it.</param>
-        <summary>Updates an existing registration entry entry in the registration lookup table of the peer resolver service.</summary>
+        <summary>Updates an existing registration entry in the registration lookup table of the peer resolver service.</summary>
         <returns>
-          <see cref="T:System.ServiceModel.PeerResolvers.UpdateInfo" /> that contains a copy of the updated registration entry entry.</returns>
+          <see cref="T:System.ServiceModel.PeerResolvers.UpdateInfo" /> that contains a copy of the updated registration entry.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">An entry for the specified registration entry could not be found, or the supplied <see cref="T:System.ServiceModel.PeerResolvers.UpdateInfo" /> object was not correctly formed.</exception>
         <exception cref="T:System.InvalidOperationException">A registration entry with the same GUID already exists in the lookup table, or the custom peer resolver service has not been started with a previous call to <see cref="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Open" />.</exception>

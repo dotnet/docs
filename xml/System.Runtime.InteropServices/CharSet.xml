@@ -124,7 +124,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Automatically marshal strings appropriately for the target operating system. The default is <see cref="F:System.Runtime.InteropServices.CharSet.Unicode" /> on Windows NT, Windows 2000, Windows XP, and the Windows Server 2003 family; the default is <see cref="F:System.Runtime.InteropServices.CharSet.Ansi" /> on Windows 98 and Windows Me. Although the common language runtime default is <see cref="F:System.Runtime.InteropServices.CharSet.Auto" />, languages may override this default. For example, by default C# marks all methods and types as <see cref="F:System.Runtime.InteropServices.CharSet.Ansi" />.</summary>
+        <summary>Automatically marshal strings appropriately for the target operating system. This value has the same behavior as <see cref="F:System.Runtime.InteropServices.CharSet.Unicode" />. Although the common language runtime default is <see cref="F:System.Runtime.InteropServices.CharSet.Auto" />, languages may override this default. For example, by default C# and Visual Basic mark all methods and types as <see cref="F:System.Runtime.InteropServices.CharSet.Ansi" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">

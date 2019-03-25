@@ -840,7 +840,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  -or-  
   
  The provider for the specified profile property did not recognize the specified property.</exception>
-        <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a value value on a property that was marked as read-only.</exception>
+        <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a value on a property that was marked as read-only.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyWrongTypeException">An attempt was made to assign a value to a property using an incompatible type.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>

@@ -16,17 +16,8 @@ In an application consisting entirely of managed code, the common language runti
   
  With [pinning optimization](copying-and-pinning.md), a blittable array can appear to operate as an In/Out parameter when interacting with objects in the same apartment. However, if you later export the code to a type library used to generate the cross-machine proxy, and that library is used to marshal your calls across apartments, the calls can revert to true In parameter behavior.  
   
- Arrays are complex by nature, and the distinctions between managed and unmanaged arrays warrant more information than other non-blittable types. This topic provides the following information on marshaling arrays:  
+ Arrays are complex by nature, and the distinctions between managed and unmanaged arrays warrant more information than other non-blittable types.  
   
--   [Managed Arrays](#cpcondefaultmarshalingforarraysanchor1)  
-  
--   [Unmanaged Arrays](#cpcondefaultmarshalingforarraysanchor2)  
-  
--   [Passing Array Parameters to .NET Code](#cpcondefaultmarshalingforarraysanchor3)  
-  
--   [Passing Arrays to COM](#cpcondefaultmarshalingforarraysanchor4)  
-  
-<a name="cpcondefaultmarshalingforarraysanchor1"></a>   
 ## Managed Arrays  
  Managed array types can vary; however, the <xref:System.Array?displayProperty=nameWithType> class is the base class of all array types. The **System.Array** class has properties for determining the rank, length, and lower and upper bounds of an array, as well as methods for accessing, sorting, searching, copying, and creating arrays.  
   
@@ -40,11 +31,9 @@ In an application consisting entirely of managed code, the common language runti
 |**ELEMENT_TYPE_CLASS**|Unknown|Unknown|Unknown|**System.Array**|  
 |**ELEMENT_TYPE_SZARRAY**|Specified by type.|1|0|*type* **[** *n* **]**|  
   
-<a name="cpcondefaultmarshalingforarraysanchor2"></a>   
 ## Unmanaged Arrays  
  Unmanaged arrays are either COM-style safe arrays or C-style arrays with fixed or variable length. Safe arrays are self-describing arrays that carry the type, rank, and bounds of the associated array data. C-style arrays are one-dimensional typed arrays with a fixed lower bound of 0. The marshaling service has limited support for both types of arrays.  
   
-<a name="cpcondefaultmarshalingforarraysanchor3"></a>   
 ## Passing Array Parameters to .NET Code  
  Both C-style arrays and safe arrays can be passed to .NET code from unmanaged code as either a safe array or a C-style array. The following table shows the unmanaged type value and the imported type.  
   
@@ -184,7 +173,6 @@ void New3(ref String ar);
   
  The interop marshaler uses the **CoTaskMemAlloc** and **CoTaskMemFree** methods to allocate and retrieve memory. Memory allocation performed by unmanaged code must also use these methods.  
   
-<a name="cpcondefaultmarshalingforarraysanchor4"></a>   
 ## Passing Arrays to COM  
  All managed array types can be passed to unmanaged code from managed code. Depending on the managed type and the attributes applied to it, the array can be accessed as a safe array or a C-style array, as shown in the following table.  
   

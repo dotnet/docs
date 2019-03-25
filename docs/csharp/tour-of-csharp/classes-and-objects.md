@@ -212,7 +212,7 @@ As shown by the example, a particular method can always be selected by explicitl
 
 Members that contain executable code are collectively known as the *function members* of a class. The preceding section describes methods, which are the primary kind of function members. This section describes the other kinds of function members supported by C#: constructors, properties, indexers, events, operators, and finalizers.
 
-The following shows a generic class called List<T>, which implements a growable list of objects. The class contains several examples of the most common kinds of function members.
+The following shows a generic class called List\<T>, which implements a growable list of objects. The class contains several examples of the most common kinds of function members.
 
 [!code-csharp[ListClass](../../../samples/snippets/csharp/tour/classes-and-objects/ListBasedExamples.cs#L4-L89)]
 

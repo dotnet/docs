@@ -102,7 +102,7 @@ You want to predict movie ratings, so the rating column is the `Label`. The othe
 | Features      | Label         |
 | ------------- |:-------------:|
 | `userId`        |    `rating`     |
-| `movieId `      |               |
+| `movieId`      |               |
 | `timestamp`     |               |
 
 It's up to you to decide which `Features` are used to predict the `Label`. You can also use methods like [Feature Permutation Importance](../how-to-guides/determine-global-feature-importance-in-model.md) to help with selecting the best `Features`.
@@ -112,7 +112,7 @@ In this case, you should eliminate the `timestamp` column as a `Feature` because
 | Features      | Label         |
 | ------------- |:-------------:|
 | `userId`        |    `rating`     |
-| `movieId `      |               |
+| `movieId`      |               |
 
 Next you must define your data structure for the input class.
 

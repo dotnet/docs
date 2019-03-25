@@ -40,19 +40,19 @@ Of these, only the first three are covered or introduced in this guide. The last
 ## Additional resources
 
 - **Mark Russinovich. Microservices: An application revolution powered by the cloud** \
-  [*https://azure.microsoft.com/blog/microservices-an-application-revolution-powered-by-the-cloud/*](https://azure.microsoft.com/blog/microservices-an-application-revolution-powered-by-the-cloud/)
+  [https://azure.microsoft.com/blog/microservices-an-application-revolution-powered-by-the-cloud/](https://azure.microsoft.com/blog/microservices-an-application-revolution-powered-by-the-cloud/)
 
 - **Martin Fowler. Microservices** \
-  [*https://www.martinfowler.com/articles/microservices.html*](https://www.martinfowler.com/articles/microservices.html)
+  [https://www.martinfowler.com/articles/microservices.html](https://www.martinfowler.com/articles/microservices.html)
 
 - **Martin Fowler. Microservice Prerequisites** \
-  [*https://martinfowler.com/bliki/MicroservicePrerequisites.html*](https://martinfowler.com/bliki/MicroservicePrerequisites.html)
+  [https://martinfowler.com/bliki/MicroservicePrerequisites.html](https://martinfowler.com/bliki/MicroservicePrerequisites.html)
 
 - **Jimmy Nilsson. Chunk Cloud Computing** \
-  [*https://www.infoq.com/articles/CCC-Jimmy-Nilsson*](https://www.infoq.com/articles/CCC-Jimmy-Nilsson)
+  [https://www.infoq.com/articles/CCC-Jimmy-Nilsson](https://www.infoq.com/articles/CCC-Jimmy-Nilsson)
 
 - **Cesar de la Torre. Containerized Docker Application Lifecycle with Microsoft Platform and Tools** (downloadable e-book) \
-  [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
+  [https://aka.ms/dockerlifecycleebook](https://aka.ms/dockerlifecycleebook)
 
 >[!div class="step-by-step"]
 >[Previous](service-oriented-architecture.md)

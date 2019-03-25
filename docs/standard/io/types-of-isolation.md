@@ -42,7 +42,7 @@ Access to isolated storage is always restricted to the user who created it. To i
   
  The following illustration demonstrates how stores are isolated in different scopes:  
   
- ![Diagram that shows isolation by user and assembly.](./media/isolated-storage-types.gif)  
+ ![Diagram that shows isolation by user and assembly.](./media/types-of-isolation/isolated-storage-types.gif)  
   
  Note that except for roaming stores, isolated storage is always implicitly isolated by computer because it uses the storage facilities that are local to a given computer.  
   

@@ -1110,7 +1110,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a collection of the item groups specified with the <see href="https://msdn.microsoft.com/library/aac894e3-a9f1-4bbc-a796-6ef07001f35b">ItemGroup</see> element in the project.</summary>
-        <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroupCollection" /> containing the item groups specifiied in the project.</value>
+        <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroupCollection" /> containing the item groups specified in the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1416,7 +1416,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a collection of the property groups specified with the <see href="/visualstudio/msbuild/propertygroup-element-msbuild">PropertyGroup</see> element in the project.</summary>
-        <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" /> containing the property groups specifiied in the project.</value>
+        <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" /> containing the property groups specified in the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

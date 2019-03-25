@@ -617,7 +617,7 @@
       </Parameters>
       <Docs>
         <param name="index">A value of type <see langword="int" />.</param>
-        <summary>Gets the specifiied early-bound extension object. If this object does not yet exist, creates an instance using the corresponding <see cref="T:System.Reflection.ConstructorInfo" />.</summary>
+        <summary>Gets the specified early-bound extension object. If this object does not yet exist, creates an instance using the corresponding <see cref="T:System.Reflection.ConstructorInfo" />.</summary>
         <returns>A value of type <see langword="object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

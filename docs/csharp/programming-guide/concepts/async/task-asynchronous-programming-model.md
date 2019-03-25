@@ -31,42 +31,38 @@ Asynchrony proves especially valuable for applications that access the UI thread
 ## <a name="BKMK_HowtoWriteanAsyncMethod"></a> Async methods are easier to write  
  The [async](../../../../csharp/language-reference/keywords/async.md) and [await](../../../../csharp/language-reference/keywords/await.md) keywords in C# are the heart of async programming. By using those two keywords, you can use resources in the .NET Framework, .NET Core, or the Windows Runtime to create an asynchronous method almost as easily as you create a synchronous method. Asynchronous methods that you define by using the `async` keyword are referred to as *async methods*.  
   
- The following example shows an async method. Almost everything in the code should look completely familiar to you. The comments call out the features that you add to create the asynchrony.  
+ The following example shows an async method. Almost everything in the code should look completely familiar to you. 
   
  You can find a complete Windows Presentation Foundation (WPF) example file at the end of this topic, and you can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://code.msdn.microsoft.com/Async-Sample-Example-from-9b9f505c).  
   
 ```csharp  
-// Three things to note in the signature:  
-//  - The method has an async modifier.   
-//  - The return type is Task or Task<T>. (See "Return Types" section.)  
-//    Here, it is Task<int> because the return statement returns an integer.  
-//  - The method name ends in "Async."  
 async Task<int> AccessTheWebAsync()  
 {   
     // You need to add a reference to System.Net.Http to declare client.  
     using (HttpClient client = new HttpClient())  
     {  
-        // GetStringAsync returns a Task<string>. That means that when you await the  
-        // task you'll get a string (urlContents).  
         Task<string> getStringTask = client.GetStringAsync("https://docs.microsoft.com");  
   
-        // You can do work here that doesn't rely on the string from GetStringAsync.  
         DoIndependentWork();  
   
-        // The await operator suspends AccessTheWebAsync.  
-        //  - AccessTheWebAsync can't continue until getStringTask is complete.  
-        //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
-        //  - Control resumes here when getStringTask is complete.   
-        //  - The await operator then retrieves the string result from getStringTask.  
         string urlContents = await getStringTask;  
   
-        // The return statement specifies an integer result.  
-        // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
         return urlContents.Length;  
     }  
 }  
 ```  
-  
+
+ You can learn several practices from the preceding sample. start with the method signature. It includes the `async` modifier. The return type is `Task<int>` (See "Return Types" section for more options). The method name ends in `Async`. In the body of the method, `GetStringAsync` returns a `Task<string>`. That means that when you `await` the task you'll get a `string` (`urlContents`).  Before awaiting the task, you can do work that doesn't rely on the `string` from `GetStringAsync`.  
+
+ Pay close attention to the `await` operator. It suspends `AccessTheWebAsync`;
+ 
+    - `AccessTheWebAsync` can't continue until `getStringTask` is complete.  
+    - Meanwhile, control returns to the caller of `AccessTheWebAsync`.  
+    - Control resumes here when `getStringTask` is complete.   
+    - The `await` operator then retrieves the `string `result from `getStringTask`.  
+
+ The return statement specifies an integer result. Any methods that are awaiting `AccessTheWebAsync` retrieve the length value.  
+
  If `AccessTheWebAsync` doesn't have any work that it can do between calling `GetStringAsync` and awaiting its completion, you can simplify your code by calling and awaiting in the following single statement.  
   
 ```csharp  
@@ -102,7 +98,7 @@ The following characteristics summarize what makes the previous example an async
   
  ![Trace an async program](./media/task-asynchronous-programming-model/navigation-trace-async-program.png "NavigationTrace")  
   
- The numbers in the diagram correspond to the following steps.  
+ The numbers in the diagram correspond to the following steps, initiated when the user clicks the "start" button.
   
 1.  An event handler calls and awaits the  `AccessTheWebAsync` async method.  
   

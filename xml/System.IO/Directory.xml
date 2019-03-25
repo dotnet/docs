@@ -3283,7 +3283,7 @@ Directory::CreateDirectory("Public\\Html");
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.IO.IOException">An I/O error occured (for example, a disk error).</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred (for example, a disk error).</exception>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code, such as calling native code with PInvoke or COM interop. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>

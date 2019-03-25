@@ -937,7 +937,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="data" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Runtime.InteropServices.ExternalException">An error occured when accessing the Clipboard.  The exception details will include an <see langword="HResult" /> that identifies the specific error; see <see cref="P:System.Runtime.InteropServices.ErrorWrapper.ErrorCode" />.</exception>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">An error occurred when accessing the Clipboard.  The exception details will include an <see langword="HResult" /> that identifies the specific error; see <see cref="P:System.Runtime.InteropServices.ErrorWrapper.ErrorCode" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to access data on the system Clipboard.  Associated enumeration:  **AllClipboard**.</permission>
         <altmember cref="M:System.Windows.Clipboard.GetDataObject" />
       </Docs>

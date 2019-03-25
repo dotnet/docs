@@ -84,7 +84,7 @@ This topic describes the features of the XAML language and demonstrates how you 
 ### XAML content properties  
  XAML specifies a language feature whereby a class can designate exactly one of its properties to be the XAML content property. Child elements of that object element are used to set the value of that content property. In other words, for the content property uniquely, you can omit a property element when setting that property in XAML markup and produce a more visible parent/child metaphor in the markup.  
   
- For example, <xref:System.Windows.Controls.Border> specifies a content property of <xref:System.Windows.Controls.Decorator.Child%2A>. The following two <xref:System.Windows.Controls.Border> elements are treated identically. The first one takes advantage of the content property syntax and omits the `Border.Child` property element. The second one shows `Border.Child` explicitly.  
+ For example, <xref:System.Windows.Controls.Border> specifies a content property of <xref:System.Windows.Controls.Decorator.Child%2A>. The following two <xref:System.Windows.Controls.Border> elements are treated identically. The second one takes advantage of the content property syntax and omits the `Border.Child` property element. The first one shows `Border.Child` explicitly.  
   
 ```xaml  
 <Border>  

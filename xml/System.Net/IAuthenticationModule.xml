@@ -37,7 +37,7 @@
    
   
 ## Examples  
- The following example creates creates a customized authentication class by implementing the <xref:System.Net.IAuthenticationModule> interface. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
+ The following example creates a customized authentication class by implementing the <xref:System.Net.IAuthenticationModule> interface. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
   
  [!code-cpp[System.Net.Authentication#6](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Authentication/CPP/custombasicauthentication.cpp#6)]
  [!code-csharp[System.Net.Authentication#6](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Authentication/CS/custombasicauthentication.cs#6)]

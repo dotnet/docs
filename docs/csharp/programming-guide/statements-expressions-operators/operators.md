@@ -67,9 +67,9 @@ In C#, an *operator* is a program element that is applied to one or more *operan
   
 |Expression|Description|  
 |----------------|-----------------|  
-|[*](../../../csharp/language-reference/operators/multiplication-operator.md)|Multiplication|  
-|[/](../../../csharp/language-reference/operators/division-operator.md)|Division|  
-|[%](../../../csharp/language-reference/operators/modulus-operator.md)|Remainder|  
+|[*](../../../csharp/language-reference/operators/arithmetic-operators.md#multiplication-operator-)|Multiplication|  
+|[/](../../../csharp/language-reference/operators/arithmetic-operators.md#division-operator-)|Division|  
+|[%](../../../csharp/language-reference/operators/arithmetic-operators.md#remainder-operator-)|Remainder|  
   
  **Additive Operators**  
   
@@ -120,7 +120,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |Expression|Description|  
 |----------------|-----------------|  
 |[=](../../../csharp/language-reference/operators/assignment-operator.md)|Assignment|  
-|x op= y|Compound assignment. Supports these operators: [+=](../../../csharp/language-reference/operators/addition-assignment-operator.md), [-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md), [*=](../../../csharp/language-reference/operators/multiplication-assignment-operator.md), [/=](../../../csharp/language-reference/operators/division-assignment-operator.md), [%=](../../../csharp/language-reference/operators/modulus-assignment-operator.md), [&=](../../../csharp/language-reference/operators/and-assignment-operator.md), [&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md), [^=](../../../csharp/language-reference/operators/xor-assignment-operator.md), [<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md), [>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md)|  
+|x op= y|Compound assignment. Supports these operators: [+=](../../../csharp/language-reference/operators/addition-assignment-operator.md), [-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md), [*=](../../../csharp/language-reference/operators/arithmetic-operators.md#compound-assignment), [/=](../../../csharp/language-reference/operators/arithmetic-operators.md#compound-assignment), [%=](../../../csharp/language-reference/operators/arithmetic-operators.md#compound-assignment), [&=](../../../csharp/language-reference/operators/and-assignment-operator.md), [&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md), [^=](../../../csharp/language-reference/operators/xor-assignment-operator.md), [<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md), [>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md)|  
 |(T x) [=>](../../../csharp/language-reference/operators/lambda-operator.md) y|Anonymous function (lambda expression)|  
   
 ## Associativity

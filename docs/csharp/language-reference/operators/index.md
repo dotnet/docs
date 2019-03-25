@@ -89,19 +89,19 @@ These operators have higher precedence than the next section and lower precedenc
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
-[x * y](multiplication-operator.md) – multiplication.
+[x * y](arithmetic-operators.md#multiplication-operator-) – multiplication.
 
-[x / y](division-operator.md) – division. If the operands are integers, the result is an integer truncated toward zero (for example, `-7 / 2 is -3`).
+[x / y](arithmetic-operators.md#division-operator-) – division. If the operands are integers, the result is an integer truncated toward zero (for example, `-7 / 2 is -3`).
 
-[x % y](remainder-operator.md) – remainder. If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.
+[x % y](arithmetic-operators.md#remainder-operator-) – remainder. If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.
 
 ## Additive operators
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
-[x + y](addition-operator.md) – addition.
+[x + y](arithmetic-operators.md#addition-operator-) – addition.
 
-[x – y](subtraction-operator.md) – subtraction.
+[x – y](arithmetic-operators.md#subtraction-operator--) – subtraction.
 
 ## Shift operators
 
@@ -189,9 +189,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [x *= y](multiplication-assignment-operator.md) – multiplication assignment. Multiply the value of `y` to the value of `x`, store the result in `x`, and return the new value.
 
-[x /= y](division-assignment-operator.md) – division assignment. Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.
+[x /= y](arithmetic-operators.md#compound-assignment) – division assignment. Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.
 
-[x %= y](remainder-assignment-operator.md) – remainder assignment. Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.
+[x %= y](arithmetic-operators.md#compound-assignment) – remainder assignment. Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.
 
 [x &= y](and-assignment-operator.md) – AND assignment. AND the value of `y` with the value of `x`, store the result in `x`, and return the new value.
 

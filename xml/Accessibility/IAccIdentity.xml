@@ -62,7 +62,7 @@
         <param name="dwIDChild">Specifies which child of the IAccessible object the caller wants to identify.</param>
         <param name="ppIDString">Address of a variable that receives a pointer to a callee-allocated identity string. The callee allocates the identity string using <see langword="CoTaskMemAlloc" />; the caller must release the identity string by using <see langword="CoTaskMemFree" /> when finished.</param>
         <param name="pdwIDStringLen">Address of a variable that receives the length, in bytes, of the callee-allocated identity string.</param>
-        <summary>The <see cref="T:Accessibility.IAccIdentity" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccIndentity" /> interface.</summary>
+        <summary>The <see cref="T:Accessibility.IAccIdentity" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccIdentity" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

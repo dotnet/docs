@@ -222,7 +222,7 @@
       </Parameters>
       <Docs>
         <param name="critical">
-          <see langword="true" /> to to mark the extension as <see cref="P:System.Security.Cryptography.X509Certificates.X509Extension.Critical" />; otherwise, <see langword="false" />. The default value is <see langword="false" />.</param>
+          <see langword="true" /> to mark the extension as <see cref="P:System.Security.Cryptography.X509Certificates.X509Extension.Critical" />; otherwise, <see langword="false" />. The default value is <see langword="false" />.</param>
         <summary>Returns an <see cref="T:System.Security.Cryptography.X509Certificates.X509Extension" /> object that represents the encoded subject alternative name extension.</summary>
         <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Extension" /> object that represents the encoded subject alternative name extension.</returns>
         <remarks>To be added.</remarks>

@@ -403,7 +403,7 @@
       <Docs>
         <param name="context">The editing context to apply this selection change to.</param>
         <param name="itemToToggle">The item to toggle selection for.</param>
-        <summary>A selection helper method that takes the existing selection in thecontext and creates a new selection that contains the toggled state of the item. If the item is to be added to the selection, it is added as the primary selection.</summary>
+        <summary>A selection helper method that takes the existing selection in the context and creates a new selection that contains the toggled state of the item. If the item is to be added to the selection, it is added as the primary selection.</summary>
         <returns>A Selection object that contains the new selection.</returns>
         <remarks>To be added.</remarks>
       </Docs>

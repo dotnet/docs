@@ -193,7 +193,7 @@ If this property is `false`, or if the address of the service is not based on HT
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Uri that specifes the address to which metadata is published for retrieval using an HTTP/Get request.</summary>
+        <summary>Gets or sets a Uri that specifies the address to which metadata is published for retrieval using an HTTP/Get request.</summary>
         <value>The address to which metadata is published for retrieval using an HTTP/Get request.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -298,7 +298,7 @@ If this property is `false`, or if the address of the service is not based on HT
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Uri that specifes the address to which metadata is published for retrieval using an HTTPS/Get request.</summary>
+        <summary>Gets or sets a Uri that specifies the address to which metadata is published for retrieval using an HTTPS/Get request.</summary>
         <value>The address to which metadata is published for retrieval using an HTTPS/Get request.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

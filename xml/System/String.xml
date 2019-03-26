@@ -531,7 +531,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
  ]]></format>
     </remarks>
     <related type="ExternalDocumentation" href="https://www.microsoft.com/en-us/download/details.aspx?id=10921">Sorting Weight Tables for Windows operating systems</related>
-    <related type="ExternalDocumentation" href="https://www.unicode.org/Public/UCA/latest/allkeys.txt">Default Unicode Collation Elemeent Table, for Linux and macOS</related>
+    <related type="ExternalDocumentation" href="https://www.unicode.org/Public/UCA/latest/allkeys.txt">Default Unicode Collation Element Table, for Linux and macOS</related>
     <threadsafe>This type is thread safe.</threadsafe>
     <altmember cref="T:System.IComparable" />
     <altmember cref="T:System.ICloneable" />
@@ -2389,7 +2389,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
   
  </description></item><item><term> Greater than zero  
   
- </term><description> The substring in <paramref name="strA" /> follllows the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> follows the substring in <paramref name="strB" /> in the sort order.  
   
  </description></item></list></returns>
         <remarks>
@@ -6631,7 +6631,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <Docs>
         <param name="value">The character to seek.</param>
         <param name="comparisonType">An enumeration value that specifies the rules for the search.</param>
-        <summary>Reports the zero-based index of the first occurrrence of the specxified Unicode character in this string. A parameter specifies the type of search to use for the specified character.</summary>
+        <summary>Reports the zero-based index of the first occurrence of the specified Unicode character in this string. A parameter specifies the type of search to use for the specified character.</summary>
         <returns>The zero-based index of <paramref name="value" /> if that character is found, or -1 if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -7035,7 +7035,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
    
   
 ## Examples  
- The following exampledemonstrates three overloads of the <xref:System.String.IndexOf%2A> method that find the first occurrence of a string within another string using different values of the <xref:System.StringComparison> enumeration.  
+ The following example demonstrates three overloads of the <xref:System.String.IndexOf%2A> method that find the first occurrence of a string within another string using different values of the <xref:System.StringComparison> enumeration.  
   
  [!code-csharp[system.string.IndexOfCmp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.IndexOfCmp/cs/iocmp.cs#1)]
  [!code-vb[system.string.IndexOfCmp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.IndexOfCmp/vb/iocmp.vb#1)]  
@@ -7119,7 +7119,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
    
   
 ## Examples  
- The following exampledemonstrates three overloads of the <xref:System.String.IndexOf%2A> method that find the first occurrence of a string within another string using different values of the <xref:System.StringComparison> enumeration.  
+ The following example demonstrates three overloads of the <xref:System.String.IndexOf%2A> method that find the first occurrence of a string within another string using different values of the <xref:System.StringComparison> enumeration.  
   
  [!code-csharp[system.string.IndexOfCmp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.IndexOfCmp/cs/iocmp.cs#1)]
  [!code-vb[system.string.IndexOfCmp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.IndexOfCmp/vb/iocmp.vb#1)]  
@@ -8845,7 +8845,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
    
   
 ## Examples  
- The following exampledemonstrates three overloads of the <xref:System.String.LastIndexOf%2A> method that find the last occurrence of a string within another string using different values of the <xref:System.StringComparison> enumeration.  
+ The following example demonstrates three overloads of the <xref:System.String.LastIndexOf%2A> method that find the last occurrence of a string within another string using different values of the <xref:System.StringComparison> enumeration.  
   
  [!code-csharp[system.string.LastIndexOfCmp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.LastIndexOfCmp/cs/liocmp.cs#1)]
  [!code-vb[system.string.LastIndexOfCmp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.LastIndexOfCmp/vb/liocmp.vb#1)]  
@@ -9101,7 +9101,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
    
   
 ## Examples  
- The following exampledemonstrates three overloads of the <xref:System.String.LastIndexOf%2A> method that find the last occurrence of a string within another string using different values of the <xref:System.StringComparison> enumeration.  
+ The following example demonstrates three overloads of the <xref:System.String.LastIndexOf%2A> method that find the last occurrence of a string within another string using different values of the <xref:System.StringComparison> enumeration.  
   
  [!code-csharp[system.string.LastIndexOfCmp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.LastIndexOfCmp/cs/liocmp.cs#1)]
  [!code-vb[system.string.LastIndexOfCmp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.LastIndexOfCmp/vb/liocmp.vb#1)]  
@@ -9188,7 +9188,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
    
   
 ## Examples  
- The following exampledemonstrates three overloads of the <xref:System.String.LastIndexOf%2A> method that find the last occurrence of a string within another string using different values of the <xref:System.StringComparison> enumeration.  
+ The following example demonstrates three overloads of the <xref:System.String.LastIndexOf%2A> method that find the last occurrence of a string within another string using different values of the <xref:System.StringComparison> enumeration.  
   
  [!code-csharp[system.string.LastIndexOfCmp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.LastIndexOfCmp/cs/liocmp.cs#1)]
  [!code-vb[system.string.LastIndexOfCmp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.LastIndexOfCmp/vb/liocmp.vb#1)]  

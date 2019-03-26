@@ -56,7 +56,7 @@ The following illustration shows the `students` array. For each element of the a
 
 - The value that’s contained in the element represents the number of students in that grade.
 
-![Picture of array showing numbers of students](./media/index/students-array-elements.gif)
+![Diagram showing an array of the numbers of students](./media/index/students-array-elements.gif)
 
 The following example contains the Visual Basic code that creates and uses the array:
 

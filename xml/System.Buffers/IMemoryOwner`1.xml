@@ -39,7 +39,7 @@ While a buffer can have multiple consumers, it can only have a single owner at a
 
 - Destroy the buffer when it is no longer in use.
 
-Because the `IMemoryOwner<T>` object implements the <xref:System.IDisposable> interface, you should call its <xref:System.IDisposable.Dispose%2A> method only after the memory buffer is no longer needed and you have destroyed it. You should *not* dispose of the `IMemoryOnwer<T>` object while a reference to its memory is available. This means that the type in which `IMemoryOwner<T>` is declared should not have a <xref:System.Object.Finalize%2A> method.
+Because the `IMemoryOwner<T>` object implements the <xref:System.IDisposable> interface, you should call its <xref:System.IDisposable.Dispose%2A> method only after the memory buffer is no longer needed and you have destroyed it. You should *not* dispose of the `IMemoryOwner<T>` object while a reference to its memory is available. This means that the type in which `IMemoryOwner<T>` is declared should not have a <xref:System.Object.Finalize%2A> method.
 
    ]]></format>
     </remarks>

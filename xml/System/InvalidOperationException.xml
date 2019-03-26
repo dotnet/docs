@@ -139,7 +139,7 @@
      [!code-csharp[System.InvalidOperationException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Iterating2.cs#2)]
      [!code-vb[System.InvalidOperationException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Iterating2.vb#2)]  
   
-     Note that you must establish the number of iterations before iterating the collection either by using a counter inside the loop that will exit the loop appropraitely, by iterating backward, from `Count` - 1 to 0, or, as the example does, by assigning the number of elements in the array to a variable and using it to establish the upper bound of the loop. Otherwise, if an element is added to the collection on every iteration, an endless loop results.  
+     Note that you must establish the number of iterations before iterating the collection either by using a counter inside the loop that will exit the loop appropriately, by iterating backward, from `Count` - 1 to 0, or, as the example does, by assigning the number of elements in the array to a variable and using it to establish the upper bound of the loop. Otherwise, if an element is added to the collection on every iteration, an endless loop results.  
   
 -   If it is not necessary to add elements to the collection while iterating it, you can store the elements to be added in a temporary collection that you add when iterating the collection has finished.  The following example uses this approach to add the square of numbers in a collection to a temporary collection, and then to combine the collections into a single array object.  
   

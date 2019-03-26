@@ -26,7 +26,13 @@ Metapackages are implicitly referenced based on the target framework(s) specifie
 
 ### Disabling Implicit Package References
 
-In some scenarios, it might make sense to disable implicit package references.  For example, if you have project `Api.csproj` that targets netcoreapp2.2, and another project `Api.Tests.csproj` that targets `netcoreapp2.2`, then `Api.Tests.csproj` will not know the correct implicit package reference to use (it may choose netcoreapp2.1 dependencies).
+In some scenarios, it might make sense to disable implicit package references.  For example, if you have project `Api.csproj` that targets netcoreapp2.2, and another project `Api.Tests.csproj` that targets `netcoreapp2.2`, then `Api.Tests.csproj` will not know the correct implicit package reference to use (it may choose netcoreapp2.1 dependencies).  To disable implicit package references, use `AllowExplicitVersion="true"` attribute on your `PackageReference`.  The following example demonstrates disabling implicit package references for the ASP.NET Core metapackage:
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.3" AllowExplicitVersion="true" />
+</ItemGroup>
+```
 
 ### Recommendations
 

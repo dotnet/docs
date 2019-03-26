@@ -1533,7 +1533,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Thismethod provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+ This method provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
   
  The C# language uses the [this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.Specialized.StringCollection.System%23Collections%23IList%23Item%2A> property. Visual Basic implements <xref:System.Collections.Specialized.StringCollection.System%23Collections%23IList%23Item%2A> as a default property, which provides the same indexing functionality.  
   

@@ -2330,7 +2330,7 @@ public void Info1(int arg1, int arg2, int arg3)
         <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
         <param name="arg1">A 64-bit integer argument.</param>
         <param name="arg2">A byte array argument.</param>
-        <summary>Writes the event data using the specified indentifier and 64-bit integer and byte array arguments.</summary>
+        <summary>Writes the event data using the specified identifier and 64-bit integer and byte array arguments.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

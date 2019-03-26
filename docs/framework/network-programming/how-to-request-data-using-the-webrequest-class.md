@@ -20,18 +20,18 @@ The following procedure describes the steps to request a resource, such as a Web
 1.  Create a <xref:System.Net.WebRequest> instance by calling <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> with the URI of a resource. For example: 
   
     ```csharp  
-    WebRequest request = WebRequest.Create("http://www.contoso.com/");  
+    WebRequest request = WebRequest.Create("http://www.contoso.com/default.html");  
     ```  
   
     ```vb  
-    Dim request as WebRequest = WebRequest.Create("http://www.contoso.com/")  
+    Dim request as WebRequest = WebRequest.Create("http://www.contoso.com/default.html")  
     ```  
   
     > [!NOTE]
     > The .NET Framework provides protocol-specific classes derived from the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes for URIs that begin with *http:*, *https:*, *ftp:*, and *file:*.
-    If you need to set or read protocol-specific properties, you must cast your `WebRequest` object to a protocol-specific object type. For more information, see [Programming pluggable protocols](programming-pluggable-protocols.md). 
+    If you need to set or read protocol-specific properties, you must cast your <xref:System.Net.WebRequest> object to a protocol-specific object type. For more information, see [Programming pluggable protocols](programming-pluggable-protocols.md). 
   
-2.  Set any property values that you need in your `WebRequest` object. For example, to enable authentication, set the `Credentials` property to an instance of the <xref:System.Net.NetworkCredential> class:  
+2.  Set any property values that you need in your `WebRequest` object. For example, to enable authentication, set the <xref:System.Net.WebRequest.Credentials%2A?displayProperty=nameWithType> property to an instance of the <xref:System.Net.NetworkCredential> class:  
   
     ```csharp  
     request.Credentials = CredentialCache.DefaultCredentials;  
@@ -63,7 +63,7 @@ The following procedure describes the steps to request a resource, such as a Web
     Console.WriteLine(CType(response,HttpWebResponse).StatusDescription)  
     ```  
   
-5.  To get the stream containing response data sent by the server, call the <xref:System.Net.WebResponse.GetResponseStream%2A?displayProperty=nameWithType> method of your `WebResponse` object. For example:  
+5.  To get the stream containing response data sent by the server, call the <xref:System.Net.WebResponse.GetResponseStream%2A?displayProperty=nameWithType> method. For example:  
   
     ```csharp  
     Stream dataStream = response.GetResponseStream();  
@@ -73,7 +73,7 @@ The following procedure describes the steps to request a resource, such as a Web
     Dim dataStream As Stream = response.GetResponseStream()  
     ```  
   
-6.  After you've read the data from the response object, either close it with the <xref:System.Net.WebResponse.Close%2A?displayProperty=nameWithType> method or close the response stream with the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. If you don't close either the response or the stream, your application can run out of server connections and become unable to process additional requests. Because the `WebResponse.Close` method calls `Stream.Close` when it closes the response, it's not necessary to call `Close` on both the response and stream objects, although doing so isn't harmful. For example:
+6.  After you've read the data from the response object, either close it with the <xref:System.Net.WebResponse.Close%2A?displayProperty=nameWithType> method or close the response stream with the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. If you don't close either the response object or the stream, your application can run out of server connections and become unable to process additional requests. Because the `WebResponse.Close` method calls `Stream.Close` when it closes the response, it's not necessary to call `Close` on both the response and stream objects, although doing so isn't harmful. For example:
   
     ```csharp  
     response.Close();  

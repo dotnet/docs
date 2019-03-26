@@ -9,12 +9,15 @@
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-3.0">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -35,10 +38,13 @@
         <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="count" Type="System.Int32" />
-        <Parameter Name="messageType" Type="System.Net.WebSockets.WebSocketMessageType" />
-        <Parameter Name="endOfMessage" Type="System.Boolean" />
+        <Parameter Name="count" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="messageType" Type="System.Net.WebSockets.WebSocketMessageType" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="endOfMessage" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="count">To be added.</param>
@@ -59,6 +65,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -81,6 +90,9 @@
         <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -101,6 +113,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketMessageType</ReturnType>

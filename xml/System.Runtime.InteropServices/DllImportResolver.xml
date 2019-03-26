@@ -1,0 +1,31 @@
+﻿<Type Name="DllImportResolver" FullName="System.Runtime.InteropServices.DllImportResolver">
+  <TypeSignature Language="C#" Value="public delegate IntPtr DllImportResolver(string libraryName, Assembly assembly, Nullable&lt;DllImportSearchPath&gt; searchPath);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DllImportResolver extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DllImportResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function DllImportResolver(libraryName As String, assembly As Assembly, searchPath As Nullable(Of DllImportSearchPath)) As IntPtr " />
+  <TypeSignature Language="C++ CLI" Value="public delegate IntPtr DllImportResolver(System::String ^ libraryName, Assembly ^ assembly, Nullable&lt;DllImportSearchPath&gt; searchPath);" />
+  <TypeSignature Language="F#" Value="type DllImportResolver = delegate of string * Assembly * Nullable&lt;DllImportSearchPath&gt; -&gt; nativeint" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="libraryName" Type="System.String" />
+    <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+    <Parameter Name="searchPath" Type="System.Nullable&lt;System.Runtime.InteropServices.DllImportSearchPath&gt;" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.IntPtr</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="libraryName">To be added.</param>
+    <param name="assembly">To be added.</param>
+    <param name="searchPath">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

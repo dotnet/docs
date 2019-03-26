@@ -386,6 +386,42 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetSubArray&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[] GetSubArray&lt;T&gt; (T[] array, Range range);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T[] GetSubArray&lt;T&gt;(!!T[] array, valuetype System.Range range) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray``1(``0[],System.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static cli::array &lt;T&gt; ^ GetSubArray(cli::array &lt;T&gt; ^ array, Range range);" />
+      <MemberSignature Language="F#" Value="static member GetSubArray : 'T[] * Range -&gt; 'T[]" Usage="System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray (array, range)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="range" Type="System.Range" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetUninitializedObject">
       <MemberSignature Language="C#" Value="public static object GetUninitializedObject (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetUninitializedObject(class System.Type type) cil managed" />

@@ -12,6 +12,9 @@
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
   </TypeParameters>
@@ -48,6 +51,9 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class.</summary>
@@ -76,6 +82,9 @@ Note that this constructor is protected; it can only be called by classes derive
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ArrayPool&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -101,12 +110,15 @@ Note that this constructor is protected; it can only be called by classes derive
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ArrayPool&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="maxArrayLength" Type="System.Int32" />
-        <Parameter Name="maxArraysPerBucket" Type="System.Int32" />
+        <Parameter Name="maxArrayLength" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="maxArraysPerBucket" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="maxArrayLength">The maximum length of an array instance that may be stored in the pool.</param>
@@ -138,11 +150,14 @@ The instance of the <xref:System.Buffers.ArrayPool%601> class created by this me
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="minimumLength" Type="System.Int32" />
+        <Parameter Name="minimumLength" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="minimumLength">The minimum length of the array.</param>
@@ -172,12 +187,15 @@ This buffer is loaned to the caller and should be returned to the same pool usin
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
-        <Parameter Name="clearArray" Type="System.Boolean" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="clearArray" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">A buffer to return to the pool that was previously obtained using the <see cref="M:System.Buffers.ArrayPool`1.Rent(System.Int32)" /> method.</param>
@@ -207,6 +225,9 @@ Once a buffer has been returned to the pool, the caller gives up all ownership o
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ArrayPool&lt;T&gt;</ReturnType>

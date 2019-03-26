@@ -12,6 +12,9 @@
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
   </TypeParameters>
@@ -58,6 +61,9 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Buffers.MemoryManager`1" /> class.</summary>
@@ -78,6 +84,9 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -106,6 +115,9 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -137,6 +149,9 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -164,6 +179,9 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -193,6 +211,9 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -218,6 +239,9 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.MemoryHandle</ReturnType>
@@ -249,6 +273,9 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -272,6 +299,9 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -304,6 +334,9 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

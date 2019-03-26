@@ -76,8 +76,10 @@ The <xref:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo> class provide
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException"><paramref name="source" /> is an unstarted task.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="source" /> is an unstarted task.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsAsyncOperation&lt;TResult&gt;">
@@ -121,8 +123,10 @@ The <xref:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo> class provide
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException"><paramref name="source" /> is an unstarted task.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="source" /> is an unstarted task.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask">
@@ -160,7 +164,8 @@ Use this method to get a <xref:System.Threading.Tasks.Task> object for a Windows
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask">
@@ -198,7 +203,8 @@ Use this method to get a <xref:System.Threading.Tasks.Task> object for a Windows
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TProgress&gt;">
@@ -242,7 +248,8 @@ Calling this method overload is equivalent to calling the <xref:System.WindowsRu
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TProgress&gt;">
@@ -285,7 +292,8 @@ Use this method to get a <xref:System.Threading.Tasks.Task> object for a Windows
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TProgress&gt;">
@@ -329,7 +337,8 @@ Calling this method overload is equivalent to calling the <xref:System.WindowsRu
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TProgress&gt;">
@@ -373,7 +382,8 @@ Use this method to get a <xref:System.Threading.Tasks.Task> object for a Windows
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult&gt;">
@@ -414,7 +424,8 @@ Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Win
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult&gt;">
@@ -456,7 +467,8 @@ Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Win
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult,TProgress&gt;">
@@ -502,7 +514,8 @@ Calling this method overload is equivalent to calling the <xref:System.WindowsRu
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult,TProgress&gt;">
@@ -548,7 +561,8 @@ Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Win
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult,TProgress&gt;">
@@ -595,7 +609,8 @@ Calling this method overload is equivalent to calling the <xref:System.WindowsRu
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsTask&lt;TResult,TProgress&gt;">

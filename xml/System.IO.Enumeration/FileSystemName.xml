@@ -9,6 +9,9 @@
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -29,13 +32,16 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
-        <Parameter Name="name" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
-        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="expression" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="name" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="expression">To be added.</param>
@@ -57,13 +63,16 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
-        <Parameter Name="name" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
-        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="expression" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="name" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="expression">To be added.</param>
@@ -86,11 +95,14 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="expression" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="expression">To be added.</param>

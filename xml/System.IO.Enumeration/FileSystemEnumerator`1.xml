@@ -9,6 +9,9 @@
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
   </TypeParameters>
@@ -43,9 +46,12 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="directory" Type="System.String" />
-        <Parameter Name="options" Type="System.IO.EnumerationOptions" />
+        <Parameter Name="directory" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="options" Type="System.IO.EnumerationOptions" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="directory">To be added.</param>
@@ -66,11 +72,14 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="error" Type="System.Int32" />
+        <Parameter Name="error" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="error">To be added.</param>
@@ -93,6 +102,9 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
@@ -118,6 +130,9 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -139,11 +154,14 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" />
+        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="disposing">To be added.</param>
@@ -165,6 +183,9 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -188,11 +209,14 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="directory" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="directory" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="directory">To be added.</param>
@@ -215,6 +239,9 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -236,11 +263,14 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" />
+        <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="entry">To be added.</param>
@@ -261,11 +291,14 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" />
+        <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="entry">To be added.</param>
@@ -289,6 +322,9 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -310,11 +346,14 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" />
+        <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="entry">To be added.</param>

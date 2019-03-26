@@ -38,7 +38,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="ref">
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0">
           <Attributes>
             <Attribute FrameworkAlternate="netcore-2.1">
               <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>

@@ -32,7 +32,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveVCProjectOutput"/> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveVCProjectOutput" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -76,7 +76,8 @@
       <Parameters />
       <Docs>
         <summary>Executes the <c>ResolveVCProjectOutput</c> task.</summary>
-        <returns><see langword="true" /> if task execution succeeded; otherwise, <see langword="false" /></returns>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" /></returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

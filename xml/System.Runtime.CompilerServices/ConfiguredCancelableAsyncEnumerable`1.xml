@@ -9,6 +9,9 @@
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
   </TypeParameters>
@@ -39,6 +42,9 @@
         <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -64,6 +70,9 @@
         <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;+Enumerator</ReturnType>
       </ReturnValue>
@@ -84,6 +93,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;</ReturnType>

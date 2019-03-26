@@ -13,6 +13,9 @@
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
   </TypeParameters>
@@ -100,6 +103,9 @@ This allocation and copy operation can be eliminated by using either `Span<T>` o
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
@@ -131,6 +137,9 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
@@ -174,6 +183,9 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
         <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
@@ -216,6 +228,9 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -246,6 +261,9 @@ The `Clear` method sets the items in the <xref:System.Span%601> object to their 
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -283,6 +301,9 @@ This method copies all of `source` to `destination` even if `source` and `destin
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -307,6 +328,9 @@ This method copies all of `source` to `destination` even if `source` and `destin
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
@@ -358,6 +382,9 @@ To compare two <xref:System.Span%601> objects for equality, use the <xref:System
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -384,6 +411,9 @@ To compare two <xref:System.Span%601> objects for equality, use the <xref:System
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;+Enumerator</ReturnType>
@@ -415,6 +445,9 @@ Instead of calling the <xref:System.Span%601.GetEnumerator%2A> method directly, 
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
@@ -485,6 +518,9 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -509,6 +545,9 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
@@ -538,6 +577,9 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
@@ -569,6 +611,9 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -598,6 +643,9 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -622,6 +670,9 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -665,6 +716,9 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -693,6 +747,9 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
@@ -723,6 +780,9 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -752,6 +812,9 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -775,6 +838,37 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
       </Docs>
     </Member>
     <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public Span&lt;T&gt; Slice (Index startIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Span`1&lt;!T&gt; Slice(valuetype System.Index startIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Span`1.Slice(System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (startIndex As Index) As Span(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Span&lt;T&gt; Slice(Index startIndex);" />
+      <MemberSignature Language="F#" Value="member this.Slice : Index -&gt; Span&lt;'T&gt;" Usage="span.Slice startIndex" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startIndex" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="startIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
       <MemberSignature Language="C#" Value="public Span&lt;T&gt; Slice (int start);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Span`1&lt;!T&gt; Slice(int32 start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Span`1.Slice(System.Int32)" />
@@ -789,6 +883,9 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -806,6 +903,36 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
       </Docs>
     </Member>
     <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public Span&lt;T&gt; Slice (Range range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Span`1&lt;!T&gt; Slice(valuetype System.Range range) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Span`1.Slice(System.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Span&lt;T&gt; Slice(Range range);" />
+      <MemberSignature Language="F#" Value="member this.Slice : Range -&gt; Span&lt;'T&gt;" Usage="span.Slice range" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
       <MemberSignature Language="C#" Value="public Span&lt;T&gt; Slice (int start, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Span`1&lt;!T&gt; Slice(int32 start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Span`1.Slice(System.Int32,System.Int32)" />
@@ -820,6 +947,9 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -854,6 +984,9 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
       </ReturnValue>
@@ -885,6 +1018,9 @@ This method performs a heap allocation and therefore should be avoided if possib
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -915,6 +1051,9 @@ For a `Span<Char>`, the `ToString` method returns a <xref:System.String> that co
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

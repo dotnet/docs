@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains extension methods for the <see cref="T:Windows.Storage.IStorageFile"/> and <see cref="T:Windows.Storage.IStorageFolder"/> interfaces in the Windows Runtime when developing Windows Store apps.</summary>
+    <summary>Contains extension methods for the <see cref="T:Windows.Storage.IStorageFile" /> and <see cref="T:Windows.Storage.IStorageFolder" /> interfaces in the Windows Runtime when developing Windows Store apps.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[
 
@@ -185,7 +185,7 @@ The next example shows the XAML code that is associated with the previous exampl
         <Parameter Name="windowsRuntimeFile" Type="Windows.Storage.IStorageFile" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeFile">The Windows Runtime <see cref="T:Windows.Storage.IStorageFile"/> object to read from.</param>
+        <param name="windowsRuntimeFile">The Windows Runtime <see cref="T:Windows.Storage.IStorageFile" /> object to read from.</param>
         <summary>Retrieves a stream for reading from a specified file.</summary>
         <returns>A task that represents the asynchronous read operation.</returns>
         <remarks>
@@ -208,7 +208,8 @@ The next example shows the XAML code that is associated with the previous exampl
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeFile" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsRuntimeFile" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.IOException">The file could not be opened or retrieved as a stream.</exception>
       </Docs>
     </Member>
@@ -262,9 +263,11 @@ The next example shows the XAML code that is associated with the previous exampl
 [!code-xaml[windowsruntimestorageextensions#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestorageextensions/cs/blankpage2.xaml#3)]
 
 ]]></format>
-        </remarks>        
-        <exception cref="T:System.ArgumentNullException"><paramref name="rootDirectory" /> or <paramref name="relativePath" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="relativePath" /> is empty or contains only white-space characters.</exception>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rootDirectory" /> or <paramref name="relativePath" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="relativePath" /> is empty or contains only white-space characters.</exception>
         <exception cref="T:System.IO.IOException">The file could not be opened or retrieved as a stream.</exception>
       </Docs>
     </Member>
@@ -293,7 +296,7 @@ The next example shows the XAML code that is associated with the previous exampl
         <Parameter Name="windowsRuntimeFile" Type="Windows.Storage.IStorageFile" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeFile">The Windows Runtime <see cref="T:Windows.Storage.IStorageFile"/> object to write to.</param>
+        <param name="windowsRuntimeFile">The Windows Runtime <see cref="T:Windows.Storage.IStorageFile" /> object to write to.</param>
         <summary>Retrieves a stream for writing to a specified file.</summary>
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
@@ -316,7 +319,8 @@ The next example shows the XAML code that is associated with the previous exampl
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeFile" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsRuntimeFile" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.IOException">The file could not be opened or retrieved as a stream.</exception>
       </Docs>
     </Member>
@@ -346,12 +350,13 @@ The next example shows the XAML code that is associated with the previous exampl
         <Parameter Name="creationCollisionOption" Type="Windows.Storage.CreationCollisionOption" />
       </Parameters>
       <Docs>
-        <param name="rootDirectory">The Windows Runtime <see cref="T:Windows.Storage.IStorageFile"/> object that contains the file to write to.</param>
+        <param name="rootDirectory">The Windows Runtime <see cref="T:Windows.Storage.IStorageFile" /> object that contains the file to write to.</param>
         <param name="relativePath">The path, relative to the root folder, to the file to write to.</param>
         <param name="creationCollisionOption">The Windows Runtime <see cref="T:Windows.Storage.CreationCollisionOption" /> enumeration value that specifies the behavior to use when the name of the file to create is the same as the name of an existing file.</param>
         <summary>Retrieves a stream for writing to a file in the specified parent folder.</summary>
         <returns>A task that represents the asynchronous write operation.</returns>
-        <remarks><format type="text/markdown"><![CDATA[
+        <remarks>
+          <format type="text/markdown"><![CDATA[
 
 ## Remarks
 
@@ -371,8 +376,10 @@ The next example shows the XAML code that is associated with the previous exampl
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="rootDirectory" /> or <paramref name="relativePath" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="relativePath" /> is empty or contains only white-space characters.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rootDirectory" /> or <paramref name="relativePath" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="relativePath" /> is empty or contains only white-space characters.</exception>
         <exception cref="T:System.IO.IOException">The file could not be opened or retrieved as a stream.</exception>
       </Docs>
     </Member>

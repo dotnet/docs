@@ -1,0 +1,118 @@
+﻿<Type Name="Range+OffsetAndLength" FullName="System.Range+OffsetAndLength">
+  <TypeSignature Language="C#" Value="public struct Range.OffsetAndLength" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit Range/OffsetAndLength extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Range.OffsetAndLength" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Range.OffsetAndLength" />
+  <TypeSignature Language="C++ CLI" Value="public: value class Range::OffsetAndLength" />
+  <TypeSignature Language="F#" Value="type Range.OffsetAndLength = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OffsetAndLength (int offset, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 offset, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.OffsetAndLength.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (offset As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OffsetAndLength(int offset, int length);" />
+      <MemberSignature Language="F#" Value="new Range.OffsetAndLength : int * int -&gt; Range.OffsetAndLength" Usage="new System.Range.OffsetAndLength (offset, length)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deconstruct">
+      <MemberSignature Language="C#" Value="public void Deconstruct (out int offset, out int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] int32&amp; offset, [out] int32&amp; length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.OffsetAndLength.Deconstruct(System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Deconstruct (ByRef offset As Integer, ByRef length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Deconstruct([Runtime::InteropServices::Out] int % offset, [Runtime::InteropServices::Out] int % length);" />
+      <MemberSignature Language="F#" Value="member this.Deconstruct :  *  -&gt; unit" Usage="offsetAndLength.Deconstruct (offset, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" RefType="out" />
+        <Parameter Name="length" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Range.OffsetAndLength.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Range.OffsetAndLength.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public int Offset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
+      <MemberSignature Language="DocId" Value="P:System.Range.OffsetAndLength.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int" Usage="System.Range.OffsetAndLength.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

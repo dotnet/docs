@@ -12,6 +12,9 @@
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
@@ -51,6 +54,9 @@ A `MemoryHandle` instance represents a handle to a pinned block of memory. It is
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
@@ -87,6 +93,9 @@ A `MemoryHandle` instance represents a handle to a pinned block of memory. It is
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -109,6 +118,9 @@ A `MemoryHandle` instance represents a handle to a pinned block of memory. It is
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">

@@ -434,6 +434,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::ValueTask DisposeAsync();" />
       <MemberSignature Language="F#" Value="abstract member DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask&#xA;override this.DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask" Usage="textWriter.DisposeAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IAsyncDisposable.DisposeAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>

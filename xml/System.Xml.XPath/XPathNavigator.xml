@@ -8716,36 +8716,6 @@ XPathNodeIterator ni = nav.Select(expr);
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="Value">
-      <MemberSignature Language="C#" Value="public abstract string Value { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
-      <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathNavigator.Value" />
-      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Value { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Xml.XPath.XPathNavigator.Value" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XPath</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ValueAs">
       <MemberSignature Language="C#" Value="public override object ValueAs (Type returnType, System.Xml.IXmlNamespaceResolver nsResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ValueAs(class System.Type returnType, class System.Xml.IXmlNamespaceResolver nsResolver) cil managed" />

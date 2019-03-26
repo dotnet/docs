@@ -9,6 +9,9 @@
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
@@ -27,43 +30,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="All">
-      <MemberSignature Language="C#" Value="public static Range All ();" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Range All() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Range.All" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function All () As Range" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Range All();" />
-      <MemberSignature Language="F#" Value="static member All : unit -&gt; Range" Usage="System.Range.All " />
-      <MemberType>Method</MemberType>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Range (Index start, Index end);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Index start, valuetype System.Index end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.#ctor(System.Index,System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (start As Index, end As Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Range(Index start, Index end);" />
+      <MemberSignature Language="F#" Value="new Range : Index * Index -&gt; Range" Usage="new System.Range (start, end)" />
+      <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Range</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static Range Create (Index start, Index end);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Range Create(valuetype System.Index start, valuetype System.Index end) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Range.Create(System.Index,System.Index)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (start As Index, end As Index) As Range" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Range Create(Index start, Index end);" />
-      <MemberSignature Language="F#" Value="static member Create : Index * Index -&gt; Range" Usage="System.Range.Create (start, end)" />
-      <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Range</ReturnType>
-      </ReturnValue>
       <Parameters>
         <Parameter Name="start" Type="System.Index" />
         <Parameter Name="end" Type="System.Index" />
@@ -72,7 +53,30 @@
         <param name="start">To be added.</param>
         <param name="end">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="public static Range All { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Range All" />
+      <MemberSignature Language="DocId" Value="P:System.Range.All" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property All As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Range All { Range get(); };" />
+      <MemberSignature Language="F#" Value="member this.All : Range" Usage="System.Range.All" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,12 +92,43 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Index</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndAt">
+      <MemberSignature Language="C#" Value="public static Range EndAt (Index end);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Range EndAt(valuetype System.Index end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.EndAt(System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EndAt (end As Index) As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Range EndAt(Index end);" />
+      <MemberSignature Language="F#" Value="static member EndAt : Index -&gt; Range" Usage="System.Range.EndAt end" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Range</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="end" Type="System.Index" />
+      </Parameters>
+      <Docs>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,6 +143,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -137,6 +175,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -145,31 +186,6 @@
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FromStart">
-      <MemberSignature Language="C#" Value="public static Range FromStart (Index start);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Range FromStart(valuetype System.Index start) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Range.FromStart(System.Index)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromStart (start As Index) As Range" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Range FromStart(Index start);" />
-      <MemberSignature Language="F#" Value="static member FromStart : Index -&gt; Range" Usage="System.Range.FromStart start" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Range</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="start" Type="System.Index" />
-      </Parameters>
-      <Docs>
-        <param name="start">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -187,11 +203,42 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOffsetAndLength">
+      <MemberSignature Language="C#" Value="public Range.OffsetAndLength GetOffsetAndLength (int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Range/OffsetAndLength GetOffsetAndLength(int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.GetOffsetAndLength(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOffsetAndLength (length As Integer) As Range.OffsetAndLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Range::OffsetAndLength GetOffsetAndLength(int length);" />
+      <MemberSignature Language="F#" Value="member this.GetOffsetAndLength : int -&gt; Range.OffsetAndLength" Usage="range.GetOffsetAndLength length" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Range+OffsetAndLength</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -209,6 +256,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Index</ReturnType>
       </ReturnValue>
@@ -218,26 +268,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ToEnd">
-      <MemberSignature Language="C#" Value="public static Range ToEnd (Index end);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Range ToEnd(valuetype System.Index end) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Range.ToEnd(System.Index)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ToEnd (end As Index) As Range" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Range ToEnd(Index end);" />
-      <MemberSignature Language="F#" Value="static member ToEnd : Index -&gt; Range" Usage="System.Range.ToEnd end" />
+    <Member MemberName="StartAt">
+      <MemberSignature Language="C#" Value="public static Range StartAt (Index start);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Range StartAt(valuetype System.Index start) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Range.StartAt(System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StartAt (start As Index) As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Range StartAt(Index start);" />
+      <MemberSignature Language="F#" Value="static member StartAt : Index -&gt; Range" Usage="System.Range.StartAt start" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Range</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="end" Type="System.Index" />
+        <Parameter Name="start" Type="System.Index" />
       </Parameters>
       <Docs>
-        <param name="end">To be added.</param>
+        <param name="start">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -254,6 +307,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

@@ -9,6 +9,9 @@
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -29,6 +32,9 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MatchType</ReturnType>
       </ReturnValue>
@@ -48,6 +54,9 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.MatchType</ReturnType>

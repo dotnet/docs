@@ -11,6 +11,9 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -34,6 +37,9 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -41,8 +47,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" />
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -67,6 +73,9 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -74,8 +83,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" />
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -100,6 +109,9 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -107,11 +119,11 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
-        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" />
-        <Parameter Name="startIndex" Type="System.Int32" RefType="out" />
-        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" />
-        <Parameter Name="endIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="startIndex" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="endIndex" Type="System.Int32" RefType="out" Index="4" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -136,6 +148,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

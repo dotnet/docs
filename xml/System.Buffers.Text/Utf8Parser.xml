@@ -11,6 +11,9 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -33,14 +36,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Boolean" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.Boolean" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -65,14 +71,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Byte" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.Byte" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -97,14 +106,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.DateTime" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.DateTime" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -129,14 +141,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.DateTimeOffset" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.DateTimeOffset" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -161,14 +176,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Decimal" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.Decimal" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -193,14 +211,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Double" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.Double" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -225,14 +246,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Guid" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.Guid" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -257,14 +281,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int16" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.Int16" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -289,14 +316,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int32" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.Int32" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -321,14 +351,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int64" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.Int64" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -353,8 +386,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -362,10 +398,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.SByte" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.SByte" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -390,14 +426,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Single" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.Single" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -422,14 +461,17 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.TimeSpan" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.TimeSpan" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -454,8 +496,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -463,10 +508,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt16" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.UInt16" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -491,8 +536,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -500,10 +548,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt32" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.UInt32" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -528,8 +576,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -537,10 +588,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt64" RefType="out" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
-        <Parameter Name="standardFormat" Type="System.Char" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.UInt64" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="standardFormat" Type="System.Char" Index="3" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>

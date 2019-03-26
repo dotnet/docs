@@ -9,6 +9,9 @@
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
   </TypeParameters>
@@ -40,10 +43,13 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="directory" Type="System.String" />
-        <Parameter Name="transform" Type="System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindTransform" />
-        <Parameter Name="options" Type="System.IO.EnumerationOptions" />
+        <Parameter Name="directory" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="transform" Type="System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindTransform" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="options" Type="System.IO.EnumerationOptions" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="directory">To be added.</param>
@@ -68,6 +74,9 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -90,6 +99,9 @@
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindPredicate</ReturnType>
       </ReturnValue>
@@ -110,6 +122,9 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindPredicate</ReturnType>
@@ -133,6 +148,9 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>

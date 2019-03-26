@@ -9,6 +9,9 @@
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
@@ -28,16 +31,19 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Index (int value, bool fromEnd);" />
+      <MemberSignature Language="C#" Value="public Index (int value, bool fromEnd = false);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 value, bool fromEnd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Index.#ctor(System.Int32,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer, fromEnd As Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer, Optional fromEnd As Boolean = false)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Index(int value, bool fromEnd);" />
       <MemberSignature Language="F#" Value="new Index : int * bool -&gt; Index" Usage="new System.Index (value, fromEnd)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Int32" />
@@ -47,6 +53,30 @@
         <param name="value">To be added.</param>
         <param name="fromEnd">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public static Index End { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Index End" />
+      <MemberSignature Language="DocId" Value="P:System.Index.End" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property End As Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Index End { Index get(); };" />
+      <MemberSignature Language="F#" Value="member this.End : Index" Usage="System.Index.End" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Index</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,6 +94,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -90,6 +123,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -104,23 +140,58 @@
       </Docs>
     </Member>
     <Member MemberName="FromEnd">
-      <MemberSignature Language="C#" Value="public bool FromEnd { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool FromEnd" />
-      <MemberSignature Language="DocId" Value="P:System.Index.FromEnd" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromEnd As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FromEnd { bool get(); };" />
-      <MemberSignature Language="F#" Value="member this.FromEnd : bool" Usage="System.Index.FromEnd" />
-      <MemberType>Property</MemberType>
+      <MemberSignature Language="C#" Value="public static Index FromEnd (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Index FromEnd(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Index.FromEnd(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromEnd (value As Integer) As Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Index FromEnd(int value);" />
+      <MemberSignature Language="F#" Value="static member FromEnd : int -&gt; Index" Usage="System.Index.FromEnd value" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
+        <ReturnType>System.Index</ReturnType>
       </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
       <Docs>
+        <param name="value">To be added.</param>
         <summary>To be added.</summary>
-        <value>To be added.</value>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromStart">
+      <MemberSignature Language="C#" Value="public static Index FromStart (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Index FromStart(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Index.FromStart(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromStart (value As Integer) As Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Index FromStart(int value);" />
+      <MemberSignature Language="F#" Value="static member FromStart : int -&gt; Index" Usage="System.Index.FromStart value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Index</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,6 +207,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -143,6 +217,58 @@
       <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOffset">
+      <MemberSignature Language="C#" Value="public int GetOffset (int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetOffset(int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Index.GetOffset(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOffset (length As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetOffset(int length);" />
+      <MemberSignature Language="F#" Value="member this.GetOffset : int -&gt; int" Usage="index.GetOffset length" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFromEnd">
+      <MemberSignature Language="C#" Value="public bool IsFromEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFromEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Index.IsFromEnd" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFromEnd As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFromEnd { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFromEnd : bool" Usage="System.Index.IsFromEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,6 +284,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Index</ReturnType>
       </ReturnValue>
@@ -168,6 +297,30 @@
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public static Index Start { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Index Start" />
+      <MemberSignature Language="DocId" Value="P:System.Index.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Start As Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Index Start { Index get(); };" />
+      <MemberSignature Language="F#" Value="member this.Start : Index" Usage="System.Index.Start" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Index</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,6 +335,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -204,6 +360,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

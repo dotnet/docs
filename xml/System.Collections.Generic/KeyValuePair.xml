@@ -10,6 +10,9 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -32,6 +35,9 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;</ReturnType>
       </ReturnValue>
@@ -40,8 +46,8 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="key" Type="TKey" />
-        <Parameter Name="value" Type="TValue" />
+        <Parameter Name="key" Type="TKey" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="TValue" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TKey">To be added.</typeparam>

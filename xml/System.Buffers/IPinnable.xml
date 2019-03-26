@@ -12,6 +12,9 @@
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Provides a mechanism for pinning and unpinning objects to prevent the garbage collector from moving them.</summary>
@@ -40,6 +43,9 @@ The <xref:System.Buffers.MemoryManager%601> class implements the `IPinnable` int
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.MemoryHandle</ReturnType>
@@ -79,6 +85,9 @@ Call this method to indicate that the <xref:System.Buffers.IPinnable> object can
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1292,6 +1292,37 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Docs>
     </Member>
     <Member MemberName="Chars">
+      <MemberSignature Language="C#" Value="public char this[Index index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char Chars(valuetype System.Index)" />
+      <MemberSignature Language="DocId" Value="P:System.String.Chars(System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Chars(index As Index) As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char default[Index] { char get(Index index); };" />
+      <MemberSignature Language="F#" Value="member this.Chars(Index) : char" Usage="System.string.Chars" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Chars">
       <MemberSignature Language="C#" Value="public char this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char Chars(int32)" />
       <MemberSignature Language="DocId" Value="P:System.String.Chars(System.Int32)" />
@@ -1363,6 +1394,37 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
         <altmember cref="T:System.Char" />
         <altmember cref="M:System.String.GetEnumerator" />
         <altmember cref="T:System.Int32" />
+      </Docs>
+    </Member>
+    <Member MemberName="Chars">
+      <MemberSignature Language="C#" Value="public string this[Range range] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Chars(valuetype System.Range)" />
+      <MemberSignature Language="DocId" Value="P:System.String.Chars(System.Range)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Chars(range As Range) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[Range] { System::String ^ get(Range range); };" />
+      <MemberSignature Language="F#" Value="member this.Chars(Range) : string" Usage="System.string.Chars" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -11663,6 +11725,37 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
       </Docs>
     </MemberGroup>
     <Member MemberName="Substring">
+      <MemberSignature Language="C#" Value="public string Substring (Index startIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Substring(valuetype System.Index startIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.String.Substring(System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Substring (startIndex As Index) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Substring(Index startIndex);" />
+      <MemberSignature Language="F#" Value="member this.Substring : Index -&gt; string" Usage="string.Substring startIndex" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startIndex" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="startIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Substring">
       <MemberSignature Language="C#" Value="public string Substring (int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Substring(int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Substring(System.Int32)" />
@@ -11745,6 +11838,36 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
         <altmember cref="M:System.String.Replace(System.Char,System.Char)" />
         <altmember cref="M:System.String.Split(System.Char[])" />
         <altmember cref="M:System.String.Trim(System.Char[])" />
+      </Docs>
+    </Member>
+    <Member MemberName="Substring">
+      <MemberSignature Language="C#" Value="public string Substring (Range range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Substring(valuetype System.Range range) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.String.Substring(System.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Substring(Range range);" />
+      <MemberSignature Language="F#" Value="member this.Substring : Range -&gt; string" Usage="string.Substring range" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Substring">

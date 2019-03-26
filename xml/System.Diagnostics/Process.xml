@@ -2097,6 +2097,36 @@ There are problems accessing the performance counter API's used to get process i
         <altmember cref="M:System.Diagnostics.Process.Start" />
       </Docs>
     </Member>
+    <Member MemberName="Kill">
+      <MemberSignature Language="C#" Value="public void Kill (bool entireProcessTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Kill(bool entireProcessTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Process.Kill(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Kill (entireProcessTree As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Kill(bool entireProcessTree);" />
+      <MemberSignature Language="F#" Value="member this.Kill : bool -&gt; unit" Usage="process.Kill entireProcessTree" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entireProcessTree" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="entireProcessTree">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="LeaveDebugMode">
       <MemberSignature Language="C#" Value="public static void LeaveDebugMode ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void LeaveDebugMode() cil managed" />

@@ -3077,7 +3077,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether this assembly is held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
-        <value><see langword="true" /> if this assembly is held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this assembly is held in a collectible <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

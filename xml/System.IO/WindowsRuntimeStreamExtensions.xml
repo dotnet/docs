@@ -104,7 +104,8 @@ Here's the XAML code that is associated with the previous example.
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
       </Docs>
     </Member>
@@ -156,7 +157,8 @@ Here's the XAML code that is associated with the previous example.
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
       </Docs>
     </Member>
@@ -240,7 +242,8 @@ A default buffer size of 16,384 bytes is used when converting the stream. To spe
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStream">
@@ -287,8 +290,10 @@ In most situations, buffering improves the performance of stream operations. You
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="bufferSize" /> is negative.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="bufferSize" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStreamForRead">
@@ -342,7 +347,8 @@ Here's the XAML code that is associated with the previous example.
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStreamForRead">
@@ -371,7 +377,7 @@ Here's the XAML code that is associated with the previous example.
         <Parameter Name="bufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">The Windows Runtime <see xref="T:Windows.Storage.Streams.IInputStream"/> object to convert.</param>
+        <param name="windowsRuntimeStream">The Windows Runtime <see xref="T:Windows.Storage.Streams.IInputStream" /> object to convert.</param>
         <param name="bufferSize">The size, in bytes, of the buffer. This value cannot be negative, but it can be 0 (zero) to disable buffering.</param>
         <summary>Converts an input stream in the Windows Runtime to a managed stream in the .NET for Windows 8.x Store apps using the specified buffer size.</summary>
         <returns>The converted stream.</returns>
@@ -388,8 +394,10 @@ In most situations, buffering improves the performance of stream operations. You
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="bufferSize" /> is negative.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="bufferSize" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStreamForWrite">
@@ -417,7 +425,7 @@ In most situations, buffering improves the performance of stream operations. You
         <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IOutputStream" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">The Windows Runtime <see xref="T:Windows.Storage.Streams.IOutputStream"/> object to convert.</param>
+        <param name="windowsRuntimeStream">The Windows Runtime <see xref="T:Windows.Storage.Streams.IOutputStream" /> object to convert.</param>
         <summary>Converts an output stream in the Windows Runtime to a managed stream in the .NET for Windows 8.x Store apps.</summary>
         <returns>The converted stream.</returns>
         <remarks>
@@ -441,7 +449,8 @@ Here's the XAML code that is associated with the previous example.
 
 ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStreamForWrite">
@@ -488,8 +497,10 @@ In most situations, buffering improves the performance of stream operations. You
 
 ]]></format>
         </remarks>
-         <exception cref="T:System.ArgumentNullException"><paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="bufferSize" /> is negative.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="bufferSize" /> is negative.</exception>
       </Docs>
     </Member>
   </Members>

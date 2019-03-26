@@ -702,6 +702,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="HighDpiMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.HighDpiMode HighDpiMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Forms.HighDpiMode HighDpiMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.HighDpiMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HighDpiMode As HighDpiMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::HighDpiMode HighDpiMode { System::Windows::Forms::HighDpiMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.HighDpiMode : System.Windows.Forms.HighDpiMode" Usage="System.Windows.Forms.Application.HighDpiMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HighDpiMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Idle">
       <MemberSignature Language="C#" Value="public static event EventHandler Idle;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Idle" />
@@ -1498,6 +1519,30 @@ static class Program
         <altmember cref="P:System.Windows.Forms.PropertyGrid.UseCompatibleTextRendering" />
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
         <altmember cref="M:System.Drawing.Text.PrivateFontCollection.AddMemoryFont(System.IntPtr,System.Int32)" />
+      </Docs>
+    </Member>
+    <Member MemberName="SetHighDpiMode">
+      <MemberSignature Language="C#" Value="public static bool SetHighDpiMode (System.Windows.Forms.HighDpiMode highDpiMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SetHighDpiMode(valuetype System.Windows.Forms.HighDpiMode highDpiMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetHighDpiMode(System::Windows::Forms::HighDpiMode highDpiMode);" />
+      <MemberSignature Language="F#" Value="static member SetHighDpiMode : System.Windows.Forms.HighDpiMode -&gt; bool" Usage="System.Windows.Forms.Application.SetHighDpiMode highDpiMode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="highDpiMode" Type="System.Windows.Forms.HighDpiMode" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="highDpiMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSuspendState">

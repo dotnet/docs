@@ -155,5 +155,101 @@
         <summary>When a number is halfway between two others, it is rounded toward the nearest even number.</summary>
       </Docs>
     </Member>
+    <Member MemberName="ToNegativeInfinity">
+      <MemberSignature Language="C#" Value="ToNegativeInfinity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.MidpointRounding ToNegativeInfinity = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.MidpointRounding.ToNegativeInfinity" />
+      <MemberSignature Language="VB.NET" Value="ToNegativeInfinity" />
+      <MemberSignature Language="C++ CLI" Value="ToNegativeInfinity" />
+      <MemberSignature Language="F#" Value="ToNegativeInfinity = 3" Usage="System.MidpointRounding.ToNegativeInfinity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.MidpointRounding</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToPositiveInfinity">
+      <MemberSignature Language="C#" Value="ToPositiveInfinity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.MidpointRounding ToPositiveInfinity = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.MidpointRounding.ToPositiveInfinity" />
+      <MemberSignature Language="VB.NET" Value="ToPositiveInfinity" />
+      <MemberSignature Language="C++ CLI" Value="ToPositiveInfinity" />
+      <MemberSignature Language="F#" Value="ToPositiveInfinity = 4" Usage="System.MidpointRounding.ToPositiveInfinity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.MidpointRounding</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToZero">
+      <MemberSignature Language="C#" Value="ToZero" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.MidpointRounding ToZero = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.MidpointRounding.ToZero" />
+      <MemberSignature Language="VB.NET" Value="ToZero" />
+      <MemberSignature Language="C++ CLI" Value="ToZero" />
+      <MemberSignature Language="F#" Value="ToZero = 2" Usage="System.MidpointRounding.ToZero" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.MidpointRounding</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
   </Members>
 </Type>

@@ -333,7 +333,7 @@
       </Docs>
     </Member>
     <Member MemberName="AsRef&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static ref T AsRef&lt;T&gt; (in T source);" />
+      <MemberSignature Language="C#" Value="public static ref T AsRef&lt;T&gt; (ref T source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AsRef&lt;T&gt;([in]!!T&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AsRef``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsRef(Of T) (ByRef source As T) As T" />

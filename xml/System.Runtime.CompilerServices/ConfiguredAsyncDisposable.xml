@@ -1,0 +1,55 @@
+﻿<Type Name="ConfiguredAsyncDisposable" FullName="System.Runtime.CompilerServices.ConfiguredAsyncDisposable">
+  <TypeSignature Language="C#" Value="public struct ConfiguredAsyncDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ConfiguredAsyncDisposable extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConfiguredAsyncDisposable" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ConfiguredAsyncDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public value class ConfiguredAsyncDisposable" />
+  <TypeSignature Language="F#" Value="type ConfiguredAsyncDisposable = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DisposeAsync">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable DisposeAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable DisposeAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredAsyncDisposable.DisposeAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisposeAsync () As ConfiguredValueTaskAwaitable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable DisposeAsync();" />
+      <MemberSignature Language="F#" Value="member this.DisposeAsync : unit -&gt; System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable" Usage="configuredAsyncDisposable.DisposeAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

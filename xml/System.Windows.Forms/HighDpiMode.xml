@@ -1,0 +1,121 @@
+﻿<Type Name="HighDpiMode" FullName="System.Windows.Forms.HighDpiMode">
+  <TypeSignature Language="C#" Value="public enum HighDpiMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HighDpiMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HighDpiMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HighDpiMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class HighDpiMode" />
+  <TypeSignature Language="F#" Value="type HighDpiMode = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DpiUnaware">
+      <MemberSignature Language="C#" Value="DpiUnaware" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HighDpiMode DpiUnaware = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HighDpiMode.DpiUnaware" />
+      <MemberSignature Language="VB.NET" Value="DpiUnaware" />
+      <MemberSignature Language="C++ CLI" Value="DpiUnaware" />
+      <MemberSignature Language="F#" Value="DpiUnaware = 0" Usage="System.Windows.Forms.HighDpiMode.DpiUnaware" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HighDpiMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DpiUnawareGdiScaled">
+      <MemberSignature Language="C#" Value="DpiUnawareGdiScaled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HighDpiMode DpiUnawareGdiScaled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HighDpiMode.DpiUnawareGdiScaled" />
+      <MemberSignature Language="VB.NET" Value="DpiUnawareGdiScaled" />
+      <MemberSignature Language="C++ CLI" Value="DpiUnawareGdiScaled" />
+      <MemberSignature Language="F#" Value="DpiUnawareGdiScaled = 4" Usage="System.Windows.Forms.HighDpiMode.DpiUnawareGdiScaled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HighDpiMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PerMonitor">
+      <MemberSignature Language="C#" Value="PerMonitor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HighDpiMode PerMonitor = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HighDpiMode.PerMonitor" />
+      <MemberSignature Language="VB.NET" Value="PerMonitor" />
+      <MemberSignature Language="C++ CLI" Value="PerMonitor" />
+      <MemberSignature Language="F#" Value="PerMonitor = 2" Usage="System.Windows.Forms.HighDpiMode.PerMonitor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HighDpiMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PerMonitorV2">
+      <MemberSignature Language="C#" Value="PerMonitorV2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HighDpiMode PerMonitorV2 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HighDpiMode.PerMonitorV2" />
+      <MemberSignature Language="VB.NET" Value="PerMonitorV2" />
+      <MemberSignature Language="C++ CLI" Value="PerMonitorV2" />
+      <MemberSignature Language="F#" Value="PerMonitorV2 = 3" Usage="System.Windows.Forms.HighDpiMode.PerMonitorV2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HighDpiMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemAware">
+      <MemberSignature Language="C#" Value="SystemAware" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HighDpiMode SystemAware = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HighDpiMode.SystemAware" />
+      <MemberSignature Language="VB.NET" Value="SystemAware" />
+      <MemberSignature Language="C++ CLI" Value="SystemAware" />
+      <MemberSignature Language="F#" Value="SystemAware = 1" Usage="System.Windows.Forms.HighDpiMode.SystemAware" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HighDpiMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

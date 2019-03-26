@@ -831,12 +831,15 @@ Sub TimerCallback(state As Object)
     </Member>
     <Member MemberName="DisposeAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask DisposeAsync ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.Tasks.ValueTask DisposeAsync() cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask DisposeAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.DisposeAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function DisposeAsync () As ValueTask" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::ValueTask DisposeAsync();" />
-      <MemberSignature Language="F#" Value="member this.DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask" Usage="timer.DisposeAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::ValueTask DisposeAsync();" />
+      <MemberSignature Language="F#" Value="abstract member DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask&#xA;override this.DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask" Usage="timer.DisposeAsync " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IAsyncDisposable.DisposeAsync</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Timer</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>

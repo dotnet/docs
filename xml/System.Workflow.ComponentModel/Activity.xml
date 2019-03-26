@@ -1333,7 +1333,7 @@ public class SendEmail : Activity
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Returnsa null reference(`Nothing` in Visual Basic) if <xref:System.Workflow.ComponentModel.Activity> is a workflow or a root <xref:System.Workflow.ComponentModel.Activity>.  
+ Returns a null reference(`Nothing` in Visual Basic) if <xref:System.Workflow.ComponentModel.Activity> is a workflow or a root <xref:System.Workflow.ComponentModel.Activity>.  
   
  ]]></format>
         </remarks>

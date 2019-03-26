@@ -1,6 +1,9 @@
 - name: C# Operators
   href: index.md
   items:
+  - name: Arithmetic operators
+    href: arithmetic-operators.md
+    displayName: ++, --, +, -, *, /, %
   - name: "[] Operator"
     href: index-operator.md
   - name: () Operator
@@ -18,9 +21,9 @@
   - name: "* Operator"
     href: multiplication-operator.md
   - name: / Operator
-    href: division-operator.md
+    href: arithmetic-operators.md#division-operator-
   - name: "% Operator"
-    href: modulus-operator.md
+    href: arithmetic-operators.md#remainder-operator-
   - name: "& Operator"
     href: and-operator.md
   - name: "| Operator"
@@ -40,9 +43,9 @@
   - name: "?: Operator"
     href: conditional-operator.md
   - name: ++ Operator
-    href: increment-operator.md
+    href: arithmetic-operators.md#increment-operator-
   - name: -- Operator
-    href: decrement-operator.md
+    href: arithmetic-operators.md#decrement-operator---
   - name: "&& Operator"
     href: conditional-and-operator.md
   - name: "|| Operator"
@@ -66,9 +69,9 @@
   - name: "*= Operator"
     href: multiplication-assignment-operator.md
   - name: /= Operator
-    href: division-assignment-operator.md
+    href: arithmetic-operators.md#compound-assignment
   - name: "%= Operator"
-    href: modulus-assignment-operator.md
+    href: arithmetic-operators.md#compound-assignment
   - name: "&= Operator"
     href: and-assignment-operator.md
   - name: "|= Operator"

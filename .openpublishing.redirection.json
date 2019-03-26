@@ -431,16 +431,40 @@
             "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
         },
         {
+            "source_path":"docs/csharp/language-reference/operators/decrement-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#decrement-operator---"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/division-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/division-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#division-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/increment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#increment-operator-"
+        },
+        {
             "source_path": "docs/csharp/language-reference/operators/modulus-assignment-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-assignment-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/modulus-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/null-conditional-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/null-coalescing-operator"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/remainder-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/remainder-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-"
         },
         {
             "source_path": "docs/csharp/methods-lambda-expressions.md",

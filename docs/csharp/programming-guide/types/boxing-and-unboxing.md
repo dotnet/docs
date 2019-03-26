@@ -40,7 +40,7 @@ Boxing is the process of converting a [value type](../../../csharp/language-refe
   
  [!code-csharp[csProgGuideTypes#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#18)]  
   
- The result of this statement is creating an object reference `o`, on the stack, that references a value of the type `int`, on the heap. This value is a copy of the value-type value assigned to the variable `i`. The difference between the two variables, `i` and `o`, is illustrated in the following figure:  
+ The result of this statement is creating an object reference `o`, on the stack, that references a value of the type `int`, on the heap. This value is a copy of the value-type value assigned to the variable `i`. The difference between the two variables, `i` and `o`, is illustrated in the following image of boxing conversion:  
   
  ![Graphic showing the difference between i and o variables.](./media/boxing-and-unboxing/boxing-operation-i-o-variables.gif)    
   

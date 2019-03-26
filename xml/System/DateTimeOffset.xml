@@ -5610,8 +5610,8 @@ Me.ToUtcDateTime().ToFileTime()
         <param name="format">A format specifier that defines the required format of <paramref name="input" />.</param>
         <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
         <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" /></param>
-        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succedded, or <see cref="F:System.DateTimeOffset.MinValue" /> if the conversion failed. The conversion fails if the </param>
-        <summary>Converts the representation of a date and time in a character span to its <see cref="System.DateTimeOffset" /> equivalent using the specified format, culture-specific format information, and style. The format of the date and time representation must match the specied format exactly.</summary>
+        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue" /> if the conversion failed. The conversion fails if the </param>
+        <summary>Converts the representation of a date and time in a character span to its <see cref="System.DateTimeOffset" /> equivalent using the specified format, culture-specific format information, and style. The format of the date and time representation must match the specified format exactly.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="input" /> parameter is successfully converted; otherwise, <see langword="false" />.</returns>
         <remarks>

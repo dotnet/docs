@@ -57,7 +57,7 @@
       </Parameters>
       <Docs>
         <param name="serviceHost">The WCF service to monitor.</param>
-        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ServicePropertiesModel" /> class that provides property information for the specied WCF service.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ServicePropertiesModel" /> class that provides property information for the specified WCF service.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceHost" /> is <see langword="null" />.</exception>

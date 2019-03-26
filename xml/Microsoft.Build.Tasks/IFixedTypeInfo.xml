@@ -74,7 +74,7 @@
         <Parameter Name="ppvObj" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pUnkOuter">Pointer to IUNknown interface.</param>
+        <param name="pUnkOuter">Pointer to IUnknown interface.</param>
         <param name="riid">The GUID of the class.</param>
         <param name="ppvObj">Location to return the pointer to the interface.</param>
         <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.CreateInstance(System.Object,System.Guid@,System.Object@)" />.</summary>
@@ -485,7 +485,7 @@
  DISPATCH_PROPERTYPUTREF if the member is changed by using a reference assignment, rather than a value assignment. This value is only valid when the property accepts a reference to an object.</param>
         <param name="pDispParams">Points to a structure that contains an array of arguments, an array of DISPIDs for named arguments, and counts of the number of elements in each array.</param>
         <param name="pVarResult">Should be Null if the caller does not expect any result. Otherwise, it should be a pointer to the location at which the result is to be stored. If wFlags specifies DISPATCH_PROPERTYPUT or DISPATCH_PROPERTYPUTREF, pVarResultis ignored.</param>
-        <param name="pExcepInfo">Points to an exception information structure, which is filled in only if DISP_E_EXCEPTION is returned. If pExcepInfois Null on input, only an HRESULT error will be returned.</param>
+        <param name="pExcepInfo">Points to an exception information structure, which is filled in only if DISP_E_EXCEPTION is returned. If pExcepInfo is Null on input, only an HRESULT error will be returned.</param>
         <param name="puArgErr">If Invoke returns DISP_E_TYPEMISMATCH, puArgErr indicates the index (within rgvarg) of the argument with incorrect type. If more than one argument returns an error, puArgErr indicates only the first argument with an error. Arguments in pDispParams-&gt;rgvarg appear in reverse order, so the first argument is the one having the highest index in the array. Cannot be Null.</param>
         <summary>For a description of this member, see <see cref="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)" />.</summary>
         <remarks>To be added.</remarks>

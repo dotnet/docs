@@ -1,0 +1,503 @@
+- name: Controls
+  href: index.md
+  items:
+  - name: Controls by Category
+    href: controls-by-category.md
+  - name: WPF Content Model
+    href: wpf-content-model.md
+  - name: Control Library
+    href: control-library.md
+    items:
+    - name: Border
+      href: border.md
+      items:
+      - name: Animate a BorderThickness Value
+        href: how-to-animate-a-borderthickness-value.md
+    - name: BulletDecorator
+      href: bulletdecorator.md
+    - name: Button
+      href: button.md
+      items:
+      - name: Create a Button That Has an Image
+        href: how-to-create-a-button-that-has-an-image.md
+    - name: Calendar
+      href: calendar.md
+    - name: Canvas
+      href: canvas.md
+      items:
+      - name: How-to Topics
+        href: canvas-how-to-topics.md
+        items:
+        - name: Wrap a Border Around the Content of a Canvas
+          href: how-to-wrap-a-border-around-the-content-of-a-canvas.md
+        - name: Get or Set Canvas Positioning Properties
+          href: how-to-get-or-set-canvas-positioning-properties.md
+        - name: Create and Use a Canvas
+          href: how-to-create-and-use-a-canvas.md
+        - name: Use the Attached Properties of Canvas to Position Child Elements
+          href: how-to-use-the-attached-properties-of-canvas-to-position-child-elements.md
+        - name: Resize a Canvas by Using a Thumb
+          href: how-to-resize-a-canvas-by-using-a-thumb.md
+    - name: CheckBox
+      href: checkbox.md
+    - name: ComboBox
+      href: combobox.md
+    - name: ContextMenu
+      href: contextmenu.md
+      items:
+      - name: ContextMenu Overview
+        href: contextmenu-overview.md
+    - name: DataGrid
+      href: datagrid.md
+      items:
+      - name: Default Keyboard and Mouse Behavior in the DataGrid Control
+        href: default-keyboard-and-mouse-behavior-in-the-datagrid-control.md
+      - name: "How to: Add Row Details to a DataGrid Control"
+        href: how-to-add-row-details-to-a-datagrid-control.md
+      - name: "How to: Group, Sort, and Filter Data in the DataGrid Control"
+        href: how-to-group-sort-and-filter-data-in-the-datagrid-control.md
+      - name: "How to: Implement Validation with the DataGrid Control"
+        href: how-to-implement-validation-with-the-datagrid-control.md
+      - name: "Walkthrough: Display Data from a SQL Server Database in a DataGrid Control"
+        href: walkthrough-display-data-from-a-sql-server-database-in-a-datagrid-control.md
+      - name: Sizing Options in the DataGrid Control
+        href: sizing-options-in-the-datagrid-control.md
+    - name: DatePicker
+      href: datepicker.md
+    - name: DockPanel
+      href: dockpanel.md
+      items:
+      - name: How-to Topics
+        href: dockpanel-how-to-topics.md
+        items:
+        - name: Get or Set a Dock Value
+          href: how-to-get-or-set-a-dock-value.md
+        - name: Create a DockPanel
+          href: how-to-create-a-dockpanel.md
+        - name: Partition Space by Using the DockPanel Element
+          href: how-to-partition-space-by-using-the-dockpanel-element.md
+    - name: DocumentViewer
+      href: documentviewer.md
+    - name: Expander
+      href: expander.md
+      items:
+      - name: Expander Overview
+        href: expander-overview.md
+      - name: How-to Topics
+        href: expander-how-to-topics.md
+        items:
+        - name: Create an Expander with a ScrollViewer
+          href: how-to-create-an-expander-with-a-scrollviewer.md
+    - name: FlowDocumentPageViewer
+      href: flowdocumentpageviewer.md
+    - name: FlowDocumentReader
+      href: flowdocumentreader.md
+    - name: FlowDocumentScrollViewer
+      href: flowdocumentscrollviewer.md
+    - name: Frame
+      href: frame.md
+    - name: Grid
+      href: grid.md
+      items:
+      - name: How-to Topics
+        href: grid-how-to-topics.md
+        items:
+        - name: Build a Standard UI Dialog Box by Using Grid
+          href: how-to-build-a-standard-ui-dialog-box-by-using-grid.md
+        - name: Create a Complex Grid
+          href: how-to-create-a-complex-grid.md
+        - name: Create a Grid Element
+          href: how-to-create-a-grid-element.md
+        - name: Create and Use a GridLengthConverter Object
+          href: how-to-create-and-use-a-gridlengthconverter-object.md
+        - name: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections
+          href: manipulate-columns-and-rows-by-using-columndefinitionscollections.md
+        - name: Position the Child Elements of a Grid
+          href: how-to-position-the-child-elements-of-a-grid.md
+        - name: Share Sizing Properties Between Grids
+          href: how-to-share-sizing-properties-between-grids.md
+    - name: GridSplitter
+      href: gridsplitter.md
+      items:
+      - name: How-to Topics
+        href: gridsplitter-how-to-topics.md
+        items:
+        - name: Resize Rows with a GridSplitter
+          href: how-to-resize-rows-with-a-gridsplitter.md
+        - name: Resize Columns with a GridSplitter
+          href: how-to-resize-columns-with-a-gridsplitter.md
+        - name: Make Sure That a GridSplitter Is Visible
+          href: how-to-make-sure-that-a-gridsplitter-is-visible.md
+    - name: GroupBox
+      href: groupbox.md
+      items:
+      - name: Define a GroupBox Template
+        href: how-to-define-a-groupbox-template.md
+    - name: Image
+      href: image.md
+      items:
+      - name: How-to Topics
+        href: image-how-to-topics.md
+        items:
+        - name: Use the Image Element
+          href: how-to-use-the-image-element.md
+        - name: Convert an Image to Greyscale
+          href: how-to-convert-an-image-to-greyscale.md
+        - name: Crop an Image
+          href: how-to-crop-an-image.md
+        - name: Rotate an Image
+          href: how-to-rotate-an-image.md
+    - name: Label
+      href: label.md
+      items:
+      - name: Create a Control That Has an Access Key and Text Wrapping
+        href: how-to-create-a-control-that-has-an-access-key-and-text-wrapping.md
+    - name: ListBox
+      href: listbox.md
+      items:
+      - name: How-to Topics
+        href: listbox-how-to-topics.md
+        items:
+        - name: Bind a ListBox to Data
+          href: how-to-bind-a-listbox-to-data.md
+        - name: Get a ListBoxItem
+          href: how-to-get-a-listboxitem.md
+        - name: Improve the Scrolling Performance of a ListBox
+          href: how-to-improve-the-scrolling-performance-of-a-listbox.md
+    - name: ListView
+      href: listview.md
+      items:
+      - name: Overviews
+        href: listview-overviews.md
+        items:
+        - name: ListView Overview
+          href: listview-overview.md
+        - name: GridView Overview
+          href: gridview-overview.md
+        - name: GridView Column Header Styles and Templates Overview
+          href: gridview-column-header-styles-and-templates-overview.md
+      - name: How-to Topics
+        href: listview-how-to-topics.md
+        items:
+        - name: Sort a GridView Column When a Header Is Clicked
+          href: how-to-sort-a-gridview-column-when-a-header-is-clicked.md
+        - name: Create a Custom View Mode for a ListView
+          href: how-to-create-a-custom-view-mode-for-a-listview.md
+        - name: Use Templates to Style a ListView That Uses GridView
+          href: how-to-use-templates-to-style-a-listview-that-uses-gridview.md
+        - name: Create a Style for a Dragged GridView Column Header
+          href: how-to-create-a-style-for-a-dragged-gridview-column-header.md
+        - name: Display ListView Contents by Using a GridView
+          href: how-to-display-listview-contents-by-using-a-gridview.md
+        - name: Use Triggers to Style Selected Items in a ListView
+          href: how-to-use-triggers-to-style-selected-items-in-a-listview.md
+        - name: Create ListViewItems with a CheckBox
+          href: how-to-create-listviewitems-with-a-checkbox.md
+        - name: Display Data by Using GridViewRowPresenter
+          href: how-to-display-data-by-using-gridviewrowpresenter.md
+        - name: Group Items in a ListView That Implements a GridView
+          href: how-to-group-items-in-a-listview-that-implements-a-gridview.md
+        - name: Style a Row in a ListView That Implements a GridView
+          href: how-to-style-a-row-in-a-listview-that-implements-a-gridview.md
+        - name: Change the Horizontal Alignment of a Column in a ListView
+          href: how-to-change-the-horizontal-alignment-of-a-column-in-a-listview.md
+        - name: Handle the MouseDoubleClick Event for Each Item in a ListView
+          href: how-to-handle-the-mousedoubleclick-event-for-each-item-in-a-listview.md
+    - name: Menu
+      href: menu.md
+      items:
+      - name: Menu Overview
+        href: menu-overview.md
+    - name: Panel
+      href: panel.md
+      items:
+      - name: Panels Overview
+        href: panels-overview.md
+      - name: How-to Topics
+        href: panel-how-to-topics.md
+        items:
+        - name: Create a Custom Panel Element
+          href: how-to-create-a-custom-panel-element.md
+        - name: Override the Panel OnRender Method
+          href: how-to-override-the-panel-onrender-method.md
+        - name: Set the Height Properties of an Element
+          href: how-to-set-the-height-properties-of-an-element.md
+        - name: Set the Width Properties of an Element
+          href: how-to-set-the-width-properties-of-an-element.md
+    - name: PasswordBox
+      href: passwordbox.md
+    - name: Popup
+      href: popup.md
+      items:
+      - name: Popup Overview
+        href: popup-overview.md
+      - name: Popup Placement Behavior
+        href: popup-placement-behavior.md
+      - name: How-to Topics
+        href: popup-how-to-topics.md
+        items:
+        - name: Animate a Popup
+          href: how-to-animate-a-popup.md
+        - name: Specify a Custom Popup Position
+          href: how-to-specify-a-custom-popup-position.md
+    - name: ProgressBar
+      href: progressbar.md
+    - name: PrintDialog
+      href: printdialog.md
+    - name: RadioButton
+      href: radiobutton.md
+    - name: RepeatButton
+      href: repeatbutton.md
+    - name: RichTextBox
+      href: richtextbox.md
+      items:
+      - name: RichTextBox Overview
+        href: richtextbox-overview.md
+      - name: How-to Topics
+        href: richtextbox-how-to-topics.md
+        items:
+        - name: Extract the Text Content from a RichTextBox
+          href: how-to-extract-the-text-content-from-a-richtextbox.md
+        - name: Change Selection in a RichTextBox Programmatically
+          href: change-selection-in-a-richtextbox-programmatically.md
+        - name: Save, Load, and Print RichTextBox Content
+          href: how-to-save-load-and-print-richtextbox-content.md
+        - name: Position a Custom Context Menu in a RichTextBox
+          href: how-to-position-a-custom-context-menu-in-a-richtextbox.md
+    - name: ScrollBar
+      href: scrollbar.md
+      items:
+      - name: Customize the Thumb Size on a ScrollBar
+        href: how-to-customize-the-thumb-size-on-a-scrollbar.md
+    - name: ScrollViewer
+      href: scrollviewer.md
+      items:
+      - name: ScrollViewer Overview
+        href: scrollviewer-overview.md
+      - name: How-to Topics
+        href: scrollviewer-how-to-topics.md
+        items:
+        - name: Handle the ScrollChanged Event
+          href: how-to-handle-the-scrollchanged-event.md
+        - name: Scroll Content by Using the IScrollInfo Interface
+          href: how-to-scroll-content-by-using-the-iscrollinfo-interface.md
+        - name: Use the Content-Scrolling Methods of ScrollViewer
+          href: how-to-use-the-content-scrolling-methods-of-scrollviewer.md
+    - name: Separator
+      href: separator.md
+    - name: Slider
+      href: slider.md
+      items:
+      - name: Customize the Ticks on a Slider
+        href: how-to-customize-the-ticks-on-a-slider.md
+    - name: StackPanel
+      href: stackpanel.md
+      items:
+      - name: How-to Topics
+        href: stackpanel-how-to-topics.md
+        items:
+        - name: Choose Between StackPanel and DockPanel
+          href: how-to-choose-between-stackpanel-and-dockpanel.md
+        - name: Create a StackPanel
+          href: how-to-create-a-stackpanel.md
+        - name: Horizontally or Vertically Align Content in a StackPanel
+          href: how-to-horizontally-or-vertically-align-content-in-a-stackpanel.md
+    - name: StatusBar
+      href: statusbar.md
+    - name: TabControl
+      href: tabcontrol.md
+    - name: TextBlock
+      href: textblock.md
+      items:
+      - name: TextBlock Overview
+        href: textblock-overview.md
+    - name: TextBox
+      href: textbox.md
+      items:
+      - name: TextBox Overview
+        href: textbox-overview.md
+      - name: How-to Topics
+        href: textbox-how-to-topics.md
+        items:
+        - name: Create a Multiline TextBox Control
+          href: how-to-create-a-multiline-textbox-control.md
+        - name: Detect When Text in a TextBox Has Changed
+          href: how-to-detect-when-text-in-a-textbox-has-changed.md
+        - name: Enable Tab Characters in a TextBox Control
+          href: how-to-enable-tab-characters-in-a-textbox-control.md
+        - name: Get a Collection of Lines from a TextBox
+          href: how-to-get-a-collection-of-lines-from-a-textbox.md
+        - name: Make a TextBox Control Read-Only
+          href: how-to-make-a-textbox-control-read-only.md
+        - name: Position the Cursor at the Beginning or End of Text in a TextBox Control
+          href: position-the-cursor-at-the-beginning-or-end-of-text.md
+        - name: Retrieve a Text Selection
+          href: how-to-retrieve-a-text-selection.md
+        - name: Set Focus in a TextBox Control
+          href: how-to-set-focus-in-a-textbox-control.md
+        - name: Set the Text Content of a TextBox Control
+          href: how-to-set-the-text-content-of-a-textbox-control.md
+        - name: Enable Spell Checking in a Text Editing Control
+          href: how-to-enable-spell-checking-in-a-text-editing-control.md
+        - name: Use a Custom Context Menu with a TextBox
+          href: how-to-use-a-custom-context-menu-with-a-textbox.md
+        - name: Use Spell Checking with a Context Menu
+          href: how-to-use-spell-checking-with-a-context-menu.md
+        - name: Add a Watermark to a TextBox
+          href: how-to-add-a-watermark-to-a-textbox.md
+    - name: ToolBar
+      href: toolbar.md
+      items:
+      - name: ToolBar Overview
+        href: toolbar-overview.md
+      - name: Style Controls on a ToolBar
+        href: how-to-style-controls-on-a-toolbar.md
+    - name: ToolTip
+      href: tooltip.md
+      items:
+      - name: ToolTip Overview
+        href: tooltip-overview.md
+      - name: How-to Topics
+        href: tooltip-how-to-topics.md
+        items:
+        - name: Position a ToolTip
+          href: how-to-position-a-tooltip.md
+        - name: Use the BetweenShowDelay Property
+          href: how-to-use-the-betweenshowdelay-property.md
+    - name: TreeView
+      href: treeview.md
+      items:
+      - name: TreeView Overview
+        href: treeview-overview.md
+      - name: How-to Topics
+        href: treeview-how-to-topics.md
+        items:
+        - name: Create Simple or Complex TreeViews
+          href: how-to-create-simple-or-complex-treeviews.md
+        - name: Use SelectedValue, SelectedValuePath, and SelectedItem
+          href: how-to-use-selectedvalue-selectedvaluepath-and-selecteditem.md
+        - name: Bind a TreeView to Data That Has an Indeterminable Depth
+          href: how-to-bind-a-treeview-to-data-that-has-an-indeterminable-depth.md
+        - name: Improve the Performance of a TreeView
+          href: how-to-improve-the-performance-of-a-treeview.md
+        - name: Find a TreeViewItem in a TreeView
+          href: how-to-find-a-treeviewitem-in-a-treeview.md
+    - name: WrapPanel
+      href: wrappanel.md
+    - name: Viewbox
+      href: viewbox.md
+      items:
+      - name: Apply Stretch Properties to the Contents of a Viewbox
+        href: how-to-apply-stretch-properties-to-the-contents-of-a-viewbox.md
+  - name: Styles and Templates
+    href: styles-and-templates.md
+    items:
+    - name: Styling and Templating
+      href: styling-and-templating.md
+    - name: Customizing the Appearance of an Existing Control by Creating a ControlTemplate
+      href: customizing-the-appearance-of-an-existing-control.md
+    - name: "How to: Find ControlTemplate-Generated Elements"
+      href: how-to-find-controltemplate-generated-elements.md
+  - name: Control Customization
+    href: control-customization.md
+    items:
+    - name: Control Authoring Overview
+      href: control-authoring-overview.md
+    - name: Creating a Control That Has a Customizable Appearance
+      href: creating-a-control-that-has-a-customizable-appearance.md
+    - name: Guidelines for Designing Stylable Controls
+      href: guidelines-for-designing-stylable-controls.md
+    - name: Adorners
+      href: adorners.md
+      items:
+      - name: Adorners Overview
+        href: adorners-overview.md
+      - name: How-to Topics
+        href: adorners-how-to-topics.md
+        items:
+        - name: Implement an Adorner
+          href: how-to-implement-an-adorner.md
+        - name: Bind an Adorner to an Element
+          href: how-to-bind-an-adorner-to-an-element.md
+        - name: Adorn the Children of a Panel
+          href: how-to-adorn-the-children-of-a-panel.md
+        - name: Remove an Adorner from an Element
+          href: how-to-remove-an-adorner-from-an-element.md
+        - name: Remove all Adorners from an Element
+          href: how-to-remove-all-adorners-from-an-element.md
+    - name: Control Styles and Templates
+      href: control-styles-and-templates.md
+      items:
+      - name: Button Styles and Templates
+        href: button-styles-and-templates.md
+      - name: Calendar Styles and Templates
+        href: calendar-styles-and-templates.md
+      - name: CheckBox Styles and Templates
+        href: checkbox-styles-and-templates.md
+      - name: ComboBox Styles and Templates
+        href: combobox-styles-and-templates.md
+      - name: ContextMenu Styles and Templates
+        href: contextmenu-styles-and-templates.md
+      - name: DataGrid Styles and Templates
+        href: datagrid-styles-and-templates.md
+      - name: DatePicker Styles and Templates
+        href: datepicker-styles-and-templates.md
+      - name: DocumentViewer Styles and Templates
+        href: documentviewer-styles-and-templates.md
+      - name: Expander Styles and Templates
+        href: expander-styles-and-templates.md
+      - name: Frame Styles and Templates
+        href: frame-styles-and-templates.md
+      - name: GroupBox Styles and Templates
+        href: groupbox-styles-and-templates.md
+      - name: Label Styles and Templates
+        href: label-styles-and-templates.md
+      - name: ListBox Styles and Templates
+        href: listbox-styles-and-templates.md
+      - name: ListView Styles and Templates
+        href: listview-styles-and-templates.md
+      - name: Menu Styles and Templates
+        href: menu-styles-and-templates.md
+      - name: NavigationWindow Styles and Templates
+        href: navigationwindow-styles-and-templates.md
+      - name: PasswordBox Styles and Templates
+        href: passwordbox-styles-and-templates.md
+      - name: ProgressBar Styles and Templates
+        href: progressbar-styles-and-templates.md
+      - name: RadioButton Styles and Templates
+        href: radiobutton-styles-and-templates.md
+      - name: RepeatButton Styles and Templates
+        href: repeatbutton-styles-and-templates.md
+      - name: ScrollBar Styles and Templates
+        href: scrollbar-styles-and-templates.md
+      - name: ScrollViewer Styles and Templates
+        href: scrollviewer-styles-and-templates.md
+      - name: Slider Styles and Templates
+        href: slider-styles-and-templates.md
+      - name: StatusBar Styles and Templates
+        href: statusbar-styles-and-templates.md
+      - name: TabControl Styles and Templates
+        href: tabcontrol-styles-and-templates.md
+      - name: TextBox Styles and Templates
+        href: textbox-styles-and-templates.md
+      - name: Thumb Styles and Templates
+        href: thumb-styles-and-templates.md
+      - name: ToggleButton Styles and Templates
+        href: togglebutton-styles-and-templates.md
+      - name: ToolBar Styles and Templates
+        href: toolbar-styles-and-templates.md
+      - name: ToolTip Styles and Templates
+        href: tooltip-styles-and-templates.md
+      - name: TreeView Styles and Templates
+        href: treeview-styles-and-templates.md
+      - name: Window Styles and Templates
+        href: window-styles-and-templates.md
+    - name: UI Automation of a WPF Custom Control
+      href: ui-automation-of-a-wpf-custom-control.md
+    - name: "Walkthroughs: Create a Custom Animated Button"
+      href: walkthroughs-create-a-custom-animated-button.md
+      items:
+      - name: Create a Button by Using Microsoft Expression Blend
+        href: walkthrough-create-a-button-by-using-microsoft-expression-blend.md
+      - name: Create a Button by Using XAML
+        href: walkthrough-create-a-button-by-using-xaml.md

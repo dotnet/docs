@@ -20,9 +20,8 @@ Animations can alter the display and appearance of text in your application. The
   
  The following diagram shows the effect of the <xref:System.Windows.Controls.TextBlock> control changing its opacity from `1.00` to `0.00` during the 5-second interval defined by the <xref:System.Windows.Media.Animation.Timeline.Duration%2A>.  
   
- ![Text changing opacity from 1.00 to 0.00](./media/fadedtext01.png "FadedText01")  
-Text Opacity changing from 1.00 to 0.00  
-  
+ ![Text changing opacity from 1.00 to 0.00.](./media/how-to-apply-animations-to-text/faded-text-opacity-change.png)  
+   
  The following example uses a <xref:System.Windows.Media.Animation.ColorAnimation> to animate the foreground color of the text block. The foreground color value changes from one color to a second color over a duration of 5 seconds, and then reverses the color values and continues.  
   
  [!code-xaml[TextAnimationSample#TextAnimationSample3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextAnimationSample/CS/Window1.xaml#textanimationsample3)]  

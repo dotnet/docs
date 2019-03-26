@@ -71,7 +71,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 * **`--no-build`**
 
-  Doesn't build the project before packing. It also implicit sets the `--no-restore` flag.
+  Doesn't build the project before packing. It also implicitly sets the `--no-restore` flag.
 
 * **`--no-dependencies`**
 

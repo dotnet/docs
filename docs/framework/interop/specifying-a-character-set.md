@@ -20,11 +20,11 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
 -   **MessageBoxA**  
   
-     Provides 1-byte character ANSI formatting, distinguished by an "A" appended to the entry-point name. Calls to **MessageBoxA** always marshal strings in ANSI format, as is common on Windows 95 and Windows 98 platforms.  
+     Provides 1-byte character ANSI formatting, distinguished by an "A" appended to the entry-point name. Calls to **MessageBoxA** always marshal strings in ANSI format.  
   
 -   **MessageBoxW**  
   
-     Provides 2-byte character Unicode formatting, distinguished by a "W" appended to the entry-point name. Calls to **MessageBoxW** always marshal strings in Unicode format, as is common on Windows NT, Windows 2000, and Windows XP platforms.  
+     Provides 2-byte character Unicode formatting, distinguished by a "W" appended to the entry-point name. Calls to **MessageBoxW** always marshal strings in Unicode format.  
   
 ## String Marshaling and Name Matching  
  The `CharSet` field accepts the following values:  

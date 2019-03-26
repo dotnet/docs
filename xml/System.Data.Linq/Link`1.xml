@@ -147,7 +147,7 @@
 ## Remarks  
  "Loaded" means that the data was loaded during materialization or at deferred loading. "Assigned" means that you have manually given the data a value.  
   
- [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] uses this property to make sure that the <xref:System.Data.Linq.Link%601> has a value, so that accesing it will not trigger deferred loading.  
+ [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] uses this property to make sure that the <xref:System.Data.Linq.Link%601> has a value, so that accessing it will not trigger deferred loading.  
   
  ]]></format>
         </remarks>

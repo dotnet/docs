@@ -1539,7 +1539,7 @@
 ## Remarks  
  The value of this field is not equivalent to `null`. Use this field to efficiently determine whether an instance of <xref:System.IntPtr> has been set to a value other than zero.  
   
- For example, assume the variable, ip, is an instance of <xref:System.IntPtr>. You can determine if it has been set by comparing it to the value returned by a constructor, for example: " `if ip != new IntPtr(0)...` ". However, invoking a constructor to get an unintialized pointer is inefficient. It is better to code either " `if ip != IntPtr.Zero...` ", or " `if !IntPtr.Zero.Equals(ip)...` ".  
+ For example, assume the variable, ip, is an instance of <xref:System.IntPtr>. You can determine if it has been set by comparing it to the value returned by a constructor, for example: " `if ip != new IntPtr(0)...` ". However, invoking a constructor to get an uninitialized pointer is inefficient. It is better to code either " `if ip != IntPtr.Zero...` ", or " `if !IntPtr.Zero.Equals(ip)...` ".  
   
  When calling the Windows API from managed code, you can pass <xref:System.IntPtr.Zero?displayProperty=nameWithType> instead of `null` if an argument is expected to be either a pointer or a `null`. For example, the following call to the Windows `CreateFile` function supplies <xref:System.IntPtr.Zero?displayProperty=nameWithType> for the `pSecurityAttributes` and `hTemplateFile` argument values.  
   

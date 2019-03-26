@@ -1439,7 +1439,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `value` parameter is converted to milliseconds, which is converted to ticks, and that number of ticks is used to intialize the new <xref:System.TimeSpan>. Therefore, `value` will only be considered accurate to the nearest millisecond. Note that, because of the loss of precision of the <xref:System.Double> data type, this can generate an <xref:System.OverflowException> for values that are near but still in the range of either  <xref:System.TimeSpan.MinValue> or <xref:System.TimeSpan.MaxValue>, This is the cause of an <xref:System.OverflowException>, for example, in the following attempt to instantiate a <xref:System.TimeSpan> object.  
+ The `value` parameter is converted to milliseconds, which is converted to ticks, and that number of ticks is used to initialize the new <xref:System.TimeSpan>. Therefore, `value` will only be considered accurate to the nearest millisecond. Note that, because of the loss of precision of the <xref:System.Double> data type, this can generate an <xref:System.OverflowException> for values that are near but still in the range of either  <xref:System.TimeSpan.MinValue> or <xref:System.TimeSpan.MaxValue>, This is the cause of an <xref:System.OverflowException>, for example, in the following attempt to instantiate a <xref:System.TimeSpan> object.  
   
  [!code-csharp[System.TimeSpan.FromMinutes#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeSpan.FromMinutes/cs/System.TimeSpan.FromMinutes.cs#5)]
  [!code-vb[System.TimeSpan.FromMinutes#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeSpan.FromMinutes/vb/System.TimeSpan.FromMinutes.vb#5)]  

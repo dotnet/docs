@@ -1305,7 +1305,7 @@
 ## Remarks  
  The value of this field is not equivalent to `null`. Use this field to efficiently determine whether an instance of <xref:System.UIntPtr> has been set to a value other than zero.  
   
- For example, assume the variable, uip, is an instance of <xref:System.UIntPtr>. You can determine if it has been set by comparing it to the value returned by a constructor, for example: " `if uip != new UIntPtr(0)...` ". However, invoking a constructor to get an unintialized pointer is inefficient. It is better to code either " `if uip != UIntPtr.Zero...` ", or " `if !UIntPtr.Zero.Equals(uip)...` ".  
+ For example, assume the variable, uip, is an instance of <xref:System.UIntPtr>. You can determine if it has been set by comparing it to the value returned by a constructor, for example: " `if uip != new UIntPtr(0)...` ". However, invoking a constructor to get an uninitialized pointer is inefficient. It is better to code either " `if uip != UIntPtr.Zero...` ", or " `if !UIntPtr.Zero.Equals(uip)...` ".  
   
  ]]></format>
         </remarks>

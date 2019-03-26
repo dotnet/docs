@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Point.%23ctor%2A?displayProperty=nameWithType> and <xref:System.Drawing.Size.%23ctor%2A> constructors and the <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> enumeration. To run this example, paste this code into a Windows Form that contains a label named `Label1` and call the `IntializeLabel1` method in the form's constructor.  
+ The following code example demonstrates how to use the <xref:System.Drawing.Point.%23ctor%2A?displayProperty=nameWithType> and <xref:System.Drawing.Size.%23ctor%2A> constructors and the <xref:System.Drawing.ContentAlignment?displayProperty=nameWithType> enumeration. To run this example, paste this code into a Windows Form that contains a label named `Label1` and call the `InitializeLabel1` method in the form's constructor.  
   
  [!code-cpp[System.Drawing.PointsAndSizes#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#7)]
  [!code-csharp[System.Drawing.PointsAndSizes#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#7)]

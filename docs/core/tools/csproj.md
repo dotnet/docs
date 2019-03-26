@@ -24,6 +24,10 @@ Metapackages are implicitly referenced based on the target framework(s) specifie
  </PropertyGroup>
  ```
 
+### Disabling Implicit Package References
+
+In some scenarios, it might make sense to disable implicit package references.  For example, if you have project `Api.csproj` that targets netcoreapp2.2, and another project `Api.Tests.csproj` that targets `netcoreapp2.2`, then `Api.Tests.csproj` will not know the correct implicit package reference to use (it may choose netcoreapp2.1 dependencies).
+
 ### Recommendations
 
 Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are implicitly referenced, the following are our recommended best practices:

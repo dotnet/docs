@@ -2660,7 +2660,7 @@
    
   
 ## Examples  
- The following example specifies the match conditions for the <xref:System.Array.Exists%2A> method usinglambda expressions to check whether a planet starts with a given letter or whether the planet is found on the given array.  
+ The following example specifies the match conditions for the <xref:System.Array.Exists%2A> method using lambda expressions to check whether a planet starts with a given letter or whether the planet is found on the given array.  
   
  [!code-csharp[System.Array.Exists#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.array.exists/cs/exists3.cs#3)]
  [!code-vb[System.Array.Exists#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.array.exists/vb/exists3.vb#3)]  
@@ -4680,7 +4680,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method searches all the elements of a one-dimensional arrayfor `value`. To determine whether `value` exists in `array`, the method performs an equality comparison by calling each element's `Equals` method until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method, that override is called.  
+ This method searches all the elements of a one-dimensional array for `value`. To determine whether `value` exists in `array`, the method performs an equality comparison by calling each element's `Equals` method until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method, that override is called.  
   
  Because most arrays have a lower bound of zero, this method generally returns -1 if`value` isn't found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=nameWithType>(0x80000000) and `value` isn't found, this method returns <xref:System.Int32.MaxValue?displayProperty=nameWithType> (0x7FFFFFFF).  
   
@@ -4850,9 +4850,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method searches the elements of a one-dimensional arrayfrom `startIndex` to `startIndex` plus `count` minus 1, if `count` is greater than 0. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `Equals` method of every element until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method, that override is called.  
+ This method searches the elements of a one-dimensional array from `startIndex` to `startIndex` plus `count` minus 1, if `count` is greater than 0. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `Equals` method of every element until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method, that override is called.  
   
- Becausemost arrays have a lower bound of zero, this method generally returns -1 when `value` isn't found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=nameWithType> (0x80000000) and `value` isn't found, this method returns <xref:System.Int32.MaxValue?displayProperty=nameWithType> (0x7FFFFFFF).  
+ Because most arrays have a lower bound of zero, this method generally returns -1 when `value` isn't found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=nameWithType> (0x80000000) and `value` isn't found, this method returns <xref:System.Int32.MaxValue?displayProperty=nameWithType> (0x7FFFFFFF).  
   
  If `startindex` equals <xref:System.Array.Length%2A?displayProperty=nameWithType>, the method returns -1. If `startIndex` is greater than <xref:System.Array.Length%2A?displayProperty=nameWithType>, the method throws an <xref:System.ArgumentOutOfRangeException>.  
   
@@ -5086,7 +5086,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method searchesthe elements of a one-dimensional array from `startIndex` to `startIndex` plus `count` minus 1, if `count` is greater than 0. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `T.Equals` method on every element. This means that if `T` overrides the <xref:System.Object.Equals%2A> method, that override is called.  
+ This method searches the elements of a one-dimensional array from `startIndex` to `startIndex` plus `count` minus 1, if `count` is greater than 0. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `T.Equals` method on every element. This means that if `T` overrides the <xref:System.Object.Equals%2A> method, that override is called.  
   
  If `startIndex` equals <xref:System.Array.Length%2A?displayProperty=nameWithType>, the method returns -1.  If `startIndex` is greater than <xref:System.Array.Length%2A?displayProperty=nameWithType>, the method throws an <xref:System.ArgumentOutOfRangeException>.  
   
@@ -7268,7 +7268,7 @@ int[,,] TDArray = new int[1,1,1];
    
   
 ## Examples  
- The following example sorts the values in a string arrayby using the default comparer. It also defines a custom <xref:System.Collections.IComparer> implementation named `ReverseComparer` that reverses an object's default sort order while performing a case-insensitive string comparison. Note that the output might vary depending on the current culture.  
+ The following example sorts the values in a string array by using the default comparer. It also defines a custom <xref:System.Collections.IComparer> implementation named `ReverseComparer` that reverses an object's default sort order while performing a case-insensitive string comparison. Note that the output might vary depending on the current culture.  
   
  [!code-cpp[System.Array.Sort#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Array.Sort/CPP/arraysort.cpp#1)]
  [!code-csharp[System.Array.Sort#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Array.Sort/CS/arraysort.cs#1)]
@@ -7406,7 +7406,7 @@ int[,,] TDArray = new int[1,1,1];
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" />, and one or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
         <block subset="none" type="usage">
-          <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previouslythrew <see cref="T:System.ArgumentException" /> will not throw an exception, becausethe insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
+          <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
         <altmember cref="T:System.Collections.IComparer" />
         <altmember cref="T:System.IComparable" />
@@ -8146,7 +8146,7 @@ int[,,] TDArray = new int[1,1,1];
 ## Examples  
  The following code example demonstrates the <xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29> method overload.  
   
- The code example defines an alternative comparison method for strings, named `CompareDinosByLength`. This method works as follows: First, the comparandsare tested for`null`, and a null reference is treated as less than a non-null. Second, the string lengths are compared, and the longer string is deemed to be greater. Third, if the lengths are equal, ordinary string comparison is used.  
+ The code example defines an alternative comparison method for strings, named `CompareDinosByLength`. This method works as follows: First, the comparands are tested for`null`, and a null reference is treated as less than a non-null. Second, the string lengths are compared, and the longer string is deemed to be greater. Third, if the lengths are equal, ordinary string comparison is used.  
   
  A array of strings is created and populated with four strings, in no particular order. The list also includes an empty string and a null reference. The list is displayed, sorted using a <xref:System.Comparison%601> generic delegate representing the `CompareDinosByLength` method, and displayed again.  
   
@@ -9792,7 +9792,7 @@ int[,,] TDArray = new int[1,1,1];
    
   
 ## Examples  
- The following example determines whether the last character of each element in a string array is a number. It creates two string arrays. The first arrayincludes both strings that end with alphabetic characters and strings that end with numeric characters.The second array consists only of strings that end with numeric characters. The example also defines an `EndWithANumber` method whose signature matches the <xref:System.Predicate%601> delegate. The example passes each array to the <xref:System.Array.TrueForAll%2A> method along with a delegate that represents the `EndsWithANumber` method.  
+ The following example determines whether the last character of each element in a string array is a number. It creates two string arrays. The first array includes both strings that end with alphabetic characters and strings that end with numeric characters.The second array consists only of strings that end with numeric characters. The example also defines an `EndWithANumber` method whose signature matches the <xref:System.Predicate%601> delegate. The example passes each array to the <xref:System.Array.TrueForAll%2A> method along with a delegate that represents the `EndsWithANumber` method.  
   
  [!code-csharp[System.Array.TrueForAll#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.array.trueforall/cs/trueforall2.cs#2)]
  [!code-vb[System.Array.TrueForAll#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.array.trueforall/vb/trueforall2.vb#2)]  

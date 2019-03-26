@@ -33,7 +33,7 @@
    
   
 ## Examples  
- The following example demosntrates using the <xref:System.ComponentModel.Design.IExtenderProviderService> from a designer to add and remove an <xref:System.ComponentModel.IExtenderProvider> implementation.  
+ The following example demonstrates using the <xref:System.ComponentModel.Design.IExtenderProviderService> from a designer to add and remove an <xref:System.ComponentModel.IExtenderProvider> implementation.  
   
  [!code-cpp[ExtenderServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ExtenderServiceExample/CPP/extenderservicedesigner.cpp#1)]
  [!code-csharp[ExtenderServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ExtenderServiceExample/CS/extenderservicedesigner.cs#1)]

@@ -100,8 +100,8 @@ In C#, an *operator* is a program element that is applied to one or more *operan
   
 |Expression|Description|  
 |----------------|-----------------|  
-|x [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) y|Equal|  
-|x [!=](../../../csharp/language-reference/operators/not-equal-operator.md) y|Not equal|  
+|x [==](../../../csharp/language-reference/operators/equality-operators.md#equality-operator-) y|Equal|  
+|x [!=](../../../csharp/language-reference/operators/equality-operators.md#inequality-operator-) y|Not equal|  
   
  **Logical, Conditional, and Null Operators**  
   

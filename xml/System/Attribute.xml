@@ -2332,7 +2332,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
 ## Remarks  
  This method determines if one <xref:System.Attribute> equals another. Its default implementation is the same as <xref:System.Attribute.Equals%2A>, which determines whether two attributes are of the same type and have the same field values.
 
- In general, the <xref:System.Attribute.Equals%2A> method is intended to perform a standard test for reference or value equality. You can override the <xref:System.Attribute.Match%2A> method when you want to perform a custom comparison for equality that is based on some criteria other than that two attribute instances are of the same type and have identifical values. For example, you can override the <xref:System.Attribute.Match%2A> method to compare attributes in the following scenarios:
+ In general, the <xref:System.Attribute.Equals%2A> method is intended to perform a standard test for reference or value equality. You can override the <xref:System.Attribute.Match%2A> method when you want to perform a custom comparison for equality that is based on some criteria other than that two attribute instances are of the same type and have identical values. For example, you can override the <xref:System.Attribute.Match%2A> method to compare attributes in the following scenarios:
 
  - An attribute includes a bit field, and you consider two attribute instances equal if a particular bit is set. For example, a `NumericDisplay` attribute might include a bit field that indicates what numeric formats (such as binary, octal, decimal, and hexadecimal) a client supports. The overridden <xref:System.Attribute.Match%2A> method might consider two instances equal if they support the same numeric format.
 

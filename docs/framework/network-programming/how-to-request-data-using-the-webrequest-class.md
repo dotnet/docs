@@ -29,7 +29,7 @@ The following procedure describes the steps to request a resource, such as a Web
   
     > [!NOTE]
     > The .NET Framework provides protocol-specific classes derived from the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes for URIs that begin with *http:*, *https:*, *ftp:*, and *file:*.
-    If you need to set or read protocol-specific properties, you must cast your <xref:System.Net.WebRequest> object to a protocol-specific object type. For more information, see [Programming pluggable protocols](programming-pluggable-protocols.md). 
+    If you need to set or read protocol-specific properties, you must cast your <xref:System.Net.WebRequest> or <xref:System.Net.WebResponse> object to a protocol-specific object type. For more information, see [Programming pluggable protocols](programming-pluggable-protocols.md). 
   
 2.  Set any property values that you need in your `WebRequest` object. For example, to enable authentication, set the <xref:System.Net.WebRequest.Credentials%2A?displayProperty=nameWithType> property to an instance of the <xref:System.Net.NetworkCredential> class:  
   

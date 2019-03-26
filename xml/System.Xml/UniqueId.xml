@@ -782,7 +782,7 @@
         <param name="buffer">
           <see langword="byte" /> array that will contain the <see cref="T:System.Guid" />.</param>
         <param name="offset">Position in the <see langword="byte" /> array to start inserting the <see cref="T:System.Guid" /> value.</param>
-        <summary>Tries to get the value of the <see cref="T:System.Xml.UniqueId" /> as a <see cref="T:System.Guid" /> and store it in the given byte array at the specified offest.</summary>
+        <summary>Tries to get the value of the <see cref="T:System.Xml.UniqueId" /> as a <see cref="T:System.Guid" /> and store it in the given byte array at the specified offset.</summary>
         <returns>
           <see langword="true" /> if the value stored in this instance of <see cref="T:System.Xml.UniqueId" /> is a <see cref="T:System.Guid" />; otherwise <see langword="false" />.</returns>
         <remarks>

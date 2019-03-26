@@ -44,7 +44,7 @@ public void Page_Load(Object sender, EventArgs e)
     System.Web.Mobile.MobileCapabilities currentCapabilities;  
     MobileCapabilities currentCapabilities =   
         (MobileCapabilities)Request.Browser;  
-    // Programatically find the mobile capabilities without using   
+    // Programmatically find the mobile capabilities without using   
     // DeviceSpecific Filters.  
     if(currentCapabilities.PreferredRenderingMIME=="text/html")  
     {  

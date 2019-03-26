@@ -50,7 +50,7 @@ There are two ways to specify how to expose the health endpoint and publish WCF 
    </behaviors>
    ```
 
-- Programatically. The following code fragment uses C# to expose the health endpoint:
+- Programmatically. The following code fragment uses C# to expose the health endpoint:
 
     ```csharp
     ServiceHost host = new ServiceHost(typeof(Service1),

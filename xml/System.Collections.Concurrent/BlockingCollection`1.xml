@@ -627,7 +627,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> argument is less than zero.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="index" /> argument is equal to or greater than the length of the <paramref name="array" />.  
   
- The destination array is too small to hold all of the BlockingCcollection elements.  
+ The destination array is too small to hold all of the BlockingCollection elements.  
   
  The array rank doesn't match.  
   
@@ -673,7 +673,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If any method in BlockingCollection is executing while the Count property is being accessd, the return value is approximate. Count may reflect a number that is either greater than or less than the actual number of items in the BlockingCollection.  
+ If any method in BlockingCollection is executing while the Count property is being accessed, the return value is approximate. Count may reflect a number that is either greater than or less than the actual number of items in the BlockingCollection.  
   
  ]]></format>
         </remarks>

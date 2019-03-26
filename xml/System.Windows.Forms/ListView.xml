@@ -839,7 +839,7 @@
    
   
 ## Examples  
- The following code example demonstrates initializing a <xref:System.Windows.Forms.ListView> control to contain check boxes. It also demonstrates how to use the <xref:System.Windows.Forms.ListView.BeginUpdate%2A> and <xref:System.Windows.Forms.ListView.EndUpdate%2A> methods. To run this example, paste the following code into a form that contains a <xref:System.Windows.Forms.ListView> named `ListView1`. Call the `InititalizeListView` method from the form's constructor or `Load` method.  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.ListView> control to contain check boxes. It also demonstrates how to use the <xref:System.Windows.Forms.ListView.BeginUpdate%2A> and <xref:System.Windows.Forms.ListView.EndUpdate%2A> methods. To run this example, paste the following code into a form that contains a <xref:System.Windows.Forms.ListView> named `ListView1`. Call the `InitializeListView` method from the form's constructor or `Load` method.  
   
  [!code-cpp[System.Windows.Forms.ListView2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.ListView2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CS/form1.cs#1)]
@@ -1087,7 +1087,7 @@
    
   
 ## Examples  
- The following code example demonstrates a checked <xref:System.Windows.Forms.ListView> that handles the <xref:System.Windows.Forms.ListView.ItemChecked> event. The example uses the <xref:System.Windows.Forms.ListView.CheckedItems%2A> property to tally a new price every time that an item is checked or unchecked. To run this example, paste the following code into a form that contains a <xref:System.Windows.Forms.ListView> named `ListView1` and a <xref:System.Windows.Forms.TextBox> named `Textbox1`. Call the `InititalizeListView` method from the form's constructor or `Load` method.  
+ The following code example demonstrates a checked <xref:System.Windows.Forms.ListView> that handles the <xref:System.Windows.Forms.ListView.ItemChecked> event. The example uses the <xref:System.Windows.Forms.ListView.CheckedItems%2A> property to tally a new price every time that an item is checked or unchecked. To run this example, paste the following code into a form that contains a <xref:System.Windows.Forms.ListView> named `ListView1` and a <xref:System.Windows.Forms.TextBox> named `Textbox1`. Call the `InitializeListView` method from the form's constructor or `Load` method.  
   
  [!code-cpp[System.Windows.Forms.ListView2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.ListView2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CS/form1.cs#1)]
@@ -1722,7 +1722,7 @@
    
   
 ## Examples  
- The following code example demonstrates initializing a <xref:System.Windows.Forms.ListView> control to contain check boxes. It also demonstrates using the <xref:System.Windows.Forms.ListView.BeginUpdate%2A> and <xref:System.Windows.Forms.ListView.EndUpdate%2A> methods. To run this example, paste the following code into a form containing a <xref:System.Windows.Forms.ListView> named `ListView1`. Call the `InititalizeListView` method from the form's constructor or `Load` method.  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.ListView> control to contain check boxes. It also demonstrates using the <xref:System.Windows.Forms.ListView.BeginUpdate%2A> and <xref:System.Windows.Forms.ListView.EndUpdate%2A> methods. To run this example, paste the following code into a form containing a <xref:System.Windows.Forms.ListView> named `ListView1`. Call the `InitializeListView` method from the form's constructor or `Load` method.  
   
  [!code-cpp[System.Windows.Forms.ListView2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.ListView2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CS/form1.cs#1)]
@@ -2849,7 +2849,7 @@
    
   
 ## Examples  
- The following code example demonstrates a checked <xref:System.Windows.Forms.ListView> control that handles the <xref:System.Windows.Forms.ListView.ItemCheck> event. The method uses the <xref:System.Windows.Forms.ItemCheckEventArgs.CurrentValue%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ItemCheckEventArgs.Index%2A?displayProperty=nameWithType> properties to retrieve and tally the price of the menu items selected. To run this example, paste the following code into a form containing a `ListView` named `ListView1` and a `TextBox` named `Textbox1`. Call the `InititalizeListView` method from the form's constructor or `Load` method. Ensure that the <xref:System.Windows.Forms.ListView.ItemCheck> event is associated with the event handler in this example.  
+ The following code example demonstrates a checked <xref:System.Windows.Forms.ListView> control that handles the <xref:System.Windows.Forms.ListView.ItemCheck> event. The method uses the <xref:System.Windows.Forms.ItemCheckEventArgs.CurrentValue%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ItemCheckEventArgs.Index%2A?displayProperty=nameWithType> properties to retrieve and tally the price of the menu items selected. To run this example, paste the following code into a form containing a `ListView` named `ListView1` and a `TextBox` named `Textbox1`. Call the `InitializeListView` method from the form's constructor or `Load` method. Ensure that the <xref:System.Windows.Forms.ListView.ItemCheck> event is associated with the event handler in this example.  
   
  [!code-cpp[System.Windows.Forms.ListView2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.ListView2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CS/form1.cs#1)]

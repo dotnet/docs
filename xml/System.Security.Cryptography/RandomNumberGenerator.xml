@@ -45,7 +45,7 @@
 ## Remarks  
 Cryptographic random number generators create cryptographically strong random values.
 
-To create a random number generator, call the @System.Security.Cryptography.RandomNumberGenerator.Create method. This is prefered over calling the constructor of the derived class @System.Security.Cryptography.RNGCryptoServiceProvider, which is not available on all platforms.
+To create a random number generator, call the @System.Security.Cryptography.RandomNumberGenerator.Create method. This is preferred over calling the constructor of the derived class @System.Security.Cryptography.RNGCryptoServiceProvider, which is not available on all platforms.
  ]]></format>
     </remarks>
     <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>

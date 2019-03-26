@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The embedded statements are scheduled together and run asynchronously, but unless the scheduled activites themselves are asynchronous (such as messaging activities, <xref:System.Activities.Statements.InvokeMethod>, or activities that derive from <xref:System.Activities.AsyncCodeActivity>), they do not run on separate threads, so each successive activity will only execute when the previously scheduled activity completes or goes idle.  If none of the child activities of this activity are asynchronous or go idle, this activity execute in the same way that a <xref:System.Activities.Statements.ForEach%601> activity does.  
+ The embedded statements are scheduled together and run asynchronously, but unless the scheduled activities themselves are asynchronous (such as messaging activities, <xref:System.Activities.Statements.InvokeMethod>, or activities that derive from <xref:System.Activities.AsyncCodeActivity>), they do not run on separate threads, so each successive activity will only execute when the previously scheduled activity completes or goes idle.  If none of the child activities of this activity are asynchronous or go idle, this activity execute in the same way that a <xref:System.Activities.Statements.ForEach%601> activity does.  
   
    
   

@@ -76,7 +76,7 @@ public class MyImporter2
 }
 
 //Specifying a contract name should only be 
-//needed in rare caes. Usually, using metadata
+//needed in rare cases. Usually, using metadata
 //is a better approach.
 [Export("MyContractName", typeof(MyInterface))]
 public class MyExport3 : MyInterface
@@ -157,7 +157,7 @@ Public Class MyImporter2
 End Class
 
 'Specifying a contract name should only be 
-'needed in rare caes. Usually, using metadata
+'needed in rare cases. Usually, using metadata
 'is a better approach.
 <Export("MyContractName", GetType(MyInterface))>
 Public Class MyExport3

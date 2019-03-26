@@ -583,7 +583,7 @@
         <Parameter Name="NumberFormat" Type="System.Globalization.NumberFormatInfo" />
       </Parameters>
       <Docs>
-        <param name="Value">Required. <see langword="Sinble" /> to convert to a <see langword="String" /> value.</param>
+        <param name="Value">Required. <see langword="Single" /> to convert to a <see langword="String" /> value.</param>
         <param name="NumberFormat">A <see cref="T:System.Globalization.NumberFormatInfo" /> object that defines how numeric values are formatted and displayed, depending on the culture.</param>
         <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Single" /> and number format information.</summary>
         <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>

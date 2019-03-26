@@ -350,7 +350,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When you override <see langword="BaseShouldSerialiazeIndex" /> in a derived class, do not call the <see langword="BaseShouldSerialiazeIndex" /> method of the base class.</para>
+          <para>When you override <see langword="BaseShouldSerializeIndex" /> in a derived class, do not call the <see langword="BaseShouldSerializeIndex" /> method of the base class.</para>
         </block>
       </Docs>
     </Member>

@@ -127,7 +127,7 @@
         <typeparam name="TKey">The type of keys stored by the dictionary.</typeparam>
         <typeparam name="TValue">The type of values stored by the dictionary.</typeparam>
         <param name="keyComparer">The implementation to use to determine the equality of keys in the dictionary.</param>
-        <param name="valueComparer">The implementation to use to determine the equality of values in the dictonary.</param>
+        <param name="valueComparer">The implementation to use to determine the equality of values in the dictionary.</param>
         <summary>Creates an empty immutable sorted dictionary that uses the specified key and value comparers.</summary>
         <returns>An empty immutable sorted dictionary.</returns>
         <remarks>To be added.</remarks>

@@ -4631,7 +4631,7 @@
    
   
 ## Examples  
- Thefollowing sample demonstrates using one of the overloads of <xref:System.AppDomain.ExecuteAssembly%2A> on two different domains.  
+ The following sample demonstrates using one of the overloads of <xref:System.AppDomain.ExecuteAssembly%2A> on two different domains.  
   
  [!code-cpp[AppDomain_ExecuteAssembly#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_ExecuteAssembly/CPP/executeassembly.cpp#1)]
  [!code-csharp[AppDomain_ExecuteAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_ExecuteAssembly/CS/executeassembly.cs#1)]
@@ -8047,7 +8047,7 @@
    
   
 ## Examples  
- The followingexample demonstrates the <xref:System.AppDomain.UnhandledException> event. It defines an event handler, `MyHandler`, that is invoked whenever an unhandled exception is thrown in the default application domain. It then throws two exceptions. The first is handled by a **try/catch** block. The second is unhandled and invokes the `MyHandle` routine before the application terminates.  
+ The following example demonstrates the <xref:System.AppDomain.UnhandledException> event. It defines an event handler, `MyHandler`, that is invoked whenever an unhandled exception is thrown in the default application domain. It then throws two exceptions. The first is handled by a **try/catch** block. The second is unhandled and invokes the `MyHandle` routine before the application terminates.  
   
  [!code-cpp[AppDomain_UnhandledException#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_UnhandledException/CPP/unhandledexception.cpp#1)]
  [!code-csharp[AppDomain_UnhandledException#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_UnhandledException/CS/unhandledexception.cs#1)]

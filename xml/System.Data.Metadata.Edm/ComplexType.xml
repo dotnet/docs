@@ -120,7 +120,7 @@ Class GetComplexTypeMembersExample
       Using connection As EntityConnection = _  
          New EntityConnection("Name=CustomerWComplexAddrEntities")  
   
-         ' Open the conection.  
+         ' Open the connection.  
          connection.Open()  
   
          ' Access the metadata workspace.  

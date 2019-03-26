@@ -145,7 +145,7 @@ Class GetEntityContainerExample
       Using connection As EntityConnection = _  
         New EntityConnection("Name=AdventureWorksEntities")  
   
-        ' Open the conection.  
+        ' Open the connection.  
         connection.Open()  
   
         ' Access the metadata workspace.  

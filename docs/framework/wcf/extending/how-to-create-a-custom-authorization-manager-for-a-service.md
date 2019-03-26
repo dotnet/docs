@@ -114,4 +114,3 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) supp
 ## See also
 - <xref:System.ServiceModel.ServiceAuthorizationManager>
 - [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)
-- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)

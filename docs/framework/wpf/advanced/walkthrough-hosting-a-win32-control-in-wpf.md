@@ -17,9 +17,9 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
   
 <a name="requirements"></a>   
 ## Requirements  
- This topic assumes a basic familiarity with both WPF and Win32 programming. For a basic introduction to WPF programming, see [Getting Started](../getting-started/index.md). For an introduction to Win32 programming, you should reference any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
+ This topic assumes a basic familiarity with both WPF and Windows API programming. For a basic introduction to WPF programming, see [Getting Started](../getting-started/index.md). For an introduction to Windows API programming, see any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
   
- Because the sample that accompanies this topic is implemented in C#, it makes use of Platform Invocation Services (PInvoke) to access the Win32 API. Some familiarity with PInvoke is helpful but not essential.  
+ Because the sample that accompanies this topic is implemented in C#, it makes use of Platform Invocation Services (PInvoke) to access the Windows API. Some familiarity with PInvoke is helpful but not essential.  
   
 > [!NOTE]
 >  This topic includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. You can obtain or view complete code from [Hosting a Win32 ListBox Control in WPF Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control).  

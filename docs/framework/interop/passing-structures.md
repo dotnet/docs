@@ -53,9 +53,9 @@ Public Structure <StructLayout(LayoutKind.Explicit)> Rect
     <FieldOffset(12)> Public bottom As Integer  
 End Structure  
   
-Class Win32API      
-    Declare Auto Function PtInRect Lib "user32.dll" _  
-    (ByRef r As Rect, p As Point) As Boolean  
+Friend Class WindowsAPI      
+    Friend Shared Declare Auto Function PtInRect Lib "user32.dll" (
+        ByRef r As Rect, p As Point) As Boolean  
 End Class  
 ```  
   
@@ -76,9 +76,10 @@ public struct Rect {
     [FieldOffset(12)] public int bottom;  
 }     
   
-class Win32API {  
+internal static class WindowsAPI
+{  
     [DllImport("User32.dll")]  
-    public static extern bool PtInRect(ref Rect r, Point p);  
+    internal static extern bool PtInRect(ref Rect r, Point p);  
 }  
 ```  
   
@@ -107,17 +108,17 @@ Imports Microsoft.VisualBasic
     Public wMiliseconds As Short  
 End Class  
   
-Public Class Win32  
-    Declare Auto Sub GetSystemTime Lib "Kernel32.dll"(sysTime _  
-        As MySystemTime)  
-    Declare Auto Function MessageBox Lib "User32.dll"(hWnd As IntPtr, _  
-        txt As String, caption As String, Typ As Integer) As Integer  
+Friend Class WindowsAPI  
+    Friend Shared Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (
+        sysTime As MySystemTime)  
+    Friend Shared Declare Auto Function MessageBox Lib "User32.dll" (
+        hWnd As IntPtr, lpText As String, lpCaption As String, uType As UInteger) As Integer  
 End Class  
   
 Public Class TestPlatformInvoke      
     Public Shared Sub Main()  
         Dim sysTime As New MySystemTime()  
-        Win32.GetSystemTime(sysTime)  
+        WindowsAPI.GetSystemTime(sysTime)  
   
         Dim dt As String  
         dt = "System time is:" & ControlChars.CrLf & _  
@@ -125,7 +126,7 @@ Public Class TestPlatformInvoke
               ControlChars.CrLf & "Month: " & sysTime.wMonth & _  
               ControlChars.CrLf & "DayOfWeek: " & sysTime.wDayOfWeek & _  
               ControlChars.CrLf & "Day: " & sysTime.wDay  
-        Win32.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0)        
+        WindowsAPI.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0)        
     End Sub  
 End Class  
 ```  
@@ -142,13 +143,14 @@ public class MySystemTime {
     public ushort wSecond;   
     public ushort wMilliseconds;   
 }  
-class Win32API {  
+internal static class WindowsAPI
+{  
     [DllImport("Kernel32.dll")]  
-    public static extern void GetSystemTime(MySystemTime st);  
+    internal static extern void GetSystemTime(MySystemTime st);  
   
-    [DllImport("user32.dll", CharSet=CharSet.Auto)]  
-     public static extern int MessageBox(IntPtr hWnd,  
-         string text, string caption, int options);  
+    [DllImport("user32.dll", CharSet = CharSet.Auto)]  
+    internal static extern int MessageBox(
+        IntPtr hWnd, string lpText, string lpCaption, uint uType);  
 }  
   
 public class TestPlatformInvoke  
@@ -156,7 +158,7 @@ public class TestPlatformInvoke
     public static void Main()  
     {  
         MySystemTime sysTime = new MySystemTime();  
-        Win32API.GetSystemTime(sysTime);  
+        WindowsAPI.GetSystemTime(sysTime);  
   
         string dt;  
         dt = "System time is: \n" +  
@@ -164,7 +166,7 @@ public class TestPlatformInvoke
               "Month: " + sysTime.wMonth + "\n" +  
               "DayOfWeek: " + sysTime.wDayOfWeek + "\n" +  
               "Day: " + sysTime.wDay;  
-        Win32API.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0);  
+        WindowsAPI.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0);  
     }  
 }  
 ```  

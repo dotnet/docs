@@ -1004,7 +1004,7 @@ query {
     for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
-             (student.StudentID, System.Nullable<int>(100), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(100), student.Age)
          else (student.StudentID, student.Age, student.Age))
 }
 </code></pre>
@@ -1028,9 +1028,9 @@ query {
     for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
-             (student.StudentID, System.Nullable<int>(100), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(100), student.Age)
          elif student.Age.HasValue && student.Age.Value = 0 then
-             (student.StudentID, System.Nullable<int>(1000), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(1000), student.Age)
          else (student.StudentID, student.Age, student.Age))
 }
 </code></pre>

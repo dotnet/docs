@@ -15,7 +15,7 @@ Classes and structs have members that represent their data and behavior. A class
 |Member|Description|  
 |------------|-----------------|  
 |[Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)|Fields are variables declared at class scope. A field may be a built-in numeric type or an instance of another class. For example, a calendar class may have a field that contains the current date.|  
-|[Constants](../../../csharp/programming-guide/classes-and-structs/constants.md)|Constants are fields or properties whose value is set at compile time and cannot be changed.|  
+|[Constants](../../../csharp/programming-guide/classes-and-structs/constants.md)|Constants are fields whose value is set at compile time and cannot be changed.|  
 |[Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)|Properties are methods on a class that are accessed as if they were fields on that class. A property can provide protection for a class field to keep it from being changed without the knowledge of the object.|  
 |[Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)|Methods define the actions that a class can perform. Methods can take parameters that provide input data, and can return output data through parameters. Methods can also return a value directly, without using a parameter.|  
 |[Events](../../../csharp/programming-guide/events/index.md)|Events provide notifications about occurrences, such as button clicks or the successful completion of a method, to other objects. Events are defined and triggered by using delegates.|  

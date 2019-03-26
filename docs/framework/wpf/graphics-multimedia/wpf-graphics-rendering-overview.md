@@ -43,8 +43,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  <xref:System.Windows.Media.Visual> is exposed as a public abstract class from which child classes must be derived. The following illustration shows the hierarchy of the visual objects that are exposed in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
- ![Diagram of classes derived from the Visual object](./media/visualclass01.png "VisualClass01")  
-Visual class hierarchy  
+ ![Diagram of classes derived from the Visual object](./media/wpf-graphics-rendering-overview/classes-derived-visual-object.png)    
   
 ### DrawingVisual Class  
  The <xref:System.Windows.Media.DrawingVisual> is a lightweight drawing class that is used to render shapes, images, or text. This class is considered lightweight because it does not provide layout or event handling, which improves its runtime performance. For this reason, drawings are ideal for backgrounds and clip art. The <xref:System.Windows.Media.DrawingVisual> can be used to create a custom visual object. For more information, see [Using DrawingVisual Objects](using-drawingvisual-objects.md).  
@@ -104,8 +103,7 @@ Order of DrawingGroup operations
   
  If you were to enumerate the visual objects that comprise the default <xref:System.Windows.Controls.Button> control, you would find the hierarchy of visual objects illustrated below:  
   
- ![Diagram of visual tree hierarchy](./media/visuallayeroverview03.gif "VisualLayerOverview03")  
-Diagram of visual tree hierarchy  
+ ![Diagram of visual tree hierarchy](./media/wpf-graphics-rendering-overview/visual-object-diagram.gif) 
   
  The <xref:System.Windows.Controls.Button> control contains a <xref:Microsoft.Windows.Themes.ClassicBorderDecorator> element, which in turn, contains a <xref:System.Windows.Controls.ContentPresenter> element. The <xref:Microsoft.Windows.Themes.ClassicBorderDecorator> element is responsible for drawing a border and a background for the <xref:System.Windows.Controls.Button>. The <xref:System.Windows.Controls.ContentPresenter> element is responsible for displaying the contents of the <xref:System.Windows.Controls.Button>. In this case, since you are displaying text, the <xref:System.Windows.Controls.ContentPresenter> element contains a <xref:System.Windows.Controls.TextBlock> element. The fact that the <xref:System.Windows.Controls.Button> control uses a <xref:System.Windows.Controls.ContentPresenter> means that the content could be represented by other elements, such as an <xref:System.Windows.Controls.Image> or a geometry, such as an <xref:System.Windows.Media.EllipseGeometry>.  
   
@@ -118,8 +116,7 @@ Diagram of visual tree hierarchy
   
  If you were to enumerate the visual objects and vector graphics instruction lists that comprise the <xref:System.Windows.Controls.Button> control, you would find the hierarchy of objects illustrated below:  
   
- ![Diagram of visual tree and rendering data](./media/visuallayeroverview04.png "VisualLayerOverview04")  
-Diagram of visual tree and rendering data  
+ ![Diagram of visual tree and rendering data](./media/wpf-graphics-rendering-overview/visual-tree-rendering-data.png)  
   
  The <xref:System.Windows.Controls.Button> control contains a <xref:Microsoft.Windows.Themes.ClassicBorderDecorator> element, which in turn, contains a <xref:System.Windows.Controls.ContentPresenter> element. The <xref:Microsoft.Windows.Themes.ClassicBorderDecorator> element is responsible for drawing all the discrete graphic elements that make up the border and background of a button. The <xref:System.Windows.Controls.ContentPresenter> element is responsible for displaying the contents of the <xref:System.Windows.Controls.Button>. In this case, since you are displaying an image, the <xref:System.Windows.Controls.ContentPresenter> element contains a <xref:System.Windows.Controls.Image> element.  
   
@@ -143,14 +140,12 @@ Diagram of visual tree and rendering data
   
  If you were to enumerate the visual objects that comprise the <xref:System.Windows.Controls.StackPanel> element in the markup example, you would find the hierarchy of visual objects illustrated below:  
   
- ![Diagram of visual tree hierarchy](./media/visuallayeroverview05.gif "VisualLayerOverview05")  
-Diagram of visual tree hierarchy  
+ ![Diagram of visual tree hierarchy](./media/wpf-graphics-rendering-overview/visual-tree-hierarchy.gif)  
   
 ### Rendering Order  
  The visual tree determines the rendering order of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] visual and drawing objects. The order of traversal starts with the root visual, which is the top-most node in the visual tree. The root visual’s children are then traversed, left to right. If a visual has children, its children are traversed before the visual’s siblings. This means that the content of a child visual is rendered in front of the visual's own content.  
   
- ![Diagram of visual tree rendering order](./media/visuallayeroverview06.gif "VisualLayerOverview06")  
-Diagram of visual tree rendering order  
+ ![Diagram of the visual tree rendering order](./media/wpf-graphics-rendering-overview/visual-tree-rendering-order.gif) 
   
 ### Root Visual  
  The **root visual** is the top-most element in a visual tree hierarchy. In most applications, the base class of the root visual is either <xref:System.Windows.Window> or <xref:System.Windows.Navigation.NavigationWindow>. However, if you were hosting visual objects in a Win32 application, the root visual would be the top-most visual you were hosting in the Win32 window. For more information, see [Tutorial: Hosting Visual Objects in a Win32 Application](tutorial-hosting-visual-objects-in-a-win32-application.md).  
@@ -172,9 +167,8 @@ Diagram of logical tree
 ### Viewing the Visual Tree with XamlPad  
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] tool, XamlPad, provides an option for viewing and exploring the visual tree that corresponds to the currently defined [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] content. Click the **Show Visual Tree** button on the menu bar to display the visual tree. The following illustrates the expansion of [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] content into visual tree nodes in the **Visual Tree Explorer** panel of XamlPad:  
   
- ![Visual Tree Explorer panel in XamlPad](./media/visuallayeroverview08.png "VisualLayerOverview08")  
-Visual Tree Explorer panel in XamlPad  
-  
+ ![Visual Tree Explorer panel in XamlPad](./media/wpf-graphics-rendering-overview/visual-tree-explorer.png)  
+
  Notice how the <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.Button> controls each display a separate visual object hierarchy in the **Visual Tree Explorer** panel of XamlPad. This is because [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls have a <xref:System.Windows.Controls.ControlTemplate> that contains the visual tree of that control. When you explicitly reference a control, you implicitly reference its visual hierarchy.  
   
 ### Profiling Visual Performance  
@@ -190,14 +184,12 @@ Visual Profiler display output
 ### Retained Mode Graphics  
  One of the keys to understanding the role of the Visual object is to understand the difference between **immediate mode** and **retained mode** graphics systems. A standard Win32 application based on GDI or GDI+ uses an immediate mode graphics system. This means that the application is responsible for repainting the portion of the client area that is invalidated, due to an action such as a window being resized, or an object changing its visual appearance.  
   
- ![Diagram of Win32 rendering sequence](./media/visuallayeroverview01.png "VisualLayerOverview01")  
-Diagram of Win32 rendering sequence  
+ ![Diagram of Win32 rendering sequence](./media/wpf-graphics-rendering-overview/win32-rendering-squence.png)  
   
  In contrast, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses a retained mode system. This means application objects that have a visual appearance define a set of serialized drawing data. Once the drawing data is defined, the system is responsible thereafter for responding to all repaint requests for rendering the application objects. Even at run time, you can modify or create application objects, and still rely on the system for responding to paint requests. The power in a retained mode graphics system is that drawing information is always persisted in a serialized state by the application, but rendering responsibility left to the system. The following diagram shows how the application relies on [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] for responding to paint requests.  
   
- ![Diagram of WPF rendering sequence](./media/visuallayeroverview02.png "VisualLayerOverview02")  
-Diagram of WPF rendering sequence  
-  
+ ![Diagram of WPF rendering sequence](./media/wpf-graphics-rendering-overview/wpf-rendering-sequence.png)  
+
 #### Intelligent Redrawing  
  One of the biggest benefits in using retained mode graphics is that [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] can efficiently optimize what needs to be redrawn in the application. Even if you have a complex scene with varying levels of opacity, you generally do not need to write special-purpose code to optimize redrawing. Compare this with Win32 programming in which you can spend a great deal of effort in optimizing your application by minimizing the amount of redrawing in the update region. See [Redrawing in the Update Region](/windows/desktop/gdi/redrawing-in-the-update-region) for an example of the type of complexity involved in optimizing redrawing in Win32 applications.  
   
@@ -208,8 +200,7 @@ Diagram of WPF rendering sequence
   
  The following illustration shows a source image that has been resized by 300%. Notice the distortions that appear when the source image is stretched as a bitmap graphics image rather than scaled as a vector graphics image.  
   
- ![Differences between raster and vector graphics](./media/vectorgraphics01.png "VectorGraphics01")  
-Differences between raster and vector graphics  
+ ![Differences between raster and vector graphics](./media/wpf-graphics-rendering-overview/raster-vector-differences.png)  
   
  The following markup shows two <xref:System.Windows.Shapes.Path> elements defined. The second element uses a <xref:System.Windows.Media.ScaleTransform> to resize the drawing instructions of the first element by 300%. Notice that the drawing instructions in the <xref:System.Windows.Shapes.Path> elements remain unchanged.  
   

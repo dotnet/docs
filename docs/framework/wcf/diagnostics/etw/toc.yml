@@ -1,0 +1,718 @@
+- name: Analytic Tracing with ETW
+  href: index.md
+  items:
+  - name: Analytic Tracing Overview
+    href: analytic-tracing-overview.md
+  - name: Dynamically Enabling Analytic Tracing
+    href: dynamically-enabling-analytic-tracing.md
+  - name: Configuring Message Flow Tracing
+    href: configuring-message-flow-tracing.md
+  - name: Analytic Trace Event Reference
+    href: analytic-trace-event-reference.md
+    items:
+    - name: 131 - BufferPoolAllocation
+      href: 131-bufferpoolallocation.md
+    - name: 132 - BufferPoolChangeQuota
+      href: 132-bufferpoolchangequota.md
+    - name: 133 - ActionItemScheduled
+      href: 133-actionitemscheduled.md
+    - name: 134 - ActionItemCallbackInvoked
+      href: 134-actionitemcallbackinvoked.md
+    - name: 201 - ClientMessageInspectorAfterReceiveInvoked
+      href: 201-clientmessageinspectorafterreceiveinvoked.md
+    - name: 202 - ClientMessageInspectorBeforeSendInvoked
+      href: 202-clientmessageinspectorbeforesendinvoked.md
+    - name: 203 - ClientParameterInspectorAfterCallInvoked
+      href: 203-clientparameterinspectoraftercallinvoked.md
+    - name: 204 - ClientParameterInspectorBeforeCallInvoked
+      href: 204-clientparameterinspectorbeforecallinvoked.md
+    - name: 205 - OperationInvoked
+      href: 205-operationinvoked.md
+    - name: 206 - ErrorHandlerInvoked
+      href: 206-errorhandlerinvoked.md
+    - name: 207 - FaultProviderInvoked
+      href: 207-faultproviderinvoked.md
+    - name: 208 - MessageInspectorAfterReceiveInvoked
+      href: 208-messageinspectorafterreceiveinvoked.md
+    - name: 209 - MessageInspectorBeforeSendInvoked
+      href: 209-messageinspectorbeforesendinvoked.md
+    - name: 210 - MessageThrottleExceeded
+      href: 210-messagethrottleexceeded.md
+    - name: 211 - ParameterInspectorAfterCallInvoked
+      href: 211-parameterinspectoraftercallinvoked.md
+    - name: 212 - ParameterInspectorBeforeCallInvoked
+      href: 212-parameterinspectorbeforecallinvoked.md
+    - name: 213 - ServiceHostStarted
+      href: 213-servicehoststarted.md
+    - name: 214 - OperationCompleted
+      href: 214-operationcompleted.md
+    - name: 215 - MessageReceivedByTransport
+      href: 215-messagereceivedbytransport.md
+    - name: 216 - MessageSentByTransport
+      href: 216-messagesentbytransport.md
+    - name: 217 - ClientOperationPrepared
+      href: 217-clientoperationprepared.md
+    - name: 218 - ClientOperationCompleted
+      href: 218-clientoperationcompleted.md
+    - name: 219 - ServiceException
+      href: 219-serviceexception.md
+    - name: 220 - MessageSentToTransport
+      href: 220-messagesenttotransport.md
+    - name: 221 - MessageReceivedFromTransport
+      href: 221-messagereceivedfromtransport.md
+    - name: 222 - OperationFailed
+      href: 222-operationfailed.md
+    - name: 223 - OperationFaulted
+      href: 223-operationfaulted.md
+    - name: 224 - MessageThrottleAtSeventyPercent
+      href: 224-messagethrottleatseventypercent.md
+    - name: 226 - IdleServicesClosed
+      href: 226-idleservicesclosed.md
+    - name: 301 - UserDefinedErrorOccurred
+      href: 301-userdefinederroroccurred.md
+    - name: 302 - UserDefinedWarningOccurred
+      href: 302-userdefinedwarningoccurred.md
+    - name: 303 - UserDefinedInformationEventOccured
+      href: 303-userdefinedinformationeventoccured.md
+    - name: 401- StopSignPostEvent
+      href: 401-stopsignpostevent.md
+    - name: 402 - StartSignpostEvent
+      href: 402-startsignpostevent.md
+    - name: 403 - SuspendSignpostEvent
+      href: 403-suspendsignpostevent.md
+    - name: 404 - ResumeSignpostEvent
+      href: 404-resumesignpostevent.md
+    - name: 451 - MessageLogInfo
+      href: 451-messageloginfo.md
+    - name: 452 - MessageLogWarning
+      href: 452-messagelogwarning.md
+    - name: 499 - TransferEmitted
+      href: 499-transferemitted.md
+    - name: 501 - CompilationStart
+      href: 501-compilationstart.md
+    - name: 502 - CompilationStop
+      href: 502-compilationstop.md
+    - name: 503 - ServiceHostFactoryCreationStart
+      href: 503-servicehostfactorycreationstart.md
+    - name: 504 - ServiceHostFactoryCreationStop
+      href: 504-servicehostfactorycreationstop.md
+    - name: 505 - CreateServiceHostStart
+      href: 505-createservicehoststart.md
+    - name: 506 - CreateServiceHostStop
+      href: 506-createservicehoststop.md
+    - name: 507 - HostedTransportConfigurationManagerConfigInitStart
+      href: 507-hostedtransportconfigurationmanagerconfiginitstart.md
+    - name: 508 - HostedTransportConfigurationManagerConfigInitStop
+      href: 508-hostedtransportconfigurationmanagerconfiginitstop.md
+    - name: 509 - ServiceHostOpenStart
+      href: 509-servicehostopenstart.md
+    - name: 510 - ServiceHostOpenStop
+      href: 510-servicehostopenstop.md
+    - name: 513 - WebHostRequestStart
+      href: 513-webhostrequeststart.md
+    - name: 514 - WebHostRequestStop
+      href: 514-webhostrequeststop.md
+    - name: 601 - CBAEntryRead
+      href: 601-cbaentryread.md
+    - name: 602 - CBAMatchFound
+      href: 602-cbamatchfound.md
+    - name: 603 - AspNetRoutingService
+      href: 603-aspnetroutingservice.md
+    - name: 604 - AspNetRoute
+      href: 604-aspnetroute.md
+    - name: 605 - IncrementBusyCount
+      href: 605-incrementbusycount.md
+    - name: 606 - DecrementBusyCount
+      href: 606-decrementbusycount.md
+    - name: 701 - ServiceChannelOpenStart
+      href: 701-servicechannelopenstart.md
+    - name: 702 - ServiceChannelOpenStop
+      href: 702-servicechannelopenstop.md
+    - name: 703 - ServiceChannelCallStart
+      href: 703-servicechannelcallstart.md
+    - name: 704 - ServiceChannelBeginCallStart
+      href: 704-servicechannelbegincallstart.md
+    - name: 706 - HttpSendMessageStart
+      href: 706-httpsendmessagestart.md
+    - name: 707 - HttpSendStop
+      href: 707-httpsendstop.md
+    - name: 708 - HttpMessageReceiveStart
+      href: 708-httpmessagereceivestart.md
+    - name: 709 - DispatchMessageStart
+      href: 709-dispatchmessagestart.md
+    - name: 710 - HttpContextBeforeProcessAuthentication
+      href: 710-httpcontextbeforeprocessauthentication.md
+    - name: 711 - DispatchMessageBeforeAuthorization
+      href: 711-dispatchmessagebeforeauthorization.md
+    - name: 712 - DispatchMessageStop
+      href: 712-dispatchmessagestop.md
+    - name: 715 - ClientChannelOpenStart
+      href: 715-clientchannelopenstart.md
+    - name: 716 - ClientChannelOpenStop
+      href: 716-clientchannelopenstop.md
+    - name: 717 - HttpSendStreamedMessageStart
+      href: 717-httpsendstreamedmessagestart.md
+    - name: 1400 - ChannelInitializationTimeout
+      href: 1400-channelinitializationtimeout.md
+    - name: 1401 - CloseTimeout
+      href: 1401-closetimeout.md
+    - name: 1402 - IdleTimeout
+      href: 1402-idletimeout.md
+    - name: 1403 - LeaseTimeout
+      href: 1403-leasetimeout.md
+    - name: 1405 - OpenTimeout
+      href: 1405-opentimeout.md
+    - name: 1406 - ReceiveTimeout
+      href: 1406-receivetimeout.md
+    - name: 1407 - SendTimeout
+      href: 1407-sendtimeout.md
+    - name: 1409 - InactivityTimeout
+      href: 1409-inactivitytimeout.md
+    - name: 1416 - MaxReceivedMessageSizeExceeded
+      href: 1416-maxreceivedmessagesizeexceeded.md
+    - name: 1417 - MaxSentMessageSizeExceeded
+      href: 1417-maxsentmessagesizeexceeded.md
+    - name: 1418 - MaxOutboundConnectionsPerEndpointExceeded
+      href: 1418-maxoutboundconnectionsperendpointexceeded.md
+    - name: 1419 - MaxPendingConnectionsExceeded
+      href: 1419-maxpendingconnectionsexceeded.md
+    - name: 1420 - ReaderQuotaExceeded
+      href: 1420-readerquotaexceeded.md
+    - name: 1422 - NegotiateTokenAuthenticatorStateCacheExceeded
+      href: 1422-negotiatetokenauthenticatorstatecacheexceeded.md
+    - name: 1423 - NegotiateTokenAuthenticatorStateCacheRatio
+      href: 1423-negotiatetokenauthenticatorstatecacheratio.md
+    - name: 1424 - SecuritySessionRatio
+      href: 1424-securitysessionratio.md
+    - name: 1430 - PendingConnectionsRatio
+      href: 1430-pendingconnectionsratio.md
+    - name: 1431 - ConcurrentCallsRatio
+      href: 1431-concurrentcallsratio.md
+    - name: 1432 - ConcurrentSessionsRatio
+      href: 1432-concurrentsessionsratio.md
+    - name: 1433 - OutboundConnectionsPerEndpointRatio
+      href: 1433-outboundconnectionsperendpointratio.md
+    - name: 1436 - PendingMessagesPerChannelRatio
+      href: 1436-pendingmessagesperchannelratio.md
+    - name: 1438 - ConcurrentInstancesRatio
+      href: 1438-concurrentinstancesratio.md
+    - name: 1439 - PendingAcceptsAtZero
+      href: 1439-pendingacceptsatzero.md
+    - name: 1441 - MaxSessionSizeReached
+      href: 1441-maxsessionsizereached.md
+    - name: 1442 - ReceiveRetryCountReached
+      href: 1442-receiveretrycountreached.md
+    - name: 1443 - MaxRetryCyclesExceededMsmq
+      href: 1443-maxretrycyclesexceededmsmq.md
+    - name: 1445 - ReadPoolMiss
+      href: 1445-readpoolmiss.md
+    - name: 1446 - WritePoolMiss
+      href: 1446-writepoolmiss.md
+    - name: 1451 - MaxRetryCyclesExceeded
+      href: 1451-maxretrycyclesexceeded.md
+    - name: 3300 - ReceiveContextCompleteFailed
+      href: 3300-receivecontextcompletefailed.md
+    - name: 3301 - ReceiveContextAbandonFailed
+      href: 3301-receivecontextabandonfailed.md
+    - name: 3302 - ReceiveContextFaulted
+      href: 3302-receivecontextfaulted.md
+    - name: 3303 - ReceiveContextAbandonWithException
+      href: 3303-receivecontextabandonwithexception.md
+    - name: 3305 - ClientBaseCachedChannelFactoryCount
+      href: 3305-clientbasecachedchannelfactorycount.md
+    - name: 3306 - ClientBaseChannelFactoryAgedOutofCache
+      href: 3306-clientbasechannelfactoryagedoutofcache.md
+    - name: 3307 - ClientBaseChannelFactoryCacheHit
+      href: 3307-clientbasechannelfactorycachehit.md
+    - name: 3308 - ClientBaseUsingLocalChannelFactory
+      href: 3308-clientbaseusinglocalchannelfactory.md
+    - name: 3309 - QueryCompositionExecuted
+      href: 3309-querycompositionexecuted.md
+    - name: 3310 - DispatchFailed
+      href: 3310-dispatchfailed.md
+    - name: 3311 - DispatchSuccessful
+      href: 3311-dispatchsuccessful.md
+    - name: 3312 - MessageReadByEncoder
+      href: 3312-messagereadbyencoder.md
+    - name: 3313 - MessageWrittenByEncoder
+      href: 3313-messagewrittenbyencoder.md
+    - name: 3314 - SessionIdleTimeout
+      href: 3314-sessionidletimeout.md
+    - name: 3319 - SocketAcceptEnqueued
+      href: 3319-socketacceptenqueued.md
+    - name: 3320 - SocketAccepted
+      href: 3320-socketaccepted.md
+    - name: 3321 - ConnectionPoolMiss
+      href: 3321-connectionpoolmiss.md
+    - name: 3322 - DispatchFormatterDeserializeRequestStart
+      href: 3322-dispatchformatterdeserializerequeststart.md
+    - name: 3323 - DispatchFormatterDeserializeRequestStop
+      href: 3323-dispatchformatterdeserializerequeststop.md
+    - name: 3324 - DispatchFormatterSerializeReplyStart
+      href: 3324-dispatchformatterserializereplystart.md
+    - name: 3325 - DispatchFormatterSerializeReplyStop
+      href: 3325-dispatchformatterserializereplystop.md
+    - name: 3326 - ClientFormatterSerializeRequestStart
+      href: 3326-clientformatterserializerequeststart.md
+    - name: 3327 - ClientFormatterSerializeRequestStop
+      href: 3327-clientformatterserializerequeststop.md
+    - name: 3328 - ClientFormatterDeserializeReplyStart
+      href: 3328-clientformatterdeserializereplystart.md
+    - name: 3329 - ClientFormatterDeserializeReplyStop
+      href: 3329-clientformatterdeserializereplystop.md
+    - name: 3330 - SecurityNegotiationStart
+      href: 3330-securitynegotiationstart.md
+    - name: 3331 - SecurityNegotiationStop
+      href: 3331-securitynegotiationstop.md
+    - name: 3332 - SecurityTokenProviderOpened
+      href: 3332-securitytokenprovideropened.md
+    - name: 3333 - OutgoingMessageSecured
+      href: 3333-outgoingmessagesecured.md
+    - name: 3334 - IncomingMessageVerified
+      href: 3334-incomingmessageverified.md
+    - name: 3335 - GetServiceInstanceStart
+      href: 3335-getserviceinstancestart.md
+    - name: 3336 - GetServiceInstanceStop
+      href: 3336-getserviceinstancestop.md
+    - name: 3337 - ChannelReceiveStart
+      href: 3337-channelreceivestart.md
+    - name: 3338 - ChannelReceiveStop
+      href: 3338-channelreceivestop.md
+    - name: 3339 - ChannelFactoryCreated
+      href: 3339-channelfactorycreated.md
+    - name: 3340 - PipeConnectionAcceptStart
+      href: 3340-pipeconnectionacceptstart.md
+    - name: 3341 - PipeConnectionAcceptStop
+      href: 3341-pipeconnectionacceptstop.md
+    - name: 3342 - EstablishConnectionStart
+      href: 3342-establishconnectionstart.md
+    - name: 3343 - EstablishConnectionStop
+      href: 3343-establishconnectionstop.md
+    - name: 3345 - SessionPreambleUnderstood
+      href: 3345-sessionpreambleunderstood.md
+    - name: 3346 - ConnectionReaderSendFault
+      href: 3346-connectionreadersendfault.md
+    - name: 3347 - SocketAcceptClosed
+      href: 3347-socketacceptclosed.md
+    - name: 3348 - ServiceHostFaulted
+      href: 3348-servicehostfaulted.md
+    - name: 3349 - ListenerOpenStart
+      href: 3349-listeneropenstart.md
+    - name: 3350 - ListenerOpenStop
+      href: 3350-listeneropenstop.md
+    - name: 3351 - ServerMaxPooledConnectionsQuotaReached
+      href: 3351-servermaxpooledconnectionsquotareached.md
+    - name: 3352 - TcpConnectionTimedOut
+      href: 3352-tcpconnectiontimedout.md
+    - name: 3353 - TcpConnectionResetError
+      href: 3353-tcpconnectionreseterror.md
+    - name: 3354 - ServiceSecurityNegotiationCompleted
+      href: 3354-servicesecuritynegotiationcompleted.md
+    - name: 3355 - SecurityNegotiationProcessingFailure
+      href: 3355-securitynegotiationprocessingfailure.md
+    - name: 3356 - SecurityIdentityVerificationSuccess
+      href: 3356-securityidentityverificationsuccess.md
+    - name: 3357 - SecurityIdentityVerificationFailure
+      href: 3357-securityidentityverificationfailure.md
+    - name: 3358 - PortSharingDuplicatedSocket
+      href: 3358-portsharingduplicatedsocket.md
+    - name: 3359 - SecurityImpersonationSuccess
+      href: 3359-securityimpersonationsuccess.md
+    - name: 3360 - SecurityImpersonationFailure
+      href: 3360-securityimpersonationfailure.md
+    - name: 3361 - HttpChannelRequestAborted
+      href: 3361-httpchannelrequestaborted.md
+    - name: 3362 - HttpChannelResponseAborted
+      href: 3362-httpchannelresponseaborted.md
+    - name: 3363 - HttpAuthFailed
+      href: 3363-httpauthfailed.md
+    - name: 3364 - SharedListenerProxyRegisterStart
+      href: 3364-sharedlistenerproxyregisterstart.md
+    - name: 3365 - SharedListenerProxyRegisterStop
+      href: 3365-sharedlistenerproxyregisterstop.md
+    - name: 3366 - SharedListenerProxyRegisterFailed
+      href: 3366-sharedlistenerproxyregisterfailed.md
+    - name: 3367 - ConnectionPoolPreambleFailed
+      href: 3367-connectionpoolpreamblefailed.md
+    - name: 3368 - SslOnInitiateUpgrade
+      href: 3368-ssloninitiateupgrade.md
+    - name: 3369 - SslOnAcceptUpgrade
+      href: 3369-sslonacceptupgrade.md
+    - name: 3370 - BinaryMessageEncodingStart
+      href: 3370-binarymessageencodingstart.md
+    - name: 3371 - MtomMessageEncodingStart
+      href: 3371-mtommessageencodingstart.md
+    - name: 3372 - TextMessageEncodingStart
+      href: 3372-textmessageencodingstart.md
+    - name: 3373 - BinaryMessageDecodingStart
+      href: 3373-binarymessagedecodingstart.md
+    - name: 3374 - MtomMessageDecodingStart
+      href: 3374-mtommessagedecodingstart.md
+    - name: 3375 - TextMessageDecodingStart
+      href: 3375-textmessagedecodingstart.md
+    - name: 3376 - HttpResponseReceiveStart
+      href: 3376-httpresponsereceivestart.md
+    - name: 3377 - SocketReadStop
+      href: 3377-socketreadstop.md
+    - name: 3378 - SocketAsyncReadStop
+      href: 3378-socketasyncreadstop.md
+    - name: 3379 - SocketWriteStart
+      href: 3379-socketwritestart.md
+    - name: 3380 - SocketAsyncWriteStart
+      href: 3380-socketasyncwritestart.md
+    - name: 3381 - SequenceAcknowledgementSent
+      href: 3381-sequenceacknowledgementsent.md
+    - name: 3382 - ClientReliableSessionReconnect
+      href: 3382-clientreliablesessionreconnect.md
+    - name: 3383 - ReliableSessionChannelFaulted
+      href: 3383-reliablesessionchannelfaulted.md
+    - name: 3384 - WindowsStreamSecurityOnInitiateUpgrade
+      href: 3384-windowsstreamsecurityoninitiateupgrade.md
+    - name: 3385 - WindowsStreamSecurityOnAcceptUpgrade
+      href: 3385-windowsstreamsecurityonacceptupgrade.md
+    - name: 3386 - SocketConnectionAbort
+      href: 3386-socketconnectionabort.md
+    - name: 3388 - HttpGetContextStart
+      href: 3388-httpgetcontextstart.md
+    - name: 3389 - ClientSendPreambleStart
+      href: 3389-clientsendpreamblestart.md
+    - name: 3390 - ClientSendPreambleStop
+      href: 3390-clientsendpreamblestop.md
+    - name: 3391 - HttpMessageReceiveFailed
+      href: 3391-httpmessagereceivefailed.md
+    - name: 3392 - TransactionScopeCreate
+      href: 3392-transactionscopecreate.md
+    - name: 3393 - StreamedMessageReadByEncoder
+      href: 3393-streamedmessagereadbyencoder.md
+    - name: 3394 - StreamedMessageWrittenByEncoder
+      href: 3394-streamedmessagewrittenbyencoder.md
+    - name: 3395 - MessageWrittenAsynchronouslyByEncoder
+      href: 3395-messagewrittenasynchronouslybyencoder.md
+    - name: 3396 - BufferedAsyncWriteStart
+      href: 3396-bufferedasyncwritestart.md
+    - name: 3397 - BufferedAsyncWriteStop
+      href: 3397-bufferedasyncwritestop.md
+    - name: 3398 - PipeSharedMemoryCreated
+      href: 3398-pipesharedmemorycreated.md
+    - name: 3399 - NamedPipeCreated
+      href: 3399-namedpipecreated.md
+    - name: 3401 - SignatureVerificationStart
+      href: 3401-signatureverificationstart.md
+    - name: 3402 - SignatureVerificationSuccess
+      href: 3402-signatureverificationsuccess.md
+    - name: 3403 - WrappedKeyDecryptionStart
+      href: 3403-wrappedkeydecryptionstart.md
+    - name: 3404 - WrappedKeyDecryptionSuccess
+      href: 3404-wrappedkeydecryptionsuccess.md
+    - name: 3405 - EncryptedDataProcessingStart
+      href: 3405-encrypteddataprocessingstart.md
+    - name: 3406 - EncryptedDataProcessingSuccess
+      href: 3406-encrypteddataprocessingsuccess.md
+    - name: 3407 - HttpPipelineProcessInboundRequestStart
+      href: 3407-httppipelineprocessinboundrequeststart.md
+    - name: 3408 - HttpPipelineBeginProcessInboundRequestStart
+      href: 3408-httppipelinebeginprocessinboundrequeststart.md
+    - name: 3409 - HttpPipelineProcessInboundRequestStop
+      href: 3409-httppipelineprocessinboundrequeststop.md
+    - name: 3410 - HttpPipelineFaulted
+      href: 3410-httppipelinefaulted.md
+    - name: 3411 - HttpPipelineTimeoutException
+      href: 3411-httppipelinetimeoutexception.md
+    - name: 3412 - HttpPipelineProcessResponseStart
+      href: 3412-httppipelineprocessresponsestart.md
+    - name: 3413 - HttpPipelineBeginProcessResponseStart
+      href: 3413-httppipelinebeginprocessresponsestart.md
+    - name: 3414 - HttpPipelineProcessResponseStop
+      href: 3414-httppipelineprocessresponsestop.md
+    - name: 3415 - WebSocketConnectionRequestSendStart
+      href: 3415-websocketconnectionrequestsendstart.md
+    - name: 3416 - WebSocketConnectionRequestSendStop
+      href: 3416-websocketconnectionrequestsendstop.md
+    - name: 3417 - WebSocketConnectionAcceptStart
+      href: 3417-websocketconnectionacceptstart.md
+    - name: 3418 - WebSocketConnectionAccepted
+      href: 3418-websocketconnectionaccepted.md
+    - name: 3419 - WebSocketConnectionDeclined
+      href: 3419-websocketconnectiondeclined.md
+    - name: 3420 - WebSocketConnectionFailed
+      href: 3420-websocketconnectionfailed.md
+    - name: 3421 - WebSocketConnectionAborted
+      href: 3421-websocketconnectionaborted.md
+    - name: 3422 - WebSocketAsyncWriteStart
+      href: 3422-websocketasyncwritestart.md
+    - name: 3423 - WebSocketAsyncWriteStop
+      href: 3423-websocketasyncwritestop.md
+    - name: 3424 - WebSocketAsyncReadStart
+      href: 3424-websocketasyncreadstart.md
+    - name: 3425 - WebSocketAsyncReadStop
+      href: 3425-websocketasyncreadstop.md
+    - name: 3426 - WebSocketCloseSent
+      href: 3426-websocketclosesent.md
+    - name: 3427 - WebSocketCloseOutputSent
+      href: 3427-websocketcloseoutputsent.md
+    - name: 3428 - WebSocketConnectionClosed
+      href: 3428-websocketconnectionclosed.md
+    - name: 3429 - WebSocketCloseStatusReceived
+      href: 3429-websocketclosestatusreceived.md
+    - name: 3430 - WebSocketUseVersionFromClientWebSocketFactory
+      href: 3430-websocketuseversionfromclientwebsocketfactory.md
+    - name: 3431 - WebSocketCreateClientWebSocketWithFactory
+      href: 3431-websocketcreateclientwebsocketwithfactory.md
+    - name: 3553 - XamlServicesLoadStart
+      href: 3553-xamlservicesloadstart.md
+    - name: 3554 - XamlServicesLoadStop
+      href: 3554-xamlservicesloadstop.md
+    - name: 3555 - CreateWorkflowServiceHostStart
+      href: 3555-createworkflowservicehoststart.md
+    - name: 3556 - CreateWorkflowServiceHostStop
+      href: 3556-createworkflowservicehoststop.md
+    - name: 3558 - ServiceActivationStart
+      href: 3558-serviceactivationstart.md
+    - name: 3559 - ServiceActivationStop
+      href: 3559-serviceactivationstop.md
+    - name: 3560 - ServiceActivationAvailableMemory
+      href: 3560-serviceactivationavailablememory.md
+    - name: 3800 - RoutingServiceClosingClient
+      href: 3800-routingserviceclosingclient.md
+    - name: 3801 - RoutingServiceChannelFaulted
+      href: 3801-routingservicechannelfaulted.md
+    - name: 3802 - RoutingServiceCompletingOneWay
+      href: 3802-routingservicecompletingoneway.md
+    - name: 3803 - RoutingServiceProcessingFailure
+      href: 3803-routingserviceprocessingfailure.md
+    - name: 3804 - RoutingServiceCreatingClientForEndpoint
+      href: 3804-routingservicecreatingclientforendpoint.md
+    - name: 3805 - RoutingServiceDisplayConfig
+      href: 3805-routingservicedisplayconfig.md
+    - name: 3807 - RoutingServiceCompletingTwoWay
+      href: 3807-routingservicecompletingtwoway.md
+    - name: 3809 - RoutingServiceMessageRoutedToEndpoints
+      href: 3809-routingservicemessageroutedtoendpoints.md
+    - name: 3810 - RoutingServiceConfigurationApplied
+      href: 3810-routingserviceconfigurationapplied.md
+    - name: 3815 - RoutingServiceProcessingMessage
+      href: 3815-routingserviceprocessingmessage.md
+    - name: 3816 - RoutingServiceTransmittingMessage
+      href: 3816-routingservicetransmittingmessage.md
+    - name: 3817 - RoutingServiceCommittingTransaction
+      href: 3817-routingservicecommittingtransaction.md
+    - name: 3818 - RoutingServiceDuplexCallbackException
+      href: 3818-routingserviceduplexcallbackexception.md
+    - name: 3819 - RoutingServiceMovedToBackup
+      href: 3819-routingservicemovedtobackup.md
+    - name: 3820 - RoutingServiceCreatingTransaction
+      href: 3820-routingservicecreatingtransaction.md
+    - name: 3821 - RoutingServiceCloseFailed
+      href: 3821-routingserviceclosefailed.md
+    - name: 3822 - RoutingServiceSendingResponse
+      href: 3822-routingservicesendingresponse.md
+    - name: 3823 - RoutingServiceSendingFaultResponse
+      href: 3823-routingservicesendingfaultresponse.md
+    - name: 3824 - RoutingServiceCompletingReceiveContext
+      href: 3824-routingservicecompletingreceivecontext.md
+    - name: 3825 - RoutingServiceAbandoningReceiveContext
+      href: 3825-routingserviceabandoningreceivecontext.md
+    - name: 3826 - RoutingServiceUsingExistingTransaction
+      href: 3826-routingserviceusingexistingtransaction.md
+    - name: 3827 - RoutingServiceTransmitFailed
+      href: 3827-routingservicetransmitfailed.md
+    - name: 3828 - RoutingServiceFilterTableMatchStart
+      href: 3828-routingservicefiltertablematchstart.md
+    - name: 3829 - RoutingServiceFilterTableMatchStop
+      href: 3829-routingservicefiltertablematchstop.md
+    - name: 3830 - RoutingServiceAbortingChannel
+      href: 3830-routingserviceabortingchannel.md
+    - name: 3831 - RoutingServiceHandledException
+      href: 3831-routingservicehandledexception.md
+    - name: 3832 - RoutingServiceTransmitSucceeded
+      href: 3832-routingservicetransmitsucceeded.md
+    - name: 4001 - TransportListenerSessionsReceived
+      href: 4001-transportlistenersessionsreceived.md
+    - name: 4002 - FailFastException
+      href: 4002-failfastexception.md
+    - name: 4003 - ServiceStartPipeError
+      href: 4003-servicestartpipeerror.md
+    - name: 4008 - DispatchSessionStart
+      href: 4008-dispatchsessionstart.md
+    - name: 4010 - PendingSessionQueueFull
+      href: 4010-pendingsessionqueuefull.md
+    - name: 4011 - MessageQueueRegisterStart
+      href: 4011-messagequeueregisterstart.md
+    - name: 4012 - MessageQueueRegisterAbort
+      href: 4012-messagequeueregisterabort.md
+    - name: 4013 - MessageQueueUnregisterSucceeded
+      href: 4013-messagequeueunregistersucceeded.md
+    - name: 4014 - MessageQueueRegisterFailed
+      href: 4014-messagequeueregisterfailed.md
+    - name: 4015 - MessageQueueRegisterCompleted
+      href: 4015-messagequeueregistercompleted.md
+    - name: 4016 - MessageQueueDuplicatedSocketError
+      href: 4016-messagequeueduplicatedsocketerror.md
+    - name: 4019 - MessageQueueDuplicatedSocketComplete
+      href: 4019-messagequeueduplicatedsocketcomplete.md
+    - name: 4020 - TcpTransportListenerListeningStart
+      href: 4020-tcptransportlistenerlisteningstart.md
+    - name: 4021 - TcpTransportListenerListeningStop
+      href: 4021-tcptransportlistenerlisteningstop.md
+    - name: 4022 - WebhostUnregisterProtocolFailed
+      href: 4022-webhostunregisterprotocolfailed.md
+    - name: 4023 - WasCloseAllListenerChannelInstancesCompleted
+      href: 4023-wasclosealllistenerchannelinstancescompleted.md
+    - name: 4024 - WasCloseAllListenerChannelInstancesFailed
+      href: 4024-wasclosealllistenerchannelinstancesfailed.md
+    - name: 4025 - OpenListenerChannelInstanceFailed
+      href: 4025-openlistenerchannelinstancefailed.md
+    - name: 4026 - WasConnected
+      href: 4026-wasconnected.md
+    - name: 4027 - WasDisconnected
+      href: 4027-wasdisconnected.md
+    - name: 4028 - PipeTransportListenerListeningStart
+      href: 4028-pipetransportlistenerlisteningstart.md
+    - name: 4029 - PipeTransportListenerListeningStop
+      href: 4029-pipetransportlistenerlisteningstop.md
+    - name: 4030 - DispatchSessionSuccess
+      href: 4030-dispatchsessionsuccess.md
+    - name: 4031 - DispatchSessionFailed
+      href: 4031-dispatchsessionfailed.md
+    - name: 4032 - WasConnectionTimedout
+      href: 4032-wasconnectiontimedout.md
+    - name: 4033 - RoutingTableLookupStart
+      href: 4033-routingtablelookupstart.md
+    - name: 4034 - RoutingTableLookupStop
+      href: 4034-routingtablelookupstop.md
+    - name: 4035 - PendingSessionQueueRatio
+      href: 4035-pendingsessionqueueratio.md
+    - name: 4600 - MessageLogEventSizeExceeded
+      href: 4600-messagelogeventsizeexceeded.md
+    - name: 4801 - DiscoveryClientInClientChannelFailedToClose
+      href: 4801-discoveryclientinclientchannelfailedtoclose.md
+    - name: 4802 - DiscoveryClientProtocolExceptionSuppressed
+      href: 4802-discoveryclientprotocolexceptionsuppressed.md
+    - name: 4803 - DiscoveryClientReceivedMulticastSuppression
+      href: 4803-discoveryclientreceivedmulticastsuppression.md
+    - name: 4804 - DiscoveryMessageReceivedAfterOperationCompleted
+      href: 4804-discoverymessagereceivedafteroperationcompleted.md
+    - name: 4805 - DiscoveryMessageWithInvalidContent
+      href: 4805-discoverymessagewithinvalidcontent.md
+    - name: 4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted
+      href: 4806-discoverymessagewithinvalidrelatestooroperationcompleted.md
+    - name: 4807 - DiscoveryMessageWithInvalidReplyTo
+      href: 4807-discoverymessagewithinvalidreplyto.md
+    - name: 4808 - DiscoveryMessageWithNoContent
+      href: 4808-discoverymessagewithnocontent.md
+    - name: 4809 - DiscoveryMessageWithNullMessageId
+      href: 4809-discoverymessagewithnullmessageid.md
+    - name: 4810 - DiscoveryMessageWithNullMessageSequence
+      href: 4810-discoverymessagewithnullmessagesequence.md
+    - name: 4811 - DiscoveryMessageWithNullRelatesTo
+      href: 4811-discoverymessagewithnullrelatesto.md
+    - name: 4812 - DiscoveryMessageWithNullReplyTo
+      href: 4812-discoverymessagewithnullreplyto.md
+    - name: 4813 - DuplicateDiscoveryMessage
+      href: 4813-duplicatediscoverymessage.md
+    - name: 4814 - EndpointDiscoverabilityDisabled
+      href: 4814-endpointdiscoverabilitydisabled.md
+    - name: 4815 - EndpointDiscoverabilityEnabled
+      href: 4815-endpointdiscoverabilityenabled.md
+    - name: 4816 - FindInitiatedInDiscoveryClientChannel
+      href: 4816-findinitiatedindiscoveryclientchannel.md
+    - name: 4817 - InnerChannelCreationFailed
+      href: 4817-innerchannelcreationfailed.md
+    - name: 4818 - InnerChannelOpenFailed
+      href: 4818-innerchannelopenfailed.md
+    - name: 4819 - InnerChannelOpenSucceeded
+      href: 4819-innerchannelopensucceeded.md
+    - name: 4820 - SynchronizationContextReset
+      href: 4820-synchronizationcontextreset.md
+    - name: 4821 - SynchronizationContextSetToNull
+      href: 4821-synchronizationcontextsettonull.md
+    - name: 5001 - DCSerializeWithSurrogateStart
+      href: 5001-dcserializewithsurrogatestart.md
+    - name: 5002 - DCSerializeWithSurrogateStop
+      href: 5002-dcserializewithsurrogatestop.md
+    - name: 5003 - DCDeserializeWithSurrogateStart
+      href: 5003-dcdeserializewithsurrogatestart.md
+    - name: 5004 - DCDeserializeWithSurrogateStop
+      href: 5004-dcdeserializewithsurrogatestop.md
+    - name: 5005 - ImportKnownTypesStart
+      href: 5005-importknowntypesstart.md
+    - name: 5006 - ImportKnownTypesStop
+      href: 5006-importknowntypesstop.md
+    - name: 5007 - DCResolverResolve
+      href: 5007-dcresolverresolve.md
+    - name: 5008 - DCGenWriterStart
+      href: 5008-dcgenwriterstart.md
+    - name: 5009 - DCGenWriterStop
+      href: 5009-dcgenwriterstop.md
+    - name: 5010 - DCGenReaderStart
+      href: 5010-dcgenreaderstart.md
+    - name: 5011 - DCGenReaderStop
+      href: 5011-dcgenreaderstop.md
+    - name: 5012 - DCJsonGenReaderStart
+      href: 5012-dcjsongenreaderstart.md
+    - name: 5013 - DCJsonGenReaderStop
+      href: 5013-dcjsongenreaderstop.md
+    - name: 5014 - DCJsonGenWriterStart
+      href: 5014-dcjsongenwriterstart.md
+    - name: 5015 - DCJsonGenWriterStop
+      href: 5015-dcjsongenwriterstop.md
+    - name: 5016 - GenXmlSerializableStart
+      href: 5016-genxmlserializablestart.md
+    - name: 5017 - GenXmlSerializableStop
+      href: 5017-genxmlserializablestop.md
+    - name: 5203 - JsonMessageDecodingStart
+      href: 5203-jsonmessagedecodingstart.md
+    - name: 5204 - JsonMessageEncodingStart
+      href: 5204-jsonmessageencodingstart.md
+    - name: 5402 - TokenValidationStarted
+      href: 5402-tokenvalidationstarted.md
+    - name: 5403 - TokenValidationSuccess
+      href: 5403-tokenvalidationsuccess.md
+    - name: 5404 - TokenValidationFailure
+      href: 5404-tokenvalidationfailure.md
+    - name: 5405 - GetIssuerNameSuccess
+      href: 5405-getissuernamesuccess.md
+    - name: 5406 - GetIssuerNameFailure
+      href: 5406-getissuernamefailure.md
+    - name: 5600 - FederationMessageProcessingStarted
+      href: 5600-federationmessageprocessingstarted.md
+    - name: 5601 - FederationMessageProcessingSuccess
+      href: 5601-federationmessageprocessingsuccess.md
+    - name: 5602 - FederationMessageCreationStarted
+      href: 5602-federationmessagecreationstarted.md
+    - name: 5603 - FederationMessageCreationSuccess
+      href: 5603-federationmessagecreationsuccess.md
+    - name: 5604 - SessionCookieReadingStarted
+      href: 5604-sessioncookiereadingstarted.md
+    - name: 5605 - SessionCookieReadingSuccess
+      href: 5605-sessioncookiereadingsuccess.md
+    - name: 5606 - PrincipalSettingFromSessionTokenStarted
+      href: 5606-principalsettingfromsessiontokenstarted.md
+    - name: 5607 - PrincipalSettingFromSessionTokenSuccess
+      href: 5607-principalsettingfromsessiontokensuccess.md
+    - name: 57393 - AppDomainUnload
+      href: 57393-appdomainunload.md
+    - name: 57394 - HandledException
+      href: 57394-handledexception.md
+    - name: 57395 - ShipAssertExceptionMessage
+      href: 57395-shipassertexceptionmessage.md
+    - name: 57396 - ThrowingException
+      href: 57396-throwingexception.md
+    - name: 57397 - UnhandledException
+      href: 57397-unhandledexception.md
+    - name: 57399 - TraceCodeEventLogCritical
+      href: 57399-tracecodeeventlogcritical.md
+    - name: 57400 - TraceCodeEventLogError
+      href: 57400-tracecodeeventlogerror.md
+    - name: 57401 - TraceCodeEventLogInfo
+      href: 57401-tracecodeeventloginfo.md
+    - name: 57402 - TraceCodeEventLogVerbose
+      href: 57402-tracecodeeventlogverbose.md
+    - name: 57403 - TraceCodeEventLogWarning
+      href: 57403-tracecodeeventlogwarning.md
+    - name: 57404 - HandledExceptionWarning
+      href: 57404-handledexceptionwarning.md
+    - name: 62326 - HttpHandlerPickedForUrl
+      href: 62326-httphandlerpickedforurl.md
+  - name: Determine service operation duration
+    href: determining-service-operation-duration.md

@@ -7,9 +7,9 @@ dev_langs:
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
 ---
 # Internet Unsecured Client and Service
-The following illustration shows an example of a public, unsecured Windows Communication Foundation (WCF) client and service.  
+The following illustration shows an example of a public, unsecured Windows Communication Foundation (WCF) client and service:  
   
- ![Unsecured Internet cleint and service scenario](../../../../docs/framework/wcf/feature-details/media/publicunsecured.gif "publicUnsecured")  
+ ![Screenshot that shows an unsecured Internet scenario](./media/internet-unsecured-client-and-service/public-unsecured-internet.gif)  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  

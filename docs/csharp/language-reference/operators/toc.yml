@@ -1,0 +1,87 @@
+- name: C# Operators
+  href: index.md
+  items:
+  - name: "[] Operator"
+    href: index-operator.md
+  - name: () Operator
+    href: invocation-operator.md
+  - name: . Operator
+    href: member-access-operator.md
+  - name: "?. and ?[] Operators"
+    href: null-conditional-operators.md
+  - name: ":: Operator"
+    href: namespace-alias-qualifer.md
+  - name: + Operator
+    href: addition-operator.md
+  - name: "- Operator"
+    href: subtraction-operator.md
+  - name: "* Operator"
+    href: multiplication-operator.md
+  - name: / Operator
+    href: division-operator.md
+  - name: "% Operator"
+    href: modulus-operator.md
+  - name: "& Operator"
+    href: and-operator.md
+  - name: "| Operator"
+    href: or-operator.md
+  - name: ^ Operator
+    href: xor-operator.md
+  - name: "! Operator"
+    href: logical-negation-operator.md
+  - name: ~ Operator
+    href: bitwise-complement-operator.md
+  - name: = Operator
+    href: assignment-operator.md
+  - name: < Operator
+    href: less-than-operator.md
+  - name: "> Operator"
+    href: greater-than-operator.md
+  - name: "?: Operator"
+    href: conditional-operator.md
+  - name: ++ Operator
+    href: increment-operator.md
+  - name: -- Operator
+    href: decrement-operator.md
+  - name: "&& Operator"
+    href: conditional-and-operator.md
+  - name: "|| Operator"
+    href: conditional-or-operator.md
+  - name: << Operator
+    href: left-shift-operator.md
+  - name: ">> Operator"
+    href: right-shift-operator.md
+  - name: == Operator
+    href: equality-comparison-operator.md
+  - name: "!= Operator"
+    href: not-equal-operator.md
+  - name: <= Operator
+    href: less-than-equal-operator.md
+  - name: ">= Operator"
+    href: greater-than-equal-operator.md
+  - name: += Operator
+    href: addition-assignment-operator.md
+  - name: -= Operator
+    href: subtraction-assignment-operator.md
+  - name: "*= Operator"
+    href: multiplication-assignment-operator.md
+  - name: /= Operator
+    href: division-assignment-operator.md
+  - name: "%= Operator"
+    href: modulus-assignment-operator.md
+  - name: "&= Operator"
+    href: and-assignment-operator.md
+  - name: "|= Operator"
+    href: or-assignment-operator.md
+  - name: ^= Operator
+    href: xor-assignment-operator.md
+  - name: <<= Operator
+    href: left-shift-assignment-operator.md
+  - name: ">>= Operator"
+    href: right-shift-assignment-operator.md
+  - name: -> Operator
+    href: dereference-operator.md
+  - name: "?? Operator"
+    href: null-coalescing-operator.md
+  - name: => Operator
+    href: lambda-operator.md

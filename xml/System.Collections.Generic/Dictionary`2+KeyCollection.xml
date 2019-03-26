@@ -746,7 +746,7 @@ lock (ic.SyncRoot) {
 ```  
   
 ```vb  
-Dim ic As IColletion = ...  
+Dim ic As ICollection = ...  
 SyncLock ic.SyncRoot  
    ' Access the collection.  
 End SyncLock  

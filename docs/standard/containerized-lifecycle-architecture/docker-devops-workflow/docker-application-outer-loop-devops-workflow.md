@@ -85,13 +85,13 @@ With these Visual Studio Team Services tasks, a build Linux-Docker Host/VM provi
 > To read more about assembling an Azure DevOps Services Docker CI pipeline and view the walkthroughs, visit these sites:
 >
 > - Running a Visual Studio Team Services (Now Azure DevOps Services) agent as a Docker container: \
->   [*https://hub.docker.com/r/microsoft/vsts-agent/*](https://hub.docker.com/r/microsoft/vsts-agent/)
+>   [https://hub.docker.com/r/microsoft/vsts-agent/](https://hub.docker.com/r/microsoft/vsts-agent/)
 >
 > - Building .NET Core Linux Docker images with Azure DevOps Services: \
->   [*https://blogs.msdn.microsoft.com/stevelasker/2016/06/13/building-net-core-linux-docker-images-with-visual-studio-team-services/*](https://blogs.msdn.microsoft.com/stevelasker/2016/06/13/building-net-core-linux-docker-images-with-visual-studio-team-services/)
+>   [https://blogs.msdn.microsoft.com/stevelasker/2016/06/13/building-net-core-linux-docker-images-with-visual-studio-team-services/](https://blogs.msdn.microsoft.com/stevelasker/2016/06/13/building-net-core-linux-docker-images-with-visual-studio-team-services/)
 >
 > - Building a Linux-based Visual Studio Team Service build machine with Docker support: \
->   [*http://donovanbrown.com/post/2016/06/03/Building-a-Linux-Based-Visual-Studio-Team-Service-Build-Machine-with-Docker-Support*](http://donovanbrown.com/post/2016/06/03/Building-a-Linux-Based-Visual-Studio-Team-Service-Build-Machine-with-Docker-Support)
+>   [http://donovanbrown.com/post/2016/06/03/Building-a-Linux-Based-Visual-Studio-Team-Service-Build-Machine-with-Docker-Support](http://donovanbrown.com/post/2016/06/03/Building-a-Linux-Based-Visual-Studio-Team-Service-Build-Machine-with-Docker-Support)
 
 ### Integrate, test, and validate multi-container Docker applications
 

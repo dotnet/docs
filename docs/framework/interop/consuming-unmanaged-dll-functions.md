@@ -48,8 +48,7 @@ Platform invoke is a service that enables managed code to call unmanaged functio
 ## A closer look at platform invoke  
  Platform invoke relies on metadata to locate exported functions and marshal their arguments at run time. The following illustration shows this process.  
   
- ![Platform invoke](../../../docs/framework/interop/media/pinvoke.gif "pinvoke")  
-A platform invoke call to an unmanaged DLL function  
+ ![Diagram that shows a platform invoke call.](./media/consuming-unmanaged-dll-functions/platform-invoke-call.gif)  
   
  When platform invoke calls an unmanaged function, it performs the following sequence of actions:  
   

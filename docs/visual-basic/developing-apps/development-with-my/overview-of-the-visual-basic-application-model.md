@@ -20,9 +20,9 @@ Visual Basic provides a well-defined model for controlling the behavior of Windo
   
 -   Each subsequent attempt to start the application, while the first instance runs, results in very different behavior. The subsequent attempt notifies the first instance about the command-line arguments, and then immediately exits. The first instance handles the `StartupNextInstance` event to determine what the subsequent instance's command-line arguments were, and continues to run.  
   
-     This diagram shows how a subsequent instance signals the first instance.  
+     This diagram shows how a subsequent instance signals the first instance:  
   
-     ![Single Instance Application Image](../../../visual-basic/developing-apps/development-with-my/media/singleinstance.gif "SingleInstance")  
+     ![Diagram that shows a single instance application image.](./media/overview-of-the-visual-basic-application-model/single-instance-application.gif)  
   
  By handling the `StartupNextInstance` event, you can control how your single-instance application behaves. For example, Microsoft Outlook typically runs as a single-instance application; when Outlook is running and you attempt to start Outlook again, focus shifts to the original instance but another instance does not open.  
   

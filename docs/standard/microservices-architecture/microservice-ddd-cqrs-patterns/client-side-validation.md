@@ -24,26 +24,26 @@ The implementation of client-side validation depends on what kind of client appl
 ### Validation in Xamarin mobile apps
 
 - **Validate Text Input and Show Errors** \
-  [*https://developer.xamarin.com/recipes/ios/standard\_controls/text\_field/validate\_input/*](https://developer.xamarin.com/recipes/ios/standard_controls/text_field/validate_input/)
+  [https://developer.xamarin.com/recipes/ios/standard\_controls/text\_field/validate\_input/](https://developer.xamarin.com/recipes/ios/standard_controls/text_field/validate_input/)
 
 - **Validation Callback** \
-  [*https://developer.xamarin.com/samples/xamarin-forms/XAML/ValidationCallback/*](https://developer.xamarin.com/samples/xamarin-forms/XAML/ValidationCallback/)
+  [https://developer.xamarin.com/samples/xamarin-forms/XAML/ValidationCallback/](https://developer.xamarin.com/samples/xamarin-forms/XAML/ValidationCallback/)
 
 ### Validation in ASP.NET Core apps
 
 - **Rick Anderson. Adding validation** \
-  [*https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation*](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation)
+  [https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation)
 
 ### Validation in SPA Web apps (Angular 2, TypeScript, JavaScript)
 
 - **Ado Kukic. Angular 2 Form Validation** \
-  [*https://scotch.io/tutorials/angular-2-form-validation*](https://scotch.io/tutorials/angular-2-form-validation)
+  [https://scotch.io/tutorials/angular-2-form-validation](https://scotch.io/tutorials/angular-2-form-validation)
 
 - **Form Validation** \
-  [*https://angular.io/docs/ts/latest/cookbook/form-validation.html*](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
+  [https://angular.io/docs/ts/latest/cookbook/form-validation.html](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
 
 - **Validation.** Breeze documentation. \
-  [*https://breeze.github.io/doc-js/validation.html*](https://breeze.github.io/doc-js/validation.html)
+  [https://breeze.github.io/doc-js/validation.html](https://breeze.github.io/doc-js/validation.html)
 
 In summary, these are the most important concepts in regards to validation:
 

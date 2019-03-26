@@ -476,7 +476,7 @@
       <Docs>
         <param name="item">When this method returns, if the operation was successful, <paramref name="item" /> contains the object removed. If no object was available to be removed, the value is unspecified.</param>
         <summary>Attempts to remove and return an object from the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
-        <returns>true if an element was removed and returned succesfully; otherwise, false.</returns>
+        <returns>true if an element was removed and returned successfully; otherwise, false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -49,27 +49,18 @@ When multiple applications use common images on the same machine, memory is shar
 
 ## Docker image variations
 
-To achieve the goals above, we provide image variants under [`microsoft/dotnet`](https://hub.docker.com/r/microsoft/dotnet/).
+To achieve the goals above, we provide several image variants on the [.NET Core Docker repositories](https://hub.docker.com/_/microsoft-dotnet-core).
 
-* `microsoft/dotnet:<version>-sdk`(`microsoft/dotnet:2.1-sdk`) This image contains the .NET Core SDK, which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You use this image for local development, debugging, and unit testing. This image can also be used for your **build** scenarios. Using `microsoft/dotnet:sdk` always gives you the latest version.
+* `mcr.microsoft.com/dotnet/core/sdk:<version>`(`mcr.microsoft.com/dotnet/core/sdk:2.1`) This image contains the .NET Core SDK, which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You use this image for local development, debugging, and unit testing. This image can also be used for your **build** scenarios.
 
 > [!TIP]
-> If you are unsure about your needs, you want to use the `microsoft/dotnet:<version>-sdk` image. As the "de facto" image, it's designed to be used as a throw away container (mount your source code and start the container to start your app), and as the base image to build other images from.
+> If you are unsure about your needs, you want to use the `mcr.microsoft.com/dotnet/core/sdk:<version>` image. As the "de facto" image, it's designed to be used as a throw away container (mount your source code and start the container to start your app), and as the base image to build other images from.
 
-* `microsoft/dotnet:<version>-runtime`: This image contains the .NET Core (runtime and libraries) and is optimized for running .NET Core apps in **production**.
+* `mcr.microsoft.com/dotnet/core/aspnet:<version>`: This image contains the ASP.NET Core and .NET Core runtimes and libraries and is optimized for running ASP.NET Core apps in **production**.
 
-## Alternative images
+* `mcr.microsoft.com/dotnet/core/runtime:<version>`: This image contains the .NET Core (runtime and libraries) and is optimized for running .NET Core apps in **production**.
 
-In addition to the optimized scenarios of development, build and production, we provide additional images:
-
-* `microsoft/dotnet:<version>-runtime-deps`: The **runtime-deps** image contains the operating system with all of the native dependencies needed by .NET Core. This image is for [self-contained applications](../deploying/index.md).
-
-Latest versions of each variant:
-
-* `microsoft/dotnet` or `microsoft/dotnet:latest` (alias for the SDK image)
-* `microsoft/dotnet:sdk`
-* `microsoft/dotnet:runtime`
-* `microsoft/dotnet:runtime-deps`
+* `mcr.microsoft.com/dotnet/core/runtime-deps:<version>`: This image contains the operating system with all of the native dependencies needed by .NET Core. This image is for [self-contained applications](../deploying/index.md).
 
 ## Samples to explore
 
@@ -117,9 +108,9 @@ To build and run, install the following items:
 
 #### Installing Docker Client
 
-Install [Docker 18.03](https://docs.docker.com/release-notes/docker-ce/) or later of the Docker client.
+Install the most recent version of [Docker](https://docs.docker.com/release-notes/docker-ce/).
 
-The Docker client can be installed in:
+Docker can be installed in:
 
 * Linux distributions
 
@@ -252,8 +243,8 @@ dotnet published/aspnetapp.dll
 
 The following Docker images are used in this sample's dockerfile.
 
-* `microsoft/dotnet:2.1-sdk`
-* `microsoft/dotnet:2.1-aspnetcore-runtime`
+* `mcr.microsoft.com/dotnet/core/sdk:2.1`
+* `mcr.microsoft.com/dotnet/core/aspnet:2.1`
 
 Congratulations! you have just:
 > [!div class="checklist"]

@@ -64,7 +64,7 @@ The most obvious horizontal scenario for using Docker and .NET applications is f
 
 The samples use .NET Core 2.0. They use Docker [multi-stage build](https://github.com/dotnet/announcements/issues/18) and [multi-arch tags](https://github.com/dotnet/announcements/issues/14) where appropriate.
 
-* [.NET Core images on DockerHub](https://hub.docker.com/r/microsoft/dotnet/)
+* [.NET Core images on DockerHub](https://hub.docker.com/_/microsoft-dotnet-core/)
 
 * [Dockerize a .NET Core application](https://docs.docker.com/engine/examples/dotnetcore/)
 
@@ -78,13 +78,13 @@ The samples use .NET Core 2.0. They use Docker [multi-stage build](https://githu
 
 * [.NET Core Runtime ARM32 builds announcement](https://github.com/dotnet/announcements/issues/29)
 
-* [ARM32 / Raspberry Pi .NET Core images on DockerHub](https://hub.docker.com/r/microsoft/dotnet/)
+* [ARM32 / Raspberry Pi .NET Core images on DockerHub](https://hub.docker.com/_/microsoft-dotnet-core/)
 
 * [ARM32 / Raspberry Pi .NET Core Docker Samples on GitHub](https://github.com/dotnet/dotnet-docker-samples#arm32--raspberry-pi)
 
 #### .NET Framework
 
-* [.NET Framework images on DockerHub](https://hub.docker.com/r/microsoft/dotnet-framework/)
+* [.NET Framework images on DockerHub](https://hub.docker.com/_/microsoft-dotnet-framework/)
 
 This repo contain samples that demonstrate various .NET Framework Docker configurations. You can use these images as the basis of your own Docker images.
 
@@ -104,19 +104,19 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [This ASP.NET Core Docker sample](https://github.com/dotnet/dotnet-docker-samples/tree/master/aspnetapp) demonstrates a best practice pattern for building Docker images for ASP.NET Core apps for production. The sample works with both Linux and Windows containers.
 
-* [ASP.NET Core images on DockerHub](https://hub.docker.com/r/microsoft/aspnetcore-build/)
+* [ASP.NET Core images on DockerHub](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/)
 
 * [ASP.NET Core images on GitHub](https://github.com/aspnet/aspnet-docker)
 
 #### ASP.NET Framework
 
-* [ASP.NET Framework images on DockerHub](https://hub.docker.com/r/microsoft/aspnet/)
+* [ASP.NET Framework images on DockerHub](https://hub.docker.com/_/microsoft-dotnet-framework-aspnet/)
 
 * [ASP.NET Web Forms app on .NET Framework 4.6.2 sample](https://github.com/Microsoft/dotnet-framework-docker-samples/tree/master/aspnetapp)
 
 #### Windows Communication Framework (WCF)
 
-* [Windows Communication Framework (WCF) images on DockerHub](https://hub.docker.com/r/microsoft/wcf/)
+* [Windows Communication Framework (WCF) images on DockerHub](https://hub.docker.com/_/microsoft-dotnet-framework-wcf/)
 
 * [Windows Communication Framework (WCF) images on GitHub](https://github.com/microsoft/wcf-docker)
 
@@ -124,7 +124,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 #### Internet Information Server (IIS)
 
-* [Internet Information Server (IIS) images on DockerHub](https://hub.docker.com/r/microsoft/iis/)
+* [Internet Information Server (IIS) images on DockerHub](https://hub.docker.com/_/microsoft-windows-servercore-iis/)
 
 * [Internet Information Server (IIS) images on GitHub](https://github.com/microsoft/iis-docker)
 

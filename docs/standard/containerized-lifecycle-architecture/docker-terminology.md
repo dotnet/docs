@@ -27,7 +27,7 @@ This section lists terms and definitions you should be familiar with before gett
 
 **Registry**: A service that provides access to repositories. The default registry for most public images is [Docker Hub](https://hub.docker.com/) (owned by Docker as an organization). A registry usually contains repositories from multiple teams. Companies often have private registries to store and manage images they've created. Azure Container Registry is another example.
 
-**Multi-arch image**: For multi-architecture, is a feature that simplifies the selection of the appropriate image, according to the platform where Docker is running, for example, when a Dockerfile requests a base image **`FROM microsoft/dotnet:2.1-sdk`** from the registry it actually gets **`2.1-sdk-nanoserver-1709`**, **`2.1-sdk-nanoserver-1803`** or **`2.1-sdk-alpine`**, depending on the operating system and version where Docker is running.
+**Multi-arch image**: For multi-architecture, is a feature that simplifies the selection of the appropriate image, according to the platform where Docker is running, for example, when a Dockerfile requests a base image **`FROM mcr.microsoft.com/dotnet/core/sdk:2.1`** from the registry it actually gets **`2.1-nanoserver-1709`**, **`2.1-nanoserver-1803`**, **`2.1-nanoserver-1809`** or **`2.1-stretch`**, depending on the operating system and version where Docker is running.
 
 **Docker Hub**: A public registry to upload images and work with them. Docker Hub provides Docker image hosting, public or private registries, build triggers and web hooks, and integration with GitHub and Bitbucket.
 

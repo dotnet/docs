@@ -428,7 +428,7 @@ Note that the values set in the runtime environment always override the values d
 If you are exploring Docker and .NET Core on sources on the Internet, you will find Dockerfiles that demonstrate the simplicity of building a Docker image by copying your source into a container. These examples suggest that by using a simple configuration, you can have a Docker image with the environment packaged with your application. The following example shows a simple Dockerfile in this vein.
 
 ```Dockerfile
-FROM microsoft/dotnet
+FROM mcr.microsoft.com/dotnet/core/sdk:2.1
 WORKDIR /app
 ENV ASPNETCORE_URLS http://+:80
 EXPOSE 80
@@ -441,7 +441,7 @@ A Dockerfile like this will work. However, you can substantially optimize your i
 
 In the container and microservices model, you are constantly starting containers. The typical way of using containers does not restart a sleeping container, because the container is disposable. Orchestrators (like Kubernetes and Azure Service Fabric) simply create new instances of images. What this means is that you would need to optimize by precompiling the application when it is built so the instantiation process will be faster. When the container is started, it should be ready to run. You should not restore and compile at run time, using `dotnet restore` and `dotnet build` commands from the dotnet CLI that, as you see in many blog posts about .NET Core and Docker.
 
-The .NET team has been doing important work to make .NET Core and ASP.NET Core a container-optimized framework. Not only is .NET Core a lightweight framework with a small memory footprint; the team has focused on optimized Docker images for three main scenarios and published them in the Docker Hub registry at *microsoft/dotnet*, beginning with version 2.1:
+The .NET team has been doing important work to make .NET Core and ASP.NET Core a container-optimized framework. Not only is .NET Core a lightweight framework with a small memory footprint; the team has focused on optimized Docker images for three main scenarios and published them in the Docker Hub registry at *dotnet/core*, beginning with version 2.1:
 
 1. **Development**: Where the priority is the ability to quickly iterate and debug changes, and where size is secondary.
 
@@ -449,11 +449,12 @@ The .NET team has been doing important work to make .NET Core and ASP.NET Core a
 
 3. **Production**: Where the focus is fast deploying and starting of containers, so these images are limited to the binaries and the content needed to run the application.
 
-To achieve this, the .NET team is providing three basic variants in [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/) (at Docker Hub):
+To achieve this, the .NET team is providing four basic variants in [dotnet/core](https://hub.docker.com/_/microsoft-dotnet-core/) (at Docker Hub):
 
-1. **sdk**: for the development and build scenarios.
-2. **runtime**: for the production scenario and
-3. **runtime-deps**: for the production scenario of [self-contained applications](../../../core/deploying/index.md#self-contained-deployments-scd).
+1. **sdk**: for development and build scenarios
+1. **aspnet**: for ASP.NET production scenarios
+1. **runtime**: for .NET production scenarios
+1. **runtime-deps**: for production scenarios of [self-contained applications](../../../core/deploying/index.md#self-contained-deployments-scd).
 
 For faster startup, runtime images also automatically set aspnetcore\_urls to port 80 and use Ngen to create a native image cache of assemblies.
 

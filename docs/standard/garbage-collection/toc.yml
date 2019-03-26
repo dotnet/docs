@@ -1,0 +1,31 @@
+- name: Memory Management and Garbage Collection
+  href: memory-management-and-gc.md
+  items:
+  - name: Cleaning Up Unmanaged Resources
+    href: unmanaged.md
+    items:
+    - name: Implementing a Dispose Method
+      href: implementing-dispose.md
+    - name: Using Objects That Implement IDisposable
+      href: using-objects.md
+  - name: Garbage Collection
+    href: index.md
+    items:
+    - name: Fundamentals of Garbage Collection
+      href: fundamentals.md
+    - name: The Large Object Heap
+      href: large-object-heap.md
+    - name: Garbage Collection and Performance
+      href: performance.md
+    - name: Induced Collections
+      href: induced.md
+    - name: Latency Modes
+      href: latency.md
+    - name: Optimization for Shared Web Hosting
+      href: optimization-for-shared-web-hosting.md
+    - name: Garbage Collection Notifications
+      href: notifications.md
+    - name: Application Domain Resource Monitoring
+      href: app-domain-resource-monitoring.md
+    - name: Weak References
+      href: weak-references.md

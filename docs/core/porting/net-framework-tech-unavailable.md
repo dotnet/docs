@@ -3,7 +3,7 @@ title: .NET Framework technologies unavailable on .NET Core
 description: Learn about .NET Framework technologies that are unavailable on .NET Core
 author: cartermp
 ms.author: mairaw
-ms.date: 12/7/2018
+ms.date: 12/07/2018
 ---
 
 # .NET Framework technologies unavailable on .NET Core

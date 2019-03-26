@@ -1,0 +1,110 @@
+- name: Windows Workflow Samples
+  href: index.md
+  items:
+  - name: Application
+    href: application.md
+    items:
+    - name: Document Approval Process
+      href: document-approval-process.md
+    - name: Corporate Purchase Process
+      href: corporate-purchase-process.md
+    - name: Hiring Process
+      href: hiring-process.md
+    - name: Visual Workflow Tracking
+      href: visual-workflow-tracking.md
+    - name: Suspended Instance Management
+      href: suspended-instance-management.md
+  - name: Basic
+    href: basic.md
+    items:
+    - name: Built-in Activities
+      href: built-in-activities.md
+      items:
+      - name: Fault Handling in a Flowchart Activity Using TryCatch
+        href: fault-handling-in-a-flowchart-activity-using-trycatch.md
+      - name: Load From XAML
+        href: load-from-xaml.md
+      - name: Using the InvokeMethod Activity
+        href: using-the-invokemethod-activity.md
+      - name: Using the Pick Activity
+        href: using-the-pick-activity.md
+    - name: Custom Activities
+      href: custom-activities.md
+      items:
+      - name: Code-Bodied
+        href: code-bodied.md
+        items:
+        - name: Custom Composite using Native Activity
+          href: custom-composite-using-native-activity.md
+      - name: Custom Activity Designers
+        href: custom-activity-designers.md
+        items:
+        - name: Custom Composite Designers - Workflow Item Presenter
+          href: custom-composite-designers-workflow-item-presenter.md
+        - name: Custom Composite Designers - Workflow Items Presenter
+          href: custom-composite-designers-workflow-items-presenter.md
+        - name: Using the ExpressionTextBox in a Custom Activity Designer
+          href: using-the-expressiontextbox-in-a-custom-activity-designer.md
+        - name: Using Editing Scope
+          href: using-editing-scope.md
+    - name: Designer
+      href: designer.md
+      items:
+      - name: Removing the View State the Designer Adds to an XAML File
+        href: removing-the-view-state-the-designer-adds-to-an-xaml-file.md
+      - name: Programming Model Item Tree
+        href: programming-model-item-tree.md
+      - name: Property Grid Extensibility
+        href: property-grid-extensibility.md
+    - name: Designer Rehosting
+      href: designer-rehosting.md
+    - name: Execution
+      href: execution.md
+      items:
+      - name: Creating and Running a Workflow Instance
+        href: creating-and-running-a-workflow-instance.md
+      - name: WorkflowHostingEndpoint Resume Bookmark
+        href: workflowhostingendpoint-resume-bookmark.md
+      - name: Bookmark Resolver for WorkflowHostingEndpoint
+        href: bookmark-resolver-for-workflowhostingendpoint.md
+    - name: Tracking
+      href: tracking.md
+      items:
+      - name: Custom Tracking
+        href: custom-tracking.md
+      - name: Tracking Events into Event Tracing in Windows
+        href: tracking-events-into-event-tracing-in-windows.md
+      - name: SQL Tracking
+        href: sql-tracking.md
+  - name: Scenario
+    href: scenario.md
+    items:
+    - name: Activity Library
+      href: activity-library.md
+      items:
+      - name: SendMail Custom Activity
+        href: sendmail-custom-activity.md
+      - name: Throttled Parallel ForEach
+        href: throttled-parallel-foreach.md
+      - name: Database Access Activities
+        href: database-access-activities.md
+      - name: Externalized Policy Activity in .NET Framework 4.5
+        href: externalized-policy-activity-in-net-framework-4-5.md
+      - name: Non-Generic ForEach
+        href: non-generic-foreach.md
+      - name: Non-Generic ParallelForEach
+        href: non-generic-parallelforeach.md
+      - name: Get WorkflowInstanceId
+        href: get-workflowinstanceid.md
+    - name: Services
+      items:
+      - name: Accessing OperationContext
+        href: accessing-operationcontext.md
+      - name: LINQ Message Query Correlation
+        href: linq-message-query-correlation.md
+      - name: Asynchronous Communication
+        href: asynchronous-communication.md
+    - name: WPF and WF Integration in XAML
+      href: wpf-and-wf-integration-in-xaml.md
+    - name: External Ruleset Toolkit
+      href: external-ruleset-toolkit.md

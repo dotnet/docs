@@ -100,7 +100,7 @@ The <xref:System.Windows.Forms.DataGridView> control and its related classes are
 ### DataGridView Editing Controls  
  Cells that support advanced editing functionality typically use a hosted control that is derived from a Windows Forms control. These controls also implement the <xref:System.Windows.Forms.IDataGridViewEditingControl> interface. The following object model illustrates the usage of these controls.  
   
- ![Diagram showing the DataGridView Editing Control Object Model.](./media/datagridview-control-architecture-windows-forms/datagridviewediting-object-model.gif)  
+ ![Diagram showing the DataGridView Editing Control Object Model hierarchy.](./media/datagridview-control-architecture-windows-forms/datagridviewediting-object-model.gif)  
   
  The following editing controls are provided with the <xref:System.Windows.Forms.DataGridView> control:  
   

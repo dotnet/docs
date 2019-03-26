@@ -26,17 +26,16 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.RsaProtectedConfigurationProvider> class gives you a way to encrypt sensitive information stored in a configuration file, which helps protect it from unauthorized access. You use the built-in <xref:System.Configuration.RsaProtectedConfigurationProvider> instance by declaring the provider and making appropriate settings in the configuration file instead of creating an instance of this class, as shown in the [Examples](#examples) section.
+ The <xref:System.Configuration.RsaProtectedConfigurationProvider> class gives you a way to encrypt sensitive information stored in a configuration file, which helps protect it from unauthorized access. You use the built-in <xref:System.Configuration.RsaProtectedConfigurationProvider> instance by declaring the provider and making appropriate settings in the configuration file instead of creating an instance of this class, as shown in the Examples section.
   
  The <xref:System.Configuration.RsaProtectedConfigurationProvider> object uses the cryptography functions provided by <xref:System.Security.Cryptography.RSA> class to encrypt and decrypt configuration sections.  
   
 > [!NOTE]
->  Before ASP.NET can decrypt encrypted information in your configuration file, the identity of your ASP.NET application must have read access to the encryption key used to encrypt and decrypt the configuration data. For more information, see [Walkthrough: Encrypting Configuration Information Using Protected Configuration](https://msdn.microsoft.com/library/e1652f90-eac5-4f51-bff1-cf1acc2e1180).  
-  
-   
-  
+>  Before ASP.NET can decrypt encrypted information in your configuration file, the identity of your ASP.NET application must have read access to the encryption key used to encrypt and decrypt the configuration data. For more information, see [Walkthrough: Encrypting Configuration Information Using Protected Configuration](https://docs.microsoft.com/previous-versions/dtkwfdky(v=vs.140).
+
 ## Examples  
- The following code example shows how to use the standard <xref:System.Configuration.RsaProtectedConfigurationProvider> to protect or unprotect a configuration section.  
+
+The following example shows how to use the standard <xref:System.Configuration.RsaProtectedConfigurationProvider> to protect or unprotect a configuration section.  
   
  [!code-csharp[System.Configuration.RsaProtectedConfigurationProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RsaProtectedConfigurationProvider/CS/RsaProtectedConfigurationProvider.cs#1)]
  [!code-vb[System.Configuration.RsaProtectedConfigurationProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RsaProtectedConfigurationProvider/VB/RsaProtectedConfigurationProvider.vb#1)]  

@@ -119,6 +119,12 @@ After running the `docker tag` command, list the images with the `docker images`
 
 ### Push the image into the Azure ACR
 
+Log in to the Azure Container Registry
+
+```console
+az acr login --name mssampleacr
+```
+
 Push the image into the Azure ACR, using the following command:
 
 ```console

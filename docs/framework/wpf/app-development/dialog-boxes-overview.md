@@ -113,7 +113,7 @@ Standalone applications typically have a main window that both displays the main
 ### Creating a Modal Custom Dialog Box  
  This topic shows how to use <xref:System.Windows.Window> to create a typical modal dialog box implementation, using the `Margins` dialog box as an example (see [Dialog Box Sample](https://go.microsoft.com/fwlink/?LinkID=159984)). The `Margins` dialog box is shown in the following figure.  
   
- ![Screenshot that shows a Margins dialog box.](./media/dialog-boxes-overview/margin-size-dialog-box.png)  
+ ![A Margins dialog box with fields to define left margin, top margin, right margin, and bottom margin.](./media/dialog-boxes-overview/margin-size-dialog-box.png)  
   
 #### Configuring a Modal Dialog Box  
  The user interface for a typical dialog box includes the following:  

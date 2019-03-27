@@ -67,7 +67,7 @@ Standalone applications typically have a main window that both displays the main
 ### Open File Dialog  
  The open file dialog box, shown in the following figure, is used by file opening functionality to retrieve the name of a file to open.  
   
- ![Screenshot that shows an Open dialog box.](./media/dialog-boxes-overview/open-file-dialog-box.png)  
+ ![An Open dialog box showing the location to retrieve the file.](./media/dialog-boxes-overview/open-file-dialog-box.png)  
   
  The common open file dialog box is implemented as the <xref:Microsoft.Win32.OpenFileDialog> class and is located in the <xref:Microsoft.Win32> namespace. The following code shows how to create, configure, and show one, and how to process the result.  
   

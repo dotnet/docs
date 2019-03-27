@@ -1,8 +1,8 @@
 ### YamlMime:Tutorial
-title: Explore C# 7 - C# interactive C# tutorial
+title: Explore C# 7.0 - C# interactive tutorial
 metadata:
-  title: Explore C# 7 - Try the new features in C# 6 interactively, using your browser
-  description: In this tutorial, you'll use your browser to explore C# 6 interactively. You'll explore the new idioms you can use with C# 6 that enable more concise and readable code.
+  title: Explore C# 7.0 - Try the new features in C# 7.0 interactively, using your browser
+  description: In this tutorial, you'll use your browser to explore C# 7.0 interactively. You'll explore the new idioms you can use with C# 7.0 that enable more concise and readable code.
   audience: Developer
   level: intermediate
   ms.date: 03/20/2019
@@ -11,7 +11,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This tutorial lets you explore C# 7 features interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that modify earlier C# practices to use newer, more concise C# 7 features. The rest of this article provides an overview of each of these features, with a link to explore each feature.
+    This tutorial lets you explore C# 7.0 features interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that modify earlier C# practices to use newer, more concise C# 7.0 features. The rest of this article provides an overview of each of these features, with a link to explore each feature.
 
 - title: Our variable declarations at the assignment location
   durationInMinutes: 2
@@ -187,7 +187,7 @@ items:
     return ref matrix[i,j];
     ```
 
-    Now that the method returns a reference to the integer value in the matrix, you need to modify where it's called.  The `var` declaration means that `valItem` is now an `int` rather than a tuple. Change the calling code to following:
+    Now that the method returns a reference to the integer value in the matrix, you need to modify where it's called. The `var` declaration means that `valItem` is now an `int` rather than a tuple. Change the calling code to following:
 
     ```csharp
     var valItem = Find(matrix, (val) => val == 42);

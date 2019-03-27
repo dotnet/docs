@@ -1,0 +1,95 @@
+- name: XAML Services
+  href: index.md
+  items:
+  - name: "XAML Namespace (x:) Language Features"
+    href: xaml-namespace-x-language-features.md
+    items:
+    - name: XAML 2009 Language Features
+      href: xaml-2009-language-features.md
+      items:
+      - name: Built-in Types for Common XAML Language Primitives
+        href: built-in-types-for-common-xaml-language-primitives.md
+      - name: "x:Arguments Directive"
+        href: x-arguments-directive.md
+      - name: "x:FactoryMethod Directive"
+        href: x-factorymethod-directive.md
+      - name: "x:Reference Markup Extension"
+        href: x-reference-markup-extension.md
+    - name: "x:Array Markup Extension"
+      href: x-array-markup-extension.md
+    - name: "x:Class Directive"
+      href: x-class-directive.md
+    - name: "x:ClassModifier Directive"
+      href: x-classmodifier-directive.md
+    - name: "x:Code Intrinsic XAML Type"
+      href: x-code-intrinsic-xaml-type.md
+    - name: "x:FieldModifier Directive"
+      href: x-fieldmodifier-directive.md
+    - name: "x:Key Directive"
+      href: x-key-directive.md
+    - name: "x:Member Directive"
+      href: x-member-directive.md
+    - name: "x:Members Directive"
+      href: x-members-directive.md
+    - name: "x:Name Directive"
+      href: x-name-directive.md
+    - name: "x:Null Markup Extension"
+      href: x-null-markup-extension.md
+    - name: "x:Property Directive"
+      href: x-property-directive.md
+    - name: "x:Shared Attribute"
+      href: x-shared-attribute.md
+    - name: "x:Static Markup Extension"
+      href: x-static-markup-extension.md
+    - name: "x:Subclass Directive"
+      href: x-subclass-directive.md
+    - name: "x:Type Markup Extension"
+      href: x-type-markup-extension.md
+    - name: "x:TypeArguments Directive"
+      href: x-typearguments-directive.md
+    - name: "x:Uid Directive"
+      href: x-uid-directive.md
+    - name: "x:XData Intrinsic XAML Type"
+      href: x-xdata-intrinsic-xaml-type.md
+    - name: XamlName Grammar
+      href: xamlname-grammar.md
+    - name: "{} Escape Sequence / Markup Extension"
+      href: escape-sequence-markup-extension.md
+    - name: "xml:lang Handling in XAML"
+      href: xml-lang-handling-in-xaml.md
+    - name: "xml:space Handling in XAML"
+      href: xml-space-handling-in-xaml.md
+  - name: Types Migrated from WPF to System.Xaml
+    href: types-migrated-from-wpf-to-system-xaml.md
+  - name: Understanding XAML Node Stream Structures and Concepts
+    href: understanding-xaml-node-stream-structures-and-concepts.md
+  - name: XAMLServices Class and Basic XAML Reading or Writing
+    href: xamlservices-class-and-basic-xaml-reading-or-writing.md
+  - name: Type Converters and Markup Extensions for XAML
+    href: type-converters-and-markup-extensions-for-xaml.md
+    items:
+    - name: Markup Extensions for XAML Overview
+      href: markup-extensions-for-xaml-overview.md
+    - name: Type Converters for XAML Overview
+      href: type-converters-for-xaml-overview.md
+    - name: Service Contexts Available to Type Converters and Markup Extensions
+      href: service-contexts-available-to-type-converters-and-markup-extensions.md
+  - name: Generics in XAML
+    href: generics-in-xaml.md
+  - name: Defining Custom Types for Use with .NET Framework XAML Services
+    href: defining-custom-types-for-use-with-net-framework-xaml-services.md
+    items:
+    - name: XAML-Related CLR Attributes for Custom Types and Libraries
+      href: xaml-related-clr-attributes-for-custom-types-and-libraries.md
+    - name: Collections and Collection Types for XAML
+      href: collections-and-collection-types-for-xaml.md
+  - name: XAML Namespaces
+    href: xaml-namespaces-for-net-framework-xaml-services.md
+  - name: Default XAML Schema Context and WPF XAML Schema Context
+    href: default-xaml-schema-context-and-wpf-xaml-schema-context.md
+  - name: XAML Security Considerations
+    href: xaml-security-considerations.md
+  - name: White-space processing in XAML
+    href: whitespace-processing-in-xaml.md
+  - name: XML Character Entities and XAML
+    href: xml-character-entities-and-xaml.md

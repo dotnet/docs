@@ -1,0 +1,119 @@
+- name: ADO.NET Entity Framework
+  href: index.md
+- name: Entity Framework Overview
+  href: overview.md
+- name: Modeling and Mapping
+  href: modeling-and-mapping.md
+  items:
+  - name: EDM Generator (EdmGen.exe)
+    href: edm-generator-edmgen-exe.md
+    items:
+    - name: "How to: Use EdmGen.exe to Generate the Model and Mapping Files"
+      href: how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md
+    - name: "How to: Use EdmGen.exe to Generate Object-Layer Code"
+      href: how-to-use-edmgen-exe-to-generate-object-layer-code.md
+    - name: "How to: Use EdmGen.exe to Validate Model and Mapping Files"
+      href: how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md
+  - name: "How to: Define the Connection String"
+    href: how-to-define-the-connection-string.md
+  - name: "How to: Make Model and Mapping Files Embedded Resources"
+    href: how-to-make-model-and-mapping-files-embedded-resources.md
+  - name: Working with Data Definition Language
+    href: working-with-data-definition-language.md
+- name: Querying a Conceptual Model
+  href: querying-a-conceptual-model.md
+- name: Working with Objects
+  href: working-with-objects.md
+- name: Working with Data Providers
+  href: working-with-data-providers.md
+  items:
+  - name: Connection Strings
+    href: connection-strings.md
+  - name: Entity Framework Data Providers
+    href: data-providers.md
+    items:
+    - name: EntityClient Provider for the Entity Framework
+      href: entityclient-provider-for-the-entity-framework.md
+      items:
+      - name: "How to: Build an EntityConnection Connection String"
+        href: how-to-build-an-entityconnection-connection-string.md
+      - name: "How to: Execute a Query that Returns PrimitiveType Results"
+        href: how-to-execute-a-query-that-returns-primitivetype-results.md
+      - name: "How to: Execute a Query that Returns StructuralType Results"
+        href: how-to-execute-a-query-that-returns-structuraltype-results.md
+      - name: "How to: Execute a Query that Returns RefType Results"
+        href: how-to-execute-a-query-that-returns-reftype-results.md
+      - name: "How to: Execute a Query that Returns Complex Types"
+        href: how-to-execute-a-query-that-returns-complex-types.md
+      - name: "How to: Execute a Query that Returns Nested Collections"
+        href: how-to-execute-a-query-that-returns-nested-collections.md
+      - name: "How to: Execute a Parameterized Entity SQL Query Using EntityCommand"
+        href: how-to-execute-a-parameterized-entity-sql-query-using-entitycommand.md
+      - name: "How to: Execute a Parameterized Stored Procedure Using EntityCommand"
+        href: how-to-execute-a-parameterized-stored-procedure-using-entitycommand.md
+      - name: "How to: Execute a Polymorphic Query"
+        href: how-to-execute-a-polymorphic-query.md
+      - name: "How to: Navigate Relationships with the Navigate Operator"
+        href: how-to-navigate-relationships-with-the-navigate-operator.md
+    - name: SqlClient for the Entity Framework
+      href: sqlclient-for-the-entity-framework.md
+      items:
+      - name: SqlClient for Entity Framework Functions
+        href: sqlclient-for-ef-functions.md
+        items:
+        - name: Conceptual Model Canonical to SQL Server Functions Mapping
+          href: conceptual-model-canonical-to-sql-server-functions-mapping.md
+        - name: Aggregate Functions
+          href: aggregate-functions-sqlclient-for-entity-framework.md
+        - name: Date and Time Functions
+          href: date-and-time-functions.md
+        - name: Mathematical Functions
+          href: mathematical-functions.md
+        - name: String Functions
+          href: string-functions.md
+        - name: System Functions
+          href: system-functions.md
+      - name: SqlClient for Entity FrameworkTypes
+        href: sqlclient-for-ef-types.md
+      - name: Known Issues in SqlClient for Entity Framework
+        href: known-issues-in-sqlclient-for-entity-framework.md
+  - name: Writing an Entity Framework Data Provider
+    href: writing-an-ef-data-provider.md
+    items:
+    - name: SQL Generation
+      href: sql-generation.md
+      items:
+      - name: The Shape of the Command Trees
+        href: the-shape-of-the-command-trees.md
+      - name: Generating SQL from Command Trees - Best Practices
+        href: generating-sql-from-command-trees-best-practices.md
+      - name: SQL Generation in the Sample Provider
+        href: sql-generation-in-the-sample-provider.md
+        items:
+        - name: Architecture and Design
+          href: architecture-and-design.md
+        - name: "Walkthrough: SQL Generation"
+          href: walkthrough-sql-generation.md
+    - name: Modification SQL Generation
+      href: modification-sql-generation.md
+    - name: Provider Manifest Specification
+      href: provider-manifest-specification.md
+- name: Development and Deployment Considerations
+  href: development-and-deployment-considerations.md
+  items:
+  - name: Security Considerations
+    href: security-considerations.md
+  - name: Performance Considerations
+    href: performance-considerations.md
+  - name: Migration Considerations
+    href: migration-considerations.md
+  - name: Deployment Considerations
+    href: deployment-considerations.md
+- name: Entity Framework Resources
+  href: resources.md
+- name: Entity Framework Terminology
+  href: terminology.md
+- name: Getting Started
+  href: getting-started.md
+- name: Language Reference
+  href: language-reference/index.md

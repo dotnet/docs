@@ -50,13 +50,13 @@ Hosting workflow services in App Fabric is similar to hosting under IIS/WAS. The
   
 8.  Select the **Auto-Start** tab. This allows you to specify auto-start settings for the workflow services in the application as shown in the following screen shot.  
   
-     ![App Fabric Auto&#45;start configuration](../../../../docs/framework/wcf/feature-details/media/appfabricconfigurationautostart.gif "AppFabricConfigurationAutostart")  
+     ![Screenshot that shows App Fabric Auto&#45;start configuration.](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/app-fabric-auto-start-configuration.gif)  
   
      For more information about configuring Auto-Start see [Configuring Auto-Start with App Fabric](https://go.microsoft.com/fwlink/?LinkId=193150).  
   
 9. Select the **Throttling** tab. This allows you to configure throttling settings for the workflow service as shown in the following screen shot.  
   
-     ![App Fabric configuration throttling](../../../../docs/framework/wcf/feature-details/media/appfabricconfigurationthrottling.gif "AppFabricConfigurationThrottling")  
+     ![Screenshot that shows App Fabric throttling configuration.](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/app-fabric-throttling-configuration.gif)  
   
      For more information about configuring throttling see [Configuring Throttling with App Fabric](https://go.microsoft.com/fwlink/?LinkId=193149).  
   
@@ -76,11 +76,11 @@ Hosting workflow services in App Fabric is similar to hosting under IIS/WAS. The
   
 4.  The client application will immediately call the Workflow service and then wait. The workflow service will go idle and be persisted. You can verify this by starting Internet Information Services (inetmgr.exe), navigating to the OrderService in the Connections pane and selecting it. Next, click the App Fabric Dashboard icon in the right-hand pane. Under Persisted WF Instances you will see there is one persisted workflow service instance as shown in the following screen shot.  
   
-     ![App Fabric Dashboard](../../../../docs/framework/wcf/feature-details/media/appfabricdashboard.gif "AppFabricDashboard")  
+     ![Screenshot that shows the App Fabric Dashboard.](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/app-fabric-dashboard.gif)  
   
      The **WF Instance History** lists information about the workflow service such as the number of workflow service activations, the number of workflow service instance completions, and the number of workflow instances with failures. Under Active or Idle instances a link will be displayed, clicking on the link will display more information about the idle workflow instances as shown in the following screen shot.  
   
-     ![Persisted Workflow Instance Details](../../../../docs/framework/wcf/feature-details/media/persisteddetail.gif "PersistedDetail")  
+     ![Screenshot that shows Persisted Workflow Instance Details.](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/persisted-workflow-instance-detail.gif)  
   
      For more information about Windows Server App Fabric features and how to use them see [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkID=193143&clcid=0x409)  
   

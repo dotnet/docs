@@ -6,9 +6,9 @@ ms.assetid: d93fa055-2f19-46d2-9898-e2aed628f1c9
 # Sorting Data (C#)
 A sorting operation orders the elements of a sequence based on one or more attributes. The first sort criterion performs a primary sort on the elements. By specifying a second sort criterion, you can sort the elements within each primary sort group.  
   
- The following illustration shows the results of an alphabetical sort operation on a sequence of characters.  
+ The following illustration shows the results of an alphabetical sort operation on a sequence of characters: 
   
- ![LINQ Sorting Operation](../../../../csharp/programming-guide/concepts/linq/media/linq_ordering.png "LINQ_Ordering")  
+ ![Graphic that shows an alphabetical sort operation.](./media/sorting-data/alphabetical-sort-operation.png)  
   
  The standard query operator methods that sort data are listed in the following section.  
   

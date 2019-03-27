@@ -18,27 +18,15 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Regular Expression Language - Quick Reference
-<a name="top"></a> A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs.  For a brief introduction, see [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md).  
+ A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs.  For a brief introduction, see [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md).  
   
- Each section in this quick reference lists a particular category of characters, operators, and constructs that you can use to define regular expressions:  
-  
- [Character escapes](#character_escapes)  
- [Character classes](#character_classes)  
- [Anchors](#anchors)  
- [Grouping constructs](#grouping_constructs)  
- [Quantifiers](#quantifiers)  
- [Backreference constructs](#backreference_constructs)  
- [Alternation constructs](#alternation_constructs)  
- [Substitutions](#substitutions)  
- [Regular expression options](#options)  
- [Miscellaneous constructs](#miscellaneous_constructs)  
+ Each section in this quick reference lists a particular category of characters, operators, and constructs that you can use to define regular expressions.  
   
  We’ve also provided this information in two formats that you can download and print for easy reference:  
   
  [Download in Word (.docx) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
  [Download in PDF (.pdf) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)  
   
-<a name="character_escapes"></a>   
 ## Character Escapes  
  The backslash character (\\) in a regular expression indicates that the character that follows it either is a special character (as shown in the following table), or should be interpreted literally. For more information, see [Character Escapes](../../../docs/standard/base-types/character-escapes-in-regular-expressions.md).  
   
@@ -60,7 +48,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="character_classes"></a>   
 ## Character Classes  
  A character class matches any one of a set of characters. Character classes include the language elements listed in the following table. For more information, see [Character Classes](../../../docs/standard/base-types/character-classes-in-regular-expressions.md).  
   
@@ -97,7 +84,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="grouping_constructs"></a>   
 ## Grouping Constructs  
  Grouping constructs delineate subexpressions of a regular expression and typically capture substrings of an input string. Grouping constructs include the language elements listed in the following table. For more information, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).  
   
@@ -116,7 +102,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="quantifiers"></a>   
 ## Quantifiers  
  A quantifier specifies how many instances of the previous element (which can be a character, a group, or a character class) must be present in the input string for a match to occur. Quantifiers include the language elements listed in the following table. For more information, see [Quantifiers](quantifiers-in-regular-expressions.md).  
   
@@ -137,7 +122,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="backreference_constructs"></a>   
 ## Backreference Constructs  
  A backreference allows a previously matched subexpression to be identified subsequently in the same regular expression. The following table lists the backreference constructs supported by regular expressions in .NET. For more information, see [Backreference Constructs](backreference-constructs-in-regular-expressions.md).  
   
@@ -148,7 +132,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="alternation_constructs"></a>   
 ## Alternation Constructs  
  Alternation constructs modify a regular expression to enable either/or matching. These constructs include the language elements listed in the following table. For more information, see [Alternation Constructs](alternation-constructs-in-regular-expressions.md).  
   
@@ -160,7 +143,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="substitutions"></a>   
 ## Substitutions  
  Substitutions are regular expression language elements that are supported in replacement patterns. For more information, see [Substitutions](substitutions-in-regular-expressions.md). The metacharacters listed in the following table are atomic zero-width assertions.  
   
@@ -177,7 +159,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="options"></a>   
 ## Regular Expression Options  
  You can specify options that control how the regular expression engine interprets a regular expression pattern. Many of these options can be specified either inline (in the regular expression pattern) or as one or more <xref:System.Text.RegularExpressions.RegexOptions> constants. This quick reference lists only inline options. For more information about inline and <xref:System.Text.RegularExpressions.RegexOptions> options, see the article [Regular Expression Options](regular-expression-options.md).  
   
@@ -199,7 +180,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="miscellaneous_constructs"></a>   
 ## Miscellaneous Constructs  
  Miscellaneous constructs either modify a regular expression pattern or provide information about it. The following table lists the miscellaneous constructs supported by .NET. For more information, see [Miscellaneous Constructs](miscellaneous-constructs-in-regular-expressions.md).  
   

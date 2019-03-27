@@ -21,7 +21,7 @@ A *dimension* is a direction in which you can vary the specification of an array
   
  The following illustrations show the conceptual structure of arrays with different ranks. Each element in the illustrations shows the index values that access it. For example, you can access the first element of the second row of the two-dimensional array by specifying indexes `(1, 0)`.  
   
- ![Diagram that shows a one&#45;dimensional array.](./media/array-dimensions/one-dimensional-array.gif)  
+ ![Diagram that shows a one-dimensional array.](./media/array-dimensions/one-dimensional-array.gif)  
   
  ![Diagram that shows a two&#45;dimensional array.](./media/array-dimensions/two-dimensional-array.gif)  
   

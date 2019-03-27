@@ -70,7 +70,7 @@ The returned column type falls within a range of values:
 | `iGUID` (102)            | Guid          | **IsHeapType**                    |
 | `iBLOB` (103)            | Blob          | **IsHeapType**                    |
 
-Values that are stored in the *heap* (*i.e.,* **IsHeapType** == true) can be read using:
+Values that are stored in the *heap* (that is, `IsHeapType == true`) can be read using:
 
 - `iSTRING`: **IMetadataTables.GetString**
 - `iGUID`: **IMetadataTables.GetGUID**

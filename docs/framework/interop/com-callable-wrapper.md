@@ -22,6 +22,8 @@ When a COM client calls a .NET object, the common language runtime creates the m
 
 The runtime creates exactly one CCW for a managed object, regardless of the number of COM clients requesting its services. As the following illustration shows, multiple COM clients can hold a reference to the CCW that exposes the INew interface. The CCW, in turn, holds a single reference to the managed object that implements the interface and is garbage collected. Both COM and .NET clients can make requests on the same managed object simultaneously.
 
+The following image shows accessing .NET objects through COM callable wrapper:
+
 ![Diagram that shows COM clients that expose the INew interface.](./media/com-callable-wrapper/com-callable-wrapper-clients.gif)
 
 COM callable wrappers are invisible to other classes running within the .NET Framework. Their primary purpose is to marshal calls between managed and unmanaged code; however, CCWs also manage the object identity and object lifetime of the managed objects they wrap.
@@ -39,6 +41,8 @@ Unlike the .NET client it wraps, the CCW is reference-counted in traditional COM
 CCW exposes all public, COM-visible interfaces, data types, and return values to COM clients in a manner that is consistent with COM's enforcement of interface-based interaction. For a COM client, invoking methods on a .NET Framework object is identical to invoking methods on a COM object.
 
 To create this seamless approach, the CCW manufactures traditional COM interfaces, such as **IUnknown** and **IDispatch**. As the following illustration shows, the CCW maintains a single reference on the .NET object that it wraps. Both the COM client and .NET object interact with each other through the proxy and stub construction of the CCW.
+
+The following image shows COM interfaces and the COM callable wrapper:
 
 ![Diagram that shows how CCW manufactures COM interfaces.](./media/com-callable-wrapper/com-callable-wrapper-interfaces.gif)
 

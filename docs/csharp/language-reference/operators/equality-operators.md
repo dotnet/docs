@@ -50,7 +50,7 @@ Two other than `string` reference type operands are equal when they refer to the
 
 [!code-csharp-interactive[reference type equality](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#ReferenceTypesEquality)]
 
-As the example shows, user-defined reference types support the `==` operator by default. However, a user-defined reference type still can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
+As the example shows, user-defined reference types support the `==` operator by default. However, a user-defined reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
 
 ## Inequality operator !=
 

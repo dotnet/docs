@@ -38,13 +38,13 @@ The existing syntax that supports `out` parameters has been improved
 in this version. You can now declare `out` variables in the argument list of a method call,
 rather than writing a separate declaration statement:
 
-[!code-csharp[OutVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#01_OutVariableDeclarations "Out variable declarations")]
+[!code-csharp[OutVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVariableDeclarations "Out variable declarations")]
 
 You may want to specify the type of the `out` variable for clarity,
 as shown above. However, the language does support using an implicitly
 typed local variable:
 
-[!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#02_OutVarVariableDeclarations "Implicitly typed Out variable")]
+[!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVarVariableDeclarations "Implicitly typed Out variable")]
 
 * The code is easier to read. 
     - You declare the out variable where you use it, not on another line above.
@@ -72,7 +72,7 @@ The fields aren't validated, and you cannot define your own methods
 You can create a tuple by assigning a value to each member, and optionally providing semantic
 names to each of the members of the tuple:
 
-[!code-csharp[NamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#05_NamedTuple "Named tuple")]
+[!code-csharp[NamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#NamedTuple "Named tuple")]
 
 The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. Those names exist only at compile time and aren't preserved,
@@ -81,13 +81,13 @@ for example when inspecting the tuple using reflection at runtime.
 In a tuple assignment, you can also specify the names of the fields
 on the right-hand side of the assignment:
 
-[!code-csharp[ImplicitNamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
+[!code-csharp[ImplicitNamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#ImplicitNamedTuple "Implicitly named tuple")]
 
 There may be times when you want to unpackage the members of a tuple that
 were returned from a method.  You can do that by declaring separate variables
 for each of the values in the tuple. This unpackaging is called *deconstructing* the tuple:
 
-[!code-csharp[CallingWithDeconstructor](~/samples/snippets/csharp/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
+[!code-csharp[CallingWithDeconstructor](~/samples/snippets/csharp/new-in-7/program.cs#CallingWithDeconstructor "Deconstructing a tuple")]
 
 You can also provide a similar deconstruction for any type in .NET. You write a `Deconstruct` method as a member of the class. That
 `Deconstruct` method provides a set of `out` arguments for each of the
@@ -95,11 +95,11 @@ properties you want to extract. Consider
 this `Point` class that provides a deconstructor method that extracts
 the `X` and `Y` coordinates:
 
-[!code-csharp[PointWithDeconstruction](~/samples/snippets/csharp/new-in-7/point.cs#11_PointWithDeconstruction "Point with deconstruction method")]
+[!code-csharp[PointWithDeconstruction](~/samples/snippets/csharp/new-in-7/point.cs#PointWithDeconstruction "Point with deconstruction method")]
  
 You can extract the individual fields by assigning a `Point` to a tuple:
 
-[!code-csharp[DeconstructPoint](~/samples/snippets/csharp/new-in-7/program.cs#12_DeconstructPoint "Deconstruct a point")]
+[!code-csharp[DeconstructPoint](~/samples/snippets/csharp/new-in-7/program.cs#DeconstructPoint "Deconstruct a point")]
 
 You can learn more in depth about tuples in the
 [tuples article](../tuples.md).
@@ -246,13 +246,13 @@ when calling code that enumerates the returned sequence. In
 async methods, any exceptions are only observed when the returned
 `Task` is awaited. The following example demonstrates separating parameter validation from the iterator implementation using a local function:
 
-[!code-csharp[22_IteratorMethodLocal](~/samples/snippets/csharp/new-in-7/Iterator.cs#28_IteratorMethodLocal "Iterator method with local function")]
+[!code-csharp[22_IteratorMethodLocal](~/samples/snippets/csharp/new-in-7/Iterator.cs#IteratorMethodLocal "Iterator method with local function")]
 
 The same technique can be employed with `async` methods to ensure that
 exceptions arising from argument validation are thrown before the asynchronous
 work begins:
 
-[!code-csharp[TaskExample](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#29_TaskExample "Task returning method with local function")]
+[!code-csharp[TaskExample](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#TaskExample "Task returning method with local function")]
 
 > [!NOTE]
 > Some of the designs that are supported by local functions
@@ -267,7 +267,7 @@ members that can be implemented as expressions. In C# 7.0, you can implement
 *constructors*, *finalizers*, and `get` and `set` accessors on *properties*
 and *indexers*. The following code shows examples of each:
 
-[!code-csharp[ExpressionBodiedMembers](~/samples/snippets/csharp/new-in-7/expressionmembers.cs#36_ExpressionBodiedEverything "new expression-bodied members")]
+[!code-csharp[ExpressionBodiedMembers](~/samples/snippets/csharp/new-in-7/expressionmembers.cs#ExpressionBodiedEverything "new expression-bodied members")]
 
 > [!NOTE]
 > This example does not need a finalizer, but it is shown
@@ -311,7 +311,7 @@ must be accessible. As one concrete example, the `ValueTask` type
 has been added to the .NET framework to make use of this new language
 feature: 
 
-[!code-csharp[UsingValueTask](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#30_UsingValueTask "Using ValueTask")]
+[!code-csharp[UsingValueTask](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#UsingValueTask "Using ValueTask")]
 
 > [!NOTE]
 > You need to add the NuGet package [`System.Threading.Tasks.Extensions`](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/)
@@ -337,12 +337,12 @@ number is written as a binary number. Binary numbers can get long, so it's often
 the bit patterns by introducing the `_` as a digit separator, as shown above in the binary constant. The digit separator can appear anywhere in the constant. For base 10
 numbers, it would be common to use it as a thousands separator:
 
-[!code-csharp[LargeIntegers](~/samples/snippets/csharp/new-in-7/Program.cs#34_LargeIntegers "Large integer")]
+[!code-csharp[LargeIntegers](~/samples/snippets/csharp/new-in-7/Program.cs#LargeIntegers "Large integer")]
 
 The digit separator can be used with `decimal`, `float`, and `double`
 types as well:
 
-[!code-csharp[OtherConstants](~/samples/snippets/csharp/new-in-7/Program.cs#35_OtherConstants "non-integral constants")]
+[!code-csharp[OtherConstants](~/samples/snippets/csharp/new-in-7/Program.cs#OtherConstants "non-integral constants")]
 
 Taken together, you can declare numeric constants with much more
 readability.

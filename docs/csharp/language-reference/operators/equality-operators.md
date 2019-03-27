@@ -15,7 +15,7 @@ helpviewer_keywords:
 ---
 # Equality operators (C# Reference)
 
-The `==` (equality) and `!=` (inequality) operators check if their operands are equal or not.
+The [`==` (equality)](#equality-operator-) and [`!=` (inequality)](#inequality-operator-) operators check if their operands are equal or not.
 
 ## Equality operator ==
 

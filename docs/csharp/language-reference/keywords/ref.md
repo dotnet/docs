@@ -2,7 +2,7 @@
 title: "ref keyword - C# Reference"
 ms.custom: seodec18
 
-ms.date: 10/24/2018
+ms.date: 03/26/2019
 f1_keywords: 
   - "ref_CSharpKeyword"
   - "ref"
@@ -22,7 +22,7 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 
 ## Passing an argument by reference
 
-When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The effect of passing by reference is that any change to the argument in the called method is reflected in the calling method. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller’s local variable or the array element now refers to the new object when the method returns.
+When used in a method's parameter list, the `ref` keyword indicates makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller’s local variable or the array element now refers to the new object when the method returns.
 
 > [!NOTE]
 > Do not confuse the concept of passing by reference with the concept of reference types. The two concepts are not the same. A method parameter can be modified by `ref` regardless of whether it is a value type or a reference type. There is no boxing of a value type when it is passed by reference.  

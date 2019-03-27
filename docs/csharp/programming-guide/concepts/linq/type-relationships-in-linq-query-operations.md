@@ -44,7 +44,7 @@ To write queries effectively, you should understand how types of the variables i
   
  The following illustration shows a slightly more complex transformation. The `select` statement returns an anonymous type that captures just two members of the original `Customer` object.  
   
- ![Diagram showing a more complex query that transforms the data type](./media/type-relationships-in-linq-query-operations/linq-complex-query-transform-data-type.png)  
+ ![Diagram showing a more complex query that transforms the data type.](./media/type-relationships-in-linq-query-operations/linq-complex-query-transform-data-type.png)  
   
 1.  The type argument of the data source is always the type of the range variable in the query.  
   

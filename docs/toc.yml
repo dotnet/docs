@@ -251,9 +251,7 @@
     - name: Introduction to .NET and Docker
       href: core/docker/intro-net-docker.md
     - name: Containerize a .NET Core app
-      href: core/docker/docker-basics-dotnet-core.md
-    - name: Work with Docker base images
-      href: core/docker/building-net-docker-images.md
+      href: core/docker/build-docker-netcore-container.md
     - name: Visual Studio Tools for Docker
       href: /aspnet/core/publishing/visual-studio-tools-for-docker
   - name: Unit Testing

@@ -131,9 +131,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
-[x == y](equality-comparison-operator.md) – equality. By default, for reference types other than `string`, this returns reference equality (identity test). However, types can overload `==`, so if your intent is to test identity, it is best to use the `ReferenceEquals` method on `object`.
+[x == y](equality-operators.md#equality-operator-) – equality. By default, for reference types other than `string`, this returns reference equality (identity test). However, types can overload `==`, so if your intent is to test identity, it is best to use the `ReferenceEquals` method on `object`.
 
-[x != y](not-equal-operator.md) – not equal. See comment for `==`. If a type overloads `==`, then it must overload `!=`.
+[x != y](equality-operators.md#inequality-operator-) – not equal. See comment for `==`. If a type overloads `==`, then it must overload `!=`.
 
 ## Logical AND operator
 

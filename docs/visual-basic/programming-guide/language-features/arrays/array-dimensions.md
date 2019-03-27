@@ -25,7 +25,7 @@ A *dimension* is a direction in which you can vary the specification of an array
   
  ![Diagram that shows a two&#45;dimensional array.](./media/array-dimensions/two-dimensional-array.gif)  
   
- ![Diagram that shows a three&#45;dimensional array.](./media/array-dimensions/three-dimensional-array.gif)  
+ ![Diagram that shows a three-dimensional array.](./media/array-dimensions/three-dimensional-array.gif)  
   
 ### One Dimension  
  Many arrays have only one dimension, such as the number of people of each age. The only requirement to specify an element is the age for which that element holds the count. Therefore, such an array uses only one index. The following example declares a variable to hold a *one-dimensional array* of age counts for ages 0 through 120.  

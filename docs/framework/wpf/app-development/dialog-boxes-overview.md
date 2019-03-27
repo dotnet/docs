@@ -34,7 +34,7 @@ Standalone applications typically have a main window that both displays the main
 ## Message Boxes  
  A *message box* is a dialog box that can be used to display textual information and to allow users to make decisions with buttons. The following figure shows a message box that displays textual information, asks a question, and provides the user with three buttons to answer the question.  
   
- ![Screenshot that shows a Word Processor dialog box.](./media/dialog-boxes-overview/word-processor-dialog.png)  
+ ![A Word Processor dialog box asking if you want to save the changes to the document before the application closes.](./media/dialog-boxes-overview/word-processor-dialog.png)  
   
  To create a message box, you use the <xref:System.Windows.MessageBox> class. <xref:System.Windows.MessageBox> lets you configure the message box text, title, icon, and buttons, using code like the following.  
   

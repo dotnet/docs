@@ -23,7 +23,7 @@ A *dimension* is a direction in which you can vary the specification of an array
   
  ![Diagram that shows a one-dimensional array.](./media/array-dimensions/one-dimensional-array.gif)  
   
- ![Diagram that shows a two&#45;dimensional array.](./media/array-dimensions/two-dimensional-array.gif)  
+ ![Diagram that shows a two-dimensional array.](./media/array-dimensions/two-dimensional-array.gif)  
   
  ![Diagram that shows a three-dimensional array.](./media/array-dimensions/three-dimensional-array.gif)  
   

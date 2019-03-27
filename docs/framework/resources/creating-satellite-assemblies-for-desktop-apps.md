@@ -46,7 +46,9 @@ Resource files play a central role in localized applications. They enable an app
   
 -   Information about the culture of the satellite assembly must be included in the assembly's metadata. To store the culture name in the satellite assembly's metadata, you specify the `/culture` option when you use [Assembly Linker](../../../docs/framework/tools/al-exe-assembly-linker.md) to embed resources in the satellite assembly.  
   
- The following illustration shows a sample directory structure and location requirements for applications that you are not installing in the [global assembly cache](../../../docs/framework/app-domains/gac.md). The items with .txt and .resources extensions will not ship with the final application. These are the intermediate resource files used to create the final satellite resource assemblies. In this example, you could substitute .resx files for the .txt files. For more information, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
+ The following illustration shows a sample directory structure and location requirements for applications that you are not installing in the [global assembly cache](../../../docs/framework/app-domains/gac.md). The items with .txt and .resources extensions will not ship with the final application. These are the intermediate resource files used to create the final satellite resource assemblies. In this example, you could substitute .resx files for the .txt files. For more information, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). 
+ 
+ The following image shows the satellite assembly directory:
   
  ![Diagram that shows a satellite assembly directory.](./media/creating-satellite-assemblies-for-desktop-apps/satellite-assembly-directory.gif  
   

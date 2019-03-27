@@ -83,7 +83,7 @@ Standalone applications typically have a main window that both displays the main
 ### Save File Dialog Box  
  The save file dialog box, shown in the following figure, is used by file saving functionality to retrieve the name of a file to save.  
   
- ![Screenshot that shows a Save As dialog box.](./media/dialog-boxes-overview/save-file-dialog-box.png)  
+ ![A Save As dialog box showing the location to save the file.](./media/dialog-boxes-overview/save-file-dialog-box.png)  
   
  The common save file dialog box is implemented as the <xref:Microsoft.Win32.SaveFileDialog> class, and is located in the <xref:Microsoft.Win32> namespace. The following code shows how to create, configure, and show one, and how to process the result.  
   

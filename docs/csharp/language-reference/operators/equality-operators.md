@@ -1,12 +1,13 @@
 ---
 title: "Equality operators - C# Reference"
-ms.date: 03/27/2019
+ms.date: 03/28/2019
 author: pkulikov
 f1_keywords: 
   - "==_CSharpKeyword"
   - "!=_CSharpKeyword"
 helpviewer_keywords: 
   - "equality operator [C#]"
+  - "equals operator [C#]"
   - "== operator [C#]"
   - "inequality operator [C#]"
   - "not equals operator [C#]"
@@ -14,7 +15,7 @@ helpviewer_keywords:
 ---
 # Equality operators (C# Reference)
 
-C# provides the `==` (equality) and `!=` (inequality) operators to check if two values are equal or not.
+The `==` (equality) and `!=` (inequality) operators check if their operands are equal or not.
 
 ## Equality operator ==
 
@@ -31,7 +32,7 @@ Operands of the [built-in value types](../keywords/value-types-table.md) are equ
 
 Two operands of the same [enum](../keywords/enum.md) type are equal if the corresponding values of the underlying integral type are equal.
 
-By default, the `==` operator is not defined for a user-defined [struct](../keywords/struct.md) type. A user-defined type can [overload](#operator-overloadability) the `==` operator.
+User-defined [struct](../keywords/struct.md) types don't support the `==` operator by default. To support the `==` operator, a user-defined struct must [overload](#operator-overloadability) it.
 
 Beginning with C# 7.3, the `==` and `!=` operators are supported by C# [tuples](../../tuples.md). For more information, see the [Equality and tuples](../../tuples.md#equality-and-tuples) section of the [C# tuple types](../../tuples.md) article.
 
@@ -49,11 +50,11 @@ Two other than `string` reference type operands are equal when they refer to the
 
 [!code-csharp-interactive[reference type equality](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#ReferenceTypesEquality)]
 
-The example shows that the `==` operator is supported by user-defined reference types. However, a user-defined reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
+As the example shows, user-defined reference types support the `==` operator by default. However, a user-defined reference type still can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
 
 ## Inequality operator !=
 
-The inequality operator `!=` returns `true` if its operands are not equal, `false` otherwise. For the operands of the [built-in types](../keywords/built-in-types-table.md), the expression `x != y` produces the same result as the expression `!(x == y)`.
+The inequality operator `!=` returns `true` if its operands are not equal, `false` otherwise. For the operands of the [built-in types](../keywords/built-in-types-table.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information about type equality, see the [Equality operator](#equality-operator-) section.
 
 The following example demonstrates the usage of the `!=` operator:
 

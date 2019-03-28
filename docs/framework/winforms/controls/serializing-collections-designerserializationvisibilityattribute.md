@@ -64,7 +64,7 @@ Your custom controls will sometimes expose a collection as a property. This walk
   
 1.  Press F5 to build the project and run your control in the **UserControl Test Container**.  
   
-2.  Find the `Strings` property in the <xref:System.Windows.Forms.PropertyGrid> of the **UserControl Test Container**. Click the `Strings` property, then click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/serializing-collections-designerserializationvisibilityattribute/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button to open the **String Collection Editor**.  
+2.  Find the `Strings` property in the <xref:System.Windows.Forms.PropertyGrid> of the **UserControl Test Container**. Click the `Strings` property, then click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/serializing-collections-designerserializationvisibilityattribute/visual-studio-ellipsis-button.png)) button to open the **String Collection Editor**.  
   
 3.  Enter several strings in the **String Collection Editor**. Separate them by pressing the ENTER key at the end of each string. Click **OK** when you are finished entering strings.  
   
@@ -82,7 +82,7 @@ Your custom controls will sometimes expose a collection as a property. This walk
   
 3.  Place a `SerializationDemoControl` on your form.  
   
-4.  Find the `Strings` property in the **Properties** window. Click the `Strings` property, then click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/serializing-collections-designerserializationvisibilityattribute/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button to open the **String Collection Editor**.  
+4.  Find the `Strings` property in the **Properties** window. Click the `Strings` property, then click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/serializing-collections-designerserializationvisibilityattribute/visual-studio-ellipsis-button.png)) button to open the **String Collection Editor**.  
   
 5.  Type several strings in the **String Collection Editor**. Separate them by pressing the ENTER key at the end of each string. Click **OK** when you are finished entering strings.  
   

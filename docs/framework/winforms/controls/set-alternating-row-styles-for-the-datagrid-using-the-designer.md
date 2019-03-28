@@ -23,7 +23,7 @@ Tabular data is often presented in a ledger-like format where alternating rows h
   
 1.  Select the <xref:System.Windows.Forms.DataGridView> control in the designer.  
   
-2.  In the **Properties** window, click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/set-alternating-row-styles-for-the-datagrid-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) next to the <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A> property.  
+2.  In the **Properties** window, click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/set-alternating-row-styles-for-the-datagrid-using-the-designer/visual-studio-ellipsis-button.png)) next to the <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A> property.  
   
 3.  In the **CellStyle Builder** dialog box, define the style by setting the properties, and use the **Preview** pane to confirm your choices. The styles you specify are used for every other row displayed in the control, starting with the second one.  
   

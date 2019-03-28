@@ -16,6 +16,7 @@ api_type:
 public interface Connection : _Connection, 
 	ConnectionEvents_Event
 ```
+
 ## Requirements
 
 **Namespace:** `adodb`

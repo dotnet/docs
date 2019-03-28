@@ -1,0 +1,49 @@
+﻿<Type Name="StreamPipeExtensions" FullName="System.IO.Pipelines.StreamPipeExtensions">
+  <TypeSignature Language="C#" Value="public static class StreamPipeExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StreamPipeExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Pipelines.StreamPipeExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StreamPipeExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamPipeExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type StreamPipeExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipelines</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CopyToAsync (this System.IO.Stream source, System.IO.Pipelines.PipeWriter destination, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream source, class System.IO.Pipelines.PipeWriter destination, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.StreamPipeExtensions.CopyToAsync(System.IO.Stream,System.IO.Pipelines.PipeWriter,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member CopyToAsync : System.IO.Stream * System.IO.Pipelines.PipeWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="System.IO.Pipelines.StreamPipeExtensions.CopyToAsync (source, destination, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.IO.Stream" RefType="this" />
+        <Parameter Name="destination" Type="System.IO.Pipelines.PipeWriter" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

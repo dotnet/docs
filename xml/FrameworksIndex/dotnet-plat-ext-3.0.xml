@@ -41,17 +41,17 @@
     <Assembly Name="System.Security.AccessControl" Version="4.1.1.0" />
     <Assembly Name="System.Security.Cryptography.Cng" Version="4.3.2.0" />
     <Assembly Name="System.Security.Cryptography.OpenSsl" Version="4.1.2.0" />
-    <Assembly Name="System.Security.Cryptography.Pkcs" Version="4.0.4.0" />
+    <Assembly Name="System.Security.Cryptography.Pkcs" Version="4.1.0.0" />
     <Assembly Name="System.Security.Cryptography.ProtectedData" Version="4.0.4.0" />
     <Assembly Name="System.Security.Cryptography.Xml" Version="4.0.2.0" />
     <Assembly Name="System.Security.Permissions" Version="4.0.2.0" />
     <Assembly Name="System.Security.Principal.Windows" Version="4.1.1.0" />
     <Assembly Name="System.ServiceModel" Version="4.0.0.0" />
-    <Assembly Name="System.ServiceModel.Duplex" Version="4.5.0.1" />
-    <Assembly Name="System.ServiceModel.Http" Version="4.5.0.1" />
-    <Assembly Name="System.ServiceModel.NetTcp" Version="4.5.0.1" />
-    <Assembly Name="System.ServiceModel.Primitives" Version="4.5.0.1" />
-    <Assembly Name="System.ServiceModel.Security" Version="4.5.0.1" />
+    <Assembly Name="System.ServiceModel.Duplex" Version="4.5.0.3" />
+    <Assembly Name="System.ServiceModel.Http" Version="4.5.0.3" />
+    <Assembly Name="System.ServiceModel.NetTcp" Version="4.5.0.3" />
+    <Assembly Name="System.ServiceModel.Primitives" Version="4.5.0.3" />
+    <Assembly Name="System.ServiceModel.Security" Version="4.5.0.3" />
     <Assembly Name="System.ServiceModel.Syndication" Version="4.0.1.0" />
     <Assembly Name="System.ServiceProcess.ServiceController" Version="4.2.2.0" />
     <Assembly Name="System.Text.Encoding.CodePages" Version="4.1.2.0" />
@@ -12231,8 +12231,10 @@
       <Member Id="M:System.IO.Pipelines.PipeReader.#ctor" />
       <Member Id="M:System.IO.Pipelines.PipeReader.AdvanceTo(System.SequencePosition)" />
       <Member Id="M:System.IO.Pipelines.PipeReader.AdvanceTo(System.SequencePosition,System.SequencePosition)" />
+      <Member Id="M:System.IO.Pipelines.PipeReader.AsStream" />
       <Member Id="M:System.IO.Pipelines.PipeReader.CancelPendingRead" />
       <Member Id="M:System.IO.Pipelines.PipeReader.Complete(System.Exception)" />
+      <Member Id="M:System.IO.Pipelines.PipeReader.CopyToAsync(System.IO.Stream,System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.Pipelines.PipeReader.OnWriterCompleted(System.Action{System.Exception,System.Object},System.Object)" />
       <Member Id="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.Pipelines.PipeReader.TryRead(System.IO.Pipelines.ReadResult@)" />
@@ -12246,8 +12248,10 @@
     <Type Name="System.IO.Pipelines.PipeWriter" Id="T:System.IO.Pipelines.PipeWriter">
       <Member Id="M:System.IO.Pipelines.PipeWriter.#ctor" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.Advance(System.Int32)" />
+      <Member Id="M:System.IO.Pipelines.PipeWriter.AsStream" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.CancelPendingFlush" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.Complete(System.Exception)" />
+      <Member Id="M:System.IO.Pipelines.PipeWriter.CopyFromAsync(System.IO.Stream,System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.GetMemory(System.Int32)" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.GetSpan(System.Int32)" />
@@ -12259,6 +12263,9 @@
       <Member Id="P:System.IO.Pipelines.ReadResult.Buffer" />
       <Member Id="P:System.IO.Pipelines.ReadResult.IsCanceled" />
       <Member Id="P:System.IO.Pipelines.ReadResult.IsCompleted" />
+    </Type>
+    <Type Name="System.IO.Pipelines.StreamPipeExtensions" Id="T:System.IO.Pipelines.StreamPipeExtensions">
+      <Member Id="M:System.IO.Pipelines.StreamPipeExtensions.CopyToAsync(System.IO.Stream,System.IO.Pipelines.PipeWriter,System.Threading.CancellationToken)" />
     </Type>
   </Namespace>
   <Namespace Name="System.IO.Pipes">

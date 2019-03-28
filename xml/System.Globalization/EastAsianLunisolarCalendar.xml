@@ -442,7 +442,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Ifthe `month` parameter is the second month, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetDaysInMonth%2A> method returns 28 or 29, depending on whether the `year` parameter is a leap year.  
+ If the `month` parameter is the second month, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetDaysInMonth%2A> method returns 28 or 29, depending on whether the `year` parameter is a leap year.  
   
  ]]></format>
         </remarks>

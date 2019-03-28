@@ -2054,13 +2054,13 @@ If `path1` ends in a path separator character that is not appropriate for the ta
 
 - Use a forward slash ("/") as the directory separator character. This character is returned by the <xref:System.IO.Path.DirectorySeparatorChar?displayProperty=nameWithType> property on Unix-based systems and by the <xref:System.IO.Path.AltDirectorySeparatorChar?displayProperty=nameWithType> property on Windows systems. 
 
-Unlike the <xref:System.IO.Path.Combine%2A> method, the <xref:System.IO.Path.Join%2A> methhod does not attempt to root the returned path. (That is, if `path2` is an absolute path, the `Join` method does not discard `path1` and return `path2` as the <xref:System.IO.Path.Combine%2A> method does.) The following example illustrates the difference in the paths returned by the two methods. If the source of `path2` is user input, the <xref:System.IO.Path.Combine%2A> method makes it possible for a user to access a file system resource (such as *C:/Users/User1/Documents/Financial/* in the case of hte example) that the application did not intend to make accessible.  
+Unlike the <xref:System.IO.Path.Combine%2A> method, the <xref:System.IO.Path.Join%2A> method does not attempt to root the returned path. (That is, if `path2` is an absolute path, the `Join` method does not discard `path1` and return `path2` as the <xref:System.IO.Path.Combine%2A> method does.) The following example illustrates the difference in the paths returned by the two methods. If the source of `path2` is user input, the <xref:System.IO.Path.Combine%2A> method makes it possible for a user to access a file system resource (such as *C:/Users/User1/Documents/Financial/* in the case of the example) that the application did not intend to make accessible.  
 
 Not all invalid characters for directory and file names are interpreted as unacceptable by the `Join` method, because you can use these characters for search wildcard characters. For example, while `Path.Join("c:\\", "*.txt")` might be invalid when creating a file, it is valid as a search string. The `Join` method therefore successfully interprets it. 
 
 ## Example
 
-The following example illustrates the difference in the paths returned by the <xref:System.IO.Path.Join(System.ReadOnlySpan%7BSystem.Char%7D,System.ReadOnlySpan%7BSystem.Char%7D)?displayProperty=nameWithType> and <xref:System.IO.Path.Combine(System.String,System.String)?displayProperty=nameWithType> methods. When the first string is an fully qualified path that includes a drive and root directory and the second is a relative path from the first path, the two methods produce identical results. In the second and third calls to the `ShowPathInformation` method, the strings returned by the two methods diverge. In the second method call, the first string argument is a drive, while the second is a rooted directory. The `Join` method concatenates the two strings and preserves duplicate path separators. The `Combine` method abandons the drive and returns a rooted directory on the current drive. If the application's current drive is C:\ and the string is used to access a file or files in the directory, it would access C: instead of D:. Finally, becasue both arguments in the third call to `ShowPathInformation` are rooted, the `Join` method simply appends them to create a nonsensical file path, while the `Combine` method discards the first string anmd returns the second. Using this string for file access could give the application unintended access to sensitive files.  
+The following example illustrates the difference in the paths returned by the <xref:System.IO.Path.Join(System.ReadOnlySpan%7BSystem.Char%7D,System.ReadOnlySpan%7BSystem.Char%7D)?displayProperty=nameWithType> and <xref:System.IO.Path.Combine(System.String,System.String)?displayProperty=nameWithType> methods. When the first string is an fully qualified path that includes a drive and root directory and the second is a relative path from the first path, the two methods produce identical results. In the second and third calls to the `ShowPathInformation` method, the strings returned by the two methods diverge. In the second method call, the first string argument is a drive, while the second is a rooted directory. The `Join` method concatenates the two strings and preserves duplicate path separators. The `Combine` method abandons the drive and returns a rooted directory on the current drive. If the application's current drive is C:\ and the string is used to access a file or files in the directory, it would access C: instead of D:. Finally, because both arguments in the third call to `ShowPathInformation` are rooted, the `Join` method simply appends them to create a nonsensical file path, while the `Combine` method discards the first string and returns the second. Using this string for file access could give the application unintended access to sensitive files.  
 
 [!code-csharp[Path.Join(String,String)](~/samples/snippets/csharp/api/system.io/path/combine2/program.cs)]
 [!code-csharp[Path.Join(String,String)](~/samples/snippets/visualbasic/api/system.io/path/combine2/program.vb)]
@@ -2141,7 +2141,7 @@ The following example illustrates the difference in the paths returned by the <x
   
 ## Remarks  
  
-This method simply concatenates `path`, `path2`, and `path3` and adds a directory separator character between any of the path components if one is not already present. If the <xref:System.ReadOnlySpan%601.Length> of any of `path1`, `path2`, or `path3` argument is zero, the method contatenates the remaining arguments. If the <xref:System.ReadOnlySpan%601.Length?displayProperty=nameWithType> of all components is zero, the method returns <xref:System.String.Empty?displayProperty=nameWithType>.    
+This method simply concatenates `path`, `path2`, and `path3` and adds a directory separator character between any of the path components if one is not already present. If the <xref:System.ReadOnlySpan%601.Length> of any of `path1`, `path2`, or `path3` argument is zero, the method concatenates the remaining arguments. If the <xref:System.ReadOnlySpan%601.Length?displayProperty=nameWithType> of all components is zero, the method returns <xref:System.String.Empty?displayProperty=nameWithType>.    
 
 If `path1` or `path2` ends in a path separator character that is not appropriate for the target platform, the `Join` method preserves the original path separator character and appends the supported one. This issue arises in hard-coded paths that use the Windows backslash ("\") character, which is not recognized as a path separator on Unix-based systems. To work around this issue, you can:
 
@@ -2149,13 +2149,13 @@ If `path1` or `path2` ends in a path separator character that is not appropriate
 
 - Use a forward slash ("/") as the directory separator character. This character is returned by the <xref:System.IO.Path.DirectorySeparatorChar?displayProperty=nameWithType> property on Unix-based systems and by the <xref:System.IO.Path.AltDirectorySeparatorChar?displayProperty=nameWithType> property on Windows systems. 
 
-Unlike the <xref:System.IO.Path.Combine%2A> method, the <xref:System.IO.Path.Join%2A> methhod does not attempt to root the returned path. (That is, if `path2` or `path2` is an absolute path, the `Join` method does not discard the previous paths as the <xref:System.IO.Path.Combine%2A> method does.  
+Unlike the <xref:System.IO.Path.Combine%2A> method, the <xref:System.IO.Path.Join%2A> method does not attempt to root the returned path. (That is, if `path2` or `path2` is an absolute path, the `Join` method does not discard the previous paths as the <xref:System.IO.Path.Combine%2A> method does.  
   
 Not all invalid characters for directory and file names are interpreted as unacceptable by the `Join` method, because you can use these characters for search wildcard characters. For example, while `Path.Join("c:\\", "temp", "*.txt")` might be invalid when creating a file, it is valid as a search string. The `Join` method therefore successfully interprets it. 
 
 ## Example
 
-The following example illustrates the difference in the paths returned by the <xref:System.IO.Path.Join(System.ReadOnlySpan%7BSystem.Char%7D,System.ReadOnlySpan%7BSystem.Char%7D,System.ReadOnlySpan%7BSystem.Char%7D)?displayProperty=nameWithType> and <xref:System.IO.Path.Combine(System.String,System.String,System.String)?displayProperty=nameWithType> methods. When the first string is an fully qualified path that includes a drive and root directory and the second is a relative path from the first path, the two methods produce identical results. In the second and third calls to the `ShowPathInformation` method, the strings returned by the two methods diverge. In the second method call, the first string argument is a drive, while the second is a rooted directory. The `Join` method concatenates the two strings and preserves duplicate path separators. A call to the <xref:System.IO.Path.GetFullPath%2A> method would eliminate the duplication. The `Combine` method abandons the drive and returns a rooted directory on the current drive. If the application's current drive is C:\ and the string is used to access a file or files in the directory, it would access C: instead of D:. Finally, becasue the final argument in the third call to `ShowPathInformation` are rooted, the `Join` method simply appends it to the first two arguments to create a nonsensical file path, while the `Combine` method discards the first two strings anmd returns the third. Using this string for file access could give the application unintended access to sensitive files.  
+The following example illustrates the difference in the paths returned by the <xref:System.IO.Path.Join(System.ReadOnlySpan%7BSystem.Char%7D,System.ReadOnlySpan%7BSystem.Char%7D,System.ReadOnlySpan%7BSystem.Char%7D)?displayProperty=nameWithType> and <xref:System.IO.Path.Combine(System.String,System.String,System.String)?displayProperty=nameWithType> methods. When the first string is an fully qualified path that includes a drive and root directory and the second is a relative path from the first path, the two methods produce identical results. In the second and third calls to the `ShowPathInformation` method, the strings returned by the two methods diverge. In the second method call, the first string argument is a drive, while the second is a rooted directory. The `Join` method concatenates the two strings and preserves duplicate path separators. A call to the <xref:System.IO.Path.GetFullPath%2A> method would eliminate the duplication. The `Combine` method abandons the drive and returns a rooted directory on the current drive. If the application's current drive is C:\ and the string is used to access a file or files in the directory, it would access C: instead of D:. Finally, because the final argument in the third call to `ShowPathInformation` are rooted, the `Join` method simply appends it to the first two arguments to create a nonsensical file path, while the `Combine` method discards the first two strings and returns the third. Using this string for file access could give the application unintended access to sensitive files.  
 
 [!code-csharp[Path.Join(String,String,String)](~/samples/snippets/csharp/api/system.io/path/combine3/program.cs)] 
 [!code-csharp[Path.Join(String,String,String)](~/samples/snippets/visualbasic/api/system.io/path/combine3/program.vb)] 
@@ -2261,7 +2261,7 @@ The following example illustrates the difference in the paths returned by the <x
  
 ## Remarks  
 
-The destination character span must be large enough to hold the concatentated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the following example illustrates.
+The destination character span must be large enough to hold the concatenated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the following example illustrates.
 
 [!code-csharp[IsPathRooted](~/samples/snippets/csharp/api/system.IO/Path/TryJoin/program.cs)]
 
@@ -2303,13 +2303,13 @@ The destination character span must be large enough to hold the concatentated pa
         <param name="charsWritten">When the method returns, a value that indicates the number of characters written to the <paramref name="destination" />.</param>
         <summary>Attempts to concatenate two path components to a single preallocated character span, and returns a value that indicates whether the operation succeeded.</summary>
         <returns>
-          <see langword="true" /> if the concatentation operaton is successful; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the concatenation operation is successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
 
-`destination` must be large enough to hold the concatentated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the example illustrates.
+`destination` must be large enough to hold the concatenated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the example illustrates.
 
          ]]></format>
         </remarks>
@@ -2352,13 +2352,13 @@ The destination character span must be large enough to hold the concatentated pa
         <param name="charsWritten">When the method returns, a value that indicates the number of characters written to the <paramref name="destination" />.</param>
         <summary>Attempts to concatenate two path components to a single preallocated character span, and returns a value that indicates whether the operation succeeded.</summary>
         <returns>
-          <see langword="true" /> if the concatentation operaton is successful; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the concatenation operation is successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
 
-`destination` must be large enough to hold the concatentated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the example illustrates.
+`destination` must be large enough to hold the concatenated path. You can then retrieve the concatenated path by calling the <xref:System.Span%601.Slice%2A?displayProperty=nameWithType> method, as the example illustrates.
 
          ]]></format>
         </remarks>

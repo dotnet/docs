@@ -34,7 +34,7 @@
 WebResource.axd?d=<encrypted identifier>&t=<time stamp value>  
 ```  
   
- where `<encryped identifier>` uniquely identifies the requested Web resource and `<time stamp value>` is the time stamp for the requested assembly so that changes to the assembly can be detected and the cached resource invalidated.  
+ where `<encrypted identifier>` uniquely identifies the requested Web resource and `<time stamp value>` is the time stamp for the requested assembly so that changes to the assembly can be detected and the cached resource invalidated.  
   
  This class supports the ASP.NET infrastructure and is not intended to be used directly from your code.  
   

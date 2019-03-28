@@ -2065,8 +2065,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value, in miliseconds, that determines how long the stream will attempt to read before timing out.</summary>
-        <value>A value, in miliseconds, that determines how long the stream will attempt to read before timing out.</value>
+        <summary>Gets or sets a value, in milliseconds, that determines how long the stream will attempt to read before timing out.</summary>
+        <value>A value, in milliseconds, that determines how long the stream will attempt to read before timing out.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IO.Stream.ReadTimeout" /> method always throws an <see cref="T:System.InvalidOperationException" />.</exception>
         <block subset="none" type="overrides">
@@ -2672,8 +2672,8 @@ This member is an explicit interface member implementation. It can be used only 
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value, in miliseconds, that determines how long the stream will attempt to write before timing out.</summary>
-        <value>A value, in miliseconds, that determines how long the stream will attempt to write before timing out.</value>
+        <summary>Gets or sets a value, in milliseconds, that determines how long the stream will attempt to write before timing out.</summary>
+        <value>A value, in milliseconds, that determines how long the stream will attempt to write before timing out.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IO.Stream.WriteTimeout" /> method always throws an <see cref="T:System.InvalidOperationException" />.</exception>
         <block subset="none" type="overrides">

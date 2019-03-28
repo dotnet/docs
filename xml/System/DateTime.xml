@@ -4964,7 +4964,7 @@ This overload attempts to parse `s` by using <xref:System.Globalization.DateTime
 
 The following example parses the string representation of several date and time values by:
 
-- Using the default format provider, which provides the formatting conventions of hte current thread culture of the computer used to produce the example output. The output from this example reflects the formatting conventions of the en-US culture.
+- Using the default format provider, which provides the formatting conventions of the current thread culture of the computer used to produce the example output. The output from this example reflects the formatting conventions of the en-US culture.
 
 - Using the default style value, which is <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces?displayProperty=nameWIthType>. 
 

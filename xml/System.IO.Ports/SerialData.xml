@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used with the <xref:System.IO.Ports.SerialPort.DataReceived> event. You examine the type of character that was received by retrieving the value of the eceivedEventArgs.EventType property of the eceivedEventArgs class. The eceivedEventArgs.EventType property contains one of the values from the <xref:System.IO.Ports.SerialDataReceivedEventArgs.EventType%2A> enumeration.  
+ This enumeration is used with the <xref:System.IO.Ports.SerialPort.DataReceived> event. You examine the type of character that was received by retrieving the value of the ReceivedEventArgs.EventType property of the ReceivedEventArgs class. The ReceivedEventArgs.EventType property contains one of the values from the <xref:System.IO.Ports.SerialDataReceivedEventArgs.EventType%2A> enumeration.  
   
  ]]></format>
     </remarks>

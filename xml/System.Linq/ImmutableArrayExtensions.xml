@@ -615,7 +615,7 @@
         <typeparam name="T">  
   
  The type of element contained by the collection.</typeparam>
-        <param name="immutableArray">The array to retrieve elments from.</param>
+        <param name="immutableArray">The array to retrieve elements from.</param>
         <param name="predicate">The delegate that defines the conditions of the element to search for.</param>
         <summary>  
   

@@ -241,7 +241,7 @@
 ## Remarks  
  A match on the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property occurs when one of the following happens:  
   
--   The value of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> propertyfor the current instance is `null`.  
+-   The value of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property for the current instance is `null`.  
   
 -   The value of the `ownerType` parameter is `null`.  
   

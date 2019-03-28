@@ -626,7 +626,7 @@
           <paramref name="AssemblyPath" /> is not found, or a file name extension is not specified.</exception>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="AssemblyPath" /> is not a valid assembly.</exception>
-        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences, or the assembly name exceeds the syste-defined maximum length.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences, or the assembly name exceeds the system-defined maximum length.</exception>
         <exception cref="T:System.InvalidOperationException">A method marked with <see cref="T:System.Runtime.InteropServices.ComUnregisterFunctionAttribute" /> is not <see langword="static" />.  
   
  -or-  

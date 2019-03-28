@@ -253,7 +253,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the contents of the wst:EncryptWith element.</summary>
-        <value>A string that contains a URI that indicates the desired encryption algoritm to be used with the issued security token.</value>
+        <value>A string that contains a URI that indicates the desired encryption algorithm to be used with the issued security token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -562,7 +562,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the requestor wishes to use an existing key rather than create a new one, then this property can be used to reference a security token containing the desired key. This is commonly used in the asymetric key issurance case.  
+ If the requestor wishes to use an existing key rather than create a new one, then this property can be used to reference a security token containing the desired key. This is commonly used in the asymmetric key issuance case.  
   
  ]]></format>
         </remarks>

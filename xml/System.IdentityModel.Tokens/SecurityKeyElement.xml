@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides delayed resolution of security keys by resolving the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> or <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> only when cryptographic functions are needed. This allows a key identifier clause or key identifier that is never used by an application to be serialized and deserialzied on and off the wire without issues.</summary>
+    <summary>Provides delayed resolution of security keys by resolving the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> or <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> only when cryptographic functions are needed. This allows a key identifier clause or key identifier that is never used by an application to be serialized and deserialized on and off the wire without issues.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

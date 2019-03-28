@@ -814,7 +814,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">Localname of the attribute.</param>
+        <param name="localName">Local name of the attribute.</param>
         <param name="value">Attribute value.</param>
         <summary>Writes an attribute as a xml attribute with the prefix 'xml:'.</summary>
         <remarks>To be added.</remarks>

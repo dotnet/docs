@@ -36,7 +36,7 @@
 |Method|Description|  
 |------------|-----------------|  
 |<xref:System.Transactions.IEnlistmentNotification.Prepare%2A>|This method of an enlisted object is used as a callback by the Transaction Manager during the first phase of a transaction, when the transaction manager asks participants whether they can commit the transaction.|  
-|<xref:System.Transactions.IEnlistmentNotification.Commit%2A>|This method of an enlisted object is used as a callback by the Transaction Manager during the second phase of a transaction if the transaction is commited.|  
+|<xref:System.Transactions.IEnlistmentNotification.Commit%2A>|This method of an enlisted object is used as a callback by the Transaction Manager during the second phase of a transaction if the transaction is committed.|  
 |<xref:System.Transactions.IEnlistmentNotification.Rollback%2A>|This method of an enlisted object is used as a callback by the Transaction Manager during the second phase of a transaction if the transaction is aborted (that is, rolled back).|  
 |<xref:System.Transactions.IEnlistmentNotification.InDoubt%2A>|This method of an enlisted object is used as a callback by the Transaction Manager during the second phase of a transaction if the transaction is in doubt.|  
   

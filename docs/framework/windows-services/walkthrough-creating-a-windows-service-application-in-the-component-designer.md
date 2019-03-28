@@ -245,6 +245,9 @@ You can implement the SERVICE_START_PENDING and SERVICE_STOP_PENDING status sett
     End Structure
     ```
 
+    > [!NOTE]
+    > The Service Control Manager uses the `dwWaitHint` and `dwCheckpoint` members of the [SERVICE_STATUS structure](/windows/desktop/api/winsvc/ns-winsvc-_service_status) to determine how much time to wait for a Windows service to start or shut down. If your `OnStart` and `OnStop` methods run long, your service can request more time by calling `SetServiceStatus` again with an incremented `dwCheckPoint` value.
+
 3. In the `MyNewService` class, declare the [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) function by using [platform invoke](../interop/consuming-unmanaged-dll-functions.md):
 
     ```csharp
@@ -315,9 +318,6 @@ You can implement the SERVICE_START_PENDING and SERVICE_STOP_PENDING status sett
     serviceStatus.dwCurrentState = ServiceState.SERVICE_STOPPED
     SetServiceStatus(Me.ServiceHandle, serviceStatus)    
     ```
-
-> [!NOTE]
-> The Service Control Manager uses the `dwWaitHint` and `dwCheckpoint` members of the [SERVICE_STATUS structure](/windows/desktop/api/winsvc/ns-winsvc-_service_status) to determine how much time to wait for a Windows service to start or shut down. If your `OnStart` and `OnStop` methods run long, your service can request more time by calling `SetServiceStatus` again with an incremented `dwCheckPoint` value.
 
 ## Add installers to the service
 

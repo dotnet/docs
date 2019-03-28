@@ -113,7 +113,7 @@ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], variables a
 
 The following screenshot shows the variable and argument designer context menu.
 
-![Variable and Argument Designer Context Menu](./media/whats-new-in-wf-in-dotnet/designer-context-menu.png "Variable and argument designer context menu")
+![Variable and Argument Designer Context Menu](./media/whats-new-in-wf-in-dotnet/designer-context-menu.png)
 
 ### <a name="BKMK_AutoSurround"></a> Auto-surround with Sequence
 

@@ -3,7 +3,8 @@ title: Connection Interface (adodb)
 ms.date: 023/16/2019
 topic_type:
   - "apiref"
-
+api_name:
+  - "adodb.Connection"
 api_location:
   - "adodb.dll"
 api_type:

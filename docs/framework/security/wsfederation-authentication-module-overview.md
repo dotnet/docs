@@ -44,7 +44,7 @@ Windows Identity Foundation (WIF) includes support for federated authentication 
   
  The following diagram shows the overall flow of information in the passive redirect case. The request is automatically redirected via the STS to establish credentials without a login page:  
   
- ![Diagram that shows sign&#45;in with passive redirect.](./media/wsfederation-authentication-module-overview/sign-in-using-passive-redirect.gif)  
+ ![Diagram that shows sign-in with passive redirect.](./media/wsfederation-authentication-module-overview/sign-in-using-passive-redirect.gif)  
   
  The following diagram shows more detail on what happens when the user has authenticated to the STS and their security tokens are processed by the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>:  
   

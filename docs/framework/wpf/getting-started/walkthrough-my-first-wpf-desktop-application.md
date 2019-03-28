@@ -280,7 +280,7 @@ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by se
 
 The following illustration shows the controls you just created:
 
-![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/add-application-controls.png "Shows the controls you've added.")
+![Screenshot that shows the controls you created.](./media/walkthrough-my-first-wpf-desktop-application/add-application-controls.png)
 
 ## Add an image and a title
 
@@ -316,7 +316,7 @@ In this section, you'll update the home page UI with an image and a page title.
 
 The following illustration shows the results of what you just added:
 
-![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/add-application-image-title.png "Shows the image and title you just created.")
+![Screenshot that shows the image and title you created.](./media/walkthrough-my-first-wpf-desktop-application/add-application-image-title.png)
 
 ## Add code to handle events
 

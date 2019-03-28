@@ -73,7 +73,7 @@ ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
 
 1.  Select the <xref:System.Windows.Forms.DataGrid> control on your form.
 
-2.  In the **Properties** window, select the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property and click the **Ellipsis** (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/how-to-format-the-windows-forms-datagrid-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button.
+2.  In the **Properties** window, select the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property and click the **Ellipsis** (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/how-to-format-the-windows-forms-datagrid-control-using-the-designer/visual-studio-ellipsis-button.png)) button.
 
 3.  In the **DataGridTableStyle Collection Editor** dialog box, click **Add** to add a table style to the collection.
 
@@ -83,7 +83,7 @@ ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
 
      The mapping name is used to specify which table style should be used with which table.
 
-5.  In the **DataGridTableStyle Collection Editor**, select the <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> property and click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/how-to-format-the-windows-forms-datagrid-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")).
+5.  In the **DataGridTableStyle Collection Editor**, select the <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> property and click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/how-to-format-the-windows-forms-datagrid-control-using-the-designer/visual-studio-ellipsis-button.png)).
 
 6.  In the **DataGridColumnStyle Collection Editor** dialog box, add column styles to the table style you created.
 

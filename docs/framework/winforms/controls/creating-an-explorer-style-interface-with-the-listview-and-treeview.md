@@ -48,7 +48,7 @@ One of the benefits of Visual Studio is the ability to create professional-looki
   
     2.  Set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View.Details>.  
   
-    3.  Open the ColumnHeader Collection Editor by clicking the ellipses (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/creating-an-explorer-style-interface-with-the-listview-and-treeview/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) in the <xref:System.Windows.Forms.ListView.Columns%2A> property**.** Add three columns and set their <xref:System.Windows.Forms.ColumnHeader.Text%2A> property to `Name`, `Type`, and `Last Modified`, respectively. Click **OK** to close the dialog box.  
+    3.  Open the ColumnHeader Collection Editor by clicking the ellipses (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/creating-an-explorer-style-interface-with-the-listview-and-treeview/visual-studio-ellipsis-button.png)) in the <xref:System.Windows.Forms.ListView.Columns%2A> property**.** Add three columns and set their <xref:System.Windows.Forms.ColumnHeader.Text%2A> property to `Name`, `Type`, and `Last Modified`, respectively. Click **OK** to close the dialog box.  
   
     4.  Set the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property to `imageList1.`  
   

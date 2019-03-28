@@ -1575,7 +1575,7 @@
 ## Remarks  
  The <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> property returns `false` when any one of the following conditions is true:  
   
--   In the [deployment](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) element of the configuration file, the `retail` attribute is set to `true`. This overrides all other settings.  
+-   In the [deployment](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) element of the configuration file, the `retail` attribute is set to `true`. This overrides all other settings.  
   
 -   The <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property is set to `Auto` or to `Inherit`, and debugging is not enabled in the `compilation` section of the application-root Web.config file.  
   
@@ -3666,10 +3666,10 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
   
 |Value|Definition|  
 |-----------|----------------|  
-|<xref:System.Web.UI.ScriptMode.Auto>|Debug versions of client script libraries are used in the Web page when the `retail` attribute of the [deployment](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `false`. Otherwise, the release versions of client script libraries are used.|  
+|<xref:System.Web.UI.ScriptMode.Auto>|Debug versions of client script libraries are used in the Web page when the `retail` attribute of the [deployment](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `false`. Otherwise, the release versions of client script libraries are used.|  
 |<xref:System.Web.UI.ScriptMode.Inherit>|When applied to the <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property of the <xref:System.Web.UI.ScriptManager> object, this value is the same as <xref:System.Web.UI.ScriptMode.Auto>.|  
-|<xref:System.Web.UI.ScriptMode.Debug>|Debug versions of client script libraries are used in the Web page unless the `retail` attribute of the [deployment](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `true`.|  
-|<xref:System.Web.UI.ScriptMode.Release>|Release versions of client script libraries are used in the Web page unless the `retail` attribute of the [deployment](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `false`.|  
+|<xref:System.Web.UI.ScriptMode.Debug>|Debug versions of client script libraries are used in the Web page unless the `retail` attribute of the [deployment](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `true`.|  
+|<xref:System.Web.UI.ScriptMode.Release>|Release versions of client script libraries are used in the Web page unless the `retail` attribute of the [deployment](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `false`.|  
   
 > [!NOTE]
 >  The `debug` attribute of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  

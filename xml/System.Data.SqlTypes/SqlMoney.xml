@@ -261,7 +261,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure.</param>
         <summary>Calculates the sum of the two <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameters.</summary>
-        <returns>A new <see cref="T:System.Data.SqlTypes.SqlMoney" /> stucture whose <see cref="P:System.Data.SqlTypes.SqlMoney.Value" /> contains the sum of the two <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameters.</returns>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure whose <see cref="P:System.Data.SqlTypes.SqlMoney.Value" /> contains the sum of the two <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameters.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
@@ -978,7 +978,7 @@
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure.</param>
-        <summary>The multiplicaion operator calculates the product of the two <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameters.</summary>
+        <summary>The multiplication operator calculates the product of the two <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameters.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure whose <see cref="P:System.Data.SqlTypes.SqlMoney.Value" /> contains the product of the multiplication.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
@@ -1111,7 +1111,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure.</param>
         <summary>Calculates the sum of the two <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameters.</summary>
-        <returns>A new <see cref="T:System.Data.SqlTypes.SqlMoney" /> stucture whose <see cref="P:System.Data.SqlTypes.SqlMoney.Value" /> contains the sum of the two <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameters.</returns>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure whose <see cref="P:System.Data.SqlTypes.SqlMoney.Value" /> contains the sum of the two <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlMoney.Add%28System.Data.SqlTypes.SqlMoney%2CSystem.Data.SqlTypes.SqlMoney%29?displayProperty=nameWithType>]]></format>
         </remarks>
@@ -2065,7 +2065,7 @@
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure.</param>
-        <summary>The multiplicaion operator calculates the product of the two <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameters.</summary>
+        <summary>The multiplication operator calculates the product of the two <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameters.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure whose <see cref="P:System.Data.SqlTypes.SqlMoney.Value" /> contains the product of the multiplication.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlMoney.Multiply%28System.Data.SqlTypes.SqlMoney%2CSystem.Data.SqlTypes.SqlMoney%29?displayProperty=nameWithType>]]></format>

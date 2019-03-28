@@ -151,7 +151,7 @@
 ## Remarks  
  This constructor sets the properties <xref:System.Diagnostics.DebuggableAttribute.IsJITTrackingEnabled%2A> and <xref:System.Diagnostics.DebuggableAttribute.IsJITOptimizerDisabled%2A>.  
   
- An `isJITTrackingEnabaled` parameter value of `true` causes the runtime to track information important to the debugger during code generation; a value of `false` results in no tracking, but does not prevent debugging. This parameter has no effect in the .NET Framework version 2.0.  In version 2.0, JIT tracking information, the Microsoft intermediate language (MSIL) offset to the native-code offset within a method, is always generated.  
+ An `isJITTrackingEnabled` parameter value of `true` causes the runtime to track information important to the debugger during code generation; a value of `false` results in no tracking, but does not prevent debugging. This parameter has no effect in the .NET Framework version 2.0.  In version 2.0, JIT tracking information, the Microsoft intermediate language (MSIL) offset to the native-code offset within a method, is always generated.  
   
  An `isJITOptimizerDisabled` parameter value of `true` optimizes for debugging; a value of `false` optimizes for execution.  
   

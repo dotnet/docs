@@ -192,7 +192,7 @@
       </ReturnValue>
       <MemberValue>23</MemberValue>
       <Docs>
-        <summary>The Accept-Langauge header, which specifies that natural languages that are preferred for the response.</summary>
+        <summary>The Accept-Language header, which specifies that natural languages that are preferred for the response.</summary>
       </Docs>
     </Member>
     <Member MemberName="Allow">
@@ -420,7 +420,7 @@
       </ReturnValue>
       <MemberValue>14</MemberValue>
       <Docs>
-        <summary>The Content-Langauge header, which specifies the natural language(s) of the accompanying body data.</summary>
+        <summary>The Content-Language header, which specifies the natural language(s) of the accompanying body data.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentLength">

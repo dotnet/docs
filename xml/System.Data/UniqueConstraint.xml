@@ -547,7 +547,7 @@
         <param name="key2">The object to which this <see cref="T:System.Data.UniqueConstraint" /> is compared.</param>
         <summary>Compares this constraint to a second to determine if both are identical.</summary>
         <returns>
-          <see langword="true" />, if the contraints are equal; otherwise, <see langword="false" />.</returns>
+          <see langword="true" />, if the constraints are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -557,7 +557,7 @@
    
   
 ## Examples  
- The following example compares two UiqueConstraint objects.  
+ The following example compares two UniqueConstraint objects.  
   
  [!code-vb[Classic WebData UniqueConstraint.Equals Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData UniqueConstraint.Equals Example/VB/source.vb#1)]  
   

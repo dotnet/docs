@@ -243,8 +243,8 @@
 ## Remarks  
   
 ```  
-private static void GetParameters(String connectiongString) {  
-           using (SqlConnection conn = new SqlConnection(connectiongString)) {  
+private static void GetParameters(String connectionString) {  
+           using (SqlConnection conn = new SqlConnection(connectionString)) {  
               String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course] where [Year]=@Year and [Credits]>=@Credits";   
               SqlParameter year = new SqlParameter("@Year", 2012);   
               SqlParameter credits = new SqlParameter("@Credits", SqlDbType.Int, 4, "Credits");   

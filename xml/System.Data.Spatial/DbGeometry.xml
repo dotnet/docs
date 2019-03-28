@@ -372,7 +372,7 @@
         <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="other">The geometry value that should be compared with this geometry value for disjointness.</param>
+        <param name="other">The geometry value that should be compared with this geometry value for disjointedness.</param>
         <summary>Determines whether this DbGeometry is spatially disjoint from the specified DbGeometry argument.</summary>
         <returns>
           <see langword="true" /> if <paramref name="other" /> is disjoint from this geometry value; otherwise <see langword="false" />.</returns>

@@ -210,7 +210,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.ContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the context type enumeraton value that specifies the type of principal context associated with this principal.</summary>
+        <summary>Gets the context type enumeration value that specifies the type of principal context associated with this principal.</summary>
         <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value that specifies the context type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1075,7 +1075,7 @@
         <exception cref="T:System.InvalidOperationException">The principal has not yet been associated with a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object.  
   
  This type of principal cannot be inserted in the store.</exception>
-        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving changes tnso the store, or updating the group membership in the store.</exception>
+        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving changes to the store, or updating the group membership in the store.</exception>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalExistsException">The principal already occurs in the store.</exception>
         <exception cref="T:System.DirectoryServices.AccountManagement.PasswordException">The password does not meet complexity requirements.</exception>
       </Docs>

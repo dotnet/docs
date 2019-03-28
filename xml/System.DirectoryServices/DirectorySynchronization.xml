@@ -25,7 +25,7 @@
   
 ```csharp  
 DirectorySearcher src = new DirectorySearcher("…");   
-src.DirectorySynchornization= new DirectorySynchronization(); // Initiate dirsync,   
+src.DirectorySynchronization= new DirectorySynchronization(); // Initiate dirsync,   
                                                               // this means a full synch  
   
 foreach(SearchResult res in src.FindAll() )  
@@ -45,7 +45,7 @@ foreach(SearchResult res in src.FindAll() )
   
 ```csharp  
 DirectorySearcher src = new DirectorySearcher("…");   
-src.DirectorySynchornization= new DirectorySynchronization(); // Initiate dirsync,   
+src.DirectorySynchronization= new DirectorySynchronization(); // Initiate dirsync,   
                                                               // this means a full synch  
   
 foreach(SearchResult res in src.FindAll() )  
@@ -307,7 +307,7 @@ foreach(SearchResult res in src.FindAll() )
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resetss the directory synchronization search cookie.</summary>
+        <summary>Resets the directory synchronization search cookie.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

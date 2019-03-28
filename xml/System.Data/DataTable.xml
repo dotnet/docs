@@ -697,8 +697,8 @@ class Program {
       clonedResult.UpdateAddedColumn();  
       clonedResult.UpdateDeletedColumn();  
       // Add a DataColumn in source table.  
-      DataColumn columnCreidts = new DataColumn("Credits", typeof(Int32));  
-      courses.Columns.Add(columnCreidts);  
+      DataColumn columnCredits = new DataColumn("Credits", typeof(Int32));  
+      courses.Columns.Add(columnCredits);  
       Console.WriteLine("After add a column in source table, it's the result in the destination:");  
       WriteDataTable(clonedCourses);  
   
@@ -718,14 +718,14 @@ rows into the destination table, we will get the following error:");
       clonedResult.UpdateForeignKeyConstraint();  
   
       // Add the ForeignKeyConstraint into the source table.  
-      DataTable deparments = NewDeparmentDataTable();  
+      DataTable departments = NewDepartmentDataTable();  
       DataSet dataset = new DataSet();  
   
       dataset.Tables.Add(courses);  
       dataset.Tables.Add(clonedCourses);  
-      dataset.Tables.Add(deparments);  
+      dataset.Tables.Add(departments);  
   
-      ForeignKeyConstraint foreignKey = new ForeignKeyConstraint(deparments.Columns["DepartmentId"], courses.Columns["DepartmentId"]);  
+      ForeignKeyConstraint foreignKey = new ForeignKeyConstraint(departments.Columns["DepartmentId"], courses.Columns["DepartmentId"]);  
       courses.Constraints.Add(foreignKey);  
   
       Console.WriteLine(@"If we add the foreign key constraint in source table and then insert a row   
@@ -874,7 +874,7 @@ public class ClonedDataTable {
          DataColumn[] columns = new DataColumn[constraint.Columns.Count()];  
          Boolean isPrimaryKey = constraint.IsPrimaryKey;  
   
-         // Get the columns used in new constraint from the destiantion table.  
+         // Get the columns used in new constraint from the destination table.  
          for (Int32 i = 0; i < constraint.Columns.Count(); i++) {  
             String columnName = constraint.Columns[i].ColumnName;  
   
@@ -2680,7 +2680,7 @@ class Program {
 |---------------------------|------------|----------------------|------------------------------------------|  
 |Added|Current = \<Incoming><br /><br /> Original = -\<Not available><br /><br /> State = \<Added><br /><br /> RowAction = Change|Current = \<Incoming><br /><br /> Original = \<Incoming><br /><br /> State = \<Unchanged><br /><br /> RowAction = ChangeCurrentAndOriginal|Current = \<Existing><br /><br /> Original = \<Incoming><br /><br /> State = \<Modified><br /><br /> RowAction = ChangeOriginal|  
 |Modified|Current = \<Incoming><br /><br /> Original = \<Existing><br /><br /> State = \<Modified><br /><br /> RowAction = Change|Current = \<Incoming><br /><br /> Original = \<Incoming><br /><br /> State = \<Unchanged><br /><br /> RowAction = ChangeCurrentAndOriginal|Current = \<Existing><br /><br /> Original = \<Incoming><br /><br /> State = \<Modified><br /><br /> RowAction =ChangeOriginal|  
-eleted|(Load does not affect deleted rows)<br /><br /> Current = ---<br /><br /> Original = \<Existing><br /><br /> State = \<Deleted><br /><br /> (New row is added with the following characteristics)<br /><br /> Current = \<Incoming><br /><br /> Original = \<Not available><br /><br /> State = \<Added><br /><br /> RowAction = Add|Undo delete and<br /><br /> Current = \<Incoming><br /><br /> Original = \<Incoming><br /><br /> State = \<Unchanged><br /><br /> RowAction = ChangeCurrentAndOriginal|Current = \<Not available><br /><br /> Original = \<Incoming><br /><br /> State = \<Deleted><br /><br /> RowAction = ChangeOriginal|  
+|Deleted|(Load does not affect deleted rows)<br /><br /> Current = ---<br /><br /> Original = \<Existing><br /><br /> State = \<Deleted><br /><br /> (New row is added with the following characteristics)<br /><br /> Current = \<Incoming><br /><br /> Original = \<Not available><br /><br /> State = \<Added><br /><br /> RowAction = Add|Undo delete and<br /><br /> Current = \<Incoming><br /><br /> Original = \<Incoming><br /><br /> State = \<Unchanged><br /><br /> RowAction = ChangeCurrentAndOriginal|Current = \<Not available><br /><br /> Original = \<Incoming><br /><br /> State = \<Deleted><br /><br /> RowAction = ChangeOriginal|  
 |Unchanged|Current = \<Incoming><br /><br /> Original = \<Existing><br /><br /> If new value is the same as the existing value then<br /><br /> State = \<Unchanged><br /><br /> RowAction = Nothing<br /><br /> Else<br /><br /> State = \<Modified><br /><br /> RowAction = Change|Current = \<Incoming><br /><br /> Original = \<Incoming><br /><br /> State = \<Unchanged><br /><br /> RowAction = ChangeCurrentAndOriginal|Current = \<Incoming><br /><br /> Original = \<Incoming><br /><br /> State = \<Unchanged><br /><br /> RowAction = ChangeCurrentAndOriginal|  
 Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br /><br /> State = \<Added><br /><br /> RowAction = Add|Current = \<Incoming><br /><br /> Original = \<Incoming><br /><br /> State = \<Unchanged><br /><br /> RowAction = ChangeCurrentAndOriginal|Current = \<Incoming><br /><br /> Original = \<Incoming><br /><br /> State = \<Unchanged><br /><br /> RowAction = ChangeCurrentAndOriginal|  
   

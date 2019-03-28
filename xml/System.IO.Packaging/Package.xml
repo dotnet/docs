@@ -950,7 +950,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IO.Packaging.Package.Flush%2A> internally calls the derived class's <xref:System.IO.Packaging.Package.FlushCore%2A> implemetation to perform the actual format-specific flush operation.  The derived class's <xref:System.IO.Packaging.Package.FlushCore%2A> method is responsible for actually saving the part and relationship content to the specific physical derived class implementation.  
+ <xref:System.IO.Packaging.Package.Flush%2A> internally calls the derived class's <xref:System.IO.Packaging.Package.FlushCore%2A> implementation to perform the actual format-specific flush operation.  The derived class's <xref:System.IO.Packaging.Package.FlushCore%2A> method is responsible for actually saving the part and relationship content to the specific physical derived class implementation.  
   
  By default, a <xref:System.IO.Packaging.ZipPackage> derived implementation of the abstract <xref:System.IO.Packaging.Package> base class is provided and used. In the default operation, <xref:System.IO.Packaging.Package.Flush%2A> internally calls <xref:System.IO.Packaging.Package.FlushCore%2A> to save the parts and relationships in a ZIP file package.  
   

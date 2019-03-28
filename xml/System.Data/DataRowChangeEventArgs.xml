@@ -81,7 +81,7 @@
         <Parameter Name="action" Type="System.Data.DataRowAction" />
       </Parameters>
       <Docs>
-        <param name="row">The <see cref="T:System.Data.DataRow" /> upon which an action is occuring.</param>
+        <param name="row">The <see cref="T:System.Data.DataRow" /> upon which an action is occurring.</param>
         <param name="action">One of the <see cref="T:System.Data.DataRowAction" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataRowChangeEventArgs" /> class.</summary>
         <remarks>

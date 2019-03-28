@@ -251,7 +251,7 @@
         <Parameter Name="other" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="other">The geography value that should be compared with this geography value for disjointness.</param>
+        <param name="other">The geography value that should be compared with this geography value for disjointedness.</param>
         <summary>Determines whether this DbGeography is spatially disjoint from the specified DbGeography argument.</summary>
         <returns>
           <see langword="true" /> if <paramref name="other" /> is disjoint from this geography value; otherwise <see langword="false" />.</returns>

@@ -1017,7 +1017,7 @@ public void CreateOdbcParameter()
 >  Use of this property to coerce data passed to the database is not supported. To round, truncate, or otherwise coerce data before passing it to the database, use the <xref:System.Math> class that is part of the `System` namespace prior to assigning a value to the parameter's `Value` property.  
   
 > [!NOTE]
->  .NET Framework data providers that are included with the .NET Framework version 1.0 do not verify the `scale` of <xref:System.Decimal> parameter values. This can cause modified data being inserted at the data source. If you are using .NET Framework version 1.0, validate the s`cale` of d`ecimal` values before setting the parameter value. When you use .NET Framework version 1.1 or later versions, `scale` values that exceed the `decimal` parameter scale might only be truncated in scale, if that is the behavior of the underlying ODBC driver.  
+>  .NET Framework data providers that are included with the .NET Framework version 1.0 do not verify the `scale` of <xref:System.Decimal> parameter values. This can cause modified data being inserted at the data source. If you are using .NET Framework version 1.0, validate the `scale` of `decimal` values before setting the parameter value. When you use .NET Framework version 1.1 or later versions, `scale` values that exceed the `decimal` parameter scale might only be truncated in scale, if that is the behavior of the underlying ODBC driver.  
   
    
   

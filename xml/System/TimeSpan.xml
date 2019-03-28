@@ -4103,7 +4103,7 @@ When a time interval component in the string to be parsed contains more than sev
   
  The `formatProvider` parameter is an <xref:System.IFormatProvider> implementation that provides culture-specific information about the format of the returned string. The `formatProvider` parameter can be any of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting conventions are to be reflected in the returned string. The <xref:System.Globalization.DateTimeFormatInfo> object retuned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the formatting of the returned string.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting conventions are to be reflected in the returned string. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the formatting of the returned string.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the formatting of the returned string.  
   

@@ -219,12 +219,12 @@ DbConnectionStringBuilder connectionBuilder = newFactory.CreateConnectionStringB
   
 ```vb  
 Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
-Dim dataAdpater As DbDataAdapter = newFactory.CreateDataAdapter()  
+Dim dataAdapter As DbDataAdapter = newFactory.CreateDataAdapter()  
 ```  
   
 ```csharp  
 OracleClientFactory newFactory = OracleClientFactory.Instance;  
-DbDataAdapter dataAdpater = newFactory.CreateDataAdapter();  
+DbDataAdapter dataAdapter = newFactory.CreateDataAdapter();  
 ```  
   
  ]]></format>

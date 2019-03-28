@@ -895,7 +895,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.OleDb.OleDbDataReader.GetOrdinal%2A> performs a case-sensitive lookup first. If it fails, a second case-insensitive search is made. The method throws an `IndexOutOfRange` exceptionif the zero-based column ordinal is not found.  
+ <xref:System.Data.OleDb.OleDbDataReader.GetOrdinal%2A> performs a case-sensitive lookup first. If it fails, a second case-insensitive search is made. The method throws an `IndexOutOfRange` exception if the zero-based column ordinal is not found.  
   
  <xref:System.Data.OleDb.OleDbDataReader.GetOrdinal%2A> is kana-width insensitive.  
   

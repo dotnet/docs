@@ -708,7 +708,7 @@
    
   
 ## Examples  
- The following code example verifies whether the <xref:System.Device.Location.GeoCoordinate> that corresponds to a location is <xref:System.Device.Location.GeoCoordinate.Unknown> before printingout its latitude and longitude.  
+ The following code example verifies whether the <xref:System.Device.Location.GeoCoordinate> that corresponds to a location is <xref:System.Device.Location.GeoCoordinate.Unknown> before printing out its latitude and longitude.  
   
  [!code-csharp[System.Device.Location.GetLocationDataSyncHandleUnknown#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.getlocationdatasynchandleunknown/cs/getlocationdatasynchandleunknown.cs#1)]
  [!code-vb[System.Device.Location.GetLocationDataSyncHandleUnknown#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.getlocationdatasynchandleunknown/vb/GetLocationDataSyncHandleUnknown.vb#1)]  

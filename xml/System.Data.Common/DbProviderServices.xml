@@ -130,7 +130,7 @@
       <Docs>
         <param name="providerManifest">The manifest.</param>
         <param name="commandTree">The command tree.</param>
-        <summary>Creates command definition from specified manifest andcommand tree.</summary>
+        <summary>Creates command definition from specified manifest and command tree.</summary>
         <returns>The created command definition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,7 +193,7 @@
       <Docs>
         <param name="providerManifestToken">The provider manifest token identifying the target version.</param>
         <param name="storeItemCollection">The structure of the database.</param>
-        <summary>Generates a data definition langauge (DDL script that creates schema objects (tables, primary keys, foreign keys) based on the contents of the StoreItemCollection parameter and targeted for the version of the database corresponding to the provider manifest token.</summary>
+        <summary>Generates a data definition language (DDL script that creates schema objects (tables, primary keys, foreign keys) based on the contents of the StoreItemCollection parameter and targeted for the version of the database corresponding to the provider manifest token.</summary>
         <returns>A DDL script that creates schema objects based on the contents of the StoreItemCollection parameter and targeted for the version of the database corresponding to the provider manifest token.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,7 +307,7 @@
       <Docs>
         <param name="providerManifestToken">The provider manifest token identifying the target version.</param>
         <param name="storeItemCollection">The structure of the database.</param>
-        <summary>Generates a data definition langauge (DDL script that creates schema objects (tables, primary keys, foreign keys) based on the contents of the StoreItemCollection parameter and targeted for the version of the database corresponding to the provider manifest token.</summary>
+        <summary>Generates a data definition language (DDL script that creates schema objects (tables, primary keys, foreign keys) based on the contents of the StoreItemCollection parameter and targeted for the version of the database corresponding to the provider manifest token.</summary>
         <returns>A DDL script that creates schema objects based on the contents of the StoreItemCollection parameter and targeted for the version of the database corresponding to the provider manifest token.</returns>
         <remarks>To be added.</remarks>
       </Docs>

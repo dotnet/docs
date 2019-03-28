@@ -1403,7 +1403,7 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
 ## Remarks  
  If there is nothing to cancel, nothing occurs. However, if there is a command in process, and the attempt to cancel fails, no exception is generated.  
   
- In some, rare, cases, if you call <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> then call <xref:System.Data.SqlClient.SqlDataReader.Close%2A> (implicitily or explicitly) before calling <xref:System.Data.SqlClient.SqlCommand.Cancel%2A>, and then call <xref:System.Data.SqlClient.SqlCommand.Cancel%2A>, the cancel command will not be sent to SQL Server and the result set can continue to stream after you call <xref:System.Data.SqlClient.SqlConnection.Close%2A>. To avoid this, make sure that you call <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> before closing the reader or connection.  
+ In some rare cases, if you call <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A>, then call <xref:System.Data.SqlClient.SqlDataReader.Close%2A> (implicitly or explicitly) before calling <xref:System.Data.SqlClient.SqlCommand.Cancel%2A>, and then call <xref:System.Data.SqlClient.SqlCommand.Cancel%2A>, the cancel command will not be sent to SQL Server and the result set can continue to stream after you call <xref:System.Data.SqlClient.SqlConnection.Close%2A>. To avoid this, make sure that you call <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> before closing the reader or connection.  
   
    
   

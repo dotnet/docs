@@ -423,12 +423,12 @@
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property to change.</param>
-        <summary>Rejects any changes made to the property with the given name since the property was last loaded, attached, saved, or changes were accepted. The orginal value of the property is stored and the property will no longer be marked as modified.</summary>
+        <summary>Rejects any changes made to the property with the given name since the property was last loaded, attached, saved, or changes were accepted. The original value of the property is stored and the property will no longer be marked as modified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the result is that no properties of the entity are marked as modified, then the entity will be marked as Unchanged. Changes to properties can only rejected for entities that are in the Modified or Unchanged state. Calling this method for entities in other states (Added, Deleted, or Detached) will result in an exception being thrown. Rejecting changes to properties of an Unchanged entity or unchanged properties of a Modifed is a no-op.  
+ If the result is that no properties of the entity are marked as modified, then the entity will be marked as Unchanged. Changes to properties can only rejected for entities that are in the Modified or Unchanged state. Calling this method for entities in other states (Added, Deleted, or Detached) will result in an exception being thrown. Rejecting changes to properties of an Unchanged entity or unchanged properties of a Modified is a no-op.  
   
  ]]></format>
         </remarks>

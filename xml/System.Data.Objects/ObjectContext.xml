@@ -1474,7 +1474,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.ObjectContext.ExecuteFunction%2A> method is a helper method that is used to execute stored procedures or functions that are defined in the data source and expressed in the conceptual model. The Entity Data Model tools generate a method for each  in the conceptual model. These methods call a strongly-typed `ExecuteFunction` to return a typed <xref:System.Data.Objects.ObjectResult%601>. For more information, see [Application Code using Stored Procedures (Enity Framework)](https://msdn.microsoft.com/library/d13dd33f-fcf9-4e86-bd00-74bc31521536).  
+ The <xref:System.Data.Objects.ObjectContext.ExecuteFunction%2A> method is a helper method that is used to execute stored procedures or functions that are defined in the data source and expressed in the conceptual model. The Entity Data Model tools generate a method for each [FunctionImport Element](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#functionimport-element-csdl) in the conceptual model. These methods call a strongly-typed `ExecuteFunction` to return a typed <xref:System.Data.Objects.ObjectResult%601>. For more information, see [Application Code using Stored Procedures (Entity Framework)](https://docs.microsoft.com/previous-versions/cc716795(v=vs.90)).  
   
  All parameters for the function are required in the parameters array and all types are checked against the metadata for the import function, including the type of the function itself. `null` values are permitted for CLR value types. Parameter validation is performed by the provider.  
   
@@ -1535,7 +1535,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.ObjectContext.ExecuteFunction%2A> method is a helper method that is used to execute stored procedures or functions that are defined in the data source and expressed in conceptual model. The Entity Data Model tools generate a method for each  in the conceptual model. These methods call a strongly-typed `ExecuteFunction` to return a typed <xref:System.Data.Objects.ObjectResult%601>. For more information, see [Application Code using Stored Procedures (Enity Framework)](https://msdn.microsoft.com/library/d13dd33f-fcf9-4e86-bd00-74bc31521536).  
+ The <xref:System.Data.Objects.ObjectContext.ExecuteFunction%2A> method is a helper method that is used to execute stored procedures or functions that are defined in the data source and expressed in conceptual model. The Entity Data Model tools generate a method for each [FunctionImport Element](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#functionimport-element-csdl) in the conceptual model. These methods call a strongly-typed `ExecuteFunction` to return a typed <xref:System.Data.Objects.ObjectResult%601>. For more information, see [Application Code using Stored Procedures (Entity Framework)](https://docs.microsoft.com/previous-versions/cc716795(v=vs.90)).  
   
  All parameters for the function are required in the parameters array and all types are checked against the metadata for the import function, including the type of the function itself. `null` values are permitted for CLR value types. Parameter validation is performed by the provider.  
   

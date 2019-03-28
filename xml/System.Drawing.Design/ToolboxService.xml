@@ -1546,7 +1546,7 @@
       <Docs>
         <param name="serializedObject">The object to inspect.</param>
         <param name="host">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> that is making this request.</param>
-        <summary>Gets a value indicating whether the specified object is a serialized toolbox item byusing the specified designer host.</summary>
+        <summary>Gets a value indicating whether the specified object is a serialized toolbox item by using the specified designer host.</summary>
         <returns>
           <see langword="true" /> if the object contains a toolbox item object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

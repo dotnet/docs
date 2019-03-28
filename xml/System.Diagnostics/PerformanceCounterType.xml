@@ -307,7 +307,7 @@ The following are the formulas used by some of the counters that represent calcu
       </ReturnValue>
       <MemberValue>4195584</MemberValue>
       <Docs>
-        <summary>A difference counter that shows the change in the measured attribute between the two most recent sample intervals. It is the same as the <see langword="CounterDelta32" /> counter type except that is uses larger fields to accomodate larger values.</summary>
+        <summary>A difference counter that shows the change in the measured attribute between the two most recent sample intervals. It is the same as the <see langword="CounterDelta32" /> counter type except that is uses larger fields to accommodate larger values.</summary>
       </Docs>
     </Member>
     <Member MemberName="CounterMultiBase">

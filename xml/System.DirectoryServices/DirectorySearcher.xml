@@ -690,7 +690,7 @@ DirectoryEntry entry = new DirectoryEntry("LDAP://CN=users,DC=fabrikam,DC=com");
 // Create a DirectorySearcher object.  
 DirectorySearcher mySearcher = new DirectorySearcher(entry);  
 // Set DerefAlias to Always.  
-src.DerefAlias = DerefenceAlias.Always;  
+src.DerefAlias = DereferenceAlias.Always;  
 //Use the FindAll method to get search results.  
 SearchResultCollection res = src.FindAll();  
   

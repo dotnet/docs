@@ -811,7 +811,7 @@
  </Customers>  
 ```  
   
- Use the <xref:System.Data.DataColumn.%23ctor%2A> constructor that contains the `type` argument to specificy how the <xref:System.Data.DataColumn> is mapped when its <xref:System.Data.DataSet> is transformed to an XML document.  
+ Use the <xref:System.Data.DataColumn.%23ctor%2A> constructor that contains the `type` argument to specify how the <xref:System.Data.DataColumn> is mapped when its <xref:System.Data.DataSet> is transformed to an XML document.  
   
  The <xref:System.Data.DataColumn.ColumnMapping%2A> property corresponds to the constructor argument `type`.  
   

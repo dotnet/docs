@@ -1046,7 +1046,7 @@ db.SubmitChanges()
         <Parameter Name="asModified" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="entities">The collection of entities to be attched.</param>
+        <param name="entities">The collection of entities to be attached.</param>
         <param name="asModified">
           <see langword="true" /> to attach the entities as modified; <see langword="false" /> to attach the entities as unmodified.</param>
         <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>

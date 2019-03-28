@@ -523,7 +523,7 @@
         <Parameter Name="searchedForString" Type="System.Data.Common.CommandTrees.DbExpression" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="searchedString">An expression that specifies the string to search for any occurence of **searchedForString**.</param>
+        <param name="searchedString">An expression that specifies the string to search for any occurrence of **searchedForString**.</param>
         <param name="searchedForString">An expression that specifies the string to search for in **searchedString**.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Contains' function with the specified arguments, which must each have a string result type. The result type of the expression is Boolean.</summary>
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether or not **searchedForString** occurs within **searchedString**.</returns>
@@ -1467,7 +1467,7 @@
         <param name="toReplace">An expression that specifies the string that is replaced.</param>
         <param name="replacement">An expression that specifies the replacement string.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Replace' function with the specified arguments, which must each have a string result type. The result type of the expression is also string.</summary>
-        <returns>A new DbFunctionExpression than returns a new string based on **stringArgument** where every occurence of **toReplace** is replaced by **replacement**.</returns>
+        <returns>A new DbFunctionExpression than returns a new string based on **stringArgument** where every occurrence of **toReplace** is replaced by **replacement**.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">**stringArgument** **toReplace** **replacement**</exception>
         <exception cref="T:System.ArgumentException">**stringArgument** **toReplace** **replacement**</exception>

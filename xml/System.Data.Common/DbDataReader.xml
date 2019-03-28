@@ -636,8 +636,8 @@
 ## Remarks  
   
 ```  
-private static void GetDataTypes(String connectiongString) {       
-   using (SqlConnection conn = new SqlConnection(connectiongString)) {  
+private static void GetDataTypes(String connectionString) {       
+   using (SqlConnection conn = new SqlConnection(connectionString)) {  
       String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course]";  
       using (DbCommand command = new SqlCommand(queryString, conn)) {  
          conn.Open();               
@@ -1334,8 +1334,8 @@ private static void GetDataTypes(String connectiongString) {
 ## Remarks  
   
 ```  
-private static void GetCredits(String connectiongString) {  
-   using (SqlConnection conn = new SqlConnection(connectiongString)) {  
+private static void GetCredits(String connectionString) {  
+   using (SqlConnection conn = new SqlConnection(connectionString)) {  
       String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course]";   
       using (DbCommand command = new SqlCommand(queryString, conn)) {  
          conn.Open();   

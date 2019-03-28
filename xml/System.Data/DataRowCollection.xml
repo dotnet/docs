@@ -483,7 +483,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets a <see cref="T:System.Data.DataRow" /> using the specified <see cref="P:System.Data.DataTable.PrimaryKey" /> value.</summary>
-        <remarks>Peformance should be an O(log n) operation.</remarks>
+        <remarks>Performance should be an O(log n) operation.</remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="Find">

@@ -1,9 +1,10 @@
 ---
 title: EXCEPINFO Structure (stdole)
-ms.date: 023/16/2019
+ms.date: 03/28/2019
 topic_type:
   - "apiref"
-
+api_name:
+  - "stdole.EXCEPINFO"
 api_location:
   - "stdole.dll"
 api_type:
@@ -14,6 +15,7 @@ api_type:
 ```csharp
 public struct EXCEPINFO
 ```
+
 ## Requirements
 
 **Namespace:** `stdole`

@@ -15,6 +15,7 @@ api_type:
 ```csharp
 public struct DISPPARAMS
 ```
+
 ## Requirements
 
 **Namespace:** `stdole`

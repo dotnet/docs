@@ -177,7 +177,7 @@ When you are developing a custom design-time experience, it will be necessary to
 
 2. In the "MarqueeControlLibrary Property Pages" dialog box, select the **Debug** page.
 
-3. In the **Start Action** section, select **Start External Program**. You will be debugging a separate instance of Visual Studio, so click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/creating-a-wf-control-design-time-features/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button to browse for the Visual Studio IDE. The name of the executable file is devenv.exe, and if you installed to the default location, its path is %programfiles%\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe.
+3. In the **Start Action** section, select **Start External Program**. You will be debugging a separate instance of Visual Studio, so click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/creating-a-wf-control-design-time-features/visual-studio-ellipsis-button.png)) button to browse for the Visual Studio IDE. The name of the executable file is devenv.exe, and if you installed to the default location, its path is %programfiles%\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe.
 
 4. Click OK to close the dialog box.
 

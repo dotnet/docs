@@ -24,7 +24,7 @@ ms.assetid: d9ce3040-3e21-4e2d-80ae-b430982b2db8
   
 1.  Select the <xref:System.Windows.Forms.ToolBar> control.  
   
-2.  In the **Properties** window, click the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property to select it and click the **Ellipsis** (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/how-to-add-buttons-to-a-toolbar-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button to open the **ToolBarButton Collection Editor**.  
+2.  In the **Properties** window, click the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property to select it and click the **Ellipsis** (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/how-to-add-buttons-to-a-toolbar-control-using-the-designer/visual-studio-ellipsis-button.png)) button to open the **ToolBarButton Collection Editor**.  
   
 3.  Use the **Add** and **Remove** buttons to add and remove buttons from the <xref:System.Windows.Forms.ToolBar> control.  
   

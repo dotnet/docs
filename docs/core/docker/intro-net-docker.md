@@ -31,7 +31,7 @@ The [relationship between Docker containers, images, and registries](../../stand
 
 ### Dockerfile
 
-A **Dockerfile** is a file that defines a set of instructions describing how to create an image. Each instruction in the **Dockerfile** creates a layer in the image. When you rebuild the image, only the layers that have changed are rebuilt. The **Dockerfile** can be distributed to others and allows them to recreate the image on their own system.
+A **Dockerfile** is a file that defines a set of instructions that creates an image. Each instruction in the **Dockerfile** creates a layer in the image. When you rebuild the image, only the layers that have changed are rebuilt. The **Dockerfile** can be distributed to others and allows them to recreate the image on their own system.
 
 ## .NET Core images
 

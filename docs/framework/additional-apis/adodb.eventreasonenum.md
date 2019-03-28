@@ -3,7 +3,8 @@ title: EventReason Enumeration (adodb)
 ms.date: 023/16/2019
 topic_type:
   - "apiref"
-
+api_name:
+  - "adodb.EventReason"
 api_location:
   - "adodb.dll"
 api_type:

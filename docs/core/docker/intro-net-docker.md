@@ -25,7 +25,9 @@ A container is a runnable instance of an image. As you build your image, you dep
 
 ### Registries
 
-Container registries are repositories of container images. Docker has a public registry hosted at the [Docker Hub](https://hub.docker.com/) that you can use. .NET Core related images are listed at the Docker Hub.
+Container registries are repositories of container images. You can base your images on a registry image. You can create containers directly from an image in a registry. 
+
+Docker has a public registry hosted at the [Docker Hub](https://hub.docker.com/) that you can use. [.NET Core related images](https://hub.docker.com/_/microsoft-dotnet-core/) are listed at the Docker Hub. 
 
 The [relationship between Docker containers, images, and registries](../../standard/microservices-architecture/container-docker-introduction/docker-containers-images-registries.md) is an important concept when [architecting and building containerized applications or microservices](../../standard/microservices-architecture/architect-microservice-container-applications/index.md). This approach greatly shortens the time between development and deployment.
 
@@ -41,7 +43,7 @@ Microsoft provides images that are tailored for specific scenarios. For example,
 
 ## Azure services
 
-There are various Azure services that support containers. You can create a Docker image that has your application in it and deploy it to one of the following services:
+Various Azure services support containers. You create a Docker image for your application and deploy it to one of the following services:
 
 * [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/)\
 Scale and orchestrate Linux containers using Kubernetes.

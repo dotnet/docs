@@ -19,7 +19,7 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
 
  MVVM is an application pattern that isolates the user interface from the underlying business logic. You can implement the model and view model classes in a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] project in Visual Studio 2012, and then create views that are customized for different platforms. This approach enables you to write the data model and business logic only once, and use that code from .NET Framework, Silverlight, Windows Phone, and [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, as shown in the following illustration.
 
- ![Portable with MVVM diagram](./media/using-portable-class-library-with-model-view-view-model/mvvm-share-assemblies-across-platforms.png "Use Portable Class Library with MVVM to share assemblies across platforms")
+ ![Shows the Portable Class Library with MVVM sharing assemblies across platforms.](./media/using-portable-class-library-with-model-view-view-model/mvvm-share-assemblies-across-platforms.png)
 
  This topic does not provide general information about the MVVM pattern. It only provides information about how to use [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] to implement MVVM. For more information about MVVM, see the [MVVM Quickstart Using the Prism Library 5.0 for WPF](https://docs.microsoft.com/previous-versions/msp-n-p/gg430857(v=pandp.40)).
 

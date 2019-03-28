@@ -4,6 +4,9 @@
   - name: Arithmetic operators
     href: arithmetic-operators.md
     displayName: ++, --, +, -, *, /, %
+  - name: Equality operators
+    href: equality-operators.md
+    displayName: ==, !=
   - name: "[] Operator"
     href: index-operator.md
   - name: () Operator
@@ -55,9 +58,9 @@
   - name: ">> Operator"
     href: right-shift-operator.md
   - name: == Operator
-    href: equality-comparison-operator.md
+    href: equality-operators.md#equality-operator-
   - name: "!= Operator"
-    href: not-equal-operator.md
+    href: equality-operators.md#inequality-operator-
   - name: <= Operator
     href: less-than-equal-operator.md
   - name: ">= Operator"

@@ -16,6 +16,7 @@ api_type:
 public interface StdFont : Font, 
 	FontEvents_Event
 ```
+
 ## Requirements
 
 **Namespace:** `stdole`

@@ -39,7 +39,7 @@ A **Dockerfile** is a file that defines a set of instructions that creates an im
 
 Official .NET Core Docker images are available at the [Microsoft .NET Core Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet-core/). Each repository contains multiple images for different combinations of the .NET (SDK or Runtime) and OS that you can use. 
 
-Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) provides images that are built for running ASP.NET Core apps in production.
+Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) provides images that are built for running ASP.NET Core apps in production. You can use images that include only the Runtime, omitting the SDK so that you can mirror a production environment.
 
 ## Azure services
 

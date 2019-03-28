@@ -20,7 +20,7 @@ Because the Windows Forms <xref:System.Windows.Forms.TreeView> control displays 
   
 1.  Select the <xref:System.Windows.Forms.TreeView> control.  
   
-2.  In the **Properties** window, click the **Ellipsis** (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/add-and-remove-nodes-with-wf-treeview-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) button next to the <xref:System.Windows.Forms.TreeView.Nodes%2A> property.  
+2.  In the **Properties** window, click the **Ellipsis** (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/add-and-remove-nodes-with-wf-treeview-control-using-the-designer/visual-studio-ellipsis-button.png)) button next to the <xref:System.Windows.Forms.TreeView.Nodes%2A> property.  
   
      The **TreeNode Editor** appears.  
   

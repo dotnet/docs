@@ -30,7 +30,7 @@ Specifies the character encoding and message versioning used for text-based XML 
 |---------------|-----------------|  
 |maxReadPoolSize|An integer that specifies how many messages can be read simultaneously without allocating new readers. Larger pool sizes make the system more tolerant to activity spikes at the cost of a larger working set. The default is 64.|  
 |maxWritePoolSize|An integer that specifies how many messages can be sent simultaneously without allocating new writers. Larger pool sizes make the system more tolerant to activity spikes at the cost of a larger working set. The default is 16.|  
-|messageVersion|Specifies the SOAP version of the messages sent using the binding. Valid values are<br /><br /> -   Soap11Addressing10<br />-   Soap12Addressing10<br /><br /> The default is Soap12Addressing10. This attribute is of type <xref:System.ServiceModel.Channels.MessageVersion>.|  
+|messageVersion|Specifies the SOAP version of the messages sent using the binding. Valid values are<br /><br /> -   Soap11Addressing10<br />-   Soap12Addressing10<br />-   Soap11<br />-  Soap12<br /> The default is Soap12Addressing10. This attribute is of type <xref:System.ServiceModel.Channels.MessageVersion>.|  
 |writeEncoding|Specifies the character set encoding to be used for emitting messages on the binding. Valid values are<br /><br /> -   UnicodeFffeTextEncoding: Unicode BigEndian encoding<br />-   Utf16TextEncoding: Unicode encoding<br />-   Utf8TextEncoding: 8-bit encoding<br /><br /> The default is Utf8TextEncoding. This attribute is of type <xref:System.Text.Encoding>.|  
   
 ### Child Elements  

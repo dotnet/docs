@@ -169,17 +169,17 @@ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], connections
 
 The following screenshot shows the attachment points that become visible when an activity is dragged from the toolbox.
 
-![Flowchart start node showing autoconnect points](./media/whats-new-in-wf-in-dotnet/auto-connect-points-start-node.png "Start node showing the attachments points visible when an activity is dragged from the toolbox")
+![Flowchart start node showing auto-connect points](./media/whats-new-in-wf-in-dotnet/auto-connect-points-start-node.png)
 
 Activities can also be dragged onto connections between flowchart nodes and states to auto-insert the node between two other nodes. The following screenshot shows the highlighted connecting line where activities can be dragged from the toolbox and dropped.
 
-![Auto&#45;insert handle for dropping activities](./media/whats-new-in-wf-in-dotnet/auto-insert-connecting-line.png "Auto-insert a node between two other nodes.")
+![Auto-insert handle for dropping activities](./media/whats-new-in-wf-in-dotnet/auto-insert-connecting-line.png)
 
 ### <a name="BKMK_Annotations"></a> Designer Annotations
 
 To facilitate developing larger workflows, the designer now supports adding annotations to help keep track of the design process. Annotation can be added to activities, states, flowchart nodes, variables and arguments. The following screenshot shows the context menu used to add annotations to the designer.
 
-![Annotation context menu](./media/whats-new-in-wf-in-dotnet/designer-annotations-context-menu.png "Context menu for adding annotations")
+![Screenshot showing a menu for adding annotations.](./media/whats-new-in-wf-in-dotnet/designer-annotations-context-menu.png)
 
 ### Debugging states
 
@@ -227,7 +227,7 @@ State machine workflows were introduced as part of the .NET Framework 4, version
 
 The following screenshot shows the completed state machine workflow from the [Getting Started Tutorial](getting-started-tutorial.md) step [How to: Create a State Machine Workflow](how-to-create-a-state-machine-workflow.md).
 
-![Completed State Machine Workflow](./media/whats-new-in-wf-in-dotnet/getting-started-tutorial-complete-state-machine-workflow.jpg "Completed state machine workflow from the Getting Started Tutorial")
+![Completed state machine workflow from the Getting Started Tutorial](./media/whats-new-in-wf-in-dotnet/getting-started-tutorial-complete-state-machine-workflow.jpg)
 
 For more information on creating state machine workflows, see [State Machine Workflows](state-machine-workflows.md).
 

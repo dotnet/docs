@@ -35,7 +35,7 @@ This example shows how to specify the position of a tooltip on the screen.
  
  The following image shows tooltip placement by using the Placement and PlacementRectangle properties:   
 
- ![Diagram showing ToolTip placement by using a placement rectangle.](./media/how-to-position-a-tooltip/tooltip-placement-rectangle-property.png)  
+ ![Diagram showing ToolTip placement by using a PlacementRectangle property.](./media/how-to-position-a-tooltip/tooltip-placement-rectangle-property.png)  
  
  The following image shows tooltip placement by using the Placement, PlacementRectangle, and Offset properties:   
   

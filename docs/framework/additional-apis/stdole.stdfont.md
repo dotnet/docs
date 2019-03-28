@@ -3,7 +3,6 @@ title: StdFont Interface (stdole)
 ms.date: 03/28/2019
 topic_type:
   - "apiref"
-```suggestion
 api_name:
   - "stdole.StdFont"
 api_location:

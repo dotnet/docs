@@ -1,6 +1,6 @@
 ---
 title: DISPPARAMS Structure (stdole)
-ms.date: 023/16/2019
+ms.date: 03/16/2019
 topic_type:
   - "apiref"
 

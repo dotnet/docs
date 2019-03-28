@@ -18,7 +18,7 @@ The Windows Forms <xref:System.Windows.Forms.ListView> control can display multi
   
 1.  In the **Properties** window, set the control's <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View.Details>.  
   
-2.  In the **Properties** window, click the **Ellipsis** button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/how-to-add-columns-to-the-windows-forms-listview-control-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) next to the <xref:System.Windows.Forms.ListView.Columns%2A> property.  
+2.  In the **Properties** window, click the **Ellipsis** button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/how-to-add-columns-to-the-windows-forms-listview-control-using-the-designer/visual-studio-ellipsis-button.png)) next to the <xref:System.Windows.Forms.ListView.Columns%2A> property.  
   
      The **ColumnHeader Collection Editor** appears.  
   

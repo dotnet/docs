@@ -56,10 +56,10 @@ async Task<int> AccessTheWebAsync()
 
  Pay close attention to the `await` operator. It suspends `AccessTheWebAsync`;
  
-    - `AccessTheWebAsync` can't continue until `getStringTask` is complete.  
-    - Meanwhile, control returns to the caller of `AccessTheWebAsync`.  
-    - Control resumes here when `getStringTask` is complete.   
-    - The `await` operator then retrieves the `string `result from `getStringTask`.  
+- `AccessTheWebAsync` can't continue until `getStringTask` is complete.  
+- Meanwhile, control returns to the caller of `AccessTheWebAsync`.  
+- Control resumes here when `getStringTask` is complete.   
+- The `await` operator then retrieves the `string `result from `getStringTask`.  
 
  The return statement specifies an integer result. Any methods that are awaiting `AccessTheWebAsync` retrieve the length value.  
 

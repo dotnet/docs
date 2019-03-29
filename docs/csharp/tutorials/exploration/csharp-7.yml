@@ -106,9 +106,6 @@ items:
 
     The above won't compile because `number` isn't assigned in the `else` branch. It's only assigned in the `true` branch of the `if` statement.
 
-    > [!NOTE]
-    > There is an [issue](https://github.com/dotnet/try/issues/175) where you may get incorrect output in the preceding example.
-
     The `is` expression type pattern is useful when you have a small number of types to test against. Often, you may need to test multiple types. That requires the pattern matching `switch` statement.
 
 - title: Pattern matching in the switch statement
@@ -158,32 +155,11 @@ items:
   content: |
     This feature enables algorithms that use and return references to variables defined elsewhere. One example is with large matrices and finding a single location with certain characteristics. One method would return the two indices a single location in the matrix:
 
-    ```csharp
-    public class Program
-    {
-        private static (int i, int j) Find(int[,] matrix, Func<int, bool> predicate)
-        {
-            for (int i = 0; i < matrix.GetLength(0); i++)
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                    if (predicate(matrix[i, j]))
-                        return (i, j);
-            return (-1, -1); // Not found
-        }
+    [!code-csharp[EverythingByValue](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#EverythingByValue "return indices by value")]
 
-        public static void Main()
-        {
-            int[,] sourceMatrix = new int[10, 10];
-            for (int x = 0; x < 10; x++)
-                for (int y = 0; y < 10; y++)
-                    sourceMatrix[x, y] = x * 10 + y;
+    You can test this method using the following code:
 
-            var indices = Find(sourceMatrix, (val) => val == 42);
-            Console.WriteLine(indices);
-            sourceMatrix[indices.i, indices.j] = 24;        
-        }
-
-    }
-    ```
+    [!code-csharp[TestByValue](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#TestByValue "test code for return indices by value")]
 
     
     This `Find` method returns the indices to the item in the matrix. That leads callers to write code that uses those indices to dereference the matrix and modify a single element. You'd rather write a method that returns a *reference* to the element of the matrix that you want to change.
@@ -193,7 +169,7 @@ items:
     Start by modifying the `Find` method declaration so that it returns a `ref int` instead of a tuple.
     
     ```csharp
-    private static ref int Find(int[,] matrix, Func<int, bool> predicate)
+    ref int Find(int[,] matrix, Func<int, bool> predicate)
     ```
     
     Modify the return statement to return the item at the correct indices:
@@ -214,7 +190,7 @@ items:
     return ref matrix[i,j];
     ```
 
-    Now that the method returns a reference to the integer value in the matrix, you need to modify where it's called. The `var` declaration means that `valItem` is now an `int` rather than a tuple. Change the calling code in the `Main` method to the following:
+    Now that the method returns a reference to the integer value in the matrix, you need to modify where it's called. The `var` declaration means that `valItem` is now an `int` rather than a tuple. Change the calling code to the following:
 
     ```csharp
     var valItem = Find(matrix, (val) => val == 42);
@@ -226,22 +202,9 @@ items:
     The second `WriteLine` statement in the example above prints out the value `42`, not `24`. The variable `valItem` is an `int`, not a `ref int`. The `var` keyword enables the compiler to specify the type but will not implicitly
     add the `ref` modifier. Instead, the value referred to by the `ref return` is *copied* to the variable on the left-hand side of the assignment. The variable is not a `ref` local.
 
-    In order to modify the returned reference, you need to add the `ref` modifier to the local variable declaration and before the call to `Find` to make the variable a reference when the return value is a reference. Modify the `Main` method in your browser to match the following:
+    In order to modify the returned reference, you need to add the `ref` modifier to the local variable declaration and before the call to `Find` to make the variable a reference when the return value is a reference. Modify the test code in your browser to match the following:
 
-    ```csharp
-    public static void Main()
-    {
-        int[,] sourceMatrix = new int[10, 10];
-        for (int x = 0; x < 10; x++)
-            for (int y = 0; y < 10; y++)
-                sourceMatrix[x, y] = x * 10 + y;
-
-        ref var item = ref Find(sourceMatrix, (val) => val == 42);
-        Console.WriteLine(item);
-        item = 24;
-        Console.WriteLine(sourceMatrix[4, 2]);
-    }
-    ```
+    [!code-csharp[EverythingByValue](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#TestByValue "test code for return object by reference")]
 
     Now, the second `WriteLine` statement in the example above prints out the value `24`, indicating that the storage in the matrix has been modified. The local variable has been declared with the `ref` modifier, and it will take a `ref` return. You must initialize a `ref` variable when it is declared; you cannot split the declaration and the initialization.
 

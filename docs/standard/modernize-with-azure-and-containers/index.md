@@ -7,7 +7,7 @@ ms.date: 04/28/2018
 ---
 # Modernize existing .NET applications with Azure cloud and Windows Containers (2nd edition)
 
-![cover image](./media/cover.png)
+![Cover image of the Modernize .NET applications guide.](./media/index/web-application-guide-cover-image.png)
 
 PUBLISHED BY  
 Microsoft Press and Microsoft DevDiv  

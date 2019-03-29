@@ -165,7 +165,7 @@ Next, add the following `<ItemGroup>` node to your project. Each statement inclu
   </ItemGroup>
 ```
 
-Next, include another `<ItemGroup>` node that contains a `<Page>` entry for every `xaml` file in your project except the `App.xaml` file. These point to all of the will contain all of the windows, pages, and resources that are **xaml** format. You cannot use a glob pattern here and must add an entry for every file and indicate the `<Generator>` used.
+Next, include another `<ItemGroup>` node that contains a `<Page>` entry for every **xaml** file in your project except the **App.xaml** file. These contain all of the windows, pages, and resources that are in **xaml** format. You cannot use a glob pattern here and must add an entry for every file and indicate the `<Generator>` used.
 
 ```xml
   <ItemGroup>

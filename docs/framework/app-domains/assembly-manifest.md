@@ -16,7 +16,7 @@ Every assembly, whether static or dynamic, contains a collection of data that de
   
  The following illustration shows the different ways the manifest can be stored.  
   
- ![Diagram that shows assembly types.](./media/assembly-manifest/assembly-types-diagram.gif)  
+ ![Diagram that shows the manifest in a single-file assembly and multifile assembly configuration.](./media/assembly-manifest/assembly-types-diagram.gif)  
   
  For an assembly with one associated file, the manifest is incorporated into the PE file to form a single-file assembly. You can create a multifile assembly with a standalone manifest file or with the manifest incorporated into one of the PE files in the assembly.  
   

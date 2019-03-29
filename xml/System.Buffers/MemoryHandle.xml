@@ -14,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -56,16 +57,17 @@ A `MemoryHandle` instance represents a handle to a pinned block of memory. It is
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="pointer" Type="System.Void*" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="handle" Type="System.Runtime.InteropServices.GCHandle" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="pinnable" Type="System.Buffers.IPinnable" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="pointer" Type="System.Void*" />
+        <Parameter Name="handle" Type="System.Runtime.InteropServices.GCHandle" />
+        <Parameter Name="pinnable" Type="System.Buffers.IPinnable" />
       </Parameters>
       <Docs>
         <param name="pointer">A pointer to memory.</param>
@@ -95,6 +97,7 @@ A `MemoryHandle` instance represents a handle to a pinned block of memory. It is
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -121,9 +124,10 @@ A `MemoryHandle` instance represents a handle to a pinned block of memory. It is
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>

@@ -11,6 +11,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -81,6 +82,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -89,7 +91,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value" Type="T" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the value to add to the hash code.</typeparam>
@@ -112,6 +114,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -120,8 +123,8 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value" Type="T" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the value to add to the hash code.</typeparam>
@@ -151,6 +154,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -159,7 +163,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <TypeParameter Name="T1" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value1" Type="T1" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value1" Type="T1" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the value to add the hash code.</typeparam>
@@ -185,6 +189,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -194,8 +199,8 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <TypeParameter Name="T2" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value1" Type="T1" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T2" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value1" Type="T1" />
+        <Parameter Name="value2" Type="T2" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
@@ -221,6 +226,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -231,9 +237,9 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <TypeParameter Name="T3" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value1" Type="T1" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T2" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value3" Type="T3" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value1" Type="T1" />
+        <Parameter Name="value2" Type="T2" />
+        <Parameter Name="value3" Type="T3" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
@@ -261,6 +267,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -272,10 +279,10 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <TypeParameter Name="T4" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value1" Type="T1" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T2" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value3" Type="T3" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value4" Type="T4" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value1" Type="T1" />
+        <Parameter Name="value2" Type="T2" />
+        <Parameter Name="value3" Type="T3" />
+        <Parameter Name="value4" Type="T4" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
@@ -305,6 +312,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -317,11 +325,11 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <TypeParameter Name="T5" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value1" Type="T1" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T2" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value3" Type="T3" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value4" Type="T4" Index="3" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value5" Type="T5" Index="4" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value1" Type="T1" />
+        <Parameter Name="value2" Type="T2" />
+        <Parameter Name="value3" Type="T3" />
+        <Parameter Name="value4" Type="T4" />
+        <Parameter Name="value5" Type="T5" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
@@ -353,6 +361,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -366,12 +375,12 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <TypeParameter Name="T6" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value1" Type="T1" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T2" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value3" Type="T3" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value4" Type="T4" Index="3" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value5" Type="T5" Index="4" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value6" Type="T6" Index="5" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value1" Type="T1" />
+        <Parameter Name="value2" Type="T2" />
+        <Parameter Name="value3" Type="T3" />
+        <Parameter Name="value4" Type="T4" />
+        <Parameter Name="value5" Type="T5" />
+        <Parameter Name="value6" Type="T6" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
@@ -405,6 +414,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -419,13 +429,13 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <TypeParameter Name="T7" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value1" Type="T1" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T2" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value3" Type="T3" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value4" Type="T4" Index="3" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value5" Type="T5" Index="4" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value6" Type="T6" Index="5" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value7" Type="T7" Index="6" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value1" Type="T1" />
+        <Parameter Name="value2" Type="T2" />
+        <Parameter Name="value3" Type="T3" />
+        <Parameter Name="value4" Type="T4" />
+        <Parameter Name="value5" Type="T5" />
+        <Parameter Name="value6" Type="T6" />
+        <Parameter Name="value7" Type="T7" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
@@ -461,6 +471,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -476,14 +487,14 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <TypeParameter Name="T8" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value1" Type="T1" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T2" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value3" Type="T3" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value4" Type="T4" Index="3" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value5" Type="T5" Index="4" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value6" Type="T6" Index="5" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value7" Type="T7" Index="6" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value8" Type="T8" Index="7" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value1" Type="T1" />
+        <Parameter Name="value2" Type="T2" />
+        <Parameter Name="value3" Type="T3" />
+        <Parameter Name="value4" Type="T4" />
+        <Parameter Name="value5" Type="T5" />
+        <Parameter Name="value6" Type="T6" />
+        <Parameter Name="value7" Type="T7" />
+        <Parameter Name="value8" Type="T8" />
       </Parameters>
       <Docs>
         <typeparam name="T1">The type of the first value to combine into the hash code.</typeparam>
@@ -521,12 +532,13 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2;netstandard-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2;netstandard-2.1">
           <AttributeName>System.Obsolete("HashCode is a mutable struct and should not be compared with other HashCodes.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -534,7 +546,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="obj">Ignored.</param>
@@ -558,12 +570,13 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2;netstandard-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2;netstandard-2.1">
           <AttributeName>System.Obsolete("HashCode is a mutable struct and should not be compared with other HashCodes. Use ToHashCode to retrieve the computed hash code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -592,6 +605,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

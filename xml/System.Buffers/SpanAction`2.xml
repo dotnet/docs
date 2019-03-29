@@ -11,6 +11,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -24,8 +25,8 @@
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="span" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-    <Parameter Name="arg" Type="TArg" Index="1" FrameworkAlternate="netcore-3.0" />
+    <Parameter Name="span" Type="System.Span&lt;T&gt;" />
+    <Parameter Name="arg" Type="TArg" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>

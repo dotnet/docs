@@ -17,6 +17,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
@@ -28,10 +29,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netstandard-2.0;netcore-2.2;netcore-3.0">
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netstandard-2.0;netcore-2.2;netcore-3.0;netstandard-2.1">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Event | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property | System.AttributeTargets.ReturnValue | System.AttributeTargets.Struct)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-4.8;netcore-2.2;netcore-3.0">
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-1.1">
@@ -92,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -134,6 +136,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

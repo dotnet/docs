@@ -11,13 +11,14 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
-    <Parameter Name="hostName" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0" />
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="hostName" Type="System.String" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate</ReturnType>

@@ -13,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -39,6 +40,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -47,8 +49,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -75,6 +77,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -83,8 +86,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -111,6 +114,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -119,11 +123,11 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="startIndex" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" Index="3" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="endIndex" Type="System.Int32" RefType="out" Index="4" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
+        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" />
+        <Parameter Name="startIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>

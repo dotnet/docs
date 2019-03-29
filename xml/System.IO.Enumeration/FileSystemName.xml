@@ -11,6 +11,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,14 +35,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="name" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="ignoreCase" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="expression" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="name" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="expression">To be added.</param>
@@ -65,14 +67,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="name" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="ignoreCase" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="expression" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="name" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="expression">To be added.</param>
@@ -97,12 +100,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expression" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="expression" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="expression">To be added.</param>

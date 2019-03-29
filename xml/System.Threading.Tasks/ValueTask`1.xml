@@ -17,6 +17,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
@@ -30,10 +31,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1">
       <AttributeName>System.Runtime.CompilerServices.AsyncMethodBuilder(typeof(System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0">
+    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -78,9 +79,10 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="task" Type="System.Threading.Tasks.Task&lt;TResult&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="task" Type="System.Threading.Tasks.Task&lt;TResult&gt;" />
       </Parameters>
       <Docs>
         <param name="task">The task.</param>
@@ -109,9 +111,10 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="result" Type="TResult" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="result" Type="TResult" />
       </Parameters>
       <Docs>
         <param name="result">The result.</param>
@@ -136,10 +139,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="source" Type="System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
-        <Parameter Name="token" Type="System.Int16" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="source" Type="System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
+        <Parameter Name="token" Type="System.Int16" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -168,6 +172,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -199,12 +204,13 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="continueOnCapturedContext">
@@ -272,12 +278,13 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="obj">The object to compare with the current object.</param>
@@ -310,12 +317,13 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="other" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" />
       </Parameters>
       <Docs>
         <param name="other">The object to compare with the current object.</param>
@@ -345,6 +353,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ValueTaskAwaiter&lt;TResult&gt;</ReturnType>
@@ -376,6 +385,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -407,6 +417,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -438,6 +449,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -469,6 +481,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -500,6 +513,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -531,13 +545,14 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" />
+        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" />
       </Parameters>
       <Docs>
         <param name="left">The first value to compare.</param>
@@ -568,13 +583,14 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" />
+        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" />
       </Parameters>
       <Docs>
         <param name="left">The first value to compare.</param>
@@ -602,6 +618,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;TResult&gt;</ReturnType>
@@ -633,6 +650,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
@@ -671,6 +689,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

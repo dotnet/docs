@@ -13,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -22,7 +23,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2;netstandard-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -48,9 +49,10 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="memory">To be added.</param>
@@ -79,9 +81,10 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" />
       </Parameters>
       <Docs>
         <param name="array">The array from which to create a read-only sequence.</param>
@@ -105,11 +108,12 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="array">The array from which to create the read-only sequence.</param>
@@ -135,12 +139,13 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="startIndex" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="endIndex" Type="System.Int32" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" />
+        <Parameter Name="startIndex" Type="System.Int32" />
+        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" />
+        <Parameter Name="endIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="startSegment">To be added.</param>
@@ -167,6 +172,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -192,6 +198,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
@@ -218,6 +225,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
@@ -244,6 +252,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;+Enumerator</ReturnType>
@@ -271,12 +280,13 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="offset" Type="System.Int64" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="offset" Type="System.Int64" />
       </Parameters>
       <Docs>
         <param name="offset">To be added.</param>
@@ -301,13 +311,14 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="offset" Type="System.Int64" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="origin" Type="System.SequencePosition" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="offset" Type="System.Int64" />
+        <Parameter Name="origin" Type="System.SequencePosition" />
       </Parameters>
       <Docs>
         <param name="offset">To be added.</param>
@@ -333,6 +344,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -359,6 +371,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -386,6 +399,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -412,12 +426,13 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int64" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int64" />
       </Parameters>
       <Docs>
         <param name="start">The start index at which to begin this slice.</param>
@@ -442,12 +457,13 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.SequencePosition" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.SequencePosition" />
       </Parameters>
       <Docs>
         <param name="start">The starting (inclusive) <see cref="T:System.SequencePosition" /> at which to begin this slice.</param>
@@ -472,13 +488,14 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin this slice.</param>
@@ -504,13 +521,14 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="end" Type="System.SequencePosition" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="end" Type="System.SequencePosition" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin this slice.</param>
@@ -536,13 +554,14 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int64" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int64" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int64" />
+        <Parameter Name="length" Type="System.Int64" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin this slice.</param>
@@ -568,13 +587,14 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int64" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="end" Type="System.SequencePosition" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int64" />
+        <Parameter Name="end" Type="System.SequencePosition" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin this slice.</param>
@@ -600,13 +620,14 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.SequencePosition" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.SequencePosition" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="start">The starting (inclusive) <see cref="T:System.SequencePosition" /> at which to begin this slice.</param>
@@ -632,13 +653,14 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.SequencePosition" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int64" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.SequencePosition" />
+        <Parameter Name="length" Type="System.Int64" />
       </Parameters>
       <Docs>
         <param name="start">The starting (inclusive) <see cref="T:System.SequencePosition" /> at which to begin this slice.</param>
@@ -664,13 +686,14 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.SequencePosition" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="end" Type="System.SequencePosition" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.SequencePosition" />
+        <Parameter Name="end" Type="System.SequencePosition" />
       </Parameters>
       <Docs>
         <param name="start">The starting (inclusive) <see cref="T:System.SequencePosition" /> at which to begin this slice.</param>
@@ -696,6 +719,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
@@ -722,6 +746,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -749,14 +774,15 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="position" Type="System.SequencePosition" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="advance" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="position" Type="System.SequencePosition" RefType="ref" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" />
+        <Parameter Name="advance" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="position">The current sequence position.</param>

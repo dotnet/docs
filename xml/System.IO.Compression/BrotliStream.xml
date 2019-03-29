@@ -11,6 +11,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.IO.Stream</BaseTypeName>
@@ -34,10 +35,11 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="compressionLevel" Type="System.IO.Compression.CompressionLevel" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="compressionLevel" Type="System.IO.Compression.CompressionLevel" />
       </Parameters>
       <Docs>
         <param name="stream">The stream to compress.</param>
@@ -59,10 +61,11 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="mode" Type="System.IO.Compression.CompressionMode" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="mode" Type="System.IO.Compression.CompressionMode" />
       </Parameters>
       <Docs>
         <param name="stream">The stream to compress.</param>
@@ -84,11 +87,12 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="compressionLevel" Type="System.IO.Compression.CompressionLevel" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="leaveOpen" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="compressionLevel" Type="System.IO.Compression.CompressionLevel" />
+        <Parameter Name="leaveOpen" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="stream">The stream to compress.</param>
@@ -112,11 +116,12 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="mode" Type="System.IO.Compression.CompressionMode" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="leaveOpen" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="mode" Type="System.IO.Compression.CompressionMode" />
+        <Parameter Name="leaveOpen" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="stream">The stream to compress.</param>
@@ -140,6 +145,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -164,16 +170,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="asyncState" Type="System.Object" Index="4" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
+        <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which data will be read.</param>
@@ -204,16 +211,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="asyncState" Type="System.Object" Index="4" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
+        <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which data will be written.</param>
@@ -245,6 +253,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -270,6 +279,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -295,6 +305,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -320,12 +331,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="disposing">
@@ -348,6 +360,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
@@ -373,12 +386,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
         <param name="asyncResult">The reference to the pending asynchronous request to finish.</param>
@@ -406,12 +420,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
         <param name="asyncResult">The object that represents the asynchronous call.</param>
@@ -434,6 +449,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -485,6 +501,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -510,6 +527,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -563,14 +581,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="buffer">The array used to store decompressed bytes.</param>
@@ -630,15 +649,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="buffer">To be added.</param>
@@ -664,13 +684,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="offset" Type="System.Int64" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="origin" Type="System.IO.SeekOrigin" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="offset" Type="System.Int64" />
+        <Parameter Name="origin" Type="System.IO.SeekOrigin" />
       </Parameters>
       <Docs>
         <param name="offset">The location in the stream.</param>
@@ -695,12 +716,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Int64" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
         <param name="value">The length of the stream.</param>
@@ -749,14 +771,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer containing the data to compress.</param>
@@ -808,15 +831,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="buffer">To be added.</param>

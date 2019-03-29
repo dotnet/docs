@@ -13,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -39,12 +40,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="text" Type="System.String" RefType="this" />
       </Parameters>
       <Docs>
         <param name="text">To be added.</param>
@@ -67,13 +69,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="startIndex" Type="System.Index" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="text" Type="System.String" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="startIndex" Type="System.Index" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="text">To be added.</param>
@@ -99,13 +102,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="text" Type="System.String" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="text">To be added.</param>
@@ -128,13 +132,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="range" Type="System.Range" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="text" Type="System.String" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="range" Type="System.Range" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="text">To be added.</param>
@@ -160,14 +165,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="text" Type="System.String" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="text">To be added.</param>
@@ -194,6 +200,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -202,7 +209,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -228,6 +235,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -236,7 +244,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" RefType="this" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -262,6 +270,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -270,8 +279,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -296,6 +305,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -304,8 +314,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="startIndex" Type="System.Index" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="startIndex" Type="System.Index" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -332,6 +342,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -340,8 +351,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -365,6 +376,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -373,8 +385,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="range" Type="System.Range" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="range" Type="System.Range" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -401,6 +413,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -409,9 +422,9 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -439,6 +452,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -447,9 +461,9 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -477,12 +491,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="text" Type="System.String" RefType="this" />
       </Parameters>
       <Docs>
         <param name="text">To be added.</param>
@@ -507,13 +522,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="text" Type="System.String" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="text">To be added.</param>
@@ -539,14 +555,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="text" Type="System.String" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="text">To be added.</param>
@@ -573,6 +590,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -581,7 +599,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -607,6 +625,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -615,7 +634,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" RefType="this" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -639,6 +658,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -647,8 +667,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="startIndex" Type="System.Index" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="startIndex" Type="System.Index" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -675,6 +695,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -683,8 +704,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -708,6 +729,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -716,8 +738,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="range" Type="System.Range" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="range" Type="System.Range" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -742,6 +764,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -750,8 +773,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="startIndex" Type="System.Index" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="startIndex" Type="System.Index" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -778,6 +801,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -786,8 +810,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -811,6 +835,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -819,8 +844,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="range" Type="System.Range" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="range" Type="System.Range" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -847,6 +872,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -855,9 +881,9 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -885,6 +911,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -893,9 +920,9 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" RefType="this" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -923,6 +950,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -931,8 +959,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparable" Type="System.IComparable&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="comparable" Type="System.IComparable&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -959,6 +987,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -967,8 +996,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparable" Type="System.IComparable&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="comparable" Type="System.IComparable&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -995,6 +1024,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1008,8 +1038,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparable" Type="TComparable" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="comparable" Type="TComparable" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1037,6 +1067,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1050,8 +1081,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparable" Type="TComparable" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="comparable" Type="TComparable" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1079,6 +1110,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1092,9 +1124,9 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparer" Type="TComparer" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="comparer" Type="TComparer" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1123,6 +1155,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1136,9 +1169,9 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparer" Type="TComparer" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="comparer" Type="TComparer" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1167,14 +1200,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="other" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparisonType" Type="System.StringComparison" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="other" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -1201,14 +1235,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparisonType" Type="System.StringComparison" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -1311,6 +1346,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1319,8 +1355,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="T[]" RefType="this" />
+        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1346,6 +1382,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1354,8 +1391,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="T[]" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="destination" Type="System.Span&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="T[]" RefType="this" />
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1381,14 +1418,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparisonType" Type="System.StringComparison" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -1415,6 +1453,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1427,8 +1466,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1455,6 +1494,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1467,8 +1507,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1551,14 +1591,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="other" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparisonType" Type="System.StringComparison" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="other" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -1585,14 +1626,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparisonType" Type="System.StringComparison" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -1619,6 +1661,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1631,8 +1674,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1659,6 +1702,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1671,8 +1715,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1699,6 +1743,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1711,8 +1756,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1739,6 +1784,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1751,8 +1797,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1779,6 +1825,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1791,8 +1838,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1819,6 +1866,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1831,8 +1879,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1859,6 +1907,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1871,9 +1920,9 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value0" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value1" Type="T" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1901,6 +1950,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1913,9 +1963,9 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value0" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value1" Type="T" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1943,6 +1993,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1955,10 +2006,10 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value0" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value1" Type="T" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
+        <Parameter Name="value2" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1987,6 +2038,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1999,10 +2051,10 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value0" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value1" Type="T" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
+        <Parameter Name="value2" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2031,12 +2083,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -2093,6 +2146,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2105,8 +2159,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2133,6 +2187,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2145,8 +2200,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2173,6 +2228,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2185,8 +2241,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2213,6 +2269,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2225,8 +2282,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2253,6 +2310,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2265,8 +2323,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2293,6 +2351,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2305,8 +2364,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2333,6 +2392,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2345,9 +2405,9 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value0" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value1" Type="T" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2375,6 +2435,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2387,9 +2448,9 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value0" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value1" Type="T" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2417,6 +2478,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2429,10 +2491,10 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value0" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value1" Type="T" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
+        <Parameter Name="value2" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2461,6 +2523,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2473,10 +2536,10 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value0" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value1" Type="T" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value2" Type="T" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value0" Type="T" />
+        <Parameter Name="value1" Type="T" />
+        <Parameter Name="value2" Type="T" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2505,6 +2568,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2513,8 +2577,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2541,6 +2605,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2549,8 +2614,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2577,6 +2642,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2585,9 +2651,9 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="elementOffset" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" />
+        <Parameter Name="elementOffset" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2615,6 +2681,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2623,9 +2690,9 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="elementOffset" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" />
+        <Parameter Name="elementOffset" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2653,6 +2720,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2661,7 +2729,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2686,6 +2754,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2698,8 +2767,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2726,6 +2795,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2738,8 +2808,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2766,6 +2836,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2778,8 +2849,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2806,6 +2877,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2818,8 +2890,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2846,14 +2918,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="comparisonType" Type="System.StringComparison" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -2880,6 +2953,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2892,8 +2966,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2920,6 +2994,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2932,8 +3007,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2960,14 +3035,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -2994,13 +3070,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -3026,14 +3103,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -3060,13 +3138,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -3092,12 +3171,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3122,13 +3202,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="trimChar" Type="System.Char" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="trimChar" Type="System.Char" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3154,13 +3235,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="trimChars" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="trimChars" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3186,12 +3268,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3216,13 +3299,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="trimChar" Type="System.Char" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="trimChar" Type="System.Char" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3248,13 +3332,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="trimChars" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="trimChars" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3280,12 +3365,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3310,13 +3396,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="trimChar" Type="System.Char" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="trimChar" Type="System.Char" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3342,13 +3429,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="trimChars" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+        <Parameter Name="trimChars" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>

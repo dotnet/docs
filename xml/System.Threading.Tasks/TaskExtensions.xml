@@ -20,6 +20,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -50,13 +51,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredAsyncDisposable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.IAsyncDisposable" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="System.IAsyncDisposable" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -83,6 +85,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;</ReturnType>
@@ -91,8 +94,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -125,6 +128,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -181,6 +185,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -226,6 +231,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;</ReturnType>
@@ -234,8 +240,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>

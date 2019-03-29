@@ -14,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -46,12 +47,13 @@ The <xref:System.Buffers.MemoryManager%601> class implements the `IPinnable` int
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.MemoryHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="elementIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="elementIndex">The offset to the element within the memory buffer to which the returned <see cref="T:System.Buffers.MemoryHandle" /> points.</param>
@@ -88,6 +90,7 @@ Call this method to indicate that the <xref:System.Buffers.IPinnable> object can
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -11,6 +11,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -21,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2;netstandard-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -44,9 +45,10 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="protocol" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="protocol" Type="System.Byte[]" />
       </Parameters>
       <Docs>
         <param name="protocol">To be added.</param>
@@ -68,9 +70,10 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="protocol" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="protocol" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="protocol">To be added.</param>
@@ -95,12 +98,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Net.Security.SslApplicationProtocol" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="other" Type="System.Net.Security.SslApplicationProtocol" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
@@ -123,12 +127,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
@@ -151,6 +156,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -176,6 +182,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Security.SslApplicationProtocol</ReturnType>
@@ -199,6 +206,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Security.SslApplicationProtocol</ReturnType>
@@ -222,13 +230,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Net.Security.SslApplicationProtocol" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="right" Type="System.Net.Security.SslApplicationProtocol" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="left" Type="System.Net.Security.SslApplicationProtocol" />
+        <Parameter Name="right" Type="System.Net.Security.SslApplicationProtocol" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -252,13 +261,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Net.Security.SslApplicationProtocol" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="right" Type="System.Net.Security.SslApplicationProtocol" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="left" Type="System.Net.Security.SslApplicationProtocol" />
+        <Parameter Name="right" Type="System.Net.Security.SslApplicationProtocol" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -282,6 +292,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;System.Byte&gt;</ReturnType>
@@ -306,6 +317,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

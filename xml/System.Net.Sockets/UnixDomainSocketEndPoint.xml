@@ -11,6 +11,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Net.EndPoint</BaseTypeName>
@@ -35,9 +36,10 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="path">To be added.</param>

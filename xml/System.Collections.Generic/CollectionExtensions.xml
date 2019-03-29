@@ -12,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -37,6 +38,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -46,8 +48,8 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="dictionary" Type="System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="key" Type="TKey" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="dictionary" Type="System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;" RefType="this" />
+        <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
         <typeparam name="TKey">To be added.</typeparam>
@@ -74,6 +76,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -83,9 +86,9 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="dictionary" Type="System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="key" Type="TKey" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="defaultValue" Type="TValue" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="dictionary" Type="System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;" RefType="this" />
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="defaultValue" Type="TValue" />
       </Parameters>
       <Docs>
         <typeparam name="TKey">To be added.</typeparam>
@@ -113,6 +116,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -122,9 +126,9 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="key" Type="TKey" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="TValue" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;" RefType="this" />
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="value" Type="TValue" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TKey">To be added.</typeparam>
@@ -152,6 +156,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -161,9 +166,9 @@
         <TypeParameter Name="TValue" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="key" Type="TKey" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="TValue" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;" RefType="this" />
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
         <typeparam name="TKey">To be added.</typeparam>

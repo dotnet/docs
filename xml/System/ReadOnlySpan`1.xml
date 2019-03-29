@@ -15,6 +15,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -24,10 +25,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
+    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
+    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -59,9 +60,10 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" />
       </Parameters>
       <Docs>
         <param name="array">The array from which to create the <see cref="T:System.ReadOnlySpan`1" />.</param>
@@ -88,15 +90,16 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="pointer" Type="System.Void*" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="pointer" Type="System.Void*" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="pointer">A pointer to the starting address of a specified number of <paramref name="T" /> objects in memory.</param>
@@ -129,11 +132,12 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="array">The array from which to create the <see cref="T:System.ReadOnlySpan`1" />.</param>
@@ -172,12 +176,13 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="destination">The span to copy items into.</param>
@@ -207,6 +212,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
@@ -235,12 +241,13 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("Equals() on ReadOnlySpan will always throw an exception. Use == instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -248,7 +255,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="obj">Not supported.</param>
@@ -277,6 +284,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;+Enumerator</ReturnType>
@@ -308,12 +316,13 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("GetHashCode() on ReadOnlySpan will always throw an exception.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -346,6 +355,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -374,9 +384,10 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-3.0;netstandard-2.1">
           <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
@@ -384,7 +395,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         <ReturnType>T&amp;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="index" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -411,9 +422,10 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
@@ -421,7 +433,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         <ReturnType>T&amp;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get.</param>
@@ -449,12 +461,13 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="range">To be added.</param>
@@ -481,6 +494,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -509,13 +523,14 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.ReadOnlySpan&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="right" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="left" Type="System.ReadOnlySpan&lt;T&gt;" />
+        <Parameter Name="right" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="left">The first span to compare.</param>
@@ -533,11 +548,11 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.ReadOnlySpan`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; arraySegment) cil managed" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (arraySegment As ArraySegment(Of T)) As ReadOnlySpan(Of T)" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ReadOnlySpan&lt;T&gt;(ArraySegment&lt;T&gt; arraySegment);" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="C#" Value="public static implicit operator ReadOnlySpan&lt;T&gt; (ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.ReadOnlySpan`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; segment) cil managed" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public static implicit operator ReadOnlySpan&lt;T&gt; (ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.ReadOnlySpan`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; segment) cil managed" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.op_Implicit(System.ArraySegment{`0})~System.ReadOnlySpan{`0}" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (segment As ArraySegment(Of T)) As ReadOnlySpan(Of T)" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ReadOnlySpan&lt;T&gt;(ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (segment As ArraySegment(Of T)) As ReadOnlySpan(Of T)" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ReadOnlySpan&lt;T&gt;(ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       <MemberSignature Language="F#" Value="static member op_Implicit : ArraySegment&lt;'T&gt; -&gt; ReadOnlySpan&lt;'T&gt;" Usage="System.ReadOnlySpan&lt;'T&gt;.op_Implicit segment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -550,12 +565,13 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="segment">The array segment to be converted to a <see cref="T:System.ReadOnlySpan`1" />.</param>
@@ -582,12 +598,13 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" />
       </Parameters>
       <Docs>
         <param name="array">The array to convert to a <see cref="T:System.ReadOnlySpan`1" />.</param>
@@ -614,13 +631,14 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.ReadOnlySpan&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="right" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="left" Type="System.ReadOnlySpan&lt;T&gt;" />
+        <Parameter Name="right" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="left">The first read-only span to compare.</param>
@@ -650,12 +668,13 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startIndex" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="startIndex" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="startIndex">To be added.</param>
@@ -682,12 +701,13 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin the slice.</param>
@@ -714,12 +734,13 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="range">To be added.</param>
@@ -746,13 +767,14 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin this slice.</param>
@@ -782,6 +804,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
@@ -812,6 +835,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -843,12 +867,13 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="destination">The target of the copy operation.</param>

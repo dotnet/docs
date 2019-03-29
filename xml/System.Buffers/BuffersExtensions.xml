@@ -13,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -154,6 +155,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -162,8 +164,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="writer" Type="System.Buffers.IBufferWriter&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="writer" Type="System.Buffers.IBufferWriter&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the items in the <see cref="T:System.ReadOnlySpan`1" />.</typeparam>

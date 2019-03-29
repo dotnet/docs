@@ -11,6 +11,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
@@ -45,11 +46,12 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="directory" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="transform" Type="System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindTransform" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="options" Type="System.IO.EnumerationOptions" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="directory" Type="System.String" />
+        <Parameter Name="transform" Type="System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindTransform" />
+        <Parameter Name="options" Type="System.IO.EnumerationOptions" />
       </Parameters>
       <Docs>
         <param name="directory">To be added.</param>
@@ -76,6 +78,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;TResult&gt;</ReturnType>
@@ -101,6 +104,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindPredicate</ReturnType>
@@ -125,6 +129,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;+FindPredicate</ReturnType>
@@ -151,6 +156,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>

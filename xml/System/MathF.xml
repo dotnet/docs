@@ -12,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -43,12 +44,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -72,12 +74,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -100,12 +103,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -129,12 +133,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -157,12 +162,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -186,12 +192,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -215,13 +222,14 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="y" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="x" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="y">To be added.</param>
@@ -245,12 +253,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -329,12 +338,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -358,12 +368,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -417,12 +428,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -446,12 +458,13 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -475,6 +488,7 @@ The static fields and methods of the `MathF` class correspond to those of the <x
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
@@ -506,12 +520,13 @@ The value of this constant is 2.71828175.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -535,12 +550,13 @@ The value of this constant is 2.71828175.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -596,13 +612,14 @@ The value of this constant is 2.71828175.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="y" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -655,12 +672,13 @@ The value of this constant is 2.71828175.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -684,13 +702,14 @@ The value of this constant is 2.71828175.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="y" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -715,12 +734,13 @@ The value of this constant is 2.71828175.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -772,13 +792,14 @@ The value of this constant is 2.71828175.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="y" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -833,13 +854,14 @@ The value of this constant is 2.71828175.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="y" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -894,6 +916,7 @@ The value of this constant is 2.71828175.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
@@ -925,13 +948,14 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="y" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -956,12 +980,13 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -985,13 +1010,14 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="digits" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="digits" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -1016,13 +1042,14 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="mode" Type="System.MidpointRounding" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="mode" Type="System.MidpointRounding" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -1047,14 +1074,15 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="digits" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="mode" Type="System.MidpointRounding" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="digits" Type="System.Int32" />
+        <Parameter Name="mode" Type="System.MidpointRounding" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -1110,12 +1138,13 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -1139,12 +1168,13 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -1168,12 +1198,13 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -1197,12 +1228,13 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -1226,12 +1258,13 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -1255,12 +1288,13 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>
@@ -1284,12 +1318,13 @@ The value of this field is 3.14159274.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="x">To be added.</param>

@@ -13,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,16 +39,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.OperationStatus</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="utf8" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="bytes" Type="System.Span&lt;System.Byte&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" Index="3" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="isFinalBlock" Type="System.Boolean" Index="4" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="utf8" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="bytes" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+        <Parameter Name="isFinalBlock" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="utf8">The input span that contains UTF-8 encoded text in base 64 that needs to be decoded.</param>
@@ -90,13 +92,14 @@ The return value can be as follows:
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.OperationStatus</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="buffer">The input span that contains the base-64 text data that needs to be decoded.</param>
@@ -134,16 +137,17 @@ This method cannot return the <xref:System.Buffers.OperationStatus.DestinationTo
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.OperationStatus</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="utf8" Type="System.Span&lt;System.Byte&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" Index="3" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="isFinalBlock" Type="System.Boolean" Index="4" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="utf8" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+        <Parameter Name="isFinalBlock" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="bytes">The input span that contains binary data that needs to be encoded.</param>
@@ -187,14 +191,15 @@ This method cannot return <xref:System.Buffers.OperationStatus.InvalidData?displ
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.OperationStatus</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="dataLength" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="dataLength" Type="System.Int32" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="buffer">The input span that contains binary data that needs to be encoded. Because the method performs an in-place conversion, it needs to be large enough to store the result of the operation.</param>
@@ -234,12 +239,13 @@ This method cannot return <xref:System.Buffers.OperationStatus.NeedMoreData?disp
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="length" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="length">To be added.</param>
@@ -266,12 +272,13 @@ This method cannot return <xref:System.Buffers.OperationStatus.NeedMoreData?disp
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="length" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="length">To be added.</param>

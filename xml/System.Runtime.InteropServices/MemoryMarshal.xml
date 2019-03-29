@@ -13,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -39,6 +40,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Byte&gt;</ReturnType>
@@ -53,7 +55,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of items in the read-only span.</typeparam>
@@ -90,6 +92,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;System.Byte&gt;</ReturnType>
@@ -104,7 +107,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of items in the span.</typeparam>
@@ -141,6 +144,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -149,7 +153,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of items in the read-only memory buffer.</typeparam>
@@ -261,6 +265,7 @@ This method must be used with extreme caution. <xref:System.ReadOnlyMemory%601> 
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;TTo&gt;</ReturnType>
@@ -282,7 +287,7 @@ This method must be used with extreme caution. <xref:System.ReadOnlyMemory%601> 
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;TFrom&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;TFrom&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="TFrom">The type of the source span.</typeparam>
@@ -321,6 +326,7 @@ This method is supported only on platforms that support misaligned memory access
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;TTo&gt;</ReturnType>
@@ -342,7 +348,7 @@ This method is supported only on platforms that support misaligned memory access
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;TFrom&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;TFrom&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="TFrom">The type of the source span.</typeparam>
@@ -382,6 +388,7 @@ This method is supported only on platforms that support misaligned memory access
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -390,9 +397,9 @@ This method is supported only on platforms that support misaligned memory access
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the array.</typeparam>
@@ -431,6 +438,7 @@ The array must already be pinned before this method is called, and that array mu
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
@@ -439,8 +447,8 @@ The array must already be pinned before this method is called, and that array mu
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="reference" Type="T" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="reference" Type="T" RefType="ref" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the data items.</typeparam>
@@ -478,6 +486,7 @@ This method can be useful if part of a managed object represents a fixed array.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -486,8 +495,8 @@ This method can be useful if part of a managed object represents a fixed array.
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="reference" Type="T" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="reference" Type="T" RefType="ref" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the data items.</typeparam>
@@ -524,6 +533,7 @@ This method can be useful if part of a managed object represents a fixed array.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
@@ -532,7 +542,7 @@ This method can be useful if part of a managed object represents a fixed array.
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of items in the span.</typeparam>
@@ -565,6 +575,7 @@ If the read-only span is empty, this method returns a reference to the location 
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
@@ -573,7 +584,7 @@ If the read-only span is empty, this method returns a reference to the location 
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of items in the span.</typeparam>
@@ -607,6 +618,7 @@ If the span is empty, this method returns a reference to the location where the 
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -621,7 +633,7 @@ If the span is empty, this method returns a reference to the location where the 
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the item to retrieve from the read-only span.</typeparam>
@@ -659,6 +671,7 @@ If the span is empty, this method returns a reference to the location where the 
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
@@ -667,7 +680,7 @@ If the span is empty, this method returns a reference to the location where the 
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
@@ -701,6 +714,7 @@ This method allows a read-only memory buffer to be used in existing APIs that re
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -709,8 +723,8 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of items in the read-only memory buffer.</typeparam>
@@ -751,8 +765,8 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="manager" Type="TManager" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="manager" Type="TManager" RefType="out" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
@@ -794,10 +808,10 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="manager" Type="TManager" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" RefType="out" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="manager" Type="TManager" RefType="out" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" RefType="out" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
@@ -828,15 +842,16 @@ This method allows a read-only memory buffer to be used in existing APIs that re
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="text" Type="System.String" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" RefType="out" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;System.Char&gt;" />
+        <Parameter Name="text" Type="System.String" RefType="out" />
+        <Parameter Name="start" Type="System.Int32" RefType="out" />
+        <Parameter Name="length" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="memory">Read-only memory containing a block of characters.</param>
@@ -865,6 +880,7 @@ This method allows a read-only memory buffer to be used in existing APIs that re
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -879,8 +895,8 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="T" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the structure to retrieve.</typeparam>
@@ -918,6 +934,7 @@ This method allows a read-only memory buffer to be used in existing APIs that re
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -932,8 +949,8 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="T" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="T" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the structure.</typeparam>
@@ -971,6 +988,7 @@ This method allows a read-only memory buffer to be used in existing APIs that re
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -985,8 +1003,8 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="value" Type="T" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="T" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the structure.</typeparam>

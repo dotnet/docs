@@ -14,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -41,6 +42,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -58,8 +60,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="TAwaiter">To be added.</typeparam>
@@ -87,6 +89,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -104,8 +107,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="TAwaiter">To be added.</typeparam>
@@ -133,6 +136,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder</ReturnType>
@@ -160,12 +164,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exception" Type="System.Exception" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
         <param name="exception">To be added.</param>
@@ -190,6 +195,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -217,12 +223,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stateMachine" Type="System.Runtime.CompilerServices.IAsyncStateMachine" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="stateMachine" Type="System.Runtime.CompilerServices.IAsyncStateMachine" />
       </Parameters>
       <Docs>
         <param name="stateMachine">To be added.</param>
@@ -247,6 +254,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -259,7 +267,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
         <typeparam name="TStateMachine">To be added.</typeparam>
@@ -285,6 +293,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>

@@ -15,6 +15,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -24,10 +25,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
+    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
+    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -105,9 +106,10 @@ This allocation and copy operation can be eliminated by using either `Span<T>` o
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" />
       </Parameters>
       <Docs>
         <param name="array">The array from which to create the <see cref="T:System.Span`1" /> object. </param>
@@ -140,15 +142,16 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="pointer" Type="System.Void*" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="pointer" Type="System.Void*" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="pointer">A pointer to the starting address of a specified number of bytes in memory.</param>
@@ -185,11 +188,12 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="array">The source array.</param>
@@ -230,6 +234,7 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -264,12 +269,13 @@ The `Clear` method sets the items in the <xref:System.Span%601> object to their 
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="destination">The destination <see cref="System.Span`1" /> object.</param>
@@ -303,6 +309,7 @@ This method copies all of `source` to `destination` even if `source` and `destin
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -331,12 +338,13 @@ This method copies all of `source` to `destination` even if `source` and `destin
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("Equals() on Span will always throw an exception. Use == instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -344,7 +352,7 @@ This method copies all of `source` to `destination` even if `source` and `destin
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="obj">Not supported.</param>
@@ -384,12 +392,13 @@ To compare two <xref:System.Span%601> objects for equality, use the <xref:System
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="T" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
         <param name="value">The value to assign to each element of the span.</param>
@@ -414,6 +423,7 @@ To compare two <xref:System.Span%601> objects for equality, use the <xref:System
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;+Enumerator</ReturnType>
@@ -448,12 +458,13 @@ Instead of calling the <xref:System.Span%601.GetEnumerator%2A> method directly, 
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("GetHashCode() on Span will always throw an exception.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -520,6 +531,7 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -548,12 +560,13 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="index" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -580,12 +593,13 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element.</param>
@@ -613,12 +627,13 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="range">To be added.</param>
@@ -645,6 +660,7 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -673,13 +689,14 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="right" Type="System.Span&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="left" Type="System.Span&lt;T&gt;" />
+        <Parameter Name="right" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="left">The first span to compare.</param>
@@ -701,11 +718,11 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Span`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; arraySegment) cil managed" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (arraySegment As ArraySegment(Of T)) As Span(Of T)" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Span&lt;T&gt;(ArraySegment&lt;T&gt; arraySegment);" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="C#" Value="public static implicit operator Span&lt;T&gt; (ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Span`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; segment) cil managed" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="C#" Value="public static implicit operator Span&lt;T&gt; (ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Span`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; segment) cil managed" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.Span`1.op_Implicit(System.ArraySegment{`0})~System.Span{`0}" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (segment As ArraySegment(Of T)) As Span(Of T)" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Span&lt;T&gt;(ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (segment As ArraySegment(Of T)) As Span(Of T)" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Span&lt;T&gt;(ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       <MemberSignature Language="F#" Value="static member op_Implicit : ArraySegment&lt;'T&gt; -&gt; Span&lt;'T&gt;" Usage="System.Span&lt;'T&gt;.op_Implicit segment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -718,12 +735,13 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="segment">The array segment to be converted to a <see cref="T:System.Span`1" />.</param>
@@ -750,12 +768,13 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="span">The object to convert to a <see cref="T:System.ReadOnlySpan`1" />.</param>
@@ -782,12 +801,13 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="array" Type="T[]" />
       </Parameters>
       <Docs>
         <param name="array">The array to convert to a <see cref="T:System.Span`1" />.</param>
@@ -814,13 +834,14 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="right" Type="System.Span&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="left" Type="System.Span&lt;T&gt;" />
+        <Parameter Name="right" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="left">The first span to compare.</param>
@@ -854,12 +875,13 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startIndex" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="startIndex" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="startIndex">To be added.</param>
@@ -886,12 +908,13 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin the slice.</param>
@@ -918,12 +941,13 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="range">To be added.</param>
@@ -950,13 +974,14 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin this slice.</param>
@@ -986,6 +1011,7 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
@@ -1020,6 +1046,7 @@ This method performs a heap allocation and therefore should be avoided if possib
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1054,12 +1081,13 @@ For a `Span<Char>`, the `ToString` method returns a <xref:System.String> that co
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
         <param name="destination">The target of the copy operation.</param>

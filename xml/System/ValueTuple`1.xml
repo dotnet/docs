@@ -1,10 +1,10 @@
 ﻿<Type Name="ValueTuple&lt;T1&gt;" FullName="System.ValueTuple&lt;T1&gt;">
-  <TypeSignature Language="C#" Value="public struct ValueTuple&lt;T1&gt; : IComparable, IComparable&lt;ValueTuple&lt;T1&gt;&gt;, IEquatable&lt;ValueTuple&lt;T1&gt;&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueTuple`1&lt;T1&gt; extends System.ValueType implements class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IComparable, class System.IComparable`1&lt;valuetype System.ValueTuple`1&lt;!T1&gt;&gt;, class System.IEquatable`1&lt;valuetype System.ValueTuple`1&lt;!T1&gt;&gt;" />
+  <TypeSignature Language="C#" Value="public struct ValueTuple&lt;T1&gt; : IComparable, IComparable&lt;ValueTuple&lt;T1&gt;&gt;, IEquatable&lt;ValueTuple&lt;T1&gt;&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable, System.Runtime.CompilerServices.ITuple" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueTuple`1&lt;T1&gt; extends System.ValueType implements class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IComparable, class System.IComparable`1&lt;valuetype System.ValueTuple`1&lt;!T1&gt;&gt;, class System.IEquatable`1&lt;valuetype System.ValueTuple`1&lt;!T1&gt;&gt;, class System.Runtime.CompilerServices.ITuple" />
   <TypeSignature Language="DocId" Value="T:System.ValueTuple`1" />
-  <TypeSignature Language="VB.NET" Value="Public Structure ValueTuple(Of T1)&#xA;Implements IComparable, IComparable(Of ValueTuple(Of T1)), IEquatable(Of ValueTuple(Of T1)), IStructuralComparable, IStructuralEquatable" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1&gt;&#xA;public value class ValueTuple : IComparable, IComparable&lt;ValueTuple&lt;T1&gt;&gt;, IEquatable&lt;ValueTuple&lt;T1&gt;&gt;, System::Collections::IStructuralComparable, System::Collections::IStructuralEquatable" />
-  <TypeSignature Language="F#" Value="type ValueTuple&lt;'T1&gt; = struct" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ValueTuple(Of T1)&#xA;Implements IComparable, IComparable(Of ValueTuple(Of T1)), IEquatable(Of ValueTuple(Of T1)), IStructuralComparable, IStructuralEquatable, ITuple" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1&gt;&#xA;public value class ValueTuple : IComparable, IComparable&lt;ValueTuple&lt;T1&gt;&gt;, IEquatable&lt;ValueTuple&lt;T1&gt;&gt;, System::Collections::IStructuralComparable, System::Collections::IStructuralEquatable, System::Runtime::CompilerServices::ITuple" />
+  <TypeSignature Language="F#" Value="type ValueTuple&lt;'T1&gt; = struct&#xA;    interface ITuple" />
   <AssemblyInfo>
     <AssemblyName>System.ValueTuple</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,6 +17,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
@@ -44,6 +45,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.IEquatable&lt;System.ValueTuple&lt;T1&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.CompilerServices.ITuple</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -98,6 +102,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -136,6 +141,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -203,6 +209,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -259,6 +266,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -310,6 +318,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -346,6 +355,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -382,6 +392,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -443,6 +454,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -487,6 +499,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -528,6 +541,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -587,6 +601,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -595,7 +610,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="index">The index of the <see langword="ValueTuple" /> element. <paramref name="index" /> must be 0.</param>
@@ -635,6 +650,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -675,6 +691,7 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

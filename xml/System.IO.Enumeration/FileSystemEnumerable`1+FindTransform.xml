@@ -9,6 +9,10 @@
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
   </TypeParameters>
@@ -16,7 +20,7 @@
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Parameters>
-    <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
+    <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" />
   </Parameters>
   <ReturnValue>
     <ReturnType>TResult</ReturnType>

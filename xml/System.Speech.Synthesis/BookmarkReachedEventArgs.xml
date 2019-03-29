@@ -57,7 +57,7 @@ namespace SampleSynthesis
         builder.AppendBookmark("Daytime forecast");  
         builder.AppendText(  
           "Tonight's weather will be cloudy with a 30% chance of showers.");  
-        builder.AppendBookmark("Nightime forecast");  
+        builder.AppendBookmark("Nighttime forecast");  
   
         // Add a handler for the BookmarkReached event.  
         synth.BookmarkReached +=  

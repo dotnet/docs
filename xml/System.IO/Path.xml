@@ -868,7 +868,7 @@ This method obtains the extension of `path` by searching `path` for a period (.)
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
-The returned read-only span contains the characters of the path that follow the last separator in `path`. If the last character in `path` is a volume or directory separator character, the method returns <xref:System.ReadOnlySpan%601.Empty?displayProperty=nameWithtype>. If `path` contains no separator character, the method returns `path`.
+The returned read-only span contains the characters of the path that follow the last separator in `path`. If the last character in `path` is a volume or directory separator character, the method returns <xref:System.ReadOnlySpan%601.Empty?displayProperty=nameWithType>. If `path` contains no separator character, the method returns `path`.
 
          ]]></format>
         </remarks>

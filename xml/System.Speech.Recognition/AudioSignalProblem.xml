@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The ccurredEventArgs.AudioSignalProblem property of the ccurredEventArgs class gets a member of this enumeration when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> or <xref:System.Speech.Recognition.SpeechRecognizer> raises a <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurred> event.  
+ The <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioSignalProblem?displayProperty=nameWithType> property gets a member of this enumeration when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> or <xref:System.Speech.Recognition.SpeechRecognizer> raises a <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurred> event.  
   
    
   

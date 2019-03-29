@@ -78,7 +78,7 @@
   
  <xref:System.Security.Cryptography.RSAParameters> is not encrypted in any way, so you must be careful when you use it with the private key information. In fact, none of the fields that contain private key information can be serialized. If you try to serialize an <xref:System.Security.Cryptography.RSAParameters> structure with a remoting call or by using one of the serializers, you will receive only public key information. If you want to pass private key information, you will have to manually send that data. In all cases, if anyone can derive the parameters, the key that you transmit becomes useless.
 
- **.NET Core 2.1.0 and later**: The serialization restrictions have been removed and all memebers of <xref:System.Security.Cryptography.RSAParameters> are serialized. Care must be excercised when writing or upgrading code against .NET Core 2.1.0 or later, because if anyone can derive or intercept the private key parameters the key and all the information encrypted or signed with it are compromised.
+ **.NET Core 2.1.0 and later**: The serialization restrictions have been removed and all members of <xref:System.Security.Cryptography.RSAParameters> are serialized. Care must be excercised when writing or upgrading code against .NET Core 2.1.0 or later, because if anyone can derive or intercept the private key parameters the key and all the information encrypted or signed with it are compromised.
   
  ]]></format>
     </remarks>

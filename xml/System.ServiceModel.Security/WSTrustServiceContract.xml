@@ -1452,7 +1452,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The WS-Trust Contract exposed by Windows Identity Foundation (WIF) takes a <xref:System.ServiceModel.Channels.Message> in and returns a <xref:System.ServiceModel.Channels.Message> out. But WS-Trust messages expect an RST and return an RSTR/RSTRC. This method fixes the message names with the appropriate WS-Trust messages specified by the XML qualified names in `inputMessageElement` and `outputMessageLement`.  
+ The WS-Trust Contract exposed by Windows Identity Foundation (WIF) takes a <xref:System.ServiceModel.Channels.Message> in and returns a <xref:System.ServiceModel.Channels.Message> out. But WS-Trust messages expect an RST and return an RSTR/RSTRC. This method fixes the message names with the appropriate WS-Trust messages specified by the XML qualified names in `inputMessageElement` and `outputMessageElement`.  
   
  ]]></format>
         </remarks>

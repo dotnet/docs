@@ -139,7 +139,7 @@
       <Docs>
         <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
         <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
-        <summary>Initializes a new instace of the <see cref="T:System.ServiceProcess.TimeoutException" /> class with the specified serialization information and context.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.TimeoutException" /> class with the specified serialization information and context.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is <see langword="null" /> or <see cref="P:System.Exception.HResult" /> is zero (0).</exception>

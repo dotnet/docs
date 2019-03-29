@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Description.MessageDescription> contains the <xref:System.ServiceModel.Description.MessageDescription.Headers%2A> and <xref:System.ServiceModel.Description.MessageDescription.Body%2A> properties to provide get access to these parts of the message. Whether the message is incoming or outgoing is indicated by the <xref:System.ServiceModel.Description.MessageDescription.Direction%2A> property. It also provides an <xref:System.ServiceModel.Description.MessageDescription.Action%2A> property where the URI that indicates the intension of the message may be specified.  
+ The <xref:System.ServiceModel.Description.MessageDescription> contains the <xref:System.ServiceModel.Description.MessageDescription.Headers%2A> and <xref:System.ServiceModel.Description.MessageDescription.Body%2A> properties to provide get access to these parts of the message. Whether the message is incoming or outgoing is indicated by the <xref:System.ServiceModel.Description.MessageDescription.Direction%2A> property. It also provides an <xref:System.ServiceModel.Description.MessageDescription.Action%2A> property where the URI that indicates the intention of the message may be specified.  
   
    
   

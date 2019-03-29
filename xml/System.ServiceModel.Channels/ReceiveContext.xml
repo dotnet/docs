@@ -71,7 +71,7 @@ using (TransactionScope ts = new TransactionScope())
   
 ```  
   
- This is not the recommended pattern for working with T:System.ServiceModel.Channels.RecieveContext. Instead the try/catch block should be placed outside of the transaction scope.  
+ This is not the recommended pattern for working with <xref:System.ServiceModel.Channels.ReceiveContext>. Instead the try/catch block should be placed outside of the transaction scope.  
   
  ]]></format>
         </remarks>

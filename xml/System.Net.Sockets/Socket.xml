@@ -253,9 +253,9 @@
 ## Examples  
  The following code example demonstrates how to create an instance of the <xref:System.Net.Sockets.Socket> class.  
   
- [!code-cpp[Socket_Send_Recieve#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Send_Recieve/CPP/source.cpp#1)]
- [!code-csharp[Socket_Send_Recieve#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Send_Recieve/CS/source.cs#1)]
- [!code-vb[Socket_Send_Recieve#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Send_Recieve/VB/source.vb#1)]  
+ [!code-cpp[Socket_Send_Receive#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Send_Receive/CPP/source.cpp#1)]
+ [!code-csharp[Socket_Send_Receive#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Send_Receive/CS/source.cs#1)]
+ [!code-vb[Socket_Send_Receive#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Send_Receive/VB/source.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -6952,9 +6952,9 @@ The GetHashCode method returns a hash code of this instance. This value can be u
 ## Examples  
  The following receives the data found into `buffer`, and specifies <xref:System.Net.Sockets.SocketFlags.None> for <xref:System.Net.Sockets.SocketFlags>.  
   
- [!code-cpp[Socket_Send_Recieve#4](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Send_Recieve/CPP/source.cpp#4)]
- [!code-csharp[Socket_Send_Recieve#4](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Send_Recieve/CS/source.cs#4)]
- [!code-vb[Socket_Send_Recieve#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Send_Recieve/VB/source.vb#4)]  
+ [!code-cpp[Socket_Send_Receive#4](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Send_Receive/CPP/source.cpp#4)]
+ [!code-csharp[Socket_Send_Receive#4](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Send_Receive/CS/source.cs#4)]
+ [!code-vb[Socket_Send_Receive#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Send_Receive/VB/source.vb#4)]  
   
  ]]></format>
         </remarks>

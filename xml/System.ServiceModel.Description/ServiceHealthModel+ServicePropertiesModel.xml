@@ -147,7 +147,7 @@ A service's concurrency mode specifies whether it supports single- or multi-thre
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
-A service's instance context mode determines how service instances handle calls that are contained in incoming messages. For more information, see <xref:System.ServiceModel.InstanceContextMode?displayPrpoerty=nameWithtype>.
+A service's instance context mode determines how service instances handle calls that are contained in incoming messages. For more information, see <xref:System.ServiceModel.InstanceContextMode?displayProperty=nameWithType>.
 
          ]]></format>
         </remarks>

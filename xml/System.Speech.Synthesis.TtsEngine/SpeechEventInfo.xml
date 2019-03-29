@@ -135,7 +135,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
         <param name="param2">A <see langword="System.IntPtr" /> instance referencing an object. to be passed to the Speech platform when the event requested by the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> to be constructed is generated.  
   
  The type which must be referenced is explicitly defined by the value <paramref name="parameterType" />. The value <see langword="System.IntPtr.Zero" />.</param>
-        <summary>Constucts an appropriate <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" />.</summary>
+        <summary>Constructs an appropriate <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -84,7 +84,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a value that indicates whether the persistence provider may choose not to enlist in the ambient transaction (Transaction.Currnet) when executing this command.</summary>
+        <summary>Returns a value that indicates whether the persistence provider may choose not to enlist in the ambient transaction (Transaction.Current) when executing this command.</summary>
         <value>
           <see langword="true" /> if enlisting in the transaction is optional for this command, otherwise <see langword="false" />.</value>
         <remarks>

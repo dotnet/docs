@@ -6330,7 +6330,7 @@
   
  -or-  
   
- For ANSI plaforms, the address of the first ANSI character.</param>
+ For ANSI platforms, the address of the first ANSI character.</param>
         <summary>Allocates a managed <see cref="T:System.String" /> and copies all characters up to the first null character from a string stored in unmanaged memory into it.</summary>
         <returns>A managed string that holds a copy of the unmanaged string if the value of the <paramref name="ptr" /> parameter is not <see langword="null" />; otherwise, this method returns <see langword="null" />.</returns>
         <remarks>
@@ -6392,7 +6392,7 @@
   
  -or-  
   
- For ANSI plaforms, the address of the first ANSI character.</param>
+ For ANSI platforms, the address of the first ANSI character.</param>
         <param name="len">The number of characters to copy.</param>
         <summary>Allocates a managed <see cref="T:System.String" /> and copies the specified number of characters from a string stored in unmanaged memory into it.</summary>
         <returns>A managed string that holds a copy of the native string if the value of the <paramref name="ptr" /> parameter is not <see langword="null" />; otherwise, this method returns <see langword="null" />.</returns>
@@ -9835,7 +9835,7 @@
   
  <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> copies the contents of `structure` to the pre-allocated block of memory that the `ptr` parameter points to. If `structure` contains reference types that marshal to COM interface pointers (interfaces, classes without layout, and <xref:System.Object?displayProperty=nameWithType>), the managed objects are kept alive with reference counts. All other reference types (for example, strings and arrays) are marshaled to copies. To release these managed or unmanaged objects, you must call the <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A?displayProperty=nameWithType> method before you free the memory block.  
   
- If you use the <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> method to copy a different instance to the memory block at a later time, specify `true` for `fDeleteOld` to remove reference counts for reference types in the previous instance. Otherwise, the managed reference typesand unmanaged copies are effectively leaked.  
+ If you use the <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> method to copy a different instance to the memory block at a later time, specify `true` for `fDeleteOld` to remove reference counts for reference types in the previous instance. Otherwise, the managed reference types and unmanaged copies are effectively leaked.  
   
  The overall pattern for using <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> is as follows:  
   

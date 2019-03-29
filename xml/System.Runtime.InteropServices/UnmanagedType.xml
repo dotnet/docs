@@ -51,7 +51,7 @@
    
   
 ## Examples  
- The following code fragment demonstrates how to declare, in managed source code, an unmanaged interface implemented by a COM component. The <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=nameWithType> attribute prevents the `IMyStorage` interface from being exported back for use by COM. (COM clients should use the existing COM component directly.) In this example, <xref:System.Runtime.InteropServices.MarshalAsAttribute> specifies serveral <xref:System.Runtime.InteropServices.UnmanagedType> members, which represent the types used by the original COM interface.  
+ The following code fragment demonstrates how to declare, in managed source code, an unmanaged interface implemented by a COM component. The <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=nameWithType> attribute prevents the `IMyStorage` interface from being exported back for use by COM. (COM clients should use the existing COM component directly.) In this example, <xref:System.Runtime.InteropServices.MarshalAsAttribute> specifies several <xref:System.Runtime.InteropServices.UnmanagedType> members, which represent the types used by the original COM interface.  
   
  [!code-cpp[ImprovedInteropSnippets#2](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile2.cpp#2)]
  [!code-csharp[ImprovedInteropSnippets#2](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile2.cs#2)]

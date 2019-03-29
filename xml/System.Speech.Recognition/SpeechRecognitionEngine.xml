@@ -2051,7 +2051,7 @@ namespace InProcessRecognizer
   
         completed = false;  
   
-        // This EmulateRecognizeAsync call mathches the grammar  
+        // This EmulateRecognizeAsync call matches the grammar  
         // and generates a SpeechRecognized event.  
         recognizer.EmulateRecognizeAsync("testing testing");  
   

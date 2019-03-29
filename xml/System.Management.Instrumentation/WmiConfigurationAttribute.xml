@@ -310,7 +310,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A WMI namespace is a category within the WMI repository. The commonly-used root/cimv2 namespace houses classes that describe the Common Information Model, Version 2, defined by the Desktop Management Task Force (DMTF) consortium. You should only expose your providers in that namespace if you expanding upon the standand CIM model. Otherwise, you should create an appropriate namespace that makes clear to users the type of WMI classes they can expect to find in the namespace.  
+ A WMI namespace is a category within the WMI repository. The commonly-used root/cimv2 namespace houses classes that describe the Common Information Model, Version 2, defined by the Desktop Management Task Force (DMTF) consortium. You should only expose your providers in that namespace if you expanding upon the standard CIM model. Otherwise, you should create an appropriate namespace that makes clear to users the type of WMI classes they can expect to find in the namespace.  
   
  ]]></format>
         </remarks>

@@ -767,7 +767,7 @@
         <Parameter Name="trusts" Type="System.Security.Policy.ApplicationTrustCollection" />
       </Parameters>
       <Docs>
-        <param name="trusts">An <see cref="T:System.Security.Policy.ApplicationTrustCollection" /> that contains items to be removed from the currentcollection.</param>
+        <param name="trusts">An <see cref="T:System.Security.Policy.ApplicationTrustCollection" /> that contains items to be removed from the current collection.</param>
         <summary>Removes the application trust objects in the specified collection from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

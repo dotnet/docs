@@ -255,7 +255,7 @@ There are two ways to specify how to expose the health endpoint and publish WCF 
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
-This method is invoked by the <xref:System.ServiceModel.Description.ServiceHealthBehaviorBase> instance and is reponsible for crafting the response message to the health endpoint.
+This method is invoked by the <xref:System.ServiceModel.Description.ServiceHealthBehaviorBase> instance and is responsible for crafting the response message to the health endpoint.
 
          ]]></format>
         </remarks>

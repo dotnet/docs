@@ -313,7 +313,7 @@
         <summary>Releases all resources used by the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="usage">
-          <para>lways call the Dispose method before destroying the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</para>
+          <para>Always call the Dispose method before destroying the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</para>
         </block>
       </Docs>
     </Member>
@@ -371,7 +371,7 @@
 ## Remarks  
  In the <xref:System.Net> namespace, an <xref:System.Net.IPEndPoint> represents a network endpoint as an IP address and a port number.  For PNRP, an IP address and port value must be provided for each endpoint.  The maximum number of endpoints that can be provided is ten. Automatic address selection is used when this parameter is `null`.  
   
- If a registration method is used that automatically selects the addresses to register, there is no method to determine theaddresses for which the peer name was registered.  That is, the <xref:System.Net.PeerToPeer.PeerNameRegistration.EndPointCollection%2A> property will not be updated to reflect the addresses selected.  
+ If a registration method is used that automatically selects the addresses to register, there is no method to determine the addresses for which the peer name was registered.  That is, the <xref:System.Net.PeerToPeer.PeerNameRegistration.EndPointCollection%2A> property will not be updated to reflect the addresses selected.  
   
  When a peer name is registered for more than one node, each <xref:System.Net.PeerToPeer.PeerNameRegistration> is distinct and the <xref:System.Net.PeerToPeer.PeerNameRegistration.EndPointCollection%2A> property defined on each registration instance will be different. Also, when a <xref:System.Net.PeerToPeer.PeerNameRegistration.PeerName%2A> is registered into more than one <xref:System.Net.PeerToPeer.PeerNameRegistration.Cloud%2A>, each registration is distinct and the collection of endpoints will usually be different for each instance.  
   

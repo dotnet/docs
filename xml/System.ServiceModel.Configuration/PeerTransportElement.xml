@@ -167,7 +167,7 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">A <see cref="T:System.ServiceModel.Channels.BindingElement" /> to use for initializing this binging configuration instance.</param>
+        <param name="bindingElement">A <see cref="T:System.ServiceModel.Channels.BindingElement" /> to use for initializing this binding configuration instance.</param>
         <summary>Initializes this peer transport binding configuration section with the content of the specified binding element.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -154,7 +154,7 @@
       <Docs>
         <param name="attribRef">The object that is converted.</param>
         <summary>Provides implicit conversion from a pointer to a <see cref="T:System.Printing.IndexedProperties.PrintDateTimeProperty" /> to a <see cref="T:System.DateTime" />.</summary>
-        <returns>The converted PrintDateTimePropety object to a DateTime object.</returns>
+        <returns>The <see cref="T:System.Printing.IndexedProperties.PrintDateTimeProperty" /> object converted to a <see cref="System.DateTime" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

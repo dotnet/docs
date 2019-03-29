@@ -250,7 +250,7 @@
   
  If you create an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber.Exchange> value specified and then create another <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber.Signature> value specified, both keys will be placed in a single container if both objects specify the same key container name.  
   
- To create a key that is compatible with stong-name signing using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class, you must create a <xref:System.Security.Cryptography.KeyNumber.Signature> key pair.  
+ To create a key that is compatible with strong-name signing using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class, you must create a <xref:System.Security.Cryptography.KeyNumber.Signature> key pair.  
   
    
   
@@ -318,7 +318,7 @@
   
  If you create an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber.Exchange> value specified and then create another <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber.Signature> value specified, both keys will be placed in a single container if both objects specify the same key container name.  
   
- To create a key that is compatible with stong-name signing using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class, you must create a <xref:System.Security.Cryptography.KeyNumber.Signature> key pair.  
+ To create a key that is compatible with strong-name signing using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class, you must create a <xref:System.Security.Cryptography.KeyNumber.Signature> key pair.  
   
    
   

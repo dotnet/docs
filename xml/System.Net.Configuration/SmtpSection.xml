@@ -221,7 +221,7 @@
         <ReturnType>System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the pickup directory that will be used by the SMPT client.</summary>
+        <summary>Gets the pickup directory that will be used by the SMTP client.</summary>
         <value>A <see cref="T:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement" /> object that specifies the pickup directory folder.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

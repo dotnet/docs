@@ -147,7 +147,7 @@
   <!-- WIF 4.5 s.im section-->  
   <system.identityModel>  
     <identityConfiguration>  
-      <claimsAuthorizationManager type="MyClaimsAuthorizationManager.SimpleClaimsAuthoirzationManager, MyClaimsAuthorizationManager" />  
+      <claimsAuthorizationManager type="MyClaimsAuthorizationManager.SimpleClaimsAuthorizationManager, MyClaimsAuthorizationManager" />  
       ...  
   
   </system.identityModel>  

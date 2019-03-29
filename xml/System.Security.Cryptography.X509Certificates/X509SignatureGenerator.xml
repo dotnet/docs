@@ -265,7 +265,7 @@
       <Docs>
         <param name="data">The input data for which to produce the signature.</param>
         <param name="hashAlgorithm">The hash algorithm to use to produce the signature.</param>
-        <summary>When overridden in a derived class, produces a signature for the specified data using the specified hash algorithm and encodes the results appropiately for X.509 signature values.</summary>
+        <summary>When overridden in a derived class, produces a signature for the specified data using the specified hash algorithm and encodes the results appropriately for X.509 signature values.</summary>
         <returns>The X.509 signature for the specified data.</returns>
         <remarks>To be added.</remarks>
       </Docs>

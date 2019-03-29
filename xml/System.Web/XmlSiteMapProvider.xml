@@ -242,7 +242,7 @@
      testXmlProvider.Initialize("testProvider", providerAttributes);  
   
      // The BuildSiteMap method is implicitly called when the   
-     // RootNode propety is accessed.  
+     // RootNode property is accessed.  
   
      // Prints "/myvirtualdirectory/WebForm1.aspx"  
      Response.Write(testXmlProvider.RootNode.Url + "<BR>");  

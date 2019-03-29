@@ -831,7 +831,7 @@ On Windows, the `target` parameter specifies whether the environment variable is
   
 ### On macOS and Linux systems
 
-On macOS and Linux, the `GetEnvironmentVariable(String, EnvironmentVariableTarget)` method supports a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithtype> only. Calls with a `target` value of <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithtype> or <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithtype> are not supported and return `null`. 
+On macOS and Linux, the `GetEnvironmentVariable(String, EnvironmentVariableTarget)` method supports a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType> only. Calls with a `target` value of <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> or <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> are not supported and return `null`. 
 
 Per-process environment variables are:
 

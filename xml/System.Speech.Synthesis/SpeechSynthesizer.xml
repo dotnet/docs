@@ -287,7 +287,7 @@ namespace SampleSynthesis
         builder.AppendBookmark("Daytime forecast");  
         builder.AppendText(  
           "Tonight's weather will be cloudy with a 30% chance of showers.");  
-        builder.AppendBookmark("Nightime forecast");  
+        builder.AppendBookmark("Nighttime forecast");  
   
         // Add a handler for the BookmarkReached event.  
         synth.BookmarkReached +=  
@@ -579,7 +579,7 @@ namespace SampleSynthesis
       {  
   
         // Output information about all of the installed voices that  
-        // support the en-US locacale.   
+        // support the en-US locale.   
         Console.WriteLine("Installed voices for the en-US locale:");  
         foreach (InstalledVoice voice in  
           synthesizer.GetInstalledVoices(new CultureInfo("en-US")))  

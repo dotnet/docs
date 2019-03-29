@@ -703,7 +703,7 @@ namespace SampleRecognition
   
         // Start recognition.  
         recognizer.RecognizeAsync();  
-        Console.WriteLine("Starting aynchronous recognition...");  
+        Console.WriteLine("Starting asynchronous recognition...");  
   
         // Keep the console window open.  
         Console.ReadLine();  
@@ -1491,7 +1491,7 @@ private static void DumpGrammarStatus(Grammar item)
       </Parameters>
       <Docs>
         <param name="type">In an assembly, the <see cref="T:System.Type" /> of an object based on <see cref="T:System.Speech.Recognition.Grammar" />.</param>
-        <param name="onInitParameters">Parameters to be passed to an initialization method of the localizedobject based on <see cref="T:System.Speech.Recognition.Grammar" />. This parameter may be null.</param>
+        <param name="onInitParameters">Parameters to be passed to an initialization method of the localized object based on <see cref="T:System.Speech.Recognition.Grammar" />. This parameter may be null.</param>
         <summary>The <see langword="LoadLocalizedGrammarFromType" /> method returns a localized instance of a <see cref="T:System.Speech.Recognition.Grammar" /> object derived from <see cref="T:System.Type" />.</summary>
         <returns>The <see langword="LoadLocalizedGrammarFromType" /> method returns a valid object based on <see cref="T:System.Speech.Recognition.Grammar" />, or <see langword="null" /> if there has been an error.</returns>
         <remarks>

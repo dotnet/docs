@@ -513,7 +513,7 @@
 ## Remarks  
  This property represents the "no-transform" directive in a cache-control header field on an HTTP request or HTTP response.  
   
- When the <xref:System.Net.Http.Headers.CacheControlHeaderValue.NoTransform%2A> is set to `true`, intermediate caches or rpoxies must not change any aspect of the entity body. Implementors of intermediate caches and proxies have found it useful to convert the media type of certain entity bodies. A non-transparent proxy might, for example, convert between image formats in order to save cache space or to reduce the amount of traffic on a slow link. Serious operational problems occur, however, when these transformations are applied to entity bodies intended for certain kinds of applications.  
+ When the <xref:System.Net.Http.Headers.CacheControlHeaderValue.NoTransform%2A> is set to `true`, intermediate caches or proxies must not change any aspect of the entity body. Implementors of intermediate caches and proxies have found it useful to convert the media type of certain entity bodies. A non-transparent proxy might, for example, convert between image formats in order to save cache space or to reduce the amount of traffic on a slow link. Serious operational problems occur, however, when these transformations are applied to entity bodies intended for certain kinds of applications.  
   
  ]]></format>
         </remarks>

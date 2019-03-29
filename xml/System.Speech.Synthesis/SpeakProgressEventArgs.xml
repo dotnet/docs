@@ -79,7 +79,7 @@ namespace SampleSynthesis
       Console.ReadKey();  
     }  
   
-    // Write each word and its character postion to the console.  
+    // Write each word and its character position to the console.  
     static void synth_SpeakProgress(object sender, SpeakProgressEventArgs e)  
     {  
       Console.WriteLine("CharPos: {0}   CharCount: {1}   AudioPos: {2}    \"{3}\"",  

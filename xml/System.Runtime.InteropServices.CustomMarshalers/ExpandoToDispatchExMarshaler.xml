@@ -28,7 +28,7 @@
  Because the CLR does not use this custom marshaler automatically, it must be declared as follows:  
   
 ```  
-void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef=typeof(ExpandoToDispatchExMarhsaler))] IExpando expando);  
+void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef=typeof(ExpandoToDispatchExMarshaler))] IExpando expando);  
 ```  
   
  ]]></format>

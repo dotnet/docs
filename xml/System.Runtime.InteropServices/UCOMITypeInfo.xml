@@ -300,7 +300,7 @@
         <Parameter Name="pMemId" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="rgszNames">On succesful return, an array of names to map.</param>
+        <param name="rgszNames">On successful return, an array of names to map.</param>
         <param name="cNames">Count of names to map.</param>
         <param name="pMemId">Reference to an array in which name mappings are placed.</param>
         <summary>Maps between member names and member IDs, and parameter names and parameter IDs.</summary>
@@ -412,9 +412,9 @@
       </Parameters>
       <Docs>
         <param name="memid">The ID of the member whose name (or names) is to be returned.</param>
-        <param name="rgBstrNames">On succesful return, contains the name (or names) associated with the member.</param>
+        <param name="rgBstrNames">On successful return, contains the name (or names) associated with the member.</param>
         <param name="cMaxNames">Length of the <paramref name="rgBstrNames" /> array.</param>
-        <param name="pcNames">On succesful return, the number of names in the <paramref name="rgBstrNames" /> array.</param>
+        <param name="pcNames">On successful return, the number of names in the <paramref name="rgBstrNames" /> array.</param>
         <summary>Retrieves the variable with the specified member ID (or the name of the property or method and its parameters) that correspond to the specified function ID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

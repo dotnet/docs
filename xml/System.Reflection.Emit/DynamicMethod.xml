@@ -401,7 +401,7 @@
 ## Examples  
  The following code example creates a <xref:System.Reflection.Emit.DynamicMethod> that is logically associated with a type. This association gives it access to the private members of that type.  
   
- The code example defines a class named `Example` with a private field, a class named `DerivedFromxample` that derives from the first class, a delegate type named `UseLikeStatic` that returns <xref:System.Int32> and has parameters of type `Example` and <xref:System.Int32>, and a delegate type named `UseLikeInstance` that returns <xref:System.Int32> and has one parameter of type <xref:System.Int32>.  
+ The code example defines a class named `Example` with a private field, a class named `DerivedFromExample` that derives from the first class, a delegate type named `UseLikeStatic` that returns <xref:System.Int32> and has parameters of type `Example` and <xref:System.Int32>, and a delegate type named `UseLikeInstance` that returns <xref:System.Int32> and has one parameter of type <xref:System.Int32>.  
   
  The example code then creates a <xref:System.Reflection.Emit.DynamicMethod> that changes the private field of an instance of `Example` and returns the previous value.  
   
@@ -413,7 +413,7 @@
 > [!NOTE]
 >  This is an example of the relaxed rules for delegate binding introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], along with new overloads of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=nameWithType> method. For more information, see the <xref:System.Delegate> class.  
   
- The `UseLikeStatic` delegate is invoked, passing in the instance of `Example` that is bound to the `UseLikeInstance` delegate. Then the `UseLikeInstance` delegate is invoked, so that both delegates act on the same instance of `Example`. The changes in the values of the internal field are displayed after each call. Finally, a `UseLikeInstance` delegate is bound to an instance of `DerivedFromxample`, and the delegate calls are repeated.  
+ The `UseLikeStatic` delegate is invoked, passing in the instance of `Example` that is bound to the `UseLikeInstance` delegate. Then the `UseLikeInstance` delegate is invoked, so that both delegates act on the same instance of `Example`. The changes in the values of the internal field are displayed after each call. Finally, a `UseLikeInstance` delegate is bound to an instance of `DerivedFromExample`, and the delegate calls are repeated.  
   
  [!code-csharp[Reflection.DynamicMethod.ClosedOver#1](~/samples/snippets/csharp/VS_Snippets_CLR/Reflection.DynamicMethod.ClosedOver/cs/source.cs#1)]
  [!code-vb[Reflection.DynamicMethod.ClosedOver#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Reflection.DynamicMethod.ClosedOver/vb/source.vb#1)]  
@@ -1002,7 +1002,7 @@
 ## Examples  
  The following code example creates delegate that binds a <xref:System.Reflection.Emit.DynamicMethod> to an instance of a type, so that the method acts on the same instance each time it is invoked.  
   
- The code example defines a class named `Example` with a private field, a class named `DerivedFromxample` that derives from the first class, a delegate type named `UseLikeStatic` that returns <xref:System.Int32> and has parameters of type `Example` and <xref:System.Int32>, and a delegate type named `UseLikeInstance` that returns <xref:System.Int32> and has one parameter of type <xref:System.Int32>.  
+ The code example defines a class named `Example` with a private field, a class named `DerivedFromExample` that derives from the first class, a delegate type named `UseLikeStatic` that returns <xref:System.Int32> and has parameters of type `Example` and <xref:System.Int32>, and a delegate type named `UseLikeInstance` that returns <xref:System.Int32> and has one parameter of type <xref:System.Int32>.  
   
  The example code then creates a <xref:System.Reflection.Emit.DynamicMethod> that changes the private field of an instance of `Example` and returns the previous value.  
   
@@ -1014,7 +1014,7 @@
 > [!NOTE]
 >  This is an example of the relaxed rules for delegate binding introduced in the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], along with new overloads of the <xref:System.Delegate.CreateDelegate%2A?displayProperty=nameWithType> method. For more information, see the <xref:System.Delegate> class.  
   
- The `UseLikeStatic` delegate is invoked, passing in the instance of `Example` that is bound to the `UseLikeInstance` delegate. Then the `UseLikeInstance` delegate is invoked, so that both delegates act on the same instance of `Example`. The changes in the values of the internal field are displayed after each call. Finally, a `UseLikeInstance` delegate is bound to an instance of `DerivedFromxample`, and the delegate calls are repeated.  
+ The `UseLikeStatic` delegate is invoked, passing in the instance of `Example` that is bound to the `UseLikeInstance` delegate. Then the `UseLikeInstance` delegate is invoked, so that both delegates act on the same instance of `Example`. The changes in the values of the internal field are displayed after each call. Finally, a `UseLikeInstance` delegate is bound to an instance of `DerivedFromExample`, and the delegate calls are repeated.  
   
  [!code-csharp[Reflection.DynamicMethod.ClosedOver#1](~/samples/snippets/csharp/VS_Snippets_CLR/Reflection.DynamicMethod.ClosedOver/cs/source.cs#1)]
  [!code-vb[Reflection.DynamicMethod.ClosedOver#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Reflection.DynamicMethod.ClosedOver/vb/source.vb#1)]  

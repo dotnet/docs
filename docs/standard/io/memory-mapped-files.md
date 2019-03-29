@@ -36,10 +36,11 @@ A memory-mapped file contains the contents of a file in virtual memory. This map
   
  Memory-mapped files are accessed through the operating system’s memory manager, so the file is automatically partitioned into a number of pages and accessed as needed. You do not have to handle the memory management yourself.  
   
- The following illustration shows how multiple processes can have multiple and overlapping views to the same memory-mapped file at the same time.  
+ The following illustration shows how multiple processes can have multiple and overlapping views to the same memory-mapped file at the same time.
+
+ The following image shows multiple and overlapped views to a memory-mapped file:  
   
- ![Shows views to a memory&#45;mapped file.](../../../docs/standard/io/media/memmappersisted.png "MemMapPersisted")  
-Multiple and overlapped views to a memory-mapped file  
+ ![Screenshot that shows views to a memory&#45;mapped file.](./media/memory-mapped-files/memory-map-persist-file.png)  
   
 ## Programming with Memory-Mapped Files  
  The following table provides a guide for using memory-mapped file objects and their members.  

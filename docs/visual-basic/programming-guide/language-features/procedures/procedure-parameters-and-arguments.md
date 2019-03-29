@@ -30,8 +30,7 @@ In most cases, a procedure needs some information about the circumstances in whi
   
  The following illustration shows code calling the procedure `safeSquareRoot` from two different places. The first call passes the value of the variable `x` (4.0) to the parameter `number`, and the return value in `root` (2.0) is assigned to the variable `y`. The second call passes the literal value 9.0 to `number`, and assigns the return value (3.0) to variable `z`.  
   
- ![Graphic diagram of passing argument to parameter](./media/parametersargue.gif "ParametersArgue")  
-Passing an argument to a parameter  
+ ![Diagram that shows passing an argument to a parameter](./media/procedure-parameters-and-arguments/pass-argument-parameter.gif)  
   
  For more information, see [Differences Between Parameters and Arguments](./differences-between-parameters-and-arguments.md).  
   

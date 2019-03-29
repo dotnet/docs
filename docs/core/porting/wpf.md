@@ -179,7 +179,7 @@ Next, include another `<ItemGroup>` node that contains a `<Page>` entry for ever
 
 Add each NuGet package referenced by the .NET Framework project to the .NET Core project. 
 
-Most likely your .NET Framework WPF app has a **packages.config** file that contains a list of all of the NuGet packages that are referenced by your project. You can look at this list to determine which NuGet packages to add to the .NET Core project. For example, if the .NET Framework project referenced the `MahApps.Metro` NuGet package, add it to the project with Visual Studio. You can also add the package reference with the .NET Core CLI from the **SolutionFolder** directory:
+Most likely your .NET Framework WPF app has a **packages.config** file that contains a list of all of the NuGet packages that are referenced by your project. You can look at this list to determine which NuGet packages to add to the .NET Core project. For example, if the .NET Framework project references the `MahApps.Metro` NuGet package, add it to the project with Visual Studio. You can also add the package reference with the .NET Core CLI from the **SolutionFolder** directory:
 
 ```cli
 dotnet add .\MyWPFAppCore\MyWPFCore.csproj package MahApps.Metro -v 2.0.0-alpha0262

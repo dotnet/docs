@@ -35,6 +35,8 @@ Options can also be useful when a value might not exist, for example if it is po
 
 The `openFile` function in the previous example has type `string -> File option` because it returns a `File` object if the file opens successfully and `None` if an exception occurs. Depending on the situation, it may not be an appropriate design choice to catch an exception rather than allowing it to propagate.
 
+Additionally, it is still possible to pass `null` or a value that is null to the `Some` case of an option. This is generally to be avoided, and typically is in routine F# programming, but is possible due to the nature of reference types in .NET.
+
 ## Option Properties and Methods
 
 The option type supports the following properties and methods.

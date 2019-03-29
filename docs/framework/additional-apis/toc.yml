@@ -82,11 +82,33 @@
       href: datamemberfieldeditor-class.md
     - name: DataMemberListEditor class
       href: datamemberlisteditor-class.md
+  - name: adodb Namespace
+    items:
+    - name: Connection Interface
+      href: adodb.connection.md
+    - name: EventReason Enum
+      href: adodb.eventreasonenum.md
+    - name: EventStatus Enum
+      href: adodb.eventstatusenum.md
   - name: stdole Namespace
     items:
+    - name: DISPPARAMS Structure
+      href: stdole.dispparams.md
+    - name: EXCEPINFO Structure
+      href: stdole.excepinfo.md
     - name: IFont.Name Property
       href: stdole.ifont.name.md
+    - name: IFontDisp Interface
+      href: stdole.ifontdisp.md
     - name: IPicture.Handle Property
       href: stdole.ipicture.handle.md
+    - name: IPictureDisp Interface
+      href: stdole.ipicturedisp.md
     - name: IPictureDisp.Handle Property
       href: stdole.ipicturedisp.handle.md
+    - name: StdFont Interface
+      href: stdole.stdfont.md
+    - name: StdPicture Interface
+      href: stdole.stdpicture.md
+
+

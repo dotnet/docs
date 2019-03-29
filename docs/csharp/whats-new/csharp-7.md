@@ -59,7 +59,7 @@ work with minimal benefit. You may often write methods that need a simple
 structure containing more than one data element. To support these scenarios
 *tuples* were added to C#. Tuples are lightweight data structures
 that contain multiple fields to represent the data members.
-The fields aren't validated, and you cannot define your own methods
+The fields aren't validated, and you can't define your own methods
 
 > [!NOTE]
 > Tuples were available before C# 7.0,
@@ -125,7 +125,7 @@ For more information, see [Discards](../discards.md).
 
 *Pattern matching* is a feature that allows you to implement method dispatch on
 properties other than the type of an object. You're probably already familiar
-with method dispatch based on the type of an object. In Object-Oriented programming,
+with method dispatch based on the type of an object. In object-oriented programming,
 virtual and override methods provide language syntax to implement method dispatching
 based on an object's type. Base and Derived classes provide different implementations. 
 Pattern matching expressions extend this concept so that you can easily
@@ -191,8 +191,8 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
 - `case null:` is the null pattern.
 - `default:` is the familiar default case.
 
-You can learn more about pattern matching in the article
-dedicated to [pattern matching in C#](../pattern-matching.md).
+You can learn more about pattern matching in
+[Pattern Matching in C#](../pattern-matching.md).
 
 ## Ref locals and returns
 
@@ -201,16 +201,16 @@ to variables defined elsewhere. One example is working with
 large matrices, and finding a single location with certain
 characteristics. The following method returns a **reference** to that storage in the matrix:
 
-[!code-csharp[FindReturningRef](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#22_FindReturningRef "Find returning by reference")]
+[!code-csharp[FindReturningRef](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#FindReturningRef "Find returning by reference")]
 
 You can declare the return value as a `ref` and modify that value in the matrix, as shown in the following code:
 
-[!code-csharp[AssignRefReturn](~/samples/snippets/csharp/new-in-7/program.cs#24_AssignRefReturn "Assign ref return")]
+[!code-csharp[AssignRefReturn](~/samples/snippets/csharp/new-in-7/program.cs#AssignRefReturn "Assign ref return")]
 
 The C# language has several rules that protect you from misusing
 the `ref` locals and returns:
 
-* You must add the `ref` keyword to the method signature, and to all `return` statements in a method.
+* You must add the `ref` keyword to the method signature and to all `return` statements in a method.
     - That makes it clear the method returns by reference throughout the method.
 * A `ref return` may be assigned to a value variable, or a `ref` variable.
     - The return value is copied into a variable, a `ref` variable refers to the same storage.
@@ -330,12 +330,12 @@ For those times when you're creating bit masks, or whenever a
 binary representation of a number makes the most readable code,
 write that number in binary:
 
-[!code-csharp[ThousandSeparators](~/samples/snippets/csharp/new-in-7/Program.cs#33_ThousandSeparators "Thousands separators")]
+[!code-csharp[ThousandSeparators](~/samples/snippets/csharp/new-in-7/Program.cs#ThousandSeparators "Thousands separators")]
 
 The `0b` at the beginning of the constant indicates that the
 number is written as a binary number. Binary numbers can get long, so it's often easier to see
 the bit patterns by introducing the `_` as a digit separator, as shown above in the binary constant. The digit separator can appear anywhere in the constant. For base 10
-numbers, it would be common to use it as a thousands separator:
+numbers, it is common to use it as a thousands separator:
 
 [!code-csharp[LargeIntegers](~/samples/snippets/csharp/new-in-7/Program.cs#LargeIntegers "Large integer")]
 

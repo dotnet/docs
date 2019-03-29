@@ -25,7 +25,7 @@ In general, a static assembly can consist of four elements:
   
  There are several ways to group these elements in an assembly. You can group all elements in a single physical file, which is shown in the following illustration.  
   
- ![Diagram that shows a single-file assembly.](./media/assembly-contents/single-file-assembly.gif)  
+ ![Diagram that shows a single-file assembly called MyAssembly.dll.](./media/assembly-contents/single-file-assembly.gif)  
   
  Alternatively, the elements of an assembly can be contained in several files. These files can be modules of compiled code (.netmodule), resources (such as .bmp or .jpg files), or other files required by the application. Create a multifile assembly when you want to combine modules written in different languages and to optimize downloading an application by putting seldom used types in a module that is downloaded only when needed.  
   

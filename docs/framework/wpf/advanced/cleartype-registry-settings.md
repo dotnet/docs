@@ -106,7 +106,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  For each display device name for a user, a `TextContrastLevel` DWORD value is defined. The following screenshot shows the Registry Editor setting for the text contrast level.  
   
- ![Screenshot that shows ClearType settings in the Registry Editor.](./media/cleartype-registry-settings/cleartype-settings-registry-editor.png)  
+ ![ClearType settings in the Registry Editor.](./media/cleartype-registry-settings/cleartype-settings-registry-editor.png)  
   
 ## See also
 - [ClearType Overview](cleartype-overview.md)

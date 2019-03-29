@@ -1146,7 +1146,7 @@ For more information on file path formats on Windows, see [File path formats on 
         <Parameter Name="basePath" Type="System.String" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="path">A relative path to concatenate to <see paramref="basePath" />.</param>
+        <param name="path">A relative path to concatenate to <paramref name="basePath" />.</param>
         <param name="basePath">The beginning of a fully qualified path.</param>
         <summary>Returns an absolute path from a fully qualified base path and a relative path.</summary>
         <returns>The absolute path.</returns>
@@ -1172,8 +1172,10 @@ The following example defines a variable, `basePath`, to represent an applicatio
           <paramref name="path" /> or <paramref name="basePath" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="basePath" /> is not a fully qualified path.
-          -or-
-          <paramref name="path" /> or <paramref name="basePath" /> contains invalid path characters, such as U+0000.</exception>
+
+-or-
+
+<paramref name="path" /> or <paramref name="basePath" /> contains invalid path characters, such as U+0000.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetInvalidFileNameChars">

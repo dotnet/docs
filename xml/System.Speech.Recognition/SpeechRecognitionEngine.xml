@@ -1719,7 +1719,7 @@ namespace SreEmulateRecognizeAsync
             SpeechRecognizedHandler);  
         recognizer.EmulateRecognizeCompleted +=  
           new EventHandler<EmulateRecognizeCompletedEventArgs>(  
-            EmulateRecognizeCompletedHander);  
+            EmulateRecognizeCompletedHandler);  
   
         // Start four asynchronous emulated recognition operations.  
         TestRecognizeAsync(recognizer, "Smith");  
@@ -1826,7 +1826,7 @@ namespace SreEmulateRecognizeAsync
       }  
     }  
   
-    static void EmulateRecognizeCompletedHander(  
+    static void EmulateRecognizeCompletedHandler(  
       object sender, EmulateRecognizeCompletedEventArgs e)  
     {  
       Console.WriteLine(" EmulateRecognizeCompleted event raised.");  

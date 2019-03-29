@@ -76,8 +76,8 @@
 ## Examples  
  The following example creates an <xref:System.Windows.Input.ExecutedRoutedEventHandler> that handles multiple commands. The handler checks the <xref:System.Windows.Input.ExecutedRoutedEventArgs.Command%2A> property on the <xref:System.Windows.Input.ExecutedRoutedEventArgs> to determine which method to call.  
   
- [!code-csharp[commandingoverviewsnippets#CommandingOverviewMultipleCmdHander](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewmultiplecmdhander)]
- [!code-vb[commandingoverviewsnippets#CommandingOverviewMultipleCmdHander](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewmultiplecmdhander)]  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewMultipleCmdHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewmultiplecmdhandler)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewMultipleCmdHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewmultiplecmdhandler)]  
   
  ]]></format>
         </remarks>

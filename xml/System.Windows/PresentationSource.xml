@@ -100,7 +100,7 @@
       </Parameters>
       <Docs>
         <param name="element">The element to add the handler to.</param>
-        <param name="handler">The hander implementation to add.</param>
+        <param name="handler">The handler implementation to add.</param>
         <summary>Adds a handler for the <see langword="SourceChanged" /> event to the provided element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

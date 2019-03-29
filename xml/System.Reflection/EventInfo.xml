@@ -179,7 +179,7 @@
   
  Each time the event is raised by the target parameter, the method or methods encapsulated by the handler are invoked.  
   
-You might use the `AddEventHander` method when you load a type after the program is already compiled, when it is not possible to use the C# += syntax or the Visual Basic `WithEvents` and `Handles` keywords to hook up the event.   
+You might use the `AddEventHandler` method when you load a type after the program is already compiled, when it is not possible to use the C# += syntax or the Visual Basic `WithEvents` and `Handles` keywords to hook up the event.   
   
 ## Examples  
  The following example creates an instance of the <xref:System.Timers.Timer?displayProperty=nameWithType> class, creates an event handler using a dynamic assembly, and hooks up the dynamic event handler. All actions are performed using late binding.  

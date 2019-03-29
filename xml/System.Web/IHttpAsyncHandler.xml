@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An <xref:System.Web.IHttpAsyncHandler> class can be associated with a file name extension or a particular URL by a configuration file, in the `httpHandlers` configuration section. The ASP.NET infrastructure will then instantiate and call the handler when the corresponding request is received. Alternatively, the handler can be defined in an .ashx file and when the corresponding request is received for the .ashx file the hander will be executed.  
+ An <xref:System.Web.IHttpAsyncHandler> class can be associated with a file name extension or a particular URL by a configuration file, in the `httpHandlers` configuration section. The ASP.NET infrastructure will then instantiate and call the handler when the corresponding request is received. Alternatively, the handler can be defined in an .ashx file and when the corresponding request is received for the .ashx file the handler will be executed.  
   
  ]]></format>
     </remarks>

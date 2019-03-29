@@ -285,7 +285,7 @@
  A clock that is <xref:System.Windows.Media.Animation.ClockState.Filling> has a <xref:System.Windows.Media.Animation.Clock.CurrentProgress%2A> of 1.0.  
   
 ## Using a Timeline as a Timer  
- A timeline's clock will only progress when there's an event hander associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
+ A timeline's clock will only progress when there's an event handler associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
   
  ]]></format>
         </remarks>
@@ -400,7 +400,7 @@
 ## Remarks  
   
 ## Using a Timeline as a Timer  
- A timeline's clock will only progress when there's an event hander associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
+ A timeline's clock will only progress when there's an event handler associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
   
  ]]></format>
         </remarks>
